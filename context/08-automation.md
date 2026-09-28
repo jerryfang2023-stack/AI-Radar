@@ -1,7 +1,7 @@
 ---
 status: current
 scope: site-v4-automation
-last_updated: 2026-09-13
+last_updated: 2026-09-28
 priority: current
 ---
 
@@ -42,8 +42,8 @@ candidate Markdown are no longer written. Immutable original snapshots remain.
   collector uses `--source-only=china-funding`. Domestic discovery runs alongside
   overseas discovery, with separate results; shared factual/application publication
   is serialized. A domestic failure does not invalidate overseas completion.
-- Builder RSS uses `daily-first-line-viewpoints-pr.yml` as a separate viewpoints
-  lane. This is distinct from source RSS used to discover financing/commercial news.
+- First-Line Viewpoints / Builders does not run in the daily financing controller.
+  Its independent weekly workflow is described under Lane independence.
 
 Each lane must be inspected separately. A controller exit code of zero or a
 successful dispatch is not proof that domestic and overseas financing were both
@@ -59,8 +59,9 @@ live date/data and application gates; collecting news alone is not publication c
 
 ## Lane independence
 
-- First-Line Viewpoints (`O`) and Community Intelligence (`C`) keep independent
-  collection, gate, and publication lanes.
+- First-Line Viewpoints / Builders (`O`) and Community Intelligence (`C`) each
+  update once weekly in independent lanes; neither is dispatched or required by
+  the daily financing controller.
 - Commercial events (`E`) use accepted V4 Claims and sources only.
 - Operations output (`OPS`) stays in telemetry/reports and cannot become public
   evidence.
@@ -87,25 +88,31 @@ with stale local gate files is forbidden because it can create a false repair.
 
 ## Local Windows schedule
 
-The supported local schedule contains exactly four tasks (`WINDOWS-AUTOMATION-V1.1-four-task-manual-supervision`, effective 2026-09-13):
+The supported local Windows schedule contains exactly four tasks (`WINDOWS-AUTOMATION-V1.2-weekly-independent-community-builders`, effective 2026-09-28):
 
 | Time | Task |
 |---|---|
-| 08:10 | WaveSight Morning Production Dispatch (domestic/overseas financing + other Business Signals + independent Builder RSS) |
-| 08:30 | WaveSight Community Intelligence Daily |
-| 16:10 | WaveSight Follow-Builders Skill Daily |
+| 08:10 | WaveSight Morning Production Dispatch (domestic/overseas financing + Business Signals only) |
+| Monday 08:30 | WaveSight Community Intelligence Weekly (local 生财 / AI 破局 collection and publish handoff) |
+| Monday 16:10 | WaveSight Follow-Builders Skill Weekly |
 | 16:45 | WaveSight Daily Final Closure |
+
+The First-Line Viewpoints RSS / podcast workflow is a separate GitHub Actions
+schedule on Monday at 09:00 Asia/Shanghai (`daily-first-line-viewpoints-pr.yml`;
+GitHub cron `0 1 * * 1`). It refreshes the accepted builders feed and V4 adapter;
+the local 16:10 task then publishes the independent follow-builders viewpoint
+archive. Neither stage is bundled with funding discovery.
 
 The operator checks production and repairs problems daily. The 09:15 Recovery,
 09:50 Closure and 10:20 Hermes timers are retired. Their source tools and previous
 receipts remain available for manual diagnosis. The paused Codex
 `builder-observation-daily-sync` automation is removed.
 
-Morning now owns the conditional First-Line Viewpoints RSS lane as well as
-Business Signals. Accepted same-date RSS data and queued/running workflows prevent
-duplicate dispatch. A successful workflow with missing accepted output records
-`publication_repair_required`; the operator resumes the failed publication stage.
-One production lane's failure does not suppress the other lane.
+Morning owns Business Signals only. It neither inspects nor dispatches the
+weekly Builders or Community lanes. Each weekly lane is validated on Monday; on
+other days the last accepted publication remains the expected current state and
+must not create a daily missing-data failure. Failure in one weekly lane does not
+suppress funding production or the other weekly lane.
 
 Late scheduled Morning runs remain eligible until 16:45, rather than being skipped
 at the retired 09:15 recovery window. At 16:45 and later they record `superseded`
@@ -141,9 +148,8 @@ This prevents a stopped local proxy from turning every independent daily lane
 into the same false infrastructure failure.
 
 The daily controller must propagate its resolved runtime report directory to
-every child health or gate command. Business Signals health dispatch,
-First-Line Viewpoints recovery, Community Intelligence recovery, and Data Center
-projection coverage therefore all receive `--reports-dir=<runtime>`. A child
+every child health or gate command. Business Signals health dispatch and Data
+Center projection coverage therefore receive `--reports-dir=<runtime>`. A child
 command must honor that argument instead of defaulting to
 `agent-workflow/reports`; the runtime regression test fails if this boundary is
 removed.
@@ -167,7 +173,7 @@ manual repair, provide a runnable native executable using `--codex-command=<path
 the existing managed CLI is under `%LOCALAPPDATA%\WaveSight\codex-cli`.
 Do not use a WindowsApps execution alias or shell-only shim.
 
-The 16:10 Follow-Builders task follows the same isolation boundary. Generation,
+The Monday 16:10 Follow-Builders task follows the same isolation boundary. Generation,
 validation, PR publication, and forced lane supervision run from a temporary
 worktree under `%LOCALAPPDATA%\WaveSight\runtime\worktrees`; the detailed local
 publish report is copied into runtime before that worktree and its local branch
@@ -299,10 +305,11 @@ approved entities, unresolved event/mention references and absent evidence
 remain hard failures. `docs/daily-production-recovery.md` owns the recovery
 procedure and the separate website/Mini Program completion checks.
 
-First-Line Viewpoints recovery is date-strict. The 09:15 controller may treat
-the morning RSS lane as healthy only when `follow-builders-daily.json` was
-generated on the requested Asia/Shanghai date; a prior-day
-bundle must fail the gate and trigger the bounded recovery workflow.
+First-Line Viewpoints supervision is weekly and date-strict on Mondays. The daily
+funding controller never checks or dispatches Builders. Monday supervision may
+treat the RSS lane as healthy only when `follow-builders-daily.json` was generated
+for the weekly production date and its gate passes; a missing same-week bundle
+must fail that weekly lane without blocking daily financing.
 
 Install or repair the complete local contract with
 `npm run install:windows-automation`. Audit it without changing task state with

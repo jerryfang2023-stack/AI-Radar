@@ -26,12 +26,12 @@ This skill owns the Community Intelligence lane. It supervises local logged-in c
 
 ## Current Timing
 
-- Local logged-in collection: 08:30 Asia/Shanghai via Windows task `WaveSight Community Intelligence Daily`.
+- Local logged-in collection: Monday 08:30 Asia/Shanghai via Windows task `WaveSight Community Intelligence Weekly`.
 - Successful local collection owns the archive, gate, and publish handoff.
-- Daily validation and Chrome/login repair are operator-owned. The 09:15 Recovery and 09:50 Closure timers are retired. GitHub publication remains dispatch-only for targeted repair; 16:45 Final Closure retains final supervision.
-- Daily Problem Watchdog records failed publish runs to the production incident registry. It must not rerun local collection or dispatch recovery.
+- Collection, validation, Chrome/login repair, and publication handoff are due weekly on Monday. Daily funding supervision does not collect or gate Community data. The 09:15 Recovery and 09:50 Closure timers are retired; 16:45 Final Closure observes the Community lane only on its weekly run day.
+- Daily Problem Watchdog records failures from the weekly publish run to the production incident registry. It must not rerun local collection or dispatch recovery.
 - GitHub Actions can publish validated community files, but cannot replace local Chrome / logged-in collection.
-- Do not classify same-date data as missing before the first Community Intelligence check window. Before 08:45 Asia/Shanghai, stale data is normally yesterday's completed state unless a local collector failure log already exists.
+- Do not classify weekly same-date data as missing before Monday 08:45 Asia/Shanghai. On other weekdays, the last accepted Community snapshot is expected and must not create a missing-data failure.
 
 ## Required Reads
 
@@ -75,23 +75,23 @@ Classify Community Intelligence failures by the earliest broken stage. Do not re
 
 | Stage | Evidence | Action |
 |---|---|---|
-| Pre-window stale data | Before 08:45 Asia/Shanghai, `community-intelligence.json` still shows the previous production date and there is no same-day local failure log | Wait for the 08:45 observation threshold and inspect the local run; there is no separate 08:45/09:15 timer. Do not create a failure inbox prematurely. |
-| Local collection missing | After 08:45, same-date data / daily snapshot / archive is missing, or the local log shows Chrome / login / collector failure | Repair or rerun `agent-workflow/tools/run-community-intelligence.ps1` locally; GitHub cannot collect this lane. |
+| Pre-window stale data | Before Monday 08:45 Asia/Shanghai, `community-intelligence.json` still shows the prior weekly production date and there is no same-day local failure log | Wait for the Monday observation threshold and inspect the local run; there is no separate 08:45/09:15 timer. Do not create a failure inbox prematurely. |
+| Local collection missing | After Monday 08:45, same-date weekly data / snapshot / archive is missing, or the local log shows Chrome / login / collector failure | Repair or rerun `agent-workflow/tools/run-community-intelligence.ps1` locally; GitHub cannot collect this lane. |
 | Local gate failed | Same-date data exists but `assert-community-intelligence-data.mjs` fails | Fix data shape, item/link floors, collector errors, or archive outputs, then rerun the gate. |
 | Publish workflow failed before gate | GitHub publish run fails while same-date local files are absent or stale on `main` | Stop GitHub retries; run local collection / archive first. |
 | Publish workflow shell / PR failure | Local data is healthy, but publish workflow fails in shell, branch, PR, auto-merge, or permissions | Repair workflow / PR handling only; do not rerun browser collection unless local data changed. |
 | Publication waiting | Same-date local data, archive, and gate are healthy, and a same-date PR is open or publish workflow is queued / in progress | Report Waiting and recheck; do not create a production incident or rerun collection. |
 | Published but not deployed | PR merged but Pages is not updated yet | Wait for Pages or inspect GitHub Pages workflow; local collection is already complete. |
 
-## Faster Morning Path
+## Weekly Monday Collection Path
 
-The preferred before-10:00 path is:
+The weekly path is:
 
-1. 08:30 local task runs collection, archive, gate, and local publish handoff in one local path.
+1. 08:30 Monday local task runs collection, archive, gate, and local publish handoff in one local path.
 2. After the observation window, the operator checks local output, gate and actual run state. If missing, repair the local collector or login; do not wait for a retired 09:15 timer.
 3. Healthy same-date data is a no-op; do not recollect it.
 4. The operator checks publication. If local output exists but publish is missing, record a targeted problem instead of rerunning collection.
-5. Daily Problem Watchdog records failed publish workflows to the production incident registry and never retries the browser collector in GitHub.
+5. Daily Problem Watchdog records failures from the weekly publish run to the production incident registry and never retries the browser collector in GitHub.
 6. Confirm PR merge and Pages from actual receipts. If Pages is queued / in progress, report waiting; 16:45 Final Closure keeps the combined final check.
 
 ## Lane Boundaries

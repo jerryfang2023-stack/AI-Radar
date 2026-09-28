@@ -118,36 +118,6 @@ function run(label, command, commandArgs, timeoutMs = 180_000) {
   };
 }
 
-function workflowRuns(workflow) {
-  const result = run("inspect workflow", "gh", [
-    "run", "list", "--workflow", workflow, "--limit", "30",
-    "--json", "databaseId,status,conclusion,createdAt,url",
-  ]);
-  if (!result.ok) return { available: false, result, runs: [] };
-  try {
-    const runs = JSON.parse(result.stdout || "[]")
-      .filter((item) => shanghaiDate(item.createdAt) === date);
-    return { available: true, result, runs };
-  } catch (error) {
-    return { available: false, result: { ...result, ok: false, stderr: error.message }, runs: [] };
-  }
-}
-
-function dispatchWorkflow(workflow) {
-  const commandArgs = ["workflow", "run", workflow, "-f", `date=${date}`];
-  if (dryRun) {
-    return {
-      label: `dispatch ${workflow}`,
-      ok: true,
-      status: 0,
-      command: `dry-run: gh ${commandArgs.join(" ")}`,
-      stdout: "",
-      stderr: "",
-    };
-  }
-  return run(`dispatch ${workflow}`, "gh", commandArgs);
-}
-
 function morning() {
   const runtimeSync = run("Sync repo Skill runtime", process.execPath, [
     "agent-workflow/tools/sync-repo-skills.mjs",
@@ -168,67 +138,13 @@ function morning() {
   ]);
   const skillOpsHealthy = runtimeSync.ok && discoveryRefresh.ok && preflight.ok;
   // RSS production remains independent of Business Signals and manual repair.
-  const firstLine = firstLineRecovery();
-  const productionOk = business.ok && firstLine.ok;
+  const productionOk = business.ok;
   return {
     ok: productionOk,
     status: productionOk ? (skillOpsHealthy ? "passed" : "passed_with_preflight_warning") : "failed",
-    lanes: { business, first_line_viewpoints: firstLine },
-    actions: [runtimeSync, discoveryRefresh, preflight, business, ...firstLine.actions],
+    lanes: { business },
+    actions: [runtimeSync, discoveryRefresh, preflight, business],
     notes: skillOpsHealthy ? [] : ["Repo Skill runtime sync or Skill Ops preflight failed but did not block production dispatch."],
-  };
-}
-
-function firstLineRecovery() {
-  const refresh = run("Refresh accepted builders publication ref", "git", ["fetch", "origin", "+refs/heads/main:refs/remotes/origin/main", "--quiet"]);
-  if (!refresh.ok) return { ok: false, status: "inspection_failed", actions: [refresh] };
-  const gate = run("First-Line Viewpoints gate", process.execPath, [
-    "agent-workflow/tools/assert-follow-builders-data.mjs",
-    `--date=${date}`,
-    "--source-ref=origin/main",
-    `--reports-dir=${reportsDir}`,
-  ]);
-  if (gate.ok) return { ok: true, status: "healthy", actions: [refresh, gate] };
-
-  const workflow = "daily-first-line-viewpoints-pr.yml";
-  const inspected = workflowRuns(workflow);
-  const active = inspected.runs.find((item) => ["queued", "in_progress"].includes(item.status));
-  const successful = inspected.runs.find((item) => item.conclusion === "success");
-  if (!inspected.available) return { ok: false, status: "inspection_failed", actions: [refresh, gate, inspected.result] };
-  if (active) return { ok: true, status: "waiting", actions: [refresh, gate, inspected.result], run: active };
-  if (successful) {
-    return {
-      ok: false,
-      status: "publication_repair_required",
-      actions: [refresh, gate, inspected.result],
-      run: successful,
-    };
-  }
-  const dispatch = dispatchWorkflow(workflow);
-  return {
-    ok: dispatch.ok,
-    status: dispatch.ok ? "fallback_dispatched" : "dispatch_failed",
-    actions: [refresh, gate, inspected.result, dispatch],
-  };
-}
-
-function communityRecovery() {
-  const refresh = run("Refresh accepted community publication ref", "git", ["fetch", "origin", "main"]);
-  if (!refresh.ok) return {
-    ok: false, status: "inspection_failed", actions: [refresh],
-    note: "Cannot inspect accepted community publication; do not infer a collection failure.",
-  };
-  const gate = run("Community Intelligence gate", process.execPath, [
-    "agent-workflow/tools/assert-community-intelligence-data.mjs",
-    `--date=${date}`,
-    "--source-ref=origin/main",
-    `--reports-dir=${reportsDir}`,
-  ]);
-  return {
-    ok: gate.ok,
-    status: gate.ok ? "healthy" : "local_repair_required",
-    actions: [refresh, gate],
-    note: gate.ok ? "" : "GitHub cannot replace the local logged-in collector; repair the local collection stage only.",
   };
 }
 
@@ -239,19 +155,14 @@ function recovery() {
     `--reports-dir=${reportsDir}`,
     ...(dryRun ? ["--dry-run=true"] : []),
   ]);
-  const firstLine = firstLineRecovery();
-  const community = communityRecovery();
-  const healthOk = business.ok && firstLine.ok && community.ok;
+  const healthOk = business.ok;
   return {
     ok: true,
     healthOk,
     status: healthOk ? "passed_or_waiting" : "targeted_repair_required",
-    lanes: { business, first_line_viewpoints: firstLine, community_intelligence: community },
-    actions: [business, ...firstLine.actions, ...community.actions],
-    notes: [
-      community.note,
-      healthOk ? "" : "Each lane completed its own check; one unhealthy lane did not block the others.",
-    ].filter(Boolean),
+    lanes: { business },
+    actions: [business],
+    notes: healthOk ? [] : ["Business Signals recovery completed without dispatching the independent weekly Builders or Community lanes."],
   };
 }
 
@@ -400,7 +311,7 @@ function finalClosure() {
     lanes: supervisionReported ? supervisionPayload.lanes : [],
     actions: [dataLake, dataLakeGate, vaultSync, fundingPortal, opsPublication, discoveryRefresh, supervisionAction, evidenceSupply, recurringIncidents],
     notes: [
-      "Scheduled final closure follows the 16:10 First-Line Viewpoints window; manual runs respect the current time unless explicitly forced.",
+      "Builders and Community updates run in their own weekly schedules; daily funding closure does not dispatch those lanes.",
       "The local V4 JSONL and DuckDB serving layer is rebuilt here; no independent data-lake task is supported.",
       "Accepted Funding Insights changes are validated, committed to the independent portal repository, and atomically deployed to the VPS here.",
       "Lane findings remain isolated; the report records them without suppressing other lane results.",

@@ -1,6 +1,6 @@
 param(
   [string]$RepoPath = "",
-  [string]$TaskName = "WaveSight Community Intelligence Daily",
+  [string]$TaskName = "WaveSight Community Intelligence Weekly",
   [string]$At = "08:30",
   [string]$CdpUrl = "http://127.0.0.1:9333",
   [string]$RuntimePath = "",
@@ -46,7 +46,7 @@ if (-not $NoPublishAfterSuccess) {
 }
 
 $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument $argument -WorkingDirectory $repo
-$dailyTrigger = New-ScheduledTaskTrigger -Daily -At $time
+$weeklyTrigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Monday -At $time
 
 $settings = New-ScheduledTaskSettingsSet `
   -AllowStartIfOnBatteries `
@@ -57,14 +57,14 @@ $settings = New-ScheduledTaskSettingsSet `
 Register-ScheduledTask `
   -TaskName $TaskName `
   -Action $action `
-  -Trigger $dailyTrigger `
+  -Trigger $weeklyTrigger `
   -Settings $settings `
-  -Description "Run WaveSight community intelligence collection and validation every day." `
+  -Description "Run WaveSight community intelligence collection and validation weekly on Monday." `
   -Force | Out-Null
 
 Write-Host "Installed community intelligence scheduled task: $TaskName"
 Write-Host "Repository: $repo"
-Write-Host "Schedule: daily at $At"
+Write-Host "Schedule: weekly on Monday at $At"
 Write-Host "Runner: $runScript"
 Write-Host "Max attempts: $MaxAttempts"
 Write-Host "Retry delay seconds: $RetryDelaySeconds"

@@ -1,14 +1,15 @@
 ---
 status: current
 scope: manual-control-plane-inspection
-last_updated: 2026-09-13
+last_updated: 2026-09-28
 ---
 
 # Manual supervision and optional Hermes inspection
 
 Daily production inspection and repair are operator-owned. The current Windows
-schedule is four tasks: 08:10 Morning (domestic/overseas financing and other Business Signals + independent Builder RSS),
-08:30 Community, 16:10 Follow Builders, 16:45 Final Closure.
+schedule is four tasks: 08:10 Morning (daily financing and Business Signals only),
+Monday 08:30 Community, Monday 16:10 Follow Builders, 16:45 Final Closure.
+The First-Line RSS / podcast workflow runs separately on Mondays at 09:00 Asia/Shanghai.
 
 The 09:15 Recovery, 09:50 Closure and 10:20 Hermes timers are retired. Do not
 recreate them during routine installation. The former seven-task contract and
@@ -16,8 +17,9 @@ its historical receipts do not define current required task presence.
 
 ## Daily operator check
 
-Check domestic financing, overseas/general financing and Builder RSS separately.
-A successful main dispatch does not prove that all three lanes completed.
+Check domestic and overseas/general financing separately. Builder RSS and
+Community collection are weekly independent lanes, not part of this daily check.
+A successful main dispatch does not prove domestic and overseas financing both completed.
 Read the actual production date and stage results, GitHub production/PR/deployment
 results and runtime receipts. A successful dispatch is not completed publication.
 Final Closure continues to own the data lake, external Vault, Funding Portal and
@@ -29,7 +31,7 @@ dependents. Never recollect solely because a downstream build or publication fai
 ## Optional manual tools
 
 - `node agent-workflow/tools/run-daily-automation-controller.mjs --phase=recovery`
-  checks lane status and may dispatch missing production.
+  checks Business Signals status only; it does not dispatch the weekly Community or Builders lanes.
 - `node agent-workflow/tools/run-daily-automation-controller.mjs --phase=closure --invoke-codex=false`
   performs local self-check and safe repair without invoking Codex. This is a
   write-capable manual action, not a read-only report command.

@@ -16,8 +16,8 @@ if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\r
 $RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
 $expected = @(
   [pscustomobject]@{ Name = "WaveSight Morning Production Dispatch"; Time = "08:10"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=morning --scheduled=true" },
-  [pscustomobject]@{ Name = "WaveSight Community Intelligence Daily"; Time = "08:30"; Runner = "run-community-intelligence.ps1"; Arguments = "-PublishAfterSuccess" },
-  [pscustomobject]@{ Name = "WaveSight Follow-Builders Skill Daily"; Time = "16:10"; Runner = "run-follow-builders-skill.ps1"; Arguments = "-Merge" },
+  [pscustomobject]@{ Name = "WaveSight Community Intelligence Weekly"; Time = "08:30"; Frequency = "weekly"; Runner = "run-community-intelligence.ps1"; Arguments = "-PublishAfterSuccess" },
+  [pscustomobject]@{ Name = "WaveSight Follow-Builders Skill Weekly"; Time = "16:10"; Frequency = "weekly"; Runner = "run-follow-builders-skill.ps1"; Arguments = "-Merge" },
   [pscustomobject]@{ Name = "WaveSight Daily Final Closure"; Time = "16:45"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=final-closure --scheduled=true" }
 )
 $expectedByName = @{}
@@ -40,6 +40,13 @@ foreach ($task in $tasks) {
 
   if (-not $task.Settings.Enabled) { $issues.Add("Task is disabled: $($task.TaskName)") }
   if ($time -ne $contract.Time) { $issues.Add("Task time mismatch: $($task.TaskName) expected $($contract.Time), found $time") }
+  if ($contract.Frequency -eq "weekly") {
+    if ($trigger.CimClass.CimClassName -ne "MSFT_TaskWeeklyTrigger") { $issues.Add("Task frequency mismatch: $($task.TaskName) expected weekly") }
+    if ([int]$trigger.DaysOfWeek -ne 2) { $issues.Add("Task weekday mismatch: $($task.TaskName) expected Monday only") }
+  }
+  elseif ($trigger.CimClass.CimClassName -ne "MSFT_TaskDailyTrigger") {
+    $issues.Add("Task frequency mismatch: $($task.TaskName) expected daily")
+  }
   if ($action.WorkingDirectory -ne $repo) { $issues.Add("Task working directory mismatch: $($task.TaskName)") }
   if ($actionText -notlike "*$($contract.Runner)*") { $issues.Add("Task runner mismatch: $($task.TaskName)") }
   if ($actionText -notlike "*$($contract.Arguments)*") { $issues.Add("Task arguments mismatch: $($task.TaskName)") }
@@ -53,7 +60,7 @@ foreach ($contract in $expected) {
   }
 }
 
-$followBuilders = $tasks | Where-Object TaskName -eq "WaveSight Follow-Builders Skill Daily"
+$followBuilders = $tasks | Where-Object TaskName -eq "WaveSight Follow-Builders Skill Weekly"
 if ($followBuilders) {
   if (-not $followBuilders.Settings.WakeToRun) { $issues.Add("Follow-Builders task must wake the machine") }
   if ([int]$followBuilders.Settings.RestartCount -lt 2) { $issues.Add("Follow-Builders task must retain two retries") }
@@ -74,6 +81,8 @@ $summary = [pscustomobject]@{
       name = $_.TaskName
       state = [string]$_.State
       time = ([DateTime]$_.Triggers[0].StartBoundary).ToString("HH:mm")
+      frequency = $_.Triggers[0].CimClass.CimClassName
+      daysOfWeek = $_.Triggers[0].DaysOfWeek
       runner = $_.Actions[0].Arguments
     }
   })

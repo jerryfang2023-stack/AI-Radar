@@ -128,7 +128,8 @@ test("morning recovery validates accepted main without overwriting a dirty local
     assert.equal(run(["--source-ref=missing"]).status, 1);
     assert.equal(fs.readFileSync(path.join(fixtureRoot, relativeData), "utf8"), "unfinished user draft");
     const controller = fs.readFileSync(path.join(repositoryRoot, "agent-workflow/tools/run-daily-automation-controller.mjs"), "utf8");
-    assert.match(controller, /function firstLineRecovery\(\)[\s\S]*assert-follow-builders-data\.mjs[\s\S]*--source-ref=origin\/main/u);
+    const morning = controller.slice(controller.indexOf("function morning()"), controller.indexOf("function recovery()"));
+    assert.doesNotMatch(morning, /follow-builders|First-Line Viewpoints|Community Intelligence/u);
   } finally { fs.rmSync(fixtureRoot, { recursive: true, force: true }); }
 });
 
@@ -184,14 +185,62 @@ test("afternoon supervision retains the durable runtime failure and its original
   }
 });
 
-test("pre-window afternoon supervision reports waiting instead of passed", async () => {
+test("weekday supervision does not require a daily First-Line Viewpoints or Builders skill publication", async () => {
+  const originalCwd = process.cwd();
+  const originalArgv = process.argv;
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-weekly-builders-not-due-"));
+  try {
+    const supervisor = await loadSupervisor(
+      fixtureRoot,
+      ["--date=2026-07-28", "--github=off", "--scheduled-task=off", "--hermes=off"],
+      "weekly-not-due",
+    );
+    const firstLine = supervisor.buildFirstLineLane({
+      github: { available: true, latest_run: null, prs: [], pr_warning: "" },
+    });
+    const builders = supervisor.buildFollowBuildersSkillLane();
+    assert.equal(firstLine.evidence.weeklyDue, false);
+    assert.equal(firstLine.problems.length, 0);
+    assert.equal(firstLine.waiting.length, 0);
+    assert.equal(builders.evidence.weeklyDue, false);
+    assert.equal(builders.problems.length, 0);
+    assert.equal(builders.waiting.length, 0);
+  } finally {
+    process.chdir(originalCwd);
+    process.argv = originalArgv;
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
+
+test("weekly Monday supervision still requires a same-week Builders publication after its window", async () => {
+  const originalCwd = process.cwd();
+  const originalArgv = process.argv;
+  const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-weekly-builders-due-"));
+  try {
+    const supervisor = await loadSupervisor(
+      fixtureRoot,
+      ["--date=2026-07-27", "--force-afternoon-window=true", "--github=off", "--scheduled-task=off", "--hermes=off"],
+      "weekly-due",
+    );
+    const builders = supervisor.buildFollowBuildersSkillLane();
+    assert.equal(builders.evidence.weeklyDue, true);
+    assert.equal(builders.status, "manual_required");
+    assert.ok(builders.problems.some((item) => /no same-date follow-builders skill publish report/u.test(item.message)));
+  } finally {
+    process.chdir(originalCwd);
+    process.argv = originalArgv;
+    fs.rmSync(fixtureRoot, { recursive: true, force: true });
+  }
+});
+
+test("pre-window weekly Monday supervision reports waiting instead of passed", async () => {
   const originalCwd = process.cwd();
   const originalArgv = process.argv;
   const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-follow-builders-window-"));
   try {
     const supervisor = await loadSupervisor(
       fixtureRoot,
-      ["--date=2099-01-01", "--github=off", "--scheduled-task=off", "--hermes=off"],
+      ["--date=2099-01-05", "--github=off", "--scheduled-task=off", "--hermes=off"],
       "prewindow",
     );
     const lane = supervisor.buildFollowBuildersSkillLane();
@@ -343,11 +392,11 @@ test("morning supervision keeps published data paired with its published gate", 
   }
 });
 
-test("morning supervision waits while same-date First-Line Viewpoints workflow is active", async () => {
+test("weekly Monday supervision waits while same-date First-Line Viewpoints workflow is active", async () => {
   const originalCwd = process.cwd();
   const originalArgv = process.argv;
   const fixtureRoot = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-first-line-active-workflow-"));
-  const date = "2026-07-24";
+  const date = "2026-07-27";
   try {
     const dataFile = path.join(fixtureRoot, "01-SiteV2", "site", "data", "follow-builders-daily.json");
     fs.mkdirSync(path.dirname(dataFile), { recursive: true });
@@ -373,7 +422,7 @@ test("morning supervision waits while same-date First-Line Viewpoints workflow i
     assert.equal(lane.problems.length, 0);
     assert.equal(lane.waiting.length, 1);
     assert.match(lane.waiting[0].message, /workflow is in_progress/u);
-    assert.ok(lane.warnings.some((item) => /first-line data date is 2026-07-23, expected 2026-07-24; First-Line Viewpoints workflow is in_progress/u.test(item)));
+    assert.ok(lane.warnings.some((item) => /first-line data date is 2026-07-23, expected 2026-07-27; First-Line Viewpoints workflow is in_progress/u.test(item)));
     assert.ok(!lane.actions.some((item) => /send Codex/u.test(item)));
   } finally {
     process.chdir(originalCwd);

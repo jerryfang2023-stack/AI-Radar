@@ -30,8 +30,8 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
 8. `lane_isolation`
    - Pass when the First-Line Viewpoints PR stages no Business Signals, relationship graph, trend candidate, or Community Intelligence data.
 
-9. `daily_problem_watchdog`
-   - Pass when Daily Problem Watchdog records First-Line Viewpoints failures to the production incident registry when the independently triggered 08:10 RSS workflow actually fails. A missing run is judged from the observation window and real receipts; no retired Codex or 09:15/09:50 timer is required.
+9. `weekly_problem_watchdog`
+   - Pass when Daily Problem Watchdog records First-Line Viewpoints failures to the production incident registry when the independently scheduled Monday 09:00 RSS workflow actually fails. A missing run is judged from the Monday observation window and real receipts; no retired Codex or 09:15/09:50 timer is required.
    - Pass when the watchdog does not dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` or any recovery workflow.
    - Fail when the lane waits for a retired Hermes timer or automatically invokes a repair agent instead of recording evidence for operator-owned repair.
 
@@ -45,9 +45,9 @@ Run these pass/fail checks when supervising, repairing, or updating the First-Li
     - Pass when the repair targets the earliest category and reruns the smallest relevant validation.
     - Fail when RSS collection, local Vault projection, GitHub publication, and afternoon skill publish are treated as one generic rerun problem.
 
-12. `morning_rss_problem_window`
-    - Pass when a missing-run assessment respects the 09:50 RSS observation threshold and the actual 08:10 dispatch/workflow receipts; queued or running work remains Waiting. The threshold is not a scheduled task.
-    - Pass when an operator-triggered GitHub run recovers a missed 08:10 dispatch, while the missed trigger is recorded separately from accepted data quality.
+12. `weekly_rss_problem_window`
+    - Pass when a missing-run assessment is due only on Monday and respects the 09:50 RSS observation threshold and the actual 09:00 workflow receipts; queued or running work remains Waiting. The threshold is not a scheduled task.
+    - Pass when an operator-triggered GitHub run recovers a missed Monday workflow, while the missed trigger is recorded separately from accepted data quality.
     - Fail when Daily Problem Watchdog creates a First-Line RSS repair inbox from stale data before the 09:50 observation threshold or while the actual RSS workflow is still active.
 
 13. `afternoon_skill_count_consistency`

@@ -277,6 +277,12 @@ function hasWindowPassed(targetDate, hhmm) {
   return current !== null && target !== null && current >= target;
 }
 
+function isWeeklyUpdateDay(targetDate) {
+  const parsed = new Date(`${targetDate}T12:00:00+08:00`);
+  return !Number.isNaN(parsed.getTime())
+    && new Intl.DateTimeFormat("en-US", { timeZone: "Asia/Shanghai", weekday: "short" }).format(parsed) === "Mon";
+}
+
 function runOptional(command, argsList, timeoutMs = 20000) {
   const result = spawnSync(command, argsList, {
     cwd: root,
@@ -687,7 +693,8 @@ export function buildFirstLineLane({ github = null } = {}) {
   const warnings = [];
   const evidence = {};
   const actions = [];
-  const windowPassed = hasWindowPassed(date, "09:50");
+  const weeklyDue = isWeeklyUpdateDay(date);
+  const windowPassed = weeklyDue && hasWindowPassed(date, "09:50");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "follow-builders-daily.json");
   const gateFile = path.join(reportsDir, `${date}-follow-builders-data-gate.md`);
   const manifestFile = path.join(reportsDir, `${date}-first-line-viewpoints-manifest.md`);
@@ -710,10 +717,13 @@ export function buildFirstLineLane({ github = null } = {}) {
     manifestFields.builders_gate,
   ].every((value) => value === "success");
   const historicalEvidenceHealthy = date < shanghaiDate() && manifestHealthy && statusFromGateText(gateText) === "passed";
-  const gh = github || githubWorkflowState("daily-first-line-viewpoints-pr.yml", `automation/first-line-viewpoints-${date}`);
+  const gh = github || (weeklyDue
+    ? githubWorkflowState("daily-first-line-viewpoints-pr.yml", `automation/first-line-viewpoints-${date}`)
+    : { available: false, latest_run: null, prs: [], warning: "weekly Builders update is not due" });
   const workflowActive = gh.latest_run?.status === "in_progress" || gh.latest_run?.status === "queued";
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
+  evidence.weeklyDue = weeklyDue;
   evidence.generatedDate = generatedDate;
   evidence.dataSource = usePublishedData ? "origin/main" : "working_tree";
   evidence.localGeneratedDate = localGeneratedDate;
@@ -732,7 +742,7 @@ export function buildFirstLineLane({ github = null } = {}) {
     ? rel(manifestFile)
     : publishedManifestText ? `origin/main:${rel(manifestFile)}` : "not_required_for_same_day_local_gate";
   evidence.manifestHealthy = manifestHealthy;
-  evidence.manifestRequired = date < shanghaiDate();
+  evidence.manifestRequired = weeklyDue && date < shanghaiDate();
   evidence.manifestStatus = manifestHealthy
     ? "passed"
     : evidence.manifestRequired ? "missing" : "not_required_for_same_day_local_gate";
@@ -761,7 +771,7 @@ export function buildFirstLineLane({ github = null } = {}) {
   );
   evidence.localDataHealthy = localDataHealthy;
 
-  if (gh.available && !localDataHealthy) {
+  if (weeklyDue && gh.available && !localDataHealthy) {
     if (!gh.latest_run && hasWindowPassed(date, "09:50")) {
       addProblem(problems, "no same-date First-Line Viewpoints RSS run after the morning production window", "manual_required");
       actions.push("inspect the Daily Problem Watchdog inbox report, then dispatch `.github/workflows/daily-first-line-viewpoints-pr.yml` only after targeted diagnosis");
@@ -772,9 +782,9 @@ export function buildFirstLineLane({ github = null } = {}) {
       addProblem(problems, `First-Line Viewpoints workflow conclusion is ${gh.latest_run.conclusion}`);
     }
     if (gh.pr_warning) warnings.push(gh.pr_warning);
-  } else if (gh.available && localDataHealthy && gh.pr_warning) {
+  } else if (weeklyDue && gh.available && localDataHealthy && gh.pr_warning) {
     warnings.push(gh.pr_warning);
-  } else if (!gh.available && isTodayOrPast(date)) {
+  } else if (weeklyDue && !gh.available && isTodayOrPast(date)) {
     warnings.push(gh.warning || "GitHub workflow state unavailable");
   }
 
@@ -785,7 +795,7 @@ export function buildFirstLineLane({ github = null } = {}) {
   return {
     id: "first_line_viewpoints",
     label: "First-Line Viewpoints",
-    schedule: "08:10 conditional RSS collection + page build; operator-owned inspection and recovery",
+    schedule: "Monday 09:00 weekly RSS collection + page build; independent from daily financing",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
@@ -801,7 +811,8 @@ export function buildFollowBuildersSkillLane() {
   const warnings = [];
   const evidence = {};
   const actions = [];
-  const windowPassed = forceAfternoonWindow || hasWindowPassed(date, "16:30");
+  const weeklyDue = isWeeklyUpdateDay(date);
+  const windowPassed = forceAfternoonWindow || (weeklyDue && hasWindowPassed(date, "16:30"));
   const outputFile = path.join(root, "01-SiteV2", "content", "07-points", `${date}-builders-viewpoints.md`);
   const reportName = `${date}-follow-builders-skill-local-publish.md`;
   const reportFile = [...new Set([
@@ -846,6 +857,7 @@ export function buildFollowBuildersSkillLane() {
   evidence.publishStatus = publishStatus || (reportExists ? "not_recorded" : "missing");
   evidence.publishError = publishError;
   evidence.guanlanVaultProjection = reportFields.guanlan_vault_projection || "local_after_main_sync";
+  evidence.weeklyDue = weeklyDue;
 
   if (windowPassed) {
     if (!outputExists) addProblem(problems, `missing follow-builders skill output file: ${rel(outputFile)}`);
@@ -885,7 +897,7 @@ export function buildFollowBuildersSkillLane() {
   if (windowPassed && !reportExists) {
     warnings.push("follow-builders skill publish report is missing before Hermes record time");
   }
-  if (!windowPassed && (!outputExists || !reportExists)) {
+  if (weeklyDue && !windowPassed && (!outputExists || !reportExists)) {
     addWaiting(waiting, "awaiting the 16:10 follow-builders skill publish and 16:30 Hermes record window");
   }
 
@@ -905,7 +917,7 @@ export function buildFollowBuildersSkillLane() {
   return {
     id: "follow_builders_skill",
     label: "First-Line Viewpoints Skill",
-    schedule: "16:10 local follow-builders skill publish; Hermes record 16:30; report review 16:45",
+    schedule: "Monday 16:10 weekly follow-builders skill publish, independent from daily financing",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
@@ -955,8 +967,9 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
   const warnings = [];
   const evidence = {};
   const actions = [];
-  const localWindowPassed = hasWindowPassed(date, "08:45");
-  const publishWindowPassed = hasWindowPassed(date, "09:50");
+  const weeklyDue = isWeeklyUpdateDay(date);
+  const localWindowPassed = weeklyDue && hasWindowPassed(date, "08:45");
+  const publishWindowPassed = weeklyDue && hasWindowPassed(date, "09:50");
   const dataFile = path.join(root, "01-SiteV2", "site", "data", "community-intelligence.json");
   const gateFile = path.join(outputDir, `${date}-community-intelligence-gate.md`);
   const communityLogFile = path.join(
@@ -978,15 +991,17 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
   const usePublishedData = localGeneratedDate !== date && publishedGeneratedDate === date;
   const data = usePublishedData ? publishedData : localData;
   const generatedDate = shanghaiDate(data?.meta?.generatedAt || "");
-  const task = scheduledTask || scheduledTaskState("WaveSight Community Intelligence Daily");
+  const task = scheduledTask || scheduledTaskState("WaveSight Community Intelligence Weekly");
   const taskState = task.available ? scheduledTaskStateName(task.task?.State) : "";
-  const taskPending = communityTaskPending({
+  const taskPending = weeklyDue && communityTaskPending({
     targetDate: date,
     taskAvailable: task.available,
     taskState,
     lastRunTime: task.task?.LastRunTime,
   });
-  const gh = github || githubWorkflowState("daily-community-intelligence-pr.yml", `automation/community-intelligence-${date}`);
+  const gh = github || (weeklyDue
+    ? githubWorkflowState("daily-community-intelligence-pr.yml", `automation/community-intelligence-${date}`)
+    : { available: false, latest_run: null, prs: [], warning: "weekly Community Intelligence update is not due" });
   const mergedPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.mergedAt) : null;
   const openPr = Array.isArray(gh.prs) ? gh.prs.find((pr) => pr.state === "OPEN") : null;
   const publication = classifyCommunityPublication({
@@ -1001,6 +1016,7 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
   const publishedGateText = usePublishedData ? readTextFromGit("origin/main", gateFile) : "";
 
   evidence.generatedAt = data?.meta?.generatedAt || "";
+  evidence.weeklyDue = weeklyDue;
   evidence.generatedDate = generatedDate;
   evidence.dataSource = usePublishedData ? "origin/main" : "working_tree";
   evidence.localGeneratedDate = localGeneratedDate;
@@ -1030,7 +1046,7 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
     evidence.collectorErrors === 0 &&
     evidence.gateStatus === "passed";
   evidence.login = {
-    state: loginRequired ? "manual_relogin_required" : communityDataHealthy ? "healthy" : "unknown",
+    state: !weeklyDue ? "not_due" : loginRequired ? "manual_relogin_required" : communityDataHealthy ? "healthy" : "unknown",
     log: exists(communityLogFile) ? rel(communityLogFile) : "missing",
   };
 
@@ -1050,7 +1066,7 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
     }
   }
 
-  if (task.available) {
+  if (weeklyDue && task.available) {
     const lastResult = Number(task.task?.LastTaskResult);
     if (taskPending) {
       const pendingState = taskState.toLowerCase();
@@ -1073,11 +1089,11 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
         addProblem(problems, `community scheduled task last result is ${lastResult}`, "manual_required");
       }
     }
-  } else {
+  } else if (weeklyDue) {
     warnings.push(task.warning || "scheduled task state unavailable");
   }
 
-  if (loginRequired) {
+  if (weeklyDue && loginRequired) {
     const message = "Community Intelligence login expired; open the dedicated Chrome profile, complete QR/login verification, then rerun the local collector";
     if (communityDataHealthy) {
       warnings.push(message);
@@ -1112,12 +1128,12 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
       }
     }
     if (gh.pr_warning) warnings.push(gh.pr_warning);
-  } else if (isTodayOrPast(date)) {
+  } else if (weeklyDue && isTodayOrPast(date)) {
     warnings.push(gh.warning || "GitHub workflow state unavailable");
   }
 
   const lastTaskResult = task.available ? Number(task.task?.LastTaskResult) : null;
-  evidence.stageStatus = classifyCommunityStages({
+  evidence.stageStatus = weeklyDue ? classifyCommunityStages({
     communityDataHealthy,
     dataWaiting: taskPending,
     localWindowPassed,
@@ -1129,7 +1145,7 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
     taskState,
     loginState: evidence.login.state,
     publicationConfirmed,
-  });
+  }) : { data: "not_due", publication: "not_due", task_execution: "not_due", login: "not_due" };
 
   if (localWindowPassed && generatedDate !== date && !taskPending) {
     actions.push("rerun `agent-workflow/tools/run-community-intelligence.ps1` locally");
@@ -1141,7 +1157,7 @@ export function buildCommunityLane({ scheduledTask = null, github = null } = {})
   return {
     id: "community_intelligence",
     label: "Community Intelligence",
-    schedule: "08:30 local logged-in collection and publish handoff; operator-owned inspection; 16:45 final closure",
+    schedule: "Monday 08:30 weekly local logged-in collection and publish handoff; independent from daily financing",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
