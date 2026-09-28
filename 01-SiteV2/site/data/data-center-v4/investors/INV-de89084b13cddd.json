@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -141,29 +141,266 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Phoenix Court's Solar fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Phoenix Court’s current website describes a multi-stage platform and lists LocalGlobe, Latitude, Solar and Basecamp. Solar is its scale-up fund. The revenue and employment figures cited are Phoenix Court’s reported portfolio aggregates, not investment returns; disclosed company-round totals are not Solar’s individual contributions.",
+      "summary": "Phoenix Court 是一个多阶段投资平台，其基金包括 LocalGlobe、Latitude、Solar 和 Basecamp。Solar 支持规模化企业。Phoenix Court 的 2026 年公开更新报告称，Solar 试点投资组合中有 18 家公司，合计收入 50 亿英镑，并拥有超过 8,500 个工作岗位；这些是公司报告的投资组合指标，而非基金回报。",
+      "facts": [
+        {
+          "field": "platform_structure",
+          "label": "平台与基金",
+          "value": "Phoenix Court lists LocalGlobe, Latitude, Solar and Basecamp as funds on its current website.",
+          "source_id": "phoenix_home_2026"
+        },
+        {
+          "field": "solar_stage",
+          "label": "Solar 投资阶段",
+          "value": "Scale-up companies.",
+          "source_id": "phoenix_solar_2026"
+        },
+        {
+          "field": "solar_examples",
+          "label": "Solar 投资组合精选示例",
+          "value": [
+            "Monzo",
+            "Moove",
+            "Raspberry Pi",
+            "Fuse",
+            "Raisin",
+            "M-Kopa",
+            "Tide",
+            "Perk"
+          ],
+          "source_id": "phoenix_solar_2026"
+        },
+        {
+          "field": "solar_focus",
+          "label": "Solar 背景",
+          "value": "Phoenix Court positions Solar at the scale-up stage and says this is where domestic growth capital is scarce in its region.",
+          "source_id": "phoenix_solar_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "Phoenix Court 的时间线称 LocalGlobe 由 Robin 和 Saul Klein 创立。",
+          "source_id": "phoenix_history_2026"
+        },
+        {
+          "date": "2019",
+          "description": "Phoenix Court 的时间线记录了 Latitude 的推出。",
+          "source_id": "phoenix_history_2026"
+        },
+        {
+          "date": "2023",
+          "description": "Phoenix Court 的时间线记录了 Solar 试点基金的推出。",
+          "source_id": "phoenix_history_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Solar 试点投资组合（报告于 2026 年 9 月 22 日）：Phoenix Court 称其已投资 18 家公司，合计收入 50 亿英镑，其中 14 家公司年收入超过 1 亿英镑，并拥有超过 8,500 个工作岗位。这些是 Phoenix Court 报告的投资组合汇总数据，而非基金回报。",
+          "source_id": "phoenix_solar_aggregate_2026"
+        },
+        {
+          "description": "Mistral AI D轮融资（2026年9月8日）：Mistral的融资公告将Phoenix Court的Solar基金列为该公司全公司30亿欧元轮次的参与方。Solar的具体出资额未披露。",
           "source_id": "FISRC-4d11ed62a144a3f4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Phoenix Court",
+          "url": "https://www.phoenixcourt.vc/",
+          "source_id": "phoenix_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询",
+          "value": "hello@phoenixcourt.co",
+          "source_id": "phoenix_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "办公室",
+          "value": "2 Brill Place, London NW1 1DX, United Kingdom",
+          "source_id": "phoenix_contact_2026"
+        },
+        {
+          "kind": "contact_form",
+          "label": "联系页面",
+          "value": "Phoenix Court contact page",
+          "url": "https://www.phoenixcourt.vc/contact",
+          "source_id": "phoenix_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "phoenix_home_2026",
+          "source_url": "https://www.phoenixcourt.vc/",
+          "source_title": "Phoenix Court",
+          "source_content_hash": "7dc93a806c588bdd3f1adb10b2646ef0b0b45aa4361ccf956ae79913f4b6e02c",
+          "quote": "Phoenix Court is a multi-stage investment company, home to LocalGlobe, Latitude, Solar and Basecamp.",
+          "quote_hash": "33a8378f7dd6f0e865b72a6931866e8fd72de5806e134a84fa152b11448b0e40"
+        },
+        {
+          "source_id": "phoenix_history_2026",
+          "source_url": "https://www.phoenixcourt.vc/about",
+          "source_title": "About Us | Phoenix Court",
+          "source_content_hash": "b72c381320c9f8e372626c0ac5e0c1d7418bb0a292459178cceb384a4e75c374",
+          "quote": "2005 LocalGlobe founded by Robin & Saul Klein. 2018 Phoenix Court opened in Somers Town. 2019 Latitude launched. 2023 Solar pilot fund launch.",
+          "quote_hash": "a8a15a33744317f1230ca98a6be22b1a459789ed9ab574e878843a6d645d5075"
+        },
+        {
+          "source_id": "phoenix_solar_2026",
+          "source_url": "https://www.phoenixcourt.vc/funds/solar",
+          "source_title": "Solar | Phoenix Court",
+          "source_content_hash": "6855e7422f065fd7631862121d4fc9226cd1f86dbdb1b3316e7fcda4597f2a89",
+          "quote": "For founders at the scaleup stage who believe that early is a state of mind, and that success doesn’t stop compounding. This is where domestic capital is scarcest in our region, and where too many companies are pushed overseas to find the funding they need to keep growing. Monzo, Moove, Raspberry Pi, Fuse, Raisin, M-Kopa, Tide and Perk are listed as companies backed at this stage.",
+          "quote_hash": "d61f7a79b4ae650c6c7913eb3e1822443e6beb0c8e4017e3c54955dc3b854cbf"
+        },
+        {
+          "source_id": "phoenix_solar_aggregate_2026",
+          "source_url": "https://www.phoenixcourt.vc/news/why-britain-needs-to-back-britain",
+          "source_title": "Why Britain needs to back Britain | Phoenix Court",
+          "source_content_hash": "9b14fac5cd9ff69c258bab7a97e8b771dbd6750243cff712a9bbc0d5bb84c820",
+          "quote": "Our Solar pilot fund has backed 18 companies. Together these 18 companies have an aggregate revenue of £5bn, with 14 of them generating over £100M in annual revenue. They’ve created more than 8,500 high value new jobs across the country.",
+          "quote_hash": "9e961816f7a76ef64a3cd5158de0752cc28980a4b95665a587b9a75de51ee667"
+        },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+          "source_title": "Mistral raises €3B to make sovereign, open-weight AI the technology frontier",
           "source_content_hash": "714c413ab36c1848",
           "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
           "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+        },
+        {
+          "source_id": "phoenix_contact_2026",
+          "source_url": "https://www.phoenixcourt.vc/contact",
+          "source_title": "Contact | Phoenix Court",
+          "source_content_hash": "a0f49f2d5077d6a0c845b6cbca4532a4a64f73df3a76ef725b927ebffdffbab9",
+          "quote": "General enquiries: hello@phoenixcourt.co. Somers Town / King’s Cross, 2 Brill Place, London NW1 1DX.",
+          "quote_hash": "32e79d3156a25694ce977b782b58b1623c8e0014d1ae83eaf3186c95feeb3c17"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Phoenix Court 是一个多阶段投资平台，其基金包括 LocalGlobe、Latitude、Solar 和 Basecamp。Solar 支持规模化企业。Phoenix Court 的 2026 年公开更新报告称，Solar 试点投资组合中有 18 家公司，合计收入 50 亿英镑，并拥有超过 8,500 个工作岗位；这些是公司报告的投资组合指标，而非基金回报。",
+          "source_hash": "834debc52ad571076a54f76d2fd4f74893caf3c7a60f578b8c241e1879dc8549",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "平台与基金",
+          "source_hash": "100ecefd1682103061b9465dfce04e9271c6569430f8357741a5b00b27e8e51b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "Solar 投资阶段",
+          "source_hash": "d94116257965a018ac30f89459c60402b602e9ebd89b6389ca0768dbc08592a8",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "Solar 投资组合精选示例",
+          "source_hash": "a309aba5cc5d806c4bcbcaa92378a2c60c01b6004f611e01f70072b5e24f0f69",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "Solar 背景",
+          "source_hash": "65a2dc4eb6df472528e77c15eb64ae6971e0ed1bb276e7a6be41e480bcdbcccf",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Phoenix Court 的时间线称 LocalGlobe 由 Robin 和 Saul Klein 创立。",
+          "source_hash": "5fc60c6684a58f52dc2f5be1945cde89e0bf6322147e1ab057b739233b3ea544",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "Phoenix Court 的时间线记录了 Latitude 的推出。",
+          "source_hash": "6f8137834399f4a1caece15fa3567f2a392e28c3529069c35c8f3a14d12f13ae",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[2].description": {
+          "text": "Phoenix Court 的时间线记录了 Solar 试点基金的推出。",
+          "source_hash": "0f06db95c76ba119e6cddb7cfc779744a5b02ec303e3921c9385c99a8816243b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Solar 试点投资组合（报告于 2026 年 9 月 22 日）：Phoenix Court 称其已投资 18 家公司，合计收入 50 亿英镑，其中 14 家公司年收入超过 1 亿英镑，并拥有超过 8,500 个工作岗位。这些是 Phoenix Court 报告的投资组合汇总数据，而非基金回报。",
+          "source_hash": "a3e286f37a5331210503d45119e36f53ef731cf81ac0b4cf69d9f18a8de97c26",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Mistral AI D轮融资（2026年9月8日）：Mistral的融资公告将Phoenix Court的Solar基金列为该公司全公司30亿欧元轮次的参与方。Solar的具体出资额未披露。",
+          "source_hash": "546d37f97356a15f036f14797c626024c0c6dd6ac8d9cd97d09f56e66829550b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "一般咨询",
+          "source_hash": "d055b1a1cc5de9d97dd639ea81af861804b6cf7f03bd180549784275c691bb21",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "办公室",
+          "source_hash": "9e380d9991e6b74209424e3476f284b459effef9b0ccf6d9f3f8acdbde004c9d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[3].label": {
+          "text": "联系页面",
+          "source_hash": "d9d91710c408038830676298c19d52f87cb35d6e8b142e8e2127346630449b99",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

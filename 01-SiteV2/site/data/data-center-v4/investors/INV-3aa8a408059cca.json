@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -130,20 +130,144 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "深圳高性能医疗器械国家研究院有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "档案主体为深圳高性能医疗器械国家研究院有限公司。其官网招聘资料说明该公司是国家高性能医疗器械创新中心的企业化运营主体；中心品牌与运营公司是相关但不同的名称。技术成果为中心官网自述。",
+      "summary": "深圳高性能医疗器械国家研究院有限公司是国家高性能医疗器械创新中心的企业化运营主体。该中心于2020年4月获工业和信息化部批复建设，围绕高端医学影像、体外诊断、先进治疗、医用材料与植介入器械、康复与健康信息开展共性技术研发和成果转化，并建立研发、检测、中试、工程转化及设备共享等平台。官方招聘资料列出的股东包括中科院深圳先进技术研究院、迈瑞、联影、先健科技、哈尔滨工业大学和中国医学装备协会。",
+      "facts": [
+        {
+          "field": "operating_entity_for",
+          "label": "运营关系",
+          "value": "国家高性能医疗器械创新中心；中心官网招聘资料说明由本公司实行企业化运营",
+          "source_id": "nmed_center_operation"
+        },
+        {
+          "field": "center_approval",
+          "label": "创新中心批复建设时间",
+          "value": "2020年4月，工业和信息化部批复建设",
+          "source_id": "nmed_center_about"
+        },
+        {
+          "field": "shareholders_listed_by_center",
+          "label": "官网招聘资料列出的股东",
+          "value": [
+            "中国科学院深圳先进技术研究院",
+            "深圳迈瑞生物医疗电子股份有限公司",
+            "上海联影医疗科技股份有限公司",
+            "先健科技（深圳）有限公司",
+            "哈尔滨工业大学",
+            "中国医学装备协会"
+          ],
+          "source_id": "nmed_center_operation"
+        },
+        {
+          "field": "focus_areas",
+          "label": "重点技术方向",
+          "value": [
+            "高端医学影像",
+            "体外诊断与生命体征监测",
+            "先进治疗",
+            "医用材料与植介入器械",
+            "康复与健康信息"
+          ],
+          "source_id": "nmed_center_about"
+        },
+        {
+          "field": "innovation_platforms",
+          "label": "创新与产业服务平台",
+          "value": [
+            "关键共性技术研发",
+            "检验测试",
+            "中试",
+            "工程转化及生产制造",
+            "设备共享",
+            "CRO综合服务",
+            "CDMO定制生产",
+            "投资孵化与资本运作"
+          ],
+          "source_id": "nmed_center_operation"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-04",
+          "description": "国家高性能医疗器械创新中心获工业和信息化部批复建设。",
+          "source_id": "nmed_center_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "创新中心官网招聘资料自述，中心研制了首个国产自主知识产权 ECMO 设备及耗材套包，并研发全球首台5.0T人体全身医学磁共振成像系统；此处按机构公开自述记录，未视作独立认证结论。",
+          "source_id": "nmed_center_operation"
+        },
         {
           "description": "融资来源记录：神奕科技 · 天使轮 · 2026-08-31 · 创始股东 · 超千万元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-20e8d24368075c32"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "国家高性能医疗器械创新中心官网",
+          "value": "nmed.org.cn",
+          "url": "https://www.nmed.org.cn/",
+          "source_id": "nmed_center_about"
+        },
+        {
+          "kind": "phone",
+          "label": "中心联系电话",
+          "value": "0755-26920180",
+          "source_id": "nmed_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "中心传真",
+          "value": "0755-28194192",
+          "source_id": "nmed_contact"
+        },
+        {
+          "kind": "address",
+          "label": "研发平台",
+          "value": "深圳市龙华区汇德大厦38–41层（深圳北站附近）",
+          "source_id": "nmed_contact"
+        },
+        {
+          "kind": "address",
+          "label": "中试平台",
+          "value": "深圳市龙华区观澜街道新澜社区观光路1301-76号银星智界二期1号楼A101",
+          "source_id": "nmed_contact"
+        },
+        {
+          "kind": "address",
+          "label": "协同平台",
+          "value": "深圳市南山区西丽深圳大学城学苑大道1068号（中科院深圳先进院）",
+          "source_id": "nmed_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nmed_center_about",
+          "source_url": "https://www.nmed.org.cn/Content/gyzx/zxjj/index.html",
+          "source_title": "中心简介 - 国家高性能医疗器械创新中心",
+          "source_content_hash": "9c1f516aa50396789b604833b68af56be42738abf065bfeb60e6af0811cab971",
+          "quote": "于2020年4月获工业和信息化部批复建设",
+          "quote_hash": "2eee0150e8f446ffda510e09d4a13090a0166e8e02b770c47622a1e98c096997"
+        },
+        {
+          "source_id": "nmed_center_operation",
+          "source_url": "https://www.nmed.org.cn/Content/jrwm/zpxx/kyxl/2024-03/146998.html",
+          "source_title": "国家高性能医疗器械创新中心招聘简章 - 国家高性能医疗器械创新中心",
+          "source_content_hash": "05a62601f83b6ab8a3825880a8fb3000918cc7407e562d505e6f9ee2c6b54658",
+          "quote": "实行企业化运营",
+          "quote_hash": "b8d9b2e005e9d391bb8a60ff298c7b47db1ad1c2fb9a08a265195f5737e3f3ea"
+        },
+        {
+          "source_id": "nmed_contact",
+          "source_url": "https://www.nmed.org.cn/Content/jrwm/lxwm/index.html",
+          "source_title": "联系我们 - 国家高性能医疗器械创新中心",
+          "source_content_hash": "6718b024910b113191d2f56ef6c7ded6ca6c23eca71ee54e47dc4adfc340730f",
+          "quote": "联系电话：0755-26920180",
+          "quote_hash": "b4ce9c683ee04a5b73da83419138c2059ac193732dab6a4ddb7dca7b19edcdb8"
+        },
         {
           "source_id": "FISRC-20e8d24368075c32",
           "source_url": "https://eu.36kr.com/zh/p/3963142866369923",
@@ -153,7 +277,8 @@
           "quote_hash": "1e9ee052ac696e57ad0af35e617ef0377c86265661c7e8d9f3163d83e84f7d62"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }

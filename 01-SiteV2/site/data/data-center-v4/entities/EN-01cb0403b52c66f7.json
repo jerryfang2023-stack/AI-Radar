@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -108,33 +108,139 @@
     "timeline": [],
     "viewpoints": [],
     "public_profile": {
-      "coverage_status": "activity_only",
-      "coverage_note": "当前仅整理已有融资报道或本人公开简介中的身份关联；这不是完整人物履历。职务与公司关系按来源日期呈现，不代表仍在任；教育经历和公开联系方式未核验时留空。",
-      "summary": "Paul Eremenko 的来源线索将其与P-1 AI, Inc.（联合创始人兼CEO）关联。来源日期：2026-07-30；完整职业时间线仍待一手资料补充。",
-      "current_roles": [],
+      "summary": "Paul Eremenko 是 P-1 AI 联合创始人兼 CEO，曾任 Universal Hydrogen CEO、United Technologies Corporation 高级副总裁兼 CTO 及 Airbus CTO，并在美国国防高级研究计划局（DARPA）担任项目经理、战术技术办公室副主任和代理主任。SAIC 2026 年董事会简介披露，他的本科和硕士均为航空航天工程方向，分别就读于 MIT 和 Caltech，另获 Georgetown 法学学位；页面未公开的任职起止时间不作推断。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼首席执行官",
+          "organization": "P-1 AI",
+          "source_id": "paul_saic_bio"
+        },
+        {
+          "title": "董事",
+          "organization": "SAIC",
+          "source_id": "paul_saic_bio"
+        },
+        {
+          "title": "董事会成员",
+          "organization": "Eve Holding Inc.",
+          "source_id": "paul_saic_bio"
+        }
+      ],
       "career": [
         {
-          "organization": "P-1 AI, Inc.",
-          "title": "联合创始人兼CEO",
-          "period": "来源记录于 2026-07-30；任职起止时间未披露",
-          "description": "人物索引所列身份由关联来源支持；不据此推断其目前仍在任。",
-          "source_id": "FISRC-2fad84309f732cda"
+          "organization": "P-1 AI",
+          "title": "联合创始人兼首席执行官",
+          "period": "官网现列；任职起始时间未披露",
+          "description": "领导面向复杂系统工程的 agentic AI 产品与公司建设。",
+          "source_id": "paul_saic_bio"
+        },
+        {
+          "organization": "Universal Hydrogen Co.",
+          "title": "首席执行官",
+          "period": "2020–2024",
+          "description": "领导氢能航空公司；SAIC 履历称公司完成了燃料电池动力客机飞行。",
+          "source_id": "paul_saic_bio"
+        },
+        {
+          "organization": "United Technologies Corporation (UTC)",
+          "title": "高级副总裁兼首席技术官",
+          "period": "此前；具体任期未披露",
+          "description": "SAIC 官方履历列出的前序高管职务。",
+          "source_id": "paul_saic_bio"
+        },
+        {
+          "organization": "Airbus",
+          "title": "首席技术官",
+          "period": "2016-07 起；离任时间未披露",
+          "description": "Airbus 于 2016 年宣布任命，SAIC 后续履历也将该职务列为其过往经历。",
+          "source_id": "paul_airbus_2016"
+        },
+        {
+          "organization": "DARPA",
+          "title": "项目经理；战术技术办公室副主任、代理主任",
+          "period": "此前；具体任期未披露",
+          "description": "SAIC 官方履历称其先后承担项目经理、副主任及代理主任职责；不推断任职日期。",
+          "source_id": "paul_saic_bio"
         }
       ],
-      "education": [],
-      "experience_summary": "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
-      "track_record": [],
+      "education": [
+        {
+          "institution": "Massachusetts Institute of Technology",
+          "qualification": "航空航天工程本科；SAIC 履历未披露年份。",
+          "source_id": "paul_saic_bio"
+        },
+        {
+          "institution": "California Institute of Technology",
+          "qualification": "航空航天工程硕士；SAIC 履历未披露年份。",
+          "source_id": "paul_saic_bio"
+        },
+        {
+          "institution": "Georgetown University",
+          "qualification": "法学学位；SAIC 履历未注明具体学位名称或年份。",
+          "source_id": "paul_saic_bio"
+        }
+      ],
+      "experience_summary": "职业经历横跨航空航天工程、国防技术管理、企业研发与氢能航空创业。SAIC 官方履历披露其曾在 DARPA、Airbus、UTC 和 Universal Hydrogen 任职，并于 2026 年加入 SAIC 董事会；来源未给出的任职起止时间保持未注明。",
+      "track_record": [
+        {
+          "description": "SAIC 2026 年董事会简介称 Universal Hydrogen 曾完成全球最大燃料电池动力客机飞行；这是公司成果，不归为 Eremenko 个人工程贡献。",
+          "source_id": "paul_saic_bio"
+        },
+        {
+          "description": "SAIC 官方履历称，Eremenko 因在 DARPA 的工作获 Distinguished Public Service Medal（杰出公共服务奖章）。",
+          "source_id": "paul_saic_bio"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-2fad84309f732cda",
-          "source_url": "https://tech.yahoo.com/ai/meta-ai/articles/could-agentic-ai-bring-american-123000675.html",
-          "source_title": "融资披露来源",
-          "source_content_hash": "eb500aed36566823",
-          "quote": "P-1 AI's co-founder and CEO Paul Eremenko, who was previously the CTO of Airbus",
-          "quote_hash": "a731adbf4fec516a6696fffaf3b76ef23f86158f05a38629233d3b1184db7452"
+          "source_id": "paul_p1",
+          "source_url": "https://p-1.ai/",
+          "source_title": "P-1 AI 官方网站",
+          "source_content_hash": "0eb2c0b220e253442736cfcaf6fbedf3d5ccadd31995d11d4580af72437cdac7",
+          "quote": "P-1 AI官网列出Paul Eremenko为团队成员，并介绍公司面向复杂系统工程的AI产品。",
+          "quote_hash": "248a7e5c1b4c905c012cc470416c0e9e847fe1b3982be329193338e4dc981f4f"
+        },
+        {
+          "source_id": "paul_saic_bio",
+          "source_url": "https://investors.saic.com/board-member/paul-eremenko",
+          "source_title": "SAIC | Paul Eremenko | Board Member",
+          "source_content_hash": "7679414915a783d43049e6518d6da11a35d68fbcfc9a0900dbe6488de6ae31a5",
+          "quote": "He is currently the CEO and Co-Founder of P-1 AI, a company focused on developing agentic AI for complex systems engineering.",
+          "quote_hash": "b9a5aba3e8e47a28397399e5d64963d4827092aa7e2c79720b6ed4ad185282b5"
+        },
+        {
+          "source_id": "paul_airbus_2016",
+          "source_url": "https://www.airbus.com/sites/g/files/jlcbta136/files/2ea68b04c119662093e901856ac5e139_Press%20Release%20-%20Airbus%20Group%20Appoints%20Paul%20Eremenko%20Chief%20Technology%20Officer%20-%20EN.pdf",
+          "source_title": "Airbus Group appoints Paul Eremenko Chief Technology Officer · Airbus",
+          "source_content_hash": "94648a8d939f6a89183bdff32cb19ef6a95d23c4fddd56641e4f86baaf71a7d1",
+          "quote": "appointed Paul Eremenko (36) as its Chief Technology Officer (CTO).",
+          "quote_hash": "939546ca2bf3d9f31e27159a08b63f82ac78b3b9f87c2817ab2271879655d6b1"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "现任职务、DARPA 与 UTC 经历、Universal Hydrogen 任期、教育背景及公开董事会关联来自 SAIC 2026 年官方董事简介；Airbus CTO 任命时间另由 Airbus 2016 年公告核对。SAIC 页面未给出的任职日期和学位年份不作推断；氢能飞机飞行成果归属公司。",
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Paul Eremenko 是 P-1 AI 联合创始人兼 CEO，曾任 Universal Hydrogen CEO、United Technologies Corporation 高级副总裁兼 CTO 及 Airbus CTO，并在美国国防高级研究计划局（DARPA）担任项目经理、战术技术办公室副主任和代理主任。SAIC 2026 年董事会简介披露，他的本科和硕士均为航空航天工程方向，分别就读于 MIT 和 Caltech，另获 Georgetown 法学学位；页面未公开的任职起止时间不作推断。",
+          "source_hash": "49cae8f7d52f699d9f16fdc6ae5f8070a7bafa21cb7b922b606d4bc11df4c837",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:22.214Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "SAIC 官方履历称，Eremenko 因在 DARPA 的工作获 Distinguished Public Service Medal（杰出公共服务奖章）。",
+          "source_hash": "ff8621b4606e6bf9f3fb9e8a258d68d03907cd8821a6251bff07e9cd5d1093b0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:22.214Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,89 @@
       }
     ],
     "public_profile": {
+      "summary": "“临港科创投”是融资记录中的简称。临港官方文件披露了由临港新片区管委会与临港集团共同出资、市场化运作的科技创新基金，以及其管理公司上海临港科创投资管理有限公司。相关基金主要通过子基金与直接投资支持早期和成长型科技企业。",
+      "coverage_note": "官方资料证明临港科创基金及管理公司的关系，但融资记录中的简称未明确说明出资主体、管理公司或某只子基金；因此本档案只介绍临港科创基金生态，不把单轮融资归到特定基金。2023年批复的人民币100,010万元为拟设基金注册资本计划，不等于当前实缴或基金管理规模。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "临港科创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "structure",
+          "label": "公开主体关系",
+          "value": "临港新片区管委会和临港集团共同出资设立临港新片区科技创新私募基金；官方申报指南称基金由管委会出资并按市场化方式运作。",
+          "source_id": "lingang_sciencefund_setup"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "以母基金参股子基金为主，也可与产业、科研和专业投资机构合作设立或参与子基金，并按规则开展项目直接投资。",
+          "source_id": "lingang_sciencefund_rules"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "种子期、初创期和成长期科技创新企业。",
+          "source_id": "lingang_sciencefund_rules"
+        },
+        {
+          "field": "focus",
+          "label": "投资领域",
+          "value": "临港新片区“6+2”重点产业，以及符合国家战略和区域产业规划的战略性新兴产业与未来产业。",
+          "source_id": "lingang_sciencefund_rules"
+        },
+        {
+          "field": "registered_capital",
+          "label": "拟设基金注册资本",
+          "value": "2023年字号批复载明计划注册资本人民币100,010万元；不是当前基金规模或实缴金额。",
+          "source_id": "lingang_sciencefund_setup"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023",
+          "description": "临港新片区管委会批复拟设科技创新基金使用相关名称。",
+          "source_id": "lingang_sciencefund_setup"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：求之科技 · 天使轮 · 2026-07-01 · 本轮参投 · 1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026年报道将临港科创投列为求之科技超1亿美元天使轮参投方之一。超1亿美元是企业融资总额，具体关联基金及单笔出资未披露。",
           "source_id": "FISRC-d45f7a4d8fd76b88"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "临港新片区政府公开信息",
+          "value": "科创基金申报指南",
+          "url": "https://www.lingang.gov.cn/html/website/lg/index/government/gonggaogongshi/qitagongshi/1748224992496095233.html",
+          "source_id": "lingang_sciencefund_rules"
+        },
+        {
+          "kind": "phone",
+          "label": "科创基金申报咨询",
+          "value": "021-6475-0598",
+          "url": "https://www.lingang.gov.cn/html/website/lg/index/government/gonggaogongshi/qitagongshi/1748224992496095233.html",
+          "source_id": "lingang_sciencefund_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lingang_sciencefund_rules",
+          "source_url": "https://www.lingang.gov.cn/html/website/lg/index/government/gonggaogongshi/qitagongshi/1748224992496095233.html",
+          "source_title": "上海临港新片区科技创新基金拟参股子基金遴选办法及申报指南",
+          "source_content_hash": "fe614beb87521bf6967da8f323285f56812b11c27248e2659d56cc2adc836eb2",
+          "quote": "临港科创基金由临港新片区管委会出资设立并按市场化方式运作，重点布局“6+2”产业及种子期、初创期、成长期科创企业。",
+          "quote_hash": "07477c132af7383d18e50ca618f841db92620afcb26cfcdc0ad6d490bc368cb9"
+        },
+        {
+          "source_id": "lingang_sciencefund_setup",
+          "source_url": "https://www.lingang.gov.cn/erroritem/2023-12-02/58DB4034-B24A-548C-7BD7-77DF348010DA.pdf",
+          "source_title": "关于同意上海临港新片区科技创新私募投资基金合伙企业使用字号的批复",
+          "source_content_hash": "10d2e064fa72b43e6c2060c0286ce00b99f2845672b5616c882b6a332bc7ee33",
+          "quote": "拟设上海临港新片区科技创新私募投资基金由临港新片区管委会和临港集团共同出资，计划注册资本100010万元。",
+          "quote_hash": "c50b4223aea992843ceae5d2581e171db29c8b1372d8bd0f7c8969e1172e2275"
+        },
         {
           "source_id": "FISRC-d45f7a4d8fd76b88",
           "source_url": "https://www.sohu.com/a/1044130792_120109837",
@@ -159,9 +227,17 @@
           "source_content_hash": "ef8ed950cecf5cd3",
           "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
           "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+        },
+        {
+          "source_id": "lingang_sciencefund_contact",
+          "source_url": "https://www.lingang.gov.cn/html/website/lg/index/government/gonggaogongshi/qitagongshi/1748224992496095233.html",
+          "source_title": "上海临港新片区科技创新基金申报指南",
+          "source_content_hash": "fe614beb87521bf6967da8f323285f56812b11c27248e2659d56cc2adc836eb2",
+          "quote": "申报地址：浦东新区水芸北路9弄1号C4楼；电话：（021）6475 0598。",
+          "quote_hash": "d3099fdbb04c163cde8c8167976c757668d23ea9d59235594b9db1ab8d920839"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
 import { collectChinaFunding, normalizeChinaFundingLead, articleUrl } from "../lib/china-funding-collector.mjs";
+import { consumerHardwareConfig } from "../lib/consumer-ai-hardware-monitor.mjs";
 import { buildChinaFundingHealth } from "../lib/china-funding-health.mjs";
 import { chinaFundingPlan, selectChinaFundingIntake, restoreAcceptedChinaFundingEvidence } from "../run-china-funding-pipeline.mjs";
 import { mergeSourceIntakes } from "../lib/source-intake-v1.mjs";
@@ -29,6 +30,36 @@ test("financing commentary and multi-event headlines cannot become company finan
   ]) assert.equal(eventSourceEligibility(source, artifact, title, "2026-09-14", { eventType: "funding" }).accepted, false, title);
   assert.equal(eventSourceEligibility(source, artifact, "智谱约50亿美元融资落定Anthropic敲定纳斯达克上市计划南京最大国资平台揭牌", "2026-09-14", { eventType: "funding" }).reason, "multi_event_roundup_not_single_event_source");
   assert.equal(eventSourceEligibility(source, artifact, "智谱宣布完成约50亿美元融资，用于下一代GLM基础模型研发", "2026-09-14", { eventType: "funding" }).accepted, true);
+});
+test("weekly market financing totals cannot become a single company financing event", () => {
+  const source = { published_at: "2026-09-27", acquisition_channel: "china-funding", raw_qc_decision: "pass" };
+  const artifact = { source_url: "https://www.cls.cn/detail/2493327" };
+  for (const title of [
+    "财联社创投通：一级市场本周143起融资，深蓝航天完成近20亿元新融资",
+    "一级市场本周融资总额超230亿元，智平方50亿元融资领跑",
+  ]) {
+    assert.equal(
+      eventSourceEligibility(source, artifact, title, "2026-09-27", { eventType: "funding" }).reason,
+      "multi_event_roundup_not_single_event_source",
+      title,
+    );
+  }
+  assert.equal(
+    eventSourceEligibility(source, artifact, "深蓝航天完成近20亿元新融资", "2026-09-27", { eventType: "funding" }).accepted,
+    true,
+  );
+});
+test("prospective funding plans cannot enter completed-financing cards", () => {
+  const source = { published_at: "2026-09-24", acquisition_channel: "china-funding", raw_qc_decision: "pass" };
+  const artifact = { source_url: "https://www.qbitai.com/2026/07/450101.html" };
+  assert.equal(
+    eventSourceEligibility(source, artifact, "估值4800亿，DeepSeek火速开启新一轮融资！最快明年IPO", "2026-09-27", { eventType: "funding" }).reason,
+    "proposed_financing_not_completed",
+  );
+  assert.equal(
+    eventSourceEligibility(source, artifact, "DeepSeek宣布完成首轮外部融资", "2026-09-27", { eventType: "funding" }).accepted,
+    true,
+  );
 });
 test("accepted capture recovery restores date-scoped locators offline and fails closed", () => {
   const calls = [];
@@ -65,9 +96,10 @@ test("all publishers execute both dedicated searches without the global first-fi
     calls.push(query); const domain = query.match(/^site:(\S+)/u)[1];
     return [{ url: `https://${domain}/article/123456`, title: "AI公司完成A轮融资", snippet: "企业AI产品" }];
   } });
-  assert.equal(calls.length, config.sources.length * config.query_terms.length);
+  const queryCount = config.query_terms.length + consumerHardwareConfig(root).categories.length;
+  assert.equal(calls.length, config.sources.length * queryCount);
   assert.equal(result.diagnostics.length, config.sources.length);
-  assert.ok(result.diagnostics.every((row) => row.query_count === 2 && row.successful_queries === 2 && row.status === "partial"));
+  assert.ok(result.diagnostics.every((row) => row.query_count === queryCount && row.successful_queries === queryCount && row.status === "partial"));
   assert.equal(result.items.length, config.sources.length);
   assert.ok(result.items.every((item) => !Object.hasOwn(item, "market_region")));
 });
@@ -120,6 +152,7 @@ test("domestic collection is an independent simultaneous job and only publicatio
   const parent = fs.readFileSync(".github/workflows/daily-persistent-assets-pr.yml", "utf8");
   const child = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
   assert.match(parent, /jobs:\s+china-funding:/u);
+  assert.match(parent, /china-funding:\s+name:[^\n]+\s+if:\s+\$\{\{\s*inputs\.resume_run_id\s*==\s*''\s*\}\}/u);
   assert.match(parent, /gh workflow run china-funding-pr\.yml --ref main/u);
   assert.doesNotMatch(parent, /uses: \.\/\.github\/workflows\/china-funding-pr/u);
   assert.match(child, /--dir "\$RUNNER_TEMP\/china-funding-checkpoint"/u);

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,117 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Village Global Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Village Global 官网的投资组合、团队、Velocity 投资项目页面及联系页整理。网络规模和组合后续融资金额为机构自报；数据库中的 General Compute 记录仅表明参与，未披露 Village Global 单家出资。",
+      "summary": "Village Global 是一家面向全球早期创业公司的风险投资机构，官网称其支持不同地域和行业的早期创始人，并通过创始人、运营者天使投资人及知名有限合伙人网络提供客户引荐、招募和后续融资支持。其 Velocity 项目面向 Pre-seed 创业者；官网列示典型支票规模为 25 万至 150 万美元。组合企业后续融资总额等数字为机构公开口径，不等同于基金回报。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段，覆盖 Pre-seed 与 Seed；官网表示可在全球范围投资",
+          "source_id": "village_velocity_2026"
+        },
+        {
+          "field": "investment_geography",
+          "label": "投资区域",
+          "value": "全球",
+          "source_id": "village_velocity_2026"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "典型投资额",
+          "value": "官网列示 Pre-seed/Seed 典型支票规模为 US$250,000–US$1.5M；实际金额视项目而定",
+          "source_id": "village_velocity_2026"
+        },
+        {
+          "field": "founder_network",
+          "label": "创始人网络",
+          "value": "官网称网络由 400 多位创始人、运营者天使投资人及知名 LP 组成",
+          "source_id": "village_home_2026"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "客户引荐、寻找联合创始人及募资支持",
+          "source_id": "village_team_2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：General Compute · 种子轮 · 2026-05-28 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Village Global 官网称其组合创始人累计获得超过 100 亿美元后续融资；这是组合企业融资合计的机构自报数据，不代表基金回报。",
+          "source_id": "village_portfolio_2026"
+        },
+        {
+          "description": "General Compute 于 2026-05-28 公布 1,500 万美元 Seed 轮融资，媒体报道 Village Global 参与；该融资额属于公司本轮总额，未披露 Village Global 单家出资金额。",
           "source_id": "FISRC-7f85c191231c7c71"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Village Global",
+          "url": "https://www.villageglobal.com/",
+          "source_id": "village_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "投资项目推介邮箱",
+          "value": "hello@villageglobal.com",
+          "url": "https://www.villageglobal.com/contact-us",
+          "source_id": "village_contact_2026"
+        },
+        {
+          "kind": "application",
+          "label": "Velocity 创业项目申请",
+          "value": "Village Global Velocity 项目申请入口",
+          "url": "https://www.villageglobal.com/velocity",
+          "source_id": "village_velocity_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "village_home_2026",
+          "source_url": "https://www.villageglobal.com/",
+          "source_title": "Village Global VC | Early-Stage Venture Capital with Top Entrepreneurs",
+          "source_content_hash": "5cb4ebe2a13fa1fe43b7a0dd5fc0c132767f55e9a4f886efadcd8dbb83a4feb3",
+          "quote": "Join a network of 400+ founders, operator angels, and luminary LPs.",
+          "quote_hash": "e787be0efd6a077ddb9ae128b468569fca11f8b02201d245b6f849cbe9767259"
+        },
+        {
+          "source_id": "village_portfolio_2026",
+          "source_url": "https://www.villageglobal.com/portfolio",
+          "source_title": "Portfolio | Village Global",
+          "source_content_hash": "843793fe094e4fafa27a7078caf1140b9be9b2af816e8ecff1c5127038d6ba05",
+          "quote": "We back audacious early-stage founders across geographies and industries. Our founders have raised $10B+ in follow-on funding.",
+          "quote_hash": "cc7aa41381a90004c3f452bb40a249b1c734a2c32e5f8767502565f99be4c412"
+        },
+        {
+          "source_id": "village_velocity_2026",
+          "source_url": "https://www.villageglobal.com/velocity",
+          "source_title": "Velocity | Village Global",
+          "source_content_hash": "055c97210c3675b228b852e8b12a361fc797937ec434bfbf56cbbb53de12066d",
+          "quote": "Our typical check size ranges from $250k - $1.5M in pre-seed and seed rounds.",
+          "quote_hash": "1488e070f52d857d4439c6e3f65589b0b1f4913aadaadbe0d0c8686105f2e153"
+        },
+        {
+          "source_id": "village_team_2026",
+          "source_url": "https://www.villageglobal.com/team",
+          "source_title": "Team | Village Global",
+          "source_content_hash": "a39949f5677ff8362087409a7c04273023be92da88d03685a29187a66a4d2217",
+          "quote": "Reid Hoffman Chairman; Anne Dwane General Partner & Co-founder; Ben Casnocha General Partner & Co-founder.",
+          "quote_hash": "90bab47fc9a0dc55e9db6ff801a6baeab3bdd163dc7a63affda96c12541ea67e"
+        },
+        {
+          "source_id": "village_contact_2026",
+          "source_url": "https://www.villageglobal.com/contact-us",
+          "source_title": "Contact Us | Village Global",
+          "source_content_hash": "eaf9fc187aa0788320cc5b1bf9cccc2be27a44609ccef0d9db702407d1e1c03e",
+          "quote": "Send your deck or memo to hello@villageglobal.com.",
+          "quote_hash": "25d3a374c0238226724ef908b80dc7623a0a3c335a76dbddfa7276bf822cc428"
+        },
         {
           "source_id": "FISRC-7f85c191231c7c71",
           "source_url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
@@ -161,7 +259,27 @@
           "quote_hash": "4065ddd1bac0cc008baab2ea0cfbf12c017120cfee5ea4b2323c2d25b6dcbec9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[1].description": {
+          "text": "General Compute 于 2026-05-28 公布 1,500 万美元 Seed 轮融资，媒体报道 Village Global 参与；该融资额属于公司本轮总额，未披露 Village Global 单家出资金额。",
+          "source_hash": "65ed0a01fd30532598a60acb55683aaf755a2c1b4ab241a18a6e2fcd39b1915c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "Velocity 创业项目申请",
+          "source_hash": "2d791e35b4003845ef2206bab5d2228b05a6e6cf95d0c787e131327ff3f9cecd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

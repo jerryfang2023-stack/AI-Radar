@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,71 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "B37 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "B37官网披露其位于旧金山，基金资本来自多个全球企业，并通过企业Champions网络协助创业公司验证产品市场匹配与商业化。Graphon AI的830万美元为公司种子轮总额，公开资料称B37参投但未披露该机构单笔金额。",
+      "summary": "B37 Ventures 是一家总部位于旧金山的早期风险投资机构，基金资金来自多个全球企业。其策略将早期投资与企业客户验证结合，通过Corporate Champions网络帮助创业公司接触潜在客户、验证产品市场匹配和企业销售路径。官网列示管理合伙人Rodrigo Sánchez Servitje与David Hite，投资领域包括企业SaaS、地球健康、物流交通、数据、金融和工程生物学等。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "旧金山。",
+          "source_id": "b37_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资阶段与领域",
+          "value": "早期科技公司，包括企业SaaS、Planetary Health、物流与交通、仓储、数据、金融和工程生物学。",
+          "source_id": "b37_about"
+        },
+        {
+          "field": "value_add",
+          "label": "企业商业化支持",
+          "value": "通过企业Corporate Champions网络提供潜在客户接触和产品市场匹配验证。",
+          "source_id": "b37_about"
+        },
+        {
+          "field": "leadership",
+          "label": "管理团队",
+          "value": [
+            "Rodrigo Sánchez Servitje（Managing Partner）",
+            "David Hite（Managing Partner）",
+            "Santiago Sánchez Badía（Partner）"
+          ],
+          "source_id": "b37_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮参投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Graphon AI公布830万美元种子轮并列出B37 Ventures为参投方；轮次总额属于公司融资总额，未披露B37单笔支票。",
           "source_id": "FISRC-4c5668270b4cb456"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "B37 Ventures",
+          "url": "https://b37.vc/about/",
+          "source_id": "b37_about"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "315 Montgomery Street, Suite 900, San Francisco, CA 94104, USA",
+          "url": "https://b37.vc/about/",
+          "source_id": "b37_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "b37_about",
+          "source_url": "https://b37.vc/about/",
+          "source_title": "Venture Capital Innovation & Scale | B37",
+          "source_content_hash": "728efad4363bda0b5069104f6ed53d09a0377b92b0b5172046d47d7e86f6acc6",
+          "quote": "We’re a venture capital firm based in San Francisco. Our venture funds are fueled with capital from multiple global corporations. We invest in early-stage startups in technology sectors including Enterprise SaaS, Planetary Health, Logistics & Transportation, Warehouse & Logistics, Data, Finance, and Engineered Biology.",
+          "quote_hash": "517107449d09b53c753e0f2411b3215e3ed2f28adb121b9d8ab36622515a8ed0"
+        },
         {
           "source_id": "FISRC-4c5668270b4cb456",
           "source_url": "https://www.morningstar.com/news/business-wire/20260514783447/former-amazon-meta-scientists-unveil-graphon-ai-the-first-pre-model-intelligence-layer-with-83m-in-seed-funding",
@@ -161,7 +213,7 @@
           "quote_hash": "4776f530dc2b58ec2e3e8e4ea8b2e0fcafc9e2b62c79a44db8bd79ad1666a651"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

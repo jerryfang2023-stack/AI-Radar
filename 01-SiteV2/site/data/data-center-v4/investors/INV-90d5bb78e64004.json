@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-13",
+    "first_disclosed_at": "2025-09-16",
     "latest_disclosed_at": "2026-09-22",
     "role_counts": {
       "lead": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
       "series_b",
+      "series_c",
       "series_e",
       "undisclosed"
     ],
@@ -86,6 +87,11 @@
         "entity_id": "EN-ae1eae1d76e5b7c8",
         "canonical_entity_id": "EN-ae1eae1d76e5b7c8",
         "name": "Adapter"
+      },
+      {
+        "entity_id": "EN-1785cfc3bc6ac773",
+        "canonical_entity_id": "",
+        "name": "Nothing"
       },
       {
         "entity_id": "FICO-7e1d6c73932aa9b0",
@@ -263,6 +269,46 @@
             "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
           }
         ]
+      },
+      {
+        "activity_id": "IA-9fec50afddf68114",
+        "funding_insight_id": "FI-e5aed52f8dab81de",
+        "event_ids": [
+          "EV-60366423eaa67216"
+        ],
+        "company_entity_id": "EN-1785cfc3bc6ac773",
+        "company_canonical_entity_id": "",
+        "company_name": "Nothing",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2025-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7e709202ce99cc8e",
+            "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+            "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+            "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+            "quote": "with significant support from existing shareholders GV, Highland Europe, EQT, Latitude, I2BF and Tapestry",
+            "quote_hash": "0e18ef143df443410be7bd64c5f3d44d18d83e7347e96dfa423d4f8a621c811a"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -297,6 +343,14 @@
         "source_content_hash": "926edc21ca4613eb",
         "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
         "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
+      },
+      {
+        "source_id": "FISRC-7e709202ce99cc8e",
+        "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+        "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+        "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+        "quote": "with significant support from existing shareholders GV, Highland Europe, EQT, Latitude, I2BF and Tapestry",
+        "quote_hash": "0e18ef143df443410be7bd64c5f3d44d18d83e7347e96dfa423d4f8a621c811a"
       }
     ],
     "public_profile": {
@@ -377,6 +431,18 @@
         {
           "description": "官网列出的代表性退出包括 Uber、Nest、Slack、GitLab、Duo Security、Flatiron Health、Lemonade 和 One Medical；该列表为机构自选案例。",
           "source_id": "gv_about"
+        },
+        {
+          "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-16afc5791c45315a"
+        },
+        {
+          "description": "融资来源记录：Adapter · 种子轮 · 2026-07-14 · 种子轮领投 · 1780万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-74e051fb023f526b"
+        },
+        {
+          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e94365d0212a78f3"
         }
       ],
       "contacts": [
@@ -398,11 +464,63 @@
           "source_content_hash": "e0b75d0a77292164589ef6f5944d40f8d3c4b303f8ac36c68d51b41f88eff3fb",
           "quote": "Launched as Google Ventures in 2009. With Alphabet as our sole limited partner. Today, with over $13 billion in assets under management, we invest from seed to growth stages across the technology and life sciences sectors. We support 400 active portfolio companies across North America, Europe, and Israel. Our portfolio includes notable exits such as Uber, Nest, Slack, GitLab, Duo Security, Flatiron Health, Lemonade, and One Medical.",
           "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
+        },
+        {
+          "source_id": "FISRC-16afc5791c45315a",
+          "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
+          "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
+          "source_content_hash": "ad04baf1994708d0",
+          "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
+          "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
+        },
+        {
+          "source_id": "FISRC-74e051fb023f526b",
+          "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
+          "source_title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
+          "source_content_hash": "c4b4aec73019eeb8",
+          "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors",
+          "quote_hash": "918ca6b7204df55ee2a0ebea7cb4273f29d354276b90e6c473cd92d279be7154"
+        },
+        {
+          "source_id": "FISRC-e94365d0212a78f3",
+          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+          "source_content_hash": "75587989c4b9271c",
+          "quote": "with Amazon, AMD Ventures, GV, and others participating",
+          "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
         }
       ],
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "以 Google Ventures 名义创立；官网记载首批投资包括 Silver Spring Networks 与 Adimab。",
+          "source_hash": "8e0bc8ed5b3d6304b73eaa14a21a9f58859f4cda7ee326048d6b59fe847b5ad7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "Google Ventures 更名为 GV。",
+          "source_hash": "5dc397af804e3d29ae47ccd22c2e45919e3e17c4a3a823b7bfabebc8547c544d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "官网列出的代表性退出包括 Uber、Nest、Slack、GitLab、Duo Security、Flatiron Health、Lemonade 和 One Medical；该列表为机构自选案例。",
+          "source_hash": "6bf122065dc70b65f9d080d9ffea7efeb863435be03561314655b6687c28a0de",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

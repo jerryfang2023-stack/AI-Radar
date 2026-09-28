@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,158 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Elevation Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Elevation Capital 是一家投资印度初创企业的风险投资机构，官网覆盖 Seed、Series A、Growth 与 Public 阶段，并列出消费科技、金融科技、医疗、消费品牌、企业 AI 与前沿科技等方向。官网团队页列 Ravi Adusumalli 与 Mukul Arora 为共同管理合伙人。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "官网组合阶段",
+          "value": [
+            "Seed",
+            "Series A",
+            "Growth",
+            "Public"
+          ],
+          "source_id": "elevation_portfolio"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示投资领域",
+          "value": [
+            "消费科技",
+            "金融科技与金融服务",
+            "医疗健康",
+            "消费品牌",
+            "企业AI",
+            "前沿科技"
+          ],
+          "source_id": "elevation_home"
+        },
+        {
+          "field": "leadership",
+          "label": "共同管理合伙人",
+          "value": [
+            "Ravi Adusumalli",
+            "Mukul Arora"
+          ],
+          "source_id": "elevation_leadership"
+        },
+        {
+          "field": "experience",
+          "label": "团队经验",
+          "value": "官网称投资团队拥有超过20年的经验；其官网叙述属于机构自述。",
+          "source_id": "elevation_experience"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Reo.Dev · A轮 · 2026-07-16 · 本轮领投 · 1130 万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Elevation 官网自报曾在 Seed/Series A 阶段与 13 家后来成为独角兽的企业合作；该数字为机构口径。",
+          "source_id": "elevation_track"
+        },
+        {
+          "description": "Elevation 官网自报组合企业创造 750 亿美元、约占印度科技市场总市值 25%；属于机构网站披露，非独立审计数据。",
+          "source_id": "elevation_track"
+        },
+        {
+          "description": "融资披露案例：Reo.Dev 于 2026-07-16 宣布 1130 万美元 A 轮，Elevation Capital 为领投方；不代表完整组合或基金回报。",
           "source_id": "FISRC-ca3d343739410c39"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Elevation Capital",
+          "url": "https://www.elevationcapital.com/",
+          "source_id": "elevation_experience"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "community@elevationcapital.com",
+          "url": "https://www.elevationcapital.com/team",
+          "source_id": "elevation_email"
+        },
+        {
+          "kind": "address",
+          "label": "Delhi-NCR 办公室",
+          "value": "Unit No. 101A, First Floor, One Horizon Centre, Golf Course Rd, DLF Phase 5, Sector 43, Gurugram, Haryana 122002",
+          "url": "https://www.elevationcapital.com/team",
+          "source_id": "elevation_delhi"
+        },
+        {
+          "kind": "address",
+          "label": "Bengaluru 办公室",
+          "value": "9th Floor, Unit No. 902 and 903, Campus 31, RMZ Ecoworld, Sarjapur-Marathahalli, Outer Ring Road, Bellandur, Bengaluru, 560103",
+          "url": "https://www.elevationcapital.com/team",
+          "source_id": "elevation_bengaluru"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "elevation_home",
+          "source_url": "https://www.elevationcapital.com/",
+          "source_title": "Elevation – Elevation Capital",
+          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+          "quote": "Consumer Tech Fintech & Financial Services Healthcare Consumer Brands Enterprise AI Frontier Tech.",
+          "quote_hash": "96cf2f4f7030bb539e5087cf2564cb77170c7ef23367c600adeaaa62c521129a"
+        },
+        {
+          "source_id": "elevation_experience",
+          "source_url": "https://www.elevationcapital.com/",
+          "source_title": "Elevation – Elevation Capital",
+          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+          "quote": "Our investment team, with over 20 years of expertise, inspires and shapes possibilities with you.",
+          "quote_hash": "5eaa59857ad205f4ca0cd28b11e8d2d084fcf9114ccf900ba78e0b4ac334041e"
+        },
+        {
+          "source_id": "elevation_leadership",
+          "source_url": "https://www.elevationcapital.com/team",
+          "source_title": "Team – Elevation Capital",
+          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+          "quote": "Ravi Adusumalli Co-Managing Partner; Mukul Arora Co-Managing Partner.",
+          "quote_hash": "44d9c1dbda6e5b4be4d6ca1a49d9e7d59d632825be5c0025ec0ccf302d6f06f1"
+        },
+        {
+          "source_id": "elevation_email",
+          "source_url": "https://www.elevationcapital.com/team",
+          "source_title": "Team – Elevation Capital",
+          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+          "quote": "community@elevationcapital.com",
+          "quote_hash": "1f70fa33d8205f78a4eeabf3c4ef659e4575333947005fd38bc55afb6c0bd075"
+        },
+        {
+          "source_id": "elevation_delhi",
+          "source_url": "https://www.elevationcapital.com/team",
+          "source_title": "Team – Elevation Capital",
+          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+          "quote": "Unit No. 101A, First Floor, One Horizon Centre, Golf Course Rd, DLF Phase 5, Sector 43, Gurugram, Haryana 122002.",
+          "quote_hash": "6fd1f646231a65c39ce9be62b0501bf121688d9899af132d3722faa154f1dc6f"
+        },
+        {
+          "source_id": "elevation_bengaluru",
+          "source_url": "https://www.elevationcapital.com/team",
+          "source_title": "Team – Elevation Capital",
+          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+          "quote": "9th Floor, Unit No. 902 and 903, Campus 31, RMZ Ecoworld, Sarjapur-Marathahalli, Outer Ring Road, Bellandur, Bengaluru, 560103.",
+          "quote_hash": "78856e687438f5babea22a64e7ddc5ebb9bf2cb016b2065159ce0e35aeeb3b9e"
+        },
+        {
+          "source_id": "elevation_portfolio",
+          "source_url": "https://www.elevationcapital.com/portfolio",
+          "source_title": "Portfolio – Elevation Capital",
+          "source_content_hash": "9f36ec6a6aa0cfd897c9fa3753f452d2f3f43c4bd620aab3d57b9a5e364b2df4",
+          "quote": "Stage Seed Series A Growth Public.",
+          "quote_hash": "f6532f8e82f28286402a97cf654757a8da1ff814704c3d42b67c5ddf78b2e6d1"
+        },
+        {
+          "source_id": "elevation_track",
+          "source_url": "https://www.elevationcapital.com/",
+          "source_title": "Elevation – Elevation Capital",
+          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+          "quote": "We've partnered with 13 unicorns from Seed/Series A stage. Our portfolio companies have created $75B (25%) of India’s total tech market cap.",
+          "quote_hash": "494e6822483a1042a4055e708a31085b4017cc8a05f59ee291cbab2c2f5ced92"
+        },
         {
           "source_id": "FISRC-ca3d343739410c39",
           "source_url": "https://www.reo.dev/blog/reo-dev-series-a",
@@ -161,7 +298,31 @@
           "quote_hash": "1958df38fe8add9c7b791aaf8ee8bfcf03bb881487477007ba296cfe6eee47ca"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.contacts[2].label": {
+          "text": "Delhi-NCR 办公室",
+          "source_hash": "5ccb3415356e3fec515585a89f876870bae492d0b1d7fdd551c27ebca946d0f7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[3].label": {
+          "text": "Bengaluru 办公室",
+          "source_hash": "b38f0b1fcf7e43cbc94212406803ebb20d2c1ddf922d49a0e7cd3f81171f0e86",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

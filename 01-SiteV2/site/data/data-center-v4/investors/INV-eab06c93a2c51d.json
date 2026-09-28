@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,107 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "VSC Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "VSC Ventures 是面向北美创始人的早期风险基金，将投资与品牌传播、媒体内容和叙事支持结合，官网称其基金规模为 2,000 万美元，典型支票为 50 万至 75 万美元。其投资主题聚焦利用 AI 改善“脏、尘、险”行业中的数据、劳动与安全问题。",
+      "coverage_note": "基金规模、支票范围、主题与人员职务均为 VSC Ventures 官网自述。网站介绍 Vijay Chattha 与其关联的 VSC 公关媒体业务历史；该业务的 23 年经历和服务 1,000 多家公司不应当作 VSC Ventures 基金业绩。Gritt 的 3,240 万美元是公司跨预种子和 A 轮累计融资，VSC Ventures 被列为既有投资方，未披露其单笔金额。",
+      "facts": [
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "官网披露 2,000 万美元早期基金。",
+          "source_id": "vsc_about"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "典型支票",
+          "value": "官网披露通常投资 50 万至 75 万美元。",
+          "source_id": "vsc_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资地域与阶段",
+          "value": "北美早期创业公司。",
+          "source_id": "vsc_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "运用 AI 改善“脏、尘、险”行业中的数据、劳动和安全挑战。",
+          "source_id": "vsc_home"
+        },
+        {
+          "field": "investment_team",
+          "label": "官网列示团队",
+          "value": [
+            "Jay Kapoor（General Partner）",
+            "Vijay Chattha（General Partner）",
+            "Maggie Philbin（Venture Partner）",
+            "Eric Gonzalez（Venture Partner）",
+            "Anne Sophie Hurst（Venture Partner）",
+            "Gwyn Stahlhut（Director of Finance）"
+          ],
+          "source_id": "vsc_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Gritt · 多轮融资 · 2026-07-21 · 既有投资方 · $32.4M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Gritt 官方公告称其跨预种子和 A 轮累计融资 3,240 万美元，并将 VSC Ventures 列为此前投资人之一；公司总融资额不等于 VSC 的单笔投资额或本轮领投金额。",
           "source_id": "FISRC-e5ce259c107507e9"
+        },
+        {
+          "description": "VSC Ventures 官网介绍其创始人 Vijay Chattha 的关联公关媒体业务累积 23 年经验并帮助超过 1,000 家公司获得媒体报道和建设品牌；该数字属于相关媒体业务，不是 VC 基金业绩。",
+          "source_id": "vsc_about"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "VSC Ventures",
+          "url": "https://www.vscventures.com/",
+          "source_id": "vsc_home"
+        },
+        {
+          "kind": "contact_form",
+          "label": "创始人联系",
+          "value": "VSC Ventures Contact Us 表单",
+          "url": "https://www.vscventures.com/contact",
+          "source_id": "vsc_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vsc_about",
+          "source_url": "https://www.vscventures.com/about",
+          "source_title": "About Us | VSC Ventures",
+          "source_content_hash": "887a12c7cab01306b20813988fc79c1e88fe180d2f49b9e3b8cf30add0200b4c",
+          "quote": "VSC Ventures is a $20M early-stage fund for founders in North America.",
+          "quote_hash": "fcdc02c9599e293d3c6f80600320963be0ccdb23d9e498c6c460276ad89650cf"
+        },
+        {
+          "source_id": "vsc_check",
+          "source_url": "https://www.vscventures.com/about",
+          "source_title": "About Us | VSC Ventures",
+          "source_content_hash": "887a12c7cab01306b20813988fc79c1e88fe180d2f49b9e3b8cf30add0200b4c",
+          "quote": "We write $500K to $750K checks and bring brand, media, and storytelling to your cap table.",
+          "quote_hash": "d6bd410b21e44feeedd9a69e50228fd4f7b6f3fd52ba9940bc3c029dd8d6333d"
+        },
+        {
+          "source_id": "vsc_home",
+          "source_url": "https://www.vscventures.com/",
+          "source_title": "VSC Ventures | We make dirty jobs sexier",
+          "source_content_hash": "67e93467502becbabce4b659b888721aadd74a4657f16951b8e4055ea2574b97",
+          "quote": "We back founders using AI to fix data, labor, and safety challenges across Dirty, Dusty, Dangerous industries.",
+          "quote_hash": "a78ee77bc0507cf30c17dc83de23db88441a1144732b1558a926e7ecb3376d3d"
+        },
+        {
+          "source_id": "vsc_contact",
+          "source_url": "https://www.vscventures.com/contact",
+          "source_title": "Contact Us | VSC Ventures",
+          "source_content_hash": "d0fe352c8b81171b4d5d6782adacb868d4a74485b2c9d66add83376d6676ca68",
+          "quote": "We’re constantly on the lookout for exceptional founders. Reach out to us if you’re one.",
+          "quote_hash": "1576657539dbdd0c47cdf57bc91b00631dd674f72aa99261cba6fe48262b5265"
+        },
         {
           "source_id": "FISRC-e5ce259c107507e9",
           "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
@@ -153,7 +239,10 @@
           "quote_hash": "75fc7809c93eefc87fb3d1d838cd1c26084926d1309303f426a4b2eda3ec3232"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,90 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Root Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Root Ventures 是一家位于旧金山的深科技种子期基金，由具工程背景的投资团队支持承担技术风险的创始人，通常领投最早期融资。官网列出的方向包括机器人、硬件、制造、开发者工具、机器学习、半导体和自动化，并表示会保留较大比例基金支持组合企业长期发展。",
+      "coverage_note": "机构策略、投资团队、投资组合示例与联系信息依据 Root 官方网站。网站展示的是选择性组合案例，并非完整投资清单。Illoca 的 1,300 万美元是该公司种子轮总额；融资公告将 Root 列为参投方，没有披露 Root 的单笔支票金额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "深科技种子期，通常领投创始团队的初始融资。",
+          "source_id": "root_official"
+        },
+        {
+          "field": "typical_initial_investment",
+          "label": "典型初始投资",
+          "value": "官网称通常为 300 万至 500 万美元。",
+          "source_id": "root_official"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "机器人",
+            "硬件",
+            "制造",
+            "开发者工具",
+            "机器学习",
+            "半导体",
+            "自动化"
+          ],
+          "source_id": "root_official"
+        },
+        {
+          "field": "investment_team",
+          "label": "官网列示团队",
+          "value": [
+            "Avidan Ross（Managing Partner）",
+            "Kane Hsieh（Partner）",
+            "Chrissy Meyer（Partner）",
+            "Lee Edwards（Partner）"
+          ],
+          "source_id": "root_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Illoca, Inc. · 种子轮 · 2026-05-06 · 本轮参投 · $13 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网组合名录列有 Particle、Dusty Robotics、Instrumental、Illoca 等技术公司；这里是机构选列的组合案例，不代表完整投资组合或基金回报。",
+          "source_id": "root_official"
+        },
+        {
+          "description": "Illoca 的公司公告显示其完成 1,300 万美元种子轮，Root Ventures 为本轮参投方；金额是公司本轮融资总额，Root 的单笔投资额未披露。",
           "source_id": "FISRC-af034b6014cc1e78"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Root Ventures",
+          "url": "https://root.vc/",
+          "source_id": "root_official"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "hello@root.vc",
+          "url": "https://root.vc/",
+          "source_id": "root_official"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "2670 Harrison St, San Francisco, CA 94110, USA",
+          "url": "https://root.vc/",
+          "source_id": "root_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "root_official",
+          "source_url": "https://root.vc/",
+          "source_title": "Root Ventures — Deep tech seed fund in San Francisco",
+          "source_content_hash": "cf261543fc846b40de6b84cefdc6d8925aeb28b03e3790495f28bb0a83cd6591",
+          "quote": "Root Ventures is a San Francisco-based deep tech seed fund. As engineers ourselves, we specialize in leading initial funding for founders tackling new technical opportunities. Our initial investments typically range from $3-5M.",
+          "quote_hash": "30804023ebeed2d8dfd6b49744be8c790c86f137f8321a865d2990a1456f7631"
+        },
         {
           "source_id": "FISRC-af034b6014cc1e78",
           "source_url": "https://www.globenewswire.com/news-release/2026/05/06/3289008/0/en/Illoca-Raises-13-Million-Seed-Led-by-Bessemer-Venture-Partners-to-Launch-the-First-Intelligent-Interface-for-Architectural-Design.html",
@@ -161,7 +230,10 @@
           "quote_hash": "ce6d6d2d3b7e5b7ece49ab5debf7817f0ec5971a1e1edd48f5c37a7736e51298"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }

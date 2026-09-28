@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,100 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AIX Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "AIX strategy, fund sizes and portfolio examples come from its own website and announcements. Fund sizes are fundraise disclosures, not capital currently available; portfolio examples are not returns. Illoca’s round total is not AIX’s check.",
+      "summary": "AIX Ventures 是一家专注于 AI 的风险投资机构，围绕活跃的 AI 从业者和投资团队构建。它支持早期创始人，并将资本与技术及公司建设专长相结合。该机构于 2022 年宣布 5000 万美元 Fund I，并于 2024 年宣布 2.02 亿美元 Fund II。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "投资重点",
+          "value": "Early-stage AI companies and founders developing AI technology.",
+          "source_id": "aix_about"
+        },
+        {
+          "field": "model",
+          "label": "Operating model",
+          "value": "AI practitioners, founders and an investment team work with companies on technical and company-building challenges.",
+          "source_id": "aix_about"
+        },
+        {
+          "field": "fund_i",
+          "label": "Fund I",
+          "value": "$50 million, focused on pre-seed and seed startups, announced at the 2022 launch.",
+          "source_id": "aix_fund_news"
+        },
+        {
+          "field": "fund_ii",
+          "label": "Fund II",
+          "value": "$202 million announced in February 2024 for early-stage AI companies and future-of-work applications.",
+          "source_id": "aix_fund_news"
+        },
+        {
+          "field": "portfolio",
+          "label": "精选投资组合",
+          "value": "The firm lists Hugging Face, You.com, Weights & Biases, Perplexity and Chroma.",
+          "source_id": "aix_fund_news"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-03-23",
+          "description": "AIX 宣布成立，推出 5000 万美元的 Fund I，专注于 pre-seed 和种子轮公司。",
+          "source_id": "aix_fund_news"
+        },
+        {
+          "date": "2024-02-13",
+          "description": "AIX 宣布推出 2.02 亿美元的 Fund II。",
+          "source_id": "aix_fund_news"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Illoca, Inc. · 种子轮 · 2026-05-06 · 本轮参投 · $13 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Illoca 于 2026 年 5 月的种子轮公告将 AIX Ventures 列为参与方之一。1300 万美元金额是该公司本轮融资总额，而非 AIX 的单笔出资。",
           "source_id": "FISRC-af034b6014cc1e78"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "AIX Ventures",
+          "source_id": "aix_about",
+          "url": "https://www.aixventures.com/"
+        },
+        {
+          "kind": "contact_form",
+          "label": "创始人咨询",
+          "value": "Connect with AIX",
+          "source_id": "aix_contact",
+          "url": "https://www.aixventures.com/contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "aix_about",
+          "source_url": "https://www.aixventures.com/about",
+          "source_title": "About AIX Ventures | AIX Ventures",
+          "source_content_hash": "912128a932d42a2f865b78feb0bcc29cc40feee1ee7029e1044f4ab413c86135",
+          "quote": "AIX is a new kind of venture firm where leaders in AI push the field forward together.",
+          "quote_hash": "fab4507310977c5e54145e845d44cf96ee75c54471dee19389ea39f81d0e974e"
+        },
+        {
+          "source_id": "aix_fund_news",
+          "source_url": "https://www.aixventures.com/fund-news",
+          "source_title": "Announcements | AIX Ventures",
+          "source_content_hash": "7fef5e1be85b8b3ef325779959196f8e63107abb675979c1412de441d2786e42",
+          "quote": "Today, we’re thrilled to announce our second fund of $202M to invest in early-stage AI companies.",
+          "quote_hash": "e3dc42162c5a852a873b19f763628b2b4c31f03953a13a561675d11d05fd8a26"
+        },
+        {
+          "source_id": "aix_contact",
+          "source_url": "https://www.aixventures.com/contact",
+          "source_title": "Contact | AIX Ventures",
+          "source_content_hash": "853a5fba0267f037d7ff47cdb6c12490ac57ead531f611cbdda5246ed3be9e81",
+          "quote": "Connect with AIX to turn your idea into a company that will last.",
+          "quote_hash": "0440c9099d251f797f9d939693a33f7f488a1694301a6e2798937bd83ce54704"
+        },
         {
           "source_id": "FISRC-af034b6014cc1e78",
           "source_url": "https://www.globenewswire.com/news-release/2026/05/06/3289008/0/en/Illoca-Raises-13-Million-Seed-Led-by-Bessemer-Venture-Partners-to-Launch-the-First-Intelligent-Interface-for-Architectural-Design.html",
@@ -161,7 +242,75 @@
           "quote_hash": "ce6d6d2d3b7e5b7ece49ab5debf7817f0ec5971a1e1edd48f5c37a7736e51298"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "AIX Ventures 是一家专注于 AI 的风险投资机构，围绕活跃的 AI 从业者和投资团队构建。它支持早期创始人，并将资本与技术及公司建设专长相结合。该机构于 2022 年宣布 5000 万美元 Fund I，并于 2024 年宣布 2.02 亿美元 Fund II。",
+          "source_hash": "59f26969378aedcf36648431df097cd8bf9fcb8b5619c05d022074ab46725090",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "精选投资组合",
+          "source_hash": "79ca9a2051168647113f0549923f59e2053ca43ce9230c8fa0ac35b97bad1f30",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "AIX 宣布成立，推出 5000 万美元的 Fund I，专注于 pre-seed 和种子轮公司。",
+          "source_hash": "a555aa7c92749df55af66ab755bc765d37b98a1a26ee6809000d43068cf14bf4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "AIX 宣布推出 2.02 亿美元的 Fund II。",
+          "source_hash": "b7a5561a3934d4bbfac81774de772982a315c30363cb8562f488ced2a3a7eb8b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Illoca 于 2026 年 5 月的种子轮公告将 AIX Ventures 列为参与方之一。1300 万美元金额是该公司本轮融资总额，而非 AIX 的单笔出资。",
+          "source_hash": "508604c177aeff8b514dbc1827631a51f894b794523c4e28be4793804f87eccf",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "创始人咨询",
+          "source_hash": "7379271b97de95cd9bb95e9dcb42f0ca553979f982e9bebe7d85f623ce662550",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

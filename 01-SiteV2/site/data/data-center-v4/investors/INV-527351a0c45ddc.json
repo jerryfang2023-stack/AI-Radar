@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Capra Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c15ac15bf3d0b1a"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
+        {
+          "source_id": "higgsfield_series_b_2026",
+          "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+          "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+          "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+          "quote": "Existing investors also participated in the Series B, including Accel, Menlo Ventures, AI Capital Partners (Alpha Intelligence Capital's US-based fund), GFT Ventures, Capra Ventures, BAM Corner Point and BroadLight Capital.",
+          "quote_hash": "f291fb1f0a98126831eca8a8e3df5bbfcbac05ebe94ec8dbcf69be8845829ba7"
+        },
+        {
+          "source_id": "capra_home",
+          "source_url": "https://capra.vc/",
+          "source_title": "Capra Ventures — official website",
+          "source_content_hash": "6cec2eccd28fcc210088fbfb5c8c6875f3a6e7d6b95e0753b0f1f678c2c4c827",
+          "quote": "Drop us a line!",
+          "quote_hash": "a03fc7f2ecba94c0c600f53bce3810347362ccbd328e81e90a7c90c918ab92c1"
+        },
+        {
+          "source_id": "capra_formd",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2085522/000110465925091304/xslFormDX08/primary_doc.xml",
+          "source_title": "SEC Form D — Capra Ventures H1 LLC",
+          "source_content_hash": "bdd0c82932f3129eb1ae2576fc180bb9026f8f08d39a5d7579f9da4a2d3dc0e8",
+          "quote": "Manager and Management Company of the Issuer",
+          "quote_hash": "915b33e2baf08f3da32425e50772cc3269f32fa2586f70ac47d6c06032d55528"
+        },
         {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
           "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -161,7 +174,100 @@
           "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Capra Ventures 被 Higgsfield 列为 B 轮既有投资方。公开资料较少：其官网提供联系表单；美国 SEC 的 2025 年 Form D 将 Capra Ventures Management, LLC 列为 Capra Ventures H1 LLC 的管理人及管理公司。现有来源不足以核实其投资策略、团队履历或完整组合。",
+      "coverage_note": "本档案严格限于发行方融资公告、Capra 官网和 SEC Form D 可确认的内容。Form D 的基金及管理公司关系不用于推断 Capra Ventures 的投资策略、业绩或完整投资组合。备案中的联系地址和电话为 2025 年申报信息，使用前应确认是否仍有效。",
+      "facts": [
+        {
+          "field": "regulatory_relationship",
+          "label": "监管备案关系",
+          "value": "SEC 2025 年 Form D 将 Capra Ventures Management, LLC 列为 Capra Ventures H1 LLC 的管理人及管理公司。",
+          "source_id": "capra_formd"
+        },
+        {
+          "field": "public_information_limit",
+          "label": "公开资料范围",
+          "value": "官网目前提供联系表单，但没有足以核验投资策略、现任团队或完整组合的详细介绍。",
+          "source_id": "capra_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025",
+          "description": "SEC Form D 记录 Capra Ventures H1 LLC，并列明 Capra Ventures Management, LLC 为其管理人及管理公司。",
+          "source_id": "capra_formd"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_id": "FISRC-7c15ac15bf3d0b1a"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Capra Ventures 官网",
+          "value": "Capra Ventures",
+          "url": "https://capra.vc/",
+          "source_id": "capra_home"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官网联系表单",
+          "value": "Capra Ventures contact form",
+          "url": "https://capra.vc/",
+          "source_id": "capra_home"
+        },
+        {
+          "kind": "phone",
+          "label": "2025 年 SEC Form D 所列电话（备案联系方式，非确认中的投资申报渠道）",
+          "value": "+1 415 690 6374",
+          "source_id": "capra_formd"
+        },
+        {
+          "kind": "address",
+          "label": "2025 年 SEC Form D 所列地址（备案地址，建议确认是否仍有效）",
+          "value": "L8, 595 Market Street, San Francisco, CA 94105",
+          "source_id": "capra_formd"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Capra Ventures 被 Higgsfield 列为 B 轮既有投资方。公开资料较少：其官网提供联系表单；美国 SEC 的 2025 年 Form D 将 Capra Ventures Management, LLC 列为 Capra Ventures H1 LLC 的管理人及管理公司。现有来源不足以核实其投资策略、团队履历或完整组合。",
+          "source_hash": "c02db0ce263e14ee1d61df0b51720037db51cc444f21e6fd9648eda1057d46e2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.187Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "SEC Form D 记录 Capra Ventures H1 LLC，并列明 Capra Ventures Management, LLC 为其管理人及管理公司。",
+          "source_hash": "03e400eeb44464130171a2961d66b96d5183aa978e961a934d99d1151e2e1f4b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.187Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Capra Ventures 官网",
+          "source_hash": "d77ac785b0e3855180416fc88dd7f537ad0d5d16b63638e41ad79768111c87d1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.187Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

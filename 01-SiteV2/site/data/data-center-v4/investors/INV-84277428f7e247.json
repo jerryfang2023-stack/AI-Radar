@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,19 +131,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Artis Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官方品牌使用 ARTIS，本库收录名称为 Artis Ventures。团队成员的投资、董事会和退出经历按个人官网简介列示，不等同于 ARTIS 单一基金的完整业绩。Valarian 来源只支持 Artis Ventures 参与其 2025 年 5 月的 700 万美元种子轮；该证据不支持其参与 2026 年 7 月的 5000 万美元 A 轮。",
+      "summary": "ARTIS（本库收录名 Artis Ventures）是一家总部位于旧金山的风险投资机构，官网将其使命描述为以 AI 等前沿技术改善人的健康与韧性。管理团队包括创始人兼管理合伙人 Stuart Peterson，以及关注科技与生物学交叉领域的 Austin Walne、Ruchita Sinha 等高级合伙人。公开组合与退出案例按团队官网披露口径呈现。",
+      "facts": [
+        {
+          "field": "official_brand",
+          "label": "官网品牌名称",
+          "value": "ARTIS；融资库实体名称为 Artis Ventures。",
+          "source_id": "artis_mission"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "官网使命与方向",
+          "value": "支持运用前沿技术重新构建生命支撑系统的创始人，官网重点提及 AI、健康、生命科学和医疗技术。",
+          "source_id": "artis_mission"
+        },
+        {
+          "field": "leadership_background",
+          "label": "官网管理团队及背景",
+          "value": [
+            "Stuart Peterson — Founder & Managing Partner；官网个人简介列出其参与多家医疗、生物科技和软件公司投资及董事会工作。",
+            "Austin Walne — Senior Partner；官网称其关注技术与生物学交叉领域，曾从事非上市公司股权二级市场咨询、软件开发和产品管理。",
+            "Ruchita Sinha — Senior Partner；官网称其投资方向覆盖生物学、医疗健康、数据与 AI，职业经历包括 AV8 Ventures、Sanofi Ventures、GE Ventures、Maxygen、Pfizer 和 L.E.K. Consulting。"
+          ],
+          "source_id": "artis_team"
+        },
+        {
+          "field": "office_location",
+          "label": "官网公开办公地址",
+          "value": "499 Jackson Street, Suite 400, San Francisco, CA 94111, USA。",
+          "source_id": "artis_mission"
+        }
+      ],
       "milestones": [],
+      "experience_summary": "ARTIS 官网列出创始人 Stuart Peterson 的董事会与投资经历，包括 YouTube（后被 Google 收购）、StemCentrx（后被 AbbVie 收购）和 Palantir（IPO）。Ruchita Sinha 的官方简介称其曾支持 30 多家生命科学与医疗公司，其中约有十余次退出和多家独角兽。以上为个人履历中的机构或团队经历，不是基金整体回报。",
       "track_record": [
         {
-          "description": "融资来源记录：Valarian Technologies Ltd. · A轮 · 2026-07-14 · 种子轮领投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "ARTIS 官网展示的团队履历案例：Stuart Peterson 的个人投资与董事会经历包括 YouTube（后被 Google 收购）、StemCentrx（后被 AbbVie 收购）及 Palantir（IPO）；属于个人履历，不代表基金回报。",
+          "source_id": "artis_team"
+        },
+        {
+          "description": "Ruchita Sinha 的 ARTIS 官方简介自述其职业生涯支持过 30 多家生命科学和医疗公司，约有十余次退出及多家独角兽；该统计属于个人履历口径。",
+          "source_id": "artis_team"
+        },
+        {
+          "description": "历史融资证据：Tech Funding News 的 2026 年文章仅称 Valarian Technologies 此前于 2025 年 5 月完成 700 万美元种子轮，由 Artis Ventures 与 Scout Ventures 共同领投。该来源不支持 Artis Ventures 参与 2026-07-14 披露的 5000 万美元 A 轮。",
           "source_id": "FISRC-421464cceb98eeb4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "ARTIS",
+          "url": "https://www.av.co/",
+          "source_id": "artis_mission"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "499 Jackson Street, Suite 400, San Francisco, CA 94111, USA",
+          "url": "https://www.av.co/",
+          "source_id": "artis_mission"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "artis_mission",
+          "source_url": "https://www.av.co/",
+          "source_title": "ARTIS | Transforming the human condition with frontier technologies",
+          "source_content_hash": "1c09012123e468f607a38c31292622125eced0411ea059ebd7af007ce9475d52",
+          "quote": "ARTIS is guided by a singular belief: that the future of the human condition can be made more resilient through the bold application of frontier technologies.",
+          "quote_hash": "0f362613224b29dcfc07b815c9290535c2b4ac7e7f9d63755fbe21188a52e26f"
+        },
+        {
+          "source_id": "artis_team",
+          "source_url": "https://www.av.co/team",
+          "source_title": "ARTIS | Our Team",
+          "source_content_hash": "bbf428fdebb1169cc545bc8a2c5ada494d51813eefca54f396cfdbfafb6e5b87",
+          "quote": "Stuart Peterson is the Founder and Managing Partner of ARTIS.",
+          "quote_hash": "8e9a3222ec6b5bf632ce7430e9a5e66961f668280bb2c4644f7f44861d00c0de"
+        },
         {
           "source_id": "FISRC-421464cceb98eeb4",
           "source_url": "https://techfundingnews.com/every-ai-startup-in-europe-is-selling-sovereignty-valarian-just-raised-50m-to-prove-infrastructure-governance-is-different/",
@@ -153,7 +222,27 @@
           "quote_hash": "2b3a248fd8fdbbaf448f2fec1978b4c6d764272ce59f3c9703d7b0c44e7f7fbd"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "ARTIS 官网展示的团队履历案例：Stuart Peterson 的个人投资与董事会经历包括 YouTube（后被 Google 收购）、StemCentrx（后被 AbbVie 收购）及 Palantir（IPO）；属于个人履历，不代表基金回报。",
+          "source_hash": "eee7bf1936f1621e3d4b57e89b8cf13bb6e725e7709b8a865b8e0a7aa2bf80cd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "历史融资证据：Tech Funding News 的 2026 年文章仅称 Valarian Technologies 此前于 2025 年 5 月完成 700 万美元种子轮，由 Artis Ventures 与 Scout Ventures 共同领投。该来源不支持 Artis Ventures 参与 2026-07-14 披露的 5000 万美元 A 轮。",
+          "source_hash": "57f73320e9e09718078917cb806e4e112f8af287045faf99fc26007903af48e1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

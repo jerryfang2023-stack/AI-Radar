@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,179 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Toyota Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略、组合、领导团队和投资申请渠道来自 Toyota Ventures 官方资料。AMI Labs 融资额与参投信息来自第三方报道；金额为全轮总额，不代表 Toyota Ventures 单家出资。",
+      "summary": "Toyota Ventures 是 Toyota 旗下早期风险投资部门，关注深科技和气候科技，包括 AI、机器人、下一代计算、航空航天、移动出行、材料、能源、碳捕集和电池等领域。机构提供产品、业务拓展、融资、营销及高管辅导等组合支持。2024 年 Toyota 官方公告新增 Frontier Fund II 与 Climate Fund II，各 1.5 亿美元；当时机构总管理资产超过 8 亿美元。官网将 AMI Labs 列入组合；该公司 10.3 亿美元种子轮及 Toyota Ventures 参投信息来自第三方报道，轮次金额不等于机构单家出资额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "Toyota 旗下早期风险投资部门",
+          "source_id": "toyota_main"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段",
+          "source_id": "toyota_main"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "深科技",
+            "气候科技",
+            "人工智能",
+            "机器人",
+            "下一代计算",
+            "航空航天",
+            "移动出行",
+            "材料",
+            "能源",
+            "碳捕集",
+            "电池与储能",
+            "可持续发展"
+          ],
+          "source_id": "toyota_main"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "组合支持",
+          "value": "业务拓展、产品、融资、营销和高管辅导等战略与运营支持。",
+          "source_id": "toyota_support"
+        },
+        {
+          "field": "investment_objective",
+          "label": "投资目标",
+          "value": "兼顾财务回报与战略价值，官网强调财务回报优先。",
+          "source_id": "toyota_objective"
+        },
+        {
+          "field": "founder_and_general_partner",
+          "label": "创始人兼普通合伙人",
+          "value": "Jim Adler",
+          "source_id": "toyota_jim"
+        },
+        {
+          "field": "managing_partner_and_coo",
+          "label": "管理合伙人兼首席运营官",
+          "value": "Natalie Fonseca Licciardi",
+          "source_id": "toyota_natalie"
+        },
+        {
+          "field": "climate_fund_partner",
+          "label": "Climate Fund 合伙人",
+          "value": "Lisa Coca",
+          "source_id": "toyota_lisa"
+        },
+        {
+          "field": "frontier_fund_partner",
+          "label": "Frontier Fund 合伙人",
+          "value": "David Sokolic",
+          "source_id": "toyota_david"
+        },
+        {
+          "field": "investment_board_member",
+          "label": "投资委员会董事会成员",
+          "value": "Gill Pratt",
+          "source_id": "toyota_gill"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-07",
+          "description": "Toyota 官方公告记载 Toyota Ventures 于 2017 年 7 月成立。",
+          "source_id": "toyota_foundation"
+        },
+        {
+          "date": "2024-04-10",
+          "description": "宣布新设 Frontier Fund II 与 Climate Fund II，各 1.5 亿美元；Toyota 公告当时称机构总管理资产超过 8 亿美元。",
+          "source_id": "toyota_funds"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Toyota Ventures 官网当前将 AMI Labs 列为组合企业。",
+          "source_id": "toyota_main"
+        },
+        {
+          "description": "第三方报道称 Toyota Ventures 参与 AMI Labs 10.3 亿美元种子轮；此金额为全轮总额，未披露机构单家出资额，且并非机构官方交易公告。",
           "source_id": "FISRC-6c35525e379488bf"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Toyota Ventures",
+          "url": "https://toyota.ventures/",
+          "source_id": "toyota_main"
+        },
+        {
+          "kind": "application",
+          "label": "早期项目投资申请",
+          "value": "通过官网在线 Pitch Form 提交",
+          "url": "https://toyota.ventures/submit-pitch.html",
+          "source_id": "toyota_pitch"
+        },
+        {
+          "kind": "address",
+          "label": "机构联系地址",
+          "value": "4440 El Camino Real, Los Altos, CA 94022, USA",
+          "url": "https://toyota.ventures/",
+          "source_id": "toyota_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "toyota_main",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "As Toyota’s early-stage venture capital arm, Toyota Ventures invests in deep tech and climate tech solutions across a variety of areas, including AI, robotics, next-gen computing, aerospace, mobility, materials, energy, carbon capture, batteries and energy storage, and sustainability.",
+          "quote_hash": "7c57cba67d49293ca6d2dc8d29f130b3ffc8ce0147ae84ebc9897431e7ce3b06"
+        },
+        {
+          "source_id": "toyota_support",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | How We Work",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "Our team offers Toyota Ventures portfolio companies strategic support and operational guidance in business development, product, fundraising, marketing, executive coaching, and other areas.",
+          "quote_hash": "5229bd4cfb5b094a0e6e6060890bd5deb4563e3808f8cef516bd229cdafdacc7"
+        },
+        {
+          "source_id": "toyota_leadership",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | Team and Investment Board",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "Jim Adler is the founder and general partner of Toyota Ventures, responsible for setting the strategic direction and leading the firm’s investment activities.",
+          "quote_hash": "39fdb324f783e06cf8240a968ec521b00733c887f3bdb0437aa3a4e5624dc907"
+        },
+        {
+          "source_id": "toyota_contact",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | Contact us",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "Toyota Ventures, 4440 El Camino Real, Los Altos, CA 94022.",
+          "quote_hash": "2a66c58c334405f459e1be1535a9c9864f4cc10035918571c34919f13160d560"
+        },
+        {
+          "source_id": "toyota_pitch",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Submit a Pitch | Toyota Ventures",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "If you are the founder of an early-stage company developing solutions in areas we invest in and you’re looking for funding, you are invited to complete our online pitch form.",
+          "quote_hash": "44462bf1c21b83bb45117007394df1b19261e11b7f541e49e7f731457ebabd9a"
+        },
+        {
+          "source_id": "toyota_funds",
+          "source_url": "https://pressroom.toyota.com/toyota-ventures-raises-another-300-million-to-expand-early-stage-investments-in-frontier-technology-and-climate-solutions/",
+          "source_title": "Toyota Ventures Raises Another $300 Million | Toyota USA Newsroom",
+          "source_content_hash": "cfa6734a31320d40a03dae8545992de65c8053b4b36cc1a497447d63e765759a",
+          "quote": "Toyota Ventures, the early-stage venture capital arm of Toyota, announced two $150 million funds to expand its investments in startups developing disruptive technologies and business models at the forefront of innovation.",
+          "quote_hash": "845ce4fab8941218d9a85342c2e5b4429d80f3244b2fceb464bfca3479a63ea0"
+        },
         {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -159,9 +319,117 @@
           "source_content_hash": "adc0cc9ffe3c9dd0",
           "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
           "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+        },
+        {
+          "source_id": "toyota_fund_metrics",
+          "source_url": "https://pressroom.toyota.com/toyota-ventures-raises-another-300-million-to-expand-early-stage-investments-in-frontier-technology-and-climate-solutions/",
+          "source_title": "Toyota Ventures 2024 fund announcement | assets under management",
+          "source_content_hash": "cfa6734a31320d40a03dae8545992de65c8053b4b36cc1a497447d63e765759a",
+          "quote": "The addition of the new funds, Toyota Ventures Frontier Fund II (TVFF II) and Toyota Ventures Climate Fund II (TVCF II), brings the firm’s total assets under management to over $800 million.",
+          "quote_hash": "ad5c08c7a8c763ceb944acb2c02e1f2e40ed6b27b2e0a42a7681ee15fff18fd7"
+        },
+        {
+          "source_id": "toyota_foundation",
+          "source_url": "https://pressroom.toyota.com/toyota-ventures-raises-another-300-million-to-expand-early-stage-investments-in-frontier-technology-and-climate-solutions/",
+          "source_title": "Toyota Ventures founding history",
+          "source_content_hash": "cfa6734a31320d40a03dae8545992de65c8053b4b36cc1a497447d63e765759a",
+          "quote": "Since its founding in July 2017, Toyota Ventures has furthered its mission of helping Toyota discover what’s next.",
+          "quote_hash": "ee4b184bc4c226b0026e131259e16db01a791353bec1280d1878f3f084ae83a6"
+        },
+        {
+          "source_id": "toyota_objective",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | Investment objectives",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "We look for both financial returns and strategic value, and firmly believe that financial returns must precede strategic value.",
+          "quote_hash": "3e3e6d43aa22c87a63ee78718181daeb14f1fb1c4429b48a3ec755df46ed202e"
+        },
+        {
+          "source_id": "toyota_jim",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | Jim Adler",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "Jim Adler is the founder and general partner of Toyota Ventures, responsible for setting the strategic direction and leading the firm’s investment activities.",
+          "quote_hash": "39fdb324f783e06cf8240a968ec521b00733c887f3bdb0437aa3a4e5624dc907"
+        },
+        {
+          "source_id": "toyota_natalie",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | Natalie Fonseca Licciardi",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "Natalie Fonseca Licciardi is managing partner and COO at Toyota Ventures, where she oversees the firm’s operations, including finance, portfolio support, diversity and inclusion initiatives, marketing and communications, and business management.",
+          "quote_hash": "245f47c395059be64ab4336d01a2d3eef0130df24a9c70056859dac68e23d6d3"
+        },
+        {
+          "source_id": "toyota_lisa",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | Lisa Coca",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "Lisa Coca is a partner for Toyota Ventures where she leads the firm’s Climate Fund.",
+          "quote_hash": "8a49f50b04151ee363c043ac415ef97bd451f16df2c9050e291bdf162f8fc0ea"
+        },
+        {
+          "source_id": "toyota_david",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | David Sokolic",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "David Sokolic is a partner at Toyota Ventures, responsible for leading investments for the Frontier Fund.",
+          "quote_hash": "2308d4a873d07f8d05705873a2bd7327e34fd192d80ab3be99cf8e657aac9fb9"
+        },
+        {
+          "source_id": "toyota_gill",
+          "source_url": "https://toyota.ventures/",
+          "source_title": "Toyota Ventures | Gill Pratt",
+          "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
+          "quote": "Investment Board. Gill Pratt. Board Member.",
+          "quote_hash": "513c21f13c4ca6eecaa157898585585ab4125edaebc5e4452b273f009b8123bc"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[7].label": {
+          "text": "Climate Fund 合伙人",
+          "source_hash": "1d389d1bb9031853dd39216a745b8a30ee416673b77a5a26b63f7a92768428c2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.facts[8].label": {
+          "text": "Frontier Fund 合伙人",
+          "source_hash": "2650710e4bdb9d411d1a7609152d9cdcbb999a83a398836d49384386084dde78",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Toyota 官方公告记载 Toyota Ventures 于 2017 年 7 月成立。",
+          "source_hash": "54f25f2c47cada5bace32c4103be3547a2fb39e45a28768541aaba2557006b37",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "宣布新设 Frontier Fund II 与 Climate Fund II，各 1.5 亿美元；Toyota 公告当时称机构总管理资产超过 8 亿美元。",
+          "source_hash": "93179e45af6cb9e5d9f018c546514ed0f6194f6bfb93111f0b252f4439d72d15",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Toyota Ventures 官网当前将 AMI Labs 列为组合企业。",
+          "source_hash": "347a401bef94124881881e8b805fa88d2c399d846fdfa2bf08453faf83b60e5c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

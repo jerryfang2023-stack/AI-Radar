@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,18 +139,95 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Molten Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、在管组合数量和案例来自机构官网自述。官网所列组合公司是选择性案例，不表示完整组合或投资回报；FintechOS 公布的 2800 万美元为股权与债务组合融资总额，Molten Ventures 单独出资额及具体分配未披露。官网开放 Pitch Deck 提交入口，具体联系方式如下。",
+      "summary": "Molten Ventures 是面向欧洲高成长科技公司的风险投资机构，官网称其拥有约 20 年投资历程，通常在企业达到 A 轮或 B 轮阶段后投资，并继续参与后续融资。其公开组合横跨企业软件、AI 与硬科技、消费科技和数字医疗。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "投资地区",
+          "value": "欧洲",
+          "source_id": "molten_about"
+        },
+        {
+          "field": "stage",
+          "label": "常见投资阶段",
+          "value": "通常投资于 A 轮及 B 轮阶段。",
+          "source_id": "molten_stage"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示重点领域",
+          "value": [
+            "企业软件与 SaaS",
+            "AI、硬件与深科技",
+            "消费科技",
+            "数字医疗"
+          ],
+          "source_id": "molten_sectors"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露组合规模",
+          "value": "官网当前披露组合中有 100 多家公司；数据会随投资与退出变化。",
+          "source_id": "molten_scale"
+        },
+        {
+          "field": "investment_model",
+          "label": "资本循环方式",
+          "value": "官网称退出所得会重新投入新的或后续投资机会。",
+          "source_id": "molten_reinvest"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 本轮参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "FintechOS 于 2026-09-21 公布 2800 万美元股权与债务组合融资，并将 Molten Ventures 列为现有股东之一；没有披露其单独出资额或该机构对应的融资份额。",
           "source_id": "FISRC-ebb4cfeb462f5780"
+        },
+        {
+          "description": "官网列出的代表性组合案例包括 Aircall、Ledger、Revolut 与 Thought Machine；这是选择性案例，不是完整组合或回报证明。",
+          "source_id": "molten_track"
+        },
+        {
+          "description": "Molten Ventures 官网组合页列出 ICEYE，并标注其于 2018 年投资；这是单个组合案例，不说明投资金额或回报。",
+          "source_id": "molten_portfolio"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Molten Ventures",
+          "url": "https://www.moltenventures.com/",
+          "source_id": "molten_contact"
+        },
+        {
+          "kind": "application",
+          "label": "创业团队提交 Pitch Deck",
+          "value": "Send Your Pitch Deck；通过官网联系页面提交。",
+          "url": "https://www.moltenventures.com/contact",
+          "source_id": "molten_contact"
+        },
+        {
+          "kind": "address",
+          "label": "伦敦办公室",
+          "value": "20 Garrick Street, London WC2E 9BT",
+          "source_id": "molten_contact_office"
+        },
+        {
+          "kind": "address",
+          "label": "都柏林办公室",
+          "value": "The Merrion Buildings, 18–20 Merrion Street, Dublin D02 XH98",
+          "source_id": "molten_contact_dublin"
+        },
+        {
+          "kind": "phone",
+          "label": "公开办公室电话",
+          "value": "+44 (0) 20 7931 8800",
+          "source_id": "molten_contact_office"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-ebb4cfeb462f5780",
@@ -159,9 +236,109 @@
           "source_content_hash": "ffc50b05f8c9cdae",
           "quote": "raised $28 million in combined equity and debt financing from its current shareholder base, including Bek Ventures, IFC, Cipio Partners and Molten Ventures, alongside a senior debt facility from Santander CIB",
           "quote_hash": "dbe4affcdde93e87d3b166291082fcb242b3fe2b5d8d0e8c75bd211cb68787e6"
+        },
+        {
+          "source_id": "molten_about",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "Molten Ventures is a leading venture capital firm with a twenty year track record of investing in high-growth private technology companies across Europe.",
+          "quote_hash": "25fb3ef6850872725c2a9243c3e57fbc12cf27212f07fe804fc2cc93a0a2c00b"
+        },
+        {
+          "source_id": "molten_portfolio",
+          "source_url": "https://www.moltenventures.com/portfolio/all",
+          "source_title": "Portfolio | Molten Ventures",
+          "source_content_hash": "0a799818ae5c0c9a6fa50fb80e793ab0027b3c18bc5b5f1364ff30787395c0b5",
+          "quote": "ICEYE operates the world’s largest synthetic aperture radar (SAR) satellite constellation … Invested In 2018",
+          "quote_hash": "f18610189ae377f6a1a3172a88d6ebd22ce1573fbb76c3ca7e0f191269907f04"
+        },
+        {
+          "source_id": "molten_contact",
+          "source_url": "https://www.moltenventures.com/contact",
+          "source_title": "Contact | Molten Ventures",
+          "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+          "quote": "Send us your pitch deck and tell us how you’re shaping the future of technology.",
+          "quote_hash": "74ba8e5f927849eaedbc3202d6ca4523dceeebbedbe7ee001ce301471776494b"
+        },
+        {
+          "source_id": "molten_scale",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "over 100 companies currently",
+          "quote_hash": "eff08975b250aa4ea4f761189bf0fbd33186e74af3a39e510aa226d5d1995eda"
+        },
+        {
+          "source_id": "molten_stage",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "We typically invest at the Series A and B stages where there is demonstrable value through proven demand.",
+          "quote_hash": "5db82ae82f63b659bfab7bf7d2ecfe1b3a6c89773d159679660ee6e74e6fd444"
+        },
+        {
+          "source_id": "molten_sectors",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "Fintech; Climate Tech; Space Tech; and AI.",
+          "quote_hash": "3842a20e16e441534887a5301bbb60abcb5e42df73aa1553a55a4c39297b92aa"
+        },
+        {
+          "source_id": "molten_reinvest",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "Returns are then reinvested to create ongoing growth and value creation.",
+          "quote_hash": "e8e2b196c74d88dcab4bcb03104dc3a8acae201eb983815434427e4f9ed39348"
+        },
+        {
+          "source_id": "molten_track",
+          "source_url": "https://investors.moltenventures.com/about-molten",
+          "source_title": "About Molten Ventures Plc",
+          "source_content_hash": "0da7e1bd16f677fa2a61cf26952fb857eccd1a472c94e8a1cbea60b3a3048040",
+          "quote": "We have backed some very notable names from early days to market leading positions.",
+          "quote_hash": "d240e29c77948edd89e4c2b8e797ba7e2f9e3b30217c5c3cb8cc1914e7e6bd97"
+        },
+        {
+          "source_id": "molten_contact_office",
+          "source_url": "https://www.moltenventures.com/contact",
+          "source_title": "Get in Touch | Contact Molten Ventures",
+          "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+          "quote": "London Office 20 Garrick Street, London WC2E 9BT +44 (0) 20 7931 8800",
+          "quote_hash": "580e8b9ef501a4decc0046e838e0c7d76d9dce1faa4ee75635752a3c0d342072"
+        },
+        {
+          "source_id": "molten_contact_dublin",
+          "source_url": "https://www.moltenventures.com/contact",
+          "source_title": "Get in Touch | Contact Molten Ventures",
+          "source_content_hash": "38f196789dc0c4bbbdff91ccb1de11916d0369a058fab6334a330caaaba30216",
+          "quote": "Dublin Office The Merrion Buildings, 18-20 Merrion Street, Dublin D02 XH98",
+          "quote_hash": "b67ea9814d05bde38e9304b13027d38ebb70f52cdcb1936271ecbbca8f948877"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[1].description": {
+          "text": "官网列出的代表性组合案例包括 Aircall、Ledger、Revolut 与 Thought Machine；这是选择性案例，不是完整组合或回报证明。",
+          "source_hash": "a20e2bd0f1762b6d9c7b7217d6f126537d31a5b263605b2383a1b9529288b82f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "创业团队提交 Pitch Deck",
+          "source_hash": "9768b86a399b28ff4135254d6c1d288ae8546eebe5425cc6fa176c1951cfa11c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

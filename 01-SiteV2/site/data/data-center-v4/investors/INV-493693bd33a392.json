@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -337,14 +337,65 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "东方富海 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "东方富海官网在本次核验中未能加载。机构背景与历史规模引用合作方远致富海官网、上海证券报采访及证券时报报道；36氪档案与这些来源的管理规模数字不一致（36氪列示超过214亿元，合作方页面/2026年1月采访列示350亿元），统计口径和时点未能统一。公开BP邮箱及地址来自36氪档案，时效未独立确认。所有基金规模、项目和退出数字均非基金收益率。",
+      "summary": "东方富海是2006年设立的深圳创业投资机构。不同公开来源对其管理规模披露并不一致：远致富海合作方官网及2026年1月采访列示约350亿元，36氪机构档案当前列示超过214亿元，不能在缺少统一时点与口径时合并。2026年4月证券时报报道，东方富海投资项目超过700个、其中92家企业上市退出；这些均为规模或项目数据，不是基金回报率。",
+      "facts": [
+        {
+          "field": "official_name",
+          "label": "公开披露机构名称",
+          "value": "深圳市东方富海投资管理股份有限公司",
+          "source_id": "ofc_partner_overview"
+        },
+        {
+          "field": "founded_date",
+          "label": "成立时间",
+          "value": "2006年10月",
+          "source_id": "ofc_partner_overview"
+        },
+        {
+          "field": "leadership",
+          "label": "董事长（媒体采访时）",
+          "value": "陈玮",
+          "source_id": "ofc_chairman_interview_2026"
+        },
+        {
+          "field": "fund_count_and_aum",
+          "label": "远致富海官网介绍东方富海",
+          "value": "管理基金60余支，管理规模350亿元；该页为合作方远致富海官网披露。",
+          "source_id": "ofc_partner_overview"
+        },
+        {
+          "field": "fund_aum_alternative",
+          "label": "36氪机构档案当前列示规模",
+          "value": "超过214亿元人民币；与其他来源数字存在差异，未作口径合并。",
+          "source_id": "ofc_36kr_profile"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "2026年1月采访披露",
+          "value": "投资金额约60%投向中早期项目；重点布局人工智能、半导体、新能源、新材料、生物医药。",
+          "source_id": "ofc_chairman_interview_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2006-10",
+          "description": "远致富海官网将东方富海介绍为2006年10月成立的专业创业投资管理公司。",
+          "source_id": "ofc_partner_overview"
+        }
+      ],
       "track_record": [
+        {
+          "description": "2026年4月证券时报报道，东方富海管理规模约350亿元，累计投资超过700个项目、超过200个项目退出，其中92家企业通过上市退出；这些是报道的累计项目数据，不代表基金回报率。",
+          "source_id": "ofc_securities_times_2026"
+        },
+        {
+          "description": "远致富海官网对东方富海的介绍称其管理超过60支基金、投资项目超过600个、退出超过150个且近90家通过上市退出；这是合作方页面的披露口径，与后续媒体报道的计数时点不同。",
+          "source_id": "ofc_partner_overview"
+        },
         {
           "description": "融资来源记录：奕行智能 · 轮次未披露 · 2026-09-18 · Pre-A轮联合领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-afa0818eda6a6b72"
@@ -358,8 +409,62 @@
           "source_id": "FISRC-9d4811d701a7c9af"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "36氪机构档案列示官网（本次官网访问超时）",
+          "value": "东方富海官网",
+          "url": "http://www.ofcapital.com/",
+          "source_id": "ofc_36kr_profile"
+        },
+        {
+          "kind": "email",
+          "label": "36氪机构档案列示BP邮箱（有效性未独立确认）",
+          "value": "bp@ofcapital.com",
+          "url": "https://pitchhub.36kr.com/organization/1678207208616963",
+          "source_id": "ofc_36kr_profile"
+        },
+        {
+          "kind": "address",
+          "label": "36氪机构档案列示办公地址（现时性未独立确认）",
+          "value": "广东省深圳市福田区深南西路天安数码时代大厦A座2501",
+          "url": "https://pitchhub.36kr.com/organization/1678207208616963",
+          "source_id": "ofc_36kr_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ofc_partner_overview",
+          "source_url": "https://www.cmafsz.com/about-us",
+          "source_title": "关于我们｜深圳市远致富海投资管理有限公司",
+          "source_content_hash": "2f4d366a606fab981394cddad79ab4287ed756d2f8062187cc55974bff896dea",
+          "quote": "市场化机构 深圳市东方富海投资管理股份有限公司 东方富海成立于2006年10月，是国内知名的专业性创业投资管理公司。目前管理着超过60支基金，基金规模达350亿元人民币，公司在管基金累计投资项目超过600个，超150个退出，近90家通过上市退出。",
+          "quote_hash": "e68b8ebc08ed6b27cfffdbce731e926c592f210d0487672881119785f7d49794"
+        },
+        {
+          "source_id": "ofc_chairman_interview_2026",
+          "source_url": "https://finance.eastmoney.com/a/202601233628357844.html",
+          "source_title": "董事长专访｜东方富海董事长陈玮：专业是创投机构的生存之本｜东方财富网（来源：上海证券报）",
+          "source_content_hash": "bc7d860ba73b7977be38a56f889fa96c9ff22416988a8c8c1e5ccef38c668d4e",
+          "quote": "目前东方富海累计管理基金超60只，管理规模达到350亿元，投资金额的60%投向了中早期项目，重点布局人工智能、半导体、新能源、新材料、生物医药等领域，投资项目中超90家通过上市退出。",
+          "quote_hash": "5cdbf3259291090811300e27ec8d8e923032786ddd717ec1d047ffc4a3d27d5f"
+        },
+        {
+          "source_id": "ofc_securities_times_2026",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-04-16/doc-inhurihp8129475.shtml",
+          "source_title": "“以前赚非共识的钱，现在要赚共识的钱”｜陈玮｜证券时报",
+          "source_content_hash": "a7af6f9abf5cb0731e1700377879f8467dab1019c3a45c573a3a8c690a3d37ae",
+          "quote": "东方富海如今的基金管理规模达350亿元，投资超过700个项目，超过200个项目已退出，其中92家企业通过上市退出。",
+          "quote_hash": "3e3861f54faa389a5cf073ac7aef32d4a6f01431f2e556f602069f17cbfe591d"
+        },
+        {
+          "source_id": "ofc_36kr_profile",
+          "source_url": "https://pitchhub.36kr.com/organization/1678207208616963",
+          "source_title": "东方富海｜投资机构信息｜36氪",
+          "source_content_hash": "a320aaa02e605e8034481621e7dd507082f056e01f54f065b1bb6344812c9d9f",
+          "quote": "官网： http://www.ofcapital.com/ 电话： - 邮箱： bp@ofcapital.com 地址： 广东省深圳市福田区深南西路天安数码时代大厦A座2501",
+          "quote_hash": "0239291222ce6bf4a89d5cedb9ee2265f4eb12d85c23f5e9ab7aa2197236b8da"
+        },
         {
           "source_id": "FISRC-afa0818eda6a6b72",
           "source_url": "https://news.pedaily.cn/202210/502518.shtml",
@@ -385,7 +490,7 @@
           "quote_hash": "b2f9ab57aa10cd02fbe1ea158d8e74af1c4a84f96d03a457f2d3958d7ad65d81"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

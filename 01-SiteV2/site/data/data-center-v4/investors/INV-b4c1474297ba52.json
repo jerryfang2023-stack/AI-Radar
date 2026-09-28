@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,18 +131,7 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Latitude Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -151,9 +140,94 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Ansaf Kareem ( Latitude Capital )",
           "quote_hash": "be68f9e93753a4be5c0203dcca35dbfc3d92c295bed273f7ac415bd023ac8cab"
+        },
+        {
+          "source_id": "latitude_about",
+          "source_url": "https://www.latitudecp.com/about",
+          "source_title": "Latitude Capital — About",
+          "source_content_hash": "a53c22e214e7fd1fa56034cb5898c7b32853bb31c6c595478d3110292a75fae9",
+          "quote": "Latitude is a venture capital firm focused on being the first call and partner to founders scaling from 0 to 1.",
+          "quote_hash": "5b8029151ed7e49a6baea6664734270d0300e0d789c23e0102441b1d99bb639f"
+        },
+        {
+          "source_id": "latitude_contact",
+          "source_url": "https://www.latitudecp.com/contact",
+          "source_title": "Latitude Capital — Contact",
+          "source_content_hash": "bd08d014e9e1169830e8049a9a54b151408d5fd1c6f949861570d6c3f2b58747",
+          "quote": "Contact Latitude",
+          "quote_hash": "928275a1d88145845ecad58c129c938308386a3b1d8ed2cd81360e741fc3c5ef"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Latitude Capital 将自身描述为一家风险投资公司，与创始人从构思到产品市场契合阶段合作，并声明重点关注 AI 和软件重塑核心行业工作流程。",
+      "coverage_note": "策略和公开联系入口来自 Latitude Capital 的官方网站。Capital 49 合伙人的 Avoca 帖子将 Ansaf Kareem 与 Latitude Capital 一同列入投资人/支持者名单；来源没有说明机构层面的出资结构、轮次金额或 Ansaf Kareem 是否代表基金出资。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其在创意形成到产品市场契合阶段与创始人合作。",
+          "source_id": "latitude_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "主要关注 AI 与软件如何重塑核心行业工作流。",
+          "source_id": "latitude_about"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网将自身定位为创始人从 0 到 1 阶段的优先合作伙伴。",
+          "source_id": "latitude_about"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Capital 49 合伙人的公开帖子将 Ansaf Kareem 与 Latitude Capital 列在 Avoca 更广泛的投资人/支持者名单中；未披露该机构的单笔金额。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "contact_form",
+          "label": "Latitude Capital 官网联系入口",
+          "value": "Contact Latitude",
+          "url": "https://www.latitudecp.com/contact",
+          "source_id": "latitude_contact"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Latitude Capital 将自身描述为一家风险投资公司，与创始人从构思到产品市场契合阶段合作，并声明重点关注 AI 和软件重塑核心行业工作流程。",
+          "source_hash": "bee631cd8abb368461699ea372cd758622f7cdc82c389136f713e34578541606",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Capital 49 合伙人的公开帖子将 Ansaf Kareem 与 Latitude Capital 列在 Avoca 更广泛的投资人/支持者名单中；未披露该机构的单笔金额。",
+          "source_hash": "375744410e6ec6e7ae0a78dfbe4c443ae5d9883142ca36b4c39d3326cfb4002e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Latitude Capital 官网联系入口",
+          "source_hash": "88281817545b171d8f3be769d93eab14d61098cf9202e1781e0c798c0aad1d88",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

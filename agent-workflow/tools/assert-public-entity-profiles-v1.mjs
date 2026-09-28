@@ -50,6 +50,7 @@ if (!backlog || !coverage) {
     investors.filter((row) => coverage.institutions?.[row.id]?.identity_status === "pending_verification").map((row) => row.id));
   assertSameIds("pending_investor_research", backlog.pending_investor_research,
     investors.filter((row) => (row.investor_kind === "individual" || organizationKinds.has(row.investor_kind))
+      && coverage.institutions?.[row.id]?.identity_status !== "pending_verification"
       && coverage.institutions?.[row.id]?.coverage_status !== "researched").map((row) => row.id));
   assertSameIds("pending_people_research", backlog.pending_people_research,
     people.filter((row) => coverage.people?.[row.id]?.coverage_status !== "researched").map((row) => row.id));
@@ -87,6 +88,16 @@ for (const [id, profile] of Object.entries(coverage?.institutions || {})) {
   if (profile.coverage_status === "researched" && !profile.profile_type) problems.push(`missing_researched_profile_type:${id}`);
   if (profile.profile_type === "unverified" && profile.identity_status !== "pending_verification") problems.push(`unverified_profile_missing_pending_identity:${id}`);
   if (profile.identity_status === "pending_verification" && profile.profile_type !== "unverified") problems.push(`pending_identity_profile_type_mismatch:${id}`);
+  const investor = investorData.institutions?.find((row) => row.id === id);
+  const activitySourceIds = new Set((investor?.activities || []).flatMap((activity) => activity.evidence || [])
+    .filter((source) => (source.source_id || source.sourceId) && source.quote
+      && /^https:\/\//u.test(source.source_url || source.sourceUrl || "")
+      && /^(?:[a-f0-9]{16}|[a-f0-9]{64})$/u.test(source.source_content_hash || source.sourceContentHash || ""))
+    .map((source) => source.source_id || source.sourceId));
+  if (data.institutions?.[id] && profile.coverage_status === "researched" && activitySourceIds.size) {
+    if (!(profile.sources || []).some((source) => activitySourceIds.has(source.source_id))) problems.push(`researched_profile_dropped_financing_sources:${id}`);
+    if (!(profile.track_record || []).some((item) => activitySourceIds.has(item.source_id))) problems.push(`researched_profile_dropped_financing_activity:${id}`);
+  }
 }
 if (problems.length) {
   console.error(JSON.stringify({ ok: false, problems }, null, 2));

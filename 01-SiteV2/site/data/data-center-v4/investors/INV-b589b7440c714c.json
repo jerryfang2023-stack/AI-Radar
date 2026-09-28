@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -153,29 +153,150 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Baron Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Baron Capital 是成立于 1982 年、专注长期成长型股票与成长股权策略的资产管理机构。公司官网披露截至 2026-06-30 管理资产 697 亿美元，且称自 1992 年以来为投资者实现与未实现收益合计 712 亿美元；这些是公司自述口径，不代表单一基金表现。本库的 SpaceX IPO 记录来自二手报道，出资主体在报道中指向 Ron Baron 个人或 Baron Capital，尚未核实到具体基金；750 亿美元为整笔 IPO 披露口径而非 Baron 单笔金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "成长股权与长期成长型股票投资管理机构",
+          "source_id": "baron_about"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1982 年",
+          "source_id": "baron_history"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "长期投资具有持续成长潜力、耐久竞争优势和优秀管理团队的企业",
+          "source_id": "baron_strategy"
+        },
+        {
+          "field": "aum",
+          "label": "管理资产规模",
+          "value": "697 亿美元（截至 2026-06-30；公司自述，包含客户及自有账户）",
+          "source_id": "baron_about"
+        },
+        {
+          "field": "realized_unrealized_gains",
+          "label": "累计实现及未实现收益",
+          "value": "712 亿美元（自 1992 年以来，截至 2026-06-30；公司披露，非单只基金收益）",
+          "source_id": "baron_message_metrics"
+        },
+        {
+          "field": "leadership",
+          "label": "创始人、CEO 与投资组合经理",
+          "value": "Ronald Baron",
+          "source_id": "baron_people"
+        },
+        {
+          "field": "senior_team",
+          "label": "主要管理团队",
+          "value": [
+            "David Baron、Michael Baron — Co-Presidents",
+            "Cliff Greenberg、Andrew Peck — Co-CIOs"
+          ],
+          "source_id": "baron_message"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1982",
+          "description": "Baron Capital 官网将机构起源记为 1982 年。",
+          "source_id": "baron_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：SpaceX · IPO · 2026-06-03 · 本轮参投 · $75 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公司 2026 年第二季度公开信称，截至 2026-06-30，SpaceX 是 Baron Capital 最大持仓，占公司约 690 亿美元 AUM 的略高于 30%；这是公司整体口径，不能据此推断所有 Baron 基金持有相同比例。",
+          "source_id": "baron_q2_letter"
+        },
+        {
+          "description": "Motley Fool 的报道标题将 IPO 投入归于 Ron Baron，并称金额为 10 亿美元；该报道未在本档案中证明具体投资工具或基金载体。",
           "source_id": "FISRC-70b91157a7013cad"
         },
         {
-          "description": "融资来源记录：SpaceX · IPO · 2026-06-03 · 本轮参投 · $75 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "另一则 syndicated 报道称 Baron Capital 在 SpaceX IPO 提交了 10 亿美元订单，但没有披露最终配售或具体基金；该订单金额与融资数据库记录的 750 亿美元整笔交易金额不可混为一谈。",
           "source_id": "FISRC-9adefaf867df19d6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Baron Capital",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "email",
+          "label": "机构总联系邮箱",
+          "value": "info@baroncapitalgroup.com",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "电话",
+          "value": "+1 212-583-2000",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "address",
+          "label": "地址",
+          "value": "767 Fifth Avenue, New York, NY 10153",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "baron_about",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "Baron Capital's assets under management have grown from $100 million in 1992 to $69.7* billion as of June 30, 2026.",
+          "quote_hash": "d856ea7c928c8b81b75570b8f80b9c0fd5efd12c05f23d7c18fbcce45d3e08c4"
+        },
+        {
+          "source_id": "baron_people",
+          "source_url": "https://www.baroncapitalgroup.com/our-people",
+          "source_title": "We Believe People Are the Drivers of a Successful Business | Baron Funds",
+          "source_content_hash": "b2d80291c5bccf2153589ce3e54f7afd1e86edd5617927e2b03810dbfe96796d",
+          "quote": "Ronald Baron Founder, CEO, and Portfolio Manager",
+          "quote_hash": "2204a2c077f81f12d1e65caaed01c166bbf53a867910ea8e5d5d7466a93853e2"
+        },
+        {
+          "source_id": "baron_message",
+          "source_url": "https://www.baroncapitalgroup.com/article/message-from-ron-baron",
+          "source_title": "A Message from Ron | Baron Funds",
+          "source_content_hash": "4755855dd9206d6bd54d59fea1ca7f0779f037f9f43fd3b0396bb28f04e7b6f1",
+          "quote": "As the Firm continues to grow, our next generation of portfolio managers and executives—led by my sons, Co-Presidents David and Michael, each with more than 23 years of experience, and our Co-CIOs Cliff Greenberg and Andrew Peck, with 42 and 30 years of experience, respectively—are all assuming more responsibilities for our businesses.",
+          "quote_hash": "81fef159f5b1e9eae4da99a94350c2ef5061dd23261ac6503b99c41bc00a1741"
+        },
+        {
+          "source_id": "baron_q2_letter",
+          "source_url": "https://www.baroncapitalgroup.com/article/letter-ron-q2-2026",
+          "source_title": "Letter from Ron | Q2 2026 | Baron Funds",
+          "source_content_hash": "ef31cfd075dd416419508bfe9f19f0d416de9fb9305114f61e688445d368e1ef",
+          "quote": "SpaceX is Baron Capital's largest holding and represents a little more than 30% of our Firm's $69 billion assets under management on June 30.",
+          "quote_hash": "bfe659906072e7063a1a57b7bb1c3c672ca3132e1f139e5287533deb285dd753"
+        },
+        {
+          "source_id": "baron_contact",
+          "source_url": "https://www.baroncapitalgroup.com/",
+          "source_title": "Baron Capital - Asset Management for Growth Equity Investments",
+          "source_content_hash": "2ad247031282fff9185e7506e18113caaf2818a444c60aa64f89012eab442d04",
+          "quote": "Phone 212-583-2000; Email info@baroncapitalgroup.com; Address 767 Fifth Avenue, New York, NY 10153.",
+          "quote_hash": "1aad39e79ce62a277fe66bce8cd16f568eb93f45a1941d00b1ba8a87d4e60aa6"
+        },
         {
           "source_id": "FISRC-70b91157a7013cad",
           "source_url": "https://www.fool.com/investing/2026/06/18/spacex-stock-1-billion-ipo-buy-mistake/",
-          "source_title": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO. Here's Why He Calls It \"The Largest Company on the Planet\" in the Making. | The Motley Fool",
+          "source_title": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO | The Motley Fool",
           "source_content_hash": "a23bc17d1a408325",
           "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO.",
           "quote_hash": "5144d6cd354049217c8415ea27737536becf697c38df3c3583c4ec8354ab8782"
@@ -183,13 +304,53 @@
         {
           "source_id": "FISRC-9adefaf867df19d6",
           "source_url": "https://www.tradingview.com/news/stocktwits:c3fb917f9094b:0-spacex-will-be-largest-most-profitable-company-on-the-planet-says-veteran-elon-musk-bull-whose-funds-trail-us-markets/",
-          "source_title": "SpaceX Will Be 'Largest, Most Profitable Company On The Planet,' Says Veteran Elon Musk Bull Whose Funds Trail US Markets — TradingView News",
+          "source_title": "SpaceX Will Be 'Largest, Most Profitable Company On The Planet,' Says Veteran Elon Musk Bull | TradingView News",
           "source_content_hash": "3549f091090ec02b",
           "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO.",
           "quote_hash": "e9e6aa400ba72e89e811139da45cef3b45fe9cfcde4b3551824cb7abba145c2d"
+        },
+        {
+          "source_id": "baron_history",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "The story of Baron Capital begins long before the founding of the company in 1982.",
+          "quote_hash": "3f15416965f59d28b96317857f928d1057a139da5e175a9e0f84235d29b31e61"
+        },
+        {
+          "source_id": "baron_strategy",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "At Baron Capital, our entire organization is aligned behind a single investment approach and shared objective. We are long-term investors in secular growth businesses that are run by great management teams and offer durable competitive advantages.",
+          "quote_hash": "7cd4792d0c369e44cb3e2d4c8744137d527babdba05fe044e6c7e86a39cc1381"
+        },
+        {
+          "source_id": "baron_message_metrics",
+          "source_url": "https://www.baroncapitalgroup.com/article/message-from-ron-baron",
+          "source_title": "A Message from Ron | Baron Funds",
+          "source_content_hash": "4755855dd9206d6bd54d59fea1ca7f0779f037f9f43fd3b0396bb28f04e7b6f1",
+          "quote": "Today, our assets under management total $69.7 billion (6/30/2026), and we have earned more than $71.2 billion (6/30/2026) in realized and unrealized gains for our investors.",
+          "quote_hash": "c6970ca02a8f7220fb6c96e424f3e2c25a0f01f5ec318eaa9928b49721cb9b27"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "AUM 与累计收益是 Baron Capital 官方披露，按公司整体口径并保留统计日期。SpaceX IPO 参投信息来自二手报道，当前来源无法确认订单主体、最终配售或具体基金；不可将 750 亿美元整笔 IPO 规模或个人报道视作 Baron 的投资金额或基金业绩。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Baron Capital 官网将机构起源记为 1982 年。",
+          "source_hash": "7cad4a03cc2b77c4bf1999a005e54500b4fae56b3f2a7fb924766422b651f3f8",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

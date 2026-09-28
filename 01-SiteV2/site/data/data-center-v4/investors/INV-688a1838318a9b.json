@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -250,6 +250,14 @@
         {
           "description": "Breyer Capital 官网称 Jim Breyer 早期投资过 40 多家后来成功上市或并购的科技公司，并称其部分领投项目实现超过 100 倍成本回报；该数字是机构自述口径，并非单一基金审计结果。",
           "source_id": "breyer_bio"
+        },
+        {
+          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bcebf5ead5f70f46"
+        },
+        {
+          "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 本轮参投 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4e5f377f1837e2e5"
         }
       ],
       "sources": [
@@ -260,10 +268,46 @@
           "source_content_hash": "b4d0aa44533b986e0bb3f1005d614312e037dba5c4f9bf8523a7f33df3b049d9",
           "quote": "Jim is the Founder and CEO of Breyer Capital ... Jim has been an early investor in over 40 technology companies that have completed highly successful public offerings or mergers. As a lead investor and Director, many of these investments, including Facebook, returned well over 100 times their cost ... Jim is a graduate of Stanford and Harvard Business School where he graduated as a Baker Scholar.",
           "quote_hash": "9f3554f4aacfcc0bd2a77a6e0e597dad4dba5eb7cf1969db7f32907a79d17b37"
+        },
+        {
+          "source_id": "FISRC-bcebf5ead5f70f46",
+          "source_url": "https://andrew.ooo/posts/ami-labs-1b-seed-yann-lecun-world-models/",
+          "source_title": "AMI Labs Raises $1.03B Seed Round: Yann LeCun's Bet That LLMs Are a Dead End — andrew.ooo",
+          "source_content_hash": "5d530dab1f01bc4c",
+          "quote": "Jim Breyer (legendary VC, early Facebook investor)",
+          "quote_hash": "372bad8d3326e5352bbd89d2c4074cec711a77e64ea315deee09e3f0e4897f35"
+        },
+        {
+          "source_id": "FISRC-4e5f377f1837e2e5",
+          "source_url": "https://www.bostonglobe.com/2023/12/06/business/liquid-ai-boston-chatgpt/",
+          "source_title": "Liquid AI is Boston's answer to ChatGPT",
+          "source_content_hash": "af7dbaee048f0409",
+          "quote": "Texas venture capitalist Jim Breyer",
+          "quote_hash": "ada9d8a1402f0129b22678228f567a19a39927a8d58fc3fedd56a6f091583a0f"
         }
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Jim Breyer 是 Breyer Capital 创始人兼 CEO，也是长期从事科技创业投资的投资人。其公开投资履历涉及 Facebook、Etsy、Spotify、Dell 等公司，并参与创立 Accel-KKR。",
+          "source_hash": "0338ba9544025a681152261b1b91a05036755b27260a46fdefa859ebf2520d81",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "与 George Roberts、Henry Kravis 共同创立并参与投资委员会。",
+          "source_hash": "5a3dbe1c636b2b5f10c44f7e36320f1388363f124b379288eb2f71843a0bde51",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -875,6 +875,54 @@
         "sourceUrl": "https://x.com/thsottiaux/status/2062966625733861752"
       }
     ],
+    "public_profile": {
+      "summary": "Thibault Sottiaux 负责 OpenAI Codex。OpenAI Forum 对谈记录介绍其参与 Codex 的产品与团队工作。",
+      "current_roles": [
+        {
+          "title": "技术人员（Codex负责人）",
+          "organization": "OpenAI",
+          "source_id": "openai_thibault_codex_official"
+        }
+      ],
+      "career": [
+        {
+          "organization": "OpenAI",
+          "title": "技术人员（Codex负责人）",
+          "period": "一手公开资料所示；起始时间未披露",
+          "description": "OpenAI 官方活动讲者简介称其为 OpenAI 技术人员并负责 Codex 软件工程代理；此条只描述来源所示时点。",
+          "source_id": "openai_thibault_codex_official"
+        }
+      ],
+      "education": [],
+      "experience_summary": "OpenAI 官方活动讲者简介称其为 OpenAI 技术人员并负责 Codex 软件工程代理；此条只描述来源所示时点。 当前可核实资料未披露完整任职起止时间和教育履历，相关字段不作推断。",
+      "track_record": [
+        {
+          "description": "负责 Codex，并参与产品及团队发展。",
+          "source_id": "openai_thibault_codex"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "openai_thibault_codex",
+          "source_url": "https://forum.openai.com/public/videos/event-replay-codex-is-for-everyone-why-codex-matters-beyond-code-2026-05-13",
+          "source_title": "Codex is for Everyone: Why Codex Matters Beyond Code | OpenAI Forum",
+          "source_content_hash": "d62229ce301491447d90152ce9473dc442a02e66676321a6cf0c1b90406df261",
+          "quote": "Thibault is the head of Codex at OpenAI.",
+          "quote_hash": "f58b1112baae63bb8984f863e8117de46106d92bb86df49078f3104cfef344a7"
+        },
+        {
+          "source_id": "openai_thibault_codex_official",
+          "source_url": "https://forum.openai.com/public/events/codex-is-for-everyone-why-codex-matters-beyond-code-fa40puy7wi",
+          "source_title": "Codex is for Everyone | OpenAI Forum",
+          "source_content_hash": "adf38eee40abaa5155eaeb80f9597e79c1c1f54b259d958266d87e3d59f994bd",
+          "quote": "Thibault “Tibo” Sottiaux is a Member of Technical Staff at OpenAI, where he leads Codex, OpenAI’s software engineering agent.",
+          "quote_hash": "6478106ab29357c0c269eda8ba8679b5ba7d9a3a446ab184eccc5beabf04ecad"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "coverage_status": "researched",
+      "coverage_note": "已核验该公开职业关联；未披露的任期、学历及其他履历保持未填写。"
+    },
     "translations": {
       "zh-CN": {
         "role": {
@@ -892,40 +940,16 @@
           "model": "deepseek-v4-flash",
           "translated_at": "2026-08-14T07:52:40.717Z",
           "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Thibault Sottiaux 负责 OpenAI Codex。OpenAI Forum 对谈记录介绍其参与 Codex 的产品与团队工作。",
+          "source_hash": "e7b16ee3d70a5769c983d4994eb879af95c2905e25dae966a54e5b60e6be8c97",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:25.166Z",
+          "status": "translated"
         }
       }
-    },
-    "public_profile": {
-      "summary": "Thibault Sottiaux 负责 OpenAI Codex。OpenAI Forum 对谈记录介绍其参与 Codex 的产品与团队工作。",
-      "current_roles": [
-        {
-          "title": "Codex 负责人",
-          "organization": "OpenAI",
-          "source_id": "openai_thibault_codex"
-        }
-      ],
-      "career": [],
-      "education": [],
-      "experience_summary": "OpenAI 官方论坛将其介绍为 Codex 负责人，并记录他对 Codex 开发历程及使用方向的分享。",
-      "track_record": [
-        {
-          "description": "负责 Codex，并参与产品及团队发展。",
-          "source_id": "openai_thibault_codex"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "openai_thibault_codex",
-          "source_url": "https://forum.openai.com/public/videos/event-replay-codex-is-for-everyone-why-codex-matters-beyond-code-2026-05-13",
-          "source_title": "Codex is for Everyone: Why Codex Matters Beyond Code | OpenAI Forum",
-          "source_content_hash": "d62229ce301491447d90152ce9473dc442a02e66676321a6cf0c1b90406df261",
-          "quote": "Thibault is the head of Codex at OpenAI.",
-          "quote_hash": "f58b1112baae63bb8984f863e8117de46106d92bb86df49078f3104cfef344a7"
-        }
-      ],
-      "last_verified_at": "2026-09-25",
-      "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
     }
   },
   "relatedEntities": [],

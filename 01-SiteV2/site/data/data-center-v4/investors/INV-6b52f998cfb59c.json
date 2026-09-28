@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -155,30 +155,109 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Anzu Partners 当前按“投资组织”收录。最新融资披露记录日期为 2022-12-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "AUM and team-size figures are stated on Anzu Partners’ website and may change. Portfolio listings are selected company examples rather than audited fund performance. EnCharge AI’s USD 21.7 million Series A is the company financing total, not Anzu’s disclosed individual check.",
+      "summary": "Anzu Partners是一家投资机构，专注于突破性清洁技术、工业与生命科学技术。其运营风险投资、私人信贷与公开市场策略，并报告管理资产约10亿美元。该机构表示，其50多位投资者、运营者、顾问、科学家与工程师提供实操型公司建设支持。",
+      "facts": [
+        {
+          "field": "reported_aum",
+          "label": "已报告管理资产规模",
+          "value": "About USD 1 billion, as stated on the firm website; no as-of date is given.",
+          "source_id": "anzu_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资重点",
+          "value": "Clean technology, industrial technology, and life-sciences technology.",
+          "source_id": "anzu_home"
+        },
+        {
+          "field": "investment_structures",
+          "label": "投资结构",
+          "value": "Venture, private credit, and public-market strategies.",
+          "source_id": "anzu_home"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "投资组合支持",
+          "value": "A team of 50+ experts supports business development, market positioning, global connectivity, operations, and commercialization.",
+          "source_id": "anzu_home"
+        },
+        {
+          "field": "leadership",
+          "label": "机构领导层",
+          "value": "Managing partners listed by the firm include David Michael, David Seldin, and Whitney Haring-Smith.",
+          "source_id": "anzu_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：EnCharge AI · 多轮融资 · 2022-12-14 · 本轮领投 · $21.7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cb0549fad590a0ab"
+          "description": "该机构的投资组合页面列出活跃、已退出与IPO公司；示例涵盖工业材料、清洁技术与生命科学。该列表不是基金回报报告。",
+          "source_id": "anzu_portfolio"
+        },
+        {
+          "description": "Anzu Partners领投了EnCharge AI于2022年12月宣布的2170万美元A轮融资。该金额是公司的轮次总额；该机构的单笔出资未披露。",
+          "source_id": "FISRC-81024928039bb6c1"
         },
         {
           "description": "融资来源记录：EnCharge AI · 多轮融资 · 2022-12-14 · 本轮领投 · $21.7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-81024928039bb6c1"
+          "source_id": "FISRC-cb0549fad590a0ab"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "主办公室电话",
+          "value": "+1 202-742-5870",
+          "source_id": "anzu_contact"
+        },
+        {
+          "kind": "address",
+          "label": "波士顿地区办公室",
+          "value": "44 Manning Road, Billerica, MA 01821, USA",
+          "source_id": "anzu_contact"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Anzu Partners",
+          "source_id": "anzu_home",
+          "url": "https://www.anzupartners.com/"
+        }
+      ],
       "sources": [
         {
-          "source_id": "FISRC-cb0549fad590a0ab",
-          "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
-          "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
-          "source_content_hash": "ccb1b70704426c90",
-          "quote": "EnCharge AI announced Wednesday, Dec. 14, that it has raised $21.7 million in Series A investment led by Anzu Partners.",
-          "quote_hash": "caf6c1a4c3ce1a3eabd108ed94e058715357d51fa7dd4e8b54cb60008d1ca534"
+          "source_id": "anzu_home",
+          "source_url": "https://www.anzupartners.com/",
+          "source_title": "Anzu Partners | Breakthrough Industrial and Life Sciences Technologies",
+          "source_content_hash": "42090be9a2f9c2e70046cae670d636c003a2b99b42e7e8f5eaab3024beaf5942",
+          "quote": "Investing in clean tech, industrial, and life science technologies",
+          "quote_hash": "3bef1c3cd00feff9bad0e0cfdd9aacb65f53761451accad4d09f58643db51c5e"
+        },
+        {
+          "source_id": "anzu_portfolio",
+          "source_url": "https://www.anzupartners.com/portfolio/",
+          "source_title": "Portfolio | Anzu Partners",
+          "source_content_hash": "15ab56bc9c79be891a66f1ecf6867b09d1d06938288bf5674cb70aea00fa4fa5",
+          "quote": "6K Additive produces high-performance metal powders for additive manufacturing.",
+          "quote_hash": "5fb0a415996e70ff796985962a9eb27d3675244cc89fcc71cfad1f63175d83db"
+        },
+        {
+          "source_id": "anzu_team",
+          "source_url": "https://www.anzupartners.com/team/",
+          "source_title": "Team | Anzu Partners",
+          "source_content_hash": "cd6fef06d678b80cc7d51d5aa665c823f9b406c72de48f5cde362e0ca475f94b",
+          "quote": "David Michael Managing Partner.",
+          "quote_hash": "b85d41cfb6eac1ea95ed4bf68d5b5fe6cf606d35fd9f65449d2467534a5db45c"
+        },
+        {
+          "source_id": "anzu_contact",
+          "source_url": "https://www.anzupartners.com/contact/",
+          "source_title": "Contact | Anzu Partners",
+          "source_content_hash": "04f6cda50028c762cb4238358d805dee1e536ae1108096d65e08003a81c45d90",
+          "quote": "Phone (202) 742-5870.",
+          "quote_hash": "8b451050e6b6dcdc2709508dbcbf2c6e026a5d53e6fa6f3168b83a50b6b8a397"
         },
         {
           "source_id": "FISRC-81024928039bb6c1",
@@ -187,9 +266,109 @@
           "source_content_hash": "c31b380d03b8e095",
           "quote": "today announced it has raised $21.7M in Series A financing, led by Anzu Partners",
           "quote_hash": "2d524ee3a08cfadc9a23c7203998eb343d66be61a1cf743f13de664aca66b16b"
+        },
+        {
+          "source_id": "FISRC-cb0549fad590a0ab",
+          "source_url": "https://www.techtimes.com/articles/284896/20221214/encharge-ai-raises-21-7m-produce-hardware-edge-computing.htm",
+          "source_title": "EnCharge AI Raises $21.7 Million to Produce AI Hardware for Edge Computing",
+          "source_content_hash": "ccb1b70704426c90",
+          "quote": "EnCharge AI announced Wednesday, Dec. 14, that it has raised $21.7 million in Series A investment led by Anzu Partners.",
+          "quote_hash": "caf6c1a4c3ce1a3eabd108ed94e058715357d51fa7dd4e8b54cb60008d1ca534"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Anzu Partners是一家投资机构，专注于突破性清洁技术、工业与生命科学技术。其运营风险投资、私人信贷与公开市场策略，并报告管理资产约10亿美元。该机构表示，其50多位投资者、运营者、顾问、科学家与工程师提供实操型公司建设支持。",
+          "source_hash": "7b25f499644770146db11b0d5c84b2c9e4f822d517368a71a3222f51457762b4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "已报告管理资产规模",
+          "source_hash": "fcf38bc4da9be81e9b4196ecd5991dde47e0ddf69badb9057b7adf23fafa5e62",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "投资结构",
+          "source_hash": "5cf5dfb1422a85a42a46cf8740ade50359bbad290f55e93968d3d71a7149cb83",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "投资组合支持",
+          "source_hash": "32330cd071a297abc0d17d3302c5e35dc44304fdf8876d3255a79537d1604fee",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "机构领导层",
+          "source_hash": "491e9911c2fe31d31a74033dfd1ce5842f6453fb2b5a61ea4a8de01871f4ecb1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "该机构的投资组合页面列出活跃、已退出与IPO公司；示例涵盖工业材料、清洁技术与生命科学。该列表不是基金回报报告。",
+          "source_hash": "298fa293650ea02633de3e70522d4457641a81755b6343d5a70619f4f5fbe6a4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Anzu Partners领投了EnCharge AI于2022年12月宣布的2170万美元A轮融资。该金额是公司的轮次总额；该机构的单笔出资未披露。",
+          "source_hash": "437e5e20a3b2b58ee35b4a48187e7f4dbfe57d0ea4949ca4738af0399a565487",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "主办公室电话",
+          "source_hash": "e54a04629e2812fc04e7a9e745ef3ca339ec6a9cfdadd035ad9362cb764a6729",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "波士顿地区办公室",
+          "source_hash": "2ca1cd8dee82569fabb76319a1f70b826d62977a11fc353ba379239f0b790f8c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

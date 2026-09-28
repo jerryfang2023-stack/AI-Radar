@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,15 +138,21 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "水木基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "中科类脑B+轮融资报道将“水木基金”列为跟投方，并引述水木基金投资人称其长期关注新一代信息技术和人工智能、寻找底层创新型硬科技企业。公开报道没有给出基金管理人、法律载体、团队或专属联系方式。本档案仅针对“水木基金”这一公开投资方标签，不将其与清华资本或水木清华校友种子基金自动合并。",
+      "coverage_note": "目前可核验资料只支持融资披露中的“水木基金”名称、该轮参投身份和媒体引述的投资方向；尚无一手机构资料确认管理公司、具体基金载体、人员或联系方式。与清华资本的潜在名称关联尚无交易级证据，故分开记录。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "融资报道引述的投资人策略",
+          "value": "长期聚焦新一代信息技术与人工智能，专注发掘具备底层创新能力的硬科技企业。",
+          "source_id": "waterwood_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：中科类脑 · B+轮 · 2026-09-07 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "中科类脑B+轮融资披露将“水木基金”列为跟投机构；来源未披露其单笔出资额。",
           "source_id": "FISRC-1ccc6923f9f7ac18"
         }
       ],
@@ -159,9 +165,18 @@
           "source_content_hash": "1553ea551029de53",
           "quote": "本轮融资由 央企产业龙头旗下中车资本 领投， 银杏谷资本、水木基金、启迪基金 等机构跟投。",
           "quote_hash": "6170f8c034beb908a5ee3c538a1a8c56cce2b0b5488e2ee791c6b010078b0354"
+        },
+        {
+          "source_id": "waterwood_strategy",
+          "source_url": "https://field.10jqka.com.cn/20260907/c679649059.shtml",
+          "source_title": "AI基础设施融资升温 中科类脑完成数亿元B+轮战略融资",
+          "source_content_hash": "2aeb485397be550923af7833c068af458b02665372de41fdd5dbe6e8c7ce0aa1",
+          "quote": "水木基金投资人表示，水木基金长期聚焦新一代信息技术与人工智能赛道，专注挖掘具备底层创新能力的硬核科技企业。",
+          "quote_hash": "b64f662b8383df7431925fc6eb40b3d4fb87d95562d6d4d7ce2ce66fff256bb3"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

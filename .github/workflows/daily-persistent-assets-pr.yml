@@ -25,6 +25,7 @@ permissions:
 jobs:
   china-funding:
     name: Independent China funding lane
+    if: ${{ inputs.resume_run_id == '' }}
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

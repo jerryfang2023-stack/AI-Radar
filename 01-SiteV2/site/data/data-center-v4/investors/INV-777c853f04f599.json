@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,228 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "UVC Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "UVC Partners reports more than €700 million in assets under management and €400 million in newly raised capital for founders in 2026; the €400 million figure is not firm-wide AUM. Its stated €150 million growth allocation and portfolio-level investment limits are fund strategy terms, not commitments to a particular company. UVC’s Atira announcement describes a $17.5 million total company round led by Accel and says UVC increased its prior investment; UVC’s individual contribution was not disclosed. The portfolio and performance examples are selected disclosures, not a complete audited record.",
+      "summary": "UVC Partners是一家总部位于慕尼黑和柏林的欧洲风险投资公司，投资B2B技术，覆盖从早期到成长期。该公司成立于2011年，专注于DeepTech、ClimateTech、Mobility和Software/AI，并与UnternehmerTUM生态系统密切合作。2026年，该公司报告管理资产超过7亿欧元，并为科技创始人新筹集了4亿欧元资金。",
+      "facts": [
         {
-          "description": "融资来源记录：Atira · 种子轮 · 2026-09-03 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dfab45611a59a6cf"
+          "field": "founded_year",
+          "label": "成立时间",
+          "value": "Founded in 2011; the firm says its partners collectively have more than 100 years of investing, exit and company-building experience.",
+          "source_id": "uvc_experience_2026"
+        },
+        {
+          "field": "headquarters",
+          "label": "地点",
+          "value": "Munich and Berlin, Germany; the headquarters is in Garching near Munich.",
+          "source_id": "uvc_contact_2026"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产（公司报告，2026年）",
+          "value": "More than €700 million, according to the firm’s March 2026 announcement.",
+          "source_id": "uvc_fund_profile_2026"
+        },
+        {
+          "field": "new_capital_2026",
+          "label": "新筹集资金（2026年）",
+          "value": "The firm reported €400 million in newly raised capital for founders, including an additional €150 million earmarked for growth-stage investments. This is not the same as assets under management.",
+          "source_id": "uvc_fund_growth_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "阶段与投资规模",
+          "value": "B2B technology investments from early stage through Series B and beyond. Initial tickets can reach €10 million; each fund can allocate up to €30 million to one portfolio company.",
+          "source_id": "uvc_fund_followon_2026"
+        },
+        {
+          "field": "follow_on_reserve",
+          "label": "后续投资策略",
+          "value": "The firm states that more than 50% of its funds are reserved for follow-on financing.",
+          "source_id": "uvc_fund_followon_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "行业重点",
+          "value": "DeepTech, ClimateTech, Mobility, Software and AI.",
+          "source_id": "uvc_fund_profile_2026"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "部分投资组合公司",
+          "value": "The firm lists Flix, Isar Aerospace, planqc, Proxima Fusion, Reverion, Tacto, FINN and DeepDrive among portfolio examples.",
+          "source_id": "uvc_portfolio_2026"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "UVC Partners 成立。",
+          "source_id": "uvc_experience_2026"
+        },
+        {
+          "date": "2024",
+          "description": "根据该公司 2026 年基金更新，UVC Fund IV 完成最终关闭。",
+          "source_id": "uvc_fund_growth_2026"
+        },
+        {
+          "date": "2026-03-12",
+          "description": "该公司宣布额外 1.5 亿欧元的成长型配置，使其新募集用于创始人的资金达到 4 亿欧元。",
+          "source_id": "uvc_fund_growth_2026"
+        },
+        {
+          "date": "2026-09-03",
+          "description": "UVC Partners 宣布参与 Atira 的 1750 万美元融资轮，并表示其相较此前的 pre-seed 轮增加了投资。",
+          "source_id": "uvc_atira_round_2026"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Atira（2026 年 9 月）：UVC Partners 被列为该公司 1750 万美元融资轮的参与方，该轮由 Accel 领投。披露金额为公司全轮总额，而非 UVC 的单笔投资。",
+          "source_id": "FISRC-dfab45611a59a6cf"
+        },
+        {
+          "description": "Atira（2026 年 9 月）：UVC 表示其首次投资于该公司 250 万美元的 pre-seed 轮，并在随后的 seed 轮中增加了承诺；未披露单笔投资规模。",
+          "source_id": "uvc_atira_2026"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "uvcpartners.com",
+          "url": "https://www.uvcpartners.com/",
+          "source_id": "uvc_fund_profile_2026"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询与 pitch 联系方式",
+          "value": "pitch@uvcpartners.com",
+          "source_id": "uvc_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "总部",
+          "value": "Lichtenbergstr. 6, 85748 Garching, Germany",
+          "source_id": "uvc_hq_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "慕尼黑办公室",
+          "value": "Munich Urban Colab, Freddie-Mercury-Str. 5, 80797 Munich, Germany",
+          "source_id": "uvc_munich_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "柏林办公室",
+          "value": "Friedrichstr. 68, 10117 Berlin, Germany",
+          "source_id": "uvc_berlin_contact_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "主要电话（法律披露）",
+          "value": "+49 89 18 94 69-0",
+          "source_id": "uvc_privacy_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "uvc_fund_profile_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "With more than €700 million in assets under management, the VC initially invests ticket sizes of up to €10 million across DeepTech, ClimateTech, Mobility, and Software/AI.",
+          "quote_hash": "0c4f695585f5c788af269e09b452f6360805be0acb871442249baf1cfe7a4479"
+        },
+        {
+          "source_id": "uvc_fund_growth_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "Today, the DeepTech B2B investor announces an additional €150 million earmarked for growth-stage investments. This will bring the total amount of newly raised capital for technology founders to €400 million.",
+          "quote_hash": "1affc23999bb2f2eae6cb38c637012a1b4280f003ee53e78b9ac89fb18fa8271"
+        },
+        {
+          "source_id": "uvc_fund_followon_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "Each fund can allocate in aggregate up to €30 million in a single portfolio company. Overall, more than 50 percent of the funds are reserved for follow-on financing rounds.",
+          "quote_hash": "44d673b7b4a4d333f48976d7aa34676ba2625037d6c4b3f7dfacadd4ad092099"
+        },
+        {
+          "source_id": "uvc_experience_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "Founded in 2011, the firm’s partners collectively bring more than 100 years of experience in investing, exits, and company building, along with deep sector expertise.",
+          "quote_hash": "fc13bb098ecec80c03abb9c81b8656c0ac1b3bbebcc2a421cb249189842cea40"
+        },
+        {
+          "source_id": "uvc_portfolio_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-expands-new-fund-to-eu400-million-adding-growth-capital",
+          "source_title": "UVC Partners expands new fund to €400 million, adding growth capital",
+          "source_content_hash": "903fc3eadefdf0b9ac557e9c63cf8b4a09adf6baa223b752b2eb808b940ed3e9",
+          "quote": "UVC Partners' investment portfolio includes Flix, Isar Aerospace, planqc, Proxima Fusion, Reverion, Tacto, FINN, DeepDrive, and many more.",
+          "quote_hash": "e9683809bd012f999a0d0e37e1564fa52cdf427e9fc9e84d968a7f8d444dd6bf"
+        },
+        {
+          "source_id": "uvc_atira_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-invests-in-atira",
+          "source_title": "UVC Partners backs Atira's $17.5 million round - a commercial operating system for complex B2B manufacturing",
+          "source_content_hash": "2b6f0468c7fdf238c46a1b0a7a2ce2b80b1f9d08871443061eff9648246571c5",
+          "quote": "UVC Partners first backed Atira in its $2.5M Pre-Seed round and has since significantly increased that commitment through its recent Seed round.",
+          "quote_hash": "de5c467f546b2c488ff54aa9f1c36d7ac59f57e6b5242a7541b2bde86ac94a12"
+        },
+        {
+          "source_id": "uvc_atira_round_2026",
+          "source_url": "https://www.uvcpartners.com/blog/uvc-partners-invests-in-atira",
+          "source_title": "UVC Partners backs Atira's $17.5 million round - a commercial operating system for complex B2B manufacturing",
+          "source_content_hash": "2b6f0468c7fdf238c46a1b0a7a2ce2b80b1f9d08871443061eff9648246571c5",
+          "quote": "Atira, a Munich-based AI company building the orchestration layer for industrial sales engineering, has raised $17.5 million led by Accel.",
+          "quote_hash": "80e20dcf1b79718ea81008bcb15d80ea9194109d1a3445dc2494eaead3001f18"
+        },
+        {
+          "source_id": "uvc_contact_2026",
+          "source_url": "https://www.uvcpartners.com/contact",
+          "source_title": "Contact | UVC Partners",
+          "source_content_hash": "dc8f1dd6281d06cdb48fc7c60e03bfbe3689206e6cdf24eee07a132128b005c8",
+          "quote": "General Inquiries (pitch@uvcpartners.com)",
+          "quote_hash": "836d4062873e5e47dc15876d7c0eda30cffa9e1c81869a147c03f41ba0ccb2ef"
+        },
+        {
+          "source_id": "uvc_hq_contact_2026",
+          "source_url": "https://www.uvcpartners.com/contact",
+          "source_title": "Contact | UVC Partners",
+          "source_content_hash": "dc8f1dd6281d06cdb48fc7c60e03bfbe3689206e6cdf24eee07a132128b005c8",
+          "quote": "Lichtenbergstr. 6 85748 Garching",
+          "quote_hash": "f46f94a9aaeb1dc86ee17f5be6665835248eb178b935fdf66107e5df736f4ef8"
+        },
+        {
+          "source_id": "uvc_munich_contact_2026",
+          "source_url": "https://www.uvcpartners.com/contact",
+          "source_title": "Contact | UVC Partners",
+          "source_content_hash": "dc8f1dd6281d06cdb48fc7c60e03bfbe3689206e6cdf24eee07a132128b005c8",
+          "quote": "Munich Urban Colab Freddie-Mercury-Str. 5 80797 Munich",
+          "quote_hash": "636af90ee1540382bfaecf0f83fd0c0c34074146c96c918d7feab293ec295c89"
+        },
+        {
+          "source_id": "uvc_berlin_contact_2026",
+          "source_url": "https://www.uvcpartners.com/contact",
+          "source_title": "Contact | UVC Partners",
+          "source_content_hash": "dc8f1dd6281d06cdb48fc7c60e03bfbe3689206e6cdf24eee07a132128b005c8",
+          "quote": "Friedrichstr. 68 10117 Berlin",
+          "quote_hash": "a18724b6d0a94cdd295021622b724835df3732afb1790302da992b9b55037af0"
+        },
+        {
+          "source_id": "uvc_privacy_contact_2026",
+          "source_url": "https://www.uvcpartners.com/privacy-policy",
+          "source_title": "Privacy Policy | UVC",
+          "source_content_hash": "69e174524859a725c5b986b1b9f469ededa865861a514b3ce8a07bcc20f5a5e5",
+          "quote": "Telephone: 0049-89-18 94 69-0",
+          "quote_hash": "02a33911bb435616c954d05c12dbaf16bc6f70fee43097d72ed8ca4a2a2b15a4"
+        },
         {
           "source_id": "FISRC-dfab45611a59a6cf",
           "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
@@ -160,8 +369,179 @@
           "quote": "UVC Partners, Fortino, and BOOOM also invested, alongside individual investors that included, among others, Whirlpool chairman and CEO Marc Bitzer and Bastian Nominacher, co-founder and co-CEO of process-mining company Celonis.",
           "quote_hash": "a7350adc3548469bf9854d18554f075c91786719e60015be6c0830e47f511e8d"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "UVC Partners是一家总部位于慕尼黑和柏林的欧洲风险投资公司，投资B2B技术，覆盖从早期到成长期。该公司成立于2011年，专注于DeepTech、ClimateTech、Mobility和Software/AI，并与UnternehmerTUM生态系统密切合作。2026年，该公司报告管理资产超过7亿欧元，并为科技创始人新筹集了4亿欧元资金。",
+          "source_hash": "1c1fbbc26bba8d45fcf27201491a195583e8ba5004039f19277a99d7964b301c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "成立时间",
+          "source_hash": "6520e44889730d13e3e687ab0e403d653584169102ad8ebb3221d6ce368495ef",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "地点",
+          "source_hash": "95c61170318a2851165109a8116a27a9ec36ef96bcfb0a8c211de5d568435655",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "管理资产（公司报告，2026年）",
+          "source_hash": "9c27ddd269a49a5f74f972da1cfacab287689ad460fd0f7b6f6dd76bc66be538",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "新筹集资金（2026年）",
+          "source_hash": "6ea9bee613ab8a49e3df5dd287a9cb58e4c93b36ede42b109c38984c20145ca5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "阶段与投资规模",
+          "source_hash": "23a2236bdf8c9499ac3ceaa22941a97c1a9cc33cf0947dc459cf1d3b4b6189c2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.facts[5].label": {
+          "text": "后续投资策略",
+          "source_hash": "d7d11646aaf20e50e9c7779f996ca28cd36d7e252e897ccf085bfc1c9b9d0e19",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "行业重点",
+          "source_hash": "9ccf53a4910934b6a6a514b4ef0c2f117a521ce9c102f3101bfeec2e831455af",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.facts[7].label": {
+          "text": "部分投资组合公司",
+          "source_hash": "3e869cd9765748a237c8612c12609e8460ce23db2b9a7962ec2dbd6e7faa0db6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "UVC Partners 成立。",
+          "source_hash": "448d75ed5dc31b10a36d989bcc3904a749f1ea88be4de81d033ecd2bdbbba2b1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "根据该公司 2026 年基金更新，UVC Fund IV 完成最终关闭。",
+          "source_hash": "e737e63f3cb5e45c65de8902d6fdcc81be389e6957d2e866bf54c3ac1bb1537f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[2].description": {
+          "text": "该公司宣布额外 1.5 亿欧元的成长型配置，使其新募集用于创始人的资金达到 4 亿欧元。",
+          "source_hash": "d6ca12692a479a96a5a0d96cae9f3f1d6f9ccb131f36f4c30414c51c254a847f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[3].description": {
+          "text": "UVC Partners 宣布参与 Atira 的 1750 万美元融资轮，并表示其相较此前的 pre-seed 轮增加了投资。",
+          "source_hash": "a68145352817481fe7c11985476d9fdde7f08bed46fab3f405cc8b0bd65c54de",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Atira（2026 年 9 月）：UVC Partners 被列为该公司 1750 万美元融资轮的参与方，该轮由 Accel 领投。披露金额为公司全轮总额，而非 UVC 的单笔投资。",
+          "source_hash": "faf7ea457189f3f38b948518a179b03afdf06863024c02418520197133c75943",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Atira（2026 年 9 月）：UVC 表示其首次投资于该公司 250 万美元的 pre-seed 轮，并在随后的 seed 轮中增加了承诺；未披露单笔投资规模。",
+          "source_hash": "3a17499dcd466ae2dbdad39cb5597c57a71f105362817b0feae396b527cce96b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "一般咨询与 pitch 联系方式",
+          "source_hash": "9a8c5bcac6dcb9b49143d1f807ac0a85fd960a07336916e613145645a0348d6f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "总部",
+          "source_hash": "ade0f7975671c1a0abbf26d10877c31be7de6fb92026510b761a0833593a28f6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[3].label": {
+          "text": "慕尼黑办公室",
+          "source_hash": "c216a593ef7f302f1198b31ac69025e5d086274f518bc4fc28525fd9a9d21c7c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[4].label": {
+          "text": "柏林办公室",
+          "source_hash": "996ddffa29405e378bad9c775e0d3ac1e542b999253cf49f1e2b114b977167b3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[5].label": {
+          "text": "主要电话（法律披露）",
+          "source_hash": "d896b21a9aee01f39f2de42d18c2d7424c5776dfa7043f661c6ab8cfbf0693b4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

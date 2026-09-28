@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,19 +131,80 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Betaworks Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2023-08-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Check sizes and investment themes are stated by Betaworks. Its 2025 Fund 3.0 announcement reports the fund’s size, not capital invested in an individual company. Hugging Face’s later USD 235 million Series D total is not Betaworks’ investment amount; the source describes Betaworks as the company’s first check.",
+      "summary": "Betaworks 结合了创业工作室、主题投资和 Camp 项目。其当前风险投资活动专注于 AI、游戏和去中心化领域的 pre-seed 和 seed 公司，典型支票金额为 250,000–750,000 美元。该公司使用 Camp 作为面向新兴技术类别的基于队列的投资和产品开发项目。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed and seed.",
+          "source_id": "betaworks_companies"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "典型支票金额",
+          "value": "USD 250,000–750,000, according to the firm.",
+          "source_id": "betaworks_companies"
+        },
+        {
+          "field": "current_themes",
+          "label": "当前投资主题",
+          "value": "AI, gaming, and decentralization, including developer tools and open-source software.",
+          "source_id": "betaworks_companies"
+        },
+        {
+          "field": "camp_program",
+          "label": "Camp 项目",
+          "value": "A cohort-based investment and product-development program for building new technology categories.",
+          "source_id": "betaworks_companies"
+        },
+        {
+          "field": "fund_3",
+          "label": "Fund 3.0",
+          "value": "The firm announced a USD 66 million pre-seed and seed fund in July 2025.",
+          "source_id": "betaworks_fund3"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-07-22",
+          "description": "Betaworks宣布其6600万美元的3.0期基金完成募集，用于种子前和种子期投资。",
+          "source_id": "betaworks_fund3"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Hugging Face · D轮 · 2023-08-24 · 种子轮领投 · $235 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Betaworks表示，Hugging Face收到了来自Betaworks Ventures的首张支票。随后的2.35亿美元D轮融资由Hugging Face筹集，并非Betaworks的投资金额。",
           "source_id": "FISRC-3765d5d1c13d4da7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Betaworks",
+          "source_id": "betaworks_companies",
+          "url": "https://www.betaworks.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "betaworks_companies",
+          "source_url": "https://www.betaworks.com/companies",
+          "source_title": "Companies | Betaworks",
+          "source_content_hash": "e5d56ba9a45505952ebc959aaaae04869bb20b0e47743bdfb9749554a3413d1e",
+          "quote": "We invest at pre-seed and seed stage and our typical check size ranges from $250,000 to $750,000.",
+          "quote_hash": "f16f28b05218d6d9b18178e19f6424b5e6598b037820bd56ddcf38fe0f067a03"
+        },
+        {
+          "source_id": "betaworks_fund3",
+          "source_url": "https://www.betaworks.com/writing/announcing-betaworks-fund-3-0",
+          "source_title": "Announcing Betaworks Fund 3.0",
+          "source_content_hash": "75c4cee170ebff41ca365c43e4df7bfb4f2e9375b36c4cdb2ea0846054b5e470",
+          "quote": "Today, we’re thrilled to announce that we’ve closed $66 million for Betaworks Fund 3.0 — a pre-seed/seed stage venture fund.",
+          "quote_hash": "6e2c7b94163d8ac88e40031548a8535291fa8d9ba3d8fb0eed8e695f20ad817b"
+        },
         {
           "source_id": "FISRC-3765d5d1c13d4da7",
           "source_url": "https://techcrunch.com/2023/08/24/hugging-face-raises-235m-from-investors-including-salesforce-and-nvidia/",
@@ -153,7 +214,75 @@
           "quote_hash": "ccd7c25814dea7367afa9a462998fdc3d29e555f64a75f5ab7e72dafe194eb74"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Betaworks 结合了创业工作室、主题投资和 Camp 项目。其当前风险投资活动专注于 AI、游戏和去中心化领域的 pre-seed 和 seed 公司，典型支票金额为 250,000–750,000 美元。该公司使用 Camp 作为面向新兴技术类别的基于队列的投资和产品开发项目。",
+          "source_hash": "31405c548bfccee63ff056e5308e161e39ef30df3ed8039c42a0452e6ab79e8f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "典型支票金额",
+          "source_hash": "1a3023f4b3f1e774552dac2b5848bf07c5b537948da790791265b2900d663941",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "当前投资主题",
+          "source_hash": "3cd915637126663d543d779a3c1a120e7ba9c550cc630bf653ea0d360ae73000",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "Camp 项目",
+          "source_hash": "598c3876a5e2b6202430fbfcc3e092247bfd3f1bfb9954fef21ce6c29375be85",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Betaworks宣布其6600万美元的3.0期基金完成募集，用于种子前和种子期投资。",
+          "source_hash": "f8f5d70811d1f18454d5a4f2ded50f415b359af8290436cd59769a18dfe43dad",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:06.929Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Betaworks表示，Hugging Face收到了来自Betaworks Ventures的首张支票。随后的2.35亿美元D轮融资由Hugging Face筹集，并非Betaworks的投资金额。",
+          "source_hash": "bbee55b974ef0413dd83107705324a196541b4d19c17ebec33377de571302e86",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:06.929Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

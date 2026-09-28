@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,20 +138,110 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Surveyor Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Surveyor Capital 是 Citadel 旗下的基本面股票投资策略，并非公开定位为传统风险投资基金。Citadel 官网称该策略于 2008 年设立，覆盖多行业，以基本面研究、市场中性风险框架和多空股票及股权资本市场策略开展投资；截至 2026 年 7 月官网列有 110 多位投资专业人士。Enveda 官方公告将 Surveyor Capital 列为新投资者，但没有披露投资载体或单笔金额。",
+      "coverage_note": "策略、成立年份、团队负责人及规模来自 Citadel 官网；人员数量标注为官网截至 2026 年 7 月口径。Enveda 参投身份来自被投公司公告，不能据此推断其投资结构、持股或单笔出资额。",
+      "facts": [
+        {
+          "field": "organization_identity",
+          "label": "机构定位",
+          "value": "Citadel 旗下基本面股票投资策略；Enveda 公告也将其标注为 Citadel 公司。",
+          "source_id": "surveyor_official"
+        },
+        {
+          "field": "strategy",
+          "label": "官网列示策略",
+          "value": [
+            "基本面多空股票",
+            "股权资本市场"
+          ],
+          "source_id": "surveyor_strategy"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示覆盖行业",
+          "value": [
+            "消费",
+            "金融",
+            "医疗健康",
+            "工业",
+            "能源",
+            "科技、媒体与电信"
+          ],
+          "source_id": "surveyor_strategy"
+        },
+        {
+          "field": "team_scale",
+          "label": "官网披露的团队规模",
+          "value": "110 多位投资专业人士；截至 2026 年 7 月。",
+          "source_id": "surveyor_official"
+        },
+        {
+          "field": "leadership",
+          "label": "官网列示负责人",
+          "value": "Phillip Lee，Surveyor Capital 负责人。",
+          "source_id": "surveyor_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2008",
+          "description": "Citadel 官网记载 Surveyor Capital 于 2008 年设立。",
+          "source_id": "surveyor_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026 年 9 月 23 日，Enveda 官方公告将 Surveyor Capital（Citadel 旗下）列为 3.11 亿美元 E 轮新投资者；该轮公告未披露其投资载体或单家出资金额。",
+          "source_id": "surveyor_series_e"
+        },
+        {
+          "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（new investor）。原报道未披露其单笔出资金额。",
           "source_id": "FISRC-852df50f4128c47b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Citadel 官网 Surveyor Capital 页面（未列独立投资申请渠道）",
+          "value": "Surveyor Capital at Citadel",
+          "url": "https://www.citadel.com/what-we-do/equities/surveyor-capital/",
+          "source_id": "surveyor_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "surveyor_official",
+          "source_url": "https://www.citadel.com/what-we-do/equities/surveyor-capital/",
+          "source_title": "Citadel 官网：Surveyor Capital 策略介绍",
+          "source_content_hash": "37c6d7ae537b3ce76d045f0848802323ddbf7131104e98e037e0620f066bcb94",
+          "quote": "Surveyor Capital is a longstanding fundamental equities strategy at Citadel, established in 2008.",
+          "quote_hash": "cc06a5104452e315e3ad1ee57ed27316eab13fef0c3b0cbb854baf66a65e2246"
+        },
+        {
+          "source_id": "surveyor_strategy",
+          "source_url": "https://www.citadel.com/what-we-do/equities/surveyor-capital/",
+          "source_title": "Citadel 官网：Surveyor Capital 策略与行业范围",
+          "source_content_hash": "998c2148e4c08a4cc10bafe546822aca19f46453b24cd578e889ae5f256aed1c",
+          "quote": "Fundamental long/short; Equity capital markets; Consumer; Financials; Healthcare; Industrials; Energy; Technology, Media & Telecom.",
+          "quote_hash": "d4c15c79198e61f5362f33f6d039355d7e72ede314b7e8b857247753f16a58bc"
+        },
+        {
+          "source_id": "surveyor_team",
+          "source_url": "https://www.citadel.com/what-we-do/equities/surveyor-capital/",
+          "source_title": "Citadel 官网：Surveyor Capital 团队负责人",
+          "source_content_hash": "80e85f2d28b22b153b445c418549f009dbdfb6fa7f3cacb1ccf6fed6c46288d3",
+          "quote": "Phillip Lee | Head of Surveyor Capital",
+          "quote_hash": "d566e18f4dcf4c026bc15ef238fdb00c7dff226ef959c4cc03c3eee60aced72c"
+        },
+        {
+          "source_id": "surveyor_series_e",
+          "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+          "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+          "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+          "quote": "Surveyor Capital (a Citadel company)",
+          "quote_hash": "4cc4ef8b1040115e47a8e630de4cf160203995707ae00c98d91c0e39d76b0c65"
+        },
         {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -161,7 +251,28 @@
           "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Citadel 官网记载 Surveyor Capital 于 2008 年设立。",
+          "source_hash": "c022c229bce9e614f12b7ce62bd743da17aa93531b4377b61ed6ec3821a81c9b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:47.831Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Citadel 官网 Surveyor Capital 页面（未列独立投资申请渠道）",
+          "source_hash": "edb427865f4e28f5912c84664137c34b1455901780efa05af994cc65a024203d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:47.831Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

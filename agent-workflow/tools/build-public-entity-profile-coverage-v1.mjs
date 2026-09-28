@@ -10,6 +10,7 @@ const entityData = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/da
 const curated = JSON.parse(fs.readFileSync(path.join(database, "public-entity-profiles-v1.json"), "utf8"));
 const investorById = new Map((investorData.institutions || []).map((item) => [item.id, item]));
 const organizationKinds = new Set(["investment_institution", "corporate_investor", "government_fund"]);
+const genericInvestorLabels = new Set(["angel investor", "angel investors", "天使投资人", "匿名天使投资人", "未具名天使投资人", "个人投资者"]);
 const asOf = process.env.PUBLIC_PROFILE_AS_OF || "2026-09-25";
 const hashPattern = /^(?:[a-f0-9]{16}|[a-f0-9]{64})$/u;
 
@@ -73,23 +74,26 @@ for (const investor of investorData.institutions || []) {
     backlog.unresolved_investors.push({ id: investor.id, name: investor.name, reason: "no_source_linked_financing_evidence" });
     continue;
   }
-  const kind = investor.investor_kind === "individual" ? "person" : organizationKinds.has(investor.investor_kind) ? "organization" : "unverified";
+  const genericLabel = genericInvestorLabels.has(String(investor.name || "").trim().toLocaleLowerCase());
+  const kind = genericLabel ? "unverified" : investor.investor_kind === "individual" ? "person" : organizationKinds.has(investor.investor_kind) ? "organization" : "unverified";
   const coverageStatus = kind === "unverified" ? "identity_unverified" : "activity_only";
   const sources = activityEvidence.map((item) => item.source);
   const latest = investor.latest_disclosed_at || investor.first_disclosed_at || asOf;
   const details = activityEvidence.map(({ activity, source }) => trackedActivity(activity, source.source_id));
-  const kindLabel = kind === "person" ? "个人投资者" : kind === "unverified" ? "主体类型待核验的投资者名称" : "投资组织";
+  const kindLabel = genericLabel ? "无法确认身份的匿名/泛称投资者" : kind === "person" ? "个人投资者" : kind === "unverified" ? "主体类型待核验的投资者名称" : "投资组织";
   coverage.institutions[investor.id] = {
     profile_type: kind,
     identity_status: kind === "unverified" ? "pending_verification" : "verified",
     coverage_status: coverageStatus,
     coverage_note: kind === "unverified"
-      ? "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。"
+      ? genericLabel
+        ? "该记录是融资披露中的匿名或泛称投资方标签，不足以识别单一个人或机构；不同融资中的相同泛称不合并为同一投资组合。"
+        : "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。"
       : "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
     summary: `${investor.name} 当前按“${kindLabel}”收录。最新融资披露记录日期为 ${latest}；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。`,
     facts: [],
     milestones: [],
-    track_record: details,
+    track_record: genericLabel ? [] : details,
     contacts: [],
     sources,
     last_verified_at: asOf
@@ -158,10 +162,27 @@ for (const person of entityData.people || []) {
 }
 
 for (const [id, profile] of Object.entries(curated.institutions || {})) {
-  const investorKind = investorById.get(id)?.investor_kind;
+  const investor = investorById.get(id);
+  const investorKind = investor?.investor_kind;
   const profileType = profile.profile_type || (investorKind === "individual" ? "person" : organizationKinds.has(investorKind) ? "organization" : "unverified");
+  const activityEvidence = investor ? evidenceFor(investor) : [];
+  const sourceById = new Map((profile.sources || []).map((source) => [source.source_id, source]));
+  for (const { source } of activityEvidence) if (!sourceById.has(source.source_id)) sourceById.set(source.source_id, source);
+  const trackRecord = [...(profile.track_record || [])];
+  const trackRecordDescriptions = new Set(trackRecord.map((item) => item.description));
+  const trackRecordSourceIds = new Set(trackRecord.map((item) => item.source_id));
+  for (const { activity, source } of activityEvidence) {
+    const item = trackedActivity(activity, source.source_id);
+    if (!trackRecordDescriptions.has(item.description) && !trackRecordSourceIds.has(item.source_id)) {
+      trackRecord.push(item);
+      trackRecordDescriptions.add(item.description);
+      trackRecordSourceIds.add(item.source_id);
+    }
+  }
   coverage.institutions[id] = {
     ...profile,
+    sources: [...sourceById.values()],
+    track_record: trackRecord,
     profile_type: profileType,
     identity_status: profileType === "unverified" ? "pending_verification" : "verified",
     coverage_status: profile.coverage_status || "researched",
@@ -176,7 +197,9 @@ for (const [id, profile] of Object.entries(curated.people || {})) {
   };
 }
 const pendingInvestors = (investorData.institutions || [])
-  .filter((investor) => (investor.investor_kind === "individual" || organizationKinds.has(investor.investor_kind)) && coverage.institutions[investor.id]?.coverage_status !== "researched")
+  .filter((investor) => (investor.investor_kind === "individual" || organizationKinds.has(investor.investor_kind))
+    && coverage.institutions[investor.id]?.identity_status !== "pending_verification"
+    && coverage.institutions[investor.id]?.coverage_status !== "researched")
   .map((investor) => ({
     id: investor.id,
     name: investor.name,

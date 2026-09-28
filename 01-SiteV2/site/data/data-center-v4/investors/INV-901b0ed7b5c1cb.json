@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 6,
     "first_disclosed_at": "2026-01-12",
     "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 6,
       "participant": 4
     },
@@ -108,6 +108,11 @@
         "entity_id": "EN-8dc72a4672894e0f",
         "canonical_entity_id": "EN-8dc72a4672894e0f",
         "name": "自变量机器人"
+      },
+      {
+        "entity_id": "EN-04bd675006a7a1ed",
+        "canonical_entity_id": "",
+        "name": "FoloToy"
       }
     ],
     "activities": [
@@ -513,6 +518,46 @@
         ]
       },
       {
+        "activity_id": "IA-d5801fa7536ed695",
+        "funding_insight_id": "FI-60f3b8be148ee817",
+        "event_ids": [
+          "EV-09b8a8e4ed03dd7f"
+        ],
+        "company_entity_id": "EN-04bd675006a7a1ed",
+        "company_canonical_entity_id": "",
+        "company_name": "FoloToy",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Pre-A轮/Pre-A+轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-01-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d7c96804962827cf",
+            "source_url": "https://www.36kr.com/p/3654915542130816",
+            "source_title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
+            "source_content_hash": "f1ce876ef35c247587d664660c57d06e4a87fe526a44ba7dd66e7b39945922bb",
+            "quote": "投资方：深创投、南山战新投、老股东火火兔",
+            "quote_hash": "6f02a45cb65932eccb5cb91b23bf234a00d2b7a396c799776ff16dcfebac7751"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-8df215ff3f25247c",
         "funding_insight_id": "FI-e9bdd4e9374b04ca",
         "event_ids": [
@@ -637,6 +682,14 @@
         "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
       },
       {
+        "source_id": "FISRC-d7c96804962827cf",
+        "source_url": "https://www.36kr.com/p/3654915542130816",
+        "source_title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
+        "source_content_hash": "f1ce876ef35c247587d664660c57d06e4a87fe526a44ba7dd66e7b39945922bb",
+        "quote": "投资方：深创投、南山战新投、老股东火火兔",
+        "quote_hash": "6f02a45cb65932eccb5cb91b23bf234a00d2b7a396c799776ff16dcfebac7751"
+      },
+      {
         "source_id": "FISRC-449b969616ed1e95",
         "source_url": "https://www.36kr.com/p/3636080421586182",
         "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
@@ -656,7 +709,20 @@
         }
       ],
       "milestones": [],
-      "track_record": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 老股东持续多轮追投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d0c3dca85d845330"
+        },
+        {
+          "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · B轮跟投 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-09c3ca37737a71ce"
+        },
+        {
+          "description": "融资来源记录：深度智控 · B轮 · 2026-07-09 · A+轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-67ccadc4294defd6"
+        }
+      ],
       "contacts": [
         {
           "kind": "website",
@@ -688,6 +754,30 @@
           "source_content_hash": "695d6219518646fcf1ecb3d37ef26e65306678eb465432a87d464ff55efab128",
           "quote": "经营范围：创业投资业务。联系电话：0755-88993888；电子信箱：service@szvc.com.cn。",
           "quote_hash": "471328d4f4406107854ffe9575e9c659910a1d48b96c58c10f1523a459f760f3"
+        },
+        {
+          "source_id": "FISRC-d0c3dca85d845330",
+          "source_url": "https://news.pedaily.cn/202609/569015.shtml",
+          "source_title": "「因克斯ENCOS」完成3亿元B轮融资，深耕具身智能关节模组",
+          "source_content_hash": "e86bd6fffaf894b4",
+          "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
+          "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
+        },
+        {
+          "source_id": "FISRC-09c3ca37737a71ce",
+          "source_url": "https://stcn.com/article/detail/3386786.html",
+          "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+          "source_content_hash": "edea92990a31710b",
+          "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+          "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+        },
+        {
+          "source_id": "FISRC-67ccadc4294defd6",
+          "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+          "source_title": "深度智控 | 项目信息-36氪",
+          "source_content_hash": "ed75aafa3d8feb1d",
+          "quote": "A+轮 2023-05 数亿人民币 深创投 ， 招商局创投 ， Forebright Capital ， HongShan红杉中国 ， 源码资本",
+          "quote_hash": "01231602863d5c406a1b7918938ddc5c99d1a6768495ed555c9506928ed11ad4"
         }
       ],
       "last_verified_at": "2026-09-25",

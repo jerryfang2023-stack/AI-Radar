@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,130 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "麟阁创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "麟阁创投是2021年成立的早期投资机构，以科技与消费为双主线，官网重点列出新能源、新材料、先进制造，以及电子科技消费品和食品饮料健康化。官网自述投资企业30余家、基金在管规模10亿元以上，并公布投资团队与项目动态。",
+      "coverage_note": "投资企业数和在管规模来自麟阁创投官网自述，网页未注明该统计的具体截止日；不代表经审计数据。官网团队页面公布成员姓名但未逐一披露履历或职务。融资报道的亿元级融资是深空矩阵融资总额，麟阁的单笔投资金额未披露。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2021年。",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "早期阶段。",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网公开的投资方向",
+          "value": [
+            "新能源、新材料、先进制造",
+            "电子科技消费品",
+            "食品饮料健康化"
+          ],
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "官网自述投资企业数量",
+          "value": "30余家；具体统计截止日未标注。",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "field": "aum",
+          "label": "官网自述基金在管规模",
+          "value": "10亿元以上；这是机构官网自述，未给出统计截止日。",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "field": "team_roster",
+          "label": "官网公开团队名单（未逐一标注职务）",
+          "value": [
+            "王翔",
+            "王子巍",
+            "王宇洋",
+            "许孝瑜",
+            "刘畅",
+            "刘心怡",
+            "张严兮",
+            "金成勋",
+            "杨锦程"
+          ],
+          "source_id": "kylinhall_official_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "麟阁创投官网公布成立年份。",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "date": "2024-09",
+          "description": "官网公布麟阁创投入选创业邦、36氪2024年度中国新材料投资机构榜单。",
+          "source_id": "kylinhall_official_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：深空矩阵 · 天使轮 · 2026-09-08 · 本轮联合领投 · 亿元级。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网公布其投资组合与部分融资动态，并明确该组合名单为部分被投企业。官网列出2025年赛感智能Pre-A轮由麟阁领投、2025年一苇宇航种子轮由麟阁独家投资等案例。",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "description": "融资披露列麟阁创投与鼎晖VGC联合领投深空矩阵天使轮。亿元级为该轮融资总额，未披露麟阁单笔投资金额。",
           "source_id": "FISRC-424b889a69139c4a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "麟阁创投官方网站",
+          "value": "kylinhall.com",
+          "url": "https://www.kylinhall.com/",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "kind": "email",
+          "label": "官网公布的商业计划书投递邮箱",
+          "value": "notice@kylinhall.com",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "kind": "email",
+          "label": "官网公布的招聘邮箱",
+          "value": "hiring@kylinhall.com",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公布电话",
+          "value": "010-82862801",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公室",
+          "value": "北京市海淀区科学院南路2号融科资讯中心C座南楼7层",
+          "source_id": "kylinhall_official_2026"
+        },
+        {
+          "kind": "address",
+          "label": "海南办公室",
+          "value": "海南省三亚市崖州区崖州湾科技城雅布伦产业园3号楼542室",
+          "source_id": "kylinhall_official_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kylinhall_official_2026",
+          "source_url": "https://www.kylinhall.com/",
+          "source_title": "麟阁创投｜官方网站",
+          "source_content_hash": "cf03f2b34b5ad129ba522f1acee2dd96e5e92e7378a6e1f69e03e233b8029e63",
+          "quote": "麟阁创投成立于2021年，是一家专注于早期阶段的专业投资机构。我们以科技与消费双投资主线穿越周期，聚焦新能源、新材料、先进制造等领域。官网显示投资企业数量30+家，基金在管规模10+亿。",
+          "quote_hash": "9bee2b74a77e42be39bba84a5c94a866e39bcb8df05f33f467847ae6c1e7f206"
+        },
         {
           "source_id": "FISRC-424b889a69139c4a",
           "source_url": "https://news.pedaily.cn/202609/568647.shtml",
@@ -161,7 +270,10 @@
           "quote_hash": "0d9e020b7d024ad881fc45887ae90c46da8a77818ae384c4852909208db6ff30"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }

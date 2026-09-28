@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,20 +138,100 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "True Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "True Ventures 是一家与早期创始人合作的投资机构，官网称其自 2005 年以来持续在创始人早期阶段提供支持。官网自报承诺资本总额 40 亿美元、支持 1,050 多位创始人并投资 500 多家公司；其组合展示中包括 Enveda。Enveda 官方公告将 True Ventures 列为 2026 年 E 轮既有投资者。上述规模指标不是投资回报，单笔融资金额也未公开。",
+      "coverage_note": "投资风格、年限、组合展示及规模指标来自 True Ventures 官网自述；规模不是业绩或投资回报指标。Enveda 参投身份依据公司官方公告并由融资报道交叉印证。官网公布的法律联系邮箱用于条款及网站服务咨询，不是投资申请邮箱。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网列示投资风格",
+          "value": "自 2005 年起与早期创始人合作，陪伴其开发首批产品、解决关键问题并建立新类别。",
+          "source_id": "true_home"
+        },
+        {
+          "field": "scale",
+          "label": "官网自报规模指标",
+          "value": "承诺资本 40 亿美元；1,050 多位创始人；500 多家公司。该公司指标不等同于收益或基金业绩。",
+          "source_id": "true_scale"
+        },
+        {
+          "field": "selected_portfolio",
+          "label": "官网展示组合案例",
+          "value": "Enveda（官网同时声明展示的公司并非完整投资清单）。",
+          "source_id": "true_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2005",
+          "description": "True Ventures 官网称其自 2005 年起与早期创始人合作。",
+          "source_id": "true_home"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "True Ventures 官网组合展示包括 Enveda；Enveda 官方公告将 True Ventures 列为其 2026 年 E 轮既有投资者，未披露该机构单笔出资额。",
+          "source_id": "true_series_e"
+        },
+        {
+          "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（existing investor）。原报道未披露其单笔出资金额。",
           "source_id": "FISRC-852df50f4128c47b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "True Ventures 官网",
+          "value": "True Ventures",
+          "url": "https://www.trueventures.com/",
+          "source_id": "true_home"
+        },
+        {
+          "kind": "email",
+          "label": "网站条款与服务咨询邮箱（非投资申请邮箱）",
+          "value": "legal@trueventures.com",
+          "source_id": "true_terms_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网条款页公开地址（法律联系）",
+          "value": "575 High Street, Suite 400, Palo Alto, CA 94301",
+          "source_id": "true_terms_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "true_home",
+          "source_url": "https://www.trueventures.com/",
+          "source_title": "True Ventures 官网：投资历史与组合展示",
+          "source_content_hash": "a96c875a7416108a1e515abbe5441e74ecb1c72db379eac9e7eb0684e28c0e4f",
+          "quote": "Since 2005, we’ve partnered with founders at the earliest moments—through first products, hard decisions, and the work of creating new categories.",
+          "quote_hash": "56803e6d3bdc308c42803e9969a2807d96295334fd767d314c8b7599b5e5338b"
+        },
+        {
+          "source_id": "true_scale",
+          "source_url": "https://www.trueventures.com/",
+          "source_title": "True Ventures 官网：公开规模指标",
+          "source_content_hash": "a96c875a7416108a1e515abbe5441e74ecb1c72db379eac9e7eb0684e28c0e4f",
+          "quote": "$4B Committed Capital; 1,050+ Founders; 500+ Companies.",
+          "quote_hash": "983498d1df2ff947e4cd14f782c3294ca7012e6df61145339cc30be05712fba9"
+        },
+        {
+          "source_id": "true_terms_contact",
+          "source_url": "https://www.trueventures.com/terms-of-use",
+          "source_title": "True Ventures 官网使用条款：公开联系信息",
+          "source_content_hash": "254702da81c8793424b8bc75fbc55a47436c44503f27d31e2011f49c19572c3c",
+          "quote": "For questions about these Terms or the Services: Email: legal@trueventures.com; Address: 575 High Street, Suite 400, Palo Alto, CA 94301.",
+          "quote_hash": "5dda96febb7274b7f19550dfd503f9dee730b8188ba28f2d2402a276fff011d0"
+        },
+        {
+          "source_id": "true_series_e",
+          "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+          "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+          "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+          "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
+          "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+        },
         {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -161,7 +241,28 @@
           "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "True Ventures 官网组合展示包括 Enveda；Enveda 官方公告将 True Ventures 列为其 2026 年 E 轮既有投资者，未披露该机构单笔出资额。",
+          "source_hash": "4f0757610997ba9375425d4fecd9aa06804900985c4a5751224977974e7cb419",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:47.831Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "True Ventures 官网",
+          "source_hash": "3e8216e0423d9372762d7ceeff5d8d008bf75c811502504c07ef8faf32764469",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:47.831Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

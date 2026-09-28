@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -132,19 +132,108 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Celero Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网显示Celero通常参与pre-seed和seed，并将创始人主导的GTM搭建作为主要支持。创始人此前参与MuleSoft、Databricks的运营和扩张是个人/运营履历，不视为Celero基金退出。Archestra.AI的1000万美元为公司种子轮总额，公告称早期投资者参与追加。",
+      "summary": "Celero Ventures 是由软件创业者和运营者创立的风险投资机构，主要投资pre-seed和seed阶段的技术公司。其差异化支持集中在创始人主导销售、首批GTM招聘、商业化工具与运营框架。创始人David Wyatt和Nick Cochran曾参与MuleSoft与Databricks的创业和规模化建设；机构官网列示其组合包括Pandatron、Reef.AI、Tower、Catio、HaizeLabs等。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "主要投资pre-seed与seed阶段。",
+          "source_id": "celero_home"
+        },
+        {
+          "field": "value_add",
+          "label": "投后支持",
+          "value": "从创始人主导销售到首批GTM招聘，提供工具、框架、创始人培训及运营网络支持。",
+          "source_id": "celero_home"
+        },
+        {
+          "field": "founders",
+          "label": "创始团队",
+          "value": "David Wyatt与Nick Cochran；两人有软件创业、早期员工及高管经验，并曾共同参与MuleSoft和Databricks业务扩张。",
+          "source_id": "celero_team"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列示组合企业",
+          "value": [
+            "Pandatron",
+            "Reef.AI",
+            "Tower",
+            "Catio",
+            "HaizeLabs",
+            "Archestra.AI"
+          ],
+          "source_id": "celero_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 既有投资方（种子前轮） · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网披露创始人曾共同参与MuleSoft及Databricks的扩张，并列出Pandatron、Reef.AI、Tower、Catio、HaizeLabs等组合企业；创始人此前运营经历不等于Celero基金退出业绩。",
+          "source_id": "celero_home"
+        },
+        {
+          "description": "Archestra.AI称其1000万美元种子轮中，Celero Ventures等pre-seed投资方追加投资；该金额为公司融资总额。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Celero Ventures",
+          "url": "https://celeroventures.com/",
+          "source_id": "celero_home"
+        },
+        {
+          "kind": "email",
+          "label": "创始人David Wyatt",
+          "value": "david@celeroventures.com",
+          "url": "https://celeroventures.com/teams",
+          "source_id": "celero_team"
+        },
+        {
+          "kind": "email",
+          "label": "创始人Nick Cochran",
+          "value": "nick@celeroventures.com",
+          "url": "https://celeroventures.com/teams",
+          "source_id": "celero_team"
+        },
+        {
+          "kind": "address",
+          "label": "泽西岛办公室",
+          "value": "Celero Ventures (LTD), c/o Zedra Office, 19–21 Broad Street, St Helier, Jersey JE2 3RR",
+          "url": "https://celeroventures.com/teams",
+          "source_id": "celero_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "celero_home",
+          "source_url": "https://celeroventures.com/",
+          "source_title": "Celero Ventures",
+          "source_content_hash": "7c16a969343f55d79ce5abab574538c2b832824a33dbe551bdda2c6d1f59792e",
+          "quote": "Celero invests from day 1. We specialise in helping technical founders build a strong go-to-market engine.",
+          "quote_hash": "853f7e60e450d8cba3939223348d283df8c86095d127116dc4413de4db9abdd6"
+        },
+        {
+          "source_id": "celero_team",
+          "source_url": "https://celeroventures.com/teams",
+          "source_title": "Teams",
+          "source_content_hash": "13851e7e67107c1c393734149eb6ce783f272024f9492b0421d7675d12fbac52",
+          "quote": "David Wyatt Founder Nick Cochran Founder. Dave & Nick have worked together for over 12 years.",
+          "quote_hash": "742263ef2aa707cc52fcfe62d8645ba76a9ff0766778b5e800f809514c7126c0"
+        },
+        {
+          "source_id": "celero_investors",
+          "source_url": "https://celeroventures.com/investors",
+          "source_title": "Investor Value | Celero Ventures",
+          "source_content_hash": "4007677c38caa62efa884c450ab92fe4838589f97f5bd552e7df8b9c8fcc0680",
+          "quote": "We are operators building alongside founders, that we invest in. To support this vision we have built an academy based on the success of Mulesoft & Databricks to help technical founders execute faster on GTM.",
+          "quote_hash": "8f67d0bb15382fcf3192ac69a5ff2e6ab3f04df2f4ce342357381eed9273a81d"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -154,7 +243,51 @@
           "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Celero Ventures 是由软件创业者和运营者创立的风险投资机构，主要投资pre-seed和seed阶段的技术公司。其差异化支持集中在创始人主导销售、首批GTM招聘、商业化工具与运营框架。创始人David Wyatt和Nick Cochran曾参与MuleSoft与Databricks的创业和规模化建设；机构官网列示其组合包括Pandatron、Reef.AI、Tower、Catio、HaizeLabs等。",
+          "source_hash": "9a519227d09a61dedeffbe02d050a3960bf2cb57a1c8de4b3fc38bab5bcdbb2c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "官网披露创始人曾共同参与MuleSoft及Databricks的扩张，并列出Pandatron、Reef.AI、Tower、Catio、HaizeLabs等组合企业；创始人此前运营经历不等于Celero基金退出业绩。",
+          "source_hash": "1f7e2ba1bd08ee05268c18d9b2e673dbf4f15a394a1159706b65a823280b0bf0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Archestra.AI称其1000万美元种子轮中，Celero Ventures等pre-seed投资方追加投资；该金额为公司融资总额。",
+          "source_hash": "2686098764e5b0672173fa203bb8a16016fd53b6adf4de4afc9854a528777a4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "创始人David Wyatt",
+          "source_hash": "9b4cc563bd75139dde5eb5705d40d3894da6ff4f04d2e7d71dde114f871ddd08",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "创始人Nick Cochran",
+          "source_hash": "5536b17595a1ca9e3be9835afdac496176e4571dc28b189bff4d495c2c4ba215",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

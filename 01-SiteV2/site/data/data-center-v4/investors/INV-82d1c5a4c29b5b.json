@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -128,6 +128,92 @@
         "quote_hash": "5c1ddc1c7182a4a2f5184146029c3c33367b858dbbeacf2e70466b9c3af58c9b"
       }
     ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "华禹创投的第三方机构档案将其关联至华禹共赢（北京）创业投资管理有限公司，并称该管理团队与华禹共赢（珠海）创业投资有限公司的投资人共同发起机构，偏重早期、孵化式投资。第三方目录列有电话、邮箱和地址，但官网当前可访问性及联系方式时效尚未独立核实。",
+      "coverage_note": "机构介绍、法定管理公司名称与联系方式取自动脉网机构目录，属于第三方公开信息，可能存在更新滞后。红熊AI融资报道的发布日期与融资数据库记录日期不一致；档案保留可追溯的历史参投关系，不把数据库日期解释为新的融资事件。",
+      "facts": [
+        {
+          "field": "manager_name",
+          "label": "第三方目录列示的管理公司",
+          "value": "华禹共赢（北京）创业投资管理有限公司。",
+          "source_id": "huayu_vbdata"
+        },
+        {
+          "field": "origin",
+          "label": "机构发起背景",
+          "value": "第三方目录称其由华禹共赢（珠海）创业投资有限公司的专业赋能投资人和北京管理团队联合发起。",
+          "source_id": "huayu_vbdata"
+        },
+        {
+          "field": "approach",
+          "label": "公开投资方式描述",
+          "value": "第三方目录称其注重早期项目孵化式长期投资。",
+          "source_id": "huayu_vbdata"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "第三方机构目录标注为早期投资。",
+          "source_id": "huayu_vbdata"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资披露记录：财经媒体报道将华禹创投列为红熊AI Pre-A+轮领投方之一；数据库事件日期与该报道发布日期存在差异，单笔投资金额未披露。",
+          "source_id": "FISRC-c85560272b80b0a0"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "第三方机构目录列示的网站（未能独立确认当前可访问性）",
+          "value": "华禹创投",
+          "source_id": "huayu_vbdata",
+          "url": "http://www.huayuvc.com/"
+        },
+        {
+          "kind": "phone",
+          "label": "第三方机构目录列示电话（请核实是否仍有效）",
+          "value": "010-60251004",
+          "source_id": "huayu_vbdata"
+        },
+        {
+          "kind": "email",
+          "label": "第三方机构目录列示邮箱（请核实是否仍有效）",
+          "value": "admin@huayuvc.com",
+          "source_id": "huayu_vbdata"
+        },
+        {
+          "kind": "address",
+          "label": "第三方机构目录列示地址",
+          "value": "北京市通州区滨惠北一街3号院1号楼1层1-8-201",
+          "source_id": "huayu_vbdata"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "FISRC-c85560272b80b0a0",
+          "source_url": "https://finance.sina.com.cn/stock/t/2026-01-05/doc-inhfhavn6757476.shtml",
+          "source_title": "红熊AI完成8000万元Pre-A+轮融资，2025年全年确收1.35亿元|AI_新浪财经_新浪网",
+          "source_content_hash": "6283ceb69b58d1ad",
+          "quote": "本轮融资由天使轮投资人陈泳潮与华禹创投领投，格睿丰投资、库维尔基金、稼沃资本跟投。",
+          "quote_hash": "5c1ddc1c7182a4a2f5184146029c3c33367b858dbbeacf2e70466b9c3af58c9b"
+        },
+        {
+          "source_id": "huayu_vbdata",
+          "source_url": "https://www.vbdata.cn/orgDetail/05792593313e81f8d3c78091f9cbd92c",
+          "source_title": "华禹创投-动脉网",
+          "source_content_hash": "6d160fa524697f4991b7b01635c7a6f653acc28e5d30f6891aff6ef739e8dc33",
+          "quote": "注重早期项目孵化式长期投资",
+          "quote_hash": "8f1cc940fd07abb5fc3a942d35a4a5a1b9f61c261460adc8468530c22243ea2b"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
     "translations": {
       "zh-CN": {
         "activities[0].role": {
@@ -139,33 +225,6 @@
           "status": "translated"
         }
       }
-    },
-    "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "华禹创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：红熊AI · A+轮 · 2026-07-20 · Pre-A+轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c85560272b80b0a0"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-c85560272b80b0a0",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-01-05/doc-inhfhavn6757476.shtml",
-          "source_title": "红熊AI完成8000万元Pre-A+轮融资，2025年全年确收1.35亿元|AI_新浪财经_新浪网",
-          "source_content_hash": "6283ceb69b58d1ad",
-          "quote": "本轮融资由天使轮投资人陈泳潮与华禹创投领投，格睿丰投资、库维尔基金、稼沃资本跟投。",
-          "quote_hash": "5c1ddc1c7182a4a2f5184146029c3c33367b858dbbeacf2e70466b9c3af58c9b"
-        }
-      ],
-      "last_verified_at": "2026-09-26"
     }
   }
 }

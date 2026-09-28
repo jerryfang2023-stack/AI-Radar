@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -133,19 +133,131 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bipul Sinha 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "职务、工作经历、投资和教育信息来自 Rubrik 官方领导层简介。融资数据库把 Sycamore 公告与其姓名关联，但所引用片段只确认其 Rubrik CEO 身份，不据此断言个人出资金额。",
+      "summary": "Bipul Sinha 是 Rubrik 联合创办人、CEO 和董事长，也担任 Lightspeed Venture Partners Venture Partner。其履历涵盖早期投资、企业软件和工程管理；Rubrik 官方资料列出其参与投资的企业及 IIT Kharagpur、Wharton 教育背景。",
+      "facts": [
+        {
+          "field": "experience",
+          "label": "从业经验",
+          "value": "Rubrik 官方简介称其拥有 18 年以上从零建设大型产品和公司的经验。",
+          "source_id": "bipul_experience"
+        },
+        {
+          "field": "patents",
+          "label": "技术成果",
+          "value": "Rubrik 官方简介称其持有多项分布式计算专利。",
+          "source_id": "bipul_patents"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "CEO、董事长、联合创办人",
+          "organization": "Rubrik",
+          "source_id": "bipul_roles"
+        },
+        {
+          "title": "Venture Partner",
+          "organization": "Lightspeed Venture Partners",
+          "source_id": "bipul_roles"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Lightspeed Venture Partners",
+          "title": "合伙人",
+          "period": "曾任；目前职务为 Venture Partner",
+          "description": "曾投资软件、移动互联网等领域。",
+          "source_id": "bipul_career"
+        },
+        {
+          "organization": "Blumberg Capital",
+          "title": "投资人",
+          "period": "曾任；具体任期未披露",
+          "description": "官方简介称其曾担任 Nutanix 和 Hootsuite 的创始投资人/董事会成员。",
+          "source_id": "bipul_blumberg"
+        },
+        {
+          "organization": "Oracle、American Megatrends、IBM",
+          "title": "工程岗位",
+          "period": "曾任；具体任期未披露",
+          "description": "在创办 Rubrik 前曾于多家科技公司任工程岗位。",
+          "source_id": "bipul_engineering"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Indian Institute of Technology, Kharagpur",
+          "qualification": "电气工程技术学士；杰出校友奖",
+          "source_id": "bipul_education"
+        },
+        {
+          "institution": "The Wharton School, University of Pennsylvania",
+          "qualification": "金融学 MBA；Palmer Scholar",
+          "source_id": "bipul_mba"
+        }
+      ],
+      "experience_summary": "兼具工程、企业软件创业和风险投资经验；曾在 Lightspeed、Blumberg Capital 工作，后联合创办 Rubrik。官方资料披露其投资案例及分布式计算专利，但未提供完整投资回报数据。",
       "track_record": [
         {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Rubrik 官方简介列出的历史投资包括 Nutanix、Pulse News、Bromium 和 PernixData；这是部分案例，不代表完整组合或回报。",
+          "source_id": "bipul_investments"
+        },
+        {
+          "description": "WaveSight 融资证据索引将 Sycamore 种子轮公告与 Bipul Sinha 关联；来源片段只标注其为 Rubrik CEO，个人出资情况未披露，故不视为已确认个人投资。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "任职机构官方简介",
+          "value": "Rubrik 领导层页面",
+          "source_id": "bipul_roles",
+          "url": "https://www.rubrik.com/company/about/leadership"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bipul_roles",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8",
+          "quote": "He is the CEO, Chairman and Co-founder of Rubrik, Inc. and a Venture Partner at Lightspeed Venture Partners.",
+          "quote_hash": "ba84af3339a903bacca6a4a0fc03a851379e9596f626e0bc564cf6d1cad09d9d"
+        },
+        {
+          "source_id": "bipul_career",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8",
+          "quote": "Previously, Bipul was a Partner at Lightspeed where he focused on software, mobile, and Internet sectors.",
+          "quote_hash": "1c520bd965cc437e83f0c523a65ec9622fc95aa6fb9e1dd1380ba0175712ca5a"
+        },
+        {
+          "source_id": "bipul_investments",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8",
+          "quote": "His investments included Nutanix, Pulse News, Bromium, and PernixData.",
+          "quote_hash": "5c715e29424388cb55068f935e8c460b211e6b01153dd0dc4bbe76064f6e9f4c"
+        },
+        {
+          "source_id": "bipul_education",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8",
+          "quote": "Bipul received his Bachelor in Technology in Electrical Engineering from Indian Institute of Technology, Kharagpur",
+          "quote_hash": "64381a21ba25dab679e6cd4fac501ae0f22466e82f0c7dc74850d1a74f735984"
+        },
+        {
+          "source_id": "bipul_mba",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8",
+          "quote": "Bipul completed his MBA in Finance from The Wharton School where he was a Palmer Scholar.",
+          "quote_hash": "d8e641dabd60d51e59ac7610885f8cb002c1a2b6cc658ca7f0bfdbb198663e59"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -153,9 +265,62 @@
           "source_content_hash": "7c851906b2d8f45f",
           "quote": "Bipul Sinha (CEO of Rubrik)",
           "quote_hash": "023a741dd7cf2804cb54a904a2837711fd977cdcd22a4b5d9dbcd1e0fb2cfa0a"
+        },
+        {
+          "source_id": "bipul_experience",
+          "quote": "CEO, Chairman, and Co-Founder Bipul Sinha brings 18+ years of experience in building billion-dollar products and companies from the ground up.",
+          "quote_hash": "c39e0ee45355491ec095e5bf19c04c7960a3b2d2d4216297b26e9be2b2f9c95d",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8"
+        },
+        {
+          "source_id": "bipul_patents",
+          "quote": "Bipul holds several patents in distributed computing.",
+          "quote_hash": "ce25098da1a596481491db205ca557287ce22fcd8df6226c3d849d453854241b",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8"
+        },
+        {
+          "source_id": "bipul_blumberg",
+          "quote": "Before Lightspeed, Bipul worked at Blumberg Capital, where he was the founding investor/board member of Nutanix and Hootsuite.",
+          "quote_hash": "59515d5b3f7e8dd8ee6319d824b1c2ca2a89efbec0c1f07127e2117264726eb0",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8"
+        },
+        {
+          "source_id": "bipul_engineering",
+          "quote": "Bipul also held engineering positions at Oracle Corporation, American Megatrends and IBM.",
+          "quote_hash": "053131f26c2cc7025e6ad6c63615ff73455f6d7e0fd6dde692790fc754c9f865",
+          "source_url": "https://www.rubrik.com/company/about/leadership",
+          "source_title": "Bipul Sinha | Rubrik Leadership",
+          "source_content_hash": "f0604666164f161f1e51b94f03dd080310310a36b12d5a6f1d19a967997f52b8"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "milestones": []
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Bipul Sinha 是 Rubrik 联合创办人、CEO 和董事长，也担任 Lightspeed Venture Partners Venture Partner。其履历涵盖早期投资、企业软件和工程管理；Rubrik 官方资料列出其参与投资的企业及 IIT Kharagpur、Wharton 教育背景。",
+          "source_hash": "07c1504c65d83a439bb64d711d263b57b49348b29911a2bf8e855c6e783bdb7f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Rubrik 官方简介列出的历史投资包括 Nutanix、Pulse News、Bromium 和 PernixData；这是部分案例，不代表完整组合或回报。",
+          "source_hash": "c96ddbf94142a03cdd090fc17e26fa82239e2e58aa626d08e340b529378d6e8c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

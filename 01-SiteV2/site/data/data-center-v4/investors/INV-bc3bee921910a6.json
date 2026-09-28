@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,30 +138,137 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无锡创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "融资数据库使用的简称“无锡创投”对应无锡创业投资集团有限公司；该公司已于2026年5月9日正式更名为无锡市高科技投资集团有限公司，官方公告称公司主体资格及法律地位保持不变。集团隶属无锡产业发展集团，2000年设立，采用母基金与直投并行方式支持早期、硬科技项目。",
+      "coverage_note": "历史融资披露使用旧称“无锡创投”。2026年更名、主体连续性和当前联系信息依据公司公告与官网。上市项目只列官网示例，不代表完整组合或已实现投资收益；银河通用25亿元是本轮融资总额，不是该集团的单家出资额。",
+      "facts": [
+        {
+          "field": "current_legal_name",
+          "label": "当前名称（自2026年5月9日起）",
+          "value": "无锡市高科技投资集团有限公司；品牌简称“锡高投”",
+          "source_id": "wuxi_name_change_official"
+        },
+        {
+          "field": "former_name",
+          "label": "融资披露名称与原公司名",
+          "value": "融资披露简称“无锡创投”；更名前公司全称为无锡创业投资集团有限公司。",
+          "source_id": "wuxi_name_change_official"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "隶属于无锡产业发展集团有限公司；无锡市政协官网2024年资料称其为无锡产业集团一级子公司。",
+          "source_id": "wuxi_cppcc"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2000年8月",
+          "source_id": "wuxi_current_site"
+        },
+        {
+          "field": "capital",
+          "label": "注册资本",
+          "value": "人民币12.521008亿元（无锡市政协官网2024年披露为125210.08万元；公司官网按12.52亿元取整）。",
+          "source_id": "wuxi_cppcc"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资方式与方向",
+          "value": "坚持投早、投小、投长期、投硬科技，以母基金和直接投资双轮驱动；公司公告称现阶段进一步聚焦集成电路、人工智能、先进制造和高端装备。",
+          "source_id": "wuxi_name_change_official"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列示上市项目示例",
+          "value": [
+            "德方纳米（300769）",
+            "捷佳伟创（300724）",
+            "海兰信（300065）"
+          ],
+          "source_id": "wuxi_current_site"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000-08",
+          "description": "前身无锡创业投资有限责任公司成立，是无锡市较早设立的市级股权与创业投资机构之一。",
+          "source_id": "wuxi_cppcc"
+        },
+        {
+          "date": "2026-05-09",
+          "description": "公司名称由无锡创业投资集团有限公司变更为无锡市高科技投资集团有限公司；公司公告称本次仅更名和更新品牌标识，主体资格及法律地位不变。",
+          "source_id": "wuxi_name_change_official"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 本轮参投 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "集团官网列示德方纳米、捷佳伟创、海兰信等上市项目示例；这是选择性公开组合展示，不代表完整投资组合或收益数据。",
+          "source_id": "wuxi_current_site"
+        },
+        {
+          "description": "2026年3月，融资报道将无锡创投列为银河通用联合投资方之一。25亿元为报道披露的整轮融资额，未披露该集团的单家出资额。",
           "source_id": "FISRC-adaac360139469bd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "无锡市高科技投资集团有限公司官网",
+          "value": "无锡市高科技投资集团有限公司",
+          "url": "https://www.wxvcg.com/",
+          "source_id": "wuxi_current_site"
+        },
+        {
+          "kind": "email",
+          "label": "集团官网公开邮箱",
+          "value": "bying@wxvcg.com",
+          "source_id": "wuxi_current_site"
+        },
+        {
+          "kind": "contact_form",
+          "label": "集团官网在线留言",
+          "value": "在线留言",
+          "url": "https://www.wxvcg.com/",
+          "source_id": "wuxi_current_site"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wuxi_current_site",
+          "source_url": "https://www.wxvcg.com/",
+          "source_title": "无锡市高科技投资集团有限公司官网：集团简介与上市项目",
+          "source_content_hash": "0b235d3dba58632d28fc7d7085327d81eef04511f571f2b667ce09b657b05d1e",
+          "quote": "成立于2000年8月，是无锡市委市政府部署下最早设立的无锡市级股权和创业投资机构之一。注册资本12.52亿元。",
+          "quote_hash": "70313395ca16156488abfb348bf9d12f31ab54345d560e3708e5e94800e4fb91"
+        },
+        {
+          "source_id": "wuxi_name_change_official",
+          "source_url": "https://www.wxvcg.com/news.asp?nlt=233&none=18",
+          "source_title": "无锡市高科技投资集团公告：公司名称及品牌标识变更",
+          "source_content_hash": "ee797562a7510b5784624713c6bf089fbcd4840200ee12974b19a4c9d1fdda89",
+          "quote": "自2026年5月9日起，公司名称由“无锡创业投资集团有限公司”正式变更为“无锡市高科技投资集团有限公司”。",
+          "quote_hash": "5a65367834466018a0a79723dcca1d7677d56393c873d99a339b7dd061a560d0"
+        },
+        {
+          "source_id": "wuxi_cppcc",
+          "source_url": "https://zx.wuxi.gov.cn/doc/2024/08/02/4365318.shtml",
+          "source_title": "政协无锡市委员会：走访无锡创业投资集团",
+          "source_content_hash": "aad8d338ac7f4d73346f1943ad2c42b44bbd9ddba6a788508bb4162ebb3d6893",
+          "quote": "注册资本125210.08万元；以股权投资方式支持科技创新创业。",
+          "quote_hash": "b881ab1a64f9813c57aea11a453cd4e175c098ff789db779ae4d0ea4dd4815e2"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
           "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
           "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
-          "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
-          "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
+          "quote": "无锡创投",
+          "quote_hash": "293a5d780e4a4f7d2f4ec37354bcf2378f0815346edb90bb527680559cacfa8d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }

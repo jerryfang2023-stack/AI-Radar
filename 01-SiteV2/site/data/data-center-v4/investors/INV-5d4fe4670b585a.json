@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -153,25 +153,70 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Coinbase Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Coinbase Ventures 是 Coinbase 的创业投资部门，官网称其支持推进加密货币与 Web3 生态的创业团队，投资从最早期开始，覆盖加密经济的不同类别。官方页面展示了其组合项目，并介绍其以运营经验、分发能力和战略合作支持创业者。",
+      "facts": [
+        {
+          "field": "organization_role",
+          "label": "机构性质",
+          "value": "Coinbase 旗下创业投资部门；其官网将投资职能与 Coinbase 的生态建设使命相连。",
+          "source_id": "coinbase_ventures"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "面向创业早期团队；官网未公开典型支票区间或单笔投资金额。",
+          "source_id": "coinbase_ventures"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资方向",
+          "value": [
+            "Layer 1 协议",
+            "Web3 基础设施",
+            "中心化入口",
+            "去中心化金融",
+            "NFT 与元宇宙技术",
+            "开发者工具"
+          ],
+          "source_id": "coinbase_ventures"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "创业支持",
+          "value": "官网称其通过运营经验、生态分发与战略合作支持组合团队；官网展示 Arbitrum、Dune、EigenLayer、Uniswap 等案例。",
+          "source_id": "coinbase_ventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Venice AI · A轮 · 2026-07-01 · 本轮参投 · 6500万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Venice AI · Series A · 2026-07-01 · Coinbase Ventures 参投；公开报道中的 6,500 万美元为本轮融资总额，未披露 Coinbase Ventures 的单笔出资。",
           "source_id": "FISRC-41cdbf30cbfd4eed"
         },
         {
-          "description": "融资来源记录：Venice AI · A轮 · 2026-07-01 · 本轮参投 · 6500万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "同一轮次的另一篇来源：The Block 报道 Venice AI 的 6,500 万美元 A 轮并列出 Coinbase Ventures 参投；这是对上条的交叉来源，不是第二笔融资。",
           "source_id": "FISRC-831c2961f3373587"
         }
       ],
-      "contacts": [],
+      "experience_summary": "Coinbase Ventures 当前官方介绍页未公开完整投资团队名录；本资料仅归纳机构正式披露的投资方向、组合支持方式与代表性公开案例。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Coinbase Ventures 官方介绍与组合案例",
+          "value": "Coinbase Ventures",
+          "url": "https://www.coinbase.com/en-pt/ventures",
+          "source_id": "coinbase_ventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "coinbase_ventures",
+          "source_url": "https://www.coinbase.com/en-pt/ventures",
+          "source_title": "Coinbase Ventures: Advancing crypto & Web3",
+          "source_content_hash": "dab51ccb3c5960907995594f7784abfd6988641f7f4ad527544d8a8dc0c6672a",
+          "quote": "We partner with founding teams at the earliest stages, and invest broadly across all categories within the cryptoeconomy.",
+          "quote_hash": "7cefae50b56ff3e74e4273d71b1b0d2c72775863576c7f7ae0adf69c81e8631c"
+        },
         {
           "source_id": "FISRC-41cdbf30cbfd4eed",
           "source_url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off",
@@ -189,7 +234,31 @@
           "quote_hash": "606ae176a98dac29403f2468e0a552b3194ed382fa3cff615ae2ad537efc9d44"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "机构策略、人员履历和联系渠道按公开官网资料整理；融资案例为本库收录的可追溯样本，不代表完整投资组合或机构回报。人物经历嵌入机构资料，仅记录官网披露且能确认角色的人员；未把轮次总额写成机构单笔出资。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Venice AI · Series A · 2026-07-01 · Coinbase Ventures 参投；公开报道中的 6,500 万美元为本轮融资总额，未披露 Coinbase Ventures 的单笔出资。",
+          "source_hash": "49cf5a6b253bf8db837606a72bda01e827cadea0f22c938ff66fb6d170f8e4cd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Coinbase Ventures 官方介绍与组合案例",
+          "source_hash": "38a09b72139c6e175b4aa94289290c0e9a8544e6f58927cfff8ab7f660dc9b1b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

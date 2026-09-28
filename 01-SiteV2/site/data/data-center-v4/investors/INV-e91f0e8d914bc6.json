@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,96 @@
       }
     ],
     "public_profile": {
+      "summary": "上海徐汇资本投资有限公司是徐汇区国有投资平台，2021年设立，注册资本人民币200亿元。公司以科技金融投资为主，采用“基金+直投、投资+孵化”等方式，服务人工智能、生命健康等战略性新兴产业及区域科技企业。",
+      "coverage_note": "注册资本不是可投资基金规模。投资笔数与金额按徐汇区官方2025年报道，统计徐汇资本及旗下基金，属于合并口径。2026年人工智能专项科创债是公司自身债务融资，不计作其对创业公司的股权投资。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海国资徐汇资本 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "机构背景",
+          "value": "经徐汇区委、区政府批准设立的区级国有投资平台。",
+          "source_id": "xuhui_capital_background"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币200亿元；该指标不是基金资产管理规模。",
+          "source_id": "xuhui_capital_background"
+        },
+        {
+          "field": "investment_model",
+          "label": "投资与孵化模式",
+          "value": "覆盖早期、孵化、产业和战略基金板块，采用“基金+直投、投资+孵化”模式。",
+          "source_id": "xuhui_capital_strategy"
+        },
+        {
+          "field": "activity",
+          "label": "公开披露的投资记录",
+          "value": "徐汇区2025年报道披露，徐汇资本及旗下基金累计对外股权投资107笔、总规模114亿元；另有266个投早、投小、投硬科技项目，投资额160亿元。",
+          "source_id": "xuhui_capital_hardtech_scale"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "上海徐汇资本投资有限公司成立。",
+          "source_id": "xuhui_capital_background"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：灵初智能 · 多轮融资 · 2026-03-10 · 本轮领投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "徐汇区2026年报道披露，公司发行人民币5亿元的人工智能专项科技创新公司债券；这是公司自身债务融资，不是某个被投企业的轮次或股权投资金额。",
+          "source_id": "xuhui_capital_bond"
+        },
+        {
+          "description": "媒体报道将徐汇资本等列为灵初智能20亿元Pre-A轮领投方。该金额为企业融资总额，不是徐汇资本单独出资。",
           "source_id": "FISRC-10c7fcf01fad4e2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方信息入口",
+          "value": "徐汇区国资委公开信息",
+          "url": "https://www.xuhui.gov.cn/zfjg_qzfbm_gyzcjdgl_bndt/20260626/574766.html",
+          "source_id": "xuhui_capital_bond"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "xuhui_capital_background",
+          "source_url": "https://jrj.sh.gov.cn/ZQ181/20260428/985c4f4e8f534a1b9535f731cbce6d76.html",
+          "source_title": "国泰海通助力徐汇资本成功发行全国首单人工智能专项科创债券",
+          "source_content_hash": "19afb4b1352166ca4d967ab5ee4e417d26a1287175a01762b9c541ba04e469fe",
+          "quote": "徐汇资本成立于2021年，是经徐汇区委、区政府批准设立的区级国有投资平台，注册资本200亿元。",
+          "quote_hash": "b08ef92eeaa2d7bbf7d54ff61e6f01f405b4276d839b5754cb4f2bf8a4db09a7"
+        },
+        {
+          "source_id": "xuhui_capital_strategy",
+          "source_url": "https://www.xuhui.gov.cn/zfjg_qzfbm_gyzcjdgl_bndt/20251218/567309.html",
+          "source_title": "推动金融与科技深度链接，徐汇资本全周期布局点燃创新引擎",
+          "source_content_hash": "da2b1b233051af1af5793156a9abfe57f6ca7000ed588edf7189161003abbeeb",
+          "quote": "徐汇资本围绕早期、孵化、产业和战略基金板块，采用投资与孵化结合的模式服务科技企业。",
+          "quote_hash": "96bc2037d95424ac10bf65dc25929c5388bccf7f1baf9f4051975b04af3f1a9d"
+        },
+        {
+          "source_id": "xuhui_capital_scale",
+          "source_url": "https://www.xuhui.gov.cn/zfjg_qzfbm_gyzcjdgl_bndt/20251218/567309.html",
+          "source_title": "推动金融与科技深度链接，徐汇资本全周期布局点燃创新引擎",
+          "source_content_hash": "b352c49ae55205d0a4a762ca845466a85911e9933ab91c1299dffe5c99436a49",
+          "quote": "截至2025年披露时，徐汇资本及旗下基金累计对外股权投资107笔、总规模114亿元；投早投小投硬科技项目266个。",
+          "quote_hash": "018c7949cd6475bef9d0a75a115392d08775140806f3259cf9af2b87f68b29ba"
+        },
+        {
+          "source_id": "xuhui_capital_bond",
+          "source_url": "https://www.xuhui.gov.cn/zfjg_qzfbm_gyzcjdgl_bndt/20260626/574766.html",
+          "source_title": "创新金融+硬核赛事+精准服务——徐汇资本以多元举措绘就国资服务科创新图景",
+          "source_content_hash": "6b952f2afdc66d9aa33a61e08b9f975bd7e3667895a753018e1c7d0932893666",
+          "quote": "徐汇资本2026年发行规模5亿元、票面利率1.66%的非公开科技创新公司债券，募集资金专项用于人工智能领域。",
+          "quote_hash": "5c53076ac491c4741b62f7f7524b474bcbe7ee7b51ecd37374fa7e437efc5200"
+        },
         {
           "source_id": "FISRC-10c7fcf01fad4e2f",
           "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",
@@ -159,9 +234,17 @@
           "source_content_hash": "20f81c1ca1ce317a8829a288b011283ff55820a5b683df55a4b9078e8f2ce857",
           "quote": "Pre-A轮由 上海国资徐汇资本等 基金领投， 梁溪科创产业二期母基金（博华资本管理）、锡创投等地方国资 ，及 普丰资本、钛铭资本等 市场化基金跟投，多家老股东实现超额跟投。",
           "quote_hash": "95375f30e297229a1ad0438fbc221ee39f1b8ccfa3bd723fe1b08c75fe9bdf74"
+        },
+        {
+          "source_id": "xuhui_capital_hardtech_scale",
+          "source_url": "https://www.xuhui.gov.cn/zfjg_qzfbm_gyzcjdgl_bndt/20251218/567309.html",
+          "source_title": "推动金融与科技深度链接，徐汇资本全周期布局点燃创新引擎",
+          "source_content_hash": "b45396a24a06c640af502c949f0ef885a32f281a03f87dc077ce904581498409",
+          "quote": "徐汇资本及参投基金投早、投小、投硬科技项目累计266个，投资额160亿元。",
+          "quote_hash": "4c45c608fb776052e030e1ef2bc1629cc22db9e36614e39ed50e0fb343bb9172"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

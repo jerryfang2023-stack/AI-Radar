@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,126 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无锡数据集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构背景来自国联集团公开资料；投资案例只列有融资来源支持的披露记录。与具身智能企业的战略合作为产业合作，不计作融资投资。",
+      "summary": "无锡数据集团有限公司前身为无锡市大数据集团有限公司，于2024年9月更名。国联集团将其介绍为国有全资、具有功能保障属性的市场竞争类企业，围绕数据资产、数字基础设施、数字政府服务、数字产业投资和数字生态开展业务。本库收录的融资记录显示其参与穹彻智能一轮融资；这不代表其完整投资组合。",
+      "facts": [
         {
-          "description": "融资来源记录：穹彻智能 · 轮次未披露 · 2026-06-18 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e3b51be471b79167"
+          "field": "corporate_history",
+          "label": "成立与更名",
+          "value": "前身无锡市大数据集团有限公司于2023年2月16日揭牌成立；经无锡市人民政府批准，2024年9月更名为无锡数据集团有限公司。",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "field": "ownership_and_status",
+          "label": "企业属性",
+          "value": "国有全资，具有功能保障属性的市场竞争类企业。",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币 29,205.16 万元（约人民币 2.920516 亿元）。",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "field": "business_positioning",
+          "label": "官方介绍的业务定位",
+          "value": [
+            "数据资产开发运营商",
+            "数字基础设施承建商",
+            "数字政府服务商",
+            "数字产业投资商",
+            "数字生态集聚商"
+          ],
+          "source_id": "wuxi_data_group_business"
+        },
+        {
+          "field": "organization_scale",
+          "label": "官网披露的组织规模",
+          "value": "国联集团页面列示下设7家子企业（其中2家瞪羚企业），在数据治理、平台研发、城市数字化、智能传感设备四个领域拥有340人专业团队。该为页面核验时的机构自述。",
+          "source_id": "wuxi_data_group_scale"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2023-02-16",
+          "description": "前身无锡市大数据集团有限公司揭牌成立。",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "date": "2024-09",
+          "description": "经无锡市人民政府批准，更名为无锡数据集团有限公司。",
+          "source_id": "wuxi_data_group_official"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资披露记录：穹彻智能 · 2026-06-18 · 本轮参投 · 融资金额为数亿元（来源原文未提供无锡数据集团的单独投资额）。这是本库检索到的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e3b51be471b79167"
+        },
+        {
+          "description": "产业合作：2026年8月14日与北京渊澈太初智能科技有限公司签署战略合作协议，合作涉及肌电感知硬件、高维数据采集与具身智能数据治理；该事件属于战略合作，不是融资投资。",
+          "source_id": "wuxi_data_group_embodied_ai"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "国联集团官网中的无锡数据集团介绍",
+          "value": "无锡数据集团有限公司",
+          "url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_id": "wuxi_data_group_official"
+        },
+        {
+          "kind": "address",
+          "label": "公司地址（国联集团官网）",
+          "value": "无锡市金融一街8号国联金融大厦",
+          "url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_id": "wuxi_data_group_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wuxi_data_group_official",
+          "source_url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_title": "无锡数据集团有限公司｜国联集团",
+          "source_content_hash": "95596eed43c475c34e4883b1ca7ab658a1ff66ed401b7ef84a4b49190ea61e98",
+          "quote": "无锡市大数据集团有限公司于2023年2月16日揭牌成立，为国有全资具有功能保障属性的市场竞争类企业，注册资本29205.16万元。经无锡市人民政府批准，2024年9月更名为无锡数据集团有限公司。",
+          "quote_hash": "6529e0ab377a02d1ca2ed6bd1302e5b3c4f54a89f5b9723e8f794a19924c0848"
+        },
+        {
+          "source_id": "wuxi_data_group_business",
+          "source_url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_title": "无锡数据集团有限公司｜国联集团",
+          "source_content_hash": "95596eed43c475c34e4883b1ca7ab658a1ff66ed401b7ef84a4b49190ea61e98",
+          "quote": "无锡数据集团定位为数据资产开发运营商、数字基础设施承建商、数字政府服务商、数字产业投资商和数字生态集聚商。",
+          "quote_hash": "a4ffa8c4b3fec0855ea6ced3705a5f625736a7622b2211ee941933d5edee87f9"
+        },
+        {
+          "source_id": "wuxi_data_group_scale",
+          "source_url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_title": "无锡数据集团有限公司｜国联集团",
+          "source_content_hash": "95596eed43c475c34e4883b1ca7ab658a1ff66ed401b7ef84a4b49190ea61e98",
+          "quote": "公司下设7家子企业（其中2家瞪羚企业），拥有数据治理、平台研发、城市数字化、智能传感设备四大领域专业团队340人。",
+          "quote_hash": "d50923a307bda9ab874e615e78f2a479263ee70475d5d4c383df31648d2b3574"
+        },
+        {
+          "source_id": "wuxi_data_group_address",
+          "source_url": "https://www.glgc.com.cn/jtcy/glsy/702992715673669.shtml",
+          "source_title": "无锡数据集团有限公司｜国联集团",
+          "source_content_hash": "95596eed43c475c34e4883b1ca7ab658a1ff66ed401b7ef84a4b49190ea61e98",
+          "quote": "公司地址：无锡市金融一街8号国联金融大厦。",
+          "quote_hash": "b7b0aa100a39cb651fb8fff0c3bcf11d49d4c8e72af8650ce589ad880e273071"
+        },
+        {
+          "source_id": "wuxi_data_group_embodied_ai",
+          "source_url": "https://zx.wuxi.gov.cn/doc/2026/08/15/4818584.shtml",
+          "source_title": "“千企百万小时”计划再添技术伙伴｜政协无锡市委员会",
+          "source_content_hash": "f1589ee55b3708c7b22bc2b7f3f87ba98e7815639069e2f9b19957a6c00b5d68",
+          "quote": "8月14日，无锡数据集团与前沿感知领军企业北京渊澈太初智能科技有限公司签署战略合作协议。",
+          "quote_hash": "5bfb9050c0f505163751d44abd2deb13735411b3752d2e2d09f6e7eecb0be14a"
+        },
         {
           "source_id": "FISRC-e3b51be471b79167",
           "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
@@ -161,7 +268,7 @@
           "quote_hash": "9a56d47990c9b47b90dd3b1b9aa7578bbbecb53cd57d2bce6b90d2cd9b0972cf"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -62,16 +62,17 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-17",
+    "first_disclosed_at": "2025-09-16",
     "latest_disclosed_at": "2026-09-22",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 2,
       "participant": 1
     },
@@ -217,6 +218,46 @@
             "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d94ad59223df3689",
+        "funding_insight_id": "FI-e5aed52f8dab81de",
+        "event_ids": [
+          "EV-60366423eaa67216"
+        ],
+        "company_entity_id": "EN-1785cfc3bc6ac773",
+        "company_canonical_entity_id": "",
+        "company_name": "Nothing",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2025-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6fdd5655f9959e9",
+            "source_url": "https://nothing.tech/community-investment-3",
+            "source_title": "Community Investment (3) | Nothing | UK",
+            "source_content_hash": "f9b71df0af1c23e2",
+            "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
+            "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -243,6 +284,14 @@
         "source_content_hash": "75587989c4b9271c",
         "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
         "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+      },
+      {
+        "source_id": "FISRC-f6fdd5655f9959e9",
+        "source_url": "https://nothing.tech/community-investment-3",
+        "source_title": "Community Investment (3) | Nothing | UK",
+        "source_content_hash": "f9b71df0af1c23e2",
+        "quote": "along with leading tech entrepreneurs like Tony Fadell (Future Shape, inventor of the iPod), Casey Neistat, Nikhil Kamath (co-founder Zerodha), Kevin Lin (co-founder of Twitch), Steve Huffman (CEO of Reddit), Garry Tan (CEO of Y Combinator), and many others.",
+        "quote_hash": "17236f745d8e9a6cbfb9326b7ef9d8ccbd3ec2f099f5183bbd9bdf02fe9eb78c"
       }
     ],
     "public_profile": {
@@ -303,6 +352,18 @@
         {
           "description": "Y Combinator官方简介称，Garry Tan曾参与Posterous创业，该公司被Twitter收购；他还共同创立Initialized Capital，并曾帮助建设YC面向创始人的内部产品。",
           "source_id": "garry_yc"
+        },
+        {
+          "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮参投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1f3aa9ba4c739ca7"
+        },
+        {
+          "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮天使投资人 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-907e4297862ddd8c"
+        },
+        {
+          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e94365d0212a78f3"
         }
       ],
       "sources": [
@@ -313,9 +374,53 @@
           "source_content_hash": "b9f58607a43f45f9cd6f89ab40a6b938a6a35caa47481cc08802d9da8817a92f",
           "quote": "Garry Tan is president and CEO of Y Combinator and a General Partner. He is the co-founder of Initialized Capital and Posterous, which was acquired by Twitter, and previously was an early designer and engineering manager at Palantir. Garry holds a BS in Computer Systems Engineering from Stanford.",
           "quote_hash": "397f60ae5c91d857d1c5193e6091da05f0e6fd7ed34e7a296aae8e86806e1dc9"
+        },
+        {
+          "source_id": "FISRC-1f3aa9ba4c739ca7",
+          "source_url": "https://pulse2.com/horowitz-andreessen-academy-raises-42-million-and-launches-tuition-free-fellowship-in-san-francisco/",
+          "source_title": "Horowitz Andreessen Academy Raises $42 Million And Launches Tuition-Free Fellowship In San Francisco",
+          "source_content_hash": "bb1048a5af39e427",
+          "quote": "The $42 million financing comes from a16z and a group of individual investors, including Adam D’Angelo, co-founder of Quora; Tobi Lütke, CEO of Shopify; Tony Xu, CEO of DoorDash; Fidji Simo, who recently served as CEO of Applications at OpenAI; Garry Tan of Y Combinator; Joe Liemandt of Alpha School; and Shyam Sankar, CTO of Palantir.",
+          "quote_hash": "66f075ad9a5112fbd5e30b27263196962b1250767ea2b56f8dae3803d67dd806"
+        },
+        {
+          "source_id": "FISRC-907e4297862ddd8c",
+          "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+          "source_title": "Monogram 获 4000 万美元种子轮融资",
+          "source_content_hash": "3a584a627e1535ff",
+          "quote": "Arthur Mensch, Logan Green, Karim Atiyeh, Garry Tan, Pete Flint, Mario Schlosser, Othman Laraki, Lenny Rachitsky, and Charlie Songhurst",
+          "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
+        },
+        {
+          "source_id": "FISRC-e94365d0212a78f3",
+          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
+          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
+          "source_content_hash": "75587989c4b9271c",
+          "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
+          "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
         }
       ],
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.career[2].description": {
+          "text": "共同创立博客平台Posterous，该平台后被Twitter收购。",
+          "source_hash": "edb282e73aa2bf92d64cdbafbfc31e6402d2e00b123c5942d565f175d2d74dfb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Y Combinator官方简介称，Garry Tan曾参与Posterous创业，该公司被Twitter收购；他还共同创立Initialized Capital，并曾帮助建设YC面向创始人的内部产品。",
+          "source_hash": "77097173fc60be71e830a3c55e2366e376f49570ef07ce39e265da24da54edcd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

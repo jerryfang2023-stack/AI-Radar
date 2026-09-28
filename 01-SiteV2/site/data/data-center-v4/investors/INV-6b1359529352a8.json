@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,15 +138,46 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "清华资本 (Tsinghua Capital) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Moonshot AI融资报道使用英文名称“Tsinghua Capital”列出一名参投方。风潮数据将Tsinghua Capital映射为水木清华校友种子基金；清华校友会和三创大赛资料记载该基金于2014年成立，面向清华校友早期创业并关注硬科技。由于融资报道没有公布具体出资载体，这一中英文名对应仅作为候选解释，不视为该轮交易主体的正式确认。",
+      "coverage_note": "融资报道只披露“Tsinghua Capital”这一英文投资方标签。中英文名映射来自第三方机构目录，水木清华校友种子基金的成立和投资方向由清华校友相关资料佐证；没有找到交易级的一手资料确认该轮具体法律投资主体，也不与名称近似的“水木基金”融资标签合并。",
+      "facts": [
+        {
+          "field": "candidate_name_mapping",
+          "label": "第三方目录中的候选英文名",
+          "value": "风潮数据将Tsinghua Capital列为水木清华校友种子基金的英文名；仅为目录映射，未由Moonshot融资交易文件确认。",
+          "source_id": "tsinghua_alias_directory"
+        },
+        {
+          "field": "candidate_fund_founded",
+          "label": "候选基金成立时间",
+          "value": "2014年10月；该日期属于水木清华校友种子基金，不据此认定所有“Tsinghua Capital”记录均由其投资。",
+          "source_id": "tsinghua_seed_fund"
+        },
+        {
+          "field": "candidate_investment_focus",
+          "label": "候选基金公开方向",
+          "value": [
+            "清华校友种子期或天使期项目",
+            "新能源",
+            "新一代信息技术",
+            "新材料",
+            "半导体",
+            "生命科学"
+          ],
+          "source_id": "tsinghua_seed_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014-10-22",
+          "description": "清华校友资料记载水木清华校友种子基金由水木清华理事会发起成立；这是候选映射所指基金的历史，不代表融资记录主体已被确认。",
+          "source_id": "tsinghua_seed_fund"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-06-08 · 2026年5月轮次参投 · 20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "TechCrunch关于Moonshot AI融资的报道将Tsinghua Capital列为参与方；报道没有披露该参与方单笔投资额或所用基金法律载体。",
           "source_id": "FISRC-d0328bd4d2255697"
         }
       ],
@@ -159,9 +190,34 @@
           "source_content_hash": "45a6d86c94ff3a75",
           "quote": "Also participating were Tsinghua Capital, China Mobile and CPE Yuanfeng, according to the post.",
           "quote_hash": "b40d5b40836a95db6bd215afdf7ea53e0876d530d89ba67b3b8a5d45e0cbfeac"
+        },
+        {
+          "source_id": "moonshot_techcrunch",
+          "source_url": "https://techcrunch.com/2026/05/07/chinas-moonshot-ai-raises-2b-at-20b-valuation-as-demand-for-open-source-ai-skyrockets/",
+          "source_title": "China’s Moonshot AI raises $2B at $20B valuation as demand for open source AI skyrockets | TechCrunch",
+          "source_content_hash": "9aab7f0297bf745b63c01b0a377e6ceea84f998c5ebaec2d4ce40f6b572b270b",
+          "quote": "Also participating were Tsinghua Capital, China Mobile and CPE Yuanfeng, according to the post.",
+          "quote_hash": "b40d5b40836a95db6bd215afdf7ea53e0876d530d89ba67b3b8a5d45e0cbfeac"
+        },
+        {
+          "source_id": "tsinghua_alias_directory",
+          "source_url": "https://k1wave.com/vc/shui-mu-qing-hua-xiao-you-ji-jin",
+          "source_title": "水木清华校友基金 北京水木华清投资中心(有限合伙) 中国-北京市投资机构 - 风潮数据",
+          "source_content_hash": "3ff1e1e53f38d27b4f9b8cb580a532f92eb7d6e0d415188f423d31fbf8b5980c",
+          "quote": "英文名：Tsinghua Capital",
+          "quote_hash": "2888a3088a8d89ec642e812d6d83766e0d9d22acbd0bad5f1dd7bb4b0b1f80b5"
+        },
+        {
+          "source_id": "tsinghua_seed_fund",
+          "source_url": "https://sanchuang.tsinghua.org.cn/home/detail/leading/1",
+          "source_title": "清华校友三创大赛",
+          "source_content_hash": "7f13412f6a00aad1e56001ae286f6b67ee532078473cddc30cf494f199e1523d",
+          "quote": "水木清华校友种子基金成立于2014年10月，基金的创始合伙人包括李竹、杜艳、余龙文等；基金深度挖掘种子期或天使期的清华校友创业项目",
+          "quote_hash": "5c042e343af81569a63671ae99414360616e16043e6341c1219f07aee61ff246"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

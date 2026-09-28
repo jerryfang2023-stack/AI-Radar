@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,78 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Antonio Gracias 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Antonio Gracias 是 Valor 的创始人、首席执行官和首席投资官，1995 年创立 Valor，拥有私募股权投资经历。其公开履历还包括 MG Capital 创办经历、Goldman Sachs 任职经历、Tesla 董事会任职，以及 Georgetown 和 University of Chicago 的学位。",
+      "coverage_note": "Valor官网为其现任职务与履历的主要来源。Sable融资文章将Gracias列入天使投资人，融资数据库把该项标记为历史/不确定关联；融资金额是公司层面总额，未披露其个人出资额。",
+      "current_roles": [
+        {
+          "title": "Founder, Chief Executive Officer & Chief Investment Officer",
+          "organization": "Valor",
+          "source_id": "valor_antonio_profile_2026"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Valor",
+          "title": "Founder, CEO and CIO",
+          "period": "Founded in 1995",
+          "description": "负责投资委员会并参与Valor旗下多家组合公司的董事会工作。",
+          "source_id": "valor_antonio_profile_2026"
+        },
+        {
+          "organization": "Tesla",
+          "title": "Director; Lead Independent Director",
+          "period": "2007–2021",
+          "description": "Valor官网记载其曾任Tesla董事，其中八年担任首席独立董事。",
+          "source_id": "valor_antonio_profile_2026"
+        },
+        {
+          "organization": "MG Capital",
+          "title": "Founder and Managing Member",
+          "period": "Before Valor",
+          "description": "收购并担任多家制造与科技相关企业的CEO。",
+          "source_id": "valor_antonio_profile_2026"
+        },
+        {
+          "organization": "Goldman Sachs",
+          "title": "Prior role",
+          "period": "Before MG Capital",
+          "description": "Valor 官网简介称其此前曾在 Goldman Sachs 任职。",
+          "source_id": "valor_antonio_profile_2026"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Georgetown University School of Foreign Service",
+          "qualification": "B.S. and M.S.F.S. in International Finance and Economics",
+          "source_id": "valor_antonio_profile_2026"
+        },
+        {
+          "institution": "University of Chicago Law School",
+          "qualification": "J.D.",
+          "source_id": "valor_antonio_profile_2026"
+        },
+        {
+          "institution": "Waseda University",
+          "qualification": "Studied corporate structures and economic development",
+          "source_id": "valor_antonio_profile_2026"
+        }
+      ],
+      "experience_summary": "Gracias在私募股权投资、科技和制造业运营领域有长期经历。Valor官网介绍其曾担任Tesla董事和首席独立董事，参与多个科技与先进产业公司的董事会及投资委员会工作。",
       "track_record": [
         {
-          "description": "融资来源记录：Sable · 轮次未披露 · 2026-07-16 · 天使投资人 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Sable的融资报道将Gracias列为天使投资人；投资数据库将其参与范围标为历史/不确定。报道所述4,500万美元是公司层面融资，不代表个人投资额。",
           "source_id": "FISRC-b95b1b353d05702f"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "valor_antonio_profile_2026",
+          "source_url": "https://www.valorep.com/team/antonio-gracias",
+          "source_title": "Antonio Gracias｜Valor",
+          "source_content_hash": "2dad6715f94152a3cf7b64ff16aab72ca3ff064f45d79c71d6a250f53d80f999",
+          "quote": "Antonio is the Founder, Chief Executive Officer, and Chief Investment Officer of Valor. Antonio founded Valor in 1995. He was a Director of Tesla from 2007 to 2021. Before Valor, he founded and managed MG Capital and previously worked at Goldman Sachs. He holds degrees from Georgetown University and the University of Chicago Law School.",
+          "quote_hash": "3d762189a7fa51320847133af7d597f3ce6643e2d51f776cc567435c6cd72015"
+        },
         {
           "source_id": "FISRC-b95b1b353d05702f",
           "source_url": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
@@ -153,7 +210,33 @@
           "quote_hash": "670d8fb1c52a03d9d65f8070b6bd858552add89f44cebf65e0ce041b0498d224"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Antonio Gracias 是 Valor 的创始人、首席执行官和首席投资官，1995 年创立 Valor，拥有私募股权投资经历。其公开履历还包括 MG Capital 创办经历、Goldman Sachs 任职经历、Tesla 董事会任职，以及 Georgetown 和 University of Chicago 的学位。",
+          "source_hash": "986dfec66f6872817af76fe3a334727f3dbe88dee0dd321b435dd3a3a466dd5a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.308Z",
+          "status": "translated"
+        },
+        "public_profile.career[3].description": {
+          "text": "Valor 官网简介称其此前曾在 Goldman Sachs 任职。",
+          "source_hash": "0e9c997e2bb85326d26b48bac709abd43218b930886daa0408a8cbf24c0e450d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.308Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

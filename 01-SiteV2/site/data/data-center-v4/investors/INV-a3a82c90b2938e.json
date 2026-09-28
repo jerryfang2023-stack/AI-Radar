@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,15 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "华瑞创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "档案按公开资料中“华瑞创投”对应南京华瑞私募基金管理有限公司整理。华瑞时尚集团的实业规模与成果属于母公司背景，不等同于该基金管理人的投资业绩；因克斯B轮融资披露金额为整轮金额，并非华瑞创投的单笔出资。暂无已核实的基金直联电话或邮箱。",
+      "summary": "华瑞创投对应南京华瑞私募基金管理有限公司，是华瑞时尚集团孵化的硬科技投资平台。公开资料显示，管理人于2024年成立并完成私募管理人备案，聚焦早期、长期和硬科技投资，并结合产业空间、供应链和科创服务支持项目。母公司华瑞时尚集团长期经营服装外贸与供应链业务，近年通过高校成果转化合作开展产业投资。",
+      "facts": [
+        {
+          "field": "legal_manager",
+          "label": "管理人主体",
+          "value": "南京华瑞私募基金管理有限公司（公开资料称“华瑞创投”）",
+          "source_id": "huarui_manager_zhaopin"
+        },
+        {
+          "field": "manager_registration",
+          "label": "私募管理人备案",
+          "value": "中基协登记编号 P1074862；公开招聘资料称于2024年9月完成备案。",
+          "source_id": "huarui_registration"
+        },
+        {
+          "field": "established",
+          "label": "管理人成立时间",
+          "value": "2024年4月28日（企业信息页面所列，需以工商/中基协实时登记为准）",
+          "source_id": "huarui_manager_zhaopin"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开投资方向",
+          "value": [
+            "前沿科技",
+            "硬科技",
+            "早期与长期投资"
+          ],
+          "source_id": "huarui_manager_zhaopin"
+        },
+        {
+          "field": "investment_model",
+          "label": "投资与赋能方式",
+          "value": "公开介绍称其除投资外，也依托产业空间、产业资源和科创服务陪伴企业成长，并与江宁区国企投资基金协同。",
+          "source_id": "huarui_jiangning"
+        },
+        {
+          "field": "parent_background",
+          "label": "母公司背景",
+          "value": "华瑞时尚集团成立于1993年，长期经营服装外贸与供应链业务；该信息描述母公司，不代表基金管理人的规模或投资回报。",
+          "source_id": "huarui_parent_background"
+        },
+        {
+          "field": "founder_background",
+          "label": "创始人背景",
+          "value": "江宁区政府和南京航空航天大学资料将康宜华介绍为华瑞时尚集团创始人、南京航空航天大学1980级校友；其创业经历属于母公司背景。",
+          "source_id": "huarui_nuaa_founder"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-04-28",
+          "description": "南京华瑞私募基金管理有限公司成立。",
+          "source_id": "huarui_manager_zhaopin"
+        },
+        {
+          "date": "2024-11-18",
+          "description": "华瑞时尚集团与南京航空航天大学第二届“华瑞杯”成果转化项目团队签订投资合作协议；这是母公司合作记录，不单独归为管理人直投。",
+          "source_id": "huarui_nuaa"
+        },
+        {
+          "date": "2026-09-02",
+          "description": "江宁区政府介绍华瑞创投与区级国企基金协作布局本地硬科技。",
+          "source_id": "huarui_jiangning"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 本轮参投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露记录：因克斯 B轮，2026-09-15，华瑞创投被列为本轮参投方。报道中的“超3亿元”为该轮融资规模下限，不是华瑞创投单笔出资。",
           "source_id": "FISRC-d0c3dca85d845330"
+        },
+        {
+          "description": "华瑞时尚集团与南京航空航天大学可穿戴肺功能实时成像仪项目团队签署投资协议；此为母公司成果转化投资案例，不作为华瑞创投基金业绩。",
+          "source_id": "huarui_nuaa"
         }
       ],
       "contacts": [],
@@ -159,9 +226,57 @@
           "source_content_hash": "e86bd6fffaf894b4",
           "quote": "本轮投资方包括中信金石、纳爱斯、苏创投、华睿投资、南京交控、华瑞创投。",
           "quote_hash": "6c4c7e786af8f1c6a645b416c03de78fe56dc7c68a3fec952cdda6d739fdd0b4"
+        },
+        {
+          "source_id": "huarui_jiangning",
+          "source_url": "https://www.jiangning.gov.cn/xwzx/jrjn/202609/t20260902_5903723.html",
+          "source_title": "从“织布”到“织梦”，这家企业跨界当好“耐心陪跑者” · 南京市江宁区人民政府",
+          "source_content_hash": "2650b5846bc8b6162144ad9551fcb864ca71b3369fc100ed06e4f350f758d8ac",
+          "quote": "企业依托旗下南京华瑞私募基金管理有限公司（华瑞创投），联合江宁区国企投资基金，秉持“产业为本、资本为翼、长期陪跑”理念，深耕硬科技投资、盘活优质产业载体、输出全方位科创赋能服务",
+          "quote_hash": "55d437dfc4919ac8d2981f05860336fc29098a3800f79b1aa3de5c948afb31ad"
+        },
+        {
+          "source_id": "huarui_manager_zhaopin",
+          "source_url": "https://www.zhaopin.com/jobdetail/CCL1495496720J40769963808.htm",
+          "source_title": "南京华瑞私募基金管理有限公司招聘 · 智联招聘",
+          "source_content_hash": "48860215e99e0f0c779512c0a369e5b2b2b816412dd777221a87221e47950058",
+          "quote": "南京华瑞私募基金管理有限公司（备案号：P1074862）是一家专注于私募股权投资的专业机构，坚持市场化、专业化的投资理念，聚焦前沿科技创新，投早、投小、投长期、投硬科技。",
+          "quote_hash": "74e4b43aae634acda6567a0b3b92d8fb81a6ef1c4f22ff9402fcdd940ed2049b"
+        },
+        {
+          "source_id": "huarui_nuaa",
+          "source_url": "https://www.nuaa.edu.cn/2024/1120/c852a358838/page.htm",
+          "source_title": "我校举行第二届“华瑞杯”科创融合成果转化大赛颁奖仪式 · 南京航空航天大学",
+          "source_content_hash": "913cfdae2554767b70d3bba25aa012892757c8423bc82720a20405e4b9cebb7c",
+          "quote": "华瑞时尚集团与华瑞创新奖项目团队达成投资合作并签订投资协议。",
+          "quote_hash": "22a2af2ed974b5e6c8cbceaf90ef174f0c60cb3bbf7722f78da10be315bf32a1"
+        },
+        {
+          "source_id": "huarui_registration",
+          "source_url": "https://www.jiangning.gov.cn/xwzx/jrjn/202609/t20260902_5903723.html",
+          "source_title": "华瑞创投管理人备案信息 · 南京市江宁区人民政府",
+          "source_content_hash": "2650b5846bc8b6162144ad9551fcb864ca71b3369fc100ed06e4f350f758d8ac",
+          "quote": "于2024年4月成立华瑞创投，同年9月通过中基协备案。",
+          "quote_hash": "7d758e47a62bee434c54cce49bd3a5e17004d83c31354c22616e8e11485e9bb9"
+        },
+        {
+          "source_id": "huarui_parent_background",
+          "source_url": "https://www.jiangning.gov.cn/xwzx/jrjn/202609/t20260902_5903723.html",
+          "source_title": "华瑞时尚集团背景 · 南京市江宁区人民政府",
+          "source_content_hash": "2650b5846bc8b6162144ad9551fcb864ca71b3369fc100ed06e4f350f758d8ac",
+          "quote": "1993年成立的华瑞时尚集团，是江苏民营服装外贸行业先行者，深耕实业三十余年，扎根江宁、布局全球，搭建了成熟的供应链体系。",
+          "quote_hash": "654914e4fefdb306bcb971a74a86c2ea45e0c94775621ef521cc677ce52ec7d6"
+        },
+        {
+          "source_id": "huarui_nuaa_founder",
+          "source_url": "https://www.nuaa.edu.cn/2024/1120/c852a358838/page.htm",
+          "source_title": "康宜华履历 · 南京航空航天大学",
+          "source_content_hash": "913cfdae2554767b70d3bba25aa012892757c8423bc82720a20405e4b9cebb7c",
+          "quote": "华瑞时尚集团创始人、我校1980级校友康宜华。",
+          "quote_hash": "ad86aa82527ce365826565b245fe1942ae5aea1c6219fbc96274b94cf857e85e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

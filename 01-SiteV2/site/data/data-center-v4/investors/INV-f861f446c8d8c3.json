@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,105 @@
       }
     ],
     "public_profile": {
+      "summary": "厦门创投即厦门市创业投资有限公司，是厦门金圆投资集团全资子公司和市属国有金融服务企业。公司受托管理政府产业引导基金，也设立市场化基金，围绕智能制造、新能源和新材料等产业链开展投资。",
+      "coverage_note": "基金数量与总规模为公司官网自报的合并口径，涵盖直接管理或参股基金，不等同于厦门创投自身资产或投资回报。融资库中的2026年硕橙科技D+记录引用的36氪页面实际列出的是2021年B+轮历史投资人；当前资料不足以确认厦门创投参与了D+轮。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "厦门创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "founding",
+          "label": "成立与股东背景",
+          "value": "成立于2011年12月30日，是厦门金圆投资集团全资子公司。",
+          "source_id": "xiamen_vc_about"
+        },
+        {
+          "field": "fund_management",
+          "label": "政府产业基金",
+          "value": "受托管理厦门市产业引导基金、国家新兴产业创投计划参股基金和厦门市国企战略发展基金等。",
+          "source_id": "xiamen_vc_about"
+        },
+        {
+          "field": "market_funds",
+          "label": "市场化投资",
+          "value": "发起设立市场化基金，围绕智能制造、新能源、新材料产业链布局。",
+          "source_id": "xiamen_vc_strategy"
+        },
+        {
+          "field": "scale",
+          "label": "基金管理与参股规模",
+          "value": "公司官网称其直接管理或参股近百只基金，基金总规模超过人民币2,000亿元；此为基金组合口径，不代表单家基金规模。",
+          "source_id": "xiamen_vc_scale"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011-12-30",
+          "description": "厦门市创业投资有限公司成立。",
+          "source_id": "xiamen_vc_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：硕橙科技 · D+轮 · 2026-08-18 · B+轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "36氪项目页将厦门创投列为硕橙科技2021年B+轮投资方。融资库2026年D+记录指向这条历史轮次来源，不能据此确认其参与D+轮。",
           "source_id": "FISRC-c00e3514a8fe23f2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "厦门市创业投资有限公司",
+          "url": "https://ct.xmjyjt.com/ct/index.html",
+          "source_id": "xiamen_vc_about"
+        },
+        {
+          "kind": "email",
+          "label": "官方网站列示的联系邮箱",
+          "value": "jyjt@xmjyjt.com",
+          "url": "https://ct.xmjyjt.com/ct/index.html",
+          "source_id": "xiamen_vc_public_contacts"
+        },
+        {
+          "kind": "phone",
+          "label": "公司电话",
+          "value": "+86-592-3502758",
+          "url": "https://ct.xmjyjt.com/ct/index.html",
+          "source_id": "xiamen_vc_public_contacts"
+        },
+        {
+          "kind": "address",
+          "label": "办公地址",
+          "value": "厦门市思明区展鸿路82号厦门金融中心大厦45层",
+          "url": "https://ct.xmjyjt.com/ct/index.html",
+          "source_id": "xiamen_vc_public_contacts"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "xiamen_vc_about",
+          "source_url": "https://ct.xmjyjt.com/ct/index.html",
+          "source_title": "厦门市创业投资有限公司 - 公司简介",
+          "source_content_hash": "63827501feaac978e641d8ec3d57a2c0d48b33db8ff7710c8b1f54f7152b8b28",
+          "quote": "厦门市创业投资有限公司成立于2011年12月30日，是厦门金圆投资集团全资子公司，受托管理政府产业基金并发起市场化投资基金。",
+          "quote_hash": "4154df4b12cc51eb2fffc262eb428e45713faabcebddf0e87308b5030cd6927a"
+        },
+        {
+          "source_id": "xiamen_vc_scale",
+          "source_url": "https://ct.xmjyjt.com/ct/index.html",
+          "source_title": "厦门市创业投资有限公司 - 公司简介",
+          "source_content_hash": "7f31b53a5de08fd37cdbfb666d53bc361a128c2bf6a6816294984c3b1ecc488e",
+          "quote": "截至官网披露时，厦门创投直接管理或参股投资各类基金近百只，基金总规模超过两千亿元。",
+          "quote_hash": "2f9bd1c23bc18e8897741d8ddfa0436cb63ddf816790229faa3802b1d2e1399d"
+        },
+        {
+          "source_id": "xiamen_vc_strategy",
+          "source_url": "https://ct.xmjyjt.com/ct/index.html",
+          "source_title": "厦门市创业投资有限公司 - 公司简介",
+          "source_content_hash": "47f56c84d2d4a5b5101b67c1a9c7f55cd1c063a608428a2b60ea895b7145e7a1",
+          "quote": "围绕智能制造、新能源、新材料等产业链上下游主动挖掘优质企业。",
+          "quote_hash": "c53e46576abc6acfe68f50000d049d73b73b9bc058af3356a080dea5a348ffeb"
+        },
         {
           "source_id": "FISRC-c00e3514a8fe23f2",
           "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
@@ -151,9 +235,17 @@
           "source_content_hash": "03b52d98e682698a",
           "quote": "B+轮 2021-10 近亿人民币 阳光融汇资本 ， 厦门创投 ， 顺为资本",
           "quote_hash": "216760a676cc437891f25fbe69c57b2986fecac667d68a1fc5af7c2ab8da9a4f"
+        },
+        {
+          "source_id": "xiamen_vc_public_contacts",
+          "source_url": "https://ct.xmjyjt.com/ct/index.html",
+          "source_title": "厦门市创业投资有限公司 - 联系我们",
+          "source_content_hash": "43bd068f2c367fe60d27459a54a08d3ac885bd4c0042f9800c0b7b51f30e139a",
+          "quote": "电话：86-592-3502758；邮箱：jyjt@xmjyjt.com；地址：厦门市思明区展鸿路82号厦门金融中心大厦45层。",
+          "quote_hash": "11c049f25a8f5f390965c118d96a15f6681804461190230712d4939982fc153c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

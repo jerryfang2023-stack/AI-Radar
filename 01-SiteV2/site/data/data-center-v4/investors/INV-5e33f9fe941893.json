@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,157 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cherubic Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2024-01-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Cherubic Ventures 是一家全球种子期风险投资机构，官网称其面向尚未实现产品市场匹配的创业公司。机构在美国和大中华区寻找技术型企业，投资不限定行业，并表示通常很早成为公司的首位机构投资人。About 页面称其 2014 年成立，而十周年新闻稿称 Founded in 2015，公开年份口径存在差异。",
+      "facts": [
         {
-          "description": "融资来源记录：Inference.ai · 种子轮 · 2024-01-30 · 本轮领投 · $4 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-177fc20098275686"
+          "field": "founded_year_about_page",
+          "label": "成立年份（About 页面）",
+          "value": "About 页面称成立于 2014 年。",
+          "source_id": "cherubic_about"
+        },
+        {
+          "field": "founded_year_press_release",
+          "label": "成立年份（十周年新闻稿）",
+          "value": "十周年新闻稿称成立于 2015 年，与 About 页面标注的 2014 年不同。",
+          "source_id": "cherubic_press"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "Pre-seed",
+            "Seed",
+            "Pre-product/market fit"
+          ],
+          "source_id": "cherubic_about"
+        },
+        {
+          "field": "geography_and_sectors",
+          "label": "投资地域与领域",
+          "value": "重点关注美国和大中华区；官网称投资具有技术驱动特征的早期企业，行业不设单一限制。",
+          "source_id": "cherubic_contact"
+        },
+        {
+          "field": "initial_check_size",
+          "label": "官网披露的首笔支票区间",
+          "value": "通常为 50 万至 100 万美元；机构表示会领投，也会与其他投资人共同投资。",
+          "source_id": "cherubic_contact"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "组合支持",
+          "value": "利用美国与大中华区网络分享市场经验，并参与招聘面试、融资演练及客户、投资人与领域专家引荐。",
+          "source_id": "cherubic_contact"
+        },
+        {
+          "field": "team_experience",
+          "label": "团队与履历",
+          "value": [
+            "Matt Cheng — 创始人、Founder & Solo GP；创办 Cherubic 前联合创办 Tian-Ge 与 91APP，两家公司均上市；官网称其也是多个独角兽公司的早期投资人。",
+            "Danielle Dudum — 合伙人，负责美国投资与运营；此前在 Google 近 8 年，建设并领导国际销售与运营团队。",
+            "Tina Cheng — 合伙人，负责新投资与全球组合管理；曾在 Yahoo 与 Cisco 工作，并创办教育科技公司。",
+            "Pierre Arys — 合伙人、科技创业者；此前联合创办机器学习创业公司 Diamond，曾在 8VC 从事机构投资。",
+            "Snow Hua — 合伙人，负责亚洲投资者关系及中国投资与组合管理；此前在 Sina 任市场职务。"
+          ],
+          "source_id": "cherubic_team"
+        },
+        {
+          "field": "portfolio_network",
+          "label": "机构自报组合网络",
+          "value": "官网当前介绍称拥有 200 多家组合公司，并连接 500 多位创始人、顾问与机构投资者。",
+          "source_id": "cherubic_about"
+        },
+        {
+          "field": "self_reported_scale_and_outcomes",
+          "label": "十周年新闻稿披露的规模与历史成果",
+          "value": "机构 2026-01-08 发布的十周年新闻稿称管理资产为 4.62 亿美元，组合估值合计超过 520 亿美元，并报告五次 IPO 和十五次并购；这些为机构整体自报口径，不能直接视作基金回报。",
+          "source_id": "cherubic_press"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "机构官网记载Cherubic Ventures于2014年成立。",
+          "source_id": "cherubic_about"
+        },
+        {
+          "date": "2024",
+          "description": "机构在 2025 年十周年公告中称，Fund VI 于 2024 年推出。",
+          "source_id": "cherubic_press"
+        },
+        {
+          "date": "2025-10-08",
+          "description": "在台北举办十周年全球峰会；机构称其组合公司累计从后续投资人募集超过 20 亿美元。",
+          "source_id": "cherubic_press"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Inference.ai · 种子轮 · 2024-01-30 · 公开报道列出Cherubic Ventures、Maple VC与Fusion Fund参与400万美元融资；本库记录的轮次总额不是Cherubic的单笔出资。",
+          "source_id": "FISRC-177fc20098275686"
+        },
+        {
+          "description": "官网十周年公告列出 Hims & Hers、Flexport、Astranis 与 Paidy 等组合案例，并称组合企业后续融资累计超过 20 亿美元；该指标是后续融资总额，不是基金回报率。",
+          "source_id": "cherubic_press"
+        }
+      ],
+      "experience_summary": "机构团队披露的经历覆盖创业、互联网运营、科技投资、投资者关系和组合管理；公司上市、收购等案例按官网自述记录，不推断个人收益。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Cherubic Ventures",
+          "url": "https://cherubic.com/about/",
+          "source_id": "cherubic_about"
+        },
+        {
+          "kind": "email",
+          "label": "BP/Deck投稿邮箱",
+          "value": "bp@cherubic.com",
+          "url": "https://cherubic.com/contact/",
+          "source_id": "cherubic_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系邮箱",
+          "value": "pr@cherubic.com",
+          "url": "https://cherubic.com/contact/",
+          "source_id": "cherubic_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cherubic_about",
+          "source_url": "https://cherubic.com/about/",
+          "source_title": "About | Cherubic Ventures",
+          "source_content_hash": "bb1e1639cda900e1fbe723a014de8bba1e13c492879f12477ed3096cc5747c89",
+          "quote": "Founded in 2014, Cherubic Ventures is a global seed-stage fund investing in pre-product/market fit companies. To date, Cherubic has a global network of more than 200 portfolio companies, as well as 500+ founders, advisors, and institutional investors.",
+          "quote_hash": "fb45f9ec26664ae268a5bff1e4bf934490fcc7e69cd8cd4b69fa0da130a123b5"
+        },
+        {
+          "source_id": "cherubic_team",
+          "source_url": "https://cherubic.com/about/",
+          "source_title": "About and Core Team | Cherubic Ventures",
+          "source_content_hash": "bb1e1639cda900e1fbe723a014de8bba1e13c492879f12477ed3096cc5747c89",
+          "quote": "Prior to founding Cherubic, Matt co-founded Tian-Ge in China and 91APP in Taiwan, both of which went public at over $1B+ in market cap. … Danielle is a Partner at Cherubic Ventures and oversees Cherubic’s US investments and operations. Prior to joining Cherubic, Danielle spent nearly 8 years at Google building and leading international sales and operations teams. … Pierre is a technology entrepreneur and partner at Cherubic Ventures. Prior to joining Cherubic, Pierre co-founded Diamond, an ML startup solving data and information retrieval problems. … Tina is a Partner at Cherubic Ventures. Tina is responsible for driving Cherubic’s new investments and leading portfolio management globally. … Snow joined Cherubic Ventures as Director of Operations in January 2014 and currently serves as a Partner. She oversees investor relations across Asia and leads Cherubic’s investment and portfolio management activities in China.",
+          "quote_hash": "f4432d8d264ea5bc181c45146591ba3068cfbe1b279b4eaeb6758f273a217204"
+        },
+        {
+          "source_id": "cherubic_contact",
+          "source_url": "https://cherubic.com/contact/",
+          "source_title": "Contact | Cherubic Ventures",
+          "source_content_hash": "a1abab661c38c4b1ab22bad011873e020e63cf0a656bbb844c7a599eac3015be",
+          "quote": "We invest in promising early-stage startups based in Greater China and the US. We are sector-agnostic and will look at any company enabled by technology. … Our first check size usually ranges from $0.5M to $1M USD. We lead and happily co-invest alongside others. … It’s never too early to start a conversation with us. We are usually the first institutional investor of the companies we invest in. … With a network across the US and Greater China, we’re eager to share best practices, business model innovation and emerging consumer trends from abroad to inspire what our founders are building locally. We love to get our hands dirty too - and happily roll up our sleeves to join your interview panels, rehearse your pitch, or introduce you to future customers/investors/domain experts. … BP/Deck Sumbission: bp@cherubic.com Media Inquiries: pr@cherubic.com",
+          "quote_hash": "77c5e101c73fa5aeb964612aa83bfe2502c0c26a1a17832711bb839dcc0c2a08"
+        },
+        {
+          "source_id": "cherubic_press",
+          "source_url": "https://cherubic.com/press/cherubic-ventures-celebrates-10th-anniversary-in-taipei-marking-a-decade-of-global-impact/",
+          "source_title": "Cherubic Ventures Celebrates 10th Anniversary in Taipei",
+          "source_content_hash": "b5d40bd719e336d3a7e98af613bc8df473a691a321722fdd039287a1c744c666",
+          "quote": "Founded in 2015, Cherubic Ventures has raised five funds over the past decade. The firm now manages US$462 million in assets under management (AUM). To date, Cherubic has supported five initial public offerings (IPOs) and completed fifteen mergers and acquisitions (M&A). Its global portfolio is collectively valued at more than US$52 billion. … In 2024, the firm launched its sixth fund (Fund VI). … Together, Cherubic Ventures’ portfolio companies have raised more than US$2 billion in follow-on funding from global investors.",
+          "quote_hash": "f1c9d7511d3cf6994302e527bfea1a17565f44b3a8527ea8124a2b063299b586"
+        },
         {
           "source_id": "FISRC-177fc20098275686",
           "source_url": "https://techcrunch.com/2024/01/30/inference-ai-matches-ai-workloads-with-cloud-gpu-compute/",
@@ -161,7 +297,39 @@
           "quote_hash": "18fad78b8a29f968ad4cba21dcd780cde05d2eb49d7e2aa06f955c1d307a2dce"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "机构策略、人员履历和联系渠道按公开官网资料整理；融资案例为本库收录的可追溯样本，不代表完整投资组合或机构回报。人物经历嵌入机构资料，仅记录官网披露且能确认角色的人员；未把轮次总额写成机构单笔出资。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "机构官网记载Cherubic Ventures于2014年成立。",
+          "source_hash": "a286582d898d440f4ed6726faf37bc0c1289cd1c904a4ae04a35048ea6f372de",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Inference.ai · 种子轮 · 2024-01-30 · 公开报道列出Cherubic Ventures、Maple VC与Fusion Fund参与400万美元融资；本库记录的轮次总额不是Cherubic的单笔出资。",
+          "source_hash": "1390150afd7b9280fc02ab9781acb2d04f2c116aa2d931b34128b5040777fa4c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "BP/Deck投稿邮箱",
+          "source_hash": "03db88107f39f14877e356d22abb75c32d34d274e8d8fcd067a7fa76aa6f09f9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,66 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海交大AI未来基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "上海交大AI未来基金由上海交通大学人工智能学院发起、校友支持，围绕“科研+科创”双轮驱动青年AI人才与成果转化。官方资料称基金包含科研支持计划及面向创业师生的天使投资计划；公开来源未披露基金规模或单项目投资额。",
+      "facts": [
+        {
+          "field": "initiator_and_support",
+          "label": "发起与支持方",
+          "value": "由上海交通大学人工智能学院发起，交大海内外杰出校友共同助力。",
+          "source_id": "sjtu_ai_fund"
+        },
+        {
+          "field": "research_program",
+          "label": "科研种子计划",
+          "value": "面向学院青年科学家，提供收入支持并支持科研团队组建。",
+          "source_id": "sjtu_ai_programs"
+        },
+        {
+          "field": "startup_program",
+          "label": "科创种子计划",
+          "value": "面向全校创业师生，通过天使投资支持创新创业和科技成果转化。",
+          "source_id": "sjtu_ai_programs"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-07-26",
+          "description": "上海交大在世界人工智能大会期间发布AI未来基金。",
+          "source_id": "sjtu_ai_fund"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：穹彻智能 · 轮次未披露 · 2026-06-18 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "无锡市太湖新城发展集团旗下无锡资本的融资报道将上海交大AI未来基金列为穹彻智能新一轮投资方；报道没有披露该基金的单独投资金额。",
           "source_id": "FISRC-e3b51be471b79167"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "发起学院官方网站（非基金专属联络渠道）",
+          "value": "上海交通大学人工智能学院",
+          "url": "https://ai.sjtu.edu.cn/",
+          "source_id": "sjtu_ai_fund"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sjtu_ai_fund",
+          "source_url": "https://news.sjtu.edu.cn/mtjj/20250728/213328.html",
+          "source_title": "上海交通大学新闻学术网｜发布AI未来基金",
+          "source_content_hash": "60acfc1bb2474e035b42f72aad7670740313997485d8262db03a0e1034b6203c",
+          "quote": "该基金由上海交大人工智能学院发起、上海交大海内外杰出校友共同助力，重点关注全球青年AI人才链接。",
+          "quote_hash": "60acfc1bb2474e035b42f72aad7670740313997485d8262db03a0e1034b6203c"
+        },
+        {
+          "source_id": "sjtu_ai_programs",
+          "source_url": "https://news.sjtu.edu.cn/mtjj/20250728/213328.html",
+          "source_title": "上海交通大学新闻学术网｜AI未来基金科研与科创计划",
+          "source_content_hash": "df49e962736b39e5b728d7cb3a67f839173d4270bf61b7bc171384233a294114",
+          "quote": "科研种子计划面向学院青年科学家；科创种子计划面向全校创业师生，通过天使投资夯实创新创业与成果转化基础。",
+          "quote_hash": "df49e962736b39e5b728d7cb3a67f839173d4270bf61b7bc171384233a294114"
+        },
         {
           "source_id": "FISRC-e3b51be471b79167",
           "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
@@ -161,7 +206,11 @@
           "quote_hash": "9a56d47990c9b47b90dd3b1b9aa7578bbbecb53cd57d2bce6b90d2cd9b0972cf"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "该基金为上海交大人工智能学院发起的科研与创业支持项目。公开资料未披露独立法律主体、管理人、基金规模或具体出资额；不将穹彻智能融资总额归为该基金投资金额。",
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

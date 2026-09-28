@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -140,14 +140,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "本坚基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "36氪机构档案将“本坚基金”对应至杭州本坚私募基金管理有限公司，公开交易文件可交叉验证该管理人名称及登记编号，上市公司年报记录其作为有限合伙企业普通合伙人的认缴出资。36氪属于机构信息目录；未核验到该机构的官方团队页、现行管理规模或公开联系渠道。融资金额及管理人认缴额均不代表投资回报。",
+      "summary": "本坚基金的公开机构档案对应杭州本坚私募基金管理有限公司。36氪资料记载该公司成立于2020年，法定代表人为金炳土、注册资本人民币2000万元；交易所披露文件列出私募基金管理人登记编号 P1072224。长川科技年报记录该管理人作为杭州封测前沿创业投资合伙企业（有限合伙）的普通合伙人认缴50万元。公开融资报道另将本坚基金列为息壤开物融资的跟投机构，未披露其单笔出资额。",
+      "facts": [
+        {
+          "field": "fund_manager_legal_name",
+          "label": "对应基金管理人",
+          "value": "杭州本坚私募基金管理有限公司（36氪机构档案对应名称）",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "field": "founded_date",
+          "label": "成立日期",
+          "value": "2020-11-04（36氪机构档案）",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "field": "legal_representative",
+          "label": "法定代表人",
+          "value": "金炳土（36氪机构档案）",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币2000万元（36氪机构档案）",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "field": "fund_manager_registration",
+          "label": "基金管理人登记编号",
+          "value": "P1072224",
+          "source_id": "benjian_szse_manager"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020-11-04",
+          "description": "36氪机构档案记载杭州本坚私募基金管理有限公司成立。",
+          "source_id": "benjian_36kr_profile"
+        },
+        {
+          "date": "2026-04",
+          "description": "长川科技年报披露，杭州本坚私募基金管理有限公司与长川科技、王艳华共同设立杭州封测前沿创业投资合伙企业（有限合伙），由本坚担任普通合伙人。",
+          "source_id": "benjian_cninfo_gp"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "长川科技2025年年报披露，本坚作为杭州封测前沿创业投资合伙企业（有限合伙）的普通合伙人认缴50万元；这是合伙企业设立出资安排，不是基金投资收益或回报。",
+          "source_id": "benjian_cninfo_gp"
+        },
+        {
+          "description": "融资报道将本坚基金列为息壤开物种子轮及天使轮融资的跟投机构之一；报道未披露其单笔出资金额，融资轮次总额不等于本坚基金出资额。",
           "source_id": "FISRC-41f074703465b30a"
         }
       ],
@@ -160,9 +206,33 @@
           "source_content_hash": "5f3fdf302b68696b",
           "quote": "由 敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
+        },
+        {
+          "source_id": "benjian_36kr_profile",
+          "source_url": "https://pitchhub.36kr.com/organization/1828830927922049",
+          "source_title": "本坚基金 | 投资机构信息-36氪",
+          "source_content_hash": "a98b7ac9b088dcc2c3818257d4699a400f8bcbaf9206c1f58d62f02cd6395c84",
+          "quote": "杭州本坚私募基金管理有限公司成立于2020-11-04，法定代表人为金炳土，注册资本为2000万元人民币。",
+          "quote_hash": "40d57578be7baaf665c7df6639d5bbc7ed1374906461bde90ff0b28b7d87d058"
+        },
+        {
+          "source_id": "benjian_cninfo_gp",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-04-25/1225193283.PDF",
+          "source_title": "杭州长川科技股份有限公司2025年年度报告",
+          "source_content_hash": "6f44ed973c56aef86207f250f7498b4d984c5752e651489f7d2aff5a5c9da4eb",
+          "quote": "杭州本坚私募基金管理有限公司作为普通合伙人认缴出资 50.00 万元。",
+          "quote_hash": "7d27cfbf324eae1ab6ffd82aad0bd179a3d6b293b74bef6b54d9d912b7cb839f"
+        },
+        {
+          "source_id": "benjian_szse_manager",
+          "source_url": "https://reportdocs.static.szse.cn/UpFiles/rasinfodisc1/202606/RAS_202606_101905DD21253821184EBC9BE8DE69D9801B43.pdf",
+          "source_title": "深圳证券交易所披露文件：基金管理人及登记编号",
+          "source_content_hash": "64100237b0dcdbff3e20033b3ed7ecfd2b7c0407d6050dad2fc7df4cd3a47423",
+          "quote": "基金管理人 杭州本坚私募基金管理有限公司 登记编号 P1072224",
+          "quote_hash": "080b61d58782ceef00f526fe3eeafb8472faa2bb224d2e8b25a101072379987c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

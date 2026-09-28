@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -130,21 +130,66 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "昆高新集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "昆高新集团通过全资子公司昆山高新创业投资有限公司开展股权投资及基金合作。昆山市政府披露，子公司与市场化机构设立的顺融启进四期基金目标规模6亿元，聚焦数字经济、新材料、新能源及智能制造等方向；该数字属于具体子基金，不是集团管理规模。",
+      "facts": [
+        {
+          "field": "investment_platform",
+          "label": "集团股权投资平台",
+          "value": "昆山高新创业投资有限公司是昆高新集团全资子公司，专业从事股权投资。",
+          "source_id": "kunshan_lp_2025"
+        },
+        {
+          "field": "fund_cooperation",
+          "label": "基金合作案例",
+          "value": "昆山高新创投联合顺融投资管理有限公司及多家市场机构设立顺融启进四期基金，目标规模6亿元。",
+          "source_id": "kunshan_group_fund_2024"
+        },
+        {
+          "field": "fund_strategy",
+          "label": "上述基金方向",
+          "value": [
+            "数字经济",
+            "新材料",
+            "新能源",
+            "智能制造",
+            "低空经济",
+            "人形机器人",
+            "半导体"
+          ],
+          "source_id": "kunshan_group_fund_2024"
+        },
+        {
+          "field": "subsidiary_track",
+          "label": "子公司基金合作披露",
+          "value": "2025年政府报道：昆高新创投参与设立30只基金，基金规模合计超过420亿元；数据属于全资子公司，非集团单只基金规模。",
+          "source_id": "kunshan_lp_2025"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · A+轮投资 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "数据库关联的驰芯半导体A+轮来源页面标注日期为2024年9月19日、金额未公开；融资库记录日期为2026年9月23日。该来源只支持页面所载历史披露，不能独立证明2026年有新一轮出资。",
           "source_id": "FISRC-d7c3cbdfafeaf4fc"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "kunshan_group_fund_2024",
+          "source_url": "https://www.ks.gov.cn/kss/ttxw/202405/02ccc277f2674126820b30a93a87a432.shtml",
+          "source_title": "昆山市人民政府｜昆高新集团下好资本招商先手棋",
+          "source_content_hash": "e68e86b4db3e75836506a2b1e500defadf205610b38ee84ae58977feef73c0e4",
+          "quote": "昆山高新创业投资有限公司联合苏州顺融投资管理有限公司与多家市场机构参股设立基金，目标基金规模6亿元。",
+          "quote_hash": "e68e86b4db3e75836506a2b1e500defadf205610b38ee84ae58977feef73c0e4"
+        },
+        {
+          "source_id": "kunshan_lp_2025",
+          "source_url": "https://data.ks.gov.cn/kss/ksyw/202504/2c1cd1f7eb8f4fb99377cf0fcebd48f0.shtml",
+          "source_title": "昆山市人民政府｜昆高新创投荣登2024年度中国最佳国资LP榜单",
+          "source_content_hash": "40ea28337897524d83eb6b1e0384d1ee45238db6725b220af5956a81209b46b3",
+          "quote": "昆高新创投作为昆高新集团专业从事股权投资的全资子公司，与市场机构参与设立30只基金，基金规模超420亿元。",
+          "quote_hash": "40ea28337897524d83eb6b1e0384d1ee45238db6725b220af5956a81209b46b3"
+        },
         {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
           "source_url": "https://m.jobui.com/company/16905688/financing/",
@@ -154,7 +199,11 @@
           "quote_hash": "eaecb19ffe4336c4b7b1b934ae3331d0e70aaa8a6da3118abbd80e9bc7cd9fa7"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "基金规模、基金合作及投资平台业绩需区分昆高新集团与其全资子公司昆山高新创投；6亿元是顺融启进四期目标规模，420亿元是子公司参与设立基金的合计规模。驰芯半导体关联来源显示2024年9月19日，和融资库所列2026年9月23日不同，未将其解释为新的2026年投资。",
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

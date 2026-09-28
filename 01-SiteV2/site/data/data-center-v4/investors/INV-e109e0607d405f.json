@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,26 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Growth Equity at Goldman Sachs Alternatives 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b235ace767812393"
-        }
-      ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
       "sources": [
+        {
+          "source_id": "higgsfield_series_b_2026",
+          "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+          "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+          "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+          "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+          "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+        },
+        {
+          "source_id": "goldman_alternatives",
+          "source_url": "https://www.goldmansachs.com/what-we-do/our-businesses",
+          "source_title": "Goldman Sachs — asset management and alternatives",
+          "source_content_hash": "161c5c87c5c967489c2db7bb6b208b89d3f15d6369e3dd90dc4b8831232de6a3",
+          "quote": "Investing in the full spectrum of alternatives",
+          "quote_hash": "368f83d1063bb85093299efa8c8a2a7c52b9a9d1cb5650d88c232e212d968059"
+        },
         {
           "source_id": "FISRC-b235ace767812393",
           "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -161,7 +166,74 @@
           "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "融资公告中的 “Growth Equity at Goldman Sachs Alternatives” 指 Goldman Sachs Alternatives 体系内的成长股权投资业务线；Goldman Sachs 官网将 growth equity 列为 Alternatives 的投资类别。本档案将其作为集团内投资业务单元描述，不视为单独注册机构。",
+      "coverage_note": "投资方名称及其参与 Higgsfield 融资由发行方公告支持；growth equity 属于 Goldman Sachs Alternatives 的业务分类由 Goldman Sachs 官网支持。此处的资产管理平台规模、业务描述均为集团层面信息，不等同于该投资团队单独的资产规模或业绩。整轮金额 4 亿美元不是该团队的单笔投资额。",
+      "facts": [
+        {
+          "field": "organization_relationship",
+          "label": "机构关系",
+          "value": "Growth Equity at Goldman Sachs Alternatives 是 Goldman Sachs Alternatives 体系内的成长股权投资业务，不作为独立法人描述。",
+          "source_id": "goldman_alternatives"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资类别",
+          "value": "Goldman Sachs 官网列示 Alternatives 覆盖私募股权、成长股权、私募信贷、房地产、基础设施及对冲基金。",
+          "source_id": "goldman_alternatives"
+        },
+        {
+          "field": "group_context",
+          "label": "集团业务背景",
+          "value": "该业务属于 Goldman Sachs Asset & Wealth Management 的另类投资平台；此为集团层级背景，不代表团队独立规模。",
+          "source_id": "goldman_alternatives"
+        }
+      ],
+      "current_roles": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_id": "FISRC-b235ace767812393"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Goldman Sachs Asset Management 官网",
+          "value": "Goldman Sachs Asset Management",
+          "url": "https://am.gs.com/",
+          "source_id": "goldman_alternatives"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "融资公告中的 “Growth Equity at Goldman Sachs Alternatives” 指 Goldman Sachs Alternatives 体系内的成长股权投资业务线；Goldman Sachs 官网将 growth equity 列为 Alternatives 的投资类别。本档案将其作为集团内投资业务单元描述，不视为单独注册机构。",
+          "source_hash": "bb5eb58cbe4a3f97d34d4a747c3132c1c7a53deeee57bb5ccf6667353a9344ef",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.187Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Goldman Sachs Asset Management 官网",
+          "source_hash": "04ec27b28ef36615fa27ef46370943c8bd651e1be0b8361787be4ee204b555c8",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

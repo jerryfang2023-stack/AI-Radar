@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,95 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Blossom Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Blossom’s founder support and portfolio details are firm-published. The portfolio is selected, not a complete audited performance record. Arrakis’s USD 38 million financing announcement includes a USD 30 million Series A led by Blossom; neither amount is Blossom’s individual check.",
+      "summary": "Blossom Capital是一家专注于欧洲的风险投资机构，与雄心勃勃的欧洲创始人合作，并通过务实的运营帮助和后续融资支持公司。管理合伙人Ophelia Brown表示，她此前的风险投资经历包括与Robinhood和Supercell合作。该公司的公开投资组合涵盖企业软件、安全、AI和消费科技。",
+      "facts": [
+        {
+          "field": "geographic_focus",
+          "label": "地理重点",
+          "value": "European founders and technology companies seeking to scale globally.",
+          "source_id": "blossom_home"
+        },
+        {
+          "field": "leadership",
+          "label": "管理合伙人",
+          "value": "Ophelia Brown founded Blossom Capital; the team also lists Investment Partner Maxim Frenkel and other operating leaders.",
+          "source_id": "blossom_team"
+        },
+        {
+          "field": "founder_background",
+          "label": "Ophelia Brown的背景",
+          "value": "She describes early venture experience partnering with teams including Robinhood and Supercell before founding Blossom.",
+          "source_id": "blossom_ophelia"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "监管状态",
+          "value": "The founder profile states that Blossom is authorised and regulated by the UK Financial Conduct Authority (reference 1009865).",
+          "source_id": "blossom_ophelia"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "该公司的投资组合页面报告了部分精选成果，包括Cado于2025年被Darktrace收购，以及Blossom领投Arrakis的3000万美元A轮融资。",
+          "source_id": "blossom_portfolio"
+        },
+        {
+          "description": "一份2026年7月的融资报告将Blossom Capital列为Arrakis 3000万美元A轮融资的领投方。Arrakis宣布总融资额为3800万美元；这些是公司融资金额，不是Blossom的单笔投资额。",
           "source_id": "FISRC-ac4fd601f33650ff"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站和团队",
+          "value": "Blossom Capital",
+          "source_id": "blossom_home",
+          "url": "https://www.blossomcap.com/"
+        },
+        {
+          "kind": "website",
+          "label": "团队和监管详情",
+          "value": "Blossom Capital team",
+          "source_id": "blossom_ophelia",
+          "url": "https://www.blossomcap.com/team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "blossom_home",
+          "source_url": "https://www.blossomcap.com/",
+          "source_title": "Blossom Capital",
+          "source_content_hash": "706cc21c62c72fcafa686bc874371befd004b327ecdf59b1f583f887780b3187",
+          "quote": "We bring relentless belief and powerful support to Europe’s most visionary founders.",
+          "quote_hash": "505f09185b77fec3f36a75650c189370d1b0f94cedd715c1d9f1812a9cb4fab2"
+        },
+        {
+          "source_id": "blossom_portfolio",
+          "source_url": "https://www.blossomcap.com/portfolio",
+          "source_title": "Portfolio | Blossom Capital",
+          "source_content_hash": "b4eebbabb5fc52784a06f51da14cd0f9c19bce1af596a5ed9179ccc4b03513c0",
+          "quote": "Blossom led Arrakis’s $30m Series A round.",
+          "quote_hash": "708c7ff12b580c55dfcef72f234f73898b45713d30c55091aedfb6b99776115f"
+        },
+        {
+          "source_id": "blossom_team",
+          "source_url": "https://www.blossomcap.com/team",
+          "source_title": "Team | Blossom Capital",
+          "source_content_hash": "d56d0198caf9812f5434914ba48eceb1c5bc1ba52b2788a9223d2f7541533a2a",
+          "quote": "Ophelia Brown Managing Partner.",
+          "quote_hash": "2ee426e777121f6de59873a7b57cfe7e7667f633afdb444cd09a58a6b9a8469c"
+        },
+        {
+          "source_id": "blossom_ophelia",
+          "source_url": "https://www.blossomcap.com/team/ophelia-brown",
+          "source_title": "Ophelia Brown | Blossom Capital",
+          "source_content_hash": "ce63dc7566426e742c277cc3e1d9a0d10cbea8364ed901629a570e6d6e9835bb",
+          "quote": "partnering with some of the most exceptional teams early in my career - including Robinhood and Supercell.",
+          "quote_hash": "777f3e42ae5c66bde8c775fae576ac3820d29ad7b847565d089629612cbeec67"
+        },
         {
           "source_id": "FISRC-ac4fd601f33650ff",
           "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
@@ -161,7 +237,83 @@
           "quote_hash": "0032fc03c758699a4a66af3c8bb1a51b712d26e09681c325bddd327665fb0009"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Blossom Capital是一家专注于欧洲的风险投资机构，与雄心勃勃的欧洲创始人合作，并通过务实的运营帮助和后续融资支持公司。管理合伙人Ophelia Brown表示，她此前的风险投资经历包括与Robinhood和Supercell合作。该公司的公开投资组合涵盖企业软件、安全、AI和消费科技。",
+          "source_hash": "de55371169a75d231ecb1d7024a84c8b391a9e467d95fc32953e9d41e15b4480",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "地理重点",
+          "source_hash": "5d08aa082291ac8e2552838afafd8ce0ce52a5851c47565a6dc2872b519db2e0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "管理合伙人",
+          "source_hash": "edc8b8ec4ad6639d48c0cc891e67035cac9917f5073150237b74d4f0d94166bc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "Ophelia Brown的背景",
+          "source_hash": "3b0e6cb10a31af04c2079496adfab22e0b0eb81ec3642df0329dbb95e6707c00",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "监管状态",
+          "source_hash": "68b989f871f2b0028466359b0a6e6610c8a74534f2e83a5cab9237930cabd113",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "该公司的投资组合页面报告了部分精选成果，包括Cado于2025年被Darktrace收购，以及Blossom领投Arrakis的3000万美元A轮融资。",
+          "source_hash": "a21d40ace4cd6b3584a825aed885b2116eb6fce4f8dae11870638fdf0f555a4a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "一份2026年7月的融资报告将Blossom Capital列为Arrakis 3000万美元A轮融资的领投方。Arrakis宣布总融资额为3800万美元；这些是公司融资金额，不是Blossom的单笔投资额。",
+          "source_hash": "e56c6462d3209130be894d1979407d7701a5ca3d50b0cc489b38dc0ac9504eee",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站和团队",
+          "source_hash": "f2526258118b2e28a94d85eca8a41564ec163bd55d8e91bee60400955ce6e4d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "团队和监管详情",
+          "source_hash": "284730b7312467c45672950a644a81c943390768f34b7e59b92666e3cd44a1b0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

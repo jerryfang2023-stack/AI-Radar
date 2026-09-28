@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,16 +137,79 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "安赐资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "安赐官网自述安赐资产管理有限公司为协会备案的私募基金管理机构；官网同时在页脚使用“广州安赐投资有限公司”名称，上市公司文件还列出不同的安赐相关基金管理主体。本档案保留这些法律主体和品牌的来源原称，不推定它们彼此等同。官网目前仅能通过 HTTP 访问，所列公司资讯页面最新日期为 2018-02-02，因此未将旧页面邮箱、地址作为已确认的当前联系方式。成立年份在第三方档案间存在 2012 与 2014 等不同口径，未选用单一日期。官网列出的奖项是机构自述荣誉，不代表基金收益。",
+      "summary": "安赐资本官网将安赐资产管理有限公司介绍为经中国证券投资基金业协会备案、专注产业并购和投资的私募基金管理机构，总部在广州，并在北京、上海设有分部。官网列出的领域包括文化传媒、产业互联网、金融和创新服务。官网不同位置同时使用“安赐资产管理有限公司”和“广州安赐投资有限公司”；上市公司文件也记载安赐资产管理有限公司参与多个安赐相关基金管理主体。本档案按各来源分别呈现主体名称，不把品牌、管理人和基金实体混作同一法律主体。",
+      "facts": [
+        {
+          "field": "public_identity",
+          "label": "官网披露机构类型",
+          "value": "安赐资产管理有限公司；官网介绍其为经中国证券投资基金业协会备案、专注产业并购和投资的私募基金管理机构。该信息为官网自述，并不代表协会对能力或业绩背书。",
+          "source_id": "anci_company_identity_2026"
+        },
+        {
+          "field": "name_boundary",
+          "label": "官网使用的主体名称",
+          "value": "官网公司简介同时提及安赐资产管理有限公司和广州安赐投资有限公司；来源未说明二者可互换。",
+          "source_id": "anci_company_brand_entity_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露投资领域",
+          "value": "文化传媒、产业互联网、金融及创新服务等新兴领域；机构介绍称其专注产业并购和投资。",
+          "source_id": "anci_company_focus_2026"
+        },
+        {
+          "field": "geography_and_capital",
+          "label": "官网介绍的办公地点与注册资本",
+          "value": "官网自述总部位于广州、在北京和上海设有分部，并列示注册资本人民币 1 亿元；当前工商登记口径未在本次独立核实。",
+          "source_id": "anci_company_locations_2026"
+        },
+        {
+          "field": "team_background",
+          "label": "官网对团队来源的概述",
+          "value": "官网称团队成员主要来自投行、律师和会计师事务所、基金公司、创投及产业集团/上市公司；该页面未提供可核验的当前个人名单。",
+          "source_id": "anci_company_identity_2026"
+        },
+        {
+          "field": "manager_partner_2017",
+          "label": "2017 年公开文件披露的基金管理关系",
+          "value": "安赐资产管理有限公司被列为珠海安赐创业股权投资基金管理企业的合伙人（持有该管理企业 0.2% 出资）。",
+          "source_id": "anci_filing_2017_partner"
+        },
+        {
+          "field": "manager_registration_2017",
+          "label": "2017 年公开文件列示的管理人登记编号",
+          "value": "珠海安赐创业股权投资基金管理企业的登记编号为 P1006384。",
+          "source_id": "anci_filing_2017"
+        },
+        {
+          "field": "manager_partner_2020",
+          "label": "2020 年公开招股文件披露的另一基金管理关系",
+          "value": "安赐资产管理有限公司被列为珠海安赐共创投资基金管理企业的执行事务合伙人；该文件列示登记编号 P1008915。",
+          "source_id": "anci_filing_2020"
+        },
+        {
+          "field": "team_background",
+          "label": "官网对团队背景的概述",
+          "value": "官网称团队成员主要来自投行、律师和会计师事务所、基金公司、创投及产业集团/上市公司；该页面未提供可核验的当前个人名单。",
+          "source_id": "anci_team_background_2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：华清未央 · Pre-A轮 · 2026-06-01 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "安赐官网介绍页自述其获得 2015–2017 年间多项行业榜单与奖项，包括私募股权和并购机构类别。此处仅记录机构公开荣誉，不推定基金收益表现。",
+          "source_id": "anci_awards_2015_2017"
+        },
+        {
+          "description": "2017 年上市公司公开文件记录安赐资产管理有限公司为一个安赐相关基金管理企业的合伙人，并说明该管理企业的登记编号为 P1006384；文件同时披露其管理基金持有相关上市公司股份。该案例不等同于基金回报。",
+          "source_id": "anci_filing_2017_partner"
+        },
+        {
+          "description": "2026 年华清未央 Pre-A 融资报道将安赐资本列为本轮投资方，但没有披露安赐资本的个人出资金额；该融资总额不归为安赐单独投资额。",
           "source_id": "FISRC-c8f7d3c7af4bc00a"
         }
       ],
@@ -159,9 +222,97 @@
           "source_content_hash": "719dea70c671a252",
           "quote": "投资方包括安赐资本、华屹资本、盛世投资、芯能创投、洪泰基金、辛夷投资、海德资本、瀚晖资本等",
           "quote_hash": "e6f1ce4ea3834a3e001f0edae979a05a690aed6dd030ed064eee879a97c1273a"
+        },
+        {
+          "source_id": "anci_official_home_2026",
+          "source_url": "http://www.antscapital.com/",
+          "source_title": "安赐资本官网首页",
+          "source_content_hash": "e62f32baaf5ac826bac744b02fc4a06dd42ad5ae3d1c010195bdb7cc16549967",
+          "quote": "专注于产业并购和投资的私募基金管理机构。",
+          "quote_hash": "fc7931c43f8ad1e272fcd15efe0a710d60a086b7b7ca18d8ab4bcaa9c868b3a5"
+        },
+        {
+          "source_id": "anci_company_identity_2026",
+          "source_url": "http://www.antscapital.com/company/introduction.html",
+          "source_title": "公司简介 · 安赐资本官网",
+          "source_content_hash": "239ed139f251fcd92a06ef14da4b4ba455307da81c6bfd229aed893a6d7fc846",
+          "quote": "安赐资产管理有限公司是一家经中国证券基金业协会备案",
+          "quote_hash": "91b425027b6a66b6bdd5a9417597880dac33b117083d1d74c50ea2ae0098f7c9"
+        },
+        {
+          "source_id": "anci_company_locations_2026",
+          "source_url": "http://www.antscapital.com/company/introduction.html",
+          "source_title": "公司简介 · 安赐资本官网",
+          "source_content_hash": "239ed139f251fcd92a06ef14da4b4ba455307da81c6bfd229aed893a6d7fc846",
+          "quote": "公司总部位于广州，在北京和上海设有分部，注册资本1亿元。",
+          "quote_hash": "8cdcad56d03784f49ac0b9bb403b5d8ab48f9ca8a4b054ff6629e172aeae61e7"
+        },
+        {
+          "source_id": "anci_company_focus_2026",
+          "source_url": "http://www.antscapital.com/company/introduction.html",
+          "source_title": "公司简介 · 安赐资本官网",
+          "source_content_hash": "239ed139f251fcd92a06ef14da4b4ba455307da81c6bfd229aed893a6d7fc846",
+          "quote": "尤其是以文化传媒、产业互联网、金融及创新服务等新兴行业领域有着丰富的投资成果。",
+          "quote_hash": "37383eb245cdc40ba885c85a7abdda7c32a70e911a6a5d15e52141601ee97697"
+        },
+        {
+          "source_id": "anci_company_brand_entity_2026",
+          "source_url": "http://www.antscapital.com/company/introduction.html",
+          "source_title": "公司简介 · 安赐资本官网",
+          "source_content_hash": "239ed139f251fcd92a06ef14da4b4ba455307da81c6bfd229aed893a6d7fc846",
+          "quote": "广州安赐投资有限公司（简称“安赐”）",
+          "quote_hash": "a7b364aed69e327da36c2712b3e8d664f2c43fde66148a3e1927dc062bdba9e4"
+        },
+        {
+          "source_id": "anci_awards_2015_2017",
+          "source_url": "http://www.antscapital.com/company/introduction.html",
+          "source_title": "公司简介与荣誉 · 安赐资本官网",
+          "source_content_hash": "239ed139f251fcd92a06ef14da4b4ba455307da81c6bfd229aed893a6d7fc846",
+          "quote": "安赐连续2年成功跻身“中国最佳私募股权投资机构TOP50强”",
+          "quote_hash": "143faf7f9873f771d4ed70031eca30647e1454f2010fba0eec6e44e0d981a9dd"
+        },
+        {
+          "source_id": "anci_site_news_archive_2026",
+          "source_url": "http://www.antscapital.com/news/company.html",
+          "source_title": "公司资讯 · 安赐资本官网",
+          "source_content_hash": "26a070094b425e12d00a3eb1924060f46574aaf6dece32a516495378f4a838da",
+          "quote": "2018/02/02",
+          "quote_hash": "755d3e63eb5d8ca69c893266088771f51a295c9fa162edcdaed8bfc313097983"
+        },
+        {
+          "source_id": "anci_filing_2017",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-04-26/1203383158.PDF",
+          "source_title": "上市公司公开文件中的安赐基金管理人信息 · 巨潮资讯",
+          "source_content_hash": "c6880ee951e07aca94dbd5df6893b3f3e9f37ab0b559799e9bd5e280d05117b4",
+          "quote": "备案为私募基金管理人，编码为 P1006384。",
+          "quote_hash": "580c1a3dc4505ac60e02c0da63da83e989b9396470b9efb8854abb92028c6d2f"
+        },
+        {
+          "source_id": "anci_filing_2020",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2020-08-31/1208345059.PDF",
+          "source_title": "森麒麟轮胎招股文件 · 巨潮资讯",
+          "source_content_hash": "dfd051cbc22ffa49a32f6bd830ce3968c144fc9236d7f2a3ea967f379526d5dd",
+          "quote": "执行事务合伙人 安赐资产管理有限公司（委派代表：张瑞广）",
+          "quote_hash": "00753de01664dcfdd60246b0098bcec1bacf22063b2e99b54d2f38c0be78c689"
+        },
+        {
+          "source_id": "anci_team_background_2026",
+          "source_url": "http://www.antscapital.com/company/introduction.html",
+          "source_title": "公司简介 · 安赐资本官网团队概述",
+          "source_content_hash": "239ed139f251fcd92a06ef14da4b4ba455307da81c6bfd229aed893a6d7fc846",
+          "quote": "安赐团队主要来自国内顶尖投行、律师/会计师事务所、基金公司、大型创投及产业集团/上市公司",
+          "quote_hash": "a919fc92b19b95af543155341219a8417ae1df7116de0d2b683c67cc0ad7c637"
+        },
+        {
+          "source_id": "anci_filing_2017_partner",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-04-26/1203383158.PDF",
+          "source_title": "上市公司公开文件中的安赐基金管理人信息 · 巨潮资讯",
+          "source_content_hash": "c6880ee951e07aca94dbd5df6893b3f3e9f37ab0b559799e9bd5e280d05117b4",
+          "quote": "安赐资产管理有限公司 1 0.2%",
+          "quote_hash": "06b80a75ac2f8957229cdb098d2e2d722f83135d2d7f5a8fe0a74aa2adf8d34d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

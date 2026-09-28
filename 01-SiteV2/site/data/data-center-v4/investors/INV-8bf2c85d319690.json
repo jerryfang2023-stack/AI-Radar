@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Accenture Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Accenture reports fund size and active investment count on its innovation page. The Replit financing source names Accenture but does not identify the internal investment unit or disclose an individual check.",
+      "summary": "Accenture Ventures 是 Accenture 的初创企业投资与对接项目，将新兴技术公司与 Accenture 的专业能力及企业客户连接起来。Accenture 目前报告一只 2.5 亿美元基金和 70 多项活跃风险投资；这些数字为公司报告数据，而非回报。",
+      "facts": [
+        {
+          "field": "program",
+          "label": "项目",
+          "value": "Startup investment and engagement program focused on technology companies addressing enterprise innovation needs.",
+          "source_id": "accenture_innovation"
+        },
+        {
+          "field": "reported_fund_size",
+          "label": "报告基金规模",
+          "value": "$250 million, as reported by Accenture.",
+          "source_id": "accenture_innovation"
+        },
+        {
+          "field": "active_investments",
+          "label": "已报告活跃风险投资",
+          "value": "More than 70, as reported by Accenture.",
+          "source_id": "accenture_innovation"
+        },
+        {
+          "field": "engagement_model",
+          "label": "合作模式",
+          "value": "Project Spotlight connects startups with Accenture expertise and enterprise client problems.",
+          "source_id": "accenture_innovation"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投（战略投资） · $400M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "一份报告将 Accenture 列为 Replit D 轮融资的战略投资者之一。该报告未指明内部投资部门，也未披露具体金额。",
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方信息",
+          "value": "Accenture Ventures and innovation program",
+          "source_id": "accenture_innovation",
+          "url": "https://www.accenture.com/en/about/accenture-innovation"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "accenture_innovation",
+          "source_url": "https://www.accenture.com/en/about/accenture-innovation",
+          "source_title": "Innovation at Accenture",
+          "source_content_hash": "3c242ca6d7e980a9c2765612b8baa5cc9b2abb3af2da9d067967024ed383e9eb",
+          "quote": "Accenture Ventures is at the forefront of shaping the future of technology, managing a $250M fund with 70+ active venture investments.",
+          "quote_hash": "6f615de5a3dfb95731bb6969f09da8d2e8e802bb216eeaefad50be47b908abd5"
+        },
         {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -161,7 +202,67 @@
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Accenture Ventures 是 Accenture 的初创企业投资与对接项目，将新兴技术公司与 Accenture 的专业能力及企业客户连接起来。Accenture 目前报告一只 2.5 亿美元基金和 70 多项活跃风险投资；这些数字为公司报告数据，而非回报。",
+          "source_hash": "d55b27ac4b48ba4c6a9a4445e6e1e336764b062b2c40e9b5ac4828f7bc1b9a24",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "项目",
+          "source_hash": "90920d93e2c7e6323a947c6edb0e31a9702002e329af32a67fea53f221983cb0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "报告基金规模",
+          "source_hash": "ac57cb4ee650f18de4d0661d60dd9cc8d6b9d73c862460115291d16af4a765c4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:35.948Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "已报告活跃风险投资",
+          "source_hash": "15d41a728b0bdae41a51cdcab50fe9067e0d69eccd87b5a7d5b56b90366c1380",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "合作模式",
+          "source_hash": "7e7e6fb26caf7c20c8c8d90a1c2d542841fae8533070874d899df6d9593312c4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "一份报告将 Accenture 列为 Replit D 轮融资的战略投资者之一。该报告未指明内部投资部门，也未披露具体金额。",
+          "source_hash": "82f66ef62e3c87392918350ac39bea65872d09dd4a6a83d837d5e665c32a6f9c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方信息",
+          "source_hash": "86257af9e370f6ee696aea7d2b870fb1d4306c20fc6b2af2853ab7db9d7d545e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

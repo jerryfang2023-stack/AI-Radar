@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,12 +138,38 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上国投先导基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "融资披露中的“上国投先导基金”指向上海国投先导投资体系。其官网披露，上海国投先导私募基金管理有限公司于2024年5月成立，是上海国有资本投资有限公司全资子公司，管理集成电路、生物医药和人工智能三大先导产业母基金。官网称基金体系以投早投小、支持原始创新与成果转化为方向。融资标签未披露对应的具体母基金，故不把该笔融资归到三只基金中的某一只。",
+      "facts": [
+        {
+          "field": "manager",
+          "label": "管理公司",
+          "value": "上海国投先导私募基金管理有限公司，成立于2024年5月，为上海国有资本投资有限公司全资子公司。",
+          "source_id": "shguotou_about"
+        },
+        {
+          "field": "fund_structure",
+          "label": "基金体系",
+          "value": "管理集成电路、生物医药、人工智能三大先导产业母基金。",
+          "source_id": "shguotou_home"
+        },
+        {
+          "field": "strategy",
+          "label": "公开投资方向",
+          "value": [
+            "投早投小",
+            "原始创新",
+            "科技成果转化",
+            "产业并购整合"
+          ],
+          "source_id": "shguotou_about"
+        },
+        {
+          "field": "ecosystem_progress",
+          "label": "公开进展",
+          "value": "上海市政府2025年报道披露，首批9只市场化子基金以36.5亿元母基金出资撬动172亿元社会资本。",
+          "source_id": "shguotou_progress"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +177,69 @@
           "source_id": "FISRC-de3bb93d57d25bdf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金管理公司官方网站",
+          "value": "上海国投先导",
+          "url": "https://www.ssci-leadingfund.com/",
+          "source_id": "shguotou_home"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开电话",
+          "value": "021-63212188",
+          "url": "https://www.ssci-leadingfund.com/",
+          "source_id": "shguotou_contact"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "contact@sscilf.com",
+          "url": "https://www.ssci-leadingfund.com/",
+          "source_id": "shguotou_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开地址",
+          "value": "上海市黄浦区外马路688号7楼",
+          "url": "https://www.ssci-leadingfund.com/",
+          "source_id": "shguotou_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "shguotou_about",
+          "source_url": "https://www.ssci-leadingfund.com/about/",
+          "source_title": "上海国投先导｜关于我们",
+          "source_content_hash": "ca823d4b887106952b4bfdd6ab1f4f9979682266443b9c4b25bff89a33273990",
+          "quote": "上海国投先导私募基金管理有限公司于2024年5月成立，是上海国有资本投资有限公司全资子公司。",
+          "quote_hash": "ca823d4b887106952b4bfdd6ab1f4f9979682266443b9c4b25bff89a33273990"
+        },
+        {
+          "source_id": "shguotou_home",
+          "source_url": "https://www.ssci-leadingfund.com/",
+          "source_title": "上海国投先导｜官方网站",
+          "source_content_hash": "693e44472ddc4a440de657c32609a25a14830183d13da3c55d3838489dca0e8f",
+          "quote": "管理集成电路、生物医药、人工智能三大先导产业母基金。",
+          "quote_hash": "693e44472ddc4a440de657c32609a25a14830183d13da3c55d3838489dca0e8f"
+        },
+        {
+          "source_id": "shguotou_progress",
+          "source_url": "https://www.shanghai.gov.cn/nw4411/20250411/244d09ae7c1b438d8d96640dca61ca06.html?siteId=1",
+          "source_title": "上海市政府：三大先导产业母基金进展",
+          "source_content_hash": "e8f107c9748493aa6326e68f1d4b525f77ab118d21ae0e179cad53b5401e2c52",
+          "quote": "首批9只市场化子基金以36.5亿元母基金出资撬动172亿元社会资本。",
+          "quote_hash": "e8f107c9748493aa6326e68f1d4b525f77ab118d21ae0e179cad53b5401e2c52"
+        },
+        {
+          "source_id": "shguotou_contact",
+          "source_url": "https://www.ssci-leadingfund.com/",
+          "source_title": "上海国投先导｜公开联系信息",
+          "source_content_hash": "c86aa19a1d391a932ff94a19cbe12e439ad23275007df04eaefd7a0001c8b850",
+          "quote": "电话：021-63212188；上海市黄浦区外马路688号7楼；contact@sscilf.com。",
+          "quote_hash": "c86aa19a1d391a932ff94a19cbe12e439ad23275007df04eaefd7a0001c8b850"
+        },
         {
           "source_id": "FISRC-de3bb93d57d25bdf",
           "source_url": "https://www.cyzone.cn/article/822685.html",
@@ -162,7 +249,11 @@
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "融资报道使用的“上国投先导基金”没有指出具体母基金或基金产品；本档案介绍管理平台和三大母基金体系，不将该融资活动擅自归入集成电路、生物医药或人工智能中的某一只基金。官网披露的社会资本撬动情况为子基金体系数据，不代表基金投资回报。"
     }
   }
 }

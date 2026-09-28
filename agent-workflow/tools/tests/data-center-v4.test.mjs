@@ -1528,6 +1528,12 @@ test("superseded roundups and secondary event sources remain outside canonical e
       "multi_event_roundup_not_single_event_source",
     ],
     [
+      { clean_text: "据腾讯科技从接近DeepSeek人士处获悉，本轮融资500亿人民币，已接近结束，但部分审核仍在进行。9月初已发TS，预计9月底结束。", raw_qc_decision: "pass" },
+      { source_url: "https://m.pedaily.cn/news/569619" },
+      "投资界AI周报| DeepSeek又融资500亿 AI 2026-09-24 17:06",
+      "multi_event_roundup_not_single_event_source",
+    ],
+    [
       { clean_text: "Entire launches.", raw_qc_decision: "pass" },
       { source_url: "https://the-agent-report.com/entire-launch" },
       "The Agent Report: Thomas Dohmke launches Entire",
@@ -2815,4 +2821,17 @@ test("China market migration leaves unrelated Raw documents untouched", () => {
   assert.equal(result.event_market_count, 0);
   assert.equal("market_scope" in bundle.raw_documents[0], false);
   assert.equal("market_scope" in bundle.canonical_events[0], false);
+});
+
+test("reviewed exact-span QA repairs replace headline recipients; stale and unreviewed repairs cannot", () => {
+  const body = "硬氪获悉，AI玩具厂商上海喜梨信息科技有限公司近日完成数千万元新一轮融资。";
+  const source = entry("reviewed-recipient", "一家AI玩具公司获数千万元融资", body);
+  const candidate = { ...acceptedModelCandidate(source, [{ event_type: "funding", subject: "上海喜梨信息科技有限公司", object: "数千万元新一轮融资", evidence_index: 0 }], [{ start: 0, end: body.length, quote: body }]), task_type: "qa_repair", source_hash: crypto.createHash("sha256").update(body).digest("hex").slice(0,16), review: { decision: "accept", reviewer: "fixture" } };
+  const build = (c) => buildBundle([source], taxonomy, date, "2026-07-16T00:00:00Z", { modelAssist: { candidates: [c] } });
+  candidate.proposal.action = "extract_claim";
+  assert.ok(build(candidate).claims.some(c => c.subject === "上海喜梨信息科技有限公司"));
+  for (const c of [{...candidate, source_hash: "0".repeat(16)}, {...candidate, review: undefined}]) {
+    assert.ok(!build(c).claims.some(row => row.extraction_method === "model_source_span"));
+    assert.notEqual(build(c).claims[0]?.subject, "上海喜梨信息科技有限公司");
+  }
 });

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,18 +131,80 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Assaf Rappaport 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Assaf Rappaport 是Wiz联合创始人兼CEO。Wiz官方简介记载，他此前创立Adallom并担任CEO；微软于2015年收购Adallom后，他领导微软云安全团队并担任以色列研发中心总经理。其经历还包括麦肯锡项目工作、以色列国防军8200部队服役，以及希伯来大学和Technion的计算机科学相关学位。Wiz于2026年加入Google。",
+      "coverage_note": "职业、教育和当前职位依据Wiz官方公开简介及其2026年公告。Engram融资披露将其列为天使投资人，但未披露个人出资金额；该关联不会被解释为Wiz或Google的公司投资。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼CEO",
+          "organization": "Wiz（2026年起为Google旗下公司）",
+          "source_id": "assaf_wiz_bio"
+        }
+      ],
+      "career": [
+        {
+          "organization": "以色列国防军8200部队",
+          "title": "上尉",
+          "period": "具体服役时间未披露",
+          "description": "Wiz官方个人简介所述经历。",
+          "source_id": "assaf_wiz_bio"
+        },
+        {
+          "organization": "McKinsey & Company",
+          "title": "战略项目工作",
+          "period": "具体任期未披露",
+          "description": "Wiz官方简介称其曾在以色列和澳大利亚参与战略项目。",
+          "source_id": "assaf_wiz_bio"
+        },
+        {
+          "organization": "Adallom",
+          "title": "联合创始人兼CEO",
+          "period": "被微软收购前；具体任期未披露",
+          "description": "Adallom从事云访问安全代理（CASB）业务，微软于2015年收购该公司。",
+          "source_id": "assaf_wiz_bio"
+        },
+        {
+          "organization": "Microsoft",
+          "title": "云安全团队负责人、以色列研发中心总经理",
+          "period": "2015年收购后；具体任期未披露",
+          "description": "Wiz官方简介记载其在微软负责云安全相关工作。",
+          "source_id": "assaf_wiz_bio"
+        },
+        {
+          "organization": "Wiz / Google Cloud",
+          "title": "Wiz联合创始人兼CEO",
+          "period": "2020年至今；Wiz于2026年加入Google",
+          "description": "官方资料记载Wiz于2020年创立，2026年3月完成加入Google。",
+          "source_id": "assaf_wiz_google"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Technion - Israel Institute of Technology",
+          "qualification": "计算机科学硕士（M.Sc.）",
+          "source_id": "assaf_wiz_bio"
+        },
+        {
+          "institution": "Hebrew University of Jerusalem",
+          "qualification": "计算机科学、物理学与数学学士（B.Sc.）",
+          "source_id": "assaf_wiz_bio"
+        }
+      ],
+      "experience_summary": "其职业经历集中于云安全创业、微软云安全管理与企业安全产品发展；Wiz是其第二家云安全创业公司。本人教育背景和早期军事服务来自Wiz公司公开简介，具体任职年月未披露。",
       "track_record": [
+        {
+          "description": "Adallom于2015年被微软收购。该公司层面的交易结果不是Assaf Rappaport个人投资回报。",
+          "source_id": "assaf_wiz_bio"
+        },
+        {
+          "description": "融资披露记录：2026年Engram种子轮报道将Assaf Rappaport列为天使投资人之一；个人出资金额未披露。",
+          "source_id": "assaf_engram_activity"
+        },
         {
           "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 天使投资人 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39d911c5038cb1c0"
         }
       ],
-      "contacts": [],
       "sources": [
         {
           "source_id": "FISRC-39d911c5038cb1c0",
@@ -151,9 +213,36 @@
           "source_content_hash": "f7105d727554bb38",
           "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz.",
           "quote_hash": "31f3d14e96326aa6bbfd5f95c46a49ad59ebc0bef7635fbe0f2925084613ea1d"
+        },
+        {
+          "source_id": "assaf_wiz_bio",
+          "source_url": "https://www.wiz.io/authors/assaf-rappaport",
+          "source_title": "Assaf Rappaport | Wiz",
+          "source_content_hash": "22bbe8ecbc44bbb634ea15ed8fbf59f72ad3406968259a6072071207a077f4e2",
+          "quote": "Assaf Rappaport is the Co-founder and Chief Executive Officer of Wiz.",
+          "quote_hash": "01e1a9bc7d5300a080bfc74713608bfeb2f82c9d1754925e01c394ecc4b6b09b"
+        },
+        {
+          "source_id": "assaf_wiz_google",
+          "source_url": "https://www.wiz.io/blog/google-closes-deal-to-acquire-wiz",
+          "source_title": "It’s Official: Wiz Joins Google | Wiz",
+          "source_content_hash": "363eca0f964311090f49553884ae27d5235a2b65ade844a03816fae25f8ecc4e",
+          "quote": "Today, as we officially begin our journey as a Google company",
+          "quote_hash": "b365550a27b30dd21e6576b6372b2e69a82183a1c3eb411dc024baabf5a0a016"
+        },
+        {
+          "source_id": "assaf_engram_activity",
+          "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
+          "source_title": "Engram launches with $98M; angel investors include Assaf Rappaport",
+          "source_content_hash": "f7105d727554bb38",
+          "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz.",
+          "quote_hash": "31f3d14e96326aa6bbfd5f95c46a49ad59ebc0bef7635fbe0f2925084613ea1d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

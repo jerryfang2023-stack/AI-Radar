@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,127 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Slow Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Slow Ventures 是一家总部位于旧金山、波士顿和纽约的综合型早期风险投资机构，自 2011 年起投资创业公司的早期轮次。其公开主题覆盖安全、金融科技、软件、加密资产、消费、医疗健康、创作者经济以及软件收购与整合，并以种子期和预种子期投资为主。",
+      "coverage_note": "投资方向、组合案例、团队和联系方式依据 Slow 官网。Hint 的 Business Wire 公司公告日期为 2026-05-13，称其 1,000 万美元种子轮由 Slow 领投；融资活动库关联的另一条来源被记录为 2026-07-29，日期不一致，因此本档案不把该库日期作为已确认的融资公告日期。1,000 万美元是 Hint 公司轮次总额，未披露 Slow 的单笔金额。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "开始投资年份",
+          "value": "官网称自 2011 年起投资早期创业公司。",
+          "source_id": "slow_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "预种子期和种子期，覆盖美国各地早期公司。",
+          "source_id": "slow_letter"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": [
+            "安全",
+            "金融科技",
+            "软件与软件收购",
+            "加密资产",
+            "消费",
+            "医疗健康",
+            "创作者经济"
+          ],
+          "source_id": "slow_about"
+        },
+        {
+          "field": "investment_team",
+          "label": "官网列示投资团队",
+          "value": [
+            "Kevin Colleran（Managing Director）",
+            "Sam Lessin（GP）",
+            "Will Quist（GP）",
+            "Megan Lightcap（Partner, Creator Fund）",
+            "Yoni Rechtman（Partner）",
+            "Clay Robbins（Forward deployed partner）"
+          ],
+          "source_id": "slow_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Hint · 种子轮 · 2026-07-29 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网选择性列出 Airtable、Gusto、OpenPhone、PillPack、Ro、Solana、Teamshares 等组合公司；名单不是完整投资组合，也不披露基金回报。",
+          "source_id": "slow_about"
+        },
+        {
+          "description": "Hint 的公司发布稿（2026-05-13）称其完成 1,000 万美元种子轮并由 Slow Ventures 领投；金额是公司本轮总额，Slow 单笔金额未披露。",
+          "source_id": "hint_release"
+        },
+        {
+          "description": "融资活动库中的 Hint 记录沿用一条标注为 2026-07-29 的二手来源；该日期与 2026-05-13 的公司发布稿不一致，故此处保留来源线索但不将其视作确定的公告日期。",
           "source_id": "FISRC-c3980470a5917efd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Slow Ventures",
+          "url": "https://slow.co/",
+          "source_id": "slow_about"
+        },
+        {
+          "kind": "application",
+          "label": "初创公司融资申请",
+          "value": "Slow Ventures Seed Funding Application",
+          "url": "https://slow.co/contact/",
+          "source_id": "slow_contact"
+        },
+        {
+          "kind": "contact_form",
+          "label": "一般咨询与回电",
+          "value": "Request a Callback 表单",
+          "url": "https://slow.co/contact/",
+          "source_id": "slow_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "免费联系电话",
+          "value": "888-616-7569",
+          "url": "https://slow.co/contact/",
+          "source_id": "slow_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "slow_about",
+          "source_url": "https://slow.co/about/",
+          "source_title": "Slow Ventures - About",
+          "source_content_hash": "7401dac417fc1525b7352d11d92fcfd73c675c677d49ebd32466a0e7357b5c8f",
+          "quote": "Slow Ventures is a generalist early stage venture capital firm based in San Francisco, Boston, and New York.",
+          "quote_hash": "23a9fba77acd43b111866f955d0a1a2da8510838aaf4b5e4b303ccecb85329d9"
+        },
+        {
+          "source_id": "slow_letter",
+          "source_url": "https://slow.co/letter/",
+          "source_title": "Slow Ventures - Our Letter",
+          "source_content_hash": "51ebcd20ff41f193174059b84de1c261be74112b92cfb7fbb9a8a6aa61eb8bc0",
+          "quote": "We lead seed and pre-seed rounds for startups across the US.",
+          "quote_hash": "9e6ad739f9089de53f00cd861730b680056cba3e842812edb37b3e423ca39972"
+        },
+        {
+          "source_id": "slow_contact",
+          "source_url": "https://slow.co/contact/",
+          "source_title": "Slow Ventures - Get In Touch",
+          "source_content_hash": "90f45ca26c0e145d0fe79be52b9250e4384f7f9b269cace5d863232995392830",
+          "quote": "Apply for Funding: Slow Ventures Seed Funding Application. Ring Us Toll Free 888-616-7569.",
+          "quote_hash": "8cd87667305025bb83deb278b85ece68e08d86a5787b81732db1d9ff1d4862c6"
+        },
+        {
+          "source_id": "hint_release",
+          "source_url": "https://www.businesswire.com/news/home/20260512987617/en/",
+          "source_title": "Martha Stewart Announces Hint, a New Home Management Platform Built on Human Expertise and AI",
+          "source_content_hash": "7238573b2977359baf7dc32c9e6a0ba28bf9827ca07749fa67bc62bac9bbd7fc",
+          "quote": "Hint launches with a $10 million seed round led by Slow Ventures.",
+          "quote_hash": "b64c3bd8b68155a58c693e0aa97addd00829c10bfce325ba84067670620d9c5f"
+        },
         {
           "source_id": "FISRC-c3980470a5917efd",
           "source_url": "https://pulse2.com/hint-10-million-seed-round-raised-to-launch-ai-powered-home-management-platform/",
@@ -161,7 +267,22 @@
           "quote_hash": "fae0fdc17248be488b11890fcb7005268ae6ef33511bde677b38a563bf8ce1ee"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "官网选择性列出 Airtable、Gusto、OpenPhone、PillPack、Ro、Solana、Teamshares 等组合公司；名单不是完整投资组合，也不披露基金回报。",
+          "source_hash": "ffedd5c62a9e1a154a464155b0c96d00ae444b32f39722926cec707a0474adcd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

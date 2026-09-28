@@ -519,8 +519,8 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-24T02:18:59.540Z",
-    "date": "2026-09-24",
+    "generatedAt": "2026-09-28T01:02:28.165Z",
+    "date": "2026-09-26",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
       "01-SiteV2/site/data/pipeline-dashboard.json",
@@ -556,7 +556,7 @@ window.WaveSightOpsConsole = {
     }
   ],
   "daily": {
-    "date": "2026-09-24",
+    "date": "2026-09-26",
     "status": "passed",
     "statusText": "已通过",
     "issueSummary": {
@@ -581,25 +581,18 @@ window.WaveSightOpsConsole = {
     },
     "monthly": {
       "windowDays": 30,
-      "total": 4,
+      "total": 2,
       "open": 0,
-      "resolved": 4,
+      "resolved": 2,
       "byLane": {
-        "automation": 2,
         "skill_ops": 1,
         "business_signals": 1
       },
       "byCategory": {
-        "control_plane_liveness": 2,
         "weekly_learning_loop": 1,
         "recurring_automation_issue": 1
       },
-      "recurring": [
-        {
-          "category": "control_plane_liveness",
-          "count": 2
-        }
-      ],
+      "recurring": [],
       "latest": [
         {
           "id": "2026-09-04-business-signals-recurring-9b3705b9af766a92",
@@ -644,50 +637,6 @@ window.WaveSightOpsConsole = {
           "validation": "Revalidated 17 automation-runtime and 9 control-plane tests; 2026-08-31 catch-up heartbeat passed",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-30-skill_ops-weekly-learning-loop.md"
-        },
-        {
-          "id": "2026-08-27-automation-control-plane-liveness",
-          "date": "2026-08-27",
-          "title": "Control Plane Liveness Incident - 2026-08-27",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "automation",
-          "category": "control_plane_liveness",
-          "failedGate": "hermes_control_plane_watchdog",
-          "reportPath": "../../../../AppData/Local/WaveSight/runtime/2026-08-27-hermes-control-plane-watchdog.md",
-          "dataGenerated": "unknown",
-          "neededAction": "inspect the missing controller task or report writer; do not rerun production from Hermes",
-          "createdAt": "2026-08-27T11:10:44+08:00",
-          "updatedAt": "2026-08-27T11:42:33+08:00",
-          "resolvedAt": "2026-08-27T11:42:33+08:00",
-          "resolver": "codex",
-          "fixCommit": "ec9c3a5dc5bdf62df2c729463ae46ead8a89a9ac",
-          "validation": "21 controller/watchdog tests passed; Standards audit 0; Spec audit 0",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-27-automation-control-plane-liveness.md"
-        },
-        {
-          "id": "2026-08-26-automation-control-plane-liveness",
-          "date": "2026-08-26",
-          "title": "Control Plane Liveness Incident - 2026-08-26",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "urgent",
-          "laneId": "automation",
-          "category": "control_plane_liveness",
-          "failedGate": "hermes_control_plane_watchdog",
-          "reportPath": "../../../../AppData/Local/WaveSight/runtime/2026-08-26-hermes-control-plane-watchdog.md",
-          "dataGenerated": "yes",
-          "neededAction": "none",
-          "createdAt": "2026-08-26T17:19:51+08:00",
-          "updatedAt": "2026-08-26T18:30:03+08:00",
-          "resolvedAt": "2026-08-26T18:30:03+08:00",
-          "resolver": "codex",
-          "fixCommit": "2c15f7c894b7f67f898b6ace27299976485e95d8",
-          "validation": "control-plane-tests-and-live-supervision-passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-26-automation-control-plane-liveness.md"
         }
       ]
     }
@@ -1248,15 +1197,15 @@ window.WaveSightOpsConsole = {
           },
           {
             "label": "Claims",
-            "value": 137
+            "value": 42
           },
           {
             "label": "Events",
-            "value": 54
+            "value": 21
           },
           {
             "label": "QA",
-            "value": 295
+            "value": 235
           }
         ]
       },
@@ -1300,15 +1249,15 @@ window.WaveSightOpsConsole = {
         "status": "partial",
         "counts": {
           "discovered": 290,
-          "capture_succeeded": 350,
-          "capture_failed": 5,
-          "recovered_source_failures": 11,
-          "raw_documents": 350
+          "capture_succeeded": 256,
+          "capture_failed": 6,
+          "recovered_source_failures": 10,
+          "raw_documents": 256
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/manifest.json",
-          "agent-workflow/reports/2026-09-24-guanlan-daily-monitor-log.md",
-          "agent-workflow/reports/2026-09-24-guanlan-monitor-quality-gate.md"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-09-26/manifest.json",
+          "agent-workflow/reports/2026-09-26-guanlan-daily-monitor-log.md",
+          "agent-workflow/reports/2026-09-26-guanlan-monitor-quality-gate.md"
         ]
       },
       {
@@ -1316,34 +1265,34 @@ window.WaveSightOpsConsole = {
         "label": "事实构建",
         "status": "passed",
         "counts": {
-          "accepted_claims": 137,
+          "accepted_claims": 42,
           "rejected_claims": 0,
-          "accepted": 137,
+          "accepted": 42,
           "rejected": 0,
-          "pending_claims": 3,
-          "canonical_events": 54,
-          "entities": 79,
-          "relationships": 140,
+          "pending_claims": 0,
+          "canonical_events": 21,
+          "entities": 40,
+          "relationships": 42,
           "conflicts": 0,
-          "qa_queue": 295
+          "qa_queue": 235
         },
         "evidence": [
-          "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/manifest.json",
-          "agent-workflow/reports/2026-09-24-data-center-v4-integrity-gate.json"
+          "01-SiteV2/content/11-databases/data-center-v4/2026-09-26/manifest.json",
+          "agent-workflow/reports/2026-09-26-data-center-v4-integrity-gate.json"
         ]
       },
       {
         "id": "application_projection",
         "label": "应用投影",
-        "status": "passed",
+        "status": "partial",
         "counts": {
           "opportunity_map": "passed",
           "trend_radar": "passed",
-          "funding_insights": "passed",
+          "funding_insights": "failed",
           "fde_hardware_sync": "passed"
         },
         "evidence": [
-          "agent-workflow/reports/2026-09-24-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-09-26-persistent-asset-manifest.json"
         ]
       },
       {
@@ -1356,18 +1305,18 @@ window.WaveSightOpsConsole = {
           "authoritative": false
         },
         "evidence": [
-          "agent-workflow/reports/2026-09-24-persistent-asset-manifest.json"
+          "agent-workflow/reports/2026-09-26-persistent-asset-manifest.json"
         ]
       }
     ],
     "latestProduction": {
-      "date": "2026-09-24",
-      "discovered": 350,
-      "captured": 350,
-      "claims": 140,
-      "events": 54,
-      "entities": 79,
-      "relationships": 140
+      "date": "2026-09-26",
+      "discovered": 256,
+      "captured": 256,
+      "claims": 42,
+      "events": 21,
+      "entities": 40,
+      "relationships": 42
     },
     "sync": [
       {
@@ -1388,7 +1337,7 @@ window.WaveSightOpsConsole = {
       {
         "label": "Pipeline Dashboard",
         "status": "passed",
-        "detail": "2026-09-24T02:18:59.018Z"
+        "detail": "2026-09-26T00:28:30.917Z"
       },
       {
         "label": "Daily Supervision",
@@ -1402,49 +1351,50 @@ window.WaveSightOpsConsole = {
       "meta": {
         "version": "COLLECTION-TELEMETRY-V1.0",
         "ops_version": "OPS-V3.8.0-engineering-integration",
-        "data_date": "2026-09-24",
-        "generated_at": "2026-09-24T02:18:58.890Z",
-        "source_snapshot": "0518549814e031ec77efd843683e799e85a5cdd26206f2dc236e3c2680c955bb",
+        "data_date": "2026-09-26",
+        "generated_at": "2026-09-26T00:28:30.870Z",
+        "source_snapshot": "9b014989340b13403e931c889d7cb57f9333e6d8599feb59b14b57f6a198e2f3",
         "scope": "OPS",
         "canonical_writeback": false,
         "source_of_truth": "Data Center V4 manifest and integrity gate"
       },
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 350,
-        "capture_failed": 5,
-        "recovered_source_failures": 11,
-        "raw_documents": 350
+        "capture_succeeded": 256,
+        "capture_failed": 6,
+        "recovered_source_failures": 10,
+        "raw_documents": 256
       },
       "factBuild": {
-        "accepted_claims": 137,
+        "accepted_claims": 42,
         "rejected_claims": 0,
-        "accepted": 137,
+        "accepted": 42,
         "rejected": 0,
-        "pending_claims": 3,
-        "canonical_events": 54,
-        "entities": 79,
-        "relationships": 140,
+        "pending_claims": 0,
+        "canonical_events": 21,
+        "entities": 40,
+        "relationships": 42,
         "conflicts": 0,
-        "qa_queue": 295,
+        "qa_queue": 235,
         "qa_by_status": {
-          "review_optional": 277,
-          "open": 18
+          "review_optional": 222,
+          "open": 13
         }
       },
       "v4Gate": {
         "status": "passed",
-        "manifest_date": "2026-09-24",
-        "gate_date": "2026-09-24",
+        "manifest_date": "2026-09-26",
+        "gate_date": "2026-09-26",
         "failures": [],
         "warnings": [
+          "No source-bounded FDE projection was produced.",
           "No source-bounded hardware projection was produced."
         ]
       },
       "applicationProjection": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "passed",
+        "funding_insights": "failed",
         "fde_hardware_sync": "passed"
       },
       "publication": {
@@ -1463,54 +1413,54 @@ window.WaveSightOpsConsole = {
     },
     "pipelineMeta": {
       "version": "OPS-V3.8.0-engineering-integration",
-      "generatedAt": "2026-09-24T02:18:59.018Z",
+      "generatedAt": "2026-09-26T00:28:30.917Z",
       "dateRange": {
-        "start": "2026-09-18",
-        "end": "2026-09-24"
+        "start": "2026-09-19",
+        "end": "2026-09-26"
       },
       "source": "Data Center V4 manifest + collection-telemetry-v1",
       "telemetryVersion": "COLLECTION-TELEMETRY-V1.0"
     },
     "latest": {
-      "date": "2026-09-24",
-      "label": "2026.09.24",
-      "shortLabel": "09.24",
-      "discovered": 350,
-      "captured": 350,
-      "claims": 140,
-      "events": 54,
-      "entities": 79,
-      "relationships": 140,
+      "date": "2026-09-26",
+      "label": "2026.09.26",
+      "shortLabel": "09.26",
+      "discovered": 256,
+      "captured": 256,
+      "claims": 42,
+      "events": 21,
+      "entities": 40,
+      "relationships": 42,
       "conflicts": 0,
-      "qaQueue": 295,
-      "telemetryDate": "2026-09-24",
+      "qaQueue": 235,
+      "telemetryDate": "2026-09-26",
       "collection": {
         "discovered": 290,
-        "capture_succeeded": 350,
-        "capture_failed": 5,
-        "recovered_source_failures": 11,
-        "raw_documents": 350
+        "capture_succeeded": 256,
+        "capture_failed": 6,
+        "recovered_source_failures": 10,
+        "raw_documents": 256
       },
       "factBuild": {
-        "accepted_claims": 137,
+        "accepted_claims": 42,
         "rejected_claims": 0,
-        "accepted": 137,
+        "accepted": 42,
         "rejected": 0,
-        "pending_claims": 3,
-        "canonical_events": 54,
-        "entities": 79,
-        "relationships": 140,
+        "pending_claims": 0,
+        "canonical_events": 21,
+        "entities": 40,
+        "relationships": 42,
         "conflicts": 0,
-        "qa_queue": 295,
+        "qa_queue": 235,
         "qa_by_status": {
-          "review_optional": 277,
-          "open": 18
+          "review_optional": 222,
+          "open": 13
         }
       },
       "applicationProjection": {
         "opportunity_map": "passed",
         "trend_radar": "passed",
-        "funding_insights": "passed",
+        "funding_insights": "failed",
         "fde_hardware_sync": "passed"
       },
       "publication": {
@@ -1521,16 +1471,29 @@ window.WaveSightOpsConsole = {
       }
     },
     "totals": {
-      "discovered": 2287,
-      "captured": 2287,
-      "claims": 794,
-      "events": 326,
-      "entities": 531,
-      "relationships": 794,
+      "discovered": 2205,
+      "captured": 2205,
+      "claims": 727,
+      "events": 298,
+      "entities": 481,
+      "relationships": 727,
       "conflicts": 0,
-      "qaQueue": 1958
+      "qaQueue": 1904
     },
     "days": [
+      {
+        "date": "2026-09-26",
+        "label": "2026.09.26",
+        "shortLabel": "09.26",
+        "discovered": 256,
+        "captured": 256,
+        "claims": 42,
+        "events": 21,
+        "entities": 40,
+        "relationships": 42,
+        "conflicts": 0,
+        "qaQueue": 235
+      },
       {
         "date": "2026-09-24",
         "label": "2026.09.24",
@@ -1608,39 +1571,26 @@ window.WaveSightOpsConsole = {
         "relationships": 139,
         "conflicts": 0,
         "qaQueue": 275
-      },
-      {
-        "date": "2026-09-18",
-        "label": "2026.09.18",
-        "shortLabel": "09.18",
-        "discovered": 338,
-        "captured": 338,
-        "claims": 109,
-        "events": 49,
-        "entities": 90,
-        "relationships": 109,
-        "conflicts": 0,
-        "qaQueue": 289
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-24T02:18:59.532Z",
+      "updatedAt": "2026-09-28T01:02:28.159Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
         {
           "id": "aihot",
           "label": "AI HOT",
-          "total": 52,
-          "eligibleRate": 87,
-          "fullTextRate": 56,
-          "highQualityRate": 46,
-          "readabilityScore": 48,
-          "factHitRate": 35,
-          "acceptedClaims": 58,
-          "canonicalEvents": 18,
-          "score": 59,
-          "grade": "待改善"
+          "total": 42,
+          "eligibleRate": 93,
+          "fullTextRate": 62,
+          "highQualityRate": 48,
+          "readabilityScore": 49,
+          "factHitRate": 19,
+          "acceptedClaims": 15,
+          "canonicalEvents": 8,
+          "score": 60,
+          "grade": "中"
         },
         {
           "id": "rss-feed",
@@ -1648,83 +1598,84 @@ window.WaveSightOpsConsole = {
           "total": 85,
           "eligibleRate": 95,
           "fullTextRate": 95,
-          "highQualityRate": 79,
+          "highQualityRate": 85,
           "readabilityScore": 83,
-          "factHitRate": 22,
-          "acceptedClaims": 50,
-          "canonicalEvents": 20,
-          "score": 79,
+          "factHitRate": 9,
+          "acceptedClaims": 16,
+          "canonicalEvents": 8,
+          "score": 78,
           "grade": "中"
         },
         {
           "id": "keyword-search",
           "label": "关键词检索",
-          "total": 94,
-          "eligibleRate": 84,
-          "fullTextRate": 79,
-          "highQualityRate": 73,
-          "readabilityScore": 71,
+          "total": 96,
+          "eligibleRate": 81,
+          "fullTextRate": 77,
+          "highQualityRate": 74,
+          "readabilityScore": 70,
           "factHitRate": 5,
-          "acceptedClaims": 9,
+          "acceptedClaims": 11,
           "canonicalEvents": 5,
-          "score": 67,
+          "score": 66,
           "grade": "中"
         },
         {
           "id": "gdelt",
           "label": "GDELT",
           "total": 33,
-          "eligibleRate": 70,
-          "fullTextRate": 61,
-          "highQualityRate": 42,
-          "readabilityScore": 50,
+          "eligibleRate": 76,
+          "fullTextRate": 67,
+          "highQualityRate": 45,
+          "readabilityScore": 52,
           "factHitRate": 0,
           "acceptedClaims": 0,
           "canonicalEvents": 0,
-          "score": 49,
+          "score": 53,
           "grade": "待改善"
         },
         {
-          "id": "china-funding",
-          "label": "china-funding",
-          "total": 86,
+          "id": "targeted-backfill",
+          "label": "targeted-backfill",
+          "total": 11,
           "eligibleRate": 100,
-          "fullTextRate": 78,
-          "highQualityRate": 31,
-          "readabilityScore": 56,
-          "factHitRate": 14,
-          "acceptedClaims": 20,
-          "canonicalEvents": 12,
-          "score": 62,
-          "grade": "中"
+          "fullTextRate": 100,
+          "highQualityRate": 82,
+          "readabilityScore": 0,
+          "factHitRate": 100,
+          "acceptedClaims": 11,
+          "canonicalEvents": 11,
+          "score": 81,
+          "grade": "良"
         }
       ]
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
-      "date": "2026-09-24",
-      "generated_at": "2026-09-24T00:41:38.612Z",
-      "status": "partial",
-      "last_collection_at": "2026-09-24T00:13:40.819Z",
-      "failed_stage": null,
+      "date": "2026-09-28",
+      "generated_at": "2026-09-28T01:02:19.488Z",
+      "status": "failed",
+      "last_collection_at": "2026-09-28T00:15:39.011Z",
+      "failed_stage": "projections",
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-24T00:36:51.007Z",
-          "finished_at": "2026-09-24T00:37:12.340Z"
+          "started_at": "2026-09-28T00:58:58.901Z",
+          "finished_at": "2026-09-28T00:59:37.253Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-24T00:37:12.340Z",
-          "finished_at": "2026-09-24T00:38:39.865Z"
+          "started_at": "2026-09-28T00:59:37.254Z",
+          "finished_at": "2026-09-28T01:02:05.573Z"
         },
         {
           "id": "projections",
-          "status": "passed",
-          "started_at": "2026-09-24T00:38:39.867Z",
-          "finished_at": "2026-09-24T00:41:38.536Z"
+          "status": "failed",
+          "started_at": "2026-09-28T01:02:05.574Z",
+          "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
+          "finished_at": "2026-09-28T01:02:19.401Z"
         }
       ],
       "sources": [
@@ -1732,138 +1683,341 @@ window.WaveSightOpsConsole = {
           "source_id": "pedaily",
           "registry_id": "cn-pedaily",
           "name": "投资界",
-          "attempted_at": "2026-09-24T00:12:39.557Z",
-          "query_count": 2,
-          "successful_queries": 2,
+          "attempted_at": "2026-09-28T00:12:52.980Z",
+          "query_count": 8,
+          "successful_queries": 8,
           "list_pages_ok": 2,
-          "candidates": 24,
+          "candidates": 34,
           "failures": [],
           "entry_urls": [
             "https://m.pedaily.cn/",
             "https://www.pedaily.cn/vcpeevent/"
           ],
-          "discovered": 42,
-          "capped": 18,
+          "consumer_hardware": [
+            {
+              "category": "ai-glasses",
+              "query": "site:pedaily.cn (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            },
+            {
+              "category": "ai-pendants",
+              "query": "site:pedaily.cn (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            },
+            {
+              "category": "ai-toys",
+              "query": "site:pedaily.cn (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 3,
+              "retained": 3,
+              "capped": 0
+            },
+            {
+              "category": "ai-phones",
+              "query": "site:pedaily.cn (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            },
+            {
+              "category": "ai-audio-wearables",
+              "query": "site:pedaily.cn (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            },
+            {
+              "category": "ai-home-devices",
+              "query": "site:pedaily.cn (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            }
+          ],
+          "discovered": 36,
+          "general_candidates": 24,
+          "capped": 2,
           "status": "collected",
-          "response_ms": 6147,
-          "completed_at": "2026-09-24T00:12:45.704Z",
-          "raw_count": 24,
-          "readable_count": 24,
-          "accepted_claims": 5,
+          "response_ms": 16778,
+          "completed_at": "2026-09-28T00:13:09.758Z",
+          "raw_count": 34,
+          "readable_count": 34,
+          "accepted_claims": 8,
           "verified_event_ids": [
+            "EV-589b3b522be5b280",
             "EV-3ca24f79062a359e",
-            "EV-3c86fb0161715336",
+            "EV-f01ed5ae8bd115bc",
+            "EV-168535f69d324a17",
             "EV-71d477e3af99ef9a",
             "EV-8c634244a6a6d408"
           ],
           "funding_event_ids": [
+            "EV-589b3b522be5b280",
             "EV-3ca24f79062a359e",
-            "EV-3c86fb0161715336",
+            "EV-f01ed5ae8bd115bc",
+            "EV-168535f69d324a17",
             "EV-71d477e3af99ef9a",
             "EV-8c634244a6a6d408"
           ],
-          "china_funding_event_ids": [],
+          "china_funding_event_ids": [
+            "EV-589b3b522be5b280"
+          ],
           "card_ids": [
             "FI-a2fd2365924904e7",
             "FI-86634a7717d63426"
           ],
-          "latest_disclosure": "2026-09-23T09:47:00.000Z"
+          "latest_disclosure": "2026-09-28T08:46:00+08:00"
         },
         {
           "source_id": "chinaventure",
           "registry_id": "cn-chinaventure",
           "name": "投中网",
-          "attempted_at": "2026-09-24T00:12:45.704Z",
-          "query_count": 2,
-          "successful_queries": 2,
+          "attempted_at": "2026-09-28T00:13:09.758Z",
+          "query_count": 8,
+          "successful_queries": 8,
           "list_pages_ok": 1,
-          "candidates": 24,
+          "candidates": 15,
           "failures": [],
           "entry_urls": [
             "https://www.chinaventure.com.cn/"
           ],
-          "discovered": 24,
+          "consumer_hardware": [
+            {
+              "category": "ai-glasses",
+              "query": "site:chinaventure.com.cn (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            },
+            {
+              "category": "ai-pendants",
+              "query": "site:chinaventure.com.cn (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-toys",
+              "query": "site:chinaventure.com.cn (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            },
+            {
+              "category": "ai-phones",
+              "query": "site:chinaventure.com.cn (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            },
+            {
+              "category": "ai-audio-wearables",
+              "query": "site:chinaventure.com.cn (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-home-devices",
+              "query": "site:chinaventure.com.cn (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            }
+          ],
+          "discovered": 15,
+          "general_candidates": 10,
           "capped": 0,
           "status": "collected",
-          "response_ms": 4094,
-          "completed_at": "2026-09-24T00:12:49.798Z",
-          "raw_count": 24,
-          "readable_count": 24,
-          "accepted_claims": 5,
+          "response_ms": 21909,
+          "completed_at": "2026-09-28T00:13:31.667Z",
+          "raw_count": 13,
+          "readable_count": 13,
+          "accepted_claims": 7,
           "verified_event_ids": [
-            "EV-c96705c69e11c520",
-            "EV-0f2e50fbc9af587a",
-            "EV-0d0b83c319d971b0",
-            "EV-f3303c1905f3467b"
+            "EV-79d08b14ff147531",
+            "EV-9be00d0621b59529"
           ],
           "funding_event_ids": [
-            "EV-c96705c69e11c520",
-            "EV-0f2e50fbc9af587a",
-            "EV-0d0b83c319d971b0",
-            "EV-f3303c1905f3467b"
+            "EV-79d08b14ff147531",
+            "EV-9be00d0621b59529"
           ],
-          "china_funding_event_ids": [
-            "EV-0f2e50fbc9af587a",
-            "EV-0d0b83c319d971b0",
-            "EV-f3303c1905f3467b"
-          ],
+          "china_funding_event_ids": [],
           "card_ids": [
-            "FI-86634a7717d63426",
-            "FI-e81dafc2defecb80",
-            "FI-6f249b72ba7485a4",
             "FI-85004d0ca806b8ac"
           ],
-          "latest_disclosure": "2026-09-23T06:58:00.000Z"
+          "latest_disclosure": "2026-09-27T11:16:00.000Z"
         },
         {
           "source_id": "36kr",
           "registry_id": "cn-36kr-rss",
           "name": "36氪",
-          "attempted_at": "2026-09-24T00:12:49.798Z",
-          "query_count": 2,
-          "successful_queries": 2,
+          "attempted_at": "2026-09-28T00:13:31.667Z",
+          "query_count": 8,
+          "successful_queries": 8,
           "list_pages_ok": 0,
-          "candidates": 2,
+          "candidates": 12,
           "failures": [
             "list https://pitchhub.36kr.com/: no readable funding article links"
           ],
           "entry_urls": [
             "https://pitchhub.36kr.com/"
           ],
-          "discovered": 2,
+          "consumer_hardware": [
+            {
+              "category": "ai-glasses",
+              "query": "site:36kr.com (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 4,
+              "retained": 4,
+              "capped": 0
+            },
+            {
+              "category": "ai-pendants",
+              "query": "site:36kr.com (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            },
+            {
+              "category": "ai-toys",
+              "query": "site:36kr.com (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            },
+            {
+              "category": "ai-phones",
+              "query": "site:36kr.com (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            },
+            {
+              "category": "ai-audio-wearables",
+              "query": "site:36kr.com (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            },
+            {
+              "category": "ai-home-devices",
+              "query": "site:36kr.com (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            }
+          ],
+          "discovered": 12,
+          "general_candidates": 2,
           "capped": 0,
           "status": "partial",
-          "response_ms": 6857,
-          "completed_at": "2026-09-24T00:12:56.655Z",
-          "raw_count": 2,
-          "readable_count": 2,
-          "accepted_claims": 0,
-          "verified_event_ids": [],
-          "funding_event_ids": [],
+          "response_ms": 34849,
+          "completed_at": "2026-09-28T00:14:06.516Z",
+          "raw_count": 12,
+          "readable_count": 12,
+          "accepted_claims": 1,
+          "verified_event_ids": [
+            "EV-87d382f1816746c4"
+          ],
+          "funding_event_ids": [
+            "EV-87d382f1816746c4"
+          ],
           "china_funding_event_ids": [],
           "card_ids": [],
-          "latest_disclosure": null
+          "latest_disclosure": "2026-09-28T00:59:10.000Z"
         },
         {
           "source_id": "cyzone",
           "registry_id": "cn-cyzone",
           "name": "创业邦",
-          "attempted_at": "2026-09-24T00:12:56.655Z",
-          "query_count": 2,
-          "successful_queries": 2,
+          "attempted_at": "2026-09-28T00:14:06.516Z",
+          "query_count": 8,
+          "successful_queries": 8,
           "list_pages_ok": 1,
-          "candidates": 11,
+          "candidates": 13,
           "failures": [],
           "entry_urls": [
             "https://www.cyzone.cn/"
           ],
-          "discovered": 11,
+          "consumer_hardware": [
+            {
+              "category": "ai-glasses",
+              "query": "site:cyzone.cn (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            },
+            {
+              "category": "ai-pendants",
+              "query": "site:cyzone.cn (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-toys",
+              "query": "site:cyzone.cn (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-phones",
+              "query": "site:cyzone.cn (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-audio-wearables",
+              "query": "site:cyzone.cn (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-home-devices",
+              "query": "site:cyzone.cn (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            }
+          ],
+          "discovered": 13,
+          "general_candidates": 12,
           "capped": 0,
           "status": "collected",
-          "response_ms": 13108,
-          "completed_at": "2026-09-24T00:13:09.763Z",
-          "raw_count": 11,
-          "readable_count": 11,
+          "response_ms": 23410,
+          "completed_at": "2026-09-28T00:14:29.926Z",
+          "raw_count": 13,
+          "readable_count": 13,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -1877,82 +2031,169 @@ window.WaveSightOpsConsole = {
           "source_id": "cls",
           "registry_id": "cn-cls",
           "name": "财联社／科创板日报",
-          "attempted_at": "2026-09-24T00:13:09.764Z",
-          "query_count": 2,
-          "successful_queries": 2,
-          "list_pages_ok": 0,
-          "candidates": 8,
-          "failures": [
-            "list https://www.cls.cn/: no readable funding article links"
-          ],
+          "attempted_at": "2026-09-28T00:14:29.926Z",
+          "query_count": 8,
+          "successful_queries": 8,
+          "list_pages_ok": 1,
+          "candidates": 21,
+          "failures": [],
           "entry_urls": [
             "https://www.cls.cn/"
           ],
-          "discovered": 8,
-          "capped": 0,
-          "status": "partial",
-          "response_ms": 7568,
-          "completed_at": "2026-09-24T00:13:17.332Z",
-          "raw_count": 8,
-          "readable_count": 8,
-          "accepted_claims": 1,
+          "consumer_hardware": [
+            {
+              "category": "ai-glasses",
+              "query": "site:cls.cn (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            },
+            {
+              "category": "ai-pendants",
+              "query": "site:cls.cn (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            },
+            {
+              "category": "ai-toys",
+              "query": "site:cls.cn (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-phones",
+              "query": "site:cls.cn (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 6,
+              "retained": 4,
+              "capped": 2
+            },
+            {
+              "category": "ai-audio-wearables",
+              "query": "site:cls.cn (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 4,
+              "retained": 4,
+              "capped": 0
+            },
+            {
+              "category": "ai-home-devices",
+              "query": "site:cls.cn (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 5,
+              "retained": 4,
+              "capped": 1
+            }
+          ],
+          "discovered": 24,
+          "general_candidates": 7,
+          "capped": 3,
+          "status": "collected",
+          "response_ms": 21782,
+          "completed_at": "2026-09-28T00:14:51.708Z",
+          "raw_count": 21,
+          "readable_count": 21,
+          "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
           "china_funding_event_ids": [],
-          "card_ids": [
-            "FI-c2d2a86fa237b6eb"
-          ],
-          "latest_disclosure": "2026-09-21T10:12:00.000Z"
+          "card_ids": [],
+          "latest_disclosure": "2026-09-26T23:00:00.000Z"
         },
         {
           "source_id": "qbitai",
           "registry_id": "cn-qbitai-rss",
           "name": "量子位",
-          "attempted_at": "2026-09-24T00:13:17.332Z",
-          "query_count": 2,
-          "successful_queries": 2,
-          "list_pages_ok": 1,
-          "candidates": 17,
-          "failures": [],
+          "attempted_at": "2026-09-28T00:14:51.708Z",
+          "query_count": 8,
+          "successful_queries": 8,
+          "list_pages_ok": 0,
+          "candidates": 12,
+          "failures": [
+            "list https://www.qbitai.com/: no readable funding article links"
+          ],
           "entry_urls": [
             "https://www.qbitai.com/"
           ],
-          "discovered": 17,
+          "consumer_hardware": [
+            {
+              "category": "ai-glasses",
+              "query": "site:qbitai.com (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            },
+            {
+              "category": "ai-pendants",
+              "query": "site:qbitai.com (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 2,
+              "retained": 2,
+              "capped": 0
+            },
+            {
+              "category": "ai-toys",
+              "query": "site:qbitai.com (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 4,
+              "retained": 4,
+              "capped": 0
+            },
+            {
+              "category": "ai-phones",
+              "query": "site:qbitai.com (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-audio-wearables",
+              "query": "site:qbitai.com (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-home-devices",
+              "query": "site:qbitai.com (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
+              "capped": 0
+            }
+          ],
+          "discovered": 12,
+          "general_candidates": 4,
           "capped": 0,
-          "status": "collected",
-          "response_ms": 7263,
-          "completed_at": "2026-09-24T00:13:24.595Z",
-          "raw_count": 17,
-          "readable_count": 17,
-          "accepted_claims": 9,
-          "verified_event_ids": [
-            "EV-2de77a62435cc041",
-            "EV-faa25b0b9ffbaa30",
-            "EV-0d0b83c319d971b0"
-          ],
-          "funding_event_ids": [
-            "EV-2de77a62435cc041",
-            "EV-0d0b83c319d971b0"
-          ],
-          "china_funding_event_ids": [
-            "EV-0d0b83c319d971b0"
-          ],
+          "status": "partial",
+          "response_ms": 25424,
+          "completed_at": "2026-09-28T00:15:17.132Z",
+          "raw_count": 12,
+          "readable_count": 12,
+          "accepted_claims": 0,
+          "verified_event_ids": [],
+          "funding_event_ids": [],
+          "china_funding_event_ids": [],
           "card_ids": [
-            "FI-17089973bc48aad2",
-            "FI-257e4f42c36415ea",
-            "FI-111c093076dbcf41",
-            "FI-66e7dd713fc6bab5",
-            "FI-29dc2b4975d2ba0a"
+            "FI-257e4f42c36415ea"
           ],
-          "latest_disclosure": "2026-09-23T00:00:00+08:00"
+          "latest_disclosure": "2026-09-14T00:00:00+08:00"
         },
         {
           "source_id": "jiqizhixin",
           "registry_id": "cn-jiqizhixin",
           "name": "机器之心",
-          "attempted_at": "2026-09-24T00:13:24.595Z",
-          "query_count": 2,
-          "successful_queries": 2,
+          "attempted_at": "2026-09-28T00:15:17.132Z",
+          "query_count": 8,
+          "successful_queries": 8,
           "list_pages_ok": 0,
           "candidates": 0,
           "failures": [
@@ -1961,11 +2202,62 @@ window.WaveSightOpsConsole = {
           "entry_urls": [
             "https://www.jiqizhixin.com/"
           ],
+          "consumer_hardware": [
+            {
+              "category": "ai-glasses",
+              "query": "site:jiqizhixin.com (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-pendants",
+              "query": "site:jiqizhixin.com (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-toys",
+              "query": "site:jiqizhixin.com (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-phones",
+              "query": "site:jiqizhixin.com (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-audio-wearables",
+              "query": "site:jiqizhixin.com (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            },
+            {
+              "category": "ai-home-devices",
+              "query": "site:jiqizhixin.com (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
+              "capped": 0
+            }
+          ],
           "discovered": 0,
+          "general_candidates": 0,
           "capped": 0,
           "status": "partial",
-          "response_ms": 16190,
-          "completed_at": "2026-09-24T00:13:40.785Z",
+          "response_ms": 21816,
+          "completed_at": "2026-09-28T00:15:38.948Z",
           "raw_count": 0,
           "readable_count": 0,
           "accepted_claims": 0,
@@ -1979,15 +2271,15 @@ window.WaveSightOpsConsole = {
       "totals": {
         "sources_attempted": 7,
         "sources_failed": 0,
-        "candidates": 86,
-        "readable_documents": 86,
-        "accepted_claims": 20,
-        "verified_events": 10,
+        "candidates": 107,
+        "readable_documents": 105,
+        "accepted_claims": 16,
+        "verified_events": 9,
         "funding_events": 9,
-        "china_funding_events": 3,
-        "linked_organizations": 14,
+        "china_funding_events": 1,
+        "linked_organizations": 15,
         "linked_products": 0,
-        "published_card_matches": 12
+        "published_card_matches": 5
       },
       "publication": {
         "status": "awaiting_publication_receipt"
@@ -27824,64 +28116,64 @@ window.WaveSightOpsConsole = {
     ],
     "batches": [
       {
-        "id": "data-center:2026-09-24",
-        "observedAt": "2026-09-24T02:18:58.890Z",
-        "sourceSnapshot": "0518549814e031ec77efd843683e799e85a5cdd26206f2dc236e3c2680c955bb",
+        "id": "data-center:2026-09-26",
+        "observedAt": "2026-09-26T00:28:30.870Z",
+        "sourceSnapshot": "9b014989340b13403e931c889d7cb57f9333e6d8599feb59b14b57f6a198e2f3",
         "stages": [
           {
-            "id": "data-center:2026-09-24:collection",
+            "id": "data-center:2026-09-26:collection",
             "label": "采集",
             "status": "partial",
             "counts": {
               "discovered": 290,
-              "capture_succeeded": 350,
-              "capture_failed": 5,
-              "recovered_source_failures": 11,
-              "raw_documents": 350
+              "capture_succeeded": 256,
+              "capture_failed": 6,
+              "recovered_source_failures": 10,
+              "raw_documents": 256
             },
             "evidence": [
-              "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/manifest.json",
-              "agent-workflow/reports/2026-09-24-guanlan-daily-monitor-log.md",
-              "agent-workflow/reports/2026-09-24-guanlan-monitor-quality-gate.md"
+              "01-SiteV2/content/11-databases/data-center-v4/2026-09-26/manifest.json",
+              "agent-workflow/reports/2026-09-26-guanlan-daily-monitor-log.md",
+              "agent-workflow/reports/2026-09-26-guanlan-monitor-quality-gate.md"
             ]
           },
           {
-            "id": "data-center:2026-09-24:fact_build",
+            "id": "data-center:2026-09-26:fact_build",
             "label": "事实构建",
             "status": "passed",
             "counts": {
-              "accepted_claims": 137,
+              "accepted_claims": 42,
               "rejected_claims": 0,
-              "accepted": 137,
+              "accepted": 42,
               "rejected": 0,
-              "pending_claims": 3,
-              "canonical_events": 54,
-              "entities": 79,
-              "relationships": 140,
+              "pending_claims": 0,
+              "canonical_events": 21,
+              "entities": 40,
+              "relationships": 42,
               "conflicts": 0,
-              "qa_queue": 295
+              "qa_queue": 235
             },
             "evidence": [
-              "01-SiteV2/content/11-databases/data-center-v4/2026-09-24/manifest.json",
-              "agent-workflow/reports/2026-09-24-data-center-v4-integrity-gate.json"
+              "01-SiteV2/content/11-databases/data-center-v4/2026-09-26/manifest.json",
+              "agent-workflow/reports/2026-09-26-data-center-v4-integrity-gate.json"
             ]
           },
           {
-            "id": "data-center:2026-09-24:application_projection",
+            "id": "data-center:2026-09-26:application_projection",
             "label": "应用投影",
-            "status": "passed",
+            "status": "partial",
             "counts": {
               "opportunity_map": "passed",
               "trend_radar": "passed",
-              "funding_insights": "passed",
+              "funding_insights": "failed",
               "fde_hardware_sync": "passed"
             },
             "evidence": [
-              "agent-workflow/reports/2026-09-24-persistent-asset-manifest.json"
+              "agent-workflow/reports/2026-09-26-persistent-asset-manifest.json"
             ]
           },
           {
-            "id": "data-center:2026-09-24:publication",
+            "id": "data-center:2026-09-26:publication",
             "label": "发布",
             "status": "waiting",
             "counts": {
@@ -27890,13 +28182,13 @@ window.WaveSightOpsConsole = {
               "authoritative": false
             },
             "evidence": [
-              "agent-workflow/reports/2026-09-24-persistent-asset-manifest.json"
+              "agent-workflow/reports/2026-09-26-persistent-asset-manifest.json"
             ]
           }
         ]
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-24T02:18:59.540Z"
+    "snapshotGeneratedAt": "2026-09-28T01:02:28.165Z"
   }
 };

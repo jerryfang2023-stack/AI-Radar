@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -153,16 +153,73 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Arāya Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Arāya Ventures 是一家面向全球 pre-seed 与 seed 创业团队的早期投资机构，官网列出 AI、医疗健康、商业、金融科技和未来工作等方向，并披露 Super Angel、Global、Arāya Sie 三只基金或投资载体的规模分别为 2,630 万、3,000 万和 2,000 万美元。该页面没有把这些载体说明为可相加的统一 AUM。创始人及管理合伙人为 Rupa Popat；官网团队页还列出不同基金和地区的投资负责人。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "全球 pre-seed 与 seed",
+          "source_id": "araya_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI、医疗健康、商业、金融科技和未来工作",
+          "source_id": "araya_home"
+        },
+        {
+          "field": "regulatory_relationship",
+          "label": "英国监管关系",
+          "value": "Araya Ventures Limited 官网称其为 The Fund Incubator 的 Appointed Representative；本描述不代表其自身为 FCA 直接授权主体",
+          "source_id": "araya_legal"
+        },
+        {
+          "field": "core_team",
+          "label": "官网列示核心团队",
+          "value": [
+            "Rupa Popat — Founder and Managing Partner",
+            "Mitul Ruparelia — Partner, Global",
+            "Martin Carruthers — Partner, Super Angel",
+            "Triin Linamagi — Managing Partner, Arāya Sie"
+          ],
+          "source_id": "araya_team"
+        },
+        {
+          "field": "extended_team",
+          "label": "官网列示其他团队成员",
+          "value": [
+            "Kavit Haria — CEO & Partner, House of Arāya",
+            "Manny Singh — Investment Principal",
+            "Kamyaar Butt — Investment Lead, GCC",
+            "Vicky Stogiannidou — Investment Associate",
+            "Soizic Le Lasseur — Operations Manager",
+            "Nayla Waly — Investment Associate"
+          ],
+          "source_id": "araya_team_extended"
+        },
+        {
+          "field": "fund_super_angel",
+          "label": "Super Angel 基金",
+          "value": "2,630 万美元；官网称 80% 投向英国，20% 投向高确信度的全球机会",
+          "source_id": "araya_super_angel"
+        },
+        {
+          "field": "fund_global",
+          "label": "Global 基金",
+          "value": "3,000 万美元；面向欧洲、海湾地区和亚洲 seed 阶段，40% 预留给高确信度组合的 A 轮跟投",
+          "source_id": "araya_global"
+        },
+        {
+          "field": "fund_araya_sie",
+          "label": "Arāya Sie 基金",
+          "value": "2,000 万美元；支持英国女性创办的 pre-seed／seed 企业",
+          "source_id": "araya_sie"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：First Concepts · 预种子轮 · 2026-03-17 · 本轮领投 · $1,000,000。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露：First Concepts 于 2026-03-17 公布 100 万美元 pre-seed 轮，Tech.eu 称该轮由 Arāya Ventures 与 Antler 共同领投。100 万美元是整轮金额，来源未披露 Arāya 单独出资额。",
           "source_id": "FISRC-e713775ebfd9779c"
         },
         {
@@ -170,15 +227,117 @@
           "source_id": "FISRC-99f8420e17e979f5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Arāya Ventures",
+          "url": "https://www.araya.ventures/",
+          "source_id": "araya_home"
+        },
+        {
+          "kind": "email",
+          "label": "创始人融资与合作联系",
+          "value": "hello@araya.ventures",
+          "url": "https://www.araya.ventures/contact",
+          "source_id": "araya_contact"
+        },
+        {
+          "kind": "email",
+          "label": "职业申请邮箱",
+          "value": "careers@araya.ventures",
+          "url": "https://www.araya.ventures/contact",
+          "source_id": "araya_contact_careers"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "araya_home",
+          "source_url": "https://www.araya.ventures/",
+          "source_title": "Arāya Ventures — Pre-Seed and Seed Ventures",
+          "source_content_hash": "8727ef1829222a5ae4f89c4afd065f66504fdf35966092c01e56457ad4bab52b",
+          "quote": "We invest in exceptional founders globally at the pre-seed and seed stage across AI, healthcare, commerce, fintech and the future of work.",
+          "quote_hash": "d973694ba2c5567a79188888a07dbceaf08ddfb325853f63a3823fc1e93d93cc"
+        },
+        {
+          "source_id": "araya_team",
+          "source_url": "https://www.araya.ventures/team",
+          "source_title": "Our Team — Arāya Ventures",
+          "source_content_hash": "cc98e5b05df600553921346fe86fa65f35d28f2ded913b169d4fdd333703ed70",
+          "quote": "Rupa Popat Founder and Managing Partner Mitul Ruparelia Partner, Global Martin Carruthers Partner, Super Angel Triin Linamagi Managing Partner, Arāya Sie",
+          "quote_hash": "5bd71e6649e08c6f09b99a90e466c2e4d2acaef80c795e998eabc9ecda32a3aa"
+        },
+        {
+          "source_id": "araya_contact",
+          "source_url": "https://www.araya.ventures/contact",
+          "source_title": "Contact — Arāya Ventures",
+          "source_content_hash": "5f344a37e22870247d29282351604145277e7ad7218bb9b9999d05078e094cea",
+          "quote": "Pitch to Us hello@araya.ventures",
+          "quote_hash": "9456549a600db973a758695ff0b3ccb012a00e89dd3d56ce6bd9714432efc5b2"
+        },
+        {
+          "source_id": "araya_portfolio",
+          "source_url": "https://www.araya.ventures/portfolio",
+          "source_title": "The ARĀYA Portfolio — Arāya Ventures",
+          "source_content_hash": "43f52247e0f0d961565efa258dafea291219e5f69e80d04d8b95c7c26692cd72",
+          "quote": "First Concepts AI · Future of Work · Active · Super Angel",
+          "quote_hash": "b0fbd58aa08f6523b480d5082540a1e298426e4d2fc083fec58b54002b3aa27d"
+        },
         {
           "source_id": "FISRC-e713775ebfd9779c",
           "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
-          "source_title": "First Concepts 获100万美元融资，开发面向创意工作的AI原生操作系统 - Tech.eu",
+          "source_title": "First Concepts Raises $1M to Develop AI-Native OS for Creative Work | Tech.eu",
           "source_content_hash": "290464341ec7404f",
           "quote": "The round was led by Arāya Ventures alongside Antler",
           "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
+        },
+        {
+          "source_id": "araya_team_extended",
+          "source_url": "https://www.araya.ventures/team",
+          "source_title": "Our Team — Arāya Ventures",
+          "source_content_hash": "cc98e5b05df600553921346fe86fa65f35d28f2ded913b169d4fdd333703ed70",
+          "quote": "Kavit Haria CEO & Partner, House of Arāya Manny Singh Investment Principal Kamyaar Butt Investment Lead, GCC Vicky Stogiannidou Investment Associate Soizic Le Lasseur Operations Manager Nayla Waly Investment Associate",
+          "quote_hash": "7af807664a9736937e132edfb8f4ed96195a25edec5aec16b7986eaac1ae3bb5"
+        },
+        {
+          "source_id": "araya_contact_careers",
+          "source_url": "https://www.araya.ventures/contact",
+          "source_title": "Contact — Arāya Ventures",
+          "source_content_hash": "5f344a37e22870247d29282351604145277e7ad7218bb9b9999d05078e094cea",
+          "quote": "careers@araya.ventures",
+          "quote_hash": "36765787363fc9051c87e6d81b5b04d47242735326e7beeb0f04e3bde1139058"
+        },
+        {
+          "source_id": "araya_legal",
+          "source_url": "https://www.araya.ventures/contact",
+          "source_title": "Contact — Arāya Ventures",
+          "source_content_hash": "5f344a37e22870247d29282351604145277e7ad7218bb9b9999d05078e094cea",
+          "quote": "Araya Ventures Limited is an Appointed Representative of The Fund Incubator, which is authorised and regulated by the Financial Conduct Authority with firm reference number 208716.",
+          "quote_hash": "4bac498f1279be091ed3671c85c497d9b6ab136b426a2bb4816d52366f254da0"
+        },
+        {
+          "source_id": "araya_super_angel",
+          "source_url": "https://www.araya.ventures/",
+          "source_title": "Arāya Ventures — Pre-Seed and Seed Ventures",
+          "source_content_hash": "8727ef1829222a5ae4f89c4afd065f66504fdf35966092c01e56457ad4bab52b",
+          "quote": "Super Angel $26.3M An S/EIS-qualifying fund backing exceptional pre-seed and seed founders across the UK and beyond, with 80% deployed domestically and 20% into high-conviction global opportunities.",
+          "quote_hash": "8b7dc5d2db7a3c334fac1ac3db1134966054827ed8048358360c3b07ef48e976"
+        },
+        {
+          "source_id": "araya_global",
+          "source_url": "https://www.araya.ventures/",
+          "source_title": "Arāya Ventures — Pre-Seed and Seed Ventures",
+          "source_content_hash": "8727ef1829222a5ae4f89c4afd065f66504fdf35966092c01e56457ad4bab52b",
+          "quote": "Global $30M A global seed-stage fund investing across Europe, the GCC, and Asia, with 40% of capital reserved for Series A follow-on investments into our highest-conviction portfolio companies.",
+          "quote_hash": "2377c0b41e8762f90b17a712dca3982ba2874b926ec08f4ed6bdc97cabbc01eb"
+        },
+        {
+          "source_id": "araya_sie",
+          "source_url": "https://www.araya.ventures/",
+          "source_title": "Arāya Ventures — Pre-Seed and Seed Ventures",
+          "source_content_hash": "8727ef1829222a5ae4f89c4afd065f66504fdf35966092c01e56457ad4bab52b",
+          "quote": "Arāya Sie $20M A dedicated fund backing exceptional women-led startups at pre-seed and seed stage, focused on healthcare, climate, fintech, and deeptech/AI",
+          "quote_hash": "c372518ab3d838b605af2f0d3d3639f82aeecb46d011ce099fb33065984c5c18"
         },
         {
           "source_id": "FISRC-99f8420e17e979f5",
@@ -189,7 +348,47 @@
           "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金规模、策略、团队及联系方式均来自 Arāya Ventures 官网自述。各基金数字分项列示，不相加推定为统一 AUM；融资案例的总额不是机构单笔支票或投资回报。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[5].label": {
+          "text": "Super Angel 基金",
+          "source_hash": "681c863f60f49d61869a44ec29ee606a6eea025b83991e1dddc73713e41c730e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:39.379Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "Global 基金",
+          "source_hash": "f2dca3535fb7d3df82c5277a3cbb8ebbe7056ef4925302906719b41dad096995",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:39.379Z",
+          "status": "translated"
+        },
+        "public_profile.facts[7].label": {
+          "text": "Arāya Sie 基金",
+          "source_hash": "7e2f5f8d3707295213167091a4b859f9b20a678134e009174be18ade71b22b28",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:39.379Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "融资披露：First Concepts 于 2026-03-17 公布 100 万美元 pre-seed 轮，Tech.eu 称该轮由 Arāya Ventures 与 Antler 共同领投。100 万美元是整轮金额，来源未披露 Arāya 单独出资额。",
+          "source_hash": "a8bd423f65ed083840b3952314a610241f2a318edb92b314819770692b819812",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:39.379Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

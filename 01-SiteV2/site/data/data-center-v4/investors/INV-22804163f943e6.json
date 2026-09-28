@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,117 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "浙商创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "浙商创投股份有限公司（ZSVC，股票代码834089）是总部位于杭州的私募股权与创业投资管理机构。公司官网称其聚焦“投早、投小、投科技、投未来”，围绕先进制造、人工智能、生命健康、新能源和新材料布局。官网披露的基金及投资组合数据属于公司自述，页面未标出统计基准日期。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "浙商创投股份有限公司",
+          "source_id": "zsvc_sse_2018_annual_report"
+        },
+        {
+          "field": "established_date",
+          "label": "成立日期",
+          "value": "2007-11-16",
+          "source_id": "zsvc_sse_2018_annual_report"
+        },
+        {
+          "field": "stock_code",
+          "label": "新三板代码",
+          "value": "834089",
+          "source_id": "zsvc_sse_2018_annual_report"
+        },
+        {
+          "field": "listed_date",
+          "label": "挂牌日期",
+          "value": "2015-11-05",
+          "source_id": "zsvc_sse_2018_annual_report"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "投早、投小、投科技、投未来",
+          "source_id": "zsvc_company_profile"
+        },
+        {
+          "field": "sectors",
+          "label": "重点布局产业",
+          "value": [
+            "先进制造",
+            "人工智能",
+            "生命健康",
+            "新能源",
+            "新材料"
+          ],
+          "source_id": "zsvc_company_profile"
+        },
+        {
+          "field": "managed_funds",
+          "label": "官网披露的管理基金数量",
+          "value": "60多个股权投资及并购基金（公司自述；官网未标统计基准日期）",
+          "source_id": "zsvc_company_profile"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露的管理基金规模",
+          "value": "超过人民币650亿元（公司自述；官网未标统计基准日期）",
+          "source_id": "zsvc_company_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2007-11-16",
+          "description": "浙商创投股份有限公司成立。",
+          "source_id": "zsvc_sse_2018_annual_report"
+        },
+        {
+          "date": "2015-11-05",
+          "description": "在全国中小企业股份转让系统挂牌，证券代码834089。",
+          "source_id": "zsvc_sse_2018_annual_report"
+        }
+      ],
       "track_record": [
+        {
+          "description": "公司官网自述，其管理基金已投资400多家企业，50多个项目成功上市；官网未注明统计基准日，这些数字不代表完整投资组合或独立审计业绩。",
+          "source_id": "zsvc_company_profile"
+        },
         {
           "description": "融资来源记录：拓深科技 · 轮次未披露 · 2026-05-19 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1b3adf614ab55007"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "浙商创投官方网站",
+          "value": "浙商创投",
+          "url": "https://zsvc.com.cn/",
+          "source_id": "zsvc_contact"
+        },
+        {
+          "kind": "email",
+          "label": "投资项目专用邮箱",
+          "value": "invest@zsvc.com.cn",
+          "url": "https://zsvc.com.cn/contact/",
+          "source_id": "zsvc_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "杭州总部电话",
+          "value": "+86-571-89922222",
+          "url": "https://zsvc.com.cn/contact/",
+          "source_id": "zsvc_contact"
+        },
+        {
+          "kind": "address",
+          "label": "杭州总部地址",
+          "value": "杭州市西湖区西溪路527号钱江浙商创投中心B座9楼",
+          "url": "https://zsvc.com.cn/contact/",
+          "source_id": "zsvc_contact"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构基本信息依据上交所披露的2018年度报告核验；产业布局、管理规模及投资案例数据为公司官网自述，官网未提供对应的统计截止日。投资项目邮箱及杭州总部联系方式取自机构官网。融资活动索引所列拓深科技参投案例有独立报道来源。",
       "sources": [
         {
           "source_id": "FISRC-1b3adf614ab55007",
@@ -160,9 +258,34 @@
           "source_content_hash": "f9d17aa55f30fbc9",
           "quote": "本轮融资由 元璟资本、浙商创投、诺铁资本、东方嘉富、中信建投、上城资本、远至资本及老股东博将资本 继续追加投资等联合投资。",
           "quote_hash": "fd8e6d4e04112c7e2791d613e0ea674a3ac7538a03d1983f71e57216ca8225da"
+        },
+        {
+          "source_id": "zsvc_sse_2018_annual_report",
+          "source_url": "https://www.sse.com.cn/disclosure/bond/announcement/company/c/3570388346403059.pdf",
+          "source_title": "浙商创投股份有限公司2018年度报告",
+          "source_content_hash": "3368da22bc9758a257ae071bcd7810606c9df390b20a86b7e068ef463a629ead",
+          "quote": "公司成立日期：2007年11月16日；股票代码：834089；挂牌日期：2015年11月5日。",
+          "quote_hash": "a37b62608af4354ea0ad329244c3edbe61a4a44d39a90418c7f86c3cfaf3850f"
+        },
+        {
+          "source_id": "zsvc_company_profile",
+          "source_url": "https://zsvc.com.cn/about/index.html",
+          "source_title": "企业介绍 - 浙商创投",
+          "source_content_hash": "13cae82f6c95c71c4c40d52e53badc6870a528bb671615df5944f53829e165d2",
+          "quote": "公司目前已经管理了60多个各类股权投资、并购基金，管理基金规模超650亿元人民币，所投企业累计市值规模超万亿人民币，带动就业人口超过20万。公司所管理的基金已成功投资400多家优秀企业，50多个项目已经成功上市。",
+          "quote_hash": "e45d3b68ea502d7d353d17f4f832876a2c685c36eda136b8e7539e9a1ba16ed9"
+        },
+        {
+          "source_id": "zsvc_contact",
+          "source_url": "https://zsvc.com.cn/contact/",
+          "source_title": "联系方式 - 浙商创投",
+          "source_content_hash": "8a621e349fc34370decbebd665ffe15e568d4084dd80e44c0b49be224aee3bee",
+          "quote": "杭州总部电话：86-571-89922222；投资项目专用邮箱：invest@zsvc.com.cn；地址：杭州市西湖区西溪路527号钱江浙商创投中心B座9楼。",
+          "quote_hash": "8f5688bd4c1164bfb473d761b60004fb8476829521f1a7b9ec020d0cfbb40477"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }

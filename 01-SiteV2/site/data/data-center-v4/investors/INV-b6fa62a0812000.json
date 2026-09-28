@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,216 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "亚马逊 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "融资活动名录使用“亚马逊”这一集团级名称。SEC文件确认，OpenAI股票的具体购买主体为 Amazon.com NV Investment Holdings LLC，Amazon.com, Inc.仅作为担保方。2026年二季度申报披露，截至2026年6月30日后已投入剩余213亿美元承诺额；结合前六个月已投资的287亿美元，该OpenAI股权投资共500亿美元。融资库记录的1100亿美元是该轮总额，不是亚马逊单独出资。AWS另有与OpenAI的长期云服务商业承诺，与股权投资分开列示。这里只列示本库活动和少量公司申报披露的投资案例，不代表完整投资组合。投资者关系网站、总部地址和总机并非投资项目申请渠道；本次未核实到专门的投资BP提交方式。",
+      "summary": "Amazon.com, Inc.是亚马逊集团的SEC报告主体，经营北美、国际和AWS三大业务分部。公司2025年年报披露合并净销售额为7169.24亿美元，Jeff Bezos于1994年创立Amazon.com。2026年SEC申报确认，Amazon.com NV Investment Holdings LLC参与OpenAI C轮优先股投资，Amazon.com, Inc.担任担保方；到2026年6月30日后，公司披露已投入OpenAI该轮剩余213亿美元承诺额，连同前六个月的287亿美元，合计500亿美元。该股权投资与AWS对OpenAI另行扩大的1000亿美元、为期八年的云服务商业承诺不是同一交易。",
+      "facts": [
         {
-          "description": "融资来源记录：OpenAI · 基础设施融资 · 2026-02-28 · 本轮参投 · 1100亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b4ba4f68908fa080"
+          "field": "legal_identity",
+          "label": "SEC报告主体与主要办公地址",
+          "value": "Amazon.com, Inc.为在特拉华州注册的SEC报告主体；2025年Form 10-K列示主要行政办公室位于美国华盛顿州西雅图，电话为(206) 266-1000。",
+          "source_id": "amazon_2025_company"
+        },
+        {
+          "field": "founding_history",
+          "label": "创立与创始人",
+          "value": "Jeff Bezos于1994年创立Amazon.com；截至2025年年报披露，他担任执行董事长。",
+          "source_id": "amazon_2025_founded"
+        },
+        {
+          "field": "leadership_as_of_2026_01",
+          "label": "管理层（截至2026年1月28日）",
+          "value": "2025年Form 10-K列示Jeffrey P. Bezos为执行董事长、Andrew R. Jassy为总裁兼首席执行官。",
+          "source_id": "amazon_2025_leadership"
+        },
+        {
+          "field": "business_segments",
+          "label": "业务分部",
+          "value": [
+            "北美",
+            "国际",
+            "Amazon Web Services（AWS）"
+          ],
+          "source_id": "amazon_2025_business"
+        },
+        {
+          "field": "business_scope",
+          "label": "主要业务",
+          "value": "包括线上及实体零售、第三方卖家服务、Prime订阅、消费电子设备与数字内容，以及AWS提供的计算、存储、数据库、分析、人工智能和机器学习服务；还提供广告服务。",
+          "source_id": "amazon_2025_business"
+        },
+        {
+          "field": "financial_results_2025",
+          "label": "2025财年净销售额",
+          "value": "合并净销售额7169.24亿美元：北美4263.05亿美元、国际1618.94亿美元、AWS 1287.25亿美元。为年报披露的分部净销售额，不代表利润或投资回报。",
+          "source_id": "amazon_2025_sales"
+        },
+        {
+          "field": "openai_investment_vehicle",
+          "label": "OpenAI股权投资主体",
+          "value": "Amazon.com NV Investment Holdings LLC与OpenAI Group PBC签署股权承诺函；Amazon.com, Inc.在该函中仅作为担保方。",
+          "source_id": "amazon_2026_q1_openai_vehicle"
+        },
+        {
+          "field": "openai_equity_investment",
+          "label": "OpenAI C轮优先股投资（据2026年二季度季报披露）",
+          "value": "Amazon披露2026年上半年已投资287亿美元，其中第二季度为137亿美元；并于2026年6月30日后投入剩余213亿美元承诺额，合计对应500亿美元承诺。",
+          "source_id": "amazon_2026_q2_openai_balance"
+        },
+        {
+          "field": "openai_cloud_agreement",
+          "label": "AWS与OpenAI的商业服务协议（非股权投资）",
+          "value": "Amazon 2026年二季度Form 10-Q披露，AWS与OpenAI在第一季度将原有380亿美元多年期云服务商业安排扩大1000亿美元、期限八年。该商业承诺与亚马逊的500亿美元OpenAI股权投资分别披露。",
+          "source_id": "amazon_2026_q2_aws_commitment"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "1994",
+          "description": "Jeff Bezos创立Amazon.com。",
+          "source_id": "amazon_2025_founded"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "OpenAI：融资活动库关联的媒体报道显示，该轮总融资额为1100亿美元，并引述“500亿美元来自亚马逊”。1100亿美元是该轮总额，不是Amazon单独出资额；Amazon的实际投资承诺及后续投入详见本档案的SEC申报记录。",
+          "source_id": "FISRC-b4ba4f68908fa080"
+        },
+        {
+          "description": "OpenAI：融资活动库记录的1100亿美元为该轮融资总额。Amazon的股权投资金额并非1100亿美元；SEC文件披露其OpenAI C轮优先股投资承诺为500亿美元，并记载余下213亿美元已于2026年6月30日后投入。具体购买主体为Amazon.com NV Investment Holdings LLC，母公司Amazon.com, Inc.为担保方。",
+          "source_id": "amazon_2026_q2_openai_balance"
+        },
+        {
+          "description": "Anthropic：Amazon 2026年二季度申报披露，该季度向Anthropic Series G非投票优先股投资50亿美元，并向Series H非投票优先股投资50亿美元。该两笔为本次查到的特定季度投资，不构成Amazon全部Anthropic持仓或完整投资组合。",
+          "source_id": "amazon_2026_q2_anthropic_g"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方投资者关系信息网站（披露渠道，非项目申请渠道）",
+          "value": "amazon.com/ir",
+          "url": "https://www.amazon.com/ir",
+          "source_id": "amazon_2025_ir"
+        },
+        {
+          "kind": "address",
+          "label": "主要行政办公室（2025年Form 10-K披露）",
+          "value": "410 Terry Avenue North, Seattle, Washington 98109-5210, USA",
+          "source_id": "amazon_2025_company"
+        },
+        {
+          "kind": "phone",
+          "label": "总部总机（非投资项目联系电话）",
+          "value": "+1 206-266-1000",
+          "source_id": "amazon_2025_company"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "amazon_2025_company",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "source_title": "Amazon.com, Inc. Form 10-K for the year ended December 31, 2025",
+          "source_content_hash": "a2b84adb7ec9f6ea9474a798244f5b9a2ca7773092e1d233ba4db9d131ec1f3b",
+          "quote": "AMAZON.COM, INC. (Exact name of registrant as specified in its charter) Delaware 410 Terry Avenue North Seattle, Washington 98109-5210 (206) 266-1000",
+          "quote_hash": "4861359b51f3460b82ea1643b860793400cd61a379e06911185d7fd0e7ef9a7e"
+        },
+        {
+          "source_id": "amazon_2025_business",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "source_title": "Amazon.com, Inc. Form 10-K for the year ended December 31, 2025",
+          "source_content_hash": "a2b84adb7ec9f6ea9474a798244f5b9a2ca7773092e1d233ba4db9d131ec1f3b",
+          "quote": "We have organized our operations into three segments: North America, International, and Amazon Web Services (“AWS”).",
+          "quote_hash": "13b18fdd564d8632f1c5ec6560a4b5df3c6daa119f5c854db16f1f9b7c1f6cc3"
+        },
+        {
+          "source_id": "amazon_2025_founded",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "source_title": "Amazon.com, Inc. Form 10-K for the year ended December 31, 2025",
+          "source_content_hash": "a2b84adb7ec9f6ea9474a798244f5b9a2ca7773092e1d233ba4db9d131ec1f3b",
+          "quote": "Mr. Bezos founded Amazon.com in 1994 and has served as Executive Chair since July 2021.",
+          "quote_hash": "ac09044344556725ea3b291d255d643c10f67168bf020d1d8554df38e62c56e0"
+        },
+        {
+          "source_id": "amazon_2025_leadership",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "source_title": "Amazon.com, Inc. Form 10-K for the year ended December 31, 2025",
+          "source_content_hash": "a2b84adb7ec9f6ea9474a798244f5b9a2ca7773092e1d233ba4db9d131ec1f3b",
+          "quote": "Jeffrey P. Bezos | Executive Chair; Andrew R. Jassy | President and Chief Executive Officer",
+          "quote_hash": "0b60cb6e340c2c518c633552391306737d5bc3aaca8589147b6c9876ffa19610"
+        },
+        {
+          "source_id": "amazon_2025_sales",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "source_title": "Amazon.com, Inc. Form 10-K for the year ended December 31, 2025",
+          "source_content_hash": "a2b84adb7ec9f6ea9474a798244f5b9a2ca7773092e1d233ba4db9d131ec1f3b",
+          "quote": "Net sales information is as follows (in millions): North America $ 426,305; International 161,894; AWS 128,725; Consolidated $ 716,924.",
+          "quote_hash": "935264afc400caf26729b124522218619148d778ea890240129f9e5727c6d585"
+        },
+        {
+          "source_id": "amazon_2025_ir",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000004/amzn-20251231.htm",
+          "source_title": "Amazon.com, Inc. Form 10-K for the year ended December 31, 2025",
+          "source_content_hash": "a2b84adb7ec9f6ea9474a798244f5b9a2ca7773092e1d233ba4db9d131ec1f3b",
+          "quote": "Our investor relations website is amazon.com/ir",
+          "quote_hash": "ff6eff9ccc1ecfac098f6aaaa79203d425661362653a10684020d46ad03b7325"
+        },
+        {
+          "source_id": "amazon_2026_q1_openai_vehicle",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm",
+          "source_title": "Amazon.com, Inc. Form 10-Q for the quarter ended March 31, 2026",
+          "source_content_hash": "f1345b07cbbe54470b936eecaa47b584890ad68371fd5c6b36db8469a2bdb0c1",
+          "quote": "Equity Commitment Letter Agreement dated as of February 27, 2026, by and between OpenAI Group PBC and Amazon.com NV Investment Holdings LLC, and solely as guarantor, Amazon.com, Inc.",
+          "quote_hash": "e5bf4f617ba1cc19ad1218274e0e76f146e2594cfb0b346d00392fa769f9ba5f"
+        },
+        {
+          "source_id": "amazon_2026_q1_openai_investment",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000014/amzn-20260331.htm",
+          "source_title": "Amazon.com, Inc. Form 10-Q for the quarter ended March 31, 2026",
+          "source_content_hash": "f1345b07cbbe54470b936eecaa47b584890ad68371fd5c6b36db8469a2bdb0c1",
+          "quote": "In Q1 2026, we invested $15.0 billion in Series C Preferred Stock of OpenAI, and we also entered into an equity commitment letter agreement (the “Letter Agreement”), pursuant to which we agreed to purchase additional shares of Series C Preferred Stock (the “Commitment Shares”) with an aggregate purchase price of $35.0 billion (the “Commitment Amount”).",
+          "quote_hash": "f582e6f29f77fe64df2289ca09248c7c812bb56fdc16ee8ee79940cacbe0c80a"
+        },
+        {
+          "source_id": "amazon_2026_q2_openai_balance",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "source_title": "Amazon.com, Inc. Form 10-Q for the quarter ended June 30, 2026",
+          "source_content_hash": "285f6eccb8b24bfa4c9135ebb1e7f06b41ca26336ff697c60d92b3446fb91fa5",
+          "quote": "Subsequent to June 30, 2026, we invested the remaining $21.3 billion Commitment Amount in shares of Series C Preferred Stock of OpenAI.",
+          "quote_hash": "148bb812d9c024e180ada66a28aba2a59dd2bcecc472e23f56dd58549c87642d"
+        },
+        {
+          "source_id": "amazon_2026_q2_openai_six_months",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "source_title": "Amazon.com, Inc. Form 10-Q for the quarter ended June 30, 2026",
+          "source_content_hash": "285f6eccb8b24bfa4c9135ebb1e7f06b41ca26336ff697c60d92b3446fb91fa5",
+          "quote": "We invested $28.7 billion in OpenAI’s Series C Preferred Stock for the six months ended June 30, 2026, including $13.7 billion invested in Q2 2026.",
+          "quote_hash": "cd39a0210e1c352650eaf1c7146559be445de1c72c077062a837a04c57d090f5"
+        },
+        {
+          "source_id": "amazon_2026_q2_aws_commitment",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "source_title": "Amazon.com, Inc. Form 10-Q for the quarter ended June 30, 2026",
+          "source_content_hash": "285f6eccb8b24bfa4c9135ebb1e7f06b41ca26336ff697c60d92b3446fb91fa5",
+          "quote": "In Q1 2026, AWS and OpenAI Group PBC (“OpenAI”) announced an expansion of the existing $38.0 billion multi-year commitment and commercial arrangement with OpenAI by $100.0 billion over 8.0 years, which includes contractual obligations related to the performance of AWS chips.",
+          "quote_hash": "eb8062c29aa39d1665df64aaa8e16a5fcb5fb421e3e71b6646598cba37502e7a"
+        },
+        {
+          "source_id": "amazon_2026_q2_anthropic_g",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "source_title": "Amazon.com, Inc. Form 10-Q for the quarter ended June 30, 2026",
+          "source_content_hash": "285f6eccb8b24bfa4c9135ebb1e7f06b41ca26336ff697c60d92b3446fb91fa5",
+          "quote": "In Q2 2026, we invested $5.0 billion in Anthropic Series G nonvoting preferred stock.",
+          "quote_hash": "6e853395fa6be5edec5b18247b7e1ac7f7b9920c41c15907f0ba6fe0970792dd"
+        },
+        {
+          "source_id": "amazon_2026_q2_anthropic_h",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000026/amzn-20260630.htm",
+          "source_title": "Amazon.com, Inc. Form 10-Q for the quarter ended June 30, 2026",
+          "source_content_hash": "285f6eccb8b24bfa4c9135ebb1e7f06b41ca26336ff697c60d92b3446fb91fa5",
+          "quote": "Under this financing arrangement, in Q2 2026, we exercised our option to participate in subsequent Anthropic equity financings by investing $5.0 billion in Anthropic Series H nonvoting preferred stock, which reduced the amount available under the facility to $15.0 billion.",
+          "quote_hash": "b7aac8388acf4ca1246ba1e1f6c059db684e19ec976ce595f85791ced1df402a"
+        },
         {
           "source_id": "FISRC-b4ba4f68908fa080",
           "source_url": "https://news.pedaily.cn/202602/561239.shtml",
@@ -161,7 +358,19 @@
           "quote_hash": "723dffc45fdb1cd22e7e91753835d9d38b4cfd4d6d174596ff1f21d996434ee4"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Jeff Bezos创立Amazon.com。",
+          "source_hash": "ebaf651ab5c0d2edeeaf139987701bf4dc7121759a6f0a0fa0c68bde18a7d682",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

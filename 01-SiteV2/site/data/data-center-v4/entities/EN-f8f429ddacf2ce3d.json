@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -65,6 +65,7 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "2103883264054505493",
       "2102116206371315854",
       "2101141707375227372",
       "2101115690719809873",
@@ -122,17 +123,17 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-07",
-    "lastSeen": "2026-09-22",
+    "lastSeen": "2026-09-27",
     "handle": "steipete",
     "role": "Polyagentmorous ClawFather。退休后复出，搞AI并帮助一只龙虾统治世界。",
     "organization": "",
     "viewpointTags": [
-      "Agent",
-      "Agent 工作流观点",
-      "Agentic AI",
       "产品与创业",
       "产品策略观点",
       "AI 应用与平台",
+      "Agent",
+      "Agent 工作流观点",
+      "Agentic AI",
       "AI 编程",
       "AI Coding 观点",
       "AI Coding",
@@ -152,6 +153,12 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "2103883264054505493",
+        "date": "2026-09-27",
+        "title": "现在我明白为什么有些人会谈论AGI了。这真是太聪明了！https://t.co/it621aH3EM",
+        "sourceUrl": "https://x.com/steipete/status/2103883264054505493"
+      },
       {
         "id": "2102116206371315854",
         "date": "2026-09-22",
@@ -471,30 +478,26 @@
         "sourceUrl": "https://x.com/steipete/status/2063697162748260627"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "role": {
-          "text": "Polyagentmorous ClawFather。退休后复出，搞AI并帮助一只龙虾统治世界。",
-          "source_hash": "13b400e956852572fb9c4146df10d96f2633dfd27cd674df8f3c1c609f72cf18",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:17:59.800Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "summary": "Peter Steinberger 是开源 AI 智能体 OpenClaw 的创建者。",
       "current_roles": [
         {
           "title": "创建者",
           "organization": "OpenClaw",
-          "source_id": "openclaw_project"
+          "source_id": "openclaw_peter_credits"
         }
       ],
-      "career": [],
+      "career": [
+        {
+          "organization": "OpenClaw",
+          "title": "创建者",
+          "period": "一手公开资料所示；起始时间未披露",
+          "description": "OpenClaw 官方文档将 Peter Steinberger 列为项目创建者；不据此推断其在项目中的雇佣或法律主体关系。",
+          "source_id": "openclaw_peter_credits"
+        }
+      ],
       "education": [],
-      "experience_summary": "OpenClaw 官方网站将其称为该开源 AI 智能体的创建者；本档案未据此推断其当前受雇关系。",
+      "experience_summary": "OpenClaw 官方文档将 Peter Steinberger 列为项目创建者；不据此推断其在项目中的雇佣或法律主体关系。 当前可核实资料未披露完整任职起止时间和教育履历，相关字段不作推断。",
       "track_record": [
         {
           "description": "创建开源 AI 智能体 OpenClaw。",
@@ -509,11 +512,47 @@
           "source_content_hash": "ca8513b71105dbd0b020be2221b558cc4755cf62fcc2f9e3b860258a91890f08",
           "quote": "Peter Steinberger is the creator of OpenClaw, the open-source AI agent.",
           "quote_hash": "af0ab0df6e3078ca042617a212bd0614f6fc53a3c308c57b1bbaf256dffac5fd"
+        },
+        {
+          "source_id": "openclaw_peter_credits",
+          "source_url": "https://docs.openclaw.ai/reference/credits",
+          "source_title": "Credits | OpenClaw Docs",
+          "source_content_hash": "ad01f45cc10450af878610d1845d7428e9904b3e0e2a811b72e9da056ba4b6b9",
+          "quote": "Peter Steinberger (@steipete) - Creator",
+          "quote_hash": "ed562d6149d8437c17df6b4348818bd258c6eed4d713df0b4eaa69487f068df1"
         }
       ],
-      "last_verified_at": "2026-09-25",
+      "last_verified_at": "2026-09-26",
       "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "coverage_note": "已核验该公开职业关联；未披露的任期、学历及其他履历保持未填写。"
+    },
+    "translations": {
+      "zh-CN": {
+        "role": {
+          "text": "Polyagentmorous ClawFather。退休后复出，搞AI并帮助一只龙虾统治世界。",
+          "source_hash": "13b400e956852572fb9c4146df10d96f2633dfd27cd674df8f3c1c609f72cf18",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:59.800Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Peter Steinberger 是开源 AI 智能体 OpenClaw 的创建者。",
+          "source_hash": "4b6af79a9e57b1eb52c658fdcb62a028af2031f8f55a715cccdf7d76e1167db6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:22.214Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "创建开源 AI 智能体 OpenClaw。",
+          "source_hash": "0418d864bb4d61a837f358a1de45e27b8143b8c7033e25be41cd6462e4cfe351",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:22.214Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],

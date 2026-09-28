@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,31 +137,154 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Harlem Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Harlem Capital 是一家美国早期风险投资机构。官网称机构于 2015 年创立，当前 Fund III 关注 AI 信任与安全、AI 原生工作、数字基础设施和传统行业技术跃迁等方向，并继续在 Pre-Seed/Seed 阶段投资；官网披露 70 余项投资分布于 10 多座城市。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2015",
+          "source_id": "harlem_origin"
+        },
+        {
+          "field": "investment_stages",
+          "label": "当前投资阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed"
+          ],
+          "source_id": "harlem_stages"
+        },
+        {
+          "field": "investment_range",
+          "label": "官网披露的当前单笔投资区间",
+          "value": "100万至250万美元",
+          "source_id": "harlem_stages"
+        },
+        {
+          "field": "fund_iii_themes",
+          "label": "Fund III 主题",
+          "value": [
+            "AI信任与安全",
+            "AI原生工作",
+            "数字世界重建",
+            "传统行业技术跃迁"
+          ],
+          "source_id": "harlem_iii"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "Harlem Capital 官网回顾机构于 2015 年创立。",
+          "source_id": "harlem_origin"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网称其投资组合超过 70 家/项并覆盖 10 多座城市；此为机构披露的组合规模，不是基金回报指标。",
+          "source_id": "harlem_portfolio"
+        },
+        {
+          "description": "官网 2026 年文章称其创业实习项目有 130 多位校友，其中 50 多位现于风险投资行业全职工作；为机构自述的生态建设数据。",
+          "source_id": "harlem_alumni"
+        },
+        {
+          "description": "融资披露案例：Ellis AI 于 2026-07-31 宣布 1000 万美元种子轮，Harlem Capital 为参投方；不代表完整组合或基金回报。",
           "source_id": "FISRC-a8e6dd6c34cd416a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Harlem Capital",
+          "url": "https://harlem.capital/",
+          "source_id": "harlem_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "harlem_home",
+          "source_url": "https://harlem.capital/",
+          "source_title": "Homepage - HCP",
+          "source_content_hash": "d34353bd577798ef6fe1da3808bf32de5d9b141793e04a785b731d513cf48744",
+          "quote": "Harlem Capital is a venture capital firm on a mission to back the next generation of winners.",
+          "quote_hash": "e5a90f5950f4827842250df0332d18ee6a842039d44dab4736573c5e86240e25"
+        },
+        {
+          "source_id": "harlem_portfolio",
+          "source_url": "https://harlem.capital/",
+          "source_title": "Homepage - HCP",
+          "source_content_hash": "d34353bd577798ef6fe1da3808bf32de5d9b141793e04a785b731d513cf48744",
+          "quote": "Our 70+ investments span across 10+ cities.",
+          "quote_hash": "d1c878b956fc7102087a160c9aa1653d6813572ab00b9a1f3b893d1a408f44b2"
+        },
+        {
+          "source_id": "harlem_origin",
+          "source_url": "https://harlem.capital/introducing-harlem-capitals-next-chapter-all-winners-welcome/",
+          "source_title": "Introducing Harlem Capital’s Next Chapter: All Winners Welcome - HCP",
+          "source_content_hash": "b15bd61354db78aee69635c24d70179cef904273d7c975493f96404b24254772",
+          "quote": "When we started Harlem Capital back in 2015, we didn’t set out to simply invest in startups.",
+          "quote_hash": "4c239306e40dbdb50baee47f15af9ce7c0928ef75bd53272dfd6fd2d0ebc642c"
+        },
+        {
+          "source_id": "harlem_stages",
+          "source_url": "https://harlem.capital/introducing-harlem-capitals-next-chapter-all-winners-welcome/",
+          "source_title": "Introducing Harlem Capital’s Next Chapter: All Winners Welcome - HCP",
+          "source_content_hash": "b15bd61354db78aee69635c24d70179cef904273d7c975493f96404b24254772",
+          "quote": "We are continuing to invest $1.0-2.5M at the Pre-Seed and Seed rounds.",
+          "quote_hash": "528202fe97ebacd0df141d1c195d29799cb543fa7ec1b0d0ac0a7e43fd10c0d4"
+        },
+        {
+          "source_id": "harlem_iii",
+          "source_url": "https://harlem.capital/introducing-harlem-capitals-next-chapter-all-winners-welcome/",
+          "source_title": "Introducing Harlem Capital’s Next Chapter: All Winners Welcome - HCP",
+          "source_content_hash": "b15bd61354db78aee69635c24d70179cef904273d7c975493f96404b24254772",
+          "quote": "With Fund III, we are focused on companies that will define the next decade of technology and rebuild the systems the world relies on.",
+          "quote_hash": "fa95f6ab63032e6fce50a9fe8b09cd12a6a5d129e5129a9e21d77d41c1bbf987"
+        },
+        {
+          "source_id": "harlem_alumni",
+          "source_url": "https://harlem.capital/introducing-harlem-capitals-next-chapter-all-winners-welcome/",
+          "source_title": "Introducing Harlem Capital’s Next Chapter: All Winners Welcome - HCP",
+          "source_content_hash": "b15bd61354db78aee69635c24d70179cef904273d7c975493f96404b24254772",
+          "quote": "more than 130 alumni from our internship program and over 50 now working full-time in venture capital.",
+          "quote_hash": "449f6a62d4d36b0a70df598d97f79882baae6abbc3510ca1ac352436bb7782a3"
+        },
         {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
           "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
           "source_content_hash": "dd828ac38a132ac1",
-          "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
-          "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
+          "quote": "investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures",
+          "quote_hash": "fe95045bcc3446237b6b485f53ec48e192751bfd3630c02d482d9b48ca7dae48"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[3].label": {
+          "text": "Fund III 主题",
+          "source_hash": "9a461f75b661e2db00d6e7a4bdbb8f8fa5ab969d7bc6a6459e5c8c8881bdfe9a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Harlem Capital 官网回顾机构于 2015 年创立。",
+          "source_hash": "377ceba7b1d6a2358d99b186ead68d546497e43cf2a6cc90436fd2d8bcb2851f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

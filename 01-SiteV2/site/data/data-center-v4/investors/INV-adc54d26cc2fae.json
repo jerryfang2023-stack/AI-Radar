@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,18 +139,106 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "启航投资芯创二期基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "融资数据库名称“启航投资芯创二期基金”在公开资料中对应“启航芯创二期基金”或“IC PARK芯创二期基金”，公开全称为北京中发芯创集成电路科技创业投资基金（有限合伙）。过往35.3%毛IRR及被投企业“小巨人”比例属于芯创一期基金，不能代表二期业绩。地瓜机器人4亿美元为整轮融资规模，未披露二期基金的单笔出资额。",
+      "summary": "启航芯创二期基金（IC PARK芯创二期基金）是面向硬科技的产业基金，公开资料将其全称列为北京中发芯创集成电路科技创业投资基金（有限合伙），由中关村集成电路设计园（IC PARK）与启航投资共同发起，基金规模为人民币5亿元。管理人为中关村发展集团成员单位北京启航创业投资管理有限公司，重点关注集成电路核心技术、前沿科技和先进制造。",
+      "facts": [
         {
-          "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-517ef1b31eac6dd3"
+          "field": "fund_name",
+          "label": "公开全称及常用名称",
+          "value": "北京中发芯创集成电路科技创业投资基金（有限合伙）；公开资料亦称启航芯创二期基金、IC PARK芯创二期基金。",
+          "source_id": "qihang_fund_profile"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "人民币5亿元。",
+          "source_id": "qihang_fund_profile"
+        },
+        {
+          "field": "sponsors",
+          "label": "发起方",
+          "value": [
+            "中关村集成电路设计园（IC PARK）",
+            "启航投资"
+          ],
+          "source_id": "qihang_digua_fund"
+        },
+        {
+          "field": "manager",
+          "label": "基金管理人",
+          "value": "北京启航创业投资管理有限公司，为中关村发展集团成员单位。",
+          "source_id": "qihang_fund_profile"
+        },
+        {
+          "field": "manager_background",
+          "label": "管理团队机构背景",
+          "value": "园区平台资料称启航投资成立于2016年8月，团队来自投资机构、律所、投行及产业企业，关注新一代信息技术和智能制造等硬科技。",
+          "source_id": "qihang_investment_team"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "集成电路核心技术",
+            "前沿科技",
+            "先进制造"
+          ],
+          "source_id": "qihang_ncsti"
+        },
+        {
+          "field": "phase_one_performance",
+          "label": "一期基金公开数据（不代表二期）",
+          "value": "科技创新中心平台报道，截至2023年底，芯创一期基金毛内部收益率为35.3%；此为一期历史数据，不代表芯创二期业绩。",
+          "source_id": "qihang_ncsti_phase1"
+        },
+        {
+          "field": "portfolio_company",
+          "label": "公开披露的投资企业",
+          "value": "中关村发展集团及IC PARK官方信息将地瓜机器人列为芯创基金投资企业，并披露芯创二期基金参与其2026年C轮。",
+          "source_id": "qihang_digua_official"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2016-08",
+          "description": "未来科学城平台资料列示管理人启航投资成立于2016年8月；此为管理人时间，不是基金成立时间。",
+          "source_id": "qihang_investment_team"
+        },
+        {
+          "date": "2024-03",
+          "description": "中关村发展集团企业大事记记载IC PARK芯创二期基金完成设立。",
+          "source_id": "qihang_zgc_timeline"
+        },
+        {
+          "date": "2026-09-17",
+          "description": "地瓜机器人完成4亿美元C轮，官方公告列出芯创二期基金为联合跟投机构。",
+          "source_id": "qihang_digua_official"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "地瓜机器人2026年C轮参投方；融资披露的4亿美元是整轮融资总额，基金单笔金额未披露。",
+          "source_id": "FISRC-517ef1b31eac6dd3"
+        },
+        {
+          "description": "中关村发展集团与IC PARK官方公告称芯创基金投资企业地瓜机器人完成4亿美元C轮，并列出芯创二期基金为联合跟投方。",
+          "source_id": "qihang_digua_official"
+        },
+        {
+          "description": "作为历史背景，芯创一期基金披露过35.3%的毛IRR等数据；这些数据属于一期，不能作为本基金二期回报。",
+          "source_id": "qihang_ncsti_phase1"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金发起方公开信息页（不是基金直联申请入口）",
+          "value": "中关村发展集团 / IC PARK",
+          "url": "https://www.zgcgroup.com.cn/xwzx/jtyw/art/2026/art_259cff1720224070879ebead65427b22.html",
+          "source_id": "qihang_digua_official"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
@@ -159,9 +247,65 @@
           "source_content_hash": "ffc4d665dce6209d",
           "quote": "凯辉基金、华美国际投资集团、广发信德、超越摩尔、启航投资芯创二期基金等机构联合跟投",
           "quote_hash": "7bdc9a76799f80a936bb33aab97e75cdc6b2fb6eefbdb8fa5fd4e6dd135c0809"
+        },
+        {
+          "source_id": "qihang_fund_profile",
+          "source_url": "https://www.kechuangfuwu.com/vue/news?id=8376&menu=%E8%B5%B0%E8%BF%9B%E5%9B%AD%E5%8C%BA",
+          "source_title": "启航芯创二期基金与能源及制造母基金完成投资交割 · 未来科学城科创服务平台",
+          "source_content_hash": "66b50971150518bb0985de69a13b6205baad2a54f0ae06bb67cecd05a52d2b4e",
+          "quote": "启航芯创二期基金由中关村发展集团成员单位北京启航创业投资管理有限公司（以下简称“启航投资”）担任管理人，基金规模5亿元。该基金紧密围绕北京市战略部署，以提升创新活力、赋能企业成长为核心，重点聚焦前沿科技、先进制造领域。",
+          "quote_hash": "2e6be73512cee0ad67ce4c50b59b8323d9c8c6819e7b635e11f35201e9d8f854"
+        },
+        {
+          "source_id": "qihang_ncsti",
+          "source_url": "https://www.ncsti.gov.cn/kjdt/yqdy/yqdt/202404/t20240415_153596.html",
+          "source_title": "集成电路设计园芯创二期基金设立，规模5亿元 · 国际科技创新中心网络服务平台",
+          "source_content_hash": "c6b644bc493cc90777a575d5555cf9641c503ac9e9a49b696ecfe31d45aac538",
+          "quote": "近期，中关村集成电路设计园完成了IC PARK芯创二期基金的设立，总规模达5亿元人民币，该基金重点关注并投资集成电路领域中掌握核心技术的优秀创业企业，意在助力这些初创企业成长为硬科技行业的领军者。",
+          "quote_hash": "9067005a1d63c10eb852f90e36c9de04f677d8165d1fca80d3c9cf2c57b86ba8"
+        },
+        {
+          "source_id": "qihang_digua_official",
+          "source_url": "https://www.zgcgroup.com.cn/xwzx/jtyw/art/2026/art_259cff1720224070879ebead65427b22.html",
+          "source_title": "芯创基金投资企业地瓜机器人完成4亿美元C轮融资 · 中关村发展集团/IC PARK",
+          "source_content_hash": "1ece6c2fd0a6c494f14d828a3aa04f39a8c5f037901f94131cc662a101b9a9e8",
+          "quote": "芯创二期基金、凯辉基金、华美国际投资集团有限公司、广发信德、超越摩尔等一线投资机构联合跟投",
+          "quote_hash": "4aa2a7bef2cc78718b01b21f219bc3f5c89def83c73882496d66bfeb397bdec2"
+        },
+        {
+          "source_id": "qihang_zgc_timeline",
+          "source_url": "https://zgcgroup.com.cn/gywm/qydsj/index.html",
+          "source_title": "企业大事记 · 中关村发展集团",
+          "source_content_hash": "b9c730700006a2643073bff198073b15962d4c52bb4efede5bf8bfe80428f0a8",
+          "quote": "2024-03-31 3月，IC PARK芯创二期基金-北京中发芯创集成电路科技创业基金（有限合伙）设立。",
+          "quote_hash": "11ee4a87e13c6493b231478c2b0ac16ebc051fa3977f19ce3bc7c6a354cb7773"
+        },
+        {
+          "source_id": "qihang_investment_team",
+          "source_url": "https://www.kechuangfuwu.com/vue/news?id=8376&menu=%E8%B5%B0%E8%BF%9B%E5%9B%AD%E5%8C%BA",
+          "source_title": "启航投资管理团队简介 · 未来科学城科创服务平台",
+          "source_content_hash": "66b50971150518bb0985de69a13b6205baad2a54f0ae06bb67cecd05a52d2b4e",
+          "quote": "启航投资，成立于2016年8月，核心团队汇聚了来自国内顶尖投行、投资机构、律所及产业龙头的资深人士。团队不仅在新一代信息技术、智能制造等硬科技领域具备深厚的研究积淀和丰富的投资实战经验。",
+          "quote_hash": "0aa1d4de3a88f7384e07bce5b50a43d2a9dfda60498d941fe34b1606dff0d8e1"
+        },
+        {
+          "source_id": "qihang_ncsti_phase1",
+          "source_url": "https://www.ncsti.gov.cn/kjdt/yqdy/yqdt/202404/t20240415_153596.html",
+          "source_title": "芯创一期基金历史回报披露 · 国际科技创新中心网络服务平台",
+          "source_content_hash": "c6b644bc493cc90777a575d5555cf9641c503ac9e9a49b696ecfe31d45aac538",
+          "quote": "截至去年年底，芯创一期基金的毛内部收益率高达35.3%，显示出了优秀的投资回报率。",
+          "quote_hash": "a3e817cf13c2699204e9a45c3dbcccad00a0339fbe7403eb6545737d720b38f2"
+        },
+        {
+          "source_id": "qihang_digua_fund",
+          "source_url": "https://www.zgcgroup.com.cn/xwzx/jtyw/art/2026/art_259cff1720224070879ebead65427b22.html",
+          "source_title": "芯创基金发起方与投资方向 · 中关村发展集团/IC PARK",
+          "source_content_hash": "1ece6c2fd0a6c494f14d828a3aa04f39a8c5f037901f94131cc662a101b9a9e8",
+          "quote": "芯创基金是一支由IC PARK、启航投资共同发起设立的专业产业基金，坚持“投早、投小、投硬科技”，重点投资集成电路领域掌握核心技术的优秀创业企业。",
+          "quote_hash": "08015c3b31dd9d2fa65f8bec443d8bee23500bbf81f660d8d9e2628384bd02f5"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

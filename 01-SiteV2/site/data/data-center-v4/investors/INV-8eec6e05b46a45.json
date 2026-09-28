@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Act One Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Investment thesis, stage, and portfolio examples are drawn from Act One Ventures’ current website. The logcat.ai financing source lists Act One Ventures among participants but does not disclose its individual check.",
+      "summary": "Act One Ventures 是一家总部位于 San Francisco 的 AI 原生风险投资机构，投资于 pre-seed 和 seed 阶段。其当前投资主题聚焦于重建企业系统和 AI 原生服务的创始人；该机构称其投资组合涵盖基础企业软件和较新的 AI 原生公司。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed and seed.",
+          "source_id": "actone_home"
+        },
+        {
+          "field": "focus",
+          "label": "投资重点",
+          "value": "AI-native enterprise companies, including agent infrastructure and operating systems or services that re-architect industries.",
+          "source_id": "actone_home"
+        },
+        {
+          "field": "portfolio_model",
+          "label": "创始人支持",
+          "value": "The firm says it combines founding experience, AI-native operations, customer introductions, and hands-on support.",
+          "source_id": "actone_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：logcat.ai · 预种子轮 · 2026-07-16 · 本轮参投 · $2.55M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "该机构的投资组合页面重点展示了较早的投资，并指出其中多家已被收购；该页面未公布基金层面的回报数据。",
+          "source_id": "actone_portfolio"
+        },
+        {
+          "description": "2026 年 7 月的一份公司公告将 Act One Ventures 列为 logcat.ai 255 万美元 pre-seed 轮融资的参与方之一。该轮融资总额并非 Act One 的单笔投资。",
           "source_id": "FISRC-adb92a0723de45a1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "contact_form",
+          "label": "创始人推介提交",
+          "value": "Act One Ventures says it accepts pitches through this form.",
+          "source_id": "actone_contact",
+          "url": "https://www.actoneventures.com/contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "actone_home",
+          "source_url": "https://www.actoneventures.com/",
+          "source_title": "Act One Ventures",
+          "source_content_hash": "bbde6bf0047276cf97909985f3fc76cc2fc0142835a119f58fd628345136ed82",
+          "quote": "Act One Ventures is an AI-native venture firm in San Francisco, investing at pre-seed and seed.",
+          "quote_hash": "9c930d7bbf9a3c3a4376e35bc63b5a6f2818655b965e46de47f65a96e544eb1a"
+        },
+        {
+          "source_id": "actone_portfolio",
+          "source_url": "https://www.actoneventures.com/portfolio",
+          "source_title": "Portfolio | Act One Ventures",
+          "source_content_hash": "ac50cd09e870dd89fefe41fc0cccf1a1538112244776e784f0974ee17e87df23",
+          "quote": "Earlier Investments. The companies that built our track record before the AI-native era. Several acquired, all formative.",
+          "quote_hash": "d99be2c22fa74ebd011de763c1e404f60650a4a9cbd3a55ff125067a0cfc1c95"
+        },
+        {
+          "source_id": "actone_contact",
+          "source_url": "https://www.actoneventures.com/contact",
+          "source_title": "Contact | Act One Ventures",
+          "source_content_hash": "9914acd66f4e2a313adc09ecd31d1ced23549f77a743674dee33d5b18cba7192",
+          "quote": "If you’re building an AI-native company, we’d love to hear about it. We only accept pitches through this form.",
+          "quote_hash": "e8b972dd0270851f9f49e2676b1a74831d734bf281e5fc8dd5b8a32d16c28a28"
+        },
         {
           "source_id": "FISRC-adb92a0723de45a1",
           "source_url": "https://blog.logcat.ai/2026/07/16/logcat.ai-raises-2.55m-to-build-the-future-of-device-systems-engineering/",
@@ -161,7 +216,67 @@
           "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Act One Ventures 是一家总部位于 San Francisco 的 AI 原生风险投资机构，投资于 pre-seed 和 seed 阶段。其当前投资主题聚焦于重建企业系统和 AI 原生服务的创始人；该机构称其投资组合涵盖基础企业软件和较新的 AI 原生公司。",
+          "source_hash": "702be18dc2fdf2be67e70898c23bf41767372e245ca538700cf2a46f1aee339a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "创始人支持",
+          "source_hash": "e4f4c7da4cd902dd0ddc39c288c4d72cc10b5e5926be6006989254d431fc9463",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "该机构的投资组合页面重点展示了较早的投资，并指出其中多家已被收购；该页面未公布基金层面的回报数据。",
+          "source_hash": "179b1b2eb5456e4ee090dbe4ca47f1ab3026997fb2aec530bc68d2ea2ce1310c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "2026 年 7 月的一份公司公告将 Act One Ventures 列为 logcat.ai 255 万美元 pre-seed 轮融资的参与方之一。该轮融资总额并非 Act One 的单笔投资。",
+          "source_hash": "d042090a326b41a69f0a02496764e2e81ef33c038151ae3776b10be0708eee97",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "创始人推介提交",
+          "source_hash": "26001d571278aaad796cff654f41fba517dfc288df2ab1d16b6fa17023e5e060",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

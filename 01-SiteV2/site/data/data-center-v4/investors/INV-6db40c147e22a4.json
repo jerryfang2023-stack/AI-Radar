@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,170 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Congruent Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Congruent Ventures 是一家气候科技风险投资机构，支持可持续发展与创新交叉领域的创业公司。官网组合分类包括能源转型、食品与农业、可持续生产与消费、交通与城市化，并公布团队成员履历、组合公司及项目投稿渠道。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": [
+            "能源转型",
+            "食品与农业",
+            "可持续生产与消费",
+            "交通与城市化"
+          ],
+          "source_id": "congruent_portfolio"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称团队聚焦早期气候科技投资，并支持成长阶段的组合公司。",
+          "source_id": "congruent_home"
+        },
+        {
+          "field": "team_roster",
+          "label": "官网公布的团队名单",
+          "value": [
+            "Abe Yokell — 联合创始人、管理合伙人",
+            "Joshua Posamentier — 联合创始人、管理合伙人",
+            "Tanuj Dutta — General Partner",
+            "Eliza Cushman — Partner",
+            "Gray Robinson — Partner"
+          ],
+          "source_id": "congruent_team"
+        },
+        {
+          "field": "joshua_posamentier_experience",
+          "label": "Joshua Posamentier 履历",
+          "value": "曾在 Prelude Ventures 和 Intel Capital 从事风险投资，亦有 Intel 无线芯片、National Semiconductor、Texas Instruments 的运营经历，并曾担任 Blipstream CEO；官网列出其拥有 50 多项已授权或待批专利。",
+          "source_id": "congruent_josh"
+        },
+        {
+          "field": "eliza_cushman_experience",
+          "label": "Eliza Cushman 履历",
+          "value": "曾在 KKR 参与私募信贷与资本市场方案，也曾在 Bank of America 杠杆融资组任职；目前负责投资流程、尽调与组合支持。",
+          "source_id": "congruent_eliza"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网公开组合",
+          "value": [
+            "Fervo Energy",
+            "First Street",
+            "Muon Space",
+            "Gritt Robotics"
+          ],
+          "source_id": "congruent_portfolio_examples"
+        },
+        {
+          "field": "impact_reporting",
+          "label": "影响力披露",
+          "value": "官网持续发布年度影响力报告，2025 年报告称其为第六份年度报告。",
+          "source_id": "congruent_impact"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Gritt · 多轮融资 · 2026-07-21 · 既有投资方 · $32.4M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Gritt · 2026-07-21 · 公司公告称获得 3,240 万美元融资，Congruent Ventures 属于既有投资方；该金额为公司融资总额，不代表 Congruent 的单笔出资。",
           "source_id": "FISRC-e5ce259c107507e9"
         }
       ],
-      "contacts": [],
+      "experience_summary": "官网披露的合伙人履历涵盖早期投资、私募信贷、投资银行、半导体运营与创业；基金相关业绩未由本资料推算。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资组合",
+          "value": "Congruent Ventures",
+          "url": "https://www.congruentvc.com/",
+          "source_id": "congruent_home"
+        },
+        {
+          "kind": "address",
+          "label": "办公室地址",
+          "value": "201 Mission St, Suite 650, San Francisco, CA 94105",
+          "url": "https://www.congruentvc.com/portfolio",
+          "source_id": "congruent_contact"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询与媒体联系",
+          "value": "info@congruentvc.com",
+          "url": "https://www.congruentvc.com/portfolio",
+          "source_id": "congruent_contact"
+        },
+        {
+          "kind": "email",
+          "label": "投资项目提交",
+          "value": "investors@congruentvc.com",
+          "url": "https://www.congruentvc.com/portfolio",
+          "source_id": "congruent_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "congruent_home",
+          "source_url": "https://www.congruentvc.com/",
+          "source_title": "Congruent Ventures Website",
+          "source_content_hash": "c1fc3cdd2fbf6a98a1ec52a136ace9a8e5d6272b40bdd248218c224290c89340",
+          "quote": "Leveraging decades of climate tech investing experience, we support early-stage entrepreneurs building transformative companies that do more with less. We back teams that are based in North America who are innovating across atoms, bits, or business models. Our initial investments range from formation capital to Series A, and we support companies as they scale.",
+          "quote_hash": "013873b8a56dfb5e80f19762d97afde4e53195cafda9bbf6260d4d2e37488289"
+        },
+        {
+          "source_id": "congruent_team",
+          "source_url": "https://www.congruentvc.com/team",
+          "source_title": "TEAM | Congruent Ventures",
+          "source_content_hash": "8adbf090ffe73232a7525d194c8c8ac9012402b7c486d469656b69bb5c102b0c",
+          "quote": "Abe Yokell Managing Partner and Co-Founder Joshua Posamentier Managing Partner and Co-Founder Tanuj Dutta General Partner Kevin Kopczynski Partner Marianne Wu Venture Partner Eliza Cushman Partner Gray Robinson Partner Nicholas Adeyi Investor Austin Pringle Analyst Divyansh Saksena Analyst Hilla Watkins Platform Partner Suzie Parmar VP of Finance Nadia Dugal General Counsel Kate Lee Platform Associate Riley Powers Senior Accountant",
+          "quote_hash": "b859881cc46efdf75e9cc0b44948e4b03ce6488d097ae7589e55a0f5de49f037"
+        },
+        {
+          "source_id": "congruent_josh",
+          "source_url": "https://www.congruentvc.com/team/joshua-posamentier",
+          "source_title": "Joshua Posamentier | Congruent Ventures",
+          "source_content_hash": "3f095cb3feff7fc5d06253c72c1547c6296bf7fae02b48db30955bf3ce6845ad",
+          "quote": "Joshua Posamentier is Co-Founder and Managing Partner of Congruent Ventures. He has rich experience in venture (Prelude Ventures, Intel Capital) and operating roles (Intel wireless chip, National Semi, TI), and entrepreneurship (CEO of Blipstream).",
+          "quote_hash": "d30a1781026828ebfd8e16aa6292afd7984dc14c034ed04e0c0eb387a99388e1"
+        },
+        {
+          "source_id": "congruent_eliza",
+          "source_url": "https://www.congruentvc.com/team/eliza-cushman",
+          "source_title": "Eliza Cushman | Congruent Ventures",
+          "source_content_hash": "84f3c66468a96de2934b1e22f54c53681ea988fc1c7f4468c3c1d9e1dace2999",
+          "quote": "Eliza Cushman is a Partner at Congruent Ventures, where she manages all aspects of the investment process, from sourcing and due diligence to portfolio support. She has broad investing experience across both early and late-stage equity and credit. She was previously an Associate at KKR, where she helped originate and execute private credit and capital markets solutions, including restructurings and workouts, for sponsor-backed companies. She began her career in investment banking in the Leveraged Finance Group at Bank of America.",
+          "quote_hash": "c47dbe3ffac272317832fad9e03ac8d474c577bd68d41c326ff5a0e388f95134"
+        },
+        {
+          "source_id": "congruent_portfolio",
+          "source_url": "https://www.congruentvc.com/portfolio",
+          "source_title": "Portfolio | Congruent Ventures",
+          "source_content_hash": "0717e683ed8ca1fadda8a94841526cd9112896efd44201ff45b1e78e33368873",
+          "quote": "Energy Transition Food + Agriculture Sustainable Production + Consumption Mobility + Urbanization",
+          "quote_hash": "7d521c79ab67f83bdc9238ea29796b54196c341b0fedf50b6598ec24faeaad43"
+        },
+        {
+          "source_id": "congruent_portfolio_examples",
+          "source_url": "https://www.congruentvc.com/portfolio",
+          "source_title": "Portfolio examples | Congruent Ventures",
+          "source_content_hash": "0717e683ed8ca1fadda8a94841526cd9112896efd44201ff45b1e78e33368873",
+          "quote": "Fervo (NASDAQ: FRVO) Enhanced geothermal power developer and provider First Street (Acquired by MSCI) Physical climate risk data provider Gritt Robotics Automating energy infra construction with robotics and AI Muon Space Satellite foundry for climate, weather and earth insights",
+          "quote_hash": "a567a51b56b37092bb5da0c79161c966115b933b5911ec009e860ac30292e7d7"
+        },
+        {
+          "source_id": "congruent_contact",
+          "source_url": "https://www.congruentvc.com/portfolio",
+          "source_title": "Contact information | Congruent Ventures",
+          "source_content_hash": "0717e683ed8ca1fadda8a94841526cd9112896efd44201ff45b1e78e33368873",
+          "quote": "OFFICE ADDRESS 201 Mission St Suite 650 San Francisco, CA 94105 GENERAL INQUIRIES + PRESS info@congruentvc.com DEAL SUBMISSIONS investors@congruentvc.com",
+          "quote_hash": "ea542f341fbb608f433c51255772dd4f7399a53db9ea2383d9361343f0c4459d"
+        },
+        {
+          "source_id": "congruent_impact",
+          "source_url": "https://www.congruentvc.com/impact-report-2025",
+          "source_title": "Impact Report 2025 | Congruent Ventures",
+          "source_content_hash": "4e98275fd7a7d5d5e61bb4e665cfa7362a9fb3c3c5fd1b9a5e0bd20bb93035b4",
+          "quote": "We're proud to share our sixth annual impact report.",
+          "quote_hash": "381e31048caa7c77be4cab2220d7a2b7a6b1487857a90409b2d46f065d5a84c1"
+        },
         {
           "source_id": "FISRC-e5ce259c107507e9",
           "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
@@ -153,7 +302,31 @@
           "quote_hash": "2532b0e42996315c1b003f687a7cd737ce25ee1e60b434e9436de1d99dc5103d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "机构策略、人员履历和联系渠道按公开官网资料整理；融资案例为本库收录的可追溯样本，不代表完整投资组合或机构回报。人物经历嵌入机构资料，仅记录官网披露且能确认角色的人员；未把轮次总额写成机构单笔出资。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[3].label": {
+          "text": "Joshua Posamentier 履历",
+          "source_hash": "f93de23b68cb349fc3950824273500dfe4613752f0749ff5d5cc6b3d70ac8076",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.308Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "Eliza Cushman 履历",
+          "source_hash": "576156ade8ae6ebdeb50d696b793b87543e651b643829f51fcc82000c530010c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.308Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

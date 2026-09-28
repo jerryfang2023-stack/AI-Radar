@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,19 +131,144 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Brian Halligan 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "任职、创业和教育资料来自 HubSpot 官方人物简介。融资报道明确将其列为 Sable 天使投资人，但未披露个人出资金额。",
+      "summary": "Brian Halligan 是 HubSpot 联合创办人和前 CEO，现为 Sequoia Capital 合伙人，并持续参与 MIT Sloan 创业教学。他的经历涵盖企业软件、营销科技、销售管理与创业辅导；HubSpot 页面列明其佛蒙特大学和 MIT Sloan 学历。",
+      "facts": [
+        {
+          "field": "company_building",
+          "label": "企业建设",
+          "value": "Co-founded HubSpot and served as its CEO until 2021.",
+          "source_id": "brian_hubspot"
+        },
+        {
+          "field": "teaching",
+          "label": "创业教育",
+          "value": "开发并长期教授 MIT 的 Scaling Entrepreneurial Ventures 课程。",
+          "source_id": "brian_mit"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "合伙人",
+          "organization": "Sequoia Capital",
+          "source_id": "brian_roles"
+        }
+      ],
+      "career": [
+        {
+          "organization": "HubSpot",
+          "title": "联合创办人、CEO",
+          "period": "CEO through 2021; the cited page does not state the start date",
+          "description": "共同创办企业软件公司并担任 CEO 至 2021 年。",
+          "source_id": "brian_hubspot"
+        },
+        {
+          "organization": "Parametric Technology Corporation (PTC)",
+          "title": "早期员工",
+          "period": "曾任；具体任期未披露",
+          "description": "职业生涯早期加入 PTC，并在香港和东京建立了其环太平洋业务。",
+          "source_id": "brian_ptc_apac"
+        },
+        {
+          "organization": "Groove Networks",
+          "title": "销售副总裁",
+          "period": "曾任；具体任期未披露",
+          "description": "Groove Networks 后被 Microsoft 收购。",
+          "source_id": "brian_groove"
+        },
+        {
+          "organization": "Sequoia Capital",
+          "title": "合伙人",
+          "period": "当前",
+          "description": "为创业者提供公司扩张与 CEO 发展辅导。",
+          "source_id": "brian_roles"
+        },
+        {
+          "organization": "MIT Sloan School of Management",
+          "title": "Course developer and longtime instructor",
+          "period": "More than a decade (as reported on the profile)",
+          "description": "开发并教授 Scaling Entrepreneurial Ventures 课程；该页面未说明其当前任职头衔。",
+          "source_id": "brian_mit"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Vermont",
+          "qualification": "电气工程学士（BSEE）",
+          "source_id": "brian_career"
+        },
+        {
+          "institution": "MIT Sloan School of Management",
+          "qualification": "工商管理硕士（MBA）",
+          "source_id": "brian_education"
+        }
+      ],
+      "experience_summary": "长期从事软件与互联网企业建设，经历包括 PTC、Groove Networks、HubSpot 和 Sequoia Capital。除经营与投资外，他参与 MIT Sloan 创业教育并辅导创业公司管理团队。",
       "track_record": [
         {
-          "description": "融资来源记录：Sable · 轮次未披露 · 2026-07-16 · 天使投资人 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "The Next Web 的 Sable 融资报道将 Brian Halligan 列为天使投资人；个人投资金额未披露。",
           "source_id": "FISRC-b95b1b353d05702f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "HubSpot 官方人物简介",
+          "value": "Brian Halligan",
+          "source_id": "brian_roles",
+          "url": "https://www.hubspot.com/company/management/brian-halligan"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "brian_roles",
+          "source_url": "https://www.hubspot.com/company/management/brian-halligan",
+          "source_title": "Brian Halligan | HubSpot",
+          "source_content_hash": "3bd5317e016c4c2e6eec1e144118920c652fa515aafd1bb9fea769410f5c0ee0",
+          "quote": "Today, Brian is a partner at Sequoia Capital, where he advises and coaches startup founders to become scaleup CEOs.",
+          "quote_hash": "0e88dd116df8d969616f76e5fe2b92f622f84315b3c17a4af472dee19cb4329a"
+        },
+        {
+          "source_id": "brian_hubspot",
+          "source_url": "https://www.hubspot.com/company/management/brian-halligan",
+          "source_title": "Brian Halligan | HubSpot",
+          "source_content_hash": "3bd5317e016c4c2e6eec1e144118920c652fa515aafd1bb9fea769410f5c0ee0",
+          "quote": "Brian Halligan, co-founder of HubSpot, served as the company's CEO until 2021.",
+          "quote_hash": "f265bb1f86804770de331880b3cd193bd992edb29809ceacef192838a8fb72db"
+        },
+        {
+          "source_id": "brian_career",
+          "source_url": "https://www.hubspot.com/company/management/brian-halligan",
+          "source_title": "Brian Halligan | HubSpot",
+          "source_content_hash": "3bd5317e016c4c2e6eec1e144118920c652fa515aafd1bb9fea769410f5c0ee0",
+          "quote": "He began his career with a BSEE from the University of Vermont as an early employee at Parametric Technology Corporation (PTC).",
+          "quote_hash": "1ed35bb8f21476d48bd7f98d0766c93be886944893385a2429eea5492208ed8e"
+        },
+        {
+          "source_id": "brian_groove",
+          "source_url": "https://www.hubspot.com/company/management/brian-halligan",
+          "source_title": "Brian Halligan | HubSpot",
+          "source_content_hash": "3bd5317e016c4c2e6eec1e144118920c652fa515aafd1bb9fea769410f5c0ee0",
+          "quote": "He subsequently served as vice president of sales at Groove Networks, which was acquired by Microsoft in 2005 and became part of Microsoft SharePoint Workspace.",
+          "quote_hash": "a5181a44854f1d411b6e9f60ef459e18276626c9ef75f437dc7442a2b061d002"
+        },
+        {
+          "source_id": "brian_education",
+          "source_url": "https://www.hubspot.com/company/management/brian-halligan",
+          "source_title": "Brian Halligan | HubSpot",
+          "source_content_hash": "3bd5317e016c4c2e6eec1e144118920c652fa515aafd1bb9fea769410f5c0ee0",
+          "quote": "Brian earned an MBA from MIT's Sloan School of Management, where he continues to stay involved.",
+          "quote_hash": "fc0918c17362989dfe86217c983d6bd93c281e3b640c78e2570167ad652e27af"
+        },
+        {
+          "source_id": "brian_mit",
+          "source_url": "https://www.hubspot.com/company/management/brian-halligan",
+          "source_title": "Brian Halligan | HubSpot",
+          "source_content_hash": "3bd5317e016c4c2e6eec1e144118920c652fa515aafd1bb9fea769410f5c0ee0",
+          "quote": "Brian developed MIT’s popular Scaling Entrepreneurial Ventures class, which he has taught for over a decade.",
+          "quote_hash": "3f24463317bb2680d57208f23a86bfa20dd49eeece128e102e0f8dd0f19f7bb7"
+        },
         {
           "source_id": "FISRC-b95b1b353d05702f",
           "source_url": "https://thenextweb.com/news/sable-aidan-ai-employee-sequoia-45-million",
@@ -151,9 +276,70 @@
           "source_content_hash": "bc538fe3e503f8f8",
           "quote": "Angel investors include HubSpot co-founders Brian Halligan and Dharmesh Shah, Valor’s Antonio Gracias, and Cognition CEO Scott Wu.",
           "quote_hash": "670d8fb1c52a03d9d65f8070b6bd858552add89f44cebf65e0ce041b0498d224"
+        },
+        {
+          "source_id": "brian_ptc_apac",
+          "source_url": "https://www.hubspot.com/company/management/brian-halligan",
+          "source_title": "Brian Halligan | HubSpot",
+          "source_content_hash": "3bd5317e016c4c2e6eec1e144118920c652fa515aafd1bb9fea769410f5c0ee0",
+          "quote": "He was tapped to establish and build PTC's Pacific Rim operation out of Hong Kong and Tokyo, growing it to $100 million in revenue.",
+          "quote_hash": "7c72f94e385d4355c5c408a7afb37935a891f70c9552d21823903eeaabf5d2cb"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "milestones": []
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Brian Halligan 是 HubSpot 联合创办人和前 CEO，现为 Sequoia Capital 合伙人，并持续参与 MIT Sloan 创业教学。他的经历涵盖企业软件、营销科技、销售管理与创业辅导；HubSpot 页面列明其佛蒙特大学和 MIT Sloan 学历。",
+          "source_hash": "6e15a8f67994d4f353ee6ada88e4ea7b3b6803fb41275acd60fd3d62ab3d56da",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.308Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "职业生涯早期加入 PTC，并在香港和东京建立了其环太平洋业务。",
+          "source_hash": "8d13bab79aa60595811d867c7d3d29cc2c60f2fe84a7229c79d8a212b66a2f9e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.308Z",
+          "status": "translated"
+        },
+        "public_profile.career[2].description": {
+          "text": "Groove Networks 后被 Microsoft 收购。",
+          "source_hash": "b66f710ac7d2bd42112ffff8a1a87fdfc6f033cd49c2e38173d437336b2d88bc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.308Z",
+          "status": "translated"
+        },
+        "public_profile.career[4].description": {
+          "text": "开发并教授 Scaling Entrepreneurial Ventures 课程；该页面未说明其当前任职头衔。",
+          "source_hash": "497811e177ad31499d1fc48874ff354fd046ab95d91fadc5104b9e63a4328622",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "The Next Web 的 Sable 融资报道将 Brian Halligan 列为天使投资人；个人投资金额未披露。",
+          "source_hash": "8d942f5f62306c5acfe6595942aaffefa825c4022aa1b077029a6aee5fdb53f9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "HubSpot 官方人物简介",
+          "source_hash": "d7a6798fe075a6a840bdc244b316127591e43aaef33322ba71f1a18b5de62d75",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

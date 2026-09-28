@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,171 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "小米集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "小米集团是以智能手机、智能硬件和 IoT 平台为核心的消费电子及智能制造公司，2010年成立并于2018年在香港联交所上市。官网披露其2025年全球手机出货量排名第三、AIoT平台接入设备10.79亿台，产品覆盖100多个国家和地区。融资来源回溯到一篇后续融资报道所述的小雨智造2023年种子轮，并列出“小米集团”；该材料不证明小米参与数据库记录的2026年B+轮，也不足以确认具体出资的集团部门、生态链公司或基金。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "主营业务",
+          "value": "以智能手机、智能硬件和 IoT 平台为核心的消费电子及智能制造",
+          "source_id": "xiaomi_business_scope"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2010年4月",
+          "source_id": "xiaomi_founding_listing"
+        },
+        {
+          "field": "listed",
+          "label": "上市信息",
+          "value": "2018年7月9日在香港联交所主板上市",
+          "source_id": "xiaomi_founding_listing"
+        },
+        {
+          "field": "smartphone_shipments",
+          "label": "手机出货表现",
+          "value": "按Omdia数据，2025年全球手机出货量排名第三（公司官网转述）",
+          "source_id": "xiaomi_shipments"
+        },
+        {
+          "field": "aiot_scale",
+          "label": "AIoT平台规模",
+          "value": "截至2025年12月31日连接IoT设备10.79亿台；不含手机、平板及笔记本电脑",
+          "source_id": "xiaomi_aiot_scale"
+        },
+        {
+          "field": "markets",
+          "label": "业务覆盖",
+          "value": "产品遍布全球100多个国家和地区",
+          "source_id": "xiaomi_markets"
+        },
+        {
+          "field": "fortune_global_500",
+          "label": "《财富》世界500强",
+          "value": "2026年连续第8年上榜",
+          "source_id": "xiaomi_fortune500"
+        },
+        {
+          "field": "ecosystem_structure",
+          "label": "生态链主体关系",
+          "value": "小米官方隐私政策称生态系统公司是由小米投资和运营的独立实体；本条融资记录未披露具体出资实体。",
+          "source_id": "xiaomi_ecosystem"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010-04",
+          "description": "小米公司正式成立。",
+          "source_id": "xiaomi_founding_listing"
+        },
+        {
+          "date": "2018-07-09",
+          "description": "在香港联交所主板上市。",
+          "source_id": "xiaomi_founding_listing"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · 种子轮投资方 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资来源回溯披露：小米集团于2023年3月参与小雨智造种子轮。数据库另记录小雨智造于2026年披露B+轮，但该历史来源不证明小米参与后续轮次、具体投资金额或出资部门。",
           "source_id": "FISRC-5ddafcf5b1c1b90b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资者关系网站",
+          "value": "Xiaomi Corporation IR",
+          "url": "https://ir.mi.com/zh-hans",
+          "source_id": "xiaomi_ir_email"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系邮箱（非项目融资投递渠道）",
+          "value": "ir@xiaomi.com",
+          "url": "https://ir.mi.com/zh-hans/investor-resources/ir-contacts",
+          "source_id": "xiaomi_ir_email"
+        },
+        {
+          "kind": "address",
+          "label": "投资者关系公开地址",
+          "value": "北京市海淀区安宁庄路小米科技园",
+          "url": "https://ir.mi.com/zh-hans/investor-resources/ir-contacts",
+          "source_id": "xiaomi_ir_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "xiaomi_founding_listing",
+          "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+          "source_title": "公司简介 | Xiaomi Corporation",
+          "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+          "quote": "小米公司正式成立于2010年4月, 并于2018年7月9日在香港联交所主板上市。",
+          "quote_hash": "60e446bacecb1633b725c5b86d1050d71e9abd38d64df46fda689eac7234c69e"
+        },
+        {
+          "source_id": "xiaomi_business_scope",
+          "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+          "source_title": "公司简介 | Xiaomi Corporation",
+          "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+          "quote": "小米公司是一家以智能手机、智能硬件和 IoT 平台为核心的消费电子及智能制造公司。",
+          "quote_hash": "3d884cff27b32fd8b51f83b3351d46f5334236f8c65ba03c83f06bf29d6bd5a9"
+        },
+        {
+          "source_id": "xiaomi_shipments",
+          "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+          "source_title": "公司简介 | Xiaomi Corporation",
+          "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+          "quote": "2025年在全球范围内手机出货量排名第三。",
+          "quote_hash": "4df04a8338b1385fd79ddeb55eddb5b9bbed9e56a8acfcff90d2a4c7f8376d0e"
+        },
+        {
+          "source_id": "xiaomi_aiot_scale",
+          "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+          "source_title": "公司简介 | Xiaomi Corporation",
+          "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+          "quote": "截至2025年12月31日，AIoT平台已连接的IoT设备数（不包括智能手机、平板及笔记本电脑）已达到10.79亿。",
+          "quote_hash": "5282cab07a816eda46823dca303e7f5b919cdaf00bf81bcef7ddfc3cdf1899b4"
+        },
+        {
+          "source_id": "xiaomi_markets",
+          "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+          "source_title": "公司简介 | Xiaomi Corporation",
+          "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+          "quote": "小米产品遍布全球100多个国家和地区。",
+          "quote_hash": "393cc0d23cef291f48d2b9ee67766838f605cffc9ec72c61527e8042eba4e464"
+        },
+        {
+          "source_id": "xiaomi_fortune500",
+          "source_url": "https://ir.mi.com/zh-hans/corporate-information/company-profile",
+          "source_title": "公司简介 | Xiaomi Corporation",
+          "source_content_hash": "f486cb0eb459c9ecdb3d09f4538cac876ee828451ed01ea75451b70a21db4161",
+          "quote": "2026年7月，小米连续8年上榜《财富》全球500强。",
+          "quote_hash": "b8daa8d33ac40f5575e612980283b1fa95fe0751eadf04c6f8f58219527f9b67"
+        },
+        {
+          "source_id": "xiaomi_ecosystem",
+          "source_url": "https://www.mi.com/about/privacy",
+          "source_title": "隐私政策 | 小米",
+          "source_content_hash": "fc0d5b8ae1ce8e9be2858ee6a0e7b7421cf13fa06a37aa641e25444dd0244181",
+          "quote": "小米生态系统公司是由小米投资和运营的独立实体。",
+          "quote_hash": "eea6a884dcd4dd7cb233fc2389eca1dae7500136420e3fa88b1db065fe303403"
+        },
+        {
+          "source_id": "xiaomi_ir_email",
+          "source_url": "https://ir.mi.com/zh-hans/investor-resources/ir-contacts",
+          "source_title": "联系投资者关系 | Xiaomi Corporation",
+          "source_content_hash": "516695de5ea70117041f58570a071a19da061bc6be4f82917c7b341ed4b735ba",
+          "quote": "邮箱: ir@xiaomi.com",
+          "quote_hash": "3f45ac53c35fc9271f490e9e1056394f89fe512858028ff57252470c7cd88cc4"
+        },
+        {
+          "source_id": "xiaomi_ir_address",
+          "source_url": "https://ir.mi.com/zh-hans/investor-resources/ir-contacts",
+          "source_title": "联系投资者关系 | Xiaomi Corporation",
+          "source_content_hash": "516695de5ea70117041f58570a071a19da061bc6be4f82917c7b341ed4b735ba",
+          "quote": "地址: 北京市海淀区安宁庄路小米科技园",
+          "quote_hash": "58e58b9b8b2a8ce0bc575c4c556b4f1d8dcfa784dbe0a55e7ca813052cae1347"
+        },
         {
           "source_id": "FISRC-5ddafcf5b1c1b90b",
           "source_url": "https://news.pedaily.cn/202507/552068.shtml",
@@ -153,7 +303,11 @@
           "quote_hash": "fa5c36a10ad946995593868a7b4cd46a246273129b14b7f3d97e5d4fc23639e2"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "集团经营数据引用小米公司官方投资者关系页面；生态链公司关系引用小米官方隐私政策。融资披露仅以“小米集团”为投资方称谓，暂不能确认具体执行投资的集团部门、生态链实体或基金。公开邮箱和地址仅为投资者关系渠道，不代表融资项目联络方式。",
+      "identity_status": "verified"
     }
   }
 }

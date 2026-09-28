@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Altos Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "The firm’s stage, portfolio philosophy, and long-term approach are self-described on its official website. General Analysis’ $10 million figure is its seed-round total, not Altos Ventures’ individual investment.",
+      "summary": "Altos Ventures 是一家早期风险投资机构，投资于新兴消费和企业公司。它强调创始人领导的团队、运营基本面和较长持有期，并表示可能在首次投资十多年后继续支持表现优异的公司。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Initial investments in early-stage companies.",
+          "source_id": "altos_home"
+        },
+        {
+          "field": "sectors",
+          "label": "行业重点",
+          "value": "Emerging consumer and enterprise opportunities.",
+          "source_id": "altos_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "Founder-oriented and fundamentals-focused, with patient follow-on capital for high-performing companies.",
+          "source_id": "altos_patient"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：General Analysis · 种子轮 · 2026-04-29 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "一份 2026 年公司公告称，Altos Ventures 领投了 General Analysis 的 1000 万美元种子轮。披露的总额是公司的融资金额，而非 Altos 的单笔出资。",
           "source_id": "FISRC-2513b5897a02dd3c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Altos Ventures",
+          "source_id": "altos_home",
+          "url": "https://altos.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "altos_home",
+          "source_url": "https://altos.vc/",
+          "source_title": "Altos Ventures",
+          "source_content_hash": "4d3c1a10b68590c3a69151af564fd80462cc92709f63e5976b4fda803f75f15a",
+          "quote": "We make initial investments in early-stage companies tackling emerging consumer and enterprise opportunities.",
+          "quote_hash": "70d082ab271642e0c7ab80dab4507ebf41723b8169d0c8a68fd406940b75368d"
+        },
+        {
+          "source_id": "altos_patient",
+          "source_url": "https://altos.vc/",
+          "source_title": "Altos Ventures",
+          "source_content_hash": "4d3c1a10b68590c3a69151af564fd80462cc92709f63e5976b4fda803f75f15a",
+          "quote": "significant capital commitments more than a decade after our initial investment",
+          "quote_hash": "50a3670c192a6db81b07ddf6d73273c7a0d01a3131f3c0fb480a090cdf9d5038"
+        },
         {
           "source_id": "FISRC-2513b5897a02dd3c",
           "source_url": "https://www.businesswire.com/news/home/20260429247972/en/General-Analysis-Raises-%2410M-in-Seed-Funding-to-Secure-Agentic-AI",
@@ -161,7 +204,59 @@
           "quote_hash": "42575a297e8fc11dc51eb20bd4b690d0867dceebb328592f47c9fa9bddc1df2e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Altos Ventures 是一家早期风险投资机构，投资于新兴消费和企业公司。它强调创始人领导的团队、运营基本面和较长持有期，并表示可能在首次投资十多年后继续支持表现优异的公司。",
+          "source_hash": "d1f396e0b59f0bdb148de72b18b092fe0e59682c00020dab106ad53c44fc4444",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "行业重点",
+          "source_hash": "9ccf53a4910934b6a6a514b4ef0c2f117a521ce9c102f3101bfeec2e831455af",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "投资方式",
+          "source_hash": "3f41267b1933c14f39659eff70c6eef84065a52b97fed3857ba665355c261841",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "一份 2026 年公司公告称，Altos Ventures 领投了 General Analysis 的 1000 万美元种子轮。披露的总额是公司的融资金额，而非 Altos 的单笔出资。",
+          "source_hash": "131483a9a1a19aaa422b6a5b555926c0c15c875ebdab597de07f0b0d52baab4a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

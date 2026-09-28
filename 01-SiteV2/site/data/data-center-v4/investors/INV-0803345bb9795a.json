@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -132,19 +132,95 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Brett Adcock 当前按“个人投资者”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "履历和成绩主要依据本人官网自述；融资报道称其以个人资金启动 Hark，但没有证据证明这是独立于创办行为的天使投资，因此仅作为融资关联记录并明确标注。",
+      "summary": "Brett Adcock 是连续创业者，创办 Vettery、Archer 和 Figure。本人官网称 Vettery 于 2018 年以 1.1 亿美元被 Adecco 收购，并报告 Archer 融资超过 10 亿美元、以 27 亿美元估值上市；这些成绩为本人披露。其目前的公开履历重点为 Figure 人形机器人业务。",
+      "facts": [
+        {
+          "field": "reported_fundraising",
+          "label": "公开披露成绩",
+          "value": "本人官网称 Archer 融资超过 10 亿美元并以 27 亿美元估值上市；该数据为本人自述。",
+          "source_id": "brett_bio"
+        },
+        {
+          "field": "figure_mission",
+          "label": "Figure focus",
+          "value": "Figure develops general-purpose humanoid robots for work across manufacturing, logistics, warehousing, retail, and the home.",
+          "source_id": "brett_figure"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "创办人",
+          "organization": "Figure",
+          "source_id": "brett_figure"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Vettery",
+          "title": "创办人",
+          "period": "2012–2018（本人官网所列）",
+          "description": "建立 AI 人才市场平台；本人官网称其于 2018 年以 1.1 亿美元出售给 Adecco。",
+          "source_id": "brett_vettery"
+        },
+        {
+          "organization": "Archer Aviation",
+          "title": "创办人",
+          "period": "官网所列起始年份为 2018；当前任期未独立确认",
+          "description": "本人官网报告其融资超过 10 亿美元并以 27 亿美元估值上市。",
+          "source_id": "brett_bio"
+        },
+        {
+          "organization": "Figure",
+          "title": "创办人",
+          "period": "2022–至今（本人官网所列）",
+          "description": "开发面向制造、物流等场景的通用人形机器人；本人官网称 BMW 为首个商业客户。",
+          "source_id": "brett_bmw"
+        }
+      ],
+      "education": [],
+      "experience_summary": "创业和产品工程经历覆盖招聘平台、航空器和机器人。公开履历中的融资、估值和商业客户信息来自本人官网；教育经历未在该页面披露。",
       "track_record": [
         {
-          "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 天使投资人 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资报道称 Brett Adcock 在 2025 年末以 1 亿美元自有资金启动 Hark。该信息用于解释本库关联记录，不代表另有独立天使投资或披露了其 Series A 出资金额。",
           "source_id": "FISRC-353546c00a154228"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "个人官网与履历",
+          "value": "Brett Adcock 官方传记",
+          "source_id": "brett_bio",
+          "url": "https://www.brettadcock.com/bio"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "brett_bio",
+          "source_url": "https://www.brettadcock.com/bio",
+          "source_title": "Brett Adcock Official — Bio",
+          "source_content_hash": "35b38bd79e09db3a50b2fdeeec886280cbbaf0bf40a6f4cc4c84aab65121170a",
+          "quote": "I founded and grew Archer into a leading aerospace company, raising $1B+ of capital, and taking it public at a $2.7B valuation.",
+          "quote_hash": "5acf5af831b9529dfab8271048b6d47d21f911e4a8c5adf9c9bab63e5aa9ccf8"
+        },
+        {
+          "source_id": "brett_vettery",
+          "source_url": "https://www.brettadcock.com/bio",
+          "source_title": "Brett Adcock Official — Bio",
+          "source_content_hash": "35b38bd79e09db3a50b2fdeeec886280cbbaf0bf40a6f4cc4c84aab65121170a",
+          "quote": "It was acquired in 2018 for $110 million by The Adecco Group, the largest recruiting company in the world.",
+          "quote_hash": "0f860de49677ec99a7b2f7319f458ba62623305a985e72b4a3e5521928645ddd"
+        },
+        {
+          "source_id": "brett_figure",
+          "source_url": "https://www.brettadcock.com/bio",
+          "source_title": "Brett Adcock Official — Bio",
+          "source_content_hash": "35b38bd79e09db3a50b2fdeeec886280cbbaf0bf40a6f4cc4c84aab65121170a",
+          "quote": "I founded Figure to give AI a body. We’re building general-purpose humanoid robots to fill labor shortages and work alongside humans in manufacturing, logistics, warehousing, retail, and the home.",
+          "quote_hash": "7d1707c474eb26734d1ba8ef1501a65eaf1b9b07c610f561cf67dff50af19397"
+        },
         {
           "source_id": "FISRC-353546c00a154228",
           "source_url": "https://techcrunch.com/2026/05/21/hark-raises-700m-series-a-for-its-secretive-universal-ai-interface/",
@@ -152,9 +228,18 @@
           "source_content_hash": "cfb3b54f7f85b4a4",
           "quote": "launched Hark in late 2025 with $100 million of his own money",
           "quote_hash": "80133e2dc27bc75992a48a28583104cdf72eb90cf75c64fe3c37892c6f67b61a"
+        },
+        {
+          "source_id": "brett_bmw",
+          "source_url": "https://www.brettadcock.com/bio",
+          "source_title": "Brett Adcock Official — Bio",
+          "source_content_hash": "35b38bd79e09db3a50b2fdeeec886280cbbaf0bf40a6f4cc4c84aab65121170a",
+          "quote": "performing end-to-end operations with our first commercial customer, BMW.",
+          "quote_hash": "77334e35b6bd6e053c7a2348a65ba7c5bccc8b2838dd2ad5cb10e8efe30d1929"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "milestones": []
     }
   }
 }

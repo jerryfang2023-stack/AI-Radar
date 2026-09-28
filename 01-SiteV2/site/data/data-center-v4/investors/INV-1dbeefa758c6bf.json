@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,123 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Databricks Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Databricks Ventures 的官方资料可核验；Replit 融资报道只写 Databricks，未明确投资实体，轮次总额不代表单家出资额。",
+      "summary": "Databricks Ventures 是 Databricks 的企业投资部门，投资数据、分析和 AI 相关企业，覆盖早期至成长期。官网说明其与领投机构共同参与少数股权投资，不担任领投方。官网将 Replit 列为组合企业；数据库中的 Replit D 轮报道只写 Databricks，不能确认由 Ventures 部门投资。报道所列 4 亿美元为全轮融资额，并非机构单家出资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "Databricks 旗下企业风险投资部门",
+          "source_id": "dv_main"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期阶段",
+            "成长期"
+          ],
+          "source_id": "dv_main"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资领域",
+          "value": [
+            "数据",
+            "分析",
+            "人工智能",
+            "Databricks Data + AI Platform 相关生态"
+          ],
+          "source_id": "dv_main"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "与领投机构共同参与少数股权投资；官网明确表示不担任领投方。",
+          "source_id": "dv_strategy"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "组合支持",
+          "value": "产品路线图洞察、技术集成支持、Databricks 导师网络及全球市场拓展项目。",
+          "source_id": "dv_portfolio_support"
+        },
+        {
+          "field": "board_representation",
+          "label": "董事会席位",
+          "value": "官网表示不计划在组合公司担任董事席位。",
+          "source_id": "dv_board"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投（战略投资） · $400M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网组合页面列有 Replit；这仅说明该公司被列为组合企业，不能确认数据库中的 D 轮参投记录由 Databricks Ventures 完成。",
+          "source_id": "dv_portfolio"
+        },
+        {
+          "description": "2026-03-11 的二手融资报道将 Databricks 列为 Replit D 轮战略投资方，但未说明是 Databricks Ventures；报道中的 4 亿美元是全轮融资额，未披露本机构单笔出资。",
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Databricks Ventures",
+          "url": "https://www.databricks.com/databricks-ventures",
+          "source_id": "dv_main"
+        },
+        {
+          "kind": "address",
+          "label": "Databricks 公司地址（非专属投资联系地址）",
+          "value": "160 Spear Street, 15th Floor, San Francisco, CA 94105",
+          "url": "https://www.databricks.com/databricks-ventures",
+          "source_id": "dv_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "Databricks 公司总机（非专属投资电话）",
+          "value": "1-866-330-0121",
+          "url": "https://www.databricks.com/databricks-ventures",
+          "source_id": "dv_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "dv_main",
+          "source_url": "https://www.databricks.com/databricks-ventures",
+          "source_title": "Databricks Ventures | Databricks",
+          "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+          "quote": "Databricks Ventures invests in innovative companies that share our view of the future for data, analytics and AI. Our focus is on supporting early- and growth-stage companies that are empowering AI in innovative ways on top of or alongside the Databricks Data + AI Platform.",
+          "quote_hash": "3963fc98bb16e017b6ebe9e68762ea06d44ce482ab14dff3f17e91ad809f98d7"
+        },
+        {
+          "source_id": "dv_strategy",
+          "source_url": "https://www.databricks.com/databricks-ventures",
+          "source_title": "Databricks Ventures investment strategy and portfolio support",
+          "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+          "quote": "No, we do not lead rounds. Our strategy is to invest alongside a lead institutional investor.",
+          "quote_hash": "d08edef4e94b42c7c6c9741498ab93e9c9c5aca7067f2d63a432fff56038b87d"
+        },
+        {
+          "source_id": "dv_portfolio",
+          "source_url": "https://www.databricks.com/databricks-ventures",
+          "source_title": "Databricks Ventures portfolio",
+          "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+          "quote": "Our Portfolio. Replit lets you create software in plain English - with authentication, databases, security, testing, and deployment built directly into the platform.",
+          "quote_hash": "fa12bf5c45a1b5a23fe88a6509694005940e749a75e55a29cd6616a77d5aa21f"
+        },
+        {
+          "source_id": "dv_contact",
+          "source_url": "https://www.databricks.com/databricks-ventures",
+          "source_title": "Databricks Ventures | Databricks contact information",
+          "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+          "quote": "160 Spear Street, 15th Floor San Francisco, CA 94105 1-866-330-0121",
+          "quote_hash": "1d97522b9740d3be26774630eb24847baafaec405b0e944cba18c42b7ad499fd"
+        },
         {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -159,9 +263,25 @@
           "source_content_hash": "c906371275e7a3ca",
           "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
+        },
+        {
+          "source_id": "dv_board",
+          "source_url": "https://www.databricks.com/databricks-ventures",
+          "source_title": "Databricks Ventures | Board seats",
+          "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+          "quote": "No, Databricks does not plan to take board seats in portfolio companies.",
+          "quote_hash": "56860df421e7d262dc94cba0263070deb1a7d6383d3f5ea75f2b84668bff2446"
+        },
+        {
+          "source_id": "dv_portfolio_support",
+          "source_url": "https://www.databricks.com/databricks-ventures",
+          "source_title": "Databricks Ventures | Portfolio support",
+          "source_content_hash": "790d35f445d5c05e86f6d8d8b039ef3f11add6d71e6d055d8f8317b9f6558554",
+          "quote": "Depending on the size and stage of the investment, Databricks will provide unique access to product roadmap direction, technical integration support, and go-to-market support; access to Databricks mentors for guidance and best practices; and exposure in Databricks’ global go-to-market programs, including our Data + AI Summit series.",
+          "quote_hash": "e53f5328737a99f1efa7db5757b3b0f22d3d6f09af302635dcd7de2f34899800"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,84 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "锦秋基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "锦秋基金官网称其成立于2022年，专注早期投资，关注产业跃迁和拓展人类能力边界的创业公司。官网列出团队成员、代表性组合公司并提供商务合作邮箱。融资披露将其列为因克斯B轮的既有股东之一；该轮融资总额超过3亿元，但未披露锦秋基金单独出资金额。",
+      "facts": [
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2022年。",
+          "source_id": "jinqiu_home"
+        },
+        {
+          "field": "stage_and_thesis",
+          "label": "投资阶段与方向",
+          "value": "专注早期投资，关注推动产业跃迁、拓展人类能力边界的创业公司。",
+          "source_id": "jinqiu_home"
+        },
+        {
+          "field": "team",
+          "label": "官网列出的创始合伙人",
+          "value": "杨洁（创始合伙人）；官网同时列出其他合伙人与投资人。",
+          "source_id": "jinqiu_home"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列出的组合案例",
+          "value": [
+            "宇树科技",
+            "Momenta",
+            "生数科技",
+            "地平线"
+          ],
+          "source_id": "jinqiu_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022",
+          "description": "锦秋基金成立。",
+          "source_id": "jinqiu_home"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 老股东持续多轮追投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "投资界2026年9月报道因克斯完成超3亿元B轮，并称复星创富、深创投、华控基金、锦秋基金、普华资本等老股东持续多轮追投；超3亿元为整轮金额，未披露锦秋基金本轮出资额。",
           "source_id": "FISRC-d0c3dca85d845330"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "锦秋基金",
+          "url": "https://jinqiucapital.com/",
+          "source_id": "jinqiu_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网商务合作及通用咨询邮箱",
+          "value": "ai@jinqiucapital.com",
+          "url": "https://jinqiucapital.com/contact",
+          "source_id": "jinqiu_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jinqiu_home",
+          "source_url": "https://jinqiucapital.com/",
+          "source_title": "锦秋基金｜官方网站",
+          "source_content_hash": "fbb642c2ef3fc443e4470ee20acf26c21b91b16dfaadef1186f350d18f5ee70f",
+          "quote": "锦秋基金成立于2022年，专注早期，投资那些推动产业跃迁、拓展人类能力边界的创业公司。",
+          "quote_hash": "fbb642c2ef3fc443e4470ee20acf26c21b91b16dfaadef1186f350d18f5ee70f"
+        },
+        {
+          "source_id": "jinqiu_contact",
+          "source_url": "https://jinqiucapital.com/contact",
+          "source_title": "锦秋基金｜联系方式",
+          "source_content_hash": "53e25aeb2ca9da01ac531f4807d45a6a032fabc0942040b02a873513fd66328e",
+          "quote": "商务合作 / 通用咨询：ai@jinqiucapital.com。",
+          "quote_hash": "53e25aeb2ca9da01ac531f4807d45a6a032fabc0942040b02a873513fd66328e"
+        },
         {
           "source_id": "FISRC-d0c3dca85d845330",
           "source_url": "https://news.pedaily.cn/202609/569015.shtml",
@@ -153,7 +216,11 @@
           "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "成立时间、投资方向、团队和组合案例来自基金官网；官网展示案例不是完整组合或业绩回报。融资报道中的超3亿元为因克斯B轮总额，不是锦秋基金的单独出资金额。",
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

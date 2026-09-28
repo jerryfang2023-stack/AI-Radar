@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -132,18 +132,76 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "瑞丞基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "summary": "公开上市公司文件将“瑞丞基金”具体定义为合肥瑞丞私募基金管理有限公司自身执行或管理的并购基金；文件称该管理公司成立于2022年、注册资本5000万元，由芜湖奇瑞资本持股80%，后者由奇瑞控股集团与奇瑞汽车各持股50%。安徽证监局2026年对合肥瑞丞私募基金管理有限公司采取责令改正措施。融资数据库另将瑞丞基金列为弋途科技早期轮次联合领投方，未披露其单笔出资额。",
+      "coverage_note": "2025年公告中的“瑞丞基金”是合肥瑞丞管理人用于执行特定并购交易的主体。弋途科技融资记录仅披露简称“瑞丞基金”，未公开基金编号；该记录与上述并购基金是否为同一支产品尚不能确认。2026年监管决定针对管理公司合肥瑞丞，不等于对其所有基金作出同一认定。",
+      "facts": [
         {
-          "description": "融资来源记录：弋途科技 · Pre-B轮 · 2026-09-21 · A轮联合领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-08be95e2b95904af"
+          "field": "manager_name",
+          "label": "公开披露的管理人",
+          "value": "合肥瑞丞私募基金管理有限公司。",
+          "source_id": "ruicheng_control_filing"
+        },
+        {
+          "field": "established",
+          "label": "管理人成立时间",
+          "value": "2022年1月19日。",
+          "source_id": "ruicheng_control_filing"
+        },
+        {
+          "field": "registered_capital",
+          "label": "管理人注册资本",
+          "value": "人民币5000万元。",
+          "source_id": "ruicheng_control_filing"
+        },
+        {
+          "field": "ownership",
+          "label": "股权背景",
+          "value": "管理公司由芜湖奇瑞资本管理有限公司持股80%；该资本公司由奇瑞控股集团有限公司和奇瑞汽车股份有限公司各持股50%。",
+          "source_id": "ruicheng_control_filing"
+        },
+        {
+          "field": "regulatory_action",
+          "label": "监管信息",
+          "value": "安徽证监局2026年5月20日对合肥瑞丞私募基金管理有限公司责令改正，指出关联交易决策与披露程序、勤勉尽责方面的问题。监管对象是管理公司；不据此推定单支基金的责任。",
+          "source_id": "ruicheng_csrs_notice"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2022-01-19",
+          "description": "合肥瑞丞私募基金管理有限公司成立。",
+          "source_id": "ruicheng_control_filing"
+        },
+        {
+          "date": "2025-06-10",
+          "description": "上市公司公告披露瑞丞基金签署协议，拟取得鸿合科技25%股份；公告时交易仍需履行相关程序。",
+          "source_id": "ruicheng_control_filing"
+        },
+        {
+          "date": "2026-05-20",
+          "description": "安徽证监局对合肥瑞丞私募基金管理有限公司采取责令改正措施。",
+          "source_id": "ruicheng_csrs_notice"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资披露记录：乐居财经将瑞丞基金列为弋途科技A轮联合领投方；弋途科技Pre-B轮披露的近亿元是公司融资额，不是瑞丞基金的出资额。",
+          "source_id": "FISRC-08be95e2b95904af"
+        },
+        {
+          "description": "并购交易：上市公司公告称，瑞丞基金拟协议受让鸿合科技25%股份；该公告披露时仍有审批和过户等条件，不能表述为已完成投资。",
+          "source_id": "ruicheng_control_filing"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "上市公司公告披露的管理人通讯地址（2025年公告口径）",
+          "value": "安徽（合肥）自由贸易试验区合肥经济技术开发区清华路科技园南艳湖科创金融港11号楼502室",
+          "source_id": "ruicheng_control_filing"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-08be95e2b95904af",
@@ -152,9 +210,25 @@
           "source_content_hash": "c2b3a4f00a437876",
           "quote": "1月，A轮首关，火山引擎与瑞丞基金联合领投，包河创投跟投，云启、以骏、基石等老股东持续加码",
           "quote_hash": "b33cd0a6997dc4da93ba19201ded2e788ea7cad6f9ff5b1df84798ac9db8cb0f"
+        },
+        {
+          "source_id": "ruicheng_control_filing",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-06-11/1223898711.pdf",
+          "source_title": "鸿合科技关于实际控制人及其一致行动人签署股份转让协议的公告",
+          "source_content_hash": "839de6774837d5f30c08980ea88a2e8fe6cc235e98e629bab9879bfd9bc103f0",
+          "quote": "合肥瑞丞（自身并代其作为普通合伙人暨执行事务合伙人的用于实际执行本次交易的主体，即“瑞丞基金”）",
+          "quote_hash": "4dae50cee29dcb6a1b970b845497cb924377de9a83d957a26285fbd61c40ae25"
+        },
+        {
+          "source_id": "ruicheng_csrs_notice",
+          "source_url": "https://www.csrc.gov.cn/anhui/c103990/c7634446/content.shtml",
+          "source_title": "关于对合肥瑞丞私募基金管理有限公司采取责令改正措施的决定",
+          "source_content_hash": "8e5e133199d01fe81de097c9ff2fb294841683cf85a6124b494fd02ef3a992d4",
+          "quote": "未按照基金合同约定履行关联交易决策程序并披露关联交易相关信息",
+          "quote_hash": "905d2e6d51f24bce0bf5bf4805fb3ca5b7c6ff05645b9325a6a28e184d1e101d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

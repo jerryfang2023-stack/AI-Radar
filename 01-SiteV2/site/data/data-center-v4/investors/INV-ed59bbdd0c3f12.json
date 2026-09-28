@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,16 +138,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "渝富中新基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "融资报道使用“渝富中新基金”作为参投方称谓。渝富控股官网和重庆地方政府资料确认其基金业务中存在“中新基金公司”及中新互联互通投资基金管理有限公司等相关主体，但目前未找到一手资料将星动纪元融资报道中的简称映射至确定的法律基金或具体出资载体。以下仅保留原融资披露和可辨识的渝富体系公开背景，不将其他“中新基金”或渝富系基金的管理规模、组合项目、联系方式归属到本条记录。",
+      "summary": "融资情报站收录的媒体报道将“渝富中新基金”列为星动纪元2026年7月新一轮融资的参投方，但未披露其单独出资额或具体基金载体。渝富控股官网公开材料提到“中新基金公司”参与大健康基金及投后管理，重庆地方政府资料另介绍中新互联互通投资基金管理有限公司；目前尚未证实这两类公开称谓与本条融资记录中的实际出资主体完全对应，因此机构身份仍待核实。",
+      "facts": [
+        {
+          "field": "yufu_group_public_context",
+          "label": "渝富控股公开背景（主体对应关系待核）",
+          "value": "渝富控股官网称“中新基金”管理大健康基金，并披露其对博创医药开展产品引入、体系建设和资质申报等投后赋能。该案例不是本条星动纪元融资的已确认投资履历。",
+          "source_id": "yufu_zhongxin_health_fund_context"
+        },
+        {
+          "field": "possible_management_entity",
+          "label": "相关公开管理机构信息（未确认对应本条出资方）",
+          "value": "永川区政府资料介绍中新互联互通投资基金管理有限公司为股权结构多元化、投资运营市场化的基金管理公司；现有材料未证明它就是“渝富中新基金”融资记录的实际出资主体。",
+          "source_id": "chongqing_yongchuan_zhongxin_context"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：星动纪元 · 轮次未披露 · 2026-07-06 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "媒体融资披露：星动纪元2026年7月新一轮融资中，“渝富中新基金”被列为本轮参投方。来源未披露其单独出资金额，具体投资载体和法律主体关系仍待一手资料确认。",
           "source_id": "FISRC-8c073d38e1f34758"
         }
       ],
@@ -160,9 +173,25 @@
           "source_content_hash": "38b0d26a979c4a8e",
           "quote": "本轮投资方由国务院国资委国有资本运营公司诚通基金领投，江西国控、国元股权、渝富中新基金、杭州资本等多家大型国资共同参与。",
           "quote_hash": "ab8d83be7522c48a5350fc6c121d51cbfe79b23c7489bc8d6a08bfff9dd78398"
+        },
+        {
+          "source_id": "yufu_zhongxin_health_fund_context",
+          "source_url": "https://www.cqyfkgjt.com/events/%E4%B8%AD%E6%96%B0%E5%9F%BA%E9%87%91%E8%A2%AB%E6%8A%95%E4%BC%81%E4%B8%9A%E5%8D%9A%E5%88%9B%E5%8C%BB%E8%8D%AF%E4%BA%A7%E5%93%81%E6%96%B0%E9%80%82%E5%BA%94%E7%97%87%E4%B8%8A%E5%B8%82%E7%94%B3%E8%AF%B7/",
+          "source_title": "中新基金被投企业博创医药产品新适应症上市申请获得批准",
+          "source_content_hash": "8c443d12c8bc3fae92e8d113adcb94982209cf018fac5fa56ef6613c4324509a",
+          "quote": "大健康基金投资后，中新基金积极开展项目投后赋能，积极助力企业进行产品引入、体系建设和资质申报等工作。",
+          "quote_hash": "f7e11fbcb2f16e93c757bf4ab9e673985cbc13e7874d15b076ec65fb18788b0f"
+        },
+        {
+          "source_id": "chongqing_yongchuan_zhongxin_context",
+          "source_url": "https://www.cqyc.gov.cn/sy_204/qxdt/202305/t20230526_12000841.html",
+          "source_title": "共同打造“招投联动”机制 助力永川构建现代化产业体系",
+          "source_content_hash": "4656ad3fc9a3bd96badc3fccd60a3d2331f1962a57ce9bd1fa6bfd53934eb765",
+          "quote": "中新互联互通投资基金管理有限公司是一家股权结构多元化、投资运营市场化的基金管理公司，坚持立足中新（重庆）战略性互联互通示范项目，发挥投资带动作用，推动产业升级、企业价值挖掘和高质量发展。",
+          "quote_hash": "80ae51f326592f5908624812a5b2f8f358bd6c670211deda07617001cd3d2803"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

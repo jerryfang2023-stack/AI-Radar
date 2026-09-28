@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,29 +131,135 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "华登国际中国基金 当前按“投资组织”收录。最新融资披露记录日期为 2024-09-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案提供华登国际品牌层面的机构背景；官网确认其为国际创投机构，并未证明融资记录中的“华登国际中国基金”对应哪个具体法律基金载体。官网团队页列出的退出案例为选定示例，不代表完整组合或基金回报；融资记录未披露该标签对应实体的单独出资额。",
+      "summary": "华登国际（Walden International）是一家1987年成立、业务覆盖亚洲和美国的国际风险投资机构，官网称其重点关注人工智能、数据、云计算、半导体等深科技领域，并与创业者合作建设企业。官网团队页列有部分投资退出案例；这些案例不构成完整投资组合或基金回报。融资数据库以“华登国际中国基金”名称记录其参与壁仞科技融资，但现有官网资料未确认具体基金载体。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "官网披露的成立年份",
+          "value": "1987年",
+          "source_id": "walden_home_20260927"
+        },
+        {
+          "field": "geographic_presence",
+          "label": "官网披露的主要市场",
+          "value": "亚洲和美国",
+          "source_id": "walden_home_20260927"
+        },
+        {
+          "field": "sectors",
+          "label": "官网披露的重点领域",
+          "value": [
+            "人工智能",
+            "数据",
+            "云计算",
+            "半导体",
+            "其他变革性深科技"
+          ],
+          "source_id": "walden_home_20260927"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网介绍的投资方式",
+          "value": "与有抱负、有韧性的创业者合作，支持其实现愿景并建设企业；为机构自述",
+          "source_id": "walden_home_20260927"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1987",
+          "description": "官网称华登国际成立于1987年。",
+          "source_id": "walden_home_20260927"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：壁仞科技 · 多轮融资 · 2024-09-12 · A轮领投 · 超过50亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网团队页在创始人兼董事长 Lip-Bu Tan 的简介下列出部分退出案例，包括 Ambarella、Astera Labs、Creative Technology、Credo Semiconductor、Mindtree、Inphi 等；这是选定案例，不代表完整投资组合或基金回报。",
+          "source_id": "walden_team_20260927"
+        },
+        {
+          "description": "融资来源记录将“华登国际中国基金”列为壁仞科技融资领投方；该报道摘录没有披露具体基金载体或其单独出资额。",
           "source_id": "FISRC-081c8476182d3ff7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Walden International",
+          "url": "https://waldenintl.com.sg/",
+          "source_id": "walden_home_20260927"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室",
+          "value": "Walden International Singapore, 31 Rochester Drive, Level 2, Suite 52, Singapore 138637",
+          "url": "https://waldenintl.com.sg/contact.html",
+          "source_id": "walden_contact_20260927"
+        },
+        {
+          "kind": "phone",
+          "label": "新加坡办公室电话",
+          "value": "6808 8574",
+          "url": "https://waldenintl.com.sg/contact.html",
+          "source_id": "walden_contact_20260927"
+        },
+        {
+          "kind": "address",
+          "label": "旧金山办公室",
+          "value": "Walden International US, 1 California Street, Suite 1750, San Francisco, California 94111, USA",
+          "url": "https://waldenintl.com.sg/contact.html",
+          "source_id": "walden_contact_20260927"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "walden_home_20260927",
+          "source_url": "https://waldenintl.com.sg/",
+          "source_title": "Home｜Walden International Singapore",
+          "source_content_hash": "f9e83dd03d0b39e27b541041517fcb2054ddbe2cf546c162b6e7ddc1f0f6215c",
+          "quote": "Founded in 1987, Walden International is a leading international venture capital firm with a strong presence in Asia and the US.",
+          "quote_hash": "1524ac4a74d487f2b46b0e1895c918e0447b58548c4a80ff8a99241b53061ff6"
+        },
+        {
+          "source_id": "walden_contact_20260927",
+          "source_url": "https://waldenintl.com.sg/contact.html",
+          "source_title": "Contact Us｜Walden International Singapore",
+          "source_content_hash": "e015430c05a67c35acb0ca4ac544aca64775c376da7aa73f77fce0d7ec989323",
+          "quote": "Walden International Singapore 31 Rochester Drive, Level 2, Suite 52, Singapore 138637. Tel: 6808 8574",
+          "quote_hash": "76a2654ea0b12495c2341c92fec74dcccc6d2f70aff02e85df01cf7596fa60c4"
+        },
+        {
+          "source_id": "walden_team_20260927",
+          "source_url": "https://www.waldenintl.com.sg/team.html",
+          "source_title": "Team｜Walden International Singapore",
+          "source_content_hash": "37ef919d654468b3b9c5ca079e9871abeba389fb99f44a09cd82461788442549",
+          "quote": "Founder and Chairman, Walden International. Exits: Ambarella, Astera Labs, Creative Technology, Credo Semiconductor, Mindtree Consulting, Centillium Communications, Innovium, Inphi, Premisys, Silicon Mitus.",
+          "quote_hash": "0fff54916a497a782b210d791f54ba30a3792631af6d8b5638ccb89dca974884"
+        },
         {
           "source_id": "FISRC-081c8476182d3ff7",
           "source_url": "https://36kr.com/p/753999774079237",
-          "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
+          "source_title": "最前线｜成立九个月后，壁仞科技完成11亿元A轮融资｜36氪",
           "source_content_hash": "48f7a6ff96b731e7",
           "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
           "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "官网团队页在创始人兼董事长 Lip-Bu Tan 的简介下列出部分退出案例，包括 Ambarella、Astera Labs、Creative Technology、Credo Semiconductor、Mindtree、Inphi 等；这是选定案例，不代表完整投资组合或基金回报。",
+          "source_hash": "e29017394b5f497ed8ea09b0761793720ede78d7f2296888245cc83e64787a71",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

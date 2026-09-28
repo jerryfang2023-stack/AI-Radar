@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,20 +138,99 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Digitalis Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Digitalis Ventures 是聚焦生物医学与健康的投资机构。官网称其投资突破性科学驱动的生物技术，以及借助科技改善医疗可及性、健康结果和成本的方案；其 Companion Funds 关注动物健康。Enveda 官方公告将其列为 2026 年 E 轮新投资者，但没有披露其单笔出资额。",
+      "coverage_note": "投资领域、公开办公信息及邮箱依据机构官网；Enveda 参投身份依据被投公司公告并由融资报道交叉印证。官网邮箱是公开联系邮箱，未标注为投资申请渠道；网站未披露可比基金收益或单笔投资金额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网列示投资领域",
+          "value": [
+            "生物医学",
+            "人类健康生物技术",
+            "技术驱动的医疗可及性与健康结果",
+            "动物健康（Companion Funds）"
+          ],
+          "source_id": "digitalis_human_health"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资思路",
+          "value": "关注未满足需求，并投资以突破性科学或技术改善医疗结果、降低医疗系统与个人成本的方案。",
+          "source_id": "digitalis_human_health"
+        },
+        {
+          "field": "headquarters",
+          "label": "官网公开办公地址",
+          "value": "11 Times Square, Suite 1500A, New York, NY 10036",
+          "source_id": "digitalis_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026 年 9 月 23 日，Enveda 官方公告将 Digitalis Ventures 列为其 3.11 亿美元 E 轮新投资者。3.11 亿美元是整轮融资额，未披露该机构单独出资额。",
+          "source_id": "digitalis_series_e"
+        },
+        {
+          "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（new investor）。原报道未披露其单笔出资金额。",
           "source_id": "FISRC-852df50f4128c47b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Digitalis Ventures 官网",
+          "value": "Digitalis Ventures",
+          "url": "https://www.digitalisventures.com/",
+          "source_id": "digitalis_official"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱（未说明为投资申请邮箱）",
+          "value": "info@digitalisventures.com",
+          "source_id": "digitalis_official"
+        },
+        {
+          "kind": "address",
+          "label": "官网公开办公地址",
+          "value": "11 Times Square, Suite 1500A, New York, NY 10036",
+          "source_id": "digitalis_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "digitalis_official",
+          "source_url": "https://www.digitalisventures.com/",
+          "source_title": "Digitalis Ventures 官方网站：投资领域与联系信息",
+          "source_content_hash": "4c2c8c2913621c97b56c061e281b5dd8616f6e7410fe49f8c3176caedb50e4ee",
+          "quote": "Investing in solutions to unmet needs in biomedicine and health.",
+          "quote_hash": "03b18fb564589477b49ea3e13673365179a6a23260bc022418ef195a3fe98dc9"
+        },
+        {
+          "source_id": "digitalis_human_health",
+          "source_url": "https://www.digitalisventures.com/",
+          "source_title": "Digitalis Ventures 官方网站：人类健康投资范围",
+          "source_content_hash": "4c2c8c2913621c97b56c061e281b5dd8616f6e7410fe49f8c3176caedb50e4ee",
+          "quote": "We invest in biotechnology companies leveraging breakthrough science to improve human health, and in companies building novel technology-enabled solutions to improve access to care and health outcomes while reducing costs to individuals and the healthcare system.",
+          "quote_hash": "312bacedcbf8e99d1159d6c00e72994ee6d3bbfb3749f8deb95928ae9bfa7077"
+        },
+        {
+          "source_id": "digitalis_animal_health",
+          "source_url": "https://www.digitalisventures.com/",
+          "source_title": "Digitalis Ventures 官方网站：动物健康投资范围",
+          "source_content_hash": "4c2c8c2913621c97b56c061e281b5dd8616f6e7410fe49f8c3176caedb50e4ee",
+          "quote": "Through our Companion Funds, we invest in companies leveraging science, technology, and design to improve animal health.",
+          "quote_hash": "b08a316c398ab2b180aa45017f3eb70c6c2cc94622eb48273e1ade82fe246afd"
+        },
+        {
+          "source_id": "digitalis_series_e",
+          "source_url": "https://enveda.com/news/enveda-raises-311-million/",
+          "source_title": "Enveda 官方公告：3.11 亿美元 E 轮融资",
+          "source_content_hash": "ec51f348211e2c008689e4152af53b1fd946099dde8b1719a88704418696826c",
+          "quote": "Digitalis Ventures",
+          "quote_hash": "7d5d79b0995baf03b9d400feb2b47959c6c2bcc410323ff893683d190f6c8061"
+        },
         {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -161,7 +240,20 @@
           "quote_hash": "3cbfe761b6de0bfc87604c270fdc50a1ccdfe84427307a732532acbdb8ace223"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.contacts[0].label": {
+          "text": "Digitalis Ventures 官网",
+          "source_hash": "ecabfc3c225646aeeda81686a4f44613e1f2ec8bb9c9f57586d0047ec724df03",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

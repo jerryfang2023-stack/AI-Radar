@@ -126,6 +126,7 @@
       "required": ["summary", "facts", "milestones", "track_record", "contacts", "sources", "last_verified_at"],
       "properties": {
         "profile_type": { "enum": ["organization", "person", "unverified"] },
+        "identity_status": { "enum": ["verified", "pending_verification"] },
         "coverage_status": { "enum": ["researched", "activity_only", "self_declared_affiliation", "identity_unverified"] },
         "coverage_note": { "type": "string" },
         "summary": { "type": "string" },

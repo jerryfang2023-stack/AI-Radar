@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -130,21 +130,113 @@
       }
     ],
     "public_profile": {
+      "summary": "“上海科创基金”对应上海科创中心股权投资基金管理有限公司运营的“国际科创”平台。它由上海国际集团牵头设立，采用市场化母基金模式，重点支持投早、投小、投科技，并通过科创母基金、接力基金和早期硬科技基金覆盖不同成长阶段。",
+      "coverage_note": "机构沿革、规模和组合统计来自上海国际集团资产管理公司官网；管理规模、子基金与组合企业数字为机构自报，截至2025年末，不代表已实现投资回报。融资记录中的单轮金额均为企业融资总额，未披露该机构单笔出资额。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海科创基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "机构主体",
+          "value": "上海科创中心股权投资基金管理有限公司，上海国际集团资产管理公司官网简称“国际科创”。",
+          "source_id": "sig_am_science_intro"
+        },
+        {
+          "field": "founding",
+          "label": "成立时间与背景",
+          "value": "成立于2017年6月，由上海国际集团牵头，联合国盛集团等基石投资人共同发起。",
+          "source_id": "sig_am_science_intro"
+        },
+        {
+          "field": "strategy",
+          "label": "投资策略",
+          "value": "以市场化母基金为核心，推动投早、投小、投科技，覆盖科创企业全周期。",
+          "source_id": "sig_am_science_intro"
+        },
+        {
+          "field": "products",
+          "label": "基金产品",
+          "value": [
+            "科创母基金",
+            "科创接力基金",
+            "国际创领早期硬科技基金"
+          ],
+          "source_id": "sig_am_science_intro"
+        },
+        {
+          "field": "scale",
+          "label": "机构公布的规模与组合",
+          "value": "截至2025年末，累计管理规模超过人民币200亿元，投资超过100支子基金；组合企业近3,000家。子基金管理规模、组合数量等为官网披露口径。",
+          "source_id": "sig_am_science_scale"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-06",
+          "description": "上海科创中心股权投资基金管理有限公司成立。",
+          "source_id": "sig_am_science_intro"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：天鹜科技 · A++轮 · 2026-07-13 · 老股东持续加注 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "上海国际集团官网列举的培育企业包括沐曦股份、曦智科技、盛合晶微、清陶能源、兆芯、宇树科技和汇禾医疗；该名单是代表性案例，不是完整组合或退出回报。",
+          "source_id": "sig_am_science_portfolio"
+        },
+        {
+          "description": "2026年融资报道将上海科创基金列为天鹜科技A++轮的老股东持续加注方之一。披露金额是天鹜科技本轮融资总额，并非基金单笔投资额。",
           "source_id": "FISRC-a638483ec7304070"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构信息与联系入口",
+          "value": "上海国际集团资产管理有限公司产业基金页面",
+          "url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_id": "sig_am_science_intro"
+        },
+        {
+          "kind": "phone",
+          "label": "平台总机",
+          "value": "021-62632222（上海国际集团资产管理有限公司公开总机）",
+          "url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_id": "sig_am_public_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sig_am_science_intro",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "625e1cf83a27e89f72c4b4eb0c404a564d266af309a51355a525bf0d0a92b71e",
+          "quote": "上海科创中心股权投资基金管理有限公司（以下简称“国际科创”）成立于2017年6月，是上海国际集团牵头设立的市场化母基金。",
+          "quote_hash": "d0ea1a75ce1b9c520e845b5a6915f3ff61abc35bcb4c8217072257aab49a317c"
+        },
+        {
+          "source_id": "sig_am_science_scale",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "625e1cf83a27e89f72c4b4eb0c404a564d266af309a51355a525bf0d0a92b71e",
+          "quote": "截至2025年末，国际科创累计管理规模超200亿元，已投资超过100支子基金，组合企业近3000家。",
+          "quote_hash": "3866cc3b4d09c74d04758a7e3bc92d43be3414ffd04e0b25f5881ca7504c3f7d"
+        },
+        {
+          "source_id": "sig_am_science_portfolio",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "625e1cf83a27e89f72c4b4eb0c404a564d266af309a51355a525bf0d0a92b71e",
+          "quote": "国际科创先后培育了沐曦股份、曦智科技、盛合晶微、清陶能源、兆芯、宇树科技、汇禾医疗等企业。",
+          "quote_hash": "83c77b0c87f23d3fa2ac230330645cff21814c027ea93a75a0d90bde4a380879"
+        },
+        {
+          "source_id": "sig_am_public_contact",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "625e1cf83a27e89f72c4b4eb0c404a564d266af309a51355a525bf0d0a92b71e",
+          "quote": "联系电话：021-62632222。",
+          "quote_hash": "db9bc0742095fd70c8d54bec5a93b950eaa2c496d76ff15c35f631842914d7e4"
+        },
         {
           "source_id": "FISRC-a638483ec7304070",
           "source_url": "https://news.pedaily.cn/202607/566169.shtml",
@@ -154,7 +246,7 @@
           "quote_hash": "cd2a756f5925f986d0e5a08c4a75bf5644810d1d8e4468c86a2f92d2cb53c7ce"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

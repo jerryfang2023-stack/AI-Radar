@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,35 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Arash Ferdosi 当前按“个人投资者”收录。最新融资披露记录日期为 2025-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Arash Ferdowsi 是Dropbox联合创始人，参与创办云端文件同步与协作服务Dropbox。2020年他辞去Dropbox公司高管职务及董事职务；2025年企业融资公告再次将他列为Onyx种子轮天使投资人。",
+      "coverage_note": "Dropbox的官方公司材料确认Ferdowsi为联合创始人；SEC披露记载其于2020年辞任Dropbox高管和董事职务，因此本档案不把Dropbox列为其现任高管职务。Onyx的1,000万美元为融资轮总额，未披露Ferdowsi个人出资额。公开来源未核实其学历。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Dropbox",
+          "title": "Co-founder; former officer and director",
+          "period": "Founded in 2007; resigned as officer and director effective March 19, 2020",
+          "description": "参与创建Dropbox；公司SEC披露记载其于2020年退出高管和董事职务。",
+          "source_id": "dropbox_arash_company_history"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Ferdowsi与Drew Houston于2007年共同创办Dropbox。Dropbox SEC披露记载他曾担任公司高管和董事，至2020年辞任；此后公开融资公告将他列为独立的天使投资人。",
       "track_record": [
         {
-          "description": "融资来源记录：Onyx · 种子轮 · 2025-03-12 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Onyx的2025年种子融资公告将Arash Ferdowsi列为天使投资人。1,000万美元是该轮总融资额，未披露其个人投资额。",
           "source_id": "FISRC-03b9d51b95b8c6ce"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "dropbox_arash_company_history",
+          "source_url": "https://aem.dropbox.com/cms/content/dam/dropbox/www/en-us/about/company-info/DBX_FactSheet.pdf",
+          "source_title": "Dropbox company fact sheet｜Dropbox",
+          "source_content_hash": "b9ea04a6dd4d39b9fa102d4de0daba0a632a5741846c45d61aaa188b75905f86",
+          "quote": "June 2007: Drew Houston and Arash Ferdowsi co-founded Dropbox.",
+          "quote_hash": "0780e06d55bf99cefae99280d1deed2666027ae859ffdf8dc2796046cd1b56fe"
+        },
         {
           "source_id": "FISRC-03b9d51b95b8c6ce",
           "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
@@ -161,7 +175,13 @@
           "quote_hash": "d92d0f1f4d4988b590187f7231d7873c874c8d4c4e0f9409ad5b41d70d585c88"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

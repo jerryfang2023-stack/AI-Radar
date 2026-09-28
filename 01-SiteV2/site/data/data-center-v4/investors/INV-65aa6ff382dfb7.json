@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,18 +131,7 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "REMUS Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -151,9 +140,86 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Krishna K. Gupta ( REMUS Capital )",
           "quote_hash": "737769c5043514e34ea37fbabf08d2d5ae7ddfcff97bc03985b70cf500e1c6e2"
+        },
+        {
+          "source_id": "remus_sec_proxy_2026",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1427570/000121390026032407/ea0282811-pre14a_vyome.htm",
+          "source_title": "Vyome Holdings — Preliminary Proxy Statement (2026)",
+          "source_content_hash": "1b463bbc85d8572e0607c9cc70a1edd0bac25f9f917e5ea0829de89dcee30512",
+          "quote": "He is the founder and CEO of REMUS Capital, a technology-focused venture capital firm he initially founded in 2008.",
+          "quote_hash": "f33a24edfd20497788c003a9469dda9b7b6de043880ebec0268bf4a849ed417a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "一份 2026 年 SEC proxy 文件将 Krishna K. Gupta 描述为 REMUS Capital 的 founder and CEO，该公司是一家成立于 2008 年、专注于科技的创业投资公司。该文件还列出上市公司和私营公司董事会关联；未报告基金回报，也未将每家公司关联分配给特定的 Remus 基金。",
+      "coverage_note": "机构成立年份、类型与 Krishna K. Gupta 的职务依据 SEC 申报。REMUS Capital 官网某页面当前混入与机构无关的博彩 SEO 文本，本档案不引用该页面或其联系方式；所列公司关联按 SEC 文件表述，不视为该基金完整投资组合或业绩。Avoca 融资来源将 Krishna K. Gupta 与 REMUS Capital 放在投资人/支持者语境中，但未披露基金级别的单笔金额。",
+      "facts": [
+        {
+          "field": "firm_background",
+          "label": "机构背景",
+          "value": "SEC 文件将 REMUS Capital 描述为专注科技的风险投资机构。",
+          "source_id": "remus_sec_proxy_2026"
+        },
+        {
+          "field": "founding_year",
+          "label": "成立年份",
+          "value": "SEC 文件称 Krishna K. Gupta 于 2008 年创立该机构。",
+          "source_id": "remus_sec_proxy_2026"
+        },
+        {
+          "field": "public_company_associations",
+          "label": "公开公司关联",
+          "value": "SEC 文件列出 Krishna K. Gupta 与 Ceres AI、Spotta、ZeroCater、Presto 等公司的董事或创始人关联；文件未将每项关联逐一归属为 REMUS Capital 基金投资。",
+          "source_id": "remus_sec_proxy_2026"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founder and CEO",
+          "organization": "REMUS Capital",
+          "source_id": "remus_sec_proxy_2026"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "milestones": [
+        {
+          "date": "2008",
+          "description": "SEC 文件称 Krishna K. Gupta 于 2008 年创立 REMUS Capital。",
+          "source_id": "remus_sec_proxy_2026"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "SEC 文件记录 Krishna K. Gupta 与多家科技公司的公开治理或创业关联；这些关联不构成基金回报、完整组合或单笔出资额证明。",
+          "source_id": "remus_sec_proxy_2026"
+        },
+        {
+          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "一份 2026 年 SEC proxy 文件将 Krishna K. Gupta 描述为 REMUS Capital 的 founder and CEO，该公司是一家成立于 2008 年、专注于科技的创业投资公司。该文件还列出上市公司和私营公司董事会关联；未报告基金回报，也未将每家公司关联分配给特定的 Remus 基金。",
+          "source_hash": "efa491a1fc7abed919308601e05c64e221e52281d4f9ed259679f7bd9fb0e5e1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "SEC 文件称 Krishna K. Gupta 于 2008 年创立 REMUS Capital。",
+          "source_hash": "56f0c751ff188252a4a4dde8ffc480c952518f870373119b9f6e8d0bfcd0623d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

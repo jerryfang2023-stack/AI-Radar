@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,18 +139,95 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "华美国际投资集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公司背景、网站和电话来自投资界/清科私募通机构页面，联系方式尚未通过集团官方渠道复核。2024年上市公司定向发行文件反映当时的注册信息；地瓜机器人C轮的4亿美元是整轮金额，不是华美国际单笔出资。集团教育及地产等业务不能直接视作股权投资业绩。",
+      "summary": "华美国际投资集团有限公司是一家总部位于广州的综合投资集团，公开机构资料将其业务概括为教育、金融证券和股权投资，并涉及商业地产。上市公司披露文件显示，集团名下设有证券私募投资基金并参与定向发行。融资报道另将华美国际列为地瓜机器人2026年C轮参投方；公开来源未披露其具体出资额。",
+      "facts": [
         {
-          "description": "融资来源记录：地瓜机器人 · C轮 · 2026-09-17 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-517ef1b31eac6dd3"
+          "field": "established",
+          "label": "成立时间",
+          "value": "投资界/清科机构资料列示为2000年。",
+          "source_id": "huamei_pedaily"
+        },
+        {
+          "field": "business",
+          "label": "公开业务板块",
+          "value": [
+            "教育",
+            "金融证券",
+            "股权投资",
+            "商业地产"
+          ],
+          "source_id": "huamei_pedaily"
+        },
+        {
+          "field": "subsidiaries",
+          "label": "公开列示的关联单位",
+          "value": [
+            "广州华美英语实验学校",
+            "天津英华国际学校",
+            "广东华美雅思教育服务有限公司",
+            "广州香雪城",
+            "内蒙古华美国际汽配城"
+          ],
+          "source_id": "huamei_pedaily_affiliates"
+        },
+        {
+          "field": "registered_details",
+          "label": "上市公司披露的公司信息（2024年文件）",
+          "value": "统一社会信用代码 91440101719286783K；法定代表人祝丽娜；注册资本人民币1.38亿元；经营范围包括企业自有资金投资、资产管理和投资管理服务。该组数据是2024年发行文件所载信息。",
+          "source_id": "huamei_cninfo"
+        },
+        {
+          "field": "fund_activity",
+          "label": "证券投资基金活动",
+          "value": "上市公司定向发行文件列出华美国际投资集团关联的华美对冲策略证券私募投资基金作为发行对象；这是投资活动记录，不代表收益。",
+          "source_id": "huamei_cninfo_funds"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "投资界/清科机构页面列示集团创立于2000年。",
+          "source_id": "huamei_pedaily"
+        },
+        {
+          "date": "2024-06-14",
+          "description": "上市公司定向发行文件列出与集团关联的华美对冲策略证券私募投资基金作为发行对象。",
+          "source_id": "huamei_cninfo_funds"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资披露记录：华美国际投资集团被列为地瓜机器人2026年C轮参投方；融资报道披露整轮规模为4亿美元，未披露华美国际的单笔金额。",
+          "source_id": "FISRC-517ef1b31eac6dd3"
+        },
+        {
+          "description": "上市公司定向发行文件记录了与华美国际投资集团关联的私募证券基金参与配售。这是公开投资活动记录，不代表基金收益或完整投资组合。",
+          "source_id": "huamei_cninfo_funds"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资界机构页面列示的网站，当前可用性未复核",
+          "value": "华美国际投资集团",
+          "url": "http://www.huameigroup.com.cn",
+          "source_id": "huamei_pedaily_website"
+        },
+        {
+          "kind": "phone",
+          "label": "投资界机构页面公开电话，尚未通过集团官方渠道复核",
+          "value": "+86 20 8721 0388",
+          "source_id": "huamei_pedaily_contact"
+        },
+        {
+          "kind": "address",
+          "label": "2024年上市公司发行文件所载注册地址（需核验是否仍为现址）",
+          "value": "广州市黄埔区荔红二路9号1栋3012室",
+          "source_id": "huamei_cninfo"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
@@ -159,9 +236,57 @@
           "source_content_hash": "ffc4d665dce6209d",
           "quote": "凯辉基金、华美国际投资集团、广发信德、超越摩尔、启航投资芯创二期基金等机构联合跟投",
           "quote_hash": "7bdc9a76799f80a936bb33aab97e75cdc6b2fb6eefbdb8fa5fd4e6dd135c0809"
+        },
+        {
+          "source_id": "huamei_pedaily",
+          "source_url": "https://zdb.pedaily.cn/company/show12711/",
+          "source_title": "华美国际投资集团有限公司 · 投资界/清科私募通",
+          "source_content_hash": "bd30df7a1033b0a1",
+          "quote": "华美国际投资集团有限公司创立于2000年，发展至今已成为一家以教育、金融证券、股权投资为主，商业地产为辅的知名国际投资集团，主营业务分为华美教育和华美投资两大板块。",
+          "quote_hash": "3d18d2a77f0e3238e87a00dfa10ccef416f518c3581d9b04927e8bcfef1fb7bf"
+        },
+        {
+          "source_id": "huamei_cninfo",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-06-14/1220347629.PDF",
+          "source_title": "上市公司向特定对象发行股票发行情况报告书 · 巨潮资讯网",
+          "source_content_hash": "73c1ab0f4288b7b043c37db6ddc8669c53ca389638ff20aa8da34d75358e3879",
+          "quote": "公司名称 华美国际投资集团有限公司（华美对冲策略证券私募投资基金） 企业性质 其他有限责任公司 统一社会信用代码 91440101719286783K 法定代表人 祝丽娜 住所 广州市黄埔区荔红二路 9 号 1 栋 3012 室 注册资本 13,800.00 万元人民币 经营范围 企业自有资金投资;资产管理（不含许可审批项目）;投资管理服务",
+          "quote_hash": "8242bd5c15435d92bed3087d7ea86cb0f8253550f0a5ee9daec847bdb3809f3b"
+        },
+        {
+          "source_id": "huamei_pedaily_affiliates",
+          "source_url": "https://zdb.pedaily.cn/company/show12711/",
+          "source_title": "华美国际投资集团关联单位 · 投资界/清科私募通",
+          "source_content_hash": "bd30df7a1033b0a1",
+          "quote": "旗下已拥有广州华美英语实验学校（1993年6月创办，为中国创办早的私立学校）、天津英华国际学校、广东华美雅思教育服务有限公司、广州香雪城、内蒙古华美国际汽配城等十余家下属单位。",
+          "quote_hash": "f0c4ac7589885ba12afc61282e91721105e8792411867d71f970466e33ea4650"
+        },
+        {
+          "source_id": "huamei_pedaily_contact",
+          "source_url": "https://zdb.pedaily.cn/company/show12711/",
+          "source_title": "华美国际投资集团联系方式 · 投资界/清科私募通",
+          "source_content_hash": "bd30df7a1033b0a1",
+          "quote": "电 话：020-87210388",
+          "quote_hash": "6b8f3ab966087406e63d517718ab40035854376390002a327a28eef53ba0a9c7"
+        },
+        {
+          "source_id": "huamei_pedaily_website",
+          "source_url": "https://zdb.pedaily.cn/company/show12711/",
+          "source_title": "华美国际投资集团官网条目 · 投资界/清科私募通",
+          "source_content_hash": "bd30df7a1033b0a1",
+          "quote": "官方网站：www.huameigroup.com.cn",
+          "quote_hash": "725def771cd3635b6b656091c0976badb9a132a3623aed24a16a2fcb8617816a"
+        },
+        {
+          "source_id": "huamei_cninfo_funds",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-06-14/1220347629.PDF",
+          "source_title": "华美关联私募证券基金配售记录 · 巨潮资讯网",
+          "source_content_hash": "73c1ab0f4288b7b043c37db6ddc8669c53ca389638ff20aa8da34d75358e3879",
+          "quote": "华美国际投资集团有限公司（华美对冲策略证券私募投资基金）",
+          "quote_hash": "cf3cddf1a36adf70709f57cb4224a1552e8a89c8e0fa9080fc4c2969265e92ec"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

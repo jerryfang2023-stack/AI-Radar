@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BAM Corner Point 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c15ac15bf3d0b1a"
-        }
-      ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
       "sources": [
+        {
+          "source_id": "higgsfield_series_b_2026",
+          "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+          "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+          "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+          "quote": "Existing investors also participated in the Series B, including Accel, Menlo Ventures, AI Capital Partners (Alpha Intelligence Capital's US-based fund), GFT Ventures, Capra Ventures, BAM Corner Point and BroadLight Capital.",
+          "quote_hash": "f291fb1f0a98126831eca8a8e3df5bbfcbac05ebe94ec8dbcf69be8845829ba7"
+        },
+        {
+          "source_id": "bam_home",
+          "source_url": "https://www.bamcornerpoint.com/",
+          "source_title": "BAM Corner Point — firm, team and portfolio",
+          "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+          "quote": "BAM Corner Point is an early growth, enterprise technology focused venture capital firm built in partnership with Balyasny Asset Management. Our thesis-driven and growth focused mindset is underpinned by data science and AI paired with public equities expertise.",
+          "quote_hash": "9cc9e71006ed7368909b57ba463449bcf2bab7498eb1a95e513a7bb157e3b0f5"
+        },
+        {
+          "source_id": "bam_team",
+          "source_url": "https://www.bamcornerpoint.com/",
+          "source_title": "BAM Corner Point — firm, team and portfolio",
+          "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+          "quote": "Corner Point is co-led by Rashmi Gopinath and Kristin Baker Spohn, who have a combined 45 years of experience building and investing in enterprise and health technology.",
+          "quote_hash": "18c231a97f8c4578305ec06e37ef2163cce6571ee7b06f112c61bf489e365c39"
+        },
+        {
+          "source_id": "bam_portfolio",
+          "source_url": "https://www.bamcornerpoint.com/",
+          "source_title": "BAM Corner Point — firm, team and portfolio",
+          "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+          "quote": "Innovaccer Patlytics Poolside Videa AI Higgsfield",
+          "quote_hash": "5ca73f34d7f8344ab53322c90ada22403e163f8a72a8fb4471bad0b37dd82738"
+        },
+        {
+          "source_id": "bam_contact",
+          "source_url": "https://www.bamcornerpoint.com/",
+          "source_title": "BAM Corner Point — firm, team and portfolio",
+          "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+          "quote": "contact@bamcornerpoint.com",
+          "quote_hash": "c899dbc486644354516941b0d8758b08e18716d1f6957438628ae16aae255810"
+        },
         {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
           "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -159,9 +188,144 @@
           "source_content_hash": "66d04514886f3d3e",
           "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
           "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+        },
+        {
+          "source_id": "bam_rashmi_bio",
+          "source_url": "https://www.bamcornerpoint.com/",
+          "source_title": "BAM Corner Point — firm, team and portfolio",
+          "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+          "quote": "Rashmi Gopinath was most recently General Partner and Head of Enterprise Software at B Capital",
+          "quote_hash": "8443aa38ffdff25e735829bfd8dfee95e76242e0c25c8369d321bff97603905e"
+        },
+        {
+          "source_id": "bam_kristin_bio",
+          "source_url": "https://www.bamcornerpoint.com/",
+          "source_title": "BAM Corner Point — firm, team and portfolio",
+          "source_content_hash": "57852c1f4158c0972936843bd17ce1f13ec905dc37a65024b1e02cc92a1963b6",
+          "quote": "Kristin was previously General Partner at Charles River Ventures and Partner at Social Capital",
+          "quote_hash": "057ba87b6a8fb8293f734fc3eb9741dc7e009613720fb689aeae55a088ff9fa2"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "BAM Corner Point 是与 Balyasny Asset Management 合作成立的早期成长阶段企业科技投资机构，公开策略结合数据科学、人工智能与公开市场投资经验，重点覆盖 AI、数据基础设施、医疗科技、应用软件、安全、DevOps 与云基础设施。官网列示 Higgsfield 等组合公司。",
+      "coverage_note": "机构策略、团队履历、组合和联系邮箱均来自 BAM Corner Point 官网自述。官网称两位共同创办人合计有 45 年企业及医疗科技投资与经营经验，该数字为机构自述，不是投资回报指标。Higgsfield 的 4 亿美元为整轮融资规模，不代表 BAM Corner Point 单笔金额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期成长阶段，主要为 B、C 轮。",
+          "source_id": "bam_home"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资方向",
+          "value": "企业科技，覆盖 AI、数据基础设施、医疗科技、应用软件、网络安全、DevOps 与云基础设施。",
+          "source_id": "bam_home"
+        },
+        {
+          "field": "firm_background",
+          "label": "机构背景",
+          "value": "与 Balyasny Asset Management 合作建立，投资方法结合数据科学、AI 与公开市场经验。",
+          "source_id": "bam_home"
+        },
+        {
+          "field": "selected_portfolio",
+          "label": "官网列示组合案例",
+          "value": "Higgsfield、Poolside、Innovaccer、Patlytics 和 Videa AI；不代表完整投资组合。",
+          "source_id": "bam_portfolio"
+        },
+        {
+          "field": "leadership_background_rashmi",
+          "label": "联合创始人背景：Rashmi Gopinath",
+          "value": "Previously General Partner and Head of Enterprise Software at B Capital; Managing Director and founding investor at Microsoft’s M12; and Investment Director at Intel Capital, according to the firm biography.",
+          "source_id": "bam_rashmi_bio"
+        },
+        {
+          "field": "leadership_background_kristin",
+          "label": "联合创始人背景：Kristin Baker Spohn",
+          "value": "Previously a General Partner at Charles River Ventures and a Partner at Social Capital; she also held operating roles at Collective Health and Castlight Health, according to the firm biography.",
+          "source_id": "bam_kristin_bio"
+        },
+        {
+          "field": "leadership_experience",
+          "label": "合计经验",
+          "value": "The firm says its two co-leads have 45 years of combined experience building and investing in enterprise and health technology.",
+          "source_id": "bam_team"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Co-lead",
+          "organization": "BAM Corner Point",
+          "source_id": "bam_team"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_id": "FISRC-7c15ac15bf3d0b1a"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "BAM Corner Point 官网",
+          "value": "BAM Corner Point",
+          "url": "https://www.bamcornerpoint.com/",
+          "source_id": "bam_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开一般联系邮箱",
+          "value": "contact@bamcornerpoint.com",
+          "source_id": "bam_contact"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[4].label": {
+          "text": "联合创始人背景：Rashmi Gopinath",
+          "source_hash": "7056944662ad184fdd8a2ea97375ed9d791dd13349bf823b524265d0934cec58",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.facts[5].label": {
+          "text": "联合创始人背景：Kristin Baker Spohn",
+          "source_hash": "501e5c0021db4bd9ffbb594eaf45744a46b83fd0940297092eac2374b00440d5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "合计经验",
+          "source_hash": "4d7e7fdc01517bed72c98f74b8c405fa1d5f5deb73f1edbad039afb416ca1809",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.187Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "BAM Corner Point 官网",
+          "source_hash": "77cf1358ae15e88d1f49da8288755784e7aa7b132cf1d978b2fee6a60a3fa22b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.187Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,18 +131,7 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Audacious Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -151,9 +140,86 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Nakul Mandan ( Audacious Ventures )",
           "quote_hash": "f6c1a9b70f1cf1a94a2b90e3b669e5099467dd2f337479640ccf3cc7d062fb02"
+        },
+        {
+          "source_id": "audacious_home",
+          "source_url": "https://www.audacious.co/",
+          "source_title": "Audacious Ventures — investment approach",
+          "source_content_hash": "579f95afe69d9eb373b316497ad0c1930fb1fe317b3ee73bdaa9c06f8a6e8db5",
+          "quote": "The most important decisions we make are the founders we choose to back.",
+          "quote_hash": "76d48e07c1742f66c664c63404e622383cf1116a518b9946858ce3aac737da03"
+        },
+        {
+          "source_id": "audacious_team",
+          "source_url": "https://www.audacious.co/team",
+          "source_title": "Audacious Ventures — team",
+          "source_content_hash": "d5cea8dac5564de4dff138df4c70770aa1364adcfadc4408526934e822914c89",
+          "quote": "Nakul Mandan Founder & Partner",
+          "quote_hash": "7556b20666d0aafe9199079f3bce9cde78de5b65be455af238d49c5a0b818598"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Audacious Ventures 将其工作描述为支持追求非凡雄心成果的创始人，并帮助他们组建团队、扩展 go-to-market 以及消除资本限制。其团队页面将 Nakul Mandan 列为 Founder & Partner。",
+      "coverage_note": "策略与团队职务均来自机构官网自述。Avoca 相关融资来源将 Nakul Mandan 与 Audacious Ventures 一同列入更广泛的投资人/支持者名单，但未披露该基金是否直接出资、具体轮次或金额；本档案不将其表述为已核实的单笔交易。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "官网强调优秀团队与大市场的结合，并将创始人选择视为核心投资决策。",
+          "source_id": "audacious_home"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网列出的支持方向包括招募团队、把创始人主导销售转为可复制的增长流程，以及减少资本约束。",
+          "source_id": "audacious_home"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Founder & Partner",
+          "organization": "Audacious Ventures",
+          "source_id": "audacious_team"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Capital 49 合伙人的公开融资说明将 Nakul Mandan 与 Audacious Ventures 列入 Avoca 更广泛的投资人/支持者名单；未披露该机构的单笔金额或是否通过基金出资。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Audacious Ventures 官方网站与创始人入口",
+          "value": "Audacious Ventures",
+          "url": "https://www.audacious.co/",
+          "source_id": "audacious_home"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Audacious Ventures 将其工作描述为支持追求非凡雄心成果的创始人，并帮助他们组建团队、扩展 go-to-market 以及消除资本限制。其团队页面将 Nakul Mandan 列为 Founder & Partner。",
+          "source_hash": "6f02fc12b8615b208ac71ab353426d66cbb2aa3583d9e395533bbf4927930746",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Audacious Ventures 官方网站与创始人入口",
+          "source_hash": "b306cb65213d61dff51773326c7518a018dcc31e1c033032ee768a727ceedb92",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

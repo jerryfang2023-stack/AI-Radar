@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,87 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AMD 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "AMD（Advanced Micro Devices）是高性能与自适应计算公司，官网称其产品与服务覆盖数据中心、嵌入式、游戏和 PC 等市场，创立于 1969 年。本库一条融资披露的原文将参投方明确写作 AMD 的风险投资部门；该部门 AMD Ventures 已另立档案。此处保留母公司主体与其投资部门的关系，不把部门组合、统计或支票金额直接归给 AMD 母公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "组织关系",
+          "value": "Advanced Micro Devices, Inc.（AMD）；其企业风险投资部门为 AMD Ventures",
+          "source_id": "amd_venture_about"
+        },
+        {
+          "field": "founded",
+          "label": "创立时间",
+          "value": "1969 年",
+          "source_id": "amd_parent_history"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务领域",
+          "value": "数据中心、嵌入式、游戏和 PC 计算市场",
+          "source_id": "amd_parent_markets"
+        },
+        {
+          "field": "investment_arm",
+          "label": "投资部门",
+          "value": "AMD Ventures，AMD 的企业风险投资部门；AI 投资重点、阶段和组合另见 AMD Ventures 档案",
+          "source_id": "amd_venture_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1969",
+          "description": "AMD 官网公司介绍称公司创立于 1969 年。",
+          "source_id": "amd_parent_history"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Recursive Superintelligence Inc. · 轮次未披露 · 2026-05-13 · 本轮参投 · $650 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露：2026-05-13 有关 Recursive Superintelligence 的报道写明 Nvidia 与 Advanced Micro Devices 旗下风险投资部门参投。该轮总额为 6.5 亿美元；来源没有披露 AMD Ventures 的支票金额，也不能据此确认由 AMD 母公司直接出资。",
           "source_id": "FISRC-61b930049ee4e86e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "AMD 官网",
+          "value": "About AMD",
+          "url": "https://www.amd.com/en/corporate.html",
+          "source_id": "amd_parent_about"
+        },
+        {
+          "kind": "application",
+          "label": "AMD Ventures 联系表单",
+          "value": "联系 AMD Ventures 投资团队；此为 AMD 投资部门渠道",
+          "url": "https://www.amd.com/en/ventures/contact-us.html",
+          "source_id": "amd_venture_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "amd_parent_about",
+          "source_url": "https://www.amd.com/en/corporate.html",
+          "source_title": "About AMD",
+          "source_content_hash": "7a40abb9f65837cdb7e9d99ff1d691430a4650b1c52c6cad14ae687bce55a32f",
+          "quote": "AMD is the high performance and adaptive computing leader, powering the products and services that help solve the world’s most important challenges.",
+          "quote_hash": "8c941fed1e3ec376b52557bf7dd5051d7f4b8611ca2ce8093e6f065ca7673037"
+        },
+        {
+          "source_id": "amd_venture_about",
+          "source_url": "https://www.amd.com/en/ventures/about.html",
+          "source_title": "About AMD Ventures",
+          "source_content_hash": "7111e9e9e60f44cbd3181b77f4cc32946ca37bc9bef045613cf6edf4e3223043",
+          "quote": "The corporate venture capital arm of AMD, the leader in high performance and adaptive computing systems",
+          "quote_hash": "7e26cd3811e4e06bf020e4eca4dd288e8e75a9be826f1601fa416d150063fc9d"
+        },
+        {
+          "source_id": "amd_venture_contact",
+          "source_url": "https://www.amd.com/en/ventures/contact-us.html",
+          "source_title": "Contact AMD Ventures",
+          "source_content_hash": "398b1a0f1981b8f704b5a0d314e671bef9c66c8901e7e73a5ed480939569feda",
+          "quote": "Please complete the fields and a member of AMD Ventures will reply as soon as possible.",
+          "quote_hash": "8cb41339447f91703d620436fecd70da41a2207914e81e6e930cff24a8f115eb"
+        },
         {
           "source_id": "FISRC-61b930049ee4e86e",
           "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
@@ -159,9 +225,57 @@
           "source_content_hash": "926edc21ca4613eb",
           "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
           "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
+        },
+        {
+          "source_id": "amd_parent_history",
+          "source_url": "https://www.amd.com/en/corporate.html",
+          "source_title": "About AMD",
+          "source_content_hash": "7a40abb9f65837cdb7e9d99ff1d691430a4650b1c52c6cad14ae687bce55a32f",
+          "quote": "Founded in 1969 as a Silicon Valley start-up.",
+          "quote_hash": "8d989b21a15115f58163057eadb833370f2b19f365468fccf879ef5d9126c25d"
+        },
+        {
+          "source_id": "amd_parent_markets",
+          "source_url": "https://www.amd.com/en/corporate.html",
+          "source_title": "About AMD",
+          "source_content_hash": "7a40abb9f65837cdb7e9d99ff1d691430a4650b1c52c6cad14ae687bce55a32f",
+          "quote": "Our technologies advance the future of the data center, embedded, gaming and PC markets.",
+          "quote_hash": "25d82d77affa4ecd3d48ba2ebc46274b5fb44f2af899d0af9997be0becf5497e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "公司背景来自 AMD 官网；融资活动原文明确指向 AMD 的风险投资部门，投资部门与母公司分别建档。此项披露确认参投主体范围，不披露 AMD Ventures 的单笔出资额。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "融资披露：2026-05-13 有关 Recursive Superintelligence 的报道写明 Nvidia 与 Advanced Micro Devices 旗下风险投资部门参投。该轮总额为 6.5 亿美元；来源没有披露 AMD Ventures 的支票金额，也不能据此确认由 AMD 母公司直接出资。",
+          "source_hash": "df2b6d6e662cbc731b4e71743bdb80f711a0a95fb794d985107e2e4a317e9a6f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "AMD 官网",
+          "source_hash": "92359dd63d7c2540b189bef9282a751b98dc4c3193691ec1f8c75b956f9b0219",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "AMD Ventures 联系表单",
+          "source_hash": "67b71a67e0199649035588018d0ba65f51088080c0c8f44ba0e2830e9c150de9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:27.500Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

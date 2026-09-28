@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,12 +138,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海半导体装备材料产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "上海半导体装备材料产业投资基金面向全国并开展境内外投资，聚焦半导体装备、材料及核心零部件。基金网页称管理公司由浦科投资牵头组建；相关管理公司介绍其专注半导体全产业链投资。该基金不同公开页面披露的规模口径不一致，因此不采用单一规模数字。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "半导体装备",
+            "材料",
+            "核心零部件"
+          ],
+          "source_id": "pdsti_fund_profile"
+        },
+        {
+          "field": "fund_manager",
+          "label": "管理关系",
+          "value": "基金网页称管理公司由浦科投资牵头组建；上海半导体装备材料产业投资管理有限公司介绍其管理该基金及项目制基金。",
+          "source_id": "pdsti_fund_profile"
+        },
+        {
+          "field": "manager_portfolio",
+          "label": "管理公司披露的投资覆盖",
+          "value": "管理公司披露管理规模超过80亿元、累计投资半导体项目50余个，覆盖装备、材料、零部件、EDA、设计、制造及封测；该口径属于管理公司，不等于本基金单独业绩。",
+          "source_id": "pdsti_manager_profile"
+        },
+        {
+          "field": "reported_fund_scale",
+          "label": "公开规模口径",
+          "value": "基金介绍页披露总规模200亿元、首期50亿元；浦科投资公司主页曾披露总规模100亿元、首期50亿元。公开页面口径不一致，暂不采纳单一规模。",
+          "source_id": "pdsti_fund_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +176,69 @@
           "source_id": "FISRC-ec1ffe5861471f6a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金官方网站",
+          "value": "上海半导体装备材料产业投资基金",
+          "url": "https://www.pdsti.com/Pc/ssemc/index.html",
+          "source_id": "pdsti_fund_profile"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公布的联系号码",
+          "value": "+86-21 5027 6328",
+          "url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+          "source_id": "pdsti_contact"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书联系邮箱",
+          "value": "bp@pdsti.com",
+          "url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+          "source_id": "pdsti_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网公布的管理公司办公地址",
+          "value": "上海浦东新区杨高南路729号世纪金融广场1号楼46楼",
+          "url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+          "source_id": "pdsti_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "pdsti_fund_profile",
+          "source_url": "https://www.pdsti.com/Pc/ssemc/index.html",
+          "source_title": "上海半导体装备材料产业投资基金｜基金介绍",
+          "source_content_hash": "d2d76591bcfccd76a5df36febfd6c5a46c523e95c4150e005e79c3b4657c34f0",
+          "quote": "聚焦半导体装备材料及核心零部件等领域，开展境内外投资与资源整合。",
+          "quote_hash": "d2d76591bcfccd76a5df36febfd6c5a46c523e95c4150e005e79c3b4657c34f0"
+        },
+        {
+          "source_id": "pdsti_manager_profile",
+          "source_url": "https://www.pdsti.com/ssemc/",
+          "source_title": "上海半导体装备材料产业投资管理有限公司｜关于我们",
+          "source_content_hash": "c440151b9dbb13bb889b4c67fa44387eff0258d987fab9b7304b96a007c89ee3",
+          "quote": "管理规模超80亿元，累计投资半导体项目50余个，覆盖装备、材料、零部件、EDA、设计、制造、封测等全产业链。",
+          "quote_hash": "c440151b9dbb13bb889b4c67fa44387eff0258d987fab9b7304b96a007c89ee3"
+        },
+        {
+          "source_id": "pdsti_parent_scale",
+          "source_url": "https://www.pdsti.com/Pc/index.html",
+          "source_title": "上海浦东科技投资有限公司｜主页",
+          "source_content_hash": "3a70dcad2e063cbc9033cd85c2e1b99f98c598fbb85fa86a4c473895fde4a5ec",
+          "quote": "上海半导体装备材料产业投资基金总规模100亿元，首期规模50亿元。",
+          "quote_hash": "3a70dcad2e063cbc9033cd85c2e1b99f98c598fbb85fa86a4c473895fde4a5ec"
+        },
+        {
+          "source_id": "pdsti_contact",
+          "source_url": "https://www.pdsti.com/Pc/ssemc/contactUs.html",
+          "source_title": "上海半导体装备材料产业投资基金｜联系我们",
+          "source_content_hash": "181c934913ff532eba1e837346705b63b48a6499989ab7a58ffbe1d89bb80c48",
+          "quote": "公司地址 上海浦东新区杨高南路729号世纪金融广场1号楼46楼；联系方式 电话：+86-21 5027 6328；商业计划书 bp@pdsti.com",
+          "quote_hash": "181c934913ff532eba1e837346705b63b48a6499989ab7a58ffbe1d89bb80c48"
+        },
         {
           "source_id": "FISRC-ec1ffe5861471f6a",
           "source_url": "https://news.pedaily.cn/202609/569399.shtml",
@@ -162,7 +248,11 @@
           "quote_hash": "bafda0d30f65da43aa0231d42fc2c6ac648ff251e649dd62868ddd721f58027b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基金官网介绍页披露总规模200亿元、首期50亿元，浦科投资公司主页曾披露总规模100亿元、首期50亿元。两种公开口径未能核实是否对应同一基金阶段；管理公司披露的管理规模与50余个投资项目也不是本基金单独的已投规模或回报。联系方式为官网公布的管理/商业计划联系渠道。"
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -235,27 +235,74 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "百度战投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "“百度战投”是公开融资资料中的投资方名称。2018 年媒体报道和 2019 年 36 氪白皮书将其描述为百度内部战略投资部门，并与百度风投、百度资本区分；百度官网披露的交易通常归于百度公司，并未逐笔确认内部团队。未发现本次可验证的该部门现行组织架构、负责人、独立登记主体或专属联系方式。白皮书中的百度投资总体项目数和金额合并多个投资单元，不用于描述百度战投单独投资额或回报。",
+      "summary": "“百度战投”是融资记录采用的投资方名称。2018 年报道和 2019 年行业白皮书将百度战略投资部描述为百度内部战略投资职能，并与百度风投和百度资本区分；现有公开资料未证明它是独立注册的基金管理人，也未核验当前团队架构。百度官方资料披露了公司层面的战略投资和合作案例，但未把这些交易逐项归于某个内部投资部门。",
+      "facts": [
         {
-          "description": "融资来源记录：物自体科技 · 战略融资 · 2026-09-03 · Pre-A轮投资方 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "public_name",
+          "label": "融资披露中的投资方名称",
+          "value": "百度战投；该名称沿用公开融资披露，不据此认定独立法律主体。",
           "source_id": "FISRC-4c6320de89936c7b"
         },
         {
-          "description": "融资来源记录：智平方 · B轮 · 2026-04-11 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16a5b9f7da3616f3"
+          "field": "organization_boundary",
+          "label": "公开资料描述的组织属性",
+          "value": "36 氪白皮书列出百度风投、百度战略投资部和百度资本，并将其作为不同投资单元讨论；界面新闻将百度投资并购部称为后来的百度战略投资部门。均为历史组织描述。",
+          "source_id": "baidu_unit_structure_36kr_2019"
         },
         {
-          "description": "融资来源记录：智平方 · B轮 · 2026-02-23 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b78c44b13620e61a"
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "百度公司（Baidu, Inc.）；官方投资者关系公告以百度公司名义披露战略投资。",
+          "source_id": "baidu_qunar_official_2011"
+        },
+        {
+          "field": "strategic_orientation",
+          "label": "历史投资定位",
+          "value": "2019 年行业白皮书称百度投资部门更看重支持百度发展的战略投资；这是对白皮书所述历史体系的概括，不代表当前组织政策。",
+          "source_id": "baidu_unit_orientation_2019"
         }
       ],
+      "milestones": [
+        {
+          "date": "2016–2017",
+          "description": "界面新闻对百度投资体系调整的报道将投资并购部描述为百度战略投资部门，并区分对内战略投资与对外的风投、资本基金。该时间线是媒体报道的历史截面。",
+          "source_id": "baidu_unit_history_2018"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Baidu Investor Relations 于 2011 年公告，公司承诺对去哪儿网进行 3.06 亿美元战略投资。公告以百度公司名义披露，没有将交易归属到特定内部部门。",
+          "source_id": "baidu_qunar_official_2011"
+        },
+        {
+          "description": "Baidu Investor Relations 于 2016 年公告百度、腾讯和京东各自同意购买易车新发行股份，金额各为 5,000 万美元；公告没有确认由百度战投团队执行。",
+          "source_id": "baidu_bitauto_official_2016"
+        },
+        {
+          "description": "百度智能云官方合作伙伴页面称宇信科技于 2020 年初获得来自百度的战略投资，双方随后在金融云、大数据、AI 和区块链等领域合作；页面未披露百度战投部门或单独投资金额。",
+          "source_id": "baidu_yusys_official_2020"
+        },
+        {
+          "description": "投资界 2026 年报道物自体科技（Noumena）后续融资时，回顾其此前数千万元 Pre-A 轮并将百度战投列为投资方；该报道没有披露百度的单笔出资，也未把百度战投列为后续轮出资方。",
+          "source_id": "FISRC-4c6320de89936c7b"
+        },
+        {
+          "description": "投资界 2026 年报道将百度战投列入智平方 B 轮投资方，但未披露百度单独出资金额；同一轮次涉及多家投资方。",
+          "source_id": "FISRC-b78c44b13620e61a"
+        },
+        {
+          "description": "RobotHub 的公司档案将百度战投列入智平方 B 轮，并列示该轮总额为人民币 10 亿元；此为轮次总额，不是百度战投的单笔金额。",
+          "source_id": "FISRC-16a5b9f7da3616f3"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "本档案覆盖融资来源所标注的“百度战投”名称，不将百度公司层面的战略投资都归属于该内部部门。",
       "contacts": [],
       "sources": [
         {
@@ -281,9 +328,57 @@
           "source_content_hash": "36eeadfe3f6c3f89",
           "quote": "投资方颇为豪华：中车资本、百度战投、沄柏资本、国泰海通、多家特斯拉生态链龙头企业及地方基金等。",
           "quote_hash": "b7bfc4b1670290ef7843f08b9b77bb137831c80b06e105818fc5e8434c25b2da"
+        },
+        {
+          "source_id": "baidu_unit_structure_36kr_2019",
+          "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202001061373526411_1.pdf",
+          "source_title": "2019 年中国互联网战投发展白皮书 · 36 氪创投研究院",
+          "source_content_hash": "9ab28767f8dcfff05951e088c0cfd42109b72de8ab092ffee43222dd017f57d7",
+          "quote": "百度投资包括百度风投、百度战略投资部、百度资本。",
+          "quote_hash": "499fd252a24de60b900457368a3da7efc6f044a68f20dd4cb5719782c6ba97fa"
+        },
+        {
+          "source_id": "baidu_unit_history_2018",
+          "source_url": "https://www.jiemian.com/article/1891483.html",
+          "source_title": "马东敏执掌百度战投的一年 · 界面新闻",
+          "source_content_hash": "8844169e07de3ee303f86d2a60e940cfc58c9883765c023abe5d4bf207964d16",
+          "quote": "投资并购部成为了百度的战略投资部门（下称：百度战投）。",
+          "quote_hash": "ea5ebb33bf5b6cd5e47625de36b0986fb6e52ca523327f0b93d523c617ed7017"
+        },
+        {
+          "source_id": "baidu_yusys_official_2020",
+          "source_url": "https://cloud.baidu.com/partner/introduction/yusys.html",
+          "source_title": "北京宇信科技集团股份有限公司 · 百度智能云合作伙伴介绍",
+          "source_content_hash": "2de1e0801756eb68a5a9f9f3212c5486b53c98e2271602e61b5126f0701c4f49",
+          "quote": "2020年初，宇信科技获得来自百度战略投资。",
+          "quote_hash": "c29344f05b965b3a92a0212dca50e33f8ab21c7f48c9138f2345e0c6d0470b35"
+        },
+        {
+          "source_id": "baidu_qunar_official_2011",
+          "source_url": "https://ir.baidu.com/static-files/00dff4e7-e967-4af4-8a3b-56ba1784e431",
+          "source_title": "Baidu Announces Agreement to Invest US$306 Million in Qunar · Baidu Investor Relations",
+          "source_content_hash": "38e0750f59ddd0bd5e489b5b2434970e60073220214c75c3e68ac480f096f0f9",
+          "quote": "Baidu has committed to make a US$306 million strategic investment in Qunar.",
+          "quote_hash": "7128d8ba32cbed09ebfc4f5a98aff8c44df4594d97bdfa3f4d33e1c1b04097b7"
+        },
+        {
+          "source_id": "baidu_bitauto_official_2016",
+          "source_url": "https://ir.baidu.com/static-files/65199a27-b9cc-41a3-94a1-128daaf4981d",
+          "source_title": "Baidu, Tencent and JD.com Announce Strategic Investment in Bitauto · Baidu Investor Relations",
+          "source_content_hash": "3cecb1bf8bb54ea2da65bea9151b9a1aea8b634de48f43e884d2d53bd91f311b",
+          "quote": "Baidu, Tencent and JD.com each to purchase US$50 million newly issued Bitauto shares.",
+          "quote_hash": "8a353dd27b0e0293ddd852d1c894564b35e8738e15c61c869665b9c1fa6524d8"
+        },
+        {
+          "source_id": "baidu_unit_orientation_2019",
+          "source_url": "https://pdf.dfcfw.com/pdf/H3_AP202001061373526411_1.pdf",
+          "source_title": "2019 年中国互联网战投发展白皮书 · 36 氪创投研究院（战略定位）",
+          "source_content_hash": "9ab28767f8dcfff05951e088c0cfd42109b72de8ab092ffee43222dd017f57d7",
+          "quote": "百度投资部门的投资则更看重战略投资，力求百度的发展。",
+          "quote_hash": "430cb0978af8ec03ce67eb11ff5a0ff6a33885c3b6a17d006de6d0c9a040ca5b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

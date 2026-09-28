@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,14 +139,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "鄂尔多斯集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "融资报道将本轮投资方称为“鄂尔多斯集团”，但未说明具体出资的基金、子公司或法律主体。地方政府企业名录对鄂尔多斯羊绒服装集团的介绍显示，该品牌业务源自1980年的羊绒衫厂，现覆盖羊绒服装及相关产业链；此处仅作为集团品牌背景，不将该经营实体的规模或成绩归属于本次投资主体。",
+      "coverage_note": "投资披露未列出具体投资主体。公开背景资料描述的是鄂尔多斯羊绒服装集团这一相关经营实体，不能据此确认融资投资方的法律名称、基金规模或集团整体业绩。",
+      "facts": [
+        {
+          "field": "identity_scope",
+          "label": "投资主体披露范围",
+          "value": "融资报道只写“鄂尔多斯集团”，未披露具体基金、子公司或法律主体。",
+          "source_id": "FISRC-320ae1ce12e8452e"
+        },
+        {
+          "field": "related_business",
+          "label": "相关经营主体背景",
+          "value": "鄂尔多斯高新区企业名录介绍鄂尔多斯羊绒服装集团源自1980年成立的伊克昭盟羊绒衫厂，拥有羊绒服装品牌及相关制造业务；该资料不是本次出资主体的独立身份确认。",
+          "source_id": "ordos_business_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1980",
+          "description": "地方政府企业名录记载鄂尔多斯羊绒服装集团的前身成立；这是相关经营主体的历史，不代表投资主体成立时间。",
+          "source_id": "ordos_business_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：贻如 · A轮 · 2026-07-06 · 本轮联合领投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露记录：2026-07-06，鄂尔多斯集团与和达金服共同领投贻如A轮融资，报道披露本轮融资超过人民币1亿元；具体投资主体和各方出资额未披露。",
           "source_id": "FISRC-320ae1ce12e8452e"
         }
       ],
@@ -159,9 +178,17 @@
           "source_content_hash": "7c21e03d610b0cdf",
           "quote": "本轮融资由 鄂尔多斯集团与和达金服共同领投，巢生资本跟投 ，易凯资本担任本轮融资的独 家财务顾问。",
           "quote_hash": "79fe080b4bf82fc77f014172cd78830f3ffa9b152a8e0f85ad048d4a3b1ae9f7"
+        },
+        {
+          "source_id": "ordos_business_profile",
+          "source_url": "https://gxq.ordos.gov.cn/zwgx/rsrc_121481/202607/t20260709_1777579.html",
+          "source_title": "鄂尔多斯高新区企业用工需求系列发布——鄂尔多斯羊绒服装集团",
+          "source_content_hash": "b3682de7d78e0c65ccc03d5594f598bdd5df9a152c3b9ad14eec9ce83eb9de0d",
+          "quote": "鄂尔多斯羊绒服装集团创立于 1980 年",
+          "quote_hash": "95aff1d3656bf6212bd79b38047a4b11023af38e0c5a6feaf8615ec118eeadaa"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

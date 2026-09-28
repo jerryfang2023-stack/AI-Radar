@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -153,16 +153,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Heartcore Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Heartcore Capital 是一家总部覆盖欧洲多地的早期风险投资机构，2007 年创立，投资从公司创立初期至 A 轮的欧洲创业团队。机构强调长期陪伴、后续融资与团队建设支持；官网披露的资产、退出与组合规模均为其自报口径。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2007",
+          "source_id": "heartcore_origin"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "从创立初期至 A 轮的欧洲早期企业。",
+          "source_id": "heartcore_strategy"
+        },
+        {
+          "field": "team_locations",
+          "label": "团队所在地",
+          "value": [
+            "哥本哈根",
+            "伦敦",
+            "巴黎",
+            "美国"
+          ],
+          "source_id": "heartcore_team"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露管理规模",
+          "value": "超过7亿欧元；机构自报，截至2026-09-28核验。",
+          "source_id": "heartcore_aum"
+        },
+        {
+          "field": "capital_returned_to_lps",
+          "label": "官网披露 LP 返还",
+          "value": "超过4亿欧元；机构自报，截至2026-09-28核验。",
+          "source_id": "heartcore_aum"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Davis · 预种子轮 · 2026-05-06 · 本轮领投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Heartcore 官网自报已投资 100 多家公司、当前有 65 家仍活跃，并称其所投公司创造超过 100 亿欧元企业价值；数据为机构披露口径。",
+          "source_id": "heartcore_track"
+        },
+        {
+          "description": "融资披露案例：Davis 于 2026-05-06 宣布 550 万美元 Pre-Seed，Heartcore Capital 与 Balderton 共同领投；不代表完整组合或基金回报。",
           "source_id": "FISRC-d5d5c858ca2bcd66"
         },
         {
@@ -170,8 +206,71 @@
           "source_id": "FISRC-6a88f57902f30c9d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Heartcore Capital",
+          "url": "https://www.heartcore.com/about",
+          "source_id": "heartcore_strategy"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "team@heartcore.com",
+          "url": "https://www.heartcore.com/about",
+          "source_id": "heartcore_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "heartcore_origin",
+          "source_url": "https://www.heartcore.com/about",
+          "source_title": "About us",
+          "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+          "quote": "Founded in 2007.",
+          "quote_hash": "acd1cef0789b81dc432f203eff339a99e503bb590d01d305c2219ba2dbea3a38"
+        },
+        {
+          "source_id": "heartcore_strategy",
+          "source_url": "https://www.heartcore.com/about",
+          "source_title": "About us",
+          "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+          "quote": "We are one of Europe’s longest-standing, pure early-stage investors.",
+          "quote_hash": "41278a2b9c5c42a652a98d1e50b5660c0279b310ce2ac788dc0352639efba4d8"
+        },
+        {
+          "source_id": "heartcore_team",
+          "source_url": "https://www.heartcore.com/team",
+          "source_title": "Team",
+          "source_content_hash": "e9437f4527babb8550dc8d1953385ecb6b74935ad29a87a83058e4ee7c0022e9",
+          "quote": "We are a remote-first team with partners in Copenhagen, London, Paris and the United States.",
+          "quote_hash": "0ea01aae69427e12113a12718b51b571efa4b2ee28453a2817113d577d8ca953"
+        },
+        {
+          "source_id": "heartcore_aum",
+          "source_url": "https://www.heartcore.com/about",
+          "source_title": "About us",
+          "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+          "quote": "we now manage over €700M in assets, with over €400M returned to LPs.",
+          "quote_hash": "f68ecdcc435c03faf0c018918c3a04b99b4ebdfc562225816dc9650298a9d1ee"
+        },
+        {
+          "source_id": "heartcore_track",
+          "source_url": "https://www.heartcore.com/about",
+          "source_title": "About us",
+          "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+          "quote": "We have backed more than 100 companies, with 65 companies currently active in the portfolio.",
+          "quote_hash": "e33091becdd782e341bb0cbac86b3fdba1018f8b009efd954c2cff90b37d747a"
+        },
+        {
+          "source_id": "heartcore_contact",
+          "source_url": "https://www.heartcore.com/about",
+          "source_title": "About us",
+          "source_content_hash": "e76180a4d8ec746efe161aedbaef30b6a4b96d94bc5549a557512f8376dc5d2a",
+          "quote": "Alternatively, you can also reach us at team@heartcore.com.",
+          "quote_hash": "ac1f46bc79777873a5ea97ebd0317b113d2a7011208407b02147d32fd2626cab"
+        },
         {
           "source_id": "FISRC-d5d5c858ca2bcd66",
           "source_url": "https://www.balderton.com/news/davis-raises-5-5-million-pre-seed-to-accelerate-early-stage-real-estate-development-from-months-to-days/",
@@ -189,7 +288,23 @@
           "quote_hash": "ca72b3fb65259fdd24ca6302900d504f46b9d80610badfd679ad53d00d748dc0"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[1].description": {
+          "text": "融资披露案例：Davis 于 2026-05-06 宣布 550 万美元 Pre-Seed，Heartcore Capital 与 Balderton 共同领投；不代表完整组合或基金回报。",
+          "source_hash": "9ef22b7ee23af3e0c5a245ec9e0485bcff4776dd52d05225940606691cca1b5e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

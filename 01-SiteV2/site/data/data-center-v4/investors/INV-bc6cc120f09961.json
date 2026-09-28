@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,40 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AI Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c15ac15bf3d0b1a"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
+        {
+          "source_id": "higgsfield_series_b_2026",
+          "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+          "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+          "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+          "quote": "Existing investors also participated in the Series B, including Accel, Menlo Ventures, AI Capital Partners (Alpha Intelligence Capital's US-based fund), GFT Ventures, Capra Ventures, BAM Corner Point and BroadLight Capital.",
+          "quote_hash": "f291fb1f0a98126831eca8a8e3df5bbfcbac05ebe94ec8dbcf69be8845829ba7"
+        },
+        {
+          "source_id": "aic_home",
+          "source_url": "https://aicapital.ai/",
+          "source_title": "Alpha Intelligence Capital — investment strategy",
+          "source_content_hash": "7d90fccc47135eeec773d8bea0d89f2ae1ac7efeaf5a194e5c6115aaddcd9847",
+          "quote": "We invest in Seed to Series B",
+          "quote_hash": "939bbc44d4a16c68a27ad52ca6c8c2d4c5ec2237eb6de3ad4b95f68526783913"
+        },
+        {
+          "source_id": "aic_team",
+          "source_url": "https://aicapital.ai/our-team/",
+          "source_title": "Alpha Intelligence Capital — team",
+          "source_content_hash": "15d511b76af960f60feca98bc09d04cc94e1abc3a656418e131fe0f3fbb4b51b",
+          "quote": "Antoine Blondeau Managing Partner",
+          "quote_hash": "7a7ea3dd59833f222484773ee6f21e6db1c16f8e1db0c40fe9d6d0f2f3dc3d97"
+        },
+        {
+          "source_id": "aic_contact",
+          "source_url": "https://aicapital.ai/contact-us/",
+          "source_title": "Alpha Intelligence Capital — contact and offices",
+          "source_content_hash": "526006be12eccb11825603eb6417b6c4a01efd93f851591bb303c55fa6a50090",
+          "quote": "info@aicapital.ai",
+          "quote_hash": "0ef24f27be3ed13c9ec80d780eca7ff96698b61bb118d2ce8f6e30a98ce16632"
+        },
         {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
           "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -159,9 +180,108 @@
           "source_content_hash": "66d04514886f3d3e",
           "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
           "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+        },
+        {
+          "source_id": "aic_thesis",
+          "source_url": "https://aicapital.ai/",
+          "source_title": "Alpha Intelligence Capital — investment strategy",
+          "source_content_hash": "7d90fccc47135eeec773d8bea0d89f2ae1ac7efeaf5a194e5c6115aaddcd9847",
+          "quote": "deep Artiﬁcial Intelligence/Machine Learning (AI/ML) technology-based companies",
+          "quote_hash": "c8bf12ba3286d8ecf04bdc1f933da6cb76cf1bdd531614d079ce83a3670f35d4"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "AI Capital Partners 是 Alpha Intelligence Capital 的美国基金。其母平台公开称由企业家主导、面向深度 AI/机器学习技术公司，投资阶段覆盖种子轮至 B 轮。Higgsfield 的融资公告将其列为既有投资方；公告未披露其本轮单笔金额。",
+      "coverage_note": "AI Capital Partners 与 Alpha Intelligence Capital 的关系依据 Higgsfield 公告中的明确说明；投资策略、团队与联系方式依据 AIC 官网。官网信息属于机构自述。Higgsfield 公告所称 4 亿美元为整轮融资规模，不代表 AI Capital Partners 的单笔投资额。",
+      "facts": [
+        {
+          "field": "parent_fund_platform",
+          "label": "基金平台关系",
+          "value": "Higgsfield 公告称 AI Capital Partners 是 Alpha Intelligence Capital 的美国基金。",
+          "source_id": "higgsfield_series_b_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子轮至 B 轮。",
+          "source_id": "aic_home"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资方向",
+          "value": "深度 AI/机器学习技术公司，重视算法科学能力及解决实际业务问题的产品。",
+          "source_id": "aic_thesis"
+        },
+        {
+          "field": "leadership",
+          "label": "团队",
+          "value": "官网团队页列 Antoine Blondeau 为 Managing Partner；该职务信息不代表其负责 Higgsfield 交易。",
+          "source_id": "aic_team"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Managing Partner",
+          "organization": "Alpha Intelligence Capital",
+          "source_id": "aic_team"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_id": "FISRC-7c15ac15bf3d0b1a"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Alpha Intelligence Capital 官网",
+          "value": "Alpha Intelligence Capital",
+          "url": "https://aicapital.ai/",
+          "source_id": "aic_home"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱（机构面向专业客户）",
+          "value": "info@aicapital.ai",
+          "source_id": "aic_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公地址（San Francisco）",
+          "value": "1 Ferry Building, Suite 201, San Francisco, CA 94111",
+          "source_id": "aic_contact"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Alpha Intelligence Capital 官网",
+          "source_hash": "968fdb9ad8b2aa05507221376d2390fc929cb1ef5ff715b8cf7f915f3d28342e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "官网列示办公地址（San Francisco）",
+          "source_hash": "58f586b408be13f2b2fabfaea58729ccc7e1483fbdab46325ddfaf46aed187e3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

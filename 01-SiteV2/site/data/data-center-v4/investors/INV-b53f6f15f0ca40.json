@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,196 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Inovia Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略、规模和团队来自 Inovia 官方资料；官网统计项未标注统计时点。Katalyze AI 的 1,050 万美元为整轮种子融资额，未披露 Inovia 单家出资金额。",
+      "summary": "Inovia Capital 是成立于 2007 年、以加拿大为根基并投资北美和欧洲公司的多阶段风险投资机构，投资从 pre-seed 延伸至 pre-IPO，通过 Discovery、Venture 与 Growth 三类策略覆盖基金与直接投资、早期成长及后续轮次。Venture 策略重点关注 AI/ML、金融科技、数字健康、网络安全、基础设施与开发运维、未来工作等方向；Growth 平台提供人才、产品与技术、企业发展和市场传播支持。官网自报管理资产 25 亿美元、累计投资 300 多家公司、65 笔退出及 31 亿美元以上退出价值，页面未注明统计时点。创办人 Shawn Abbott 与 Chris Arsenault 仍列为现任合伙人。Katalyze AI 官方公告称其 1,050 万美元种子轮由 Bonfire Ventures 领投，Inovia 等机构参与；金额为整轮融资总额。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2007 年",
+          "source_id": "inovia_about"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "加拿大为根基、覆盖多阶段的风险投资机构",
+          "source_id": "inovia_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网显示管理资产",
+          "value": "US$2.5B；官网未注明统计时点",
+          "source_id": "inovia_about"
+        },
+        {
+          "field": "investment_geography",
+          "label": "投资地域",
+          "value": "支持北美和欧洲、具有全球发展目标的公司",
+          "source_id": "inovia_geography"
+        },
+        {
+          "field": "investment_strategies",
+          "label": "机构投资策略",
+          "value": [
+            "Discovery：投资新兴基金管理人、pre-seed 基金和直接项目",
+            "Venture：支持早期科技公司与品类领导者",
+            "Growth：支持后续阶段扩张"
+          ],
+          "source_id": "inovia_strategy"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Venture 重点领域",
+          "value": [
+            "AI/机器学习",
+            "金融科技",
+            "数字健康",
+            "网络安全",
+            "基础设施与 DevOps",
+            "未来工作"
+          ],
+          "source_id": "inovia_sectors"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "Growth 组合支持",
+          "value": [
+            "人才",
+            "产品与技术",
+            "企业发展",
+            "市场与传播"
+          ],
+          "source_id": "inovia_support"
+        },
+        {
+          "field": "portfolio_and_exits",
+          "label": "官网自报投资与退出",
+          "value": "300 多笔投资、65 笔退出、退出价值超过 US$3.1B；官网未注明统计时点，且不等同于基金回报数据",
+          "source_id": "inovia_metrics"
+        },
+        {
+          "field": "founders",
+          "label": "共同创办人",
+          "value": "Shawn Abbott 与 Chris Arsenault 于 2007 年共同创办 Inovia Capital",
+          "source_id": "inovia_shawn"
+        },
+        {
+          "field": "current_leadership",
+          "label": "现任合伙人",
+          "value": [
+            "Shawn Abbott — Partner, Venture",
+            "Chris Arsenault — Partner, Growth"
+          ],
+          "source_id": "inovia_team"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "支持从 pre-seed 到 pre-IPO 的公司",
+          "source_id": "inovia_geography"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2007",
+          "description": "Inovia 官方资料记载公司成立于 2007 年。",
+          "source_id": "inovia_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Katalyze AI · 种子轮 · 2026-07-06 · 本轮参投 · $10.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Katalyze AI 官方公告披露 1,050 万美元种子轮由 Bonfire Ventures 领投，并列 Inovia Capital 为参与投资方；该金额为整轮总额，未披露 Inovia 单家出资。",
+          "source_id": "katalyze_seed"
+        },
+        {
+          "description": "融资活动库亦记录 Inovia 参与 Katalyze AI 种子轮；金额为全轮融资额，不代表 Inovia 单家出资。",
           "source_id": "FISRC-d887dae741d872b9"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网与团队目录",
+          "value": "Inovia Capital",
+          "url": "https://www.inovia.vc/",
+          "source_id": "inovia_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "inovia_about",
+          "source_url": "https://www.inovia.vc/about/",
+          "source_title": "About | Inovia Capital",
+          "source_content_hash": "732cbe38ccf3240a",
+          "quote": "Founded in 2007, Inovia is the largest Canada-anchored venture capital firm managing US$2.5B in AUM.",
+          "quote_hash": "732cbe38ccf3240a454d73136fcc41327e343e96cfe933e0aa6fc5f4c2972a19"
+        },
+        {
+          "source_id": "inovia_geography",
+          "source_url": "https://www.inovia.vc/about/",
+          "source_title": "Geography and stages | Inovia Capital About",
+          "source_content_hash": "0324677a6fcea63a",
+          "quote": "supporting North American and European companies with global ambition, from pre-seed to pre-IPO.",
+          "quote_hash": "0324677a6fcea63a5e294fa5fb99f31b1301609c919ddd8615641c423b87b92f"
+        },
+        {
+          "source_id": "inovia_metrics",
+          "source_url": "https://www.inovia.vc/about/",
+          "source_title": "Firm-reported metrics | Inovia Capital",
+          "source_content_hash": "8db6a9627a80c6ec",
+          "quote": "50+ Individuals; 300+ Investments to date; 65 Exits; US$3.1B+ Exit Value.",
+          "quote_hash": "8db6a9627a80c6ec102f1083bf109008ec01771c6d7162efea082bdf4416808d"
+        },
+        {
+          "source_id": "inovia_strategy",
+          "source_url": "https://www.inovia.vc/about/",
+          "source_title": "Investment strategies | Inovia Capital",
+          "source_content_hash": "6a0529ab10bb72e9",
+          "quote": "We've built a fully integrated, multi-stage platform spanning Discovery, Venture and Growth.",
+          "quote_hash": "6a0529ab10bb72e90ce9cfa832d01725f884d0e1a1402cc6e2f29264743486fb"
+        },
+        {
+          "source_id": "inovia_sectors",
+          "source_url": "https://www.inovia.vc/about/",
+          "source_title": "Venture focus areas | Inovia Capital",
+          "source_content_hash": "3cfa095bcf8c65f7",
+          "quote": "AI/ML and strong momentum in Fintech, Digital Health, Cybersecurity, Infra & Dev Ops, and the Future of Work.",
+          "quote_hash": "3cfa095bcf8c65f753f2e790ac7ac8ee94aae50945aa4e670998d07ed56a0b15"
+        },
+        {
+          "source_id": "inovia_support",
+          "source_url": "https://www.inovia.vc/about/",
+          "source_title": "Growth platform support | Inovia Capital",
+          "source_content_hash": "74cb0743d03a59e6",
+          "quote": "Talent, Product & Technology, Corporate Development, and Marketing & Communications.",
+          "quote_hash": "74cb0743d03a59e6c6e9b67f06f38bde361f9a20344cd5c150ea0a6d30ccf91d"
+        },
+        {
+          "source_id": "inovia_shawn",
+          "source_url": "https://www.inovia.vc/team/shawn-abbott/",
+          "source_title": "Shawn Abbott | Inovia Capital",
+          "source_content_hash": "6707bfe2c42bbffa",
+          "quote": "Shawn co-founded Inovia Capital in 2007 with Chris, after spending 20 years as a successful founder, inventor, angel investor and global executive.",
+          "quote_hash": "6707bfe2c42bbffa6d7d74f9da179d450da29669bdcf98eeeb8669286254461a"
+        },
+        {
+          "source_id": "inovia_team",
+          "source_url": "https://www.inovia.vc/team?person=Chris+Arsenault",
+          "source_title": "Team | Inovia Capital",
+          "source_content_hash": "301aa4c04cd453cb",
+          "quote": "Shawn Abbott Partner Venture; Chris Arsenault Partner Growth",
+          "quote_hash": "301aa4c04cd453cbb4915477b80c62bbaffe5274c781ae09050f66231c449b41"
+        },
+        {
+          "source_id": "katalyze_seed",
+          "source_url": "https://www.katalyzeai.com/news/katalyze-ai-announces-10.5m-seed-round",
+          "source_title": "Katalyze AI Announces $10.5M Seed Round",
+          "source_content_hash": "883827a20c3fc034db12276566acc3d6d8748934ce21bba7472380ff6435cf8a",
+          "quote": "today announced $10.5 million in seed funding led by Bonfire Ventures, along with Inovia Capital, Ripple Ventures, Alumni Ventures, and leading angel investors",
+          "quote_hash": "c5322f2df5c754efbe5e38495e83c4ca173bb96d25509941d9b4b73a555687f6"
+        },
         {
           "source_id": "FISRC-d887dae741d872b9",
           "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
@@ -161,7 +338,35 @@
           "quote_hash": "e9fd63d1b8548455862cc55fd7e34ba9aadc97adf1594a3743b8345ff1fb6b06"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[5].label": {
+          "text": "Venture 重点领域",
+          "source_hash": "885689e7fb48c90f2909e49defd7719c33aac6753ed33210cd409c1c2386bb4f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "Growth 组合支持",
+          "source_hash": "72db431a40a710a5f9fecc09ac7fec110464c80a27e60fea8e8405283f4d75e1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Katalyze AI 官方公告披露 1,050 万美元种子轮由 Bonfire Ventures 领投，并列 Inovia Capital 为参与投资方；该金额为整轮总额，未披露 Inovia 单家出资。",
+          "source_hash": "120240d4928235fca2c79adaf848e2d290cc827ce3c62040d33867de74b59380",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

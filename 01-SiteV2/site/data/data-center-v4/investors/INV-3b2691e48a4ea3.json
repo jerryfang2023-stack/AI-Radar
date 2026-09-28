@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,19 +131,159 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Gapminder Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "投资策略、基金规模和跟投率来自GapMinder官网自述；€130 million管理规模和85%跟投率未独立审计。2024年€80 million是Fund II目标规模，不能当作最终募集额。FintechOS各轮融资金额均为企业整体融资金额，未披露GapMinder单独出资额。融资库中的2021年报道仅支持历史参投线索，不证明GapMinder为后续轮次领投或仍持有股份。官网公布的Amsterdam地址和公共邮箱是一般联系信息，未确认专门投资申请渠道。",
+      "summary": "GapMinder Ventures是一家投资罗马尼亚及东南欧科技公司的风险投资管理机构，官网重点关注B2B AI、深科技和SaaS，并覆盖金融科技、网络安全、企业自动化和数据分析。公司披露Fund I规模为€50 million，2024年推出目标规模€80 million的Fund II；官网当前自述管理基金规模€130 million，且85%的被投公司曾完成后续融资。其公开投资案例包括FintechOS、Druid.AI、TypingDNA和Veridion。",
+      "facts": [
         {
-          "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 历史轮次参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-39755042b7f329d6"
+          "field": "investment_stage",
+          "label": "投资阶段与首轮投资",
+          "value": "官网称其主导Seed轮€0.5–5 million，并可继续跟投至€12 million或以上。",
+          "source_id": "gapminder_strategy_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "行业方向",
+          "value": "重点关注B2B领域的AI、深科技和SaaS；Fund II进一步覆盖金融科技、网络安全、企业自动化及数据分析。",
+          "source_id": "gapminder_strategy_2026"
+        },
+        {
+          "field": "target_geography",
+          "label": "主要投资区域",
+          "value": "Fund II计划将大部分资金投入罗马尼亚、摩尔多瓦、塞尔维亚、克罗地亚、斯洛文尼亚和保加利亚的初创企业。",
+          "source_id": "gapminder_fund_ii_2024"
+        },
+        {
+          "field": "funds_under_management",
+          "label": "管理基金规模（官网自述，截至2026年9月）",
+          "value": "官网列示€130 million funds under management；该数值为管理人自述。",
+          "source_id": "gapminder_metrics_2026"
+        },
+        {
+          "field": "fund_i",
+          "label": "Fund I",
+          "value": "€50 million基金，官网资料称于2018年设立；投资组合包括FintechOS、Druid.AI、TypingDNA、Veridion、Siena.Cx、Cyscale和Deepstash等。",
+          "source_id": "gapminder_portfolio_2024"
+        },
+        {
+          "field": "fund_ii",
+          "label": "Fund II（2024年目标）",
+          "value": "Fund II于2024年开始运营，目标规模€80 million；该数字为目标规模，而非最终募集额。",
+          "source_id": "gapminder_fund_ii_2024"
+        },
+        {
+          "field": "follow_on_rate",
+          "label": "后续融资比例（官网自述）",
+          "value": "官网称85%的被投公司完成过后续融资；统计口径及样本未在该指标旁单独说明。",
+          "source_id": "gapminder_metrics_2026"
+        },
+        {
+          "field": "fund_ii_partners_2024",
+          "label": "Fund II管理合伙人（2024年公告）",
+          "value": "公告列出的Fund II管理合伙人为Dan Mihăescu、Sergiu Roșca、Cosmin Ochișor和Alexandru Ruff。该名单按2024年公告日期呈现，不代表当前职务状态。",
+          "source_id": "gapminder_fund_ii_2024"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "GapMinder Fund I成立，规模€50 million。",
+          "source_id": "gapminder_portfolio_2024"
+        },
+        {
+          "date": "2024-02-22",
+          "description": "GapMinder Fund II首次关闭后开始运营，公告目标规模€80 million。",
+          "source_id": "gapminder_fund_ii_2024"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "FintechOS：2021年行业报道将GapMinder Ventures列为既有投资人之一；此处仅记录该历史报道，不将其解释为后续轮次领投或当前持股。",
+          "source_id": "FISRC-39755042b7f329d6"
+        },
+        {
+          "description": "FintechOS Series B+（2024）：GapMinder的官方投资组合公告称，该公司完成$60 million融资，Molten Ventures、Cipio Partners和BlackRock领投，GapMinder与EarlyBird及OTB列为既有投资人；未披露GapMinder单独出资额。",
+          "source_id": "gapminder_fintechos_2024"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "gapminder.vc",
+          "url": "https://gapminder.vc/",
+          "source_id": "gapminder_strategy_2026"
+        },
+        {
+          "kind": "email",
+          "label": "公共联系邮箱（非专属BP渠道）",
+          "value": "contact@gapminder.vc",
+          "source_id": "gapminder_email_2026"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示联系地址",
+          "value": "De Lairessestraat 145A, Amsterdam 1075 HJ, Netherlands",
+          "source_id": "gapminder_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gapminder_strategy_2026",
+          "source_url": "https://gapminder.vc/",
+          "source_title": "Home - Gap Minder",
+          "source_content_hash": "16be67bc6b5b610bc8ade4b49d6cee2242f2059c2190413659493832300a7fe3",
+          "quote": "We invest in what we know and love: AI / Deeptech and SaaS in B2B space.",
+          "quote_hash": "f6c39bc71f4ed5445269ae4e967833b89fa5b1b6db1c64b00f9605855cb0b58c"
+        },
+        {
+          "source_id": "gapminder_metrics_2026",
+          "source_url": "https://gapminder.vc/",
+          "source_title": "Home - Gap Minder",
+          "source_content_hash": "16be67bc6b5b610bc8ade4b49d6cee2242f2059c2190413659493832300a7fe3",
+          "quote": "€130m Funds under management; 85% Portfolio companies raised follow-on rounds.",
+          "quote_hash": "79fe1454a96606432b8b2d1a8f11de23127a5656199ae29a7fb4b88312760c46"
+        },
+        {
+          "source_id": "gapminder_contact_2026",
+          "source_url": "https://gapminder.vc/",
+          "source_title": "Home - Gap Minder",
+          "source_content_hash": "16be67bc6b5b610bc8ade4b49d6cee2242f2059c2190413659493832300a7fe3",
+          "quote": "De Lairessestraat 145A, Amsterdam 1075 HJ, Netherlands",
+          "quote_hash": "0fb0b1228b72571e035142f0bbccf76e7b144671908d9e216ebbee55a3087347"
+        },
+        {
+          "source_id": "gapminder_email_2026",
+          "source_url": "https://gapminder.vc/",
+          "source_title": "Home - Gap Minder",
+          "source_content_hash": "16be67bc6b5b610bc8ade4b49d6cee2242f2059c2190413659493832300a7fe3",
+          "quote": "contact@gapminder.vc",
+          "quote_hash": "342bdb566b00dbc32f4d7f25719d7d808ca2c8183aee4de3416ae37739b1c7bb"
+        },
+        {
+          "source_id": "gapminder_fund_ii_2024",
+          "source_url": "https://gapminder.vc/gapminder-unveils-e80m-target-venture-capital-fund-gapminder-fund-ii-the-fund-is-operational-and-announcing-its-first-investment-imminently/",
+          "source_title": "GapMinder unveils €80m target venture capital fund, GapMinder Fund II",
+          "source_content_hash": "8977fe0aae77ae60e391c22e7ae0b6a989683705b33a68ff7485e96027902e44",
+          "quote": "GapMinder Fund II, an investment vehicle with a target of €80 million, representing the largest VC with primary focus on the Romanian tech start-up market.",
+          "quote_hash": "18347d14f3af1cbe1d8cadc2cfc3e906bdefc3851fbef2d38a0943dd34352402"
+        },
+        {
+          "source_id": "gapminder_portfolio_2024",
+          "source_url": "https://gapminder.vc/gapminder-unveils-e80m-target-venture-capital-fund-gapminder-fund-ii-the-fund-is-operational-and-announcing-its-first-investment-imminently/",
+          "source_title": "GapMinder unveils €80m target venture capital fund, GapMinder Fund II",
+          "source_content_hash": "8977fe0aae77ae60e391c22e7ae0b6a989683705b33a68ff7485e96027902e44",
+          "quote": "Companies financed by GapMinder Fund I include Druid.AI, FintechOS, TypingDNA, Veridion, Siena.Cx, Cyscale, Deepstash",
+          "quote_hash": "ab16ba565614c6f1eb1649a1b567649f6b16edda5f53356b86eda9c0394c20e2"
+        },
+        {
+          "source_id": "gapminder_fintechos_2024",
+          "source_url": "https://gapminder.vc/fintechos-secures-60-million-in-series-b-to-simplify-core-systems-modernization-the-latest-funding-round-enables-fintechos-to-accelerate-global-expansion-making-core-modernization-more-accessible/",
+          "source_title": "FintechOS secures $60 million in Series B+ to simplify core systems modernization",
+          "source_content_hash": "e842b83799eb5fa885086c30e4a63ef3e5613efe844281136ae132d9d528a4c4",
+          "quote": "This round was led by Molten Ventures, Cipio Partners, and BlackRock, alongside existing investors EarlyBird VC, OTB VC, and Gapminder VC.",
+          "quote_hash": "19ccb5a204e9defb98479cf7785829bdc1c7b30b331f0f2e09f64104d7bcbb2e"
+        },
         {
           "source_id": "FISRC-39755042b7f329d6",
           "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -153,7 +293,43 @@
           "quote_hash": "2ec5063fe68b5e7db534d2c70019f6756a6fac8bcefc74abbb6b119d713ef81d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[5].label": {
+          "text": "Fund II（2024年目标）",
+          "source_hash": "5883dcf609953e4ce0aa0fa2e4f85ff527e918859c7082dd932cec9e6d468159",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "GapMinder Fund I成立，规模€50 million。",
+          "source_hash": "e47c618fccbd0714608cf07748f71c0ed1afd0ee9b18325269e91f3b3e18b63a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "GapMinder Fund II首次关闭后开始运营，公告目标规模€80 million。",
+          "source_hash": "9fa372f1224d88e057147149a88c7f3d6b910394560108b77dab769342d57032",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "FintechOS Series B+（2024）：GapMinder的官方投资组合公告称，该公司完成$60 million融资，Molten Ventures、Cipio Partners和BlackRock领投，GapMinder与EarlyBird及OTB列为既有投资人；未披露GapMinder单独出资额。",
+          "source_hash": "2fa22cb064534c73f01ed537b9768cc980b7b8d0e30951c2e3f79dfe79a79693",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-123c68740ab286",
+    "name": "达晨创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-03-30",
+    "latest_disclosed_at": "2026-03-30",
+    "role_counts": {
+      "participant": 1
+    },
+    "round_codes": [
+      "series_a_plus"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-78e778b471fd74fd",
+        "canonical_entity_id": "",
+        "name": "深圳跃然创新科技有限公司"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-d4738809a1f66320",
+        "funding_insight_id": "FI-4dd698330bc72de1",
+        "event_ids": [
+          "EV-51d8aec94225e9c6"
+        ],
+        "company_entity_id": "EN-78e778b471fd74fd",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳跃然创新科技有限公司",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-47b1de868e5ddfe2",
+            "source_url": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
+            "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海",
+            "source_content_hash": "907ae8ff0db6a87bbd3822e3d07475bda216bf4ce32f463e1703f62f456fa7c6",
+            "quote": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
+            "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-47b1de868e5ddfe2",
+        "source_url": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
+        "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海",
+        "source_content_hash": "907ae8ff0db6a87bbd3822e3d07475bda216bf4ce32f463e1703f62f456fa7c6",
+        "quote": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
+        "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "本档案区分“达晨创投”品牌历史与公开文件中的达晨财智管理主体；不把品牌名自动等同为每笔交易的法律出资人。2025年公司官网回顾案例可用于证明项目关联，不代表完整组合或当前管理规模。",
+      "summary": "达晨创投是深圳起步的本土创业投资品牌。官网历史回顾将其创业沿革追溯至2000年，公开发行人文件另列深圳市达晨财智创业投资管理有限公司这一管理主体。融资披露只使用“达晨创投”简称，具体出资基金和法律出资主体需以该轮原始披露为准。",
+      "facts": [
+        {
+          "field": "brand_history",
+          "label": "品牌沿革",
+          "value": "达晨官网历史文章将创业投资业务起步追溯至2000年4月19日。",
+          "source_id": "dachen_history"
+        },
+        {
+          "field": "related_management_entity",
+          "label": "公开披露的管理主体",
+          "value": "深圳市达晨财智创业投资管理有限公司；北交所发行人披露文件列示该主体成立于2008年12月15日、注册资本18,668.57万元。该主体信息用于背景识别，不据此推定单笔融资的基金层出资人。",
+          "source_id": "dachen_manager"
+        },
+        {
+          "field": "business_model",
+          "label": "官网历史披露的管理模式",
+          "value": "2009年前后，达晨通过品牌合作、有限合伙创投基金募资和专业化管理，向基金管理模式转型；此处为历史沿革，不代表当前基金管理规模。",
+          "source_id": "dachen_history"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000-04-19",
+          "description": "达晨官网历史文章记载深圳市达晨创业投资有限公司于此日成立。",
+          "source_id": "dachen_history"
+        },
+        {
+          "date": "2008-12-15",
+          "description": "北交所发行人披露文件列示深圳市达晨财智创业投资管理有限公司成立。",
+          "source_id": "dachen_manager"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "达晨官网历史回顾列出同洲电子、拓维信息、圣农发展、亿纬锂能、爱尔眼科、网宿科技等早期上市退出案例；对应2006至2009年前后历史口径，不代表当前退出表现。",
+          "source_id": "dachen_history"
+        },
+        {
+          "description": "达晨官网2025年文章回顾称其于2017年投资康希诺；这是官网明确提到的组合案例，不代表该条融资记录的出资主体。",
+          "source_id": "dachen_cansino"
+        },
+        {
+          "description": "融资来源记录：深圳跃然创新科技有限公司 · A+轮 · 2026-03-30 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-47b1de868e5ddfe2"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "达晨创投官方网站",
+          "value": "达晨Family / 达晨创投",
+          "url": "https://www.fortunevc.com/",
+          "source_id": "dachen_history"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "dachen_history",
+          "source_url": "https://www.fortunevc.com/index.php/index/shownews/id/1309.html",
+          "source_title": "电广传媒：做强创业投资 做大传媒主业｜达晨创投",
+          "source_content_hash": "a8ddac6e301ec89d4aaa0db4579a626c5fe47113bc592ebb1406a25df58a2748",
+          "quote": "于2000年4月19日注册成立",
+          "quote_hash": "694382ad5302cf1c99abdfe67e6bbf5aea13b69c5cb07ef56a0aeab8f8ca9eeb"
+        },
+        {
+          "source_id": "dachen_manager",
+          "source_url": "https://www.bse.cn/disclosure/2023/2023-07-11/1689066728_025124.pdf",
+          "source_title": "北交所发行人披露文件｜达晨财智管理主体信息",
+          "source_content_hash": "ef2ba0a36f57c36934d21d92d62bf527b6e5cf58131c5eee1025675382fcc5d6",
+          "quote": "深圳市达晨财智创业投资管理有限公司；成立日期 2008 年 12 月 15 日；注册资本 18,668.57 万元",
+          "quote_hash": "eb243a2d2dc61cd72cf5afc160a3b9fe26b420e828fe88aff973fca2aecfc9dd"
+        },
+        {
+          "source_id": "dachen_cansino",
+          "source_url": "https://www.fortunevc.com/index/shownews/id/3788.html",
+          "source_title": "央视新质生产力中国行｜康希诺生物朱涛｜达晨Family",
+          "source_content_hash": "f57f9d537d1969d50754740ebc2e0d2bca1b4444dd25499ba435ffaa69001df3",
+          "quote": "达晨于2017年投资康希诺",
+          "quote_hash": "83e353721fe6472e12322b81fbe982ef70d2ee4f413e8f9187e00f99e2f59774"
+        },
+        {
+          "source_id": "FISRC-47b1de868e5ddfe2",
+          "source_url": "https://finance.sina.cn/2026-03-30/detail-inhstxxe2822090.d.html",
+          "source_title": "拓邦战略投资AI玩具先锋跃然创新，共拓AI智慧成长新蓝海",
+          "source_content_hash": "907ae8ff0db6a87bbd3822e3d07475bda216bf4ce32f463e1703f62f456fa7c6",
+          "quote": "近日，AI玩具公司深圳跃然创新科技有限公司（以下简称”跃然创新”）完成A+轮融资，由蚂蚁集团领投，达晨创投、尚 颀 资本、拓邦股份（002139.SZ，以下简称“拓邦”）、啟赋资本等机构参投。",
+          "quote_hash": "61e17cee984e02b8821d979716a37b36ec570b362c1bd1411e0ffe279aee64f9"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "identity_status": "verified"
+    }
+  }
+}

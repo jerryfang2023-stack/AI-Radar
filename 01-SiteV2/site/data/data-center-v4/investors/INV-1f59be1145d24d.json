@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,30 +138,147 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中信集团投资控股 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "中信投资控股有限公司是中信集团一级全资子公司，2006年注册成立，2021年成为集团战略投资平台，采用“基金+直投”方式布局战略性新兴产业。融资披露中的“中信集团投资控股”与这一平台名称相符；基金投资由其全资子公司中信私募基金管理有限公司运营，子公司的管理规模不等于中信投资控股的直投资产或单笔出资额。",
+      "coverage_note": "主体关系、投资方向、历程与现任管理人员依据中信投资控股官网；联系方式来自中信集团公开总机，并非单笔投资申请渠道。官网披露的管理规模属于基金投资运营子公司，不能转写成该集团投资控股主体的资产规模。融资记录披露的是银河通用一轮总额，未披露中信集团投资控股的单家出资额。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "主体身份",
+          "value": "中信投资控股有限公司；中信集团一级全资子公司",
+          "source_id": "citic_profile_official"
+        },
+        {
+          "field": "investment_role",
+          "label": "集团定位",
+          "value": "中信集团战略投资平台；采用“基金+直投”双轮驱动",
+          "source_id": "citic_profile_official"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示投资领域",
+          "value": [
+            "新一代信息技术",
+            "人工智能",
+            "新能源",
+            "新材料",
+            "低空经济"
+          ],
+          "source_id": "citic_profile_official"
+        },
+        {
+          "field": "public_leadership",
+          "label": "官网公开领导名单",
+          "value": "梁惠江（党委书记、董事长）；宋军（党委副书记、总经理）。",
+          "source_id": "citic_leadership_official"
+        },
+        {
+          "field": "fund_platform",
+          "label": "基金投资运营主体",
+          "value": "全资子公司中信私募基金管理有限公司；官网披露其截至2025年底管理资金规模近300亿元，该数字属于子公司口径。",
+          "source_id": "citic_fund_platform"
+        },
+        {
+          "field": "historical_background",
+          "label": "历史沿革",
+          "value": "官网记载公司于2006年注册成立，承接中信兴业投资有限责任公司的相关资产与负债。",
+          "source_id": "citic_profile_official"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2006-06",
+          "description": "中信投资控股有限公司注册成立。",
+          "source_id": "citic_profile_official"
+        },
+        {
+          "date": "2021-03",
+          "description": "成为中信集团战略投资平台。",
+          "source_id": "citic_profile_official"
+        },
+        {
+          "date": "2022-08",
+          "description": "设立全资子公司中信私募基金管理有限公司，布局私募股权基金投资。",
+          "source_id": "citic_fund_platform"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 本轮参投 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026年3月，融资报道将“中信集团投资控股”列为银河通用本轮联合投资方之一。报道披露的25亿元是该轮融资总额，未披露本机构单家出资额；该记录也不能据此归到中信私募子公司。",
           "source_id": "FISRC-adaac360139469bd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "中信集团公开总机（非投资申请专线）",
+          "value": "+86-10-64661710",
+          "source_id": "citic_contact_public"
+        },
+        {
+          "kind": "email",
+          "label": "中信集团公开联系邮箱（非投资申请邮箱）",
+          "value": "g-contact@citic.com",
+          "source_id": "citic_contact_public"
+        },
+        {
+          "kind": "address",
+          "label": "中信集团公开地址",
+          "value": "北京市朝阳区光华路中信大厦",
+          "source_id": "citic_contact_public"
+        },
+        {
+          "kind": "website",
+          "label": "中信投资控股官网",
+          "value": "中信投资控股",
+          "url": "https://www.invest.citic/",
+          "source_id": "citic_profile_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "citic_profile_official",
+          "source_url": "https://www.invest.citic/p/guanyuwomen.html",
+          "source_title": "中信投资控股官网：公司介绍与发展历程",
+          "source_content_hash": "088ceae06c2ce18090c597e974eb86be1189a40d1609b581d34e2c882ef4f2f7",
+          "quote": "中信投资控股是中信集团一级全资子公司。",
+          "quote_hash": "1227ea77d993c276df959b61eec676df2d94ae98a1c4a701e816e1163d60a7dd"
+        },
+        {
+          "source_id": "citic_leadership_official",
+          "source_url": "https://www.invest.citic/p/guanyuwomen.html",
+          "source_title": "中信投资控股官网：公司领导",
+          "source_content_hash": "2803124ab32d35af2616eea427a5e637107b93af2392094b5bb750031836af95",
+          "quote": "梁惠江 党委书记、董事长；宋军 党委副书记、总经理。",
+          "quote_hash": "12fc4d6389075ccda10ca5ee5d072e34f0041cfe6b25b301825efe5a69138fb6"
+        },
+        {
+          "source_id": "citic_fund_platform",
+          "source_url": "https://www.invest.citic/",
+          "source_title": "中信投资控股官网：基金投资平台",
+          "source_content_hash": "30827444a1efb2f90100a779ddd94add2109cac2700a9f268c60991d1b8ac88e",
+          "quote": "截至2025年底，管理资金规模近300亿元。",
+          "quote_hash": "c6e02a5dab05273cdc25ae9bfda5a906ab024dbee22defb376bb422b2a0d3614"
+        },
+        {
+          "source_id": "citic_contact_public",
+          "source_url": "https://www.citic.com/html/",
+          "source_title": "中信集团官网：公开联系信息",
+          "source_content_hash": "86bff9fbbedcf28564555fc66d79cb02ea1f634fd0f2710af8447036da6c1e28",
+          "quote": "电话:86-10-64661710；邮箱:g-contact@citic.com",
+          "quote_hash": "58a2a4ecb3c06765fe8d93dfd33ee39bfdfe8b69b05dcba0a73d44f74d4ce0f6"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
           "source_title": "开年最大融资诞生！银河通用再融25亿 国家大基金首投具身智能",
           "source_content_hash": "b2eacae148179fb9ea2302fcd22d73b4b29b0f56ffb1c8400c5764c9a8cdbdcd",
-          "quote": "由国家人工智能产业基金（大基金三期全资基金）、中国石化、中信集团投资控股、中国银行、上汽集团金控、中芯聚源、亦庄国投、未来产业投资、鲲鹏基金、无锡创投、福建产投联合投资",
-          "quote_hash": "96a3aef27d592b0706f6bf7a6b0f44a71d2e784c11c23523af9bf03b4f18a45d"
+          "quote": "中信集团投资控股",
+          "quote_hash": "bfbdb265e2c7c7f743ec404765188e7e2e7924f04b1aa364193ac5f20872e128"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }

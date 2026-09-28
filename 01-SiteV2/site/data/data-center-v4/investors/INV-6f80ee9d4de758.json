@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,18 +139,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Microsoft Corp 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "2025 年的“至多 50 亿美元”是微软官方宣布的投资承诺上限，不应表述为已全部完成出资。Anthropic G 轮总额不等于微软投入金额。M12 是微软支持的风险投资组织，官网记录其早期名称和更名历史；M12 的组合规模和退出数据未计入 Microsoft Corp 档案。",
+      "summary": "Microsoft Corp 作为企业战略投资方出现在融资披露中。微软 2025 年宣布与 Anthropic 扩大合作，并承诺投资至多 50 亿美元；后续融资报道将 Microsoft Corp 列为 Anthropic G 轮参与方，但没有披露微软单独出资额。其企业风险投资组织 M12 与 Microsoft Corp 的直接投资分别记录。",
+      "facts": [
         {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮参投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-077b1124fc8e9581"
+          "field": "corporate_investment",
+          "label": "企业战略投资",
+          "value": "微软于 2025-11 宣布，在扩大与 Anthropic 的合作安排中承诺投资至多 50 亿美元；官方公告没有把上限表述为实际已出资金额。",
+          "source_id": "microsoft_anthropic_2025"
+        },
+        {
+          "field": "venture_arm_distinction",
+          "label": "企业风投组织说明",
+          "value": "M12 官网称其使命是通过投资、洞察和与微软的合作加速技术发展；其投资组合数据与 Microsoft Corp 直接投资分别统计。",
+          "source_id": "m12_mission"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "M12 官网将 Microsoft Ventures 的成立年份列为 2016。",
+          "source_id": "m12_history"
+        },
+        {
+          "date": "2018",
+          "description": "M12 官网记载 Microsoft Ventures 于 2018 年更名为 M12。",
+          "source_id": "m12_rename"
+        },
+        {
+          "date": "2025-11-18",
+          "description": "微软宣布与 Anthropic、NVIDIA 建立战略合作，并承诺投资至多 50 亿美元；这是官方宣布的承诺上限。",
+          "source_id": "microsoft_anthropic_2025"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "2026-08-10 的 Anthropic G 轮披露将 Microsoft Corp 列为参与方；该轮总额为 300 亿美元，未披露微软单独出资额。",
+          "source_id": "FISRC-077b1124fc8e9581"
+        },
+        {
+          "description": "2025 年微软官方宣布承诺向 Anthropic 投资至多 50 亿美元，作为更广泛战略合作的一部分；这是上限承诺，不是已确认实际出资额。",
+          "source_id": "microsoft_anthropic_2025"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "微软官方网站",
+          "value": "Microsoft",
+          "url": "https://www.microsoft.com/",
+          "source_id": "microsoft_anthropic_2025"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-077b1124fc8e9581",
@@ -159,9 +200,61 @@
           "source_content_hash": "7ff9bbd6aca29214",
           "quote": "along with participation from a who’s who of other investors, from Sequoia Capital and Lightspeed Venture Partners to Big Tech firms Nvidia Corp and Microsoft Corp.",
           "quote_hash": "f9050f59785f6003fc0699c9f5dcec1c1613171131640d36bc3ece33945c5d82"
+        },
+        {
+          "source_id": "microsoft_anthropic_2025",
+          "source_url": "https://blogs.microsoft.com/blog/2025/11/18/microsoft-nvidia-and-anthropic-announce-strategic-partnerships/",
+          "source_title": "Microsoft, NVIDIA and Anthropic announce strategic partnerships | The Official Microsoft Blog",
+          "source_content_hash": "32203fccf3f98a2982da9bf7ee5def2f3e4e37664c1b35ca1adcd6fa2b1ff8c1",
+          "quote": "As part of the partnership, NVIDIA and Microsoft are committing to invest up to $10 billion and up to $5 billion respectively in Anthropic.",
+          "quote_hash": "453acb0eb87f9cc756945e7414bcd211a23f86e8e58844eefab9f3c069f3679b"
+        },
+        {
+          "source_id": "m12_history",
+          "source_url": "https://m12.vc/who-we-are/",
+          "source_title": "Who we are | M12",
+          "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+          "quote": "Microsoft Ventures is born.",
+          "quote_hash": "182771940f15c27a1ef436de913f8926177169594d7b2250021f2bd85b4649ff"
+        },
+        {
+          "source_id": "m12_rename",
+          "source_url": "https://m12.vc/who-we-are/",
+          "source_title": "Who we are | M12",
+          "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+          "quote": "Microsoft Ventures becomes M12",
+          "quote_hash": "502f2e9fea6e2d70910c20ca53c6f48f1ee14a4b299bd344d101a2fe33287c06"
+        },
+        {
+          "source_id": "m12_mission",
+          "source_url": "https://m12.vc/who-we-are/",
+          "source_title": "Who we are | M12",
+          "source_content_hash": "28c68cb4a704d3cc5a4ad01399aba2ab031b76c50eeef79532626b82cc3caa2f",
+          "quote": "Accelerate the future of technology through investments, insights, and meaningful partnership with Microsoft.",
+          "quote_hash": "1bac7756363152e52db7879fb20650e0f94f7f0e0401c3fb5ab82460df146f35"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "M12 官网将 Microsoft Ventures 的成立年份列为 2016。",
+          "source_hash": "0ed2f62379866ee6b26e7e578b586b7e50ef34a8f01ebeab6c2446bedfbaccfa",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "M12 官网记载 Microsoft Ventures 于 2018 年更名为 M12。",
+          "source_hash": "20c9b7a278f2c414ebb3187ee2636bfc18729af09add20ccd6b8598e7af2876b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

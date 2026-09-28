@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,75 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "华大松禾天使基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "“华大松禾天使基金”与华大基因及松禾资本相关，公开的深圳市政府材料记录盐田区城投集团与华大松禾私募股权投资基金签订出资协议，并称该区引导基金由此参投天使基金。政府材料将其置于生命健康产业培育背景下。公开资料未提供该基金的独立规模、完整管理团队或可核验的基金回报；融资库所关联的墨芯人工智能资料指向较早的A+轮，不能据此描述为后续C轮出资。",
+      "facts": [
+        {
+          "field": "public_identity",
+          "label": "公开披露名称",
+          "value": "华大松禾天使基金；政府材料亦称“华大松禾私募股权投资基金”。",
+          "source_id": "huada_songhe_yantian"
+        },
+        {
+          "field": "public_role",
+          "label": "公开披露关系",
+          "value": "2023年盐田区城投集团与华大松禾私募股权投资基金签订出资协议，盐田区政府引导基金参投天使类基金。",
+          "source_id": "huada_songhe_yantian"
+        },
+        {
+          "field": "ecosystem",
+          "label": "公开披露产业背景",
+          "value": "盐田区政府材料将合作与合成生物、脑科学、细胞与基因等生命健康方向的产业培育联系起来。",
+          "source_id": "huada_songhe_yantian"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：墨芯人工智能 · C轮 · 2026-05-29 · A+轮参投 · 近10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资库所关联的公开报道将华大松禾天使基金列为墨芯人工智能较早A+轮融资的战略跟投方。该报道不是后续C轮出资证明，且没有披露该基金的具体出资额。",
           "source_id": "FISRC-fd6d552d3eca98a8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "政府公开政策与基金信息入口",
+          "value": "深圳市财政局",
+          "url": "https://szfb.sz.gov.cn/",
+          "source_id": "huada_songhe_yantian"
+        },
+        {
+          "kind": "website",
+          "label": "深圳市金融发展服务平台报道",
+          "value": "中共深圳市委金融委员会办公室",
+          "url": "https://jr.sz.gov.cn/sjrb/ztzl/szctr/hdzx/content/post_10897240.html",
+          "source_id": "huada_songhe_szfi"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "huada_songhe_yantian",
+          "source_url": "https://szfb.sz.gov.cn/gkmlpt/content/10/10714/post_10714433.html",
+          "source_title": "深圳市财政局：盐田区引导基金探索尝试天使类投资",
+          "source_content_hash": "207a5d559a2f6296ff70cf4f5a59c28378981620545a83283165d20838ec7a1e",
+          "quote": "2023年7月8日，盐田区城投集团与华大松禾私募股权投资基金签订出资协议，这是区引导基金首次投资天使类基金。",
+          "quote_hash": "207a5d559a2f6296ff70cf4f5a59c28378981620545a83283165d20838ec7a1e"
+        },
+        {
+          "source_id": "huada_songhe_szfi",
+          "source_url": "https://jr.sz.gov.cn/sjrb/ztzl/szctr/hdzx/content/post_10897240.html",
+          "source_title": "深圳市委金融委员会办公室：深圳创投日走进盐田",
+          "source_content_hash": "17a12a0c9ddade287322baef440a8644f87f4889e06fba60d99d452c2d0cbbf6",
+          "quote": "区城投集团与华大松禾天使基金签订出资协议，支持种子期、初创期生命健康企业。",
+          "quote_hash": "17a12a0c9ddade287322baef440a8644f87f4889e06fba60d99d452c2d0cbbf6"
+        },
+        {
+          "source_id": "huada_songhe_history",
+          "source_url": "https://news.qq.com/rain/a/20240410A04MKL00",
+          "source_title": "墨芯人工智能早期融资报道",
+          "source_content_hash": "37a57e197b6ddad5be65d8b57fea3be4820a81deaa4d08c39839c173ec75e24d",
+          "quote": "华大松禾天使基金、岩山科技战略跟投。",
+          "quote_hash": "37a57e197b6ddad5be65d8b57fea3be4820a81deaa4d08c39839c173ec75e24d"
+        },
         {
           "source_id": "FISRC-fd6d552d3eca98a8",
           "source_url": "https://news.qq.com/rain/a/20240410A04MKL00",
@@ -153,7 +207,11 @@
           "quote_hash": "6aaaecbe924b70a34dba5b426483818227e6c2b2c09dcafa3c4f599be7014f98"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "政府来源确认其参与天使基金，但未披露基金规模、管理人或当前募资渠道。融资库关联的腾讯新闻来源记录的是墨芯人工智能较早的A+轮参投，不是后续C轮；本档案不把该轮公司融资总额记作基金出资额。"
     }
   }
 }

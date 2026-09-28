@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,18 +131,7 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alt Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b2454278fe6d93e"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
         {
           "source_id": "FISRC-3b2454278fe6d93e",
@@ -151,9 +140,118 @@
           "source_content_hash": "0eedb637d7c86cdc",
           "quote": "Jack Altman from Alt Capital",
           "quote_hash": "1f13f0a69b692e3372352ab83e985e511cd3e001ca384a46f86604ee30ed95d0"
+        },
+        {
+          "source_id": "avoca_careers_2026",
+          "source_url": "https://www.avoca.ai/careers",
+          "source_title": "Careers | Avoca AI",
+          "source_content_hash": "7b110d8fdf71e4d29db58661bbcf94a6943d85750e80ea7fd07704663f0d0058",
+          "quote": "Alt Capital",
+          "quote_hash": "478651b20834f440ef94bf29cd43fa41348b5c4d5fd3f00481c4c06bd9bad62c"
+        },
+        {
+          "source_id": "altcap_home",
+          "source_url": "https://www.altcap.com/",
+          "source_title": "Alt Capital",
+          "source_content_hash": "ebcd03a9bc3265abfa00b63be5665d682a1ba75b4b0869288d6a1dd7526b261e",
+          "quote": "Alt Capital",
+          "quote_hash": "478651b20834f440ef94bf29cd43fa41348b5c4d5fd3f00481c4c06bd9bad62c"
+        },
+        {
+          "source_id": "altcap_sec_form_d_2024",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2008825/000200882524000001/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC Form D — Alt Capital I, L.P.",
+          "source_content_hash": "042278cb42cb668134b913f70217acfb9f74b05bcbf73aa67c2e3c44f27fae3d",
+          "quote": "Managing Director of the General Partner of the Issuer",
+          "quote_hash": "35ca996e0425ef00fc040b37f553f5515e4e3646b23d3ff8beabe5a25d7f123f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "SEC Form D records Alt Capital I, L.P. and names Jack Altman as managing director of its general partner. Avoca’s careers page also displays Alt Capital in its investor group. Public sources reviewed here do not disclose Alt Capital’s individual investment amount in Avoca.",
+      "coverage_note": "本档案依据 SEC Form D 与 Avoca 官网可见信息建立。申报可确认 Alt Capital I, L.P. 这一基金载体及 Jack Altman 在其普通合伙人中的申报职务；Avoca 招聘页将 Alt Capital 列入投资方标识。公开材料未披露该基金在 Avoca 的单笔金额，也未提供可核验的完整投资组合或业绩。Alt Capital 官网当前可读文字有限。",
+      "facts": [
+        {
+          "field": "fund_vehicle",
+          "label": "基金载体",
+          "value": "SEC 于 2024 年备案 Alt Capital I, L.P.，并列 Jack Altman 为该载体普通合伙人的 Managing Director。",
+          "source_id": "altcap_sec_form_d_2024"
+        },
+        {
+          "field": "public_site",
+          "label": "官方主页",
+          "value": "机构官网使用 Alt Capital 名称；公开主页未提供可核验的投资策略或业绩说明。",
+          "source_id": "altcap_home"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "milestones": [
+        {
+          "date": "2024-02-07",
+          "description": "SEC Form D 记录 Alt Capital I, L.P. 的豁免发行备案。",
+          "source_id": "altcap_sec_form_d_2024"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Avoca 的招聘页面将 Alt Capital 列在投资方标识中；页面未披露对应轮次的单笔投资金额。",
+          "source_id": "avoca_careers_2026"
+        },
+        {
+          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · 既有投资方 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3b2454278fe6d93e"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Alt Capital 官方网站",
+          "value": "Alt Capital",
+          "url": "https://www.altcap.com/",
+          "source_id": "altcap_home"
+        },
+        {
+          "kind": "address",
+          "label": "2024 年 Alt Capital I, L.P. SEC 备案营业地址（非确认中的最新地址）",
+          "value": "660 York Street, San Francisco, CA 94110",
+          "source_id": "altcap_sec_form_d_2024"
+        },
+        {
+          "kind": "phone",
+          "label": "2024 年 Alt Capital I, L.P. SEC 备案电话（未核实是否仍有效）",
+          "value": "+1 314 497 4264",
+          "source_id": "altcap_sec_form_d_2024"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "SEC Form D 记录 Alt Capital I, L.P. 的豁免发行备案。",
+          "source_hash": "088922cbde86b145265b3b33cd6469464d80785210a8838684107147b4a01247",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Alt Capital 官方网站",
+          "source_hash": "ab9cb5323823f19a0357729f2ea7d8cbeb482071118e9f63743159c5d5f524d6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "2024 年 Alt Capital I, L.P. SEC 备案电话（未核实是否仍有效）",
+          "source_hash": "d3e7c97cb94ff53dd7c46217a4a9f96347baa323257d4f4a25424b413d41ddea",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -186,24 +186,158 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "阿尔法公社 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网当前使用“阿尔法公社 Alpha Startups”品牌，站点版权行写有 Alpha Startup Fund。官网自报的组合企业数量和 A 轮前投资占比不是基金回报指标。团队角色与经历按官网 2026-09-27 页面快照整理。融资活动库中一条智象未来记录把 Alpha 列在一项 2026 年融资下，但它链接的投资界公司页实际写的是 2023-04-07 的种子轮、金额未披露；本档案仅采用原文支持的历史参投信息，不推定 Alpha 参与 2026 年该轮，也不把轮次金额归于 Alpha。",
+      "summary": "融资记录中的“阿尔法公社”在官网使用“阿尔法公社 Alpha Startups”品牌，官网称其为 2015 年成立的天使投资基金，面向技术创业者并提供行业资源支持。官网自报投资过 100 余家科技公司，90% 的投资发生在 A 轮前；这是机构披露的组合规模和轮次占比，不代表基金回报。官网团队页列出创始合伙人兼 CEO 许四清、合伙人刘罡和孙畅。",
+      "facts": [
+        {
+          "field": "public_brand",
+          "label": "官网品牌",
+          "value": "阿尔法公社 Alpha Startups。",
+          "source_id": "alpha_official_brand_2026"
+        },
+        {
+          "field": "portfolio_brand",
+          "label": "官网组合项目栏目名称",
+          "value": "Alpha Founders。",
+          "source_id": "alpha_portfolio_brand_2026"
+        },
+        {
+          "field": "fund_name",
+          "label": "官网版权行使用名称",
+          "value": "Alpha Startup Fund。",
+          "source_id": "alpha_official_fund_name_2026"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网自述机构类型",
+          "value": "天使投资基金。",
+          "source_id": "alpha_official_brand_2026"
+        },
+        {
+          "field": "founded_year",
+          "label": "官网披露创立年份",
+          "value": "2015 年。",
+          "source_id": "alpha_official_founded_2026"
+        },
+        {
+          "field": "technology_portfolio",
+          "label": "官网自报组合规模",
+          "value": "自 2015 年以来投资 100 余家科技公司；官网称所列项目为部分案例。",
+          "source_id": "alpha_portfolio_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网自报投资阶段比例",
+          "value": "90% 的投资发生在 A 轮前；该比例是官网披露的轮次分布，不是基金回报。",
+          "source_id": "alpha_official_metrics_2026"
+        },
+        {
+          "field": "founder_experience",
+          "label": "创始合伙人兼 CEO 许四清的创业经历",
+          "value": "官网称许四清于 2010 年以 COO 身份带领一家创业公司在纳斯达克上市。",
+          "source_id": "alpha_team_history_2026"
+        },
+        {
+          "field": "founder_career",
+          "label": "许四清的过往任职",
+          "value": "官网列出其曾任创新工场投资合伙人、奇虎 360 CMO、WI Harper Group 中国区董事总经理。",
+          "source_id": "alpha_team_career_2026"
+        },
+        {
+          "field": "founder_industry_experience",
+          "label": "许四清的行业经验",
+          "value": "官网自述其在 IT、互联网和电信领域拥有 20 余年经验。",
+          "source_id": "alpha_team_years_2026"
+        },
+        {
+          "field": "partner_experience",
+          "label": "合伙人刘罡的投资方向",
+          "value": "官网介绍其关注 AI 原生软硬件、具身智能和深科技机会。",
+          "source_id": "alpha_team_gang_focus_2026"
+        },
+        {
+          "field": "partner_role",
+          "label": "合伙人孙畅的任职时间",
+          "value": "官网称她于 2021 年加入 Alpha Startup Fund 任合伙人。",
+          "source_id": "alpha_team_sun_2026"
+        },
+        {
+          "field": "partner_experience",
+          "label": "孙畅的创业经历",
+          "value": "官网介绍她于 2005 年创办新东方在线，该公司于 2019 年在香港上市，现名东方甄选；这是个人经历，不是 Alpha 的组合业绩。",
+          "source_id": "alpha_team_sun_career_2026"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "官网自述投后支持方式",
+          "value": "通过行业资源帮助组合公司建立业务合作。",
+          "source_id": "alpha_support_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "Alpha Startups 官网标注基金于 2015 年成立。",
+          "source_id": "alpha_official_founded_2026"
+        }
+      ],
+      "current_roles": [
+        {
+          "organization": "Alpha Startup Fund",
+          "title": "创始合伙人、CEO：许四清（Richard Xu）",
+          "source_id": "alpha_team_2026"
+        },
+        {
+          "organization": "Alpha Startup Fund",
+          "title": "合伙人：刘罡（Gang Liu）",
+          "source_id": "alpha_team_gang_2026"
+        },
+        {
+          "organization": "Alpha Startup Fund",
+          "title": "合伙人：孙畅（Sun Chang）",
+          "source_id": "alpha_team_sun_2026"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：共绩科技 · Pre-A轮 · 2026-05-07 · 本轮参投 · 近亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "36 氪 2026 年报道共绩科技完成近亿元 Pre-A 轮融资，并将阿尔法公社列为跟投方；报道未披露阿尔法公社的个人出资额。",
           "source_id": "FISRC-3e0fde80ebf2a574"
         },
         {
-          "description": "融资来源记录：智象未来 · 轮次未披露 · 2026-04-16 · 种子轮投资方 · 5亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "投资界智象未来公司页列出阿尔法公社参与一项 2023-04-07 的种子轮，并明确称融资金额未披露；该页不支持把阿尔法公社列为 2026 年另一轮融资的出资方。",
           "source_id": "FISRC-6d78d6f795c322a1"
+        },
+        {
+          "description": "官网组合页称自 2015 年以来投资了 100 余家科技公司，并展示部分案例；该自报数量不代表完整组合或回报表现。",
+          "source_id": "alpha_portfolio_2026"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "application",
+          "label": "官网创始人 BP 投递入口",
+          "value": "官网提供 Submit BP 入口。",
+          "url": "https://alphastartups.net/#contact",
+          "source_id": "alpha_submit_bp_2026"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开 BP 邮箱",
+          "value": "BP@ALPHASTARTUPS.NET",
+          "url": "https://alphastartups.net/#contact",
+          "source_id": "alpha_contacts_2026"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开 LP 联系邮箱",
+          "value": "LP@ALPHASTARTUPS.NET",
+          "url": "https://alphastartups.net/#contact",
+          "source_id": "alpha_contacts_2026"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-3e0fde80ebf2a574",
@@ -220,9 +354,157 @@
           "source_content_hash": "88f59009be0a1dca",
           "quote": "种子轮，金额未披露，投资方阿尔法公社、多位中科大知名企业家和AI大专家，日期2023年4月7日",
           "quote_hash": "f32535e2b965b16c73a9f331335741dd32b9e97093f98907adec014670219a45"
+        },
+        {
+          "source_id": "alpha_official_brand_2026",
+          "source_url": "https://alphastartups.net/",
+          "source_title": "阿尔法公社 Alpha Startups · 官方首页",
+          "source_content_hash": "6a8fdb96c619978b2a697aea9d8915c430a533b3aa0a6af61e5f451f31518a3a",
+          "quote": "Alpha Startups is a leading angel investment fund",
+          "quote_hash": "12dfff1d6219ac365973d2a1716bc81498369383e8414f954b5747be2e5487b8"
+        },
+        {
+          "source_id": "alpha_official_metrics_2026",
+          "source_url": "https://alphastartups.net/",
+          "source_title": "Alpha Startups · 官方首页规模指标",
+          "source_content_hash": "6a8fdb96c619978b2a697aea9d8915c430a533b3aa0a6af61e5f451f31518a3a",
+          "quote": "100+ Portfolio cos 90% Invested pre-Series A",
+          "quote_hash": "485f3cd645fc8be0410fb7a02d6cbb47dfa52887fba73ffcb27f213844495589"
+        },
+        {
+          "source_id": "alpha_team_2026",
+          "source_url": "https://alphastartups.net/team.html",
+          "source_title": "团队 The Team · 阿尔法公社 Alpha Startups",
+          "source_content_hash": "0e0b5b64e1d428aadac6f3b68db723caa801d534acda465fa1bb10e2055aefd9",
+          "quote": "Richard Xu is founding partner and CEO of Alpha Startup Fund",
+          "quote_hash": "f57bdc321e491834b48dfb9057d8f31931d1c8ab29fea46f1b6d193d934f5843"
+        },
+        {
+          "source_id": "alpha_team_history_2026",
+          "source_url": "https://alphastartups.net/team.html",
+          "source_title": "团队 The Team · 许四清职业经历",
+          "source_content_hash": "0e0b5b64e1d428aadac6f3b68db723caa801d534acda465fa1bb10e2055aefd9",
+          "quote": "In 2010, as COO, he successfully led a startup to an IPO on the NASDAQ.",
+          "quote_hash": "158b5550acdc26fe750609a0fa1a9b7076a0cd9d765ed759aaf25d20b514da86"
+        },
+        {
+          "source_id": "alpha_team_gang_2026",
+          "source_url": "https://alphastartups.net/team.html",
+          "source_title": "团队 The Team · 刘罡职业介绍",
+          "source_content_hash": "0e0b5b64e1d428aadac6f3b68db723caa801d534acda465fa1bb10e2055aefd9",
+          "quote": "Gang Liu is a Partner at Alpha Startup Fund",
+          "quote_hash": "e7341238f881f524d2d8184566a7a0be75f964221e51c88e5cb1f9d001c4ffd6"
+        },
+        {
+          "source_id": "alpha_team_sun_2026",
+          "source_url": "https://alphastartups.net/team.html",
+          "source_title": "团队 The Team · 孙畅职业介绍",
+          "source_content_hash": "0e0b5b64e1d428aadac6f3b68db723caa801d534acda465fa1bb10e2055aefd9",
+          "quote": "she joined Alpha Startup Fund as a partner in 2021.",
+          "quote_hash": "e9ad79a4c7c165fa081de193666abb62cdd828c4d3536026ba55e60ad9c058bb"
+        },
+        {
+          "source_id": "alpha_portfolio_2026",
+          "source_url": "https://alphastartups.net/portfolio.html",
+          "source_title": "非凡创业者 Alpha Founders · 官方组合页",
+          "source_content_hash": "191e5506085a7379586185979596eda77569d051a6d63fbee4cbd5be5014584a",
+          "quote": "Since 2015 we have backed 100+ technology companies. Here is a selection.",
+          "quote_hash": "98b31bc7fd1497f6356165618f45ee2e41958c69674feef3cda23f4d9304009c"
+        },
+        {
+          "source_id": "alpha_contacts_2026",
+          "source_url": "https://alphastartups.net/",
+          "source_title": "Alpha Startups · 创始人与LP联系渠道",
+          "source_content_hash": "6a8fdb96c619978b2a697aea9d8915c430a533b3aa0a6af61e5f451f31518a3a",
+          "quote": "BP@ALPHASTARTUPS.NET LP@ALPHASTARTUPS.NET",
+          "quote_hash": "9910c81194f611f42f850bea8a04f67de466da815498f6b3dc44e5431d69cc7b"
+        },
+        {
+          "source_id": "alpha_official_founded_2026",
+          "source_url": "https://alphastartups.net/",
+          "source_title": "Alpha Startups · 创立年份",
+          "source_content_hash": "6a8fdb96c619978b2a697aea9d8915c430a533b3aa0a6af61e5f451f31518a3a",
+          "quote": "ANGEL FUND · EST. 2015",
+          "quote_hash": "f39f63bcfaff3386ad32a10f5cfe6030ea3688811a22c69d641aec4ff5237d68"
+        },
+        {
+          "source_id": "alpha_official_fund_name_2026",
+          "source_url": "https://alphastartups.net/",
+          "source_title": "Alpha Startup Fund · 官网版权信息",
+          "source_content_hash": "6a8fdb96c619978b2a697aea9d8915c430a533b3aa0a6af61e5f451f31518a3a",
+          "quote": "© 2015-2026 Alpha Startup Fund",
+          "quote_hash": "a79b3a8ac6b5630ff9c79f908585f7fdd29e1a1fb86f2b8cfd07faab08d6f235"
+        },
+        {
+          "source_id": "alpha_portfolio_brand_2026",
+          "source_url": "https://alphastartups.net/portfolio.html",
+          "source_title": "Alpha Founders · 官方组合页名称",
+          "source_content_hash": "191e5506085a7379586185979596eda77569d051a6d63fbee4cbd5be5014584a",
+          "quote": "Alpha Founders",
+          "quote_hash": "c8e64301624eca431445875db54405d1828b809dc86146451c4327867c68053f"
+        },
+        {
+          "source_id": "alpha_submit_bp_2026",
+          "source_url": "https://alphastartups.net/",
+          "source_title": "Alpha Startups · BP 投递入口",
+          "source_content_hash": "6a8fdb96c619978b2a697aea9d8915c430a533b3aa0a6af61e5f451f31518a3a",
+          "quote": "Submit BP →",
+          "quote_hash": "02b114e5afd0d8d6137d095f8c7a25d6e2f028510227407541fbaf4cc85eccf7"
+        },
+        {
+          "source_id": "alpha_team_career_2026",
+          "source_url": "https://alphastartups.net/team.html",
+          "source_title": "许四清官网团队履历 · 过往任职",
+          "source_content_hash": "0e0b5b64e1d428aadac6f3b68db723caa801d534acda465fa1bb10e2055aefd9",
+          "quote": "He previously served as an investment partner at Sinovation Ventures, CMO at Qihoo 360, and later joined WI Harper Group as Managing Director",
+          "quote_hash": "8762ebe4d6afff5a3f6946bd6c16539a331a368e3e0e2cb5205221578243d9dc"
+        },
+        {
+          "source_id": "alpha_team_years_2026",
+          "source_url": "https://alphastartups.net/team.html",
+          "source_title": "许四清官网团队履历 · 行业经验",
+          "source_content_hash": "0e0b5b64e1d428aadac6f3b68db723caa801d534acda465fa1bb10e2055aefd9",
+          "quote": "With over 20 years of experience in the IT, internet, and telecommunications industries",
+          "quote_hash": "5febc32e4ccd35dd3378e7f2707d9c192233ea781cce29a88a8d1476ee84b66d"
+        },
+        {
+          "source_id": "alpha_team_gang_focus_2026",
+          "source_url": "https://alphastartups.net/team.html",
+          "source_title": "刘罡官网团队履历 · 投资方向",
+          "source_content_hash": "0e0b5b64e1d428aadac6f3b68db723caa801d534acda465fa1bb10e2055aefd9",
+          "quote": "AI-native software and hardware, Embodied AI, and DeepTech opportunities",
+          "quote_hash": "cf2a049a11d6e02f277de090fb838ed8904dffda1409fd1bd2a50178fa800c05"
+        },
+        {
+          "source_id": "alpha_team_sun_career_2026",
+          "source_url": "https://alphastartups.net/team.html",
+          "source_title": "孙畅官网团队履历 · 创业经历",
+          "source_content_hash": "0e0b5b64e1d428aadac6f3b68db723caa801d534acda465fa1bb10e2055aefd9",
+          "quote": "the company she founded in 2005, New Oriental Online (HK.1797, now renamed East Buy), listed on the Hong Kong Stock Exchange in 2019",
+          "quote_hash": "495a8e99df4d7d3907cd8c32103f01ef529be2f2dfadef35fd4f8a0db24c5e46"
+        },
+        {
+          "source_id": "alpha_support_2026",
+          "source_url": "https://alphastartups.net/",
+          "source_title": "Alpha Startups · 官网投后支持介绍",
+          "source_content_hash": "6a8fdb96c619978b2a697aea9d8915c430a533b3aa0a6af61e5f451f31518a3a",
+          "quote": "we help portfolio companies forge business partnerships",
+          "quote_hash": "50873ff2340ee136e2081fb1efb959250f298f9e0f7fdbd70426c404f161ddc1"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Alpha Startups 官网标注基金于 2015 年成立。",
+          "source_hash": "1504161fb9ab0e25d6c89b53ba4e28ced855ddbf45e31af1f292cc63408a270d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

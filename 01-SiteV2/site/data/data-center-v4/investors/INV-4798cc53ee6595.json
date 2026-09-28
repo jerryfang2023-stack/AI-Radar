@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,80 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "ARCH Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "The firm’s investment range and company-building description are self-reported. Portfolio examples do not establish fund-level returns. Trase’s USD 107 million seed round is the company total, not ARCH’s individual investment.",
+      "summary": "ARCH Venture Partners 是一家以科学为先的风险投资机构，围绕颠覆性技术创建并支持公司，尤其是在生命科学领域。它描述了三十多年的公司创建历程以及从早期组建到后期增长的灵活投资方式。联合创始人 Robert Nelsen 和 Keith Crandell 领导一支广泛的投资团队。",
+      "facts": [
+        {
+          "field": "firm_history",
+          "label": "公司历史",
+          "value": "ARCH says it has backed disruptive science companies for more than 30 years.",
+          "source_id": "arch_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "The firm follows scientific advances, partners with founding teams, and sizes investment to company needs, from USD 50,000 to hundreds of millions per company.",
+          "source_id": "arch_about"
+        },
+        {
+          "field": "leadership",
+          "label": "联合创始人",
+          "value": "Robert Nelsen and Keith Crandell are co-founders and managing directors.",
+          "source_id": "arch_team"
+        },
+        {
+          "field": "investment_scope",
+          "label": "公司创建范围",
+          "value": "The firm supports companies through formation and growth using an extended network of partners.",
+          "source_id": "arch_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Trase · 种子轮 · 2026-06-25 · 本轮领投 · 1.07 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "ARCH 的官方投资组合包括 Illumina、Alnylam Pharmaceuticals、Beam Therapeutics 和 Aledade 等公司；其投资组合页面并非经审计的回报记录。",
+          "source_id": "arch_portfolio"
+        },
+        {
+          "description": "ARCH Venture Partners 领投了 Trase 于 2026 年 6 月宣布的 1.07 亿美元种子轮。该轮金额是公司的总融资额，而非 ARCH 的单独投资额。",
           "source_id": "FISRC-9d8b3693de0579b6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "ARCH Venture Partners",
+          "source_id": "arch_about",
+          "url": "https://www.archventure.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "arch_about",
+          "source_url": "https://www.archventure.com/about/",
+          "source_title": "About | ARCH Venture Partners",
+          "source_content_hash": "deb55381ce99fe0a50e94818a1f4d3724e4c4960368844b2ae6d4e32b64b92ee",
+          "quote": "Over 30 years, ARCH has backed disruptive science companies.",
+          "quote_hash": "ce126d1c52b8e40a3af87d82e1747f65604d1c78c57bf64cd22d35d455b38c9c"
+        },
+        {
+          "source_id": "arch_portfolio",
+          "source_url": "https://www.archventure.com/portfolio/",
+          "source_title": "Portfolio | ARCH Venture Partners",
+          "source_content_hash": "aab23a9a17a8559305bb3d855d3aab4d6ae917822d807d38db9b9f52f89152d0",
+          "quote": "We build disruptive companies. Meet them.",
+          "quote_hash": "56935328cf9d33692901e1b1ec461f921f8d3255b0bda2d8bcbf338e1c24ca78"
+        },
+        {
+          "source_id": "arch_team",
+          "source_url": "https://www.archventure.com/team/",
+          "source_title": "Team | ARCH Venture Partners",
+          "source_content_hash": "6d67448cd3f593650fcbbb0b623e7c306128a92aa2581e60bc9fdf5c355f539c",
+          "quote": "Robert Nelsen Co-founder & Managing Director.",
+          "quote_hash": "a5e045ec077216b2a4ba51c163c2c930c0a5df1270cc363d2783ff53e96d9fad"
+        },
         {
           "source_id": "FISRC-9d8b3693de0579b6",
           "source_url": "https://pulse2.com/trase-raises-107-million-seed-round-led-by-arch-venture-partners/",
@@ -161,7 +222,75 @@
           "quote_hash": "514fa3df43415253e44cb5d3bd2de167210aaffa5fd4216f6266c074ec84b63a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "ARCH Venture Partners 是一家以科学为先的风险投资机构，围绕颠覆性技术创建并支持公司，尤其是在生命科学领域。它描述了三十多年的公司创建历程以及从早期组建到后期增长的灵活投资方式。联合创始人 Robert Nelsen 和 Keith Crandell 领导一支广泛的投资团队。",
+          "source_hash": "8247757d963383392d01b6dfe541a8bf828bb4ffd1c3ef5a5fe4edec5e926bc4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "公司历史",
+          "source_hash": "6ff09d1dd9a613bca866c1236c0369b8162c4a65d3d7091e027549647b558cfc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资方式",
+          "source_hash": "3f41267b1933c14f39659eff70c6eef84065a52b97fed3857ba665355c261841",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "联合创始人",
+          "source_hash": "b794f6053de74e3978e8abda725854cc147bc86ee659db38c6174a697894f230",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "公司创建范围",
+          "source_hash": "04452df4f4c921413247e477fdc3460c802860058a7b364bed9ce9c9841c4963",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "ARCH 的官方投资组合包括 Illumina、Alnylam Pharmaceuticals、Beam Therapeutics 和 Aledade 等公司；其投资组合页面并非经审计的回报记录。",
+          "source_hash": "882e22954a37104eedc6128210b255faea305d88587eafbf7922991f7bdba87e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "ARCH Venture Partners 领投了 Trase 于 2026 年 6 月宣布的 1.07 亿美元种子轮。该轮金额是公司的总融资额，而非 ARCH 的单独投资额。",
+          "source_hash": "fc6df03497e2ae5d1e7b10c575959802eec0ffcb7c311d19c9580a4f7389584c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:26.483Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,19 +131,114 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无锡交通集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景及经营数据来自无锡市国资委、无锡市政府和交易所披露，数字均注明对应报告年度。官方历史材料对组建月份分别记为2003年3月和2003年5月13日，档案保留各自来源口径。融资活动仅引用本库收录的一篇华清未央Pre-A+轮报道；该报道未披露无锡交通集团的单独出资额、投资载体或完整组合。公开住所并非已确认的投资项目申报渠道。",
+      "summary": "无锡市交通产业集团有限公司（无锡交通集团）负责经营管理无锡市级交通国有资产，业务涵盖交通运输、工程建设、航空产业、交通科技与制造、交通金融与投资。集团官方报告披露其注册资本约57.45亿元；2024年度报告列示全年完成各类投资项目53项、投资总额超过75.5亿元。融资情报站收录的一篇报道将无锡交通集团列为华清未央Pre-A+轮投资方，但未披露集团单独出资金额或具体投资载体。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公司名称",
+          "value": "无锡市交通产业集团有限公司",
+          "source_id": "wuxi_transport_filing_2025"
+        },
+        {
+          "field": "government_sponsor",
+          "label": "出资人及国资职责",
+          "value": "2025年度财务报表披露，公司出资人为无锡市人民政府；无锡市国资委发布的社会责任报告称集团承担市级交通国有资产经营管理职责。",
+          "source_id": "wuxi_transport_filing_2025"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币57.4546亿元（2025年度财务报表口径）。",
+          "source_id": "wuxi_transport_filing_2025"
+        },
+        {
+          "field": "business_segments",
+          "label": "业务板块",
+          "value": [
+            "交通运输",
+            "工程建设",
+            "航空产业",
+            "交通科技与制造",
+            "交通金融与投资"
+          ],
+          "source_id": "wuxi_transport_history_2022"
+        },
+        {
+          "field": "group_scale_2022",
+          "label": "集团规模（2022年报告口径）",
+          "value": "拥有一级全资及控股企业13家、从业人员1.4万余人。",
+          "source_id": "wuxi_transport_history_2022"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2001-11",
+          "description": "官方社会责任报告称集团前身无锡市交通资产经营有限公司于2001年11月成立。",
+          "source_id": "wuxi_transport_history_2022"
+        },
+        {
+          "date": "2003-05-13",
+          "description": "交易所披露的2025年度财务报表附注称，无锡市政府于2003年5月13日批准由无锡市交通资产经营有限公司改组成立无锡市交通产业集团有限公司；无锡市国资委另一历史报告将更名组建时间记为2003年3月。",
+          "source_id": "wuxi_transport_filing_2025"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：华清未央 · Pre-A轮 · 2026-06-01 · Pre-A+轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "经营数据（2022年度）：营业收入258.8亿元、利润总额4.64亿元；截至2022年底总资产701.56亿元、净资产233.37亿元。",
+          "source_id": "wuxi_transport_results_2022"
+        },
+        {
+          "description": "集团投资活动（2024年度）：完成各类投资项目53项，投资总额超过75.5亿元；其中20项纳入市属国企重点投资项目计划，完成投资24.34亿元。该数据为集团整体项目投资口径。",
+          "source_id": "wuxi_transport_investment_2024"
+        },
+        {
+          "description": "融资披露案例：本库收录的一篇报道将无锡交通集团列为华清未央Pre-A+轮投资方；来源未披露集团单独出资额，也未明确具体基金或投资主体。",
           "source_id": "FISRC-ff45e731b4335bfb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "公开披露住所（非项目申报渠道）",
+          "value": "无锡市人民西路109号",
+          "source_id": "wuxi_transport_filing_2025"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wuxi_transport_history_2022",
+          "source_url": "https://gzw.wuxi.gov.cn/doc/2023/10/23/4089042.shtml",
+          "source_title": "无锡交通集团2022年度履行社会责任报告",
+          "source_content_hash": "04bb93accd7cd8d08ff60beee233c5c95e3357fdfd69ce801c10c0e7c929dd10",
+          "quote": "无锡交通集团前身为2001年11月成立的无锡市交通资产经营有限公司，2003年3月，更名组建为无锡市交通产业集团有限公司。自2008年起，连续入选“中国服务业企业500强”。目前，无锡交通集团注册资本57.45亿元，拥有一级全资及控股企业13家，从业人员1.4万余人，重点业务涵盖交通运输、工程建设、航空产业、交通科技与制造、交通金融与投资五大产业板块。",
+          "quote_hash": "dc191c314afa7a3a455b0aa11246ec9ed37e90fc0d385984bfd8130361a92652"
+        },
+        {
+          "source_id": "wuxi_transport_results_2022",
+          "source_url": "https://gzw.wuxi.gov.cn/doc/2023/10/23/4089042.shtml",
+          "source_title": "无锡交通集团2022年度履行社会责任报告",
+          "source_content_hash": "04bb93accd7cd8d08ff60beee233c5c95e3357fdfd69ce801c10c0e7c929dd10",
+          "quote": "2022年，集团公司圆满完成了各项目标任务，全年完成营收258.8亿元，实现利润总额4.64亿。完成固定资产投资12.7亿元。截至2022年底，集团总资产701.56亿元，净资产233.37亿元，国有资产实现了做强做优做大。",
+          "quote_hash": "5b780efd178538a9f00b9512ca038875a5433689e131ad3a735c70463c06db47"
+        },
+        {
+          "source_id": "wuxi_transport_investment_2024",
+          "source_url": "https://gzw.wuxi.gov.cn/doc/2025/10/17/4667618.shtml",
+          "source_title": "无锡市交通产业集团有限公司2024年度履行社会责任报告",
+          "source_content_hash": "f9f36d1a91634beb79bb485b6d28f87dbab74d4f56609b8ca3a0cfa678f02e4e",
+          "quote": "围绕大交通产业链发展，坚定不移推进以重大项目牵引带动有效投资，以有效投资推动交通产业提质升级的发展路径，全年完成各类投资项目53项、合计投资总额超75.5亿元；20个项目列入市国资委“2024年市属国有企业重点投资项目计划”，全年完成投资24.34亿元，超额完成任务。",
+          "quote_hash": "40a6d9a298789310f517908997767ebe15f73119b4a4ce597c8fb4212d61b042"
+        },
+        {
+          "source_id": "wuxi_transport_filing_2025",
+          "source_url": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/new/2026-04-30/137733_20260430_WO3P.pdf",
+          "source_title": "无锡市交通产业集团有限公司2025年度财务报表附注",
+          "source_content_hash": "b06471173c8fd771a16c44caf2901662a3deda81a4aa0386fd2a1d83c86882f2",
+          "quote": "公司出资人为无锡市人民政府，经无锡市人民政府多次增资，公司注册资本为574,546.00万元；住所：无锡市人民西路109号。",
+          "quote_hash": "9c74fd1a323023ba9b9ce042a74fdfb1daf0daa573fd5ff4f5ab620b74c98676"
+        },
         {
           "source_id": "FISRC-ff45e731b4335bfb",
           "source_url": "https://www.163.com/dy/article/KOB03FS3051984TV.html",
@@ -153,7 +248,7 @@
           "quote_hash": "a4fac0da7ae099590c104c7566eba3cbd007439516751ed419da10baa14a947f"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

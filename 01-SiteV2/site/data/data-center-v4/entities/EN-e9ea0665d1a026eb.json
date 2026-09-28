@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -249,18 +249,6 @@
         "sourceUrl": "https://x.com/_catwu/status/2067674836726694200"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "role": {
-          "text": "claude code + cowork anthropicai，曾任：dagster, scale_ai",
-          "source_hash": "fb245920f821071a2dd7ce5cc9ed5cb5e7177852661e6e41ef7e05854ba94557",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:52:39.239Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "summary": "Cat Wu 是 Anthropic 的产品经理，参与 Claude Code 团队工作。",
       "current_roles": [
@@ -268,11 +256,24 @@
           "title": "产品经理",
           "organization": "Anthropic",
           "source_id": "anthropic_claude_code"
+        },
+        {
+          "title": "产品经理",
+          "organization": "Anthropic",
+          "source_id": "anthropic_cat_wu_claude_code_event"
         }
       ],
-      "career": [],
+      "career": [
+        {
+          "organization": "Anthropic",
+          "title": "产品经理",
+          "period": "官方资料所示现职；起始时间未披露",
+          "description": "Anthropic 官方活动资料将 Cat Wu 列为 Claude Code 活动嘉宾及 Anthropic 产品经理。",
+          "source_id": "anthropic_cat_wu_claude_code_event"
+        }
+      ],
       "education": [],
-      "experience_summary": "Anthropic 官方活动页面列其职务为产品经理，并介绍其参与 Claude Code 开发。",
+      "experience_summary": "Anthropic 官方活动资料将 Cat Wu 列为 Claude Code 活动嘉宾及 Anthropic 产品经理。 任职起始时间、此前完整履历与教育经历未由当前一手来源披露，故不推断。",
       "track_record": [
         {
           "description": "参与 Claude Code 的产品开发与对外交流。",
@@ -287,11 +288,47 @@
           "source_content_hash": "81777e62249576176249dc59113468a687f0335663e9f7bc63ff1d3734b8be51",
           "quote": "Cat Wu — Product Manager, Anthropic. Boris Cherny — Member of Technical Staff, Anthropic Labs.",
           "quote_hash": "c46582f3001b245185267412fa91f83fb778448e430fb5dd9e92389efd86d8ee"
+        },
+        {
+          "source_id": "anthropic_cat_wu_claude_code_event",
+          "source_url": "https://resources.anthropic.com/webinar/claude-code-live",
+          "source_title": "Claude Code Live: Origin Story, Live Demos, & Best Practices | Anthropic Resources",
+          "source_content_hash": "81777e62249576176249dc59113468a687f0335663e9f7bc63ff1d3734b8be51",
+          "quote": "Cat Wu — Product Manager, Anthropic",
+          "quote_hash": "93cc8ed565cdb4442e1cd61d903739e3dd014885963c920464b94584cffaf78c"
         }
       ],
-      "last_verified_at": "2026-09-25",
+      "last_verified_at": "2026-09-26",
       "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "coverage_note": "现职依据机构官方资料核实；未披露的任期、学历与其他经历保持未填写。"
+    },
+    "translations": {
+      "zh-CN": {
+        "role": {
+          "text": "claude code + cowork anthropicai，曾任：dagster, scale_ai",
+          "source_hash": "fb245920f821071a2dd7ce5cc9ed5cb5e7177852661e6e41ef7e05854ba94557",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:52:39.239Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Cat Wu 是 Anthropic 的产品经理，参与 Claude Code 团队工作。",
+          "source_hash": "52b3c1082fde29212590a12ea8697d95b0fab681c8e1f5efb746796c13762ff9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:15.999Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "Anthropic 官方活动资料将 Cat Wu 列为 Claude Code 活动嘉宾及 Anthropic 产品经理。",
+          "source_hash": "f088424fc61702eb3dc8d183264eb4832043324c2fe48d23c191d352adee4ca0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:15.999Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],

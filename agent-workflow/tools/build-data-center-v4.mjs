@@ -14,6 +14,7 @@ import {
   loadPrivateEvidenceEntries,
 } from "./lib/private-evidence-store.mjs";
 import { normalizeEvidenceBody } from "./lib/evidence-body-normalizer.mjs";
+import { evaluateModelAssistCandidate } from "./model-assist-v1.mjs";
 import { isWithdrawnFundingTitle, isPendingFundingTitle } from "./lib/funding-transaction-status.mjs";
 import {
   chinaMarketBasisType,
@@ -111,6 +112,7 @@ const PROPOSAL_ONLY = /\b(?:predicts?|proposes?|suggests?|calls? for)\b|预言|�
 const NEGATED_OR_SPECULATIVE_EVENT = /(?:合作|收购|并购|融资).{0,20}(?:可能性较低|可能性不大|尚无计划|不会|不太可能)|\b(?:unlikely|not expected|no plans?)\b.{0,50}\b(?:partner|acquir|merge|rais)/iu;
 const NON_AI_MERCHANDISE = /\b(?:merch(?:andise)?|basketball|t-?shirts?|hoodies?|apparel|swag)\b|官方周边|篮球|T\s*恤|卫衣/iu;
 const RUMOR = /\b(?:rumou?r|reportedly|leak(?:ed)?)\b|传闻|爆料|泄露|据称|消息称|据.{0,10}消息/iu;
+const PROPOSED_FINANCING_TITLE = /(?:计划|拟|准备|希望|寻求|考虑|开启|启动|洽谈|接触).{0,40}(?:新一轮|融资|募资)|(?:融资|募资|新一轮)(?:意向|计划|方案|洽谈|筹划)|\b(?:plans?|seeks?|seeking|aims?|targets?|prepares?|mulls?|considers?).{0,40}\b(?:raise|funding|financing|round)\b/iu;
 const DISPUTE = /\b(?:disputes?|disputed|denies?|denied|not (?:be )?final|could change)\b|否认|有争议|尚未最终确定|可能变化/iu;
 const IN_PROGRESS = /\b(?:in talks|in discussions|negotiating|seeking to)\b|洽谈|讨论中|正在谈判/iu;
 const PLANNED = /\b(?:plans? to|expected to|will|intends? to|proposed|set to be|to (?:launch|release|deploy|ship|introduce))\b|计划|预计|将|拟/iu;
@@ -125,7 +127,7 @@ const GENERIC_NON_EVENT_TITLE = /^(?:top\s+\d+|\d+\s+best\b|best\b|hire\b)|^\d{4
 const REVIEWED_RETAINED_SOURCE = /^https?:\/\/(?:www\.)?aifundingtracker\.com\/top-50-ai-startups\/?$/iu;
 const QUESTION_HEADLINE = /^(?:(?:can|could|will|would|is|are|do|does|did|should|has|have)\b|.*\bwhat(?:'s| is)\s+left\s+of\b|.{0,40}(?:能否|是否|会不会|可否)|.*还剩什么).*[?？]$/iu;
 const GENERIC_INDEX_TITLE = /^(?:newsroom|enterprise ai news)(?:\s*(?:[\\|｜:—-])\s*.*)?$|^funding breaking news and press releases(?:\s+from\s+.*)?$|^(?:新闻室(?:\s*[\\|｜:—-]\s*.*)?|企业\s*AI\s*新闻|商业新闻融资快讯与新闻稿)$/iu;
-const GENERIC_ROUNDUP_TITLE = /投?融资(?:周报|月报|日报|盘点)|^硬科技投向标[|｜]|^(?:AI\s+giants?|AI\s+companies?|AI\s+startups?)\b.{0,100}\b(?:billions?|millions?|funding|investment|deployment)\b|^AI\s*(?:巨头|公司|初创企业).{0,80}(?:数十亿|数百万|融资|投资|部署)|^latest\s+open\s+(?:models?|artifacts?)\s*(?:\(#?\d+\)|#\d+)?\s*[:：]|^最新(?:开源)?(?:模型|产品|模型与产品)?(?:盘点|汇总)\s*(?:[（(]#?\d+[）)])?\s*[:：]|\b(?:daily|weekly)\s+(?:AI\s+)?(?:roundup|digest)\b|(?:每日|每周|本周).{0,20}(?:汇总|速览|快讯)/iu;
+const GENERIC_ROUNDUP_TITLE = /投?融资(?:周报|月报|日报|盘点)|(?:投资界)?AI(?:周报|月报|日报|盘点)|(?:一级市场|创投通).{0,28}本周.{0,24}(?:(?:\d+|[一二三四五六七八九十百余]+)\s*起融资|融资(?:总额|额))|^硬科技投向标[|｜]|^(?:AI\s+giants?|AI\s+companies?|AI\s+startups?)\b.{0,100}\b(?:billions?|millions?|funding|investment|deployment)\b|^AI\s*(?:巨头|公司|初创企业).{0,80}(?:数十亿|数百万|融资|投资|部署)|^latest\s+open\s+(?:models?|artifacts?)\s*(?:\(#?\d+\)|#\d+)?\s*[:：]|^最新(?:开源)?(?:模型|产品|模型与产品)?(?:盘点|汇总)\s*(?:[（(]#?\d+[）)])?\s*[:：]|\b(?:daily|weekly)\s+(?:AI\s+)?(?:roundup|digest)\b|(?:每日|每周|本周).{0,20}(?:汇总|速览|快讯)/iu;
 
 export function fundingClaimGroupingProblem(claims) {
   const subjects = new Set(claims.map((claim) => cleanString(claim.subject).toLocaleLowerCase()).filter(Boolean));
@@ -259,6 +261,9 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   if (titleIssue) return { accepted: false, reason: titleIssue };
   const reviewedRetainedSource = REVIEWED_RETAINED_SOURCE.test(cleanString(artifact.source_url));
   const sourceLead = cleanString(raw.clean_text || raw.full_text).slice(0, 1400);
+  if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title)) {
+    return { accepted: false, reason: "proposed_financing_not_completed" };
+  }
   if (VERSIONED_DEVELOPER_PACKAGE_TITLE.test(title)
       && VERSIONED_DEVELOPER_PACKAGE_LEAD.test(sourceLead)) {
     return { accepted: false, reason: "versioned_developer_package_not_commercial_event" };
@@ -1131,7 +1136,8 @@ function buildModelClaim(rawId, proposed, evidence, index, status) {
     subject: cleanString(proposed.subject),
     predicate: proposed.event_type,
     object: cleanString(proposed.object),
-    qualifiers: { event_status: status, sequence: index + 1, model_candidate_id: proposed.model_candidate_id },
+    qualifiers: { event_status: status, sequence: index + 1, model_candidate_id: proposed.model_candidate_id,
+      ...(proposed.amount_disclosure === "not_disclosed" ? { funding_amount_status: "not_disclosed" } : {}) },
     source_span: { raw_id: rawId, start: evidence.start, end: evidence.end },
     source_quote: evidence.quote,
     extraction_method: "model_source_span",
@@ -1839,6 +1845,7 @@ function forbiddenKeys(value, trail = "", out = []) {
 }
 
 export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
+  const targetedFundingPolicy = readJson(path.join(outputRoot, date, "targeted-funding-authorization.json"), {});
   const historicalFundingPolicy = options.historicalFundingPolicy
     || readJson(path.join(outputRoot, date, "historical-funding-authorization.json"), {});
   // Keep already published identities stable while admitting new historical cases.
@@ -1907,19 +1914,28 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       ...(acceptedAssistBySource.get(artifact.source_artifact_id) || []),
     ].sort((left, right) => Number(String(right.asset_id).startsWith("HISTORY-")) - Number(String(left.asset_id).startsWith("HISTORY-")))
       .find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
+    const reviewedRepair = modelClaimCandidate?.task_type === "qa_repair"
+      && modelClaimCandidate.review?.decision === "accept"
+      && Boolean(modelClaimCandidate.review?.reviewer)
+      && evaluateModelAssistCandidate(modelClaimCandidate, bodyClean).length === 0;
     const normalizedModelProposal = preferredModelClaim(modelClaimCandidate?.proposal?.claims, modelClaimCandidate?.evidence);
     const proposedModelClaim = normalizedModelProposal.primary;
+    const targetedFundingAllowed = targetedFundingPolicy.schema_version === "TARGETED-FUNDING-AUTHORIZATION-V1"
+      && Boolean(targetedFundingPolicy.reviewed_by)
+      && targetedFundingPolicy.source_refs?.includes(artifact.source_artifact_id)
+      && cleanString(raw.published_at).slice(0, 10) >= targetedFundingPolicy.from
+      && cleanString(raw.published_at).slice(0, 10) <= targetedFundingPolicy.to;
     const sourceEligibility = eventSourceEligibility(raw, artifact, title, date, {
-      eventType: newHistoricalSources.has(artifact.source_artifact_id) ? "funding" : candidateDeterministicRule?.eventType || proposedModelClaim?.event_type || "",
-      allowHistoricalFunding: options.allowHistoricalFunding === true || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
+      eventType: newHistoricalSources.has(artifact.source_artifact_id) ? "funding" : (reviewedRepair ? proposedModelClaim?.event_type : candidateDeterministicRule?.eventType) || proposedModelClaim?.event_type || "",
+      allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
     });
     const authoritativeHistoryClaim = String(modelClaimCandidate?.asset_id || "").startsWith("HISTORY-")
       && historicalFundingAuthorized(raw, artifact, historicalFundingPolicy) && !stablePublishedSources.has(artifact.source_artifact_id);
     const requiresHistoryExtraction = newHistoricalSources.has(artifact.source_artifact_id);
-    const deterministicRule = sourceEligibility.accepted && !authoritativeHistoryClaim && !requiresHistoryExtraction ? candidateDeterministicRule : null;
+    const deterministicRule = sourceEligibility.accepted && !reviewedRepair && !authoritativeHistoryClaim && !requiresHistoryExtraction ? candidateDeterministicRule : null;
     const proposedModelEligibility = proposedModelClaim
       ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date, {
-          allowHistoricalFunding: options.allowHistoricalFunding === true || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
+          allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
         })
       : { accepted: true, reason: "" };
     const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted && (!requiresHistoryExtraction || authoritativeHistoryClaim)
@@ -1989,7 +2005,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       if (rule.eventType === "deployment" && /\bThe Home Depot\b/iu.test(title)) {
         parsed.object = "Gemini Enterprise store phone support";
       }
-      const status = eventStatus(title, bodyClean.slice(0, 1600), rule.eventType);
+      const status = eventStatus(reviewedRepair ? `${parsed.subject} ${parsed.object}` : title, bodyClean.slice(0, 1600), rule.eventType);
       let spans = deterministicRule ? claimCandidates(bodyClean, title, rule, parsed.subject) : [];
       let eventClaimRows = spans.map((span, index) => buildClaim(rawId, rule.eventType, span, parsed, index, status));
       if (!eventClaimRows.length && modelClaimCandidate) {

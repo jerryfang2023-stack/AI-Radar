@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,30 +139,100 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "长沙麓山投资控股集团有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "长沙麓山投资控股集团有限公司是长沙市岳麓区的国有投资与城市建设平台。上海证券交易所2023年债券募集说明书披露其成立时间、注册资本、股东关系和业务范围；2026年9月融资报道将其列为驰芯半导体A+轮联合投资方。",
+      "coverage_note": "公司沿革、股权、注册资本和联络信息取自2023年债券募集说明书，属于该时点披露，不能自动视为当前最新工商与联系人信息。驰芯半导体A+轮报道的“超2亿元”是整轮规模区间，不是麓山控股的出资额；其个人投资金额未披露。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "长沙麓山投资控股集团有限公司",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "ownership",
+          "label": "股权关系（2023年披露）",
+          "value": "债券募集说明书列示为岳麓区政府全资持有的区属国有企业。",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "established",
+          "label": "成立时间",
+          "value": "2001年9月7日",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "capital",
+          "label": "注册资本（2023年披露）",
+          "value": "人民币10亿元",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "business_scope",
+          "label": "公开业务范围（2023年披露）",
+          "value": "城市基础设施投资、土地整理、房地产及酒店相关业务等。",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "field": "registered_address",
+          "label": "公开披露地址（2023年募集说明书）",
+          "value": "长沙市岳麓大道385号3楼",
+          "source_id": "lushan_bond_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2001-09-07",
+          "description": "公司成立。",
+          "source_id": "lushan_bond_2023"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · 本轮参投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026年9月融资报道将麓山控股列为驰芯半导体A+轮联合参投方。报道披露该轮融资超过2亿元，但没有披露麓山控股的单家出资额。",
           "source_id": "FISRC-adff65727174a119"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "公司公开联系电话（2023年募集说明书）",
+          "value": "0731-88672835",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "kind": "phone",
+          "label": "债券信息披露联系人周玉林（2023年材料所列）",
+          "value": "0731-85519878",
+          "source_id": "lushan_bond_2023"
+        },
+        {
+          "kind": "address",
+          "label": "公司公开地址（2023年募集说明书）",
+          "value": "长沙市岳麓大道385号3楼",
+          "source_id": "lushan_bond_2023"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lushan_bond_2023",
+          "source_url": "https://static.sse.com.cn/bond/bridge2/disclosure/announcement/c/202312/035219_20231214_JPDI.pdf",
+          "source_title": "上海证券交易所：长沙麓山投资控股集团有限公司公司债券募集说明书",
+          "source_content_hash": "a81f6c6083d79b01f731ef20b65f4db93af66a15eef4a8c9c87d2942939b8228",
+          "quote": "长沙麓山投资控股集团有限公司。",
+          "quote_hash": "9cc17a6de7bc40d4d6cde546fae6b9ff833fcf1ec05f8cc954406bc8d02603f2"
+        },
         {
           "source_id": "FISRC-adff65727174a119",
           "source_url": "https://news.pedaily.cn/202609/569521.shtml",
-          "source_title": "驰芯半导体完成超两亿元A+轮融资，致力于构筑物理世界智能化的感知底座",
+          "source_title": "驰芯半导体完成超两亿元A+轮融资",
           "source_content_hash": "03e6bfdfc45c129c",
-          "quote": "湖南金霞盛世股权投资基金合伙企业（有限合伙）（下称“金霞盛世”）、上海移远通信技术股份有限公司（下称“移远通信”）、长沙麓山投资控股集团有限公司（下称“麓山控股”）联合参投",
-          "quote_hash": "11ca97fbe8513dc5e03a93bc6adb01108880c7cc8d01ab11f897958826f6b0b2"
+          "quote": "长沙麓山投资控股集团有限公司",
+          "quote_hash": "35e213acf6c4047b81e79dd5a7781ea4576c0374a4cf1a43f04b7cb18457a110"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }

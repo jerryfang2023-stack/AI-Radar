@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,110 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Arali Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2024-08-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、行业、票面金额和团队支持方式来自 Arali Ventures 官网自述。Quash 的 USD 635K 是所披露轮次总额，未披露 Arali Ventures 的单独出资额；组合示例并不完整。",
+      "summary": "Arali Ventures 是一家面向 B2B 和企业技术的早期投资机构。官网列出企业 AI、工业 AI、金融科技基础设施、健康科技、B2B 商务和气候等领域，主要投预种子和种子阶段，并称通常领投或共同领投。官网公开的常见投资范围为 USD 250K–1.5m，且愿意支持产品或收入形成前的团队。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "预种子轮与种子轮；官网称可在产品或收入形成前投资。",
+          "source_id": "arali_stage"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "官网披露的常见投资范围",
+          "value": "USD 250K–1.5m，并为后续轮次预留资金。",
+          "source_id": "arali_check_size"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示行业",
+          "value": [
+            "企业 AI",
+            "工业 AI",
+            "金融科技基础设施",
+            "健康科技",
+            "B2B 商务",
+            "气候科技"
+          ],
+          "source_id": "arali_sectors"
+        },
+        {
+          "field": "leadership_support",
+          "label": "投资方式与创始人支持",
+          "value": "官网称通常领投或共同领投，并以 Founder First 合作方式支持创始团队。",
+          "source_id": "arali_stage"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网展示的组合案例",
+          "value": [
+            "Protecto",
+            "Fluxgen",
+            "Growcoms",
+            "Oivi"
+          ],
+          "source_id": "arali_sectors"
+        }
+      ],
       "milestones": [],
+      "experience_summary": "Arali Ventures 官网强调创始人优先的合作方式，并称机构会通过辅导和投资人网络支持企业成长。其官网列出 Protecto、Fluxgen、Growcoms 与 Oivi 等组合公司标识；该清单仅作为官网展示的例子，不应视为完整组合。",
       "track_record": [
         {
-          "description": "融资来源记录：Quash · 预种子轮 · 2024-08-20 · 本轮领投 · $635,000。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资记录：Quash · 预种子轮 · 2024-08-20 · 领投；公开报道披露融资总额为 USD 635K，未披露 Arali Ventures 单独出资额。此为本库收录案例，不代表完整投资组合。",
           "source_id": "FISRC-70b20379e494fa2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与项目介绍入口",
+          "value": "Arali Ventures",
+          "url": "https://araliventures.in/",
+          "source_id": "arali_stage"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "contactus@araliventures.in",
+          "url": "https://araliventures.in/",
+          "source_id": "arali_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "arali_stage",
+          "source_url": "https://araliventures.in/",
+          "source_title": "Arali Ventures",
+          "source_content_hash": "41fdc3c590be77c63acb31f24792c287681feb3ca8084d0fa8d174f3175b0f64",
+          "quote": "We invest at pre-seed and seed. We are comfortable backing companies before revenue, and even before product.",
+          "quote_hash": "73d97a5ca9011c7b7e07bd536e0376df2055f04af112a4dc26e814c27922fd93"
+        },
+        {
+          "source_id": "arali_check_size",
+          "source_url": "https://araliventures.in/",
+          "source_title": "Arali Ventures",
+          "source_content_hash": "41fdc3c590be77c63acb31f24792c287681feb3ca8084d0fa8d174f3175b0f64",
+          "quote": "We typically lead rounds with investments in the range of $250k to $1.5 mn, with reserves for follow-on investments.",
+          "quote_hash": "a038ffe3e109906a1bc63f59eb2662011401fe215d2e5878130530ca29669473"
+        },
+        {
+          "source_id": "arali_sectors",
+          "source_url": "https://araliventures.in/",
+          "source_title": "Arali Ventures",
+          "source_content_hash": "41fdc3c590be77c63acb31f24792c287681feb3ca8084d0fa8d174f3175b0f64",
+          "quote": "We invest in B2B and enterprise technology across Enterprise AI, Industrial AI, Fintech Infrastructure, HealthTech, B2B Commerce, and Climate.",
+          "quote_hash": "a9c59342325cee2c705044c9e5b3a2f23e6411fef37e4731605bb451b0cfd7e1"
+        },
+        {
+          "source_id": "arali_contact",
+          "source_url": "https://araliventures.in/",
+          "source_title": "Arali Ventures",
+          "source_content_hash": "41fdc3c590be77c63acb31f24792c287681feb3ca8084d0fa8d174f3175b0f64",
+          "quote": "Building something ambitious? Start a conversation ↗ (contactus@araliventures.in)",
+          "quote_hash": "d166100f312942343ffbe9684cc79d51409a763849043f2a1dc69ffcd4b4a5f0"
+        },
         {
           "source_id": "FISRC-70b20379e494fa2f",
           "source_url": "https://incubees.com/agentic-ai-startup-quash-raised-635k-pre-seed-funding-from-arali-ventures",
@@ -161,7 +252,7 @@
           "quote_hash": "a0c0c5c5432cacaba7d7f5b28669c1f81746b20dfba5b10f0d11542cb302c83b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

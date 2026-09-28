@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,84 @@
       }
     ],
     "public_profile": {
+      "summary": "融资库中的“上海人工智能基金”按上海市创业投资引导基金披露的法定名称，匹配至上海人工智能产业投资基金及其有限合伙主体。该基金2019年启动，首期目标规模为人民币100亿元，采取直投与子基金配置结合的方式，聚焦人工智能核心技术和关键应用。",
+      "coverage_note": "融资记录只使用“上海人工智能基金”简称，未说明具体投资载体或出资金额。本档案依据2019年政府引导基金公开的法定名称与基金信息识别主体；上海国投先导后来公布的225亿元人工智能母基金是另一只基金，不将两者规模或投资活动合并。2019年100亿元是首期目标规模，不代表当前实缴或管理余额。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海人工智能基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法定基金名称",
+          "value": "上海人工智能产业股权投资基金合伙企业（有限合伙）；公开设立活动称“上海人工智能产业投资基金”。",
+          "source_id": "sh_ai_2019_legal"
+        },
+        {
+          "field": "fundraising",
+          "label": "首期目标规模",
+          "value": "人民币100亿元，属于2019年公开发布的首期目标规模；同期提出的千亿级基金群是规划目标。",
+          "source_id": "sh_ai_2019_launch"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "直接投资与配置子基金相结合，按“整体设计、分期实施”运行。",
+          "source_id": "sh_ai_2019_launch"
+        },
+        {
+          "field": "focus",
+          "label": "投资方向",
+          "value": "人工智能核心技术和关键应用；引导基金页面将该基金投资领域描述为新一代信息技术和高端装备制造。",
+          "source_id": "sh_ai_2019_legal"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019-08-31",
+          "description": "上海人工智能产业投资基金发起人签约。",
+          "source_id": "sh_ai_2019_launch"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：银河通用 · 轮次未披露 · 2026-03-02 · 老股东持续加码 · 25亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026年银河通用融资报道将上海人工智能基金列为持续加码的老股东之一；报道未说明具体投资载体或该基金单笔金额。",
           "source_id": "FISRC-adaac360139469bd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金信息来源",
+          "value": "上海市创业投资引导基金公开页面",
+          "url": "https://vcgfsh.org.cn/index/invest/index/id/2.html",
+          "source_id": "sh_ai_2019_legal"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sh_ai_2019_launch",
+          "source_url": "https://www.vcgfsh.org.cn/index/news/detail/id/82.html",
+          "source_title": "助力上海人工智能高地建设 上海人工智能产业投资基金在沪签约成立",
+          "source_content_hash": "361438f7d5c53cb2da88c47987415af55dd110def84357f6f402999603d889a7",
+          "quote": "基金按照“整体设计，分期实施”规划，首期目标规模人民币100亿元，坚持市场化、专业化、国际化运作。",
+          "quote_hash": "ee871759d153c21bcc1d5682cf91a8954f20477f09864548406d86226aa8de91"
+        },
+        {
+          "source_id": "sh_ai_2019_legal",
+          "source_url": "https://vcgfsh.org.cn/index/invest/index/id/2.html",
+          "source_title": "上海市创业投资引导基金 - 投资组合",
+          "source_content_hash": "bede08ac77765f80533299db2dfa4edcabad35a014ec8ffe27bfa363c211cf54",
+          "quote": "上海人工智能产业股权投资基金合伙企业（有限合伙）；基金规模100亿元；引导基金出资9亿元；成立时间2019年12月31日。",
+          "quote_hash": "2b961a13bde1bb24fd27b8626cac933aadad7277f5016970485e4abc31b7075b"
+        },
+        {
+          "source_id": "sh_ai_later_motherfund",
+          "source_url": "https://www.ssci-leadingfund.com/ai/",
+          "source_title": "创新策源·全球布局 - 人工智能母基金",
+          "source_content_hash": "f8e1fb1729500fe596a0fc993f932287d5bfe22be33b672361c5d226d9a54abd",
+          "quote": "人工智能母基金规模225亿元；重点布局AI算力、数据语料、大模型、具身智能、端侧AI和AI+产业。",
+          "quote_hash": "60798c42f0337e896975038b4dfb0717c06e5125a1f359b4871223d2c42cef55"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
@@ -153,7 +216,7 @@
           "quote_hash": "8b03b2eb258a2c20e883545d8291754ece6ec15611e4865efacc00d3b25b23f5"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

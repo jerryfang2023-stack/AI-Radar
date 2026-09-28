@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -153,25 +153,117 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "North Island Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "North Island Ventures（NIV）是 2020 年成立的早期科技投资机构，创始团队由 Travis Scher、James Hutchins 和 Glenn Hutchins 组成。其网站披露的投资范围包括区块链、加密货币、金融科技、企业软件及数字资产，典型支票为 50 万至 500 万美元。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2020 年，由 Travis Scher、James Hutchins 与 Glenn Hutchins 创立。",
+          "source_id": "northisland_team"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段与支票范围",
+          "value": "早期公司；官网披露的投资额通常为 50 万至 500 万美元。",
+          "source_id": "northisland_portfolio"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资范围",
+          "value": [
+            "区块链",
+            "加密货币与数字资产",
+            "金融科技",
+            "企业软件",
+            "早期科技公司"
+          ],
+          "source_id": "northisland_privacy"
+        },
+        {
+          "field": "leadership_team",
+          "label": "创始管理团队",
+          "value": [
+            "Travis Scher — 联合创始人、Managing Partner",
+            "James Hutchins — 联合创始人、General Partner",
+            "Glenn Hutchins — 联合创始人、董事长"
+          ],
+          "source_id": "northisland_team"
+        },
+        {
+          "field": "glenn_hutchins_background",
+          "label": "Glenn Hutchins 履历与关联机构",
+          "value": "官网简介称 Glenn Hutchins 曾共同创办私募股权公司 Silver Lake；目前担任 Santander、CoreWeave 董事，并参与 GIC 投资委员会及国际顾问委员会等机构职务。",
+          "source_id": "northisland_team"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网组合方向示例",
+          "value": [
+            "全球支付与银行基础设施",
+            "稳定币支付与实时支付",
+            "AI 投资工具",
+            "消费应用",
+            "链上银行"
+          ],
+          "source_id": "northisland_portfolio"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020",
+          "description": "Travis Scher、James Hutchins 与 Glenn Hutchins 创立 North Island Ventures。",
+          "source_id": "northisland_team"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Venice AI · A轮 · 2026-07-01 · 本轮参投 · 6500万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Venice AI · Series A · 2026-07-01 · TechCrunch 与 The Block 分别报道 North Island Ventures 参与其 6500 万美元融资；两篇报道指向同一轮融资，金额是轮次总额，并非 North Island 的单笔投资。",
           "source_id": "FISRC-41cdbf30cbfd4eed"
         },
         {
-          "description": "融资来源记录：Venice AI · A轮 · 2026-07-01 · 本轮参投 · 6500万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "The Block 对 Venice AI 同一笔 Series A 的报道也列出 North Island Ventures；这是交叉佐证，不另计一笔投资。",
           "source_id": "FISRC-831c2961f3373587"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "创立信息、团队履历、投资阶段和支票范围来自 North Island 官网及其隐私政策。Venice AI 2026 年 6500 万美元为 Series A 总额，North Island Ventures 被两家媒体列为参投方；The Block 报道是同一轮的交叉佐证，不是第二笔融资。",
+      "experience_summary": "创始团队公开履历涵盖风险投资、创业及大型私募股权投资。Glenn Hutchins 曾创立 Silver Lake，官网另列其在 Santander、CoreWeave、GIC 等机构的现任职务。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资组合",
+          "value": "North Island Ventures",
+          "url": "https://northisland.ventures/",
+          "source_id": "northisland_portfolio"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "northisland_team",
+          "source_url": "https://northisland.ventures/team",
+          "source_title": "Team | North Island Ventures",
+          "source_content_hash": "b31ea041400b80ea85d091dc90d8a474d81854bd6893bd9f7f23605b7228a430",
+          "quote": "NIV was founded in 2020 by Travis Scher, James Hutchins, and Glenn Hutchins.",
+          "quote_hash": "2e38937d338fafb60c7526a42a6b5dcd841895d2355f59186b04385130191e3b"
+        },
+        {
+          "source_id": "northisland_portfolio",
+          "source_url": "https://northisland.ventures/portfolio",
+          "source_title": "Portfolio | North Island Ventures",
+          "source_content_hash": "a51785d92af7111b662677521caf7c447c0a3665c8524a8cad4aaa697127b954",
+          "quote": "We invest $500k-$5M checks in early-stage companies that align with this mission.",
+          "quote_hash": "dba35248f68103045217a9823d8f4ac41bfa865a06c74d64ad4212eb23f4b244"
+        },
+        {
+          "source_id": "northisland_privacy",
+          "source_url": "https://northisland.ventures/privacy-policy",
+          "source_title": "Privacy Policy | North Island Ventures",
+          "source_content_hash": "9c1737c692a2d14da68775c336c03b7deb852a77aff1005fc4fac97a8e730b4e",
+          "quote": "We are a venture capital firm that invests in early stage, technology-related companies including, without limitation, those in the blockchain, cryptocurrency, fintech, and enterprise software sectors.",
+          "quote_hash": "0de2bbead0f2aff1a4dd6ff30e4691d0b9dfbc312f58957d163591cfeb115523"
+        },
         {
           "source_id": "FISRC-41cdbf30cbfd4eed",
           "source_url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off",
@@ -189,7 +281,43 @@
           "quote_hash": "f99d233087df9c799c8e8b7c994fd15a7ddc145d8d594f19c79d263532ad40c3"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[4].label": {
+          "text": "Glenn Hutchins 履历与关联机构",
+          "source_hash": "c327f2606fd82bc0f140c6e50cdca0136ffd9bf6ce92543d4254c4b091aa5d22",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Travis Scher、James Hutchins 与 Glenn Hutchins 创立 North Island Ventures。",
+          "source_hash": "47b35d20e3ab01fc57ee448d416f19229633a707b4daea30ab6e7208dbe816b5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Venice AI · Series A · 2026-07-01 · TechCrunch 与 The Block 分别报道 North Island Ventures 参与其 6500 万美元融资；两篇报道指向同一轮融资，金额是轮次总额，并非 North Island 的单笔投资。",
+          "source_hash": "18e20e6cc400e7192ee63dbf53369b8fb046dbf863981e18b47fb7f70e2470e3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "The Block 对 Venice AI 同一笔 Series A 的报道也列出 North Island Ventures；这是交叉佐证，不另计一笔投资。",
+          "source_hash": "86a7a440c7b4cdec413fb196fe01dffe663af636b4ee5f1d8c80a4f9fc4170a7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

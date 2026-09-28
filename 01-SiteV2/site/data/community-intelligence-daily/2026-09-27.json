@@ -1,0 +1,5738 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-27T00:34:27.732Z",
+    "columnVersion": "CINT-V1.4.2-vi-alignment",
+    "scysAcquisition": "browser",
+    "resourceAssociation": "keyword_match_only_not_verified_relationship",
+    "cdpUrl": "http://127.0.0.1:9333",
+    "scrolls": 1,
+    "homeDetailLimit": 6,
+    "searchDetailLimit": 1,
+    "searchLimit": 8,
+    "selectedKeywords": [
+      {
+        "group": "industry",
+        "keyword": "本地生活"
+      },
+      {
+        "group": "industry",
+        "keyword": "餐饮"
+      },
+      {
+        "group": "industry",
+        "keyword": "外贸"
+      },
+      {
+        "group": "industry",
+        "keyword": "跨境电商"
+      },
+      {
+        "group": "industry",
+        "keyword": "企业培训"
+      },
+      {
+        "group": "industry",
+        "keyword": "招聘"
+      },
+      {
+        "group": "industry",
+        "keyword": "财税"
+      },
+      {
+        "group": "scenario",
+        "keyword": "获客"
+      }
+    ],
+    "updateMechanism": {
+      "dailyFeed": "生财优先通过 MCP 查询最近 24 小时帖子并读取详情；破局沿用浏览器信息流。分页覆盖单独记录。",
+      "targetedSearch": "再按关键词池轮询搜索行业、场景、工具、机会词，补充垂直案例和历史高价值内容。",
+      "dedupe": "按原帖 URL 优先去重；没有详情 URL 时按来源 + 规范化标题/正文指纹去重，并合并多个命中关键词。",
+      "valueScoring": "按资料链接、结果信号、可复用方法、工具/流程密度、痛点/需求信号、商业结果等计算价值分，高价值内容靠前。",
+      "login": "生财复用 Codex OAuth，采集不自动登录；MCP 不可用时回退浏览器。破局复用专用浏览器登录态。"
+    },
+    "errors": [],
+    "warnings": [
+      {
+        "source": "scys",
+        "mode": "mcp-fallback",
+        "message": "MCP unavailable; using existing browser collection without reauthentication"
+      }
+    ],
+    "note": "Read-only collection from logged-in community pages. Private document contents are not bypassed.",
+    "date": "2026-09-27",
+    "translation": {
+      "provider": "deepseek",
+      "required": 0,
+      "translated": 0,
+      "completedAt": "2026-09-27T00:34:32.181Z"
+    }
+  },
+  "sources": {
+    "scys": {
+      "name": "生财有术",
+      "url": "https://scys.com/"
+    },
+    "aipoju": {
+      "name": "AI破局",
+      "url": "https://aipoju.com/index"
+    }
+  },
+  "keywordGroups": {
+    "industry": [
+      "留学",
+      "教育",
+      "健身房",
+      "本地生活",
+      "餐饮",
+      "外贸",
+      "跨境电商",
+      "企业培训",
+      "招聘",
+      "财税"
+    ],
+    "scenario": [
+      "获客",
+      "成交",
+      "交付",
+      "私域",
+      "自动化",
+      "内容生产",
+      "客服",
+      "销售",
+      "SOP",
+      "知识库"
+    ],
+    "tools": [
+      "Codex",
+      "Claude Code",
+      "n8n",
+      "Dify",
+      "Coze",
+      "Cursor",
+      "Obsidian",
+      "飞书",
+      "RPA",
+      "ComfyUI"
+    ],
+    "opportunity": [
+      "订单",
+      "营收",
+      "变现",
+      "月入",
+      "降本",
+      "提效",
+      "求助",
+      "需求",
+      "代运营",
+      "工具包"
+    ]
+  },
+  "links": [
+    {
+      "href": "https://q61jsosjgx.feishu.cn/wiki/N9EPwAke0ifSz1klpLvcHrDZnAc?from=from_copylink",
+      "text": "https://q61jsosjgx.feishu.cn/wiki/N9EPwAke0ifSz1klpLvcHrDZnAc?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/WKHRw6Cldih34RkQU1WcCqvan5e?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/WKHRw6Cldih34RkQU1WcCqvan5e?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/WvXOwlNaJi7a9tkuCIWceYu4nRh?fromScene=spaceOverview",
+      "text": "https://my.feishu.cn/wiki/WvXOwlNaJi7a9tkuCIWceYu4nRh?fromScene=spaceOverview",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/TQGXwKpC0igIwxkP76zcFyyenIe?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/TQGXwKpC0igIwxkP76zcFyyenIe?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/ZkoKwh6nBi0WOgkWjnLcROjqnxr",
+      "text": "https://my.feishu.cn/wiki/ZkoKwh6nBi0WOgkWjnLcROjqnxr",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/E1QuwT84oiQ3ftkmb5PcXN3tnqd?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/E1QuwT84oiQ3ftkmb5PcXN3tnqd?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://changyiwh.feishu.cn/wiki/LdDbwzUSEirU9AkGTzHc5EQknog?from=from_copylink",
+      "text": "https://changyiwh.feishu.cn/wiki/LdDbwzUSEirU9AkGTzHc5EQknog?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://ccnx8k9v2rxx.feishu.cn/wiki/Xv1kw856niEfggkU7ercqHoKnRg?from=from_copylink",
+      "text": "https://ccnx8k9v2rxx.feishu.cn/wiki/Xv1kw856niEfggkU7ercqHoKnRg?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/RH2AdmW1Wocq3yxfhKHcwX6nnMg?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/RH2AdmW1Wocq3yxfhKHcwX6nnMg?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://ai.feishu.cn/wiki/YweUwf3ubiTQ8Kk7wAKct2q1nlg",
+      "text": "https://ai.feishu.cn/wiki/YweUwf3ubiTQ8Kk7wAKct2q1nlg",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/BNa2wE1VAis4tdkz1ercl8j5naf",
+      "text": "https://my.feishu.cn/wiki/BNa2wE1VAis4tdkz1ercl8j5naf",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://bcn9v3z7nkgt.feishu.cn/wiki/K3DPweFeqiuJwrkGS9XcKD8enKf?from=from_copylink",
+      "text": "https://bcn9v3z7nkgt.feishu.cn/wiki/K3DPweFeqiuJwrkGS9XcKD8enKf?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://uv31v1xfgt.feishu.cn/docx/GjqAdObUGoqBeHxWCefc20ugngc?from=from_copylink",
+      "text": "https://uv31v1xfgt.feishu.cn/docx/GjqAdObUGoqBeHxWCefc20ugngc?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://scnycu2l5fxt.feishu.cn/wiki/K9SVwLRQ4ibRbLkNSgUctxhsnmJ?from=from_copylink",
+      "text": "https://scnycu2l5fxt.feishu.cn/wiki/K9SVwLRQ4ibRbLkNSgUctxhsnmJ?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/LxYVdQkSdoqKpQxyCDIcHvjCnyc",
+      "text": "https://my.feishu.cn/docx/LxYVdQkSdoqKpQxyCDIcHvjCnyc",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://xiyangshiai.feishu.cn/docx/Ysg2dBXAsouYE5xZBkwcDxJ8n2f?from=from_copylink",
+      "text": "https://xiyangshiai.feishu.cn/docx/Ysg2dBXAsouYE5xZBkwcDxJ8n2f?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/YLxGw48L8ig1eqkazfmcVNA5n7b?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/YLxGw48L8ig1eqkazfmcVNA5n7b?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://zaoqin888.feishu.cn/wiki/Wfzfw8jh8icF4mkFn17cSpA2npd?from=from_copylink",
+      "text": "https://zaoqin888.feishu.cn/wiki/Wfzfw8jh8icF4mkFn17cSpA2npd?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/SIwHwEpb5iSZlmk76bKcAXYCnLc?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/SIwHwEpb5iSZlmk76bKcAXYCnLc?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://la5rnop5jpq.feishu.cn/wiki/JPH9wQi8ki8CKXkypTfcx0LOnjc",
+      "text": "https://la5rnop5jpq.feishu.cn/wiki/JPH9wQi8ki8CKXkypTfcx0LOnjc",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://d16rg8unadx.feishu.cn/docx/ILB6dyW6EoYKSfxQ5lSc2X47nUg?from=from_copylink",
+      "text": "https://d16rg8unadx.feishu.cn/docx/ILB6dyW6EoYKSfxQ5lSc2X47nUg?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://camb9ggq7c5.feishu.cn/wiki/QbyLwUmVOiyQ4BkjnTHcPiPynye?from=from_copylink",
+      "text": "https://camb9ggq7c5.feishu.cn/wiki/QbyLwUmVOiyQ4BkjnTHcPiPynye?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://eqc9f6vzuhv.feishu.cn/wiki/QyrIw2zPKi7sJFkCEuqcwfVqnfc?from=from_copylink",
+      "text": "https://eqc9f6vzuhv.feishu.cn/wiki/QyrIw2zPKi7sJFkCEuqcwfVqnfc?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://aaf55djl41.feishu.cn/wiki/HqruwMFlIiDwJckncrWcsQZnnRw?from=from_copylink",
+      "text": "https://aaf55djl41.feishu.cn/wiki/HqruwMFlIiDwJckncrWcsQZnnRw?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://hcnttk62jhvi.feishu.cn/docx/VlOndVQfKofr0AxYo1wcSsE1nGb",
+      "text": "https://hcnttk62jhvi.feishu.cn/docx/VlOndVQfKofr0AxYo1wcSsE1nGb",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://ocneb07gmxh0.feishu.cn/wiki/J33GwFrKUiQedRkshO0cPxl3nOh",
+      "text": "https://ocneb07gmxh0.feishu.cn/wiki/J33GwFrKUiQedRkshO0cPxl3nOh",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/MXladDnFFoTesXxQtINcbjOynBc?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/MXladDnFFoTesXxQtINcbjOynBc?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://xa06j6z232m.feishu.cn/wiki/Rf6awWO1TixRVHkSDNycQ9e5nof?from=from_copylink",
+      "text": "https://xa06j6z232m.feishu.cn/wiki/Rf6awWO1TixRVHkSDNycQ9e5nof?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://ai.feishu.cn/wiki/OkI3wsq6OiI2d0kK1tecdeNwnWe",
+      "text": "https://ai.feishu.cn/wiki/OkI3wsq6OiI2d0kK1tecdeNwnWe",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://hcnhqzggrpmv.feishu.cn/docx/HgiAdCw3Go4HZSxHDG9cRlCsnre?from=from_copylink",
+      "text": "https://hcnhqzggrpmv.feishu.cn/docx/HgiAdCw3Go4HZSxHDG9cRlCsnre?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://fcnubuhvffh5.feishu.cn/wiki/X7scwWN1BiWF2lkQEnscC1Oln9d?from=from_copylink",
+      "text": "https://fcnubuhvffh5.feishu.cn/wiki/X7scwWN1BiWF2lkQEnscC1Oln9d?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/ET83wqQOsi84WQkve1OcyZtnn7j?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/ET83wqQOsi84WQkve1OcyZtnn7j?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://hcn4ntl46fs6.feishu.cn/wiki/Og4MwkKsPiEHk3ku2Nmct5ltnGb?from=from_copylink",
+      "text": "https://hcn4ntl46fs6.feishu.cn/wiki/Og4MwkKsPiEHk3ku2Nmct5ltnGb?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/XgoZdzn3Oo5YiRxrz22c9BoOn1f?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/XgoZdzn3Oo5YiRxrz22c9BoOn1f?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://aaf55djl41.feishu.cn/wiki/ZqYAwXPrSijqP9kcgJic22JYnQb?from=from_copylink",
+      "text": "https://aaf55djl41.feishu.cn/wiki/ZqYAwXPrSijqP9kcgJic22JYnQb?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://aaf55djl41.feishu.cn/wiki/Be43wfvcOiNa6JkqbqLc5v7tnvb?from=from_copylink",
+      "text": "https://aaf55djl41.feishu.cn/wiki/Be43wfvcOiNa6JkqbqLc5v7tnvb?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/MGQtwRc6Bifc4vkoJakcSa7hncc?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/MGQtwRc6Bifc4vkoJakcSa7hncc?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/HfiYdnXZRofshOxjxmucZEfwncD?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/HfiYdnXZRofshOxjxmucZEfwncD?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://axsppz4oyvj.feishu.cn/wiki/FpI1wyxzAiqHLekyRotcwDjsnKf",
+      "text": "https://axsppz4oyvj.feishu.cn/wiki/FpI1wyxzAiqHLekyRotcwDjsnKf",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://ucn5q2obpngg.feishu.cn/wiki/Glksw17mOiS6TNkQWkQc0kpLnoe?from=from_copylink",
+      "text": "https://ucn5q2obpngg.feishu.cn/wiki/Glksw17mOiS6TNkQWkQc0kpLnoe?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://baliangai.feishu.cn/wiki/WQxHwIxxWifqeeksrikcPeQUnqc",
+      "text": "https://baliangai.feishu.cn/wiki/WQxHwIxxWifqeeksrikcPeQUnqc",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://aaf55djl41.feishu.cn/wiki/QWpswMAliidWdhkB65ic8yZjnoT?from=from_copylink",
+      "text": "https://aaf55djl41.feishu.cn/wiki/QWpswMAliidWdhkB65ic8yZjnoT?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/LRNww0GPMi9kGnkbGXLcSx7unLe?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/LRNww0GPMi9kGnkbGXLcSx7unLe?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/AbUkwN4oCiVzELkL2kfcUYt1nfc?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/AbUkwN4oCiVzELkL2kfcUYt1nfc?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://acn9dtv7vl3o.feishu.cn/docx/GCo1diFJtoesn5xyZw8c5m2xnHg?from=from_copylink",
+      "text": "https://acn9dtv7vl3o.feishu.cn/docx/GCo1diFJtoesn5xyZw8c5m2xnHg?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://acn9dtv7vl3o.feishu.cn/docx/Me6Wdr4ECoYFvWxgbo6c8s4HnIf?from=from_copylink",
+      "text": "https://acn9dtv7vl3o.feishu.cn/docx/Me6Wdr4ECoYFvWxgbo6c8s4HnIf?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://acn9dtv7vl3o.feishu.cn/docx/XbVvdIVOhoDJ1HxM3WZcFlx3ncg?from=from_copylink",
+      "text": "https://acn9dtv7vl3o.feishu.cn/docx/XbVvdIVOhoDJ1HxM3WZcFlx3ncg?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://acn9dtv7vl3o.feishu.cn/docx/GpgYdKGBbosZXyxfZKoc2Op7nTd?from=from_copylink",
+      "text": "https://acn9dtv7vl3o.feishu.cn/docx/GpgYdKGBbosZXyxfZKoc2Op7nTd?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/AsS1wUPeViDQtdk3MSSceUn9nhe",
+      "text": "https://my.feishu.cn/wiki/AsS1wUPeViDQtdk3MSSceUn9nhe",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/E8OIdQvBtoLmCTxQ4qLcShDYnIh?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/E8OIdQvBtoLmCTxQ4qLcShDYnIh?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://pcny3fn0ksgd.feishu.cn/wiki/EDp0wzW4Mi8vBQkjG3RcgGQQnbe?from=from_copylink",
+      "text": "https://pcny3fn0ksgd.feishu.cn/wiki/EDp0wzW4Mi8vBQkjG3RcgGQQnbe?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://kcnejdl74i8n.feishu.cn/docx/Dmlfdk5ChoSL1oxG2foc7qd9nIh",
+      "text": "https://kcnejdl74i8n.feishu.cn/docx/Dmlfdk5ChoSL1oxG2foc7qd9nIh",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://ccnx8k9v2rxx.feishu.cn/docx/COmZdNr1koPMtcxwuqociQ9wnye?from=from_copylink",
+      "text": "https://ccnx8k9v2rxx.feishu.cn/docx/COmZdNr1koPMtcxwuqociQ9wnye?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://cxqeimz77vr.feishu.cn/docx/J73Zdo89qomctWxEI3ic6xQEnEf?from=from_copylink%E3%80%91",
+      "text": "https://cxqeimz77vr.feishu.cn/docx/J73Zdo89qomctWxEI3ic6xQEnEf?from=from_copylink%E3%80%91",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://acn9dtv7vl3o.feishu.cn/docx/J80JdJTU3o3r5YxTk0cc0BO4nEj?from=from_copylink",
+      "text": "https://acn9dtv7vl3o.feishu.cn/docx/J80JdJTU3o3r5YxTk0cc0BO4nEj?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://ucnfpwl6kbvo.feishu.cn/wiki/YinLw1yFzikjCHkDkxscOQVdntW?",
+      "text": "https://ucnfpwl6kbvo.feishu.cn/wiki/YinLw1yFzikjCHkDkxscOQVdntW?",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://icn4e8tnhj79.feishu.cn/wiki/CJIow41MLiNUKQkpX3rcEhpgnQy?from=from_copylink",
+      "text": "https://icn4e8tnhj79.feishu.cn/wiki/CJIow41MLiNUKQkpX3rcEhpgnQy?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://x0ja7r6cdhw.feishu.cn/docx/JccudVqqZoYV8axuyGicJRswnzd?from=from_copylink",
+      "text": "https://x0ja7r6cdhw.feishu.cn/docx/JccudVqqZoYV8axuyGicJRswnzd?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://icn4e8tnhj79.feishu.cn/wiki/PqRlwncOQiavqRkkHMzc6EPDnVh?from=from_copylink",
+      "text": "https://icn4e8tnhj79.feishu.cn/wiki/PqRlwncOQiavqRkkHMzc6EPDnVh?from=from_copylink",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://ccnx8k9v2rxx.feishu.cn/wiki/VuZpwpWFli4JmPkSNNwc50wwnQd",
+      "text": "https://ccnx8k9v2rxx.feishu.cn/wiki/VuZpwpWFli4JmPkSNNwc50wwnQd",
+      "itemId": "57a16d5b30bc83",
+      "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "itemUrl": "https://aipoju.com/search",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "57a16d5b30bc83",
+          "itemTitle": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+          "itemUrl": "https://aipoju.com/search",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/",
+      "text": "https://my.feishu.cn/",
+      "itemId": "901cb97c373517",
+      "itemTitle": "【FDE系列17】FDE落地AI：和老板、主管、员工分别聊什么？",
+      "itemUrl": "",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "owners": [
+        {
+          "itemId": "901cb97c373517",
+          "itemTitle": "【FDE系列17】FDE落地AI：和老板、主管、员工分别聊什么？",
+          "itemUrl": "",
+          "source": "scys",
+          "sourceName": "生财有术"
+        }
+      ]
+    },
+    {
+      "href": "https://tcn5ez38ow3w.feishu.cn/docx/PTbZd3z3io4LoJxz9aycjBD8nlb",
+      "text": "https://tcn5ez38ow3w.feishu.cn/docx/PTbZd3z3io4LoJxz9aycjBD8nlb",
+      "itemId": "15fab24a7f385a",
+      "itemTitle": "我的出海产品，收到了第一笔付费 我的文字转语音网站 T2Speech，收到两笔订单，8 月 16 日，12.99 美元。",
+      "itemUrl": "https://aipoju.com/topic-details/55521524154824854",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "15fab24a7f385a",
+          "itemTitle": "我的出海产品，收到了第一笔付费 我的文字转语音网站 T2Speech，收到两笔订单，8 月 16 日，12.99 美元。",
+          "itemUrl": "https://aipoju.com/topic-details/55521524154824854",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/AMKPwsfd8ik2SskdyYFcSnJ7nQe",
+      "text": "https://my.feishu.cn/wiki/AMKPwsfd8ik2SskdyYFcSnJ7nQe",
+      "itemId": "bcf6afee5cb771",
+      "itemTitle": "WorkBuddy本地第二大脑：让AI真正记住你的工作",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "bcf6afee5cb771",
+          "itemTitle": "WorkBuddy本地第二大脑：让AI真正记住你的工作",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://liuqichuangfu.feishu.cn/docx/DrhPdGD84oCKPgx5NBOcQPv2nff",
+      "text": "https://liuqichuangfu.feishu.cn/docx/DrhPdGD84oCKPgx5NBOcQPv2nff",
+      "itemId": "0a3dc6b16cb5dd",
+      "itemTitle": "教你用 WorkBuddy 搞定公众号写作，从找对标到排版发布",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "0a3dc6b16cb5dd",
+          "itemTitle": "教你用 WorkBuddy 搞定公众号写作，从找对标到排版发布",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/O5jMd2rs2ovj5Kxg1AtcRYUanje",
+      "text": "https://my.feishu.cn/docx/O5jMd2rs2ovj5Kxg1AtcRYUanje",
+      "itemId": "97a8250510fd70",
+      "itemTitle": "万字长文：企业 AI 转型的三个台阶，我们走了两年才踏上第三级",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "97a8250510fd70",
+          "itemTitle": "万字长文：企业 AI 转型的三个台阶，我们走了两年才踏上第三级",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/C35BwCzNciyJmWkxokNclpurnqe",
+      "text": "https://my.feishu.cn/wiki/C35BwCzNciyJmWkxokNclpurnqe",
+      "itemId": "9b2cd6fc9e626e",
+      "itemTitle": "手把手带你用豆包工作X破局CLI搭建破局信息中台系统",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "9b2cd6fc9e626e",
+          "itemTitle": "手把手带你用豆包工作X破局CLI搭建破局信息中台系统",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://jcnjf69lk0l7.feishu.cn/docx/UPTAdU66UozeBgxhDBWc2dRfnBd?from=from_copylink",
+      "text": "https://jcnjf69lk0l7.feishu.cn/docx/UPTAdU66UozeBgxhDBWc2dRfnBd?from=from_copylink",
+      "itemId": "3cc7a401290e89",
+      "itemTitle": "用时一天我把数字人口播做成了全自动流水线——从「半自动点三下」到「一键出片」的完整复盘",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "3cc7a401290e89",
+          "itemTitle": "用时一天我把数字人口播做成了全自动流水线——从「半自动点三下」到「一键出片」的完整复盘",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://kids787buft.feishu.cn/docx/Ler4dikd0oZPuEx6Jz6cFnLYnQf",
+      "text": "https://kids787buft.feishu.cn/docx/Ler4dikd0oZPuEx6Jz6cFnLYnQf",
+      "itemId": "d38169bf53bc22",
+      "itemTitle": "今天洋哥给行动家的内部分享，核心讲透一件事：如何把日常会议、聊天沉淀成自己的内容资产，再用AI自动找选题、批量写文案，打造一个真正能干活的“AI内容员工”。",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "d38169bf53bc22",
+          "itemTitle": "今天洋哥给行动家的内部分享，核心讲透一件事：如何把日常会议、聊天沉淀成自己的内容资产，再用AI自动找选题、批量写文案，打造一个真正能干活的“AI内容员工”。",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://jcns350fcl4m.feishu.cn/wiki/LGbSwJjDeiXsOlkizNbc23wOnPt?from=from_copylink",
+      "text": "https://jcns350fcl4m.feishu.cn/wiki/LGbSwJjDeiXsOlkizNbc23wOnPt?from=from_copylink",
+      "itemId": "24b7b2aaf298ce",
+      "itemTitle": "半年营收50w，分享我的FDE 产品：CEO外脑 —— 让 AI 接手专家型客户手中的高精度工作",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "24b7b2aaf298ce",
+          "itemTitle": "半年营收50w，分享我的FDE 产品：CEO外脑 —— 让 AI 接手专家型客户手中的高精度工作",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/Y5kpdEmElo3qquxOqdPcRSZHntb",
+      "text": "https://my.feishu.cn/docx/Y5kpdEmElo3qquxOqdPcRSZHntb",
+      "itemId": "b73515abd939f9",
+      "itemTitle": "破局 CLI 新手入门：把破局里的经验，用到你的真实工作里",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "b73515abd939f9",
+          "itemTitle": "破局 CLI 新手入门：把破局里的经验，用到你的真实工作里",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/Hxd0deK8TonVtOxo7Ybc2r11nsb?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/Hxd0deK8TonVtOxo7Ybc2r11nsb?from=from_copylink",
+      "itemId": "02a95561e322c1",
+      "itemTitle": "AI绘画×非遗文创：我用一只“小肥马”赚了500多，这条赛道普通人也能照着做",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "02a95561e322c1",
+          "itemTitle": "AI绘画×非遗文创：我用一只“小肥马”赚了500多，这条赛道普通人也能照着做",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/YE1ewN1TBilsLHk8gSxcgDcDneh?from=from_copylink",
+      "text": "https://my.feishu.cn/wiki/YE1ewN1TBilsLHk8gSxcgDcDneh?from=from_copylink",
+      "itemId": "fb6dfbd00d481c",
+      "itemTitle": "万字长文，我差点想放弃组局，直到看见9位同学发生了改变",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "fb6dfbd00d481c",
+          "itemTitle": "万字长文，我差点想放弃组局，直到看见9位同学发生了改变",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://d16rg8unadx.feishu.cn/wiki/Nj7xwe8DwiyNiWkZ5OLcmwBYnoc",
+      "text": "https://d16rg8unadx.feishu.cn/wiki/Nj7xwe8DwiyNiWkZ5OLcmwBYnoc",
+      "itemId": "250e84674b605e",
+      "itemTitle": "中标拆解 | 3个低价高出单量的产品到底在卖什么？",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "250e84674b605e",
+          "itemTitle": "中标拆解 | 3个低价高出单量的产品到底在卖什么？",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://d16rg8unadx.feishu.cn/docx/CmSTd7SbPofwHyx92oWcX9qGnxb?from=from_copylink",
+      "text": "https://d16rg8unadx.feishu.cn/docx/CmSTd7SbPofwHyx92oWcX9qGnxb?from=from_copylink",
+      "itemId": "86c6d1225434b2",
+      "itemTitle": "破局 CLI 正式开放：把圈友的实战经验，变成你的 AI 能力",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "86c6d1225434b2",
+          "itemTitle": "破局 CLI 正式开放：把圈友的实战经验，变成你的 AI 能力",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/EP9LdLR12oaUB8xs7WdcGlnBnGS",
+      "text": "https://my.feishu.cn/docx/EP9LdLR12oaUB8xs7WdcGlnBnGS",
+      "itemId": "071534ea1a5f3a",
+      "itemTitle": "一个小小的英文逗号，居然能造成几十万损失：一个企业级 Agent 工作流搭建实战",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "071534ea1a5f3a",
+          "itemTitle": "一个小小的英文逗号，居然能造成几十万损失：一个企业级 Agent 工作流搭建实战",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://d16rg8unadx.feishu.cn/wiki/BSiowspV5iqACMkGs06clXTkn7f?from=from_copylink",
+      "text": "https://d16rg8unadx.feishu.cn/wiki/BSiowspV5iqACMkGs06clXTkn7f?from=from_copylink",
+      "itemId": "70fc45979d90d0",
+      "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "itemUrl": "https://aipoju.com/index",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "70fc45979d90d0",
+          "itemTitle": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+          "itemUrl": "https://aipoju.com/index",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://cama0kbmqc.feishu.cn/docx/NQw2d588AoqBiGxCw1Ack96VnPd?from=from_copylink",
+      "text": "https://cama0kbmqc.feishu.cn/docx/NQw2d588AoqBiGxCw1Ack96VnPd?from=from_copylink",
+      "itemId": "8425a7b7c572ba",
+      "itemTitle": "大家好呀，我是卢文华，目前在天津有一家财税咨询公司，做了 13 年财税工作，拥有注册会计师、税务师。",
+      "itemUrl": "https://aipoju.com/topic-details/82258825452154582",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "8425a7b7c572ba",
+          "itemTitle": "大家好呀，我是卢文华，目前在天津有一家财税咨询公司，做了 13 年财税工作，拥有注册会计师、税务师。",
+          "itemUrl": "https://aipoju.com/topic-details/82258825452154582",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://dzdaq9coef.feishu.cn/docx/WDbCdrfj1omcTrxEXGIc2a4fnLh?from=from_copylink",
+      "text": "https://dzdaq9coef.feishu.cn/docx/WDbCdrfj1omcTrxEXGIc2a4fnLh?from=from_copylink",
+      "itemId": "161a4fda0cd3f1",
+      "itemTitle": "大家好，我是波波，在深圳做本地生活团购直播和AI+新媒体培训。",
+      "itemUrl": "https://aipoju.com/topic-details/55521118252255584",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "161a4fda0cd3f1",
+          "itemTitle": "大家好，我是波波，在深圳做本地生活团购直播和AI+新媒体培训。",
+          "itemUrl": "https://aipoju.com/topic-details/55521118252255584",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://hcnhqzggrpmv.feishu.cn/docx/PdlGdubZBoNvBmxsvbzckkdjntg?from=from_copylink",
+      "text": "https://hcnhqzggrpmv.feishu.cn/docx/PdlGdubZBoNvBmxsvbzckkdjntg?from=from_copylink",
+      "itemId": "b3d7dd88c0daf2",
+      "itemTitle": "用Claude Code跑通跨境电商的5大场景，顶10个人的团队",
+      "itemUrl": "https://aipoju.com/topic-details/55522412881428114",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "b3d7dd88c0daf2",
+          "itemTitle": "用Claude Code跑通跨境电商的5大场景，顶10个人的团队",
+          "itemUrl": "https://aipoju.com/topic-details/55522412881428114",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/docx/PbZzduQ9poaXxvxzEEGceqTHnIG?from=from_copylink",
+      "text": "https://my.feishu.cn/docx/PbZzduQ9poaXxvxzEEGceqTHnIG?from=from_copylink",
+      "itemId": "6c6732f8a50f55",
+      "itemTitle": "AI 逆袭者：靠 AI 盘活 30 年对日外贸经验，我打赢人生翻盘这场仗",
+      "itemUrl": "https://aipoju.com/topic-details/22255455884458181",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "6c6732f8a50f55",
+          "itemTitle": "AI 逆袭者：靠 AI 盘活 30 年对日外贸经验，我打赢人生翻盘这场仗",
+          "itemUrl": "https://aipoju.com/topic-details/22255455884458181",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://vcn6xxxe60r1.feishu.cn/wiki/LB3Kwkgzsisl3xkWOCscIlmOndg?from=from_copylink",
+      "text": "https://vcn6xxxe60r1.feishu.cn/wiki/LB3Kwkgzsisl3xkWOCscIlmOndg?from=from_copylink",
+      "itemId": "5c0887e51f8d66",
+      "itemTitle": "7秒流IP爆款视频获客实战SOP｜0基础学员第一课拍出百万播放获客视频",
+      "itemUrl": "https://aipoju.com/topic-details/45544884428884118",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "5c0887e51f8d66",
+          "itemTitle": "7秒流IP爆款视频获客实战SOP｜0基础学员第一课拍出百万播放获客视频",
+          "itemUrl": "https://aipoju.com/topic-details/45544884428884118",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    },
+    {
+      "href": "https://my.feishu.cn/wiki/AVlrw7HCUi0lcRkrQZvcAkcnnxd",
+      "text": "https://my.feishu.cn/wiki/AVlrw7HCUi0lcRkrQZvcAkcnnxd",
+      "itemId": "507e849367a1b9",
+      "itemTitle": "[干货贴]半年靠企业培训和课程项目变现7W+，我是如何从O进入AI企业培训",
+      "itemUrl": "https://aipoju.com/topic-details/55188558852828214",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "owners": [
+        {
+          "itemId": "507e849367a1b9",
+          "itemTitle": "[干货贴]半年靠企业培训和课程项目变现7W+，我是如何从O进入AI企业培训",
+          "itemUrl": "https://aipoju.com/topic-details/55188558852828214",
+          "source": "aipoju",
+          "sourceName": "AI破局"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "id": "096bd3a4710a12",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "若宇",
+      "role": "",
+      "relativeTime": "13小时前",
+      "publishedAt": "",
+      "title": "万字干货（纯享版）：入生财半年，一个小白如何靠 AI 赚到 10w+？",
+      "url": "https://scys.com/articleDetail/xq_topic/22258251228842521",
+      "scene": "获客营销与转化",
+      "industry": "本地生活",
+      "tools": [
+        "Codex",
+        "Claude Code",
+        "Claude",
+        "Cursor",
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "成交上千单）以及早期的体验资格等轻量服务",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 82,
+      "valueScore": 100,
+      "summary": "万字干货（纯享版）：入生财半年，一个小白如何靠 AI 赚到 10w+",
+      "evidence": "大家好，我是若宇。去年 9 月退伍，到现在刚好一年，加入生财也有半年了。 目前主要在做 AI 落地的外包项目，服务的客户以美牙、美业为主，帮他们搭获客系统、内容工作台和自动化工作流。也在独立开发小程序。这半年靠 AI 相关的业务，净利润超过 10 万元。 很多人可能会好奇，一个没技术背景的退伍小白，这 10 万块钱到底是从哪里一笔笔挣出来的？为了给大家一个真实、可对照的参考，我把这半年主要的业务构成毫无保留地拆解一下（均为扣除成本后实际到账的净利润）： 1. 企业获客系统与外包定制（约 5 万元）：主要是为美牙、美业等高客单行业搭建的 AI 获客系统（单笔合同全款 2.2 万元已全部收齐）以及后续的工作台与技术维护； 以及目前正在进行的项目。 2. 团队网络配置、批量账号与运维（约 3 万元）：为跨境工作室和…",
+      "excerpt": "大家好，我是若宇。去年 9 月退伍，到现在刚好一年，加入生财也有半年了。 目前主要在做 AI 落地的外包项目，服务的客户以美牙、美业为主，帮他们搭获客系统、内容工作台和自动化工作流。 也在独立开发小程序。这半年靠 AI 相关的业务，净利润超过 10 万元。 本篇只讲走过的坑和经验分享（新手友好版） ：主要是为美牙、美业等高客单行业搭建的 AI 获客系统（单笔合同全款 2.2 万元已全部收齐）以及后续的工作台与技术维护； 以及目前正在进行",
+      "links": [],
+      "metrics": "17 41 5 9",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "8f37897e56de47",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "不知名的上仙",
+      "role": "",
+      "relativeTime": "14小时前",
+      "publishedAt": "",
+      "title": "单品收入7000+从 AI 编程航海到真实小程序上线：我第一次用 ChatGPT + Codex 跑通真实商业小程序",
+      "url": "https://scys.com/articleDetail/xq_topic/22258251228528121",
+      "scene": "获客营销与转化",
+      "industry": "本地生活",
+      "tools": [
+        "Codex",
+        "Claude",
+        "ChatGPT",
+        "NotebookLM"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "成交和对结果负责的勇气",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 82,
+      "valueScore": 100,
+      "summary": "单品收入7000+从 AI 编程航海到真实小程序上线：我第一次用 ChatGPT + Codex 跑通真实商业小程序 大家好，我是不知名的上仙，一位00后的生财2年级学生，参加生财以来第一次真正意义上的发帖",
+      "evidence": "大家好，我是不知名的上仙，一位00后的生财2年级学生，参加生财以来第一次真正意义上的发帖。之前在生财处于半潜水的状态，前面我自己写过一篇大学校园流量变现的帖子，参加生财以来一直在不断学习，虽然没赚到过什么大钱，好在努力不会白费，一个不会编程的大学生又如何在眼光挑剔的b端老板手里赚到那一份技术钱呢？接下来我为大家细说 这是我第一次把 AI 从一个学习工具，变成了一种真正能够创造现实成果的杠杆。 从参加 AI 编程航海，到接触 Claude、Codex，再到自己做 AI 内容、发朋友圈、接到第一个真实客户，最后真正把一套健身房小程序送上微信。 这条路其实没有我现在写出来这么顺。 中间经历过模块崩盘、AI 额度不够、支付安全、需求遗漏、备案踩坑，甚至因为我把 ICP 备案和小程序备案弄混，整个项目硬生生往后拖了两个…",
+      "excerpt": "大家好，我是不知名的上仙，一位00后的生财2年级学生，参加生财以来第一次真正意义上的发帖。之前在生财处于半潜水的状态，前面我自己写过一篇大学校园流量变现的帖子，参加生财以来一直在不断学习，虽然没赚到过什么大钱，好在努力不会白费，一个不会编程的大学生又如何在眼光挑剔的b端老板手里赚到那一份技术钱呢？接下来我为大家细说 这是我第一次把 AI 从一个学习工具，变成了一种真正能够创造现实成果的杠杆。 从参加 AI 编程航海，到接触 Claude",
+      "links": [],
+      "metrics": "1 12 评论 1",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "6b02d8b5d672b0",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "shu.p.",
+      "role": "",
+      "relativeTime": "18小时前",
+      "publishedAt": "",
+      "title": "做出产品只是第一步：920亦仁开放日12个AI项目复盘与我的“产品落地四层8问”",
+      "url": "https://scys.com/articleDetail/xq_topic/45548541581121118",
+      "scene": "获客营销与转化",
+      "industry": "留学教育",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "前端获客 + 后端交付拆分",
+        "工具产品化"
+      ],
+      "opportunityScore": 48,
+      "valueScore": 84,
+      "summary": "做出产品只是第一步：920亦仁开放日12个AI项目复盘与我的“产品落地四层8问” 圈友们好，我是 shu.p.（舒蓬），主要做小红书教育类虚拟资料，也是Mini航海教练、成都组局官",
+      "evidence": "圈友们好，我是 shu.p.（舒蓬），主要做小红书教育类虚拟资料，也是Mini航海教练、成都组局官。 9月20日，我受邀到杭州生财总部，作为12位路演嘉宾之一，分享了自己的「AI＋小红书PPT」项目，也参加了当晚的亦仁饭局。 听完12个项目，我最大的感受是：产品做出来只是第一步，后面还要继续解决需求、标准、交付体验和用户反馈。 回来后，我把现场能公开的内容和自己的实践，整理成了“产品落地四层8问”。如果你也在做AI产品、虚拟资料或内容业务，可以拿一个现有产品直接对照。 感谢生财团队和同场分享的伙伴。文中如有理解不准确的地方，也欢迎各位指正",
+      "excerpt": "圈友们好，我是 shu.p.（舒蓬），主要做小红书教育类虚拟资料，也是Mini航海教练、成都组局官。 9月20日，我受邀到杭州生财总部，作为12位路演嘉宾之一，分享了自己的「AI＋小红书PPT」项目，也参加了当晚的亦仁饭局。 听完12个项目，我最大的感受是：产品做出来只是第一步，后面还要继续解决需求、标准、交付体验和用户反馈。 回来后，我把现场能公开的内容和自己的实践，整理成了“产品落地四层8问”。如果你也在做AI产品、虚拟资料或内容业",
+      "links": [],
+      "metrics": "3 13 2 收藏",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "57a16d5b30bc83",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "search",
+        "group": "industry",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "小虎AI",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-26 13:45",
+      "title": "拿我 25 号那场活举例：「整理一份 20 家本地生活商户的信息表。",
+      "url": "https://aipoju.com/search",
+      "scene": "垂直行业应用",
+      "industry": "本地生活",
+      "tools": [
+        "Gemini",
+        "NotebookLM",
+        "Codex",
+        "飞书",
+        "Obsidian",
+        "Claude",
+        "Openclaw",
+        "Claude Code",
+        "RPA",
+        "ChatGPT",
+        "Cursor",
+        "n8n",
+        "Dify",
+        "Coze"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率",
+        "获客成本与精准线索",
+        "内容生产与账号增长",
+        "交付标准化与复购",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "工具产品化",
+        "沉淀成SOP/模板",
+        "前端获客 + 后端交付拆分",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 36,
+      "valueScore": 100,
+      "summary": "**分润模式（获客杠杆，重点）：** - 渠道佣金 **20%**（税后营业额），能谈成单的渠道给 20% - 复购给线索人 **5%** - 必须反复告诉潜在介绍人\"我们有分钱模式\" - 分 钱是杠杆不是成本：没这些人有单子，你 80% 也没有 - 深耕某领域可让资源方成股东/成立子公司（餐饮协会会长案例：78 万单→成立餐饮 IT 子公司） > **可…",
+      "evidence": "大家好，我是云朵，破局的人力负责人。 如果你参加过破局的线下大会，现场看到的海报、签到台、胸牌、手提袋——背后都有一个人在盯着它们落地，那个人就是我。 很多圈友可能不认识我，加入破局一年多，我一直在破局做幕后工作，今天给大家正式认识下，介绍下自己。 在没加入破局前，我曾做过10年HR，2次创业，但都失败而告终。 2023年，因为AI，结识了破局，那时候我还是一个圈友，2025年，机缘巧合，有幸加入破局，正式成为一个破局人。 今天想带大家去聚光灯照不到的地方，了解我的幕后工作，以及作为一个破局的HR，我如何借AI提效的。没有惊天动地的剧情，但有很多平时看不到的细节，幕后不一定有光环，但幕后是为大家服务的。 我特别喜欢一句话：事事做，才能做千万事，日日行，才能行万里路。一份简历、一场年会、一个胸牌。工作无小事，最…",
+      "excerpt": "钱是杠杆不是成本：没这些人有单子，你 80% 也没有 - 深耕某领域可让资源方成股东/成立子公司（餐饮协会会长案例：78 万单→成立餐饮 IT 子公司） > **可复制经验②：企业服务是长周期，提前设计分润+持续传播，线索才滚雪球。** --- ## 六、本课披露的数字 - 小林老师做过约 **200 个企业单**，老板分三类为主 - 渠道佣金 **20%**（税后）、复购 **5%** - 收款比例 **541** 最优 - 朋友拿下餐饮 **78 万** MDE 单，转成立子公司 - 百万级单\"无一例外全延期…",
+      "links": [
+        {
+          "href": "https://q61jsosjgx.feishu.cn/wiki/N9EPwAke0ifSz1klpLvcHrDZnAc?from=from_copylink",
+          "text": "https://q61jsosjgx.feishu.cn/wiki/N9EPwAke0ifSz1klpLvcHrDZnAc?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/WKHRw6Cldih34RkQU1WcCqvan5e?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/WKHRw6Cldih34RkQU1WcCqvan5e?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/WvXOwlNaJi7a9tkuCIWceYu4nRh?fromScene=spaceOverview",
+          "text": "https://my.feishu.cn/wiki/WvXOwlNaJi7a9tkuCIWceYu4nRh?fromScene=spaceOverview",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/TQGXwKpC0igIwxkP76zcFyyenIe?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/TQGXwKpC0igIwxkP76zcFyyenIe?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/ZkoKwh6nBi0WOgkWjnLcROjqnxr",
+          "text": "https://my.feishu.cn/wiki/ZkoKwh6nBi0WOgkWjnLcROjqnxr",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/E1QuwT84oiQ3ftkmb5PcXN3tnqd?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/E1QuwT84oiQ3ftkmb5PcXN3tnqd?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://changyiwh.feishu.cn/wiki/LdDbwzUSEirU9AkGTzHc5EQknog?from=from_copylink",
+          "text": "https://changyiwh.feishu.cn/wiki/LdDbwzUSEirU9AkGTzHc5EQknog?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://ccnx8k9v2rxx.feishu.cn/wiki/Xv1kw856niEfggkU7ercqHoKnRg?from=from_copylink",
+          "text": "https://ccnx8k9v2rxx.feishu.cn/wiki/Xv1kw856niEfggkU7ercqHoKnRg?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/docx/RH2AdmW1Wocq3yxfhKHcwX6nnMg?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/RH2AdmW1Wocq3yxfhKHcwX6nnMg?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://ai.feishu.cn/wiki/YweUwf3ubiTQ8Kk7wAKct2q1nlg",
+          "text": "https://ai.feishu.cn/wiki/YweUwf3ubiTQ8Kk7wAKct2q1nlg",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/BNa2wE1VAis4tdkz1ercl8j5naf",
+          "text": "https://my.feishu.cn/wiki/BNa2wE1VAis4tdkz1ercl8j5naf",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://bcn9v3z7nkgt.feishu.cn/wiki/K3DPweFeqiuJwrkGS9XcKD8enKf?from=from_copylink",
+          "text": "https://bcn9v3z7nkgt.feishu.cn/wiki/K3DPweFeqiuJwrkGS9XcKD8enKf?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://uv31v1xfgt.feishu.cn/docx/GjqAdObUGoqBeHxWCefc20ugngc?from=from_copylink",
+          "text": "https://uv31v1xfgt.feishu.cn/docx/GjqAdObUGoqBeHxWCefc20ugngc?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://scnycu2l5fxt.feishu.cn/wiki/K9SVwLRQ4ibRbLkNSgUctxhsnmJ?from=from_copylink",
+          "text": "https://scnycu2l5fxt.feishu.cn/wiki/K9SVwLRQ4ibRbLkNSgUctxhsnmJ?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/docx/LxYVdQkSdoqKpQxyCDIcHvjCnyc",
+          "text": "https://my.feishu.cn/docx/LxYVdQkSdoqKpQxyCDIcHvjCnyc",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://xiyangshiai.feishu.cn/docx/Ysg2dBXAsouYE5xZBkwcDxJ8n2f?from=from_copylink",
+          "text": "https://xiyangshiai.feishu.cn/docx/Ysg2dBXAsouYE5xZBkwcDxJ8n2f?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/YLxGw48L8ig1eqkazfmcVNA5n7b?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/YLxGw48L8ig1eqkazfmcVNA5n7b?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://zaoqin888.feishu.cn/wiki/Wfzfw8jh8icF4mkFn17cSpA2npd?from=from_copylink",
+          "text": "https://zaoqin888.feishu.cn/wiki/Wfzfw8jh8icF4mkFn17cSpA2npd?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/SIwHwEpb5iSZlmk76bKcAXYCnLc?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/SIwHwEpb5iSZlmk76bKcAXYCnLc?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://la5rnop5jpq.feishu.cn/wiki/JPH9wQi8ki8CKXkypTfcx0LOnjc",
+          "text": "https://la5rnop5jpq.feishu.cn/wiki/JPH9wQi8ki8CKXkypTfcx0LOnjc",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://d16rg8unadx.feishu.cn/docx/ILB6dyW6EoYKSfxQ5lSc2X47nUg?from=from_copylink",
+          "text": "https://d16rg8unadx.feishu.cn/docx/ILB6dyW6EoYKSfxQ5lSc2X47nUg?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://camb9ggq7c5.feishu.cn/wiki/QbyLwUmVOiyQ4BkjnTHcPiPynye?from=from_copylink",
+          "text": "https://camb9ggq7c5.feishu.cn/wiki/QbyLwUmVOiyQ4BkjnTHcPiPynye?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://eqc9f6vzuhv.feishu.cn/wiki/QyrIw2zPKi7sJFkCEuqcwfVqnfc?from=from_copylink",
+          "text": "https://eqc9f6vzuhv.feishu.cn/wiki/QyrIw2zPKi7sJFkCEuqcwfVqnfc?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://aaf55djl41.feishu.cn/wiki/HqruwMFlIiDwJckncrWcsQZnnRw?from=from_copylink",
+          "text": "https://aaf55djl41.feishu.cn/wiki/HqruwMFlIiDwJckncrWcsQZnnRw?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://hcnttk62jhvi.feishu.cn/docx/VlOndVQfKofr0AxYo1wcSsE1nGb",
+          "text": "https://hcnttk62jhvi.feishu.cn/docx/VlOndVQfKofr0AxYo1wcSsE1nGb",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://ocneb07gmxh0.feishu.cn/wiki/J33GwFrKUiQedRkshO0cPxl3nOh",
+          "text": "https://ocneb07gmxh0.feishu.cn/wiki/J33GwFrKUiQedRkshO0cPxl3nOh",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/docx/MXladDnFFoTesXxQtINcbjOynBc?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/MXladDnFFoTesXxQtINcbjOynBc?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://xa06j6z232m.feishu.cn/wiki/Rf6awWO1TixRVHkSDNycQ9e5nof?from=from_copylink",
+          "text": "https://xa06j6z232m.feishu.cn/wiki/Rf6awWO1TixRVHkSDNycQ9e5nof?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://ai.feishu.cn/wiki/OkI3wsq6OiI2d0kK1tecdeNwnWe",
+          "text": "https://ai.feishu.cn/wiki/OkI3wsq6OiI2d0kK1tecdeNwnWe",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://hcnhqzggrpmv.feishu.cn/docx/HgiAdCw3Go4HZSxHDG9cRlCsnre?from=from_copylink",
+          "text": "https://hcnhqzggrpmv.feishu.cn/docx/HgiAdCw3Go4HZSxHDG9cRlCsnre?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://fcnubuhvffh5.feishu.cn/wiki/X7scwWN1BiWF2lkQEnscC1Oln9d?from=from_copylink",
+          "text": "https://fcnubuhvffh5.feishu.cn/wiki/X7scwWN1BiWF2lkQEnscC1Oln9d?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/ET83wqQOsi84WQkve1OcyZtnn7j?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/ET83wqQOsi84WQkve1OcyZtnn7j?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://hcn4ntl46fs6.feishu.cn/wiki/Og4MwkKsPiEHk3ku2Nmct5ltnGb?from=from_copylink",
+          "text": "https://hcn4ntl46fs6.feishu.cn/wiki/Og4MwkKsPiEHk3ku2Nmct5ltnGb?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/docx/XgoZdzn3Oo5YiRxrz22c9BoOn1f?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/XgoZdzn3Oo5YiRxrz22c9BoOn1f?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://aaf55djl41.feishu.cn/wiki/ZqYAwXPrSijqP9kcgJic22JYnQb?from=from_copylink",
+          "text": "https://aaf55djl41.feishu.cn/wiki/ZqYAwXPrSijqP9kcgJic22JYnQb?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://aaf55djl41.feishu.cn/wiki/Be43wfvcOiNa6JkqbqLc5v7tnvb?from=from_copylink",
+          "text": "https://aaf55djl41.feishu.cn/wiki/Be43wfvcOiNa6JkqbqLc5v7tnvb?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/MGQtwRc6Bifc4vkoJakcSa7hncc?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/MGQtwRc6Bifc4vkoJakcSa7hncc?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/docx/HfiYdnXZRofshOxjxmucZEfwncD?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/HfiYdnXZRofshOxjxmucZEfwncD?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://axsppz4oyvj.feishu.cn/wiki/FpI1wyxzAiqHLekyRotcwDjsnKf",
+          "text": "https://axsppz4oyvj.feishu.cn/wiki/FpI1wyxzAiqHLekyRotcwDjsnKf",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://ucn5q2obpngg.feishu.cn/wiki/Glksw17mOiS6TNkQWkQc0kpLnoe?from=from_copylink",
+          "text": "https://ucn5q2obpngg.feishu.cn/wiki/Glksw17mOiS6TNkQWkQc0kpLnoe?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://baliangai.feishu.cn/wiki/WQxHwIxxWifqeeksrikcPeQUnqc",
+          "text": "https://baliangai.feishu.cn/wiki/WQxHwIxxWifqeeksrikcPeQUnqc",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://aaf55djl41.feishu.cn/wiki/QWpswMAliidWdhkB65ic8yZjnoT?from=from_copylink",
+          "text": "https://aaf55djl41.feishu.cn/wiki/QWpswMAliidWdhkB65ic8yZjnoT?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/LRNww0GPMi9kGnkbGXLcSx7unLe?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/LRNww0GPMi9kGnkbGXLcSx7unLe?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/AbUkwN4oCiVzELkL2kfcUYt1nfc?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/AbUkwN4oCiVzELkL2kfcUYt1nfc?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://acn9dtv7vl3o.feishu.cn/docx/GCo1diFJtoesn5xyZw8c5m2xnHg?from=from_copylink",
+          "text": "https://acn9dtv7vl3o.feishu.cn/docx/GCo1diFJtoesn5xyZw8c5m2xnHg?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://acn9dtv7vl3o.feishu.cn/docx/Me6Wdr4ECoYFvWxgbo6c8s4HnIf?from=from_copylink",
+          "text": "https://acn9dtv7vl3o.feishu.cn/docx/Me6Wdr4ECoYFvWxgbo6c8s4HnIf?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://acn9dtv7vl3o.feishu.cn/docx/XbVvdIVOhoDJ1HxM3WZcFlx3ncg?from=from_copylink",
+          "text": "https://acn9dtv7vl3o.feishu.cn/docx/XbVvdIVOhoDJ1HxM3WZcFlx3ncg?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://acn9dtv7vl3o.feishu.cn/docx/GpgYdKGBbosZXyxfZKoc2Op7nTd?from=from_copylink",
+          "text": "https://acn9dtv7vl3o.feishu.cn/docx/GpgYdKGBbosZXyxfZKoc2Op7nTd?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/wiki/AsS1wUPeViDQtdk3MSSceUn9nhe",
+          "text": "https://my.feishu.cn/wiki/AsS1wUPeViDQtdk3MSSceUn9nhe",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://my.feishu.cn/docx/E8OIdQvBtoLmCTxQ4qLcShDYnIh?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/E8OIdQvBtoLmCTxQ4qLcShDYnIh?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://pcny3fn0ksgd.feishu.cn/wiki/EDp0wzW4Mi8vBQkjG3RcgGQQnbe?from=from_copylink",
+          "text": "https://pcny3fn0ksgd.feishu.cn/wiki/EDp0wzW4Mi8vBQkjG3RcgGQQnbe?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://kcnejdl74i8n.feishu.cn/docx/Dmlfdk5ChoSL1oxG2foc7qd9nIh",
+          "text": "https://kcnejdl74i8n.feishu.cn/docx/Dmlfdk5ChoSL1oxG2foc7qd9nIh",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://ccnx8k9v2rxx.feishu.cn/docx/COmZdNr1koPMtcxwuqociQ9wnye?from=from_copylink",
+          "text": "https://ccnx8k9v2rxx.feishu.cn/docx/COmZdNr1koPMtcxwuqociQ9wnye?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://cxqeimz77vr.feishu.cn/docx/J73Zdo89qomctWxEI3ic6xQEnEf?from=from_copylink%E3%80%91",
+          "text": "https://cxqeimz77vr.feishu.cn/docx/J73Zdo89qomctWxEI3ic6xQEnEf?from=from_copylink%E3%80%91",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://acn9dtv7vl3o.feishu.cn/docx/J80JdJTU3o3r5YxTk0cc0BO4nEj?from=from_copylink",
+          "text": "https://acn9dtv7vl3o.feishu.cn/docx/J80JdJTU3o3r5YxTk0cc0BO4nEj?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://ucnfpwl6kbvo.feishu.cn/wiki/YinLw1yFzikjCHkDkxscOQVdntW?",
+          "text": "https://ucnfpwl6kbvo.feishu.cn/wiki/YinLw1yFzikjCHkDkxscOQVdntW?",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://icn4e8tnhj79.feishu.cn/wiki/CJIow41MLiNUKQkpX3rcEhpgnQy?from=from_copylink",
+          "text": "https://icn4e8tnhj79.feishu.cn/wiki/CJIow41MLiNUKQkpX3rcEhpgnQy?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://x0ja7r6cdhw.feishu.cn/docx/JccudVqqZoYV8axuyGicJRswnzd?from=from_copylink",
+          "text": "https://x0ja7r6cdhw.feishu.cn/docx/JccudVqqZoYV8axuyGicJRswnzd?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://icn4e8tnhj79.feishu.cn/wiki/PqRlwncOQiavqRkkHMzc6EPDnVh?from=from_copylink",
+          "text": "https://icn4e8tnhj79.feishu.cn/wiki/PqRlwncOQiavqRkkHMzc6EPDnVh?from=from_copylink",
+          "discoveredVia": "body_url"
+        },
+        {
+          "href": "https://ccnx8k9v2rxx.feishu.cn/wiki/VuZpwpWFli4JmPkSNNwc50wwnQd",
+          "text": "https://ccnx8k9v2rxx.feishu.cn/wiki/VuZpwpWFli4JmPkSNNwc50wwnQd",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 234,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "4946475ecfd97b",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "20小时前",
+      "publishedAt": "",
+      "title": "分享我的投资研究追踪系统：用AI辅助追踪靠谱投资思路",
+      "url": "https://scys.com/articleDetail/xq_topic/22258251282444451",
+      "scene": "AI应用案例",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 30,
+      "valueScore": 33,
+      "summary": "分享我的投资研究追踪系统：用AI辅助追踪靠谱投资思路 分享下我的投资研究和追踪系统，对我帮助还是非常大的",
+      "evidence": "分享下我的投资研究和追踪系统，对我帮助还是非常大的。 这个系统的核心底层逻辑： 1. 投资是自己的事情，自己要深度的去研究，没有深度研究不要下重注。 2. 有信用靠谱的人的投资思考和行为值得重点参考， AI 可以帮助我们非常深度的追踪和研究他们。 3. 站在巨人的肩膀上去投资与研究，要比自己的效率高很多倍。",
+      "excerpt": "分享下我的投资研究和追踪系统，对我帮助还是非常大的。 这个系统的核心底层逻辑： 1. 投资是自己的事情，自己要深度的去研究，没有深度研究不要下重注。 2. 有信用靠谱的人的投资思考和行为值得重点参考， AI 可以帮助我们非常深度的追踪和研究他们。 3. 站在巨人的肩膀上去投资与研究，要比自己的效率高很多倍。",
+      "links": [],
+      "metrics": "14 119 8 14",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "27a132dd01db30",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "20小时前",
+      "publishedAt": "",
+      "title": "现在买硬件，我优先看能不能和AI打通数据，还入了豆包推荐的体脂秤",
+      "url": "https://scys.com/articleDetail/xq_topic/22258251282228221",
+      "scene": "AI应用案例",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 30,
+      "valueScore": 28,
+      "summary": "现在买硬件，我优先看能不能和AI打通数据，还入了豆包推荐的体脂秤 现在买各种硬件设备，非常重要的影响因素是数据能不能和我的 AI 打通，让我的 AI 可以自动访问数据",
+      "evidence": "现在买各种硬件设备，非常重要的影响因素是数据能不能和我的 AI 打通，让我的 AI 可以自动访问数据。 在豆包的推荐下，买了个没听说过的体脂秤，但优点是数据可以轻松地被接入到我的 AI。",
+      "excerpt": "现在买各种硬件设备，非常重要的影响因素是数据能不能和我的 AI 打通，让我的 AI 可以自动访问数据。 在豆包的推荐下，买了个没听说过的体脂秤，但优点是数据可以轻松地被接入到我的 AI。",
+      "links": [],
+      "metrics": "0 32 11 1",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "9a5707dcdfe5b5",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "22小时前",
+      "publishedAt": "",
+      "title": "Tibo说要重置，余量多的圈友可以行动，附AI复盘和微信数据获取方法",
+      "url": "https://scys.com/articleDetail/xq_topic/14425428455142212",
+      "scene": "AI基建与企业服务",
+      "industry": "未识别行业",
+      "tools": [
+        "Codex"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 36,
+      "valueScore": 54,
+      "summary": "Tibo说要重置，余量多的圈友可以行动，附AI复盘和微信数据获取方法 Tibo 刚说要重置，估计很快了，codex 余量较多的圈友开动起来",
+      "evidence": "Tibo 刚说要重置，估计很快了，codex 余量较多的圈友开动起来。 我就不动了，只剩 8%。 如果不知道干啥：可以开动 Astra+ultra+fast 模式，让 AI 调取他能拿到的你的所有信息，帮你做一个 9 月份的深度复盘。 说到这个，如果你还没拿到你的微信数据，先去想办法拿到微信数据。如果不知道方法，调用生财 mcp去检索，有圈友分享过。 生财 mcp 接入方式 生财 MCP 上手指南",
+      "excerpt": "Tibo 刚说要重置，估计很快了，codex 余量较多的圈友开动起来。 我就不动了，只剩 8%。 如果不知道干啥：可以开动 Astra+ultra+fast 模式，让 AI 调取他能拿到的你的所有信息，帮你做一个 9 月份的深度复盘。 说到这个，如果你还没拿到你的微信数据，先去想办法拿到微信数据。如果不知道方法，调用生财 mcp去检索，有圈友分享过。 生财 mcp 接入方式",
+      "links": [],
+      "metrics": "2 68 14 8",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "f3ecc3946026ac",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "心海的猫",
+      "role": "",
+      "relativeTime": "1天前",
+      "publishedAt": "",
+      "title": "小红书虚拟产品X公众号垂直小号，20天累计变现收入上5位数，分享两个热门项目的结合玩法",
+      "url": "",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 84,
+      "summary": "小红书虚拟产品X公众号垂直小号，20天累计变现收入上5位数，分享两个热门项目的结合玩法 大家好，我是心海的猫，坐标浙江宁波，加入生财第三年，这是我的第一篇复盘",
+      "evidence": "大家好，我是心海的猫，坐标浙江宁波，加入生财第三年，这是我的第一篇复盘。 最近，我把小红书虚拟产品和公众号结合起来，做了一次尝试。 从9月4日开始，陆续发了7篇公众号文章，新增微信好友200多人。公众号新增关注883人。累计变现收入超过1万元（店铺销售+私域）。 这次分享一下我对于这两个热门项目的结合玩法 完整版请看飞书链接：",
+      "excerpt": "大家好，我是心海的猫，坐标浙江宁波，加入生财第三年，这是我的第一篇复盘。 最近，我把小红书虚拟产品和公众号结合起来，做了一次尝试。 从9月4日开始，陆续发了7篇公众号文章，新增微信好友200多人。公众号新增关注883人。累计变现收入超过1万元（店铺销售+私域）。 这次分享一下我对于这两个热门项目的结合玩法 完整版请看飞书链接：",
+      "links": [],
+      "metrics": "56 113 17 53",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "8735935805b5c9",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "Alan",
+      "role": "",
+      "relativeTime": "1天前",
+      "publishedAt": "",
+      "title": "闲鱼49.9代开Muse？我整理了三种实测有效的开通方法",
+      "url": "",
+      "scene": "AI应用案例",
+      "industry": "未识别行业",
+      "tools": [
+        "Gemini",
+        "Grok"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 36,
+      "valueScore": 67,
+      "summary": "我整理了三种实测有效的开通方法 这两天 Muse 彻底火了",
+      "evidence": "这两天 Muse 彻底火了。 然后一个很熟悉的现象也出现了： 闲鱼开始出现大量“49.9 元开通 Muse”“Muse 秒开”“免排队开通 Muse”的商品。 有的甚至已经开始卖到几十、上百块。 但我研究了一圈以后发现，这里面其实存在非常明显的信息差。 如果你手里本身就有 Gemini Pro，或者 Grok 的付费会员，甚至你什么会员都没有，都没必要专门去闲鱼花 49.9 元找人代开。 目前我找到并交叉验证过的 Muse 快速开通方法",
+      "excerpt": "这两天 Muse 彻底火了。 然后一个很熟悉的现象也出现了： 闲鱼开始出现大量“49.9 元开通 Muse”“Muse 秒开”“免排队开通 Muse”的商品。 有的甚至已经开始卖到几十、上百块。 但我研究了一圈以后发现，这里面其实存在非常明显的信息差。 如果你手里本身就有 Gemini Pro，或者 Grok 的付费会员，甚至你什么会员都没有，都没必要专门去闲鱼花 49.9 元找人代开。 目前我找到并交叉验证过的 Muse 快速开通方法",
+      "links": [],
+      "metrics": "1 13 4 2",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "6307de717c733f",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "苏格",
+      "role": "",
+      "relativeTime": "1天前",
+      "publishedAt": "",
+      "title": "做了十几个产品还没咋赚到钱：在亦仁开放日，我才发现自己一直在卖工具，而不是卖结果",
+      "url": "",
+      "scene": "线下组局与培训复盘",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "工具产品化"
+      ],
+      "opportunityScore": 30,
+      "valueScore": 52,
+      "summary": "做了十几个产品还没咋赚到钱：在亦仁开放日，我才发现自己一直在卖工具，而不是卖结果 圈友们中秋快乐，我是苏格",
+      "evidence": "圈友们中秋快乐，我是苏格。这两年用AI做了不少产品，结果请不多。上周请了两天年假，去杭州参加亦仁开放日。听完 12 个 AI 项目路演和亦仁老大的总结，终于找到了症结。 我结合自己现场做的笔记、后面的复盘，以及录音稿做成一篇分享，希望对你也有启发：",
+      "excerpt": "圈友们中秋快乐，我是苏格。这两年用AI做了不少产品，结果请不多。上周请了两天年假，去杭州参加亦仁开放日。听完 12 个 AI 项目路演和亦仁老大的总结，终于找到了症结。 我结合自己现场做的笔记、后面的复盘，以及录音稿做成一篇分享，希望对你也有启发：",
+      "links": [],
+      "metrics": "3 44 4 8",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "96a505b390f09f",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "弘毅",
+      "role": "",
+      "relativeTime": "1天前",
+      "publishedAt": "",
+      "title": "我把适配Codex的大航海领队技能包改成WorkBuddy能用的",
+      "url": "",
+      "scene": "AI基建与企业服务",
+      "industry": "企业服务",
+      "tools": [
+        "Codex"
+      ],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 36,
+      "valueScore": 49,
+      "summary": "我把适配Codex的大航海领队技能包改成WorkBuddy能用的 接阿喂的精华帖 他这个只做了Codex客户端的适配，我用的是Workbuddy，所以把它改了一下",
+      "evidence": "接阿喂的精华帖 他这个只做了Codex客户端的适配，我用的是Workbuddy，所以把它改了一下。 做了个Workbuddy的适配。 详见：",
+      "excerpt": "接阿喂的精华帖 他这个只做了Codex客户端的适配，我用的是Workbuddy，所以把它改了一下。 做了个Workbuddy的适配。 详见：",
+      "links": [],
+      "metrics": "0 15 评论 收藏",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "0f637d2623b423",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "夙愿学长",
+      "role": "航海家",
+      "relativeTime": "1天前",
+      "publishedAt": "",
+      "title": "封了 30 多个号换来的 Claude Max 防封保姆级教程",
+      "url": "",
+      "scene": "AI应用案例",
+      "industry": "跨境出海",
+      "tools": [
+        "Claude"
+      ],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 36,
+      "valueScore": 44,
+      "summary": "封了 30 多个号换来的 Claude Max 防封保姆级教程 Opus 5.5 出来以后，我的感觉是又回到 Anthropic 一统天下的局面了",
+      "evidence": "Opus 5.5 出来以后，我的感觉是又回到 Anthropic 一统天下的局面了。 这是我用过最爽的模型，协作起来有一种真的「被稳稳接住的感觉」， 可对国内用户来说，模型再好，号一被封也用不上。 我从年初到现在，前前后后封过三十多个 Claude 号，有一部分是帮同事开的。 苹果内购、安卓 Google Play、海外卡订阅，这些路我基本都走过，你能踩的坑我都踩过。 而现在我手上有 4 个号：三个 Max 20x、一个 Pro，其中两",
+      "excerpt": "Opus 5.5 出来以后，我的感觉是又回到 Anthropic 一统天下的局面了。 这是我用过最爽的模型，协作起来有一种真的「被稳稳接住的感觉」， 可对国内用户来说，模型再好，号一被封也用不上。 我从年初到现在，前前后后封过三十多个 Claude 号，有一部分是帮同事开的。 苹果内购、安卓 Google Play、海外卡订阅，这些路我基本都走过，你能踩的坑我都踩过。 而现在我手上有 4 个号：三个 Max 20x、一个 Pro，其中两",
+      "links": [],
+      "metrics": "28 68 11 63",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "8ebcdb38473683",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "1天前",
+      "publishedAt": "",
+      "title": "中秋这三天，放下AI，陪家人吃顿饭看看月亮",
+      "url": "",
+      "scene": "AI应用案例",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 30,
+      "valueScore": 28,
+      "summary": "中秋这三天，放下AI，陪家人吃顿饭看看月亮 祝大家中秋快乐🌕 这三天，AI 先放一放，陪家人吃顿饭，出门看看月亮",
+      "evidence": "祝大家中秋快乐🌕 这三天，AI 先放一放，陪家人吃顿饭，出门看看月亮。 替我向你们的家人、朋友问好。",
+      "excerpt": "祝大家中秋快乐🌕 这三天，AI 先放一放，陪家人吃顿饭，出门看看月亮。 替我向你们的家人、朋友问好。",
+      "links": [],
+      "metrics": "9 209 54 1",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "b4155a0857400c",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "1天前",
+      "publishedAt": "",
+      "title": "先说最重要的：焦虑症如果还没好，先去医院看医生，这个比任何书和方法都重要。",
+      "url": "",
+      "scene": "AI应用案例",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 30,
+      "valueScore": 28,
+      "summary": "先说最重要的：焦虑症如果还没好，先去医院看医生，这个比任何书和方法都重要",
+      "evidence": "先说最重要的：焦虑症如果还没好，先去医院看医生，这个比任何书和方法都重要。 1/ 情绪和人生规划 先把身体照顾好，这在我这里排第一位。每周运动 3~4 次，每天争取睡够 8 小时，饮食尽量清淡。 然后把自己的情绪记录下来。每次焦虑的时候，写下是什么事、什么念头引起的，认真观察，认真反思。所有情绪背后都是成长空间，特别是负面情绪，不要浪费它。 书推荐《被讨厌的勇气》。你被领导 PUA 了很久，这本书值得读。我自己最大的突破之一，也是拥有了",
+      "excerpt": "先说最重要的：焦虑症如果还没好，先去医院看医生，这个比任何书和方法都重要。 1/ 情绪和人生规划 先把身体照顾好，这在我这里排第一位。每周运动 3~4 次，每天争取睡够 8 小时，饮食尽量清淡。 然后把自己的情绪记录下来。每次焦虑的时候，写下是什么事、什么念头引起的，认真观察，认真反思。所有情绪背后都是成长空间，特别是负面情绪，不要浪费它。 书推荐《被讨厌的勇气》。你被领导 PUA 了很久，这本书值得读。我自己最大的突破之一，也是拥有了",
+      "links": [],
+      "metrics": "6 129 11 13",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "b88b272d413fb8",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-25 15:29",
+      "title": "今天中秋假期了，祝全体破局圈友中秋快乐、阖家安康。",
+      "url": "https://aipoju.com/topic-details/22258251812254251",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "工具配置与AI基建门槛",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "粉丝",
+      "reusableMethod": [],
+      "opportunityScore": 30,
+      "valueScore": 70,
+      "summary": "今天中秋假期了，祝全体破局圈友中秋快乐、阖家安康",
+      "evidence": "今天中秋假期了，祝全体破局圈友中秋快乐、阖家安康。 我上来说个福利，哈哈哈。 昨天放假前，有几个圈友问我能不能写一篇我的AI短视频直播的保姆级教程，原因是他们之前在我直播中听我提过一嘴。 妈耶，这是很大的难题，保姆级，咱从没写过啊。 的确，最近半年我跑通了一个超硬核的玩法：多个AI员工操盘我全系列账号的短视频和直播，无人类员工参与。 我每天只需要花半小时，就做到了半年视频号增长近百万粉丝，给破局带来的价值就先保密了，总之非常大，保守估计1000万量级，哈哈。 这样吧，大家给这个帖子点赞，过1000，我就开始写，尽量写一篇万字级保姆实操文。 PS：欢迎用破局cli偷懒式点赞，哈哈哈。 如果写出来了，应该是我在破局第一次写“术”的帖子。 当然，这篇“术”，价值会非常非常大。",
+      "excerpt": "我上来说个福利，哈哈哈。 昨天放假前，有几个圈友问我能不能写一篇我的AI短视频直播的保姆级教程，原因是他们之前在我直播中听我提过一嘴。 妈耶，这是很大的难题，保姆级，咱从没写过啊。 的确，最近半年我跑通了一个超硬核的玩法：多个AI员工操盘我全系列账号的短视频和直播，无人类员工参与。 我每天只需要花半小时，就做到了半年视频号增长近百万粉丝，给破局带来的价值就先保密了，总之非常大，保守估计1000万量级，哈哈。 这样吧，大家给这个帖子点赞，过1000，我就开始写，尽量写一篇万字级保姆实操文。 PS：欢迎用破局cli偷…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "e8d6da730b7ba6",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "Yye-柏寒",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "围绕航海项目搭建能持续运转的AI知识库，拆解原理并迁移到自己的项目，边做边提升AI能力（附完整提示词与个人变现案例）",
+      "url": "",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Codex"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 71,
+      "summary": "围绕航海项目搭建能持续运转的AI知识库，拆解原理并迁移到自己的项目，边做边提升AI能力（附完整提示词与个人变现案例） 很多圈友想学 AI，却不知道该学什么、怎样提升自己的 AI 能力",
+      "evidence": "很多圈友想学 AI，却不知道该学什么、怎样提升自己的 AI 能力。看过不少分享，还是觉得 AI 离自己的事情有点远。也有人希望先找到一个具体项目，有了使用场景，再带着问题去学。 这篇文章想提供一个可以开始实践的场景。选一个生财航海里的真实副业项目，围绕它搭建并使用 AI 知识库，让 AI 参与项目中的具体工作。在这个过程中，一边做赚钱需要做的事情，一边学习怎样使用 AI，遇到问题再一起解决。项目能否赚到钱，需要实际结果检验；赚钱之前需要",
+      "excerpt": "很多圈友想学 AI，却不知道该学什么、怎样提升自己的 AI 能力。看过不少分享，还是觉得 AI 离自己的事情有点远。也有人希望先找到一个具体项目，有了使用场景，再带着问题去学。 这篇文章想提供一个可以开始实践的场景。选一个生财航海里的真实副业项目，围绕它搭建并使用 AI 知识库，让 AI 参与项目中的具体工作。在这个过程中，一边做赚钱需要做的事情，一边学习怎样使用 AI，遇到问题再一起解决。项目能否赚到钱，需要实际结果检验；赚钱之前需要",
+      "links": [],
+      "metrics": "0 19 评论 7",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "27bfb51b6af77a",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "苏格",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "【实操有效】Claude 被封怕了，教你用 iOS 原生态 3 分钟无限复活新号，免海外手机号秒开 Pro",
+      "url": "",
+      "scene": "AI基建与企业服务",
+      "industry": "跨境出海",
+      "tools": [
+        "Claude Code",
+        "Claude"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "交付标准化与复购"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 36,
+      "valueScore": 65,
+      "summary": "【实操有效】Claude 被封怕了，教你用 iOS 原生态 3 分钟无限复活新号，免海外手机号秒开 Pro 圈友们好，我是苏格，被Claude封过好几个号",
+      "evidence": "圈友们好，我是苏格，被Claude封过好几个号。 最近刚出的 Claude opus 5.5 异常火爆，甚至压过了月初发布的 GPT 6 Astra ，Claude巅峰又回来了。 不过长期以来用Claude最头疼的问题莫过于两个： 1/ 封号玄学：很多人刚充了 20 刀，切下节点或者批量跑任务就被送走； 2/ 注册成本高：网页端各种接码失败、海外虚拟卡风控，甚至要求人脸验证，折腾半天全卡在门槛上。 今天给大家分享一个我们团队实测极其丝滑",
+      "excerpt": "圈友们好，我是苏格，被Claude封过好几个号。 最近刚出的 Claude opus 5.5 异常火爆，甚至压过了月初发布的 GPT 6 Astra ，Claude巅峰又回来了。 不过长期以来用Claude最头疼的问题莫过于两个： 1/ 封号玄学：很多人刚充了 20 刀，切下节点或者批量跑任务就被送走； 2/ 注册成本高：网页端各种接码失败、海外虚拟卡风控，甚至要求人脸验证，折腾半天全卡在门槛上。 今天给大家分享一个我们团队实测极其丝滑",
+      "links": [],
+      "metrics": "7 39 16 40",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "94dac221c4a263",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "天津老秦",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "WorkBuddy 开发小程序保姆级教程，从注册到开发到备案一次讲透",
+      "url": "",
+      "scene": "交付与服务自动化",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "工具产品化"
+      ],
+      "opportunityScore": 40,
+      "valueScore": 64,
+      "summary": "WorkBuddy 开发小程序保姆级教程，从注册到开发到备案一次讲透 大家好，我是天津老秦，AI 编程火了大半年，真用 AI 做出一个能上线的小程序的人，其实没几个",
+      "evidence": "大家好，我是天津老秦，AI 编程火了大半年，真用 AI 做出一个能上线的小程序的人，其实没几个。这篇把完整流程整理出来：从注册小程序账号，到用 WorkBuddy 开发，再到备案上线，照着走就能做出自己的第一个小程序，算是保姆级教程了。 一、关于 AI 编程 什么是 AI 编程 编程本质上是让计算机实现人类想要的功能。从最初的打点器（0101）到现在，编程始终是一个编解码的过程。AI 编程就是通过和大模型对话，让 AI 编程工具完成对应",
+      "excerpt": "大家好，我是天津老秦，AI 编程火了大半年，真用 AI 做出一个能上线的小程序的人，其实没几个。这篇把完整流程整理出来：从注册小程序账号，到用 WorkBuddy 开发，再到备案上线，照着走就能做出自己的第一个小程序，算是保姆级教程了。 一、关于 AI 编程 什么是 AI 编程 编程本质上是让计算机实现人类想要的功能。从最初的打点器（0101）到现在，编程始终是一个编解码的过程。AI 编程就是通过和大模型对话，让 AI 编程工具完成对应",
+      "links": [],
+      "metrics": "2 21 评论 10",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "4244fbd1abe69c",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "阿幕",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "新手公众号贴图航海一周实操：5篇破万阅读，总收益96元",
+      "url": "",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "流量获客 / 线索转化",
+      "painPoints": [
+        "获客成本与精准线索"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 36,
+      "valueScore": 61,
+      "summary": "新手公众号贴图航海一周实操：5篇破万阅读，总收益96元 9 月 2 号抢到了贴图，当时付款好像网站还崩掉了，付了半天才付成功了",
+      "evidence": "9 月 2 号抢到了贴图，当时付款好像网站还崩掉了，付了半天才付成功了。 先说这一周的成绩吧，17 号启动，总计发布 51 篇 5 篇破万，总流量6.8 万，总收益96 块钱，和大佬们不能相比，不过第一次参与网络项目赚到钱了还是很开心的，虽然数额不大，但是至少从 0-1 了。 具体一点心得和回顾详情移步飞书：",
+      "excerpt": "9 月 2 号抢到了贴图，当时付款好像网站还崩掉了，付了半天才付成功了。 先说这一周的成绩吧，17 号启动，总计发布 51 篇 5 篇破万，总流量6.8 万，总收益96 块钱，和大佬们不能相比，不过第一次参与网络项目赚到钱了还是很开心的，虽然数额不大，但是至少从 0-1 了。 具体一点心得和回顾详情移步飞书：",
+      "links": [],
+      "metrics": "0 29 14 4",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "dd16e110677829",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "小柒",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "使用生财 MCP 构建 LLM-WIKI ，打造你的超级大脑！",
+      "url": "",
+      "scene": "交付与服务自动化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "RPA"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 36,
+      "valueScore": 61,
+      "summary": "使用生财 MCP 构建 LLM-WIKI ，打造你的超级大脑",
+      "evidence": "什么是 LLM-WIKI LLM-WIKI 是 Andrej Karpathy 大神 2026 年 4 月提出来的一个理念，核心是让大语言模型把阅读、理解、综合、交叉引用、矛盾发现和问答，持续沉淀为一个持久、结构化、互链、带引用的 Markdown 知识库。 Agent owns the wiki; human owns the judgment. 它可以： 把离散的信息沉淀成结构化的知识库：通过理解、提炼、总结，把生财有术海量优质内容",
+      "excerpt": "什么是 LLM-WIKI LLM-WIKI 是 Andrej Karpathy 大神 2026 年 4 月提出来的一个理念，核心是让大语言模型把阅读、理解、综合、交叉引用、矛盾发现和问答，持续沉淀为一个持久、结构化、互链、带引用的 Markdown 知识库。 Agent owns the wiki; human owns the judgment. 它可以： 把离散的信息沉淀成结构化的知识库：通过理解、提炼、总结，把生财有术海量优质内容",
+      "links": [],
+      "metrics": "20 30 4 13",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "f92b2f6cb4e7c4",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "苍述",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "万字长文：见到最真实的现状后，我决定放弃FDE",
+      "url": "",
+      "scene": "知识库与组织提效",
+      "industry": "未识别行业",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 36,
+      "valueScore": 56,
+      "summary": "万字长文：见到最真实的现状后，我决定放弃FDE 两个月靠FDE赚了20万，自有平台储备了超500个FDE，见了超过60个真实项目，走访了多家真正赚钱的FDE公司，我想我应该有资格也有必要站出来说一下这行业最真实的现状",
+      "evidence": "两个月靠FDE赚了20万，自有平台储备了超500个FDE，见了超过60个真实项目，走访了多家真正赚钱的FDE公司，我想我应该有资格也有必要站出来说一下这行业最真实的现状。期望能帮圈友们尽量少踩一些坑。 请移步飞书：",
+      "excerpt": "两个月靠FDE赚了20万，自有平台储备了超500个FDE，见了超过60个真实项目，走访了多家真正赚钱的FDE公司，我想我应该有资格也有必要站出来说一下这行业最真实的现状。期望能帮圈友们尽量少踩一些坑。 请移步飞书：",
+      "links": [],
+      "metrics": "13 45 8 11",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "4679b7c5962f37",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "若宇",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "堪比龙珠咨询的4小时：少则得，多则惑：在亦仁开放日，我想明白了一件事",
+      "url": "",
+      "scene": "知识库与组织提效",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 54,
+      "summary": "堪比龙珠咨询的4小时：少则得，多则惑：在亦仁开放日，我想明白了一件事 飞书版： 小学老师，产品变现一千多块，站在台上有点局促，说自己\"体量太小\"",
+      "evidence": "飞书版： 小学老师，产品变现一千多块，站在台上有点局促，说自己\"体量太小\"。 投票结果出来，她拿了全场最高票。 亦仁说：这是今天最有潜力的项目。 我坐在台下，有点发愣。 不是因为这个结果离谱。而是因为我听完亦仁解释原因之后，突然意识到一件事：我做若宇讲AI这么久，一直在往复杂的方向走，却忘了问自己一个最基本的问题—— 这是我在生财有术亦仁开发日这一天里，被问得最重的一句话。 一场\"龙珠咨询\"，持续了4个小时 先说说这个活动是什么。 9月",
+      "excerpt": "飞书版： 小学老师，产品变现一千多块，站在台上有点局促，说自己\"体量太小\"。 投票结果出来，她拿了全场最高票。 亦仁说：这是今天最有潜力的项目。 我坐在台下，有点发愣。 不是因为这个结果离谱。而是因为我听完亦仁解释原因之后，突然意识到一件事：我做若宇讲AI这么久，一直在往复杂的方向走，却忘了问自己一个最基本的问题—— 这是我在生财有术亦仁开发日这一天里，被问得最重的一句话。 一场\"龙珠咨询\"，持续了4个小时 先说说这个活动是什么。 9月",
+      "links": [],
+      "metrics": "4 15 评论 2",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "7d5731036396f1",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "琳小航",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "注册 Muse AI 完整步骤教程",
+      "url": "",
+      "scene": "AI应用案例",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板"
+      ],
+      "opportunityScore": 30,
+      "valueScore": 52,
+      "summary": "注册 Muse AI 完整步骤教程 大家好，我是琳小航",
+      "evidence": "大家好，我是琳小航。 很多人注册Muse AI的时候，提示【已经加入候选名单】，不是Muse AI注册不了，是你的方法没有用对。 接下来跟着这篇教程，教会你5分钟注册好一个Muse AI账号。 下面我按顺序一步一步写，每一步都配了截图，照着点就可以",
+      "excerpt": "大家好，我是琳小航。 很多人注册Muse AI的时候，提示【已经加入候选名单】，不是Muse AI注册不了，是你的方法没有用对。 接下来跟着这篇教程，教会你5分钟注册好一个Muse AI账号。 下面我按顺序一步一步写，每一步都配了截图，照着点就可以",
+      "links": [],
+      "metrics": "0 20 8 3",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "ed22189cbc780e",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "二糕",
+      "role": "航海家",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "创业一年赚到6位数，却换了八九个项目，我终于开始面对真正的问题",
+      "url": "",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径"
+      ],
+      "opportunityScore": 30,
+      "valueScore": 52,
+      "summary": "创业一年赚到6位数，却换了八九个项目，我终于开始面对真正的问题 这是我的7月项目复盘（想写很久了）",
+      "evidence": "这是我的7月项目复盘（想写很久了）。 准确地说，7 月的一整个月时间，我都在试图阻止自己立刻开始下一个项目。 这篇复盘不是要证明我已经找到了长期答案。我想写清楚的是： 1、一个人明明能够把很多项目从0跑到1，为什么还是会不断更换方向？ 2、我总结的，选择创业项目的四条选择标准。 如果你也在反复寻找项目，总想提前选中一条不会后悔的路，希望这篇文章能给你一个参照。 这个月我留下了35份录音，能统计出来的输入内容接近46个小时。我去听鲁细细的",
+      "excerpt": "这是我的7月项目复盘（想写很久了）。 准确地说，7 月的一整个月时间，我都在试图阻止自己立刻开始下一个项目。 这篇复盘不是要证明我已经找到了长期答案。我想写清楚的是： 1、一个人明明能够把很多项目从0跑到1，为什么还是会不断更换方向？ 2、我总结的，选择创业项目的四条选择标准。 如果你也在反复寻找项目，总想提前选中一条不会后悔的路，希望这篇文章能给你一个参照。 这个月我留下了35份录音，能统计出来的输入内容接近46个小时。我去听鲁细细的",
+      "links": [],
+      "metrics": "25 50 15 27",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "9beb4aada91b12",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "纪钟",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "如何构建更懂自己的 AI 和生财主页？",
+      "url": "",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Openclaw"
+      ],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径"
+      ],
+      "opportunityScore": 36,
+      "valueScore": 49,
+      "summary": "两周时间，MCP 的接入人数已经到了 9000，很多接入后用过的圈友都和我说简直是全新的学习体验",
+      "evidence": "大家好，我是纪钟。 两周时间，MCP 的接入人数已经到了 9000，很多接入后用过的圈友都和我说简直是全新的学习体验。 没接之前，你想找一个适合新人的帖子，或者研究小红书虚拟资料，得自己想关键词、挨个搜索，再点进帖子判断值不值得看，觉得干货的帖子收藏多了，回头也不一定找得到。 接上以后，你的 AI 可以从大量生财内容里替你筛选、总结，再结合你自己的阶段给出行动建议。 生财的初心一直是帮大家更快速精准的获取赚钱的信息和认知，之前这些定制化",
+      "excerpt": "大家好，我是纪钟。 两周时间，MCP 的接入人数已经到了 9000，很多接入后用过的圈友都和我说简直是全新的学习体验。 没接之前，你想找一个适合新人的帖子，或者研究小红书虚拟资料，得自己想关键词、挨个搜索，再点进帖子判断值不值得看，觉得干货的帖子收藏多了，回头也不一定找得到。 接上以后，你的 AI 可以从大量生财内容里替你筛选、总结，再结合你自己的阶段给出行动建议。 生财的初心一直是帮大家更快速精准的获取赚钱的信息和认知，之前这些定制化",
+      "links": [],
+      "metrics": "32 104 11 45",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "c13bad0cbc4f69",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "LD",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "第一次参加生财亦仁开放日，我从12个路演项目读懂“少则得”",
+      "url": "",
+      "scene": "线下组局与培训复盘",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 30,
+      "valueScore": 45,
+      "summary": "第一次参加生财亦仁开放日，我从12个路演项目读懂“少则得” 第一次参加生财活动就赶上亦仁开放日，我记住了三个字：少则得 各位圈友大家好，我是罗丹，来自重庆，在做OPC社区，也刚申请了生财mini空间",
+      "evidence": "第一次参加生财活动就赶上亦仁开放日，我记住了三个字：少则得 各位圈友大家好，我是罗丹，来自重庆，在做OPC社区，也刚申请了生财mini空间。 算是很幸运，作为一名新圈友，第一次参加生财线下，就遇上亦仁开放日这种重量级活动。 现场氛围比我想象的还要热烈，大家从白天聊到晚上九点，天色全黑，依旧舍不得散场。身处其中，被这种热气腾腾的交流感包裹，但我心里也有点忐忑：客观来讲，我在AI落地实操这块，能力还有很大差距。 过去我总给自己找各种理由，迟",
+      "excerpt": "第一次参加生财活动就赶上亦仁开放日，我记住了三个字：少则得 各位圈友大家好，我是罗丹，来自重庆，在做OPC社区，也刚申请了生财mini空间。 算是很幸运，作为一名新圈友，第一次参加生财线下，就遇上亦仁开放日这种重量级活动。 现场氛围比我想象的还要热烈，大家从白天聊到晚上九点，天色全黑，依旧舍不得散场。身处其中，被这种热气腾腾的交流感包裹，但我心里也有点忐忑：客观来讲，我在AI落地实操这块，能力还有很大差距。 过去我总给自己找各种理由，迟",
+      "links": [],
+      "metrics": "1 26 1 收藏",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "cc52df3a668fcb",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "亦仁",
+      "role": "星主",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "1/ 不要离开上海，环境很重要。",
+      "url": "",
+      "scene": "垂直行业应用",
+      "industry": "留学教育",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 36,
+      "valueScore": 36,
+      "summary": "你觉得在上海拿不到资源，是因为你们俩都不在职，身边没有一起做事的人",
+      "evidence": "1/ 不要离开上海，环境很重要。 对孩子是这样，对你们俩也是这样。 你觉得在上海拿不到资源，是因为你们俩都不在职，身边没有一起做事的人。搬到周边，离人和机会只会更远。 2/ 租房子没问题，我支持。 租一套住得舒服的，一家人每天住在里面，这个钱该花。以你们的家底，也花得起。 3/ 先学 AI。 你之前靠风口赚到了钱。这一轮，用好 AI 就是抓住风口。 学 AI，对你的投资、以后做事、孩子的教育，都有帮助。 你们俩不用上班，时间多，也没有赚",
+      "excerpt": "1/ 不要离开上海，环境很重要。 对孩子是这样，对你们俩也是这样。 你觉得在上海拿不到资源，是因为你们俩都不在职，身边没有一起做事的人。搬到周边，离人和机会只会更远。 2/ 租房子没问题，我支持。 租一套住得舒服的，一家人每天住在里面，这个钱该花。以你们的家底，也花得起。 3/ 先学 AI。 你之前靠风口赚到了钱。这一轮，用好 AI 就是抓住风口。 学 AI，对你的投资、以后做事、孩子的教育，都有帮助。 你们俩不用上班，时间多，也没有赚",
+      "links": [],
+      "metrics": "1 111 27 5",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "1804a02d928239",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "Jason、mar",
+      "role": "",
+      "relativeTime": "2天前",
+      "publishedAt": "",
+      "title": "小红书虚拟3天有单量啦，开心记录一下",
+      "url": "",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径"
+      ],
+      "opportunityScore": 30,
+      "valueScore": 35,
+      "summary": "小红书虚拟3天有单量啦，开心记录一下 小红书虚拟3天的单量",
+      "evidence": "小红书虚拟3天的单量",
+      "excerpt": "小红书虚拟3天的单量",
+      "links": [],
+      "metrics": "0 27 8 1",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "db8f14214d232d",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "破局内容官 | 小雨",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-24 19:53",
+      "title": "🌕月满中秋，一路有你 又是一年中秋，月亮慢慢圆了，归家的脚步也近了。",
+      "url": "https://aipoju.com/topic-details/45548541881158518",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "工具产品化"
+      ],
+      "opportunityScore": 48,
+      "valueScore": 64,
+      "summary": "🌕月满中秋，一路有你 又是一年中秋，月亮慢慢圆了，归家的脚步也近了",
+      "evidence": "🌕月满中秋，一路有你 又是一年中秋，月亮慢慢圆了，归家的脚步也近了。 中秋总有一种温柔的力量，让忙碌的人停一停，让相隔很远的人重新想起彼此，也让我们在向前赶路时，记得回头看看一路陪伴自己的人。 🥮不知不觉，破局已经走过三年半。 三年半里，AI在快速变化，新的工具与机会不断出现，而我们也从最初的摸索走到了今天。 有人在这里学会了新的技能，有人完成了第一个作品，有人收获了第一笔副业收入，也有人在迷茫和受挫时，因为圈友的一句鼓励重新出发。 我们常说破局，但真正的破局，或许不只是抓住一次机会、获得一份收入， 更是在面对不确定时依然愿意尝试，在独自摸索的路上，遇见一群愿意分享经验、彼此搭把手的同行者。 🤝感谢每一位圈友的信任与陪伴。 是你们让破局不只是一个学习AI、探索副业的社区，更成为一个有温度、有连接的地方。…",
+      "excerpt": "中秋总有一种温柔的力量，让忙碌的人停一停，让相隔很远的人重新想起彼此，也让我们在向前赶路时，记得回头看看一路陪伴自己的人。 🥮不知不觉，破局已经走过三年半。 三年半里，AI在快速变化，新的工具与机会不断出现，而我们也从最初的摸索走到了今天。 有人在这里学会了新的技能，有人完成了第一个作品，有人收获了第一笔副业收入，也有人在迷茫和受挫时，因为圈友的一句鼓励重新出发。 我们常说破局，但真正的破局，或许不只是抓住一次机会、获得一份收入， 更是在面对不确定时依然愿意尝试，在独自摸索的路上，遇见一群愿意分享经验、彼此搭把…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "5a16044a10a38b",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "麦塔",
+      "role": "",
+      "relativeTime": "3天前",
+      "publishedAt": "",
+      "title": "AI产品深海圈广州线下聚会圆满，分享找需求方法论，圈友实操都出结果",
+      "url": "",
+      "scene": "交付与服务自动化",
+      "industry": "跨境出海",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "工具产品化"
+      ],
+      "opportunityScore": 42,
+      "valueScore": 75,
+      "summary": "AI产品深海圈广州线下聚会圆满，分享找需求方法论，圈友实操都出结果 AI产品深海圈线下聚会广州站，圆满 我分享了 AI 订阅工具站找需求和验证需求的方法论和实操流程",
+      "evidence": "AI产品深海圈线下聚会广州站，圆满 我分享了 AI 订阅工具站找需求和验证需求的方法论和实操流程。 参加聚会的圈友现场实操，看到大部分都跑出了结果，挺开心的。 还有群友在私聊或者群聊中给我棒棒的反馈，开心加满。 会后的聚餐也得到了大家分享的众多一手信息，有收获。 感谢组局官Luki的全程合作支持，Luki教会我：组局也是个大学问！学到了。",
+      "excerpt": "AI产品深海圈线下聚会广州站，圆满 我分享了 AI 订阅工具站找需求和验证需求的方法论和实操流程。 参加聚会的圈友现场实操，看到大部分都跑出了结果，挺开心的。 还有群友在私聊或者群聊中给我棒棒的反馈，开心加满。 会后的聚餐也得到了大家分享的众多一手信息，有收获。 感谢组局官Luki的全程合作支持，Luki教会我：组局也是个大学问！学到了。",
+      "links": [],
+      "metrics": "0 15 评论 收藏",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "146cb0c2f85267",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "郑美丽",
+      "role": "",
+      "relativeTime": "3天前",
+      "publishedAt": "",
+      "title": "开心！我的装修流程工具上线2天就快500人了",
+      "url": "",
+      "scene": "交付与服务自动化",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "工具产品化"
+      ],
+      "opportunityScore": 40,
+      "valueScore": 64,
+      "summary": "我的装修流程工具上线2天就快500人了 装修金手指，是一个给普通业主用的装修流程工具",
+      "evidence": "装修金手指，是一个给普通业主用的装修流程工具。我看很多人第一次装修，不是不愿意做功课，而是网上的信息太多了。今天刷到水电避坑，明天看到瓷砖攻略，后天又有人告诉你柜子要提前定。看了很多，收藏了很多，真正轮到自己装修的时候，又一脸迷茫。这个小程序解决的就是这个问题。它把装修从准备开工，到拆改，水电，瓦工，木工，油工，安装，软装，验收等阶段，按照真实装修顺序整理出来。上线2天就快500人了",
+      "excerpt": "装修金手指，是一个给普通业主用的装修流程工具。我看很多人第一次装修，不是不愿意做功课，而是网上的信息太多了。今天刷到水电避坑，明天看到瓷砖攻略，后天又有人告诉你柜子要提前定。看了很多，收藏了很多，真正轮到自己装修的时候，又一脸迷茫。这个小程序解决的就是这个问题。它把装修从准备开工，到拆改，水电，瓦工，木工，油工，安装，软装，验收等阶段，按照真实装修顺序整理出来。上线2天就快500人了",
+      "links": [],
+      "metrics": "0 27 10 3",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "c9e83b4e4b4149",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "Link",
+      "role": "",
+      "relativeTime": "3天前",
+      "publishedAt": "",
+      "title": "独立开发者把AI人生规划做成游戏化执行App，全平台快50万曝光",
+      "url": "",
+      "scene": "获客营销与转化",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "工具产品化"
+      ],
+      "opportunityScore": 30,
+      "valueScore": 54,
+      "summary": "独立开发者把AI人生规划做成游戏化执行App，全平台快50万曝光 伟大的我：把 AI 式人生规划做成游戏化执行 App 发现一个独立开发者上架的个人成长 App",
+      "evidence": "伟大的我：把 AI 式人生规划做成游戏化执行 App 发现一个独立开发者上架的个人成长 App。作者把它定位在 todo app 和普通 AI 聊天机器人之间，不是让用户和机器人闲聊，而是把目标、打卡、复盘做成每日任务和周末面试。 这条图文 5 张图，作者说全平台快 50 万人看过。小红书可见 1897 赞、1236 收藏、131 评论、310 分享。产品每天让用户写最小胜利、冥想、记录阻碍、回答灵魂拷问；每日任务会根据年/月/周目标和",
+      "excerpt": "伟大的我：把 AI 式人生规划做成游戏化执行 App 发现一个独立开发者上架的个人成长 App。作者把它定位在 todo app 和普通 AI 聊天机器人之间，不是让用户和机器人闲聊，而是把目标、打卡、复盘做成每日任务和周末面试。 这条图文 5 张图，作者说全平台快 50 万人看过。小红书可见 1897 赞、1236 收藏、131 评论、310 分享。产品每天让用户写最小胜利、冥想、记录阻碍、回答灵魂拷问；每日任务会根据年/月/周目标和",
+      "links": [],
+      "metrics": "0 20 3 5",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "901cb97c373517",
+      "source": "scys",
+      "sourceName": "生财有术",
+      "collection": {
+        "mode": "home",
+        "keyword": "本地生活 / 餐饮 / 外贸 / 跨境电商 / 企业培训 / 招聘 / 财税 / 获客",
+        "group": "daily-feed",
+        "keywords": [
+          "本地生活",
+          "餐饮",
+          "外贸",
+          "跨境电商",
+          "企业培训",
+          "招聘",
+          "财税",
+          "获客"
+        ],
+        "groups": [
+          "daily-feed",
+          "industry",
+          "scenario"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "赵鹤",
+      "role": "",
+      "relativeTime": "3天前",
+      "publishedAt": "",
+      "title": "【FDE系列17】FDE落地AI：和老板、主管、员工分别聊什么？",
+      "url": "",
+      "scene": "AI应用案例",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [],
+      "opportunityScore": 44,
+      "valueScore": 52,
+      "summary": "【FDE系列17】FDE落地AI：和老板、主管、员工分别聊什么",
+      "evidence": "最近在持续整理企业 AI 落地和 FDE 实战中的一些经验，这是第 17 篇。 FDE进入企业调研或沟通，通常会涉及三个角色：老板、主管和一线员工。 这三种角色处在不同的位置，看见的是不同的业务，也能提供不同的信息输入。 所以，FDE 面对这些不同角色，不能问同一套问题、讲同一套方案。要分别搞清楚：该聊什么、该关注什么。 今天就讲一下，和老板、主管、一线员工分别沟通时，到底该聊什么。 完整文章： https://my.feishu.cn",
+      "excerpt": "最近在持续整理企业 AI 落地和 FDE 实战中的一些经验，这是第 17 篇。 FDE进入企业调研或沟通，通常会涉及三个角色：老板、主管和一线员工。 这三种角色处在不同的位置，看见的是不同的业务，也能提供不同的信息输入。 所以，FDE 面对这些不同角色，不能问同一套问题、讲同一套方案。要分别搞清楚：该聊什么、该关注什么。 今天就讲一下，和老板、主管、一线员工分别沟通时，到底该聊什么。 完整文章： https://my.feishu.cn",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/",
+          "text": "https://my.feishu.cn/",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "0 14 评论 收藏",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活",
+        "餐饮",
+        "外贸",
+        "跨境电商",
+        "企业培训",
+        "招聘",
+        "财税",
+        "获客"
+      ],
+      "duplicateCount": 9,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "8c03a2432a65b0",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-23 12:01",
+      "title": "破局赏金猎人第十六期：用破局CLI跑通真实任务。",
+      "url": "https://aipoju.com/topic-details/14425421148585122",
+      "scene": "交付与服务自动化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Codex"
+      ],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 46,
+      "valueScore": 80,
+      "summary": "破局赏金猎人第十六期：用破局CLI跑通真实任务",
+      "evidence": "破局赏金猎人第十六期：用破局CLI跑通真实任务。 这次主题是破局 CLI。 很多圈友可能还没意识到，破局 CLI 这件事，意义非常大。 它不是一个给程序员用的小工具，而是让你的 AI 员工、Agent、Codex、WorkBuddy，真正连接破局官网，直接调用破局内容资产的入口，是让破局这个超级AI商业大脑成为你专属AI商业大脑的桥梁。 过去破局沉淀了大量精华帖、行动营手册、组局、Skill、圈友案例、评论区问题，这些东西以前都要自己翻、自己找、自己整理。 现在不一样了。 你可以让 AI 通过破局CLI帮你查帖子、读手册、找 Skill、整理收藏、分析圈友案例，甚至把这些内容接进自己的工作流里。 这就意味着，破局过去几年沉淀的内容，不只是内容了，而是可以被AI调用的能力库。 先说破局CLI安装方式，其实非常简…",
+      "excerpt": "这次主题是破局 CLI。 很多圈友可能还没意识到，破局 CLI 这件事，意义非常大。 它不是一个给程序员用的小工具，而是让你的 AI 员工、Agent、Codex、WorkBuddy，真正连接破局官网，直接调用破局内容资产的入口，是让破局这个超级AI商业大脑成为你专属AI商业大脑的桥梁。 过去破局沉淀了大量精华帖、行动营手册、组局、Skill、圈友案例、评论区问题，这些东西以前都要自己翻、自己找、自己整理。 现在不一样了。 你可以让 AI 通过破局CLI帮你查帖子、读手册、找 Skill、整理收藏、分析圈友案例，…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "5311118f566c24",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "晓君@AI破局",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-22 21:48",
+      "title": "🔥破局 BSS 共创办公空间⎟杭州首站启动招募",
+      "url": "https://aipoju.com/topic-details/82258254844288152",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Openclaw"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "订单的决策链怎么走",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "前端获客 + 后端交付拆分",
+        "工具产品化"
+      ],
+      "opportunityScore": 82,
+      "valueScore": 100,
+      "summary": "🔥破局 BSS 共创办公空间⎟杭州首站启动招募 大家好，我是晓君，破局星球运营负责人，也是破局 BSS 共创办公项目负责人",
+      "evidence": "🔥破局 BSS 共创办公空间⎟杭州首站启动招募 大家好，我是晓君，破局星球运营负责人，也是破局 BSS 共创办公项目负责人。 今天我来正式揭幕：破局 BSS 共创办公空间杭州首站，首批 40 席招募正式启动！ 为了这件事，我和洋哥讨论了很久。 从首站应该选择哪座城市，到这个联合办公空间到底应该是什么样子，再到为什么要在这个时间点启动，我们反复推演了很多轮。 最后，我们把首站定在了杭州。 我们想做的，从来不是简单租几个工位，也不是找一个办公室，让大家坐在一起各自办公。 洋哥一直强调，破局 BSS 真正要搭建的，是一个面向 AI 实干者的线下共创场域：高密度链接、高质量共创、高频率分享，让一群真正躬身入局的人，把项目、机会、资源、人才和判断加速流动起来。 现在，这件事正式启动。 杭州首站办公地址：杭州市滨江区滨…",
+      "excerpt": "大家好，我是晓君，破局星球运营负责人，也是破局 BSS 共创办公项目负责人。 今天我来正式揭幕：破局 BSS 共创办公空间杭州首站，首批 40 席招募正式启动！ 为了这件事，我和洋哥讨论了很久。 从首站应该选择哪座城市，到这个联合办公空间到底应该是什么样子，再到为什么要在这个时间点启动，我们反复推演了很多轮。 最后，我们把首站定在了杭州。 我们想做的，从来不是简单租几个工位，也不是找一个办公室，让大家坐在一起各自办公。 洋哥一直强调，破局 BSS 真正要搭建的，是一个面向 AI 实干者的线下共创场域：高密度链接、…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "15fab24a7f385a",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "知屿船长",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-22 18:52",
+      "title": "我的出海产品，收到了第一笔付费 我的文字转语音网站 T2Speech，收到两笔订单，8 月 16 日，12.99 美元。",
+      "url": "https://aipoju.com/topic-details/55521524154824854",
+      "scene": "获客营销与转化",
+      "industry": "跨境出海",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [],
+      "resultSignal": "订单",
+      "reusableMethod": [
+        "工具产品化"
+      ],
+      "opportunityScore": 56,
+      "valueScore": 82,
+      "summary": "我的出海产品，收到了第一笔付费 我的文字转语音网站 T2Speech，收到两笔订单，8 月 16 日，12.99 美元",
+      "evidence": "我的出海产品，收到了第一笔付费 我的文字转语音网站 T2Speech，收到两笔订单，8 月 16 日，12.99 美元。9 月 16 日，49.90 美元。合计约 63 美元。 我是知屿船长，7 年前端程序员，破局行动家。今年 3 月加入 AI 编程出海训练营，从选词、开发到成交，走了完整的半年。 这篇复盘讲的是全过程： 怎么筛关键词、分析竞品，看那些指标 怎么设计免费和付费权益 怎么让支付和权益对得上 怎么用数据分析网站判断下一步 编程出海的一些实用建议 没有成功学，只有真实过程和踩过的坑。也要说清楚，前期投入约 1520 元，现在还没回本。 两笔订单验证的是有人愿意付费。 完整复盘请点击阅读：https://tcn5ez38ow3w.feishu.cn/docx/PTbZd3z3io4LoJxz9aycj…",
+      "excerpt": "9 月 16 日，49.90 美元。合计约 63 美元。 我是知屿船长，7 年前端程序员，破局行动家。今年 3 月加入 AI 编程出海训练营，从选词、开发到成交，走了完整的半年。 这篇复盘讲的是全过程： 怎么筛关键词、分析竞品，看那些指标 怎么设计免费和付费权益 怎么让支付和权益对得上 怎么用数据分析网站判断下一步 编程出海的一些实用建议 没有成功学，只有真实过程和踩过的坑。也要说清楚，前期投入约 1520 元，现在还没回本。 两笔订单验证的是有人愿意付费。 完整复盘请点击阅读：https://tcn5ez38o…",
+      "links": [
+        {
+          "href": "https://tcn5ez38ow3w.feishu.cn/docx/PTbZd3z3io4LoJxz9aycjBD8nlb",
+          "text": "https://tcn5ez38ow3w.feishu.cn/docx/PTbZd3z3io4LoJxz9aycjBD8nlb",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "2e3ea7cc8cb005",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-22 15:04",
+      "title": "今天已经是彻彻底底的AI超级个体和AI超级组织时代了。",
+      "url": "https://aipoju.com/topic-details/55521524118148484",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 40,
+      "valueScore": 46,
+      "summary": "今天已经是彻彻底底的AI超级个体和AI超级组织时代了",
+      "evidence": "今天已经是彻彻底底的AI超级个体和AI超级组织时代了。 会用AI，会打造skill和agent，和不会的人，已经快成两种人类了。 我们团队目前日均消耗token在20亿左右，已经基本实现AI超级组织的第一个阶段：全员使用AI和AI员工，AI员工之间开始有初步的业务协同。 我自己也有20多个AI员工，帮我做20多个矩阵号的内容，战略和管理，以及产品研发。 未来一定是会用AI的人打败不会用AI的人，这一点大家不要有任何怀疑。 最近我们上线了token排行榜，同时我弄了一个亿级token超级AI玩家俱乐部，目前已经快200人了。 欢迎大家接入破局token排行榜，点击这个链接即可加入：AI破局俱乐部 接入排行榜后，如果你有一天的token消耗量超过1亿，可以找你的竹子助理申请加入亿级token超级AI玩家俱乐部。 …",
+      "excerpt": "会用AI，会打造skill和agent，和不会的人，已经快成两种人类了。 我们团队目前日均消耗token在20亿左右，已经基本实现AI超级组织的第一个阶段：全员使用AI和AI员工，AI员工之间开始有初步的业务协同。 我自己也有20多个AI员工，帮我做20多个矩阵号的内容，战略和管理，以及产品研发。 未来一定是会用AI的人打败不会用AI的人，这一点大家不要有任何怀疑。 最近我们上线了token排行榜，同时我弄了一个亿级token超级AI玩家俱乐部，目前已经快200人了。 欢迎大家接入破局token排行榜，点击这个链…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "bae81a75c58d87",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "狗哥",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-21 19:36",
+      "title": "不要做“高认知”穷人",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "订单",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 76,
+      "valueScore": 100,
+      "summary": "不要做“高认知”穷人 不要做“高认知”穷人",
+      "evidence": "不要做“高认知”穷人",
+      "excerpt": "不要做“高认知”穷人",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "b4047838abe3e9",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "小灰",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-09-20 13:38",
+      "title": "AI游戏发布10天，我的营收突破5位数",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "营收突破5位数 大家好",
+      "reusableMethod": [
+        "工具产品化"
+      ],
+      "opportunityScore": 58,
+      "valueScore": 68,
+      "summary": "AI游戏发布10天，我的营收突破5位数 大家好，我是程序员小灰",
+      "evidence": "大家好，我是程序员小灰。 自从2023年，OpenAI旗下的AI模型GPT-4横空出世，整个世界进入了AI技术高速发展的时代。 短短三年多，AI相关的玩法层出不穷，包括AI写作、AI绘本、AI漫剧、AI视频、AI客服、AI工具站......每一种玩法都改变了许多普通人的命运。 那么，使用AI能不能开发游戏呢？ 有人觉得，AI当前的能力只能够开发一些小小的游戏Demo，想要开发完整的商业化游戏，几乎不太可能。 然而，小灰用行动与实际结果证明，借助 AI 开发商业游戏是可行的。 我利用两个月的时间，完全使用AI工具开发了三款游戏，并上线了steam平台。 这三款游戏的销量如何呢？ 虽然前两款游戏反响平平，但我的第三款游戏【无为修仙传】，却在steam平台拿到了非常不错的结果。 截至本文撰写时，我的这款仙侠风格放置…",
+      "excerpt": "大家好，我是程序员小灰。 自从2023年，OpenAI旗下的AI模型GPT-4横空出世，整个世界进入了AI技术高速发展的时代。 短短三年多，AI相关的玩法层出不穷，包括AI写作、AI绘本、AI漫剧、AI视频、AI客服、AI工具站......每一种玩法都改变了许多普通人的命运。 那么，使用AI能不能开发游戏呢？ 有人觉得，AI当前的能力只能够开发一些小小的游戏Demo，想要开发完整的商业化游戏，几乎不太可能。 然而，小灰用行动与实际结果证明，借助 AI 开发商业游戏是可行的。 我利用两个月的时间，完全使用AI工具开…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "bcf6afee5cb771",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "醒狮",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-20 01:37",
+      "title": "WorkBuddy本地第二大脑：让AI真正记住你的工作",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "本地生活",
+      "tools": [
+        "ChatGPT",
+        "Gemini"
+      ],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 60,
+      "valueScore": 78,
+      "summary": "WorkBuddy本地第二大脑：让AI真正记住你的工作 WorkBuddy本地第二大脑：让AI真正记住你的工作",
+      "evidence": "WorkBuddy本地第二大脑：让AI真正记住你的工作",
+      "excerpt": "WorkBuddy本地第二大脑：让AI真正记住你的工作",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/AMKPwsfd8ik2SskdyYFcSnJ7nQe",
+          "text": "https://my.feishu.cn/wiki/AMKPwsfd8ik2SskdyYFcSnJ7nQe",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "0a3dc6b16cb5dd",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "田野AI实战笔记",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-19 16:48",
+      "title": "教你用 WorkBuddy 搞定公众号写作，从找对标到排版发布",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "工具产品化"
+      ],
+      "opportunityScore": 38,
+      "valueScore": 79,
+      "summary": "教你用 WorkBuddy 搞定公众号写作，从找对标到排版发布 大家好，我是田野",
+      "evidence": "大家好，我是田野。 最近我把自己用 WorkBuddy 写公众号的过程整理成了一篇实操教程，从拆对标、定选题、整理素材，到写初稿、审校和排版，一步步演示怎么做。 文档里放了实操截图和可以直接复制的提示词，文末也附上了相关 Skills 和安装说明。想用 AI 辅助公众号创作的圈友，可以打开 WorkBuddy，跟着做完自己的第一篇文章。 https://liuqichuangfu.feishu.cn/docx/DrhPdGD84oCKPgx5NBOcQPv2nff",
+      "excerpt": "大家好，我是田野。 最近我把自己用 WorkBuddy 写公众号的过程整理成了一篇实操教程，从拆对标、定选题、整理素材，到写初稿、审校和排版，一步步演示怎么做。 文档里放了实操截图和可以直接复制的提示词，文末也附上了相关 Skills 和安装说明。想用 AI 辅助公众号创作的圈友，可以打开 WorkBuddy，跟着做完自己的第一篇文章。 https://liuqichuangfu.feishu.cn/docx/DrhPdGD84oCKPgx5NBOcQPv2nff",
+      "links": [
+        {
+          "href": "https://liuqichuangfu.feishu.cn/docx/DrhPdGD84oCKPgx5NBOcQPv2nff",
+          "text": "https://liuqichuangfu.feishu.cn/docx/DrhPdGD84oCKPgx5NBOcQPv2nff",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "97a8250510fd70",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "成都大书",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-19 14:03",
+      "title": "万字长文：企业 AI 转型的三个台阶，我们走了两年才踏上第三级",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "前端获客 + 后端交付拆分",
+        "工具产品化"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 84,
+      "summary": "万字长文：企业 AI 转型的三个台阶，我们走了两年才踏上第三级 万字长文：企业 AI 转型的三个台阶，我们走了两年才踏上第三级",
+      "evidence": "万字长文：企业 AI 转型的三个台阶，我们走了两年才踏上第三级",
+      "excerpt": "万字长文：企业 AI 转型的三个台阶，我们走了两年才踏上第三级",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/O5jMd2rs2ovj5Kxg1AtcRYUanje",
+          "text": "https://my.feishu.cn/docx/O5jMd2rs2ovj5Kxg1AtcRYUanje",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "9b2cd6fc9e626e",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "AI卷王龙哥",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-18 23:17",
+      "title": "手把手带你用豆包工作X破局CLI搭建破局信息中台系统",
+      "url": "https://aipoju.com/index",
+      "scene": "线下组局与培训复盘",
+      "industry": "未识别行业",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "工具产品化"
+      ],
+      "opportunityScore": 38,
+      "valueScore": 54,
+      "summary": "手把手带你用豆包工作X破局CLI搭建破局信息中台系统 大家好，我是AI卷王龙哥，破局行动家，星火师，文曲星，多期破局行动优秀教练，写了13篇精华帖，线下组局50+场",
+      "evidence": "大家好，我是AI卷王龙哥，破局行动家，星火师，文曲星，多期破局行动优秀教练，写了13篇精华帖，线下组局50+场。 刚刚拿了一篇精华帖，热血沸腾，再来一篇破局CLI实操贴，跟着实操，有手就行。 最近豆包工作特别火，刚好破局正式推出CLI，就用豆包工作X破局CLI搭建了一套破局数据中台系统，欢迎大家使用破局CLI玩出更多花样，我先班门弄斧，详情见：https://my.feishu.cn/wiki/C35BwCzNciyJmWkxokNclpurnqe 用破局CLI跑通真实任务 见证卷王之路[呲牙]： 破局九星战将AI卷王有图有真相... 万字长文，我差点想放弃组局，直...",
+      "excerpt": "大家好，我是AI卷王龙哥，破局行动家，星火师，文曲星，多期破局行动优秀教练，写了13篇精华帖，线下组局50+场。 刚刚拿了一篇精华帖，热血沸腾，再来一篇破局CLI实操贴，跟着实操，有手就行。 最近豆包工作特别火，刚好破局正式推出CLI，就用豆包工作X破局CLI搭建了一套破局数据中台系统，欢迎大家使用破局CLI玩出更多花样，我先班门弄斧，详情见：https://my.feishu.cn/wiki/C35BwCzNciyJmWkxokNclpurnqe 用破局CLI跑通真实任务 见证卷王之路[呲牙]： 破局九星战将A…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/C35BwCzNciyJmWkxokNclpurnqe",
+          "text": "https://my.feishu.cn/wiki/C35BwCzNciyJmWkxokNclpurnqe",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "3cc7a401290e89",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "竹清风（Junsen）",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-18 22:30",
+      "title": "用时一天我把数字人口播做成了全自动流水线——从「半自动点三下」到「一键出片」的完整复盘",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "未识别行业",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 74,
+      "summary": "用时一天我把数字人口播做成了全自动流水线——从「半自动点三下」到「一键出片」的完整复盘 用时一天我把数字人口播做成了全自动流水线——从「半自动点三下」到「一键出片」的完整复盘",
+      "evidence": "用时一天我把数字人口播做成了全自动流水线——从「半自动点三下」到「一键出片」的完整复盘",
+      "excerpt": "用时一天我把数字人口播做成了全自动流水线——从「半自动点三下」到「一键出片」的完整复盘",
+      "links": [
+        {
+          "href": "https://jcnjf69lk0l7.feishu.cn/docx/UPTAdU66UozeBgxhDBWc2dRfnBd?from=from_copylink",
+          "text": "https://jcnjf69lk0l7.feishu.cn/docx/UPTAdU66UozeBgxhDBWc2dRfnBd?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "d38169bf53bc22",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "industry_case",
+      "author": "阿祥",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-18 18:13",
+      "title": "今天洋哥给行动家的内部分享，核心讲透一件事：如何把日常会议、聊天沉淀成自己的内容资产，再用AI自动找选题、批量写文案，打造一个真正能干活的“AI内容员工”。",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径"
+      ],
+      "opportunityScore": 48,
+      "valueScore": 61,
+      "summary": "今天洋哥给行动家的内部分享，核心讲透一件事：如何把日常会议、聊天沉淀成自己的内容资产，再用AI自动找选题、批量写文案，打造一个真正能干活的“AI内容员工”",
+      "evidence": "我整理成了保姆级SOP，照着做就能落地👇 【洋哥9-18给行动家内部私密分享《批量生成短视频选题与文案》｜保姆级实操 SOP】👉https://kids787buft.feishu.cn/docx/Ler4dikd0oZPuEx6Jz6cFnLYnQf https://kids787buft.feishu.cn/docx/Ler4dikd0oZPuEx6Jz6cFnLYnQf",
+      "excerpt": "我整理成了保姆级SOP，照着做就能落地👇 【洋哥9-18给行动家内部私密分享《批量生成短视频选题与文案》｜保姆级实操 SOP】👉https://kids787buft.feishu.cn/docx/Ler4dikd0oZPuEx6Jz6cFnLYnQf https://kids787buft.feishu.cn/docx/Ler4dikd0oZPuEx6Jz6cFnLYnQf",
+      "links": [
+        {
+          "href": "https://kids787buft.feishu.cn/docx/Ler4dikd0oZPuEx6Jz6cFnLYnQf",
+          "text": "https://kids787buft.feishu.cn/docx/Ler4dikd0oZPuEx6Jz6cFnLYnQf",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "57f99f9e70eb5e",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-18 16:17",
+      "title": "AI洞察40：未来3～5年AI Native重构公司，传统打工人将加速退场，人人都是业务负责人，AI超级个体和AI超级组织正在重写职场规则 我对未来3～5年的职场，有一个很强烈的判断：只靠领任",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "本地生活",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "订单",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 76,
+      "valueScore": 100,
+      "summary": "AI洞察40：未来3～5年AI Native重构公司，传统打工人将加速退场，人人都是业务负责人，AI超级个体和AI超级组织正在重写职场规则 我对未来3～5年的职场，有一个很强烈的判断：只靠领任 务、做执行、交工时的传统打工人，将普遍面临失去工作或身份转型，同时无法带领团队完成AI超级组织转型的老板，将很难继续维持公司的生存",
+      "evidence": "务、做执行、交工时的传统打工人，将普遍面临失去工作或身份转型，同时无法带领团队完成AI超级组织转型的老板，将很难继续维持公司的生存。 我在今天的讨论里把这句话说得更直接：未来职场不再会有打工人，只有业务负责人，甚至是人人都是业务CEO。 这不是所有行业在同一天清空岗位的预言，而是我对职场方向的判断：企业需要的，将越来越不是执行某个动作的人，而是能带AI负责业务的人。 能适应这个趋势的职场人，将获得更高的薪资、更大的空间、更自由的环境，比如破局行动家码农老王，加入破局2年后，从外包打工人成为公司的AI FDE操盘手，年薪从10万到50万，破局行动家老赵，前房地产公司总监，两年前失业加入破局，做了自己的AI工作室，最近更是凭借GEO和AI超级个体的能力，入职本地AI高科技公司任职。 能适应这个趋势的AI创业者、A…",
+      "excerpt": "务、做执行、交工时的传统打工人，将普遍面临失去工作或身份转型，同时无法带领团队完成AI超级组织转型的老板，将很难继续维持公司的生存。 我在今天的讨论里把这句话说得更直接：未来职场不再会有打工人，只有业务负责人，甚至是人人都是业务CEO。 这不是所有行业在同一天清空岗位的预言，而是我对职场方向的判断：企业需要的，将越来越不是执行某个动作的人，而是能带AI负责业务的人。 能适应这个趋势的职场人，将获得更高的薪资、更大的空间、更自由的环境，比如破局行动家码农老王，加入破局2年后，从外包打工人成为公司的AI FDE操盘手…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "24b7b2aaf298ce",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "袁欣就是圆心",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-09-18 15:58",
+      "title": "半年营收50w，分享我的FDE 产品：CEO外脑 —— 让 AI 接手专家型客户手中的高精度工作",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "营收50w",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 68,
+      "valueScore": 100,
+      "summary": "半年营收50w，分享我的FDE 产品：CEO外脑 —— 让 AI 接手专家型客户手中的高精度工作 半年营收50w，分享我的FDE 产品：CEO外脑 —— 让 AI 接手专家型客户手中的高精度工作",
+      "evidence": "半年营收50w，分享我的FDE 产品：CEO外脑 —— 让 AI 接手专家型客户手中的高精度工作",
+      "excerpt": "半年营收50w，分享我的FDE 产品：CEO外脑 —— 让 AI 接手专家型客户手中的高精度工作",
+      "links": [
+        {
+          "href": "https://jcns350fcl4m.feishu.cn/wiki/LGbSwJjDeiXsOlkizNbc23wOnPt?from=from_copylink",
+          "text": "https://jcns350fcl4m.feishu.cn/wiki/LGbSwJjDeiXsOlkizNbc23wOnPt?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "b73515abd939f9",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "大鹏",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-18 10:47",
+      "title": "破局 CLI 新手入门：把破局里的经验，用到你的真实工作里",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 69,
+      "summary": "破局 CLI 新手入门：把破局里的经验，用到你的真实工作里 大家好，我是大鹏",
+      "evidence": "大家好，我是大鹏。 破局 CLI 已经全面开放，它可以把破局里的帖子、行动营手册和 Skill 商城内容带到你的工作现场。 最近也有圈友问：工具装好以后，第一句该问什么？查到一堆资料之后，又怎样真正用到自己的工作里？ 这篇文章就用三个逐层深入的案例，带你从找经验开始，走到完成一次真实项目的接单前研判。 内容比较长，详细文档可以移步飞书： https://my.feishu.cn/docx/Y5kpdEmElo3qquxOqdPcRSZHntb",
+      "excerpt": "大家好，我是大鹏。 破局 CLI 已经全面开放，它可以把破局里的帖子、行动营手册和 Skill 商城内容带到你的工作现场。 最近也有圈友问：工具装好以后，第一句该问什么？查到一堆资料之后，又怎样真正用到自己的工作里？ 这篇文章就用三个逐层深入的案例，带你从找经验开始，走到完成一次真实项目的接单前研判。 内容比较长，详细文档可以移步飞书： https://my.feishu.cn/docx/Y5kpdEmElo3qquxOqdPcRSZHntb",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/Y5kpdEmElo3qquxOqdPcRSZHntb",
+          "text": "https://my.feishu.cn/docx/Y5kpdEmElo3qquxOqdPcRSZHntb",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "eeee57877c8279",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-17 20:38",
+      "title": "破局token排行榜上线，亿级tokenAI超级玩家俱乐部上线！",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Codex"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 46,
+      "valueScore": 80,
+      "summary": "破局token排行榜上线，亿级tokenAI超级玩家俱乐部上线",
+      "evidence": "破局token排行榜上线，亿级tokenAI超级玩家俱乐部上线！",
+      "excerpt": "破局token排行榜上线，亿级tokenAI超级玩家俱乐部上线！",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "02a95561e322c1",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "醒狮",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-17 12:59",
+      "title": "AI绘画×非遗文创：我用一只“小肥马”赚了500多，这条赛道普通人也能照着做",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "前端获客 + 后端交付拆分",
+        "工具产品化"
+      ],
+      "opportunityScore": 56,
+      "valueScore": 81,
+      "summary": "AI绘画×非遗文创：我用一只“小肥马”赚了500多，这条赛道普通人也能照着做 AI绘画×非遗文创：我用一只“小肥马”赚了500多，这条赛道普通人也能照着做",
+      "evidence": "AI绘画×非遗文创：我用一只“小肥马”赚了500多，这条赛道普通人也能照着做",
+      "excerpt": "AI绘画×非遗文创：我用一只“小肥马”赚了500多，这条赛道普通人也能照着做",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/Hxd0deK8TonVtOxo7Ybc2r11nsb?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/Hxd0deK8TonVtOxo7Ybc2r11nsb?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "fb6dfbd00d481c",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "AI卷王龙哥",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-17 01:27",
+      "title": "万字长文，我差点想放弃组局，直到看见9位同学发生了改变",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "未识别行业",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 58,
+      "summary": "万字长文，我差点想放弃组局，直到看见9位同学发生了改变 大家好，我是AI卷王龙哥，破局行动家，星火师，文曲星，多期破局行动优秀教练，写了12篇精华帖，线下组局50+场",
+      "evidence": "大家好，我是AI卷王龙哥，破局行动家，星火师，文曲星，多期破局行动优秀教练，写了12篇精华帖，线下组局50+场。 写这篇组局复盘贴的时候，已经有 9 位同学写完了自己的复盘(文末附链接)。 每一篇我都去认真看了一下。 看到大家因为这一次线下局，有了新的思考、新的链接，甚至开始产生新的行动，我突然觉得： 这场局组得特别有意义。 更让我意外的是，这一次组局还被评为了精选组局。 这个结果，其实是我组局之前完全没有想到的。 因为就在组这场局之前，我甚至一度觉得： 这可能是我最后一场局了。 但没想到，这一场局，又把我拉了回来。 我也写写自己的思考与心路历程，帮更多同学找到方向。 更多文字见飞书： https://my.feishu.cn/wiki/YE1ewN1TBilsLHk8gSxcgDcDneh?from=fro…",
+      "excerpt": "大家好，我是AI卷王龙哥，破局行动家，星火师，文曲星，多期破局行动优秀教练，写了12篇精华帖，线下组局50+场。 写这篇组局复盘贴的时候，已经有 9 位同学写完了自己的复盘(文末附链接)。 每一篇我都去认真看了一下。 看到大家因为这一次线下局，有了新的思考、新的链接，甚至开始产生新的行动，我突然觉得： 这场局组得特别有意义。 更让我意外的是，这一次组局还被评为了精选组局。 这个结果，其实是我组局之前完全没有想到的。 因为就在组这场局之前，我甚至一度觉得： 这可能是我最后一场局了。 但没想到，这一场局，又把我拉了回…",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/YE1ewN1TBilsLHk8gSxcgDcDneh?from=from_copylink",
+          "text": "https://my.feishu.cn/wiki/YE1ewN1TBilsLHk8gSxcgDcDneh?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "db295b8d6de8ec",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "孟健AI编程",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-16 20:08",
+      "title": "程序员创业快一年：做出产品不等于拥有生意",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "知识沉淀与效率"
+      ],
+      "resultSignal": "收费较为契合",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 76,
+      "valueScore": 100,
+      "summary": "程序员创业快一年：做出产品不等于拥有生意 程序员创业快一年：做出产品不等于拥有生意",
+      "evidence": "程序员创业快一年：做出产品不等于拥有生意",
+      "excerpt": "程序员创业快一年：做出产品不等于拥有生意",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "a2094001ddc2a4",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "是苗苗呀",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-16 15:47",
+      "title": "破局币上线｜这一次，把你喜欢的内容投出来！",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 40,
+      "valueScore": 63,
+      "summary": "破局币上线｜这一次，把你喜欢的内容投出来",
+      "evidence": "Hi各位， 我是破局首席内容官苗苗。 今天来跟大家分享一个新鲜事， 破局币，正式上线啦！ 🪙🪙🪙 讲功能之前，先跟大家聊聊，为什么会有破局币。 一直以来，破局的精华帖，都是由破局官方的精华评审员评出来的。 但我就在想，破局有6万会员，大家每天在这里看内容、学方法、做项目。哪些经验帮自己少踩了坑，哪些方法真的用出了结果，读过、试过的人，都有自己的体会。 那这6万会员，是不是也应该有权利告诉大家：“我觉得这篇内容很好，值得上精华！” 比如，一篇帖子帮你跑通了卡了很久的工作流，一次接单复盘刚好解答了你的困惑。看完之后，除了点个赞、留句话，你可能还想说：这篇真的有用，我想推荐给更多人！ 我们想让这份推荐，有一个更直接的表达方式。所以就有了破局币。 简单来说，破局币，就是你给好内容投出的那一份认可。 这篇分享帮到…",
+      "excerpt": "Hi各位， 我是破局首席内容官苗苗。 今天来跟大家分享一个新鲜事， 破局币，正式上线啦！ 🪙🪙🪙 讲功能之前，先跟大家聊聊，为什么会有破局币。 一直以来，破局的精华帖，都是由破局官方的精华评审员评出来的。 但我就在想，破局有6万会员，大家每天在这里看内容、学方法、做项目。哪些经验帮自己少踩了坑，哪些方法真的用出了结果，读过、试过的人，都有自己的体会。 那这6万会员，是不是也应该有权利告诉大家：“我觉得这篇内容很好，值得上精华！” 比如，一篇帖子帮你跑通了卡了很久的工作流，一次接单复盘刚好解答了你的困惑。看完…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "3b5134f07459ef",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-16 12:36",
+      "title": "最近很多行动家、圈友问我：其他各大社群都相继取消了虚拟积分分红政策，破局会不会也取消？",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "工具产品化"
+      ],
+      "opportunityScore": 30,
+      "valueScore": 42,
+      "summary": "最近很多行动家、圈友问我：其他各大社群都相继取消了虚拟积分分红政策，破局会不会也取消",
+      "evidence": "我在这里郑重说一下： 每一个社群都有自己的发展策略，大家做的选择都不一样，我表示尊重。 但对于破局来说：除非破局哪一天做不下去了、破产了，否则绝无可能。 如果破局能做大做强，甚至上市，我直接给AI之心持有圈友换成破局股份。 AI之心是破局圈友们历史给破局做过贡献后，破局对大家的感恩和回馈。 破局精神内核最重要的是感恩文化，而不是追求我们自己赚多少钱。 破局有这么多优秀的星火师、教练、星推官、组局官、领队、志愿者，是那些持续给破局做贡献的圈友们才让破局无比强大。 破局的感恩回馈理应是持续的！ 我们同时也希望这套文化内核能让大家也能相互之间感恩，比如感恩教会你的教练、感恩帮大家组局的组局官、感恩给大家写文章的星火师和内容创作者、感恩督促你的领队志愿者、感恩给大家做服务破局员工。 另外我们也会不断增加AI之心体系能…",
+      "excerpt": "我在这里郑重说一下： 每一个社群都有自己的发展策略，大家做的选择都不一样，我表示尊重。 但对于破局来说：除非破局哪一天做不下去了、破产了，否则绝无可能。 如果破局能做大做强，甚至上市，我直接给AI之心持有圈友换成破局股份。 AI之心是破局圈友们历史给破局做过贡献后，破局对大家的感恩和回馈。 破局精神内核最重要的是感恩文化，而不是追求我们自己赚多少钱。 破局有这么多优秀的星火师、教练、星推官、组局官、领队、志愿者，是那些持续给破局做贡献的圈友们才让破局无比强大。 破局的感恩回馈理应是持续的！ 我们同时也希望这套文化…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "250e84674b605e",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "霍金斯大家长",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-16 10:38",
+      "title": "中标拆解 | 3个低价高出单量的产品到底在卖什么？",
+      "url": "https://aipoju.com/index",
+      "scene": "内容生产与IP运营",
+      "industry": "内容与自媒体",
+      "tools": [],
+      "monetization": "资料产品 / 工具包",
+      "painPoints": [
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "工具产品化"
+      ],
+      "opportunityScore": 38,
+      "valueScore": 61,
+      "summary": "中标拆解 | 3个低价高出单量的产品到底在卖什么",
+      "evidence": "大家好，我是霍金斯大家长~很多经常看风向标的圈友可能对我眼熟，进入破局几个月以来，我一直在致力于发风向标，目前已经发了215篇风向标，中标78篇~中标率36%，近半年中标排第一！！！！ 接下来我也比较想通过几个案例来拆解一下，为什么能中标，以及在中标之后，我看到了它背后怎样的商业逻辑。 这次挑了三个我发过的案例：9.9元的认知资料包、英语课堂小游戏，还有10元的考公 Skill。它们都不贵，形式也不复杂，却分别卖出了两千多份、八百多份和一百三十多份。 看到这种商品，我会先问：同样的知识和工具，网上并不少，为什么用户还愿意掏钱？只看文件里有多少内容，很容易漏掉用户下单时真正着急的事情。 下面分开聊。每个案例先看商品和数据，再分析用户可能为什么买，最后给一条普通人可以尝试的制作路径，配套提示词放在文末。 点击阅读…",
+      "excerpt": "大家好，我是霍金斯大家长~很多经常看风向标的圈友可能对我眼熟，进入破局几个月以来，我一直在致力于发风向标，目前已经发了215篇风向标，中标78篇~中标率36%，近半年中标排第一！！！！ 接下来我也比较想通过几个案例来拆解一下，为什么能中标，以及在中标之后，我看到了它背后怎样的商业逻辑。 这次挑了三个我发过的案例：9.9元的认知资料包、英语课堂小游戏，还有10元的考公 Skill。它们都不贵，形式也不复杂，却分别卖出了两千多份、八百多份和一百三十多份。 看到这种商品，我会先问：同样的知识和工具，网上并不少，为什么用…",
+      "links": [
+        {
+          "href": "https://d16rg8unadx.feishu.cn/wiki/Nj7xwe8DwiyNiWkZ5OLcmwBYnoc",
+          "text": "https://d16rg8unadx.feishu.cn/wiki/Nj7xwe8DwiyNiWkZ5OLcmwBYnoc",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "33894f4af51df2",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "findyi",
+      "role": "星主 行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-15 19:18",
+      "title": "今天第十二期破局行动报名马上结束。 同时，今天破局找了一个顶尖小红书获客团队，付费近6位数请他们操盘破局小红书增长，他们擅长用AI和小红书的打法实现获客，擅长高效内容产出，用他们的方法，一个人",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 42,
+      "valueScore": 74,
+      "summary": "同时，今天破局找了一个顶尖小红书获客团队，付费近6位数请他们操盘破局小红书增长，他们擅长用AI和小红书的打法实现获客，擅长高效内容产出，用他们的方法，一个人 一天可以做上百条小红书内容，破局找他们主要想突破小红书增长通道",
+      "evidence": "一天可以做上百条小红书内容，破局找他们主要想突破小红书增长通道。 我安排了3个破局同事跟这个团队一起学习，期待学成后帮助破局实现小红书获客增长。 更进一步，我有一个想法： 破局一直以来在流量端，公众号、视频号我们高手如云，但小红书是我们的荒漠和未知之地，这个现状必须改变。 等破局团队跟行业顶尖团队学会这套后，开一个行动营，带大家一起做小红书增长获客，直接带破局增长，给大家分钱。 大家学会小红书增长获客的同时，还能通过破局强大的后端团队实现商业跑通。 同时，如果开这个行动营，这将是破局团队首次亲自全员下场带大家做一个完整的学习和交付。 我做事一般喜欢调研，大家有需求，我再去做，不太喜欢强行去做。 特此来调研下，破局团队学会估计一个月，10月我们开一个风口小红书增长获客行动营，一起学习小红书增长和互联网流量密码。…",
+      "excerpt": "一天可以做上百条小红书内容，破局找他们主要想突破小红书增长通道。 我安排了3个破局同事跟这个团队一起学习，期待学成后帮助破局实现小红书获客增长。 更进一步，我有一个想法： 破局一直以来在流量端，公众号、视频号我们高手如云，但小红书是我们的荒漠和未知之地，这个现状必须改变。 等破局团队跟行业顶尖团队学会这套后，开一个行动营，带大家一起做小红书增长获客，直接带破局增长，给大家分钱。 大家学会小红书增长获客的同时，还能通过破局强大的后端团队实现商业跑通。 同时，如果开这个行动营，这将是破局团队首次亲自全员下场带大家做一…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "86c6d1225434b2",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "水月",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-15 16:49",
+      "title": "破局 CLI 正式开放：把圈友的实战经验，变成你的 AI 能力",
+      "url": "https://aipoju.com/index",
+      "scene": "知识库与组织提效",
+      "industry": "未识别行业",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "待确认",
+      "painPoints": [],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 44,
+      "valueScore": 48,
+      "summary": "破局 CLI 正式开放：把圈友的实战经验，变成你的 AI 能力 破局 CLI 正式开放：把圈友的实战经验，变成你的 AI 能力",
+      "evidence": "破局 CLI 正式开放：把圈友的实战经验，变成你的 AI 能力",
+      "excerpt": "破局 CLI 正式开放：把圈友的实战经验，变成你的 AI 能力",
+      "links": [
+        {
+          "href": "https://d16rg8unadx.feishu.cn/docx/CmSTd7SbPofwHyx92oWcX9qGnxb?from=from_copylink",
+          "text": "https://d16rg8unadx.feishu.cn/docx/CmSTd7SbPofwHyx92oWcX9qGnxb?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "9c29e69e6942ac",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "破局实战官｜王庆",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-15 11:04",
+      "title": "12期破局行动开营仪式：AI持续进化，先勇敢动起手来 12期破局行动开营仪式9月22日（周二）晚8点正式开启，本次除了邀请5位实力派教练给大家分享自己的AI实战经验，同时还邀请一位重磅嘉宾，百",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "留学教育",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "订单的实践经验",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 76,
+      "valueScore": 100,
+      "summary": "12期破局行动开营仪式：AI持续进化，先勇敢动起手来 12期破局行动开营仪式9月22日（周二）晚8点正式开启，本次除了邀请5位实力派教练给大家分享自己的AI实战经验，同时还邀请一位重磅嘉宾，百 万畅销书作者、新个体创业学社创始人黄有璨老师做客直播间，大家一定要提前预约",
+      "evidence": "万畅销书作者、新个体创业学社创始人黄有璨老师做客直播间，大家一定要提前预约。 这一期，我们想带大家往前多走一步，不只会用AI完成一次任务，更要把做过的经验沉淀下来，逐步搭建自己的AI生产系统。 AI在变化，我们对学习的要求也要跟着往前走。以前，学会一套提示词、用AI写出一篇文案，就能建立初步体感。现在，还要继续想，换一份素材，这套方法还能不能用。 从准备资料到生成内容、检查修改，哪些步骤能交给AI，哪些需要自己判断？把这些环节跑顺、把标准留下来，才有机会形成自己的系统，再进一步做成产品或服务。 这也是破局行动选题持续调整的原因。上一期，洋哥提出了系统化、产品化的方向。 第12期，我们沿着这个方向，设置了10个项目，覆盖AI系统、AI Agent、AI红利业务、AI服务、AI流量、AI产品、AI组织7个方向， …",
+      "excerpt": "万畅销书作者、新个体创业学社创始人黄有璨老师做客直播间，大家一定要提前预约。 这一期，我们想带大家往前多走一步，不只会用AI完成一次任务，更要把做过的经验沉淀下来，逐步搭建自己的AI生产系统。 AI在变化，我们对学习的要求也要跟着往前走。以前，学会一套提示词、用AI写出一篇文案，就能建立初步体感。现在，还要继续想，换一份素材，这套方法还能不能用。 从准备资料到生成内容、检查修改，哪些步骤能交给AI，哪些需要自己判断？把这些环节跑顺、把标准留下来，才有机会形成自己的系统，再进一步做成产品或服务。 这也是破局行动选题…",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "ecc6b180795193",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "闪光盼盼",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-13 15:37",
+      "title": "9年程序员直播4场0单：听大佬一场分享，我盘出3个致命断点",
+      "url": "https://aipoju.com/index",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "n8n"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "成交0单",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 64,
+      "valueScore": 100,
+      "summary": "9年程序员直播4场0单：听大佬一场分享，我盘出3个致命断点 9年程序员直播4场0单：听大佬一场分享，我盘出3个致命断点",
+      "evidence": "9年程序员直播4场0单：听大佬一场分享，我盘出3个致命断点",
+      "excerpt": "9年程序员直播4场0单：听大佬一场分享，我盘出3个致命断点",
+      "links": [],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "071534ea1a5f3a",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "成都大书",
+      "role": "行动家 星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-09-12 11:15",
+      "title": "一个小小的英文逗号，居然能造成几十万损失：一个企业级 Agent 工作流搭建实战",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "企业服务",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "服务交付 / 咨询培训",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 60,
+      "valueScore": 64,
+      "summary": "一个小小的英文逗号，居然能造成几十万损失：一个企业级 Agent 工作流搭建实战 一个小小的英文逗号，居然能造成几十万损失：一个企业级 Agent 工作流搭建实战",
+      "evidence": "一个小小的英文逗号，居然能造成几十万损失：一个企业级 Agent 工作流搭建实战",
+      "excerpt": "一个小小的英文逗号，居然能造成几十万损失：一个企业级 Agent 工作流搭建实战",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/EP9LdLR12oaUB8xs7WdcGlnBnGS",
+          "text": "https://my.feishu.cn/docx/EP9LdLR12oaUB8xs7WdcGlnBnGS",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "70fc45979d90d0",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "home",
+        "keyword": "",
+        "group": "daily-feed",
+        "keywords": [],
+        "groups": [
+          "daily-feed"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "Jo",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-09-11 14:03",
+      "title": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "url": "https://aipoju.com/index",
+      "scene": "交付与服务自动化",
+      "industry": "电商零售",
+      "tools": [
+        "飞书",
+        "RPA"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 54,
+      "valueScore": 92,
+      "summary": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成 1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "evidence": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "excerpt": "1000个视频转写任务，影刀RPA工作流帮我提前3个月完成",
+      "links": [
+        {
+          "href": "https://d16rg8unadx.feishu.cn/wiki/BSiowspV5iqACMkGs06clXTkn7f?from=from_copylink",
+          "text": "https://d16rg8unadx.feishu.cn/wiki/BSiowspV5iqACMkGs06clXTkn7f?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "8425a7b7c572ba",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "search",
+        "group": "industry",
+        "keyword": "财税",
+        "keywords": [
+          "财税"
+        ],
+        "groups": [
+          "industry"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "卢文华",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-08-26 01:26",
+      "title": "大家好呀，我是卢文华，目前在天津有一家财税咨询公司，做了 13 年财税工作，拥有注册会计师、税务师。",
+      "url": "https://aipoju.com/topic-details/82258825452154582",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Codex",
+        "Claude Code",
+        "Claude",
+        "Obsidian",
+        "飞书",
+        "n8n",
+        "Openclaw",
+        "RPA"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "月入 2W+变成了每月收入来源不知道在哪",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 90,
+      "valueScore": 100,
+      "summary": "大家好呀，我是卢文华，目前在天津有一家财税咨询公司，做了 13 年财税工作，拥有注册会计师、税务师",
+      "evidence": "今天看到有消息说豆包工作发布了，我在想是不是另一个 workbuddy，就想着去体验一把，没想到和飞书结合起来竟然意外的丝滑。 不过第一步我就踩了一个巨坑，接下来我带大家看看我今天体验豆包工作的成果吧。 大家好呀，我是卢文华，目前在天津有一家财税咨询公司，做了 13 年财税工作，拥有注册会计师、税务师。 2024年11月，我裸辞创业，手上没有现成的客户资源，从稳定月入 2W+变成了每月收入来源不知道在哪，我很焦虑，我想着一定要改变自己。 那时候AI正火，我就想一定要学会用AI，但是我连 GPT 都没用过，怎么办？于是我参加了一个 AI 代写相关的课程，通过接单，我倒逼自己去学习用 GPT、Claude 写文案，做 PPT。 做了两个月，赚了 1W+，发现其实本质还是靠体力赚钱的方式，还把我原来的专业积累丢掉了…",
+      "excerpt": "2024年11月，我裸辞创业，手上没有现成的客户资源，从稳定月入 2W+变成了每月收入来源不知道在哪，我很焦虑，我想着一定要改变自己。做了两个月，赚了 1W+，发现其实本质还是靠体力赚钱的方式，还把我原来的专业积累丢掉了，这样不行，于是打算继续做回我的老本行，财税相关的业务。",
+      "links": [
+        {
+          "href": "https://cama0kbmqc.feishu.cn/docx/NQw2d588AoqBiGxCw1Ack96VnPd?from=from_copylink",
+          "text": "https://cama0kbmqc.feishu.cn/docx/NQw2d588AoqBiGxCw1Ack96VnPd?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "财税"
+      ],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "161a4fda0cd3f1",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "search",
+        "group": "industry",
+        "keyword": "本地生活",
+        "keywords": [
+          "本地生活"
+        ],
+        "groups": [
+          "industry"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "张文波",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-08-21 23:09",
+      "title": "大家好，我是波波，在深圳做本地生活团购直播和AI+新媒体培训。",
+      "url": "https://aipoju.com/topic-details/55521118252255584",
+      "scene": "获客营销与转化",
+      "industry": "本地生活",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "工具配置与AI基建门槛"
+      ],
+      "resultSignal": "GMV的盘子",
+      "reusableMethod": [
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 80,
+      "valueScore": 100,
+      "summary": "大家好，我是波波，在深圳做本地生活团购直播和AI+新媒体培训",
+      "evidence": "不投一分钱广告，两年半做了1.2亿：这门生意依靠AI还能继续赚钱吗？ 大家好，我是波波，在深圳做本地生活团购直播和AI+新媒体培训。 一年半以前，我做了一年多的的团购直播生意刚被平台第二次终结：账号封了，主播走了，做了一年多的数字人无人直播，一年几千万GMV的盘子，规则一变，清零。 一年半以后的今天：我一个人，接下了眼科医院的AI获客订单，交付了好几个区的工会和政府部门的AI+新媒体培训，带出来的学员里，直播GMV破百万GMV学员，破十万GMV的学员有几十个，学员记录不断突破刷新中。 中间没有团队，没有融资，没有奇迹。就是一个人，加一系列AI应用加持。 这篇把整个过程摊开：坑我替你踩过了，方法你可以直接抄。 完整复盘近3000字，4张图，放在飞书文档里：https://dzdaq9coef.feishu.cn…",
+      "excerpt": "一年半以前，我做了一年多的的团购直播生意刚被平台第二次终结：账号封了，主播走了，做了一年多的数字人无人直播，一年几千万GMV的盘子，规则一变，清零。",
+      "links": [
+        {
+          "href": "https://dzdaq9coef.feishu.cn/docx/WDbCdrfj1omcTrxEXGIc2a4fnLh?from=from_copylink",
+          "text": "https://dzdaq9coef.feishu.cn/docx/WDbCdrfj1omcTrxEXGIc2a4fnLh?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "本地生活"
+      ],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "b3d7dd88c0daf2",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "search",
+        "group": "industry",
+        "keyword": "跨境电商",
+        "keywords": [
+          "跨境电商"
+        ],
+        "groups": [
+          "industry"
+        ]
+      },
+      "insightType": "tool_tip",
+      "author": "饼干哥哥🍪AGI",
+      "role": "",
+      "relativeTime": "",
+      "publishedAt": "2026-07-09 13:55",
+      "title": "用Claude Code跑通跨境电商的5大场景，顶10个人的团队",
+      "url": "https://aipoju.com/topic-details/55522412881428114",
+      "scene": "交付与服务自动化",
+      "industry": "内容与自媒体",
+      "tools": [
+        "Claude Code",
+        "Claude",
+        "飞书",
+        "Openclaw"
+      ],
+      "monetization": "待确认",
+      "painPoints": [
+        "交付标准化与复购",
+        "知识沉淀与效率",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "内容获客路径",
+        "知识库 + Agent 工作流",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 60,
+      "valueScore": 76,
+      "summary": "用Claude Code跑通跨境电商的5大场景，顶10个人的团队 先说结论，Openclaw只是热度很大，但干活一定是没有 Claude Code强的",
+      "evidence": "用Claude Code跑通跨境电商的5大场景，顶10个人的团队 先说结论，Openclaw只是热度很大，但干活一定是没有 Claude Code强的。 所以早就我们把跨境电商运营里最耗时间的多个环节，全部迁到了 Claude Code 里。 之前我分享用 openclaw 跑的所有场景，都可以跑到 CC 里。 最典型的就是 TikTok，这个系列文章里的玩法、工作流，能用Claude Code系统搭建起来 接下来我会更新「用 Claude Code 做跨境电商」系列 今天是第一篇，先把全貌讲清楚：能做什么、做到什么程度、怎么开始。后面每篇拆一个场景，给完整的 Skill 代码和配置。 完整内容请移步至飞书查看：https://hcnhqzggrpmv.feishu.cn/docx/PdlGdubZBoNvB…",
+      "excerpt": "先说结论，Openclaw只是热度很大，但干活一定是没有 Claude Code强的。 所以早就我们把跨境电商运营里最耗时间的多个环节，全部迁到了 Claude Code 里。最典型的就是 TikTok，这个系列文章里的玩法、工作流，能用Claude Code系统搭建起来 接下来我会更新「用 Claude Code 做跨境电商」系列 今天是第一篇，先把全貌讲清楚：能做什么、做到什么程度、怎么开始。后面每篇拆一个场景，给完整的 Skill 代码和配置。",
+      "links": [
+        {
+          "href": "https://hcnhqzggrpmv.feishu.cn/docx/PdlGdubZBoNvBmxsvbzckkdjntg?from=from_copylink",
+          "text": "https://hcnhqzggrpmv.feishu.cn/docx/PdlGdubZBoNvBmxsvbzckkdjntg?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "跨境电商"
+      ],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "6c6732f8a50f55",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "search",
+        "group": "industry",
+        "keyword": "外贸",
+        "keywords": [
+          "外贸"
+        ],
+        "groups": [
+          "industry"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "王佩Emmy",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-07-03 17:16",
+      "title": "AI 逆袭者：靠 AI 盘活 30 年对日外贸经验，我打赢人生翻盘这场仗",
+      "url": "https://aipoju.com/topic-details/22255455884458181",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [
+        "Obsidian",
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "知识库 + Agent 工作流",
+        "工具产品化"
+      ],
+      "opportunityScore": 84,
+      "valueScore": 86,
+      "summary": "AI 逆袭者：靠 AI 盘活 30 年对日外贸经验，我打赢人生翻盘这场仗 AI 逆袭者：靠 AI 盘活 30 年对日外贸经验，我打赢人生翻盘这场仗",
+      "evidence": "开篇先晒结果：我亲手搭建的知识星球「对日外贸实战圈」上线不足一个月，已有 2位伙伴直接付费入圈，全程没有一句咨询，下单丝滑干脆。最让我意外的是，开圈仅 3 天、圈内只更新 3 篇干货文章，就迎来第一位付费会员。很多同行好奇，一个深耕纺织外贸 30 年的普通人，如何打通「公域引流 —AI 沉淀干货 — 私域付费转化」完整商业闭环，今天完整拆解我的逆袭之路，附带全套 Obsidian+Qclaw 零基础安装实操教程。 一、我是谁？跌入人生低谷，被困 30 年传统外贸 我是王姐，1997 年入行纺织品对日贸易，整整 30 年扎根纺织赛道，几乎没有转行。不是不想换赛道，而是半辈子只懂跟单、接单、对接日企客户，离开纺织行业，我好像找不到安身立命的本事。 40 岁那年，我遭遇婚姻破裂，没有分到任何财产倒是分到了十几万的债…",
+      "excerpt": "AI 逆袭者：靠 AI 盘活 30 年对日外贸经验，我打赢人生翻盘这场仗",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/docx/PbZzduQ9poaXxvxzEEGceqTHnIG?from=from_copylink",
+          "text": "https://my.feishu.cn/docx/PbZzduQ9poaXxvxzEEGceqTHnIG?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "外贸"
+      ],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "5c0887e51f8d66",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "search",
+        "group": "scenario",
+        "keyword": "获客",
+        "keywords": [
+          "获客"
+        ],
+        "groups": [
+          "scenario"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "清阳",
+      "role": "星火师",
+      "relativeTime": "",
+      "publishedAt": "2026-04-20 17:39",
+      "title": "7秒流IP爆款视频获客实战SOP｜0基础学员第一课拍出百万播放获客视频",
+      "url": "https://aipoju.com/topic-details/45544884428884118",
+      "scene": "获客营销与转化",
+      "industry": "留学教育",
+      "tools": [
+        "飞书"
+      ],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "获客成本与精准线索",
+        "交付标准化与复购",
+        "内容生产与账号增长"
+      ],
+      "resultSignal": "",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "内容获客路径",
+        "知识库 + Agent 工作流"
+      ],
+      "opportunityScore": 90,
+      "valueScore": 79,
+      "summary": "7秒流IP爆款视频获客实战SOP｜0基础学员第一课拍出百万播放获客视频 7秒流IP爆款视频获客实战SOP｜0基础学员第一课拍出百万播放获客视频",
+      "evidence": "大家好，我是清阳。从大厂 AI 技术主管，到青少年 AI 教育赛道 IP，再到靠一套7 秒流爆款打法，帮助自己、帮教培机构、帮助多行业老板实现IP短视频快速起号、精准获客、稳定变现，我用真实结果证明：7 秒流不是流量技巧，而是普通人低成本的破局路径。 我见过很多人努力拍视频、日更却没结果，不是不够勤奋，而是没踩中算法、没找对结构、没掌握获客核心。而我这套方法，已经让很多学员第一课听完就拍出破万、破十万、甚至百万播放的获客视频，传统门店老板、职场宝妈、教培机构校长，全都能用。让教培机构告别地推，让传统门店线上引流不断，并且各行业都能直接套用。 接下来，我把7 秒流底层算法、6 类爆款模板、黄金拍摄技巧、7 天起号 SOP、各行业落地方法，把我亲自验证、学员反复成功的实战干货全部讲透，全是能直接抄作业的实战内容。…",
+      "excerpt": "7秒流IP爆款视频获客实战SOP｜0基础学员第一课拍出百万播放获客视频",
+      "links": [
+        {
+          "href": "https://vcn6xxxe60r1.feishu.cn/wiki/LB3Kwkgzsisl3xkWOCscIlmOndg?from=from_copylink",
+          "text": "https://vcn6xxxe60r1.feishu.cn/wiki/LB3Kwkgzsisl3xkWOCscIlmOndg?from=from_copylink",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "获客"
+      ],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    },
+    {
+      "id": "507e849367a1b9",
+      "source": "aipoju",
+      "sourceName": "AI破局",
+      "collection": {
+        "mode": "search",
+        "group": "industry",
+        "keyword": "企业培训",
+        "keywords": [
+          "企业培训"
+        ],
+        "groups": [
+          "industry"
+        ]
+      },
+      "insightType": "opportunity",
+      "author": "馨子",
+      "role": "行动家",
+      "relativeTime": "",
+      "publishedAt": "2026-02-06 10:14",
+      "title": "[干货贴]半年靠企业培训和课程项目变现7W+，我是如何从O进入AI企业培训",
+      "url": "https://aipoju.com/topic-details/55188558852828214",
+      "scene": "获客营销与转化",
+      "industry": "企业服务",
+      "tools": [],
+      "monetization": "订单成交 / 收费变现",
+      "painPoints": [
+        "交付标准化与复购"
+      ],
+      "resultSignal": "成交",
+      "reusableMethod": [
+        "沉淀成SOP/模板",
+        "前端获客 + 后端交付拆分"
+      ],
+      "opportunityScore": 76,
+      "valueScore": 95,
+      "summary": "[干货贴]半年靠企业培训和课程项目变现7W+，我是如何从O进入AI企业培训 [干货贴]半年靠企业培训和课程项目变现7W+，我是如何从O进入AI企业培训",
+      "evidence": "[干货贴]半年靠企业培训和课程项目变现7W+，我是如何从O进入AI企业培训",
+      "excerpt": "[干货贴]半年靠企业培训和课程项目变现7W+，我是如何从O进入AI企业培训",
+      "links": [
+        {
+          "href": "https://my.feishu.cn/wiki/AVlrw7HCUi0lcRkrQZvcAkcnnxd",
+          "text": "https://my.feishu.cn/wiki/AVlrw7HCUi0lcRkrQZvcAkcnnxd",
+          "discoveredVia": "body_url"
+        }
+      ],
+      "metrics": "",
+      "relatedResources": [],
+      "matchedKeywords": [
+        "企业培训"
+      ],
+      "duplicateCount": 1,
+      "translationStatus": "not_required"
+    }
+  ]
+}

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,18 +139,116 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "凯旋创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构及团队、联系方式和历史投资记录主要来自投资界/清科私募通和白鲸出海机构目录；网页未说明资料更新时间，电话、地址、人员任职应联系机构前再次核验。历史融资轮次总额不是凯旋创投的单笔出资，披露案例不代表完整组合或投资回报。",
+      "summary": "凯旋创投（KeyTone Ventures，凯旋通（北京）投资顾问有限公司）是一家成立于2008年的科技风险投资机构。公开机构资料关注物联网、人工智能、智能硬件、先进医疗等领域，投资阶段覆盖种子期至成熟期。机构目录将周志雄列为创始合伙人，并记载其此前在软银、SAIF和凯鹏华盈中国基金的经历；这些人员信息未能独立核验其当前任职状态。",
+      "facts": [
         {
-          "description": "融资来源记录：墨芯人工智能 · C轮 · 2026-05-29 · 本轮参投 · 近10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "legal_name",
+          "label": "机构名称",
+          "value": "凯旋通（北京）投资顾问有限公司；品牌名 KeyTone Ventures / 凯旋创投。",
+          "source_id": "keytone_pedaily_basics"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2008年（投资界/清科私募通资料）。",
+          "source_id": "keytone_pedaily_basics"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开关注领域",
+          "value": [
+            "物联网",
+            "人工智能",
+            "智能硬件",
+            "先进医疗"
+          ],
+          "source_id": "keytone_pedaily"
+        },
+        {
+          "field": "additional_published_focus",
+          "label": "另一机构资料列示领域",
+          "value": [
+            "清洁能源",
+            "高科技",
+            "媒体",
+            "消费服务"
+          ],
+          "source_id": "keytone_baijing"
+        },
+        {
+          "field": "stages",
+          "label": "公开投资阶段",
+          "value": [
+            "种子期",
+            "初创期",
+            "扩张期",
+            "成熟期"
+          ],
+          "source_id": "keytone_pedaily_basics"
+        },
+        {
+          "field": "founding_partner",
+          "label": "创始合伙人经历（机构目录资料，当前任职未复核）",
+          "value": "周志雄；资料记载其曾负责软银中国北京业务，加入软银亚洲基础设施基金并任软银赛富（SAIF）合伙人，后参与创立凯鹏华盈首支中国基金。",
+          "source_id": "keytone_pe_team"
+        },
+        {
+          "field": "fundraising",
+          "label": "历史基金募集记录",
+          "value": "投资界/清科机构页面列示，凯旋创投基金I于2008年完成2亿美元募集；此为历史基金规模，不是当前管理资产。",
+          "source_id": "keytone_pedaily_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2008",
+          "description": "凯旋创投成立；机构页面记录基金I于当年完成2亿美元募集。",
+          "source_id": "keytone_pedaily_basics"
+        },
+        {
+          "date": "2017-08-12",
+          "description": "机构目录列示参与魔视智能A轮融资。",
+          "source_id": "keytone_pedaily"
+        },
+        {
+          "date": "2026-05-29",
+          "description": "融资披露称凯旋创投作为老股东参与墨芯人工智能C轮。",
           "source_id": "FISRC-6202f2642c216aa5"
         }
       ],
-      "contacts": [],
+      "track_record": [
+        {
+          "description": "投资界/清科机构页列出凯旋创投参与魔视智能A轮及Moffett AI天使轮等历史融资。页面中的轮次金额是项目融资披露，不是凯旋创投的单笔出资或回报。",
+          "source_id": "keytone_pedaily_investment"
+        },
+        {
+          "description": "融资披露记录：墨芯人工智能2026年C轮，报道将凯旋创投列为参与方之一，并称其为老股东；报道未披露该机构本轮出资额。",
+          "source_id": "FISRC-6202f2642c216aa5"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资界/清科机构页面列示的官网，当前可用性未复核",
+          "value": "KeyTone Ventures",
+          "url": "http://www.keytonevc.com",
+          "source_id": "keytone_pedaily_website"
+        },
+        {
+          "kind": "phone",
+          "label": "投资界/清科机构页面列示电话，尚未复核是否仍有效",
+          "value": "+86 10 8519 2581",
+          "source_id": "keytone_pedaily_contact"
+        },
+        {
+          "kind": "address",
+          "label": "投资界/清科机构页面列示地址，尚未复核是否仍为现址",
+          "value": "北京市建国门外大街1号国贸三期A座50层5021单元",
+          "source_id": "keytone_pedaily_contact"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-6202f2642c216aa5",
@@ -159,9 +257,81 @@
           "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
           "quote": "老股东凯旋创投、创享投资、盛景嘉成共同参与",
           "quote_hash": "3cdb9ac4d7a2162b6a494f02b2e826fb5e1f4cc707e928f2fdd599cebe5ec000"
+        },
+        {
+          "source_id": "keytone_pedaily",
+          "source_url": "https://zdb.pedaily.cn/company/show5314/",
+          "source_title": "凯旋通（北京）投资顾问有限公司 · 投资界/清科私募通",
+          "source_content_hash": "296c443a58d7a3b9",
+          "quote": "凯旋创投，成立于2008年，是中国优秀的高科技创业投资基金之一。凯旋创投深耕高科技领域，致力于寻找早中期和成长期的高潜力科技企业，在战略新兴产业中的物联网、人工智能、智能硬件、先进医疗等主要关注领域，持续挖掘投资机会，团队拥有丰富的技术行业经验和坚实的高科技产业背景，积累了大量的投资经验，具备跨越周期的投资能力。",
+          "quote_hash": "65d83224b1cb809bda4ab1b8e6a8005c2cc125256760ffa70d5f2633d073c90e"
+        },
+        {
+          "source_id": "keytone_pe_team",
+          "source_url": "https://zdb.pedaily.cn/company/show5314/",
+          "source_title": "凯旋创投管理团队资料 · 投资界/清科私募通",
+          "source_content_hash": "296c443a58d7a3b9",
+          "quote": "周志雄，凯旋创投创始合伙人，是中国最活跃的风险投资人之一。专注于寻找技术驱动型的投资机会，尤其关注人工智能、云技术与大数据、半导体、先进医疗等领域。曾任职于软银中国风险投资基金负责北京业务，2001年加入软银亚洲基础设施基金，后担任软银赛富（SAIF）基金合伙人，并参与创立凯鹏华盈首支中国基金并任合伙人。",
+          "quote_hash": "b98b1d9245610e8e26e27cd4d947f58929d93ada72fe82f9c2f4842fec58c3fc"
+        },
+        {
+          "source_id": "keytone_baijing",
+          "source_url": "https://www.baijing.cn/people/38949",
+          "source_title": "凯旋创投 · 白鲸出海机构资料",
+          "source_content_hash": "e4541c6a10584b90",
+          "quote": "凯旋创投（KeyTone Ventures）专注于投资清洁能源、高科技、媒体、消费服务等领域的高速成长企业。",
+          "quote_hash": "202c5ec83439aa71d2560a2b9eb12aa506a4c843535889321fcf0a9396b0c644"
+        },
+        {
+          "source_id": "keytone_pedaily_fund",
+          "source_url": "https://zdb.pedaily.cn/company/show5314/",
+          "source_title": "凯旋创投基金募集记录 · 投资界/清科私募通",
+          "source_content_hash": "296c443a58d7a3b9",
+          "quote": "凯旋创投基金I 2亿美元已募完 管理机构：凯旋创投 2008年10月10日",
+          "quote_hash": "91eb3c679a7ab16e3514d24c7aeaa4071c1e1d176e03fd1684560728ef128d57"
+        },
+        {
+          "source_id": "keytone_pedaily_contact",
+          "source_url": "https://zdb.pedaily.cn/company/show5314/",
+          "source_title": "凯旋创投联系方式 · 投资界/清科私募通",
+          "source_content_hash": "296c443a58d7a3b9",
+          "quote": "电 话：010-85192581 传真：86-10-8519-2584 地 址：北京市建国门外大街一号国贸三期A座50层5021单元 邮 编：100005",
+          "quote_hash": "8e63740a001e376aedae9ed3074a5080734b8d6d520ba53c7872e4bd6354bc74"
+        },
+        {
+          "source_id": "keytone_pedaily_website",
+          "source_url": "https://zdb.pedaily.cn/company/show5314/",
+          "source_title": "凯旋创投官网条目 · 投资界/清科私募通",
+          "source_content_hash": "296c443a58d7a3b9",
+          "quote": "官方网站：www.keytonevc.com",
+          "quote_hash": "fceea32e9f7b45631d3164b3eb0a97f2eb01256a1550cc4702c30b11223929df"
+        },
+        {
+          "source_id": "keytone_pedaily_investment",
+          "source_url": "https://zdb.pedaily.cn/company/show5314/",
+          "source_title": "凯旋创投历史投资记录 · 投资界/清科私募通",
+          "source_content_hash": "296c443a58d7a3b9",
+          "quote": "魔视智能 A轮 USD数百万 澜亭资本 / 凯旋创投 2017年08月12日",
+          "quote_hash": "b1c08c8c65265a3927f99ff7c2cd06bff528f16558e4e6be1ccf88806a3f77d6"
+        },
+        {
+          "source_id": "keytone_pedaily_moffett",
+          "source_url": "https://zdb.pedaily.cn/company/show5314/",
+          "source_title": "凯旋创投历史投资记录 · 投资界/清科私募通",
+          "source_content_hash": "296c443a58d7a3b9",
+          "quote": "Moffett AI 天使轮 USD数千万 商盈投资 / 云天使基金 / 凯旋创投 2020年03月06日",
+          "quote_hash": "21732577f99a999db74bbe483198974df7c7d60f5fa261e02afbf706f890b040"
+        },
+        {
+          "source_id": "keytone_pedaily_basics",
+          "source_url": "https://zdb.pedaily.cn/company/show5314/",
+          "source_title": "凯旋创投机构基础资料 · 投资界/清科私募通",
+          "source_content_hash": "296c443a58d7a3b9",
+          "quote": "凯旋通（北京）投资顾问有限公司 凯旋创投 Keytone Ventures 机构性质：VC 注册地点：朝阳区 成立时间：2008年 机构总部：北京市 官方网站：www.keytonevc.com 投资阶段：种子期、初创期、扩张期、成熟期",
+          "quote_hash": "697882c3820c5bf98e997f7a77eabb1f5b472ce3886e2bf74d8d33c4cd763ceb"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

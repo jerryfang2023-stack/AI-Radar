@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,40 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Liberty Global Tech Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c15ac15bf3d0b1a"
-        }
-      ],
-      "contacts": [],
+      "coverage_status": "researched",
       "sources": [
+        {
+          "source_id": "higgsfield_series_b_2026",
+          "source_url": "https://www.prnewswire.com/news-releases/higgsfield-raises-400-million-series-b-financing-at-5-4-billion-valuation-with-annualized-revenue-reaching-700-million-302852430.html",
+          "source_title": "Higgsfield Raises $400 Million Series B Financing at $5.4 Billion Valuation",
+          "source_content_hash": "6ca2492542cba497424d291c5b0b6295cadfc8c1ddb26044409ff4ea2161e85d",
+          "quote": "The round was led by DST Global, with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, and NTT DOCOMO Ventures.",
+          "quote_hash": "c788152a6003fac547e7c26d1e3dc8c5b81adbfcc7e3eb0db9282b13cb495a62"
+        },
+        {
+          "source_id": "liberty_investment",
+          "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+          "source_title": "Liberty Global Tech Ventures Invests in Higgsfield",
+          "source_content_hash": "a410b6bbb17130b66d345f4bc6e6b65f760b2948ab245aace3942d32252d9297",
+          "quote": "Liberty Global Tech Ventures, the technology investment arm of Liberty Global, today announced an investment in Higgsfield, an AI video and image creation platform for creators, brands, agencies and studios.",
+          "quote_hash": "a396ab6cb3c9023484d9b3e6d29434ad099b270b665448a4dd01e77d896a1fe2"
+        },
+        {
+          "source_id": "liberty_strategy",
+          "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+          "source_title": "Liberty Global Tech Ventures Invests in Higgsfield",
+          "source_content_hash": "a410b6bbb17130b66d345f4bc6e6b65f760b2948ab245aace3942d32252d9297",
+          "quote": "Liberty Global Tech Ventures is part of Liberty Growth",
+          "quote_hash": "46b55769ca9cd3a29b6fe9051ea6ea4084ddf5ef0e3a9242eb7bbf3e52fd40dc"
+        },
+        {
+          "source_id": "liberty_contact",
+          "source_url": "https://www.libertyglobal.com/contact/",
+          "source_title": "Liberty Global — corporate and investor-relations contacts",
+          "source_content_hash": "82e98e621618a93d9edadda9f5ce4e50ad43df05bf6747eaa7a742d198e6dde0",
+          "quote": "ir@libertyglobal.com",
+          "quote_hash": "4ca933ff72ae79db997aa031f85b4169421607f1e2d76a0e1442b0d095d7df6b"
+        },
         {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
           "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -159,9 +180,110 @@
           "source_content_hash": "66d04514886f3d3e",
           "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
           "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+        },
+        {
+          "source_id": "liberty_partner",
+          "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+          "source_title": "Liberty Global Tech Ventures Invests in Higgsfield",
+          "source_content_hash": "a410b6bbb17130b66d345f4bc6e6b65f760b2948ab245aace3942d32252d9297",
+          "quote": "Ankur Prakash, Partner at Liberty Global Tech Ventures",
+          "quote_hash": "1c5a1ece2ef9f455e169bb002bd8a406d15c79076f2f0bffa43f339aa520981f"
+        },
+        {
+          "source_id": "liberty_investment_thesis",
+          "source_url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+          "source_title": "Liberty Global Tech Ventures Invests in Higgsfield",
+          "source_content_hash": "a410b6bbb17130b66d345f4bc6e6b65f760b2948ab245aace3942d32252d9297",
+          "quote": "The Tech Ventures team invests in category-defining AI and technology businesses which operate in large markets",
+          "quote_hash": "07ea6dbe8b82f2f1fbc2f328ebfb7bfff1dd1f6db9ba01451ccdb5c84f7249b8"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "summary": "Liberty Global Tech Ventures 是 Liberty Global 的科技投资部门，隶属 Liberty Growth，关注可规模化的科技、媒体、体育、服务与基础设施业务。该部门通过自身公告确认投资 Higgsfield；公司未披露本机构在 4 亿美元整轮中的单笔出资额。",
+      "coverage_note": "部门归属、投资策略及 Higgsfield 投资来自 Liberty Global / Tech Ventures 官方公告；投资人关系联系方式来自母公司 Liberty Global 官网。联系方式为母公司投资者关系渠道，不应视作 Tech Ventures 的创业项目申报邮箱。",
+      "facts": [
+        {
+          "field": "organization_relationship",
+          "label": "机构背景",
+          "value": "Liberty Global 的科技投资部门，隶属 Liberty Growth 投资组合。",
+          "source_id": "liberty_strategy"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资方向",
+          "value": "面向大型市场、具有规模化潜力的 AI 与科技公司，强调管理团队的产品推出和商业化能力。",
+          "source_id": "liberty_investment_thesis"
+        },
+        {
+          "field": "investment_activity",
+          "label": "已披露投资",
+          "value": "Liberty Global Tech Ventures 官方公告确认其投资 Higgsfield。",
+          "source_id": "liberty_investment"
+        },
+        {
+          "field": "leadership",
+          "label": "公开管理团队线索",
+          "value": "公告引述 Ankur Prakash，并标注其为 Liberty Global Tech Ventures 合伙人；不据此推断其单独负责该交易。",
+          "source_id": "liberty_partner"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "Partner",
+          "organization": "Liberty Global Tech Ventures",
+          "source_id": "liberty_partner"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_id": "FISRC-7c15ac15bf3d0b1a"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Liberty Global Tech Ventures 官网",
+          "value": "Liberty Global Tech Ventures",
+          "url": "https://www.libertyglobal.com/liberty-global-tech-ventures-higgsfield/",
+          "source_id": "liberty_investment"
+        },
+        {
+          "kind": "email",
+          "label": "母公司 Liberty Global 投资者关系邮箱（非 Tech Ventures 项目申报）",
+          "value": "ir@libertyglobal.com",
+          "source_id": "liberty_contact"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Liberty Global Tech Ventures 官网",
+          "source_hash": "e21fe252f62d21bb7be0d22007d3aab761126a9450ffa71320b4b9b42af50c46",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "母公司 Liberty Global 投资者关系邮箱（非 Tech Ventures 项目申报）",
+          "source_hash": "47a251800f7b4b6316a5328f5a5946d8ff4f04106c6b1abc814b208097322419",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,16 +138,46 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "小即是大创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "小即是大创投被投资界目录列为宁波的早期PE机构，目录记载成立于2017年并关注技术、模式创新、TMT、先进技术及多个消费和服务领域。该目录列出可触未来、花猫智绘、仙瞬科技、纬景储能等项目案例；这些是第三方目录收录，不代表完整组合、退出业绩或官方披露。工至海洋2026年天使轮披露另将其列为本轮参投方。",
+      "coverage_note": "公开背景及案例目前来自投资界、股融易等第三方机构目录，投资界页面明确提示资料来源于公开收集且未经核实。法定名称、投资组合和行业方向应视为目录信息；未找到经核实的机构官网、官方团队介绍或公开电话/邮箱。",
+      "facts": [
+        {
+          "field": "directory_legal_name",
+          "label": "投资界目录所列管理主体",
+          "value": "宁波梅山保税港区小即是大投资管理有限公司（目录记录，未以工商登记核验）。",
+          "source_id": "small_pedaily"
+        },
+        {
+          "field": "founded_at",
+          "label": "目录记载成立时间与所在地",
+          "value": "2017-08-18；宁波市（与另一家第三方机构目录的记录相符）。",
+          "source_id": "small_pedaily"
+        },
+        {
+          "field": "investment_focus",
+          "label": "目录记载关注领域",
+          "value": [
+            "先进技术",
+            "医疗健康",
+            "新金融",
+            "消费升级",
+            "自媒体",
+            "在线教育",
+            "TMT"
+          ],
+          "source_id": "small_pedaily"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：工至海洋 · 天使轮 · 2026-09-11 · 本轮参投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "工至海洋近亿元天使轮融资披露将小即是大创投列为参与机构；融资总额不代表该机构单笔出资金额。",
           "source_id": "FISRC-74c8dd452bd30dd9"
+        },
+        {
+          "description": "投资界机构目录列示可触未来、花猫智绘、仙瞬科技、纬景储能等案例；该目录免责声明称信息来自公开收集、未经核实，且未提供退出或回报数据。",
+          "source_id": "small_pedaily"
         }
       ],
       "contacts": [],
@@ -159,9 +189,26 @@
           "source_content_hash": "a88f421da12a2fde",
           "quote": "本轮融资由隐峰资本领投，中新智地、哈工程资管、力合金融、小即是大创投等机构参与投资。",
           "quote_hash": "9f6429e0c57a3c1fe91a0c88f08ec9d68556b223aa22b6d281bc24080a44522a"
+        },
+        {
+          "source_id": "small_pedaily",
+          "source_url": "https://m.pedaily.cn/vc/vc/593597.html",
+          "source_title": "小即是大创投_小即是大创投投资案例|投资界",
+          "source_content_hash": "9bdf17cb8cc4f2f2c8a97a0b4ecf4710f68b17b47fe954c6c2020a1e563b48b3",
+          "quote": "宁波梅山保税港区小即是大投资管理有限公司 所属城市 宁波市 成立时间 2017-08-18 机构性质 PE",
+          "quote_hash": "395cb70c0d88f8c3b431cec8539a026e4b68e9bd19fb1faf8932e3e27e858df8"
+        },
+        {
+          "source_id": "small_guronge",
+          "source_url": "https://m.guronge.com/xq/6577",
+          "source_title": "小即是大创投主页-小即是大投资管理有限公司--股融易投资机构",
+          "source_content_hash": "0cea537e223349a33285304973494f692e8a412d9db0bef1656d808b9920df8a",
+          "quote": "成立于2017-08-18，总部在浙江宁波",
+          "quote_hash": "44fbba3e0f9fcdf365b10d79a8bb29ccbb997191733bcef00c1d00f00e72147d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

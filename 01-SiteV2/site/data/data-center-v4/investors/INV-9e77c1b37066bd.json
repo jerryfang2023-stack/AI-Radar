@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -129,21 +129,104 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "湖北省长江电影集团有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "湖北省长江电影集团有限公司是省属大型国有文化企业，业务覆盖影视创作生产、发行放映及新型业态。集团公开披露了影片及剧集制作、票房和奖项等成果，并称已战略投资多模态生成式AI企业智象未来。融资库关联来源记录的是智象未来2024年12月A轮历史投资，未披露集团单笔金额。",
+      "facts": [
+        {
+          "field": "established",
+          "label": "组建时间",
+          "value": "湖北省政府于2012年8月批准组建；前身为1950年创建的中南影片经理公司。",
+          "source_id": "hbfilm_profile"
+        },
+        {
+          "field": "ownership",
+          "label": "企业性质",
+          "value": "省属大型国有文化企业。",
+          "source_id": "hbfilm_profile"
+        },
+        {
+          "field": "subsidiaries",
+          "label": "组织规模",
+          "value": "集团公开资料列有34家全资、控股子公司和2家分公司。",
+          "source_id": "hbfilm_profile"
+        },
+        {
+          "field": "production_record",
+          "label": "影视制作成果",
+          "value": "集团公开资料称独立或参与制作影视作品100余部；近两年投资出品影视剧46部。",
+          "source_id": "hbfilm_profile"
+        },
+        {
+          "field": "ai_development",
+          "label": "AI影视布局",
+          "value": "集团称已战略投资智象未来，并拓展AI影视内容制作、影片修复和智能影视教育培训等业务。",
+          "source_id": "hbfilm_ai"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012-08",
+          "description": "湖北省政府批准组建湖北长江电影集团。",
+          "source_id": "hbfilm_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：智象未来 · 轮次未披露 · 2026-04-16 · A轮投资方 · 5亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "集团公开披露近两年出品电影23部，其中17部已上映，票房合计89.12亿元；这是集团电影作品的合计票房，不是集团投资回报。",
+          "source_id": "hbfilm_profile"
+        },
+        {
+          "description": "融资库关联来源记录集团为智象未来2024年12月25日A轮投资方，轮次融资金额为数亿人民币级；金额是整轮口径，未披露集团出资额，亦非数据库显示的2026年新一轮5亿元融资。",
           "source_id": "FISRC-6d78d6f795c322a1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "湖北长江电影集团",
+          "url": "https://www.hbfilm.com.cn/",
+          "source_id": "hbfilm_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "集团办公电话",
+          "value": "027-82819470",
+          "url": "https://www.hbfilm.com.cn/",
+          "source_id": "hbfilm_contact"
+        },
+        {
+          "kind": "address",
+          "label": "集团办公地址",
+          "value": "湖北省武汉市武昌区公正路9号",
+          "url": "https://www.hbfilm.com.cn/",
+          "source_id": "hbfilm_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hbfilm_profile",
+          "source_url": "https://www.hbfilm.com.cn/AboutCom/2020061714522475579516",
+          "source_title": "湖北长江电影集团｜公司简介",
+          "source_content_hash": "665c72b1145e6e65e4b20b5a915d68640aa7a269dfe2a868e9394490848c5ceb",
+          "quote": "湖北省政府批准组建湖北长江电影集团有限责任公司，公司性质为省属大型国有文化企业。",
+          "quote_hash": "665c72b1145e6e65e4b20b5a915d68640aa7a269dfe2a868e9394490848c5ceb"
+        },
+        {
+          "source_id": "hbfilm_ai",
+          "source_url": "https://www.hbfilm.com.cn/News/2025112708580755569721",
+          "source_title": "湖北长江电影集团｜推动电影与科技融合",
+          "source_content_hash": "63aa9833c37cd0b535d4e21c8359ecda7ae4b8230f150bfc64b73d003cccde5f",
+          "quote": "我们战略投资了多模态生成式人工智能企业智象未来，与北京清博智能成立合资公司。",
+          "quote_hash": "63aa9833c37cd0b535d4e21c8359ecda7ae4b8230f150bfc64b73d003cccde5f"
+        },
+        {
+          "source_id": "hbfilm_contact",
+          "source_url": "https://www.hbfilm.com.cn/",
+          "source_title": "湖北长江电影集团｜官方网站",
+          "source_content_hash": "ad053b954c8f86f650603668eb28890553acfc7db9c03c849587ee913f180981",
+          "quote": "地址：湖北省武汉市武昌区公正路9号；办公电话：027-82819470。",
+          "quote_hash": "ad053b954c8f86f650603668eb28890553acfc7db9c03c849587ee913f180981"
+        },
         {
           "source_id": "FISRC-6d78d6f795c322a1",
           "source_url": "https://m.pedaily.cn/vc/company/679431.html",
@@ -153,7 +236,11 @@
           "quote_hash": "559cd5f97540e9cb9c8a3404974246e15f261d8ad231c33c35ad294be75cc73d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "影视作品数量和票房均为集团披露的经营数据，不等于基金投资回报。融资库关联的可核验历史来源指向2024年12月25日智象未来A轮；它不证明湖北长江电影集团参与数据库所列2026年新一轮融资，也没有披露集团单笔出资金额。",
+      "last_verified_at": "2026-09-27",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
     }
   }
 }

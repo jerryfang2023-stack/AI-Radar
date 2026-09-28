@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,141 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "EQT旗下Scaleup Europe Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "Scaleup Europe Fund’s €5 billion is a target, not a final close or current assets-under-management figure; the European Commission’s €1 billion is its disclosed contribution. The fund is managed by EQT, while other public and private investors participate as investors. EUCLYD’s September 2026 announcement reports a €200 million-plus company-wide Series A co-led by the fund; the fund’s individual commitment was not disclosed. EQT’s fund page describes the mandate and target but does not disclose an operating balance or individual investments.",
+      "summary": "Scaleup Europe Fund 是由 EQT 管理、并获欧盟委员会及机构投资者支持的欧洲成长及后期科技基金。其目标规模为 €5 billion，专注于从 B 轮至 pre-IPO 阶段的战略技术。2026 年 9 月，EUCLYD 宣布完成由该基金联合领投的 €200 million-plus A 轮融资；未披露个别承诺金额。",
+      "facts": [
         {
-          "description": "融资来源记录：Euclyd · A轮 · 2026-09-15 · 本轮联合领投 · 2亿欧元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6cbfc1ea08a48a66"
+          "field": "fund_manager",
+          "label": "基金管理人",
+          "value": "EQT manages the Scaleup Europe Fund after being selected by the European Innovation Council Fund Board.",
+          "source_id": "eic_scaleup_manager_2026"
+        },
+        {
+          "field": "target_size",
+          "label": "目标基金规模",
+          "value": "The fund targets €5 billion. This is a target, not a confirmed final close or current assets under management.",
+          "source_id": "eqt_scaleup_fund_2026"
+        },
+        {
+          "field": "european_commission_commitment",
+          "label": "欧盟委员会出资",
+          "value": "The European Commission disclosed a €1 billion contribution to the fund.",
+          "source_id": "eic_scaleup_ec_commitment_2026"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段与规模",
+          "value": "Growth and late-stage investments, generally from Series B through pre-IPO; EIC materials describe investments of €100 million and above, including follow-ons.",
+          "source_id": "eqt_scaleup_fund_2026"
+        },
+        {
+          "field": "sector_focus",
+          "label": "战略技术重点",
+          "value": "AI, quantum technologies, robotics, clean energy, space, biotechnology, advanced industrial systems and related strategic technology areas.",
+          "source_id": "eqt_scaleup_fund_2026"
+        },
+        {
+          "field": "founding_investors",
+          "label": "EQT 点名的创始投资者",
+          "value": "European Commission, Novo Holdings, Allianz, APG, EIFO, CriteriaCaixa, Santander/Mouro Capital, Fondazione Compagnia San Paolo, Intesa Sanpaolo and Fondazione Cariplo.",
+          "source_id": "eqt_scaleup_founders_2026"
+        },
+        {
+          "field": "investment_independence",
+          "label": "投资治理",
+          "value": "EQT describes the fund manager as market-based and independent; investment decisions are made by EQT on commercial and merit-based grounds.",
+          "source_id": "eic_scaleup_manager_2026"
         }
       ],
-      "contacts": [],
+      "milestones": [
+        {
+          "date": "2026-06-03",
+          "description": "该基金及其管理人EQT在欧洲创新理事会峰会上公开亮相。",
+          "source_id": "eic_scaleup_manager_2026"
+        },
+        {
+          "date": "2026-09-15",
+          "description": "EUCLYD宣布了由Scaleup Europe Fund联合领投的超过2亿欧元A轮融资，并确认该基金由EQT管理。",
+          "source_id": "euclyd_scaleup_investment_2026"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "EUCLYD A轮融资（2026年9月）：该公司宣布总融资额超过2亿欧元，由Samsung、Somerset Capital Partners、Scaleup Europe Fund和Innovation Industries联合领投。该基金的单独出资额未披露。",
+          "source_id": "FISRC-6cbfc1ea08a48a66"
+        },
+        {
+          "description": "Euclyd的主要公告独立确认Scaleup Europe Fund为同一公司轮次中由EQT管理的联合领投方；披露的总额并非该基金的单独投资金额。",
+          "source_id": "euclyd_scaleup_investment_2026"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方基金网站",
+          "value": "Scaleup Europe Fund",
+          "url": "https://scaleupeuropefund.eu",
+          "source_id": "eqt_scaleup_fund_2026"
+        },
+        {
+          "kind": "website",
+          "label": "欧盟委员会基金信息",
+          "value": "European Innovation Council",
+          "url": "https://eic.ec.europa.eu/eic-fund/scaleup-europe-fund_en",
+          "source_id": "eic_scaleup_manager_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "eqt_scaleup_fund_2026",
+          "source_url": "https://eqtgroup.com/about/scaleup-europe",
+          "source_title": "Scaleup Europe Fund",
+          "source_content_hash": "0308d5d7501a8422da9377ffaef49bc62a9068ece25eeddc67d80bb08d173919",
+          "quote": "Scaleup Europe Fund is targeting €5bn to support Europe’s most promising technology companies from Series B through to pre-IPO. Investments will focus on strategic sectors including AI applications, deep AI, quantum, robotics, clean energy, space, biotech, advanced industrial systems and beyond.",
+          "quote_hash": "3e47fb47b6b60a59a7397437bc35c3808ffc4068bd3482de3d6fe13f18c2c899"
+        },
+        {
+          "source_id": "eqt_scaleup_founders_2026",
+          "source_url": "https://eqtgroup.com/about/scaleup-europe",
+          "source_title": "Scaleup Europe Fund",
+          "source_content_hash": "0308d5d7501a8422da9377ffaef49bc62a9068ece25eeddc67d80bb08d173919",
+          "quote": "Founded by the European Commission, alongside Novo Holdings, Allianz, APG, EIFO, CriteriaCaixa, Santander/Mouro Capital, Fondazione Compagnia San Paolo, Intesa Sanpaolo and Fondazione Cariplo.",
+          "quote_hash": "a0b468120e458d4c36b75a97ccca30865b885b999e54b0e36052aec29cf392e5"
+        },
+        {
+          "source_id": "eic_scaleup_manager_2026",
+          "source_url": "https://eic.ec.europa.eu/eic-fund/scaleup-europe-fund_en",
+          "source_title": "Scaleup Europe Fund - European Innovation Council - European Commission",
+          "source_content_hash": "b9091cd70101a0eb71294fd7f909a5cf54a487395a860644c554e0afd2bb0173",
+          "quote": "EQT was selected as preferred Fund Manager following a competitive public call for expressions of interest.",
+          "quote_hash": "cb25e1b493ec28d66cc86d1c3e816b7f245ed1d1f5a100ab3b2974189ec10b24"
+        },
+        {
+          "source_id": "eic_scaleup_ec_commitment_2026",
+          "source_url": "https://eic.ec.europa.eu/eic-fund/scaleup-europe-fund_en",
+          "source_title": "Scaleup Europe Fund - European Innovation Council - European Commission",
+          "source_content_hash": "b9091cd70101a0eb71294fd7f909a5cf54a487395a860644c554e0afd2bb0173",
+          "quote": "The European Commission has committed to contribute EUR 1 billion to the fund.",
+          "quote_hash": "2882b675e3d679e0e2c07869db15995a3eb9560c5ad297991b6d8e84dc20b457"
+        },
+        {
+          "source_id": "euclyd_scaleup_investment_2026",
+          "source_url": "https://www.euclyd.ai/press-release",
+          "source_title": "EUCLYD Raises Over €200 Million to Break the AI Efficiency Wall | Euclyd",
+          "source_content_hash": "29dfe4ae495f94bc02f788ebdee84beba5daee5f47f85932a99a009e3d46039a",
+          "quote": "The round is co-led by Samsung, Somerset Capital Partners, Scaleup Europe Fund, which is managed by EQT, and Innovation Industries, with participation from EIFO, the Export and Investment Fund of Denmark, imec.xpand, Brabant Development Agency (BOM), and Quadri.",
+          "quote_hash": "05a5ddda53f3c58079b2f76b9de5bf14af82e3d55243067cdd1edb706a79e2a9"
+        },
+        {
+          "source_id": "euclyd_scaleup_fund_background_2026",
+          "source_url": "https://www.euclyd.ai/press-release",
+          "source_title": "EUCLYD Raises Over €200 Million to Break the AI Efficiency Wall | Euclyd",
+          "source_content_hash": "29dfe4ae495f94bc02f788ebdee84beba5daee5f47f85932a99a009e3d46039a",
+          "quote": "The Scaleup Europe Fund, managed by EQT, is a commercially driven alternative investment fund backing ambitious European technology companies with the potential to become global leaders. Targeting €5 billion, the Fund brings together public and private capital and invests across Deeptech, AI and Life Sciences.",
+          "quote_hash": "e6a89c8e0a5a28e22edebf711cc2e9b4efddf34dd83362f35c00dce287e0b742"
+        },
         {
           "source_id": "FISRC-6cbfc1ea08a48a66",
           "source_url": "https://www.cls.cn/detail/2484090",
@@ -160,8 +282,123 @@
           "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
           "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Scaleup Europe Fund 是由 EQT 管理、并获欧盟委员会及机构投资者支持的欧洲成长及后期科技基金。其目标规模为 €5 billion，专注于从 B 轮至 pre-IPO 阶段的战略技术。2026 年 9 月，EUCLYD 宣布完成由该基金联合领投的 €200 million-plus A 轮融资；未披露个别承诺金额。",
+          "source_hash": "656ca357adebf725a8d8ac822bc4f9765d664d57f397ffa2cbbf9972213b1867",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "基金管理人",
+          "source_hash": "f8625e9e0db5b7c28e4c6097525b4e602177298ee810b959ce47a410d5e6f53d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "目标基金规模",
+          "source_hash": "5370e6040e5e6740cb676bad919cc3ee956fb16f01aea7dcdcf624a30b876984",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "欧盟委员会出资",
+          "source_hash": "25b329bde373d8895aa29a597c6c935ed52d34841436f5aaf14a5f1477630a96",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "投资阶段与规模",
+          "source_hash": "86f8953842313fdced6aa9fbefecd923ca0b562bec169b5a054cee1d9b7bd335",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "战略技术重点",
+          "source_hash": "49cc3b480016a0b3ca599ad906f87fb2e411bc556be18e2538b49cb821e30d21",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[5].label": {
+          "text": "EQT 点名的创始投资者",
+          "source_hash": "ae1d6ed1ab7eadcb60b9be1ff55e333005c86e0f4f5eea7e3aa8c8ba3bbf8105",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "投资治理",
+          "source_hash": "e0b8f695e28f06da53b669b622952c44ed51491f381668a395bc330944a835d3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "该基金及其管理人EQT在欧洲创新理事会峰会上公开亮相。",
+          "source_hash": "8c0c225eef83491d95a2c0df176f54af65569334310484daf05061ea20796c1d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "EUCLYD宣布了由Scaleup Europe Fund联合领投的超过2亿欧元A轮融资，并确认该基金由EQT管理。",
+          "source_hash": "dc11bb782aba9ad71d8fab1fb0eaad298df31404b31e49f4a4def8b6aea0d8d1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "EUCLYD A轮融资（2026年9月）：该公司宣布总融资额超过2亿欧元，由Samsung、Somerset Capital Partners、Scaleup Europe Fund和Innovation Industries联合领投。该基金的单独出资额未披露。",
+          "source_hash": "f6f8b03d1e48f4e71d480ad978b6322dead256e125beaf7b42a2818dac8abbe7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Euclyd的主要公告独立确认Scaleup Europe Fund为同一公司轮次中由EQT管理的联合领投方；披露的总额并非该基金的单独投资金额。",
+          "source_hash": "d8ce8e956ef98fdad8cd82281ae952383422ad34ff48138ab05cda08ec97dab6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方基金网站",
+          "source_hash": "a29706ef96b53f8a95856e009f361a06eb279405bd13325facba09f2b7345ce0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "欧盟委员会基金信息",
+          "source_hash": "fc3c2fe24555d5de22e38e1156d065d0c46708b89693005867b07ce76b9415d9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

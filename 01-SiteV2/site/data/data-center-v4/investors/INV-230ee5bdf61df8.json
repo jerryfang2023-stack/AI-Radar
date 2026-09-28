@@ -1,0 +1,349 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-230ee5bdf61df8",
+    "name": "Female Founders Fund",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-03-12",
+    "role_counts": {
+      "lead": 1
+    },
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-6c42a85075d8a891",
+        "canonical_entity_id": "",
+        "name": "Taya"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-0a907e5932b03fd6",
+        "funding_insight_id": "FI-a497814e25dbcab1",
+        "event_ids": [
+          "EV-545bef6ff60cf3b2"
+        ],
+        "company_entity_id": "EN-6c42a85075d8a891",
+        "company_canonical_entity_id": "",
+        "company_name": "Taya",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "500 万美元"
+        },
+        "announced_at": "2026-03-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ec4178291982ae4",
+            "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+            "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+            "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+            "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
+            "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-4ec4178291982ae4",
+        "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+        "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+        "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+        "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund, with participation from a16z speedrun.",
+        "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "策略、创始人、公开申请渠道和联系方式来自 FFF 官方页面；500K–750K 支票范围的 FAQ 未标注更新日期。Taya 的 500 万美元是整轮金额，不代表 FFF 单家出资。",
+      "summary": "Female Founders Fund（FFF）是 Anu Duggal 于 2014 年创立的早期科技基金，主要投资种子轮，并要求创始团队至少有一名女性创始人。官网列举医疗健康、美妆个护、垂直软件、生成式 AI 与新兴技术、气候科技等方向，并称可领投、共同领投或跟投；FAQ 列示通常单笔为 50万至75万美元，但页面未标注更新日期。FFF 还提供女性运营者网络与创始人资源。Taya 公告称其 500 万美元种子轮由 MaC Venture Capital 与 FFF 领投；这笔金额是全轮总额，不是 FFF 的单家投资额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "以女性创始团队为核心的早期科技投资基金",
+          "source_id": "fff_resources"
+        },
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "2014 年，由创业者 Anu Duggal 创立",
+          "source_id": "fff_founded"
+        },
+        {
+          "field": "investment_stage",
+          "label": "主要投资阶段",
+          "value": "主要为种子轮，覆盖产品发布前与发布后",
+          "source_id": "fff_seed_stage"
+        },
+        {
+          "field": "investment_criteria",
+          "label": "创始团队要求",
+          "value": "至少一位女性创始人属于 founding team",
+          "source_id": "fff_strategy"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示投资方向",
+          "value": [
+            "医疗健康",
+            "美妆与个人护理",
+            "垂直软件",
+            "生成式 AI 与新兴技术",
+            "气候科技"
+          ],
+          "source_id": "fff_sectors"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "FAQ 列示的支票范围",
+          "value": "US$500K–US$750K；FAQ 页面未标注更新日期",
+          "source_id": "fff_check_size"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "创始人支持",
+          "value": "女性运营者网络、创始人社群及产品、运营、品牌和后续融资资源",
+          "source_id": "fff_support"
+        },
+        {
+          "field": "current_leadership",
+          "label": "创始人与现任管理合伙人",
+          "value": "Anu Duggal — Founding Partner",
+          "source_id": "fff_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "参与融资轮次的方式",
+          "value": "可领投、共同领投或跟投",
+          "source_id": "fff_rounds"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014",
+          "description": "Female Founders Fund 官方 FAQ 记载由 Anu Duggal 于 2014 年创立。",
+          "source_id": "fff_founded"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "Taya 于 2026-03-12 公告 500 万美元种子轮，由 MaC Venture Capital 与 Female Founders Fund 领投；金额为整轮总额，未披露 FFF 单家出资额。",
+          "source_id": "FISRC-4ec4178291982ae4"
+        }
+      ],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Female Founders Fund",
+          "url": "https://femalefoundersfund.com/",
+          "source_id": "fff_about"
+        },
+        {
+          "kind": "application",
+          "label": "项目投资申请",
+          "value": "官网 Typeform pitch form",
+          "url": "https://fcubed.typeform.com/pitches",
+          "source_id": "fff_resources"
+        },
+        {
+          "kind": "email",
+          "label": "一般咨询（非媒体联系）",
+          "value": "hello@femalefoundersfund.com",
+          "url": "https://femalefoundersfund.com/resources/",
+          "source_id": "fff_resources"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "fff_resources",
+          "source_url": "https://femalefoundersfund.com/resources/",
+          "source_title": "FAQ & Resources | Female Founders Fund",
+          "source_content_hash": "f7f40248eda06369825caa482cae8ff3a705c796b7c68d5d1e15cc8511e8cbac",
+          "quote": "Female Founders Fund is an early-stage fund investing in the next generation of transformational technology companies founded by women.",
+          "quote_hash": "6831e1fda5420cf1217ae120ed9d0c08bc68b96dfcb9e70aca28b0b855b97eab"
+        },
+        {
+          "source_id": "fff_strategy",
+          "source_url": "https://femalefoundersfund.com/resources/",
+          "source_title": "Investment strategy | Female Founders Fund",
+          "source_content_hash": "f7f40248eda06369825caa482cae8ff3a705c796b7c68d5d1e15cc8511e8cbac",
+          "quote": "We invest in companies that have at least one female founder as part of the founding team.",
+          "quote_hash": "1b80eb0b259206fbb9557e9c356de60086e400d912f885a8a904e262fe7cbcd3"
+        },
+        {
+          "source_id": "fff_founded",
+          "source_url": "https://femalefoundersfund.com/resources/",
+          "source_title": "Founding | Female Founders Fund FAQ",
+          "source_content_hash": "f7f40248eda06369825caa482cae8ff3a705c796b7c68d5d1e15cc8511e8cbac",
+          "quote": "Started by serial entrepreneur Anu Duggal in 2014.",
+          "quote_hash": "38cc1fc3719380a9b409ed837e02bf5510a698a8b7d6898a8ce9907567b53fa5"
+        },
+        {
+          "source_id": "fff_seed_stage",
+          "source_url": "https://femalefoundersfund.com/resources/",
+          "source_title": "Seed investment stage | Female Founders Fund FAQ",
+          "source_content_hash": "f7f40248eda06369825caa482cae8ff3a705c796b7c68d5d1e15cc8511e8cbac",
+          "quote": "As seed investors, we invest primarily at the seed-stage (both pre-launch and post-launch).",
+          "quote_hash": "bf00513530d007ad6bf65689aadded1c8dff33b4c52b654f340067a15abda8ee"
+        },
+        {
+          "source_id": "fff_rounds",
+          "source_url": "https://femalefoundersfund.com/resources/",
+          "source_title": "Round participation | Female Founders Fund FAQ",
+          "source_content_hash": "f7f40248eda06369825caa482cae8ff3a705c796b7c68d5d1e15cc8511e8cbac",
+          "quote": "As an institutional fund, we have the flexibility to lead, co-lead or participate in rounds.",
+          "quote_hash": "847da1d0250bc463256ab29ec3f15b556f70c26fb23b1678ed46b16d5794aa55"
+        },
+        {
+          "source_id": "fff_sectors",
+          "source_url": "https://femalefoundersfund.com/resources/",
+          "source_title": "Investment categories | Female Founders Fund",
+          "source_content_hash": "f7f40248eda06369825caa482cae8ff3a705c796b7c68d5d1e15cc8511e8cbac",
+          "quote": "Healthcare; Beauty & Personal Care; Vertical Software Solutions; Generative AI & Emerging Technologies; Climate Tech.",
+          "quote_hash": "14c38cd4065664d7a2283631da1a573cc76ed247366c6b98de960a128128aeba"
+        },
+        {
+          "source_id": "fff_check_size",
+          "source_url": "https://femalefoundersfund.com/resources/",
+          "source_title": "FAQ: check size | Female Founders Fund",
+          "source_content_hash": "f7f40248eda06369825caa482cae8ff3a705c796b7c68d5d1e15cc8511e8cbac",
+          "quote": "Our check sizes range from $500K - $750K.",
+          "quote_hash": "28830395e8d24325ce38ad8082780e6234501129c840d30dc0297d1eaa2c0468"
+        },
+        {
+          "source_id": "fff_support",
+          "source_url": "https://femalefoundersfund.com/resources/",
+          "source_title": "Founder support | Female Founders Fund",
+          "source_content_hash": "f7f40248eda06369825caa482cae8ff3a705c796b7c68d5d1e15cc8511e8cbac",
+          "quote": "Our biggest and most unique value-add is our unparalleled female operator network and ecosystem.",
+          "quote_hash": "a361b961b344202434e635caacbd5eae6790218788ed8e7dff1db55e9c22da9b"
+        },
+        {
+          "source_id": "fff_about",
+          "source_url": "https://femalefoundersfund.com/about/",
+          "source_title": "About & Team | Female Founders Fund",
+          "source_content_hash": "10d3c78fa94535afbf49f7f723fc087b9206929b61a4622b22c30b26686e2734",
+          "quote": "Anu Duggal — Founding Partner. Anu is the Founding Partner of Female Founders Fund.",
+          "quote_hash": "1971c57d73c4679423f3617e79d4cfef515cac08e98e7389e2f6d72046cbc57b"
+        },
+        {
+          "source_id": "FISRC-4ec4178291982ae4",
+          "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
+          "source_title": "Taya 融资 500 万美元，用于设计能捕捉你思绪而非房间的 AI 珠宝",
+          "source_content_hash": "b78c54740db46c4316d314be4c11f1cc1a37f0e635049a7661863a7e71e84ff7",
+          "quote": "Taya today announced it has raised a $5 million seed round led by MaC Venture Capital and Female Founders Fund",
+          "quote_hash": "9e4c1b6803a0497b81d3f5a3d71be45a4ca4f7a585fe01cc9277c18b336c2159"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Female Founders Fund 官方 FAQ 记载由 Anu Duggal 于 2014 年创立。",
+          "source_hash": "9f02eb2099a898a7faa6200520abaa8d9fb39d22771f4b78976d091d58a9d408",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Taya 于 2026-03-12 公告 500 万美元种子轮，由 MaC Venture Capital 与 Female Founders Fund 领投；金额为整轮总额，未披露 FFF 单家出资额。",
+          "source_hash": "6d09c0c5586e6b24795380a96d0c4c55e0df448c8cbb6a8058be0df1e211d9f5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

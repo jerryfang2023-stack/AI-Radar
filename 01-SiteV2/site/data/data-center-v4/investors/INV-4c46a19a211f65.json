@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -138,21 +138,48 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alexandre Berriche 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Alexandre Berriche 是法国企业 Fleet 的联合创始人和天使投资人。Fleet 的公司博客介绍他曾在 Rocket Internet 工作，2019年创立Fleet，并从2018年起参与天使投资。融资公告将他列为Archestra种子轮天使投资人。",
+      "coverage_note": "Fleet的采访介绍及个人履历为公司公开资料和本人访谈口径。Archestra的1,000万美元是该种子轮总融资额，没有披露Berriche个人出资额。公开来源未核实其学历。",
+      "current_roles": [
         {
-          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "title": "Co-founder",
+          "organization": "Fleet",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
-      "contacts": [],
+      "career": [
+        {
+          "organization": "Fleet",
+          "title": "Co-founder; CEO as reported in 2024 company interview",
+          "period": "Founded in 2019",
+          "description": "创立企业IT设备租赁与管理服务公司Fleet。",
+          "source_id": "fleet_alexandre_profile_2024"
+        },
+        {
+          "organization": "Rocket Internet",
+          "title": "Former employee",
+          "period": "Before Fleet",
+          "description": "Fleet公司访谈称其此前曾在Rocket Internet任职。",
+          "source_id": "fleet_alexandre_profile_2024"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Fleet官方采访介绍Berriche先后在Rocket Internet工作、于2019年创立Fleet，并称他自2018年开始作为天使投资人。当前公开来源能确认其创始人身份，但没有可靠地核实其2026年Fleet管理职务或学历。",
+      "track_record": [
+        {
+          "description": "Archestra官方融资公告将Berriche列为Fleet创始人及本轮天使投资人。1,000万美元为该轮总融资额，个人出资金额未披露。",
+          "source_id": "FISRC-50130a45d72291a2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fleet_alexandre_profile_2024",
+          "source_url": "https://fleet.co/en/blog/interview-alexandre-berriche-podcast-gdiy",
+          "source_title": "Discover Alexandre Berriche’s interview on the GDIY podcast｜Fleet",
+          "source_content_hash": "5b10d8757f62c3a136a59de4a3ccfe797444c8cb18ced67f7381ed8f6506b713",
+          "quote": "Alexandre Berriche, founder of Fleet.co, previously worked at Rocket Internet, launched Fleet.co in 2019, and became a business angel in 2018.",
+          "quote_hash": "067ae462c03aeab28d54de0f304a26612d71993231867454b2b7a0324dfdb2a8"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -162,7 +189,25 @@
           "quote_hash": "803e51e87494c97cc101ff593a1de91c54180365fa29ce1ebeb80412d9cc128d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.career[1].description": {
+          "text": "Fleet公司访谈称其此前曾在Rocket Internet任职。",
+          "source_hash": "289997c94a4d7d0ab442dab48c2263ee808c66a7b1a450c44117a40d59aaed39",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

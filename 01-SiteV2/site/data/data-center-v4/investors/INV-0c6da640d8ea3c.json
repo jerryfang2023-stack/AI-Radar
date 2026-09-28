@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,88 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Brighton Park Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据Brighton Park Capital官网、团队页及Oro Labs融资报道。投资策略、顾问及运营资源是机构官网自述；Oro Labs的1亿美元是其C轮融资总额，不等于Brighton Park Capital单笔投资金额。",
+      "summary": "Brighton Park Capital（BPC）是一家专注企业软件与科技公司的成长股权投资机构，强调与创始团队建立长期合作，并提供产品创新、增长、人才、国际扩张和企业发展支持。官网列示创始人兼管理合伙人Mark F. Dzialga，并设有投资团队、公司运营基础设施以及独立的资深顾问网络。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "成长股权投资，面向具有创新或颠覆性技术的创业者主导型公司。",
+          "source_id": "bpc_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网称每年只选择少数公司，并提供产品创新、增长、人才、国际拓展、运营和企业发展支持。",
+          "source_id": "bpc_approach"
+        },
+        {
+          "field": "leadership",
+          "label": "创始人兼管理合伙人",
+          "value": "Mark F. Dzialga。官网将Senior Advisors和Tech Advisors单独列示，不应与投资团队职位混为一谈。",
+          "source_id": "bpc_team"
+        },
+        {
+          "field": "offices",
+          "label": "官网列示地点",
+          "value": [
+            "纽约",
+            "伦敦",
+            "旧金山",
+            "格林尼治"
+          ],
+          "source_id": "bpc_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资报道显示，Oro Labs宣布完成1亿美元C轮融资，由Goldman Sachs Growth Equity与Brighton Park Capital领投；该金额为公司轮次总额。",
           "source_id": "FISRC-1347e63f3abd5d34"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Brighton Park Capital",
+          "url": "https://www.bpc.com/",
+          "source_id": "bpc_home"
+        },
+        {
+          "kind": "application",
+          "label": "联系投资团队",
+          "value": "通过官网联系入口提交咨询。",
+          "url": "https://www.bpc.com/team",
+          "source_id": "bpc_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bpc_home",
+          "source_url": "https://www.bpc.com/",
+          "source_title": "Brighton Park Capital | BPC | Home",
+          "source_content_hash": "a8f09925fe978bc3744aea4d96b486f92b84dd05bf725ff50be8a20dd48a7e39",
+          "quote": "Brighton Park Capital is growth equity reimagined. With unique experience and unshakeable empathy, we invest in entrepreneur inspired companies providing innovative and disruptive technology.",
+          "quote_hash": "74456f83e97a9c673e11f85e6ed1303b2b08545d51124271d5bc8286f12bfa06"
+        },
+        {
+          "source_id": "bpc_approach",
+          "source_url": "https://www.bpc.com/approach",
+          "source_title": "Brighton Park Capital | BPC | Approach",
+          "source_content_hash": "7ef304d19ed0ac199dbc4ad144903bb88b346e0493f2bee91b49e9ab16604b8e",
+          "quote": "A commitment to only investing in a handful of truly exceptional companies each year.",
+          "quote_hash": "38a1715e40b3eaa7f8f62db353f0647c4390351af39b78e799726f54b216f8ee"
+        },
+        {
+          "source_id": "bpc_team",
+          "source_url": "https://www.bpc.com/team",
+          "source_title": "Brighton Park Capital | BPC | Growth Equity | Team",
+          "source_content_hash": "9759ee38df99b67ee25b9371e0d3991fb901fb74235366089a2db565d285cd4b",
+          "quote": "Mark F. Dzialga Founder & Managing Partner",
+          "quote_hash": "8395547b61add34254a00cfac7c055423cf044da37658e0ed48928fd5029648c"
+        },
         {
           "source_id": "FISRC-1347e63f3abd5d34",
           "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
@@ -161,7 +230,19 @@
           "quote_hash": "e47704b1a9ba8d2709ed19de2422a8c2ce98b2b3fde7686d5697e31b7e17f3cb"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "融资报道显示，Oro Labs宣布完成1亿美元C轮融资，由Goldman Sachs Growth Equity与Brighton Park Capital领投；该金额为公司轮次总额。",
+          "source_hash": "0475e7e9c0d5f987beb9bd631f4c29ad63956660192936cc74fc09675237cb6c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,88 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Okta Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Okta Ventures 是 Okta 的企业风险投资部门，投资并支持身份、安全与隐私技术公司。它与其他主投方共同投资，不单独领投；投资覆盖创业公司多个阶段，并通过 Okta 的 API、集成网络、客户资源和工程能力为组合企业提供商业化支持。",
+      "facts": [
+        {
+          "field": "parent_and_structure",
+          "label": "机构性质",
+          "value": "Okta, Inc. 旗下创业投资部门，专注支持身份与安全技术创业公司。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "现代身份技术",
+            "隐私",
+            "以用户为中心的安全",
+            "身份驱动型企业技术"
+          ],
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "官网称覆盖创业公司全生命周期；典型早期投资低于 100 万美元，后续阶段金额取决于轮次结构。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "investment_role",
+          "label": "投资方式",
+          "value": "官网称 Okta Ventures 不领投，只与其他主投方共同投资，并保留后续投资资金。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "geography",
+          "label": "地理覆盖",
+          "value": "官网称会投资美国以外注册的公司。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "field": "founder_support",
+          "label": "创业支持",
+          "value": "可接入 Okta API、技术和工程资源、Okta Integration Network 联合营销及客户/商业化渠道。",
+          "source_id": "okta_ventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列举的历史组合与退出案例包括 Trusted Key（2019 年被 Workday 收购）、Tessian（2023 年被 Proofpoint 收购）、Dig Security（2023 年被 Palo Alto Networks 收购）、Adaptive Shield（2024 年被 CrowdStrike 收购）及 Prompt Security（2025 年被 SentinelOne 收购）。这些是官网展示的选例，不代表完整组合或投资回报。",
+          "source_id": "okta_ventures"
+        },
+        {
+          "description": "官网组合页面还展示 Ockam、DataGrail、Oyster、Drata、Crossbeam、Replit、Together AI 等企业；展示名单不应视为完整组合。",
+          "source_id": "okta_ventures"
+        },
         {
           "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投（战略投资） · $400M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "策略、阶段、典型早期支票范围和所列并购案例均来自 Okta Ventures 官网。官网未给出当前团队完整名录。组合名单及退出案例是官网选择性展示，不构成完整投资组合或基金回报。",
+      "experience_summary": "Okta Ventures 的公开资料重点介绍母公司技术、集成网络和商业化资源，没有披露完整的投资团队履历；本页只记录官网明确发布的策略和支持方式。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资策略",
+          "value": "Okta Ventures",
+          "url": "https://www.okta.com/company/okta-ventures/",
+          "source_id": "okta_ventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "okta_ventures",
+          "source_url": "https://www.okta.com/company/okta-ventures/",
+          "source_title": "Okta Ventures",
+          "source_content_hash": "6f1dd904002b3c0a2a78c43f181f26310f8501493848b5666f2fe78e56cb79e3",
+          "quote": "We invest and support companies creating cutting edge technologies enabled by identity, security, and privacy.",
+          "quote_hash": "951ba94e5a2f13df85c1b9886226cdd79d7148a1e25065dd4346ee4b244113e9"
+        },
         {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -161,7 +228,27 @@
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "官网列举的历史组合与退出案例包括 Trusted Key（2019 年被 Workday 收购）、Tessian（2023 年被 Proofpoint 收购）、Dig Security（2023 年被 Palo Alto Networks 收购）、Adaptive Shield（2024 年被 CrowdStrike 收购）及 Prompt Security（2025 年被 SentinelOne 收购）。这些是官网展示的选例，不代表完整组合或投资回报。",
+          "source_hash": "30b5d017115fd05cb7646f3dd6c9833cd9c9a0df4bd13a85597534d001ca679f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "官网组合页面还展示 Ockam、DataGrail、Oyster、Drata、Crossbeam、Replit、Together AI 等企业；展示名单不应视为完整组合。",
+          "source_hash": "d58ea6ddf9431b967aeddaa51ea5bfb4196295a9f6da127ab949018368dcce49",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

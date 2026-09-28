@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -302,6 +302,18 @@
         {
           "description": "投资组合页列出 Airspace Intelligence、Lambda、Writer、Oura、Streamlit 等项目与退出案例；为公开展示组合，不代表完整投资组合或基金回报。",
           "source_id": "gradient_portfolio"
+        },
+        {
+          "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-907e4297862ddd8c"
+        },
+        {
+          "description": "融资来源记录：Fazeshift · A轮 · 2026-05-07 · 本轮参投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-37925b95fc58982a"
+        },
+        {
+          "description": "融资来源记录：Stack AI · 种子轮 · 2024-05-21 · 种子轮领投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-79a4e94da8271853"
         }
       ],
       "contacts": [
@@ -339,11 +351,47 @@
           "source_content_hash": "31c64c722a14219eeabc3a8886af58fae29acda96ac695772d0f95e0f84a113e",
           "quote": "Actively investing in every layer of AI.",
           "quote_hash": "231913bb64ac13f33d10356f37612baa7015897177217f71ea3d9f4acb097d20"
+        },
+        {
+          "source_id": "FISRC-907e4297862ddd8c",
+          "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
+          "source_title": "Monogram 获 4000 万美元种子轮融资",
+          "source_content_hash": "3a584a627e1535ff",
+          "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
+          "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
+        },
+        {
+          "source_id": "FISRC-37925b95fc58982a",
+          "source_url": "https://news.crunchbase.com/fintech/fazeshift-accounts-receivable-ai-finance-ops-startup-funding/",
+          "source_title": "独家：Fazeshift获1700万美元融资，投资者押注AI驱动的财务运营，从应收账款起步",
+          "source_content_hash": "9fc07709e89b11cc",
+          "quote": "participation from Gradient Ventures (Google’s early-stage AI fund)",
+          "quote_hash": "1ca9ecd413f62c5d03f1e0bcdd445f4d51a04c94de14d3d1ccbd86fcfaac42e6"
+        },
+        {
+          "source_id": "FISRC-79a4e94da8271853",
+          "source_url": "https://dataphoenix.info/stack-ai-raised-3m-to-connect-the-latest-ai-innovations-with-the-most-urgent-applications/",
+          "source_title": "Stack AI raised $3M to connect the latest AI innovations with the most urgent applications",
+          "source_content_hash": "eb1befb4357516cf",
+          "quote": "Stack AI recently announced it closed a $3 million oversubscribed seed funding round led by Gradient Ventures",
+          "quote_hash": "70e2c351cbf12de0c2e90c8d80c350d84ab7f1d234a2b5e7cb4f7d220f013343"
         }
       ],
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[1].description": {
+          "text": "投资组合页列出 Airspace Intelligence、Lambda、Writer、Oura、Streamlit 等项目与退出案例；为公开展示组合，不代表完整投资组合或基金回报。",
+          "source_hash": "7ca22533da5a77c17a170f6d17ec13fbdcd90e21704b63ad0818a13e78f85a46",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:36.479Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

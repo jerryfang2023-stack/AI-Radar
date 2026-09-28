@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -140,19 +140,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "徐汇科创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "徐汇区政府公开资料确认2023年设立“徐汇科创投基金”，并披露其投资取向。公开资料未确认融资数据库简称“徐汇科创投”对应的具体基金法律主体、现任管理人、基金规模、投资回报或项目申报渠道；本档案不推定其与其他徐汇区国资机构为同一法律主体。",
+      "summary": "“徐汇科创投”在本库作为投资组织名称收录。徐汇区政府公开资料称，区政府于2023年出资设立“徐汇科创投基金”，聚焦投早、投小、投硬科技，关注不同发展阶段的科技型企业及科创项目。公开资料尚不足以确认该简称对应的具体基金法律主体、管理人、基金规模或回报表现。",
+      "facts": [
+        {
+          "field": "fund_formation",
+          "label": "设立背景",
+          "value": "徐汇区政府公开答复称，徐汇区于2023年出资设立“徐汇科创投基金”；融资数据库中的“徐汇科创投”按该基金品牌名称收录，不据此推定其具体法律主体。",
+          "source_id": "xuhui_fund_district_reply"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开披露的投资方向",
+          "value": [
+            "投早",
+            "投小",
+            "投硬科技",
+            "关注处于各发展阶段的科技型企业或科创项目"
+          ],
+          "source_id": "xuhui_fund_district_reply"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023",
+          "description": "徐汇区政府公开资料记载，徐汇区于2023年出资设立“徐汇科创投基金”。",
+          "source_id": "xuhui_fund_district_reply"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：元川微 · Pre-A轮 · 2026-07-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露记录：元川微 · Pre-A轮 · 2026-07-24 · 本轮参投 · 融资金额披露为数亿元。本库来源列徐汇科创投为联合投资方；公开材料未披露该笔投资的单独出资额。",
           "source_id": "FISRC-ee42dc11e9aa441b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "徐汇区政府公开资料（非基金项目申请渠道）",
+          "value": "上海市徐汇区人民政府",
+          "url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069010d7ca019153ffd1640a15",
+          "source_id": "xuhui_fund_district_reply"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "xuhui_fund_district_reply",
+          "source_url": "https://www.xuhui.gov.cn/xxgk/portal/article/detail?id=8a4c0c069010d7ca019153ffd1640a15",
+          "source_title": "关注股权投资市场“明股实债”风险，确保科创金融安全的建议｜上海市徐汇区人民政府",
+          "source_content_hash": "62998a84470e52641268901fee4816c7727f488b1d0fdfc03a368604a2c6b68b",
+          "quote": "在2023年出资设立“徐汇科创投基金”，聚焦“投早投小投硬”，关注处于各发展阶段的科技型企业（或科创项目）。",
+          "quote_hash": "6c5d7cbbe6dad97619b3b28c886b8e030926409ea47db67417dc4d97575f0cf3"
+        },
         {
           "source_id": "FISRC-ee42dc11e9aa441b",
           "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
@@ -162,7 +202,7 @@
           "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

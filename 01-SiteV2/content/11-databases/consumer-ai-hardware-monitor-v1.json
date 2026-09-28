@@ -1,0 +1,26 @@
+{
+  "schema_version": "CONSUMER-AI-HARDWARE-MONITOR-V1.0",
+  "updated_at": "2026-09-26",
+  "enabled": true,
+  "per_category_limit": 4,
+  "purpose": "面向消费者的 AI 终端融资发现；品类是检索维度，不自动成为事实分类或融资证明。",
+  "categories": [
+    {"id":"ai-glasses","name":"AI 眼镜","zh":"(AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投)","en":"(AI glasses OR smart glasses) (funding OR raised OR financing)","watchlist":["雷鸟创新","Rokid","XREAL","影目科技","Even Realities"]},
+    {"id":"ai-pendants","name":"AI 钥匙扣与随身挂件","zh":"(AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投)","en":"(AI keychain OR AI pendant OR AI wearable pin) (funding OR raised OR financing)","watchlist":["Omi","Friend","Taya","Bee","Limitless"]},
+    {"id":"ai-toys","name":"AI 玩具与陪伴设备","zh":"(AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投)","en":"(AI toy OR AI companion robot OR AI pet) (funding OR raised OR financing)","watchlist":["跃然创新","Haivivi","珞博智能","Fuzozo","FoloToy","灵机天赐","Jollybubu"]},
+    {"id":"ai-phones","name":"AI 手机与个人终端","zh":"(AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投)","en":"(AI phone OR AI smartphone OR AI native device) (funding OR raised OR financing)","watchlist":["Nothing","Natural AI","兔子科技","rabbit"]},
+    {"id":"ai-audio-wearables","name":"AI 耳机与录音穿戴","zh":"(AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投)","en":"(AI earbuds OR AI recorder OR AI smart ring) (funding OR raised OR financing)","watchlist":["Plaud","未来智能","viaim"]},
+    {"id":"ai-home-devices","name":"AI 家庭消费设备","zh":"(AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投)","en":"(AI home robot OR AI learning device OR AI camera) (funding OR raised OR financing)","watchlist":["天猫精灵","Loona","KEYi Tech"]}
+  ],
+  "rules": {
+    "daily_window_days": 7,
+    "backfill_from": "2025-01-01",
+    "backfill_to": "2026-09-26",
+    "require_original_evidence": true,
+    "exclude": ["仅芯片或零部件","工业或企业专用设备","单纯产品发布","奖励型众筹和预售","寻求融资但未完成","基金募资","融资融券"],
+    "unknown_fields": "金额、轮次、投资方未披露时保持未知；累计融资、估值、收购对价不得写成本轮金额。",
+    "dedupe": "按公司主体、轮次、原始披露日期和来源去重；保留同轮追加与更正的依据，不以品牌名直接合并法人。",
+    "classification": "产品形态沿用 TAG-V4.1 的 ai_device；消费用途和具体品类需原文证据，不以检索词或 watchlist 自动赋值。",
+    "coverage": "每日逐品类记录已检索、无新增、请求失败、待核验、已收录；空结果不能伪装成完整覆盖。"
+  }
+}

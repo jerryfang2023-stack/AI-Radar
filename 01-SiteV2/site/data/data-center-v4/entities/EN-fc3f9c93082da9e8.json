@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -559,18 +559,6 @@
         "sourceUrl": "https://x.com/trq212/status/2064437561930682672"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "role": {
-          "text": "Claude Code anthropicai。前YC W20、spc、medialab成员",
-          "source_hash": "7fc6b05128499695a48abfc8dfa0de34327589fecddef460bec548c5f9c7e136",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-15T04:37:45.898Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "summary": "Anthropic 官方资料以 Thariq Shihpar 署名，将其列为 Claude Code 团队成员；数据库中的“Thariq”与该官方署名对应。",
       "current_roles": [
@@ -578,11 +566,24 @@
           "title": "Claude Code 团队成员",
           "organization": "Anthropic",
           "source_id": "anthropic_thariq"
+        },
+        {
+          "title": "Claude Code 团队成员",
+          "organization": "Anthropic",
+          "source_id": "anthropic_thariq_claude_code_webinar"
         }
       ],
-      "career": [],
+      "career": [
+        {
+          "organization": "Anthropic",
+          "title": "Claude Code 团队成员",
+          "period": "官方资料所示现职；起始时间未披露",
+          "description": "Anthropic 官方活动页面将 Thariq Shihpar 列为 Claude Code 团队嘉宾。",
+          "source_id": "anthropic_thariq_claude_code_webinar"
+        }
+      ],
       "education": [],
-      "experience_summary": "Anthropic 官方活动将 Thariq Shihpar 列为 Claude Code 团队成员；未收录未经一手资料核实的其他履历。",
+      "experience_summary": "Anthropic 官方活动页面将 Thariq Shihpar 列为 Claude Code 团队嘉宾。 任职起始时间、此前完整履历与教育经历未由当前一手来源披露，故不推断。",
       "track_record": [
         {
           "description": "参与 Claude Code 产品更新介绍和用户问答。",
@@ -597,11 +598,47 @@
           "source_content_hash": "bf59a5ee873eadb8ccbde759b1a2bfa80ca52cfa7987272ae580a8049e33e651",
           "quote": "Thariq Shihpar — Claude Code @ Anthropic",
           "quote_hash": "fd5ae7dbb2f9d07f6ab08005cf99cc5a847b709a1d487e8a891814f821dc1fc7"
+        },
+        {
+          "source_id": "anthropic_thariq_claude_code_webinar",
+          "source_url": "https://www.anthropic.com/webinars/what-we-shipped-feature-updates-tips-and-live-q-a-with-the-claude-code-team",
+          "source_title": "What We Shipped: Feature Updates, Tips, and Live Q&A with the Claude Code Team | Anthropic",
+          "source_content_hash": "bf59a5ee873eadb8ccbde759b1a2bfa80ca52cfa7987272ae580a8049e33e651",
+          "quote": "Thariq Shihpar — Claude Code @ Anthropic",
+          "quote_hash": "fd5ae7dbb2f9d07f6ab08005cf99cc5a847b709a1d487e8a891814f821dc1fc7"
         }
       ],
-      "last_verified_at": "2026-09-25",
+      "last_verified_at": "2026-09-26",
       "coverage_status": "researched",
-      "coverage_note": "本档案根据官网或本人公开资料整理；详细来源和原文摘录见下方。"
+      "coverage_note": "现职依据机构官方资料核实；未披露的任期、学历与其他经历保持未填写。"
+    },
+    "translations": {
+      "zh-CN": {
+        "role": {
+          "text": "Claude Code anthropicai。前YC W20、spc、medialab成员",
+          "source_hash": "7fc6b05128499695a48abfc8dfa0de34327589fecddef460bec548c5f9c7e136",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-15T04:37:45.898Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Anthropic 官方资料以 Thariq Shihpar 署名，将其列为 Claude Code 团队成员；数据库中的“Thariq”与该官方署名对应。",
+          "source_hash": "33790278dfcc9cb125e5bd0a9011ce60e31f62f2d44af6c8e48e2ca04ae068a7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:25.166Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "Anthropic 官方活动页面将 Thariq Shihpar 列为 Claude Code 团队嘉宾。",
+          "source_hash": "41b25eaefc03404b3c14602abafe7707cd00a2cb6ac8b39a3f93c3511ef50567",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:25.166Z",
+          "status": "translated"
+        }
+      }
     }
   },
   "relatedEntities": [],

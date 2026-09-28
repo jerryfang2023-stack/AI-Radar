@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -57,26 +57,28 @@
     "name": "Tiger Global",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-17",
+    "first_disclosed_at": "2025-09-16",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 3
     },
     "round_codes": [
       "multi_round",
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
@@ -84,6 +86,11 @@
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-1785cfc3bc6ac773",
+        "canonical_entity_id": "",
+        "name": "Nothing"
       },
       {
         "entity_id": "EN-e4540a7c8404b1be",
@@ -258,6 +265,46 @@
             "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
           }
         ]
+      },
+      {
+        "activity_id": "IA-2ecffeb74be54b55",
+        "funding_insight_id": "FI-e5aed52f8dab81de",
+        "event_ids": [
+          "EV-60366423eaa67216"
+        ],
+        "company_entity_id": "EN-1785cfc3bc6ac773",
+        "company_canonical_entity_id": "",
+        "company_name": "Nothing",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2025-09-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7e709202ce99cc8e",
+            "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+            "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+            "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+            "quote": "The round was led by Tiger Global",
+            "quote_hash": "9eaaed652574b1beacba1844710f58106747549dba80d721fc0a8fcdeeb1d158"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -292,20 +339,16 @@
         "source_content_hash": "74cb86598e6c9021",
         "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
         "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+      },
+      {
+        "source_id": "FISRC-7e709202ce99cc8e",
+        "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
+        "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
+        "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
+        "quote": "The round was led by Tiger Global",
+        "quote_hash": "9eaaed652574b1beacba1844710f58106747549dba80d721fc0a8fcdeeb1d158"
       }
     ],
-    "translations": {
-      "zh-CN": {
-        "activities[0].role": {
-          "text": "Series E 参投方",
-          "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-09-18T02:49:06.821Z",
-          "status": "translated"
-        }
-      }
-    },
     "public_profile": {
       "profile_type": "organization",
       "coverage_status": "researched",
@@ -336,6 +379,18 @@
         {
           "description": "官网介绍其通过研究、数据和分析寻找全球企业投资机会，并称其持续投资于多个阶段的创新公司；不据此推断具体基金表现。",
           "source_id": "tiger_edge"
+        },
+        {
+          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · Series E 参投方 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4afc17abd0ce2781"
+        },
+        {
+          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-134a8e8124653c90"
+        },
+        {
+          "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7dcdc22c0b1702bf"
         }
       ],
       "contacts": [
@@ -377,10 +432,46 @@
           "source_content_hash": "30a2fc1c75440ea2f27d296d507a54b00e3501e2e2e21301e787128de6baf66d",
           "quote": "Fueled by fundamental industry and company-specific research, data, and analytics, our team pursues unique investment opportunities. Investing behind successive eras of technological advancement has enabled us to identify and invest in the most innovative companies.",
           "quote_hash": "c1993b4525cabc40054293c1a5e2bb8a8067d972eff38d6341634b905fd026a5"
+        },
+        {
+          "source_id": "FISRC-4afc17abd0ce2781",
+          "source_url": "https://sacra.com/c/crusoe/",
+          "source_title": "Crusoe revenue, valuation & funding | Sacra",
+          "source_content_hash": "031d223859c249dd",
+          "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+          "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+        },
+        {
+          "source_id": "FISRC-134a8e8124653c90",
+          "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
+          "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
+          "source_content_hash": "e0e9398bf1a24e32",
+          "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
+          "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
+        },
+        {
+          "source_id": "FISRC-7dcdc22c0b1702bf",
+          "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
+          "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
+          "source_content_hash": "23145edb5fdd8d69",
+          "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
+          "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
         }
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[0].role": {
+          "text": "Series E 参投方",
+          "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-18T02:49:06.821Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -131,19 +131,104 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Air Street Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Fund size, stages, geography and outcomes are firm-published. Portfolio examples are selected, not audited returns. The Odyssey ML record is historical seed participation, not a 2026 Series B check.",
+      "summary": "Air Street Capital 是一家由唯一普通合伙人 Nathan Benaich 创立并运营的风险投资公司，在全球投资 AI-first 公司，重点关注北美和欧洲。其主要在 pre-seed 和 seed 阶段投资，发布 State of AI Report，并于 2026 年 3 月宣布 2.323 亿美元 Fund III。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2019, according to the firm.",
+          "source_id": "airstreet_about"
+        },
+        {
+          "field": "focus",
+          "label": "投资重点",
+          "value": "AI-first companies, including frontier models, infrastructure, developer tools, robotics, agents and TechBio.",
+          "source_id": "airstreet_about"
+        },
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "Primarily pre-seed and seed, with selective growth investment.",
+          "source_id": "airstreet_about"
+        },
+        {
+          "field": "fund_iii",
+          "label": "Fund III",
+          "value": "$232,323,232 announced March 23, 2026; early-stage checks $500,000–$15 million and select growth checks up to $25 million.",
+          "source_id": "airstreet_fund_iii"
+        },
+        {
+          "field": "portfolio",
+          "label": "投资组合",
+          "value": "The firm reports 60+ AI-first companies; selected examples include Synthesia, Black Forest Labs, Poolside and Profluent.",
+          "source_id": "airstreet_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "Nathan Benaich 创立 Air Street，作为一家专注于 AI-first 公司的风险投资公司。",
+          "source_id": "airstreet_fund_iii"
+        },
+        {
+          "date": "2026-03-23",
+          "description": "该公司宣布了 Fund III。",
+          "source_id": "airstreet_fund_iii"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 种子轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "该公司列出了部分退出案例，包括 Graphcore、Adept 和 Mapillary；这些示例并非经审计的基金业绩。",
+          "source_id": "airstreet_about"
+        },
+        {
+          "description": "一篇关于 Odyssey ML B 轮融资的报道将 Air Street Capital 列为更早种子轮的投资方。",
           "source_id": "FISRC-413e994d081f8e0f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Air Street Capital",
+          "source_id": "airstreet_about",
+          "url": "https://www.airstreet.com/"
+        },
+        {
+          "kind": "email",
+          "label": "创始人推介提交",
+          "value": "nathan@airstreet.com",
+          "source_id": "airstreet_about",
+          "url": "https://www.airstreet.com/ai-venture-capital"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "airstreet_about",
+          "source_url": "https://www.airstreet.com/ai-venture-capital",
+          "source_title": "Air Street Capital｜AI venture capital investing in AI-first companies",
+          "source_content_hash": "4b592daf58b982dcbccd3ed144c459ea7728aa20637c5a1fb07c2ec45b5ce8ca",
+          "quote": "Air Street Capital invests exclusively in AI-first companies and is founded and run by Nathan Benaich, solo General Partner.",
+          "quote_hash": "0972bcdfed688eff6745292fc4d5fe2dcfe478d6ae6737646aa194472a6b1892"
+        },
+        {
+          "source_id": "airstreet_fund_iii",
+          "source_url": "https://press.airstreet.com/p/fund-iii",
+          "source_title": "Air Street Capital Fund III: $232M for AI-first startups",
+          "source_content_hash": "0eaa8375c6caf49b5bb654f18366b8a15159fd89366b5ce350fa42c70a8b9d9e",
+          "quote": "Air Street Capital has raised a third fund of $232,323,232 to back AI-first companies from the earliest stages in North America and Europe.",
+          "quote_hash": "2c61252856af434633eeda634259683baedeeb121230a4899c4c57f53a714022"
+        },
+        {
+          "source_id": "airstreet_portfolio",
+          "source_url": "https://www.airstreet.com/portfolio",
+          "source_title": "Air Street Capital｜AI venture capital for AI-first companies",
+          "source_content_hash": "ac986fa91d7817c84fe86a29f1d4a351bb66d7ed86b09c1fcdabecd703dd48a1",
+          "quote": "Odyssey · World models (US/UK)",
+          "quote_hash": "8790a6ffc30900d3485829c84db3000add498ae32225640ce0d75149d4e01fa1"
+        },
         {
           "source_id": "FISRC-413e994d081f8e0f",
           "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
@@ -153,7 +238,99 @@
           "quote_hash": "c72c02150af958eba4fc5f78b4a6886cfc8ef25883e8c439f9b74e131010d193"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Air Street Capital 是一家由唯一普通合伙人 Nathan Benaich 创立并运营的风险投资公司，在全球投资 AI-first 公司，重点关注北美和欧洲。其主要在 pre-seed 和 seed 阶段投资，发布 State of AI Report，并于 2026 年 3 月宣布 2.323 亿美元 Fund III。",
+          "source_hash": "569d8f373665552ffc3e439ae81dce915397328a89870d0d098277b9615ab9ac",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "成立时间",
+          "source_hash": "6520e44889730d13e3e687ab0e403d653584169102ad8ebb3221d6ce368495ef",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "投资组合",
+          "source_hash": "1853eb2e9e5ed2bcc1d03b5a49cf407f2e43851363a8ffd0ce5ab7aa37ca8309",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Nathan Benaich 创立 Air Street，作为一家专注于 AI-first 公司的风险投资公司。",
+          "source_hash": "ebb286116c66596b73f0fc951da6f3e7d04ac272e579a45e8096726df8478817",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "该公司宣布了 Fund III。",
+          "source_hash": "0f9e9e5d147e97a8e330d16ca7500d78d5c5b1e780678a138fd6ddfae5f19029",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "该公司列出了部分退出案例，包括 Graphcore、Adept 和 Mapillary；这些示例并非经审计的基金业绩。",
+          "source_hash": "a34e9e86ece29024deb088939eca18391530468f0035d35b4e079396c52282e8",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "一篇关于 Odyssey ML B 轮融资的报道将 Air Street Capital 列为更早种子轮的投资方。",
+          "source_hash": "4e5ed99a617526f72e6fbe0daaa6bb0fb8a5bf57153bd18e9f76df7de4f9ce97",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "创始人推介提交",
+          "source_hash": "26001d571278aaad796cff654f41fba517dfc288df2ab1d16b6fa17023e5e060",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

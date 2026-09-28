@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,63 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AlphaDrive Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略和团队背景按 AlphaDrive 官网自述整理。Oak 的 6000 万美元为公开披露的本轮融资总额，未披露 AlphaDrive Ventures 单独出资额；官网对运营支持能力的描述不等于经独立审计的投资回报。",
+      "summary": "AlphaDrive Ventures 将自身定位为面向 AI 与网络安全变革的风险投资及公司建设团队。官网介绍其把投资人、创业运营者、企业 CISO 以及私募股权和并购经验整合到创始人支持流程中，覆盖早期判断、产品和市场进入、增长及战略方向。官网列示 Yaron Elad 与 Elik Etzion 为管理合伙人。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "机构关注方向",
+          "value": [
+            "人工智能",
+            "网络安全",
+            "认知 AI",
+            "Physical AI"
+          ],
+          "source_id": "alphadrive_story"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持模式",
+          "value": "官网称其将投资人、运营者、企业 CISO 以及私募股权和并购专家整合协作，支持产品、市场进入、增长与战略决策。",
+          "source_id": "alphadrive_story"
+        },
+        {
+          "field": "leadership_background",
+          "label": "官网列示的管理合伙人",
+          "value": [
+            "Yaron Elad — Managing Partner；官网介绍其参与创立 AlphaDrive，并公开阐述 AI 对产品、商业模式和企业竞争的影响。",
+            "Elik Etzion — Managing Partner；官网介绍其关注认知 AI、Physical AI、企业转型及 AI 应用带来的战略风险。"
+          ],
+          "source_id": "alphadrive_story"
+        }
+      ],
       "milestones": [],
+      "experience_summary": "AlphaDrive 官网将其团队描述为投资人与实际经营者、企业 CISO、私募股权和并购专家的协作网络。Yaron Elad 与 Elik Etzion 以管理合伙人身份公开发声；官网未在该页面给出两人的完整任职年表。",
       "track_record": [
         {
-          "description": "融资来源记录：Oak · 种子轮 · 2026-07-15 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资记录：Oak · 种子轮 · 2026-07-15 · 参投；TechCrunch 披露该轮融资总额为 6000 万美元，未披露 AlphaDrive Ventures 单独出资额。此为本库收录的案例，不代表完整投资组合。",
           "source_id": "FISRC-88cec30382296a0c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "AlphaDrive Ventures",
+          "url": "https://www.alphadrive.vc/",
+          "source_id": "alphadrive_story"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "alphadrive_story",
+          "source_url": "https://www.alphadrive.vc/our-story",
+          "source_title": "AlphaDrive Ventures",
+          "source_content_hash": "ae45944544dbb760195009c6d5d061556ed1e5552540521c4b651c3a73a37dc9",
+          "quote": "investors who have backed and scaled category-defining companies, operators who have built and exited businesses, CISOs",
+          "quote_hash": "23e9ca41cea7c1422d323763ea4ebcf1c90b067227978ee186ec78cbcb9fc2eb"
+        },
         {
           "source_id": "FISRC-88cec30382296a0c",
           "source_url": "https://techcrunch.com/2026/07/15/backed-by-60m-in-funding-oak-steps-out-of-stealth-to-fix-the-identity-mess-that-ai-agents-are-making-worse/",
@@ -161,7 +205,7 @@
           "quote_hash": "cc34267824bc20b9cf279c98b0294d2660229485b515151b6536e5347270b2bf"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,187 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Catalio Capital Management 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Catalio Capital Management 是总部位于纽约的医疗健康投资机构，官网称其在私募、公开市场与信贷等领域覆盖医疗创新的完整投资周期。其策略包括私募股权、结构化机会、公开市场与共同投资；投资范围不限于传统早期风险投资。",
+      "facts": [
+        {
+          "field": "investment_scope",
+          "label": "投资领域",
+          "value": [
+            "创新医疗健康",
+            "药物",
+            "医疗器械",
+            "诊断",
+            "医疗数据与数字工具"
+          ],
+          "source_id": "catalio_portfolio_mix"
+        },
+        {
+          "field": "strategies",
+          "label": "官网列示策略",
+          "value": [
+            "Private Equity",
+            "Structured Opportunities",
+            "Public Equities",
+            "Co-Investments"
+          ],
+          "source_id": "catalio_strategies"
+        },
+        {
+          "field": "self_reported_scale",
+          "label": "官网披露的机构规模",
+          "value": "官网注明截至 2025-10-01 管理资产约 20 亿美元；另披露在纽约、华盛顿特区和伦敦有 40 多名员工，并有 45 位以上具备基金权益的 Venture Partners。",
+          "source_id": "catalio_stats"
+        },
+        {
+          "field": "founder_roles",
+          "label": "创始管理合伙人",
+          "value": [
+            "George C. Petrocheilos — 联合创始人、管理合伙人。",
+            "R. Jacob Vogelstein, Ph.D. — 联合创始人、管理合伙人。"
+          ],
+          "source_id": "catalio_team"
+        },
+        {
+          "field": "george_career",
+          "label": "George C. Petrocheilos 履历",
+          "value": "此前任 Camden Partners Holdings 普通合伙人，主要投资医疗健康公司；官网还列出其在多家私营医疗健康公司的董事会经历。",
+          "source_id": "catalio_george"
+        },
+        {
+          "field": "george_affiliations",
+          "label": "George C. Petrocheilos 相关公司与机构",
+          "value": [
+            "Camden Partners Holdings — 曾任普通合伙人",
+            "Haystack Oncology — 官网列出董事会经历，后被 Quest Diagnostics 收购",
+            "Octant Bio",
+            "DNA Script",
+            "Clasp Therapeutics",
+            "Odyssey Therapeutics"
+          ],
+          "source_id": "catalio_george"
+        },
+        {
+          "field": "jacob_career",
+          "label": "R. Jacob Vogelstein 履历",
+          "value": "此前任 Camden Partners Holdings 普通合伙人，关注生物医学技术投资；早年在 Johns Hopkins University 应用物理实验室和 Whiting 工程学院任教。",
+          "source_id": "catalio_jacob"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮领投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Enveda · Series E · 2026-09-23 · Catalio Capital Management 领投；披露的 3.11 亿美元为该轮总额，并非 Catalio 单笔出资。",
           "source_id": "FISRC-b2cab94e5375e0ba"
+        },
+        {
+          "description": "机构官网自报：自 2020 年以来，其基金与 SPV 向投资者累计分配近 3 亿美元；这是机构公布的累计分配额，不等于单只基金回报率或净 IRR。",
+          "source_id": "catalio_distributions"
         }
       ],
-      "contacts": [],
+      "experience_summary": "官网资料显示，两位创始管理合伙人此前均在 Camden Partners 从事医疗或生物医学技术投资；Catalio 另设由科学家和创业者组成的 Venture Partner 网络。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Catalio Capital Management",
+          "url": "https://www.cataliocapital.com/",
+          "source_id": "catalio_home"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示地址",
+          "value": "512 W. 22nd Street, 5th Floor, New York, NY 10011",
+          "url": "https://www.cataliocapital.com/terms-of-use",
+          "source_id": "catalio_terms"
+        },
+        {
+          "kind": "phone",
+          "label": "官网列示电话（网站事务）",
+          "value": "(917) 832-1832",
+          "url": "https://www.cataliocapital.com/terms-of-use",
+          "source_id": "catalio_terms"
+        },
+        {
+          "kind": "email",
+          "label": "网站事务邮箱（非投资申请渠道）",
+          "value": "admin@cataliocapital.com",
+          "url": "https://www.cataliocapital.com/terms-of-use",
+          "source_id": "catalio_terms"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "catalio_home",
+          "source_url": "https://www.cataliocapital.com/",
+          "source_title": "Catalio Capital Management",
+          "source_content_hash": "f6ae3e1ea51877e44d51f57415114cea5eca7bf4738d99d1e926fdf7bbe9a33b",
+          "quote": "A New York based investment firm focused on the full lifecycle of innovative healthcare investing, across private, public and credit markets.",
+          "quote_hash": "9f15731b80761191c67bf660d269f8dc907d4ac751216c2706ab56721057bf91"
+        },
+        {
+          "source_id": "catalio_strategies",
+          "source_url": "https://www.cataliocapital.com/",
+          "source_title": "Catalio Capital Management — strategies",
+          "source_content_hash": "f6ae3e1ea51877e44d51f57415114cea5eca7bf4738d99d1e926fdf7bbe9a33b",
+          "quote": "Private Equity Structured Opportunities Public Equities Co-Investments",
+          "quote_hash": "af12d5acb35f0af774538a3996c7f139b04f46556423a72f0cbea73ec2dd7a6d"
+        },
+        {
+          "source_id": "catalio_portfolio_mix",
+          "source_url": "https://www.cataliocapital.com/",
+          "source_title": "Catalio Capital Management — portfolio mix",
+          "source_content_hash": "f6ae3e1ea51877e44d51f57415114cea5eca7bf4738d99d1e926fdf7bbe9a33b",
+          "quote": "Investment breakdown Our Portfolio Drugs 49 AI-Enabled 49 16 Devices Diagnostics 12 Others 14",
+          "quote_hash": "e7be9294ddde231d6f1a1e4b49cd025c9382b62c16b042a7e6dd18498f71cebf"
+        },
+        {
+          "source_id": "catalio_team",
+          "source_url": "https://www.cataliocapital.com/team",
+          "source_title": "Team | Catalio Capital Management",
+          "source_content_hash": "afe9a84c5ae20a2c13ffec4d620e24cf7048827a3f0e66d8fd45ceab08c5e222",
+          "quote": "George C. Petrocheilos Co-Founder & Managing Partner R. Jacob Vogelstein, Ph.D. Co-Founder & Managing Partner",
+          "quote_hash": "66e50eb4d94b5597605f408b544fa1839d42b142e2137606744fe177a9bdd75c"
+        },
+        {
+          "source_id": "catalio_stats",
+          "source_url": "https://www.cataliocapital.com/",
+          "source_title": "Catalio Capital Management — firm statistics",
+          "source_content_hash": "f6ae3e1ea51877e44d51f57415114cea5eca7bf4738d99d1e926fdf7bbe9a33b",
+          "quote": "In numbers $2B In assets under management *as of 10/01/2025 40+ Employees across offices in New York City, Washington DC, and London 45+ Venture Partners with equity interests across all Catalio strategies",
+          "quote_hash": "246f538162a36d4da7198372af5c56e9a638b29b1ca36fb2c553c5f7bd02acb1"
+        },
+        {
+          "source_id": "catalio_distributions",
+          "source_url": "https://www.cataliocapital.com/",
+          "source_title": "Catalio Capital Management — distributions claim",
+          "source_content_hash": "f6ae3e1ea51877e44d51f57415114cea5eca7bf4738d99d1e926fdf7bbe9a33b",
+          "quote": "79% of VC funds raised since 2020 have returned $0 to investors. Catalio has distributed nearly $300M to investors over the same time period from its Funds and SPVs.",
+          "quote_hash": "7bd7680ce44b33c886b5cfa44ca0efe3be863735566a9500268671efe4d090e0"
+        },
+        {
+          "source_id": "catalio_george",
+          "source_url": "https://www.cataliocapital.com/team/george-c-petrocheilos",
+          "source_title": "George C. Petrocheilos | Catalio Capital Management",
+          "source_content_hash": "ca9ff02b432002fd253e5d71f58a54966af8515ce17b76c4d35533471342571e",
+          "quote": "Prior to founding Catalio, he was a General Partner at Camden Partners Holdings, LLC, a private equity firm that spun-out of T. Rowe Price, where he focused on making healthcare investments. George has served on several Boards of private healthcare companies, including Haystack Oncology (acquired by Quest Diagnostics), Octant Bio, DNA Script, Clasp Therapeutics and Odyssey Therapeutics.",
+          "quote_hash": "e870ed702cf1bb3c0b86dbc157602182a30414f5af05d033f08419565073fdfc"
+        },
+        {
+          "source_id": "catalio_jacob",
+          "source_url": "https://www.cataliocapital.com/team/r-jacob-vogelstein",
+          "source_title": "R. Jacob Vogelstein, Ph.D. | Catalio Capital Management",
+          "source_content_hash": "578cd5df036d0d9df5409c55295ca5fd3273cc4b12ff2f43802b7ba03bbaffd9",
+          "quote": "Prior to founding Catalio, he was a General Partner at Camden Partners Holdings, LLC, a private equity firm that spun-out of T. Rowe Price, where he focused on making biomedical technology investments. Earlier in his career, Jacob served on the faculty at Johns Hopkins University, at both the Applied Physics Laboratory and the Whiting School of Engineering.",
+          "quote_hash": "6ae90c8ccee0eaf38cbd0d20302e5a07c2d51ddc78e8e691e526125a87415e03"
+        },
+        {
+          "source_id": "catalio_terms",
+          "source_url": "https://www.cataliocapital.com/terms-of-use",
+          "source_title": "Terms of Use | Catalio Capital Management",
+          "source_content_hash": "3e5a52e7e3a8915c9c43e32f0431f9a6edd6ca2825c7e9006513e8e7cc2e5e3c",
+          "quote": "Catalio Capital Management, LP, 512 W. 22nd Street, 5th Floor, New York, NY 10011; phone (917) 832-1832; email admin@cataliocapital.com.",
+          "quote_hash": "a222c9267b95d37d56e6509f483dcae7003141b972530f1645ad16f80bad1efe"
+        },
         {
           "source_id": "FISRC-b2cab94e5375e0ba",
           "source_url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials",
@@ -161,7 +327,47 @@
           "quote_hash": "4de0100c58ebb8c5bc3ca996fe00a665d79ecafef938ab278948ad6a72c3a4d4"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "coverage_note": "机构策略、人员履历和联系渠道按公开官网资料整理；融资案例为本库收录的可追溯样本，不代表完整投资组合或机构回报。人物经历嵌入机构资料，仅记录官网披露且能确认角色的人员；未把轮次总额写成机构单笔出资。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[4].label": {
+          "text": "George C. Petrocheilos 履历",
+          "source_hash": "a3ca14b870f9fc7658dec59309d4466ceaf654a6075b76df7556cd0c48f877c7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        },
+        "public_profile.facts[5].label": {
+          "text": "George C. Petrocheilos 相关公司与机构",
+          "source_hash": "047a7c0a2cfc0391eb1d55d5d24b40d98b0f79ea1226c641107cab1f6449b635",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "R. Jacob Vogelstein 履历",
+          "source_hash": "0bf81aa8246cf42eef3645057dba5aa9b090c1189436943482ea2900edc8fcc3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Enveda · Series E · 2026-09-23 · Catalio Capital Management 领投；披露的 3.11 亿美元为该轮总额，并非 Catalio 单笔出资。",
+          "source_hash": "6a6d2878cd3fc35f913899cf4abae75dbd9d64d448f991d5f8225d18c944b0f7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

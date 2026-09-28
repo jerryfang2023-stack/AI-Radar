@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,123 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Notable Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Notable Capital 是一家以美国为核心、面向全球创业者的早期风险投资机构。官网称其有超过 25 年投资经验、管理资产超过 50 亿美元，投资覆盖公司早期至退出阶段，并以人才招聘、策略与市场拓展支持组合企业。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称与早期创业者合作，并支持公司从早期发展到退出。",
+          "source_id": "notable_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理规模（机构自报）",
+          "value": "官网披露管理资产超过 50 亿美元；网页未注明该数字的统计时点。",
+          "source_id": "notable_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资与创始人支持",
+          "value": "官网介绍其通过高确信度投资、人才招聘、策略支持、市场传播和全球网络协助创业团队。",
+          "source_id": "notable_about"
+        },
+        {
+          "field": "leadership_team",
+          "label": "官网列出的投资合伙人",
+          "value": [
+            "Glenn Solomon — Managing Partner",
+            "Hans Tung — Managing Partner",
+            "Jeff Richards — Managing Partner",
+            "Oren Yunger — Managing Partner"
+          ],
+          "source_id": "notable_team"
+        },
+        {
+          "field": "hans_tung_background",
+          "label": "Hans Tung 履历与关联公司",
+          "value": "官网称其早年在华尔街覆盖台湾半导体产业，曾共同创办两家硅谷关联创业公司，之后在亚洲从事投资；其投资组合案例包括 Airbnb、Coinbase、Slack、ByteDance、Anthropic、Affirm 与 Poshmark。",
+          "source_id": "notable_hans"
+        },
+        {
+          "field": "reported_outcomes",
+          "label": "机构自报历史成果",
+          "value": "官网首页列出 32 次 IPO；这是机构的组合公司成果口径，不等于基金净回报或 LP 回报。",
+          "source_id": "notable_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Wispr · Series B · 2026-08-17 · 报道称 Notable Capital 是参与本轮的既有投资人之一；2.8 亿美元为该轮融资总额，不是 Notable 的单笔出资。",
           "source_id": "FISRC-2e7a3713da8f3e54"
+        },
+        {
+          "description": "官网以 Airbnb、Square、HashiCorp 等公司展示组合历史，并自报 32 次 IPO；这些为机构层面的精选成果，不代表完整组合或基金回报率。",
+          "source_id": "notable_home"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "管理资产、IPO 数量与历史年限均为 Notable 官网自报数据；官网未标注具体财务审计口径。2026 年 Wispr 的 2.8 亿美元为 B 轮融资总额，Notable 作为既有投资人参与，单笔金额未披露。",
+      "experience_summary": "官网披露的投资合伙人经验覆盖风险投资、创业公司经营与全球市场投资；Hans Tung 的官方简介列出华尔街研究、创业经历及 Airbnb、Coinbase、Slack 等投资组合关联。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站与投资方向",
+          "value": "Notable Capital",
+          "url": "https://www.notablecap.com/about-us",
+          "source_id": "notable_about"
+        },
+        {
+          "kind": "contact_form",
+          "label": "一般联系与商务咨询",
+          "value": "Notable Capital 联系表单",
+          "url": "https://www.notablecap.com/contact",
+          "source_id": "notable_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "notable_about",
+          "source_url": "https://www.notablecap.com/about-us",
+          "source_title": "About Us | Notable Capital",
+          "source_content_hash": "7474c9f474243030bc826db4c350c7b5dc799faf039dba37132f7b92ac99a811",
+          "quote": "With over 25 years of experience and $5B+ in assets under management, we partner with early-stage founders scaling bold ideas into category-defining companies.",
+          "quote_hash": "57c1b37d0f0ba0b7b8335c3dbdc013f71b9edcc662e878538e6616b22b5c0926"
+        },
+        {
+          "source_id": "notable_home",
+          "source_url": "https://www.notablecap.com/",
+          "source_title": "Notable Capital",
+          "source_content_hash": "a1d07c66215be2d96a048d22fed920c1076d31439402d3c66c77fcf6ca998c0b",
+          "quote": "32 IPOs From Airbnb to Square to HashiCorp, Notable founders delivered iconic IPOs that redefined categories and set new global benchmarks.",
+          "quote_hash": "69cc03f36162201b720220bbde2e7c2d7b734002c8762a3d9eab412f73ac3890"
+        },
+        {
+          "source_id": "notable_team",
+          "source_url": "https://www.notablecap.com/team",
+          "source_title": "Team | Notable Capital",
+          "source_content_hash": "a76da4fec753007d65c29208e06f854103d47f5d5834677ee6f00dc2cf1b88e9",
+          "quote": "Glenn Solomon Investment Hans Tung Investment Jeff Richards Investment Oren Yunger Investment",
+          "quote_hash": "bb234f53aeb647a50b8dbc659df92641f0af2b2e2cd66720a3d5415c4e418982"
+        },
+        {
+          "source_id": "notable_hans",
+          "source_url": "https://www.notablecap.com/team/hans-tung",
+          "source_title": "Hans Tung | Notable Capital",
+          "source_content_hash": "30c8727a8390f28d7911e45541e00766fd2ada8783b35e85c9d6e6fdf4f51ee1",
+          "quote": "Hans Tung is a Managing Partner at Notable Capital, where he leads the firm’s AI-driven Prosumer, Commerce, and Fintech practice.",
+          "quote_hash": "9ae7fefe74df7d3944caae3bccca45c28cc3fbbb35972efc8d76bac4a38bbb34"
+        },
+        {
+          "source_id": "notable_contact",
+          "source_url": "https://www.notablecap.com/contact",
+          "source_title": "Contact | Notable Capital",
+          "source_content_hash": "7b90bad532272825eddb5addf7205af4327c2b9c4215568f77d56c51dd4ee30b",
+          "quote": "Please send a note and we will get back to you.",
+          "quote_hash": "c350022b3aa7e0d344219e17aa6b75994b36ac68412395d21a61ee1c10bda850"
+        },
         {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
@@ -161,7 +263,19 @@
           "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[4].label": {
+          "text": "Hans Tung 履历与关联公司",
+          "source_hash": "4d57777e8178253d6cf12cfbf0cf7834f6afd83d5597e59ea06a068cd60dbfe2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

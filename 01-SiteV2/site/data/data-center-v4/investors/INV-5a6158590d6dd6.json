@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,20 +139,121 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海沿浦精工科技(集团)股份有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "根据上海证券交易所披露的2025年年度报告及公开融资披露整理。经营与专利数字均注明对应报告期；投资案例不代表公司完整投资组合或投资回报。",
+      "summary": "上海沿浦精工科技（集团）股份有限公司（英文名：Shanghai Yanpu Precision Technology (Group) Co., Ltd.）是上海证券交易所上市的汽车零部件企业，主营汽车座椅零部件研发、生产与销售，重点能力覆盖座椅骨架、精密冲压和模具开发。公司年报还披露其向汽车整椅、高铁整椅及机器人核心零部件方向拓展。",
+      "facts": [
+        {
+          "field": "founded_date",
+          "label": "有限公司成立日期",
+          "value": "1999-04-19",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "listed_security",
+          "label": "上市信息",
+          "value": "上海证券交易所 A 股，股票代码 605128；上市日期 2020-09-15",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "principal_business",
+          "label": "主营业务",
+          "value": "汽车座椅零部件的研发、生产与销售",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "products_and_capabilities",
+          "label": "产品与技术能力",
+          "value": [
+            "汽车座椅骨架及零部件",
+            "座椅功能件",
+            "精密冲压与成型",
+            "模具及工装开发",
+            "机器人焊接和自动化制造"
+          ],
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "business_expansion",
+          "label": "年报披露的拓展方向",
+          "value": [
+            "汽车整椅",
+            "高铁整椅",
+            "机器人核心零部件"
+          ],
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "technical_team",
+          "label": "研发与工程团队",
+          "value": "公司在2025年年报中称团队近200人；该数字为公司披露口径",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "field": "patents_as_of_2025_12_31",
+          "label": "专利（截至2025-12-31）",
+          "value": "公司及子公司合计121项实用新型专利、6项发明专利",
+          "source_id": "yanpu_ar_2025"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1999-04-19",
+          "description": "公司年报记载的有限公司成立日。",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "date": "2020-09-15",
+          "description": "上海证券交易所 A 股上市。",
+          "source_id": "yanpu_ar_2025"
+        }
+      ],
       "track_record": [
+        {
+          "description": "2025年度公司披露营业收入约24.19亿元、归属于母公司股东的净利润约1.88亿元、经营活动现金流量净额约3.77亿元；分别同比增长6.28%、36.93%和48.99%。以上是年报口径，不代表未来业绩。",
+          "source_id": "yanpu_ar_2025"
+        },
         {
           "description": "融资来源记录：驰芯半导体 · A+轮 · 2026-09-23 · 本轮领投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-adff65727174a119"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "公司官网",
+          "value": "Shanghai Yanpu Precision Technology (Group) Co., Ltd.",
+          "url": "https://www.shyanpu.com/",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "kind": "phone",
+          "label": "董事会秘书及证券事务联系（年报披露）",
+          "value": "021-64918973 转 8101",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "kind": "email",
+          "label": "投资者关系 / 董事会秘书联系邮箱",
+          "value": "ypgf@shyanpu.com",
+          "source_id": "yanpu_ar_2025"
+        },
+        {
+          "kind": "address",
+          "label": "注册及办公地址（年报披露）",
+          "value": "上海市闵行区浦江镇江凯路128号",
+          "source_id": "yanpu_ar_2025"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "yanpu_ar_2025",
+          "source_url": "https://big5.sse.com.cn/site/cht/www.sse.com.cn/disclosure/listedinfo/announcement/c/new/2026-04-17/605128_20260417_L5W2.pdf",
+          "source_title": "上海沿浦精工科技（集团）股份有限公司2025年年度报告",
+          "source_content_hash": "c4eb8d9b2781e774416b0c7f301a138f418933db5152ff794918eedfa8b93c78",
+          "quote": "公司主营业务为汽车座椅零部件的研发、生产与销售。",
+          "quote_hash": "04af3f7618cf37335bc430de33243baf76a5101d1765fe3831f526a90e73c8e8"
+        },
         {
           "source_id": "FISRC-adff65727174a119",
           "source_url": "https://news.pedaily.cn/202609/569521.shtml",
@@ -162,7 +263,8 @@
           "quote_hash": "64dd659d75a0fcc73ae2de4248c5fa6dc637e45b0d61c514261418271abfaa20"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27",
+      "identity_status": "verified"
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -137,21 +137,110 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "片仔癀盈科基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "片仔癀盈科基金是福建片仔癀盈科健康产业投资合伙企业（有限合伙）的简称，由盈科资本担任管理人，片仔癀旗下投资公司与多家机构共同发起，聚焦中医药、生物医药、医疗器械及医疗服务。公开材料显示基金总规模10亿元；片仔癀投资认缴2.9亿元、占29%。",
+      "coverage_note": "10亿元为基金总规模；2.9亿元是片仔癀投资的认缴出资，不是该基金投向单个项目的金额。基金管理人为盈科创新资产管理有限公司，BP邮箱属于管理人官网公开渠道，并非基金单体专属邮箱。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "基金全称",
+          "value": "福建片仔癀盈科健康产业投资合伙企业（有限合伙）",
+          "source_id": "pzh_yingke_fund_manager_2024"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金总规模",
+          "value": "10亿元人民币。",
+          "source_id": "pzh_yingke_fund_manager_2024"
+        },
+        {
+          "field": "founded_by",
+          "label": "发起方及产业背景",
+          "value": "片仔癀旗下漳州片仔癀投资管理有限公司、三明市投资发展集团、上海闽山生命健康等共同出资发起。",
+          "source_id": "pzh_yingke_fund_manager_2024"
+        },
+        {
+          "field": "shareholder_commitment",
+          "label": "片仔癀投资认缴额",
+          "value": "2.9亿元，占基金29%；这是LP认缴金额，不是项目投资额。",
+          "source_id": "pzh_pzpharma_notice_2024"
+        },
+        {
+          "field": "manager_custodian_registration",
+          "label": "管理人、托管人及备案",
+          "value": "管理人为盈科创新资产管理有限公司，托管人为中国农业银行，私募基金备案编码SAPY07。",
+          "source_id": "pzh_pzpharma_notice_2024"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": [
+            "中医药",
+            "生物医药",
+            "医疗器械",
+            "医疗服务",
+            "中药日化品、康复医疗器械、新型生物材料"
+          ],
+          "source_id": "pzh_yingke_fund_manager_2024"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-11",
+          "description": "基金通过中国证券投资基金业协会私募基金备案，备案编码SAPY07。",
+          "source_id": "pzh_pzpharma_notice_2024"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：思博慧医 · Pre-A+轮 · 2026-09-17 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "福建省投资促进网披露，2025年3月片仔癀盈科基金向君德医药项目投资1,500万元。",
+          "source_id": "pzh_junde_investment_2025"
+        },
+        {
+          "description": "融资报道将片仔癀盈科基金列为思博慧医Pre-A+轮跟投方。近亿元是融资轮总额，基金单笔投资金额未披露。",
           "source_id": "FISRC-0195a1b88a7ecb41"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金管理人盈科资本官网（非基金专属）",
+          "value": "盈科资本",
+          "url": "https://www.yingkepe.com/",
+          "source_id": "pzh_yingke_fund_manager_2024"
+        },
+        {
+          "kind": "email",
+          "label": "管理人官网公开BP邮箱（非基金专属）",
+          "value": "bp@yingkepe.com",
+          "url": "https://www.yingkepe.com/news-center/news/557",
+          "source_id": "pzh_yingke_fund_manager_2024"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "pzh_yingke_fund_manager_2024",
+          "source_url": "https://www.yingkepe.com/news-center/news/557",
+          "source_title": "盈科资本携手片仔癀投资设立片仔癀盈科健康产业基金",
+          "source_content_hash": "1bd23f1f7117bd1e8a5ed0653992808827ebc5a49aa183f5875e32fb2f59fc9b",
+          "quote": "11月25日，盈科资本携手片仔癀投资等共同发起设立的片仔癀盈科基金顺利通过中国证券投资基金业协会的私募投资基金备案。片仔癀盈科基金总规模10亿元，主要投资于中医药产业、生物医药、医疗器械、医疗服务等行业的企业或项目。盈科资本将关注中药日化品、康复医疗器械、新型生物材料等赛道。",
+          "quote_hash": "a93e63b579d14684a1b3d0ea360c3811911c45a88da383cc674c262cdd38cca1"
+        },
+        {
+          "source_id": "pzh_pzpharma_notice_2024",
+          "source_url": "https://money.finance.sina.com.cn/corp/view/vCB_AllBulletinDetail.php?id=10613400&stockid=600436",
+          "source_title": "片仔癀：关于投资参与设立片仔癀盈科基金的进展公告",
+          "source_content_hash": "d5020acfbdf864b1b8127bfa16ad53f07bb07f07afe26280e324434a93ec4d9e",
+          "quote": "漳州片仔癀投资管理有限公司以自有资金认缴出资29,000万元，占片仔癀盈科基金的比例为29.00%。基金已在中国证券投资基金业协会完成私募投资基金备案；备案编码SAPY07；管理人为盈科创新资产管理有限公司；托管人为中国农业银行股份有限公司。",
+          "quote_hash": "cdc3b1b36a9627b51cac39f0f2a373cb5941378f5479396ef6bea3a4bef6326f"
+        },
+        {
+          "source_id": "pzh_junde_investment_2025",
+          "source_url": "https://fdi.swt.fujian.gov.cn/show-23502.html",
+          "source_title": "高效对接引来资本活水 赋能产业升级｜福建投资促进网",
+          "source_content_hash": "2cd8c80a86f49d233fa0905867553b22f4053b53dda88b9302d834f936f8f679",
+          "quote": "今年3月26日，圆山基金投资2200万元，片仔癀盈科基金投资1500万元共同参与君德医药项目本轮融资。",
+          "quote_hash": "cbff3d2c95305f69ef4f83b006713a9d212e8ad099fcf02a3f3746faed1b1ac6"
+        },
         {
           "source_id": "FISRC-0195a1b88a7ecb41",
           "source_url": "https://news.pedaily.cn/202609/569157.shtml",
@@ -161,7 +250,10 @@
           "quote_hash": "3e54f30fc23c389889a06fa46c44ee9017a3591a35a78563fc5a8863d1e0b9df"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-27"
     }
   }
 }

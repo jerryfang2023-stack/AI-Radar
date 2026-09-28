@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -140,19 +140,112 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "BMW i Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Fund size, total capital under management, stage, check range, and portfolio counts come from BMW Group or BMW i Ventures disclosures. Company portfolio exits are selected company outcomes, not an audited fund-level return record. Featherless.ai’s USD 20 million Series A is its round total, not BMW i Ventures’ individual check.",
+      "summary": "BMW i Ventures 是 BMW Group 支持的企业风险投资机构，投资于汽车、出行、制造和供应链技术。2026 年 4 月，它推出了专注于 AI 和工业技术的第三期基金，规模为 3 亿美元，使其声称的管理资本达到 11 亿美元。它投资于北美和欧洲的种子轮至 B 轮。",
+      "facts": [
+        {
+          "field": "parent",
+          "label": "企业支持",
+          "value": "Fully backed by BMW Group.",
+          "source_id": "bmwi_fund3"
+        },
+        {
+          "field": "fund_iii",
+          "label": "Fund III",
+          "value": "USD 300 million, launched in April 2026; BMW Group reports USD 1.1 billion in total capital under management.",
+          "source_id": "bmwi_fund3"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Seed through Series B, with initial checks up to USD 10 million.",
+          "source_id": "bmwi_about"
+        },
+        {
+          "field": "geography",
+          "label": "地理重点",
+          "value": "North America and Europe.",
+          "source_id": "bmwi_about"
+        },
+        {
+          "field": "leadership_background",
+          "label": "管理合伙人经验",
+          "value": "Marcus Behrendt joined in 2018 after BMW and Mercedes-Benz product and operations roles; Kasper Sage joined in 2016 after venture investing and Deutsche Telekom business-development roles.",
+          "source_id": "bmwi_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-04-29",
+          "description": "BMW i Ventures 推出了 3 亿美元的 Fund III，使其声称的管理资本达到 11 亿美元。",
+          "source_id": "bmwi_fund3"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Featherless.ai · A轮 · 2026-04-30 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "BMW i Ventures 的投资组合页面显示其拥有超过 90 项投资和超过 30 个退出项目；该公开列表并非基金层面的业绩声明。",
+          "source_id": "bmwi_portfolio"
+        },
+        {
+          "description": "BMW i Ventures 参与了 Featherless.ai 于 2026 年 4 月宣布的 2000 万美元 Series A。该金额是公司本轮融资总额；其单笔出资金额未披露。",
           "source_id": "FISRC-2abdb8003508dda6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "Mountain View 总部",
+          "value": "2606 Bayshore Parkway, Mountain View, CA 94043, USA",
+          "source_id": "bmwi_about"
+        },
+        {
+          "kind": "address",
+          "label": "慕尼黑办公室",
+          "value": "Freddie-Mercury-Strasse 5, 80797 Munich, Germany",
+          "source_id": "bmwi_about"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "BMW i Ventures",
+          "source_id": "bmwi_about",
+          "url": "https://www.bmwiventures.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bmwi_about",
+          "source_url": "https://www.bmwiventures.com/about-us",
+          "source_title": "About Us | BMW i Ventures",
+          "source_content_hash": "ed674679d1b31550a951da50f365f987301ad0c321dea59365feaf76bb6cca1c",
+          "quote": "We write early-stage checks up to $10M to support visionary founders dedicated to solving real-world challenges in large markets.",
+          "quote_hash": "8299f8f3965921f9808539b166a8a73b9dad65042b84f5284ecec8d33594f1fc"
+        },
+        {
+          "source_id": "bmwi_team",
+          "source_url": "https://www.bmwiventures.com/team",
+          "source_title": "Team | BMW i Ventures",
+          "source_content_hash": "09cc9e759f8d04c4d897ffa192ff3ecc81aabe151a9af2d7a579129ef8efd473",
+          "quote": "Marcus Behrendt has been a Managing Partner at BMW i Ventures since 2018.",
+          "quote_hash": "866412dfcb371032d4fe5462e71038b6b84f49a05bb2b5de1140f7fe5c865558"
+        },
+        {
+          "source_id": "bmwi_portfolio",
+          "source_url": "https://www.bmwiventures.com/portfolio",
+          "source_title": "Portfolio | BMW i Ventures",
+          "source_content_hash": "df5f557051c889b4eaea765a74ba0a3ebc19287275949f76f10d05990bfddc6b",
+          "quote": "We have invested in over 90 companies to-date, with over 30 exits.",
+          "quote_hash": "f68f5d5e59bd43baf1168ba8d86e05aa3c25647095656ffdbf8552b144dc6ef7"
+        },
+        {
+          "source_id": "bmwi_fund3",
+          "source_url": "https://www.press.bmwgroup.com/global/article/detail/T0457479EN/bmw-i-ventures-announces-300-million-fund-to-back-ai-startups-reshaping-the-automotive-ecosystem",
+          "source_title": "BMW i Ventures launches USD 300 million Fund III | BMW Group PressClub",
+          "source_content_hash": "754d4c0e904ddc18f9d2bffe59dcfea428b086903daae07a5fd21c8a8eb91a7d",
+          "quote": "BMW i Ventures today launched its third fund, putting $300 million behind a clear premise",
+          "quote_hash": "6e96a4aecfd70a83d80bfa60003473521d0070ccb5a8107ac0604d1cfdce42bf"
+        },
         {
           "source_id": "FISRC-2abdb8003508dda6",
           "source_url": "https://tech.eu/2026/04/30/featherlessai-secures-20m-to-expand-serverless-platform-for-open-source-ai/",
@@ -162,7 +255,99 @@
           "quote_hash": "67475342fca91e990ca60a5eb148915b5c54fe115e0c9d854fc7f35de22212e8"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "BMW i Ventures 是 BMW Group 支持的企业风险投资机构，投资于汽车、出行、制造和供应链技术。2026 年 4 月，它推出了专注于 AI 和工业技术的第三期基金，规模为 3 亿美元，使其声称的管理资本达到 11 亿美元。它投资于北美和欧洲的种子轮至 B 轮。",
+          "source_hash": "3a5cb07022f3247a5279ff77766c8f58428990e06851922fb5193555c8261102",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "企业支持",
+          "source_hash": "53ae02ca61b14cef39024ab2f9522233c975caa58fe22b9ba4fd555eaafb397a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "地理重点",
+          "source_hash": "5d08aa082291ac8e2552838afafd8ce0ce52a5851c47565a6dc2872b519db2e0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "管理合伙人经验",
+          "source_hash": "e969ac0b44e14d94ce965427a041178ebaad711ad853d996eaf95524d48cd1f0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "BMW i Ventures 推出了 3 亿美元的 Fund III，使其声称的管理资本达到 11 亿美元。",
+          "source_hash": "2f274e3b44a8665d509c6cb98486ec7e103773c5edcefbf940042715a3c855bc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "BMW i Ventures 的投资组合页面显示其拥有超过 90 项投资和超过 30 个退出项目；该公开列表并非基金层面的业绩声明。",
+          "source_hash": "ff76e5431dc47305e3d42b77d7de16f0418b4cd3812b58d7bdad7b6e90cf4531",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "BMW i Ventures 参与了 Featherless.ai 于 2026 年 4 月宣布的 2000 万美元 Series A。该金额是公司本轮融资总额；其单笔出资金额未披露。",
+          "source_hash": "57bb9989bf39c3ea295f5034feb6c56a6e599b7029fb678026b5617035f2ce7a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Mountain View 总部",
+          "source_hash": "7a51e9be4b464c6f460459128c4c9585443c3146acb20ac9a662e67aa4455ec9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "慕尼黑办公室",
+          "source_hash": "c216a593ef7f302f1198b31ac69025e5d086274f518bc4fc28525fd9a9d21c7c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:01.805Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

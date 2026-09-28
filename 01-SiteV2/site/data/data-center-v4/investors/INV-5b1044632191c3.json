@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -291,14 +291,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "高榕资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构背景、投资方向、累计组合指标和联系方式来自高榕创投官网。官网公开的组合规模与上市企业数量为机构自述指标，不等同于基金回报率；具体项目案例以融资情报库可追溯记录为准。",
+      "summary": "数据表使用名称为“高榕资本”，机构官网使用“高榕创投”品牌。官网称机构于2014年1月创立，专注早期和成长期投资，重点覆盖新科技、互联网及新消费、医疗健康。官网公开披露投资企业300余家、上市企业30余家；这些累计指标不代表基金收益率。",
+      "facts": [
+        {
+          "field": "public_brand",
+          "label": "官网使用品牌",
+          "value": "高榕创投",
+          "source_id": "gaorong_home_2026"
+        },
+        {
+          "field": "founded_date",
+          "label": "创立时间",
+          "value": "2014年1月",
+          "source_id": "gaorong_home_2026"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露投资阶段",
+          "value": [
+            "早期",
+            "成长期"
+          ],
+          "source_id": "gaorong_home_2026"
+        },
+        {
+          "field": "sectors",
+          "label": "官网披露投资领域",
+          "value": [
+            "新科技",
+            "互联网及新消费",
+            "医疗健康"
+          ],
+          "source_id": "gaorong_home_2026"
+        },
+        {
+          "field": "portfolio_metrics",
+          "label": "官网披露累计组合指标",
+          "value": "投资企业300余家；上市企业30余家。统计口径为机构官网自述，非基金回报数据。",
+          "source_id": "gaorong_metrics_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2014-01",
+          "description": "高榕创投官网记载机构于2014年1月创立。",
+          "source_id": "gaorong_home_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网公开指标显示投资企业300余家、上市企业30余家；这是机构累计数量，不是基金IRR或完整回报率。",
+          "source_id": "gaorong_metrics_2026"
+        },
         {
           "description": "融资来源记录：浙江晶能微电子股份有限公司 · C轮 · 2026-09-20 · A轮领投方 · 6.3亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8ffab0ff3ac3652d"
@@ -312,8 +360,61 @@
           "source_id": "FISRC-7dfa7efaace4f3c8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "高榕创投",
+          "url": "https://www.gaorongvc.com/cn/",
+          "source_id": "gaorong_home_2026"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱（用途未单独说明）",
+          "value": "bp@gaorongvc.com",
+          "url": "https://www.gaorongvc.com/team.html",
+          "source_id": "gaorong_contact_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开电话",
+          "value": "010-84442729",
+          "url": "https://www.gaorongvc.com/team.html",
+          "source_id": "gaorong_contact_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开传真",
+          "value": "010-84442279",
+          "url": "https://www.gaorongvc.com/team.html",
+          "source_id": "gaorong_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gaorong_home_2026",
+          "source_url": "https://www.gaorongvc.com/cn/",
+          "source_title": "高榕创投官网首页",
+          "source_content_hash": "a739c24c01c1bbf0a4298c3079ab6653db0552f86aa994679db4b2a02ef0c4a9",
+          "quote": "高榕创投于2014年1月创立，专注于早期和成长期投资，重点投资新科技、互联网及新消费、医疗健康等创新创业领域。",
+          "quote_hash": "17406dc8fa4bd5a76ed5877341f760b58570e8a68633bc7ecef6c0fa396a37f9"
+        },
+        {
+          "source_id": "gaorong_metrics_2026",
+          "source_url": "https://www.gaorongvc.com/cn/",
+          "source_title": "高榕创投官网首页",
+          "source_content_hash": "a739c24c01c1bbf0a4298c3079ab6653db0552f86aa994679db4b2a02ef0c4a9",
+          "quote": "300+ 2014 30+",
+          "quote_hash": "7ba56764fb168227d6a9de784c08815745aa04efe000dc17f922ed67f07f378e"
+        },
+        {
+          "source_id": "gaorong_contact_2026",
+          "source_url": "https://www.gaorongvc.com/team.html",
+          "source_title": "高榕创投官网团队与联系方式",
+          "source_content_hash": "5add0f83a07ed0a5685b80e839ac5e17d5a47ff1e30f85a85dbc1d2cb04d6125",
+          "quote": "中文 English bp@gaorongvc.com 010-84442729 010-84442279",
+          "quote_hash": "0f855ce465017d4376b8745592ce225385601f732e40802e8104d0e075cd069b"
+        },
         {
           "source_id": "FISRC-8ffab0ff3ac3652d",
           "source_url": "https://www.geener.cn/energy/company",
@@ -339,7 +440,7 @@
           "quote_hash": "6e0944605f10f53334f72bbd7c6dcd9d6bf0cbd4d7686337eb3b786f2b37ed8b"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
     }
   }
 }

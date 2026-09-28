@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,18 +139,45 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Meritech Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网的 200+ 投资及 60+ IPO 数据为机构自报累计口径，官网未在该页面提供计算方法或基金回报数据。Avoca AI 的 1.25 亿美元以上为公司 B 轮总额，并非 Meritech Capital 单笔出资。已核验官方联系方式限于官网。",
+      "summary": "Meritech Capital 是与科技公司合作的投资机构，官网将其描述为小型、平等合伙制，强调低投资数量和高确信度，并由合伙人直接支持创业公司。官网自报自 1999 年以来在 200 多项投资中对应 60 多家 IPO；这些是机构披露的累计数据，不等同于基金回报率。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构定位",
+          "value": "科技投资机构，官网称其采用小型平等合伙制。",
+          "source_id": "meritech_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网强调低投资数量、高确信度，合伙人直接参与并与创业者建立长期关系。",
+          "source_id": "meritech_home"
+        },
+        {
+          "field": "self_reported_track_record",
+          "label": "官网自报累计记录",
+          "value": "自 1999 年以来在 200 多项投资中对应 60 多家 IPO；为机构自报数据，不代表基金收益率。",
+          "source_id": "meritech_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Avoca AI · 多轮融资 · 2026-04-27 · B轮领投 · 超过1.25亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Avoca AI 于 2026-04-27 公布超过 1.25 亿美元 B 轮融资，来源称本轮由 Meritech 与 General Catalyst 领投；披露金额为公司融资总额，Meritech 单笔出资未披露。",
           "source_id": "FISRC-ce3d5e20846f6f71"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Meritech Capital",
+          "url": "https://www.meritechcapital.com/",
+          "source_id": "meritech_home"
+        }
+      ],
       "sources": [
         {
           "source_id": "FISRC-ce3d5e20846f6f71",
@@ -159,9 +186,37 @@
           "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
           "quote": "The Series B funding was led by Meritech and General Catalyst",
           "quote_hash": "bcb53c848d1b78b1efb58f1af73eaaa779195c1267261467e6639c004498f612"
+        },
+        {
+          "source_id": "meritech_home",
+          "source_url": "https://www.meritechcapital.com/",
+          "source_title": "Meritech Capital",
+          "source_content_hash": "e4379d11cb353ea2375bbd49cbaf5d31c8754813c951bc6c8caf22f162db7c24",
+          "quote": "Meritech is an investment firm that partners with companies redefining their markets through technology.",
+          "quote_hash": "39657e7af32029ab834dc7bf4a110170d0ba84ed5c5a75305f41e800ab8f8220"
+        },
+        {
+          "source_id": "meritech_record",
+          "source_url": "https://www.meritechcapital.com/",
+          "source_title": "Meritech Capital",
+          "source_content_hash": "e4379d11cb353ea2375bbd49cbaf5d31c8754813c951bc6c8caf22f162db7c24",
+          "quote": "60+ IPOs across 200+ investments since 1999.",
+          "quote_hash": "8369f5e4d49dbdb68541ef8c1312168378337b0ddd8a7a179f076cdbda41f878"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Avoca AI 于 2026-04-27 公布超过 1.25 亿美元 B 轮融资，来源称本轮由 Meritech 与 General Catalyst 领投；披露金额为公司融资总额，Meritech 单笔出资未披露。",
+          "source_hash": "da11ea65b8af002d60a254f3d9327ef4efc8dc39d0a7e13528df3329845b99e0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:35.948Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

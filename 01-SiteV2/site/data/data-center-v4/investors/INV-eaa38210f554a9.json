@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,19 +139,109 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vertex Ventures Southeast Asia & India 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Vertex Ventures Southeast Asia & India 官网、公开联系/投资申请页及公司融资公告整理。AUM、组合规模与独角兽数量为机构自报口径；融资总额不代表该机构单独出资额。",
+      "summary": "Vertex Ventures Southeast Asia & India（VVSEAI）是 Vertex 全球基金网络中面向东南亚和印度的早期风险投资机构。官网将其描述为行业不限的投资者，重点关注区域数字经济，并披露管理资产约 15 亿美元、组合企业超过 90 家及 6 家独角兽（均为机构自报指标）。本库可核验的活动包括领投 FORMAS.AI 398 万美元预种子轮；该数字是公司本轮融资额，未披露 Vertex 单家出资额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段，官网列示种子轮、A 轮及 B 轮",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "investment_geography",
+          "label": "重点区域",
+          "value": [
+            "东南亚",
+            "印度"
+          ],
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资策略",
+          "value": "行业不限；官网称重点围绕东南亚与印度数字经济投资",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "管理资产",
+          "value": "官网自报约 US$1.5B；口径和页面未标注统计日期",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "组合规模",
+          "value": "官网自报投资超过 90 家初创公司、6 家独角兽；非完整业绩或回报披露",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "field": "global_network",
+          "label": "机构关系",
+          "value": "隶属 Vertex 全球关联基金网络；该网络另覆盖中国、以色列、日本和美国",
+          "source_id": "vvseai_contact_2026"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：FORMAS.AI · 预种子轮 · 2026-04-29 · 本轮领投 · 398万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网自报其组合包括 6 家独角兽；未在该页面列明统计时点、定义或基金回报，不能据此推断投资收益。",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "description": "FORMAS.AI 于 2026-04-29 公布 398 万美元超额认购预种子轮，官方公告称由 Vertex Ventures Southeast Asia & India 领投；此金额是本轮公司融资额，未披露机构单家出资。",
           "source_id": "FISRC-dc1378b0805f976c"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Vertex Ventures Southeast Asia & India",
+          "url": "https://www.vertexventures.sg/",
+          "source_id": "vvseai_home_2026"
+        },
+        {
+          "kind": "application",
+          "label": "投资项目申请",
+          "value": "通过官网 Pitch to Us 表单提交投资申请",
+          "url": "https://www.vertexventures.sg/apply/",
+          "source_id": "vvseai_contact_2026"
+        },
+        {
+          "kind": "phone",
+          "label": "新加坡办公室电话",
+          "value": "+65 6828 8088",
+          "url": "https://www.vertexventures.sg/contact/",
+          "source_id": "vvseai_contact_2026"
+        },
+        {
+          "kind": "address",
+          "label": "新加坡办公室",
+          "value": "250 North Bridge Road, #11-01, Raffles City Tower, Singapore 179101",
+          "url": "https://www.vertexventures.sg/contact/",
+          "source_id": "vvseai_contact_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vvseai_home_2026",
+          "source_url": "https://www.vertexventures.sg/",
+          "source_title": "Vertex Ventures Southeast Asia & India | Leading VC firm",
+          "source_content_hash": "f7c8f21d2b39e96ba69474fd0e54695ac2e38334eab01c7b3f52cdb81e652668",
+          "quote": "$1.5b under management; 90+ companies; 6 unicorns",
+          "quote_hash": "aa81222d2613b9281d76f37475e530794d52e66b533b7e182ac692bee35a1cde"
+        },
+        {
+          "source_id": "vvseai_contact_2026",
+          "source_url": "https://www.vertexventures.sg/contact/",
+          "source_title": "Contact Us | Vertex Ventures SEA",
+          "source_content_hash": "5af3bc206f7bc3f9299ab92b3c107a6dd02242a848c8aaaf91dcd7193b291e96",
+          "quote": "For application for Investment from VVSEAI Please click on Pitch to Us button above and fill in the form.",
+          "quote_hash": "c5c6cbbdf0fe56114d091db4b8802c8b1fd60d46a63e07a475c1cf8001037ebe"
+        },
         {
           "source_id": "FISRC-dc1378b0805f976c",
           "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
@@ -161,7 +251,7 @@
           "quote_hash": "69f8e713391b1d26d48b33dd8227cef58247fced37b2fe76dbafda5fd409253e"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

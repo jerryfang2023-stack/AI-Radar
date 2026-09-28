@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-24T02:18:33.039Z",
-    "latestDataDate": "2026-09-24",
-    "currentDate": "2026-09-24",
-    "eventCount": 3561,
+    "generatedAt": "2026-09-28T00:56:21.876Z",
+    "latestDataDate": "2026-09-26",
+    "currentDate": "2026-09-26",
+    "eventCount": 3587,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -155,14 +155,51 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Foundation Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "官网首页展示的首次投资比例、IPO 数量和营收阶段占比均为 Foundation Capital 自述，不是审计投资回报或完整投资组合；公司轮次总额不代表其单笔出资。投资团队公开邮箱按其个人官网页面用途标注。",
+      "summary": "Foundation Capital 是一家美国早期风险投资机构，官网称其已支持创业者约 30 年，并聚焦企业软件、金融科技与加密技术，围绕 AI 和区块链建立投资主题。官网当前展示的首次投资比例、IPO 数量及营收阶段占比均为机构自述指标；本库另记录其参与 AegisAI 融资的公开案例，不代表基金回报。",
+      "facts": [
+        {
+          "field": "operating_history",
+          "label": "官网对机构历史的描述",
+          "value": "官网在 2026-09-28 核验时称已支持创业者 30 年；此为官网当前年数表述，不据此推断精确成立年份。",
+          "source_id": "foundation_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示的投资领域",
+          "value": [
+            "企业软件",
+            "金融科技",
+            "加密技术"
+          ],
+          "source_id": "foundation_practices"
+        },
+        {
+          "field": "technology_themes",
+          "label": "官网列示的技术主题",
+          "value": [
+            "人工智能",
+            "区块链"
+          ],
+          "source_id": "foundation_practices"
+        },
+        {
+          "field": "early_stage_approach",
+          "label": "早期投资方式",
+          "value": "官网强调没有过早的阶段，并称其可在创业构想阶段与创始人合作。",
+          "source_id": "foundation_early_stage"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：AegisAI · A轮 · 2026-07-23 · 既有投资方，本轮参投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "截至 2026-09-28 官网首页展示：其约五分之四的投资案例中是公司的首位投资者、组合中有 37 家 IPO、77% 的投资对象在投资时尚未产生营收。以上为机构自述的组合指标，不等同于现金回报率。",
+          "source_id": "foundation_metrics"
+        },
+        {
+          "description": "融资报道将 Foundation Capital 列为 AegisAI 2026 年 7 月 3600 万美元 A 轮既有投资方之一；3600 万美元是全轮规模，未披露该机构单独出资额。",
           "source_id": "FISRC-7a2e33bd2177a4c7"
         },
         {
@@ -170,8 +207,85 @@
           "source_id": "FISRC-4b3af8138bc7fb99"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官方网站",
+          "value": "Foundation Capital",
+          "url": "https://foundationcapital.com/",
+          "source_id": "foundation_home"
+        },
+        {
+          "kind": "email",
+          "label": "投资团队公开邮箱（Steve Vassallo，General Partner）",
+          "value": "svassallo@foundationcap.com",
+          "url": "https://foundationcapital.com/team-members/steve-vassallo",
+          "source_id": "foundation_steve"
+        },
+        {
+          "kind": "address",
+          "label": "Palo Alto 办公室",
+          "value": "550 High St, 3rd Floor, Palo Alto, CA 94301",
+          "url": "https://foundationcapital.com/",
+          "source_id": "foundation_offices"
+        },
+        {
+          "kind": "address",
+          "label": "San Francisco 办公室",
+          "value": "2 Shaw Alley, 4th Floor, San Francisco, CA 94105",
+          "url": "https://foundationcapital.com/",
+          "source_id": "foundation_offices"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "foundation_home",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "For thirty years, we’ve backed extraordinary founders from day zero.",
+          "quote_hash": "3c4a07be639da7ea75db0e4b4e9ce404dde2e1e2737fb1a58519bfd95855fe20"
+        },
+        {
+          "source_id": "foundation_metrics",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "4 of 5 times we’re a company’s first investor; 37 IPOs; 77% of investments are pre-revenue.",
+          "quote_hash": "a6199957e68df408e9a9968a2582223aafbab9f7b611b844e205268eb2908cad"
+        },
+        {
+          "source_id": "foundation_practices",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "Our three practice areas — enterprise, fintech and crypto — are where we put that conviction to work.",
+          "quote_hash": "1e5c08481c3fddd9b846a85688d4e5faa3ec73b8c07f9db023fa4616100dab9c"
+        },
+        {
+          "source_id": "foundation_early_stage",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "No such thing as “too early”. For us, it’s a way of working.",
+          "quote_hash": "efd7309d5a5016a7e20c77a3a61d77c86e1f9d9624a1750c618614209a62bd77"
+        },
+        {
+          "source_id": "foundation_offices",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "550 High St, 3rd Floor Palo Alto, CA 94301; San Francisco 2 Shaw Alley #4th San Francisco, CA 94105.",
+          "quote_hash": "787dbb93f61311c23c05c1fd98c9915dd2ae93e86b760f66ab97a1b932e2e215"
+        },
+        {
+          "source_id": "foundation_steve",
+          "source_url": "https://foundationcapital.com/team-members/steve-vassallo",
+          "source_title": "Steve Vassallo - Foundation Capital",
+          "source_content_hash": "20b47edf2d79ec29d3989bb29d7420dc8c373f8f258c5bcb6387f2e77a4e4f9f",
+          "quote": "Steve Vassallo General Partner Contact svassallo@foundationcap.com.",
+          "quote_hash": "9368212a1af114faf34118d6127dac7e69f2791087e0b9a09507f713aae4fe5b"
+        },
         {
           "source_id": "FISRC-7a2e33bd2177a4c7",
           "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
@@ -188,8 +302,35 @@
           "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
           "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
         }
-      ],
-      "last_verified_at": "2026-09-26"
+      ]
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.contacts[1].label": {
+          "text": "投资团队公开邮箱（Steve Vassallo，General Partner）",
+          "source_hash": "e5ea96717c6a13727abc9411e9b275e9112cd63a05f4773e9090886058ed93bf",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "Palo Alto 办公室",
+          "source_hash": "fd88d0369a7cf219ef568b0c4070127338704b7d0868878e5c563e7d4a940b7a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:25.166Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[3].label": {
+          "text": "San Francisco 办公室",
+          "source_hash": "39eca82149d8327b65d90b6f0c1ec0fce234c625f57d29765869774f5a6a7049",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:13.800Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
