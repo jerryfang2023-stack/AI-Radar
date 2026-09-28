@@ -5,7 +5,7 @@ import path from "node:path";
 import { collectChinaFunding, normalizeChinaFundingLead, articleUrl } from "../lib/china-funding-collector.mjs";
 import { consumerHardwareConfig } from "../lib/consumer-ai-hardware-monitor.mjs";
 import { buildChinaFundingHealth } from "../lib/china-funding-health.mjs";
-import { chinaFundingPlan, selectChinaFundingIntake, restoreAcceptedChinaFundingEvidence } from "../run-china-funding-pipeline.mjs";
+import { chinaFundingPlan, mergeChinaFundingDiscoveries, selectChinaFundingIntake, restoreAcceptedChinaFundingEvidence, uncapturedChinaFundingItems } from "../run-china-funding-pipeline.mjs";
 import { mergeSourceIntakes } from "../lib/source-intake-v1.mjs";
 import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
 import { eventSourceEligibility } from "../build-data-center-v4.mjs";
@@ -17,6 +17,22 @@ test("daily financing preserves individual card results inside the restored lane
   const generator = commands.find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
   assert.ok(generator.includes(`--checkpoint-dir=${sourceDir}/card-checkpoints`));
   assert.ok(commands.some((args) => args[0].endsWith("/assert-funding-insights-v1.mjs")));
+});
+test("secondary search candidates append as a source-stage delta without recollecting accepted URLs", () => {
+  const primary = { date: "2026-09-28", items: [{ url: "https://news.example/accepted" }] };
+  const secondary = { date: "2026-09-28", items: [
+    { url: "https://news.example/accepted", secondary_search: true },
+    { url: "https://news.example/new", secondary_search: true },
+    { url: "https://news.example/unreviewed", secondary_search: false },
+  ] };
+  const merged = mergeChinaFundingDiscoveries(primary, [secondary]);
+  assert.equal(merged.items.length, 3);
+  assert.equal(merged.secondary_search_candidate_count, 1);
+  const accepted = { source_artifacts: [{ source_url: "https://news.example/accepted" }] };
+  assert.deepEqual(uncapturedChinaFundingItems(merged, accepted, { secondaryOnly: true }), [secondary.items[1]]);
+  assert.throws(() => mergeChinaFundingDiscoveries(primary, [{ date: "2026-09-27", items: [] }]), /date mismatch/u);
+  const workflow = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
+  assert.match(workflow, /run-china-funding-pipeline\.mjs --date="\$RUN_DATE" --append-new-sources=true/u);
 });
 test("domestic pipeline can use reviewed multi-method research seeds when search quotas are unavailable", () => {
   const sourceDir = "agent-workflow/reports/china-funding/2026-09-28";
@@ -105,6 +121,8 @@ test("resuming an accepted checkpoint preserves the current reviewed search-seed
   const currentSeedRestore = restoreStep.indexOf('cp "$seed_snapshot" "$current_seeds"');
   assert.ok(snapshot >= 0 && snapshot < checkpointRestore);
   assert.ok(checkpointRestore < currentSeedRestore);
+  assert.match(restoreStep, /current_secondary="\$lane\/china-funding-secondary-source-intake-candidates\.json"/u);
+  assert.match(restoreStep, /cp "\$secondary_snapshot" "\$current_secondary"/u);
   assert.match(restoreStep, /rm -f "\$current_seeds"/u);
 });
 test("domestic dates come from explicit original publication stamps, never capture time", () => {

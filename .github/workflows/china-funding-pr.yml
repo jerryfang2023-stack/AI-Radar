@@ -66,12 +66,19 @@ jobs:
           current_seeds="$lane/funding-research-seeds.json"
           seed_snapshot="$RUNNER_TEMP/current-funding-research-seeds.json"
           checkpoint_seeds="$RUNNER_TEMP/china-funding-checkpoint/funding-research-seeds.json"
+          current_secondary="$lane/china-funding-secondary-source-intake-candidates.json"
+          secondary_snapshot="$RUNNER_TEMP/current-china-funding-secondary-source-intake-candidates.json"
           source_head="$(gh run view "$RESUME_RUN" --json headSha --jq .headSha)"
           current_head="$(git rev-parse HEAD)"
           seed_exists=false
+          secondary_exists=false
           if [ -f "$current_seeds" ]; then
             cp "$current_seeds" "$seed_snapshot"
             seed_exists=true
+          fi
+          if [ -f "$current_secondary" ]; then
+            cp "$current_secondary" "$secondary_snapshot"
+            secondary_exists=true
           fi
           gh run download "$RESUME_RUN" --name "china-funding-checkpoint-$RUN_DATE" --dir "$RUNNER_TEMP/china-funding-checkpoint"
           checkpoint_seed_hash=""
@@ -89,11 +96,16 @@ jobs:
           else
             rm -f "$current_seeds"
           fi
+          if [ "$secondary_exists" = true ]; then
+            cp "$secondary_snapshot" "$current_secondary"
+          else
+            rm -f "$current_secondary"
+          fi
           if [ "$checkpoint_seed_hash" != "$current_seed_hash" ] || [ "$source_head" != "$current_head" ]; then
             if [ -d "$lane/card-checkpoints" ]; then
               find "$lane/card-checkpoints" -maxdepth 1 -type f -name 'EV-*.json' -delete
             fi
-            echo "Discarded event-card checkpoints because the source revision or reviewed search seeds changed."
+            echo "Discarded event-card checkpoints because the source revision or reviewed research inputs changed."
           fi
       - name: Collect each domestic publisher independently
         run: |
@@ -165,7 +177,7 @@ jobs:
       - name: Capture, accept facts and sync companies products institutions
         id: pipeline
         continue-on-error: true
-        run: node agent-workflow/tools/run-china-funding-pipeline.mjs --date="$RUN_DATE"
+        run: node agent-workflow/tools/run-china-funding-pipeline.mjs --date="$RUN_DATE" --append-new-sources=true
       - name: Persist immutable originals before exposing references
         id: evidence
         if: always() && steps.pipeline.outcome != 'skipped'
