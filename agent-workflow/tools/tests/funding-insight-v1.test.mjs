@@ -2005,6 +2005,22 @@ test("headline-only Claims resolve through their event's full canonical source b
   }, event);
   assert.ok(excerptOnlyQuotes.includes(sourceBody));
   assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], excerptOnlyQuotes)?.canonical_name, "Fluidstack");
+
+  const intakeEvent = { ...event, source_refs: ["SA-CHINAVENTURE"] };
+  const intakeQuotes = canonicalSourceQuoteBodies({
+    ...bundle,
+    sourceArtifacts: [{
+      source_artifact_id: "SA-CHINAVENTURE",
+      source_url: "https://chinaventure.com.cn/news/80-20260927-393454.html",
+    }],
+    rawDocuments: [],
+  }, intakeEvent, [{
+    raw_id: "RAW-INTAKE-VERSION",
+    canonical_url: "https://www.chinaventure.com.cn/news/80-20260927-393454.html?utm_source=daily",
+    intake_diagnostics: { key_excerpts: [{ type: "funding", text: sourceBody }] },
+  }]);
+  assert.ok(intakeQuotes.includes(sourceBody));
+  assert.equal(subjectCompanyForEvent(intakeEvent, entities, {}, [claim], intakeQuotes)?.canonical_name, "Fluidstack");
 });
 
 test("normalization restores previously unsupported plus rounds from stored original evidence", () => {
