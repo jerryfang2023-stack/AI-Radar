@@ -132,19 +132,157 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Long Journey Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Long Journey 官网团队页列明现任普通合伙人及早期支持过的公司；这些团队介绍是选列信息，不视为完整组合。Crusoe 的融资数据库条目关联到 Sacra 对 Series D 以外知名投资方的概述，并被标记为历史/歧义活动；不能据此认定 Long Journey 参与 Crusoe 的 USD 3.9bn Series F 或推定其出资金额。Long Journey 联合创办人 Lee Jacobs 在机构官网署名文章中回顾了他参与 Crusoe 种子轮筹资的经历，该个人叙述不披露基金支票金额。",
+      "summary": "Long Journey Ventures 是一家早期风险投资机构，官网团队页将 Lee Jacobs 列为联合创办人兼管理合伙人、Cyan Banister 列为联合创办人兼普通合伙人，Arielle Zuckerberg 列为普通合伙人。机构团队介绍称 Lee 曾在 Crusoe、Together AI 与 Loom 的早期阶段提供支持；Lee 另在机构官网文章中回顾了他对 Crusoe 创业早期的支持。官网团队页公开联系邮箱为 hi@longjourney.vc。团队传记中的案例为选列信息，不构成完整组合或基金业绩数据。",
+      "facts": [
+        {
+          "field": "investment_thesis",
+          "label": "投资理念",
+          "value": "机构官网将 Lee Jacobs 的投资理念概括为“在共识形成之前投资看似不寻常的想法”；这是其创办合伙人的个人表述。",
+          "source_id": "lj_crusoe_thesis"
+        },
+        {
+          "field": "managing_partner",
+          "label": "管理合伙人",
+          "value": "官网团队页列 Lee Jacobs 为 Co-Founder & Managing Partner。",
+          "source_id": "lj_lee_role"
+        },
+        {
+          "field": "selected_company_examples",
+          "label": "团队传记中列举的早期支持案例",
+          "value": "Lee Jacobs 的官网团队简介列出 Crusoe、Together AI 与 Loom，称其在这些公司早期阶段提供支持。此为人物简介中的选列案例，不代表完整机构组合。",
+          "source_id": "lj_lee_portfolio"
+        },
+        {
+          "field": "co_founder_general_partner",
+          "label": "联合创办人兼普通合伙人",
+          "value": "官网团队页列 Cyan Banister 为 Co-Founder & General Partner。",
+          "source_id": "lj_cyan_role"
+        },
+        {
+          "field": "team_background_cyan",
+          "label": "Cyan Banister 过往经历",
+          "value": "官网团队页称 Cyan Banister 加入 Long Journey 之前曾任 Founders Fund 合伙人。",
+          "source_id": "lj_cyan_background"
+        },
+        {
+          "field": "general_partner",
+          "label": "普通合伙人",
+          "value": "官网团队页列 Arielle Zuckerberg 为 General Partner。",
+          "source_id": "lj_arielle_role"
+        },
+        {
+          "field": "team_background_arielle",
+          "label": "Arielle Zuckerberg 过往经历",
+          "value": "官网团队页称 Arielle Zuckerberg 曾在 Coatue，参与设计并推出该公司的首支早期基金。",
+          "source_id": "lj_arielle_background"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 历史轮次投资方 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "机构创办人案例：Lee Jacobs 在 Long Journey 官网署名文章中称，他于 2018 年认识 Crusoe 创办人 Chase Lochmiller。",
+          "source_id": "lj_crusoe_meeting_date"
+        },
+        {
+          "description": "Lee Jacobs 在机构官网文章中回顾，他后来担任 Crusoe 首位顾问，并协助其筹备种子轮融资；这是创办人的个人叙述，不披露基金出资额。",
+          "source_id": "lj_crusoe_seed"
+        },
+        {
+          "description": "第三方融资资料将 Long Journey Ventures 列为 Crusoe 的知名历史投资方之一，并明确说该名单不属于 Series D 参与方。不能据此认定其参与 Crusoe 2026 年 Series F 或将该轮金额归属于 Long Journey。",
           "source_id": "FISRC-4afc17abd0ce2781"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "机构一般联系邮箱",
+          "value": "hi@longjourney.vc",
+          "source_id": "lj_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lj_lee_role",
+          "source_url": "https://www.longjourney.vc/team",
+          "source_title": "Team — Long Journey Ventures",
+          "source_content_hash": "0d6ccbc5a6e53a6a5d37fda862ac34a15a50110ade608d8f38c7bf7ccf5f763a",
+          "quote": "Lee Jacobs Co-Founder & Managing Partner",
+          "quote_hash": "2da78600a7e0dd585ce2e09a5b1c584235819d8fecc5456b8efe7a72602f4c5a"
+        },
+        {
+          "source_id": "lj_lee_portfolio",
+          "source_url": "https://www.longjourney.vc/team",
+          "source_title": "Team — Long Journey Ventures",
+          "source_content_hash": "0d6ccbc5a6e53a6a5d37fda862ac34a15a50110ade608d8f38c7bf7ccf5f763a",
+          "quote": "He’s been proud to stand behind companies like Crusoe, Together AI, and Loom in their earliest chapters.",
+          "quote_hash": "960e39a41a54bbd593b4343c8aad71eaebefacbd55541ae0543e5e835e19b3ae"
+        },
+        {
+          "source_id": "lj_cyan_role",
+          "source_url": "https://www.longjourney.vc/team",
+          "source_title": "Team — Long Journey Ventures",
+          "source_content_hash": "0d6ccbc5a6e53a6a5d37fda862ac34a15a50110ade608d8f38c7bf7ccf5f763a",
+          "quote": "Cyan Banister Co-Founder & General Partner",
+          "quote_hash": "ae47a4603bb789615415d769791d494759bcfa27447fcb68c435aefcb57a616a"
+        },
+        {
+          "source_id": "lj_cyan_background",
+          "source_url": "https://www.longjourney.vc/team",
+          "source_title": "Team — Long Journey Ventures",
+          "source_content_hash": "0d6ccbc5a6e53a6a5d37fda862ac34a15a50110ade608d8f38c7bf7ccf5f763a",
+          "quote": "Prior to joining Long Journey, Cyan was a Partner at Founders Fund.",
+          "quote_hash": "2f000aed5a43157804e5a4097c6ae423a0e8ce9ee5aa701eb1d0b62ac65ee0b9"
+        },
+        {
+          "source_id": "lj_arielle_role",
+          "source_url": "https://www.longjourney.vc/team",
+          "source_title": "Team — Long Journey Ventures",
+          "source_content_hash": "0d6ccbc5a6e53a6a5d37fda862ac34a15a50110ade608d8f38c7bf7ccf5f763a",
+          "quote": "Arielle Zuckerberg General Partner",
+          "quote_hash": "594b395e966b6915c7500b5a920aa69c1b450571bf9e0fb7f01a3477310cade7"
+        },
+        {
+          "source_id": "lj_arielle_background",
+          "source_url": "https://www.longjourney.vc/team",
+          "source_title": "Team — Long Journey Ventures",
+          "source_content_hash": "0d6ccbc5a6e53a6a5d37fda862ac34a15a50110ade608d8f38c7bf7ccf5f763a",
+          "quote": "Before joining Long Journey, Arielle was at Coatue, where she helped design and launch the firm’s first early-stage fund.",
+          "quote_hash": "a13ef39ac66a13f1a13bb132a607d196aef08281f3118f692f9523e721abf47f"
+        },
+        {
+          "source_id": "lj_contact",
+          "source_url": "https://www.longjourney.vc/team",
+          "source_title": "Team — Long Journey Ventures",
+          "source_content_hash": "0d6ccbc5a6e53a6a5d37fda862ac34a15a50110ade608d8f38c7bf7ccf5f763a",
+          "quote": "Say hello (hi@longjourney.vc)",
+          "quote_hash": "e1f57fa190f01ae577eb1f6a30d9f774eae4acbdf7e8881ffd705b75599d42b6"
+        },
+        {
+          "source_id": "lj_crusoe_thesis",
+          "source_url": "https://www.longjourney.vc/news/crusoe-second-believer",
+          "source_title": "“Gas to Cash”: Becoming Crusoe’s Second Believer — Long Journey Ventures",
+          "source_content_hash": "7f2650519f999860c0c2001f1b0879107b86f728681cc7f033fc6332a9a31e7b",
+          "quote": "investing in the absurd before it became consensus",
+          "quote_hash": "93ed20a726b7f3f51999e14c0ee53c049adf6f25470c51180988b610286b1b1e"
+        },
+        {
+          "source_id": "lj_crusoe_seed",
+          "source_url": "https://www.longjourney.vc/news/crusoe-second-believer",
+          "source_title": "“Gas to Cash”: Becoming Crusoe’s Second Believer — Long Journey Ventures",
+          "source_content_hash": "7f2650519f999860c0c2001f1b0879107b86f728681cc7f033fc6332a9a31e7b",
+          "quote": "I ended up becoming Crusoe’s first advisor and helped Chase with fundraising to put together their seed round.",
+          "quote_hash": "c24f0d55d227f7f826f026085a0a819b9508739662ed8cb13e500fcc6a33fc1f"
+        },
+        {
+          "source_id": "lj_crusoe_meeting_date",
+          "source_url": "https://www.longjourney.vc/news/crusoe-second-believer",
+          "source_title": "“Gas to Cash”: Becoming Crusoe’s Second Believer — Long Journey Ventures",
+          "source_content_hash": "7f2650519f999860c0c2001f1b0879107b86f728681cc7f033fc6332a9a31e7b",
+          "quote": "When I met Chase at Dandelion Chocolate in 2018",
+          "quote_hash": "537ba376947e2322fc64ea4898e713af579b0974c9048d52e7efc1ba7c976ff6"
+        },
         {
           "source_id": "FISRC-4afc17abd0ce2781",
           "source_url": "https://sacra.com/c/crusoe/",
@@ -154,7 +292,7 @@
           "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

@@ -131,19 +131,216 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "LAUNCHub Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "EBRD 项目页将 LAUNCHub Fund III 目标承诺规模列为 EUR 70m，并记载 EBRD 最多投资 EUR 10m；目标规模不是已募金额。LAUNCHub 官网对外联系页在当前采集环境返回了相同的轻量 HTML 壳，因此联系方式仅采用 EBRD 基金项目页公开列出的 Fund III 联系人与地址。融资数据库另将一条 2021 年 Fintech Global 报道关联到 2026-09-21、USD 28m 的 FintechOS 历史活动；该报道只确认 LAUNCHub 是既有投资人，不能支撑该日期、金额或具体轮次，本档案不将这些字段归因于 LAUNCHub。",
+      "summary": "LAUNCHub Ventures 是一家自 2012 年起投资中东欧及东南欧科技创业公司的早期风险投资机构，投资方向涵盖 AI/ML、SaaS、金融科技、房地产科技与机器人。EBRD 项目披露 LAUNCHub Fund III 目标募集 EUR 70m，并记载 EBRD 对该基金最高 EUR 10m 的股权投资项目；这是基金目标与 EBRD 项目承诺，不代表最终实缴或基金规模。SplxAI 于 2025 年宣布由 LAUNCHub 领投 USD 7m 种子轮，随后在 2025 年被 Zscaler 收购，是可核实的 AI 安全领域投资与退出案例。",
+      "facts": [
+        {
+          "field": "fund_strategy",
+          "label": "基金策略与投资区域",
+          "value": "EBRD 将 LAUNCHub Fund III 描述为投资中东欧、重点东南欧早期科技企业的股权基金。",
+          "source_id": "launchub_region"
+        },
+        {
+          "field": "fund_size_target",
+          "label": "Fund III 目标承诺规模",
+          "value": "EBRD 项目资料显示，LAUNCHub Fund III 目标募集 EUR 70m；该数值为目标承诺，不等同最终关闭规模。",
+          "source_id": "launchub_fund_size_target"
+        },
+        {
+          "field": "ebrd_commitment",
+          "label": "EBRD 对 Fund III 的投资",
+          "value": "EBRD 项目页记载其对 LAUNCHub Fund III 的股权投资最高为 EUR 10m，页面状态为已签署。",
+          "source_id": "launchub_ebrd_commitment"
+        },
+        {
+          "field": "fund_status",
+          "label": "Fund III 项目状态",
+          "value": "EBRD 项目页将 LAUNCHub Fund III 的项目状态列为 Signed。",
+          "source_id": "launchub_ebrd_status"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资行业",
+          "value": "SplxAI 融资公告中的 LAUNCHub 机构介绍列出 AI/ML、SaaS、金融科技、房地产科技与机器人等方向。",
+          "source_id": "launchub_focus"
+        },
+        {
+          "field": "operating_history",
+          "label": "机构历史",
+          "value": "SplxAI 融资公告中的 LAUNCHub 介绍称其自 2012 年起支持创业团队。",
+          "source_id": "launchub_history"
+        },
+        {
+          "field": "team_role_sirakov_2025",
+          "label": "团队公开职务（2025）",
+          "value": "SplxAI 2025 年融资公告称 Stan Sirakov 当时为 LAUNCHub General Partner，并加入 SplxAI 董事会；这是公告时点的任职信息。",
+          "source_id": "launchub_sirakov_role"
+        },
+        {
+          "field": "selected_exit_splx_date",
+          "label": "组合退出案例：SPLX",
+          "value": "Zscaler 公告日期为 2025-11-03。",
+          "source_id": "launchub_splx_acquisition_date"
+        },
+        {
+          "field": "selected_exit_splx",
+          "label": "组合退出案例：SPLX",
+          "value": "Zscaler 于 2025 年宣布收购 AI 安全公司 SPLX；该交易发生在 LAUNCHub 领投其种子轮之后。此为单一案例，不代表基金整体回报。",
+          "source_id": "launchub_splx_acquisition"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：FintechOS · 债务融资 · 2026-09-21 · 历史轮次参投 · $28M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资案例：SplxAI 于 2025-03-26 宣布完成 USD 7m 种子轮，由 LAUNCHub Ventures 领投。融资金额为公司整轮融资额，并非 LAUNCHub 单独出资额。",
+          "source_id": "launchub_splx_seed"
+        },
+        {
+          "description": "历史信息：Fintech Global 的 2021 年文章将 LAUNCHub Ventures 列为 FintechOS 某轮既有投资人。该来源只支持其历史参投关系；本库当前关联的 2026 日期、USD 28m 与轮次不由该来源证实。",
           "source_id": "FISRC-39755042b7f329d6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "LAUNCHub 官网",
+          "value": "https://launchub.com/",
+          "url": "https://launchub.com/",
+          "source_id": "launchub_website"
+        },
+        {
+          "kind": "email",
+          "label": "EBRD 项目页列示的 Fund III 联系邮箱（Irina Dimitrova）",
+          "value": "irina@launchub.com",
+          "source_id": "launchub_ebrd_email"
+        },
+        {
+          "kind": "phone",
+          "label": "EBRD 项目页列示的 Fund III 联系电话（Irina Dimitrova）",
+          "value": "+359896731317",
+          "source_id": "launchub_ebrd_phone"
+        },
+        {
+          "kind": "address",
+          "label": "索非亚办公室（EBRD 项目资料）",
+          "value": "Sofia Center, Tsar Osvoboditel Blvd 21, 1504 Sofia, Bulgaria",
+          "source_id": "launchub_ebrd_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "launchub_fund_size_target",
+          "source_url": "https://www.ebrd.com/home/work-with-us/projects/psd/56843.html",
+          "source_title": "LAUNCHub III fund investment — EBRD",
+          "source_content_hash": "978cbe7460e0aec3d93d97abebae5f16503ba20c4d49bfaf812836b0a0ceb6f5",
+          "quote": "targeting to raise EUR 70 million in total commitments",
+          "quote_hash": "43be2616189743ea823384b62f04ba873b4dd7d27b72814aaa0145b93494cfcc"
+        },
+        {
+          "source_id": "launchub_ebrd_commitment",
+          "source_url": "https://www.ebrd.com/home/work-with-us/projects/psd/56843.html",
+          "source_title": "LAUNCHub III fund investment — EBRD",
+          "source_content_hash": "978cbe7460e0aec3d93d97abebae5f16503ba20c4d49bfaf812836b0a0ceb6f5",
+          "quote": "An equity investment of up to EUR 10 million in LAUNCHub Fund III",
+          "quote_hash": "789515ce737d9e4f515a3af140597103d7e86491b15eea473ad76ed898098ac1"
+        },
+        {
+          "source_id": "launchub_ebrd_status",
+          "source_url": "https://www.ebrd.com/home/work-with-us/projects/psd/56843.html",
+          "source_title": "LAUNCHub III fund investment — EBRD",
+          "source_content_hash": "978cbe7460e0aec3d93d97abebae5f16503ba20c4d49bfaf812836b0a0ceb6f5",
+          "quote": "Status Signed",
+          "quote_hash": "c90aa16a858a77a7acdc804e16cc31082fa692fa2f7171d89c3b9df6cbd61a44"
+        },
+        {
+          "source_id": "launchub_region",
+          "source_url": "https://www.ebrd.com/home/work-with-us/projects/psd/56843.html",
+          "source_title": "LAUNCHub III fund investment — EBRD",
+          "source_content_hash": "978cbe7460e0aec3d93d97abebae5f16503ba20c4d49bfaf812836b0a0ceb6f5",
+          "quote": "early-stage technology-driven businesses primarily in Central and Eastern Europe, with the core focus on Southeastern Europe",
+          "quote_hash": "1c7608d69d907cc8f07553bf60d3ee0b84cbe5f452948dfb314da08ed0f63a7c"
+        },
+        {
+          "source_id": "launchub_ebrd_email",
+          "source_url": "https://www.ebrd.com/home/work-with-us/projects/psd/56843.html",
+          "source_title": "LAUNCHub III fund investment — EBRD",
+          "source_content_hash": "978cbe7460e0aec3d93d97abebae5f16503ba20c4d49bfaf812836b0a0ceb6f5",
+          "quote": "irina@launchub.com",
+          "quote_hash": "632b4f94502d47fdd0e0aabfff029421dc26e60d0a3a760d8fa755b92ca2a866"
+        },
+        {
+          "source_id": "launchub_ebrd_phone",
+          "source_url": "https://www.ebrd.com/home/work-with-us/projects/psd/56843.html",
+          "source_title": "LAUNCHub III fund investment — EBRD",
+          "source_content_hash": "978cbe7460e0aec3d93d97abebae5f16503ba20c4d49bfaf812836b0a0ceb6f5",
+          "quote": "+359896731317",
+          "quote_hash": "d9574c9751d1dafa3624e37091424a1041f3b50de87d42c98178a89c43c2737c"
+        },
+        {
+          "source_id": "launchub_ebrd_address",
+          "source_url": "https://www.ebrd.com/home/work-with-us/projects/psd/56843.html",
+          "source_title": "LAUNCHub III fund investment — EBRD",
+          "source_content_hash": "978cbe7460e0aec3d93d97abebae5f16503ba20c4d49bfaf812836b0a0ceb6f5",
+          "quote": "Sofia Center, Tsar Osvoboditel Blvd 21, 1504 Sofia, Bulgaria",
+          "quote_hash": "6dfbb5ccc81df1632cf5603bc5a1186d22545ab5c0c6ddc0284ef363d8d0f62e"
+        },
+        {
+          "source_id": "launchub_website",
+          "source_url": "https://www.ebrd.com/home/work-with-us/projects/psd/56843.html",
+          "source_title": "LAUNCHub III fund investment — EBRD",
+          "source_content_hash": "978cbe7460e0aec3d93d97abebae5f16503ba20c4d49bfaf812836b0a0ceb6f5",
+          "quote": "https://launchub.com/",
+          "quote_hash": "973c6d727ca01ffc982d340af1935d7c8fb483fcdc5e7b010fd1f22978e7d0a7"
+        },
+        {
+          "source_id": "launchub_focus",
+          "source_url": "https://splx.ai/blog/splxai-closes-7m-seed-funding-round-to-help-organizations-secure-agentic-ai-systems",
+          "source_title": "SplxAI Closes $7M Seed Funding Round to Help Organizations Secure Agentic AI Systems",
+          "source_content_hash": "f92dc8ebb026107840d64c6947b650ad65d6ed95f817f725c1ea0b36f6bb59ea",
+          "quote": "Their focus spans AI/ML, SaaS, fintech, proptech, and robotics.",
+          "quote_hash": "b96a92825b7bc72faf425cef6faa044ba66d051c2a7256dcb834982cd629525b"
+        },
+        {
+          "source_id": "launchub_history",
+          "source_url": "https://splx.ai/blog/splxai-closes-7m-seed-funding-round-to-help-organizations-secure-agentic-ai-systems",
+          "source_title": "SplxAI Closes $7M Seed Funding Round to Help Organizations Secure Agentic AI Systems",
+          "source_content_hash": "f92dc8ebb026107840d64c6947b650ad65d6ed95f817f725c1ea0b36f6bb59ea",
+          "quote": "Since 2012, they have supported exceptional teams in building the next generation of game-changing companies.",
+          "quote_hash": "885c0d06f4d38bf50cc9730e28f047ce3f9c5f34d9f9f4a7b44d66fbcd182966"
+        },
+        {
+          "source_id": "launchub_splx_seed",
+          "source_url": "https://splx.ai/blog/splxai-closes-7m-seed-funding-round-to-help-organizations-secure-agentic-ai-systems",
+          "source_title": "SplxAI Closes $7M Seed Funding Round to Help Organizations Secure Agentic AI Systems",
+          "source_content_hash": "f92dc8ebb026107840d64c6947b650ad65d6ed95f817f725c1ea0b36f6bb59ea",
+          "quote": "closed $7M in seed funding led by LAUNCHub Ventures",
+          "quote_hash": "dec0a06359bdc7dab48ec2d2f63307b531dc6d95fbcbe22aae65625ff2fc4a72"
+        },
+        {
+          "source_id": "launchub_sirakov_role",
+          "source_url": "https://splx.ai/blog/splxai-closes-7m-seed-funding-round-to-help-organizations-secure-agentic-ai-systems",
+          "source_title": "SplxAI Closes $7M Seed Funding Round to Help Organizations Secure Agentic AI Systems",
+          "source_content_hash": "f92dc8ebb026107840d64c6947b650ad65d6ed95f817f725c1ea0b36f6bb59ea",
+          "quote": "LAUNCHub General Partner Stan Sirakov is also joining the SplxAI Board of Directors",
+          "quote_hash": "d480acf629aae6bb1dcb4cc288a205eed5f0b4550561883be9ce382acfe22034"
+        },
+        {
+          "source_id": "launchub_splx_acquisition_date",
+          "source_url": "https://www.zscaler.com/press/zscaler-secures-enterprise-ai-lifecycle-acquisition-innovative-ai-security-pioneer-splx",
+          "source_title": "Zscaler Secures The Enterprise AI Lifecycle With Acquisition of Innovative AI Security Pioneer SPLX",
+          "source_content_hash": "90c951799ed4094c99e872243970eac5ce6bf406d55701a535d94fcb568f54db",
+          "quote": "San Jose, California, November 03, 2025",
+          "quote_hash": "9159f51d29fe8cbcd5453b5f91d2ad0dd11e776641258e606ddea7c5ac454e59"
+        },
+        {
+          "source_id": "launchub_splx_acquisition",
+          "source_url": "https://www.zscaler.com/press/zscaler-secures-enterprise-ai-lifecycle-acquisition-innovative-ai-security-pioneer-splx",
+          "source_title": "Zscaler Secures The Enterprise AI Lifecycle With Acquisition of Innovative AI Security Pioneer SPLX",
+          "source_content_hash": "90c951799ed4094c99e872243970eac5ce6bf406d55701a535d94fcb568f54db",
+          "quote": "announced it has acquired innovative AI security pioneer SPLX",
+          "quote_hash": "3ce3932fda27a731d0b14e1ec450b61c3e7527bd8471dd26f6b61599fc5cbaa3"
+        },
         {
           "source_id": "FISRC-39755042b7f329d6",
           "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -153,7 +350,7 @@
           "quote_hash": "2ec5063fe68b5e7db534d2c70019f6756a6fac8bcefc74abbb6b119d713ef81d"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
