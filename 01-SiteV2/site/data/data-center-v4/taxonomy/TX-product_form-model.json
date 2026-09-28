@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -213,6 +213,8 @@
       "EV-2ffc3377977da114",
       "EV-2fd730d0ad452334",
       "EV-fd21441fb6e143c3",
+      "EV-857d7186b873e0ed",
+      "EV-ca32d5e2f28622ef",
       "EV-293d6feac5b8efab",
       "EV-8ca7036c405028d4",
       "EV-c45b1098a3092e03",
@@ -541,6 +543,7 @@
       "EN-88e2cce43eeadb36",
       "EN-c890cfa67d1da908",
       "EN-7df09a7717ef2feb",
+      "EN-c608c4787821de1b",
       "EN-c5da36ead951ea76",
       "EN-9c8ae69b84f21a2e",
       "EN-bae152c4560df38c",
@@ -551,7 +554,6 @@
       "EN-69337578b2468a88",
       "EN-3a7bd3e2360a3d29",
       "EN-f01c4f48151c3468",
-      "EN-c608c4787821de1b",
       "EN-67734881da046ff9",
       "EN-572e31f55b6ac1b1",
       "EN-1a6d6ea981e8688c",
@@ -675,7 +677,7 @@
       "HW-19692cd9428f2e0f"
     ],
     "firstSeen": "2022-10-01",
-    "lastSeen": "2026-09-26"
+    "lastSeen": "2026-09-28"
   },
   "events": [
     {
@@ -42013,6 +42015,179 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-857d7186b873e0ed",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Nvidia 发布免费 100M 参数模型，可实时识别最多八位说话人",
+      "originalTitle": "Nvidia drops a free 100M-parameter model that identifies up to eight speakers in real time",
+      "subject": "Nvidia",
+      "action": "model_release",
+      "object": "Nemotron 3 Diarization",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-58b573f59fdbfa74"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Nemotron 3 Diarization"
+      ],
+      "productName": "Nemotron 3 Diarization",
+      "products": [
+        {
+          "name": "Nemotron 3 Diarization",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/nvidia-drops-a-free-100m-parameter-model-that-identifies-up-to-eight-speakers-in-real-time",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-ca32d5e2f28622ef",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "小米 18 Pro 系列「传奇一瞬」功能详解：端到端影像大模型，原片可云端无损处理",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "小米 18 Pro 系列「传奇一瞬」功能详解：端到端影像大模型，原片可云端无损处理",
+      "metrics": [
+        "2 亿",
+        "数百万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c608c4787821de1b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c608c4787821de1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c608c4787821de1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "Xiaomi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/474.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-293d6feac5b8efab",
       "dataDate": "2026-09-26",
       "date": "2026-09-24",
@@ -42395,7 +42570,7 @@
           "name": "Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
@@ -47623,9 +47798,7 @@
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/993/426.htm",
@@ -57563,9 +57736,7 @@
         {
           "name": "Ode",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ode.com/press/anthropic-blackstone-and-hellman-friedman-introduce-ode-with-anthropic-an-enterprise-ai-services-firm",
@@ -59517,7 +59688,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -59825,14 +59996,14 @@
           "name": "Mythos-like",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         },
         {
           "name": "Asian AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         }
       ],
@@ -61168,9 +61339,7 @@
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/966/453.htm",
@@ -61259,7 +61428,7 @@
           "name": "Fable",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -61940,14 +62109,14 @@
           "name": "Claude Fable 5",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Fusion API",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -63375,23 +63544,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Fable 5 and Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science",
@@ -70098,6 +70261,7 @@
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
         "EV-8061c8eb754e0542",
+        "EV-857d7186b873e0ed",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-01eaadc83f55095a",
@@ -70339,7 +70503,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-7dd2a89f628d7525",
@@ -70739,6 +70903,10 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-2a5803953f698f4c",
+        "EV-0eea367f43810ec7",
+        "EV-9ebb69d4965d1f23",
+        "EV-4a963531f57c551a",
         "EV-0184e5d203d05229",
         "EV-813ced5e5514d81b",
         "EV-bc025a501363e4f3",
@@ -70924,7 +71092,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-d4ae6a7547092a6f",
@@ -72338,7 +72506,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-03",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-bcfc3b314fa4ede5",
@@ -73454,6 +73622,7 @@
         "EV-d5c00f302e1f808c",
         "EV-538adc98d1da8fda",
         "EV-d209a6acecba4285",
+        "EV-defd9eb250a2b925",
         "EV-09172b686d2b49de",
         "EV-20e076804a3000b4",
         "EV-8c1a2dbbb8635298",
@@ -73496,7 +73665,7 @@
         "EN-d84c1d1c315bc2f8"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-23929c7dca3eb576",
@@ -73730,6 +73899,62 @@
       ],
       "firstSeen": "2026-06-20",
       "lastSeen": "2026-07-29"
+    },
+    {
+      "id": "EN-c608c4787821de1b",
+      "name": "Xiaomi",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [
+        "小米"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-52bafa1f7edd3231",
+        "EV-be59d9048dd1b6a0",
+        "EV-5bec025c9fd9ff0d",
+        "EV-5071c68b40000d34",
+        "EV-f341178bd64e6ede",
+        "EV-d80c43b35418e74d",
+        "EV-53f08daddd011dbb",
+        "EV-ca32d5e2f28622ef",
+        "EV-293d6feac5b8efab",
+        "EV-ba1b3b0b1dbb96d0",
+        "EV-952a95bff6b05d4f",
+        "EV-5d0f3f6556749dc5",
+        "EV-e5f13798813adfbf",
+        "EV-58df7e344df0f7fe",
+        "EV-2954a6f0220f5b18",
+        "EV-5793770e51604ada",
+        "EV-68897f26c8d956df",
+        "EV-96198b8644eb94d9",
+        "EV-3353bd96728c99e2",
+        "EV-8a9b12665a3e40a0",
+        "EV-28145c97a7237d6d",
+        "EV-c6629f97e4bb1aa8",
+        "EV-564f3df8d487ca6f",
+        "EV-634ce5b42f6d32f6",
+        "EV-f5dd192f6d4e04a3",
+        "EV-3aefbdfa5df2fd6a",
+        "EV-8692dfde7c3ef5b5",
+        "EV-86537be17d50ff20",
+        "EV-dd902b603e2e3dbc"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-model",
+        "TX-technology-code_generation",
+        "TX-technology-speech_audio"
+      ],
+      "relatedEntityIds": [
+        "EN-101a515191c6be9e",
+        "EN-ddf9916b459b6d77"
+      ],
+      "firstSeen": "2026-01-01",
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-c5da36ead951ea76",
@@ -73992,8 +74217,10 @@
         "EV-afcd5426f5c01dc7",
         "EV-f5a50f1fed72fec3",
         "EV-d116b0aa5bb292e2",
+        "EV-defd9eb250a2b925",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-06c2f2803729eae2",
         "EV-f114a151829de349",
         "EV-a1c1e9084f310dba",
         "EV-cee1833a40bc2879",
@@ -74115,7 +74342,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-f01c4f48151c3468",
@@ -74137,61 +74364,6 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-09-13",
       "lastSeen": "2026-09-13"
-    },
-    {
-      "id": "EN-c608c4787821de1b",
-      "name": "Xiaomi",
-      "entityType": "organization_candidate",
-      "typeLabel": "公司与机构",
-      "aliases": [
-        "小米"
-      ],
-      "verificationStatus": "verified",
-      "datasetScopes": [
-        "canonical"
-      ],
-      "eventIds": [
-        "EV-52bafa1f7edd3231",
-        "EV-be59d9048dd1b6a0",
-        "EV-5bec025c9fd9ff0d",
-        "EV-5071c68b40000d34",
-        "EV-f341178bd64e6ede",
-        "EV-d80c43b35418e74d",
-        "EV-53f08daddd011dbb",
-        "EV-293d6feac5b8efab",
-        "EV-ba1b3b0b1dbb96d0",
-        "EV-952a95bff6b05d4f",
-        "EV-5d0f3f6556749dc5",
-        "EV-e5f13798813adfbf",
-        "EV-58df7e344df0f7fe",
-        "EV-2954a6f0220f5b18",
-        "EV-5793770e51604ada",
-        "EV-68897f26c8d956df",
-        "EV-96198b8644eb94d9",
-        "EV-3353bd96728c99e2",
-        "EV-8a9b12665a3e40a0",
-        "EV-28145c97a7237d6d",
-        "EV-c6629f97e4bb1aa8",
-        "EV-564f3df8d487ca6f",
-        "EV-634ce5b42f6d32f6",
-        "EV-f5dd192f6d4e04a3",
-        "EV-3aefbdfa5df2fd6a",
-        "EV-8692dfde7c3ef5b5",
-        "EV-86537be17d50ff20",
-        "EV-dd902b603e2e3dbc"
-      ],
-      "viewpointIds": [],
-      "classificationRefs": [
-        "TX-product_form-model",
-        "TX-technology-code_generation",
-        "TX-technology-speech_audio"
-      ],
-      "relatedEntityIds": [
-        "EN-101a515191c6be9e",
-        "EN-ddf9916b459b6d77"
-      ],
-      "firstSeen": "2026-01-01",
-      "lastSeen": "2026-09-26"
     },
     {
       "id": "EN-67734881da046ff9",
@@ -74357,6 +74529,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-defd9eb250a2b925",
         "EV-09172b686d2b49de",
         "EV-bbb3ed2040b40e3f",
         "EV-20e076804a3000b4",
@@ -74661,10 +74834,12 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2a5803953f698f4c",
         "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
+        "EV-9e5e72473b5025b4",
         "EV-5bd4ad184627c301",
         "EV-fd18ed4c81ae1791",
         "EV-054a8623f9abdbb7",
@@ -74830,10 +75005,10 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-968e2d5b08687bf4",
         "EN-d1ad14d4ad57d207",
         "EN-6a50fbf0b970c03a",
-        "EN-3a7bd3e2360a3d29",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
@@ -74857,7 +75032,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-ec31d2be1b244616",
@@ -75167,6 +75342,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-2a5803953f698f4c",
         "EV-5b593a87f47334f9",
         "EV-36defc1d19f0ce5d",
         "EV-808c496734dae101",
@@ -75266,7 +75442,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-cbdc46f896784f98",
@@ -75582,6 +75758,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-bd05f8cee4043426",
         "EV-2470b13ea55496d0",
         "EV-66f24f6db71cc011",
         "EV-40d4ce6d936d4d49",
@@ -75749,7 +75926,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-b93006774cbdd4b2",
@@ -77519,6 +77696,7 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
+        "EV-defd9eb250a2b925",
         "EV-8321e5cd7d423d62",
         "EV-decbf1a34be68603",
         "EV-6272444f30281858",
@@ -77686,7 +77864,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-c3961295b7b3da96",

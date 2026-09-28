@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -53,6 +53,31 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-59587a82f0b820bc",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-7d3194f79e645c42",
+      "object_type": "entity",
+      "event_id": "EV-defd9eb250a2b925",
+      "claim_refs": [
+        "CL-f39ed204c2fef275"
+      ],
+      "source_refs": [
+        "SA-e6afad8c32a04071"
+      ],
+      "data_date": "2026-09-28",
+      "status": "verified",
+      "subjectName": "Apple",
+      "objectName": "OpenAI",
+      "predicateLabel": "合作",
+      "title": "Apple 合作 OpenAI",
+      "eventTitle": "派早报：OpenAI 称与苹果合作效果不佳",
+      "eventDate": "2026-09-28",
+      "sourceCount": 1
+    },
     {
       "relationship_id": "REL2-6460871b6d621283",
       "relationship_version": "RELATION-V2.1",

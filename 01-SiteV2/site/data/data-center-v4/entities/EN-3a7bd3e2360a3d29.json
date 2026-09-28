@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -79,8 +79,10 @@
       "EV-afcd5426f5c01dc7",
       "EV-f5a50f1fed72fec3",
       "EV-d116b0aa5bb292e2",
+      "EV-defd9eb250a2b925",
       "EV-e857f9d1c1478c70",
       "EV-fd21441fb6e143c3",
+      "EV-06c2f2803729eae2",
       "EV-f114a151829de349",
       "EV-a1c1e9084f310dba",
       "EV-cee1833a40bc2879",
@@ -202,8 +204,9 @@
       "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-03-12",
-    "lastSeen": "2026-09-26",
+    "lastSeen": "2026-09-28",
     "relationIds": [
+      "REL2-59587a82f0b820bc",
       "REL2-a3bd8b736cbfac80",
       "REL2-2c82bf25c532a4e1",
       "REL2-328522f06ece8143",
@@ -241,10 +244,12 @@
         "EV-d116b0aa5bb292e2"
       ],
       "partnerships": [
+        "EV-defd9eb250a2b925",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3"
       ],
       "productsServices": [
+        "EV-06c2f2803729eae2",
         "EV-f114a151829de349",
         "EV-a1c1e9084f310dba",
         "EV-cee1833a40bc2879",
@@ -354,6 +359,64 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-defd9eb250a2b925",
+        "dataDate": "2026-09-28",
+        "date": "2026-09-28",
+        "eventType": "partnership",
+        "eventTypeLabel": "合作",
+        "eventGroup": "商业合作",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "派早报：OpenAI 称与苹果合作效果不佳",
+        "displayTags": [],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29",
+          "EN-968e2d5b08687bf4",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
+      {
+        "id": "EV-06c2f2803729eae2",
+        "dataDate": "2026-09-28",
+        "date": "2026-09-28",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "前苹果 Siri 工程师推出 AI 智能体 szn，可在 iMessage 中与用户互动",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-5e668f42eb6cf15d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-5e668f42eb6cf15d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-5e668f42eb6cf15d",
+          "EN-3a7bd3e2360a3d29"
+        ]
+      },
       {
         "id": "EV-545bef6ff60cf3b2",
         "dataDate": "2026-09-26",
@@ -3317,6 +3380,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-defd9eb250a2b925",
         "EV-09172b686d2b49de",
         "EV-bbb3ed2040b40e3f",
         "EV-20e076804a3000b4",
@@ -3621,10 +3685,12 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2a5803953f698f4c",
         "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
+        "EV-9e5e72473b5025b4",
         "EV-5bd4ad184627c301",
         "EV-fd18ed4c81ae1791",
         "EV-054a8623f9abdbb7",
@@ -3790,10 +3856,10 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-968e2d5b08687bf4",
         "EN-d1ad14d4ad57d207",
         "EN-6a50fbf0b970c03a",
-        "EN-3a7bd3e2360a3d29",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
@@ -3817,7 +3883,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-e463d05a14e8697f",
@@ -3998,6 +4064,24 @@
     }
   ],
   "relationships": [
+    {
+      "relationship_id": "REL2-59587a82f0b820bc",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-3a7bd3e2360a3d29",
+      "subject_type": "entity",
+      "predicate": "partners_with",
+      "object_ref": "EN-7d3194f79e645c42",
+      "object_type": "entity",
+      "event_id": "EV-defd9eb250a2b925",
+      "claim_refs": [
+        "CL-f39ed204c2fef275"
+      ],
+      "source_refs": [
+        "SA-e6afad8c32a04071"
+      ],
+      "data_date": "2026-09-28",
+      "status": "verified"
+    },
     {
       "relationship_id": "REL2-a3bd8b736cbfac80",
       "relationship_version": "RELATION-V2.1",
@@ -4448,6 +4532,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-857d7186b873e0ed",
+        "EV-ca32d5e2f28622ef",
         "EV-293d6feac5b8efab",
         "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
@@ -4776,6 +4862,7 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
         "EN-c5da36ead951ea76",
         "EN-9c8ae69b84f21a2e",
         "EN-bae152c4560df38c",
@@ -4786,7 +4873,6 @@
         "EN-69337578b2468a88",
         "EN-3a7bd3e2360a3d29",
         "EN-f01c4f48151c3468",
-        "EN-c608c4787821de1b",
         "EN-67734881da046ff9",
         "EN-572e31f55b6ac1b1",
         "EN-1a6d6ea981e8688c",
@@ -4910,7 +4996,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -5151,6 +5237,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-06c2f2803729eae2",
         "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
@@ -5704,6 +5791,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-5e668f42eb6cf15d",
         "EN-f9768e4769ec9d14",
         "EN-0ed9e4984f0e77cf",
         "EN-c70eca6b0f88f44d",

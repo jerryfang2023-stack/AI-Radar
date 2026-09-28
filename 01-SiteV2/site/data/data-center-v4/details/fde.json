@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -11455,6 +11455,52 @@
     }
   ],
   "events": [
+    {
+      "id": "EV-bd05f8cee4043426",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
+      "eventType": "acquisition",
+      "eventTypeLabel": "并购",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "2026 年 LLM 进展（截至目前）",
+      "originalTitle": "2026 in LLMs (so far)",
+      "subject": "Facebook/Meta",
+      "action": "acquisition",
+      "object": "MoltBook",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-0975d00d40c6329e",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "Facebook/Meta",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far",
+      "publisher": "Simon Willison's Blog"
+    },
     {
       "id": "EV-95ba9cc4f4d52ea4",
       "dataDate": "2026-09-26",
@@ -46235,9 +46281,9 @@
     },
     {
       "id": "EV-81bbaaec2965864a",
-      "dataDate": "2026-09-26",
+      "dataDate": "2026-09-28",
       "date": "2026-09-02",
-      "updatedDate": "2026-09-26",
+      "updatedDate": "2026-09-28",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -228725,9 +228771,7 @@
         {
           "name": "限时免费额度重置",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/007/256.htm",
@@ -228782,9 +228826,9 @@
     },
     {
       "id": "EV-7d186033b26431e7",
-      "dataDate": "2026-09-26",
+      "dataDate": "2026-09-28",
       "date": "2026-09-25",
-      "updatedDate": "2026-09-26",
+      "updatedDate": "2026-09-28",
       "eventType": "procurement_contract",
       "eventTypeLabel": "采购合同",
       "eventGroup": "商业合作",
@@ -231561,16 +231605,12 @@
         {
           "name": "构建 AI 原生营收组织",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude across a sales organization",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/building-an-ai-native-revenue-organization",
@@ -256855,6 +256895,60 @@
       "publisher": "fedscoop.com"
     },
     {
+      "id": "EV-defd9eb250a2b925",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
+      "eventType": "partnership",
+      "eventTypeLabel": "合作",
+      "eventGroup": "商业合作",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "partial",
+      "title": "派早报：OpenAI 称与苹果合作效果不佳",
+      "originalTitle": "",
+      "subject": "派早报：OpenAI 称与苹果",
+      "action": "合作",
+      "object": "效果不佳",
+      "metrics": [],
+      "locations": [
+        "韩国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-478676438ee161a3",
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29",
+        "EN-968e2d5b08687bf4",
+        "EN-9fbf261b62c1d7c0"
+      ],
+      "entityNames": [
+        "派早报",
+        "OpenAI",
+        "Apple",
+        "Samsung",
+        "Microsoft"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://sspai.com/post/115079",
+      "publisher": "少数派"
+    },
+    {
       "id": "EV-ceae771867a66bb5",
       "dataDate": "2026-09-21",
       "date": "2026-09-20",
@@ -272365,9 +272459,9 @@
     },
     {
       "id": "EV-03992c9b7f8fef10",
-      "dataDate": "2026-09-26",
-      "date": "2026-09-26",
-      "updatedDate": "2026-09-26",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -272418,10 +272512,126 @@
       "publisher": "procurementsciences.com"
     },
     {
+      "id": "EV-06c2f2803729eae2",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前苹果 Siri 工程师推出 AI 智能体 szn，可在 iMessage 中与用户互动",
+      "originalTitle": "",
+      "subject": "前苹果 Siri 工程师",
+      "action": "推出",
+      "object": "AI 智能体 szn，可在 iMessage 中与用户互动",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-5e668f42eb6cf15d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5e668f42eb6cf15d",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "前苹果 Siri 工程师",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/634.htm",
+      "publisher": "IT之家"
+    },
+    {
       "id": "EV-8061c8eb754e0542",
-      "dataDate": "2026-09-26",
-      "date": "2026-09-26",
-      "updatedDate": "2026-09-26",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
       "eventType": "product_release",
       "eventTypeLabel": "产品发布",
       "eventGroup": "模型、产品与服务",
@@ -272474,6 +272684,462 @@
       ],
       "sourceUrl": "https://cloudera.com/products/enterprise-ai/ai/ai-inference-service.html",
       "publisher": "cloudera.com"
+    },
+    {
+      "id": "EV-857d7186b873e0ed",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Nvidia 发布免费 100M 参数模型，可实时识别最多八位说话人",
+      "originalTitle": "Nvidia drops a free 100M-parameter model that identifies up to eight speakers in real time",
+      "subject": "Nvidia",
+      "action": "model_release",
+      "object": "Nemotron 3 Diarization",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-58b573f59fdbfa74"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Nemotron 3 Diarization"
+      ],
+      "productName": "Nemotron 3 Diarization",
+      "products": [
+        {
+          "name": "Nemotron 3 Diarization",
+          "type": "模型",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/nvidia-drops-a-free-100m-parameter-model-that-identifies-up-to-eight-speakers-in-real-time",
+      "publisher": "The Decoder AI News"
+    },
+    {
+      "id": "EV-9d69b6d61dab2b9c",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "MiniMax 最新文本模型 M3.1-Flash-Preview 上线 MiniMax Code 平台，额度重置卡同步发出",
+      "originalTitle": "",
+      "subject": "MiniMax 最新文本模型 M3.1-Flash-Preview",
+      "action": "上线 MiniMax Code 平台",
+      "object": "，额度重置卡同步发出",
+      "metrics": [],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [
+          "cn-ithome-rss"
+        ],
+        "claim_refs": [
+          "CL-c4cb58fb2b03d5ad",
+          "CL-e7ce10f44f8c9a0f",
+          "CL-fda44203c7fa96e6",
+          "CL-58d900b2b7edffc9"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-e1517be14d06cdb7",
+        "EN-797de3f30dcb77cf"
+      ],
+      "entityNames": [
+        "MiniMax",
+        "M3.1-Flash-Preview"
+      ],
+      "productName": "M3.1-Flash-Preview",
+      "products": [
+        {
+          "name": "M3.1-Flash-Preview",
+          "type": "产品/服务",
+          "ownerNames": [
+            "MiniMax"
+          ]
+        }
+      ],
+      "sourceUrl": "https://ithome.com/1/007/530.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-ca32d5e2f28622ef",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "小米 18 Pro 系列「传奇一瞬」功能详解：端到端影像大模型，原片可云端无损处理",
+      "originalTitle": "",
+      "subject": "undisclosed_subject",
+      "action": "product_release",
+      "object": "小米 18 Pro 系列「传奇一瞬」功能详解：端到端影像大模型，原片可云端无损处理",
+      "metrics": [
+        "2 亿",
+        "数百万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-c608c4787821de1b"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c608c4787821de1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-c608c4787821de1b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-c608c4787821de1b"
+      ],
+      "entityNames": [
+        "Xiaomi"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/474.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-f66ca8648085ba70",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Engram 是一款采样器，可将破碎的 AI 幻觉转化为音乐",
+      "originalTitle": "Engram is a sampler that turns broken AI hallucinations into music",
+      "subject": "Thoughtful Things",
+      "action": "product_release",
+      "object": "Engram",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1a7db5538e1c926b",
+        "EN-8641e1ea6cf47044"
+      ],
+      "entityNames": [
+        "Thoughtful Things",
+        "Kickstarter campaign"
+      ],
+      "productName": "Kickstarter campaign",
+      "products": [
+        {
+          "name": "Kickstarter campaign",
+          "type": "产品/服务",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://theverge.com/ai-artificial-intelligence/1001193/engram-sampler-ai-hallucinations-music",
+      "publisher": "The Verge AI"
+    },
+    {
+      "id": "EV-2522985610878859",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-28",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "AI开始研究Physical AI：FSD级团队亮出首版模型Simate-beta，空降RoboDojo",
+      "originalTitle": "",
+      "subject": "Simate",
+      "action": "model_release",
+      "object": "Simate-beta",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-1207fe376d503842",
+        "EN-5feda8dc5f8803c9",
+        "EN-4cbf88b0da5d15f8"
+      ],
+      "entityNames": [
+        "Simate",
+        "Simate-beta",
+        "Physical AI"
+      ],
+      "productName": "Simate-beta",
+      "products": [
+        {
+          "name": "Simate-beta",
+          "type": "模型",
+          "ownerNames": []
+        },
+        {
+          "name": "Physical AI",
+          "type": "模型",
+          "ownerNames": []
+        }
+      ],
+      "sourceUrl": "https://qbitai.com/2026/09/498271.html",
+      "publisher": "量子位"
+    },
+    {
+      "id": "EV-74fa59bc868027b1",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-28",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "索辰科技加码世界模型，与战略投资企业美梦空间联合发布具身模型与物理测评标准",
+      "originalTitle": "",
+      "subject": "索辰科技加码世界模型，与战略投资企业美梦空间联合",
+      "action": "发布具身模型",
+      "object": "与物理测评标准",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f8ab0a6e49ab20ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f8ab0a6e49ab20ba"
+      ],
+      "entityNames": [
+        "战略投资企业美梦空间联合"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://qbitai.com/2026/09/498478.html",
+      "publisher": "量子位"
     },
     {
       "id": "EV-d675907ad59a707e",
@@ -272707,9 +273373,9 @@
     },
     {
       "id": "EV-1b912ec16c50fc0f",
-      "dataDate": "2026-09-26",
+      "dataDate": "2026-09-28",
       "date": "2026-09-24",
-      "updatedDate": "2026-09-26",
+      "updatedDate": "2026-09-28",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
@@ -273643,93 +274309,21 @@
       "publisher": "Claude Code：GitHub Releases（RSS）"
     },
     {
-      "id": "EV-09898d5522f0db28",
-      "dataDate": "2026-09-24",
-      "date": "2026-09-23",
-      "updatedDate": "2026-09-24",
-      "eventType": "model_release",
-      "eventTypeLabel": "模型发布",
-      "eventGroup": "模型、产品与服务",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "谷歌新 Flash TTS 模型让你通过文本描述从零设计 AI 语音",
-      "originalTitle": "Google's new Flash TTS models let you design AI voices from scratch using text descriptions",
-      "subject": "Google",
-      "action": "model_release",
-      "object": "Gemini 3.8 Flash TTS and Flash-Lite TTS",
-      "metrics": [],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [],
-      "displayTags": [],
-      "entityIds": [
-        "EN-bbdefa2950f49882",
-        "EN-57309e90afe96cfa",
-        "EN-c21a23e0b9afd6a8",
-        "EN-4e644fe2214cfbe6"
-      ],
-      "entityNames": [
-        "Google",
-        "Flash-Lite TTS",
-        "Gemini 3.8 Flash TTS",
-        "Flash TTS"
-      ],
-      "productName": "Flash-Lite TTS",
-      "products": [
-        {
-          "name": "Flash-Lite TTS",
-          "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
-        },
-        {
-          "name": "Gemini 3.8 Flash TTS",
-          "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
-        },
-        {
-          "name": "Flash TTS",
-          "type": "模型",
-          "ownerNames": [
-            "Google"
-          ]
-        }
-      ],
-      "sourceUrl": "https://the-decoder.com/googles-new-flash-tts-models-let-you-design-ai-voices-from-scratch-using-text-descriptions",
-      "publisher": "The Decoder AI News"
-    },
-    {
       "id": "EV-0d5a32aca724d30e",
-      "dataDate": "2026-09-24",
+      "dataDate": "2026-09-28",
       "date": "2026-09-23",
-      "updatedDate": "2026-09-24",
+      "updatedDate": "2026-09-28",
       "eventType": "model_release",
       "eventTypeLabel": "模型发布",
       "eventGroup": "模型、产品与服务",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Fireworks Research 发布 Ember-1，以更少推理 token 保持 Kimi K3 质量",
+      "title": "Fireworks Research 发布 Ember-1：以少 40% 的 token 达到 Kimi K3 同等质量",
       "originalTitle": "",
       "subject": "Fireworks Research",
-      "action": "发布 Ember-1，以更少推理 token 保持 Kimi K3",
-      "object": "质量",
+      "action": "发布 Ember-1：以少 40% 的 token 达到 Kimi K3",
+      "object": "同等质量",
       "metrics": [
         "40%"
       ],
@@ -273802,7 +274396,79 @@
         }
       ],
       "sourceUrl": "https://fireworks.ai/blog/ember-1",
-      "publisher": "Fireworks AI（网页）"
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
+    },
+    {
+      "id": "EV-09898d5522f0db28",
+      "dataDate": "2026-09-24",
+      "date": "2026-09-23",
+      "updatedDate": "2026-09-24",
+      "eventType": "model_release",
+      "eventTypeLabel": "模型发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "谷歌新 Flash TTS 模型让你通过文本描述从零设计 AI 语音",
+      "originalTitle": "Google's new Flash TTS models let you design AI voices from scratch using text descriptions",
+      "subject": "Google",
+      "action": "model_release",
+      "object": "Gemini 3.8 Flash TTS and Flash-Lite TTS",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bbdefa2950f49882",
+        "EN-57309e90afe96cfa",
+        "EN-c21a23e0b9afd6a8",
+        "EN-4e644fe2214cfbe6"
+      ],
+      "entityNames": [
+        "Google",
+        "Flash-Lite TTS",
+        "Gemini 3.8 Flash TTS",
+        "Flash TTS"
+      ],
+      "productName": "Flash-Lite TTS",
+      "products": [
+        {
+          "name": "Flash-Lite TTS",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Gemini 3.8 Flash TTS",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        },
+        {
+          "name": "Flash TTS",
+          "type": "模型",
+          "ownerNames": [
+            "Google"
+          ]
+        }
+      ],
+      "sourceUrl": "https://the-decoder.com/googles-new-flash-tts-models-let-you-design-ai-voices-from-scratch-using-text-descriptions",
+      "publisher": "The Decoder AI News"
     },
     {
       "id": "EV-1873f3c6fa4bdedd",
@@ -274413,7 +275079,7 @@
           "name": "Claude Opus 5.5",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -274473,7 +275139,7 @@
           "name": "Claude Marketplace",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -274930,7 +275596,9 @@
         {
           "name": "Win11 Clipchamp",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/1/006/371.htm",
@@ -275078,9 +275746,7 @@
         {
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/1/005/998.htm",
@@ -275276,7 +275942,7 @@
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -275548,7 +276214,7 @@
           "name": "Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
@@ -275664,23 +276330,17 @@
         {
           "name": "Claude Opus 5.5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Adaptive Reasoning",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Artificial Analysis",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://artificialanalysis.ai/models/claude-opus-5-5",
@@ -276051,7 +276711,7 @@
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -276259,9 +276919,7 @@
         {
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/claude-opus-5-5",
@@ -281125,9 +281783,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-keeps-pushing-claude-code-toward-autonomous-coding-with-new-parallel-agent-workflows",
@@ -281808,9 +282464,7 @@
         {
           "name": "Claude Chat",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-merges-claude-chat-cowork-and-more-into-a-single-product",
@@ -281862,9 +282516,7 @@
         {
           "name": "Claude Docs",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/996234/anthropic-one-claude-cowork-docs-slides",
@@ -281923,14 +282575,14 @@
           "name": "GitHub Copilot",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         },
         {
           "name": "GitHub Changelog",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -283132,9 +283784,7 @@
         {
           "name": "MarTech",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://martech.org/the-latest-ai-powered-martech-news-and-releases",
@@ -284812,16 +285462,12 @@
         {
           "name": "Claude for Financial Advisors",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/claude-for-financial-advisors",
@@ -286144,9 +286790,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/11/anthropic-adds-plugin-evals-to-claude-code-6-grader-types-a-no-plugin-baseline-and-a-ci-gate-for-skills",
@@ -289797,9 +290441,7 @@
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/reducing-cost-and-improving-performance-with-claude-platform",
@@ -290004,7 +290646,9 @@
         {
           "name": "Project Opal",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/797.htm",
@@ -291585,7 +292229,7 @@
           "name": "GPT-6 Astra",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Meta"
           ]
         }
       ],
@@ -292082,12 +292726,16 @@
         {
           "name": "WinUI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "WinUI 3",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/999/015.htm",
@@ -292508,7 +293156,9 @@
         {
           "name": "MAI-Image-2.6-Flash",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/747.htm",
@@ -292645,7 +293295,9 @@
         {
           "name": "Copilot Canvas AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/693.htm",
@@ -293196,7 +293848,9 @@
         {
           "name": "Win11 Pro",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/998/625.htm",
@@ -293370,7 +294024,9 @@
         {
           "name": "Project Zenith",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
@@ -294043,7 +294699,9 @@
         {
           "name": "Project Zenith",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://theverge.com/news/990051/microsoft-project-zenith-windows-developers",
@@ -294164,9 +294822,7 @@
         {
           "name": "Claude Commerce",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/03/anthropic-released-claude-commerce-agents-an-apache-2-0-blueprint-for-shopping-and-merchant-agents-across-retail-travel-telecom-and-entertainment",
@@ -295880,9 +296536,7 @@
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/check-content",
@@ -296617,9 +297271,7 @@
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/claude-for-commerce-agents",
@@ -296759,9 +297411,7 @@
         {
           "name": "Claude AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-opens-claude-ai-text-detection-to-regulators-media-fact-checkers-and-others",
@@ -297231,9 +297881,7 @@
         {
           "name": "Enterprise Frontier Safeguards",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/02/anthropic-enterprise-frontier-safeguards-efs",
@@ -297743,9 +298391,7 @@
         {
           "name": "Claude Fable 5.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
@@ -297801,16 +298447,12 @@
         {
           "name": "Claude Fable 5.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5.1",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/997/193.htm",
@@ -298251,9 +298893,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://bensbites.com/p/build-your-ideas",
@@ -298433,16 +299073,12 @@
         {
           "name": "Claude Fable 5.1",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5.1",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-claude-fable-5-1-promises-better-coding-and-research-at-up-to-45-percent-less",
@@ -298494,9 +299130,7 @@
         {
           "name": "Enterprise Frontier Safeguards",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/news/enterprise-frontier-safeguards",
@@ -298552,12 +299186,16 @@
         {
           "name": "AI Connections",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Procurement Gets New AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://govtech.com/biz/procurement-gets-new-ai-connections-via-civic-marketplace",
@@ -300133,9 +300771,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-claude-code-limit-change-is-a-raise-on-paper-but-a-cut-in-practice",
@@ -301767,9 +302403,7 @@
         {
           "name": "MHS",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/995/514.htm",
@@ -307656,9 +308290,7 @@
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/993/426.htm",
@@ -309601,16 +310233,12 @@
         {
           "name": "Claude Opus 4.6",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Opus 4.6",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/21/anthropics-opus-4-6-is-a-smut-machine",
@@ -309785,16 +310413,12 @@
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Security",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/08/21/anthropic-brings-claude-mythos-5-to-claude-security",
@@ -313706,9 +314330,7 @@
         {
           "name": "Model 2",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/991/074.htm",
@@ -314205,16 +314827,12 @@
         {
           "name": "Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "CI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/ai-ci-cd-on-call",
@@ -315288,7 +315906,9 @@
         {
           "name": "Copilot Notebooks",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/990/013.htm",
@@ -315512,23 +316132,17 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GitLab MR",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "GitLab merge request URL support",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
@@ -315885,21 +316499,21 @@
           "name": "Major Harness Upgrades",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "WRITER Makes Agentic AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Economically Sustainable",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -317010,7 +317624,9 @@
         {
           "name": "Clippy-like Mico",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://theverge.com/tech/979871/microsoft-copilot-mico-retired",
@@ -318124,7 +318740,7 @@
           "name": "Claude Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -318559,14 +319175,14 @@
           "name": "MAI Code 1.1",
           "type": "模型",
           "ownerNames": [
-            "DeepSeek"
+            "Microsoft"
           ]
         },
         {
           "name": "MAI Code 1.1 Flash",
           "type": "模型",
           "ownerNames": [
-            "DeepSeek"
+            "Microsoft"
           ]
         }
       ],
@@ -318626,7 +319242,7 @@
           "name": "Claude Code",
           "type": "产品/服务",
           "ownerNames": [
-            "European Union"
+            "Microsoft"
           ]
         }
       ],
@@ -323937,12 +324553,16 @@
         {
           "name": "Role",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://mlflow.org/articles/the-role-of-open-source-in-enterprise-ai-in-2026",
@@ -324810,9 +325430,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/987/256.htm",
@@ -325122,12 +325740,16 @@
         {
           "name": "Windows 10",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Windows 11",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/987/274.htm",
@@ -326516,9 +327138,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
@@ -329634,7 +330254,9 @@
         {
           "name": "MAI Realtime",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/985/297.htm",
@@ -330112,12 +330734,16 @@
         {
           "name": "InfoQ",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Agent Framework Harness",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://infoq.com/news/2026/08/agent-framework-harness-ga",
@@ -331878,21 +332504,21 @@
           "name": "CPG Clients",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
           "name": "Agency Partner Program",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
           "name": "AI Agents for Agency",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         }
       ],
@@ -334777,14 +335403,14 @@
           "name": "GitHub Copilot",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "Microsoft"
           ]
         },
         {
           "name": "Grok 4.5 AI",
           "type": "产品/服务",
           "ownerNames": [
-            "xAI"
+            "Microsoft"
           ]
         }
       ],
@@ -335519,7 +336145,9 @@
         {
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/28/microsoft-ai-releases-mai-cyber-1-flash-a-5b-active-parameter-cyber-model-that-pushes-mdash-to-95-95-on-cybergym",
@@ -336507,7 +337135,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -336598,9 +337226,7 @@
         {
           "name": "Cowork",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/277.htm",
@@ -336701,9 +337327,7 @@
         {
           "name": "CEO Dario Amodei",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/343.htm",
@@ -336794,7 +337418,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "模型",
           "ownerNames": [
-            "OpenAI"
+            "Microsoft"
           ]
         }
       ],
@@ -337377,7 +338001,7 @@
           "name": "MAI-Cyber-1-Flash",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -339606,16 +340230,12 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
@@ -339719,9 +340339,7 @@
         {
           "name": "Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/981/398.htm",
@@ -339780,14 +340398,14 @@
           "name": "Opus 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -340262,9 +340880,7 @@
         {
           "name": "Opus 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/07/24/anthropic-launches-opus-5",
@@ -341004,12 +341620,16 @@
         {
           "name": "Venice-X",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "EPYC Venice-X",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/871.htm",
@@ -341315,12 +341935,16 @@
         {
           "name": "MAI-Image-2.5-Pro",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "MAI-Voice-2-Flash",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/980/899.htm",
@@ -341782,14 +342406,14 @@
           "name": "Helios AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Helios",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -343500,23 +344124,17 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Security",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Security plugin",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/22/anthropic-releases-claude-security-plugin-for-claude-code-in-beta-a-multi-agent-vulnerability-scanner-that-runs-in-your-terminal",
@@ -344491,9 +345109,7 @@
         {
           "name": "Economic Index",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/news/anthropic-economic-index-connector",
@@ -345439,12 +346055,16 @@
         {
           "name": "Win11 RP",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Copilot",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/968.htm",
@@ -347945,23 +348565,17 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Fireside Chat",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://simonwillison.net/2026/Jul/21/cat-and-thariq",
@@ -349061,7 +349675,9 @@
         {
           "name": "Copilot AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/979/297.htm",
@@ -353007,7 +353623,7 @@
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -353285,21 +353901,21 @@
           "name": "Surface Laptop Ultra",
           "type": "产品/服务",
           "ownerNames": [
-            "Apple"
+            "Microsoft"
           ]
         },
         {
           "name": "N1X",
           "type": "产品/服务",
           "ownerNames": [
-            "Apple"
+            "Microsoft"
           ]
         },
         {
           "name": "Cinebench 2026",
           "type": "产品/服务",
           "ownerNames": [
-            "Apple"
+            "Microsoft"
           ]
         }
       ],
@@ -355077,16 +355693,12 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "EndConversation",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
@@ -356697,9 +357309,7 @@
         {
           "name": "Claude Code v2.1.212",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
@@ -358200,7 +358810,7 @@
           "name": "Visual Studio Code 1.129",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -359408,9 +360018,7 @@
         {
           "name": "Ode",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ode.com/press/anthropic-blackstone-and-hellman-friedman-introduce-ode-with-anthropic-an-enterprise-ai-services-firm",
@@ -361668,16 +362276,12 @@
         {
           "name": "Claude for Teachers",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/976/791.htm",
@@ -362273,16 +362877,12 @@
         {
           "name": "Claude for Teachers",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/news/claude-for-teachers",
@@ -363291,9 +363891,7 @@
         {
           "name": "Claude Code v2.1.208",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.208",
@@ -366353,9 +366951,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/975/469.htm",
@@ -366617,7 +367213,9 @@
         {
           "name": "Marketplace",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://stactize.com/artikel/what-is-microsoft-marketplace",
@@ -370348,7 +370946,7 @@
           "name": "Foundry",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "Microsoft"
           ]
         }
       ],
@@ -371697,9 +372295,7 @@
         {
           "name": "Claude Cowork",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/961978/anthropic-claude-cowork-mobile-web",
@@ -372604,7 +373200,9 @@
         {
           "name": "Maia 200",
           "type": "AI 硬件",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/01/26/microsoft-announces-powerful-new-chip-for-ai-inference",
@@ -372704,9 +373302,7 @@
         {
           "name": "Claude Code v2.1.202",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.202",
@@ -372914,16 +373510,12 @@
         {
           "name": "OpenScience",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "AI workbench",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/05/synthetic-sciences-releases-openscience-an-open-source-model-agnostic-ai-workbench-for-machine-learning-biology-physics-and-chemistry-research",
@@ -373612,9 +374204,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/open-source-tool-pxpipe-hides-text-in-pngs-to-cut-claude-code-and-fable-5-token-costs-up-to-70",
@@ -373704,9 +374294,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/07/04/anthropic-launches-claude-science-beta",
@@ -374474,14 +375062,14 @@
           "name": "Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Cowork on Monday",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -374600,7 +375188,7 @@
           "name": "AutoPilot",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Microsoft"
           ]
         }
       ],
@@ -374824,9 +375412,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/477.htm",
@@ -375821,9 +376407,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development",
@@ -376048,9 +376632,7 @@
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/242.htm",
@@ -376178,9 +376760,7 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/972/110.htm",
@@ -376330,9 +376910,7 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/claude-managed-agents",
@@ -377221,23 +377799,17 @@
         {
           "name": "MCP Connector",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "MCP Connector for",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/customers/smartsheet",
@@ -377333,9 +377905,7 @@
         {
           "name": "Claude Code v2.1.198",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.198",
@@ -377607,9 +378177,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/claude-sonnet-5-continues-anthropics-pattern-of-hiding-price-increases-behind-unchanged-token-rates",
@@ -377983,9 +378551,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/971/118.htm",
@@ -378265,9 +378831,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-launches-claude-science-an-ai-workspace-built-specifically-for-researchers",
@@ -378357,16 +378921,12 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Science on Tuesday",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/30/anthropics-claude-science-bets-on-workflow-not-a-new-model-to-win-over-scientists",
@@ -378418,9 +378978,7 @@
         {
           "name": "Claude Science",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/product/claude-science",
@@ -378668,9 +379226,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series",
@@ -379325,7 +379881,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google"
           ]
         }
       ],
@@ -379609,9 +380165,7 @@
         {
           "name": "Claude Sonnet 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/970/809.htm",
@@ -380127,7 +380681,7 @@
           "name": "Claude",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "NVIDIA"
           ]
         }
       ],
@@ -380354,21 +380908,21 @@
           "name": "Sapphire",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         },
         {
           "name": "News",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         },
         {
           "name": "Autonomous Enterprise",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -380575,12 +381129,16 @@
         {
           "name": "Learn",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Visual Studio 2026",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://learn.microsoft.com/en-us/visualstudio/releases/2026/release-notes",
@@ -381113,14 +381671,14 @@
           "name": "Mythos-like",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         },
         {
           "name": "Asian AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Sakana AI"
           ]
         }
       ],
@@ -381270,9 +381828,7 @@
         {
           "name": "Mythos",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies",
@@ -382069,7 +382625,7 @@
           "name": "Akrites",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -382177,14 +382733,14 @@
           "name": "Claude Code v2.1.193",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         },
         {
           "name": "autoMode.classifyAllShell setting",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         }
       ],
@@ -382761,16 +383317,12 @@
         {
           "name": "Claude Cowork",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "SaaS Workflows",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://perplexityaimagazine.com/expert-insights/ai-agents-replacing-saas-workflows",
@@ -382822,9 +383374,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/building-effective-human-agent-teams",
@@ -384040,7 +384590,7 @@
           "name": "Claude Tag",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         }
       ],
@@ -384237,9 +384787,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/968/043.htm",
@@ -384629,9 +385177,7 @@
         {
           "name": "Claude Tag",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time",
@@ -384739,9 +385285,7 @@
         {
           "name": "Claude Code v2.1.187",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
@@ -386036,7 +386580,7 @@
           "name": "Foundry",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         }
       ],
@@ -386171,9 +386715,7 @@
         {
           "name": "Claude Code v2.1.186",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.186",
@@ -389478,7 +390020,7 @@
           "name": "Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Amazon"
           ]
         }
       ],
@@ -389623,9 +390165,7 @@
         {
           "name": "GLM-5.2",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/966/453.htm",
@@ -389908,7 +390448,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Thinking Machines Lab"
           ]
         }
       ],
@@ -390040,7 +390580,7 @@
           "name": "Fable",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -391418,7 +391958,7 @@
           "name": "Claude Code v2.1.181",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Apple"
           ]
         }
       ],
@@ -391718,7 +392258,9 @@
         {
           "name": "Marketplace",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://learn.microsoft.com/en-us/partner-center/marketplace-offers/artificial-intelligence-app-agent-publish-release",
@@ -392103,9 +392645,7 @@
         {
           "name": "Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/428.htm",
@@ -392511,16 +393051,12 @@
         {
           "name": "Claude for Small Business",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Wednesday the launch of Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/05/13/anthropic-courts-a-new-kind-of-customer-small-business-owners",
@@ -393709,14 +394245,14 @@
           "name": "Claude Fable 5",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         },
         {
           "name": "Fusion API",
           "type": "模型",
           "ownerNames": [
-            "Anthropic"
+            "OpenAI"
           ]
         }
       ],
@@ -394146,14 +394682,14 @@
           "name": "Mythos AI",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         },
         {
           "name": "Mythos",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Intel"
           ]
         }
       ],
@@ -394652,7 +395188,7 @@
           "name": "Intelligent Terminal",
           "type": "产品/服务",
           "ownerNames": [
-            "Intel"
+            "Microsoft"
           ]
         }
       ],
@@ -395360,7 +395896,9 @@
         {
           "name": "Artemis",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://kore.ai/news/kore-ai-launches-artemis-the-new-generation-of-the-kore-ai-agent-platform-for-building-governing-and-optimizing-enterprise-ai",
@@ -396820,16 +397358,12 @@
         {
           "name": "Claude Code v2.1.176",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "footerLinksRegexes setting",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
@@ -397419,16 +397953,12 @@
         {
           "name": "Claude Code v2.1.174",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "wheelScrollAccelerationEnabled setting",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
@@ -397622,7 +398152,7 @@
           "name": "Chrome",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         }
       ],
@@ -399748,9 +400278,7 @@
         {
           "name": "ClaudeFable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/705.htm",
@@ -400131,23 +400659,17 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/10/anthropic-releases-claude-fable-5-and-claude-mythos-5-same-underlying-model-different-safeguards-new-mythos-class-tier",
@@ -400199,9 +400721,7 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/claude-fable-5-the-first-mythos-model-is-powerful-expensive-and-heavily-filtered",
@@ -400747,9 +401267,7 @@
         {
           "name": "Claude Code v2.1.170",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.170",
@@ -401022,23 +401540,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/962/152.htm",
@@ -401092,9 +401604,7 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/whats-new-in-claude-managed-agents",
@@ -401220,23 +401730,17 @@
         {
           "name": "Claude Fable 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Fable 5 and Mythos 5",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropic-releases-claude-fable-5-and-mythos-5-with-major-gains-in-coding-and-science",
@@ -401326,9 +401830,7 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/06/09/anthropics-claude-fable-5-is-a-version-of-mythos-the-public-can-access-today",
@@ -401387,14 +401889,14 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Xiaomi"
           ]
         },
         {
           "name": "Mythos 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Xiaomi"
           ]
         }
       ],
@@ -401749,9 +402251,7 @@
         {
           "name": "Fable 5",
           "type": "模型",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://ithome.com/0/961/945.htm",
@@ -403342,7 +403842,9 @@
         {
           "name": "MAI-Transcribe-1.5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/08/microsoft-ai-introduces-mai-transcribe-1-5-2-4-wer-on-artificial-analysis-best-in-class-fleurs-accuracy-and-up-to-5x-faster-long-audio-transcription",
@@ -406000,12 +406502,16 @@
         {
           "name": "Agent Governance Toolkit",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         },
         {
           "name": "Open Source",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://opensource.microsoft.com/blog/2026/04/02/introducing-the-agent-governance-toolkit-open-source-runtime-security-for-ai-agents",
@@ -406319,9 +406825,7 @@
         {
           "name": "Introducing Claude Opus 4.8",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/news/claude-opus-4-8?ct=13057",
@@ -407520,7 +408024,7 @@
           "name": "MAI-Thinking-1",
           "type": "模型",
           "ownerNames": [
-            "Intel"
+            "Microsoft"
           ]
         }
       ],
@@ -407611,9 +408115,7 @@
         {
           "name": "Claude Code v2.1.161",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.161",
@@ -408355,7 +408857,7 @@
           "name": "Claude Code v2.1.160",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Shell"
           ]
         }
       ],
@@ -410123,7 +410625,9 @@
         {
           "name": "Webwright",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Microsoft"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/05/24/microsoft-research-releases-webwright-a-terminal-native-web-agent-framework-that-scores-60-1-on-odysseys-up-from-base-gpt-5-4s-33-5",
@@ -412120,16 +412624,12 @@
         {
           "name": "Claude Managed",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         },
         {
           "name": "Claude Blog",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/new-in-claude-managed-agents",
@@ -413502,9 +414002,7 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
@@ -414118,6 +414616,242 @@
       "publisher": "Simon Willison 博客"
     },
     {
+      "id": "EV-2a5803953f698f4c",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "黑客暗网兜售 Anthropic、谷歌、OpenAI 等 AI 模型访问权限，最低价仅为正版 3%",
+      "originalTitle": "",
+      "subject": "黑客",
+      "action": "security_incident",
+      "object": "Anthropic、谷歌和 OpenAI 等公司的 AI 模型使用权限",
+      "metrics": [
+        "97%"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-06971d5f36dccc53",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "黑客",
+        "Anthropic",
+        "Google",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/619.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-0eea367f43810ec7",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "organization_restructuring",
+      "eventTypeLabel": "组织重组",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Anthropic 部分资深员工考虑在偏远地区购置土地，以防\"AI 失控\"",
+      "originalTitle": "",
+      "subject": "Anthropic 部分早期员工",
+      "action": "organization_restructuring",
+      "object": "在美国偏远荒僻的地区购置土地建造隐匿点",
+      "metrics": [],
+      "locations": [
+        "美国"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5a4c400207b9cc5e",
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic 部分早期",
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/603.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
+      "id": "EV-9ebb69d4965d1f23",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "organization_people",
+      "eventTypeLabel": "组织与人员",
+      "eventGroup": "组织、政策与法律",
+      "status": "planned",
+      "statusLabel": "计划中",
+      "publicationStatus": "partial",
+      "title": "Anthropic CEO Dario Amodei 将与特朗普在白宫共进晚餐",
+      "originalTitle": "",
+      "subject": "Anthropic CEO Dario Amodei",
+      "action": "organization_people",
+      "object": "President Donald Trump",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/27/anthropics-ceo-is-about-to-have-dinner-with-president-trump",
+      "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-f5e78fddf0371fca",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-27",
+      "updatedDate": "2026-09-28",
+      "eventType": "research_result",
+      "eventTypeLabel": "研究结果",
+      "eventGroup": "研究结果",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "arXiv 论文发现 chat template 像开关一样切换 LLM 的自我指涉语气",
+      "originalTitle": "",
+      "subject": "chat template",
+      "action": "research_result",
+      "object": "disclaimer voice",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-12b6fb2696cbbfcb",
+        "EN-44510fb8897b287c"
+      ],
+      "entityNames": [
+        "chat template",
+        "instruct models"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arxiv.org/abs/2609.25021",
+      "publisher": "Hacker News：AI 热帖"
+    },
+    {
+      "id": "EV-4a963531f57c551a",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-26",
+      "updatedDate": "2026-09-28",
+      "eventType": "policy_regulation",
+      "eventTypeLabel": "政策监管",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "法院裁定五角大楼可因Anthropic拒绝启用Claude功能而将其列入黑名单",
+      "originalTitle": "Court rules Pentagon can blacklist Anthropic for refusing to enable Claude features",
+      "subject": "US Court of Appeals for the District of Columbia Circuit",
+      "action": "policy_regulation",
+      "object": "Department of Defense blacklisting of Anthropic",
+      "metrics": [],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d"
+      ],
+      "entityNames": [
+        "Anthropic"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features",
+      "publisher": "Ars Technica AI"
+    },
+    {
       "id": "EV-5961ed93ca6dae66",
       "dataDate": "2026-09-26",
       "date": "2026-09-25",
@@ -414485,9 +415219,7 @@
         {
           "name": "CRISPR-like",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://anthropic.com/news/claude-discovers-novel-enzyme-system",
@@ -414953,6 +415685,50 @@
       "products": [],
       "sourceUrl": "https://404media.co/people-training-openais-ai-fired-for-using-ai-to-train-the-ai",
       "publisher": "404 Media（RSS）"
+    },
+    {
+      "id": "EV-9e5e72473b5025b4",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-21",
+      "updatedDate": "2026-09-28",
+      "eventType": "security_incident",
+      "eventTypeLabel": "安全事件",
+      "eventGroup": "组织、政策与法律",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Authors Guild v. OpenAI 新文件披露高管早已知道大规模盗版书籍训练违法",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "security_incident",
+      "object": "LibGen files",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://authorsguild.org/news/ag-v-openai-top-execs-knew-mass-book-piracy-was-illegal",
+      "publisher": "Hacker News 热门（buzzing.cc 中文翻译）"
     },
     {
       "id": "EV-d3500d1978e62d1f",
@@ -422735,7 +423511,7 @@
           "name": "Cameron Berg",
           "type": "产品/服务",
           "ownerNames": [
-            "Anthropic"
+            "Google DeepMind"
           ]
         }
       ],
@@ -430761,9 +431537,7 @@
         {
           "name": "Claude Code",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default",

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-bd05f8cee4043426",
       "EV-2470b13ea55496d0",
       "EV-66f24f6db71cc011",
       "EV-40d4ce6d936d4d49",
@@ -230,7 +231,7 @@
       "EN-e71558a14e7ed6ab"
     ],
     "firstSeen": "2026-03-12",
-    "lastSeen": "2026-09-26",
+    "lastSeen": "2026-09-28",
     "relationIds": [
       "REL2-85833837dc3e3f02",
       "REL2-ef7c3e949f2087f3",
@@ -245,6 +246,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-bd05f8cee4043426",
         "EV-2470b13ea55496d0",
         "EV-66f24f6db71cc011",
         "EV-40d4ce6d936d4d49",
@@ -383,6 +385,22 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-bd05f8cee4043426",
+        "dataDate": "2026-09-28",
+        "date": "2026-09-28",
+        "eventType": "acquisition",
+        "eventTypeLabel": "并购",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "2026 年 LLM 进展（截至目前）",
+        "displayTags": [],
+        "entityIds": [
+          "EN-0975d00d40c6329e",
+          "EN-ea3bd73e2b506e00"
+        ]
+      },
       {
         "id": "EV-a171d2ec6b5982e9",
         "dataDate": "2026-09-26",
@@ -5815,7 +5833,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-target_user-business_user",
@@ -6532,7 +6550,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-product_form-chip_accelerator",
@@ -7388,6 +7406,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-857d7186b873e0ed",
+        "EV-ca32d5e2f28622ef",
         "EV-293d6feac5b8efab",
         "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
@@ -7716,6 +7736,7 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
         "EN-c5da36ead951ea76",
         "EN-9c8ae69b84f21a2e",
         "EN-bae152c4560df38c",
@@ -7726,7 +7747,6 @@
         "EN-69337578b2468a88",
         "EN-3a7bd3e2360a3d29",
         "EN-f01c4f48151c3468",
-        "EN-c608c4787821de1b",
         "EN-67734881da046ff9",
         "EN-572e31f55b6ac1b1",
         "EN-1a6d6ea981e8688c",
@@ -7850,7 +7870,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-ai_market_category-enterprise_applications",
@@ -8085,7 +8105,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2023-04-27",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -8326,6 +8346,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-06c2f2803729eae2",
         "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
@@ -8879,6 +8900,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-5e668f42eb6cf15d",
         "EN-f9768e4769ec9d14",
         "EN-0ed9e4984f0e77cf",
         "EN-c70eca6b0f88f44d",
