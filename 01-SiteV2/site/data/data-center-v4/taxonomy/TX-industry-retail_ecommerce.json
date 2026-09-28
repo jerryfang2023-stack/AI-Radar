@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -139,6 +139,7 @@
       "EV-02686922dd82c4aa",
       "EV-99a0cb6bac516bdd",
       "EV-2ffc3377977da114",
+      "EV-06c2f2803729eae2",
       "EV-f17aeb4a86a6387c",
       "EV-0fce4630e77c9db7",
       "EV-03ce826429a97aa9",
@@ -229,6 +230,7 @@
       "EN-916a98f0fa2a39af",
       "EN-e274048227f164dc",
       "EN-88e2cce43eeadb36",
+      "EN-5e668f42eb6cf15d",
       "EN-c27dc0124e23e7fe",
       "EN-c70eca6b0f88f44d",
       "EN-35e36dc1a5213fa3",
@@ -256,7 +258,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2023-06-28",
-    "lastSeen": "2026-09-26"
+    "lastSeen": "2026-09-28"
   },
   "events": [
     {
@@ -33589,6 +33591,122 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-06c2f2803729eae2",
+      "dataDate": "2026-09-28",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "前苹果 Siri 工程师推出 AI 智能体 szn，可在 iMessage 中与用户互动",
+      "originalTitle": "",
+      "subject": "前苹果 Siri 工程师",
+      "action": "推出",
+      "object": "AI 智能体 szn，可在 iMessage 中与用户互动",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-5e668f42eb6cf15d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "retail_ecommerce",
+          "name": "零售与电商",
+          "entityIds": [
+            "EN-5e668f42eb6cf15d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5e668f42eb6cf15d",
+        "EN-3a7bd3e2360a3d29"
+      ],
+      "entityNames": [
+        "前苹果 Siri 工程师",
+        "Apple"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/007/634.htm",
+      "publisher": "IT之家"
+    },
+    {
       "id": "EV-f17aeb4a86a6387c",
       "dataDate": "2026-09-16",
       "date": "2026-09-15",
@@ -33834,9 +33952,7 @@
         {
           "name": "Claude Commerce",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/09/03/anthropic-released-claude-commerce-agents-an-apache-2-0-blueprint-for-shopping-and-merchant-agents-across-retail-travel-telecom-and-entertainment",
@@ -33924,9 +34040,7 @@
         {
           "name": "Claude",
           "type": "产品/服务",
-          "ownerNames": [
-            "Anthropic"
-          ]
+          "ownerNames": []
         }
       ],
       "sourceUrl": "https://claude.com/blog/claude-for-commerce-agents",
@@ -34794,21 +34908,21 @@
           "name": "CPG Clients",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
           "name": "Agency Partner Program",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         },
         {
           "name": "AI Agents for Agency",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Microsoft"
           ]
         }
       ],
@@ -36785,6 +36899,7 @@
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
         "EV-8061c8eb754e0542",
+        "EV-857d7186b873e0ed",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-01eaadc83f55095a",
@@ -37026,7 +37141,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-67e8c106650aa683",
@@ -37592,6 +37707,7 @@
         "EV-8abf5adc3e72fbb8",
         "EV-3a704c40204ecfd9",
         "EV-777eb5b7783b71fb",
+        "EV-defd9eb250a2b925",
         "EV-09172b686d2b49de",
         "EV-bbb3ed2040b40e3f",
         "EV-20e076804a3000b4",
@@ -37896,10 +38012,12 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-2a5803953f698f4c",
         "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
         "EV-82b8afc59e9be662",
         "EV-aed61f7e2ca28c38",
+        "EV-9e5e72473b5025b4",
         "EV-5bd4ad184627c301",
         "EV-fd18ed4c81ae1791",
         "EV-054a8623f9abdbb7",
@@ -38065,10 +38183,10 @@
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-3a7bd3e2360a3d29",
         "EN-968e2d5b08687bf4",
         "EN-d1ad14d4ad57d207",
         "EN-6a50fbf0b970c03a",
-        "EN-3a7bd3e2360a3d29",
         "EN-916a98f0fa2a39af",
         "EN-8d4321d936320802",
         "EN-7839fb10a8f14c70",
@@ -38092,7 +38210,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-e69f64149edae6b1",
@@ -38692,7 +38810,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -39545,6 +39663,28 @@
       "lastSeen": "2026-09-07"
     },
     {
+      "id": "EN-5e668f42eb6cf15d",
+      "name": "前苹果 Siri 工程师",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-06c2f2803729eae2"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-retail_ecommerce",
+        "TX-technology-agentic_execution"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-28",
+      "lastSeen": "2026-09-28"
+    },
+    {
       "id": "EN-c27dc0124e23e7fe",
       "name": "Claude for Small Business",
       "entityType": "organization_candidate",
@@ -39911,6 +40051,10 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-2a5803953f698f4c",
+        "EV-0eea367f43810ec7",
+        "EV-9ebb69d4965d1f23",
+        "EV-4a963531f57c551a",
         "EV-0184e5d203d05229",
         "EV-813ced5e5514d81b",
         "EV-bc025a501363e4f3",
@@ -40096,7 +40240,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-35e36dc1a5213fa3",
@@ -40469,6 +40613,7 @@
         "EV-a4f052325d0ef230",
         "EV-cb3cb11ff13f6069",
         "EV-8115dd18f2812a29",
+        "EV-2a5803953f698f4c",
         "EV-5b593a87f47334f9",
         "EV-36defc1d19f0ce5d",
         "EV-808c496734dae101",
@@ -40568,7 +40713,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "EN-5e1fcba4c9f1cf69",

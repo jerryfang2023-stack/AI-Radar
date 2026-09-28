@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -18948,10 +18948,10 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-26",
-      "funnel_id": "LF-1e22b3ca39eab6a1",
+      "data_date": "2026-09-28",
+      "funnel_id": "LF-9506b36a72502c0d",
       "lens": "hardware",
-      "date": "2026-09-26",
+      "date": "2026-09-28",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
@@ -18959,24 +18959,24 @@
         "hardware_shipment_deployment",
         "hardware_supply_agreement"
       ],
-      "raw_documents": 27,
-      "original_sources": 22,
+      "raw_documents": 16,
+      "original_sources": 12,
       "valid_claims": 4,
-      "observations": 3,
-      "canonical_events": 4,
+      "observations": 0,
+      "canonical_events": 2,
       "blocker_counts": {
-        "no_source_bounded_event": 3,
-        "source_outside_daily_window": 12,
-        "non_event_or_index_title": 3,
-        "raw_source_quality_block": 5
+        "source_outside_daily_window": 8,
+        "non_event_or_index_title": 1,
+        "no_source_bounded_event": 1,
+        "raw_source_quality_block": 4
       },
       "rates": {
-        "original_source_rate": 0.8148148148148148,
-        "valid_claim_rate": 0.14814814814814814,
-        "observation_rate": 0.75,
-        "event_conversion_rate": 1
+        "original_source_rate": 0.75,
+        "valid_claim_rate": 0.25,
+        "observation_rate": 0,
+        "event_conversion_rate": 0.5
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-26/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-28/monitoring-funnel.json"
     }
   ]
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T00:56:21.876Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-09-28T03:59:01.250Z",
+    "latestDataDate": "2026-09-28",
+    "currentDate": "2026-09-28",
+    "eventCount": 3602,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -305,6 +305,7 @@
       "EV-a4f052325d0ef230",
       "EV-cb3cb11ff13f6069",
       "EV-8115dd18f2812a29",
+      "EV-2a5803953f698f4c",
       "EV-5b593a87f47334f9",
       "EV-36defc1d19f0ce5d",
       "EV-808c496734dae101",
@@ -404,7 +405,7 @@
       "EN-bdfecbcd7dbf76d2"
     ],
     "firstSeen": "2025-10-09",
-    "lastSeen": "2026-09-26",
+    "lastSeen": "2026-09-28",
     "relationIds": [
       "REL2-047306f993a722b4",
       "REL2-c0c6b4cd2b1abacd",
@@ -518,6 +519,7 @@
       ],
       "productsServices": [
         "EV-1b912ec16c50fc0f",
+        "EV-2a5803953f698f4c",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
         "EV-8058ddb115bdef47",
@@ -739,23 +741,8 @@
     },
     "timeline": [
       {
-        "id": "EV-0e424af71cfe12f8",
-        "dataDate": "2026-09-26",
-        "date": "2026-09-24",
-        "eventType": "hardware_deployment",
-        "eventTypeLabel": "硬件部署",
-        "eventGroup": "AI 硬件",
-        "status": "planned",
-        "statusLabel": "计划中",
-        "title": "Google Project Suncatcher 将发射搭载 TPU 的原型卫星测试太空 AI 算力",
-        "displayTags": [],
-        "entityIds": [
-          "EN-bbdefa2950f49882"
-        ]
-      },
-      {
         "id": "EV-1b912ec16c50fc0f",
-        "dataDate": "2026-09-26",
+        "dataDate": "2026-09-28",
         "date": "2026-09-24",
         "eventType": "model_release",
         "eventTypeLabel": "模型发布",
@@ -780,6 +767,39 @@
           "EN-bbdefa2950f49882",
           "EN-c04aeef64e9fe043",
           "EN-1477c523258a491c"
+        ]
+      },
+      {
+        "id": "EV-2a5803953f698f4c",
+        "dataDate": "2026-09-28",
+        "date": "2026-09-28",
+        "eventType": "security_incident",
+        "eventTypeLabel": "安全事件",
+        "eventGroup": "组织、政策与法律",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "黑客暗网兜售 Anthropic、谷歌、OpenAI 等 AI 模型访问权限，最低价仅为正版 3%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-06971d5f36dccc53",
+          "EN-c70eca6b0f88f44d",
+          "EN-bbdefa2950f49882",
+          "EN-7d3194f79e645c42"
+        ]
+      },
+      {
+        "id": "EV-0e424af71cfe12f8",
+        "dataDate": "2026-09-26",
+        "date": "2026-09-24",
+        "eventType": "hardware_deployment",
+        "eventTypeLabel": "硬件部署",
+        "eventGroup": "AI 硬件",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Google Project Suncatcher 将发射搭载 TPU 的原型卫星测试太空 AI 算力",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bbdefa2950f49882"
         ]
       },
       {
@@ -10653,7 +10673,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2019-03-11",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-target_user-business_user",
@@ -11370,7 +11390,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -13037,6 +13057,8 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-857d7186b873e0ed",
+        "EV-ca32d5e2f28622ef",
         "EV-293d6feac5b8efab",
         "EV-8ca7036c405028d4",
         "EV-c45b1098a3092e03",
@@ -13365,6 +13387,7 @@
         "EN-88e2cce43eeadb36",
         "EN-c890cfa67d1da908",
         "EN-7df09a7717ef2feb",
+        "EN-c608c4787821de1b",
         "EN-c5da36ead951ea76",
         "EN-9c8ae69b84f21a2e",
         "EN-bae152c4560df38c",
@@ -13375,7 +13398,6 @@
         "EN-69337578b2468a88",
         "EN-3a7bd3e2360a3d29",
         "EN-f01c4f48151c3468",
-        "EN-c608c4787821de1b",
         "EN-67734881da046ff9",
         "EN-572e31f55b6ac1b1",
         "EN-1a6d6ea981e8688c",
@@ -13499,7 +13521,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-industry-retail_ecommerce",
@@ -13588,6 +13610,7 @@
         "EV-02686922dd82c4aa",
         "EV-99a0cb6bac516bdd",
         "EV-2ffc3377977da114",
+        "EV-06c2f2803729eae2",
         "EV-f17aeb4a86a6387c",
         "EV-0fce4630e77c9db7",
         "EV-03ce826429a97aa9",
@@ -13678,6 +13701,7 @@
         "EN-916a98f0fa2a39af",
         "EN-e274048227f164dc",
         "EN-88e2cce43eeadb36",
+        "EN-5e668f42eb6cf15d",
         "EN-c27dc0124e23e7fe",
         "EN-c70eca6b0f88f44d",
         "EN-35e36dc1a5213fa3",
@@ -13705,7 +13729,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-use_case-productivity_enterprise_workflows",
@@ -14034,7 +14058,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -14275,6 +14299,7 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-06c2f2803729eae2",
         "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
         "EV-1873f3c6fa4bdedd",
@@ -14828,6 +14853,7 @@
         "EN-a08cc489f1c7c830",
         "EN-f4bec299df3f4f27",
         "EN-19e41212c0556603",
+        "EN-5e668f42eb6cf15d",
         "EN-f9768e4769ec9d14",
         "EN-0ed9e4984f0e77cf",
         "EN-c70eca6b0f88f44d",
@@ -16332,6 +16358,7 @@
         "EV-acb2087779a8ea3c",
         "EV-6415a58637893b34",
         "EV-4faa2bcf2e42e60c",
+        "EV-74fa59bc868027b1",
         "EV-5a90068e9e762f94",
         "EV-d32e50951ff7f9a1",
         "EV-85ba013c379a9d3d",
@@ -16434,6 +16461,7 @@
         "EN-0ad1a6d446cfd5e2",
         "EN-85f0c155e340fb63",
         "EN-240389f4b730bad4",
+        "EN-f8ab0a6e49ab20ba",
         "EN-69abd664ab1011d3",
         "EN-1a6d6ea981e8688c",
         "EN-39ba5f9dcab4e98a",
@@ -16476,7 +16504,7 @@
         "HW-1450585d9cd5879f"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-use_case-software_development",
@@ -17776,7 +17804,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-09-28"
     },
     {
       "id": "TX-use_case-legal_compliance",
