@@ -291839,20 +291839,103 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Scott Belsky 当前按“个人投资者”收录。最新融资披露记录日期为 2025-10-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Scott Belsky 是 A24 合伙人、A24 Labs 创办人、创业者和早期投资人。他共同创办 Behance 并担任 CEO，Adobe 收购后在 Adobe 负责产品、战略与设计创新；他还曾在 Benchmark 从事风险投资，并担任 Atlassian 董事。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "合伙人",
+            "organization": "A24",
+            "source_id": "scott_belsky"
+          },
+          {
+            "title": "创办人",
+            "organization": "A24 Labs",
+            "source_id": "scott_belsky"
+          },
+          {
+            "title": "董事",
+            "organization": "Atlassian",
+            "source_id": "scott_belsky"
+          },
+          {
+            "title": "董事会成员",
+            "organization": "Museum of Modern Art (MoMA)",
+            "source_id": "scott_belsky"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Behance",
+            "title": "共同创办人、CEO",
+            "period": "2006 年创立；任 CEO 至 2012 年 Adobe 收购",
+            "description": "本人官方简历列示公司创办年份及 CEO 任期终点。",
+            "source_id": "scott_belsky"
+          },
+          {
+            "organization": "Adobe",
+            "title": "首席产品官、首席战略官、设计与新兴产品执行副总裁",
+            "period": "Behance 被收购后加入；结束年月未在当前个人简历中列出",
+            "description": "本人官方简历介绍其在 Adobe 负责产品、战略与设计创新。",
+            "source_id": "scott_belsky"
+          },
+          {
+            "organization": "Benchmark",
+            "title": "风险投资人",
+            "period": "加入 Adobe 前；具体任期未披露",
+            "description": "Adobe 官方履历记载其曾在 Benchmark 从事风险投资。",
+            "source_id": "scott_adobe"
+          },
+          {
+            "organization": "A24",
+            "title": "合伙人",
+            "period": "当前",
+            "description": "本人官方简历列示其现任 A24 合伙人。",
+            "source_id": "scott_belsky"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Cornell University",
+            "qualification": "学士学位。",
+            "source_id": "scott_adobe"
+          },
+          {
+            "institution": "Harvard Business School",
+            "qualification": "工商管理硕士（MBA）。",
+            "source_id": "scott_adobe"
+          }
+        ],
+        "experience_summary": "履历涵盖创意软件产品、创业公司运营、风险投资与文化机构治理；其投资主题聚焦技术与设计交叉领域。",
         "track_record": [
           {
-            "description": "融资来源记录：Mem0 · 多轮融资 · 2025-10-28 · 本轮战略投资（天使投资人） · $24M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "本人官方简历列出 Behance、Adobe Express、内容凭证开放协议等产品经历，并称其早期投资支持 Pinterest、Ramp、Uber 等企业；投资案例为本人精选披露。",
+            "source_id": "scott_belsky"
+          },
+          {
+            "description": "PR Newswire 称 Mem0 的 2,400 万美元融资获得 Scott Belsky 与 Dharmesh Shah 的战略投资；金额为整轮披露总额，未披露 Belsky 的个人出资额。",
             "source_id": "FISRC-f3e9aa548f7703f9"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "scott_belsky",
+            "source_url": "https://www.scottbelsky.com/bio-2",
+            "source_title": "Bio — SCOTT BELSKY",
+            "source_content_hash": "11a470e35f847c57286e6383ccce6314b2b00dec75989464711bcba1a373f643",
+            "quote": "Scott Belsky is a Partner at A24",
+            "quote_hash": "fa0b94ab2b254d6b263b5681051803d24ad9b8507200327ab5aeb530125b1c70"
+          },
+          {
+            "source_id": "scott_adobe",
+            "source_url": "https://www.adobe.com/content/dam/cc/en/leaders/pdfs/belsky.pdf",
+            "source_title": "Scott Belsky - Adobe Leadership Biography",
+            "source_content_hash": "f7605d12fe0348afa436158699240823bc4867f60bb16b7d70c4f0978abf92e8",
+            "quote": "Scott holds a bachelor’s degree from Cornell University and an MBA from Harvard Business School.",
+            "quote_hash": "6c641d12502ddfd9dc273ccc862f58a2a5b48fa5f4649bfa5d745e61a5aa0f8b"
+          },
           {
             "source_id": "FISRC-f3e9aa548f7703f9",
             "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
@@ -291862,7 +291945,9 @@
             "quote_hash": "31111dd27ef4102fcc66cb90aa96a08bd262c68af185af33979667bbef9f30c8"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "本人简历用于现任职务和创业/投资经历；Adobe 简历用于历史职位与学历。未将其个人过往投资额与 Mem0 融资总额混为一谈。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -317287,20 +317372,110 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Ann-Kristin Achleitner 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Ann-Kristin Achleitner 是创业金融学者，现任慕尼黑工业大学创业金融教授，并担任创业与金融研究中心（CEFS）科学联合主任。她的研究关注创新融资、风险投资、私募股权和家族企业；公开履历涵盖圣加仑大学、欧洲商学院与 McKinsey。融资报道将她列为 Atira 相关个人投资者之一，但金额记录存在冲突。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "创业金融教授",
+            "organization": "Technical University of Munich (TUM)",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "title": "科学联合主任",
+            "organization": "Center for Entrepreneurial and Financial Studies (CEFS)",
+            "source_id": "ann_tum_cv"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Technical University of Munich (TUM)",
+            "title": "创业金融教授 / Chair",
+            "period": "2001 年至今",
+            "description": "官方履历列示其自 2001 年起担任创业金融学术席位。",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "organization": "Center for Entrepreneurial and Financial Studies (CEFS)",
+            "title": "科学联合主任",
+            "period": "2003 年至今",
+            "description": "TUM 官方资料列示其自 2003 年起担任 CEFS 科学联合主任。",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "organization": "European Business School (ebs)",
+            "title": "银行与金融学教授、金融管理研究所董事会主席",
+            "period": "1995–2001",
+            "description": "任职与职衔按 TUM 官方英文履历记载。",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "organization": "McKinsey & Company",
+            "title": "顾问",
+            "period": "1994–1995",
+            "description": "TUM 官方履历列示其在法兰克福任顾问。",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "organization": "University of St. Gallen (HSG)",
+            "title": "金融与外部审计讲师",
+            "period": "1992–1994",
+            "description": "TUM 官方履历列示其曾在圣加仑大学任教。",
+            "source_id": "ann_tum_cv"
+          }
+        ],
+        "education": [
+          {
+            "institution": "University of St. Gallen (HSG)",
+            "qualification": "工商管理学位（lic. oec. HSG），1984–1988。",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "institution": "University of St. Gallen (HSG)",
+            "qualification": "法律学位（lic. iur. HSG），1988–1990。",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "institution": "University of St. Gallen (HSG)",
+            "qualification": "工商管理博士，1988–1991；法学博士，1990–1992。",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "institution": "University of St. Gallen (HSG)",
+            "qualification": "教授资格（Habilitation），1992–1994。",
+            "source_id": "ann_tum_cv"
+          }
+        ],
+        "experience_summary": "其职业经历集中于创业金融、创新融资、风险投资和私募股权，并横跨学术研究、大学管理与咨询。",
         "track_record": [
           {
-            "description": "融资来源记录：Atira · 种子轮 · 2026-09-03 · 个人投资者 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "TUM 官方履历记录她于 2014 年获德国联邦十字功绩勋章，并于 2019 年获巴伐利亚州功绩勋章。",
+            "source_id": "ann_tum_cv"
+          },
+          {
+            "description": "Atira 融资报道将 Ann-Kristin Achleitner 列为个人投资者之一；报道标题写 1,750 万美元，而本库该活动金额为 1,500 万美元，金额口径尚未厘清，且未披露她的个人出资额。",
             "source_id": "FISRC-ea3a79586b031d21"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "ann_tum_cefs",
+            "source_url": "https://www.fa.mgt.tum.de/en/cefs/team/scientific-directors/",
+            "source_title": "Scientific Directors - Center for Entrepreneurial and Financial Studies - CEFS",
+            "source_content_hash": "46bb1a84e20c8a85026d6474582fc206c67dd653e26e6d045adf785f36601e27",
+            "quote": "Prof. Dr. Dr. Ann-Kristin Achleitner",
+            "quote_hash": "9c5c6ceb20e742e2cc3e7a5119087c655a34e27552ee41b28169022cdc7128db"
+          },
+          {
+            "source_id": "ann_tum_cv",
+            "source_url": "https://www.fa.mgt.tum.de/fileadmin/w00chf/ef/AKA/cv_en_achleitner.pdf",
+            "source_title": "Ann-Kristin Achleitner - Curriculum Vitae (English)",
+            "source_content_hash": "40d9bb0f07fae0c233469632692549537504c4b79a2e9160d239f23b7ad3d817",
+            "quote": "Since 2003 Scientific Co-Director of the Center for Entrepreneurial and Financial Studies (CEFS), Technical University of Munich (TUM), Germany",
+            "quote_hash": "54b1e3775d7dfbfd6e863f9f6e87d30b171a4d0dba16e914b0f887d453a81be6"
+          },
           {
             "source_id": "FISRC-ea3a79586b031d21",
             "source_url": "https://thundertiger-europe.com/atira-17-5-million-accel-industrial-sales-ai/",
@@ -317310,7 +317485,9 @@
             "quote_hash": "12035122e81a64707a9f32128b5c44d9ed053b4db8acdb5af62582a5e40468e6"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "履历及奖项依据 TUM 英文官方 CV；Atira 活动金额与融资报道标题不一致，不将融资总额视为个人支票金额。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -336954,20 +337131,100 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Thomas Dohmke 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Thomas Dohmke 是德国出生的科技企业家，现为 Entire Inc. 联合创办人兼 Geschäftsführer，并自 2026 年 4 月起担任 Deutsche Telekom 监事会成员。此前他在 GitHub 任职至 2025 年，2021–2025 年担任 CEO；职业经历还包括 Microsoft、Bit Stadium、Codenauts 和 DaimlerChrysler。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "联合创办人、Geschäftsführer（执行董事/总经理）",
+            "organization": "Entire Inc.",
+            "source_id": "thomas_telekom"
+          },
+          {
+            "title": "监事会成员",
+            "organization": "Deutsche Telekom AG",
+            "source_id": "thomas_telekom"
+          },
+          {
+            "title": "董事会成员",
+            "organization": "Spice AI Inc.",
+            "source_id": "thomas_telekom"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Entire Inc.",
+            "title": "联合创办人、Geschäftsführer",
+            "period": "2025 年至今",
+            "description": "Deutsche Telekom 官方履历列示。",
+            "source_id": "thomas_telekom"
+          },
+          {
+            "organization": "GitHub Inc.",
+            "title": "CEO；此前任 CPO 与战略项目副总裁",
+            "period": "2018–2025；CEO 任期 2021–2025",
+            "description": "职务和年份按 Deutsche Telekom 官方履历记载。",
+            "source_id": "thomas_telekom"
+          },
+          {
+            "organization": "Microsoft Corporation",
+            "title": "项目管理团队负责人、Group Lead、Senior Director",
+            "period": "2015–2018",
+            "description": "德国电信履历列示其逐步担任项目管理职务。",
+            "source_id": "thomas_telekom"
+          },
+          {
+            "organization": "Bit Stadium GmbH",
+            "title": "共同创办人、德国 Geschäftsführer",
+            "period": "2011–2015",
+            "description": "Deutsche Telekom 官方履历列示。",
+            "source_id": "thomas_telekom"
+          },
+          {
+            "organization": "Codenauts GmbH",
+            "title": "共同创办人、德国 Geschäftsführer",
+            "period": "2010–2015",
+            "description": "Deutsche Telekom 官方履历列示。",
+            "source_id": "thomas_telekom"
+          },
+          {
+            "organization": "DaimlerChrysler AG",
+            "title": "系统工程师",
+            "period": "2002–2006",
+            "description": "Deutsche Telekom 官方履历列示。",
+            "source_id": "thomas_telekom"
+          }
+        ],
+        "education": [
+          {
+            "institution": "University of Glasgow",
+            "qualification": "机械工程博士，2008 年。",
+            "source_id": "thomas_telekom"
+          },
+          {
+            "institution": "Technische Universität Berlin",
+            "qualification": "计算机工程 Diplom-Ingenieur，2003 年。",
+            "source_id": "thomas_telekom"
+          }
+        ],
+        "experience_summary": "工作横跨软件工程、企业项目管理、产品管理和科技公司经营；具体年份、职衔与教育信息采用 Deutsche Telekom 官方监事会履历。",
         "track_record": [
           {
-            "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 天使投资人 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Tech Funding News 报道将 Thomas Dohmke 列为 Etched 融资相关天使投资人；本库把记录标为历史/模糊且部分披露，5 亿美元是融资报道金额，未披露其个人出资额。",
             "source_id": "FISRC-93ad55204895a7ae"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "thomas_telekom",
+            "source_url": "https://www.telekom.com/de/ueber-uns/unternehmensfuehrung/aufsichtsrat/lebenslauf-dr-thomas-dohmke",
+            "source_title": "Lebenslauf Dr. Thomas Dohmke | Deutsche Telekom",
+            "source_content_hash": "d86517aee41258ef7302f6b176da97d65d4f435dedb7af230a1d221461404e94",
+            "quote": "2025 – heute | Mitgründer und Geschäftsführer der Entire Inc.",
+            "quote_hash": "d0b6b8303b5a45c8ad76825d15c60e19f70316cdaec1fb005c560f2b76d01570"
+          },
           {
             "source_id": "FISRC-93ad55204895a7ae",
             "source_url": "https://techfundingnews.com/nvidia-rival-ai-chip-maker-etched-founded-by-harvard-dropouts-lands-500m-at-5b-valuation/",
@@ -336977,7 +337234,9 @@
             "quote_hash": "aa0b19af44eb2e8e91b81849ab52daa5abf617c83562ede7fe67e062900d6f20"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "“Geschäftsführer”按德国公司治理语境保留原文并译为执行董事/总经理；Etched 记录为部分披露的历史/模糊融资活动，不代表个人出资额。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -337667,20 +337926,90 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Pieter Abbeel 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Pieter Abbeel 是 UC Berkeley 工程学教授、机器人学习实验室主任及 Berkeley AI Research（BAIR）实验室联合主任。他的研究覆盖机器人、机器学习与控制，并共同创办 Gradescope、Covariant 和 Berkeley Open Arms。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "Jim Gray 工程讲席教授",
+            "organization": "University of California, Berkeley",
+            "source_id": "pieter_berkeley"
+          },
+          {
+            "title": "主任",
+            "organization": "Berkeley Robot Learning Lab",
+            "source_id": "pieter_berkeley"
+          },
+          {
+            "title": "联合主任",
+            "organization": "Berkeley Artificial Intelligence Research (BAIR)",
+            "source_id": "pieter_berkeley"
+          }
+        ],
+        "career": [
+          {
+            "organization": "University of California, Berkeley",
+            "title": "工业工程与运筹学、电子工程与计算机科学教授",
+            "period": "2017 年起；具体当前职称按官方主页",
+            "description": "UC Berkeley 官方页面列示其跨系教授职务及研究方向。",
+            "source_id": "pieter_berkeley"
+          },
+          {
+            "organization": "Gradescope",
+            "title": "共同创办人",
+            "period": "创办年份未在引用页列出",
+            "description": "官方教职简介列为其创办的教育 AI 公司。",
+            "source_id": "pieter_berkeley"
+          },
+          {
+            "organization": "Covariant",
+            "title": "共同创办人",
+            "period": "创办年份未在引用页列出",
+            "description": "官方教职简介列为其创办的仓储机器人自动化公司。",
+            "source_id": "pieter_berkeley"
+          },
+          {
+            "organization": "Berkeley Open Arms",
+            "title": "共同创办人",
+            "period": "创办年份未在引用页列出",
+            "description": "官方教职简介列为其创办的机器人项目/公司。",
+            "source_id": "pieter_berkeley"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Stanford University",
+            "qualification": "计算机科学博士，2008 年。",
+            "source_id": "pieter_berkeley"
+          },
+          {
+            "institution": "KU Leuven",
+            "qualification": "电气工程学士与硕士。",
+            "source_id": "pieter_berkeley"
+          }
+        ],
+        "experience_summary": "研究及创业经历横跨机器人、强化学习、机器学习、控制，以及教育和仓储自动化产品。",
         "track_record": [
           {
-            "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 天使投资人 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "UC Berkeley 官方资料列示其获 ACM Prize in Computing（2021）和 IEEE Kiyo Tomiyasu Award（2022）等荣誉。",
+            "source_id": "pieter_berkeley"
+          },
+          {
+            "description": "媒体报道将 Pieter Abbeel 列为 Engram 融资中的天使投资人/顾问之一；本库将活动标为历史/模糊，9,800 万美元是整轮启动融资金额，未披露个人出资额。",
             "source_id": "FISRC-39d911c5038cb1c0"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "pieter_berkeley",
+            "source_url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/abbeel.html",
+            "source_title": "Pieter Abbeel | EECS at UC Berkeley",
+            "source_content_hash": "535d0dc433348bb50cb53addd910a6f638d35707281b2879e47ac079b483dd18",
+            "quote": "Professor Pieter Abbeel is Director of the Berkeley Robot Learning Lab and Co-Director of the Berkeley Artificial Intelligence (BAIR) Lab.",
+            "quote_hash": "feefb59aef2c9ab885e664b850c021e48e4fc55d38d2e88a56015e7e33fb5357"
+          },
           {
             "source_id": "FISRC-39d911c5038cb1c0",
             "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
@@ -337690,7 +338019,9 @@
             "quote_hash": "0d55de7b4abe19638784d0de22adafa09f434765b5800bbb477a4338bbd0abad"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "职务、教育、奖项和创业案例按 UC Berkeley 官方教职页面记录；Engram 融资报道的金额为整轮金额。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -340933,20 +341264,98 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Reid Hoffman 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Reid Hoffman 是创业者、投资人和作家，现为 Greylock 合伙人。2003 年共同创办 LinkedIn，此前曾在 PayPal 担任执行副总裁并参与董事会；Greylock 将其投资主题概括为网络效应、消费者产品与早期投资。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "合伙人",
+            "organization": "Greylock",
+            "source_id": "reid_greylock"
+          },
+          {
+            "title": "董事",
+            "organization": "Aurora",
+            "source_id": "reid_greylock"
+          },
+          {
+            "title": "董事",
+            "organization": "Microsoft",
+            "source_id": "reid_greylock"
+          },
+          {
+            "title": "董事",
+            "organization": "Inflection",
+            "source_id": "reid_greylock"
+          },
+          {
+            "title": "董事",
+            "organization": "Entrepreneur First",
+            "source_id": "reid_greylock"
+          }
+        ],
+        "career": [
+          {
+            "organization": "LinkedIn",
+            "title": "共同创办人",
+            "period": "2003 年创办；当前任职未由引用页面说明",
+            "description": "Greylock 官方履历记载其于 2003 年共同创办 LinkedIn。",
+            "source_id": "reid_greylock"
+          },
+          {
+            "organization": "PayPal",
+            "title": "执行副总裁、创始董事会成员",
+            "period": "LinkedIn 创办前；具体任期未披露",
+            "description": "Greylock 官方履历记载他负责 PayPal 对外关系。",
+            "source_id": "reid_greylock"
+          },
+          {
+            "organization": "Greylock",
+            "title": "早期投资合伙人",
+            "period": "2009 年至今",
+            "description": "官方页面称他于 2009 年加入 Greylock，专注早期投资。",
+            "source_id": "reid_greylock"
+          }
+        ],
+        "education": [
+          {
+            "institution": "Stanford University",
+            "qualification": "象征系统学士（B.S. with distinction）。",
+            "source_id": "reid_greylock"
+          },
+          {
+            "institution": "University of Oxford",
+            "qualification": "哲学硕士。",
+            "source_id": "reid_greylock"
+          },
+          {
+            "institution": "Babson University; University of Oulu",
+            "qualification": "荣誉博士学位（Greylock 页面未列专业）。",
+            "source_id": "reid_greylock"
+          }
+        ],
+        "experience_summary": "职业经历覆盖专业社交网络、支付业务、早期风险投资和董事会工作；其投资主题强调网络效应与大规模消费者产品。",
         "track_record": [
           {
-            "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 天使投资人 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Greylock 将 Facebook、Airbnb 和 Aurora 列为他参与支持的代表性企业案例；这是机构精选案例，不是完整投资清单。",
+            "source_id": "reid_greylock"
+          },
+          {
+            "description": "TechCrunch 在 Niteshift 融资报道中将 Reid Hoffman 列为天使投资人；本库将活动标为 historical_or_ambiguous，700 万美元为融资披露总额，未披露他的个人出资额。",
             "source_id": "FISRC-01df70e43799a400"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "reid_greylock",
+            "source_url": "https://greylock.com/team/reid-hoffman/",
+            "source_title": "Reid Hoffman | Greylock",
+            "source_content_hash": "272a71de9db17e802a0921ff7abd54b127d36217b197f14fb295f2f34b3a3c4d",
+            "quote": "Reid joined Greylock in 2009 and focuses on early-stage investing in products that can reach hundreds of millions of participants.",
+            "quote_hash": "1349cd24f7fef16f729617e1ed33e2e28e122fdb6228cb125b06c2237b8896f8"
+          },
           {
             "source_id": "FISRC-01df70e43799a400",
             "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
@@ -340956,7 +341365,9 @@
             "quote_hash": "4d019abc185cedd81af0f47a628ebc8fc53d9d0a0e464ac7de90936c2c305b0c"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "现任董事职务按 Greylock 当前页面列示；投资组合只保留精选案例。Niteshift 条目维持历史/模糊口径，不代表个人出资额。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -341417,20 +341828,75 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Avishai Abrahami 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Avishai Abrahami 是 Wix 共同创办人、首席执行官和董事。Wix 投资者关系资料列出他在 Arel Communications、AIT 等软件公司的早期经历，以及在 Monday.com 的董事职务；Willow 的融资报道提到他曾提供早期天使投资。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "共同创办人、首席执行官、董事",
+            "organization": "Wix.com Ltd.",
+            "source_id": "avishai_wix"
+          },
+          {
+            "title": "名誉主席",
+            "organization": "Wix.com Ltd.",
+            "source_id": "avishai_wix"
+          },
+          {
+            "title": "董事",
+            "organization": "Monday.com Ltd.",
+            "source_id": "avishai_wix"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Wix.com Ltd.",
+            "title": "共同创办人、首席执行官",
+            "period": "2006 年至页面核验日",
+            "description": "公司投资者关系页面列出其自 2006 年担任联合 CEO/CEO，并持续担任董事。",
+            "source_id": "avishai_wix"
+          },
+          {
+            "organization": "Arel Communications & Software Ltd.",
+            "title": "战略联盟副总裁",
+            "period": "2004–2006",
+            "description": "Wix 官方董事资料列示其此前职务。",
+            "source_id": "avishai_wix"
+          },
+          {
+            "organization": "AIT Ltd.",
+            "title": "共同创办人、首席技术官",
+            "period": "1993–1997",
+            "description": "Wix 官方董事资料记载公司于 1997 年出售。",
+            "source_id": "avishai_wix"
+          },
+          {
+            "organization": "Israeli Defense Forces",
+            "title": "计算机情报部门成员",
+            "period": "1990–1992",
+            "description": "经历按 Wix 投资者关系页面列示。",
+            "source_id": "avishai_wix"
+          }
+        ],
+        "education": [],
+        "experience_summary": "职业经历横跨软件创业、企业软件管理、上市公司领导与董事会工作；引用页面未确认他的学历，故留空。",
         "track_record": [
           {
-            "description": "融资来源记录：Willow · 种子轮 · 2026-06-04 · 早期天使投资人 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "FinSMEs 报道称 Avishai Abrahami 曾为 Willow 提供早期天使投资；数据库关联的 700 万美元是 Willow 种子轮披露总额，报道没有披露他的个人投资金额。",
             "source_id": "FISRC-f6d49c20866c811c"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "avishai_wix",
+            "source_url": "https://investors.wix.com/board-of-directors",
+            "source_title": "Board of Directors | Investor Relations | Wix.com",
+            "source_content_hash": "97b477e8ad9787ff56bef8f8a9b9cf4658519e8abeb1e2e6a4cfd4c03699b8a3",
+            "quote": "Co-founder, CEO and Director",
+            "quote_hash": "4eea33458acd605162ad2f1941b46f405e7b2e3a95993ca306450b9b4cf8e2a7"
+          },
           {
             "source_id": "FISRC-f6d49c20866c811c",
             "source_url": "https://www.finsmes.com/2026/06/willow-raises-7m-in-seed-funding.html",
@@ -341440,7 +341906,9 @@
             "quote_hash": "51f2ee0d8c685ef30c68e2dff0f62f87e89396b94ece4eb1a06d5760378f9176"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "Wix 官方董事会页面支持公司职务、早期任职、军旅经历和外部董事记录；页面未明确其教育背景，故不从其他同名人物推断。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -354522,20 +354990,100 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Deepak Pathak 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Deepak Pathak 是 Carnegie Mellon University 计算机科学学院机器人研究所副教授，也是 Skild AI 联合创办人兼 CEO。他的研究交叉机器人、计算机视觉与机器学习；此前在 Meta AI Research 任研究员，并在 UC Berkeley 完成博士研究及访问博士后工作。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "Raj Reddy 副教授",
+            "organization": "Carnegie Mellon University, School of Computer Science",
+            "source_id": "deepak_cmu"
+          },
+          {
+            "title": "联合创办人、首席执行官",
+            "organization": "Skild AI",
+            "source_id": "deepak_cmu"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Carnegie Mellon University",
+            "title": "Raj Reddy 副教授，机器人研究所成员",
+            "period": "2020 年至页面核验日",
+            "description": "本人学术主页列示其当前教职与研究机构。",
+            "source_id": "deepak_cmu"
+          },
+          {
+            "organization": "Skild AI",
+            "title": "联合创办人、首席执行官",
+            "period": "2023 年创立；现任",
+            "description": "本人学术主页及 CV 列示其创业职务。",
+            "source_id": "deepak_cv"
+          },
+          {
+            "organization": "Facebook AI Research (Meta AI)",
+            "title": "研究员",
+            "period": "2019–2020",
+            "description": "CMU 官方个人 CV 列示该任职。",
+            "source_id": "deepak_cv"
+          },
+          {
+            "organization": "University of California, Berkeley",
+            "title": "访问博士后",
+            "period": "2019–2020",
+            "description": "CMU 官方个人 CV 列示其与 Pieter Abbeel 合作的访问博士后经历。",
+            "source_id": "deepak_cv"
+          },
+          {
+            "organization": "VisageMap Inc.",
+            "title": "共同创办人",
+            "period": "2014 年创立",
+            "description": "CMU 官方个人 CV 将其列为共同创办人。",
+            "source_id": "deepak_cv"
+          }
+        ],
+        "education": [
+          {
+            "institution": "University of California, Berkeley",
+            "qualification": "计算机科学博士，2019 年。",
+            "source_id": "deepak_cv"
+          },
+          {
+            "institution": "Indian Institute of Technology Kanpur",
+            "qualification": "计算机科学与工程学士（BTech），2014 年。",
+            "source_id": "deepak_cv"
+          }
+        ],
+        "experience_summary": "学术研究聚焦机器人、视觉和机器学习，另有 Meta AI Research 经历及机器人基础模型创业经验。",
         "track_record": [
           {
-            "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "本人主页列示 ONR Young Investigator Award（2026）、Sloan Research Fellowship（2025）和 MIT TR35（2024）等荣誉。",
+            "source_id": "deepak_cmu"
+          },
+          {
+            "description": "Sycamore 种子轮公告将 Deepak Pathak 列为天使投资者之一并注明其 Skild AI 联合创办人身份；本库记录的 6,500 万美元为整轮融资金额，未披露其个人出资额。",
             "source_id": "FISRC-d354011359557f2f"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "deepak_cmu",
+            "source_url": "https://www.cs.cmu.edu/~dpathak/",
+            "source_title": "Deepak Pathak",
+            "source_content_hash": "b1aa0fef92134f5fb356eae55e8dd2da217678a7c6fc6ca5b9bd46a85e3b09b0",
+            "quote": "I am also Co-Founder and CEO of Skild AI",
+            "quote_hash": "f3c50c48c806a8266031a4141370d637f656c6c1ff10f18e94cf2dc436f0e795"
+          },
+          {
+            "source_id": "deepak_cv",
+            "source_url": "https://www.cs.cmu.edu/~dpathak/CV_Pathak.pdf",
+            "source_title": "Deepak Pathak - Curriculum Vitae",
+            "source_content_hash": "12f7c6eb71385f7148df46fd983332060c32190f5305205ff84f0a64eb210b00",
+            "quote": "Co-Founder and CEO of Skild AI — Founded 2023",
+            "quote_hash": "6390a3e37d51ab3a655d60dce047c41915643cbab7438655c96b32fca0f1be10"
+          },
           {
             "source_id": "FISRC-d354011359557f2f",
             "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -354545,7 +355093,9 @@
             "quote_hash": "206b95c75ea4727562e3137538f91bc15e3cc8c7b11ca19810fc8cd8c72508eb"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "当前职务和研究方向来自本人 CMU 学术主页，任职年份与教育信息来自其公开 CV；融资报道不披露个人出资额。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -354628,20 +355178,53 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Francois Chollet 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "François Chollet 是 Ndea 联合创办人、Keras 深度学习库创作者和 ARC-AGI 基准共同创建者。Ndea 官方介绍将其研究与工作概括为人工智能、软件和智能评估，并列出其技术著作与行业奖项。融资记录将数据库中拼写为 Francois Chollet 的个人投资者与 Sycamore 种子轮相关联。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "联合创办人",
+            "organization": "Ndea",
+            "source_id": "francois_ndea"
+          },
+          {
+            "title": "联合创办人、董事会成员",
+            "organization": "ARC Prize Foundation",
+            "source_id": "francois_ndea"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Keras",
+            "title": "创作者",
+            "period": "具体起始年份未在引用页列出",
+            "description": "Ndea 官方介绍称他创作了 Keras 深度学习库。",
+            "source_id": "francois_ndea"
+          }
+        ],
+        "education": [],
+        "experience_summary": "其公开经历集中在深度学习框架、智能评估基准和人工智能研究；所引用的 Ndea 官方简介未列学历或完整任职时间线。",
         "track_record": [
           {
-            "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Ndea 官方介绍列出 Keras、ARC-AGI、著作《Deep Learning with Python》及 Global Swiss AI Award 等成果；相关荣誉按公司简介披露。",
+            "source_id": "francois_ndea"
+          },
+          {
+            "description": "Sycamore 融资公告将 François Chollet 列在个人投资者名单中；本库该活动标为历史/模糊，6,500 万美元为整轮种子融资金额，未披露他的个人出资额。",
             "source_id": "FISRC-d354011359557f2f"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "francois_ndea",
+            "source_url": "https://ndea.com/about.html",
+            "source_title": "About Ndea",
+            "source_content_hash": "23f6c2da8f594ef90154ab4cf36714e5c00a9d4a1e29e5db85b7fef07cb90323",
+            "quote": "François Chollet is the creator of Keras",
+            "quote_hash": "7075c205d8abc6940bf2c871abd26e070c2eefe9c34227e6b6f3cda96cc664cd"
+          },
           {
             "source_id": "FISRC-d354011359557f2f",
             "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -354651,7 +355234,9 @@
             "quote_hash": "16b51af81b4c1d7166c0666bd5249e8878b4c361d692d375d8846d43803ceae3"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "Ndea 官方简介用于核验其联合创办人身份与技术成果；Sycamore 融资总额不代表个人出资额。数据库原名采用不带重音符号的 Francois Chollet。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -363993,20 +364578,68 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Tobias Lütke 当前按“个人投资者”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Tobias Lütke（常用名 Tobi）是 Shopify 共同创办人、首席执行官和董事会成员。他早期担任 Shopify 首席技术官，参与 Ruby on Rails 核心团队并创建 Active Merchant 等开源项目；Shopify 官方页面还列示他目前担任 Coinbase 董事。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "共同创办人、首席执行官",
+            "organization": "Shopify",
+            "source_id": "tobias_shopify"
+          },
+          {
+            "title": "董事会成员",
+            "organization": "Shopify",
+            "source_id": "tobias_shopify"
+          },
+          {
+            "title": "董事",
+            "organization": "Coinbase",
+            "source_id": "tobias_shopify"
+          }
+        ],
+        "career": [
+          {
+            "organization": "Shopify",
+            "title": "首席技术官",
+            "period": "2004 年 9 月–2008 年 4 月",
+            "description": "Shopify 官方董事会简介列出该任期。",
+            "source_id": "tobias_shopify"
+          },
+          {
+            "organization": "Shopify",
+            "title": "首席执行官",
+            "period": "2008 年 4 月至页面核验日",
+            "description": "公司投资者关系页面列示其自 2008 年 4 月担任 CEO。",
+            "source_id": "tobias_shopify"
+          },
+          {
+            "organization": "Ruby on Rails",
+            "title": "核心团队成员",
+            "period": "具体任期未披露",
+            "description": "Shopify 官方简介称其曾在 Ruby on Rails 核心团队工作，并创建 Active Merchant 等开源库。",
+            "source_id": "tobias_shopify"
+          }
+        ],
+        "education": [],
+        "experience_summary": "长期从事电商软件产品与工程建设，兼有开源软件开发和上市公司董事会经验；引用的官方董事简介未列学历信息。",
         "track_record": [
           {
-            "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 天使投资人 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "TechCrunch 将 Tobias Lütke 列为 Liquid AI 种子轮天使投资人。本库把此活动标为历史/模糊，3,750 万美元是整轮融资额，未披露其个人出资额。",
             "source_id": "FISRC-d1080395d67df2c7"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "tobias_shopify",
+            "source_url": "https://www.shopify.com/investors/board-of-directors",
+            "source_title": "Board of Directors - Shopify",
+            "source_content_hash": "8107406e3a32f2b7b6581f40aec945be211e3e397520bd554933bc9e8fee6c59",
+            "quote": "Tobias Lütke co-founded Shopify in September 2004, and has served as a member of our board of directors since that time.",
+            "quote_hash": "e8bd1fb48b4e26016fd7b8810c397f680e572ba6ce5b3e8ca471e614cc73c64c"
+          },
           {
             "source_id": "FISRC-d1080395d67df2c7",
             "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
@@ -364016,7 +364649,9 @@
             "quote_hash": "533032ec372b15794d9529e76eb2add47e96425b452ce4157e6123c6fec7905c"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "Shopify 官方投资者关系页面用于核验其公司职务及创业经历；Liquid AI 融资记载为历史/模糊活动，轮次金额不代表个人投资额。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {
@@ -364097,20 +364732,78 @@
       ],
       "public_profile": {
         "profile_type": "person",
-        "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Tom Preston Werner 当前按“个人投资者”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_status": "researched",
+        "summary": "Tom Preston-Werner 是 GitHub 共同创办人、开源软件开发者和投资人。他参与创建 GitHub，曾任 CEO，并于 2014 年离开公司；本人称其通过 Preston-Werner Ventures 进行天使投资，2025 年宣布将品牌改为 PWV 并计划募集一支面向软件与 AI 的早期基金。",
         "facts": [],
         "milestones": [],
+        "contacts": [],
+        "current_roles": [
+          {
+            "title": "创办人、天使投资人",
+            "organization": "Preston-Werner Ventures (PWV)",
+            "source_id": "tom_pwv"
+          }
+        ],
+        "career": [
+          {
+            "organization": "GitHub",
+            "title": "共同创办人、曾任 CEO",
+            "period": "共同创办；2014 年离开",
+            "description": "本人 2014 年文章称当天是其在 GitHub 的最后一天，并回顾共同创建公司；文章亦记载他在 2014 年 1 月卸任 CEO。",
+            "source_id": "tom_github_exit"
+          },
+          {
+            "organization": "Chatterbug",
+            "title": "共同创办人",
+            "period": "官网未列任期",
+            "description": "本人主页将其列为 Chatterbug 共同创办人。",
+            "source_id": "tom_personal"
+          },
+          {
+            "organization": "Preston-Werner Ventures / PWV",
+            "title": "天使投资人、早期基金发起人",
+            "period": "本人称通过该机构投资约 13 年；2025 年宣布募集基金",
+            "description": "2025 年本人文章称其此前通过 Preston-Werner Ventures 进行天使投资，并计划募集目标规模 1 亿美元的 pre-seed/seed 基金；募集结果未在引用页核实。",
+            "source_id": "tom_pwv"
+          }
+        ],
+        "education": [],
+        "experience_summary": "经历包括 GitHub 创业与管理、Chatterbug 创业、Ruby 生态开源工具开发和早期创业投资。本人主页列举 Jekyll、Semantic Versioning、TOML、Grit 等开源项目。",
         "track_record": [
           {
-            "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 天使投资人 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "Tom Preston-Werner 在 2025 年本人文章中称，过去 13 年投资超过 175 家初创企业，并列举 Stripe、Cursor、Netlify、Snyk、Supabase、PlanetScale 和 Retool 等早期投资案例；为本人披露的精选业绩。",
+            "source_id": "tom_pwv"
+          },
+          {
+            "description": "TechCrunch 将 Tom Preston-Werner 列为 Liquid AI 种子轮天使投资人；本库将活动标为历史/模糊，3,750 万美元为整轮金额，未披露他的个人出资额。",
             "source_id": "FISRC-d1080395d67df2c7"
           }
         ],
-        "contacts": [],
         "sources": [
+          {
+            "source_id": "tom_personal",
+            "source_url": "https://tom.preston-werner.com/",
+            "source_title": "Tom Preston-Werner",
+            "source_content_hash": "8e42d69909c08a1283f66105792b23cf3dc0a90a2ab3281c77752a6a5dce896e",
+            "quote": "Cofounder of GitHub, Chatterbug",
+            "quote_hash": "66304a98edd465bf2648bb85bdecd48e50608204e4723e047c9114cd27d10752"
+          },
+          {
+            "source_id": "tom_github_exit",
+            "source_url": "https://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing",
+            "source_title": "Farewell GitHub, Hello Immersive Computing",
+            "source_content_hash": "df7f81f21dfc075fa6e7d50ab07b9a9dd785c0456ea722ffa6d61839d0b32ae7",
+            "quote": "Today is my last day at GitHub.",
+            "quote_hash": "7af4a1347352aa85f1b5e791babe3de3c4ce57ff48355612031e6dd1be378fdd"
+          },
+          {
+            "source_id": "tom_pwv",
+            "source_url": "https://tom.preston-werner.com/2025/10/22/announcing-pwv-fund-1",
+            "source_title": "Announcing PWV Fund I",
+            "source_content_hash": "a37943a2e5d6112ee5af2d8c22c3331623cb0d93c11ad1e8f8eea36ea5558a01",
+            "quote": "Preston-Werner Ventures (through which I did my angel investing) has become PWV",
+            "quote_hash": "8687b6270ab57da218fdca082d3ef3393d4c7d33e0e6e65231e769963ee80401"
+          },
           {
             "source_id": "FISRC-d1080395d67df2c7",
             "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
@@ -364120,7 +364813,9 @@
             "quote_hash": "70fc4dc7aa2920be2589fc6942b0babc7b5718f06c8131de22c9ce7a23b0ebb9"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "coverage_note": "基金规模是 2025 年本人宣布的募集目标，未将目标写成已完成募资；投资组合和投资数量均标注为本人披露。",
+        "last_verified_at": "2026-09-28",
+        "identity_status": "verified"
       }
     },
     {

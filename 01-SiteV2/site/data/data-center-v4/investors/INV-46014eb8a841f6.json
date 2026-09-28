@@ -130,20 +130,78 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tom Preston Werner 当前按“个人投资者”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Tom Preston-Werner 是 GitHub 共同创办人、开源软件开发者和投资人。他参与创建 GitHub，曾任 CEO，并于 2014 年离开公司；本人称其通过 Preston-Werner Ventures 进行天使投资，2025 年宣布将品牌改为 PWV 并计划募集一支面向软件与 AI 的早期基金。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "创办人、天使投资人",
+          "organization": "Preston-Werner Ventures (PWV)",
+          "source_id": "tom_pwv"
+        }
+      ],
+      "career": [
+        {
+          "organization": "GitHub",
+          "title": "共同创办人、曾任 CEO",
+          "period": "共同创办；2014 年离开",
+          "description": "本人 2014 年文章称当天是其在 GitHub 的最后一天，并回顾共同创建公司；文章亦记载他在 2014 年 1 月卸任 CEO。",
+          "source_id": "tom_github_exit"
+        },
+        {
+          "organization": "Chatterbug",
+          "title": "共同创办人",
+          "period": "官网未列任期",
+          "description": "本人主页将其列为 Chatterbug 共同创办人。",
+          "source_id": "tom_personal"
+        },
+        {
+          "organization": "Preston-Werner Ventures / PWV",
+          "title": "天使投资人、早期基金发起人",
+          "period": "本人称通过该机构投资约 13 年；2025 年宣布募集基金",
+          "description": "2025 年本人文章称其此前通过 Preston-Werner Ventures 进行天使投资，并计划募集目标规模 1 亿美元的 pre-seed/seed 基金；募集结果未在引用页核实。",
+          "source_id": "tom_pwv"
+        }
+      ],
+      "education": [],
+      "experience_summary": "经历包括 GitHub 创业与管理、Chatterbug 创业、Ruby 生态开源工具开发和早期创业投资。本人主页列举 Jekyll、Semantic Versioning、TOML、Grit 等开源项目。",
       "track_record": [
         {
-          "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 天使投资人 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Tom Preston-Werner 在 2025 年本人文章中称，过去 13 年投资超过 175 家初创企业，并列举 Stripe、Cursor、Netlify、Snyk、Supabase、PlanetScale 和 Retool 等早期投资案例；为本人披露的精选业绩。",
+          "source_id": "tom_pwv"
+        },
+        {
+          "description": "TechCrunch 将 Tom Preston-Werner 列为 Liquid AI 种子轮天使投资人；本库将活动标为历史/模糊，3,750 万美元为整轮金额，未披露他的个人出资额。",
           "source_id": "FISRC-d1080395d67df2c7"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "tom_personal",
+          "source_url": "https://tom.preston-werner.com/",
+          "source_title": "Tom Preston-Werner",
+          "source_content_hash": "8e42d69909c08a1283f66105792b23cf3dc0a90a2ab3281c77752a6a5dce896e",
+          "quote": "Cofounder of GitHub, Chatterbug",
+          "quote_hash": "66304a98edd465bf2648bb85bdecd48e50608204e4723e047c9114cd27d10752"
+        },
+        {
+          "source_id": "tom_github_exit",
+          "source_url": "https://tom.preston-werner.com/2014/04/21/farewell-github-hello-immersive-computing",
+          "source_title": "Farewell GitHub, Hello Immersive Computing",
+          "source_content_hash": "df7f81f21dfc075fa6e7d50ab07b9a9dd785c0456ea722ffa6d61839d0b32ae7",
+          "quote": "Today is my last day at GitHub.",
+          "quote_hash": "7af4a1347352aa85f1b5e791babe3de3c4ce57ff48355612031e6dd1be378fdd"
+        },
+        {
+          "source_id": "tom_pwv",
+          "source_url": "https://tom.preston-werner.com/2025/10/22/announcing-pwv-fund-1",
+          "source_title": "Announcing PWV Fund I",
+          "source_content_hash": "a37943a2e5d6112ee5af2d8c22c3331623cb0d93c11ad1e8f8eea36ea5558a01",
+          "quote": "Preston-Werner Ventures (through which I did my angel investing) has become PWV",
+          "quote_hash": "8687b6270ab57da218fdca082d3ef3393d4c7d33e0e6e65231e769963ee80401"
+        },
         {
           "source_id": "FISRC-d1080395d67df2c7",
           "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
@@ -153,7 +211,9 @@
           "quote_hash": "70fc4dc7aa2920be2589fc6942b0babc7b5718f06c8131de22c9ce7a23b0ebb9"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "基金规模是 2025 年本人宣布的募集目标，未将目标写成已完成募资；投资组合和投资数量均标注为本人披露。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

@@ -130,20 +130,100 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Thomas Dohmke 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Thomas Dohmke 是德国出生的科技企业家，现为 Entire Inc. 联合创办人兼 Geschäftsführer，并自 2026 年 4 月起担任 Deutsche Telekom 监事会成员。此前他在 GitHub 任职至 2025 年，2021–2025 年担任 CEO；职业经历还包括 Microsoft、Bit Stadium、Codenauts 和 DaimlerChrysler。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "联合创办人、Geschäftsführer（执行董事/总经理）",
+          "organization": "Entire Inc.",
+          "source_id": "thomas_telekom"
+        },
+        {
+          "title": "监事会成员",
+          "organization": "Deutsche Telekom AG",
+          "source_id": "thomas_telekom"
+        },
+        {
+          "title": "董事会成员",
+          "organization": "Spice AI Inc.",
+          "source_id": "thomas_telekom"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Entire Inc.",
+          "title": "联合创办人、Geschäftsführer",
+          "period": "2025 年至今",
+          "description": "Deutsche Telekom 官方履历列示。",
+          "source_id": "thomas_telekom"
+        },
+        {
+          "organization": "GitHub Inc.",
+          "title": "CEO；此前任 CPO 与战略项目副总裁",
+          "period": "2018–2025；CEO 任期 2021–2025",
+          "description": "职务和年份按 Deutsche Telekom 官方履历记载。",
+          "source_id": "thomas_telekom"
+        },
+        {
+          "organization": "Microsoft Corporation",
+          "title": "项目管理团队负责人、Group Lead、Senior Director",
+          "period": "2015–2018",
+          "description": "德国电信履历列示其逐步担任项目管理职务。",
+          "source_id": "thomas_telekom"
+        },
+        {
+          "organization": "Bit Stadium GmbH",
+          "title": "共同创办人、德国 Geschäftsführer",
+          "period": "2011–2015",
+          "description": "Deutsche Telekom 官方履历列示。",
+          "source_id": "thomas_telekom"
+        },
+        {
+          "organization": "Codenauts GmbH",
+          "title": "共同创办人、德国 Geschäftsführer",
+          "period": "2010–2015",
+          "description": "Deutsche Telekom 官方履历列示。",
+          "source_id": "thomas_telekom"
+        },
+        {
+          "organization": "DaimlerChrysler AG",
+          "title": "系统工程师",
+          "period": "2002–2006",
+          "description": "Deutsche Telekom 官方履历列示。",
+          "source_id": "thomas_telekom"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Glasgow",
+          "qualification": "机械工程博士，2008 年。",
+          "source_id": "thomas_telekom"
+        },
+        {
+          "institution": "Technische Universität Berlin",
+          "qualification": "计算机工程 Diplom-Ingenieur，2003 年。",
+          "source_id": "thomas_telekom"
+        }
+      ],
+      "experience_summary": "工作横跨软件工程、企业项目管理、产品管理和科技公司经营；具体年份、职衔与教育信息采用 Deutsche Telekom 官方监事会履历。",
       "track_record": [
         {
-          "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 天使投资人 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Tech Funding News 报道将 Thomas Dohmke 列为 Etched 融资相关天使投资人；本库把记录标为历史/模糊且部分披露，5 亿美元是融资报道金额，未披露其个人出资额。",
           "source_id": "FISRC-93ad55204895a7ae"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "thomas_telekom",
+          "source_url": "https://www.telekom.com/de/ueber-uns/unternehmensfuehrung/aufsichtsrat/lebenslauf-dr-thomas-dohmke",
+          "source_title": "Lebenslauf Dr. Thomas Dohmke | Deutsche Telekom",
+          "source_content_hash": "d86517aee41258ef7302f6b176da97d65d4f435dedb7af230a1d221461404e94",
+          "quote": "2025 – heute | Mitgründer und Geschäftsführer der Entire Inc.",
+          "quote_hash": "d0b6b8303b5a45c8ad76825d15c60e19f70316cdaec1fb005c560f2b76d01570"
+        },
         {
           "source_id": "FISRC-93ad55204895a7ae",
           "source_url": "https://techfundingnews.com/nvidia-rival-ai-chip-maker-etched-founded-by-harvard-dropouts-lands-500m-at-5b-valuation/",
@@ -153,7 +233,9 @@
           "quote_hash": "aa0b19af44eb2e8e91b81849ab52daa5abf617c83562ede7fe67e062900d6f20"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "“Geschäftsführer”按德国公司治理语境保留原文并译为执行董事/总经理；Etched 记录为部分披露的历史/模糊融资活动，不代表个人出资额。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

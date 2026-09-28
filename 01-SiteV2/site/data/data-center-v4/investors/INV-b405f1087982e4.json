@@ -130,20 +130,68 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tobias Lütke 当前按“个人投资者”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Tobias Lütke（常用名 Tobi）是 Shopify 共同创办人、首席执行官和董事会成员。他早期担任 Shopify 首席技术官，参与 Ruby on Rails 核心团队并创建 Active Merchant 等开源项目；Shopify 官方页面还列示他目前担任 Coinbase 董事。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "共同创办人、首席执行官",
+          "organization": "Shopify",
+          "source_id": "tobias_shopify"
+        },
+        {
+          "title": "董事会成员",
+          "organization": "Shopify",
+          "source_id": "tobias_shopify"
+        },
+        {
+          "title": "董事",
+          "organization": "Coinbase",
+          "source_id": "tobias_shopify"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Shopify",
+          "title": "首席技术官",
+          "period": "2004 年 9 月–2008 年 4 月",
+          "description": "Shopify 官方董事会简介列出该任期。",
+          "source_id": "tobias_shopify"
+        },
+        {
+          "organization": "Shopify",
+          "title": "首席执行官",
+          "period": "2008 年 4 月至页面核验日",
+          "description": "公司投资者关系页面列示其自 2008 年 4 月担任 CEO。",
+          "source_id": "tobias_shopify"
+        },
+        {
+          "organization": "Ruby on Rails",
+          "title": "核心团队成员",
+          "period": "具体任期未披露",
+          "description": "Shopify 官方简介称其曾在 Ruby on Rails 核心团队工作，并创建 Active Merchant 等开源库。",
+          "source_id": "tobias_shopify"
+        }
+      ],
+      "education": [],
+      "experience_summary": "长期从事电商软件产品与工程建设，兼有开源软件开发和上市公司董事会经验；引用的官方董事简介未列学历信息。",
       "track_record": [
         {
-          "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 天使投资人 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "TechCrunch 将 Tobias Lütke 列为 Liquid AI 种子轮天使投资人。本库把此活动标为历史/模糊，3,750 万美元是整轮融资额，未披露其个人出资额。",
           "source_id": "FISRC-d1080395d67df2c7"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "tobias_shopify",
+          "source_url": "https://www.shopify.com/investors/board-of-directors",
+          "source_title": "Board of Directors - Shopify",
+          "source_content_hash": "8107406e3a32f2b7b6581f40aec945be211e3e397520bd554933bc9e8fee6c59",
+          "quote": "Tobias Lütke co-founded Shopify in September 2004, and has served as a member of our board of directors since that time.",
+          "quote_hash": "e8bd1fb48b4e26016fd7b8810c397f680e572ba6ce5b3e8ca471e614cc73c64c"
+        },
         {
           "source_id": "FISRC-d1080395d67df2c7",
           "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
@@ -153,7 +201,9 @@
           "quote_hash": "533032ec372b15794d9529e76eb2add47e96425b452ce4157e6123c6fec7905c"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "coverage_note": "Shopify 官方投资者关系页面用于核验其公司职务及创业经历；Liquid AI 融资记载为历史/模糊活动，轮次金额不代表个人投资额。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }
