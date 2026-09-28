@@ -2034,6 +2034,44 @@ test("normalization restores previously unsupported plus rounds from stored orig
   assert.equal(normalizeFundingInsightCard(card).financing.round, "B轮");
 });
 
+test("accepted intake article excerpts bind to a headline-only funding claim when V4 source links are missing", () => {
+  const entities = [
+    { entity_id: "EN-BAOYANG-HEADLINE", entity_type: "organization_candidate", canonical_name: "包养式" },
+    { entity_id: "EN-JANE-STREET", entity_type: "organization_candidate", canonical_name: "Jane Street", verification_status: "verified" },
+  ];
+  const claim = {
+    claim_id: "CL-FLUIDSTACK-INTAKE-TITLE",
+    claim_type: "funding",
+    verification_status: "accepted",
+    raw_id: "RAW-V4-CLAIM-WITHOUT-INTAKE-LINK",
+    subject: "包养式",
+    object: "15亿美元融资",
+    source_quote: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。",
+  };
+  const event = {
+    event_id: "EV-FLUIDSTACK-INTAKE-TITLE",
+    display_title_zh: claim.source_quote,
+    action: "完成融资",
+    object: "15亿美元融资",
+    metrics: ["15亿美元"],
+    entities: entities.map((entity) => entity.entity_id),
+    claim_refs: [claim.claim_id],
+    source_refs: [],
+  };
+  const sourceQuote = "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是Jane Street。";
+  const acceptedIntakeDocument = {
+    raw_id: "RAW-ACCEPTED-INTAKE-ARTICLE",
+    source_artifact_id: "SA-ACCEPTED-INTAKE-ARTICLE",
+    canonical_url: "https://chinaventure.com.cn/news/80-20260927-393454.html",
+    title_original: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。 投中网 · 12小时前",
+    intake_diagnostics: { key_excerpts: [{ type: "funding", text: sourceQuote }] },
+  };
+
+  const quotes = canonicalSourceQuoteBodies({ claims: [claim], sourceArtifacts: [], rawDocuments: [] }, event, [acceptedIntakeDocument]);
+  assert.ok(quotes.includes(sourceQuote));
+  assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], quotes)?.canonical_name, "Fluidstack");
+});
+
 test("a descriptive founder headline resolves only a uniquely named accepted recipient", () => {
   const entity = { entity_id: "EN-founder", entity_type: "organization_candidate", canonical_name: "哈工程教授创业，天使轮" };
   const claim = { claim_id: "CL-founder", claim_type: "funding", verification_status: "accepted", subject: entity.canonical_name,
