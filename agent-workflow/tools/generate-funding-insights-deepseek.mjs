@@ -341,6 +341,27 @@ export function canonicalSources(bundle, event) {
   }).filter(Boolean);
 }
 
+export function canonicalSourceQuoteBodies(bundle, event) {
+  const claimById = new Map((bundle.claims || []).map((claim) => [claim.claim_id, claim]));
+  const acceptedRawIds = new Set((event.claim_refs || [])
+    .map((claimId) => claimById.get(claimId))
+    .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted")
+    .map((claim) => claim.raw_id)
+    .filter(Boolean));
+  const claimBoundRaw = (bundle.rawDocuments || []).filter((raw) => acceptedRawIds.has(raw.raw_id));
+  // The accepted Claim's raw_id is a second canonical path to its source body.
+  // Some publication lanes have the accepted article excerpt on that RawDocument
+  // before the event/source_refs projection is fully hydrated.
+  const rawQuotes = claimBoundRaw.flatMap((raw) => [
+    raw.body_clean,
+    ...(raw.intake_diagnostics?.key_excerpts || []).map((excerpt) => excerpt.text),
+  ]);
+  return [...new Set([
+    ...canonicalSources(bundle, event).map((source) => clean(source.body_clean)),
+    ...rawQuotes.map(clean),
+  ].filter(Boolean))];
+}
+
 export function fundingResearchNameMatches(text, companyName) {
   const normalize = (value) => clean(value).normalize("NFKC").toLowerCase().replace(/\s+/gu, "");
   const name = normalize(companyName);
@@ -866,7 +887,7 @@ function buildCard(event, company, payload, sources, result, resolver, entityInd
 }
 
 async function processEvent(bundle, event, entityIndex, entityDecisions, companyIdentityReview) {
-  const eventSourceQuotes = canonicalSources(bundle, event).map((source) => source.body_clean);
+  const eventSourceQuotes = canonicalSourceQuoteBodies(bundle, event);
   const company = subjectCompanyForEvent(event, bundle.entities, entityIndex, bundle.claims, eventSourceQuotes);
   if (!company) return { event_id: event.event_id, status: "blocked", problems: ["subject_company_unresolved"] };
   const research = await researchSources(bundle, event, company);

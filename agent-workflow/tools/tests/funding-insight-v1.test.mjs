@@ -35,7 +35,13 @@ import {
   subjectCompanyForEvent,
   verifiedFundingEventCardCoverageProblems,
 } from "../funding-insight-v1-utils.mjs";
-import { canonicalSources, fundingHistory, recoveryCardsFromGit, fundingResearchNameMatches } from "../generate-funding-insights-deepseek.mjs";
+import {
+  canonicalSourceQuoteBodies,
+  canonicalSources,
+  fundingHistory,
+  recoveryCardsFromGit,
+  fundingResearchNameMatches,
+} from "../generate-funding-insights-deepseek.mjs";
 
 test("accepted financing round takes precedence over infrastructure product descriptions", () => {
   const event = { claim_refs: ["CL-C"], object: "软硬一体基础设施支撑具身智能产业落地", display_title_zh: "地瓜机器人完成4亿美元C轮融资" };
@@ -1958,6 +1964,7 @@ test("headline-only Claims resolve through their event's full canonical source b
     claim_id: "CL-FLUIDSTACK-TITLE-ONLY",
     claim_type: "funding",
     verification_status: "accepted",
+    raw_id: "RAW-FLUIDSTACK",
     subject: "包养式",
     object: "15亿美元融资",
     source_quote: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。",
@@ -1970,14 +1977,34 @@ test("headline-only Claims resolve through their event's full canonical source b
     metrics: ["15亿美元"],
     entities: entities.map((entity) => entity.entity_id),
     claim_refs: [claim.claim_id],
+    source_refs: [],
   };
-  const company = subjectCompanyForEvent(event, entities, {}, [claim], [
-    "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。",
-  ]);
+  const sourceBody = "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是今年频登媒体头条的量化交易巨头Jane Street。";
+  const bundle = {
+    claims: [claim],
+    sourceArtifacts: [],
+    rawDocuments: [
+      { raw_id: "RAW-FLUIDSTACK", source_artifact_id: "SA-FLUIDSTACK", body_clean: sourceBody },
+      { raw_id: "RAW-OTHER", body_clean: "近日，外媒爆出Unrelated Labs完成15亿美元融资。" },
+    ],
+  };
+  const sourceQuotes = canonicalSourceQuoteBodies(bundle, event);
+  const company = subjectCompanyForEvent(event, entities, {}, [claim], sourceQuotes);
 
+  assert.ok(sourceQuotes.includes(sourceBody));
   assert.equal(company?.canonical_name, "Fluidstack");
   assert.notEqual(company?.entity_id, "EN-BAOYANG-HEADLINE");
   assert.notEqual(company?.entity_id, "EN-JANE-STREET");
+
+  const excerptOnlyQuotes = canonicalSourceQuoteBodies({
+    ...bundle,
+    rawDocuments: [{
+      raw_id: "RAW-FLUIDSTACK",
+      intake_diagnostics: { key_excerpts: [{ type: "funding", text: sourceBody }] },
+    }],
+  }, event);
+  assert.ok(excerptOnlyQuotes.includes(sourceBody));
+  assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], excerptOnlyQuotes)?.canonical_name, "Fluidstack");
 });
 
 test("normalization restores previously unsupported plus rounds from stored original evidence", () => {
