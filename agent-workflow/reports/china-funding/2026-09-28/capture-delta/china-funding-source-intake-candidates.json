@@ -1,37 +1,19 @@
 {
-  "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
   "date": "2026-09-28",
-  "generated_at": "2026-09-28T13:23:35.285Z",
-  "status": "failed",
-  "last_collection_at": "2026-09-28T00:15:39.011Z",
-  "failed_stage": "projections",
-  "stages": [
-    {
-      "id": "capture",
-      "status": "passed",
-      "started_at": "2026-09-28T13:21:25.770Z",
-      "reused": true,
-      "source_stage_reason": "explicit_user_secondary_search_sources_only",
-      "secondary_search_candidate_count": 3,
-      "reused_source_count": 105,
-      "new_candidate_count": 3,
-      "finished_at": "2026-09-28T13:21:42.123Z"
-    },
-    {
-      "id": "facts",
-      "status": "passed",
-      "started_at": "2026-09-28T13:21:42.124Z",
-      "finished_at": "2026-09-28T13:23:15.166Z"
-    },
-    {
-      "id": "projections",
-      "status": "failed",
-      "started_at": "2026-09-28T13:23:15.166Z",
-      "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-      "finished_at": "2026-09-28T13:23:35.153Z"
-    }
+  "generated_at": "2026-09-28T00:15:39.011Z",
+  "mode": "data_center_source_intake",
+  "source_id": "china-funding",
+  "source_label": "国内融资独立监测",
+  "status": "collected",
+  "discovered_count": 3,
+  "source_item_count": 3,
+  "raw_candidate_count": 53,
+  "failures": [
+    "36kr: list https://pitchhub.36kr.com/: no readable funding article links",
+    "qbitai: list https://www.qbitai.com/: no readable funding article links",
+    "jiqizhixin: list https://www.jiqizhixin.com/: no readable funding article links"
   ],
-  "sources": [
+  "diagnostics": [
     {
       "source_id": "pedaily",
       "registry_id": "cn-pedaily",
@@ -101,34 +83,7 @@
       "capped": 2,
       "status": "collected",
       "response_ms": 16778,
-      "completed_at": "2026-09-28T00:13:09.758Z",
-      "raw_count": 34,
-      "readable_count": 34,
-      "accepted_claims": 8,
-      "verified_event_ids": [
-        "EV-589b3b522be5b280",
-        "EV-3ca24f79062a359e",
-        "EV-f01ed5ae8bd115bc",
-        "EV-168535f69d324a17",
-        "EV-71d477e3af99ef9a",
-        "EV-8c634244a6a6d408"
-      ],
-      "funding_event_ids": [
-        "EV-589b3b522be5b280",
-        "EV-3ca24f79062a359e",
-        "EV-f01ed5ae8bd115bc",
-        "EV-168535f69d324a17",
-        "EV-71d477e3af99ef9a",
-        "EV-8c634244a6a6d408"
-      ],
-      "china_funding_event_ids": [
-        "EV-589b3b522be5b280"
-      ],
-      "card_ids": [
-        "FI-a2fd2365924904e7",
-        "FI-86634a7717d63426"
-      ],
-      "latest_disclosure": "2026-09-28T08:46:00+08:00"
+      "completed_at": "2026-09-28T00:13:09.758Z"
     },
     {
       "source_id": "chinaventure",
@@ -198,23 +153,7 @@
       "capped": 0,
       "status": "collected",
       "response_ms": 21909,
-      "completed_at": "2026-09-28T00:13:31.667Z",
-      "raw_count": 14,
-      "readable_count": 14,
-      "accepted_claims": 7,
-      "verified_event_ids": [
-        "EV-79d08b14ff147531",
-        "EV-9be00d0621b59529"
-      ],
-      "funding_event_ids": [
-        "EV-79d08b14ff147531",
-        "EV-9be00d0621b59529"
-      ],
-      "china_funding_event_ids": [],
-      "card_ids": [
-        "FI-85004d0ca806b8ac"
-      ],
-      "latest_disclosure": "2026-09-28T03:30:00.000Z"
+      "completed_at": "2026-09-28T00:13:31.667Z"
     },
     {
       "source_id": "36kr",
@@ -286,21 +225,7 @@
       "capped": 0,
       "status": "partial",
       "response_ms": 34849,
-      "completed_at": "2026-09-28T00:14:06.516Z",
-      "raw_count": 13,
-      "readable_count": 13,
-      "accepted_claims": 2,
-      "verified_event_ids": [
-        "EV-87d382f1816746c4",
-        "EV-acb54f84cd8e9d94"
-      ],
-      "funding_event_ids": [
-        "EV-87d382f1816746c4",
-        "EV-acb54f84cd8e9d94"
-      ],
-      "china_funding_event_ids": [],
-      "card_ids": [],
-      "latest_disclosure": "2026-09-28T13:21:29.000Z"
+      "completed_at": "2026-09-28T00:14:06.516Z"
     },
     {
       "source_id": "cyzone",
@@ -370,17 +295,7 @@
       "capped": 0,
       "status": "collected",
       "response_ms": 23410,
-      "completed_at": "2026-09-28T00:14:29.926Z",
-      "raw_count": 13,
-      "readable_count": 13,
-      "accepted_claims": 0,
-      "verified_event_ids": [],
-      "funding_event_ids": [],
-      "china_funding_event_ids": [],
-      "card_ids": [
-        "FI-5a53c657c45faf9b"
-      ],
-      "latest_disclosure": "2026-09-11T00:00:00+08:00"
+      "completed_at": "2026-09-28T00:14:29.926Z"
     },
     {
       "source_id": "cls",
@@ -450,15 +365,7 @@
       "capped": 3,
       "status": "collected",
       "response_ms": 21782,
-      "completed_at": "2026-09-28T00:14:51.708Z",
-      "raw_count": 22,
-      "readable_count": 22,
-      "accepted_claims": 0,
-      "verified_event_ids": [],
-      "funding_event_ids": [],
-      "china_funding_event_ids": [],
-      "card_ids": [],
-      "latest_disclosure": "2026-09-26T23:00:00.000Z"
+      "completed_at": "2026-09-28T00:14:51.708Z"
     },
     {
       "source_id": "qbitai",
@@ -530,17 +437,7 @@
       "capped": 0,
       "status": "partial",
       "response_ms": 25424,
-      "completed_at": "2026-09-28T00:15:17.132Z",
-      "raw_count": 12,
-      "readable_count": 12,
-      "accepted_claims": 0,
-      "verified_event_ids": [],
-      "funding_event_ids": [],
-      "china_funding_event_ids": [],
-      "card_ids": [
-        "FI-257e4f42c36415ea"
-      ],
-      "latest_disclosure": "2026-09-14T00:00:00+08:00"
+      "completed_at": "2026-09-28T00:15:17.132Z"
     },
     {
       "source_id": "jiqizhixin",
@@ -612,32 +509,67 @@
       "capped": 0,
       "status": "partial",
       "response_ms": 21816,
-      "completed_at": "2026-09-28T00:15:38.948Z",
-      "raw_count": 0,
-      "readable_count": 0,
-      "accepted_claims": 0,
-      "verified_event_ids": [],
-      "funding_event_ids": [],
-      "china_funding_event_ids": [],
-      "card_ids": [],
-      "latest_disclosure": null
+      "completed_at": "2026-09-28T00:15:38.948Z"
     }
   ],
-  "totals": {
-    "sources_attempted": 7,
-    "sources_failed": 0,
-    "candidates": 110,
-    "readable_documents": 108,
-    "accepted_claims": 17,
-    "verified_events": 10,
-    "funding_events": 10,
-    "china_funding_events": 1,
-    "linked_organizations": 16,
-    "linked_products": 0,
-    "published_card_matches": 5
+  "channel_distribution": {
+    "china-funding": 53
   },
-  "publication": {
-    "status": "awaiting_publication_receipt"
+  "theme_distribution": {
+    "china-funding-independent": 53
   },
-  "metric_note": "候选按原文URL去重，事件及卡片跨来源按ID去重；组织含公司和投资主体。仅成功接纳的事实同步实体库，未核验产品保留候选；匹配已有卡不等于当日新增卡。来源失败不计为零事件日。"
+  "keyword_group_distribution": {
+    "important_funding": 53
+  },
+  "items": [
+    {
+      "acquisition_channel": "china-funding",
+      "original_id": "https://www.36kr.com/p/3996737880559493",
+      "url": "https://www.36kr.com/p/3996737880559493",
+      "title": "AI新材料公司获数千万天使轮融资，已合作固态电池与化工龙头丨36氪首发",
+      "summary": "",
+      "source": "36氪",
+      "source_region": "CN",
+      "source_registry_id": "cn-36kr-rss",
+      "published_at": "2026-09-24T01:32:00.000Z",
+      "category": "funding",
+      "query_theme": "china-funding-secondary-search",
+      "keyword_group": "important_funding",
+      "source_artifact_id": "china-funding-secondary",
+      "secondary_search": true
+    },
+    {
+      "acquisition_channel": "china-funding",
+      "original_id": "https://finance.eastmoney.com/a/202609253883982143.html",
+      "url": "https://finance.eastmoney.com/a/202609253883982143.html",
+      "title": "索格智算完成数千万元天使轮融资 复星创富领投",
+      "summary": "",
+      "source": "财联社《科创板日报》（东方财富转载）",
+      "source_region": "CN",
+      "source_registry_id": "cn-cls",
+      "published_at": "2026-09-24T16:00:00.000Z",
+      "category": "funding",
+      "query_theme": "china-funding-secondary-search",
+      "keyword_group": "important_funding",
+      "source_artifact_id": "china-funding-secondary",
+      "secondary_search": true
+    },
+    {
+      "acquisition_channel": "china-funding",
+      "original_id": "https://www.eeo.com.cn/2026/0928/1050750.shtml",
+      "url": "https://www.eeo.com.cn/2026/0928/1050750.shtml",
+      "title": "索格智算完成天使轮融资",
+      "summary": "",
+      "source": "投中网（经济观察网转载）",
+      "source_region": "CN",
+      "source_registry_id": "cn-chinaventure",
+      "published_at": "2026-09-28T03:30:00.000Z",
+      "category": "funding",
+      "query_theme": "china-funding-secondary-search",
+      "keyword_group": "important_funding",
+      "source_artifact_id": "china-funding-secondary",
+      "secondary_search": true
+    }
+  ],
+  "secondary_search_candidate_count": 3
 }

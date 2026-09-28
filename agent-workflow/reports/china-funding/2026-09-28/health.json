@@ -1,7 +1,7 @@
 {
   "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
   "date": "2026-09-28",
-  "generated_at": "2026-09-28T06:14:48.114Z",
+  "generated_at": "2026-09-28T13:23:35.285Z",
   "status": "failed",
   "last_collection_at": "2026-09-28T00:15:39.011Z",
   "failed_stage": "projections",
@@ -9,23 +9,26 @@
     {
       "id": "capture",
       "status": "passed",
-      "started_at": "2026-09-28T06:12:18.869Z",
+      "started_at": "2026-09-28T13:21:25.770Z",
       "reused": true,
-      "reused_accepted_capture": true,
-      "finished_at": "2026-09-28T06:12:25.219Z"
+      "source_stage_reason": "explicit_user_secondary_search_sources_only",
+      "secondary_search_candidate_count": 3,
+      "reused_source_count": 105,
+      "new_candidate_count": 3,
+      "finished_at": "2026-09-28T13:21:42.123Z"
     },
     {
       "id": "facts",
       "status": "passed",
-      "started_at": "2026-09-28T06:12:25.219Z",
-      "finished_at": "2026-09-28T06:14:23.239Z"
+      "started_at": "2026-09-28T13:21:42.124Z",
+      "finished_at": "2026-09-28T13:23:15.166Z"
     },
     {
       "id": "projections",
       "status": "failed",
-      "started_at": "2026-09-28T06:14:23.239Z",
+      "started_at": "2026-09-28T13:23:15.166Z",
       "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-      "finished_at": "2026-09-28T06:14:47.977Z"
+      "finished_at": "2026-09-28T13:23:35.153Z"
     }
   ],
   "sources": [
@@ -196,8 +199,8 @@
       "status": "collected",
       "response_ms": 21909,
       "completed_at": "2026-09-28T00:13:31.667Z",
-      "raw_count": 13,
-      "readable_count": 13,
+      "raw_count": 14,
+      "readable_count": 14,
       "accepted_claims": 7,
       "verified_event_ids": [
         "EV-79d08b14ff147531",
@@ -211,7 +214,7 @@
       "card_ids": [
         "FI-85004d0ca806b8ac"
       ],
-      "latest_disclosure": "2026-09-27T11:16:00.000Z"
+      "latest_disclosure": "2026-09-28T03:30:00.000Z"
     },
     {
       "source_id": "36kr",
@@ -284,18 +287,20 @@
       "status": "partial",
       "response_ms": 34849,
       "completed_at": "2026-09-28T00:14:06.516Z",
-      "raw_count": 12,
-      "readable_count": 12,
-      "accepted_claims": 1,
+      "raw_count": 13,
+      "readable_count": 13,
+      "accepted_claims": 2,
       "verified_event_ids": [
-        "EV-87d382f1816746c4"
+        "EV-87d382f1816746c4",
+        "EV-acb54f84cd8e9d94"
       ],
       "funding_event_ids": [
-        "EV-87d382f1816746c4"
+        "EV-87d382f1816746c4",
+        "EV-acb54f84cd8e9d94"
       ],
       "china_funding_event_ids": [],
       "card_ids": [],
-      "latest_disclosure": "2026-09-28T00:59:10.000Z"
+      "latest_disclosure": "2026-09-28T13:21:29.000Z"
     },
     {
       "source_id": "cyzone",
@@ -446,8 +451,8 @@
       "status": "collected",
       "response_ms": 21782,
       "completed_at": "2026-09-28T00:14:51.708Z",
-      "raw_count": 21,
-      "readable_count": 21,
+      "raw_count": 22,
+      "readable_count": 22,
       "accepted_claims": 0,
       "verified_event_ids": [],
       "funding_event_ids": [],
@@ -621,13 +626,13 @@
   "totals": {
     "sources_attempted": 7,
     "sources_failed": 0,
-    "candidates": 107,
-    "readable_documents": 105,
-    "accepted_claims": 16,
-    "verified_events": 9,
-    "funding_events": 9,
+    "candidates": 110,
+    "readable_documents": 108,
+    "accepted_claims": 17,
+    "verified_events": 10,
+    "funding_events": 10,
     "china_funding_events": 1,
-    "linked_organizations": 15,
+    "linked_organizations": 16,
     "linked_products": 0,
     "published_card_matches": 5
   },
