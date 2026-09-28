@@ -174749,23 +174749,111 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Arm Holding plc 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "本库融资记录写作“Arm Holding plc”；Arm 官方 2026 年报使用法定名称 Arm Holdings plc，相关融资报道分别写作 Arm Holding plc 与 Arm。这里保留数据源名称变体，不推断其为独立基金或完整投资组合。Olix 报道对轮次存在 Series B / Series C 标注差异，档案按本库交易记录列示并保留来源差异。",
+        "summary": "Arm Holding plc 是本库融资记录中的企业投资方名称。Arm Holdings plc 2026 年报将集团主营业务描述为 CPU、GPU、系统 IP、计算子系统及相关软件和工具的授权、营销与研发；截至 2026 年 3 月 31 日，集团披露投资合计 3.29 亿美元，其中包括早期非上市企业股权与经资本基金间接持有的投资。该数额是 Arm 集团合并财务报表中的投资资产，不是单独创投基金规模或基金回报。年报列出的投资案例包括 Kigen、NeuReality、Positron 等。",
+        "facts": [
+          {
+            "field": "business",
+            "label": "主营业务",
+            "value": "Arm Holdings plc 年报称，集团主营业务包括 CPU 设计 IP、GPU IP、系统 IP 和计算子系统的授权、营销、研究与开发。",
+            "source_id": "arm_fy26_business"
+          },
+          {
+            "field": "investment_assets_fy2026",
+            "label": "集团投资资产（截至 2026-03-31）",
+            "value": "FY2026 年报列示集团投资合计 3.29 亿美元：上市股份 9600 万美元、非上市股份 2.26 亿美元、其他实体贷款 700 万美元。该数据为集团会计账面投资，不等同独立基金 AUM、组合回报或 Arm 对任一公司的单笔出资额。",
+            "source_id": "arm_fy26_investments"
+          },
+          {
+            "field": "investment_focus",
+            "label": "非上市投资类型",
+            "value": "Arm 年报称非上市股份投资可能由集团直接持有，或经资本基金间接持有；对象为开展研发活动的非上市早期发展企业。",
+            "source_id": "arm_fy26_unlisted"
+          },
+          {
+            "field": "selected_investments",
+            "label": "年报列示的投资案例",
+            "value": "FY2026 年报股权投资清单列有 Kigen、NeuReality 与 Positron 等机构；这是年报摘录的代表性条目，不应视作完整投资组合。",
+            "source_id": "arm_fy26_examples"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 本轮参投 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资披露案例：Olix Computing Ltd. 于 2026-08-03 公布 3.12 亿美元融资；SiliconANGLE 将该轮标为 Series C，并报道 Arm Holding plc 参与。3.12 亿美元为整轮融资额，Arm 单独出资额未披露。",
             "source_id": "FISRC-6e2e57f27c26fd6b"
           },
           {
-            "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 本轮参投 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "同一笔 Olix 融资，TechTimes 报道将轮次标为 Series B，并写作 Arm 参与；与 SiliconANGLE 的 Series C 标注不一致。本库交易活动记录仍列 B 轮，需保留来源差异。该案例不是完整投资组合或业绩统计。",
             "source_id": "FISRC-a6c18c7d2adec363"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "address",
+            "label": "英国剑桥全球总部",
+            "value": "110 Fulbourn Road, Cambridge, CB1 9NJ, United Kingdom",
+            "url": "https://www.arm.com/company/offices",
+            "source_id": "arm_office_address"
+          },
+          {
+            "kind": "phone",
+            "label": "英国剑桥全球总部总机",
+            "value": "+44 (1223) 400 400",
+            "url": "https://www.arm.com/company/offices",
+            "source_id": "arm_office_phone"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "arm_fy26_business",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/armukconsolidatedannualr.htm",
+            "source_title": "Arm Holdings plc FY2026 Annual Report",
+            "source_content_hash": "8817a5d2872ca32c85a003d1ac25e2ab7ffdc0673f0393db823678bb43a76e7b",
+            "quote": "the licensing, marketing, research and development of CPU design intellectual property ('IP'), graphics processing unit IP, systems IP, compute subsystems ('CSS')",
+            "quote_hash": "665622ec3b629eb8d849febe0c822e4de9be4cba5bcef9a447b2871e14974eba"
+          },
+          {
+            "source_id": "arm_fy26_investments",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/armukconsolidatedannualr.htm",
+            "source_title": "Arm Holdings plc FY2026 Annual Report",
+            "source_content_hash": "8817a5d2872ca32c85a003d1ac25e2ab7ffdc0673f0393db823678bb43a76e7b",
+            "quote": "2026 2025 $m $m Investments in equity instruments designated as FVTOCI Listed shares 96 98 Unlisted shares 226 223 Unlisted shares held as current1 — 286 322 607 Loans receivable carried at amortised cost Loans to other entities 7 7 Total investments 329 614",
+            "quote_hash": "065430c6e4a5082e059ec691b9d42efe2462a3ce92be78bd577d3c51d5cbfb05"
+          },
+          {
+            "source_id": "arm_fy26_unlisted",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/armukconsolidatedannualr.htm",
+            "source_title": "Arm Holdings plc FY2026 Annual Report",
+            "source_content_hash": "8817a5d2872ca32c85a003d1ac25e2ab7ffdc0673f0393db823678bb43a76e7b",
+            "quote": "Unlisted shares represent either direct or indirect, through a capital fund, investments in unlisted early-stage development enterprises",
+            "quote_hash": "027b6740c02c9e544e15d1f6a998232f24964d64b224091886b6cd4de770b1a7"
+          },
+          {
+            "source_id": "arm_fy26_examples",
+            "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/armukconsolidatedannualr.htm",
+            "source_title": "Arm Holdings plc FY2026 Annual Report",
+            "source_content_hash": "8817a5d2872ca32c85a003d1ac25e2ab7ffdc0673f0393db823678bb43a76e7b",
+            "quote": "Kigen (UK) Limited Maverick Silicon Fund, LP NeuReality Limited Positron AI, Inc.",
+            "quote_hash": "3b8ed1c8dc098c0b1ef6cacce3ec6821a68136e72dd21147fbc37d80bf2b790a"
+          },
+          {
+            "source_id": "arm_office_address",
+            "source_url": "https://www.arm.com/company/offices",
+            "source_title": "Arm Worldwide Office – Arm",
+            "source_content_hash": "f38e2d87a9caceb4a0789097035edc0b119a27ee2c1cbab42014a9aa6df36e3c",
+            "quote": "Global Headquarters: 110 Fulbourn Road, Cambridge, CB1 9NJ, United Kingdom",
+            "quote_hash": "48bc231a7bfa56abc8e10430e2c9a274f298f1d6a665d73323629c57aa921d70"
+          },
+          {
+            "source_id": "arm_office_phone",
+            "source_url": "https://www.arm.com/company/offices",
+            "source_title": "Arm Worldwide Office – Arm",
+            "source_content_hash": "f38e2d87a9caceb4a0789097035edc0b119a27ee2c1cbab42014a9aa6df36e3c",
+            "quote": "Tel: +44 (1223) 400 400 (Reception)",
+            "quote_hash": "21a062df38554bce2002fc6d7a1219324cd516d844ab2e2dd95ee048c2e783ea"
+          },
           {
             "source_id": "FISRC-6e2e57f27c26fd6b",
             "source_url": "https://siliconangle.com/2026/08/03/netflix-co-founder-backs-312m-round-optical-inference-appliance-maker-olix/",
@@ -174783,7 +174871,7 @@
             "quote_hash": "a7fa871888210b71435b8557a41984a31510b8aa1ed30c0033b5014e5149109b"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       }
     },
     {
@@ -304847,19 +304935,190 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Bold Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "机构官网将其描述为风险投资机构，重点方向为健康与生命科学、深度科技与生产力；官网展示的投资与退出条目是机构自述及选列案例，不能代替基金整体业绩或完整投资组合。此次核验的官网页面未披露基金规模或 AUM，不作推定。",
+        "summary": "BOLD Capital Partners 是一家风险投资机构，官网称其关注新兴科学与技术，以及物理、数字、虚拟和生物领域的融合。官网列出的重点方向为健康与生命科学、深度科技与生产力，关注长寿、患者参与式健康管理和合成生物学等领域。当前团队页列出 Teymour Boutros-Ghali 为管理合伙人，Neal Bhadkamkar 与 Emilio Diez Barroso 为普通合伙人，Peter Diamandis 为合伙人。官网展示的组合公司及退出条目属于机构选列披露；本库另记录其参与 Liquid AI 2023 年种子轮的公开案例，不代表完整组合或回报。",
+        "facts": [
+          {
+            "field": "investment_thesis",
+            "label": "投资理念",
+            "value": "官网称 BOLD 寻找新兴科学与技术领域中致力于改造大型市场的创业者，并关注物理、数字、虚拟和生物世界的融合。",
+            "source_id": "bold_thesis"
+          },
+          {
+            "field": "investment_sectors",
+            "label": "重点投资方向",
+            "value": "官网将重点方向分为 Health & Life Sciences 与 Deep Tech & Productivity。",
+            "source_id": "bold_focus"
+          },
+          {
+            "field": "research_areas",
+            "label": "生命科学领域关注点",
+            "value": "官网称其具体关注长寿、患者参与式健康管理，以及与信息技术交叉的合成生物学。",
+            "source_id": "bold_focus_detail"
+          },
+          {
+            "field": "recent_investments",
+            "label": "官网列示的近期投资",
+            "value": "官网首页将 Elara Spatial、Centivax、Near Space Labs、ProRata.ai 与 Aqtual 列为 Recent Investments；这是页面当时选列内容，不是完整组合清单。",
+            "source_id": "bold_recent"
+          },
+          {
+            "field": "managing_partner",
+            "label": "管理合伙人",
+            "value": "官网团队页列 Teymour Boutros-Ghali 为 Managing Partner。",
+            "source_id": "bold_team_tbg"
+          },
+          {
+            "field": "general_partners",
+            "label": "普通合伙人",
+            "value": "官网团队页列 Neal Bhadkamkar 为 General Partner。",
+            "source_id": "bold_team_neal"
+          },
+          {
+            "field": "general_partner",
+            "label": "普通合伙人",
+            "value": "官网团队页列 Emilio Diez Barroso 为 General Partner。",
+            "source_id": "bold_team_emilio"
+          },
+          {
+            "field": "partner",
+            "label": "合伙人",
+            "value": "官网团队页列 Peter Diamandis 为 Partner。",
+            "source_id": "bold_team_peter"
+          },
+          {
+            "field": "selected_exit_deep_longevity",
+            "label": "官网披露退出案例：Deep Longevity",
+            "value": "官网组合页将 Deep Longevity 标注为 IPO（SEHK:0575.HK）；此为单个组合案例，不代表基金整体退出倍数或回报率。",
+            "source_id": "bold_exit_deep_longevity"
+          },
+          {
+            "field": "selected_exit_insilico",
+            "label": "官网披露退出案例：Insilico Medicine",
+            "value": "官网组合页将 Insilico Medicine 标注为 IPO（3696.HK）；此为单个组合案例，不代表基金整体退出倍数或回报率。",
+            "source_id": "bold_exit_insilico"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 本轮参投 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资披露案例：Liquid AI 于 2023-12-06 公布 3750 万美元种子轮融资，TechCrunch 将 Bold Capital Partners 列入参与方。3750 万美元是整轮金额，未披露 BOLD 单独出资额；该案例不代表完整投资组合。",
             "source_id": "FISRC-d1080395d67df2c7"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "email",
+            "label": "机构一般联系邮箱",
+            "value": "bold@boldcapitalpartners.com",
+            "url": "https://boldcapitalpartners.com/",
+            "source_id": "bold_contact"
+          },
+          {
+            "kind": "address",
+            "label": "加利福尼亚州圣莫尼卡办公室",
+            "value": "225 Santa Monica Blvd, Suite 900, Santa Monica, CA 90401",
+            "url": "https://boldcapitalpartners.com/",
+            "source_id": "bold_contact"
+          },
+          {
+            "kind": "address",
+            "label": "马萨诸塞州波士顿办公室",
+            "value": "100 Cambridge Street, Boston, MA 02114",
+            "url": "https://boldcapitalpartners.com/",
+            "source_id": "bold_contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "bold_thesis",
+            "source_url": "https://boldcapitalpartners.com/",
+            "source_title": "Investing in People and Technologies that Transform the World — BOLD Capital Partners",
+            "source_content_hash": "867ac0dbeb8c30d789edbd33dc0ef41cb8896646d7866bf5b3bd785050f60a74",
+            "quote": "BOLD is a venture capital firm that seeks entrepreneurs and companies who share a fierce vision for a brighter tomorrow.",
+            "quote_hash": "26d421d881fd359e9bd82ef0f126c50a17b4ba80d8f809bafa0050c519ab8767"
+          },
+          {
+            "source_id": "bold_recent",
+            "source_url": "https://boldcapitalpartners.com/",
+            "source_title": "Investing in People and Technologies that Transform the World — BOLD Capital Partners",
+            "source_content_hash": "867ac0dbeb8c30d789edbd33dc0ef41cb8896646d7866bf5b3bd785050f60a74",
+            "quote": "Recent Investments Elara Spatial Centivax Near Space Labs ProRata.ai Aqtual",
+            "quote_hash": "c53df8bbc2eb039cf449627d00166e457e9be501af153d4723b6b35ea92629a6"
+          },
+          {
+            "source_id": "bold_contact",
+            "source_url": "https://boldcapitalpartners.com/",
+            "source_title": "Investing in People and Technologies that Transform the World — BOLD Capital Partners",
+            "source_content_hash": "867ac0dbeb8c30d789edbd33dc0ef41cb8896646d7866bf5b3bd785050f60a74",
+            "quote": "225 Santa Monica Blvd, Suite 900 Santa Monica, CA 90401 100 Cambridge Street Boston, MA 02114 Email us (bold@boldcapitalpartners.com)",
+            "quote_hash": "3765649cdfb6e9c4bb2e019a1912cc8c0c8df8ff4077042fe0c2acd8dbf073bc"
+          },
+          {
+            "source_id": "bold_team_tbg",
+            "source_url": "https://boldcapitalpartners.com/team/",
+            "source_title": "Team — BOLD Capital Partners",
+            "source_content_hash": "76fadb827eaa49ea99f5c0960172fad4353ba3d5c2f567ec69ed1dddcf48f08b",
+            "quote": "Teymour Boutros-Ghali Managing Partner",
+            "quote_hash": "6b49558627891c24f6250e4fc7dc524da6de63135fb2834c488cc7c133aef782"
+          },
+          {
+            "source_id": "bold_team_neal",
+            "source_url": "https://boldcapitalpartners.com/team/",
+            "source_title": "Team — BOLD Capital Partners",
+            "source_content_hash": "76fadb827eaa49ea99f5c0960172fad4353ba3d5c2f567ec69ed1dddcf48f08b",
+            "quote": "Neal Bhadkamkar General Partner",
+            "quote_hash": "7ec0e3d46db01ebbe59a3d1f1d4c2e153a3a9eee28a1591001baebf2b2abd8fd"
+          },
+          {
+            "source_id": "bold_team_emilio",
+            "source_url": "https://boldcapitalpartners.com/team/",
+            "source_title": "Team — BOLD Capital Partners",
+            "source_content_hash": "76fadb827eaa49ea99f5c0960172fad4353ba3d5c2f567ec69ed1dddcf48f08b",
+            "quote": "Emilio Diez Barroso General Partner",
+            "quote_hash": "e00cdb66395003f63b5c233d55f0597aa4c8dd81ec232308d6fd6797b9c6032a"
+          },
+          {
+            "source_id": "bold_team_peter",
+            "source_url": "https://boldcapitalpartners.com/team/",
+            "source_title": "Team — BOLD Capital Partners",
+            "source_content_hash": "76fadb827eaa49ea99f5c0960172fad4353ba3d5c2f567ec69ed1dddcf48f08b",
+            "quote": "Peter Diamandis Partner",
+            "quote_hash": "666598d4e2b7b3dc2b018447d983d48d648fadf0396a62af1c34f4faa0b03b5c"
+          },
+          {
+            "source_id": "bold_focus",
+            "source_url": "https://boldcapitalpartners.com/companies/",
+            "source_title": "Companies — BOLD Capital Partners",
+            "source_content_hash": "66bff00f6a3e1df71760d628e080a19ab1a79dd17a40cfd5799bb9c29fccb777",
+            "quote": "01. Health & Life Sciences 02. Deep Tech & Productivity",
+            "quote_hash": "b26f511ba4cb7ffac9f19c7e6f553487a2099f6c7f0d34f427cfadfd7694843f"
+          },
+          {
+            "source_id": "bold_exit_deep_longevity",
+            "source_url": "https://boldcapitalpartners.com/companies/",
+            "source_title": "Companies — BOLD Capital Partners",
+            "source_content_hash": "66bff00f6a3e1df71760d628e080a19ab1a79dd17a40cfd5799bb9c29fccb777",
+            "quote": "Deep Longevity EXIT: IPO (SEHK:0575.HK)",
+            "quote_hash": "f7fa52a12a4d842ccf180e77e2da74c75b3f8052d1f39c939adc749ff88c428d"
+          },
+          {
+            "source_id": "bold_focus_detail",
+            "source_url": "https://boldcapitalpartners.com/companies/",
+            "source_title": "Companies — BOLD Capital Partners",
+            "source_content_hash": "66bff00f6a3e1df71760d628e080a19ab1a79dd17a40cfd5799bb9c29fccb777",
+            "quote": "Areas of specific focus include longevity, patient-enabled health management, and synthetic biology as it impacts information technology.",
+            "quote_hash": "a3039a0e60b7c425c301cc61a802997cce3314bf088232e6cc358e53ebf08aeb"
+          },
+          {
+            "source_id": "bold_exit_insilico",
+            "source_url": "https://boldcapitalpartners.com/companies/",
+            "source_title": "Companies — BOLD Capital Partners",
+            "source_content_hash": "66bff00f6a3e1df71760d628e080a19ab1a79dd17a40cfd5799bb9c29fccb777",
+            "quote": "Insilico Medicine EXIT: IPO (3696.HK)",
+            "quote_hash": "1f5244421c6385b5b9b8d1eac8cc706d68cf5a2607ced149348f104bb1f2ce5a"
+          },
           {
             "source_id": "FISRC-d1080395d67df2c7",
             "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
@@ -304869,7 +305128,7 @@
             "quote_hash": "49f583d6cee7550dd1b51e2504cda8c5e0714ed445a88f97e05699c565b7a732"
           }
         ],
-        "last_verified_at": "2026-09-26"
+        "last_verified_at": "2026-09-28"
       }
     },
     {
