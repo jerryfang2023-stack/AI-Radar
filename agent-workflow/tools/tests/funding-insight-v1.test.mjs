@@ -2149,6 +2149,40 @@ test("an exact event source artifact reference binds its accepted intake article
   assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], quotes)?.canonical_name, "Fluidstack");
 });
 
+test("an unqualified event amount resolves its recipient only from an exact same-sentence proceeds amount", () => {
+  const entities = [
+    { entity_id: "EN-HEADLINE", entity_type: "organization_candidate", canonical_name: "“包养式" },
+    { entity_id: "EN-FLUIDSTACK-PHRASE", entity_type: "organization_candidate", canonical_name: "外媒爆出AI基础设施公司Fluidstack" },
+  ];
+  const claim = {
+    claim_id: "CL-FLUIDSTACK-UNQUALIFIED-METRIC",
+    claim_type: "funding",
+    verification_status: "accepted",
+    subject: "“包养式",
+    object: "”，估值1200亿 60天内，这家公司的估值翻了2.4倍。",
+    source_quote: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。",
+  };
+  const event = {
+    event_id: "EV-FLUIDSTACK-UNQUALIFIED-METRIC",
+    display_title_zh: "“包养式融资”，估值1200亿 60天内，这家公司的估值翻了2.4倍。",
+    action: "完成融资",
+    object: "”，估值1200亿 60天内，这家公司的估值翻了2.4倍。",
+    metrics: ["15亿", "180亿", "1200亿", "7.5亿", "75亿"],
+    entities: entities.map((entity) => entity.entity_id),
+    claim_refs: [claim.claim_id],
+    source_refs: ["SA-FLUIDSTACK-ARTICLE"],
+  };
+  const fundingExcerpt = "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，投后估值180亿美元（约1200亿人民币），领投方是Jane Street。";
+
+  assert.equal(subjectCompanyForEvent(event, entities, {}, [claim], [fundingExcerpt])?.canonical_name, "Fluidstack");
+  assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claim], [
+    "近日，外媒爆出AI基础设施公司Fluidstack完成7.5亿美元融资，本轮投后估值15亿美元，领投方是Jane Street。",
+  ])?.canonical_name, "Fluidstack");
+  assert.notEqual(subjectCompanyForEvent(event, entities, {}, [claim], [
+    "近日，外媒爆出AI基础设施公司Fluidstack完成15亿美元融资，同时还完成15亿人民币融资。",
+  ])?.canonical_name, "Fluidstack");
+});
+
 test("event proceeds metric anchors a recipient when objects only carry valuation or a generic label", () => {
   const entities = [
     { entity_id: "EN-BAOYANG-HEADLINE", entity_type: "organization_candidate", canonical_name: "包养式" },
