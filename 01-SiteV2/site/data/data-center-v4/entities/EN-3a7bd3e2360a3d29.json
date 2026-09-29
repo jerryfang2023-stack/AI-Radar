@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -204,7 +204,7 @@
       "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-03-12",
-    "lastSeen": "2026-09-28",
+    "lastSeen": "2026-09-29",
     "relationIds": [
       "REL2-59587a82f0b820bc",
       "REL2-a3bd8b736cbfac80",
@@ -361,7 +361,7 @@
     "timeline": [
       {
         "id": "EV-defd9eb250a2b925",
-        "dataDate": "2026-09-28",
+        "dataDate": "2026-09-29",
         "date": "2026-09-28",
         "eventType": "partnership",
         "eventTypeLabel": "合作",
@@ -374,8 +374,7 @@
           "EN-478676438ee161a3",
           "EN-7d3194f79e645c42",
           "EN-3a7bd3e2360a3d29",
-          "EN-968e2d5b08687bf4",
-          "EN-9fbf261b62c1d7c0"
+          "EN-6fcba5d96a4fadfd"
         ]
       },
       {
@@ -3347,6 +3346,7 @@
         "EV-ef1de880e4ef9f75",
         "EV-acdeebead5324344",
         "EV-68d5a02e5213b43c",
+        "EV-33b0fd6c3d3fac0d",
         "EV-da26b43d3924136e",
         "EV-96b70ec91c60db68",
         "EV-2bb9ea947e9541c3",
@@ -3412,6 +3412,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-33bca85880dfffd7",
+        "EV-e8fbba10b2a8f5aa",
+        "EV-7c738cbe5d808aa3",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -3685,6 +3688,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-491c6b59dce2d133",
+        "EV-d36e3bb9ccc4899a",
+        "EV-fbf9e0ef3eede59d",
         "EV-2a5803953f698f4c",
         "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
@@ -3815,6 +3821,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-inference_optimization",
+        "TX-technology-open_weights",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-product_form-chip_accelerator",
@@ -3844,7 +3852,6 @@
         "TX-industry-legal_services",
         "TX-technology-code_generation",
         "TX-product_form-model_api_service",
-        "TX-technology-open_weights",
         "TX-use_case-customer_support",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -3852,7 +3859,6 @@
         "TX-technology-long_context",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
-        "TX-technology-inference_optimization",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -3883,7 +3889,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-e463d05a14e8697f",
@@ -4074,12 +4080,15 @@
       "object_type": "entity",
       "event_id": "EV-defd9eb250a2b925",
       "claim_refs": [
-        "CL-f39ed204c2fef275"
+        "CL-f1fa543199c2f87d",
+        "CL-32bfeac3ea451ced",
+        "CL-e1f6d4e3f63d3145",
+        "CL-21bfb79bd1d14d76"
       ],
       "source_refs": [
-        "SA-e6afad8c32a04071"
+        "SA-ecb768cbc3a1a0a1"
       ],
-      "data_date": "2026-09-28",
+      "data_date": "2026-09-29",
       "status": "verified"
     },
     {
@@ -4532,6 +4541,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-30de3f563325d174",
         "EV-857d7186b873e0ed",
         "EV-ca32d5e2f28622ef",
         "EV-293d6feac5b8efab",
@@ -4996,7 +5006,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "TX-technology-agentic_execution",
@@ -5237,6 +5247,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-7c738cbe5d808aa3",
+        "EV-87b77e34bbd0eb57",
         "EV-06c2f2803729eae2",
         "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",

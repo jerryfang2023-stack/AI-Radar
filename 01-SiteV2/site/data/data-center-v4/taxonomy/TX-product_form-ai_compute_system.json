@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -91,6 +91,7 @@
       "EV-1dc482e2fe2f10bc",
       "EV-7bc2e6744a92c81f",
       "EV-5d50eb202b478bd4",
+      "EV-68713c6bc3d559a8",
       "EV-09029303144c5e67",
       "EV-a67071a8550cb1be"
     ],
@@ -142,7 +143,7 @@
       "HW-9a39a7f449362f96"
     ],
     "firstSeen": "2026-05-08",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-09-29"
   },
   "events": [
     {
@@ -7582,6 +7583,89 @@
       "publisher": "IT之家（RSS）"
     },
     {
+      "id": "EV-68713c6bc3d559a8",
+      "dataDate": "2026-09-29",
+      "date": "2026-09-29",
+      "updatedDate": "2026-09-29",
+      "eventType": "capital_investment",
+      "eventTypeLabel": "资本性投资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "三星电机宣布 6.78 万亿韩元投资，提升 AI 服务器用 FCBGA 半导体基板产能",
+      "originalTitle": "",
+      "subject": "三星电机宣布 6.78 万亿韩元",
+      "action": "投资，提升 AI 服务器用 FCBGA 半导体基板产能",
+      "object": "三星电机宣布 6.78 万亿韩元投资，提升 AI 服务器用 FCBGA 半导体基板产能",
+      "metrics": [
+        "6.78 万",
+        "335.95 亿"
+      ],
+      "locations": [
+        "韩国"
+      ],
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a05bd25dcce3fbbc",
+        "EN-968e2d5b08687bf4"
+      ],
+      "entityNames": [
+        "三星电机",
+        "Samsung"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://ithome.com/1/008/110.htm",
+      "publisher": "IT之家（RSS）"
+    },
+    {
       "id": "EV-09029303144c5e67",
       "dataDate": "2026-09-14",
       "date": "2026-09-14",
@@ -7946,6 +8030,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-339abd378f4b60de",
+        "EV-42823d01190aba97",
         "EV-2470b13ea55496d0",
         "EV-26a5749d8604455a",
         "EV-375d04f7cc9746c6",
@@ -8056,6 +8142,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-7c738cbe5d808aa3",
+        "EV-87b77e34bbd0eb57",
         "EV-8061c8eb754e0542",
         "EV-857d7186b873e0ed",
         "EV-9ced0afc6d0d1f63",
@@ -8217,6 +8305,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-inference_optimization",
+        "TX-technology-open_weights",
         "TX-industry-energy_utilities",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -8260,8 +8350,8 @@
         "TX-industry-food_hospitality",
         "TX-industry-legal_services",
         "TX-technology-code_generation",
+        "TX-product_form-security_software",
         "TX-product_form-model_api_service",
-        "TX-technology-open_weights",
         "TX-use_case-customer_support",
         "TX-technology-speech_audio",
         "TX-deployment_model-cloud",
@@ -8299,7 +8389,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-0995103010d39563",
@@ -8433,6 +8523,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-2ad8b8a8fa63973b",
+        "EV-7c738cbe5d808aa3",
         "EV-1b912ec16c50fc0f",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
@@ -8655,6 +8747,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
@@ -8680,7 +8773,6 @@
         "TX-deployment_model-edge_device",
         "TX-industry-aerospace_defense",
         "TX-technology-code_generation",
-        "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -8712,7 +8804,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-cecdd8369134f75e",
@@ -8834,6 +8926,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-product_form-chip_accelerator",
@@ -8844,7 +8937,6 @@
         "TX-target_user-researcher",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_compute_system",
-        "TX-technology-open_weights",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
@@ -8933,6 +9025,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-70fe379f68abdbe9",
         "EV-a0ca934522418c0b",
         "EV-18223a8aeea7bcdd",
         "EV-83728e3b6c7736ce",
@@ -8990,7 +9083,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-bb144c85d7f4652d",

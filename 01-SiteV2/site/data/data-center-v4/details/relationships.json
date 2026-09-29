@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -54,6 +54,62 @@
   },
   "relationships": [
     {
+      "relationship_id": "REL2-11e40c4e561ab8a6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-b8c236d640d6a5fb",
+      "object_type": "entity",
+      "event_id": "EV-fc510a760a4c3f12",
+      "claim_refs": [
+        "CL-54b6a076606c6ea8",
+        "CL-17e66e5d18e8d6df"
+      ],
+      "source_refs": [
+        "SA-c8c1f5971878cdfe"
+      ],
+      "data_date": "2026-09-29",
+      "status": "verified",
+      "subjectName": "Anthropic",
+      "objectName": "Claude Mythos",
+      "predicateLabel": "发布",
+      "title": "Anthropic 发布 Claude Mythos",
+      "eventTitle": "2026 年 LLM 进展（截至目前）",
+      "eventDate": "2026-09-28",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-54b6a076606c6ea8",
+          "subject": "Anthropic",
+          "object": "Claude Mythos",
+          "quote": "Anthropic announced their new Claude Mythos model, and then said it was too dangerous to release beyond a trusted group of security researchers."
+        },
+        {
+          "id": "CL-17e66e5d18e8d6df",
+          "subject": "Anthropic",
+          "object": "Claude Fable 5",
+          "quote": "In June... Claude Fable 5 came out!"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-c8c1f5971878cdfe",
+          "publisher": "Simon Willison's Blog",
+          "url": "https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far"
+        }
+      ],
+      "sourceExcerpt": "Anthropic announced their new Claude Mythos model, and then said it was too dangerous to release beyond a trusted group of security researchers.",
+      "event": {
+        "id": "EV-fc510a760a4c3f12",
+        "title": "2026 年 LLM 进展（截至目前）",
+        "originalTitle": "2026 in LLMs (so far)",
+        "date": "2026-09-28",
+        "dataDate": "2026-09-29",
+        "eventTypeLabel": "模型发布"
+      }
+    },
+    {
       "relationship_id": "REL2-59587a82f0b820bc",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-3a7bd3e2360a3d29",
@@ -63,12 +119,15 @@
       "object_type": "entity",
       "event_id": "EV-defd9eb250a2b925",
       "claim_refs": [
-        "CL-f39ed204c2fef275"
+        "CL-f1fa543199c2f87d",
+        "CL-32bfeac3ea451ced",
+        "CL-e1f6d4e3f63d3145",
+        "CL-21bfb79bd1d14d76"
       ],
       "source_refs": [
-        "SA-e6afad8c32a04071"
+        "SA-ecb768cbc3a1a0a1"
       ],
-      "data_date": "2026-09-28",
+      "data_date": "2026-09-29",
       "status": "verified",
       "subjectName": "Apple",
       "objectName": "OpenAI",
@@ -79,26 +138,44 @@
       "sourceCount": 1,
       "claims": [
         {
-          "id": "CL-f39ed204c2fef275",
+          "id": "CL-f1fa543199c2f87d",
           "subject": "派早报：OpenAI 称与苹果",
           "object": "效果不佳",
-          "quote": "&lt;p&gt;OpenAI 称与苹果合作效果不佳&lt;/p&gt;&lt;p&gt;iPhone 4「天线门」媒体问答录像时隔十六年现身&lt;/p&gt;&lt;p&gt;F-Droid 2.0 发布&lt;/p&gt;&lt;p&gt;三星冰箱固件升级后罢工，影响韩国用户过中秋&lt;/p&gt;&lt;p&gt;Excel 单元格将支持数组&lt;/p&gt;&lt;p&gt;微软不再使用 Copilot + PC 品牌&lt;/p&gt;&lt;p&gt;看看就行的简讯&lt;/p&gt;&lt;p&gt;少数派的近期动态&lt;/p&gt;&lt;p&gt;你可能错过的好文章&lt;/p&gt;&lt;a href=&#34;https://sspai.com/post/115079&#34; target=&#34;_blank&#34;&gt;查看全文&lt;/a&gt;"
+          "quote": "派早报：OpenAI 称与苹果合作效果不佳"
+        },
+        {
+          "id": "CL-32bfeac3ea451ced",
+          "subject": "派早报：OpenAI 称与苹果",
+          "object": "效果不佳",
+          "quote": "据 OpenAI 与 SpaceXAI 的反垄断案 诉讼文件 ，其接入 Siri 的 ChatGPT 服务「持续表现不佳」（persistently underperforming），并未给平台带来预期的用户增长。"
+        },
+        {
+          "id": "CL-e1f6d4e3f63d3145",
+          "subject": "派早报：OpenAI 称与苹果",
+          "object": "效果不佳",
+          "quote": "文件显示，早在 2025 年 1 月，该合作便已显露疲态，公司随后下调了该渠道预计带来的每周活跃登录用户增量；直至 2026 年初，内部数据仍显示相关功能在苹果生态中的实际使用量极低。"
+        },
+        {
+          "id": "CL-21bfb79bd1d14d76",
+          "subject": "派早报：OpenAI 称与苹果",
+          "object": "效果不佳",
+          "quote": "OpenAI 曾向苹果提出为期两年的独家合作要求，但遭到苹果明确拒绝。"
         }
       ],
       "sources": [
         {
-          "id": "SA-e6afad8c32a04071",
+          "id": "SA-ecb768cbc3a1a0a1",
           "publisher": "少数派",
           "url": "https://sspai.com/post/115079"
         }
       ],
-      "sourceExcerpt": "&lt;p&gt;OpenAI 称与苹果合作效果不佳&lt;/p&gt;&lt;p&gt;iPhone 4「天线门」媒体问答录像时隔十六年现身&lt;/p&gt;&lt;p&gt;F-Droid 2.0 发布&lt;/p&gt;&lt;p&gt;三星冰箱固件升级后罢工，影响韩国用户过中秋&lt;/p&gt;&lt;p&gt;Excel 单元格将支持数组&lt;/p&gt;&lt;p&gt;微软不再使用 Copilot + PC 品牌&lt;/p&gt;&lt;p&gt;看看就行的简讯&lt;/p&gt;&lt;p&gt;少数派的近期动态&lt;/p&gt;&lt;p&gt;你可能错过的好文章&lt;/p&gt;&lt;a href=&#34;https://sspai.com/post/115079&#34; target=&#34;_blank&#34;&gt;查看全文&lt;/a&gt;",
+      "sourceExcerpt": "派早报：OpenAI 称与苹果合作效果不佳",
       "event": {
         "id": "EV-defd9eb250a2b925",
         "title": "派早报：OpenAI 称与苹果合作效果不佳",
         "originalTitle": "",
         "date": "2026-09-28",
-        "dataDate": "2026-09-28",
+        "dataDate": "2026-09-29",
         "eventTypeLabel": "合作"
       }
     },

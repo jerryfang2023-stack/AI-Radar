@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,6 +69,7 @@
       "EV-7add33b4c74dbf1a",
       "EV-c5643983538c6513",
       "EV-8a8b873af9de5127",
+      "EV-35cb7441cf13f241",
       "EV-57944eebac69d510",
       "EV-5b1bdc06406424b4",
       "EV-6272444f30281858",
@@ -98,7 +99,7 @@
       "EN-a42d5d95234db6c4"
     ],
     "firstSeen": "2026-02-10",
-    "lastSeen": "2026-09-23",
+    "lastSeen": "2026-09-29",
     "relationIds": [
       "REL2-61089e71e75b311e"
     ],
@@ -112,6 +113,7 @@
         "EV-c5643983538c6513"
       ],
       "deployments": [
+        "EV-35cb7441cf13f241",
         "EV-57944eebac69d510",
         "EV-5b1bdc06406424b4"
       ],
@@ -134,6 +136,34 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-35cb7441cf13f241",
+        "dataDate": "2026-09-29",
+        "date": "2026-09-29",
+        "eventType": "deployment",
+        "eventTypeLabel": "部署",
+        "eventGroup": "部署与案例",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Databricks Genie One 企业落地指南：如何分阶段推广 AI 数据同事",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-2dc010636b9dce91"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-2dc010636b9dce91",
+          "EN-8e1fa5aaf9fce079"
+        ]
+      },
       {
         "id": "EV-c8d5ff6ced937ca9",
         "dataDate": "2026-09-23",
@@ -1569,6 +1599,7 @@
         "EV-23ae55daa341be06",
         "EV-12ca2aae7bfcd080",
         "EV-acf1bcb321414706",
+        "EV-35cb7441cf13f241",
         "EV-0121f0a9e9a975ec",
         "EV-a1aea4a04b9e51c7",
         "EV-e869f17214557633",
@@ -1919,6 +1950,7 @@
         "EN-74bec9be9c8f2e09"
       ],
       "fdeIds": [
+        "FDE-c125850ff5c7fbd4",
         "FDE-3e499215265a81d5",
         "FDE-48afc88dde234ab1",
         "FDE-5314a0e746758b29",
@@ -1930,7 +1962,7 @@
         "HW-9d84fd7aa512dddd"
       ],
       "firstSeen": "2023-06-28",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "TX-ai_market_category-infrastructure_compute",
@@ -3342,6 +3374,8 @@
         "EV-8fcb52bb6ec980af",
         "EV-c0a65877001ed413",
         "EV-05a87b578967c83e",
+        "EV-7c738cbe5d808aa3",
+        "EV-87b77e34bbd0eb57",
         "EV-06c2f2803729eae2",
         "EV-b8eb460540c33d68",
         "EV-0d5a32aca724d30e",
@@ -4878,10 +4912,48 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-01-05",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     }
   ],
   "fde": [
+    {
+      "id": "FDE-c125850ff5c7fbd4",
+      "eventId": "EV-35cb7441cf13f241",
+      "dataDate": "2026-09-29",
+      "date": "2026-09-29",
+      "title": "Databricks Genie One 企业落地指南：如何分阶段推广 AI 数据同事",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "指南：如何分阶段推广 AI 数据同事",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://databricks.com/blog/how-roll-out-genie-one-step-step-enterprise-playbook",
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-8e1fa5aaf9fce079"
+      ]
+    },
     {
       "id": "FDE-e32500a9c4f90e91",
       "eventId": "EV-57944eebac69d510",
@@ -4935,6 +5007,55 @@
   ],
   "hardware": [],
   "fdeDossiers": [
+    {
+      "id": "FDED-0161f535e393a259",
+      "implementationKey": "0161f535e393a259",
+      "eventId": "EV-35cb7441cf13f241",
+      "eventIds": [
+        "EV-35cb7441cf13f241"
+      ],
+      "dataDate": "2026-09-29",
+      "date": "2026-09-28",
+      "title": "未披露 × 未披露：指南：如何分阶段推广 AI 数据同事",
+      "stage": "pilot",
+      "stageLabel": "试点",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "指南：如何分阶段推广 AI 数据同事",
+      "workflow": "Pilot users reach for Genie over their old workflow without being asked.",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-65425a8d785b5748",
+          "type": "implementation_update",
+          "stage": "pilot",
+          "date": "2026-09-28",
+          "dataDate": "2026-09-29",
+          "eventId": "EV-35cb7441cf13f241",
+          "eventTitle": "Databricks Genie One 企业落地指南：如何分阶段推广 AI 数据同事",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://databricks.com/blog/how-roll-out-genie-one-step-step-enterprise-playbook",
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-8e1fa5aaf9fce079"
+      ]
+    },
     {
       "id": "FDED-dab7d48af097ebe1",
       "implementationKey": "dab7d48af097ebe1",

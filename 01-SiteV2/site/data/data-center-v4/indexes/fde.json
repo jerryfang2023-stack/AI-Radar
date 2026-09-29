@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -53,6 +53,44 @@
     ]
   },
   "fde": [
+    {
+      "id": "FDE-c125850ff5c7fbd4",
+      "eventId": "EV-35cb7441cf13f241",
+      "dataDate": "2026-09-29",
+      "date": "2026-09-29",
+      "title": "Databricks Genie One 企业落地指南：如何分阶段推广 AI 数据同事",
+      "stage": "announced",
+      "stageLabel": "已公布",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "指南：如何分阶段推广 AI 数据同事",
+      "reportedNeed": "未披露",
+      "deliveryComponents": [],
+      "outcomes": [],
+      "metrics": [],
+      "undisclosedFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "workflow_before",
+        "workflow_after",
+        "delivery_model",
+        "team_composition",
+        "reported_need",
+        "systems_integrated",
+        "data_requirements",
+        "governance_controls",
+        "reported_delivery_components",
+        "reported_outcomes"
+      ],
+      "tags": [],
+      "sourceUrl": "https://databricks.com/blog/how-roll-out-genie-one-step-step-enterprise-playbook",
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-8e1fa5aaf9fce079"
+      ]
+    },
     {
       "id": "FDE-0577244415a9270b",
       "eventId": "EV-faa25b0b9ffbaa30",
@@ -7770,6 +7808,55 @@
   ],
   "fdeDossiers": [
     {
+      "id": "FDED-0161f535e393a259",
+      "implementationKey": "0161f535e393a259",
+      "eventId": "EV-35cb7441cf13f241",
+      "eventIds": [
+        "EV-35cb7441cf13f241"
+      ],
+      "dataDate": "2026-09-29",
+      "date": "2026-09-28",
+      "title": "未披露 × 未披露：指南：如何分阶段推广 AI 数据同事",
+      "stage": "pilot",
+      "stageLabel": "试点",
+      "customer": "未披露",
+      "vendor": "未披露",
+      "industry": "未披露",
+      "useCase": "指南：如何分阶段推广 AI 数据同事",
+      "workflow": "Pilot users reach for Genie over their old workflow without being asked.",
+      "systems": [],
+      "outcomes": [],
+      "observationCount": 1,
+      "completeness": 0.375,
+      "completenessPercent": 38,
+      "missingFields": [
+        "customer",
+        "vendor",
+        "industry",
+        "systems_integrated",
+        "reported_outcomes"
+      ],
+      "timeline": [
+        {
+          "observationId": "FDEO-65425a8d785b5748",
+          "type": "implementation_update",
+          "stage": "pilot",
+          "date": "2026-09-28",
+          "dataDate": "2026-09-29",
+          "eventId": "EV-35cb7441cf13f241",
+          "eventTitle": "Databricks Genie One 企业落地指南：如何分阶段推广 AI 数据同事",
+          "claimCount": 4,
+          "sourceCount": 1
+        }
+      ],
+      "tags": [],
+      "sourceUrl": "https://databricks.com/blog/how-roll-out-genie-one-step-step-enterprise-playbook",
+      "entityIds": [
+        "EN-2dc010636b9dce91",
+        "EN-8e1fa5aaf9fce079"
+      ]
+    },
+    {
       "id": "FDED-4aba8b22b39a76c3",
       "implementationKey": "4aba8b22b39a76c3",
       "eventId": "EV-cc0d955aa68445ea",
@@ -11456,41 +11543,41 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-28",
-      "funnel_id": "LF-160a13857fff4a1d",
+      "data_date": "2026-09-29",
+      "funnel_id": "LF-34a2f77f3d12cc07",
       "lens": "fde",
-      "date": "2026-09-28",
+      "date": "2026-09-29",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 97,
-      "original_sources": 83,
-      "valid_claims": 14,
-      "observations": 0,
-      "canonical_events": 6,
+      "raw_documents": 110,
+      "original_sources": 91,
+      "valid_claims": 15,
+      "observations": 1,
+      "canonical_events": 5,
       "blocker_counts": {
-        "no_source_bounded_event": 20,
-        "source_outside_daily_window": 41,
-        "non_event_or_index_title": 4,
-        "homepage_requires_original_event_source": 2,
-        "event_not_ai_relevant": 2,
-        "source_outside_funding_backfill_window": 5,
+        "event_not_ai_relevant": 4,
+        "no_source_bounded_event": 13,
+        "no_source_bounded_claim": 3,
+        "non_event_or_index_title": 6,
+        "source_outside_daily_window": 51,
+        "homepage_requires_original_event_source": 3,
+        "directory_page_not_event_source": 3,
+        "repository_page_requires_release_source": 2,
         "community_source_requires_original_event_source": 1,
-        "multi_event_roundup_not_single_event_source": 1,
-        "directory_page_not_event_source": 2,
-        "raw_source_quality_block": 12,
+        "raw_source_quality_block": 18,
         "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.8556701030927835,
-        "valid_claim_rate": 0.14432989690721648,
-        "observation_rate": 0,
-        "event_conversion_rate": 0.42857142857142855
+        "original_source_rate": 0.8272727272727273,
+        "valid_claim_rate": 0.13636363636363635,
+        "observation_rate": 0.06666666666666667,
+        "event_conversion_rate": 0.3333333333333333
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-28/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-29/monitoring-funnel.json"
     }
   ]
 }

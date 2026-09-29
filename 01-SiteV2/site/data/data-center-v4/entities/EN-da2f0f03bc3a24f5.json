@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -65,15 +65,17 @@
     "eventIds": [
       "EV-c6d84982982597aa",
       "EV-0fb1258b1013bd71",
-      "EV-4a06a6a6b94c3c71"
+      "EV-4a06a6a6b94c3c71",
+      "EV-8904cc7ddff2ec46"
     ],
     "viewpointIds": [],
     "classificationRefs": [
+      "TX-technology-inference_optimization",
       "TX-product_form-model"
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-20",
-    "lastSeen": "2026-09-03",
+    "lastSeen": "2026-09-29",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
@@ -86,10 +88,39 @@
         "EV-4a06a6a6b94c3c71"
       ],
       "hardware": [],
-      "organizationPeople": [],
+      "organizationPeople": [
+        "EV-8904cc7ddff2ec46"
+      ],
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8904cc7ddff2ec46",
+        "dataDate": "2026-09-29",
+        "date": "2026-09-28",
+        "eventType": "organization_people",
+        "eventTypeLabel": "组织与人员",
+        "eventGroup": "组织、政策与法律",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "World Labs 宣布加入 AMD，李飞飞将出任 AMD 执行副总裁兼首席科学家",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "inference_optimization",
+            "name": "推理优化",
+            "entityIds": [
+              "EN-da2f0f03bc3a24f5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-da2f0f03bc3a24f5"
+        ]
+      },
       {
         "id": "EV-0fb1258b1013bd71",
         "dataDate": "2026-09-03",
@@ -155,6 +186,35 @@
   "relatedEntities": [],
   "relationships": [],
   "taxonomyNodes": [
+    {
+      "id": "TX-technology-inference_optimization",
+      "name": "推理优化",
+      "nodeType": "technology",
+      "typeLabel": "技术",
+      "valueId": "inference_optimization",
+      "eventIds": [
+        "EV-42823d01190aba97",
+        "EV-346533cafe5e39d2",
+        "EV-492029b381c06283",
+        "EV-2c6707327367640f",
+        "EV-f7b60c0c63403f8c",
+        "EV-8904cc7ddff2ec46"
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-8335b00e8ab6241e",
+        "EN-7d3194f79e645c42",
+        "EN-77b30b8a88051252",
+        "EN-de6b71bf77ff4299",
+        "EN-da2f0f03bc3a24f5"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [
+        "HW-bc7449cedae06b7a"
+      ],
+      "firstSeen": "2026-07-10",
+      "lastSeen": "2026-09-29"
+    },
     {
       "id": "TX-product_form-model",
       "name": "模型",
@@ -316,6 +376,7 @@
         "EV-2ffc3377977da114",
         "EV-2fd730d0ad452334",
         "EV-fd21441fb6e143c3",
+        "EV-30de3f563325d174",
         "EV-857d7186b873e0ed",
         "EV-ca32d5e2f28622ef",
         "EV-293d6feac5b8efab",
@@ -780,7 +841,7 @@
         "HW-19692cd9428f2e0f"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     }
   ],
   "fde": [],
