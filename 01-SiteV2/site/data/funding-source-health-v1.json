@@ -1,28 +1,28 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-28T04:17:05.022Z",
-  "date": "2026-09-28",
-  "status": "passed",
-  "state": "healthy",
-  "last_checked_date": "2026-09-28",
+  "generated_at": "2026-09-29T09:07:40.042Z",
+  "date": "2026-09-29",
+  "status": "degraded",
+  "state": "projection_failed",
+  "last_checked_date": "2026-09-29",
   "latest_financing_date": "2026-09-23",
   "totals": {
-    "fetched": 353,
-    "funding_candidates": 89,
+    "fetched": 656,
+    "funding_candidates": 114,
     "verified_events": 1
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-09-28T00:14:14.417Z",
+      "last_success_at": "2026-09-29T08:51:42.080Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 86,
-      "latest_content_date": "",
+      "fetched_count": 316,
+      "latest_content_date": "2026-09-29",
       "duplicate_rate": 0,
-      "stale_rate": 0,
-      "funding_candidate_count": 0,
+      "stale_rate": 0.8571,
+      "funding_candidate_count": 7,
       "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
@@ -30,14 +30,14 @@
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-09-28T00:14:33.589Z",
+      "last_success_at": "2026-09-29T08:52:10.181Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 48,
-      "latest_content_date": "2026-09-23",
+      "fetched_count": 51,
+      "latest_content_date": "2026-09-29",
       "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 48,
+      "stale_rate": 0.9804,
+      "funding_candidate_count": 51,
       "verified_event_count": 0,
       "failures": [
         "RSS venturebeat-ai: HTTP 429"
@@ -46,53 +46,55 @@
     },
     {
       "id": "gdelt",
-      "status": "failed",
-      "last_success_at": "",
+      "status": "collected",
+      "last_success_at": "2026-09-29T09:02:53.346Z",
       "response_ms": null,
-      "http_status": "",
-      "fetched_count": 0,
+      "http_status": "200",
+      "fetched_count": 56,
       "latest_content_date": "",
-      "duplicate_rate": 0,
-      "stale_rate": 0,
-      "funding_candidate_count": 0,
+      "duplicate_rate": 0.4167,
+      "stale_rate": 1,
+      "funding_candidate_count": 12,
       "verified_event_count": 0,
-      "failures": [
-        "source collection command failed; see gdelt-source-run.log"
-      ],
+      "failures": [],
       "fallback_used": false
     },
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-09-28T00:22:05.589Z",
+      "last_success_at": "2026-09-29T08:58:26.912Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 102,
+      "fetched_count": 108,
       "latest_content_date": "2024-10-23",
-      "duplicate_rate": 0.0938,
+      "duplicate_rate": 0.0294,
       "stale_rate": 1,
-      "funding_candidate_count": 32,
+      "funding_candidate_count": 34,
       "verified_event_count": 1,
       "failures": [
-        "keyword-search pre-gate filtered 57 result(s): missing_ai_anchor_in_result=25; social_or_profile_source=20; broad_list_or_market_report=11; noise_term:career=1"
+        "keyword-search pre-gate filtered 55 result(s): missing_ai_anchor_in_result=22; broad_list_or_market_report=16; social_or_profile_source=14; directory_or_search_page=2; noise_term:dictionary=1",
+        "Anysearch business fallback for query \"(AI earbuds OR AI recorder OR AI smart ring) (funding OR raised OR financing) announced September 2026\": Anysearch Search service temporarily unavailable.",
+        "Anysearch fallback for query \"forward deployed engineer AI customer deployment announced September 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Anysearch returned 0 usable results",
+        "Exa fallback for query \"forward deployed engineer AI customer deployment announced September 2026 (\"customer story\" OR \"case study\" OR implementation OR workflow) (AI OR agent) (official OR customer OR company blog)\": Exa You have exceeded your credits limit. Please top up to keep using Exa at dashboard.exa.ai",
+        "Anysearch fallback for query \"AI procurement startup funding enterprise workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Anysearch returned 0 usable results",
+        "Exa fallback for query \"AI procurement startup funding enterprise workflow announced September 2026 (AI procurement OR tender OR \"contract awarded\" OR \"purchasing agreement\") (official OR government OR newsroom)\": Exa You have exceeded your credits limit. Please top up to keep using Exa at dashboard.exa.ai"
       ],
-      "fallback_used": false
+      "fallback_used": true
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-09-28T00:14:23.380Z",
+      "last_success_at": "2026-09-29T08:51:46.077Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 117,
-      "latest_content_date": "2026-09-23",
+      "fetched_count": 125,
+      "latest_content_date": "2026-09-29",
       "duplicate_rate": 0,
-      "stale_rate": 1,
-      "funding_candidate_count": 9,
+      "stale_rate": 0.9,
+      "funding_candidate_count": 10,
       "verified_event_count": 0,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429",
-        "RSS tldr-ai-newsletter: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429"
       ],
       "fallback_used": false
     }

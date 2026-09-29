@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -54,6 +54,32 @@
   },
   "relationships": [
     {
+      "relationship_id": "REL2-11e40c4e561ab8a6",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-c70eca6b0f88f44d",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-b8c236d640d6a5fb",
+      "object_type": "entity",
+      "event_id": "EV-fc510a760a4c3f12",
+      "claim_refs": [
+        "CL-54b6a076606c6ea8",
+        "CL-17e66e5d18e8d6df"
+      ],
+      "source_refs": [
+        "SA-c8c1f5971878cdfe"
+      ],
+      "data_date": "2026-09-29",
+      "status": "verified",
+      "subjectName": "Anthropic",
+      "objectName": "Claude Mythos",
+      "predicateLabel": "发布",
+      "title": "Anthropic 发布 Claude Mythos",
+      "eventTitle": "2026 年 LLM 进展（截至目前）",
+      "eventDate": "2026-09-28",
+      "sourceCount": 1
+    },
+    {
       "relationship_id": "REL2-59587a82f0b820bc",
       "relationship_version": "RELATION-V2.1",
       "subject_ref": "EN-3a7bd3e2360a3d29",
@@ -63,12 +89,15 @@
       "object_type": "entity",
       "event_id": "EV-defd9eb250a2b925",
       "claim_refs": [
-        "CL-f39ed204c2fef275"
+        "CL-f1fa543199c2f87d",
+        "CL-32bfeac3ea451ced",
+        "CL-e1f6d4e3f63d3145",
+        "CL-21bfb79bd1d14d76"
       ],
       "source_refs": [
-        "SA-e6afad8c32a04071"
+        "SA-ecb768cbc3a1a0a1"
       ],
-      "data_date": "2026-09-28",
+      "data_date": "2026-09-29",
       "status": "verified",
       "subjectName": "Apple",
       "objectName": "OpenAI",

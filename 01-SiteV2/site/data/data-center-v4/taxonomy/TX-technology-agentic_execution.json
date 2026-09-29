@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -291,6 +291,8 @@
       "EV-8fcb52bb6ec980af",
       "EV-c0a65877001ed413",
       "EV-05a87b578967c83e",
+      "EV-7c738cbe5d808aa3",
+      "EV-87b77e34bbd0eb57",
       "EV-06c2f2803729eae2",
       "EV-b8eb460540c33d68",
       "EV-0d5a32aca724d30e",
@@ -51502,6 +51504,294 @@
       "publisher": "sierra.ai"
     },
     {
+      "id": "EV-7c738cbe5d808aa3",
+      "dataDate": "2026-09-29",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-29",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "英伟达推出新平台以管控失控AI智能体",
+      "originalTitle": "Nvidia launches new platform for reining in rogue AI agents",
+      "subject": "Nvidia",
+      "action": "launches",
+      "object": "new platform for reining in rogue AI agents",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-c70eca6b0f88f44d",
+        "EN-bbdefa2950f49882",
+        "EN-7d3194f79e645c42",
+        "EN-ea3bd73e2b506e00"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Anthropic",
+        "Google",
+        "OpenAI",
+        "Meta"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents",
+      "publisher": "TechCrunch AI"
+    },
+    {
+      "id": "EV-87b77e34bbd0eb57",
+      "dataDate": "2026-09-29",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-29",
+      "eventType": "product_release",
+      "eventTypeLabel": "产品发布",
+      "eventGroup": "模型、产品与服务",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 发布 Open Agent Safety Platform：OpenShell 沙箱隔离 Agent，Sentry 借 BlueField-4 毫秒级隔离",
+      "originalTitle": "",
+      "subject": "NVIDIA",
+      "action": "发布",
+      "object": "Open Agent Safety Platform：OpenShell 沙箱隔离 Agent，Sentry 借 BlueField-4 毫秒级隔离",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-8d4321d936320802"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8d4321d936320802"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8d4321d936320802",
+        "EN-e58e3367c36e3c09",
+        "EN-27f2c6326a4df09d"
+      ],
+      "entityNames": [
+        "NVIDIA",
+        "Open Agent Safety",
+        "Open"
+      ],
+      "productName": "Open Agent Safety",
+      "products": [
+        {
+          "name": "Open Agent Safety",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        },
+        {
+          "name": "Open",
+          "type": "产品/服务",
+          "ownerNames": [
+            "NVIDIA"
+          ]
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/28/nvidia-launches-open-agent-safety-platform",
+      "publisher": "MarkTechPost（RSS）"
+    },
+    {
       "id": "EV-06c2f2803729eae2",
       "dataDate": "2026-09-28",
       "date": "2026-09-28",
@@ -52355,7 +52645,7 @@
           "name": "Claude Opus 5.5",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Anthropic"
           ]
         }
       ],
@@ -54449,7 +54739,9 @@
         {
           "name": "MarTech",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://martech.org/the-latest-ai-powered-martech-news-and-releases",
@@ -57664,7 +57956,9 @@
         {
           "name": "Claude Fable 5.1",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://theverge.com/ai-artificial-intelligence/987830/anthropic-claude-fable-mythos-5-1",
@@ -58542,7 +58836,9 @@
         {
           "name": "MHS",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/995/514.htm",
@@ -61595,21 +61891,21 @@
           "name": "Major Harness Upgrades",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "WRITER Makes Agentic AI",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Economically Sustainable",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -69409,7 +69705,9 @@
         {
           "name": "Cowork",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/982/277.htm",
@@ -70813,14 +71111,14 @@
           "name": "Helios AI",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Helios",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -75714,7 +76012,9 @@
         {
           "name": "Claude Code v2.1.212",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
@@ -81618,14 +81918,14 @@
           "name": "Cowork",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         },
         {
           "name": "Cowork on Monday",
           "type": "产品/服务",
           "ownerNames": [
-            "OpenAI"
+            "Anthropic"
           ]
         }
       ],
@@ -83160,7 +83460,9 @@
         {
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://the-decoder.com/anthropics-new-claude-sonnet-5-closes-the-gap-to-the-pricier-opus-model-series",
@@ -83342,7 +83644,7 @@
           "name": "Claude Sonnet 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Google"
+            "Anthropic"
           ]
         }
       ],
@@ -83695,21 +83997,21 @@
           "name": "Sapphire",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Anthropic"
           ]
         },
         {
           "name": "News",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Anthropic"
           ]
         },
         {
           "name": "Autonomous Enterprise",
           "type": "产品/服务",
           "ownerNames": [
-            "Amazon"
+            "Anthropic"
           ]
         }
       ],
@@ -84792,12 +85094,16 @@
         {
           "name": "Claude Cowork",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "SaaS Workflows",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://perplexityaimagazine.com/expert-insights/ai-agents-replacing-saas-workflows",
@@ -86631,7 +86937,7 @@
           "name": "Claude Fable 5",
           "type": "产品/服务",
           "ownerNames": [
-            "Thinking Machines Lab"
+            "Anthropic"
           ]
         }
       ],
@@ -87877,7 +88183,9 @@
         {
           "name": "Code",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/965/428.htm",
@@ -90288,17 +90596,23 @@
         {
           "name": "Claude Fable 5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "Claude Mythos 5",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         },
         {
           "name": "Mythos",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://marktechpost.com/2026/06/10/anthropic-releases-claude-fable-5-and-claude-mythos-5-same-underlying-model-different-safeguards-new-mythos-class-tier",
@@ -95078,7 +95392,9 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
@@ -96672,7 +96988,7 @@
           "name": "Cameron Berg",
           "type": "产品/服务",
           "ownerNames": [
-            "Google DeepMind"
+            "Anthropic"
           ]
         }
       ],
@@ -99721,6 +100037,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-70fe379f68abdbe9",
         "EV-a0ca934522418c0b",
         "EV-18223a8aeea7bcdd",
         "EV-83728e3b6c7736ce",
@@ -99778,7 +100095,7 @@
         "EN-630d75372b4d1eb5"
       ],
       "firstSeen": "2026-05-23",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-7ebe9a17c4d4c271",
@@ -102153,7 +102470,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -102813,7 +103130,6 @@
         "EV-d756f05478303505",
         "EV-7263caa45bbf168e",
         "EV-8abf5adc3e72fbb8",
-        "EV-defd9eb250a2b925",
         "EV-8321e5cd7d423d62",
         "EV-decbf1a34be68603",
         "EV-6272444f30281858",
@@ -102830,6 +103146,7 @@
         "EV-58c1cc3749294649",
         "EV-c0a65877001ed413",
         "EV-bd508dbe4205774f",
+        "EV-2ad8b8a8fa63973b",
         "EV-bd0b10ee8ccdff16",
         "EV-8058ddb115bdef47",
         "EV-d26f174b7e773bc3",
@@ -102920,6 +103237,7 @@
         "EV-d596f111808bd55b",
         "EV-a4f052325d0ef230",
         "EV-6ce6b9c9780b97d9",
+        "EV-d36e3bb9ccc4899a",
         "EV-98a5bcde4600a029",
         "EV-a9e597aa1823b4c9",
         "EV-bc025a501363e4f3",
@@ -102981,7 +103299,7 @@
         "EN-10fce287b4b1464c"
       ],
       "firstSeen": "2026-02-13",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-29b9f0cae32e7a8a",
@@ -102998,6 +103316,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-compute_cloud_service",
         "TX-target_user-business_user",
         "TX-product_form-chip_accelerator",
@@ -103008,7 +103327,6 @@
         "TX-target_user-researcher",
         "TX-product_form-ai_infrastructure_software",
         "TX-product_form-ai_compute_system",
-        "TX-technology-open_weights",
         "TX-technology-fine_tuning"
       ],
       "relatedEntityIds": [],
@@ -103349,6 +103667,7 @@
         "EV-ef1de880e4ef9f75",
         "EV-acdeebead5324344",
         "EV-68d5a02e5213b43c",
+        "EV-33b0fd6c3d3fac0d",
         "EV-da26b43d3924136e",
         "EV-96b70ec91c60db68",
         "EV-2bb9ea947e9541c3",
@@ -103414,6 +103733,9 @@
         "EV-1c6adfef6f405319",
         "EV-66df35d14361a6cb",
         "EV-3c4d6d70ac763885",
+        "EV-33bca85880dfffd7",
+        "EV-e8fbba10b2a8f5aa",
+        "EV-7c738cbe5d808aa3",
         "EV-57f3792e2324389e",
         "EV-74e87bba31270f42",
         "EV-c45ed9151e55246f",
@@ -103687,6 +104009,9 @@
         "EV-02b19ffbe883ee2e",
         "EV-cf496e0f8a56ca97",
         "EV-00834dd71037c7cc",
+        "EV-491c6b59dce2d133",
+        "EV-d36e3bb9ccc4899a",
+        "EV-fbf9e0ef3eede59d",
         "EV-2a5803953f698f4c",
         "EV-5961ed93ca6dae66",
         "EV-98a5bcde4600a029",
@@ -103817,6 +104142,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-inference_optimization",
+        "TX-technology-open_weights",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-product_form-chip_accelerator",
@@ -103846,7 +104173,6 @@
         "TX-industry-legal_services",
         "TX-technology-code_generation",
         "TX-product_form-model_api_service",
-        "TX-technology-open_weights",
         "TX-use_case-customer_support",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -103854,7 +104180,6 @@
         "TX-technology-long_context",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
-        "TX-technology-inference_optimization",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -103885,7 +104210,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-df3b29befa02cd17",
@@ -104206,6 +104531,8 @@
         "EV-9efcf6480f6c6f48",
         "EV-cf76f090a1a20a36",
         "EV-43301de739fe560e",
+        "EV-7302ce8f8b0c2d3b",
+        "EV-7c738cbe5d808aa3",
         "EV-a171d2ec6b5982e9",
         "EV-25af07a982e78cb0",
         "EV-df53157dee9ad589",
@@ -104279,6 +104606,8 @@
         "EV-29f130674dbbb59e",
         "EV-c98d4ee7764d51b2",
         "EV-657837763764c869",
+        "EV-d36e3bb9ccc4899a",
+        "EV-1341206ac28e8625",
         "EV-b739349cfab7e41c",
         "EV-e4f4d4270155dec8",
         "EV-d7a432ffeb3347a4",
@@ -104302,6 +104631,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-product_form-chip_accelerator",
@@ -104321,7 +104651,6 @@
         "TX-ai_market_subcategory-sales",
         "TX-use_case-sales",
         "TX-product_form-model_api_service",
-        "TX-technology-open_weights",
         "TX-technology-image_generation",
         "TX-deployment_model-cloud",
         "TX-technology-computer_use",
@@ -104342,7 +104671,7 @@
         "EN-e71558a14e7ed6ab"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-866e1f18c9370d5d",
@@ -104730,6 +105059,8 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-339abd378f4b60de",
+        "EV-42823d01190aba97",
         "EV-2470b13ea55496d0",
         "EV-26a5749d8604455a",
         "EV-375d04f7cc9746c6",
@@ -104840,6 +105171,8 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-7c738cbe5d808aa3",
+        "EV-87b77e34bbd0eb57",
         "EV-8061c8eb754e0542",
         "EV-857d7186b873e0ed",
         "EV-9ced0afc6d0d1f63",
@@ -105001,6 +105334,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-inference_optimization",
+        "TX-technology-open_weights",
         "TX-industry-energy_utilities",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -105044,8 +105379,8 @@
         "TX-industry-food_hospitality",
         "TX-industry-legal_services",
         "TX-technology-code_generation",
+        "TX-product_form-security_software",
         "TX-product_form-model_api_service",
-        "TX-technology-open_weights",
         "TX-use_case-customer_support",
         "TX-technology-speech_audio",
         "TX-deployment_model-cloud",
@@ -105083,7 +105418,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-28d0bd981118a907",
@@ -105844,6 +106179,12 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-1155a3266543affa",
+        "EV-2ad8b8a8fa63973b",
+        "EV-30de3f563325d174",
+        "EV-7c738cbe5d808aa3",
+        "EV-c60b042d3b88124d",
+        "EV-fc510a760a4c3f12",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -106077,6 +106418,7 @@
         "EV-8115dd18f2812a29",
         "EV-cf496e0f8a56ca97",
         "EV-8cb5b0ed18c7cdd8",
+        "EV-d36e3bb9ccc4899a",
         "EV-2a5803953f698f4c",
         "EV-0eea367f43810ec7",
         "EV-9ebb69d4965d1f23",
@@ -106199,6 +106541,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -106228,7 +106571,6 @@
         "TX-industry-aerospace_defense",
         "TX-industry-legal_services",
         "TX-product_form-model_api_service",
-        "TX-technology-open_weights",
         "TX-use_case-customer_support",
         "TX-technology-computer_use",
         "TX-technology-long_context",
@@ -106239,6 +106581,7 @@
         "TX-technology-distillation"
       ],
       "relatedEntityIds": [
+        "EN-b8c236d640d6a5fb",
         "EN-4d748ebd71af03a7",
         "EN-240389f4b730bad4",
         "EN-9f15bb7e29e191eb",
@@ -106260,13 +106603,12 @@
         "EN-e4ffb7bd879b89da",
         "EN-c8185a1a8a6595ad",
         "EN-96eebba49dbbf422",
-        "EN-b8c236d640d6a5fb",
         "EN-d8494bb34d6ddc43",
         "EN-b59c577ed73536c6",
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-6fcba5d96a4fadfd",
@@ -106300,6 +106642,7 @@
         "EV-883d3b5f6d30eb48",
         "EV-e15ae1112294d59e",
         "EV-43301de739fe560e",
+        "EV-defd9eb250a2b925",
         "EV-ba01f34c9f6eb03f",
         "EV-d8739d5413d6530f",
         "EV-0791a55a64863225",
@@ -106338,12 +106681,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-use_case-software_development",
         "TX-technology-code_generation",
-        "TX-technology-open_weights",
         "TX-deployment_model-cloud"
       ],
       "relatedEntityIds": [
@@ -106352,7 +106695,7 @@
         "EN-24caf10fe9bfb1c5"
       ],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-22"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-ebefab0353686b57",
@@ -106609,6 +106952,8 @@
         "EV-f949fd95df58d42d",
         "EV-97747aee0cafd9f3",
         "EV-c0a65877001ed413",
+        "EV-2ad8b8a8fa63973b",
+        "EV-7c738cbe5d808aa3",
         "EV-1b912ec16c50fc0f",
         "EV-09898d5522f0db28",
         "EV-29c45021243dba2a",
@@ -106831,6 +107176,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
@@ -106856,7 +107202,6 @@
         "TX-deployment_model-edge_device",
         "TX-industry-aerospace_defense",
         "TX-technology-code_generation",
-        "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-technology-speech_audio",
@@ -106888,7 +107233,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-69337578b2468a88",
@@ -108044,6 +108389,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-open_weights",
         "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-technology-agentic_execution",
@@ -108052,7 +108398,6 @@
         "TX-industry-government_public_sector",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-open_weights",
         "TX-deployment_model-cloud",
         "TX-technology-long_context"
       ],
@@ -108661,8 +109006,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-open_weights",
+        "TX-technology-agentic_execution",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts"
       ],
@@ -109780,6 +110125,7 @@
         "EV-7add33b4c74dbf1a",
         "EV-c5643983538c6513",
         "EV-8a8b873af9de5127",
+        "EV-35cb7441cf13f241",
         "EV-57944eebac69d510",
         "EV-5b1bdc06406424b4",
         "EV-6272444f30281858",
@@ -109809,7 +110155,7 @@
         "EN-a42d5d95234db6c4"
       ],
       "firstSeen": "2026-02-10",
-      "lastSeen": "2026-09-23"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-042e9398f2cc8902",
@@ -109955,8 +110301,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-agentic_execution",
         "TX-technology-open_weights",
+        "TX-technology-agentic_execution",
         "TX-technology-long_context"
       ],
       "relatedEntityIds": [
@@ -110459,7 +110805,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-09-29"
     },
     {
       "id": "EN-0502bb9ed34980aa",

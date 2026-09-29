@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-09-29T09:07:13.496Z",
+    "latestDataDate": "2026-09-29",
+    "currentDate": "2026-09-29",
+    "eventCount": 3627,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-45f54bd33d01611b",
       "EV-f389faf9d7a68a79",
+      "EV-45f54bd33d01611b",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -63,19 +63,21 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-c60b042d3b88124d",
       "EV-c45b1098a3092e03"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-23",
-    "lastSeen": "2026-09-23",
+    "lastSeen": "2026-09-29",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-c60b042d3b88124d",
         "EV-c45b1098a3092e03"
       ],
       "hardware": [],
@@ -83,6 +85,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-c60b042d3b88124d",
+        "dataDate": "2026-09-29",
+        "date": "2026-09-28",
+        "eventType": "model_release",
+        "eventTypeLabel": "模型发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Anthropic 的 Claude Sonnet 5.5 在基准测试中几乎匹敌 Opus 5.5，而每项任务成本最多低 30%",
+        "displayTags": [],
+        "entityIds": [
+          "EN-c70eca6b0f88f44d",
+          "EN-c3a6da693d2ba168",
+          "EN-84f96ec3d643c35a"
+        ]
+      },
       {
         "id": "EV-c45b1098a3092e03",
         "dataDate": "2026-09-23",
