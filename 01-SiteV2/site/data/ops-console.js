@@ -49,7 +49,7 @@ window.WaveSightOpsConsole = {
           "key": "MINIPROGRAM",
           "label": "微信小程序",
           "category": "融资产品",
-          "value": "1.1.4",
+          "value": "1.1.6",
           "source": "02-Miniprogram/package.json",
           "status": "源码版本 · 微信线上待核验",
           "kind": "source",
@@ -315,7 +315,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.4",
+        "value": "1.1.6",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -519,7 +519,7 @@ window.WaveSightOpsConsole = {
   },
   "meta": {
     "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-09-28T06:14:53.913Z",
+    "generatedAt": "2026-09-29T09:14:59.747Z",
     "date": "2026-09-28",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -581,15 +581,13 @@ window.WaveSightOpsConsole = {
     },
     "monthly": {
       "windowDays": 30,
-      "total": 2,
+      "total": 1,
       "open": 0,
-      "resolved": 2,
+      "resolved": 1,
       "byLane": {
-        "skill_ops": 1,
         "business_signals": 1
       },
       "byCategory": {
-        "weekly_learning_loop": 1,
         "recurring_automation_issue": 1
       },
       "recurring": [],
@@ -615,28 +613,6 @@ window.WaveSightOpsConsole = {
           "validation": "2026-09-05 final closure: clean main 0532b6d13838708b75d5b8c845a8b35dc420093c, isolated Vault passed, Pages33946829221 success, Portal74cc8b4f45fe5ceb9512c79061ec7c24b0af84fb liveVerified, runtime regression tests passed",
           "prevention": "gate",
           "sourceFile": "agent-workflow/inbox/production-incidents/2026-09-04-business-signals-recurring-9b3705b9af766a92.md"
-        },
-        {
-          "id": "2026-08-30-skill_ops-weekly-learning-loop",
-          "date": "2026-08-30",
-          "title": "Weekly Learning Loop - 2026-08-30",
-          "status": "resolved",
-          "state": "resolved",
-          "priority": "medium",
-          "laneId": "skill_ops",
-          "category": "weekly_learning_loop",
-          "failedGate": "weekly_learning_loop",
-          "reportPath": "agent-workflow/reports/2026-08-30-weekly-health.md",
-          "dataGenerated": "not_applicable",
-          "neededAction": "add or tighten gate / eval / MEMORY prevention",
-          "createdAt": "2026-08-30T14:39:33.069Z",
-          "updatedAt": "2026-08-31T10:32:51+08:00",
-          "resolvedAt": "2026-08-31T10:32:51+08:00",
-          "resolver": "codex",
-          "fixCommit": "ec9c3a5dc5bdf62df2c729463ae46ead8a89a9ac",
-          "validation": "Revalidated 17 automation-runtime and 9 control-plane tests; 2026-08-31 catch-up heartbeat passed",
-          "prevention": "gate",
-          "sourceFile": "agent-workflow/inbox/production-incidents/2026-08-30-skill_ops-weekly-learning-loop.md"
         }
       ]
     }
@@ -1574,7 +1550,7 @@ window.WaveSightOpsConsole = {
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-09-28T06:14:53.904Z",
+      "updatedAt": "2026-09-29T09:14:59.740Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1638,32 +1614,30 @@ window.WaveSightOpsConsole = {
     },
     "chinaFunding": {
       "schema_version": "CHINA-FUNDING-HEALTH-V1.0",
-      "date": "2026-09-28",
-      "generated_at": "2026-09-28T06:14:48.114Z",
+      "date": "2026-09-29",
+      "generated_at": "2026-09-29T09:14:51.363Z",
       "status": "failed",
-      "last_collection_at": "2026-09-28T00:15:39.011Z",
+      "last_collection_at": "2026-09-29T08:51:37.131Z",
       "failed_stage": "projections",
       "stages": [
         {
           "id": "capture",
           "status": "passed",
-          "started_at": "2026-09-28T06:12:18.869Z",
-          "reused": true,
-          "reused_accepted_capture": true,
-          "finished_at": "2026-09-28T06:12:25.219Z"
+          "started_at": "2026-09-29T09:12:09.841Z",
+          "finished_at": "2026-09-29T09:13:01.653Z"
         },
         {
           "id": "facts",
           "status": "passed",
-          "started_at": "2026-09-28T06:12:25.219Z",
-          "finished_at": "2026-09-28T06:14:23.239Z"
+          "started_at": "2026-09-29T09:13:01.654Z",
+          "finished_at": "2026-09-29T09:14:29.984Z"
         },
         {
           "id": "projections",
           "status": "failed",
-          "started_at": "2026-09-28T06:14:23.239Z",
+          "started_at": "2026-09-29T09:14:29.984Z",
           "error": "Command failed: agent-workflow/tools/assert-funding-insights-v1.mjs (1)",
-          "finished_at": "2026-09-28T06:14:47.977Z"
+          "finished_at": "2026-09-29T09:14:51.230Z"
         }
       ],
       "sources": [
@@ -1671,11 +1645,11 @@ window.WaveSightOpsConsole = {
           "source_id": "pedaily",
           "registry_id": "cn-pedaily",
           "name": "投资界",
-          "attempted_at": "2026-09-28T00:12:52.980Z",
+          "attempted_at": "2026-09-29T08:49:31.788Z",
           "query_count": 8,
           "successful_queries": 8,
           "list_pages_ok": 2,
-          "candidates": 34,
+          "candidates": 35,
           "failures": [],
           "entry_urls": [
             "https://m.pedaily.cn/",
@@ -1693,9 +1667,9 @@ window.WaveSightOpsConsole = {
             {
               "category": "ai-pendants",
               "query": "site:pedaily.cn (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
-              "status": "collected",
-              "discovered": 2,
-              "retained": 2,
+              "status": "empty",
+              "discovered": 0,
+              "retained": 0,
               "capped": 0
             },
             {
@@ -1718,9 +1692,9 @@ window.WaveSightOpsConsole = {
               "category": "ai-audio-wearables",
               "query": "site:pedaily.cn (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 1,
-              "retained": 1,
-              "capped": 0
+              "discovered": 7,
+              "retained": 4,
+              "capped": 3
             },
             {
               "category": "ai-home-devices",
@@ -1731,49 +1705,40 @@ window.WaveSightOpsConsole = {
               "capped": 0
             }
           ],
-          "discovered": 36,
+          "discovered": 49,
           "general_candidates": 24,
-          "capped": 2,
+          "capped": 14,
           "status": "collected",
-          "response_ms": 16778,
-          "completed_at": "2026-09-28T00:13:09.758Z",
-          "raw_count": 34,
-          "readable_count": 34,
-          "accepted_claims": 8,
+          "response_ms": 15275,
+          "completed_at": "2026-09-29T08:49:47.062Z",
+          "raw_count": 35,
+          "readable_count": 35,
+          "accepted_claims": 6,
           "verified_event_ids": [
-            "EV-589b3b522be5b280",
-            "EV-3ca24f79062a359e",
             "EV-f01ed5ae8bd115bc",
-            "EV-168535f69d324a17",
-            "EV-71d477e3af99ef9a",
-            "EV-8c634244a6a6d408"
+            "EV-c2689435913ed785",
+            "EV-d56d157dad3db17d",
+            "EV-168535f69d324a17"
           ],
           "funding_event_ids": [
-            "EV-589b3b522be5b280",
-            "EV-3ca24f79062a359e",
             "EV-f01ed5ae8bd115bc",
-            "EV-168535f69d324a17",
-            "EV-71d477e3af99ef9a",
-            "EV-8c634244a6a6d408"
+            "EV-c2689435913ed785",
+            "EV-d56d157dad3db17d",
+            "EV-168535f69d324a17"
           ],
-          "china_funding_event_ids": [
-            "EV-589b3b522be5b280"
-          ],
-          "card_ids": [
-            "FI-a2fd2365924904e7",
-            "FI-86634a7717d63426"
-          ],
-          "latest_disclosure": "2026-09-28T08:46:00+08:00"
+          "china_funding_event_ids": [],
+          "card_ids": [],
+          "latest_disclosure": "2026-09-29T13:22:00+08:00"
         },
         {
           "source_id": "chinaventure",
           "registry_id": "cn-chinaventure",
           "name": "投中网",
-          "attempted_at": "2026-09-28T00:13:09.758Z",
+          "attempted_at": "2026-09-29T08:49:47.062Z",
           "query_count": 8,
           "successful_queries": 8,
           "list_pages_ok": 1,
-          "candidates": 15,
+          "candidates": 20,
           "failures": [],
           "entry_urls": [
             "https://www.chinaventure.com.cn/"
@@ -1807,9 +1772,9 @@ window.WaveSightOpsConsole = {
               "category": "ai-phones",
               "query": "site:chinaventure.com.cn (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 2,
-              "retained": 2,
-              "capped": 0
+              "discovered": 6,
+              "retained": 4,
+              "capped": 2
             },
             {
               "category": "ai-audio-wearables",
@@ -1823,43 +1788,46 @@ window.WaveSightOpsConsole = {
               "category": "ai-home-devices",
               "query": "site:chinaventure.com.cn (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 1,
-              "retained": 1,
+              "discovered": 2,
+              "retained": 2,
               "capped": 0
             }
           ],
-          "discovered": 15,
-          "general_candidates": 10,
-          "capped": 0,
+          "discovered": 22,
+          "general_candidates": 12,
+          "capped": 2,
           "status": "collected",
-          "response_ms": 21909,
-          "completed_at": "2026-09-28T00:13:31.667Z",
-          "raw_count": 13,
-          "readable_count": 13,
-          "accepted_claims": 7,
+          "response_ms": 20513,
+          "completed_at": "2026-09-29T08:50:07.575Z",
+          "raw_count": 18,
+          "readable_count": 18,
+          "accepted_claims": 3,
           "verified_event_ids": [
-            "EV-79d08b14ff147531",
-            "EV-9be00d0621b59529"
+            "EV-d152d0b0fbdb5b9c",
+            "EV-492c100f9d9704cc",
+            "EV-cdcba08ed07fa41d"
           ],
           "funding_event_ids": [
-            "EV-79d08b14ff147531",
-            "EV-9be00d0621b59529"
+            "EV-d152d0b0fbdb5b9c",
+            "EV-492c100f9d9704cc",
+            "EV-cdcba08ed07fa41d"
           ],
-          "china_funding_event_ids": [],
-          "card_ids": [
-            "FI-85004d0ca806b8ac"
+          "china_funding_event_ids": [
+            "EV-d152d0b0fbdb5b9c",
+            "EV-cdcba08ed07fa41d"
           ],
-          "latest_disclosure": "2026-09-27T11:16:00.000Z"
+          "card_ids": [],
+          "latest_disclosure": "2026-09-29T06:39:00.000Z"
         },
         {
           "source_id": "36kr",
           "registry_id": "cn-36kr-rss",
           "name": "36氪",
-          "attempted_at": "2026-09-28T00:13:31.667Z",
+          "attempted_at": "2026-09-29T08:50:07.575Z",
           "query_count": 8,
           "successful_queries": 8,
           "list_pages_ok": 0,
-          "candidates": 12,
+          "candidates": 17,
           "failures": [
             "list https://pitchhub.36kr.com/: no readable funding article links"
           ],
@@ -1871,8 +1839,8 @@ window.WaveSightOpsConsole = {
               "category": "ai-glasses",
               "query": "site:36kr.com (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 4,
-              "retained": 4,
+              "discovered": 2,
+              "retained": 2,
               "capped": 0
             },
             {
@@ -1887,63 +1855,59 @@ window.WaveSightOpsConsole = {
               "category": "ai-toys",
               "query": "site:36kr.com (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 2,
-              "retained": 2,
-              "capped": 0
+              "discovered": 6,
+              "retained": 4,
+              "capped": 2
             },
             {
               "category": "ai-phones",
               "query": "site:36kr.com (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 1,
-              "retained": 1,
+              "discovered": 2,
+              "retained": 2,
               "capped": 0
             },
             {
               "category": "ai-audio-wearables",
               "query": "site:36kr.com (AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 2,
-              "retained": 2,
+              "discovered": 4,
+              "retained": 4,
               "capped": 0
             },
             {
               "category": "ai-home-devices",
               "query": "site:36kr.com (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
-              "status": "empty",
-              "discovered": 0,
-              "retained": 0,
-              "capped": 0
+              "status": "collected",
+              "discovered": 5,
+              "retained": 4,
+              "capped": 1
             }
           ],
-          "discovered": 12,
+          "discovered": 19,
           "general_candidates": 2,
-          "capped": 0,
+          "capped": 3,
           "status": "partial",
-          "response_ms": 34849,
-          "completed_at": "2026-09-28T00:14:06.516Z",
-          "raw_count": 12,
-          "readable_count": 12,
-          "accepted_claims": 1,
-          "verified_event_ids": [
-            "EV-87d382f1816746c4"
-          ],
-          "funding_event_ids": [
-            "EV-87d382f1816746c4"
-          ],
+          "response_ms": 17410,
+          "completed_at": "2026-09-29T08:50:24.985Z",
+          "raw_count": 17,
+          "readable_count": 17,
+          "accepted_claims": 0,
+          "verified_event_ids": [],
+          "funding_event_ids": [],
           "china_funding_event_ids": [],
           "card_ids": [],
-          "latest_disclosure": "2026-09-28T00:59:10.000Z"
+          "latest_disclosure": "2026-09-29T09:12:27.000Z"
         },
         {
           "source_id": "cyzone",
           "registry_id": "cn-cyzone",
           "name": "创业邦",
-          "attempted_at": "2026-09-28T00:14:06.516Z",
+          "attempted_at": "2026-09-29T08:50:24.986Z",
           "query_count": 8,
           "successful_queries": 8,
           "list_pages_ok": 1,
-          "candidates": 13,
+          "candidates": 18,
           "failures": [],
           "entry_urls": [
             "https://www.cyzone.cn/"
@@ -1953,8 +1917,8 @@ window.WaveSightOpsConsole = {
               "category": "ai-glasses",
               "query": "site:cyzone.cn (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 1,
-              "retained": 1,
+              "discovered": 2,
+              "retained": 2,
               "capped": 0
             },
             {
@@ -1976,10 +1940,10 @@ window.WaveSightOpsConsole = {
             {
               "category": "ai-phones",
               "query": "site:cyzone.cn (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
-              "status": "empty",
-              "discovered": 0,
-              "retained": 0,
-              "capped": 0
+              "status": "collected",
+              "discovered": 8,
+              "retained": 4,
+              "capped": 4
             },
             {
               "category": "ai-audio-wearables",
@@ -1992,20 +1956,20 @@ window.WaveSightOpsConsole = {
             {
               "category": "ai-home-devices",
               "query": "site:cyzone.cn (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
-              "status": "empty",
-              "discovered": 0,
-              "retained": 0,
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
               "capped": 0
             }
           ],
-          "discovered": 13,
-          "general_candidates": 12,
-          "capped": 0,
+          "discovered": 21,
+          "general_candidates": 13,
+          "capped": 4,
           "status": "collected",
-          "response_ms": 23410,
-          "completed_at": "2026-09-28T00:14:29.926Z",
-          "raw_count": 13,
-          "readable_count": 13,
+          "response_ms": 18599,
+          "completed_at": "2026-09-29T08:50:43.585Z",
+          "raw_count": 18,
+          "readable_count": 18,
           "accepted_claims": 0,
           "verified_event_ids": [],
           "funding_event_ids": [],
@@ -2019,12 +1983,14 @@ window.WaveSightOpsConsole = {
           "source_id": "cls",
           "registry_id": "cn-cls",
           "name": "财联社／科创板日报",
-          "attempted_at": "2026-09-28T00:14:29.926Z",
+          "attempted_at": "2026-09-29T08:50:43.585Z",
           "query_count": 8,
           "successful_queries": 8,
-          "list_pages_ok": 1,
-          "candidates": 21,
-          "failures": [],
+          "list_pages_ok": 0,
+          "candidates": 27,
+          "failures": [
+            "list https://www.cls.cn/: no readable funding article links"
+          ],
           "entry_urls": [
             "https://www.cls.cn/"
           ],
@@ -2033,33 +1999,33 @@ window.WaveSightOpsConsole = {
               "category": "ai-glasses",
               "query": "site:cls.cn (AI眼镜 OR AI 眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 1,
-              "retained": 1,
+              "discovered": 2,
+              "retained": 2,
               "capped": 0
             },
             {
               "category": "ai-pendants",
               "query": "site:cls.cn (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 2,
-              "retained": 2,
-              "capped": 0
+              "discovered": 5,
+              "retained": 4,
+              "capped": 1
             },
             {
               "category": "ai-toys",
               "query": "site:cls.cn (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
-              "status": "empty",
-              "discovered": 0,
-              "retained": 0,
+              "status": "collected",
+              "discovered": 4,
+              "retained": 4,
               "capped": 0
             },
             {
               "category": "ai-phones",
               "query": "site:cls.cn (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 6,
+              "discovered": 5,
               "retained": 4,
-              "capped": 2
+              "capped": 1
             },
             {
               "category": "ai-audio-wearables",
@@ -2073,38 +2039,42 @@ window.WaveSightOpsConsole = {
               "category": "ai-home-devices",
               "query": "site:cls.cn (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 5,
+              "discovered": 4,
               "retained": 4,
-              "capped": 1
+              "capped": 0
             }
           ],
-          "discovered": 24,
-          "general_candidates": 7,
-          "capped": 3,
-          "status": "collected",
-          "response_ms": 21782,
-          "completed_at": "2026-09-28T00:14:51.708Z",
-          "raw_count": 21,
-          "readable_count": 21,
-          "accepted_claims": 0,
-          "verified_event_ids": [],
-          "funding_event_ids": [],
+          "discovered": 29,
+          "general_candidates": 13,
+          "capped": 2,
+          "status": "partial",
+          "response_ms": 19932,
+          "completed_at": "2026-09-29T08:51:03.517Z",
+          "raw_count": 27,
+          "readable_count": 26,
+          "accepted_claims": 2,
+          "verified_event_ids": [
+            "EV-4561a8c2eeaeaed8"
+          ],
+          "funding_event_ids": [
+            "EV-4561a8c2eeaeaed8"
+          ],
           "china_funding_event_ids": [],
-          "card_ids": [],
-          "latest_disclosure": "2026-09-26T23:00:00.000Z"
+          "card_ids": [
+            "FI-c2d2a86fa237b6eb"
+          ],
+          "latest_disclosure": "2026-09-28T12:03:00.000Z"
         },
         {
           "source_id": "qbitai",
           "registry_id": "cn-qbitai-rss",
           "name": "量子位",
-          "attempted_at": "2026-09-28T00:14:51.708Z",
+          "attempted_at": "2026-09-29T08:51:03.517Z",
           "query_count": 8,
           "successful_queries": 8,
-          "list_pages_ok": 0,
-          "candidates": 12,
-          "failures": [
-            "list https://www.qbitai.com/: no readable funding article links"
-          ],
+          "list_pages_ok": 1,
+          "candidates": 13,
+          "failures": [],
           "entry_urls": [
             "https://www.qbitai.com/"
           ],
@@ -2121,24 +2091,24 @@ window.WaveSightOpsConsole = {
               "category": "ai-pendants",
               "query": "site:qbitai.com (AI钥匙扣 OR AI 钥匙扣 OR AI挂件 OR 智能挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 2,
-              "retained": 2,
+              "discovered": 1,
+              "retained": 1,
               "capped": 0
             },
             {
               "category": "ai-toys",
               "query": "site:qbitai.com (AI玩具 OR AI 玩具 OR AI潮玩 OR AI宠物 OR 陪伴机器人) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 4,
+              "discovered": 8,
               "retained": 4,
-              "capped": 0
+              "capped": 4
             },
             {
               "category": "ai-phones",
               "query": "site:qbitai.com (AI手机 OR AI 手机 OR AI原生手机 OR AI原生终端) (融资 OR 获投 OR 领投) 2026-09",
-              "status": "empty",
-              "discovered": 0,
-              "retained": 0,
+              "status": "collected",
+              "discovered": 1,
+              "retained": 1,
               "capped": 0
             },
             {
@@ -2153,33 +2123,37 @@ window.WaveSightOpsConsole = {
               "category": "ai-home-devices",
               "query": "site:qbitai.com (AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投 OR 领投) 2026-09",
               "status": "collected",
-              "discovered": 1,
-              "retained": 1,
+              "discovered": 2,
+              "retained": 2,
               "capped": 0
             }
           ],
-          "discovered": 12,
+          "discovered": 17,
           "general_candidates": 4,
-          "capped": 0,
-          "status": "partial",
-          "response_ms": 25424,
-          "completed_at": "2026-09-28T00:15:17.132Z",
-          "raw_count": 12,
-          "readable_count": 12,
-          "accepted_claims": 0,
-          "verified_event_ids": [],
-          "funding_event_ids": [],
+          "capped": 4,
+          "status": "collected",
+          "response_ms": 14715,
+          "completed_at": "2026-09-29T08:51:18.232Z",
+          "raw_count": 13,
+          "readable_count": 13,
+          "accepted_claims": 3,
+          "verified_event_ids": [
+            "EV-0cbd2e434058d120"
+          ],
+          "funding_event_ids": [
+            "EV-0cbd2e434058d120"
+          ],
           "china_funding_event_ids": [],
           "card_ids": [
             "FI-257e4f42c36415ea"
           ],
-          "latest_disclosure": "2026-09-14T00:00:00+08:00"
+          "latest_disclosure": "2026-09-29T00:00:00+08:00"
         },
         {
           "source_id": "jiqizhixin",
           "registry_id": "cn-jiqizhixin",
           "name": "机器之心",
-          "attempted_at": "2026-09-28T00:15:17.132Z",
+          "attempted_at": "2026-09-29T08:51:18.232Z",
           "query_count": 8,
           "successful_queries": 8,
           "list_pages_ok": 0,
@@ -2244,8 +2218,8 @@ window.WaveSightOpsConsole = {
           "general_candidates": 0,
           "capped": 0,
           "status": "partial",
-          "response_ms": 21816,
-          "completed_at": "2026-09-28T00:15:38.948Z",
+          "response_ms": 18829,
+          "completed_at": "2026-09-29T08:51:37.061Z",
           "raw_count": 0,
           "readable_count": 0,
           "accepted_claims": 0,
@@ -2259,15 +2233,15 @@ window.WaveSightOpsConsole = {
       "totals": {
         "sources_attempted": 7,
         "sources_failed": 0,
-        "candidates": 107,
-        "readable_documents": 105,
-        "accepted_claims": 16,
+        "candidates": 130,
+        "readable_documents": 127,
+        "accepted_claims": 14,
         "verified_events": 9,
         "funding_events": 9,
-        "china_funding_events": 1,
-        "linked_organizations": 15,
+        "china_funding_events": 2,
+        "linked_organizations": 14,
         "linked_products": 0,
-        "published_card_matches": 5
+        "published_card_matches": 3
       },
       "publication": {
         "status": "awaiting_publication_receipt"
@@ -23562,7 +23536,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.4",
+        "value": "1.1.6",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -23758,7 +23732,7 @@ window.WaveSightOpsConsole = {
         "name": "follow-builders",
         "sourceKind": "project",
         "sourcePath": "agent-workflow/skills/follow-builders",
-        "sourceDigest": "d097bc07af6d0789dfd21e22eeabf1fc56da22c190e966e9dd3ca649f2f86da8",
+        "sourceDigest": "b24aa32aa7aa8374959e758c9258842e2a94ba63470235f6fe96f12356716fd7",
         "platformIds": [
           "data-center"
         ],
@@ -23786,7 +23760,7 @@ window.WaveSightOpsConsole = {
         "name": "guanlan-china-funding-monitor",
         "sourceKind": "project",
         "sourcePath": "agent-workflow/skills/guanlan-china-funding-monitor",
-        "sourceDigest": "139bc630dd25359ff7c81c5017d71a8c49d6fac44a93731e869cb3f19829e7ad",
+        "sourceDigest": "6eeedb3b8e0e23df05b1926bd0a6d4a52b81c53d120479c38b1160f77624c951",
         "platformIds": [
           "shared"
         ],
@@ -23814,7 +23788,7 @@ window.WaveSightOpsConsole = {
         "name": "guanlan-community-intelligence-monitor",
         "sourceKind": "project",
         "sourcePath": "agent-workflow/skills/guanlan-community-intelligence-monitor",
-        "sourceDigest": "902216adeda4c926331b16b01609fb6c2bb350f7a91ef19538fab8c27fa6ba14",
+        "sourceDigest": "40a2627b5b12b78eeb13eb24c1d78faed6abb3d18f013d215b5c8d4e0e602136",
         "platformIds": [
           "data-center"
         ],
@@ -23912,7 +23886,7 @@ window.WaveSightOpsConsole = {
         "name": "guanlan-first-line-viewpoints-monitor",
         "sourceKind": "project",
         "sourcePath": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor",
-        "sourceDigest": "e892aa8088f8117803640e205359b0849e3b1072a723fcac042fdf154e39c6b9",
+        "sourceDigest": "877f3a084d0d5aa059b5df0b03934197430b59f212f9d1dc1dbc0e934ecea353",
         "platformIds": [
           "data-center"
         ],
@@ -28057,7 +28031,7 @@ window.WaveSightOpsConsole = {
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.4",
+        "value": "1.1.6",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -28177,6 +28151,6 @@ window.WaveSightOpsConsole = {
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-09-28T06:14:53.913Z"
+    "snapshotGeneratedAt": "2026-09-29T09:14:59.747Z"
   }
 };
