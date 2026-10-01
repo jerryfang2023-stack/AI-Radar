@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -2249,7 +2249,9 @@
         {
           "name": "MCP AI",
           "type": "产品/服务",
-          "ownerNames": []
+          "ownerNames": [
+            "Anthropic"
+          ]
         }
       ],
       "sourceUrl": "https://techcrunch.com/2025/11/17/mcp-ai-agent-security-startup-runlayer-launches-with-8-unicorns-11m-from-khoslas-keith-rabois-and-felicis",
@@ -2909,6 +2911,10 @@
         "EV-fe63a869fe4cee45",
         "EV-35be62272c77c556",
         "EV-c0a65877001ed413",
+        "EV-462754017d330734",
+        "EV-d8a6137353544608",
+        "EV-e4b00c7e632e2844",
+        "EV-c60b042d3b88124d",
         "EV-74e87bba31270f42",
         "EV-8058ddb115bdef47",
         "EV-06b33a114cf6e513",
@@ -3264,6 +3270,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-product_form-compute_cloud_service",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -3275,7 +3282,6 @@
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -3331,7 +3337,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "EN-a85bd8852b5b34e0",
@@ -3675,10 +3681,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
         "TX-product_form-model",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-target_user-consumer",
         "TX-use_case-security_operations",
@@ -3765,10 +3771,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-product_form-enterprise_software_platform",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-use_case-software_development",
@@ -3831,8 +3837,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
         "TX-technology-agentic_execution",
+        "TX-target_user-business_user",
         "TX-use_case-customer_support",
         "TX-deployment_model-on_premise",
         "TX-technology-model_context_protocol"

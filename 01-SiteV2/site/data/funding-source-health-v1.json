@@ -1,28 +1,28 @@
 {
   "schema_version": "FUNDING-SOURCE-HEALTH-V1.0",
-  "generated_at": "2026-09-28T04:17:05.022Z",
-  "date": "2026-09-28",
-  "status": "passed",
-  "state": "healthy",
-  "last_checked_date": "2026-09-28",
+  "generated_at": "2026-10-01T09:28:35.661Z",
+  "date": "2026-10-01",
+  "status": "degraded",
+  "state": "candidate_evidence_insufficient",
+  "last_checked_date": "2026-10-01",
   "latest_financing_date": "2026-09-23",
   "totals": {
-    "fetched": 353,
-    "funding_candidates": 89,
-    "verified_events": 1
+    "fetched": 706,
+    "funding_candidates": 123,
+    "verified_events": 0
   },
   "channels": [
     {
       "id": "aihot",
       "status": "collected",
-      "last_success_at": "2026-09-28T00:14:14.417Z",
+      "last_success_at": "2026-10-01T09:15:22.827Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 86,
-      "latest_content_date": "",
+      "fetched_count": 359,
+      "latest_content_date": "2026-10-01",
       "duplicate_rate": 0,
-      "stale_rate": 0,
-      "funding_candidate_count": 0,
+      "stale_rate": 0.875,
+      "funding_candidate_count": 8,
       "verified_event_count": 0,
       "failures": [],
       "fallback_used": false
@@ -30,69 +30,67 @@
     {
       "id": "funding",
       "status": "collected",
-      "last_success_at": "2026-09-28T00:14:33.589Z",
+      "last_success_at": "2026-10-01T09:15:41.720Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 48,
+      "fetched_count": 47,
       "latest_content_date": "2026-09-23",
       "duplicate_rate": 0,
       "stale_rate": 1,
-      "funding_candidate_count": 48,
+      "funding_candidate_count": 47,
       "verified_event_count": 0,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429",
+        "RSS tldr-ai-newsletter: HTTP 429"
       ],
       "fallback_used": false
     },
     {
       "id": "gdelt",
-      "status": "failed",
-      "last_success_at": "",
+      "status": "collected",
+      "last_success_at": "2026-10-01T09:24:19.418Z",
       "response_ms": null,
-      "http_status": "",
-      "fetched_count": 0,
+      "http_status": "200",
+      "fetched_count": 56,
       "latest_content_date": "",
       "duplicate_rate": 0,
-      "stale_rate": 0,
-      "funding_candidate_count": 0,
+      "stale_rate": 1,
+      "funding_candidate_count": 12,
       "verified_event_count": 0,
-      "failures": [
-        "source collection command failed; see gdelt-source-run.log"
-      ],
+      "failures": [],
       "fallback_used": false
     },
     {
       "id": "keyword",
       "status": "collected",
-      "last_success_at": "2026-09-28T00:22:05.589Z",
+      "last_success_at": "2026-10-01T09:22:05.812Z",
       "response_ms": null,
       "http_status": "200",
-      "fetched_count": 102,
+      "fetched_count": 119,
       "latest_content_date": "2024-10-23",
-      "duplicate_rate": 0.0938,
+      "duplicate_rate": 0.1064,
       "stale_rate": 1,
-      "funding_candidate_count": 32,
-      "verified_event_count": 1,
+      "funding_candidate_count": 47,
+      "verified_event_count": 0,
       "failures": [
-        "keyword-search pre-gate filtered 57 result(s): missing_ai_anchor_in_result=25; social_or_profile_source=20; broad_list_or_market_report=11; noise_term:career=1"
+        "keyword-search pre-gate filtered 43 result(s): social_or_profile_source=16; missing_ai_anchor_in_result=13; broad_list_or_market_report=11; directory_or_search_page=1; noise_term:career=1; noise_term:hiring=1"
       ],
       "fallback_used": false
     },
     {
       "id": "rss",
       "status": "collected",
-      "last_success_at": "2026-09-28T00:14:23.380Z",
+      "last_success_at": "2026-10-01T09:15:28.449Z",
       "response_ms": null,
       "http_status": "429",
-      "fetched_count": 117,
+      "fetched_count": 125,
       "latest_content_date": "2026-09-23",
       "duplicate_rate": 0,
       "stale_rate": 1,
       "funding_candidate_count": 9,
       "verified_event_count": 0,
       "failures": [
-        "RSS venturebeat-ai: HTTP 429",
-        "RSS tldr-ai-newsletter: HTTP 429"
+        "RSS venturebeat-ai: HTTP 429"
       ],
       "fallback_used": false
     }
