@@ -177,7 +177,8 @@
     "test:financing-monitor": "node --test agent-workflow/financing/tests/*.test.mjs",
     "financing:dispatch": "node agent-workflow/financing/dispatch.mjs",
     "financing:run": "node agent-workflow/financing/run.mjs",
-    "financing:publish": "node agent-workflow/financing/publish.mjs"
+    "financing:publish": "node agent-workflow/financing/publish.mjs",
+    "inspect:financing-sources": "node agent-workflow/financing/inspect-sources.mjs"
   },
   "repository": {
     "type": "git",
@@ -196,5 +197,8 @@
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "playwright": "^1.60.0"
+  },
+  "dependencies": {
+    "cheerio": "1.2.0"
   }
 }

@@ -28,7 +28,7 @@ test('every market has independent coverage for all six hardware categories and 
 });
 test('failed search differs from zero and only failed queries resume',async()=>{
   let calls=0;
-  const first=await discover({date,feed:emptyFeed,search:async()=>{calls++;if(calls===3)throw new Error('offline');return[];}});
+  const first=await discover({date,feed:emptyFeed,supplements:[],search:async()=>{calls++;if(calls===3)throw new Error('offline');return[];}});
   assert.equal(first.complete,false);assert.equal(first.failed.length,1);
   let retried=0;
   const second=await discover({date,feed:()=>{throw new Error('must reuse feed');},previous:first.receipts,search:async()=>{retried++;return[];}});
@@ -55,14 +55,14 @@ test('accepted collection stores body privately and downstream retry does not re
   const gateway={search:async()=>[{url:'https://example.com/round',title:'AI startup raises Series A'}],status:()=>({}),attempts:[]};
   let captures=0;
   const capture=async lead=>{captures++;return captureOriginal(lead,{date,fetcher:async()=>new Response(html(),{headers:{'content-type':'text/html'}})});};
-  const first=await collect({root,directory,backupRoot,date,gateway,feed:emptyFeed,capture});assert.equal(first.accepted,true);assert.equal(captures,1);
+  const first=await collect({root,directory,backupRoot,date,gateway,feed:emptyFeed,supplements:[],capture});assert.equal(first.accepted,true);assert.equal(captures,1);
   const intake=read(path.join(root,`01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`));
   assert.match(intake.raw_documents[0].body_ref,/^evidence:\/\//u);assert.ok(!JSON.stringify(intake).includes('An AI company raises'));assert.ok(fs.existsSync(path.join(backupRoot,'catalog.jsonl')));
   const indexFile=path.join(root,'01-SiteV2/content/01-raw/source-index.jsonl');
   const indexText=fs.readFileSync(indexFile,'utf8');
   assert.equal(JSON.parse(indexText.trim()).evidence_ref,intake.raw_documents[0].body_ref);
   assert.ok(!indexText.includes('clean_text'));assert.ok(!indexText.includes('An AI company raises'));
-  await collect({root,directory,backupRoot,date,gateway:{search:()=>{throw new Error('recollection forbidden');}},feed:emptyFeed,capture:()=>{throw new Error('recapture forbidden');}});
+  await collect({root,directory,backupRoot,date,gateway:{search:()=>{throw new Error('recollection forbidden');}},feed:emptyFeed,supplements:[],capture:()=>{throw new Error('recapture forbidden');}});
   assert.equal(captures,1);
   assert.equal(fs.readFileSync(indexFile,'utf8'),indexText);
 });

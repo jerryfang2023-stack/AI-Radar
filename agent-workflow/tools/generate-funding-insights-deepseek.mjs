@@ -2,8 +2,10 @@
 import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
 import { createSearchGateway } from "./lib/search-gateway.mjs";
-import { planFundingResearch } from "./lib/funding-research-plan.mjs";
+import { planFundingResearch, fundingResearchCoverage, independentResearchSources } from "./lib/funding-research-plan.mjs";
 import path from "node:path";
+import { readOriginalPage } from '../financing/original-page.mjs';
+import { createOriginalReader } from '../financing/original-reader.mjs';
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
 import { resolvePrivateEvidenceBackupRoot } from "./private-evidence-backup-paths.mjs";
@@ -200,10 +202,6 @@ function normalizedUrlKey(url = "") {
   }
 }
 
-function sameHostFamily(left = "", right = "") {
-  return left === right || left.endsWith(`.${right}`) || right.endsWith(`.${left}`);
-}
-
 const secondaryDomains = /(?:^|\.)(?:techcrunch\.com|reuters\.com|bloomberg\.com|forbes\.com|theverge\.com|crunchbase\.com|linkedin\.com|wikipedia\.org|businesswire\.com|prnewswire\.com|globenewswire\.com|36kr\.com)$/iu;
 
 function sourceClass(url, companyName) {
@@ -228,31 +226,13 @@ async function capturePage(result) {
     if (cached.source_url === result.url && cached.capture_method === "direct_fetch"
       && cached.body_clean?.length >= 300 && cached.content_hash === sourceTextHash(cached.body_clean)) return cached;
   }
-  let title = result.title;
-  let body = "";
-  let method = "";
+  let page;
   try {
-    const response = await fetch(result.url, {
-      headers: {
-        "user-agent": "Mozilla/5.0 (compatible; WaveSightFundingResearch/1.0; +https://github.com/jerryfang2023-stack/AI-Radar)",
-      },
-      redirect: "follow",
-      signal: AbortSignal.timeout(30000),
-    });
-    if (response.ok) {
-      const contentType = response.headers.get("content-type") || "";
-      const raw = (await response.text()).slice(0, 600000);
-      body = /html/iu.test(contentType) ? htmlToText(raw) : clean(raw);
-      const titleMatch = raw.match(/<title[^>]*>([\s\S]*?)<\/title>/iu);
-      if (titleMatch) title = clean(decodeHtml(titleMatch[1]));
-      method = "direct_fetch";
-    }
-  } catch {}
-  if (body.length < 300 && result.provider_content_kind === "fulltext" && result.provider_body?.length >= 300) {
-    body = result.provider_body;
-    method = `${result.provider}_captured_content`;
-  }
-  if (body.length < 300) return null;
+    const backupRoot=resolvePrivateEvidenceBackupRoot(root,{required:false});
+    const reader=backupRoot?createOriginalReader({directory:path.join(backupRoot,'financing-monitor-state','original-reader'),date}):null;
+    page=await readOriginalPage(result.url,{reader,timeoutMs:30000});
+  } catch { return null; }
+  const title=page.title||result.title,body=page.body,method=page.method==='original_http'?'direct_fetch':page.method;
   const source = {
     source_id: stableId("FISRC", result.url),
     source_url: result.url,
@@ -263,6 +243,8 @@ async function capturePage(result) {
     captured_at: new Date().toISOString(),
     content_hash: sourceTextHash(body.slice(0, 18000)),
     body_clean: body.slice(0, 18000),
+    publication_date_evidence: page.date_evidence,
+    links: page.links || [],
   };
   if (privateCache) writeJson(privateCache, source);
   return source;
@@ -499,7 +481,6 @@ async function researchSources(bundle, event, company) {
     }
     return { sources: captured, queries: [...new Set(seeds.map((seed) => seed.query))], attempts };
   }
-  const officialHosts = [...new Set(captured.map((source) => hostFor(source.source_url)).filter(Boolean))];
   const linkedHosts = [...new Set(captured
     .flatMap((source) => source.body_clean.match(/https?:\/\/[^\s<>"')\]]+/giu) || [])
     .map((url) => hostFor(url))
@@ -516,62 +497,33 @@ async function researchSources(bundle, event, company) {
   // Query language follows the evidenced company name as well as verified
   // market scope. This does not promote an unverified geography to CN.
   const chineseQueries = event.market_scope?.china_market_match === true || /\p{Script=Han}/u.test(company.canonical_name);
-  const queries = planFundingResearch({ company, event, amountHint, officialHost: companyHost, chinese: chineseQueries });
-  const attempts = [];
-  const results = [];
-  // Bounded, sequential discovery shares cache/outage state with every event.
-  // Empty results are valid observations; failures stay explicit.
-  for (const { intent, query } of queries) {
-    const start = fundingSearchGateway.attempts.length;
-    try {
-      const found = await fundingSearchGateway.search(query, 8);
-      results.push(...found.map((result) => ({ ...result, intent, query,
-        source_class: sourceClass(result.url, company.canonical_name),
-        discovery_snippet: result.snippet, provider_body: "" })));
-    } catch (error) {
-      attempts.push({ provider: "gateway", query, status: "failed", error: error.message });
-    }
-    attempts.push(...fundingSearchGateway.attempts.slice(start));
-  }
-  const deduped = new Map();
-  for (const result of results) {
-    const candidateHost = hostFor(result.url);
-    const isKnownSecondary = secondaryDomains.test(candidateHost);
-    const isOfficialCandidate = result.source_class === "official_candidate";
-    const isCanonicalHost = officialHosts.some((host) => sameHostFamily(candidateHost, host));
-    const companyName = clean(company.canonical_name).toLowerCase();
-    const resultLead = clean(`${result.title} ${result.discovery_snippet || ""}`).toLowerCase();
-    const companyInLead = fundingResearchNameMatches(resultLead, companyName);
-    const identityKey = identitySubject.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
-    const identityInLead = identityKey && resultLead.replace(/[^\p{L}\p{N}]+/gu, "").includes(identityKey);
-    const isRelevantIndependent = result.source_class === "independent"
-      && (companyInLead || identityInLead)
-      && /\b(?:invest|funding|series|seed|product|customer|case study|agent|platform)\b|融资|投资|产品|客户|案例|智能体|平台/iu
-        .test(clean(`${result.title} ${result.url} ${result.discovery_snippet || ""}`));
-    const isInvestorRationaleLead = result.intent === "investor_rationale"
-      && companyInLead
-      && /\b(?:invest|investment|portfolio|series|seed|funding)\b|融资|投资|领投|跟投/iu.test(clean(`${result.title} ${result.url} ${result.discovery_snippet || ""}`));
-    if (
-      !isKnownSecondary
-      && !isOfficialCandidate
-      && !isCanonicalHost
-      && !isRelevantIndependent
-      && !isInvestorRationaleLead
-    ) continue;
-    const key = normalizedUrlKey(result.url);
-    if (!deduped.has(key) || scoreCandidate(result, company.canonical_name, identitySubject) > scoreCandidate(deduped.get(key), company.canonical_name, identitySubject)) {
-      deduped.set(key, result);
+  const plan = planFundingResearch({ company, event, amountHint, officialHost: companyHost, chinese: chineseQueries });
+  const attempts=[],queries=[],seen=new Set(captured.map(s=>normalizedUrlKey(s.source_url)));
+  let captures=0;
+  for(const {intent,query} of plan) {
+    if(captured.length>=8)break;
+    if(fundingResearchCoverage(captured,company)[intent]) { attempts.push({provider:'planner',query,status:'skipped',reason:'accepted_originals_cover_gap'});continue; }
+    queries.push(query);
+    const start=fundingSearchGateway.attempts.length;
+    let found=[];
+    try { found=await fundingSearchGateway.search(query,8); }
+    catch(error){attempts.push({provider:'gateway',query,status:'failed',error:error.message});}
+    attempts.push(...fundingSearchGateway.attempts.slice(start).filter(attempt=>attempt.query===query));
+    const candidates=found.map(result=>({...result,intent,query,source_class:sourceClass(result.url,company.canonical_name),discovery_snippet:result.snippet,provider_body:''}))
+      .filter(result=>!seen.has(normalizedUrlKey(result.url)))
+      .filter(result=>[company.canonical_name,...(company.aliases||[])].some(name=>fundingResearchNameMatches(result.title+' '+result.discovery_snippet,name)) || result.source_class==='official_candidate')
+      .sort((a,b)=>scoreCandidate(b,company.canonical_name,identitySubject)-scoreCandidate(a,company.canonical_name,identitySubject));
+    let added=0;
+    for(const result of candidates) {
+      if(captures>=24||captured.length>=8||added>=2)break;
+      captures++;seen.add(normalizedUrlKey(result.url));
+      const source=await capturePage(result);
+      if(!source) {attempts.push({provider:'original',url:result.url,status:'failed',reason:'original_capture_failed'});continue;}
+      if(![company.canonical_name,...(company.aliases||[])].some(name=>fundingResearchNameMatches(source.body_clean,name))) {attempts.push({provider:'original',url:result.url,status:'excluded',reason:'company_not_in_original'});continue;}
+      captured.push(source);added++;
     }
   }
-  const candidates = [...deduped.values()]
-    .sort((a, b) => scoreCandidate(b, company.canonical_name, identitySubject) - scoreCandidate(a, company.canonical_name, identitySubject))
-    .filter((candidate) => !captured.some((source) => normalizedUrlKey(source.source_url) === normalizedUrlKey(candidate.url)))
-    .slice(0, 16);
-  for (let index = 0; index < candidates.length && captured.length < 8; index += 4) {
-    const sources = await Promise.all(candidates.slice(index, index + 4).map(capturePage));
-    captured.push(...sources.filter(Boolean).slice(0, 8 - captured.length));
-  }
-  return { sources: captured, queries: queries.map((item) => item.query), attempts };
+  return {sources:captured,queries,attempts,independent_source_count:independentResearchSources(captured).length,coverage:fundingResearchCoverage(captured,company)};
 }
 
 function directionManifest() {
@@ -904,12 +856,12 @@ async function processEvent(bundle, event, entityIndex, entityDecisions, company
     source_resolution: sourceResolutionDiagnostics(),
   };
   const research = await researchSources(bundle, event, company);
-  if (research.sources.length < 2) {
+  if (research.sources.length < 2 || independentResearchSources(research.sources).length < 2) {
     return {
       event_id: event.event_id,
       company_name: company.canonical_name,
       status: "blocked",
-      problems: ["research_sources_insufficient"],
+      problems: [research.sources.length < 2 ? "research_sources_insufficient" : "research_independent_sources_insufficient"],
       source_resolution: sourceResolutionDiagnostics(),
       queries: research.queries,
       attempts: research.attempts,
