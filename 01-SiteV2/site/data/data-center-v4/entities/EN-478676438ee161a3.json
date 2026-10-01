@@ -5,10 +5,10 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-28T03:59:01.250Z",
-    "latestDataDate": "2026-09-28",
-    "currentDate": "2026-09-28",
-    "eventCount": 3602,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -65,6 +65,7 @@
     "eventIds": [
       "EV-d80c43b35418e74d",
       "EV-defd9eb250a2b925",
+      "EV-4a5240dedde301e6",
       "EV-293d6feac5b8efab",
       "EV-2182e541e0fe6a82",
       "EV-b22136a993b21f0c",
@@ -84,7 +85,7 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-03",
-    "lastSeen": "2026-09-28",
+    "lastSeen": "2026-10-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
@@ -95,6 +96,7 @@
         "EV-defd9eb250a2b925"
       ],
       "productsServices": [
+        "EV-4a5240dedde301e6",
         "EV-293d6feac5b8efab",
         "EV-2182e541e0fe6a82",
         "EV-b22136a993b21f0c",
@@ -112,6 +114,35 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-4a5240dedde301e6",
+        "dataDate": "2026-10-01",
+        "date": "2026-09-30",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "派早报：OpenAI 发布 Dot 智能体、Apple 移动睡眠呼吸暂停迹象提示软件国内获批等",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-478676438ee161a3",
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29",
+          "EN-bbdefa2950f49882",
+          "EN-e6a73bc039954a1b"
+        ]
+      },
       {
         "id": "EV-defd9eb250a2b925",
         "dataDate": "2026-09-28",
