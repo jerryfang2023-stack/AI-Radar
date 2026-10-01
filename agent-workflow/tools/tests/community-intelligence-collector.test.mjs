@@ -21,7 +21,7 @@ test("community rejection preserves source, stage and login marker for recovery"
 });
 
 test("all shared production writers retain multiple pending lanes", () => {
-  for (const file of ["daily-persistent-assets-pr.yml", "daily-first-line-viewpoints-pr.yml", "china-funding-pr.yml", "china-funding-history-pr.yml"]) {
+  for (const file of ["funding-daily-pr.yml", "daily-first-line-viewpoints-pr.yml", "china-funding-history-pr.yml"]) {
     const workflow = fs.readFileSync(path.join(root, ".github/workflows", file), "utf8");
     assert.match(workflow, /group: wavesight-data-center-publication\s+cancel-in-progress: false\s+queue: max/u, file);
   }

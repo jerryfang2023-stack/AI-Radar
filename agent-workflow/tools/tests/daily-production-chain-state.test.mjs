@@ -32,7 +32,7 @@ test("automatic publication requires both current-head CI results, not an empty 
     assert.equal(inspectProductionChecks([...checks, { ...checks[0], id: 100, conclusion }], "head").status, "failed");
   }
   assert.equal(inspectProductionChecks([...checks, { ...checks[0], id: 100, status: "in_progress", conclusion: null }], "head").status, "waiting");
-  for (const workflow of ["daily-persistent-assets-pr.yml", "daily-funding-insights-pr.yml", "daily-first-line-viewpoints-pr.yml", "daily-community-intelligence-pr.yml", "china-funding-pr.yml"]) {
+  for (const workflow of ["funding-daily-pr.yml", "daily-first-line-viewpoints-pr.yml", "daily-community-intelligence-pr.yml"]) {
     const text = fs.readFileSync(path.join(process.cwd(), ".github/workflows", workflow), "utf8");
     assert.ok(text.includes("wait-for-production-code-checks.mjs --pr="), workflow);
     for (const line of text.split("\n").filter((line) => line.includes("gh pr merge"))) {
@@ -53,9 +53,6 @@ test("shared same-date China assets cannot suppress general Business Signals col
     ...["monitor", "structured_intake_gate", "data_center_v4_build", "data_center_v4_gate", "data_center_v4_materialize"]
       .map((key) => ({ ...manifest, outcomes: { ...manifest.outcomes, [key]: "skipped" } })),
   ]) assert.equal(isBusinessSignalsProductionReady(invalid, date), false);
-  const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  assert.match(workflow, /assert-business-signals-completion\.mjs --date=/u);
-  for (const key of ["evidenceBoundary", "modelRebuild", "sourceTitleRepair"]) assert.ok(workflow.includes(`--${key}=`));
 });
 
 test("resumed collection counts require complete, valid composite provenance", () => {
@@ -82,13 +79,6 @@ test("bulk generated-data PRs cannot suppress production checks through path fil
   assert.doesNotMatch(snapshotGate, /build-skill-store-dashboard\.mjs/u, "CI must reject a stale committed snapshot, not rebuild it green");
 });
 
-test("failed-run artifacts retain accepted model decisions and projection diagnostics", () => {
-  const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  const artifactPaths = workflow.slice(workflow.indexOf("retention-days: 14"), workflow.indexOf("- name: Commit Data Center V4 assets"));
-  assert.ok(artifactPaths.includes("model-assist-v1/${{ steps.run-date.outputs.date }}.json"));
-  assert.ok(artifactPaths.includes("model-assist-v1/checkpoint.json"));
-  assert.ok(artifactPaths.includes("-data-center-projection-coverage.*"));
-});
 
 test("pre-commit state accepts the current V4 manifest and collection telemetry contracts", () => {
   assert.equal(isV4ManifestReady({
@@ -123,9 +113,4 @@ test("pre-commit state rejects stale dates and obsolete top-level status fields"
   }, date), false);
 });
 
-test("daily production rebuilds from a validated partial model-assist result", () => {
-  const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  assert.match(workflow, /model_assist_status=\$\{PIPESTATUS\[0\]\}/u);
-  assert.match(workflow, /assert-data-center-model-assist\.mjs --date="\$\{RUN_DATE\}"[\s\S]*isolated candidate failures; rebuilding from the validated accepted subset/u);
-  assert.match(workflow, /if: steps\.data-center-v4-model-assist\.outcome == 'success'/u);
-});
+

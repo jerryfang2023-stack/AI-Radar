@@ -123,4 +123,5 @@ jobs:
           else
             gh pr edit "$pr" --body-file "$body"
           fi
-          gh pr merge "$pr" --auto --merge
+          merge_head="$(node agent-workflow/tools/wait-for-production-code-checks.mjs --pr="$pr")"
+          gh pr merge "$pr" --merge --match-head-commit "$merge_head"

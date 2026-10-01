@@ -3,7 +3,8 @@ const { getFundingData } = require("../../utils/live-data.js");
 const { buildEntityLibrary, findEntity, companyEntityKey } = require("../../utils/entity-library.js");
 const { resolveDetailAccess, contentLockReason, requestLockedContent, protectedResourceId } = require("../../utils/metered-access.js");
 const { getAccessState, openMembership } = require("../../utils/access.js");
-const { fetchProtectedContent, entityFollows, hasAuthToken } = require("../../utils/payment.js");
+const { fetchProtectedContent, entityFollows, hasAuthToken, getSessionIdentity } = require("../../utils/payment.js");
+const {getResearchProfiles,refreshResearchProfiles}=require('../../utils/research-profiles.js');
 
 const TITLES = { companies: "企业档案", investors: "机构档案", people: "人物档案", products: "产品档案" };
 
@@ -11,6 +12,7 @@ Page({
   data: { title: "主体档案", type: "", entity: null, following: false, followBusy: false, contentError: "", sharedEntry: false, registrationOpen: false, contentLocked: false, lockReason: "" },
 
   onLoad(options) {
+    this.identity=getSessionIdentity();
     this.type = options.type;
     const sharedEntry = options.from === "share";
     this.setData({ sharedEntry });
@@ -22,32 +24,38 @@ Page({
     this.applyData(getFundingData());
     this.verifyServerAccess();
     this.refreshFollow();
+    refreshResearchProfiles().then(()=>{if(!this.disposed&&!this.data.entity?.publicProfile)this.applyData({index:getFundingData().index,details:{}});}).catch(()=>{});
   },
 
-  async refreshFollow(){ if(!hasAuthToken())return;try{const result=await entityFollows();if(!this.disposed)this.setData({following:result.items.some(item=>item.resourceId===protectedResourceId(`entity:${this.type}:${this.key}`))});}catch(_){} },
+  async refreshFollow(){ if(!hasAuthToken())return;const identity=getSessionIdentity();try{const result=await entityFollows();if(!this.disposed&&identity===getSessionIdentity())this.setData({following:result.items.some(item=>item.resourceId===protectedResourceId(`entity:${this.type}:${this.key}`))});}catch(_){} },
   async toggleEntityFollow(){if(this.data.followBusy)return;const access=getAccessState();if(access==='unregistered'){this.pendingAction='follow';this.setData({registrationOpen:true});return;}if(access==='expired'&&!this.data.following)return openMembership();this.setData({followBusy:true});try{const result=await entityFollows(this.data.following?'DELETE':'POST',protectedResourceId(`entity:${this.type}:${this.key}`));if(!this.disposed)this.setData({following:result.following});}catch(error){if(error.code!=='AUTH_CHANGED')wx.showToast({title:error.message||'操作失败，请重试',icon:'none'});}finally{if(!this.disposed)this.setData({followBusy:false});}},
-  onShow(){const identity=wx.getStorageSync('guanlan_api_token_v1')||'';if(this.identity!==undefined&&this.identity!==identity){this.setData({entity:null,following:false,contentLocked:true});this.applyData({index:getFundingData().index,details:{}});this.verifyServerAccess();this.refreshFollow();}this.identity=identity;},
+  onShow(){const identity=getSessionIdentity();if(this.hasShown){this.setData({entity:null,following:false,contentLocked:true});this.applyData({index:getFundingData().index,details:{}});this.verifyServerAccess();this.refreshFollow();}this.identity=identity;this.hasShown=true;},
   onUnload(){this.disposed=true;},
   compareCompany(){const id=this.data.entity?.rounds?.[0]?.id;if(!id)return;toggleCompare(id);wx.showToast({title:isCompared(id)?'已加入对比':'已取消对比',icon:'none'});},
   copySource(e){const url=e.currentTarget.dataset.url;if(/^https?:\/\//.test(url||''))wx.setClipboardData({data:url});},
   async verifyServerAccess() {
     if(!this.key)return;
+    const requestId=this.requestId=(this.requestId||0)+1;
     this.setData({contentError:''});
+    const identity=getSessionIdentity();
     try {
       const entity = await fetchProtectedContent("entity", protectedResourceId(`entity:${this.type}:${this.key}`));
-      if(this.disposed)return;
-      if (entity) this.setData({ entity: {...this.data.entity,...entity} });
+      if(this.disposed||requestId!==this.requestId||identity!==(getSessionIdentity()))return;
+      if (!entity || entity.hidden) throw Object.assign(new Error('资料暂不可用'),{statusCode:404});
+      if (entity) this.setData({ entity: {...this.data.entity,...entity}, type:entity.type||this.type, title:entity.publicProfile?.profileType==='person'?'人物档案':TITLES[this.type]||'主体档案' });
       this.setData({ contentLocked: false, lockReason: "server" });
     } catch (error) {
-      if(this.disposed||error.code==='AUTH_CHANGED')return;
+      if(this.disposed||requestId!==this.requestId||(identity!==getSessionIdentity()&&!(error.accessState==='session'&&!getSessionIdentity()))||error.code==='AUTH_CHANGED')return;
       this.setData({contentError:error.statusCode===404?'资料暂不可用':'资料加载失败，点击重试'});
-      if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") this.setData({ contentLocked: true, lockReason: contentLockReason(error) });
+      if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") { this.setData({entity:null,contentLocked:true,lockReason:contentLockReason(error)}); this.applyData({index:getFundingData().index,details:{}}); }
     }
   },
 
   applyData(state) {
     const library = buildEntityLibrary(state.index.cards, state.details);
     const entity = findEntity(library, this.type, this.key);
+    const profile=getResearchProfiles().find(p=>p.type===this.type&&p.key===this.key);
+    if(profile){this.setData({entity:{rounds:[],companyLinks:[],categories:[],...entity,...profile}});return;}
     if (entity) this.setData({ entity,relatedProducts:this.type==='products'?(library.products||[]).filter(item=>item.key!==entity.key&&item.categories.some(c=>entity.categories.includes(c))).slice(0,5):[] });
     else if (this.type === "companies" && this.name && !this.data.entity) {
       // Protected person/investor profiles can reference a company that is newer
@@ -62,6 +70,7 @@ Page({
         investorLinks: [], roundCount: 0, investorCount: 0, founderCount: 0,
       } });
     }
+    else if(!this.data.entity){this.setData({entity:{key:this.key,type:this.type,name:this.name||'主体档案',initial:(this.name||'档').slice(0,1).toUpperCase(),rounds:[],companyLinks:[],categories:[]}});}
   },
 
   openFunding(event) {
@@ -74,7 +83,7 @@ Page({
     // Protected person/investor profiles may carry canonical relation IDs, while
     // the Mini Program company library is keyed by the normalized company name.
     const resolvedKey = type === "companies" && name ? companyEntityKey(name) : key;
-    const nameQuery = type === "companies" && name ? `&name=${encodeURIComponent(name)}` : "";
+    const nameQuery = name ? `&name=${encodeURIComponent(name)}` : "";
     if (resolvedKey && type) this.openProtectedUrl(`/pages/entity-detail/index?type=${type}&key=${encodeURIComponent(resolvedKey)}${nameQuery}`);
   },
 
@@ -101,7 +110,7 @@ Page({
   onShareAppMessage() {
     const entity = this.data.entity;
     const key = encodeURIComponent(this.key || "");
-    const name = this.name ? `&name=${encodeURIComponent(this.name)}` : "";
+    const name = (entity?.name || this.name) ? `&name=${encodeURIComponent(entity?.name || this.name)}` : "";
     return {
       title: entity ? `${entity.name}｜${this.data.title}｜观澜 AI` : "观澜 AI 生态图谱",
       path: `/pages/entity-detail/index?type=${this.type || "companies"}&key=${key}${name}&from=share`,
@@ -111,7 +120,7 @@ Page({
   onShareTimeline() {
     const entity = this.data.entity;
     const key = encodeURIComponent(this.key || "");
-    const name = this.name ? `&name=${encodeURIComponent(this.name)}` : "";
+    const name = (entity?.name || this.name) ? `&name=${encodeURIComponent(entity?.name || this.name)}` : "";
     return {
       title: entity ? `${entity.name}｜${this.data.title}｜观澜 AI` : "观澜 AI 生态图谱",
       query: `type=${this.type || "companies"}&key=${key}${name}&from=share`,

@@ -20,7 +20,8 @@ function investorEntityKey(name) {
 }
 
 function personEntityKey(founder, companyName) {
-  return founder.id ? `id:${founder.id}` : `${entityKey(founder.name)}|${companyEntityKey(companyName)}`;
+  const id=founder.id || founder.entityId || founder.entity_id;
+  return id ? `id:${id}` : `${entityKey(founder.name)}|${companyEntityKey(companyName)}`;
 }
 
 function buildEntityLibrary(cards = [], details = {}) {
@@ -55,7 +56,7 @@ function buildEntityLibrary(cards = [], details = {}) {
     (card.products || []).forEach((item) => appendUnique(company.products, item));
     (detail.investors || []).forEach((item) => appendUnique(company.investors, item.name));
     (detail.founders || []).forEach((item) => {
-      if (!company.founders.some((founder) => founder.name === item.name)) company.founders.push({ id: item.id || "", name: item.name, role: item.role || "创始团队" });
+      if (!company.founders.some((founder) => personEntityKey(founder,companyName) === personEntityKey(item,companyName))) company.founders.push({ id: item.id || item.entityId || item.entity_id || "", name: item.name, role: item.role || "创始团队" });
     });
     appendUnique(company.categories, card.category);
     appendUnique(company.categories, card.subcategory);
@@ -181,7 +182,7 @@ function filterEntities(items, keyword) {
 }
 
 function findEntity(library, type, key) {
-  return (library[type] || []).find((item) => item.key === normalize(key));
+  return (library[type] || []).find((item) => item.key === (String(key).startsWith('id:') ? key : normalize(key)));
 }
 
 module.exports = { buildEntityLibrary, filterEntities, findEntity, companyEntityKey, investorEntityKey, personEntityKey };

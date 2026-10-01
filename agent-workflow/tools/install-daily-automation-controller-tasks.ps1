@@ -5,7 +5,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
-# Migration is idempotent and preserves definitions for rollback. Daily scheduling
+# Retirement is idempotent. Daily scheduling
 # belongs to Codex automation ai; installers must never recreate retired timers.
 $names = @(
   "WaveSight Morning Production Dispatch",
@@ -19,9 +19,14 @@ $names = @(
 )
 foreach ($name in $names) {
   $task = Get-ScheduledTask -TaskName $name -ErrorAction SilentlyContinue
-  if ($task -and $task.Settings.Enabled) {
+  if ($task) {
+    Unregister-ScheduledTask -TaskName $name -Confirm:$false
+    Write-Host "Deleted retired daily timer: $name"
+  }
+}
+foreach ($name in @("WaveSight Community Intelligence Weekly", "WaveSight Follow-Builders Skill Weekly")) {
+  if (Get-ScheduledTask -TaskName $name -ErrorAction SilentlyContinue) {
     Disable-ScheduledTask -TaskName $name | Out-Null
-    Write-Host "Disabled retired daily timer: $name"
   }
 }
 if ($RunMorningNow) { throw "Use agent-workflow/financing/dispatch.mjs explicitly; no legacy timer is started." }
