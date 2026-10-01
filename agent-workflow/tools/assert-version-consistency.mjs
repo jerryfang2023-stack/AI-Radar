@@ -108,7 +108,12 @@ for (const [field, value] of ledgerChecks) {
   if (versions.get(field) !== value) fail(`version ledger ${field} expected ${value}, found ${versions.get(field) || "missing"}`);
 }
 expectText("AGENTS.md", "Current Skill Store version: `v2.4.0`");
-expectText("AGENTS.md", `Current tag taxonomy version: ${expected.taxonomy}`);
+const financingTaxonomy = readJson("agent-workflow/financing/taxonomy.json");
+expectText("AGENTS.md", `Current financing taxonomy: \`${financingTaxonomy.version}\``);
+expectText("AGENTS.md", `\`${expected.taxonomy}\` remains a factual archive compatibility schema`);
+if (readJson("01-SiteV2/site/data/financing-catalog-v1.json").meta.taxonomy_version !== financingTaxonomy.version) {
+  fail("Financing catalog taxonomy does not match its independent rules");
+}
 expectText("context/00-current-state.md", expected.taxonomy);
 expectText("context/12-data-center-v4.md", expected.taxonomy);
 const dataCenterSchema = readJson("agent-workflow/product/data-center-v4.schema.json");
