@@ -21,6 +21,17 @@ const FDE_ARRAY_FIELDS = new Set(["systems_integrated", "data_requirements", "go
 const FDE_STRING_FIELDS = new Set(["customer", "vendor", "industry", "use_case", "workflow_before", "workflow_after", "deployment_stage", "delivery_model", "team_composition", "timeline", "metric_attribution", "reported_need"]);
 const HARDWARE_STRING_FIELDS = new Set(["component_type", "compute_layer", "manufacturing_stage", "process_node", "capacity_unit", "supplier", "customer", "deployment_site", "region", "contract_value", "shipment_date"]);
 
+export function qaResponseProblems(payload) {
+  // An explicit abstention has no factual quote to manufacture. Persist it so
+  // the evidence gate can reject it without retrying the same non-AI source.
+  if (!["keep_qa", "recollect_original", "repair_title", "extract_claim"].includes(payload?.action)) return ["qa_suggestion_incomplete"];
+  if (payload.action === "extract_claim" && !payload.quote) return ["qa_suggestion_incomplete"];
+  if (payload.action === "extract_claim" && (!Array.isArray(payload.claims) || !payload.claims.length)) return ["qa_extract_claim_missing_claims"];
+  if (payload.claims !== undefined && !Array.isArray(payload.claims)) return ["qa_claims_must_be_array"];
+  if (payload.action !== "extract_claim" && payload.claims?.length) return ["qa_abstention_has_claims"];
+  return [];
+}
+
 export function stableModelAssistId(...parts) {
   return `MAC-${crypto.createHash("sha256").update(parts.map((item) => String(item || "")).join("|")).digest("hex").slice(0, 16)}`;
 }

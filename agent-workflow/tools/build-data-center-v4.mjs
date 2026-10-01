@@ -1845,7 +1845,8 @@ function forbiddenKeys(value, trail = "", out = []) {
 }
 
 export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
-  const targetedFundingPolicy = readJson(path.join(outputRoot, date, "targeted-funding-authorization.json"), {});
+  const targetedFundingPolicy = options.targetedFundingPolicy
+    || readJson(path.join(outputRoot, date, "targeted-funding-authorization.json"), {});
   const historicalFundingPolicy = options.historicalFundingPolicy
     || readJson(path.join(outputRoot, date, "historical-funding-authorization.json"), {});
   // Keep already published identities stable while admitting new historical cases.
@@ -1926,19 +1927,21 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       && cleanString(raw.published_at).slice(0, 10) >= targetedFundingPolicy.from
       && cleanString(raw.published_at).slice(0, 10) <= targetedFundingPolicy.to;
     const sourceEligibility = eventSourceEligibility(raw, artifact, title, date, {
-      eventType: newHistoricalSources.has(artifact.source_artifact_id) ? "funding" : (reviewedRepair ? proposedModelClaim?.event_type : candidateDeterministicRule?.eventType) || proposedModelClaim?.event_type || "",
+      eventType: (targetedFundingAllowed || newHistoricalSources.has(artifact.source_artifact_id)) ? "funding" : (reviewedRepair ? proposedModelClaim?.event_type : candidateDeterministicRule?.eventType) || proposedModelClaim?.event_type || "",
       allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
     });
     const authoritativeHistoryClaim = String(modelClaimCandidate?.asset_id || "").startsWith("HISTORY-")
       && historicalFundingAuthorized(raw, artifact, historicalFundingPolicy) && !stablePublishedSources.has(artifact.source_artifact_id);
     const requiresHistoryExtraction = newHistoricalSources.has(artifact.source_artifact_id);
-    const deterministicRule = sourceEligibility.accepted && !reviewedRepair && !authoritativeHistoryClaim && !requiresHistoryExtraction ? candidateDeterministicRule : null;
+    const deterministicRule = sourceEligibility.accepted && !reviewedRepair && !authoritativeHistoryClaim && !requiresHistoryExtraction
+      && (!targetedFundingAllowed || candidateDeterministicRule?.eventType === "funding") ? candidateDeterministicRule : null;
     const proposedModelEligibility = proposedModelClaim
       ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date, {
           allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
         })
       : { accepted: true, reason: "" };
-    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted && (!requiresHistoryExtraction || authoritativeHistoryClaim)
+    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted
+      && (!targetedFundingAllowed || proposedModelClaim.event_type === "funding") && (!requiresHistoryExtraction || authoritativeHistoryClaim)
       ? { eventType: proposedModelClaim.event_type, pattern: /$^/u }
       : null);
     const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);

@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { sourceTextHash } from "../deepseek-translation-client.mjs";
-import { evaluateModelAssistCandidate, withGateResult } from "../model-assist-v1.mjs";
+import { evaluateModelAssistCandidate, withGateResult, qaResponseProblems } from "../model-assist-v1.mjs";
 import { needsChineseTranslation } from "../translate-community-intelligence.mjs";
 
 function claimCandidate(body, overrides = {}) {
@@ -25,6 +25,18 @@ function claimCandidate(body, overrides = {}) {
     ...overrides,
   };
 }
+
+test("QA abstention can be checkpointed without a quote but cannot publish facts", () => {
+  const payload = { action: "keep_qa", reason: "No source-bounded AI financing event", claims: [] };
+  assert.deepEqual(qaResponseProblems(payload), []);
+  assert.deepEqual(qaResponseProblems({ action: "recollect_original", claims: [] }), []);
+  assert.ok(qaResponseProblems({ action: "invent_facts" }).length);
+  assert.ok(qaResponseProblems({ ...payload, action: "extract_claim" }).length);
+  assert.ok(qaResponseProblems({ ...payload, claims: [{}] }).length);
+  const result = withGateResult(claimCandidate("No AI event here.", { task_type: "qa_repair", proposal: payload, evidence: [] }), "No AI event here.");
+  assert.equal(result.status, "rejected");
+  assert.ok(result.gate_results.some(g => g.gate === "exact_source_span" && g.status === "failed"));
+});
 
 test("accepts an exact-span model Claim with protected numbers", () => {
   const body = "Funding update. Aina raised $5.5 Mn from Info Edge to build an AI hardware interface.";

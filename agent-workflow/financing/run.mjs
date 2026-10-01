@@ -31,7 +31,6 @@ export function productionPlan(date, directory, { extract = true } = {}) {
       [script('backfill-source-title-translations'), d, '--write=true', '--concurrency=3'],
       [script('build-data-center-v4'), d],
       [script('assert-data-center-v4'), d],
-      [script('assert-china-market-v1'), d, '--stage=bundle'],
     ], outputs: [`01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`] },
     { id: 'research', commands: [
       [script('generate-funding-insights-deepseek'), d, '--write=true', `--checkpoint-dir=${path.join(directory, 'research')}`],

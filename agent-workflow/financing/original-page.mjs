@@ -6,7 +6,7 @@ export function originalDate(value) {
     const n = Number(value),date = new Date(n < 1e12 ? n * 1000 : n); if(!Number.isFinite(+date))return ''; value = date.toISOString();
   }
   let text = String(value || '').trim().replace(/年|\//gu, '-').replace(/月/gu, '-').replace(/日/gu, '');
-  const parts = text.match(/\b(20\d{2})-(\d{1,2})-(\d{1,2})\b/u);
+  const parts = text.match(/\b(20\d{2})-(\d{1,2})-(\d{1,2})(?=T\d{2}:|\b)/u);
   if (parts) {
     const date = `${parts[1]}-${parts[2].padStart(2,'0')}-${parts[3].padStart(2,'0')}`;
     return Number.isFinite(Date.parse(date)) && new Date(date).toISOString().slice(0,10) === date ? date : '';
@@ -60,8 +60,17 @@ export function parseOriginal(html, { url = '', rules = pageRules } = {}) {
     if(!$(el).parents('aside,nav,footer,.comments,.related').length && !/updated|modified/iu.test($(el).attr('class')||'')) add($(el).attr('datetime')||$(el).attr('content')||$(el).text(),'visible:publication_date');
   });
   if(!candidates.length) {
+    // WeChat renders its publication time from the current article's `ct`
+    // variable. It is a Unix timestamp displayed in China Standard Time.
+    if(host==='mp.weixin.qq.com' && $('#js_content').length) {
+      const timestamps=[...new Set([...html.matchAll(/\bvar\s+ct\s*=\s*["'](\d{10})["']\s*;/gu)].map(m=>m[1]))];
+      if(timestamps.length===1) add(new Date((Number(timestamps[0])+8*3600)*1000).toISOString().slice(0,10),'wechat:article_ct_cst');
+    }
+  }
+  if(!candidates.length) {
     const times=$('time[datetime]').filter((_,el)=>!$(el).parents('aside,nav,footer,.comments,.related').length && !/updated|modified/iu.test($(el).attr('class')||''));
-    if(times.length===1) add(times.attr('datetime'),'time:unique');
+    const dates=[...new Set(times.map((_,el)=>originalDate($(el).attr('datetime'))).get().filter(Boolean))];
+    if(dates.length===1) add(times.first().attr('datetime'),'time:unique');
   }
   const links = [...new Set($('a[href]').map((_,el)=>{ try { const u=new URL($(el).attr('href'),url); return /^https?:$/u.test(u.protocol)?u.href:null; } catch { return null; } }).get())].slice(0,100);
   $('script,style,nav,footer,header,form,aside,svg,noscript,.comments,.related,.share,.social-share').remove();
@@ -97,7 +106,7 @@ export async function fetchText(url, {fetcher=fetch,timeoutMs=20000,headers={},m
     const chunks=[];let length=0;
     for await(const chunk of response.body) { length+=chunk.length;if(length>maxBytes)throw new Error('original_too_large');chunks.push(chunk); }
     const bytes=Buffer.concat(chunks);
-    const charset=(response.headers.get('content-type')?.match(/charset=["']?([^;\s"']+)/iu)?.[1] || bytes.toString('ascii',0,1500).match(/charset=["']?([\w-]+)/iu)?.[1] || 'utf-8').toLowerCase();
+    const charset=(response.headers.get('content-type')?.match(/charset\s*=\s*["']?([^;,\s"']+)/iu)?.[1] || bytes.toString('ascii',0,1500).match(/charset=["']?([\w-]+)/iu)?.[1] || 'utf-8').toLowerCase();
     return {response,text:new TextDecoder(charset).decode(bytes),url:current};
   }
   throw new Error('original_redirect_limit');
