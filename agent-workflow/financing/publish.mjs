@@ -47,7 +47,11 @@ if (args.get('dry-run') === 'true') {
       {id:'vault', commands:[['agent-workflow/tools/sync-guanlan-vault-from-main.mjs',`--date=${date}`,`--runtime-dir=${directory}`]]},
       {id:'portal', commands:[['agent-workflow/tools/assert-funding-insights-v1.mjs',`--date=${date}`],[path.join(portal,'scripts/publish-from-wavesight.mjs'),`--wavesight-repo=${checkout}`]]},
       {id:'ops', commands:[['agent-workflow/tools/publish-ops-console.mjs']]},
-    ].map(stage => ({...stage,valid:()=>true}));
+    ].map(stage => ({...stage,
+      // The accepted SHA already binds the checkout contents. A fresh temporary
+      // path must not invalidate a completed release when resuming the OPS step.
+      checkpointCommands:stage.commands.map(command=>command.map(value=>value.replaceAll(checkout,'<accepted-checkout>'))),
+      valid:()=>true}));
     await runStages({date,codeVersion:sha,stages:plans,file:path.join(directory,'publication-stages.json'), execute: async stage => {
       for(const command of stage.commands) {
         const output=run(process.execPath,command,checkout,1200000);
