@@ -1,6 +1,7 @@
 const directoryPage = require('../../utils/directory-page.js');
 const { getFundingData, refreshFundingData, getReportData, refreshReportData } = require("../../utils/live-data.js");
-const { buildOverview } = require("../../utils/ecosystem-insights.js");
+const capital = require("../../utils/capital-map.js");
+const taxonomy = require("../../data/financing-taxonomy.js");
 const { mergeCommunityEssays } = require("../../utils/community-essays.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
 const { track } = require("../../utils/analytics.js");
@@ -12,6 +13,7 @@ Page({
   ...directoryPage,
   data: {
     ...directoryPage.data,
+    mapRange: 6, mapMode: "heat", mapUnit: "count", mapExpanded: ["enterprise"], mapSelected: "enterprise", mapRows: [], capital: null, mapSheet: null, methodsOpen: false,
     mode: "map", marketRegion: "global", latestDate: "", signals: [], ranking: [], months: [], heatmap: [],
     activeType: "all", activeLabel: "最新观察", featured: null, reports: [],
     systemCheckDate: "", latestFundingDate: "", refreshFailed: false,
@@ -54,10 +56,51 @@ Page({
     const mode = event.currentTarget.dataset.mode;
     if (!["map", "directory"].includes(mode) || mode === this.data.mode) return;
     wx.setStorageSync(ECOSYSTEM_MODE_KEY, mode);
-    this.setData({ mode });
+    this.setData({ mode },()=>this.drawMapCharts());
     track("filter_changed", { scope: "ecosystem", filter: "mode", value: mode });
   },
-  applyFunding(state) { this.setData(buildOverview(state.index, this.data.marketRegion)); },
+  applyFunding(state) {
+    if(this.data.mapSheet)this.closeMapDetail();
+    this.fundingState = state;
+    const model = capital.build(state.index, taxonomy, {market:this.data.marketRegion,range:this.data.mapRange,unit:this.data.mapUnit,selected:this.data.mapSelected});
+    this.capitalModel = model;
+    const mapRows = model.rows.filter(r=>!r.child || this.data.mapExpanded.includes(r.parentId)).map(r=>({...r,expanded:this.data.mapExpanded.includes(r.id)}));
+    const {cards, ...publicModel} = model;
+    this.setData({capital:publicModel,mapRows,mapOptions:model.rows.map(r=>r.name),mapOptionIndex:model.rows.findIndex(r=>r.id===model.focus.id),mapSelected:model.focus.id,
+      latestDate:model.date,systemCheckDate:model.date, mapSheet:null}, ()=>this.drawMapCharts());
+  },
+  updateMap(patch) { this.setData(patch,()=>this.applyFunding(this.fundingState || getFundingData())); },
+  changeMapRange(e) { this.updateMap({mapRange:Number(e.currentTarget.dataset.range)}); },
+  changeMapMode(e) { this.updateMap({mapMode:e.currentTarget.dataset.mode}); },
+  toggleMapUnit() { this.updateMap({mapUnit:this.data.mapUnit==='count'?'share':'count'}); },
+  toggleMapRow(e) { const id=e.currentTarget.dataset.id; const a=this.data.mapExpanded; this.updateMap({mapExpanded:a.includes(id)?a.filter(v=>v!==id):a.concat(id)}); },
+  toggleMapAll() { this.updateMap({mapExpanded:this.data.mapExpanded.length===this.capitalModel.parents.length?[]:this.capitalModel.parents.map(p=>p.id)}); },
+  changeMapFocus(e) { const r=this.capitalModel.rows[Number(e.detail.value)]; if(r)this.updateMap({mapSelected:r.id}); },
+  openMapDetail(e) { const {id,month}=e.currentTarget.dataset; this.setData({mapSheet:capital.details(this.capitalModel,id,month)}); if(this.getTabBar)this.getTabBar()?.setData({hidden:true}); },
+  closeMapDetail() { this.setData({mapSheet:null}); if(this.getTabBar)this.getTabBar()?.setData({hidden:false}); },
+  stopMapTap() {},
+  openMapFunding(e) { const id=e.currentTarget.dataset.id; this.closeMapDetail(); if(id)wx.navigateTo({url:'/pages/detail/index?id='+encodeURIComponent(id)}); },
+  toggleMethods() { this.setData({methodsOpen:!this.data.methodsOpen}); },
+  retryMap() { return this.refreshData(); },
+  drawMapCharts() {
+    if(!wx.createCanvasContext || this.data.mode!=='map') return;
+    const draw=()=>{
+      if(this.data.mapMode==='trend') this.data.mapRows.forEach(r=>this.paintMapChart('map-'+r.id,r,90,32,false));
+      const width=(wx.getWindowInfo?wx.getWindowInfo():wx.getSystemInfoSync()).windowWidth-60;
+      this.paintMapChart('map-focus',this.capitalModel.focus,width,166,true);
+    };
+    if(wx.nextTick)wx.nextTick(draw);else draw();
+  },
+  paintMapChart(id,row,width,height,labels) {
+    if(!row)return;
+    const ctx=wx.createCanvasContext(id,this), max=Math.max(1,...row.values), left=labels?20:2,top=labels?22:3,bottom=height-(labels?28:3);
+    ctx.clearRect(0,0,width,height);
+    if(labels){ctx.setStrokeStyle('#ece8df');[0,.5,1].forEach(f=>{ctx.beginPath();ctx.moveTo(left,bottom-f*(bottom-top));ctx.lineTo(width-12,bottom-f*(bottom-top));ctx.stroke();});}
+    const pts=row.values.map((v,i)=>[left+i*(width-left-14)/Math.max(1,row.values.length-1),bottom-v/max*(bottom-top)]);
+    ctx.setStrokeStyle(labels?'#123b59':'#af8c45');ctx.setLineWidth(labels?2:1.5);ctx.beginPath();pts.forEach((p,i)=>i?ctx.lineTo(...p):ctx.moveTo(...p));ctx.stroke();
+    if(labels){ctx.setFontSize(10);ctx.setTextAlign('center');pts.forEach((p,i)=>{ctx.setFillStyle('#af8c45');ctx.beginPath();ctx.arc(p[0],p[1],3,0,Math.PI*2);ctx.fill();ctx.setFillStyle('#6f7f8f');ctx.fillText(String(row.values[i]),p[0],p[1]-8);ctx.fillText(this.capitalModel.months[i].label,p[0],height-6);});}
+    ctx.draw();
+  },
   changeMarket(event) {
     const marketRegion = event.currentTarget.dataset.region;
     if (!["global", "china"].includes(marketRegion) || marketRegion === this.data.marketRegion) return;
@@ -87,6 +130,7 @@ Page({
     const id = event.currentTarget.dataset.id;
     if (id) wx.navigateTo({ url: `/pages/report-detail/index?id=${id}` });
   },
+  onHide() { this.closeMapDetail(); },
   onUnload() { this.directoryDisposed = true; },
   onReachBottom() { if(this.data.mode === "directory") this.moreDirectory(); },
   onShareAppMessage() {

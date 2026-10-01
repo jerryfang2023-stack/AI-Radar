@@ -5,7 +5,7 @@
     <view class="funding-metrics featured-panel">
       <view class="funding-metrics-head">
         <text>融资精选</text>
-        <text>{{featuredLabel}} {{featuredCards.length ? (featuredCurrent + 1) + '/' + featuredCards.length : ''}}</text>
+        <text>{{featuredCards.length ? featuredCards[featuredCurrent].dateShort : ''}} {{featuredCards.length ? (featuredCurrent + 1) + '/' + featuredCards.length : ''}}</text>
       </view>
       <swiper wx:if="{{featuredCards.length}}" class="featured-swiper" current="{{featuredCurrent}}" bindchange="changeFeatured" indicator-dots="{{featuredCards.length > 1}}" indicator-color="#62778a" indicator-active-color="#e2c57f">
         <swiper-item wx:for="{{featuredCards}}" wx:key="id">

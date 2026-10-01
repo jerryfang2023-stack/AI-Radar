@@ -1,5 +1,7 @@
 # Guanlan Funding Mini Program
 
+Current source: 1.1.9 implements the approved full-taxonomy ecology heatmap/trends with the shared capital-map model. All 7 parents and 45 subsectors remain available; use snapshot dates and complete-month comparisons. See `docs/REVIEW-1.1.9.md`.
+
 Current source: 1.1.8 uses AI-FUNDING-TAGS-1.0 for capital-flow signals, rankings, heatmaps and sector drill-downs. The bundled index and live cache require matching taxonomy versions and valid sector/subsector pairs. See `docs/REVIEW-1.1.8.md`.
 Current source: 1.1.8 reads the reviewed institution/person profile catalog and protected research details. Directory has an explicit all-market selection; global still excludes China. Research sections retain source links and existing detail entitlements. See `docs/REVIEW-1.1.8.md`.
 
