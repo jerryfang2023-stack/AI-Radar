@@ -36,4 +36,6 @@ node agent-workflow/financing/history-collect.mjs --date=2026-10-02 --from=2026-
 
 发布仍需数据 PR、CI、接受 main、Pages、融资站发布器及网站/小程序数据回读。可获取条目数、关键词线索数、原文数、重复数、待核验数和新增融资卡数分别报告。
 
+融资发布的分类门禁继续核验事实、证据归属和融资投影，但不比较已经冻结的趋势与机会应用快照；显式历史审计可使用 `assert-taxonomy-consistency-v4-1.mjs --include-archived-applications=true`。这避免修正当前事实时被停用应用的旧分类阻塞，也不恢复非融资监测。
+
 验证：`node --test agent-workflow/financing/tests/history.test.mjs`；融资全套测试为 `npm run test:funding-insights`。原文日期的 ISO 时间格式和重复响应式 `<time>` 元素由信源回归测试覆盖。

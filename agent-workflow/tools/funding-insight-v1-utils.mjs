@@ -482,7 +482,7 @@ export function canonicalFundingEventRound(event = {}, claims = []) {
   const refs = new Set(event.claim_refs || []);
   const primary = claims.find((claim) => refs.has(claim.claim_id) && claim.claim_type === "funding" && claim.verification_status === "accepted");
   // Product descriptions may contain “基础设施”; accepted financing evidence wins.
-  for (const text of [primary?.source_quote?.split(/[。！？\n]/u).find((sentence) => /融资|funding|raised|raises/iu.test(sentence)), event.object, event.display_title_zh]) {
+  for (const text of [primary?.source_quote?.split(/[。！？\n]|(?<=[.!?])\s+(?=[A-Z])/u).find((sentence) => /融资|funding|raised|raises/iu.test(sentence)), event.object, event.display_title_zh]) {
     const round = normalizeFundingRound(text);
     if (!["other", "undisclosed"].includes(round.code)) return round;
   }
