@@ -1,5 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
+import fs from "node:fs";
+import Ajv2020 from "ajv/dist/2020.js";
 import { sourceTextHash } from "../deepseek-translation-client.mjs";
 import { evaluateModelAssistCandidate, withGateResult, qaResponseProblems } from "../model-assist-v1.mjs";
 import { needsChineseTranslation } from "../translate-community-intelligence.mjs";
@@ -25,6 +27,19 @@ function claimCandidate(body, overrides = {}) {
     ...overrides,
   };
 }
+
+test("manual original-source repair has explicit provenance and requires a review record", () => {
+  const schema=JSON.parse(fs.readFileSync(new URL('../../product/model-assist-v1.schema.json',import.meta.url)));
+  const validate=new Ajv2020({strict:false}).compile(schema.$defs.candidate);
+  const body='Aina raised $5.5 Mn from Info Edge to build an AI hardware interface.';
+  const candidate=withGateResult(claimCandidate(body,{candidate_id:'MAC-0123456789abcdef',task_type:'qa_repair',provider:'manual_review',model:'Codex',proposal:{action:'extract_claim',reason:'Original quote reviewed',claims:[{event_type:'funding',subject:'Aina',object:'$5.5 Mn',evidence_index:0}]},review:{decision:'accept',reviewer:'Original evidence review',reviewed_at:'2026-10-02'}}),body);
+  assert.equal(candidate.status,'requires_review');
+  assert.equal(validate(candidate),true,JSON.stringify(validate.errors));
+  const noReview={...candidate};delete noReview.review;
+  assert.equal(validate(noReview),false);
+  assert.equal(validate({...candidate,task_type:'claim_extraction'}),false);
+  assert.equal(withGateResult({...candidate,evidence:[{...candidate.evidence[0],quote:'invented quote'}]},body).status,'rejected');
+});
 
 test("QA abstention can be checkpointed without a quote but cannot publish facts", () => {
   const payload = { action: "keep_qa", reason: "No source-bounded AI financing event", claims: [] };
