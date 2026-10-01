@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,31 +54,33 @@
   },
   "institution": {
     "id": "INV-8a0be790cb80e0",
-    "name": "firstminute capital",
-    "aliases": [],
+    "name": "firstminute.capital",
+    "aliases": [
+      "firstminute capital"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2025-10-09",
-    "latest_disclosed_at": "2025-10-09",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-871ddc1832ae7d96",
+        "activity_id": "IA-00c72a27e0fe83f2",
         "funding_insight_id": "FI-7aef62aa956f090d",
         "event_ids": [
           "EV-286846e21412f3c7"
@@ -86,23 +88,15 @@
         "company_entity_id": "EN-636396f02b6571e4",
         "company_canonical_entity_id": "",
         "company_name": "n8n GmbH",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "Series C",
-        "amount_original": "$180M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 180000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1.8 亿美元"
-        },
-        "announced_at": "2025-10-09",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮领投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "种子轮领投",
         "role_code": "historical_or_ambiguous",
@@ -116,6 +110,38 @@
             "quote_hash": "46a337a4e47d8bd49cc54f0fd74332f7b6d9468c090ca0fa9b32c397e1cc94a3"
           }
         ]
+      },
+      {
+        "activity_id": "IA-4036364cee139329",
+        "funding_insight_id": "FI-36310666a49716b1",
+        "event_ids": [
+          "EV-c2f262e118de5629"
+        ],
+        "company_entity_id": "EN-5d3875c319452ecc",
+        "company_canonical_entity_id": "",
+        "company_name": "Restate",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-897ee0f062e50b23",
+            "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
+            "source_title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
+            "source_content_hash": "01508a456a92b8fc",
+            "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+            "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -126,6 +152,14 @@
         "source_content_hash": "ced17efee93f6010",
         "quote": "leading the seed round for firstminute capital in 2019",
         "quote_hash": "46a337a4e47d8bd49cc54f0fd74332f7b6d9468c090ca0fa9b32c397e1cc94a3"
+      },
+      {
+        "source_id": "FISRC-897ee0f062e50b23",
+        "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
+        "source_title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
+        "source_content_hash": "01508a456a92b8fc",
+        "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+        "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
       }
     ],
     "public_profile": {
@@ -252,6 +286,10 @@
         {
           "description": "Brent Hoberman 在 2025 年关于 n8n 的公开贴文回顾 firstminute capital 于 2019 年领投该公司的种子轮；该引用没有披露 firstminute 的具体投资额。当前融资记录把此历史关系关联到 n8n 2025 年 $180M Series C，$180M 是 n8n 该轮金额，不是 firstminute 的种子轮出资额。",
           "source_id": "FISRC-f6319614d583c9a4"
+        },
+        {
+          "description": "融资来源记录：Restate · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-897ee0f062e50b23"
         }
       ],
       "profile_type": "organization",
@@ -408,9 +446,61 @@
           "source_content_hash": "ced17efee93f6010",
           "quote": "leading the seed round for firstminute capital in 2019",
           "quote_hash": "46a337a4e47d8bd49cc54f0fd74332f7b6d9468c090ca0fa9b32c397e1cc94a3"
+        },
+        {
+          "source_id": "FISRC-897ee0f062e50b23",
+          "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
+          "source_title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
+          "source_content_hash": "01508a456a92b8fc",
+          "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+          "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
         }
       ],
       "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[11].label": {
+          "text": "联合创始人履历｜Brent Hoberman",
+          "source_hash": "86cce2654ab9ef5a0204fb243305e0ea42835fc282918de2a4df7c3ded6670aa",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        },
+        "public_profile.facts[12].label": {
+          "text": "联合创始人履历｜Spencer Crawley",
+          "source_hash": "eef2cd768157385348175e6644f0ac3b3dfda293a8e7e561a5c3e81d50468783",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Companies House 记录 FIRSTMINUTE CAPITAL LLP 注册成立；公司此前名称曾包括 BRENT CAPITAL LLP。该日期是法律主体注册日期，不等同于品牌或首支基金起始日。",
+          "source_hash": "a08d5f1367d0997090eecfe3465a53c0fe42e781849ab377d37b72961102ce98",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "Brent Hoberman 在 2025 年关于 n8n 的公开贴文回顾 firstminute capital 于 2019 年领投该公司的种子轮；该引用没有披露 firstminute 的具体投资额。当前融资记录把此历史关系关联到 n8n 2025 年 $180M Series C，$180M 是 n8n 该轮金额，不是 firstminute 的种子轮出资额。",
+          "source_hash": "7cdc4ad0bbb911a0dbf406da8a35d08d71bcc50977afdf50e1b6d3032da9a297",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[3].label": {
+          "text": "Companies House 注册办公地址",
+          "source_hash": "3fc8648cbe544495965f7a615294a4ba7bf121cde2010dcf43d5fbd26347612d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

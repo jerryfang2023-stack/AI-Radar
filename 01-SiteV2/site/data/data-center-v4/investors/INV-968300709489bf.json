@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-04-09",
-    "latest_disclosed_at": "2026-07-09",
+    "latest_disclosed_at": "2026-04-09",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1
@@ -87,47 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ab9df5326c43b758",
-        "funding_insight_id": "FI-23cabede97d0111d",
-        "event_ids": [
-          "EV-c6437ac13cb07531"
-        ],
-        "company_entity_id": "EN-4e781f6e9e5a49bc",
-        "company_canonical_entity_id": "EN-4e781f6e9e5a49bc",
-        "company_name": "深度智控",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-07-09",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-67ccadc4294defd6",
-            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-            "source_title": "深度智控 | 项目信息-36氪",
-            "source_content_hash": "ed75aafa3d8feb1d",
-            "quote": "A轮 2022-12 数千万人民币 汇川产投",
-            "quote_hash": "b210f22fac892211087c8a47d12c8b672a5a99dfc55ace625917db636ed0bbf7"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-3991810901ab4595",
+        "activity_id": "IA-cb503d30dcd05d45",
         "funding_insight_id": "FI-a7e1a675674f1a0b",
         "event_ids": [
           "EV-314db5cbf5010d41"
@@ -165,17 +125,41 @@
             "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
           }
         ]
+      },
+      {
+        "activity_id": "IA-e9dacf2a30e8790a",
+        "funding_insight_id": "FI-23cabede97d0111d",
+        "event_ids": [
+          "EV-c6437ac13cb07531"
+        ],
+        "company_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_canonical_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_name": "深度智控",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67ccadc4294defd6",
+            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+            "source_title": "深度智控 | 项目信息-36氪",
+            "source_content_hash": "ed75aafa3d8feb1d",
+            "quote": "A轮 2022-12 数千万人民币 汇川产投",
+            "quote_hash": "b210f22fac892211087c8a47d12c8b672a5a99dfc55ace625917db636ed0bbf7"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-67ccadc4294defd6",
-        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-        "source_title": "深度智控 | 项目信息-36氪",
-        "source_content_hash": "ed75aafa3d8feb1d",
-        "quote": "A轮 2022-12 数千万人民币 汇川产投",
-        "quote_hash": "b210f22fac892211087c8a47d12c8b672a5a99dfc55ace625917db636ed0bbf7"
-      },
       {
         "source_id": "FISRC-5e868b9dacd5325c",
         "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
@@ -183,6 +167,14 @@
         "source_content_hash": "21fcbff02b369abf",
         "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
         "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
+      },
+      {
+        "source_id": "FISRC-67ccadc4294defd6",
+        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+        "source_title": "深度智控 | 项目信息-36氪",
+        "source_content_hash": "ed75aafa3d8feb1d",
+        "quote": "A轮 2022-12 数千万人民币 汇川产投",
+        "quote_hash": "b210f22fac892211087c8a47d12c8b672a5a99dfc55ace625917db636ed0bbf7"
       }
     ],
     "public_profile": {

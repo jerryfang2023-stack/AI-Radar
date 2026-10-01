@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-09",
-    "latest_disclosed_at": "2026-09-20",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 2
     },
@@ -78,48 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-ab65165b8e226739",
-        "funding_insight_id": "FI-6f249b72ba7485a4",
-        "event_ids": [
-          "EV-d959c800774d5d30",
-          "EV-3c7609d3fc7b7ec8"
-        ],
-        "company_entity_id": "EN-0213fcbfa6055593",
-        "company_canonical_entity_id": "",
-        "company_name": "智身科技（GENISOM AI）",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "数亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-09-20",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-750c27d055174535",
-            "source_url": "https://www.taibo.cn/company/122078",
-            "source_title": "智身科技（北京）有限公司-泰伯网",
-            "source_content_hash": "d755141a7f7db875",
-            "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
-            "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-5b0687b2eb489000",
+        "activity_id": "IA-dd7c99856f8ce43a",
         "funding_insight_id": "FI-b2b578ba2d5dc007",
         "event_ids": [
           "EV-be59d9048dd1b6a0"
@@ -127,23 +86,15 @@
         "company_entity_id": "EN-7d0445227e7dde72",
         "company_canonical_entity_id": "EN-7d0445227e7dde72",
         "company_name": "小雨智造",
-        "round": "B+轮",
-        "round_code": "series_b_plus",
-        "round_original": "B+轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-05-09",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "B轮投资方",
         "role_code": "historical_or_ambiguous",
@@ -157,17 +108,42 @@
             "quote_hash": "3ad99f55f8125a47d02e825cdb9b9baf5ab71d4fc3dc90ac5690ad8d47c40d8b"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b8fcc9c0fbd1a765",
+        "funding_insight_id": "FI-6f249b72ba7485a4",
+        "event_ids": [
+          "EV-d959c800774d5d30",
+          "EV-3c7609d3fc7b7ec8"
+        ],
+        "company_entity_id": "EN-0213fcbfa6055593",
+        "company_canonical_entity_id": "",
+        "company_name": "智身科技（GENISOM AI）",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-750c27d055174535",
+            "source_url": "https://www.taibo.cn/company/122078",
+            "source_title": "智身科技（北京）有限公司-泰伯网",
+            "source_content_hash": "d755141a7f7db875",
+            "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+            "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-750c27d055174535",
-        "source_url": "https://www.taibo.cn/company/122078",
-        "source_title": "智身科技（北京）有限公司-泰伯网",
-        "source_content_hash": "d755141a7f7db875",
-        "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
-        "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
-      },
       {
         "source_id": "FISRC-d53187e629e482f0",
         "source_url": "https://robotscope.net/companies/xiaoyu-zhizao/",
@@ -175,6 +151,14 @@
         "source_content_hash": "2287537540d10b6a",
         "quote": "B 轮 数亿元 2026-03 华业天成领投，招银国际、茅台基金、贵州科创天使基金跟投",
         "quote_hash": "3ad99f55f8125a47d02e825cdb9b9baf5ab71d4fc3dc90ac5690ad8d47c40d8b"
+      },
+      {
+        "source_id": "FISRC-750c27d055174535",
+        "source_url": "https://www.taibo.cn/company/122078",
+        "source_title": "智身科技（北京）有限公司-泰伯网",
+        "source_content_hash": "d755141a7f7db875",
+        "quote": "A+轮 数亿元人民币 智元机器人, 贵安鲲鹏基金 ,金马游乐,柯力股份,豪鹏科技, 时代伯乐 , 茅台基金",
+        "quote_hash": "73abb7c1bbe47bb43dd8c46edcbd43f4329e879b481d278a3f2572e24a4b6895"
       }
     ],
     "public_profile": {

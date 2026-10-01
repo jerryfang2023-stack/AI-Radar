@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-09-15",
-    "latest_disclosed_at": "2026-09-15",
+    "first_disclosed_at": "2022-07",
+    "latest_disclosed_at": "2022-07",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-97c5f344bf5d61d3",
+        "activity_id": "IA-7950a186459a2da2",
         "funding_insight_id": "FI-1a6e7f08ffc4ef08",
         "event_ids": [
           "EV-e5763ba54217d88a"
@@ -86,23 +86,15 @@
         "company_entity_id": "EN-456d7aad12e82e0e",
         "company_canonical_entity_id": "",
         "company_name": "Arch Systems",
-        "round": "成长轮",
-        "round_code": "growth",
-        "round_original": "成长轮",
-        "amount_original": "$30 Million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 30000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3000 万美元"
-        },
-        "announced_at": "2026-09-15",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2022-07",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "2022年7月融资领投方",
         "role_code": "historical_or_ambiguous",
@@ -337,6 +329,34 @@
         }
       ],
       "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[4].label": {
+          "text": "创始人履历：Mike Goguen",
+          "source_hash": "f58a8645a89324f4870098b141e011747437f80327ab824699da9c6324a4df53",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        },
+        "public_profile.facts[5].label": {
+          "text": "合伙人履历：J. Seth Strattan",
+          "source_hash": "0d63160145845103456c0c8ee83215d398bfbd8c0afb9b366c69c125fa87f6b4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "Two Bear Capital领投Arch Systems披露的1500万美元融资。公告未披露Two Bear单笔投资金额。",
+          "source_hash": "0a090a200f0706b081a9a2aa00c2a2ffb14e8a3e1df0100fcf375d12eb896b33",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

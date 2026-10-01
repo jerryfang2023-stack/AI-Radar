@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-13",
-    "latest_disclosed_at": "2026-05-13",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-ef3f12972db8626e",
+        "activity_id": "IA-a65f8d6eddc4a8be",
         "funding_insight_id": "FI-27c50f0e1e7dd316",
         "event_ids": [
           "EV-70a994b9339f92e7"
@@ -86,23 +86,15 @@
         "company_entity_id": "EN-8da5eafb322ee86e",
         "company_canonical_entity_id": "",
         "company_name": "Fractile",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "2.2亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 220000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "2.2 亿美元"
-        },
-        "announced_at": "2026-05-13",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -313,6 +305,26 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "基于机构官网或机构本人公开资料核验；机构自述业绩和规模已注明口径。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Kindred Capital 是一家英国起家的早期风险投资机构，2016 年设立首支基金。其“Equitable Venture”模式让每家被投公司的创始人成为基金共同收益参与者；官网团队页列出 Leila Zegna、Chrys Chrysanthou、John Cassidy 和 Mark Evans 等普通合伙人。",
+          "source_hash": "22526fbfe4427272252061d940015103e85cc3895e697821fc3b7994410dd9cb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "官网组合页列出 Paddle、Five AI、Animal Dynamics、Qriously 等 2016–2017 年投资案例，以及 RobCo、Cradle Bio、Fractile 等后续投资；属于官网展示的组合案例。",
+          "source_hash": "fa7b1935645fd71f884e4196bad7664ba9db3bdd77a8d20f8374782a6948c715",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-02-05",
-    "latest_disclosed_at": "2026-09-13",
+    "latest_disclosed_at": "2026-02-05",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1
@@ -87,48 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-d42b90d144896a2b",
-        "funding_insight_id": "FI-63374eeafcdd0df6",
-        "event_ids": [
-          "EV-7eead74c2baae511",
-          "EV-ef669a52c9a3f94f"
-        ],
-        "company_entity_id": "EN-1d79127e9d90e89b",
-        "company_canonical_entity_id": "EN-1d79127e9d90e89b",
-        "company_name": "智谱AI",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "约50亿美元融资",
-        "amount_original": "50 亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 5000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿美元"
-        },
-        "announced_at": "2026-09-13",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-4b5b536102d7731e",
-            "source_url": "https://finance.sina.com.cn/tech/roll/2024-09-18/doc-incpqqsn4446116.shtml",
-            "source_title": "疯狂对标OpenAI，智谱AI要背水一战|AI_新浪科技_新浪网",
-            "source_content_hash": "ca9f54b39d2a0ec7",
-            "quote": "智谱AI以200亿元的投前估值，完成了由中关村科学城公司领投的新一轮融资",
-            "quote_hash": "2e55bdd92f87e0896aeff4abb35ca48afd15b8f7824e215a3cf23ac2a5f555d2"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-a6abac2356405004",
+        "activity_id": "IA-5f7cbb3ddb23e999",
         "funding_insight_id": "FI-474a441598e62f93",
         "event_ids": [
           "EV-622ebdad1e1fad2d",
@@ -167,17 +126,42 @@
             "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
           }
         ]
+      },
+      {
+        "activity_id": "IA-86c5215dff31764c",
+        "funding_insight_id": "FI-63374eeafcdd0df6",
+        "event_ids": [
+          "EV-7eead74c2baae511",
+          "EV-ef669a52c9a3f94f"
+        ],
+        "company_entity_id": "EN-1d79127e9d90e89b",
+        "company_canonical_entity_id": "EN-1d79127e9d90e89b",
+        "company_name": "智谱AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4b5b536102d7731e",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2024-09-18/doc-incpqqsn4446116.shtml",
+            "source_title": "疯狂对标OpenAI，智谱AI要背水一战|AI_新浪科技_新浪网",
+            "source_content_hash": "ca9f54b39d2a0ec7",
+            "quote": "智谱AI以200亿元的投前估值，完成了由中关村科学城公司领投的新一轮融资",
+            "quote_hash": "2e55bdd92f87e0896aeff4abb35ca48afd15b8f7824e215a3cf23ac2a5f555d2"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-4b5b536102d7731e",
-        "source_url": "https://finance.sina.com.cn/tech/roll/2024-09-18/doc-incpqqsn4446116.shtml",
-        "source_title": "疯狂对标OpenAI，智谱AI要背水一战|AI_新浪科技_新浪网",
-        "source_content_hash": "ca9f54b39d2a0ec7",
-        "quote": "智谱AI以200亿元的投前估值，完成了由中关村科学城公司领投的新一轮融资",
-        "quote_hash": "2e55bdd92f87e0896aeff4abb35ca48afd15b8f7824e215a3cf23ac2a5f555d2"
-      },
       {
         "source_id": "FISRC-4177e5ca07c921a5",
         "source_url": "https://news.pedaily.cn/202602/560802.shtml",
@@ -185,6 +169,14 @@
         "source_content_hash": "22fd0b6b2709ea7b",
         "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
         "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
+      },
+      {
+        "source_id": "FISRC-4b5b536102d7731e",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2024-09-18/doc-incpqqsn4446116.shtml",
+        "source_title": "疯狂对标OpenAI，智谱AI要背水一战|AI_新浪科技_新浪网",
+        "source_content_hash": "ca9f54b39d2a0ec7",
+        "quote": "智谱AI以200亿元的投前估值，完成了由中关村科学城公司领投的新一轮融资",
+        "quote_hash": "2e55bdd92f87e0896aeff4abb35ca48afd15b8f7824e215a3cf23ac2a5f555d2"
       }
     ],
     "public_profile": {

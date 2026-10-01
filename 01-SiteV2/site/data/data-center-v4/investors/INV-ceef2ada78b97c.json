@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-40a9543b0f7b0cf9",
+        "canonical_entity_id": "",
+        "name": "Modulate"
+      },
       {
         "entity_id": "EN-d2d165dff04ba225",
         "canonical_entity_id": "",
@@ -86,7 +92,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-80a1648df65837ef",
+        "activity_id": "IA-b4b08a17c858fd75",
+        "funding_insight_id": "FI-750e2aefead964e4",
+        "event_ids": [
+          "EV-9ea3912efd857ad8"
+        ],
+        "company_entity_id": "EN-40a9543b0f7b0cf9",
+        "company_canonical_entity_id": "",
+        "company_name": "Modulate",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次（新融资）",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6ec519350686cbda",
+            "source_url": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
+            "source_title": "Modulate为其语音模型和分析套件融资2500万美元",
+            "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
+            "quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar.",
+            "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b55848b075b94028",
         "funding_insight_id": "FI-46b16b5be44061ef",
         "event_ids": [
           "EV-dfddbb260b3d1c77"
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6ec519350686cbda",
+        "source_url": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
+        "source_title": "Modulate为其语音模型和分析套件融资2500万美元",
+        "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
+        "quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar.",
+        "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
+      },
+      {
         "source_id": "FISRC-1ac5030ddaba00a3",
         "source_url": "https://siliconangle.com/2026/05/07/ai-product-team-startup-pit-raises-16m-a16z-others-automate-enterprise-workflows/",
         "source_title": "AI 产品团队初创公司 Pit 获 a16z 等投资 1600 万美元，用于自动化企业工作流",
@@ -141,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Lakestar 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Lakestar 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Modulate · 轮次未披露 · 2026-09-28 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6ec519350686cbda"
+        },
         {
           "description": "融资来源记录：Pitdotcom Sweden AB · 种子轮 · 2026-05-07 · 本轮参投 · $16 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ac5030ddaba00a3"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-6ec519350686cbda",
+          "source_url": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
+          "source_title": "Modulate为其语音模型和分析套件融资2500万美元",
+          "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
+          "quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar.",
+          "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
+        },
         {
           "source_id": "FISRC-1ac5030ddaba00a3",
           "source_url": "https://siliconangle.com/2026/05/07/ai-product-team-startup-pit-raises-16m-a16z-others-automate-enterprise-workflows/",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-06-30",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "other_current_round": 1,
@@ -95,48 +95,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ed13982dfd035502",
-        "funding_insight_id": "FI-72df07926e3369ef",
-        "event_ids": [
-          "EV-26a5749d8604455a",
-          "EV-40d4ce6d936d4d49"
-        ],
-        "company_entity_id": "EN-d41ebd9f02722fc8",
-        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
-        "company_name": "Crusoe",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "Series F",
-        "amount_original": "$3.9B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 3900000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "39 亿美元"
-        },
-        "announced_at": "2026-09-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-4afc17abd0ce2781",
-            "source_url": "https://sacra.com/c/crusoe/",
-            "source_title": "Crusoe revenue, valuation & funding | Sacra",
-            "source_content_hash": "031d223859c249dd",
-            "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
-            "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-252e7a8d4f9f336c",
+        "activity_id": "IA-85ad2c15e14fa3a8",
         "funding_insight_id": "FI-d24e79349c1e9713",
         "event_ids": [
           "EV-040fc355bc12a750",
@@ -177,7 +136,7 @@
         ]
       },
       {
-        "activity_id": "IA-e5d5cd7195819d38",
+        "activity_id": "IA-6b4d04efe0e398f2",
         "funding_insight_id": "FI-5153381171755c70",
         "event_ids": [
           "EV-ad75efcb12a07793"
@@ -217,7 +176,7 @@
         ]
       },
       {
-        "activity_id": "IA-7d19867ddc6b6243",
+        "activity_id": "IA-792dcdc4184d9add",
         "funding_insight_id": "FI-5faa0336090509de",
         "event_ids": [
           "EV-5762fe51987bc5ff"
@@ -255,17 +214,42 @@
             "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
           }
         ]
+      },
+      {
+        "activity_id": "IA-30de47adc965bbd7",
+        "funding_insight_id": "FI-72df07926e3369ef",
+        "event_ids": [
+          "EV-26a5749d8604455a",
+          "EV-40d4ce6d936d4d49"
+        ],
+        "company_entity_id": "EN-d41ebd9f02722fc8",
+        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "company_name": "Crusoe",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4afc17abd0ce2781",
+            "source_url": "https://sacra.com/c/crusoe/",
+            "source_title": "Crusoe revenue, valuation & funding | Sacra",
+            "source_content_hash": "031d223859c249dd",
+            "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+            "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-4afc17abd0ce2781",
-        "source_url": "https://sacra.com/c/crusoe/",
-        "source_title": "Crusoe revenue, valuation & funding | Sacra",
-        "source_content_hash": "031d223859c249dd",
-        "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
-        "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
-      },
       {
         "source_id": "FISRC-ec090e2bf0f8f6e9",
         "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
@@ -289,6 +273,14 @@
         "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
         "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
         "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
+      },
+      {
+        "source_id": "FISRC-4afc17abd0ce2781",
+        "source_url": "https://sacra.com/c/crusoe/",
+        "source_title": "Crusoe revenue, valuation & funding | Sacra",
+        "source_content_hash": "031d223859c249dd",
+        "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+        "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
       }
     ],
     "public_profile": {

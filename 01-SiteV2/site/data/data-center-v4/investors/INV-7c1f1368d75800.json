@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-e006bfdbbf22813a",
+        "activity_id": "IA-5183e749bb2340cc",
         "funding_insight_id": "FI-001732eadec94e4e",
         "event_ids": [
           "EV-64fb6d791e19d10a"
@@ -347,6 +347,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "Twilio官方项目页和公司新闻稿确认其为Twilio旗下企业投资项目。官网当前称其正使用Twilio专项承诺的5000万美元，属于承诺规模而非未投资余额。A/B轮偏好、单笔金额和不要求董事席位均保留为官网当前惯例描述；2021年组合案例为当时公告列举的选例。数据库另有Rime 2026年融资参投记录，来源为既有TechCrunch证据，并不构成完整组合。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Twilio于2021年宣布的已投案例包括Algolia、Mux、Hyro、Calixa、Well Health和Terazo，并列出Community、Courier和Krisp等此前投资；这是公告所列选例，不代表完整组合或收益统计。",
+          "source_hash": "37acbbf7dc74c30199b8bdb6f92e97037b5fb4870b179603d231374e0e1199cc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:31.722Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Twilio Ventures、Corazon Capital、Unusual Ventures 及其他现有投资方也参与其中",
+          "source_hash": "723438dd8ba285c4ad5d4760fa84b935056b86105e0560a3d247df35c2737655",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:31.722Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "官网公布的Twilio Ventures联系邮箱",
+          "source_hash": "a5ce1af3a46156a631526a00c71bbfeec0a21d7992f717b6752eb2f77fabe59f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:31.722Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

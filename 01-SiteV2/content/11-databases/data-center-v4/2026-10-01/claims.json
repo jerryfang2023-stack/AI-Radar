@@ -531,6 +531,72 @@
     "verification_status": "disputed"
   },
   {
+    "claim_id": "CL-fd58bfe5c780a14b",
+    "raw_id": "RAW-20980d70d3f4581a",
+    "claim_type": "ipo_listing",
+    "subject": "中星微技术",
+    "predicate": "ipo_listing",
+    "object": "科创板",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-675c60bccccc9dcc"
+    },
+    "source_span": {
+      "raw_id": "RAW-20980d70d3f4581a",
+      "start": 1353,
+      "end": 1387
+    },
+    "source_quote": "中星微技术于2025年8月启动科创板上市辅导，辅导机构为中国银河证券",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1f46a9117dca9ea1",
+    "raw_id": "RAW-20980d70d3f4581a",
+    "claim_type": "ipo_listing",
+    "subject": "燧原科技",
+    "predicate": "ipo_listing",
+    "object": "科创板",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2,
+      "model_candidate_id": "MAC-675c60bccccc9dcc"
+    },
+    "source_span": {
+      "raw_id": "RAW-20980d70d3f4581a",
+      "start": 2346,
+      "end": 2370
+    },
+    "source_quote": "2026年，燧原科技科创板IPO正式获上交所受理",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-eb90d48e9bc428af",
+    "raw_id": "RAW-20980d70d3f4581a",
+    "claim_type": "ipo_listing",
+    "subject": "超聚变",
+    "predicate": "ipo_listing",
+    "object": "创业板",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-675c60bccccc9dcc"
+    },
+    "source_span": {
+      "raw_id": "RAW-20980d70d3f4581a",
+      "start": 2985,
+      "end": 3026
+    },
+    "source_quote": "2026年5月22日，深交所网站披露，超聚变数字技术股份有限公司创业板IPO获受理",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
     "claim_id": "CL-1255b0a6fafad7b5",
     "raw_id": "RAW-a956caffd3b93320",
     "claim_type": "research_result",
@@ -1740,6 +1806,1089 @@
     "source_quote": "Gems will be phased out starting in November, with existing ones migrating automatically.",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d44cb52d130ea321",
+    "raw_id": "RAW-7dcc0380e74eb454",
+    "claim_type": "funding",
+    "subject": "Photon",
+    "predicate": "funding",
+    "object": "$4.5 million seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-48d0463c4898bfa2"
+    },
+    "source_span": {
+      "raw_id": "RAW-7dcc0380e74eb454",
+      "start": 0,
+      "end": 335
+    },
+    "source_quote": "The AI startup Photon is so sure that agents will eventually come to replace mobile apps that it held a funeral for the latter — yes, a real funeral in a church, with speeches and everything. Photon, which helps developers build agents that work over iMessage and WhatsApp, now has $4.5 million in seed funding to develop its products.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4ce532e78c059eae",
+    "raw_id": "RAW-ba84da30a63a31d5",
+    "claim_type": "funding",
+    "subject": "Satlyt, founded by a former Google and SpaceX product manager,",
+    "predicate": "funding",
+    "object": "$8M to run AI on satellites",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-ba84da30a63a31d5",
+      "start": 478,
+      "end": 796
+    },
+    "source_quote": "So he left SpaceX and co-founded Satlyt , a new company with headquarters in Sunnyvale, California, and Nairobi, to build software for satellites that he hopes will let many satellites share the work of large computing jobs in space. The company has raised an $8 million seed round, Afullo exclusively told TechCrunch.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3345267349f7d386",
+    "raw_id": "RAW-a5f36db2106d5299",
+    "claim_type": "funding",
+    "subject": "Flow Engineering",
+    "predicate": "funding",
+    "object": "$50 million Series B round at a $750 million valuation",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-7b9d84bbbfcdae43"
+    },
+    "source_span": {
+      "raw_id": "RAW-a5f36db2106d5299",
+      "start": 147,
+      "end": 351
+    },
+    "source_quote": "Flow Engineering , a startup that offers AI tools for hardware design, has raised a $50 million Series B round at a $750 million valuation from some big-name investors, the company announced on Wednesday.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-41a2bd8ce42e3989",
+    "raw_id": "RAW-b847240e0bb2e921",
+    "claim_type": "capital_investment",
+    "subject": "ElevenLabs",
+    "predicate": "capital_investment",
+    "object": "$300 million tender offer",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f588adc3fcffb628"
+    },
+    "source_span": {
+      "raw_id": "RAW-b847240e0bb2e921",
+      "start": 363,
+      "end": 464
+    },
+    "source_quote": "The recent $300 million tender offer gave employees an opportunity to sell their shares to investors.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a0671cde30a1bb14",
+    "raw_id": "RAW-b847240e0bb2e921",
+    "claim_type": "capital_investment",
+    "subject": "Wellington and T. Rowe Price",
+    "predicate": "capital_investment",
+    "object": "co-led $300 million tender offer",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3,
+      "model_candidate_id": "MAC-f588adc3fcffb628"
+    },
+    "source_span": {
+      "raw_id": "RAW-b847240e0bb2e921",
+      "start": 465,
+      "end": 655
+    },
+    "source_quote": "The transaction was co-led by Wellington and T. Rowe Price, large institutional investors that back private companies with the intention of retaining the stock after the company goes public.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e630a8305a5cee46",
+    "raw_id": "RAW-f2eacada8b740cf5",
+    "claim_type": "ipo_listing",
+    "subject": "OpenAI delays",
+    "predicate": "ipo_listing",
+    "object": "over AI safety concerns",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f2eacada8b740cf5",
+      "start": 347,
+      "end": 566
+    },
+    "source_quote": "Altman said it was “bad for the world if OpenAI waits too long to go public” but that the $852 billion start-up would not “barrel all guns blazing towards an IPO” at a time when AI was rapidly advancing in capabilities.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bdfc3f041e2e5fe8",
+    "raw_id": "RAW-f2eacada8b740cf5",
+    "claim_type": "ipo_listing",
+    "subject": "OpenAI delays",
+    "predicate": "ipo_listing",
+    "object": "over AI safety concerns",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f2eacada8b740cf5",
+      "start": 2622,
+      "end": 2927
+    },
+    "source_quote": "Having already pushed its IPO to next year, OpenAI is in talks with investors about a new private funding round. The company is seeking to raise $30 billion or more at a valuation of about $1.4 trillion, according to people familiar with the matter. The $30 billion target was first reported by Bloomberg.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b0609b0c2728fe8c",
+    "raw_id": "RAW-f2eacada8b740cf5",
+    "claim_type": "ipo_listing",
+    "subject": "OpenAI delays",
+    "predicate": "ipo_listing",
+    "object": "over AI safety concerns",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f2eacada8b740cf5",
+      "start": 568,
+      "end": 865
+    },
+    "source_quote": "“We’re going to prioritize the mission and safety and making sure that we can very confidently scale to the next stage of AI without people debating what percentage chance we’re going to do all these bad things in the world,” Altman told reporters at the company’s annual developer day on Tuesday.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6d14340429f44b84",
+    "raw_id": "RAW-f2eacada8b740cf5",
+    "claim_type": "ipo_listing",
+    "subject": "OpenAI delays",
+    "predicate": "ipo_listing",
+    "object": "over AI safety concerns",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-f2eacada8b740cf5",
+      "start": 867,
+      "end": 1085
+    },
+    "source_quote": "The conference comes at a moment of intense scrutiny on OpenAI’s safety practices and its performance, following a series of high-profile hacking incidents and amid intense competition from Anthropic, Meta, and others.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2fc129a4a17540dd",
+    "raw_id": "RAW-fc57b6cd6579552c",
+    "claim_type": "funding",
+    "subject": "Restate",
+    "predicate": "funding",
+    "object": "$20 million Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a97ecb226b14a491"
+    },
+    "source_span": {
+      "raw_id": "RAW-fc57b6cd6579552c",
+      "start": 1020,
+      "end": 1166
+    },
+    "source_quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-efced06f755fba37",
+    "raw_id": "RAW-93259e273ea35cf7",
+    "claim_type": "acquisition",
+    "subject": "AMD",
+    "predicate": "acquisition",
+    "object": "World Labs AI startup, upping the ante against Nvidia",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-93259e273ea35cf7",
+      "start": 158,
+      "end": 350
+    },
+    "source_quote": "Chipmaker AMD and world models company World Labs announced that AMD will acquire the AI company by the end of the year, pending regulatory approval. The transaction is valued at $8.2 billion.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-00264bd65aeff2a7",
+    "raw_id": "RAW-93259e273ea35cf7",
+    "claim_type": "acquisition",
+    "subject": "AMD",
+    "predicate": "acquisition",
+    "object": "World Labs AI startup, upping the ante against Nvidia",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-93259e273ea35cf7",
+      "start": 1653,
+      "end": 2096
+    },
+    "source_quote": "This acquisition not only brings World Labs’ models under AMD’s roof, but also some of the leading research talent working on these models. According to World Labs’ announcement of the deal, Fei-Fei Li will become executive vice president and chief scientist at AMD, while “Justin Johnson and Ben Mildenhall will work with Fei-Fei to continue leading the World Labs team as it joins AMD to form a world-leading frontier research organization.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5ac48c858ff3ceba",
+    "raw_id": "RAW-93259e273ea35cf7",
+    "claim_type": "acquisition",
+    "subject": "AMD",
+    "predicate": "acquisition",
+    "object": "World Labs AI startup, upping the ante against Nvidia",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-93259e273ea35cf7",
+      "start": 2098,
+      "end": 2654
+    },
+    "source_quote": "While World Labs’ early public successes were in tools and models for content creation (Marble came up a lot at this year’s SIGGRAPH conference for computer graphics), AMD’s focus in its own acquisition announcement seems to be more on the robotics side. “As AI expands into reasoning, robotics, simulation and physical AI, the demands on compute infrastructure become more diverse,” it reads . “World Labs’ expertise in developing advanced models will give AMD deeper insight into how workloads are evolving and help shape its future technology roadmaps.”",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-037ddc9059bc0045",
+    "raw_id": "RAW-93259e273ea35cf7",
+    "claim_type": "acquisition",
+    "subject": "AMD",
+    "predicate": "acquisition",
+    "object": "World Labs AI startup, upping the ante against Nvidia",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-93259e273ea35cf7",
+      "start": 2656,
+      "end": 2914
+    },
+    "source_quote": "World Labs’ acquisition comes sooner than expected for such a young company, but AMD’s involvement shouldn’t be a surprise. The two companies had partnered before, and AMD needs this kind of expertise to compete in an AI chip landscape that Nvidia dominates.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-5e45bae331dabc5e",
+    "raw_id": "RAW-76bf7a62bd8fe35f",
+    "claim_type": "funding",
+    "subject": "Dazzle",
+    "predicate": "funding",
+    "object": "$8 million seed round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4cfbfe5154cc7098"
+    },
+    "source_span": {
+      "raw_id": "RAW-76bf7a62bd8fe35f",
+      "start": 108,
+      "end": 184
+    },
+    "source_quote": "the personal AI assistant that raised an $8 million seed round last December",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-811f8c8a38d25da1",
+    "raw_id": "RAW-8735684435b5c5c5",
+    "claim_type": "funding",
+    "subject": "Reco",
+    "predicate": "funding",
+    "object": "$55M as AI agent security startups crowd the market",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-8735684435b5c5c5",
+      "start": 2667,
+      "end": 3055
+    },
+    "source_quote": "There’s no doubt a ton of investors are interested in companies that can make a mint out of helping companies find and secure all these agents, and Reco has capitalized on that demand: The startup on Tuesday said it raised $55 million, building on a $30 million Series B in February . AT&T, a customer, invested in the extension via its venture arm, as did Forestay and Quadrille Capital.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c5bf35687646f94f",
+    "raw_id": "RAW-8735684435b5c5c5",
+    "claim_type": "funding",
+    "subject": "Reco",
+    "predicate": "funding",
+    "object": "$55M as AI agent security startups crowd the market",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-8735684435b5c5c5",
+      "start": 3964,
+      "end": 4123
+    },
+    "source_quote": "The startup will use the new funding for hiring, sales, partnerships, and customer support. The new funding brings Reco’s total capital raised to $140 million.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8203f09000286a96",
+    "raw_id": "RAW-7d4e146564743c1c",
+    "claim_type": "financial_performance",
+    "subject": "climate tech",
+    "predicate": "financial_performance",
+    "object": "$14 billion",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e140e337d28dad75"
+    },
+    "source_span": {
+      "raw_id": "RAW-7d4e146564743c1c",
+      "start": 969,
+      "end": 1159
+    },
+    "source_quote": "Total venture deal value has risen for four consecutive quarters, cresting the $14 billion mark in the first quarter of this year, according to the most recent available data from PitchBook.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-11df8198e51337c1",
+    "raw_id": "RAW-e370103913247511",
+    "claim_type": "funding",
+    "subject": "Modal Labs",
+    "predicate": "funding",
+    "object": "$750 million funding round led by Accel at a $15.75 billion valuation",
+    "qualifiers": {
+      "event_status": "in_progress",
+      "sequence": 1,
+      "model_candidate_id": "MAC-38313be9e51a6d43"
+    },
+    "source_span": {
+      "raw_id": "RAW-e370103913247511",
+      "start": 0,
+      "end": 159
+    },
+    "source_quote": "AI inference infrastructure provider Modal Labs is nearing a $750 million funding round led by Accel at a $15.75 billion valuation that includes the investment",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-071c338d89b808ee",
+    "raw_id": "RAW-64f7a004c8fe1fa0",
+    "claim_type": "funding",
+    "subject": "Modulate",
+    "predicate": "funding",
+    "object": "$25M for its voice models and analysis suite",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-64f7a004c8fe1fa0",
+      "start": 0,
+      "end": 292
+    },
+    "source_quote": "Boston-based voice intelligence startup Modulate has raised $25 million in new funding for its platform that uses an array of small models to offer enterprises transcription, emotional analysis, deepfake and AI music detection, and policy enforcement for voice agents in regulated industries.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ec4052ac0556890a",
+    "raw_id": "RAW-64f7a004c8fe1fa0",
+    "claim_type": "funding",
+    "subject": "Modulate",
+    "predicate": "funding",
+    "object": "$25M for its voice models and analysis suite",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-64f7a004c8fe1fa0",
+      "start": 659,
+      "end": 887
+    },
+    "source_quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar. Data from PitchBook indicated that the startup had raised $41 million in funding at a $170 million valuation prior to this round.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-423e7bd781daf926",
+    "raw_id": "RAW-4ea4249f30922f87",
+    "claim_type": "funding",
+    "subject": "Viral AI agent Instinct",
+    "predicate": "funding",
+    "object": "$1B Series C at a $10B valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-4ea4249f30922f87",
+      "start": 0,
+      "end": 281
+    },
+    "source_quote": "It’s only been a month since AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion , and now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9b0c95d82d11042d",
+    "raw_id": "RAW-4ea4249f30922f87",
+    "claim_type": "funding",
+    "subject": "Viral AI agent Instinct",
+    "predicate": "funding",
+    "object": "$1B Series C at a $10B valuation",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-4ea4249f30922f87",
+      "start": 283,
+      "end": 554
+    },
+    "source_quote": "The news of the company’s fundraising efforts was reported earlier this month by The Information . In a press release on Monday, Instinct confirmed this was a Series C round — a pretty quick growth round for a startup that launched its invite-only service in August 2026.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-235446ff4dcb4261",
+    "raw_id": "RAW-44ca1e7843212f6f",
+    "claim_type": "funding",
+    "subject": "Ahead of US IPO, British AI neocloud Nscale",
+    "predicate": "funding",
+    "object": "$3.36B in convertible financing",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-44ca1e7843212f6f",
+      "start": 69,
+      "end": 152
+    },
+    "source_quote": "Ahead of US IPO, British AI neocloud Nscale secures $3.36B in convertible financing",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fdf58bb803f28dc7",
+    "raw_id": "RAW-44ca1e7843212f6f",
+    "claim_type": "funding",
+    "subject": "Ahead of US IPO, British AI neocloud Nscale",
+    "predicate": "funding",
+    "object": "$3.36B in convertible financing",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-44ca1e7843212f6f",
+      "start": 154,
+      "end": 422
+    },
+    "source_quote": "Nscale , a British neocloud, has secured $3.36 billion in financing ahead of its IPO later this year, the company announced on Friday. Structured as a convertible note, the massive funding round underscores the staggering capital required to build out AI data centers.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-20a883c085ce03e3",
+    "raw_id": "RAW-44ca1e7843212f6f",
+    "claim_type": "funding",
+    "subject": "Ahead of US IPO, British AI neocloud Nscale",
+    "predicate": "funding",
+    "object": "$3.36B in convertible financing",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-44ca1e7843212f6f",
+      "start": 714,
+      "end": 921
+    },
+    "source_quote": "Nscale, which filed its IPO paperwork last week, is expected to be valued at $35 billion on the NYSE, Financial Times reported, and is seeking to raise $3 billion in the offering, according to Bloomberg .",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b82f9de91fd5d19a",
+    "raw_id": "RAW-b51afacace715661",
+    "claim_type": "funding",
+    "subject": "IMF：2026年全球AI投资规模或突破2万亿美元 债务",
+    "predicate": "funding",
+    "object": "依赖同步扩大",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-b51afacace715661",
+      "start": 0,
+      "end": 45
+    },
+    "source_quote": "IMF：2026年全球AI投资规模或突破2万亿美元 债务融资依赖同步扩大_新浪财经_新浪网",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-5b77eb46959cb8ef",
+    "raw_id": "RAW-b51afacace715661",
+    "claim_type": "funding",
+    "subject": "IMF：2026年全球AI投资规模或突破2万亿美元 债务",
+    "predicate": "funding",
+    "object": "依赖同步扩大",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-b51afacace715661",
+      "start": 263,
+      "end": 299
+    },
+    "source_quote": "IMF：2026年全球AI投资规模或突破2万亿美元 债务融资依赖同步扩大",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-dbd180b3ed032bdf",
+    "raw_id": "RAW-b51afacace715661",
+    "claim_type": "funding",
+    "subject": "IMF：2026年全球AI投资规模或突破2万亿美元 债务",
+    "predicate": "funding",
+    "object": "依赖同步扩大",
+    "qualifiers": {
+      "event_status": "rumored",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-b51afacace715661",
+      "start": 301,
+      "end": 337
+    },
+    "source_quote": "IMF：2026年全球AI投资规模或突破2万亿美元 债务融资依赖同步扩大",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "disputed"
+  },
+  {
+    "claim_id": "CL-16af4ccd4460108f",
+    "raw_id": "RAW-a01004df58f94ffd",
+    "claim_type": "funding",
+    "subject": "Snorkel AI",
+    "predicate": "funding",
+    "object": "3.5亿美元E轮融资",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8072d302ca196ce8"
+    },
+    "source_span": {
+      "raw_id": "RAW-a01004df58f94ffd",
+      "start": 118,
+      "end": 173
+    },
+    "source_quote": "9月22日，又完成3.5亿美元（约合人民币23.5亿元）E轮融资，估值达到35亿美元（约合人民币235亿元）。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3b3eea3e54d4f056",
+    "raw_id": "RAW-0d1bc6a3942dfd1e",
+    "claim_type": "funding",
+    "subject": "Reco",
+    "predicate": "funding",
+    "object": "5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-0d1bc6a3942dfd1e",
+      "start": 0,
+      "end": 32
+    },
+    "source_quote": "Reco融资5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b4cb4082e500e8ca",
+    "raw_id": "RAW-0d1bc6a3942dfd1e",
+    "claim_type": "funding",
+    "subject": "Reco",
+    "predicate": "funding",
+    "object": "5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-0d1bc6a3942dfd1e",
+      "start": 34,
+      "end": 61
+    },
+    "source_quote": "Reco融资5500万美元，AI智能体安全赛道竞争加剧",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9a5ceb02e19e9a3b",
+    "raw_id": "RAW-0d1bc6a3942dfd1e",
+    "claim_type": "funding",
+    "subject": "Reco",
+    "predicate": "funding",
+    "object": "5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-0d1bc6a3942dfd1e",
+      "start": 1167,
+      "end": 1273
+    },
+    "source_quote": "毫无疑问，大量投资者对那些能够通过帮助企业发现和保护这些智能体而获利的公司抱有浓厚兴趣，Reco也借此需求趁势而上： 该初创公司周二宣布已完成5500万美元融资，这是在今年2月3000万美元B轮融资基础上的追加。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0a7f30003f9e9201",
+    "raw_id": "RAW-0d1bc6a3942dfd1e",
+    "claim_type": "funding",
+    "subject": "Reco",
+    "predicate": "funding",
+    "object": "5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-0d1bc6a3942dfd1e",
+      "start": 1691,
+      "end": 1715
+    },
+    "source_quote": "此次新融资使Reco的融资总额达到1.4亿美元。",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fdad3b24f14bdaec",
+    "raw_id": "RAW-6be387dbbb02a700",
+    "claim_type": "capital_investment",
+    "subject": "Microsoft",
+    "predicate": "capital_investment",
+    "object": "Wayvida",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-75a6722fe21d8346"
+    },
+    "source_span": {
+      "raw_id": "RAW-6be387dbbb02a700",
+      "start": 13,
+      "end": 70
+    },
+    "source_quote": "总部位于印度喀拉拉邦的教育科技初创公司Wayvida从微软的“创业扶持计划”中拿到了价值3250万卢比的云服务额度",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-06fc7233a28264ac",
+    "raw_id": "RAW-acf894d968f46840",
+    "claim_type": "funding",
+    "subject": "Outmarket AI",
+    "predicate": "funding",
+    "object": "$34.5M Series B to Solidify Position as the #1 AI Platform for Insurance",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-acf894d968f46840",
+      "start": 97,
+      "end": 553
+    },
+    "source_quote": "SAN FRANCISCO , Sept. 25, 2026 /PRNewswire/ -- Outmarket AI, the leading AI platform purpose-built for insurance, today announced it has raised $34.5 million in Series B funding. The round was led by SignalFire , with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital and Dash Fund. Coming just a few months after the company announced a $17 million Series A, the latest investment brings Outmarket's total funding to $56.5 million.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b64b0fcec5be0b5e",
+    "raw_id": "RAW-acf894d968f46840",
+    "claim_type": "funding",
+    "subject": "Outmarket AI",
+    "predicate": "funding",
+    "object": "$34.5M Series B to Solidify Position as the #1 AI Platform for Insurance",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-acf894d968f46840",
+      "start": 663,
+      "end": 1231
+    },
+    "source_quote": "The decision to raise a Series B so soon after the previous round was driven by Outmarket's explosive growth and rapid market adoption this year. The platform has scaled at a record pace, recently surpassing 10,000 active users. Today, over 300 agency customers, including over 25% of the Top 100 insurance agencies, rely on Outmarket daily to transform fragmented agency data into intelligent workflows. To support this scale, Outmarket has significantly expanded its growing team with top-tier talent spanning engineering, insurance operations, and customer success.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-da698a37c179575d",
+    "raw_id": "RAW-acf894d968f46840",
+    "claim_type": "funding",
+    "subject": "Outmarket AI",
+    "predicate": "funding",
+    "object": "$34.5M Series B to Solidify Position as the #1 AI Platform for Insurance",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-acf894d968f46840",
+      "start": 3159,
+      "end": 3989
+    },
+    "source_quote": "In conjunction with the Series B announcement, Outmarket released a new Certificates workflow. Certificates of insurance are one of the highest volume and most thankless tasks in every agency. Account managers issue thousands of certificates a year, often within hours of a client request, and every one carries E&O exposure if a holder, endorsement or coverage requirement is missed. Outmarket's Certificates workflow automates the entire process. It reads the client's contract or lease, extracts the insurance requirements, checks them against the policies already in the AMS, flags any gaps, and generates the completed ACORD certificate with the correct holders, additional insureds and endorsements attached. Early customers report issuing certificates in a few minutes and significantly reducing certificate-related errors.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-559e973f0af3df5c",
+    "raw_id": "RAW-acf894d968f46840",
+    "claim_type": "funding",
+    "subject": "Outmarket AI",
+    "predicate": "funding",
+    "object": "$34.5M Series B to Solidify Position as the #1 AI Platform for Insurance",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-acf894d968f46840",
+      "start": 4312,
+      "end": 4842
+    },
+    "source_quote": "\"We've tracked Outmarket's trajectory closely, and their execution over the past year has been nothing short of exceptional,\" said Tony Pezzullo, Partner at SignalFire. \"To capture this much market share in such a short window is a rare achievement, and even rarer in a complex vertical like insurance. Outmarket isn't just riding the AI wave; they are the undisputed market leaders setting the standard for how agencies will operate in the intelligence era. We are thrilled to lead this Series B and double down on their vision.\"",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-73fc35643da3784c",
+    "raw_id": "RAW-6f67cd2a401c4f8b",
+    "claim_type": "funding",
+    "subject": "Miter, the AI Platform for Construction,",
+    "predicate": "funding",
+    "object": "$40 Million for the Built World",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-6f67cd2a401c4f8b",
+      "start": 169,
+      "end": 543
+    },
+    "source_quote": "SAN FRANCISCO , Sept. 30, 2026 /PRNewswire/ -- Miter , the leading AI-powered workforce management platform for the construction industry and the built world, announced it has raised a $40 million Series B round of financing led by Battery Ventures, bringing its total capital raised to $78 million. Existing investors Bessemer Venture Partners and Coatue also participated.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-281abfd3da5276e7",
+    "raw_id": "RAW-6f67cd2a401c4f8b",
+    "claim_type": "funding",
+    "subject": "Miter, the AI Platform for Construction,",
+    "predicate": "funding",
+    "object": "$40 Million for the Built World",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-6f67cd2a401c4f8b",
+      "start": 4500,
+      "end": 4784
+    },
+    "source_quote": "Watumull previously worked as a venture capital investor and, prior to that, as a product manager in the technology industry and as a management consultant. He and Paxton announced Miter's Series A fundraising round in May 2025; since then, the company has tripled its customer count.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e2afe69604600676",
+    "raw_id": "RAW-289f4f16d44efc40",
+    "claim_type": "funding",
+    "subject": "NSCALE",
+    "predicate": "funding",
+    "object": "$3.36B IN PRE-IPO CONVERTIBLE FINANCING",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-289f4f16d44efc40",
+      "start": 0,
+      "end": 703
+    },
+    "source_quote": "LONDON , Sept. 25, 2026 /PRNewswire/ -- Nscale Limited, the full-stack AI cloud platform, today announced its $3.36bn raise via convertible loan notes, led by Third Point. The convertible funding round was also supported by new and existing investors including NVIDIA, funds managed by Apollo, Citadel, Hudson Bay Capital, Abu Dhabi Investment Council, and 8090 Industries. Other investors that participated in the financing include Davidson Kempner Capital Management, Qube Research & Technologies (QRT), Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c3a3a814de520e9e",
+    "raw_id": "RAW-f004c96d4e152561",
+    "claim_type": "funding",
+    "subject": "Basecamp Research",
+    "predicate": "funding",
+    "object": "$140M Series C financing",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a8a78575bf84aad6"
+    },
+    "source_span": {
+      "raw_id": "RAW-f004c96d4e152561",
+      "start": 999,
+      "end": 1238
+    },
+    "source_quote": "Basecamp Research, a frontier AI company developing AI-designed medicines, today announced a $140M Series C financing to train a new generation of EDEN models and advance a pipeline of AI-designed therapeutics towards clinical development.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c01440fa8863598a",
+    "raw_id": "RAW-f791556b947c876f",
+    "claim_type": "funding",
+    "subject": "Estonia’s bilt.me",
+    "predicate": "funding",
+    "object": "€615k with backing from Bolt and Lightyear founders to scale its AI-native mobile app builder",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-f791556b947c876f",
+      "start": 0,
+      "end": 104
+    },
+    "source_quote": "Home Estonia-Startups Estonia's bilt.me raises €615k with backing from Bolt and Lightyear founders to...",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d77929e06051c4f5",
+    "raw_id": "RAW-f791556b947c876f",
+    "claim_type": "funding",
+    "subject": "Estonia’s bilt.me",
+    "predicate": "funding",
+    "object": "€615k with backing from Bolt and Lightyear founders to scale its AI-native mobile app builder",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-f791556b947c876f",
+      "start": 132,
+      "end": 250
+    },
+    "source_quote": "Estonia’s bilt.me raises €615k with backing from Bolt and Lightyear founders to scale its AI-native mobile app builder",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-538bd3f5c2e3bb29",
+    "raw_id": "RAW-f791556b947c876f",
+    "claim_type": "funding",
+    "subject": "Estonia’s bilt.me",
+    "predicate": "funding",
+    "object": "€615k with backing from Bolt and Lightyear founders to scale its AI-native mobile app builder",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-f791556b947c876f",
+      "start": 332,
+      "end": 443
+    },
+    "source_quote": "bilt.me , a Tallinn-based AI-native mobile app builder, has raised €614.9k ($700k) in a pre-Seed funding round.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-4f123f0c41a94e0f",
+    "raw_id": "RAW-976e3250e7c203bc",
+    "claim_type": "funding",
+    "subject": "Island",
+    "predicate": "funding",
+    "object": "$400 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4c05af9e4832aa74"
+    },
+    "source_span": {
+      "raw_id": "RAW-976e3250e7c203bc",
+      "start": 3253,
+      "end": 3440
+    },
+    "source_quote": "Enterprise-focused artificial intelligence company Island on Thursday revealed that its valuation soared to $6.4 billion after it closed its latest funding round with $400 million in tow.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6d0136988a9b3ddd",
+    "raw_id": "RAW-24c44ba3b2c3b0ca",
+    "claim_type": "hardware_product",
+    "subject": "Hearing tech startup Legato",
+    "predicate": "hardware_product",
+    "object": "The official launch of the glasses comes a few weeks after the startup emerged from stealth with $12 million in funding from Neotribe Ventures, Listen, and Village Global.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1
+    },
+    "source_span": {
+      "raw_id": "RAW-24c44ba3b2c3b0ca",
+      "start": 1403,
+      "end": 1574
+    },
+    "source_quote": "The official launch of the glasses comes a few weeks after the startup emerged from stealth with $12 million in funding from Neotribe Ventures, Listen, and Village Global.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.9,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-626e50b1279c4971",
+    "raw_id": "RAW-24c44ba3b2c3b0ca",
+    "claim_type": "hardware_product",
+    "subject": "Hearing tech startup Legato",
+    "predicate": "hardware_product",
+    "object": "Hearing tech startup Legato announced on Thursday that its flagship AI-based hearing glasses are now available for purchase. The glasses, called Legato Frames , integrate the company’s patented hearing-assistance technology into the arms of eyewear frames. Starting at $999, Legato Frames are designed for adults with up to moderate levels of hearing loss.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 2
+    },
+    "source_span": {
+      "raw_id": "RAW-24c44ba3b2c3b0ca",
+      "start": 0,
+      "end": 356
+    },
+    "source_quote": "Hearing tech startup Legato announced on Thursday that its flagship AI-based hearing glasses are now available for purchase. The glasses, called Legato Frames , integrate the company’s patented hearing-assistance technology into the arms of eyewear frames. Starting at $999, Legato Frames are designed for adults with up to moderate levels of hearing loss.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-c8a8d434d4213074",
+    "raw_id": "RAW-24c44ba3b2c3b0ca",
+    "claim_type": "hardware_product",
+    "subject": "Hearing tech startup Legato",
+    "predicate": "hardware_product",
+    "object": "The glasses stem from the startup’s goal of making hearing care more accessible by addressing the cost, comfort, and stigma associated with traditional hearing aids.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 3
+    },
+    "source_span": {
+      "raw_id": "RAW-24c44ba3b2c3b0ca",
+      "start": 358,
+      "end": 523
+    },
+    "source_quote": "The glasses stem from the startup’s goal of making hearing care more accessible by addressing the cost, comfort, and stigma associated with traditional hearing aids.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-fac8f4a0a67bab56",
+    "raw_id": "RAW-24c44ba3b2c3b0ca",
+    "claim_type": "hardware_product",
+    "subject": "Hearing tech startup Legato",
+    "predicate": "hardware_product",
+    "object": "Unlike traditional hearing aids, which often use directional microphones to focus on sounds coming from a particular direction and can struggle in noisy environments, Legato takes a different approach. Its AI-powered system distinguishes voices from background noise and amplifies voices while reducing unwanted sounds.",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 4
+    },
+    "source_span": {
+      "raw_id": "RAW-24c44ba3b2c3b0ca",
+      "start": 525,
+      "end": 844
+    },
+    "source_quote": "Unlike traditional hearing aids, which often use directional microphones to focus on sounds coming from a particular direction and can struggle in noisy environments, Legato takes a different approach. Its AI-powered system distinguishes voices from background noise and amplifies voices while reducing unwanted sounds.",
+    "extraction_method": "deterministic_source_span",
+    "extraction_confidence": 0.82,
     "verification_status": "accepted"
   }
 ]

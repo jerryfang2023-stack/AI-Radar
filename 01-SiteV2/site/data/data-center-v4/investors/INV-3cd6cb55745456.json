@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-23",
-    "latest_disclosed_at": "2026-06-23",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-12dd250b008500d0",
+        "activity_id": "IA-3d0b1059d0bbc676",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
           "EV-20d762872664fddb"
@@ -86,23 +86,15 @@
         "company_entity_id": "EN-450dcf23e621ff10",
         "company_canonical_entity_id": "",
         "company_name": "Engram",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount_original": "$98M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 98000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "9800 万美元"
-        },
-        "announced_at": "2026-06-23",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使投资人",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "天使投资人",
         "role_code": "historical_or_ambiguous",
@@ -226,6 +218,26 @@
       "coverage_note": "职务、教育、奖项和创业案例按 UC Berkeley 官方教职页面记录；Engram 融资报道的金额为整轮金额。",
       "last_verified_at": "2026-09-28",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Pieter Abbeel 是 UC Berkeley 工程学教授、机器人学习实验室主任及 Berkeley AI Research（BAIR）实验室联合主任。他的研究覆盖机器人、机器学习与控制，并共同创办 Gradescope、Covariant 和 Berkeley Open Arms。",
+          "source_hash": "4eb1844b68b43283f876acb5ef3b57bb200c52b6eda61b5f07d165492856b81e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:51.577Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "UC Berkeley 官方资料列示其获 ACM Prize in Computing（2021）和 IEEE Kiyo Tomiyasu Award（2022）等荣誉。",
+          "source_hash": "6e0aab686de0ecbcbb9073227cd967eff435781864951a2ab5ed04149fd2295f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:51.577Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

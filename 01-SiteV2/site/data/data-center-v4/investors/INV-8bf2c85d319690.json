@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-03-11",
     "latest_disclosed_at": "2026-03-11",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -86,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-efc54eb52e5c38da",
+        "activity_id": "IA-b66e31ce57fb7767",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
         "event_ids": [
           "EV-8eb0acb180b7ad9d"
@@ -124,6 +125,38 @@
             "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b725a983c5214b1c",
+        "funding_insight_id": "FI-41853e1ae903d50f",
+        "event_ids": [
+          "EV-34f58445170831ae"
+        ],
+        "company_entity_id": "EN-7331374f7091259f",
+        "company_canonical_entity_id": "",
+        "company_name": "Snorkel AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次战略投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6dd774496b50aaac",
+            "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+            "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+            "source_content_hash": "fc35ad6f0d7ac53d",
+            "quote": "Accenture Ventures Details : Strategic arm of Accenture; made an undisclosed strategic investment in August 2025, with Snorkel AI joining Accenture Ventures' Project Spotlight accelerator program.",
+            "quote_hash": "23c9d47b8d4ce952c43af57296f5aad6ea6bf622ad046d7eae9e5fef29e27f6d"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "c906371275e7a3ca",
         "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
         "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
+      },
+      {
+        "source_id": "FISRC-6dd774496b50aaac",
+        "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+        "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+        "source_content_hash": "fc35ad6f0d7ac53d",
+        "quote": "Accenture Ventures Details : Strategic arm of Accenture; made an undisclosed strategic investment in August 2025, with Snorkel AI joining Accenture Ventures' Project Spotlight accelerator program.",
+        "quote_hash": "23c9d47b8d4ce952c43af57296f5aad6ea6bf622ad046d7eae9e5fef29e27f6d"
       }
     ],
     "public_profile": {
@@ -173,6 +214,10 @@
         {
           "description": "A report listed Accenture among strategic investors in Replit’s Series D. It does not identify the internal investment unit or disclose an individual amount.",
           "source_id": "FISRC-00ed3d8fd701898b"
+        },
+        {
+          "description": "融资来源记录：Snorkel AI · 历史轮次未披露 · 历史轮次战略投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6dd774496b50aaac"
         }
       ],
       "contacts": [
@@ -200,6 +245,14 @@
           "source_content_hash": "c906371275e7a3ca",
           "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
+        },
+        {
+          "source_id": "FISRC-6dd774496b50aaac",
+          "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+          "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+          "source_content_hash": "fc35ad6f0d7ac53d",
+          "quote": "Accenture Ventures Details : Strategic arm of Accenture; made an undisclosed strategic investment in August 2025, with Snorkel AI joining Accenture Ventures' Project Spotlight accelerator program.",
+          "quote_hash": "23c9d47b8d4ce952c43af57296f5aad6ea6bf622ad046d7eae9e5fef29e27f6d"
         }
       ],
       "last_verified_at": "2026-09-27"

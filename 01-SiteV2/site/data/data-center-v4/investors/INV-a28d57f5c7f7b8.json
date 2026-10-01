@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-09-17",
-    "latest_disclosed_at": "2026-09-17",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-a02aa129d510ea22",
+        "activity_id": "IA-4127cfb0be48442d",
         "funding_insight_id": "FI-72df07926e3369ef",
         "event_ids": [
           "EV-26a5749d8604455a",
@@ -87,23 +87,15 @@
         "company_entity_id": "EN-d41ebd9f02722fc8",
         "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
         "company_name": "Crusoe",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "Series F",
-        "amount_original": "$3.9B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 3900000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "39 亿美元"
-        },
-        "announced_at": "2026-09-17",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "历史轮次投资方",
         "role_code": "historical_or_ambiguous",
@@ -293,6 +285,42 @@
         }
       ],
       "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[4].label": {
+          "text": "Cyan Banister 过往经历",
+          "source_hash": "67f894cea51679d48318c308ba9ec462b8e777b57d216564856eac51be346879",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:51.577Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "Arielle Zuckerberg 过往经历",
+          "source_hash": "1757a88b7046a55bd8d5a97ac1b561cb774a4840d415950deaeab9633a1c3da9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:51.577Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "机构创办人案例：Lee Jacobs 在 Long Journey 官网署名文章中称，他于 2018 年认识 Crusoe 创办人 Chase Lochmiller。",
+          "source_hash": "54303108b260448d53c3167ca4f96b85e65e3d8a647821341f2c82218f439343",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:51.577Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "第三方融资资料将 Long Journey Ventures 列为 Crusoe 的知名历史投资方之一，并明确说该名单不属于 Series D 参与方。不能据此认定其参与 Crusoe 2026 年 Series F 或将该轮金额归属于 Long Journey。",
+          "source_hash": "3d119b24e04f4eb3b506c62651d51f0240b20cb2b6c31840e7c521ba03746bf6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:51.577Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

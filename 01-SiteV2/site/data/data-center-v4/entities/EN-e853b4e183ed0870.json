@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,7 +63,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-8a2e0f5bdc713e44"
+      "EV-8a2e0f5bdc713e44",
+      "EV-1696657c7a78340b"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -71,11 +72,13 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-13",
-    "lastSeen": "2026-09-15",
+    "lastSeen": "2026-10-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
-      "deployments": [],
+      "deployments": [
+        "EV-1696657c7a78340b"
+      ],
       "partnerships": [],
       "productsServices": [
         "EV-8a2e0f5bdc713e44"
@@ -85,6 +88,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-1696657c7a78340b",
+        "dataDate": "2026-10-01",
+        "date": "2026-09-30",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "AI 语音初创公司 ElevenLabs 估值翻倍至 220 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e853b4e183ed0870",
+          "EN-16c719fdaa7332af"
+        ]
+      },
       {
         "id": "EV-8a2e0f5bdc713e44",
         "dataDate": "2026-09-15",
@@ -126,6 +145,7 @@
       "typeLabel": "技术",
       "valueId": "speech_audio",
       "eventIds": [
+        "EV-9ea3912efd857ad8",
         "EV-657176fd0dff6209",
         "EV-7f4e56e09d2328bb",
         "EV-1b912ec16c50fc0f",
@@ -150,6 +170,7 @@
         "EV-631dce4dc135d01b"
       ],
       "entityIds": [
+        "EN-40a9543b0f7b0cf9",
         "EN-336ab1deb42d6284",
         "EN-ec68d09e3a81e0ae",
         "EN-bbdefa2950f49882",
@@ -172,7 +193,7 @@
       "fdeIds": [],
       "hardwareIds": [],
       "firstSeen": "2026-05-25",
-      "lastSeen": "2026-09-28"
+      "lastSeen": "2026-10-01"
     }
   ],
   "fde": [],

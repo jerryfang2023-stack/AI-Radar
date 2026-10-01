@@ -18563,7 +18563,580 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "generated_at": "2026-10-01T14:03:43.314Z"
+    },
+    "EV-f3d33551ace62c12": {
+      "id": "EV-f3d33551ace62c12",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "Photon 提供统一 API、CLI 和可观测性套件等工具包，明确面向开发者构建智能体，属于智能体开发与编排平台。",
+      "input_hash": "6387f634a2b33a6d20ba2c028ce2cc981c47216589e8a764289306ff9cd44074",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-199e9ff185705c78",
+          "quote": "The AI startup Photon is so sure that agents will eventually come to replace mobile apps"
+        },
+        {
+          "source_id": "FISRC-199e9ff185705c78",
+          "quote": "Photon is offering a package of tools, including a unified API, an extensible channel framework, a command-line interface (CLI), and an observability suite."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.212Z"
+    },
+    "EV-a772b615a788251b": {
+      "id": "EV-a772b615a788251b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Island 以企业浏览器为核心，将安全、IT 和 AI 生产力内置于浏览器中，属于企业网络安全与风控赛道。",
+      "input_hash": "ee51354765d78e78607de2900fdf0f95a3908670b8513680be25dbb105a1b8f2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1d612fd374186de4",
+          "quote": "Enterprise-focused artificial intelligence company Island on Thursday revealed that its valuation soared to $6.4 billion after it closed its latest funding round with $400 million in tow."
+        },
+        {
+          "source_id": "FISRC-1bd8ed9d0103713f",
+          "quote": "By building the core needs of the enterprise into the browser itself, the Island Enterprise Browser provides organizations with complete visibility and last-mile control, producing unprecedented improvements in security, IT, and productivity"
+        },
+        {
+          "source_id": "FISRC-254a65b832ae134c",
+          "quote": "The Enterprise Browser Where enterprise IT, security, and AI-powered productivity are naturally built in, so users just log in and get to work."
+        },
+        {
+          "source_id": "FISRC-254a65b832ae134c",
+          "quote": "Enterprise AI The AI you already use, now enterprise ready - fundamentally safe, under your control, and deployed at scale."
+        },
+        {
+          "source_id": "FISRC-254a65b832ae134c",
+          "quote": "The Enterprise Network Welcome to work without detours - SASE reimagined for the AI era with Perfect Packet architecture."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.212Z"
+    },
+    "EV-486e6dedee43c0d3": {
+      "id": "EV-486e6dedee43c0d3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "bilt.me 是 AI 原生移动应用构建器，用户用自然语言描述想法即可生成并导出 React Native 代码，属于 AI 编程与软件研发。",
+      "input_hash": "2a582d2929f6e15b459b1de5107ea601ce4964dbcb811b4cbcc5e78fac915c42",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-73a8427c95c14731",
+          "quote": "bilt.me , a Tallinn-based AI-native mobile app builder"
+        },
+        {
+          "source_id": "FISRC-73a8427c95c14731",
+          "quote": "users describe an app idea in plain language, and bilt.me’s AI agent builds it, previews it on their phone and helps publish it to the App Store or Google Play"
+        },
+        {
+          "source_id": "FISRC-73a8427c95c14731",
+          "quote": "The company says users can export the React Native code behind their apps."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.212Z"
+    },
+    "EV-6d92f16f6079fe38": {
+      "id": "EV-6d92f16f6079fe38",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "research"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "Basecamp Research 开发 AI 设计的药物和生物基础模型，核心业务围绕药物研发与生命科学。",
+      "input_hash": "77611eff7013c4a2f45477abc9b3de7e7c0f4a04b7e275c836a2ce77a61cc208",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ecd2ea74974f4ff3",
+          "quote": "Basecamp Research, a frontier AI company developing AI-designed medicines"
+        },
+        {
+          "source_id": "FISRC-ecd2ea74974f4ff3",
+          "quote": "EDEN models aim to deliver a universal understanding of how DNA works across all of life. This means that the models can generate potential therapeutic candidates directly from information about a disease"
+        },
+        {
+          "source_id": "FISRC-ecd2ea74974f4ff3",
+          "quote": "At the centre of Basecamp Research's AI platform is the Trillion Gene Atlas, the world's largest proprietary biological AI training dataset."
+        },
+        {
+          "source_id": "FISRC-5bbedbc77c74b158",
+          "quote": "Gene insertion (aiPGI™) EDEN designs recombinases (LSRs) that can insert long, complex DNA payloads at safe, predictable and well defined genomic sites, without double stranded breaks."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.212Z"
+    },
+    "EV-f53bfa2bb0275904": {
+      "id": "EV-f53bfa2bb0275904",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Nscale 提供全栈 AI 云平台，包括专用推理、GPU 基础设施和 AI 数据中心，属于 AI 云与算力服务。",
+      "input_hash": "76d1c8e359f298b87bd1fe99601eee934fac9181eae452246f92136e0a84a1db",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-060d60f0bcc42b9d",
+          "quote": "Nscale Limited, the full-stack AI cloud platform"
+        },
+        {
+          "source_id": "FISRC-4120d8b67af0d4c7",
+          "quote": "Nscale Cloud A managed platform for AI teams including dedicated inference, customizable Environments, managed Kubernetes and Slurm, enterprise IAM and security."
+        },
+        {
+          "source_id": "FISRC-4120d8b67af0d4c7",
+          "quote": "Nscale Infrastructure Dedicated GPU infrastructure tailored to your operational requirements. Fleet Operations GPU & CPU compute Fast Networking & storage"
+        },
+        {
+          "source_id": "FISRC-4120d8b67af0d4c7",
+          "quote": "Nscale Data Centers Purpose-built data centers engineered for AI. Modular Liquid cooled Low PUE"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.212Z"
+    },
+    "EV-55581be112058bd5": {
+      "id": "EV-55581be112058bd5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "property",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Miter 是面向建筑行业的 AI 劳动力管理平台，提供薪资、HR 和现场运营工具，属于建筑与房地产行业 AI。",
+      "input_hash": "d44682ca4b498c149021e0ad861ccd56c2c982e2ccac6c4152611fdf93d37af4",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8b2ed67c1554bee8",
+          "quote": "Miter , the leading AI-powered workforce management platform for the construction industry and the built world"
+        },
+        {
+          "source_id": "FISRC-8b2ed67c1554bee8",
+          "quote": "Miter's AI-native operating system makes it easier and faster to build critical infrastructure by empowering the next generation of contractors to strengthen their workforce, control job costs and accelerate jobsite execution."
+        },
+        {
+          "source_id": "FISRC-54912043dc242d6d",
+          "quote": "The platform provides integrated payroll, HR, expense management, and field operations tools designed specifically for the operational and compliance requirements of the construction industry."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.212Z"
+    },
+    "EV-bbea3352983c2033": {
+      "id": "EV-bbea3352983c2033",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Outmarket AI 是专为保险行业打造的 AI 平台，直接连接代理管理系统并自动化保险业务流程，属于行业 AI 中的金融与保险细分。",
+      "input_hash": "0931dc7df076808b981c7d544a686109fc6292b939952b132dadc71424badc94",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1a2ad9b1108e3f59",
+          "quote": "Outmarket AI, the leading AI platform purpose-built for insurance"
+        },
+        {
+          "source_id": "FISRC-1a2ad9b1108e3f59",
+          "quote": "Outmarket's comprehensive platform connects directly to agency management systems (AMS) automating complex, high-stakes processes across commercial, benefits, personal lines, and specialty insurance."
+        },
+        {
+          "source_id": "FISRC-013cf73ce258339a",
+          "quote": "We now run production workflows across Commercial Lines, Benefits, and Personal Lines, covering the work that fills the day in any agency. Quote comparison, policy review, renewal comparison, coverage gap analysis, tower analysis, claim denial challenges, and loss runs extraction across every major carrier format."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.410Z"
+    },
+    "EV-4c9c7ab2dded69b3": {
+      "id": "EV-4c9c7ab2dded69b3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Reco 提供保护 AI 智能体及其运行环境的安全平台，整合身份治理与威胁检测，属于 AI 开发与数据中的模型与智能体安全细分。",
+      "input_hash": "f337a8f1219792685454e24804fcf69c1cd939305ef5f98da212ba87e93e2cac",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5ade874e36670280",
+          "quote": "直到去年，AI安全初创公司 Reco 主要销售用于映射和保护SaaS及AI平台的软件。而现在，该公司已重新定位为一套更广泛的解决方案，通过 上下文图谱 将智能体与应用程序、人员、账户和权限关联起来"
+        },
+        {
+          "source_id": "FISRC-29a9add13789f2fb",
+          "quote": "Reco secures AI agents and their operating environments where applications, identities, permissions, and workflows intersect."
+        },
+        {
+          "source_id": "FISRC-5ade874e36670280",
+          "quote": "该公司已重新定位为一套更广泛的解决方案，通过 上下文图谱 将智能体与应用程序、人员、账户和权限关联起来，让安全团队能够清楚了解智能体可以触及的范围，并切断其不需要的访问权限。"
+        },
+        {
+          "source_id": "FISRC-29a9add13789f2fb",
+          "quote": "Reco is the only platform that brings agent security, identity governance, and threat detection together in one place."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.410Z"
+    },
+    "EV-34f58445170831ae": {
+      "id": "EV-34f58445170831ae",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-services",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Snorkel AI 从销售 AI 标注软件转向直接向 AI 公司提供训练数据与强化学习环境，核心业务是数据标注与合成服务。",
+      "input_hash": "6124ba2deeeefc87657b910b677201b97e8ca91d374d9e3ea83de4d1a19ce7df",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d170bde1bb3d412c",
+          "quote": "它叫Snorkel AI。过去主要卖AI标注软件，2025年开始，它直接向AI公司卖训练数据。"
+        },
+        {
+          "source_id": "FISRC-6dd774496b50aaac",
+          "quote": "Snorkel AI is a Redwood City, California-based enterprise AI company founded in 2019 by Stanford AI Lab alumni Alexander Ratner, Christopher Ré, Braden Hancock, Henry Ehrenberg, and Paroma Varma."
+        },
+        {
+          "source_id": "FISRC-d170bde1bb3d412c",
+          "quote": "公司最初把这套技术做成软件卖给企业，核心产品Snorkel Flow帮助谷歌等客户自己生产、整理和管理训练数据。"
+        },
+        {
+          "source_id": "FISRC-d170bde1bb3d412c",
+          "quote": "公司负责找专家、设计任务、写评分标准、做质量检查，最后交付可以直接拿去训练的数据和强化学习环境。"
+        },
+        {
+          "source_id": "FISRC-48572607288dbaa5",
+          "quote": "Learn how Snorkel’s Data-as-a-Service helps teams label, refine, and evaluate high-quality, domain-specific datasets for your projects."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.410Z"
+    },
+    "EV-861d4440dcbb9b09": {
+      "id": "EV-861d4440dcbb9b09",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Instinct 是面向个人消费者的 AI 助手，通过文字或电话像人一样操作手机和电脑完成任务，属于消费 AI 应用中的个人助手与搜索细分。",
+      "input_hash": "754417b539009e5fcf831b07ee5296ea36672422003d7e40c043bd922e01ba68",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-560cbbccadfe271d",
+          "quote": "AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion"
+        },
+        {
+          "source_id": "FISRC-6ffdf43efe75ccde",
+          "quote": "Instinct is a viral, invite-only personal AI assistant that operates phones and desktops like a human via text or phone calls."
+        },
+        {
+          "source_id": "FISRC-560cbbccadfe271d",
+          "quote": "When asked to perform a task, Instinct uses its own phone number and computer."
+        },
+        {
+          "source_id": "FISRC-560cbbccadfe271d",
+          "quote": "The company recently rolled out other new features, like “concierge” that can make phone calls for you, to manage things like making appointments at places that don’t offer online booking, as well as a “trusted person network” that allows one person’s Instinct agent to coordinate plans with their friends’ agents."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.410Z"
+    },
+    "EV-9ea3912efd857ad8": {
+      "id": "EV-9ea3912efd857ad8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Modulate 为企业提供语音智能平台，用于转录、情感分析、深度伪造检测和语音代理政策执行，属于企业通用 AI 中的网络安全与风控细分。",
+      "input_hash": "5fe8f9eda9cb883120248cf19725187e6845cf3aa3224eca5edf0448cab1c4d4",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6ec519350686cbda",
+          "quote": "Boston-based voice intelligence startup Modulate has raised $25 million in new funding for its platform that uses an array of small models to offer enterprises transcription, emotional analysis, deepfake and AI music detection, and policy enforcement for voice agents in regulated industries."
+        },
+        {
+          "source_id": "FISRC-053ea66f6dc6960b",
+          "quote": "Real-time voice intelligence, powered by leading Velma models"
+        },
+        {
+          "source_id": "FISRC-6ec519350686cbda",
+          "quote": "uses an array of small models to offer enterprises transcription, emotional analysis, deepfake and AI music detection, and policy enforcement for voice agents in regulated industries"
+        },
+        {
+          "source_id": "FISRC-7b74a05d5a5acb08",
+          "quote": "ToxMod, the world’s first moderation platform specifically designed for voice and all it entails"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.410Z"
+    },
+    "EV-82c07208217f2af7": {
+      "id": "EV-82c07208217f2af7",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Reco 是智能体安全领域的领导者，其平台通过图谱映射智能体、身份、权限与工作流的关系来保护智能体运行环境，属于模型与智能体安全细分。",
+      "input_hash": "57b7b1648cd2cf93e4026de019b33244974956db607b20358ddf6ae902a55ac8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3d7103a002f7103b",
+          "quote": "AI security startup Reco was mostly selling software to map and secure SaaS and AI platforms."
+        },
+        {
+          "source_id": "FISRC-cf8b38a998770223",
+          "quote": "Reco is the leader in Agentic Security. The Reco Platform secures agents and their operating environments where applications, identities, permissions and workflows converge."
+        },
+        {
+          "source_id": "FISRC-cf8b38a998770223",
+          "quote": "Reco’s platform is built on the Reco Graph, which maps the relationships among agents, identities, applications, permissions, data and workflows."
+        },
+        {
+          "source_id": "FISRC-cf8b38a998770223",
+          "quote": "The Reco Platform has more than 280 app integrations and 1,000 detection controls."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:07.410Z"
+    },
+    "EV-3b424be9d0d68b87": {
+      "id": "EV-3b424be9d0d68b87",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Dazzle 的 AI 助手以用户相机胶卷为上下文，帮助个人完成日程安排和个性化建议，属于面向个人消费者的助手应用。",
+      "input_hash": "27cf0b01d3283465eaa961c081f8e2d8ceaf0d1d61221cb01d8073fbb0a42b3a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5b7f912406e2d494",
+          "quote": "Dazzle’s AI assistant gets all its context from a single source: your camera roll."
+        },
+        {
+          "source_id": "FISRC-5b7f912406e2d494",
+          "quote": "For immediate tasks, it can scan recent photos to pull details — like populating your calendar from an event flyer, or finding a repair person after spotting a broken garage door in your camera roll."
+        },
+        {
+          "source_id": "FISRC-5b7f912406e2d494",
+          "quote": "Second, it mines your photo library to come up with personalized ideas for everything from holiday vacations to birthday gifts."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:10.962Z"
+    },
+    "EV-5b5237105fc868cd": {
+      "id": "EV-5b5237105fc868cd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Satlyt 为卫星构建运行 AI 模型的软件平台，让多颗卫星共享计算任务，属于 AI 算力基础设施中的数据中心与算力基础设施。",
+      "input_hash": "a6535ac8f7c40d3996b131aa63973a67293042d873dfd76139a4f2cd75464a8e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a116d3c393215970",
+          "quote": "So he left SpaceX and co-founded Satlyt , a new company with headquarters in Sunnyvale, California, and Nairobi, to build software for satellites that he hopes will let many satellites share the work of large computing jobs in space."
+        },
+        {
+          "source_id": "FISRC-a116d3c393215970",
+          "quote": "Afullo’s team is building the software to operate AI models on satellites, comparing his approach to VMware and Snowflake — companies whose platforms let users run complex software without worrying about the underlying infrastructure."
+        },
+        {
+          "source_id": "FISRC-a116d3c393215970",
+          "quote": "Satlyt wants to offer software that works across many companies’ satellites."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:10.962Z"
+    },
+    "EV-c2f262e118de5629": {
+      "id": "EV-c2f262e118de5629",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "Restate 提供用于构建弹性服务、工作流和 AI 智能体的持久执行运行时，明确面向开发者，属于智能体开发与编排平台。",
+      "input_hash": "9870957549d91b6664e43f4abcd4917ce62369708b2d1d457c7767d98215d467",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-32de5b12bdde4fb9",
+          "quote": "The Berlin-based startup had set out to build an execution engine that made multistep workflows resilient to crashes and network interruptions"
+        },
+        {
+          "source_id": "FISRC-b724e942c54b0962",
+          "quote": "Restate is a durable execution runtime for building resilient services, workflows, and AI agents."
+        },
+        {
+          "source_id": "FISRC-897ee0f062e50b23",
+          "quote": "We are equally excited to announce early access to Restate Cloud today - our fully serverless offering. No clusters, no partitions, no queues."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T16:29:10.962Z"
     }
   },
-  "generated_at": "2026-10-01T15:26:31.398Z"
+  "generated_at": "2026-10-01T16:29:10.962Z"
 }

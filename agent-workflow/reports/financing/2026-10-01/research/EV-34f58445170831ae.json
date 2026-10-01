@@ -1,0 +1,852 @@
+{
+  "event_id": "EV-34f58445170831ae",
+  "company_name": "Snorkel AI",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-410fc3d70b1af745",
+    "triggered_by_event_id": "EV-34f58445170831ae",
+    "as_of_date": "2026-10-01",
+    "company": {
+      "entity_id": "EN-7331374f7091259f",
+      "name": "Snorkel AI",
+      "full_name": "Snorkel AI",
+      "website": "https://snorkel.ai/",
+      "summary": "Snorkel AI是一家从斯坦福大学AI实验室分拆出来的前沿AI数据公司，最初向企业销售AI标注软件，2025年起直接向AI公司销售训练数据，提供专家数据开发、强化学习环境和评测框架。",
+      "headquarters": "Redwood City, California",
+      "founders": [
+        {
+          "name": "亚历克斯·拉特纳（Alex Ratner）",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d170bde1bb3d412c",
+              "quote": "2015年，亚历克斯·拉特纳（Alex Ratner）还在斯坦福读计算机博士。",
+              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+              "quote_hash": "923df079f3510dedc9666e19b93c4d8fb57fd4588a009f9eff514a868418531c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "克里斯托弗·雷（Christopher Ré）",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d170bde1bb3d412c",
+              "quote": "雷也成了Snorkel的联合创始人。",
+              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+              "quote_hash": "6b50f4c1a90959e068222b2cb537854738cfa3ab8e30e116d78ea85c61e4b427"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d170bde1bb3d412c",
+          "quote": "它叫Snorkel AI。过去主要卖AI标注软件，2025年开始，它直接向AI公司卖训练数据。",
+          "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+          "quote_hash": "5ef539ea10e6dcc7c20c3d49ea8a44df79ce4306d1e4263fbc92f63607abbe83"
+        },
+        {
+          "source_id": "FISRC-6dd774496b50aaac",
+          "quote": "Snorkel AI is a Redwood City, California-based enterprise AI company founded in 2019 by Stanford AI Lab alumni Alexander Ratner, Christopher Ré, Braden Hancock, Henry Ehrenberg, and Paroma Varma.",
+          "source_content_hash": "fc35ad6f0d7ac53d",
+          "quote_hash": "cf5f3c694faa4c16076c654427a216373ed3a60a92884ba46f91a59859d519a7"
+        }
+      ],
+      "application_entity_id": "EN-7331374f7091259f",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "E轮",
+      "amount": "3.5亿美元",
+      "total_raised": "",
+      "announced_at": "2026-09-28",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [
+        {
+          "name": "Addition",
+          "role": "历史轮次领投方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6dd774496b50aaac",
+              "quote": "Addition Details : New York-based venture capital firm; led both the Series C and Series D rounds.",
+              "source_content_hash": "fc35ad6f0d7ac53d",
+              "quote_hash": "b31cb85a34c52d3347641c50897a43ec64837f9979d1b158b0bc6b86c4d9bddc"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Greylock",
+          "role": "历史轮次投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6dd774496b50aaac",
+              "quote": "Greylock Details : Prominent Silicon Valley VC firm and early backer since Snorkel AI's seed/Series A.",
+              "source_content_hash": "fc35ad6f0d7ac53d",
+              "quote_hash": "607fc14ec1187b71090be8b234e258bae53f648c6d820c3ff9c87bd13161d5fe"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Lightspeed Venture Partners",
+          "role": "历史轮次领投方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6dd774496b50aaac",
+              "quote": "Lightspeed Venture Partners Details : Led the Series B in April 2021 via partners Ravi Mhatre and Raviraj Jain; continued participating in subsequent rounds.",
+              "source_content_hash": "fc35ad6f0d7ac53d",
+              "quote_hash": "9fe396234c754ea1963b02734fa72831f04a91b550d2241ece5d9779304db2bb"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "BlackRock",
+          "role": "历史轮次联合领投方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6dd774496b50aaac",
+              "quote": "BlackRock Details : Global asset management firm; co-led the Series C alongside Addition, and participated in the Series B.",
+              "source_content_hash": "fc35ad6f0d7ac53d",
+              "quote_hash": "ee97da18baec35986392ca03143211bf9e04651c135abfd8ad9013c7b5af61e4"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "GV (Google Ventures)",
+          "role": "历史轮次投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6dd774496b50aaac",
+              "quote": "GV (Google Ventures) Details : Venture arm of Alphabet; participated from the Seed/Series A through the Series C.",
+              "source_content_hash": "fc35ad6f0d7ac53d",
+              "quote_hash": "6ae0e56e713a0c65c520ca11fd5d89f257dd54dedcce3cc8ad83e873d01209c2"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Accenture Ventures",
+          "role": "历史轮次战略投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6dd774496b50aaac",
+              "quote": "Accenture Ventures Details : Strategic arm of Accenture; made an undisclosed strategic investment in August 2025, with Snorkel AI joining Accenture Ventures' Project Spotlight accelerator program.",
+              "source_content_hash": "fc35ad6f0d7ac53d",
+              "quote_hash": "23c9d47b8d4ce952c43af57296f5aad6ea6bf622ad046d7eae9e5fef29e27f6d"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "QBE Ventures",
+          "role": "历史轮次战略投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6dd774496b50aaac",
+              "quote": "QBE Ventures Details : Venture arm of insurance group QBE; made an undisclosed strategic investment in January 2024 and participated in the Series D in May 2025.",
+              "source_content_hash": "fc35ad6f0d7ac53d",
+              "quote_hash": "5f4b8ee6f31b836ebc721c0960c6b4d13dd7f75744adfe6d63b1108ecde941ff"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "In-Q-Tel",
+          "role": "历史轮次投资方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6dd774496b50aaac",
+              "quote": "In-Q-Tel Details : US government-affiliated strategic investor; participated from the Seed round through the Series B, reflecting Snorkel AI's relevance to federal and defense applications.",
+              "source_content_hash": "fc35ad6f0d7ac53d",
+              "quote_hash": "7c9bcdef6b247085bc0cd454ad197ee957709df01475471bd40ee796367db5bb"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d170bde1bb3d412c",
+          "quote": "9月22日，又完成3.5亿美元（约合人民币23.5亿元）E轮融资，估值达到35亿美元（约合人民币235亿元）。",
+          "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+          "quote_hash": "b7e77b37f6d6d7b2e6bb56c7384f1681c3fe3dc22a72dcf6ca5d90356c761710"
+        },
+        {
+          "source_id": "FISRC-9809aaa38bffa1ce",
+          "quote": "Snorkel AI 完成 3.5 亿美元融资，估值达 35 亿美元，持续发展其数据即服务模式，市场对 AI 训练数据需求强劲。",
+          "source_content_hash": "96db844d79ed71b6",
+          "quote_hash": "98a06fa58f54fa4633aebd7cd35f8ad15dd92da00873cfe5c799f048c5df37a8"
+        }
+      ],
+      "round_code": "series_e",
+      "round_original": "E轮",
+      "amount_original": "3.5亿美元",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 350000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "3.5 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-34f58445170831ae",
+          "round_original": "E轮",
+          "amount": "3.5亿美元",
+          "announced_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-d170bde1bb3d412c",
+              "quote": "9月22日，又完成3.5亿美元（约合人民币23.5亿元）E轮融资，估值达到35亿美元（约合人民币235亿元）。",
+              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+              "quote_hash": "b7e77b37f6d6d7b2e6bb56c7384f1681c3fe3dc22a72dcf6ca5d90356c761710"
+            },
+            {
+              "source_id": "FISRC-9809aaa38bffa1ce",
+              "quote": "Snorkel AI 完成 3.5 亿美元融资，估值达 35 亿美元，持续发展其数据即服务模式，市场对 AI 训练数据需求强劲。",
+              "source_content_hash": "96db844d79ed71b6",
+              "quote_hash": "98a06fa58f54fa4633aebd7cd35f8ad15dd92da00873cfe5c799f048c5df37a8"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "Snorkel Flow",
+        "description": "帮助企业客户自己生产、整理和管理训练数据的软件平台。",
+        "target_customers": "企业客户，包括谷歌等大型企业",
+        "features": [
+          "程序化数据标注",
+          "训练数据生产与管理"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "公司最初把这套技术做成软件卖给企业，核心产品Snorkel Flow帮助谷歌等客户自己生产、整理和管理训练数据。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "95b431c2284c5d530f818158954834bff29303a81d2e83e5a4f118c6534262ed"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "数据即服务（Data-as-a-Service）",
+        "description": "直接向AI公司交付可用于训练的数据和强化学习环境，由Snorkel负责找专家、设计任务、写评分标准、做质量检查。",
+        "target_customers": "前沿AI实验室、云厂商、大型企业和美国政府",
+        "features": [
+          "专家网络组织",
+          "复杂训练任务设计",
+          "评分标准与质量检查",
+          "强化学习环境交付"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "公司负责找专家、设计任务、写评分标准、做质量检查，最后交付可以直接拿去训练的数据和强化学习环境。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "41560319a79e9810c620995558f0039a1c9eab9a22fb67098c64cb71ff761d97"
+          },
+          {
+            "source_id": "FISRC-48572607288dbaa5",
+            "quote": "Learn how Snorkel’s Data-as-a-Service helps teams label, refine, and evaluate high-quality, domain-specific datasets for your projects.",
+            "source_content_hash": "3a2bb297c422a1e0",
+            "quote_hash": "02ee17d83938164cf98b9f9485a013f6fc40a6c5ce51fae8d6079ebbc9f679aa"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "谷歌",
+        "industry": "technology",
+        "use_case": "使用Snorkel Flow生产、整理和管理训练数据",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "核心产品Snorkel Flow帮助谷歌等客户自己生产、整理和管理训练数据。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "bb09eea9ebf5a34819e805e40e4a46d90d264a13370becddf59d97a43ac442e1"
+          }
+        ],
+        "entity_id": "EN-bbdefa2950f49882"
+      },
+      {
+        "name": "BNY",
+        "industry": "financial_services",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6dd774496b50aaac",
+            "quote": "Notable customers include BNY, Wayfair, Chubb, the U.S. Air Force, and other Fortune 500 companies and government agencies.",
+            "source_content_hash": "fc35ad6f0d7ac53d",
+            "quote_hash": "ec22b325d9298074141d1fdebbc92bb7eb9a67af5eff599a703ab9301adfb075"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Wayfair",
+        "industry": "retail_ecommerce",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6dd774496b50aaac",
+            "quote": "Notable customers include BNY, Wayfair, Chubb, the U.S. Air Force, and other Fortune 500 companies and government agencies.",
+            "source_content_hash": "fc35ad6f0d7ac53d",
+            "quote_hash": "ec22b325d9298074141d1fdebbc92bb7eb9a67af5eff599a703ab9301adfb075"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Chubb",
+        "industry": "financial_services",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6dd774496b50aaac",
+            "quote": "Notable customers include BNY, Wayfair, Chubb, the U.S. Air Force, and other Fortune 500 companies and government agencies.",
+            "source_content_hash": "fc35ad6f0d7ac53d",
+            "quote_hash": "ec22b325d9298074141d1fdebbc92bb7eb9a67af5eff599a703ab9301adfb075"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "美国空军",
+        "industry": "government_public_sector",
+        "use_case": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-6dd774496b50aaac",
+            "quote": "Notable customers include BNY, Wayfair, Chubb, the U.S. Air Force, and other Fortune 500 companies and government agencies.",
+            "source_content_hash": "fc35ad6f0d7ac53d",
+            "quote_hash": "ec22b325d9298074141d1fdebbc92bb7eb9a67af5eff599a703ab9301adfb075"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [
+      {
+        "name": "Micro1",
+        "product": "AI训练数据服务",
+        "scenario": "组织医生、律师、科学家等专业人士为AI公司生产训练数据",
+        "target_customer": "AI公司",
+        "funding_summary": "",
+        "core_difference": "Micro1最初做AI招聘，后来发现数据客户通过其平台寻找工程师做模型训练任务，直接进入AI数据业务；Snorkel最初做AI标注软件，2025年起直接向AI公司卖训练数据。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "比如Micro1，它最初做AI招聘。后来公司发现，数据客户正在通过它的平台寻找工程师，让这些工程师给模型做训练任务，于是直接进入AI数据业务。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "9fff6fc9c672ec4874f5a4f3b6dc0c6471356643f77b4ae141d7ee47d9d062b3"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Handshake",
+        "product": "高校人才网络训练数据服务",
+        "scenario": "利用高校人才网络让律师检查法律回答、医生判断医学推理、博士设计专业难题",
+        "target_customer": "AI公司",
+        "funding_summary": "",
+        "core_difference": "Handshake做了十多年美国高校招聘平台，利用既有高校人才网络进入AI训练数据业务；Snorkel从斯坦福AI实验室的数据标注软件起家，转型为直接交付训练数据。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "它是一家做了十多年的美国高校招聘平台。AI训练需求起来后，这张高校人才网络有了新用途：律师检查法律回答，医生判断医学推理，博士给模型设计专业难题。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "08e46b0318f95fbdd98bb45a763eb6e73c5b195840936cf938b9be05b32adeed"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Turing",
+        "product": "训练数据供应服务",
+        "scenario": "组织远程软件工程师和博士为OpenAI、Google、Anthropic和Meta等大模型厂商提供训练数据",
+        "target_customer": "大模型厂商",
+        "funding_summary": "2025年初披露上一年收入达到3亿美元",
+        "core_difference": "Turing最初靠远程软件工程师招聘和人才匹配起家，后来成为大模型厂商的训练数据供应商；Snorkel从AI标注软件起家，2025年起直接向AI公司卖训练数据。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "Turing最初靠远程软件工程师招聘和人才匹配起家，后来成为大模型厂商的训练数据供应商，客户包括OpenAI、Google、Anthropic和Meta。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "8408d2b16af4603744227e67370ee70d948e3c074666fcbeabf712d197b5d72e"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Mercor",
+        "product": "AI训练数据与专家评价服务",
+        "scenario": "组织物理、金融、软件工程等领域专业人士为模型公司回答问题、设计任务和评价输出",
+        "target_customer": "模型公司",
+        "funding_summary": "2026年6月年化总收入超过20亿美元",
+        "core_difference": "Mercor 2023年成立时做AI招聘，后来组织专业人士为模型公司生产训练数据；Snorkel从斯坦福AI实验室的数据标注软件起家，转型为直接交付训练数据和强化学习环境。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "这家公司2023年成立时做的也是AI招聘，后来开始组织物理、金融、软件工程等领域的专业人士，为模型公司回答问题、设计任务和评价输出。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "4bb1b3f5ef9b47bde3748384aab7c4f5529095a573eeba3ac960b441df400060"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "metrics": [
+      {
+        "label": "年化收入",
+        "value": "超过3.5亿美元",
+        "observed_at": "2026-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "一年前，Snorkel的年化收入还只有约2000万美元。现在，已经超过3.5亿美元。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "3d20be0ca830d6f1badc7190db6fd0f09ab2c74fe94f727ecbb957c59a8626d5"
+          }
+        ]
+      },
+      {
+        "label": "一年前年化收入",
+        "value": "约2000万美元",
+        "observed_at": "2025",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "一年前，Snorkel的年化收入还只有约2000万美元。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "2ece1710eaf4ce8b9a93435a94a207b46f67d600e9d6659069ecda6fa503059d"
+          }
+        ]
+      },
+      {
+        "label": "E轮融资估值",
+        "value": "35亿美元",
+        "observed_at": "2026-09-22",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "估值达到35亿美元（约合人民币235亿元）。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "950489e25e35ca59e4ac5ef1469031eeb4dd585061598248300d9ef62b18b4d8"
+          }
+        ]
+      },
+      {
+        "label": "收入增长倍数",
+        "value": "超过16倍",
+        "observed_at": "2026-09",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "Snorkel一年超过16倍的收入增长说明，模型公司对复杂数据的采购仍在快速增加。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "722bef1811b77b120d8147285ee6f16e2916fed1828025c8e72ddbc3ddba3950"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "亚历克斯·拉特纳（Alex Ratner）",
+        "quote": "客户不再只是买软件自己做数据，而是直接把问题交给Snorkel：代码为什么运行失败，一份法律意见有没有遗漏关键风险，或者一道物理推理题究竟错在哪一步。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-d170bde1bb3d412c",
+            "quote": "拉特纳发现，客户不再只是买软件自己做数据，而是直接把问题交给Snorkel：代码为什么运行失败，一份法律意见有没有遗漏关键风险，或者一道物理推理题究竟错在哪一步。",
+            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+            "quote_hash": "8939d57c5cb801f6672f34d042ff858d92a70b93faff3cdd7280e198fa72d5d7"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是前沿模型对复杂、专业训练数据的采购需求能否持续放大。Snorkel已验证的信号是年化收入从约2000万美元增长到超过3.5亿美元，增幅超过16倍，且新业务推出不到一年即实现该增长。估值从2025年5月Series D的13亿美元升至本轮35亿美元，说明市场对其数据即服务模式的收入增速给予更高定价。但来源未披露本轮投资方具体名称，无法确认是哪类资本在推动估值跃升，也无法引用机构原话。",
+      "validated_signals": [
+        "年化收入从约2000万美元增长到超过3.5亿美元，增幅超过16倍",
+        "新数据即服务业务推出不到一年即实现收入暴增",
+        "服务前沿AI实验室、云厂商、大型企业和美国政府"
+      ],
+      "risks": [
+        "专家数据业务的人力成本随收入同步增长，利润未必同步提升；来源指出如果每收到一笔钱都要重新组织一批人，收入越大，人力成本也跟着增加。",
+        "本轮投资方未披露具体名称，无法确认资本结构变化及战略意图。",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "data",
+      "market_application_id": "data_preparation_curation",
+      "use_case_ids": [
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user"
+      ],
+      "sector": "AI训练数据",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是前沿模型对复杂、专业训练数据的采购需求能否持续放大。Snorkel已验证的信号是年化收入从约2000万美元增长到超过3.5亿美元，增幅超过16倍，且新业务推出不到一年即实现该增长。估值从2025年5月Series D的13亿美元升至本轮35亿美元，说明市场对其数据即服务模式的收入增速给予更高定价。但来源未披露本轮投资方具体名称，无法确认是哪类资本在推动估值跃升，也无法引用机构原话。",
+        "evidence_signals": [
+          "年化收入从约2000万美元增长到超过3.5亿美元，增幅超过16倍",
+          "新数据即服务业务推出不到一年即实现收入暴增",
+          "服务前沿AI实验室、云厂商、大型企业和美国政府"
+        ],
+        "risks": [
+          "专家数据业务的人力成本随收入同步增长，利润未必同步提升；来源指出如果每收到一笔钱都要重新组织一批人，收入越大，人力成本也跟着增加。",
+          "本轮投资方未披露具体名称，无法确认资本结构变化及战略意图。"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Snorkel Flow",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "数据即服务（Data-as-a-Service）",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "亚历克斯·拉特纳（Alex Ratner）",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "克里斯托弗·雷（Christopher Ré）",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Addition",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Greylock",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Lightspeed Venture Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "BlackRock",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "GV (Google Ventures)",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Accenture Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "QBE Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "In-Q-Tel",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "谷歌",
+        "canonical_entity_id": "EN-bbdefa2950f49882",
+        "canonical_name": "Google"
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "BNY",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Wayfair",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Chubb",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "美国空军",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Micro1",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Handshake",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Turing",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Mercor",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-34f58445170831ae",
+        "date": "2026-09-28",
+        "title": "收入暴涨16倍，一家AI数据公司爆了",
+        "amount": "3.5亿美元",
+        "source_refs": [
+          "SA-3f9ed0c3f4140a90"
+        ]
+      },
+      {
+        "event_id": "EV-bba3677d51b85918",
+        "date": "2026-09-22",
+        "title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
+        "amount": "$350 million",
+        "source_refs": [
+          "SA-76ec92f7cc9bb30c"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-d170bde1bb3d412c",
+        "source_url": "https://news.pedaily.cn/202609/569716.shtml",
+        "title": "收入暴涨16倍，一家AI数据公司爆了",
+        "publisher": "news.pedaily.cn",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-01T15:59:20.983Z",
+        "content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
+        "source_artifact_id": "SA-3f9ed0c3f4140a90",
+        "raw_id": "RAW-a01004df58f94ffd"
+      },
+      {
+        "source_id": "FISRC-6dd774496b50aaac",
+        "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+        "title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+        "publisher": "clay.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:20:24.440Z",
+        "content_hash": "fc35ad6f0d7ac53d",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-9809aaa38bffa1ce",
+        "source_url": "https://coda.news/zh/event/snorkel-ai-raises-350-million-in-funding-at-a-35-billion-valuation-4669",
+        "title": "Snorkel AI 以 35 亿美元估值融资 3.5 亿美元 · coda.news",
+        "publisher": "coda.news",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:20:27.333Z",
+        "content_hash": "96db844d79ed71b6",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-48572607288dbaa5",
+        "source_url": "https://snorkel.ai/company/",
+        "title": "About us | Our mission, founders, and more! | Snorkel AI",
+        "publisher": "snorkel.ai",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:20:25.080Z",
+        "content_hash": "3a2bb297c422a1e0",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-01T16:20:55.225Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-01T16:20:55.225Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "Snorkel Flow",
+          "数据即服务（Data-as-a-Service）"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "亚历克斯·拉特纳（Alex Ratner）",
+          "克里斯托弗·雷（Christopher Ré）"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-34f58445170831ae"
+    ],
+    "aggregation": {
+      "key": "EN-7331374f7091259f|series_e",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Snorkel AI\" 2026 funding round investors",
+    "\"Snorkel AI\" 3.5亿美元 funding announcement",
+    "\"Snorkel AI\" official product customers",
+    "\"Snorkel AI\" \"why we invested\"",
+    "\"Snorkel AI\" 2026 raises led by",
+    "\"Snorkel AI\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"Snorkel AI\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Snorkel AI\" 3.5亿美元 funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Snorkel AI\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Snorkel AI\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Snorkel AI\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Snorkel AI\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}
