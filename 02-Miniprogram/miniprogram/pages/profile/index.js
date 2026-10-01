@@ -1,3 +1,4 @@
+const { redeemOnPage } = require("../../utils/benefit-redemption.js");
 const { getWatchIds } = require("../../utils/storage.js");
 const {
   getProfile,
@@ -25,6 +26,7 @@ Page({
     community: { status: "none", statusLabel: "未入群", points: 0 },
     linkingCommunity: false,
     accountError: "",
+    redeeming: "",
   },
 
   onShow() {
@@ -50,6 +52,7 @@ Page({
   openFollows() { wx.navigateTo({ url: "/pages/follows/index" }); },
   openGrowth() { wx.navigateTo({ url: "/pages/growth/index" }); },
   openMembership() { wx.navigateTo({ url: "/pages/membership/index" }); },
+  redeem(event) { return redeemOnPage(this, event); },
   openInvite() { wx.navigateTo({ url: "/pages/invite/index" }); },
   openCommunity() {
     wx.switchTab({ url: "/pages/community/index" });

@@ -9,20 +9,21 @@
       <text class="wallet-next">{{growth.level.remaining ? '距下一等级还差 ' + growth.level.remaining + ' 分' : '已到最高等级'}}</text>
     </view>
 
-    <view class="section-title serif">今日任务</view>
+    <view class="section-title serif">成长任务</view>
     <view class="paper-card task-list">
       <view wx:for="{{growth.tasks}}" wx:key="id" class="task-row" data-id="{{item.id}}" bindtap="openTask">
         <view><text>{{item.title}}</text><text>进度 {{item.current}}/{{item.target}}{{item.unit}}</text></view>
         <text class="task-reward {{item.completed ? 'done' : ''}}">{{item.completed ? '已完成' : '+' + item.reward + ' 分'}}</text>
       </view>
+      <view class="task-row" bindtap="openInvite"><view><text>邀请好友</text><text>好友完成首次注册，获得 300 积分</text></view><text class="task-reward">+300 分</text></view>
     </view>
 
     <view class="membership-strip"><view><text>{{growth.membership.statusLabel}}</text><text wx:if="{{growth.membership.active}}">剩余 {{growth.membership.remainingDays}} 天 · 有效至 {{growth.membership.activeUntil}}</text><text wx:else>使用积分兑换会员权益</text></view></view>
 
-    <view class="section-title serif">会员权益兑换</view>
+    <view id="benefits" class="section-title serif">权益兑换</view>
     <view class="benefit-card paper-card" wx:for="{{growth.benefits}}" wx:key="id">
       <view><text class="benefit-title">{{item.title}}</text><text class="benefit-copy">{{item.description}}</text></view>
-      <button class="redeem-button {{item.redeemed || !item.affordable ? 'done' : ''}}" disabled="{{item.redeemed}}" data-id="{{item.id}}" bindtap="redeem">{{item.redeemed ? '已兑换' : item.affordable ? item.cost + ' 分兑换' : '还差 ' + (item.cost - growth.wallet.balance) + ' 分'}}</button>
+      <button class="redeem-button {{item.redeemed || !item.affordable ? 'done' : ''}}" disabled="{{!!redeeming || item.redeemed}}" loading="{{redeeming === item.id}}" data-id="{{item.id}}" bindtap="redeem">{{item.redeemed ? '已兑换' : item.affordable ? item.cost + ' 分兑换' : '还差 ' + (item.cost - growth.wallet.balance) + ' 分'}}</button>
     </view>
 
     <view class="section-title serif">积分明细</view>
