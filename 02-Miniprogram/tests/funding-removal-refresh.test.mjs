@@ -11,7 +11,7 @@ test('reviewed removals replace larger index, prune details, retain accepted man
  const calls=[];
  global.wx={getStorageSync:k=>storage.get(k),setStorageSync:(k,v)=>storage.set(k,v),request:({url,success})=>{
   calls.push(url);
-  success({statusCode:200,data:url.includes('manifest')?{version,latestDate:index.meta.latestDate,fundingVersion:index.meta.fundingVersion,cardCount:index.cards.length+(bad?1:0),indexPath:'/index',detailBasePath:'/details'}:url.includes('/details/')?{...index.cards[0],detailComplete:true}:index});
+  success({statusCode:200,data:url.includes('manifest')?{version,latestDate:index.meta.latestDate,fundingVersion:index.meta.fundingVersion,taxonomyVersion:index.meta.taxonomyVersion,cardCount:index.cards.length+(bad?1:0),indexPath:'/index',detailBasePath:'/details'}:url.includes('/details/')?{...index.cards[0],detailComplete:true}:index});
  }};
  delete require.cache[require.resolve('../miniprogram/utils/live-data.js')];
  const live=require('../miniprogram/utils/live-data.js');
