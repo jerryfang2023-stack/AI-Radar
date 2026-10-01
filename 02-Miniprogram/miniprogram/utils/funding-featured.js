@@ -7,14 +7,14 @@ function selectFeatured(cards, market, today = chinaDate(), observations = {}) {
   const visible = cards.filter(c => c.marketRegion === market && isFundingVisible(c) && !["", "未分类", "未披露"].includes(c.subcategory || c.category || "") && /^\d{4}-\d{2}-\d{2}$/.test(c.date || "") && c.date <= today);
   const latest = visible.reduce((date, c) => c.date > date ? c.date : date, "");
   const seen = new Set();
-  const selected = visible.filter(c => c.date === latest).filter(c => {
-    if (seen.has(c.id)) return false;
+  const selected = [...visible].sort((a,b) => b.date.localeCompare(a.date) || String(a.id).localeCompare(String(b.id))).filter(c => {
+    if (!c.id || seen.has(c.id)) return false;
     seen.add(c.id); return true;
-  }).slice(0, 5).map(c => {
+  }).slice(0, 3).map(c => {
     const product = (c.products || []).find(p => typeof p === "string" && p.trim() && p !== c.company) || "";
     const sector = c.subcategory || c.category || "";
     const observation = observations[c.id] || "";
-    return { id: c.id, company: c.company, product: product.startsWith(c.company + " ") ? product.slice(c.company.length).trim() : product, amount: c.amount || "金额未披露", round: c.round || "轮次未披露", sector, observation };
+    return { id: c.id, date:c.date, dateShort:c.date.slice(5), company: c.company, product: product.startsWith(c.company + " ") ? product.slice(c.company.length).trim() : product, amount: c.amount || "金额未披露", round: c.round || "轮次未披露", sector, observation };
   });
   return { cards: selected, date: latest, label: latest && latest !== today ? `最近披露 · ${latest.slice(5)}` : "" };
 }
