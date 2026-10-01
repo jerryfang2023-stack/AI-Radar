@@ -61,7 +61,7 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.equal(appConfig.tabBar.list[0].text, "融资");
   assert.equal(appConfig.tabBar.list[1].text, "生态");
   assert.match(terminalSource, /<app-header title="融资情报"/u);
-  assert.match(terminalSource, /今日融资精选/u);
+  assert.match(terminalSource, /融资精选/u);
   assert.match(terminalSource, /bindtap="openFeatured"/u);
   assert.match(marketSource, /<app-header title="生态"/u);
   assert.match(marketSource, />生态图谱<[\s\S]*>生态名录</u);

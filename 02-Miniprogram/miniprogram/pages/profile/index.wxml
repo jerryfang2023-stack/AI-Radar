@@ -41,13 +41,12 @@
       <view class="community-mark">观</view>
       <view class="community-copy" bindtap="openCommunity">
         <text>观澜社群</text>
-        <text class="community-status">{{community.status === 'joined' ? '已入群' : community.statusLabel}}</text>
+        <text class="community-status">分享实录 · 成员图谱</text>
       </view>
       <view wx:if="{{community.status === 'joined'}}" class="community-action" bindtap="openCommunity">
         <text class="community-points mono">{{community.points}}</text><text>社群积分</text>
       </view>
-      <view wx:elif="{{community.status !== 'none'}}" class="community-action" bindtap="openCommunity">{{community.statusLabel}} <text>›</text></view>
-      <button wx:else class="community-link-button" open-type="getPhoneNumber" bindgetphonenumber="linkCommunity" loading="{{linkingCommunity}}">申请加入</button>
+      <view wx:else class="community-action" bindtap="openCommunity">查看社群 <text>›</text></view>
     </view>
 
     <view class="section-heading"><text class="serif">收藏与关注</text></view>

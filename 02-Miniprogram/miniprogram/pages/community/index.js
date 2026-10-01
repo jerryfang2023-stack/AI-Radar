@@ -23,7 +23,7 @@ Page({
     if (!preview) fetchMembership().then((result) => {
       if (result.community) {
         syncCommunity(result.community);
-        if (result.community.status === "joined") prefetchCommunity();
+        if (result.membership?.active) prefetchCommunity();
         else clearCommunityCache();
       }
       if (result.wallet) syncWallet(result.wallet);

@@ -22,10 +22,23 @@ def test_gateway_never_accepts_client_member_id(client):
     assert calls[-1][1]["viewer"] == 42
 
 
-def test_unlinked_user_cannot_read_full_archive(client):
+def test_reader_access_uses_entitlement_not_group_identity(client):
+    calls = []
+    client.application.community_client.hub = lambda path, **opts: calls.append((path, opts)) or {"item": {}, "leaderboard": [], "ledger": [], "selfId": None}
     token = login(client)
-    result = client.get("/api/v1/community/archives/issue-01", headers=auth(token))
-    assert result.status_code == 403
+    for path in ["archives/issue-01", "program", "directory", "points", "season-points", "token-benefits"]:
+        assert client.get("/api/v1/community/" + path, headers=auth(token)).status_code == 200
+        assert calls[-1][1]["reader"] is True
+        assert calls[-1][1]["viewer"] is None
+    assert client.put("/api/v1/community/profile?reader=1", headers=auth(token), json={}).status_code == 403
+    with sqlite3.connect(client.application.config["DATABASE_PATH"]) as conn:
+        conn.execute("UPDATE users SET trial_ends_at='2000-01-01T00:00:00+00:00',member_ends_at=NULL")
+    calls.clear()
+    for path in ["archives/issue-01", "program", "directory", "points", "season-points", "token-benefits"]:
+        response = client.get("/api/v1/community/" + path + "?reader=1&viewer=42", headers=auth(token))
+        assert response.status_code == 403
+        assert response.json["error"]["code"] == "MEMBERSHIP_REQUIRED"
+    assert not calls
 
 
 def test_gateway_accepts_season_scoped_archive_slug(client):

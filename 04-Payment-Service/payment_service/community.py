@@ -120,8 +120,10 @@ class CommunityClient:
             path += "/" + urllib.parse.quote(str(key), safe="") + "/" + urllib.parse.quote(str(action), safe="")
         return self._request(path, method="POST" if key is not None else "GET", payload=payload)
 
-    def hub(self, path, *, viewer=None, method="GET", payload=None, season=None):
+    def hub(self, path, *, viewer=None, method="GET", payload=None, season=None, reader=False):
         params = {"viewer": int(viewer)} if viewer is not None else {}
+        if reader:
+            params["reader"] = "1"
         if season is not None:
             params["season"] = season
         query = "?" + urllib.parse.urlencode(params) if params else ""

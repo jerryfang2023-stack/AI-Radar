@@ -29,6 +29,7 @@ test("season tabs discard stale responses and preserve the selected detail/share
   const reads = [];
   const { page, navigation } = harness("community-points", (path, options) => new Promise((resolve, reject) => reads.push({ path, options, resolve, reject })));
   const initial = page.onLoad({});
+  await Promise.resolve();
   assert.equal(page.data.myPoints, 0);
   const second = page.switchSeason({ currentTarget: { dataset: { season: "season-2" } } });
   assert.equal(reads[1].path, "season-points?season=season-2");

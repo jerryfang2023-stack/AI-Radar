@@ -22,7 +22,7 @@
     <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
     <view wx:if="{{experience}}" class="experience-note">隔离体验 · 成员列表为精选样例</view>
     <block wx:if="{{mode === 'graph'}}">
-      <view class="top-actions"><view class="segment"><button class="{{tab === 'map' ? 'active' : ''}}" data-tab="map" bindtap="switchTab">角色图谱</button><button class="{{tab === 'directory' ? 'active' : ''}}" data-tab="directory" bindtap="switchTab">通讯录</button></view><button class="profile-link" bindtap="openProfile">我的档案</button></view>
+      <view class="top-actions"><view class="segment"><button class="{{tab === 'map' ? 'active' : ''}}" data-tab="map" bindtap="switchTab">角色图谱</button><button class="{{tab === 'directory' ? 'active' : ''}}" data-tab="directory" bindtap="switchTab">通讯录</button></view><button wx:if="{{selfId || experience}}" class="profile-link" bindtap="openProfile">我的档案</button></view>
       <block wx:if="{{tab === 'map'}}">
         <view class="section-heading"><view><text>MEMBER ROLE MAP</text><text>成员角色图谱</text></view><text>{{members.length}} 位 · 6 类角色</text></view>
         <view class="supply"><text>成员供给结构</text><view><view wx:for="{{supply}}" wx:key="name" class="i s{{index + 1}}" style="flex: {{item.count}}"></view></view><view><view wx:for="{{supply}}" wx:key="name" class="span">{{item.name}} <text class="strong">{{item.count}}</text></view></view></view>

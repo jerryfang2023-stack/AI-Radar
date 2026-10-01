@@ -9,7 +9,7 @@ def test_season_gateway_uses_member_identity_and_no_wallet(client):
     client.application.community_client.hub = lambda path, **kwargs: calls.append((path, kwargs)) or {"myPoints": 12}
     response = client.get("/api/v1/community/season-points?season=season-2&viewer=99", headers=auth(token))
     assert response.json == {"myPoints": 12}
-    assert calls[-1] == ("season-points", {"viewer": 42, "season": "season-2"})
+    assert calls[-1] == ("season-points", {"viewer": 42, "season": "season-2", "reader": True})
     assert response.headers["Cache-Control"] == "private, no-store"
     assert client.get("/api/v1/community/token-benefits", headers=auth(token)).status_code == 200
     assert calls[-1][1]["viewer"] == 42

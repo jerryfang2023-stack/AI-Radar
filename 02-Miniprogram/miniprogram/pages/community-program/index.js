@@ -7,8 +7,8 @@ const { readCommunityPage } = require("../../utils/community-loading.js");
 
 Page({
   data: { mode: "list", activeTab: "schedule", schedules: [], archives: [], item: null, speaker: null, error: "", loading: false, sessionCount: 0, speakerCount: 0 },
-  onLoad(options = {}) {
-    if (!requireCommunityMember()) return;
+  async onLoad(options = {}) {
+    if (!await requireCommunityMember()) return;
     this.options = options;
     if (!isExperience()) return this.refresh();
     this.setData({ schedules, archives, loaded: true, sessionCount: archives.length, speakerCount: archives.length * 3 });

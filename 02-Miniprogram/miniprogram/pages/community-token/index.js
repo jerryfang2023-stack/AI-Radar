@@ -8,8 +8,8 @@ const displayDate = (value) => value ? value.replace(/-0(\d)/g, "-$1") : "待定
 
 Page({
   data: { pool: null, reward: null, poolRules: "", poolAmount: "待公布", rewardAmount: "—", startDate: "待定", endDate: "待定", myPoints: 0, rulesOpen: true, loaded: false, error: "", experience: false },
-  onLoad() {
-    if (!requireCommunityMember()) return;
+  async onLoad() {
+    if (!await requireCommunityMember()) return;
     this.setData({ experience: Boolean(readExperience()) });
     return this.refresh();
   },

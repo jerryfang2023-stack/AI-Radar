@@ -13,13 +13,13 @@ function readCommunityPage(page, action, clearOnError) {
       try {
         const result = await require("./payment.js").fetchMembership();
         if (result.community) require("./member.js").syncCommunity(result.community);
-        if (result.community?.status === "joined") {
+        if (result.membership) require("./member.js").syncMembership(result.membership);
+        if (result.membership?.active) {
           await action();
           page.setData({ loaded: true, error: "" });
           return;
         }
-        if (result.community?.status === "not_joined") error = new Error("申请已通过，请联系管理员登记入群日期后重试");
-        else error = new Error("社群身份尚未通过核验，请在“我的”中查看社群状态");
+        error = new Error("阅读权限已到期，请前往会员中心");
       } catch (refreshError) { error = refreshError; }
     }
     if (clearOnError) {
