@@ -1,6 +1,7 @@
 # Guanlan Funding Mini Program
 
 Current source: 1.1.8 uses AI-FUNDING-TAGS-1.0 for capital-flow signals, rankings, heatmaps and sector drill-downs. The bundled index and live cache require matching taxonomy versions and valid sector/subsector pairs. See `docs/REVIEW-1.1.8.md`.
+Current source: 1.1.8 reads the reviewed institution/person profile catalog and protected research details. Directory has an explicit all-market selection; global still excludes China. Research sections retain source links and existing detail entitlements. See `docs/REVIEW-1.1.8.md`.
 
 Current source: 1.1.7 uses unified active reading entitlement for community content, with no separate joined-status or application gate. Real community identity remains required for personal profile writes and reward attribution. Legacy application links redirect to community home. Financing heading is 融资精选. See `docs/REVIEW-1.1.7.md`.
 

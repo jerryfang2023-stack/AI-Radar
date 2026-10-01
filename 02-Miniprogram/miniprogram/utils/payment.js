@@ -380,6 +380,7 @@ function entityFollows(method='GET',resourceId='') {
  return withExistingToken(token=>apiRequest('/member/entity-follows',{token,method,data:method==='GET'?undefined:{resourceId}}));
 }
 module.exports = {
+  getSessionIdentity: communityScope,
   entityFollows,
   API_ROOT,
   apiRequest,
