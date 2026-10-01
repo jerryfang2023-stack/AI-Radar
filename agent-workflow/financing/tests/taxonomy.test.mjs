@@ -1,6 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
 import { taxonomy,classificationInput,classificationProblems,displayClassification } from '../taxonomy.mjs';
+
+test('consumer companion devices survive scope migration; mixed robot portfolios remain reviewable',()=>{
+  const registry=JSON.parse(fs.readFileSync(new URL('../../../01-SiteV2/content/12-applications/financing-taxonomy/decisions.json',import.meta.url))).decisions;
+  assert.equal(registry['EV-41e71ae12a730f23'].scope,'included');
+  assert.equal(registry['EV-41e71ae12a730f23'].subsector_id,'toys');
+  assert.equal(registry['EV-86838cc774b85116'].scope,'review');
+  assert.equal(registry['EV-47f16317cc2d62e2'].scope,'excluded');
+});
 test('financing taxonomy separates sectors from delivery and removes implementation/robotics tags',()=>{
   assert.equal(taxonomy.sectors.length,7);
   const ids=taxonomy.sectors.flatMap(row=>[row.id,...row.subsectors.map(child=>child.id)]);
