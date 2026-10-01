@@ -18144,8 +18144,8 @@
     },
     "EV-86838cc774b85116": {
       "id": "EV-86838cc774b85116",
-      "scope": "excluded",
-      "exclusion_reason": "embodied_robotics",
+      "scope": "review",
+      "exclusion_reason": "",
       "sector_id": "",
       "subsector_id": "",
       "product_form_id": "",
@@ -18158,7 +18158,7 @@
         4,
         5
       ],
-      "rationale": "公司主营各类AI陪伴机器人，产品矩阵覆盖人形机器人、机器狗、便携式宠物机器人等形态，属于机器人本体主营企业，按规则排除。",
+      "rationale": "证据同时描述学生心理陪伴终端与人形、机器狗、便携宠物机器人产品矩阵，尚不足以确认当前融资主体主营交付；补查量产产品与客户用途后判定消费陪伴设备或机器人本体。",
       "input_hash": "a0c22e45907786944311c71305d0bb6c382539638d3dd1cd9d28c3cf6bf21b75",
       "evidence_refs": [
         {
@@ -18188,7 +18188,9 @@
       ],
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "generated_at": "2026-10-01T14:03:38.990Z"
+      "generated_at": "2026-10-01T14:03:38.990Z",
+      "reviewed_at": "2026-10-01T15:26:31.398Z",
+      "review_method": "evidence-boundary-audit"
     },
     "EV-51d8aec94225e9c6": {
       "id": "EV-51d8aec94225e9c6",
@@ -18322,19 +18324,21 @@
     },
     "EV-41e71ae12a730f23": {
       "id": "EV-41e71ae12a730f23",
-      "scope": "excluded",
-      "exclusion_reason": "embodied_robotics",
-      "sector_id": "",
-      "subsector_id": "",
-      "product_form_id": "",
-      "customer_ids": [],
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "toys",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
       "evidence_indices": [
         0,
         1,
         2,
         3
       ],
-      "rationale": "公司融合AI与机器人研发，旗舰产品bibo采用小型化潮玩形态并通过多模态感知与身体表达进行互动，属于机器人本体主营企业，按规则排除。",
+      "rationale": "已验证原文明确 bibo 是小型化 AI 潮玩，通过表情、转头及声音提供情感陪伴；这些交互动作不构成通用具身机器人主营证据，按消费 AI 玩具与陪伴设备收录。",
       "input_hash": "50add2bcb42a94ab0f08df09920db056ca6cbe5037ddf44c47e1dccbc7e2a7a4",
       "evidence_refs": [
         {
@@ -18356,7 +18360,9 @@
       ],
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "generated_at": "2026-10-01T14:03:38.990Z"
+      "generated_at": "2026-10-01T14:03:38.990Z",
+      "reviewed_at": "2026-10-01T15:26:31.396Z",
+      "review_method": "evidence-boundary-audit"
     },
     "EV-60366423eaa67216": {
       "id": "EV-60366423eaa67216",
@@ -18559,5 +18565,5 @@
       "generated_at": "2026-10-01T14:03:43.314Z"
     }
   },
-  "generated_at": "2026-10-01T14:03:43.314Z"
+  "generated_at": "2026-10-01T15:26:31.398Z"
 }
