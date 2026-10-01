@@ -1,15 +1,17 @@
 # Guanlan Funding Mini Program
 
+Current source 1.2.1: directory markets are China/global only; list introductions clamp at four lines and public product-use previews stay bounded. Remove native canvases while financing sheets are open and redraw after dismissal. Profile actions share icon geometry and button styling. See docs/REVIEW-1.2.1.md.
+
 ## Release numbering
 
-User policy: release digits roll over at 9. Use 1.1.9 -> 1.2.0, 1.2.9 -> 1.3.0, and 1.9.9 -> 2.0.0; never upload a patch or minor digit above 9. Keep package.json, analytics APP_VERSION and CLI upload version identical. Current release 1.2.0 supersedes the interim 1.1.10 upload with the same accepted features. See docs/REVIEW-1.2.0.md.
+User policy: release digits roll over at 9. Use 1.1.9 -> 1.2.0, 1.2.9 -> 1.3.0, and 1.9.9 -> 2.0.0; never upload a patch or minor digit above 9. Keep package.json, analytics APP_VERSION and CLI upload version identical. Previous release 1.2.0 supersedes the interim 1.1.10 upload with the same accepted features. See docs/REVIEW-1.2.0.md.
 
 Current source: 1.1.10 displays editorial capital explanations directly after 观察：, without the 观澜分析 prefix. Institution quotations retain their institution attribution. Keep source validation and the current-market latest-three carousel from 1.1.9. See `docs/REVIEW-1.1.10.md`.
 
 Current source: 1.1.9 implements the approved full-taxonomy ecology heatmap/trends with the shared capital-map model. All 7 parents and 45 subsectors remain available; use snapshot dates and complete-month comparisons. See `docs/REVIEW-1.1.9.md`.
 
 Current source: 1.1.8 uses AI-FUNDING-TAGS-1.0 for capital-flow signals, rankings, heatmaps and sector drill-downs. The bundled index and live cache require matching taxonomy versions and valid sector/subsector pairs. See `docs/REVIEW-1.1.8.md`.
-Current source: 1.1.8 reads the reviewed institution/person profile catalog and protected research details. Directory has an explicit all-market selection; global still excludes China. Research sections retain source links and existing detail entitlements. See `docs/REVIEW-1.1.8.md`.
+Current source: 1.1.8 reads the reviewed institution/person profile catalog and protected research details. Directory market controls offer only China/global in one row; global excludes China and unknown markets. Research sections retain source links and existing detail entitlements. See `docs/REVIEW-1.1.8.md`.
 
 Current source: 1.1.7 uses unified active reading entitlement for community content, with no separate joined-status or application gate. Real community identity remains required for personal profile writes and reward attribution. Legacy application links redirect to community home. Financing heading is 融资精选. See `docs/REVIEW-1.1.7.md`.
 

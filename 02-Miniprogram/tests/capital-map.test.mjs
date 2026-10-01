@@ -47,3 +47,14 @@ test('native controls retain 52 rows, route real financing IDs and restore tab b
   page.applyFunding(data);assert.equal(hidden,false);assert.equal(page.data.mapSheet,null);
   page.openMapFunding({currentTarget:{dataset:{id:'one & two'}}});assert.equal(navigation,'/pages/detail/index?id=one%20%26%20two');
 });
+
+test('native chart redraws cannot race an open financing sheet or hidden page',()=>{
+ let page,queued=[],draws=0;
+ vm.runInNewContext(fs.readFileSync(new URL('../miniprogram/pages/market/index.js',import.meta.url),'utf8'),{Page:p=>page=p,wx:{createCanvasContext(){},nextTick:fn=>queued.push(fn),getWindowInfo:()=>({windowWidth:390})},require:name=>name.includes('directory-page')?{data:{}}:{}});
+ page.setData=(v,cb)=>{Object.assign(page.data,v);cb?.();};page.capitalModel={focus:{}};page.paintMapChart=()=>draws++;
+ page.drawMapCharts();page.data.mapSheet={};queued.shift()();assert.equal(draws,0);
+ page.closeMapDetail();queued.shift()();assert.equal(draws,1);
+ page.drawMapCharts();page.onHide();queued.shift()();assert.equal(draws,1);
+ const markup=fs.readFileSync(new URL('../miniprogram/pages/market/index.wxml',import.meta.url),'utf8');
+ for(const canvas of markup.matchAll(/<canvas[^>]*>/g))assert.match(canvas[0],/wx:if="{{!mapSheet}}"/);
+});

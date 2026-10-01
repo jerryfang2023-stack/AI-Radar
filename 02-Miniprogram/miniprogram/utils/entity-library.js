@@ -67,6 +67,7 @@ function buildEntityLibrary(cards = [], details = {}) {
       const key = `${companyId}|${entityKey(name)}`;
       const metadata = (detail.products || []).find(item => item.name === name) || {};
       const item = products.get(key) || { key, type: 'products', name, initial: name.slice(0,1).toUpperCase(), summary: metadata.description || '产品用途暂未披露', website: metadata.website || '', companyLinks: [{name:companyName,key:companyId}], companiesText: companyName, categories: [], rounds: [], latestDate: card.date || '', markets: [] };
+      if (item.summary === '产品用途暂未披露' && metadata.description) item.summary = metadata.description;
       appendUnique(item.categories, metadata.scenario || card.marketApplication || card.category);
       appendUnique(item.markets, card.marketRegion);
       item.rounds.push({id:card.id,company:companyName,date:card.date,round:card.round,amount:card.amount});

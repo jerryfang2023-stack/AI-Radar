@@ -30,6 +30,7 @@ Page({
 
   },
   onShow() {
+    this.mapHidden = false;
     syncTabBar(this, 1);
     const savedMode = wx.getStorageSync(ECOSYSTEM_MODE_KEY);
     if (["map", "directory"].includes(savedMode) && savedMode !== this.data.mode) this.setData({ mode: savedMode });
@@ -77,14 +78,15 @@ Page({
   toggleMapAll() { this.updateMap({mapExpanded:this.data.mapExpanded.length===this.capitalModel.parents.length?[]:this.capitalModel.parents.map(p=>p.id)}); },
   changeMapFocus(e) { const r=this.capitalModel.rows[Number(e.detail.value)]; if(r)this.updateMap({mapSelected:r.id}); },
   openMapDetail(e) { const {id,month}=e.currentTarget.dataset; this.setData({mapSheet:capital.details(this.capitalModel,id,month)}); if(this.getTabBar)this.getTabBar()?.setData({hidden:true}); },
-  closeMapDetail() { this.setData({mapSheet:null}); if(this.getTabBar)this.getTabBar()?.setData({hidden:false}); },
+  closeMapDetail() { this.setData({mapSheet:null},()=>this.drawMapCharts()); if(this.getTabBar)this.getTabBar()?.setData({hidden:false}); },
   stopMapTap() {},
   openMapFunding(e) { const id=e.currentTarget.dataset.id; this.closeMapDetail(); if(id)wx.navigateTo({url:'/pages/detail/index?id='+encodeURIComponent(id)}); },
   toggleMethods() { this.setData({methodsOpen:!this.data.methodsOpen}); },
   retryMap() { return this.refreshData(); },
   drawMapCharts() {
-    if(!wx.createCanvasContext || this.data.mode!=='map') return;
+    if(!wx.createCanvasContext || this.data.mode!=='map' || this.data.mapSheet || this.mapHidden || !this.capitalModel) return;
     const draw=()=>{
+      if(this.data.mapSheet || this.mapHidden || this.data.mode!=='map')return;
       if(this.data.mapMode==='trend') this.data.mapRows.forEach(r=>this.paintMapChart('map-'+r.id,r,90,32,false));
       const width=(wx.getWindowInfo?wx.getWindowInfo():wx.getSystemInfoSync()).windowWidth-60;
       this.paintMapChart('map-focus',this.capitalModel.focus,width,166,true);
@@ -130,8 +132,8 @@ Page({
     const id = event.currentTarget.dataset.id;
     if (id) wx.navigateTo({ url: `/pages/report-detail/index?id=${id}` });
   },
-  onHide() { this.closeMapDetail(); },
-  onUnload() { this.directoryDisposed = true; },
+  onHide() { this.mapHidden=true; this.closeMapDetail(); },
+  onUnload() { this.mapHidden=true; this.directoryDisposed = true; },
   onReachBottom() { if(this.data.mode === "directory") this.moreDirectory(); },
   onShareAppMessage() {
     return this.data.mode === "directory"
