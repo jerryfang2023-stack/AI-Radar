@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-50d7f4250bdd8888",
+        "canonical_entity_id": "",
+        "name": "Flow Engineering"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-c44491c4b6bacea0",
+        "funding_insight_id": "FI-2309843d76ae81f9",
+        "event_ids": [
+          "EV-f2950d2104e97163"
+        ],
+        "company_entity_id": "EN-50d7f4250bdd8888",
+        "company_canonical_entity_id": "",
+        "company_name": "Flow Engineering",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3511f7baf76701e3",
+            "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+            "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+            "source_content_hash": "1ada124c6217cee1",
+            "quote": "with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg",
+            "quote_hash": "5c36bdef248998ba184ff7bb0e79f5b157b27697426afa3ff7dbb47ccead4316"
+          }
+        ]
+      },
       {
         "activity_id": "IA-1a599bb330de6e4b",
         "funding_insight_id": "FI-664cc90f57688153",
@@ -120,6 +169,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3511f7baf76701e3",
+        "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+        "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+        "source_content_hash": "1ada124c6217cee1",
+        "quote": "with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg",
+        "quote_hash": "5c36bdef248998ba184ff7bb0e79f5b157b27697426afa3ff7dbb47ccead4316"
+      },
+      {
         "source_id": "FISRC-ce83b857608dabeb",
         "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
         "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
@@ -133,10 +190,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Nico Rosberg 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Nico Rosberg 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3511f7baf76701e3"
+        },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 既有投资方 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
@@ -144,6 +205,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-3511f7baf76701e3",
+          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+          "source_content_hash": "1ada124c6217cee1",
+          "quote": "with contributions from Hugging Face co-founder Thomas Wolf, Mercedes-Benz CIO Jonas von Malottki, and Formula 1 world champion Nico Rosberg",
+          "quote_hash": "5c36bdef248998ba184ff7bb0e79f5b157b27697426afa3ff7dbb47ccead4316"
+        },
         {
           "source_id": "FISRC-ce83b857608dabeb",
           "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",

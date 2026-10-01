@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
@@ -70,8 +70,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-13",
-    "latest_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 3
     },
     "round_codes": [
@@ -96,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d33ac91c39ddc334",
+        "funding_insight_id": "FI-1b6dd112c647d4a1",
+        "event_ids": [
+          "EV-35fa913e4709b4d6"
+        ],
+        "company_entity_id": "EN-b4c73396844f7d05",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "早期轮次投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-70f948c95dacb2f0",
+            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+            "source_content_hash": "0773286daf5bf525",
+            "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
+            "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-50f287118dee3322",
         "funding_insight_id": "FI-36e2dba781b80e3a",
@@ -219,6 +260,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-70f948c95dacb2f0",
+        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+        "source_content_hash": "0773286daf5bf525",
+        "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
+        "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
+      },
+      {
         "source_id": "FISRC-3fa34b4b7b9a1a77",
         "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
         "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
@@ -248,10 +297,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Conviction 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Conviction 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 早期轮次投资 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-70f948c95dacb2f0"
+        },
         {
           "description": "融资来源记录：Intelligence · 种子轮 · 2026-08-03 · 本轮参投 · $7.9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3fa34b4b7b9a1a77"
@@ -259,14 +312,18 @@
         {
           "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-907e4297862ddd8c"
-        },
-        {
-          "description": "融资来源记录：Fractile · B轮 · 2026-05-13 · 本轮参投 · 2.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62071134d28f47b9"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-70f948c95dacb2f0",
+          "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+          "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+          "source_content_hash": "0773286daf5bf525",
+          "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
+          "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
+        },
         {
           "source_id": "FISRC-3fa34b4b7b9a1a77",
           "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
@@ -282,14 +339,6 @@
           "source_content_hash": "3a584a627e1535ff",
           "quote": "Additional Investors: Conviction, SOMA Capital, Gradient Ventures, e2vc, Maxitech",
           "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
-        },
-        {
-          "source_id": "FISRC-62071134d28f47b9",
-          "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
-          "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
-          "source_content_hash": "49c881bff41c0376",
-          "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
-          "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
         }
       ],
       "last_verified_at": "2026-09-25"
