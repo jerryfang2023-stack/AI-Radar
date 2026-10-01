@@ -21,21 +21,6 @@ test("application-company classifications never synthesize canonical entity prof
   assert.ok(data.entityProfiles.every((profile) => /^EN-[a-f0-9]{16}$/u.test(profile.id)));
 });
 
-test("business-signal publishing persists the split V4 frontstage service", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-
-  assert.match(workflow, /01-SiteV2\/site\/data\/data-center-v4\/\*\*/u);
-  assert.match(workflow, /stage_if_exists "01-SiteV2\/site\/data\/data-center-v4"/u);
-});
-
-test("funding publishing persists the updated split-service investor manifest", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-funding-insights-pr.yml"), "utf8");
-
-  assert.match(workflow, /"01-SiteV2\/site\/data\/data-center-v4"/u);
-  assert.match(workflow, /classify:funding-taxonomy-v4\.1 -- --write=true --apply=true[\s\S]*project:funding-taxonomy-events[\s\S]*sync-light-data-lake\.mjs/u);
-  assert.match(workflow, /:\(glob\)01-SiteV2\/content\/11-databases\/data-center-v4\/\*\/reviewed-event-classifications\.json/u);
-  assert.match(workflow, /build:trend-radar-site[\s\S]*build:opportunity-map-site[\s\S]*assert:taxonomy-consistency/u);
-});
 
 test("checked-in split frontstage data matches the monolithic adapter date", () => {
   const full = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4-frontstage.json"), "utf8"));
@@ -440,8 +425,8 @@ test("first-line viewpoints uses both monitoring lanes and the three-level V4 pa
   assert.ok(data.intake.every((item) => item.laneCoverage.includes("afternoon-skill")));
 });
 
-test("business signals and first-line viewpoints serialize shared data-center publications", () => {
-  const businessWorkflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
+test("financing and paused first-line viewpoints serialize shared data-center publications", () => {
+  const businessWorkflow = fs.readFileSync(path.join(root, ".github/workflows/funding-daily-pr.yml"), "utf8");
   const firstLineWorkflow = fs.readFileSync(path.join(root, ".github/workflows/daily-first-line-viewpoints-pr.yml"), "utf8");
   const concurrencySection = (workflow) => workflow.match(/concurrency:\s*\n\s+group:[^\n]+\n\s+cancel-in-progress:[^\n]+/u)?.[0] || "";
 

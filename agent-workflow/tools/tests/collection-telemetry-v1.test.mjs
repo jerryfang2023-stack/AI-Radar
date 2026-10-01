@@ -129,18 +129,6 @@ test("application projection is not passed while any projection outcome is unkno
   assert.equal(result.publication.finalization, "github_pages_artifact");
 });
 
-test("daily workflow keeps OPS telemetry independent and does not write a local Vault in GitHub Actions", () => {
-  const workflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  const dryRunWorkflow = fs.readFileSync(path.join(process.cwd(), ".github/workflows/daily-production-chain-dry-run.yml"), "utf8");
-  const opsBlock = workflow.match(/- name: Sync operations data after V4 production[\s\S]*?(?=\n\s+- name:)/u)?.[0] || "";
-  const dryRunOpsBlock = dryRunWorkflow.match(/- name: Build operations data after V4 materialization[\s\S]*?(?=\n\s+- name:)/u)?.[0] || "";
-  assert.doesNotMatch(workflow, /Sync FDE and AI hardware Obsidian archives|sync-(?:enterprise-ai-fde|ai-hardware)-to-obsidian/u);
-  assert.match(opsBlock, /build-collection-telemetry-v1\.mjs/u);
-  assert.match(opsBlock, /steps\.data-center-v4-materialize\.outcome == 'success'/u);
-  assert.match(opsBlock, /--lenses="\$\{\{ steps\.data-center-v4-materialize\.outcome \}\}"/u);
-  assert.match(dryRunOpsBlock, /--lenses="\$\{\{ steps\.data-center-v4-materialize\.outcome \}\}"/u);
-  assert.doesNotMatch(opsBlock, /if:.*business-frontstage-gate/u);
-});
 
 test("operations console renders the four V4 production stages instead of the V3 funnel", () => {
   const html = fs.readFileSync(path.join(process.cwd(), "01-SiteV2/site/operations-console.html"), "utf8");

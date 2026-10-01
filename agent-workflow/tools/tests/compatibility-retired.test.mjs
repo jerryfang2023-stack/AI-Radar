@@ -156,7 +156,7 @@ test("current contracts and Skills cannot route work back to V3 assets", () => {
 
 test("daily workflows cannot invoke V3 producers", () => {
   const text = [
-    read(".github/workflows/daily-persistent-assets-pr.yml"),
+    read(".github/workflows/funding-daily-pr.yml"),
     read(".github/workflows/daily-production-chain-dry-run.yml"),
   ].join("\n");
   for (const forbidden of [

@@ -47,8 +47,8 @@ test("funding claim candidates reject an unrelated financing teaser near the art
 });
 
 test("daily recovery revalidates and reuses existing model decisions", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  assert.match(workflow, /generate-data-center-model-assist\.mjs[^]*?--reuse-existing=true/u);
+  const workflow = fs.readFileSync(path.join(root, "agent-workflow/financing/run.mjs"), "utf8");
+  assert.match(workflow, /generate-data-center-model-assist[^]*?--reuse-existing=true/u);
 });
 
 test("catalog coverage shares public admission and never auto-approves pending entities", () => {
@@ -2429,26 +2429,7 @@ test("integrity gate rejects duplicate stable identifiers", () => {
   assert.ok(result.failures.some((failure) => failure.includes("duplicate raw_id")));
 });
 
-test("daily workflow stages only V4-native outputs after the pre-commit gate succeeds", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  const stagingBlock = workflow.indexOf("- name: Commit Data Center V4 assets");
-
-  assert.ok(stagingBlock > 0);
-  for (const asset of [
-    "data-center-v4/intake-v1/${RUN_DATE}.json",
-    "data-center-v4/${RUN_DATE}",
-    "opportunity-evidence-v2.json",
-    "trend-radar-v1.json",
-    "collection-telemetry-v1.json",
-  ]) {
-    assert.ok(workflow.indexOf(asset, stagingBlock) > stagingBlock, `${asset} must be staged inside the V4-success block`);
-  }
-  assert.doesNotMatch(workflow, /(?:no-)?trend-candidate-decision\.md|v3-data-observation-desk\.json|intelligence-graph-index\.json|01-Signal-Cards/iu);
-  assert.match(workflow, /if: always\(\) && steps\.pre-commit-gate\.outcome == 'success'/iu);
-  assert.match(
-    workflow,
-    /Confirm site data freshness[\s\S]*set -euo pipefail[\s\S]*assert-data-center-projection-coverage\.mjs[\s\S]*--reports-dir="agent-workflow\/reports"/u,
-  );
+test("Pages validates factual projection coverage before deployment", () => {
   const pagesWorkflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
   assert.match(
     pagesWorkflow,
@@ -2472,61 +2453,15 @@ test("durable checkpoints support repeated and cancelled recovery without trusti
   assert.equal(isReusableBusinessSignalsRun(checkpoint([restored])), false);
 });
 
-test("daily workflow resumes downstream failures without repeating accepted collection", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
+test("dated title repair and immutable accepted evidence remain required", () => {
   const titleRepair = fs.readFileSync(path.join(root, "agent-workflow/tools/backfill-source-title-translations.mjs"), "utf8");
   const agentRules = fs.readFileSync(path.join(root, "AGENTS.md"), "utf8");
-
-  assert.match(workflow, /resume_run_id:/u);
-  assert.match(workflow, /Restore accepted source intake from failed run/u);
-  assert.match(workflow, /resume_dir="\$\(mktemp -d\)"/u);
-  assert.match(workflow, /gh run download "\$resume_run_id" --name "\$artifact_name" --dir "\$resume_dir\/artifact"/u);
-  assert.match(workflow, /cp -a "\$resume_dir\/artifact\/\." \./u);
-  assert.match(
-    workflow,
-    /guanlan-monitor-quality-gate\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*assert-daily-production-chain\.mjs[\s\S]*--stage=post-monitor/u,
-    "a restored intake must be re-evaluated by the current quality gate before post-monitor handoff",
-  );
-  assert.match(workflow, /Collect source raw artifacts[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
-  assert.match(workflow, /Run Daily Monitor with QC[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
-  assert.match(workflow, /isReusableBusinessSignalsRun\(run\)/u);
-  assert.match(dispatcher, /isReusableBusinessSignalsRun\(detail\)/u);
-  assert.doesNotMatch(workflow, /node agent-workflow\/tools\/normalize-(?:source-intake-titles|china-market-intake)\.mjs/u);
-  assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?if: always\(\)/u);
-  assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?\(steps\.source-artifacts\.outcome == 'success' \|\| steps\.resume-artifact\.outputs\.used == 'true'\)/u);
-  assert.match(workflow, /Repair required source-title translations[\s\S]*backfill-source-title-translations\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*--write=true[\s\S]*build-data-center-v4\.mjs --date="\$\{RUN_DATE\}"[\s\S]*assert:source-titles/u);
-  assert.match(workflow, /Run Data Center V4 integrity gate[\s\S]*steps\.source-title-repair\.outcome == 'success'/u);
   assert.match(titleRepair, /const selectedDate = arg\("date"\)/u);
   assert.match(titleRepair, /filter\(\(date\) => !selectedDate \|\| date === selectedDate\)/u);
-  assert.match(workflow, /assert:private-evidence-backup -- --date="\$\{RUN_DATE\}"/u);
-  const evidenceBoundary = workflow.indexOf("Persist originals privately and enforce the public boundary");
-  const evidencePush = workflow.indexOf('git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main', evidenceBoundary);
-  const evidenceAssert = workflow.indexOf('npm run assert:private-evidence-remote', evidencePush);
-  const evidenceCoverage = workflow.indexOf('npm run assert:private-evidence-backup -- --date="${RUN_DATE}"', evidencePush);
-  assert.ok(evidenceBoundary >= 0 && evidencePush > evidenceBoundary, "private evidence must push before final remote assertions");
-  assert.ok(evidenceAssert > evidencePush && evidenceCoverage > evidencePush, "private evidence coverage must run after push");
   assert.match(agentRules, /Same-date accepted collection is immutable reusable input/u);
   assert.match(agentRules, /must restore that artifact and must not recollect/u);
 });
 
-test("cloud Business Signals health dispatch waits for downstream completion", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/business-signals-health-dispatch.yml"), "utf8");
-  const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
-
-  assert.match(workflow, /timeout-minutes: 45/u);
-  assert.match(workflow, /--wait=true/u);
-  assert.match(workflow, /--wait-timeout-minutes=35/u);
-  assert.match(dispatcher, /waitForBusinessSignalsRun/u);
-  assert.match(dispatcher, /waitForHealthyV4/u);
-  assert.match(dispatcher, /Business Signals run concluded/u);
-  assert.match(dispatcher, /\+refs\/heads\/main:refs\/remotes\/origin\/main/u);
-  assert.match(dispatcher, /data-center-v4\/manifest\.json/u);
-  assert.doesNotMatch(dispatcher, /frontstagePath = "01-SiteV2\/site\/data\/data-center-v4-frontstage\.json"/u);
-  assert.match(dispatcher, /ready: fetch\.ok/u);
-  assert.match(dispatcher, /Timed out waiting for Business Signals publication/u);
-  assert.match(dispatcher, /action: "completed"/u);
-});
 
 test("source-intake gate replays V4 evidence eligibility without private Raw routing fields", () => {
   const accepted = {

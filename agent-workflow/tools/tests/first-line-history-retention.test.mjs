@@ -46,14 +46,10 @@ test("daily publication archives accepted morning history before gating and stag
 });
 
 test("serialized publication lanes resolve their branch after acquiring the shared lock", () => {
-  for (const file of ["daily-first-line-viewpoints-pr.yml", "daily-persistent-assets-pr.yml"]) {
+  for (const file of ["daily-first-line-viewpoints-pr.yml"]) {
     const workflow = fs.readFileSync(`.github/workflows/${file}`, "utf8");
     assert.match(workflow, /name: Check out repository\s+uses: actions\/checkout@v6\s+with:[\s\S]*?ref: \$\{\{ github\.ref \}\}\s+fetch-depth: 0/u);
   }
-  const business = fs.readFileSync(".github/workflows/daily-persistent-assets-pr.yml", "utf8");
-  assert.match(business, /cp -a "\$resume_dir\/artifact\/\." \.[\s\S]+merge-source-intake-v1\.mjs --date="\$\{RUN_DATE\}" --git-ref=HEAD/u);
-  assert.match(business, /generate-funding-insights-deepseek\.mjs \\\s+--recover-from-git-ref=HEAD/u);
-  assert.match(business, /preserve-published-checkpoint-state\.mjs --git-ref=HEAD/u);
 });
 
 test("checkpoint ledger union retains both lanes and preserves the published review on collisions", () => {

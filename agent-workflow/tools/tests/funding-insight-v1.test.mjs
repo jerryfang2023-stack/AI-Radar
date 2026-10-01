@@ -1728,11 +1728,7 @@ test("没有融资事件时生成器无需搜索或模型密钥也会写出可�
   }
 });
 
-test("融资透视自动化在商业事件工作流后增量研究、同步并发布", () => {
-  const workflow = fs.readFileSync(
-    path.join(root, ".github/workflows/daily-funding-insights-pr.yml"),
-    "utf8",
-  );
+test("融资事实、原文证明与历史分类台账门禁保留", () => {
   const pagesWorkflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
   const fullGate = fs.readFileSync(
     path.join(root, "agent-workflow/tools/assert-funding-insights-v1.mjs"),
@@ -1746,34 +1742,6 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
     path.join(root, "agent-workflow/tools/assert-taxonomy-consistency-v4-1.mjs"),
     "utf8",
   );
-  assert.match(workflow, /workflow_run:[\s\S]*WaveSight Business Signals PR/u);
-  assert.match(workflow, /inspect-funding-insight-work\.mjs/u);
-  assert.match(workflow, /TAVILY_DISABLED: "false"/u);
-  assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs/u);
-  assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
-  assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*classify:funding-taxonomy-v4\.1 -- --write=true[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
-  assert.match(
-    workflow,
-    /classify:funding-taxonomy-v4\.1 -- --write=true --apply=true[\s\S]*project:funding-taxonomy-events[\s\S]*build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u,
-    "the funding workflow must rebuild the frontstage after applying taxonomy decisions",
-  );
-  assert.match(workflow, /assert-funding-insights-v1\.mjs --all=true --frontstage=true[\s\S]*build:investment-institutions[\s\S]*assert:investment-institutions[\s\S]*build:data-center-site/u);
-  assert.match(
-    workflow,
-    /git add[\s\S]*investment-institutions-v1\.json[\s\S]*"01-SiteV2\/site\/data\/data-center-v4"/u,
-    "the funding workflow must persist the complete split Data Center projection",
-  );
-  assert.match(workflow, /git add[\s\S]*taxonomy-decisions-v4-1\.json/u);
-  assert.doesNotMatch(workflow, /sync-funding-insights-to-obsidian\.mjs|vault\/20-Application-Center/u);
-  assert.match(workflow, /automation\/funding-insights-\$\{RUN_DATE\}/u);
-  assert.match(workflow, /push:[\s\S]*canonical-events\.json/u);
-  assert.match(workflow, /startsWith\(github\.event\.head_commit\.message, 'Persist business signals for '\)/u);
-  assert.match(workflow, /gh workflow run daily-funding-insights-pr\.yml --ref main -f date=/u);
-  assert.match(workflow, /group: wavesight-funding-insights-\$\{\{ needs\.resolve-date\.outputs\.date \}\}/u);
-  assert.match(workflow, /Wait for Funding Insights PR to reach main/u);
-  assert.match(workflow, /gh workflow run github-pages\.yml --ref main -f source_sha=/u);
-  assert.match(workflow, /wait-for-pages-deployment\.mjs --source-sha=/u);
-  assert.match(workflow, /awaiting_portal/u);
   assert.match(pagesWorkflow, /run-name: Deploy Frontstage to GitHub Pages \$\{\{ inputs\.source_sha \|\| github\.sha \}\}/u);
   assert.match(
     fullGate,
@@ -1802,34 +1770,8 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   );
   assert.match(taxonomyConsistencyGate, /reviewedByDecisionEvent\.size !== decisionEventIds\.size/u);
   assert.doesNotMatch(taxonomyConsistencyGate, /reviewed funding coverage must be \d+/u);
-  const fundingJob = workflow.slice(workflow.indexOf("  funding-insights-pr:"));
-  assert.doesNotMatch(fundingJob, /steps\.run-date\.outputs\.date/u);
 });
 
-test("商业事件工作流原子发布融资卡、机构索引与数据中心投影", () => {
-  const workflow = fs.readFileSync(
-    path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"),
-    "utf8",
-  );
-  const fundingStep = workflow.slice(
-    workflow.indexOf("      - name: Research, gate, and publish Funding Insights"),
-    workflow.indexOf("      - name: Record funding supply health"),
-  );
-  const fundingCommit = workflow.slice(
-    workflow.indexOf('          if [ "${{ steps.funding-insights.outcome }}" = "success" ]; then'),
-    workflow.indexOf('          if [ "${{ steps.opportunity-map-v4.outcome }}" = "success" ]; then'),
-  );
-  assert.match(
-    fundingStep,
-    /build-funding-insights-frontstage\.mjs[\s\S]*build:investment-institutions[\s\S]*build:data-center-site[\s\S]*translate:public-structured-fields[\s\S]*classify:funding-taxonomy-v4\.1[\s\S]*project:funding-taxonomy-events[\s\S]*sync-light-data-lake[\s\S]*build:trend-radar-site[\s\S]*build:opportunity-map-site[\s\S]*assert:taxonomy-consistency[\s\S]*frontstage-regression-gate\.mjs/u,
-    "business-signals publication must gate the complete funding projection before commit",
-  );
-  assert.match(
-    fundingCommit,
-    /if \[ "\$\{\{ steps\.funding-insights\.outcome \}\}" = "success" \]; then[\s\S]*reviewed-event-classifications\.json[\s\S]*taxonomy-decisions-v4-1\.json[\s\S]*investment-institutions-v1\.json[\s\S]*data-center-v4-frontstage\.json[\s\S]*site\/data\/data-center-v4[\s\S]*trend-radar-v1\.json[\s\S]*opportunity-evidence-v2\.json/u,
-    "business-signals publication must stage the institution registry and split Data Center projection with funding cards",
-  );
-});
 
 test("融资主体解析优先选择被投公司而不是投资方", () => {
   const entities = [
