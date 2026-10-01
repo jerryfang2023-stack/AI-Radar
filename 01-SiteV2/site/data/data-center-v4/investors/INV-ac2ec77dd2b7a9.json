@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-09-29",
     "role_counts": {
       "co_lead": 1,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
@@ -86,6 +86,11 @@
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-e88ecf834fa37e5a",
+        "canonical_entity_id": "",
+        "name": "Dazzle"
       },
       {
         "entity_id": "EN-245f1e177c5169cb",
@@ -105,7 +110,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-217256d6dab3c915",
+        "activity_id": "IA-fc8884bc74da6231",
+        "funding_insight_id": "FI-78c41d0e7b994533",
+        "event_ids": [
+          "EV-3b424be9d0d68b87"
+        ],
+        "company_entity_id": "EN-e88ecf834fa37e5a",
+        "company_canonical_entity_id": "",
+        "company_name": "Dazzle",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-39cbb5f315cdae11",
+            "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+            "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+            "source_content_hash": "0d32e048dc28b8dd",
+            "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+            "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e660ed664dff27a3",
         "funding_insight_id": "FI-35b63d84f1f7c2b0",
         "event_ids": [
           "EV-450f624a6a6446ce",
@@ -146,7 +191,7 @@
         ]
       },
       {
-        "activity_id": "IA-9b440f4d8304dbe8",
+        "activity_id": "IA-21d9c216548deda5",
         "funding_insight_id": "FI-3030a959696487d1",
         "event_ids": [
           "EV-12a42b0aabee236f"
@@ -186,7 +231,7 @@
         ]
       },
       {
-        "activity_id": "IA-7ed74118e3d19e3e",
+        "activity_id": "IA-2e06b6529d488018",
         "funding_insight_id": "FI-c3c9d28a06664fef",
         "event_ids": [
           "EV-b0ed8d5a37784214"
@@ -226,7 +271,7 @@
         ]
       },
       {
-        "activity_id": "IA-173c3c66c5a4a032",
+        "activity_id": "IA-d00bd0f28e82bc70",
         "funding_insight_id": "FI-9c3c02658ff94312",
         "event_ids": [
           "EV-cded77b1de2db61a"
@@ -267,6 +312,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-39cbb5f315cdae11",
+        "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+        "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+        "source_content_hash": "0d32e048dc28b8dd",
+        "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+        "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+      },
       {
         "source_id": "FISRC-9b94f245fa27a161",
         "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
@@ -345,16 +398,16 @@
           "source_id": "greycroft_investments"
         },
         {
+          "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-39cbb5f315cdae11"
+        },
+        {
           "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b94f245fa27a161"
         },
         {
           "description": "融资来源记录：Recursive Superintelligence Inc. · 轮次未披露 · 2026-05-13 · 本轮领投 · $650 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61b930049ee4e86e"
-        },
-        {
-          "description": "融资来源记录：Thoughtly · 种子轮 · 2026-04-22 · 既有投资方，本轮参投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-01d50cf4c52275e9"
         }
       ],
       "contacts": [
@@ -420,6 +473,14 @@
           "quote_hash": "c60ac9f3d066b42d62971147c4f89974f4412cded8d0edeeef8024a3caf034e6"
         },
         {
+          "source_id": "FISRC-39cbb5f315cdae11",
+          "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+          "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+          "source_content_hash": "0d32e048dc28b8dd",
+          "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+          "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+        },
+        {
           "source_id": "FISRC-9b94f245fa27a161",
           "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
           "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
@@ -434,14 +495,6 @@
           "source_content_hash": "926edc21ca4613eb",
           "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
           "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
-        },
-        {
-          "source_id": "FISRC-01d50cf4c52275e9",
-          "source_url": "https://thoughtly.com/blog/thoughtly-raises-usd8m-to-build-omnichannel-agents-for-revenue-teams",
-          "source_title": "Thoughtly 获超800万美元融资，为营收团队打造全渠道智能代理",
-          "source_content_hash": "daf6c182c79d0bb4",
-          "quote": "and returning investors Afore Capital and Greycroft",
-          "quote_hash": "8ade989f4db52563b4753209f1eea55f614d902291ce7a34a15cde0b2862c3ea"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -449,7 +502,7 @@
     },
     "translations": {
       "zh-CN": {
-        "public_profile.track_record[3].description": {
+        "public_profile.track_record[4].description": {
           "text": "融资来源记录：Recursive Superintelligence Inc. · 轮次未披露 · 2026-05-13 · 本轮领投 · $650 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_hash": "011e3682947ef1e3a7a7322b1b988831e72f82fcee26b9740fc68ff5259be5cb",
           "provider": "deepseek",

@@ -1,0 +1,918 @@
+{
+  "event_id": "EV-c2f262e118de5629",
+  "company_name": "Restate",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-8ea293fd7f4c06e7",
+    "triggered_by_event_id": "EV-c2f262e118de5629",
+    "as_of_date": "2026-10-01",
+    "company": {
+      "entity_id": "EN-5d3875c319452ecc",
+      "name": "Restate",
+      "full_name": "Restate",
+      "website": "https://restate.dev/",
+      "summary": "Restate 是一家提供持久执行运行时（durable execution runtime）的基础设施公司，帮助开发者构建具备弹性的服务、工作流和 AI 智能体，使应用在崩溃、网络中断等故障后能够自动恢复并保持状态一致。",
+      "headquarters": "柏林（Berlin）",
+      "founders": [
+        {
+          "name": "Stephan Ewen",
+          "role": "联合创始人兼 CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32de5b12bdde4fb9",
+              "quote": "When Stephan Ewen co-founded Restate in 2022 to provide durable workflow infrastructure",
+              "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+              "quote_hash": "915ca73ad182926a7556880f6de63a0562523042c72671545de2bbc001d53a51"
+            },
+            {
+              "source_id": "FISRC-bc1860b36776581f",
+              "quote": "Stephan Ewen, CEO and co-founder of Restate",
+              "source_content_hash": "d84a6d9dd1cd4299",
+              "quote_hash": "95f79088eaeecfc3c4f0630f5d63f06bade856921f3b4f294163fbe11ac55889"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Igal Shilman",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32de5b12bdde4fb9",
+              "quote": "He co-founded Restate with former colleagues from Data Artisans and Ververica: Igal Shilman and Till Rohrmann.",
+              "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+              "quote_hash": "2d3a12141d55fecd66e02c9bb73d121061b2090299616eed190ac015c43b573c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Till Rohrmann",
+          "role": "联合创始人",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32de5b12bdde4fb9",
+              "quote": "He co-founded Restate with former colleagues from Data Artisans and Ververica: Igal Shilman and Till Rohrmann.",
+              "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+              "quote_hash": "2d3a12141d55fecd66e02c9bb73d121061b2090299616eed190ac015c43b573c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Ahmed Farghal",
+          "role": "第四位联合创始人（Series A 时加入）",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32de5b12bdde4fb9",
+              "quote": "Ahmed Farghal, who was previously an engineer at Stripe and Meta, joined as the fourth co-founder at the Series A.",
+              "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+              "quote_hash": "af9bc10d1286b2113014dfaba2c1b6e817068056d6999e910f96f3b86776c56f"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-32de5b12bdde4fb9",
+          "quote": "The Berlin-based startup had set out to build an execution engine that made multistep workflows resilient to crashes and network interruptions",
+          "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+          "quote_hash": "4249b808e01847bd2814cebe0f565ab3fd56f26afb290b2c3469d15181f76ea2"
+        },
+        {
+          "source_id": "FISRC-bc1860b36776581f",
+          "quote": "Restate, founded in 2024, says it’s used by hundreds of companies, including Fortune 500 firms.",
+          "source_content_hash": "d84a6d9dd1cd4299",
+          "quote_hash": "6a4cd80ebc968528ff6278dcb07d1ffda0a0b98e9f79e68d7ab2ad428511794a"
+        }
+      ],
+      "application_entity_id": "EN-5d3875c319452ecc",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "A轮",
+      "amount": "$20 million",
+      "total_raised": "$27 million",
+      "announced_at": "2026-09-30",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "Singular",
+          "role": "本轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32de5b12bdde4fb9",
+              "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+              "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+              "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Redpoint Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32de5b12bdde4fb9",
+              "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+              "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+              "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Capital One Ventures",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32de5b12bdde4fb9",
+              "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+              "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+              "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "Redpoint Ventures",
+          "role": "种子轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-897ee0f062e50b23",
+              "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+              "source_content_hash": "01508a456a92b8fc",
+              "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Essence VC",
+          "role": "种子轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-897ee0f062e50b23",
+              "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+              "source_content_hash": "01508a456a92b8fc",
+              "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "firstminute.capital",
+          "role": "种子轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-897ee0f062e50b23",
+              "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+              "source_content_hash": "01508a456a92b8fc",
+              "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-32de5b12bdde4fb9",
+          "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+          "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+          "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
+        },
+        {
+          "source_id": "FISRC-80d17912c00c3ce1",
+          "quote": "The round brings Restate’s total capital raised to $27 million.",
+          "source_content_hash": "72ea496a58f03093",
+          "quote_hash": "36a14f5433ff54bab2f7e3e21619c271eb550489e3e3d9216137791e3402f8fb"
+        }
+      ],
+      "round_code": "series_a",
+      "round_original": "A轮",
+      "amount_original": "$20 million",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 20000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "2000 万美元"
+      },
+      "total_raised_original": "$27 million",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 27000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "2700 万美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-c2f262e118de5629",
+          "round_original": "A轮",
+          "amount": "$20 million",
+          "announced_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-32de5b12bdde4fb9",
+              "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+              "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+              "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
+            },
+            {
+              "source_id": "FISRC-80d17912c00c3ce1",
+              "quote": "The round brings Restate’s total capital raised to $27 million.",
+              "source_content_hash": "72ea496a58f03093",
+              "quote_hash": "36a14f5433ff54bab2f7e3e21619c271eb550489e3e3d9216137791e3402f8fb"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Restate",
+        "description": "Restate 是一个持久执行运行时（durable execution runtime），提供 Durable Execution、Virtual Objects、Durable Promises/Futures 等构建块，使开发者能够以普通应用代码构建具备弹性的服务、工作流和 AI 智能体，并在故障后自动恢复。",
+        "target_customers": "开发者、AI 公司、企业客户（包括财富 500 强企业）",
+        "features": [
+          "Durable Execution（workflow-as-code）",
+          "Virtual Objects 状态管理",
+          "Durable Promises/Futures 弹性通信",
+          "单二进制部署，无需外部数据库",
+          "支持 TypeScript、Python、Java、Kotlin、Go、Rust、Ruby SDK",
+          "与 AWS Lambda、Cloudflare Workers 等 FaaS 平台互操作"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-897ee0f062e50b23",
+            "quote": "Restate takes the guesswork out of building distributed applications. Core to the system is a unique take on workflows-as-code (also called Durable Execution) implemented on a specialized event log",
+            "source_content_hash": "01508a456a92b8fc",
+            "quote_hash": "f0f38c93f818322a89e9e5d1f466a5099a9b61eb962692184f73b0c89cc2082e"
+          },
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Restate is a durable execution runtime for building resilient services, workflows, and AI agents.",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "95387673bdb454622f4d1ac9aff0f068c423f286ea95db5260f400fe008629d0"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Restate Cloud",
+        "description": "Restate Cloud 是 Restate 的全托管无服务器产品，用户无需管理集群、分区或队列，即可创建 Restate 环境并连接应用。",
+        "target_customers": "希望免运维使用 Restate 的开发者与团队",
+        "features": [
+          "全托管无服务器",
+          "免费层支持两个环境",
+          "SOC 2 合规、企业 SSO、RBAC、客户端加密、HIPAA 支持"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-897ee0f062e50b23",
+            "quote": "We are equally excited to announce early access to Restate Cloud today - our fully serverless offering. No clusters, no partitions, no queues.",
+            "source_content_hash": "01508a456a92b8fc",
+            "quote_hash": "5d2116d89b5cc8488e7f5d5bd180b3c19d100b8e249af5b4a8b1921030a817b6"
+          },
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Restate Cloud Fully managed and free to start.",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "bb156430ff69dea1ea560a645e1b19f9dc3f3fa3da589ac617989b1c40fbe61e"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "Replit",
+        "industry": "软件开发 / AI 编程平台",
+        "use_case": "使用 Restate 处理其 AI 智能体平台的全部持久编排",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-32de5b12bdde4fb9",
+            "quote": "Restate has already managed to attract high-profile customers, including vibe-coding platform Replit.",
+            "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+            "quote_hash": "30f0d68959c841b47d05ec33fdaede51213eef1e00d1d97c73870f99282af27c"
+          },
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Restate now handles all durable orchestration at Replit, giving us the flexibility to rapidly expand what our agent platform can do.",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "b7f008592e150239c9775f23a1b62e9da691ee841453227c65d0352068c5574e"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Rhize",
+        "industry": "企业软件",
+        "use_case": "使用 Restate 进行持久执行",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Moving to Restate has been a game-changer for Rhize. The fine balance of simple elegance and power is brilliant.",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "196d7a76ea20e0f3dcf9f73a051fb0256e68581592ef8295d96fa8ddf36513f8"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Cinder",
+        "industry": "企业软件",
+        "use_case": "使用 Restate 构建弹性架构",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Restate is cloud native durable execution done right. The primitives are elegant and scaling is incredibly straightforward. It makes building resilient architectures too easy. Use it!",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "1ba20a9469851e894feaa654be35fcb249d03adfc56b0c25173fde4620d19fbe"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Fortune-100 US Bank",
+        "industry": "金融服务",
+        "use_case": "使用 Restate 驱动银行账户和信用卡运营的财务交易工作流",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Restate powers their bank account and credit card operations with multi-regional strong consistency.",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "9526489a85dbbe59ae02d1eb4e7371230840ff570ffc812e37e092d408b3c30d"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Dodo Payments",
+        "industry": "金融服务 / 支付",
+        "use_case": "使用 Restate 处理持久性、重试、幂等、排序和工作流",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Nothing matched what Restate offers. It handles durability, retries, idempotency, ordering, workflows—everything you'd typically face in a distributed environment.",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "4fe6e2e7308669335e9c0593cc657f199f67d80fcbe9a2b0a99f5475c76cf6c8"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [
+      {
+        "name": "Temporal",
+        "product": "Temporal 持久执行平台",
+        "scenario": "持久工作流和分布式应用编排",
+        "target_customer": "需要持久执行基础设施的企业开发者",
+        "funding_summary": "Temporal 于 2026 年 9 月宣布完成 5.5 亿美元 E 轮融资，估值 125.5 亿美元",
+        "core_difference": "Temporal 以工作流和活动为中心的应用模型，而 Restate 通过可组合的服务、工作流、键控状态、RPC、消息和队列使整个系统持久化；Restate 以单二进制运行且无需外部数据库，而 Temporal 需要外部数据库支撑。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-32de5b12bdde4fb9",
+            "quote": "The fresh capital will help Restate take on Temporal, the heavyweight in the durable infrastructure space. Temporal, which was founded in 2019, announced a $550 million Series E at a $12.55 billion valuation earlier this month.",
+            "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+            "quote_hash": "47f29627135e000552bead6303b643349f5cd428364dbab59e0c389c01cb1ce8"
+          },
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Temporal centers the application model on workflows and activities; Restate makes the wider system durable through composable services, workflows, keyed state, RPC, messaging, and queues. Restate also runs as a self-contained binary without an external database, while your services remain ordinary applications that can run on servers, containers, or serverless platforms.",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "1a4c89fa303ca47b993ffed00d897db64998ebc3e6f043cc3252ba6fb160346d"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "$20 million",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-32de5b12bdde4fb9",
+            "quote": "Restate to secure a $20 million Series A",
+            "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+            "quote_hash": "4bc3af74784455fb8a2af2fbd4cae284f2700d549793eb88f5d706309081334b"
+          }
+        ]
+      },
+      {
+        "label": "累计融资额",
+        "value": "$27 million",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-80d17912c00c3ce1",
+            "quote": "The round brings Restate’s total capital raised to $27 million.",
+            "source_content_hash": "72ea496a58f03093",
+            "quote_hash": "36a14f5433ff54bab2f7e3e21619c271eb550489e3e3d9216137791e3402f8fb"
+          }
+        ]
+      },
+      {
+        "label": "持久动作 P99 延迟开销",
+        "value": "<10ms",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "<10ms / durable action P99 latency overhead under load",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "46fcd0f5c8be8503f32363c6cb6da9325164ef9f424ba4b98b47f03f7e3fa6f2"
+          }
+        ]
+      },
+      {
+        "label": "生产环境吞吐量",
+        "value": ">100K actions/s",
+        "observed_at": "",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "> 100K actions/s In production at customers",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "b65358e1e6ae7c3bf13d86e3399091df625004d150e42a2e73c5d3e4638984f4"
+          }
+        ]
+      },
+      {
+        "label": "客户数量",
+        "value": "数百家公司",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-bc1860b36776581f",
+            "quote": "Restate, founded in 2024, says it’s used by hundreds of companies, including Fortune 500 firms.",
+            "source_content_hash": "d84a6d9dd1cd4299",
+            "quote_hash": "6a4cd80ebc968528ff6278dcb07d1ffda0a0b98e9f79e68d7ab2ad428511794a"
+          }
+        ]
+      },
+      {
+        "label": "种子轮融资金额",
+        "value": "$7 million",
+        "observed_at": "2024-06-10",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-897ee0f062e50b23",
+            "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+            "source_content_hash": "01508a456a92b8fc",
+            "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Stephan Ewen",
+        "quote": "It never was built for agents in the beginning, but it just happened to be a perfect match for all these problems that agents surface.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-32de5b12bdde4fb9",
+            "quote": "It never was built for agents in the beginning, but it just happened to be a perfect match for all these problems that agents surface",
+            "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+            "quote_hash": "8d77cb82be070b2979469b69bcd584d7fca860fa6217e0f6abb8f8a9c6f392d0"
+          }
+        ]
+      },
+      {
+        "speaker": "Stephan Ewen",
+        "quote": "If we fast-forward a couple of years, it’s one of those tools, like a database, that I think pretty much any company will have a use case for, no matter their shape and size.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-32de5b12bdde4fb9",
+            "quote": "If we fast-forward a couple of years, it’s one of those tools, like a database, that I think pretty much any company will have a use case for, no matter their shape and size",
+            "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+            "quote_hash": "685918ae13ef08cadb499265057b207994a37366e760de1bd030b566e7cac4d5"
+          }
+        ]
+      },
+      {
+        "speaker": "Michele Catasta",
+        "quote": "Restate now handles all durable orchestration at Replit, giving us the flexibility to rapidly expand what our agent platform can do.",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-b724e942c54b0962",
+            "quote": "Restate now handles all durable orchestration at Replit, giving us the flexibility to rapidly expand what our agent platform can do.",
+            "source_content_hash": "5c127cd6441e9873",
+            "quote_hash": "b7f008592e150239c9775f23a1b62e9da691ee841453227c65d0352068c5574e"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [
+        {
+          "institution": "Singular",
+          "speaker": "Henri Tilloy",
+          "speaker_role": "Partner at Singular",
+          "rationale": "Singular 的投资逻辑是 Restate 将执行、状态和通信整合到一个运行时中，开发者可以在整个应用中使用，从而建立面向智能体和分布式后端的持久基础设施层。",
+          "quote": "Henri Tilloy, Partner at Singular, said the investment thesis rests on Restate bringing execution, state and communication together in one runtime that developers can use across an application.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-8995689f79f93295",
+              "quote": "Henri Tilloy, Partner at Singular, said the investment thesis rests on Restate bringing execution, state and communication together in one runtime that developers can use across an application.",
+              "source_content_hash": "bbefc4590f768951",
+              "quote_hash": "700117a2e3290e8a47ae253f3b95a0061119d807e0f70c7a7b573815a35d37c9"
+            }
+          ]
+        }
+      ],
+      "capital_judgment": "资本押注的核心变量是：AI 智能体工作流的长时运行和不可预测路径使持久执行从可选能力变为基础设施刚需。Restate 的已验证信号包括：过去几个月签下多个六位数和七位数客户合同、获得 Replit 等知名客户、以及创始团队来自 Apache Flink 核心团队。当前融资未披露估值，但累计融资 2700 万美元，且直接对标估值 125.5 亿美元的 Temporal，说明市场对持久执行基础设施赛道给予高估值预期。证据边界：来源未披露 Restate 的 ARR、收入或估值，无法验证其财务规模；客户数量仅表述为“数百家公司”，缺乏精确数字。",
+      "validated_signals": [
+        "过去几个月签下多个六位数和七位数客户合同",
+        "获得 Replit 等知名客户，Replit 使用 Restate 处理全部持久编排",
+        "创始团队为 Apache Flink 的原始创建者，具备深厚基础设施技术积累",
+        "产品在客户生产环境中达到 >100K actions/s 吞吐量和 <10ms P99 延迟开销"
+      ],
+      "risks": [
+        "Temporal 在持久基础设施领域占据主导地位，且刚完成 5.5 亿美元 E 轮融资，资金和生态优势显著，Restate 作为规模小得多的提供商面临激烈竞争。",
+        "来源未披露 Restate 的具体收入、ARR 或估值，财务可持续性无法从公开信息验证。",
+        "客户数量仅表述为“数百家公司”，缺乏精确数字和留存数据，实际商业化深度存在不确定性。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "ai_infrastructure_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "ai_development_orchestration",
+      "use_case_ids": [
+        "software_development",
+        "productivity_enterprise_workflows"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "developer"
+      ],
+      "sector": "AI 基础设施 / 持久执行运行时",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是：AI 智能体工作流的长时运行和不可预测路径使持久执行从可选能力变为基础设施刚需。Restate 的已验证信号包括：过去几个月签下多个六位数和七位数客户合同、获得 Replit 等知名客户、以及创始团队来自 Apache Flink 核心团队。当前融资未披露估值，但累计融资 2700 万美元，且直接对标估值 125.5 亿美元的 Temporal，说明市场对持久执行基础设施赛道给予高估值预期。证据边界：来源未披露 Restate 的 ARR、收入或估值，无法验证其财务规模；客户数量仅表述为“数百家公司”，缺乏精确数字。",
+        "evidence_signals": [
+          "过去几个月签下多个六位数和七位数客户合同",
+          "获得 Replit 等知名客户，Replit 使用 Restate 处理全部持久编排",
+          "创始团队为 Apache Flink 的原始创建者，具备深厚基础设施技术积累",
+          "产品在客户生产环境中达到 >100K actions/s 吞吐量和 <10ms P99 延迟开销"
+        ],
+        "risks": [
+          "Temporal 在持久基础设施领域占据主导地位，且刚完成 5.5 亿美元 E 轮融资，资金和生态优势显著，Restate 作为规模小得多的提供商面临激烈竞争。",
+          "来源未披露 Restate 的具体收入、ARR 或估值，财务可持续性无法从公开信息验证。",
+          "客户数量仅表述为“数百家公司”，缺乏精确数字和留存数据，实际商业化深度存在不确定性。"
+        ],
+        "institutional_rationale_status": "disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Restate",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Restate Cloud",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Stephan Ewen",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Igal Shilman",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Till Rohrmann",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Ahmed Farghal",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Singular",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Redpoint Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Capital One Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Redpoint Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Essence VC",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "firstminute.capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Replit",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Rhize",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Cinder",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Fortune-100 US Bank",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Dodo Payments",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Temporal",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-c2f262e118de5629",
+        "date": "2026-09-30",
+        "title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
+        "amount": "$20 million",
+        "source_refs": [
+          "SA-f884373dba55d78c"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-32de5b12bdde4fb9",
+        "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+        "title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
+        "publisher": "techcrunch.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-01T15:58:50.453Z",
+        "content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+        "source_artifact_id": "SA-f884373dba55d78c",
+        "raw_id": "RAW-fc57b6cd6579552c"
+      },
+      {
+        "source_id": "FISRC-897ee0f062e50b23",
+        "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
+        "title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
+        "publisher": "restate.dev",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:17:18.004Z",
+        "content_hash": "01508a456a92b8fc",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-b724e942c54b0962",
+        "source_url": "https://restate.dev/",
+        "title": "Restate | The Durable Runtime for your Agents and Backends",
+        "publisher": "restate.dev",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:17:19.031Z",
+        "content_hash": "5c127cd6441e9873",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-80d17912c00c3ce1",
+        "source_url": "https://www.saasrise.com/deals/berlin-based-restate-raises-20-million-series-a-to-build-durable-infrastructure-for-ai-agents-ea330c6b-d014-46ef-994e-01e541d6a232",
+        "title": "Restate raises $20M Series A for AI agent infrastructure | SaaS M&A and VC Deals",
+        "publisher": "saasrise.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:17:24.910Z",
+        "content_hash": "72ea496a58f03093",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-bc1860b36776581f",
+        "source_url": "https://tech.eu/2026/09/30/berlin-based-restate-raises-20m/",
+        "title": "Berlin-based Restate raises $20M - Tech.eu",
+        "publisher": "tech.eu",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:17:24.747Z",
+        "content_hash": "d84a6d9dd1cd4299",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-8995689f79f93295",
+        "source_url": "https://www.unite.ai/restate-raises-20m-series-a-to-build-durable-infrastructure-for-ai-agents/",
+        "title": "Restate Raises $20M Series A to Build Durable Infrastructure for AI Agents – Unite.AI",
+        "publisher": "unite.ai",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:17:34.788Z",
+        "content_hash": "bbefc4590f768951",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-01T16:18:07.081Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-01T16:18:07.081Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 6
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "Restate",
+          "Restate Cloud"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 4,
+        "unresolved_names": [
+          "Ahmed Farghal",
+          "Igal Shilman",
+          "Stephan Ewen",
+          "Till Rohrmann"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-c2f262e118de5629"
+    ],
+    "aggregation": {
+      "key": "EN-5d3875c319452ecc|series_a",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Restate\" 2026 funding round investors",
+    "\"Restate\" $20 million funding announcement",
+    "\"Restate\" official product customers",
+    "\"Restate\" \"why we invested\"",
+    "\"Restate\" 2026 raises led by",
+    "\"Restate\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"SpaceX\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Restate\" 2026 funding round investors",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Restate\" $20 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SpaceX\" $8 million funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Restate\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Restate\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SpaceX\" official product customers",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Restate\" 2026 raises led by",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"SpaceX\" \"why we invested\"",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Restate\" founders headquarters product",
+      "status": "completed",
+      "count": 8
+    }
+  ]
+}

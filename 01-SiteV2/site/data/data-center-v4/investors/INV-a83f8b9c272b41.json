@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 6,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-02-24",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 6
     },
     "round_codes": [
@@ -116,7 +116,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-70a60a23265453dc",
+        "activity_id": "IA-dc3605785bc353e2",
         "funding_insight_id": "FI-e0e22d70a91e704e",
         "event_ids": [
           "EV-dccfca59b3e58638",
@@ -158,47 +158,7 @@
         ]
       },
       {
-        "activity_id": "IA-efc7a8d4770c66e2",
-        "funding_insight_id": "FI-4b811c030362045e",
-        "event_ids": [
-          "EV-181cd28d97c4e61d"
-        ],
-        "company_entity_id": "EN-0b79cf2de0ee6b8e",
-        "company_canonical_entity_id": "",
-        "company_name": "Groq",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$350M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 350000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3.5 亿美元"
-        },
-        "announced_at": "2026-08-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-28e142eb564f6762",
-            "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
-            "source_title": "Groq obtains $750m in funding for AI inference technology",
-            "source_content_hash": "b6f5ca4d5c31cfb3",
-            "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
-            "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-42973e09775d8d3b",
+        "activity_id": "IA-a3d1e00258f39229",
         "funding_insight_id": "FI-ed1d2ba02f527a10",
         "event_ids": [
           "EV-e70a48e36e99d57a"
@@ -238,7 +198,7 @@
         ]
       },
       {
-        "activity_id": "IA-0cc8f57f16d64b42",
+        "activity_id": "IA-94e6906f418c9e47",
         "funding_insight_id": "FI-02775e1bb32805b0",
         "event_ids": [
           "EV-a8dc5c859946f336"
@@ -278,7 +238,7 @@
         ]
       },
       {
-        "activity_id": "IA-708af95b274e7e40",
+        "activity_id": "IA-5731b6011cb67fa2",
         "funding_insight_id": "FI-082c684e1b4a88c2",
         "event_ids": [
           "EV-ef7346378fcf9746"
@@ -318,7 +278,7 @@
         ]
       },
       {
-        "activity_id": "IA-6435b79a1d8d1e3b",
+        "activity_id": "IA-ecdeaf0a51afa552",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
         "event_ids": [
           "EV-d4e44892226be468"
@@ -358,7 +318,7 @@
         ]
       },
       {
-        "activity_id": "IA-b1aba75937fff1f0",
+        "activity_id": "IA-93f6cd323e813d06",
         "funding_insight_id": "FI-e5f8a40683ba6b3e",
         "event_ids": [
           "EV-59882383f82f215d"
@@ -396,6 +356,70 @@
             "quote_hash": "caad02846f5d4ef4217968d470717a75acd8fb1c69ef69cab662153622955a93"
           }
         ]
+      },
+      {
+        "activity_id": "IA-dc0a6a94be050947",
+        "funding_insight_id": "FI-4b811c030362045e",
+        "event_ids": [
+          "EV-181cd28d97c4e61d"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-28e142eb564f6762",
+            "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+            "source_title": "Groq obtains $750m in funding for AI inference technology",
+            "source_content_hash": "b6f5ca4d5c31cfb3",
+            "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
+            "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-296146bd053beac7",
+        "funding_insight_id": "FI-41853e1ae903d50f",
+        "event_ids": [
+          "EV-34f58445170831ae"
+        ],
+        "company_entity_id": "EN-7331374f7091259f",
+        "company_canonical_entity_id": "",
+        "company_name": "Snorkel AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次联合领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6dd774496b50aaac",
+            "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+            "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+            "source_content_hash": "fc35ad6f0d7ac53d",
+            "quote": "BlackRock Details : Global asset management firm; co-led the Series C alongside Addition, and participated in the Series B.",
+            "quote_hash": "ee97da18baec35986392ca03143211bf9e04651c135abfd8ad9013c7b5af61e4"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -406,14 +430,6 @@
         "source_content_hash": "714c413ab36c1848",
         "quote": "Advent, funds and accounts managed by BlackRock as well as the Grand Duchy of Luxembourg joined the round as new investors.",
         "quote_hash": "b952b5e82744af45e69677c953c87b92547c5228ab46ab60eb90968b57012a92"
-      },
-      {
-        "source_id": "FISRC-28e142eb564f6762",
-        "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
-        "source_title": "Groq obtains $750m in funding for AI inference technology",
-        "source_content_hash": "b6f5ca4d5c31cfb3",
-        "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
-        "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
       },
       {
         "source_id": "FISRC-5514041be03e64ae",
@@ -454,6 +470,22 @@
         "source_content_hash": "d1a88dde81a4f0d1",
         "quote": "included BlackRock and SiteGround Capital as new investors",
         "quote_hash": "caad02846f5d4ef4217968d470717a75acd8fb1c69ef69cab662153622955a93"
+      },
+      {
+        "source_id": "FISRC-28e142eb564f6762",
+        "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
+        "source_title": "Groq obtains $750m in funding for AI inference technology",
+        "source_content_hash": "b6f5ca4d5c31cfb3",
+        "quote": "Groq also secured notable investments from BlackRock, Neuberger Berman, Deutsche Telekom Capital Partners, and a major mutual fund manager based on the US West Coast.",
+        "quote_hash": "ed71500dc8a1a4e18d291568de425fbe6492106f824a8a3e558236c34540a2a0"
+      },
+      {
+        "source_id": "FISRC-6dd774496b50aaac",
+        "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+        "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+        "source_content_hash": "fc35ad6f0d7ac53d",
+        "quote": "BlackRock Details : Global asset management firm; co-led the Series C alongside Addition, and participated in the Series B.",
+        "quote_hash": "ee97da18baec35986392ca03143211bf9e04651c135abfd8ad9013c7b5af61e4"
       }
     ],
     "public_profile": {

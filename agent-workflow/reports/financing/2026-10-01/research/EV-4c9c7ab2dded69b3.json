@@ -1,0 +1,956 @@
+{
+  "event_id": "EV-4c9c7ab2dded69b3",
+  "company_name": "Reco",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-2ba1a0e147b03b8f",
+    "triggered_by_event_id": "EV-4c9c7ab2dded69b3",
+    "as_of_date": "2026-10-01",
+    "company": {
+      "entity_id": "EN-324a65940c9148ba",
+      "name": "Reco",
+      "full_name": "Reco",
+      "website": "https://www.reco.ai",
+      "summary": "Reco是一家AI安全初创公司，最初主要销售用于映射和保护SaaS及AI平台的软件，现已重新定位为提供更广泛的AI智能体安全解决方案，通过上下文图谱将智能体与应用程序、人员、账户和权限关联起来，帮助安全团队了解智能体的访问范围并切断不必要的权限。",
+      "headquarters": "美国佛罗里达州Altamonte Springs；以色列特拉维夫；摩尔多瓦基希讷乌",
+      "founders": [
+        {
+          "name": "Ofer Klein",
+          "role": "联合创始人兼 CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-29a9add13789f2fb",
+              "quote": "Ofer Klein Co-Founder & CEO",
+              "source_content_hash": "989a49b9ebcbe406",
+              "quote_hash": "9912b0a46d25132b1e27a7cc0220871a9abd6dcb4286cf19ce4bb19a12a15f69"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Gal Nakash",
+          "role": "Co-Founder & CPO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-29a9add13789f2fb",
+              "quote": "Gal Nakash Co-Founder & CPO",
+              "source_content_hash": "989a49b9ebcbe406",
+              "quote_hash": "45b7d850aaecaf2933174dc8e5d1a242b4d8abed549b9b9b10d691910a68c52c"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Dr. Tal Shapira",
+          "role": "Co-Founder & CTO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-29a9add13789f2fb",
+              "quote": "Dr. Tal Shapira Co-Founder & CTO",
+              "source_content_hash": "989a49b9ebcbe406",
+              "quote_hash": "289f9cce08d212ca0152e5bcb2434e96a8d54cb03e01468872897da115575394"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5ade874e36670280",
+          "quote": "直到去年，AI安全初创公司 Reco 主要销售用于映射和保护SaaS及AI平台的软件。而现在，该公司已重新定位为一套更广泛的解决方案，通过 上下文图谱 将智能体与应用程序、人员、账户和权限关联起来",
+          "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+          "quote_hash": "fde178eaef0f2045d5ed950e9e384df8fd1dca333c1ca50b795c9d2be1f1ad18"
+        },
+        {
+          "source_id": "FISRC-29a9add13789f2fb",
+          "quote": "Reco secures AI agents and their operating environments where applications, identities, permissions, and workflows intersect.",
+          "source_content_hash": "989a49b9ebcbe406",
+          "quote_hash": "ef92452fead5a0eb5b397485a3cc4176e7c604a33f6fe8ed4469b66e58e738fa"
+        }
+      ],
+      "application_entity_id": "EN-324a65940c9148ba",
+      "canonical_entity_consistent": false
+    },
+    "financing": {
+      "round": "B轮扩展",
+      "amount": "5500万美元",
+      "total_raised": "1.4亿美元",
+      "announced_at": "2026-09-30",
+      "investor_disclosure_status": "disclosed",
+      "investors": [
+        {
+          "name": "AT&T",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ade874e36670280",
+              "quote": "作为客户之一的AT&T通过其风险投资部门参与了此次追加融资，Forestay和Quadrille Capital也参与其中。",
+              "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+              "quote_hash": "e2c58ee9e16b1bf16d080c4dafab75fb6ef8610e495b146662a79ed1a62085fa"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Forestay",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ade874e36670280",
+              "quote": "作为客户之一的AT&T通过其风险投资部门参与了此次追加融资，Forestay和Quadrille Capital也参与其中。",
+              "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+              "quote_hash": "e2c58ee9e16b1bf16d080c4dafab75fb6ef8610e495b146662a79ed1a62085fa"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Quadrille Capital",
+          "role": "本轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ade874e36670280",
+              "quote": "作为客户之一的AT&T通过其风险投资部门参与了此次追加融资，Forestay和Quadrille Capital也参与其中。",
+              "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+              "quote_hash": "e2c58ee9e16b1bf16d080c4dafab75fb6ef8610e495b146662a79ed1a62085fa"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "other_round_investors": [
+        {
+          "name": "Zeev Ventures",
+          "role": "B轮领投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d891f327f6f719c",
+              "quote": "today announced a $30 million Series B funding round led by Zeev Ventures",
+              "source_content_hash": "dade3d51c0c83d5b",
+              "quote_hash": "da579f32a77d0028d312fa013b2c9438f6c24e8b5f6e60bc42f4e9b8d40fb01f"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Insight Partners",
+          "role": "B轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d891f327f6f719c",
+              "quote": "with participation from all existing investors including Insight Partners , boldstart ventures , and Angular Ventures",
+              "source_content_hash": "dade3d51c0c83d5b",
+              "quote_hash": "ca211a78c722ca8c38527d41f26cb67e145dae43400db66839b441183ceae001"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "boldstart ventures",
+          "role": "B轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d891f327f6f719c",
+              "quote": "with participation from all existing investors including Insight Partners , boldstart ventures , and Angular Ventures",
+              "source_content_hash": "dade3d51c0c83d5b",
+              "quote_hash": "ca211a78c722ca8c38527d41f26cb67e145dae43400db66839b441183ceae001"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Angular Ventures",
+          "role": "B轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d891f327f6f719c",
+              "quote": "with participation from all existing investors including Insight Partners , boldstart ventures , and Angular Ventures",
+              "source_content_hash": "dade3d51c0c83d5b",
+              "quote_hash": "ca211a78c722ca8c38527d41f26cb67e145dae43400db66839b441183ceae001"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Workday Ventures",
+          "role": "B轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d891f327f6f719c",
+              "quote": "while adding new corporate investors Workday Ventures , TIAA Ventures , S Ventures , and Quadrille Capital",
+              "source_content_hash": "dade3d51c0c83d5b",
+              "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "TIAA Ventures",
+          "role": "B轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d891f327f6f719c",
+              "quote": "while adding new corporate investors Workday Ventures , TIAA Ventures , S Ventures , and Quadrille Capital",
+              "source_content_hash": "dade3d51c0c83d5b",
+              "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "S Ventures",
+          "role": "B轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d891f327f6f719c",
+              "quote": "while adding new corporate investors Workday Ventures , TIAA Ventures , S Ventures , and Quadrille Capital",
+              "source_content_hash": "dade3d51c0c83d5b",
+              "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Quadrille Capital",
+          "role": "B轮参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-0d891f327f6f719c",
+              "quote": "while adding new corporate investors Workday Ventures , TIAA Ventures , S Ventures , and Quadrille Capital",
+              "source_content_hash": "dade3d51c0c83d5b",
+              "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5ade874e36670280",
+          "quote": "Reco融资5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+          "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+          "quote_hash": "a2fa0bc36f861af97d2e33f189609531faa0b789796664f1f26cf8c216476971"
+        },
+        {
+          "source_id": "FISRC-5ade874e36670280",
+          "quote": "该初创公司周二宣布已完成5500万美元融资，这是在今年2月3000万美元B轮融资基础上的追加。作为客户之一的AT&T通过其风险投资部门参与了此次追加融资，Forestay和Quadrille Capital也参与其中。",
+          "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+          "quote_hash": "e09a25e18847b0dad8fded7f5720e700ecc67d79fb89f3870409bd2fadc7fd0e"
+        },
+        {
+          "source_id": "FISRC-5ade874e36670280",
+          "quote": "此次新融资使Reco的融资总额达到1.4亿美元。",
+          "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+          "quote_hash": "d341ac407c28a57f9d7fb8258c424d96158f9e012895f46e58d58edb0a1e6f13"
+        }
+      ],
+      "round_code": "series_b_extension",
+      "round_original": "B轮追加融资",
+      "amount_original": "5500万美元",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 55000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "5500 万美元"
+      },
+      "total_raised_original": "1.4亿美元",
+      "total_raised_normalized": {
+        "currency": "USD",
+        "value": 140000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "1.4 亿美元"
+      },
+      "risk_markers": [],
+      "disclosures": [
+        {
+          "event_id": "EV-4c9c7ab2dded69b3",
+          "round_original": "B轮追加融资",
+          "amount": "5500万美元",
+          "announced_at": "2026-09-30",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-5ade874e36670280",
+              "quote": "Reco融资5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+              "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+              "quote_hash": "a2fa0bc36f861af97d2e33f189609531faa0b789796664f1f26cf8c216476971"
+            },
+            {
+              "source_id": "FISRC-5ade874e36670280",
+              "quote": "该初创公司周二宣布已完成5500万美元融资，这是在今年2月3000万美元B轮融资基础上的追加。作为客户之一的AT&T通过其风险投资部门参与了此次追加融资，Forestay和Quadrille Capital也参与其中。",
+              "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+              "quote_hash": "e09a25e18847b0dad8fded7f5720e700ecc67d79fb89f3870409bd2fadc7fd0e"
+            },
+            {
+              "source_id": "FISRC-5ade874e36670280",
+              "quote": "此次新融资使Reco的融资总额达到1.4亿美元。",
+              "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+              "quote_hash": "d341ac407c28a57f9d7fb8258c424d96158f9e012895f46e58d58edb0a1e6f13"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "disclosed"
+    },
+    "products": [
+      {
+        "name": "Reco Platform",
+        "description": "Reco平台将智能体安全、身份治理和威胁检测整合在一起，通过上下文图谱将智能体与应用程序、人员、账户和权限关联起来，让安全团队能够清楚了解智能体可以触及的范围，并切断其不需要的访问权限。",
+        "target_customers": "企业安全团队、首席信息安全官（CISO）",
+        "features": [
+          "AI智能体发现",
+          "态势管理与合规",
+          "数据暴露管理",
+          "身份与访问治理",
+          "应用发现与治理",
+          "威胁检测与响应",
+          "影子AI发现",
+          "上下文图谱"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "该公司已重新定位为一套更广泛的解决方案，通过 上下文图谱 将智能体与应用程序、人员、账户和权限关联起来，让安全团队能够清楚了解智能体可以触及的范围，并切断其不需要的访问权限。",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "79fce898e9fa4bcebe47713c1938c0a61279abf67582b521768d95fd2dcad285"
+          },
+          {
+            "source_id": "FISRC-29a9add13789f2fb",
+            "quote": "Reco is the only platform that brings agent security, identity governance, and threat detection together in one place.",
+            "source_content_hash": "989a49b9ebcbe406",
+            "quote_hash": "7eb463ac19fef02b471f8f70527126000b536d107d0f54daf654782d8b8dac9b"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [
+      {
+        "name": "AT&T",
+        "industry": "电信",
+        "use_case": "AI智能体安全",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "作为客户之一的AT&T通过其风险投资部门参与了此次追加融资",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "f3e07aea0dd2b469e069a9c3c3803d090ffa281459d17eed886b421b0b035ebf"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Tampa General Hospital",
+        "industry": "医疗健康",
+        "use_case": "智能体采用治理",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5546fc90d6462368",
+            "quote": "Tampa General Hospital: Governing Agent Adoption at Scale",
+            "source_content_hash": "40ba7cbe67d6fd50",
+            "quote_hash": "e9475d505be57f6f796cd3a6f3a1c54c2a675f760d8af240198ebd72f515485a"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Exela Pharma Sciences",
+        "industry": "制药制造",
+        "use_case": "SaaS与AI可见性",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5546fc90d6462368",
+            "quote": "Exela Pharma Sciences Gains SaaS & AI Visibility Across a Regulated Environment",
+            "source_content_hash": "40ba7cbe67d6fd50",
+            "quote_hash": "148a41668322bcd01f8ac3266d842da3593e253cec7df521e2076277c40a8150"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Banco BS2",
+        "industry": "银行",
+        "use_case": "并购中的SaaS安全可见性",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5546fc90d6462368",
+            "quote": "Banco BS2 Uses Reco to Gain Visibility into SaaS Security During Mergers & Acquisitions",
+            "source_content_hash": "40ba7cbe67d6fd50",
+            "quote_hash": "7c58746503f87ef49b1c811b91c6a8211dd0d6e3fa02d5dccd33651be1b78b6a"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Waste Management",
+        "industry": "环境服务",
+        "use_case": "安全流程自动化",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0d891f327f6f719c",
+            "quote": "Since partnering with Reco, we've automated our most time-consuming security processes, freeing up our team to focus on strategic initiatives rather than manual work",
+            "source_content_hash": "dade3d51c0c83d5b",
+            "quote_hash": "b4c1313c3bfa47e74917c7226c08cc350171c2a5a773118be11982138e41f639"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "comparisons": [
+      {
+        "name": "HiddenLayer",
+        "product": "AI安全解决方案",
+        "scenario": "智能体进入生产环境后接触关键系统和敏感资产的安全防护",
+        "target_customer": "企业安全团队",
+        "funding_summary": "",
+        "core_difference": "HiddenLayer强调智能体进入生产环境后成本和风险规模从理论层面迅速变为全面现实，其联合创始人兼首席执行官表示有超过50家客户的AI智能体已在生产环境中接触关键系统和敏感资产；Reco则通过上下文图谱将智能体与应用程序、人员、账户和权限关联，并强调对SaaS应用及其AI智能体功能的覆盖能力。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "安全初创公司 HiddenLayer 的联合创始人兼首席执行官 克里斯·塞斯蒂托 本月早些时候告诉我，当智能体进入生产环境后，其成本和风险的规模会从理论层面\"迅速变为全面现实\"，他表示自己有超过50家客户的AI智能体已经在生产环境中接触关键系统和敏感资产。",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "152af31d30cb2d652f3802818715be9d8cd3be5d354da679307ad7c9ac76129f"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "Cymphony",
+        "product": "AI安全解决方案",
+        "scenario": "发现可被AI工具和智能体访问的文件",
+        "target_customer": "企业安全团队",
+        "funding_summary": "",
+        "core_difference": "Cymphony在一家美国上市公司中发现约8.5万个文件已可被AI工具和智能体访问；Reco则在一家财富100强客户处发现2.1万个该公司自己都不知道存在的智能体，并在一家大型金融服务客户处识别出离职员工设置的、可访问Salesforce并将数据分享给无法监控域名的智能体。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "另一家AI初创公司 Cymphony 表示，在一家美国上市公司中，他们发现约有8.5万个文件已经可以被AI工具和智能体访问。",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "cc1019a0dcb4c3ddc7179664a627ef2abdcba9aad67fa4760109543f0b3aa55e"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "CrowdStrike",
+        "product": "智能体运行设备上的检测与响应控制系统",
+        "scenario": "在智能体运行的设备上构建检测与响应控制系统",
+        "target_customer": "企业安全团队",
+        "funding_summary": "",
+        "core_difference": "CrowdStrike在智能体运行的设备上构建检测与响应控制系统；Reco则通过上下文图谱将智能体与应用程序、人员、账户和权限关联起来，让安全团队了解智能体可触及范围并切断不必要访问权限。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "还有一些公司，比如CrowdStrike，正在智能体运行的设备上构建检测与响应控制系统",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "1b63751046473d1a186439b994e2bd4f0dafed51ed542fcc5190c8245434bea1"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "metrics": [
+      {
+        "label": "融资总额",
+        "value": "1.4亿美元",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "此次新融资使Reco的融资总额达到1.4亿美元。",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "d341ac407c28a57f9d7fb8258c424d96158f9e012895f46e58d58edb0a1e6f13"
+          }
+        ]
+      },
+      {
+        "label": "客户数量",
+        "value": "100多家",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "该初创公司目前拥有100多家客户",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "f3f65d640527c13baa9afa1ef2c451bb39aa96b33ae3d0fd4888c18397d19f6b"
+          }
+        ]
+      },
+      {
+        "label": "年度经常性收入",
+        "value": "两位数百万美元级别",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "公司目前的年度经常性收入达到\"两位数百万美元\"级别",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "477d1b819da74a41163f66de61f37725978c8b128b6bf2d9c88ffaf0f51a07d2"
+          }
+        ]
+      },
+      {
+        "label": "应用集成数量",
+        "value": "280多个",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "该公司目前与280多个应用程序建立了集成",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "a591bde7e1e51f264bf589b224cba3798193810919d9729a3462ff268a061740"
+          }
+        ]
+      },
+      {
+        "label": "金融服务客户占比",
+        "value": "约40%",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "金融服务类公司占其业务的约40%",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "6b48b0a6c5bcb195db3d59fe770f22e8b70be51fee81679a1f5f69b17cf99fad"
+          }
+        ]
+      },
+      {
+        "label": "财富100强客户发现的未知智能体数量",
+        "value": "2.1万个",
+        "observed_at": "2026-09-30",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "在该公司一家财富100强客户处，Reco的平台发现了2.1万个该公司自己都不知道存在的智能体。",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "d3280d7afbcc7194c82c0faa4312e4d7bce7de952aac7770258fb7cf0b17a155"
+          }
+        ]
+      },
+      {
+        "label": "2025年ARR增长",
+        "value": "400%",
+        "observed_at": "2026-02-10",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0d891f327f6f719c",
+            "quote": "After growing ARR by 400% in 2025",
+            "source_content_hash": "dade3d51c0c83d5b",
+            "quote_hash": "8985f4fc62c5dd26844ebf4ff8591b73c72e5ce636186f0413280676a8be00f0"
+          }
+        ]
+      },
+      {
+        "label": "2024年同比增长",
+        "value": "500%",
+        "observed_at": "2026-02-10",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-0d891f327f6f719c",
+            "quote": "After growing 500% year-over-year in 2024",
+            "source_content_hash": "dade3d51c0c83d5b",
+            "quote_hash": "cd76b134ec60aa0c681932f298b44276bc99d7ec9b3c29dd2ec0d4fcfe66e784"
+          }
+        ]
+      }
+    ],
+    "quotes": [
+      {
+        "speaker": "Ofer Klein",
+        "quote": "目前市场对智能体安全的需求，不仅仅局限于智能体本身，而是关乎整个端到端的生态系统。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-5ade874e36670280",
+            "quote": "目前市场对智能体安全的需求，不仅仅局限于智能体本身，而是关乎整个端到端的生态系统。",
+            "source_content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+            "quote_hash": "81fc4b634252a8e3ae3258ee849c6d7d9d52864af858bc0e20bf3347a1d60fdd"
+          }
+        ]
+      }
+    ],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是企业AI智能体部署速度超过跟踪管理能力所催生的安全治理需求。Reco的已验证信号包括：100多家客户、年度经常性收入达两位数百万美元级别且预计今年增长两倍、金融服务客户占比约40%、与280多个应用程序建立集成、在财富100强客户处发现2.1万个未知智能体。估值方面，克莱因表示自今年2月B轮融资以来公司估值已翻了一倍以上，达到数亿美元高位区间，但未披露具体数字。证据边界：估值和ARR均为创始人模糊表述，未经独立审计确认；本轮追加融资的投资方仅AT&T、Forestay和Quadrille Capital被明确披露，其他历史投资方是否继续参与本轮未在来源中确认。",
+      "validated_signals": [
+        "拥有100多家客户，金融服务类公司占业务约40%",
+        "年度经常性收入达到两位数百万美元级别，预计今年增长两倍",
+        "与280多个应用程序建立集成，新集成可在数天内完成",
+        "在财富100强客户处发现2.1万个企业自身不知道存在的智能体",
+        "2025年ARR增长400%，2024年同比增长500%"
+      ],
+      "risks": [
+        "AI智能体安全赛道竞争激烈，来源指出至少有二十多家公司在销售某种形式的AI智能体安全产品，产品承诺高度相似，Reco的差异化优势尚未被独立验证",
+        "估值和ARR数据均来自创始人模糊表述，缺乏独立审计或第三方确认，存在信息不对称风险",
+        "Reco从SaaS安全向AI智能体安全的重新定位时间较短，新定位的市场接受度和产品成熟度仍需时间验证"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "security_software",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "observability_evaluation",
+      "market_application_id": "ai_observability_governance",
+      "use_case_ids": [
+        "security_operations"
+      ],
+      "industry_ids": [
+        "financial_services"
+      ],
+      "target_user_ids": [
+        "business_user"
+      ],
+      "sector": "AI安全",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是企业AI智能体部署速度超过跟踪管理能力所催生的安全治理需求。Reco的已验证信号包括：100多家客户、年度经常性收入达两位数百万美元级别且预计今年增长两倍、金融服务客户占比约40%、与280多个应用程序建立集成、在财富100强客户处发现2.1万个未知智能体。估值方面，克莱因表示自今年2月B轮融资以来公司估值已翻了一倍以上，达到数亿美元高位区间，但未披露具体数字。证据边界：估值和ARR均为创始人模糊表述，未经独立审计确认；本轮追加融资的投资方仅AT&T、Forestay和Quadrille Capital被明确披露，其他历史投资方是否继续参与本轮未在来源中确认。",
+        "evidence_signals": [
+          "拥有100多家客户，金融服务类公司占业务约40%",
+          "年度经常性收入达到两位数百万美元级别，预计今年增长两倍",
+          "与280多个应用程序建立集成，新集成可在数天内完成",
+          "在财富100强客户处发现2.1万个企业自身不知道存在的智能体",
+          "2025年ARR增长400%，2024年同比增长500%"
+        ],
+        "risks": [
+          "AI智能体安全赛道竞争激烈，来源指出至少有二十多家公司在销售某种形式的AI智能体安全产品，产品承诺高度相似，Reco的差异化优势尚未被独立验证",
+          "估值和ARR数据均来自创始人模糊表述，缺乏独立审计或第三方确认，存在信息不对称风险",
+          "Reco从SaaS安全向AI智能体安全的重新定位时间较短，新定位的市场接受度和产品成熟度仍需时间验证"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "Reco Platform",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Ofer Klein",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Gal Nakash",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "Dr. Tal Shapira",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "AT&T",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Forestay",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_round",
+        "target_kind": "organization",
+        "research_name": "Quadrille Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Zeev Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Insight Partners",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "boldstart ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Angular Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Workday Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "TIAA Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "S Ventures",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Quadrille Capital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "AT&T",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Tampa General Hospital",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Exela Pharma Sciences",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Banco BS2",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "public_customer_case",
+        "target_kind": "organization",
+        "research_name": "Waste Management",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "HiddenLayer",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Cymphony",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "CrowdStrike",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-4c9c7ab2dded69b3",
+        "date": "2026-09-30",
+        "title": "Reco融资5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+        "amount": "5500万美元",
+        "source_refs": [
+          "SA-832953c53dac060a"
+        ]
+      },
+      {
+        "event_id": "EV-82c07208217f2af7",
+        "date": "2026-09-29",
+        "title": "Reco 融资 5500 万美元，AI 智能体安全初创公司涌入市场",
+        "amount": "$55 million",
+        "source_refs": [
+          "SA-4fb865d12b57ae6a"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-5ade874e36670280",
+        "source_url": "https://news.qq.com/rain/a/20260930A000JE00",
+        "title": "Reco融资5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+        "publisher": "news.qq.com",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-01T15:59:36.243Z",
+        "content_hash": "23aff7d74a63b2c1fed351381781d5c03e7473494fc04b0c16b1599a335efaf7",
+        "source_artifact_id": "SA-832953c53dac060a",
+        "raw_id": "RAW-0d1bc6a3942dfd1e"
+      },
+      {
+        "source_id": "FISRC-0d891f327f6f719c",
+        "source_url": "https://www.reco.ai/blog/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for-saas-ai-security-among-enterprises",
+        "title": "Reco Raises $30M Series B to Secure SaaS and AI Environments",
+        "publisher": "reco.ai",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:20:36.365Z",
+        "content_hash": "dade3d51c0c83d5b",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-5546fc90d6462368",
+        "source_url": "https://www.reco.ai/customers",
+        "title": "Customer Stories: How Enterprises Secure AI with Reco",
+        "publisher": "reco.ai",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:20:35.953Z",
+        "content_hash": "40ba7cbe67d6fd50",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-29a9add13789f2fb",
+        "source_url": "https://www.reco.ai/about-us",
+        "title": "About Reco: Securing the Enterprise AI Ecosystem",
+        "publisher": "reco.ai",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-01T16:20:36.589Z",
+        "content_hash": "989a49b9ebcbe406",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-01T16:21:16.056Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-01T16:21:16.056Z",
+    "customer_research": {
+      "status": "verified_customers_found",
+      "verified_customer_count": 5,
+      "searched_source_count": 4
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 1,
+        "unresolved_names": [
+          "Reco Platform"
+        ]
+      },
+      "founders": {
+        "linked": 0,
+        "total": 3,
+        "unresolved_names": [
+          "Dr. Tal Shapira",
+          "Gal Nakash",
+          "Ofer Klein"
+        ]
+      }
+    },
+    "source_event_ids": [
+      "EV-4c9c7ab2dded69b3"
+    ],
+    "aggregation": {
+      "key": "EN-324a65940c9148ba|series_b_extension",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"Reco\" 2026 funding round investors",
+    "\"Reco\" 5500万美元 funding announcement",
+    "\"Reco\" official product customers",
+    "\"Reco\" \"why we invested\"",
+    "\"Reco\" 2026 raises led by",
+    "\"Reco\" founders headquarters product"
+  ],
+  "attempts": [
+    {
+      "provider": "cache",
+      "query": "\"Reco\" 2026 funding round investors",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"Reco\" 5500万美元 funding announcement",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"Reco\" official product customers",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"Reco\" \"why we invested\"",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"Reco\" 2026 raises led by",
+      "status": "cached",
+      "count": 8
+    },
+    {
+      "provider": "cache",
+      "query": "\"Reco\" founders headquarters product",
+      "status": "cached",
+      "count": 8
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-01",
-    "latest_disclosed_at": "2026-08-01",
+    "latest_disclosed_at": "2026-09-29",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e88ecf834fa37e5a",
+        "canonical_entity_id": "",
+        "name": "Dazzle"
+      },
       {
         "entity_id": "EN-5f5ed85925074c92",
         "canonical_entity_id": "",
@@ -86,7 +91,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-e825b703371906ce",
+        "activity_id": "IA-d4d8d64476b6b947",
+        "funding_insight_id": "FI-78c41d0e7b994533",
+        "event_ids": [
+          "EV-3b424be9d0d68b87"
+        ],
+        "company_entity_id": "EN-e88ecf834fa37e5a",
+        "company_canonical_entity_id": "",
+        "company_name": "Dazzle",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-39cbb5f315cdae11",
+            "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+            "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+            "source_content_hash": "0d32e048dc28b8dd",
+            "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+            "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9e6d3dc201b81023",
         "funding_insight_id": "FI-035c211b764aa7fa",
         "event_ids": [
           "EV-268e5c3d36e3ed28"
@@ -128,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-39cbb5f315cdae11",
+        "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+        "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+        "source_content_hash": "0d32e048dc28b8dd",
+        "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+        "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+      },
+      {
         "source_id": "FISRC-e6ee0cd472bfb792",
         "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
         "source_title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
@@ -141,10 +194,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Offline Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Offline Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-39cbb5f315cdae11"
+        },
         {
           "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e6ee0cd472bfb792"
@@ -152,6 +209,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-39cbb5f315cdae11",
+          "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+          "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+          "source_content_hash": "0d32e048dc28b8dd",
+          "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+          "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+        },
         {
           "source_id": "FISRC-e6ee0cd472bfb792",
           "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",

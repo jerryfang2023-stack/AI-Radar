@@ -449,6 +449,13 @@ test("valuation-of and valued-at wording cannot become round proceeds", () => {
   }
 });
 
+test("a historical valuation before current proceeds does not become the new round amount", () => {
+  const event = { object:'$1B Series C at a $10B valuation', metrics:['$2.5 billion','$1 billion','$10 billion'], claim_refs:['CL-CURRENT'] };
+  const claims = [{ claim_id:'CL-CURRENT', claim_type:'funding', verification_status:'accepted', source_quote:'Instinct announced a fundraise that valued it at $2.5 billion, and now the company has already raised another $1 billion from investors, valuing the company at $10 billion.' }];
+  assert.equal(canonicalFundingEventAmount(event, claims), '$1 billion');
+  assert.equal(canonicalFundingEventAmount({object:'fundraise valuing the startup at $10 billion',metrics:['$10 billion']}), '');
+});
+
 test("fundraising talks remain ineligible even when described as a funding round", () => {
   const event = {
     event_type: "funding",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -73,9 +73,9 @@
     "classificationRefs": [
       "TX-product_form-enterprise_software_platform",
       "TX-target_user-business_user",
+      "TX-use_case-hr_workforce",
       "TX-ai_market_category-enterprise_applications",
       "TX-industry-retail_ecommerce",
-      "TX-use_case-hr_workforce",
       "TX-industry-food_hospitality",
       "TX-ai_market_subcategory-hr"
     ],
@@ -310,6 +310,7 @@
       "valueId": "enterprise_software_platform",
       "eventIds": [
         "EV-f2950d2104e97163",
+        "EV-bbea3352983c2033",
         "EV-0d0b83c319d971b0",
         "EV-4a045d3f9026286c",
         "EV-be364dc6883ec94b",
@@ -508,6 +509,7 @@
       ],
       "entityIds": [
         "EN-50d7f4250bdd8888",
+        "EN-f395aeb2c6e6abc8",
         "EN-ef5cac7907b28194",
         "EN-8c15a763882d4862",
         "EN-5ee1e4de588a016a",
@@ -1406,6 +1408,34 @@
       "lastSeen": "2026-10-01"
     },
     {
+      "id": "TX-use_case-hr_workforce",
+      "name": "人力与员工体验",
+      "nodeType": "use_case",
+      "typeLabel": "应用场景",
+      "valueId": "hr_workforce",
+      "eventIds": [
+        "EV-55581be112058bd5",
+        "EV-4a045d3f9026286c",
+        "EV-2a78dd5feb40a78a",
+        "EV-9781e67076f4e06b",
+        "EV-696ff69f11f66191",
+        "EV-765185b9e33dde47",
+        "EV-7e1624d7df300713",
+        "EV-536b7d289e7209c1"
+      ],
+      "entityIds": [
+        "EN-8c15a763882d4862",
+        "EN-2be663431f007250",
+        "EN-4eec97c17bca1de2",
+        "EN-049b3253f4a8e2eb",
+        "EN-61b6bf408b3b086e"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-06-08",
+      "lastSeen": "2026-10-01"
+    },
+    {
       "id": "TX-ai_market_category-enterprise_applications",
       "name": "企业级应用",
       "nodeType": "ai_market_category",
@@ -1849,33 +1879,6 @@
       "hardwareIds": [],
       "firstSeen": "2023-06-28",
       "lastSeen": "2026-09-28"
-    },
-    {
-      "id": "TX-use_case-hr_workforce",
-      "name": "人力与员工体验",
-      "nodeType": "use_case",
-      "typeLabel": "应用场景",
-      "valueId": "hr_workforce",
-      "eventIds": [
-        "EV-4a045d3f9026286c",
-        "EV-2a78dd5feb40a78a",
-        "EV-9781e67076f4e06b",
-        "EV-696ff69f11f66191",
-        "EV-765185b9e33dde47",
-        "EV-7e1624d7df300713",
-        "EV-536b7d289e7209c1"
-      ],
-      "entityIds": [
-        "EN-8c15a763882d4862",
-        "EN-2be663431f007250",
-        "EN-4eec97c17bca1de2",
-        "EN-049b3253f4a8e2eb",
-        "EN-61b6bf408b3b086e"
-      ],
-      "fdeIds": [],
-      "hardwareIds": [],
-      "firstSeen": "2026-06-08",
-      "lastSeen": "2026-09-24"
     },
     {
       "id": "TX-industry-food_hospitality",

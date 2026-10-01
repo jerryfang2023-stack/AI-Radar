@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -65,7 +65,7 @@
     "collection_status": "evidence_backed",
     "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
@@ -91,12 +91,7 @@
         "name": "Cognition AI"
       },
       {
-        "entity_id": "EN-b4c73396844f7d05",
-        "canonical_entity_id": "",
-        "name": "Instinct"
-      },
-      {
-        "entity_id": "EN-26e59d6a3c92de80",
+        "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
       },
@@ -113,12 +108,13 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-62d090501b0f0f98",
-        "funding_insight_id": "FI-1b6dd112c647d4a1",
+        "activity_id": "IA-2564474cc866c8f4",
+        "funding_insight_id": "FI-4b143304af694a92",
         "event_ids": [
-          "EV-35fa913e4709b4d6"
+          "EV-35fa913e4709b4d6",
+          "EV-861d4440dcbb9b09"
         ],
-        "company_entity_id": "EN-b4c73396844f7d05",
+        "company_entity_id": "FICO-instinct",
         "company_canonical_entity_id": "",
         "company_name": "Instinct",
         "round": "C轮",
@@ -146,54 +142,14 @@
             "source_id": "FISRC-560cbbccadfe271d",
             "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
             "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-            "source_content_hash": "7430813f0a12b226",
-            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-            "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+            "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
           }
         ]
       },
       {
-        "activity_id": "IA-a52706832f830afb",
-        "funding_insight_id": "FI-1b6dd112c647d4a1",
-        "event_ids": [
-          "EV-35fa913e4709b4d6"
-        ],
-        "company_entity_id": "EN-b4c73396844f7d05",
-        "company_canonical_entity_id": "",
-        "company_name": "Instinct",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "$1B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿美元"
-        },
-        "announced_at": "2026-09-28",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "Series B 联合领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-70f948c95dacb2f0",
-            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-            "source_content_hash": "0773286daf5bf525",
-            "quote": "it co-led the $250 million Series B in August with Index Ventures",
-            "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-0582be88f7f3a6a7",
+        "activity_id": "IA-d9924d1ebf89db62",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -233,12 +189,12 @@
         ]
       },
       {
-        "activity_id": "IA-838ddc558c4a241d",
-        "funding_insight_id": "FI-e57c1a5088b84f89",
+        "activity_id": "IA-c9e2fe4b41120547",
+        "funding_insight_id": "FI-d0c7f81818282df9",
         "event_ids": [
           "EV-276878c26b2a06dc"
         ],
-        "company_entity_id": "EN-26e59d6a3c92de80",
+        "company_entity_id": "FICO-instinct",
         "company_canonical_entity_id": "",
         "company_name": "Instinct",
         "round": "B轮",
@@ -273,7 +229,7 @@
         ]
       },
       {
-        "activity_id": "IA-bb28bd4d46cb911d",
+        "activity_id": "IA-673c8f7430e4d222",
         "funding_insight_id": "FI-94d3afbe69796cf3",
         "event_ids": [
           "EV-c538fb9a61735afc"
@@ -313,7 +269,7 @@
         ]
       },
       {
-        "activity_id": "IA-dd337745a5588950",
+        "activity_id": "IA-b53c3a62a022430a",
         "funding_insight_id": "FI-8a42f200f5caa9f3",
         "event_ids": [
           "EV-259566f35ea4f66d"
@@ -351,6 +307,39 @@
             "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f3bc324f9e7a7aee",
+        "funding_insight_id": "FI-4b143304af694a92",
+        "event_ids": [
+          "EV-35fa913e4709b4d6",
+          "EV-861d4440dcbb9b09"
+        ],
+        "company_entity_id": "FICO-instinct",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series B 联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6ffdf43efe75ccde",
+            "source_url": "https://multiples.vc/private-comps/instinct",
+            "source_title": "Instinct Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "ae9ae5e9661bb061",
+            "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
+            "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -358,17 +347,9 @@
         "source_id": "FISRC-560cbbccadfe271d",
         "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
         "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-        "source_content_hash": "7430813f0a12b226",
-        "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-        "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
-      },
-      {
-        "source_id": "FISRC-70f948c95dacb2f0",
-        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-        "source_content_hash": "0773286daf5bf525",
-        "quote": "it co-led the $250 million Series B in August with Index Ventures",
-        "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
+        "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+        "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+        "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
       },
       {
         "source_id": "FISRC-61aa8db010b34dfa",
@@ -401,6 +382,14 @@
         "source_content_hash": "8e63b4f9948a4c5f",
         "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
         "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+      },
+      {
+        "source_id": "FISRC-6ffdf43efe75ccde",
+        "source_url": "https://multiples.vc/private-comps/instinct",
+        "source_title": "Instinct Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "ae9ae5e9661bb061",
+        "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
+        "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
       }
     ],
     "public_profile": {
@@ -516,9 +505,9 @@
           "source_id": "FISRC-560cbbccadfe271d",
           "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
           "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-          "source_content_hash": "7430813f0a12b226",
-          "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-          "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+          "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+          "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+          "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
         },
         {
           "source_id": "FISRC-61aa8db010b34dfa",
@@ -545,6 +534,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[5].role": {
+          "text": "Series B 联合领投",
+          "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:28.584Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "TechCrunch报道列举 Benchmark 对 eBay、Snap、Uber、Twitter 的早期投资。",
           "source_hash": "448b35a89f4720aa59850c61f085da233cb2981693d002d30752a59398ba7205",

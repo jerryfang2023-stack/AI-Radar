@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-de4474127e11c88b",
+        "activity_id": "IA-14db1605a27568c4",
         "funding_insight_id": "FI-511e1278ab2c4e0e",
         "event_ids": [
           "EV-34255348e97ca5fe"
@@ -395,6 +395,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "基于机构官网或机构本人公开资料核验；机构自述业绩和规模已注明口径。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Dan Morehead 创立 Pantera Capital。",
+          "source_hash": "9bff2ece0e584e004d16578c62d510b7817a550f10696619c3371d53eb38164a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:33.900Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "官网称 Pantera 自 2013 年以来参与约 210 项投资，并主导其中约一半；Paul Veradittakit 个人简介列举 Circle、Alchemy、Amber、Arbitrum、Ondo、Wintermute、M^0 和 TON 等投资案例。",
+          "source_hash": "b8c82b832a54a97a98f59ce9b9f6b7ad491386b04d9a3743b8c423991ef54a79",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:33.900Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "曾在 Julian Robertson 领导的 Tiger Management 担任宏观交易负责人和 CFO。",
+          "source_hash": "c96e62802e2f41cf4ff8b750c7bf1cf5b7086f8075c14354d8561a060dc8c39d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:33.900Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

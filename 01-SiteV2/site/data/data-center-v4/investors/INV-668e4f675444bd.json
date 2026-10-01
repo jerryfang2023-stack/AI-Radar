@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-09-22",
     "latest_disclosed_at": "2026-09-22",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -86,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-d0a062219d77d5d7",
+        "activity_id": "IA-652e750cdcd4cae6",
         "funding_insight_id": "FI-a83cd8c83852046e",
         "event_ids": [
           "EV-bba3677d51b85918"
@@ -124,6 +125,38 @@
             "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
           }
         ]
+      },
+      {
+        "activity_id": "IA-04bfa9fb5ecf53e1",
+        "funding_insight_id": "FI-41853e1ae903d50f",
+        "event_ids": [
+          "EV-34f58445170831ae"
+        ],
+        "company_entity_id": "EN-7331374f7091259f",
+        "company_canonical_entity_id": "",
+        "company_name": "Snorkel AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6dd774496b50aaac",
+            "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+            "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+            "source_content_hash": "fc35ad6f0d7ac53d",
+            "quote": "Addition Details : New York-based venture capital firm; led both the Series C and Series D rounds.",
+            "quote_hash": "b31cb85a34c52d3347641c50897a43ec64837f9979d1b158b0bc6b86c4d9bddc"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "ad04baf1994708d0",
         "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
         "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
+      },
+      {
+        "source_id": "FISRC-6dd774496b50aaac",
+        "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+        "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+        "source_content_hash": "fc35ad6f0d7ac53d",
+        "quote": "Addition Details : New York-based venture capital firm; led both the Series C and Series D rounds.",
+        "quote_hash": "b31cb85a34c52d3347641c50897a43ec64837f9979d1b158b0bc6b86c4d9bddc"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16afc5791c45315a"
+        },
+        {
+          "description": "融资来源记录：Snorkel AI · 历史轮次未披露 · 历史轮次领投方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6dd774496b50aaac"
         }
       ],
       "contacts": [],
@@ -159,6 +204,14 @@
           "source_content_hash": "ad04baf1994708d0",
           "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
           "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
+        },
+        {
+          "source_id": "FISRC-6dd774496b50aaac",
+          "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
+          "source_title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
+          "source_content_hash": "fc35ad6f0d7ac53d",
+          "quote": "Addition Details : New York-based venture capital firm; led both the Series C and Series D rounds.",
+          "quote_hash": "b31cb85a34c52d3347641c50897a43ec64837f9979d1b158b0bc6b86c4d9bddc"
         }
       ],
       "last_verified_at": "2026-09-25"

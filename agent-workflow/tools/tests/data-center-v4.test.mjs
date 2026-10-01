@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { writeBundle } from "../build-data-center-v4.mjs";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { isReusableBusinessSignalsRun } from "../lib/business-signals-checkpoint.mjs";
@@ -17,6 +19,21 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
+
+test('rebuilding raw intake preserves accepted reviews only for retained events', () => {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'reviewed-facts-'));
+  try {
+    const kept = {reviewed_classification_id:'REC-kept',event_id:'EV-kept',review_status:'accepted'};
+    const removed = {reviewed_classification_id:'REC-removed',event_id:'EV-removed',review_status:'accepted'};
+    fs.writeFileSync(path.join(directory,'reviewed-event-classifications.json'),JSON.stringify([kept,removed]));
+    const bundle={manifest:{counts:{}},canonical_events:[{event_id:'EV-kept'}],reviewed_event_classifications:[]};
+    writeBundle(bundle,date,directory);
+    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(directory,'reviewed-event-classifications.json'))),[kept]);
+    assert.equal(JSON.parse(fs.readFileSync(path.join(directory,'manifest.json'))).counts.reviewed_event_classifications,1);
+    writeBundle({...bundle,reviewed_event_classifications:[{...kept,value_id:'updated'}]},date,directory);
+    assert.equal(JSON.parse(fs.readFileSync(path.join(directory,'reviewed-event-classifications.json')))[0].value_id,'updated');
+  } finally { fs.rmSync(directory,{recursive:true,force:true}); }
+});
 
 test("dated industry explainers are not new product releases", () => {
   for (const title of [

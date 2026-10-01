@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-23",
-    "latest_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-09-24",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_c",
       "series_e"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6ecf7f43c6c5a2b0",
+        "canonical_entity_id": "",
+        "name": "Basecamp Research"
+      },
       {
         "entity_id": "EN-5ee1e4de588a016a",
         "canonical_entity_id": "",
@@ -86,7 +92,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-c57b3d4aae9caa33",
+        "activity_id": "IA-07ec3c271f402774",
+        "funding_insight_id": "FI-d00cadc2bcc871e6",
+        "event_ids": [
+          "EV-6d92f16f6079fe38"
+        ],
+        "company_entity_id": "EN-6ecf7f43c6c5a2b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Basecamp Research",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$140M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 140000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.4 亿美元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ecd2ea74974f4ff3",
+            "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+            "source_title": "更正 -- Basecamp Research",
+            "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
+            "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
+            "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a19a676a187f3b5a",
         "funding_insight_id": "FI-5bf569d857da4dcb",
         "event_ids": [
           "EV-be364dc6883ec94b"
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ecd2ea74974f4ff3",
+        "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+        "source_title": "更正 -- Basecamp Research",
+        "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
+        "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
+        "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
+      },
       {
         "source_id": "FISRC-852df50f4128c47b",
         "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
@@ -176,6 +230,10 @@
         {
           "description": "融资数据库记录亦将其关联至 Enveda 2026 年 9 月 23 日 E 轮（existing investor）。原报道未披露其单笔出资金额。",
           "source_id": "FISRC-852df50f4128c47b"
+        },
+        {
+          "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ecd2ea74974f4ff3"
         }
       ],
       "contacts": [
@@ -239,6 +297,14 @@
           "source_content_hash": "e6486e5f995e038e",
           "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
           "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
+        },
+        {
+          "source_id": "FISRC-ecd2ea74974f4ff3",
+          "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+          "source_title": "更正 -- Basecamp Research",
+          "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
+          "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
+          "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
         }
       ],
       "last_verified_at": "2026-09-27",

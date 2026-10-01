@@ -1,7 +1,7 @@
 {
   "meta": {
     "schema_version": "FUNDING-COMPANY-IDENTITY-DECISION-V1.0",
-    "updated_at": "2026-09-22",
+    "updated_at": "2026-10-01",
     "rule": "Funding Insights may merge public cards only after an explicit identity review. The decision changes the application projection, preserves every source event, and does not mutate Data Center V4 canonical facts."
   },
   "decisions": [
@@ -9,11 +9,19 @@
       "decision_id": "FICID-YUANCHUAN-20260918",
       "entity_id": "EN-3b6f88f87a32567e",
       "application_entity_id": "FICO-yuanchuan-micro",
-      "current": { "name": "元川微", "catalog_type": "company" },
-      "match_names": ["元川微"],
+      "current": {
+        "name": "元川微",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "元川微"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "元川微", "catalog_type": "company" },
+      "canonical": {
+        "name": "元川微",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-09-18",
       "evidence": {
@@ -28,11 +36,22 @@
       "decision_id": "FICID-ANEW-LABS-20260918",
       "entity_id": "EN-0650ad8ad48129f7",
       "application_entity_id": "FICO-anew-labs",
-      "current": { "name": "Anew Labs（新生实验室）", "catalog_type": "company" },
-      "match_names": ["Anew Labs（新生实验室）", "Anew Labs", "新生探途", "上海新生探途科技有限公司"],
+      "current": {
+        "name": "Anew Labs（新生实验室）",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Anew Labs（新生实验室）",
+        "Anew Labs",
+        "新生探途",
+        "上海新生探途科技有限公司"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "Anew Labs（新生实验室）", "catalog_type": "company" },
+      "canonical": {
+        "name": "Anew Labs（新生实验室）",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-09-18",
       "evidence": {
@@ -51,11 +70,20 @@
       "decision_id": "FICID-DEEPKERNEL-20260915",
       "entity_id": "EN-619245256126c075",
       "application_entity_id": "FICO-deepkernel",
-      "current": { "name": "深度内核（DeepKernel）", "catalog_type": "company" },
-      "match_names": ["深度内核（DeepKernel）", "深度内核"],
+      "current": {
+        "name": "深度内核（DeepKernel）",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "深度内核（DeepKernel）",
+        "深度内核"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "深度内核（DeepKernel）", "catalog_type": "company" },
+      "canonical": {
+        "name": "深度内核（DeepKernel）",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-09-15",
       "evidence": {
@@ -70,11 +98,21 @@
       "decision_id": "FICID-RABYTE-20260915",
       "entity_id": "EN-63d1760c240e7a7c",
       "application_entity_id": "FICO-rabyte",
-      "current": { "name": "讯兔科技", "catalog_type": "company" },
-      "match_names": ["讯兔科技", "讯兔科技（Alpha派）", "讯兔科技（上海）有限公司"],
+      "current": {
+        "name": "讯兔科技",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "讯兔科技",
+        "讯兔科技（Alpha派）",
+        "讯兔科技（上海）有限公司"
+      ],
       "action": "correct",
       "merge_into_entity_id": "",
-      "canonical": { "name": "讯兔科技", "catalog_type": "company" },
+      "canonical": {
+        "name": "讯兔科技",
+        "catalog_type": "company"
+      },
       "review_status": "accepted",
       "reviewed_at": "2026-09-15",
       "evidence": {
@@ -4168,6 +4206,32 @@
         "quote": "Moonshot AI, the Chinese company behind the Kimi chatbot, is looking for a valuation of up to $30 billion in a new funding round."
       },
       "rationale": "证据显示 Moonshot AI（月之暗面）发布了 Kimi Code CLI 编码代理和 Kimi K2.7 Code 模型，并寻求 300 亿美元估值融资，表明 Moonshot AI 是一个进行产品发布和融资行为的组织实体，符合公司定义。"
+    },
+    {
+      "decision_id": "FICID-INSTINCT-20261001",
+      "entity_id": "EN-26e59d6a3c92de80",
+      "application_entity_id": "FICO-instinct",
+      "current": {
+        "name": "Instinct",
+        "catalog_type": "company"
+      },
+      "match_names": [
+        "Instinct",
+        "Viral AI agent Instinct"
+      ],
+      "action": "correct",
+      "merge_into_entity_id": "",
+      "canonical": {
+        "name": "Instinct",
+        "catalog_type": "company"
+      },
+      "review_status": "accepted",
+      "reviewed_at": "2026-10-01",
+      "evidence": {
+        "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+        "quote": "now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion"
+      },
+      "rationale": "两条事件引用同一 TechCrunch 原文，Viral AI agent 是标题修饰语。统一应用公司身份，使同日同轮同金额披露合并；保留全部来源事件。25 亿美元是上轮估值，不是本轮融资金额。"
     }
   ]
 }

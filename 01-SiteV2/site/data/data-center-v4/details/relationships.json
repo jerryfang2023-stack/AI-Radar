@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -53,6 +53,76 @@
     ]
   },
   "relationships": [
+    {
+      "relationship_id": "REL2-4d903d795699d1b0",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-240389f4b730bad4",
+      "subject_type": "entity",
+      "predicate": "acquires",
+      "object_ref": "EN-8d4321d936320802",
+      "object_type": "entity",
+      "event_id": "EV-471bf7c00cc06c85",
+      "claim_refs": [
+        "CL-efced06f755fba37",
+        "CL-00264bd65aeff2a7",
+        "CL-5ac48c858ff3ceba",
+        "CL-037ddc9059bc0045"
+      ],
+      "source_refs": [
+        "SA-1cac0791e5232da2"
+      ],
+      "data_date": "2026-10-01",
+      "status": "verified",
+      "subjectName": "AMD",
+      "objectName": "NVIDIA",
+      "predicateLabel": "收购",
+      "title": "AMD 收购 NVIDIA",
+      "eventTitle": "AMD 收购 World Labs AI 初创公司，加大对 Nvidia 的竞争压力",
+      "eventDate": "2026-09-29",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-efced06f755fba37",
+          "subject": "AMD",
+          "object": "World Labs AI startup, upping the ante against Nvidia",
+          "quote": "Chipmaker AMD and world models company World Labs announced that AMD will acquire the AI company by the end of the year, pending regulatory approval. The transaction is valued at $8.2 billion."
+        },
+        {
+          "id": "CL-00264bd65aeff2a7",
+          "subject": "AMD",
+          "object": "World Labs AI startup, upping the ante against Nvidia",
+          "quote": "This acquisition not only brings World Labs’ models under AMD’s roof, but also some of the leading research talent working on these models. According to World Labs’ announcement of the deal, Fei-Fei Li will become executive vice president and chief scientist at AMD, while “Justin Johnson and Ben Mildenhall will work with Fei-Fei to continue leading the World Labs team as it joins AMD to form a world-leading frontier research organization.”"
+        },
+        {
+          "id": "CL-5ac48c858ff3ceba",
+          "subject": "AMD",
+          "object": "World Labs AI startup, upping the ante against Nvidia",
+          "quote": "While World Labs’ early public successes were in tools and models for content creation (Marble came up a lot at this year’s SIGGRAPH conference for computer graphics), AMD’s focus in its own acquisition announcement seems to be more on the robotics side. “As AI expands into reasoning, robotics, simulation and physical AI, the demands on compute infrastructure become more diverse,” it reads . “World Labs’ expertise in developing advanced models will give AMD deeper insight into how workloads are evolving and help shape its future technology roadmaps.”"
+        },
+        {
+          "id": "CL-037ddc9059bc0045",
+          "subject": "AMD",
+          "object": "World Labs AI startup, upping the ante against Nvidia",
+          "quote": "World Labs’ acquisition comes sooner than expected for such a young company, but AMD’s involvement shouldn’t be a surprise. The two companies had partnered before, and AMD needs this kind of expertise to compete in an AI chip landscape that Nvidia dominates."
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-1cac0791e5232da2",
+          "publisher": "arstechnica.com",
+          "url": "https://arstechnica.com/ai/2026/09/amd-acquires-world-labs-ai-pioneer-fei-fei-lis-world-models-startup/"
+        }
+      ],
+      "sourceExcerpt": "Chipmaker AMD and world models company World Labs announced that AMD will acquire the AI company by the end of the year, pending regulatory approval. The transaction is valued at $8.2 billion.",
+      "event": {
+        "id": "EV-471bf7c00cc06c85",
+        "title": "AMD 收购 World Labs AI 初创公司，加大对 Nvidia 的竞争压力",
+        "originalTitle": "AMD acquires World Labs AI startup, upping the ante against Nvidia",
+        "date": "2026-09-29",
+        "dataDate": "2026-10-01",
+        "eventTypeLabel": "并购"
+      }
+    },
     {
       "relationship_id": "REL2-59587a82f0b820bc",
       "relationship_version": "RELATION-V2.1",
@@ -6890,6 +6960,69 @@
         "date": "2026-07-19",
         "dataDate": "2026-07-20",
         "eventTypeLabel": "产品发布"
+      }
+    },
+    {
+      "relationship_id": "REL2-2fb7b448b8d07ab4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-f2cf4184889d43bb",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0b706b4b95ba647c",
+      "object_type": "entity",
+      "event_id": "EV-218c2f6ecf3c369f",
+      "claim_refs": [
+        "CL-bef992849f6c8110",
+        "CL-4acaacad906c6cc7",
+        "CL-23db5f68b34959d3"
+      ],
+      "source_refs": [
+        "SA-0729ccc28efa48d9"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified",
+      "subjectName": "Enflame",
+      "objectName": "云燧 ESL64-O 超节点",
+      "predicateLabel": "发布",
+      "title": "Enflame 发布 云燧 ESL64-O 超节点",
+      "eventTitle": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与 OEX 架构降低互联成本",
+      "eventDate": "2026-07-19",
+      "sourceCount": 1,
+      "claims": [
+        {
+          "id": "CL-bef992849f6c8110",
+          "subject": "燧原科技联合中兴通讯",
+          "object": "与 OEX 架构降低互联成本",
+          "quote": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与架构创新降低互联成本 - IT之家"
+        },
+        {
+          "id": "CL-4acaacad906c6cc7",
+          "subject": "燧原科技联合中兴通讯",
+          "object": "与 OEX 架构降低互联成本",
+          "quote": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与架构创新降低互联成本"
+        },
+        {
+          "id": "CL-23db5f68b34959d3",
+          "subject": "燧原科技联合中兴通讯",
+          "object": "与 OEX 架构降低互联成本",
+          "quote": "IT之家 7 月 19 日消息，7 月 18 日下午，在 2026 世界人工智能大会期间，燧原科技正式发布云燧 ESL64-O 超节点、CoPoS+AI 芯片、天基算力应用场景三项成果。"
+        }
+      ],
+      "sources": [
+        {
+          "id": "SA-0729ccc28efa48d9",
+          "publisher": "IT之家（RSS）",
+          "url": "https://ithome.com/0/978/716.htm"
+        }
+      ],
+      "sourceExcerpt": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与架构创新降低互联成本 - IT之家",
+      "event": {
+        "id": "EV-218c2f6ecf3c369f",
+        "title": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与 OEX 架构降低互联成本",
+        "originalTitle": "",
+        "date": "2026-07-19",
+        "dataDate": "2026-07-20",
+        "eventTypeLabel": "硬件产品"
       }
     },
     {

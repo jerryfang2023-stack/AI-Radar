@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-01",
     "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "eventCount": 3656,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-11-05",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "lead": 1,
+      "lead": 2,
       "participant": 2
     },
     "round_codes": [
@@ -87,6 +87,11 @@
         "name": "AegisAI"
       },
       {
+        "entity_id": "EN-e3baa3a2daee23ae",
+        "canonical_entity_id": "",
+        "name": "Miter"
+      },
+      {
         "entity_id": "EN-7035f6607ad2d162",
         "canonical_entity_id": "",
         "name": "Procurement Sciences"
@@ -99,7 +104,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-c539afc0770c6c3c",
+        "activity_id": "IA-37cd437ba0319688",
+        "funding_insight_id": "FI-9bf08b154efd4b4b",
+        "event_ids": [
+          "EV-55581be112058bd5"
+        ],
+        "company_entity_id": "EN-e3baa3a2daee23ae",
+        "company_canonical_entity_id": "",
+        "company_name": "Miter",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-8b2ed67c1554bee8",
+            "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
+            "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+            "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
+            "quote": "announced it has raised a $40 million Series B round of financing led by Battery Ventures",
+            "quote_hash": "ca82f8aa5527e256ec0d7ca0f34529e46c9d2af892b2cf73c468385cd644fc7e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ec6be9b5aea6a832",
         "funding_insight_id": "FI-c540a5c7d84cb184",
         "event_ids": [
           "EV-9b81b0dd09a046ab"
@@ -147,7 +192,7 @@
         ]
       },
       {
-        "activity_id": "IA-17aee39f7d1ca042",
+        "activity_id": "IA-2f669baff8facc96",
         "funding_insight_id": "FI-02775e1bb32805b0",
         "event_ids": [
           "EV-a8dc5c859946f336"
@@ -187,7 +232,7 @@
         ]
       },
       {
-        "activity_id": "IA-47e258e88b9f11c6",
+        "activity_id": "IA-243f616da1f23a3a",
         "funding_insight_id": "FI-a1e0649c0b730f39",
         "event_ids": [
           "EV-a3ba586cbc57b5fd"
@@ -236,6 +281,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-8b2ed67c1554bee8",
+        "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
+        "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+        "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
+        "quote": "announced it has raised a $40 million Series B round of financing led by Battery Ventures",
+        "quote_hash": "ca82f8aa5527e256ec0d7ca0f34529e46c9d2af892b2cf73c468385cd644fc7e"
+      },
       {
         "source_id": "FISRC-7a2e33bd2177a4c7",
         "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
@@ -337,12 +390,12 @@
           "source_id": "battery_company"
         },
         {
-          "description": "融资来源记录：AegisAI · A轮 · 2026-07-23 · 本轮领投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7a2e33bd2177a4c7"
+          "description": "融资来源记录：Miter · B轮 · 2026-09-30 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8b2ed67c1554bee8"
         },
         {
-          "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投（新进或既有） · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dbf8259066547c8e"
+          "description": "融资来源记录：AegisAI · A轮 · 2026-07-23 · 本轮领投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7a2e33bd2177a4c7"
         }
       ],
       "contacts": [
@@ -415,6 +468,14 @@
           "quote_hash": "abc8cfd33806d0c91159718c14f7544ac05f817502f2f099f26552079ec3f602"
         },
         {
+          "source_id": "FISRC-8b2ed67c1554bee8",
+          "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
+          "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+          "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
+          "quote": "announced it has raised a $40 million Series B round of financing led by Battery Ventures",
+          "quote_hash": "ca82f8aa5527e256ec0d7ca0f34529e46c9d2af892b2cf73c468385cd644fc7e"
+        },
+        {
           "source_id": "FISRC-7a2e33bd2177a4c7",
           "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
           "source_title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
@@ -429,14 +490,6 @@
           "source_content_hash": "c1c81dabfa00282d",
           "quote": "Battery Ventures led the round",
           "quote_hash": "ef3d5fb1aa8aa512aa1817004fb7b89a115c3ab65aa254173b3eb7913d459810"
-        },
-        {
-          "source_id": "FISRC-dbf8259066547c8e",
-          "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
-          "source_title": "AI 芯片制造商 SambaNova 以 110 亿美元估值融资 10 亿美元，距上一轮巨额融资仅 5 个月",
-          "source_content_hash": "e79999ca03a0833e",
-          "quote": "New and existing investors also joined, including A&E Investment, Assam Ventures, Battery Ventures",
-          "quote_hash": "607ccf988c140876e26b089c35fd3bdee680a6456f31ba9780aa4f36f6557598"
         }
       ],
       "last_verified_at": "2026-09-26",
