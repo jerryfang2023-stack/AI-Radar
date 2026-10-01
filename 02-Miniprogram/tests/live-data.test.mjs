@@ -20,7 +20,7 @@ test("version checks repeat across days, deduplicate in flight and retain good d
       calls.push(url);
       if (failed) { fail(new Error("offline")); return; }
       success({ statusCode: 200, data: url.includes("manifest") ? {
-        version, latestDate: index.meta.latestDate, fundingVersion: index.meta.fundingVersion,
+        version, latestDate: index.meta.latestDate, fundingVersion: index.meta.fundingVersion, taxonomyVersion: index.meta.taxonomyVersion,
         cardCount: index.cards.length, indexPath: "/data/mini/funding-index.json",
       } : index });
     },
@@ -131,7 +131,7 @@ test("refreshes the lightweight index and loads one funding detail on demand", a
         success({ statusCode: 200, data: {
           version: `test:${fixtureDate}:${fallbackFunding.meta.cardCount}`,
           latestDate: fixtureDate,
-          fundingVersion: fallbackFunding.meta.fundingVersion,
+          fundingVersion: fallbackFunding.meta.fundingVersion, taxonomyVersion: fallbackFunding.meta.taxonomyVersion,
           cardCount: fallbackFunding.meta.cardCount,
           indexPath: "/data/mini/funding-index.json",
           detailBasePath: "/data/mini/funding-details",

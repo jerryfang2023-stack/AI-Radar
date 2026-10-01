@@ -1,5 +1,7 @@
 # Guanlan Funding Mini Program
 
+Current source: 1.1.8 uses AI-FUNDING-TAGS-1.0 for capital-flow signals, rankings, heatmaps and sector drill-downs. The bundled index and live cache require matching taxonomy versions and valid sector/subsector pairs. See `docs/REVIEW-1.1.8.md`.
+
 Current source: 1.1.7 uses unified active reading entitlement for community content, with no separate joined-status or application gate. Real community identity remains required for personal profile writes and reward attribution. Legacy application links redirect to community home. Financing heading is 融资精选. See `docs/REVIEW-1.1.7.md`.
 
 Current source: 1.1.6 colors the featured heading gold and reads reviewed, attributed investor observations from `/data/funding-featured.json` on every home entry. No verified observation means no observation row; never infer one from a sector. See `docs/REVIEW-1.1.6.md`.
@@ -32,7 +34,7 @@ Previous immutable uploaded release: 0.9.5 adds a global native-share baseline, 
 
 ## Boundaries
 
-- Canonical source remains `../01-SiteV2/site/data/funding-insights-v1.json`. Mini offline funding input is the reviewed Portal public snapshot `data-input/reviewed-funding.json`; refresh it with `node scripts/sync-reviewed-funding.mjs` before release so removed records cannot reappear from the raw canonical bundle.
+- Current financing source is `../01-SiteV2/site/data/financing-catalog-v1.json`, classified by `../agent-workflow/financing/taxonomy.json`. Mini offline funding input is the reviewed Portal public snapshot `data-input/reviewed-funding.json`; refresh it with `node scripts/sync-reviewed-funding.mjs` before release so removed records and legacy tags cannot reappear from the raw factual archive.
 - Weekly/monthly report source truth remains `../01-SiteV2/content/12-applications/industry-reports/`.
 - Run `npm run build:data` after the source projection changes. Do not hand-edit generated files under `miniprogram/data/`.
 - Bundled projections are the offline fallback. Runtime funding and report refreshes may read only the gated public contracts under `https://www.zkdlj.vip/data/`; reject date/version regressions and manifest/index count mismatches; reviewed removals may reduce counts and retain the fallback on any request or validation failure.
@@ -42,7 +44,7 @@ Previous immutable uploaded release: 0.9.5 adds a global native-share baseline, 
 
 ## Frontstage UI contract
 
-- Hide financing classified as robotic_system (机器人系统) from Mini Program funding discovery, ecology, sector details and native detail routes. Preserve canonical and PC records. Display an evidence-backed Chinese company abbreviation when available, retaining the full name for search.
+- Funding discovery, ecology and detail routes consume the same included financing catalog as PC. Exclude embodied intelligence/robotics core businesses; retain consumer AI toys and companion devices. Do not reconstruct scope from old robotic_system or hardware labels. Historical factual records remain archived. Display an evidence-backed Chinese company abbreviation when available, retaining the full name for search.
 - 全球 excludes China. Financing, ecosystem signals, rankings, heatmaps and sector details must partition the same governed market labels; never treat global as an all-market fallback. Server-protected sector responses use the same partition.
 
 - 0.9.5 installs native friend/timeline sharing on every registered page. Existing detail/invitation handlers keep their specialized titles and deep links; community program, bounty, points and graph pages allowlist only their stable routing fields. Private/edit/settings pages must share a public front door and must never leak account state or authorization parameters. Related-company links from protected people/investor profiles resolve the visible company name through the Mini Program company key rather than trusting a server-side canonical relation ID, and retain a server-backed company reference when the protected profile is newer than the bundled index. A first phone binding without a local token must reuse that same one-time phone code for login. An approved existing community member linked by verified phone receives synced community identity/points and one non-renewing, idempotent 90-day access window; ordinary new users keep the seven-day rule.

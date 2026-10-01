@@ -1,4 +1,5 @@
 const DAY_MS = 24 * 60 * 60 * 1000;
+const { taxonomyVersion } = require('./financing-taxonomy.js');
 
 const text = (value) => String(value == null ? "" : value).trim();
 
@@ -7,7 +8,18 @@ function marketCards(cards, marketRegion) {
 }
 
 function sectorName(card) {
-  return text(card.subcategory) || text(card.category) || "其他 AI";
+  return text(card.subcategory);
+}
+
+// All charts and sector drill-downs share the same accepted event set.
+function financingCards(index) {
+  if (index?.meta?.taxonomyVersion !== taxonomyVersion) return [];
+  const seen = new Set();
+  return (index.cards || []).filter(card => {
+    if (!card.id || seen.has(card.id) || !sectorName(card) || !/^\d{4}-\d{2}-\d{2}$/.test(card.date) || card.date > index.meta.latestDate) return false;
+    seen.add(card.id);
+    return true;
+  });
 }
 
 function monthKey(value) { return text(value).slice(0, 7); }
@@ -73,7 +85,7 @@ function buildSignals(cards, latestDate) {
 }
 
 function buildOverview(index, marketRegion = "global") {
-  const cards = marketCards(index.cards, marketRegion);
+  const cards = marketCards(financingCards(index), marketRegion);
   const months = monthKeys(index.meta.latestDate, 6);
   const rangeCards = cards.filter((card) => months.includes(monthKey(card.date)));
   const ranking = groupSectors(rangeCards)
@@ -108,7 +120,7 @@ function buildOverview(index, marketRegion = "global") {
 }
 
 function buildSector(index, details, sector, marketRegion = "global") {
-  const cards = marketCards(index.cards, marketRegion).filter((card) => sectorName(card) === sector);
+  const cards = marketCards(financingCards(index), marketRegion).filter((card) => sectorName(card) === sector);
   const companyMap = new Map();
   cards.forEach((card) => {
     const current = companyMap.get(card.company);
