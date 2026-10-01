@@ -6,7 +6,7 @@ import path from 'node:path';
 import { config, discover, queryPlan, uniqueLeads } from '../discovery.mjs';
 import { captureOriginal, parseOriginal } from '../capture.mjs';
 import { collect } from '../collect.mjs';
-import { runStages, read, acquireLock, write } from '../state.mjs';
+import { runStages, read, acquireLock, write, digest } from '../state.mjs';
 import { productionPlan } from '../run.mjs';
 import { allowedCheckpointPath, restore } from '../checkpoint.mjs';
 import { financingScope } from '../scope.mjs';
@@ -64,6 +64,10 @@ test('failed stages resume without replaying successful prerequisites and lock p
   await assert.rejects(runStages({date,file,stages,codeVersion:'v1',execute:async stage=>{seen.push(stage.id);if(stage.id==='research')throw new Error('quota');}}));
   await runStages({date,file,stages,codeVersion:'v1',execute:async stage=>seen.push(stage.id)});
   assert.deepEqual(seen,['facts','research','research','publish']);
+  stages[1].version='fixed-research';
+  seen.length=0;
+  await runStages({date,file,stages,codeVersion:'v1',execute:async stage=>seen.push(stage.id)});
+  assert.deepEqual(seen,['research','publish']);
   const release=acquireLock(dir);assert.throws(()=>acquireLock(dir),/already_active/u);release();
 });
 test('new execution graph has no comprehensive-monitor, quota, opinion or historical refill dependencies',()=>{
@@ -76,4 +80,15 @@ test('artifact restore cannot execute code or traverse paths',t=>{
   assert.equal(allowedCheckpointPath('01-SiteV2/site/data/a.js',date),false);
   const dir=temporary(t);write(path.join(dir,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,entries:[{file:'../escape.json',hash:'x'}]});
   assert.throws(()=>restore(dir,dir,date),/path_rejected/u);
+});
+test('restoring on a newer main preserves global data and invalidates dependent receipts',t=>{
+  const root=temporary(t),artifact=temporary(t),global='01-SiteV2/site/data/funding-insights-v1.json';
+  const receipt=`agent-workflow/reports/financing/${date}/stages.json`;
+  write(path.join(root,global),{cards:['newer']});
+  const rows=[[global,{cards:['older']}],[receipt,{stages:{projections:{ok:true}}}]];
+  const entries=rows.map(([file,data])=>{write(path.join(artifact,'files',file),data);return{file,hash:digest(fs.readFileSync(path.join(artifact,'files',file),'utf8'))};});
+  write(path.join(artifact,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,base_commit:'old',entries});
+  restore(root,artifact,date);
+  assert.deepEqual(read(path.join(root,global)).cards,['newer']);
+  assert.deepEqual(read(path.join(root,receipt)).stages,{});
 });

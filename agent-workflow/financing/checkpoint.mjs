@@ -26,7 +26,9 @@ export function snapshot(root, directory, date) {
     const destination = path.join(directory,'files',file); fs.mkdirSync(path.dirname(destination),{recursive:true}); fs.writeFileSync(destination,body);
     return { file, hash: digest(body) };
   });
-  write(path.join(directory,'manifest.json'), { version: 'FINANCING-CHECKPOINT-1', date, entries });
+  const head = spawnSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'});
+  if(head.status !== 0) throw new Error('checkpoint_base_commit_missing');
+  write(path.join(directory,'manifest.json'), { version: 'FINANCING-CHECKPOINT-1', date, base_commit:head.stdout.trim(), entries });
   return entries;
 }
 export function restore(root, directory, date) {
@@ -38,11 +40,23 @@ export function restore(root, directory, date) {
     if (digest(body) !== entry.hash) throw new Error('checkpoint_hash_mismatch');
     JSON.parse(body);
   }
+  const head = spawnSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'});
+  const changedBase = manifest.base_commit && head.stdout?.trim() !== manifest.base_commit;
   for (const entry of manifest.entries) {
+    // On a newer main, reuse only this run's inputs/results. Old global indexes
+    // and registries must never overwrite financing accepted after the artifact.
+    if(changedBase && !entry.file.startsWith(`agent-workflow/reports/financing/${date}/`)
+      && !entry.file.includes(`/data-center-v4/${date}/`)
+      && !entry.file.endsWith(`/intake-v1/${date}.json`)
+      && !entry.file.endsWith(`/funding-insights/${date}.json`)) continue;
     const file = path.join(root,entry.file), source = path.join(directory,'files',entry.file);
     fs.mkdirSync(path.dirname(file),{recursive:true});
     if (entry.file.endsWith(`/intake-v1/${date}.json`) && fs.existsSync(file)) write(file, mergeSourceIntakes(read(file),read(source)));
     else fs.copyFileSync(source,file);
+  }
+  if(changedBase) {
+    const file=path.join(root,`agent-workflow/reports/financing/${date}/stages.json`),state=read(file);
+    if(state) { state.stages={};state.status='resume_on_new_main';write(file,state); }
   }
 }
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
