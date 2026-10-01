@@ -5,9 +5,11 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { read, write, digest } from './state.mjs';
 import { mergeSourceIntakes } from '../tools/lib/source-intake-v1.mjs';
+import { publicIndexPath } from './evidence-index.mjs';
 
 export function allowedCheckpointPath(file, date) {
   if (file.includes('\\') || file.split('/').includes('..') || path.isAbsolute(file)) return false;
+  if (file === publicIndexPath) return true;
   return (/^01-SiteV2\/(?:content\/(?:11-databases|12-applications\/(?:funding-insights|financing-taxonomy))|site\/data)\/.*\.json$/u.test(file)
     || (file.startsWith(`agent-workflow/reports/financing/${date}/`) && /\.json$/u.test(file)))
     && !/\/search-cache\/|\/aihot\//u.test(file);
@@ -38,7 +40,8 @@ export function restore(root, directory, date) {
     if (!allowedCheckpointPath(entry.file,date)) throw new Error('checkpoint_path_rejected');
     const body = fs.readFileSync(path.join(directory,'files',entry.file),'utf8');
     if (digest(body) !== entry.hash) throw new Error('checkpoint_hash_mismatch');
-    JSON.parse(body);
+    if(entry.file === publicIndexPath) body.split(/\r?\n/u).filter(Boolean).forEach(line=>JSON.parse(line));
+    else JSON.parse(body);
   }
   const head = spawnSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'});
   const changedBase = manifest.base_commit && head.stdout?.trim() !== manifest.base_commit;

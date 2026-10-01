@@ -7,6 +7,7 @@ import { collect } from './collect.mjs';
 import { config, queryPlan } from './discovery.mjs';
 import { acquireLock, digest, read, write, runStages } from './state.mjs';
 import { resolvePrivateEvidenceBackupRoot } from '../tools/private-evidence-backup-paths.mjs';
+import { indexFinancingEvidence } from './evidence-index.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const script = name => `agent-workflow/tools/${name}.mjs`;
@@ -79,6 +80,7 @@ async function main() {
     if (phase === 'collect') return;
     const collection = read(path.join(directory, 'collection.json'));
     if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
+    indexFinancingEvidence({root, backupRoot, date, collection});
     // A clean zero day is not an extraction failure or a reason to invent cards.
     const intake = read(path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`));
     if (!intake?.raw_documents?.length) {
