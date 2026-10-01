@@ -12,7 +12,7 @@
           <view class="featured-card" data-id="{{item.id}}" bindtap="openFeatured" role="button" aria-label="查看{{item.company}}融资详情">
             <view class="featured-identity"><text class="featured-company">{{item.company}}</text><text wx:if="{{item.product}}" class="featured-product">{{item.product}}</text><text class="featured-arrow">›</text></view>
             <view class="featured-facts"><text class="featured-amount">{{item.amount}}</text><text class="featured-round">{{item.round}}</text><text class="featured-sector">{{item.sector}}</text></view>
-            <view wx:if="{{item.observation}}" class="featured-observation"><text class="featured-label">观察 </text>{{item.observation}}</view>
+            <view wx:if="{{item.observation}}" class="featured-observation"><text class="featured-label">观察：</text>{{item.observation}}</view>
           </view>
         </swiper-item>
       </swiper>
