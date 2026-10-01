@@ -1,5 +1,9 @@
 # Guanlan Funding Mini Program
 
+## Release numbering
+
+User policy: release digits roll over at 9. Use 1.1.9 -> 1.2.0, 1.2.9 -> 1.3.0, and 1.9.9 -> 2.0.0; never upload a patch or minor digit above 9. Keep package.json, analytics APP_VERSION and CLI upload version identical. Current release 1.2.0 supersedes the interim 1.1.10 upload with the same accepted features. See docs/REVIEW-1.2.0.md.
+
 Current source: 1.1.10 displays editorial capital explanations directly after 观察：, without the 观澜分析 prefix. Institution quotations retain their institution attribution. Keep source validation and the current-market latest-three carousel from 1.1.9. See `docs/REVIEW-1.1.10.md`.
 
 Current source: 1.1.9 implements the approved full-taxonomy ecology heatmap/trends with the shared capital-map model. All 7 parents and 45 subsectors remain available; use snapshot dates and complete-month comparisons. See `docs/REVIEW-1.1.9.md`.
