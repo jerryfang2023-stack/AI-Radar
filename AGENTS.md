@@ -108,6 +108,10 @@ For Guanlan copy involving professional domains, read `agent-workflow/governance
 
 ## Current Task Routes
 
+### Institution / Person Profile Collection
+
+Read `agent-workflow/product/public-entity-profiles-v1-contract.md` and `agent-workflow/product/profile-collection-workflow.md`. Use `npm run profiles:queue` with a shared private state directory: claim before researching, retain original captures and individual candidate results, record blockers, and integrate reviewed batches of 30–50. Only the integrator writes profile facts and projections. Keep accepted evidence when a build or publication fails; report accepted, integrated and published counts separately. Use a clean isolated release checkout and fixed Git commit for publication. This route does not authorize starting extra agents, paid model calls or scheduled tasks.
+
 ### Operations Backend
 
 Read `docs/operations-console.md` and the affected client/service contract. Astra maintenance uses the project execution contract; the browser console has no direct model inference endpoint. Keep membership decisions, Token allocation arithmetic, sponsor model labels and audit ledgers under their existing service contracts. Async results must still belong to the current session and selected list/editor after every await. Logout invalidates requests and clears protected content. Release requires the OPS regressions, version gate, exact committed VPS assets and authentication checks; a Skill catalog refresh alone is not an operations-backend upgrade.
