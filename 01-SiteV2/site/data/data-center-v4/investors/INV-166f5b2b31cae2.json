@@ -57,9 +57,9 @@
     "name": "360 ONE Asset",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
@@ -137,31 +137,119 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "360 ONE Asset 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网的公司、私募股权及联系页面，以及 Aina 融资报道整理；官网宣传性资产数据不采用为未注明时点的当前规模。",
+      "summary": "360 ONE Asset 是印度资产管理平台，官网列出的业务包括上市股权、私募股权、私募信贷和多资产策略。其私募股权平台覆盖风险投资、成长股权、后期投资、Pre-IPO、二级份额和基金中的基金，官网团队介绍显示其同时从事早期与成长阶段投资。2026 年 7 月，第三方报道显示其与 Redstart Labs 联合领投 Aina 的 550 万美元种子轮。官网列示的注册办公地址位于孟买 Lower Parel。",
+      "facts": [
+        {
+          "field": "asset_classes",
+          "label": "业务与资产类别",
+          "value": "官网将 360 ONE Asset 描述为覆盖上市股权、私募股权、私募信贷及多资产策略的资产管理机构。",
+          "source_id": "360_one_who_we_are"
+        },
+        {
+          "field": "private_equity_strategy",
+          "label": "私募股权策略",
+          "value": "官网列出的私募股权策略包含 VC、成长股权、后期私募股权与 Pre-IPO、二级份额及基金中的基金；其投资覆盖企业不同成长阶段。",
+          "source_id": "360_one_private_equity"
+        },
+        {
+          "field": "leadership",
+          "label": "投资团队",
+          "value": "官网将 Sameer Nath 列为风险投资与私募股权业务 CIO 及负责人，并介绍其具有逾 27 年私募市场投资、并购、资本市场、创业与管理经验；此前创立 TrueScale Capital、共同创立 Iron Pillar，并任职 Citigroup。该履历来自机构官网。",
+          "source_id": "360_one_private_equity"
+        },
+        {
+          "field": "registered_office",
+          "label": "注册办公地址",
+          "value": "官网列示地址：360 ONE Center, Kamala City, Senapati Bapat Marg, Lower Parel, Mumbai 400013。",
+          "source_id": "360_one_reach_us"
+        },
+        {
+          "field": "service_desk",
+          "label": "服务电话",
+          "value": "官网联系页列示服务台电话：1800 210 8606。",
+          "source_id": "360_one_reach_us"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "官网将 360 ONE Asset 的 Pre-IPO 基金列为其私募股权平台发展节点；这是机构官网的自述。",
+          "source_id": "360_one_private_equity"
+        },
+        {
+          "date": "2024",
+          "description": "官网列出直接私募股权二级份额基金作为其产品发展节点；为机构自述。",
+          "source_id": "360_one_private_equity"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮联合领投 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026-07-16 融资报道显示，360 ONE Asset 与 Redstart Labs 联合领投 Aina 的种子轮，披露融资总额为 550 万美元。",
           "source_id": "FISRC-9e755507b523ddb2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "360 ONE Asset",
+          "url": "https://www.360.one/asset/home/",
+          "source_id": "360_one_who_we_are"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示注册办公地址",
+          "value": "360 ONE Center, Kamala City, Senapati Bapat Marg, Lower Parel, Mumbai 400013, India",
+          "url": "https://www.360.one/asset/reach-us/",
+          "source_id": "360_one_reach_us"
+        },
+        {
+          "kind": "phone",
+          "label": "官网服务台电话",
+          "value": "1800 210 8606",
+          "url": "https://www.360.one/asset/reach-us/",
+          "source_id": "360_one_reach_us"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "360_one_who_we_are",
+          "source_url": "https://www.360.one/asset/who-we-are/",
+          "source_title": "Who We Are | 360 ONE Asset",
+          "source_content_hash": "cc45f6f16bc838a996b2a9cc9f1ef830aca76b84fb13090bdf5506b5a28634f2",
+          "quote": "public equity, private equity, private credit and multi assets",
+          "quote_hash": "d42f63c89c56429f36553f420406f9dec8d31f34a449fe620df0b17c980122b4"
+        },
+        {
+          "source_id": "360_one_private_equity",
+          "source_url": "https://www.360.one/asset/private-equity/",
+          "source_title": "Private Equity | 360 ONE Asset",
+          "source_content_hash": "a985d2a9490eb98d69263201d333344728896989c53b03e04aad7a21b0bf5eb7",
+          "quote": "Our end-to-end Private Equity platform extends across VC, Growth Equity, Late-Stage PE and Pre-IPO",
+          "quote_hash": "69899a0ffce192c29dfd6fe96a850a97c7d6e22806b35c8edf185a0fc13024b4"
+        },
+        {
+          "source_id": "360_one_reach_us",
+          "source_url": "https://www.360.one/asset/reach-us/",
+          "source_title": "Reach Us | 360 ONE Asset",
+          "source_content_hash": "f41efc54120443836299a103975c0600d3900ae16d0846a0f69283a8e8022cf5",
+          "quote": "Registered Office Address 360 ONE Asset Management Limited",
+          "quote_hash": "686979df3373f8bf9db96866c4fe7ca324e6b6083f7029a8405369ffe42ed51e"
+        },
         {
           "source_id": "FISRC-9e755507b523ddb2",
           "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
-          "source_title": "Aina 从 Info Edge 等机构融资 550 万美元，用于构建 AI 硬件接口",
+          "source_title": "Aina raises $5.5 mn from Info Edge Ventures & 360 ONE Asset",
           "source_content_hash": "495ca48cb14fa6d7",
           "quote": "co-led by Redstart Labs, the venture arm of Info Edge Ventures, and 360 ONE Asset.",
           "quote_hash": "8b2ad6a4b7dbc612aa5263beacf5668c03926cae03f08c0b80c1223a7dfdecda"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-10-01"
     }
   }
 }

@@ -57,9 +57,9 @@
     "name": "中信建投资本",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
@@ -137,21 +137,113 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中信建投资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据中信建投资本官网公司介绍与无问芯穹融资报道整理。工商信息及业绩数据以官网披露为准，并为年度指标注明统计时点。",
+      "summary": "中信建投资本管理有限公司成立于 2009 年，是中信建投证券全资设立的私募股权投资与基金管理机构，官网披露注册资本为 35 亿元。投资方向覆盖科技与通信、医疗健康、清洁能源、新材料、先进制造、国防、节能环保、消费及基础设施等。官网截至 2025 年末披露其管理 80 余只基金、注册规模 780 亿元以上、累计管理规模 1,100 亿元以上，投资企业超过 450 家，其中 46 家上市。2026 年 5 月，中信建投资本作为跟投方参与无问芯穹 7 亿元融资。",
+      "facts": [
+        {
+          "field": "legal_and_parent_company",
+          "label": "机构主体与股东",
+          "value": "官网称中信建投资本管理有限公司成立于 2009 年 7 月 31 日，是中信建投证券股份有限公司全资子公司，主营私募股权投资基金管理。",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "官网公司介绍列示注册资本人民币 35 亿元。",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资范围",
+          "value": "官网列出的重点方向包括科技与通信、医疗健康、清洁能源、新材料、先进制造、国防、节能环保、文化旅游与消费、基础设施等。",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "field": "scale_2025_year_end",
+          "label": "官网披露的 2025 年末业绩",
+          "value": "截至 2025 年末，官网披露注册基金 80 余只、注册规模 780 亿元以上、累计管理规模 1,100 亿元以上、投资企业 450 余家、其中 46 家上市。以上为机构自报的截至日期指标。",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "field": "registered_address",
+          "label": "官网列示注册地址",
+          "value": "北京市东城区朝内大街 188 号 6 层东侧 2 间。",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "field": "business_phone",
+          "label": "官网联系电话",
+          "value": "010-65608308；官网另列投资者关系电话 010-85156380。",
+          "source_id": "citic_capital_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2009-07-31",
+          "description": "中信建投资本管理有限公司成立。",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "date": "2025",
+          "description": "官网披露截至年末管理基金、投资企业和上市项目指标。",
+          "source_id": "citic_capital_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · 本轮参投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026-05-07，无问芯穹 7 亿元融资报道将中信建投资本列为跟投方；该金额为本轮披露总额，不代表其单家投资额。",
           "source_id": "FISRC-e5d0583f94886034"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "中信建投资本",
+          "url": "https://ccmc.csc108.com/company/about",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示注册地址",
+          "value": "北京市东城区朝内大街 188 号 6 层东侧 2 间",
+          "url": "https://ccmc.csc108.com/company/about",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示办公地址",
+          "value": "北京市东城区朝内大街 188 号 9 层",
+          "url": "https://ccmc.csc108.com/company/about",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "kind": "phone",
+          "label": "官网联系电话",
+          "value": "010-65608308",
+          "url": "https://ccmc.csc108.com/company/about",
+          "source_id": "citic_capital_about"
+        },
+        {
+          "kind": "phone",
+          "label": "投资者关系电话",
+          "value": "010-85156380",
+          "url": "https://ccmc.csc108.com/company/about",
+          "source_id": "citic_capital_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "citic_capital_about",
+          "source_url": "https://ccmc.csc108.com/company/about",
+          "source_title": "中信建投资本 - 公司介绍",
+          "source_content_hash": "461004b26f5d5657e273660476454bb96876a8112502d1d2cd0c24c4f5d9d174",
+          "quote": "中信建投资本管理有限公司成立于 2009 年 7 月 31 日",
+          "quote_hash": "062d9d7608ed852ce24632156f72b49ac35c5921e35c532bd566c05f1456d221"
+        },
         {
           "source_id": "FISRC-e5d0583f94886034",
           "source_url": "https://news.pedaily.cn/202605/563518.shtml",
@@ -161,7 +253,7 @@
           "quote_hash": "d1f4f980aceff974e80c0b6b6bc161a81c83e6e96a8de7bbe57e466be82f3880"
         }
       ],
-      "last_verified_at": "2026-09-26"
+      "last_verified_at": "2026-10-01"
     }
   }
 }

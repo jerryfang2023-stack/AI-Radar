@@ -1335,7 +1335,7 @@ test("Y Combinator 保持稳定公开 ID 并明确归类为投资机构", () => 
 });
 
 test("有官网核验的机构名称保持既有 ID 并从待核验分类提升为投资机构", () => {
-  const names = ["DST Global", "GIC", "襄禾资本", "云启资本", "普华资本", "孚腾资本", "国中资本", "BoxGroup", "Blackstone", "华业天成", "顺禧基金", "L2F光源创业者基金", "复星创富", "复星锐正", "元璟资本", "Benchmark", "Greycroft", "Jane Street", "Tiger Global", "Headline"];
+  const names = ["DST Global", "GIC", "襄禾资本", "云启资本", "普华资本", "孚腾资本", "国中资本", "BoxGroup", "Blackstone", "华业天成", "顺禧基金", "L2F光源创业者基金", "复星创富", "复星锐正", "元璟资本", "360 ONE Asset", "博裕资本", "博将资本", "中信建投资本", "Benchmark", "Greycroft", "Jane Street", "Tiger Global", "Headline"];
   const expectedIds = [
     "INV-8f3811e8a6b13c",
     "INV-517883c02d5d50",
@@ -1352,6 +1352,10 @@ test("有官网核验的机构名称保持既有 ID 并从待核验分类提升�
     "INV-cd8857f54a42ce",
     "INV-40ff3cc9cefa0c",
     "INV-0281640da2df9b",
+    "INV-166f5b2b31cae2",
+    "INV-33f1eff797e7b1",
+    "INV-3ef3147899c8f7",
+    "INV-724d32d633006c",
     "INV-1996308273c587",
     "INV-ac2ec77dd2b7a9",
     "INV-cbf3e624e55b8f",
