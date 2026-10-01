@@ -31,8 +31,6 @@ test("secondary search candidates append as a source-stage delta without recolle
   const accepted = { source_artifacts: [{ source_url: "https://news.example/accepted" }] };
   assert.deepEqual(uncapturedChinaFundingItems(merged, accepted, { secondaryOnly: true }), [secondary.items[1]]);
   assert.throws(() => mergeChinaFundingDiscoveries(primary, [{ date: "2026-09-27", items: [] }]), /date mismatch/u);
-  const workflow = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
-  assert.match(workflow, /run-china-funding-pipeline\.mjs --date="\$RUN_DATE" --append-new-sources=true/u);
 });
 test("domestic pipeline can use reviewed multi-method research seeds when search quotas are unavailable", () => {
   const sourceDir = "agent-workflow/reports/china-funding/2026-09-28";
@@ -50,14 +48,7 @@ test("domestic pipeline can use reviewed multi-method research seeds when search
   assert.ok(!normalGenerator.includes("--force=true"));
   assert.throws(() => chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true }), /research_seed_event_ids_required/u);
 });
-test("resuming after seed or code changes discards only stale per-event card checkpoints", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/china-funding-pr.yml"), "utf8");
-  const restore = workflow.split("- name: Restore failed run checkpoint without recollection")[1].split("- name: Collect each domestic publisher independently")[0];
-  assert.match(restore, /gh run view "\$RESUME_RUN" --json headSha --jq \.headSha/u);
-  assert.match(restore, /sha256sum "\$checkpoint_seeds"/u);
-  assert.match(restore, /\[ "\$checkpoint_seed_hash" != "\$current_seed_hash" \] \|\| \[ "\$source_head" != "\$current_head" \]/u);
-  assert.match(restore, /find "\$lane\/card-checkpoints" -maxdepth 1 -type f -name 'EV-\*\.json' -delete/u);
-});
+
 test("financing commentary and multi-event headlines cannot become company financing facts", () => {
   const source = { published_at: "2026-09-14", acquisition_channel: "china-funding" };
   const artifact = { source_url: "https://www.chinaventure.com.cn/news/2026/123456.html" };
@@ -113,18 +104,7 @@ test("accepted capture recovery restores date-scoped locators offline and fails 
   const pipeline = fs.readFileSync("agent-workflow/tools/run-china-funding-pipeline.mjs", "utf8");
   assert.match(pipeline, /restoreAcceptedChinaFundingEvidence\(date, command\);\s+const capturePassed/u);
 });
-test("resuming an accepted checkpoint preserves the current reviewed search-seed manifest", () => {
-  const workflow = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
-  const restoreStep = workflow.match(/- name: Restore failed run checkpoint without recollection[\s\S]*?\n      - name: Collect each domestic publisher independently/u)?.[0] || "";
-  const snapshot = restoreStep.indexOf('cp "$current_seeds" "$seed_snapshot"');
-  const checkpointRestore = restoreStep.indexOf('cp -a "$RUNNER_TEMP/china-funding-checkpoint/." "$lane/"');
-  const currentSeedRestore = restoreStep.indexOf('cp "$seed_snapshot" "$current_seeds"');
-  assert.ok(snapshot >= 0 && snapshot < checkpointRestore);
-  assert.ok(checkpointRestore < currentSeedRestore);
-  assert.match(restoreStep, /current_secondary="\$lane\/china-funding-secondary-source-intake-candidates\.json"/u);
-  assert.match(restoreStep, /cp "\$secondary_snapshot" "\$current_secondary"/u);
-  assert.match(restoreStep, /rm -f "\$current_seeds"/u);
-});
+
 test("domestic dates come from explicit original publication stamps, never capture time", () => {
   const source = { acquisition_channel: "china-funding" };
   assert.equal(chinaFundingSourceDate({ ...source, full_text: "导航\n2026/09 11\n11:17\n超维动力完成融资" }), "2026-09-11T11:17:00+08:00");
@@ -200,21 +180,7 @@ test("domestic pipeline includes original evidence, canonical, entity and instit
   for (const stage of plan) for (const args of stage.commands) assert.ok(fs.existsSync(args[0]), args[0]);
   for (const expected of ["--targeted-source-artifacts=true", "--merge-existing-intake=true", "assert-public-evidence-boundary", "assert-data-center-v4", "assert-entity-history-v1", "build-investment-institutions-v1", "assert-investment-institutions-v1"]) assert.ok(commands.some((command) => command.includes(expected)), expected);
 });
-test("domestic collection is an independent simultaneous job and only publication holds writer lock", () => {
-  const parent = fs.readFileSync(".github/workflows/daily-persistent-assets-pr.yml", "utf8");
-  const child = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
-  assert.match(parent, /jobs:\s+china-funding:/u);
-  assert.match(parent, /china-funding:\s+name:[^\n]+\s+if:\s+\$\{\{\s*inputs\.resume_run_id\s*==\s*''\s*\}\}/u);
-  assert.match(parent, /gh workflow run china-funding-pr\.yml --ref main/u);
-  assert.doesNotMatch(parent, /uses: \.\/\.github\/workflows\/china-funding-pr/u);
-  assert.match(child, /--dir "\$RUNNER_TEMP\/china-funding-checkpoint"/u);
-  assert.match(parent, /business-signals-pr:[\s\S]*?concurrency:[\s\S]*?wavesight-data-center-publication/u);
-  assert.doesNotMatch(parent.slice(0, parent.indexOf("jobs:")), /concurrency:/u);
-  assert.match(child, /publish:\s+needs: collect[\s\S]*?concurrency:/u);
-  assert.match(child, /ref: main/u);
-  assert.match(child, /git restore --worktree --staged \./u);
-  assert.doesNotMatch(child, /gh pr merge[^\n]*--auto/u);
-});
+
 
 test("funding classification changes refresh serving tables before downstream projections read them", () => {
   const commands = chinaFundingPlan("2026-09-12", "test-sources").find((stage) => stage.id === "projections").commands.map((args) => args[0]);

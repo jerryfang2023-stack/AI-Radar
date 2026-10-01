@@ -31,7 +31,7 @@ export async function captureOriginal(lead, { date, fetcher = fetch } = {}) {
   if (!response.ok) throw new Error(`original_http_${response.status}`);
   const bytes = new Uint8Array(await response.arrayBuffer());
   if (bytes.length > 8 * 1024 * 1024) throw new Error('original_too_large');
-  const charset = response.headers.get('content-type')?.match(/charset=([^;\s]+)/iu)?.[1] || 'utf-8';
+  const charset = (response.headers.get('content-type')?.match(/charset=([^;\s]+)/iu)?.[1] || 'utf-8').replace(/^["']|["']$/gu,'');
   const html = new TextDecoder(charset).decode(bytes);
   const parsed = parseOriginal(html);
   if (parsed.body.length < 300 || /\ufffd/u.test(parsed.body) || /^(?:Just a moment|Access denied|Verify you are human)/iu.test(parsed.title)) throw new Error('original_unreadable');
@@ -44,7 +44,7 @@ export async function captureOriginal(lead, { date, fetcher = fetch } = {}) {
   const hash = crypto.createHash('sha256').update(parsed.body).digest('hex');
   return { status: 'accepted', record: {
     title: parsed.title, original_url: lead.url, canonical_url: response.url || lead.url,
-    source_name: new URL(lead.url).hostname, source_type: 'article', acquisition_channel: 'financing',
+    source_name: new URL(lead.url).hostname, source_type: 'article', source_role: 'original_source', acquisition_channel: 'financing',
     published_at: parsed.date, collected_at: new Date().toISOString(), language: /[\u3400-\u9fff]/u.test(parsed.body) ? 'zh' : 'en',
     content_hash: hash, clean_text: parsed.body, full_text: parsed.body, has_full_text: true,
     extraction_method: 'original_http', extraction_quality: 'high', evidence_object_type: 'original_full_text', evidence_object_usable: true,

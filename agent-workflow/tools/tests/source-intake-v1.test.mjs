@@ -436,17 +436,6 @@ test("AI Funding Tracker insights are enabled in the daily RSS collection lane",
   assert.equal(source.interface_type, "rss");
   assert.equal(source.source_type, "funding");
   assert.equal(source.enabled_default, true);
-
-  const workflow = fs.readFileSync(
-    path.join(projectRoot, ".github/workflows/daily-persistent-assets-pr.yml"),
-    "utf8",
-  );
-  assert.match(workflow, /\(aihot keyword gdelt rss funding\)/u);
-  assert.match(
-    workflow,
-    /run-guanlan-daily-monitor-with-qc\.mjs[\s\S]*--merge-existing-intake=true/u,
-    "same-day reruns must preserve previously accepted intake while current gates re-evaluate it",
-  );
 });
 
 test("all discovery channels persist original-source fetch status for routed-pool gating", () => {

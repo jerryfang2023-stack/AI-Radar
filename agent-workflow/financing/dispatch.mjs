@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { spawnSync } from 'node:child_process';
 import { queryPlan } from './discovery.mjs';
+import { acceptedPublicationStatus } from './dispatch-state.mjs';
 const args = new Map(process.argv.slice(2).map(arg => { const [key,...value] = arg.replace(/^--/u,'').split('='); return [key,value.join('=')]; }));
 const date = args.get('date') || new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 queryPlan(date);
@@ -13,8 +14,9 @@ function gh(args, optional = false) {
 const report = gh(['api',`repos/${repo}/contents/agent-workflow/reports/financing/${date}/publication.json?ref=main`,'--jq','.content'],true);
 let publication;
 if (report) publication = JSON.parse(Buffer.from(report,'base64').toString('utf8'));
-if (publication?.date === date && ['ready_for_review','no_new_financing','pending_verification'].includes(publication.status)) {
-  console.log(JSON.stringify({date,status:publication.status === 'ready_for_review' ? 'awaiting_portal' : publication.status, accepted_on_main:true}));
+const acceptedStatus = acceptedPublicationStatus(publication, date);
+if (acceptedStatus) {
+  console.log(JSON.stringify({date,status:acceptedStatus, accepted_on_main:true}));
 } else {
   const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion']));
   const matching = runs.filter(run => run.displayTitle === `Financing ${date}`);
