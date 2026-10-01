@@ -4,7 +4,7 @@
     <view class="entity-hero">
       <text class="eyebrow">{{type === 'companies' ? (entity.categoriesText || 'AI 企业') : (type === 'investors' ? '机构库' : (type==='products'?'产品库':'人物库'))}}</text>
       <view class="hero-title"><view class="avatar serif">{{entity.initial}}</view><view><text class="name serif">{{entity.name}}</text><text class="role" wx:if="{{type === 'people'}}">{{entity.roleText}}</text></view></view>
-      <text wx:if="{{type === 'companies' || type === 'products'}}" class="deck">{{entity.summary}}</text>
+      <text wx:if="{{entity.summary}}" class="deck">{{entity.summary}}</text>
       <text wx:elif="{{type === 'investors'}}" class="deck">已投企业：{{entity.companiesText}}</text>
       <text wx:else class="deck">关联企业：{{entity.companiesText}}</text>
     </view>
@@ -14,20 +14,31 @@
     <view wx:if="{{contentLocked}}" class="content-access-gate">
       <text class="gate-kicker">{{lockReason === 'expired' ? '浏览权益已到期' : lockReason === 'session' ? '登录状态待恢复' : '游客试读已完成'}}</text>
       <text class="gate-title serif">{{lockReason === 'session' ? '重新登录后继续浏览' : lockReason === 'expired' ? '开通会员查看完整档案' : '注册后查看完整档案'}}</text>
-      <text class="gate-copy">主体名称和简介可见，企业关系、投资活动与融资历史需有效浏览权益。</text>
+      <text class="gate-copy">主体名称和简介可见，履历、研究资料、关联关系与融资历史需有效浏览权益。</text>
       <button bindtap="unlockContent">{{lockReason === 'session' ? '重新登录' : lockReason === 'expired' ? '查看会员权益' : '注册并继续'}}</button>
       <text class="gate-note">可随时返回生态栏目。</text>
     </view>
 
     <block wx:else>
 
+    <block wx:if="{{entity.publicProfile}}">
+      <view wx:if="{{entity.publicProfile.experienceSummary}}" class="detail-section"><text class="section-title serif">专业经历</text><text class="plain-copy">{{entity.publicProfile.experienceSummary}}</text></view>
+      <view wx:for="{{entity.publicProfile.sections}}" wx:key="title" wx:for-item="section" class="detail-section">
+        <text class="section-title serif">{{section.title}}</text>
+        <view wx:for="{{section.items}}" wx:key="id" class="research-item">
+          <text wx:if="{{item.label}}" class="research-label">{{item.label}}</text><text class="research-text">{{item.text}}</text>
+          <button wx:if="{{item.sourceUrl}}" class="research-source" data-url="{{item.sourceUrl}}" bindtap="copySource">{{item.sourceTitle || '公开来源'}} · 复制链接</button>
+        </view>
+      </view>
+    </block>
+
     <view class="metric-grid" wx:if="{{type === 'companies'}}">
       <view><text>融资轮次</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>投资机构</text><strong>{{entity.investorCount}} 家</strong></view><view><text>创始团队</text><strong>{{entity.founderCount}} 人</strong></view>
     </view>
-    <view class="metric-grid" wx:elif="{{type === 'investors'}}">
+    <view class="metric-grid" wx:elif="{{type === 'investors' && (!entity.publicProfile || entity.roundCount)}}">
       <view><text>参与轮次</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>领投轮次</text><strong>{{entity.leadCount}} 笔</strong></view><view><text>已投企业</text><strong>{{entity.companyCount}} 家</strong></view>
     </view>
-    <view class="metric-grid" wx:elif="{{type==='people'}}">
+    <view class="metric-grid" wx:elif="{{type==='people' && (!entity.publicProfile || entity.roundCount)}}">
       <view><text>关联企业</text><strong>{{entity.companyCount}} 家</strong></view><view><text>融资动态</text><strong>{{entity.roundCount}} 笔</strong></view><view><text>最近动态</text><strong>{{entity.latestDate}}</strong></view>
     </view>
 
@@ -38,22 +49,22 @@
     </view>
 
     <view wx:if="{{type === 'products'}}" class="detail-section"><text class="section-title serif">产品用途</text><text class="plain-copy">{{entity.summary}}</text></view>
-    <view wx:if="{{type==='companies' && entity.productLinks.length}}" class="detail-section"><text class="section-title serif">旗下产品</text><view class="profile-list relation-list"><button wx:for="{{entity.productLinks}}" wx:key="key" data-key="{{item.key}}" data-type="products" bindtap="openEntity"><text>{{item.name}}</text><text>查看产品 ›</text></button></view></view>
+    <view wx:if="{{type==='companies' && entity.productLinks.length}}" class="detail-section"><text class="section-title serif">旗下产品</text><view class="profile-list relation-list"><button wx:for="{{entity.productLinks}}" wx:key="key" data-key="{{item.key}}" data-name="{{item.name}}" data-type="products" bindtap="openEntity"><text>{{item.name}}</text><text>查看产品 ›</text></button></view></view>
     <view wx:if="{{type === 'companies' && entity.founders.length}}" class="detail-section">
       <text class="section-title serif">人物库</text>
-      <view class="profile-list relation-list"><button wx:for="{{entity.founders}}" wx:key="name" data-key="{{item.key}}" data-type="people" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{item.role}}</text></view><text>查看人物 ›</text></button></view>
+      <view class="profile-list relation-list"><button wx:for="{{entity.founders}}" wx:key="key" data-key="{{item.key}}" data-name="{{item.name}}" data-type="people" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{item.role}}</text></view><text>查看人物 ›</text></button></view>
     </view>
 
     <view wx:if="{{type === 'companies' && entity.investors.length}}" class="detail-section">
-      <text class="section-title serif">机构库</text><view class="profile-list relation-list"><button wx:for="{{entity.investorLinks}}" wx:key="name" data-key="{{item.key}}" data-type="investors" bindtap="openEntity"><view><text>{{item.name}}</text><text>关联本企业融资</text></view><text>查看机构 ›</text></button></view>
+      <text class="section-title serif">机构库</text><view class="profile-list relation-list"><button wx:for="{{entity.investorLinks}}" wx:key="name" data-key="{{item.key}}" data-name="{{item.name}}" data-type="investors" bindtap="openEntity"><view><text>{{item.name}}</text><text>关联本企业融资</text></view><text>查看机构 ›</text></button></view>
     </view>
 
-    <view wx:if="{{type !== 'companies'}}" class="detail-section">
+    <view wx:if="{{type !== 'companies' && entity.categoriesFullText}}" class="detail-section">
       <text class="section-title serif">{{type === 'investors' ? '已投赛道' : (type==='products'?'应用场景':'关联领域')}}</text><text class="plain-copy">{{entity.categoriesFullText}}</text>
     </view>
 
-    <view wx:if="{{type !== 'companies'}}" class="detail-section">
-      <text class="section-title serif">关联企业</text><view class="profile-list relation-list"><button wx:for="{{entity.companyLinks}}" wx:key="name" data-key="{{item.key}}" data-name="{{item.name}}" data-type="companies" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{type === 'investors' ? '已收录被投公司' : (type==='products'?'所属公司':'任职企业')}}</text></view><text>查看企业 ›</text></button></view>
+    <view wx:if="{{type !== 'companies' && entity.companyLinks.length}}" class="detail-section">
+      <text class="section-title serif">关联企业</text><view class="profile-list relation-list"><button wx:for="{{entity.companyLinks}}" wx:key="name" data-key="{{item.key}}" data-name="{{item.name}}" data-type="companies" bindtap="openEntity"><view><text>{{item.name}}</text><text>{{type === 'investors' ? '已收录被投公司' : (type==='products'?'所属公司':'融资记录关联')}}</text></view><text>查看企业 ›</text></button></view>
     </view>
 
     <view class="detail-section">
@@ -63,7 +74,7 @@
         <view><text class="activity-title">{{type === 'companies' ? item.round : item.company}}</text><text class="activity-meta">{{item.date}} · {{item.round}}</text></view><view><strong>{{item.amount}}</strong><text>查看融资 ›</text></view>
       </button>
     </view>
-    <view wx:if="{{type==='products' && relatedProducts.length}}" class="detail-section"><text class="section-title serif">相关产品</text><view class="profile-list relation-list"><button wx:for="{{relatedProducts}}" wx:key="key" data-key="{{item.key}}" data-type="products" bindtap="openEntity"><text>{{item.name}}</text><text>查看产品 ›</text></button></view></view>
+    <view wx:if="{{type==='products' && relatedProducts.length}}" class="detail-section"><text class="section-title serif">相关产品</text><view class="profile-list relation-list"><button wx:for="{{relatedProducts}}" wx:key="key" data-key="{{item.key}}" data-name="{{item.name}}" data-type="products" bindtap="openEntity"><text>{{item.name}}</text><text>查看产品 ›</text></button></view></view>
     <view wx:if="{{entity.sources.length}}" class="detail-section"><text class="section-title serif">公开来源</text><view class="profile-list relation-list"><button wx:for="{{entity.sources}}" wx:key="url" data-url="{{item.url}}" bindtap="copySource"><text>{{item.title}}</text><text>复制链接 ›</text></button></view></view>
     </block>
   </view>

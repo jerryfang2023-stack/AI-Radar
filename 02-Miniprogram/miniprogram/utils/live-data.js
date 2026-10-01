@@ -1,4 +1,5 @@
 const { isFundingVisible } = require("./funding-visibility.js");
+const { currentFinancingIndex, taxonomyVersion } = require('./financing-taxonomy.js');
 const bundledFundingIndex = require("../data/funding-index.js");
 const bundledFundingDetails = require("../data/funding-details.js");
 const bundledReportIndex = require("../data/report-index.js");
@@ -9,10 +10,10 @@ const PUBLIC_ORIGIN = "https://www.zkdlj.vip";
 const API_ROOT = `${PUBLIC_ORIGIN}/data`;
 const LIVE_ROOT = `${API_ROOT}/mini`;
 const CACHE_KEYS = {
-  fundingManifest: "guanlan_live_funding_manifest_v2",
-  fundingIndex: "guanlan_live_funding_index_v2",
-  fundingEntities: "guanlan_live_funding_entities_v2",
-  fundingDetails: "guanlan_live_funding_detail_cache_v2",
+  fundingManifest: "guanlan_live_funding_manifest_v3",
+  fundingIndex: "guanlan_live_funding_index_v3",
+  fundingEntities: "guanlan_live_funding_entities_v3",
+  fundingDetails: "guanlan_live_funding_detail_cache_v3",
   reportManifest: "guanlan_live_report_manifest_v1",
   reportIndex: "guanlan_live_report_index_v1",
   communityDetails: "guanlan_live_community_detail_cache_v1",
@@ -339,6 +340,7 @@ function writeStorage(key, value) {
 }
 
 function assertFundingManifest(payload) {
+  if (payload?.taxonomyVersion !== taxonomyVersion) throw new Error("融资分类版本不一致");
   // Reviewed removals may reduce the count; completeness is checked against the index.
   if (!Number.isInteger(payload?.cardCount) || payload.cardCount < 0) throw new Error("融资数量无效");
   if (!payload || !text(payload.version) || !/^\d{4}-\d{2}-\d{2}$/.test(text(payload.latestDate))) throw new Error("融资清单无效");
@@ -347,8 +349,9 @@ function assertFundingManifest(payload) {
 }
 
 function assertFundingIndex(payload, manifest) {
+  if (!currentFinancingIndex(payload) || payload.meta.taxonomyVersion !== manifest.taxonomyVersion) throw new Error("融资索引分类版本不一致");
   if (payload?.cards?.some(card => !isFundingVisible(card))) throw new Error("融资索引展示范围已更新");
-  if (!payload?.meta || !Array.isArray(payload.cards) || payload.cards.length !== Number(manifest.cardCount)) throw new Error("融资索引无效");
+  if (!payload?.meta || !Array.isArray(payload.cards) || payload.cards.length !== Number(manifest.cardCount) || payload.meta.cardCount !== payload.cards.length) throw new Error("融资索引无效");
   if (payload.meta.latestDate !== manifest.latestDate || payload.meta.fundingVersion !== manifest.fundingVersion) throw new Error("融资索引版本不一致");
   if (new Set(payload.cards.map((item) => item.id)).size !== payload.cards.length) throw new Error("融资索引存在重复 ID");
 }
@@ -399,8 +402,7 @@ function refreshFundingData() {
     const cachedManifest = readStorage(CACHE_KEYS.fundingManifest);
     const cachedIndex = readStorage(CACHE_KEYS.fundingIndex);
     if (cachedManifest?.version === manifest.version && cachedIndex) {
-      assertFundingIndex(cachedIndex, manifest);
-      return acceptIndex(cachedIndex);
+      try { return acceptIndex(cachedIndex); } catch { /* re-fetch a corrupt or obsolete cache */ }
     }
     return requestJson(`${PUBLIC_ORIGIN}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`).then((index) => {
       assertFundingIndex(index, manifest);

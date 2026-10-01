@@ -50,8 +50,8 @@ test("every ecosystem entry revalidates, keeps filters, coalesces requests and s
 });
 
 test("source check date is distinct from funding disclosure and follows market scope", () => {
-  const index = { meta: { latestDate: "2026-08-30" }, cards: [
-    { date: "2026-08-26", marketRegion: "global" }, { date: "2026-08-25", marketRegion: "china" },
+  const index = { meta: { taxonomyVersion: "AI-FUNDING-TAGS-1.0", latestDate: "2026-08-30" }, cards: [
+    { id: "g", subcategory: "AI 编程与软件研发", date: "2026-08-26", marketRegion: "global" }, { id: "c", subcategory: "AI 玩具与陪伴设备", date: "2026-08-25", marketRegion: "china" },
   ] };
   assert.equal(buildOverview(index).systemCheckDate, "2026-08-30");
   assert.equal(buildOverview(index).latestFundingDate, "2026-08-26");
