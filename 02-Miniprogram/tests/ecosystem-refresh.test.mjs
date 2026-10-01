@@ -28,6 +28,8 @@ test("every ecosystem entry revalidates, keeps filters, coalesces requests and s
       refreshReportData: async () => ({ index: reports }),
     },
     "../../utils/ecosystem-insights.js": { buildOverview },
+    "../../utils/capital-map.js": require("../miniprogram/utils/capital-map.js"),
+    "../../data/financing-taxonomy.js": require("../miniprogram/data/financing-taxonomy.js"),
     "../../utils/community-essays.js": { mergeCommunityEssays: () => [] },
     "../../utils/tab-bar.js": { syncTabBar() {} }, "../../utils/analytics.js": { track() {} },
   }, { getStorageSync: () => "", stopPullDownRefresh: () => { stopped++; } });
@@ -46,7 +48,8 @@ test("every ecosystem entry revalidates, keeps filters, coalesces requests and s
   release({ index: funding, refreshFailed: true });
   await second;
   assert.equal(page.data.refreshFailed, true);
-  assert.ok(page.data.signals.length);
+  assert.equal(page.data.capital.rows.length, 52);
+  assert.ok(page.data.capital.count);
 });
 
 test("source check date is distinct from funding disclosure and follows market scope", () => {

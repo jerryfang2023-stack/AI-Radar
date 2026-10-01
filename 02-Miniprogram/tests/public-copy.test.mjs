@@ -66,7 +66,7 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.match(marketSource, /<app-header title="生态"/u);
   assert.match(marketSource, />生态图谱<[\s\S]*>生态名录</u);
   assert.doesNotMatch(marketSource, /数据更新至|本期信号/u);
-  assert.match(marketSource, /class="section-head signal-head"[\s\S]*资本正在流向哪里[\s\S]*class="market-segment"/u);
+  assert.match(marketSource, /class="cm-head"[\s\S]*资本热力图谱[\s\S]*class="market-segment"/u);
   assert.match(watchlistSource, /正在进入生态 · 生态名录/u);
   assert.match(watchlistLogic, /ECOSYSTEM_MODE_KEY[\s\S]*wx\.switchTab/u);
   assert.doesNotMatch(fundingRowSource, /中国区/u);
@@ -326,11 +326,11 @@ test("keeps list pages concise while preserving detail-page actions", () => {
   assert.doesNotMatch(terminalSource, /checkbox/u);
   assert.match(terminalSource, /placeholder="公司 \/ 机构 \/ 产品"/u);
   assert.doesNotMatch(terminalSource, /category-chip|市场类别|全部市场/u);
-  assert.match(marketSource, /资本正在流向哪里/u);
-  assert.match(marketSource, /赛道热度榜/u);
-  assert.match(marketSource, /热力趋势/u);
-  assert.match(marketSource, /scroll-view class="signal-scroller"/u);
-  assert.match(marketLogic, /buildOverview/u);
+  assert.match(marketSource, /资本热力图谱/u);
+  assert.match(marketSource, /全赛道看板/u);
+  assert.match(marketSource, /趋势聚焦/u);
+  assert.match(marketSource, /bindtap="toggleMapAll"/u);
+  assert.match(marketLogic, /capital\.build/u);
   assert.match(marketLogic, /pages\/sector-detail\/index/u);
   assert.doesNotMatch(`${marketSource}\n${watchlistSource}`, /AI FUNDING|GUANLAN RESEARCH|更新日期/u);
 });
