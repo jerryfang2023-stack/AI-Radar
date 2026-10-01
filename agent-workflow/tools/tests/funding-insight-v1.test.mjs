@@ -374,6 +374,9 @@ test("withdrawn financing fails eligibility and persisted-card consistency", () 
     "OpenAI又要融资了：1.2万亿美元估值，谁还敢接下一棒？",
     "人工智能公司寻求新一轮融资",
     "Acme AI in talks to raise $1.5B",
+    "Modal Labs closing in on $750M round at $15.75B valuation",
+    "Modal Labs is nearing a $750 million funding round",
+    "推理提供商 Modal Labs 即将完成 7.5 亿美元融资，估值达 157.5 亿美元",
   ]) {
     const event = { ...base, display_title_zh: title };
     assert.equal(isEligibleFundingInsightEvent(event), false, title);
