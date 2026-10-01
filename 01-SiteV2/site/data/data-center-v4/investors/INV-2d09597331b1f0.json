@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-07-01",
     "latest_disclosed_at": "2026-08-07",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "pre_seed",
@@ -83,6 +83,11 @@
         "entity_id": "EN-249fdefbb63fa7b3",
         "canonical_entity_id": "",
         "name": "Lemma"
+      },
+      {
+        "entity_id": "EN-f86fd89de87a848a",
+        "canonical_entity_id": "",
+        "name": "Naïve"
       },
       {
         "entity_id": "EN-858b4458c482f7d2",
@@ -128,6 +133,46 @@
             "source_content_hash": "af7a29745db5560a",
             "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
             "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-99ae6e5da60fa206",
+        "funding_insight_id": "FI-06ac9b69bccd484e",
+        "event_ids": [
+          "EV-4d7f8b6f1f40e829"
+        ],
+        "company_entity_id": "EN-f86fd89de87a848a",
+        "company_canonical_entity_id": "",
+        "company_name": "Naïve",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$28.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 28500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2850 万美元"
+        },
+        "announced_at": "2026-08-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-bed538fdd09d371c",
+            "source_url": "https://pulse2.com/naive-raises-28-5-million-series-a-to-build-infrastructure-for-autonomous-companies/",
+            "source_title": "Naïve Raises $28.5 Million Series A To Build Infrastructure For Autonomous Companies",
+            "source_content_hash": "0452d72865892d7c",
+            "quote": "The round was led by Nexus Venture Partners, with participation from Y Combinator, Zetta Venture Partners and Liquid 2 Ventures.",
+            "quote_hash": "4ef9bec974783902673a3e4d9e2b4f2d4eaf45fd1dca9777929ab09d40de0e52"
           }
         ]
       },
@@ -180,6 +225,14 @@
         "source_content_hash": "af7a29745db5560a",
         "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
         "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+      },
+      {
+        "source_id": "FISRC-bed538fdd09d371c",
+        "source_url": "https://pulse2.com/naive-raises-28-5-million-series-a-to-build-infrastructure-for-autonomous-companies/",
+        "source_title": "Naïve Raises $28.5 Million Series A To Build Infrastructure For Autonomous Companies",
+        "source_content_hash": "0452d72865892d7c",
+        "quote": "The round was led by Nexus Venture Partners, with participation from Y Combinator, Zetta Venture Partners and Liquid 2 Ventures.",
+        "quote_hash": "4ef9bec974783902673a3e4d9e2b4f2d4eaf45fd1dca9777929ab09d40de0e52"
       },
       {
         "source_id": "FISRC-d718182aef653666",
@@ -239,6 +292,10 @@
         {
           "description": "官网自述已种子投资 40 多家独角兽企业、相关企业总企业价值超过 2500 亿美元；该统计为机构口径，非基金回报或独立审计数据。",
           "source_id": "liquid2_home"
+        },
+        {
+          "description": "融资来源记录：Naïve · A轮 · 2026-08-06 · 本轮参投 · $28.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bed538fdd09d371c"
         }
       ],
       "contacts": [
@@ -274,6 +331,14 @@
           "source_content_hash": "c8b3197fc31ee776c071d837d5d8799575fdfdab2431c6b4c314e8d40d7bec00",
           "quote": "Liquid 2 is composed of two funds: an early-stage fund for pre-seed or seed founders, and a growth-stage fund that starts at Series B.",
           "quote_hash": "dcc25193dae30698c68fc551387585033f642b755842b7181c92f50d3754fa06"
+        },
+        {
+          "source_id": "FISRC-bed538fdd09d371c",
+          "source_url": "https://pulse2.com/naive-raises-28-5-million-series-a-to-build-infrastructure-for-autonomous-companies/",
+          "source_title": "Naïve Raises $28.5 Million Series A To Build Infrastructure For Autonomous Companies",
+          "source_content_hash": "0452d72865892d7c",
+          "quote": "The round was led by Nexus Venture Partners, with participation from Y Combinator, Zetta Venture Partners and Liquid 2 Ventures.",
+          "quote_hash": "4ef9bec974783902673a3e4d9e2b4f2d4eaf45fd1dca9777929ab09d40de0e52"
         }
       ],
       "last_verified_at": "2026-09-26"

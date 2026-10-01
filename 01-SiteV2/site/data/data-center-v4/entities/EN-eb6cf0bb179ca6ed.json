@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,7 +54,7 @@
   },
   "entity": {
     "id": "EN-eb6cf0bb179ca6ed",
-    "name": "NSCALE",
+    "name": "Nscale",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -63,18 +63,20 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-f53bfa2bb0275904"
+      "EV-f53bfa2bb0275904",
+      "EV-5d81946ecc60b668"
     ],
     "viewpointIds": [],
     "classificationRefs": [
       "TX-product_form-compute_cloud_service"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-09-25",
-    "lastSeen": "2026-10-01",
+    "firstSeen": "2026-09-04",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-5d81946ecc60b668",
         "EV-f53bfa2bb0275904"
       ],
       "deployments": [],
@@ -85,6 +87,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-5d81946ecc60b668",
+        "dataDate": "2026-10-02",
+        "date": "2026-09-04",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "rumored",
+        "statusLabel": "rumored",
+        "title": "AI计算提供商Nscale寻求35亿美元IPO前融资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-eb6cf0bb179ca6ed"
+        ]
+      },
       {
         "id": "EV-f53bfa2bb0275904",
         "dataDate": "2026-10-01",
@@ -193,7 +210,7 @@
         "HW-9a39a7f449362f96"
       ],
       "firstSeen": "2026-04-30",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     }
   ],
   "fde": [],

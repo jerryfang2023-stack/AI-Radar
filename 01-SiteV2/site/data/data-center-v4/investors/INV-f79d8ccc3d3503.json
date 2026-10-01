@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,11 +61,12 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 5,
     "china_market_company_count": 5,
@@ -74,11 +75,13 @@
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 4,
+      "lead": 1,
       "participant": 4
     },
     "round_codes": [
       "angel",
       "angel_plus",
+      "multi_round",
       "pre_series_a",
       "strategic"
     ],
@@ -107,6 +110,11 @@
         "entity_id": "EN-fcfad5f0679009d4",
         "canonical_entity_id": "EN-fcfad5f0679009d4",
         "name": "薇光点亮"
+      },
+      {
+        "entity_id": "EN-2a92da4bc5db543c",
+        "canonical_entity_id": "",
+        "name": "Violoop"
       }
     ],
     "activities": [
@@ -147,6 +155,46 @@
             "source_content_hash": "3943ea5191d9c7eb",
             "quote": "投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。",
             "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-070d913eb09bda3c",
+        "funding_insight_id": "FI-29f297142676a40b",
+        "event_ids": [
+          "EV-04ac681ff8b72e6a"
+        ],
+        "company_entity_id": "EN-2a92da4bc5db543c",
+        "company_canonical_entity_id": "",
+        "company_name": "Violoop",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "亿级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3be0dc7558cb7d71",
+            "source_url": "https://elsewhere.news/zh/lanchi/violoopcontext",
+            "source_title": "蓝驰创投领投，Violoop正式完成亿元级融资，打造个人全量Context平台和自进化系统｜蓝驰家族",
+            "source_content_hash": "f6503c5ecc6ff13e459c42df57836279c72366107ba3335a8e62f71886d04975",
+            "quote": "蓝驰创投领投，其他知名产业投资机构和战投方共同投资",
+            "quote_hash": "ced182a6c134945975ac529b0297a2e92984c1df94a2240bda653fdcb2f7033f"
           }
         ]
       },
@@ -451,6 +499,14 @@
         "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
       },
       {
+        "source_id": "FISRC-3be0dc7558cb7d71",
+        "source_url": "https://elsewhere.news/zh/lanchi/violoopcontext",
+        "source_title": "蓝驰创投领投，Violoop正式完成亿元级融资，打造个人全量Context平台和自进化系统｜蓝驰家族",
+        "source_content_hash": "f6503c5ecc6ff13e459c42df57836279c72366107ba3335a8e62f71886d04975",
+        "quote": "蓝驰创投领投，其他知名产业投资机构和战投方共同投资",
+        "quote_hash": "ced182a6c134945975ac529b0297a2e92984c1df94a2240bda653fdcb2f7033f"
+      },
+      {
         "source_id": "FISRC-bea9d0be613bc1cd",
         "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
         "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
@@ -608,12 +664,12 @@
           "source_id": "FISRC-3a00c703054126cd"
         },
         {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
+          "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮领投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3be0dc7558cb7d71"
         },
         {
-          "description": "融资来源记录：它石智航 · Pre-A轮 · 2026-04-16 · 本轮参投 · 超4.5亿美元（约30亿元）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b4d6b7523ee32ad7"
+          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bea9d0be613bc1cd"
         }
       ],
       "contacts": [
@@ -688,20 +744,20 @@
           "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
         },
         {
+          "source_id": "FISRC-3be0dc7558cb7d71",
+          "source_url": "https://elsewhere.news/zh/lanchi/violoopcontext",
+          "source_title": "蓝驰创投领投，Violoop正式完成亿元级融资，打造个人全量Context平台和自进化系统｜蓝驰家族",
+          "source_content_hash": "f6503c5ecc6ff13e459c42df57836279c72366107ba3335a8e62f71886d04975",
+          "quote": "蓝驰创投领投，其他知名产业投资机构和战投方共同投资",
+          "quote_hash": "ced182a6c134945975ac529b0297a2e92984c1df94a2240bda653fdcb2f7033f"
+        },
+        {
           "source_id": "FISRC-bea9d0be613bc1cd",
           "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
           "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
           "source_content_hash": "311224a4dfb089df",
           "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
           "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
-        },
-        {
-          "source_id": "FISRC-b4d6b7523ee32ad7",
-          "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-          "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-          "source_content_hash": "0f321e5ffc10ea03",
-          "quote": "同时启明创投、线性资本、蓝驰创投、襄禾资本、洪泰基金等老股东也进行了战略投资加注",
-          "quote_hash": "ea6504441ab3f48998d2e8af72feaeac84f46475c936005d5c8982232af6d170"
         }
       ],
       "last_verified_at": "2026-09-25",

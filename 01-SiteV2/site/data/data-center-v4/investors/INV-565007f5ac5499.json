@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2024-01",
-    "latest_disclosed_at": "2026-08-25",
+    "latest_disclosed_at": "2026-09-02",
     "role_counts": {
       "historical_or_ambiguous": 7,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "angel",
+      "multi_round",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -89,9 +91,54 @@
         "entity_id": "EN-ada6f7916f22af98",
         "canonical_entity_id": "EN-ada6f7916f22af98",
         "name": "求之科技"
+      },
+      {
+        "entity_id": "EN-2a92da4bc5db543c",
+        "canonical_entity_id": "",
+        "name": "Violoop"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1b15d6dc9e02285c",
+        "funding_insight_id": "FI-29f297142676a40b",
+        "event_ids": [
+          "EV-04ac681ff8b72e6a"
+        ],
+        "company_entity_id": "EN-2a92da4bc5db543c",
+        "company_canonical_entity_id": "",
+        "company_name": "Violoop",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "亿级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ce1b109c402e02b",
+            "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+            "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+            "source_content_hash": "d2514a816bb64a43",
+            "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+            "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+          }
+        ]
+      },
       {
         "activity_id": "IA-56a453c2dec08355",
         "funding_insight_id": "FI-852e4f68397a135a",
@@ -403,6 +450,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ce1b109c402e02b",
+        "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+        "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+        "source_content_hash": "d2514a816bb64a43",
+        "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+        "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+      },
+      {
         "source_id": "FISRC-2a3446f702110142",
         "source_url": "https://news.pedaily.cn/202608/568060.shtml",
         "source_title": "格通智联完成数亿元Pre A轮融资",
@@ -535,16 +590,16 @@
           "source_id": "lenovo_lcig_profile"
         },
         {
+          "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ce1b109c402e02b"
+        },
+        {
           "description": "融资来源记录：格通智联 · Pre-A轮 · 2026-08-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a3446f702110142"
         },
         {
           "description": "融资来源记录：求之科技 · 天使轮 · 2026-07-01 · 本轮参投 · 1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d45f7a4d8fd76b88"
-        },
-        {
-          "description": "融资来源记录：星动纪元 · 历史轮次未披露 · 2024-01 · 2024年1月天使轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-077f534a8b9f515e"
         }
       ],
       "contacts": [
@@ -596,6 +651,14 @@
           "quote_hash": "8729c59480c30e9eb4668b63bb0ef37e3e15c680dd2d12fff401e2f1f12c24c5"
         },
         {
+          "source_id": "FISRC-4ce1b109c402e02b",
+          "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+          "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+          "source_content_hash": "d2514a816bb64a43",
+          "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+          "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+        },
+        {
           "source_id": "FISRC-2a3446f702110142",
           "source_url": "https://news.pedaily.cn/202608/568060.shtml",
           "source_title": "格通智联完成数亿元Pre A轮融资",
@@ -610,14 +673,6 @@
           "source_content_hash": "ef8ed950cecf5cd3",
           "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
           "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
-        },
-        {
-          "source_id": "FISRC-077f534a8b9f515e",
-          "source_url": "https://capital.lenovo.com/news/detail/id/932/s/1.html",
-          "source_title": "Lenovo Capital",
-          "source_content_hash": "94c0241a07c069e5",
-          "quote": "Lenovo Capital --> --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 创投简介 成员企业 新闻动态 生态合作 创投学院 科技瞭望塔 联系我们 孵化于清华的「星动纪元」获联想创投领投超亿元天使轮融资，&ldquo;具身智能&rdquo;大幕已拉开丨 LCIG Portfolio 2024 01/10 人形机器人研发公司「星动纪元」获超亿元天使轮融资， 由联想创投领投 ，金鼎资本、清控天诚跟投，老股东世纪金源超额追投，华兴资本担任本次融资独家财务顾问。",
-          "quote_hash": "4d0283d7b7b6dde474c1af6357f5250daaa677996cd88412cbec71857b1350d0"
         }
       ],
       "coverage_status": "researched",

@@ -7,6 +7,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
+import { taxonomyConsistencyProblems } from "../assert-taxonomy-consistency-v4-1.mjs";
 import {
   FUNDING_INDUSTRY_IDS,
   FUNDING_INSIGHT_VERSION,
@@ -51,6 +52,22 @@ test("targeted funding research does not restore unrelated event cards from stal
   assert.equal(checkpointCardMatchesSelection("EV-any", new Set()), true);
 });
 
+test("financing taxonomy gate retains active checks without depending on frozen applications", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "financing-taxonomy-scope-"));
+  const write = (file, value) => { const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, JSON.stringify(value)); };
+  try {
+    fs.mkdirSync(path.join(root, "01-SiteV2/content/11-databases/data-center-v4"), { recursive: true });
+    fs.mkdirSync(path.join(root, "01-SiteV2/content/12-applications/funding-insights"), { recursive: true });
+    write("agent-workflow/product/tag-taxonomy-v4.json", { tags: [], facets: [] });
+    write("01-SiteV2/site/data/data-center-v4-frontstage.json", { meta: { taxonomyVersion: "TAG-V4.1" } });
+    write("01-SiteV2/site/data/funding-insights-v1.json", { meta: { taxonomy_version: "TAG-V4.1" } });
+    assert.deepEqual(taxonomyConsistencyProblems(root), []);
+    assert.ok(taxonomyConsistencyProblems(root, { includeArchivedApplications: true }).some(issue => issue.includes("trend application")));
+    write("01-SiteV2/site/data/funding-insights-v1.json", { meta: { taxonomy_version: "stale" } });
+    assert.ok(taxonomyConsistencyProblems(root).includes("funding application taxonomy version drift"));
+  } finally { fs.rmSync(root, { recursive: true, force: true }); }
+});
+
 test("accepted financing round takes precedence over infrastructure product descriptions", () => {
   const event = { claim_refs: ["CL-C"], object: "软硬一体基础设施支撑具身智能产业落地", display_title_zh: "地瓜机器人完成4亿美元C轮融资" };
   const claim = { claim_id: "CL-C", claim_type: "funding", verification_status: "accepted", source_quote: "9月17日，地瓜机器人宣布完成4亿美元C轮融资。" };
@@ -58,6 +75,13 @@ test("accepted financing round takes precedence over infrastructure product desc
   assert.equal(canonicalFundingEventRound(event, [{ ...claim, verification_status: "pending" }]).code, "infrastructure");
   assert.equal(canonicalFundingEventRound(event, [{ ...claim, claim_id: "UNRELATED" }]).code, "infrastructure");
   assert.equal(canonicalFundingEventRound({ object: "基础设施投资" }).code, "infrastructure");
+});
+
+test("current English round is not combined with a historical seed in the next sentence", () => {
+  const event = { claim_refs: ["CL-A"], object: "$25 million Series A" };
+  const claim = { claim_id: "CL-A", claim_type: "funding", verification_status: "accepted", source_quote: "Cymphony raised $25 million in Series A funding. The round follows a previously undisclosed seed investment of $5 million." };
+  assert.equal(canonicalFundingEventRound(event, [claim]).code, "series_a");
+  assert.equal(canonicalFundingEventRound(event, [{ ...claim, source_quote: "Acme raised $12.55 million in Series A funding. Previously it raised seed funding." }]).code, "series_a");
 });
 
 test("qualified foreign Chinese amounts retain currency instead of a truncated CNY metric", () => {
@@ -861,6 +885,15 @@ test("a current seed round stays separate from a previously undisclosed pre-seed
   assert.equal(canonicalFundingEventAmount(event, [{ ...claims[0], source_quote: quote.replace("The company said it has", "Competitor Beta has") }]), "$17.5 million");
   assert.equal(normalizeFundingRound("seed and pre-seed").code, "multi_round");
   assert.equal(normalizeFundingRound("预种子轮").code, "pre_seed");
+});
+
+test("an announced Series A amount outranks the previous seed and total funding", () => {
+  const claims = [
+    { claim_id: "CL-A", claim_type: "funding", verification_status: "accepted", object: "$40 million Series A", source_quote: "On Tuesday, AIUC announced a $40 million Series A led by Ribbit Capital." },
+    { claim_id: "CL-SEED", claim_type: "funding", verification_status: "accepted", source_quote: "It previously closed a $15 million seed round, bringing its total funding to $55 million." },
+  ];
+  const event = { object: "$40 million Series A", metrics: ["$40 million", "$15 million", "$55 million"], claim_refs: ["CL-A", "CL-SEED"] };
+  assert.equal(canonicalFundingEventAmount(event, claims), "$40 million");
 });
 
 test("canonical source remains citable when private evidence body is unavailable", () => {

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,16 +63,20 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-343f568b0e02c478"
+      "EV-343f568b0e02c478",
+      "EV-4a73829a143cf3fc",
+      "EV-82fd450814e89812"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-14",
-    "lastSeen": "2026-07-15",
+    "firstSeen": "2026-06-29",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-4a73829a143cf3fc",
+        "EV-82fd450814e89812",
         "EV-343f568b0e02c478"
       ],
       "deployments": [],
@@ -83,6 +87,40 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4a73829a143cf3fc",
+        "dataDate": "2026-10-02",
+        "date": "2026-07-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变",
+        "displayTags": [],
+        "entityIds": [
+          "EN-29a3723ce5ee3350",
+          "EN-e0f4f767ac88a930",
+          "EN-8d4321d936320802",
+          "EN-3ccbd9105a45d8fc"
+        ]
+      },
+      {
+        "id": "EV-82fd450814e89812",
+        "dataDate": "2026-10-02",
+        "date": "2026-06-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "planned",
+        "statusLabel": "计划中",
+        "title": "Omen AI 优化数据中心的计划全靠水",
+        "displayTags": [],
+        "entityIds": [
+          "EN-e0f4f767ac88a930",
+          "EN-8903220416e43e8b"
+        ]
+      },
       {
         "id": "EV-343f568b0e02c478",
         "dataDate": "2026-07-15",

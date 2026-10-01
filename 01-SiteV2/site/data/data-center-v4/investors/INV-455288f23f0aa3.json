@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -72,7 +72,8 @@
     "first_disclosed_at": "2026-06-09",
     "latest_disclosed_at": "2026-06-09",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 1,
+      "historical_or_ambiguous": 1
     },
     "round_codes": [
       "angel"
@@ -124,6 +125,38 @@
             "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-5207a3616e3aa61d",
+        "funding_insight_id": "FI-64b8247175959404",
+        "event_ids": [
+          "EV-474ec498c79f0629"
+        ],
+        "company_entity_id": "EN-9ec8c6ad047edf5a",
+        "company_canonical_entity_id": "",
+        "company_name": "威邦震电",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f9c8fdd671d3e193",
+            "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
+            "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
+            "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
+            "quote": "此前，威邦震电已完成两轮融资，投资方包括道远资本、峰瑞资本、方正合生、纳通资本、苏高新金控等知名机构和个人。",
+            "quote_hash": "b8669b32ddc138938a94380ccc60055647f870685da1a45bec4f8ac2e9e3ffcd"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "6d658d71e68a7dd4",
         "quote": "天使轮融资由经纬创投领投，天使+轮由德联资本、道远资本联合领投",
         "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
+      },
+      {
+        "source_id": "FISRC-f9c8fdd671d3e193",
+        "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
+        "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
+        "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
+        "quote": "此前，威邦震电已完成两轮融资，投资方包括道远资本、峰瑞资本、方正合生、纳通资本、苏高新金控等知名机构和个人。",
+        "quote_hash": "b8669b32ddc138938a94380ccc60055647f870685da1a45bec4f8ac2e9e3ffcd"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：华超神控 · 天使轮 · 2026-06-09 · 本轮联合领投 · 亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb7eea4a6bd98034"
+        },
+        {
+          "description": "融资来源记录：威邦震电 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f9c8fdd671d3e193"
         }
       ],
       "contacts": [],
@@ -159,6 +204,14 @@
           "source_content_hash": "6d658d71e68a7dd4",
           "quote": "天使轮融资由经纬创投领投，天使+轮由德联资本、道远资本联合领投",
           "quote_hash": "2542036de1821f5046832f7c50bbdf2a03dabd50f99e97d9183ee496859af3f8"
+        },
+        {
+          "source_id": "FISRC-f9c8fdd671d3e193",
+          "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
+          "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
+          "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
+          "quote": "此前，威邦震电已完成两轮融资，投资方包括道远资本、峰瑞资本、方正合生、纳通资本、苏高新金控等知名机构和个人。",
+          "quote_hash": "b8669b32ddc138938a94380ccc60055647f870685da1a45bec4f8ac2e9e3ffcd"
         }
       ],
       "last_verified_at": "2026-09-25"

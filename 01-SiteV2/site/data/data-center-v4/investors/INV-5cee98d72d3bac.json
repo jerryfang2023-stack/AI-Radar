@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-06-15",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-9779cb30fd39ff9e",
+        "canonical_entity_id": "",
+        "name": "NewCore"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-67ff537f3e46c771",
+        "funding_insight_id": "FI-e5dee46683ef97ba",
+        "event_ids": [
+          "EV-9e88b41977da9588"
+        ],
+        "company_entity_id": "EN-9779cb30fd39ff9e",
+        "company_canonical_entity_id": "",
+        "company_name": "NewCore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$66 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9cc6124e644d0e3d",
+            "source_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities",
+            "source_title": "随着AI智能体成为员工，NewCore携6600万美元崭露头角，赋予它们身份",
+            "source_content_hash": "98de354d6535c1c7abae06ff78b7606f97de5cce232684ad9aa2380176c9e85e",
+            "quote": "The seed round was led by cybersecurity-focused venture firm Cyberstarts",
+            "quote_hash": "379f13d2b8078d7764c307de9486338626785ed1dc28c1f08ef3e9e80bf60ba7"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ee721915ff9853c2",
         "funding_insight_id": "FI-fbe655a1ee0c18ca",
@@ -112,6 +161,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-9cc6124e644d0e3d",
+        "source_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities",
+        "source_title": "随着AI智能体成为员工，NewCore携6600万美元崭露头角，赋予它们身份",
+        "source_content_hash": "98de354d6535c1c7abae06ff78b7606f97de5cce232684ad9aa2380176c9e85e",
+        "quote": "The seed round was led by cybersecurity-focused venture firm Cyberstarts",
+        "quote_hash": "379f13d2b8078d7764c307de9486338626785ed1dc28c1f08ef3e9e80bf60ba7"
+      },
+      {
         "source_id": "FISRC-1bd8ed9d0103713f",
         "source_url": "https://www.island.io/press/island-raises-115-million-in-series-b-funding-to-enable-massive-innovation-on-enterprise-browser",
         "source_title": "Island Raises $115 Million in Series B Funding for Enterprise Browser",
@@ -125,10 +182,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Cyberstarts 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Cyberstarts 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：NewCore · 种子轮 · 2026-06-15 · 本轮领投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9cc6124e644d0e3d"
+        },
         {
           "description": "融资来源记录：Island · 历史轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1bd8ed9d0103713f"
@@ -136,6 +197,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-9cc6124e644d0e3d",
+          "source_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities",
+          "source_title": "随着AI智能体成为员工，NewCore携6600万美元崭露头角，赋予它们身份",
+          "source_content_hash": "98de354d6535c1c7abae06ff78b7606f97de5cce232684ad9aa2380176c9e85e",
+          "quote": "The seed round was led by cybersecurity-focused venture firm Cyberstarts",
+          "quote_hash": "379f13d2b8078d7764c307de9486338626785ed1dc28c1f08ef3e9e80bf60ba7"
+        },
         {
           "source_id": "FISRC-1bd8ed9d0103713f",
           "source_url": "https://www.island.io/press/island-raises-115-million-in-series-b-funding-to-enable-massive-innovation-on-enterprise-browser",

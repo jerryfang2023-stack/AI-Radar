@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,72 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-09-02",
+    "latest_disclosed_at": "2026-09-02",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-2a92da4bc5db543c",
+        "canonical_entity_id": "",
+        "name": "Violoop"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-9029595542c13a23",
+        "funding_insight_id": "FI-29f297142676a40b",
+        "event_ids": [
+          "EV-04ac681ff8b72e6a"
+        ],
+        "company_entity_id": "EN-2a92da4bc5db543c",
+        "company_canonical_entity_id": "",
+        "company_name": "Violoop",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "亿级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4ce1b109c402e02b",
+            "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+            "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+            "source_content_hash": "d2514a816bb64a43",
+            "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+            "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+          }
+        ]
+      },
       {
         "activity_id": "IA-302ce8e69e5ea165",
         "funding_insight_id": "FI-b1494fe383b9e92d",
@@ -144,6 +194,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4ce1b109c402e02b",
+        "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+        "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+        "source_content_hash": "d2514a816bb64a43",
+        "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+        "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+      },
+      {
         "source_id": "FISRC-a4dbd49c64cb5834",
         "source_url": "https://news.pedaily.cn/202607/565779.shtml",
         "source_title": "VAST完成超10亿元A3轮融资， 聚焦3D大模型及世界模型的算法及应用研究",
@@ -165,10 +223,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "元生资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "元生资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4ce1b109c402e02b"
+        },
         {
           "description": "融资来源记录：三启万物 · 历史轮次未披露 · 老股东持续追投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a4dbd49c64cb5834"
@@ -180,6 +242,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-4ce1b109c402e02b",
+          "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
+          "source_title": "DEMO|对话Violoop：谁不想有个自己的模型，在真实工作里长出来那种",
+          "source_content_hash": "d2514a816bb64a43",
+          "quote": "投资方汇聚了VC及知名产投：联想创投、中金保时捷、蓝驰创投、元生资本、启赋资本、zero2ipo ventures联合出资",
+          "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
+        },
         {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",

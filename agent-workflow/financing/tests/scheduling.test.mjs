@@ -40,7 +40,9 @@ test('retired daily workflows are removed and weekly monitor code stays manual a
 test('unified producer gates facts, research and new taxonomy before publication', () => {
   const stages=productionPlan(date,'reports');
   assert.deepEqual(stages.map(s=>s.id),['facts','research','projections','financing_tags','release_gate']);
-  assert.ok(stages[0].commands.some(c=>c[0].endsWith('assert-china-market-v1.mjs')&&c.includes(`--date=${date}`)&&c.includes('--stage=bundle')));
+  // Global financing batches may contain only overseas events. The V4 gate
+  // validates geography evidence without requiring a domestic-source quota.
+  assert.ok(!stages[0].commands.some(c=>c[0].endsWith('assert-china-market-v1.mjs')));
   assert.ok(stages[0].commands.some(c=>c[0].endsWith('generate-data-center-model-assist.mjs')&&c.includes('--reuse-existing=true')));
   assert.ok(stages[0].commands.some(c=>c.includes('--tasks=claim_extraction,entity_resolution,qa_repair')));
   assert.ok(stages[1].commands.some(c=>c[0].endsWith('assert-funding-insights-v1.mjs')));

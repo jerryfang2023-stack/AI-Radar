@@ -1785,6 +1785,23 @@ test("funding sources older than three months stay in QA by default", () => {
   assert.ok(bundle.qa_queue.some((item) => item.reason === "source_outside_funding_backfill_window"));
 });
 
+test("scoped historical financing permits extraction before event recognition and excludes product events", () => {
+  const source = entry("targeted-history-unrecognized", "More agents in more places",
+    "Natural is an AI software company. Its new equity round totals $30 million.",
+    { published_at: "2026-02-01" });
+  const product = entry("targeted-history-product", "Acme launches an AI agent platform",
+    "Acme launched an AI agent platform for enterprise customers.", { published_at: "2026-02-01" });
+  const policy = { schema_version: "TARGETED-FUNDING-AUTHORIZATION-V1", reviewed_by: "fixture",
+    from: "2026-01-01", to: "2026-10-02", source_refs: [source, product].map(e => sourceArtifact(e.raw, e.file).source_artifact_id) };
+  const build = targetedFundingPolicy => buildBundle([source, product], taxonomy, "2026-10-02", "2026-10-02T00:00:00Z", { targetedFundingPolicy });
+  const allowed = build(policy);
+  assert.equal(allowed.canonical_events.length, 0);
+  assert.ok(allowed.qa_queue.some(q => q.reason === "no_source_bounded_event"));
+  assert.ok(!allowed.qa_queue.some(q => /outside_.*window/u.test(q.reason)));
+  const denied = build({ ...policy, source_refs: [] });
+  assert.ok(denied.qa_queue.every(q => q.reason === "source_outside_daily_window"));
+});
+
 test("sources dated after the data day cannot become commercial events", () => {
   const bundle = buildBundle([
     entry(
@@ -2782,6 +2799,10 @@ test("reviewed exact-span QA repairs replace headline recipients; stale and unre
   const build = (c) => buildBundle([source], taxonomy, date, "2026-07-16T00:00:00Z", { modelAssist: { candidates: [c] } });
   candidate.proposal.action = "extract_claim";
   assert.ok(build(candidate).claims.some(c => c.subject === "上海喜梨信息科技有限公司"));
+  const earlierAutomatic = { ...candidate, candidate_id: "MAC-earlier", task_type: "claim_extraction", review: undefined,
+    proposal: { claims: [{ ...candidate.proposal.claims[0], subject: "一家AI玩具公司" }] } };
+  const reviewedOverAutomatic = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00Z", { modelAssist: { candidates: [earlierAutomatic, candidate] } });
+  assert.ok(reviewedOverAutomatic.claims.some(c => c.subject === "上海喜梨信息科技有限公司"));
   for (const c of [{...candidate, source_hash: "0".repeat(16)}, {...candidate, review: undefined}]) {
     assert.ok(!build(c).claims.some(row => row.extraction_method === "model_source_span"));
     assert.notEqual(build(c).claims[0]?.subject, "上海喜梨信息科技有限公司");

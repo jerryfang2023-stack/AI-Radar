@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-0f74fd965d6447e4",
       "EV-113899096a32165a"
     ],
     "viewpointIds": [],
@@ -71,10 +72,12 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-07-07",
-    "lastSeen": "2026-07-08",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-0f74fd965d6447e4"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -85,6 +88,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-0f74fd965d6447e4",
+        "dataDate": "2026-10-02",
+        "date": "2026-07-07",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Savi 的应用旨在保护消费者免受逼真 AI 诈骗的侵害，例如绑架者索要赎金",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2d0943142ffe9b0f"
+        ]
+      },
       {
         "id": "EV-113899096a32165a",
         "dataDate": "2026-07-08",

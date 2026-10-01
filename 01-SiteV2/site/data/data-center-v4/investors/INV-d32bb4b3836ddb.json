@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-05-20",
     "latest_disclosed_at": "2026-05-20",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "f667c7df09fbcc9020f9ab5ce5510f82535c18f2bebc7af1ef14f1eab13bb834"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a87a607fb0c50be1",
+        "funding_insight_id": "FI-a7a280029acd72db",
+        "event_ids": [
+          "EV-6de81d4ca248ff31"
+        ],
+        "company_entity_id": "EN-b30b83d324e678e4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modem",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人（Framer）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9fd6ba5210b37fed",
+            "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+            "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+            "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+            "quote": "Koen Bok and Jorn van Dijk (Framer)",
+            "quote_hash": "6924052e4067eb4a2eeeb8542068125fecde1b62dfdd7427afd77f9367652548"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "bc6dd70ea1b6ac85",
         "quote": "Koen Bok and Jorn van Dijk, co-founders of Framer",
         "quote_hash": "f667c7df09fbcc9020f9ab5ce5510f82535c18f2bebc7af1ef14f1eab13bb834"
+      },
+      {
+        "source_id": "FISRC-9fd6ba5210b37fed",
+        "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+        "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+        "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+        "quote": "Koen Bok and Jorn van Dijk (Framer)",
+        "quote_hash": "6924052e4067eb4a2eeeb8542068125fecde1b62dfdd7427afd77f9367652548"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
+        },
+        {
+          "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Framer）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
       "contacts": [],
@@ -159,9 +204,29 @@
           "source_content_hash": "bc6dd70ea1b6ac85",
           "quote": "Koen Bok and Jorn van Dijk, co-founders of Framer",
           "quote_hash": "f667c7df09fbcc9020f9ab5ce5510f82535c18f2bebc7af1ef14f1eab13bb834"
+        },
+        {
+          "source_id": "FISRC-9fd6ba5210b37fed",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+          "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+          "quote": "Koen Bok and Jorn van Dijk (Framer)",
+          "quote_hash": "6924052e4067eb4a2eeeb8542068125fecde1b62dfdd7427afd77f9367652548"
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[1].role": {
+          "text": "天使投资人（Framer）",
+          "source_hash": "0761e179eabf314c4db0fb7f5676a340a4b453d9fb79e97312c0f0b94184f1a2",
+          "provider": "manual_review",
+          "model": "Codex",
+          "translated_at": "2026-10-01T19:54:15.224Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 4,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-05-25",
     "latest_disclosed_at": "2026-09-16",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
@@ -137,6 +137,46 @@
             "source_content_hash": "2bb10add5e428ec5",
             "quote": "涵盖了红杉中国、IDG资本、高瓴创投、五源资本、高榕创投、春华创投等头部投资机构",
             "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fa48aa7fd205b35c",
+        "funding_insight_id": "FI-4a45f01cccfbfed5",
+        "event_ids": [
+          "EV-f2eb34f231afc8aa"
+        ],
+        "company_entity_id": "EN-9a970ad7900121db",
+        "company_canonical_entity_id": "EN-9a970ad7900121db",
+        "company_name": "小鹏机器人业务",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮融资",
+        "amount_original": "超9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": 900000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 9 亿美元"
+        },
+        "announced_at": "2026-09-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ea62510cec1d311",
+            "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+            "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+            "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+            "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+            "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
           }
         ]
       },
@@ -329,6 +369,14 @@
         "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
       },
       {
+        "source_id": "FISRC-2ea62510cec1d311",
+        "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+        "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+        "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+        "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+        "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+      },
+      {
         "source_id": "FISRC-2ec9a5e83ce18f75",
         "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
         "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
@@ -424,12 +472,12 @@
           "source_id": "FISRC-a2c9854f5230d423"
         },
         {
-          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ec9a5e83ce18f75"
+          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-09-04 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ea62510cec1d311"
         },
         {
-          "description": "融资来源记录：天机 · 多轮融资 · 2026-05-25 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3e04e9bd8fc1ab06"
+          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ec9a5e83ce18f75"
         }
       ],
       "contacts": [
@@ -489,20 +537,20 @@
           "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
         },
         {
+          "source_id": "FISRC-2ea62510cec1d311",
+          "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+          "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+          "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+          "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+          "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+        },
+        {
           "source_id": "FISRC-2ec9a5e83ce18f75",
           "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
           "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
           "source_content_hash": "b8e4f0b869df00ee",
           "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
           "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
-        },
-        {
-          "source_id": "FISRC-3e04e9bd8fc1ab06",
-          "source_url": "https://news.pedaily.cn/202605/564328.shtml",
-          "source_title": "天机智能完成10亿元融资，投后估值近百亿",
-          "source_content_hash": "18ebeb9db5460eb7",
-          "quote": "腾讯、高榕创投、光合创投、纪源资本 等联合跟投",
-          "quote_hash": "b66c51f927e3b697d5520929115dd73e1dc0a691e559c2552e7f6a867c0c05fc"
         }
       ],
       "coverage_status": "researched",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-09-08",
+    "first_disclosed_at": "2026-08-12",
     "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "co_lead": 2
+      "co_lead": 3
     },
     "round_codes": [
       "series_a",
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
@@ -83,6 +84,11 @@
         "entity_id": "FICO-0ab04bcfc3de286b",
         "canonical_entity_id": "",
         "name": "Euclyd"
+      },
+      {
+        "entity_id": "EN-2f9cb7cda5222087",
+        "canonical_entity_id": "",
+        "name": "Lovable"
       },
       {
         "entity_id": "EN-c04bd5ebd10ab696",
@@ -180,6 +186,46 @@
             "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
           }
         ]
+      },
+      {
+        "activity_id": "IA-149942fc66537fc2",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$400 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf82db3dd7ead1a",
+            "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+            "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+            "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+            "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+            "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -206,6 +252,14 @@
         "source_content_hash": "714c413ab36c1848",
         "quote": "Samsung Electronics led the round, joined by co-leads Scaleup Europe Fund, managed by EQT, and existing investor PSG Equity.",
         "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
+      },
+      {
+        "source_id": "FISRC-dcf82db3dd7ead1a",
+        "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+        "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+        "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+        "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+        "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
       }
     ],
     "public_profile": {

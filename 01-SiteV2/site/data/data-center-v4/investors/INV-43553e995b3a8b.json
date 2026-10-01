@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -72,11 +72,43 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-06f9385e30b8f9c9",
+        "funding_insight_id": "FI-a81898de30b8d7c3",
+        "event_ids": [
+          "EV-e94a992d410d6520"
+        ],
+        "company_entity_id": "EN-b5251b35f15bedc4",
+        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+        "company_name": "Moonshot AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5b27b074fcae4b4",
+            "source_url": "https://www.mg21.com/moonshot.html",
+            "source_title": "中国通用人工智能公司：月之暗面 Moonshot AI",
+            "source_content_hash": "2e4787bc0760def3",
+            "quote": "2023年6月，月之暗面完成天使轮融资，由 Sequoia Capital China（红杉中国） 和 ZhenFund（真格基金）共同参与。",
+            "quote_hash": "57b1621bd9600f86239ab3d984d7d361afef9db2925bb09e553cc5c1017f5e84"
+          }
+        ]
+      },
       {
         "activity_id": "IA-387d90a98c2ecf79",
         "funding_insight_id": "FI-f5103149f04ea6ed",
@@ -111,6 +143,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c5b27b074fcae4b4",
+        "source_url": "https://www.mg21.com/moonshot.html",
+        "source_title": "中国通用人工智能公司：月之暗面 Moonshot AI",
+        "source_content_hash": "2e4787bc0760def3",
+        "quote": "2023年6月，月之暗面完成天使轮融资，由 Sequoia Capital China（红杉中国） 和 ZhenFund（真格基金）共同参与。",
+        "quote_hash": "57b1621bd9600f86239ab3d984d7d361afef9db2925bb09e553cc5c1017f5e84"
+      },
       {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
         "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
@@ -170,6 +210,10 @@
         {
           "description": "官网人物介绍举出小红书、逸仙电商等例子，并称其作为天使投资人为创业者开出第一张支票；这是机构人物介绍中的自述。",
           "source_id": "zhen_team_cases_20260927"
+        },
+        {
+          "description": "融资来源记录：Moonshot AI · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c5b27b074fcae4b4"
         },
         {
           "description": "融资来源记录：Moonshot AI · 天使轮 · 天使轮参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -262,6 +306,14 @@
           "source_content_hash": "c7b29ea070971decaa638d9bd479a4dabb3c39e8973774e17f49575df595b613",
           "quote": "北京 ... 上海 ... 深圳",
           "quote_hash": "9c3dbb757f3eb470e966ed98345a6d6ab91940e1e2766bf6aa9d84fe2eef2a15"
+        },
+        {
+          "source_id": "FISRC-c5b27b074fcae4b4",
+          "source_url": "https://www.mg21.com/moonshot.html",
+          "source_title": "中国通用人工智能公司：月之暗面 Moonshot AI",
+          "source_content_hash": "2e4787bc0760def3",
+          "quote": "2023年6月，月之暗面完成天使轮融资，由 Sequoia Capital China（红杉中国） 和 ZhenFund（真格基金）共同参与。",
+          "quote_hash": "57b1621bd9600f86239ab3d984d7d361afef9db2925bb09e553cc5c1017f5e84"
         },
         {
           "source_id": "FISRC-5d82f5dc9fc96ce5",

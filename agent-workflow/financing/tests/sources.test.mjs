@@ -4,6 +4,14 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {parseOriginal,originalDate,readOriginalPage,fetchText} from '../original-page.mjs';
+
+test('WeChat current-article timestamp uses its display timezone without trusting other hosts',()=>{
+ const timestamp=Date.parse('2026-04-09T16:05:00Z')/1000;
+ const html=`<h1>融资公告</h1><div id="js_content">${'融资原文'.repeat(100)}</div><script>var ct = "${timestamp}";</script>`;
+ assert.equal(parseOriginal(html,{url:'https://mp.weixin.qq.com/s/fixture'}).date,'2026-04-10');
+ assert.equal(parseOriginal(html,{url:'https://example.com/fixture'}).date,'');
+ assert.equal(parseOriginal(html.replace('js_content','unrelated'),{url:'https://mp.weixin.qq.com/s/fixture'}).date,'');
+});
 import {parseSubscription,collectSubscriptions,sourceRegistry} from '../subscriptions.mjs';
 import {syncAIHotSelected} from '../aihot-selected.mjs';
 import {createOriginalReader} from '../original-reader.mjs';
@@ -21,6 +29,9 @@ const item=(id='a',title='Acme AI raises funding')=>({id,title,originalTitle:tit
 test('article dates support Chinese and absolute English dates but reject updates, URL and search dates',()=>{
  assert.equal(originalDate('2026年10月1日 12:20'),'2026-10-01');
  assert.equal(originalDate('September 30, 2026'),'2026-09-30');
+ assert.equal(originalDate('2026-05-28T17:13:20.706Z'),'2026-05-28');
+ assert.equal(originalDate('2026-05-28T23:13:20-07:00'),'2026-05-28');
+ assert.equal(originalDate(Date.parse('2026-05-28T17:13:20Z')),'2026-05-28');
  assert.equal(originalDate('2026-02-31'),'');assert.equal(originalDate('昨天'),'');
  assert.equal(parseOriginal(html('<meta name="dateModified" content="2026-10-01">'),{url:'https://example.com/2026/10/01/a'}).date,'');
  const parsed=parseOriginal(html('<meta name="pubtime" content="2026-10-01 09:12:00">'));
@@ -35,6 +46,7 @@ test('JSON-LD graphs, attribute order, Chinese publisher rules and article-only 
 test('unrelated visible dates do not supply missing publication time',()=>{
  assert.equal(parseOriginal(html().replace('</article>','<aside><time datetime="2026-10-01">Related</time></aside></article>')).date,'');
  assert.equal(parseOriginal(html().replace('</article>','<time class="updated" datetime="2026-10-01">Updated</time></article>')).date,'');
+ assert.equal(parseOriginal(html().replace('</article>','<div><time datetime="2026-05-21">May 21</time></div><div><time datetime="2026-05-21">May 21</time></div></article>')).date,'2026-05-21');
 });
 test('homepages and financing lists cannot masquerade as single article originals',()=>{
  assert.equal(parseOriginal(html(),{url:'https://example.com/'}).article_like,false);
@@ -54,6 +66,7 @@ test('reader recovery still requires the requested original and cannot accept ch
 test('original redirects cannot reach local services; quoted encodings work',async()=>{
  await assert.rejects(fetchText('https://example.com',{fetcher:async()=>new Response('',{status:302,headers:{location:'http://127.0.0.1/secrets'}})}),/not_public/);
  const p=await fetchText('https://example.com',{fetcher:async()=>new Response('中文',{headers:{'content-type':'text/html; charset="utf-8"'}})});assert.equal(p.text,'中文');
+ const duplicateHeader=await fetchText('https://example.com',{fetcher:async()=>new Response('融资原文',{headers:{'content-type':'text/html; charset=utf-8, text/html; charset=utf-8'}})});assert.equal(duplicateHeader.text,'融资原文');
 });
 test('cross-origin redirects strip credentials and rendered listings stay pending',async()=>{
  const seen=[];

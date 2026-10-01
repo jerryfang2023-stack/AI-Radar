@@ -19136,7 +19136,1749 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "generated_at": "2026-10-01T16:29:10.962Z"
+    },
+    "EV-216f840c4af1d3fb": {
+      "id": "EV-216f840c4af1d3fb",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "NanoClaw 是安全沙箱化的 OpenClaw 替代品，属于面向开发者的模型与智能体安全工具。",
+      "input_hash": "ca072a6af000de61d7d24e6ff1e5f1dedc21ebaff77346d392d11971dde783e7",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-056bd835d7bc912e",
+          "quote": "NanoCo, the company behind security-focused OpenClaw alternative NanoClaw, has raised an oversubscribed $12 million seed round following a viral launch"
+        },
+        {
+          "source_id": "FISRC-056bd835d7bc912e",
+          "quote": "But instead of running directly on a computer, with access to all services and credentials, NanoClaw runs sandboxed in a container"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:43.748Z"
+    },
+    "EV-4d7f8b6f1f40e829": {
+      "id": "EV-4d7f8b6f1f40e829",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Naïve 提供自主公司运行时和 serverless agent runtime，通过统一 API 让用户构建和运营 AI 智能体，属于智能体开发与编排平台。",
+      "input_hash": "58b32dd27aeca05d066f0da4c82fa8267f0d81734e54c4941cc0c7620b654580",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-29dadb15030915c7",
+          "quote": "Naïve, which offers infrastructure that lets AI agents take on the bulk of the work involved in running a business"
+        },
+        {
+          "source_id": "FISRC-ce3d6a1d340a142b",
+          "quote": "Naïve is an AI-powered platform that provides an autonomous company runtime, enabling users to build and operate businesses through AI agents that handle tasks like application development, marketing, and operations."
+        },
+        {
+          "source_id": "FISRC-29dadb15030915c7",
+          "quote": "It packages the process of assembling payments, email accounts, phone numbers, cloud infrastructure, storage, and company incorporation behind a single API."
+        },
+        {
+          "source_id": "FISRC-bed538fdd09d371c",
+          "quote": "Naïve seeks to consolidate those functions behind a single configuration file and unified API."
+        },
+        {
+          "source_id": "FISRC-29dadb15030915c7",
+          "quote": "Naïve is also building a serverless runtime that runs agents within lightweight JavaScript environments rather than assigning each one a complete virtual machine — an approach that lets customers pay primarily when an agent is active and makes it less expensive to deploy large numbers of agents."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:43.748Z"
+    },
+    "EV-938ec16c395bded1": {
+      "id": "EV-938ec16c395bded1",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "customer-service",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Omilia 自 2002 年起专注于自动化语音通话和客户支持，其语音优先 AI 平台和 Lexis TTS 模型均面向企业联络中心。",
+      "input_hash": "d735870bb1be0154ba27af2d045d7138285d8ac4bbb4509ada4283802a2d6385",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-65466476b02403ef",
+          "quote": "But according to Athens-based Omilia, which has been working on automating voice calls and customer support since 2002"
+        },
+        {
+          "source_id": "FISRC-df1a7f0614251b64",
+          "quote": "The company’s voice-first AI platform, honed over more than 200 enterprise deployments, is built entirely on its own proprietary agentic Voice AI technology, and supports the most stringent enterprise security and compliance standards, including FedRAMP, PCI-DSS, SOC 2, HIPAA and GDPR."
+        },
+        {
+          "source_id": "FISRC-df1a7f0614251b64",
+          "quote": "The company also launched Lexis, a generative text-to-speech (TTS) model designed specifically for enterprise contact centers and built natively into the Omilia platform."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:43.748Z"
+    },
+    "EV-3f9d420719641eda": {
+      "id": "EV-3f9d420719641eda",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "Lovable 是 vibe-coding 软件创建平台，让用户通过 AI 构建软件，属于 AI 编程与软件研发赛道。",
+      "input_hash": "c77b8c4146968f04fc1adcea292403f1726953cda7fa320cfad0afcca9b19e4e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dcf82db3dd7ead1a",
+          "quote": "Europe’s favorite vibe-coding startup Lovable has confirmed previously reported whispers that it was raising another mega round at a $13.3 billion valuation."
+        },
+        {
+          "source_id": "FISRC-94676d99b2defaa4",
+          "quote": "Lovable is building the software creation platform that gives those closest to a problem the power to solve it"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:43.748Z"
+    },
+    "EV-fb14f97f5b644c1f": {
+      "id": "EV-fb14f97f5b644c1f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Factory 的使命是让软件工程实现自主化，其平台和 Droids 覆盖整个软件开发生命周期，属于 AI 编程与软件研发。",
+      "input_hash": "e20cb07e08f9ef99936b4b9eb5e13bfd48295f684027f30599fd807ec43d1431",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1c7459d2ce055880",
+          "quote": "We founded Factory in 2023 with the mission to bring autonomy to software engineering and create a world where software builds and improves itself."
+        },
+        {
+          "source_id": "FISRC-1c7459d2ce055880",
+          "quote": "Rather than stitching together fragmented tools and standalone agents, teams using Factory govern a single, trusted system across the entire software development lifecycle."
+        },
+        {
+          "source_id": "FISRC-1c7459d2ce055880",
+          "quote": "Factory gives enterprises control over how their software factory learns, which models it uses, and where it runs, whether deployed in the cloud, on-premises, or in fully air-gapped environments."
+        },
+        {
+          "source_id": "FISRC-f4c8c4cc3e97ab74",
+          "quote": "Droids have evolved from best-in-class software development agents into full-spectrum autonomous systems that operate as the critical unit across multiple functions across a software business."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:43.748Z"
+    },
+    "EV-199de9f816cc225c": {
+      "id": "EV-199de9f816cc225c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business",
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "ElevenLabs 以人类级 AI 文本转语音模型起家，并围绕语音模型提供企业智能体、创作者平台和开发者 API，核心是语音模型。",
+      "input_hash": "b7fee06e055e11a1c2c55f5c9281c4613370cb04e29fc2eb259d92ea2e7a3591",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7bbfa0b0946953ff",
+          "quote": "Founded in 2022, ElevenLabs began by developing a truly human-like AI text to speech model."
+        },
+        {
+          "source_id": "FISRC-7bbfa0b0946953ff",
+          "quote": "ElevenAgents, which enables enterprises to deploy voice and chat agents with the reliability, integrations, testing, and monitoring required for large-scale customer operations."
+        },
+        {
+          "source_id": "FISRC-7bbfa0b0946953ff",
+          "quote": "ElevenCreative, a platform for creators and brands to generate, edit, and localize high-fidelity audio across more than seventy languages."
+        },
+        {
+          "source_id": "FISRC-7bbfa0b0946953ff",
+          "quote": "ElevenAPI, which provides low-latency, production-grade voice infrastructure for developers building interactive products and experiences."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:43.748Z"
+    },
+    "EV-bf35f4d7b6193a47": {
+      "id": "EV-bf35f4d7b6193a47",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "生数科技核心产品Vidu是文生视频和图生视频大模型，属于语音、图像与视频模型赛道。",
+      "input_hash": "0f951ed82cb1d27f42f18e4fe4ce060907dbe90603647f3b64a838e60379c714",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-474b45f658d5b3df",
+          "quote": "生数科技是全球最早研究多模态生成算法的团队，2022年9月提出U-ViT架构（比OpenAI的DiT架构早三个月），2023年3月生数科技成立"
+        },
+        {
+          "source_id": "FISRC-474b45f658d5b3df",
+          "quote": "2024年4月在中关村论坛上发布中国首个全面对标Sora的文生视频大模型Vidu，随后于2024年7月全球上线Vidu，在文生视频和图生视频的模型能力外，Vidu全球首创“参考生视频”技术"
+        },
+        {
+          "source_id": "FISRC-474b45f658d5b3df",
+          "quote": "近期发布的Vidu Q3模型，是全球首个“为剧而生”的视频模型，支持16S声画同出、1080P高清画质、丰富的镜头语言、精准切镜、多国文字渲染和多语言输出。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:44.242Z"
+    },
+    "EV-008220e3dc696cb5": {
+      "id": "EV-008220e3dc696cb5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "生数科技以基座世界模型为核心，Vidu系列视频生成模型和Motus世界行动模型均属于模型层产品。",
+      "input_hash": "a85c3cb4fedd54fb019b3a2ed6dc2d03db7c3d17e664a4e8115c9eaca9a9b3a3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b07965e9cd2c01b5",
+          "quote": "在全球范围，生数科技是率先实现数字世界和物理世界统一的通用世界模型公司，致力于打造对数字世界和物理世界实现精准建模、推理、预测和行动的通用智能体系，以基座世界模型（Foundation World Model）为核心底层，推出应用于数字世界的世界生成模型（WGM）与应用于物理世界的世界行动模型（WAM）。"
+        },
+        {
+          "source_id": "FISRC-b07965e9cd2c01b5",
+          "quote": "Vidu系列模型实现了声画同出、长时长、高时空一致性与电影级视觉品质。全球首创“参考生视频”技术，有效解决商业场景多主体连续一致性痛点，同时依托自研高效训练与推理架构，以及卓越的工程优化能力，实现高效生成和极致性价比。"
+        },
+        {
+          "source_id": "FISRC-b07965e9cd2c01b5",
+          "quote": "2025年12月，生数科技开源了首个基于视频生成大模型的统一架构的世界行动模型 Motus，基于UniDiffuser统一建模框架，整合多模态知识，实现语言、视频与动作的统一表达与生成。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:44.242Z"
+    },
+    "EV-acd351e09a0f0ec3": {
+      "id": "EV-acd351e09a0f0ec3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Fika Jobs构建视频优先招聘平台，结合AI面试代理和短视频档案，属于企业招聘职能应用。",
+      "input_hash": "aa8afceb625ebee860fe32e02101ce0e29145972dc441b32be210b96b7542d26",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5228f73ab8dc8458",
+          "quote": "Stockholm-based startup Fika Jobs thinks there’s a better way. The company is building a video-first hiring platform that combines AI interview agents with short-form video profiles, creating something that feels like a cross between LinkedIn and TikTok."
+        },
+        {
+          "source_id": "FISRC-5228f73ab8dc8458",
+          "quote": "The company is building a video-first hiring platform that combines AI interview agents with short-form video profiles, creating something that feels like a cross between LinkedIn and TikTok."
+        },
+        {
+          "source_id": "FISRC-5228f73ab8dc8458",
+          "quote": "Candidates then complete a roughly 10-minute video interview with the AI agent, currently powered by Google’s Gemini models. After the interview, Fika automatically turns responses into short video clips and organizes them into a profile."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:44.242Z"
+    },
+    "EV-347194d4f6eb2a63": {
+      "id": "EV-347194d4f6eb2a63",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Isomorphic Labs是AI优先的药物设计和开发公司，IsoDDE为AI药物设计引擎，属于药物研发与生命科学赛道。",
+      "input_hash": "5210605dc156ef1e23187824529b232834df13ab0f5d3d208e0fc4428c49ecab",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-618d95b339c7b308",
+          "quote": "Isomorphic Labs, the AI drug research company led by Alphabet co-founder Demis Hassabis, has closed a $2.1 billion Series B funding round."
+        },
+        {
+          "source_id": "FISRC-82c9573ed9c6ba66",
+          "quote": "Isomorphic Labs, an AI-first drug design and development company, today announced it has raised $2.1 Billion in Series B funding"
+        },
+        {
+          "source_id": "FISRC-618d95b339c7b308",
+          "quote": "IsoDDE combines multiple proprietary AI models designed to work across different therapeutic areas and drug classes."
+        },
+        {
+          "source_id": "FISRC-82c9573ed9c6ba66",
+          "quote": "Isomorphic Labs has developed a number of proprietary breakthrough AI models that together form its unified AI drug design engine that works across multiple therapeutic areas and drug modalities."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:44.242Z"
+    },
+    "EV-d190a9b9d8f11bc9": {
+      "id": "EV-d190a9b9d8f11bc9",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-security",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "ZeroDrift提供AI合规防火墙API，作为AI系统和智能体的执行层，属于模型与智能体安全赛道。",
+      "input_hash": "7c0fa2e5328fa342dd1ad59bb7de0d2f5e6e2ca68a5039c59bcb5d5f5159bc88",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dffcc55088dd6fc6",
+          "quote": "That’s the premise of ZeroDrift, a new AI compliance service that on Tuesday said it had raised $10 million in a seed funding round"
+        },
+        {
+          "source_id": "FISRC-5827c25c8bbe0d20",
+          "quote": "ZeroDrift, the compliance firewall for AI, today announced it has closed an oversubscribed $10 million seed round."
+        },
+        {
+          "source_id": "FISRC-5827c25c8bbe0d20",
+          "quote": "The ZeroDrift API is the enforcement layer for AI systems and agents, sitting inline across the full surface of AI communication and validating every message, call, and video in real time."
+        },
+        {
+          "source_id": "FISRC-5827c25c8bbe0d20",
+          "quote": "Compliance and security teams configure rules, policies, and oversight through Command, ZeroDrift's control plane."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:44.242Z"
+    },
+    "EV-9e88b41977da9588": {
+      "id": "EV-9e88b41977da9588",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "NewCore是网络安全平台，统一管理人类和AI代理身份，属于企业网络安全与风控赛道。",
+      "input_hash": "0986fc9d4e926b914297eeb2aba3994fc4d8c151471d5d50f63db62d05e1c83b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9cc6124e644d0e3d",
+          "quote": "Cybersecurity startup NewCore emerged from stealth with $66 million in funding on Monday"
+        },
+        {
+          "source_id": "FISRC-1cfc27ef71550d5d",
+          "quote": "NewCore is a single platform that discovers, secures, and governs every identity in the modern enterprise, human and agentic alike."
+        },
+        {
+          "source_id": "FISRC-9cc6124e644d0e3d",
+          "quote": "NewCore’s platform is designed to manage both human and AI-agent identities in a single system."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:44.242Z"
+    },
+    "EV-0c119db9ef0c35c1": {
+      "id": "EV-0c119db9ef0c35c1",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "公司明确致力于构建无需人工干预即可自我改进的超智能系统，属于通用基础模型研发。",
+      "input_hash": "8439a7e367c026daa459a14d9846b4d3db1ee321c784b99179799fcd903b068c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b0bb1841559d4fad",
+          "quote": "Recursive Superintelligence, a four-month-old AI startup, has raised at least $500 million at a $4 billion pre-money valuation."
+        },
+        {
+          "source_id": "FISRC-b0bb1841559d4fad",
+          "quote": "wants to build an AI system that keeps improving itself without any human involvement."
+        },
+        {
+          "source_id": "FISRC-475219a24d8b16f8",
+          "quote": "Recursive self-improving superintelligence to automate knowledge discovery."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:55.957Z"
+    },
+    "EV-a72d111131f8de60": {
+      "id": "EV-a72d111131f8de60",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司发布并开源搭载全新架构的大模型，提供API接口，核心业务为通用大语言模型研发。",
+      "input_hash": "8f65beaeb60822960502b084771698ba8ffb46b70253982928be686d122f9442",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b9ddd109caa29328",
+          "quote": "DeepSeek 去年发布 R1 模型后一度震动全球。"
+        },
+        {
+          "source_id": "FISRC-d28724a1e6a3c6d4",
+          "quote": "4月24日，DeepSeek-V4预览版正式上线并同步开源。这款搭载全新注意力机制的大模型，凭借百万token的长上下文处理能力与模型架构创新，为国产AI开辟软硬协同、 自主化 的发展路径。"
+        },
+        {
+          "source_id": "FISRC-fa1f87c1d59d2670",
+          "quote": "模型deepseek-flash(1)deepseek-v4-pro"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:55.957Z"
+    },
+    "EV-2d0d165e866cd770": {
+      "id": "EV-2d0d165e866cd770",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "公司产品为基于AI的邮件安全平台，用于检测欺诈和冒充攻击，属于企业网络安全应用。",
+      "input_hash": "a30d5d40c53d5817d143e2eed2a677a69d35c1c482f4efced5fe4ba90a1978df",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0191618f7b8a168d",
+          "quote": "His startup Ocean, an agentic email security platform built to fight AI-powered attacks, just emerged from stealth mode with $28 million in total funding."
+        },
+        {
+          "source_id": "FISRC-0191618f7b8a168d",
+          "quote": "Ocean claims its AI can thoroughly analyze the context of every incoming email to detect fraud and impersonation attempts."
+        },
+        {
+          "source_id": "FISRC-0191618f7b8a168d",
+          "quote": "Shwartz said Ocean built a small language model tailored to quickly analyze emails, understand the sender’s intent, and evaluate it against the user’s specific organizational context."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:55.957Z"
+    },
+    "EV-8ea9e79f7edcb94f": {
+      "id": "EV-8ea9e79f7edcb94f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "公司主要从事大语言模型及多模态AI技术研发，并提供API服务，核心业务为通用基础模型。",
+      "input_hash": "e15a2796e1bbb0d1ab69f4fc216c4fddd0a0bbc6674b924febd3acb05fbe39ae",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e0178cb313198d39",
+          "quote": "DeepSeek 成立于 2023 年 7 月 17 日，总部位于浙江省杭州市拱墅区，主要从事大语言模型及多模态 AI 技术研发，其推出的 DeepSeek 系列开源模型是国内领先的开源大模型之一。"
+        },
+        {
+          "source_id": "FISRC-e0178cb313198d39",
+          "quote": "主要从事大语言模型及多模态 AI 技术研发，其推出的 DeepSeek 系列开源模型是国内领先的开源大模型之一。"
+        },
+        {
+          "source_id": "FISRC-fa1f87c1d59d2670",
+          "quote": "模型deepseek-flash(1)deepseek-v4-proBASE URL (OpenAI 格式)https://api.deepseek.comBASE URL (Anthropic 格式)https://api.deepseek.com/anthropic模型版本DeepSeek-V4.1-FlashDeepSeek-V4-Pro-0813思考模式支持非思考与思考模式（默认）"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:55.957Z"
+    },
+    "EV-aa6b83d9a5f77d41": {
+      "id": "EV-aa6b83d9a5f77d41",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        1
+      ],
+      "rationale": "本次融资原文明示公司已转向 neocloud 业务，按当前交付的推理云服务分类。",
+      "input_hash": "6bcb7a587a01cc79497c36a55bff5ec859c774a3aa5e5265bab8e0193eacab30",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-972115220a4b8e85",
+          "quote": "In response, Groq has pivoted to its neocloud business, it said."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-01T19:54:15.211Z"
+    },
+    "EV-4a73829a143cf3fc": {
+      "id": "EV-4a73829a143cf3fc",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "公司构建了面向开源AI的全栈平台，为AI应用和智能体提供推理服务，属于模型部署与推理平台。",
+      "input_hash": "317070795aadd427ce7cecc0306dddd9ec2ccbee00aec431526903ffd5001498",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c76c0a4ea6adedb7",
+          "quote": "we have built a full-stack AI platform for open-source AI, grounded in frontier research and delivering the fastest and most efficient inference for AI applications and agents."
+        },
+        {
+          "source_id": "FISRC-c76c0a4ea6adedb7",
+          "quote": "Together AI has become the production platform for open and custom AI, combining frontier models with continuous innovation across the inference stack to deliver the best economics at scale."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:55.957Z"
+    },
+    "EV-5e847cd78e657cb5": {
+      "id": "EV-5e847cd78e657cb5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "PixVerse 主营视频生成模型，C 系列面向专业影视工作流，R 系列为游戏世界模型，属于语音、图像与视频模型。",
+      "input_hash": "38b87df9bc8fc4746cf2c6f1edccd84f007f4d61bc9eec9bbd67418157f1f432",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-002776ecfe7ba6a0",
+          "quote": "Singapore-based video-generation startup PixVerse said today that it has closed its Series C extension, with a total of $439 million raised in the round."
+        },
+        {
+          "source_id": "FISRC-002776ecfe7ba6a0",
+          "quote": "a C-Series video model for professional film and commercial workflows"
+        },
+        {
+          "source_id": "FISRC-002776ecfe7ba6a0",
+          "quote": "an R-Series of world models for game development and world building, which was released earlier this year"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:56.363Z"
+    },
+    "EV-319bc3b1c7e758b0": {
+      "id": "EV-319bc3b1c7e758b0",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Cymphony 为安全团队提供员工、AI 智能体及非人类身份的统一视图与风险处置平台，属于企业网络安全与风控。",
+      "input_hash": "3cbf4738c1b32f1f938a9f12bf018699dd85c40e921f7b97a9e1e1c8aa6e3f06",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7bd06b11c1289ff0",
+          "quote": "Cymphony is trying to address that gap by giving security teams a single view of employees, AI agents, and other nonhuman identities, including the systems and sensitive data they can access."
+        },
+        {
+          "source_id": "FISRC-2dd32d80542305f8",
+          "quote": "Cymphony's Workforce Graph maps every identity, data, activity, and permission in your organization, giving security teams the full context to act on any risk — instantly."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:56.363Z"
+    },
+    "EV-1d31f1c839f9dab5": {
+      "id": "EV-1d31f1c839f9dab5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Modal 是面向开发者的 AI 云平台，提供低延迟弹性推理、动态智能体运行时等原语，属于 AI 云与算力服务。",
+      "input_hash": "c295a7c2a7e84bc16741d92083f5399091ab4fe224e730496340c7242e69afd7",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-733016c3a34668d3",
+          "quote": "Modal is a cloud built for AI."
+        },
+        {
+          "source_id": "FISRC-dc73344a8ff7358f",
+          "quote": "Provider of serverless platform for developing and deploying AI applications."
+        },
+        {
+          "source_id": "FISRC-733016c3a34668d3",
+          "quote": "Modal is a cloud built for AI. Not a single-purpose GPU cloud, but a platform with the right primitives for developers to build a very wide range of applications. Today, this looks like low-latency elastic inference, dynamic agent runtimes, reinforcement learning, batch jobs at massive scale, and much more."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:56.363Z"
+    },
+    "EV-143532a48c11c3b1": {
+      "id": "EV-143532a48c11c3b1",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "Keenable 提供超 1000 亿文档的网页搜索索引 API 及 Web Query Language，供 AI 实验室和推理提供商在训练与运行时使用，属于数据平台与检索。",
+      "input_hash": "b346f761535928678c7abf65f76b0af995212337f9aff1fc2fc279c6cc8b8997",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-706dcdf4cbb7e612",
+          "quote": "Keenable says it has been building a web search index of more than 100 billion documents, and its API is already used in production at several AI labs and inference providers during both training and runtime."
+        },
+        {
+          "source_id": "FISRC-706dcdf4cbb7e612",
+          "quote": "This includes an upcoming product, Web Query Language, which would help AI systems answer questions by combining information from various web sources, even when none contain the full answer."
+        },
+        {
+          "source_id": "FISRC-1de4f1b15a53fc68",
+          "quote": "A point-in-time search API that enables you to search across prior versions of web pages and retrieve content from specific historical snapshots. Add query_time and both the corpus and the ranking rewind."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:56.363Z"
+    },
+    "EV-6de81d4ca248ff31": {
+      "id": "EV-6de81d4ca248ff31",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Modem 连接 Slack、GitHub 等工具构建产品讨论上下文图，以对话式 AI 智能体辅助团队自动分诊，属于业务流程与企业智能体。",
+      "input_hash": "56b4d7ce4cfa531bb4a73a0bcd6255b65c060d2245949aa92a3cdbd4567ecbef",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9fd6ba5210b37fed",
+          "quote": "Modem has raised $4.4M in funding led by Accel, with participation by Inovia Capital, to build the auto-triage Product Manager for the agentic coding era."
+        },
+        {
+          "source_id": "FISRC-9fd6ba5210b37fed",
+          "quote": "Modem connects to Slack, Discord, GitHub, Linear, email, and more, and builds a context graph from your product discussions."
+        },
+        {
+          "source_id": "FISRC-9fd6ba5210b37fed",
+          "quote": "It's a conversational AI agent your team can talk to directly."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:56.363Z"
+    },
+    "EV-31579660b945ef01": {
+      "id": "EV-31579660b945ef01",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "content-creation",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Suno 从文本提示生成完整歌曲并提供音频工作站编辑功能，直接面向个人消费者进行音乐创作，属于消费级内容创作应用。",
+      "input_hash": "118060225185be55aeb2319a4dea62e4eafa89af2eac3a60ad8d836daf965585",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8a34984c8e02defc",
+          "quote": "The platform generates full songs from text prompts in seconds, with selectable genres, instruments, and lyrics."
+        },
+        {
+          "source_id": "FISRC-92bdc04603fa5ff2",
+          "quote": "Suno Studio provides a web-based audio workstation for editing stems like drums and synths, tempo adjustments, and exports in WAV or MIDI formats."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:44:56.363Z"
+    },
+    "EV-be540e929876ea8d": {
+      "id": "EV-be540e929876ea8d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "home-devices",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司主营智能马桶摄像头及配套肠道健康 AI 应用，属于面向消费者的 AI 家庭健康设备，不涉及机器人本体。",
+      "input_hash": "db3461c695d825da86d14aba022e18a0d0ecf50aad876dcfc66345578864e42a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-e60952f647d2206c",
+          "quote": "智能马桶创业公司 Throne Science 近日完成 1000 万美元 A 轮融资。该公司由可穿戴设备公司 WHOOP 联合创始人 John Capodilupo 参与创办"
+        },
+        {
+          "source_id": "FISRC-e60952f647d2206c",
+          "quote": "其产品 Throne One 是一款安装在马桶上的智能摄像设备，可利用 AI 分析排泄物状态、尿液颜色及用户如厕习惯，并将长期变化记录在应用程序中。"
+        },
+        {
+          "source_id": "FISRC-e60952f647d2206c",
+          "quote": "Throne Science 旗下的 Throne One 是一款可夹式智能摄像头，它借助经人工智能训练的传感器来扫描粪便和尿液"
+        },
+        {
+          "source_id": "FISRC-2c2bafaec002c33e",
+          "quote": "Earlier this month, Throne introduced a beta version of its Gut Health AI coach, which lets users ask questions about their data and receive personalized feedback."
+        },
+        {
+          "source_id": "FISRC-2c2bafaec002c33e",
+          "quote": "The tool uses LLMs to interview users after episodes of bad gut health to understand what the relevant factors underlying each episode might have been."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:08.755Z"
+    },
+    "EV-2be07629e0676d4a": {
+      "id": "EV-2be07629e0676d4a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "home-devices",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司核心产品为便携式个人 AI 超算设备及配套操作系统，面向个人消费者提供本地 AI 算力终端，属于消费 AI 硬件。",
+      "input_hash": "392b1e92cf24f02882b60eb6c68bbe5169cdeb658279d6388cc0c96accfe2131",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6042676c51470adf",
+          "quote": "云启种子轮被投、Personal Agent OS 公司「Tiiny AI」近日宣布完成数千万美元天使轮系列融资，云启本轮继续加注。"
+        },
+        {
+          "source_id": "FISRC-6042676c51470adf",
+          "quote": "Tiiny AI Pocket 作为一款重量约为 300 克、仅有充电宝大小的便携设备，经吉尼斯世界纪录认证为全球最小能本地运行 120B 参数大模型的个人 AI 超算。"
+        },
+        {
+          "source_id": "FISRC-f1bc73f391264db5",
+          "quote": "Tiiny AI Pocket Lab is a pocket-size personal AI supercomputer that plugs into a laptop or PC and turns it into a local AI terminal. Built as a dedicated backend for always-on AI, it is designed to support up to 120B-parameter models locally without requiring internet, cloud services, separate servers, or a high-end GPU."
+        },
+        {
+          "source_id": "FISRC-6042676c51470adf",
+          "quote": "围绕这一趋势，TiinyOS 以本地设备算力为核心，统一串联模型、算力、数据与 Agent 工作流，真正成为一套由用户掌握、持续积累并可跨设备延伸的智能系统。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:08.755Z"
+    },
+    "EV-a0b76c46462b5e3c": {
+      "id": "EV-a0b76c46462b5e3c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "rationale": "公司主营在轨卫星数据中心，为 AI 训练和推理提供太空算力基础设施，属于 AI 算力与数据中心基础设施。",
+      "input_hash": "d0dc8d2145ee23e23f8c0df295d3a689899eb744fe4e8bf564998fdfc7b8f48f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f80a0b6f2f7f63f8",
+          "quote": "Starcloud, a space startup working to deploy satellites to serve as orbital data centers, raised $170 million in a Series A round announced Monday that values the company at $1.1 billion."
+        },
+        {
+          "source_id": "FISRC-a31fdc9b2dd608e6",
+          "quote": "We are a team of innovative deep-tech engineers with big ambitions to change the paradigm of hyperscale data centers, enabling the future of AI by deploying the largest training clusters on data centers in space."
+        },
+        {
+          "source_id": "FISRC-91b7df539ba6317f",
+          "quote": "In November 2025, just 21 months after founding, Starcloud launched its first satellite, Starcloud-1 to space. This has an Nvidia H100, which is 100x more powerful GPU than has ever been operated in space before. With this, they became the first entity to train an LLM in space and the first to run a version of Gemini in space."
+        },
+        {
+          "source_id": "FISRC-f80a0b6f2f7f63f8",
+          "quote": "The company is currently preparing to launch its second satellites, Starcloud-2, later this year, which will run commercial edge and cloud workloads."
+        },
+        {
+          "source_id": "FISRC-f80a0b6f2f7f63f8",
+          "quote": "This funding round will support development on Starcloud-3 satellites, and allow the company to establish manufacturing capacity and increase headcount."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:08.755Z"
+    },
+    "EV-8c9c82321c9254d7": {
+      "id": "EV-8c9c82321c9254d7",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "公司核心产品 MatrixOne Intelligence 将数据、模型服务与智能体运行时统一在一个平台上，属于面向企业的智能体开发与编排平台。",
+      "input_hash": "c9810b397876a7d0577946205942efdd138bd7001b6da1343e4aeda200359925",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-903aa25f932bc468",
+          "quote": "矩阵起源（MatrixOrigin）成立于2021年，是一家专注于企业级AI基础设施的创新科技公司，致力于构建统一的数据、AI与智能体基础设施。"
+        },
+        {
+          "source_id": "FISRC-20184ad4d6ee7f56",
+          "quote": "矩阵起源的核心产品 MatrixOne Intelligence（MOI）把企业数据、模型服务、业务上下文、智能体运行与长期记忆统一在一个平台上"
+        },
+        {
+          "source_id": "FISRC-903aa25f932bc468",
+          "quote": "公司自主研发的MatrixOne Intelligence基于AI-Native架构，将HTAP、数据湖、元数据管理、AI服务与智能体运行时（Agent Runtime）深度融合于同一平台，帮助企业一次性构建数据、AI与智能体三层能力。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:08.755Z"
+    },
+    "EV-838707b8974c3dde": {
+      "id": "EV-838707b8974c3dde",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "NVIDIA 作为 AI 与加速计算领域的全球领导者，其核心业务为 AI 芯片与计算平台，属于 AI 算力与芯片赛道。",
+      "input_hash": "291816920d0b9432880f8c9f48987c00af6d914da1e743be1851d0948a13e0a0",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0122ec2217c08ff3",
+          "quote": "NVIDIA (NASDAQ: NVDA) is the world leader in AI and accelerated computing."
+        },
+        {
+          "source_id": "FISRC-0122ec2217c08ff3",
+          "quote": "NVIDIA compute is an investable asset — one which provides the lowest token cost, highest revenue and longest life along with a rich ecosystem of offtakers built upon NVIDIA’s CUDA platform."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:08.755Z"
+    },
+    "EV-6a5a3f316200d1e3": {
+      "id": "EV-6a5a3f316200d1e3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "research"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "公司为 AI 实验室，核心产品 Faraday 专注于自主复现科学论文研究结果，属于专用科学模型。",
+      "input_hash": "d8842bfef053888e84e42a8cc7876f30044f1e2d47835fd4ce2247b1c2c46c9a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1ae4a91c3da3b129",
+          "quote": "总部位于伦敦的 AI 实验室 Inherent 由前谷歌 DeepMind 员工创立。"
+        },
+        {
+          "source_id": "FISRC-1ae4a91c3da3b129",
+          "quote": "在事先不知道答案的情况下，自主复现已发表科学论文中的研究结果。"
+        },
+        {
+          "source_id": "FISRC-1ae4a91c3da3b129",
+          "quote": "Faraday 在与 Anthropic 的 Claude Opus 4.8 和 OpenAI 的 GPT-5.5 进行比较时，所依赖的却是一个规模小得多的模型 Qwen 3.6，仅拥有 270 亿参数。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:08.755Z"
+    },
+    "EV-193f535567067d95": {
+      "id": "EV-193f535567067d95",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "凌川科技主营SL200智能视频SOC芯片，为多模态大模型提供底层算力，属于AI芯片与加速器。",
+      "input_hash": "a29b0fd776ec9123422a6f7aabcbd17236e2020ab9bc0a824dba0a22d41d93be",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a39c77bc80e12506",
+          "quote": "“凌川科技”成立于 2024 年 3 月，由北京市人工智能基金与快手集团共同发起设立，前身为快手集团的异构计算与芯片事业部，是一家以硬件为基础的软件公司，专注于智能视频与生成式视频等多模态大模型的底层算力。"
+        },
+        {
+          "source_id": "FISRC-9980da706b6f91d0",
+          "quote": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片"
+        },
+        {
+          "source_id": "FISRC-a39c77bc80e12506",
+          "quote": "团队在快手内部自研的 SL200 芯片智能视频 SOC 芯片，持续在快手部署数万颗、稳定服务 7 亿用户"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:09.572Z"
+    },
+    "EV-9be8f3451675a795": {
+      "id": "EV-9be8f3451675a795",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Kling是AI视频生成平台，并发布了Kling 3.0视频模型，属于语音、图像与视频模型。",
+      "input_hash": "e93ba8aa69a5e927d84ba9b04eef129325b6706ba7cd84a3017b674da83949df",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b382348e8f96c9b9",
+          "quote": "Kuaishou has raised about $2 billion from investors for its AI video division, Kling."
+        },
+        {
+          "source_id": "FISRC-c090a03b42dfe75d",
+          "quote": "Kling, a Chinese AI video generation platform, has secured $2 billion in new funding as it prepares for an initial public offering in Hong Kong."
+        },
+        {
+          "source_id": "FISRC-b382348e8f96c9b9",
+          "quote": "The company recently unveiled its Kling 3.0 video model."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:09.572Z"
+    },
+    "EV-c572bf8c7294dd59": {
+      "id": "EV-c572bf8c7294dd59",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Ollama帮助开发者在本地运行开源权重AI模型并提供托管服务，明确面向开发者，属于训练、微调与部署平台。",
+      "input_hash": "236fbb521f26bcd937b1047d1d20185088a9314515a742ffd358103ff7c5a0de",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-674392f5f750c88f",
+          "quote": "The popular open source AI tool Ollama has raised a $65 million Series B, led by Theory Ventures"
+        },
+        {
+          "source_id": "FISRC-674392f5f750c88f",
+          "quote": "Ollama, which launched in 2023, helps devs run open-weight AI models on their PCs, getting them up and running in minutes."
+        },
+        {
+          "source_id": "FISRC-674392f5f750c88f",
+          "quote": "Developers can also use Ollama to find models and access larger, more complex ones that it hosts on its neocloud via several subscription tiers, from free to $100/month. It also tracks usage based on GPU time, not token limits."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:09.572Z"
+    },
+    "EV-0f74fd965d6447e4": {
+      "id": "EV-0f74fd965d6447e4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "wellness",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Savi Security为个人消费者提供AI驱动的防诈骗应用，保护家庭免受数字威胁，属于健康、生活与个人管理。",
+      "input_hash": "10905ae725dcc8d2b894ef2757eecfeff085b567c25cfaf0a135e2e86c22499c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9e7066e699b3555c",
+          "quote": "Savi Security seeks to protect everyday folks from the new crop of incredibly convincing AI-generated scams"
+        },
+        {
+          "source_id": "FISRC-8edf5c2b5ac324ca",
+          "quote": "Savi Security, based in Los Angeles, is a consumer technology company that builds AI-native cybersecurity tools to protect families from digital threats."
+        },
+        {
+          "source_id": "FISRC-9e7066e699b3555c",
+          "quote": "On Tuesday, Savi launched a paid product, an iOS and Android app for consumers, that can screen texts, voicemails, and incoming calls for scams."
+        },
+        {
+          "source_id": "FISRC-e459214af7b915ff",
+          "quote": "Key functions include text message protection that automatically routes spam and scam texts to junk, voicemail screening that takes messages from unknown numbers and flags suspected scams, and an “On Call” feature that allows users to add Savi to any live call so the app can listen silently, use behavioral AI to detect scam patterns and alert users as the conversation unfolds."
+        },
+        {
+          "source_id": "FISRC-9e7066e699b3555c",
+          "quote": "They tested their idea, and the AI scam detection model they were building, by launching a free website called Scamwise. It is anonymous, no registration required. Just upload any suspicious texts, photos, or emails, and Scamwise will determine if it’s likely to be bogus."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:09.572Z"
+    },
+    "EV-ed65f3187aa6aa40": {
+      "id": "EV-ed65f3187aa6aa40",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "DeepSeek发布V4-Pro和V4-Flash等大规模开源权重模型，属于通用与多模态基础模型。",
+      "input_hash": "cff6e35170d3a630f43627eb3fe58e04a30e76bfddd79be86d618b1bb44f0e34",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ac00611dd4c2a13f",
+          "quote": "Now the Hangzhou-based startup is in early talks with new investors for a round at a pre-money valuation of about $71 billion."
+        },
+        {
+          "source_id": "FISRC-ac00611dd4c2a13f",
+          "quote": "The company recently released V4-Pro and V4-Flash, the largest open-weights models with up to 1.6 trillion parameters. The rock-bottom V4-Pro prices have been made permanent and come in at roughly eleven times cheaper than GPT-5.5 on input."
+        },
+        {
+          "source_id": "FISRC-ac00611dd4c2a13f",
+          "quote": "The company recently released V4-Pro and V4-Flash, the largest open-weights models with up to 1.6 trillion parameters."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:09.572Z"
+    },
+    "EV-2315aada5ad36397": {
+      "id": "EV-2315aada5ad36397",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        5,
+        6,
+        8
+      ],
+      "rationale": "Fish Audio提供实时语音合成、声音克隆和语音智能体的AI语音平台，核心是S2.1 Pro等语音模型，属于语音、图像与视频模型。",
+      "input_hash": "e5158daac5596b53e90e3ffb590ced8052be180337fd1368f198f21ad0e4e492",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5396a98a865b5055",
+          "quote": "Fish Audio is the AI voice platform built for speed and control, for developers and enterprises alike. Founded in 2025 and headquartered in Palo Alto"
+        },
+        {
+          "source_id": "FISRC-5396a98a865b5055",
+          "quote": "Fish Audio, the AI voice platform for expressive real-time text-to-speech, voice cloning, and voice agents"
+        },
+        {
+          "source_id": "FISRC-e06e94375ec64ac4",
+          "quote": "its latest S2.1 Pro model is available only through its paid API"
+        },
+        {
+          "source_id": "FISRC-5396a98a865b5055",
+          "quote": "Its most recent model, S2.1 Pro, is preferred by nearly 67% of listeners over leading competitors in blind listening tests."
+        },
+        {
+          "source_id": "FISRC-e06e94375ec64ac4",
+          "quote": "The Fish Speech repository on GitHub now has more than 31,000 stars and is used by indie developers, video game designers, and creators."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:09.572Z"
+    },
+    "EV-e1b684a3701d3ff5": {
+      "id": "EV-e1b684a3701d3ff5",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        3
+      ],
+      "rationale": "Arga Labs 为模型构建企业软件训练环境，让智能体在接触生产环境前练习工具使用，属于智能体开发与编排平台。",
+      "input_hash": "0aeac220728c295c05f6b688a814b6dead07a038529bb68b80845597a334477e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b6920185a5e7fa72",
+          "quote": "Arga Labs builds training environments for enterprise software like Salesforce, Workday, and email clients."
+        },
+        {
+          "source_id": "FISRC-6b3d9c02a84cd8a6",
+          "quote": "Arga gives models multi-app workflows where they can practice real tool use, acquire skills, and improve before touching production."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:27.934Z"
+    },
+    "EV-83d913bce6fc6799": {
+      "id": "EV-83d913bce6fc6799",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "glasses",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Legato Frames 是面向消费者的 AI 助听眼镜，属于消费 AI 硬件中的 AI 眼镜细分。",
+      "input_hash": "5f4fb3e18cbf76d555b990b39ee2855ff8703c23a399c68f530e3aa9086ac69a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7a7bcfb1a7209676",
+          "quote": "Legato, a new hearing tech company, aims to close that gap. The startup is emerging from stealth on Wednesday with $12 million in funding and a first look at its AI hearing glasses, the company told TechCrunch exclusively."
+        },
+        {
+          "source_id": "FISRC-7a7bcfb1a7209676",
+          "quote": "The glasses, called Legato Frames, integrate the company’s patented hearing-assistance technology into the arms of eyewear frames."
+        },
+        {
+          "source_id": "FISRC-7a7bcfb1a7209676",
+          "quote": "Legato takes a different approach by using an AI-powered system to differentiate between background noise and voices, amplifying only the voices."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:27.934Z"
+    },
+    "EV-04ac681ff8b72e6a": {
+      "id": "EV-04ac681ff8b72e6a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "home-devices",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "Violoop X 是轻量级智能桌面设备，通过 HDMI/USB 接入现有电脑使用，属于消费 AI 家庭设备。",
+      "input_hash": "ecbbd2acbce84dde43aafc634699158b6b45825634625e56cdee9c742427cab8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3be0dc7558cb7d71",
+          "quote": "公司首款产品为轻量级智能桌面设备，将于近期登陆Kickstarter及国内平台首发。设备通过HDMI获取电脑画面、USB完成键鼠操作，接入用户现有电脑即可零成本开始使用。产品内置端侧算力系统、车规级加密芯片"
+        },
+        {
+          "source_id": "FISRC-bfca143269c2774d",
+          "quote": "公司的第一款量产产品Violoop X，即V4量产版本，海外建议零售价为699美元，Kickstarter首发及国内首发期间售价为399美元"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:27.934Z"
+    },
+    "EV-cf58eff49a08500d": {
+      "id": "EV-cf58eff49a08500d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "research"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "瞬原科技专注可控核聚变数字堆平台与等离子体求解，属于专用科学模型。",
+      "input_hash": "ac0d8935d1fe035bbcbd9a8bc49fd05d8149e6a588433364dd628434aa5e7787",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6a6128b0553b07a5",
+          "quote": "北京瞬原科技有限公司（VeloAlpha Technology）成立于2026年4月，专注于可控核聚变数字堆平台研发与聚变路线寻优服务。"
+        },
+        {
+          "source_id": "FISRC-94a6cb89904f54ad",
+          "quote": "公司旗舰产品FusionAlpha聚焦等离子体高保真极速求解、反应堆芯集成仿真与数字孪生，目标是为聚变行业提供涵盖概念设计、路线自动寻优、方案验证到运行监控的全栈式模拟器底座。"
+        },
+        {
+          "source_id": "FISRC-6a6128b0553b07a5",
+          "quote": "其VEQ模块在平衡位形求解效率上较国际主流代码CHEASE提升约20,000倍，发布不到两周便被美国通用原子公司（General Atomics）的FUSE集成建模平台吸收集成。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:27.934Z"
+    },
+    "EV-f453123978fbf095": {
+      "id": "EV-f453123978fbf095",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "design-engineering",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "主营新材料智能研发平台与工程闭环，归设计与工程软件；原文未将机器人本体或部件作为主营产品。",
+      "input_hash": "6e55d20bb25ed10127a3edf1c2b203d2182a1cf7b1103d46c6b85f19839a9c47",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-57de475f4ec2ac5a",
+          "quote": "鼎犀智创是一家由Physical AI驱动的新材料研发公司，致力于将复杂、依赖经验的材料研发转化为可计算、可验证、可规模化的工程体系。"
+        },
+        {
+          "source_id": "FISRC-57de475f4ec2ac5a",
+          "quote": "公司以「RhinoAI智能研发平台」为核心，整合AI Scientist、自主实验系统与中试放大能力，构建覆盖\"设计—执行—表征—反馈—优化\"的端到端研发闭环"
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-01T19:54:15.210Z"
+    },
+    "EV-f2eb34f231afc8aa": {
+      "id": "EV-f2eb34f231afc8aa",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "小鹏 IRON 定位为高阶通用人形机器人，属于具身智能/机器人本体，按规则排除。",
+      "input_hash": "eb5dda33966f8f89cfce9ce9db3db40fd353f85c2f95a3d56478bd22222635b0",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2ea62510cec1d311",
+          "quote": "小鹏IRON定位为极致拟人、AI驱动、具备高标准安全品质的高阶通用人形机器人"
+        },
+        {
+          "source_id": "FISRC-77ec50b37d44c2f9",
+          "quote": "搭载3颗图灵AI芯片，有效算力高达2250 TOPS，小鹏物理AI大模型在端侧部署成功，无需遥操即可自主完成复杂工作任务"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:27.934Z"
+    },
+    "EV-474ec498c79f0629": {
+      "id": "EV-474ec498c79f0629",
+      "scope": "excluded",
+      "exclusion_reason": "not_ai_business",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司主营分子振动光谱分析与成像产品，证据未显示其核心业务涉及人工智能。",
+      "input_hash": "80a1972eb33b9e7d3a898f0f7626c34631b32e9498d208f8b46683d943b77535",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f9c8fdd671d3e193",
+          "quote": "威邦震电成立于2017年，是一家专注于分子振动光谱技术创新，致力于打造高端国产光谱分析与成像产品的高新技术企业。"
+        },
+        {
+          "source_id": "FISRC-4bea4f5ece4248ee",
+          "quote": "相干拉曼是这条产品线的核心之一。它用两束激光在样品内匹配分子振动，受激产生相干信号，较自发拉曼可大幅提升采集效率，适合无标记成像细胞代谢物、脂质、蛋白质和药物分布。"
+        },
+        {
+          "source_id": "FISRC-4bea4f5ece4248ee",
+          "quote": "瞬态吸收覆盖激发后皮秒、飞秒到纳秒的光学动力学，用来看电荷分离、能量转移和材料缺陷态。"
+        },
+        {
+          "source_id": "FISRC-4bea4f5ece4248ee",
+          "quote": "瞬时激光红外补足分子官能团和液相、生物组织中的定量信息。传统傅里叶红外受水吸收、空间分辨和热背景限制较大，激光调谐红外可在特定波段提高信噪比和成像速度，适合组织病理、微塑料、药物晶型与包装材料检测。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:29.057Z"
+    },
+    "EV-0f7d759e759cfc09": {
+      "id": "EV-0f7d759e759cfc09",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Vals 为 AI 模型构建基准测试和自动评分系统，属于面向开发者的评测平台。",
+      "input_hash": "6cc82c2eefbb1bc6615dd522e287012e572e6ce1547ab0f9337d0b2b0f7cbc0e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-404aba285b240b86",
+          "quote": "Vals AI works with domain experts to turn real workflows into rigorous benchmarks, then builds automated grading systems that can evaluate the final work product to an expert standard."
+        },
+        {
+          "source_id": "FISRC-c5138d9ca614d59c",
+          "quote": "Vals doesn’t publicly disclose its specific test materials. Instead of measuring an AI model’s general knowledge, Vals also evaluates models on their ability to complete complex tasks associated with specific industries like law, finance, and coding."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:29.057Z"
+    },
+    "EV-6ed17a96a4a4079d": {
+      "id": "EV-6ed17a96a4a4079d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "官方原文明确支持开发者编排持久运行的 AI 系统与智能体工作流。",
+      "input_hash": "177f891f24a35cd8bbf0b1072c2660e8b3333908fd4bce9eed32401612e71aeb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf83d78a216a5edf",
+          "quote": "Developers write ordinary code, in whatever language the job calls for and whatever tool it needs, and Temporal handles the orchestration across systems for as long as it takes. State gets preserved and work recovers from failures automatically. We call this Durable Execution."
+        },
+        {
+          "source_id": "FISRC-cf83d78a216a5edf",
+          "quote": "Durable Execution is more than ever a core requirement for modern AI systems, and Temporal offers a compelling platform to help build it in from the start."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-01T19:54:15.211Z"
+    },
+    "EV-048612d1bcbd7a96": {
+      "id": "EV-048612d1bcbd7a96",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "AIUC 为 AI 智能体提供第三方审计、认证和测试服务，属于模型与智能体评测治理平台。",
+      "input_hash": "86eff3b49b237840b6b0bb9ca1c508c4f98629f1217478e2d323ee550fd8a71e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-926b8b12b411de6f",
+          "quote": "The pair launched a startup called Artificial Intelligence Underwriting Company (AIUC) that hopes to bring AI safety to enterprises and companies building AI models and agents."
+        },
+        {
+          "source_id": "FISRC-926b8b12b411de6f",
+          "quote": "The company has built a third-party audit and certification layer for AI agents."
+        },
+        {
+          "source_id": "FISRC-926b8b12b411de6f",
+          "quote": "AIUC has developed a standard called AIUC-1 and a testing service to validate agents against the standard."
+        },
+        {
+          "source_id": "FISRC-926b8b12b411de6f",
+          "quote": "The startup then runs an agent through a suite of some 5,000 tests to see how it behaves in scenarios involving jailbreaks, hallucinations, and data leaks. The results produce a roughly 100-page report detailing where an agent performs safely and reliably — and where it doesn’t."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:29.057Z"
+    },
+    "EV-3e92fba5502f1aba": {
+      "id": "EV-3e92fba5502f1aba",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "content-creation",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Suno 提供面向个人用户的 AI 音乐生成平台和音频工作站，属于消费级内容创作应用。",
+      "input_hash": "68f32aa73444cecd43baf0ede714a06e340ae426121dc1e7ff87f8e3683a55d3",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-92bdc04603fa5ff2",
+          "quote": "Suno is a Cambridge-headquartered music technology company offering an AI platform that generates complete songs from text prompts including lyrics, vocals, and instrumentation."
+        },
+        {
+          "source_id": "FISRC-92bdc04603fa5ff2",
+          "quote": "Suno Studio provides a web-based audio workstation for editing stems like drums and synths, tempo adjustments, and exports in WAV or MIDI formats."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:29.057Z"
+    },
+    "EV-e9c3669ece63cf7f": {
+      "id": "EV-e9c3669ece63cf7f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "research"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "主营材料科学模型，已有锂电材料垂域模型；属于专用科学模型，非药物研发。",
+      "input_hash": "566d4fa151ad3b6cf6ef1255f2e12700cc1528d5bc458f0ea32e77e5834cf2ae",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-83520370495890c1",
+          "quote": "索格智算成立于2025年，是一家专注于利用原创AI计算引擎等融合技术，驱动新材料研发的硬科技公司。"
+        },
+        {
+          "source_id": "FISRC-83520370495890c1",
+          "quote": "锂电材料垂域模型SOGNET-Battery是面向锂电领域的核心产品。"
+        },
+        {
+          "source_id": "FISRC-83520370495890c1",
+          "quote": "在六类锂电材料上，SOGNET-Battery用更小的参数规模，精度超过了参数更大的通用势函数模型。"
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-01T19:54:15.209Z"
+    },
+    "EV-e94a992d410d6520": {
+      "id": "EV-e94a992d410d6520",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "月之暗面发布并开源了 Kimi K2.6 等基础模型，同时提供 Kimi 智能助手，其核心业务为训练和提供通用基础模型。",
+      "input_hash": "11c6f2094713724ad37cf51270b7ba0b1f216b009fb62ef3bf0149c41aa32d49",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c13e13c6ca8cf219",
+          "quote": "月之暗面（Moonshot AI）2023 年 4 月由杨植麟、张宇韬、周昕宇、吴育昕四位清华计算机系校友在北京创立"
+        },
+        {
+          "source_id": "FISRC-c13e13c6ca8cf219",
+          "quote": "Kimi 助手以无损长文本起步（2023 年 10 月上线即立标签）"
+        },
+        {
+          "source_id": "FISRC-c13e13c6ca8cf219",
+          "quote": "支持百万 token 上下文"
+        },
+        {
+          "source_id": "FISRC-aa17d1f1d8d04ffb",
+          "quote": "4 月 20 日，月之暗面发布并开源了其最新模型 Kimi K2.6，该模型在代码编写、长程任务执行及 Agent 集群能力方面实现了全面升级。"
+        },
+        {
+          "source_id": "FISRC-aa17d1f1d8d04ffb",
+          "quote": "基于 Kimi K2.5 模型打造的 Composer 2.5 今日被集成至全球知名编程应用 Cursor。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-01T19:45:40.506Z"
     }
   },
-  "generated_at": "2026-10-01T16:29:10.962Z"
+  "generated_at": "2026-10-01T19:54:15.211Z"
 }

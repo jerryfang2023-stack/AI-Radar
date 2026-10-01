@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,11 +73,12 @@
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 2,
+      "lead": 3,
       "participant": 2
     },
     "round_codes": [
       "multi_round",
+      "seed",
       "series_a",
       "series_f",
       "undisclosed"
@@ -92,6 +93,11 @@
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-96c842ee0d60fa41",
+        "canonical_entity_id": "",
+        "name": "Inherent"
       },
       {
         "entity_id": "EN-fa373257792c6b9b",
@@ -143,6 +149,46 @@
             "source_content_hash": "a5d809d221408d5b",
             "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
             "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9e66791423692a07",
+        "funding_insight_id": "FI-b17b7b5dbec12f71",
+        "event_ids": [
+          "EV-6a5a3f316200d1e3"
+        ],
+        "company_entity_id": "EN-96c842ee0d60fa41",
+        "company_canonical_entity_id": "",
+        "company_name": "Inherent",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-08-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed8df2c3d21fb938",
+            "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
+            "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
+            "source_content_hash": "d71416937629ad73",
+            "quote": "announced a $50 million Seed round led by Index Ventures and Radical Ventures",
+            "quote_hash": "658d4f98f00963a60c481d1ace42995194c20a0572e978a40528ae75ad00296f"
           }
         ]
       },
@@ -318,6 +364,14 @@
         "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
       },
       {
+        "source_id": "FISRC-ed8df2c3d21fb938",
+        "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
+        "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
+        "source_content_hash": "d71416937629ad73",
+        "quote": "announced a $50 million Seed round led by Index Ventures and Radical Ventures",
+        "quote_hash": "658d4f98f00963a60c481d1ace42995194c20a0572e978a40528ae75ad00296f"
+      },
+      {
         "source_id": "FISRC-afe2544836558c64",
         "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
         "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
@@ -418,12 +472,12 @@
           "source_id": "FISRC-5fc65e3f4fb1b347"
         },
         {
-          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮领投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-afe2544836558c64"
+          "description": "融资来源记录：Inherent · 种子轮 · 2026-08-23 · 本轮领投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ed8df2c3d21fb938"
         },
         {
-          "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-41379635293a6bc8"
+          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮领投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-afe2544836558c64"
         }
       ],
       "contacts": [
@@ -492,20 +546,20 @@
           "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
         },
         {
+          "source_id": "FISRC-ed8df2c3d21fb938",
+          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
+          "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
+          "source_content_hash": "d71416937629ad73",
+          "quote": "announced a $50 million Seed round led by Index Ventures and Radical Ventures",
+          "quote_hash": "658d4f98f00963a60c481d1ace42995194c20a0572e978a40528ae75ad00296f"
+        },
+        {
           "source_id": "FISRC-afe2544836558c64",
           "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
           "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
           "source_content_hash": "596e7c850e10c828",
           "quote": "The massive round was led by Radical Ventures",
           "quote_hash": "827fbb592dd2015a5bfabac93569964f0a7f214ec7344200be7427b7510351fd"
-        },
-        {
-          "source_id": "FISRC-41379635293a6bc8",
-          "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
-          "source_title": "Nvidia Rival Etched Steps Out of Stealth With $5B Valuation - MIT Sloan Management Review Middle East",
-          "source_content_hash": "0fc2af151fdcca39",
-          "quote": "This includes a strategic investment from VentureTech Alliance, along with Peter Thiel, Jane Street, Hudson River Trading, Jump Trading, Two Sigma, Stripes, Ribbit Capital, Radical Ventures, Primary VC, Positive Sum",
-          "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
         }
       ],
       "last_verified_at": "2026-09-25",

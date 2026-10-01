@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 14,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 14,
+    "current_round_count": 17,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 17,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,9 +73,9 @@
     "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1,
-      "lead": 9,
-      "participant": 4
+      "historical_or_ambiguous": 2,
+      "lead": 11,
+      "participant": 5
     },
     "round_codes": [
       "seed",
@@ -83,7 +83,8 @@
       "series_b",
       "series_c",
       "series_e",
-      "series_g"
+      "series_g",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -130,6 +131,21 @@
         "entity_id": "EN-50b2676afbe30c83",
         "canonical_entity_id": "EN-50b2676afbe30c83",
         "name": "Higgsfield"
+      },
+      {
+        "entity_id": "EN-5326805dc305fa71",
+        "canonical_entity_id": "",
+        "name": "Keenable"
+      },
+      {
+        "entity_id": "EN-c5803a6e4daa6af4",
+        "canonical_entity_id": "",
+        "name": "Modal"
+      },
+      {
+        "entity_id": "EN-b30b83d324e678e4",
+        "canonical_entity_id": "",
+        "name": "Modem"
       },
       {
         "entity_id": "EN-636396f02b6571e4",
@@ -275,6 +291,46 @@
             "source_content_hash": "2c19612efff8843e",
             "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
             "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4af867b0823b8f2f",
+        "funding_insight_id": "FI-c5f0fd35dce1ae5c",
+        "event_ids": [
+          "EV-143532a48c11c3b1"
+        ],
+        "company_entity_id": "EN-5326805dc305fa71",
+        "company_canonical_entity_id": "",
+        "company_name": "Keenable",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$26 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 26000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2600 万美元"
+        },
+        "announced_at": "2026-08-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-706dcdf4cbb7e612",
+            "source_url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents",
+            "source_title": "Accel 投资的 Keenable 正在为 AI 智能体索引网络",
+            "source_content_hash": "cfc15cfefbd7415628b6fe8dc65a81f108b534ae89f9d9b5cd58b786e18a1c96",
+            "quote": "Accel led the funding round, which also saw participation from Conviction Partners and some business angels.",
+            "quote_hash": "2e371433b956568ba1a3b9c1aa0d621bf73ffcd51ff61505abc124961c4c9709"
           }
         ]
       },
@@ -528,6 +584,46 @@
         ]
       },
       {
+        "activity_id": "IA-a614bcbe9c925865",
+        "funding_insight_id": "FI-772c8fb5434b1734",
+        "event_ids": [
+          "EV-1d31f1c839f9dab5"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$355 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 355000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.55 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-733016c3a34668d3",
+            "source_url": "https://modal.com/blog/modal-series-c",
+            "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+            "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+            "quote": "with Menlo, Bain Capital Ventures, and Accel joining as new investors",
+            "quote_hash": "26e6009b8459219d19331dc45cf2d4d37148f81177808b3185c6b88f4c732cfe"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-3430b2ad70c8bb08",
         "funding_insight_id": "FI-664cc90f57688153",
         "event_ids": [
@@ -648,6 +744,46 @@
         ]
       },
       {
+        "activity_id": "IA-089f927dde9248f3",
+        "funding_insight_id": "FI-a7a280029acd72db",
+        "event_ids": [
+          "EV-6de81d4ca248ff31"
+        ],
+        "company_entity_id": "EN-b30b83d324e678e4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modem",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$4.4M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "440 万美元"
+        },
+        "announced_at": "2026-02-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9fd6ba5210b37fed",
+            "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+            "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+            "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+            "quote": "Modem has raised $4.4M in funding led by Accel, with participation by Inovia Capital",
+            "quote_hash": "b50c810129adf2731891f9829c115415155105c96bb4a56bf8c4440140161ad2"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-4f6ac061be432433",
         "funding_insight_id": "FI-7aef62aa956f090d",
         "event_ids": [
@@ -758,6 +894,38 @@
             "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
           }
         ]
+      },
+      {
+        "activity_id": "IA-13a3b09fcdffbad3",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "回归投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-94676d99b2defaa4",
+            "source_url": "https://lovable.dev/blog/series-c",
+            "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+            "source_content_hash": "f9c4cc8a8cd4a7c7",
+            "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+            "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -784,6 +952,14 @@
         "source_content_hash": "2c19612efff8843e",
         "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
         "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
+      },
+      {
+        "source_id": "FISRC-706dcdf4cbb7e612",
+        "source_url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents",
+        "source_title": "Accel 投资的 Keenable 正在为 AI 智能体索引网络",
+        "source_content_hash": "cfc15cfefbd7415628b6fe8dc65a81f108b534ae89f9d9b5cd58b786e18a1c96",
+        "quote": "Accel led the funding round, which also saw participation from Conviction Partners and some business angels.",
+        "quote_hash": "2e371433b956568ba1a3b9c1aa0d621bf73ffcd51ff61505abc124961c4c9709"
       },
       {
         "source_id": "FISRC-7c15ac15bf3d0b1a",
@@ -842,6 +1018,14 @@
         "quote_hash": "8e0705ecf58eaad0451a15274f1ca2e5cd980a08a9e609620031a7fe91e83c8e"
       },
       {
+        "source_id": "FISRC-733016c3a34668d3",
+        "source_url": "https://modal.com/blog/modal-series-c",
+        "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+        "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+        "quote": "with Menlo, Bain Capital Ventures, and Accel joining as new investors",
+        "quote_hash": "26e6009b8459219d19331dc45cf2d4d37148f81177808b3185c6b88f4c732cfe"
+      },
+      {
         "source_id": "FISRC-ce83b857608dabeb",
         "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
         "source_title": "AI 同事初创公司 Viktor 在推出后 10 周内达到 1290 万欧元营收运行率，随后完成 6470 万欧元 A 轮融资",
@@ -866,6 +1050,14 @@
         "quote_hash": "dd496c105397ae49540d0bf46c349a8d17db2380b866ac8c46ba30a2552fb6dc"
       },
       {
+        "source_id": "FISRC-9fd6ba5210b37fed",
+        "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+        "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+        "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+        "quote": "Modem has raised $4.4M in funding led by Accel, with participation by Inovia Capital",
+        "quote_hash": "b50c810129adf2731891f9829c115415155105c96bb4a56bf8c4440140161ad2"
+      },
+      {
         "source_id": "FISRC-d9093a8f62959034",
         "source_url": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
         "source_title": "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元",
@@ -888,6 +1080,14 @@
         "source_content_hash": "0d8d55e9f8e4182e",
         "quote": "The round drew backing from Accel, GFT Ventures, and Menlo Ventures",
         "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
+      },
+      {
+        "source_id": "FISRC-94676d99b2defaa4",
+        "source_url": "https://lovable.dev/blog/series-c",
+        "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+        "source_content_hash": "f9c4cc8a8cd4a7c7",
+        "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+        "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
       }
     ],
     "public_profile": {

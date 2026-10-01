@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -70,6 +70,7 @@
       "EV-63a4b6ce48e14829",
       "EV-ef669a52c9a3f94f",
       "EV-259566f35ea4f66d",
+      "EV-51d3f708222ba635",
       "EV-e70a48e36e99d57a",
       "EV-c6cccaca326dfd45",
       "EV-60f219702a66bf38",
@@ -97,11 +98,12 @@
       "EV-386c205c8bbf537d",
       "EV-1ac32035d5e425e1",
       "EV-201b25d4f3cf696a",
-      "EV-31df816db86db282",
       "EV-794f921515af8e8b",
       "EV-f4b72708c66aa752",
+      "EV-31df816db86db282",
       "EV-0e1edf873779be1d",
       "EV-7021bd7041019330",
+      "EV-347194d4f6eb2a63",
       "EV-44ec7c229995ca3c",
       "EV-dd567ead9785ef80",
       "EV-9832526435c1695e",
@@ -127,6 +129,7 @@
       "EN-c087cefd343cb488",
       "EN-1d79127e9d90e89b",
       "EN-607a596a603dd679",
+      "EN-a560e8c7ca78f72c",
       "EN-8d4321d936320802",
       "EN-fe301d1f025971a1",
       "EN-6861f63c27eb0ada",
@@ -152,6 +155,7 @@
       "EN-085578b03da7d660",
       "EN-b6292f967fa84b03",
       "EN-ccc2bd5e43d9ab2b",
+      "EN-37f52323f7361ee9",
       "EN-cecdd8369134f75e",
       "EN-69c5804b91710f4d",
       "EN-a43f157d208b2a63",
@@ -168,7 +172,7 @@
       "HW-7889eb510b9d4210"
     ],
     "firstSeen": "2026-03-10",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-10-02"
   },
   "events": [
     {
@@ -4992,24 +4996,140 @@
       "publisher": "TechCrunch AI"
     },
     {
-      "id": "EV-e70a48e36e99d57a",
-      "dataDate": "2026-08-16",
-      "date": "2026-08-15",
-      "updatedDate": "2026-08-16",
+      "id": "EV-51d3f708222ba635",
+      "dataDate": "2026-10-02",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-11",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "英伟达联手六大金融机构建立 5000 亿美元 AI 融资平台，黄仁勋称部分项目可获最高 25% 残值支持",
-      "originalTitle": "",
-      "subject": "英伟达联手六大金融机构建立 5000 亿美元 AI",
+      "title": "寻明生科获1亿美元B轮融资，加码基座模型开拓AI药物发现新边界",
+      "originalTitle": "寻明生科获1亿美元B轮融资，加码基座模型开拓AI药物发现新边界 | 5Y News",
+      "subject": "寻明生科获1亿美元B轮",
       "action": "融资",
-      "object": "平台，黄仁勋称部分项目可获最高 25% 残值支持",
+      "object": "，加码基座模型开拓AI药物发现新边界 | 5Y News",
       "metrics": [
-        "5000 亿",
-        "25%"
+        "1亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-a560e8c7ca78f72c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-a560e8c7ca78f72c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-a560e8c7ca78f72c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-a560e8c7ca78f72c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-a560e8c7ca78f72c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-a560e8c7ca78f72c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a560e8c7ca78f72c"
+      ],
+      "entityNames": [
+        "本轮融资分阶段"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://elsewhere.news/zh/5ycapital/1bai-5y-news",
+      "publisher": "elsewhere.news"
+    },
+    {
+      "id": "EV-e70a48e36e99d57a",
+      "dataDate": "2026-10-02",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-11",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "NVIDIA 牵头组建 5000 亿美元人工智能计算基础设施融资平台",
+      "originalTitle": "",
+      "subject": "NVIDIA 牵头组建 5000 亿美元人工智能计算基础设施",
+      "action": "融资",
+      "object": "平台",
+      "metrics": [
+        "5,000 亿",
+        "3.38 万"
       ],
       "locations": [],
       "missingFields": [],
@@ -5070,17 +5190,6 @@
             "provenance": "reviewed_funding_insight",
             "reviewRef": "REC-54fdee0491ea5e05",
             "fundingInsightId": "FI-6570fa96e0f8338f"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
           }
         ],
         "use_case": [
@@ -5327,19 +5436,7 @@
             "fundingInsightId": "FI-6570fa96e0f8338f"
           }
         ],
-        "deployment_model": [
-          {
-            "dimensionId": "deployment_model",
-            "dimensionName": "部署形态",
-            "id": "cloud",
-            "name": "云端",
-            "entityIds": [
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "deployment_model": [],
         "target_user": [
           {
             "dimensionId": "target_user",
@@ -5703,28 +5800,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-32381a12fb02a32d",
           "fundingInsightId": "FI-6570fa96e0f8338f"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "deployment_model",
-          "dimensionName": "部署形态",
-          "id": "cloud",
-          "name": "云端",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -5775,17 +5850,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-54fdee0491ea5e05",
           "fundingInsightId": "FI-6570fa96e0f8338f"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
@@ -6062,17 +6126,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-35f94b14dfce7687",
           "fundingInsightId": "FI-6570fa96e0f8338f"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "dimensionName": "部署形态",
-          "id": "cloud",
-          "name": "云端",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -6083,8 +6136,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://ithome.com/0/990/154.htm",
-      "publisher": "IT之家（RSS）"
+      "sourceUrl": "https://www.ithome.com/0/988/104.htm",
+      "publisher": "www.ithome.com"
     },
     {
       "id": "EV-c6cccaca326dfd45",
@@ -10977,32 +11030,40 @@
     },
     {
       "id": "EV-463cb26b5e03c7f7",
-      "dataDate": "2026-07-22",
+      "dataDate": "2026-10-02",
       "date": "2026-07-08",
-      "updatedDate": "2026-07-22",
+      "updatedDate": "2026-07-08",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Prime Intellect 以 10 亿美元估值融资 1.3 亿美元，用于构建开放主权 AI 技术栈",
-      "originalTitle": "Prime Intellect raises $130M at $1B valuation to build open sovereign AI stack | TBPN Digest",
+      "title": "Prime Intellect 完成 1.3 亿美元 A 轮融资，助力企业构建自己的 AI 智能体",
+      "originalTitle": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents",
       "subject": "Prime Intellect",
       "action": "raises",
-      "object": "$130M at $1B valuation to build open sovereign AI stack | TBPN Digest",
+      "object": "$130M Series A to help enterprises build their own AI agents",
       "metrics": [
-        "$130M",
-        "$1B",
         "$130 million",
-        "$1 billion",
-        "$100M",
-        "$20 million"
+        "$1 billion"
       ],
       "locations": [],
       "missingFields": [],
       "conflicts": [],
-      "tags": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-fa373257792c6b9b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
       "facets": {
         "ai_market_category": [
           {
@@ -11187,6 +11248,17 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-2da80adee938bda4",
           "fundingInsightId": "FI-f00b5824a2f30956"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-fa373257792c6b9b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -11251,6 +11323,17 @@
           "fundingInsightId": "FI-f00b5824a2f30956"
         },
         {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-fa373257792c6b9b"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
           "dimensionId": "target_user",
           "dimensionName": "目标用户",
           "id": "developer",
@@ -11276,21 +11359,15 @@
         }
       ],
       "entityIds": [
-        "EN-fa373257792c6b9b",
-        "EN-b0532e1af75cc4ab",
-        "EN-96eebba49dbbf422",
-        "EN-8d4321d936320802"
+        "EN-fa373257792c6b9b"
       ],
       "entityNames": [
-        "Prime Intellect",
-        "Rime",
-        "Intel",
-        "NVIDIA"
+        "Prime Intellect"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://tbpndigest.com/story/2026-07-08/prime-intellect-raises-130m-at-1b-valuation-to-build-open-sovereign-ai-stack",
-      "publisher": "tbpndigest.com"
+      "sourceUrl": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-12a42b0aabee236f",
@@ -15090,391 +15167,6 @@
       "publisher": "techcrunch.com"
     },
     {
-      "id": "EV-31df816db86db282",
-      "dataDate": "2026-06-01",
-      "date": "2026-06-01",
-      "updatedDate": "2026-06-01",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
-      "publicationStatus": "verified",
-      "title": "44 轮融资，26.6 亿美元：2026 年第一季度 AI 智能体融资地图",
-      "originalTitle": "44 Rounds, $2.66B: The Q1 2026 Agentic AI Funding Map | AgentMarketCap",
-      "subject": "Anthropic",
-      "action": "funding",
-      "object": "$30 billion Series G at $380 billion post-money valuation",
-      "metrics": [
-        "$30 billion",
-        "$380 billion",
-        "$20 billion",
-        "$400 million"
-      ],
-      "locations": [],
-      "missingFields": [
-        "event_time"
-      ],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [
-          {
-            "dimensionId": "ai_market_category",
-            "dimensionName": "AI 市场类别",
-            "id": "infrastructure_compute",
-            "name": "基础设施与算力",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-b4e0f58e0b436581",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          }
-        ],
-        "ai_market_subcategory": [
-          {
-            "dimensionId": "ai_market_subcategory",
-            "dimensionName": "AI 市场子类",
-            "id": "development_deployment",
-            "name": "开发与部署",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-f16e05ee48207e14",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          }
-        ],
-        "ai_market_application": [
-          {
-            "dimensionId": "ai_market_application",
-            "dimensionName": "AI 市场细分",
-            "id": "models",
-            "name": "模型",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-b8f1f3159062f352",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          }
-        ],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model_api_service",
-            "name": "模型 API 服务",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-bafb1855943b7c3f",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          }
-        ],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "research_discovery",
-            "name": "科研与发现",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-35c0abe80ac0b3f3",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          },
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "software_development",
-            "name": "软件开发",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-8e2c5ec7cf8b283c",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          }
-        ],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": [
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "business_user",
-            "name": "企业用户",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-5bd9909a3831731b",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "developer",
-            "name": "开发者",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-22a6ed759c1c1cf6",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          },
-          {
-            "dimensionId": "target_user",
-            "dimensionName": "目标用户",
-            "id": "researcher",
-            "name": "研究人员",
-            "entityIds": [
-              "EN-c70eca6b0f88f44d"
-            ],
-            "provenance": "reviewed_funding_insight",
-            "reviewRef": "REC-492b6125583b1698",
-            "fundingInsightId": "FI-9636fec345e018a2"
-          }
-        ]
-      },
-      "classifications": [
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "models",
-          "name": "模型",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b8f1f3159062f352",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b4e0f58e0b436581",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "development_deployment",
-          "name": "开发与部署",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-f16e05ee48207e14",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model_api_service",
-          "name": "模型 API 服务",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-bafb1855943b7c3f",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-5bd9909a3831731b",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-22a6ed759c1c1cf6",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "researcher",
-          "name": "研究人员",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-492b6125583b1698",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "research_discovery",
-          "name": "科研与发现",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-35c0abe80ac0b3f3",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "software_development",
-          "name": "软件开发",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-8e2c5ec7cf8b283c",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "ai_market_category",
-          "dimensionName": "AI 市场类别",
-          "id": "infrastructure_compute",
-          "name": "基础设施与算力",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b4e0f58e0b436581",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "ai_market_subcategory",
-          "dimensionName": "AI 市场子类",
-          "id": "development_deployment",
-          "name": "开发与部署",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-f16e05ee48207e14",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "ai_market_application",
-          "dimensionName": "AI 市场细分",
-          "id": "models",
-          "name": "模型",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-b8f1f3159062f352",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model_api_service",
-          "name": "模型 API 服务",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-bafb1855943b7c3f",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "research_discovery",
-          "name": "科研与发现",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-35c0abe80ac0b3f3",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "software_development",
-          "name": "软件开发",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-8e2c5ec7cf8b283c",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "business_user",
-          "name": "企业用户",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-5bd9909a3831731b",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "developer",
-          "name": "开发者",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-22a6ed759c1c1cf6",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        },
-        {
-          "dimensionId": "target_user",
-          "dimensionName": "目标用户",
-          "id": "researcher",
-          "name": "研究人员",
-          "entityIds": [
-            "EN-c70eca6b0f88f44d"
-          ],
-          "provenance": "reviewed_funding_insight",
-          "reviewRef": "REC-492b6125583b1698",
-          "fundingInsightId": "FI-9636fec345e018a2"
-        }
-      ],
-      "entityIds": [
-        "EN-c70eca6b0f88f44d",
-        "EN-6fcba5d96a4fadfd"
-      ],
-      "entityNames": [
-        "Anthropic",
-        "xAI"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://agentmarketcap.ai/blog/2026/04/07/q1-2026-agentic-ai-funding-map-44-rounds-verticals",
-      "publisher": "agentmarketcap.ai"
-    },
-    {
       "id": "EV-794f921515af8e8b",
       "dataDate": "2026-08-03",
       "date": "2026-05-29",
@@ -16395,6 +16087,387 @@
       "products": [],
       "sourceUrl": "https://36kr.com/p/3834249464768385",
       "publisher": "36氪"
+    },
+    {
+      "id": "EV-31df816db86db282",
+      "dataDate": "2026-10-02",
+      "date": "2026-05-15",
+      "updatedDate": "2026-05-15",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Anthropic 的 9000 亿美元估值将使其首次比 OpenAI 更有价值",
+      "originalTitle": "Anthropic's $900 billion valuation would make it more valuable than OpenAI for the first time",
+      "subject": "Anthropic",
+      "action": "funding",
+      "object": "$30 billion funding round at a $900 billion valuation",
+      "metrics": [
+        "$30 billion",
+        "$900 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "infrastructure_compute",
+            "name": "基础设施与算力",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b4e0f58e0b436581",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "development_deployment",
+            "name": "开发与部署",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f16e05ee48207e14",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          }
+        ],
+        "ai_market_application": [
+          {
+            "dimensionId": "ai_market_application",
+            "dimensionName": "AI 市场细分",
+            "id": "models",
+            "name": "模型",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b8f1f3159062f352",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          }
+        ],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model_api_service",
+            "name": "模型 API 服务",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-bafb1855943b7c3f",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-35c0abe80ac0b3f3",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "software_development",
+            "name": "软件开发",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8e2c5ec7cf8b283c",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-5bd9909a3831731b",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-22a6ed759c1c1cf6",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "researcher",
+            "name": "研究人员",
+            "entityIds": [
+              "EN-c70eca6b0f88f44d"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-492b6125583b1698",
+            "fundingInsightId": "FI-9636fec345e018a2"
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "models",
+          "name": "模型",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b8f1f3159062f352",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b4e0f58e0b436581",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "development_deployment",
+          "name": "开发与部署",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f16e05ee48207e14",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bafb1855943b7c3f",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5bd9909a3831731b",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-22a6ed759c1c1cf6",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-492b6125583b1698",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-35c0abe80ac0b3f3",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8e2c5ec7cf8b283c",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "infrastructure_compute",
+          "name": "基础设施与算力",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b4e0f58e0b436581",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "development_deployment",
+          "name": "开发与部署",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f16e05ee48207e14",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "ai_market_application",
+          "dimensionName": "AI 市场细分",
+          "id": "models",
+          "name": "模型",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b8f1f3159062f352",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model_api_service",
+          "name": "模型 API 服务",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-bafb1855943b7c3f",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-35c0abe80ac0b3f3",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "software_development",
+          "name": "软件开发",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8e2c5ec7cf8b283c",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-5bd9909a3831731b",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-22a6ed759c1c1cf6",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "researcher",
+          "name": "研究人员",
+          "entityIds": [
+            "EN-c70eca6b0f88f44d"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-492b6125583b1698",
+          "fundingInsightId": "FI-9636fec345e018a2"
+        }
+      ],
+      "entityIds": [
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/anthropics-900-billion-valuation-would-make-it-more-valuable-than-openai-for-the-first-time/",
+      "publisher": "the-decoder.com"
     },
     {
       "id": "EV-0e1edf873779be1d",
@@ -17333,6 +17406,122 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202605/563872.shtml",
       "publisher": "投资界"
+    },
+    {
+      "id": "EV-347194d4f6eb2a63",
+      "dataDate": "2026-10-02",
+      "date": "2026-05-12",
+      "updatedDate": "2026-05-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
+      "originalTitle": "Alphabet's Isomorphic Labs raises $2.1 billion to scale AI drug discovery toward clinical trials",
+      "subject": "Alphabet's Isomorphic Labs",
+      "action": "raises",
+      "object": "$2.1 billion to scale AI drug discovery toward clinical trials",
+      "metrics": [
+        "$2.1 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "research_discovery",
+            "name": "科研与发现",
+            "entityIds": [
+              "EN-37f52323f7361ee9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-37f52323f7361ee9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-37f52323f7361ee9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-37f52323f7361ee9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "research_discovery",
+          "name": "科研与发现",
+          "entityIds": [
+            "EN-37f52323f7361ee9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-37f52323f7361ee9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-37f52323f7361ee9"
+      ],
+      "entityNames": [
+        "Alphabet's Isomorphic Labs"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials/",
+      "publisher": "the-decoder.com"
     },
     {
       "id": "EV-44ec7c229995ca3c",
@@ -21313,8 +21502,8 @@
       "classificationRefs": [
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences",
+        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery"
@@ -21345,9 +21534,9 @@
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-use_case-design_engineering",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-ai_market_subcategory-healthcare_life_sciences",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery"
@@ -21375,8 +21564,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-use_case-design_engineering",
-        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences",
+        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery"
       ],
@@ -21401,8 +21590,8 @@
       "classificationRefs": [
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences",
+        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery"
       ],
@@ -21427,8 +21616,8 @@
       "classificationRefs": [
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
-        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences",
+        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery"
@@ -21570,13 +21759,13 @@
         "TX-use_case-content_creation",
         "TX-target_user-consumer",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -21615,7 +21804,8 @@
         "canonical"
       ],
       "eventIds": [
-        "EV-259566f35ea4f66d"
+        "EV-259566f35ea4f66d",
+        "EV-a0b76c46462b5e3c"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -21633,8 +21823,30 @@
         "TX-ai_market_application-computing_infrastructure"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-08-21",
-      "lastSeen": "2026-08-23"
+      "firstSeen": "2026-08-13",
+      "lastSeen": "2026-10-02"
+    },
+    {
+      "id": "EN-a560e8c7ca78f72c",
+      "name": "本轮融资分阶段",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-51d3f708222ba635"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-11",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-8d4321d936320802",
@@ -21652,41 +21864,48 @@
         "EV-471bf7c00cc06c85",
         "EV-f53bfa2bb0275904",
         "EV-2470b13ea55496d0",
+        "EV-6d92f16f6079fe38",
         "EV-26a5749d8604455a",
         "EV-375d04f7cc9746c6",
         "EV-9cf0ca490e9a6f4a",
+        "EV-fb14f97f5b644c1f",
         "EV-37cc66ca2e29a78c",
+        "EV-85506f9f86779a6d",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
-        "EV-c32dd87e1f72b09a",
         "EV-40fd274ae86434b8",
         "EV-10f04014fb3b62ff",
+        "EV-c32dd87e1f72b09a",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
-        "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
+        "EV-e70a48e36e99d57a",
         "EV-83728e3b6c7736ce",
         "EV-2dea56b0e97c1685",
-        "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
         "EV-6e516b6e68def9cf",
         "EV-e41fc65eb014893f",
-        "EV-463cb26b5e03c7f7",
+        "EV-3e003f3fced9337a",
         "EV-13ec78dfdbca678b",
         "EV-040fc355bc12a750",
         "EV-7abd8ec418f1e7f3",
         "EV-80e54c9a390da293",
+        "EV-4a73829a143cf3fc",
         "EV-4118202ed0f91895",
         "EV-236cbc2d64f0c455",
+        "EV-aa6b83d9a5f77d41",
         "EV-a00763037a94d512",
+        "EV-838707b8974c3dde",
+        "EV-fb3d98bc97f91047",
         "EV-0e84a2f49d765ce3",
         "EV-784c98f1fde32c73",
+        "EV-d85ea5150230ee56",
         "EV-467d1a701d21327d",
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
@@ -21938,6 +22157,7 @@
         "TX-use_case-customer_support",
         "TX-technology-speech_audio",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
@@ -21946,7 +22166,6 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -21971,10 +22190,10 @@
         "TX-technology-code_generation",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
-        "TX-deployment_model-cloud",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-reasoning",
+        "TX-deployment_model-cloud",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -22007,7 +22226,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-fe301d1f025971a1",
@@ -22216,9 +22435,9 @@
         "TX-target_user-business_user",
         "TX-use_case-design_engineering",
         "TX-product_form-end_user_application",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-ai_market_subcategory-healthcare_life_sciences",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery"
       ],
@@ -22306,8 +22525,8 @@
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences",
+        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery"
@@ -22347,7 +22566,7 @@
         "EN-8c8c58ec2d92d598"
       ],
       "firstSeen": "2026-07-08",
-      "lastSeen": "2026-07-22"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-b06631033a981321",
@@ -22361,6 +22580,7 @@
       ],
       "eventIds": [
         "EV-12a42b0aabee236f",
+        "EV-0c119db9ef0c35c1",
         "EV-84697d26f813b122"
       ],
       "viewpointIds": [],
@@ -22373,8 +22593,8 @@
         "TX-use_case-research_discovery"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-07-06",
-      "lastSeen": "2026-07-29"
+      "firstSeen": "2026-04-18",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-c70eca6b0f88f44d",
@@ -22393,6 +22613,7 @@
         "EV-b0637e99e328479b",
         "EV-bdd574fb9ee91b4d",
         "EV-4aa29c278432a9db",
+        "EV-048612d1bcbd7a96",
         "EV-448e0a020dd2c9a9",
         "EV-bce46f2e5cc68d5d",
         "EV-fe49d2ee580cfea2",
@@ -22417,13 +22638,14 @@
         "EV-bc4ac955cd26b969",
         "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
-        "EV-31df816db86db282",
         "EV-d9270ae7b862212b",
-        "EV-5762fe51987bc5ff",
+        "EV-6e66bc52494a6b07",
         "EV-cbc0b7a7d21a29e2",
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-31df816db86db282",
+        "EV-901b5e79c3feb4b1",
         "EV-df88363737beb880",
         "EV-78758ccb5d45f4f9",
         "EV-ffe9a66690dc8b19",
@@ -22859,13 +23081,13 @@
         "TX-use_case-customer_support",
         "TX-target_user-consumer",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -22915,7 +23137,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-88ab1e5d793701f9",
@@ -22936,11 +23158,11 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-technology-open_weights"
@@ -22961,7 +23183,8 @@
       ],
       "eventIds": [
         "EV-4a3fa2b57b7ce64a",
-        "EV-7283de3f3a76d22b"
+        "EV-7283de3f3a76d22b",
+        "EV-19bcf977f3fe4fb1"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -22974,8 +23197,8 @@
         "TX-use_case-research_discovery"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-06-26",
-      "lastSeen": "2026-08-25"
+      "firstSeen": "2026-06-18",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-cbc62794911ff31b",
@@ -22992,6 +23215,7 @@
         "EV-7f3298069258b3ea",
         "EV-a00763037a94d512",
         "EV-02548003157849bb",
+        "EV-fb3d98bc97f91047",
         "EV-8b0f056571d68269",
         "EV-b93b6abf31662339",
         "EV-bd5b6110559f2fda",
@@ -23058,7 +23282,7 @@
         "EN-7d1507284a5757ca"
       ],
       "firstSeen": "2023-11-28",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-6f7ac1823da81d2e",
@@ -23073,11 +23297,17 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-383a1cc6f0c68d6a",
         "EV-87432dbb99cd6033",
+        "EV-ed65f3187aa6aa40",
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
+        "EV-8ea9e79f7edcb94f",
         "EV-f8c3a83d883c9b22",
+        "EV-010d9a80536b3f11",
         "EV-5a1cfb0d6e47e552",
+        "EV-4fe0a7f6c02e9df5",
+        "EV-a72d111131f8de60",
         "EV-40dbd71782c11373",
         "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
@@ -23146,8 +23376,8 @@
         "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-08",
-      "lastSeen": "2026-10-01"
+      "firstSeen": "2026-04-24",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-245f1e177c5169cb",
@@ -23162,7 +23392,8 @@
       "eventIds": [
         "EV-44c9a50b99c76a70",
         "EV-a89ffa113dfb60c2",
-        "EV-450f624a6a6446ce"
+        "EV-450f624a6a6446ce",
+        "EV-c76e8d66d6781e27"
       ],
       "viewpointIds": [],
       "classificationRefs": [
@@ -23180,7 +23411,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-21",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-1c5483264189feef",
@@ -23262,7 +23493,10 @@
         "EV-59870accd54d5efd",
         "EV-55e7c286e95be405",
         "EV-6f092cfc7a064d64",
+        "EV-11d7d54272c6bb41",
         "EV-d4e44892226be468",
+        "EV-903f06f47afd671a",
+        "EV-fb3d98bc97f91047",
         "EV-1ac32035d5e425e1",
         "EV-8ae771f26c02f7c4",
         "EV-bbb3ed2040b40e3f",
@@ -23352,7 +23586,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-085578b03da7d660",
@@ -23454,6 +23688,28 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-37f52323f7361ee9",
+      "name": "Alphabet's Isomorphic Labs",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-347194d4f6eb2a63"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-healthcare_life_sciences",
+        "TX-use_case-research_discovery"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-05-12",
+      "lastSeen": "2026-10-02"
+    },
+    {
       "id": "EN-cecdd8369134f75e",
       "name": "容芯致远",
       "entityType": "organization_candidate",
@@ -23474,10 +23730,10 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-education",
@@ -23516,8 +23772,8 @@
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-target_user-consumer",
-        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences",
+        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-use_case-knowledge_search"
@@ -23574,8 +23830,8 @@
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-developer",
         "TX-use_case-design_engineering",
-        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-industry-healthcare_life_sciences",
+        "TX-ai_market_subcategory-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery"
       ],
@@ -23632,11 +23888,11 @@
         "TX-industry-manufacturing",
         "TX-target_user-developer",
         "TX-use_case-physical_automation",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery"
       ],
@@ -23655,6 +23911,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-e9c3669ece63cf7f",
         "EV-0af7882f1d383ea5"
       ],
       "viewpointIds": [],
@@ -23672,7 +23929,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-10",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-023e881577ad3ab1",
@@ -23713,23 +23970,28 @@
         "EV-2470b13ea55496d0",
         "EV-59870accd54d5efd",
         "EV-83697c1162a5faf9",
+        "EV-9f886463e1660f7a",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
+        "EV-3f9d420719641eda",
         "EV-a0ca934522418c0b",
         "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
+        "EV-002f1b7abaf28827",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
         "EV-2bb63a3015195f9b",
         "EV-7f3298069258b3ea",
         "EV-43b56d49df9a73a2",
+        "EV-b61af70f81354b8e",
         "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
-        "EV-5762fe51987bc5ff",
+        "EV-9cf819fafc04ca0c",
+        "EV-d85ea5150230ee56",
         "EV-6cb8979f92cf74ce",
         "EV-ef1de880e4ef9f75",
         "EV-63f49f303a80a6a0",
@@ -24013,11 +24275,11 @@
         "TX-target_user-consumer",
         "TX-technology-speech_audio",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
         "TX-technology-multimodal",
         "TX-use_case-software_development",
@@ -24031,8 +24293,8 @@
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-use_case-legal_compliance",
-        "TX-deployment_model-cloud",
         "TX-technology-computer_use",
+        "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",
         "TX-technology-tool_use"
       ],
@@ -24058,7 +24320,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-7d3194f79e645c42",
@@ -24071,6 +24333,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-fe7445d005172a39",
         "EV-2470b13ea55496d0",
         "EV-c8871997cafcf846",
         "EV-e331c286836a80f3",
@@ -24097,6 +24360,7 @@
         "EV-14cc7f194f3e5af8",
         "EV-d7a7244d620a2142",
         "EV-4da1a7c4d527eb69",
+        "EV-5e847cd78e657cb5",
         "EV-e41fc65eb014893f",
         "EV-974a6b7d0e0efef2",
         "EV-7abd8ec418f1e7f3",
@@ -24111,17 +24375,20 @@
         "EV-336cd248842004a5",
         "EV-a42e51959c627554",
         "EV-ee0662b75588987e",
+        "EV-fb3d98bc97f91047",
         "EV-b1138bccf5ccd86c",
         "EV-201b25d4f3cf696a",
         "EV-d9270ae7b862212b",
-        "EV-5762fe51987bc5ff",
+        "EV-6e66bc52494a6b07",
         "EV-7954fd5a6b8b76d0",
         "EV-7add33b4c74dbf1a",
         "EV-1abf0d076d30ec6d",
         "EV-3b40ec144e5db22c",
         "EV-467d1a701d21327d",
         "EV-c5643983538c6513",
+        "EV-31df816db86db282",
         "EV-1f55bab475db2c30",
+        "EV-6739042f904b91df",
         "EV-c387c9717ee19670",
         "EV-ef1de880e4ef9f75",
         "EV-acdeebead5324344",
@@ -24624,9 +24891,9 @@
         "TX-target_user-consumer",
         "TX-technology-speech_audio",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -24677,7 +24944,7 @@
         "EN-b9db1ff13ae8496e"
       ],
       "firstSeen": "2022-10-01",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     }
   ],
   "fde": [],

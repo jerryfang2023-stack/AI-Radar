@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 8,
-    "historical_or_ambiguous_count": 4,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2023-08-24",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "lead": 3,
       "participant": 5
     },
@@ -120,7 +120,7 @@
         "name": "SRE.ai"
       },
       {
-        "entity_id": "EN-816bab802b34b308",
+        "entity_id": "EN-29a3723ce5ee3350",
         "canonical_entity_id": "",
         "name": "Together AI"
       }
@@ -209,18 +209,19 @@
         ]
       },
       {
-        "activity_id": "IA-ea30fa042eaba5b7",
-        "funding_insight_id": "FI-2dfbeaa7d627041d",
+        "activity_id": "IA-9e650d1f789a908c",
+        "funding_insight_id": "FI-b1c547937abcaf77",
         "event_ids": [
+          "EV-4a73829a143cf3fc",
           "EV-13ec78dfdbca678b"
         ],
-        "company_entity_id": "EN-816bab802b34b308",
+        "company_entity_id": "EN-29a3723ce5ee3350",
         "company_canonical_entity_id": "",
         "company_name": "Together AI",
         "round": "C轮",
         "round_code": "series_c",
-        "round_original": "Series C",
-        "amount_original": "$800 million",
+        "round_original": "C轮",
+        "amount_original": "$800M",
         "amount_normalized": {
           "currency": "USD",
           "value": 800000000,
@@ -239,12 +240,12 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-7d75683a17a8f2ca",
-            "source_url": "https://aibizinsider.com/2026/07/21/together-ai-800m-series-c-open-source-2026-07-21/",
-            "source_title": "The Startup Making AI 20x Cheaper Just Raised $800M - AI Biz Insider",
-            "source_content_hash": "a24dcd74ed166799",
-            "quote": "joined by NVIDIA, Vista Equity Partners, General Catalyst, Salesforce Ventures, and Emergence Capital",
-            "quote_hash": "f4c6b9a12871b164051bf15691b0189abc1ed8c839db8a57879585abe41c8b7f"
+            "source_id": "FISRC-b7537d2258bce6eb",
+            "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+            "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+            "source_content_hash": "80d971eac6d90be3",
+            "quote": "with participation from Schneider Electric, Pegatron, Salesforce Ventures, and others",
+            "quote_hash": "9a7831070bdba5f579d20ed35e09eb940bab592d983a2cf655934c7fc8b4c706"
           }
         ]
       },
@@ -547,6 +548,38 @@
         ]
       },
       {
+        "activity_id": "IA-d1cce6e95da23919",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "回归投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-94676d99b2defaa4",
+            "source_url": "https://lovable.dev/blog/series-c",
+            "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+            "source_content_hash": "f9c4cc8a8cd4a7c7",
+            "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+            "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-7ebf090cd106a2ea",
         "funding_insight_id": "FI-1cf34218733257fd",
         "event_ids": [
@@ -597,12 +630,12 @@
         "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
       },
       {
-        "source_id": "FISRC-7d75683a17a8f2ca",
-        "source_url": "https://aibizinsider.com/2026/07/21/together-ai-800m-series-c-open-source-2026-07-21/",
-        "source_title": "The Startup Making AI 20x Cheaper Just Raised $800M - AI Biz Insider",
-        "source_content_hash": "a24dcd74ed166799",
-        "quote": "joined by NVIDIA, Vista Equity Partners, General Catalyst, Salesforce Ventures, and Emergence Capital",
-        "quote_hash": "f4c6b9a12871b164051bf15691b0189abc1ed8c839db8a57879585abe41c8b7f"
+        "source_id": "FISRC-b7537d2258bce6eb",
+        "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+        "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+        "source_content_hash": "80d971eac6d90be3",
+        "quote": "with participation from Schneider Electric, Pegatron, Salesforce Ventures, and others",
+        "quote_hash": "9a7831070bdba5f579d20ed35e09eb940bab592d983a2cf655934c7fc8b4c706"
       },
       {
         "source_id": "FISRC-392b2fac8b63845f",
@@ -667,6 +700,14 @@
         "source_content_hash": "031d223859c249dd",
         "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
         "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+      },
+      {
+        "source_id": "FISRC-94676d99b2defaa4",
+        "source_url": "https://lovable.dev/blog/series-c",
+        "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+        "source_content_hash": "f9c4cc8a8cd4a7c7",
+        "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+        "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
       },
       {
         "source_id": "FISRC-ff92324bbd437a73",
@@ -735,8 +776,8 @@
           "source_id": "FISRC-0232cca5ca9bf922"
         },
         {
-          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7d75683a17a8f2ca"
+          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b7537d2258bce6eb"
         }
       ],
       "contacts": [
@@ -789,12 +830,12 @@
           "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
         },
         {
-          "source_id": "FISRC-7d75683a17a8f2ca",
-          "source_url": "https://aibizinsider.com/2026/07/21/together-ai-800m-series-c-open-source-2026-07-21/",
-          "source_title": "The Startup Making AI 20x Cheaper Just Raised $800M - AI Biz Insider",
-          "source_content_hash": "a24dcd74ed166799",
-          "quote": "joined by NVIDIA, Vista Equity Partners, General Catalyst, Salesforce Ventures, and Emergence Capital",
-          "quote_hash": "f4c6b9a12871b164051bf15691b0189abc1ed8c839db8a57879585abe41c8b7f"
+          "source_id": "FISRC-b7537d2258bce6eb",
+          "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+          "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+          "source_content_hash": "80d971eac6d90be3",
+          "quote": "with participation from Schneider Electric, Pegatron, Salesforce Ventures, and others",
+          "quote_hash": "9a7831070bdba5f579d20ed35e09eb940bab592d983a2cf655934c7fc8b4c706"
         }
       ],
       "last_verified_at": "2026-09-25",

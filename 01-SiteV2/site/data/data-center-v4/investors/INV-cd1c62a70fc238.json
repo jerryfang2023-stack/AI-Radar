@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,19 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
+    "china_market_activity_count": 3,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-04-10",
     "latest_disclosed_at": "2026-07-30",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "lead": 2
+      "lead": 3
     },
     "round_codes": [
       "series_a",
@@ -129,6 +129,46 @@
             "source_content_hash": "c58547114571e365",
             "quote": "本轮融资由阿里云领投，老股东红杉中国、元璟资本超额跟投",
             "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f68b7a817ff301a7",
+        "funding_insight_id": "FI-4880b1e3fb7a4da4",
+        "event_ids": [
+          "EV-008220e3dc696cb5"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_name": "生数科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "近20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 20 亿元"
+        },
+        "announced_at": "2026-04-10",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b07965e9cd2c01b5",
+            "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+            "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+            "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+            "quote": "本轮融资由阿里云领投，中网投、九安海棠、好未来、光合创投等投资人战略投资，星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+            "quote_hash": "230f47f6a031a4f9029cc5f7ca3584cd13bd7df9ab1e86d38dc113be4b35e678"
           }
         ]
       },
@@ -282,6 +322,14 @@
         "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
       },
       {
+        "source_id": "FISRC-b07965e9cd2c01b5",
+        "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+        "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+        "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+        "quote": "本轮融资由阿里云领投，中网投、九安海棠、好未来、光合创投等投资人战略投资，星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+        "quote_hash": "230f47f6a031a4f9029cc5f7ca3584cd13bd7df9ab1e86d38dc113be4b35e678"
+      },
+      {
         "source_id": "FISRC-fd865802af815ab3",
         "source_url": "https://news.pedaily.cn/202604/562614.shtml",
         "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
@@ -351,12 +399,12 @@
           "source_id": "FISRC-66fcc0a528f97b62"
         },
         {
-          "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮领投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fd865802af815ab3"
+          "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮领投 · 近20亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b07965e9cd2c01b5"
         },
         {
-          "description": "融资来源记录：硅基流动 · 历史轮次未披露 · A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c1c9258fc2a6aa50"
+          "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮领投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fd865802af815ab3"
         }
       ],
       "contacts": [
@@ -399,20 +447,20 @@
           "quote_hash": "6da574cfa371abdcd4cdd7ccfc11b39874030b6c8099dbf30746fbca1290d6dd"
         },
         {
+          "source_id": "FISRC-b07965e9cd2c01b5",
+          "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+          "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+          "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+          "quote": "本轮融资由阿里云领投，中网投、九安海棠、好未来、光合创投等投资人战略投资，星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+          "quote_hash": "230f47f6a031a4f9029cc5f7ca3584cd13bd7df9ab1e86d38dc113be4b35e678"
+        },
+        {
           "source_id": "FISRC-fd865802af815ab3",
           "source_url": "https://news.pedaily.cn/202604/562614.shtml",
           "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
           "source_content_hash": "a281cc701a9028fb",
           "quote": "本轮融资由 阿里云领投",
           "quote_hash": "eefacfe9bad10e9bcac9bbc37a417cab9dcec3f9ae7c7fcbf67a496d74deb623"
-        },
-        {
-          "source_id": "FISRC-c1c9258fc2a6aa50",
-          "source_url": "https://c.m.163.com/news/a/KVI76U30051180F7.html",
-          "source_title": "超20亿！智谱投的AI云厂商融资了，跟阿里火山百度“抢肉”吃",
-          "source_content_hash": "39056b52b07178cc",
-          "quote": "去年6月完成 数亿元 A轮融资， 阿里云领投，创新工场跟投 。",
-          "quote_hash": "64a3067a87a0e55c3fd47cc4420d7451e4f30c738c3f277bd3264a4f5abc4c04"
         }
       ],
       "last_verified_at": "2026-09-26",
