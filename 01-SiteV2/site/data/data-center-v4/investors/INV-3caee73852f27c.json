@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,30 +54,33 @@
   },
   "institution": {
     "id": "INV-3caee73852f27c",
-    "name": "BV百度风投",
-    "aliases": [],
+    "name": "BV 百度风投",
+    "aliases": [
+      "BV百度风投"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 3,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 7,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-04-10",
+    "latest_disclosed_at": "2026-06-25",
     "role_counts": {
-      "historical_or_ambiguous": 6,
-      "participant": 3
+      "historical_or_ambiguous": 7,
+      "participant": 4
     },
     "round_codes": [
       "angel",
       "angel_plus",
+      "series_a_plus_extension",
       "series_b"
     ],
     "portfolio_companies": [
@@ -85,6 +88,11 @@
         "entity_id": "EN-a43f157d208b2a63",
         "canonical_entity_id": "EN-a43f157d208b2a63",
         "name": "开物纪"
+      },
+      {
+        "entity_id": "EN-68608367b27ccaeb",
+        "canonical_entity_id": "",
+        "name": "凌川科技"
       },
       {
         "entity_id": "EN-9b21c9bf3305c0d6",
@@ -98,6 +106,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7f96ebab6f93c205",
+        "funding_insight_id": "FI-cf2e02493f285517",
+        "event_ids": [
+          "EV-193f535567067d95"
+        ],
+        "company_entity_id": "EN-68608367b27ccaeb",
+        "company_canonical_entity_id": "",
+        "company_name": "凌川科技",
+        "round": "A+轮扩展",
+        "round_code": "series_a_plus_extension",
+        "round_original": "A+轮扩展",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a39c77bc80e12506",
+            "source_url": "https://www.ithome.com/0/968/289.htm",
+            "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+            "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+            "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+            "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ed221f79d6bfafdb",
         "funding_insight_id": "FI-7108544d47292865",
@@ -315,6 +363,38 @@
         ]
       },
       {
+        "activity_id": "IA-5ad360662a83f74c",
+        "funding_insight_id": "FI-4880b1e3fb7a4da4",
+        "event_ids": [
+          "EV-008220e3dc696cb5"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_name": "生数科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "原有股东持续追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b07965e9cd2c01b5",
+            "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+            "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+            "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+            "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+            "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-4b90e0ca9920eafc",
         "funding_insight_id": "FI-057188417b7e7728",
         "event_ids": [
@@ -415,6 +495,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a39c77bc80e12506",
+        "source_url": "https://www.ithome.com/0/968/289.htm",
+        "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+        "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+        "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+        "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
+      },
+      {
         "source_id": "FISRC-fd865802af815ab3",
         "source_url": "https://news.pedaily.cn/202604/562614.shtml",
         "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
@@ -461,6 +549,14 @@
         "source_content_hash": "28bd9ee2b4d8b3a6",
         "quote": "投资方名单覆盖顺为资本、BV百度风投、梅花创投、柯力传感等机构",
         "quote_hash": "ad00b62d35c4db8f76f7f421e064b7c886795bec97b2ae4f2e967ddcbdbced87"
+      },
+      {
+        "source_id": "FISRC-b07965e9cd2c01b5",
+        "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+        "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+        "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+        "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+        "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
       },
       {
         "source_id": "FISRC-c0671e3e70d8ae56",
@@ -549,16 +645,16 @@
           "source_id": "bv_about"
         },
         {
+          "description": "融资来源记录：凌川科技 · A+轮扩展 · 2026-06-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a39c77bc80e12506"
+        },
+        {
           "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd865802af815ab3"
         },
         {
           "description": "融资来源记录：开物纪 · 天使+轮 · 2026-03-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3d10ec9bd5ef3ad4"
-        },
-        {
-          "description": "融资来源记录：无界动力 · 天使轮 · 2026-02-14 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-daccbed46498e19c"
         }
       ],
       "contacts": [
@@ -596,6 +692,14 @@
           "quote_hash": "530711d532083b7fad610c3dba95897713fa15d88d7a4e814f46e0bc20130d20"
         },
         {
+          "source_id": "FISRC-a39c77bc80e12506",
+          "source_url": "https://www.ithome.com/0/968/289.htm",
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+          "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+          "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+          "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
+        },
+        {
           "source_id": "FISRC-fd865802af815ab3",
           "source_url": "https://news.pedaily.cn/202604/562614.shtml",
           "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
@@ -610,14 +714,6 @@
           "source_content_hash": "d5d8d61ad1133bc1",
           "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
           "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
-        },
-        {
-          "source_id": "FISRC-daccbed46498e19c",
-          "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-          "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-          "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-          "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
-          "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
         }
       ],
       "last_verified_at": "2026-09-25",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,30 +61,76 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-17",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-09-14",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_b"
+      "series_b",
+      "series_e"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-50b2676afbe30c83",
         "canonical_entity_id": "EN-50b2676afbe30c83",
         "name": "Higgsfield"
+      },
+      {
+        "entity_id": "EN-e4540a7c8404b1be",
+        "canonical_entity_id": "",
+        "name": "Temporal"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5a6775d6697eaa84",
+        "funding_insight_id": "FI-898cddb74dcff413",
+        "event_ids": [
+          "EV-6ed17a96a4a4079d"
+        ],
+        "company_entity_id": "EN-e4540a7c8404b1be",
+        "company_canonical_entity_id": "",
+        "company_name": "Temporal",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$550M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 550000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5.5 亿美元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf83d78a216a5edf",
+            "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+            "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+            "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+            "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+            "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a5d117c88705f04b",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cf83d78a216a5edf",
+        "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+        "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+        "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+        "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+        "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
+      },
+      {
         "source_id": "FISRC-b235ace767812393",
         "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
         "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
@@ -164,6 +218,14 @@
           "source_content_hash": "06ecfd55822882e3",
           "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
           "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+        },
+        {
+          "source_id": "FISRC-cf83d78a216a5edf",
+          "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+          "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+          "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+          "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+          "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
         }
       ],
       "summary": "融资公告中的 “Growth Equity at Goldman Sachs Alternatives” 指 Goldman Sachs Alternatives 体系内的成长股权投资业务线；Goldman Sachs 官网将 growth equity 列为 Alternatives 的投资类别。本档案将其作为集团内投资业务单元描述，不视为单独注册机构。",
@@ -194,6 +256,10 @@
         {
           "description": "Higgsfield named this institution among participants in its $400 million Series B announced on 2026-08-17. The $400 million is the total round size; the institution's individual investment amount was not disclosed.",
           "source_id": "FISRC-b235ace767812393"
+        },
+        {
+          "description": "融资来源记录：Temporal · E轮 · 2026-09-14 · 本轮参投 · $550M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf83d78a216a5edf"
         }
       ],
       "contacts": [

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
+    "china_market_activity_count": 3,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-06-03",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "first_external",
@@ -130,6 +130,46 @@
             "source_content_hash": "38c6d5b49c2072e5",
             "quote": "本轮融资由宁德时代领投，阿美投资 Aramco Ventures战略投资，太平创新投资、广发信德、复星创富等跟投，源码资本、光远资本等老股东持续追加。",
             "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-91ecf58471af1ce4",
+        "funding_insight_id": "FI-a1d81c83315eb264",
+        "event_ids": [
+          "EV-8ea9e79f7edcb94f"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资",
+        "amount_original": "约 510 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 51000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 510 亿元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e0178cb313198d39",
+            "source_url": "https://www.ithome.com/0/965/686.htm",
+            "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+            "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+            "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+            "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
           }
         ]
       },
@@ -289,6 +329,14 @@
         "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
       },
       {
+        "source_id": "FISRC-e0178cb313198d39",
+        "source_url": "https://www.ithome.com/0/965/686.htm",
+        "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+        "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+        "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+        "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+      },
+      {
         "source_id": "FISRC-d2c8c841370ed82a",
         "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
         "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
@@ -343,12 +391,12 @@
           "source_id": "FISRC-ac5a938b8fdef1a9"
         },
         {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d2c8c841370ed82a"
+          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e0178cb313198d39"
         },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-20480dcf3f970893"
+          "source_id": "FISRC-d2c8c841370ed82a"
         }
       ],
       "contacts": [],
@@ -362,20 +410,20 @@
           "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
         },
         {
+          "source_id": "FISRC-e0178cb313198d39",
+          "source_url": "https://www.ithome.com/0/965/686.htm",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+          "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+          "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+          "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+        },
+        {
           "source_id": "FISRC-d2c8c841370ed82a",
           "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
           "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
           "source_content_hash": "1a156474d760e02b",
           "quote": "CATL ​¥5B",
           "quote_hash": "bcd88ca2e2bd8d6d580efd429b25e6a91889952bc2ee1f22526c0bd588bb03d5"
-        },
-        {
-          "source_id": "FISRC-20480dcf3f970893",
-          "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
-          "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
-          "source_content_hash": "94a6c6ef0b270e0d",
-          "quote": "battery manufacturer CATL",
-          "quote_hash": "e0b616b1ac277c041925d4a8c3cf5a0787096db311274a1b71b625b306586175"
         }
       ],
       "last_verified_at": "2026-09-25"

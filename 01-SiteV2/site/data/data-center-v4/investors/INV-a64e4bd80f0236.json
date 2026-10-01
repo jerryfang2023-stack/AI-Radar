@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-29",
+    "first_disclosed_at": "2026-05-20",
     "latest_disclosed_at": "2026-09-29",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed"
@@ -88,6 +88,11 @@
         "entity_id": "EN-b80e0af617d0f8ff",
         "canonical_entity_id": "",
         "name": "Hint"
+      },
+      {
+        "entity_id": "EN-ee314fcf465563d0",
+        "canonical_entity_id": "",
+        "name": "NanoCo"
       }
     ],
     "activities": [
@@ -170,6 +175,46 @@
             "quote_hash": "fae0fdc17248be488b11890fcb7005268ae6ef33511bde677b38a563bf8ce1ee"
           }
         ]
+      },
+      {
+        "activity_id": "IA-20a53469791c4619",
+        "funding_insight_id": "FI-c6f29c50d1e78506",
+        "event_ids": [
+          "EV-216f840c4af1d3fb"
+        ],
+        "company_entity_id": "EN-ee314fcf465563d0",
+        "company_canonical_entity_id": "",
+        "company_name": "NanoCo",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-056bd835d7bc912e",
+            "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
+            "source_title": "NanoClaw 创始人拒绝 2000 万美元收购要约，转而完成 1200 万美元种子轮融资",
+            "source_content_hash": "43a06c7b097056dbcfcc0be744210b8fa02f0be69b16f886ed7437d32eba1205",
+            "quote": "The funding was led by Valley Capital Partners and saw participation from Docker, Vercel, Monday.com, Slow Ventures, and angels like Clem Delangue, CEO of Hugging Face.",
+            "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -188,6 +233,14 @@
         "source_content_hash": "8bc83e9e655d383b",
         "quote": "a $10 million seed financing round led by Slow Ventures",
         "quote_hash": "fae0fdc17248be488b11890fcb7005268ae6ef33511bde677b38a563bf8ce1ee"
+      },
+      {
+        "source_id": "FISRC-056bd835d7bc912e",
+        "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
+        "source_title": "NanoClaw 创始人拒绝 2000 万美元收购要约，转而完成 1200 万美元种子轮融资",
+        "source_content_hash": "43a06c7b097056dbcfcc0be744210b8fa02f0be69b16f886ed7437d32eba1205",
+        "quote": "The funding was led by Valley Capital Partners and saw participation from Docker, Vercel, Monday.com, Slow Ventures, and angels like Clem Delangue, CEO of Hugging Face.",
+        "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
       }
     ],
     "public_profile": {
@@ -251,6 +304,10 @@
         {
           "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39cbb5f315cdae11"
+        },
+        {
+          "description": "融资来源记录：NanoCo · 种子轮 · 2026-05-20 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-056bd835d7bc912e"
         }
       ],
       "contacts": [
@@ -331,6 +388,14 @@
           "source_content_hash": "0d32e048dc28b8dd",
           "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
           "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+        },
+        {
+          "source_id": "FISRC-056bd835d7bc912e",
+          "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
+          "source_title": "NanoClaw 创始人拒绝 2000 万美元收购要约，转而完成 1200 万美元种子轮融资",
+          "source_content_hash": "43a06c7b097056dbcfcc0be744210b8fa02f0be69b16f886ed7437d32eba1205",
+          "quote": "The funding was led by Valley Capital Partners and saw participation from Docker, Vercel, Monday.com, Slow Ventures, and angels like Clem Delangue, CEO of Hugging Face.",
+          "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
         }
       ],
       "profile_type": "organization",

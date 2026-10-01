@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -72,7 +72,8 @@
     "first_disclosed_at": "2026-07-01",
     "latest_disclosed_at": "2026-07-08",
     "role_counts": {
-      "participant": 2
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "series_c",
@@ -85,7 +86,7 @@
         "name": "SambaNova Systems"
       },
       {
-        "entity_id": "EN-816bab802b34b308",
+        "entity_id": "EN-29a3723ce5ee3350",
         "canonical_entity_id": "",
         "name": "Together AI"
       }
@@ -132,18 +133,19 @@
         ]
       },
       {
-        "activity_id": "IA-e8458440edd81775",
-        "funding_insight_id": "FI-2dfbeaa7d627041d",
+        "activity_id": "IA-2927c8429d3268e9",
+        "funding_insight_id": "FI-b1c547937abcaf77",
         "event_ids": [
+          "EV-4a73829a143cf3fc",
           "EV-13ec78dfdbca678b"
         ],
-        "company_entity_id": "EN-816bab802b34b308",
+        "company_entity_id": "EN-29a3723ce5ee3350",
         "company_canonical_entity_id": "",
         "company_name": "Together AI",
         "round": "C轮",
         "round_code": "series_c",
-        "round_original": "Series C",
-        "amount_original": "$800 million",
+        "round_original": "C轮",
+        "amount_original": "$800M",
         "amount_normalized": {
           "currency": "USD",
           "value": 800000000,
@@ -158,16 +160,16 @@
         "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
-        "role": "本轮参投",
-        "role_code": "participant",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-6f0f12fb121fbd88",
-            "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-            "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-            "source_content_hash": "99e8e0f48b30eed2",
-            "quote": "with participation from Vista Equity Partners",
-            "quote_hash": "8675f498cc47f8b1b529cfa4f40c9f48d46b02c7ce2e8ac6c2303159a57740f2"
+            "source_id": "FISRC-b7537d2258bce6eb",
+            "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+            "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+            "source_content_hash": "80d971eac6d90be3",
+            "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+            "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
           }
         ]
       }
@@ -182,12 +184,12 @@
         "quote_hash": "0998f90400f6caccea1101f14169b10c642095e657ac7f4a52306072a5b0bf59"
       },
       {
-        "source_id": "FISRC-6f0f12fb121fbd88",
-        "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-        "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-        "source_content_hash": "99e8e0f48b30eed2",
-        "quote": "with participation from Vista Equity Partners",
-        "quote_hash": "8675f498cc47f8b1b529cfa4f40c9f48d46b02c7ce2e8ac6c2303159a57740f2"
+        "source_id": "FISRC-b7537d2258bce6eb",
+        "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+        "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+        "source_content_hash": "80d971eac6d90be3",
+        "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+        "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
       }
     ],
     "public_profile": {
@@ -256,8 +258,8 @@
           "source_id": "FISRC-dbf8259066547c8e"
         },
         {
-          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6f0f12fb121fbd88"
+          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮领投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b7537d2258bce6eb"
         }
       ],
       "contacts": [
@@ -302,12 +304,12 @@
           "quote_hash": "0998f90400f6caccea1101f14169b10c642095e657ac7f4a52306072a5b0bf59"
         },
         {
-          "source_id": "FISRC-6f0f12fb121fbd88",
-          "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-          "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-          "source_content_hash": "99e8e0f48b30eed2",
-          "quote": "with participation from Vista Equity Partners",
-          "quote_hash": "8675f498cc47f8b1b529cfa4f40c9f48d46b02c7ce2e8ac6c2303159a57740f2"
+          "source_id": "FISRC-b7537d2258bce6eb",
+          "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+          "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+          "source_content_hash": "80d971eac6d90be3",
+          "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+          "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
         }
       ],
       "last_verified_at": "2026-09-26",

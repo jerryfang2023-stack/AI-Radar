@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,9 +54,9 @@
   },
   "institution": {
     "id": "INV-f5cb1792d0108d",
-    "name": "SOMA Capital",
+    "name": "Soma Capital",
     "aliases": [
-      "Soma Capital"
+      "SOMA Capital"
     ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
@@ -64,7 +64,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
@@ -74,6 +74,7 @@
     "first_disclosed_at": "2024-05-21",
     "latest_disclosed_at": "2026-06-30",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 3
     },
     "round_codes": [
@@ -217,6 +218,38 @@
             "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-e142b582a5b73c0d",
+        "funding_insight_id": "FI-43e6948d7884584e",
+        "event_ids": [
+          "EV-a0b76c46462b5e3c"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3b8fce2e43a41d5b",
+            "source_url": "https://multiples.vc/private-comps/starcloud",
+            "source_title": "Starcloud Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "fd3765e774ce97c7",
+            "quote": "Investors in Starcloud by funding rounds participatedInvestorHQRoundsRoleFirst checkNFXSan Francisco, CA3LeadOct 2024EQTStockholm2LeadMar 2026Y CombinatorSan Francisco, CA2LeadJul 2024BenchmarkSan Francisco, CA2LeadMar 2026Soma CapitalSan Francisco, CA2ParticipantOct 2024",
+            "quote_hash": "47636a5f93487b4779c67dc30e751fa131a6019b08530b37af62526996e3d9ef"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -243,6 +276,14 @@
         "source_content_hash": "13e16154329e1e7e",
         "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
         "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
+      },
+      {
+        "source_id": "FISRC-3b8fce2e43a41d5b",
+        "source_url": "https://multiples.vc/private-comps/starcloud",
+        "source_title": "Starcloud Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "fd3765e774ce97c7",
+        "quote": "Investors in Starcloud by funding rounds participatedInvestorHQRoundsRoleFirst checkNFXSan Francisco, CA3LeadOct 2024EQTStockholm2LeadMar 2026Y CombinatorSan Francisco, CA2LeadJul 2024BenchmarkSan Francisco, CA2LeadMar 2026Soma CapitalSan Francisco, CA2ParticipantOct 2024",
+        "quote_hash": "47636a5f93487b4779c67dc30e751fa131a6019b08530b37af62526996e3d9ef"
       }
     ],
     "public_profile": {

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -72,8 +72,7 @@
     "first_disclosed_at": "2026-02-25",
     "latest_disclosed_at": "2026-07-01",
     "role_counts": {
-      "lead": 1,
-      "participant": 1
+      "lead": 2
     },
     "round_codes": [
       "multi_round",
@@ -86,25 +85,26 @@
         "name": "Harper"
       },
       {
-        "entity_id": "EN-816bab802b34b308",
+        "entity_id": "EN-29a3723ce5ee3350",
         "canonical_entity_id": "",
         "name": "Together AI"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-66fec4c7e3444849",
-        "funding_insight_id": "FI-2dfbeaa7d627041d",
+        "activity_id": "IA-9e1468d2a8c79023",
+        "funding_insight_id": "FI-b1c547937abcaf77",
         "event_ids": [
+          "EV-4a73829a143cf3fc",
           "EV-13ec78dfdbca678b"
         ],
-        "company_entity_id": "EN-816bab802b34b308",
+        "company_entity_id": "EN-29a3723ce5ee3350",
         "company_canonical_entity_id": "",
         "company_name": "Together AI",
         "round": "C轮",
         "round_code": "series_c",
-        "round_original": "Series C",
-        "amount_original": "$800 million",
+        "round_original": "C轮",
+        "amount_original": "$800M",
         "amount_normalized": {
           "currency": "USD",
           "value": 800000000,
@@ -119,16 +119,16 @@
         "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
-        "role": "本轮参投；种子轮参投",
-        "role_code": "participant",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-6f0f12fb121fbd88",
-            "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-            "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-            "source_content_hash": "99e8e0f48b30eed2",
-            "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
-            "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
+            "source_id": "FISRC-b7537d2258bce6eb",
+            "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+            "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+            "source_content_hash": "80d971eac6d90be3",
+            "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+            "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
           }
         ]
       },
@@ -175,12 +175,12 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-6f0f12fb121fbd88",
-        "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-        "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-        "source_content_hash": "99e8e0f48b30eed2",
-        "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
-        "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
+        "source_id": "FISRC-b7537d2258bce6eb",
+        "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+        "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+        "source_content_hash": "80d971eac6d90be3",
+        "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+        "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
       },
       {
         "source_id": "FISRC-7f1c22fc0cc9f63f",
@@ -227,8 +227,8 @@
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投；种子轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6f0f12fb121fbd88"
+          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮领投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b7537d2258bce6eb"
         },
         {
           "description": "融资来源记录：Harper · 多轮融资 · 2026-02-25 · A轮领投 · $46.8 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -280,12 +280,12 @@
           "quote_hash": "ff38a0733b8a4a824b0bb246dd0f8e8855bdf1444f593140261744552f2e537d"
         },
         {
-          "source_id": "FISRC-6f0f12fb121fbd88",
-          "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-          "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-          "source_content_hash": "99e8e0f48b30eed2",
-          "quote": "a $102.5 million Series A funding round led by Kleiner Perkins with participation from Nvidia and Emergence Capital back in 2023",
-          "quote_hash": "7b81676f7e4adc6fbeac3fe3f8f408d50730ce1f0c1d13781a834105396c1ff1"
+          "source_id": "FISRC-b7537d2258bce6eb",
+          "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+          "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+          "source_content_hash": "80d971eac6d90be3",
+          "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+          "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
         },
         {
           "source_id": "FISRC-7f1c22fc0cc9f63f",

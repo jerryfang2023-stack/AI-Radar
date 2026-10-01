@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-09-19",
+    "latest_disclosed_at": "2026-09-19",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-162103694fa33e7b",
+        "canonical_entity_id": "",
+        "name": "Vals"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-233ee6c83af41c6d",
+        "funding_insight_id": "FI-05640b3db4ac3921",
+        "event_ids": [
+          "EV-0f7d759e759cfc09"
+        ],
+        "company_entity_id": "EN-162103694fa33e7b",
+        "company_canonical_entity_id": "",
+        "company_name": "Vals",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-09-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-404aba285b240b86",
+            "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+            "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+            "source_content_hash": "5d9a4e3004c9d318",
+            "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+            "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-28259e62fa313458",
         "funding_insight_id": "FI-db2bd30618100f0d",
@@ -112,6 +161,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-404aba285b240b86",
+        "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+        "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+        "source_content_hash": "5d9a4e3004c9d318",
+        "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+        "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+      },
+      {
         "source_id": "FISRC-5f5111750b24d3d3",
         "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",
         "source_title": "WindBorne Systems Takes Flight with $15 Million in Series A Funding",
@@ -125,10 +182,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pear VC 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Pear VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Vals · A轮 · 2026-09-19 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-404aba285b240b86"
+        },
         {
           "description": "融资来源记录：WindBorne Systems · 历史轮次未披露 · A 轮参投方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5f5111750b24d3d3"
@@ -136,6 +197,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-404aba285b240b86",
+          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+          "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+          "source_content_hash": "5d9a4e3004c9d318",
+          "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+          "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+        },
         {
           "source_id": "FISRC-5f5111750b24d3d3",
           "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",

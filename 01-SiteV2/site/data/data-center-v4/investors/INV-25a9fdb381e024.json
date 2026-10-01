@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 13,
+    "current_round_count": 14,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 14,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,11 +73,12 @@
     "latest_disclosed_at": "2026-09-15",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 7,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
+      "other",
       "seed",
       "series_a",
       "series_b",
@@ -105,6 +106,11 @@
         "entity_id": "EN-77a82bb9aafc81d9",
         "canonical_entity_id": "",
         "name": "Ellis AI"
+      },
+      {
+        "entity_id": "EN-06c8aaa93d80a768",
+        "canonical_entity_id": "",
+        "name": "Factory"
       },
       {
         "entity_id": "EN-dc8a5a5bf80909de",
@@ -153,6 +159,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-bb76897ce20859b7",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "未明确轮次",
+        "amount_original": "$200M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c7459d2ce055880",
+            "source_url": "https://factory.ai/news/5-billion-valuation",
+            "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+            "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+            "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+            "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+          }
+        ]
+      },
       {
         "activity_id": "IA-512d548a4d1c8451",
         "funding_insight_id": "FI-28129028b23f82cb",
@@ -698,6 +744,38 @@
         ]
       },
       {
+        "activity_id": "IA-7b46f5da06f743c6",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory raises $150M Series C",
+            "source_content_hash": "64798c57510b20e2",
+            "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-cdf7e4887e361780",
         "funding_insight_id": "FI-9e8f37e4b7cf28a5",
         "event_ids": [
@@ -795,6 +873,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1c7459d2ce055880",
+        "source_url": "https://factory.ai/news/5-billion-valuation",
+        "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+        "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+        "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+        "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+      },
       {
         "source_id": "FISRC-bed55d4f5e02a374",
         "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
@@ -924,6 +1010,14 @@
         "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
       },
       {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory raises $150M Series C",
+        "source_content_hash": "64798c57510b20e2",
+        "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+      },
+      {
         "source_id": "FISRC-4636abec463123a9",
         "source_url": "https://gamesbeat.com/general-intuition-raises-320m-at-2-3b-valuation-for-ai-frontier-models-based-on-gameplay-exclusive-interview/",
         "source_title": "General Intuition raises $320M at $2.3B valuation for AI frontier models based on gameplay | exclusive interview - GamesBeat",
@@ -995,16 +1089,16 @@
           "source_id": "vinod_profile"
         },
         {
+          "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1c7459d2ce055880"
+        },
+        {
           "description": "融资来源记录：Profound · D轮 · 2026-09-15 · 本轮参投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bed55d4f5e02a374"
         },
         {
           "description": "融资来源记录：WindBorne Systems · B轮 · 2026-08-05 · 本轮联合领投 · $37 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2daabe6c0da09480"
-        },
-        {
-          "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a8e6dd6c34cd416a"
         }
       ],
       "contacts": [
@@ -1070,6 +1164,14 @@
           "quote_hash": "381c5ad48bf7857bc3353c25d0ec1d2afd15ba56982fe80b56fae43affb697f6"
         },
         {
+          "source_id": "FISRC-1c7459d2ce055880",
+          "source_url": "https://factory.ai/news/5-billion-valuation",
+          "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+          "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+          "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+          "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+        },
+        {
           "source_id": "FISRC-bed55d4f5e02a374",
           "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
           "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
@@ -1084,14 +1186,6 @@
           "source_content_hash": "dcf3c391fcc5ef9d",
           "quote": "The new round was co-led by Khosla Ventures and Galvanize",
           "quote_hash": "67b21c9477b13594d9009e7706d8a42181101dae317f0ed254e99ba9de2e2808"
-        },
-        {
-          "source_id": "FISRC-a8e6dd6c34cd416a",
-          "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
-          "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
-          "source_content_hash": "dd828ac38a132ac1",
-          "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
-          "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1102,6 +1196,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[14].role": {
+          "text": "Series C 领投",
+          "source_hash": "c55ed79792c5d8940ad622d8d48ba34699b43b78b6c1f267f19f91e6570bbcca",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        },
         "public_profile.milestones[0].description": {
           "text": "Vinod Khosla 的官方团队简介称，Khosla Ventures 于 2019 年成为 OpenAI 的首家风险投资机构。",
           "source_hash": "cb96060d4ba27a85c0fa8288f924e7e5d6cab439f71efe800ce5c6ee2bb91e16",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -72,8 +72,10 @@
       "EV-d9e018b58da30912",
       "EV-3bbd2ab8ebda9871",
       "EV-cbec329253108e80",
+      "EV-f2eb34f231afc8aa",
       "EV-66293f3c35760fef",
       "EV-96bb5917e4ca0554",
+      "EV-04ac681ff8b72e6a",
       "EV-4d46806b1522d5f4",
       "EV-c3b295b1a939dabd",
       "EV-c17a6102aab72f4f",
@@ -106,6 +108,7 @@
       "EV-97b985222d65e274",
       "EV-bc5bf99bcf3a4484",
       "EV-43b56d49df9a73a2",
+      "EV-b61af70f81354b8e",
       "EV-427ec385ca7dba48",
       "EV-784c98f1fde32c73",
       "EV-9a3ae75b0afb0dd5",
@@ -187,6 +190,7 @@
       "EN-187bf23c29af5e43",
       "EN-eb9a5a696c7fe158",
       "EN-ee2dce6ecf9a1bab",
+      "EN-8a975a8274db72cb",
       "EN-a696e7db10a33c4c",
       "EN-eae58817702c93b5",
       "EN-5c822c71e6e4db70",
@@ -290,7 +294,7 @@
       "HW-1450585d9cd5879f"
     ],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-10-01"
+    "lastSeen": "2026-10-02"
   },
   "events": [
     {
@@ -3866,6 +3870,146 @@
       "publisher": "投资界"
     },
     {
+      "id": "EV-f2eb34f231afc8aa",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-04",
+      "updatedDate": "2026-09-04",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+      "originalTitle": "",
+      "subject": "小鹏机器人业务",
+      "action": "完成重磅融资",
+      "object": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+      "metrics": [
+        "9亿",
+        "63亿"
+      ],
+      "locations": [
+        "中国"
+      ],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "event_market"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-cbcdcd202afbea9d"
+        ]
+      },
+      "missingFields": [
+        "object"
+      ],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8a975a8274db72cb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-8a975a8274db72cb"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8a975a8274db72cb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-8a975a8274db72cb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-8a975a8274db72cb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-8a975a8274db72cb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-009c0c22085fdf93",
+        "EN-8a975a8274db72cb",
+        "EN-b5848160a13d2ab0",
+        "EN-5617d9a55b0fda09",
+        "EN-d08ca14e552d0837"
+      ],
+      "entityNames": [
+        "榕报｜物理AI",
+        "小鹏机器人业务",
+        "国产算力",
+        "可控核聚变",
+        "医疗创新公司"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+      "publisher": "elsewhere.news"
+    },
+    {
       "id": "EV-66293f3c35760fef",
       "dataDate": "2026-09-12",
       "date": "2026-09-03",
@@ -4134,6 +4278,84 @@
       "products": [],
       "sourceUrl": "https://news.pedaily.cn/202609/568415.shtml",
       "publisher": "投资界"
+    },
+    {
+      "id": "EV-04ac681ff8b72e6a",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-02",
+      "updatedDate": "2026-09-02",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "蓝驰创投领投，Violoop正式完成亿元级融资，打造个人全量Context平台和自进化系统｜蓝驰家族",
+      "originalTitle": "",
+      "subject": "蓝驰创投领投，Violoop正式",
+      "action": "完成亿元级融资",
+      "object": "，打造个人全量Context平台和自进化系统｜蓝驰家族",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4e6765f4f99748c8",
+        "EN-2a92da4bc5db543c",
+        "EN-99bd62801fd9e666"
+      ],
+      "entityNames": [
+        "蓝驰创投领投",
+        "Violoop正式",
+        "蓝驰种子项目灵初智能"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://elsewhere.news/zh/lanchi/violoopcontext",
+      "publisher": "elsewhere.news"
     },
     {
       "id": "EV-4d46806b1522d5f4",
@@ -12297,6 +12519,86 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/06/11/jeff-bezoss-prometheus-raises-12b-to-build-an-artificial-general-engineer-for-the-physical-world",
       "publisher": "TechCrunch：AI（RSS）"
+    },
+    {
+      "id": "EV-b61af70f81354b8e",
+      "dataDate": "2026-10-02",
+      "date": "2026-06-12",
+      "updatedDate": "2026-06-12",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "杰夫·贝索斯的AI初创公司旨在打造“通用人工工程师”",
+      "originalTitle": "Jeff Bezos’ AI startup aims to build an ‘artificial general engineer’",
+      "subject": "Prometheus",
+      "action": "funding",
+      "object": "$12 billion funding round",
+      "metrics": [
+        "$12 billion",
+        "$41 billion",
+        "$6.2 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1809f7cd0c75acf3",
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Prometheus",
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.theverge.com/ai-artificial-intelligence/949005/jeff-bezos-prometheus-artificial-general-engineer",
+      "publisher": "www.theverge.com"
     },
     {
       "id": "EV-427ec385ca7dba48",
@@ -26136,6 +26438,30 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-8a975a8274db72cb",
+      "name": "小鹏机器人业务",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-f2eb34f231afc8aa",
+        "EV-47f16317cc2d62e2",
+        "EV-eb2a55cedd2857fa"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-embodied_ai",
+        "TX-use_case-physical_automation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-25",
+      "lastSeen": "2026-10-02"
+    },
+    {
       "id": "EN-a696e7db10a33c4c",
       "name": "立昂机器人",
       "entityType": "organization_candidate",
@@ -26977,23 +27303,28 @@
         "EV-2470b13ea55496d0",
         "EV-59870accd54d5efd",
         "EV-83697c1162a5faf9",
+        "EV-9f886463e1660f7a",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
+        "EV-3f9d420719641eda",
         "EV-a0ca934522418c0b",
         "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
+        "EV-002f1b7abaf28827",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
         "EV-2bb63a3015195f9b",
         "EV-7f3298069258b3ea",
         "EV-43b56d49df9a73a2",
+        "EV-b61af70f81354b8e",
         "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
-        "EV-5762fe51987bc5ff",
+        "EV-9cf819fafc04ca0c",
+        "EV-d85ea5150230ee56",
         "EV-6cb8979f92cf74ce",
         "EV-ef1de880e4ef9f75",
         "EV-63f49f303a80a6a0",
@@ -27277,11 +27608,11 @@
         "TX-target_user-consumer",
         "TX-technology-speech_audio",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
         "TX-technology-multimodal",
         "TX-use_case-software_development",
@@ -27295,8 +27626,8 @@
         "TX-technology-video_generation",
         "TX-technology-image_generation",
         "TX-use_case-legal_compliance",
-        "TX-deployment_model-cloud",
         "TX-technology-computer_use",
+        "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",
         "TX-technology-tool_use"
       ],
@@ -27322,7 +27653,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-998255d915da8953",
@@ -27892,41 +28223,48 @@
         "EV-471bf7c00cc06c85",
         "EV-f53bfa2bb0275904",
         "EV-2470b13ea55496d0",
+        "EV-6d92f16f6079fe38",
         "EV-26a5749d8604455a",
         "EV-375d04f7cc9746c6",
         "EV-9cf0ca490e9a6f4a",
+        "EV-fb14f97f5b644c1f",
         "EV-37cc66ca2e29a78c",
+        "EV-85506f9f86779a6d",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
-        "EV-c32dd87e1f72b09a",
         "EV-40fd274ae86434b8",
         "EV-10f04014fb3b62ff",
+        "EV-c32dd87e1f72b09a",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
-        "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
+        "EV-e70a48e36e99d57a",
         "EV-83728e3b6c7736ce",
         "EV-2dea56b0e97c1685",
-        "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
         "EV-6e516b6e68def9cf",
         "EV-e41fc65eb014893f",
-        "EV-463cb26b5e03c7f7",
+        "EV-3e003f3fced9337a",
         "EV-13ec78dfdbca678b",
         "EV-040fc355bc12a750",
         "EV-7abd8ec418f1e7f3",
         "EV-80e54c9a390da293",
+        "EV-4a73829a143cf3fc",
         "EV-4118202ed0f91895",
         "EV-236cbc2d64f0c455",
+        "EV-aa6b83d9a5f77d41",
         "EV-a00763037a94d512",
+        "EV-838707b8974c3dde",
+        "EV-fb3d98bc97f91047",
         "EV-0e84a2f49d765ce3",
         "EV-784c98f1fde32c73",
+        "EV-d85ea5150230ee56",
         "EV-467d1a701d21327d",
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
@@ -28178,6 +28516,7 @@
         "TX-use_case-customer_support",
         "TX-technology-speech_audio",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
@@ -28186,7 +28525,6 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -28211,10 +28549,10 @@
         "TX-technology-code_generation",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
-        "TX-deployment_model-cloud",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-reasoning",
+        "TX-deployment_model-cloud",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -28247,7 +28585,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-0ad1a6d446cfd5e2",
@@ -28411,6 +28749,7 @@
         "EV-b0637e99e328479b",
         "EV-bdd574fb9ee91b4d",
         "EV-4aa29c278432a9db",
+        "EV-048612d1bcbd7a96",
         "EV-448e0a020dd2c9a9",
         "EV-bce46f2e5cc68d5d",
         "EV-fe49d2ee580cfea2",
@@ -28435,13 +28774,14 @@
         "EV-bc4ac955cd26b969",
         "EV-5d581d112fdbd464",
         "EV-201b25d4f3cf696a",
-        "EV-31df816db86db282",
         "EV-d9270ae7b862212b",
-        "EV-5762fe51987bc5ff",
+        "EV-6e66bc52494a6b07",
         "EV-cbc0b7a7d21a29e2",
         "EV-1abf0d076d30ec6d",
         "EV-f247eff115e840af",
         "EV-ed8260ee9a7a80af",
+        "EV-31df816db86db282",
+        "EV-901b5e79c3feb4b1",
         "EV-df88363737beb880",
         "EV-78758ccb5d45f4f9",
         "EV-ffe9a66690dc8b19",
@@ -28877,13 +29217,13 @@
         "TX-use_case-customer_support",
         "TX-target_user-consumer",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-compute_cloud_service",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -28933,7 +29273,7 @@
         "EN-da20c5952dba19d8"
       ],
       "firstSeen": "2025-09-04",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",
@@ -29071,7 +29411,10 @@
         "EV-59870accd54d5efd",
         "EV-55e7c286e95be405",
         "EV-6f092cfc7a064d64",
+        "EV-11d7d54272c6bb41",
         "EV-d4e44892226be468",
+        "EV-903f06f47afd671a",
+        "EV-fb3d98bc97f91047",
         "EV-1ac32035d5e425e1",
         "EV-8ae771f26c02f7c4",
         "EV-bbb3ed2040b40e3f",
@@ -29161,7 +29504,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-b47de584b4515427",

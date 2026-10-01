@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,20 +63,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 24,
-    "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 23,
+    "current_round_count": 26,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 25,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-11",
+    "latest_disclosed_at": "2026-08-13",
     "role_counts": {
-      "historical_or_ambiguous": 5,
+      "historical_or_ambiguous": 6,
       "lead": 2,
-      "participant": 22
+      "participant": 24
     },
     "round_codes": [
       "multi_round",
@@ -148,6 +148,11 @@
         "name": "Mandel AI"
       },
       {
+        "entity_id": "EN-f86fd89de87a848a",
+        "canonical_entity_id": "",
+        "name": "Naïve"
+      },
+      {
         "entity_id": "EN-f5cfcb570b7edac2",
         "canonical_entity_id": "",
         "name": "Nexus Enterprises, Inc"
@@ -183,6 +188,11 @@
         "name": "Stack AI"
       },
       {
+        "entity_id": "EN-607a596a603dd679",
+        "canonical_entity_id": "",
+        "name": "Starcloud"
+      },
+      {
         "entity_id": "EN-8bb4f88fd3cf9b29",
         "canonical_entity_id": "",
         "name": "Structured AI"
@@ -204,6 +214,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5be59ff7d20e0b03",
+        "funding_insight_id": "FI-43e6948d7884584e",
+        "event_ids": [
+          "EV-a0b76c46462b5e3c"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$170 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 170000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.7 亿美元"
+        },
+        "announced_at": "2026-08-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f80a0b6f2f7f63f8",
+            "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+            "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+            "source_content_hash": "a7c980dcd5f3e30f",
+            "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+            "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
+          }
+        ]
+      },
       {
         "activity_id": "IA-74c95a621477ee17",
         "funding_insight_id": "FI-d1444f877a3e580e",
@@ -329,6 +379,46 @@
             "source_content_hash": "af7a29745db5560a",
             "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
             "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f81ab1f44a3ef00f",
+        "funding_insight_id": "FI-06ac9b69bccd484e",
+        "event_ids": [
+          "EV-4d7f8b6f1f40e829"
+        ],
+        "company_entity_id": "EN-f86fd89de87a848a",
+        "company_canonical_entity_id": "",
+        "company_name": "Naïve",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$28.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 28500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2850 万美元"
+        },
+        "announced_at": "2026-08-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-29dadb15030915c7",
+            "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+            "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+            "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+            "quote": "Y Combinator, Zetta, Liquid 2 and angel investors including Gokul Rajaram, Apollo.io co-founder Tim Zheng, and former HubSpot COO JD Sherman also participated in the Series A.",
+            "quote_hash": "ff4625b7a438a5cf628158bf5640d18f8258b77df63c71ff1a48c57e742c66a6"
           }
         ]
       },
@@ -1189,6 +1279,38 @@
         ]
       },
       {
+        "activity_id": "IA-73272a62840af6c1",
+        "funding_insight_id": "FI-68cd3b0b2986de61",
+        "event_ids": [
+          "EV-e1b684a3701d3ff5"
+        ],
+        "company_entity_id": "EN-1b9db8eef57865ee",
+        "company_canonical_entity_id": "",
+        "company_name": "Arga Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "加速器/Pre-Seed 轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-60fb49b2b22b693c",
+            "source_url": "https://www.caplight.com/company/argalabs",
+            "source_title": "Arga Labs Valuation & Funding History | Caplight",
+            "source_content_hash": "7eaaca00b04b6b21",
+            "quote": "Y CombinatorAccelerator, Pre Seed",
+            "quote_hash": "d4cbb039bf2999f57e65bc9bff3d5e89811f934de8e6628bfbefeb122fce0e9c"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-b509d3c7d8416556",
         "funding_insight_id": "FI-8ec3b23d30c575bf",
         "event_ids": [
@@ -1351,6 +1473,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f80a0b6f2f7f63f8",
+        "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+        "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+        "source_content_hash": "a7c980dcd5f3e30f",
+        "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+        "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
+      },
+      {
         "source_id": "FISRC-0deb7f666bec5423",
         "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
         "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
@@ -1381,6 +1511,14 @@
         "source_content_hash": "af7a29745db5560a",
         "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
         "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+      },
+      {
+        "source_id": "FISRC-29dadb15030915c7",
+        "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+        "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+        "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+        "quote": "Y Combinator, Zetta, Liquid 2 and angel investors including Gokul Rajaram, Apollo.io co-founder Tim Zheng, and former HubSpot COO JD Sherman also participated in the Series A.",
+        "quote_hash": "ff4625b7a438a5cf628158bf5640d18f8258b77df63c71ff1a48c57e742c66a6"
       },
       {
         "source_id": "FISRC-a25b58a6297cb344",
@@ -1567,6 +1705,14 @@
         "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
       },
       {
+        "source_id": "FISRC-60fb49b2b22b693c",
+        "source_url": "https://www.caplight.com/company/argalabs",
+        "source_title": "Arga Labs Valuation & Funding History | Caplight",
+        "source_content_hash": "7eaaca00b04b6b21",
+        "quote": "Y CombinatorAccelerator, Pre Seed",
+        "quote_hash": "d4cbb039bf2999f57e65bc9bff3d5e89811f934de8e6628bfbefeb122fce0e9c"
+      },
+      {
         "source_id": "FISRC-ba55b463daced495",
         "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
         "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
@@ -1644,6 +1790,10 @@
           "source_id": "yc_press"
         },
         {
+          "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f80a0b6f2f7f63f8"
+        },
+        {
           "description": "融资来源记录：River AI · 多轮融资 · 2026-08-11 · 本轮参投 · $1.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0deb7f666bec5423"
         },
@@ -1693,6 +1843,14 @@
           "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
         },
         {
+          "source_id": "FISRC-f80a0b6f2f7f63f8",
+          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+          "source_content_hash": "a7c980dcd5f3e30f",
+          "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+          "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
+        },
+        {
           "source_id": "FISRC-0deb7f666bec5423",
           "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
           "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
@@ -1707,14 +1865,6 @@
           "source_content_hash": "c3f8c7225d49e92f",
           "quote": "with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
           "quote_hash": "fe23b98efb3b0950a65b4d0b36fda4dae613ccf86bb390b6e12a4e6930b547e6"
-        },
-        {
-          "source_id": "FISRC-6ad648d48b556138",
-          "source_url": "https://www.finsmes.com/2026/08/discovered-materials-raises-9m-in-seed-funding.html",
-          "source_title": "Discovered Materials Raises $9M in Seed Funding",
-          "source_content_hash": "bd47d3e50a1db886",
-          "quote": "with participation from Y Combinator and Peak XV Partners",
-          "quote_hash": "bfdb759d9e01c1cf272260d0da606631f85518f2a0fcaa9e0a95f0c2f7f544f0"
         }
       ],
       "last_verified_at": "2026-09-25",

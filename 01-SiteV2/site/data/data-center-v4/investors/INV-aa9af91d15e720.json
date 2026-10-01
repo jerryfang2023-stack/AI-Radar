@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,25 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-08",
-    "latest_disclosed_at": "2026-08-06",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
       "co_lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1b9db8eef57865ee",
+        "canonical_entity_id": "",
+        "name": "Arga Labs"
+      },
       {
         "entity_id": "EN-c71a83adf3de3f40",
         "canonical_entity_id": "",
@@ -92,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9b7724914c139673",
+        "funding_insight_id": "FI-68cd3b0b2986de61",
+        "event_ids": [
+          "EV-e1b684a3701d3ff5"
+        ],
+        "company_entity_id": "EN-1b9db8eef57865ee",
+        "company_canonical_entity_id": "",
+        "company_name": "Arga Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b6920185a5e7fa72",
+            "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+            "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+            "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+            "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+            "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-acf27167988722ec",
         "funding_insight_id": "FI-2d1d7b6262e319c3",
@@ -175,6 +220,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-b6920185a5e7fa72",
+        "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+        "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+        "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+        "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+        "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+      },
+      {
         "source_id": "FISRC-d328724fdcb5ff4b",
         "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
         "source_title": "前Spotify员工筹集1000万美元，将推荐背后的AI引入电商",
@@ -196,10 +249,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Gradient 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Gradient 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b6920185a5e7fa72"
+        },
         {
           "description": "融资来源记录：Malachyte · 种子轮 · 2026-08-06 · 本轮联合领投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d328724fdcb5ff4b"
@@ -211,6 +268,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-b6920185a5e7fa72",
+          "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+          "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+          "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+          "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+          "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+        },
         {
           "source_id": "FISRC-d328724fdcb5ff4b",
           "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",

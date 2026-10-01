@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
+    "current_round_count": 11,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 10,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,8 +74,8 @@
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
-      "lead": 3,
-      "participant": 5
+      "lead": 4,
+      "participant": 6
     },
     "round_codes": [
       "seed",
@@ -119,6 +119,16 @@
         "entity_id": "EN-50b2676afbe30c83",
         "canonical_entity_id": "EN-50b2676afbe30c83",
         "name": "Higgsfield"
+      },
+      {
+        "entity_id": "EN-2f9cb7cda5222087",
+        "canonical_entity_id": "",
+        "name": "Lovable"
+      },
+      {
+        "entity_id": "EN-586937124e151c46",
+        "canonical_entity_id": "EN-586937124e151c46",
+        "name": "Suno"
       },
       {
         "entity_id": "EN-8c5929d253b07fed",
@@ -204,6 +214,46 @@
             "source_content_hash": "ee00eb4103124f93",
             "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
             "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bb2ecff0db4b3f02",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$400 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf82db3dd7ead1a",
+            "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+            "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+            "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+            "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+            "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
           }
         ]
       },
@@ -324,6 +374,47 @@
             "source_content_hash": "7c2003856d2cd4b5",
             "quote": "a $120 million Series C led by Menlo Ventures",
             "quote_hash": "ddee37b39c5770ec6168c0ac684b6e5be75bea040f02a8f935249e93865b8b24"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-45a45b2fbadbac77",
+        "funding_insight_id": "FI-cbf93da745326644",
+        "event_ids": [
+          "EV-3e92fba5502f1aba",
+          "EV-31579660b945ef01"
+        ],
+        "company_entity_id": "EN-586937124e151c46",
+        "company_canonical_entity_id": "EN-586937124e151c46",
+        "company_name": "Suno",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8a34984c8e02defc",
+            "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+            "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+            "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+            "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+            "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
           }
         ]
       },
@@ -618,6 +709,14 @@
         "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
       },
       {
+        "source_id": "FISRC-dcf82db3dd7ead1a",
+        "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+        "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+        "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+        "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+        "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
+      },
+      {
         "source_id": "FISRC-09d3aaaafa6cdabc",
         "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",
         "source_title": "How Elorian AI pulled off a $300M pre-seed valuation with Andrew Dai | AI YouTube Summary | TechCrunch | Recall",
@@ -640,6 +739,14 @@
         "source_content_hash": "7c2003856d2cd4b5",
         "quote": "a $120 million Series C led by Menlo Ventures",
         "quote_hash": "ddee37b39c5770ec6168c0ac684b6e5be75bea040f02a8f935249e93865b8b24"
+      },
+      {
+        "source_id": "FISRC-8a34984c8e02defc",
+        "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+        "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+        "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+        "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+        "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
       },
       {
         "source_id": "FISRC-2513b5897a02dd3c",
@@ -765,8 +872,8 @@
           "source_id": "FISRC-c7de0ac22c0c4ca3"
         },
         {
-          "description": "融资来源记录：Elorian · 种子轮 · 2026-07-16 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-09d3aaaafa6cdabc"
+          "description": "融资来源记录：Lovable · C轮 · 2026-08-12 · 本轮领投 · $400 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dcf82db3dd7ead1a"
         }
       ],
       "contacts": [
@@ -833,12 +940,12 @@
           "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
         },
         {
-          "source_id": "FISRC-09d3aaaafa6cdabc",
-          "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",
-          "source_title": "How Elorian AI pulled off a $300M pre-seed valuation with Andrew Dai | AI YouTube Summary | TechCrunch | Recall",
-          "source_content_hash": "7b935e4006e94036",
-          "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
-          "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
+          "source_id": "FISRC-dcf82db3dd7ead1a",
+          "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+          "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+          "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+          "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+          "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
         }
       ],
       "last_verified_at": "2026-09-25",

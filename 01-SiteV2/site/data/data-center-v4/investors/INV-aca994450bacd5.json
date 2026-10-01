@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2023-06-27",
     "latest_disclosed_at": "2026-08-06",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 3,
       "other_current_round": 1,
       "participant": 1
     },
@@ -182,6 +182,71 @@
         ]
       },
       {
+        "activity_id": "IA-434e0df3609e7a46",
+        "funding_insight_id": "FI-dc65b78217aadd5b",
+        "event_ids": [
+          "EV-048612d1bcbd7a96"
+        ],
+        "company_entity_id": "FICO-0f30fb5c3ecf590d",
+        "company_canonical_entity_id": "",
+        "company_name": "Artificial Intelligence Underwriting Company (AIUC)",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-926b8b12b411de6f",
+            "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
+            "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
+            "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
+            "quote": "It previously closed a $15 million seed round from Nat Friedman through his fund NFDG, along with Emergence, Terrain, and Anthropic co-founder Ben Mann, among others",
+            "quote_hash": "3262f82d839a7f8e4ee50319c96349e6a39a17a3c4cf4613c945d8c4a66317da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b3aeb739aafc4722",
+        "funding_insight_id": "FI-cbf93da745326644",
+        "event_ids": [
+          "EV-3e92fba5502f1aba",
+          "EV-31579660b945ef01"
+        ],
+        "company_entity_id": "EN-586937124e151c46",
+        "company_canonical_entity_id": "EN-586937124e151c46",
+        "company_name": "Suno",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "参投B轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-92bdc04603fa5ff2",
+            "source_url": "https://multiples.vc/private-comps/suno",
+            "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "410c3c737fbffa4a",
+            "quote": "raised a $125 million Series B funding round on May 21, 2024, led by Lightspeed Venture Partners with participation from Nat Friedman, Daniel Gross, Matrix, and Founder Collective.",
+            "quote_hash": "c22714c76aea0223ddb37fa957ed0df2634d3bda436a8831dfabdc69b6108d1b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-4647a4bda0916445",
         "funding_insight_id": "FI-664cc90f57688153",
         "event_ids": [
@@ -238,6 +303,22 @@
         "source_content_hash": "b41fbd4490777f66",
         "quote": "private investors (Nat Friedman)",
         "quote_hash": "1601affa35c16899a25009f8622d330bfdc26eaa26aa635d92636c5f3f970047"
+      },
+      {
+        "source_id": "FISRC-926b8b12b411de6f",
+        "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
+        "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
+        "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
+        "quote": "It previously closed a $15 million seed round from Nat Friedman through his fund NFDG, along with Emergence, Terrain, and Anthropic co-founder Ben Mann, among others",
+        "quote_hash": "3262f82d839a7f8e4ee50319c96349e6a39a17a3c4cf4613c945d8c4a66317da"
+      },
+      {
+        "source_id": "FISRC-92bdc04603fa5ff2",
+        "source_url": "https://multiples.vc/private-comps/suno",
+        "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "410c3c737fbffa4a",
+        "quote": "raised a $125 million Series B funding round on May 21, 2024, led by Lightspeed Venture Partners with participation from Nat Friedman, Daniel Gross, Matrix, and Founder Collective.",
+        "quote_hash": "c22714c76aea0223ddb37fa957ed0df2634d3bda436a8831dfabdc69b6108d1b"
       },
       {
         "source_id": "FISRC-ce83b857608dabeb",

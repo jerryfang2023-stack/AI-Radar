@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
+    "current_round_count": 16,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 12,
+    "portfolio_company_count": 15,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,8 +72,9 @@
     "first_disclosed_at": "2025-03-03",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
+      "co_lead": 1,
       "historical_or_ambiguous": 2,
-      "lead": 7,
+      "lead": 9,
       "participant": 6
     },
     "round_codes": [
@@ -94,6 +95,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-1b9db8eef57865ee",
+        "canonical_entity_id": "",
+        "name": "Arga Labs"
       },
       {
         "entity_id": "EN-2f88f41306209dd7",
@@ -131,6 +137,11 @@
         "name": "Mistral AI"
       },
       {
+        "entity_id": "EN-c5803a6e4daa6af4",
+        "canonical_entity_id": "",
+        "name": "Modal"
+      },
+      {
         "entity_id": "EN-e781481ff5ffe530",
         "canonical_entity_id": "",
         "name": "Nace.AI"
@@ -144,6 +155,11 @@
         "entity_id": "EN-8ab71d56a963f706",
         "canonical_entity_id": "",
         "name": "River AI"
+      },
+      {
+        "entity_id": "EN-29a3723ce5ee3350",
+        "canonical_entity_id": "",
+        "name": "Together AI"
       }
     ],
     "activities": [
@@ -230,6 +246,46 @@
         ]
       },
       {
+        "activity_id": "IA-264584c23697181d",
+        "funding_insight_id": "FI-68cd3b0b2986de61",
+        "event_ids": [
+          "EV-e1b684a3701d3ff5"
+        ],
+        "company_entity_id": "EN-1b9db8eef57865ee",
+        "company_canonical_entity_id": "",
+        "company_name": "Arga Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b6920185a5e7fa72",
+            "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+            "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+            "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+            "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+            "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-6abf1fc3f0f1a2b6",
         "funding_insight_id": "FI-d1444f877a3e580e",
         "event_ids": [
@@ -266,6 +322,47 @@
             "source_content_hash": "a44322af824e0f8f",
             "quote": "led by General Catalyst and AMP PBC",
             "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-adbcc4b9ccff23f4",
+        "funding_insight_id": "FI-b1c547937abcaf77",
+        "event_ids": [
+          "EV-4a73829a143cf3fc",
+          "EV-13ec78dfdbca678b"
+        ],
+        "company_entity_id": "EN-29a3723ce5ee3350",
+        "company_canonical_entity_id": "",
+        "company_name": "Together AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$800M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7537d2258bce6eb",
+            "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+            "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+            "source_content_hash": "80d971eac6d90be3",
+            "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+            "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
           }
         ]
       },
@@ -426,6 +523,46 @@
             "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
             "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
             "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bc37704162ac071f",
+        "funding_insight_id": "FI-772c8fb5434b1734",
+        "event_ids": [
+          "EV-1d31f1c839f9dab5"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$355 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 355000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.55 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-733016c3a34668d3",
+            "source_url": "https://modal.com/blog/modal-series-c",
+            "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+            "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+            "quote": "a round led by General Catalyst and Redpoint",
+            "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
           }
         ]
       },
@@ -760,12 +897,28 @@
         "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
       },
       {
+        "source_id": "FISRC-b6920185a5e7fa72",
+        "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+        "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+        "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+        "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+        "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+      },
+      {
         "source_id": "FISRC-0deb7f666bec5423",
         "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
         "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
         "source_content_hash": "a44322af824e0f8f",
         "quote": "led by General Catalyst and AMP PBC",
         "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+      },
+      {
+        "source_id": "FISRC-b7537d2258bce6eb",
+        "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+        "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+        "source_content_hash": "80d971eac6d90be3",
+        "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+        "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
       },
       {
         "source_id": "FISRC-1fcc20a8b95a7aec",
@@ -798,6 +951,14 @@
         "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
         "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
         "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
+      },
+      {
+        "source_id": "FISRC-733016c3a34668d3",
+        "source_url": "https://modal.com/blog/modal-series-c",
+        "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+        "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+        "quote": "a round led by General Catalyst and Redpoint",
+        "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
       },
       {
         "source_id": "FISRC-be2cfb1d0da46098",
@@ -907,8 +1068,8 @@
           "source_id": "FISRC-4d11ed62a144a3f4"
         },
         {
-          "description": "融资来源记录：River AI · 多轮融资 · 2026-08-11 · 本轮领投 · $1.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0deb7f666bec5423"
+          "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b6920185a5e7fa72"
         }
       ],
       "contacts": [
@@ -1054,12 +1215,12 @@
           "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
         },
         {
-          "source_id": "FISRC-0deb7f666bec5423",
-          "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-          "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
-          "source_content_hash": "a44322af824e0f8f",
-          "quote": "led by General Catalyst and AMP PBC",
-          "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+          "source_id": "FISRC-b6920185a5e7fa72",
+          "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+          "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+          "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+          "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+          "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
         }
       ],
       "last_verified_at": "2026-09-25",

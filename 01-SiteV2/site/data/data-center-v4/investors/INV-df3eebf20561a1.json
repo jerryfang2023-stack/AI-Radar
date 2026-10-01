@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-04-13",
-    "latest_disclosed_at": "2026-04-13",
+    "latest_disclosed_at": "2026-09-02",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "pre_series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-feb09ffdcef55d25",
+        "canonical_entity_id": "",
+        "name": "鼎犀智创（Rhinovate™）"
+      },
       {
         "entity_id": "EN-272d534804dc22a4",
         "canonical_entity_id": "EN-272d534804dc22a4",
@@ -86,6 +92,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5a8572e90768cf72",
+        "funding_insight_id": "FI-d66ca0243fba30e1",
+        "event_ids": [
+          "EV-f453123978fbf095"
+        ],
+        "company_entity_id": "EN-feb09ffdcef55d25",
+        "company_canonical_entity_id": "",
+        "company_name": "鼎犀智创（Rhinovate™）",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-57de475f4ec2ac5a",
+            "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+            "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+            "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+            "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+            "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+          },
+          {
+            "source_id": "FISRC-270f085d1cb4d09f",
+            "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+            "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+            "source_content_hash": "cc2f801c9dac56e7",
+            "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+            "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-dd3361bcc92aa1e7",
         "funding_insight_id": "FI-8ca5a4680f477ab8",
@@ -161,6 +215,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-57de475f4ec2ac5a",
+        "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+        "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+        "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+        "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+        "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+      },
+      {
+        "source_id": "FISRC-270f085d1cb4d09f",
+        "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+        "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+        "source_content_hash": "cc2f801c9dac56e7",
+        "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+        "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+      },
+      {
         "source_id": "FISRC-13a43855ea188967",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
         "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
@@ -182,21 +252,41 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中关村资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "中关村资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：华毅瀛飞 · Pre-A轮 · 2026-04-13 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-13a43855ea188967"
+          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57de475f4ec2ac5a"
         },
         {
-          "description": "融资来源记录：卓世科技 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0ef31ab978027876"
+          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-270f085d1cb4d09f"
+        },
+        {
+          "description": "融资来源记录：华毅瀛飞 · Pre-A轮 · 2026-04-13 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-13a43855ea188967"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-57de475f4ec2ac5a",
+          "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+          "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+          "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+          "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+          "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+        },
+        {
+          "source_id": "FISRC-270f085d1cb4d09f",
+          "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+          "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+          "source_content_hash": "cc2f801c9dac56e7",
+          "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+          "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+        },
         {
           "source_id": "FISRC-13a43855ea188967",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
@@ -204,14 +294,6 @@
           "source_content_hash": "16a36ffc37b94da5",
           "quote": "跟投方包括京津冀创业投资引导基金、中关村资本、亦庄科创二期基金、招银国际资本以及鑫融邦资本等知名投资机构",
           "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
-        },
-        {
-          "source_id": "FISRC-0ef31ab978027876",
-          "source_url": "https://www.maas.com.cn/news/830.html",
-          "source_title": "百度AI基因明星创业公司，卓世科技破局大模型商业落地-卓世科技-中国领先的企业级AI生产力产品技术提供商(Zoellent Technology)",
-          "source_content_hash": "2de2062a07393a96",
-          "quote": "卓世科技投资人中既有知名投资机构同创伟业、中关村资本，也有用友集团等上市公司，还有清华系力合资本、启迪之星等机构，同时获得了海南省国资、青岛市国资等产业基金加持。",
-          "quote_hash": "2dd3de409c0e522a3cd73c194b879a2d7cce13233dc1dafb4cc042c1da905992"
         }
       ],
       "last_verified_at": "2026-09-25"

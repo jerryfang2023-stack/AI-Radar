@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,27 +61,34 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-09-25",
+    "first_disclosed_at": "2026-09-14",
     "latest_disclosed_at": "2026-09-25",
     "role_counts": {
+      "co_lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "pre_ipo"
+      "pre_ipo",
+      "series_e"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-eb6cf0bb179ca6ed",
         "canonical_entity_id": "",
         "name": "Nscale Limited"
+      },
+      {
+        "entity_id": "EN-e4540a7c8404b1be",
+        "canonical_entity_id": "",
+        "name": "Temporal"
       }
     ],
     "activities": [
@@ -124,6 +131,46 @@
             "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
           }
         ]
+      },
+      {
+        "activity_id": "IA-7e4da4693953ba4b",
+        "funding_insight_id": "FI-898cddb74dcff413",
+        "event_ids": [
+          "EV-6ed17a96a4a4079d"
+        ],
+        "company_entity_id": "EN-e4540a7c8404b1be",
+        "company_canonical_entity_id": "",
+        "company_name": "Temporal",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$550M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 550000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5.5 亿美元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf83d78a216a5edf",
+            "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+            "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+            "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+            "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+            "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +181,14 @@
         "source_content_hash": "5ebbe835664f567a51c54687b46ae2cf87e594d88de74ae878848a31a9e9f928",
         "quote": "Other investors that participated in the financing include Davidson Kempner Capital Management, Qube Research & Technologies (QRT), Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors.",
         "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
+      },
+      {
+        "source_id": "FISRC-cf83d78a216a5edf",
+        "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+        "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+        "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+        "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+        "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
       }
     ],
     "public_profile": {
@@ -148,6 +203,10 @@
         {
           "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮参投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
+        },
+        {
+          "description": "融资来源记录：Temporal · E轮 · 2026-09-14 · 本轮联合领投 · $550M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf83d78a216a5edf"
         }
       ],
       "contacts": [],
@@ -159,6 +218,14 @@
           "source_content_hash": "5ebbe835664f567a51c54687b46ae2cf87e594d88de74ae878848a31a9e9f928",
           "quote": "Other investors that participated in the financing include Davidson Kempner Capital Management, Qube Research & Technologies (QRT), Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors.",
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
+        },
+        {
+          "source_id": "FISRC-cf83d78a216a5edf",
+          "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+          "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+          "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+          "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+          "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
         }
       ],
       "last_verified_at": "2026-09-25"

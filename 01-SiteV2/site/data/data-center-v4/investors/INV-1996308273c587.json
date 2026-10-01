@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,7 +63,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 4,
     "market_regions": [
@@ -71,14 +71,16 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-21",
+    "first_disclosed_at": "2026-08-13",
     "latest_disclosed_at": "2026-09-28",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 3
     },
     "round_codes": [
+      "series_a",
       "series_a_extension",
       "series_b",
       "series_c",
@@ -309,6 +311,46 @@
         ]
       },
       {
+        "activity_id": "IA-a2b1e1a24d603505",
+        "funding_insight_id": "FI-43e6948d7884584e",
+        "event_ids": [
+          "EV-a0b76c46462b5e3c"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$170 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 170000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.7 亿美元"
+        },
+        "announced_at": "2026-08-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f80a0b6f2f7f63f8",
+            "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+            "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+            "source_content_hash": "a7c980dcd5f3e30f",
+            "quote": "VC firm Benchmark led the initial round with participation from EQT Ventures. Both investors co-led an extension round.",
+            "quote_hash": "557c28d549d52f257db995b878f3f971a3f9998a1eb87c980eb96262ec60107a"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-f3bc324f9e7a7aee",
         "funding_insight_id": "FI-4b143304af694a92",
         "event_ids": [
@@ -382,6 +424,14 @@
         "source_content_hash": "8e63b4f9948a4c5f",
         "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
         "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+      },
+      {
+        "source_id": "FISRC-f80a0b6f2f7f63f8",
+        "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+        "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+        "source_content_hash": "a7c980dcd5f3e30f",
+        "quote": "VC firm Benchmark led the initial round with participation from EQT Ventures. Both investors co-led an extension round.",
+        "quote_hash": "557c28d549d52f257db995b878f3f971a3f9998a1eb87c980eb96262ec60107a"
       },
       {
         "source_id": "FISRC-6ffdf43efe75ccde",
@@ -534,7 +584,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[5].role": {
+        "activities[6].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 7,
+    "current_round_count": 9,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,11 +72,12 @@
     "first_disclosed_at": "2025-05-06",
     "latest_disclosed_at": "2026-09-22",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 4,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
+      "other",
       "series_a",
       "series_b",
       "series_c",
@@ -89,6 +90,11 @@
         "entity_id": "EN-3032646694ad17bb",
         "canonical_entity_id": "",
         "name": "E2B"
+      },
+      {
+        "entity_id": "EN-06c8aaa93d80a768",
+        "canonical_entity_id": "",
+        "name": "Factory"
       },
       {
         "entity_id": "EN-0caee180da9d0f3f",
@@ -159,6 +165,46 @@
             "source_content_hash": "ad04baf1994708d0",
             "quote": "The new round, which was led by Insight Partners and S32, valued the seven-year-old startup at nearly triple the $1.3 billion valuation it garnered when it raised $100 million in a Series D 17 months ago.",
             "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cede0e9f9595fe05",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "未明确轮次",
+        "amount_original": "$200M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c7459d2ce055880",
+            "source_url": "https://factory.ai/news/5-billion-valuation",
+            "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+            "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+            "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+            "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
           }
         ]
       },
@@ -453,6 +499,38 @@
         ]
       },
       {
+        "activity_id": "IA-bf0baf019e18ae97",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory raises $150M Series C",
+            "source_content_hash": "64798c57510b20e2",
+            "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-73c2a7ee5bd5ebe1",
         "funding_insight_id": "FI-fbe655a1ee0c18ca",
         "event_ids": [
@@ -528,6 +606,14 @@
         "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
       },
       {
+        "source_id": "FISRC-1c7459d2ce055880",
+        "source_url": "https://factory.ai/news/5-billion-valuation",
+        "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+        "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+        "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+        "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+      },
+      {
         "source_id": "FISRC-3bc5a4e973b035eb",
         "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
         "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
@@ -592,6 +678,14 @@
         "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
       },
       {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory raises $150M Series C",
+        "source_content_hash": "64798c57510b20e2",
+        "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+      },
+      {
         "source_id": "FISRC-1bd8ed9d0103713f",
         "source_url": "https://www.island.io/press/island-raises-115-million-in-series-b-funding-to-enable-massive-innovation-on-enterprise-browser",
         "source_title": "Island Raises $115 Million in Series B Funding for Enterprise Browser",
@@ -653,12 +747,12 @@
           "source_id": "FISRC-16afc5791c45315a"
         },
         {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮领投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc5a4e973b035eb"
+          "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1c7459d2ce055880"
         },
         {
-          "description": "融资来源记录：Fireworks AI Inc. · D轮 · 2026-07-16 · 本轮参投 · $1.505 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-80d6b020dd75ac09"
+          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮领投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3bc5a4e973b035eb"
         }
       ],
       "contacts": [
@@ -724,20 +818,20 @@
           "quote_hash": "570f3d38da98c770ed63b46c303f26eed84498a651974861af1f95116d94e3a2"
         },
         {
+          "source_id": "FISRC-1c7459d2ce055880",
+          "source_url": "https://factory.ai/news/5-billion-valuation",
+          "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+          "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+          "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+          "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+        },
+        {
           "source_id": "FISRC-3bc5a4e973b035eb",
           "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
           "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
           "source_content_hash": "290d66b36443e7c5",
           "quote": "Insight Partners returned to lead this round, too",
           "quote_hash": "e83ddba2629ebc0a50266e83e0af77210dffaeef336e64cea6a1df209dc9e9de"
-        },
-        {
-          "source_id": "FISRC-80d6b020dd75ac09",
-          "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
-          "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
-          "source_content_hash": "2ac54d2d554e9655",
-          "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
-          "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -745,6 +839,18 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[9].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

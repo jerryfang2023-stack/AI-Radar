@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,11 +73,12 @@
     "latest_disclosed_at": "2026-08-11",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
       "seed",
+      "series_b",
       "series_f"
     ],
     "portfolio_companies": [
@@ -85,6 +86,11 @@
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-37f52323f7361ee9",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
       },
       {
         "entity_id": "EN-7d3194f79e645c42",
@@ -135,6 +141,54 @@
             "source_content_hash": "a44322af824e0f8f",
             "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
             "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-beb127bbaed517a4",
+        "funding_insight_id": "FI-fd9ef3cc8a9f2a95",
+        "event_ids": [
+          "EV-347194d4f6eb2a63"
+        ],
+        "company_entity_id": "EN-37f52323f7361ee9",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$2.1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "21 亿美元"
+        },
+        "announced_at": "2026-05-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-618d95b339c7b308",
+            "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
+            "source_title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
+            "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
+            "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
+            "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
+          },
+          {
+            "source_id": "FISRC-82c9573ed9c6ba66",
+            "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+            "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+            "source_content_hash": "e6bdf28f1eee82d0",
+            "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+            "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
           }
         ]
       },
@@ -261,6 +315,22 @@
         "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
       },
       {
+        "source_id": "FISRC-618d95b339c7b308",
+        "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
+        "source_title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
+        "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
+        "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
+        "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
+      },
+      {
+        "source_id": "FISRC-82c9573ed9c6ba66",
+        "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+        "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+        "source_content_hash": "e6bdf28f1eee82d0",
+        "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+        "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+      },
+      {
         "source_id": "FISRC-1e2b3bad243bd066",
         "source_url": "https://yespress.io/openais-122-b-megaround",
         "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
@@ -299,12 +369,12 @@
           "source_id": "FISRC-0deb7f666bec5423"
         },
         {
-          "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1e2b3bad243bd066"
+          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-05-12 · 本轮参投 · $2.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-618d95b339c7b308"
         },
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6c35525e379488bf"
+          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-05-12 · 本轮参投 · $2.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-82c9573ed9c6ba66"
         }
       ],
       "contacts": [],
@@ -318,35 +388,23 @@
           "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
         },
         {
-          "source_id": "FISRC-1e2b3bad243bd066",
-          "source_url": "https://yespress.io/openais-122-b-megaround",
-          "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
-          "source_content_hash": "494969b64dc816f3",
-          "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
-          "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+          "source_id": "FISRC-618d95b339c7b308",
+          "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
+          "source_title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
+          "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
+          "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
+          "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
         },
         {
-          "source_id": "FISRC-6c35525e379488bf",
-          "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
-          "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
-          "source_content_hash": "adc0cc9ffe3c9dd0",
-          "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
-          "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+          "source_id": "FISRC-82c9573ed9c6ba66",
+          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+          "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+          "source_content_hash": "e6bdf28f1eee82d0",
+          "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+          "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
         }
       ],
       "last_verified_at": "2026-09-25"
-    },
-    "translations": {
-      "zh-CN": {
-        "public_profile.track_record[2].description": {
-          "text": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_hash": "3305eafdecad1b5c098dece38ee38e11a0de8f06f76e31c0957702ad385a17e2",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-09-28T00:54:38.535Z",
-          "status": "translated"
-        }
-      }
     }
   }
 }

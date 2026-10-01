@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,26 +63,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-10",
-    "latest_disclosed_at": "2026-08-01",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1b9db8eef57865ee",
+        "canonical_entity_id": "",
+        "name": "Arga Labs"
+      },
       {
         "entity_id": "EN-5f5ed85925074c92",
         "canonical_entity_id": "",
@@ -105,6 +110,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-503eb2331bedaf3c",
+        "funding_insight_id": "FI-68cd3b0b2986de61",
+        "event_ids": [
+          "EV-e1b684a3701d3ff5"
+        ],
+        "company_entity_id": "EN-1b9db8eef57865ee",
+        "company_canonical_entity_id": "",
+        "company_name": "Arga Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b6920185a5e7fa72",
+            "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+            "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+            "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+            "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+            "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a9cd8f8e18d5d2ee",
         "funding_insight_id": "FI-035c211b764aa7fa",
@@ -300,6 +345,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-b6920185a5e7fa72",
+        "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+        "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+        "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+        "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+        "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+      },
+      {
         "source_id": "FISRC-e6ee0cd472bfb792",
         "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
         "source_title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
@@ -402,16 +455,16 @@
           "source_id": "boxgroup_about"
         },
         {
+          "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b6920185a5e7fa72"
+        },
+        {
           "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮联合领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e6ee0cd472bfb792"
         },
         {
           "description": "融资来源记录：Sable · 轮次未披露 · 2026-07-16 · 本轮参投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f8cec869ac3008e"
-        },
-        {
-          "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 既有投资方（本轮参投） · $33M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-44c6debf2c528a2a"
         }
       ],
       "contacts": [
@@ -463,6 +516,14 @@
           "quote_hash": "060e2785780b531d4e0c206450259d550d2d8079f2aeb507dd84aea0207971ca"
         },
         {
+          "source_id": "FISRC-b6920185a5e7fa72",
+          "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+          "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+          "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+          "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+          "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+        },
+        {
           "source_id": "FISRC-e6ee0cd472bfb792",
           "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
           "source_title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
@@ -477,14 +538,6 @@
           "source_content_hash": "be1a3bb8f3be622f",
           "quote": "Other investors in the round included BoxGroup, SV Angel, Valor Atreides AI Fund, and Sabrina and Evan Hahn.",
           "quote_hash": "c9b09741a783eeded8d5ba6e91bf31f306cc1e89aff8eb3e3905e54b1ac16dbb"
-        },
-        {
-          "source_id": "FISRC-44c6debf2c528a2a",
-          "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
-          "source_title": "Ornn 融资 3300 万美元，帮助企业像买卖石油一样交易 AI 算力",
-          "source_content_hash": "5fe0ae2b10239c5e",
-          "quote": "plus existing investors Crucible Capital, Vine Ventures, Link Ventures and Box Group",
-          "quote_hash": "6098d4e689559f73e7e149035a967dac073ab7743433b4b03e523fe97caa313d"
         }
       ],
       "identity_status": "verified"

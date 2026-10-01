@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -3654,6 +3654,66 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-7f7396b1c4f53a5b",
+      "snapshotKey": "7f7396b1c4f53a5b",
+      "snapshotId": "HWS-ec745387ed9af18a",
+      "eventId": "EV-216f840c4af1d3fb",
+      "eventIds": [
+        "EV-216f840c4af1d3fb"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "NanoCo",
+      "subject": "NanoCo",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "12",
+          "unit": "$million",
+          "fact_ref": "HWF-f57a705057828e59"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-f57a705057828e59",
+          "fact_type": "product",
+          "observed_at": "2026-05-20",
+          "subject_entity_id": "EN-ee314fcf465563d0",
+          "subject_name": "NanoCo",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "12",
+          "unit": "$million",
+          "source_quote": "NanoCo, the company behind security-focused OpenClaw alternative NanoClaw, has raised an oversubscribed $12 million seed round following a viral launch, its founders tell TechCrunch.\nThe funding was led by Valley Capital Partners and saw participation from Docker, Vercel, Monday.com, Slow Ventures, and angels like Clem Delangue, CEO of Hugging Face.\nIn a matter of weeks, NanoClaw creator Gavriel Cohen (pictured above, left) said he went from coding the project on his couch to receiving viral endorsements from Andrej Karpathy and Singapore’s foreign minister, fielding inbound interest from dozens of investors, and even a roughly $20 million acquisition offer that he and his brother and co-founder, Lazer Cohen (pictured above, right), declined.\n“It was under six weeks from committing the first lines of code to a term sheet,” Gavriel told TechCrunch.\n“There was a lot of inbound and interest,” he added. “People reaching out in DMs on X and sending emails.” He estimated that about 50 or more founders and tech executives sent DMs asking to invest.\nOne of them was Delangue, who dropped a note: “I like what you’re doing with NanoClaw.” Gavriel then responded in kind, telling the Hugging Face CEO that he liked the company’s tiny robot, Reachy Mini, and hoped to run NanoClaw on it one day.\nThe two programmers then started talking shop, and Gavriel eventually asked Delangue if he was interested in angel investing and secured a yes.\nAs it turns out, an active member of NanoClaw’s open source community is already working on running it on Reachy Mini, Gavriel says.\nAs we previously reported, interest in NanoClaw skyrocketed after AI researcher Andrej Karpathy tweeted his praise for it. But the project really began to snowball after the foreign minister of Singapore called NanoClaw his “second brain” in a Facebook post that went viral.\nNanoClaw was created as a secure alternative to OpenClaw to assist the Cohen brothers with their previous startup, an AI marketing firm that used agents to do much of the work. But instead of running directly on a computer, with access to all services and credentials, NanoClaw runs sandboxed in a container — a practice that is becoming a common solution to running more secure, OpenClaw-like setups.",
+          "event_refs": [
+            "EV-216f840c4af1d3fb"
+          ],
+          "claim_ref": "CL-7d64de4df402328a",
+          "source_refs": [
+            "SA-f0095dd40f9aff6a"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead/",
+      "entityIds": [
+        "EN-ee314fcf465563d0"
+      ]
+    },
     {
       "id": "HWC-3b18bb974f2baf9d",
       "snapshotKey": "3b18bb974f2baf9d",
@@ -19331,35 +19391,31 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-10-01",
-      "funnel_id": "LF-63b196c4b8666676",
+      "data_date": "2026-10-02",
+      "funnel_id": "LF-cb29ea3c0656849d",
       "lens": "hardware",
-      "date": "2026-10-01",
-      "monitoring_paths": [
-        "hardware_capacity_fab",
-        "hardware_capex",
-        "hardware_oem_odm",
-        "hardware_product_specs",
-        "hardware_shipment_deployment"
-      ],
-      "raw_documents": 19,
-      "original_sources": 16,
-      "valid_claims": 16,
-      "observations": 7,
-      "canonical_events": 6,
+      "date": "2026-10-02",
+      "monitoring_paths": [],
+      "raw_documents": 38,
+      "original_sources": 38,
+      "valid_claims": 9,
+      "observations": 1,
+      "canonical_events": 7,
       "blocker_counts": {
-        "source_outside_daily_window": 8,
-        "non_event_or_index_title": 1,
-        "industry_overview_not_event_source": 1,
-        "raw_source_quality_block": 3
+        "no_source_bounded_event": 5,
+        "event_not_ai_relevant": 4,
+        "model_assist_source_outside_daily_window": 9,
+        "rumor_requires_primary_confirmation": 10,
+        "proposed_financing_not_completed": 1,
+        "multi_event_roundup_not_single_event_source": 1
       },
       "rates": {
-        "original_source_rate": 0.8421052631578947,
-        "valid_claim_rate": 0.8421052631578947,
-        "observation_rate": 0.4375,
-        "event_conversion_rate": 0.375
+        "original_source_rate": 1,
+        "valid_claim_rate": 0.23684210526315788,
+        "observation_rate": 0.1111111111111111,
+        "event_conversion_rate": 0.7777777777777778
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/monitoring-funnel.json"
     }
   ]
 }

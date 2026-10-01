@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -68,16 +68,20 @@
     "eventIds": [
       "EV-1f0c1fa47eb63e4b",
       "EV-862b2014e51fe3e0",
+      "EV-9be8f3451675a795",
+      "EV-193f535567067d95",
       "EV-1fd2dfea0a3f7322"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-03",
-    "lastSeen": "2026-09-12",
+    "firstSeen": "2026-06-25",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-9be8f3451675a795",
+        "EV-193f535567067d95",
         "EV-862b2014e51fe3e0",
         "EV-1f0c1fa47eb63e4b"
       ],
@@ -91,6 +95,40 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-9be8f3451675a795",
+        "dataDate": "2026-10-02",
+        "date": "2026-07-03",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "中国AI视频制作公司Kling融资20亿美元，筹备香港IPO",
+        "displayTags": [],
+        "entityIds": [
+          "EN-928e14b29f7fa901",
+          "EN-8a105898989c6e17",
+          "EN-8abe43a7f9a7bd94"
+        ]
+      },
+      {
+        "id": "EV-193f535567067d95",
+        "dataDate": "2026-10-02",
+        "date": "2026-06-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+        "displayTags": [],
+        "entityIds": [
+          "EN-68608367b27ccaeb",
+          "EN-8abe43a7f9a7bd94",
+          "EN-a89151ba4b5ac0f2"
+        ]
+      },
       {
         "id": "EV-862b2014e51fe3e0",
         "dataDate": "2026-09-12",

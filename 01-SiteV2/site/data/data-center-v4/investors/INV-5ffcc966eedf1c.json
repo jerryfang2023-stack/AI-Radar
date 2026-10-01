@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,7 +74,7 @@
     "role_counts": {
       "historical_or_ambiguous": 1,
       "other_current_round": 3,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed",
@@ -85,6 +85,11 @@
         "entity_id": "EN-fe301d1f025971a1",
         "canonical_entity_id": "",
         "name": "Discovered Materials"
+      },
+      {
+        "entity_id": "EN-f86fd89de87a848a",
+        "canonical_entity_id": "",
+        "name": "Naïve"
       },
       {
         "entity_id": "EN-f5cfcb570b7edac2",
@@ -140,6 +145,46 @@
             "source_content_hash": "c3f8c7225d49e92f",
             "quote": "angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
             "quote_hash": "8f5cc5178c4dc58bbc69a6135d0459d091b9694eb8981302b47df550a36b896e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b93f5f65caad33da",
+        "funding_insight_id": "FI-06ac9b69bccd484e",
+        "event_ids": [
+          "EV-4d7f8b6f1f40e829"
+        ],
+        "company_entity_id": "EN-f86fd89de87a848a",
+        "company_canonical_entity_id": "",
+        "company_name": "Naïve",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$28.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 28500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2850 万美元"
+        },
+        "announced_at": "2026-08-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-29dadb15030915c7",
+            "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+            "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+            "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+            "quote": "angel investors including Gokul Rajaram, Apollo.io co-founder Tim Zheng, and former HubSpot COO JD Sherman also participated in the Series A.",
+            "quote_hash": "ce73d32713f0dee8a0286083a2713bdfb7f7f578ebd305799840c7c30f5f77fd"
           }
         ]
       },
@@ -314,6 +359,14 @@
         "quote_hash": "8f5cc5178c4dc58bbc69a6135d0459d091b9694eb8981302b47df550a36b896e"
       },
       {
+        "source_id": "FISRC-29dadb15030915c7",
+        "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+        "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+        "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+        "quote": "angel investors including Gokul Rajaram, Apollo.io co-founder Tim Zheng, and former HubSpot COO JD Sherman also participated in the Series A.",
+        "quote_hash": "ce73d32713f0dee8a0286083a2713bdfb7f7f578ebd305799840c7c30f5f77fd"
+      },
+      {
         "source_id": "FISRC-03aa198ddff34236",
         "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
         "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
@@ -428,12 +481,12 @@
           "source_id": "FISRC-c3267e56ad969be2"
         },
         {
-          "description": "融资来源记录：Valarian Technologies Ltd. · A轮 · 2026-07-14 · 本轮天使投资人 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-03aa198ddff34236"
+          "description": "融资来源记录：Naïve · A轮 · 2026-08-06 · 本轮参投 · $28.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-29dadb15030915c7"
         },
         {
-          "description": "融资来源记录：Nexus Enterprises, Inc · 种子轮 · 2026-03-31 · 本轮天使投资人 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-14ff8eaae437ca5e"
+          "description": "融资来源记录：Valarian Technologies Ltd. · A轮 · 2026-07-14 · 本轮天使投资人 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-03aa198ddff34236"
         }
       ],
       "sources": [
@@ -462,20 +515,20 @@
           "quote_hash": "8f5cc5178c4dc58bbc69a6135d0459d091b9694eb8981302b47df550a36b896e"
         },
         {
+          "source_id": "FISRC-29dadb15030915c7",
+          "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+          "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+          "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+          "quote": "angel investors including Gokul Rajaram, Apollo.io co-founder Tim Zheng, and former HubSpot COO JD Sherman also participated in the Series A.",
+          "quote_hash": "ce73d32713f0dee8a0286083a2713bdfb7f7f578ebd305799840c7c30f5f77fd"
+        },
+        {
           "source_id": "FISRC-03aa198ddff34236",
           "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
           "source_title": "主权AI基础设施初创公司Valarian融资5000万美元，助力各国保障国防系统安全",
           "source_content_hash": "ab99df0f3d10a2c4",
           "quote": "plus Gokul Rajaram and Nikesh Arora, who participated as angels",
           "quote_hash": "06be14846bea8c7d29d28344d42059e660cf26d6efbaa98553a25899699479fb"
-        },
-        {
-          "source_id": "FISRC-14ff8eaae437ca5e",
-          "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
-          "source_title": "Nexus 获430万美元种子轮融资，助力业务团队部署",
-          "source_content_hash": "ed9ee46cde0da7e9",
-          "quote": "and other angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
-          "quote_hash": "b6db9e16c33dea960e60b9a82a38d78bec0d727f34e8d6a002ece11b594e272b"
         }
       ],
       "identity_status": "verified"

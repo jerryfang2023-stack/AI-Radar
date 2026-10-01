@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -137,7 +137,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2025-08-27",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-10-02"
   },
   "events": [
     {
@@ -4286,9 +4286,9 @@
     },
     {
       "id": "EV-85506f9f86779a6d",
-      "dataDate": "2026-09-09",
+      "dataDate": "2026-10-02",
       "date": "2026-09-08",
-      "updatedDate": "2026-09-09",
+      "updatedDate": "2026-09-08",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -4302,7 +4302,8 @@
       "object": "3 billion euros in Europe's largest-ever tech funding round despite lagging behind rivals",
       "metrics": [
         "3 billion",
-        "21 billion"
+        "21 billion",
+        "20 billion"
       ],
       "locations": [
         "Europe"
@@ -4764,15 +4765,19 @@
         }
       ],
       "entityIds": [
-        "EN-c04bd5ebd10ab696"
+        "EN-c04bd5ebd10ab696",
+        "EN-968e2d5b08687bf4",
+        "EN-8d4321d936320802"
       ],
       "entityNames": [
-        "Mistral AI"
+        "Mistral AI",
+        "Samsung",
+        "NVIDIA"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://the-decoder.com/mistral-ai-raises-3-billion-euros-in-europes-largest-ever-tech-funding-round-despite-lagging-behind-rivals",
-      "publisher": "The Decoder AI News"
+      "sourceUrl": "https://the-decoder.com/mistral-ai-raises-3-billion-euros-in-europes-largest-ever-tech-funding-round-despite-lagging-behind-rivals/",
+      "publisher": "the-decoder.com"
     },
     {
       "id": "EV-3a467bfb6d9b1b52",
@@ -6286,23 +6291,23 @@
     },
     {
       "id": "EV-e70a48e36e99d57a",
-      "dataDate": "2026-08-16",
-      "date": "2026-08-15",
-      "updatedDate": "2026-08-16",
+      "dataDate": "2026-10-02",
+      "date": "2026-08-11",
+      "updatedDate": "2026-08-11",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "英伟达联手六大金融机构建立 5000 亿美元 AI 融资平台，黄仁勋称部分项目可获最高 25% 残值支持",
+      "title": "NVIDIA 牵头组建 5000 亿美元人工智能计算基础设施融资平台",
       "originalTitle": "",
-      "subject": "英伟达联手六大金融机构建立 5000 亿美元 AI",
+      "subject": "NVIDIA 牵头组建 5000 亿美元人工智能计算基础设施",
       "action": "融资",
-      "object": "平台，黄仁勋称部分项目可获最高 25% 残值支持",
+      "object": "平台",
       "metrics": [
-        "5000 亿",
-        "25%"
+        "5,000 亿",
+        "3.38 万"
       ],
       "locations": [],
       "missingFields": [],
@@ -6363,17 +6368,6 @@
             "provenance": "reviewed_funding_insight",
             "reviewRef": "REC-54fdee0491ea5e05",
             "fundingInsightId": "FI-6570fa96e0f8338f"
-          },
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "chip_accelerator",
-            "name": "芯片与加速器",
-            "entityIds": [
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
           }
         ],
         "use_case": [
@@ -6620,19 +6614,7 @@
             "fundingInsightId": "FI-6570fa96e0f8338f"
           }
         ],
-        "deployment_model": [
-          {
-            "dimensionId": "deployment_model",
-            "dimensionName": "部署形态",
-            "id": "cloud",
-            "name": "云端",
-            "entityIds": [
-              "EN-8d4321d936320802"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "deployment_model": [],
         "target_user": [
           {
             "dimensionId": "target_user",
@@ -6996,28 +6978,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-32381a12fb02a32d",
           "fundingInsightId": "FI-6570fa96e0f8338f"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "deployment_model",
-          "dimensionName": "部署形态",
-          "id": "cloud",
-          "name": "云端",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "displayTags": [
@@ -7068,17 +7028,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-54fdee0491ea5e05",
           "fundingInsightId": "FI-6570fa96e0f8338f"
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "chip_accelerator",
-          "name": "芯片与加速器",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         },
         {
           "dimensionId": "use_case",
@@ -7355,17 +7304,6 @@
           "provenance": "reviewed_funding_insight",
           "reviewRef": "REC-35f94b14dfce7687",
           "fundingInsightId": "FI-6570fa96e0f8338f"
-        },
-        {
-          "dimensionId": "deployment_model",
-          "dimensionName": "部署形态",
-          "id": "cloud",
-          "name": "云端",
-          "entityIds": [
-            "EN-8d4321d936320802"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
         }
       ],
       "entityIds": [
@@ -7376,8 +7314,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://ithome.com/0/990/154.htm",
-      "publisher": "IT之家（RSS）"
+      "sourceUrl": "https://www.ithome.com/0/988/104.htm",
+      "publisher": "www.ithome.com"
     },
     {
       "id": "EV-60f219702a66bf38",
@@ -22794,13 +22732,13 @@
         "TX-use_case-content_creation",
         "TX-target_user-consumer",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -22927,9 +22865,9 @@
       ],
       "eventIds": [
         "EV-5ea74d357e73366b",
-        "EV-85506f9f86779a6d",
         "EV-dc442b91a69fcc5a",
         "EV-dccfca59b3e58638",
+        "EV-85506f9f86779a6d",
         "EV-55e7c286e95be405",
         "EV-a89bf7c0c4203ce2",
         "EV-24265c0f0fa45343",
@@ -22978,7 +22916,7 @@
         "EN-2c2a76216a876127"
       ],
       "firstSeen": "2025-10-01",
-      "lastSeen": "2026-09-10"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-d1d137efd55a338c",
@@ -23098,41 +23036,48 @@
         "EV-471bf7c00cc06c85",
         "EV-f53bfa2bb0275904",
         "EV-2470b13ea55496d0",
+        "EV-6d92f16f6079fe38",
         "EV-26a5749d8604455a",
         "EV-375d04f7cc9746c6",
         "EV-9cf0ca490e9a6f4a",
+        "EV-fb14f97f5b644c1f",
         "EV-37cc66ca2e29a78c",
+        "EV-85506f9f86779a6d",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
-        "EV-c32dd87e1f72b09a",
         "EV-40fd274ae86434b8",
         "EV-10f04014fb3b62ff",
+        "EV-c32dd87e1f72b09a",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
-        "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
+        "EV-e70a48e36e99d57a",
         "EV-83728e3b6c7736ce",
         "EV-2dea56b0e97c1685",
-        "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
         "EV-6e516b6e68def9cf",
         "EV-e41fc65eb014893f",
-        "EV-463cb26b5e03c7f7",
+        "EV-3e003f3fced9337a",
         "EV-13ec78dfdbca678b",
         "EV-040fc355bc12a750",
         "EV-7abd8ec418f1e7f3",
         "EV-80e54c9a390da293",
+        "EV-4a73829a143cf3fc",
         "EV-4118202ed0f91895",
         "EV-236cbc2d64f0c455",
+        "EV-aa6b83d9a5f77d41",
         "EV-a00763037a94d512",
+        "EV-838707b8974c3dde",
+        "EV-fb3d98bc97f91047",
         "EV-0e84a2f49d765ce3",
         "EV-784c98f1fde32c73",
+        "EV-d85ea5150230ee56",
         "EV-467d1a701d21327d",
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
@@ -23384,6 +23329,7 @@
         "TX-use_case-customer_support",
         "TX-technology-speech_audio",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
@@ -23392,7 +23338,6 @@
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -23417,10 +23362,10 @@
         "TX-technology-code_generation",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
-        "TX-deployment_model-cloud",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-reasoning",
+        "TX-deployment_model-cloud",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
@@ -23453,7 +23398,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-6861f63c27eb0ada",
@@ -23512,12 +23457,12 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-construction_real_estate",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-product_form-compute_cloud_service",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -23557,10 +23502,10 @@
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-construction_real_estate",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -23631,9 +23576,9 @@
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -23714,10 +23659,10 @@
         "TX-technology-agentic_execution",
         "TX-industry-construction_real_estate",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -23758,11 +23703,11 @@
         "TX-technology-agentic_execution",
         "TX-industry-construction_real_estate",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-ai_development_orchestration",
@@ -23805,10 +23750,10 @@
         "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-product_form-model",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -23918,9 +23863,9 @@
         "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -23949,6 +23894,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-6ed17a96a4a4079d",
         "EV-3b40ec144e5db22c"
       ],
       "viewpointIds": [],
@@ -23960,11 +23906,11 @@
         "TX-technology-agentic_execution",
         "TX-industry-construction_real_estate",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-product_form-ai_infrastructure_software",
         "TX-ai_market_application-ai_development_orchestration",
@@ -23980,7 +23926,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-22",
-      "lastSeen": "2026-05-22"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-eafe895eb8119e6e",
@@ -24008,9 +23954,9 @@
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -24111,10 +24057,10 @@
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
         "TX-industry-education",

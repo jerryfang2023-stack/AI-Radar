@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3656,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3736,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2025-04-09",
     "latest_disclosed_at": "2026-07-16",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 2,
       "participant": 3
     },
@@ -316,6 +317,38 @@
             "quote_hash": "de26b6b966f8f8750ffa4009013e2defb92ca992ba27d53a8252745d48412991"
           }
         ]
+      },
+      {
+        "activity_id": "IA-34f46ad27576ecc5",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory raises $150M Series C",
+            "source_content_hash": "64798c57510b20e2",
+            "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -366,6 +399,14 @@
         "source_content_hash": "04da38491f1bcf53",
         "quote": "a Series A funding round, led by 20VC",
         "quote_hash": "de26b6b966f8f8750ffa4009013e2defb92ca992ba27d53a8252745d48412991"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory raises $150M Series C",
+        "source_content_hash": "64798c57510b20e2",
+        "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
       }
     ],
     "public_profile": {
@@ -465,6 +506,18 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[5].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
