@@ -15,7 +15,9 @@ function readJson(relativePath) {
 }
 
 function writeJson(relativePath, value) {
-  fs.writeFileSync(path.join(root, relativePath), `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  const file = path.join(root, relativePath);
+  const next = `${JSON.stringify(value, null, 2)}\n`;
+  if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== next) fs.writeFileSync(file, next, 'utf8');
 }
 
 function addProfile(rows = [], profileById = {}) {

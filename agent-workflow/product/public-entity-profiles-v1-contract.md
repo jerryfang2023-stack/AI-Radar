@@ -29,3 +29,5 @@
 - Contact links must use HTTPS and render as explicit labeled links. Email values are published only where the cited source gives the address for that public purpose.
 
 Validate the curated profile source with `npm run assert:public-entity-profiles`, rebuild the investor registry with `npm run build:investment-institutions`, and apply the profiles to the generated frontstage bundles with `npm run build:public-entity-profiles`.
+
+Profile collection and task recovery use the shared private queue in [Profile Collection Workflow](profile-collection-workflow.md). Collect into independently validated fragments, admit reviewed candidates, then integrate 30–50 profiles in one build. Do not run the full site pipeline for each profile or retry accepted collection after a downstream projection failure.
