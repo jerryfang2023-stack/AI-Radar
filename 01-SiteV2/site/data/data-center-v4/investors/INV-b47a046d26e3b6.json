@@ -130,20 +130,75 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Avishai Abrahami 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Avishai Abrahami 是 Wix 共同创办人、首席执行官和董事。Wix 投资者关系资料列出他在 Arel Communications、AIT 等软件公司的早期经历，以及在 Monday.com 的董事职务；Willow 的融资报道提到他曾提供早期天使投资。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "共同创办人、首席执行官、董事",
+          "organization": "Wix.com Ltd.",
+          "source_id": "avishai_wix"
+        },
+        {
+          "title": "名誉主席",
+          "organization": "Wix.com Ltd.",
+          "source_id": "avishai_wix"
+        },
+        {
+          "title": "董事",
+          "organization": "Monday.com Ltd.",
+          "source_id": "avishai_wix"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Wix.com Ltd.",
+          "title": "共同创办人、首席执行官",
+          "period": "2006 年至页面核验日",
+          "description": "公司投资者关系页面列出其自 2006 年担任联合 CEO/CEO，并持续担任董事。",
+          "source_id": "avishai_wix"
+        },
+        {
+          "organization": "Arel Communications & Software Ltd.",
+          "title": "战略联盟副总裁",
+          "period": "2004–2006",
+          "description": "Wix 官方董事资料列示其此前职务。",
+          "source_id": "avishai_wix"
+        },
+        {
+          "organization": "AIT Ltd.",
+          "title": "共同创办人、首席技术官",
+          "period": "1993–1997",
+          "description": "Wix 官方董事资料记载公司于 1997 年出售。",
+          "source_id": "avishai_wix"
+        },
+        {
+          "organization": "Israeli Defense Forces",
+          "title": "计算机情报部门成员",
+          "period": "1990–1992",
+          "description": "经历按 Wix 投资者关系页面列示。",
+          "source_id": "avishai_wix"
+        }
+      ],
+      "education": [],
+      "experience_summary": "职业经历横跨软件创业、企业软件管理、上市公司领导与董事会工作；引用页面未确认他的学历，故留空。",
       "track_record": [
         {
-          "description": "融资来源记录：Willow · 种子轮 · 2026-06-04 · 早期天使投资人 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "FinSMEs 报道称 Avishai Abrahami 曾为 Willow 提供早期天使投资；数据库关联的 700 万美元是 Willow 种子轮披露总额，报道没有披露他的个人投资金额。",
           "source_id": "FISRC-f6d49c20866c811c"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "avishai_wix",
+          "source_url": "https://investors.wix.com/board-of-directors",
+          "source_title": "Board of Directors | Investor Relations | Wix.com",
+          "source_content_hash": "97b477e8ad9787ff56bef8f8a9b9cf4658519e8abeb1e2e6a4cfd4c03699b8a3",
+          "quote": "Co-founder, CEO and Director",
+          "quote_hash": "4eea33458acd605162ad2f1941b46f405e7b2e3a95993ca306450b9b4cf8e2a7"
+        },
         {
           "source_id": "FISRC-f6d49c20866c811c",
           "source_url": "https://www.finsmes.com/2026/06/willow-raises-7m-in-seed-funding.html",
@@ -153,7 +208,9 @@
           "quote_hash": "51f2ee0d8c685ef30c68e2dff0f62f87e89396b94ece4eb1a06d5760378f9176"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "Wix 官方董事会页面支持公司职务、早期任职、军旅经历和外部董事记录；页面未明确其教育背景，故不从其他同名人物推断。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

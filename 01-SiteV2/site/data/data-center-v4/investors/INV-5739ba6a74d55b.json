@@ -139,19 +139,99 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bond Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "对应关系由 Cognition 官方融资公告中“Bond Capital”投资者名称和 BOND 官方合伙人简介交叉核实。官网品牌为 BOND；记录保留原融资报道中的 Bond Capital 写法，未推断其法律基金或具体出资实体。",
+      "summary": "Bond Capital 是融资披露使用的投资方名称；相关机构官网使用 BOND 品牌。官方合伙人简介称，BOND 于 2019 年由 Kleiner Perkins Digital Growth 投资团队发展而来，Mary Meeker 为普通合伙人，关注高增长科技公司。Mary Meeker 的官网简介称，她共同管理的三只 Digital Growth Funds 合计承诺资本为 28 亿美元。Cognition 2026 年官方 Series E 融资公告直接将 Bond Capital 列为投资方，支持本库名称与 BOND 品牌的对应关系；公告未披露具体由哪只基金投资。",
+      "facts": [
+        {
+          "field": "current_brand_and_origin",
+          "label": "当前品牌及机构沿革",
+          "value": "官网品牌为 BOND。合伙人 Noah Knauf 的官网简介称，其共同领导的 Kleiner Perkins Digital Growth Fund 团队于 2019 年发展为 BOND；本库“Bond Capital”名称与 BOND 品牌的对应由 Cognition 官方公告中的投资者列名交叉支持。",
+          "source_id": "bond_noah"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网将 Mary Meeker 的投资方向描述为高增长科技公司，并以 Digital Growth Funds 表述相关投资策略；未据此推断某个单独基金或行业专属投资要求。",
+          "source_id": "bond_mary"
+        },
+        {
+          "field": "committed_capital",
+          "label": "官网合伙人简介所列基金承诺资本",
+          "value": "Mary Meeker 个人官网简介称，她共同管理的三只 Digital Growth Funds 合计承诺资本为 $2.8bn。该数字采用官网简介口径，页面未标注统计基准日；不等同于 BOND 单只基金规模或已投资金额。",
+          "source_id": "bond_mary"
+        },
+        {
+          "field": "key_partner_mary_meeker",
+          "label": "核心合伙人：Mary Meeker",
+          "value": "官网列 Mary Meeker 为 General Partner。其履历包括 Kleiner Perkins 合伙人及 Morgan Stanley 董事总经理、全球科技研究负责人；官网还列出她所支持的 BOND 投资案例，如 Applied Intuition、Canva、Checkr、CLEAR、Hipcamp、Ironclad、Multiverse 与 Seso。案例为所列示的部分公司，不是完整组合。",
+          "source_id": "bond_mary"
+        },
+        {
+          "field": "portfolio_board_affiliations",
+          "label": "合伙人公开董事会任职",
+          "value": "BOND 官网的 Mary Meeker 简介列示其在 Block、Genies 和 OpenEvidence 的董事会任职；这些为个人任职信息，不代表 BOND 对这些公司的当前持股比例。",
+          "source_id": "bond_mary"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "BOND 官网合伙人简介将其起源关联到 Kleiner Perkins Digital Growth Fund 团队于 2019 年转为 BOND。",
+          "source_id": "bond_noah"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Cognition 团队于 2026-09-08 发布的 Series E 公告称公司融资超过 $2bn、估值为 $48bn，并将 Bond Capital 列入投资方。公告未披露本轮各机构的出资额或具体基金载体。",
+          "source_id": "bond_cognition_series_e"
+        },
         {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "BOND",
+          "url": "https://www.bondcap.com/",
+          "source_id": "bond_mary"
+        },
+        {
+          "kind": "website",
+          "label": "Mary Meeker 合伙人简介",
+          "value": "BOND Partner profile: Mary Meeker",
+          "url": "https://www.bondcap.com/partners/mary-meeker/",
+          "source_id": "bond_mary"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bond_mary",
+          "source_url": "https://www.bondcap.com/partners/mary-meeker/",
+          "source_title": "Mary Meeker | BOND",
+          "source_content_hash": "a9b9d1bbbf550c660905b531d501b9b0f49fe30d8e6eff4572e5526d11d9fafc",
+          "quote": "Mary Meeker is a general partner at BOND and focuses on investments in high-growth technology companies.",
+          "quote_hash": "3c04687c0f8ed1a9b0cd39e5df25f865874ee9ee4a62d0d37dbb76339d8c703d"
+        },
+        {
+          "source_id": "bond_noah",
+          "source_url": "https://www.bondcap.com/partners/noah-knauf/",
+          "source_title": "Noah Knauf | BOND",
+          "source_content_hash": "3f5d12a15b5e81cb6bac085105b040ea67ca3b80fbfe7de22bee311e25d80d6c",
+          "quote": "Noah co-led Kleiner Perkins’ Digital Growth Fund team, which became BOND in 2019.",
+          "quote_hash": "40aa76c296f188338a88cdb9f946b5f72f6f4676814135f8d99c037674ff3bbf"
+        },
+        {
+          "source_id": "bond_cognition_series_e",
+          "source_url": "https://cognition.com/blog/series-e",
+          "source_title": "Do it all with Devin: Announcing our Series E | Cognition",
+          "source_content_hash": "1c8dc24b6d4541bf3791d48ad667376604637048beff0eaabb2925c1f544a33d",
+          "quote": "Other investors in the round include Benchmark, Bessemer, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, Atreides, Valor",
+          "quote_hash": "9040ad5f745eede1cc1a1486458ae0afe3320a87ee4286fb4581ab9727a1f476"
+        },
         {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
@@ -161,7 +241,7 @@
           "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

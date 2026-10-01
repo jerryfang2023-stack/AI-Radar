@@ -139,19 +139,106 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Blume Founders Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Blume Ventures 官方资料将 BFF 描述为与核心投资计划区分的创办人网络投资项目，而非单独披露的法律基金。投资条款仅按 2023 年官网文章所述并标注时间；创办人联系方式以官方联系指引为准。",
+      "summary": "Blume Founders Fund（BFF）是印度早期投资机构 Blume Ventures 发起的创办人网络投资项目，官方称其与核心投资计划区分运作，重点支持与 Blume 有既有关系的创办人。2023 年官网文章称，Fund IV 拨出 2%–3% 资金用于 BFF，投资额为 5 万至 25 万美元，面向 Pre-Seed、Seed 和 Pre-Series A 项目；文中也称 BFF 不做后续轮投资。官网将该项目归于 Network Investment Programs，由 Sarita Raichura 负责。该页面是 2023 年披露，不能据此推断当前条款未变化。",
+      "facts": [
+        {
+          "field": "program_structure",
+          "label": "项目性质",
+          "value": "Blume Ventures 的创办人网络投资项目；官网明确表示其区别于 Blume 核心投资计划。应将本库的 BFF 记录理解为项目/投资计划身份，不据此推断其为独立法律基金。",
+          "source_id": "bff_program"
+        },
+        {
+          "field": "investment_terms_2023",
+          "label": "官网 2023 年披露的项目条款",
+          "value": "2023 年官网文章称，Blume Fund IV（该文披露规模为 $292m）拨出 2%–3% 给 BFF；单笔投资约 $50k–$250k，面向 Pre-Seed、Seed 与 Pre-Series A；文章称项目不提供后续轮投资。此为 2023 年披露，条款可能已变化。",
+          "source_id": "bff_program"
+        },
+        {
+          "field": "founder_relationship_criteria",
+          "label": "官网披露的创办人关系基础",
+          "value": "官网称 BFF 面向与 Blume 有较强联系的创办人，例如 Blume 校友、组合公司 CXO、接受过 Blume 创办人辅导者，或与机构长期建立联系者。",
+          "source_id": "bff_program"
+        },
+        {
+          "field": "program_management",
+          "label": "项目负责人",
+          "value": "Blume 官网将 Sarita Raichura 列为 Network Investment Programs Director，并称她负责 BFF。她曾任 Indian Angel Network 区域负责人、在 Intel Technologies 全球市场规模与预测团队工作，拥有 Thunderbird School of Global Management 国际管理硕士学位；官网还称她在印度创业生态有 8 年以上经验。以上为本人机构官网简介。",
+          "source_id": "blume_sarita"
+        },
+        {
+          "field": "founder_support",
+          "label": "BFF 投后支持",
+          "value": "官网称 BFF 组合公司可使用 Blume 创办人网络、内部资源手册、学习发展活动、法律/财务/税务及招聘合作伙伴，并获得 Blume 团队指导。",
+          "source_id": "bff_program"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-07",
+          "description": "Blume 官网发布 BFF 项目更新：披露 Fund III 时支持 30 家公司，并介绍 Fund IV 阶段的 BFF 资金比例与单笔投资区间。",
+          "source_id": "bff_program"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Blume 2023 年官网文章称，BFF 在 Fund III 阶段支持了 30 家公司；这是机构自报的项目覆盖数量，不是已实现投资回报。",
+          "source_id": "bff_program"
+        },
         {
           "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮参投 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9e755507b523ddb2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Blume Ventures 官网与 BFF 项目资料",
+          "value": "Blume Ventures / Blume Founders Fund",
+          "url": "https://blume.vc/",
+          "source_id": "blume_contact"
+        },
+        {
+          "kind": "application",
+          "label": "创办人联系指引",
+          "value": "Blume 联系页建议创办人先阅读官网 FAQ，并通过页面所述的可信共同联系人等途径联系；页面特别提醒不要把融资 pitch 发到其他用途的邮箱。",
+          "url": "https://blume.vc/contact-us",
+          "source_id": "blume_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Blume Venture Investment Manager LLP 注册办公室（非 BFF 独立法律地址）",
+          "value": "Unit No. 4, Jetha Compound, Opp. Nirmal Park, Byculla East, Mumbai - 400027, India",
+          "url": "https://blume.vc/contact-us",
+          "source_id": "blume_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bff_program",
+          "source_url": "https://blume.vc/commentaries/a-fillip-to-friendship-why-we-created-blume-founders-fund",
+          "source_title": "A Fillip To Friendship: Why We Created Blume Founders Fund | Blume",
+          "source_content_hash": "efd8340c95895a42d2e46b4b1ca1aedabe7cdbc9bb0db241b0aa82fee8a7b3fa",
+          "quote": "BFF aims to forge long-term relationships with exceptional founders",
+          "quote_hash": "0240d3e552697b93949384cf0901b0ac470ceadc31bfe825858f4a56af2ddf62"
+        },
+        {
+          "source_id": "blume_sarita",
+          "source_url": "https://blume.vc/team/sarita-raichura",
+          "source_title": "Sarita Raichura | Blume",
+          "source_content_hash": "12975bea245e9a9de793eefa4442c013c43837902f327c3760812850e15bc651",
+          "quote": "She manages the Blume Founders Fund (#BFF), preserving Blume’s pre-seed/seed fund DNA",
+          "quote_hash": "d7242b95e1ed713dece182d572bad42e860d01454c25bcde818394089d514e1a"
+        },
+        {
+          "source_id": "blume_contact",
+          "source_url": "https://blume.vc/contact-us",
+          "source_title": "Contact Us | Blume",
+          "source_content_hash": "6e1aa6e26ef1ff08568bfb305ec62c7a504578dce342ac3b6b9c9348cc4bf8b4",
+          "quote": "Do locate your requirement from the below contexts, and follow the contact instructions mentioned.",
+          "quote_hash": "1a22edcde092adc8b86f0a06a54b4842d8fc8f6cec80dcbda32a39e625d058a1"
+        },
         {
           "source_id": "FISRC-9e755507b523ddb2",
           "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
@@ -161,7 +248,7 @@
           "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

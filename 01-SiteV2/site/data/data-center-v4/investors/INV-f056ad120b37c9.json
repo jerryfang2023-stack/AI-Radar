@@ -129,21 +129,176 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kindred Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Kindred Capital 是一家英国起家的早期风险投资机构，2016 年设立首支基金。其“Equitable Venture”模式让每家被投公司的创始人成为基金共同收益参与者；官网团队页列出 Leila Zegna、Chrys Chrysanthou、John Cassidy 和 Mark Evans 等普通合伙人。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "首支基金年份",
+          "value": "2016",
+          "source_id": "kindred"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "早期风险投资",
+          "source_id": "kindred"
+        },
+        {
+          "field": "investment_model",
+          "label": "投资模式",
+          "value": "Equitable Venture：被投创始人可成为基金共同收益参与者",
+          "source_id": "kindred_model"
+        },
+        {
+          "field": "investment_pace",
+          "label": "官网披露投资节奏",
+          "value": "自 2016 年以来每年投资约 6–8 家早期公司",
+          "source_id": "kindred_rate"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "推出首支基金，并以 Equitable Venture 作为机构投资模式的起点。",
+          "source_id": "kindred"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Fractile · B轮 · 2026-05-13 · 既有投资方 · 2.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网组合页列出 Paddle、Five AI、Animal Dynamics、Qriously 等 2016–2017 年投资案例，以及 RobCo、Cradle Bio、Fractile 等后续投资；属于官网展示的组合案例。",
+          "source_id": "kindred_examples"
+        },
+        {
+          "description": "融资来源记录：Fractile · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a09bc7e6d17a0b0f"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Leila Zegna — General Partner",
+          "organization": "Kindred Capital",
+          "source_id": "kindred_leila"
+        },
+        {
+          "title": "Chrys Chrysanthou — General Partner",
+          "organization": "Kindred Capital",
+          "source_id": "kindred_chrys"
+        },
+        {
+          "title": "John Cassidy — General Partner",
+          "organization": "Kindred Capital",
+          "source_id": "kindred_john"
+        },
+        {
+          "title": "Mark Evans — General Partner",
+          "organization": "Kindred Capital",
+          "source_id": "kindred_mark"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Kindred Capital",
+          "url": "https://kindredcapital.vc/",
+          "source_id": "kindred"
+        },
+        {
+          "kind": "email",
+          "label": "基金一般咨询邮箱",
+          "value": "hello@kindredcapital.vc",
+          "url": "https://kindredcapital.vc/",
+          "source_id": "kindred_email"
+        },
+        {
+          "kind": "address",
+          "label": "英国注册办公地址",
+          "value": "1st Floor, West, Percy House, 33 Gresse Street, London W1T 1QU, United Kingdom",
+          "url": "https://kindredcapital.vc/",
+          "source_id": "kindred_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kindred",
+          "source_url": "https://kindredcapital.vc/",
+          "source_title": "Kindred | We back the pioneers shaping the future",
+          "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
+          "quote": "We launched Kindred's first fund in 2016, with a mission to create the venture firm we would have wanted to work with when we were running startups ourselves.",
+          "quote_hash": "599bfe943d0fec6aab07a3b70072b8b162eefe53e14e8b5fefb2ad4689028b2c"
+        },
+        {
+          "source_id": "kindred_model",
+          "source_url": "https://kindredcapital.vc/",
+          "source_title": "Kindred | We back the pioneers shaping the future",
+          "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
+          "quote": "Every single founder we back will become a co-owner of our fund.",
+          "quote_hash": "51cd42fec1217ebfd89d4a92dbf3deee958f4db5de7bb8b8641077e5f1a06373"
+        },
+        {
+          "source_id": "kindred_leila",
+          "source_url": "https://kindredcapital.vc/",
+          "source_title": "Kindred | We back the pioneers shaping the future",
+          "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
+          "quote": "Leila Zegna, General Partner at Kindred Capital",
+          "quote_hash": "5dd039f510cb206ede45d1399cba2bf43310124d38d05aa6273f60c27bf1aeca"
+        },
+        {
+          "source_id": "kindred_chrys",
+          "source_url": "https://kindredcapital.vc/",
+          "source_title": "Kindred | We back the pioneers shaping the future",
+          "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
+          "quote": "Chrys Chrysanthou, General Partner at Kindred Capital",
+          "quote_hash": "788d6e8386346ebe65713ebba3b4308be43057878996ea0214ee0fecd93f7a32"
+        },
+        {
+          "source_id": "kindred_john",
+          "source_url": "https://kindredcapital.vc/",
+          "source_title": "Kindred | We back the pioneers shaping the future",
+          "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
+          "quote": "John Cassidy, General Partner at Kindred Capital",
+          "quote_hash": "6a84e8df18f52bdc9bc28839189431b9f23776887f0d2ca9331e4db9d6b96911"
+        },
+        {
+          "source_id": "kindred_mark",
+          "source_url": "https://kindredcapital.vc/",
+          "source_title": "Kindred | We back the pioneers shaping the future",
+          "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
+          "quote": "Mark Evans, General Partner at Kindred Capital",
+          "quote_hash": "292486123351f7991f5a235f9abbe2510451f1447b7030b0b4a1071a3240bd5a"
+        },
+        {
+          "source_id": "kindred_rate",
+          "source_url": "https://kindredcapital.vc/portfolio",
+          "source_title": "Kindred | Portfolio",
+          "source_content_hash": "9ad5eefdaf25d3e3aced1d72b7ddda1581627712c15d96464c44a489805bf4e0",
+          "quote": "Since 2016, we’ve invested in 6–8 early-stage startups per year.",
+          "quote_hash": "46415255179b2196748826fed159264da6ccdff91963943b161fff8cd67db36c"
+        },
+        {
+          "source_id": "kindred_examples",
+          "source_url": "https://kindredcapital.vc/portfolio",
+          "source_title": "Kindred | Portfolio",
+          "source_content_hash": "9ad5eefdaf25d3e3aced1d72b7ddda1581627712c15d96464c44a489805bf4e0",
+          "quote": "Paddle Active Financial Infrastructure 2016",
+          "quote_hash": "8e1d9395673540282716643a91c029d125baf2f85e0a4d58e5ae3fd8ab928404"
+        },
+        {
+          "source_id": "kindred_email",
+          "source_url": "https://kindredcapital.vc/",
+          "source_title": "Kindred | We back the pioneers shaping the future",
+          "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
+          "quote": "hello@kindredcapital.vc",
+          "quote_hash": "0339a70bb383ebc5636ab54319774c149765f8d5e50c586acadcd0593e844df8"
+        },
+        {
+          "source_id": "kindred_address",
+          "source_url": "https://kindredcapital.vc/",
+          "source_title": "Kindred | We back the pioneers shaping the future",
+          "source_content_hash": "39e7769e2320cc3692f1d01155bb947f15f4fd2246702000414f094e17ebef16",
+          "quote": "Registered address 1st Floor, West, Percy House, 33 Gresse St, London W1T 1QU.",
+          "quote_hash": "98944f24c27346f76a97929262b3e16552b1076f41ea4da907e4de3fc5e302bd"
+        },
         {
           "source_id": "FISRC-a09bc7e6d17a0b0f",
           "source_url": "https://www.electronicsweekly.com/news/business/uks-fractile-raises-220m-for-inference-ics-2026-05/",
@@ -153,7 +308,11 @@
           "quote_hash": "7a8e3206950f449ba3b8f7acae7e59a639091582f54b25078bdb1e160db0d83b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于机构官网或机构本人公开资料核验；机构自述业绩和规模已注明口径。"
     }
   }
 }

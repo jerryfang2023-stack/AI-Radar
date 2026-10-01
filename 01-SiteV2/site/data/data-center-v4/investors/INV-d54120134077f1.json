@@ -129,21 +129,193 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "渝富高质产业母基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "本库投资方标签为“渝富高质产业母基金”。渝富控股集团的信息公开页披露，其对应的管理平台为重庆渝富高质产业母基金私募股权投资基金管理有限公司，2023年12月成立、注册资本1亿元，2024年2月登记为私募基金管理人，负责管理重庆产业投资母基金及食品和农产品母基金等。官网另披露在管基金12支、总规模945.21亿元；该规模没有注明统计时点，属于机构公开口径。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网披露的管理公司全称",
+          "value": "重庆渝富高质产业母基金私募股权投资基金管理有限公司",
+          "source_id": "yufu_company"
+        },
+        {
+          "field": "founded_month",
+          "label": "成立时间",
+          "value": "2023年12月",
+          "source_id": "yufu_company"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "1亿元",
+          "source_id": "yufu_company"
+        },
+        {
+          "field": "parent_company",
+          "label": "股东背景",
+          "value": "重庆渝富控股集团有限公司全资设立",
+          "source_id": "yufu_company"
+        },
+        {
+          "field": "manager_registration",
+          "label": "管理人登记",
+          "value": "2024年2月在中国证券投资基金业协会登记为私募股权投资基金管理人",
+          "source_id": "yufu_company"
+        },
+        {
+          "field": "mandate",
+          "label": "管理职责",
+          "value": "专业化管理重庆产业投资母基金及所属食品及农产品母基金",
+          "source_id": "yufu_company"
+        },
+        {
+          "field": "investment_model",
+          "label": "母基金运作模式",
+          "value": "子基金+直投",
+          "source_id": "yufu_funds"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点产业方向",
+          "value": [
+            "智能网联新能源汽车",
+            "新一代电子信息制造业",
+            "先进材料",
+            "重庆“33618”现代制造业集群"
+          ],
+          "source_id": "yufu_funds"
+        },
+        {
+          "field": "reported_fund_size",
+          "label": "官网披露的在管基金规模",
+          "value": "在管基金12支，总规模945.21亿元；页面未注明统计时点。",
+          "source_id": "yufu_funds"
+        },
+        {
+          "field": "managed_mother_fund_size",
+          "label": "重庆产业投资母基金规模",
+          "value": "总规模2000亿元，首期规模800亿元；此为被管理母基金的规模，不等同于管理公司注册资本或全部在管基金规模。",
+          "source_id": "yufu_funds"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-12",
+          "description": "重庆渝富高质产业母基金私募股权投资基金管理有限公司成立。",
+          "source_id": "yufu_company"
+        },
+        {
+          "date": "2024-02",
+          "description": "登记为中国证券投资基金业协会私募股权投资基金管理人。",
+          "source_id": "yufu_company"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：硕橙科技 · D+轮 · 2026-08-18 · D轮投资方 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "渝富控股官网信息页称该公司在管基金12支，总规模945.21亿元。页面未注明数据基准日或审计口径，因此仅按管理人公开披露值收录，不解读为投资回报或单只重庆产业投资母基金规模。",
+          "source_id": "yufu_funds"
+        },
+        {
+          "description": "官网称重庆产业投资母基金总规模2000亿元、首期800亿元，并采用“子基金+直投”模式；这是母基金规模，与管理公司1亿元注册资本及12支在管基金945.21亿元为不同口径。",
+          "source_id": "yufu_funds"
+        },
+        {
+          "description": "融资来源记录：硕橙科技 · 历史轮次未披露 · D轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c00e3514a8fe23f2"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "执行董事（官网页面称“现任”；页面未标注更新时间）",
+          "organization": "重庆渝富高质产业母基金私募股权投资基金管理有限公司",
+          "source_id": "yufu_shi"
+        },
+        {
+          "title": "总经理（官网页面称“现任”；页面未标注更新时间）",
+          "organization": "重庆渝富高质产业母基金私募股权投资基金管理有限公司",
+          "source_id": "yufu_zeng"
+        }
+      ],
+      "career": [
+        {
+          "organization": "重庆市政府研究室、渝北区发展和改革委员会、重庆渝富控股集团、重庆现代产业研究院、重庆渝富基金公司",
+          "title": "石品：政府研究、产业投资研究及基金管理经历",
+          "period": "官网未披露各任职年月",
+          "description": "官网披露其历任重庆市政府研究室商务处处长、渝北区发改委主任、渝富控股集团投研部总经理兼博士后工作站办公室主任、重庆现代产业研究院副董事长和重庆渝富基金公司董事长；页面称现任渝富高质基金公司执行董事。",
+          "source_id": "yufu_shi"
+        },
+        {
+          "organization": "希捷国际科技（无锡）、昆吾九鼎投资、深圳高新投创业投资、深圳华侨城资本投资、河南中金汇融私募基金、重庆渝富控股集团、重庆渝富康颐投资",
+          "title": "曾捷：工程、股权投资及产业基金管理经历",
+          "period": "官网未披露各任职年月",
+          "description": "官网列出其历任工程师、投资经理、投资发展部副总裁、投资总监、华南事业部总经理及重庆渝富康颐投资公司总经理等职务；页面称现任渝富高质基金公司总经理。",
+          "source_id": "yufu_zeng"
+        }
+      ],
+      "experience_summary": "管理团队公开简介覆盖政府产业规划、国资投研、创业投资、基金管理和产业投资经历。石品被列为执行董事（管理学博士），曾捷被列为总经理（税务硕士）；页面未披露二人的具体任职年月，履历均按集团信息公开页原文整理。",
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "渝富控股集团公开总机（非渝富高质基金项目直投专线）",
+          "value": "023-67678200",
+          "url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/yufujianjie11/index.html",
+          "source_id": "yufu_contact"
+        },
+        {
+          "kind": "email",
+          "label": "渝富控股集团公开邮箱（集团一般联系渠道，非项目直投邮箱）",
+          "value": "gkyx@cqyfkgjt.com",
+          "url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/yufujianjie11/index.html",
+          "source_id": "yufu_contact"
+        },
+        {
+          "kind": "website",
+          "label": "管理公司背景与信息披露",
+          "value": "重庆渝富高质基金公司简介",
+          "url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/gongsizhili1/gzjj/jingyingxinxi1111/index.html",
+          "source_id": "yufu_company"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "yufu_company",
+          "source_url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/gongsizhili1/gzjj/jingyingxinxi1111/index.html",
+          "source_title": "重庆渝富高质基金公司简介 - 重庆渝富控股集团信息公开",
+          "source_content_hash": "abb61eaf4677de7c885f8cf3f8b1627cc854be0edfc3bd33de119e824f0c3715",
+          "quote": "重庆渝富高质产业母基金私募股权投资基金管理有限公司（以下简称“公司”）成立于2023年12月，注册资本1亿元，主营业务为私募股权投资基金管理、创业投资基金管理服务，是重庆渝富控股集团有限公司为落实重庆市委市政府指示批示全资设立的私募股权投资基金管理公司，2024年2月在中国证券投资基金业协会登记为私募股权投资基金管理人，负责专业化管理重庆产业投资母基金及所属二级母基金食品及农产品母基金。",
+          "quote_hash": "712ded5570aa6fbd7737db82ed08373996d7e23fad356785c38d046c31d0d685"
+        },
+        {
+          "source_id": "yufu_funds",
+          "source_url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/gongsizhili1/gzjj/jingyingxinxi1111/index.html",
+          "source_title": "重庆渝富高质基金公司简介 - 重庆渝富控股集团信息公开",
+          "source_content_hash": "abb61eaf4677de7c885f8cf3f8b1627cc854be0edfc3bd33de119e824f0c3715",
+          "quote": "重庆产业投资母基金总规模2000亿元，首期规模800亿，采用“子基金+直投”的运作模式，主要投资赛道为智能网联新能源汽车、新一代电子信息制造业、先进材料等重庆“33618”现代制造业集群体系产业。目前公司在管基金共12支，分别是重庆产业投资母基金、食品及农产品母基金，战略性B类子基金6支、渝富协潼基金、渝津联动基金、安渝基金、渝永基金，总规模945.21亿元。",
+          "quote_hash": "01340bb3527841e6da1a8cddc27b2bcd34014cc324affcf129b2592160d82df5"
+        },
+        {
+          "source_id": "yufu_shi",
+          "source_url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/gongsizhili1/gzjj/jingyingxinxi1111/index.html",
+          "source_title": "重庆渝富高质基金公司简介 - 重庆渝富控股集团信息公开",
+          "source_content_hash": "abb61eaf4677de7c885f8cf3f8b1627cc854be0edfc3bd33de119e824f0c3715",
+          "quote": "石 品 执行董事 管理学博士 历任重庆市政府研究室商务处处长、渝北区发改委主任，重庆渝富控股集团投研部总经理兼博士后工作站办公室主任、重庆现代产业研究院副董事长，重庆渝富基金公司董事长。现任重庆渝富高质基金公司执行董事。",
+          "quote_hash": "305ca0d9350e11352a49f9f14d04c4d201401cced0e5c0c33ee682e8dcc2abcc"
+        },
+        {
+          "source_id": "yufu_zeng",
+          "source_url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/gongsizhili1/gzjj/jingyingxinxi1111/index.html",
+          "source_title": "重庆渝富高质基金公司简介 - 重庆渝富控股集团信息公开",
+          "source_content_hash": "abb61eaf4677de7c885f8cf3f8b1627cc854be0edfc3bd33de119e824f0c3715",
+          "quote": "曾 捷 总经理 税务硕士 历任希捷国际科技（无锡）公司工程部工程师，昆吾九鼎投资公司投资部投资经理，深圳高新投创业投资公司投资经理，深圳华侨城资本投资公司投资发展部副总裁，河南中金汇融私募基金公司投资管理部投资总监，重庆渝富控股集团华南事业部总经理，重庆渝富康颐投资公司总经理，重庆渝富控股集团电子信息事业部副总监。现任重庆渝富高质基金公司总经理。",
+          "quote_hash": "f2b54d3ec7178347e120ac1343c600833f3d100602928e93542f5dda48c69f90"
+        },
+        {
+          "source_id": "yufu_contact",
+          "source_url": "https://www.cqyfkgjt.com/cqyfkgjt/xinxigongkai/yufujianjie11/index.html",
+          "source_title": "联系方式 - 重庆渝富控股集团有限公司",
+          "source_content_hash": "f3bcdbb9eac30ac5d5c8d5baf9275a564c3295f269b3127a19e62af9bd727e05",
+          "quote": "电话 Phone 023-67678200 邮箱 E-mail gkyx@cqyfkgjt.com",
+          "quote_hash": "50a5ee77654cc1e17a31984d77c1e9d8d4b82209e68ad66c0226bfe9328b75b2"
+        },
         {
           "source_id": "FISRC-c00e3514a8fe23f2",
           "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
@@ -153,7 +325,11 @@
           "quote_hash": "09cb9e2523380f0b2eb0586ac2a30d1d2528d377f5867ffeb37702d0e2be27a2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官方信息页主体是重庆渝富高质产业母基金私募股权投资基金管理有限公司；本库的投资方简称可能指向其所管理的母基金，故档案明确区分管理公司、重庆产业投资母基金及在管基金规模。机构数据页没有标注更新时间；945.21亿元为页面自述值。团队当前职务照录页面“现任”表述但注明未见更新时间。公开电话和邮箱属于渝富控股集团一般联系渠道，不是基金项目直投渠道。"
     }
   }
 }

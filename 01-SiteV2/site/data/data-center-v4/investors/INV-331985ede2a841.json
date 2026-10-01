@@ -137,21 +137,257 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Madrona Venture Group 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Madrona Venture Group 于 1995 年在西雅图成立，长期投资科技企业，覆盖孵化、种子、早期及 B/C 轮加速阶段。机构目前在西雅图和帕洛阿尔托设有办公室，官网称其加速基金重点支持美国应用 AI 企业。其公开投资案例包括 Amazon、Apptio、Smartsheet、Rover.com 和 Redfin。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1995",
+          "source_id": "madrona"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "孵化",
+            "种子期",
+            "早期",
+            "B/C 轮加速"
+          ],
+          "source_id": "madrona_strategy"
+        },
+        {
+          "field": "sectors",
+          "label": "近期重点",
+          "value": [
+            "科技",
+            "应用人工智能"
+          ],
+          "source_id": "madrona_strategy"
+        },
+        {
+          "field": "market_regions",
+          "label": "主要市场",
+          "value": "以美国为主，重点布局西海岸",
+          "source_id": "madrona"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1995",
+          "description": "在西雅图成立并开始早期投资。",
+          "source_id": "madrona"
+        },
+        {
+          "date": "2018",
+          "description": "宣布完成第七支 3 亿美元投资基金。",
+          "source_id": "madrona_history"
+        },
+        {
+          "date": "2022",
+          "description": "在帕洛阿尔托设立硅谷办公室。",
+          "source_id": "madrona_paloalto"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Madrona 2018 年官方材料称其为 Amazon、Apptio、Smartsheet、Rover.com 和 Redfin 的早期投资者；该列表为历史选例，不代表当前完整组合。",
+          "source_id": "madrona_history"
+        },
+        {
+          "description": "Matt McIlwain 个人页面列出的历史投资包括 Apptio（2016 年 IPO、2018 年被 Vista 收购）等。",
+          "source_id": "madrona_outcome"
+        },
         {
           "description": "融资来源记录：Temporal Technologies · D轮 · 2026-02-17 · 既有投资方，本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1f69885afd5fc439"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Matt McIlwain — Managing Director",
+          "organization": "Madrona Venture Group",
+          "source_id": "madrona_team"
+        },
+        {
+          "title": "Scott Jacobson — Managing Director",
+          "organization": "Madrona Venture Group",
+          "source_id": "madrona_team"
+        },
+        {
+          "title": "Karan Mehandru — Managing Director",
+          "organization": "Madrona Venture Group",
+          "source_id": "madrona_team"
+        },
+        {
+          "title": "Tim Porter — Managing Director",
+          "organization": "Madrona Venture Group",
+          "source_id": "madrona_team"
+        },
+        {
+          "title": "Steve Singh — Managing Director",
+          "organization": "Madrona Venture Group",
+          "source_id": "madrona_team"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Genuine Parts Company",
+          "title": "Matt McIlwain — 业务流程副总裁",
+          "period": "加入 Madrona 前；具体年月未披露",
+          "description": "负责业务流程工作。",
+          "source_id": "madrona_matt"
+        },
+        {
+          "organization": "McKinsey & Company",
+          "title": "Matt McIlwain — Engagement Manager",
+          "period": "此前；具体年月未披露",
+          "description": "专注技术驱动行业的战略与市场工作。",
+          "source_id": "madrona_matt"
+        },
+        {
+          "organization": "Credit Suisse",
+          "title": "Matt McIlwain — 投资银行从业者",
+          "period": "此前；具体年月未披露",
+          "description": "曾在投资银行工作。",
+          "source_id": "madrona_matt"
+        },
+        {
+          "organization": "Madrona Venture Group",
+          "title": "Matt McIlwain — Managing Director",
+          "period": "2000 年加入；截至官网当前团队页在任",
+          "description": "长期投资科技企业，并关注应用机器学习、云计算及生命科学与数据科学交叉领域。",
+          "source_id": "madrona_matt"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Dartmouth College",
+          "qualification": "Matt McIlwain：毕业；专业未披露",
+          "source_id": "madrona_education"
+        },
+        {
+          "institution": "Harvard Business School",
+          "qualification": "Matt McIlwain：工商管理硕士",
+          "source_id": "madrona_education"
+        },
+        {
+          "institution": "Harvard Kennedy School of Government",
+          "qualification": "Matt McIlwain：公共政策硕士",
+          "source_id": "madrona_education"
+        }
+      ],
+      "experience_summary": "Matt McIlwain 于 2000 年加入 Madrona，履历覆盖投资银行、科技行业战略与业务流程；官网列出其与 Apptio 合作并参与公司从早期建设至 IPO 及后续出售。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Madrona Venture Group",
+          "url": "https://www.madrona.com/about/",
+          "source_id": "madrona"
+        },
+        {
+          "kind": "phone",
+          "label": "办公室电话",
+          "value": "+1 206 674 3000",
+          "url": "https://www.madrona.com/contact/",
+          "source_id": "madrona_contact"
+        },
+        {
+          "kind": "address",
+          "label": "西雅图办公室",
+          "value": "999 Third Avenue, 34th Floor, Seattle, WA 98104",
+          "url": "https://www.madrona.com/contact/",
+          "source_id": "madrona_contact"
+        },
+        {
+          "kind": "address",
+          "label": "帕洛阿尔托办公室",
+          "value": "502 Waverley Street, Palo Alto, CA 94301",
+          "url": "https://www.madrona.com/contact/",
+          "source_id": "madrona_contact"
+        },
+        {
+          "kind": "contact_form",
+          "label": "投资人联系入口（官网指向 Jeff Mills）",
+          "value": "Investor Inquiries",
+          "url": "https://www.madrona.com/contact/",
+          "source_id": "madrona_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "madrona",
+          "source_url": "https://www.madrona.com/about/",
+          "source_title": "Madrona | About",
+          "source_content_hash": "a1944354ab3e22a2c0ed18b665e86f77522f479607c62a828aaa14875f44c923",
+          "quote": "Founded in Seattle in 1995, we have deep roots in early-stage investing.",
+          "quote_hash": "d7c75d1ecab2fbde0ae90ee0137a7d8ad7fb003acf46e0ea4db07834b62b47e6"
+        },
+        {
+          "source_id": "madrona_strategy",
+          "source_url": "https://www.madrona.com/about/",
+          "source_title": "Madrona | About",
+          "source_content_hash": "a1944354ab3e22a2c0ed18b665e86f77522f479607c62a828aaa14875f44c923",
+          "quote": "Our Acceleration Funds expand our ability to work with entrepreneurs building applied AI companies primarily in the U.S. as they move from product-market fit to accelerating business growth.",
+          "quote_hash": "6ece70efc7dee3ffaff5fad3254634b595c25da9d21a78dde5b80f88d8dd67ae"
+        },
+        {
+          "source_id": "madrona_paloalto",
+          "source_url": "https://www.madrona.com/about/",
+          "source_title": "Madrona | About",
+          "source_content_hash": "a1944354ab3e22a2c0ed18b665e86f77522f479607c62a828aaa14875f44c923",
+          "quote": "In 2022, we opened our Silicon Valley office in Palo Alto with an experienced team of investors.",
+          "quote_hash": "765a243fc5d112b96e03ea659f4f93faf2535914ab5aad0f6454320597b23a73"
+        },
+        {
+          "source_id": "madrona_team",
+          "source_url": "https://www.madrona.com/team/?show=investors",
+          "source_title": "Madrona | Team",
+          "source_content_hash": "447b0a27ccfd3f0e46d3496167fd5e9a20e7c6713d04df08c99fab9ea7416d06",
+          "quote": "Scott Jacobson Managing Director Matt McIlwain Managing Director Karan Mehandru Managing Director Tim Porter Managing Director Steve Singh Managing Director",
+          "quote_hash": "9599f7a175a73aa0020603e5065f68a5262a1c7aad7416204dcdbff2ad718deb"
+        },
+        {
+          "source_id": "madrona_contact",
+          "source_url": "https://www.madrona.com/contact/",
+          "source_title": "Madrona | Contact",
+          "source_content_hash": "cae80ad417d06148c62ab724da82b3c936497b5e78bc4f07f34b2de92a20cc5f",
+          "quote": "Phone: +1 206.674.3000 Email team members directly from bios",
+          "quote_hash": "d36c954dc4f384511381fc9c821fac6ef7c50edda0dd086877ce8d64bbda56d2"
+        },
+        {
+          "source_id": "madrona_matt",
+          "source_url": "https://www.madrona.com/team-profiles/matt-mcilwain/",
+          "source_title": "Matt McIlwain | Madrona",
+          "source_content_hash": "328ef4937d05b05db493bd631ccc75fcffacd6870f8883d28bf266b61976b334",
+          "quote": "Before joining Madrona in 2000, Matt was vice president of business process for the Genuine Parts Company (NYSE: GPC). He also was an engagement manager at McKinsey & Company, concentrating on strategy and marketing in technology-driven sectors. Prior to that, he worked in investment banking at Credit Suisse.",
+          "quote_hash": "3beb966491c0bad0bbb22801bb822d21ae6dba8bfdb37054f749c0f5b493fe11"
+        },
+        {
+          "source_id": "madrona_education",
+          "source_url": "https://www.madrona.com/team-profiles/matt-mcilwain/",
+          "source_title": "Matt McIlwain | Madrona",
+          "source_content_hash": "328ef4937d05b05db493bd631ccc75fcffacd6870f8883d28bf266b61976b334",
+          "quote": "Matt graduated from Dartmouth College and holds an MBA from Harvard Business School and a master’s in public policy from Harvard’s Kennedy School of Government.",
+          "quote_hash": "85be9b12e30f88c464beb7f6cdd994bce9370375764e2d8c793b89d40152dfe3"
+        },
+        {
+          "source_id": "madrona_outcome",
+          "source_url": "https://www.madrona.com/team-profiles/matt-mcilwain/",
+          "source_title": "Matt McIlwain | Madrona",
+          "source_content_hash": "328ef4937d05b05db493bd631ccc75fcffacd6870f8883d28bf266b61976b334",
+          "quote": "IPO 2016, acq. by Vista 2018",
+          "quote_hash": "6330838380c10b62cf43cbcc11b3988e66468650d49c35b03b23be9851a3e463"
+        },
+        {
+          "source_id": "madrona_history",
+          "source_url": "https://www.madrona.com/fundvii/",
+          "source_title": "Announcing $300 Million for Technology Entrepreneurs and Founders",
+          "source_content_hash": "8bcf6667070ac13d174a03afd4e4b0d34af99018b05f6e9c40ae565b0e8df374",
+          "quote": "Madrona manages nearly $1.6 billion and was an early investor in companies such as Amazon.com, Apptio, Smartsheet, Rover.com, and Redfin.",
+          "quote_hash": "52378e3ee363049a064f44080ee75ef633a0363719efbdee6ae4404f9c76677e"
+        },
         {
           "source_id": "FISRC-1f69885afd5fc439",
           "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
@@ -161,7 +397,11 @@
           "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于机构官网或机构本人公开资料核验；自述数据已注明口径，未公开的信息留空。"
     }
   }
 }

@@ -132,20 +132,100 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Deepak Pathak 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Deepak Pathak 是 Carnegie Mellon University 计算机科学学院机器人研究所副教授，也是 Skild AI 联合创办人兼 CEO。他的研究交叉机器人、计算机视觉与机器学习；此前在 Meta AI Research 任研究员，并在 UC Berkeley 完成博士研究及访问博士后工作。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Raj Reddy 副教授",
+          "organization": "Carnegie Mellon University, School of Computer Science",
+          "source_id": "deepak_cmu"
+        },
+        {
+          "title": "联合创办人、首席执行官",
+          "organization": "Skild AI",
+          "source_id": "deepak_cmu"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Carnegie Mellon University",
+          "title": "Raj Reddy 副教授，机器人研究所成员",
+          "period": "2020 年至页面核验日",
+          "description": "本人学术主页列示其当前教职与研究机构。",
+          "source_id": "deepak_cmu"
+        },
+        {
+          "organization": "Skild AI",
+          "title": "联合创办人、首席执行官",
+          "period": "2023 年创立；现任",
+          "description": "本人学术主页及 CV 列示其创业职务。",
+          "source_id": "deepak_cv"
+        },
+        {
+          "organization": "Facebook AI Research (Meta AI)",
+          "title": "研究员",
+          "period": "2019–2020",
+          "description": "CMU 官方个人 CV 列示该任职。",
+          "source_id": "deepak_cv"
+        },
+        {
+          "organization": "University of California, Berkeley",
+          "title": "访问博士后",
+          "period": "2019–2020",
+          "description": "CMU 官方个人 CV 列示其与 Pieter Abbeel 合作的访问博士后经历。",
+          "source_id": "deepak_cv"
+        },
+        {
+          "organization": "VisageMap Inc.",
+          "title": "共同创办人",
+          "period": "2014 年创立",
+          "description": "CMU 官方个人 CV 将其列为共同创办人。",
+          "source_id": "deepak_cv"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of California, Berkeley",
+          "qualification": "计算机科学博士，2019 年。",
+          "source_id": "deepak_cv"
+        },
+        {
+          "institution": "Indian Institute of Technology Kanpur",
+          "qualification": "计算机科学与工程学士（BTech），2014 年。",
+          "source_id": "deepak_cv"
+        }
+      ],
+      "experience_summary": "学术研究聚焦机器人、视觉和机器学习，另有 Meta AI Research 经历及机器人基础模型创业经验。",
       "track_record": [
         {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "本人主页列示 ONR Young Investigator Award（2026）、Sloan Research Fellowship（2025）和 MIT TR35（2024）等荣誉。",
+          "source_id": "deepak_cmu"
+        },
+        {
+          "description": "Sycamore 种子轮公告将 Deepak Pathak 列为天使投资者之一并注明其 Skild AI 联合创办人身份；本库记录的 6,500 万美元为整轮融资金额，未披露其个人出资额。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "deepak_cmu",
+          "source_url": "https://www.cs.cmu.edu/~dpathak/",
+          "source_title": "Deepak Pathak",
+          "source_content_hash": "b1aa0fef92134f5fb356eae55e8dd2da217678a7c6fc6ca5b9bd46a85e3b09b0",
+          "quote": "I am also Co-Founder and CEO of Skild AI",
+          "quote_hash": "f3c50c48c806a8266031a4141370d637f656c6c1ff10f18e94cf2dc436f0e795"
+        },
+        {
+          "source_id": "deepak_cv",
+          "source_url": "https://www.cs.cmu.edu/~dpathak/CV_Pathak.pdf",
+          "source_title": "Deepak Pathak - Curriculum Vitae",
+          "source_content_hash": "12f7c6eb71385f7148df46fd983332060c32190f5305205ff84f0a64eb210b00",
+          "quote": "Co-Founder and CEO of Skild AI — Founded 2023",
+          "quote_hash": "6390a3e37d51ab3a655d60dce047c41915643cbab7438655c96b32fca0f1be10"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -155,7 +235,9 @@
           "quote_hash": "206b95c75ea4727562e3137538f91bc15e3cc8c7b11ca19810fc8cd8c72508eb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "当前职务和研究方向来自本人 CMU 学术主页，任职年份与教育信息来自其公开 CV；融资报道不披露个人出资额。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

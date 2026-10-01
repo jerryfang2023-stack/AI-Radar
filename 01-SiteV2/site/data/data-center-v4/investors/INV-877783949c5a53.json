@@ -139,12 +139,41 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "上海创之智科技有限公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "融资记录中的名称为“上海创之智科技有限公司”。穹彻智能官网将其称为上海创智学院全资子公司，锡创投同期投资公告也列明其参与该轮融资。现有公开来源仅支持所属关系及这笔活动，未披露该公司自身的投资策略、基金产品、管理团队或该笔投资金额；学院整体创业支持机制不能直接视为公司的投资政策。",
+      "summary": "上海创之智科技有限公司在穹彻智能官网披露中被称为上海创智学院全资子公司。穹彻智能2026年6月宣布完成数亿元融资，官网将创之智列为投资方；锡创投同期公告也确认其参与。公开披露未说明创之智的具体投资金额，也未提供该公司的独立投资策略、团队或联系方式。",
+      "facts": [
+        {
+          "field": "parent_organization",
+          "label": "被投企业披露的所属关系",
+          "value": "穹彻智能官网在2026年6月融资介绍中称，上海创之智科技有限公司是上海创智学院全资子公司。",
+          "source_id": "noematrix_about"
+        },
+        {
+          "field": "investment_activity",
+          "label": "公开披露的融资参与",
+          "value": "穹彻智能2026年6月融资披露及锡创投同期公告均列上海创之智科技有限公司为参与投资方；未披露其单独投资金额。",
+          "source_id": "wuxi_noematrix"
+        },
+        {
+          "field": "parent_ecosystem_context",
+          "label": "母体学院的成果转化支持机制（不代表本公司的独立策略）",
+          "value": "上海创智学院官网称，学院组织投资机构和孵化机构遴选学生创业项目，并通过创投基金支持成果转化；这说明母体学院存在相关生态安排，不足以证明创之智科技的独立投资政策。",
+          "source_id": "sii_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-06-18",
+          "description": "锡创投公告列上海创之智科技有限公司为穹彻智能新一轮数亿元融资的参与方；穹彻智能官网亦将其列入投资方。",
+          "source_id": "wuxi_noematrix"
+        }
+      ],
       "track_record": [
+        {
+          "description": "穹彻智能披露其2026年6月完成数亿元融资，并将上海创之智科技有限公司列为投资方；锡创投公告交叉确认其参与。数亿元为本轮总融资额，创之智的单笔金额未披露；此案例不代表完整投资组合。",
+          "source_id": "noematrix_about"
+        },
         {
           "description": "融资来源记录：穹彻智能 · 轮次未披露 · 2026-06-18 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e3b51be471b79167"
@@ -152,6 +181,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "noematrix_about",
+          "source_url": "https://www.noematrix.ai/about",
+          "source_title": "关于公司 | 穹彻智能",
+          "source_content_hash": "3c88a1dbb2c3f75ee7abc366783fd229aba53ce3a9d44e52836ee78fc9b8e046",
+          "quote": "上海创之智科技有限公司（上海创智学院全资子公司）",
+          "quote_hash": "68b535a1b060efb43eaa2be0af001462ddffe33cae16145bd38bdfeba6722fc5"
+        },
+        {
+          "source_id": "wuxi_noematrix",
+          "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
+          "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道-锡创投-无锡市创新投资集团有限公司",
+          "source_content_hash": "9e0afb612f4b5858869ee4cc69948b949ceabdcba4de54709d983263182577d6",
+          "quote": "上海创之智科技有限公司参与投资",
+          "quote_hash": "46ab0322726b760ed10df39e984317137b2ac733e6591e32203cf64f6f57e971"
+        },
+        {
+          "source_id": "sii_about",
+          "source_url": "https://www.sii.edu.cn/xygk/list.htm",
+          "source_title": "学院概况 | 上海创智学院",
+          "source_content_hash": "4ce6cd5e8dea36185ba578b97bb6dd5a035775621e99adc5e7e53376dc3b91f6",
+          "quote": "学院组织投资机构和孵化机构进行遴选，通过创投基金进行支持",
+          "quote_hash": "11c8a4a3a3474ad958987ffafa8b9c6aa1140377314e054be427369e062bbab6"
+        },
         {
           "source_id": "FISRC-e3b51be471b79167",
           "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
@@ -161,7 +214,7 @@
           "quote_hash": "9a56d47990c9b47b90dd3b1b9aa7578bbbecb53cd57d2bce6b90d2cd9b0972cf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

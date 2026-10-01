@@ -138,20 +138,82 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "MaC Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "MaC Venture Capital 是一家总部位于洛杉矶的早期风险投资机构，官网称其成立于 2019 年，主要参与种子阶段融资，关注前沿技术、金融创新、企业服务和消费领域。官网还披露其投资组合规模超过 120 家；该数字为机构自述。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立年份",
+          "value": "2019 年；官网称总部位于洛杉矶。",
+          "source_id": "mac_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "主要投资阶段",
+          "value": "种子阶段",
+          "source_id": "mac_about"
+        },
+        {
+          "field": "investment_themes",
+          "label": "投资主题",
+          "value": [
+            "前沿技术",
+            "金融创新",
+            "企业服务",
+            "消费"
+          ],
+          "source_id": "mac_about"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露的组合规模",
+          "value": "超过 120 家公司（机构自述）",
+          "source_id": "mac_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "官网称 MaC Venture Capital 于 2019 年成立。",
+          "source_id": "mac_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Taya · 种子轮 · 2026-03-12 · 本轮领投 · $5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网披露其投资组合超过 120 家公司；该统计口径为机构自述，页面未提供逐项完整组合清单。",
+          "source_id": "mac_about"
+        },
+        {
+          "description": "Taya 于 2026-03-12 宣布完成 500 万美元种子轮，由 MaC Venture Capital 与 Female Founders Fund 共同领投，a16z speedrun 参投；500 万美元为本轮总额，未披露 MaC 的单笔出资额。",
           "source_id": "FISRC-4ec4178291982ae4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "MaC Venture Capital",
+          "url": "https://macventurecapital.com/about/",
+          "source_id": "mac_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "mac_about",
+          "source_url": "https://macventurecapital.com/about/",
+          "source_title": "About - MaC VC",
+          "source_content_hash": "5b03263cc1cd55e863c547c5504e7e0930dc025d05c4768aeb7d6031a8e8615f",
+          "quote": "Founded in 2019 in Los Angeles, MaC VC invests in early-stage companies.",
+          "quote_hash": "e322bd5cd3e691e85cad9e30f61d5b3cbacb993e1f10ffcf00a60f3458d5f7bc"
+        },
+        {
+          "source_id": "mac_marlon",
+          "source_url": "https://macventurecapital.com/team/marlon-nichols/",
+          "source_title": "Marlon Nichols - MaC VC",
+          "source_content_hash": "15885b37bdf8ebec1da8304ab6168e063563d8b67dacdec1606fd5d00786ed93",
+          "quote": "Marlon Nichols is the co-founder and managing general partner of MaC Venture Capital.",
+          "quote_hash": "d5ffc14880033cf4494553d3bae9162872e4314e4bf6995f22515cca9485e036"
+        },
         {
           "source_id": "FISRC-4ec4178291982ae4",
           "source_url": "https://www.prnewswire.com/news-releases/taya-raises-5m-for-ai-jewelry-designed-to-capture-your-thoughts-not-the-room-302711918.html",
@@ -161,7 +223,9 @@
           "quote_hash": "0a632c56cfbb4e44872d10b4c4d7118a5c285d0446981e4b38379a2f3f43ced6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "管理合伙人 Marlon Nichols 的公开履历已列为来源；资产管理规模在官网不同页面存在口径差异，本档案暂不汇总为单一数字。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

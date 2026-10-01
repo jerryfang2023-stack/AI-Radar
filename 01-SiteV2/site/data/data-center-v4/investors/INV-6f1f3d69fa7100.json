@@ -139,19 +139,182 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hiro Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "HIRO Capital 官网和法务页用于核实策略、组合、团队背景及联系方式。官网披露的历史规模和团队经历为机构自述，不代表基金业绩；AMI Labs 的 10.3 亿美元为融资轮总额，未披露 HIRO Capital 的单笔投资金额。法务页同时出现 Hiro Capital 1 LLP 与 Hiro Capital I LLP 名称，本档案不将两者合并为同一法律主体。",
+      "summary": "HIRO Capital 是一家创始人主导的欧洲风险投资机构，投资 AI、空间计算、自主系统、机器人、长寿科技、增强技术、游戏、仿真、太空与国防领域，重点面向广义 Europe+ 市场。官网披露其投资阶段从 A 轮延伸至 C 轮和规模化阶段，并采用主动参与型投后方式。团队成员来自科技创业、游戏产业、咨询、金融和风险投资。",
+      "facts": [
+        {
+          "field": "investment_thesis",
+          "label": "投资方向",
+          "value": [
+            "AI",
+            "空间计算",
+            "自主系统",
+            "机器人",
+            "长寿科技",
+            "增强技术",
+            "游戏",
+            "仿真",
+            "太空与国防"
+          ],
+          "source_id": "hiro_thesis"
+        },
+        {
+          "field": "geographies",
+          "label": "重点地域",
+          "value": "广义 Europe+：欧盟、英国、挪威、瑞士、乌克兰、土耳其和以色列。",
+          "source_id": "hiro_thesis"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "Series A 至 Series C 及规模化阶段。",
+          "source_id": "hiro_thesis"
+        },
+        {
+          "field": "investment_model",
+          "label": "投后方式",
+          "value": "官网称其采用主动参与型工作方式，与创始团队保持定期沟通并提供经验、网络和运营支持。",
+          "source_id": "hiro_thesis"
+        },
+        {
+          "field": "leadership",
+          "label": "创始及普通合伙人",
+          "value": "Luke Alvarez（创始人兼管理普通合伙人）；Cherry Freeman（创始人兼普通合伙人）；Sir Ian Livingstone（创始人兼普通合伙人）；Sir Nick Clegg（普通合伙人）。",
+          "source_id": "hiro_team"
+        },
+        {
+          "field": "team_background",
+          "label": "Luke Alvarez 履历",
+          "value": "官网称其有 33 年科技行业经验，曾共同创立在 Nasdaq 上市的 Inspired Entertainment 和英国公共 Wi-Fi 运营商 The Cloud，曾任 Boston Consulting Group 顾问；为剑桥大学毕业生及 Fulbright 学者，负责公司战略并参与 AI、长寿、体育和深科技投资。",
+          "source_id": "hiro_team"
+        },
+        {
+          "field": "team_background",
+          "label": "Sir Nick Clegg 履历",
+          "value": "官网将其列为普通合伙人；曾任英国副首相（2010–2015）、Meta 全球事务总裁（2018–2025），此前在欧洲议会及欧盟机构任职约十年。",
+          "source_id": "hiro_team"
+        },
+        {
+          "field": "team_background",
+          "label": "Cherry Freeman 履历",
+          "value": "共同创立手工艺品电商 LoveCrafts，该公司后被美国战略买家收购；曾任 Boston Consulting Group 顾问及 Computacenter 集团战略总监，负责扩展软件业务；为剑桥大学毕业生。",
+          "source_id": "hiro_team"
+        },
+        {
+          "field": "team_background",
+          "label": "Sir Ian Livingstone 履历",
+          "value": "游戏产业创业者，曾共同创立 Games Workshop 与 Eidos（《古墓丽影》）；获 CBE、2022 年骑士爵位及 BAFTA 终身成就奖。",
+          "source_id": "hiro_team"
+        },
+        {
+          "field": "team_background",
+          "label": "其他投资团队成员",
+          "value": "Spike Laurie 负责太空、国防与游戏投资，曾在 ESL 任领导职务；Beth Li 负责亚洲业务，拥有 22 年咨询、战略及跨境科技市场经验，曾任职 JP Morgan 并创立 BML Consulting。",
+          "source_id": "hiro_team"
+        },
+        {
+          "field": "legal_identity",
+          "label": "官网法律主体披露",
+          "value": "官网法务页称网站由在伦敦注册的 Hiro Capital 1 LLP 发布，注册号 OC425586；同页免责声明另将 Hiro Capital I LLP 描述为 Laven Advisors LLP 的 appointed representative。该页出现的两个主体名称在此分别记录，不推断二者法律关系。",
+          "source_id": "hiro_legal"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列示组合案例",
+          "value": [
+            "AMI Labs",
+            "Islo AI",
+            "Sidero Labs",
+            "Incredibuild",
+            "Frameplay",
+            "FitXR",
+            "Team Liquid",
+            "PlayerData",
+            "Skybound Games"
+          ],
+          "source_id": "hiro_companies"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮联合领投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "HIRO Capital 官网组合页将 AMI Labs 列为 2026 年组合公司。另有融资报道将 HIRO Capital 列为 AMI Labs 种子轮联合领投方；10.3 亿美元是本轮融资总额，未披露该机构单笔出资额。",
           "source_id": "FISRC-6c35525e379488bf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "HIRO Capital",
+          "url": "https://hiro.capital/",
+          "source_id": "hiro_home"
+        },
+        {
+          "kind": "website",
+          "label": "创始人联系页面",
+          "value": "官网联系页邀请符合投资方向的创始人联系 HIRO；页面未公开电子邮箱。",
+          "url": "https://hiro.capital/contact",
+          "source_id": "hiro_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网法务页登记地址（秘书服务机构）",
+          "value": "Sheffield Secretarial CMS, 78 Cannon Street, London, UK, EC4N 6AF。官网称 Hiro Capital 在该处登记；不视为运营办公室地址。",
+          "url": "https://hiro.capital/legal",
+          "source_id": "hiro_legal"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hiro_home",
+          "source_url": "https://hiro.capital/",
+          "source_title": "HIRO Capital — Investors in the Future",
+          "source_content_hash": "25f4bced68f3ded1e8eee495765cbf091910a7ca0fdd4e75041fc1590372d25a",
+          "quote": "HIRO Capital is a founder-led VC firm",
+          "quote_hash": "95c748813ede8ad26acee91a41085356e8d108c50f79b92f4a458efc9b2fe8b3"
+        },
+        {
+          "source_id": "hiro_team",
+          "source_url": "https://hiro.capital/team",
+          "source_title": "Team | HIRO Capital",
+          "source_content_hash": "323007be161652bbbf6bf7077db9eb5da9dfa6e051525efa0e10377246920534",
+          "quote": "33 years in technology from the earliest days of the internet.",
+          "quote_hash": "aaa1594c09826eec650319ade75c21e7af85f37594e4e03d86bf0f6a8edce1a2"
+        },
+        {
+          "source_id": "hiro_companies",
+          "source_url": "https://hiro.capital/companies",
+          "source_title": "Companies | HIRO Capital",
+          "source_content_hash": "b36eba4e3be845623cc26c4f6d18183cc3acef3c99f02120529e26e3e589a343",
+          "quote": "AMI Labs AI 2026",
+          "quote_hash": "34a6b1b8ce5378292db45994ed423c1af79ab3ae2377110fbb439ed840667561"
+        },
+        {
+          "source_id": "hiro_thesis",
+          "source_url": "https://hiro.capital/working-with-hiro",
+          "source_title": "Working with HIRO | HIRO Capital",
+          "source_content_hash": "d4d297f2ed94f4c6948fb2c39d55334beec132bb54239f7af5a5587ea4360bb2",
+          "quote": "HIRO Capital invests in AI, Spatial Computing, Autonomy, Robotics, Longevity, Augmentation, Games, Simulation and Space & Defense technologies",
+          "quote_hash": "fd4ee4d63c85403457d2432d618ff93c7000a5df1f0302cb9c84e514e656c25d"
+        },
+        {
+          "source_id": "hiro_legal",
+          "source_url": "https://hiro.capital/legal",
+          "source_title": "Legal | HIRO Capital",
+          "source_content_hash": "6a74c65fe71f2c2bb20b6b4eac719a859cdb00d7122d6e8a305ec37f89a07e13",
+          "quote": "Hiro Capital 1 LLP, a company registered in London, UK, with company registration number OC425586.",
+          "quote_hash": "5c50caf7b0ef142ad63095fbbe36bb07f6ad500f22105fb8645d6f02d03dc042"
+        },
+        {
+          "source_id": "hiro_contact",
+          "source_url": "https://hiro.capital/contact",
+          "source_title": "Contact | HIRO Capital",
+          "source_content_hash": "b8cc44066c810923836d5d18ce44b6ce3850dbf2b02e23d93302b57e327b8aef",
+          "quote": "We back exceptional founders building transformative companies.",
+          "quote_hash": "a48c311876c83cece33d7712446558c2be0748b19bb0d2c797d978aa79ee747a"
+        },
         {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -161,7 +324,7 @@
           "quote_hash": "6a9f71b006329253881732e65a1aab8292cb41280260354b36196bdebd59dc54"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }
