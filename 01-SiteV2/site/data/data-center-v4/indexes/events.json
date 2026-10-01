@@ -278,17 +278,385 @@
       "conflicts": [],
       "tags": [],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "industry_applications",
+            "name": "行业应用",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-9395e14c5b496512",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "industrials",
+            "name": "工业",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-70f520d59a93d192",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          }
+        ],
         "ai_market_application": [],
-        "product_form": [],
-        "use_case": [],
-        "industry": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4d70318c199e80ec",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "design_engineering",
+            "name": "设计与工程",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8a3a5c20e5229916",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c02957e5ce8395e9",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-4716ccc195f07617",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-7b6055742c83f304",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-c1f7e16a915ef925",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          }
+        ],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-f63fbe67580c3552",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "developer",
+            "name": "开发者",
+            "entityIds": [
+              "EN-50d7f4250bdd8888"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-84f6c839115247f0",
+            "fundingInsightId": "FI-859b6264ddfd96fb"
+          }
+        ]
       },
-      "classifications": [],
-      "displayTags": [],
+      "classifications": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9395e14c5b496512",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "industrials",
+          "name": "工业",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-70f520d59a93d192",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4716ccc195f07617",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7b6055742c83f304",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c1f7e16a915ef925",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4d70318c199e80ec",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f63fbe67580c3552",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-84f6c839115247f0",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "design_engineering",
+          "name": "设计与工程",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8a3a5c20e5229916",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c02957e5ce8395e9",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "industry_applications",
+          "name": "行业应用",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-9395e14c5b496512",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "industrials",
+          "name": "工业",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-70f520d59a93d192",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4d70318c199e80ec",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "design_engineering",
+          "name": "设计与工程",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8a3a5c20e5229916",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c02957e5ce8395e9",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-4716ccc195f07617",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-7b6055742c83f304",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "manufacturing",
+          "name": "制造业",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-c1f7e16a915ef925",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-f63fbe67580c3552",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "developer",
+          "name": "开发者",
+          "entityIds": [
+            "EN-50d7f4250bdd8888"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-84f6c839115247f0",
+          "fundingInsightId": "FI-859b6264ddfd96fb"
+        }
+      ],
       "entityIds": [
         "EN-50d7f4250bdd8888",
         "EN-e78bdebae031095b"
@@ -990,8 +1358,34 @@
         }
       ],
       "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
+        "ai_market_category": [
+          {
+            "dimensionId": "ai_market_category",
+            "dimensionName": "AI 市场类别",
+            "id": "enterprise_applications",
+            "name": "企业级应用",
+            "entityIds": [
+              "EN-b4c73396844f7d05"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-021f5718914afb7e",
+            "fundingInsightId": "FI-1481ea41faec38d9"
+          }
+        ],
+        "ai_market_subcategory": [
+          {
+            "dimensionId": "ai_market_subcategory",
+            "dimensionName": "AI 市场子类",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-b4c73396844f7d05"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-59abe845c2c731f5",
+            "fundingInsightId": "FI-1481ea41faec38d9"
+          }
+        ],
         "ai_market_application": [],
         "product_form": [
           {
@@ -1002,32 +1396,132 @@
             "entityIds": [
               "EN-b4c73396844f7d05"
             ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-af048ffd8701c2d3",
+            "fundingInsightId": "FI-1481ea41faec38d9"
           }
         ],
-        "use_case": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "productivity_enterprise_workflows",
+            "name": "生产力与企业工作流",
+            "entityIds": [
+              "EN-b4c73396844f7d05"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-b7864bee3b9e80ce",
+            "fundingInsightId": "FI-1481ea41faec38d9"
+          }
+        ],
         "industry": [],
         "deployment_model": [],
-        "target_user": []
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "business_user",
+            "name": "企业用户",
+            "entityIds": [
+              "EN-b4c73396844f7d05"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-8f462a675dfaa6a4",
+            "fundingInsightId": "FI-1481ea41faec38d9"
+          },
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-b4c73396844f7d05"
+            ],
+            "provenance": "reviewed_funding_insight",
+            "reviewRef": "REC-05b328ee792322f9",
+            "fundingInsightId": "FI-1481ea41faec38d9"
+          }
+        ]
       },
       "classifications": [
         {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
           "entityIds": [
             "EN-b4c73396844f7d05"
           ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-021f5718914afb7e",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-59abe845c2c731f5",
+          "fundingInsightId": "FI-1481ea41faec38d9"
         },
         {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
           "id": "end_user_application",
           "name": "终端 AI 应用",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af048ffd8701c2d3",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8f462a675dfaa6a4",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-05b328ee792322f9",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b7864bee3b9e80ce",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
           "entityIds": [
             "EN-b4c73396844f7d05"
           ],
@@ -1037,6 +1531,30 @@
       ],
       "displayTags": [
         {
+          "dimensionId": "ai_market_category",
+          "dimensionName": "AI 市场类别",
+          "id": "enterprise_applications",
+          "name": "企业级应用",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-021f5718914afb7e",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
+          "dimensionId": "ai_market_subcategory",
+          "dimensionName": "AI 市场子类",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-59abe845c2c731f5",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
           "dimensionId": "product_form",
           "dimensionName": "产品形态",
           "id": "end_user_application",
@@ -1044,8 +1562,21 @@
           "entityIds": [
             "EN-b4c73396844f7d05"
           ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-af048ffd8701c2d3",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "productivity_enterprise_workflows",
+          "name": "生产力与企业工作流",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-b7864bee3b9e80ce",
+          "fundingInsightId": "FI-1481ea41faec38d9"
         },
         {
           "dimensionId": "technology",
@@ -1057,6 +1588,30 @@
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "business_user",
+          "name": "企业用户",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-8f462a675dfaa6a4",
+          "fundingInsightId": "FI-1481ea41faec38d9"
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-b4c73396844f7d05"
+          ],
+          "provenance": "reviewed_funding_insight",
+          "reviewRef": "REC-05b328ee792322f9",
+          "fundingInsightId": "FI-1481ea41faec38d9"
         }
       ],
       "entityIds": [

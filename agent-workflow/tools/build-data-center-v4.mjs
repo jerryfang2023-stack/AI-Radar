@@ -2361,7 +2361,16 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
 
 export function writeBundle(bundle, date, destination = path.join(outputRoot, date)) {
   fs.mkdirSync(destination, { recursive: true });
-  for (const [name, value] of Object.entries(bundle)) {
+  // Reviewed rows are accepted evidence, not an output of raw extraction.
+  // Rebuilding a day's intake must not erase reviews of unchanged events.
+  const eventIds = new Set((bundle.canonical_events || []).map(event => event.event_id));
+  const previous = readJson(path.join(destination, 'reviewed-event-classifications.json'), []);
+  const reviewed = [...new Map([...previous, ...(bundle.reviewed_event_classifications || [])]
+    .filter(row => eventIds.has(row.event_id))
+    .map(row => [row.reviewed_classification_id, row])).values()];
+  const output = { ...bundle, reviewed_event_classifications: reviewed,
+    manifest: { ...bundle.manifest, counts: { ...bundle.manifest.counts, reviewed_event_classifications: reviewed.length } } };
+  for (const [name, value] of Object.entries(output)) {
     writeJson(path.join(destination, `${name.replace(/_/gu, "-")}.json`), value);
   }
   return destination;

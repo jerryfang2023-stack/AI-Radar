@@ -7,7 +7,7 @@ Current source: 1.1.8 reads the reviewed institution/person profile catalog and 
 
 Current source: 1.1.7 uses unified active reading entitlement for community content, with no separate joined-status or application gate. Real community identity remains required for personal profile writes and reward attribution. Legacy application links redirect to community home. Financing heading is 融资精选. See `docs/REVIEW-1.1.7.md`.
 
-Current data contract (2026-10-02): 融资精选 reads `/data/funding-featured.json` on every home entry. The portal regenerates capital explanations with each financing publication and verifies the live JSON. Attribute an institution only when the accepted financing research includes its quote and matching source; otherwise excerpt existing accepted capital analysis and label it 观澜分析. Never infer an explanation from sector tags or invent missing analysis. The current client supports this data update without a new upload.
+Current data contract (2026-10-02): 融资精选 reads `/data/funding-featured.json` on every home entry. The portal regenerates capital explanations with each financing publication and verifies the live JSON. Attribute an institution only when the accepted financing research includes its quote and matching source; otherwise excerpt existing accepted capital analysis. Metadata distinguishes editorial analysis, while the user-facing observation omits the 观澜分析 prefix. Never infer an explanation from sector tags or invent missing analysis.
 
 Previous source: 1.1.6 introduced the gold featured heading and attributed observations. See `docs/REVIEW-1.1.6.md`.
 
