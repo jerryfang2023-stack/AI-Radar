@@ -863,6 +863,15 @@ test("a current seed round stays separate from a previously undisclosed pre-seed
   assert.equal(normalizeFundingRound("预种子轮").code, "pre_seed");
 });
 
+test("an announced Series A amount outranks the previous seed and total funding", () => {
+  const claims = [
+    { claim_id: "CL-A", claim_type: "funding", verification_status: "accepted", object: "$40 million Series A", source_quote: "On Tuesday, AIUC announced a $40 million Series A led by Ribbit Capital." },
+    { claim_id: "CL-SEED", claim_type: "funding", verification_status: "accepted", source_quote: "It previously closed a $15 million seed round, bringing its total funding to $55 million." },
+  ];
+  const event = { object: "$40 million Series A", metrics: ["$40 million", "$15 million", "$55 million"], claim_refs: ["CL-A", "CL-SEED"] };
+  assert.equal(canonicalFundingEventAmount(event, claims), "$40 million");
+});
+
 test("canonical source remains citable when private evidence body is unavailable", () => {
   const sources = canonicalSources({
     sourceArtifacts: [{

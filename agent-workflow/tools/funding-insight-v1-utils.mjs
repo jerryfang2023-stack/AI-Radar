@@ -267,10 +267,14 @@ function fundingAmountMentions(value = "") {
     const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?(?:\s+(?:above|over|more\s+than|at\s+least|approximately|about))?|valu(?:ed|ing)\s+(?:(?:it|the\s+company|the\s+startup)\s+)?at|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)
       || /^\s*(?:pre[-\s]?money|post[-\s]?money)?\s*valuation\b/iu.test(after)
       || /^\s*估值/iu.test(after);
-    const cumulative = /(?:累计|总计|合计)[^，,；;。！？]{0,24}$/u.test(before);
-    const round = !valuation && !cumulative && (
+    const cumulative = /(?:累计|总计|合计)[^，,；;。！？]{0,24}$/u.test(before)
+      || /(?:total (?:funding|raised)|funding total)\s*(?:to|of|at)?\s*$/iu.test(before);
+    const historical = /\bpreviously\s+(?:closed|raised|secured)\b[^.!?;]{0,40}$/iu.test(before);
+    const round = !valuation && !cumulative && !historical && (
       // A financing verb in an earlier clause must not own a later valuation.
       /(?:完成|获得|获)[^，,：:；;。！？.!?]{0,32}$/u.test(before) && /^[^，,：:；;。！？.!?]{0,24}融资/u.test(after)
+      ||
+      /^\s*(?:pre[-\s]?)?series\s+[a-g](?:\+|\d)?\b/iu.test(after)
       ||
       /(?:融资|筹集|募资|raises?|raised|raising|secured|expanded\s+its\s+(?:seed\s+)?funding\s+by|funding\s+round|round\s+of)[^，,：:；;。！？.!?]{0,48}$/iu.test(before)
       || (!/previously\s+(?:undisclosed|announced|raised)/iu.test(text) && /(?:closes?|closed)[^，,：:；;。！？.!?]{0,48}$/iu.test(before))
