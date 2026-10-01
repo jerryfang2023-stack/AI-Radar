@@ -7,6 +7,7 @@ import { createSearchGateway } from '../tools/lib/search-gateway.mjs';
 import { ingestPrivateEvidenceRecords } from '../tools/lib/private-evidence-backup.mjs';
 import { loadPrivateEvidenceRecord } from '../tools/lib/private-evidence-store.mjs';
 import { buildSourceIntake, mergeSourceIntakes, readSourceIntake, sourceIntakePath } from '../tools/lib/source-intake-v1.mjs';
+import { indexFinancingEvidence } from './evidence-index.mjs';
 
 export async function collect({ root, directory, backupRoot, date, gateway, feed, capture = captureOriginal }) {
   const file = path.join(directory, 'collection.json');
@@ -16,6 +17,7 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   if (previous?.accepted) {
     const intake = readSourceIntake(root, date);
     if (!intake || !previous.raw_ids.every(id => intake.payload.raw_documents.some(row => row.raw_id === id))) throw new Error('accepted_intake_missing_restore_checkpoint');
+    indexFinancingEvidence({root, backupRoot, date, collection:previous});
     return previous;
   }
   gateway ||= createSearchGateway({ cacheDir: path.join(directory, 'search-cache'), maxRequests: config.max_search_requests });
@@ -54,6 +56,7 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   intake.source_artifacts.forEach(row => { row.snapshot_refs = [`evidence://${row.content_hash}`]; });
   intake.raw_documents.forEach(row => { row.body_ref = `evidence://${row.content_hash}`; });
   write(sourceIntakePath(root, date), mergeSourceIntakes(readSourceIntake(root, date)?.payload, intake));
+  indexFinancingEvidence({root, backupRoot, date, collection:state});
   state.raw_ids = intake.raw_documents.map(row => row.raw_id);
   state.unattempted = Math.max(0, remaining.length - batch.length);
   state.counts = { leads: discovered.leads.length, accepted_originals: entries.length, pending: Object.values(state.captures).filter(row => row.status === 'pending').length, excluded: Object.values(state.captures).filter(row => row.status === 'excluded').length };

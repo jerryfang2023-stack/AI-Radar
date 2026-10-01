@@ -43,6 +43,9 @@ test('original body and original date required; search date and descriptions can
   const lead={url:'https://example.com/round',published_at:'2026-09-30',summary:'AI financing snippet'};
   const response=source=>async()=>new Response(source,{headers:{'content-type':'text/html; charset=utf-8'}});
   const good=await captureOriginal(lead,{date,fetcher:response(html())});assert.equal(good.status,'accepted');assert.equal(good.record.published_at,'2026-09-30');
+  assert.equal(good.record.source_role,'original_source');
+  const quoted=await captureOriginal(lead,{date,fetcher:async()=>new Response(html(),{headers:{'content-type':'text/html; charset="utf-8"'}})});
+  assert.equal(quoted.status,'accepted');
   const missing=await captureOriginal(lead,{date,fetcher:response(html({date:''}))});assert.equal(missing.status,'pending');assert.equal(missing.reason,'original_date_missing');
   const stale=await captureOriginal(lead,{date,fetcher:response(html({date:'2025-01-01'}))});assert.equal(stale.status,'excluded');
   const parsed=parseOriginal('<script type="application/ld+json">'+JSON.stringify({'@type':'NewsArticle',description:'AI raises funding '.repeat(30)})+'</script>');assert.equal(parsed.body,'');
@@ -55,8 +58,13 @@ test('accepted collection stores body privately and downstream retry does not re
   const first=await collect({root,directory,backupRoot,date,gateway,feed:emptyFeed,capture});assert.equal(first.accepted,true);assert.equal(captures,1);
   const intake=read(path.join(root,`01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`));
   assert.match(intake.raw_documents[0].body_ref,/^evidence:\/\//u);assert.ok(!JSON.stringify(intake).includes('An AI company raises'));assert.ok(fs.existsSync(path.join(backupRoot,'catalog.jsonl')));
+  const indexFile=path.join(root,'01-SiteV2/content/01-raw/source-index.jsonl');
+  const indexText=fs.readFileSync(indexFile,'utf8');
+  assert.equal(JSON.parse(indexText.trim()).evidence_ref,intake.raw_documents[0].body_ref);
+  assert.ok(!indexText.includes('clean_text'));assert.ok(!indexText.includes('An AI company raises'));
   await collect({root,directory,backupRoot,date,gateway:{search:()=>{throw new Error('recollection forbidden');}},feed:emptyFeed,capture:()=>{throw new Error('recapture forbidden');}});
   assert.equal(captures,1);
+  assert.equal(fs.readFileSync(indexFile,'utf8'),indexText);
 });
 test('failed stages resume without replaying successful prerequisites and lock prevents duplicate execution',async t=>{
   const dir=temporary(t),file=path.join(dir,'state.json'),seen=[];
@@ -88,6 +96,8 @@ test('publication recovery reuses a successful portal despite a new temporary ch
 test('artifact restore cannot execute code or traverse paths',t=>{
   assert.equal(allowedCheckpointPath('../stolen.json',date),false);assert.equal(allowedCheckpointPath('agent-workflow/financing/run.mjs',date),false);
   assert.equal(allowedCheckpointPath('01-SiteV2/site/data/a.js',date),false);
+  assert.equal(allowedCheckpointPath('01-SiteV2/content/01-raw/source-index.jsonl',date),true);
+  assert.equal(allowedCheckpointPath('01-SiteV2/content/01-raw/originals.jsonl',date),false);
   const dir=temporary(t);write(path.join(dir,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,entries:[{file:'../escape.json',hash:'x'}]});
   assert.throws(()=>restore(dir,dir,date),/path_rejected/u);
 });

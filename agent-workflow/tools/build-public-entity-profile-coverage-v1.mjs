@@ -8,10 +8,12 @@ const database = path.join(root, "01-SiteV2/content/11-databases");
 const investorData = JSON.parse(fs.readFileSync(path.join(database, "investment-institutions-v1.json"), "utf8"));
 const entityData = JSON.parse(fs.readFileSync(path.join(root, "01-SiteV2/site/data/data-center-v4/indexes/entities.json"), "utf8"));
 const curated = JSON.parse(fs.readFileSync(path.join(database, "public-entity-profiles-v1.json"), "utf8"));
+const previousCoverageFile = path.join(database, 'public-entity-profile-coverage-v1.json');
+const previousCoverage = fs.existsSync(previousCoverageFile) ? JSON.parse(fs.readFileSync(previousCoverageFile, 'utf8')) : {};
 const investorById = new Map((investorData.institutions || []).map((item) => [item.id, item]));
 const organizationKinds = new Set(["investment_institution", "corporate_investor", "government_fund"]);
 const genericInvestorLabels = new Set(["angel investor", "angel investors", "天使投资人", "匿名天使投资人", "未具名天使投资人", "个人投资者"]);
-const asOf = process.env.PUBLIC_PROFILE_AS_OF || "2026-09-25";
+const asOf = process.env.PUBLIC_PROFILE_AS_OF || curated.as_of;
 const hashPattern = /^(?:[a-f0-9]{16}|[a-f0-9]{64})$/u;
 
 function normalizedQuote(value) {
@@ -78,7 +80,7 @@ for (const investor of investorData.institutions || []) {
   const kind = genericLabel ? "unverified" : investor.investor_kind === "individual" ? "person" : organizationKinds.has(investor.investor_kind) ? "organization" : "unverified";
   const coverageStatus = kind === "unverified" ? "identity_unverified" : "activity_only";
   const sources = activityEvidence.map((item) => item.source);
-  const latest = investor.latest_disclosed_at || investor.first_disclosed_at || asOf;
+  const latest = investor.latest_disclosed_at || investor.first_disclosed_at || '来源未披露日期';
   const details = activityEvidence.map(({ activity, source }) => trackedActivity(activity, source.source_id));
   const kindLabel = genericLabel ? "无法确认身份的匿名/泛称投资者" : kind === "person" ? "个人投资者" : kind === "unverified" ? "主体类型待核验的投资者名称" : "投资组织";
   coverage.institutions[investor.id] = {
@@ -96,7 +98,7 @@ for (const investor of investorData.institutions || []) {
     track_record: genericLabel ? [] : details,
     contacts: [],
     sources,
-    last_verified_at: asOf
+    last_verified_at: previousCoverage.institutions?.[investor.id]?.last_verified_at || asOf
   };
 }
 
@@ -157,7 +159,7 @@ for (const person of entityData.people || []) {
     experience_summary: "已核验的来源范围限于融资披露或本人公开身份说明；未从无关报道推断任期、学历或更多关联公司。",
     track_record: [],
     sources,
-    last_verified_at: asOf
+    last_verified_at: previousCoverage.people?.[person.id]?.last_verified_at || asOf
   };
 }
 
@@ -229,8 +231,10 @@ backlog.pending_people_research = pendingPeople;
 backlog.unresolved_investors = backlog.unresolved_investors.filter((item) => !coverage.institutions[item.id]);
 backlog.unresolved_people = backlog.unresolved_people.filter((item) => !coverage.people[item.id]);
 
-fs.writeFileSync(path.join(database, "public-entity-profile-coverage-v1.json"), `${JSON.stringify(coverage, null, 2)}\n`, "utf8");
-fs.writeFileSync(path.join(database, "public-entity-profile-backlog-v1.json"), `${JSON.stringify(backlog, null, 2)}\n`, "utf8");
+for (const [name, value] of [['public-entity-profile-coverage-v1.json', coverage], ['public-entity-profile-backlog-v1.json', backlog]]) {
+  const file = path.join(database, name), next = `${JSON.stringify(value, null, 2)}\n`;
+  if (!fs.existsSync(file) || fs.readFileSync(file, 'utf8') !== next) fs.writeFileSync(file, next, 'utf8');
+}
 console.log(JSON.stringify({
   ok: true,
   investorProfiles: Object.keys(coverage.institutions).length,

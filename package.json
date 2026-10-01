@@ -96,6 +96,8 @@
     "build:investment-institutions": "node agent-workflow/tools/build-investment-institutions-v1.mjs && npm run build:public-entity-profiles",
     "assert:investment-institutions": "node agent-workflow/tools/assert-investment-institutions-v1.mjs",
     "assert:public-entity-profiles": "node agent-workflow/tools/assert-public-entity-profiles-v1.mjs",
+    "profiles:queue": "node agent-workflow/tools/manage-profile-collection.mjs",
+    "test:profile-collection": "node --test agent-workflow/tools/tests/profile-collection.test.mjs",
     "build:public-entity-profile-coverage": "node agent-workflow/tools/build-public-entity-profile-coverage-v1.mjs",
     "build:public-entity-profiles": "npm run build:public-entity-profile-coverage && node agent-workflow/tools/apply-public-entity-profiles-v1.mjs && npm run assert:public-entity-profiles",
     "build:trend-radar-site": "node 01-SiteV2/site/scripts/build-trend-radar-frontstage.mjs",

@@ -12,7 +12,8 @@
 
 - Codex 自动化 `ai` 每日北京时间 08:10，负责派发、跟进、审核、合并及本地发布。
 - `funding-health-dispatch.yml` 每日 10:30 为同一融资流程的幂等兜底。
-- 所有 Windows 监测定时器停用。旧商业信号、独立国内融资、社群和 Builders 工作流退出当前调度。
+- 旧 Windows 早间生产、最终收尾及修复监测任务已删除。旧商业信号、独立国内融资、独立融资研究、健康派发和恢复看门狗工作流已删除；历史运行记录仅供追溯。
+- 社群与 Builders 的代码和任务定义保留，Windows 与 GitHub 两端均禁用，等待用户后续升级；不属于融资流程，也不得自动恢复。
 
 入口：`node agent-workflow/financing/dispatch.mjs --date=YYYY-MM-DD`。
 生产：`funding-daily-pr.yml` 调用 `financing/run.mjs --phase=collect` 和 `--phase=produce`。

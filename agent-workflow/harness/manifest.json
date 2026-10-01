@@ -205,37 +205,31 @@
     {
       "id": "H-china-funding",
       "moduleId": "data-center",
-      "title": "国内融资流程",
+      "title": "统一 AI 融资监测",
       "lifecycle": "current",
       "refs": [
         {
           "root": "wavesight",
-          "path": "agent-workflow/skills/guanlan-china-funding-monitor/SKILL.md",
+          "path": "docs/unified-daily-monitoring.md",
           "layer": "rules",
           "kind": "source"
         },
         {
           "root": "wavesight",
-          "path": "docs/china-funding-monitor.md",
+          "path": "docs/daily-monitor-search.md",
           "layer": "design",
           "kind": "source"
         },
         {
           "root": "wavesight",
-          "path": ".github/workflows/china-funding-pr.yml",
+          "path": ".github/workflows/funding-daily-pr.yml",
           "layer": "execution",
           "kind": "source"
         },
         {
           "root": "wavesight",
-          "path": "agent-workflow/tools/tests/china-funding-lane.test.mjs",
+          "path": "agent-workflow/financing/tests/monitor.test.mjs",
           "layer": "closure",
-          "kind": "source"
-        },
-        {
-          "root": "wavesight",
-          "path": "agent-workflow/skills/guanlan-china-funding-monitor/SKILL.md",
-          "layer": "execution",
           "kind": "source"
         },
         {
@@ -246,7 +240,7 @@
         }
       ],
       "check": {
-        "command": "npm run test:china-funding",
+        "command": "npm run test:financing-monitor",
         "cwd": "wavesight:.",
         "mode": "explicit-only"
       },
