@@ -32,6 +32,8 @@ node agent-workflow/financing/history-collect.mjs --date=2026-10-02 --from=2026-
 
 本轮实测修复包括 ISO 日期、微信合并 Content-Type 与文章发布日期、历史候选进入事实提取的窗口衔接，以及标题中的万亿缩写、倍数和“doubles down”习语。模型无事实可提取时保存拒绝/待核验结果，缺少精确证据仍不可发布，不反复生成同一条。
 
+历史回溯同时暴露了当前轮金额与旧轮/累计金额混用、产品文章引用旧融资的问题。人工复核使用原文精确区间修正事实提取，已接受的人工修复优先于旧自动结果。金额解析区分 Series 金额、previously closed 和 total funding。未核正日期、主体、轮次或证据不足的事件写入 `funding-insights/publication-review.json`，列出来源和原因；研究器不自动重试仍处于暂缓状态的条目，融资目录同样排除。覆盖门禁仅允许这些明确暂缓的事件缺卡，其他事件缺卡及已有卡片质量问题仍报错，不把待核验算成发布完成。
+
 发布仍需数据 PR、CI、接受 main、Pages、融资站发布器及网站/小程序数据回读。可获取条目数、关键词线索数、原文数、重复数、待核验数和新增融资卡数分别报告。
 
 验证：`node --test agent-workflow/financing/tests/history.test.mjs`；融资全套测试为 `npm run test:funding-insights`。原文日期的 ISO 时间格式和重复响应式 `<time>` 元素由信源回归测试覆盖。

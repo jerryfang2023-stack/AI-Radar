@@ -5,6 +5,7 @@ import { createSearchGateway } from "./lib/search-gateway.mjs";
 import { planFundingResearch, fundingResearchCoverage, independentResearchSources } from "./lib/funding-research-plan.mjs";
 import path from "node:path";
 import { readOriginalPage } from '../financing/original-page.mjs';
+import { publicationHold } from '../financing/catalog.mjs';
 import { createOriginalReader } from '../financing/original-reader.mjs';
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
@@ -1047,6 +1048,8 @@ async function main() {
     : events;
   if (args.get("market-region") === "CN") selectedEvents = selectedEvents.filter((event) => event.market_scope?.china_market_match === true);
   if (args.get("reuse-only") === "true") selectedEvents = selectedEvents.filter((event) => existingByEvent.has(event.event_id));
+  const publicationReview = readJson(path.join(root, "01-SiteV2/content/12-applications/funding-insights/publication-review.json"), null);
+  selectedEvents = selectedEvents.filter(event => !publicationHold({ triggered_by_event_id: event.event_id }, publicationReview));
   if (limit) {
     selectedEvents = selectedEvents.slice(0, limit);
   }
