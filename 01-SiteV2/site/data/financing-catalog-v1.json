@@ -8,14 +8,14 @@
     "latest_date": "2026-10-01",
     "last_checked_date": "2026-10-01",
     "latest_financing_date": "2026-10-01",
-    "generated_at": "2026-10-01T16:27:30.825Z",
-    "card_count": 389,
+    "generated_at": "2026-10-01T16:44:36.500Z",
+    "card_count": 385,
     "china_market_card_count": 114,
-    "duplicate_rounds_removed": 64,
+    "duplicate_rounds_removed": 65,
     "automatic_publication": true,
     "translation_registry": {
       "schema_version": "PUBLIC-ZH-TRANSLATION-V1.0",
-      "generated_at": "2026-10-01T16:28:20.945Z"
+      "generated_at": "2026-10-01T16:45:24.308Z"
     },
     "market_category_framework": {
       "name": "观澜 AI 融资分类",
@@ -37,7 +37,8 @@
     },
     "scope": "all_ai_financing_except_embodied_and_robotics",
     "excluded_count": 64,
-    "pending_classification_count": 13
+    "pending_classification_count": 13,
+    "pending_publication_count": 3
   },
   "taxonomy": {
     "version": "AI-FUNDING-TAGS-1.0",
@@ -6317,687 +6318,6 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-78c41d0e7b994533",
-      "triggered_by_event_id": "EV-3b424be9d0d68b87",
-      "as_of_date": "2026-10-01",
-      "company": {
-        "entity_id": "EN-e88ecf834fa37e5a",
-        "name": "Dazzle",
-        "full_name": "Dazzle",
-        "website": "https://dazzle.ai",
-        "summary": "Dazzle是由玛丽莎·梅耶尔创立的个人AI助手，其核心特点是仅从用户手机相册获取上下文，而非依赖邮件、日历等文本类应用，从而理解用户的爱好、兴趣、饮食和风格偏好，并提供即时任务处理和个性化建议。",
-        "headquarters": "加利福尼亚州帕洛阿尔托",
-        "founders": [
-          {
-            "name": "Marissa Mayer",
-            "role": "创始人兼 CEO",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-39cbb5f315cdae11",
-                "quote": "said Marissa Mayer, Founder and CEO of Dazzle AI",
-                "source_content_hash": "0d32e048dc28b8dd",
-                "quote_hash": "79615e40aab33ff9453a325673e6afa260503e26f09c973694dd37e5428682e1"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-5b7f912406e2d494",
-            "quote": "Dazzle’s AI assistant gets all its context from a single source: your camera roll.",
-            "source_content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-            "quote_hash": "72c06c104e2428e4b0a29adabe9de124b93144ddb24936c43345bd3d3c9cd3e1"
-          },
-          {
-            "source_id": "FISRC-39cbb5f315cdae11",
-            "quote": "Dazzle AI, a new company founded by entrepreneur, executive, and technologist Marissa Mayer",
-            "source_content_hash": "0d32e048dc28b8dd",
-            "quote_hash": "86f87259efece2c22d42aca42b07af6d6e42bfcce315ce99c0967b2ffe978537"
-          }
-        ],
-        "application_entity_id": "EN-e88ecf834fa37e5a",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "种子轮",
-        "amount": "$8 million",
-        "total_raised": "$8 million",
-        "announced_at": "2026-09-29",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Forerunner Ventures",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-39cbb5f315cdae11",
-                "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
-                "source_content_hash": "0d32e048dc28b8dd",
-                "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-8dc8cb3a10f9e5"
-          },
-          {
-            "name": "Kleiner Perkins",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-39cbb5f315cdae11",
-                "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
-                "source_content_hash": "0d32e048dc28b8dd",
-                "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-9eb2439d21a914"
-          },
-          {
-            "name": "Greycroft",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-39cbb5f315cdae11",
-                "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
-                "source_content_hash": "0d32e048dc28b8dd",
-                "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-ac2ec77dd2b7a9"
-          },
-          {
-            "name": "Offline Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-39cbb5f315cdae11",
-                "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
-                "source_content_hash": "0d32e048dc28b8dd",
-                "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-e717478951e8de"
-          },
-          {
-            "name": "Slow Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-39cbb5f315cdae11",
-                "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
-                "source_content_hash": "0d32e048dc28b8dd",
-                "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-a64e4bd80f0236"
-          },
-          {
-            "name": "Bling Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-39cbb5f315cdae11",
-                "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
-                "source_content_hash": "0d32e048dc28b8dd",
-                "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-9c7ade8358497f"
-          }
-        ],
-        "other_round_investors": [
-          {
-            "name": "Amino Capital",
-            "role": "历史轮次或来源未明确本轮参与",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-32ea4009329f1b5b",
-                "quote": "Amino Capital, with deep ties to AI and hardware; and the Acquired Wisdom Fund, which often invests in seasoned founders.",
-                "source_content_hash": "c8f4ab0863cd170c",
-                "quote_hash": "e49ea152a40f80880afdf9a02557128d6ca936f46a33d5296425ed2172eab88c"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-3405a6e4f5ec66"
-          },
-          {
-            "name": "Acquired Wisdom Fund",
-            "role": "历史轮次或来源未明确本轮参与",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-32ea4009329f1b5b",
-                "quote": "Amino Capital, with deep ties to AI and hardware; and the Acquired Wisdom Fund, which often invests in seasoned founders.",
-                "source_content_hash": "c8f4ab0863cd170c",
-                "quote_hash": "e49ea152a40f80880afdf9a02557128d6ca936f46a33d5296425ed2172eab88c"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-b9c236199f5aef"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-5b7f912406e2d494",
-            "quote": "the personal AI assistant that raised an $8 million seed round last December",
-            "source_content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-            "quote_hash": "23af55649123edc752991f7fad2be9734a15a3dd780f734e9508eba747f0134e"
-          },
-          {
-            "source_id": "FISRC-39cbb5f315cdae11",
-            "quote": "Dazzle AI, a new company founded by entrepreneur, executive, and technologist Marissa Mayer, today announced it has raised $8 million in seed funding at a $35 million post-money valuation.",
-            "source_content_hash": "0d32e048dc28b8dd",
-            "quote_hash": "fc7bd6fab34777ed4cadce303ce84e24e63727e56e2cf685b2e2a22815d56850"
-          }
-        ],
-        "round_code": "seed",
-        "round_original": "种子轮",
-        "amount_original": "$8 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 8000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "800 万美元"
-        },
-        "total_raised_original": "$8 million",
-        "total_raised_normalized": {
-          "currency": "USD",
-          "value": 8000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "800 万美元"
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-3b424be9d0d68b87",
-            "round_original": "种子轮",
-            "amount": "$8 million",
-            "announced_at": "2026-09-29",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-5b7f912406e2d494",
-                "quote": "the personal AI assistant that raised an $8 million seed round last December",
-                "source_content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-                "quote_hash": "23af55649123edc752991f7fad2be9734a15a3dd780f734e9508eba747f0134e"
-              },
-              {
-                "source_id": "FISRC-39cbb5f315cdae11",
-                "quote": "Dazzle AI, a new company founded by entrepreneur, executive, and technologist Marissa Mayer, today announced it has raised $8 million in seed funding at a $35 million post-money valuation.",
-                "source_content_hash": "0d32e048dc28b8dd",
-                "quote_hash": "fc7bd6fab34777ed4cadce303ce84e24e63727e56e2cf685b2e2a22815d56850"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed",
-        "cumulative_amount": {
-          "original": "$8 million",
-          "normalized": {
-            "currency": "USD",
-            "value": 8000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "800 万美元"
-          },
-          "basis": "source_disclosed",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": 8000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 1,
-              "status": "exact",
-              "display_zh": "800 万美元"
-            }
-          ],
-          "historical_round_count": 1
-        }
-      },
-      "products": [
-        {
-          "name": "Dazzle",
-          "description": "Dazzle是一款个人AI助手，通过分析用户手机相册中的照片来理解用户的爱好、兴趣、饮食和风格偏好，并提供即时任务处理和个性化建议。用户可以通过应用或短信与Dazzle互动。",
-          "target_customers": "消费者用户",
-          "features": [
-            "从相机胶卷获取全部上下文",
-            "扫描近期照片提取细节，如从活动传单填充日历",
-            "挖掘照片库生成个性化建议，如假期推荐和生日礼物",
-            "通过应用或短信互动",
-            "优先隐私，丢弃AI标记为敏感的个人信息"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5b7f912406e2d494",
-              "quote": "Dazzle’s AI assistant gets all its context from a single source: your camera roll.",
-              "source_content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-              "quote_hash": "72c06c104e2428e4b0a29adabe9de124b93144ddb24936c43345bd3d3c9cd3e1"
-            },
-            {
-              "source_id": "FISRC-5b7f912406e2d494",
-              "quote": "For immediate tasks, it can scan recent photos to pull details — like populating your calendar from an event flyer, or finding a repair person after spotting a broken garage door in your camera roll.",
-              "source_content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-              "quote_hash": "5f0175427fccf81d4518f516b8fb72d1a8bf7e2719954ea14cf15092213d04f0"
-            },
-            {
-              "source_id": "FISRC-5b7f912406e2d494",
-              "quote": "Second, it mines your photo library to come up with personalized ideas for everything from holiday vacations to birthday gifts.",
-              "source_content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-              "quote_hash": "ecc9218a75db5d6992f43b6ff648f4e18778ec809e30101ff6362da3bb50a630"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "Meta Muse",
-          "product": "Muse",
-          "scenario": "从邮件、日历、购物历史等文本密集型应用构建用户上下文",
-          "target_customer": "消费者用户",
-          "funding_summary": "",
-          "core_difference": "Dazzle仅从相机胶卷获取上下文，而Meta Muse从文本密集型应用构建上下文。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5b7f912406e2d494",
-              "quote": "Instead of building context about you from text-heavy apps like email, calendars, and shopping histories, Dazzle’s AI assistant gets all its context from a single source: your camera roll.",
-              "source_content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-              "quote_hash": "c3fc55f43ac39350a6c58f82c68c0931390f4798a6a4f67e682fa491e20c8b6d"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Instinct",
-          "product": "Instinct",
-          "scenario": "AI助手，存在安全顾虑",
-          "target_customer": "消费者用户",
-          "funding_summary": "",
-          "core_difference": "Dazzle强调隐私并丢弃敏感信息，而Instinct存在安全顾虑。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-5b7f912406e2d494",
-              "quote": "Mayer contends that given security concerns with products like Instinct and Muse, users may feel more comfortable handing over their photo libraries to an AI instead of granting it access to sensitive data like emails and messages.",
-              "source_content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-              "quote_hash": "897318379001090a27ca96ca62e08ed7c563c7461fc9060b98edd66ad18e5791"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "种子轮融资金额",
-          "value": "$8 million",
-          "observed_at": "2025-12-23",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-39cbb5f315cdae11",
-              "quote": "has raised $8 million in seed funding at a $35 million post-money valuation",
-              "source_content_hash": "0d32e048dc28b8dd",
-              "quote_hash": "a6be48b51ad1221fccb84099112ce19569ddb310011ce7dc32cd2a867cf07763"
-            }
-          ]
-        },
-        {
-          "label": "投后估值",
-          "value": "$35 million",
-          "observed_at": "2025-12-23",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-39cbb5f315cdae11",
-              "quote": "has raised $8 million in seed funding at a $35 million post-money valuation",
-              "source_content_hash": "0d32e048dc28b8dd",
-              "quote_hash": "a6be48b51ad1221fccb84099112ce19569ddb310011ce7dc32cd2a867cf07763"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Marissa Mayer",
-          "quote": "With Dazzle, our goal is to make AI feel simple, helping people get more done and delighting them along the way.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-39cbb5f315cdae11",
-              "quote": "With Dazzle, our goal is to make AI feel simple, helping people get more done and delighting them along the way.",
-              "source_content_hash": "0d32e048dc28b8dd",
-              "quote_hash": "23fab8e1165697691728d1573d3e53ff4f3466052a8f4db231ef26b11e5a5987"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是玛丽莎·梅耶尔作为连续创业者的产品直觉和消费者AI市场的爆发潜力，而非已验证的用户规模或收入。本轮融资以3500万美元投后估值完成，规模相对克制，反映投资方在梅耶尔前作Sunshine表现不佳后的谨慎乐观。已验证信号仅包括产品Demo展示的个性化建议能力和团队从Sunshine继承的技术IP，尚无公开用户数据或商业指标支撑估值。",
-        "validated_signals": [
-          "产品Demo展示了基于相机胶卷的个性化建议能力，如识别家庭喜欢密室逃脱并推荐旧金山湾区地点",
-          "团队从Sunshine继承了技术IP和原型开发经验"
-        ],
-        "risks": [
-          "前作Sunshine因设计过时、用户采用率低而关闭，梅耶尔的消费者产品执行力存在历史风险",
-          "产品存在盲点，如未能记住用户女儿已会轮滑，个性化准确性有待验证",
-          "消费者AI助手赛道竞争激烈，Meta Muse、Instinct等同类产品已涌入市场"
-        ],
-        "sector": "个人助手与搜索",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是玛丽莎·梅耶尔作为连续创业者的产品直觉和消费者AI市场的爆发潜力，而非已验证的用户规模或收入。本轮融资以3500万美元投后估值完成，规模相对克制，反映投资方在梅耶尔前作Sunshine表现不佳后的谨慎乐观。已验证信号仅包括产品Demo展示的个性化建议能力和团队从Sunshine继承的技术IP，尚无公开用户数据或商业指标支撑估值。",
-          "evidence_signals": [
-            "产品Demo展示了基于相机胶卷的个性化建议能力，如识别家庭喜欢密室逃脱并推荐旧金山湾区地点",
-            "团队从Sunshine继承了技术IP和原型开发经验"
-          ],
-          "risks": [
-            "前作Sunshine因设计过时、用户采用率低而关闭，梅耶尔的消费者产品执行力存在历史风险",
-            "产品存在盲点，如未能记住用户女儿已会轮滑，个性化准确性有待验证",
-            "消费者AI助手赛道竞争激烈，Meta Muse、Instinct等同类产品已涌入市场"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Dazzle",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Marissa Mayer",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Forerunner Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Kleiner Perkins",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Greycroft",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Offline Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Slow Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Bling Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Amino Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Acquired Wisdom Fund",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Meta Muse",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Instinct",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-3b424be9d0d68b87",
-          "date": "2026-09-29",
-          "title": "借助Dazzle，玛丽莎·梅耶尔押注你的相机胶卷比收件箱更能揭示你的生活信息",
-          "amount": "$8 million",
-          "source_refs": [
-            "SA-d8727be6de8ae004"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-5b7f912406e2d494",
-          "source_url": "https://techcrunch.com/2026/09/29/with-dazzle-marissa-mayer-bets-your-camera-roll-has-more-info-on-your-life-than-your-inbox/",
-          "title": "借助Dazzle，玛丽莎·梅耶尔押注你的相机胶卷比收件箱更能揭示你的生活信息",
-          "publisher": "techcrunch.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-01T15:58:53.165Z",
-          "content_hash": "24982ae6f5cbe54bbeff882a9983b83e898785c57a6ea4dabcf95f769bf7a13c",
-          "source_artifact_id": "SA-d8727be6de8ae004",
-          "raw_id": "RAW-76bf7a62bd8fe35f"
-        },
-        {
-          "source_id": "FISRC-32ea4009329f1b5b",
-          "source_url": "https://www.techcompanynews.com/dazzle-ai-raises-8m-in-seed-funding-round/",
-          "title": "Dazzle AI Raises $8M In Seed Funding Round - Tech Company News",
-          "publisher": "techcompanynews.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-01T16:18:32.689Z",
-          "content_hash": "c8f4ab0863cd170c",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-39cbb5f315cdae11",
-          "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
-          "title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
-          "publisher": "financialpost.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-01T16:18:27.403Z",
-          "content_hash": "0d32e048dc28b8dd",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-01T16:18:54.352Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-01T16:18:54.352Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 3
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Dazzle"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Marissa Mayer"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-3b424be9d0d68b87"
-      ],
-      "aggregation": {
-        "key": "EN-e88ecf834fa37e5a|seed|USD:exact:8000000:::|2026-09-29",
-        "event_count": 1,
-        "strategy": "reviewed_company_round_date_and_normalized_amount"
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-78c41d0e7b994533",
-          "event_ids": [
-            "EV-3b424be9d0d68b87"
-          ],
-          "round": "种子轮",
-          "round_code": "seed",
-          "round_original": "种子轮",
-          "amount_original": "$8 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 8000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "800 万美元"
-          },
-          "announced_at": "2026-09-29",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "consumer-software",
-        "name": "消费软件",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "consumer",
-        "name": "消费 AI 应用",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "assistants",
-        "name": "个人助手与搜索",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "",
-        "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-3b424be9d0d68b87"
-      },
-      "translations": {
-        "zh-CN": {
-          "company.headquarters": {
-            "text": "加利福尼亚州帕洛阿尔托",
-            "source_hash": "a7a22f5e9bbe6218cc0252abc79448c0d162c30849efa35b493262d31180d579",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:15.984Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "consumer",
-          "name": "消费 AI 应用"
-        },
-        "subsector": {
-          "id": "assistants",
-          "name": "个人助手与搜索"
-        },
-        "product_form": {
-          "id": "consumer-software",
-          "name": "消费软件"
-        },
-        "customers": [
-          {
-            "id": "consumer",
-            "name": "个人消费者"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-5b7f912406e2d494",
-            "quote": "Dazzle’s AI assistant gets all its context from a single source: your camera roll."
-          },
-          {
-            "source_id": "FISRC-5b7f912406e2d494",
-            "quote": "For immediate tasks, it can scan recent photos to pull details — like populating your calendar from an event flyer, or finding a repair person after spotting a broken garage door in your camera roll."
-          },
-          {
-            "source_id": "FISRC-5b7f912406e2d494",
-            "quote": "Second, it mines your photo library to come up with personalized ideas for everything from holiday vacations to birthday gifts."
-          }
-        ],
-        "rationale": "Dazzle 的 AI 助手以用户相机胶卷为上下文，帮助个人完成日程安排和个性化建议，属于面向个人消费者的助手应用。"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
       "funding_insight_id": "FI-f0238a530754d89c",
       "triggered_by_event_id": "EV-486e6dedee43c0d3",
       "as_of_date": "2026-10-01",
@@ -7666,2573 +6986,6 @@
           }
         ],
         "rationale": "bilt.me 是 AI 原生移动应用构建器，用户用自然语言描述想法即可生成并导出 React Native 代码，属于 AI 编程与软件研发。"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-af15fe671551fc9d",
-      "triggered_by_event_id": "EV-bbea3352983c2033",
-      "as_of_date": "2026-10-01",
-      "company": {
-        "entity_id": "EN-f395aeb2c6e6abc8",
-        "name": "Outmarket AI",
-        "full_name": "Outmarket AI",
-        "website": "https://outmarket.ai",
-        "summary": "Outmarket AI 是专为保险行业打造的领先 AI 平台，面向代理机构提供覆盖商业险、员工福利、个人险和特殊险的智能工作流，将碎片化代理数据转化为可执行的智能流程。",
-        "headquarters": "加利福尼亚州旧金山",
-        "founders": [
-          {
-            "name": "Vishal Sankhla",
-            "role": "CEO兼联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "Vishal Sankhla, CEO and Co-founder of Outmarket AI",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "8863c2378bd8aa22a4608d3be5b16fe122844653fc32fe875d7b23c96c7022fc"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "Anshu Jain",
-            "role": "首席技术官兼联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "Anshu Jain, CTO and Co-founder of Outmarket AI",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "b7e392c97b15eada9576bfcee21fa7d7621dbf3a5c3362c789de4710774acb66"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "40",
-          "observed_at": "2026-05-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-013cf73ce258339a",
-              "quote": "There are 40 of us building Outmarket today.",
-              "source_content_hash": "cff4b8b8e3ac8126",
-              "quote_hash": "fc21d1d2bb93ad38a557a47001380e46f44ec1b12d2eb4e76f95dc5221024838"
-            }
-          ]
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-1a2ad9b1108e3f59",
-            "quote": "Outmarket AI, the leading AI platform purpose-built for insurance",
-            "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-            "quote_hash": "7ebab7aa9e4297bc1f782a72718652c827fd801b1256f43adda1501ec1091b56"
-          }
-        ],
-        "application_entity_id": "EN-f395aeb2c6e6abc8",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "多轮融资",
-        "amount": "$34.5 million",
-        "total_raised": "$56.5 million",
-        "announced_at": "2026-09-28",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "SignalFire",
-            "role": "本轮领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "The round was led by SignalFire , with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital and Dash Fund.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "06f950620cad4aa4ef108047704f480c26b75227cb7b062277c6a078e4a84df3"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-387d9f8fba8498"
-          },
-          {
-            "name": "Fika Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "The round was led by SignalFire , with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital and Dash Fund.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "06f950620cad4aa4ef108047704f480c26b75227cb7b062277c6a078e4a84df3"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-31e3cbb1f52ac1"
-          },
-          {
-            "name": "Permanent Capital Ventures",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "The round was led by SignalFire , with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital and Dash Fund.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "06f950620cad4aa4ef108047704f480c26b75227cb7b062277c6a078e4a84df3"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-23f12aa5642b1c"
-          },
-          {
-            "name": "TTV Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "The round was led by SignalFire , with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital and Dash Fund.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "06f950620cad4aa4ef108047704f480c26b75227cb7b062277c6a078e4a84df3"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-fa9daac2e99c04"
-          },
-          {
-            "name": "Dash Fund",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "The round was led by SignalFire , with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital and Dash Fund.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "06f950620cad4aa4ef108047704f480c26b75227cb7b062277c6a078e4a84df3"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-1d636b76f59ac9"
-          }
-        ],
-        "other_round_investors": [
-          {
-            "name": "Permanent Capital Ventures",
-            "role": "Series A 领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-013cf73ce258339a",
-                "quote": "The round was led by Permanent Capital Ventures , with participation from SignalFire , Fika Ventures , TTV Capital , Dash Fund and senior industry executives.",
-                "source_content_hash": "cff4b8b8e3ac8126",
-                "quote_hash": "149722d17e69033e328d644a3c1523512ae8c7e3fb175bb7fed2c6a3e5a4107b"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-23f12aa5642b1c"
-          },
-          {
-            "name": "SignalFire",
-            "role": "Series A 参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-013cf73ce258339a",
-                "quote": "The round was led by Permanent Capital Ventures , with participation from SignalFire , Fika Ventures , TTV Capital , Dash Fund and senior industry executives.",
-                "source_content_hash": "cff4b8b8e3ac8126",
-                "quote_hash": "149722d17e69033e328d644a3c1523512ae8c7e3fb175bb7fed2c6a3e5a4107b"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-387d9f8fba8498"
-          },
-          {
-            "name": "Fika Ventures",
-            "role": "Series A 参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-013cf73ce258339a",
-                "quote": "The round was led by Permanent Capital Ventures , with participation from SignalFire , Fika Ventures , TTV Capital , Dash Fund and senior industry executives.",
-                "source_content_hash": "cff4b8b8e3ac8126",
-                "quote_hash": "149722d17e69033e328d644a3c1523512ae8c7e3fb175bb7fed2c6a3e5a4107b"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-31e3cbb1f52ac1"
-          },
-          {
-            "name": "TTV Capital",
-            "role": "Series A 参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-013cf73ce258339a",
-                "quote": "The round was led by Permanent Capital Ventures , with participation from SignalFire , Fika Ventures , TTV Capital , Dash Fund and senior industry executives.",
-                "source_content_hash": "cff4b8b8e3ac8126",
-                "quote_hash": "149722d17e69033e328d644a3c1523512ae8c7e3fb175bb7fed2c6a3e5a4107b"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-fa9daac2e99c04"
-          },
-          {
-            "name": "Dash Fund",
-            "role": "Series A 参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-013cf73ce258339a",
-                "quote": "The round was led by Permanent Capital Ventures , with participation from SignalFire , Fika Ventures , TTV Capital , Dash Fund and senior industry executives.",
-                "source_content_hash": "cff4b8b8e3ac8126",
-                "quote_hash": "149722d17e69033e328d644a3c1523512ae8c7e3fb175bb7fed2c6a3e5a4107b"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-1d636b76f59ac9"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-1a2ad9b1108e3f59",
-            "quote": "SAN FRANCISCO , Sept. 25, 2026 /PRNewswire/ -- Outmarket AI, the leading AI platform purpose-built for insurance, today announced it has raised $34.5 million in Series B funding. The round was led by SignalFire , with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital and Dash Fund. Coming just a few months after the company announced a $17 million Series A, the latest investment brings Outmarket's total funding to $56.5 million.",
-            "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-            "quote_hash": "0230c1990c4a3e8df0481d8c35dea8ed0b2c3ea4c3b7738b7ff19d81b88fe229"
-          },
-          {
-            "source_id": "FISRC-1a2ad9b1108e3f59",
-            "quote": "Outmarket AI, the leading AI platform purpose-built for insurance, today announced it has raised $34.5 million in Series B funding.",
-            "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-            "quote_hash": "a8a5952e02082b4fc2e2842ce5f36cd761e4b018e230e0d92f61acadf95ee5db"
-          },
-          {
-            "source_id": "FISRC-1a2ad9b1108e3f59",
-            "quote": "Coming just a few months after the company announced a $17 million Series A, the latest investment brings Outmarket's total funding to $56.5 million.",
-            "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-            "quote_hash": "26055b490b235dffde1de4275cf3440023de980cec5e06e0ede746b4ac92bb36"
-          }
-        ],
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "$34.5 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 34500000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3450 万美元"
-        },
-        "total_raised_original": "$56.5 million",
-        "total_raised_normalized": {
-          "currency": "USD",
-          "value": 56500000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "5650 万美元"
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-bbea3352983c2033",
-            "round_original": "多轮融资",
-            "amount": "$34.5 million",
-            "announced_at": "2026-09-28",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "SAN FRANCISCO , Sept. 25, 2026 /PRNewswire/ -- Outmarket AI, the leading AI platform purpose-built for insurance, today announced it has raised $34.5 million in Series B funding. The round was led by SignalFire , with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital and Dash Fund. Coming just a few months after the company announced a $17 million Series A, the latest investment brings Outmarket's total funding to $56.5 million.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "0230c1990c4a3e8df0481d8c35dea8ed0b2c3ea4c3b7738b7ff19d81b88fe229"
-              },
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "Outmarket AI, the leading AI platform purpose-built for insurance, today announced it has raised $34.5 million in Series B funding.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "a8a5952e02082b4fc2e2842ce5f36cd761e4b018e230e0d92f61acadf95ee5db"
-              },
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "Coming just a few months after the company announced a $17 million Series A, the latest investment brings Outmarket's total funding to $56.5 million.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "26055b490b235dffde1de4275cf3440023de980cec5e06e0ede746b4ac92bb36"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed",
-        "cumulative_amount": {
-          "original": "$56.5 million",
-          "normalized": {
-            "currency": "USD",
-            "value": 56500000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "5650 万美元"
-          },
-          "basis": "source_disclosed",
-          "known_round_totals": [],
-          "historical_round_count": 1
-        }
-      },
-      "products": [
-        {
-          "name": "Outmarket AI Platform",
-          "description": "面向保险代理机构的端到端 AI 平台，连接代理管理系统（AMS），自动化商业险、员工福利、个人险和特殊险的复杂高价值流程，包括报价比较、保单审查、续保比较、保障缺口分析、塔式分析、理赔拒赔挑战和损失记录提取。",
-          "target_customers": "保险代理机构和经纪公司",
-          "features": [
-            "Proposal Builder",
-            "Coverage Gap Analyzer",
-            "Loss Run Extraction and Analysis",
-            "Certificates of Insurance Workflow",
-            "Custom Workflow Builder",
-            "Data Intelligence Platform",
-            "与Applied Epic、Vertafore AMS360、ImageRight、HawkSoft和Nexsure的深度AMS集成"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a2ad9b1108e3f59",
-              "quote": "Outmarket's comprehensive platform connects directly to agency management systems (AMS) automating complex, high-stakes processes across commercial, benefits, personal lines, and specialty insurance.",
-              "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-              "quote_hash": "7a24391bfae2591ecc190596c02c20f327b58ab476292e72b92442af09ca216c"
-            },
-            {
-              "source_id": "FISRC-013cf73ce258339a",
-              "quote": "We now run production workflows across Commercial Lines, Benefits, and Personal Lines, covering the work that fills the day in any agency. Quote comparison, policy review, renewal comparison, coverage gap analysis, tower analysis, claim denial challenges, and loss runs extraction across every major carrier format.",
-              "source_content_hash": "cff4b8b8e3ac8126",
-              "quote_hash": "9ffe145430d9fa09896ff1478015f862f6fa5459bbb0f5ed9ba6e11ab7895929"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [
-        {
-          "name": "Moody Insurance Agency",
-          "industry": "保险代理",
-          "use_case": "提案生成、保障缺口分析、损失记录摘要",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8696f29079d3ec4b",
-              "quote": "Company : Moody Insurance Agency",
-              "source_content_hash": "16aa1c4f84fb1286",
-              "quote_hash": "01de23d50865094b241204fe44c708078500ff4c6c61bc5e2be7ab9611da84c2"
-            },
-            {
-              "source_id": "FISRC-8696f29079d3ec4b",
-              "quote": "Proposal Generation : Moody Insurance utilizes Outmarket to cut proposal creation down from multiple hours to as little as 30 minutes.",
-              "source_content_hash": "16aa1c4f84fb1286",
-              "quote_hash": "6a16c8fe9480d08b9ff1f5a669b140353af7abc8d590b6f1097d2750cbbdffe6"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "comparisons": [],
-      "metrics": [
-        {
-          "label": "活跃用户数",
-          "value": "超过 10,000",
-          "observed_at": "2026-09-25",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a2ad9b1108e3f59",
-              "quote": "The platform has scaled at a record pace, recently surpassing 10,000 active users.",
-              "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-              "quote_hash": "d26de963d8b6797bdce0d1f60df9987fb45c9a4dcdeabdd5ecf358aa4644d44b"
-            }
-          ]
-        },
-        {
-          "label": "代理机构客户数",
-          "value": "超过 300 家",
-          "observed_at": "2026-09-25",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a2ad9b1108e3f59",
-              "quote": "Today, over 300 agency customers, including over 25% of the Top 100 insurance agencies, rely on Outmarket daily to transform fragmented agency data into intelligent workflows.",
-              "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-              "quote_hash": "74d9345921a151f7b5191757e559b64269527467fff73cf17094e354b8ab1de8"
-            }
-          ]
-        },
-        {
-          "label": "Top 100 保险代理机构覆盖率",
-          "value": "超过 25%",
-          "observed_at": "2026-09-25",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a2ad9b1108e3f59",
-              "quote": "including over 25% of the Top 100 insurance agencies",
-              "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-              "quote_hash": "62809496390657797770d7388435af1370c01bc6029cc2598ee86c07274496c7"
-            }
-          ]
-        },
-        {
-          "label": "提案创建时间缩短",
-          "value": "从 3-4 小时降至 30-60 分钟",
-          "observed_at": "2026-07-10",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8696f29079d3ec4b",
-              "quote": "3 to 4 hours down to 30 to 60 minutes : The reduction in time spent creating large proposals.",
-              "source_content_hash": "16aa1c4f84fb1286",
-              "quote_hash": "54a6cacd5415b7a0f92ba887b87b415f01ed9191509f5f86fb7f53145dcef1fa"
-            }
-          ]
-        },
-        {
-          "label": "每周节省时间",
-          "value": "12 至 15 小时",
-          "observed_at": "2026-05-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-013cf73ce258339a",
-              "quote": "Outmarket in its early releases gave producers and account managers 12 to 15 hours back per week.",
-              "source_content_hash": "cff4b8b8e3ac8126",
-              "quote_hash": "cbec0522fd9a1a8ceeeb98366e4570c1f43f3eced2930333733296a993185104"
-            }
-          ]
-        },
-        {
-          "label": "E&O 错误削减",
-          "value": "最高 70%",
-          "observed_at": "2026-05-13",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-013cf73ce258339a",
-              "quote": "It cuts E&O errors by up to 70%.",
-              "source_content_hash": "cff4b8b8e3ac8126",
-              "quote_hash": "14b118e4a49b323487527a6180d9e2bcbeb28e7ac9e70bf47e02819cfe76f518"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Vishal Sankhla",
-          "quote": "Agencies don't want another point solution. They want an intelligence layer that understands their data and does the work.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a2ad9b1108e3f59",
-              "quote": "Agencies don't want another point solution. They want an intelligence layer that understands their data and does the work.",
-              "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-              "quote_hash": "5815bb50a6212e70a658f0969f07b49088fd5b53afad76940d7529666b8958db"
-            }
-          ]
-        },
-        {
-          "speaker": "Anshu Jain",
-          "quote": "Our architecture unifies structured and unstructured data so insurance professionals can execute workflows grounded in their actual policies, contracts and client records.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a2ad9b1108e3f59",
-              "quote": "Our architecture unifies structured and unstructured data so insurance professionals can execute workflows grounded in their actual policies, contracts and client records.",
-              "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-              "quote_hash": "ebf340d642a906b9c096e1e71b18f1b49964f7ed2e574118f86ade04be61b66e"
-            }
-          ]
-        },
-        {
-          "speaker": "Tony Pezzullo",
-          "quote": "Outmarket isn't just riding the AI wave; they are the undisputed market leaders setting the standard for how agencies will operate in the intelligence era.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-1a2ad9b1108e3f59",
-              "quote": "Outmarket isn't just riding the AI wave; they are the undisputed market leaders setting the standard for how agencies will operate in the intelligence era.",
-              "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-              "quote_hash": "c9e2571d01241c1c85e801948e3be91336a81150086d66d333632a80951e11bc"
-            }
-          ]
-        },
-        {
-          "speaker": "Troy Moody",
-          "quote": "So being a mid-sized broker, Outmarket's given us the ability to just level the playing field a little bit with the national brokers.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-8696f29079d3ec4b",
-              "quote": "So being a mid-sized broker, Outmarket's given us the ability to just level the playing field a little bit with the national brokers.",
-              "source_content_hash": "16aa1c4f84fb1286",
-              "quote_hash": "5c69cbd7135866faa41f218333670f941df193b0ed4359c8f73d28f4f9c3131b"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [
-          {
-            "institution": "SignalFire",
-            "speaker": "Tony Pezzullo",
-            "speaker_role": "Partner at SignalFire",
-            "rationale": "SignalFire 认为 Outmarket 在短时间内获取大量市场份额是罕见成就，尤其在保险这样复杂的垂直领域，并视其为无可争议的市场领导者，正在为代理机构在智能时代的运营设定标准。",
-            "quote": "To capture this much market share in such a short window is a rare achievement, and even rarer in a complex vertical like insurance. Outmarket isn't just riding the AI wave; they are the undisputed market leaders setting the standard for how agencies will operate in the intelligence era. We are thrilled to lead this Series B and double down on their vision.",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-1a2ad9b1108e3f59",
-                "quote": "To capture this much market share in such a short window is a rare achievement, and even rarer in a complex vertical like insurance. Outmarket isn't just riding the AI wave; they are the undisputed market leaders setting the standard for how agencies will operate in the intelligence era. We are thrilled to lead this Series B and double down on their vision.",
-                "source_content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-                "quote_hash": "abfb8b62f3e4bf207489e55357bb6cbb35b77e3c7a5c6424367bf4cb468f2f9e"
-              }
-            ]
-          }
-        ],
-        "capital_judgment": "资本押注的核心变量是 Outmarket 在保险代理机构这一垂直场景中的渗透速度和平台化能力：在 Series A 后仅数月即完成 B 轮，且已覆盖超过 300 家代理机构客户、超过 25% 的 Top 100 保险代理机构，活跃用户突破 10,000。已验证信号包括客户规模快速扩张、头部代理机构采用率、以及从单点工具向端到端智能工作流平台的演进。证据边界在于：来源未披露估值、收入或合同金额，客户留存率和付费转化率未被独立验证，且 Moody Insurance 案例为单一客户自述，不能代表整体客户经济性。",
-        "validated_signals": [
-          "超过 300 家代理机构客户，包括超过 25% 的 Top 100 保险代理机构",
-          "活跃用户超过 10,000",
-          "Series A 后仅数月即完成 Series B，累计融资达 5650 万美元",
-          "平台覆盖商业险、员工福利、个人险和特殊险的端到端工作流"
-        ],
-        "risks": [
-          "来源未披露收入、合同金额或客户留存率，无法验证商业化质量",
-          "客户案例仅来自单一代理机构自述，缺乏独立第三方验证",
-          "保险行业垂直 AI 竞争激烈，来源未提供与具体竞品的可验证差异数据"
-        ],
-        "sector": "金融与保险",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是 Outmarket 在保险代理机构这一垂直场景中的渗透速度和平台化能力：在 Series A 后仅数月即完成 B 轮，且已覆盖超过 300 家代理机构客户、超过 25% 的 Top 100 保险代理机构，活跃用户突破 10,000。已验证信号包括客户规模快速扩张、头部代理机构采用率、以及从单点工具向端到端智能工作流平台的演进。证据边界在于：来源未披露估值、收入或合同金额，客户留存率和付费转化率未被独立验证，且 Moody Insurance 案例为单一客户自述，不能代表整体客户经济性。",
-          "evidence_signals": [
-            "超过 300 家代理机构客户，包括超过 25% 的 Top 100 保险代理机构",
-            "活跃用户超过 10,000",
-            "Series A 后仅数月即完成 Series B，累计融资达 5650 万美元",
-            "平台覆盖商业险、员工福利、个人险和特殊险的端到端工作流"
-          ],
-          "risks": [
-            "来源未披露收入、合同金额或客户留存率，无法验证商业化质量",
-            "客户案例仅来自单一代理机构自述，缺乏独立第三方验证",
-            "保险行业垂直 AI 竞争激烈，来源未提供与具体竞品的可验证差异数据"
-          ],
-          "institutional_rationale_status": "disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Outmarket AI Platform",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Vishal Sankhla",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Anshu Jain",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "SignalFire",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Fika Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Permanent Capital Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "TTV Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Dash Fund",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Permanent Capital Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "SignalFire",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Fika Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "TTV Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Dash Fund",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Moody Insurance Agency",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-bbea3352983c2033",
-          "date": "2026-09-28",
-          "title": "Outmarket AI 完成 3450 万美元 B 轮融资，以巩固其作为保险业排名第 1 的 AI 平台地位",
-          "amount": "$34.5 million",
-          "source_refs": [
-            "SA-35402e7ca0d27d49"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-1a2ad9b1108e3f59",
-          "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
-          "title": "Outmarket AI 完成 3450 万美元 B 轮融资，以巩固其作为保险业排名第 1 的 AI 平台地位",
-          "publisher": "www.prnewswire.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-01T16:00:30.273Z",
-          "content_hash": "9671d840c5667957586e002c145d571f25305faf7ac6f96e03fc097ae6cd23ce",
-          "source_artifact_id": "SA-35402e7ca0d27d49",
-          "raw_id": "RAW-acf894d968f46840"
-        },
-        {
-          "source_id": "FISRC-013cf73ce258339a",
-          "source_url": "https://outmarket.ai/blog/why-we-bet-on-insurance-and-why-the-industry-bet-on-us",
-          "title": "Why We Bet on Insurance, and Why the Industry Bet on Us. | Outmarket Blog",
-          "publisher": "outmarket.ai",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-01T16:21:11.327Z",
-          "content_hash": "cff4b8b8e3ac8126",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-8696f29079d3ec4b",
-          "source_url": "https://outmarket.ai/blog/how-moody-insurance-agency-uses-outmarket-ai-to-level-the-playing-field-streamline-proposals-and-enhance-client-consulting",
-          "title": "How Moody Insurance Agency Uses Outmarket AI to Level the Playing Field, Streamline Proposals, and Enhance Client Consulting | Outmarket Blog",
-          "publisher": "outmarket.ai",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-01T16:21:13.595Z",
-          "content_hash": "16aa1c4f84fb1286",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-01T16:21:52.972Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-01T16:21:52.972Z",
-      "customer_research": {
-        "status": "verified_customers_found",
-        "verified_customer_count": 1,
-        "searched_source_count": 3
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Outmarket AI Platform"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "Anshu Jain",
-            "Vishal Sankhla"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-bbea3352983c2033"
-      ],
-      "aggregation": {
-        "key": "EN-f395aeb2c6e6abc8|multi_round|USD:exact:34500000:::|2026-09-28",
-        "event_count": 1,
-        "strategy": "reviewed_company_round_date_and_normalized_amount"
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-af15fe671551fc9d",
-          "event_ids": [
-            "EV-bbea3352983c2033"
-          ],
-          "round": "多轮融资",
-          "round_code": "multi_round",
-          "round_original": "多轮融资",
-          "amount_original": "$34.5 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 34500000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3450 万美元"
-          },
-          "announced_at": "2026-09-28",
-          "disclosure_status": "disclosed",
-          "is_summary": true,
-          "counts_toward_known_total": false,
-          "is_current": true
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "enterprise-software",
-        "name": "企业软件",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "industry",
-        "name": "行业 AI",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "financial-services",
-        "name": "金融与保险",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "",
-        "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-bbea3352983c2033"
-      },
-      "translations": {
-        "zh-CN": {
-          "company.headquarters": {
-            "text": "加利福尼亚州旧金山",
-            "source_hash": "9d85ab74fba701098c62128d58852747b5b0190af500b34a715fc425540522a1",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:24.870Z",
-            "status": "translated"
-          },
-          "company.founders[0].role": {
-            "text": "CEO兼联合创始人",
-            "source_hash": "36a1f17142152f5fcd8ca57e111c8000da2a64719a716de2c2e69d07cbc93c2c",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:24.870Z",
-            "status": "translated"
-          },
-          "company.founders[1].role": {
-            "text": "首席技术官兼联合创始人",
-            "source_hash": "6b3ee5912a42fa2fdffa73e653890377a5e6cbff86e87201aecd59abd5bd5290",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:38.990Z",
-            "status": "translated"
-          },
-          "financing.other_round_investors[0].role": {
-            "text": "Series A 领投",
-            "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:28:16.913Z",
-            "status": "translated"
-          },
-          "financing.other_round_investors[1].role": {
-            "text": "Series A 参投",
-            "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:28:18.725Z",
-            "status": "translated"
-          },
-          "financing.other_round_investors[2].role": {
-            "text": "Series A 参投",
-            "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:28:18.725Z",
-            "status": "translated"
-          },
-          "financing.other_round_investors[3].role": {
-            "text": "Series A 参投",
-            "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:28:18.725Z",
-            "status": "translated"
-          },
-          "financing.other_round_investors[4].role": {
-            "text": "Series A 参投",
-            "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:28:18.725Z",
-            "status": "translated"
-          },
-          "products[0].features[6]": {
-            "text": "与Applied Epic、Vertafore AMS360、ImageRight、HawkSoft和Nexsure的深度AMS集成",
-            "source_hash": "ef154ada032d9477d0c14ea67f4fde87ddbaf9934d153eb50dc0c0d3418fee94",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:28:18.725Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "industry",
-          "name": "行业 AI"
-        },
-        "subsector": {
-          "id": "financial-services",
-          "name": "金融与保险"
-        },
-        "product_form": {
-          "id": "enterprise-software",
-          "name": "企业软件"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-1a2ad9b1108e3f59",
-            "quote": "Outmarket AI, the leading AI platform purpose-built for insurance"
-          },
-          {
-            "source_id": "FISRC-1a2ad9b1108e3f59",
-            "quote": "Outmarket's comprehensive platform connects directly to agency management systems (AMS) automating complex, high-stakes processes across commercial, benefits, personal lines, and specialty insurance."
-          },
-          {
-            "source_id": "FISRC-013cf73ce258339a",
-            "quote": "We now run production workflows across Commercial Lines, Benefits, and Personal Lines, covering the work that fills the day in any agency. Quote comparison, policy review, renewal comparison, coverage gap analysis, tower analysis, claim denial challenges, and loss runs extraction across every major carrier format."
-          }
-        ],
-        "rationale": "Outmarket AI 是专为保险行业打造的 AI 平台，直接连接代理管理系统并自动化保险业务流程，属于行业 AI 中的金融与保险细分。"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-41853e1ae903d50f",
-      "triggered_by_event_id": "EV-34f58445170831ae",
-      "as_of_date": "2026-10-01",
-      "company": {
-        "entity_id": "EN-7331374f7091259f",
-        "name": "Snorkel AI",
-        "full_name": "Snorkel AI",
-        "website": "https://snorkel.ai/",
-        "summary": "Snorkel AI是一家从斯坦福大学AI实验室分拆出来的前沿AI数据公司，最初向企业销售AI标注软件，2025年起直接向AI公司销售训练数据，提供专家数据开发、强化学习环境和评测框架。",
-        "headquarters": "Redwood City, California",
-        "founders": [
-          {
-            "name": "亚历克斯·拉特纳（Alex Ratner）",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d170bde1bb3d412c",
-                "quote": "2015年，亚历克斯·拉特纳（Alex Ratner）还在斯坦福读计算机博士。",
-                "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-                "quote_hash": "923df079f3510dedc9666e19b93c4d8fb57fd4588a009f9eff514a868418531c"
-              }
-            ],
-            "entity_id": null
-          },
-          {
-            "name": "克里斯托弗·雷（Christopher Ré）",
-            "role": "联合创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d170bde1bb3d412c",
-                "quote": "雷也成了Snorkel的联合创始人。",
-                "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-                "quote_hash": "6b50f4c1a90959e068222b2cb537854738cfa3ab8e30e116d78ea85c61e4b427"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-d170bde1bb3d412c",
-            "quote": "它叫Snorkel AI。过去主要卖AI标注软件，2025年开始，它直接向AI公司卖训练数据。",
-            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-            "quote_hash": "5ef539ea10e6dcc7c20c3d49ea8a44df79ce4306d1e4263fbc92f63607abbe83"
-          },
-          {
-            "source_id": "FISRC-6dd774496b50aaac",
-            "quote": "Snorkel AI is a Redwood City, California-based enterprise AI company founded in 2019 by Stanford AI Lab alumni Alexander Ratner, Christopher Ré, Braden Hancock, Henry Ehrenberg, and Paroma Varma.",
-            "source_content_hash": "fc35ad6f0d7ac53d",
-            "quote_hash": "cf5f3c694faa4c16076c654427a216373ed3a60a92884ba46f91a59859d519a7"
-          }
-        ],
-        "application_entity_id": "EN-7331374f7091259f",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "E轮",
-        "amount": "3.5亿美元",
-        "total_raised": "",
-        "announced_at": "2026-09-28",
-        "investor_disclosure_status": "not_disclosed",
-        "investors": [],
-        "other_round_investors": [
-          {
-            "name": "Addition",
-            "role": "历史轮次领投方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6dd774496b50aaac",
-                "quote": "Addition Details : New York-based venture capital firm; led both the Series C and Series D rounds.",
-                "source_content_hash": "fc35ad6f0d7ac53d",
-                "quote_hash": "b31cb85a34c52d3347641c50897a43ec64837f9979d1b158b0bc6b86c4d9bddc"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-668e4f675444bd"
-          },
-          {
-            "name": "Greylock",
-            "role": "历史轮次投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6dd774496b50aaac",
-                "quote": "Greylock Details : Prominent Silicon Valley VC firm and early backer since Snorkel AI's seed/Series A.",
-                "source_content_hash": "fc35ad6f0d7ac53d",
-                "quote_hash": "607fc14ec1187b71090be8b234e258bae53f648c6d820c3ff9c87bd13161d5fe"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-f6da221585bf1b"
-          },
-          {
-            "name": "Lightspeed Venture Partners",
-            "role": "历史轮次领投方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6dd774496b50aaac",
-                "quote": "Lightspeed Venture Partners Details : Led the Series B in April 2021 via partners Ravi Mhatre and Raviraj Jain; continued participating in subsequent rounds.",
-                "source_content_hash": "fc35ad6f0d7ac53d",
-                "quote_hash": "9fe396234c754ea1963b02734fa72831f04a91b550d2241ece5d9779304db2bb"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-1528b125301283"
-          },
-          {
-            "name": "BlackRock",
-            "role": "历史轮次联合领投方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6dd774496b50aaac",
-                "quote": "BlackRock Details : Global asset management firm; co-led the Series C alongside Addition, and participated in the Series B.",
-                "source_content_hash": "fc35ad6f0d7ac53d",
-                "quote_hash": "ee97da18baec35986392ca03143211bf9e04651c135abfd8ad9013c7b5af61e4"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-a83f8b9c272b41"
-          },
-          {
-            "name": "GV (Google Ventures)",
-            "role": "历史轮次投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6dd774496b50aaac",
-                "quote": "GV (Google Ventures) Details : Venture arm of Alphabet; participated from the Seed/Series A through the Series C.",
-                "source_content_hash": "fc35ad6f0d7ac53d",
-                "quote_hash": "6ae0e56e713a0c65c520ca11fd5d89f257dd54dedcce3cc8ad83e873d01209c2"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-b269962085f8f8"
-          },
-          {
-            "name": "Accenture Ventures",
-            "role": "历史轮次战略投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6dd774496b50aaac",
-                "quote": "Accenture Ventures Details : Strategic arm of Accenture; made an undisclosed strategic investment in August 2025, with Snorkel AI joining Accenture Ventures' Project Spotlight accelerator program.",
-                "source_content_hash": "fc35ad6f0d7ac53d",
-                "quote_hash": "23c9d47b8d4ce952c43af57296f5aad6ea6bf622ad046d7eae9e5fef29e27f6d"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-8bf2c85d319690"
-          },
-          {
-            "name": "QBE Ventures",
-            "role": "历史轮次战略投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6dd774496b50aaac",
-                "quote": "QBE Ventures Details : Venture arm of insurance group QBE; made an undisclosed strategic investment in January 2024 and participated in the Series D in May 2025.",
-                "source_content_hash": "fc35ad6f0d7ac53d",
-                "quote_hash": "5f4b8ee6f31b836ebc721c0960c6b4d13dd7f75744adfe6d63b1108ecde941ff"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-bfdaaf946f0177"
-          },
-          {
-            "name": "In-Q-Tel",
-            "role": "历史轮次投资方",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6dd774496b50aaac",
-                "quote": "In-Q-Tel Details : US government-affiliated strategic investor; participated from the Seed round through the Series B, reflecting Snorkel AI's relevance to federal and defense applications.",
-                "source_content_hash": "fc35ad6f0d7ac53d",
-                "quote_hash": "7c9bcdef6b247085bc0cd454ad197ee957709df01475471bd40ee796367db5bb"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-66d65e26e806e3"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-d170bde1bb3d412c",
-            "quote": "9月22日，又完成3.5亿美元（约合人民币23.5亿元）E轮融资，估值达到35亿美元（约合人民币235亿元）。",
-            "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-            "quote_hash": "b7e77b37f6d6d7b2e6bb56c7384f1681c3fe3dc22a72dcf6ca5d90356c761710"
-          },
-          {
-            "source_id": "FISRC-9809aaa38bffa1ce",
-            "quote": "Snorkel AI 完成 3.5 亿美元融资，估值达 35 亿美元，持续发展其数据即服务模式，市场对 AI 训练数据需求强劲。",
-            "source_content_hash": "96db844d79ed71b6",
-            "quote_hash": "98a06fa58f54fa4633aebd7cd35f8ad15dd92da00873cfe5c799f048c5df37a8"
-          }
-        ],
-        "round_code": "series_e",
-        "round_original": "E轮",
-        "amount_original": "3.5亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 350000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3.5 亿美元"
-        },
-        "total_raised_original": "",
-        "total_raised_normalized": {
-          "currency": "",
-          "value": null,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "undisclosed",
-          "display_zh": ""
-        },
-        "risk_markers": [
-          "investors_missing"
-        ],
-        "disclosures": [
-          {
-            "event_id": "EV-34f58445170831ae",
-            "round_original": "E轮",
-            "amount": "3.5亿美元",
-            "announced_at": "2026-09-28",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-d170bde1bb3d412c",
-                "quote": "9月22日，又完成3.5亿美元（约合人民币23.5亿元）E轮融资，估值达到35亿美元（约合人民币235亿元）。",
-                "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-                "quote_hash": "b7e77b37f6d6d7b2e6bb56c7384f1681c3fe3dc22a72dcf6ca5d90356c761710"
-              },
-              {
-                "source_id": "FISRC-9809aaa38bffa1ce",
-                "quote": "Snorkel AI 完成 3.5 亿美元融资，估值达 35 亿美元，持续发展其数据即服务模式，市场对 AI 训练数据需求强劲。",
-                "source_content_hash": "96db844d79ed71b6",
-                "quote_hash": "98a06fa58f54fa4633aebd7cd35f8ad15dd92da00873cfe5c799f048c5df37a8"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "partially_disclosed",
-        "cumulative_amount": {
-          "original": "",
-          "normalized": {
-            "currency": "",
-            "value": null,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "undisclosed",
-            "display_zh": ""
-          },
-          "basis": "known_rounds_only",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": 700000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 2,
-              "status": "exact",
-              "display_zh": "7 亿美元"
-            }
-          ],
-          "historical_round_count": 2
-        }
-      },
-      "products": [
-        {
-          "name": "Snorkel Flow",
-          "description": "帮助企业客户自己生产、整理和管理训练数据的软件平台。",
-          "target_customers": "企业客户，包括谷歌等大型企业",
-          "features": [
-            "程序化数据标注",
-            "训练数据生产与管理"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "公司最初把这套技术做成软件卖给企业，核心产品Snorkel Flow帮助谷歌等客户自己生产、整理和管理训练数据。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "95b431c2284c5d530f818158954834bff29303a81d2e83e5a4f118c6534262ed"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "数据即服务（Data-as-a-Service）",
-          "description": "直接向AI公司交付可用于训练的数据和强化学习环境，由Snorkel负责找专家、设计任务、写评分标准、做质量检查。",
-          "target_customers": "前沿AI实验室、云厂商、大型企业和美国政府",
-          "features": [
-            "专家网络组织",
-            "复杂训练任务设计",
-            "评分标准与质量检查",
-            "强化学习环境交付"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "公司负责找专家、设计任务、写评分标准、做质量检查，最后交付可以直接拿去训练的数据和强化学习环境。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "41560319a79e9810c620995558f0039a1c9eab9a22fb67098c64cb71ff761d97"
-            },
-            {
-              "source_id": "FISRC-48572607288dbaa5",
-              "quote": "Learn how Snorkel’s Data-as-a-Service helps teams label, refine, and evaluate high-quality, domain-specific datasets for your projects.",
-              "source_content_hash": "3a2bb297c422a1e0",
-              "quote_hash": "02ee17d83938164cf98b9f9485a013f6fc40a6c5ce51fae8d6079ebbc9f679aa"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [
-        {
-          "name": "谷歌",
-          "industry": "科技",
-          "use_case": "使用Snorkel Flow生产、整理和管理训练数据",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "核心产品Snorkel Flow帮助谷歌等客户自己生产、整理和管理训练数据。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "bb09eea9ebf5a34819e805e40e4a46d90d264a13370becddf59d97a43ac442e1"
-            }
-          ],
-          "entity_id": "EN-bbdefa2950f49882"
-        },
-        {
-          "name": "BNY",
-          "industry": "金融服务",
-          "use_case": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6dd774496b50aaac",
-              "quote": "Notable customers include BNY, Wayfair, Chubb, the U.S. Air Force, and other Fortune 500 companies and government agencies.",
-              "source_content_hash": "fc35ad6f0d7ac53d",
-              "quote_hash": "ec22b325d9298074141d1fdebbc92bb7eb9a67af5eff599a703ab9301adfb075"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Wayfair",
-          "industry": "零售电商",
-          "use_case": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6dd774496b50aaac",
-              "quote": "Notable customers include BNY, Wayfair, Chubb, the U.S. Air Force, and other Fortune 500 companies and government agencies.",
-              "source_content_hash": "fc35ad6f0d7ac53d",
-              "quote_hash": "ec22b325d9298074141d1fdebbc92bb7eb9a67af5eff599a703ab9301adfb075"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Chubb",
-          "industry": "金融服务",
-          "use_case": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6dd774496b50aaac",
-              "quote": "Notable customers include BNY, Wayfair, Chubb, the U.S. Air Force, and other Fortune 500 companies and government agencies.",
-              "source_content_hash": "fc35ad6f0d7ac53d",
-              "quote_hash": "ec22b325d9298074141d1fdebbc92bb7eb9a67af5eff599a703ab9301adfb075"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "美国空军",
-          "industry": "政府与公共部门",
-          "use_case": "",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6dd774496b50aaac",
-              "quote": "Notable customers include BNY, Wayfair, Chubb, the U.S. Air Force, and other Fortune 500 companies and government agencies.",
-              "source_content_hash": "fc35ad6f0d7ac53d",
-              "quote_hash": "ec22b325d9298074141d1fdebbc92bb7eb9a67af5eff599a703ab9301adfb075"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "comparisons": [
-        {
-          "name": "Micro1",
-          "product": "AI训练数据服务",
-          "scenario": "组织医生、律师、科学家等专业人士为AI公司生产训练数据",
-          "target_customer": "AI公司",
-          "funding_summary": "",
-          "core_difference": "Micro1最初做AI招聘，后来发现数据客户通过其平台寻找工程师做模型训练任务，直接进入AI数据业务；Snorkel最初做AI标注软件，2025年起直接向AI公司卖训练数据。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "比如Micro1，它最初做AI招聘。后来公司发现，数据客户正在通过它的平台寻找工程师，让这些工程师给模型做训练任务，于是直接进入AI数据业务。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "9fff6fc9c672ec4874f5a4f3b6dc0c6471356643f77b4ae141d7ee47d9d062b3"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Handshake",
-          "product": "高校人才网络训练数据服务",
-          "scenario": "利用高校人才网络让律师检查法律回答、医生判断医学推理、博士设计专业难题",
-          "target_customer": "AI公司",
-          "funding_summary": "",
-          "core_difference": "Handshake做了十多年美国高校招聘平台，利用既有高校人才网络进入AI训练数据业务；Snorkel从斯坦福AI实验室的数据标注软件起家，转型为直接交付训练数据。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "它是一家做了十多年的美国高校招聘平台。AI训练需求起来后，这张高校人才网络有了新用途：律师检查法律回答，医生判断医学推理，博士给模型设计专业难题。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "08e46b0318f95fbdd98bb45a763eb6e73c5b195840936cf938b9be05b32adeed"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Turing",
-          "product": "训练数据供应服务",
-          "scenario": "组织远程软件工程师和博士为OpenAI、Google、Anthropic和Meta等大模型厂商提供训练数据",
-          "target_customer": "大模型厂商",
-          "funding_summary": "2025年初披露上一年收入达到3亿美元",
-          "core_difference": "Turing最初靠远程软件工程师招聘和人才匹配起家，后来成为大模型厂商的训练数据供应商；Snorkel从AI标注软件起家，2025年起直接向AI公司卖训练数据。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "Turing最初靠远程软件工程师招聘和人才匹配起家，后来成为大模型厂商的训练数据供应商，客户包括OpenAI、Google、Anthropic和Meta。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "8408d2b16af4603744227e67370ee70d948e3c074666fcbeabf712d197b5d72e"
-            }
-          ],
-          "entity_id": null
-        },
-        {
-          "name": "Mercor",
-          "product": "AI训练数据与专家评价服务",
-          "scenario": "组织物理、金融、软件工程等领域专业人士为模型公司回答问题、设计任务和评价输出",
-          "target_customer": "模型公司",
-          "funding_summary": "2026年6月年化总收入超过20亿美元",
-          "core_difference": "Mercor 2023年成立时做AI招聘，后来组织专业人士为模型公司生产训练数据；Snorkel从斯坦福AI实验室的数据标注软件起家，转型为直接交付训练数据和强化学习环境。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "这家公司2023年成立时做的也是AI招聘，后来开始组织物理、金融、软件工程等领域的专业人士，为模型公司回答问题、设计任务和评价输出。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "4bb1b3f5ef9b47bde3748384aab7c4f5529095a573eeba3ac960b441df400060"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "年化收入",
-          "value": "超过3.5亿美元",
-          "observed_at": "2026-09",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "一年前，Snorkel的年化收入还只有约2000万美元。现在，已经超过3.5亿美元。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "3d20be0ca830d6f1badc7190db6fd0f09ab2c74fe94f727ecbb957c59a8626d5"
-            }
-          ]
-        },
-        {
-          "label": "一年前年化收入",
-          "value": "约2000万美元",
-          "observed_at": "2025",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "一年前，Snorkel的年化收入还只有约2000万美元。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "2ece1710eaf4ce8b9a93435a94a207b46f67d600e9d6659069ecda6fa503059d"
-            }
-          ]
-        },
-        {
-          "label": "E轮融资估值",
-          "value": "35亿美元",
-          "observed_at": "2026-09-22",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "估值达到35亿美元（约合人民币235亿元）。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "950489e25e35ca59e4ac5ef1469031eeb4dd585061598248300d9ef62b18b4d8"
-            }
-          ]
-        },
-        {
-          "label": "收入增长倍数",
-          "value": "超过16倍",
-          "observed_at": "2026-09",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "Snorkel一年超过16倍的收入增长说明，模型公司对复杂数据的采购仍在快速增加。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "722bef1811b77b120d8147285ee6f16e2916fed1828025c8e72ddbc3ddba3950"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "亚历克斯·拉特纳（Alex Ratner）",
-          "quote": "客户不再只是买软件自己做数据，而是直接把问题交给Snorkel：代码为什么运行失败，一份法律意见有没有遗漏关键风险，或者一道物理推理题究竟错在哪一步。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-d170bde1bb3d412c",
-              "quote": "拉特纳发现，客户不再只是买软件自己做数据，而是直接把问题交给Snorkel：代码为什么运行失败，一份法律意见有没有遗漏关键风险，或者一道物理推理题究竟错在哪一步。",
-              "source_content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-              "quote_hash": "8939d57c5cb801f6672f34d042ff858d92a70b93faff3cdd7280e198fa72d5d7"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是前沿模型对复杂、专业训练数据的采购需求能否持续放大。Snorkel已验证的信号是年化收入从约2000万美元增长到超过3.5亿美元，增幅超过16倍，且新业务推出不到一年即实现该增长。估值从2025年5月Series D的13亿美元升至本轮35亿美元，说明市场对其数据即服务模式的收入增速给予更高定价。但来源未披露本轮投资方具体名称，无法确认是哪类资本在推动估值跃升，也无法引用机构原话。",
-        "validated_signals": [
-          "年化收入从约2000万美元增长到超过3.5亿美元，增幅超过16倍",
-          "新数据即服务业务推出不到一年即实现收入暴增",
-          "服务前沿AI实验室、云厂商、大型企业和美国政府"
-        ],
-        "risks": [
-          "专家数据业务的人力成本随收入同步增长，利润未必同步提升；来源指出如果每收到一笔钱都要重新组织一批人，收入越大，人力成本也跟着增加。",
-          "本轮投资方未披露具体名称，无法确认资本结构变化及战略意图。",
-          "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-        ],
-        "sector": "数据标注与合成",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是前沿模型对复杂、专业训练数据的采购需求能否持续放大。Snorkel已验证的信号是年化收入从约2000万美元增长到超过3.5亿美元，增幅超过16倍，且新业务推出不到一年即实现该增长。估值从2025年5月Series D的13亿美元升至本轮35亿美元，说明市场对其数据即服务模式的收入增速给予更高定价。但来源未披露本轮投资方具体名称，无法确认是哪类资本在推动估值跃升，也无法引用机构原话。",
-          "evidence_signals": [
-            "年化收入从约2000万美元增长到超过3.5亿美元，增幅超过16倍",
-            "新数据即服务业务推出不到一年即实现收入暴增",
-            "服务前沿AI实验室、云厂商、大型企业和美国政府"
-          ],
-          "risks": [
-            "专家数据业务的人力成本随收入同步增长，利润未必同步提升；来源指出如果每收到一笔钱都要重新组织一批人，收入越大，人力成本也跟着增加。",
-            "本轮投资方未披露具体名称，无法确认资本结构变化及战略意图。",
-            "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Snorkel Flow",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "数据即服务（Data-as-a-Service）",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "亚历克斯·拉特纳（Alex Ratner）",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "克里斯托弗·雷（Christopher Ré）",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Addition",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Greylock",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Lightspeed Venture Partners",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "BlackRock",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "GV (Google Ventures)",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Accenture Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "QBE Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "In-Q-Tel",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "谷歌",
-          "canonical_entity_id": "EN-bbdefa2950f49882",
-          "canonical_name": "Google"
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "BNY",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Wayfair",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "Chubb",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "public_customer_case",
-          "target_kind": "organization",
-          "research_name": "美国空军",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Micro1",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Handshake",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Turing",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Mercor",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-34f58445170831ae",
-          "date": "2026-09-28",
-          "title": "收入暴涨16倍，一家AI数据公司爆了",
-          "amount": "3.5亿美元",
-          "source_refs": [
-            "SA-3f9ed0c3f4140a90"
-          ]
-        },
-        {
-          "event_id": "EV-bba3677d51b85918",
-          "date": "2026-09-22",
-          "title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
-          "amount": "$350 million",
-          "source_refs": [
-            "SA-76ec92f7cc9bb30c"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-d170bde1bb3d412c",
-          "source_url": "https://news.pedaily.cn/202609/569716.shtml",
-          "title": "收入暴涨16倍，一家AI数据公司爆了",
-          "publisher": "news.pedaily.cn",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-01T15:59:20.983Z",
-          "content_hash": "87c367501c68a7e1ac5c9ef965bc67585b0379d28cdad7b0d7f2e165977bb775",
-          "source_artifact_id": "SA-3f9ed0c3f4140a90",
-          "raw_id": "RAW-a01004df58f94ffd"
-        },
-        {
-          "source_id": "FISRC-6dd774496b50aaac",
-          "source_url": "https://www.clay.com/dossier/snorkel-ai-funding",
-          "title": "How Much Did Snorkel AI Raise? Funding & Key Investors | Clay",
-          "publisher": "clay.com",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-01T16:20:24.440Z",
-          "content_hash": "fc35ad6f0d7ac53d",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-9809aaa38bffa1ce",
-          "source_url": "https://coda.news/zh/event/snorkel-ai-raises-350-million-in-funding-at-a-35-billion-valuation-4669",
-          "title": "Snorkel AI 以 35 亿美元估值融资 3.5 亿美元 · coda.news",
-          "publisher": "coda.news",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-01T16:20:27.333Z",
-          "content_hash": "96db844d79ed71b6",
-          "source_artifact_id": null,
-          "raw_id": null
-        },
-        {
-          "source_id": "FISRC-48572607288dbaa5",
-          "source_url": "https://snorkel.ai/company/",
-          "title": "About us | Our mission, founders, and more! | Snorkel AI",
-          "publisher": "snorkel.ai",
-          "source_class": "official_candidate",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-01T16:20:25.080Z",
-          "content_hash": "3a2bb297c422a1e0",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-01T16:20:55.225Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-01T16:20:55.225Z",
-      "customer_research": {
-        "status": "verified_customers_found",
-        "verified_customer_count": 5,
-        "searched_source_count": 4
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "Snorkel Flow",
-            "数据即服务（Data-as-a-Service）"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 2,
-          "unresolved_names": [
-            "亚历克斯·拉特纳（Alex Ratner）",
-            "克里斯托弗·雷（Christopher Ré）"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-34f58445170831ae"
-      ],
-      "aggregation": {
-        "key": "EN-7331374f7091259f|series_e|USD:exact:350000000:::|2026-09-28",
-        "event_count": 1,
-        "strategy": "reviewed_company_round_date_and_normalized_amount"
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-41853e1ae903d50f",
-          "event_ids": [
-            "EV-34f58445170831ae"
-          ],
-          "round": "E轮",
-          "round_code": "series_e",
-          "round_original": "E轮",
-          "amount_original": "3.5亿美元",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-09-28",
-          "disclosure_status": "partially_disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true
-        },
-        {
-          "funding_insight_id": "FI-a83cd8c83852046e",
-          "event_ids": [
-            "EV-bba3677d51b85918"
-          ],
-          "round": "E轮",
-          "round_code": "series_e",
-          "round_original": "E轮",
-          "amount_original": "$350 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-09-22",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "developer-platform",
-        "name": "开发与数据平台",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "developer-data",
-        "name": "AI 开发与数据",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "data-services",
-        "name": "数据标注与合成",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "",
-        "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-34f58445170831ae"
-      },
-      "translations": {
-        "zh-CN": {
-          "customers[0].industry": {
-            "text": "科技",
-            "source_hash": "e91fadf24f78c081972a2015146e9b7ad4636bb5a208f5733b54ee4407682078",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:21.597Z",
-            "status": "translated"
-          },
-          "customers[1].industry": {
-            "text": "金融服务",
-            "source_hash": "b74a19b33adabf11dd77a40d61bf8217e9a10911177dbda00bd25b5be47a08da",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:18.959Z",
-            "status": "translated"
-          },
-          "customers[2].industry": {
-            "text": "零售电商",
-            "source_hash": "dcb658ed66fbf3a3d410e8f6e662ac0e17c13b0b3f146f870b29de7f45ea5dad",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:18.959Z",
-            "status": "translated"
-          },
-          "customers[3].industry": {
-            "text": "金融服务",
-            "source_hash": "b74a19b33adabf11dd77a40d61bf8217e9a10911177dbda00bd25b5be47a08da",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:18.959Z",
-            "status": "translated"
-          },
-          "customers[4].industry": {
-            "text": "政府与公共部门",
-            "source_hash": "69cf058efcbbad0477c91e5f8788ff9aa1275e8bdd4f749d00917773da25155c",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:17:15.985Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "developer-data",
-          "name": "AI 开发与数据"
-        },
-        "subsector": {
-          "id": "data-services",
-          "name": "数据标注与合成"
-        },
-        "product_form": {
-          "id": "developer-platform",
-          "name": "开发与数据平台"
-        },
-        "customers": [
-          {
-            "id": "business",
-            "name": "企业"
-          },
-          {
-            "id": "developer",
-            "name": "开发者"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-d170bde1bb3d412c",
-            "quote": "它叫Snorkel AI。过去主要卖AI标注软件，2025年开始，它直接向AI公司卖训练数据。"
-          },
-          {
-            "source_id": "FISRC-6dd774496b50aaac",
-            "quote": "Snorkel AI is a Redwood City, California-based enterprise AI company founded in 2019 by Stanford AI Lab alumni Alexander Ratner, Christopher Ré, Braden Hancock, Henry Ehrenberg, and Paroma Varma."
-          },
-          {
-            "source_id": "FISRC-d170bde1bb3d412c",
-            "quote": "公司最初把这套技术做成软件卖给企业，核心产品Snorkel Flow帮助谷歌等客户自己生产、整理和管理训练数据。"
-          },
-          {
-            "source_id": "FISRC-d170bde1bb3d412c",
-            "quote": "公司负责找专家、设计任务、写评分标准、做质量检查，最后交付可以直接拿去训练的数据和强化学习环境。"
-          },
-          {
-            "source_id": "FISRC-48572607288dbaa5",
-            "quote": "Learn how Snorkel’s Data-as-a-Service helps teams label, refine, and evaluate high-quality, domain-specific datasets for your projects."
-          }
-        ],
-        "rationale": "Snorkel AI 从销售 AI 标注软件转向直接向 AI 公司提供训练数据与强化学习环境，核心业务是数据标注与合成服务。"
-      }
-    },
-    {
-      "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-bec0e83da6ce7a20",
-      "triggered_by_event_id": "EV-861d4440dcbb9b09",
-      "as_of_date": "2026-10-01",
-      "company": {
-        "entity_id": "EN-26e59d6a3c92de80",
-        "name": "Instinct",
-        "full_name": "Instinct",
-        "website": "instinct.co",
-        "summary": "Instinct是一家病毒式传播的邀请制个人AI助手初创公司，用户可通过短信或电话让AI代理操作手机和电脑，完成预订旅行、餐厅、购物、支付账单、取消订阅、研究、订购杂货等日常事务。",
-        "headquarters": "旧金山，加利福尼亚州",
-        "founders": [
-          {
-            "name": "Noah Shinn",
-            "role": "创始人",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "Instinct declined to offer interviews with founder Noah Shinn alongside the fundraising news",
-                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-                "quote_hash": "d7ce1a17b7b1ba17b86b63f349f272b7e738b54652b95873022ca8f1349e17ef"
-              }
-            ],
-            "entity_id": null
-          }
-        ],
-        "team_size": {
-          "value": "",
-          "observed_at": "",
-          "evidence_refs": []
-        },
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-560cbbccadfe271d",
-            "quote": "AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion",
-            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-            "quote_hash": "605276f718edd423174bf5130af60db1f32bb3e48562d8301f600344d10bb450"
-          },
-          {
-            "source_id": "FISRC-6ffdf43efe75ccde",
-            "quote": "Instinct is a viral, invite-only personal AI assistant that operates phones and desktops like a human via text or phone calls.",
-            "source_content_hash": "ae9ae5e9661bb061",
-            "quote_hash": "52d67fdb7bd6a2f71dd5ffad176e170e6891639671b2f4799b16d29b056878f1"
-          }
-        ],
-        "application_entity_id": "EN-26e59d6a3c92de80",
-        "canonical_entity_consistent": false
-      },
-      "financing": {
-        "round": "C轮",
-        "amount": "$2.5 billion",
-        "total_raised": "$1.3B",
-        "announced_at": "2026-09-28",
-        "investor_disclosure_status": "disclosed",
-        "investors": [
-          {
-            "name": "Sequoia Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
-                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-                "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-862e0e7d2ba5cf"
-          },
-          {
-            "name": "Benchmark Capital",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
-                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-                "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-1996308273c587"
-          },
-          {
-            "name": "Coatue",
-            "role": "本轮参投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
-                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-                "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-0d309b859ee1fe"
-          }
-        ],
-        "other_round_investors": [
-          {
-            "name": "Index Ventures",
-            "role": "Series B 联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6ffdf43efe75ccde",
-                "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
-                "source_content_hash": "ae9ae5e9661bb061",
-                "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-694c1d69c893d8"
-          },
-          {
-            "name": "Benchmark",
-            "role": "Series B 联合领投",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-6ffdf43efe75ccde",
-                "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
-                "source_content_hash": "ae9ae5e9661bb061",
-                "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
-              }
-            ],
-            "entity_id": null,
-            "institution_id": "INV-1996308273c587"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-560cbbccadfe271d",
-            "quote": "It’s only been a month since AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion , and now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion.",
-            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-            "quote_hash": "97c45eb16484159b4300952a6c02305fe6c200b96d54b0b4ed465c12b86073cd"
-          },
-          {
-            "source_id": "FISRC-560cbbccadfe271d",
-            "quote": "now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-            "quote_hash": "215a766dce3983e0ef63a6f4d6f17987a5bf0c252be6cb585259467083318e61"
-          },
-          {
-            "source_id": "FISRC-6ffdf43efe75ccde",
-            "quote": "Instinct has raised a total of $1.3B across 2 funding rounds.",
-            "source_content_hash": "ae9ae5e9661bb061",
-            "quote_hash": "8b7f0d34d6df17f316424866a11097572c939712ce57e150f267b392ccbb1dea"
-          }
-        ],
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "$2.5 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 2500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "25 亿美元"
-        },
-        "total_raised_original": "$1.3B",
-        "total_raised_normalized": {
-          "currency": "USD",
-          "value": 1300000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "13 亿美元"
-        },
-        "risk_markers": [],
-        "disclosures": [
-          {
-            "event_id": "EV-861d4440dcbb9b09",
-            "round_original": "C轮",
-            "amount": "$2.5 billion",
-            "announced_at": "2026-09-28",
-            "evidence_refs": [
-              {
-                "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "It’s only been a month since AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion , and now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion.",
-                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-                "quote_hash": "97c45eb16484159b4300952a6c02305fe6c200b96d54b0b4ed465c12b86073cd"
-              },
-              {
-                "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-                "quote_hash": "215a766dce3983e0ef63a6f4d6f17987a5bf0c252be6cb585259467083318e61"
-              },
-              {
-                "source_id": "FISRC-6ffdf43efe75ccde",
-                "quote": "Instinct has raised a total of $1.3B across 2 funding rounds.",
-                "source_content_hash": "ae9ae5e9661bb061",
-                "quote_hash": "8b7f0d34d6df17f316424866a11097572c939712ce57e150f267b392ccbb1dea"
-              }
-            ]
-          }
-        ],
-        "disclosure_status": "disclosed",
-        "cumulative_amount": {
-          "original": "$1.3B",
-          "normalized": {
-            "currency": "USD",
-            "value": 1300000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "13 亿美元"
-          },
-          "basis": "source_disclosed",
-          "known_round_totals": [
-            {
-              "currency": "USD",
-              "value": 2850000000,
-              "min_value": null,
-              "max_value": null,
-              "unit": "base",
-              "round_count": 2,
-              "status": "exact",
-              "display_zh": "28.5 亿美元"
-            }
-          ],
-          "historical_round_count": 2
-        }
-      },
-      "products": [
-        {
-          "name": "Instinct个人AI助手",
-          "description": "邀请制个人AI代理，通过短信和电话与用户沟通，使用自己的电话号码和电脑执行任务，包括预订旅行和餐厅、购物、支付账单、取消订阅、研究、订购杂货等。",
-          "target_customers": "消费者用户",
-          "features": [
-            "通过短信和电话通信",
-            "使用自己的电话号码和电脑执行任务",
-            "concierge功能可代打电话预约",
-            "trusted person network允许代理间协调计划"
-          ],
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-560cbbccadfe271d",
-              "quote": "When asked to perform a task, Instinct uses its own phone number and computer.",
-              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-              "quote_hash": "48b279f02d556ea2212a742779605ef6b019814869089536f509296e2fcfd9c2"
-            },
-            {
-              "source_id": "FISRC-560cbbccadfe271d",
-              "quote": "The company recently rolled out other new features, like “concierge” that can make phone calls for you, to manage things like making appointments at places that don’t offer online booking, as well as a “trusted person network” that allows one person’s Instinct agent to coordinate plans with their friends’ agents.",
-              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-              "quote_hash": "b38291046e189d23a1a48b76a448a0aebd0e615ba6216b9cc1d996a719c16c72"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "customers": [],
-      "comparisons": [
-        {
-          "name": "Meta Muse",
-          "product": "Muse AI助手",
-          "scenario": "个人AI助手，提供与Instinct类似的功能，并深度整合Meta社交产品，可监控和总结Instagram私信、Facebook群组、Marketplace列表等",
-          "target_customer": "消费者用户",
-          "funding_summary": "",
-          "core_difference": "Muse深度整合Meta社交产品，可执行监控Instagram私信、Facebook群组等社交任务；Instinct通过短信和电话通信，尚无移动应用。",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-560cbbccadfe271d",
-              "quote": "Instinct is now facing fresh competition from Meta’s own AI assistant, Muse, which offers many similar features, plus a system that can deeply integrate with Meta’s social products.",
-              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-              "quote_hash": "5dfbcedfbb8e9afa32d61c2db79bb18b9e11ed41d3a4a615160adb0a319361aa"
-            },
-            {
-              "source_id": "FISRC-560cbbccadfe271d",
-              "quote": "Instinct, which uses SMS and texting to communicate with its users, doesn’t have a mobile app yet.",
-              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-              "quote_hash": "c57f130e2a029a68a623aa29dcec8410d382ad430c1b03e39f920c871436d2d8"
-            }
-          ],
-          "entity_id": null
-        }
-      ],
-      "metrics": [
-        {
-          "label": "估值",
-          "value": "$10B",
-          "observed_at": "2026-09-28",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-560cbbccadfe271d",
-              "quote": "valuing the company at $10 billion",
-              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-              "quote_hash": "3063e7f53f799bf55dae7e877fd2b6a1c054683c11eb059d3e0cde84501aecc1"
-            }
-          ]
-        },
-        {
-          "label": "上一轮估值",
-          "value": "$2.5B",
-          "observed_at": "2026-08",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-560cbbccadfe271d",
-              "quote": "It’s only been a month since AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion",
-              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-              "quote_hash": "ab7e0b8f59535ec504617b973df271fd3509c5c3579eebee1a20bde56bcd61cc"
-            }
-          ]
-        },
-        {
-          "label": "累计融资额",
-          "value": "$1.3B",
-          "observed_at": "2026-09-28",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6ffdf43efe75ccde",
-              "quote": "Instinct has raised a total of $1.3B across 2 funding rounds.",
-              "source_content_hash": "ae9ae5e9661bb061",
-              "quote_hash": "8b7f0d34d6df17f316424866a11097572c939712ce57e150f267b392ccbb1dea"
-            }
-          ]
-        },
-        {
-          "label": "估值增长倍数",
-          "value": "4.0x",
-          "observed_at": "2026-09-28",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-6ffdf43efe75ccde",
-              "quote": "Instinct's valuation has grown 4.0x from $2.5B at its Series B in August 2026 to $10B in September 2026",
-              "source_content_hash": "ae9ae5e9661bb061",
-              "quote_hash": "2f74714868e01b5a9f546ccba891eacbdd964b9e9cf27364b749fbdd5cfea154"
-            }
-          ]
-        }
-      ],
-      "quotes": [
-        {
-          "speaker": "Noah Shinn",
-          "quote": "We’re building Instinct to be the best personal agent that can handle the deeply personal nuances of everyday life. This funding helps us bring Instinct to more people and continue building the future of personal AI. It’s an exciting, creative time, and we’re just getting started.",
-          "evidence_refs": [
-            {
-              "source_id": "FISRC-560cbbccadfe271d",
-              "quote": "We’re building Instinct to be the best personal agent that can handle the deeply personal nuances of everyday life. This funding helps us bring Instinct to more people and continue building the future of personal AI. It’s an exciting, creative time, and we’re just getting started.",
-              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-              "quote_hash": "9e96e82160284dd5f7b6790a21301638e6b845977fcce1f3c76a64a2b26044fc"
-            }
-          ]
-        }
-      ],
-      "analysis": {
-        "investment_rationale": [],
-        "capital_judgment": "资本押注的核心变量是消费者AI代理从对话工具向任务执行工具的范式转变，以及Instinct在邀请制下形成的病毒式采用。本轮融资所依赖的已验证信号是：公司在8月以2.5亿美元估值完成B轮后仅一个月即获得10亿美元估值C轮，估值增长4倍；但公司未披露用户数或增长指标，投资判断主要基于投资者对产品方向的信心而非公开运营数据。证据边界在于：TechCrunch明确表示公司未分享用户数或增长指标，投资者未公开陈述投资理由，因此无法确认估值是否由实际使用规模支撑。",
-        "validated_signals": [
-          "一个月内估值从2.5亿美元升至10亿美元，增长4倍",
-          "产品在邀请制下实现病毒式采用",
-          "获得Sequoia Capital、Benchmark Capital、Coatue等机构参与C轮"
-        ],
-        "risks": [
-          "公司未披露用户数或任何增长指标，估值缺乏公开运营数据支撑",
-          "用户对向AI代理披露大量个人信息的隐私担忧，早期隐私政策曾因过度收集引发争议",
-          "Meta Muse深度整合社交产品且已登顶美国应用商店，构成直接竞争压力；Instinct尚无移动应用"
-        ],
-        "sector": "个人助手与搜索",
-        "investment_thesis": {
-          "statement": "资本押注的核心变量是消费者AI代理从对话工具向任务执行工具的范式转变，以及Instinct在邀请制下形成的病毒式采用。本轮融资所依赖的已验证信号是：公司在8月以2.5亿美元估值完成B轮后仅一个月即获得10亿美元估值C轮，估值增长4倍；但公司未披露用户数或增长指标，投资判断主要基于投资者对产品方向的信心而非公开运营数据。证据边界在于：TechCrunch明确表示公司未分享用户数或增长指标，投资者未公开陈述投资理由，因此无法确认估值是否由实际使用规模支撑。",
-          "evidence_signals": [
-            "一个月内估值从2.5亿美元升至10亿美元，增长4倍",
-            "产品在邀请制下实现病毒式采用",
-            "获得Sequoia Capital、Benchmark Capital、Coatue等机构参与C轮"
-          ],
-          "risks": [
-            "公司未披露用户数或任何增长指标，估值缺乏公开运营数据支撑",
-            "用户对向AI代理披露大量个人信息的隐私担忧，早期隐私政策曾因过度收集引发争议",
-            "Meta Muse深度整合社交产品且已登顶美国应用商店，构成直接竞争压力；Instinct尚无移动应用"
-          ],
-          "institutional_rationale_status": "not_disclosed"
-        }
-      },
-      "entity_links": [
-        {
-          "relation_type": "product_of",
-          "target_kind": "product",
-          "research_name": "Instinct个人AI助手",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "founded_by",
-          "target_kind": "person",
-          "research_name": "Noah Shinn",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Sequoia Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Benchmark Capital",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_round",
-          "target_kind": "organization",
-          "research_name": "Coatue",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Index Ventures",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "invested_in_other_round",
-          "target_kind": "organization",
-          "research_name": "Benchmark",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        },
-        {
-          "relation_type": "compared_with",
-          "target_kind": "organization",
-          "research_name": "Meta Muse",
-          "canonical_entity_id": null,
-          "canonical_name": ""
-        }
-      ],
-      "funding_history": [
-        {
-          "event_id": "EV-276878c26b2a06dc",
-          "date": "2026-08-26",
-          "title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
-          "amount": "$350 million",
-          "source_refs": [
-            "SA-8adb3478f47c3dd9"
-          ]
-        }
-      ],
-      "research_sources": [
-        {
-          "source_id": "FISRC-560cbbccadfe271d",
-          "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
-          "title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-          "publisher": "techcrunch.com",
-          "source_class": "canonical_event_source",
-          "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-01T15:58:56.647Z",
-          "content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-          "source_artifact_id": "SA-5ee0038f3782b410",
-          "raw_id": "RAW-4ea4249f30922f87"
-        },
-        {
-          "source_id": "FISRC-6ffdf43efe75ccde",
-          "source_url": "https://multiples.vc/private-comps/instinct",
-          "title": "Instinct Valuation, Funding & Investors | Multiples",
-          "publisher": "multiples.vc",
-          "source_class": "independent",
-          "capture_method": "direct_fetch",
-          "captured_at": "2026-10-01T16:20:06.153Z",
-          "content_hash": "ae9ae5e9661bb061",
-          "source_artifact_id": null,
-          "raw_id": null
-        }
-      ],
-      "model_provenance": {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "attempts": 1,
-        "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
-        "generated_at": "2026-10-01T16:20:33.071Z"
-      },
-      "auto_publish_gate": {
-        "passed": true,
-        "problems": [],
-        "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
-      },
-      "publication_status": "auto_published",
-      "published_at": "2026-10-01T16:20:33.071Z",
-      "customer_research": {
-        "status": "no_verified_customer_found",
-        "verified_customer_count": 0,
-        "searched_source_count": 2
-      },
-      "entity_link_coverage": {
-        "products": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Instinct个人AI助手"
-          ]
-        },
-        "founders": {
-          "linked": 0,
-          "total": 1,
-          "unresolved_names": [
-            "Noah Shinn"
-          ]
-        }
-      },
-      "source_event_ids": [
-        "EV-861d4440dcbb9b09"
-      ],
-      "aggregation": {
-        "key": "EN-26e59d6a3c92de80|series_c|USD:exact:2500000000:::|2026-09-28",
-        "event_count": 1,
-        "strategy": "reviewed_company_round_date_and_normalized_amount"
-      },
-      "historical_rounds": [
-        {
-          "funding_insight_id": "FI-bec0e83da6ce7a20",
-          "event_ids": [
-            "EV-861d4440dcbb9b09"
-          ],
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "$2.5 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "25 亿美元"
-          },
-          "announced_at": "2026-09-28",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": true
-        },
-        {
-          "funding_insight_id": "FI-e57c1a5088b84f89",
-          "event_ids": [
-            "EV-276878c26b2a06dc"
-          ],
-          "round": "B轮",
-          "round_code": "series_b",
-          "round_original": "B轮",
-          "amount_original": "$350 million",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 350000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "3.5 亿美元"
-          },
-          "announced_at": "2026-08-26",
-          "disclosure_status": "disclosed",
-          "is_summary": false,
-          "counts_toward_known_total": true,
-          "is_current": false
-        }
-      ],
-      "market_scope": {
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "china_market_basis": [],
-        "source_registry_ids": []
-      },
-      "product_form": {
-        "id": "consumer-software",
-        "name": "消费软件",
-        "dimension": "financing_product_form"
-      },
-      "market_category": {
-        "id": "consumer",
-        "name": "消费 AI 应用",
-        "dimension": "financing_sector"
-      },
-      "market_subcategory": {
-        "id": "assistants",
-        "name": "个人助手与搜索",
-        "dimension": "financing_subsector"
-      },
-      "market_application": null,
-      "links": {
-        "company": "",
-        "relation_map": "",
-        "funding_event": "data-center.html?view=events&detail=event&id=EV-861d4440dcbb9b09"
-      },
-      "translations": {
-        "zh-CN": {
-          "company.headquarters": {
-            "text": "旧金山，加利福尼亚州",
-            "source_hash": "5417a55717d2497cf83c3d42b6ff8d21c7efc15dac514052d030e1742d8d7b8b",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-08-14T07:14:34.478Z",
-            "status": "translated"
-          },
-          "financing.other_round_investors[0].role": {
-            "text": "Series B 联合领投",
-            "source_hash": "f755a7643461d4617ee8a1d40ad872736fd8a8266a40baeb0a267926fbc3a1ab",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T13:24:55.946Z",
-            "status": "translated"
-          },
-          "financing.other_round_investors[1].role": {
-            "text": "Series B 联合领投",
-            "source_hash": "f755a7643461d4617ee8a1d40ad872736fd8a8266a40baeb0a267926fbc3a1ab",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T13:24:55.946Z",
-            "status": "translated"
-          },
-          "products[0].features[3]": {
-            "text": "trusted person network允许代理间协调计划",
-            "source_hash": "b39310902f8017e41948ff91f3f1de6f237240556f7fed1404f0fbf59232de72",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:28:18.725Z",
-            "status": "translated"
-          },
-          "comparisons[0].scenario": {
-            "text": "个人AI助手，提供与Instinct类似的功能，并深度整合Meta社交产品，可监控和总结Instagram私信、Facebook群组、Marketplace列表等",
-            "source_hash": "35456631823e6ce3d7c9ba1d95dbe763ca49773b73daf3cc9afddf24183a43bc",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:28:18.725Z",
-            "status": "translated"
-          }
-        }
-      },
-      "financing_tags": {
-        "version": "AI-FUNDING-TAGS-1.0",
-        "scope": "included",
-        "status": "classified",
-        "sector": {
-          "id": "consumer",
-          "name": "消费 AI 应用"
-        },
-        "subsector": {
-          "id": "assistants",
-          "name": "个人助手与搜索"
-        },
-        "product_form": {
-          "id": "consumer-software",
-          "name": "消费软件"
-        },
-        "customers": [
-          {
-            "id": "consumer",
-            "name": "个人消费者"
-          }
-        ],
-        "evidence_refs": [
-          {
-            "source_id": "FISRC-560cbbccadfe271d",
-            "quote": "AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion"
-          },
-          {
-            "source_id": "FISRC-6ffdf43efe75ccde",
-            "quote": "Instinct is a viral, invite-only personal AI assistant that operates phones and desktops like a human via text or phone calls."
-          },
-          {
-            "source_id": "FISRC-560cbbccadfe271d",
-            "quote": "When asked to perform a task, Instinct uses its own phone number and computer."
-          },
-          {
-            "source_id": "FISRC-560cbbccadfe271d",
-            "quote": "The company recently rolled out other new features, like “concierge” that can make phone calls for you, to manage things like making appointments at places that don’t offer online booking, as well as a “trusted person network” that allows one person’s Instinct agent to coordinate plans with their friends’ agents."
-          }
-        ],
-        "rationale": "Instinct 是面向个人消费者的 AI 助手，通过文字或电话像人一样操作手机和电脑完成任务，属于消费 AI 应用中的个人助手与搜索细分。"
       }
     },
     {
@@ -10962,7 +7715,7 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-1b6dd112c647d4a1",
+      "funding_insight_id": "FI-4b143304af694a92",
       "triggered_by_event_id": "EV-35fa913e4709b4d6",
       "as_of_date": "2026-10-01",
       "company": {
@@ -10972,7 +7725,21 @@
         "website": "instinct.co",
         "summary": "Instinct是一款自主个人AI助手，可连接用户的电子邮件、消息、日历、文档、屏幕活动、音频和位置，使用自己的电话号码和计算机代表用户完成任务，如预订旅行、餐厅、购物、支付账单和取消订阅。",
         "headquarters": "旧金山",
-        "founders": [],
+        "founders": [
+          {
+            "name": "Noah Shinn",
+            "role": "创始人",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-560cbbccadfe271d",
+                "quote": "Instinct declined to offer interviews with founder Noah Shinn alongside the fundraising news",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+                "quote_hash": "d7ce1a17b7b1ba17b86b63f349f272b7e738b54652b95873022ca8f1349e17ef"
+              }
+            ],
+            "entity_id": null
+          }
+        ],
         "team_size": {
           "value": "",
           "observed_at": "",
@@ -10982,7 +7749,7 @@
           {
             "source_id": "FISRC-560cbbccadfe271d",
             "quote": "AI assistant startup Instinct",
-            "source_content_hash": "7430813f0a12b226",
+            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
             "quote_hash": "58f7656bad5585bab48ad0c142bac2b19bd444d50249f2d9871a66668fefa04d"
           },
           {
@@ -10992,7 +7759,7 @@
             "quote_hash": "8e822ca9e0f468787b7883d64d551e85cf5cb5e2217390d125c5fb886b4668d4"
           }
         ],
-        "application_entity_id": "EN-b4c73396844f7d05",
+        "application_entity_id": "FICO-instinct",
         "canonical_entity_consistent": false
       },
       "financing": {
@@ -11008,9 +7775,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-                "source_content_hash": "7430813f0a12b226",
-                "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+                "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
               }
             ],
             "entity_id": null,
@@ -11022,9 +7789,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-                "source_content_hash": "7430813f0a12b226",
-                "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+                "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
               }
             ],
             "entity_id": null,
@@ -11036,9 +7803,9 @@
             "evidence_refs": [
               {
                 "source_id": "FISRC-560cbbccadfe271d",
-                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-                "source_content_hash": "7430813f0a12b226",
-                "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+                "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+                "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
               }
             ],
             "entity_id": null,
@@ -11051,10 +7818,10 @@
             "role": "Series B 联合领投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-70f948c95dacb2f0",
-                "quote": "it co-led the $250 million Series B in August with Index Ventures",
-                "source_content_hash": "0773286daf5bf525",
-                "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
+                "source_id": "FISRC-6ffdf43efe75ccde",
+                "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
+                "source_content_hash": "ae9ae5e9661bb061",
+                "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
               }
             ],
             "entity_id": null,
@@ -11065,10 +7832,10 @@
             "role": "Series B 联合领投",
             "evidence_refs": [
               {
-                "source_id": "FISRC-70f948c95dacb2f0",
-                "quote": "it co-led the $250 million Series B in August with Index Ventures",
-                "source_content_hash": "0773286daf5bf525",
-                "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
+                "source_id": "FISRC-6ffdf43efe75ccde",
+                "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
+                "source_content_hash": "ae9ae5e9661bb061",
+                "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
               }
             ],
             "entity_id": null,
@@ -11121,19 +7888,19 @@
           {
             "source_id": "FISRC-560cbbccadfe271d",
             "quote": "Viral AI agent Instinct raises $1B Series C at a $10B valuation",
-            "source_content_hash": "7430813f0a12b226",
+            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
             "quote_hash": "f91187bc4fd1ff44a5c20c0df3ef3d0e032fda5631f35396033aafa8eb502cbd"
           },
           {
             "source_id": "FISRC-560cbbccadfe271d",
             "quote": "now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-            "source_content_hash": "7430813f0a12b226",
+            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
             "quote_hash": "215a766dce3983e0ef63a6f4d6f17987a5bf0c252be6cb585259467083318e61"
           },
           {
             "source_id": "FISRC-560cbbccadfe271d",
             "quote": "In a press release on Monday, Instinct confirmed this was a Series C round",
-            "source_content_hash": "7430813f0a12b226",
+            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
             "quote_hash": "6455d108ca03e64b4cbcaf3746660eaf4c4be4dab5cdcbdd384ee9662ba4304d"
           }
         ],
@@ -11162,6 +7929,32 @@
         "risk_markers": [],
         "disclosures": [
           {
+            "event_id": "EV-861d4440dcbb9b09",
+            "round_original": "C轮",
+            "amount": "$1 billion",
+            "announced_at": "2026-09-28",
+            "evidence_refs": [
+              {
+                "source_id": "FISRC-560cbbccadfe271d",
+                "quote": "It’s only been a month since AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion , and now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion.",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+                "quote_hash": "97c45eb16484159b4300952a6c02305fe6c200b96d54b0b4ed465c12b86073cd"
+              },
+              {
+                "source_id": "FISRC-560cbbccadfe271d",
+                "quote": "now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+                "quote_hash": "215a766dce3983e0ef63a6f4d6f17987a5bf0c252be6cb585259467083318e61"
+              },
+              {
+                "source_id": "FISRC-6ffdf43efe75ccde",
+                "quote": "Instinct has raised a total of $1.3B across 2 funding rounds.",
+                "source_content_hash": "ae9ae5e9661bb061",
+                "quote_hash": "8b7f0d34d6df17f316424866a11097572c939712ce57e150f267b392ccbb1dea"
+              }
+            ]
+          },
+          {
             "event_id": "EV-35fa913e4709b4d6",
             "round_original": "C轮",
             "amount": "$1B",
@@ -11170,19 +7963,19 @@
               {
                 "source_id": "FISRC-560cbbccadfe271d",
                 "quote": "Viral AI agent Instinct raises $1B Series C at a $10B valuation",
-                "source_content_hash": "7430813f0a12b226",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
                 "quote_hash": "f91187bc4fd1ff44a5c20c0df3ef3d0e032fda5631f35396033aafa8eb502cbd"
               },
               {
                 "source_id": "FISRC-560cbbccadfe271d",
                 "quote": "now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-                "source_content_hash": "7430813f0a12b226",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
                 "quote_hash": "215a766dce3983e0ef63a6f4d6f17987a5bf0c252be6cb585259467083318e61"
               },
               {
                 "source_id": "FISRC-560cbbccadfe271d",
                 "quote": "In a press release on Monday, Instinct confirmed this was a Series C round",
-                "source_content_hash": "7430813f0a12b226",
+                "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
                 "quote_hash": "6455d108ca03e64b4cbcaf3746660eaf4c4be4dab5cdcbdd384ee9662ba4304d"
               }
             ]
@@ -11204,19 +7997,45 @@
           "known_round_totals": [
             {
               "currency": "USD",
-              "value": 1000000000,
+              "value": 1350000000,
               "min_value": null,
               "max_value": null,
               "unit": "base",
-              "round_count": 1,
+              "round_count": 2,
               "status": "exact",
-              "display_zh": "10 亿美元"
+              "display_zh": "13.5 亿美元"
             }
           ],
-          "historical_round_count": 1
+          "historical_round_count": 2
         }
       },
       "products": [
+        {
+          "name": "Instinct个人AI助手",
+          "description": "邀请制个人AI代理，通过短信和电话与用户沟通，使用自己的电话号码和电脑执行任务，包括预订旅行和餐厅、购物、支付账单、取消订阅、研究、订购杂货等。",
+          "target_customers": "消费者用户",
+          "features": [
+            "通过短信和电话通信",
+            "使用自己的电话号码和电脑执行任务",
+            "concierge功能可代打电话预约",
+            "trusted person network允许代理间协调计划"
+          ],
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-560cbbccadfe271d",
+              "quote": "When asked to perform a task, Instinct uses its own phone number and computer.",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+              "quote_hash": "48b279f02d556ea2212a742779605ef6b019814869089536f509296e2fcfd9c2"
+            },
+            {
+              "source_id": "FISRC-560cbbccadfe271d",
+              "quote": "The company recently rolled out other new features, like “concierge” that can make phone calls for you, to manage things like making appointments at places that don’t offer online booking, as well as a “trusted person network” that allows one person’s Instinct agent to coordinate plans with their friends’ agents.",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+              "quote_hash": "b38291046e189d23a1a48b76a448a0aebd0e615ba6216b9cc1d996a719c16c72"
+            }
+          ],
+          "entity_id": null
+        },
         {
           "name": "Instinct",
           "description": "自主个人AI助手，通过短信、iMessage和电话与用户交互，使用自己的电话号码和计算机执行任务，如预订旅行、餐厅、购物、支付账单、取消订阅、进行研究和订购杂货。",
@@ -11243,6 +8062,29 @@
       ],
       "customers": [],
       "comparisons": [
+        {
+          "name": "Meta Muse",
+          "product": "Muse AI助手",
+          "scenario": "个人AI助手，提供与Instinct类似的功能，并深度整合Meta社交产品，可监控和总结Instagram私信、Facebook群组、Marketplace列表等",
+          "target_customer": "消费者用户",
+          "funding_summary": "",
+          "core_difference": "Muse深度整合Meta社交产品，可执行监控Instagram私信、Facebook群组等社交任务；Instinct通过短信和电话通信，尚无移动应用。",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-560cbbccadfe271d",
+              "quote": "Instinct is now facing fresh competition from Meta’s own AI assistant, Muse, which offers many similar features, plus a system that can deeply integrate with Meta’s social products.",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+              "quote_hash": "5dfbcedfbb8e9afa32d61c2db79bb18b9e11ed41d3a4a615160adb0a319361aa"
+            },
+            {
+              "source_id": "FISRC-560cbbccadfe271d",
+              "quote": "Instinct, which uses SMS and texting to communicate with its users, doesn’t have a mobile app yet.",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+              "quote_hash": "c57f130e2a029a68a623aa29dcec8410d382ad430c1b03e39f920c871436d2d8"
+            }
+          ],
+          "entity_id": null
+        },
         {
           "name": "Google Gemini Spark",
           "product": "Gemini Spark",
@@ -11304,13 +8146,65 @@
       "metrics": [
         {
           "label": "估值",
+          "value": "$10B",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-560cbbccadfe271d",
+              "quote": "valuing the company at $10 billion",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+              "quote_hash": "3063e7f53f799bf55dae7e877fd2b6a1c054683c11eb059d3e0cde84501aecc1"
+            }
+          ]
+        },
+        {
+          "label": "上一轮估值",
+          "value": "$2.5B",
+          "observed_at": "2026-08",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-560cbbccadfe271d",
+              "quote": "It’s only been a month since AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+              "quote_hash": "ab7e0b8f59535ec504617b973df271fd3509c5c3579eebee1a20bde56bcd61cc"
+            }
+          ]
+        },
+        {
+          "label": "累计融资额",
+          "value": "$1.3B",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ffdf43efe75ccde",
+              "quote": "Instinct has raised a total of $1.3B across 2 funding rounds.",
+              "source_content_hash": "ae9ae5e9661bb061",
+              "quote_hash": "8b7f0d34d6df17f316424866a11097572c939712ce57e150f267b392ccbb1dea"
+            }
+          ]
+        },
+        {
+          "label": "估值增长倍数",
+          "value": "4.0x",
+          "observed_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-6ffdf43efe75ccde",
+              "quote": "Instinct's valuation has grown 4.0x from $2.5B at its Series B in August 2026 to $10B in September 2026",
+              "source_content_hash": "ae9ae5e9661bb061",
+              "quote_hash": "2f74714868e01b5a9f546ccba891eacbdd964b9e9cf27364b749fbdd5cfea154"
+            }
+          ]
+        },
+        {
+          "label": "估值",
           "value": "$10 billion",
           "observed_at": "2026-09-28",
           "evidence_refs": [
             {
               "source_id": "FISRC-560cbbccadfe271d",
               "quote": "valuing the company at $10 billion",
-              "source_content_hash": "7430813f0a12b226",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
               "quote_hash": "3063e7f53f799bf55dae7e877fd2b6a1c054683c11eb059d3e0cde84501aecc1"
             }
           ]
@@ -11323,7 +8217,7 @@
             {
               "source_id": "FISRC-560cbbccadfe271d",
               "quote": "It’s only been a month since AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion",
-              "source_content_hash": "7430813f0a12b226",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
               "quote_hash": "ab7e0b8f59535ec504617b973df271fd3509c5c3579eebee1a20bde56bcd61cc"
             }
           ]
@@ -11394,11 +8288,27 @@
           ]
         }
       ],
-      "quotes": [],
+      "quotes": [
+        {
+          "speaker": "Noah Shinn",
+          "quote": "We’re building Instinct to be the best personal agent that can handle the deeply personal nuances of everyday life. This funding helps us bring Instinct to more people and continue building the future of personal AI. It’s an exciting, creative time, and we’re just getting started.",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-560cbbccadfe271d",
+              "quote": "We’re building Instinct to be the best personal agent that can handle the deeply personal nuances of everyday life. This funding helps us bring Instinct to more people and continue building the future of personal AI. It’s an exciting, creative time, and we’re just getting started.",
+              "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+              "quote_hash": "9e96e82160284dd5f7b6790a21301638e6b845977fcce1f3c76a64a2b26044fc"
+            }
+          ]
+        }
+      ],
       "analysis": {
         "investment_rationale": [],
         "capital_judgment": "资本押注的核心变量是消费者AI代理从对话工具向实际执行任务的转变，以及Instinct在邀请制阶段展现的需求信号。估值从一个月前的$2.5 billion跃升至$10 billion，依赖的已验证信号包括：用户数超过100,000（据The Information报道）、接近$1 billion的交易量（约50%为旅行）、40%的用户在三周后分享信用卡信息、10%的用户每日邀请他人。但公司未披露收入、定价或用户留存数据，产品仍为免费邀请制，估值隐含每个报告用户$100,000的估值，属于对未验证的大规模采用和未来商业模式的提前定价。",
         "validated_signals": [
+          "一个月内估值从2.5亿美元升至10亿美元，增长4倍",
+          "产品在邀请制下实现病毒式采用",
+          "获得Sequoia Capital、Benchmark Capital、Coatue等机构参与C轮",
           "用户数超过100,000（据The Information 2026年9月16日报道）",
           "交易量接近$1 billion，约50%为旅行",
           "40%的用户在三周后分享信用卡信息",
@@ -11406,6 +8316,9 @@
           "服务在邀请制下已出现容量不足，用户被告知响应可能变慢"
         ],
         "risks": [
+          "公司未披露用户数或任何增长指标，估值缺乏公开运营数据支撑",
+          "用户对向AI代理披露大量个人信息的隐私担忧，早期隐私政策曾因过度收集引发争议",
+          "Meta Muse深度整合社交产品且已登顶美国应用商店，构成直接竞争压力；Instinct尚无移动应用",
           "平台竞争：Meta Muse通过WhatsApp和社交产品集成已登顶美国应用商店，苹果和谷歌可通过操作系统分发助手，Instinct缺乏自有分发渠道",
           "信任集中风险：Instinct需要访问通信、音频、精确位置、凭证、支付信息和屏幕活动，单次可见的未授权邮件、意外购买或提示注入攻击可能造成不成比例的声誉损害",
           "单位经济不确定性：产品免费期间产生推理和虚拟设备成本，计划中的交易费模式能否覆盖非交易类任务成本尚未验证"
@@ -11414,6 +8327,9 @@
         "investment_thesis": {
           "statement": "资本押注的核心变量是消费者AI代理从对话工具向实际执行任务的转变，以及Instinct在邀请制阶段展现的需求信号。估值从一个月前的$2.5 billion跃升至$10 billion，依赖的已验证信号包括：用户数超过100,000（据The Information报道）、接近$1 billion的交易量（约50%为旅行）、40%的用户在三周后分享信用卡信息、10%的用户每日邀请他人。但公司未披露收入、定价或用户留存数据，产品仍为免费邀请制，估值隐含每个报告用户$100,000的估值，属于对未验证的大规模采用和未来商业模式的提前定价。",
           "evidence_signals": [
+            "一个月内估值从2.5亿美元升至10亿美元，增长4倍",
+            "产品在邀请制下实现病毒式采用",
+            "获得Sequoia Capital、Benchmark Capital、Coatue等机构参与C轮",
             "用户数超过100,000（据The Information 2026年9月16日报道）",
             "交易量接近$1 billion，约50%为旅行",
             "40%的用户在三周后分享信用卡信息",
@@ -11421,6 +8337,9 @@
             "服务在邀请制下已出现容量不足，用户被告知响应可能变慢"
           ],
           "risks": [
+            "公司未披露用户数或任何增长指标，估值缺乏公开运营数据支撑",
+            "用户对向AI代理披露大量个人信息的隐私担忧，早期隐私政策曾因过度收集引发争议",
+            "Meta Muse深度整合社交产品且已登顶美国应用商店，构成直接竞争压力；Instinct尚无移动应用",
             "平台竞争：Meta Muse通过WhatsApp和社交产品集成已登顶美国应用商店，苹果和谷歌可通过操作系统分发助手，Instinct缺乏自有分发渠道",
             "信任集中风险：Instinct需要访问通信、音频、精确位置、凭证、支付信息和屏幕活动，单次可见的未授权邮件、意外购买或提示注入攻击可能造成不成比例的声誉损害",
             "单位经济不确定性：产品免费期间产生推理和虚拟设备成本，计划中的交易费模式能否覆盖非交易类任务成本尚未验证"
@@ -11432,7 +8351,21 @@
         {
           "relation_type": "product_of",
           "target_kind": "product",
+          "research_name": "Instinct个人AI助手",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "product_of",
+          "target_kind": "product",
           "research_name": "Instinct",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "founded_by",
+          "target_kind": "person",
+          "research_name": "Noah Shinn",
           "canonical_entity_id": null,
           "canonical_name": ""
         },
@@ -11495,6 +8428,13 @@
         {
           "relation_type": "compared_with",
           "target_kind": "organization",
+          "research_name": "Meta Muse",
+          "canonical_entity_id": null,
+          "canonical_name": ""
+        },
+        {
+          "relation_type": "compared_with",
+          "target_kind": "organization",
           "research_name": "Google Gemini Spark",
           "canonical_entity_id": null,
           "canonical_name": ""
@@ -11523,6 +8463,15 @@
           "source_refs": [
             "SA-23b0d12bda445d20"
           ]
+        },
+        {
+          "event_id": "EV-276878c26b2a06dc",
+          "date": "2026-08-26",
+          "title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+          "amount": "$350 million",
+          "source_refs": [
+            "SA-8adb3478f47c3dd9"
+          ]
         }
       ],
       "research_sources": [
@@ -11530,13 +8479,25 @@
           "source_id": "FISRC-560cbbccadfe271d",
           "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
           "title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-          "publisher": "keyword search / Anysearch",
+          "publisher": "techcrunch.com",
           "source_class": "canonical_event_source",
           "capture_method": "data_center_v4_source_artifact",
-          "captured_at": "2026-10-01T09:25:12.395Z",
-          "content_hash": "7430813f0a12b226",
-          "source_artifact_id": "SA-23b0d12bda445d20",
-          "raw_id": "RAW-0e68cc0eb32f717b"
+          "captured_at": "2026-10-01T15:58:56.647Z",
+          "content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+          "source_artifact_id": "SA-5ee0038f3782b410",
+          "raw_id": "RAW-4ea4249f30922f87"
+        },
+        {
+          "source_id": "FISRC-6ffdf43efe75ccde",
+          "source_url": "https://multiples.vc/private-comps/instinct",
+          "title": "Instinct Valuation, Funding & Investors | Multiples",
+          "publisher": "multiples.vc",
+          "source_class": "independent",
+          "capture_method": "direct_fetch",
+          "captured_at": "2026-10-01T16:20:06.153Z",
+          "content_hash": "ae9ae5e9661bb061",
+          "source_artifact_id": null,
+          "raw_id": null
         },
         {
           "source_id": "FISRC-70f948c95dacb2f0",
@@ -11588,35 +8549,40 @@
       "customer_research": {
         "status": "no_verified_customer_found",
         "verified_customer_count": 0,
-        "searched_source_count": 3
+        "searched_source_count": 4
       },
       "entity_link_coverage": {
         "products": {
           "linked": 0,
-          "total": 1,
+          "total": 2,
           "unresolved_names": [
-            "Instinct"
+            "Instinct",
+            "Instinct个人AI助手"
           ]
         },
         "founders": {
           "linked": 0,
-          "total": 0,
-          "unresolved_names": []
+          "total": 1,
+          "unresolved_names": [
+            "Noah Shinn"
+          ]
         }
       },
       "source_event_ids": [
-        "EV-35fa913e4709b4d6"
+        "EV-35fa913e4709b4d6",
+        "EV-861d4440dcbb9b09"
       ],
       "aggregation": {
-        "key": "EN-b4c73396844f7d05|series_c|USD:exact:1000000000:::|2026-09-28",
-        "event_count": 1,
+        "key": "FICO-instinct|series_c|USD:exact:1000000000:::|2026-09-28",
+        "event_count": 2,
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-1b6dd112c647d4a1",
+          "funding_insight_id": "FI-4b143304af694a92",
           "event_ids": [
-            "EV-35fa913e4709b4d6"
+            "EV-35fa913e4709b4d6",
+            "EV-861d4440dcbb9b09"
           ],
           "round": "C轮",
           "round_code": "series_c",
@@ -11636,6 +8602,30 @@
           "is_summary": false,
           "counts_toward_known_total": true,
           "is_current": true
+        },
+        {
+          "funding_insight_id": "FI-d0c7f81818282df9",
+          "event_ids": [
+            "EV-276878c26b2a06dc"
+          ],
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$350 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "disclosure_status": "disclosed",
+          "is_summary": false,
+          "counts_toward_known_total": true,
+          "is_current": false
         }
       ],
       "market_scope": {
@@ -11699,7 +8689,15 @@
             "translated_at": "2026-09-03T03:25:55.142Z",
             "status": "translated"
           },
-          "products[0].features[2]": {
+          "products[0].features[3]": {
+            "text": "trusted person network允许代理间协调计划",
+            "source_hash": "b39310902f8017e41948ff91f3f1de6f237240556f7fed1404f0fbf59232de72",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-10-01T16:28:18.725Z",
+            "status": "translated"
+          },
+          "products[1].features[2]": {
             "text": "Instinct Concierge 可拨打电话进行预约",
             "source_hash": "8cf1387f7d2d3842583439c2b676eb1c1f938f3b7a6f1f0f096a6264fb3d6c7a",
             "provider": "deepseek",
@@ -11707,7 +8705,7 @@
             "translated_at": "2026-10-01T13:24:55.946Z",
             "status": "translated"
           },
-          "products[0].features[3]": {
+          "products[1].features[3]": {
             "text": "Trusted Person Network 允许用户代理与朋友代理协调计划",
             "source_hash": "7934683553929c31f67167c2d70fc4dbaf2816c1bb18d4eb8bd55738c3553887",
             "provider": "deepseek",
@@ -11715,7 +8713,7 @@
             "translated_at": "2026-10-01T13:24:55.946Z",
             "status": "translated"
           },
-          "products[0].features[4]": {
+          "products[1].features[4]": {
             "text": "连接 Google Workspace（Gmail、Calendar、Drive、Docs、Sheets、Slides、Tasks）",
             "source_hash": "87ea2345349511bcdfa223b1048fa5a58112832c5cc97d3d7c8f570618ec0a7f",
             "provider": "deepseek",
@@ -11723,7 +8721,15 @@
             "translated_at": "2026-10-01T13:24:55.946Z",
             "status": "translated"
           },
-          "comparisons[1].scenario": {
+          "comparisons[0].scenario": {
+            "text": "个人AI助手，提供与Instinct类似的功能，并深度整合Meta社交产品，可监控和总结Instagram私信、Facebook群组、Marketplace列表等",
+            "source_hash": "35456631823e6ce3d7c9ba1d95dbe763ca49773b73daf3cc9afddf24183a43bc",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-10-01T16:28:18.725Z",
+            "status": "translated"
+          },
+          "comparisons[2].scenario": {
             "text": "跨 iPhone、Mac、Apple Watch 和 Vision Pro 的系统级个人助手，通过 App Intents 执行跨应用操作",
             "source_hash": "3eac1bc480b825b5b97ded779ccba66562d388f12e5720bca0b2bc1f0a7e0316",
             "provider": "deepseek",
@@ -123731,7 +120737,7 @@
     },
     {
       "schema_version": "FUNDING-INSIGHT-V1.3",
-      "funding_insight_id": "FI-e57c1a5088b84f89",
+      "funding_insight_id": "FI-d0c7f81818282df9",
       "triggered_by_event_id": "EV-276878c26b2a06dc",
       "as_of_date": "2026-08-27",
       "company": {
@@ -123769,7 +120775,7 @@
             "quote_hash": "6e8d2ccaf40bcfb891840e1c27b1e9f1a20fea016800720823adb45a784556df"
           }
         ],
-        "application_entity_id": "EN-26e59d6a3c92de80",
+        "application_entity_id": "FICO-instinct",
         "canonical_entity_consistent": false
       },
       "financing": {
@@ -123884,13 +120890,13 @@
           "known_round_totals": [
             {
               "currency": "USD",
-              "value": 2850000000,
+              "value": 1350000000,
               "min_value": null,
               "max_value": null,
               "unit": "base",
               "round_count": 2,
               "status": "exact",
-              "display_zh": "28.5 亿美元"
+              "display_zh": "13.5 亿美元"
             }
           ],
           "historical_round_count": 2
@@ -124035,6 +121041,15 @@
       ],
       "funding_history": [
         {
+          "event_id": "EV-35fa913e4709b4d6",
+          "date": "2026-09-28",
+          "title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
+          "amount": "$1B",
+          "source_refs": [
+            "SA-23b0d12bda445d20"
+          ]
+        },
+        {
           "event_id": "EV-276878c26b2a06dc",
           "date": "2026-08-26",
           "title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
@@ -124117,28 +121132,29 @@
         "EV-276878c26b2a06dc"
       ],
       "aggregation": {
-        "key": "EN-26e59d6a3c92de80|series_b|USD:exact:350000000:::|2026-08-26",
+        "key": "FICO-instinct|series_b|USD:exact:350000000:::|2026-08-26",
         "event_count": 1,
         "strategy": "reviewed_company_round_date_and_normalized_amount"
       },
       "historical_rounds": [
         {
-          "funding_insight_id": "FI-bec0e83da6ce7a20",
+          "funding_insight_id": "FI-4b143304af694a92",
           "event_ids": [
+            "EV-35fa913e4709b4d6",
             "EV-861d4440dcbb9b09"
           ],
           "round": "C轮",
           "round_code": "series_c",
           "round_original": "C轮",
-          "amount_original": "$2.5 billion",
+          "amount_original": "$1B",
           "amount_normalized": {
             "currency": "USD",
-            "value": 2500000000,
+            "value": 1000000000,
             "min_value": null,
             "max_value": null,
             "unit": "base",
             "status": "exact",
-            "display_zh": "25 亿美元"
+            "display_zh": "10 亿美元"
           },
           "announced_at": "2026-09-28",
           "disclosure_status": "disclosed",
@@ -124147,7 +121163,7 @@
           "is_current": false
         },
         {
-          "funding_insight_id": "FI-e57c1a5088b84f89",
+          "funding_insight_id": "FI-d0c7f81818282df9",
           "event_ids": [
             "EV-276878c26b2a06dc"
           ],
@@ -330032,6 +327048,26 @@
         "event_id": "EV-ef7346378fcf9746",
         "company": "SpaceX",
         "reason": "证据仅提及 SpaceX 是火箭、卫星和人工智能公司，未提供 AI 业务的具体产品与主营范围，不足以确定分类。"
+      }
+    ],
+    "publication_pending": [
+      {
+        "event_id": "EV-3b424be9d0d68b87",
+        "company": "Dazzle",
+        "reason": "本篇为产品报道，原文明确 800 万美元种子轮发生在 last December；不可作为 2026-09-29 新融资发布。待按原始融资披露日重新入库。",
+        "source_url": "https://techcrunch.com/2026/09/29/with-dazzle-marissa-mayer-bets-your-camera-roll-has-more-info-on-your-life-than-your-inbox/"
+      },
+      {
+        "event_id": "EV-bbea3352983c2033",
+        "company": "Outmarket AI",
+        "reason": "原文日期为 Sept. 25, 2026，明确为 3450 万美元 Series B；当前提取为 9 月 28 日多轮融资，需修复事实日期与轮次后再发布。",
+        "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html"
+      },
+      {
+        "event_id": "EV-34f58445170831ae",
+        "company": "Snorkel AI",
+        "reason": "报道原文明确 9 月 22 日完成 3.5 亿美元 E 轮；当前融资日期误用了 9 月 28 日文章日期。待修复事件日期，不能标为当日新融资。",
+        "source_url": "https://news.pedaily.cn/202609/569716.shtml"
       }
     ]
   }

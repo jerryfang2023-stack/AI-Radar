@@ -2,6 +2,16 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { taxonomy,classificationInput,classificationProblems,displayClassification } from '../taxonomy.mjs';
+import { publicationHold } from '../catalog.mjs';
+
+test('disclosure review holds survive aggregation without changing sector classifications',()=>{
+ const hold={event_id:'EV-old',status:'pending',source_url:'https://example.com/original',reason:'融资日期待核验'};
+ const review={version:'FINANCING-PUBLICATION-REVIEW-1',holds:[hold]};
+ assert.equal(publicationHold({triggered_by_event_id:'EV-new',source_event_ids:['EV-old','EV-new']},review),hold);
+ assert.equal(publicationHold({triggered_by_event_id:'EV-other'},review),null);
+ assert.equal(publicationHold({},null),null);
+ assert.throws(()=>publicationHold({}, {version:'invalid',holds:[]}),/invalid_financing_publication_review/);
+});
 
 test('consumer companion devices survive scope migration; mixed robot portfolios remain reviewable',()=>{
   const registry=JSON.parse(fs.readFileSync(new URL('../../../01-SiteV2/content/12-applications/financing-taxonomy/decisions.json',import.meta.url))).decisions;

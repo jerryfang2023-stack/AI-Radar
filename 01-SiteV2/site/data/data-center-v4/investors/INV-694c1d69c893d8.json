@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 10,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "co_lead": 3,
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 2,
       "lead": 2,
       "participant": 5
     },
@@ -90,7 +90,7 @@
         "name": "Fireworks AI Inc."
       },
       {
-        "entity_id": "EN-26e59d6a3c92de80",
+        "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
       },
@@ -210,11 +210,11 @@
       },
       {
         "activity_id": "IA-5e5d884256eeadb6",
-        "funding_insight_id": "FI-e57c1a5088b84f89",
+        "funding_insight_id": "FI-d0c7f81818282df9",
         "event_ids": [
           "EV-276878c26b2a06dc"
         ],
-        "company_entity_id": "EN-26e59d6a3c92de80",
+        "company_entity_id": "FICO-instinct",
         "company_canonical_entity_id": "",
         "company_name": "Instinct",
         "round": "B轮",
@@ -532,11 +532,12 @@
       },
       {
         "activity_id": "IA-377070b1425856c0",
-        "funding_insight_id": "FI-bec0e83da6ce7a20",
+        "funding_insight_id": "FI-4b143304af694a92",
         "event_ids": [
+          "EV-35fa913e4709b4d6",
           "EV-861d4440dcbb9b09"
         ],
-        "company_entity_id": "EN-26e59d6a3c92de80",
+        "company_entity_id": "FICO-instinct",
         "company_canonical_entity_id": "",
         "company_name": "Instinct",
         "round": "历史轮次未披露",
@@ -559,38 +560,6 @@
             "source_content_hash": "ae9ae5e9661bb061",
             "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
             "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-573f3429785415dc",
-        "funding_insight_id": "FI-1b6dd112c647d4a1",
-        "event_ids": [
-          "EV-35fa913e4709b4d6"
-        ],
-        "company_entity_id": "EN-b4c73396844f7d05",
-        "company_canonical_entity_id": "",
-        "company_name": "Instinct",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "Series B 联合领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-70f948c95dacb2f0",
-            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-            "source_content_hash": "0773286daf5bf525",
-            "quote": "it co-led the $250 million Series B in August with Index Ventures",
-            "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
           }
         ]
       },
@@ -715,14 +684,6 @@
         "source_content_hash": "ae9ae5e9661bb061",
         "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
         "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
-      },
-      {
-        "source_id": "FISRC-70f948c95dacb2f0",
-        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-        "source_content_hash": "0773286daf5bf525",
-        "quote": "it co-led the $250 million Series B in August with Index Ventures",
-        "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
       },
       {
         "source_id": "FISRC-714290c8e2823c5a",
@@ -898,14 +859,6 @@
     "translations": {
       "zh-CN": {
         "activities[10].role": {
-          "text": "Series B 联合领投",
-          "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-10-01T16:14:28.584Z",
-          "status": "translated"
-        },
-        "activities[11].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",

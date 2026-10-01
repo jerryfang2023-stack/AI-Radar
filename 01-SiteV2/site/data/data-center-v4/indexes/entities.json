@@ -48815,9 +48815,9 @@
       "investor_kind_label": "投资机构",
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
-      "current_round_count": 18,
+      "current_round_count": 17,
       "historical_or_ambiguous_count": 4,
-      "portfolio_company_count": 16,
+      "portfolio_company_count": 15,
       "market_regions": [
         "GLOBAL"
       ],
@@ -48830,7 +48830,7 @@
         "historical_or_ambiguous": 4,
         "lead": 8,
         "other_current_round": 1,
-        "participant": 8
+        "participant": 7
       },
       "round_codes": [
         "multi_round",
@@ -48882,7 +48882,7 @@
             "source_id": "FISRC-131c3b05243369a2"
           },
           {
-            "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $2.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-560cbbccadfe271d"
           }
         ],
@@ -48943,7 +48943,7 @@
         "coverage_status": "researched",
         "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
-      "activity_count": 22,
+      "activity_count": 21,
       "portfolio_companies": [
         {
           "entity_id": "EN-9fe430e5274621be",
@@ -48981,12 +48981,7 @@
           "name": "Flow Engineering"
         },
         {
-          "entity_id": "EN-26e59d6a3c92de80",
-          "canonical_entity_id": "",
-          "name": "Instinct"
-        },
-        {
-          "entity_id": "EN-b4c73396844f7d05",
+          "entity_id": "FICO-instinct",
           "canonical_entity_id": "",
           "name": "Instinct"
         },
@@ -49004,6 +48999,11 @@
           "entity_id": "EN-03abf933127f01f3",
           "canonical_entity_id": "",
           "name": "Probook"
+        },
+        {
+          "entity_id": "FICO-d750f652e8f2dd92",
+          "canonical_entity_id": "",
+          "name": "Profound"
         }
       ],
       "latest_activities": [
@@ -49038,42 +49038,13 @@
           "role_code": "participant"
         },
         {
-          "activity_id": "IA-a05927ea02e67107",
-          "funding_insight_id": "FI-bec0e83da6ce7a20",
+          "activity_id": "IA-0132c556ddf57d3c",
+          "funding_insight_id": "FI-4b143304af694a92",
           "event_ids": [
+            "EV-35fa913e4709b4d6",
             "EV-861d4440dcbb9b09"
           ],
-          "company_entity_id": "EN-26e59d6a3c92de80",
-          "company_canonical_entity_id": "",
-          "company_name": "Instinct",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "$2.5 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "25 亿美元"
-          },
-          "announced_at": "2026-09-28",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-1caf75e79b684b55",
-          "funding_insight_id": "FI-1b6dd112c647d4a1",
-          "event_ids": [
-            "EV-35fa913e4709b4d6"
-          ],
-          "company_entity_id": "EN-b4c73396844f7d05",
+          "company_entity_id": "FICO-instinct",
           "company_canonical_entity_id": "",
           "company_name": "Instinct",
           "round": "C轮",
@@ -49096,6 +49067,36 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-dc7d74542cf7c9a9",
+          "funding_insight_id": "FI-28129028b23f82cb",
+          "event_ids": [
+            "EV-05b635c3958e4591"
+          ],
+          "company_entity_id": "FICO-d750f652e8f2dd92",
+          "company_canonical_entity_id": "",
+          "company_name": "Profound",
+          "round": "D轮",
+          "round_code": "series_d",
+          "round_original": "D轮",
+          "amount_original": "$180M",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 180000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "1.8 亿美元"
+          },
+          "announced_at": "2026-09-15",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
         }
       ],
       "translations": {
@@ -51070,9 +51071,9 @@
       "investor_kind_label": "投资机构",
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
-      "current_round_count": 11,
+      "current_round_count": 10,
       "historical_or_ambiguous_count": 4,
-      "portfolio_company_count": 9,
+      "portfolio_company_count": 8,
       "market_regions": [
         "GLOBAL"
       ],
@@ -51084,7 +51085,7 @@
         "co_lead": 1,
         "historical_or_ambiguous": 4,
         "lead": 3,
-        "participant": 7
+        "participant": 6
       },
       "round_codes": [
         "seed",
@@ -51147,7 +51148,7 @@
             "source_id": "FISRC-8b2ed67c1554bee8"
           },
           {
-            "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $2.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
+            "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-560cbbccadfe271d"
           },
           {
@@ -51232,7 +51233,7 @@
         "coverage_status": "researched",
         "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
-      "activity_count": 15,
+      "activity_count": 14,
       "portfolio_companies": [
         {
           "entity_id": "EN-c70eca6b0f88f44d",
@@ -51245,12 +51246,7 @@
           "name": "Databricks"
         },
         {
-          "entity_id": "EN-26e59d6a3c92de80",
-          "canonical_entity_id": "",
-          "name": "Instinct"
-        },
-        {
-          "entity_id": "EN-b4c73396844f7d05",
+          "entity_id": "FICO-instinct",
           "canonical_entity_id": "",
           "name": "Instinct"
         },
@@ -51312,42 +51308,13 @@
           "role_code": "participant"
         },
         {
-          "activity_id": "IA-784a9d821f49efc8",
-          "funding_insight_id": "FI-bec0e83da6ce7a20",
+          "activity_id": "IA-f208bdaeab37666b",
+          "funding_insight_id": "FI-4b143304af694a92",
           "event_ids": [
+            "EV-35fa913e4709b4d6",
             "EV-861d4440dcbb9b09"
           ],
-          "company_entity_id": "EN-26e59d6a3c92de80",
-          "company_canonical_entity_id": "",
-          "company_name": "Instinct",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "$2.5 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "25 亿美元"
-          },
-          "announced_at": "2026-09-28",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-22172fb8851abb70",
-          "funding_insight_id": "FI-1b6dd112c647d4a1",
-          "event_ids": [
-            "EV-35fa913e4709b4d6"
-          ],
-          "company_entity_id": "EN-b4c73396844f7d05",
+          "company_entity_id": "FICO-instinct",
           "company_canonical_entity_id": "",
           "company_name": "Instinct",
           "round": "C轮",
@@ -51370,6 +51337,36 @@
           "scope": "current_round",
           "role": "本轮参投",
           "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-a29588ce0f73d8a1",
+          "funding_insight_id": "FI-f55b62cf10cb7c98",
+          "event_ids": [
+            "EV-f5dd6dec49ad83aa"
+          ],
+          "company_entity_id": "EN-c70eca6b0f88f44d",
+          "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+          "company_name": "Anthropic",
+          "round": "G轮",
+          "round_code": "series_g",
+          "round_original": "G轮",
+          "amount_original": "$30 billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 30000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "300 亿美元"
+          },
+          "announced_at": "2026-08-10",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
         }
       ],
       "translations": {
@@ -51661,7 +51658,7 @@
       "classification_confidence": "evidence_bounded",
       "collection_status": "evidence_backed",
       "current_round_count": 10,
-      "historical_or_ambiguous_count": 3,
+      "historical_or_ambiguous_count": 2,
       "portfolio_company_count": 8,
       "market_regions": [
         "GLOBAL"
@@ -51672,7 +51669,7 @@
       "latest_disclosed_at": "2026-09-08",
       "role_counts": {
         "co_lead": 3,
-        "historical_or_ambiguous": 3,
+        "historical_or_ambiguous": 2,
         "lead": 2,
         "participant": 5
       },
@@ -51844,7 +51841,7 @@
         "coverage_status": "researched",
         "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
-      "activity_count": 13,
+      "activity_count": 12,
       "portfolio_companies": [
         {
           "entity_id": "EN-0caee180da9d0f3f",
@@ -51852,7 +51849,7 @@
           "name": "Fireworks AI Inc."
         },
         {
-          "entity_id": "EN-26e59d6a3c92de80",
+          "entity_id": "FICO-instinct",
           "canonical_entity_id": "",
           "name": "Instinct"
         },
@@ -51952,11 +51949,11 @@
         },
         {
           "activity_id": "IA-5e5d884256eeadb6",
-          "funding_insight_id": "FI-e57c1a5088b84f89",
+          "funding_insight_id": "FI-d0c7f81818282df9",
           "event_ids": [
             "EV-276878c26b2a06dc"
           ],
-          "company_entity_id": "EN-26e59d6a3c92de80",
+          "company_entity_id": "FICO-instinct",
           "company_canonical_entity_id": "",
           "company_name": "Instinct",
           "round": "B轮",
@@ -54632,327 +54629,6 @@
             "provider": "deepseek",
             "model": "deepseek-v4-flash",
             "translated_at": "2026-09-28T00:54:30.167Z",
-            "status": "translated"
-          }
-        }
-      }
-    },
-    {
-      "id": "INV-1996308273c587",
-      "name": "Benchmark",
-      "aliases": [
-        "Benchmark Capital"
-      ],
-      "canonical_entity_id": null,
-      "investor_kind": "investment_institution",
-      "investor_kind_label": "投资机构",
-      "classification_confidence": "evidence_bounded",
-      "collection_status": "evidence_backed",
-      "current_round_count": 6,
-      "historical_or_ambiguous_count": 2,
-      "portfolio_company_count": 5,
-      "market_regions": [
-        "GLOBAL"
-      ],
-      "china_market_activity_count": 0,
-      "china_market_company_count": 0,
-      "first_disclosed_at": "2026-08-21",
-      "latest_disclosed_at": "2026-09-28",
-      "role_counts": {
-        "co_lead": 2,
-        "historical_or_ambiguous": 2,
-        "participant": 4
-      },
-      "round_codes": [
-        "series_a_extension",
-        "series_b",
-        "series_c",
-        "series_e"
-      ],
-      "public_profile": {
-        "summary": "Benchmark 是总部位于加州的风险投资机构，长期投资早期科技公司。2026年媒体报道指出，该机构新设一支7.5亿美元早期基金及一支12.5亿美元成长基金；这标志着其首次设立成长基金。媒体还报道 Benchmark 曾投资 eBay、Snap、Uber、Twitter 与 Cerebras 等公司。报道中的单项回报数字不等于基金整体业绩。",
-        "facts": [
-          {
-            "field": "headquarters",
-            "label": "官网列示办公地点",
-            "value": [
-              "140 New Montgomery Street, San Francisco, CA 94105",
-              "2965 Woodside Road, Woodside, CA 94062"
-            ],
-            "source_id": "benchmark_home"
-          },
-          {
-            "field": "investment_stages",
-            "label": "媒体报道的投资阶段",
-            "value": [
-              "早期",
-              "成长期（2026年首次设立成长基金）"
-            ],
-            "source_id": "benchmark_2026"
-          },
-          {
-            "field": "new_funds",
-            "label": "2026年新基金报道规模",
-            "value": "两支基金合计约20亿美元：7.5亿美元早期基金及12.5亿美元成长基金；媒体报道口径",
-            "source_id": "benchmark_2026"
-          }
-        ],
-        "milestones": [
-          {
-            "date": "2026-06",
-            "description": "媒体报道 Benchmark 完成7.5亿美元早期基金及12.5亿美元成长基金募集。",
-            "source_id": "benchmark_2026"
-          }
-        ],
-        "track_record": [
-          {
-            "description": "TechCrunch报道列举 Benchmark 对 eBay、Snap、Uber、Twitter 的早期投资。",
-            "source_id": "benchmark_2026"
-          },
-          {
-            "description": "TechCrunch报道表示 Cerebras IPO 按发行价计算为 Benchmark 带来约32.5亿美元回报；这是媒体报道的单一投资结果，不代表基金整体回报率。",
-            "source_id": "benchmark_2026"
-          },
-          {
-            "description": "2026年融资报道将 Benchmark 列为 Instinct 融资轮联合领投方。",
-            "source_id": "benchmark_instinct"
-          },
-          {
-            "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $2.5 billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-560cbbccadfe271d"
-          },
-          {
-            "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-61aa8db010b34dfa"
-          },
-          {
-            "description": "融资来源记录：Instinct · B轮 · 2026-08-26 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-6050aa46cf9e60a2"
-          }
-        ],
-        "contacts": [
-          {
-            "kind": "website",
-            "label": "官方网站",
-            "value": "Benchmark",
-            "url": "https://www.benchmark.com/",
-            "source_id": "benchmark_home"
-          },
-          {
-            "kind": "address",
-            "label": "旧金山办公室",
-            "value": "140 New Montgomery Street, San Francisco, California 94105",
-            "url": "https://www.benchmark.com/",
-            "source_id": "benchmark_home"
-          },
-          {
-            "kind": "address",
-            "label": "Woodside办公室",
-            "value": "2965 Woodside Road, Woodside, California 94062",
-            "url": "https://www.benchmark.com/",
-            "source_id": "benchmark_home"
-          }
-        ],
-        "sources": [
-          {
-            "source_id": "benchmark_home",
-            "source_url": "https://www.benchmark.com/",
-            "source_title": "Benchmark",
-            "source_content_hash": "1f7e71b7cf9c13dde9c4f586a01cf29b6e7b312f6a284cc01ec599eee62e9d4c",
-            "quote": "Benchmark 官网列示旧金山 140 New Montgomery Street 及 Woodside 2965 Woodside Road 两处办公地址。",
-            "quote_hash": "6c8ad24cd3dea5cd4060327d73881953a64dae79871893175ccc8c88f170d8e4"
-          },
-          {
-            "source_id": "benchmark_2026",
-            "source_url": "https://techcrunch.com/2026/06/03/benchmark-raises-its-first-ever-growth-fund-as-part-of-2b-capital-raise/",
-            "source_title": "Benchmark raises its first-ever growth fund as part of $2B capital haul | TechCrunch",
-            "source_content_hash": "68f5a265afc9e42e3db2d691ad590ae6e59315cebe48b974910dcefa0242d87c",
-            "quote": "TechCrunch 报道 Benchmark 新基金合计约20亿美元，包括7.5亿美元早期基金和12.5亿美元成长基金；报道列举其对 eBay、Snap、Uber、Twitter、Cerebras 等公司的投资。",
-            "quote_hash": "2f9b2ff9d6897b23a89d7adeae399512061aa077c1906e272dde36871ce60134"
-          },
-          {
-            "source_id": "benchmark_instinct",
-            "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
-            "source_title": "Viral AI startup Instinct has raised $350M at a $2.5B valuation | TechCrunch",
-            "source_content_hash": "28377be7f767ea42403462607928add95907a070fab77b20440999d53d22da65",
-            "quote": "TechCrunch 报道，Instinct 2026年B轮由 Index Ventures 与 Benchmark 联合领投。",
-            "quote_hash": "670df8237bdcca7f69e9383728e8fb609db69e4dc603334230596f80fba3706c"
-          },
-          {
-            "source_id": "FISRC-560cbbccadfe271d",
-            "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
-            "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
-            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
-            "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
-          },
-          {
-            "source_id": "FISRC-61aa8db010b34dfa",
-            "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-            "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-            "source_content_hash": "274ba4a54870c633",
-            "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-            "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
-          },
-          {
-            "source_id": "FISRC-6050aa46cf9e60a2",
-            "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
-            "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
-            "source_content_hash": "12db016e60d4c1b4",
-            "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
-            "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
-          }
-        ],
-        "last_verified_at": "2026-09-26",
-        "profile_type": "organization",
-        "coverage_status": "researched",
-        "coverage_note": "规模和投资结果取自媒体报道，官网公开页仅核验办公地点；未据单笔回报推算机构整体回报率。",
-        "identity_status": "verified"
-      },
-      "activity_count": 8,
-      "portfolio_companies": [
-        {
-          "entity_id": "EN-4b6cef91ffb05303",
-          "canonical_entity_id": "",
-          "name": "Cognition AI"
-        },
-        {
-          "entity_id": "EN-26e59d6a3c92de80",
-          "canonical_entity_id": "",
-          "name": "Instinct"
-        },
-        {
-          "entity_id": "EN-b4c73396844f7d05",
-          "canonical_entity_id": "",
-          "name": "Instinct"
-        },
-        {
-          "entity_id": "EN-8d8b8c50b8da244b",
-          "canonical_entity_id": "",
-          "name": "Spear Street Technology"
-        },
-        {
-          "entity_id": "EN-607a596a603dd679",
-          "canonical_entity_id": "",
-          "name": "Starcloud"
-        }
-      ],
-      "latest_activities": [
-        {
-          "activity_id": "IA-a6a54dfad00f829e",
-          "funding_insight_id": "FI-bec0e83da6ce7a20",
-          "event_ids": [
-            "EV-861d4440dcbb9b09"
-          ],
-          "company_entity_id": "EN-26e59d6a3c92de80",
-          "company_canonical_entity_id": "",
-          "company_name": "Instinct",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "$2.5 billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2500000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "25 亿美元"
-          },
-          "announced_at": "2026-09-28",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-62cff23e6adc3abc",
-          "funding_insight_id": "FI-1b6dd112c647d4a1",
-          "event_ids": [
-            "EV-35fa913e4709b4d6"
-          ],
-          "company_entity_id": "EN-b4c73396844f7d05",
-          "company_canonical_entity_id": "",
-          "company_name": "Instinct",
-          "round": "C轮",
-          "round_code": "series_c",
-          "round_original": "C轮",
-          "amount_original": "$1B",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 1000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "10 亿美元"
-          },
-          "announced_at": "2026-09-28",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        },
-        {
-          "activity_id": "IA-d9924d1ebf89db62",
-          "funding_insight_id": "FI-d9fc0a409d33d577",
-          "event_ids": [
-            "EV-6d6715223e80e7a6"
-          ],
-          "company_entity_id": "EN-4b6cef91ffb05303",
-          "company_canonical_entity_id": "",
-          "company_name": "Cognition AI",
-          "round": "E轮",
-          "round_code": "series_e",
-          "round_original": "E轮",
-          "amount_original": "$2 Billion",
-          "amount_normalized": {
-            "currency": "USD",
-            "value": 2000000000,
-            "min_value": null,
-            "max_value": null,
-            "unit": "base",
-            "status": "exact",
-            "display_zh": "20 亿美元"
-          },
-          "announced_at": "2026-09-08",
-          "market_region": "GLOBAL",
-          "china_market_match": false,
-          "disclosure_status": "disclosed",
-          "scope": "current_round",
-          "role": "本轮参投",
-          "role_code": "participant"
-        }
-      ],
-      "translations": {
-        "zh-CN": {
-          "public_profile.track_record[0].description": {
-            "text": "TechCrunch报道列举 Benchmark 对 eBay、Snap、Uber、Twitter 的早期投资。",
-            "source_hash": "448b35a89f4720aa59850c61f085da233cb2981693d002d30752a59398ba7205",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-09-28T00:54:33.721Z",
-            "status": "translated"
-          },
-          "public_profile.track_record[2].description": {
-            "text": "2026年融资报道将 Benchmark 列为 Instinct 融资轮联合领投方。",
-            "source_hash": "e1650d5a9a1316521e6844db134a4e4f2952c0f611616f071c9ae18c1bbd1a47",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-09-28T00:54:33.721Z",
-            "status": "translated"
-          },
-          "public_profile.contacts[2].label": {
-            "text": "Woodside办公室",
-            "source_hash": "d67a89b466608ef741744ab4f2d9618e26f3c69a1747a0f62e1b4f34f7f256c0",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-09-28T00:54:33.721Z",
             "status": "translated"
           }
         }
@@ -57916,6 +57592,323 @@
           "public_profile.track_record[4].description": {
             "text": "融资来源记录：Recursive Superintelligence Inc. · 轮次未披露 · 2026-05-13 · 本轮领投 · $650 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_hash": "011e3682947ef1e3a7a7322b1b988831e72f82fcee26b9740fc68ff5259be5cb",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-28T00:54:33.721Z",
+            "status": "translated"
+          }
+        }
+      }
+    },
+    {
+      "id": "INV-1996308273c587",
+      "name": "Benchmark",
+      "aliases": [
+        "Benchmark Capital"
+      ],
+      "canonical_entity_id": null,
+      "investor_kind": "investment_institution",
+      "investor_kind_label": "投资机构",
+      "classification_confidence": "evidence_bounded",
+      "collection_status": "evidence_backed",
+      "current_round_count": 5,
+      "historical_or_ambiguous_count": 1,
+      "portfolio_company_count": 4,
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_activity_count": 0,
+      "china_market_company_count": 0,
+      "first_disclosed_at": "2026-08-21",
+      "latest_disclosed_at": "2026-09-28",
+      "role_counts": {
+        "co_lead": 2,
+        "historical_or_ambiguous": 1,
+        "participant": 3
+      },
+      "round_codes": [
+        "series_a_extension",
+        "series_b",
+        "series_c",
+        "series_e"
+      ],
+      "public_profile": {
+        "summary": "Benchmark 是总部位于加州的风险投资机构，长期投资早期科技公司。2026年媒体报道指出，该机构新设一支7.5亿美元早期基金及一支12.5亿美元成长基金；这标志着其首次设立成长基金。媒体还报道 Benchmark 曾投资 eBay、Snap、Uber、Twitter 与 Cerebras 等公司。报道中的单项回报数字不等于基金整体业绩。",
+        "facts": [
+          {
+            "field": "headquarters",
+            "label": "官网列示办公地点",
+            "value": [
+              "140 New Montgomery Street, San Francisco, CA 94105",
+              "2965 Woodside Road, Woodside, CA 94062"
+            ],
+            "source_id": "benchmark_home"
+          },
+          {
+            "field": "investment_stages",
+            "label": "媒体报道的投资阶段",
+            "value": [
+              "早期",
+              "成长期（2026年首次设立成长基金）"
+            ],
+            "source_id": "benchmark_2026"
+          },
+          {
+            "field": "new_funds",
+            "label": "2026年新基金报道规模",
+            "value": "两支基金合计约20亿美元：7.5亿美元早期基金及12.5亿美元成长基金；媒体报道口径",
+            "source_id": "benchmark_2026"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2026-06",
+            "description": "媒体报道 Benchmark 完成7.5亿美元早期基金及12.5亿美元成长基金募集。",
+            "source_id": "benchmark_2026"
+          }
+        ],
+        "track_record": [
+          {
+            "description": "TechCrunch报道列举 Benchmark 对 eBay、Snap、Uber、Twitter 的早期投资。",
+            "source_id": "benchmark_2026"
+          },
+          {
+            "description": "TechCrunch报道表示 Cerebras IPO 按发行价计算为 Benchmark 带来约32.5亿美元回报；这是媒体报道的单一投资结果，不代表基金整体回报率。",
+            "source_id": "benchmark_2026"
+          },
+          {
+            "description": "2026年融资报道将 Benchmark 列为 Instinct 融资轮联合领投方。",
+            "source_id": "benchmark_instinct"
+          },
+          {
+            "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-560cbbccadfe271d"
+          },
+          {
+            "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-61aa8db010b34dfa"
+          },
+          {
+            "description": "融资来源记录：Instinct · B轮 · 2026-08-26 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
+            "source_id": "FISRC-6050aa46cf9e60a2"
+          }
+        ],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官方网站",
+            "value": "Benchmark",
+            "url": "https://www.benchmark.com/",
+            "source_id": "benchmark_home"
+          },
+          {
+            "kind": "address",
+            "label": "旧金山办公室",
+            "value": "140 New Montgomery Street, San Francisco, California 94105",
+            "url": "https://www.benchmark.com/",
+            "source_id": "benchmark_home"
+          },
+          {
+            "kind": "address",
+            "label": "Woodside办公室",
+            "value": "2965 Woodside Road, Woodside, California 94062",
+            "url": "https://www.benchmark.com/",
+            "source_id": "benchmark_home"
+          }
+        ],
+        "sources": [
+          {
+            "source_id": "benchmark_home",
+            "source_url": "https://www.benchmark.com/",
+            "source_title": "Benchmark",
+            "source_content_hash": "1f7e71b7cf9c13dde9c4f586a01cf29b6e7b312f6a284cc01ec599eee62e9d4c",
+            "quote": "Benchmark 官网列示旧金山 140 New Montgomery Street 及 Woodside 2965 Woodside Road 两处办公地址。",
+            "quote_hash": "6c8ad24cd3dea5cd4060327d73881953a64dae79871893175ccc8c88f170d8e4"
+          },
+          {
+            "source_id": "benchmark_2026",
+            "source_url": "https://techcrunch.com/2026/06/03/benchmark-raises-its-first-ever-growth-fund-as-part-of-2b-capital-raise/",
+            "source_title": "Benchmark raises its first-ever growth fund as part of $2B capital haul | TechCrunch",
+            "source_content_hash": "68f5a265afc9e42e3db2d691ad590ae6e59315cebe48b974910dcefa0242d87c",
+            "quote": "TechCrunch 报道 Benchmark 新基金合计约20亿美元，包括7.5亿美元早期基金和12.5亿美元成长基金；报道列举其对 eBay、Snap、Uber、Twitter、Cerebras 等公司的投资。",
+            "quote_hash": "2f9b2ff9d6897b23a89d7adeae399512061aa077c1906e272dde36871ce60134"
+          },
+          {
+            "source_id": "benchmark_instinct",
+            "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation/",
+            "source_title": "Viral AI startup Instinct has raised $350M at a $2.5B valuation | TechCrunch",
+            "source_content_hash": "28377be7f767ea42403462607928add95907a070fab77b20440999d53d22da65",
+            "quote": "TechCrunch 报道，Instinct 2026年B轮由 Index Ventures 与 Benchmark 联合领投。",
+            "quote_hash": "670df8237bdcca7f69e9383728e8fb609db69e4dc603334230596f80fba3706c"
+          },
+          {
+            "source_id": "FISRC-560cbbccadfe271d",
+            "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+            "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
+            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+            "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
+          },
+          {
+            "source_id": "FISRC-61aa8db010b34dfa",
+            "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
+            "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
+            "source_content_hash": "274ba4a54870c633",
+            "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
+            "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+          },
+          {
+            "source_id": "FISRC-6050aa46cf9e60a2",
+            "source_url": "https://techcrunch.com/2026/08/26/viral-ai-startup-instinct-has-raised-350-million-at-a-2-5-billion-valuation",
+            "source_title": "爆火AI初创公司Instinct以25亿美元估值融资3.5亿美元",
+            "source_content_hash": "12db016e60d4c1b4",
+            "quote": "That new funding round was co-led by Index Ventures and Benchmark, the Journal reported.",
+            "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
+          }
+        ],
+        "last_verified_at": "2026-09-26",
+        "profile_type": "organization",
+        "coverage_status": "researched",
+        "coverage_note": "规模和投资结果取自媒体报道，官网公开页仅核验办公地点；未据单笔回报推算机构整体回报率。",
+        "identity_status": "verified"
+      },
+      "activity_count": 6,
+      "portfolio_companies": [
+        {
+          "entity_id": "EN-4b6cef91ffb05303",
+          "canonical_entity_id": "",
+          "name": "Cognition AI"
+        },
+        {
+          "entity_id": "FICO-instinct",
+          "canonical_entity_id": "",
+          "name": "Instinct"
+        },
+        {
+          "entity_id": "EN-8d8b8c50b8da244b",
+          "canonical_entity_id": "",
+          "name": "Spear Street Technology"
+        },
+        {
+          "entity_id": "EN-607a596a603dd679",
+          "canonical_entity_id": "",
+          "name": "Starcloud"
+        }
+      ],
+      "latest_activities": [
+        {
+          "activity_id": "IA-2564474cc866c8f4",
+          "funding_insight_id": "FI-4b143304af694a92",
+          "event_ids": [
+            "EV-35fa913e4709b4d6",
+            "EV-861d4440dcbb9b09"
+          ],
+          "company_entity_id": "FICO-instinct",
+          "company_canonical_entity_id": "",
+          "company_name": "Instinct",
+          "round": "C轮",
+          "round_code": "series_c",
+          "round_original": "C轮",
+          "amount_original": "$1B",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 1000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "10 亿美元"
+          },
+          "announced_at": "2026-09-28",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-d9924d1ebf89db62",
+          "funding_insight_id": "FI-d9fc0a409d33d577",
+          "event_ids": [
+            "EV-6d6715223e80e7a6"
+          ],
+          "company_entity_id": "EN-4b6cef91ffb05303",
+          "company_canonical_entity_id": "",
+          "company_name": "Cognition AI",
+          "round": "E轮",
+          "round_code": "series_e",
+          "round_original": "E轮",
+          "amount_original": "$2 Billion",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 2000000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "20 亿美元"
+          },
+          "announced_at": "2026-09-08",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮参投",
+          "role_code": "participant"
+        },
+        {
+          "activity_id": "IA-c9e2fe4b41120547",
+          "funding_insight_id": "FI-d0c7f81818282df9",
+          "event_ids": [
+            "EV-276878c26b2a06dc"
+          ],
+          "company_entity_id": "FICO-instinct",
+          "company_canonical_entity_id": "",
+          "company_name": "Instinct",
+          "round": "B轮",
+          "round_code": "series_b",
+          "round_original": "B轮",
+          "amount_original": "$350 million",
+          "amount_normalized": {
+            "currency": "USD",
+            "value": 350000000,
+            "min_value": null,
+            "max_value": null,
+            "unit": "base",
+            "status": "exact",
+            "display_zh": "3.5 亿美元"
+          },
+          "announced_at": "2026-08-26",
+          "market_region": "GLOBAL",
+          "china_market_match": false,
+          "disclosure_status": "disclosed",
+          "scope": "current_round",
+          "role": "本轮联合领投",
+          "role_code": "co_lead"
+        }
+      ],
+      "translations": {
+        "zh-CN": {
+          "public_profile.track_record[0].description": {
+            "text": "TechCrunch报道列举 Benchmark 对 eBay、Snap、Uber、Twitter 的早期投资。",
+            "source_hash": "448b35a89f4720aa59850c61f085da233cb2981693d002d30752a59398ba7205",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-28T00:54:33.721Z",
+            "status": "translated"
+          },
+          "public_profile.track_record[2].description": {
+            "text": "2026年融资报道将 Benchmark 列为 Instinct 融资轮联合领投方。",
+            "source_hash": "e1650d5a9a1316521e6844db134a4e4f2952c0f611616f071c9ae18c1bbd1a47",
+            "provider": "deepseek",
+            "model": "deepseek-v4-flash",
+            "translated_at": "2026-09-28T00:54:33.721Z",
+            "status": "translated"
+          },
+          "public_profile.contacts[2].label": {
+            "text": "Woodside办公室",
+            "source_hash": "d67a89b466608ef741744ab4f2d9618e26f3c69a1747a0f62e1b4f34f7f256c0",
             "provider": "deepseek",
             "model": "deepseek-v4-flash",
             "translated_at": "2026-09-28T00:54:33.721Z",
@@ -157679,11 +157672,12 @@
         },
         {
           "activity_id": "IA-604ec80972d7e0fe",
-          "funding_insight_id": "FI-1b6dd112c647d4a1",
+          "funding_insight_id": "FI-4b143304af694a92",
           "event_ids": [
-            "EV-35fa913e4709b4d6"
+            "EV-35fa913e4709b4d6",
+            "EV-861d4440dcbb9b09"
           ],
-          "company_entity_id": "EN-b4c73396844f7d05",
+          "company_entity_id": "FICO-instinct",
           "company_canonical_entity_id": "",
           "company_name": "Instinct",
           "round": "历史轮次未披露",
@@ -296163,7 +296157,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "360 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "360 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -296241,7 +296235,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "360战投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "360战投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -297537,7 +297531,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "爱尔医疗 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "爱尔医疗 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -297968,7 +297962,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "安睿信杰 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "安睿信杰 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -298046,7 +298040,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "翱鹏投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "翱鹏投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -299974,7 +299968,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "北京智源研究院 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "北京智源研究院 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -300314,7 +300308,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "本草资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "本草资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -300712,7 +300706,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "财信金控 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "财信金控 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -300790,7 +300784,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "产业方 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "产业方 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301038,7 +301032,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "辰韬资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "辰韬资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301184,7 +301178,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "陈泳潮 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "陈泳潮 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301273,7 +301267,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "驰星资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "驰星资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301350,7 +301344,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "创东方投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "创东方投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301668,7 +301662,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "春山资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "春山资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301745,7 +301739,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "丹贝资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "丹贝资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301834,7 +301828,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "道彤投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "道彤投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301912,7 +301906,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "德宁资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "德宁资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -301990,7 +301984,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "德赛电池 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "德赛电池 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -302080,7 +302074,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "德石投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "德石投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -302157,7 +302151,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "典实资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "典实资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -302246,7 +302240,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "多家国内医药产业集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "多家国内医药产业集团 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -302326,7 +302320,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "多家一线投资机构 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "多家一线投资机构 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -302403,7 +302397,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "方圆资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "方圆资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -302492,7 +302486,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "复容投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "复容投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -302899,7 +302893,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "光速光合 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "光速光合 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -302990,7 +302984,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "光源资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "光源资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -303102,7 +303096,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "广汽资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "广汽资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -303516,7 +303510,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "硅港资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "硅港资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -303880,7 +303874,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "国科投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "国科投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -303959,7 +303953,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "国投创盈 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "国投创盈 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304071,7 +304065,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "国投招商 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "国投招商 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304149,7 +304143,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "国元股投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "国元股投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304226,7 +304220,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "哈工智能 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "哈工智能 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304303,7 +304297,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "海尔资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "海尔资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304415,7 +304409,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "海南省国资 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "海南省国资 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304492,7 +304486,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "寒武纪 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "寒武纪 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304569,7 +304563,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "杭实产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "杭实产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304646,7 +304640,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "合鼎共资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "合鼎共资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304886,7 +304880,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "合肥创新投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "合肥创新投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -304963,7 +304957,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "合肥高投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "合肥高投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -305040,7 +305034,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "何小鹏、顾宏地全资控制的关联主体 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "何小鹏、顾宏地全资控制的关联主体 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -305517,7 +305511,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "红杉中国 (HongShan) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "红杉中国 (HongShan) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -305828,7 +305822,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "红杉资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "红杉资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -305905,7 +305899,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "鸿石联合 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "鸿石联合 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -305995,7 +305989,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "鸿石资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "鸿石资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -306249,7 +306243,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "湖南电广传媒 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "湖南电广传媒 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -306326,7 +306320,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华安嘉业 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华安嘉业 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -306403,7 +306397,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "华柏基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华柏基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -306480,7 +306474,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华创资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华创资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -306923,7 +306917,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华盖资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华盖资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -307001,7 +306995,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华建函数投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华建函数投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -307078,7 +307072,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华金资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华金资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -307156,7 +307150,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华为哈勃 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华为哈勃 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -307304,7 +307298,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华为系 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华为系 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -307381,7 +307375,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华文投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华文投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -307458,7 +307452,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "华熙生物 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "华熙生物 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -307684,7 +307678,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "惠友投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "惠友投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -307774,7 +307768,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "惠友资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "惠友资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308024,7 +308018,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "吉德电器 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "吉德电器 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308101,7 +308095,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "吉利控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "吉利控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308178,7 +308172,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "既有投资方 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "既有投资方 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308436,7 +308430,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "嘉兴沃永 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "嘉兴沃永 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308513,7 +308507,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "稼沃资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "稼沃资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308602,7 +308596,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "见识资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "见识资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308679,7 +308673,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "建发新兴产业股权投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "建发新兴产业股权投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308917,7 +308911,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "金华金投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "金华金投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -308995,7 +308989,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "金科君创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "金科君创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -309072,7 +309066,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "金科文化 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "金科文化 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -309150,7 +309144,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "金马游乐 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "金马游乐 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -309697,7 +309691,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "京东科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "京东科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -309774,7 +309768,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "京国瑞 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "京国瑞 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -309851,7 +309845,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "经纬中国 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "经纬中国 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -310073,7 +310067,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "具身智能产业方 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "具身智能产业方 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -310150,7 +310144,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "君爵投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "君爵投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -310228,7 +310222,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "凯泰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "凯泰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -310306,7 +310300,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "柯力传感 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "柯力传感 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -310395,7 +310389,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "柯力股份 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "柯力股份 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -310473,7 +310467,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "科大讯飞 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "科大讯飞 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -310550,7 +310544,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "孔小仙 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "孔小仙 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -310639,7 +310633,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "库维尔基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "库维尔基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -311181,7 +311175,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "蓝微电子 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "蓝微电子 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -311629,7 +311623,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "力合科创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "力合科创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -311719,7 +311713,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "力合资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "力合资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -311796,7 +311790,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "立讯精密产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "立讯精密产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -311873,7 +311867,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "砺思资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "砺思资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -311950,7 +311944,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "联创永浚 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "联创永浚 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -312027,7 +312021,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "联和资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "联和资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -312117,7 +312111,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "量子基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "量子基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -312674,7 +312668,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "领屹资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "领屹资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -312751,7 +312745,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "龙鼎投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "龙鼎投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -312999,7 +312993,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "绿河投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "绿河投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -313077,7 +313071,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "绿洲资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "绿洲资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -313414,7 +313408,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "米哈游 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "米哈游 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -313538,7 +313532,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "民生证券投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "民生证券投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -313693,7 +313687,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "某产业资本方 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "某产业资本方 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -313771,7 +313765,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "宁波继联基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "宁波继联基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -313849,7 +313843,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "宁德时代旗下溥泉资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "宁德时代旗下溥泉资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -313926,7 +313920,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "农银国际 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "农银国际 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314004,7 +313998,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "浦耀信晔 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "浦耀信晔 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314082,7 +314076,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "七熹投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "七熹投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314194,7 +314188,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "启迪之星 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "启迪之星 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314305,7 +314299,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "钱江摩托 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "钱江摩托 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314382,7 +314376,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "青岛市国资 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "青岛市国资 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314459,7 +314453,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "青枫投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "青枫投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314536,7 +314530,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "清科控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "清科控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314615,7 +314609,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "清智资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "清智资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -314761,7 +314755,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "趣睡科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "趣睡科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -315185,7 +315179,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "赛富投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "赛富投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -315466,7 +315460,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "厦门国兴投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "厦门国兴投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -315543,7 +315537,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "厦门建发 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "厦门建发 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -316132,7 +316126,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "上海国际资管及旗下基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "上海国际资管及旗下基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -316640,7 +316634,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "上海领屹投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "上海领屹投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -316869,7 +316863,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "上海驭快 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "上海驭快 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -316959,7 +316953,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "上汽资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "上汽资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -317408,7 +317402,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "深圳前海奕铭投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "深圳前海奕铭投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -317486,7 +317480,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "神骐资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "神骐资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -318135,7 +318129,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "太平创新 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "太平创新 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -318212,7 +318206,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "探奇资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "探奇资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -318289,7 +318283,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "腾讯投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "腾讯投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -318723,7 +318717,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "天季资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "天季资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -318800,7 +318794,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "天使基石 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "天使基石 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -319071,7 +319065,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "头部VC、政府基金及产业链 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "头部VC、政府基金及产业链 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -319270,7 +319264,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "温岭九龙汇 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "温岭九龙汇 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -320351,7 +320345,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "险峰长青 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "险峰长青 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -320463,7 +320457,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "祥峰中国(Vertex China) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "祥峰中国(Vertex China) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -320540,7 +320534,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "橡果资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "橡果资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -320618,7 +320612,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "小红书 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "小红书 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -320926,7 +320920,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "小鹏集团旗下全资子公司 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "小鹏集团旗下全资子公司 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321004,7 +320998,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "谢诺投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "谢诺投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321082,7 +321076,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "辛夷国际 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "辛夷国际 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321312,7 +321306,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "兴泰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "兴泰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321389,7 +321383,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "兴湘资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "兴湘资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321467,7 +321461,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "兴证资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "兴证资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321544,7 +321538,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "秀洲翎航基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "秀洲翎航基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321621,7 +321615,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "阳光融汇资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "阳光融汇资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321698,7 +321692,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "耀途资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "耀途资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321810,7 +321804,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "一村淞灵 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "一村淞灵 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -321922,7 +321916,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "壹德资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "壹德资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -322000,7 +321994,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "以骏资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "以骏资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -322412,7 +322406,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "谊安医疗 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "谊安医疗 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -322854,7 +322848,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "用友集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "用友集团 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -322931,7 +322925,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "余杭国投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "余杭国投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -323008,7 +323002,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "愉悦资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "愉悦资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -323338,7 +323332,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "元禾原点 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "元禾原点 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -323415,7 +323409,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "元生资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "元生资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -323526,7 +323520,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "远镜创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "远镜创投 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -323603,7 +323597,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "粤高速 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "粤高速 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -323680,7 +323674,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "泽然创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "泽然创投 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -323758,7 +323752,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "长沙群欣 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "长沙群欣 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -323836,7 +323830,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "长盈精密 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "长盈精密 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -324615,7 +324609,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "智元机器人 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "智元机器人 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -324727,7 +324721,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "中国平安 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "中国平安 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -325136,7 +325130,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "中科融合创新加速器 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "中科融合创新加速器 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -325213,7 +325207,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "中融盈通 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "中融盈通 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -325290,7 +325284,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "中新具身智能基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "中新具身智能基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -325367,7 +325361,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "中新资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "中新资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -325456,7 +325450,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "中哲创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "中哲创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -325534,7 +325528,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "种子投资人 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "种子投资人 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -325611,7 +325605,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "众源资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "众源资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -325849,7 +325843,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "紫峰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "紫峰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -326060,7 +326054,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Abstract 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Abstract 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -326137,7 +326131,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Acquired Wisdom Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Acquired Wisdom Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -326214,7 +326208,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Adarsh Kulkarni 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Adarsh Kulkarni 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -326291,7 +326285,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Adjacent 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Adjacent 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -326745,7 +326739,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Aloniq 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Aloniq 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -326998,7 +326992,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Amino Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Amino Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -327075,7 +327069,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "该记录是融资披露中的匿名或泛称投资方标签，不足以识别单一个人或机构；不同融资中的相同泛称不合并为同一投资组合。",
-        "summary": "Angel Investors 当前按“无法确认身份的匿名/泛称投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Angel Investors 当前按“无法确认身份的匿名/泛称投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [],
@@ -327147,7 +327141,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Angel investors and operators from OpenAI, xAI, Meta, and DoorDash 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Angel investors and operators from OpenAI, xAI, Meta, and DoorDash 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -327194,19 +327188,7 @@
           "role": "本轮天使投资人与行业从业者",
           "role_code": "historical_or_ambiguous"
         }
-      ],
-      "translations": {
-        "zh-CN": {
-          "public_profile.summary": {
-            "text": "来自 OpenAI、xAI、Meta 和 DoorDash 的天使投资人和运营者当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-            "source_hash": "d532bd86f2dee16d8c4154b2841aa96bf81068ba699d0661f89edf9063f310de",
-            "provider": "deepseek",
-            "model": "deepseek-v4-flash",
-            "translated_at": "2026-10-01T16:14:44.677Z",
-            "status": "translated"
-          }
-        }
-      }
+      ]
     },
     {
       "id": "INV-a3b66d195f008a",
@@ -327236,7 +327218,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Angular Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Angular Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -327801,7 +327783,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Anu Bharadwaj 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Anu Bharadwaj 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -327880,7 +327862,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Aramco 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Aramco 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -328123,7 +328105,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Ashish Kulkarni 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Ashish Kulkarni 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -328366,7 +328348,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Assaf Rappaport (Wiz 创始团队成员) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Assaf Rappaport (Wiz 创始团队成员) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -328443,7 +328425,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Atlantic Council 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Atlantic Council 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -328898,7 +328880,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Azora 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Azora 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -329490,7 +329472,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Benjamin Bryant 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Benjamin Bryant 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -329773,7 +329755,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Beyond Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Beyond Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -330094,7 +330076,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "BJ Jenkins 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "BJ Jenkins 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -330506,7 +330488,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "boldstart ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "boldstart ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -331010,7 +330992,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Brizan Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Brizan Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -331087,7 +331069,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "C2 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "C2 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -331164,7 +331146,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Cadenza Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Cadenza Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -331241,7 +331223,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Capital2B 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Capital2B 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -331318,7 +331300,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Casey Neistat 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Casey Neistat 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -331914,7 +331896,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Climactic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Climactic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -332604,7 +332586,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Cyberstarts 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Cyberstarts 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -332681,7 +332663,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Daniel Gross 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Daniel Gross 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -332758,7 +332740,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "David Hoang 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "David Hoang 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -332836,7 +332818,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "DCVC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "DCVC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -332935,7 +332917,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Decibel Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Decibel Partners 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -333193,7 +333175,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Dennis Muilenburg 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Dennis Muilenburg 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -333484,7 +333466,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Draper Esprit 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Draper Esprit 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -333561,7 +333543,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Earlybird Digital East 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Earlybird Digital East 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -333638,7 +333620,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Edith Harbaugh 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Edith Harbaugh 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -333715,7 +333697,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Eli Brown 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Eli Brown 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -333792,7 +333774,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Emblem 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Emblem 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -334106,7 +334088,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Essence VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Essence VC 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -334183,7 +334165,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Everblue 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Everblue 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -334260,7 +334242,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "EXOR 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "EXOR 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -334337,7 +334319,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Farzad Soleimani 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Farzad Soleimani 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -334941,7 +334923,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Flybridge 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Flybridge 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -335018,7 +335000,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Flywheel Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Flywheel Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -335095,7 +335077,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Footwork 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Footwork 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -335429,7 +335411,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Forebright Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Forebright Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -335655,7 +335637,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Founders You Should Know 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Founders You Should Know 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -335732,7 +335714,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "FPV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "FPV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -335935,7 +335917,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Franklin Templeton 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Franklin Templeton 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -336025,7 +336007,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Funplus 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Funplus 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -336149,7 +336131,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Fuse Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Fuse Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -336226,7 +336208,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Galaxy 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Galaxy 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -336556,7 +336538,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Genius Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Genius Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -336633,7 +336615,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Gergely Orosz 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Gergely Orosz 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -337049,7 +337031,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Google 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Google 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -337304,7 +337286,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "GOVO Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "GOVO Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -337381,7 +337363,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Granite Asia 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Granite Asia 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -337460,7 +337442,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Groww Founder Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Groww Founder Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -337715,7 +337697,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Harvest Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Harvest Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -337792,7 +337774,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Heliad 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Heliad 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -337869,7 +337851,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Henry R. Kravis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Henry R. Kravis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -338830,7 +338812,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "IBM 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "IBM 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339076,7 +339058,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "In-Q-Tel 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "In-Q-Tel 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339153,7 +339135,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Intact Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Intact Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339230,7 +339212,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Intel 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Intel 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339307,7 +339289,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Isuzu Motors 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Isuzu Motors 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339384,7 +339366,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Itochu 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Itochu 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339461,7 +339443,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Jack Altman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Jack Altman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339538,7 +339520,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Jay Simons 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Jay Simons 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339617,7 +339599,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Jeff Dean (Google DeepMind) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Jeff Dean (Google DeepMind) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339694,7 +339676,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Jefferies 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Jefferies 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339771,7 +339753,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Jerry Tworek 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Jerry Tworek 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339850,7 +339832,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "JJ Fliegelman 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "JJ Fliegelman 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -339927,7 +339909,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Joe Sullivan 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Joe Sullivan 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -340563,7 +340545,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Kevin Johnson 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Kevin Johnson 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -340640,7 +340622,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Kevin Lin 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Kevin Lin 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -340717,7 +340699,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Kevin Moore 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Kevin Moore 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -341050,7 +341032,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Koch Industries 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Koch Industries 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -341127,7 +341109,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "KT 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "KT 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -341681,7 +341663,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Lenovo Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Lenovo Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -341759,7 +341741,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Leonis Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Leonis Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -341836,7 +341818,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Lerer Hippeau 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Lerer Hippeau 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -341913,7 +341895,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Lingotto Innovation 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Lingotto Innovation 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -341990,7 +341972,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "LINK-X CAPITAL 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "LINK-X CAPITAL 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342067,7 +342049,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "LocalGlobe 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "LocalGlobe 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342396,7 +342378,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Marc Benioff 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Marc Benioff 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342473,7 +342455,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Markus Flik 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Markus Flik 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342550,7 +342532,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Matt Miller (Sequoia Capital, Evantic Capital) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Matt Miller (Sequoia Capital, Evantic Capital) 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342627,7 +342609,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Misha Laskin 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Misha Laskin 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342704,7 +342686,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Moderne Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Moderne Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342781,7 +342763,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Monolith Power Systems 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Monolith Power Systems 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342858,7 +342840,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Monolith砺思资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Monolith砺思资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -342935,7 +342917,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Nebular 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Nebular 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343012,7 +342994,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Neuberger Berman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Neuberger Berman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343089,7 +343071,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Newport Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Newport Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343166,7 +343148,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "NextEquity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "NextEquity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343243,7 +343225,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Nima Khajehnouri 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Nima Khajehnouri 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343322,7 +343304,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Nir Zohar 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Nir Zohar 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343399,7 +343381,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "NVentures (NVIDIA) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "NVentures (NVIDIA) 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343660,7 +343642,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Oceans 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Oceans 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343737,7 +343719,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Ofir Ehrlich (Eon.io 联合创始人兼 CEO) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Ofir Ehrlich (Eon.io 联合创始人兼 CEO) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -343814,7 +343796,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Open WebUI 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Open WebUI 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -344186,7 +344168,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "OWASP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "OWASP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -344263,7 +344245,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Oxford Seed Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Oxford Seed Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -344340,7 +344322,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Paradigm 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Paradigm 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -344417,7 +344399,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Pat Gelsinger 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Pat Gelsinger 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -344641,7 +344623,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Pear VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Pear VC 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -344718,7 +344700,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Peter Mattis 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Peter Mattis 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -344795,7 +344777,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Phoenix Court 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Phoenix Court 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345043,7 +345025,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "PKSHA 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "PKSHA 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345121,7 +345103,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "PKSHA Algorithm Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "PKSHA Algorithm Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345199,7 +345181,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Primary Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Primary Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345276,7 +345258,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Prysmian 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Prysmian 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345353,7 +345335,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "QBE Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "QBE Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345430,7 +345412,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Rajiv Gupta 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Rajiv Gupta 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345837,7 +345819,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Restive Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Restive Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345914,7 +345896,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Rich Aberman 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Rich Aberman 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -345991,7 +345973,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Ron Baron 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Ron Baron 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -346222,7 +346204,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Sachin Katti 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Sachin Katti 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -346499,7 +346481,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Sanabil Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Sanabil Investments 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -346576,7 +346558,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Schematic Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Schematic Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -346653,7 +346635,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "SEE Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "SEE Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -346731,7 +346713,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "ServiceNow 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "ServiceNow 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -346808,7 +346790,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Shanghai State-owned Capital Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Shanghai State-owned Capital Investment 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347050,7 +347032,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "SIG 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "SIG 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347127,7 +347109,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "SK Telecom 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "SK Telecom 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347207,7 +347189,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "SOFINA 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "SOFINA 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347318,7 +347300,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Soham Majumdar 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Soham Majumdar 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347397,7 +347379,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Spencer Kimball 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Spencer Kimball 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347563,7 +347545,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Stephen Wilson 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Stephen Wilson 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347640,7 +347622,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Steve Huffman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Steve Huffman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347717,7 +347699,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Supermicro 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Supermicro 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347807,7 +347789,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Systemiq Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Systemiq Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -347981,7 +347963,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Tenstorrent 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Tenstorrent 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -348061,7 +348043,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "The Nature Conservancy 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "The Nature Conservancy 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -348138,7 +348120,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Theo Browne 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Theo Browne 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -348215,7 +348197,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Theo Browne (T3 Chat) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Theo Browne (T3 Chat) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -348503,7 +348485,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "TIAA Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "TIAA Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -348581,7 +348563,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Tim Glaser (PostHog) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Tim Glaser (PostHog) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -348954,7 +348936,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Tony Fadell 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Tony Fadell 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -349031,7 +349013,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Trevor Blackwell (YC) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Trevor Blackwell (YC) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -349211,7 +349193,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Ubiquity Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Ubiquity Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -349475,7 +349457,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Visionaries Club 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Visionaries Club 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -349730,7 +349712,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Wa'ed Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Wa'ed Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -349807,7 +349789,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Washington University in St. Louis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Washington University in St. Louis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -349884,7 +349866,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Whitecap Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Whitecap Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -349961,7 +349943,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Wischoff Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Wischoff Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -350038,7 +350020,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Workday Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Workday Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -350116,7 +350098,7 @@
         "identity_status": "pending_verification",
         "coverage_status": "identity_unverified",
         "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-        "summary": "Z47 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Z47 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -350193,7 +350175,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Z基金(智谱) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Z基金(智谱) 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -350270,7 +350252,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Zak Stone (Google Cloud) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Zak Stone (Google Cloud) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -350347,7 +350329,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Zeev Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Zeev Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -350425,7 +350407,7 @@
         "identity_status": "verified",
         "coverage_status": "activity_only",
         "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Zero Prime Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "summary": "Zero Prime Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
         "facts": [],
         "milestones": [],
         "track_record": [
