@@ -1913,7 +1913,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const modelClaimCandidate = [
       ...(acceptedAssistByRaw.get(rawId) || []),
       ...(acceptedAssistBySource.get(artifact.source_artifact_id) || []),
-    ].sort((left, right) => Number(String(right.asset_id).startsWith("HISTORY-")) - Number(String(left.asset_id).startsWith("HISTORY-")))
+    ].sort((left, right) => Number(String(right.asset_id).startsWith("HISTORY-")) - Number(String(left.asset_id).startsWith("HISTORY-"))
+      || Number(right.task_type === "qa_repair" && right.review?.decision === "accept" && Boolean(right.review?.reviewer))
+        - Number(left.task_type === "qa_repair" && left.review?.decision === "accept" && Boolean(left.review?.reviewer)))
       .find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
     const reviewedRepair = modelClaimCandidate?.task_type === "qa_repair"
       && modelClaimCandidate.review?.decision === "accept"

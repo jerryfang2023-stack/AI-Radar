@@ -2799,6 +2799,10 @@ test("reviewed exact-span QA repairs replace headline recipients; stale and unre
   const build = (c) => buildBundle([source], taxonomy, date, "2026-07-16T00:00:00Z", { modelAssist: { candidates: [c] } });
   candidate.proposal.action = "extract_claim";
   assert.ok(build(candidate).claims.some(c => c.subject === "上海喜梨信息科技有限公司"));
+  const earlierAutomatic = { ...candidate, candidate_id: "MAC-earlier", task_type: "claim_extraction", review: undefined,
+    proposal: { claims: [{ ...candidate.proposal.claims[0], subject: "一家AI玩具公司" }] } };
+  const reviewedOverAutomatic = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00Z", { modelAssist: { candidates: [earlierAutomatic, candidate] } });
+  assert.ok(reviewedOverAutomatic.claims.some(c => c.subject === "上海喜梨信息科技有限公司"));
   for (const c of [{...candidate, source_hash: "0".repeat(16)}, {...candidate, review: undefined}]) {
     assert.ok(!build(c).claims.some(row => row.extraction_method === "model_source_span"));
     assert.notEqual(build(c).claims[0]?.subject, "上海喜梨信息科技有限公司");
