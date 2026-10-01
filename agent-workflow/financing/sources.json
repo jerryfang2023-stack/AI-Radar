@@ -1,0 +1,423 @@
+{
+  "version": "FINANCING-SOURCES-1",
+  "sources": [
+    {
+      "id": "36kr-articles",
+      "name": "36氪文章",
+      "kind": "rss",
+      "url": "https://36kr.com/feed-article",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "36kr-newsflash",
+      "name": "36氪快讯",
+      "kind": "rss",
+      "url": "https://36kr.com/feed-newsflash",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "pedaily",
+      "name": "投资界",
+      "kind": "web_list",
+      "url": "https://www.pedaily.cn/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "li.h-news",
+        "linkSelector": "h3 a, h2 a, h4 a",
+        "dateSelector": ".date",
+        "summarySelector": ".desc, .description, .intro"
+      }
+    },
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "kind": "rss",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "prnewswire",
+      "name": "PR Newswire",
+      "kind": "rss",
+      "url": "https://www.prnewswire.com/rss/news-releases-list.rss",
+      "market": "all",
+      "tier": "press_release",
+      "enabled": true
+    },
+    {
+      "id": "a16z-news",
+      "name": "a16z News",
+      "kind": "rss",
+      "url": "https://www.a16z.news/feed",
+      "market": "overseas",
+      "tier": "investor",
+      "enabled": true
+    },
+    {
+      "id": "sequoia",
+      "name": "Sequoia Capital",
+      "kind": "rss",
+      "url": "https://www.sequoiacap.com/feed/",
+      "market": "overseas",
+      "tier": "investor",
+      "enabled": true
+    },
+    {
+      "id": "eu-startups",
+      "name": "EU-Startups",
+      "kind": "rss",
+      "url": "https://www.eu-startups.com/feed/",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "cyzone",
+      "name": "创业邦",
+      "kind": "web_list",
+      "url": "https://www.cyzone.cn/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/article/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "lieyun",
+      "name": "猎云网",
+      "kind": "web_list",
+      "url": "https://www.lieyunpro.com/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/archives/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "chinaventure",
+      "name": "投中网",
+      "kind": "web_list",
+      "url": "https://www.chinaventure.com.cn/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/news/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "tmtpost",
+      "name": "钛媒体",
+      "kind": "web_list",
+      "url": "https://www.tmtpost.com/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href$=\".html\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "leiphone",
+      "name": "雷峰网",
+      "kind": "web_list",
+      "url": "https://www.leiphone.com/category/touzi",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/category/\"][href$=\".html\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "jiemian",
+      "name": "界面新闻",
+      "kind": "web_list",
+      "url": "https://www.jiemian.com/lists/4.html",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/article/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "huxiu",
+      "name": "虎嗅",
+      "kind": "web_list",
+      "url": "https://www.huxiu.com/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/article/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "itjuzi",
+      "name": "IT桔子",
+      "kind": "web_list",
+      "url": "https://www.itjuzi.com/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/investevent/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "iyiou",
+      "name": "亿欧",
+      "kind": "web_list",
+      "url": "https://www.iyiou.com/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/p/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "hongshan",
+      "name": "红杉中国",
+      "kind": "web_list",
+      "url": "https://www.hongshan.com/",
+      "market": "domestic",
+      "tier": "investor",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/article/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "tech-eu",
+      "name": "Tech.eu",
+      "kind": "rss",
+      "url": "https://tech.eu/feed/",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "sifted",
+      "name": "Sifted",
+      "kind": "rss",
+      "url": "https://sifted.eu/feed",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "uktn",
+      "name": "UKTN",
+      "kind": "rss",
+      "url": "https://www.uktech.news/feed",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "crunchbase-news",
+      "name": "Crunchbase News",
+      "kind": "rss",
+      "url": "https://news.crunchbase.com/feed/",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "venturebeat",
+      "name": "VentureBeat",
+      "kind": "rss",
+      "url": "https://venturebeat.com/feed/",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "geekwire",
+      "name": "GeekWire",
+      "kind": "rss",
+      "url": "https://www.geekwire.com/feed/",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "finsmes",
+      "name": "FinSMEs",
+      "kind": "rss",
+      "url": "https://www.finsmes.com/feed",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "siliconcanals",
+      "name": "Silicon Canals",
+      "kind": "rss",
+      "url": "https://siliconcanals.com/feed/",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "globenewswire",
+      "name": "GlobeNewswire 融资公告",
+      "kind": "rss",
+      "url": "https://www.globenewswire.com/RssFeed/subjectcode/20-Financing%20Agreements/feedTitle/GlobeNewswire%20-%20Financing%20Agreements",
+      "market": "all",
+      "tier": "press_release",
+      "enabled": true
+    },
+    {
+      "id": "businesswire",
+      "name": "Business Wire",
+      "kind": "web_list",
+      "url": "https://www.businesswire.com/portal/site/home/news/",
+      "market": "all",
+      "tier": "press_release",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/news/home/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "reuters-ai",
+      "name": "Reuters AI",
+      "kind": "web_list",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/technology/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "bloomberg-tech",
+      "name": "Bloomberg Technology",
+      "kind": "rss",
+      "url": "https://feeds.bloomberg.com/technology/news.rss",
+      "search_domain": "bloomberg.com",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "insight",
+      "name": "Insight Partners",
+      "kind": "rss",
+      "url": "https://www.insightpartners.com/feed/",
+      "market": "overseas",
+      "tier": "investor",
+      "enabled": true
+    },
+    {
+      "id": "accel",
+      "name": "Accel",
+      "kind": "web_list",
+      "url": "https://www.accel.com/noteworthy",
+      "market": "overseas",
+      "tier": "investor",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/news/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "index-ventures",
+      "name": "Index Ventures",
+      "kind": "web_list",
+      "url": "https://www.indexventures.com/perspectives/",
+      "market": "overseas",
+      "tier": "investor",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/perspectives/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "qiming",
+      "name": "启明创投",
+      "kind": "web_list",
+      "url": "https://www.qimingvc.com/cn/newsroom",
+      "market": "domestic",
+      "tier": "investor",
+      "enabled": true,
+      "config": {
+        "itemSelector": "a[href*=\"/cn/news/\"]",
+        "linkSelector": ":self"
+      }
+    },
+    {
+      "id": "yourstory",
+      "name": "YourStory",
+      "url": "https://yourstory.com/feed",
+      "kind": "rss",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "entrackr",
+      "name": "Entrackr",
+      "url": "https://entrackr.com/feed",
+      "kind": "rss",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "techinasia",
+      "name": "Tech in Asia",
+      "url": "https://www.techinasia.com/feed",
+      "kind": "rss",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "dealstreetasia",
+      "name": "DealStreetAsia",
+      "url": "https://www.dealstreetasia.com/feed",
+      "kind": "rss",
+      "market": "overseas",
+      "tier": "media",
+      "enabled": true
+    },
+    {
+      "id": "ithome",
+      "name": "IT之家",
+      "kind": "rss",
+      "url": "https://www.ithome.com/rss/",
+      "market": "domestic",
+      "tier": "media",
+      "enabled": true
+    }
+  ]
+}

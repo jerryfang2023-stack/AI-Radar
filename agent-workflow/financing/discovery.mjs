@@ -29,7 +29,7 @@ export function uniqueLeads(rows) {
   return [...unique.values()];
 }
 
-export async function discover({ date, search, feed = collectAIHotFeed, onPage, previous = {}, save = () => {} }) {
+export async function discover({ date, search, feed = collectAIHotFeed, supplements = [], onPage, previous = {}, save = () => {} }) {
   const receipts = { ...previous };
   if (!receipts.aihot?.ok) {
     const data = await feed({ window: '7d', onPage });
@@ -48,7 +48,16 @@ export async function discover({ date, search, feed = collectAIHotFeed, onPage, 
     }
     await save(receipts);
   }
+  for(const supplement of supplements) {
+    if(receipts[supplement.id]?.ok)continue;
+    try {
+      const data=await supplement.run();
+      receipts[supplement.id]={...data,ok:data.complete,optional:true};
+    } catch(error) { receipts[supplement.id]={ok:false,optional:true,items:[],failures:[error.message]}; }
+    await save(receipts);
+  }
   const failed = ['aihot', ...queryPlan(date).map(row => row.id)].filter(id => !receipts[id]?.ok);
-  return { version: config.version, date, complete: failed.length === 0, failed, receipts,
+  const supplementalFailures=Object.entries(receipts).filter(([,r])=>r.optional&&!r.ok).map(([id,r])=>({id,failures:r.failures||[]}));
+  return { version: config.version, date, complete: failed.length === 0, failed, supplementalFailures, receipts,
     leads: uniqueLeads(Object.values(receipts).flatMap(row => row.items || [])) };
 }
