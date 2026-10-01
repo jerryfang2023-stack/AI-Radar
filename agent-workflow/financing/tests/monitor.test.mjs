@@ -43,6 +43,9 @@ test('original body and original date required; search date and descriptions can
   const lead={url:'https://example.com/round',published_at:'2026-09-30',summary:'AI financing snippet'};
   const response=source=>async()=>new Response(source,{headers:{'content-type':'text/html; charset=utf-8'}});
   const good=await captureOriginal(lead,{date,fetcher:response(html())});assert.equal(good.status,'accepted');assert.equal(good.record.published_at,'2026-09-30');
+  assert.equal(good.record.source_role,'original_source');
+  const quoted=await captureOriginal(lead,{date,fetcher:async()=>new Response(html(),{headers:{'content-type':'text/html; charset="utf-8"'}})});
+  assert.equal(quoted.status,'accepted');
   const missing=await captureOriginal(lead,{date,fetcher:response(html({date:''}))});assert.equal(missing.status,'pending');assert.equal(missing.reason,'original_date_missing');
   const stale=await captureOriginal(lead,{date,fetcher:response(html({date:'2025-01-01'}))});assert.equal(stale.status,'excluded');
   const parsed=parseOriginal('<script type="application/ld+json">'+JSON.stringify({'@type':'NewsArticle',description:'AI raises funding '.repeat(30)})+'</script>');assert.equal(parsed.body,'');
