@@ -64,20 +64,21 @@
         </view>
         <view class="reward-state {{item.completed ? 'completed' : ''}}">{{item.completed ? '已完成' : '+' + item.reward + ' 分'}}</view>
       </view>
-    </view>
-
-    <view class="section-heading"><text class="serif">我的权益</text><text bindtap="openGrowth">全部权益</text></view>
-    <view class="list-card paper-card">
-      <view wx:for="{{growth.benefits}}" wx:key="id" class="benefit-row" bindtap="openGrowth">
-        <view class="benefit-mark"><image src="/assets/brand/app-icon-light.svg" mode="aspectFit" /></view>
-        <view class="row-copy"><text class="row-title">{{item.title}}</text><text class="row-subtitle">{{item.description}}</text></view>
-        <text class="benefit-cost mono">{{item.redeemed ? '已兑换' : item.cost + ' 分'}}</text>
+      <view class="action-row" bindtap="openInvite">
+        <view class="row-copy"><text class="row-title">邀请好友</text><text class="row-subtitle">好友完成首次注册，获得 300 积分</text></view>
+        <view class="reward-state">+300 分</view>
       </view>
     </view>
 
-    <view class="invite-card" bindtap="openInvite">
-      <view><text class="invite-title">邀请好友 · 共同成长</text><text class="invite-copy">好友完成首次注册后，邀请人得 300 活跃积分</text></view>
-      <text class="invite-action">查看详情 ›</text>
+    <view class="section-heading"><text class="serif">权益兑换</text></view>
+    <view class="list-card paper-card">
+      <view wx:for="{{growth.benefits}}" wx:key="id" class="benefit-row">
+        <view class="benefit-mark"><image src="/assets/brand/app-icon-light.svg" mode="aspectFit" /></view>
+        <view class="row-copy"><text class="row-title">{{item.title}}</text><text class="row-subtitle">{{item.description}}</text></view>
+        <button class="redeem-button {{!item.affordable ? 'unavailable' : ''}}" data-id="{{item.id}}" bindtap="redeem" disabled="{{!!redeeming || item.redeemed}}" loading="{{redeeming === item.id}}">{{item.redeemed ? '已兑换' : item.affordable ? item.cost + ' 分兑换' : '还差 ' + (item.cost - growth.wallet.balance) + ' 分'}}</button>
+      </view>
     </view>
+
+
   </view>
 </view>
