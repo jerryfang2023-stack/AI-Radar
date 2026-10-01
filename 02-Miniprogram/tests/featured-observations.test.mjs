@@ -6,6 +6,15 @@ test('reviewed observations validate attribution, source, length and duplicates'
  assert.equal(parseObservations({schemaVersion:1,entries:[entry]})['FI-abc'],'机构：看重可复制的产品交付能力。');
  for(const entries of [[{...entry,sourceUrl:''}],[entry,entry],[{...entry,summary:'长'.repeat(81)}]]) assert.throws(()=>parseObservations({schemaVersion:1,entries}));
 });
+
+test('editorial explanation displays its text directly while investor attribution stays visible',()=>{
+ const {parseObservations}=require('../miniprogram/utils/featured-observations.js');
+ for(const kind of [undefined,'editorial']) {
+  assert.equal(parseObservations({schemaVersion:1,entries:[{...entry,institution:'观澜分析',kind}]})['FI-abc'],entry.summary);
+ }
+ assert.equal(parseObservations({schemaVersion:1,entries:[{...entry,kind:'institution'}]})['FI-abc'],'机构：'+entry.summary);
+ assert.throws(()=>parseObservations({schemaVersion:1,entries:[{...entry,institution:'观澜分析',summary:'长'.repeat(80)}]}));
+});
 test('same-day content updates and removal need no funding manifest change; failures retain accepted data',async()=>{
  delete require.cache[require.resolve('../miniprogram/utils/featured-observations.js')];
  const service=require('../miniprogram/utils/featured-observations.js');let callback;

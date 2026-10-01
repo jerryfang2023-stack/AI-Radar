@@ -5,8 +5,9 @@ function parseObservations(payload) {
   const result = {};
   for (const e of payload.entries) {
     if (!/^FI-[a-z0-9]+$/i.test(e.fundingId || "") || typeof e.institution !== "string" || typeof e.summary !== "string" || !e.institution.trim() || !e.summary.trim() || !/^https:\/\//.test(e.sourceUrl || "")) throw new Error("Invalid observation");
-    const text = `${e.institution.trim()}：${e.summary.trim()}`;
-    if (text.length > 80 || result[e.fundingId]) throw new Error("Invalid observation length or duplicate");
+    const attributed = `${e.institution.trim()}：${e.summary.trim()}`;
+    if (attributed.length > 80 || result[e.fundingId]) throw new Error("Invalid observation length or duplicate");
+    const text = e.institution.trim() === "观澜分析" ? e.summary.trim() : attributed;
     result[e.fundingId] = text;
   }
   return result;
