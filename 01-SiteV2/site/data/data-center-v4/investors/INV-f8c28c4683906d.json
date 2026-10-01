@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -87,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f62b1f8f68c47c12",
+        "activity_id": "IA-73537e6fa6173f67",
         "funding_insight_id": "FI-d24e79349c1e9713",
         "event_ids": [
           "EV-040fc355bc12a750",
@@ -128,7 +128,7 @@
         ]
       },
       {
-        "activity_id": "IA-8ae7f75fbc38fc56",
+        "activity_id": "IA-d99c95b90ef42d74",
         "funding_insight_id": "FI-5153381171755c70",
         "event_ids": [
           "EV-ad75efcb12a07793"
@@ -136,15 +136,23 @@
         "company_entity_id": "FICO-etched",
         "company_canonical_entity_id": "",
         "company_name": "Etched",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使投资人",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-30",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "partially_disclosed",
         "scope": "historical_or_ambiguous",
         "role": "天使投资人",
         "role_code": "historical_or_ambiguous",
@@ -285,6 +293,18 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "斯坦福主页记载她发起 ImageNet 及 ImageNet Challenge，并发表 400 余篇科学论文。",
+          "source_hash": "fa6c21ba1afc3c271eadd52170f76078b5e4400dbdf6607ffc28f229acfe766d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:23.221Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

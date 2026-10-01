@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -87,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-3ef470bc96ecc069",
+        "activity_id": "IA-f8bce609b7785dc7",
         "funding_insight_id": "FI-af45f33c3a9b81b9",
         "event_ids": [
           "EV-914ca1cbc6359ce5"
@@ -127,7 +127,7 @@
         ]
       },
       {
-        "activity_id": "IA-6f0982014d1aaf0a",
+        "activity_id": "IA-b34a68ad740683ae",
         "funding_insight_id": "FI-af45f33c3a9b81b9",
         "event_ids": [
           "EV-914ca1cbc6359ce5"
@@ -135,15 +135,23 @@
         "company_entity_id": "EN-65e9e514ecf0d270",
         "company_canonical_entity_id": "",
         "company_name": "Smallest.ai",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "1300万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1300 万美元"
+        },
+        "announced_at": "2026-08-01",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "种子轮参投",
         "role_code": "historical_or_ambiguous",
@@ -266,6 +274,18 @@
       "coverage_note": "机构定位、组合规模和行业分类来自Better Capital官网自述；公司数、创始人数及其估值分类未独立核验。",
       "last_verified_at": "2026-09-26",
       "profile_type": "organization"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "官网展示Slice、Teachmint、Varaha、SolarSquare、Yulu、Rupeek等组合案例，并将其按企业估值区间分类；估值和组合表现为官网展示口径，未独立核验。",
+          "source_hash": "a2f8f4badc41e1c63c64f96b94136ccb1f3fab96050065efc88cb5bb0c312a81",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

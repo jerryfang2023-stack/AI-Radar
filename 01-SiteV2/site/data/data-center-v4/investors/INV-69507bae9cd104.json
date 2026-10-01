@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -101,7 +101,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-12d47369ad622caf",
+        "activity_id": "IA-751df5264878c5e8",
         "funding_insight_id": "FI-c0b843a5e6f6ea0a",
         "event_ids": [
           "EV-d43103952399bc68"
@@ -141,7 +141,7 @@
         ]
       },
       {
-        "activity_id": "IA-96a7363512f174e1",
+        "activity_id": "IA-6e9ebc84c5823b37",
         "funding_insight_id": "FI-38617a261ac32b56",
         "event_ids": [
           "EV-305ec93673f4f12e"
@@ -189,7 +189,7 @@
         ]
       },
       {
-        "activity_id": "IA-fd745ec3eff2237e",
+        "activity_id": "IA-d8bcbe2bb9ec19ed",
         "funding_insight_id": "FI-3815bc8e86989ecb",
         "event_ids": [
           "EV-11b5192fc54c0aa0"
@@ -439,6 +439,34 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "New Enterprise Associates 成立。",
+          "source_hash": "0acb28e06e1e670544fec992b482ee7f67858c61fde3767a79ef047c72f7acf1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:36.479Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[4].label": {
+          "text": "Menlo Park 办公室",
+          "source_hash": "8bdcb8e550878cada301b810817ca74358c27f1606d9facf6555f2179182c86c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:25.166Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[5].label": {
+          "text": "Menlo Park 办公室",
+          "source_hash": "8bdcb8e550878cada301b810817ca74358c27f1606d9facf6555f2179182c86c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:25.166Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

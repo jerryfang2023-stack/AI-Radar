@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -87,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-5512bddc9fdfdc99",
+        "activity_id": "IA-f1f71ee613718957",
         "funding_insight_id": "FI-d24e79349c1e9713",
         "event_ids": [
           "EV-040fc355bc12a750",
@@ -128,7 +128,7 @@
         ]
       },
       {
-        "activity_id": "IA-bb7d663e00cb32ec",
+        "activity_id": "IA-ee49dbe9a3c8488b",
         "funding_insight_id": "FI-5153381171755c70",
         "event_ids": [
           "EV-ad75efcb12a07793"
@@ -136,15 +136,23 @@
         "company_entity_id": "FICO-etched",
         "company_canonical_entity_id": "",
         "company_name": "Etched",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使投资人",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-30",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "partially_disclosed",
         "scope": "historical_or_ambiguous",
         "role": "天使投资人",
         "role_code": "historical_or_ambiguous",

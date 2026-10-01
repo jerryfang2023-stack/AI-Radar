@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-12-06",
-    "latest_disclosed_at": "2026-05-14",
+    "latest_disclosed_at": "2026-06-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "participant": 2
@@ -92,7 +92,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-e49e6184620aabcc",
+        "activity_id": "IA-8479870f36548966",
+        "funding_insight_id": "FI-479f9d5c1123dba2",
+        "event_ids": [
+          "EV-a00763037a94d512"
+        ],
+        "company_entity_id": "FICO-7e1d6c73932aa9b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Odyssey ML",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 310000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.1 亿美元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "战略轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-413e994d081f8e0f",
+            "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
+            "source_title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
+            "source_content_hash": "37401997b6a46d75",
+            "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026",
+            "quote_hash": "7580ce8d49fd9666e802de453ea162d2bb44131247c6889a3dfc84df499c3a27"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ebfaa84c21d1f0f8",
         "funding_insight_id": "FI-f088ae47d2a3f35a",
         "event_ids": [
           "EV-e8d1de5c77f32b9c"
@@ -132,7 +172,7 @@
         ]
       },
       {
-        "activity_id": "IA-e6ee87c6531243b9",
+        "activity_id": "IA-ecea40e79856972a",
         "funding_insight_id": "FI-1d51a25d67b90d0d",
         "event_ids": [
           "EV-79a0bbe8b8623b28"
@@ -170,41 +210,17 @@
             "quote_hash": "26e246275b64cb7b520a547627f5436f13c0e25cc1914f82a13ce36fa83084a1"
           }
         ]
-      },
-      {
-        "activity_id": "IA-7ba97f63372775a4",
-        "funding_insight_id": "FI-479f9d5c1123dba2",
-        "event_ids": [
-          "EV-a00763037a94d512"
-        ],
-        "company_entity_id": "FICO-7e1d6c73932aa9b0",
-        "company_canonical_entity_id": "",
-        "company_name": "Odyssey ML",
-        "round": "战略融资",
-        "round_code": "strategic",
-        "round_original": "战略轮参投",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "战略轮参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-413e994d081f8e0f",
-            "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
-            "source_title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
-            "source_content_hash": "37401997b6a46d75",
-            "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026",
-            "quote_hash": "7580ce8d49fd9666e802de453ea162d2bb44131247c6889a3dfc84df499c3a27"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-413e994d081f8e0f",
+        "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
+        "source_title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
+        "source_content_hash": "37401997b6a46d75",
+        "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026",
+        "quote_hash": "7580ce8d49fd9666e802de453ea162d2bb44131247c6889a3dfc84df499c3a27"
+      },
       {
         "source_id": "FISRC-9c4c0f115d1f38be",
         "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
@@ -220,14 +236,6 @@
         "source_content_hash": "42d5867eaff12416",
         "quote": "Samsung Next",
         "quote_hash": "26e246275b64cb7b520a547627f5436f13c0e25cc1914f82a13ce36fa83084a1"
-      },
-      {
-        "source_id": "FISRC-413e994d081f8e0f",
-        "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
-        "source_title": "Odyssey Raises $310M as Amazon Bets on World Models | Awesome Agents",
-        "source_content_hash": "37401997b6a46d75",
-        "quote": "Strategic undisclosed undisclosed NVentures (NVIDIA), Samsung Next pre-2026",
-        "quote_hash": "7580ce8d49fd9666e802de453ea162d2bb44131247c6889a3dfc84df499c3a27"
       }
     ],
     "public_profile": {

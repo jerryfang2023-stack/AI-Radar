@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -87,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-b2681c185b2695e2",
+        "activity_id": "IA-0ed957a5bb3bf1f1",
         "funding_insight_id": "FI-690521fe943be555",
         "event_ids": [
           "EV-d642ec7a9ca5eb0f",
@@ -136,7 +136,7 @@
         ]
       },
       {
-        "activity_id": "IA-7c69c6912a768e0b",
+        "activity_id": "IA-8baba5c918062041",
         "funding_insight_id": "FI-690521fe943be555",
         "event_ids": [
           "EV-d642ec7a9ca5eb0f",
@@ -145,15 +145,23 @@
         "company_entity_id": "EN-478cc1059b738832",
         "company_canonical_entity_id": "",
         "company_name": "Alta",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "2500万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-07-08",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -305,6 +313,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Entrée Capital 是一家全球风险投资公司，成立于 2010 年，据其官网显示，在 Tel Aviv、London 和 New York 设有办公室。该公司报告管理资产规模为 15 亿美元，拥有 11 只基金和超过 180 家投资组合公司；其投资阶段覆盖 pre-seed 至 Series B，并将其运营方式描述为由创始人主导。可通过其官网获取公开联系方式；在所检查页面中未确认直接提交投资的电子邮件。",
+          "source_hash": "14809fde33cdea6efeb3d7ec0a38f1bb7725f46bfc377f501c56e13c4fa5f600",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:20.121Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "官网称Entrée Capital成立于2010年。",
+          "source_hash": "897c32c8fd83d33d29ef92b218192f853a00ae1c82d8ae2be9ea1791b77f02fe",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:20.121Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "官网介绍其投资组合包含monday.com、Deliveroo、Coupang、Riskified、PillPack等公司案例；IPO、收购及组合规模为基金自述，非完整组合。",
+          "source_hash": "ffba7b08b3bdf140bf27474ec5d6a59b2f7727632994b85bd8908d697d081925",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:20.121Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

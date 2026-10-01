@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-01-13",
+    "latest_disclosed_at": "2026-01-13",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-6ab5c29731e24730",
+        "activity_id": "IA-b9f3fe55a95efdf9",
         "funding_insight_id": "FI-0386397f33fcf55a",
         "event_ids": [
           "EV-fdfd4bf00571bb35"
@@ -86,15 +86,23 @@
         "company_entity_id": "EN-8e8cc11d1475231b",
         "company_canonical_entity_id": "",
         "company_name": "Witness AI",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "既有投资方（A轮联合领投）",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$58 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 58000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5800 万美元"
+        },
+        "announced_at": "2026-01-13",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方（A轮联合领投）",
         "role_code": "historical_or_ambiguous",
@@ -213,6 +221,18 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[1].description": {
+          "text": "Witness AI公司公告称Ballistic Ventures与GV联合领投其2024年A轮；该资料证明历史投资角色，不披露Ballistic单笔支票金额。",
+          "source_hash": "d7e4eb0966fb30d3a1ecdd9c7fe8e678e80fb8ade7ec21716c77ce86b136602c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

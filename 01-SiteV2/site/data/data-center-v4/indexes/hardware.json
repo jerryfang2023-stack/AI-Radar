@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -53,6 +53,96 @@
     ]
   },
   "hardware": [
+    {
+      "id": "HW-7b1c7c01bd63559d",
+      "eventId": "EV-be28f5b571b80f7c",
+      "dataDate": "2026-10-01",
+      "date": "2026-10-01",
+      "title": "OpenAI 发布 GPT-6.1 Sol：以 Astra 五分之一价格接近其编码与计算机操作水平",
+      "hardwareType": "ai_device",
+      "eventType": "hardware_product",
+      "eventTypeLabel": "硬件产品",
+      "computeLayer": "data_center",
+      "supplier": "OpenAI",
+      "customer": "OpenAI API, ChatGPT Work, and Codex",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "OpenAI API",
+      "region": "未披露",
+      "contractValue": "$0.10 ",
+      "shipmentDate": "未披露",
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price",
+      "sourceName": "MarkTechPost（RSS）",
+      "sourceDate": "2026-10-01",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-9a8c864e586c32ed"
+      ]
+    },
+    {
+      "id": "HW-8db044f6b8423605",
+      "eventId": "EV-648208bc2a74cb56",
+      "dataDate": "2026-10-01",
+      "date": "2026-09-30",
+      "title": "中国AI产业团结一致，Deepseek为华为昇腾芯片发布开源软件",
+      "hardwareType": "semiconductor",
+      "eventType": "hardware_supply",
+      "eventTypeLabel": "硬件供应",
+      "computeLayer": "未披露",
+      "supplier": "DeepSeek",
+      "customer": "未披露",
+      "processNode": "未披露",
+      "capacity": "未披露",
+      "capacityUnit": "",
+      "site": "China",
+      "region": "China",
+      "contractValue": "未披露",
+      "shipmentDate": "2026-09-30",
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/chinas-ai-industry-closes-ranks-as-deepseek-ships-open-source-software-for-huaweis-ascend-chips",
+      "sourceName": "The Decoder AI News",
+      "sourceDate": "2026-09-30",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-b81c8201acfc7639"
+      ]
+    },
     {
       "id": "HW-489f7f0d9be77d02",
       "eventId": "EV-e17326c8f33e636c",
@@ -3564,6 +3654,360 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-3b18bb974f2baf9d",
+      "snapshotKey": "3b18bb974f2baf9d",
+      "snapshotId": "HWS-4e65448c3d43b602",
+      "eventId": "EV-830c323ebeca22d6",
+      "eventIds": [
+        "EV-830c323ebeca22d6"
+      ],
+      "dataDate": "2026-10-01",
+      "date": "2026-10-01",
+      "title": "Decisions API / Why Dwarkesh / Computer Use",
+      "subject": "OpenAI",
+      "productNames": [
+        "Decisions API",
+        "Why Dwarkesh",
+        "Computer Use"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1144095029a9fe7b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-01",
+          "hardware_fact_id": "HWF-1144095029a9fe7b",
+          "fact_type": "product",
+          "observed_at": "2026-09-30T00:00:00.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [
+            "EN-d464d2be503fb804",
+            "EN-fa8c73bd5ab60921",
+            "EN-3aa38718f0399af9"
+          ],
+          "product_names": [
+            "Decisions API",
+            "Why Dwarkesh",
+            "Computer Use"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "We have, Dots, which is the new, sort of personal assistant product, and, that has some really exciting Computer Use features.",
+          "event_refs": [
+            "EV-830c323ebeca22d6"
+          ],
+          "claim_ref": "CL-e4ad31032e29db0e",
+          "source_refs": [
+            "SA-f845fee19c04122d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://latent.space/p/devday-2026",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-d464d2be503fb804",
+        "EN-fa8c73bd5ab60921",
+        "EN-3aa38718f0399af9"
+      ]
+    },
+    {
+      "id": "HWC-9adbfc5062ed77fa",
+      "snapshotKey": "9adbfc5062ed77fa",
+      "snapshotId": "HWS-0e353bb1d5937327",
+      "eventId": "EV-648208bc2a74cb56",
+      "eventIds": [
+        "EV-648208bc2a74cb56",
+        "EV-8f2787ceb5224cc9"
+      ],
+      "dataDate": "2026-10-01",
+      "date": "2026-10-01",
+      "title": "DeepSeek",
+      "subject": "DeepSeek",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-d4bc7e43abcd0555"
+        }
+      },
+      "factCount": 4,
+      "snapshotCount": 2,
+      "changes": [
+        {
+          "date": "2026-10-01",
+          "previousDate": "2026-08-01",
+          "snapshotId": "HWS-0e353bb1d5937327",
+          "previousSnapshotId": "HWS-98b0cf2dd7258ea2",
+          "changedFacts": [
+            "shipment_deployment"
+          ]
+        }
+      ],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-01",
+          "hardware_fact_id": "HWF-fdba79d670a180db",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-30T14:37:24.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "China's AI industry closes ranks as Deepseek ships open-source software for Huawei's Ascend chips",
+          "event_refs": [
+            "EV-648208bc2a74cb56"
+          ],
+          "claim_ref": "CL-47ed94a196675c14",
+          "source_refs": [
+            "SA-c721e21346625060"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-10-01",
+          "hardware_fact_id": "HWF-ccd8b21f230b833e",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-30T14:37:24.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "China's AI industry closes ranks as Deepseek ships open-source software for Huawei's Ascend chips",
+          "event_refs": [
+            "EV-648208bc2a74cb56"
+          ],
+          "claim_ref": "CL-2bfcfb1af854a0b4",
+          "source_refs": [
+            "SA-c721e21346625060"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-10-01",
+          "hardware_fact_id": "HWF-c07d28336395189c",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-30T14:37:24.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "China's AI industry closes ranks as Deepseek ships open-source software for Huawei's Ascend chips",
+          "event_refs": [
+            "EV-648208bc2a74cb56"
+          ],
+          "claim_ref": "CL-b5329fcf051ad1c5",
+          "source_refs": [
+            "SA-c721e21346625060"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-10-01",
+          "hardware_fact_id": "HWF-d4bc7e43abcd0555",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-09-30T14:37:24.000Z",
+          "subject_entity_id": "EN-6f7ac1823da81d2e",
+          "subject_name": "DeepSeek",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "China's AI industry closes ranks as Deepseek ships open-source software for Huawei's Ascend chips",
+          "event_refs": [
+            "EV-648208bc2a74cb56"
+          ],
+          "claim_ref": "CL-0b0ba48a065e804f",
+          "source_refs": [
+            "SA-c721e21346625060"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://the-decoder.com/chinas-ai-industry-closes-ranks-as-deepseek-ships-open-source-software-for-huaweis-ascend-chips",
+      "entityIds": [
+        "EN-6f7ac1823da81d2e",
+        "EN-b81c8201acfc7639",
+        "EN-b5251b35f15bedc4"
+      ]
+    },
+    {
+      "id": "HWC-09335cbe3a6d6d62",
+      "snapshotKey": "09335cbe3a6d6d62",
+      "snapshotId": "HWS-d96d2772866a6659",
+      "eventId": "EV-be28f5b571b80f7c",
+      "eventIds": [
+        "EV-be28f5b571b80f7c"
+      ],
+      "dataDate": "2026-10-01",
+      "date": "2026-10-01",
+      "title": "GPT-6.1 Sol",
+      "subject": "OpenAI",
+      "productNames": [
+        "GPT-6.1 Sol"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "0.10",
+          "unit": "$",
+          "fact_ref": "HWF-c79545d82080f2a8"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-01",
+          "hardware_fact_id": "HWF-bf7e85425eff777a",
+          "fact_type": "product",
+          "observed_at": "2026-09-30T21:09:24.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [
+            "EN-9a8c864e586c32ed"
+          ],
+          "product_names": [
+            "GPT-6.1 Sol"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "It is OpenAI’s mid-tier GPT-6 model, released September 29, 2026, for coding, computer use, and professional work.",
+          "event_refs": [
+            "EV-be28f5b571b80f7c"
+          ],
+          "claim_ref": "CL-80c58b7a05a4b136",
+          "source_refs": [
+            "SA-f26f796f60032298"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/hardware-facts.json"
+        },
+        {
+          "data_date": "2026-10-01",
+          "hardware_fact_id": "HWF-c79545d82080f2a8",
+          "fact_type": "product",
+          "observed_at": "2026-09-30T21:09:24.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [
+            "EN-9a8c864e586c32ed"
+          ],
+          "product_names": [
+            "GPT-6.1 Sol"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "0.10",
+          "unit": "$",
+          "source_quote": "This week, OpenAI released GPT-6.1 Sol . It upgrades GPT-6 Sol, the mid-tier model in the GPT-6 family. OpenAI’s claim is specific: near-Astra results on agentic coding, computer use, and professional work. The price is one-fifth of GPT-6 Astra’s standard input and output rates. Cached input drops to $0.10 per million tokens, 50% below GPT-6 Sol.",
+          "event_refs": [
+            "EV-be28f5b571b80f7c"
+          ],
+          "claim_ref": "CL-16233ebd84f7fc4c",
+          "source_refs": [
+            "SA-f26f796f60032298"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://marktechpost.com/2026/09/30/openai-releases-gpt-6-1-sol-near-astra-coding-and-computer-use-at-one-fifth-of-astras-token-price",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-9a8c864e586c32ed"
+      ]
+    },
     {
       "id": "HWC-d6c55514529fd217",
       "snapshotKey": "d6c55514529fd217",
@@ -16833,67 +17277,6 @@
       ]
     },
     {
-      "id": "HWC-9adbfc5062ed77fa",
-      "snapshotKey": "9adbfc5062ed77fa",
-      "snapshotId": "HWS-98b0cf2dd7258ea2",
-      "eventId": "EV-8f2787ceb5224cc9",
-      "eventIds": [
-        "EV-8f2787ceb5224cc9"
-      ],
-      "dataDate": "2026-08-01",
-      "date": "2026-08-01",
-      "title": "DeepSeek",
-      "subject": "DeepSeek",
-      "productNames": [],
-      "hardwareType": "semiconductor",
-      "factTypes": [
-        "product"
-      ],
-      "latestValues": {
-        "product": {
-          "metric_value": "100",
-          "unit": "亿",
-          "fact_ref": "HWF-bf3dd2b3a100b343"
-        }
-      },
-      "factCount": 1,
-      "snapshotCount": 1,
-      "changes": [],
-      "capacityFacts": [],
-      "supplyFacts": [],
-      "specificationFacts": [
-        {
-          "data_date": "2026-08-01",
-          "hardware_fact_id": "HWF-bf3dd2b3a100b343",
-          "fact_type": "product",
-          "observed_at": "2026-07-31T06:38:54.000Z",
-          "subject_entity_id": "EN-6f7ac1823da81d2e",
-          "subject_name": "DeepSeek",
-          "product_entity_ids": [],
-          "product_names": [],
-          "component_type": "semiconductor",
-          "metric_value": "100",
-          "unit": "亿",
-          "source_quote": "二是模型能力跃升，深度求索、月之暗面等本土企业先后发布多个万亿级参数开源大模型， 国产大模型全球总下载量突破 100 亿次 ，国产模型与国产算力芯片加速适配。",
-          "event_refs": [
-            "EV-8f2787ceb5224cc9"
-          ],
-          "claim_ref": "CL-fa74440341c640b0",
-          "source_refs": [
-            "SA-3f27658bd8e8b3fb"
-          ],
-          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-08-01/hardware-facts.json"
-        }
-      ],
-      "capexFacts": [],
-      "tags": [],
-      "sourceUrl": "https://ithome.com/0/984/130.htm",
-      "entityIds": [
-        "EN-6f7ac1823da81d2e",
-        "EN-b5251b35f15bedc4"
-      ]
-    },
-    {
       "id": "HWC-2b98a40612d24843",
       "snapshotKey": "2b98a40612d24843",
       "snapshotId": "HWS-808cc8161a483041",
@@ -18948,35 +19331,36 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-26",
-      "funnel_id": "LF-1e22b3ca39eab6a1",
+      "data_date": "2026-10-01",
+      "funnel_id": "LF-63b196c4b8666676",
       "lens": "hardware",
-      "date": "2026-09-26",
+      "date": "2026-10-01",
       "monitoring_paths": [
         "hardware_capacity_fab",
         "hardware_capex",
+        "hardware_oem_odm",
         "hardware_product_specs",
-        "hardware_shipment_deployment",
-        "hardware_supply_agreement"
+        "hardware_shipment_deployment"
       ],
-      "raw_documents": 27,
-      "original_sources": 22,
-      "valid_claims": 4,
-      "observations": 3,
+      "raw_documents": 18,
+      "original_sources": 15,
+      "valid_claims": 11,
+      "observations": 7,
       "canonical_events": 4,
       "blocker_counts": {
-        "no_source_bounded_event": 3,
-        "source_outside_daily_window": 12,
-        "non_event_or_index_title": 3,
-        "raw_source_quality_block": 5
+        "source_outside_daily_window": 8,
+        "non_event_or_index_title": 1,
+        "no_source_bounded_event": 1,
+        "industry_overview_not_event_source": 1,
+        "raw_source_quality_block": 3
       },
       "rates": {
-        "original_source_rate": 0.8148148148148148,
-        "valid_claim_rate": 0.14814814814814814,
-        "observation_rate": 0.75,
-        "event_conversion_rate": 1
+        "original_source_rate": 0.8333333333333334,
+        "valid_claim_rate": 0.6111111111111112,
+        "observation_rate": 0.6363636363636364,
+        "event_conversion_rate": 0.36363636363636365
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-26/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/monitoring-funnel.json"
     }
   ]
 }

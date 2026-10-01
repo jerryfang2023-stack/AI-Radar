@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-04-13",
-    "latest_disclosed_at": "2026-04-13",
+    "latest_disclosed_at": "2026-05-25",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "participant": 1
@@ -87,7 +87,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-d950effa8c9a1dcc",
+        "activity_id": "IA-b45dbd69e4856a8f",
+        "funding_insight_id": "FI-033dd55115963cb3",
+        "event_ids": [
+          "EV-0896f0e7b703bed2"
+        ],
+        "company_entity_id": "EN-bd0658982d1f728d",
+        "company_canonical_entity_id": "EN-bd0658982d1f728d",
+        "company_name": "天机",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-05-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7ef228d0192ff7f5",
+            "source_url": "https://pitchhub.36kr.com/project/1818784826380416",
+            "source_title": "天机智能 | 项目信息-36氪",
+            "source_content_hash": "692147b904abe49f",
+            "quote": "A轮 2025-12 未透露 纪源资本 ， 赛富投资基金 ， 招银国际资本",
+            "quote_hash": "5fbd16174087460fd49ed1fe731d9e8c56ecfbfb3f4bb11bdb2b69d800c14619"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3c854fc55659500a",
         "funding_insight_id": "FI-8ca5a4680f477ab8",
         "event_ids": [
           "EV-fd2ff833db684e40"
@@ -125,49 +165,9 @@
             "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
           }
         ]
-      },
-      {
-        "activity_id": "IA-a82880085fe83441",
-        "funding_insight_id": "FI-033dd55115963cb3",
-        "event_ids": [
-          "EV-0896f0e7b703bed2"
-        ],
-        "company_entity_id": "EN-bd0658982d1f728d",
-        "company_canonical_entity_id": "EN-bd0658982d1f728d",
-        "company_name": "天机",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-7ef228d0192ff7f5",
-            "source_url": "https://pitchhub.36kr.com/project/1818784826380416",
-            "source_title": "天机智能 | 项目信息-36氪",
-            "source_content_hash": "692147b904abe49f",
-            "quote": "A轮 2025-12 未透露 纪源资本 ， 赛富投资基金 ， 招银国际资本",
-            "quote_hash": "5fbd16174087460fd49ed1fe731d9e8c56ecfbfb3f4bb11bdb2b69d800c14619"
-          }
-        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-13a43855ea188967",
-        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
-        "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
-        "source_content_hash": "16a36ffc37b94da5",
-        "quote": "跟投方包括京津冀创业投资引导基金、中关村资本、亦庄科创二期基金、招银国际资本以及鑫融邦资本等知名投资机构",
-        "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
-      },
       {
         "source_id": "FISRC-7ef228d0192ff7f5",
         "source_url": "https://pitchhub.36kr.com/project/1818784826380416",
@@ -175,6 +175,14 @@
         "source_content_hash": "692147b904abe49f",
         "quote": "A轮 2025-12 未透露 纪源资本 ， 赛富投资基金 ， 招银国际资本",
         "quote_hash": "5fbd16174087460fd49ed1fe731d9e8c56ecfbfb3f4bb11bdb2b69d800c14619"
+      },
+      {
+        "source_id": "FISRC-13a43855ea188967",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-13/doc-inhuitqy5628851.shtml",
+        "source_title": "华工投资、长飞基金参与光芯片厂商华毅瀛飞Pre-A轮融资",
+        "source_content_hash": "16a36ffc37b94da5",
+        "quote": "跟投方包括京津冀创业投资引导基金、中关村资本、亦庄科创二期基金、招银国际资本以及鑫融邦资本等知名投资机构",
+        "quote_hash": "dcaa6fc9894fc1596ce5cf55490408d66b627ce08b0f5c7ed18ea4ad0792ae41"
       }
     ],
     "public_profile": {

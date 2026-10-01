@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -92,7 +92,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-92143774d87e53dd",
+        "activity_id": "IA-7154b5e1fc0a66ab",
         "funding_insight_id": "FI-9c3c02658ff94312",
         "event_ids": [
           "EV-cded77b1de2db61a"
@@ -132,7 +132,7 @@
         ]
       },
       {
-        "activity_id": "IA-a660e57aab6b27d1",
+        "activity_id": "IA-ee8ee4cd84244fb2",
         "funding_insight_id": "FI-1d51a25d67b90d0d",
         "event_ids": [
           "EV-79a0bbe8b8623b28"
@@ -288,6 +288,26 @@
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Jim Breyer 是 Breyer Capital 创始人兼 CEO，也是长期从事科技创业投资的投资人。其公开投资履历涉及 Facebook、Etsy、Spotify、Dell 等公司，并参与创立 Accel-KKR。",
+          "source_hash": "0338ba9544025a681152261b1b91a05036755b27260a46fdefa859ebf2520d81",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "与 George Roberts、Henry Kravis 共同创立并参与投资委员会。",
+          "source_hash": "5a3dbe1c636b2b5f10c44f7e36320f1388363f124b379288eb2f71843a0bde51",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:44.203Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -1897,7 +1897,7 @@ def create_app(test_config=None, *, pay_client=None, virtual_pay_client=None, co
         return "", 204
 
     from payment_service.community_hub import register_routes as register_community_hub_routes
-    register_community_hub_routes(app, db=db, auth_required=auth_required, user_by_id=user_by_id)
+    register_community_hub_routes(app, db=db, auth_required=auth_required, user_by_id=user_by_id, membership=membership)
     return app
 
 

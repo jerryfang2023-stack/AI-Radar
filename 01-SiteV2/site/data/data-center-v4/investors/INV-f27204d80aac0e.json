@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-a1c90932b7750df7",
+        "activity_id": "IA-6db5f944698fdb53",
         "funding_insight_id": "FI-aeb33ba9223229b0",
         "event_ids": [
           "EV-869c9ea96c58873d"
@@ -321,6 +321,26 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[5].label": {
+          "text": "Kushal Bhagia 的公开履历",
+          "source_hash": "0d83d92f52e1fa0185339a8f27305fecb72e87a0471697c4dd012bafa209e73b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:20.121Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "Aditya Singh 的公开履历",
+          "source_hash": "947f303ff115456c133aa49ab9e558f5aadd452b38a77d40f0e6f0ae9e5bd688",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:20.122Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

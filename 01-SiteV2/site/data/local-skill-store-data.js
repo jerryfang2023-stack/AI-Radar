@@ -2310,7 +2310,7 @@ window.WaveSightLocalSkillStore = {
       "sourceLabel": "WaveSight",
       "sourcePath": "agent-workflow/skills/follow-builders",
       "sourceVersion": "",
-      "sourceDigest": "d097bc07af6d0789dfd21e22eeabf1fc56da22c190e966e9dd3ca649f2f86da8",
+      "sourceDigest": "b24aa32aa7aa8374959e758c9258842e2a94ba63470235f6fe96f12356716fd7",
       "platformIds": [
         "data-center"
       ],
@@ -2438,7 +2438,7 @@ window.WaveSightLocalSkillStore = {
       "sourceLabel": "WaveSight",
       "sourcePath": "agent-workflow/skills/guanlan-china-funding-monitor",
       "sourceVersion": "",
-      "sourceDigest": "139bc630dd25359ff7c81c5017d71a8c49d6fac44a93731e869cb3f19829e7ad",
+      "sourceDigest": "6eeedb3b8e0e23df05b1926bd0a6d4a52b81c53d120479c38b1160f77624c951",
       "platformIds": [
         "shared"
       ],
@@ -2570,7 +2570,7 @@ window.WaveSightLocalSkillStore = {
       "sourceLabel": "WaveSight",
       "sourcePath": "agent-workflow/skills/guanlan-community-intelligence-monitor",
       "sourceVersion": "",
-      "sourceDigest": "902216adeda4c926331b16b01609fb6c2bb350f7a91ef19538fab8c27fa6ba14",
+      "sourceDigest": "40a2627b5b12b78eeb13eb24c1d78faed6abb3d18f013d215b5c8d4e0e602136",
       "platformIds": [
         "data-center"
       ],
@@ -3028,7 +3028,7 @@ window.WaveSightLocalSkillStore = {
       "sourceLabel": "WaveSight",
       "sourcePath": "agent-workflow/skills/guanlan-first-line-viewpoints-monitor",
       "sourceVersion": "",
-      "sourceDigest": "e892aa8088f8117803640e205359b0849e3b1072a723fcac042fdf154e39c6b9",
+      "sourceDigest": "877f3a084d0d5aa059b5df0b03934197430b59f212f9d1dc1dbc0e934ecea353",
       "platformIds": [
         "data-center"
       ],

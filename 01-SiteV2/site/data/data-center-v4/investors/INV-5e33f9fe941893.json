@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-46f150bc04784f6f",
+        "activity_id": "IA-733b39b2904b4108",
         "funding_insight_id": "FI-d63f40171d330dcb",
         "event_ids": [
           "EV-29eea3f4a8fcd6f5"
@@ -302,6 +302,34 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "researched"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "机构官网记载Cherubic Ventures于2014年成立。",
+          "source_hash": "a286582d898d440f4ed6726faf37bc0c1289cd1c904a4ae04a35048ea6f372de",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Inference.ai · 种子轮 · 2024-01-30 · 公开报道列出Cherubic Ventures、Maple VC与Fusion Fund参与400万美元融资；本库记录的轮次总额不是Cherubic的单笔出资。",
+          "source_hash": "1390150afd7b9280fc02ab9781acb2d04f2c116aa2d931b34128b5040777fa4c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "BP/Deck投稿邮箱",
+          "source_hash": "03db88107f39f14877e356d22abb75c32d34d274e8d8fcd067a7fa76aa6f09f9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:48.820Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

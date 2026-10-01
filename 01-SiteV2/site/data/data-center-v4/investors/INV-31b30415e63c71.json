@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -112,7 +112,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-be0e7e28c3c3075a",
+        "activity_id": "IA-935f1ff811c8bcb5",
         "funding_insight_id": "FI-62124a69da75bc76",
         "event_ids": [
           "EV-3db9a076e3b7d4fd",
@@ -153,7 +153,47 @@
         ]
       },
       {
-        "activity_id": "IA-c4ecd95e69e3c72e",
+        "activity_id": "IA-d37b820d5fb6c130",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "EN-964f260c9a904091",
+        "company_name": "爱诗科技",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "29.8亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2980000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "29.8 亿元"
+        },
+        "announced_at": "2026-07-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B+轮共同投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09c3ca37737a71ce",
+            "source_url": "https://stcn.com/article/detail/3386786.html",
+            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+            "source_content_hash": "edea92990a31710b",
+            "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
+            "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-74914e57348f9900",
         "funding_insight_id": "FI-6eb4d41cef37e680",
         "event_ids": [
           "EV-11c8183c180e4b97"
@@ -193,7 +233,7 @@
         ]
       },
       {
-        "activity_id": "IA-b7d6fbd098d9d84c",
+        "activity_id": "IA-2b4a547f43b651ae",
         "funding_insight_id": "FI-a23f361cdc15f347",
         "event_ids": [
           "EV-94f334e68144c720"
@@ -233,7 +273,7 @@
         ]
       },
       {
-        "activity_id": "IA-359a12d94cc51d79",
+        "activity_id": "IA-f229f97c6fb71d7b",
         "funding_insight_id": "FI-5e5fbfc1e1a1ca79",
         "event_ids": [
           "EV-3b817460afe0d3a6"
@@ -273,7 +313,7 @@
         ]
       },
       {
-        "activity_id": "IA-833c27ecc454a3d3",
+        "activity_id": "IA-a3c62e19409eab41",
         "funding_insight_id": "FI-f15f358f13811b9e",
         "event_ids": [
           "EV-44ec7c229995ca3c"
@@ -311,38 +351,6 @@
             "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
           }
         ]
-      },
-      {
-        "activity_id": "IA-aa73a8a6df3b9d77",
-        "funding_insight_id": "FI-124b4efd0f2fa1d9",
-        "event_ids": [
-          "EV-12f331aaf7d4cca6"
-        ],
-        "company_entity_id": "EN-964f260c9a904091",
-        "company_canonical_entity_id": "EN-964f260c9a904091",
-        "company_name": "爱诗科技",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "B+轮共同投资",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-09c3ca37737a71ce",
-            "source_url": "https://stcn.com/article/detail/3386786.html",
-            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-            "source_content_hash": "edea92990a31710b",
-            "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
-            "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -353,6 +361,14 @@
         "source_content_hash": "e7bb87fdb5aacbc8",
         "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
         "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+      },
+      {
+        "source_id": "FISRC-09c3ca37737a71ce",
+        "source_url": "https://stcn.com/article/detail/3386786.html",
+        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+        "source_content_hash": "edea92990a31710b",
+        "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
+        "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
       },
       {
         "source_id": "FISRC-88fa6d3c9d641f6e",
@@ -385,14 +401,6 @@
         "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
         "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
         "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
-      },
-      {
-        "source_id": "FISRC-09c3ca37737a71ce",
-        "source_url": "https://stcn.com/article/detail/3386786.html",
-        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-        "source_content_hash": "edea92990a31710b",
-        "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
-        "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
       }
     ],
     "public_profile": {

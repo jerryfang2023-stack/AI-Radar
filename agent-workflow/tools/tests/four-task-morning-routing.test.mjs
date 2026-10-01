@@ -5,62 +5,30 @@ import vm from "node:vm";
 import test from "node:test";
 
 const source = fs.readFileSync(new URL("../run-daily-automation-controller.mjs", import.meta.url), "utf8");
-const functions = source.slice(source.indexOf("function morning()"), source.indexOf("function communityRecovery()"));
+const functions = source.slice(source.indexOf("function morning()"), source.indexOf("function recovery()"));
 
 function runMorning({ gateOk = false, businessOk = true, available = true, runs = [] } = {}) {
   const dispatched = [];
+  const calls = [];
   const result = vm.runInNewContext(`${functions}\nmorning()`, {
     path, process: { execPath: "node" }, date: "2026-09-13", reportsDir: "runtime", dryRun: false,
     run(label) {
-      const ok = label === "First-Line Viewpoints gate" ? gateOk
-        : label === "Data Center V4 production dispatch" ? businessOk : true;
+      calls.push(label);
+      const ok = label === "Data Center V4 production dispatch" ? businessOk : true;
       return { label, ok, status: ok ? 0 : 1 };
     },
     workflowRuns() { return { available, runs, result: { ok: available } }; },
     dispatchWorkflow(workflow) { dispatched.push(workflow); return { ok: true, label: workflow }; },
   });
-  return { result, dispatched };
+  return { result, dispatched, calls };
 }
 
-test("08:10 supplies missing RSS production without a recovery timer", () => {
-  const { result, dispatched } = runMorning();
+test("08:10 funding dispatch no longer inspects or dispatches the independent weekly Builders lane", () => {
+  const { result, dispatched, calls } = runMorning();
   assert.equal(result.ok, true);
-  assert.deepEqual(dispatched, ["daily-first-line-viewpoints-pr.yml"]);
-  assert.equal(result.lanes.first_line_viewpoints.status, "fallback_dispatched");
-});
-
-test("accepted same-date RSS data skips workflow dispatch", () => {
-  const { result, dispatched } = runMorning({ gateOk: true });
-  assert.equal(result.lanes.first_line_viewpoints.status, "healthy");
+  assert.deepEqual(Object.keys(result.lanes), ["business"]);
   assert.equal(dispatched.length, 0);
-});
-
-test("queued or running RSS production is not dispatched twice", () => {
-  for (const status of ["queued", "in_progress"]) {
-    const { result, dispatched } = runMorning({ runs: [{ status }] });
-    assert.equal(result.lanes.first_line_viewpoints.status, "waiting");
-    assert.equal(dispatched.length, 0);
-  }
-});
-
-test("successful workflow with missing accepted output leaves publication repair to the operator", () => {
-  const { result, dispatched } = runMorning({ runs: [{ status: "completed", conclusion: "success" }] });
-  assert.equal(result.ok, false);
-  assert.equal(result.lanes.first_line_viewpoints.status, "publication_repair_required");
-  assert.equal(dispatched.length, 0);
-});
-
-test("Business Signals failure does not suppress independent RSS production", () => {
-  const { result, dispatched } = runMorning({ businessOk: false });
-  assert.equal(result.ok, false);
-  assert.equal(dispatched.length, 1);
-});
-
-test("failed workflow inspection stops RSS dispatch instead of risking duplicate production", () => {
-  const { result, dispatched } = runMorning({ available: false });
-  assert.equal(result.ok, false);
-  assert.equal(result.lanes.first_line_viewpoints.status, "inspection_failed");
-  assert.equal(dispatched.length, 0);
+  assert.ok(!calls.some((label) => /First-Line Viewpoints|Community Intelligence/u.test(label)));
 });
 
 test("late morning catch-up still runs after retired 09:15 and 09:50 windows", () => {

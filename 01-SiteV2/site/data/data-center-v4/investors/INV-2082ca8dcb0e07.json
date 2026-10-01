@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-fa028d038316a37b",
+        "activity_id": "IA-f43d26fe0f3f7b6e",
         "funding_insight_id": "FI-9c3c02658ff94312",
         "event_ids": [
           "EV-cded77b1de2db61a"
@@ -231,6 +231,74 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Alpha Intelligence Capital 是由企业家领导的全球风险基金家族，专注于深度 AI 和机器学习公司。其投资范围从种子轮到 B 轮，并称其团队分布在美国、新加坡和欧洲。",
+          "source_hash": "593afc114656290fced7445d42bb0eba85e026f1c62712b2da7cbcd068e11621",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:39.379Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "团队背景",
+          "source_hash": "5ca1fe60671576e2c6ad453a93fb7bed3726424d22f2b7cf66c8d860faf8f1b8",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:39.379Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "地理覆盖",
+          "source_hash": "677bb137452dac0f811aac0605dabd9a365838d0b11139fc7b5b310bb390caf8",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Alpha Intelligence Capital 宣布与 Red River West 共同领投 DeepOpinion 的 1100 万欧元融资；该轮金额为公司总额。",
+          "source_hash": "b2d70e261002ee308fc7828874e190d2f168b15cdb333653851d02c67ea9c189",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Toyota Ventures 关于 AMI Labs 2026 年种子轮的一篇文章将 Alpha Intelligence Capital 列为投资方之一。报道的 10.3 亿美元是公司该轮总额，而非 AIC 的单笔出资。",
+          "source_hash": "34c8bf051b79ee6d0d291f49b7b295b4759a8d3a9cacc0e992e6af1808ef8ba7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:42.500Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "创始人咨询",
+          "source_hash": "7379271b97de95cd9bb95e9dcb42f0ca553979f982e9bebe7d85f623ce662550",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

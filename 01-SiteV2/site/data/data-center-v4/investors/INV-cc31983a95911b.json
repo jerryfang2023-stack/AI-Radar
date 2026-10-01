@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-06-17",
+    "latest_disclosed_at": "2026-06-17",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-e4ba3a74baec58b0",
+        "activity_id": "IA-86282f48f94d94b4",
         "funding_insight_id": "FI-479f9d5c1123dba2",
         "event_ids": [
           "EV-a00763037a94d512"
@@ -86,15 +86,23 @@
         "company_entity_id": "FICO-7e1d6c73932aa9b0",
         "company_canonical_entity_id": "",
         "company_name": "Odyssey ML",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "种子轮参投",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 310000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.1 亿美元"
+        },
+        "announced_at": "2026-06-17",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "种子轮参投",
         "role_code": "historical_or_ambiguous",
@@ -231,6 +239,98 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Air Street Capital 是一家由唯一普通合伙人 Nathan Benaich 创立并运营的风险投资公司，在全球投资 AI-first 公司，重点关注北美和欧洲。其主要在 pre-seed 和 seed 阶段投资，发布 State of AI Report，并于 2026 年 3 月宣布 2.323 亿美元 Fund III。",
+          "source_hash": "569d8f373665552ffc3e439ae81dce915397328a89870d0d098277b9615ab9ac",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "成立时间",
+          "source_hash": "6520e44889730d13e3e687ab0e403d653584169102ad8ebb3221d6ce368495ef",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:59.030Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资重点",
+          "source_hash": "63796d28455af159b2fd7937e8ba9bbcee96a13223afbec9e4a33ff9ba65b2d4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "投资阶段",
+          "source_hash": "82ef8e5156662bd9982e29926208b4193e1e4f83c7b3e0d8e4f0f77867ed09c5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "投资组合",
+          "source_hash": "1853eb2e9e5ed2bcc1d03b5a49cf407f2e43851363a8ffd0ce5ab7aa37ca8309",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Nathan Benaich 创立 Air Street，作为一家专注于 AI-first 公司的风险投资公司。",
+          "source_hash": "ebb286116c66596b73f0fc951da6f3e7d04ac272e579a45e8096726df8478817",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:55.309Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "该公司宣布了 Fund III。",
+          "source_hash": "0f9e9e5d147e97a8e330d16ca7500d78d5c5b1e780678a138fd6ddfae5f19029",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "该公司列出了部分退出案例，包括 Graphcore、Adept 和 Mapillary；这些示例并非经审计的基金业绩。",
+          "source_hash": "a34e9e86ece29024deb088939eca18391530468f0035d35b4e079396c52282e8",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "一篇关于 Odyssey ML B 轮融资的报道将 Air Street Capital 列为更早种子轮的投资方。",
+          "source_hash": "4e5ed99a617526f72e6fbe0daaa6bb0fb8a5bf57153bd18e9f76df7de4f9ce97",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "创始人推介提交",
+          "source_hash": "26001d571278aaad796cff654f41fba517dfc288df2ab1d16b6fa17023e5e060",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:16.720Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

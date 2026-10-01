@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -99,7 +99,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-7a8ac40d0593cfc2",
+        "activity_id": "IA-d999d3e5d3bb2c67",
         "funding_insight_id": "FI-f59cd4d7e9ffcb18",
         "event_ids": [
           "EV-44cd5e03d30c85b3"
@@ -139,7 +139,7 @@
         ]
       },
       {
-        "activity_id": "IA-912c3e714af3e783",
+        "activity_id": "IA-aaab86991df94182",
         "funding_insight_id": "FI-8e0c1c5789c6d1f8",
         "event_ids": [
           "EV-fb817fb0a5e63323"
@@ -179,7 +179,7 @@
         ]
       },
       {
-        "activity_id": "IA-29159092275c5442",
+        "activity_id": "IA-6d3d24bf61dd474b",
         "funding_insight_id": "FI-479f9d5c1123dba2",
         "event_ids": [
           "EV-a00763037a94d512"
@@ -219,7 +219,7 @@
         ]
       },
       {
-        "activity_id": "IA-c0ae8e72885f9067",
+        "activity_id": "IA-90ebf24dac92fdfe",
         "funding_insight_id": "FI-24441bfba8aff1ad",
         "event_ids": [
           "EV-6f092cfc7a064d64"
@@ -415,6 +415,26 @@
         }
       ],
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.career[0].description": {
+          "text": "长期参与Google基础设施及AI研究；2026年离开Google并共同创立Discovery Loop。",
+          "source_hash": "8291218bd2b34f2bf9f6de54e741b6c87b9a55298b944581efccba3ddb118486",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Discovery Loop官网将MapReduce、Bigtable、Spanner、TensorFlow、Pathways及TPU等系统和技术列入创始团队的共同成果清单；此为团队自述，并非将每一项单独归于Jeff Dean。",
+          "source_hash": "bb0a0f01a81b1f20542d59607007cc4c427159bd66bc0b69f8401ad205053824",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

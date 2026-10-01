@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 4,
     "china_market_company_count": 4,
-    "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-08-19",
+    "first_disclosed_at": "2026-01-12",
+    "latest_disclosed_at": "2026-09-21",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 1,
@@ -105,7 +105,88 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f812c203c4dc9c4d",
+        "activity_id": "IA-62898c29ec6b958d",
+        "funding_insight_id": "FI-1c45f6b3bea32aad",
+        "event_ids": [
+          "EV-fbb4b961191efa55"
+        ],
+        "company_entity_id": "EN-e7d56af70143fcd7",
+        "company_canonical_entity_id": "",
+        "company_name": "数巅智能",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-21",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "pre-A轮老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9ebda1057c2926b3",
+            "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
+            "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
+            "source_content_hash": "6e9cfd36fd6943c7",
+            "quote": "老股东君联资本等也持续加码。",
+            "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c5241f9002656c92",
+        "funding_insight_id": "FI-63374eeafcdd0df6",
+        "event_ids": [
+          "EV-7eead74c2baae511",
+          "EV-ef669a52c9a3f94f"
+        ],
+        "company_entity_id": "EN-1d79127e9d90e89b",
+        "company_canonical_entity_id": "EN-1d79127e9d90e89b",
+        "company_name": "智谱AI",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "约50亿美元融资",
+        "amount_original": "50 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "50 亿美元"
+        },
+        "announced_at": "2026-09-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-e930be8aa5120588",
+            "source_url": "https://www.jiemian.com/article/12128930.html",
+            "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
+            "source_content_hash": "6039a35df79b1076",
+            "quote": "君联资本等老股东继续跟投",
+            "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a4a764911bd537e4",
         "funding_insight_id": "FI-dc9e5d11c96e1760",
         "event_ids": [
           "EV-c9a11db49e1afbe5",
@@ -146,7 +227,7 @@
         ]
       },
       {
-        "activity_id": "IA-ed45fb74f2a5283a",
+        "activity_id": "IA-9d893d7c9272029d",
         "funding_insight_id": "FI-0cab7e240eb542ce",
         "event_ids": [
           "EV-e85e6fc6d630d56c"
@@ -186,7 +267,7 @@
         ]
       },
       {
-        "activity_id": "IA-5b57abd9eaebf8be",
+        "activity_id": "IA-876b8c70a98cb67b",
         "funding_insight_id": "FI-6adc0d7bfd441daa",
         "event_ids": [
           "EV-b4d6c556eadaa272"
@@ -226,7 +307,7 @@
         ]
       },
       {
-        "activity_id": "IA-50cd50b69ba97dd3",
+        "activity_id": "IA-5b5e0342e9acc0e9",
         "funding_insight_id": "FI-45331063d95f5f57",
         "event_ids": [
           "EV-81b7cd5d6a37912c"
@@ -266,72 +347,7 @@
         ]
       },
       {
-        "activity_id": "IA-9cb284487d917a8d",
-        "funding_insight_id": "FI-1c45f6b3bea32aad",
-        "event_ids": [
-          "EV-fbb4b961191efa55"
-        ],
-        "company_entity_id": "EN-e7d56af70143fcd7",
-        "company_canonical_entity_id": "",
-        "company_name": "数巅智能",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "pre-A轮老股东持续加码",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-9ebda1057c2926b3",
-            "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
-            "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
-            "source_content_hash": "6e9cfd36fd6943c7",
-            "quote": "老股东君联资本等也持续加码。",
-            "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-54d48989dcec8743",
-        "funding_insight_id": "FI-63374eeafcdd0df6",
-        "event_ids": [
-          "EV-7eead74c2baae511",
-          "EV-ef669a52c9a3f94f"
-        ],
-        "company_entity_id": "EN-1d79127e9d90e89b",
-        "company_canonical_entity_id": "EN-1d79127e9d90e89b",
-        "company_name": "智谱AI",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "老股东跟投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-e930be8aa5120588",
-            "source_url": "https://www.jiemian.com/article/12128930.html",
-            "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
-            "source_content_hash": "6039a35df79b1076",
-            "quote": "君联资本等老股东继续跟投",
-            "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-60358805fc5c2d7c",
+        "activity_id": "IA-b28fc9b02636781a",
         "funding_insight_id": "FI-e9bdd4e9374b04ca",
         "event_ids": [
           "EV-41c54c428d84cc1e",
@@ -341,15 +357,23 @@
         "company_entity_id": "EN-8dc72a4672894e0f",
         "company_canonical_entity_id": "EN-8dc72a4672894e0f",
         "company_name": "自变量机器人",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-01-12",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "Pre-A++轮领投",
         "role_code": "historical_or_ambiguous",
@@ -366,6 +390,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-9ebda1057c2926b3",
+        "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
+        "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
+        "source_content_hash": "6e9cfd36fd6943c7",
+        "quote": "老股东君联资本等也持续加码。",
+        "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
+      },
+      {
+        "source_id": "FISRC-e930be8aa5120588",
+        "source_url": "https://www.jiemian.com/article/12128930.html",
+        "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
+        "source_content_hash": "6039a35df79b1076",
+        "quote": "君联资本等老股东继续跟投",
+        "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+      },
       {
         "source_id": "FISRC-b7725acf292395aa",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
@@ -397,22 +437,6 @@
         "source_content_hash": "69550847bd779ae8",
         "quote": "老股东 君联资本、上海国投孚腾和元智未来 追加投资。",
         "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
-      },
-      {
-        "source_id": "FISRC-9ebda1057c2926b3",
-        "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
-        "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
-        "source_content_hash": "6e9cfd36fd6943c7",
-        "quote": "老股东君联资本等也持续加码。",
-        "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
-      },
-      {
-        "source_id": "FISRC-e930be8aa5120588",
-        "source_url": "https://www.jiemian.com/article/12128930.html",
-        "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
-        "source_content_hash": "6039a35df79b1076",
-        "quote": "君联资本等老股东继续跟投",
-        "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
       },
       {
         "source_id": "FISRC-449b969616ed1e95",

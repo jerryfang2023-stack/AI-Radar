@@ -10,9 +10,32 @@ import { buildChinaFundingHealth } from "./lib/china-funding-health.mjs";
 import { historyWindows } from "./collect-china-funding-history.mjs";
 
 const urlKey = (url) => String(url || "").replace(/[?#].*$/u, "").replace(/\/$/u, "");
-export function uncapturedChinaFundingItems(discovery, accepted) {
+export function mergeChinaFundingDiscoveries(discovery, supplements = []) {
+  const items = [...(discovery?.items || [])];
+  const seen = new Set(items.map((item) => urlKey(item.url)).filter(Boolean));
+  const included = [];
+  for (const supplement of supplements.filter(Boolean)) {
+    if (supplement.date && discovery?.date && supplement.date !== discovery.date) {
+      throw new Error(`China funding supplemental discovery date mismatch: ${supplement.date} != ${discovery.date}`);
+    }
+    for (const item of supplement.items || []) {
+      const key = urlKey(item.url);
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      items.push(item);
+      included.push(item);
+    }
+  }
+  return {
+    ...discovery,
+    items,
+    secondary_search_candidate_count: included.filter((item) => item.secondary_search === true).length,
+  };
+}
+
+export function uncapturedChinaFundingItems(discovery, accepted, { secondaryOnly = false } = {}) {
   const captured = new Set((accepted?.source_artifacts || []).flatMap((item) => [item.source_url, item.canonical_url]).filter(Boolean).map(urlKey));
-  return (discovery.items || []).filter((item) => !captured.has(urlKey(item.url)));
+  return (discovery.items || []).filter((item) => (!secondaryOnly || item.secondary_search === true) && !captured.has(urlKey(item.url)));
 }
 export function selectChinaFundingIntake(intake, discovery) {
   const urls = new Set(discovery.items.map((item) => urlKey(item.url)));
@@ -45,7 +68,10 @@ export function restoreAcceptedChinaFundingEvidence(date, command) {
   command(["agent-workflow/tools/assert-private-evidence-backup.mjs", `--date=${date}`]);
 }
 
-export function chinaFundingPlan(date, sourceDir, { rawLimit = 168 } = {}) {
+export function chinaFundingPlan(date, sourceDir, { rawLimit = 168, researchSeeds = false, researchSeedEventIds = [] } = {}) {
+  const seededEventIds = [...new Set(researchSeedEventIds.map((value) => String(value || "").trim()).filter(Boolean))].sort();
+  if (researchSeeds && !seededEventIds.length) throw new Error("research_seed_event_ids_required");
+  if (seededEventIds.some((value) => !/^EV-[a-z0-9]+$/u.test(value))) throw new Error("invalid_research_seed_event_id");
   const tool = (name, ...args) => [`agent-workflow/tools/${name}.mjs`, ...args];
   const site = (name) => [`01-SiteV2/site/scripts/${name}.mjs`];
   const plan = [
@@ -56,6 +82,11 @@ export function chinaFundingPlan(date, sourceDir, { rawLimit = 168 } = {}) {
   for (const command of plan.flatMap((stage) => stage.commands)) {
     if (command[0].endsWith("/generate-funding-insights-deepseek.mjs")) {
       command.push(`--checkpoint-dir=${sourceDir}/card-checkpoints`);
+      if (researchSeeds) command.push(
+        `--research-seeds=${sourceDir}/funding-research-seeds.json`,
+        `--event-ids=${seededEventIds.join(",")}`,
+        "--force=true",
+      );
     }
   }
   return plan;
@@ -77,7 +108,11 @@ function main() {
   const sourceDir = args.get("source-dir") || laneDir;
   const read = (file, fallback = null) => fs.existsSync(path.resolve(root, file)) ? JSON.parse(fs.readFileSync(path.resolve(root, file), "utf8")) : fallback;
   const write = (file, payload) => { const target = path.resolve(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, `${JSON.stringify(payload, null, 2)}\n`); };
-  const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168 });
+  const researchSeeds = fs.existsSync(path.resolve(root, sourceDir, "funding-research-seeds.json"));
+  const researchSeedEventIds = researchSeeds
+    ? (read(`${sourceDir}/funding-research-seeds.json`, {}).events || []).map((entry) => entry.event_id)
+    : [];
+  const plan = chinaFundingPlan(date, sourceDir, { rawLimit: historyFrom ? 1260 : 168, researchSeeds, researchSeedEventIds });
   if (historyFrom) for (const stage of plan) for (const command of stage.commands) {
     if (command[0].endsWith("/generate-data-center-model-assist.mjs")) command.splice(0, command.length, "agent-workflow/tools/extract-china-funding-history.mjs", `--date=${date}`);
     if (command[0].endsWith("/generate-funding-insights-deepseek.mjs")) command.push("--market-region=CN", `--checkpoint-dir=${laneDir}/card-checkpoints`);
@@ -89,7 +124,9 @@ function main() {
     facts.commands.splice(1, 0, ["agent-workflow/tools/repair-china-funding-source-dates.mjs", `--date=${date}`], ["agent-workflow/tools/build-data-center-v4.mjs", `--date=${date}`]);
   }
   if (args.get("dry-run") === "true") { console.log(JSON.stringify(plan, null, 2)); return; }
-  const discovery = read(`${sourceDir}/china-funding-source-intake-candidates.json`);
+  const primaryDiscovery = read(`${sourceDir}/china-funding-source-intake-candidates.json`);
+  const secondaryDiscovery = read(`${sourceDir}/china-funding-secondary-source-intake-candidates.json`);
+  const discovery = mergeChinaFundingDiscoveries(primaryDiscovery, [secondaryDiscovery]);
   if (discovery?.date !== date) throw new Error("Missing same-date China funding discovery");
   if (historyFrom && (discovery.history?.from !== historyFrom || discovery.history?.to !== historyTo)) throw new Error("Historical discovery does not match the authorized range");
   const intakeFile = `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`;
@@ -138,11 +175,14 @@ function main() {
           // The freshly checked-out main wins for shared IDs; the independent intake adds new IDs.
           write(intakeFile, mergeSourceIntakes(accepted, read(intakeFile) || accepted));
           state.reused = true;
-          const delta = uncapturedChinaFundingItems(discovery, accepted);
+          const delta = uncapturedChinaFundingItems(discovery, accepted, { secondaryOnly: !historyFrom });
           if (delta.length && args.get("append-new-sources") === "true") {
             const deltaDir = `${laneDir}/capture-delta`;
             write(`${deltaDir}/china-funding-source-intake-candidates.json`, { ...discovery, items: delta, source_item_count: delta.length, discovered_count: delta.length });
-            state.source_stage_reason = "explicit_user_systematic_backfill_new_sources_only";
+            state.source_stage_reason = historyFrom
+              ? "explicit_user_systematic_backfill_new_sources_only"
+              : "explicit_user_secondary_search_sources_only";
+            if (!historyFrom) state.secondary_search_candidate_count = delta.length;
             state.reused_source_count = accepted.source_artifacts.length;
             state.new_candidate_count = delta.length;
             for (const original of stage.commands) command(original.map((arg) => arg.startsWith("--source-artifact-dir=") ? `--source-artifact-dir=${deltaDir}` : arg));

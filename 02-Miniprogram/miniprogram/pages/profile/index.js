@@ -1,3 +1,4 @@
+const { redeemOnPage } = require("../../utils/benefit-redemption.js");
 const { getWatchIds } = require("../../utils/storage.js");
 const {
   getProfile,
@@ -25,6 +26,7 @@ Page({
     community: { status: "none", statusLabel: "未入群", points: 0 },
     linkingCommunity: false,
     accountError: "",
+    redeeming: "",
   },
 
   onShow() {
@@ -50,10 +52,10 @@ Page({
   openFollows() { wx.navigateTo({ url: "/pages/follows/index" }); },
   openGrowth() { wx.navigateTo({ url: "/pages/growth/index" }); },
   openMembership() { wx.navigateTo({ url: "/pages/membership/index" }); },
+  redeem(event) { return redeemOnPage(this, event); },
   openInvite() { wx.navigateTo({ url: "/pages/invite/index" }); },
   openCommunity() {
-    if (this.data.community.status === "joined") wx.navigateTo({ url: "/pages/growth/index" });
-    else wx.navigateTo({ url: "/pages/community-apply/index" });
+    wx.switchTab({ url: "/pages/community/index" });
   },
   async retryAccount() {
     try {
@@ -94,7 +96,7 @@ Page({
       this.setData({ growth: getGrowthSnapshot(), community });
       wx.hideLoading();
       if (community.status === "joined") wx.showToast({ title: "已同步社群积分", icon: "success" });
-      else wx.navigateTo({ url: "/pages/community-apply/index" });
+      else wx.showToast({ title: "暂未匹配到社群身份", icon: "none" });
     } catch (error) {
       wx.hideLoading();
       wx.showToast({ title: error.message || "核验失败，请重试", icon: "none" });

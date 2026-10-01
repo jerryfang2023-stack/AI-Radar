@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-7c56e388b541a194",
+        "activity_id": "IA-f74b7a0944a75b0a",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
           "EV-1dba157815d84342"
@@ -256,6 +256,34 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Higgsfield 在 2026-08-17 宣布的 4 亿美元 B 轮融资中将该机构列为参投方。4 亿美元为整轮金额；该机构的单独投资金额未披露。",
+          "source_hash": "ceece27789efe5b6e98e59d9a3baa4b2e0d7f74339fc5536e331aa38ff510777",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Liberty Global Tech Ventures 官网",
+          "source_hash": "e21fe252f62d21bb7be0d22007d3aab761126a9450ffa71320b4b9b42af50c46",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "母公司 Liberty Global 投资者关系邮箱（非 Tech Ventures 项目申报）",
+          "source_hash": "47a251800f7b4b6316a5328f5a5946d8ff4f04106c6b1abc814b208097322419",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

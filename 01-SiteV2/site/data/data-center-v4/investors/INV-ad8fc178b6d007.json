@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -87,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-fb01f11b8b432abd",
+        "activity_id": "IA-940374ec66e66ff3",
         "funding_insight_id": "FI-91df568a315de93f",
         "event_ids": [
           "EV-b695dedc9acda5dc",
@@ -129,7 +129,7 @@
         ]
       },
       {
-        "activity_id": "IA-0019538d3179f159",
+        "activity_id": "IA-698a938267cec7fc",
         "funding_insight_id": "FI-91df568a315de93f",
         "event_ids": [
           "EV-b695dedc9acda5dc",
@@ -139,15 +139,23 @@
         "company_entity_id": "FICO-sycamore",
         "company_canonical_entity_id": "",
         "company_name": "Sycamore",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使投资人",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6500 万美元"
+        },
+        "announced_at": "2026-03-30",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "天使投资人",
         "role_code": "historical_or_ambiguous",
@@ -311,6 +319,26 @@
       "coverage_status": "researched",
       "coverage_note": "职业、教育资料来自OpenAI公开团队介绍和离职报道，2026天使投资记录来自Sycamore公司公告及融资报道；未找到可靠公开来源确认其当前全职职位。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Bob McGrew 是 OpenAI 前首席研究官。OpenAI 公开团队资料称其在 Palantir 领导工程与产品管理十年，早前在 Airware 从事空中机器人工作，并拥有北卡罗来纳州立大学纺织工程学位。2026 年 3 月公司公告将其列为 Sycamore 的天使投资人之一。",
+          "source_hash": "b0cd3616ceec910021df5e289d1296ac1b4a716b618e6b34e0c063f8dff5ed30",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:39.379Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "媒体报道 Bob McGrew 作为 OpenAI 首席研究官离职。",
+          "source_hash": "8be6259b5f17bc0ac7560fe25e70505ae344dca36745e84fb60ed710d53307bd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:39.379Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

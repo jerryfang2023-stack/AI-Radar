@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-06-17",
+    "latest_disclosed_at": "2026-07-23",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "other_current_round": 2
@@ -93,7 +93,48 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-50a6ba92c2508266",
+        "activity_id": "IA-0f58fcf41811bc58",
+        "funding_insight_id": "FI-cb627f50984e7151",
+        "event_ids": [
+          "EV-136b2edc9b9f3be8",
+          "EV-3fb827f44ea109de"
+        ],
+        "company_entity_id": "EN-382635c9325bf327",
+        "company_canonical_entity_id": "",
+        "company_name": "Paper",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$34 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 34000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3400 万美元"
+        },
+        "announced_at": "2026-07-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-23493910baa1c861",
+            "source_url": "https://paper.design/blog/series-a",
+            "source_title": "Paper raises $34M to build the next great design platform",
+            "source_content_hash": "6bc97de07bc79d43",
+            "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
+            "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-47b30db90de31ee8",
         "funding_insight_id": "FI-479f9d5c1123dba2",
         "event_ids": [
           "EV-a00763037a94d512"
@@ -133,7 +174,7 @@
         ]
       },
       {
-        "activity_id": "IA-7a3d505d250e6954",
+        "activity_id": "IA-5b9935a493fe2f5f",
         "funding_insight_id": "FI-664cc90f57688153",
         "event_ids": [
           "EV-44a4e92c03a31ab1"
@@ -171,42 +212,17 @@
             "quote_hash": "6b965a8613678fcfe409fce17923820138ced0bd91dcf84eb0de87c55a4df31c"
           }
         ]
-      },
-      {
-        "activity_id": "IA-d50ced700258ea1e",
-        "funding_insight_id": "FI-cb627f50984e7151",
-        "event_ids": [
-          "EV-136b2edc9b9f3be8",
-          "EV-3fb827f44ea109de"
-        ],
-        "company_entity_id": "EN-382635c9325bf327",
-        "company_canonical_entity_id": "",
-        "company_name": "Paper",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-23493910baa1c861",
-            "source_url": "https://paper.design/blog/series-a",
-            "source_title": "Paper raises $34M to build the next great design platform",
-            "source_content_hash": "6bc97de07bc79d43",
-            "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
-            "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-23493910baa1c861",
+        "source_url": "https://paper.design/blog/series-a",
+        "source_title": "Paper raises $34M to build the next great design platform",
+        "source_content_hash": "6bc97de07bc79d43",
+        "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
+        "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
+      },
       {
         "source_id": "FISRC-e94365d0212a78f3",
         "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
@@ -222,14 +238,6 @@
         "source_content_hash": "bc6dd70ea1b6ac85",
         "quote": "Guillermo Rauch, founder and CEO of Vercel",
         "quote_hash": "6b965a8613678fcfe409fce17923820138ced0bd91dcf84eb0de87c55a4df31c"
-      },
-      {
-        "source_id": "FISRC-23493910baa1c861",
-        "source_url": "https://paper.design/blog/series-a",
-        "source_title": "Paper raises $34M to build the next great design platform",
-        "source_content_hash": "6bc97de07bc79d43",
-        "quote": "renewed support from Basecase , David Hoang , and Guillermo Rauch",
-        "quote_hash": "1baed8cd191b5a894d6d20133e4b48def378dd66b46ca8e4318e83e5d532187e"
       }
     ],
     "public_profile": {
@@ -326,6 +334,26 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Guillermo Rauch 是软件工程师及 Vercel CEO，长期参与 JavaScript 开源项目、开发者工具和云基础设施建设。",
+          "source_hash": "4712c3f5fa5e008a657f3d6a2e038fe09ef47609afc707f1cc6ddefaa46b98f2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:40.923Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "本人简介列出 Socket.IO、Mongoose 等开源项目，并称 Cloudup 后被 Automattic 收购。",
+          "source_hash": "1ad0c75b54fa577bf056b2e6c0b59d454b6cec553d62731d30e4f839fd645d70",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:40.923Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

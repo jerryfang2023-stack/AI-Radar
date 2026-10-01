@@ -1,6 +1,6 @@
 param(
   [string]$RepoPath = "",
-  [string]$TaskName = "WaveSight Follow-Builders Skill Daily",
+  [string]$TaskName = "WaveSight Follow-Builders Skill Weekly",
   [string]$At = "16:10",
   [string]$RuntimePath = "",
   [switch]$NoMerge,
@@ -42,7 +42,7 @@ if (-not $NoMerge) {
 }
 
 $action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument $argument -WorkingDirectory $repo
-$dailyTrigger = New-ScheduledTaskTrigger -Daily -At $time
+$weeklyTrigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Monday -At $time
 
 $settings = New-ScheduledTaskSettingsSet `
   -AllowStartIfOnBatteries `
@@ -56,14 +56,14 @@ $settings = New-ScheduledTaskSettingsSet `
 Register-ScheduledTask `
   -TaskName $TaskName `
   -Action $action `
-  -Trigger $dailyTrigger `
+  -Trigger $weeklyTrigger `
   -Settings $settings `
-  -Description "Run the local follow-builders skill publisher every afternoon and commit the result through a branch and PR." `
+  -Description "Run the local follow-builders skill publisher weekly on Monday and commit the result through a branch and PR." `
   -Force | Out-Null
 
 Write-Host "Installed follow-builders skill scheduled task: $TaskName"
 Write-Host "Repository: $repo"
-Write-Host "Schedule: daily at $At"
+Write-Host "Schedule: weekly on Monday at $At"
 Write-Host "Runner: $runScript"
 Write-Host "Merge after success: $(-not $NoMerge)"
 Write-Host "Runtime reports: $RuntimePath"

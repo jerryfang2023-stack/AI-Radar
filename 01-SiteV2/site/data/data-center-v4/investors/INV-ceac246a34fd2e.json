@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-06-15",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-e5cd74ebdc3a7b3b",
+        "activity_id": "IA-81fa107e65db430e",
         "funding_insight_id": "FI-9854c05d7208a585",
         "event_ids": [
           "EV-e3382d1c1d7db751"
@@ -86,15 +86,23 @@
         "company_entity_id": "EN-ee1e31ffef7dbe64",
         "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
         "company_name": "Sarvam",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$234 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 234000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.34 亿美元"
+        },
+        "announced_at": "2026-06-15",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -158,6 +166,18 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "unverified",
       "identity_status": "pending_verification"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "SEBI收录的发行人文件记录Avvanti Advisors Private Limited在2020年12月至2021年1月数次受让Barbeque-Nation Hospitality股份；该材料证明具名股权交易，不说明其是否为专业VC机构。",
+          "source_hash": "abb692a74ad8aa71564f00bbc5b02a8458c44897ecd4700a8c8fd65d02641c78",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:58.265Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

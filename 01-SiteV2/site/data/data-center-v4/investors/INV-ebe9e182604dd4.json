@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,7 +69,7 @@
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
-    "first_disclosed_at": "2026-04-16",
+    "first_disclosed_at": "2026-01-12",
     "latest_disclosed_at": "2026-05-25",
     "role_counts": {
       "co_lead": 2,
@@ -93,7 +93,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ac29f783ce008dcf",
+        "activity_id": "IA-e03f9bfaa1dc286a",
         "funding_insight_id": "FI-033dd55115963cb3",
         "event_ids": [
           "EV-0896f0e7b703bed2"
@@ -133,7 +133,7 @@
         ]
       },
       {
-        "activity_id": "IA-dbc96627bd6ce64f",
+        "activity_id": "IA-6196b8b356a2f9a0",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
           "EV-1188b1585b835fe1",
@@ -174,7 +174,7 @@
         ]
       },
       {
-        "activity_id": "IA-18c9560f2bca845d",
+        "activity_id": "IA-a6c88e2ff2ea84fb",
         "funding_insight_id": "FI-d5293ab06cfaa935",
         "event_ids": [
           "EV-371bc68f72326c02"
@@ -182,15 +182,23 @@
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-02-11",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "A5轮联合领投",
         "role_code": "historical_or_ambiguous",
@@ -206,7 +214,7 @@
         ]
       },
       {
-        "activity_id": "IA-d676e088948e24af",
+        "activity_id": "IA-e7a4c9792c9f66e7",
         "funding_insight_id": "FI-e9bdd4e9374b04ca",
         "event_ids": [
           "EV-41c54c428d84cc1e",
@@ -216,15 +224,23 @@
         "company_entity_id": "EN-8dc72a4672894e0f",
         "company_canonical_entity_id": "EN-8dc72a4672894e0f",
         "company_name": "自变量机器人",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "A++轮",
+        "round_code": "series_a_plus_plus",
+        "round_original": "A++轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-01-12",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "A轮领投",
         "role_code": "historical_or_ambiguous",

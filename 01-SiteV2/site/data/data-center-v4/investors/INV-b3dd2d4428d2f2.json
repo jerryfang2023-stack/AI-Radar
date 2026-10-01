@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -93,7 +93,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-418b3716471f5a6d",
+        "activity_id": "IA-bb673b438f49f522",
         "funding_insight_id": "FI-208f5f069010d44d",
         "event_ids": [
           "EV-df8954acf9a13848"
@@ -133,7 +133,7 @@
         ]
       },
       {
-        "activity_id": "IA-11ab4a2bfae80c1a",
+        "activity_id": "IA-88432584516f6aff",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
         "event_ids": [
           "EV-d4e44892226be468"
@@ -343,6 +343,34 @@
       "coverage_status": "researched",
       "coverage_note": "本档案描述SoftBank集团层级；具体交易应进一步区分集团直接投资与各Vision Fund实体。联系方式为官网表单，未发现公开项目投递邮箱。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Masayoshi Son创立SoftBank Japan。",
+          "source_hash": "8ff2717b0ff21e139753547e4dbc8aece3e1e46fde5bfc765180fdde2b64b173",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:38.536Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "推出SoftBank Vision Fund 1。",
+          "source_hash": "d4fed4f15ff2c5866c5e92eb1cabff39d6ea165e92f6e2972902ba4d1f0c83ce",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:38.536Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "Vision Funds官网",
+          "source_hash": "19dc31440873cf1412b0b06709dc73ac92bd27f3cb8350704ca1fa015e4862eb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:38.536Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

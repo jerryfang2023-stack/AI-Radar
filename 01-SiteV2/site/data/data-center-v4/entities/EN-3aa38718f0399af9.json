@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-830c323ebeca22d6",
       "EV-fabb3080e5263d33",
       "EV-6225d18316f90a0d"
     ],
@@ -70,13 +71,14 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-25",
-    "lastSeen": "2026-08-21",
+    "lastSeen": "2026-10-01",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
+        "EV-830c323ebeca22d6",
         "EV-fabb3080e5263d33",
         "EV-6225d18316f90a0d"
       ],
@@ -85,6 +87,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-830c323ebeca22d6",
+        "dataDate": "2026-10-01",
+        "date": "2026-09-30",
+        "eventType": "product_release",
+        "eventTypeLabel": "产品发布",
+        "eventGroup": "模型、产品与服务",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "为什么 Dwarkesh 对计算机使用的看法是错的 + OpenAI 如何在 1 周内推出其 Jev 竞品",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "computer_use",
+            "name": "计算机操作",
+            "entityIds": [
+              "EN-7d3194f79e645c42"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-7d3194f79e645c42",
+          "EN-d464d2be503fb804",
+          "EN-fa8c73bd5ab60921",
+          "EN-3aa38718f0399af9"
+        ]
+      },
       {
         "id": "EV-fabb3080e5263d33",
         "dataDate": "2026-08-21",
@@ -148,5 +180,94 @@
   "relationships": [],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-3b18bb974f2baf9d",
+      "snapshotKey": "3b18bb974f2baf9d",
+      "snapshotId": "HWS-4e65448c3d43b602",
+      "eventId": "EV-830c323ebeca22d6",
+      "eventIds": [
+        "EV-830c323ebeca22d6"
+      ],
+      "dataDate": "2026-10-01",
+      "date": "2026-10-01",
+      "title": "Decisions API / Why Dwarkesh / Computer Use",
+      "subject": "OpenAI",
+      "productNames": [
+        "Decisions API",
+        "Why Dwarkesh",
+        "Computer Use"
+      ],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-1144095029a9fe7b"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-01",
+          "hardware_fact_id": "HWF-1144095029a9fe7b",
+          "fact_type": "product",
+          "observed_at": "2026-09-30T00:00:00.000Z",
+          "subject_entity_id": "EN-7d3194f79e645c42",
+          "subject_name": "OpenAI",
+          "product_entity_ids": [
+            "EN-d464d2be503fb804",
+            "EN-fa8c73bd5ab60921",
+            "EN-3aa38718f0399af9"
+          ],
+          "product_names": [
+            "Decisions API",
+            "Why Dwarkesh",
+            "Computer Use"
+          ],
+          "component_type": "ai_device",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "We have, Dots, which is the new, sort of personal assistant product, and, that has some really exciting Computer Use features.",
+          "event_refs": [
+            "EV-830c323ebeca22d6"
+          ],
+          "claim_ref": "CL-e4ad31032e29db0e",
+          "source_refs": [
+            "SA-f845fee19c04122d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "computer_use",
+          "name": "计算机操作",
+          "entityIds": [
+            "EN-7d3194f79e645c42"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://latent.space/p/devday-2026",
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-d464d2be503fb804",
+        "EN-fa8c73bd5ab60921",
+        "EN-3aa38718f0399af9"
+      ]
+    }
+  ]
 }

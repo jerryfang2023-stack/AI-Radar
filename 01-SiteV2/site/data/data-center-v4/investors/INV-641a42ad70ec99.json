@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -91,7 +91,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-2c730c5279e0ff9e",
+        "activity_id": "IA-53fefcaa79fcf1a9",
         "funding_insight_id": "FI-9fd39f44b35d940c",
         "event_ids": [
           "EV-d9cc588fb41a7e67"
@@ -131,7 +131,7 @@
         ]
       },
       {
-        "activity_id": "IA-50bc68dd95455e21",
+        "activity_id": "IA-082cb87127e547b9",
         "funding_insight_id": "FI-3bd982e429974930",
         "event_ids": [
           "EV-0f520c9e5b1ea1d2"
@@ -292,6 +292,26 @@
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.career[2].description": {
+          "text": "领导全球并购业务，创立 DLJ Merchant Banking。",
+          "source_hash": "bd2f829325ff6f143360f7551f555b52d5574f9b30a3773bad52586277b4a6ac",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:40.923Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Blackstone 公告列出他在公司 IPO、GSO 与 Strategic Partners 收购、顾问业务分拆，以及 Tactical Opportunities、Core Private Equity、基础设施和保险方案等业务建设中的领导工作。",
+          "source_hash": "24664ac172e26e6ca757d616aa7850587578d10f404f5f4132ab5993134bf1ed",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:40.923Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

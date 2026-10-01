@@ -5,7 +5,7 @@ import path from "node:path";
 import { collectChinaFunding, normalizeChinaFundingLead, articleUrl } from "../lib/china-funding-collector.mjs";
 import { consumerHardwareConfig } from "../lib/consumer-ai-hardware-monitor.mjs";
 import { buildChinaFundingHealth } from "../lib/china-funding-health.mjs";
-import { chinaFundingPlan, selectChinaFundingIntake, restoreAcceptedChinaFundingEvidence } from "../run-china-funding-pipeline.mjs";
+import { chinaFundingPlan, mergeChinaFundingDiscoveries, selectChinaFundingIntake, restoreAcceptedChinaFundingEvidence, uncapturedChinaFundingItems } from "../run-china-funding-pipeline.mjs";
 import { mergeSourceIntakes } from "../lib/source-intake-v1.mjs";
 import { chinaFundingSourceDate } from "../lib/china-funding-source-date.mjs";
 import { eventSourceEligibility } from "../build-data-center-v4.mjs";
@@ -17,6 +17,46 @@ test("daily financing preserves individual card results inside the restored lane
   const generator = commands.find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
   assert.ok(generator.includes(`--checkpoint-dir=${sourceDir}/card-checkpoints`));
   assert.ok(commands.some((args) => args[0].endsWith("/assert-funding-insights-v1.mjs")));
+});
+test("secondary search candidates append as a source-stage delta without recollecting accepted URLs", () => {
+  const primary = { date: "2026-09-28", items: [{ url: "https://news.example/accepted" }] };
+  const secondary = { date: "2026-09-28", items: [
+    { url: "https://news.example/accepted", secondary_search: true },
+    { url: "https://news.example/new", secondary_search: true },
+    { url: "https://news.example/unreviewed", secondary_search: false },
+  ] };
+  const merged = mergeChinaFundingDiscoveries(primary, [secondary]);
+  assert.equal(merged.items.length, 3);
+  assert.equal(merged.secondary_search_candidate_count, 1);
+  const accepted = { source_artifacts: [{ source_url: "https://news.example/accepted" }] };
+  assert.deepEqual(uncapturedChinaFundingItems(merged, accepted, { secondaryOnly: true }), [secondary.items[1]]);
+  assert.throws(() => mergeChinaFundingDiscoveries(primary, [{ date: "2026-09-27", items: [] }]), /date mismatch/u);
+  const workflow = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
+  assert.match(workflow, /run-china-funding-pipeline\.mjs --date="\$RUN_DATE" --append-new-sources=true/u);
+});
+test("domestic pipeline can use reviewed multi-method research seeds when search quotas are unavailable", () => {
+  const sourceDir = "agent-workflow/reports/china-funding/2026-09-28";
+  const eventIds = ["EV-aaaaaaaaaaaaaaaa", "EV-bbbbbbbbbbbbbbbb"];
+  const generator = chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true, researchSeedEventIds: eventIds })
+    .flatMap((stage) => stage.commands)
+    .find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
+  assert.ok(generator.includes(`--research-seeds=${sourceDir}/funding-research-seeds.json`));
+  assert.ok(generator.includes("--force=true"));
+  assert.ok(generator.includes(`--event-ids=${eventIds.join(",")}`));
+  const normalGenerator = chinaFundingPlan("2026-09-28", sourceDir)
+    .flatMap((stage) => stage.commands)
+    .find((args) => args[0].endsWith("/generate-funding-insights-deepseek.mjs"));
+  assert.ok(!normalGenerator.some((arg) => arg.startsWith("--research-seeds=")));
+  assert.ok(!normalGenerator.includes("--force=true"));
+  assert.throws(() => chinaFundingPlan("2026-09-28", sourceDir, { researchSeeds: true }), /research_seed_event_ids_required/u);
+});
+test("resuming after seed or code changes discards only stale per-event card checkpoints", () => {
+  const workflow = fs.readFileSync(path.join(root, ".github/workflows/china-funding-pr.yml"), "utf8");
+  const restore = workflow.split("- name: Restore failed run checkpoint without recollection")[1].split("- name: Collect each domestic publisher independently")[0];
+  assert.match(restore, /gh run view "\$RESUME_RUN" --json headSha --jq \.headSha/u);
+  assert.match(restore, /sha256sum "\$checkpoint_seeds"/u);
+  assert.match(restore, /\[ "\$checkpoint_seed_hash" != "\$current_seed_hash" \] \|\| \[ "\$source_head" != "\$current_head" \]/u);
+  assert.match(restore, /find "\$lane\/card-checkpoints" -maxdepth 1 -type f -name 'EV-\*\.json' -delete/u);
 });
 test("financing commentary and multi-event headlines cannot become company financing facts", () => {
   const source = { published_at: "2026-09-14", acquisition_channel: "china-funding" };
@@ -72,6 +112,18 @@ test("accepted capture recovery restores date-scoped locators offline and fails 
   assert.throws(() => restoreAcceptedChinaFundingEvidence("2026-09-14", () => { throw new Error("missing original"); }), /missing original/u);
   const pipeline = fs.readFileSync("agent-workflow/tools/run-china-funding-pipeline.mjs", "utf8");
   assert.match(pipeline, /restoreAcceptedChinaFundingEvidence\(date, command\);\s+const capturePassed/u);
+});
+test("resuming an accepted checkpoint preserves the current reviewed search-seed manifest", () => {
+  const workflow = fs.readFileSync(".github/workflows/china-funding-pr.yml", "utf8");
+  const restoreStep = workflow.match(/- name: Restore failed run checkpoint without recollection[\s\S]*?\n      - name: Collect each domestic publisher independently/u)?.[0] || "";
+  const snapshot = restoreStep.indexOf('cp "$current_seeds" "$seed_snapshot"');
+  const checkpointRestore = restoreStep.indexOf('cp -a "$RUNNER_TEMP/china-funding-checkpoint/." "$lane/"');
+  const currentSeedRestore = restoreStep.indexOf('cp "$seed_snapshot" "$current_seeds"');
+  assert.ok(snapshot >= 0 && snapshot < checkpointRestore);
+  assert.ok(checkpointRestore < currentSeedRestore);
+  assert.match(restoreStep, /current_secondary="\$lane\/china-funding-secondary-source-intake-candidates\.json"/u);
+  assert.match(restoreStep, /cp "\$secondary_snapshot" "\$current_secondary"/u);
+  assert.match(restoreStep, /rm -f "\$current_seeds"/u);
 });
 test("domestic dates come from explicit original publication stamps, never capture time", () => {
   const source = { acquisition_channel: "china-funding" };

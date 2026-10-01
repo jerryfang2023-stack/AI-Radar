@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-719df10af75b58db",
+        "activity_id": "IA-3078ece4e4766119",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
           "EV-3b40ec144e5db22c"
@@ -273,6 +273,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Nino Marakovic 的官方简介称原 SAP Ventures 团队于 2011 年分拆为独立风险投资机构。",
+          "source_hash": "979c52a0c6b5c7f39e0a395fd4777bebb412e38f18729d0f8a5c6940efa05b09",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "Nino Marakovic 的官方简介称机构于 2014 年更名为 Sapphire Ventures。",
+          "source_hash": "df5c53eabcbf2f5edab05c8efe3d30fca226c57a798f1fb0a79699c5ab434352",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "Temporal 官方 D 轮公告列出 Sapphire Ventures 作为参投方；3 亿美元是 Temporal 公司本轮融资总额，未披露 Sapphire 的具体投资额。",
+          "source_hash": "5cde2dcd85083d0b3e62bd0695240b5171d553b51943ddf89882771e7a7d3ade",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:45.852Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-07-20",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "participant": 5
@@ -109,7 +109,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-009a161e7247b399",
+        "activity_id": "IA-a39a10a97de4c51b",
+        "funding_insight_id": "FI-a7f67888b410be24",
+        "event_ids": [
+          "EV-901155ab700a7e8e"
+        ],
+        "company_entity_id": "EN-12765295db4f1e79",
+        "company_canonical_entity_id": "",
+        "company_name": "Natural AI, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-07-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "本轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6fe11d1e74b865b4",
+            "source_url": "https://www.linkedin.com/posts/jake-moross_big-day-for-the-natural-team-congrats-activity-7485041411692638208-9ph-",
+            "source_title": "Big day for the Natural team 💸 🤖 | Jake Moross",
+            "source_content_hash": "bc32ea54e5facb9d",
+            "quote": "SV Angel",
+            "quote_hash": "8c6f6b13ad4873cbc8bc1a86d6802c304b7de1cf510add186607cb8e3860b700"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-14b0ab13681bf370",
         "funding_insight_id": "FI-2ebe52bd95cf8644",
         "event_ids": [
           "EV-1da2e46e39a57d33"
@@ -149,7 +189,7 @@
         ]
       },
       {
-        "activity_id": "IA-3ae13325a3466def",
+        "activity_id": "IA-fdef2a2eab840427",
         "funding_insight_id": "FI-2a73fb895b9521fe",
         "event_ids": [
           "EV-7b1c734882fa1ea6"
@@ -189,7 +229,7 @@
         ]
       },
       {
-        "activity_id": "IA-8dc8b859507015c9",
+        "activity_id": "IA-e0ff42598711bb98",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
           "EV-20d762872664fddb"
@@ -229,7 +269,7 @@
         ]
       },
       {
-        "activity_id": "IA-05dce631be2dc2f4",
+        "activity_id": "IA-2c995c5c090c79b8",
         "funding_insight_id": "FI-6deae4c748088f7f",
         "event_ids": [
           "EV-c0ec0c026233bea5"
@@ -269,7 +309,47 @@
         ]
       },
       {
-        "activity_id": "IA-327b60ac3e47a4f2",
+        "activity_id": "IA-433311af0978acd6",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ff92324bbd437a73",
+            "source_url": "https://notice.co/c/mistral-ai",
+            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+            "source_content_hash": "24552deeea13b585",
+            "quote": "SV Angel Safe Superintelligence, Together AI, Reflection AI, Humans&, Hippocratic AI",
+            "quote_hash": "a8e8b4afe3178a768a84dd231989f238844817c18034ca721d88d2e87b42c63a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-45080019859a9f98",
         "funding_insight_id": "FI-c210fc9ab5481f28",
         "event_ids": [
           "EV-b31602193dbf4e08"
@@ -307,73 +387,17 @@
             "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
           }
         ]
-      },
-      {
-        "activity_id": "IA-ca37d485341ef6fe",
-        "funding_insight_id": "FI-1cf34218733257fd",
-        "event_ids": [
-          "EV-85506f9f86779a6d"
-        ],
-        "company_entity_id": "EN-c04bd5ebd10ab696",
-        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
-        "company_name": "Mistral AI",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-ff92324bbd437a73",
-            "source_url": "https://notice.co/c/mistral-ai",
-            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
-            "source_content_hash": "24552deeea13b585",
-            "quote": "SV Angel Safe Superintelligence, Together AI, Reflection AI, Humans&, Hippocratic AI",
-            "quote_hash": "a8e8b4afe3178a768a84dd231989f238844817c18034ca721d88d2e87b42c63a"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-f02f0c0a2ef78d6c",
-        "funding_insight_id": "FI-a7f67888b410be24",
-        "event_ids": [
-          "EV-901155ab700a7e8e"
-        ],
-        "company_entity_id": "EN-12765295db4f1e79",
-        "company_canonical_entity_id": "",
-        "company_name": "Natural AI, Inc.",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "本轮参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-6fe11d1e74b865b4",
-            "source_url": "https://www.linkedin.com/posts/jake-moross_big-day-for-the-natural-team-congrats-activity-7485041411692638208-9ph-",
-            "source_title": "Big day for the Natural team 💸 🤖 | Jake Moross",
-            "source_content_hash": "bc32ea54e5facb9d",
-            "quote": "SV Angel",
-            "quote_hash": "8c6f6b13ad4873cbc8bc1a86d6802c304b7de1cf510add186607cb8e3860b700"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-6fe11d1e74b865b4",
+        "source_url": "https://www.linkedin.com/posts/jake-moross_big-day-for-the-natural-team-congrats-activity-7485041411692638208-9ph-",
+        "source_title": "Big day for the Natural team 💸 🤖 | Jake Moross",
+        "source_content_hash": "bc32ea54e5facb9d",
+        "quote": "SV Angel",
+        "quote_hash": "8c6f6b13ad4873cbc8bc1a86d6802c304b7de1cf510add186607cb8e3860b700"
+      },
       {
         "source_id": "FISRC-9f8cec869ac3008e",
         "source_url": "https://www.citybiz.co/article/876088/sable-raises-45m-to-build-ai-employee-for-customer-relations/",
@@ -407,14 +431,6 @@
         "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
       },
       {
-        "source_id": "FISRC-9b0f32fe01d091cc",
-        "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
-        "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
-        "source_content_hash": "3b03664369ea0afe",
-        "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
-        "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
-      },
-      {
         "source_id": "FISRC-ff92324bbd437a73",
         "source_url": "https://notice.co/c/mistral-ai",
         "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
@@ -423,12 +439,12 @@
         "quote_hash": "a8e8b4afe3178a768a84dd231989f238844817c18034ca721d88d2e87b42c63a"
       },
       {
-        "source_id": "FISRC-6fe11d1e74b865b4",
-        "source_url": "https://www.linkedin.com/posts/jake-moross_big-day-for-the-natural-team-congrats-activity-7485041411692638208-9ph-",
-        "source_title": "Big day for the Natural team 💸 🤖 | Jake Moross",
-        "source_content_hash": "bc32ea54e5facb9d",
-        "quote": "SV Angel",
-        "quote_hash": "8c6f6b13ad4873cbc8bc1a86d6802c304b7de1cf510add186607cb8e3860b700"
+        "source_id": "FISRC-9b0f32fe01d091cc",
+        "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
+        "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
+        "source_content_hash": "3b03664369ea0afe",
+        "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
+        "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
       }
     ],
     "public_profile": {
@@ -543,6 +559,18 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.contacts[0].label": {
+          "text": "SV Angel 官方网站",
+          "source_hash": "2b04c2838c5a6b43f31944122ea589452ada733ddc9ee5efe5d47ef3bddef63c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

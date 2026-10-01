@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
-    "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-09-08",
+    "first_disclosed_at": "2026-02-24",
+    "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 1,
@@ -94,7 +94,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-3d9347a38b050708",
+        "activity_id": "IA-bc610e4a48c3c11d",
+        "funding_insight_id": "FI-17089973bc48aad2",
+        "event_ids": [
+          "EV-0d0b83c319d971b0"
+        ],
+        "company_entity_id": "EN-ef5cac7907b28194",
+        "company_canonical_entity_id": "",
+        "company_name": "上海达卯科技有限公司",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮融资",
+        "amount_original": "约2亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-09-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "股东方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-23e3875ee86bc918",
+            "source_url": "https://www.qbitai.com/2026/09/496494.html",
+            "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+            "source_content_hash": "b652dc815aea1925",
+            "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+            "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fb1fe5f6e907fcc0",
         "funding_insight_id": "FI-fae9478ac0e65316",
         "event_ids": [
           "EV-ac5e79d96a009ee1"
@@ -134,7 +174,47 @@
         ]
       },
       {
-        "activity_id": "IA-9e6e5c26e3c0c6bc",
+        "activity_id": "IA-6ee549ac82757338",
+        "funding_insight_id": "FI-23cabede97d0111d",
+        "event_ids": [
+          "EV-c6437ac13cb07531"
+        ],
+        "company_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_canonical_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_name": "深度智控",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-07-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "B+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67ccadc4294defd6",
+            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+            "source_title": "深度智控 | 项目信息-36氪",
+            "source_content_hash": "ed75aafa3d8feb1d",
+            "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
+            "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-903143189e88f6dd",
         "funding_insight_id": "FI-71c58a10a93101c8",
         "event_ids": [
           "EV-d4d7b019ff0015df",
@@ -183,7 +263,7 @@
         ]
       },
       {
-        "activity_id": "IA-66ce4212a7a9ce5b",
+        "activity_id": "IA-1c304d46dc618eaa",
         "funding_insight_id": "FI-846562dfba15b6a0",
         "event_ids": [
           "EV-61f07716fd7cb7ee"
@@ -191,15 +271,23 @@
         "company_entity_id": "EN-1032f7a4df33f629",
         "company_canonical_entity_id": "EN-1032f7a4df33f629",
         "company_name": "千寻智能",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "两轮融资",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-02-24",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "产业资本",
         "role_code": "historical_or_ambiguous",
@@ -213,73 +301,17 @@
             "quote_hash": "e6f61b65a2027cb9b8f1e21db1dc7d0d242ecfda04601e47581256a4a58bcb84"
           }
         ]
-      },
-      {
-        "activity_id": "IA-53e8549293aaadbf",
-        "funding_insight_id": "FI-17089973bc48aad2",
-        "event_ids": [
-          "EV-0d0b83c319d971b0"
-        ],
-        "company_entity_id": "EN-ef5cac7907b28194",
-        "company_canonical_entity_id": "",
-        "company_name": "上海达卯科技有限公司",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "股东方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-23e3875ee86bc918",
-            "source_url": "https://www.qbitai.com/2026/09/496494.html",
-            "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
-            "source_content_hash": "b652dc815aea1925",
-            "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
-            "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-67891dce4fac088c",
-        "funding_insight_id": "FI-23cabede97d0111d",
-        "event_ids": [
-          "EV-c6437ac13cb07531"
-        ],
-        "company_entity_id": "EN-4e781f6e9e5a49bc",
-        "company_canonical_entity_id": "EN-4e781f6e9e5a49bc",
-        "company_name": "深度智控",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "B+轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-67ccadc4294defd6",
-            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-            "source_title": "深度智控 | 项目信息-36氪",
-            "source_content_hash": "ed75aafa3d8feb1d",
-            "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
-            "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-23e3875ee86bc918",
+        "source_url": "https://www.qbitai.com/2026/09/496494.html",
+        "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+        "source_content_hash": "b652dc815aea1925",
+        "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+        "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+      },
       {
         "source_id": "FISRC-ac5a938b8fdef1a9",
         "source_url": "https://news.pedaily.cn/202609/568645.shtml",
@@ -287,6 +319,14 @@
         "source_content_hash": "38c6d5b49c2072e5",
         "quote": "本轮融资由宁德时代领投，阿美投资 Aramco Ventures战略投资，太平创新投资、广发信德、复星创富等跟投，源码资本、光远资本等老股东持续追加。",
         "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
+      },
+      {
+        "source_id": "FISRC-67ccadc4294defd6",
+        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+        "source_title": "深度智控 | 项目信息-36氪",
+        "source_content_hash": "ed75aafa3d8feb1d",
+        "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
+        "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
       },
       {
         "source_id": "FISRC-d2c8c841370ed82a",
@@ -311,22 +351,6 @@
         "source_content_hash": "ba564b5b598fcd09",
         "quote": "此前，千寻智能引入了 宁德时代 、汇川技术、TCL、 京东 、 招商局创投 以及 华为 、 小米 等产业资本。",
         "quote_hash": "e6f61b65a2027cb9b8f1e21db1dc7d0d242ecfda04601e47581256a4a58bcb84"
-      },
-      {
-        "source_id": "FISRC-23e3875ee86bc918",
-        "source_url": "https://www.qbitai.com/2026/09/496494.html",
-        "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
-        "source_content_hash": "b652dc815aea1925",
-        "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
-        "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
-      },
-      {
-        "source_id": "FISRC-67ccadc4294defd6",
-        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-        "source_title": "深度智控 | 项目信息-36氪",
-        "source_content_hash": "ed75aafa3d8feb1d",
-        "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
-        "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
       }
     ],
     "public_profile": {

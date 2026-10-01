@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -104,7 +104,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-d9924d1ebf89db62",
+        "activity_id": "IA-0582be88f7f3a6a7",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -144,7 +144,7 @@
         ]
       },
       {
-        "activity_id": "IA-c9e2fe4b41120547",
+        "activity_id": "IA-838ddc558c4a241d",
         "funding_insight_id": "FI-e57c1a5088b84f89",
         "event_ids": [
           "EV-276878c26b2a06dc"
@@ -184,7 +184,7 @@
         ]
       },
       {
-        "activity_id": "IA-673c8f7430e4d222",
+        "activity_id": "IA-bb28bd4d46cb911d",
         "funding_insight_id": "FI-94d3afbe69796cf3",
         "event_ids": [
           "EV-c538fb9a61735afc"
@@ -224,7 +224,7 @@
         ]
       },
       {
-        "activity_id": "IA-b53c3a62a022430a",
+        "activity_id": "IA-dd337745a5588950",
         "funding_insight_id": "FI-8a42f200f5caa9f3",
         "event_ids": [
           "EV-259566f35ea4f66d"
@@ -437,6 +437,34 @@
       "coverage_status": "researched",
       "coverage_note": "规模和投资结果取自媒体报道，官网公开页仅核验办公地点；未据单笔回报推算机构整体回报率。",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "TechCrunch报道列举 Benchmark 对 eBay、Snap、Uber、Twitter 的早期投资。",
+          "source_hash": "448b35a89f4720aa59850c61f085da233cb2981693d002d30752a59398ba7205",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "2026年融资报道将 Benchmark 列为 Instinct 融资轮联合领投方。",
+          "source_hash": "e1650d5a9a1316521e6844db134a4e4f2952c0f611616f071c9ae18c1bbd1a47",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "Woodside办公室",
+          "source_hash": "d67a89b466608ef741744ab4f2d9618e26f3c69a1747a0f62e1b4f34f7f256c0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

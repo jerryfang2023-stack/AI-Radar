@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -79,7 +79,8 @@
       "EV-876baa523eb93c4f",
       "EV-4242ed9f08123c32",
       "EV-f5a50f1fed72fec3",
-      "EV-f17aeb4a86a6387c"
+      "EV-f17aeb4a86a6387c",
+      "EV-d7652e5b3dbe4620"
     ],
     "entityIds": [
       "EN-1d79127e9d90e89b",
@@ -101,12 +102,13 @@
       "EN-4731aa5b66658c7f",
       "EN-0a5667ab6d63725e",
       "EN-3a7bd3e2360a3d29",
-      "EN-c27dc0124e23e7fe"
+      "EN-c27dc0124e23e7fe",
+      "EN-f1d93bd549f52aeb"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-01-29",
-    "lastSeen": "2026-09-16"
+    "lastSeen": "2026-10-01"
   },
   "events": [
     {
@@ -13886,6 +13888,124 @@
       ],
       "sourceUrl": "https://claude.com/blog/claude-for-small-business-launches-new-workflows-integrations-and-training-programs",
       "publisher": "Claude：Blog（网页）"
+    },
+    {
+      "id": "EV-d7652e5b3dbe4620",
+      "dataDate": "2026-10-01",
+      "date": "2026-09-30",
+      "updatedDate": "2026-10-01",
+      "eventType": "financial_performance",
+      "eventTypeLabel": "财务表现",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "TechCrunch 分析消费者 AI 的糟糕经济学：付费率低且难以覆盖成本",
+      "originalTitle": "",
+      "subject": "OpenAI",
+      "action": "financial_performance",
+      "object": "enterprise bookings reportedly doubling since July",
+      "metrics": [
+        "$10 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f1d93bd549f52aeb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "food_hospitality",
+            "name": "餐饮与酒店",
+            "entityIds": [
+              "EN-f1d93bd549f52aeb"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f1d93bd549f52aeb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "food_hospitality",
+          "name": "餐饮与酒店",
+          "entityIds": [
+            "EN-f1d93bd549f52aeb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f1d93bd549f52aeb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "food_hospitality",
+          "name": "餐饮与酒店",
+          "entityIds": [
+            "EN-f1d93bd549f52aeb"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-7d3194f79e645c42",
+        "EN-f1d93bd549f52aeb"
+      ],
+      "entityNames": [
+        "OpenAI",
+        "Instinct assistant"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/30/the-ugly-economics-of-consumer-ai",
+      "publisher": "TechCrunch：AI（RSS）"
     }
   ],
   "entities": [
@@ -14122,7 +14242,10 @@
         "EV-436bf00fedf6288d",
         "EV-4faa2bcf2e42e60c",
         "EV-58c1cc3749294649",
+        "EV-6f6d5ec3dab0651c",
+        "EV-72a9b0250c1c9435",
         "EV-8061c8eb754e0542",
+        "EV-857d7186b873e0ed",
         "EV-9ced0afc6d0d1f63",
         "EV-47f2eb9a1d92fc7e",
         "EV-01eaadc83f55095a",
@@ -14282,6 +14405,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-energy_utilities",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -14297,7 +14421,6 @@
         "TX-product_form-model",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -14364,7 +14487,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "EN-6fae0bc5a895aab8",
@@ -14576,10 +14699,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-end_user_application",
         "TX-ai_market_category-industry_applications",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-product_form-end_user_application",
         "TX-ai_market_subcategory-consumer_retail",
         "TX-industry-food_hospitality",
         "TX-use_case-customer_support"
@@ -14606,6 +14729,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-energy_utilities",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
@@ -14615,7 +14739,6 @@
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-industry-financial_services",
@@ -14683,6 +14806,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-energy_utilities",
         "TX-target_user-business_user",
         "TX-ai_market_category-infrastructure_compute",
@@ -14691,7 +14815,6 @@
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-product_form-ai_infrastructure_software",
@@ -14729,6 +14852,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-end_user_application",
         "TX-industry-energy_utilities",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
@@ -14738,7 +14862,6 @@
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
-        "TX-product_form-end_user_application",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -14773,6 +14896,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-end_user_application",
         "TX-industry-energy_utilities",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
@@ -14781,7 +14905,6 @@
         "TX-ai_market_category-enterprise_applications",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
-        "TX-product_form-end_user_application",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -14817,6 +14940,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-target_user-developer",
@@ -14824,7 +14948,6 @@
         "TX-industry-manufacturing",
         "TX-industry-automotive_transportation",
         "TX-industry-retail_ecommerce",
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
         "TX-product_form-ai_infrastructure_software",
@@ -14861,6 +14984,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-end_user_application",
         "TX-industry-energy_utilities",
         "TX-target_user-business_user",
         "TX-industry-manufacturing",
@@ -14869,10 +14994,8 @@
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-education",
-        "TX-product_form-end_user_application",
         "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
@@ -14970,8 +15093,12 @@
         "EV-afcd5426f5c01dc7",
         "EV-f5a50f1fed72fec3",
         "EV-d116b0aa5bb292e2",
+        "EV-defd9eb250a2b925",
         "EV-e857f9d1c1478c70",
         "EV-fd21441fb6e143c3",
+        "EV-d1e3dd4ecf7bf9dc",
+        "EV-4a5240dedde301e6",
+        "EV-06c2f2803729eae2",
         "EV-f114a151829de349",
         "EV-a1c1e9084f310dba",
         "EV-cee1833a40bc2879",
@@ -15076,8 +15203,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-model",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-industry-food_hospitality"
@@ -15093,7 +15220,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-26"
+      "lastSeen": "2026-10-01"
     },
     {
       "id": "EN-c27dc0124e23e7fe",
@@ -15116,6 +15243,28 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-09-15",
       "lastSeen": "2026-09-16"
+    },
+    {
+      "id": "EN-f1d93bd549f52aeb",
+      "name": "Instinct assistant",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-d7652e5b3dbe4620"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-food_hospitality"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-30",
+      "lastSeen": "2026-10-01"
     }
   ],
   "fde": [],

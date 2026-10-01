@@ -1,5 +1,7 @@
 # Guanlan Payment Service
 
+Community reading policy (2026-10-01): authenticated accounts with active unified reading membership or trial can read community content without joined status. Only the gateway may assert the trusted internal reader scope; never accept client viewer IDs or reader overrides. Personal community profile writes and reward ownership still require the linked real member identity.
+
 - This service owns Mini Program identities, payment orders, and paid membership entitlements.
 - Never commit AppSecret, APIv3 keys, merchant private keys, WeChat Pay public keys, production databases, or access tokens.
 - Product prices and virtual product IDs are server-owned: `membership_30d` at CNY 30 / 30 days, `membership_180d` at CNY 168 / 180 days, and `membership_365d` at CNY 300 / 365 days.

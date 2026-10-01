@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -88,7 +88,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-23c6765219fe2204",
+        "activity_id": "IA-3c3386ab130e1c25",
+        "funding_insight_id": "FI-b17732f34966fbc2",
+        "event_ids": [
+          "EV-c2b1af9cc8fba608"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "EN-e7492db096492304",
+        "company_name": "极佳视界",
+        "round": "B1轮",
+        "round_code": "series_b1",
+        "round_original": "B1轮",
+        "amount_original": "15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "15 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东持续超额加注",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a1fb846b5355af64",
+            "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+            "source_title": "首发| 极佳视界，一个月融资25亿",
+            "source_content_hash": "60f6c8807fbce9ac",
+            "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注。",
+            "quote_hash": "c85da4980414a31981422a897b72286447cacfc54f10dfb0335807fa4395208f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2191a3b98523dfbc",
         "funding_insight_id": "FI-f4cf69e8d2cc7653",
         "event_ids": [
           "EV-499a62114b0fd616"
@@ -128,7 +168,7 @@
         ]
       },
       {
-        "activity_id": "IA-c6a3e63ef7c64876",
+        "activity_id": "IA-66b4c9c4123614e9",
         "funding_insight_id": "FI-edc4e4cec2cd84bd",
         "event_ids": [
           "EV-77a608db67e742a4",
@@ -167,41 +207,17 @@
             "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
           }
         ]
-      },
-      {
-        "activity_id": "IA-824d65d027414ea4",
-        "funding_insight_id": "FI-b17732f34966fbc2",
-        "event_ids": [
-          "EV-c2b1af9cc8fba608"
-        ],
-        "company_entity_id": "EN-e7492db096492304",
-        "company_canonical_entity_id": "EN-e7492db096492304",
-        "company_name": "极佳视界",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "老股东持续超额加注",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-a1fb846b5355af64",
-            "source_url": "https://news.pedaily.cn/202604/562806.shtml",
-            "source_title": "首发| 极佳视界，一个月融资25亿",
-            "source_content_hash": "60f6c8807fbce9ac",
-            "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注。",
-            "quote_hash": "c85da4980414a31981422a897b72286447cacfc54f10dfb0335807fa4395208f"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a1fb846b5355af64",
+        "source_url": "https://news.pedaily.cn/202604/562806.shtml",
+        "source_title": "首发| 极佳视界，一个月融资25亿",
+        "source_content_hash": "60f6c8807fbce9ac",
+        "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注。",
+        "quote_hash": "c85da4980414a31981422a897b72286447cacfc54f10dfb0335807fa4395208f"
+      },
       {
         "source_id": "FISRC-4782a6093d519a4d",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
@@ -217,14 +233,6 @@
         "source_content_hash": "7d9409a9ba1e94fc",
         "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
         "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
-      },
-      {
-        "source_id": "FISRC-a1fb846b5355af64",
-        "source_url": "https://news.pedaily.cn/202604/562806.shtml",
-        "source_title": "首发| 极佳视界，一个月融资25亿",
-        "source_content_hash": "60f6c8807fbce9ac",
-        "quote": "华控基金、华民投、一村资本、领阳投资等多个老股东持续超额加注。",
-        "quote_hash": "c85da4980414a31981422a897b72286447cacfc54f10dfb0335807fa4395208f"
       }
     ],
     "public_profile": {

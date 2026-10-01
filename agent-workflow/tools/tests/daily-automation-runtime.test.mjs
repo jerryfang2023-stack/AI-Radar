@@ -203,8 +203,8 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(read("run-follow-builders-skill.ps1"), /--output-dir=\$RuntimePath/u);
   const controller = read("run-daily-automation-controller.mjs");
   assert.match(controller, /run-business-signals-health-dispatch\.mjs[^]*--reports-dir=/u);
-  assert.match(controller, /assert-follow-builders-data\.mjs[^]*--reports-dir=/u);
-  assert.match(controller, /assert-community-intelligence-data\.mjs[^]*--reports-dir=/u);
+  assert.doesNotMatch(controller, /assert-follow-builders-data\.mjs/u);
+  assert.doesNotMatch(controller, /assert-community-intelligence-data\.mjs/u);
   assert.match(controller, /assert-data-center-projection-coverage\.mjs[^]*--reports-dir=/u);
   assert.equal(
     (controller.match(/build-skill-store-dashboard\.mjs[^]*?--output=/gu) || []).length,
@@ -450,7 +450,7 @@ test("morning controller repairs derived repo Skill runtime before auditing it",
   assert.ok(discoveryIndex > syncIndex, "Skill discovery summary must refresh after runtime synchronization");
   assert.ok(checkIndex > discoveryIndex, "Skill Ops audit must run after discovery refresh");
   assert.match(controller.slice(discoveryIndex, checkIndex), /--output=/u);
-  assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business, \.\.\.firstLine.actions\]/u);
+  assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business\]/u);
 });
 
 test("closure resyncs the derived repo Skill runtime after same-day main updates", () => {

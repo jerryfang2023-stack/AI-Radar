@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-01-29",
-    "latest_disclosed_at": "2026-02-05",
+    "latest_disclosed_at": "2026-04-09",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "participant": 2
@@ -93,7 +93,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-73446fa31af69387",
+        "activity_id": "IA-b6e4a268dbc466c9",
+        "funding_insight_id": "FI-a7e1a675674f1a0b",
+        "event_ids": [
+          "EV-314db5cbf5010d41"
+        ],
+        "company_entity_id": "EN-3309b3b14807f39a",
+        "company_canonical_entity_id": "EN-3309b3b14807f39a",
+        "company_name": "面壁智能",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮数亿元人民币融资",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-04-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "北京国资持续加注",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5e868b9dacd5325c",
+            "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
+            "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+            "source_content_hash": "21fcbff02b369abf",
+            "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
+            "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-24b87cf17860e54a",
         "funding_insight_id": "FI-474a441598e62f93",
         "event_ids": [
           "EV-622ebdad1e1fad2d",
@@ -134,7 +174,7 @@
         ]
       },
       {
-        "activity_id": "IA-6d660b03f24fb603",
+        "activity_id": "IA-5dbf9dccd3540ec2",
         "funding_insight_id": "FI-1a9c2af7ff669e40",
         "event_ids": [
           "EV-53ffdce6405b8ba9"
@@ -172,41 +212,17 @@
             "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
           }
         ]
-      },
-      {
-        "activity_id": "IA-5f93f16740398e0a",
-        "funding_insight_id": "FI-a7e1a675674f1a0b",
-        "event_ids": [
-          "EV-314db5cbf5010d41"
-        ],
-        "company_entity_id": "EN-3309b3b14807f39a",
-        "company_canonical_entity_id": "EN-3309b3b14807f39a",
-        "company_name": "面壁智能",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "北京国资持续加注",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-5e868b9dacd5325c",
-            "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-            "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
-            "source_content_hash": "21fcbff02b369abf",
-            "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
-            "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5e868b9dacd5325c",
+        "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
+        "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
+        "source_content_hash": "21fcbff02b369abf",
+        "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
+        "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
+      },
       {
         "source_id": "FISRC-4177e5ca07c921a5",
         "source_url": "https://news.pedaily.cn/202602/560802.shtml",
@@ -222,14 +238,6 @@
         "source_content_hash": "b764c6638c521cc9",
         "quote": "投资人包括国家人工智能产业投资基金，上海国际集团旗下国方创新，北京市人工智能产业投资基金。",
         "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
-      },
-      {
-        "source_id": "FISRC-5e868b9dacd5325c",
-        "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-        "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
-        "source_content_hash": "21fcbff02b369abf",
-        "quote": "再到北京市人工智能产业投资基金、 中关村 科学城基金等北京国资的持续加注",
-        "quote_hash": "3d1ad25dab38fa3f8fee9061a0aadd35ab84e65bb95f9666e4edb543a608ce43"
       }
     ],
     "public_profile": {

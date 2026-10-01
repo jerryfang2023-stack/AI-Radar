@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-01-13",
+    "latest_disclosed_at": "2026-06-17",
     "role_counts": {
       "historical_or_ambiguous": 2
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-1eeada8433e8553e",
+        "activity_id": "IA-583eea2ed8344a29",
         "funding_insight_id": "FI-479f9d5c1123dba2",
         "event_ids": [
           "EV-a00763037a94d512"
@@ -86,15 +86,23 @@
         "company_entity_id": "FICO-7e1d6c73932aa9b0",
         "company_canonical_entity_id": "",
         "company_name": "Odyssey ML",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "种子轮领投",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "3.1亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 310000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.1 亿美元"
+        },
+        "announced_at": "2026-06-17",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "种子轮领投",
         "role_code": "historical_or_ambiguous",
@@ -110,7 +118,7 @@
         ]
       },
       {
-        "activity_id": "IA-5d71cd6d94105bff",
+        "activity_id": "IA-2d5ca37928318bf6",
         "funding_insight_id": "FI-0386397f33fcf55a",
         "event_ids": [
           "EV-fdfd4bf00571bb35"
@@ -118,15 +126,23 @@
         "company_entity_id": "EN-8e8cc11d1475231b",
         "company_canonical_entity_id": "",
         "company_name": "Witness AI",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "既有投资方（A轮联合领投）",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$58 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 58000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5800 万美元"
+        },
+        "announced_at": "2026-01-13",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方（A轮联合领投）",
         "role_code": "historical_or_ambiguous",
@@ -253,6 +269,18 @@
       "coverage_status": "researched",
       "coverage_note": "Alphabet关系、投资阶段和当前规模来自GV官网；组合退出案例不解读为整体回报率。",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "以Google Ventures名称成立。",
+          "source_hash": "aeec061e6ccecd0a011c4a6b6b3b6ad493f84194dcdbdd190b4df6bda7bd9086",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:52.268Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

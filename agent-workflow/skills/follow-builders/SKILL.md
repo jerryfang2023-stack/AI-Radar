@@ -24,7 +24,7 @@ Use this supporting skill only within the WaveSight First-Line Viewpoints lane. 
 
 Read only the files needed for the current run:
 
-1. `context/08-automation.md` for the current four-task production schedule with operator-owned daily inspection and repair and lane boundaries.
+1. `context/08-automation.md` for the weekly independent Builders schedule, separate from daily financing, and lane boundaries.
 2. `agent-workflow/skills/guanlan-first-line-viewpoints-monitor/SKILL.md` for lane ownership.
 3. `evals/wavesight-boundary-evals.md` before publishing or repairing output.
 4. `examples/sample-digest.md` only when output shape is unclear.
@@ -43,7 +43,7 @@ Read only the files needed for the current run:
 - Local source inspection and draft generation are allowed for a requested Builder viewpoint task. Browser/account access, publication, PR/merge, deployment, and external Vault writes require the owning workflow or explicit authorization.
 - Commentary is perspective evidence, not Business Signal evidence. It must not directly create Claims, CanonicalEvents, `RELATION-V2.1`, technical tags, facets, rankings, or recommendations.
 - A business fact discovered here must be recaptured from its original source and pass the V4 source, Claim, event, and integrity chain.
-- Do not create or modify schedules, messaging channels, personal configuration, credentials, or home-directory files. Use the repository's existing 16:10 Windows task and publisher.
+- Do not create or modify schedules, messaging channels, personal configuration, credentials, or home-directory files during routine content work. Use the repository's existing Monday 16:10 weekly Windows task and publisher; keep this lane separate from daily financing.
 - Do not lower evidence or count gates to make a run pass.
 - If same-date production is active, report `waiting`; if required evidence is absent or contaminated, stop that item and report the earliest failing stage.
 

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-21",
-    "latest_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-06-02",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "participant": 1
@@ -87,7 +87,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-6f6d5c13b274bde4",
+        "activity_id": "IA-81425c79e06640a1",
+        "funding_insight_id": "FI-032ffe6e999827b8",
+        "event_ids": [
+          "EV-9486e14e99499e3b"
+        ],
+        "company_entity_id": "EN-05f6ecf01ac4ebec",
+        "company_canonical_entity_id": "",
+        "company_name": "Impulse Space",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6b16eaba393b2b3",
+            "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
+            "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
+            "source_content_hash": "6f44e8a8123b489d",
+            "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+            "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c292a5ae5827bcf1",
         "funding_insight_id": "FI-35b63d84f1f7c2b0",
         "event_ids": [
           "EV-450f624a6a6446ce",
@@ -126,49 +166,9 @@
             "quote_hash": "84bf894edf57cd784810bd4c12567665e006f598949adf664d9f7273c70fc7e4"
           }
         ]
-      },
-      {
-        "activity_id": "IA-2aa0ca67caeffea3",
-        "funding_insight_id": "FI-032ffe6e999827b8",
-        "event_ids": [
-          "EV-9486e14e99499e3b"
-        ],
-        "company_entity_id": "EN-05f6ecf01ac4ebec",
-        "company_canonical_entity_id": "",
-        "company_name": "Impulse Space",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮参投",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "C轮参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-f6b16eaba393b2b3",
-            "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
-            "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
-            "source_content_hash": "6f44e8a8123b489d",
-            "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
-            "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
-          }
-        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-9b94f245fa27a161",
-        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
-        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
-        "source_content_hash": "e91739ca23d21469",
-        "quote": "Tamarack Global",
-        "quote_hash": "84bf894edf57cd784810bd4c12567665e006f598949adf664d9f7273c70fc7e4"
-      },
       {
         "source_id": "FISRC-f6b16eaba393b2b3",
         "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
@@ -176,6 +176,14 @@
         "source_content_hash": "6f44e8a8123b489d",
         "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
         "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+      },
+      {
+        "source_id": "FISRC-9b94f245fa27a161",
+        "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
+        "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
+        "source_content_hash": "e91739ca23d21469",
+        "quote": "Tamarack Global",
+        "quote_hash": "84bf894edf57cd784810bd4c12567665e006f598949adf664d9f7273c70fc7e4"
       }
     ],
     "public_profile": {

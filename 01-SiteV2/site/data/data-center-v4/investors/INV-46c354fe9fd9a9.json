@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -104,7 +104,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-7ac9254d45b323b2",
+        "activity_id": "IA-4cf4f96b22b54f13",
         "funding_insight_id": "FI-b3322b5d5cef2d3e",
         "event_ids": [
           "EV-c84b6d7338f87990"
@@ -144,7 +144,7 @@
         ]
       },
       {
-        "activity_id": "IA-5aef659753fd4d73",
+        "activity_id": "IA-a3eaee0e4856518f",
         "funding_insight_id": "FI-5b5e0489474500cb",
         "event_ids": [
           "EV-2069f6a931b8c9d6"
@@ -184,7 +184,7 @@
         ]
       },
       {
-        "activity_id": "IA-5f33e1b587c9a430",
+        "activity_id": "IA-8b41fd5192aff3ae",
         "funding_insight_id": "FI-9fd39f44b35d940c",
         "event_ids": [
           "EV-d9cc588fb41a7e67"
@@ -224,7 +224,7 @@
         ]
       },
       {
-        "activity_id": "IA-26feed6465e85e09",
+        "activity_id": "IA-0ade2b85558a1687",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
         "event_ids": [
           "EV-8eb0acb180b7ad9d"
@@ -452,6 +452,34 @@
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[2].label": {
+          "text": "Growth I、II 管理规模",
+          "source_hash": "b3c459532344a42911df470338768cd008a85d6c41c6a6b59d55238e3df138db",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "官方团队介绍称 Brian Murray 于 2017 年协助创立 Craft。",
+          "source_hash": "28df4bfec4a6546cdfecc1ab9271a1b408f6249a837c0486490149ef1c53e709",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "官方投资组合列有 Replit（2023 年 Series B extension）、Glean（2024 年 Series E）、Supabase（2024 年 Series C）等案例；公司年份和轮次为官网披露，不代表投资收益。",
+          "source_hash": "f96642f139d75293607a41a9ae7a9e2b604ce7658480b9926f4f9bec34f9f8f9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

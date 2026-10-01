@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -110,7 +110,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-62be2dd74905f730",
+        "activity_id": "IA-6b49592612a33129",
         "funding_insight_id": "FI-164f373b7879a941",
         "event_ids": [
           "EV-3ee6b5e876146bb3"
@@ -150,7 +150,7 @@
         ]
       },
       {
-        "activity_id": "IA-80d212334349e9cd",
+        "activity_id": "IA-a343bb65e2c0906b",
         "funding_insight_id": "FI-5d8eab3e612ca748",
         "event_ids": [
           "EV-c6cccaca326dfd45"
@@ -198,7 +198,7 @@
         ]
       },
       {
-        "activity_id": "IA-677ab3452ece93e8",
+        "activity_id": "IA-9eb0011e52a75bb0",
         "funding_insight_id": "FI-617705549a679908",
         "event_ids": [
           "EV-e7dcecaed5a0ee5b"
@@ -238,7 +238,47 @@
         ]
       },
       {
-        "activity_id": "IA-db381d76437b5a7e",
+        "activity_id": "IA-3a61f597f86a2adf",
+        "funding_insight_id": "FI-9854c05d7208a585",
+        "event_ids": [
+          "EV-e3382d1c1d7db751"
+        ],
+        "company_entity_id": "EN-ee1e31ffef7dbe64",
+        "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
+        "company_name": "Sarvam",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$234 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 234000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.34 亿美元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-eb156fd01909fe18",
+            "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+            "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+            "source_content_hash": "a56910704adc32b1",
+            "quote": "existing backers Khosla Ventures and Peak XV Partners",
+            "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-375cf965edb3f0f9",
         "funding_insight_id": "FI-6d45b570f8bf6df7",
         "event_ids": [
           "EV-e4b3a19529576778"
@@ -278,7 +318,7 @@
         ]
       },
       {
-        "activity_id": "IA-de8df4e4d6ed328f",
+        "activity_id": "IA-7141ce424ad32428",
         "funding_insight_id": "FI-128eef4a492e718e",
         "event_ids": [
           "EV-30466ebe86779a64"
@@ -314,38 +354,6 @@
             "source_content_hash": "052a20f5aa557858",
             "quote": "with participation from Peak XV Partners",
             "quote_hash": "ac99930c703340d8ec2d59399d67e23f7ea69c04f832101069a9abbfed8fad52"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-e31c9aeab74a8a19",
-        "funding_insight_id": "FI-9854c05d7208a585",
-        "event_ids": [
-          "EV-e3382d1c1d7db751"
-        ],
-        "company_entity_id": "EN-ee1e31ffef7dbe64",
-        "company_canonical_entity_id": "EN-ee1e31ffef7dbe64",
-        "company_name": "Sarvam",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-eb156fd01909fe18",
-            "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
-            "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
-            "source_content_hash": "a56910704adc32b1",
-            "quote": "existing backers Khosla Ventures and Peak XV Partners",
-            "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
           }
         ]
       }
@@ -384,6 +392,14 @@
         "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
       },
       {
+        "source_id": "FISRC-eb156fd01909fe18",
+        "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
+        "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
+        "source_content_hash": "a56910704adc32b1",
+        "quote": "existing backers Khosla Ventures and Peak XV Partners",
+        "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
+      },
+      {
         "source_id": "FISRC-7f1c22fc0cc9f63f",
         "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
         "source_title": "Y Combinator毕业生、AI保险经纪公司Harper获4700万美元融资",
@@ -398,14 +414,6 @@
         "source_content_hash": "052a20f5aa557858",
         "quote": "with participation from Peak XV Partners",
         "quote_hash": "ac99930c703340d8ec2d59399d67e23f7ea69c04f832101069a9abbfed8fad52"
-      },
-      {
-        "source_id": "FISRC-eb156fd01909fe18",
-        "source_url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech",
-        "source_title": "Sarvam完成2.34亿美元融资，成印度最新AI独角兽",
-        "source_content_hash": "a56910704adc32b1",
-        "quote": "existing backers Khosla Ventures and Peak XV Partners",
-        "quote_hash": "e698c78eb93709ce5b190c440e4f47aede944419da2c9f83574ce959ea376e9a"
       }
     ],
     "public_profile": {
@@ -564,6 +572,26 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "官网称其旅程始于Sequoia Capital India。",
+          "source_hash": "c44629589d7a69b5b2277152891e18c77d66a273efa6f0354c8c194a66f3dfe2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "Sequoia Capital全球业务重组，Peak XV Partners作为独立机构成立。",
+          "source_hash": "98551dd27ae4eae49a16eb9164d4d4c118a39b153919fdf3609fb0d62f774bd0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

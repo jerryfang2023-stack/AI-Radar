@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-5a2d8b136f0c5455",
+        "activity_id": "IA-2c01a6acbc6398df",
         "funding_insight_id": "FI-1d043b12be806460",
         "event_ids": [
           "EV-375d04f7cc9746c6"
@@ -274,6 +274,130 @@
           "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
         }
       ]
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Somerset Capital Partners是一家家族拥有的投资公司，投资于上市公司和私营公司。其声明的领域包括房地产、能源转型、互联网、软件和技术驱动型行业。该公司于2008年启动其公开股票业务，并自2015年起投资于从A轮到pre-IPO阶段的欧洲私营公司。",
+          "source_hash": "027b9c6f80ff450cb4bb17311fe9063fdcb7d647e75c4193eab0b50daa07e210",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "所有权",
+          "source_hash": "c7d3acc826a80cf2029d915f79cc3bf5f1c097392cbc554799ba0bed1e73a36e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "投资范围",
+          "source_hash": "8683445c303e9e78033d187527f1aba7ce0b346a1f95aa49d7a61098cac37862",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "声明的重点领域",
+          "source_hash": "fb482e10c8bc4ad1825659c51611c243e3e09bbfdd3b5edddadf3f673fee049e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "公开股票策略",
+          "source_hash": "b9fd3a6082639d0811defd47a656b593146fff8f333c265e0bee77f68c5503a7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "私募股权策略",
+          "source_hash": "61e026b3d2a0874554c96a5354eb42074a0a24c55bde26d040df5d8dd09c16dd",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Somerset表示其公开股票业务已启动。",
+          "source_hash": "875c16ca18d6c1f706df6843b2c0b8697fe28928cf8c5ed253e1a4f56977a78b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "Somerset表示其私募股权业务已开始投资欧洲公司。",
+          "source_hash": "6854b1f9f17493d61789f0de9f587e4667a6aa027901e1405dd872c17d01d983",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "EUCLYD A轮融资（2026年9月15日）：EUCLYD宣布了一轮超过2亿欧元的公司级融资，由Somerset和其他三家投资者联合领投。Somerset的单独投资金额未披露。",
+          "source_hash": "801ae109b8c22012b1d17ae8d0f0c9f4396c73df444b627298e87589b519b129",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Somerset的公司公告描述了一项支持酒店运营商Black Label Hospitality增长的投资；金额和投资回报未披露。",
+          "source_hash": "bb1446fb5c46aae582977929156a5d827aae713068c8766cec10fd0fe114cb6c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方网站",
+          "source_hash": "b16446d4331ad20b13b3c92866fa00eb15a0df69d7efc5dfdf9eca066ccae501",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "一般联系方式",
+          "source_hash": "3f5e042764cd955d0b87df53d2a6e27b39c686bc051554771486f162a4d2da2c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "媒体咨询",
+          "source_hash": "fa7b42f4e6f17899f5d770e69607167228176f759ff89bb73a9fb32a2bc20c46",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[3].label": {
+          "text": "主办公室电话",
+          "source_hash": "e54a04629e2812fc04e7a9e745ef3ca339ec6a9cfdadd035ad9362cb764a6729",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[4].label": {
+          "text": "办公室",
+          "source_hash": "9e380d9991e6b74209424e3476f284b459effef9b0ccf6d9f3f8acdbde004c9d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:56.231Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -61,29 +61,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-08",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "co_lead": 2
+      "lead": 1
     },
     "round_codes": [
-      "series_a",
       "series_d"
     ],
     "portfolio_companies": [
-      {
-        "entity_id": "FICO-0ab04bcfc3de286b",
-        "canonical_entity_id": "",
-        "name": "Euclyd"
-      },
       {
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
@@ -92,47 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-7c61a1df53e48471",
-        "funding_insight_id": "FI-1d043b12be806460",
-        "event_ids": [
-          "EV-375d04f7cc9746c6"
-        ],
-        "company_entity_id": "FICO-0ab04bcfc3de286b",
-        "company_canonical_entity_id": "",
-        "company_name": "Euclyd",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "2亿欧元",
-        "amount_normalized": {
-          "currency": "EUR",
-          "value": 200000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "2 亿欧元"
-        },
-        "announced_at": "2026-09-15",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
-        "evidence": [
-          {
-            "source_id": "FISRC-6cbfc1ea08a48a66",
-            "source_url": "https://www.cls.cn/detail/2484090",
-            "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
-            "source_content_hash": "9676197117c46240",
-            "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
-            "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-d0681f323f47ec3b",
+        "activity_id": "IA-d6916fb712ff9678",
         "funding_insight_id": "FI-e0e22d70a91e704e",
         "event_ids": [
           "EV-dccfca59b3e58638",
@@ -160,8 +114,8 @@
         "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
-        "role": "本轮联合领投",
-        "role_code": "co_lead",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
             "source_id": "FISRC-056e24fe41ba3e93",
@@ -170,27 +124,11 @@
             "source_content_hash": "dec4a7c86fa7da81",
             "quote": "Mistral AI 本次融资的领投方包括三星电子、Scaleup Europe Fund、 PSG Equity。",
             "quote_hash": "f7f01ddd4c1ecfe0776c2ec8e56863f5db35a725427b3f51afb24c2dfff1b246"
-          },
-          {
-            "source_id": "FISRC-4d11ed62a144a3f4",
-            "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-            "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-            "source_content_hash": "714c413ab36c1848",
-            "quote": "Samsung Electronics led the round, joined by co-leads Scaleup Europe Fund, managed by EQT, and existing investor PSG Equity.",
-            "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
           }
         ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-6cbfc1ea08a48a66",
-        "source_url": "https://www.cls.cn/detail/2484090",
-        "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
-        "source_content_hash": "9676197117c46240",
-        "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
-        "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
-      },
       {
         "source_id": "FISRC-056e24fe41ba3e93",
         "source_url": "https://www.ithome.com/0/999/657.htm",
@@ -198,14 +136,6 @@
         "source_content_hash": "dec4a7c86fa7da81",
         "quote": "Mistral AI 本次融资的领投方包括三星电子、Scaleup Europe Fund、 PSG Equity。",
         "quote_hash": "f7f01ddd4c1ecfe0776c2ec8e56863f5db35a725427b3f51afb24c2dfff1b246"
-      },
-      {
-        "source_id": "FISRC-4d11ed62a144a3f4",
-        "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-        "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-        "source_content_hash": "714c413ab36c1848",
-        "quote": "Samsung Electronics led the round, joined by co-leads Scaleup Europe Fund, managed by EQT, and existing investor PSG Equity.",
-        "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
       }
     ],
     "public_profile": {

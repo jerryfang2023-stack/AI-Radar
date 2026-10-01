@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-3da2068de2117f51",
+        "activity_id": "IA-702d0f744fd4311f",
         "funding_insight_id": "FI-a308a87eb0e97da7",
         "event_ids": [
           "EV-dd3217aad32e6891"
@@ -247,6 +247,34 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Capital 49 是一只由 Airwallex 创始人支持的风险基金。它表示投资于金融科技、电子商务、人工智能和 B2B 软件，并依托其团队的运营和投资经验。",
+          "source_hash": "1a3582f8a262675c1ac51e952e849bed2c3ab84dd5877992f42cba0984cfc7e5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Christopher Cheng 在公开帖子中表示 Capital 49 支持 Avoca 的 Series B；帖子未披露 Capital 49 的单笔出资金额。",
+          "source_hash": "e935269217f3c87c35f35f2078bd100d8e1ea190809c2145dbe3b6ceeaccd634",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:33.080Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Capital 49 官方网站",
+          "source_hash": "0a19051b36c6631cd158548536f1ca351a00b12e3dcd7368ceb34afaf69933cc",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:35.948Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

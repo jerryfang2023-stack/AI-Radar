@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 5,
     "market_regions": [
       "CN"
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-08-31",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 1,
       "participant": 3
     },
@@ -113,7 +113,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-9d06b526afd43975",
+        "activity_id": "IA-b10bb90a7f2f4c30",
         "funding_insight_id": "FI-0393a877e1b99840",
         "event_ids": [
           "EV-782e8dcca41fd545"
@@ -153,7 +153,87 @@
         ]
       },
       {
-        "activity_id": "IA-0084f6099822dd78",
+        "activity_id": "IA-d31ee497b5ac1eee",
+        "funding_insight_id": "FI-60ae9fb62661395b",
+        "event_ids": [
+          "EV-ba46244851f1db2b"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "EN-e7492db096492304",
+        "company_name": "极佳视界",
+        "round": "B2轮",
+        "round_code": "series_b2",
+        "round_original": "B2轮",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
+            "source_content_hash": "a652909321da946b",
+            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
+            "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3395f28e0f435065",
+        "funding_insight_id": "FI-4a8bacab7e4d7f0f",
+        "event_ids": [
+          "EV-3a591b0f027f66cf"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "EN-e7492db096492304",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce47b663ca256878",
+            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
+            "source_title": "极佳视界三个月完成35亿元B轮系列融资",
+            "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
+            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。",
+            "quote_hash": "ca00b69742155291ef614ec13a2f8362b01fe9476123a2ec6941daf5cddce229"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4ced95efd6d5b568",
         "funding_insight_id": "FI-7a7b9825a0a59da6",
         "event_ids": [
           "EV-34a58f84a7ba4e92"
@@ -193,7 +273,47 @@
         ]
       },
       {
-        "activity_id": "IA-45fc80a9c2a6fa2c",
+        "activity_id": "IA-12aa9a43ef32a53f",
+        "funding_insight_id": "FI-f4cf69e8d2cc7653",
+        "event_ids": [
+          "EV-499a62114b0fd616"
+        ],
+        "company_entity_id": "EN-e7492db096492304",
+        "company_canonical_entity_id": "EN-e7492db096492304",
+        "company_name": "极佳视界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近15亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 15 亿元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮及Pre-B轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4782a6093d519a4d",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+            "source_title": "极佳视界完成15亿元B1轮融资",
+            "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
+            "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2d7c6818d1a2a9f3",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
           "EV-1188b1585b835fe1",
@@ -234,7 +354,7 @@
         ]
       },
       {
-        "activity_id": "IA-1eba674d41e62e25",
+        "activity_id": "IA-31a4f3a80de6e893",
         "funding_insight_id": "FI-66e7dd713fc6bab5",
         "event_ids": [
           "EV-0ff10475efa53e6c",
@@ -275,7 +395,47 @@
         ]
       },
       {
-        "activity_id": "IA-6103019980fe4334",
+        "activity_id": "IA-bba33d181aaea9e6",
+        "funding_insight_id": "FI-4dd698330bc72de1",
+        "event_ids": [
+          "EV-51d8aec94225e9c6"
+        ],
+        "company_entity_id": "EN-78e778b471fd74fd",
+        "company_canonical_entity_id": "",
+        "company_name": "深圳跃然创新科技有限公司",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5b971b07e7344e1",
+            "source_url": "https://m.sohu.com/a/1000028992_112831",
+            "source_title": "蚂蚁集团入股跃然创新，后者首家线下门店将开业_玩具公司_产品_CocoMate",
+            "source_content_hash": "8e101d53ff314a01",
+            "quote": "2025年8月，跃然创新宣布完成 2 亿元 A 轮系列融资，由中金资本旗下基金、红杉中国、华山资本、愉悦资本领投，招银国际等共同参投，Brizan Ventures 等老股东持续加注。",
+            "quote_hash": "c03ad7bf0c5c08ba90e3a3b1f2780303d379c56602f9b11f3c90a8e797667252"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e5a9e91ab0abc64f",
         "funding_insight_id": "FI-edc4e4cec2cd84bd",
         "event_ids": [
           "EV-77a608db67e742a4",
@@ -314,111 +474,6 @@
             "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
           }
         ]
-      },
-      {
-        "activity_id": "IA-e7c743042c18d961",
-        "funding_insight_id": "FI-f4cf69e8d2cc7653",
-        "event_ids": [
-          "EV-499a62114b0fd616",
-          "EV-ba46244851f1db2b"
-        ],
-        "company_entity_id": "EN-e7492db096492304",
-        "company_canonical_entity_id": "EN-e7492db096492304",
-        "company_name": "极佳视界",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "Pre-A+轮及Pre-B轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-4782a6093d519a4d",
-            "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
-            "source_title": "极佳视界完成15亿元B1轮融资",
-            "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
-            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
-            "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
-          },
-          {
-            "source_id": "FISRC-ce47b663ca256878",
-            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-            "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
-            "source_content_hash": "a652909321da946b",
-            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
-            "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-0dfae12c7be83448",
-        "funding_insight_id": "FI-4a8bacab7e4d7f0f",
-        "event_ids": [
-          "EV-3a591b0f027f66cf"
-        ],
-        "company_entity_id": "EN-e7492db096492304",
-        "company_canonical_entity_id": "EN-e7492db096492304",
-        "company_name": "极佳视界",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "Pre-A+轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-ce47b663ca256878",
-            "source_url": "https://news.pedaily.cn/202606/565201.shtml",
-            "source_title": "极佳视界三个月完成35亿元B轮系列融资",
-            "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
-            "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资。",
-            "quote_hash": "ca00b69742155291ef614ec13a2f8362b01fe9476123a2ec6941daf5cddce229"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-582af2768ce6dccc",
-        "funding_insight_id": "FI-4dd698330bc72de1",
-        "event_ids": [
-          "EV-51d8aec94225e9c6"
-        ],
-        "company_entity_id": "EN-78e778b471fd74fd",
-        "company_canonical_entity_id": "",
-        "company_name": "深圳跃然创新科技有限公司",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-c5b971b07e7344e1",
-            "source_url": "https://m.sohu.com/a/1000028992_112831",
-            "source_title": "蚂蚁集团入股跃然创新，后者首家线下门店将开业_玩具公司_产品_CocoMate",
-            "source_content_hash": "8e101d53ff314a01",
-            "quote": "2025年8月，跃然创新宣布完成 2 亿元 A 轮系列融资，由中金资本旗下基金、红杉中国、华山资本、愉悦资本领投，招银国际等共同参投，Brizan Ventures 等老股东持续加注。",
-            "quote_hash": "c03ad7bf0c5c08ba90e3a3b1f2780303d379c56602f9b11f3c90a8e797667252"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -429,46 +484,6 @@
         "source_content_hash": "74d6b0dda1bd2148",
         "quote": "本轮由中金资本、武汉洪山资本领投",
         "quote_hash": "dd9d75ad7cd01080ce06111b58af4c07b7a99db8d909dcc19dc94980c7f5c7d6"
-      },
-      {
-        "source_id": "FISRC-924702999fc88d2f",
-        "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
-        "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
-        "source_content_hash": "76bcd79d46511d45",
-        "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
-        "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
-      },
-      {
-        "source_id": "FISRC-b4d6b7523ee32ad7",
-        "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-        "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-        "source_content_hash": "0f321e5ffc10ea03",
-        "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
-        "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
-      },
-      {
-        "source_id": "FISRC-dd387948ae711f72",
-        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
-        "source_title": "星海图完成20亿元B+轮融资",
-        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
-        "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
-        "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
-      },
-      {
-        "source_id": "FISRC-fdfe58e2e68c7e9e",
-        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
-        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
-        "source_content_hash": "7d9409a9ba1e94fc",
-        "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
-        "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
-      },
-      {
-        "source_id": "FISRC-4782a6093d519a4d",
-        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
-        "source_title": "极佳视界完成15亿元B1轮融资",
-        "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
-        "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
-        "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
       },
       {
         "source_id": "FISRC-ce47b663ca256878",
@@ -487,12 +502,52 @@
         "quote_hash": "ca00b69742155291ef614ec13a2f8362b01fe9476123a2ec6941daf5cddce229"
       },
       {
+        "source_id": "FISRC-924702999fc88d2f",
+        "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
+        "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
+        "source_content_hash": "76bcd79d46511d45",
+        "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
+        "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
+      },
+      {
+        "source_id": "FISRC-4782a6093d519a4d",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-16/doc-inhuryef7850324.shtml",
+        "source_title": "极佳视界完成15亿元B1轮融资",
+        "source_content_hash": "1249ab9a7b5d09d0d0f4f5724c90445e53a54409c6821fa0e8f197a595dca320",
+        "quote": "Pre-A+轮融资由中金资本、广州产投、一村淞灵、华强资本投资",
+        "quote_hash": "3318c5d954cce0783546781182132aeeed02cbdd69b29c3a59a35e110176b847"
+      },
+      {
+        "source_id": "FISRC-b4d6b7523ee32ad7",
+        "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+        "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+        "source_content_hash": "0f321e5ffc10ea03",
+        "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
+        "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
+      },
+      {
+        "source_id": "FISRC-dd387948ae711f72",
+        "source_url": "https://companies.caixin.com/m/2026-04-02/102430123.html",
+        "source_title": "星海图完成20亿元B+轮融资",
+        "source_content_hash": "3702873b1eb4ff8e5e57340525e023aaebb06221f09393a8e2e6a2cdaa7d70cd",
+        "quote": "私募股权基金则包括 中金资本 旗下基金、 普华资本 、 洪泰基金 、广发乾",
+        "quote_hash": "3bdc1a33ff6a55bff382b7f49d6a83110fe46742929cbd7b25b235b1c4903305"
+      },
+      {
         "source_id": "FISRC-c5b971b07e7344e1",
         "source_url": "https://m.sohu.com/a/1000028992_112831",
         "source_title": "蚂蚁集团入股跃然创新，后者首家线下门店将开业_玩具公司_产品_CocoMate",
         "source_content_hash": "8e101d53ff314a01",
         "quote": "2025年8月，跃然创新宣布完成 2 亿元 A 轮系列融资，由中金资本旗下基金、红杉中国、华山资本、愉悦资本领投，招银国际等共同参投，Brizan Ventures 等老股东持续加注。",
         "quote_hash": "c03ad7bf0c5c08ba90e3a3b1f2780303d379c56602f9b11f3c90a8e797667252"
+      },
+      {
+        "source_id": "FISRC-fdfe58e2e68c7e9e",
+        "source_url": "https://news.pedaily.cn/202603/561389.shtml",
+        "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
+        "source_content_hash": "7d9409a9ba1e94fc",
+        "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
+        "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
       }
     ],
     "public_profile": {
@@ -643,7 +698,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[5].role": {
+        "activities[4].role": {
           "text": "Pre-A+轮及Pre-B轮投资方",
           "source_hash": "835c2f14217bdc7f4dc70b73a9dc6d6fa0ef29f3df00cd31ad15041aaa55a817",
           "provider": "deepseek",

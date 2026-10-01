@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -65,6 +65,7 @@
     ],
     "eventIds": [],
     "viewpointIds": [
+      "2103939888513274147",
       "2102594015669756323",
       "2102519097770885231",
       "2102438365455167883",
@@ -194,7 +195,7 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-05",
-    "lastSeen": "2026-09-23",
+    "lastSeen": "2026-09-27",
     "handle": "rauchg",
     "role": "vercel 首席执行官",
     "organization": "Vercel",
@@ -236,6 +237,12 @@
     },
     "timeline": [],
     "viewpoints": [
+      {
+        "id": "2103939888513274147",
+        "date": "2026-09-27",
+        "title": "拒绝不理解。垃圾手雷不仅仅是代码和PR。我们面临一个真实的风险，即*阅读*被完全贬低，因为不断被低质量且未经核实的AI文字轰炸，让人筋疲力尽。有一条帖子正在疯传，讲的是一个“性能改进”被归因于编译器变更。而PR*描述*本身中，AI告诉这个人，这*不是*由于编译器变更，而是算法和数据结构的改变。其含义是，类似的收益本可以通过其他方式获得。我希望AI服务于理解宇宙，并增强人类的认知与创造力。",
+        "sourceUrl": "https://x.com/rauchg/status/2103939888513274147"
+      },
       {
         "id": "2102594015669756323",
         "date": "2026-09-23",
@@ -1077,6 +1084,38 @@
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-08-14T08:40:15.817Z",
+          "status": "translated"
+        },
+        "public_profile.summary": {
+          "text": "Guillermo Rauch 是软件工程师、Vercel 创始人兼 CEO，长期参与 JavaScript 开源项目、开发者工具和云基础设施建设；曾创办 Cloudup，后由 Automattic 收购。",
+          "source_hash": "7e61ee173c10af41cfd284aa85c6fa52ff03efcd41aff9d2e91cf4653c4dc97c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:19.137Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "其个人介绍称 Cloudup 后被 Automattic 收购。",
+          "source_hash": "9f595627e9c864cf624019fb1b617cba9110d895af009566be69b5ae67f2cd14",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:19.137Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "本人介绍称其创办的 Cloudup 后被 Automattic 收购，并列出 Socket.IO、Mongoose 等开源项目。",
+          "source_hash": "fd29774cc290d643ff70dcd61a8c4418183bc6e6c589a0d3a31d9fdc15f65e3a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:19.137Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Vercel 2026 年官方公告继续以 CEO and Founder 称呼 Guillermo Rauch。",
+          "source_hash": "ba32e8d970765fe84b39c5b66f9d229f038ce15588fa4403372863b77f72d055",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:19.137Z",
           "status": "translated"
         }
       }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-dae761dc092e18ff",
+        "activity_id": "IA-219543b8de7918c4",
         "funding_insight_id": "FI-98e08b099fb39138",
         "event_ids": [
           "EV-c1295b8f58024ff6"
@@ -261,6 +261,34 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "researched"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "官网宣布募集 1.62 亿美元新资本，并成立由 Scott Brown 负责的 portfolio services 团队。",
+          "source_hash": "151ca598cbb2d94b423b4acb5819a97144dcb01cec0a367dc1a6a6fd3a249858",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Lemma · Pre-seed · 2026-08-07 · 融资来源列出 Cervin Ventures 为参投机构；公开总额 230 万美元，不代表 Cervin 的单笔投资额。",
+          "source_hash": "b51d4624ea4c520fbb457ff16daff9213a9c3b9b21d04bf6f35e63d38f5dbcd6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:07.446Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "官网展示的代表性组合公司包括 AiFi、ArmorCode、Celona、Paystand、Remi 与 Stream Security；属于官网选列案例，不是完整组合清单。",
+          "source_hash": "b1a105cde2467e4481e545c46aafb69cc68d5b56a33d903d4881fd16fa9c5ec6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

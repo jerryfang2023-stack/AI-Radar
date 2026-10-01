@@ -3,19 +3,28 @@ from contextlib import closing
 import re
 
 from flask import g, jsonify, request
+from payment_service.community import CommunityServiceError
 
 
-def register_routes(app, *, db, auth_required, user_by_id):
+def register_routes(app, *, db, auth_required, user_by_id, membership):
+    def reader_actor():
+        with closing(db()) as conn:
+            user = user_by_id(conn, g.user_id)
+        if not user or not membership(user)["active"]:
+            raise CommunityServiceError("阅读权限已到期，请前往会员中心", 403, "MEMBERSHIP_REQUIRED")
+        return user["community_member_id"]
+
     def actor():
         with closing(db()) as conn:
             user = user_by_id(conn, g.user_id)
         return user["community_member_id"] if user else None
 
     def request_hub(path, method="GET", body=None):
-        member_id = actor()
-        if not member_id:
-            return jsonify(error={"code": "COMMUNITY_REQUIRED", "message": "请先关联或加入社群"}), 403
-        result = app.community_client.hub(path, viewer=member_id, method=method, payload=body)
+        reading = method == "GET" and (path in {"program", "directory"} or path.startswith("archives/"))
+        member_id = reader_actor() if reading else actor()
+        if not reading and not member_id:
+            return jsonify(error={"code": "COMMUNITY_REQUIRED", "message": "没有可编辑的社群个人档案"}), 403
+        result = app.community_client.hub(path, viewer=member_id, method=method, payload=body, **({"reader": True} if reading else {}))
         response = jsonify(result)
         response.headers["Cache-Control"] = "private, no-store"
         return response
@@ -52,10 +61,9 @@ def register_routes(app, *, db, auth_required, user_by_id):
     @app.get("/api/v1/community/points")
     @auth_required
     def community_points():
-        member_id = actor()
-        if not member_id:
-            return jsonify(error={"code": "COMMUNITY_REQUIRED", "message": "请先加入社群"}), 403
-        result = app.community_client.hub("points", viewer=member_id)
+        member_id = reader_actor()
+        result = app.community_client.hub("points", viewer=member_id, reader=True)
+        member_id = result.get("selfId")
         # Remote points already contain every community activity and bounty award.
         # Management grants unlock account privileges; they are not social activity.
         # Exclude their net value from ranks and details without changing the wallet.
@@ -88,15 +96,13 @@ def register_routes(app, *, db, auth_required, user_by_id):
     @app.get("/api/v1/community/token-benefits")
     @auth_required
     def community_season_rewards():
-        member_id = actor()
-        if not member_id:
-            return jsonify(error={"code": "COMMUNITY_REQUIRED", "message": "请先关联或加入社群"}), 403
+        member_id = reader_actor()
         path = request.path.rsplit("/", 1)[-1]
         season = request.args.get("season", "total" if path == "season-points" else "season-2")
         if season not in ({"total", "season-1", "season-2"} if path == "season-points" else {"season-1", "season-2"}):
             return jsonify(error={"message": "赛季不存在"}), 400
         # This API is deliberately isolated from the Mini Program point wallet.
-        response = jsonify(app.community_client.hub(path, viewer=member_id, season=season))
+        response = jsonify(app.community_client.hub(path, viewer=member_id, season=season, reader=True))
         response.headers["Cache-Control"] = "private, no-store"
         return response
 

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -93,7 +93,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-efe1a7906940bdab",
+        "activity_id": "IA-05368ae165fb9eb0",
         "funding_insight_id": "FI-208f5f069010d44d",
         "event_ids": [
           "EV-df8954acf9a13848"
@@ -133,7 +133,47 @@
         ]
       },
       {
-        "activity_id": "IA-3262871b7e969969",
+        "activity_id": "IA-2351223f32d316c4",
+        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "event_ids": [
+          "EV-ef7346378fcf9746"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "IPO",
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "amount_original": "$75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "750 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
+            "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9873059ecb6224b9",
         "funding_insight_id": "FI-6601d010adc14dd0",
         "event_ids": [
           "EV-78a11d309c3d4e97"
@@ -171,38 +211,6 @@
             "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
           }
         ]
-      },
-      {
-        "activity_id": "IA-5c56845deac425de",
-        "funding_insight_id": "FI-082c684e1b4a88c2",
-        "event_ids": [
-          "EV-ef7346378fcf9746"
-        ],
-        "company_entity_id": "EN-e78bdebae031095b",
-        "company_canonical_entity_id": "EN-e78bdebae031095b",
-        "company_name": "SpaceX",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-0349532f469a6b45",
-            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-            "source_title": "Early SpaceX investors will now reap the rewards",
-            "source_content_hash": "e4b5710f29e81069",
-            "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
-            "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -215,20 +223,20 @@
         "quote_hash": "a1f1ea1feea484049efc821f79057e1e10e6177b4bd58b27c192684f9562376c"
       },
       {
-        "source_id": "FISRC-52917ea3c077fbf0",
-        "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
-        "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
-        "source_content_hash": "574df0fdc225fe9e",
-        "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
-        "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
-      },
-      {
         "source_id": "FISRC-0349532f469a6b45",
         "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
         "source_title": "Early SpaceX investors will now reap the rewards",
         "source_content_hash": "e4b5710f29e81069",
         "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
         "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
+      },
+      {
+        "source_id": "FISRC-52917ea3c077fbf0",
+        "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
+        "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
+        "source_content_hash": "574df0fdc225fe9e",
+        "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
+        "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
       }
     ],
     "public_profile": {
@@ -358,6 +366,18 @@
       "coverage_status": "researched",
       "coverage_note": "D1市场类型、成立时间、负责人和其职业履历由组合公司Instacart董事简介支持；监管地址来自SEC申报文件，仅作为历史备案地址展示。公开资料未确认其专用VC申请邮箱或联系人，故不推定。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Daniel Sundheim创立D1 Capital Partners。",
+          "source_hash": "b31475fb9d4eeafa7fde0c40e2a339b7f8f7b7c40288df1fbf94bc2d29efba81",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:38.536Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

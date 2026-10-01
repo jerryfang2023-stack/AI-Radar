@@ -45,23 +45,14 @@ test("points never substitute demo balance or identity for a real zero balance",
   assert.equal(page.data.myPoints, 0); assert.equal(page.data.myName, "测试账户");
   assert.equal(page.data.myRank, "—"); assert.equal(page.data.leaderboard.length, 0);
 });
-test("preview application stores public profile fields without sending or persisting contacts", async () => {
-  const { exp } = fixture();
-  let page; let requests = 0;
-  vm.runInNewContext(fs.readFileSync("miniprogram/pages/community-apply/index.js", "utf8"), {
-    Page: (value) => { page = value; },
-    require: (id) => id.includes("experience") ? exp : id.includes("payment") ? { submitCommunityApplication() { requests += 1; } } : {},
-    wx: { showModal() {}, showToast() {} },
-  });
-  page.setData = (value) => Object.assign(page.data, value);
-  page.data.form = { name: "体验姓名", phone: "13800000000", wechat: "example-only", city: "上海", role: "Founder", industry: "软件", skills: "技术", project: "工具", needs: "交流", direction: "应用", perspective: "实践" };
-  await page.submit();
-  assert.equal(requests, 0);
-  const saved = exp.readExperience();
-  assert.equal(saved.status, "pending"); assert.equal(saved.profile.name, "体验姓名");
-  assert.equal(saved.application.phone, undefined); assert.equal(saved.application.wechat, undefined);
+test("legacy application route returns to community without an application form", () => {
+  let page; let target;
+  vm.runInNewContext(fs.readFileSync("miniprogram/pages/community-apply/index.js", "utf8"), { Page: p => { page=p; }, wx: {switchTab: v => {target=v.url;}} });
+  page.onLoad();
+  assert.equal(target,"/pages/community/index");
+  assert.doesNotMatch(fs.readFileSync("miniprogram/pages/community-apply/index.wxml","utf8"), /input|form|申请|权限/);
 });
-test("edited preview profile appears in directory without writing real member storage", () => {
+test("edited preview profile appears in directory without writing real member storage", async () => {
   const { exp } = fixture();
   const value = exp.readExperience(); value.profile = { name: "新的体验姓名", city: "上海", role: "Founder", industry: "软件", project: "新项目" }; exp.saveExperience(value);
   let page;
@@ -69,7 +60,7 @@ test("edited preview profile appears in directory without writing real member st
     Page: (result) => { page = result; },
     require: (id) => id.includes("experience") ? exp : id.includes("community-data") ? data : id.includes("access") ? { requireCommunityMember: () => true } : { saveCommunityProfile() { throw new Error("must not write real profile"); } },
   });
-  page.setData = (result) => Object.assign(page.data, result); page.onLoad({}); page.onShow();
+  page.setData = (result) => Object.assign(page.data, result); await page.onLoad({}); page.onShow();
   assert.equal(page.data.filteredMembers[0].name, "新的体验姓名");
   page.loadProfile("profile"); assert.equal(page.data.profile.project, "新项目");
 });

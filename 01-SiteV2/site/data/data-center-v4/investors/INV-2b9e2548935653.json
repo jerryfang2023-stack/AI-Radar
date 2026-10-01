@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -71,8 +71,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-16",
-    "latest_disclosed_at": "2026-07-16",
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-08-10",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "participant": 1
@@ -89,7 +89,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-8ec9f46343888cf8",
+        "activity_id": "IA-ed1ffb037cb4df88",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "F轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-46e8b046ae7a64f0",
+            "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+            "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+            "source_content_hash": "62a5edd881d6cc6e",
+            "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
+            "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-65c5d615b955f1ae",
         "funding_insight_id": "FI-3b1ea359415f476d",
         "event_ids": [
           "EV-4eaf3aabecae6016"
@@ -129,39 +169,7 @@
         ]
       },
       {
-        "activity_id": "IA-36a68c63c6c02c41",
-        "funding_insight_id": "FI-f55b62cf10cb7c98",
-        "event_ids": [
-          "EV-f5dd6dec49ad83aa"
-        ],
-        "company_entity_id": "EN-c70eca6b0f88f44d",
-        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-        "company_name": "Anthropic",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "F轮参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-46e8b046ae7a64f0",
-            "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
-            "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
-            "source_content_hash": "62a5edd881d6cc6e",
-            "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
-            "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-12b92a5e5c64b740",
+        "activity_id": "IA-d1225e264d2860e4",
         "funding_insight_id": "FI-082c684e1b4a88c2",
         "event_ids": [
           "EV-ef7346378fcf9746"
@@ -169,15 +177,23 @@
         "company_entity_id": "EN-e78bdebae031095b",
         "company_canonical_entity_id": "EN-e78bdebae031095b",
         "company_name": "SpaceX",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "IPO",
+        "round_code": "ipo",
+        "round_original": "IPO",
+        "amount_original": "$75 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "750 亿美元"
+        },
+        "announced_at": "2026-06-03",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -195,20 +211,20 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-80d6b020dd75ac09",
-        "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
-        "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
-        "source_content_hash": "2ac54d2d554e9655",
-        "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
-        "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
-      },
-      {
         "source_id": "FISRC-46e8b046ae7a64f0",
         "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
         "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
         "source_content_hash": "62a5edd881d6cc6e",
         "quote": "GIC first invested in September 2025, joining Anthropic’s $13 billion Series F (alongside Qatar Investment Authority and Ontario Teachers’ Pension Plan).",
         "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
+      },
+      {
+        "source_id": "FISRC-80d6b020dd75ac09",
+        "source_url": "https://genztech.blog/p/fireworks-ai-1-5b-series-d-17-5b-valuation/",
+        "source_title": "Fireworks AI Raises $1.5B Series D at $17.5B Valuation",
+        "source_content_hash": "2ac54d2d554e9655",
+        "quote": "Bessemer, Insight Partners, Lightspeed, Menlo Ventures, NVIDIA, Ontario Teachers' Pension Plan, Sequoia-adjacent crossover funds and others all participated.",
+        "quote_hash": "e486b89bc988feaf5486b02bd4c675c44a2a357905efd88a5b5008cfa027b7a7"
       },
       {
         "source_id": "FISRC-0349532f469a6b45",

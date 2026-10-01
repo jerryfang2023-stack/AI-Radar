@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-03-25",
+    "first_disclosed_at": "2025-09-09",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "historical_or_ambiguous": 2,
@@ -101,7 +101,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-56820acb6cee1fb9",
+        "activity_id": "IA-909a5207e385294b",
         "funding_insight_id": "FI-e0e22d70a91e704e",
         "event_ids": [
           "EV-dccfca59b3e58638",
@@ -143,7 +143,49 @@
         ]
       },
       {
-        "activity_id": "IA-4d13fbe9867aff94",
+        "activity_id": "IA-3fa7c0ea80c5b7d9",
+        "funding_insight_id": "FI-e0e22d70a91e704e",
+        "event_ids": [
+          "EV-dccfca59b3e58638",
+          "EV-5ea74d357e73366b",
+          "EV-dc442b91a69fcc5a"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "€3 billion",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "30 亿欧元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-27e01480407caae0",
+            "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
+            "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
+            "source_content_hash": "d6a4b74f9e758dc8",
+            "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
+            "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b1750d9ec17235af",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
           "EV-1dba157815d84342"
@@ -191,7 +233,7 @@
         ]
       },
       {
-        "activity_id": "IA-2cb5fbd685949164",
+        "activity_id": "IA-25a00c92bdfbd56d",
         "funding_insight_id": "FI-c3bce60cc6406ae5",
         "event_ids": [
           "EV-e6a4e0785ebb268a"
@@ -231,41 +273,7 @@
         ]
       },
       {
-        "activity_id": "IA-3da27e5e3c8c87a4",
-        "funding_insight_id": "FI-e0e22d70a91e704e",
-        "event_ids": [
-          "EV-dccfca59b3e58638",
-          "EV-5ea74d357e73366b",
-          "EV-dc442b91a69fcc5a"
-        ],
-        "company_entity_id": "EN-c04bd5ebd10ab696",
-        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
-        "company_name": "Mistral AI",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-27e01480407caae0",
-            "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
-            "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
-            "source_content_hash": "d6a4b74f9e758dc8",
-            "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
-            "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-7fcb798a303dd69b",
+        "activity_id": "IA-66cac6fa07599fb4",
         "funding_insight_id": "FI-1cf34218733257fd",
         "event_ids": [
           "EV-85506f9f86779a6d"
@@ -273,15 +281,23 @@
         "company_entity_id": "EN-c04bd5ebd10ab696",
         "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
         "company_name": "Mistral AI",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -307,6 +323,14 @@
         "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
       },
       {
+        "source_id": "FISRC-27e01480407caae0",
+        "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
+        "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
+        "source_content_hash": "d6a4b74f9e758dc8",
+        "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
+        "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
+      },
+      {
         "source_id": "FISRC-b235ace767812393",
         "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
         "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
@@ -329,14 +353,6 @@
         "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
         "quote": "投资方为Dimension Capital、DST Global、高瓴资本、渶策资本、Luminous Ventures、琦迹资本、赛诺菲、Biotech Development Fund",
         "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
-      },
-      {
-        "source_id": "FISRC-27e01480407caae0",
-        "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
-        "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
-        "source_content_hash": "d6a4b74f9e758dc8",
-        "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
-        "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
       },
       {
         "source_id": "FISRC-110f0e95801f33f9",
@@ -456,6 +472,18 @@
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "DST Global 是总部注册于开曼群岛基金体系的全球互联网投资机构。官网列其创始人为 Yuri Milner，联合创始人为 Saurabh Gupta、John Lindfors、Rahul Mehta 和 Tom Stafford；并明确表示不招揽或接受零售投资者。",
+          "source_hash": "bc386e53b57cd11af511676bc27a18c7048724b37820638ddb46aaab8ae1e95a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:36.479Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

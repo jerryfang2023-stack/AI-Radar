@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-04-27",
+    "latest_disclosed_at": "2026-04-27",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-fb3cbd151567ea0e",
+        "activity_id": "IA-7aa803823591ab8b",
         "funding_insight_id": "FI-a308a87eb0e97da7",
         "event_ids": [
           "EV-dd3217aad32e6891"
@@ -86,15 +86,23 @@
         "company_entity_id": "EN-2f88f41306209dd7",
         "company_canonical_entity_id": "",
         "company_name": "Avoca AI",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮、A轮、B轮",
+        "amount_original": "超过1.25亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": 125000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1.25 亿美元"
+        },
+        "announced_at": "2026-04-27",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -192,6 +200,26 @@
       ],
       "contacts": [],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "一份 2026 年 SEC proxy 文件将 Krishna K. Gupta 描述为 REMUS Capital 的 founder and CEO，该公司是一家成立于 2008 年、专注于科技的创业投资公司。该文件还列出上市公司和私营公司董事会关联；未报告基金回报，也未将每家公司关联分配给特定的 Remus 基金。",
+          "source_hash": "efa491a1fc7abed919308601e05c64e221e52281d4f9ed259679f7bd9fb0e5e1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "SEC 文件称 Krishna K. Gupta 于 2008 年创立 REMUS Capital。",
+          "source_hash": "56f0c751ff188252a4a4dde8ffc480c952518f870373119b9f6e8d0bfcd0623d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

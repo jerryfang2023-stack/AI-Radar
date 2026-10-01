@@ -1,3 +1,5 @@
+const { refreshObservations } = require("../../utils/featured-observations.js");
+const { selectFeatured, chinaDate } = require("../../utils/funding-featured.js");
 const { filterCards, sortCards } = require("../../utils/funding.js");
 const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage.js");
 const { getFundingData, refreshFundingData } = require("../../utils/live-data.js");
@@ -21,6 +23,9 @@ const DEFAULT_FILTERS = {
 Page({
   data: {
     cards: [],
+    featuredCards: [],
+    featuredCurrent: 0,
+    featuredLabel: "",
     visibleCount: 0,
     filteredCount: 0,
     meta: bundledFundingIndex.meta,
@@ -58,14 +63,26 @@ Page({
 
   onShow() {
     syncTabBar(this, 0);
+    this.refreshFeaturedObservations();
     const currentIndex = getFundingData().index;
     if (currentIndex.meta.generatedAt !== this.data.meta.generatedAt) this.applyFundingData(currentIndex);
+    else this.updateMetrics(currentIndex);
     const selectedIds = getCompareIds();
     this.setData({ selectedIds }, () => this.renderSlice(Math.max(this.data.visibleCount, this.pageSize)));
   },
 
+  onUnload() { this.featuredDisposed = true; },
+
+  refreshFeaturedObservations() {
+    return refreshObservations().then(observations => {
+      if (this.featuredDisposed) return;
+      this.featuredObservations = observations;
+      this.updateMetrics({ cards: this.allCards || [], meta: this.data.meta });
+    });
+  },
+
   applyFundingData(index) {
-    if (!index?.cards?.length) return;
+    if (!Array.isArray(index?.cards)) return;
     this.allCards = index.cards;
     this.updateMetrics(index);
     this.setData({ meta: index.meta }, () => this.refreshCards(true));
@@ -78,12 +95,16 @@ Page({
       global: index.cards.filter((card) => card.marketRegion === "global").length,
     };
     const scopeCards = index.cards.filter((card) => card.marketRegion === this.data.selectedMarketRegion);
-    const todayCount = scopeCards.filter((card) => card.date === index.meta.latestDate).length;
+    const todayCount = scopeCards.filter((card) => card.date === chinaDate()).length;
     const weekCount = scopeCards.filter((card) => {
       const current = new Date(`${card.date}T00:00:00`);
       return Number.isFinite(current.getTime()) && latest.getTime() - current.getTime() <= 6 * 86400000;
     }).length;
+    const featured = selectFeatured(index.cards, this.data.selectedMarketRegion, chinaDate(), this.featuredObservations || {});
     this.setData({
+      featuredCards: featured.cards,
+      featuredCurrent: 0,
+      featuredLabel: featured.label,
       todayCount,
       weekCount,
       scopeCardCount: scopeCards.length,
@@ -171,6 +192,16 @@ Page({
   changeSort() {
     const next = this.data.sort === "latest" ? "amount" : this.data.sort === "amount" ? "company" : "latest";
     this.setData({ sort: next }, () => this.refreshCards(true));
+  },
+
+  changeFeatured(event) {
+    this.setData({ featuredCurrent: event.detail.current });
+  },
+
+  openFeatured(event) {
+    const id = event.currentTarget.dataset.id;
+    if (!this.data.featuredCards.some(card => card.id === id)) return;
+    wx.navigateTo({ url: `/pages/detail/index?id=${encodeURIComponent(id)}` });
   },
 
   openCard(event) {

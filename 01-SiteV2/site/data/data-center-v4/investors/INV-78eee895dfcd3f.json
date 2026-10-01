@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -92,7 +92,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-3bda0e36acf46720",
+        "activity_id": "IA-3d3ea925efead16a",
         "funding_insight_id": "FI-208f5f069010d44d",
         "event_ids": [
           "EV-df8954acf9a13848"
@@ -132,7 +132,7 @@
         ]
       },
       {
-        "activity_id": "IA-248fbcb5b06de693",
+        "activity_id": "IA-6d3856f69089c2fc",
         "funding_insight_id": "FI-da21481e9629e578",
         "event_ids": [
           "EV-b1138bccf5ccd86c",
@@ -292,6 +292,18 @@
       "identity_status": "verified",
       "coverage_note": "组织架构与使命来自OpenAI官网。融资数据仅显示部分轮次来源将“OpenAI”列为投资者，公开记录没有在此处确认专属基金或投资团队，因此活动仍保留原始归属名称。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[2].description": {
+          "text": "官网公布更新后的组织架构：OpenAI Foundation继续控制OpenAI Group PBC。",
+          "source_hash": "f889e9385cc42fe9fcb01020563b5a421aa788e453cf88d55d6a43478fc66ca9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:38.536Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

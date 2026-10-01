@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -106,7 +106,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ae036e29d563cb7f",
+        "activity_id": "IA-7b7397ef4be54107",
         "funding_insight_id": "FI-72df07926e3369ef",
         "event_ids": [
           "EV-26a5749d8604455a",
@@ -147,7 +147,47 @@
         ]
       },
       {
-        "activity_id": "IA-2c5af5edcd73b70e",
+        "activity_id": "IA-79cec93158832c7e",
+        "funding_insight_id": "FI-0d10135597ba793d",
+        "event_ids": [
+          "EV-39b075c62ba4e927"
+        ],
+        "company_entity_id": "EN-f9075cc99990820a",
+        "company_canonical_entity_id": "",
+        "company_name": "P-1 AI, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-17090c9ebbe2bea3",
+            "source_url": "https://lifestyle.tasteterminal.com/story/786493/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-companys-board/",
+            "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A Financing Led by NEA, Adding Jeff Immelt to the Company’s Board | lifestyle.tasteterminal.com",
+            "source_content_hash": "011d02174c292209",
+            "quote": "the company’s $23 million seed round led by Radical Ventures in 2025",
+            "quote_hash": "663760bf3cc5e0b4b740c3d79b31d9658fe954924f5359104bb574d877508581"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-aba5b8ae9543823f",
         "funding_insight_id": "FI-eb27063b86f12aff",
         "event_ids": [
           "EV-463cb26b5e03c7f7"
@@ -187,7 +227,7 @@
         ]
       },
       {
-        "activity_id": "IA-c58b5bcc5103d6e5",
+        "activity_id": "IA-e45efcb075cd785e",
         "funding_insight_id": "FI-d24e79349c1e9713",
         "event_ids": [
           "EV-040fc355bc12a750",
@@ -228,7 +268,7 @@
         ]
       },
       {
-        "activity_id": "IA-15c90db9e1986f15",
+        "activity_id": "IA-ca72052fbb40cee7",
         "funding_insight_id": "FI-2959f95168aa0a55",
         "event_ids": [
           "EV-6e79974732a5db6b"
@@ -274,38 +314,6 @@
             "quote_hash": "899761663628b4d39d5c1df146cd62c9bfcb39ec14825f5160cfd5605327de3f"
           }
         ]
-      },
-      {
-        "activity_id": "IA-9c5b1d4da16f018f",
-        "funding_insight_id": "FI-0d10135597ba793d",
-        "event_ids": [
-          "EV-39b075c62ba4e927"
-        ],
-        "company_entity_id": "EN-f9075cc99990820a",
-        "company_canonical_entity_id": "",
-        "company_name": "P-1 AI, Inc.",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "种子轮领投",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-17090c9ebbe2bea3",
-            "source_url": "https://lifestyle.tasteterminal.com/story/786493/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-companys-board/",
-            "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A Financing Led by NEA, Adding Jeff Immelt to the Company’s Board | lifestyle.tasteterminal.com",
-            "source_content_hash": "011d02174c292209",
-            "quote": "the company’s $23 million seed round led by Radical Ventures in 2025",
-            "quote_hash": "663760bf3cc5e0b4b740c3d79b31d9658fe954924f5359104bb574d877508581"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -316,6 +324,14 @@
         "source_content_hash": "a5d809d221408d5b",
         "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
         "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
+      },
+      {
+        "source_id": "FISRC-17090c9ebbe2bea3",
+        "source_url": "https://lifestyle.tasteterminal.com/story/786493/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-companys-board/",
+        "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A Financing Led by NEA, Adding Jeff Immelt to the Company’s Board | lifestyle.tasteterminal.com",
+        "source_content_hash": "011d02174c292209",
+        "quote": "the company’s $23 million seed round led by Radical Ventures in 2025",
+        "quote_hash": "663760bf3cc5e0b4b740c3d79b31d9658fe954924f5359104bb574d877508581"
       },
       {
         "source_id": "FISRC-afe2544836558c64",
@@ -348,14 +364,6 @@
         "source_content_hash": "b41fbd4490777f66",
         "quote": "Radical Ventures (Lead Investor)",
         "quote_hash": "899761663628b4d39d5c1df146cd62c9bfcb39ec14825f5160cfd5605327de3f"
-      },
-      {
-        "source_id": "FISRC-17090c9ebbe2bea3",
-        "source_url": "https://lifestyle.tasteterminal.com/story/786493/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-companys-board/",
-        "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A Financing Led by NEA, Adding Jeff Immelt to the Company’s Board | lifestyle.tasteterminal.com",
-        "source_content_hash": "011d02174c292209",
-        "quote": "the company’s $23 million seed round led by Radical Ventures in 2025",
-        "quote_hash": "663760bf3cc5e0b4b740c3d79b31d9658fe954924f5359104bb574d877508581"
       }
     ],
     "public_profile": {
@@ -511,6 +519,34 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "宣布推出首支 Venture Growth Fund，以 AI 为核心，支持成长阶段企业。",
+          "source_hash": "e3a01d9fb565bfb56b03e1591789f5befdb0a9e2fb0d161cff209c6c8375c6fa",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "官网组合展示包括 Cohere、World Labs、Etched、Waabi、Crusoe、Xanadu 等案例；该展示仅是公开列出的组合公司，不代表全部投资或基金表现。",
+          "source_hash": "03d598df6431e4b63af12ce194be8c37278a50168f5ad6665edb2074543c0326",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Radical Ventures 官方网站",
+          "source_hash": "25d8a7ead7d53391e31a96274248bd592a8007fce679008238cee9d551209964",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:33.721Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

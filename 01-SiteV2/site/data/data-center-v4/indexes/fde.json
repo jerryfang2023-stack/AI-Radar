@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -11456,42 +11456,42 @@
   ],
   "monitoringFunnel": [
     {
-      "data_date": "2026-09-26",
-      "funnel_id": "LF-6e3ada7c57e0d514",
+      "data_date": "2026-10-01",
+      "funnel_id": "LF-963a929178c1d93a",
       "lens": "fde",
-      "date": "2026-09-26",
+      "date": "2026-10-01",
       "monitoring_paths": [
         "fde_customer_case",
         "fde_earnings_disclosure",
         "fde_procurement_contract",
         "fde_production_rollout"
       ],
-      "raw_documents": 105,
-      "original_sources": 93,
-      "valid_claims": 19,
+      "raw_documents": 92,
+      "original_sources": 79,
+      "valid_claims": 21,
       "observations": 0,
-      "canonical_events": 9,
+      "canonical_events": 8,
       "blocker_counts": {
-        "event_not_ai_relevant": 3,
-        "no_source_bounded_event": 15,
-        "source_outside_daily_window": 51,
+        "research_or_report_container_not_event_source": 1,
+        "event_not_ai_relevant": 1,
+        "no_source_bounded_event": 12,
+        "source_outside_daily_window": 41,
+        "non_event_or_index_title": 8,
         "directory_page_not_event_source": 2,
-        "non_event_or_index_title": 6,
-        "homepage_requires_original_event_source": 2,
         "documentation_index_not_event_source": 1,
-        "event_entity_unresolved": 1,
-        "repository_page_requires_release_source": 1,
+        "homepage_requires_original_event_source": 2,
         "community_source_requires_original_event_source": 1,
-        "raw_source_quality_block": 12,
+        "index_or_listing_page_not_event_source": 1,
+        "raw_source_quality_block": 13,
         "raw_document_not_auditable": 1
       },
       "rates": {
-        "original_source_rate": 0.8857142857142857,
-        "valid_claim_rate": 0.18095238095238095,
+        "original_source_rate": 0.8586956521739131,
+        "valid_claim_rate": 0.22826086956521738,
         "observation_rate": 0,
-        "event_conversion_rate": 0.47368421052631576
+        "event_conversion_rate": 0.38095238095238093
       },
-      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-09-26/monitoring-funnel.json"
+      "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-01/monitoring-funnel.json"
     }
   ]
 }

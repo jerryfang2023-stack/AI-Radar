@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 4,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-06-15",
-    "latest_disclosed_at": "2026-09-10",
+    "latest_disclosed_at": "2026-09-18",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 1,
@@ -100,7 +100,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-84116285d868baaf",
+        "activity_id": "IA-756a9d5b4884b5af",
+        "funding_insight_id": "FI-77950002d539c290",
+        "event_ids": [
+          "EV-2c2f903622c29ba4"
+        ],
+        "company_entity_id": "EN-33d5a47fc56e4ba1",
+        "company_canonical_entity_id": "",
+        "company_name": "奕行智能",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "20亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-09-18",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-44c45563314497fe",
+            "source_url": "https://news.qq.com/rain/a/20231114A01CK700",
+            "source_title": "36氪首发｜奕行智能EVAS完成超亿元Pre-A+轮融资，将推出车用AI芯片_腾讯新闻",
+            "source_content_hash": "5dbe7af466461203",
+            "quote": "本轮融资由广州南沙科金控股集团下属广州南沙区南金基金领投，华侨银行集团旗下狮城资本跟投",
+            "quote_hash": "c7ad01d438c488e3713c3c59adc74a0f39c03256cdb977948a0116b5a2b7c9ec"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6ca7463d0119fe87",
         "funding_insight_id": "FI-c2d2a86fa237b6eb",
         "event_ids": [
           "EV-798081a4ec056f8c"
@@ -140,7 +180,7 @@
         ]
       },
       {
-        "activity_id": "IA-4143c87690d9944a",
+        "activity_id": "IA-b0766e1525bbfc5a",
         "funding_insight_id": "FI-09fda86a59f81440",
         "event_ids": [
           "EV-d9e018b58da30912"
@@ -180,7 +220,47 @@
         ]
       },
       {
-        "activity_id": "IA-d398ad7417ddabc8",
+        "activity_id": "IA-4ce4ab5d3dfa9bea",
+        "funding_insight_id": "FI-d35963e9e0598dc5",
+        "event_ids": [
+          "EV-3c89b467fbcfc498"
+        ],
+        "company_entity_id": "EN-062efa2ab5561309",
+        "company_canonical_entity_id": "EN-062efa2ab5561309",
+        "company_name": "物自体科技",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-03",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4c6320de89936c7b",
+            "source_url": "https://news.pedaily.cn/202609/568487.shtml",
+            "source_title": "「首发」物自体科技完成新一轮战略融资，以 BOOT 推动企业级 AI 营销从工具走向增长系统",
+            "source_content_hash": "4aab0c4984cc55f6",
+            "quote": "此前，Noumena 已完成数千万元 Pre-A 轮融资，投资方包括狮城资本、百度战投以及靖亚资本。",
+            "quote_hash": "894fcb124652ad17fbe125b89dc4b890efa090c699949b525f6dde33f3e38185"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-229c438ea4294e13",
         "funding_insight_id": "FI-60ae9fb62661395b",
         "event_ids": [
           "EV-ba46244851f1db2b"
@@ -220,7 +300,7 @@
         ]
       },
       {
-        "activity_id": "IA-17a330edb56a9f35",
+        "activity_id": "IA-5a238334ec8e6e29",
         "funding_insight_id": "FI-4a8bacab7e4d7f0f",
         "event_ids": [
           "EV-3a591b0f027f66cf"
@@ -258,73 +338,17 @@
             "quote_hash": "112955cc40a01d0eba11b38fb949a218e91aafed2aa6ab7a2953c71a9b3b5e6b"
           }
         ]
-      },
-      {
-        "activity_id": "IA-fd1cde11b1fe5e30",
-        "funding_insight_id": "FI-d35963e9e0598dc5",
-        "event_ids": [
-          "EV-3c89b467fbcfc498"
-        ],
-        "company_entity_id": "EN-062efa2ab5561309",
-        "company_canonical_entity_id": "EN-062efa2ab5561309",
-        "company_name": "物自体科技",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "Pre-A轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-4c6320de89936c7b",
-            "source_url": "https://news.pedaily.cn/202609/568487.shtml",
-            "source_title": "「首发」物自体科技完成新一轮战略融资，以 BOOT 推动企业级 AI 营销从工具走向增长系统",
-            "source_content_hash": "4aab0c4984cc55f6",
-            "quote": "此前，Noumena 已完成数千万元 Pre-A 轮融资，投资方包括狮城资本、百度战投以及靖亚资本。",
-            "quote_hash": "894fcb124652ad17fbe125b89dc4b890efa090c699949b525f6dde33f3e38185"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-998850f2cafd2573",
-        "funding_insight_id": "FI-77950002d539c290",
-        "event_ids": [
-          "EV-2c2f903622c29ba4"
-        ],
-        "company_entity_id": "EN-33d5a47fc56e4ba1",
-        "company_canonical_entity_id": "",
-        "company_name": "奕行智能",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "Pre-A+轮跟投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-44c45563314497fe",
-            "source_url": "https://news.qq.com/rain/a/20231114A01CK700",
-            "source_title": "36氪首发｜奕行智能EVAS完成超亿元Pre-A+轮融资，将推出车用AI芯片_腾讯新闻",
-            "source_content_hash": "5dbe7af466461203",
-            "quote": "本轮融资由广州南沙科金控股集团下属广州南沙区南金基金领投，华侨银行集团旗下狮城资本跟投",
-            "quote_hash": "c7ad01d438c488e3713c3c59adc74a0f39c03256cdb977948a0116b5a2b7c9ec"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-44c45563314497fe",
+        "source_url": "https://news.qq.com/rain/a/20231114A01CK700",
+        "source_title": "36氪首发｜奕行智能EVAS完成超亿元Pre-A+轮融资，将推出车用AI芯片_腾讯新闻",
+        "source_content_hash": "5dbe7af466461203",
+        "quote": "本轮融资由广州南沙科金控股集团下属广州南沙区南金基金领投，华侨银行集团旗下狮城资本跟投",
+        "quote_hash": "c7ad01d438c488e3713c3c59adc74a0f39c03256cdb977948a0116b5a2b7c9ec"
+      },
       {
         "source_id": "FISRC-a7547d4aa28546af",
         "source_url": "http://www.jjckb.cn/20260910/f9448cdc30884f8199eac8d45a632823/c.html",
@@ -342,6 +366,14 @@
         "quote_hash": "feca660b3302476ae3bf9a82d624591ccd0844553d53224c7bceee2b3986c8c2"
       },
       {
+        "source_id": "FISRC-4c6320de89936c7b",
+        "source_url": "https://news.pedaily.cn/202609/568487.shtml",
+        "source_title": "「首发」物自体科技完成新一轮战略融资，以 BOOT 推动企业级 AI 营销从工具走向增长系统",
+        "source_content_hash": "4aab0c4984cc55f6",
+        "quote": "此前，Noumena 已完成数千万元 Pre-A 轮融资，投资方包括狮城资本、百度战投以及靖亚资本。",
+        "quote_hash": "894fcb124652ad17fbe125b89dc4b890efa090c699949b525f6dde33f3e38185"
+      },
+      {
         "source_id": "FISRC-96116df8c0a768ba",
         "source_url": "https://www.163.com/tech/article/KVF97C0R00097U7T.html",
         "source_title": "极佳视界完成10亿元B2轮融资，3个月内累计融资35亿元|机器人|评测_网易科技",
@@ -356,22 +388,6 @@
         "source_content_hash": "2e290bb988c15b09d237e8bdde13c6e932e6bd7442016bbf35ee6ed94e536df8",
         "quote": "极佳视界宣布又完成10亿元B2轮融资，由新加坡顶级跨境投资机构狮城资本（多轮持续追投）、中国-比利时基金（中比基金）、建投投资、万向钱潮、复星锐正、华盖创赢、金创投、德屹资本、华仓资本、元石基金等全球顶级国家队基金、产业资本、财务机构、国资平台共同投资",
         "quote_hash": "112955cc40a01d0eba11b38fb949a218e91aafed2aa6ab7a2953c71a9b3b5e6b"
-      },
-      {
-        "source_id": "FISRC-4c6320de89936c7b",
-        "source_url": "https://news.pedaily.cn/202609/568487.shtml",
-        "source_title": "「首发」物自体科技完成新一轮战略融资，以 BOOT 推动企业级 AI 营销从工具走向增长系统",
-        "source_content_hash": "4aab0c4984cc55f6",
-        "quote": "此前，Noumena 已完成数千万元 Pre-A 轮融资，投资方包括狮城资本、百度战投以及靖亚资本。",
-        "quote_hash": "894fcb124652ad17fbe125b89dc4b890efa090c699949b525f6dde33f3e38185"
-      },
-      {
-        "source_id": "FISRC-44c45563314497fe",
-        "source_url": "https://news.qq.com/rain/a/20231114A01CK700",
-        "source_title": "36氪首发｜奕行智能EVAS完成超亿元Pre-A+轮融资，将推出车用AI芯片_腾讯新闻",
-        "source_content_hash": "5dbe7af466461203",
-        "quote": "本轮融资由广州南沙科金控股集团下属广州南沙区南金基金领投，华侨银行集团旗下狮城资本跟投",
-        "quote_hash": "c7ad01d438c488e3713c3c59adc74a0f39c03256cdb977948a0116b5a2b7c9ec"
       }
     ],
     "public_profile": {
@@ -427,7 +443,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[5].role": {
+        "activities[0].role": {
           "text": "Pre-A+轮跟投",
           "source_hash": "2ba800e67502e50c8bc3abc5c77e58e95140b22a7085ec75b84358c8e714c811",
           "provider": "deepseek",

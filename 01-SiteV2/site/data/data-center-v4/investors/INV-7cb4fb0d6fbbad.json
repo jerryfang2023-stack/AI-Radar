@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-07e41b42bf3b8b03",
+        "activity_id": "IA-63e343f92521ddea",
         "funding_insight_id": "FI-d3ef6c0ebcd62288",
         "event_ids": [
           "EV-63236c15166b71e0"
@@ -272,6 +272,26 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Pivot · Series B · 2026-05-21 · Forestay Capital 与 Notion Capital 共同领投其 4000 万美元融资；该数字为轮次总额，Notion 的单笔出资未披露。",
+          "source_hash": "3d3ca2d08ee58aeb97feb5b48fd2725a44b0e1b74d989c50602993a367f65e5f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "官网组合页面列出的代表性公司包括 Mews、GoCardless、Paddle、Currencycloud 与 Quantum Systems；这是选择性展示，不是完整投资清单或回报数据。",
+          "source_hash": "2b04df287cfc415bec20c37b25f646979c4521ee325b24a9dfe77335d8940d49",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -7,8 +7,8 @@ const seasons = [{ id: "total", label: "总积分" }, { id: "season-2", label: "
 
 Page({
   data: { mode: "list", season: "total", seasons, totalPoints: 0, totalMembers: 0, totalSessions: 0, leaderboard: [], pointRules, myPoints: 0, myRank: "—", myName: "", experience: false, latestPoints: "—", ledger: [], loading: false, error: "", sessionCount: 0, updatedAt: "—" },
-  onLoad(options = {}) {
-    if (!requireCommunityMember()) return;
+  async onLoad(options = {}) {
+    if (!await requireCommunityMember()) return;
     const preview = readExperience();
     this.setData({
       mode: ["list", "rules", "detail"].includes(options.mode) ? options.mode : "list",

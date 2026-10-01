@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-04-30",
-    "latest_disclosed_at": "2026-04-30",
+    "latest_disclosed_at": "2026-06-02",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1
@@ -87,7 +87,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-041ad25fb8b48f3f",
+        "activity_id": "IA-199260efa29d34ae",
+        "funding_insight_id": "FI-032ffe6e999827b8",
+        "event_ids": [
+          "EV-9486e14e99499e3b"
+        ],
+        "company_entity_id": "EN-05f6ecf01ac4ebec",
+        "company_canonical_entity_id": "",
+        "company_name": "Impulse Space",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "Series D",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6b16eaba393b2b3",
+            "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
+            "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
+            "source_content_hash": "6f44e8a8123b489d",
+            "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+            "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-30fe82e4c7a4f657",
         "funding_insight_id": "FI-93a42bdcb7635303",
         "event_ids": [
           "EV-6011ab83ebd290bd",
@@ -134,41 +174,17 @@
             "quote_hash": "350c9adae5c8817de95924f7281521db94373d15722c4bae472897ba21e85187"
           }
         ]
-      },
-      {
-        "activity_id": "IA-27748db8773fdf4a",
-        "funding_insight_id": "FI-032ffe6e999827b8",
-        "event_ids": [
-          "EV-9486e14e99499e3b"
-        ],
-        "company_entity_id": "EN-05f6ecf01ac4ebec",
-        "company_canonical_entity_id": "",
-        "company_name": "Impulse Space",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮参投",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "C轮参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-f6b16eaba393b2b3",
-            "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
-            "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
-            "source_content_hash": "6f44e8a8123b489d",
-            "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
-            "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-f6b16eaba393b2b3",
+        "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
+        "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
+        "source_content_hash": "6f44e8a8123b489d",
+        "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+        "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+      },
       {
         "source_id": "FISRC-f5176e2201593c8e",
         "source_url": "https://techfundingnews.com/featherless-ai-20m-series-a-amd-airbus-open-source-ai-infrastructure/",
@@ -184,14 +200,6 @@
         "source_content_hash": "415a2b10b75139c0",
         "quote": "Airbus, which backed the company at the seed stage",
         "quote_hash": "350c9adae5c8817de95924f7281521db94373d15722c4bae472897ba21e85187"
-      },
-      {
-        "source_id": "FISRC-f6b16eaba393b2b3",
-        "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
-        "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
-        "source_content_hash": "6f44e8a8123b489d",
-        "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
-        "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
       }
     ],
     "public_profile": {
@@ -306,6 +314,34 @@
       "coverage_status": "researched",
       "coverage_note": "区分Airbus集团2016年历史承诺和现行机构官网投资策略；公开邮箱限定为特定合规资料请求，不误标为BP邮箱。",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[0].label": {
+          "text": "Airbus Group历史承诺",
+          "source_hash": "55ec196411b9fce8a7001a802d3b7dbae70eb838337b43d3c514606f95ced1ef",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Airbus Ventures联系表单",
+          "source_hash": "f8c69ae7e57f6e673a8e4d83a1423875b22823149b6924968abb0f96deab10a3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:29.584Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "Menlo Park办公室",
+          "source_hash": "43566d0bb8ba1b5c2f2ca3e80da1db0c513c921de48ee90434bbb745205943bb",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:10.890Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

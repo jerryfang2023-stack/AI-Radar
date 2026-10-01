@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -345,6 +345,22 @@
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-08-14T07:52:37.636Z",
+          "status": "translated"
+        },
+        "public_profile.career[3].description": {
+          "text": "SPC 官网称其参与构建早期 Search、News Feed、Messenger，之后负责 News Feed、Profile、Groups、Events 等产品的工程团队。",
+          "source_hash": "207a9fbefeec1e7659eaa3857b3a6245b886d17d7fbcae9e9462c9afa48e230d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:12.391Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "South Park Commons 称其将 Dropbox 工程团队从25人扩展至1,000人，并参与构建 Facebook 早期产品。",
+          "source_hash": "7464f0240c704e0cd32a16de638bf0c87e596e193b7461e7f96a6289f6485b55",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:12.391Z",
           "status": "translated"
         }
       }

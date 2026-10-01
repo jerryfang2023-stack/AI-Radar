@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -99,7 +99,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-8c7b3730c509e19f",
+        "activity_id": "IA-c9acb5a7e477b4e3",
         "funding_insight_id": "FI-d1444f877a3e580e",
         "event_ids": [
           "EV-55e7c286e95be405"
@@ -139,7 +139,47 @@
         ]
       },
       {
-        "activity_id": "IA-d526b4bd62680bae",
+        "activity_id": "IA-0d05be746e5f68fe",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "H轮重要投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-46e8b046ae7a64f0",
+            "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+            "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+            "source_content_hash": "62a5edd881d6cc6e",
+            "quote": "Anthropic’s official Series H announcement lists Temasek among the “significant investors”",
+            "quote_hash": "31c5bab2b1238aee772d2d31bc1df6f611882b3dcdeff3516289387fc7a36c5c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8aa03c932afe9427",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
         "event_ids": [
           "EV-d4e44892226be468"
@@ -179,7 +219,7 @@
         ]
       },
       {
-        "activity_id": "IA-3a09c434f1c5caf7",
+        "activity_id": "IA-228fc1e5942669a8",
         "funding_insight_id": "FI-9c3c02658ff94312",
         "event_ids": [
           "EV-cded77b1de2db61a"
@@ -217,38 +257,6 @@
             "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
           }
         ]
-      },
-      {
-        "activity_id": "IA-3f38bee7d5a81cbe",
-        "funding_insight_id": "FI-f55b62cf10cb7c98",
-        "event_ids": [
-          "EV-f5dd6dec49ad83aa"
-        ],
-        "company_entity_id": "EN-c70eca6b0f88f44d",
-        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-        "company_name": "Anthropic",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "H轮重要投资者",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-46e8b046ae7a64f0",
-            "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
-            "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
-            "source_content_hash": "62a5edd881d6cc6e",
-            "quote": "Anthropic’s official Series H announcement lists Temasek among the “significant investors”",
-            "quote_hash": "31c5bab2b1238aee772d2d31bc1df6f611882b3dcdeff3516289387fc7a36c5c"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -259,6 +267,14 @@
         "source_content_hash": "a44322af824e0f8f",
         "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
         "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
+      },
+      {
+        "source_id": "FISRC-46e8b046ae7a64f0",
+        "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
+        "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
+        "source_content_hash": "62a5edd881d6cc6e",
+        "quote": "Anthropic’s official Series H announcement lists Temasek among the “significant investors”",
+        "quote_hash": "31c5bab2b1238aee772d2d31bc1df6f611882b3dcdeff3516289387fc7a36c5c"
       },
       {
         "source_id": "FISRC-1e2b3bad243bd066",
@@ -275,14 +291,6 @@
         "source_content_hash": "adc0cc9ffe3c9dd0",
         "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
         "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
-      },
-      {
-        "source_id": "FISRC-46e8b046ae7a64f0",
-        "source_url": "https://sgai.md/sovereign-capital-frontier-ai/",
-        "source_title": "What GIC and Temasek have invested in AI: the full public… · sgai",
-        "source_content_hash": "62a5edd881d6cc6e",
-        "quote": "Anthropic’s official Series H announcement lists Temasek among the “significant investors”",
-        "quote_hash": "31c5bab2b1238aee772d2d31bc1df6f611882b3dcdeff3516289387fc7a36c5c"
       }
     ],
     "public_profile": {

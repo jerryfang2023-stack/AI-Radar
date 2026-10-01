@@ -6,7 +6,7 @@ import { isWithdrawnFundingTitle, isPendingFundingTitle } from "./lib/funding-tr
 
 export const FUNDING_INSIGHT_VERSION = "FUNDING-INSIGHT-V1.3";
 export const FUNDING_INSIGHT_FRONTSTAGE_VERSION = "FUNDING-INSIGHT-FRONTSTAGE-V1.5";
-export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.7";
+export const FUNDING_INSIGHT_PROMPT_VERSION = "FUNDING-INSIGHT-DEEPSEEK-V1.8";
 export const FUNDING_INSIGHT_GATE_VERSION = "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1";
 export const INVESTORS_MISSING_RISK = "本轮具体投资方未披露，投资人结构与背书强度无法核验。";
 export const FUNDING_PRODUCT_FORM_IDS = new Set([
@@ -94,6 +94,16 @@ function marketHierarchyProblems(analysis = {}) {
 
 export function clean(value = "") {
   return String(value || "").replace(/\s+/gu, " ").trim();
+}
+
+function hasAttributedInvestorQuote(item, sourceById) {
+  const speaker = clean(item?.speaker).toLocaleLowerCase();
+  const quote = clean(item?.quote).toLocaleLowerCase();
+  if (!speaker || !quote) return false;
+  return (item?.evidence_refs || []).some((evidence) => {
+    const body = clean(sourceById.get(evidence?.source_id)?.body_clean).toLocaleLowerCase();
+    return body.includes(speaker) && body.includes(quote);
+  });
 }
 
 export function normalizeFounderRole(value = "") {
@@ -1338,13 +1348,165 @@ function subjectCandidate(entity, index, eventText) {
   };
 }
 
-export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims = []) {
+function quoteClauses(value = "") {
+  return clean(value).split(/(?<=[。！？!?；;])|[|｜]/u).map(clean).filter(Boolean);
+}
+
+function clauseHasEventFundingAmount(clause, claim, event) {
+  if (/(?:\b(?:not|never|did not|has not|had not|hasn't|didn't)\s+(?:raise|raised|secure|secured|complete|completed|close|closed)\b|(?:未|没有|并未|不曾|否认).{0,24}(?:融资|募资|筹集|获投|完成融资))/iu.test(clause)) return false;
+  const exactUnqualifiedMagnitude = (value) => {
+    const compact = clean(value).normalize("NFKC").replace(/[\s,，]/gu, "");
+    if (/(?:美元|美金|人民币|元|USD|CNY|RMB|EUR|GBP|JPY|[$€£¥￥])/iu.test(compact)) return null;
+    const match = compact.match(/^(\d+(?:\.\d+)?)(万亿|千万|亿|万)$/u);
+    return match ? Number(match[1]) * amountMultiplier(match[2]) : null;
+  };
+  const canonicalEventAmount = canonicalFundingEventAmount(event, [claim]);
+  const unqualifiedEventMagnitude = exactUnqualifiedMagnitude(canonicalEventAmount);
+  const expected = [
+    event.object,
+    claim.object,
+    ...(event.metrics || []),
+  ].flatMap(fundingAmountMentions)
+    .filter((mention) => !mention.valuation && !mention.cumulative);
+  const actual = fundingAmountMentions(clause)
+    .filter((mention) => !mention.valuation && !mention.cumulative);
+  if (expected.some((left) => actual.some((right) => fundingAmountsEquivalent(left.raw, right.raw)))) return true;
+  if (!Number.isFinite(unqualifiedEventMagnitude)) return false;
+  // Extraction may retain a proceeds metric such as “15亿” while omitting
+  // its currency. Recover that recipient only from a round-proceeds amount
+  // with the exact same magnitude in the same clause, and only when the
+  // clause does not present that magnitude in multiple currencies.
+  const exactRoundAmounts = actual
+    .filter((right) => right.round && normalizeFundingAmount(right.raw).value === unqualifiedEventMagnitude);
+  const currencies = new Set(exactRoundAmounts
+    .map((mention) => normalizeFundingAmount(mention.raw).currency).filter(Boolean));
+  return exactRoundAmounts.length > 0 && currencies.size === 1;
+}
+
+function linkedCompanyAnchoredInFundingQuote(event, entities, claims) {
+  const byId = new Map(entities.map((entity) => [entity.entity_id, entity]));
+  const linked = (event.entities || []).map((id) => byId.get(id))
+    .filter((entity) => entity?.entity_type === "organization_candidate");
+  const matches = new Map();
+  const acceptedClaims = claims.filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted");
+  for (const claim of acceptedClaims) {
+    for (const clause of quoteClauses(claim.source_quote)) {
+      if (!clauseHasEventFundingAmount(clause, claim, event)
+        || !/(?:融资|募资|筹集|完成|获得|获|raised|funding|financing|round)/iu.test(clause)) continue;
+      for (const entity of linked) {
+        for (const name of [entity.canonical_name, ...(entity.aliases || [])].filter(Boolean)) {
+          const escaped = clean(name).replace(/[.*+?^${}()|[\]\\]/gu, "\\$&");
+          const mention = new RegExp(escaped, "iu").exec(clause);
+          if (!mention) continue;
+          const before = clause.slice(Math.max(0, mention.index - 100), mention.index);
+          const after = clause.slice(mention.index + mention[0].length, mention.index + mention[0].length + 100);
+          if (/(?:领投|跟投|参投|投资方|投资人|投资机构|投资者)\s*(?:是|为|[:：])?[^。；;]{0,80}$/u.test(before)
+            || /(?:lead investor|led by|backed by|invested by|with participation from)\s*$/iu.test(before)
+            || /^\s*(?:作为|担任)?(?:本轮)?(?:领投方|跟投方|投资方|投资人|投资机构)/u.test(after)
+            || /^\s*(?:led|leads|is leading|as lead investor)\b/iu.test(after)) continue;
+          matches.set(entity.entity_id, entity);
+        }
+      }
+    }
+  }
+  return matches.size === 1 ? [...matches.values()][0] : null;
+}
+
+function canonicalSourceRecipient(event, entities, entityIndex, claims, sourceQuotes) {
+  const acceptedClaims = claims.filter((claim) => claim?.claim_type === "funding"
+    && claim?.verification_status === "accepted");
+  if (!acceptedClaims.length) return null;
+  const names = new Set();
+  for (const quote of sourceQuotes.map(clean).filter(Boolean)) {
+    for (const clause of quoteClauses(quote)) {
+      if (!/(?:融资|募资|筹集|完成|获得|获|raised|funding|financing|round)/iu.test(clause)
+        || !acceptedClaims.some((claim) => clauseHasEventFundingAmount(clause, claim, event))) continue;
+      // Some sources expose the recipient only in the full article body, e.g.
+      // “AI基础设施公司Fluidstack完成15亿美元融资”. Bind the proper name to
+      // the same amount-bearing clause and action; do not infer from an investor
+      // mention elsewhere in the article or from a headline fragment.
+      const pattern = /公司\s*([A-Z][A-Za-z0-9.&'-]*(?:[ \t]+[A-Z][A-Za-z0-9.&'-]*){0,3})\s*(?:已|宣布)?(?:完成|获得|获|筹集|募得|融资)/gu;
+      for (const match of clause.matchAll(pattern)) names.add(clean(match[1]));
+    }
+  }
+  if (names.size !== 1) return null;
+  const [name] = names;
+  const normalized = normalizedName(name);
+  const indexed = (entityIndex.companies || []).map((entity) => ({
+    entity_id: entity.id,
+    entity_type: entity.sourceType || "organization_candidate",
+    canonical_name: entity.name,
+    aliases: entity.aliases || [],
+  }));
+  const matches = [...new Map([...entities, ...indexed]
+    .filter((entity) => entity?.entity_type === "organization_candidate")
+    .filter((entity) => [entity.canonical_name, ...(entity.aliases || [])]
+      .some((alias) => normalizedName(alias) === normalized))
+    .map((entity) => [entity.entity_id, entity])).values()];
+  if (matches.length > 1) return null;
+  return matches[0] || {
+    entity_id: stableId("FICO", normalized),
+    entity_type: "organization_candidate",
+    canonical_name: name,
+    aliases: [],
+  };
+}
+
+export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims = [], sourceQuotes = []) {
   const byId = new Map(entities.map((entity) => [entity.entity_id, entity]));
   const claimById = new Map(claims.map((claim) => [claim.claim_id, claim]));
   const eventClaims = (event.claim_refs || []).map((id) => claimById.get(id)).filter(Boolean);
   const acceptedFundingClaims = eventClaims
     .filter((claim) => claim?.claim_type === "funding" && claim?.verification_status === "accepted");
+  // Prefer a uniquely linked company co-mentioned with this round's amount over a headline-only Claim subject.
+  const quoteAnchoredCompany = canonicalSourceRecipient(
+    event, entities, entityIndex, acceptedFundingClaims, sourceQuotes,
+  ) || linkedCompanyAnchoredInFundingQuote(event, entities, acceptedFundingClaims);
   const acceptedFundingSubjects = acceptedFundingClaims
+    .filter((claim) => {
+      const subject = clean(claim.subject);
+      const normalizedSubject = normalizedName(subject);
+      if (!normalizedSubject) return false;
+      const quotedText = normalizedName(claim.source_quote);
+      const quotedCompanyTail = descriptiveCompanyTail(subject)
+        || subject.match(/(?:公司|企业|平台|品牌)[“"'‘]?([\p{Script=Han}A-Za-z0-9·&.-]{2,40})[”"'’]?$/u)?.[1];
+      const subjectAnchoredToAmount = quoteClauses(claim.source_quote).some((clause) => {
+        const normalizedClause = normalizedName(clause);
+        return (normalizedClause.includes(normalizedSubject)
+          || (quotedCompanyTail && normalizedClause.includes(normalizedName(quotedCompanyTail))))
+          && clauseHasEventFundingAmount(clause, claim, event)
+          && /(?:融资|募资|筹集|完成|获得|获|raised|funding|financing|round)/iu.test(clause);
+      });
+      const quotedSubject = quotedText.includes(normalizedSubject)
+        || (quotedCompanyTail && quotedText.includes(normalizedName(quotedCompanyTail)));
+      if (quotedSubject) {
+        const anchoredNames = quoteAnchoredCompany
+          ? [quoteAnchoredCompany.canonical_name, ...(quoteAnchoredCompany.aliases || [])].map(normalizedName)
+          : [];
+        const descriptiveGroupSubject = /(?:\b(?:employees?|founders?|team|researchers?|scientists?|professors?|engineers?)\b|前.{0,20}(?:员工|工程师|教授|博士)|(?:团队|研究员|科学家|教授|工程师|创始人|创业者|博士))/iu.test(subject);
+        if (quoteAnchoredCompany && !subjectAnchoredToAmount && !descriptiveGroupSubject
+          && !anchoredNames.includes(normalizedSubject)
+          && !(quotedCompanyTail && anchoredNames.includes(normalizedName(quotedCompanyTail)))) return false;
+        return true;
+      }
+      if (subjectAnchoredToAmount) return true;
+
+      // Some accepted claims inherit a descriptive headline as their subject.
+      // Keep those only when the source independently names the recipient and
+      // confirms the same non-valuation funding amount.
+      const quoteCompany = fundedStartupNameFromClaims([claim]);
+      const subjectAmounts = [subject, claim.object, event.object]
+        .flatMap(fundingAmountMentions)
+        .filter((mention) => !mention.valuation && !mention.cumulative);
+      const quoteAmounts = fundingAmountMentions(claim.source_quote)
+        .filter((mention) => !mention.valuation && !mention.cumulative);
+      const sourceBackedAmount = subjectAmounts.some((subjectAmount) => quoteAmounts.some(
+        (quoteAmount) => fundingAmountsEquivalent(subjectAmount.raw, quoteAmount.raw),
+      ));
+      const descriptiveGroupSubject = /(?:\b(?:employees?|founders?|team|researchers?|scientists?|professors?|engineers?)\b|前.{0,20}(?:员工|工程师|教授|博士)|(?:团队|研究员|科学家|教授|工程师|创始人|创业者|博士))/iu.test(subject);
+      return Boolean(quoteCompany) && sourceBackedAmount
+        && (fundingAmountMentions(subject).length > 0 || descriptiveGroupSubject);
+    })
     .map((claim) => normalizedName(claim.subject))
     .filter(Boolean);
   // Founder-led headlines can omit the recipient's name. A long appositive
@@ -1363,6 +1525,7 @@ export function subjectCompanyForEvent(event, entities, entityIndex = {}, claims
     });
   if (appositiveRecipients.length === 1) return appositiveRecipients[0];
   if (appositiveRecipients.length > 1) return null;
+  if (quoteAnchoredCompany) return quoteAnchoredCompany;
   const claimInferredCompanyName = fundedStartupNameFromClaims(eventClaims);
   if (acceptedFundingSubjects.length) {
     const subjectMatches = (event.entities || [])
@@ -1645,9 +1808,12 @@ export function sanitizeResearchPayload(payload = {}, sources = []) {
       .map((item) => ({ ...item, evidence_refs: cleanRefs(item.evidence_refs) }))
       .filter((item) => (
         investorNames.has(clean(item.institution).toLowerCase())
+        && clean(item.speaker)
+        && clean(item.speaker_role)
         && clean(item.rationale)
         && clean(item.quote)
         && item.evidence_refs.some((evidence) => clean(evidence.quote).includes(clean(item.quote)))
+        && hasAttributedInvestorQuote(item, sourceById)
       ));
   }
   return sanitized;
@@ -1797,6 +1963,11 @@ export function researchPayloadProblems(payload = {}, sources = [], directionIds
       if (!clean(item?.quote)) problems.push(`investment_rationale_${index + 1}_quote_missing`);
       else if (!(item.evidence_refs || []).some((evidence) => clean(evidence.quote).includes(clean(item.quote)))) {
         problems.push(`investment_rationale_${index + 1}_quote_not_cited`);
+      }
+      if (!clean(item?.speaker)) problems.push(`investment_rationale_${index + 1}_speaker_missing`);
+      if (!clean(item?.speaker_role)) problems.push(`investment_rationale_${index + 1}_speaker_role_missing`);
+      if (clean(item?.speaker) && clean(item?.quote) && !hasAttributedInvestorQuote(item, sourceById)) {
+        problems.push(`investment_rationale_${index + 1}_speaker_not_attributed`);
       }
       problems.push(...evidenceProblems(item?.evidence_refs, sourceById, `investment_rationale_${index + 1}_evidence`));
     }

@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-86f55eeeff9a7214",
+        "activity_id": "IA-31f7eeef508d742a",
         "funding_insight_id": "FI-47cbfa718574b335",
         "event_ids": [
           "EV-a40e5e8c638e323d"
@@ -197,6 +197,34 @@
           "quote_hash": "3e4f5e14384efbf0c4ddf9440a5c8f048307ee73182d1d10d32d66c5ad1a2e0b"
         }
       ]
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Aranya 融资报道将“First Round Capital Holdings L.P.”列为 900 万美元种子轮领投方。First Round 官网披露的网站运营主体为 FR Capital Holdings, L.P.，SEC 文件也列明后者是部分 First Round 基金的管理公司；现有一手材料尚未证实它与报道中的具体出资法律载体完全同一，因此暂不与 First Round Capital 档案合并。",
+          "source_hash": "30ff0c8b153c3d78c132d608480f6645659a038497ab3f1deb74e92c4c451486",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "First Round 官网披露的运营主体",
+          "source_hash": "96e25dca4b0bba2d1336fd41069feb5e184069b335292c007b2669a592d48797",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Aranya 报道将 First Round Capital Holdings L.P. 列为 900 万美元种子轮领投方；融资总额 1100 万美元还包括由 Asylum Ventures 领投的 200 万美元种子前轮，未披露 First Round 单独出资额。投资方法律名称仍待核实。",
+          "source_hash": "c971d2ab04545fdd2aa2ab25635c7369ffb1e67895a05cf4bddfcf742d0050bf",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:55:05.186Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

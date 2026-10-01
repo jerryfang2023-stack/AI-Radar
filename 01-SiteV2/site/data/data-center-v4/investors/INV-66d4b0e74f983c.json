@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-04-27",
+    "latest_disclosed_at": "2026-04-27",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-176425c7e6786895",
+        "activity_id": "IA-804d5182d7fa091f",
         "funding_insight_id": "FI-a308a87eb0e97da7",
         "event_ids": [
           "EV-dd3217aad32e6891"
@@ -86,15 +86,23 @@
         "company_entity_id": "EN-2f88f41306209dd7",
         "company_canonical_entity_id": "",
         "company_name": "Avoca AI",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "种子轮、A轮、B轮",
+        "amount_original": "超过1.25亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": 125000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1.25 亿美元"
+        },
+        "announced_at": "2026-04-27",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "unknown",
+        "disclosure_status": "disclosed",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -204,6 +212,58 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Vicus Ventures 的公开网站称“Built on trust, driven by excellence.” 一份 2024 年 SEC Form D 文件另行记录了一家名为 Vicus Ventures Fund 1 LP 的发行人；在此处使用的记录中，该文件未披露基金规模或投资业绩。",
+          "source_hash": "5172bd3f6edd415a78e70e6891fa49e940749d954fd1bfe37cf18a3a1c51cc02",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "SEC EDGAR 记录并接受 Vicus Ventures Fund 1 LP 的 Form D 备案。",
+          "source_hash": "e473726e991b1629e0a5e0c303763cac8497422d4334d71f2dfa1313d784f9a1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Capital 49 合伙人的公开帖子将 Manraj Singh Sandhu 与 Vicus Ventures 列在 Avoca 更广泛的投资人/支持者名单中；没有披露 Vicus Ventures Fund 1 LP 对 Avoca 的单笔投资或金额。",
+          "source_hash": "7be361b5034f5fc71bfba4513b7533c7497e835626c26bba6d3a8aa9788ad1e0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Vicus Ventures 官方网站",
+          "source_hash": "ed98f61ae415e4a8220fe0e468a61a35036db618c03ff0200590b924dbdecc4b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "2024 年 SEC 备案中的 Vicus Ventures Fund 1 LP 营业地址（不确认是否仍有效）",
+          "source_hash": "44c062d03d359559f7af1f5d5980eb2a4f52bf26f039b81720552694a6ca808e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:02.397Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[2].label": {
+          "text": "2024 年 SEC 备案中的 Vicus Ventures Fund 1 LP 电话（不确认是否仍有效）",
+          "source_hash": "563764a105a9c8878e41f1903596a46f4b4e124c87d23baea5476afb535c5013",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:56:05.648Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

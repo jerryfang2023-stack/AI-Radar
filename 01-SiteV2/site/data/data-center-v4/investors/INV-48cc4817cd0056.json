@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -105,7 +105,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-1bbea9d5275895fe",
+        "activity_id": "IA-dbb472211d8c881c",
         "funding_insight_id": "FI-72df07926e3369ef",
         "event_ids": [
           "EV-26a5749d8604455a",
@@ -146,7 +146,7 @@
         ]
       },
       {
-        "activity_id": "IA-2dc02c74d77f50d8",
+        "activity_id": "IA-e7588d760e1d913f",
         "funding_insight_id": "FI-0df914fcc4086c90",
         "event_ids": [
           "EV-b116eafe60d71fbe"
@@ -186,7 +186,7 @@
         ]
       },
       {
-        "activity_id": "IA-a093da9250bffc7e",
+        "activity_id": "IA-bc6aa484bb907ee3",
         "funding_insight_id": "FI-3b1ea359415f476d",
         "event_ids": [
           "EV-4eaf3aabecae6016"
@@ -226,7 +226,7 @@
         ]
       },
       {
-        "activity_id": "IA-b06588411f4a6334",
+        "activity_id": "IA-005adefb8c5fc7b5",
         "funding_insight_id": "FI-cfb62be40852ea40",
         "event_ids": [
           "EV-7abd8ec418f1e7f3"
@@ -439,6 +439,34 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Gavin Baker 离开 Fidelity 后创立 Atreides Management。",
+          "source_hash": "a9a1e2e2ceb7ef56957f33f986d6f9c4db528e2d6b33e0639e5c151d050f95d0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "Gavin Baker 的官网履历记载其曾任 Fidelity OTC Portfolio、Select Wireless、Select Telecommunications 和 Select Pharmaceuticals 投资组合经理，并参与 Fidelity 风险投资业务；属于个人过往履历，不代表 Atreides 的基金业绩。",
+          "source_hash": "03d974c7f7955fa9a74450445fdf096d8f331d04110bd40e1eed03a15310646c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "Atreides Management 官方网站",
+          "source_hash": "e04ff91aa7ef19dd4304e709775f5d8a9c15fceb6aeeba1404ab3605948eb6ae",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

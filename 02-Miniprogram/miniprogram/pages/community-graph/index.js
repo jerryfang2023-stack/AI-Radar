@@ -16,8 +16,8 @@ function decorateMember(member) {
 
 Page({
   data: { mode: "graph", tab: "map", roles: [], activeRole: 0, activeRoleData: null, members: [], filteredMembers: [], member: null, profile: DEFAULT_PROFILE, query: "", experience: false, loading: false, error: "", saving: false, supply: [] },
-  onLoad(options = {}) {
-    if (!requireCommunityMember()) return;
+  async onLoad(options = {}) {
+    if (!await requireCommunityMember()) return;
     this.setData({ experience: Boolean(readExperience()) });
     const mode = options.mode || "graph";
     this.options = options;

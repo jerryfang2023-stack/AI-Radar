@@ -1,0 +1,112 @@
+{
+  "date": "2026-09-28",
+  "generated_at": "2026-09-28T20:57:53+08:00",
+  "mode": "manual_secondary_search_source_intake",
+  "source_id": "china-funding-secondary",
+  "source_label": "China funding secondary search — publisher, domain and investor cross-check",
+  "status": "collected",
+  "discovered_count": 3,
+  "source_item_count": 3,
+  "raw_candidate_count": 3,
+  "failures": [],
+  "diagnostics": [
+    {
+      "method": "general_web_search",
+      "query": "\"索格智算\" \"天使轮\" \"数千万元\" 2026 融资 投资方",
+      "matched_urls": [
+        "https://www.36kr.com/p/3996737880559493",
+        "https://finance.eastmoney.com/a/202609253883982143.html",
+        "https://4g.stockstar.com/detail/RB2026092400035397"
+      ]
+    },
+    {
+      "method": "publisher_domain_search",
+      "queries": [
+        "site:36kr.com 索格智算 天使轮 复星创富",
+        "site:finance.eastmoney.com 索格智算 天使轮 复星创富",
+        "site:eeo.com.cn 索格智算 天使轮",
+        "site:cls.cn 索格智算 天使轮 复星创富",
+        "site:chinaventure.com.cn 索格智算 天使轮"
+      ],
+      "matched_urls": [
+        "https://www.36kr.com/p/3996737880559493",
+        "https://finance.eastmoney.com/a/202609253883982143.html",
+        "https://www.eeo.com.cn/2026/0928/1050750.shtml"
+      ]
+    },
+    {
+      "method": "investor_site_search",
+      "query": "site:fosuncapital.com 索格智算 复星创富 天使轮",
+      "matched_urls": [],
+      "note": "No deal-specific first-party investor announcement found in this search."
+    },
+    {
+      "method": "venture_database_cross_check",
+      "matched_urls": [
+        "https://4g.stockstar.com/detail/RB2026092400035397",
+        "https://koocool.cn/events",
+        "https://www.innohere.com/ir/164801/finance.html"
+      ],
+      "note": "Cross-check indicates a new Angel round separate from the previously recorded March seed round. Some databases omit the amount; do not infer a precise value."
+    },
+    {
+      "method": "direct_original_page_open",
+      "matched_urls": [
+        "https://www.36kr.com/p/3996737880559493",
+        "https://finance.eastmoney.com/a/202609253883982143.html",
+        "https://www.eeo.com.cn/2026/0928/1050750.shtml"
+      ],
+      "amount_reconciliation": "36氪首发与财联社《科创板日报》报道均明确写‘数千万元’；经济观察网/投中网当日稿未报金额，部分事件库也显示未披露。未发现相反的具体金额数值，不把‘数千万元’换算成精确值。"
+    }
+  ],
+  "items": [
+    {
+      "acquisition_channel": "china-funding",
+      "original_id": "https://www.36kr.com/p/3996737880559493",
+      "url": "https://www.36kr.com/p/3996737880559493",
+      "title": "AI新材料公司获数千万天使轮融资，已合作固态电池与化工龙头丨36氪首发",
+      "summary": "",
+      "source": "36氪",
+      "source_region": "CN",
+      "source_registry_id": "cn-36kr-rss",
+      "published_at": "2026-09-24T01:32:00.000Z",
+      "category": "funding",
+      "query_theme": "china-funding-secondary-search",
+      "keyword_group": "important_funding",
+      "source_artifact_id": "china-funding-secondary",
+      "secondary_search": true
+    },
+    {
+      "acquisition_channel": "china-funding",
+      "original_id": "https://finance.eastmoney.com/a/202609253883982143.html",
+      "url": "https://finance.eastmoney.com/a/202609253883982143.html",
+      "title": "索格智算完成数千万元天使轮融资 复星创富领投",
+      "summary": "",
+      "source": "财联社《科创板日报》（东方财富转载）",
+      "source_region": "CN",
+      "source_registry_id": "cn-cls",
+      "published_at": "2026-09-24T16:00:00.000Z",
+      "category": "funding",
+      "query_theme": "china-funding-secondary-search",
+      "keyword_group": "important_funding",
+      "source_artifact_id": "china-funding-secondary",
+      "secondary_search": true
+    },
+    {
+      "acquisition_channel": "china-funding",
+      "original_id": "https://www.eeo.com.cn/2026/0928/1050750.shtml",
+      "url": "https://www.eeo.com.cn/2026/0928/1050750.shtml",
+      "title": "索格智算完成天使轮融资",
+      "summary": "",
+      "source": "投中网（经济观察网转载）",
+      "source_region": "CN",
+      "source_registry_id": "cn-chinaventure",
+      "published_at": "2026-09-28T03:30:00.000Z",
+      "category": "funding",
+      "query_theme": "china-funding-secondary-search",
+      "keyword_group": "important_funding",
+      "source_artifact_id": "china-funding-secondary",
+      "secondary_search": true
+    }
+  ]
+}

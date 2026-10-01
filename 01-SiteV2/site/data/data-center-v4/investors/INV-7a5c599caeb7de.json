@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -72,7 +72,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-11",
+    "latest_disclosed_at": "2026-08-21",
     "role_counts": {
       "historical_or_ambiguous": 5,
       "lead": 2,
@@ -205,7 +205,87 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-74c95a621477ee17",
+        "activity_id": "IA-42acb4da6b5a36b3",
+        "funding_insight_id": "FI-8a42f200f5caa9f3",
+        "event_ids": [
+          "EV-259566f35ea4f66d"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮扩展",
+        "round_code": "series_a_extension",
+        "round_original": "A轮扩展",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-08-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-64c63dc926fc8a24",
+            "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+            "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+            "source_content_hash": "10f88a25e3d2c819",
+            "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+            "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1df9856e95e338a5",
+        "funding_insight_id": "FI-8ec3b23d30c575bf",
+        "event_ids": [
+          "EV-cca4bd983a16b8d9"
+        ],
+        "company_entity_id": "EN-8eae6c54657e94be",
+        "company_canonical_entity_id": "",
+        "company_name": "Blacksmith",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$45 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 45000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4500 万美元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ba55b463daced495",
+            "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+            "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+            "source_content_hash": "716df167d49a13d7",
+            "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
+            "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-63af9b5bef12d1c7",
         "funding_insight_id": "FI-d1444f877a3e580e",
         "event_ids": [
           "EV-55e7c286e95be405"
@@ -245,7 +325,7 @@
         ]
       },
       {
-        "activity_id": "IA-61c095a5b794181c",
+        "activity_id": "IA-89f34375ab4f5386",
         "funding_insight_id": "FI-5d8eab3e612ca748",
         "event_ids": [
           "EV-c6cccaca326dfd45"
@@ -293,7 +373,7 @@
         ]
       },
       {
-        "activity_id": "IA-9b305e347110e54d",
+        "activity_id": "IA-bda049c32e511a9f",
         "funding_insight_id": "FI-98e08b099fb39138",
         "event_ids": [
           "EV-c1295b8f58024ff6"
@@ -333,7 +413,7 @@
         ]
       },
       {
-        "activity_id": "IA-6b9c28cd7d53fad1",
+        "activity_id": "IA-a4459146183d1fa3",
         "funding_insight_id": "FI-818ce8d5f2783452",
         "event_ids": [
           "EV-a64fab2ce6bc6c4c"
@@ -373,7 +453,7 @@
         ]
       },
       {
-        "activity_id": "IA-a95efb2c12d9fd7c",
+        "activity_id": "IA-5c1382ec817c4c3a",
         "funding_insight_id": "FI-b965835fdaa907bc",
         "event_ids": [
           "EV-c64e6836b9cd2b17"
@@ -413,7 +493,7 @@
         ]
       },
       {
-        "activity_id": "IA-a34628b04504bde3",
+        "activity_id": "IA-81e03348905fea85",
         "funding_insight_id": "FI-94821c36284cd9f0",
         "event_ids": [
           "EV-bffc68e7bb4d598b"
@@ -453,7 +533,7 @@
         ]
       },
       {
-        "activity_id": "IA-c51bfe3e39917546",
+        "activity_id": "IA-0919b82c5f7a9e15",
         "funding_insight_id": "FI-617705549a679908",
         "event_ids": [
           "EV-e7dcecaed5a0ee5b"
@@ -493,7 +573,7 @@
         ]
       },
       {
-        "activity_id": "IA-3472da2e41364568",
+        "activity_id": "IA-835737c1c02c620e",
         "funding_insight_id": "FI-82d1e99998c69025",
         "event_ids": [
           "EV-40d196865997025c"
@@ -533,7 +613,87 @@
         ]
       },
       {
-        "activity_id": "IA-b493ea205d06d203",
+        "activity_id": "IA-54943bbe676d0726",
+        "funding_insight_id": "FI-920fe5e68b71a61c",
+        "event_ids": [
+          "EV-83085b0046c7275c"
+        ],
+        "company_entity_id": "EN-8d319684b6042af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Ontora",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$700K",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "70 万美元"
+        },
+        "announced_at": "2026-06-08",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "加速器/孵化器",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1f322d172be14af7",
+            "source_url": "https://www.vcbacked.co/company/ontora",
+            "source_title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
+            "source_content_hash": "55a0605c9be6e3c5",
+            "quote": "Ontora's investors include Y Combinator.",
+            "quote_hash": "24ded63cd0d723ee68be98942282098f4d0b6f70518490a7339e2707f224cf93"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-758e62a460ecf2e4",
+        "funding_insight_id": "FI-9b370a988458c224",
+        "event_ids": [
+          "EV-88f4ee8cd57bdf42"
+        ],
+        "company_entity_id": "EN-29e1a488361f12d3",
+        "company_canonical_entity_id": "",
+        "company_name": "Vapi Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-05-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-46ca8e6bf27dfb82",
+            "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
+            "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
+            "source_content_hash": "5fee028b6dad3dc4",
+            "quote": "with participation from Y Combinator",
+            "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-050c5280ff846c26",
         "funding_insight_id": "FI-fecb7f6a77985938",
         "event_ids": [
           "EV-61546e58c0e669e7"
@@ -573,7 +733,7 @@
         ]
       },
       {
-        "activity_id": "IA-e6df47c3110383b0",
+        "activity_id": "IA-011744fd522518c2",
         "funding_insight_id": "FI-a308a87eb0e97da7",
         "event_ids": [
           "EV-dd3217aad32e6891"
@@ -613,7 +773,7 @@
         ]
       },
       {
-        "activity_id": "IA-6b57003e5f3a4085",
+        "activity_id": "IA-3414656de6219587",
         "funding_insight_id": "FI-19731873c2b7d1c1",
         "event_ids": [
           "EV-c8928410f6c145eb"
@@ -661,7 +821,7 @@
         ]
       },
       {
-        "activity_id": "IA-e5d0e4c2a2ee2ae0",
+        "activity_id": "IA-9ecc669f55b7303a",
         "funding_insight_id": "FI-733abf18079d1cb8",
         "event_ids": [
           "EV-9e678b626c2a5c83"
@@ -701,7 +861,7 @@
         ]
       },
       {
-        "activity_id": "IA-bcf205c4ff3614a2",
+        "activity_id": "IA-ecc95a248e7b64d4",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
         "event_ids": [
           "EV-8eb0acb180b7ad9d"
@@ -741,7 +901,7 @@
         ]
       },
       {
-        "activity_id": "IA-d9d4f14cb84eff60",
+        "activity_id": "IA-205513ec36d077b7",
         "funding_insight_id": "FI-94de7d23d9ebd5ba",
         "event_ids": [
           "EV-9055cb4fa2b4ee62"
@@ -781,7 +941,7 @@
         ]
       },
       {
-        "activity_id": "IA-bd3dfc12e1769541",
+        "activity_id": "IA-813a6fbd0ee00b19",
         "funding_insight_id": "FI-b69210c5435600e7",
         "event_ids": [
           "EV-dd78b63f18dba410"
@@ -821,7 +981,7 @@
         ]
       },
       {
-        "activity_id": "IA-12e8c9e64e102c04",
+        "activity_id": "IA-252c38c1c0a1d762",
         "funding_insight_id": "FI-be6c288b08346194",
         "event_ids": [
           "EV-2083b9eda52a3f76"
@@ -861,7 +1021,7 @@
         ]
       },
       {
-        "activity_id": "IA-320193bab1de8b1d",
+        "activity_id": "IA-6d7d855aa471b272",
         "funding_insight_id": "FI-955f111e1400d9e0",
         "event_ids": [
           "EV-c46e427fedbf518d"
@@ -901,7 +1061,7 @@
         ]
       },
       {
-        "activity_id": "IA-119c7e44a1031afe",
+        "activity_id": "IA-38f6484499bcb7ed",
         "funding_insight_id": "FI-6d45b570f8bf6df7",
         "event_ids": [
           "EV-e4b3a19529576778"
@@ -941,7 +1101,7 @@
         ]
       },
       {
-        "activity_id": "IA-8df94e076d4a657c",
+        "activity_id": "IA-1acd213549d0cd7c",
         "funding_insight_id": "FI-47e26458ea3314b4",
         "event_ids": [
           "EV-95341497f7ba9d83"
@@ -981,7 +1141,47 @@
         ]
       },
       {
-        "activity_id": "IA-71d478a56f3a588c",
+        "activity_id": "IA-f70209e98015d398",
+        "funding_insight_id": "FI-9fae2cdb80bfa282",
+        "event_ids": [
+          "EV-d5aa723446feebbb"
+        ],
+        "company_entity_id": "EN-c08f86842ff2c908",
+        "company_canonical_entity_id": "",
+        "company_name": "SRE.ai",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7.2 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7200000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "720 万美元"
+        },
+        "announced_at": "2025-08-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8ef8a57bdcb3befe",
+            "source_url": "https://www.sre.ai/post/sre-ai-raises-7-2m-to-redefine-enterprise-devops-for-the-ai-era",
+            "source_title": "SRE.ai Raises $7.2M To Redefine Enterprise DevOps for the AI Era",
+            "source_content_hash": "5177c94ed465e18a",
+            "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors",
+            "quote_hash": "497f229ff4bc7fb60a981e1cafb2cc72fcaa39fab80f0b6857086b53cb08b293"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-32065bac3a792a6a",
         "funding_insight_id": "FI-229d948dce0541a6",
         "event_ids": [
           "EV-9fc8916c19c19f99"
@@ -1021,7 +1221,7 @@
         ]
       },
       {
-        "activity_id": "IA-7ff8946477516c02",
+        "activity_id": "IA-2f6978875163bb3f",
         "funding_insight_id": "FI-343cd8cad5810ba7",
         "event_ids": [
           "EV-86ca5af11ee4d275"
@@ -1069,7 +1269,7 @@
         ]
       },
       {
-        "activity_id": "IA-36c4d24aad650fe3",
+        "activity_id": "IA-f8524d4bc1d71d2e",
         "funding_insight_id": "FI-a29040155764e60f",
         "event_ids": [
           "EV-b348083270be6c65"
@@ -1109,7 +1309,7 @@
         ]
       },
       {
-        "activity_id": "IA-62576100288076fc",
+        "activity_id": "IA-e8417c6802a86061",
         "funding_insight_id": "FI-2fa8e98cb4ae66d2",
         "event_ids": [
           "EV-f2143ba3124a2105"
@@ -1149,7 +1349,7 @@
         ]
       },
       {
-        "activity_id": "IA-072e31ed7d54f10c",
+        "activity_id": "IA-3d466e6b0c8209c7",
         "funding_insight_id": "FI-c210fc9ab5481f28",
         "event_ids": [
           "EV-b31602193dbf4e08"
@@ -1187,169 +1387,25 @@
             "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
           }
         ]
-      },
-      {
-        "activity_id": "IA-b509d3c7d8416556",
-        "funding_insight_id": "FI-8ec3b23d30c575bf",
-        "event_ids": [
-          "EV-cca4bd983a16b8d9"
-        ],
-        "company_entity_id": "EN-8eae6c54657e94be",
-        "company_canonical_entity_id": "",
-        "company_name": "Blacksmith",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮联合领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-ba55b463daced495",
-            "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
-            "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
-            "source_content_hash": "716df167d49a13d7",
-            "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
-            "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-ae41855538894eb0",
-        "funding_insight_id": "FI-920fe5e68b71a61c",
-        "event_ids": [
-          "EV-83085b0046c7275c"
-        ],
-        "company_entity_id": "EN-8d319684b6042af4",
-        "company_canonical_entity_id": "",
-        "company_name": "Ontora",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "加速器/孵化器",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-1f322d172be14af7",
-            "source_url": "https://www.vcbacked.co/company/ontora",
-            "source_title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
-            "source_content_hash": "55a0605c9be6e3c5",
-            "quote": "Ontora's investors include Y Combinator.",
-            "quote_hash": "24ded63cd0d723ee68be98942282098f4d0b6f70518490a7339e2707f224cf93"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-90aec74217aed7fb",
-        "funding_insight_id": "FI-9fae2cdb80bfa282",
-        "event_ids": [
-          "EV-d5aa723446feebbb"
-        ],
-        "company_entity_id": "EN-c08f86842ff2c908",
-        "company_canonical_entity_id": "",
-        "company_name": "SRE.ai",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-8ef8a57bdcb3befe",
-            "source_url": "https://www.sre.ai/post/sre-ai-raises-7-2m-to-redefine-enterprise-devops-for-the-ai-era",
-            "source_title": "SRE.ai Raises $7.2M To Redefine Enterprise DevOps for the AI Era",
-            "source_content_hash": "5177c94ed465e18a",
-            "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors",
-            "quote_hash": "497f229ff4bc7fb60a981e1cafb2cc72fcaa39fab80f0b6857086b53cb08b293"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-3f73509d8868208e",
-        "funding_insight_id": "FI-8a42f200f5caa9f3",
-        "event_ids": [
-          "EV-259566f35ea4f66d"
-        ],
-        "company_entity_id": "EN-607a596a603dd679",
-        "company_canonical_entity_id": "",
-        "company_name": "Starcloud",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-64c63dc926fc8a24",
-            "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
-            "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
-            "source_content_hash": "10f88a25e3d2c819",
-            "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
-            "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-5dec6a48fd8fb8f9",
-        "funding_insight_id": "FI-9b370a988458c224",
-        "event_ids": [
-          "EV-88f4ee8cd57bdf42"
-        ],
-        "company_entity_id": "EN-29e1a488361f12d3",
-        "company_canonical_entity_id": "",
-        "company_name": "Vapi Inc.",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-46ca8e6bf27dfb82",
-            "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
-            "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
-            "source_content_hash": "5fee028b6dad3dc4",
-            "quote": "with participation from Y Combinator",
-            "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-64c63dc926fc8a24",
+        "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
+        "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
+        "source_content_hash": "10f88a25e3d2c819",
+        "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
+        "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
+      },
+      {
+        "source_id": "FISRC-ba55b463daced495",
+        "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+        "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+        "source_content_hash": "716df167d49a13d7",
+        "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
+        "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
+      },
       {
         "source_id": "FISRC-0deb7f666bec5423",
         "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
@@ -1419,6 +1475,22 @@
         "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
         "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
         "source_content_hash": "77fbdb6058a98d5e",
+        "quote": "with participation from Y Combinator",
+        "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+      },
+      {
+        "source_id": "FISRC-1f322d172be14af7",
+        "source_url": "https://www.vcbacked.co/company/ontora",
+        "source_title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
+        "source_content_hash": "55a0605c9be6e3c5",
+        "quote": "Ontora's investors include Y Combinator.",
+        "quote_hash": "24ded63cd0d723ee68be98942282098f4d0b6f70518490a7339e2707f224cf93"
+      },
+      {
+        "source_id": "FISRC-46ca8e6bf27dfb82",
+        "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
+        "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
+        "source_content_hash": "5fee028b6dad3dc4",
         "quote": "with participation from Y Combinator",
         "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
       },
@@ -1519,6 +1591,14 @@
         "quote_hash": "fd002d99775a132851a7f6a24a6b57ca6e18601fdfd4ca6297bec772b9348969"
       },
       {
+        "source_id": "FISRC-8ef8a57bdcb3befe",
+        "source_url": "https://www.sre.ai/post/sre-ai-raises-7-2m-to-redefine-enterprise-devops-for-the-ai-era",
+        "source_title": "SRE.ai Raises $7.2M To Redefine Enterprise DevOps for the AI Era",
+        "source_content_hash": "5177c94ed465e18a",
+        "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors",
+        "quote_hash": "497f229ff4bc7fb60a981e1cafb2cc72fcaa39fab80f0b6857086b53cb08b293"
+      },
+      {
         "source_id": "FISRC-8857ed7cd124411a",
         "source_url": "https://www.startupecosystem.ca/news/ai-voice-agent-startup-telli-secures-3-6m-in-pre-seed-funding",
         "source_title": "AI 语音智能体初创公司 Telli 获 360 万美元预种子轮融资",
@@ -1565,46 +1645,6 @@
         "source_content_hash": "3b03664369ea0afe",
         "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
         "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
-      },
-      {
-        "source_id": "FISRC-ba55b463daced495",
-        "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
-        "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
-        "source_content_hash": "716df167d49a13d7",
-        "quote": "This was led by Erik Nordlander at Google Ventures (GV) and Y Combinator",
-        "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
-      },
-      {
-        "source_id": "FISRC-1f322d172be14af7",
-        "source_url": "https://www.vcbacked.co/company/ontora",
-        "source_title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
-        "source_content_hash": "55a0605c9be6e3c5",
-        "quote": "Ontora's investors include Y Combinator.",
-        "quote_hash": "24ded63cd0d723ee68be98942282098f4d0b6f70518490a7339e2707f224cf93"
-      },
-      {
-        "source_id": "FISRC-8ef8a57bdcb3befe",
-        "source_url": "https://www.sre.ai/post/sre-ai-raises-7-2m-to-redefine-enterprise-devops-for-the-ai-era",
-        "source_title": "SRE.ai Raises $7.2M To Redefine Enterprise DevOps for the AI Era",
-        "source_content_hash": "5177c94ed465e18a",
-        "quote": "We’re grateful for the support of Salesforce Ventures, Y Combinator, Crane Venture Partners, and our incredible angel investors",
-        "quote_hash": "497f229ff4bc7fb60a981e1cafb2cc72fcaa39fab80f0b6857086b53cb08b293"
-      },
-      {
-        "source_id": "FISRC-64c63dc926fc8a24",
-        "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
-        "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
-        "source_content_hash": "10f88a25e3d2c819",
-        "quote": "Additional investors included NFX, Nebular, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West and Monolith Power Systems, alongside Y Combinator.",
-        "quote_hash": "cfe56353b62ee0d2b7a35d8f096a95dcb0453435d3ccee0edd99464f37ee44d6"
-      },
-      {
-        "source_id": "FISRC-46ca8e6bf27dfb82",
-        "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
-        "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
-        "source_content_hash": "5fee028b6dad3dc4",
-        "quote": "with participation from Y Combinator",
-        "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
       }
     ],
     "public_profile": {

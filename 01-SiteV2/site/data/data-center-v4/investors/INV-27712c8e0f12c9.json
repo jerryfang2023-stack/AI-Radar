@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -89,7 +89,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-5641b50ae541fee3",
+        "activity_id": "IA-1b77737b30f560e3",
         "funding_insight_id": "FI-f9e6d5e2e86d80a8",
         "event_ids": [
           "EV-7326768782ff1e4e",
@@ -130,7 +130,48 @@
         ]
       },
       {
-        "activity_id": "IA-2f7fd2055be34cc1",
+        "activity_id": "IA-b2fcecef34b11795",
+        "funding_insight_id": "FI-f9e6d5e2e86d80a8",
+        "event_ids": [
+          "EV-7326768782ff1e4e",
+          "EV-0ac10579ff64fe74"
+        ],
+        "company_entity_id": "EN-60910505210bd6f1",
+        "company_canonical_entity_id": "EN-60910505210bd6f1",
+        "company_name": "寅成智能",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee633a1d4c332941",
+            "source_url": "https://wallstreetcn.com/articles/3773060",
+            "source_title": "定位通用拣选机器人，寅成智能融资千万美元 - 华尔街见闻",
+            "source_content_hash": "8bc2969271617468",
+            "quote": "本轮融资由德同资本领投，某产业资本方跟投",
+            "quote_hash": "b27af5c0f40a6fb3443dbd6b0b82956b10e7e9f339f39e3fae2664c42bc8d229"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-82eac925413d50a4",
         "funding_insight_id": "FI-6a54d87fecbb5969",
         "event_ids": [
           "EV-6ff97d32bdcc8586"
@@ -168,39 +209,6 @@
             "quote_hash": "eb1046f7a5aa336c0c4c7c7455a6fb39267e99a8aab29c2bb95de229b67e9785"
           }
         ]
-      },
-      {
-        "activity_id": "IA-c5afd72ad013fe9a",
-        "funding_insight_id": "FI-f9e6d5e2e86d80a8",
-        "event_ids": [
-          "EV-7326768782ff1e4e",
-          "EV-0ac10579ff64fe74"
-        ],
-        "company_entity_id": "EN-60910505210bd6f1",
-        "company_canonical_entity_id": "EN-60910505210bd6f1",
-        "company_name": "寅成智能",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-ee633a1d4c332941",
-            "source_url": "https://wallstreetcn.com/articles/3773060",
-            "source_title": "定位通用拣选机器人，寅成智能融资千万美元 - 华尔街见闻",
-            "source_content_hash": "8bc2969271617468",
-            "quote": "本轮融资由德同资本领投，某产业资本方跟投",
-            "quote_hash": "b27af5c0f40a6fb3443dbd6b0b82956b10e7e9f339f39e3fae2664c42bc8d229"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -213,20 +221,20 @@
         "quote_hash": "c28b500967139ee4fd84ce772a96f80a69f572cea02b30689cad0451dfd20cf1"
       },
       {
-        "source_id": "FISRC-2eb0f3061c0992c0",
-        "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-25/doc-inhzamvs3624738.shtml",
-        "source_title": "首发| 复旦学姐带队，寅成智能融资千万美元",
-        "source_content_hash": "b305b6f8f03a0db3",
-        "quote": "寅成智能正式完成千万美元天使轮融资，本轮领投方为德同资本，某产业资本方跟投。",
-        "quote_hash": "eb1046f7a5aa336c0c4c7c7455a6fb39267e99a8aab29c2bb95de229b67e9785"
-      },
-      {
         "source_id": "FISRC-ee633a1d4c332941",
         "source_url": "https://wallstreetcn.com/articles/3773060",
         "source_title": "定位通用拣选机器人，寅成智能融资千万美元 - 华尔街见闻",
         "source_content_hash": "8bc2969271617468",
         "quote": "本轮融资由德同资本领投，某产业资本方跟投",
         "quote_hash": "b27af5c0f40a6fb3443dbd6b0b82956b10e7e9f339f39e3fae2664c42bc8d229"
+      },
+      {
+        "source_id": "FISRC-2eb0f3061c0992c0",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-05-25/doc-inhzamvs3624738.shtml",
+        "source_title": "首发| 复旦学姐带队，寅成智能融资千万美元",
+        "source_content_hash": "b305b6f8f03a0db3",
+        "quote": "寅成智能正式完成千万美元天使轮融资，本轮领投方为德同资本，某产业资本方跟投。",
+        "quote_hash": "eb1046f7a5aa336c0c4c7c7455a6fb39267e99a8aab29c2bb95de229b67e9785"
       }
     ],
     "public_profile": {

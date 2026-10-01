@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -100,7 +100,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-746a3e9358c85a85",
+        "activity_id": "IA-401e87f0d8ad17ae",
         "funding_insight_id": "FI-72df07926e3369ef",
         "event_ids": [
           "EV-26a5749d8604455a",
@@ -141,7 +141,7 @@
         ]
       },
       {
-        "activity_id": "IA-6adba3bb158c74ce",
+        "activity_id": "IA-7c3b695cd0fd6187",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
         "event_ids": [
           "EV-f5dd6dec49ad83aa"
@@ -181,7 +181,47 @@
         ]
       },
       {
-        "activity_id": "IA-d33988486026d453",
+        "activity_id": "IA-a1d06669a2ba436b",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "G轮",
+        "round_code": "series_g",
+        "round_original": "G轮",
+        "amount_original": "$30 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 亿美元"
+        },
+        "announced_at": "2026-08-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "F轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2d91b8c40e694677",
+            "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
+            "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
+            "source_content_hash": "a0ff76f6894f0267",
+            "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
+            "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b33069ffbb563962",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
           "EV-3b40ec144e5db22c"
@@ -229,7 +269,7 @@
         ]
       },
       {
-        "activity_id": "IA-675c8c9ab0f00f8b",
+        "activity_id": "IA-4e47d2f27bc688d1",
         "funding_insight_id": "FI-352a7cfb23508f3e",
         "event_ids": [
           "EV-31df816db86db282"
@@ -267,38 +307,6 @@
             "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
           }
         ]
-      },
-      {
-        "activity_id": "IA-0e6d29c89d3156cb",
-        "funding_insight_id": "FI-f55b62cf10cb7c98",
-        "event_ids": [
-          "EV-f5dd6dec49ad83aa"
-        ],
-        "company_entity_id": "EN-c70eca6b0f88f44d",
-        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-        "company_name": "Anthropic",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "F轮参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-2d91b8c40e694677",
-            "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
-            "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
-            "source_content_hash": "a0ff76f6894f0267",
-            "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
-            "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
-          }
-        ]
       }
     ],
     "evidence": [
@@ -317,6 +325,14 @@
         "source_content_hash": "a0ff76f6894f0267",
         "quote": "GIC, a global institutional investor, has led Anthropic’s $30 billion Series G alongside Coatue, valuing Anthropic at $380 billion post-money.",
         "quote_hash": "de507bc015d862739260e2ce19337e511d393916dd1bee9d748c8d93c7f22a72"
+      },
+      {
+        "source_id": "FISRC-2d91b8c40e694677",
+        "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
+        "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
+        "source_content_hash": "a0ff76f6894f0267",
+        "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
+        "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
       },
       {
         "source_id": "FISRC-1f69885afd5fc439",
@@ -341,14 +357,6 @@
         "source_content_hash": "c231466686007dd5",
         "quote": "led by GIC and Coatue",
         "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
-      },
-      {
-        "source_id": "FISRC-2d91b8c40e694677",
-        "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
-        "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
-        "source_content_hash": "a0ff76f6894f0267",
-        "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
-        "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
       }
     ],
     "public_profile": {

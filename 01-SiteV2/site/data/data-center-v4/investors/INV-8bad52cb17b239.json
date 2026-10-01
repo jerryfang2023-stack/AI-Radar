@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-01-12",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "historical_or_ambiguous": 2,
       "lead": 1
@@ -87,7 +87,88 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-15e719647167ec71",
+        "activity_id": "IA-b77c8183db62385a",
+        "funding_insight_id": "FI-16674c19e6f87ab9",
+        "event_ids": [
+          "EV-bdd574fb9ee91b4d",
+          "EV-b0637e99e328479b"
+        ],
+        "company_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_canonical_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_name": "设序科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "产业资本",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-887f1542c828b426",
+            "source_url": "https://news.pedaily.cn/202609/569177.shtml",
+            "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
+            "source_content_hash": "7ba0fa9425a10e3a",
+            "quote": "也有 字节跳动、联想创投、中芯聚源 等产业资本",
+            "quote_hash": "45ca26aaa775fa6d9a569d2a449d8992a071e1de36df25698855abfd66d19d82"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7be1377f9c2f0c11",
+        "funding_insight_id": "FI-ee613463b934eef6",
+        "event_ids": [
+          "EV-50dc1a246ea090e5"
+        ],
+        "company_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_canonical_entity_id": "EN-cfec5bef40cbf3ae",
+        "company_name": "设序科技",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-07-23",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7dfa7efaace4f3c8",
+            "source_url": "https://news.pedaily.cn/202202/487236.shtml",
+            "source_title": "工业智能CAD厂商「设序科技」完成A轮投资，字节跳动领投_投资界",
+            "source_content_hash": "5c1b7fbf79c12864",
+            "quote": "本轮融资由 字节跳动 领投 ，联创永浚跟投，老股东SIG、 险峰长青 、 高榕资本 、 联想创投 持续加注",
+            "quote_hash": "599ccda053f5b330b57a8ec823895be805e9493da4661d51911107f2155a5bac"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8164b55351fa6fc7",
         "funding_insight_id": "FI-e9bdd4e9374b04ca",
         "event_ids": [
           "EV-41c54c428d84cc1e",
@@ -127,82 +208,9 @@
             "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
           }
         ]
-      },
-      {
-        "activity_id": "IA-26205815517e5fb1",
-        "funding_insight_id": "FI-16674c19e6f87ab9",
-        "event_ids": [
-          "EV-bdd574fb9ee91b4d",
-          "EV-b0637e99e328479b"
-        ],
-        "company_entity_id": "EN-cfec5bef40cbf3ae",
-        "company_canonical_entity_id": "EN-cfec5bef40cbf3ae",
-        "company_name": "设序科技",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "产业资本",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-887f1542c828b426",
-            "source_url": "https://news.pedaily.cn/202609/569177.shtml",
-            "source_title": "设序科技一连融资6轮，要做「工业界Anthropic」",
-            "source_content_hash": "7ba0fa9425a10e3a",
-            "quote": "也有 字节跳动、联想创投、中芯聚源 等产业资本",
-            "quote_hash": "45ca26aaa775fa6d9a569d2a449d8992a071e1de36df25698855abfd66d19d82"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-31d0ce228fff55bd",
-        "funding_insight_id": "FI-ee613463b934eef6",
-        "event_ids": [
-          "EV-50dc1a246ea090e5"
-        ],
-        "company_entity_id": "EN-cfec5bef40cbf3ae",
-        "company_canonical_entity_id": "EN-cfec5bef40cbf3ae",
-        "company_name": "设序科技",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮领投方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-7dfa7efaace4f3c8",
-            "source_url": "https://news.pedaily.cn/202202/487236.shtml",
-            "source_title": "工业智能CAD厂商「设序科技」完成A轮投资，字节跳动领投_投资界",
-            "source_content_hash": "5c1b7fbf79c12864",
-            "quote": "本轮融资由 字节跳动 领投 ，联创永浚跟投，老股东SIG、 险峰长青 、 高榕资本 、 联想创投 持续加注",
-            "quote_hash": "599ccda053f5b330b57a8ec823895be805e9493da4661d51911107f2155a5bac"
-          }
-        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-449b969616ed1e95",
-        "source_url": "https://www.36kr.com/p/3636080421586182",
-        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-        "source_content_hash": "abef77aff9b6b68f",
-        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
-      },
       {
         "source_id": "FISRC-887f1542c828b426",
         "source_url": "https://news.pedaily.cn/202609/569177.shtml",
@@ -218,6 +226,14 @@
         "source_content_hash": "5c1b7fbf79c12864",
         "quote": "本轮融资由 字节跳动 领投 ，联创永浚跟投，老股东SIG、 险峰长青 、 高榕资本 、 联想创投 持续加注",
         "quote_hash": "599ccda053f5b330b57a8ec823895be805e9493da4661d51911107f2155a5bac"
+      },
+      {
+        "source_id": "FISRC-449b969616ed1e95",
+        "source_url": "https://www.36kr.com/p/3636080421586182",
+        "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
+        "source_content_hash": "abef77aff9b6b68f",
+        "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
+        "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
       }
     ],
     "public_profile": {

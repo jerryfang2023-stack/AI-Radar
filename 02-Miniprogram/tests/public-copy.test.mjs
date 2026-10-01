@@ -61,9 +61,8 @@ test("uses the confirmed financing column and public-facing copy", () => {
   assert.equal(appConfig.tabBar.list[0].text, "融资");
   assert.equal(appConfig.tabBar.list[1].text, "生态");
   assert.match(terminalSource, /<app-header title="融资情报"/u);
-  assert.match(terminalSource, /class="funding-metrics-head"[\s\S]*融资动态全景[\s\S]*全球 · 中国/u);
-  assert.match(terminalSource, /<strong class="funding-metrics-value serif">\{\{scopeCardCount\}\}<\/strong><text>融资<\/text>/u);
-  assert.match(terminalSource, /class="funding-date"><strong class="funding-metrics-value serif">\{\{meta\.latestDate\}\}<\/strong><text>更新<\/text>/u);
+  assert.match(terminalSource, /融资精选/u);
+  assert.match(terminalSource, /bindtap="openFeatured"/u);
   assert.match(marketSource, /<app-header title="生态"/u);
   assert.match(marketSource, />生态图谱<[\s\S]*>生态名录</u);
   assert.doesNotMatch(marketSource, /数据更新至|本期信号/u);
@@ -183,7 +182,7 @@ test("keeps observer growth primary and membership status compact on profile", (
   assert.match(compactMembership, /有效至/u);
   assert.doesNotMatch(compactMembership, /元\/月/u);
   assert.match(compactMembership, /开通会员/u);
-  assert.match(profileSource, /邀请人得 300 活跃积分/u);
+  assert.match(profileSource, /好友完成首次注册，获得 300 积分/u);
   assert.match(profileSource, /class="identity-row" bindtap="openSettings"/u);
   assert.match(profileSource, /class="text-link">设置</u);
   assert.doesNotMatch(profileSource, /right-label="设置"/u);
@@ -312,8 +311,10 @@ test("opens a dedicated invitation value page before sharing", () => {
 test("enables confirmed point redemption with balance and membership updates", () => {
   assert.match(growthSource, /item\.affordable/u);
   assert.match(growthSource, /还差/u);
-  assert.match(growthLogic, /确认兑换吗/u);
-  assert.match(growthLogic, /兑换成功，已增加/u);
+  const redemption = fs.readFileSync("miniprogram/utils/benefit-redemption.js", "utf8");
+  assert.match(growthLogic, /redeemOnPage/u);
+  assert.match(redemption, /确认兑换/u);
+  assert.match(redemption, /兑换成功，已增加/u);
   assert.match(memberSource, /transactionId/u);
   assert.match(memberSource, /saveWallet\(result\.wallet\)/u);
   assert.match(memberSource, /saveMembership\(nextMembership\)/u);

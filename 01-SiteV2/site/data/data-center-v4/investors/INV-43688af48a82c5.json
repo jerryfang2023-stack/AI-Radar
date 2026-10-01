@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -110,7 +110,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-b1074717f6e25fe6",
+        "activity_id": "IA-c41694dbdaca595e",
         "funding_insight_id": "FI-5bf569d857da4dcb",
         "event_ids": [
           "EV-be364dc6883ec94b"
@@ -150,7 +150,7 @@
         ]
       },
       {
-        "activity_id": "IA-d44b025b5692c6e8",
+        "activity_id": "IA-3ce3bd9769d23f14",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -190,7 +190,7 @@
         ]
       },
       {
-        "activity_id": "IA-291124415bcfe0bf",
+        "activity_id": "IA-d79f4fffe2584a59",
         "funding_insight_id": "FI-db2bd30618100f0d",
         "event_ids": [
           "EV-60f219702a66bf38"
@@ -230,7 +230,7 @@
         ]
       },
       {
-        "activity_id": "IA-4de433bed9d0c4cf",
+        "activity_id": "IA-dbd6d1527834103d",
         "funding_insight_id": "FI-12131c1300a2d205",
         "event_ids": [
           "EV-fab81bddb815267b"
@@ -270,7 +270,7 @@
         ]
       },
       {
-        "activity_id": "IA-590957209a386300",
+        "activity_id": "IA-34038d92027b19b9",
         "funding_insight_id": "FI-5faa0336090509de",
         "event_ids": [
           "EV-5762fe51987bc5ff"
@@ -502,6 +502,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "Lux Ventures IX 公告称 Lux 创立于2000年。",
+          "source_hash": "40c2a0305f8b7c0cf29e26be4f85adfa8da73089ca11dd0f5407eb0ac51d2c4f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "宣布 Lux Ventures IX，承诺规模15亿美元。",
+          "source_hash": "23be2371b2b0e5a6eb2eefd15e8cb96a7d96b13b56d1adb32a40254320063617",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "官网组合目录列出 Anduril、Applied Intuition、Databricks、Cognition、Physical Intelligence、Ramp 等公司示例；该目录不是基金回报披露。",
+          "source_hash": "d92d49db074ffc813c5a79cd28f75cab68b7ebf6883491383e3474f41cd481e7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:30.167Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

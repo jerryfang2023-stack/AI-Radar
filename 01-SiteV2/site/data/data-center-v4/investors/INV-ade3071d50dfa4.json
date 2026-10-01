@@ -5,14 +5,14 @@
     "entityVersion": "ENTITY-V1.0",
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
-    "generatedAt": "2026-09-26T05:32:44.840Z",
-    "latestDataDate": "2026-09-26",
-    "currentDate": "2026-09-26",
-    "eventCount": 3587,
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-01",
+    "currentDate": "2026-10-01",
+    "eventCount": 3632,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
-      "EV-f389faf9d7a68a79",
       "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
       "EV-9fd8d784459150e5",
       "EV-6b668e4655192209",
       "EV-4d66ddb791eca9a8",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-08-24",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "historical_or_ambiguous": 4,
       "lead": 3,
@@ -127,7 +127,48 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-fd0855498cb1ba5a",
+        "activity_id": "IA-ff36ba12aca77599",
+        "funding_insight_id": "FI-72df07926e3369ef",
+        "event_ids": [
+          "EV-26a5749d8604455a",
+          "EV-40d4ce6d936d4d49"
+        ],
+        "company_entity_id": "EN-d41ebd9f02722fc8",
+        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "company_name": "Crusoe",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$3.9B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3900000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "39 亿美元"
+        },
+        "announced_at": "2026-09-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series E 参投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4afc17abd0ce2781",
+            "source_url": "https://sacra.com/c/crusoe/",
+            "source_title": "Crusoe revenue, valuation & funding | Sacra",
+            "source_content_hash": "031d223859c249dd",
+            "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+            "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f92c4d9d12008105",
         "funding_insight_id": "FI-e0e22d70a91e704e",
         "event_ids": [
           "EV-dccfca59b3e58638",
@@ -169,7 +210,7 @@
         ]
       },
       {
-        "activity_id": "IA-2f90646137f17509",
+        "activity_id": "IA-f56f7b1c96aa67e7",
         "funding_insight_id": "FI-74c3c9da32686f84",
         "event_ids": [
           "EV-cbce4f1f5187efcf"
@@ -209,7 +250,47 @@
         ]
       },
       {
-        "activity_id": "IA-ea30fa042eaba5b7",
+        "activity_id": "IA-0f7b018944193e02",
+        "funding_insight_id": "FI-74c3c9da32686f84",
+        "event_ids": [
+          "EV-cbce4f1f5187efcf"
+        ],
+        "company_entity_id": "FICO-2b3dac6c72b05a6e",
+        "company_canonical_entity_id": "",
+        "company_name": "Centralize",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0232cca5ca9bf922",
+            "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+            "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+            "source_content_hash": "71082c4f5d29c731",
+            "quote": "a previous $4 million seed round led by Salesforce Ventures",
+            "quote_hash": "612ade98581dc140437e25dad25452607e5d4815e1788a49aa44e38dd58188f6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-caac952904f6790d",
         "funding_insight_id": "FI-2dfbeaa7d627041d",
         "event_ids": [
           "EV-13ec78dfdbca678b"
@@ -249,7 +330,7 @@
         ]
       },
       {
-        "activity_id": "IA-79cd518889d8923c",
+        "activity_id": "IA-9142fb3a2a6a6974",
         "funding_insight_id": "FI-ca1a0b9750ebb6db",
         "event_ids": [
           "EV-9300044a58395552"
@@ -289,7 +370,7 @@
         ]
       },
       {
-        "activity_id": "IA-00ff176cd373fe59",
+        "activity_id": "IA-e4a6439a5543e760",
         "funding_insight_id": "FI-35b63d84f1f7c2b0",
         "event_ids": [
           "EV-450f624a6a6446ce",
@@ -330,7 +411,87 @@
         ]
       },
       {
-        "activity_id": "IA-38d510f6a16b4db0",
+        "activity_id": "IA-627ef084619eafcf",
+        "funding_insight_id": "FI-1cf34218733257fd",
+        "event_ids": [
+          "EV-85506f9f86779a6d"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "Series C",
+        "amount_original": "约17亿欧元（约20亿美元）",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 1700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 17 亿欧元"
+        },
+        "announced_at": "2025-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ff92324bbd437a73",
+            "source_url": "https://notice.co/c/mistral-ai",
+            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+            "source_content_hash": "24552deeea13b585",
+            "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds. The Series C round was led by ASML. Other notable Mistral AI investors include Andreessen Horowitz, Lightspeed, General Catalyst and Salesforce Ventures.",
+            "quote_hash": "0941e672ff6a5140540826b619e85d05f21f3a60d1707e39268244487e4a9ddc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b95f8eb4967fa2b2",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$13 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 13000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "130 亿美元"
+        },
+        "announced_at": "2025-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "参与E轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b07d3da294a11d70",
         "funding_insight_id": "FI-9fae2cdb80bfa282",
         "event_ids": [
           "EV-d5aa723446feebbb"
@@ -370,7 +531,7 @@
         ]
       },
       {
-        "activity_id": "IA-9c17383e6164675f",
+        "activity_id": "IA-21c1fa4ed5288ff1",
         "funding_insight_id": "FI-6601d010adc14dd0",
         "event_ids": [
           "EV-78a11d309c3d4e97"
@@ -410,7 +571,7 @@
         ]
       },
       {
-        "activity_id": "IA-de2ecd14f2c60b62",
+        "activity_id": "IA-4b16ee0aefdaf44c",
         "funding_insight_id": "FI-c6daec8079df9f74",
         "event_ids": [
           "EV-386c205c8bbf537d"
@@ -448,138 +609,17 @@
             "quote_hash": "dc679f5e5dedcbaac48269cd2e5d3992c2bbd56ef48c91e73fa4fb29cf203c21"
           }
         ]
-      },
-      {
-        "activity_id": "IA-2fbd2775ae2e432c",
-        "funding_insight_id": "FI-0312b291d6672487",
-        "event_ids": [
-          "EV-201b25d4f3cf696a"
-        ],
-        "company_entity_id": "EN-c70eca6b0f88f44d",
-        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-        "company_name": "Anthropic",
-        "round": "E轮",
-        "round_code": "series_e",
-        "round_original": "Series E轮参投",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "参与E轮融资",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-c5289e6345684ca4",
-            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
-            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
-            "source_content_hash": "e918313869a22b8d",
-            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
-            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-862ca81ec56b3cf4",
-        "funding_insight_id": "FI-74c3c9da32686f84",
-        "event_ids": [
-          "EV-cbce4f1f5187efcf"
-        ],
-        "company_entity_id": "FICO-2b3dac6c72b05a6e",
-        "company_canonical_entity_id": "",
-        "company_name": "Centralize",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-0232cca5ca9bf922",
-            "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
-            "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
-            "source_content_hash": "71082c4f5d29c731",
-            "quote": "a previous $4 million seed round led by Salesforce Ventures",
-            "quote_hash": "612ade98581dc140437e25dad25452607e5d4815e1788a49aa44e38dd58188f6"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-34fef020d29b9dc5",
-        "funding_insight_id": "FI-72df07926e3369ef",
-        "event_ids": [
-          "EV-26a5749d8604455a",
-          "EV-40d4ce6d936d4d49"
-        ],
-        "company_entity_id": "EN-d41ebd9f02722fc8",
-        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
-        "company_name": "Crusoe",
-        "round": "历史轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "Series E 参投方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-4afc17abd0ce2781",
-            "source_url": "https://sacra.com/c/crusoe/",
-            "source_title": "Crusoe revenue, valuation & funding | Sacra",
-            "source_content_hash": "031d223859c249dd",
-            "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
-            "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-7ebf090cd106a2ea",
-        "funding_insight_id": "FI-1cf34218733257fd",
-        "event_ids": [
-          "EV-85506f9f86779a6d"
-        ],
-        "company_entity_id": "EN-c04bd5ebd10ab696",
-        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
-        "company_name": "Mistral AI",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "既有投资方",
-        "amount_original": "",
-        "amount_normalized": null,
-        "announced_at": "",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "unknown",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-ff92324bbd437a73",
-            "source_url": "https://notice.co/c/mistral-ai",
-            "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
-            "source_content_hash": "24552deeea13b585",
-            "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds. The Series C round was led by ASML. Other notable Mistral AI investors include Andreessen Horowitz, Lightspeed, General Catalyst and Salesforce Ventures.",
-            "quote_hash": "0941e672ff6a5140540826b619e85d05f21f3a60d1707e39268244487e4a9ddc"
-          }
-        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4afc17abd0ce2781",
+        "source_url": "https://sacra.com/c/crusoe/",
+        "source_title": "Crusoe revenue, valuation & funding | Sacra",
+        "source_content_hash": "031d223859c249dd",
+        "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+        "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+      },
       {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
@@ -595,6 +635,14 @@
         "source_content_hash": "71082c4f5d29c731",
         "quote": "The financing includes participation from Salesforce Ventures",
         "quote_hash": "a8dbfb35d3438ca740d5203a49393ec2f3ce6550e5d4de9c7b80364b259a80f9"
+      },
+      {
+        "source_id": "FISRC-0232cca5ca9bf922",
+        "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
+        "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
+        "source_content_hash": "71082c4f5d29c731",
+        "quote": "a previous $4 million seed round led by Salesforce Ventures",
+        "quote_hash": "612ade98581dc140437e25dad25452607e5d4815e1788a49aa44e38dd58188f6"
       },
       {
         "source_id": "FISRC-7d75683a17a8f2ca",
@@ -621,6 +669,22 @@
         "quote_hash": "4d03ee9da8903840887371a26b6e932b4c122209036dbff588de63c93d3ae825"
       },
       {
+        "source_id": "FISRC-ff92324bbd437a73",
+        "source_url": "https://notice.co/c/mistral-ai",
+        "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
+        "source_content_hash": "24552deeea13b585",
+        "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds. The Series C round was led by ASML. Other notable Mistral AI investors include Andreessen Horowitz, Lightspeed, General Catalyst and Salesforce Ventures.",
+        "quote_hash": "0941e672ff6a5140540826b619e85d05f21f3a60d1707e39268244487e4a9ddc"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+        "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+      },
+      {
         "source_id": "FISRC-68a8dc57ec8eec7f",
         "source_url": "https://techcrunch.com/2025/08/20/sre-ai-launches-to-automate-complex-enterprise-workflows/",
         "source_title": "Y Combinator 校友 SRE.ai 获 720 万美元融资，用于开发 DevOps AI 智能体",
@@ -643,38 +707,6 @@
         "source_content_hash": "7b9abba5d20c0d6e",
         "quote": "a series D funding round led by Salesforce",
         "quote_hash": "dc679f5e5dedcbaac48269cd2e5d3992c2bbd56ef48c91e73fa4fb29cf203c21"
-      },
-      {
-        "source_id": "FISRC-c5289e6345684ca4",
-        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
-        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
-        "source_content_hash": "e918313869a22b8d",
-        "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
-        "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
-      },
-      {
-        "source_id": "FISRC-0232cca5ca9bf922",
-        "source_url": "https://news.crunchbase.com/sales-marketing/centralize-enterprise-sales-gtm-startup-funding-slack-meta-alums/",
-        "source_title": "独家：前Meta和Slack工程师为初创公司Centralize筹集1500万美元，打造企业销售“交易GPS”",
-        "source_content_hash": "71082c4f5d29c731",
-        "quote": "a previous $4 million seed round led by Salesforce Ventures",
-        "quote_hash": "612ade98581dc140437e25dad25452607e5d4815e1788a49aa44e38dd58188f6"
-      },
-      {
-        "source_id": "FISRC-4afc17abd0ce2781",
-        "source_url": "https://sacra.com/c/crusoe/",
-        "source_title": "Crusoe revenue, valuation & funding | Sacra",
-        "source_content_hash": "031d223859c249dd",
-        "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
-        "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
-      },
-      {
-        "source_id": "FISRC-ff92324bbd437a73",
-        "source_url": "https://notice.co/c/mistral-ai",
-        "source_title": "Mistral AI Stock $11.63 | How to Buy, Valuation, Stock Price, IPO | Notice.co",
-        "source_content_hash": "24552deeea13b585",
-        "quote": "Mistral AI has 34 investors. 4 investors have led 4 Mistral AI funding rounds. The Series C round was led by ASML. Other notable Mistral AI investors include Andreessen Horowitz, Lightspeed, General Catalyst and Salesforce Ventures.",
-        "quote_hash": "0941e672ff6a5140540826b619e85d05f21f3a60d1707e39268244487e4a9ddc"
       }
     ],
     "public_profile": {
@@ -805,12 +837,20 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[10].role": {
+        "activities[0].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-09-18T02:49:06.821Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Salesforce Ventures 官网称该投资部门于 2009 年推出。",
+          "source_hash": "94b81c52047639cb6f52e392d719440666ad08c02776fdfdf8fdcb29d5885b34",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:27.500Z",
           "status": "translated"
         }
       }
