@@ -129,21 +129,240 @@
       }
     ],
     "public_profile": {
+      "summary": "华创资本（China Growth Capital）聚焦中国早期投资，官网列出新金融、新实业、新消费、前沿科技和生命科学等方向。官网介绍页自述累计管理近百亿元资产、投资超过 200 家公司，并展示蓝箭航天、PingCAP、文远知行、梅卡曼德等案例。管理团队包括投资业务管理合伙人吴海燕，以及创始合伙人熊伟铭、王道平，分别覆盖企业软件与金融科技、技术、移动互联网和 B2B 平台。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "China Growth Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网首页称机构自 2006 年成立；关于页称自 2014 年成立基金，可能分别指机构与基金。近百亿元资产和 200 多家公司为机构自述，未标明统计截点。融资数据库中的 Even Realities 记录对应初始 A 轮投资，不是 2026 年 1.5 亿美元 Pre-B 的出资证明。官网联系方式页面目前仅使用 HTTP 地址。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网首页披露成立时间",
+          "value": "2006 年",
+          "source_id": "china_home"
+        },
+        {
+          "field": "scale",
+          "label": "官网关于页自述规模",
+          "value": "自 2014 年成立基金以来累计管理近百亿元资产、投资超过 200 家公司；统计截点及口径未披露",
+          "source_id": "china_about"
+        },
+        {
+          "field": "focus",
+          "label": "投资方向",
+          "value": "早期投资；新金融、新实业、新消费、前沿科技和生命科学",
+          "source_id": "china_home"
+        },
+        {
+          "field": "team_background",
+          "label": "管理团队",
+          "value": [
+            "吴海燕：负责投资业务与基金管理，牵头企业软件、金融科技投资；曾在被投企业敦煌网任 CEO 助理。",
+            "熊伟铭：创始合伙人，主导技术投资；曾任贝塔斯曼亚洲投资基金及美国中经合集团合伙人。",
+            "王道平：创始合伙人，负责移动互联网、社交及 B2B 平台投资；曾在美国中经合、硅谷银行中国基金和中芯国际任职。"
+          ],
+          "source_id": "china_team"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2006",
+          "description": "官网首页称华创资本自 2006 年成立以来持续专注早期投资。",
+          "source_id": "china_home"
+        },
+        {
+          "date": "2026-09-01",
+          "description": "官网报道梅卡曼德上市，并称华创资本 2017 年初独家领投其 Pre-A 轮、后续持续加注。",
+          "source_id": "china_mech"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "管理合伙人；负责投资与基金管理",
+          "organization": "China Growth Capital · 吴海燕",
+          "source_id": "china_wu"
+        },
+        {
+          "title": "创始合伙人；主导技术投资",
+          "organization": "China Growth Capital · 熊伟铭",
+          "source_id": "china_wayne"
+        },
+        {
+          "title": "创始合伙人；负责移动互联网、社交与 B2B 平台投资",
+          "organization": "China Growth Capital · 王道平",
+          "source_id": "china_wang"
+        }
+      ],
+      "career": [
+        {
+          "organization": "吴海燕 · China Growth Capital / 敦煌网",
+          "title": "管理合伙人 / CEO 助理",
+          "period": "2006 年加入华创；2008–2009 年任敦煌网 CEO 助理；2010 年回到华创",
+          "description": "官方简介称其主导投资同盾科技、老虎证券、PingCAP、Wish、什么值得买及梅卡曼德等。",
+          "source_id": "china_wu"
+        },
+        {
+          "organization": "熊伟铭 · Bertelsmann Asia Investments / 美国中经合集团",
+          "title": "合伙人",
+          "period": "加入华创前；日期未披露",
+          "description": "之后在华创主导技术领域投资。",
+          "source_id": "china_wayne"
+        },
+        {
+          "organization": "王道平 · 美国中经合集团 / 硅谷银行中国基金 / 中芯国际",
+          "title": "高级投资经理 / 投资从业经历 / 资深工程师",
+          "period": "2008 年及更早职业经历；其他日期未披露",
+          "description": "先后涉及互联网早期投资、基金工作和半导体工程。",
+          "source_id": "china_wang"
+        }
+      ],
+      "education": [
+        {
+          "institution": "吴海燕 · 清华大学工程物理系",
+          "qualification": "毕业；学位未披露",
+          "source_id": "china_wu"
+        },
+        {
+          "institution": "熊伟铭 · 北京大学经济学院国际经济系",
+          "qualification": "毕业；学位未披露",
+          "source_id": "china_wayne"
+        },
+        {
+          "institution": "王道平 · 南京大学",
+          "qualification": "物理学学士",
+          "source_id": "china_wang"
+        },
+        {
+          "institution": "王道平 · 长江商学院",
+          "qualification": "MBA",
+          "source_id": "china_wang"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Even Realities Technology · Pre-B轮 · 2026-07-07 · A轮投资方 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网自述投资超过 200 家企业，并列出前沿科技、生命科学、航天、自动驾驶、计算架构及医疗器械项目；这不是完整组合或基金回报数据。",
+          "source_id": "china_about"
+        },
+        {
+          "description": "官网称梅卡曼德于 2026 年登陆港交所，华创资本曾独家领投其 2017 年 Pre-A 轮并在后续轮次持续加注。",
+          "source_id": "china_mech"
+        },
+        {
+          "description": "Even Realities 报道回溯其初始 900 万美元 Series A 包含 China Growth Capital；该融资条目并不证明华创参与 2026 年 1.5 亿美元 Pre-B。",
           "source_id": "FISRC-340182e8dcb597a3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "商业计划书投递 · 企业软件",
+          "value": "enterprise@cgcvc.com",
+          "source_id": "china_contact"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递 · 前沿科技",
+          "value": "deeptech@cgcvc.com",
+          "source_id": "china_contact"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递 · 消费升级",
+          "value": "consumer@cgcvc.com",
+          "source_id": "china_contact"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递 · 金融科技",
+          "value": "fintech@cgcvc.com",
+          "source_id": "china_contact"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书投递 · 生命科学",
+          "value": "life3.0@cgcvc.com",
+          "source_id": "china_contact"
+        },
+        {
+          "kind": "address",
+          "label": "北京办公地址",
+          "value": "北京市朝阳区凤凰置业大厦 F 座 1807 室，邮编 100028",
+          "source_id": "china_address"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "china_home",
+          "source_url": "http://www.cgcvc.com/",
+          "source_title": "华创资本 | China Growth Capital",
+          "source_content_hash": "69bb5b3a635472a2775b11577c9bee3e40312587306f25f02fc01cf66ae5c9f0",
+          "quote": "自2006年成立伊始，华创资本一直专注于新金融、新实业、新消费领域的早期投资。",
+          "quote_hash": "6974bf2705f681aa6fd4ac5dc678f57696ffbb7a13aeace8c9ae5a38bc6efeb3"
+        },
+        {
+          "source_id": "china_about",
+          "source_url": "http://www.cgcvc.com/about",
+          "source_title": "关于华创_华创资本 | China Growth Capital",
+          "source_content_hash": "9734e4ef10b78e39948fed55fa97d206f5f483ff879e915673f1d52a434255bc",
+          "quote": "累计管理近百亿资产，相继在前沿科技与生命科学领域投资了超过200家公司。",
+          "quote_hash": "9b91874802c3202c82bdde668dee996e5a336b838cf82d7b12b3e97f489efc76"
+        },
+        {
+          "source_id": "china_team",
+          "source_url": "http://www.cgcvc.com/team",
+          "source_title": "管理团队_华创资本 | China Growth Capital",
+          "source_content_hash": "809aa8462aadc462ec8a51d3023b84bb1a0290845b51787cfa57e53eeff6adb9",
+          "quote": "管理团队 投资团队 创业合伙人与顾问 吴海燕 熊伟铭 王道平 谢佳 卢汉杰 陈欢",
+          "quote_hash": "7485186445593ecf4ab7d7a4a59faa39d1ff0b343961e9cd1e84c89cbd975d48"
+        },
+        {
+          "source_id": "china_wu",
+          "source_url": "http://www.cgcvc.com/Index/team/id/81",
+          "source_title": "吴海燕 | 华创资本",
+          "source_content_hash": "840357a4dd863eb838d52893221de48aa45bef788f2bc532e6d2eb76d8c2defa",
+          "quote": "华创资本管理合伙人，负责投资业务和基金管理工作，并牵头负责企业软件和金融科技领域的投资。",
+          "quote_hash": "9bcb84967417097df5ab6cff245358001a638beaa431db0fccfef1fef0c4951d"
+        },
+        {
+          "source_id": "china_wayne",
+          "source_url": "http://www.cgcvc.com/Index/team/id/80",
+          "source_title": "熊伟铭 | 华创资本",
+          "source_content_hash": "695f205ad8f41b5d8bd64c73c7cdf3c9b67706f6c78d536f24bd87c1c37bb6f5",
+          "quote": "华创资本创始合伙人 熊伟铭 (Wayne) 在华创主导技术领域的投资。",
+          "quote_hash": "368829232f78f34c44ec67ce2d2f642e7ce02b72e0be2e8219acd707baf90744"
+        },
+        {
+          "source_id": "china_wang",
+          "source_url": "http://www.cgcvc.com/Index/team/id/79",
+          "source_title": "王道平 | 华创资本",
+          "source_content_hash": "8529f47f79776bf05a146a53bff36025f54021228d8f5f0f4cafdee4d99fc598",
+          "quote": "华创资本创始合伙人 王道平负责移动互联网/社交、B2B线上交易平台等领域的投资。",
+          "quote_hash": "151a5718b2d7956f85b670dcc3cfc78f4d97687278b7f4142cd93aa5e57cb060"
+        },
+        {
+          "source_id": "china_contact",
+          "source_url": "http://www.cgcvc.com/contact",
+          "source_title": "联系我们_华创资本 | China Growth Capital",
+          "source_content_hash": "c4e8476d592154ee2f3b3d6ff0a47e8bb52fabcf0ea85193be011fb1b96bb796",
+          "quote": "发送邮箱：enterprise@cgcvc.com deeptech@cgcvc.com consumer@cgcvc.com fintech@cgcvc.com life3.0@cgcvc.com",
+          "quote_hash": "d64e5db8dc5eeeb099faed0877a5e4cb2f84585bda1195d57e86518037907357"
+        },
+        {
+          "source_id": "china_address",
+          "source_url": "http://www.cgcvc.com/contact",
+          "source_title": "联系我们_华创资本 | China Growth Capital",
+          "source_content_hash": "c4e8476d592154ee2f3b3d6ff0a47e8bb52fabcf0ea85193be011fb1b96bb796",
+          "quote": "北京市朝阳区凤凰置业大厦 F座1807室 邮编：100028",
+          "quote_hash": "49e8649b6d568b806cd58bcef8e5caa86261b3be28bdb08da20ddea72ec5cf7c"
+        },
+        {
+          "source_id": "china_mech",
+          "source_url": "http://www.cgcvc.com/",
+          "source_title": "华创资本 | China Growth Capital",
+          "source_content_hash": "69bb5b3a635472a2775b11577c9bee3e40312587306f25f02fc01cf66ae5c9f0",
+          "quote": "华创资本早在2017年初独家领投了梅卡曼德的Pre-A轮融资，并在后续轮次中持续加注。",
+          "quote_hash": "e53cbf1d368fde2ae79f1c321cd27535923f4c8ad0b43962839e9ba4c9d244d0"
+        },
         {
           "source_id": "FISRC-340182e8dcb597a3",
           "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
@@ -153,7 +372,7 @@
           "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

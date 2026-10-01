@@ -57,9 +57,9 @@
     "name": "博将资本",
     "aliases": [],
     "canonical_entity_id": null,
-    "investor_kind": "unverified_investor",
-    "investor_kind_label": "投资方（类型待核验）",
-    "classification_confidence": "unverified",
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
     "historical_or_ambiguous_count": 0,
@@ -138,21 +138,111 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "博将资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据博将资本官网公司介绍、团队和联系方式页面，以及拓深科技融资报道整理；公司规模与负责人项目经历均标注为机构自述。",
+      "summary": "博将资本是面向中国高科技企业的私募投资机构，官网列出的投资方向包括半导体、人工智能、高端装备、新能源与新材料、生物医药等。官网介绍其董事长兼 CEO 罗阗拥有逾 20 年投资和基金管理经验，并列出其参与或主导的多个项目经历。官网称管理规模超过 100 亿元，但页面没有标注统计时点，因此本简介不把该数字作为当前 AUM。2026 年 5 月，博将资本作为老股东继续追加投资拓深科技新一轮融资。官网公布项目联系邮箱、电话及杭州总部办公地址。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网介绍博将资本重点关注半导体、人工智能、高端装备、新能源与新材料、生物医药等高科技赛道。",
+          "source_id": "bojiang_about"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网披露管理规模",
+          "value": "公司介绍页面自述管理规模超过人民币 100 亿元，但未提供截至日期；该数值仅作官网历史披露，不代表当前规模。",
+          "source_id": "bojiang_about"
+        },
+        {
+          "field": "leadership",
+          "label": "创始团队与经验",
+          "value": "官网列罗阗为董事长兼 CEO，并称其拥有 20 年以上投资与基金管理经验，负责公司运营、管理及业务发展。",
+          "source_id": "bojiang_team"
+        },
+        {
+          "field": "selected_investment_history",
+          "label": "负责人简介所列项目经历",
+          "value": "博将官网在罗阗个人简介中列出微牛、极米科技、诺比侃、中科时代、地上铁、科泰思、法睿兰达和异格科技等项目。此为个人履历中的项目列表，不应视作博将全体基金的完整组合或当前持仓。",
+          "source_id": "bojiang_team"
+        },
+        {
+          "field": "investment_contact",
+          "label": "项目联系邮箱与电话",
+          "value": "官网联系页向项目方公布 bp@bojcf.com，电话 4008-938-333。",
+          "source_id": "bojiang_contact"
+        },
+        {
+          "field": "office_address",
+          "label": "官网公布办公地址",
+          "value": "杭州市上城区新业路 200 号华峰国际 35 楼；这是官网联系页所列办公联系地址，未据此认定为工商注册地址。",
+          "source_id": "bojiang_contact"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：拓深科技 · 轮次未披露 · 2026-05-19 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "2026-05-19，拓深科技数亿元新一轮融资由多家机构联合投资，报道指出老股东博将资本继续追加投资；披露金额为公司本轮区间估计，并非博将单家投资金额。",
           "source_id": "FISRC-1b3adf614ab55007"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "博将资本",
+          "url": "https://www.bojcf.com/h-col-131.html",
+          "source_id": "bojiang_about"
+        },
+        {
+          "kind": "email",
+          "label": "官网项目联系邮箱",
+          "value": "bp@bojcf.com",
+          "url": "https://www.bojcf.com/h-col-102.html",
+          "source_id": "bojiang_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "官网联系电话",
+          "value": "4008-938-333",
+          "url": "https://www.bojcf.com/h-col-102.html",
+          "source_id": "bojiang_contact"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示总部办公地址",
+          "value": "杭州市上城区新业路 200 号华峰国际 35 楼",
+          "url": "https://www.bojcf.com/h-col-102.html",
+          "source_id": "bojiang_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bojiang_about",
+          "source_url": "https://www.bojcf.com/h-col-131.html",
+          "source_title": "博将资本 - 公司介绍",
+          "source_content_hash": "a6a1206cebabd6736bbe658bc828ca4b4b06afb0aa7f8801b387a2522b7a4d61",
+          "quote": "服务中国高科技企业",
+          "quote_hash": "8261d1638f0b0f60ae08cf9f771a059059200ea083fd20e1fa7bc0cfeda719ca"
+        },
+        {
+          "source_id": "bojiang_team",
+          "source_url": "https://www.bojcf.com/h-col-103.html",
+          "source_title": "博将资本 - 管理团队",
+          "source_content_hash": "eb2125c48643924ee6ade8de0b38aad8d5e9134fd744127361225c51e6db2cdb",
+          "quote": "罗阗 董事长兼 CEO",
+          "quote_hash": "f2b1b1414193f4e76a24daa077e57253dfad4bf3c2c9412722ce54e3652246db"
+        },
+        {
+          "source_id": "bojiang_contact",
+          "source_url": "https://www.bojcf.com/h-col-102.html",
+          "source_title": "博将资本 - 联系我们",
+          "source_content_hash": "aa4e09e1b7351b6722780b5e2ee711d97a1a8867517815e29ab5de8e470e5a62",
+          "quote": "bp@bojcf.com",
+          "quote_hash": "0c569e252d37ec57cbb65774140beecdaa71be8379e53ae0b9c51130637d59e4"
+        },
         {
           "source_id": "FISRC-1b3adf614ab55007",
           "source_url": "https://news.pedaily.cn/202605/564066.shtml",
@@ -162,7 +252,7 @@
           "quote_hash": "fd8e6d4e04112c7e2791d613e0ea674a3ac7538a03d1983f71e57216ca8225da"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-01"
     }
   }
 }

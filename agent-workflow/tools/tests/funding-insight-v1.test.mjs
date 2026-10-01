@@ -1210,6 +1210,38 @@ test("投资机构库只从融资卡精确投资方证据生成可追溯活动",
   assert.equal(registry.institutions[0].activities[0].evidence[0].quote, evidence()[0].quote);
 });
 
+test("historical institution activity does not inherit the current round amount, date, or round", () => {
+  const first = validCard();
+  first.financing.other_round_investors = [{
+    name: "Two Bear Capital",
+    role: "2022年7月融资领投方",
+    evidence_refs: evidence("SRC-ARCH-2022", "Arch Systems announced $15M in funding led by Two Bear Capital."),
+  }];
+  const laterDisclosure = structuredClone(first);
+  laterDisclosure.funding_insight_id = "FI-LATER-DISCLOSURE";
+  laterDisclosure.triggered_by_event_id = "EV-LATER-DISCLOSURE";
+  laterDisclosure.source_event_ids = ["EV-LATER-DISCLOSURE"];
+  laterDisclosure.financing.round = "成长轮";
+  laterDisclosure.financing.round_code = "growth";
+  laterDisclosure.financing.amount = "$30 Million";
+  laterDisclosure.financing.amount_original = "$30 Million";
+  laterDisclosure.financing.amount_normalized = { currency: "USD", value: 30000000, min_value: null, max_value: null, unit: "base", status: "exact", display_zh: "3000 万美元" };
+  laterDisclosure.financing.announced_at = "2026-09-15";
+
+  const registry = buildInvestmentInstitutionRegistry([first, laterDisclosure], {}, first.published_at);
+  const investor = registry.institutions.find((item) => item.name === "Two Bear Capital");
+  assert.ok(investor);
+  assert.equal(investor.current_round_count, 0);
+  assert.equal(investor.historical_or_ambiguous_count, 1);
+  assert.equal(investor.activities.length, 1);
+  assert.equal(investor.activities[0].announced_at, "2022-07");
+  assert.equal(investor.activities[0].round, "历史轮次未披露");
+  assert.equal(investor.activities[0].round_code, "undisclosed");
+  assert.equal(investor.activities[0].amount_original, "");
+  assert.equal(investor.activities[0].amount_normalized, null);
+  assert.deepEqual(investor.activities[0].event_ids.sort(), ["EV-1", "EV-LATER-DISCLOSURE"]);
+});
+
 test("投资机构活动按同轮次金额和精确引文去重并保留全部事件", () => {
   const first = validCard();
   const duplicate = validCard();
@@ -1319,7 +1351,7 @@ test("Y Combinator 保持稳定公开 ID 并明确归类为投资机构", () => 
 });
 
 test("有官网核验的机构名称保持既有 ID 并从待核验分类提升为投资机构", () => {
-  const names = ["DST Global", "GIC", "襄禾资本", "云启资本", "普华资本", "孚腾资本", "国中资本", "BoxGroup", "Blackstone", "华业天成", "顺禧基金", "L2F光源创业者基金", "复星创富", "复星锐正", "元璟资本", "Benchmark", "Greycroft", "Jane Street", "Tiger Global", "Headline"];
+  const names = ["DST Global", "GIC", "襄禾资本", "云启资本", "普华资本", "孚腾资本", "国中资本", "BoxGroup", "Blackstone", "华业天成", "顺禧基金", "L2F光源创业者基金", "复星创富", "复星锐正", "元璟资本", "360 ONE Asset", "博裕资本", "博将资本", "中信建投资本", "Benchmark", "Greycroft", "Jane Street", "Tiger Global", "Headline"];
   const expectedIds = [
     "INV-8f3811e8a6b13c",
     "INV-517883c02d5d50",
@@ -1336,6 +1368,10 @@ test("有官网核验的机构名称保持既有 ID 并从待核验分类提升�
     "INV-cd8857f54a42ce",
     "INV-40ff3cc9cefa0c",
     "INV-0281640da2df9b",
+    "INV-166f5b2b31cae2",
+    "INV-33f1eff797e7b1",
+    "INV-3ef3147899c8f7",
+    "INV-724d32d633006c",
     "INV-1996308273c587",
     "INV-ac2ec77dd2b7a9",
     "INV-cbf3e624e55b8f",

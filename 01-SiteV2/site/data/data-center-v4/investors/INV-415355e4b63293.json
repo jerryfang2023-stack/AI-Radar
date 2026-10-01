@@ -155,23 +155,111 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Arm Holding plc 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本库融资记录写作“Arm Holding plc”；Arm 官方 2026 年报使用法定名称 Arm Holdings plc，相关融资报道分别写作 Arm Holding plc 与 Arm。这里保留数据源名称变体，不推断其为独立基金或完整投资组合。Olix 报道对轮次存在 Series B / Series C 标注差异，档案按本库交易记录列示并保留来源差异。",
+      "summary": "Arm Holding plc 是本库融资记录中的企业投资方名称。Arm Holdings plc 2026 年报将集团主营业务描述为 CPU、GPU、系统 IP、计算子系统及相关软件和工具的授权、营销与研发；截至 2026 年 3 月 31 日，集团披露投资合计 3.29 亿美元，其中包括早期非上市企业股权与经资本基金间接持有的投资。该数额是 Arm 集团合并财务报表中的投资资产，不是单独创投基金规模或基金回报。年报列出的投资案例包括 Kigen、NeuReality、Positron 等。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "Arm Holdings plc 年报称，集团主营业务包括 CPU 设计 IP、GPU IP、系统 IP 和计算子系统的授权、营销、研究与开发。",
+          "source_id": "arm_fy26_business"
+        },
+        {
+          "field": "investment_assets_fy2026",
+          "label": "集团投资资产（截至 2026-03-31）",
+          "value": "FY2026 年报列示集团投资合计 3.29 亿美元：上市股份 9600 万美元、非上市股份 2.26 亿美元、其他实体贷款 700 万美元。该数据为集团会计账面投资，不等同独立基金 AUM、组合回报或 Arm 对任一公司的单笔出资额。",
+          "source_id": "arm_fy26_investments"
+        },
+        {
+          "field": "investment_focus",
+          "label": "非上市投资类型",
+          "value": "Arm 年报称非上市股份投资可能由集团直接持有，或经资本基金间接持有；对象为开展研发活动的非上市早期发展企业。",
+          "source_id": "arm_fy26_unlisted"
+        },
+        {
+          "field": "selected_investments",
+          "label": "年报列示的投资案例",
+          "value": "FY2026 年报股权投资清单列有 Kigen、NeuReality 与 Positron 等机构；这是年报摘录的代表性条目，不应视作完整投资组合。",
+          "source_id": "arm_fy26_examples"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 本轮参投 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资披露案例：Olix Computing Ltd. 于 2026-08-03 公布 3.12 亿美元融资；SiliconANGLE 将该轮标为 Series C，并报道 Arm Holding plc 参与。3.12 亿美元为整轮融资额，Arm 单独出资额未披露。",
           "source_id": "FISRC-6e2e57f27c26fd6b"
         },
         {
-          "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 本轮参投 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "同一笔 Olix 融资，TechTimes 报道将轮次标为 Series B，并写作 Arm 参与；与 SiliconANGLE 的 Series C 标注不一致。本库交易活动记录仍列 B 轮，需保留来源差异。该案例不是完整投资组合或业绩统计。",
           "source_id": "FISRC-a6c18c7d2adec363"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "英国剑桥全球总部",
+          "value": "110 Fulbourn Road, Cambridge, CB1 9NJ, United Kingdom",
+          "url": "https://www.arm.com/company/offices",
+          "source_id": "arm_office_address"
+        },
+        {
+          "kind": "phone",
+          "label": "英国剑桥全球总部总机",
+          "value": "+44 (1223) 400 400",
+          "url": "https://www.arm.com/company/offices",
+          "source_id": "arm_office_phone"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "arm_fy26_business",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/armukconsolidatedannualr.htm",
+          "source_title": "Arm Holdings plc FY2026 Annual Report",
+          "source_content_hash": "8817a5d2872ca32c85a003d1ac25e2ab7ffdc0673f0393db823678bb43a76e7b",
+          "quote": "the licensing, marketing, research and development of CPU design intellectual property ('IP'), graphics processing unit IP, systems IP, compute subsystems ('CSS')",
+          "quote_hash": "665622ec3b629eb8d849febe0c822e4de9be4cba5bcef9a447b2871e14974eba"
+        },
+        {
+          "source_id": "arm_fy26_investments",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/armukconsolidatedannualr.htm",
+          "source_title": "Arm Holdings plc FY2026 Annual Report",
+          "source_content_hash": "8817a5d2872ca32c85a003d1ac25e2ab7ffdc0673f0393db823678bb43a76e7b",
+          "quote": "2026 2025 $m $m Investments in equity instruments designated as FVTOCI Listed shares 96 98 Unlisted shares 226 223 Unlisted shares held as current1 — 286 322 607 Loans receivable carried at amortised cost Loans to other entities 7 7 Total investments 329 614",
+          "quote_hash": "065430c6e4a5082e059ec691b9d42efe2462a3ce92be78bd577d3c51d5cbfb05"
+        },
+        {
+          "source_id": "arm_fy26_unlisted",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/armukconsolidatedannualr.htm",
+          "source_title": "Arm Holdings plc FY2026 Annual Report",
+          "source_content_hash": "8817a5d2872ca32c85a003d1ac25e2ab7ffdc0673f0393db823678bb43a76e7b",
+          "quote": "Unlisted shares represent either direct or indirect, through a capital fund, investments in unlisted early-stage development enterprises",
+          "quote_hash": "027b6740c02c9e544e15d1f6a998232f24964d64b224091886b6cd4de770b1a7"
+        },
+        {
+          "source_id": "arm_fy26_examples",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1973239/000197323926000135/armukconsolidatedannualr.htm",
+          "source_title": "Arm Holdings plc FY2026 Annual Report",
+          "source_content_hash": "8817a5d2872ca32c85a003d1ac25e2ab7ffdc0673f0393db823678bb43a76e7b",
+          "quote": "Kigen (UK) Limited Maverick Silicon Fund, LP NeuReality Limited Positron AI, Inc.",
+          "quote_hash": "3b8ed1c8dc098c0b1ef6cacce3ec6821a68136e72dd21147fbc37d80bf2b790a"
+        },
+        {
+          "source_id": "arm_office_address",
+          "source_url": "https://www.arm.com/company/offices",
+          "source_title": "Arm Worldwide Office – Arm",
+          "source_content_hash": "f38e2d87a9caceb4a0789097035edc0b119a27ee2c1cbab42014a9aa6df36e3c",
+          "quote": "Global Headquarters: 110 Fulbourn Road, Cambridge, CB1 9NJ, United Kingdom",
+          "quote_hash": "48bc231a7bfa56abc8e10430e2c9a274f298f1d6a665d73323629c57aa921d70"
+        },
+        {
+          "source_id": "arm_office_phone",
+          "source_url": "https://www.arm.com/company/offices",
+          "source_title": "Arm Worldwide Office – Arm",
+          "source_content_hash": "f38e2d87a9caceb4a0789097035edc0b119a27ee2c1cbab42014a9aa6df36e3c",
+          "quote": "Tel: +44 (1223) 400 400 (Reception)",
+          "quote_hash": "21a062df38554bce2002fc6d7a1219324cd516d844ab2e2dd95ee048c2e783ea"
+        },
         {
           "source_id": "FISRC-6e2e57f27c26fd6b",
           "source_url": "https://siliconangle.com/2026/08/03/netflix-co-founder-backs-312m-round-optical-inference-appliance-maker-olix/",
@@ -189,7 +277,7 @@
           "quote_hash": "a7fa871888210b71435b8557a41984a31510b8aa1ed30c0033b5014e5149109b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

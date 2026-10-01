@@ -133,19 +133,73 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Abhinav Gupta 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "身份与现任职务分别以 Carnegie Mellon University Robotics Institute 与 Skild AI 官方资料核验；研究方向依据校方师资页。融资记录仅作已披露参投案例，不代表完整投资组合或回报表现。",
+      "summary": "Abhinav Gupta 是机器人与计算机视觉研究者、Carnegie Mellon University Robotics Institute 教授，同时为 Skild AI 联合创办人兼总裁。校方资料介绍其研究涉及场景理解、视觉与语言学习及机器人基础方向。融资记录将他列为 Sycamore 2026 年种子轮天使投资人；该记录不代表完整投资组合。",
       "facts": [],
       "milestones": [],
+      "current_roles": [
+        {
+          "title": "教授",
+          "organization": "Carnegie Mellon University Robotics Institute",
+          "source_id": "abhinav_cmu_title"
+        },
+        {
+          "title": "联合创办人兼总裁",
+          "organization": "Skild AI",
+          "source_id": "abhinav_skild"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Carnegie Mellon University Robotics Institute",
+          "title": "教授",
+          "period": "现任；校方页面于 2026-09-28 核验",
+          "description": "研究包括场景理解、视觉表征与推理、视觉语言学习和机器人基础。",
+          "source_id": "abhinav_cmu_title"
+        },
+        {
+          "organization": "Skild AI",
+          "title": "联合创办人兼总裁",
+          "period": "Skild AI 于 2026-09-10 发布的署名资料确认",
+          "description": "参与创立机器人基础模型公司 Skild AI，并担任总裁。",
+          "source_id": "abhinav_skild"
+        }
+      ],
+      "education": [],
+      "experience_summary": "学术工作聚焦计算机视觉、场景理解和机器人学习，同时参与机器人基础模型企业 Skild AI 的创立与经营。当前公开资料未核实其学位信息，因此不补录教育经历。",
       "track_record": [
         {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资记录将其列为 Sycamore 2026 年种子轮天使投资人；这是本库可追溯的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "abhinav_cmu",
+          "source_url": "https://www.ri.cmu.edu/ri-faculty/abhinav-gupta/",
+          "source_title": "Abhinav Gupta | The Robotics Institute at Carnegie Mellon University",
+          "source_content_hash": "85dfd164b341ef75a6fe8712479f4d7665afe2c3874765c031372337dbb59819",
+          "quote": "How do we represent the visual world? My research focuses on developing representation and reasoning approaches for deeper understanding of the scene.",
+          "quote_hash": "83e9b6bef579e2ed27f5cdb9e888c22b7e974e3521b72f1eb490372ff231b6e7"
+        },
+        {
+          "source_id": "abhinav_cmu_title",
+          "source_url": "https://www.ri.cmu.edu/ri-faculty/abhinav-gupta/",
+          "source_title": "Abhinav Gupta | The Robotics Institute at Carnegie Mellon University",
+          "source_content_hash": "85dfd164b341ef75a6fe8712479f4d7665afe2c3874765c031372337dbb59819",
+          "quote": "Professor",
+          "quote_hash": "6511f4dadcda5bfb2b28869f8cf34d36866ce01a08c0f1eb432b8ea4fa70e75a"
+        },
+        {
+          "source_id": "abhinav_skild",
+          "source_url": "https://skild.ai/blogs/skild-crosses-100m-arr",
+          "source_title": "The Hidden Pillar of Robotics | Skild AI",
+          "source_content_hash": "c30a5ccf048e805fc1794fed81fe05ca8c8c6a64af1f3ffcbfbe362e10c772db",
+          "quote": "Abhinav Gupta Co-founder and President, Skild AI",
+          "quote_hash": "5db2440e857039aeaa535d8503fe0366eafc117009bdc8223abe2ee5f7f183ba"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -155,7 +209,7 @@
           "quote_hash": "39e6aeea9151ca4bf405de4b357c5ad4b00b0742ce9b6bf0bdfcc92bacf77fad"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

@@ -137,21 +137,145 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "英伟达 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "英伟达（NVIDIA）以企业战略投资、风险投资部门 NVentures 和初创生态支持等多条路径支持 AI 与加速计算生态。官方2023年文章称，企业投资部门当年已宣布14项投资，NVentures当时累计披露19项投资；初创加速计划及创投联盟提供技术支持与投资人对接，应与直接股权投资区分。",
+      "facts": [
+        {
+          "field": "investment_structure",
+          "label": "投资与创业支持路径",
+          "value": [
+            "NVIDIA企业战略投资",
+            "风险投资部门NVentures",
+            "NVIDIA初创加速计划及创投联盟（生态支持和投资对接，不等同于直接投资）"
+          ],
+          "source_id": "nvidia_structure"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官方披露投资方向",
+          "value": "与NVIDIA业务和技术生态相关的AI、加速计算及企业应用；NVentures涵盖医疗、制造等关键垂直领域。",
+          "source_id": "nvidia_ventures"
+        },
+        {
+          "field": "reported_investments",
+          "label": "企业投资部门披露数量",
+          "value": "截至2023年12月官方文章发布时，2023年以来宣布14项投资。",
+          "source_id": "nvidia_corporate"
+        },
+        {
+          "field": "reported_investments",
+          "label": "NVentures披露数量",
+          "value": "截至2023年12月官方文章发布时，累计披露19项投资。",
+          "source_id": "nvidia_ventures"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "NVIDIA官方文章称初创加速计划于2016年启动；它提供技术和市场支持，不应计作投资事件。",
+          "source_id": "nvidia_vca"
+        },
+        {
+          "date": "2023-12-11",
+          "description": "官方文章总结企业战略投资与NVentures投资路径，并分别披露2023年以来的投资数量。",
+          "source_id": "nvidia_structure"
+        }
+      ],
       "track_record": [
+        {
+          "description": "NVIDIA官方文章列出的企业战略投资案例包括Ayar Labs、Hugging Face、Databricks和Cohere等；这是2023年文章的选例，不代表当前完整组合。",
+          "source_id": "nvidia_corporate_cases"
+        },
+        {
+          "description": "NVentures官方文章列举Genesis Therapeutics、Inceptive、Terray、Charm、Evozyne、Generate、Superluminal、Machina Labs和Seurat Technologies等投资案例。",
+          "source_id": "nvidia_ventures_cases"
+        },
         {
           "description": "融资来源记录：OpenAI · 基础设施融资 · 2026-02-28 · 本轮参投 · 1100亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b4ba4f68908fa080"
         }
       ],
-      "contacts": [],
+      "career": [
+        {
+          "organization": "NVIDIA NVentures",
+          "title": "Sid Siddeek：风险投资部门负责人",
+          "period": "NVIDIA官方文章发表于2023-12-11时",
+          "description": "仅确认官方文章发布时的职务；未据此推断其2026年仍在任。",
+          "source_id": "nvidia_structure"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "创投联盟及投资组合企业支持说明",
+          "value": "NVIDIA Venture Capital Alliance",
+          "url": "https://www.nvidia.cn/startups/venture-capital/",
+          "source_id": "nvidia_vca"
+        },
+        {
+          "kind": "email",
+          "label": "创投联盟咨询（非直接融资申请邮箱）",
+          "value": "inception_cn@nvidia.com",
+          "url": "https://www.nvidia.cn/startups/venture-capital/",
+          "source_id": "nvidia_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nvidia_structure",
+          "source_url": "https://blogs.nvidia.cn/blog/nvidia-investments/",
+          "source_title": "与创新者并肩前行，NVIDIA 通过投资加速 AI 变革 - NVIDIA 英伟达博客",
+          "source_content_hash": "16ba203abe7d8793f2bc1838a1c2dbb08fc2d73022959399780d6e712e87d62e",
+          "quote": "NVIDIA 以三种方式投资于生态系统，以推动由加速计算带来的转型：由 Bhagwati 负责的 NVIDIA 企业投资；通过 NVIDIA 的风险投资部门 NVentures 进行投资（由 Siddeek 领导）；以及通过 NVIDIA 初创加速计划为初创公司提供支持，并帮助其与风投对接。",
+          "quote_hash": "f05a39ec7debfe8b5c835e97ca1d970c8d094b0e09c293936facc32b977f41b0"
+        },
+        {
+          "source_id": "nvidia_corporate",
+          "source_url": "https://blogs.nvidia.cn/blog/nvidia-investments/",
+          "source_title": "与创新者并肩前行，NVIDIA 通过投资加速 AI 变革 - NVIDIA 英伟达博客",
+          "source_content_hash": "16ba203abe7d8793f2bc1838a1c2dbb08fc2d73022959399780d6e712e87d62e",
+          "quote": "NVIDIA 的企业投资部门专注于战略合作。这些合作不仅促进了联合创新，强化了 NVIDIA 平台，还拓展了企业生态。自 2023 年初以来，该部门已宣布开展了 14 项投资。",
+          "quote_hash": "98867cef67871ee9f3b662104ad6636ca376d6d75ef1e491ad69d329dba6a893"
+        },
+        {
+          "source_id": "nvidia_ventures",
+          "source_url": "https://blogs.nvidia.cn/blog/nvidia-investments/",
+          "source_title": "与创新者并肩前行，NVIDIA 通过投资加速 AI 变革 - NVIDIA 英伟达博客",
+          "source_content_hash": "16ba203abe7d8793f2bc1838a1c2dbb08fc2d73022959399780d6e712e87d62e",
+          "quote": "迄今为止，NVentures 已在医疗、制造业等其他关键垂直领域的企业中，共进行了 19 项投资。",
+          "quote_hash": "f920a047296c787d47fb4c7122913dba00e260efe2de37059bf7a77329ebf823"
+        },
+        {
+          "source_id": "nvidia_corporate_cases",
+          "source_url": "https://blogs.nvidia.cn/blog/nvidia-investments/",
+          "source_title": "与创新者并肩前行，NVIDIA 通过投资加速 AI 变革 - NVIDIA 英伟达博客",
+          "source_content_hash": "16ba203abe7d8793f2bc1838a1c2dbb08fc2d73022959399780d6e712e87d62e",
+          "quote": "投资组合还包括新一代的企业解决方案。Databricks 提供业界领先的机器学习数据平台，Cohere 提供通过 AI 实现的企业自动化。",
+          "quote_hash": "be1f3c5bf9e77c4f97230fb408ce0185ceb6f472b2bae21d099e612ab094a1ff"
+        },
+        {
+          "source_id": "nvidia_ventures_cases",
+          "source_url": "https://blogs.nvidia.cn/blog/nvidia-investments/",
+          "source_title": "与创新者并肩前行，NVIDIA 通过投资加速 AI 变革 - NVIDIA 英伟达博客",
+          "source_content_hash": "16ba203abe7d8793f2bc1838a1c2dbb08fc2d73022959399780d6e712e87d62e",
+          "quote": "助力推动药物研发变革的投资：Genesis Therapeutics、Inceptive、Terray、Charm、Evozyne、Generate、Superluminal",
+          "quote_hash": "6efab4fefdb8ed2c1e9ca81f2ec5774060f62e1eee2a502d76f2a8d14a634a49"
+        },
+        {
+          "source_id": "nvidia_vca",
+          "source_url": "https://www.nvidia.cn/startups/venture-capital/",
+          "source_title": "面向投资组合的创投联盟 - NVIDIA",
+          "source_content_hash": "744e73fea5574634e87349e97ed22e8908cb3c66d9b3a1376aa3a37b137599df",
+          "quote": "NVIDIA 创投联盟是 NVIDIA 与全球投资者之间的一项合作计划，聚焦应用或计划应用深度学习，机器学习，数据科学以及 CUDA，DOCA，Omniverse 等 NVIDIA 相关技术。",
+          "quote_hash": "658367e64b9071b20b411ce8718e3aa93f03f8dc55193a5e63a0a3874fc9349a"
+        },
+        {
+          "source_id": "nvidia_contact",
+          "source_url": "https://www.nvidia.cn/startups/venture-capital/",
+          "source_title": "面向投资组合的创投联盟 - NVIDIA",
+          "source_content_hash": "744e73fea5574634e87349e97ed22e8908cb3c66d9b3a1376aa3a37b137599df",
+          "quote": "如有问题，详询 inception_cn@nvidia.com",
+          "quote_hash": "bc3bfe881abfd8efd08e1c9ebc90d8c05578037f305ffe4a0dc22595477e179d"
+        },
         {
           "source_id": "FISRC-b4ba4f68908fa080",
           "source_url": "https://news.pedaily.cn/202602/561239.shtml",
@@ -161,7 +285,11 @@
           "quote_hash": "0f78fe02db1d1dc54accf6eb05709a96767f7097fb31120c1c846815801aaa26"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案针对英伟达这一企业投资方汇总官方公开资料。官方文章将企业投资、NVentures风险投资和初创加速/创投联盟区分为不同路径；2023年数量均按文章发布日期标注，不代表2026年当前投资规模。NVIDIA Inception邮箱用于创投联盟咨询，不是NVentures项目递交地址。"
     }
   }
 }

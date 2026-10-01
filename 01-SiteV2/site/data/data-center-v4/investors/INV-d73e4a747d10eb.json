@@ -129,21 +129,143 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "拉尔夫创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "南京拉尔夫创业投资有限公司于2016年成立，扎根南京、面向全国，主要投资种子、天使、Pre-A及A轮项目，关注TMT、人工智能、产业互联网、消费升级和医疗健康。创始合伙人陈冬华的公开履历包括创办科技企业、投资互联网与科技企业，以及电子商务运营、产品营销、财务咨询和企业战略经验。南京大学2026年报道提到，该机构十年间举办150多场科创金融活动、服务800多家企业；该数据为新闻报道口径。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "机构全称",
+          "value": "南京拉尔夫创业投资有限公司",
+          "source_id": "ralph_founder"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2016",
+          "source_id": "ralph_strategy"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "种子轮",
+            "天使轮",
+            "Pre-A轮",
+            "A轮"
+          ],
+          "source_id": "ralph_strategy"
+        },
+        {
+          "field": "sectors",
+          "label": "投资领域",
+          "value": [
+            "TMT",
+            "人工智能",
+            "产业互联网",
+            "消费升级",
+            "医疗健康"
+          ],
+          "source_id": "ralph_strategy"
+        },
+        {
+          "field": "market_regions",
+          "label": "主要市场",
+          "value": "扎根南京、立足江苏、面向全国",
+          "source_id": "ralph_strategy"
+        },
+        {
+          "field": "reported_activity",
+          "label": "截至2026年报道的服务数据",
+          "value": "举办150多场科创金融活动，服务企业800多家；来源为南京大学转载的新闻报道，未提供审计口径。",
+          "source_id": "ralph_activity"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "南京审计大学报道记载，拉尔夫创投于2016年成立。",
+          "source_id": "ralph_strategy"
+        },
+        {
+          "date": "2019",
+          "description": "创始合伙人陈冬华在南京审计大学创业讲座介绍机构阶段、投资领域和项目案例。",
+          "source_id": "ralph_strategy"
+        },
+        {
+          "date": "2026-05",
+          "description": "南京大学报道提及该机构深耕南京十年，举办150多场科创金融活动并服务800多家企业。",
+          "source_id": "ralph_activity"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：因克斯 · B轮 · 2026-09-15 · 天使轮跟投 · 超3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "创始合伙人2019年在南京审计大学列举的项目案例包括美篇、图鸭科技、时柒伍科技、发发精英和蓝职培；该报道称这些项目后续获得A轮或B轮融资。该信息是历史案例选录，不代表完整组合或拉尔夫创投的投资回报。",
+          "source_id": "ralph_examples"
+        },
+        {
+          "description": "融资来源记录：因克斯 · 历史轮次未披露 · 天使轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-27fa748719e248c8"
         }
       ],
-      "contacts": [],
+      "career": [
+        {
+          "organization": "南京拉尔夫创业投资有限公司",
+          "title": "陈冬华：创始合伙人",
+          "period": "2019年南京审计大学活动报道时",
+          "description": "曾创立多家科技型企业并投资互联网、科技企业；经验覆盖电子商务运营、产品市场营销、财务咨询与企业战略建设。",
+          "source_id": "ralph_founder"
+        }
+      ],
+      "experience_summary": "机构画像主要依据2019年南京审计大学对创始合伙人陈冬华的活动报道，以及2026年南京大学关于南京科技金融服务驿站的报道。公开资料披露了早期投资阶段、行业方向、部分项目案例和服务企业数量，但未披露当前基金规模、完整组合、投资收益或完整管理团队。",
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "江苏省“创业江苏”种子成长营活动联系（活动报名联络，非一般融资申请渠道）",
+          "value": "张颜 · 17302599171",
+          "url": "https://sstf.jshisc.cn/dtzx/tzgg/291de473-16fc-4f5e-8111-9e2a5a15c7a8",
+          "source_id": "ralph_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ralph_strategy",
+          "source_url": "https://jw.nau.edu.cn/2019/1106/c8012a90749/page.htm",
+          "source_title": "【创业】南审创业沙龙·创业大讲坛——创咖谈创业（第5期）",
+          "source_content_hash": "a90ce79bb05fec71c4044f046adabda2accd99437a3566e5b17a217c8a02869b",
+          "quote": "拉尔夫创投成立于2016年，是一家扎根南京、立足江苏、面向全国的投资机构，主要在种子轮、天使轮、Pre-A轮和A轮阶段为创业者提供投资。投资领域主要是TMT、人工智能、产业互联网、消费升级、医疗健康等方面。",
+          "quote_hash": "4e06e3a08c44c9ba62bcae70ee7b744f8e6851305237dcfaeea26957b9048c47"
+        },
+        {
+          "source_id": "ralph_founder",
+          "source_url": "https://jw.nau.edu.cn/2019/1106/c8012a90749/page.htm",
+          "source_title": "【创业】南审创业沙龙·创业大讲坛——创咖谈创业（第5期）",
+          "source_content_hash": "a90ce79bb05fec71c4044f046adabda2accd99437a3566e5b17a217c8a02869b",
+          "quote": "陈冬华，拉尔夫创投公司创始合伙人，曾创立多家科技型企业，也投资了多家互联网企业和科技企业，同时在电子商务运营、产品市场营销、财务咨询指导、企业战略建设等方面也有丰厚的经验。",
+          "quote_hash": "1f70ea2634a0e65d0b79fb88646ff9b4c48e8edcad51629d4b251f77218dce5f"
+        },
+        {
+          "source_id": "ralph_examples",
+          "source_url": "https://jw.nau.edu.cn/2019/1106/c8012a90749/page.htm",
+          "source_title": "【创业】南审创业沙龙·创业大讲坛——创咖谈创业（第5期）",
+          "source_content_hash": "a90ce79bb05fec71c4044f046adabda2accd99437a3566e5b17a217c8a02869b",
+          "quote": "陈冬华也向在场师生展示了拉尔夫比较成功的几个案例，如：美篇、图鸭科技、时柒伍科技、发发精英、蓝职培等，这些项目最终都获得了A轮甚至B轮投资。",
+          "quote_hash": "b31ce485277c696c8afdabdad6b324ec20fc09adc78a145c9cadc2a108a68886"
+        },
+        {
+          "source_id": "ralph_activity",
+          "source_url": "https://www.nju.edu.cn/info/1056/469191.htm",
+          "source_title": "南京科技金融服务向成果转化一线延伸 - 南京大学",
+          "source_content_hash": "06575b271eaa63ca26e9ba1dabfae7c22aed923cdb293e921d4dea12068b0e42",
+          "quote": "拉尔夫创投深耕南京10年，先后举办150多场科创金融活动，服务企业800多家，促成一批优秀科技企业投融资。",
+          "quote_hash": "7af668bef58196be02cf7e7ad1ba380db59805418481a60291e8c832ea4fd949"
+        },
+        {
+          "source_id": "ralph_contact",
+          "source_url": "https://sstf.jshisc.cn/dtzx/tzgg/291de473-16fc-4f5e-8111-9e2a5a15c7a8",
+          "source_title": "关于举办第二期“创业江苏”种子成长营活动的通知 - 江苏省高新技术创业服务中心",
+          "source_content_hash": "8ea0cf078d9fdc0c9d76191dcc1f364cca1354a6beda433fc41255407ba41c30",
+          "quote": "南京拉尔夫创业投资有限公司 张颜 联系电话：17302599171",
+          "quote_hash": "0b06f01723d13aeccd0f3dd94f1b7f9fa6ad876c85de95fe14096c46a05bb52d"
+        },
         {
           "source_id": "FISRC-27fa748719e248c8",
           "source_url": "https://news.pedaily.cn/202410/541758.shtml",
@@ -153,7 +275,11 @@
           "quote_hash": "9b057e47ffd9f07a2728b237cc629e06d23738b100aa68985a095e8b0b066ab8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "成立时间、策略与创始人履历来自南京审计大学活动报道；服务量来自南京大学2026年新闻报道。电话只在政府主办的种子成长营报名通知中作为活动联络号码公布，已标明不是常设投资申请渠道。机构未公开基金规模、完整组合和业绩口径。"
     }
   }
 }

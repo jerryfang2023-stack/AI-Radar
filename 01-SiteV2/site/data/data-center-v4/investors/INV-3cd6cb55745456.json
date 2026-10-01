@@ -130,20 +130,90 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pieter Abbeel 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Pieter Abbeel 是 UC Berkeley 工程学教授、机器人学习实验室主任及 Berkeley AI Research（BAIR）实验室联合主任。他的研究覆盖机器人、机器学习与控制，并共同创办 Gradescope、Covariant 和 Berkeley Open Arms。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Jim Gray 工程讲席教授",
+          "organization": "University of California, Berkeley",
+          "source_id": "pieter_berkeley"
+        },
+        {
+          "title": "主任",
+          "organization": "Berkeley Robot Learning Lab",
+          "source_id": "pieter_berkeley"
+        },
+        {
+          "title": "联合主任",
+          "organization": "Berkeley Artificial Intelligence Research (BAIR)",
+          "source_id": "pieter_berkeley"
+        }
+      ],
+      "career": [
+        {
+          "organization": "University of California, Berkeley",
+          "title": "工业工程与运筹学、电子工程与计算机科学教授",
+          "period": "2017 年起；具体当前职称按官方主页",
+          "description": "UC Berkeley 官方页面列示其跨系教授职务及研究方向。",
+          "source_id": "pieter_berkeley"
+        },
+        {
+          "organization": "Gradescope",
+          "title": "共同创办人",
+          "period": "创办年份未在引用页列出",
+          "description": "官方教职简介列为其创办的教育 AI 公司。",
+          "source_id": "pieter_berkeley"
+        },
+        {
+          "organization": "Covariant",
+          "title": "共同创办人",
+          "period": "创办年份未在引用页列出",
+          "description": "官方教职简介列为其创办的仓储机器人自动化公司。",
+          "source_id": "pieter_berkeley"
+        },
+        {
+          "organization": "Berkeley Open Arms",
+          "title": "共同创办人",
+          "period": "创办年份未在引用页列出",
+          "description": "官方教职简介列为其创办的机器人项目/公司。",
+          "source_id": "pieter_berkeley"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stanford University",
+          "qualification": "计算机科学博士，2008 年。",
+          "source_id": "pieter_berkeley"
+        },
+        {
+          "institution": "KU Leuven",
+          "qualification": "电气工程学士与硕士。",
+          "source_id": "pieter_berkeley"
+        }
+      ],
+      "experience_summary": "研究及创业经历横跨机器人、强化学习、机器学习、控制，以及教育和仓储自动化产品。",
       "track_record": [
         {
-          "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 天使投资人 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "UC Berkeley 官方资料列示其获 ACM Prize in Computing（2021）和 IEEE Kiyo Tomiyasu Award（2022）等荣誉。",
+          "source_id": "pieter_berkeley"
+        },
+        {
+          "description": "媒体报道将 Pieter Abbeel 列为 Engram 融资中的天使投资人/顾问之一；本库将活动标为历史/模糊，9,800 万美元是整轮启动融资金额，未披露个人出资额。",
           "source_id": "FISRC-39d911c5038cb1c0"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "pieter_berkeley",
+          "source_url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/abbeel.html",
+          "source_title": "Pieter Abbeel | EECS at UC Berkeley",
+          "source_content_hash": "535d0dc433348bb50cb53addd910a6f638d35707281b2879e47ac079b483dd18",
+          "quote": "Professor Pieter Abbeel is Director of the Berkeley Robot Learning Lab and Co-Director of the Berkeley Artificial Intelligence (BAIR) Lab.",
+          "quote_hash": "feefb59aef2c9ab885e664b850c021e48e4fc55d38d2e88a56015e7e33fb5357"
+        },
         {
           "source_id": "FISRC-39d911c5038cb1c0",
           "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
@@ -153,7 +223,9 @@
           "quote_hash": "0d55de7b4abe19638784d0de22adafa09f434765b5800bbb477a4338bbd0abad"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "职务、教育、奖项和创业案例按 UC Berkeley 官方教职页面记录；Engram 融资报道的金额为整轮金额。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

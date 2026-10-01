@@ -130,21 +130,114 @@
       }
     ],
     "public_profile": {
+      "summary": "Concept Ventures 是专注 pre-seed 阶段的早期风险投资机构。当前官网称其首轮投资最高可达 150 万美元；机构历史页称其于 2018 年启动，前身为 RLC Ventures。创始合伙人 Reece Chowdhry 曾在 EY 工作并运营过三家软件创业公司。Archestra Seed 记录只确认 Concept 是返投的既有 pre-seed 投资方，不披露其本轮支票金额。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Concept Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网现行页面披露首轮投资最高额 150 万美元；Archestra 来源只说其既有 pre-seed 投资人回到新一轮，未披露 Concept 的新一轮出资额。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "专注 pre-seed 阶段",
+          "source_id": "concept_home"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露的首轮投资上限",
+          "value": "最高 150 万美元；截至 2026-09-28 核验页面",
+          "source_id": "concept_home"
+        },
+        {
+          "field": "history",
+          "label": "机构沿革",
+          "value": "官方历史介绍称其于 2018 年启动，前身为 RLC Ventures",
+          "source_id": "concept_history"
+        },
+        {
+          "field": "founder_background",
+          "label": "创始合伙人经历",
+          "value": "Reece Chowdhry 曾在 EY 工作，之后孵化和运营三家软件创业公司；官网称其中一家退出、一家失败、一家仍在运营。",
+          "source_id": "concept_leader_career"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "官方历史介绍称 Concept Ventures 于 2018 年启动。",
+          "source_id": "concept_history"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "创始合伙人、普通合伙人",
+          "organization": "Concept Ventures · Reece Chowdhry",
+          "source_id": "concept_leader"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Reece Chowdhry · EY / 软件创业公司",
+          "title": "顾问及创业者",
+          "period": "日期未披露",
+          "description": "曾在 EY 工作，之后运营三家软件创业公司。",
+          "source_id": "concept_leader_career"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 既有投资方（种子前轮） · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Archestra 融资公告称 Concept Ventures 等既有 pre-seed 投资人再次参与；没有披露 Concept 单家支票金额。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Concept Ventures 官网",
+          "value": "Concept Ventures",
+          "url": "https://conceptvc.work/",
+          "source_id": "concept_home"
+        },
+        {
+          "kind": "address",
+          "label": "伦敦办公地址",
+          "value": "40 Grosvenor Garden Mews S, Belgravia, London SW1W 0LD, UK",
+          "source_id": "concept_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "concept_home",
+          "source_url": "https://conceptvc.work/",
+          "source_title": "Concept Ventures | Europe’s Largest Pre-seed Fund",
+          "source_content_hash": "e9bd1b7ed508b8cbd65770cd30df19e881c7b881615981579b27495d11f67ea4",
+          "quote": "We invest up to $1.5m in first rounds, early by nature.",
+          "quote_hash": "a15f242866b438c9cb3165746384b171d522e025e8a58f32740089eccc37a916"
+        },
+        {
+          "source_id": "concept_history",
+          "source_url": "https://concept.vc/news/concept-raises-50m-fund",
+          "source_title": "Concept Closes on New £50m Fund | Concept Ventures",
+          "source_content_hash": "11367bd369ba4d1d053abd6bfd3ff06eefcbb356bd7849efe307cf7cbd413904",
+          "quote": "Launched in 2018, Concept has recorded a string of impressive early successes.",
+          "quote_hash": "bcde0a9949fa49bd5d9ab6226ac3bdcf7c1318b854fa0e6229e746344fbca7d9"
+        },
+        {
+          "source_id": "concept_leader",
+          "source_url": "https://concept.vc/team-members/reece-chowdhry",
+          "source_title": "Reece Chowdhry | General Partner",
+          "source_content_hash": "b4c10e2a3e3ff540def92d083648a52431a3c972b10f5e90d66fd976a36ad6f4",
+          "quote": "Reece Chowdhry is Founding Partner of Concept Ventures.",
+          "quote_hash": "bfd01db34ee6be3a052e328fe5ed1289d503f6ea9821c4f28fc21b58c65dc5ef"
+        },
+        {
+          "source_id": "concept_leader_career",
+          "source_url": "https://concept.vc/team-members/reece-chowdhry",
+          "source_title": "Reece Chowdhry | General Partner",
+          "source_content_hash": "b4c10e2a3e3ff540def92d083648a52431a3c972b10f5e90d66fd976a36ad6f4",
+          "quote": "He began his career at EY before incubating and operating three software startups; one exited, one failed, and one is still running today.",
+          "quote_hash": "166ec79eb9514da5db14e42334706fbbf444079f71dead52c20a857482d3b46b"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -154,7 +247,7 @@
           "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

@@ -137,21 +137,237 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Korea National Growth Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "韩国国民成长基金（Korea National Growth Fund）是韩国政府于2025年启动的五年期公私合营综合金融支持计划，目标规模为150万亿韩元，重点支持高科技战略产业及供应链。其工具包括直接与间接股权投资、基础设施投资和低息贷款；韩国金融委员会将其描述为政策性支持计划，而非已全部缴足或完成部署的单一基金。",
+      "facts": [
+        {
+          "field": "program_type",
+          "label": "计划性质",
+          "value": "公私合营的五年期综合金融支持计划；韩国金融委员会称其为National Growth Fund",
+          "source_id": "ngf_launch_program"
+        },
+        {
+          "field": "target_size",
+          "label": "五年期目标规模",
+          "value": "150万亿韩元（计划规模，不代表已缴款或已部署金额）",
+          "source_id": "ngf_launch_program"
+        },
+        {
+          "field": "funding_structure",
+          "label": "计划资金来源",
+          "value": [
+            "政府担保债券75万亿韩元",
+            "民间部门75万亿韩元"
+          ],
+          "source_id": "ngf_launch_capital"
+        },
+        {
+          "field": "annual_plan",
+          "label": "2026年起年度供给计划",
+          "value": "每年30万亿韩元；为韩国金融委员会2025年12月公布的工作计划",
+          "source_id": "ngf_plan_2026"
+        },
+        {
+          "field": "support_methods",
+          "label": "启动时公布的支持方式分配",
+          "value": [
+            "直接股权投资15万亿韩元",
+            "间接股权投资35万亿韩元",
+            "基础设施投资50万亿韩元",
+            "低息贷款支持50万亿韩元"
+          ],
+          "source_id": "ngf_launch_allocation"
+        },
+        {
+          "field": "regional_target",
+          "label": "区域均衡目标",
+          "value": "计划将至少40%的投资分配至首尔首都圈以外地区",
+          "source_id": "ngf_launch_regional"
+        },
+        {
+          "field": "industry_scope",
+          "label": "高科技产业计划",
+          "value": [
+            "人工智能",
+            "半导体",
+            "二次电池",
+            "下一代生物科技与疫苗",
+            "OLED显示",
+            "未来出行与国防",
+            "主权AI",
+            "能源基础设施",
+            "新万金机器人、氢能、AI与能源项目"
+          ],
+          "source_id": "ngf_april_projects"
+        },
+        {
+          "field": "indirect_investment",
+          "label": "间接投资机制",
+          "value": "韩国金融委员会计划通过20类母基金配置350,000亿韩元；该计划包含私公联合基金管理人遴选安排",
+          "source_id": "ngf_april_indirect"
+        },
+        {
+          "field": "governance",
+          "label": "决策与协调机制",
+          "value": "由民公联合战略委员会提供咨询，投资审议委员会及基金管理审议委员会构成两级决策流程；KDB设秘书处提供行政及工作支持",
+          "source_id": "ngf_launch_governance"
+        },
+        {
+          "field": "administrative_support",
+          "label": "行政与工作层支持",
+          "value": "韩国开发银行（KDB）设立National Growth Fund秘书处提供行政和工作层支持；原始公告未将其表述为唯一基金管理人",
+          "source_id": "ngf_launch_kdb"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-12-11",
+          "description": "韩国金融委员会宣布启动五年期150万亿韩元国民成长基金计划，公布资金来源、工具分配及治理框架。",
+          "source_id": "ngf_launch_program"
+        },
+        {
+          "date": "2025-12-19",
+          "description": "金融委员会工作计划提出自2026年起每年供给30万亿韩元，并选择AI、半导体和二次电池领域的七个重大项目目标。",
+          "source_id": "ngf_plan_2026"
+        },
+        {
+          "date": "2026-03-30",
+          "description": "Rebellions官方公告称，国民成长基金参与其4亿美元Pre-IPO轮，并将其选为K-Nvidia计划下首笔投资。",
+          "source_id": "ngf_rebellions_first"
+        },
+        {
+          "date": "2026-04-14",
+          "description": "金融委员会公布第二批重大项目方向，并提出未来五年为高科技产业及价值链提供超过50万亿韩元直接/间接投资与贷款支持；这是计划，不等于已拨付金额。",
+          "source_id": "ngf_april_funding"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Rebellions Inc. · Pre-IPO · 2026-03-30 · 本轮领投 · $400 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "截至2026-03-30，Rebellions官方称其4亿美元Pre-IPO融资由Mirae Asset Financial Group与韩国国民成长基金领投，并称这是该基金在K-Nvidia计划下的首笔投资；这是已披露单笔交易，不代表该计划整体已部署金额。",
+          "source_id": "ngf_rebellions_round"
+        },
+        {
+          "description": "led by Mirae Asset Financial Group and the Korea National Growth Fund",
           "source_id": "FISRC-73d5b94aff1552cb"
         }
       ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "韩国金融委员会负责公开发布基金规模、年度计划、行业方向和审议机制；韩国开发银行设秘书处提供行政与工作层支持。现有引用的一手资料未列出单一基金管理法人、具名常设负责人或直接项目申报邮箱，因此不将委员会或KDB一般联系方式推断为投资递交渠道。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "ngf_launch_program",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/85828",
+          "source_title": "National Growth Fund Launched to Propel Reinvigoration of Korean Economy (Dec 11, 2025)",
+          "source_content_hash": "1442ea98cedbb598988d0a6c40305b365158203a1016a2abd67271637417708e",
+          "quote": "The National Growth Fund is a comprehensive financial support program worth KRW150 trillion for five years aimed at the country’s high-tech strategic industries.",
+          "quote_hash": "61a233c7e679fbeb76fb80e0615aba133f2b307b13f7c0bb8ab3797364172829"
+        },
+        {
+          "source_id": "ngf_launch_governance",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/85828",
+          "source_title": "National Growth Fund Launched to Propel Reinvigoration of Korean Economy (Dec 11, 2025)",
+          "source_content_hash": "1442ea98cedbb598988d0a6c40305b365158203a1016a2abd67271637417708e",
+          "quote": "A private-public joint expert strategy committee will consult on fund management; investment and fund-management deliberation committees form a two-tier decision process.",
+          "quote_hash": "d9cdc949517bf9a9a767f8574398cd1546818fa57887945c3217ace00da684eb"
+        },
+        {
+          "source_id": "ngf_launch_kdb",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/85828",
+          "source_title": "National Growth Fund Launched to Propel Reinvigoration of Korean Economy (Dec 11, 2025)",
+          "source_content_hash": "1442ea98cedbb598988d0a6c40305b365158203a1016a2abd67271637417708e",
+          "quote": "A secretariat office for the National Growth Fund has been established at the Korea Development Bank (KDB) for administrative and working-level support.",
+          "quote_hash": "d95b8874909c15bd97098ddda5e45bca46e786df4be04ff3b067d11ca0b6db6c"
+        },
+        {
+          "source_id": "ngf_launch_regional",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/85828",
+          "source_title": "National Growth Fund Launched to Propel Reinvigoration of Korean Economy (Dec 11, 2025)",
+          "source_content_hash": "1442ea98cedbb598988d0a6c40305b365158203a1016a2abd67271637417708e",
+          "quote": "The fund will aim to distribute 40 percent or more of its investments to regions outside the Seoul metropolitan area.",
+          "quote_hash": "b9a6922ec1399e8d68d05ba31397cb707b6ec96f57575555c16bb4b299704daa"
+        },
+        {
+          "source_id": "ngf_launch_capital",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/85828",
+          "source_title": "National Growth Fund Launched to Propel Reinvigoration of Korean Economy (Dec 11, 2025)",
+          "source_content_hash": "1442ea98cedbb598988d0a6c40305b365158203a1016a2abd67271637417708e",
+          "quote": "KRW75 trillion in government-guaranteed bonds and another KRW75 trillion originating from the private sector.",
+          "quote_hash": "e68d65d6b98270aeee8a32301e5fff759cc3c4427796faa4c4872e663a4347ec"
+        },
+        {
+          "source_id": "ngf_launch_allocation",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/85828",
+          "source_title": "National Growth Fund Launched to Propel Reinvigoration of Korean Economy (Dec 11, 2025)",
+          "source_content_hash": "1442ea98cedbb598988d0a6c40305b365158203a1016a2abd67271637417708e",
+          "quote": "Planned support methods include KRW15 trillion direct equity, KRW35 trillion indirect equity, KRW50 trillion infrastructure investment, and KRW50 trillion low-interest lending.",
+          "quote_hash": "4322fbc71a0fe2c261a1b6be878811fc9fa8f54fc2697b58d0ec4f85dff01d95"
+        },
+        {
+          "source_id": "ngf_launch_mechanism",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/85828",
+          "source_title": "National Growth Fund Launched to Propel Reinvigoration of Korean Economy (Dec 11, 2025)",
+          "source_content_hash": "1442ea98cedbb598988d0a6c40305b365158203a1016a2abd67271637417708e",
+          "quote": "The fund will support high-tech strategic industries and their supply chains and assist innovative startups and venture businesses to scale up.",
+          "quote_hash": "dd21f9cf06025059e8df691d984c6bb6887c9374cafc15fca34d5bb162f842d9"
+        },
+        {
+          "source_id": "ngf_plan_2026",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/85895",
+          "source_title": "FSC Plans a Sweeping Overhaul of Finance to Propel a Great Takeoff of the Korean Economy (Dec 19, 2025)",
+          "source_content_hash": "a89bf65950435c5b26e2b7e4cdcc85a01057e33f3a92a3c001af030f061c9f9a",
+          "quote": "National Growth Fund will begin to supply KRW150 trillion over five years, KRW30 trillion every year from 2026; seven key megaproject targets were selected in AI, semiconductors and secondary batteries.",
+          "quote_hash": "6b7a89249e7f2cc42449035a0fed6163c4b48c6ec651551c9db1967427fc1efc"
+        },
+        {
+          "source_id": "ngf_april_projects",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/86697",
+          "source_title": "High-tech Industry Investment Worth KRW50 Trillion-plus Planned for Five Years through National Growth Fund (Apr 14, 2026)",
+          "source_content_hash": "65a3481e291523b43330dcec37f824d5f94b8ddcafa70ced4ccd37ee9e49a9b6",
+          "quote": "The second batch includes next-generation biotech and vaccines, OLED, future mobility and defense, sovereign AI, energy infrastructure, and Saemangeum robotics, hydrogen, AI and energy.",
+          "quote_hash": "e55da8ad3cced57345333ea3a162705964935fc7b2e6f5875c7bd5eb7b2635eb"
+        },
+        {
+          "source_id": "ngf_april_funding",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/86697",
+          "source_title": "High-tech Industry Investment Worth KRW50 Trillion-plus Planned for Five Years through National Growth Fund (Apr 14, 2026)",
+          "source_content_hash": "65a3481e291523b43330dcec37f824d5f94b8ddcafa70ced4ccd37ee9e49a9b6",
+          "quote": "The FSC plans over KRW50 trillion over five years in direct or indirect investment and lending for high-tech industries and their value chains.",
+          "quote_hash": "60fa99309151e523f40f47c287c9450c659bb5b6313921e409cab359cfd57027"
+        },
+        {
+          "source_id": "ngf_april_indirect",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/86697",
+          "source_title": "High-tech Industry Investment Worth KRW50 Trillion-plus Planned for Five Years through National Growth Fund (Apr 14, 2026)",
+          "source_content_hash": "65a3481e291523b43330dcec37f824d5f94b8ddcafa70ced4ccd37ee9e49a9b6",
+          "quote": "KRW35 trillion in indirect investment will be operated through 20 types of feeder funds.",
+          "quote_hash": "693cb9c726d4f4d67b3e7cd8df238d1ee026a23468b026df63b787ab8f350b82"
+        },
+        {
+          "source_id": "ngf_april_direct",
+          "source_url": "https://www.fsc.go.kr/eng/pr010101/86697",
+          "source_title": "High-tech Industry Investment Worth KRW50 Trillion-plus Planned for Five Years through National Growth Fund (Apr 14, 2026)",
+          "source_content_hash": "65a3481e291523b43330dcec37f824d5f94b8ddcafa70ced4ccd37ee9e49a9b6",
+          "quote": "KRW15 trillion in direct investment support will target businesses requiring large-scale and long-term investment.",
+          "quote_hash": "360eca8d17d6275b04e8e9c82f883a831bf386c501c4bfe534c7c35b857f96d6"
+        },
+        {
+          "source_id": "ngf_rebellions_round",
+          "source_url": "https://rebellions.ai/newsroom/rebellions-closes-400-million-pre-ipo-and-launches-rebelrack-and-rebelpod-to-accelerate-global-expansion/",
+          "source_title": "Rebellions Closes $400 Million Pre-IPO and Launches RebelRack and RebelPOD to Accelerate Global Expansion (Mar 30, 2026)",
+          "source_content_hash": "91b0e48c12c86cc9d5e43275b3c2ce326b0df6c05b8b21405173a8c4e327e47d",
+          "quote": "Rebellions raised $400 million in a pre-IPO round led by Mirae Asset Financial Group and the Korea National Growth Fund.",
+          "quote_hash": "9051bcfbd63756b496e19f6b9684a57f06bed812b45abbd05035b20ed9331ffd"
+        },
+        {
+          "source_id": "ngf_rebellions_first",
+          "source_url": "https://rebellions.ai/newsroom/rebellions-closes-400-million-pre-ipo-and-launches-rebelrack-and-rebelpod-to-accelerate-global-expansion/",
+          "source_title": "Rebellions Closes $400 Million Pre-IPO and Launches RebelRack and RebelPOD to Accelerate Global Expansion (Mar 30, 2026)",
+          "source_content_hash": "91b0e48c12c86cc9d5e43275b3c2ce326b0df6c05b8b21405173a8c4e327e47d",
+          "quote": "The Korea National Growth Fund participated in the round, choosing Rebellions as its first investment as part of the K-Nvidia initiative.",
+          "quote_hash": "91ca6b9cefffe4fa87ff906a5251ebad125678db7126bfe6ac0709fab27012a3"
+        },
         {
           "source_id": "FISRC-73d5b94aff1552cb",
           "source_url": "https://techcrunch.com/2026/03/30/ai-chip-startup-rebellions-raises-400-million-at-2-3b-valuation-in-pre-ipo-round/",
@@ -161,7 +377,11 @@
           "quote_hash": "b506e6c157a6a5c1e9342051843002817ab8d7ee1bee5c9f2bee9b5fed765070"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "此名称在韩国金融委员会官方发布中指五年期公私合营综合金融支持计划；150万亿韩元为目标规模和计划供给额度，不是单一法人基金的已缴资本或已投金额。各投资工具及高科技项目均按官方计划口径描述。Rebellions交易由公司新闻稿核实为计划下首笔投资；融资记录另保留既有媒体来源。所引官方资料未列出直接项目申报邮箱或具名常设团队。"
     }
   }
 }

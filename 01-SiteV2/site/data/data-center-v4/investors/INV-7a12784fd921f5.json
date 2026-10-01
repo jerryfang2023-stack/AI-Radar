@@ -137,21 +137,262 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "浙大科创集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "2023年上市公司公告披露，浙江浙大科创集团有限公司由浙大控股集团全资持有；集团公开介绍中将其定位为科创投资主平台，业务覆盖科技成果转化、科创投资、创新服务与产业赋能。集团公开列出的基金矩阵覆盖早期和中后期投资，重点布局人工智能、生命健康、集成电路、新材料和新能源等方向；具体基金通常由子公司或合伙基金负责管理，基金规模、管理规模与集团自身出资不可混为一谈。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "企业全称",
+          "value": "浙江浙大科创集团有限公司",
+          "source_id": "zdkc_legal_name_2023"
+        },
+        {
+          "field": "founded_date",
+          "label": "成立时间",
+          "value": "1998年4月24日（上市公司公告披露）",
+          "source_id": "zdkc_company_founded_2023"
+        },
+        {
+          "field": "ownership",
+          "label": "股东关系",
+          "value": "浙江大学控股集团有限公司持股100%（2023年公告披露口径）。",
+          "source_id": "zdkc_company_owner_2023"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "人民币7000万元（2023年公告口径）",
+          "source_id": "zdkc_company_capital_2023"
+        },
+        {
+          "field": "platform_role",
+          "label": "集团定位",
+          "value": "浙大控股集团科创投资主平台，侧重汇聚科创资源、建设硬科技创业投资平台。",
+          "source_id": "zdkc_medtech_coop_2025"
+        },
+        {
+          "field": "business_scope",
+          "label": "公开介绍的业务主线",
+          "value": [
+            "科创投资",
+            "创新服务",
+            "产业赋能",
+            "科技成果转化"
+          ],
+          "source_id": "zdkc_recruit_2026"
+        },
+        {
+          "field": "investment_stages",
+          "label": "公开披露的投资阶段",
+          "value": "覆盖早期投资和中后期投资；该为集团公开招聘公告中的业务介绍。",
+          "source_id": "zdkc_recruit_2026"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点关注领域",
+          "value": [
+            "人工智能",
+            "生命健康",
+            "集成电路",
+            "新材料",
+            "新能源"
+          ],
+          "source_id": "zdkc_recruit_2026"
+        },
+        {
+          "field": "fund_manager_subsidiary",
+          "label": "旗下私募基金管理人",
+          "value": "浙江浙大启真创业投资有限公司为集团全资子公司、基金管理人；2024年公告披露其登记编码为P1074566。集团与其管理人角色应区分。",
+          "source_id": "zdkc_manager_2024"
+        },
+        {
+          "field": "fund_network",
+          "label": "公开列示基金矩阵（截至2026年招聘公告）",
+          "value": [
+            "城西科创大走廊母基金",
+            "启真浙创基金",
+            "衢州启真基金",
+            "云创启真基金",
+            "金华启真基金",
+            "杭钢启真基金",
+            "浙建启真基金"
+          ],
+          "source_id": "zdkc_recruit_2026"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1998-04-24",
+          "description": "公司成立日期见上市公司披露的基金合作公告。",
+          "source_id": "zdkc_company_founded_2023"
+        },
+        {
+          "date": "2024-10-22",
+          "description": "集团参与签署金华市启真科创创业投资基金合伙协议；集团认缴1800万元、占基金总认缴额18%，身份为有限合伙人。",
+          "source_id": "zdkc_jinhua_lp_2024"
+        },
+        {
+          "date": "2025-01-02",
+          "description": "浙报数字文化公告称金华市启真科创创业投资基金完成中国证券投资基金业协会备案。",
+          "source_id": "zdkc_jinhua_registration_2026"
+        },
+        {
+          "date": "2025-07-21",
+          "description": "集团与浙大创新院、浙江省智能诊疗设备制造业创新中心签署战略合作协议，推动医疗器械领域的成果转化与产业科创生态建设。",
+          "source_id": "zdkc_medtech_coop_2025"
+        },
+        {
+          "date": "2026-03-24",
+          "description": "浙报数字文化公告披露金华市启真科创创业投资基金累计实缴1亿元、实缴比例100%；该为整支基金口径，不等于集团单独出资额。",
+          "source_id": "zdkc_jinhua_progress_2026"
+        }
+      ],
       "track_record": [
+        {
+          "description": "浙数文化2024年公告引用启真创投披露：其通过基金参投的已上市项目达13个，列出的案例包括禾迈股份、柯力传感、扬帆新材、中泰证券、泰豪科技、元成园林、双枪科技和创远仪器。此为全资子公司管理人按“基金参投”统计的案例，不是集团直投清单，也不代表集团全部组合。",
+          "source_id": "zdkc_portfolio_2024"
+        },
+        {
+          "description": "金华市启真科创创业投资基金总认缴规模1亿元，集团认缴1800万元、占18%，以有限合伙人身份参与；浙江浙大启真创投为全资子公司，并担任基金管理人及普通合伙人之一。",
+          "source_id": "zdkc_jinhua_lp_2024"
+        },
+        {
+          "description": "2023年城西科创制造业股权投资母基金认缴总额为40亿元，集团是有限合伙人之一并获委派1名投资决策委员会委员；披露未列出集团自身认缴金额，因此不把40亿元计为集团出资。",
+          "source_id": "zdkc_westcorridor_2023"
+        },
+        {
+          "description": "2025年集团参与医疗器械产业战略合作，公告提到将探索设立科创投资基金，并结合科创供应链与产业赋能体系推进成果转化；这是合作安排，不作为已完成投资或投资回报证明。",
+          "source_id": "zdkc_medtech_coop_2025"
+        },
         {
           "description": "融资来源记录：原力无限 · 多轮融资 · 2026-08-14 · 本轮参投 · 10亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9a9fc48b4bf6ac86"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构主体及投资关系已用公司披露、基金公告与合作方官网交叉核对。公开基金列表和投资方向来自2026年招聘公告的第三方转载，转载页提供原始微信公众号来源；联系人只标为该招聘公告中的综合办公室电话和招聘简历邮箱，不是项目申报或融资咨询渠道。集团独立官网及当前办公地址尚未从一手页面确认，故不发布地址。集团融资活动库中的原力无限“10亿元”是报道所述多轮合计，来源未披露集团出资额，不应理解为集团单笔投资额。没有找到可以准确对应本机构的现有人物实体标识与完整公开履历，故未新增人物关系或推断管理团队履历。",
+      "contacts": [
+        {
+          "kind": "phone",
+          "label": "集团综合办公室电话（2026年7月招聘公告；非项目投资专线）",
+          "value": "0571-87397928",
+          "url": "https://www.fenbi.com/page/fenxiaozhaokaodetail/26/3818/467879336892416",
+          "source_id": "zdkc_recruit_2026"
+        },
+        {
+          "kind": "application",
+          "label": "2026年7月招聘公告中的简历投递邮箱（仅招聘用途）",
+          "value": "zdkc01@126.com",
+          "url": "https://www.fenbi.com/page/fenxiaozhaokaodetail/26/3818/467879336892416",
+          "source_id": "zdkc_recruit_2026"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zdkc_recruit_2026",
+          "source_url": "https://www.fenbi.com/page/fenxiaozhaokaodetail/26/3818/467879336892416",
+          "source_title": "浙江浙大科创集团有限公司2026年公开招聘人员公告｜粉笔资讯（转载，附原始微信公众号来源）",
+          "source_content_hash": "dafac76758d907d62ae4e9beb1e133e63bc898e0bf17328513c10ea98595b7f7",
+          "quote": "集团重点投向人工智能、生命健康、集成电路、新材料新能源等前沿赛道的高成长科创型企业。",
+          "quote_hash": "7b0dbb5efdb7f66837837af42a5bcf6de9b2030c8760b77cfb373cb0ce621065"
+        },
+        {
+          "source_id": "zdkc_jinhua_progress_2026",
+          "source_url": "https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260324/1b5013b6f930482c87f6ceadf090d8e7.PDF",
+          "source_title": "浙报数字文化集团股份有限公司关于参与设立金华市启真科创创业投资基金合伙企业（有限合伙）的进展公告｜巨潮资讯",
+          "source_content_hash": "35990697bdbdfbf7d198f7b8eccf7ba8eac753f805e6fdd135974f7cfa1ca3f4",
+          "quote": "至此，本基金累计完成实缴金额10,000万元（其中公司累计实缴出资1,000万元），实缴比例达100%。",
+          "quote_hash": "2bee44934a6f338cc9b5b2af3f87763f81df14d0eceed09b66b543367cea28c3"
+        },
+        {
+          "source_id": "zdkc_medtech_coop_2025",
+          "source_url": "https://www.zjuiti.com/m/newsinfo.aspx?cid=18&nid=848",
+          "source_title": "浙大科创集团、浙大创新院与浙江省智能诊疗设备制造业创新中心签署战略合作协议｜浙大创新院",
+          "source_content_hash": "250cc7eee544a05c4b36db3f22dff09221673d313a203c813921ebd81f3c98ff",
+          "quote": "浙大科创集团作为浙大控股集团科创投资的主平台，正在集成各类科创资源、打造硬科技创业投资平台。",
+          "quote_hash": "4269261eb4bed1739fdf80893d3c8733c66f42e596bfe3a2a6e7e1975e1fe612"
+        },
+        {
+          "source_id": "zdkc_fund_system_2024",
+          "source_url": "https://guoqi.zjol.com.cn/gqdj/202402/t20240202_26627214.shtml",
+          "source_title": "打造高能级科创赋能平台 浙大控股集团划转三周年｜浙江在线",
+          "source_content_hash": "86d04bb2629d270c07edc4ec8adaa5def3723561c658630fa85716b6dbd61761",
+          "quote": "设立首个自主管理基金——启真浙创科技成果转化基金，对外发布智慧绿洲科创基金、浙大科创专精特新产业基金等项目。",
+          "quote_hash": "3c98aa190cba989bb43073600183889ead01fc50f3a728bddbbb500608b00504"
+        },
+        {
+          "source_id": "zdkc_company_owner_2023",
+          "source_url": "https://paper.cnstock.com/html/2023-07/18/content_1796424.htm",
+          "source_title": "物产中大关于全资子公司合作设立浙江城西科创制造业股权投资基金的公告｜上海证券报",
+          "source_content_hash": "968dec827ab42f3a2b457ae3f9e30bfd8e7a16a17b8f6020b98346f540dec705",
+          "quote": "股东情况：浙江大学控股集团有限公司（100%）",
+          "quote_hash": "becccf9a5f1b986032c73d1a7cc76fb4a862e47712b4521ba3c46cd4a2249c7d"
+        },
+        {
+          "source_id": "zdkc_company_capital_2023",
+          "source_url": "https://paper.cnstock.com/html/2023-07/18/content_1796424.htm",
+          "source_title": "物产中大关于全资子公司合作设立浙江城西科创制造业股权投资基金的公告｜上海证券报",
+          "source_content_hash": "968dec827ab42f3a2b457ae3f9e30bfd8e7a16a17b8f6020b98346f540dec705",
+          "quote": "注册资本：7000万元",
+          "quote_hash": "0ede4e4e43594750d43cbaef974f95b0468b70f8de0ab33a41b5deea4440bb3c"
+        },
+        {
+          "source_id": "zdkc_company_founded_2023",
+          "source_url": "https://paper.cnstock.com/html/2023-07/18/content_1796424.htm",
+          "source_title": "物产中大关于全资子公司合作设立浙江城西科创制造业股权投资基金的公告｜上海证券报",
+          "source_content_hash": "968dec827ab42f3a2b457ae3f9e30bfd8e7a16a17b8f6020b98346f540dec705",
+          "quote": "成立时间：1998年4月24日",
+          "quote_hash": "dc1d9fa2b03609230309a2cb4bce4e2b8ca202fdac26ac44fdbe42704fb214d8"
+        },
+        {
+          "source_id": "zdkc_westcorridor_2023",
+          "source_url": "https://paper.cnstock.com/html/2023-07/18/content_1796424.htm",
+          "source_title": "物产中大关于全资子公司合作设立浙江城西科创制造业股权投资基金的公告｜上海证券报",
+          "source_content_hash": "968dec827ab42f3a2b457ae3f9e30bfd8e7a16a17b8f6020b98346f540dec705",
+          "quote": "基金认缴出资额400,000万元……投资决策委员会由8名委员组成……浙江浙大科创集团有限公司委派1名",
+          "quote_hash": "0623d09babe6769219e3c3ec3e547b0f6e36f0fe1d74297c41c3222f3fdfe2fa"
+        },
+        {
+          "source_id": "zdkc_manager_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-10-23/1221473699.PDF",
+          "source_title": "浙报数字文化集团股份有限公司关于参与投资设立金华市启真科创创业投资基金合伙企业（有限合伙）公告｜巨潮资讯",
+          "source_content_hash": "53b7a1640e3e1debf76a07e68392a32c6e802023c2fdda9f20a78bc20c47828a",
+          "quote": "启真创投（私募基金管理人登记编码为P1074566），启真创投是浙大科创全资子公司",
+          "quote_hash": "26a38f6bd51fbf04ffdf4fdac4220f6402fa558562221e73b989a5d77ec65f08"
+        },
+        {
+          "source_id": "zdkc_portfolio_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-10-23/1221473699.PDF",
+          "source_title": "浙报数字文化集团股份有限公司关于参与投资设立金华市启真科创创业投资基金合伙企业（有限合伙）公告｜巨潮资讯",
+          "source_content_hash": "53b7a1640e3e1debf76a07e68392a32c6e802023c2fdda9f20a78bc20c47828a",
+          "quote": "其通过基金参投的已上市项目达13个，包括禾迈股份、柯力传感、扬帆新材、中泰证券、泰豪科技、元成园林、双枪科技、创远仪器等。",
+          "quote_hash": "d620fa22f7fcf9c854c5b56c35deed119ea4342912520fe2d4b5be490259acdd"
+        },
+        {
+          "source_id": "zdkc_jinhua_lp_2024",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-10-23/1221473699.PDF",
+          "source_title": "浙报数字文化集团股份有限公司关于参与投资设立金华市启真科创创业投资基金合伙企业（有限合伙）公告｜巨潮资讯",
+          "source_content_hash": "53b7a1640e3e1debf76a07e68392a32c6e802023c2fdda9f20a78bc20c47828a",
+          "quote": "浙江浙大科创集团有限公司 1,800 18% 有限合伙人",
+          "quote_hash": "bbb71aa1e0e1eb0deab005e117892bfd153377a4752323b13515a9ccd09acb1b"
+        },
+        {
+          "source_id": "zdkc_jinhua_registration_2026",
+          "source_url": "https://dataclouds.cninfo.com.cn/shgonggao/hsomarket/2026/20260324/1b5013b6f930482c87f6ceadf090d8e7.PDF",
+          "source_title": "浙报数字文化集团股份有限公司关于参与设立金华市启真科创创业投资基金合伙企业（有限合伙）的进展公告｜巨潮资讯",
+          "source_content_hash": "35990697bdbdfbf7d198f7b8eccf7ba8eac753f805e6fdd135974f7cfa1ca3f4",
+          "quote": "2025年1月2日，基金已完成了在中国证券投资基金业协会的备案（备案编码：SASP41）。",
+          "quote_hash": "d79150c5e52be94dc749d49036bc6f3ad0a8a78498c794ab3e368f00449bdc2d"
+        },
+        {
+          "source_id": "zdkc_legal_name_2023",
+          "source_url": "https://paper.cnstock.com/html/2023-07/18/content_1796424.htm",
+          "source_title": "物产中大关于全资子公司合作设立浙江城西科创制造业股权投资基金的公告｜上海证券报",
+          "source_content_hash": "968dec827ab42f3a2b457ae3f9e30bfd8e7a16a17b8f6020b98346f540dec705",
+          "quote": "浙江浙大科创集团有限公司",
+          "quote_hash": "4078a10801b88a273acad6f39cc805da551ac0f629549dbc1237fab4e5629ef6"
+        },
         {
           "source_id": "FISRC-9a9fc48b4bf6ac86",
           "source_url": "https://news.pedaily.cn/202608/567693.shtml",
@@ -161,7 +402,7 @@
           "quote_hash": "7c3c2bee4b507f246ceeb1906f5245112017064d4c7f338dbae1941558ca6025"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

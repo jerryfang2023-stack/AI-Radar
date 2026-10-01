@@ -137,21 +137,78 @@
       }
     ],
     "public_profile": {
+      "summary": "Capital Group 是成立于 1931 年、由公司自述为私有制的全球投资管理集团，官网介绍其长期投资理念及 Capital System。SambaNova 融资新闻将 Capital Group 列为 F 轮首轮交割参与方；没有证据能将该投资归到特定创投基金，也没有披露 Capital Group 的实际投资额。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Capital Group 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案对应综合投资管理集团。SambaNova 披露未指定集团内投资实体；10 亿美元是该轮整体首轮交割额，不是 Capital Group 单家出资额。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1931 年",
+          "source_id": "capital_about"
+        },
+        {
+          "field": "ownership",
+          "label": "机构背景",
+          "value": "官网称 Capital Group 为私有制公司",
+          "source_id": "capital_ownership"
+        },
+        {
+          "field": "approach",
+          "label": "投资方式",
+          "value": "官网介绍其长期投资方式结合独立决策与多元研究视角",
+          "source_id": "capital_approach"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1931",
+          "description": "创始人 Jonathan Bell Lovelace 创立 Capital Group。",
+          "source_id": "capital_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "SambaNova Systems 融资披露将 Capital Group 列为 10 亿美元 F 轮首轮交割参与方；未披露集团单家金额或具体投资工具。",
           "source_id": "FISRC-dbf8259066547c8e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Capital Group 官网",
+          "value": "Capital Group",
+          "url": "https://www.capitalgroup.com/",
+          "source_id": "capital_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "capital_about",
+          "source_url": "https://www.capitalgroup.com/institutional/about-us.html",
+          "source_title": "Who We Are: 90+ Years of Trusted Financial Experience | Capital Group",
+          "source_content_hash": "4b082006b9b098a818f104f5520ca181512be28e1a5c5966bb0b8d77e4db3cd4",
+          "quote": "Since 1931, Capital Group has been dedicated to improving people’s lives through successful investing.",
+          "quote_hash": "51a3939375121332bf93a00f51d7e1c97146b120ead5af60dd09655ec6be392b"
+        },
+        {
+          "source_id": "capital_ownership",
+          "source_url": "https://www.capitalgroup.com/institutional/about-us.html",
+          "source_title": "Who We Are: 90+ Years of Trusted Financial Experience | Capital Group",
+          "source_content_hash": "4b082006b9b098a818f104f5520ca181512be28e1a5c5966bb0b8d77e4db3cd4",
+          "quote": "As a privately owned company with a strong financial foundation, we have been free to prioritize our clients’ best interests and objectives for nearly a century.",
+          "quote_hash": "8daffa66ea7f582defd6c322969cd3f3ef6d5fd5e10c82cf6dfe57fb477fc78e"
+        },
+        {
+          "source_id": "capital_approach",
+          "source_url": "https://www.capitalgroup.com/institutional/about-us.html",
+          "source_title": "Who We Are: 90+ Years of Trusted Financial Experience | Capital Group",
+          "source_content_hash": "4b082006b9b098a818f104f5520ca181512be28e1a5c5966bb0b8d77e4db3cd4",
+          "quote": "The Capital System™ combines independent, high-conviction decision-making with the diversity that comes from multiple perspectives.",
+          "quote_hash": "30870bb1e13af9983e5a7da922063ad08de3af952c2ad9b0589d873017f017d6"
+        },
         {
           "source_id": "FISRC-dbf8259066547c8e",
           "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
@@ -161,7 +218,7 @@
           "quote_hash": "acff2ed86b8e1167ab4139e8981998276858b362a170040a1c2ba5660107bd1d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

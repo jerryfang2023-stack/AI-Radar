@@ -130,20 +130,98 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Reid Hoffman 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Reid Hoffman 是创业者、投资人和作家，现为 Greylock 合伙人。2003 年共同创办 LinkedIn，此前曾在 PayPal 担任执行副总裁并参与董事会；Greylock 将其投资主题概括为网络效应、消费者产品与早期投资。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "合伙人",
+          "organization": "Greylock",
+          "source_id": "reid_greylock"
+        },
+        {
+          "title": "董事",
+          "organization": "Aurora",
+          "source_id": "reid_greylock"
+        },
+        {
+          "title": "董事",
+          "organization": "Microsoft",
+          "source_id": "reid_greylock"
+        },
+        {
+          "title": "董事",
+          "organization": "Inflection",
+          "source_id": "reid_greylock"
+        },
+        {
+          "title": "董事",
+          "organization": "Entrepreneur First",
+          "source_id": "reid_greylock"
+        }
+      ],
+      "career": [
+        {
+          "organization": "LinkedIn",
+          "title": "共同创办人",
+          "period": "2003 年创办；当前任职未由引用页面说明",
+          "description": "Greylock 官方履历记载其于 2003 年共同创办 LinkedIn。",
+          "source_id": "reid_greylock"
+        },
+        {
+          "organization": "PayPal",
+          "title": "执行副总裁、创始董事会成员",
+          "period": "LinkedIn 创办前；具体任期未披露",
+          "description": "Greylock 官方履历记载他负责 PayPal 对外关系。",
+          "source_id": "reid_greylock"
+        },
+        {
+          "organization": "Greylock",
+          "title": "早期投资合伙人",
+          "period": "2009 年至今",
+          "description": "官方页面称他于 2009 年加入 Greylock，专注早期投资。",
+          "source_id": "reid_greylock"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stanford University",
+          "qualification": "象征系统学士（B.S. with distinction）。",
+          "source_id": "reid_greylock"
+        },
+        {
+          "institution": "University of Oxford",
+          "qualification": "哲学硕士。",
+          "source_id": "reid_greylock"
+        },
+        {
+          "institution": "Babson University; University of Oulu",
+          "qualification": "荣誉博士学位（Greylock 页面未列专业）。",
+          "source_id": "reid_greylock"
+        }
+      ],
+      "experience_summary": "职业经历覆盖专业社交网络、支付业务、早期风险投资和董事会工作；其投资主题强调网络效应与大规模消费者产品。",
       "track_record": [
         {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 天使投资人 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Greylock 将 Facebook、Airbnb 和 Aurora 列为他参与支持的代表性企业案例；这是机构精选案例，不是完整投资清单。",
+          "source_id": "reid_greylock"
+        },
+        {
+          "description": "TechCrunch 在 Niteshift 融资报道中将 Reid Hoffman 列为天使投资人；本库将活动标为 historical_or_ambiguous，700 万美元为融资披露总额，未披露他的个人出资额。",
           "source_id": "FISRC-01df70e43799a400"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "reid_greylock",
+          "source_url": "https://greylock.com/team/reid-hoffman/",
+          "source_title": "Reid Hoffman | Greylock",
+          "source_content_hash": "272a71de9db17e802a0921ff7abd54b127d36217b197f14fb295f2f34b3a3c4d",
+          "quote": "Reid joined Greylock in 2009 and focuses on early-stage investing in products that can reach hundreds of millions of participants.",
+          "quote_hash": "1349cd24f7fef16f729617e1ed33e2e28e122fdb6228cb125b06c2237b8896f8"
+        },
         {
           "source_id": "FISRC-01df70e43799a400",
           "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
@@ -153,7 +231,9 @@
           "quote_hash": "4d019abc185cedd81af0f47a628ebc8fc53d9d0a0e464ac7de90936c2c305b0c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "现任董事职务按 Greylock 当前页面列示；投资组合只保留精选案例。Niteshift 条目维持历史/模糊口径，不代表个人出资额。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

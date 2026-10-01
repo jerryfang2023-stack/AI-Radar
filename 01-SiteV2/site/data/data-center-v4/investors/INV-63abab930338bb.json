@@ -129,21 +129,169 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Footwork VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Footwork VC 是总部位于旧金山的早期风险投资机构，主投 Seed 与 Series A，关注消费科技及企业技术消费化。官网称其 2021 年推出 1.75 亿美元 Fund I，2025 年开始投资 2.25 亿美元 Fund II；共同建设机构的 Mike Smith 和 Nikhil Basu Trivedi 分别带来 Stitch Fix 运营及早期投资经验。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "旧金山 Dogpatch 社区",
+          "source_id": "footwork"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": [
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "footwork"
+        },
+        {
+          "field": "initial_check_size",
+          "label": "初始投资金额",
+          "value": "通常 100 万至 1,500 万美元",
+          "source_id": "footwork"
+        },
+        {
+          "field": "sectors",
+          "label": "重点领域",
+          "value": [
+            "消费科技",
+            "企业技术消费化"
+          ],
+          "source_id": "footwork"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-04",
+          "description": "推出 1.75 亿美元 Fund I。",
+          "source_id": "footwork_funds"
+        },
+        {
+          "date": "2025",
+          "description": "开始投资 2.25 亿美元 Fund II。",
+          "source_id": "footwork_funds"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：WindBorne Systems · B轮 · 2026-08-05 · A 轮参投方 · $37 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网披露，截至 2026 年第二季度，已投资 25 家公司，并列出 Table22、Cradlewise、Trendsi、Watershed、GPTZero、Elicit、Fuse、Monk 等选例；该组合清单为机构自述。",
+          "source_id": "footwork_25"
+        },
+        {
+          "description": "融资来源记录：WindBorne Systems · 历史轮次未披露 · A 轮参投方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5f5111750b24d3d3"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Mike Smith — 官网投资团队成员",
+          "organization": "Footwork VC",
+          "source_id": "footwork_mike"
+        },
+        {
+          "title": "Nikhil Basu Trivedi — 官网投资团队成员",
+          "organization": "Footwork VC",
+          "source_id": "footwork_nikhil"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Stitch Fix",
+          "title": "Mike Smith — 总裁兼首席运营官",
+          "period": "从创意阶段至 IPO 及之后；具体年月未披露",
+          "description": "从早期构想到上市阶段参与公司运营；另曾任 Walmart.com 首席运营官。",
+          "source_id": "footwork_mike"
+        },
+        {
+          "organization": "Walmart.com",
+          "title": "Mike Smith — 首席运营官",
+          "period": "此前；具体年月未披露",
+          "description": "负责电商业务运营。",
+          "source_id": "footwork_mike"
+        },
+        {
+          "organization": "Shasta Ventures",
+          "title": "Nikhil Basu Trivedi — 董事总经理",
+          "period": "此前；具体年月未披露",
+          "description": "投资 Athelas、Brigit、Canva、ClassDojo、Color Health、Frame.io、Lattice 等公司。",
+          "source_id": "footwork_nikhil"
+        },
+        {
+          "organization": "Insight Partners / Artsy",
+          "title": "Nikhil Basu Trivedi — 投资人；创业团队成员",
+          "period": "此前；具体年月未披露",
+          "description": "官网称其曾任职于 Insight Partners，并加入 Artsy 创始团队。",
+          "source_id": "footwork_nikhil"
+        }
+      ],
+      "experience_summary": "Mike Smith 曾负责 Stitch Fix 从创意到 IPO 的运营，并担任 Walmart.com COO；Nikhil Basu Trivedi 曾任 Shasta Ventures 董事总经理，在 Insight Partners 工作并加入 Artsy 创始团队。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Footwork VC",
+          "url": "https://www.footwork.vc/",
+          "source_id": "footwork"
+        },
+        {
+          "kind": "email",
+          "label": "机构联系邮箱",
+          "value": "hello@footwork.vc",
+          "url": "https://www.footwork.vc/",
+          "source_id": "footwork_email"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "footwork",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "1503f8848aa23320be3563bcbcfe86f2b633c5ca283f0ebfa150e8e2ac752fd0",
+          "quote": "We lead and co-lead Series A and Seed rounds, in companies with early signs of product-market fit. We typically invest between $1 and $15 million initially. We focus on consumer technology and the consumerization of enterprise technology.",
+          "quote_hash": "bf8e88ecc38eb51784929232a9c0bfaea3e9fb1c69159cc83381869cac8cf41f"
+        },
+        {
+          "source_id": "footwork_funds",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "1503f8848aa23320be3563bcbcfe86f2b633c5ca283f0ebfa150e8e2ac752fd0",
+          "quote": "Footwork launched in April 2021 with a $175M Fund I, and we began investing our $225M Fund II in 2025.",
+          "quote_hash": "74137c23f995d003d147afd281e3e788a02d2bbed158626a47cd6ff226110bf3"
+        },
+        {
+          "source_id": "footwork_25",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "1503f8848aa23320be3563bcbcfe86f2b633c5ca283f0ebfa150e8e2ac752fd0",
+          "quote": "We've invested in 25 companies as of Q2 2026,",
+          "quote_hash": "61a388b7e616774a318176880d7b9abda17a7d3abbf84be778ce6b21f592f5a3"
+        },
+        {
+          "source_id": "footwork_mike",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "1503f8848aa23320be3563bcbcfe86f2b633c5ca283f0ebfa150e8e2ac752fd0",
+          "quote": "Mike was President and COO at Stitch Fix, from idea to IPO and beyond. Mike serves on the public company boards of MillerKnoll ($MLKN), and Ulta Beauty ($ULTA). He was previously COO of Walmart.com.",
+          "quote_hash": "80db6aeb8c6b458015d6e4ab233514fe73e2cb0ebdc8a24b653da9b45f01c9bd"
+        },
+        {
+          "source_id": "footwork_nikhil",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "1503f8848aa23320be3563bcbcfe86f2b633c5ca283f0ebfa150e8e2ac752fd0",
+          "quote": "Nikhil was Managing Director at Shasta Ventures, where he invested in Athelas, Brigit, Canva, ClassDojo, Color Health, Frame.io, Imperfect Foods, Lattice, and The Farmer's Dog. He was previously at Insight Partners and on the founding team at Artsy.",
+          "quote_hash": "5c5461c11818f2230f0ec3fb475e1c43df43c63a1452b7eefd2c2da4082e77cd"
+        },
+        {
+          "source_id": "footwork_email",
+          "source_url": "https://www.footwork.vc/",
+          "source_title": "Footwork",
+          "source_content_hash": "1503f8848aa23320be3563bcbcfe86f2b633c5ca283f0ebfa150e8e2ac752fd0",
+          "quote": "Footwork hello@footwork.vc",
+          "quote_hash": "376df061fa699c51eae8662de8b1ffc8bdbe9078529ff4a6475e38e5fd84cd20"
+        },
         {
           "source_id": "FISRC-5f5111750b24d3d3",
           "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",
@@ -153,7 +301,11 @@
           "quote_hash": "8023b80146dd21ae9133d41cbd3bd534abb4a1bb0ff5b6a882a2428157bc4482"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于机构官网或机构本人公开资料核验；自述数据已注明口径，未公开的信息留空。"
     }
   }
 }

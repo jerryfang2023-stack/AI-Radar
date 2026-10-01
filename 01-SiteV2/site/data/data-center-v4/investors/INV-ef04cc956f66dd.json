@@ -154,24 +154,78 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nvidia Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Nvidia Ventures 是融资记录使用的投资者名称，NVIDIA 官方将其风险投资部门称为 NVentures，关注 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算。Prime Intellect 融资的媒体报道对投资主体表述不完全一致；官方资料确认 NVentures 部门存在，但尚不能独立确认该笔交易的法律投资载体。",
+      "facts": [
+        {
+          "field": "venture_arm",
+          "label": "风险投资部门",
+          "value": "NVentures",
+          "source_id": "nventures"
+        },
+        {
+          "field": "investment_themes",
+          "label": "投资领域",
+          "value": [
+            "AI 基础设施",
+            "机器人",
+            "数字生物学",
+            "应用 AI",
+            "前沿计算"
+          ],
+          "source_id": "nventures"
+        },
+        {
+          "field": "strategic_support",
+          "label": "生态支持",
+          "value": "NVIDIA 官方介绍称 NVentures 可与 NVIDIA 技术团队和平台资源协作。",
+          "source_id": "nventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "一则 Prime Intellect 2026 年 A 轮报道提到 NVIDIA 以战略投资者身份加入；该来源没有给出其单笔出资额，也未证明具体使用 NVentures 法律载体。",
           "source_id": "FISRC-8d68719d4ab934b9"
         },
         {
-          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "另一则同轮报道将 NVentures 列为参投方。两份媒体材料的主体称呼存在差异，因此暂以待核实的公开活动记录呈现，不据此确认法定主体或出资额。",
           "source_id": "FISRC-fbda7a24ef3d8ef8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NVentures 官方介绍",
+          "value": "NVentures — NVIDIA’s Venture Capital Arm",
+          "url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_id": "nventures"
+        },
+        {
+          "kind": "email",
+          "label": "NVIDIA 媒体联系（非投资申请渠道）",
+          "value": "press@nvidia.com",
+          "url": "https://nvidianews.nvidia.com/contacts",
+          "source_id": "nvidia_press"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nventures",
+          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_title": "NVentures — NVIDIA’s Venture Capital Arm | NVIDIA",
+          "source_content_hash": "3271076a394f6b2223cd7dd794ea8c6e0f5da94cece8219e56b73f19f246e130",
+          "quote": "NVentures is NVIDIA’s venture capital arm. It focuses on AI infrastructure, robotics, digital biology, applied AI, and frontier compute.",
+          "quote_hash": "76a883d3cc2e85af162b76448500782412f39d28a282bb5e328113af0724ca27"
+        },
+        {
+          "source_id": "nvidia_press",
+          "source_url": "https://nvidianews.nvidia.com/contacts",
+          "source_title": "Press Contacts | NVIDIA Newsroom",
+          "source_content_hash": "e7685ee0e6b289b1f981e5ff98191c6dde923e9bdf7296e6fb71600a162d45dc",
+          "quote": "Corporate Communications: press@nvidia.com.",
+          "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
+        },
         {
           "source_id": "FISRC-8d68719d4ab934b9",
           "source_url": "https://www.tbpndigest.com/story/2026-07-08/prime-intellect-raises-130m-at-1b-valuation-to-build-open-sovereign-ai-stack",
@@ -189,7 +243,9 @@
           "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "公开的 Prime Intellect 融资来源对 NVIDIA/NVentures 名称的表述不同；融资总额不是该投资者的单笔出资额。官网媒体联系邮箱不是投资申请渠道。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

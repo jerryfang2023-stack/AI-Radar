@@ -140,19 +140,95 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AJ Tennant 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "履历由 AJ Tennant 当前任职相关的 Tenacity Capital、Accel 和 Glean 官方页面交叉核验。营收与规模数据标注为相关机构对其任职期间的公开描述；Accel 的 Venture Partner 任命有 2025 年公告支持，但本次未找到 2026 年续任确认。",
+      "summary": "AJ Tennant 是企业软件销售与市场拓展（GTM）负责人、投资人及 Tenacity Capital 创办人。Accel 于 2025 年宣布其加入担任 Venture Partner，并称他继续担任 Glean 顾问；Tenacity 官网将该基金定位为投资 AI 原生企业、在产品市场匹配初显时提供 GTM 支持。其过往经历包括 Facebook、Slack 和 Glean 的早期或核心 GTM 建设。",
       "facts": [],
-      "milestones": [],
+      "milestones": [
+        {
+          "date": "2025-11-20",
+          "description": "Accel 宣布 AJ Tennant 加入并担任 Venture Partner。",
+          "source_id": "aj_accel"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "创办人",
+          "organization": "Tenacity Capital",
+          "source_id": "aj_tenacity"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Facebook / Meta",
+          "title": "内部销售组织创始成员、早期销售负责人",
+          "period": "职业早期；具体任期未披露",
+          "description": "参与建立 Facebook 内部销售团队及 Austin 办公室；Tenacity 官网称其参与早期收入扩张，Accel 回顾其为公司早期销售负责人。",
+          "source_id": "aj_tenacity"
+        },
+        {
+          "organization": "Slack",
+          "title": "首位销售负责人",
+          "period": "2014 年 10 月加入；具体离任日期未披露",
+          "description": "Accel 称其从零搭建 GTM 体系、将业务从约 600 万美元扩展至超过 1 亿美元 ARR，并建立企业销售拓展体系；此为 Accel 对任职贡献的回顾。",
+          "source_id": "aj_accel"
+        },
+        {
+          "organization": "Glean",
+          "title": "GTM 负责人；后任顾问",
+          "period": "Accel 于 2025-11 资料称其之后继续担任顾问；该页面未标明最初任职年月",
+          "description": "Accel 于 2025 年的回顾称，他领导销售、支持和客户成功组织，并帮助 Glean 将 ARR 从约 400 万美元提升至超过 1 亿美元；具体口径为 Accel 的公开描述。",
+          "source_id": "aj_accel"
+        },
+        {
+          "organization": "Tenacity Capital",
+          "title": "创办人",
+          "period": "官网当前介绍；成立年月未披露",
+          "description": "创立面向 AI 原生企业的投资机构，强调在产品市场匹配开始显现后提供 GTM 与人才支持。",
+          "source_id": "aj_tenacity"
+        },
+        {
+          "organization": "Accel",
+          "title": "Venture Partner",
+          "period": "2025-11-20 Accel 宣布加入；2026 年任职状态未独立复核",
+          "description": "与 Accel 团队合作提供 go-to-market 支持，并通过自有 Tenacity Capital 进行投资。",
+          "source_id": "aj_accel"
+        }
+      ],
+      "education": [],
+      "experience_summary": "职业专长集中于企业软件的销售、客户成功、企业拓展和规模化 GTM 建设；从 Facebook 与 Slack 的早期销售组织建设，到 Glean 的企业 AI 商业化，再延伸为通过 Tenacity Capital 和 Accel 支持 AI 创业公司。",
       "track_record": [
         {
-          "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "融资记录将 Tenacity Capital（AJ Tennant）列为 Archestra 2026 年种子轮投资方；本库将 AJ Tennant 按本轮天使投资人记录。该披露案例不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "aj_tenacity",
+          "source_url": "https://www.tenacity-cap.com/",
+          "source_title": "Tenacity | Turns belief into velocity",
+          "source_content_hash": "ea774566bcf632e5e844a2ec84af2098e95fcf75b3dabdcefa6ada79234bc960",
+          "quote": "AJ Tennant started Tenacity Capital to take his lessons from building at the ground floor to investing.",
+          "quote_hash": "cea4765695c60dcb4d9ccc9d3186398da57d26f0027a6887aa2cce99c374e73e"
+        },
+        {
+          "source_id": "aj_accel",
+          "source_url": "https://www.accel.com/news/welcome-aj-tennant",
+          "source_title": "Welcome, AJ Tennant! | Accel",
+          "source_content_hash": "de602118f7968611f1f27f380f1fe66b98f482601460374f8de337b9e130f999",
+          "quote": "At Glean, AJ led the GTM organization across sales, support, and customer success, taking them from $4M to more than $100 million in ARR",
+          "quote_hash": "77b161e6cae9d4f9d57a72e421dd790fa3760830c9b76bf0504216265422590c"
+        },
+        {
+          "source_id": "aj_glean",
+          "source_url": "https://www.glean.com/authors/aj-tennant",
+          "source_title": "AJ Tennant | Glean",
+          "source_content_hash": "3c53ef400375a6f9b0f93014526bc1e4e049f1e78a0789b3f709fde8bd51fa0d",
+          "quote": "AJ is responsible for the business and go-to-market functions. Prior to Glean, AJ started the sales and success teams at Slack.",
+          "quote_hash": "8a7c7838daf50e0ca2aa1af21f64113b244e6af6c139f5ce7d14d5ac64be3142"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -162,7 +238,7 @@
           "quote_hash": "a8670517844350a95975b5997c67f1962acc84201b3bdf7ccac298c7d4abb782"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

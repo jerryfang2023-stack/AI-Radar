@@ -138,20 +138,63 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tim Berners-Lee 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Sir Tim Berners-Lee 是万维网的发明者。W3C 资料记载他于 1989 年在 CERN 发明万维网，并共同创办 Inrupt、担任该公司 CTO；MIT CSAIL 页面将其列为荣休教授并介绍其 W3C 工作。AMI Labs 融资报道将他列为个人投资者之一，但未披露个人出资额。",
+      "current_roles": [
+        {
+          "title": "联合创办人、首席技术官",
+          "organization": "Inrupt",
+          "source_id": "tim_w3c"
+        },
+        {
+          "title": "荣休教授",
+          "organization": "MIT CSAIL",
+          "source_id": "tim_mit"
+        },
+        {
+          "title": "主任",
+          "organization": "World Wide Web Consortium (W3C)",
+          "source_id": "tim_mit"
+        }
+      ],
+      "career": [
+        {
+          "organization": "CERN",
+          "title": "计算机科学家；万维网发明工作",
+          "period": "1989 年",
+          "description": "W3C 官方人物页面记载他于 1989 年在 CERN 发明万维网。",
+          "source_id": "tim_w3c"
+        }
+      ],
+      "education": [],
+      "experience_summary": "其公开履历以互联网基础技术、开放网络标准和去中心化数据平台为主；现有引用资料未用于补写未经核实的学历信息。",
       "track_record": [
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "1989 年在 CERN 发明万维网；这是 W3C 官方人物简介记录的核心技术成果。",
+          "source_id": "tim_w3c"
+        },
+        {
+          "description": "Futurum 报道将 Tim Berners-Lee 列为 AMI Labs 10.3 亿美元种子轮的个人投资者之一；该金额为整轮融资总额，未披露其个人出资额。",
           "source_id": "FISRC-6c35525e379488bf"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "tim_w3c",
+          "source_url": "https://www.w3.org/People/Berners-Lee/",
+          "source_title": "Tim Berners-Lee",
+          "source_content_hash": "de9b61fc69aa9357ecafd46634b779e30750b29bdb91263d1b627b97b1e33bba",
+          "quote": "Sir Tim Berners-Lee invented the World Wide Web while at CERN in 1989.",
+          "quote_hash": "d71a4e56cfc02396b1828828db2c327548ebc69785a2821eae50e7afc9a5bbb7"
+        },
+        {
+          "source_id": "tim_mit",
+          "source_url": "https://www.csail.mit.edu/person/tim-berners-lee",
+          "source_title": "Tim Berners-Lee | MIT CSAIL",
+          "source_content_hash": "56d1924876a45ddf717c281b7e1e4c27c14df2fd6033c65e4b443fdc0411c36e",
+          "quote": "Professor Emeritus",
+          "quote_hash": "dcc0440ca9fb04dce9afb0dddde71bd0be8eaec6efbc5b244da1426195d9251e"
+        },
         {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -161,7 +204,12 @@
           "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "公开资料支持其发明万维网及当前公开职务；AMi Labs 投资者报道未披露个人出资额，所引来源也未用于推断学历。",
+      "last_verified_at": "2026-09-28",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "identity_status": "verified"
     }
   }
 }

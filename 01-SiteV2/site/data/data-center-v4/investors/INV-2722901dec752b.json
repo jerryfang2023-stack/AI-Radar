@@ -137,21 +137,275 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Portage Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Portage 是 Sagard 旗下专注金融科技与金融服务的全球投资平台。联合创始人 Adam Felesky 和 Paul Desmarais III 于 2016 年启动平台；Portage Ventures 投资种子轮至 C 轮，覆盖保险、消费及中小企业金融、财富管理和金融科技基础设施。官网披露截至 2026 年 6 月 30 日平台 AUM 为 70 亿美元，并说明其包含净资产价值与未调用资本承诺。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "平台启动年份",
+          "value": "2016",
+          "source_id": "portage_founders"
+        },
+        {
+          "field": "investment_focus",
+          "label": "平台重点领域",
+          "value": [
+            "金融科技",
+            "金融服务"
+          ],
+          "source_id": "portage"
+        },
+        {
+          "field": "parent_company",
+          "label": "所属平台",
+          "value": "Sagard",
+          "source_id": "portage_parent"
+        },
+        {
+          "field": "investment_stages",
+          "label": "Portage Ventures 投资阶段",
+          "value": "种子轮至 C 轮",
+          "source_id": "portage_ventures"
+        },
+        {
+          "field": "sectors",
+          "label": "Portage Ventures 重点赛道",
+          "value": [
+            "保险",
+            "消费与中小企业金融",
+            "财富与资产管理",
+            "金融科技基础设施"
+          ],
+          "source_id": "portage_ventures"
+        },
+        {
+          "field": "reported_aum",
+          "label": "平台管理资产",
+          "value": "70 亿美元；截至 2026-06-30，按净资产价值与未调用资本承诺计算",
+          "source_id": "portage_aum_date"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "Adam Felesky 与 Paul Desmarais III 创立 Portage 平台。",
+          "source_id": "portage_founders"
+        },
+        {
+          "date": "2022",
+          "description": "通过 Portage Capital Solutions 扩展至后期金融科技及金融服务投资。",
+          "source_id": "portage_2022"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网披露平台组合包括 115 家以上公司，分布于 13 个国家；另称截至 2025-09-30 促成 142 项组合公司合作，合作口径包含概念验证、试点及正式商业合作。以上均为机构自述。",
+          "source_id": "portage_stats"
+        },
         {
           "description": "融资来源记录：Feathery · A轮 · 2026-07-14 · 本轮领投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-862aca17e7215abd"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Stephanie Choo — General Partner、Portage Ventures 联席负责人",
+          "organization": "Portage",
+          "source_id": "portage_stephanie"
+        }
+      ],
+      "career": [
+        {
+          "organization": "加拿大数字理财平台",
+          "title": "Stephanie Choo — 建设并推出平台的团队负责人",
+          "period": "加入 Portage 前；平台名称和任期未披露",
+          "description": "其简介称该平台目前服务超过 200 万加拿大人。",
+          "source_id": "portage_stephanie_career"
+        },
+        {
+          "organization": "Boston Consulting Group",
+          "title": "Stephanie Choo — 顾问",
+          "period": "此前；具体年月未披露",
+          "description": "为大型金融服务企业提供转型相关工作。",
+          "source_id": "portage_stephanie_career"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Queen’s University",
+          "qualification": "Stephanie Choo：商学学士（B.Comm.）",
+          "source_id": "portage_stephanie_edu"
+        }
+      ],
+      "experience_summary": "Portage 将投资与金融服务运营经验结合，并配有支持市场进入、网络安全、商业合作、业务加速和并购的价值创造团队。联合负责人 Stephanie Choo 的公开经历包括消费金融科技、支付和数字理财平台建设。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Portage",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage"
+        },
+        {
+          "kind": "phone",
+          "label": "蒙特利尔办公室",
+          "value": "+1 (514) 665-7567",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        },
+        {
+          "kind": "address",
+          "label": "蒙特利尔办公室地址",
+          "value": "1172 Sherbrooke Ouest, Montréal, QC H3A 1H6, Canada",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "多伦多办公室",
+          "value": "+1 (416) 607-2250",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        },
+        {
+          "kind": "address",
+          "label": "多伦多办公室地址",
+          "value": "161 Bay Street, Suite 5000, Toronto, ON M5J 2S1, Canada",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "巴黎办公室",
+          "value": "+33 (0)1 53 83 30 00",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        },
+        {
+          "kind": "address",
+          "label": "巴黎办公室地址",
+          "value": "49–51 Avenue George V, 75008 Paris, France",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "纽约办公室",
+          "value": "+1 (212) 380-5605",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室地址",
+          "value": "280 Park Avenue, 34th Floor West, New York, NY 10017, United States",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        },
+        {
+          "kind": "address",
+          "label": "伦敦办公室地址",
+          "value": "52 Jermyn Street, 4th Floor, London SW1Y 6LX, United Kingdom",
+          "url": "https://portageinvest.com/about/",
+          "source_id": "portage_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "portage",
+          "source_url": "https://portageinvest.com/about/",
+          "source_title": "About - Portage",
+          "source_content_hash": "d121264c73e7d425c7c2278070318fcba55fb4dec75d96e019f067a03bac87d5",
+          "quote": "Portage is a global investment platform focused on fintech and financial services. Our team partners with ambitious companies across all stages, providing flexible capital and delivering a global network of investors, commercial partners, advisors and value creation experts.",
+          "quote_hash": "59d99c8821c4bfcf66386211cabfc45c221b6f87efb5e0cf8f197a97483c4324"
+        },
+        {
+          "source_id": "portage_parent",
+          "source_url": "https://portageinvest.com/about/",
+          "source_title": "About - Portage",
+          "source_content_hash": "d121264c73e7d425c7c2278070318fcba55fb4dec75d96e019f067a03bac87d5",
+          "quote": "Portage is a global fintech and financial services investment platform within Sagard, a global multi-strategy alternative asset management firm.",
+          "quote_hash": "cb0e42563b21a0f77ab31115e23b0c4eb3abc4766fb87f6dbcbc700861b694f8"
+        },
+        {
+          "source_id": "portage_founders",
+          "source_url": "https://portageinvest.com/about/",
+          "source_title": "About - Portage",
+          "source_content_hash": "d121264c73e7d425c7c2278070318fcba55fb4dec75d96e019f067a03bac87d5",
+          "quote": "Co-founders Adam Felesky and Paul Desmarais III launched the platform in 2016 to help fintech and financial services entrepreneurs traverse the challenging terrain from local startup to global scale up.",
+          "quote_hash": "3569784edf2f2f46f9bc0cea0e637175315a4f35f8533e1d792cb0e024cc77b6"
+        },
+        {
+          "source_id": "portage_2022",
+          "source_url": "https://portageinvest.com/about/",
+          "source_title": "About - Portage",
+          "source_content_hash": "d121264c73e7d425c7c2278070318fcba55fb4dec75d96e019f067a03bac87d5",
+          "quote": "Since 2016, we have raised three venture funds and expanded to late-stage fintech and financial services through Portage Capital Solutions in 2022.",
+          "quote_hash": "8f087a1339746fcc6cbee4a959ddf6719e53c4b8c49569a12055b8b06881c2a3"
+        },
+        {
+          "source_id": "portage_aum",
+          "source_url": "https://portageinvest.com/about/",
+          "source_title": "About - Portage",
+          "source_content_hash": "d121264c73e7d425c7c2278070318fcba55fb4dec75d96e019f067a03bac87d5",
+          "quote": "$7.0B Assets under management¹",
+          "quote_hash": "a161e7d9821e7df346ec93a2c77d648ffa01656f5f2339e41a42f3a5fe338627"
+        },
+        {
+          "source_id": "portage_aum_date",
+          "source_url": "https://portageinvest.com/about/",
+          "source_title": "About - Portage",
+          "source_content_hash": "d121264c73e7d425c7c2278070318fcba55fb4dec75d96e019f067a03bac87d5",
+          "quote": "Assets Under Management (“AUM”) of Portage as of June 30, 2026, is the sum of the net asset value and uncalled capital commitments, of all funds and co-investment vehicles managed for the Portage platform.",
+          "quote_hash": "4f77f6fbaaf6962f422467fed840c33143d813381208c6a49d4cc60a620f7b94"
+        },
+        {
+          "source_id": "portage_stats",
+          "source_url": "https://portageinvest.com/about/",
+          "source_title": "About - Portage",
+          "source_content_hash": "d121264c73e7d425c7c2278070318fcba55fb4dec75d96e019f067a03bac87d5",
+          "quote": "115+ portfolio companies in 13 countries",
+          "quote_hash": "451d0a0f15193feb5f26484ccfb4e3e15ab5771a3ae8260581f4c506a19d1eec"
+        },
+        {
+          "source_id": "portage_contact",
+          "source_url": "https://portageinvest.com/about/",
+          "source_title": "About - Portage",
+          "source_content_hash": "d121264c73e7d425c7c2278070318fcba55fb4dec75d96e019f067a03bac87d5",
+          "quote": "Montreal 1172 Sherbrooke Ouest Montréal, QC H3A 1H6 Canada +1 (514) 665-7567",
+          "quote_hash": "175ef562998b4c73cf450ba4a21c23213efeffd504d76c14cfa5a79211076855"
+        },
+        {
+          "source_id": "portage_ventures",
+          "source_url": "https://portageinvest.com/portage-ventures/",
+          "source_title": "Portage Ventures - Portage",
+          "source_content_hash": "ea2d993f9152c7a612660676de68fea29fb43e928b514c90b5781e57e573e18c",
+          "quote": "Portage Ventures is a global fintech venture capital investment strategy. Focused on seed to series C opportunities in insurance, consumer & SMB finance, wealth & asset management, and fintech enablers.",
+          "quote_hash": "e3bc0f8f7b4c34b5cf9e3070e407d935203e3b11c63926622033c9096e540cbc"
+        },
+        {
+          "source_id": "portage_stephanie",
+          "source_url": "https://portageinvest.com/blog/team/stephanie-choo/",
+          "source_title": "Stephanie Choo - Portage",
+          "source_content_hash": "23a4bcc2266e0b27a169ed4c6a305f1ee88d358cb66db8b74af8a59847f9b24f",
+          "quote": "Stephanie Choo has served as a General Partner at Portage since 2016. She runs the investment team in North America.",
+          "quote_hash": "013e9c64f1527fdc070defe9800be84693d17c0a16d6b967d96a3580ebe31fb2"
+        },
+        {
+          "source_id": "portage_stephanie_career",
+          "source_url": "https://portageinvest.com/blog/team/stephanie-choo/",
+          "source_title": "Stephanie Choo - Portage",
+          "source_content_hash": "23a4bcc2266e0b27a169ed4c6a305f1ee88d358cb66db8b74af8a59847f9b24f",
+          "quote": "Prior to Portage, she led a team, which built and launched a leading digital advice platform in Canada, which now serves over 2M Canadians. Before that, she worked at BCG, where she nudged several large financial services incumbents on their journey to modernity.",
+          "quote_hash": "66ebf2965a2f165780909a84e08c86d5baefbb6d363ff62e9ed8a98cce1e5335"
+        },
+        {
+          "source_id": "portage_stephanie_edu",
+          "source_url": "https://portageinvest.com/blog/team/stephanie-choo/",
+          "source_title": "Stephanie Choo - Portage",
+          "source_content_hash": "23a4bcc2266e0b27a169ed4c6a305f1ee88d358cb66db8b74af8a59847f9b24f",
+          "quote": "She holds a B.Comm. from Queen’s University.",
+          "quote_hash": "d351b25a215262d132a1db730f44033d3e19adb459390469141faa6f203556d8"
+        },
         {
           "source_id": "FISRC-862aca17e7215abd",
           "source_url": "https://www.wealthmanagement.com/artificial-intelligence/feathery-raises-30m-for-ai-wealth-management-tools",
@@ -161,7 +415,11 @@
           "quote_hash": "259c5b7349e6625b0d4c857781df46b7c958edd5d9060707e2dd1daf2eb7f861"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于机构官网或机构本人公开资料核验；机构自述业绩和规模已注明口径。"
     }
   }
 }

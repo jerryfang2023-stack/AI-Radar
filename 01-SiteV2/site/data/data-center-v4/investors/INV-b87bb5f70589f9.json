@@ -138,20 +138,94 @@
     ],
     "public_profile": {
       "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "星海图 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "星海图（北京）人工智能科技股份有限公司成立于 2023 年 9 月，专注具身智能基础模型与机器人，并以“机器人本体 + 智能”的整体方案开展业务。融资数据库所列星海图领投鲸跃动力种子轮，是独立于星海图自身融资历史的对外投资活动；公开报道未披露星海图的单笔出资额。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公司名称",
+          "value": "星海图（北京）人工智能科技股份有限公司",
+          "source_id": "starsea_about"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2023 年 9 月",
+          "source_id": "starsea_about"
+        },
+        {
+          "field": "business_focus",
+          "label": "业务方向",
+          "value": "具身智能基础模型与机器人",
+          "source_id": "starsea_about"
+        },
+        {
+          "field": "product_strategy",
+          "label": "产品战略",
+          "value": "“机器人本体 + 智能”的整体方案",
+          "source_id": "starsea_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-09",
+          "description": "公司官网列示成立于 2023 年 9 月。",
+          "source_id": "starsea_about"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：鲸跃动力 · 种子轮 · 2026-05-19 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "投资界报道鲸跃动力于 2026-05-19 完成数千万元种子轮，星海图独家领投；数千万元是该轮融资总额，不是星海图单独出资金额。",
           "source_id": "FISRC-a613b9328225b67f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "星海图",
+          "url": "https://galaxea-ai.com/cn/about",
+          "source_id": "starsea_about"
+        },
+        {
+          "kind": "phone",
+          "label": "咨询热线",
+          "value": "4008-780-980",
+          "url": "https://galaxea-ai.com/cn/contact",
+          "source_id": "starsea_contact"
+        },
+        {
+          "kind": "email",
+          "label": "商业合作邮箱",
+          "value": "partners@galaxea-ai.com",
+          "url": "https://galaxea-ai.com/cn/contact",
+          "source_id": "starsea_contact"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官方联系表单",
+          "value": "星海图官方联系页面",
+          "url": "https://galaxea-ai.com/cn/contact",
+          "source_id": "starsea_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "starsea_about",
+          "source_url": "https://galaxea-ai.com/cn/about",
+          "source_title": "星海图（北京）人工智能科技股份有限公司",
+          "source_content_hash": "fa9393f5e89e1b437e0d6489e43903a642ae549cea37f1699ddf479c88438f7e",
+          "quote": "星海图（北京）人工智能科技股份有限公司",
+          "quote_hash": "0cdec361f65765c8b8115d193015f8afb7e8865e40f44afdc781794ef7e8e6db"
+        },
+        {
+          "source_id": "starsea_contact",
+          "source_url": "https://galaxea-ai.com/cn/contact",
+          "source_title": "星海图（北京）人工智能科技股份有限公司",
+          "source_content_hash": "d31eadfc410ad8b9f2fb4b212822a35cd9ae2767d397b8061062b128abc7c252",
+          "quote": "咨询热线：4008-780-980；商业合作：partners@galaxea-ai.com",
+          "quote_hash": "0bff3e3ba94c25ac440109cfb24e6a2634fa49ee79072b313166aab13fc27677"
+        },
         {
           "source_id": "FISRC-a613b9328225b67f",
           "source_url": "https://news.pedaily.cn/202605/564081.shtml",
@@ -161,7 +235,9 @@
           "quote_hash": "e67e7a75917feabdda2cee76dba500c9554c57ec5e5c05613b1c4ed9ffc56483"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "该投资者标签对应星海图公司本身；目前未发现官方资料确认存在独立命名的 CVC 基金或投资部门。联系方式用于咨询/商业合作，不应表述为投资申请渠道。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }

@@ -138,20 +138,88 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "John Hennessy 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "John L. Hennessy 是计算机科学家、学者和科技企业家，曾任斯坦福大学校长，现任 Alphabet 董事长，并参与 Knight-Hennessy Scholars。斯坦福资料记载他共同创办 MIPS 与 Atheros，获得 2017 年图灵奖和 2022 年 Draper 奖。融资报道称他是 Sail Research 的天使投资人，但未披露个人出资额。",
+      "current_roles": [
+        {
+          "title": "董事长",
+          "organization": "Alphabet",
+          "source_id": "hennessy_bio"
+        },
+        {
+          "title": "联合创办人、董事",
+          "organization": "Knight-Hennessy Scholars",
+          "source_id": "hennessy_bio"
+        },
+        {
+          "title": "荣休教授、荣休校长",
+          "organization": "Stanford University",
+          "source_id": "hennessy_engineering"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Stanford University",
+          "title": "校长",
+          "period": "2000–2016",
+          "description": "斯坦福官方资料记载其于 2000 至 2016 年担任校长；其在斯坦福任教始于 1977 年。",
+          "source_id": "hennessy_bio"
+        },
+        {
+          "organization": "MIPS Computer Systems",
+          "title": "共同创办人",
+          "period": "具体任期未披露",
+          "description": "斯坦福官方人物简介将其列为 MIPS 共同创办人。",
+          "source_id": "hennessy_bio"
+        },
+        {
+          "organization": "Atheros Communications",
+          "title": "共同创办人",
+          "period": "具体任期未披露",
+          "description": "斯坦福官方人物简介将其列为 Atheros 共同创办人。",
+          "source_id": "hennessy_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stony Brook University",
+          "qualification": "计算机科学博士，1977 年；计算机科学硕士，1975 年。",
+          "source_id": "hennessy_engineering"
+        },
+        {
+          "institution": "Villanova University",
+          "qualification": "电气工程学士，1973 年。",
+          "source_id": "hennessy_engineering"
+        }
+      ],
+      "experience_summary": "其公开经历横跨计算机体系结构研究、大学管理和科技创业。教育与学术职务按斯坦福官方页面记载。",
       "track_record": [
         {
-          "description": "融资来源记录：Sail Research · 多轮融资 · 2026-06-25 · 天使投资人 · $80 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "获 2017 年图灵奖及 2022 年 Draper 奖，奖项年份来自斯坦福官方人物简介。",
+          "source_id": "hennessy_bio"
+        },
+        {
+          "description": "PR Newswire 报道称 John Hennessy 是 Sail Research Seed and Series A 融资的天使投资人；报道中的 8000 万美元为两轮融资合计，未披露其个人出资额。",
           "source_id": "FISRC-11ff205cb2054931"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "hennessy_bio",
+          "source_url": "https://hennessy.stanford.edu/biography",
+          "source_title": "Biography | John L. Hennessy",
+          "source_content_hash": "a327d461d946d7b427fa108f4ae79540fd4931d750438f79e951e8a16046c0cc",
+          "quote": "John L. Hennessy is co-founder and director of Knight-Hennessy Scholars.",
+          "quote_hash": "fef9c0b4600b9aa313aaf3d49c1f44580f9b73cfb1e863de246f34177f596c9c"
+        },
+        {
+          "source_id": "hennessy_engineering",
+          "source_url": "https://engineering.stanford.edu/people/john-hennessy",
+          "source_title": "John Hennessy | Stanford University School of Engineering",
+          "source_content_hash": "8340cb701364ecbacd9502fc814f075713f528b7e2cafaa00d8dd1d139a9c9b2",
+          "quote": "B.E., Villanova University, Electrical Engineering (1973)",
+          "quote_hash": "0c60d7d0c1398c675b7fda00ece423024ef591a4c466669507f4856f16320eb3"
+        },
         {
           "source_id": "FISRC-11ff205cb2054931",
           "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
@@ -161,7 +229,12 @@
           "quote_hash": "7db526e6d196b96a5cba79a2bb112fd464b4279bde416b16c07c0fdef81e41ca"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "Sail Research 报道支持其天使投资人身份，不披露个人支票金额；80 million 美元是所报道两轮融资的总规模。",
+      "last_verified_at": "2026-09-28",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "identity_status": "verified"
     }
   }
 }

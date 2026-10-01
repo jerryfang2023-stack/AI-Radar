@@ -139,19 +139,140 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Blu Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-11-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Blu Ventures 官网历史、基金结构、投资主题、团队简介与公开融资披露整理。Fund target 与组合指标按机构自报，未将目标规模写成已募集金额。",
+      "summary": "Blu Ventures（官网亦使用 Blu Venture Investors 名称）是美国早期网络运营者社群发展而来的风险投资机构，官网称其于 2010 年由一群企业运营者创立，后转为专门基金模式。其核心领域是网络安全与企业技术，投资范围从早期到成长阶段，主要面向美国公司。官网称机构管理多只网络安全基金，包括 2021 年推出的 2,500 万美元早期基金，以及目标规模 5,000 万美元的下一代基金策略；后者是目标而非已确认募资额。",
+      "facts": [
+        {
+          "field": "founded_and_history",
+          "label": "成立与机构演进",
+          "value": "官网称 Blu 于 2010 年由曾任企业运营者创立，起初是早期创业者社群/天使组织，后来发展为以专门基金管理外部投资者资本的风险投资机构。",
+          "source_id": "blu_about"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资主题",
+          "value": "网络安全为核心，官网聚焦威胁检测、身份安全、基础设施防护及以 AI 应对新型威胁；历史专长也涵盖企业技术。",
+          "source_id": "blu_home"
+        },
+        {
+          "field": "investment_stage_and_geography",
+          "label": "阶段与地域",
+          "value": "官网称其支持从公司创立到规模化阶段的网络安全创新企业，总部位于华盛顿特区都会区，投资美国各地的创办团队。",
+          "source_id": "blu_home"
+        },
+        {
+          "field": "fund_structure",
+          "label": "基金结构（官网披露）",
+          "value": "官网介绍有多只垂直领域微型基金、2021 年推出的 $25m 早期网络安全基金，以及目标规模 $50m 的下一代基金策略。$50m 是目标值，官网该页未确认实际募集完成。",
+          "source_id": "blu_about"
+        },
+        {
+          "field": "team_bob_struble",
+          "label": "团队经历：Bob Struble",
+          "value": "Blu 官网将 Bob Struble 列为合伙人及 Cyber Fund 投资委员会成员。官网简介称他曾任 Directed 首席执行官，并于 1996–2015 年联合创立及领导 iBiquity Digital；后者将 HD Radio 技术商业化并被 DTS 收购。该履历和成果为个人官网简介自述。",
+          "source_id": "blu_bob_struble"
+        },
+        {
+          "field": "team_josh_miller",
+          "label": "团队经历：Josh Miller",
+          "value": "Blu 官网列其为 Senior Vice President、Cyber Fund 2026 Investment Committee 成员，2020 年加入；此前曾在 Brookings Institution 担任研究经理，并在美国国会工作数年，拥有 Georgetown MBA。",
+          "source_id": "blu_josh_miller"
+        },
+        {
+          "field": "team_mike_kostoff",
+          "label": "团队经历：Mike Kostoff",
+          "value": "Blu 官网将其列为 Operating Partner 与 Cyber Seed Fund Investment Committee 成员；其公开简介还列出 WISE Gateway 合伙人、The Kostoff Group 创办人，以及曾在美国陆军担任军事情报官九年的经历。",
+          "source_id": "blu_mike_kostoff"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "description": "官网称 Blu Ventures 起源于一群企业运营者组成的早期投资社群。",
+          "source_id": "blu_about"
+        },
+        {
+          "date": "2021",
+          "description": "官网称其推出一只 $25m 早期网络安全基金。",
+          "source_id": "blu_about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网主页展示 Huntress、ID.me 等投资组合案例；这些是机构展示的案例，不构成完整组合或基金回报。",
+          "source_id": "blu_home"
+        },
         {
           "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 既有投资方，本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa41049d7cbdf303"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Blu Ventures / Blu Venture Investors",
+          "url": "https://www.bluventureinvestors.com/",
+          "source_id": "blu_home"
+        },
+        {
+          "kind": "application",
+          "label": "提交融资项目",
+          "value": "官网提供 Submit a Pitch 融资项目入口。",
+          "url": "https://n8fvvmkspiz.typeform.com/to/YOZyVCAU",
+          "source_id": "blu_people"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "blu_home",
+          "source_url": "https://www.bluventureinvestors.com/",
+          "source_title": "Blu Ventures",
+          "source_content_hash": "67c06c2e742889380b97e544b58a2209bdbd539df6d7b2381f740eda5076ebff",
+          "quote": "Blu Ventures is a trusted, premier cybersecurity investor, managing capital to back market-defining founders.",
+          "quote_hash": "3838918141f3af0eabb2054783ab9c8f346f227f218f213f432a1d9743dd2b1a"
+        },
+        {
+          "source_id": "blu_about",
+          "source_url": "https://www.bluventureinvestors.com/about",
+          "source_title": "About Us | Blu Ventures",
+          "source_content_hash": "1128e66f986d4010270442ab443bca6a78d3b3fbb5c897c57047490f73d6e201",
+          "quote": "Blu Ventures began in 2010 as a group of former operators",
+          "quote_hash": "df678cc086f3fee78783011aa2bb20efaa905445e22c0eb4fa0b46473cfd2a51"
+        },
+        {
+          "source_id": "blu_people",
+          "source_url": "https://www.bluventureinvestors.com/people",
+          "source_title": "People | Blu Ventures",
+          "source_content_hash": "d9099a2a4ed8c31ab5055e9d17fc6c1b74321f42602125ce09a1c9a324ec4883",
+          "quote": "Our team blends operator experience, sector expertise, and disciplined investing to help founders grow from formation through scale.",
+          "quote_hash": "594eb8c46ba57cb8aa9d3dea9deaef87291731901b71a8a6f4e3052b23ab6130"
+        },
+        {
+          "source_id": "blu_bob_struble",
+          "source_url": "https://www.bluventureinvestors.com/bob-struble",
+          "source_title": "Bob Struble | Blu Ventures",
+          "source_content_hash": "8bab38512e517ca60c1494a117a35da2ece9fdd74d6140932cd1d8cd7a1ba990",
+          "quote": "From 1996 to 2015, Bob served as the co-founder and CEO of iBiquity Digital",
+          "quote_hash": "ae1755997d80fb2c96de9eb8e357459681d6683b59b6170e97cb6666b48dea00"
+        },
+        {
+          "source_id": "blu_josh_miller",
+          "source_url": "https://www.bluventureinvestors.com/josh-miller",
+          "source_title": "Josh Miller | Blu Ventures",
+          "source_content_hash": "b20a7373163f0fa09f8b12a9577c9bb1bbd82814d5955990ba82919a9cb1c664",
+          "quote": "Before Blu Ventures, he was a research manager at the Brookings Institution and previously served several years on Capitol Hill",
+          "quote_hash": "479a82e0d9dbf007339d123e76ecb0a0b453ead6496ff19fba82e94d5c9609f5"
+        },
+        {
+          "source_id": "blu_mike_kostoff",
+          "source_url": "https://www.bluventureinvestors.com/mike-kostoff",
+          "source_title": "Mike Kostoff | Blu Ventures",
+          "source_content_hash": "de65b3379825f97375cade4e33821ff0574abb71aa7f004317dd877d758b638e",
+          "quote": "Mike is a partner at Blu Venture Investors, a co-founder and partner of WISE Gateway LLC",
+          "quote_hash": "462b68dff48a7ef1f1812dca20757df5d029afcc724d5ce115403b061680c5d1"
+        },
         {
           "source_id": "FISRC-fa41049d7cbdf303",
           "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
@@ -161,7 +282,7 @@
           "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

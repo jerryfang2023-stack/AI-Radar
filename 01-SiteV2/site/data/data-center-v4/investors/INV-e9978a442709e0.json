@@ -137,21 +137,199 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Harpoon Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Harpoon Ventures 是一家 2018 年创立、关注美国战略科技能力的早期风险投资机构，重点布局 AI、深科技、软件基础设施与网络安全。机构由两届奥运奖牌得主、前美国海军海豹突击队员 Larsen Jensen 创立；官网称其组合企业已获得超过 10 亿美元美国政府合同。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2018",
+          "source_id": "harpoon"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "早期科技企业",
+          "source_id": "harpoon_larsen"
+        },
+        {
+          "field": "sectors",
+          "label": "重点领域",
+          "value": [
+            "AI",
+            "深科技",
+            "软件基础设施",
+            "网络安全"
+          ],
+          "source_id": "harpoon_thesis"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资主张",
+          "value": "支持与美国战略利益相关的关键技术建设者",
+          "source_id": "harpoon"
+        },
+        {
+          "field": "reported_aum",
+          "label": "创始人简介披露 AUM",
+          "value": "约 3 亿美元；官网简介未注明统计日期",
+          "source_id": "harpoon_larsen"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "由 Larsen Jensen 创立。",
+          "source_id": "harpoon"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Harpoon 官网自述，团队与组合公司协作获得超过 10 亿美元美国政府合同，范围从非稀释性资助到单笔超过 1 亿美元的项目合同；未列统计口径或审计依据。",
+          "source_id": "harpoon_outcome"
+        },
+        {
+          "description": "官网展示的组合案例包括 Solugen、n8n、Astranis、Aalo Atomics、MatX、Genesis Molecular AI、Starcloud 和 Northwood。",
+          "source_id": "harpoon_thesis"
+        },
         {
           "description": "融资来源记录：Malachyte · 种子轮 · 2026-08-06 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d328724fdcb5ff4b"
         }
       ],
-      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Larsen Jensen — Founder & General Partner",
+          "organization": "Harpoon Ventures",
+          "source_id": "harpoon_team"
+        },
+        {
+          "title": "Jeff Torrance — Managing Partner",
+          "organization": "Harpoon Ventures",
+          "source_id": "harpoon_team"
+        },
+        {
+          "title": "Riley Loftus — Investor",
+          "organization": "Harpoon Ventures",
+          "source_id": "harpoon_team"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Andreessen Horowitz / Lightspeed Venture Partners",
+          "title": "Larsen Jensen — 早期投资从业者",
+          "period": "创立 Harpoon 前；具体年月未披露",
+          "description": "支持不同领域的早期公司。",
+          "source_id": "harpoon_career"
+        },
+        {
+          "organization": "Goldman Sachs Principal Investment Area",
+          "title": "Larsen Jensen — 私募股权与成长期投资",
+          "period": "服役前；具体年月未披露",
+          "description": "在 Merchant Banking Division 参与私募股权和成长期投资。",
+          "source_id": "harpoon_career"
+        },
+        {
+          "organization": "U.S. Navy SEALs",
+          "title": "Larsen Jensen — 海军海豹突击队员",
+          "period": "6 年",
+          "description": "服役并参加阿富汗作战行动；官网称其为两届奥运奖牌得主。",
+          "source_id": "harpoon_larsen"
+        }
+      ],
+      "education": [
+        {
+          "institution": "University of Southern California",
+          "qualification": "Larsen Jensen：本科；专业未披露",
+          "source_id": "harpoon_education"
+        },
+        {
+          "institution": "Stanford Graduate School of Business",
+          "qualification": "Larsen Jensen：工商管理硕士",
+          "source_id": "harpoon_education"
+        }
+      ],
+      "experience_summary": "创始人 Larsen Jensen 的公开履历横跨 Navy SEAL、奥运竞技、私募投资与风险投资；其简介称已募集三支基金，并在数十家科技初创企业投资。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Harpoon Ventures",
+          "url": "https://www.harpoon.vc/",
+          "source_id": "harpoon"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官方联系表单",
+          "value": "Contact Us",
+          "url": "https://www.harpoon.vc/contact-us",
+          "source_id": "harpoon_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "harpoon",
+          "source_url": "https://www.harpoon.vc/",
+          "source_title": "Harpoon Ventures",
+          "source_content_hash": "3c1eaa8fae2a1bbba052c98b1c3c32e83e0f2ef878f97f434c0adeb2b5e95e13",
+          "quote": "Founded in 2018 by a two-time Olympic medalist and former Navy SEAL, Harpoon was built on a simple belief: technology will define geopolitics.",
+          "quote_hash": "bc4e0ff15dba79c466d6bdde683c565056e49c4c63fdb441ec176251b9759fdc"
+        },
+        {
+          "source_id": "harpoon_thesis",
+          "source_url": "https://www.harpoon.vc/",
+          "source_title": "Harpoon Ventures",
+          "source_content_hash": "3c1eaa8fae2a1bbba052c98b1c3c32e83e0f2ef878f97f434c0adeb2b5e95e13",
+          "quote": "We invest in audacious founders building across AI, deep tech, software infrastructure, and cybersecurity.",
+          "quote_hash": "94b49689c63a0b366bd2592033684d13c4329ce662fc9e2aed4890f40c5272b9"
+        },
+        {
+          "source_id": "harpoon_outcome",
+          "source_url": "https://www.harpoon.vc/",
+          "source_title": "Harpoon Ventures",
+          "source_content_hash": "3c1eaa8fae2a1bbba052c98b1c3c32e83e0f2ef878f97f434c0adeb2b5e95e13",
+          "quote": "over $1B in U.S. government contracts, spanning non-dilutive grants to $100M+ programs of record.",
+          "quote_hash": "ef75d403b2fefe1649fadc4dd62c183c0fd564ac43ad64a614fc8a0c705793de"
+        },
+        {
+          "source_id": "harpoon_team",
+          "source_url": "https://www.harpoon.vc/",
+          "source_title": "Harpoon Ventures",
+          "source_content_hash": "3c1eaa8fae2a1bbba052c98b1c3c32e83e0f2ef878f97f434c0adeb2b5e95e13",
+          "quote": "Larsen Jensen Founder & General Partner Jeff Torrance Managing Partner Riley Loftus Investor",
+          "quote_hash": "692c95fe8ba731885a9b3971ef071a7a8fd7da9353f396425af16456e734d30a"
+        },
+        {
+          "source_id": "harpoon_larsen",
+          "source_url": "https://www.harpoon.vc/team/larsen-jensen",
+          "source_title": "Harpoon VC",
+          "source_content_hash": "2b67416c802aa79bf4d2a1087535788aea429cc1c6bb415559c0f310d0f0fef1",
+          "quote": "Larsen Jensen is the Founder and Managing General Partner of Harpoon Ventures, a $300M AUM venture capital firm specializing in early-stage technology companies.",
+          "quote_hash": "1fec206a2a95892b67f831255a4b9465fd2654571b15f4689deec445fa712b3e"
+        },
+        {
+          "source_id": "harpoon_career",
+          "source_url": "https://www.harpoon.vc/team/larsen-jensen",
+          "source_title": "Harpoon VC",
+          "source_content_hash": "2b67416c802aa79bf4d2a1087535788aea429cc1c6bb415559c0f310d0f0fef1",
+          "quote": "Prior to founding Harpoon, Larsen gained venture experience at Andreessen Horowitz and Lightspeed Venture Partners, where he supported early-stage companies across various sectors. His journey into venture capital was preceded by a role in Goldman Sachs’ Principal Investment Area (PIA) within its Merchant Banking Division, focusing on private equity and growth-stage investing.",
+          "quote_hash": "29f26c302299c9d5b578e5ff5adb4153774026d932c491873a9cfcf6af2aaad7"
+        },
+        {
+          "source_id": "harpoon_education",
+          "source_url": "https://www.harpoon.vc/team/larsen-jensen",
+          "source_title": "Harpoon VC",
+          "source_content_hash": "2b67416c802aa79bf4d2a1087535788aea429cc1c6bb415559c0f310d0f0fef1",
+          "quote": "Larsen earned his undergraduate degree from the University of Southern California, where he also gained early financial experience working at UBS and Citizens Business Bank. After leaving the Navy, he pursued his MBA at Stanford Graduate School of Business.",
+          "quote_hash": "672bdb342d9ea26edaf1d08bb32dcb5007b097df27aff8e60f653368030ef563"
+        },
+        {
+          "source_id": "harpoon_contact",
+          "source_url": "https://www.harpoon.vc/contact-us",
+          "source_title": "Contact Us - Harpoon Ventures",
+          "source_content_hash": "0437cae3a727c07152e1c7d7846d4c3847705512e40cd2cf9cea673d9a45bf2c",
+          "quote": "Get in touch Contact Us Your Name Email Address How can we help Message",
+          "quote_hash": "bb7f62ac4fcabeda0c133f689eb33da018fbf7300f3328f1a820c49addc278c6"
+        },
         {
           "source_id": "FISRC-d328724fdcb5ff4b",
           "source_url": "https://techcrunch.com/2026/08/06/ex-spotify-employees-raise-10m-to-bring-the-ai-behind-its-recommendations-to-e-commerce/",
@@ -161,7 +339,11 @@
           "quote_hash": "fc5a5ad2fbd0916f77d755181d69af06d3a4eccd7b9877bde9d2df943ebe7c7e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "基于机构官网或机构本人公开资料核验；自述数据已注明口径，未公开的信息留空。"
     }
   }
 }

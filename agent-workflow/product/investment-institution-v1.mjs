@@ -47,6 +47,10 @@ const INVESTOR_ALIAS_GROUPS = [
   { name: "复星创富", aliases: ["Fosun Capital"], kind: "investment_institution", stableKey: "name:复星创富" },
   { name: "复星锐正", aliases: ["复星锐正资本", "Fosun RZ Capital"], kind: "investment_institution", stableKey: "name:复星锐正" },
   { name: "元璟资本", aliases: ["Vision Plus Capital"], kind: "investment_institution", stableKey: "name:元璟资本" },
+  { name: "360 ONE Asset", aliases: [], kind: "investment_institution", stableKey: "name:360oneasset" },
+  { name: "博裕资本", aliases: [], kind: "investment_institution", stableKey: "name:博裕资本" },
+  { name: "博将资本", aliases: [], kind: "investment_institution", stableKey: "name:博将资本" },
+  { name: "中信建投资本", aliases: [], kind: "investment_institution", stableKey: "name:中信建投资本" },
   { name: "Benchmark", aliases: ["Benchmark Capital"], kind: "investment_institution", stableKey: "name:benchmark" },
   { name: "Greycroft", aliases: [], kind: "investment_institution", stableKey: "name:greycroft" },
   { name: "Jane Street", aliases: [], kind: "investment_institution", stableKey: "name:janestreet" },
@@ -76,6 +80,16 @@ function roleCode(role = "", scope = "current_round") {
   if (/领投|led\s+the\s+round/iu.test(role)) return "lead";
   if (/参投|参与|追加|follow-?on|participat/iu.test(role)) return "participant";
   return "other_current_round";
+}
+
+function historicalAnnouncementDate(item = {}) {
+  const raw = item.announced_at || item.round_context?.announced_at || item.round_context?.date || item.role || "";
+  const match = String(raw).match(/(?:^|[^\d])((?:19|20)\d{2})[-/.年](0?[1-9]|1[0-2])(?:[-/.月](0?[1-9]|[12]\d|3[01])日?)?/u);
+  if (!match) return "";
+  const month = match[2].padStart(2, "0");
+  return match[3]
+    ? `${match[1]}-${month}-${match[3].padStart(2, "0")}`
+    : `${match[1]}-${month}`;
 }
 
 function investorKind(rows = [], entityIndex = {}, identity = {}) {
@@ -124,7 +138,8 @@ function compactActivity(activity) {
 }
 
 function activityId(card, item, scope, name) {
-  const amount = card.financing?.amount_normalized || {};
+  const currentRound = scope === "current_round";
+  const amount = currentRound ? card.financing?.amount_normalized || {} : {};
   const evidenceKey = (item.evidence_refs || [])
     .map((evidence) => evidence.quote_hash || clean(evidence.quote))
     .filter(Boolean)
@@ -134,7 +149,8 @@ function activityId(card, item, scope, name) {
     normalizedName(name),
     scope,
     roleCode(item.role, scope),
-    card.financing?.round_code || "",
+    currentRound ? card.financing?.round_code || "" : item.round_context?.code || "",
+    currentRound ? "" : historicalAnnouncementDate(item),
     amount.currency || "",
     amount.value ?? amount.min_value ?? "",
     amount.max_value ?? "",
@@ -216,15 +232,15 @@ export function buildInvestmentInstitutionRegistry(cards = [], entityIndex = {},
       company_entity_id: card.company?.application_entity_id || card.company?.entity_id || "",
       company_canonical_entity_id: card.company?.canonical_entity_consistent ? card.company?.entity_id || "" : "",
       company_name: card.company?.name || "",
-      round: card.financing?.round || "",
-      round_code: card.financing?.round_code || "",
-      round_original: card.financing?.round_original || "",
-      amount_original: card.financing?.amount_original || card.financing?.amount || "",
-      amount_normalized: card.financing?.amount_normalized || null,
-      announced_at: card.financing?.announced_at || "",
+      round: scope === "current_round" ? card.financing?.round || "" : item.round_context?.label || "历史轮次未披露",
+      round_code: scope === "current_round" ? card.financing?.round_code || "" : item.round_context?.code || "undisclosed",
+      round_original: scope === "current_round" ? card.financing?.round_original || "" : item.round_context?.original || "",
+      amount_original: scope === "current_round" ? card.financing?.amount_original || card.financing?.amount || "" : "",
+      amount_normalized: scope === "current_round" ? card.financing?.amount_normalized || null : null,
+      announced_at: scope === "current_round" ? card.financing?.announced_at || "" : historicalAnnouncementDate(item),
       market_region: card.market_scope?.market_region || "GLOBAL",
       china_market_match: card.market_scope?.market_region === "CN",
-      disclosure_status: card.financing?.disclosure_status || "unknown",
+      disclosure_status: scope === "current_round" ? card.financing?.disclosure_status || "unknown" : "unknown",
       scope,
       role: item.role || "",
       role_code: roleCode(item.role, scope),

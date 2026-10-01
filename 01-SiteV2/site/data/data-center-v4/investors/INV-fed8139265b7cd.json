@@ -138,20 +138,61 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mark Cuban 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Mark Cuban 是美国企业家和投资人。ABC 官方人物资料记载其创办 MicroSolutions、共同创办 Audionet，并共同创办线上药房 Cost Plus Drugs；该人物资料还将其描述为持续活跃的创业者和投资人。融资报道将他列为 AMI Labs 种子轮个人投资者之一，未披露个人出资额。",
+      "current_roles": [
+        {
+          "title": "企业家、投资人",
+          "organization": "独立投资与创业活动",
+          "source_id": "mark_abc"
+        }
+      ],
+      "career": [
+        {
+          "organization": "MicroSolutions",
+          "title": "创办者",
+          "period": "具体任期未披露",
+          "description": "ABC 官方人物资料记载其创办 MicroSolutions；引用页面未列出任职起止年份。",
+          "source_id": "mark_abc"
+        },
+        {
+          "organization": "Audionet.com",
+          "title": "共同创办者",
+          "period": "具体任期未披露",
+          "description": "ABC 官方人物资料记载其共同创办 Audionet.com。",
+          "source_id": "mark_abc"
+        },
+        {
+          "organization": "Cost Plus Drugs",
+          "title": "共同创办者",
+          "period": "2019 年创办；2022 年 1 月上线",
+          "description": "ABC 官方人物资料记载其于 2019 年共同创办 Cost Plus Drugs，并于 2022 年 1 月上线。",
+          "source_id": "mark_abc"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Indiana University",
+          "qualification": "毕业；官方人物资料未在所引内容中列出学位或专业。",
+          "source_id": "mark_abc"
+        }
+      ],
+      "experience_summary": "公开履历覆盖科技创业、互联网业务和医药零售；本档案按 ABC 官方人物资料记录，不推断具体未公开任期。",
       "track_record": [
         {
-          "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Futurum 报道将 Mark Cuban 列为 AMI Labs 10.3 亿美元种子轮的个人投资者之一；该数额是整轮融资总额，未披露 Cuban 的个人出资额。",
           "source_id": "FISRC-6c35525e379488bf"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "mark_abc",
+          "source_url": "https://www.detpress.com/abc/bios/mark-cuban/",
+          "source_title": "MARK CUBAN – ABC Press",
+          "source_content_hash": "e69e8f0b2fd089e938b1b78a271c591354828f6fc6c6331141ef44a296ab01b2",
+          "quote": "Cuban has continued to be an active entrepreneur and investor.",
+          "quote_hash": "8df6e781669618ff41188fadd3008bf2ebbab4b4d6d794b795dac90f105e45d8"
+        },
         {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -161,7 +202,12 @@
           "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "AMI Labs 报道仅能支持其被列为个人投资者之一，不代表已核验投资协议、具体出资或与融资金额相同的个人投资规模。",
+      "last_verified_at": "2026-09-28",
+      "facts": [],
+      "milestones": [],
+      "contacts": [],
+      "identity_status": "verified"
     }
   }
 }

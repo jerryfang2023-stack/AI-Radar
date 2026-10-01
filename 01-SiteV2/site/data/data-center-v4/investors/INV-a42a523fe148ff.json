@@ -137,21 +137,150 @@
       }
     ],
     "public_profile": {
+      "summary": "Conversion Capital 是成立于 2015 年的早期及成长期风险投资机构，关注 AI/ML、垂直软件、云基础设施、金融科技、国家安全、医疗健康及制造物流。官网自报组合公司 70 余家、组合后续融资累计 70 亿美元、总市值 350 亿美元；该页未附统计方法。创始人 Christian Lawless 曾在 Lehman Brothers 和 Nomura 领导多资产类别销售与交易团队。",
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Conversion Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "组合数量、后续融资和市值为官网自报汇总数据，网站未披露计算口径。Cognition Series D 为超过 10 亿美元的整轮融资；Conversion Capital 作为既有投资人被列出，单家出资额未披露。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2015 年",
+          "source_id": "conversion_profile"
+        },
+        {
+          "field": "focus",
+          "label": "官网列示关注领域",
+          "value": "AI/ML、垂直软件、云基础设施、金融科技、国家安全、医疗健康、制造与物流",
+          "source_id": "conversion_profile"
+        },
+        {
+          "field": "portfolio",
+          "label": "官网自报组合指标",
+          "value": "70+ 家公司；组合后续融资累计 70 亿美元；总市值 350 亿美元，统计方法未披露",
+          "source_id": "conversion_profile"
+        }
+      ],
+      "current_roles": [
+        {
+          "title": "创始人、管理合伙人",
+          "organization": "Conversion Capital · Christian Lawless",
+          "source_id": "conversion_team"
+        },
+        {
+          "title": "风险合伙人",
+          "organization": "Conversion Capital · Andres Sucre",
+          "source_id": "conversion_andres"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Christian Lawless · Lehman Brothers / Nomura",
+          "title": "董事总经理",
+          "period": "创立 Conversion Capital 前；日期未披露",
+          "description": "领导多资产类别销售与交易团队。",
+          "source_id": "conversion_team"
+        },
+        {
+          "organization": "Andres Sucre · Reservamos / HSBC Mexico / Deutsche Bank",
+          "title": "Reservamos 创始人兼 CEO；HSBC Mexico 独立董事；Deutsche Bank 副总裁助理",
+          "period": "官网列为现职；任职起始日期未披露",
+          "description": "作为 Conversion 风险合伙人关注美墨跨境投资。",
+          "source_id": "conversion_andres"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Christian Lawless · Ohio Wesleyan University",
+          "qualification": "经济学学位；学位类型未注明",
+          "source_id": "conversion_team"
+        },
+        {
+          "institution": "Andres Sucre · Worcester Polytechnic Institute",
+          "qualification": "管理工程学",
+          "source_id": "conversion_andres_education"
+        },
+        {
+          "institution": "Andres Sucre · MIT Sloan",
+          "qualification": "MBA",
+          "source_id": "conversion_andres_education"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Cognition · D轮 · 2026-05-27 · 既有投资方，本轮参投 · 超过 10 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Cognition 官方公告将 Conversion Capital 列为超过 10 亿美元 Series D 的既有投资人；未披露该机构本轮投资额。",
           "source_id": "FISRC-a7bbb48af7503bf0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Conversion Capital 官网",
+          "value": "Conversion Capital",
+          "url": "https://conversioncapital.com/",
+          "source_id": "conversion_profile"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系",
+          "value": "info@conversioncapital.com",
+          "source_id": "conversion_contact"
+        },
+        {
+          "kind": "email",
+          "label": "投资者联系",
+          "value": "ir@conversioncapital.com",
+          "source_id": "conversion_contact"
+        },
+        {
+          "kind": "email",
+          "label": "媒体联系",
+          "value": "pr@conversioncapital.com",
+          "source_id": "conversion_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "conversion_profile",
+          "source_url": "https://conversioncapital.com/profile/",
+          "source_title": "About - Conversion Capital",
+          "source_content_hash": "9585529b6e345a14a6cd7a74e4d31874a4982199abf811d3b6a99cbc0156b509",
+          "quote": "Year Firm Founded 2015 Portfolio Companies 70+ Follow-on Capital Raised $7.0 BN Total Market Cap Created $35 BN",
+          "quote_hash": "52d1852d169b7659126ddb1135b72990ca1ed5be2f6e1674239efa2b2dc96591"
+        },
+        {
+          "source_id": "conversion_contact",
+          "source_url": "https://conversioncapital.com/profile/",
+          "source_title": "About - Conversion Capital",
+          "source_content_hash": "9585529b6e345a14a6cd7a74e4d31874a4982199abf811d3b6a99cbc0156b509",
+          "quote": "General Contact (info@conversioncapital.com) Investor Inquries (ir@conversioncapital.com) Media Inquiries (pr@conversioncapital.com)",
+          "quote_hash": "e74c9cfd6da2745fa9e3f2e23f6d3ced84b364515b88f4a905a52f44947c1e58"
+        },
+        {
+          "source_id": "conversion_team",
+          "source_url": "https://conversioncapital.com/people/",
+          "source_title": "People - Conversion Capital",
+          "source_content_hash": "b0808c8034ba29d7452bbdb27b0a1e14c31269a5975d0db0f799abc937e01293",
+          "quote": "Christian Lawless is the Founder and Managing Partner of Conversion Capital, an early and growth stage venture capital firm focused on Generative AI, financial technology, cloud infrastructure, and national security. Prior to founding Conversion Capital, he was a Managing Director at Lehman Brothers and Nomura, where he led sales and trading teams across multiple asset classes.",
+          "quote_hash": "09465ec1fa32a88dd480a3833b6aff4e757f639677bce319428586de6a0af543"
+        },
+        {
+          "source_id": "conversion_andres",
+          "source_url": "https://conversioncapital.com/people/",
+          "source_title": "People - Conversion Capital",
+          "source_content_hash": "b0808c8034ba29d7452bbdb27b0a1e14c31269a5975d0db0f799abc937e01293",
+          "quote": "Andres is founder and CEO of Reservamos. As a Venture Partner, Andres is focused on the increasing cross-border investment opportunities between Mexico and the U.S. Before founding Reservamos, Andres was an AVP at Deutsche Bank.",
+          "quote_hash": "aa7aabb07c683e317926a922f0410df9544aac9e6717099f31e2661a44088c51"
+        },
+        {
+          "source_id": "conversion_andres_education",
+          "source_url": "https://conversioncapital.com/people/",
+          "source_title": "People - Conversion Capital",
+          "source_content_hash": "b0808c8034ba29d7452bbdb27b0a1e14c31269a5975d0db0f799abc937e01293",
+          "quote": "He studied Management Engineering at WPI and holds an MBA from MIT Sloan.",
+          "quote_hash": "d926e0cc03d305a869176e51a832170c1ba2011686094bb744dc3b545beb8b10"
+        },
         {
           "source_id": "FISRC-a7bbb48af7503bf0",
           "source_url": "https://cognition.com/blog/series-d",
@@ -161,7 +290,8 @@
           "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "milestones": []
     }
   }
 }

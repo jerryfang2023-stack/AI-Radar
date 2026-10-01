@@ -129,21 +129,278 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "firstminute capital 当前按“投资组织”收录。最新融资披露记录日期为 2025-10-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "firstminute capital 是一家以伦敦为基地、面向欧洲创业者的早期风险投资机构。其官网称在公司创立初期提供首笔机构资金，重点关注 AI 与深科技；公司官网公开的投资组合样例包括 Wayve、n8n、Mistral AI 和 Storyblok。Companies House 记录其法律主体 FIRSTMINUTE CAPITAL LLP 于 2015 年注册；机构职位站将品牌创立年份标为 2017。官网自报管理规模、组合数量、投资票面区间及独角兽相关数字，页面间的“种子阶段独角兽”统计为 11 与 12 两种口径，不应当作经审计回报。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "英国注册法律主体",
+          "value": "FIRSTMINUTE CAPITAL LLP（Companies House 编号 OC403024；有限责任合伙企业；状态 Active）。",
+          "source_id": "fm_companies_house"
+        },
+        {
+          "field": "registered_office",
+          "label": "注册办公地址",
+          "value": "Level 6 Arundel Street Building, 180 Strand, 2 Arundel Street, London, WC2R 3DA",
+          "source_id": "fm_companies_house"
+        },
+        {
+          "field": "brand_founded_year",
+          "label": "品牌创立年份（职位站资料）",
+          "value": "2017（职位站标注年份；与 LLP 于 2015 年注册为不同口径，不能据此认定基金开始投资的准确日期）。",
+          "source_id": "fm_jobboard_profile"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "官网页脚所述监管信息",
+          "value": "官网页脚称 firstminute capital LLP 获英国金融行为监管局（FCA）授权并受其监管，FRN 820688；本档案按官网自述记录。",
+          "source_id": "fm_homepage_regulation"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略与地域",
+          "value": "官网将其定位为欧洲创业者面向全球科技市场的首笔机构投资方，强调公司创立初期投资，并称没有阶段早到不能投资。",
+          "source_id": "fm_homepage_strategy"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "其官方职位站简介列出 pre-seed 与 seed；官网则强调公司创立初期投资，并称自己“不只是种子基金”，但未在所引页面列出其他阶段的具体策略。",
+          "source_id": "fm_jobboard_profile"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点技术领域",
+          "value": [
+            "人工智能（AI）",
+            "深科技（DeepTech）"
+          ],
+          "source_id": "fm_homepage_strategy"
+        },
+        {
+          "field": "indicative_ticket_size",
+          "label": "官网自报单笔投资票面区间",
+          "value": "£1m–£3m；为官网公开区间，不表示每笔实际出资额。",
+          "source_id": "fm_homepage_metrics"
+        },
+        {
+          "field": "assets_under_management",
+          "label": "官网自报管理规模",
+          "value": "$500m AUM（官网页面口径；非经审计基金回报或对外募集承诺）。",
+          "source_id": "fm_homepage_metrics"
+        },
+        {
+          "field": "portfolio_and_network_metrics",
+          "label": "官网自报组合与创始人网络规模",
+          "value": [
+            "170+ Portfolio Companies",
+            "130+ Unicorn Founder Backers"
+          ],
+          "source_id": "fm_homepage_metrics"
+        },
+        {
+          "field": "team_roster",
+          "label": "官网团队页当前列示成员",
+          "value": [
+            "Brent Hoberman（联合创始人、管理合伙人）",
+            "Spencer Crawley（联合创始人、管理合伙人）",
+            "Adriana Vitagliano（合伙人）",
+            "Lorcan Delaney（合伙人）",
+            "Michael Stothard（合伙人）",
+            "Min Nolan（首席运营官）",
+            "Anaïs Benazet（社群与活动负责人）",
+            "Abby Hughes（运营负责人）",
+            "Steve Crossan（风险合伙人）",
+            "Ben McCloskey（财务总监）",
+            "Tim Brierley（首席财务官）"
+          ],
+          "source_id": "fm_team_leadership"
+        },
+        {
+          "field": "founder_background_brent_hoberman",
+          "label": "联合创始人履历｜Brent Hoberman",
+          "value": "机构本人简介称其于 1998 年联合创办 lastminute.com 并任 CEO；2010 年联合创办 Made.com。履历来自机构自述。",
+          "source_id": "fm_brent_bio_made"
+        },
+        {
+          "field": "cofounder_background_spencer_crawley",
+          "label": "联合创始人履历｜Spencer Crawley",
+          "value": "机构本人简介称其职业生涯始于 Goldman Sachs 莫斯科固定收益、货币及大宗商品部门，之后成为 DMC Partners 首位员工；其后在 INSEAD 获 MBA，并曾在 AppDirect 慕尼黑办公室任职。履历来自机构自述。",
+          "source_id": "fm_spencer_bio"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015-11-20",
+          "description": "Companies House 记录 FIRSTMINUTE CAPITAL LLP 注册成立；公司此前名称曾包括 BRENT CAPITAL LLP。该日期是法律主体注册日期，不等同于品牌或首支基金起始日。",
+          "source_id": "fm_companies_house"
+        },
+        {
+          "date": "2017",
+          "description": "firstminute 官方职位站公司资料将创立年份标为 2017；该标注与 LLP 2015 年注册是不同口径。",
+          "source_id": "fm_jobboard_profile"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：n8n GmbH · C轮 · 2025-10-09 · 种子轮领投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "官网组合展示页列有 Wayve、n8n、Mistral AI、Storyblok 等公司；该清单为机构公开展示案例，不表示这些项目均由同一基金持有、已退出或产生特定回报。",
+          "source_id": "fm_homepage_portfolio"
+        },
+        {
+          "description": "官网首页称其在种子阶段支持过 11 家独角兽，团队页另称 12 家；页面未解释统计范围或时点，故保留两种机构自述，不合并为单一业绩数字。",
+          "source_id": "fm_homepage_seed_outcomes"
+        },
+        {
+          "description": "Brent Hoberman 在 2025 年关于 n8n 的公开贴文回顾 firstminute capital 于 2019 年领投该公司的种子轮；该引用没有披露 firstminute 的具体投资额。当前融资记录把此历史关系关联到 n8n 2025 年 $180M Series C，$180M 是 n8n 该轮金额，不是 firstminute 的种子轮出资额。",
           "source_id": "FISRC-f6319614d583c9a4"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "法律主体由 Companies House 编号、名称和状态确认，并与官网页脚的 LLP 名称对应；官网监管信息、团队履历、组合数据及管理规模按机构自述标注。品牌资料标注 2017 年创立，法律主体则在 2015 年注册，不能混作一个成立日期。官网首页与团队页对“在种子阶段支持的独角兽”分别写 11 家和 12 家，未发现统一统计口径或基金级回报披露。现有融资库里 n8n 2025 年 Series C 的 1.8 亿美元只是融资总额；Brent Hoberman 的来源只确认 firstminute 曾领投其 2019 种子轮，未披露 firstminute 出资金额。Brent Hoberman 和 Spencer Crawley 的履历已作为机构团队资料记录；当前实体索引没有可供关联的对应人物 ID，未新造人物记录。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "firstminute capital",
+          "url": "https://www.firstminute.capital/",
+          "source_id": "fm_homepage_strategy"
+        },
+        {
+          "kind": "contact_form",
+          "label": "融资项目提交入口（官网“let’s meet”链接）",
+          "value": "Inbound dealflow",
+          "url": "https://form.typeform.com/to/pCFphSxu",
+          "source_id": "fm_homepage_strategy"
+        },
+        {
+          "kind": "application",
+          "label": "融资联系邮箱（官方职位站列示）",
+          "value": "team@firstminute.capital",
+          "url": "https://jobs.firstminute.capital/companies/firstminute-capital-2",
+          "source_id": "fm_fundraising_contact"
+        },
+        {
+          "kind": "address",
+          "label": "Companies House 注册办公地址",
+          "value": "Level 6 Arundel Street Building, 180 Strand, 2 Arundel Street, London, WC2R 3DA",
+          "url": "https://find-and-update.company-information.service.gov.uk/company/OC403024",
+          "source_id": "fm_companies_house"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fm_homepage_strategy",
+          "source_url": "https://www.firstminute.capital/",
+          "source_title": "The Home of Magnetic Ambition | firstminute capital",
+          "source_content_hash": "e211abb02c563064d3c9d4bdfb9b56801c31c987b20a849fd60bdef138eacaa5",
+          "quote": "We are the first institutional cheque into European founders building global technology champions.",
+          "quote_hash": "fe7270ac21bfd1ba584460dcd11f28ea6b61e3d788cba0994e27c3f0f0abe616"
+        },
+        {
+          "source_id": "fm_homepage_metrics",
+          "source_url": "https://www.firstminute.capital/",
+          "source_title": "The Home of Magnetic Ambition | firstminute capital",
+          "source_content_hash": "e211abb02c563064d3c9d4bdfb9b56801c31c987b20a849fd60bdef138eacaa5",
+          "quote": "170+ Portfolio Companies\n$500m AUM\n130+ Unicorn Founder Backers\n£1m - £3m Tickets",
+          "quote_hash": "ec5e02ec0b618b52bd4b49d3cb762252d1c8d9d102baca9d6a01504fe016c101"
+        },
+        {
+          "source_id": "fm_homepage_portfolio",
+          "source_url": "https://www.firstminute.capital/",
+          "source_title": "The Home of Magnetic Ambition | firstminute capital",
+          "source_content_hash": "e211abb02c563064d3c9d4bdfb9b56801c31c987b20a849fd60bdef138eacaa5",
+          "quote": "Wayve\nn8n\nMistral AI\nStoryblok",
+          "quote_hash": "3aea732fbaa13f559490274b923cd9dadf30c88f6e99b3ea4a206ef5487270f1"
+        },
+        {
+          "source_id": "fm_homepage_seed_outcomes",
+          "source_url": "https://www.firstminute.capital/",
+          "source_title": "The Home of Magnetic Ambition | firstminute capital",
+          "source_content_hash": "e211abb02c563064d3c9d4bdfb9b56801c31c987b20a849fd60bdef138eacaa5",
+          "quote": "We’ve backed 11 unicorns at seed",
+          "quote_hash": "b68b101c38e7d1c74cf4285d8bc4bad173be8de86cd5a443e9ab535c3bd1b0ca"
+        },
+        {
+          "source_id": "fm_homepage_regulation",
+          "source_url": "https://www.firstminute.capital/",
+          "source_title": "The Home of Magnetic Ambition | firstminute capital",
+          "source_content_hash": "e211abb02c563064d3c9d4bdfb9b56801c31c987b20a849fd60bdef138eacaa5",
+          "quote": "firstminute capital LLP is authorised and regulated by the Financial Conduct Authority FRN 820688",
+          "quote_hash": "b06d6b5c950f416582e18c14e949707f0d532088035779838bf17b60601998eb"
+        },
+        {
+          "source_id": "fm_team_leadership",
+          "source_url": "https://www.firstminute.capital/team",
+          "source_title": "Our Team are a Community of Entrepreneurs | firstminute capital",
+          "source_content_hash": "9bd5a4382ea22cfacb35d1a9d525607479393d0dc55882d9abafef65165891d8",
+          "quote": "Brent Hoberman Co-Founder & Managing Partner\nSpencer Crawley Co-Founder & Managing Partner\nAdriana Vitagliano Partner\nLorcan Delaney Partner\nMichael Stothard Partner",
+          "quote_hash": "76fa70850c2e56942351338c6573ce448a638460181aeaa26bc591e18569ab6a"
+        },
+        {
+          "source_id": "fm_team_operations",
+          "source_url": "https://www.firstminute.capital/team",
+          "source_title": "Our Team are a Community of Entrepreneurs | firstminute capital",
+          "source_content_hash": "9bd5a4382ea22cfacb35d1a9d525607479393d0dc55882d9abafef65165891d8",
+          "quote": "Min Nolan Chief Operations Officer\nAnaïs Benazet Head of Community and Events\nAbby Hughes Head of Operations\nSteve Crossan Venture Partner\nBen McCloskey Financial Controller\nTim Brierley Chief Financial Officer",
+          "quote_hash": "2c2105f7e28a2e1cab7d251ce59bc690a3d2c6dcbac6dd61b59097d3551c991a"
+        },
+        {
+          "source_id": "fm_team_seed_outcomes",
+          "source_url": "https://www.firstminute.capital/team",
+          "source_title": "Our Team are a Community of Entrepreneurs | firstminute capital",
+          "source_content_hash": "9bd5a4382ea22cfacb35d1a9d525607479393d0dc55882d9abafef65165891d8",
+          "quote": "Between us we have founded two unicorn companies and backed 12 at seed.",
+          "quote_hash": "cd4cdd855296ca8e2ac9a053c1df3005921887034ae22e01eff85082d2f199cb"
+        },
+        {
+          "source_id": "fm_companies_house",
+          "source_url": "https://find-and-update.company-information.service.gov.uk/company/OC403024",
+          "source_title": "FIRSTMINUTE CAPITAL LLP overview | Companies House",
+          "source_content_hash": "297ab3f7036400d4628b0548d1ef65be6377654377eb79500b145c0bae8bf971",
+          "quote": "FIRSTMINUTE CAPITAL LLP\nCompany number OC403024\nRegistered office address Level 6 Arundel Street Building,180 Strand, 2 Arundel Street, London, England, WC2R 3DA\nCompany status Active\nCompany type Limited liability partnership\nIncorporated on 20 November 2015",
+          "quote_hash": "18d2eb3ebcf65b06acb99601909cba5e5918aef6f90dffbb10abf9e1bb5df490"
+        },
+        {
+          "source_id": "fm_jobboard_profile",
+          "source_url": "https://jobs.firstminute.capital/companies/firstminute-capital-2",
+          "source_title": "firstminute capital | Firstminute Capital Job Board",
+          "source_content_hash": "904f179f7ddb3e850dfe5714e1aeea8d9a86978edcbe9f549e2a5f23a9cfc64c",
+          "quote": "founded in\n2017\nFirstminute Capital is a venture capital firm that invests in early-stage technology companies, particularly at pre-seed and seed stages.",
+          "quote_hash": "b869b42958c8f726dc648436b614649e717839ebaeea11ae9c91a5420c4b373a"
+        },
+        {
+          "source_id": "fm_fundraising_contact",
+          "source_url": "https://jobs.firstminute.capital/companies/firstminute-capital-2",
+          "source_title": "firstminute capital | Firstminute Capital Job Board",
+          "source_content_hash": "904f179f7ddb3e850dfe5714e1aeea8d9a86978edcbe9f549e2a5f23a9cfc64c",
+          "quote": "Want to fundraise with us?\nContact us today at:\nteam@firstminute.capital",
+          "quote_hash": "bba34cb98ff4301c4a0de490282d0497baba5f6e088b776772aa114ff8e60b50"
+        },
+        {
+          "source_id": "fm_brent_bio_made",
+          "source_url": "https://www.firstminute.capital/team/brent-hoberman",
+          "source_title": "Brent Hoberman | firstminute capital",
+          "source_content_hash": "292a80117fa77ddc16366017f51db43fcfde4d407fd53a1c6f76ade30f40427b",
+          "quote": "Previously, Brent co-founded Made.com in 2010.",
+          "quote_hash": "bf5bb45eced12e83057b541a87381284f08c9a6cff6d92915921050582adb0d6"
+        },
+        {
+          "source_id": "fm_brent_bio_lastminute",
+          "source_url": "https://www.firstminute.capital/team/brent-hoberman",
+          "source_title": "Brent Hoberman | firstminute capital",
+          "source_content_hash": "292a80117fa77ddc16366017f51db43fcfde4d407fd53a1c6f76ade30f40427b",
+          "quote": "Brent also co-founded lastminute.com in 1998 where he was CEO from its inception.",
+          "quote_hash": "ed555bba8eb361c31099f8f109b2846482a834569081c75f540148def73f2786"
+        },
+        {
+          "source_id": "fm_spencer_bio",
+          "source_url": "https://www.firstminute.capital/team/spencer-crawley",
+          "source_title": "Spencer Crawley | firstminute capital",
+          "source_content_hash": "310f615346668692fcfc7b702b94f2d728cc4d156b914b2e11bfc2e0b8b6808e",
+          "quote": "Spencer started his career at Goldman Sachs in Moscow in the Fixed Income, Currencies and Commodities division.\nThis was followed by an MBA at INSEAD.",
+          "quote_hash": "fe9c2555130db9ac66bfbf68928bda284b0c1c0c333321b6a34eb205002dcbda"
+        },
         {
           "source_id": "FISRC-f6319614d583c9a4",
           "source_url": "https://www.linkedin.com/posts/brenthoberman_congrats-to-n8n-team-jan-oberhauser-activity-7381942004466782208-2dhW",
@@ -153,7 +410,7 @@
           "quote_hash": "46a337a4e47d8bd49cc54f0fd74332f7b6d9468c090ca0fa9b32c397e1cc94a3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28"
     }
   }
 }

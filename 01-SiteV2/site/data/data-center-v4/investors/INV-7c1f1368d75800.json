@@ -137,21 +137,202 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Twilio Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Twilio Ventures是Twilio Inc.旗下的企业风险投资项目，支持开发者工具、客户互动和相关AI公司。官网当前披露的投资承诺为5000万美元，通常参与A、B轮，单笔投资通常为100万至500万美元；也会个案考虑种子轮或后期轮次。其项目支持包括开发者生态接入、导师辅导和潜在商业合作。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "Twilio Inc.；官网称该投资项目由Twilio专项承诺资本支持",
+          "source_id": "twilio_current_commitment"
+        },
+        {
+          "field": "founded_date",
+          "label": "启动时间",
+          "value": "2021年12月8日宣布设立",
+          "source_id": "twilio_launch"
+        },
+        {
+          "field": "current_commitment",
+          "label": "官网披露投资承诺",
+          "value": "5000万美元（Twilio Ventures专属承诺；不等于当前未投资余额）",
+          "source_id": "twilio_current_commitment"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": [
+            "人工智能",
+            "开发者工具",
+            "客户互动",
+            "Twilio生态系统及相邻创新领域"
+          ],
+          "source_id": "twilio_current_focus"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网披露的投资阶段",
+          "value": "通常参与A轮和B轮；种子轮或更后期轮次按个案考虑",
+          "source_id": "twilio_current_criteria"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "官网披露的常见单笔投资额",
+          "value": "100万至500万美元",
+          "source_id": "twilio_current_check"
+        },
+        {
+          "field": "investment_role",
+          "label": "参投方式",
+          "value": "当前重点参与由专业财务投资人领投的融资轮次",
+          "source_id": "twilio_current_role"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "组合企业支持",
+          "value": "导师辅导、开发者生态接入、潜在产品或商业合作，以及连接Twilio合作伙伴与客户",
+          "source_id": "twilio_current_support"
+        },
+        {
+          "field": "governance_terms",
+          "label": "官网披露的董事席位惯例",
+          "value": "通常不要求董事席位或董事观察员席位",
+          "source_id": "twilio_current_terms"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-12-08",
+          "description": "Twilio宣布成立Twilio Ventures并为其承诺5000万美元，定位为支持开发者生态和客户互动领域创业公司的企业风险投资项目。",
+          "source_id": "twilio_launch"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Rime · A轮 · 2026-07-15 · 本轮参投 · $24M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Twilio于2021年宣布的已投案例包括Algolia、Mux、Hyro、Calixa、Well Health和Terazo，并列出Community、Courier和Krisp等此前投资；这是公告所列选例，不代表完整组合或收益统计。",
+          "source_id": "twilio_launch_portfolio"
+        },
+        {
+          "description": "Twilio Ventures, Corazon Capital, Unusual Ventures, and other existing investors also participated",
           "source_id": "FISRC-7814afd7c39e886d"
         }
       ],
-      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "Twilio Ventures可调用母公司的通信平台、开发者生态和客户关系，为被投公司提供商业化连接。当前官方项目页没有以文本公开具名投资管理团队；本档案不推测成员姓名。",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方项目介绍、投资策略与申报信息",
+          "value": "Twilio Ventures",
+          "url": "https://www.twilio.com/en-us/ventures",
+          "source_id": "twilio_current_strategy"
+        },
+        {
+          "kind": "application",
+          "label": "官网公布的Twilio Ventures联系邮箱",
+          "value": "ventures@twilio.com",
+          "url": "https://www.twilio.com/en-us/ventures",
+          "source_id": "twilio_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "twilio_current_strategy",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "Twilio Ventures invests in companies building tomorrow’s solutions for developers and the customer engagement ecosystem.",
+          "quote_hash": "916068b1a811a31e5d07aa00cfb56704b355d2bcd1e76ed5b95b8f3f99e3e352"
+        },
+        {
+          "source_id": "twilio_current_focus",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "Our sweet-spot is supporting innovative and emerging platforms that are focused on the future of AI, developer tools and customer engagement solutions.",
+          "quote_hash": "3026415e154df7317c803649c005f06b0e8df57d88f0aa4755589b5f472e9cc0"
+        },
+        {
+          "source_id": "twilio_current_criteria",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "We typically look to participate in Series A and B funding rounds, though we do consider seed or later stage investments on an ad hoc basis.",
+          "quote_hash": "5bc1dcb3e77955424ffdb5ac762a3d165b7bc36887014a0aa55d6e18b8c21e95"
+        },
+        {
+          "source_id": "twilio_current_role",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "At this stage, Twilio Ventures is focused on participating in funding rounds led by leading financial investors.",
+          "quote_hash": "b612a76e576d9a42a49e6edc09d30ce0ee31f8e889f09b2cabc5aeab759a24aa"
+        },
+        {
+          "source_id": "twilio_current_check",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "Typically we invest between $1M and $5M.",
+          "quote_hash": "7d4c8d863100c1c5209295fb1d6d83ebaec52522597708cc49f4bc186ce6f1f6"
+        },
+        {
+          "source_id": "twilio_current_commitment",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "We are currently investing from a $50M commitment from Twilio dedicated to Twilio Ventures.",
+          "quote_hash": "220b9bb36bfd1999e016aada530deec4dd4f242a9a97b4c2daa48f3af8895edc"
+        },
+        {
+          "source_id": "twilio_current_support",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "Ongoing support and mentorship, access to our developer ecosystem, potential product or commercial partnerships, and exposure to Twilio’s partners and customers.",
+          "quote_hash": "049a26e6527d61e2ba426e7f8d8a4a5d32cd55c5d9ec6944986516aad5d10fe4"
+        },
+        {
+          "source_id": "twilio_current_terms",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "We typically will not request a Board seat nor a Board Observer seat.",
+          "quote_hash": "2409b7e56a6d1255ed4ebfbecb034ade6cb2b114c8e3a37fe97e2d5375ad24d1"
+        },
+        {
+          "source_id": "twilio_contact",
+          "source_url": "https://www.twilio.com/en-us/ventures",
+          "source_title": "Ventures | Twilio",
+          "source_content_hash": "1757c509db92d1c21fbe1cc501ea9cc9ae4a33a0e3ca95391a684a7c679e0442",
+          "quote": "Contact Twilio Ventures! (ventures@twilio.com).",
+          "quote_hash": "b09442bab1001c33f4f0e8e6fe7266889061001a2585da7b07e439ed370aa655"
+        },
+        {
+          "source_id": "twilio_launch",
+          "source_url": "https://www.twilio.com/en-us/press/releases/twilio-launches-twilio-ventures-a-50-million-fund-to-unlock-the-imagination-of-builders-fueling-the-future-of-customer-engagement",
+          "source_title": "Twilio Launches Twilio Ventures, a $50 Million Fund (Dec 8, 2021)",
+          "source_content_hash": "1723475b6cf5f04cda11948474ed6fd5ea1f6e39c52785874337e522a298cf7c",
+          "quote": "Twilio announced Twilio Ventures and its new $50 million fund on December 8, 2021.",
+          "quote_hash": "57a931f3614f644d395fb432d837b5589d095ccb2096a6fc113357001889a4fa"
+        },
+        {
+          "source_id": "twilio_launch_approach",
+          "source_url": "https://www.twilio.com/en-us/press/releases/twilio-launches-twilio-ventures-a-50-million-fund-to-unlock-the-imagination-of-builders-fueling-the-future-of-customer-engagement",
+          "source_title": "Twilio Launches Twilio Ventures, a $50 Million Fund (Dec 8, 2021)",
+          "source_content_hash": "1723475b6cf5f04cda11948474ed6fd5ea1f6e39c52785874337e522a298cf7c",
+          "quote": "Twilio Ventures will primarily invest in early-stage companies with opportunistic investments in late-stage companies at the intersection of customer engagement and developers.",
+          "quote_hash": "1f0aa4126ae6be4e9bd6b135b3f06e7276d9f139a45e76eeb1a652acc78410b8"
+        },
+        {
+          "source_id": "twilio_launch_portfolio",
+          "source_url": "https://www.twilio.com/en-us/press/releases/twilio-launches-twilio-ventures-a-50-million-fund-to-unlock-the-imagination-of-builders-fueling-the-future-of-customer-engagement",
+          "source_title": "Twilio Launches Twilio Ventures, a $50 Million Fund (Dec 8, 2021)",
+          "source_content_hash": "1723475b6cf5f04cda11948474ed6fd5ea1f6e39c52785874337e522a298cf7c",
+          "quote": "Recent investments included Algolia, Mux, Hyro, Calixa, Well Health Inc. and Terazo; other previous investments included Community, Courier and Krisp.",
+          "quote_hash": "00c4005cf5c56ad62d64d9f551d53a20b232fdb33963e04af382425978bc5c25"
+        },
         {
           "source_id": "FISRC-7814afd7c39e886d",
           "source_url": "https://techcrunch.com/2026/07/15/rime-picks-up-24m-series-a-to-help-enterprises-field-customer-calls",
@@ -161,7 +342,11 @@
           "quote_hash": "723438dd8ba285c4ad5d4760fa84b935056b86105e0560a3d247df35c2737655"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Twilio官方项目页和公司新闻稿确认其为Twilio旗下企业投资项目。官网当前称其正使用Twilio专项承诺的5000万美元，属于承诺规模而非未投资余额。A/B轮偏好、单笔金额和不要求董事席位均保留为官网当前惯例描述；2021年组合案例为当时公告列举的选例。数据库另有Rime 2026年融资参投记录，来源为既有TechCrunch证据，并不构成完整组合。"
     }
   }
 }

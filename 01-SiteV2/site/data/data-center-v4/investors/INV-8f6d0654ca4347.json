@@ -132,20 +132,53 @@
     ],
     "public_profile": {
       "profile_type": "person",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Francois Chollet 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "François Chollet 是 Ndea 联合创办人、Keras 深度学习库创作者和 ARC-AGI 基准共同创建者。Ndea 官方介绍将其研究与工作概括为人工智能、软件和智能评估，并列出其技术著作与行业奖项。融资记录将数据库中拼写为 Francois Chollet 的个人投资者与 Sycamore 种子轮相关联。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "联合创办人",
+          "organization": "Ndea",
+          "source_id": "francois_ndea"
+        },
+        {
+          "title": "联合创办人、董事会成员",
+          "organization": "ARC Prize Foundation",
+          "source_id": "francois_ndea"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Keras",
+          "title": "创作者",
+          "period": "具体起始年份未在引用页列出",
+          "description": "Ndea 官方介绍称他创作了 Keras 深度学习库。",
+          "source_id": "francois_ndea"
+        }
+      ],
+      "education": [],
+      "experience_summary": "其公开经历集中在深度学习框架、智能评估基准和人工智能研究；所引用的 Ndea 官方简介未列学历或完整任职时间线。",
       "track_record": [
         {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Ndea 官方介绍列出 Keras、ARC-AGI、著作《Deep Learning with Python》及 Global Swiss AI Award 等成果；相关荣誉按公司简介披露。",
+          "source_id": "francois_ndea"
+        },
+        {
+          "description": "Sycamore 融资公告将 François Chollet 列在个人投资者名单中；本库该活动标为历史/模糊，6,500 万美元为整轮种子融资金额，未披露他的个人出资额。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "francois_ndea",
+          "source_url": "https://ndea.com/about.html",
+          "source_title": "About Ndea",
+          "source_content_hash": "23f6c2da8f594ef90154ab4cf36714e5c00a9d4a1e29e5db85b7fef07cb90323",
+          "quote": "François Chollet is the creator of Keras",
+          "quote_hash": "7075c205d8abc6940bf2c871abd26e070c2eefe9c34227e6b6f3cda96cc664cd"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -155,7 +188,9 @@
           "quote_hash": "16b51af81b4c1d7166c0666bd5249e8878b4c361d692d375d8846d43803ceae3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "Ndea 官方简介用于核验其联合创办人身份与技术成果；Sycamore 融资总额不代表个人出资额。数据库原名采用不带重音符号的 Francois Chollet。",
+      "last_verified_at": "2026-09-28",
+      "identity_status": "verified"
     }
   }
 }
