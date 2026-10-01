@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { acceptedPublicationStatus } from '../dispatch-state.mjs';
-import { productionPlan } from '../run.mjs';
+import { productionPlan, financingExtractionScope } from '../run.mjs';
 import { allowedCheckpointPath } from '../checkpoint.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
@@ -42,6 +42,7 @@ test('unified producer gates facts, research and new taxonomy before publication
   assert.deepEqual(stages.map(s=>s.id),['facts','research','projections','financing_tags','release_gate']);
   assert.ok(stages[0].commands.some(c=>c[0].endsWith('assert-china-market-v1.mjs')&&c.includes(`--date=${date}`)&&c.includes('--stage=bundle')));
   assert.ok(stages[0].commands.some(c=>c[0].endsWith('generate-data-center-model-assist.mjs')&&c.includes('--reuse-existing=true')));
+  assert.ok(stages[0].commands.some(c=>c.includes('--tasks=claim_extraction,entity_resolution,qa_repair')));
   assert.ok(stages[1].commands.some(c=>c[0].endsWith('assert-funding-insights-v1.mjs')));
   assert.ok(stages[2].commands.some(c=>c[0].endsWith('build-investment-institutions-v1.mjs')));
   assert.ok(stages[2].commands.some(c=>c[0].endsWith('build-data-center-v4-frontstage.mjs')));
@@ -49,6 +50,16 @@ test('unified producer gates facts, research and new taxonomy before publication
   assert.doesNotMatch(JSON.stringify(stages),/run-guanlan-daily-monitor|classify-funding-taxonomy-v4|build-trend-radar|build-opportunity-map/u);
   assert.equal(allowedCheckpointPath(`01-SiteV2/content/11-databases/data-center-v4/model-assist-v1/${date}.json`,date),true);
   assert.equal(allowedCheckpointPath('01-SiteV2/site/data/data-center-v4/manifest.json',date),true);
+});
+
+test('financing extraction excludes historical same-date raw and FDE/hardware enrichment', () => {
+  const intake={raw_documents:[{raw_id:'old',source_artifact_id:'SA-old'},{raw_id:'new',source_artifact_id:'SA-new'}]};
+  assert.deepEqual(financingExtractionScope(intake,{raw_ids:['new','new']}),{source_refs:['SA-new']});
+  assert.throws(()=>financingExtractionScope(intake,{raw_ids:['missing']}),/financing_extraction_source_missing/u);
+  assert.deepEqual(financingExtractionScope(intake,{raw_ids:[]}),{source_refs:[]});
+  const noNew=productionPlan(date,'reports',{extract:false});
+  assert.ok(noNew[0].commands.every(c=>!c[0].endsWith('generate-data-center-model-assist.mjs')));
+  assert.ok(noNew[0].commands.some(c=>c[0].endsWith('assert-data-center-v4.mjs')));
 });
 
 test('only gated manifest outputs enter PR and current-head CI must pass before merge', () => {

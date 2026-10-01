@@ -12,12 +12,19 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..')
 const script = name => `agent-workflow/tools/${name}.mjs`;
 const site = name => `01-SiteV2/site/scripts/${name}.mjs`;
 
-export function productionPlan(date, directory) {
+export function financingExtractionScope(intake, collection) {
+  const raws = new Map((intake?.raw_documents || []).map(raw => [raw.raw_id, raw]));
+  const ids = [...new Set(collection?.raw_ids || [])];
+  if (ids.some(id => !raws.get(id)?.source_artifact_id)) throw new Error('financing_extraction_source_missing');
+  return { source_refs: [...new Set(ids.map(id => raws.get(id).source_artifact_id))] };
+}
+
+export function productionPlan(date, directory, { extract = true } = {}) {
   const d = `--date=${date}`;
   return [
     { id: 'facts', commands: [
       [script('build-data-center-v4'), d],
-      [script('generate-data-center-model-assist'), d, '--write=true', '--concurrency=2', '--reuse-existing=true'],
+      ...(extract ? [[script('generate-data-center-model-assist'), d, '--write=true', '--concurrency=2', '--reuse-existing=true', '--tasks=claim_extraction,entity_resolution,qa_repair']] : []),
       [script('assert-data-center-model-assist'), d],
       [script('build-data-center-v4'), d],
       [script('backfill-source-title-translations'), d, '--write=true', '--concurrency=3'],
@@ -77,7 +84,10 @@ async function main() {
     if (!intake?.raw_documents?.length) {
       write(path.join(directory, 'publication.json'), { version: config.version, date, status: collection.counts.pending ? 'pending_verification' : 'no_new_financing', counts: collection.counts }); return;
     }
-    const plans = productionPlan(date, directory);
+    const extractionScope = financingExtractionScope(intake, collection);
+    const scopeFile = path.join(directory, 'extraction-scope.json');
+    write(scopeFile, extractionScope);
+    const plans = productionPlan(date, directory, { extract: extractionScope.source_refs.length > 0 });
     const codeVersion = digest(intake);
     const dependencyText = (file, seen = new Set()) => {
       if (seen.has(file) || !fs.existsSync(file)) return ''; seen.add(file);
@@ -93,7 +103,9 @@ async function main() {
       try {
         for (const command of stage.commands) {
           fs.writeSync(fd, `\n${new Date().toISOString()} node ${command.join(' ')}\n`);
-          const result = spawnSync(process.execPath, command, { cwd: root, env: process.env, windowsHide: true, stdio: ['ignore', fd, fd], timeout: 1800000 });
+          const env = command[0] === script('generate-data-center-model-assist')
+            ? { ...process.env, MODEL_ASSIST_SOURCE_REFS_FILE: scopeFile } : process.env;
+          const result = spawnSync(process.execPath, command, { cwd: root, env, windowsHide: true, stdio: ['ignore', fd, fd], timeout: 1800000 });
           if (result.error || result.status !== 0) throw new Error(`${stage.id}:${path.basename(command[0])}:${result.status ?? result.error?.code}`);
         }
       } finally { fs.closeSync(fd); }
