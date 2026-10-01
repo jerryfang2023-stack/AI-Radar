@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import { dailyMonitorPolicy } from "./lib/daily-monitor-policy.mjs";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -677,7 +678,7 @@ export function buildBusinessSignalsLane({ githubState = null, pagesState = null
   return {
     id: "business_signals",
     label: "Data Center V4 / Business Signals Operations",
-    schedule: "08:10 local conditional production; operator-owned inspection and recovery; 10:30 cloud safety fallback",
+    schedule: "08:10 unified financing monitoring; 10:30 cloud safety fallback",
     status: laneStatus(problems, warnings, waiting),
     evidence,
     problems,
@@ -1316,10 +1317,10 @@ function main() {
   }
   const lanes = [
     buildSkillOpsLane(),
-    buildCommunityLane(),
+    ...(dailyMonitorPolicy.paused_lanes.includes("community") ? [] : [buildCommunityLane()]),
     buildBusinessSignalsLane(),
-    buildFirstLineLane(),
-    buildFollowBuildersSkillLane(),
+    ...(dailyMonitorPolicy.paused_lanes.includes("builders_rss") ? [] : [buildFirstLineLane()]),
+    ...(dailyMonitorPolicy.paused_lanes.includes("follow_builders") ? [] : [buildFollowBuildersSkillLane()]),
   ];
   const status = aggregateStatus(lanes);
   const payload = {
@@ -1329,6 +1330,7 @@ function main() {
     generated_at: new Date().toISOString(),
     timezone: "Asia/Shanghai",
     lanes,
+    paused_lanes: dailyMonitorPolicy.paused_lanes,
   };
   const { jsonPath, mdPath } = writeReports(payload);
   console.log(JSON.stringify({

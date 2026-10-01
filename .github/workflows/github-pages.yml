@@ -21,6 +21,7 @@ on:
     # GitHub suppresses workflow triggers from some bot-authored pushes. These
     # production workflows auto-merge data PRs, so deploy after they succeed.
     workflows:
+      - WaveSight Financing Daily PR
       - WaveSight Business Signals PR
       - WaveSight First-Line Viewpoints PR
       - WaveSight Community Intelligence PR

@@ -1,5 +1,7 @@
 # Agent Workflow｜当前工作流
 
+Current recurring production is the independent financing runtime in `financing/`. Follow `../docs/unified-daily-monitoring.md`; broader platform tools below are shared infrastructure or inactive historical/manual capabilities, not daily monitoring instructions. Community, Builders and non-financing discovery are paused.
+
 本目录只保留当前调度、规则、Agent、自动化和验收所需文件。
 
 ## 当前原则

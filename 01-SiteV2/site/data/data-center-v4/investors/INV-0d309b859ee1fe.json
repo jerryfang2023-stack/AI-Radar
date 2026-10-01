@@ -63,21 +63,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-25",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 3,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "seed",
@@ -98,6 +98,11 @@
         "entity_id": "EN-2dc010636b9dce91",
         "canonical_entity_id": "EN-2dc010636b9dce91",
         "name": "Databricks"
+      },
+      {
+        "entity_id": "EN-b4c73396844f7d05",
+        "canonical_entity_id": "",
+        "name": "Instinct"
       },
       {
         "entity_id": "EN-712dffae168fe622",
@@ -121,6 +126,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8949342ab25bc941",
+        "funding_insight_id": "FI-1b6dd112c647d4a1",
+        "event_ids": [
+          "EV-35fa913e4709b4d6"
+        ],
+        "company_entity_id": "EN-b4c73396844f7d05",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-560cbbccadfe271d",
+            "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+            "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
+            "source_content_hash": "7430813f0a12b226",
+            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
+            "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f4cf362c0b3d249f",
         "funding_insight_id": "FI-845dc20a9c30188f",
@@ -574,6 +619,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-560cbbccadfe271d",
+        "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+        "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
+        "source_content_hash": "7430813f0a12b226",
+        "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
+        "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+      },
+      {
         "source_id": "FISRC-2a3c20bc832bd7ef",
         "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
         "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
@@ -717,16 +770,16 @@
           "source_id": "coatue_home"
         },
         {
+          "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-560cbbccadfe271d"
+        },
+        {
           "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-077b1124fc8e9581"
         },
         {
           "description": "融资来源记录：Databricks · 战略融资 · 2026-07-17 · 本轮领投 · 约 30 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4f2f10efb22c92e2"
-        },
-        {
-          "description": "融资来源记录：Nomos Ai Inc. · C轮 · 2026-07-07 · 本轮参投 · 1.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1b05d1dc5cb45a7b"
         }
       ],
       "contacts": [
@@ -776,6 +829,14 @@
           "quote_hash": "7d269a691e28d24667fba1220aa52921d36a066250ef7a113f3e6bfee4795916"
         },
         {
+          "source_id": "FISRC-560cbbccadfe271d",
+          "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
+          "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
+          "source_content_hash": "7430813f0a12b226",
+          "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
+          "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+        },
+        {
           "source_id": "FISRC-077b1124fc8e9581",
           "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
           "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
@@ -790,14 +851,6 @@
           "source_content_hash": "905ee67082facdf9",
           "quote": "The round was led by Coatue.",
           "quote_hash": "fbe951c93654f636275f7cc1b5b0f2e96688afcfc3ab9681c40238e510d84e8e"
-        },
-        {
-          "source_id": "FISRC-1b05d1dc5cb45a7b",
-          "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
-          "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
-          "source_content_hash": "bdcf73e00730d3c9",
-          "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
-          "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
         }
       ],
       "last_verified_at": "2026-09-25",

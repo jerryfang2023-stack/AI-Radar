@@ -105,7 +105,9 @@ jobs:
       RUN_DATE: ${{ needs.resolve-date.outputs.date }}
       TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
       TAVILY_DISABLED: "false"
+      ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
       EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+      BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
       DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
       DEEPSEEK_PRO_MODEL: deepseek-v4-pro

@@ -187,9 +187,8 @@ test("clean stale repair worktrees fast-forward, while unique and dirty work are
 
 test("scheduled controllers keep runtime reports outside the repository", () => {
   const installer = read("install-daily-automation-controller-tasks.ps1");
-  assert.match(installer, /LOCALAPPDATA[^\n]+WaveSight\\runtime/u);
-  assert.match(installer, /--runtime-dir=/u);
-  assert.match(installer, /--scheduled=true/u);
+  assert.match(installer, /Disable-ScheduledTask/u);
+  assert.doesNotMatch(installer, /Register-ScheduledTask/u);
   assert.match(read("install-hermes-control-plane-watchdog-task.ps1"), /--reports-dir=/u);
   assert.match(read("install-community-intelligence-task.ps1"), /-RuntimePath/u);
   assert.match(read("install-follow-builders-skill-task.ps1"), /-RuntimePath/u);
@@ -408,18 +407,10 @@ test("closure reuses its self-check instead of running it twice", () => {
   assert.match(controller, /executionOk = [^\n]*fundingPortal\.ok/u);
 });
 
-test("closure resolves and forwards an absolute Codex executable", () => {
+test("retired daily installer disables timers without installing a repair agent", () => {
   const installer = read("install-daily-automation-controller-tasks.ps1");
-  const controller = read("run-daily-automation-controller.mjs");
-  assert.match(installer, /function Resolve-CodexExecutable/u);
-  assert.match(installer, /WaveSight\\codex-cli/u);
-  assert.match(installer, /npm install --prefix \$managedRoot "@openai\/codex@latest"/u);
-  assert.match(installer, /MinimumVersion \(\[version\]"0\.151\.0"\)/u);
-  assert.match(installer, /Test-CodexExecutable -Candidate \$command\.Source -MinimumVersion/u);
-  assert.match(installer, /Test-CodexExecutable -Candidate \$managedExecutable/u);
-  assert.match(installer, /--codex-command="' \+ \$CodexExecutable/u);
-  assert.match(controller, /const codexCommand = args\.get\("codex-command"\) \|\| "codex"/u);
-  assert.match(controller, /`--codex-command=\$\{codexCommand\}`/u);
+  assert.match(installer, /Disable-ScheduledTask/u);
+  assert.doesNotMatch(installer, /Register-ScheduledTask|npm install|Resolve-CodexExecutable/u);
 });
 
 test("Vault refresh uses an isolated origin/main worktree and leaves supervision evidence", () => {

@@ -1,8 +1,7 @@
 name: WaveSight First-Line Viewpoints PR
 
 on:
-  schedule:
-    - cron: '0 1 * * 1'
+  # Weekly discovery paused by the funding-only policy (2026-10-01).
   workflow_dispatch:
     inputs:
       date:

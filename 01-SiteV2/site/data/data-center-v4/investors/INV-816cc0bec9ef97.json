@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
@@ -70,8 +70,9 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-13",
-    "latest_disclosed_at": "2026-08-03",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 3
     },
     "round_codes": [
@@ -96,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d33ac91c39ddc334",
+        "funding_insight_id": "FI-1b6dd112c647d4a1",
+        "event_ids": [
+          "EV-35fa913e4709b4d6"
+        ],
+        "company_entity_id": "EN-b4c73396844f7d05",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "早期轮次投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-70f948c95dacb2f0",
+            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+            "source_content_hash": "0773286daf5bf525",
+            "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
+            "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-50f287118dee3322",
         "funding_insight_id": "FI-36e2dba781b80e3a",
@@ -218,6 +259,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-70f948c95dacb2f0",
+        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+        "source_content_hash": "0773286daf5bf525",
+        "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
+        "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
+      },
       {
         "source_id": "FISRC-3fa34b4b7b9a1a77",
         "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",

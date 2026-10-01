@@ -1,5 +1,7 @@
 # Daily production recovery
 
+For current daily financing, use `agent-workflow/financing/` and [its recovery contract](unified-daily-monitoring.md). The broader platform procedures below are not the financing execution rules.
+
 The four Windows production tasks remain the local owners; daily inspection and
 repair are operator-owned. Recovery, Closure and Hermes watchdog timers are retired.
 Cloud dispatch success is not

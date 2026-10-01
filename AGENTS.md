@@ -14,7 +14,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current Data Center Git baseline: `GUANLAN-DATA-CENTER-V4.8.1-internal-foundation`, tagged independently as `data-center-v4.8.1-internal-foundation`.
 - Funding Insights remains independently versioned as `FUNDING-INSIGHT-V1.5.0-china-market`; Data Center tags must not be reused for the application website.
 - Current local knowledge base: the physically independent Guanlan AI Vault (`GUANLAN-VAULT-V1.2-private-evidence-linked`). It is the local operations and human-readable knowledge front door; the repository-local `vault/` path is retired.
-- Current local automation: exactly four Windows tasks (08:10 domestic/overseas financing and other Business Signals production plus independent Builder RSS, 08:30 Community, 16:10 Follow Builders, 16:45 Final Closure). Daily inspection and repair are operator-owned; Recovery, Closure and Hermes watchdog timers are retired. Final Closure owns the strict 24-table `DATA-LAKE-V4.1` refresh.
+- Current financing monitor: `FINANCING-MONITOR-1`, independently implemented under `agent-workflow/financing/`. One Codex task `ai` at 08:10 Asia/Shanghai and the 10:30 `funding-health-dispatch.yml` fallback own all AI financing sectors and six consumer AI hardware categories. Embodied intelligence, robotics bodies/components, standalone FDE/hardware content, Community and Builders monitoring are paused/excluded. All Windows monitoring timers are disabled. Current execution and recovery rules: `docs/unified-daily-monitoring.md`; the old comprehensive monitor/controller and its score, volume and time-window rules are not dependencies.
 - Current evidence archive: `PRIVATE-EVIDENCE-STORE-V2.0` is the authoritative content-addressed original-body store outside the public repository and Vault. The public repository and Vault store locators and links, never complete original bodies.
 - Current public product: the independent AI financing site at `https://www.zkdlj.vip/` owns Funding Insights and weekly/monthly reports. Data Center, Trend Radar, Opportunity Map, and operations remain internal supporting surfaces.
 - Current dashboard source: `01-SiteV2/site/operations-console.html`, `OPS-V3.7.1-china-funding-history`; deploy only to the authenticated VPS route `https://www.zkdlj.vip/ops/`, never in the GitHub Pages artifact. The allowlisted administrator email challenge establishes an HttpOnly, SameSite=Strict VPS session for the whole console. Membership & Entitlements keeps aggregate overview separate from persistent Community Application Review, Community Member Management, Mini Program Member Management and Activity Scheduling subpanels; all reuse the console session and load protected data only when opened. Successful Mini Program member adjustments return to the user list instead of leaving the editor open. Issue/task UI panels are retired; records remain. System Settings owns integration/freshness information and device-local preferences.
@@ -35,7 +35,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 - Current person review contract: PERSON-REVIEW-V1.1.
 - Current factual relationship contract: RELATION-V2.1.
 - Current targeted historical collection contract: BACKFILL-V1.0.
-- Current tag taxonomy version: TAG-V4.1.
+- Current financing taxonomy: `AI-FUNDING-TAGS-1.0`, owned by `agent-workflow/financing/taxonomy.json`; see `docs/financing-taxonomy.md`. `TAG-V4.1` remains a factual archive compatibility schema and must not supply current financing filters or classification decisions.
 - Current Skill Store version: `v2.4.0`; all 24 active governed Skills follow `GPT-6-ASTRA-SKILL-V1.0`, include `agents/openai.yaml`, and have five-case trigger-eval inventory coverage. Separately registered content, AIP project, and plugin-cache entries are inventory, not additional certified or globally enabled Skills.
 - Current data-center rule source: `context/12-data-center-v4.md`.
 - `context/07-v3-intelligence-generation-rules.md` documents frozen V3 history only; it is not a production route.
@@ -53,7 +53,7 @@ Do not scan all Markdown at task start. Read only this file, the required `conte
 
 SITE-V4.0 is an AI industry data center and structured factual data foundation for AIP products, industry research, and startup decision-support applications.
 
-Daily core production must preserve source artifacts and build exact-span Claims, Entities, CanonicalEvents, FDE records, hardware records, evidence-backed TagAssertions, and queryable exports.
+The shared factual platform preserves source artifacts, exact-span Claims, Entities, CanonicalEvents, evidence-backed classifications and queryable exports. Current automated acquisition is financing-only; other platform capabilities below describe data contracts, not active monitoring instructions.
 
 - product / service;
 - funding;
@@ -79,7 +79,7 @@ The public website must not expose Data Center or Application Center as primary 
 
 `v3-data-observation.html`, `follow-builders.html`, `community-intelligence.html`, `intelligence-map.html`, `funding-insights.html`, `reports.html`, weekly/monthly HTML routes, and `pipeline-dashboard.html` are compatibility redirects only and must not regain duplicate page content.
 
-Follow-builders / builders viewpoints are active only as the independent First-Line Viewpoints column. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
+Follow-builders / builders viewpoints monitoring is paused, including the independent First-Line Viewpoints schedule. Existing accepted archives remain readable. They must not be used as business-signal facts, relationship-graph evidence, or trend-candidate evidence.
 
 If an old page rule conflicts with `SITE-V4.6.1-research-retirement`, delete or rebuild it instead of restoring the retired research frontstage.
 

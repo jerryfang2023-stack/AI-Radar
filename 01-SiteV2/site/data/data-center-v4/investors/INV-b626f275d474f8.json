@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-07-20",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
+      "series_b",
       "series_b_extension",
       "undisclosed"
     ],
@@ -85,6 +86,11 @@
         "entity_id": "EN-450dcf23e621ff10",
         "canonical_entity_id": "",
         "name": "Engram"
+      },
+      {
+        "entity_id": "EN-50d7f4250bdd8888",
+        "canonical_entity_id": "",
+        "name": "Flow Engineering"
       },
       {
         "entity_id": "EN-a7dd4a797cf9990b",
@@ -108,6 +114,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cf775cd1dc31ce95",
+        "funding_insight_id": "FI-2309843d76ae81f9",
+        "event_ids": [
+          "EV-f2950d2104e97163"
+        ],
+        "company_entity_id": "EN-50d7f4250bdd8888",
+        "company_canonical_entity_id": "",
+        "company_name": "Flow Engineering",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3511f7baf76701e3",
+            "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+            "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+            "source_content_hash": "1ada124c6217cee1",
+            "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round alongside Human Capital, Evantic, SV Angel, Odyssey, EQT",
+            "quote_hash": "b09c8e30d2f6b9988f8b162a75392caf33d384cac041658c4f5189b98b0f4ba0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a39a10a97de4c51b",
         "funding_insight_id": "FI-a7f67888b410be24",
@@ -391,6 +437,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3511f7baf76701e3",
+        "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+        "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+        "source_content_hash": "1ada124c6217cee1",
+        "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round alongside Human Capital, Evantic, SV Angel, Odyssey, EQT",
+        "quote_hash": "b09c8e30d2f6b9988f8b162a75392caf33d384cac041658c4f5189b98b0f4ba0"
+      },
+      {
         "source_id": "FISRC-6fe11d1e74b865b4",
         "source_url": "https://www.linkedin.com/posts/jake-moross_big-day-for-the-natural-team-congrats-activity-7485041411692638208-9ph-",
         "source_title": "Big day for the Natural team 💸 🤖 | Jake Moross",
@@ -491,16 +545,16 @@
           "source_id": "svangel_home"
         },
         {
+          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3511f7baf76701e3"
+        },
+        {
           "description": "融资来源记录：Sable · 轮次未披露 · 2026-07-16 · 本轮参投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f8cec869ac3008e"
         },
         {
           "description": "融资来源记录：Ornn AI Inc. · 种子轮 · 2026-06-24 · 本轮参投 · $33M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-44c6debf2c528a2a"
-        },
-        {
-          "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 本轮参投 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0d1357db4e0e1a3b"
         }
       ],
       "contacts": [
@@ -532,6 +586,14 @@
           "quote_hash": "73957877fab4dd01fd47d32133c70e4996d7e433bbf8dc9f1111438ed6dbcf07"
         },
         {
+          "source_id": "FISRC-3511f7baf76701e3",
+          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+          "source_content_hash": "1ada124c6217cee1",
+          "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round alongside Human Capital, Evantic, SV Angel, Odyssey, EQT",
+          "quote_hash": "b09c8e30d2f6b9988f8b162a75392caf33d384cac041658c4f5189b98b0f4ba0"
+        },
+        {
           "source_id": "FISRC-9f8cec869ac3008e",
           "source_url": "https://www.citybiz.co/article/876088/sable-raises-45m-to-build-ai-employee-for-customer-relations/",
           "source_title": "Sable Raises $45M to Build ‘AI Employee’ for Customer Relations | citybiz",
@@ -546,14 +608,6 @@
           "source_content_hash": "5fe0ae2b10239c5e",
           "quote": "saw participation from Nordstar and SV Angel",
           "quote_hash": "b69e97a8f4d22f773d01e50f5f3f37c7f265bd537607e7ed226aaade2c8ef399"
-        },
-        {
-          "source_id": "FISRC-0d1357db4e0e1a3b",
-          "source_url": "https://devcuration.com/articles/engram-raises-98m-to-build-an-ai-memory-layer-for-enterprise-models",
-          "source_title": "Engram Raises $98M to Build an AI Memory Layer for Enterprise Models | DevCuration",
-          "source_content_hash": "453363e20174ad0b",
-          "quote": "Investors include General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern Capital, Amplify Partners, Neo, and SV Angel",
-          "quote_hash": "dcfabcb8bcb1393d8c0993cd7815e225ba9e5959c6ff1b8c969aee0662555697"
         }
       ],
       "last_verified_at": "2026-09-25",

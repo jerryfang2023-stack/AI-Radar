@@ -61,21 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-06",
-    "latest_disclosed_at": "2026-09-15",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "pre_seed",
+      "series_b",
       "series_d"
     ],
     "portfolio_companies": [
@@ -85,12 +86,57 @@
         "name": "Davis"
       },
       {
+        "entity_id": "EN-50d7f4250bdd8888",
+        "canonical_entity_id": "",
+        "name": "Flow Engineering"
+      },
+      {
         "entity_id": "FICO-d750f652e8f2dd92",
         "canonical_entity_id": "",
         "name": "Profound"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-385b926b269a5772",
+        "funding_insight_id": "FI-2309843d76ae81f9",
+        "event_ids": [
+          "EV-f2950d2104e97163"
+        ],
+        "company_entity_id": "EN-50d7f4250bdd8888",
+        "company_canonical_entity_id": "",
+        "company_name": "Flow Engineering",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3511f7baf76701e3",
+            "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+            "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+            "source_content_hash": "1ada124c6217cee1",
+            "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round alongside Human Capital, Evantic, SV Angel, Odyssey, EQT",
+            "quote_hash": "b09c8e30d2f6b9988f8b162a75392caf33d384cac041658c4f5189b98b0f4ba0"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f3d3fdddfd178b7d",
         "funding_insight_id": "FI-28129028b23f82cb",
@@ -174,6 +220,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3511f7baf76701e3",
+        "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+        "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+        "source_content_hash": "1ada124c6217cee1",
+        "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round alongside Human Capital, Evantic, SV Angel, Odyssey, EQT",
+        "quote_hash": "b09c8e30d2f6b9988f8b162a75392caf33d384cac041658c4f5189b98b0f4ba0"
+      },
+      {
         "source_id": "FISRC-77525d98c652d74e",
         "source_url": "https://natlawreview.com/press-releases/profound-raises-180m-series-d-18b-valuation-build-ai-platform-marketing",
         "source_title": "Profound Raises $180M Series D at $1.8B Valuation to Build the AI",
@@ -195,10 +249,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Evantic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Evantic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3511f7baf76701e3"
+        },
         {
           "description": "融资来源记录：Profound · D轮 · 2026-09-15 · 本轮参投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-77525d98c652d74e"
@@ -210,6 +268,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-3511f7baf76701e3",
+          "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
+          "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
+          "source_content_hash": "1ada124c6217cee1",
+          "quote": "Sequoia Capital, which led Flow’s Series A, also participated in the round alongside Human Capital, Evantic, SV Angel, Odyssey, EQT",
+          "quote_hash": "b09c8e30d2f6b9988f8b162a75392caf33d384cac041658c4f5189b98b0f4ba0"
+        },
         {
           "source_id": "FISRC-77525d98c652d74e",
           "source_url": "https://natlawreview.com/press-releases/profound-raises-180m-series-d-18b-valuation-build-ai-platform-marketing",

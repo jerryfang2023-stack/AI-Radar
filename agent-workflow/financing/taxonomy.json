@@ -1,0 +1,324 @@
+{
+  "version": "AI-FUNDING-TAGS-1.0",
+  "effective_date": "2026-10-01",
+  "purpose": "帮助创业者按主营业务查找 AI 企业融资；融资事件事实与企业分类分开。",
+  "sources": [
+    {
+      "name": "Dealroom Tech Sector Taxonomy",
+      "url": "https://dealroom.co/our-data/taxonomy/",
+      "use": "行业、技术、客户、商业模式分维度；本体系采用业务分类与筛选维度分离原则。"
+    },
+    {
+      "name": "Crunchbase Glossary of Industries",
+      "url": "https://support.crunchbase.com/hc/en-us/articles/27690673553555-Glossary-of-Industries",
+      "use": "区分基础模型与 AI 应用；参考公开行业定义，不复制数据库。"
+    },
+    {
+      "name": "PitchBook AI & ML Report Q1 2023",
+      "url": "https://files.pitchbook.com/website/files/pdf/Q1_2023_Artificial_Intelligence_Machine_Learning_Report_13959.pdf",
+      "use": "基础设施与应用分层方法；细分按当前融资业务范围自主设计。"
+    }
+  ],
+  "sectors": [
+    {
+      "id": "models",
+      "name": "基础模型",
+      "en": "Foundation models",
+      "definition": "训练并提供通用或专用基础模型；不包括仅调用模型的应用。",
+      "subsectors": [
+        {
+          "id": "general-models",
+          "name": "通用与多模态模型"
+        },
+        {
+          "id": "specialist-models",
+          "name": "专用模型与科学模型"
+        },
+        {
+          "id": "media-models",
+          "name": "语音、图像与视频模型"
+        }
+      ]
+    },
+    {
+      "id": "compute",
+      "name": "AI 算力与芯片",
+      "en": "AI compute & chips",
+      "definition": "为 AI 训练或推理提供计算资源和芯片；排除机器人专用执行部件。",
+      "subsectors": [
+        {
+          "id": "ai-chips",
+          "name": "AI 芯片与加速器"
+        },
+        {
+          "id": "compute-systems",
+          "name": "AI 服务器与计算系统"
+        },
+        {
+          "id": "compute-cloud",
+          "name": "AI 云与算力服务"
+        },
+        {
+          "id": "compute-infrastructure",
+          "name": "数据中心与算力基础设施"
+        }
+      ]
+    },
+    {
+      "id": "developer-data",
+      "name": "AI 开发与数据",
+      "en": "AI development & data",
+      "definition": "提供模型、智能体和 AI 应用开发所需的平台与数据。 开发平台必须明确面向开发者、工程团队或提供开发 API；面向业务人员的工作流归企业通用 AI。",
+      "subsectors": [
+        {
+          "id": "data-platforms",
+          "name": "数据平台与检索"
+        },
+        {
+          "id": "data-services",
+          "name": "数据标注与合成"
+        },
+        {
+          "id": "model-platforms",
+          "name": "训练、微调与部署"
+        },
+        {
+          "id": "agent-platforms",
+          "name": "智能体开发与编排"
+        },
+        {
+          "id": "evaluation",
+          "name": "评测、监控与治理"
+        },
+        {
+          "id": "ai-security",
+          "name": "模型与智能体安全"
+        },
+        {
+          "id": "ai-coding",
+          "name": "AI 编程与软件研发"
+        }
+      ]
+    },
+    {
+      "id": "enterprise",
+      "name": "企业通用 AI",
+      "en": "Enterprise AI",
+      "definition": "可跨行业使用的企业职能应用；客户所属行业不改变主营赛道。",
+      "subsectors": [
+        {
+          "id": "customer-service",
+          "name": "客服与客户体验"
+        },
+        {
+          "id": "sales-marketing",
+          "name": "销售与营销"
+        },
+        {
+          "id": "productivity",
+          "name": "办公、会议与知识管理"
+        },
+        {
+          "id": "operations",
+          "name": "业务流程与企业智能体"
+        },
+        {
+          "id": "finance-hr",
+          "name": "财务、人力与企业管理"
+        },
+        {
+          "id": "analytics",
+          "name": "数据分析与商业智能"
+        },
+        {
+          "id": "cybersecurity",
+          "name": "网络安全与风控"
+        },
+        {
+          "id": "design-engineering",
+          "name": "设计与工程软件"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "name": "行业 AI",
+      "en": "Industry AI",
+      "definition": "围绕特定行业工作流程交付的 AI 产品。",
+      "subsectors": [
+        {
+          "id": "healthcare",
+          "name": "医疗服务与临床"
+        },
+        {
+          "id": "life-sciences",
+          "name": "药物研发与生命科学"
+        },
+        {
+          "id": "financial-services",
+          "name": "金融与保险"
+        },
+        {
+          "id": "legal",
+          "name": "法律与合规"
+        },
+        {
+          "id": "education",
+          "name": "教育与学习"
+        },
+        {
+          "id": "commerce",
+          "name": "电商、零售与供应链"
+        },
+        {
+          "id": "manufacturing",
+          "name": "工业软件与制造"
+        },
+        {
+          "id": "energy",
+          "name": "能源、气候与农业"
+        },
+        {
+          "id": "property",
+          "name": "建筑与房地产"
+        },
+        {
+          "id": "mobility",
+          "name": "交通与物流软件"
+        },
+        {
+          "id": "public-services",
+          "name": "公共服务与专业行业"
+        }
+      ]
+    },
+    {
+      "id": "consumer",
+      "name": "消费 AI 应用",
+      "en": "Consumer AI applications",
+      "definition": "直接为个人消费者交付的软件与服务。",
+      "subsectors": [
+        {
+          "id": "assistants",
+          "name": "个人助手与搜索"
+        },
+        {
+          "id": "companionship",
+          "name": "社交与情感陪伴"
+        },
+        {
+          "id": "content-creation",
+          "name": "图像、视频与音频创作"
+        },
+        {
+          "id": "personal-learning",
+          "name": "个人学习与技能"
+        },
+        {
+          "id": "wellness",
+          "name": "健康、生活与个人管理"
+        },
+        {
+          "id": "entertainment",
+          "name": "游戏与娱乐"
+        }
+      ]
+    },
+    {
+      "id": "consumer-devices",
+      "name": "消费 AI 硬件",
+      "en": "Consumer AI devices",
+      "definition": "面向消费者的 AI 终端；排除机器人本体、通用具身智能和机器人核心部件主营企业。",
+      "subsectors": [
+        {
+          "id": "glasses",
+          "name": "AI 眼镜"
+        },
+        {
+          "id": "pendants",
+          "name": "AI 挂件与随身终端"
+        },
+        {
+          "id": "toys",
+          "name": "AI 玩具与陪伴设备"
+        },
+        {
+          "id": "phones",
+          "name": "AI 手机"
+        },
+        {
+          "id": "audio-wearables",
+          "name": "AI 耳机与录音穿戴"
+        },
+        {
+          "id": "home-devices",
+          "name": "AI 家庭消费设备"
+        }
+      ]
+    }
+  ],
+  "product_forms": [
+    {
+      "id": "model-api",
+      "name": "模型与 API"
+    },
+    {
+      "id": "compute",
+      "name": "算力服务"
+    },
+    {
+      "id": "chip-system",
+      "name": "芯片与计算系统"
+    },
+    {
+      "id": "developer-platform",
+      "name": "开发与数据平台"
+    },
+    {
+      "id": "enterprise-software",
+      "name": "企业软件"
+    },
+    {
+      "id": "consumer-software",
+      "name": "消费软件"
+    },
+    {
+      "id": "consumer-device",
+      "name": "消费 AI 终端"
+    },
+    {
+      "id": "ai-service",
+      "name": "AI 专业服务"
+    }
+  ],
+  "customers": [
+    {
+      "id": "business",
+      "name": "企业"
+    },
+    {
+      "id": "consumer",
+      "name": "个人消费者"
+    },
+    {
+      "id": "developer",
+      "name": "开发者"
+    },
+    {
+      "id": "research",
+      "name": "科研机构"
+    },
+    {
+      "id": "public-sector",
+      "name": "公共部门"
+    }
+  ],
+  "rules": {
+    "primary_sector": "一个主营赛道，一个细分赛道；多产品公司依据当前已交付业务和融资主体判定。",
+    "scope": "排除具身智能、机器人本体和机器人核心部件主营企业，保留消费 AI 硬件。",
+    "evidence": "所有分类必须引用卡片已验证的公司或产品原文证据；不能根据投资方、单个客户、技术关键词、旧标签推定。",
+    "uncertainty": "证据不足保留待分类；不把未知强制塞进通用行业。",
+    "finance_fields": "轮次、融资金额、估值、地区、披露日期是结构字段，不是标签。",
+    "retired": "FDE、部署方式、硬件性能/供应链事实、MCP/RAG/推理能力等旧技术标签不进入当前融资筛选；机器人类不进入本融资目录。"
+  }
+}

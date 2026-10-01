@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 import { isMainModule } from "./lib/module-entry.mjs";
 import fs from "node:fs";
+import { createSearchGateway } from "./lib/search-gateway.mjs";
+import { planFundingResearch } from "./lib/funding-research-plan.mjs";
 import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
@@ -214,55 +216,10 @@ function sourceClass(url, companyName) {
     : "independent";
 }
 
-async function searchTavily(query, companyName) {
-  if (!process.env.TAVILY_API_KEY || process.env.TAVILY_DISABLED === "true") return [];
-  const response = await fetch("https://api.tavily.com/search", {
-    method: "POST",
-    headers: { authorization: `Bearer ${process.env.TAVILY_API_KEY}`, "content-type": "application/json" },
-    body: JSON.stringify({
-      query,
-      topic: "general",
-      search_depth: "advanced",
-      max_results: 8,
-      include_answer: false,
-      include_raw_content: true,
-    }),
-    signal: AbortSignal.timeout(45000),
-  });
-  if (!response.ok) throw new Error(`tavily_${response.status}`);
-  const data = await response.json();
-  return (data.results || []).map((result) => ({
-    provider: "tavily",
-    title: clean(result.title),
-    url: clean(result.url),
-    provider_body: clean(result.raw_content || result.content),
-    source_class: sourceClass(result.url, companyName),
-  })).filter((result) => result.url);
-}
-
-async function searchExa(query, companyName) {
-  if (!process.env.EXA_API_KEY) return [];
-  const response = await fetch("https://api.exa.ai/search", {
-    method: "POST",
-    headers: { "x-api-key": process.env.EXA_API_KEY, "content-type": "application/json" },
-    body: JSON.stringify({
-      query,
-      type: "auto",
-      numResults: 8,
-      contents: { text: { maxCharacters: 18000 } },
-    }),
-    signal: AbortSignal.timeout(45000),
-  });
-  if (!response.ok) throw new Error(`exa_${response.status}`);
-  const data = await response.json();
-  return (data.results || []).map((result) => ({
-    provider: "exa",
-    title: clean(result.title),
-    url: clean(result.url),
-    provider_body: clean(result.text),
-    source_class: sourceClass(result.url, companyName),
-  })).filter((result) => result.url);
-}
+const fundingSearchGateway = createSearchGateway({
+  cacheDir: path.join(process.env.GUANLAN_RUNTIME_DIR || path.join(root, "agent-workflow/reports"), "funding-search-cache"),
+  maxRequests: Number(args.get("search-request-budget") || 120), timeoutMs: 25000,
+});
 
 async function capturePage(result) {
   const privateCache = args.get("research-seeds") ? path.join(resolvePrivateEvidenceBackupRoot(root, { required: true }), "funding-research", stableId("FISRC", result.url) + ".json") : "";
@@ -291,7 +248,7 @@ async function capturePage(result) {
       method = "direct_fetch";
     }
   } catch {}
-  if (body.length < 300 && result.provider_body.length >= 300) {
+  if (body.length < 300 && result.provider_content_kind === "fulltext" && result.provider_body?.length >= 300) {
     body = result.provider_body;
     method = `${result.provider}_captured_content`;
   }
@@ -524,19 +481,7 @@ function modelCorrectionProblem(problem = "") {
 }
 
 export function domesticFundingResearchQueries(companyName, amountHint, disclosedAt = "") {
-  const name = clean(companyName);
-  const shortName = name.replace(/[（(][^）)]{1,20}[）)]/gu, "")
-    .replace(/(?:科技)?(?:有限责任公司|股份有限公司|有限公司)$/u, "");
-  return [
-    { intent: "event_discovery", query: `"${name}" ${String(disclosedAt).slice(0, 4)} 融资 轮次 金额 投资方` },
-    { intent: "funding", query: `"${name}" "${clean(amountHint)}" 本轮融资 领投 跟投` },
-    { intent: "product", query: `"${name}" 产品 服务 创始人 总部` },
-    { intent: "investor_rationale", query: `"${name}" 投资机构 投资原因 融资用途` },
-    ...(shortName !== name && shortName.length >= 2 ? [
-      { intent: "funding", query: `"${shortName}" ${String(disclosedAt).slice(0, 4)} 融资 投资方` },
-      { intent: "product", query: `"${shortName}" 产品 创始人` },
-    ] : []),
-  ];
+  return planFundingResearch({ company: { canonical_name: companyName }, amountHint, event: { disclosed_at: disclosedAt }, chinese: true });
 }
 
 async function researchSources(bundle, event, company) {
@@ -568,66 +513,25 @@ async function researchSources(bundle, event, company) {
   const identityHint = clean(captured[0]?.title_original || event.object || event.display_title_zh);
   const describedSubject = clean(identityHint.match(/^(.{2,50}?)(?:\s+开发商|\s+(?:maker|creator|developer)\b)/iu)?.[1]);
   const identitySubject = describedSubject.replace(/([a-z0-9])([A-Z])/gu, "$1 $2");
-  const siteHint = companyHost ? `site:${companyHost} ` : "";
   // Query language follows the evidenced company name as well as verified
   // market scope. This does not promote an unverified geography to CN.
   const chineseQueries = event.market_scope?.china_market_match === true || /\p{Script=Han}/u.test(company.canonical_name);
-  const queries = chineseQueries ? domesticFundingResearchQueries(company.canonical_name, amountHint, event.disclosed_at) : [
-    {
-      intent: "event_discovery",
-      query: clean(`"${identityHint}" funding company investors product`),
-    },
-    {
-      intent: "funding",
-      query: clean(`"${company.canonical_name}" "${amountHint}" funding investors round`),
-    },
-    ...(identitySubject ? [{
-      intent: "funding",
-      query: clean(`"${identitySubject}" "${amountHint}" funding investors company`),
-    }, {
-      intent: "product",
-      query: clean(`"${company.canonical_name}" "${identitySubject}" company founders product`),
-    }] : []),
-    {
-      intent: "product",
-      query: clean(`${siteHint}"${company.canonical_name}" product customers case study`),
-    },
-    {
-      intent: "comparison",
-      query: clean(`"${company.canonical_name}" "${identityHint}" competitors product use case`),
-    },
-    {
-      intent: "investor_rationale",
-      query: clean(`"${company.canonical_name}" "${amountHint}" investor quote why invested`),
-    },
-    {
-      intent: "investor_rationale",
-      query: clean(`"${company.canonical_name}" "${amountHint}" "why we invested" OR "our investment"`),
-    },
-  ];
+  const queries = planFundingResearch({ company, event, amountHint, officialHost: companyHost, chinese: chineseQueries });
   const attempts = [];
   const results = [];
-  const queryResults = await Promise.all(queries.map(async ({ intent, query }) => ({
-    intent,
-    query,
-    settled: await Promise.allSettled([
-      searchTavily(query, company.canonical_name),
-      searchExa(query, company.canonical_name),
-    ]),
-  })));
-  for (const { intent, query, settled } of queryResults) {
-    for (const [index, outcome] of settled.entries()) {
-      const provider = index === 0 ? "tavily" : "exa";
-      attempts.push({
-        provider,
-        query,
-        status: outcome.status === "fulfilled" ? "completed" : "failed",
-        error: outcome.status === "rejected" ? clean(outcome.reason?.message) : "",
-      });
-      if (outcome.status === "fulfilled") {
-        results.push(...outcome.value.map((result) => ({ ...result, intent, query })));
-      }
+  // Bounded, sequential discovery shares cache/outage state with every event.
+  // Empty results are valid observations; failures stay explicit.
+  for (const { intent, query } of queries) {
+    const start = fundingSearchGateway.attempts.length;
+    try {
+      const found = await fundingSearchGateway.search(query, 8);
+      results.push(...found.map((result) => ({ ...result, intent, query,
+        source_class: sourceClass(result.url, company.canonical_name),
+        discovery_snippet: result.snippet, provider_body: "" })));
+    } catch (error) {
+      attempts.push({ provider: "gateway", query, status: "failed", error: error.message });
     }
+    attempts.push(...fundingSearchGateway.attempts.slice(start));
   }
   const deduped = new Map();
   for (const result of results) {
@@ -636,17 +540,17 @@ async function researchSources(bundle, event, company) {
     const isOfficialCandidate = result.source_class === "official_candidate";
     const isCanonicalHost = officialHosts.some((host) => sameHostFamily(candidateHost, host));
     const companyName = clean(company.canonical_name).toLowerCase();
-    const resultLead = clean(`${result.title} ${result.provider_body}`).toLowerCase();
+    const resultLead = clean(`${result.title} ${result.discovery_snippet || ""}`).toLowerCase();
     const companyInLead = fundingResearchNameMatches(resultLead, companyName);
     const identityKey = identitySubject.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, "");
     const identityInLead = identityKey && resultLead.replace(/[^\p{L}\p{N}]+/gu, "").includes(identityKey);
     const isRelevantIndependent = result.source_class === "independent"
       && (companyInLead || identityInLead)
       && /\b(?:invest|funding|series|seed|product|customer|case study|agent|platform)\b|融资|投资|产品|客户|案例|智能体|平台/iu
-        .test(clean(`${result.title} ${result.url} ${result.provider_body}`));
+        .test(clean(`${result.title} ${result.url} ${result.discovery_snippet || ""}`));
     const isInvestorRationaleLead = result.intent === "investor_rationale"
       && companyInLead
-      && /\b(?:invest|investment|portfolio|series|seed|funding)\b|融资|投资|领投|跟投/iu.test(clean(`${result.title} ${result.url} ${result.provider_body}`));
+      && /\b(?:invest|investment|portfolio|series|seed|funding)\b|融资|投资|领投|跟投/iu.test(clean(`${result.title} ${result.url} ${result.discovery_snippet || ""}`));
     if (
       !isKnownSecondary
       && !isOfficialCandidate
@@ -662,7 +566,7 @@ async function researchSources(bundle, event, company) {
   const candidates = [...deduped.values()]
     .sort((a, b) => scoreCandidate(b, company.canonical_name, identitySubject) - scoreCandidate(a, company.canonical_name, identitySubject))
     .filter((candidate) => !captured.some((source) => normalizedUrlKey(source.source_url) === normalizedUrlKey(candidate.url)))
-    .slice(0, Math.max(0, 8 - captured.length));
+    .slice(0, 16);
   for (let index = 0; index < candidates.length && captured.length < 8; index += 4) {
     const sources = await Promise.all(candidates.slice(index, index + 4).map(capturePage));
     captured.push(...sources.filter(Boolean).slice(0, 8 - captured.length));
@@ -1222,6 +1126,7 @@ async function main() {
       pending: pending.length,
       pending_event_ids: pending.map((event) => event.event_id),
       recovered_from_git: recoveredCards.length,
+      search_gateway: fundingSearchGateway.status(),
       providers: {
         tavily: Boolean(process.env.TAVILY_API_KEY) && process.env.TAVILY_DISABLED !== "true",
         exa: Boolean(process.env.EXA_API_KEY),
@@ -1233,10 +1138,8 @@ async function main() {
   if (pending.length && !process.env.DEEPSEEK_API_KEY) {
     throw new Error("deepseek_key_missing_for_funding_insight");
   }
-  const tavilyAvailable = Boolean(process.env.TAVILY_API_KEY) && process.env.TAVILY_DISABLED !== "true";
-  if (pending.length && !args.get("research-seeds") && !tavilyAvailable && !process.env.EXA_API_KEY) {
-    throw new Error("funding_insight_search_provider_missing");
-  }
+  // The shared gateway supports configured providers and a bounded free RSS fallback.
+  // Provider health is decided by the actual response, not a two-key legacy preflight.
   const results = pending.length
     ? await mapConcurrent(
       pending,
@@ -1328,8 +1231,8 @@ async function main() {
       schema_version: FUNDING_INSIGHT_VERSION,
       date,
       generated_at: new Date().toISOString(),
-      trigger: "verified_funding_events_with_three_month_backfill",
-      research_provider: args.get("research-seeds") ? "reviewed-discovery+direct-fetch+deepseek" : "tavily+exa+deepseek",
+      trigger: "accepted_financing_event_research",
+      research_provider: args.get("research-seeds") ? "reviewed-discovery+direct-fetch+deepseek" : "search-gateway+direct-original+deepseek",
       model,
       human_review_required: false,
       auto_publish_gate: FUNDING_INSIGHT_GATE_VERSION,

@@ -11,6 +11,13 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$policy = Get-Content -LiteralPath (Join-Path $PSScriptRoot "../financing/config.json") -Raw | ConvertFrom-Json
+if ($policy.paused_lanes -contains "community") {
+  if (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyContinue) { Disable-ScheduledTask -TaskName $TaskName | Out-Null }
+  Write-Host "Paused by the funding-only policy: $TaskName"
+  return
+}
+
 $Utf8Profile = Join-Path $PSScriptRoot "Set-WaveSightUtf8.ps1"
 if (Test-Path -LiteralPath $Utf8Profile) { . $Utf8Profile }
 

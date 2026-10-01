@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 10,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
@@ -70,10 +70,10 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
       "co_lead": 3,
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 2,
       "participant": 5
     },
@@ -126,6 +126,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-92fb4f47e4af01ed",
+        "funding_insight_id": "FI-1b6dd112c647d4a1",
+        "event_ids": [
+          "EV-35fa913e4709b4d6"
+        ],
+        "company_entity_id": "EN-b4c73396844f7d05",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$1B",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "historical_or_ambiguous",
+        "role": "Series B 联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-70f948c95dacb2f0",
+            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+            "source_content_hash": "0773286daf5bf525",
+            "quote": "it co-led the $250 million Series B in August with Index Ventures",
+            "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a026149fef692a82",
         "funding_insight_id": "FI-e0e22d70a91e704e",
@@ -572,6 +612,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-70f948c95dacb2f0",
+        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+        "source_content_hash": "0773286daf5bf525",
+        "quote": "it co-led the $250 million Series B in August with Index Ventures",
+        "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
+      },
       {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",

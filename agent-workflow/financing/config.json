@@ -1,0 +1,110 @@
+{
+  "version": "FINANCING-MONITOR-1",
+  "window_days": 7,
+  "search_results": 8,
+  "max_search_requests": 160,
+  "capture_concurrency": 4,
+  "capture_timeout_ms": 20000,
+  "max_capture_attempts": 240,
+  "markets": [
+    "domestic",
+    "overseas"
+  ],
+  "general_queries": {
+    "domestic": [
+      "(人工智能 OR AI) (融资 OR 获投 OR 领投)",
+      "site:36kr.com AI 融资",
+      "site:itjuzi.com 人工智能 融资",
+      "site:pedaily.cn AI 融资",
+      "site:lieyunpro.com AI 融资",
+      "site:cyzone.cn AI 融资"
+    ],
+    "overseas": [
+      "AI startup (raises OR funding OR series)",
+      "site:techcrunch.com AI funding",
+      "site:businesswire.com AI funding",
+      "site:prnewswire.com AI raises",
+      "site:eu-startups.com AI funding"
+    ]
+  },
+  "hardware": [
+    {
+      "id": "glasses",
+      "zh": "(AI眼镜 OR 智能眼镜 OR AR眼镜) (融资 OR 获投)",
+      "en": "(AI glasses OR smart glasses) (funding OR raises)"
+    },
+    {
+      "id": "pendants",
+      "zh": "(AI钥匙扣 OR AI挂件 OR AI吊坠 OR AI胸针) (融资 OR 获投)",
+      "en": "(AI keychain OR AI pendant OR AI wearable pin) (funding OR raises)"
+    },
+    {
+      "id": "companions",
+      "zh": "(AI玩具 OR AI宠物 OR 陪伴机器人) (融资 OR 获投)",
+      "en": "(AI toy OR AI companion robot OR AI pet) (funding OR raises)"
+    },
+    {
+      "id": "phones",
+      "zh": "(AI手机 OR AI原生终端) (融资 OR 获投)",
+      "en": "(AI phone OR AI smartphone OR AI native device) (funding OR raises)"
+    },
+    {
+      "id": "audio-wearables",
+      "zh": "(AI耳机 OR AI录音 OR 智能戒指 OR AI手表) (融资 OR 获投)",
+      "en": "(AI earbuds OR AI recorder OR AI smart ring) (funding OR raises)"
+    },
+    {
+      "id": "home-devices",
+      "zh": "(AI家庭机器人 OR AI家用机器人 OR AI学习机 OR AI相机) (融资 OR 获投)",
+      "en": "(AI home robot OR AI learning device OR AI camera) (funding OR raises)"
+    }
+  ],
+  "paused_lanes": [
+    "community",
+    "builders_rss",
+    "follow_builders"
+  ],
+  "scope": "all_ai_financing_except_embodied_and_robotics",
+  "sector_queries": [
+    {
+      "id": "models",
+      "zh": "(大模型 OR 人工智能模型 OR AI模型) (融资 OR 获投)",
+      "en": "(foundation model OR generative AI) (funding OR raises)"
+    },
+    {
+      "id": "compute",
+      "zh": "(AI算力 OR AI基础设施 OR AI云) (融资 OR 获投)",
+      "en": "(AI compute OR AI infrastructure OR AI cloud) (funding OR raises)"
+    },
+    {
+      "id": "chips",
+      "zh": "(AI芯片 OR 人工智能芯片 OR AI半导体) (融资 OR 获投)",
+      "en": "(AI chip OR AI semiconductor) (funding OR raises)"
+    },
+    {
+      "id": "tools",
+      "zh": "(AI开发工具 OR AI智能体 OR AI数据平台) (融资 OR 获投)",
+      "en": "(AI developer tools OR AI agents OR AI data platform) (funding OR raises)"
+    },
+    {
+      "id": "enterprise",
+      "zh": "(AI企业软件 OR AI办公 OR AI安全) (融资 OR 获投)",
+      "en": "(enterprise AI OR AI security OR AI productivity) (funding OR raises)"
+    },
+    {
+      "id": "health",
+      "zh": "(AI医疗 OR AI制药 OR AI生物) (融资 OR 获投)",
+      "en": "(AI healthcare OR AI drug discovery OR AI biotech) (funding OR raises)"
+    },
+    {
+      "id": "industry",
+      "zh": "(AI金融 OR AI教育 OR AI工业软件 OR AI能源) (融资 OR 获投)",
+      "en": "(AI fintech OR AI education OR industrial AI software OR AI energy) (funding OR raises)"
+    },
+    {
+      "id": "consumer",
+      "zh": "(AI消费应用 OR AI社交 OR AI内容创作 OR AI游戏) (融资 OR 获投)",
+      "en": "(consumer AI OR AI social OR AI creator OR AI gaming) (funding OR raises)"
+    }
+  ]
+}
