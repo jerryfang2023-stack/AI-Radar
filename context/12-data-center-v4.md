@@ -117,7 +117,7 @@ contract version, generation time, Git commit, table names, and row counts.
 The Guanlan AI Vault remains a one-way readable projection and never reads or
 modifies JSONL or DuckDB.
 
-The local refresh runs inside the existing 16:45 Final Closure. No independent
+The local refresh runs inside the existing 统一每日任务的发布收尾阶段. No independent
 data-lake scheduled task or Startup loop is supported.
 
 The daily GitHub workflow captures ephemeral snapshots, writes `SOURCE-INTAKE-V1`, persists and pushes complete bodies to the private evidence repository, removes public body copies, and passes the public evidence boundary gate before these V4 steps. No legacy Card, desk, graph, or mapping writer follows them.

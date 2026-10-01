@@ -1,7 +1,7 @@
 ---
 status: current
 scope: site-v4-automation
-last_updated: 2026-09-28
+last_updated: 2026-10-01
 priority: current
 ---
 
@@ -33,7 +33,7 @@ candidate Markdown are no longer written. Immutable original snapshots remain.
 ## Morning financing scope and acceptance
 
 08:10 is the dispatch time, not the completion deadline. When production is needed,
-`run-daily-automation-controller.mjs --phase=morning` dispatches
+`run-daily-automation-controller.mjs --phase=daily` resumes or dispatches
 `.github/workflows/daily-persistent-assets-pr.yml` through its health router:
 
 - Overseas/general commercial discovery includes dedicated funding sources,
@@ -53,7 +53,7 @@ Historical domestic backfills remain explicit tasks, not automatic daily full-hi
 
 For financing publication, require original-source evidence, event deduplication,
 funding-card validation, accepted merge, and the production publication receipt.
-16:45 Final Closure synchronizes accepted output to the independent Funding Portal,
+The same daily task immediately synchronizes accepted output to the independent Funding Portal,
 Mini Program data contracts, protected OPS and local knowledge projection. Verify the
 live date/data and application gates; collecting news alone is not publication completion.
 
@@ -68,10 +68,7 @@ live date/data and application gates; collecting news alone is not publication c
 - Report generation remains independent from Opportunity Map generation.
 - FDE/Hardware sync depends on V4 integrity/materialization, never V3 gates.
 
-Funding Insights additionally requires a disclosed round amount. A valuation-only
-object, including a pre-money or post-money valuation, is not financing proceeds
-and remains in the Data Center unless the event title separately discloses the
-round amount. When a source card is withdrawn, write-mode taxonomy maintenance
+Funding Insights uses the disclosed round amount or an explicitly evidenced undisclosed-amount status. A valuation, cumulative amount or tranche cap cannot substitute for round proceeds; unresolved amounts remain pending under the existing evidence gate. When a source card is withdrawn, write-mode taxonomy maintenance
 must also prune its stale derived decision before rebuilding projections.
 
 ## Recovery
@@ -86,58 +83,29 @@ and supervision reads a same-date bundle from `origin/main`, it must read the
 matching gate and manifest from that same published ref; mixing published data
 with stale local gate files is forbidden because it can create a false repair.
 
-## Local Windows schedule
+## Unified daily schedule
 
-The supported local Windows schedule contains exactly four tasks (`WINDOWS-AUTOMATION-V1.2-weekly-independent-community-builders`, effective 2026-09-28):
+Effective 2026-10-01, Codex automation `ai` runs daily at 08:10 Asia/Shanghai.
+It owns funding discovery, six consumer AI hardware categories in both markets,
+secondary research, accepted publication and local closure. The GitHub 10:30
+health-dispatch fallback reuses the same accepted input and active-run state.
+See `docs/unified-daily-monitoring.md` for the executable entry and completion rules.
 
-| Time | Task |
-|---|---|
-| 08:10 | WaveSight Morning Production Dispatch (domestic/overseas financing + Business Signals only) |
-| Monday 08:30 | WaveSight Community Intelligence Weekly (local 生财 / AI 破局 collection and publish handoff) |
-| Monday 16:10 | WaveSight Follow-Builders Skill Weekly |
-| 16:45 | WaveSight Daily Final Closure |
+The only active Windows schedules are Community Intelligence Monday 08:30 and
+Follow-Builders Monday 16:10. The separate Builders RSS GitHub workflow remains
+Monday 09:00. Weekly results do not become daily financing prerequisites.
 
-The First-Line Viewpoints RSS / podcast workflow is a separate GitHub Actions
-schedule on Monday at 09:00 Asia/Shanghai (`daily-first-line-viewpoints-pr.yml`;
-GitHub cron `0 1 * * 1`). It refreshes the accepted builders feed and V4 adapter;
-the local 16:10 task then publishes the independent follow-builders viewpoint
-archive. Neither stage is bundled with funding discovery.
+The old morning, recovery, closure, final-closure and Hermes daily timers are
+retired. Their saved task definitions may remain disabled for rollback. The
+Windows migration script disables them and never registers new daily triggers.
+A legacy `--scheduled=true` phase records `retired_schedule` without dispatching.
+Manual compatibility phases are available, but use the unified `daily` entry;
+there is no 16:45 cutoff and no automatic Codex self-repair child process.
 
-The operator checks production and repairs problems daily. The 09:15 Recovery,
-09:50 Closure and 10:20 Hermes timers are retired. Their source tools and previous
-receipts remain available for manual diagnosis. The paused Codex
-`builder-observation-daily-sync` automation is removed.
-
-Morning owns Business Signals only. It neither inspects nor dispatches the
-weekly Builders or Community lanes. Each weekly lane is validated on Monday; on
-other days the last accepted publication remains the expected current state and
-must not create a daily missing-data failure. Failure in one weekly lane does not
-suppress funding production or the other weekly lane.
-
-Late scheduled Morning runs remain eligible until 16:45, rather than being skipped
-at the retired 09:15 recovery window. At 16:45 and later they record `superseded`
-to avoid colliding with Final Closure; any remaining missing production needs an
-explicit manual recovery. Manual invocations are not superseded.
-
-The Morning Production controller treats `agent-workflow/skills/` as the
-authoritative Skill source. Before its Skill Ops preflight, it deterministically
-synchronizes the derived `.agents/skills/` runtime from that source; direct
-runtime edits are overwritten and must never become an alternative source of
-truth.
-
-Hermes watchdog and heartbeat publication are manual tools only. No daily heartbeat
-is expected; its absence is not a production failure. Optional manual morning
-checks require only the Morning receipt and mark Recovery/Closure as not scheduled.
-GitHub keeps the 10:30 commercial-production fallback, failure artifacts and the
-weekly/monthly report schedules.
-
-Controller, supervision, self-check, and Codex handoff reports from Windows tasks
-are runtime state, not repository assets. The installer passes
-`--runtime-dir=%LOCALAPPDATA%\WaveSight\runtime`; local task execution must not
-dirty `agent-workflow/reports`. When explicitly invoked, manual Closure runs the self-check once and hands that
-same report to Codex. When repair is necessary, Codex receives a clean isolated
-worktree based on `origin/main`, so unrelated local edits are preserved and never
-treated as repair input.
+Stage receipts are private runtime state, keyed by date, accepted source and
+executing code/configuration. Downstream failures do not recollect sources.
+Closure creates an isolated accepted-main checkout; dirty local factual data
+cannot enter the data lake, Vault, portal or protected OPS publication.
 
 Every Windows automation entry also normalizes its process network environment
 before invoking GitHub, Codex, collection, or publication commands. Loopback
@@ -147,18 +115,11 @@ direct-fallback mode. The user or machine proxy configuration is never rewritten
 This prevents a stopped local proxy from turning every independent daily lane
 into the same false infrastructure failure.
 
-The daily controller must propagate its resolved runtime report directory to
-every child health or gate command. Business Signals health dispatch and Data
-Center projection coverage therefore receive `--reports-dir=<runtime>`. A child
-command must honor that argument instead of defaulting to
-`agent-workflow/reports`; the runtime regression test fails if this boundary is
-removed.
-
-Skill discovery refreshes invoked by the morning controller or Final Closure
-write `local-skill-store-data.js` into the resolved runtime directory. The
-checked-in dashboard remains a release artifact; controller-only usage counters
-and timestamps must not dirty the primary worktree or block the final local
-fast-forward.
+The controller propagates its runtime directory to child reports. Skill discovery
+writes `local-skill-store-data.js` there; runtime counters do not dirty the release
+artifact. Health/dispatch success is a running or waiting state, never proof of
+financing-card or portal completion. Successful stages are resumed by receipt;
+supervision and live verification must remain current.
 
 Skill preflight, supervision, and safe self-check repair read the same runtime
 dashboard via `--dashboard`. Manual self-check calls the direct dashboard

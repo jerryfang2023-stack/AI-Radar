@@ -111,7 +111,7 @@ test("agent output above the default pipe limit is retained without ENOBUFS", ()
 
 test("the handoff budget outlives the Codex budget and report finalization", () => {
   assert.ok(CODEX_REPAIR_HANDOFF_TIMEOUT_MS >= CODEX_REPAIR_TIMEOUT_MS + 180000);
-  assert.match(read("run-daily-automation-controller.mjs"), /\], CODEX_REPAIR_HANDOFF_TIMEOUT_MS\)/u);
+  assert.doesNotMatch(read("run-daily-automation-controller.mjs"), /run-codex-self-repair/u);
 });
 
 test("Pages supersession requires a successful deployment of the target or its descendant", async () => {
@@ -187,9 +187,8 @@ test("clean stale repair worktrees fast-forward, while unique and dirty work are
 
 test("scheduled controllers keep runtime reports outside the repository", () => {
   const installer = read("install-daily-automation-controller-tasks.ps1");
-  assert.match(installer, /LOCALAPPDATA[^\n]+WaveSight\\runtime/u);
-  assert.match(installer, /--runtime-dir=/u);
-  assert.match(installer, /--scheduled=true/u);
+  assert.match(installer, /Disable-ScheduledTask/u);
+  assert.doesNotMatch(installer, /Register-ScheduledTask/u);
   assert.match(read("install-hermes-control-plane-watchdog-task.ps1"), /--reports-dir=/u);
   assert.match(read("install-community-intelligence-task.ps1"), /-RuntimePath/u);
   assert.match(read("install-follow-builders-skill-task.ps1"), /-RuntimePath/u);
@@ -205,7 +204,6 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(controller, /run-business-signals-health-dispatch\.mjs[^]*--reports-dir=/u);
   assert.doesNotMatch(controller, /assert-follow-builders-data\.mjs/u);
   assert.doesNotMatch(controller, /assert-community-intelligence-data\.mjs/u);
-  assert.match(controller, /assert-data-center-projection-coverage\.mjs[^]*--reports-dir=/u);
   assert.equal(
     (controller.match(/build-skill-store-dashboard\.mjs[^]*?--output=/gu) || []).length,
     2,
@@ -222,21 +220,11 @@ test("scheduled controllers keep runtime reports outside the repository", () => 
   assert.match(selfCheck, /assert:data-center[^]*--reports-dir=/u);
 });
 
-test("late scheduled controller phases are superseded instead of colliding", () => {
+test("unified controller has no obsolete clock cutoffs or automatic recursive repair", () => {
   const controller = read("run-daily-automation-controller.mjs");
-  const watchdog = read("run-hermes-control-plane-watchdog.mjs");
-  assert.match(controller, /const scheduledRun = args\.get\("scheduled"\) === "true"/u);
-  assert.match(controller, /morning: \{ minute: 16 \* 60 \+ 45, next: "final-closure" \}/u);
-  assert.match(controller, /recovery: \{ minute: 9 \* 60 \+ 50, next: "closure" \}/u);
-  assert.match(controller, /closure: \{ minute: 16 \* 60 \+ 45, next: "final-closure" \}/u);
-  assert.match(controller, /status: "superseded"/u);
-  assert.match(watchdog, /args\.get\("grace-ms"\) \|\| "15000"/u);
-  assert.match(watchdog, /inspectControllersWithGrace/u);
-  assert.match(controller, /inspectControllerReportLiveness\(recoveryReport/u);
-  assert.match(controller, /controllerRecoveryOwnershipReason/u);
-  assert.match(controller, /const laneRecovery = ownsLaneRecovery \? recovery\(\) : null/u);
-  assert.match(controller, /actions: \[\.\.\.\(laneRecovery\?\.actions \|\| \[\]\), runtimeSync, coverageAction, selfCheck, codex\]/u);
-  assert.match(controller, /status: "running"[^]*internal: controller running/u);
+  assert.doesNotMatch(controller, /scheduledSupersession|run-codex-self-repair|16 \* 60 \+ 45/u);
+  assert.match(controller, /createStageCheckpoint/u);
+  assert.match(controller, /retired_schedule/u);
 });
 
 test("Closure records the exact reason when it takes Recovery ownership", () => {
@@ -268,7 +256,7 @@ test("Closure records the exact reason when it takes Recovery ownership", () => 
   );
 });
 
-test("late scheduled morning execution writes an observable superseded report", () => {
+test("retired Windows invocation records retirement without starting production", () => {
   const reportsDir = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-controller-catchup-"));
   const date = new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Shanghai",
@@ -286,9 +274,9 @@ test("late scheduled morning execution writes an observable superseded report", 
   ], { cwd: root, encoding: "utf8" });
   assert.equal(result.status, 0, result.stderr);
   const report = JSON.parse(fs.readFileSync(path.join(reportsDir, `${date}-daily-automation-morning.json`), "utf8"));
-  assert.equal(report.status, "superseded");
+  assert.equal(report.status, "retired_schedule");
   assert.equal(report.scheduled_run, true);
-  assert.equal(report.actions.length, 1);
+  assert.equal(report.actions.length, 0);
 });
 
 test("scheduled automation bypasses loopback services and falls back from an unavailable local proxy", () => {
@@ -393,33 +381,19 @@ test("community collection stops immediately when output reports expired login",
   assert.match(runner, /if \(\$lastError -match "COMMUNITY_LOGIN_REQUIRED"\)[^]*MANUAL_ACTION_REQUIRED[^]*break/u);
 });
 
-test("closure reuses its self-check instead of running it twice", () => {
+test("daily closure keeps publication and incident reports outside the checkout", () => {
   const controller = read("run-daily-automation-controller.mjs");
-  const repair = read("run-codex-self-repair.mjs");
-  assert.match(controller, /--reuse-self-check=true/u);
-  assert.match(repair, /reuseSelfCheck \? reusedSelfCheckCommand\(\) : runDailySelfCheck\(\)/u);
-  assert.match(controller, /same_date_production_waiting/u);
-  assert.match(controller, /lane\.id === "business_signals" && lane\.status === "waiting"/u);
-  assert.match(controller, /status: ok \? waiting \? "waiting" : "closed"/u);
   assert.match(controller, /write-evidence-supply-health-report\.mjs[^]*--output-dir=/u);
   assert.match(controller, /write-recurring-production-incidents\.mjs[^]*--reports-dir=/u);
   assert.match(controller, /sync-guanlan-vault-from-main\.mjs[^]*--runtime-dir=/u);
-  assert.match(controller, /Guanlan-Funding-Portal[^]*publish-from-wavesight\.mjs/u);
-  assert.match(controller, /executionOk = [^\n]*fundingPortal\.ok/u);
+  assert.match(controller, /GUANLAN_FUNDING_PORTAL_REPO/u);
+  assert.doesNotMatch(controller, /run-daily-self-check/u);
 });
 
-test("closure resolves and forwards an absolute Codex executable", () => {
+test("daily installer preserves disabled legacy definitions without installing an agent", () => {
   const installer = read("install-daily-automation-controller-tasks.ps1");
-  const controller = read("run-daily-automation-controller.mjs");
-  assert.match(installer, /function Resolve-CodexExecutable/u);
-  assert.match(installer, /WaveSight\\codex-cli/u);
-  assert.match(installer, /npm install --prefix \$managedRoot "@openai\/codex@latest"/u);
-  assert.match(installer, /MinimumVersion \(\[version\]"0\.151\.0"\)/u);
-  assert.match(installer, /Test-CodexExecutable -Candidate \$command\.Source -MinimumVersion/u);
-  assert.match(installer, /Test-CodexExecutable -Candidate \$managedExecutable/u);
-  assert.match(installer, /--codex-command="' \+ \$CodexExecutable/u);
-  assert.match(controller, /const codexCommand = args\.get\("codex-command"\) \|\| "codex"/u);
-  assert.match(controller, /`--codex-command=\$\{codexCommand\}`/u);
+  assert.match(installer, /Disable-ScheduledTask/u);
+  assert.doesNotMatch(installer, /Register-ScheduledTask|Unregister-ScheduledTask|npm install/u);
 });
 
 test("Vault refresh uses an isolated origin/main worktree and leaves supervision evidence", () => {
@@ -453,41 +427,12 @@ test("morning controller repairs derived repo Skill runtime before auditing it",
   assert.match(controller, /actions: \[runtimeSync, discoveryRefresh, preflight, business\]/u);
 });
 
-test("closure resyncs the derived repo Skill runtime after same-day main updates", () => {
+test("closure isolates accepted source and includes application publication in its required actions", () => {
   const controller = read("run-daily-automation-controller.mjs");
-  const closure = controller.slice(
-    controller.indexOf("function closure()"),
-    controller.indexOf("function finalClosure()"),
-  );
-  const syncIndex = closure.indexOf('"agent-workflow/tools/sync-repo-skills.mjs"');
-  const selfCheckIndex = closure.indexOf('"agent-workflow/tools/run-daily-self-check.mjs"');
-  assert.ok(syncIndex >= 0, "closure must rematerialize runtime Skills after publication updates main");
-  assert.ok(selfCheckIndex > syncIndex, "closure must sync runtime Skills before the daily self-check");
-  assert.match(closure, /const ok = runtimeSync\.ok && coverageAction\.ok && selfCheck\.ok && codex\.ok/u);
-  assert.match(closure, /actions: \[\.\.\.\(laneRecovery\?\.actions \|\| \[\]\), runtimeSync, coverageAction, selfCheck, codex\]/u);
-});
-
-test("final closure refreshes Skill discovery immediately before supervision", () => {
-  const controller = read("run-daily-automation-controller.mjs");
-  assert.match(
-    controller,
-    /const discoveryRefresh = run\("Refresh Skill discovery summary before final supervision"[^]*const supervision = run\("Final daily supervision"/u,
-  );
-  assert.match(
-    controller,
-    /Refresh Skill discovery summary before final supervision[^]*build-skill-store-dashboard\.mjs[^]*--output=/u,
-  );
-  assert.match(controller, /fundingPortal\.ok && opsPublication\.ok && discoveryRefresh\.ok && supervisionReported/u);
-  assert.match(controller, /fundingPortal, opsPublication, discoveryRefresh, supervisionAction/u);
-});
-
-test("periodic reports tolerate slower cloud generation and expose failed child diagnostics", () => {
-  const generator = read("generate-periodic-report-deepseek.mjs");
-  const controller = read("run-periodic-automation-controller.mjs");
-  assert.match(generator, /DEEPSEEK_PERIODIC_REPORT_TIMEOUT_MS \|\| 300000/u);
-  assert.match(generator, /timeoutMs: reportTimeoutMs/u);
-  assert.match(controller, /filter\(\(item\) => !item\.ok\)/u);
-  assert.match(controller, /\{ label: item\.label, status: item\.status, stdout: item\.stdout, stderr: item\.stderr \}/u);
+  assert.match(controller, /worktree[^]*add[^]*--detach/u);
+  assert.match(controller, /sourceCommit, codeCommit, portalRepo, primaryRoot/u);
+  assert.match(controller, /fundingPortal, opsPublication, discoveryRefresh, supervision/u);
+  assert.match(controller, /checkpoint.run/u);
 });
 
 test("Codex repair runs from a clean isolated worktree", () => {

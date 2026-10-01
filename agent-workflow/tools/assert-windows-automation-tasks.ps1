@@ -15,10 +15,8 @@ $repo = Resolve-RepoPath -InputPath $RepoPath
 if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
 $RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
 $expected = @(
-  [pscustomobject]@{ Name = "WaveSight Morning Production Dispatch"; Time = "08:10"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=morning --scheduled=true" },
   [pscustomobject]@{ Name = "WaveSight Community Intelligence Weekly"; Time = "08:30"; Frequency = "weekly"; Runner = "run-community-intelligence.ps1"; Arguments = "-PublishAfterSuccess" },
-  [pscustomobject]@{ Name = "WaveSight Follow-Builders Skill Weekly"; Time = "16:10"; Frequency = "weekly"; Runner = "run-follow-builders-skill.ps1"; Arguments = "-Merge" },
-  [pscustomobject]@{ Name = "WaveSight Daily Final Closure"; Time = "16:45"; Runner = "run-daily-automation-controller.mjs"; Arguments = "--phase=final-closure --scheduled=true" }
+  [pscustomobject]@{ Name = "WaveSight Follow-Builders Skill Weekly"; Time = "16:10"; Frequency = "weekly"; Runner = "run-follow-builders-skill.ps1"; Arguments = "-Merge" }
 )
 $expectedByName = @{}
 foreach ($item in $expected) { $expectedByName[$item.Name] = $item }
@@ -27,6 +25,7 @@ $tasks = @(Get-ScheduledTask -TaskName "WaveSight*" -ErrorAction SilentlyContinu
 $issues = [System.Collections.Generic.List[string]]::new()
 
 foreach ($task in $tasks) {
+  if (-not $task.Settings.Enabled) { continue }
   if (-not $expectedByName.ContainsKey($task.TaskName)) {
     $issues.Add("Unexpected WaveSight task exists: $($task.TaskName)")
     continue
@@ -75,7 +74,8 @@ $summary = [pscustomobject]@{
   ok = $issues.Count -eq 0
   repository = $repo
   expected_count = $expected.Count
-  actual_count = $tasks.Count
+  actual_count = @($tasks | Where-Object { $_.Settings.Enabled }).Count
+  retired_disabled_count = @($tasks | Where-Object { -not $_.Settings.Enabled }).Count
   tasks = @($tasks | Sort-Object TaskName | ForEach-Object {
     [pscustomobject]@{
       name = $_.TaskName

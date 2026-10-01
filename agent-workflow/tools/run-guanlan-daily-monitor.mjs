@@ -1,4 +1,6 @@
 import fs from "node:fs";
+import { createSearchGateway } from "./lib/search-gateway.mjs";
+import { collectAIHotFeed } from "./lib/aihot-feed.mjs";
 import { isMainModule } from "./lib/module-entry.mjs";
 import path from "node:path";
 import { execFile } from "node:child_process";
@@ -57,7 +59,7 @@ loadEnvFile(path.join(root, ".env.local"));
 if (args.has("help") || args.has("h")) {
   console.log(
     [
-      "WaveSight AI V3.3.6.3 guanlan-daily-monitor",
+      "WaveSight V4 source discovery and capture",
       "",
       "Usage:",
       "  node agent-workflow/tools/run-guanlan-daily-monitor.mjs --date=YYYY-MM-DD",
@@ -70,9 +72,9 @@ if (args.has("help") || args.has("h")) {
       "  --raw-max=220",
       "  --historical-dedupe=true",
       "  --raw-dedupe-buffer=40",
-      "  --aihot-limit=500",
+      "  --aihot-max-pages=100",
       "  --aihot-mode=all",
-      "  --aihot-window-hours=24",
+      "  --aihot-window-hours=168",
       "  --search-limit=150",
       "  --search-path-query-limit=5",
       "  --hn-limit=8",
@@ -98,7 +100,7 @@ if (args.has("help") || args.has("h")) {
 
 const date = args.get("date") || new Date().toISOString().slice(0, 10);
 const aihotMode = args.get("aihot-mode") || "all";
-const aihotWindowHours = Number(args.get("aihot-window-hours") || 24);
+const aihotWindowHours = Number(args.get("aihot-window-hours") || 168);
 const aihotTarget = Number(args.get("aihot-limit") || 500);
 const searchTarget = Number(args.get("search-limit") || 150);
 const searchPathQueryLimit = Number(args.get("search-path-query-limit") || 5);
@@ -262,7 +264,6 @@ let adaptiveRawFetchedCandidates = 0;
 let adaptiveRawExpansionCandidates = 0;
 let adaptiveRawCandidatePoolCount = 0;
 const providerFallbackNotes = [];
-let anysearchDisabledForRun = false;
 let tavilyDisabledForRun = tavilyDisabledByConfig;
 const aTierMediaFallbackQuerySuffix = "(site:reuters.com OR site:bloomberg.com OR site:ft.com OR site:wsj.com OR site:theinformation.com OR site:axios.com OR site:techcrunch.com)";
 const registrySources = mergeChinaMarketSources(
@@ -3116,240 +3117,14 @@ async function fetchGdeltJsonWithRetry(url, attempts = 3) {
   throw lastError || new Error("GDELT request failed");
 }
 
-async function fetchAnysearchResults(query, limit = 5, options = {}) {
-  if (!anysearchApiKey) throw new Error("ANYSEARCH_API_KEY is not configured");
-  const body = {
-    query,
-    max_results: Math.min(Math.max(Number(limit) || 5, 1), 10),
-  };
-  if (options.domain) body.domain = options.domain;
-  if (options.includeFilters !== false) {
-    body.content_types = ["web", "news"];
-    body.zone = "intl";
-    body.language = "en";
-  }
-  const response = await fetch("https://api.anysearch.com/v1/search", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${anysearchApiKey}`,
-      "content-type": "application/json",
-      accept: "application/json",
-    },
-    body: JSON.stringify(body),
-    signal: AbortSignal.timeout(fetchTimeoutMs),
-  });
-  const bodyText = await response.text();
-  let data = {};
-  try {
-    data = bodyText ? JSON.parse(bodyText) : {};
-  } catch (error) {
-    throw new Error(`Anysearch invalid JSON: ${formatFetchFailure(error)}`);
-  }
-  if (!response.ok) {
-    const message = data?.error || data?.message || `${response.status} ${response.statusText}`;
-    throw new Error(`Anysearch ${message}`);
-  }
-  if (data && typeof data.code === "number" && data.code !== 0) {
-    throw new Error(`Anysearch ${data.message || `code=${data.code}`}`);
-  }
-  const nestedData = data && typeof data.data === "object" && !Array.isArray(data.data) ? data.data : {};
-  const results = Array.isArray(data.results)
-    ? data.results
-    : Array.isArray(nestedData.results)
-      ? nestedData.results
-    : Array.isArray(data.items)
-      ? data.items
-      : Array.isArray(nestedData.items)
-        ? nestedData.items
-      : Array.isArray(data.data)
-        ? data.data
-        : [];
-  const parsed = results
-    .map((item) => ({
-      id: item.id || item.url || item.link,
-      title: item.title || item.name || item.headline || "",
-      url: item.url || item.link || item.original_url || item.source_url || "",
-      snippet: item.snippet || item.summary || item.description || item.content || item.text || "",
-      source: item.source || item.source_name || item.publisher || "keyword search / Anysearch",
-      published_at: normalizePublishedAt(
-        item.published_at,
-        item.publishedAt,
-        item.published_date,
-        item.publishedDate,
-        item.datePublished,
-        item.date_published,
-        item.created_at,
-        item.updated_at,
-        item.published,
-        item.date,
-      ),
-      meta: typeof item.score === "number" ? `score=${item.score.toFixed(3)}` : "",
-    }))
-    .filter((item) => item.url && item.title)
-    .slice(0, limit);
-  return parsed;
-}
-
-async function searchAnysearch(query, limit = 5) {
-  const parsed = [];
-  const seen = new Set();
-  const add = (items) => {
-    for (const item of items) {
-      const key = item.url || item.id;
-      if (!key || seen.has(key)) continue;
-      seen.add(key);
-      parsed.push(item);
-      if (parsed.length >= limit) break;
-    }
-  };
-  const domainErrors = [];
-  for (const domain of ["business", "tech"]) {
-    if (parsed.length >= limit) break;
-    try {
-      add(await fetchAnysearchResults(query, limit - parsed.length, { domain }));
-    } catch (error) {
-      if (!isProviderRunOutage(error.message)) throw error;
-      domainErrors.push(`${domain}: ${error.message}`);
-      providerFallbackNotes.push(`Anysearch ${domain} fallback for query "${query}": ${error.message}`);
-    }
-  }
-  if (parsed.length < limit && domainErrors.length) {
-    providerFallbackNotes.push(`Anysearch documented-payload retry for query "${query}": ${domainErrors.join("; ")}`);
-    add(await fetchAnysearchResults(query, limit, { includeFilters: false }));
-  }
-  if (!parsed.length) throw new Error("Anysearch returned 0 usable results");
-  return parsed.slice(0, limit);
-}
-
-async function searchTavily(query, limit = 5) {
-  if (!tavilyApiKey) throw new Error("TAVILY_API_KEY is not configured");
-  const response = await fetch("https://api.tavily.com/search", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${tavilyApiKey}`,
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      query,
-      topic: "general",
-      search_depth: "basic",
-      max_results: Math.min(Math.max(Number(limit) || 5, 1), 10),
-      include_answer: false,
-      include_raw_content: false,
-    }),
-    signal: AbortSignal.timeout(fetchTimeoutMs),
-  });
-  const bodyText = await response.text();
-  let data = {};
-  try {
-    data = bodyText ? JSON.parse(bodyText) : {};
-  } catch (error) {
-    throw new Error(`Tavily invalid JSON: ${formatFetchFailure(error)}`);
-  }
-  if (!response.ok) {
-    const message = data?.error || data?.message || `${response.status} ${response.statusText}`;
-    throw new Error(`Tavily ${message}`);
-  }
-  const results = Array.isArray(data.results) ? data.results : [];
-  const parsed = results
-    .map((item) => ({
-      id: item.url,
-      title: item.title || "",
-      url: item.url || "",
-      snippet: item.content || item.snippet || "",
-      source: "keyword search / Tavily",
-      published_at: normalizePublishedAt(item.published_at, item.publishedAt, item.published_date, item.publishedDate, item.datePublished, item.date),
-      meta: typeof item.score === "number" ? `score=${item.score.toFixed(3)}` : "",
-    }))
-    .filter((item) => item.url && item.title)
-    .slice(0, limit);
-  if (!parsed.length) throw new Error("Tavily returned 0 usable results");
-  return parsed;
-}
-
-async function searchExa(query, limit = 5) {
-  if (!exaApiKey) throw new Error("EXA_API_KEY is not configured");
-  const exaQuery = stripSiteFilters(query) || query;
-  const response = await fetch("https://api.exa.ai/search", {
-    method: "POST",
-    headers: {
-      "x-api-key": exaApiKey,
-      "content-type": "application/json",
-    },
-    body: JSON.stringify({
-      query: exaQuery,
-      type: "auto",
-      numResults: Math.min(Math.max(Number(limit) || 5, 1), 10),
-      contents: {
-        highlights: {
-          numSentences: 2,
-          highlightsPerUrl: 1,
-        },
-        text: false,
-      },
-    }),
-    signal: AbortSignal.timeout(fetchTimeoutMs),
-  });
-  const bodyText = await response.text();
-  let data = {};
-  try {
-    data = bodyText ? JSON.parse(bodyText) : {};
-  } catch (error) {
-    throw new Error(`Exa invalid JSON: ${formatFetchFailure(error)}`);
-  }
-  if (!response.ok) {
-    const message = data?.error || data?.message || `${response.status} ${response.statusText}`;
-    throw new Error(`Exa ${message}`);
-  }
-  const results = Array.isArray(data.results) ? data.results : [];
-  const parsed = results
-    .map((item) => {
-      const highlights = Array.isArray(item.highlights) ? item.highlights.filter(Boolean).join(" ") : "";
-      return {
-        id: item.id || item.url,
-        title: item.title || "",
-        url: item.url || "",
-        snippet: highlights || item.text || item.summary || "",
-        source: "keyword search / Exa",
-        published_at: normalizePublishedAt(item.published_at, item.publishedAt, item.published_date, item.publishedDate, item.datePublished, item.publishedDateString, item.created_at, item.updated_at),
-        meta: typeof item.score === "number" ? `score=${item.score.toFixed(3)}` : "",
-      };
-    })
-    .filter((item) => item.url && item.title)
-    .slice(0, limit);
-  if (!parsed.length) throw new Error("Exa returned 0 usable results");
-  return parsed;
-}
+const searchGateway = createSearchGateway({
+  env: { ...process.env, TAVILY_DISABLED: tavilyDisabledByConfig ? "true" : process.env.TAVILY_DISABLED },
+  cacheDir: path.join(sourceArtifactDir, "search-cache"), timeoutMs: fetchTimeoutMs,
+  maxRequests: Number(args.get("search-request-budget") || 200), fallback: searchDuckDuckGo, fallbackName: "duckduckgo",
+});
 
 async function searchLayeredWeb(query, limit = 5) {
-  if (anysearchApiKey && !anysearchDisabledForRun) {
-    try {
-      return await searchAnysearch(query, limit);
-    } catch (error) {
-      providerFallbackNotes.push(`Anysearch fallback for query "${query}": ${error.message}`);
-      if (isProviderAuthFailure(error.message) || isProviderRunOutage(error.message)) {
-        anysearchDisabledForRun = true;
-      }
-    }
-  }
-  if (tavilyApiKey && !tavilyDisabledForRun) {
-    try {
-      return await searchTavily(query, limit);
-    } catch (error) {
-      providerFallbackNotes.push(`Tavily fallback for query "${query}": ${error.message}`);
-      if (isProviderAuthFailure(error.message)) {
-        tavilyDisabledForRun = true;
-      }
-    }
-  }
-  if (exaApiKey) {
-    try {
-      return await searchExa(query, limit);
-    } catch (error) {
-      providerFallbackNotes.push(`Exa fallback for query "${query}": ${error.message}`);
-    }
-  }
-  return searchDuckDuckGo(query, limit);
+  return searchGateway.search(query, limit);
 }
 
 function decodeSearchResultUrl(href = "") {
@@ -3946,196 +3721,29 @@ function keywordSearchItem(result, queryConfig, pathConfig, extra = {}) {
     keyword_group: queryConfig.keyword_group,
     market_region: queryConfig.market_region || "",
     china_market_query_id: queryConfig.china_market_query_id || "",
+    monitoring_category: queryConfig.monitoring_category || "",
   };
 }
 
 async function collectAIHot() {
-  const items = [];
-  const failures = [];
-  let discoveredCountAll = 0;
-  let discoveredCountDaily = 0;
-  let rejectedCount = 0;
-  const since = new Date(Date.now() - aihotWindowHours * 60 * 60 * 1000).toISOString();
-  const seen = new Set();
-
-  const fetchMode = async (mode, options = {}) => {
-    const out = [];
-    let cursor = "";
-    let discovered = 0;
-    const maxItems = Number(options.maxItems || 1000);
-    while (discovered < maxItems) {
-      const url = new URL("https://aihot.virxact.com/api/public/items");
-      url.searchParams.set("mode", mode);
-      if (options.since) url.searchParams.set("since", options.since);
-      url.searchParams.set("take", "100");
-      url.searchParams.set("limit", "100");
-      if (cursor) url.searchParams.set("cursor", cursor);
-      try {
-        const data = await fetchJson(url.toString());
-        const batch = Array.isArray(data.items) ? data.items : [];
-        for (const item of batch) {
-          out.push(item);
-          discovered += 1;
-          if (discovered >= maxItems) break;
-        }
-        if (!data.hasNext || !data.nextCursor || batch.length === 0 || discovered >= maxItems) break;
-        cursor = data.nextCursor;
-      } catch (error) {
-        failures.push(`AI HOT (${mode}): ${error.message}`);
-        break;
-      }
-    }
-    return { items: out, discovered };
-  };
-
-  const createCandidate = (item, rank, lane) => {
-    const title = cleanText(
-      item.title || item.headline || item.itemTitle || item.name || item.topic,
-      item.title_en || item.summary || item.description || item.snippet
-    );
-    const summary = cleanText(
-      item.summary || item.description || item.snippet || item.content || item.text || item.lead,
-      item.title_en || item.title || item.headline
-    );
-    const url = item.url || item.link || item.original_url || item.originalUrl || item.origin_url || item.originUrl || "";
-    const sourceName = item.source || item.sourceName || item.publisher || item.media || "AI HOT";
-    const publishedAt = item.publishedAt || item.published_at || item.published || item.date || "";
-    const category = item.category || item.section || "industry";
-    const originalId = item.id || item.itemId || url || `${lane}-${rank}`;
-    return {
-      acquisition_channel: "aihot",
-      aihot_lane: lane,
-      original_id: originalId,
-      title,
-      summary,
-      url,
-      source: cleanText(sourceName, "AI HOT"),
-      published_at: publishedAt,
-      category,
-      discovery_source: "AI HOT",
-      discovery_record: {
-        discovery_title: title,
-        discovery_summary: summary,
-        source_name: cleanText(sourceName, "AI HOT"),
-        origin_url: url,
-        discovered_at: new Date().toISOString(),
-        rank_on_page: rank,
-        discovery_status: "discovered",
-      },
-    };
-  };
-
-  const markSeen = (candidate) => {
-    const key = candidate.original_id || candidate.url || candidate.title;
-    if (!key) return false;
-    if (seen.has(key)) return false;
-    seen.add(key);
-    return true;
-  };
-
-  const extractDailyItems = (payload) => {
-    if (Array.isArray(payload)) return payload;
-    if (!payload || typeof payload !== "object") return [];
-    const direct = [
-      payload.items,
-      payload.data,
-      payload.results,
-      payload.list,
-    ].find((value) => Array.isArray(value));
-    if (Array.isArray(direct)) return direct;
-    if (Array.isArray(payload.sections)) {
-      return payload.sections.flatMap((section) => (Array.isArray(section.items) ? section.items : []));
-    }
-    return [];
-  };
-
-  const fetchDaily = async (dailyDate) => {
-    const endpoints = [
-      `https://aihot.virxact.com/api/public/daily/${dailyDate}`,
-      "https://aihot.virxact.com/api/public/daily",
-    ];
-    let discovered = 0;
-    for (const endpoint of endpoints) {
-      try {
-        const data = await fetchJson(endpoint);
-        const dailyItems = extractDailyItems(data);
-        if (dailyItems.length) {
-          discovered = dailyItems.length;
-          return { items: dailyItems, discovered };
-        }
-      } catch (error) {
-        failures.push(`AI HOT (daily endpoint ${endpoint}): ${error.message}`);
-      }
-    }
-    return { items: [], discovered };
-  };
-
-  // 1) Pull AI HOT daily report first and include all curated daily items.
-  const daily = await fetchDaily(date);
-  discoveredCountDaily = daily.discovered;
-  for (const item of daily.items) {
-    const rank = items.length + 1;
-    const candidate = createCandidate(item, rank, "daily");
-    if (!markSeen(candidate)) continue;
-    const decision = aihotRawEntryDecision(candidate);
-    const queryTheme = themeFromAIHotDecision(candidate, decision);
-    items.push({
-      ...candidate,
-      raw_entry_decision: "raw_candidate",
-      raw_entry_reason: "daily_curated_candidate",
-      raw_entry_matched_terms: decision.matched_terms || [],
-      query_theme: queryTheme,
-      keyword_group: queryTheme,
-    });
-  }
-
-  // 2) Pull 24h full feed, skip items already in daily, then apply keyword/action rules on the remaining items.
-  const full = await fetchMode(aihotMode, { since, maxItems: aihotTarget });
-  discoveredCountAll = full.discovered;
-  for (const item of full.items) {
-    const rank = items.length + rejectedCount + 1;
-    const candidate = createCandidate(item, rank, "all");
-    if (!markSeen(candidate)) continue;
-    try {
-      const decision = aihotRawEntryDecision(candidate);
-      if (decision.keep) {
-        const queryTheme = themeFromAIHotDecision(candidate, decision);
-        items.push({
-          ...candidate,
-          raw_entry_decision: "raw_candidate",
-          raw_entry_reason: decision.reason,
-          raw_entry_matched_terms: decision.matched_terms,
-          query_theme: queryTheme,
-          keyword_group: queryTheme,
-        });
-      } else {
-        rejectedCount += 1;
-      }
-    } catch (error) {
-      failures.push(`AI HOT (${aihotMode}) item process failed: ${error.message}`);
-    }
-  }
-
-  if (!items.length && failures.length) {
+  const snapshotDir = path.join(sourceArtifactDir, "aihot-public-pages");
+  const result = await collectAIHotFeed({
+    window: aihotWindowHours <= 24 ? "24h" : "7d", timeoutMs: fetchTimeoutMs,
+    maxPages: Number(args.get("aihot-max-pages") || 100),
+    onPage: (page) => {
+      fs.mkdirSync(snapshotDir, { recursive: true });
+      fs.writeFileSync(path.join(snapshotDir, `page-${page.page}.json`), JSON.stringify(page));
+    },
+  });
+  // Public metadata is a discovery checkpoint, never an accepted original body.
+  fs.mkdirSync(snapshotDir, { recursive: true });
+  fs.writeFileSync(path.join(snapshotDir, "coverage.json"), JSON.stringify({ ...result, items: undefined }, null, 2));
+  if (!result.complete) {
     const fallback = await collectAIHotFallbackFromSearch();
-    items.push(...fallback.items);
-    failures.push(
-      `AI HOT API unavailable; used fallback source search (${fallback.items.length} item(s), ${fallback.filtered_count} filtered)`,
-      ...fallback.failures,
-    );
+    result.items.push(...fallback.items);
+    result.failures.push(...fallback.failures);
   }
-
-  return {
-    items,
-    failures,
-    discovered_count: discoveredCountDaily + discoveredCountAll,
-    discovered_count_daily: discoveredCountDaily,
-    discovered_count_all: discoveredCountAll,
-    included_count_daily: items.filter((item) => item.aihot_lane === "daily").length,
-    rejected_count: rejectedCount,
-    mode: `daily+${aihotMode}`,
-    since,
-  };
+  return result;
 }
 
 async function collectAIHotFallbackFromSearch() {
@@ -4290,8 +3898,9 @@ async function collectKeywordSearch() {
   const items = activeCuratedOriginalSourceItems();
   const failures = [];
   const filtered = [];
+  const diagnostics = [];
   const perPathResultLimit = Math.max(2, Math.ceil(searchTarget / Math.max(1, keywordSearchPaths.length * Math.max(1, searchPathQueryLimit))));
-  for (const pathConfig of keywordSearchPaths) {
+  for (const pathConfig of [...keywordSearchPaths].sort((a, b) => Number(b.id === CONSUMER_HARDWARE_PATH) - Number(a.id === CONSUMER_HARDWARE_PATH))) {
     const queries = selectQueriesForPath(allQueries, pathConfig);
     for (const queryConfig of queries) {
       const query = [
@@ -4299,6 +3908,8 @@ async function collectKeywordSearch() {
         queryRecencyHintForPath(pathConfig, queryConfig),
         querySuffixForPath(pathConfig, queryConfig),
       ].filter(Boolean).join(" ");
+      const coverage = queryConfig.monitoring_category ? { category: queryConfig.monitoring_category, market: "overseas", query, status: "pending", discovered: 0, retained: 0, capped: 0 } : null;
+      const before = items.length;
       try {
         if (pathConfig.method === "hn") {
           const url = new URL("https://hn.algolia.com/api/v1/search_by_date");
@@ -4405,7 +4016,8 @@ async function collectKeywordSearch() {
           continue;
         }
 
-        const results = await searchLayeredWeb(query, perPathResultLimit);
+        const results = await searchLayeredWeb(query, coverage ? Math.max(4, perPathResultLimit) : perPathResultLimit);
+        if (coverage) { coverage.discovered = results.length; coverage.status = results.length ? "collected" : "empty"; }
         for (const result of results) {
           const gate = keywordSearchResultPreGate(result, queryConfig, pathConfig);
           if (!gate.keep) {
@@ -4415,7 +4027,14 @@ async function collectKeywordSearch() {
           items.push(keywordSearchItem(result, queryConfig, pathConfig));
         }
       } catch (error) {
+        if (coverage) { coverage.status = "failed"; coverage.error = error.message; }
         failures.push(`keyword-search ${pathConfig.id} ${queryConfig.query}: ${error.message}`);
+      } finally {
+        if (coverage) {
+          coverage.retained = Math.min(4, items.length - before);
+          coverage.capped = Math.max(0, items.length - before - 4);
+          diagnostics.push(coverage);
+        }
       }
     }
   }
@@ -4425,14 +4044,14 @@ async function collectKeywordSearch() {
   }
   if (filtered.length) {
     const byReason = countBy(filtered, "reason");
-    failures.push(`keyword-search pre-gate filtered ${filtered.length} result(s): ${distributionText(byReason)}`);
+    diagnostics.push({ kind: "pre_gate_filtered", count: filtered.length, reasons: byReason });
   }
   if (providerFallbackNotes.length) {
-    failures.push(...providerFallbackNotes.splice(0));
+    diagnostics.push(...providerFallbackNotes.splice(0).map((message) => ({ kind: "source_note", message })));
   }
 
   const byPath = new Map();
-  for (const item of items) {
+  for (const item of items.filter((row) => !row.monitoring_category)) {
     const key = item.search_path || "unknown";
     if (!byPath.has(key)) byPath.set(key, []);
     byPath.get(key).push(item);
@@ -4451,13 +4070,16 @@ async function collectKeywordSearch() {
     }
   }
   if (balanced.length < searchTarget) {
-    for (const item of items) {
+    for (const item of items.filter((row) => !row.monitoring_category)) {
       if (balanced.length >= searchTarget) break;
       if (!balanced.includes(item)) balanced.push(item);
     }
   }
 
-  return { items: balanced.slice(0, searchTarget), failures };
+  // Six consumer categories have their own retained budget, outside the general cap.
+  const hardware = diagnostics.filter((row) => row.category).flatMap((row) => items.filter((item) => item.monitoring_category === row.category).slice(0, 4));
+  return { items: [...balanced.slice(0, searchTarget), ...hardware], failures, diagnostics };
+
 }
 
 async function collectGDELT() {
@@ -4505,6 +4127,7 @@ async function collectGDELT() {
           keyword_group: queryConfig.keyword_group,
           market_region: queryConfig.market_region || "",
           china_market_query_id: queryConfig.china_market_query_id || "",
+    monitoring_category: queryConfig.monitoring_category || "",
         });
       }
     } catch (error) {
@@ -4525,6 +4148,7 @@ async function collectGDELT() {
             keyword_group: queryConfig.keyword_group,
             market_region: queryConfig.market_region || "",
             china_market_query_id: queryConfig.china_market_query_id || "",
+    monitoring_category: queryConfig.monitoring_category || "",
           });
         }
       } catch (fallbackError) {
@@ -4745,7 +4369,7 @@ function collectChinaRSSFeeds() {
 async function collectFundingSources() {
   const fundingPattern = /(?:\bfunding\b|\bfunded\b|\braises?\b|\braised\b|\bpre[- ]?seed\b|\bseed round\b|\bseries [a-z]\b|融资|获投|完成.{0,8}轮)/iu;
   const fixedQueries = [
-    'AI startup raises funding "2026"',
+    `AI startup raises funding "${date.slice(0, 4)}"`,
     'artificial intelligence startup raised seed round',
     'AI company "Series A" funding',
     'AI company "Series B" funding',
@@ -4851,7 +4475,8 @@ function writeSourceOnlyRun(sourceId, sourceLabel, sourceResult, normalizedItems
     mode: "data_center_source_intake",
     source_id: sourceId,
     source_label: sourceLabel,
-    status: rawSourceItems.length ? "collected" : "empty",
+    status: failures.length ? (rawSourceItems.length ? "partial" : "failed") : rawSourceItems.length ? "collected" : "empty",
+    search_health: { ...searchGateway.status(), attempts: searchGateway.attempts },
     discovered_count: sourceResult.discovered_count ?? rawSourceItems.length,
     source_item_count: rawSourceItems.length,
     raw_candidate_count: normalizedItems.length,
@@ -6268,11 +5893,8 @@ async function main() {
   };
   if (useSourceArtifacts) {
     sourceArtifacts = loadSourceArtifactItems();
-    const hasAIHotDailyArtifact = sourceArtifacts.items.some(isAIHotDailySelected);
-    if (!hasAIHotDailyArtifact && !targetedSourceArtifacts) {
-      sourceArtifacts.failures.push("source-artifacts missing AI HOT daily candidates; live AI HOT fallback activated");
-      aihot = await collectAIHot();
-    }
+    // Accepted source artifacts are immutable input; absence of curated daily
+    // items is not a reason to recollect the public feed.
   } else {
     aihot = await collectAIHot();
   }
@@ -6316,7 +5938,9 @@ async function main() {
   let items = dryRun
     ? normalizedItems
     : await enrichSnapshotsAdaptively(normalizedCandidatePool);
-  if (!targetedSourceArtifacts) {
+  // Accepted discovery artifacts are the complete intake boundary. Historical
+  // Pool quotas must not silently trigger another search on a downstream retry.
+  if (!useSourceArtifacts && !targetedSourceArtifacts) {
     items = await refillPoolImportanceGaps(items, failures);
   }
   coverageGaps = importanceCoverageGaps(items);
@@ -6349,7 +5973,7 @@ async function main() {
       source_artifact_files: sourceArtifacts.files,
       source_artifact_runs: sourceArtifacts.sourceRuns,
       anysearch_configured: Boolean(anysearchApiKey),
-      anysearch_disabled_for_run: anysearchDisabledForRun,
+      search_health: searchGateway.status(),
       provider_fallback_notes: providerFallbackNotes,
     });
   }
@@ -6358,7 +5982,7 @@ async function main() {
     JSON.stringify(
       {
         date,
-        status: items.length >= 50 ? "collected" : "severe-fallback",
+        status: failures.length ? "partial" : items.length ? "collected" : "empty",
         raw_count: items.length,
         pool_target: poolMinTarget,
         pool_selection_buffer: poolSelectionBufferTarget,
@@ -6382,7 +6006,7 @@ async function main() {
         source_artifact_files: sourceArtifacts.files,
         source_artifact_runs: sourceArtifacts.sourceRuns,
         anysearch_configured: Boolean(anysearchApiKey),
-        anysearch_disabled_for_run: anysearchDisabledForRun,
+        search_health: searchGateway.status(),
         provider_fallback_notes: providerFallbackNotes,
         historical_dedupe_enabled: historicalDedupeEnabled,
         historical_raw_records_checked: historicalDedupeRecordsChecked,
