@@ -75,6 +75,16 @@ test('new execution graph has no comprehensive-monitor, quota, opinion or histor
   assert.doesNotMatch(commands,/run-guanlan|quality-gate|pool|follow-builders|community|opportunity|trend|backfill-china/u);
   assert.ok(productionPlan(date,'runtime').some(stage=>stage.id==='research'));
 });
+test('publication recovery reuses a successful portal despite a new temporary checkout',async t=>{
+  const dir=temporary(t),file=path.join(dir,'release.json'),seen=[];
+  const stages=checkout=>[
+    {id:'portal',commands:['publish',checkout],checkpointCommands:['publish','<accepted-checkout>'],valid:()=>true},
+    {id:'ops',commands:['ops'],valid:()=>true},
+  ];
+  await assert.rejects(runStages({date,file,stages:stages('accepted-123'),codeVersion:'accepted-sha',execute:async s=>{if(s.id==='ops')throw Error('offline');}}));
+  await runStages({date,file,stages:stages('accepted-456'),codeVersion:'accepted-sha',execute:async s=>seen.push(s.id)});
+  assert.deepEqual(seen,['ops']);
+});
 test('artifact restore cannot execute code or traverse paths',t=>{
   assert.equal(allowedCheckpointPath('../stolen.json',date),false);assert.equal(allowedCheckpointPath('agent-workflow/financing/run.mjs',date),false);
   assert.equal(allowedCheckpointPath('01-SiteV2/site/data/a.js',date),false);

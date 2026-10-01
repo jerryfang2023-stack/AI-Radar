@@ -31,7 +31,7 @@ export async function runStages({ stages, file, execute, codeVersion, date }) {
   if (state.date !== date || state.version !== 'FINANCING-RUN-1') throw new Error('checkpoint_identity_mismatch');
   let parent = date;
   for (const stage of stages) {
-    const key = digest([parent, stage.id, codeVersion, stage.version || "", stage.commands]);
+    const key = digest([parent, stage.id, codeVersion, stage.version || "", stage.checkpointCommands || stage.commands]);
     if (state.stages[stage.id]?.key !== key || !state.stages[stage.id]?.ok || !(await stage.valid())) {
       try {
         await execute(stage);
