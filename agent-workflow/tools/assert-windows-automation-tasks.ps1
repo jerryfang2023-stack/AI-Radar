@@ -14,10 +14,7 @@ function Resolve-RepoPath {
 $repo = Resolve-RepoPath -InputPath $RepoPath
 if (-not $RuntimePath) { $RuntimePath = Join-Path $env:LOCALAPPDATA "WaveSight\runtime" }
 $RuntimePath = [IO.Path]::GetFullPath($RuntimePath)
-$expected = @(
-  [pscustomobject]@{ Name = "WaveSight Community Intelligence Weekly"; Time = "08:30"; Frequency = "weekly"; Runner = "run-community-intelligence.ps1"; Arguments = "-PublishAfterSuccess" },
-  [pscustomobject]@{ Name = "WaveSight Follow-Builders Skill Weekly"; Time = "16:10"; Frequency = "weekly"; Runner = "run-follow-builders-skill.ps1"; Arguments = "-Merge" }
-)
+$expected = @() # All project Windows schedules are paused; Codex owns financing.
 $expectedByName = @{}
 foreach ($item in $expected) { $expectedByName[$item.Name] = $item }
 

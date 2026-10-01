@@ -1,0 +1,28 @@
+name: WaveSight Financing Health Dispatch
+on:
+  schedule:
+    - cron: '30 2 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        type: string
+        required: false
+permissions:
+  contents: read
+  actions: write
+concurrency:
+  group: financing-health-dispatch
+  cancel-in-progress: false
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+      RUN_DATE: ${{ inputs.date }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - run: node agent-workflow/financing/dispatch.mjs --date="${RUN_DATE:-$(TZ=Asia/Shanghai date +%F)}"

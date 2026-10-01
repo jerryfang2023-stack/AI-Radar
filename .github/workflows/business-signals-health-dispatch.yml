@@ -1,10 +1,7 @@
 name: WaveSight Business Signals Health Dispatch
 
 on:
-  schedule:
-    # 10:30 Asia/Shanghai cloud safety fallback. The local 08:10 controller is
-    # the primary clock. Accepted same-date V4 prevents a compatibility-only rerun.
-    - cron: "30 2 * * *"
+  # Retired from scheduling. Current entry: funding-health-dispatch.yml.
   workflow_dispatch:
     inputs:
       date:

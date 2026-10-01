@@ -5,7 +5,7 @@ import vm from "node:vm";
 import test from "node:test";
 
 const source = fs.readFileSync(new URL("../run-daily-automation-controller.mjs", import.meta.url), "utf8");
-const functions = source.slice(source.indexOf("function morning()"), source.indexOf("// A late launch"));
+const functions = source.slice(source.indexOf("function morning()"), source.indexOf("function recovery()"));
 
 function runMorning({ gateOk = false, businessOk = true, available = true, runs = [] } = {}) {
   const dispatched = [];
@@ -31,7 +31,16 @@ test("08:10 funding dispatch no longer inspects or dispatches the independent we
   assert.ok(!calls.some((label) => /First-Line Viewpoints|Community Intelligence/u.test(label)));
 });
 
-test("late launches retain the daily state machine without historical timer cutoffs", () => {
-  assert.doesNotMatch(source, /scheduledSupersession/u);
-  assert.match(source, /phase === "daily" \|\| phase === "recovery"/u);
+test("late morning catch-up still runs after retired 09:15 and 09:50 windows", () => {
+  const clockFunctions = source.slice(source.indexOf("function shanghaiDate("), source.indexOf("function rel("));
+  for (const time of ["09:16", "10:01", "16:44"]) {
+    const result = vm.runInNewContext(`${clockFunctions}\nscheduledSupersession("morning", new Date("2026-09-13T${time}:00+08:00"))`, {
+      scheduledRun: true, date: "2026-09-13",
+    });
+    assert.equal(result, null);
+  }
+  const final = vm.runInNewContext(`${clockFunctions}\nscheduledSupersession("morning", new Date("2026-09-13T16:45:00+08:00"))`, {
+    scheduledRun: true, date: "2026-09-13",
+  });
+  assert.equal(final.status, "superseded");
 });

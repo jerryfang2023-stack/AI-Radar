@@ -24,6 +24,6 @@ foreach ($name in $names) {
     Write-Host "Disabled retired daily timer: $name"
   }
 }
-if ($RunMorningNow) { throw "Use run-daily-automation-controller.mjs --phase=daily explicitly; no legacy timer is started." }
+if ($RunMorningNow) { throw "Use agent-workflow/financing/dispatch.mjs explicitly; no legacy timer is started." }
 Write-Host "Daily owner: Codex automation ai at 08:10 Asia/Shanghai; GitHub fallback at 10:30."
-Write-Host "Consumer AI hardware runs inside the same domestic/overseas funding task. Weekly lanes are unchanged."
+Write-Host "Consumer AI hardware runs inside the same domestic/overseas funding task. Community and Builders weekly lanes are paused."

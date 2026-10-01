@@ -1,0 +1,126 @@
+name: WaveSight Financing Daily PR
+run-name: Financing ${{ inputs.date || 'today' }}
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        type: string
+        required: true
+      resume_run_id:
+        type: string
+        required: false
+permissions:
+  actions: write
+  contents: write
+  pull-requests: write
+concurrency:
+  group: wavesight-data-center-publication
+  cancel-in-progress: false
+  queue: max
+jobs:
+  financing:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      TZ: Asia/Shanghai
+      RUN_DATE: ${{ inputs.date }}
+      GH_TOKEN: ${{ secrets.GH_PR_TOKEN || github.token }}
+      ANYSEARCH_API_KEY: ${{ secrets.ANYSEARCH_API_KEY }}
+      TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+      EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
+      BRAVE_SEARCH_API_KEY: ${{ secrets.BRAVE_SEARCH_API_KEY }}
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      GUANLAN_EVIDENCE_BACKUP_ROOT: ${{ github.workspace }}/../WaveSight-private-evidence
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - name: Validate inputs and prepare private storage
+        env:
+          PRIVATE_EVIDENCE_SSH_KEY: ${{ secrets.PRIVATE_EVIDENCE_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          [[ "$RUN_DATE" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}$ ]]
+          test -n "$PRIVATE_EVIDENCE_SSH_KEY"
+          mkdir -p "$HOME/.ssh"
+          printf '%s\n' "$PRIVATE_EVIDENCE_SSH_KEY" > "$HOME/.ssh/wavesight_private_evidence"
+          chmod 600 "$HOME/.ssh/wavesight_private_evidence"
+          export GIT_SSH_COMMAND="ssh -i $HOME/.ssh/wavesight_private_evidence -o IdentitiesOnly=yes -o StrictHostKeyChecking=accept-new"
+          git clone --depth=1 git@github.com:jerryfang2023-stack/WaveSight-private-evidence.git "$GUANLAN_EVIDENCE_BACKUP_ROOT"
+          echo "GIT_SSH_COMMAND=$GIT_SSH_COMMAND" >> "$GITHUB_ENV"
+          npm run assert:private-evidence-remote
+      - name: Restore financing checkpoint
+        if: inputs.resume_run_id != ''
+        env:
+          RESUME_RUN: ${{ inputs.resume_run_id }}
+        run: |
+          set -euo pipefail
+          [[ "$RESUME_RUN" =~ ^[0-9]+$ ]]
+          gh run download "$RESUME_RUN" --name "financing-$RUN_DATE" --dir "$RUNNER_TEMP/financing-resume"
+          node agent-workflow/financing/checkpoint.mjs restore "$RUN_DATE" "$RUNNER_TEMP/financing-resume"
+      - name: Discover financing and capture originals
+        id: collection
+        run: node agent-workflow/financing/run.mjs --phase=collect --date="$RUN_DATE"
+      - name: Persist evidence before dependent work
+        id: evidence
+        if: always() && steps.collection.outcome != 'skipped'
+        run: |
+          set -euo pipefail
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.name "github-actions[bot]"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" add -A
+          if ! git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" diff --cached --quiet; then
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" commit -m "Financing originals $RUN_DATE"
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" pull --rebase origin main
+            git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main
+          fi
+          npm run assert:private-evidence-remote
+      - name: Extract facts, research financing and gate publication
+        if: steps.collection.outcome == 'success' && steps.evidence.outcome == 'success'
+        id: produce
+        run: node agent-workflow/financing/run.mjs --phase=produce --date="$RUN_DATE"
+      - name: Save resumable body-free checkpoint
+        if: always() && steps.evidence.outcome == 'success'
+        run: node agent-workflow/financing/checkpoint.mjs save "$RUN_DATE" "$RUNNER_TEMP/financing-checkpoint"
+      - uses: actions/upload-artifact@v6
+        if: always() && steps.evidence.outcome == 'success'
+        with:
+          name: financing-${{ inputs.date }}
+          path: ${{ runner.temp }}/financing-checkpoint
+          retention-days: 30
+      - name: Commit financing outputs and open PR
+        if: steps.produce.outcome == 'success'
+        run: |
+          set -euo pipefail
+          branch="automation/financing-$RUN_DATE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$branch"
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import { spawnSync } from 'node:child_process';
+          const manifest = JSON.parse(fs.readFileSync(process.env.RUNNER_TEMP + '/financing-checkpoint/manifest.json'));
+          for (const {file} of manifest.entries) {
+            const r=spawnSync('git',['add','--',file],{stdio:'inherit'});
+            if(r.status!==0) process.exit(r.status || 1);
+          }
+          NODE
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m "Publish financing for $RUN_DATE"
+          git fetch origin "$branch:refs/remotes/origin/$branch" || true
+          git push --force-with-lease origin "$branch"
+          body="$RUNNER_TEMP/financing-pr.md"
+          printf 'Financing-only monitoring for %s. Domestic and overseas discovery include six consumer AI hardware categories. Original evidence is stored privately; facts, secondary research and financing projections pass their gates.\n\nCheckpoint: %s/actions/runs/%s. After merge, Pages and the local financing publisher complete public website and Mini Program verification.\n' "$RUN_DATE" "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY" "$GITHUB_RUN_ID" > "$body"
+          pr="$(gh pr list --head "$branch" --state open --json url --jq '.[0].url')"
+          if [ -z "$pr" ]; then
+            pr="$(gh pr create --base main --head "$branch" --title "Publish financing for $RUN_DATE" --body-file "$body")"
+          else
+            gh pr edit "$pr" --body-file "$body"
+          fi
+          gh pr merge "$pr" --auto --merge
