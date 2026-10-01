@@ -2,7 +2,7 @@
   <app-header title="赛道详情" show-back="{{true}}" fallback-url="/pages/market/index" />
   <view wx:if="{{snapshot}}" class="page-content sector-content">
     <view class="sector-hero">
-      <view class="sector-top"><text>市场子类 · {{marketRegion === 'china' ? '中国' : '全球'}}</text><button class="follow-button {{following ? 'active' : ''}}" bindtap="toggleFollow">{{following ? '已关注' : '＋ 关注'}}</button></view>
+      <view class="sector-top"><text>细分赛道 · {{marketRegion === 'china' ? '中国' : '全球'}}</text><button class="follow-button {{following ? 'active' : ''}}" bindtap="toggleFollow">{{following ? '已关注' : '＋ 关注'}}</button></view>
       <text class="sector-title serif">{{sector}}</text>
       <text class="sector-deck">围绕该赛道的融资事件、代表公司与活跃机构，按最近融资动态持续更新。</text>
       <view class="sector-kpis"><view><text class="mono">{{snapshot.eventCount}}</text><text>融资事件</text></view><view><text class="mono">{{snapshot.companyCount}}</text><text>公司</text></view><view><text class="mono">{{snapshot.investorCount}}</text><text>机构</text></view></view>
