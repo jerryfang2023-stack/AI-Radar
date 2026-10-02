@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,7 +54,7 @@
   },
   "entity": {
     "id": "EN-4e24b4c8c700c60f",
-    "name": "SANTA CLARA",
+    "name": "Santa Clara",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -63,16 +63,20 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-a81c5dc2e9abff3a"
+      "EV-a81c5dc2e9abff3a",
+      "EV-74aab2334332882a",
+      "EV-a4b2d57251589ede"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-06-16",
-    "lastSeen": "2026-08-20",
+    "firstSeen": "2026-01-21",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-74aab2334332882a",
+        "EV-a4b2d57251589ede",
         "EV-a81c5dc2e9abff3a"
       ],
       "deployments": [],
@@ -83,6 +87,40 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-74aab2334332882a",
+        "dataDate": "2026-10-02",
+        "date": "2026-03-23",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Kandou AI 获得战略融资，重新定义 AI 连接并突破 AI 内存瓶颈",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4e24b4c8c700c60f",
+          "EN-101e32680e4bd993",
+          "EN-1341248761090183"
+        ]
+      },
+      {
+        "id": "EV-a4b2d57251589ede",
+        "dataDate": "2026-10-02",
+        "date": "2026-01-21",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4e24b4c8c700c60f",
+          "EN-d2c4f1b5a5369864",
+          "EN-96eebba49dbbf422"
+        ]
+      },
       {
         "id": "EV-a81c5dc2e9abff3a",
         "dataDate": "2026-08-20",

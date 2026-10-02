@@ -134,6 +134,9 @@ export function fundingClaimGroupingProblem(claims) {
   if (subjects.size > 1) return "multiple_funding_recipients_require_separate_sources";
   if (claims.length && claims.every((claim) => {
     const quote = claim.source_quote || "";
+    if (claim.qualifiers?.funding_amount_scope === "combined_rounds"
+        && /合并披露/u.test(claim.object || "")
+        && /(?:连续完成|完成).{0,45}(?:三轮|3轮|两轮|2轮|种子轮、天使轮)/u.test(quote)) return false;
     const namedRounds = new Set(quote.match(/(?:pre[- ]?)?[A-F][+＋]?轮|天使轮|种子轮/giu) || []);
     // A disclosed total for one named round (including phased closes) is valid.
     return /累计|总融资|整个.{0,12}轮融资额/u.test(quote) && !/本轮|此次|新一轮/u.test(quote) && namedRounds.size !== 1;
@@ -260,8 +263,8 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   const titleIssue = publicEventSourceTitleIssue(title);
   if (titleIssue) return { accepted: false, reason: titleIssue };
   const reviewedRetainedSource = REVIEWED_RETAINED_SOURCE.test(cleanString(artifact.source_url));
-  const sourceLead = cleanString(raw.clean_text || raw.full_text).slice(0, 1400);
-  if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title)) {
+  const sourceLead = financingDecisionText(cleanString(raw.clean_text || raw.full_text)).slice(0, 1400);
+  if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title.replace(/\blesson plan(?:s)?\b/giu, "lesson curriculum"))) {
     return { accepted: false, reason: "proposed_financing_not_completed" };
   }
   if (VERSIONED_DEVELOPER_PACKAGE_TITLE.test(title)
@@ -596,6 +599,11 @@ function trimBoilerplate(text) {
   return normalizeEvidenceBody(text);
 }
 
+// Use only article content for financing status; preserve original evidence spans.
+export function financingDecisionText(text = "") {
+  return text.split(/\n\s*(?:海量资讯、精准解读|新浪科技公众号|【本文根据公开消息发布|投稿爆料[：:]|联系我们\s*(?:\n|$))/u)[0];
+}
+
 function sourceArtifact(raw, file, intakeDocument = null) {
   const sourceUrl = cleanString(raw.original_url || raw.canonical_url || raw.source_url || raw.url || raw.link || raw.discovery_record?.origin_url);
   const contentHash = cleanString(raw.content_hash || raw.full_text_hash || hash(raw.clean_text || raw.full_text));
@@ -705,6 +713,7 @@ function findEventRule(title, lead = "") {
 }
 
 function eventStatus(title, lead, eventType = "") {
+  if (eventType === "funding") lead = financingDecisionText(lead);
   const text = `${title}\n${lead}`;
   if (WITHDRAWN.test(title) || (eventType === "funding" && isWithdrawnFundingTitle(title))) return "withdrawn";
   const attributedCompletedFinancing = /据.{0,20}(?:官微|官方|公司|财务顾问).{0,12}消息.{0,100}(?:已完成|完成).{0,40}融资/iu.test(text);
@@ -1139,7 +1148,8 @@ function buildModelClaim(rawId, proposed, evidence, index, status) {
     predicate: proposed.event_type,
     object: cleanString(proposed.object),
     qualifiers: { event_status: status, sequence: index + 1, model_candidate_id: proposed.model_candidate_id,
-      ...(proposed.amount_disclosure === "not_disclosed" ? { funding_amount_status: "not_disclosed" } : {}) },
+      ...(proposed.amount_disclosure === "not_disclosed" ? { funding_amount_status: "not_disclosed" } : {}),
+      ...(proposed.amount_scope === "combined_rounds" ? { funding_amount_scope: "combined_rounds" } : {}) },
     source_span: { raw_id: rawId, start: evidence.start, end: evidence.end },
     source_quote: evidence.quote,
     extraction_method: "model_source_span",

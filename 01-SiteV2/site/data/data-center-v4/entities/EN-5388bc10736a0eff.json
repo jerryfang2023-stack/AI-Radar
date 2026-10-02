@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -68,9 +68,12 @@
       "EV-f7c48f02fd8618a2",
       "EV-1043d78cc040ab30",
       "EV-41c54c428d84cc1e",
+      "EV-a6696955767a209e",
       "EV-5e847cd78e657cb5",
       "EV-59e88ff6b13c901b",
+      "EV-cd2970524c27dffb",
       "EV-3f62161d9ba0d82e",
+      "EV-ae564e305ca1bc3e",
       "EV-97fdf068afbbe555",
       "EV-47a84a0f1a85c29c",
       "EV-6c361125c3f50bb6",
@@ -104,7 +107,7 @@
     "relatedEntityIds": [
       "EN-4f96127fdacbb405"
     ],
-    "firstSeen": "2026-04-09",
+    "firstSeen": "2026-02-28",
     "lastSeen": "2026-10-02",
     "relationIds": [
       "REL2-fc89e0f24571bef8"
@@ -112,7 +115,10 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-f7c48f02fd8618a2",
+        "EV-a6696955767a209e",
         "EV-5e847cd78e657cb5",
+        "EV-cd2970524c27dffb",
+        "EV-ae564e305ca1bc3e",
         "EV-a8f60b70be8b5e00",
         "EV-1043d78cc040ab30",
         "EV-41c54c428d84cc1e",
@@ -202,6 +208,35 @@
         ]
       },
       {
+        "id": "EV-a6696955767a209e",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OJO完成近亿元天使轮融资，打造设计Agent Team Workspace",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-3c52384d8749fcb4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3c52384d8749fcb4",
+          "EN-5388bc10736a0eff",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
         "id": "EV-5e847cd78e657cb5",
         "dataDate": "2026-10-02",
         "date": "2026-07-13",
@@ -231,6 +266,86 @@
           "EN-7d3194f79e645c42",
           "EN-ea3bd73e2b506e00",
           "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
+        "id": "EV-cd2970524c27dffb",
+        "dataDate": "2026-10-02",
+        "date": "2026-04-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "一位台湾女生上海创业：MONTEE AI完成首轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "memory_system",
+            "name": "记忆系统",
+            "entityIds": [
+              "EN-b705fb4de1e92bca"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-b705fb4de1e92bca"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b705fb4de1e92bca",
+          "EN-5388bc10736a0eff",
+          "EN-bbdefa2950f49882"
+        ]
+      },
+      {
+        "id": "EV-ae564e305ca1bc3e",
+        "dataDate": "2026-10-02",
+        "date": "2026-02-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AI运动科技公司「致敬未知」完成超亿元Pre-A轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-449d8bc804b1866d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-449d8bc804b1866d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-449d8bc804b1866d",
+          "EN-5388bc10736a0eff",
+          "EN-b81c8201acfc7639"
         ]
       },
       {
@@ -1169,13 +1284,18 @@
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
         "EV-89ec502a1340079a",
+        "EV-d3c5eb69eb9d397a",
+        "EV-0e854ee566f6d0b9",
+        "EV-bc166d0f16140940",
         "EV-ab839326ca9597d8",
         "EV-6a5a3f316200d1e3",
         "EV-77f9a1a9bcf8cc65",
         "EV-95385e7d45e69784",
+        "EV-beee465b894317c7",
         "EV-1744d0e71176f9a1",
         "EV-bdcb22b1a53358f5",
         "EV-50b5c4f93ead145d",
+        "EV-bec127224b1f1aca",
         "EV-bf8ce460c05b9ff0",
         "EV-c1295b8f58024ff6",
         "EV-83728e3b6c7736ce",
@@ -1183,6 +1303,7 @@
         "EV-673637ebe2ac2f2d",
         "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
+        "EV-f36f5f7b24b2bfde",
         "EV-9ed6a759555d7e77",
         "EV-13e08bc37724e276",
         "EV-53253b5e23970958",
@@ -1290,8 +1411,10 @@
         "EV-2d0d165e866cd770",
         "EV-4a6cbe937d1b9701",
         "EV-ac5e33e067906a6d",
+        "EV-ed73cd2c438a470d",
         "EV-acdeebead5324344",
         "EV-4ef09c71be4c84cb",
+        "EV-63de2b6408efd796",
         "EV-6de81d4ca248ff31",
         "EV-3c408fe984c73089",
         "EV-e70b6a1287dcaa59",
@@ -1809,13 +1932,17 @@
         "EN-55c37c5c0b75471a",
         "EN-b0a61df9bfe99f72",
         "EN-071f3eca285403f1",
+        "EN-5ba042c14b39398d",
+        "EN-4b8de799d3cb1255",
         "EN-05bb7905b99d8025",
         "EN-96c842ee0d60fa41",
         "EN-b01ef9255dcc0caa",
         "EN-a1b7a0cc37ed257d",
+        "EN-6411d31f2aefa743",
         "EN-01b4537c6e0a2da7",
         "EN-67e8c106650aa683",
         "EN-2dc010636b9dce91",
+        "EN-d6d6dcf0bb132a3d",
         "EN-8526299f9ecc5fac",
         "EN-249fdefbb63fa7b3",
         "EN-240389f4b730bad4",
@@ -1823,6 +1950,7 @@
         "EN-18131bed4bcc2f1a",
         "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
+        "EN-d5dee8daa2eb5cc5",
         "EN-2be663431f007250",
         "EN-77a82bb9aafc81d9",
         "EN-65819e198c32566a",
@@ -1918,8 +2046,10 @@
         "EN-47afad612b1f9cc8",
         "EN-6c7cceb7ce4d4e6a",
         "EN-a675d46aba3c7e48",
+        "EN-4125bf4687377f47",
         "EN-5b3767eb23d5e4ed",
         "EN-470be66761dfc2e9",
+        "EN-dfc0fdff7af68ed2",
         "EN-b30b83d324e678e4",
         "EN-a3b8fbb2200a105a",
         "EN-5c443a92518833f1",
@@ -2284,6 +2414,7 @@
         "EV-862a2c0eabc234f0",
         "EV-bce46f2e5cc68d5d",
         "EV-81bbaaec2965864a",
+        "EV-d3c5eb69eb9d397a",
         "EV-f6c882e143c0d634",
         "EV-68bb3d5cb4bbd61b",
         "EV-3ee6b5e876146bb3",
@@ -2291,6 +2422,7 @@
         "EV-2e214ba5a4504809",
         "EV-77f9a1a9bcf8cc65",
         "EV-bdcb22b1a53358f5",
+        "EV-bec127224b1f1aca",
         "EV-df8954acf9a13848",
         "EV-c6cccaca326dfd45",
         "EV-933b02f5736a0366",
@@ -2389,10 +2521,12 @@
         "EV-ac5e33e067906a6d",
         "EV-dd3217aad32e6891",
         "EV-c34ebd1db6227471",
+        "EV-21529e29a0eedf85",
         "EV-acdeebead5324344",
         "EV-e6a4e0785ebb268a",
         "EV-a3ba586cbc57b5fd",
         "EV-0b6cfbf67ba2da31",
+        "EV-d6a57d52ff2194d8",
         "EV-7585b033d4005977",
         "EV-8b0f056571d68269",
         "EV-286846e21412f3c7",
@@ -2491,6 +2625,7 @@
         "EN-75cc2d1e57d451bf",
         "FICO-6f92e043fe518e14",
         "EN-ee04228c5c6d8b08",
+        "EN-55c37c5c0b75471a",
         "EN-086c739ca6223458",
         "EN-8d4321d936320802",
         "EN-3b3ed571bbb19504",
@@ -2498,6 +2633,7 @@
         "EN-85e373a2452916cf",
         "EN-b01ef9255dcc0caa",
         "EN-67e8c106650aa683",
+        "EN-d6d6dcf0bb132a3d",
         "EN-f970fd34532919fe",
         "EN-fe301d1f025971a1",
         "EN-13a7f8fe8140462d",
@@ -2583,10 +2719,12 @@
         "EN-69c5804b91710f4d",
         "EN-2f88f41306209dd7",
         "EN-e3797aea6accf7d7",
+        "EN-7753b0382f29e6a8",
         "EN-5b3767eb23d5e4ed",
         "EN-be8f311b8bb47e9c",
         "EN-7035f6607ad2d162",
         "EN-80f681ea74fb8ccc",
+        "EN-54b96ff67bf12e2b",
         "EN-15516525ca2aa1a4",
         "EN-e5cc9e38970eacb5",
         "EN-636396f02b6571e4",
@@ -2762,5 +2900,131 @@
     }
   ],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-e5d89a13bccde1e3",
+      "snapshotKey": "e5d89a13bccde1e3",
+      "snapshotId": "HWS-87e0843b8d7246ac",
+      "eventId": "EV-ae564e305ca1bc3e",
+      "eventIds": [
+        "EV-ae564e305ca1bc3e"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "致敬未知",
+      "subject": "致敬未知",
+      "productNames": [],
+      "hardwareType": "smart_glasses",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "超亿元",
+          "fact_ref": "HWF-3151713647384143"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-3151713647384143",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-02-28",
+          "subject_entity_id": "EN-449d8bc804b1866d",
+          "subject_name": "致敬未知",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "超亿元",
+          "source_quote": "品牌方舟获悉，2月27日，致敬未知宣布完成超亿元Pre-A轮融资。\n本轮融资由创维投资、博裕创投、联想创投、广发乾和等产业及财务资本联合参与，所获资金将主要用于新一代产品研发、市场拓展与全球渠道布局。\n致敬未知成立于2022年，是一家专注于AI运动科技领域的创新公司。创始人吴德周曾担任字节跳动新石实验室总裁，拥有深厚的行业经验。核心团队成员则来自华为、字节跳动、锤子科技等知名企业，在消费电子与AI技术研发方面具备扎实积累。\n与雷鸟创新、闪极、Rokid等主打通用场景的AI眼镜品牌不同，致敬未知聚焦垂直运动赛道，并推出运动科技品牌BleeqUp。\n图源：BleeqUp\n2025年4月，BleeqUp登陆海外众筹平台Kickstarter，在45天内筹得51万美元（约合人民币370万元），超额完成目标201倍，创下智能骑行眼镜品类的众筹新纪录。\n在技术路线上，致敬未知明确表示，下一代产品不会回归通用型AI+AR眼镜，而是坚持深耕运动场景。其长远目标是成为户外运动领域的AI Agent，聚焦运动赛道，打造“AI 运动健康智慧中枢”。\n据官方透露，自2025年9月BleeqUp超影擎正式上市以来，全球出货量已突破一万副。致敬未知预测，2026年产品销量有望实现10倍以上增长。\n作者✎ 十度/品牌方舟\n声明：此文章版权归品牌方舟所有，未经允许不得转载，如需授权请联系：amz123happy\n致敬未知户外运动\n【品牌方舟BrandArk】关注全球化、跨境电商、品牌增长等议题，致力于洞察潜力出海赛道。\n扫码关注回复【加群】，加入出海交流群\n已有8000+出海人聚集在我们社群里\n免责声明\n 本文链接:\n本文经作者许可发布在品牌方舟，如有疑问，请联系客服。\nReturn Helper退易帮\n无需回国，当地多元化处理，协助节约整体成本50%！\n宝通达物流\n专注跨境物流19年，主营FBA头程、自发货、国际快递、海外仓等综合跨境物流服务\n卖家精灵\n亚马逊选品+运营，130万卖家的共同选择\nReturn Helper退易帮\n无需回国，当地多元化处理，协助节约整体成本50%！\n宝通达物流\n专注跨境物流19年，主营FBA头程、自发货、国际快递、海外仓等综合跨境物流服务\n卖家精灵\n亚马逊选品+运营，130万卖家的共同选择\n最新热门报告标签\n智能戒指品牌Oura无限期推迟上市计划智能戒指品牌Oura宣布，由于“IPO市场存在不确定性”，决定无限期推迟原定在纳斯达克进行的首次公开募股（IPO）。此前，Oura计划通过IPO募资最高22亿美元，原定发行价格区间为每股40至44美元。按照此前披露的方案",
+          "event_refs": [
+            "EV-ae564e305ca1bc3e"
+          ],
+          "claim_ref": "CL-bc2f41e253875594",
+          "source_refs": [
+            "SA-d873d2e5c3a6a3f0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.brandark.com/t/ipNtlMZg",
+      "entityIds": [
+        "EN-449d8bc804b1866d",
+        "EN-5388bc10736a0eff",
+        "EN-b81c8201acfc7639"
+      ]
+    },
+    {
+      "id": "HWC-8118276eaacba114",
+      "snapshotKey": "8118276eaacba114",
+      "snapshotId": "HWS-a8e6fbdd19128524",
+      "eventId": "EV-a6696955767a209e",
+      "eventIds": [
+        "EV-a6696955767a209e"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "OJO",
+      "subject": "OJO",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "50",
+          "unit": "万",
+          "fact_ref": "HWF-c5bfeaa9ac2299d4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-c5bfeaa9ac2299d4",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-25",
+          "subject_entity_id": "EN-3c52384d8749fcb4",
+          "subject_name": "OJO",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "50",
+          "unit": "万",
+          "source_quote": "OJO是一个从目标出发、由专业Agent协同完成产品交付的“goal-to-team-to-result”AI设计平台。投资界（ID：pedaily2012）8月25日消息，近日，AI 设计Agent Team平台 OJO 宣布完成近亿元天使轮融资，本轮融资由顺为资本和联想创投联合投资，高鹄资本担任独家财务顾问。据悉，OJO本轮融资资金将主要用于核心产品开发、Agent与Skills能力建设、全球市场拓展和核心人才引进。\nOJO 由前剪映国内业务负责人张琪智（Kiki）创立，致力于打造全球首 个设计领域Agent Team开放平台。公司从数字产品设计切入，通过可组合的Agent Teams与Skills，完成创意、交互、视觉到交付的全过程，让非设计专业人群也能交付高审美、高质量、可投产的成果。\n完成产品Demo和邀请制内测后，OJO于北京时间8月20日正式在海外上线，并迅速迎来首轮爆发：官方内容在X发布24小时内获得超过50万次观看，并登上X News热搜，吸引超40位科技领域头部创作者转发互动；上线48小时内，OJO新增用户过万，并实现超出预期的付费验证。海外发布后，OJO已被多位AI创作者用于生成Fintech落地页、3D动态网站、技术出版物页面，甚至可直接运行的家庭机器人控制App。用户反馈普遍将OJO的价值指向Coding Agent尚未覆盖的关键一环：Coding到可交付产品之间的设计判断和产品完成度。\n公司团队成员以字节跳动、腾讯等头部大厂的高绩效/高潜人才为主，具备AI应用全链路研发、产品设计及全球GTM能力。\nOJO要打造的是一个从目标出发、由专业Agent协同完成产品交付的“goal-to-team-to-result”AI设计平台。用户提出目标后，平台中的“设计总监Agent”会理解产品意图、拆解任务，并组织不同专业Agent与Skills协同推进，将一个模糊想法逐步转化为清晰的产品策略和可交付的设计结果。通过让Agent Team承接过去依赖专业团队分工完成的工作，OJO让非专业用户也能高效完成复杂、高质量的设计任务。\n“设计的平权，不应该只意味着人人都能做设计，而应该意味着人人都能做好设计。”Kiki表示，“模型的能力上限已经足够高，应用层真正需要解决的，是如何理解用户目标、调度专业能力，并把模型上限转化为稳定、高质量的交付结果。”\n在OJO中，产品意图的理解与拆解发生在设计生成之前。Agent Team会先完成必要的研究与需求分析，形成产品策略和整体结构，再逐步推进视觉设计与交互原型。过程中产生的策略、PRD、页面结构、UI和可点击原型",
+          "event_refs": [
+            "EV-a6696955767a209e"
+          ],
+          "claim_ref": "CL-c5876977271caa7c",
+          "source_refs": [
+            "SA-b509326225d242ac"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://i.ifeng.com/c/8vsFiyiShVs",
+      "entityIds": [
+        "EN-3c52384d8749fcb4",
+        "EN-5388bc10736a0eff",
+        "EN-9c8ae69b84f21a2e"
+      ]
+    }
+  ]
 }

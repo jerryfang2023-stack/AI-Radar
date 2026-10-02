@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,11 +74,12 @@
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_e",
-      "series_f"
+      "series_f",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -90,6 +91,11 @@
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
+      },
+      {
+        "entity_id": "EN-15ea2fa417bd8597",
+        "canonical_entity_id": "",
+        "name": "Taalas Inc."
       },
       {
         "entity_id": "EN-6fcba5d96a4fadfd",
@@ -135,6 +141,46 @@
             "source_content_hash": "494969b64dc816f3",
             "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
             "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-35a1c5ddeb75b5e6",
+        "funding_insight_id": "FI-6df2e59e54d6655d",
+        "event_ids": [
+          "EV-2edec0302b3e0626"
+        ],
+        "company_entity_id": "EN-15ea2fa417bd8597",
+        "company_canonical_entity_id": "",
+        "company_name": "Taalas Inc.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$169M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 169000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.69 亿美元"
+        },
+        "announced_at": "2026-02-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a85c433c7dbed44",
+            "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
+            "source_title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
+            "source_content_hash": "8df5a185c3d0c1bc47267eb9148dc417f9b5117d0d38a10f0d0ffeef2274858f",
+            "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+            "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
           }
         ]
       },
@@ -262,6 +308,14 @@
         "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
       },
       {
+        "source_id": "FISRC-7a85c433c7dbed44",
+        "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
+        "source_title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
+        "source_content_hash": "8df5a185c3d0c1bc47267eb9148dc417f9b5117d0d38a10f0d0ffeef2274858f",
+        "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+        "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
+      },
+      {
         "source_id": "FISRC-23bba75e0baa6d39",
         "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
         "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
@@ -300,12 +354,12 @@
           "source_id": "FISRC-1e2b3bad243bd066"
         },
         {
-          "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-23bba75e0baa6d39"
+          "description": "融资来源记录：Taalas Inc. · 轮次未披露 · 2026-02-19 · 本轮参投 · $169M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7a85c433c7dbed44"
         },
         {
-          "description": "融资来源记录：Anthropic · F轮 · 2025-09-02 · 本轮领投 · $13 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c5289e6345684ca4"
+          "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23bba75e0baa6d39"
         }
       ],
       "contacts": [],
@@ -319,20 +373,20 @@
           "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
         },
         {
+          "source_id": "FISRC-7a85c433c7dbed44",
+          "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
+          "source_title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
+          "source_content_hash": "8df5a185c3d0c1bc47267eb9148dc417f9b5117d0d38a10f0d0ffeef2274858f",
+          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
+        },
+        {
           "source_id": "FISRC-23bba75e0baa6d39",
           "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
           "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
           "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
           "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
           "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
-        },
-        {
-          "source_id": "FISRC-c5289e6345684ca4",
-          "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
-          "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
-          "source_content_hash": "e918313869a22b8d",
-          "quote": "Anthropic announced a $13 billion Series F round on September 2 that valued the company at $183 billion. The round was led by Iconiq, Fidelity, and Lightspeed.",
-          "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
         }
       ],
       "last_verified_at": "2026-09-25"

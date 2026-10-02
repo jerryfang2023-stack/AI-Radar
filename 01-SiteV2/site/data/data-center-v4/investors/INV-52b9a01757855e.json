@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,38 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-01",
+    "first_disclosed_at": "2026-01-28",
     "latest_disclosed_at": "2026-07-01",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "series_a"
+      "other",
+      "series_a",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-b8f1c575bfcf5ece",
+        "canonical_entity_id": "",
+        "name": "Eliyan Corporation"
+      },
+      {
+        "entity_id": "EN-a542ea2b200ae38d",
+        "canonical_entity_id": "",
+        "name": "Normal Computing"
+      },
       {
         "entity_id": "FICO-oxmiq",
         "canonical_entity_id": "",
@@ -130,6 +144,86 @@
         ]
       },
       {
+        "activity_id": "IA-86592dafea87b7df",
+        "funding_insight_id": "FI-db04f19d3b4a57f3",
+        "event_ids": [
+          "EV-f60bda3cfc54d5c0"
+        ],
+        "company_entity_id": "EN-a542ea2b200ae38d",
+        "company_canonical_entity_id": "",
+        "company_name": "Normal Computing",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "strategic funding",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-03-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3c1b4f6326a3ee76",
+            "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
+            "source_title": "Normal Computing 获 Samsung Catalyst 领投的 5000 万美元融资，以加速硅设计并解决 AI 硬件能源危机",
+            "source_content_hash": "399e9cd53399fcbbe4a4c319ef7751fe852c94ca50bbea6680deda1b30ba3c97",
+            "quote": "Normal Computing today announced $50 million in strategic funding led by Samsung Catalyst Fund",
+            "quote_hash": "b192e76791e9701615db5d8f4036319d37163d9e08e38b7fabb56b39aea22c34"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4643979f5be3e6d8",
+        "funding_insight_id": "FI-643b76798f958bf3",
+        "event_ids": [
+          "EV-3d5daffd1cb9521b"
+        ],
+        "company_entity_id": "EN-b8f1c575bfcf5ece",
+        "company_canonical_entity_id": "",
+        "company_name": "Eliyan Corporation",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$50 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-01-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5618afd8046eeb4f",
+            "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+            "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+            "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+            "quote": "existing strategic investors Samsung Catalyst Fund and Intel Capital also participated in the round",
+            "quote_hash": "60c30e9af193e5a605fa3ea3630b41759d8848bf0a286ca1b815bfea3f41662c"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-acbc480473fc9fef",
         "funding_insight_id": "FI-44726ebdb985f37e",
         "event_ids": [
@@ -171,6 +265,22 @@
         "source_content_hash": "7277428ab4a1fd81",
         "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
         "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
+      },
+      {
+        "source_id": "FISRC-3c1b4f6326a3ee76",
+        "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
+        "source_title": "Normal Computing 获 Samsung Catalyst 领投的 5000 万美元融资，以加速硅设计并解决 AI 硬件能源危机",
+        "source_content_hash": "399e9cd53399fcbbe4a4c319ef7751fe852c94ca50bbea6680deda1b30ba3c97",
+        "quote": "Normal Computing today announced $50 million in strategic funding led by Samsung Catalyst Fund",
+        "quote_hash": "b192e76791e9701615db5d8f4036319d37163d9e08e38b7fabb56b39aea22c34"
+      },
+      {
+        "source_id": "FISRC-5618afd8046eeb4f",
+        "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+        "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+        "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+        "quote": "existing strategic investors Samsung Catalyst Fund and Intel Capital also participated in the round",
+        "quote_hash": "60c30e9af193e5a605fa3ea3630b41759d8848bf0a286ca1b815bfea3f41662c"
       },
       {
         "source_id": "FISRC-6ef693ebacbad168",
@@ -233,8 +343,12 @@
           "source_id": "FISRC-b7d7449114c23ca5"
         },
         {
-          "description": "融资来源记录：Groq · D轮 · D轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6ef693ebacbad168"
+          "description": "融资来源记录：Normal Computing · 其他融资 · 2026-03-25 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3c1b4f6326a3ee76"
+        },
+        {
+          "description": "融资来源记录：Eliyan Corporation · 战略融资 · 2026-01-28 · 本轮参投 · $50 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5618afd8046eeb4f"
         }
       ],
       "contacts": [
@@ -278,12 +392,20 @@
           "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
         },
         {
-          "source_id": "FISRC-6ef693ebacbad168",
-          "source_url": "https://economictimes.indiatimes.com/topic/investment-in-groq",
-          "source_title": "investment in groq: Latest News & Videos, Photos about investment in groq | The Economic Times - Page 1",
-          "source_content_hash": "49d31e2d6afab8b0",
-          "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion.",
-          "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
+          "source_id": "FISRC-3c1b4f6326a3ee76",
+          "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
+          "source_title": "Normal Computing 获 Samsung Catalyst 领投的 5000 万美元融资，以加速硅设计并解决 AI 硬件能源危机",
+          "source_content_hash": "399e9cd53399fcbbe4a4c319ef7751fe852c94ca50bbea6680deda1b30ba3c97",
+          "quote": "Normal Computing today announced $50 million in strategic funding led by Samsung Catalyst Fund",
+          "quote_hash": "b192e76791e9701615db5d8f4036319d37163d9e08e38b7fabb56b39aea22c34"
+        },
+        {
+          "source_id": "FISRC-5618afd8046eeb4f",
+          "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+          "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+          "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+          "quote": "existing strategic investors Samsung Catalyst Fund and Intel Capital also participated in the round",
+          "quote_hash": "60c30e9af193e5a605fa3ea3630b41759d8848bf0a286ca1b815bfea3f41662c"
         }
       ],
       "last_verified_at": "2026-09-26",

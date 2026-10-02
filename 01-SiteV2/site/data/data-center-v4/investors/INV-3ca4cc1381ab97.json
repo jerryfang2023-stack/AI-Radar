@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,26 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-02-14",
     "latest_disclosed_at": "2026-09-12",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "angel",
       "angel_plus",
+      "multi_round",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-4b8de799d3cb1255",
+        "canonical_entity_id": "",
+        "name": "蜂巢互联"
+      },
       {
         "entity_id": "EN-4731aa5b66658c7f",
         "canonical_entity_id": "EN-4731aa5b66658c7f",
@@ -135,6 +141,46 @@
             "source_content_hash": "0a4a2e441433729d",
             "quote": "线性资本、钧山资本、弘颐资本、隐山资本 等机构参与投资",
             "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b8b4aafb1f1a2094",
+        "funding_insight_id": "FI-f3eb163aa24caf8a",
+        "event_ids": [
+          "EV-bc166d0f16140940"
+        ],
+        "company_entity_id": "EN-4b8de799d3cb1255",
+        "company_canonical_entity_id": "",
+        "company_name": "蜂巢互联",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "12亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "12 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d442164db5f81db",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+            "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+            "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+            "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+            "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
           }
         ]
       },
@@ -293,6 +339,14 @@
         "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
       },
       {
+        "source_id": "FISRC-6d442164db5f81db",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+        "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+        "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+        "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+        "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+      },
+      {
         "source_id": "FISRC-99af5f038476e2fe",
         "source_url": "http://city.sina.com.cn/news/2026-04-29/detail-inhwczph6704322.shtml",
         "source_title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资",
@@ -339,12 +393,12 @@
           "source_id": "FISRC-02a843e0049125fa"
         },
         {
-          "description": "融资来源记录：无界动力 · 天使轮 · 2026-02-14 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-daccbed46498e19c"
+          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d442164db5f81db"
         },
         {
-          "description": "融资来源记录：深朴智能 · 历史轮次未披露 · 历史轮次老股东。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a52d8da56bf15229"
+          "description": "融资来源记录：无界动力 · 天使轮 · 2026-02-14 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-daccbed46498e19c"
         }
       ],
       "contacts": [],
@@ -358,20 +412,20 @@
           "quote_hash": "7887793bea5e88b2f273d8cdfc053010b057e75a9143c6cf5bc796c2a44317a2"
         },
         {
+          "source_id": "FISRC-6d442164db5f81db",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+          "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+          "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+        },
+        {
           "source_id": "FISRC-daccbed46498e19c",
           "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
           "source_title": "无界动力宣布完成超2亿元天使+轮融资",
           "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
           "quote": "新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
           "quote_hash": "8e9d10663fe3e1560634117b6891dc37bab1b356161cbcf0e51af36273fc4061"
-        },
-        {
-          "source_id": "FISRC-a52d8da56bf15229",
-          "source_url": "https://news.qq.com/rain/a/20260410A03B5200",
-          "source_title": "融资丨深朴智能完成数亿元新一轮融资，加速具身智能商业化落地_腾讯新闻",
-          "source_content_hash": "29eb95824de03bbe",
-          "quote": "本轮融资由线性资本、普华资本领投，老股东钧山资本、顺为资本、BV 百度 风投持续加码",
-          "quote_hash": "abfa24de1a5b3938e20e7f09a80c4f5858082e42ce1ab02959a750e96080f14d"
         }
       ],
       "last_verified_at": "2026-09-25"

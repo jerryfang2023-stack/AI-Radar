@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-15e420fd3ab3f2ef",
+    "name": "Efficient Computer",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-b9b446350006fbae"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-02-18",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-b9b446350006fbae"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-b9b446350006fbae",
+        "dataDate": "2026-10-02",
+        "date": "2026-02-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+        "displayTags": [],
+        "entityIds": [
+          "EN-15e420fd3ab3f2ef"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-dc2b1858c5deb23b",
+      "snapshotKey": "dc2b1858c5deb23b",
+      "snapshotId": "HWS-dbd61511f24f2cc8",
+      "eventId": "EV-b9b446350006fbae",
+      "eventIds": [
+        "EV-b9b446350006fbae"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Efficient Computer",
+      "subject": "Efficient Computer",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "60",
+          "unit": "$Million",
+          "fact_ref": "HWF-66faae2a5ee1b61f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-66faae2a5ee1b61f",
+          "fact_type": "product",
+          "observed_at": "2026-02-18",
+          "subject_entity_id": "EN-15e420fd3ab3f2ef",
+          "subject_name": "Efficient Computer",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "60",
+          "unit": "$Million",
+          "source_quote": "Press\nFebruary 18, 2026\nEfficient Computer Raises $60 Million to Advance Energy-Efficient General-Purpose Processors for AI\nPITTSBURGH — February 18, 2026 — Efficient Computer, the company building the world’s most energy-efficient general-purpose processors, today announced a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others. The round brings the total amount raised to $76 million. The new capital will be used to accelerate Efficient Computer’s product roadmap and expand its engineering and developer teams, bringing its ultra-efficient architecture to a wide range of use cases.\nEnergy is the primary constraint on all modern computing hardware. As AI and advanced software move out of the cloud and into the physical world, existing processor architectures struggle to deliver intelligence within power, thermal, battery lifetime, and form-factor limits. Fixed-function accelerators entering the market lack the flexibility required to ",
+          "event_refs": [
+            "EV-b9b446350006fbae"
+          ],
+          "claim_ref": "CL-490cc71ae38eed32",
+          "source_refs": [
+            "SA-b64de64fd43d23ff"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+      "entityIds": [
+        "EN-15e420fd3ab3f2ef"
+      ]
+    }
+  ]
+}

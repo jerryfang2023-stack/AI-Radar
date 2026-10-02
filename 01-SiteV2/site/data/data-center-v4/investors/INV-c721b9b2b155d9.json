@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,13 +73,14 @@
     "latest_disclosed_at": "2026-08-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1,
-      "participant": 4
+      "lead": 2,
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
       "other",
       "seed",
+      "series_a",
       "series_d"
     ],
     "portfolio_companies": [
@@ -99,6 +100,11 @@
         "name": "Hang Ten Systems"
       },
       {
+        "entity_id": "EN-bf177397fc0b1c41",
+        "canonical_entity_id": "",
+        "name": "Pensive"
+      },
+      {
         "entity_id": "EN-70e7e370d5a50ea1",
         "canonical_entity_id": "",
         "name": "Retym"
@@ -107,6 +113,11 @@
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
         "name": "Upscale AI"
+      },
+      {
+        "entity_id": "EN-d2c4f1b5a5369864",
+        "canonical_entity_id": "",
+        "name": "Upscale, Inc."
       }
     ],
     "activities": [
@@ -271,6 +282,86 @@
         ]
       },
       {
+        "activity_id": "IA-8c2adb5f9d5353fa",
+        "funding_insight_id": "FI-603376be669bb001",
+        "event_ids": [
+          "EV-3aaa2e2c2260c84c"
+        ],
+        "company_entity_id": "EN-bf177397fc0b1c41",
+        "company_canonical_entity_id": "",
+        "company_name": "Pensive",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6.8M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "680 万美元"
+        },
+        "announced_at": "2026-02-27",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4c101bd2bd412982",
+            "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+            "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
+            "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
+            "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
+            "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-96f8518ae44d5212",
+        "funding_insight_id": "FI-efe78d5245c912b4",
+        "event_ids": [
+          "EV-a4b2d57251589ede"
+        ],
+        "company_entity_id": "EN-d2c4f1b5a5369864",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3c60f2ab7fcb8b84",
+            "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+            "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+            "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+            "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+            "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-1af8821e3b53037a",
         "funding_insight_id": "FI-80a993bcabfd14ae",
         "event_ids": [
@@ -375,6 +466,22 @@
         "source_content_hash": "23145edb5fdd8d69",
         "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
         "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
+      },
+      {
+        "source_id": "FISRC-4c101bd2bd412982",
+        "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+        "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
+        "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
+        "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
+        "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
+      },
+      {
+        "source_id": "FISRC-3c60f2ab7fcb8b84",
+        "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+        "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+        "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+        "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+        "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
       },
       {
         "source_id": "FISRC-f1b764e21138a412",

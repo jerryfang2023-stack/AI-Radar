@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-03",
+    "first_disclosed_at": "2026-02-18",
     "latest_disclosed_at": "2026-07-21",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
+      "series_a",
       "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-15e420fd3ab3f2ef",
+        "canonical_entity_id": "",
+        "name": "Efficient Computer"
+      },
       {
         "entity_id": "EN-7ef08ef63597d47c",
         "canonical_entity_id": "",
@@ -171,6 +177,46 @@
             "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
           }
         ]
+      },
+      {
+        "activity_id": "IA-e086a6eef6efa82d",
+        "funding_insight_id": "FI-f6129bfd1bbdd9ed",
+        "event_ids": [
+          "EV-b9b446350006fbae"
+        ],
+        "company_entity_id": "EN-15e420fd3ab3f2ef",
+        "company_canonical_entity_id": "",
+        "company_name": "Efficient Computer",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$60 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-02-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-840402012d166d60",
+            "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+            "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+            "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+            "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+            "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -189,6 +235,14 @@
         "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
         "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
         "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+      },
+      {
+        "source_id": "FISRC-840402012d166d60",
+        "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+        "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+        "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+        "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+        "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
       }
     ],
     "public_profile": {
@@ -207,6 +261,10 @@
         {
           "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8a34984c8e02defc"
+        },
+        {
+          "description": "融资来源记录：Efficient Computer · A轮 · 2026-02-18 · 本轮参投 · $60 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-840402012d166d60"
         }
       ],
       "contacts": [],
@@ -226,6 +284,14 @@
           "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
           "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
           "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+        },
+        {
+          "source_id": "FISRC-840402012d166d60",
+          "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+          "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+          "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+          "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+          "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
         }
       ],
       "last_verified_at": "2026-09-25"

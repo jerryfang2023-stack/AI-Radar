@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-02-02",
     "latest_disclosed_at": "2026-06-16",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 1,
       "participant": 1
     },
@@ -134,6 +135,38 @@
         ]
       },
       {
+        "activity_id": "IA-695e954d001f7dc3",
+        "funding_insight_id": "FI-dc68253303dac9b5",
+        "event_ids": [
+          "EV-e084947e3f9e0667"
+        ],
+        "company_entity_id": "EN-e12c9f7f64dec58c",
+        "company_canonical_entity_id": "",
+        "company_name": "北京面壁智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2026-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年4月D+轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ca5c9f62e4d3f2f3",
+            "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+            "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+            "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+            "quote": "道禾长期投资、国泰君安创新投、武岳峰科创等跟投",
+            "quote_hash": "10e9be87017135ef7289d02fb8f8a47e963f486839185aa1a55cef7eb134c6e7"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-fc88bf28e64688a9",
         "funding_insight_id": "FI-afd3b8c3d49ef1af",
         "event_ids": [
@@ -184,6 +217,14 @@
         "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
       },
       {
+        "source_id": "FISRC-ca5c9f62e4d3f2f3",
+        "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+        "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+        "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+        "quote": "道禾长期投资、国泰君安创新投、武岳峰科创等跟投",
+        "quote_hash": "10e9be87017135ef7289d02fb8f8a47e963f486839185aa1a55cef7eb134c6e7"
+      },
+      {
         "source_id": "FISRC-60aa4fb60c7d6090",
         "source_url": "https://www.sohu.com/a/982704085_120773109",
         "source_title": "卓世科技完成Pre-IPO轮融资，加速“AI大脑”赋能实体产业",
@@ -206,6 +247,10 @@
           "source_id": "FISRC-879cc82306af58a1"
         },
         {
+          "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2026-04 · 2026年4月D+轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ca5c9f62e4d3f2f3"
+        },
+        {
           "description": "融资来源记录：卓世科技 · Pre-IPO · 2026-02-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-60aa4fb60c7d6090"
         }
@@ -219,6 +264,14 @@
           "source_content_hash": "f1654d9235cc7fa8",
           "quote": "本轮融资由 携程 战投、 晶科能源 控股、金蝶股份、联通新沃、盛奕资本（润泽集团产业资本）、壁仞战投、 蔚来 资本、商汤战投、 巨人网络 、国泰君安创新投、纪源资本、华登国际、华控基金、国开金融、 中关村 科学城等机构联合投资",
           "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
+        },
+        {
+          "source_id": "FISRC-ca5c9f62e4d3f2f3",
+          "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+          "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+          "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+          "quote": "道禾长期投资、国泰君安创新投、武岳峰科创等跟投",
+          "quote_hash": "10e9be87017135ef7289d02fb8f8a47e963f486839185aa1a55cef7eb134c6e7"
         },
         {
           "source_id": "FISRC-60aa4fb60c7d6090",

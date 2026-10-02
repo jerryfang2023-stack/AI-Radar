@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-7dfadeb219464a45",
+    "name": "Zūm",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-2975bb5b57ce53d9"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-target_user-student"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-04-16",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-2975bb5b57ce53d9"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-2975bb5b57ce53d9",
+        "dataDate": "2026-10-02",
+        "date": "2026-04-16",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [
+              "EN-7dfadeb219464a45"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-58b2192a9a01fa7b",
+          "EN-7dfadeb219464a45"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-target_user-student",
+      "name": "学生",
+      "nodeType": "target_user",
+      "typeLabel": "目标用户",
+      "valueId": "student",
+      "eventIds": [
+        "EV-2470b13ea55496d0",
+        "EV-86838cc774b85116",
+        "EV-ef669a52c9a3f94f",
+        "EV-41c54c428d84cc1e",
+        "EV-8eb0acb180b7ad9d",
+        "EV-e2a94eb223c11a66",
+        "EV-2975bb5b57ce53d9",
+        "EV-435d7e7878b0c326",
+        "EV-09b8a8e4ed03dd7f",
+        "EV-390a082fa13fe0a6",
+        "EV-26439e34295a0519",
+        "EV-58268b12aa406620"
+      ],
+      "entityIds": [
+        "EN-0830e0bf8e8fa471",
+        "EN-573b998925ae7499",
+        "EN-1d79127e9d90e89b",
+        "EN-8dc72a4672894e0f",
+        "EN-53b69ef92c836777",
+        "EN-bd86ebd32193b381",
+        "EN-7dfadeb219464a45",
+        "EN-a6e5382c05dd0d16",
+        "EN-04bd675006a7a1ed",
+        "EN-ff8999faeaba6861"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-12",
+      "lastSeen": "2026-10-02"
+    }
+  ],
+  "fde": [],
+  "hardware": []
+}

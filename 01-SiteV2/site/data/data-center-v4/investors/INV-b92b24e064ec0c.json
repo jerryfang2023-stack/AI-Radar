@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2025-08-27",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
       "participant": 4
     },
@@ -315,6 +315,38 @@
         ]
       },
       {
+        "activity_id": "IA-3e212eaf4d11956e",
+        "funding_insight_id": "FI-d80c637f106db95c",
+        "event_ids": [
+          "EV-a1addb827a7ac17c"
+        ],
+        "company_entity_id": "EN-2bd806c97f0e00af",
+        "company_canonical_entity_id": "",
+        "company_name": "Alice",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资者（本轮回归）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7f8e788eab384554",
+            "source_url": "https://valueaddvc.com/blog/alice-ai-security-valuation-2026-140m-raise-pushes-it-near-1b",
+            "source_title": "Alice AI Security Valuation 2026: $140M Raise Pushes It Near $1B",
+            "source_content_hash": "5886e06ebf8ee4d0",
+            "quote": "A large bloc of existing investors also came back for the round: Resolute Ventures, Grove Ventures, CRV, Highland Europe, Vintage Investment Partners, Norwest, NFX, and Claltech.",
+            "quote_hash": "b7bab8ca83243fe88ae21f49ee2ba4bf472391655f731e15e339d8048c80418e"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-ebfcb9313ca34cac",
         "funding_insight_id": "FI-44b385d21bc76adb",
         "event_ids": [
@@ -395,6 +427,14 @@
         "source_content_hash": "8c799b616e20ea1d",
         "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
         "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
+      },
+      {
+        "source_id": "FISRC-7f8e788eab384554",
+        "source_url": "https://valueaddvc.com/blog/alice-ai-security-valuation-2026-140m-raise-pushes-it-near-1b",
+        "source_title": "Alice AI Security Valuation 2026: $140M Raise Pushes It Near $1B",
+        "source_content_hash": "5886e06ebf8ee4d0",
+        "quote": "A large bloc of existing investors also came back for the round: Resolute Ventures, Grove Ventures, CRV, Highland Europe, Vintage Investment Partners, Norwest, NFX, and Claltech.",
+        "quote_hash": "b7bab8ca83243fe88ae21f49ee2ba4bf472391655f731e15e339d8048c80418e"
       },
       {
         "source_id": "FISRC-2caf93b29d914f26",

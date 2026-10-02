@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-04",
+    "first_disclosed_at": "2026-01-28",
     "latest_disclosed_at": "2026-02-04",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_b"
+      "series_b",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-b8f1c575bfcf5ece",
+        "canonical_entity_id": "",
+        "name": "Eliyan Corporation"
+      },
       {
         "entity_id": "EN-0995103010d39563",
         "canonical_entity_id": "",
@@ -127,6 +133,46 @@
         ]
       },
       {
+        "activity_id": "IA-357b660a60a95ac6",
+        "funding_insight_id": "FI-643b76798f958bf3",
+        "event_ids": [
+          "EV-3d5daffd1cb9521b"
+        ],
+        "company_entity_id": "EN-b8f1c575bfcf5ece",
+        "company_canonical_entity_id": "",
+        "company_name": "Eliyan Corporation",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$50 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-01-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5618afd8046eeb4f",
+            "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+            "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+            "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+            "quote": "including AMD, Arm, Coherent, and Meta",
+            "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-f1d170fc42f504fc",
         "funding_insight_id": "FI-12d0278b1cf72d65",
         "event_ids": [
@@ -169,6 +215,14 @@
         "quote_hash": "ad51be58f43829b90522c4f795123b4cfdd39626348cbf1c18dfe83a9e85855a"
       },
       {
+        "source_id": "FISRC-5618afd8046eeb4f",
+        "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+        "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+        "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+        "quote": "including AMD, Arm, Coherent, and Meta",
+        "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
+      },
+      {
         "source_id": "FISRC-1bd642bd46e5675c",
         "source_url": "https://app.fundz.net/fundings/rebellions-funding-round-c52470",
         "source_title": "Rebellions $400 Million funding round 2026-03-30",
@@ -191,6 +245,10 @@
           "source_id": "FISRC-7ab329bc47036713"
         },
         {
+          "description": "融资来源记录：Eliyan Corporation · 战略融资 · 2026-01-28 · 本轮参投 · $50 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5618afd8046eeb4f"
+        },
+        {
           "description": "融资来源记录：Rebellions Inc. · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1bd642bd46e5675c"
         }
@@ -204,6 +262,14 @@
           "source_content_hash": "cbb6c55f3aa631df",
           "quote": "with participation from new and strategic investors Qatar Investment Authority, Arm and Helena",
           "quote_hash": "ad51be58f43829b90522c4f795123b4cfdd39626348cbf1c18dfe83a9e85855a"
+        },
+        {
+          "source_id": "FISRC-5618afd8046eeb4f",
+          "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+          "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+          "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+          "quote": "including AMD, Arm, Coherent, and Meta",
+          "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
         },
         {
           "source_id": "FISRC-1bd642bd46e5675c",

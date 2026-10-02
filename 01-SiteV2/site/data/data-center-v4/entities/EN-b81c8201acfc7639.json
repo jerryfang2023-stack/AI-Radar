@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,6 +69,7 @@
       "EV-e993070274a188d9",
       "EV-ea95ea9406e76f62",
       "EV-43c9b851bd2a46c7",
+      "EV-d3c5eb69eb9d397a",
       "EV-e11382111a5b99f6",
       "EV-3db9a076e3b7d4fd",
       "EV-b9ef27cd1fd9b9a9",
@@ -77,6 +78,7 @@
       "EV-3a591b0f027f66cf",
       "EV-499a62114b0fd616",
       "EV-77a608db67e742a4",
+      "EV-ae564e305ca1bc3e",
       "EV-cc79a5c01f85909e",
       "EV-7e9cc6f0faab48ed",
       "EV-40dbd71782c11373",
@@ -140,7 +142,9 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-eb2796fc4bcc5ac0",
+        "EV-d3c5eb69eb9d397a",
         "EV-e11382111a5b99f6",
+        "EV-ae564e305ca1bc3e",
         "EV-e993070274a188d9",
         "EV-3db9a076e3b7d4fd",
         "EV-b9ef27cd1fd9b9a9",
@@ -219,6 +223,82 @@
         ]
       },
       {
+        "id": "EV-d3c5eb69eb9d397a",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-31",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenCSG完成数亿元Pre-A轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-55c37c5c0b75471a",
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29",
+          "EN-b81c8201acfc7639",
+          "EN-2ab6d53e717a0e0d",
+          "EN-25cdd04cf7fba6b1"
+        ]
+      },
+      {
         "id": "EV-e11382111a5b99f6",
         "dataDate": "2026-10-02",
         "date": "2026-08-26",
@@ -256,6 +336,46 @@
           "EN-122ae8e9e5fb4660",
           "EN-a9fe35f3cbba10f5",
           "EN-997a5e6e513f2a90",
+          "EN-b81c8201acfc7639"
+        ]
+      },
+      {
+        "id": "EV-ae564e305ca1bc3e",
+        "dataDate": "2026-10-02",
+        "date": "2026-02-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "AI运动科技公司「致敬未知」完成超亿元Pre-A轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "customer_support",
+            "name": "客户支持",
+            "entityIds": [
+              "EN-449d8bc804b1866d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "retail_ecommerce",
+            "name": "零售与电商",
+            "entityIds": [
+              "EN-449d8bc804b1866d"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-449d8bc804b1866d",
+          "EN-5388bc10736a0eff",
           "EN-b81c8201acfc7639"
         ]
       },
@@ -2049,13 +2169,18 @@
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
         "EV-89ec502a1340079a",
+        "EV-d3c5eb69eb9d397a",
+        "EV-0e854ee566f6d0b9",
+        "EV-bc166d0f16140940",
         "EV-ab839326ca9597d8",
         "EV-6a5a3f316200d1e3",
         "EV-77f9a1a9bcf8cc65",
         "EV-95385e7d45e69784",
+        "EV-beee465b894317c7",
         "EV-1744d0e71176f9a1",
         "EV-bdcb22b1a53358f5",
         "EV-50b5c4f93ead145d",
+        "EV-bec127224b1f1aca",
         "EV-bf8ce460c05b9ff0",
         "EV-c1295b8f58024ff6",
         "EV-83728e3b6c7736ce",
@@ -2063,6 +2188,7 @@
         "EV-673637ebe2ac2f2d",
         "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
+        "EV-f36f5f7b24b2bfde",
         "EV-9ed6a759555d7e77",
         "EV-13e08bc37724e276",
         "EV-53253b5e23970958",
@@ -2170,8 +2296,10 @@
         "EV-2d0d165e866cd770",
         "EV-4a6cbe937d1b9701",
         "EV-ac5e33e067906a6d",
+        "EV-ed73cd2c438a470d",
         "EV-acdeebead5324344",
         "EV-4ef09c71be4c84cb",
+        "EV-63de2b6408efd796",
         "EV-6de81d4ca248ff31",
         "EV-3c408fe984c73089",
         "EV-e70b6a1287dcaa59",
@@ -2689,13 +2817,17 @@
         "EN-55c37c5c0b75471a",
         "EN-b0a61df9bfe99f72",
         "EN-071f3eca285403f1",
+        "EN-5ba042c14b39398d",
+        "EN-4b8de799d3cb1255",
         "EN-05bb7905b99d8025",
         "EN-96c842ee0d60fa41",
         "EN-b01ef9255dcc0caa",
         "EN-a1b7a0cc37ed257d",
+        "EN-6411d31f2aefa743",
         "EN-01b4537c6e0a2da7",
         "EN-67e8c106650aa683",
         "EN-2dc010636b9dce91",
+        "EN-d6d6dcf0bb132a3d",
         "EN-8526299f9ecc5fac",
         "EN-249fdefbb63fa7b3",
         "EN-240389f4b730bad4",
@@ -2703,6 +2835,7 @@
         "EN-18131bed4bcc2f1a",
         "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
+        "EN-d5dee8daa2eb5cc5",
         "EN-2be663431f007250",
         "EN-77a82bb9aafc81d9",
         "EN-65819e198c32566a",
@@ -2798,8 +2931,10 @@
         "EN-47afad612b1f9cc8",
         "EN-6c7cceb7ce4d4e6a",
         "EN-a675d46aba3c7e48",
+        "EN-4125bf4687377f47",
         "EN-5b3767eb23d5e4ed",
         "EN-470be66761dfc2e9",
+        "EN-dfc0fdff7af68ed2",
         "EN-b30b83d324e678e4",
         "EN-a3b8fbb2200a105a",
         "EN-5c443a92518833f1",
@@ -3157,12 +3292,15 @@
         "EV-d15929b5f2859e29",
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
+        "EV-d3c5eb69eb9d397a",
         "EV-e11382111a5b99f6",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
+        "EV-a1addb827a7ac17c",
         "EV-b231e1a452a7c74a",
         "EV-b73d931bd6adb78d",
         "EV-4f56483024dd4e84",
+        "EV-beee465b894317c7",
         "EV-bdcb22b1a53358f5",
         "EV-3f9d420719641eda",
         "EV-f5dd6dec49ad83aa",
@@ -3185,7 +3323,6 @@
         "EV-44cd5e03d30c85b3",
         "EV-f6a72cddbda748b3",
         "EV-6f092cfc7a064d64",
-        "EV-e084947e3f9e0667",
         "EV-64fb6d791e19d10a",
         "EV-12f331aaf7d4cca6",
         "EV-71d7d8bbaa623228",
@@ -3239,8 +3376,10 @@
         "EV-81b7cd5d6a37912c",
         "EV-c5d7d88d1aef8edb",
         "EV-7d75469a0d1ef8fa",
+        "EV-d778b532e1d6e74f",
         "EV-a9095d1178664a0b",
         "EV-64ee295aa85c2f65",
+        "EV-ed73cd2c438a470d",
         "EV-5575555340c04c5a",
         "EV-314db5cbf5010d41",
         "EV-9832526435c1695e",
@@ -3251,12 +3390,15 @@
         "EV-a592606de9958bbc",
         "EV-4ef09c71be4c84cb",
         "EV-565b6c1b10b3cf83",
+        "EV-2edec0302b3e0626",
         "EV-535c2f4fb851332d",
         "EV-622ebdad1e1fad2d",
         "EV-bf35f4d7b6193a47",
         "EV-3c408fe984c73089",
         "EV-794f0a86004da0c9",
         "EV-df37e9341b5c7f04",
+        "EV-ee9a4433b4e7715e",
+        "EV-4cc192a29a3099e8",
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
@@ -3545,9 +3687,11 @@
         "EN-122ae8e9e5fb4660",
         "EN-336ab1deb42d6284",
         "EN-be9d587defa1f0c0",
+        "EN-2bd806c97f0e00af",
         "EN-8d4321d936320802",
         "EN-7dd2a89f628d7525",
         "EN-586466805b277098",
+        "EN-6411d31f2aefa743",
         "EN-67e8c106650aa683",
         "EN-2f9cb7cda5222087",
         "EN-c70eca6b0f88f44d",
@@ -3608,8 +3752,10 @@
         "EN-d3531cc88f7ce911",
         "EN-09b680b7f0755af5",
         "EN-0369c8fcda657a43",
+        "EN-713589016b2361a3",
         "EN-ad27d4918a2a9660",
         "EN-7a8ce298d662e4cc",
+        "EN-4125bf4687377f47",
         "EN-9b21c9bf3305c0d6",
         "EN-3309b3b14807f39a",
         "EN-a43f157d208b2a63",
@@ -3619,9 +3765,12 @@
         "EN-168d2cac8014ba30",
         "EN-470be66761dfc2e9",
         "EN-90596b71813a2ee2",
+        "EN-15ea2fa417bd8597",
         "EN-a3b8fbb2200a105a",
         "EN-2c348893efb2316e",
         "EN-f0d59425e4c32abb",
+        "EN-586e52112859378f",
+        "EN-bac6d661867571f7",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
         "EN-86b7b29d698963ef",
@@ -3833,12 +3982,15 @@
         "EV-ee38c30c00b2a754",
         "EV-6085ac39a118eb92",
         "EV-aa33ca051f3a7f78",
+        "EV-d99be21ac665f1f9",
         "EV-79a0bbe8b8623b28",
         "EV-7817dc69d5228cbb",
         "EV-cfd791871e347aa6",
         "EV-561e2028a6212b99",
+        "EV-60e3781058f5e904",
         "EV-9fc8916c19c19f99",
         "EV-f487788f3d44f288",
+        "EV-492c46019767d76f",
         "EV-11b5192fc54c0aa0",
         "EV-e27fd7ef45577dee",
         "EV-56da7cceeebc8bcf",
@@ -3862,10 +4014,13 @@
         "EV-44ec7c229995ca3c",
         "EV-dd567ead9785ef80",
         "EV-c34ebd1db6227471",
+        "EV-21529e29a0eedf85",
         "EV-e6a4e0785ebb268a",
         "EV-d79663ef2ee65ca1",
         "EV-cded77b1de2db61a",
         "EV-5ea12679e9a25791",
+        "EV-d6a57d52ff2194d8",
+        "EV-601fe37c18644b73",
         "EV-8b0f056571d68269",
         "EV-b93b6abf31662339",
         "EV-a852dc0ca6011ff6",
@@ -3947,12 +4102,15 @@
         "EN-2b60b46911fc1640",
         "EN-ca2325e126df04fc",
         "EN-1bd14cd1a58c5708",
+        "EN-7753b0382f29e6a8",
         "EN-88ab1e5d793701f9",
         "EN-e69f64149edae6b1",
         "EN-41a9132b800767fb",
         "EN-19a5848a577315c5",
+        "EN-6d4ddfac145496cd",
         "EN-f96246b78ef26d59",
         "EN-f3d05a0f6248941d",
+        "EN-d4944c6a862031ad",
         "EN-bf0e59763d382462",
         "EN-d36bcf54dc960081",
         "EN-5aacd10b5dbfa7b7",
@@ -3979,6 +4137,8 @@
         "EN-ff64b66f3b348966",
         "EN-a83a3af1a4866fd5",
         "EN-f6575bf878adb828",
+        "EN-54b96ff67bf12e2b",
+        "EN-026f9b9d1cbc342f",
         "EN-e5cc9e38970eacb5",
         "EN-c9e92f0b88c6456b",
         "EN-023e881577ad3ab1",
@@ -4042,6 +4202,8 @@
         "EV-4d46806b1522d5f4",
         "EV-c17a6102aab72f4f",
         "EV-7077778f0eb84f6c",
+        "EV-bec127224b1f1aca",
+        "EV-235f08be851797db",
         "EV-a791da439ae6f7b8",
         "EV-d3054a8a2b62a503",
         "EV-6e655c211bb0982a",
@@ -4050,14 +4212,19 @@
         "EV-d1d7212194b63b0b",
         "EV-12f331aaf7d4cca6",
         "EV-11c8183c180e4b97",
+        "EV-d99be21ac665f1f9",
         "EV-427ec385ca7dba48",
+        "EV-d778b532e1d6e74f",
+        "EV-3d2825a2d89fbcdd",
         "EV-26624896fdc6c867",
         "EV-d56e4f4889196a44",
+        "EV-21529e29a0eedf85",
         "EV-4ef09c71be4c84cb",
         "EV-535c2f4fb851332d",
         "EV-622ebdad1e1fad2d",
         "EV-bf35f4d7b6193a47",
         "EV-794f0a86004da0c9",
+        "EV-3f979612b8a14b28",
         "EV-060f003ce747acdd",
         "EV-bee8896bf7efa594",
         "EV-843f0807558b3d10",
@@ -4138,6 +4305,8 @@
         "EN-5c822c71e6e4db70",
         "EN-09ba34a4ad1ed4af",
         "EN-be9d587defa1f0c0",
+        "EN-d6d6dcf0bb132a3d",
+        "EN-d3c0a240ab92fda5",
         "EN-a4d050c44b8a1d19",
         "EN-45e648a56b09477d",
         "EN-3f0cfc0d9c60b562",
@@ -4145,9 +4314,13 @@
         "EN-eace5f143f78a8cb",
         "EN-964f260c9a904091",
         "EN-6749a84e188b9301",
+        "EN-7753b0382f29e6a8",
         "EN-998255d915da8953",
+        "EN-713589016b2361a3",
+        "EN-f86969a9eae03c96",
         "EN-470be66761dfc2e9",
         "EN-9b21c9bf3305c0d6",
+        "EN-91d1e715d6886f6b",
         "EN-115c1e954c4d620e",
         "EN-b5d7671990b8d4a8",
         "EN-ad691fd49d3307e8",
@@ -4254,6 +4427,11 @@
         "EV-59882383f82f215d",
         "EV-450f624a6a6446ce",
         "EV-fd2ff833db684e40",
+        "EV-63de2b6408efd796",
+        "EV-6df993c01938fc9a",
+        "EV-4cc192a29a3099e8",
+        "EV-4d9754466f03bf16",
+        "EV-42335b1bae58c172",
         "EV-8077605769c4d4eb",
         "EV-67804da6b04fdcc5",
         "EV-ad6c755f7cf588c4",
@@ -4384,6 +4562,11 @@
         "EN-53453cfb48a75dde",
         "EN-883be863cc6562bb",
         "EN-272d534804dc22a4",
+        "EN-dfc0fdff7af68ed2",
+        "EN-2f4436342c46decc",
+        "EN-bac6d661867571f7",
+        "EN-ec418abaacc30a58",
+        "EN-185ea241778d39c7",
         "EN-f2b9106253663314",
         "EN-8d02f06f05d1d64a",
         "EN-984a4161f72f4121",
@@ -5418,6 +5601,145 @@
         "EN-b81c8201acfc7639",
         "EN-047364b9be67f665",
         "EN-9c8ae69b84f21a2e"
+      ]
+    },
+    {
+      "id": "HWC-e5d89a13bccde1e3",
+      "snapshotKey": "e5d89a13bccde1e3",
+      "snapshotId": "HWS-87e0843b8d7246ac",
+      "eventId": "EV-ae564e305ca1bc3e",
+      "eventIds": [
+        "EV-ae564e305ca1bc3e"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "致敬未知",
+      "subject": "致敬未知",
+      "productNames": [],
+      "hardwareType": "smart_glasses",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "超亿元",
+          "fact_ref": "HWF-3151713647384143"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-3151713647384143",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-02-28",
+          "subject_entity_id": "EN-449d8bc804b1866d",
+          "subject_name": "致敬未知",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "超亿元",
+          "source_quote": "品牌方舟获悉，2月27日，致敬未知宣布完成超亿元Pre-A轮融资。\n本轮融资由创维投资、博裕创投、联想创投、广发乾和等产业及财务资本联合参与，所获资金将主要用于新一代产品研发、市场拓展与全球渠道布局。\n致敬未知成立于2022年，是一家专注于AI运动科技领域的创新公司。创始人吴德周曾担任字节跳动新石实验室总裁，拥有深厚的行业经验。核心团队成员则来自华为、字节跳动、锤子科技等知名企业，在消费电子与AI技术研发方面具备扎实积累。\n与雷鸟创新、闪极、Rokid等主打通用场景的AI眼镜品牌不同，致敬未知聚焦垂直运动赛道，并推出运动科技品牌BleeqUp。\n图源：BleeqUp\n2025年4月，BleeqUp登陆海外众筹平台Kickstarter，在45天内筹得51万美元（约合人民币370万元），超额完成目标201倍，创下智能骑行眼镜品类的众筹新纪录。\n在技术路线上，致敬未知明确表示，下一代产品不会回归通用型AI+AR眼镜，而是坚持深耕运动场景。其长远目标是成为户外运动领域的AI Agent，聚焦运动赛道，打造“AI 运动健康智慧中枢”。\n据官方透露，自2025年9月BleeqUp超影擎正式上市以来，全球出货量已突破一万副。致敬未知预测，2026年产品销量有望实现10倍以上增长。\n作者✎ 十度/品牌方舟\n声明：此文章版权归品牌方舟所有，未经允许不得转载，如需授权请联系：amz123happy\n致敬未知户外运动\n【品牌方舟BrandArk】关注全球化、跨境电商、品牌增长等议题，致力于洞察潜力出海赛道。\n扫码关注回复【加群】，加入出海交流群\n已有8000+出海人聚集在我们社群里\n免责声明\n 本文链接:\n本文经作者许可发布在品牌方舟，如有疑问，请联系客服。\nReturn Helper退易帮\n无需回国，当地多元化处理，协助节约整体成本50%！\n宝通达物流\n专注跨境物流19年，主营FBA头程、自发货、国际快递、海外仓等综合跨境物流服务\n卖家精灵\n亚马逊选品+运营，130万卖家的共同选择\nReturn Helper退易帮\n无需回国，当地多元化处理，协助节约整体成本50%！\n宝通达物流\n专注跨境物流19年，主营FBA头程、自发货、国际快递、海外仓等综合跨境物流服务\n卖家精灵\n亚马逊选品+运营，130万卖家的共同选择\n最新热门报告标签\n智能戒指品牌Oura无限期推迟上市计划智能戒指品牌Oura宣布，由于“IPO市场存在不确定性”，决定无限期推迟原定在纳斯达克进行的首次公开募股（IPO）。此前，Oura计划通过IPO募资最高22亿美元，原定发行价格区间为每股40至44美元。按照此前披露的方案",
+          "event_refs": [
+            "EV-ae564e305ca1bc3e"
+          ],
+          "claim_ref": "CL-bc2f41e253875594",
+          "source_refs": [
+            "SA-d873d2e5c3a6a3f0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.brandark.com/t/ipNtlMZg",
+      "entityIds": [
+        "EN-449d8bc804b1866d",
+        "EN-5388bc10736a0eff",
+        "EN-b81c8201acfc7639"
+      ]
+    },
+    {
+      "id": "HWC-84acc3c635ac339b",
+      "snapshotKey": "84acc3c635ac339b",
+      "snapshotId": "HWS-66a10961798fa054",
+      "eventId": "EV-d3c5eb69eb9d397a",
+      "eventIds": [
+        "EV-d3c5eb69eb9d397a"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "OpenCSG",
+      "subject": "OpenCSG",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "24",
+          "unit": "亿",
+          "fact_ref": "HWF-1489cdfb1f7fa525"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-1489cdfb1f7fa525",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-31",
+          "subject_entity_id": "EN-55c37c5c0b75471a",
+          "subject_name": "OpenCSG",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "亿",
+          "source_quote": "本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。\n近日，开放传神（OpenCSG）宣布完成数亿元人民币Pre-A轮融资，投后估值迈入独角兽级别。本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。本轮融资完成后，OpenCSG将进一步加大在开源AI基础设施、Agentic AI平台、全球开发者生态及城市级AI基础设施等方向的投入，推动中国开源AI技术与生态走向全球。成立于 2023 年的 OpenCSG，是一家面向大模型与智能体时代的 AI 原生公司，致力于通过开源开放的技术生态，帮助企业、园区和城市客户构建可管理、可部署、可运营的 AI 能力底座。从开源大模型社区出发，公司逐步将能力延伸至企业级 AI 平台、Agentic AI 以及城市级 AI 基础设施。\n 新浪科技公众号\n “掌”握科技鲜闻 （微信搜索techsina或扫描左侧二维码关注）\n 相关新闻\n 创事记\n 索尼游戏，进退两难\n OpenAI抢后台，马斯克抢前台\n 陌陌母公司挚文季报图解：营收24亿净利降19% 唐岩刚获派息超8000万\n 阅读排行榜\n 评论排行榜\n 苹果折叠屏iPhone正在测试手写笔：乔布斯当年最嫌弃的配件回归\n 塞浦路斯一艘载有约270名乘客渡轮倾覆，出事海域海况恶劣，当地镇长：已救起159人\n “雪王”猛踩刹车，蜜雪集团能否大象转身？\n 第一批买网红小家电的人 已经开始后悔了\n 告别100年流水线！车自己去找工位？探秘全国唯一的“领航级”汽车工厂\n 华为鸿蒙折叠电脑要出小尺寸版本：配备独立外屏 定价更香\n 年销千辆暴跌90%，豪车玛莎拉蒂“诺基亚”了\n 市值2700亿 国产GPU四小龙之一的沐曦首次盈利：7nm显卡已量产\n 快递寄丢45万爱马仕仅赔500元 当事人还倒贴近万元\n 16年磨一镜！NASA罗曼空间望远镜终于升空：视野达哈勃的100倍\n 告别100年流水线！车自己去找工位？探秘全国唯一的“领航级”汽车工厂\n 无人快递车顶上趴着俩人搭便车！厂商回应：绕过摄像头就识别不了\n 国内首部 AIGC 长剧《后西游记》今日开播，首部“边审边播”剧集\n 当事乘客回应“厦航飞北京航班上遭邻座扇耳光”：对方系中年女性 航司称乘务员目击脚踹动作\n 苹果折叠屏iPhone正在测试手写笔：乔布斯当年最嫌弃的配件回归\n 苹果发布会倒计时，首款折叠iPhone价格曝光\n 上海电信突发大范围断网 手机信号网络全无：官方致歉 已陆续恢复\n ",
+          "event_refs": [
+            "EV-d3c5eb69eb9d397a"
+          ],
+          "claim_ref": "CL-7b7205b2d52422c3",
+          "source_refs": [
+            "SA-87f7278abfa670cd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-55c37c5c0b75471a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
+      "entityIds": [
+        "EN-55c37c5c0b75471a",
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29",
+        "EN-b81c8201acfc7639",
+        "EN-2ab6d53e717a0e0d",
+        "EN-25cdd04cf7fba6b1"
       ]
     },
     {

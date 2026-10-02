@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-02-24",
+    "latest_disclosed_at": "2026-02-24",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-3b335699234f8e07",
+        "canonical_entity_id": "",
+        "name": "MatX"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-6587d11ca0e75d6a",
+        "funding_insight_id": "FI-06024b9ac7fd11f2",
+        "event_ids": [
+          "EV-52a5ebe8fdad8d3b"
+        ],
+        "company_entity_id": "EN-3b335699234f8e07",
+        "company_canonical_entity_id": "",
+        "company_name": "MatX",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$500M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e80cfbcccb0ffdce",
+            "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+            "source_title": "Nvidia challenger AI chip startup MatX raised $500M",
+            "source_content_hash": "296df8014db458cc",
+            "quote": "Other investors in the round include Marvell Technology, NFDG, Spark Capital, and Stripe co-founders Patrick Collison and John Collison",
+            "quote_hash": "c0746d402cad00a6dadd4ea97d380a0318d92843bfe117ec98a40bef3be3e71d"
+          }
+        ]
+      },
       {
         "activity_id": "IA-0d605d5a4b0e66a5",
         "funding_insight_id": "FI-dc65b78217aadd5b",
@@ -144,6 +193,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e80cfbcccb0ffdce",
+        "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+        "source_title": "Nvidia challenger AI chip startup MatX raised $500M",
+        "source_content_hash": "296df8014db458cc",
+        "quote": "Other investors in the round include Marvell Technology, NFDG, Spark Capital, and Stripe co-founders Patrick Collison and John Collison",
+        "quote_hash": "c0746d402cad00a6dadd4ea97d380a0318d92843bfe117ec98a40bef3be3e71d"
+      },
+      {
         "source_id": "FISRC-926b8b12b411de6f",
         "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
         "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
@@ -165,10 +222,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "NFDG 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "NFDG 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：MatX · B轮 · 2026-02-24 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e80cfbcccb0ffdce"
+        },
         {
           "description": "融资来源记录：Artificial Intelligence Underwriting Company (AIUC) · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-926b8b12b411de6f"
@@ -180,6 +241,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-e80cfbcccb0ffdce",
+          "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+          "source_title": "Nvidia challenger AI chip startup MatX raised $500M",
+          "source_content_hash": "296df8014db458cc",
+          "quote": "Other investors in the round include Marvell Technology, NFDG, Spark Capital, and Stripe co-founders Patrick Collison and John Collison",
+          "quote_hash": "c0746d402cad00a6dadd4ea97d380a0318d92843bfe117ec98a40bef3be3e71d"
+        },
         {
           "source_id": "FISRC-926b8b12b411de6f",
           "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
@@ -201,7 +270,7 @@
     },
     "translations": {
       "zh-CN": {
-        "public_profile.track_record[0].description": {
+        "public_profile.track_record[1].description": {
           "text": "融资来源记录：Artificial Intelligence Underwriting Company (AIUC) · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_hash": "a4e12b147302c6f6901d01b95fc4ee0e708a0853225e3201cc5fb256752b681f",
           "provider": "manual_review",

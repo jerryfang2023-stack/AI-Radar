@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,25 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-30",
+    "first_disclosed_at": "2026-03-10",
     "latest_disclosed_at": "2026-06-30",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
+      "series_a",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1acda6c36aafa568",
+        "canonical_entity_id": "",
+        "name": "Eridu"
+      },
       {
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
@@ -169,6 +175,46 @@
         ]
       },
       {
+        "activity_id": "IA-8f75e9a4f752f914",
+        "funding_insight_id": "FI-a160ff15fc811200",
+        "event_ids": [
+          "EV-a447ffe54b998b9d"
+        ],
+        "company_entity_id": "EN-1acda6c36aafa568",
+        "company_canonical_entity_id": "",
+        "company_name": "Eridu",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d4642fdc4a2457c",
+            "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+            "source_title": "Eridu - 更快的 AI",
+            "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+            "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+            "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-501a5b0a085e4980",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
         "event_ids": [
@@ -252,6 +298,14 @@
         "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
       },
       {
+        "source_id": "FISRC-6d4642fdc4a2457c",
+        "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+        "source_title": "Eridu - 更快的 AI",
+        "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+        "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+        "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
+      },
+      {
         "source_id": "FISRC-8691a2e5c39e8b10",
         "source_url": "https://etched.com/",
         "source_title": "Etched",
@@ -286,8 +340,8 @@
           "source_id": "FISRC-b750a2ea9e7c7b76"
         },
         {
-          "description": "融资来源记录：Etched · 历史轮次未披露 · 战略投资。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8691a2e5c39e8b10"
+          "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
       "contacts": [],
@@ -309,12 +363,12 @@
           "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
         },
         {
-          "source_id": "FISRC-8691a2e5c39e8b10",
-          "source_url": "https://etched.com/",
-          "source_title": "Etched",
-          "source_content_hash": "44b6e972f66942d7",
-          "quote": "We've raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
-          "quote_hash": "bceda3c1a4c2afeeefd142cfd1436684fbf32619db78aca9e6f88566b450c624"
+          "source_id": "FISRC-6d4642fdc4a2457c",
+          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+          "source_title": "Eridu - 更快的 AI",
+          "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+          "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+          "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 24,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 21,
+    "current_round_count": 25,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 22,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,12 +74,13 @@
     "first_disclosed_at": "2025-09-09",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 2,
-      "participant": 22
+      "participant": 23
     },
     "round_codes": [
       "multi_round",
+      "other",
       "pre_ipo",
       "seed",
       "series_a",
@@ -192,6 +193,11 @@
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
         "name": "Upscale AI"
+      },
+      {
+        "entity_id": "EN-da2f0f03bc3a24f5",
+        "canonical_entity_id": "",
+        "name": "World Labs"
       },
       {
         "entity_id": "EN-6fcba5d96a4fadfd",
@@ -1103,6 +1109,46 @@
         ]
       },
       {
+        "activity_id": "IA-d5f762ca1d1f0d30",
+        "funding_insight_id": "FI-4a3b79f9329c86c7",
+        "event_ids": [
+          "EV-c503664bc5c24b10"
+        ],
+        "company_entity_id": "EN-da2f0f03bc3a24f5",
+        "company_canonical_entity_id": "",
+        "company_name": "World Labs",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "new funding",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f911788bc29402eb",
+            "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+            "source_title": "世界实验室宣布新融资",
+            "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+            "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+            "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-9be8907f4c4db402",
         "funding_insight_id": "FI-352a7cfb23508f3e",
         "event_ids": [
@@ -1291,6 +1337,38 @@
             "source_content_hash": "fd3765e774ce97c7",
             "quote": "The $250M round was led by Manhattan West, with participation from NVIDIA, EQT, Seven Seven Six, Goanna Capital, Cisco Investments and 5 other investors.",
             "quote_hash": "761137b367e8ae0a0906aa6778a8d1c54f60d8ff77c65a7782e8d83304dc8f01"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-90973193e2487708",
+        "funding_insight_id": "FI-efe78d5245c912b4",
+        "event_ids": [
+          "EV-a4b2d57251589ede"
+        ],
+        "company_entity_id": "EN-d2c4f1b5a5369864",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale, Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A-1轮新投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a6d3f9f9ce9ab2b",
+            "source_url": "https://fortune.com/2026/06/22/nvidia-upscale-ai-next-ciscoand-seligman-ventures-premji/",
+            "source_title": "Exclusive: Upscale AI wants to be the next Cisco—and it just raised another $190 million",
+            "source_content_hash": "541e8f85e65bdad2",
+            "quote": "New investors include Nvidia, Salesforce Ventures, Temasek, and Seligman Ventures",
+            "quote_hash": "2c24cad7757d567cadf9b860e80f9217a8bbfdd9f82b88710efb13de58b1f453"
           }
         ]
       }
@@ -1497,6 +1575,14 @@
         "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
       },
       {
+        "source_id": "FISRC-f911788bc29402eb",
+        "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+        "source_title": "世界实验室宣布新融资",
+        "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+        "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+        "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+      },
+      {
         "source_id": "FISRC-b58bb99dfec2e318",
         "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
         "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
@@ -1543,6 +1629,14 @@
         "source_content_hash": "fd3765e774ce97c7",
         "quote": "The $250M round was led by Manhattan West, with participation from NVIDIA, EQT, Seven Seven Six, Goanna Capital, Cisco Investments and 5 other investors.",
         "quote_hash": "761137b367e8ae0a0906aa6778a8d1c54f60d8ff77c65a7782e8d83304dc8f01"
+      },
+      {
+        "source_id": "FISRC-7a6d3f9f9ce9ab2b",
+        "source_url": "https://fortune.com/2026/06/22/nvidia-upscale-ai-next-ciscoand-seligman-ventures-premji/",
+        "source_title": "Exclusive: Upscale AI wants to be the next Cisco—and it just raised another $190 million",
+        "source_content_hash": "541e8f85e65bdad2",
+        "quote": "New investors include Nvidia, Salesforce Ventures, Temasek, and Seligman Ventures",
+        "quote_hash": "2c24cad7757d567cadf9b860e80f9217a8bbfdd9f82b88710efb13de58b1f453"
       }
     ],
     "public_profile": {

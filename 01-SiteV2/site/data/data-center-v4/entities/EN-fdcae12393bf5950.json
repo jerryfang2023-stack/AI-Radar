@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-fdcae12393bf5950",
+    "name": "Amber Semiconductor",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-5a5a6ed79c510661"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-03-10",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-5a5a6ed79c510661"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-5a5a6ed79c510661",
+        "dataDate": "2026-10-02",
+        "date": "2026-03-10",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Amber Semiconductor 完成 3000 万美元 C 轮融资，加速面向 AI 数据中心的下一代供电解决方案",
+        "displayTags": [],
+        "entityIds": [
+          "EN-057d11446d7249dc",
+          "EN-fdcae12393bf5950"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-aed9b27faaa37ff7",
+      "snapshotKey": "aed9b27faaa37ff7",
+      "snapshotId": "HWS-60bc650035f76db9",
+      "eventId": "EV-5a5a6ed79c510661",
+      "eventIds": [
+        "EV-5a5a6ed79c510661"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "DUBLIN",
+      "subject": "DUBLIN",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "30",
+          "unit": "$million",
+          "fact_ref": "HWF-e8bf889263cfce91"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-e8bf889263cfce91",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-03-10",
+          "subject_entity_id": "EN-057d11446d7249dc",
+          "subject_name": "DUBLIN",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "30",
+          "unit": "$million",
+          "source_quote": "DUBLIN, Calif., March 10, 2026 /PRNewswire/ -- Amber Semiconductor, a fabless semiconductor company pioneering the next generation power management for AI data centers, today announced the initial closing of its $30 million Series C financing round from new and existing investors.\nThe funding will be used to scale product development, expand customer engagements, and accelerate commercialization of Amber's breakthrough vertical power delivery solutions designed to power the rapidly growing AI infrastructure market.\nAmber Semiconductor is developing disruptive power architectures that fundamentally change the way power is delivered within datacenters to the AI processors. Amber's PowerTile™ technology allows backside placement on the server board, delivering power through a vertical path and reducing power distribution losses to the processor by more than 85%. As AI workloads continue to expand, Amber's solutions address critical challenges in power scalability, thermal management, and space constraints in modern AI data centers.\n\"AI data centers are entering a new era where power del",
+          "event_refs": [
+            "EV-5a5a6ed79c510661"
+          ],
+          "claim_ref": "CL-13b15ae72fc39c32",
+          "source_refs": [
+            "SA-4b381e11d2029914"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/amber-semiconductor-raises-30-million-series-c-financing-to-accelerate-next-generation-power-delivery-solutions-for-ai-data-centers-302708745.html",
+      "entityIds": [
+        "EN-057d11446d7249dc",
+        "EN-fdcae12393bf5950"
+      ]
+    }
+  ]
+}

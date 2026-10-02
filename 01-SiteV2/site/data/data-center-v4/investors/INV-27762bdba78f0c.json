@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-27762bdba78f0c",
+    "name": "财通资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-06-09",
+    "latest_disclosed_at": "2026-06-09",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d6d6dcf0bb132a3d",
+        "canonical_entity_id": "",
+        "name": "玩点旅行"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-73570e3126d6fd66",
+        "funding_insight_id": "FI-7c5fc042f5fa0ddc",
+        "event_ids": [
+          "EV-622f5d9407564ae3"
+        ],
+        "company_entity_id": "EN-d6d6dcf0bb132a3d",
+        "company_canonical_entity_id": "",
+        "company_name": "玩点旅行",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超1亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-06-09",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea8e7a4669a91fa",
+            "source_url": "https://news.pedaily.cn/202606/565039.shtml",
+            "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
+            "source_content_hash": "5d769e59ad9aaef2efe4222e8060570fc740fece3a4437d0b595a90e06e1ebe0",
+            "quote": "本轮融资由敦鸿资产领投，财通资本、头头是道、源铄资本跟投，同时DeepSeek部分股东同步加码增持。",
+            "quote_hash": "5950881f93b4966d538346951289de370c247dc5049f9bf5ad068426b2fc65a6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-05f0927b2c521ca6",
+        "funding_insight_id": "FI-169caf1c2721c1af",
+        "event_ids": [
+          "EV-bec127224b1f1aca"
+        ],
+        "company_entity_id": "EN-d6d6dcf0bb132a3d",
+        "company_canonical_entity_id": "",
+        "company_name": "玩点旅行",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea8e7a4669a91fa",
+            "source_url": "https://news.pedaily.cn/202606/565039.shtml",
+            "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
+            "source_content_hash": "5d769e59ad9aaef2",
+            "quote": "本轮融资由敦鸿资产领投，财通资本、头头是道、源铄资本跟投",
+            "quote_hash": "ee23ed765b605a1f10c90e925f1a06788333750f692d6b0bdbea07907675b4d9"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-eea8e7a4669a91fa",
+        "source_url": "https://news.pedaily.cn/202606/565039.shtml",
+        "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
+        "source_content_hash": "5d769e59ad9aaef2efe4222e8060570fc740fece3a4437d0b595a90e06e1ebe0",
+        "quote": "本轮融资由敦鸿资产领投，财通资本、头头是道、源铄资本跟投，同时DeepSeek部分股东同步加码增持。",
+        "quote_hash": "5950881f93b4966d538346951289de370c247dc5049f9bf5ad068426b2fc65a6"
+      },
+      {
+        "source_id": "FISRC-eea8e7a4669a91fa",
+        "source_url": "https://news.pedaily.cn/202606/565039.shtml",
+        "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
+        "source_content_hash": "5d769e59ad9aaef2",
+        "quote": "本轮融资由敦鸿资产领投，财通资本、头头是道、源铄资本跟投",
+        "quote_hash": "ee23ed765b605a1f10c90e925f1a06788333750f692d6b0bdbea07907675b4d9"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "财通资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：玩点旅行 · Pre-A轮 · 2026-06-09 · 本轮参投 · 超1亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eea8e7a4669a91fa"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-eea8e7a4669a91fa",
+          "source_url": "https://news.pedaily.cn/202606/565039.shtml",
+          "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
+          "source_content_hash": "5d769e59ad9aaef2efe4222e8060570fc740fece3a4437d0b595a90e06e1ebe0",
+          "quote": "本轮融资由敦鸿资产领投，财通资本、头头是道、源铄资本跟投，同时DeepSeek部分股东同步加码增持。",
+          "quote_hash": "5950881f93b4966d538346951289de370c247dc5049f9bf5ad068426b2fc65a6"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[1].role": {
+          "text": "Pre-A轮跟投",
+          "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

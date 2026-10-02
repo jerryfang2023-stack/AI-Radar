@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -73,6 +73,7 @@
       "EV-47f16317cc2d62e2",
       "EV-88f346991085a2f3",
       "EV-987cb2e5e20f79ce",
+      "EV-a6696955767a209e",
       "EV-00514c4ffc2e3cd3",
       "EV-d3054a8a2b62a503",
       "EV-87432dbb99cd6033",
@@ -83,6 +84,8 @@
       "EV-acaf06b262d9c3db",
       "EV-27b69ea604475b72",
       "EV-8ea9e79f7edcb94f",
+      "EV-d96123480b112099",
+      "EV-d778b532e1d6e74f",
       "EV-794f0a86004da0c9",
       "EV-df37e9341b5c7f04",
       "EV-da9bb2c98c1ce8cd",
@@ -153,8 +156,11 @@
       "fundingAcquisition": [
         "EV-eb2796fc4bcc5ac0",
         "EV-609da9983f836426",
+        "EV-a6696955767a209e",
         "EV-5e847cd78e657cb5",
         "EV-8ea9e79f7edcb94f",
+        "EV-d96123480b112099",
+        "EV-d778b532e1d6e74f",
         "EV-4c9c7ab2dded69b3",
         "EV-47f16317cc2d62e2",
         "EV-88f346991085a2f3",
@@ -275,6 +281,35 @@
         ]
       },
       {
+        "id": "EV-a6696955767a209e",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OJO完成近亿元天使轮融资，打造设计Agent Team Workspace",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-3c52384d8749fcb4"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-3c52384d8749fcb4",
+          "EN-5388bc10736a0eff",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
         "id": "EV-5e847cd78e657cb5",
         "dataDate": "2026-10-02",
         "date": "2026-07-13",
@@ -320,6 +355,88 @@
         "entityIds": [
           "EN-6f7ac1823da81d2e",
           "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
+        "id": "EV-d96123480b112099",
+        "dataDate": "2026-10-02",
+        "date": "2026-05-11",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "独家｜ 95后港中文博士融资数百万美金，打造全球首个AI Native家庭娱乐入口_腾讯新闻",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-f388a6cbaebeec5f"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-82cb38cf029dbc78",
+          "EN-f388a6cbaebeec5f",
+          "EN-9c8ae69b84f21a2e"
+        ]
+      },
+      {
+        "id": "EV-d778b532e1d6e74f",
+        "dataDate": "2026-10-02",
+        "date": "2026-04-22",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "教育大模型公司级数AI完成数千万元天使轮融资与战略合作_腾讯新闻",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-713589016b2361a3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-713589016b2361a3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "multimodal",
+            "name": "多模态",
+            "entityIds": [
+              "EN-713589016b2361a3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-69e05b7071feedc5",
+          "EN-9c8ae69b84f21a2e",
+          "EN-713589016b2361a3",
+          "EN-a89151ba4b5ac0f2",
+          "EN-e9fc4f156e36f6aa"
         ]
       },
       {
@@ -2522,6 +2639,7 @@
         "EV-acdeebead5324344",
         "EV-cded77b1de2db61a",
         "EV-18e3fa9303bdba4a",
+        "EV-3d5daffd1cb9521b",
         "EV-be76a1e5ed2b6cf5",
         "EV-0121f0a9e9a975ec",
         "EV-5ac2ba824c6d818c",
@@ -2671,7 +2789,7 @@
         "EN-2ba325ce6f8e3dc9",
         "EN-e71558a14e7ed6ab"
       ],
-      "firstSeen": "2026-03-12",
+      "firstSeen": "2026-01-28",
       "lastSeen": "2026-10-02"
     },
     {
@@ -2852,13 +2970,18 @@
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
         "EV-89ec502a1340079a",
+        "EV-d3c5eb69eb9d397a",
+        "EV-0e854ee566f6d0b9",
+        "EV-bc166d0f16140940",
         "EV-ab839326ca9597d8",
         "EV-6a5a3f316200d1e3",
         "EV-77f9a1a9bcf8cc65",
         "EV-95385e7d45e69784",
+        "EV-beee465b894317c7",
         "EV-1744d0e71176f9a1",
         "EV-bdcb22b1a53358f5",
         "EV-50b5c4f93ead145d",
+        "EV-bec127224b1f1aca",
         "EV-bf8ce460c05b9ff0",
         "EV-c1295b8f58024ff6",
         "EV-83728e3b6c7736ce",
@@ -2866,6 +2989,7 @@
         "EV-673637ebe2ac2f2d",
         "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
+        "EV-f36f5f7b24b2bfde",
         "EV-9ed6a759555d7e77",
         "EV-13e08bc37724e276",
         "EV-53253b5e23970958",
@@ -2973,8 +3097,10 @@
         "EV-2d0d165e866cd770",
         "EV-4a6cbe937d1b9701",
         "EV-ac5e33e067906a6d",
+        "EV-ed73cd2c438a470d",
         "EV-acdeebead5324344",
         "EV-4ef09c71be4c84cb",
+        "EV-63de2b6408efd796",
         "EV-6de81d4ca248ff31",
         "EV-3c408fe984c73089",
         "EV-e70b6a1287dcaa59",
@@ -3492,13 +3618,17 @@
         "EN-55c37c5c0b75471a",
         "EN-b0a61df9bfe99f72",
         "EN-071f3eca285403f1",
+        "EN-5ba042c14b39398d",
+        "EN-4b8de799d3cb1255",
         "EN-05bb7905b99d8025",
         "EN-96c842ee0d60fa41",
         "EN-b01ef9255dcc0caa",
         "EN-a1b7a0cc37ed257d",
+        "EN-6411d31f2aefa743",
         "EN-01b4537c6e0a2da7",
         "EN-67e8c106650aa683",
         "EN-2dc010636b9dce91",
+        "EN-d6d6dcf0bb132a3d",
         "EN-8526299f9ecc5fac",
         "EN-249fdefbb63fa7b3",
         "EN-240389f4b730bad4",
@@ -3506,6 +3636,7 @@
         "EN-18131bed4bcc2f1a",
         "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
+        "EN-d5dee8daa2eb5cc5",
         "EN-2be663431f007250",
         "EN-77a82bb9aafc81d9",
         "EN-65819e198c32566a",
@@ -3601,8 +3732,10 @@
         "EN-47afad612b1f9cc8",
         "EN-6c7cceb7ce4d4e6a",
         "EN-a675d46aba3c7e48",
+        "EN-4125bf4687377f47",
         "EN-5b3767eb23d5e4ed",
         "EN-470be66761dfc2e9",
+        "EN-dfc0fdff7af68ed2",
         "EN-b30b83d324e678e4",
         "EN-a3b8fbb2200a105a",
         "EN-5c443a92518833f1",
@@ -3960,12 +4093,15 @@
         "EV-d15929b5f2859e29",
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
+        "EV-d3c5eb69eb9d397a",
         "EV-e11382111a5b99f6",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
+        "EV-a1addb827a7ac17c",
         "EV-b231e1a452a7c74a",
         "EV-b73d931bd6adb78d",
         "EV-4f56483024dd4e84",
+        "EV-beee465b894317c7",
         "EV-bdcb22b1a53358f5",
         "EV-3f9d420719641eda",
         "EV-f5dd6dec49ad83aa",
@@ -3988,7 +4124,6 @@
         "EV-44cd5e03d30c85b3",
         "EV-f6a72cddbda748b3",
         "EV-6f092cfc7a064d64",
-        "EV-e084947e3f9e0667",
         "EV-64fb6d791e19d10a",
         "EV-12f331aaf7d4cca6",
         "EV-71d7d8bbaa623228",
@@ -4042,8 +4177,10 @@
         "EV-81b7cd5d6a37912c",
         "EV-c5d7d88d1aef8edb",
         "EV-7d75469a0d1ef8fa",
+        "EV-d778b532e1d6e74f",
         "EV-a9095d1178664a0b",
         "EV-64ee295aa85c2f65",
+        "EV-ed73cd2c438a470d",
         "EV-5575555340c04c5a",
         "EV-314db5cbf5010d41",
         "EV-9832526435c1695e",
@@ -4054,12 +4191,15 @@
         "EV-a592606de9958bbc",
         "EV-4ef09c71be4c84cb",
         "EV-565b6c1b10b3cf83",
+        "EV-2edec0302b3e0626",
         "EV-535c2f4fb851332d",
         "EV-622ebdad1e1fad2d",
         "EV-bf35f4d7b6193a47",
         "EV-3c408fe984c73089",
         "EV-794f0a86004da0c9",
         "EV-df37e9341b5c7f04",
+        "EV-ee9a4433b4e7715e",
+        "EV-4cc192a29a3099e8",
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
@@ -4348,9 +4488,11 @@
         "EN-122ae8e9e5fb4660",
         "EN-336ab1deb42d6284",
         "EN-be9d587defa1f0c0",
+        "EN-2bd806c97f0e00af",
         "EN-8d4321d936320802",
         "EN-7dd2a89f628d7525",
         "EN-586466805b277098",
+        "EN-6411d31f2aefa743",
         "EN-67e8c106650aa683",
         "EN-2f9cb7cda5222087",
         "EN-c70eca6b0f88f44d",
@@ -4411,8 +4553,10 @@
         "EN-d3531cc88f7ce911",
         "EN-09b680b7f0755af5",
         "EN-0369c8fcda657a43",
+        "EN-713589016b2361a3",
         "EN-ad27d4918a2a9660",
         "EN-7a8ce298d662e4cc",
+        "EN-4125bf4687377f47",
         "EN-9b21c9bf3305c0d6",
         "EN-3309b3b14807f39a",
         "EN-a43f157d208b2a63",
@@ -4422,9 +4566,12 @@
         "EN-168d2cac8014ba30",
         "EN-470be66761dfc2e9",
         "EN-90596b71813a2ee2",
+        "EN-15ea2fa417bd8597",
         "EN-a3b8fbb2200a105a",
         "EN-2c348893efb2316e",
         "EN-f0d59425e4c32abb",
+        "EN-586e52112859378f",
+        "EN-bac6d661867571f7",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
         "EN-86b7b29d698963ef",
@@ -5093,6 +5240,68 @@
         "EN-bbdefa2950f49882",
         "EN-b81c8201acfc7639",
         "EN-047364b9be67f665",
+        "EN-9c8ae69b84f21a2e"
+      ]
+    },
+    {
+      "id": "HWC-8118276eaacba114",
+      "snapshotKey": "8118276eaacba114",
+      "snapshotId": "HWS-a8e6fbdd19128524",
+      "eventId": "EV-a6696955767a209e",
+      "eventIds": [
+        "EV-a6696955767a209e"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "OJO",
+      "subject": "OJO",
+      "productNames": [],
+      "hardwareType": "robot",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "50",
+          "unit": "万",
+          "fact_ref": "HWF-c5bfeaa9ac2299d4"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-c5bfeaa9ac2299d4",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-25",
+          "subject_entity_id": "EN-3c52384d8749fcb4",
+          "subject_name": "OJO",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "robot",
+          "metric_value": "50",
+          "unit": "万",
+          "source_quote": "OJO是一个从目标出发、由专业Agent协同完成产品交付的“goal-to-team-to-result”AI设计平台。投资界（ID：pedaily2012）8月25日消息，近日，AI 设计Agent Team平台 OJO 宣布完成近亿元天使轮融资，本轮融资由顺为资本和联想创投联合投资，高鹄资本担任独家财务顾问。据悉，OJO本轮融资资金将主要用于核心产品开发、Agent与Skills能力建设、全球市场拓展和核心人才引进。\nOJO 由前剪映国内业务负责人张琪智（Kiki）创立，致力于打造全球首 个设计领域Agent Team开放平台。公司从数字产品设计切入，通过可组合的Agent Teams与Skills，完成创意、交互、视觉到交付的全过程，让非设计专业人群也能交付高审美、高质量、可投产的成果。\n完成产品Demo和邀请制内测后，OJO于北京时间8月20日正式在海外上线，并迅速迎来首轮爆发：官方内容在X发布24小时内获得超过50万次观看，并登上X News热搜，吸引超40位科技领域头部创作者转发互动；上线48小时内，OJO新增用户过万，并实现超出预期的付费验证。海外发布后，OJO已被多位AI创作者用于生成Fintech落地页、3D动态网站、技术出版物页面，甚至可直接运行的家庭机器人控制App。用户反馈普遍将OJO的价值指向Coding Agent尚未覆盖的关键一环：Coding到可交付产品之间的设计判断和产品完成度。\n公司团队成员以字节跳动、腾讯等头部大厂的高绩效/高潜人才为主，具备AI应用全链路研发、产品设计及全球GTM能力。\nOJO要打造的是一个从目标出发、由专业Agent协同完成产品交付的“goal-to-team-to-result”AI设计平台。用户提出目标后，平台中的“设计总监Agent”会理解产品意图、拆解任务，并组织不同专业Agent与Skills协同推进，将一个模糊想法逐步转化为清晰的产品策略和可交付的设计结果。通过让Agent Team承接过去依赖专业团队分工完成的工作，OJO让非专业用户也能高效完成复杂、高质量的设计任务。\n“设计的平权，不应该只意味着人人都能做设计，而应该意味着人人都能做好设计。”Kiki表示，“模型的能力上限已经足够高，应用层真正需要解决的，是如何理解用户目标、调度专业能力，并把模型上限转化为稳定、高质量的交付结果。”\n在OJO中，产品意图的理解与拆解发生在设计生成之前。Agent Team会先完成必要的研究与需求分析，形成产品策略和整体结构，再逐步推进视觉设计与交互原型。过程中产生的策略、PRD、页面结构、UI和可点击原型",
+          "event_refs": [
+            "EV-a6696955767a209e"
+          ],
+          "claim_ref": "CL-c5876977271caa7c",
+          "source_refs": [
+            "SA-b509326225d242ac"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://i.ifeng.com/c/8vsFiyiShVs",
+      "entityIds": [
+        "EN-3c52384d8749fcb4",
+        "EN-5388bc10736a0eff",
         "EN-9c8ae69b84f21a2e"
       ]
     },

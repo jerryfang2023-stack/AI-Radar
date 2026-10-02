@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-01",
+    "first_disclosed_at": "2026-01-14",
     "latest_disclosed_at": "2026-09-29",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_c"
     ],
     "portfolio_companies": [
       {
@@ -87,6 +88,11 @@
         "entity_id": "EN-5f5ed85925074c92",
         "canonical_entity_id": "",
         "name": "Foundational Industries"
+      },
+      {
+        "entity_id": "EN-185ea241778d39c7",
+        "canonical_entity_id": "",
+        "name": "Quadric"
       }
     ],
     "activities": [
@@ -169,6 +175,46 @@
             "quote_hash": "2ce0e9be3cf5e9aed5bc990ee0d49022addc2585f7073b8da73d3d987b45a249"
           }
         ]
+      },
+      {
+        "activity_id": "IA-368c8de7a4f40c16",
+        "funding_insight_id": "FI-ae8031b7eb15f5c7",
+        "event_ids": [
+          "EV-42335b1bae58c172"
+        ],
+        "company_entity_id": "EN-185ea241778d39c7",
+        "company_canonical_entity_id": "",
+        "company_name": "Quadric",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$30M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b3973965c733b20b",
+            "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+            "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+            "source_content_hash": "c8cfa51187a025ba",
+            "quote": "Offline Ventures, co-founded by Facebook Platform creator Dave Morin and former Apple executive James Higa, joined as a new investor.",
+            "quote_hash": "252f152b9613e71ef595c5a646754ae9a163f1fcbce06ba06cffd2d8f0246285"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -187,6 +233,14 @@
         "source_content_hash": "ad03bbee3088b0fc",
         "quote": "with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures participating.",
         "quote_hash": "2ce0e9be3cf5e9aed5bc990ee0d49022addc2585f7073b8da73d3d987b45a249"
+      },
+      {
+        "source_id": "FISRC-b3973965c733b20b",
+        "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+        "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+        "source_content_hash": "c8cfa51187a025ba",
+        "quote": "Offline Ventures, co-founded by Facebook Platform creator Dave Morin and former Apple executive James Higa, joined as a new investor.",
+        "quote_hash": "252f152b9613e71ef595c5a646754ae9a163f1fcbce06ba06cffd2d8f0246285"
       }
     ],
     "public_profile": {
@@ -205,6 +259,10 @@
         {
           "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e6ee0cd472bfb792"
+        },
+        {
+          "description": "融资来源记录：Quadric · C轮 · 2026-01-14 · 本轮参投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b3973965c733b20b"
         }
       ],
       "contacts": [],
@@ -224,6 +282,14 @@
           "source_content_hash": "ad03bbee3088b0fc",
           "quote": "with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures participating.",
           "quote_hash": "2ce0e9be3cf5e9aed5bc990ee0d49022addc2585f7073b8da73d3d987b45a249"
+        },
+        {
+          "source_id": "FISRC-b3973965c733b20b",
+          "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+          "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+          "source_content_hash": "c8cfa51187a025ba",
+          "quote": "Offline Ventures, co-founded by Facebook Platform creator Dave Morin and former Apple executive James Higa, joined as a new investor.",
+          "quote_hash": "252f152b9613e71ef595c5a646754ae9a163f1fcbce06ba06cffd2d8f0246285"
         }
       ],
       "last_verified_at": "2026-09-25"

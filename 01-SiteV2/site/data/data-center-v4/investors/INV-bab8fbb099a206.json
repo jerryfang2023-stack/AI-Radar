@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,24 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-05-28",
+    "latest_disclosed_at": "2026-08-25",
     "role_counts": {
       "historical_or_ambiguous": 4,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
-      "series_h"
+      "series_h",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -86,12 +87,57 @@
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
       },
       {
+        "entity_id": "EN-2bd806c97f0e00af",
+        "canonical_entity_id": "",
+        "name": "Alice"
+      },
+      {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-fab01965d7dcf951",
+        "funding_insight_id": "FI-d80c637f106db95c",
+        "event_ids": [
+          "EV-a1addb827a7ac17c"
+        ],
+        "company_entity_id": "EN-2bd806c97f0e00af",
+        "company_canonical_entity_id": "",
+        "company_name": "Alice",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$140 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 140000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.4 亿美元"
+        },
+        "announced_at": "2026-08-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b1ac109014789f1",
+            "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
+            "source_title": "Alice 融资1.4亿美元、估值7亿至8亿美元，押注AI需要新的安全层",
+            "source_content_hash": "1461487aa4bbec3d992cfd300e18436878da63169f1b85010a863b32b108ab3c",
+            "quote": "Alice has raised $140 million in a funding round led by Apax Digital, with participation from new and existing investors including Samsung, SentinelOne, Maj Invest, MoreTech, Phoenix Insurance, Norwest, CRV, Vintage, Grove and Highland Europe.",
+            "quote_hash": "7067b0f2a0ffecb0c09ed46fcb3bc2d25cf3cf0a4480de2e3ba2c23de4bb1a6c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-7021d856e00b48a1",
         "funding_insight_id": "FI-ef9bfb1255d96618",
@@ -304,6 +350,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-5b1ac109014789f1",
+        "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
+        "source_title": "Alice 融资1.4亿美元、估值7亿至8亿美元，押注AI需要新的安全层",
+        "source_content_hash": "1461487aa4bbec3d992cfd300e18436878da63169f1b85010a863b32b108ab3c",
+        "quote": "Alice has raised $140 million in a funding round led by Apax Digital, with participation from new and existing investors including Samsung, SentinelOne, Maj Invest, MoreTech, Phoenix Insurance, Norwest, CRV, Vintage, Grove and Highland Europe.",
+        "quote_hash": "7067b0f2a0ffecb0c09ed46fcb3bc2d25cf3cf0a4480de2e3ba2c23de4bb1a6c"
+      },
+      {
         "source_id": "FISRC-b5e22ae086a6b353",
         "source_url": "https://www.anthropic.com/news/series-h",
         "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
@@ -396,16 +450,16 @@
           "source_id": "samsung_next_fund"
         },
         {
+          "description": "融资来源记录：Alice · 轮次未披露 · 2026-08-25 · 本轮参投 · $140 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5b1ac109014789f1"
+        },
+        {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
         },
         {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c35525e379488bf"
-        },
-        {
-          "description": "融资来源记录：Groq · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-28e142eb564f6762"
         }
       ],
       "contacts": [
@@ -449,6 +503,14 @@
           "quote_hash": "363140c23f9ab1c80666d7d454d8b918e53e223cfdceda53efad231608efb4d2"
         },
         {
+          "source_id": "FISRC-5b1ac109014789f1",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
+          "source_title": "Alice 融资1.4亿美元、估值7亿至8亿美元，押注AI需要新的安全层",
+          "source_content_hash": "1461487aa4bbec3d992cfd300e18436878da63169f1b85010a863b32b108ab3c",
+          "quote": "Alice has raised $140 million in a funding round led by Apax Digital, with participation from new and existing investors including Samsung, SentinelOne, Maj Invest, MoreTech, Phoenix Insurance, Norwest, CRV, Vintage, Grove and Highland Europe.",
+          "quote_hash": "7067b0f2a0ffecb0c09ed46fcb3bc2d25cf3cf0a4480de2e3ba2c23de4bb1a6c"
+        },
+        {
           "source_id": "FISRC-b5e22ae086a6b353",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
@@ -463,14 +525,6 @@
           "source_content_hash": "adc0cc9ffe3c9dd0",
           "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
           "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
-        },
-        {
-          "source_id": "FISRC-28e142eb564f6762",
-          "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
-          "source_title": "Groq obtains $750m in funding for AI inference technology",
-          "source_content_hash": "b6f5ca4d5c31cfb3",
-          "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
-          "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -488,7 +542,7 @@
           "translated_at": "2026-09-28T00:55:07.446Z",
           "status": "translated"
         },
-        "public_profile.track_record[2].description": {
+        "public_profile.track_record[3].description": {
           "text": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_hash": "3305eafdecad1b5c098dece38ee38e11a0de8f06f76e31c0957702ad385a17e2",
           "provider": "deepseek",

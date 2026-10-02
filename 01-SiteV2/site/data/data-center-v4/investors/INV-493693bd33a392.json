@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 2,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
     "first_disclosed_at": "2026-04-16",
-    "latest_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
-      "historical_or_ambiguous": 3,
-      "participant": 2
+      "historical_or_ambiguous": 4,
+      "participant": 4
     },
     "round_codes": [
-      "pre_series_a"
+      "multi_round",
+      "pre_series_a",
+      "series_a_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-4b8de799d3cb1255",
+        "canonical_entity_id": "",
+        "name": "蜂巢互联"
+      },
       {
         "entity_id": "EN-7f505bc9744206fd",
         "canonical_entity_id": "EN-7f505bc9744206fd",
@@ -88,9 +95,54 @@
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
         "name": "它石智航"
+      },
+      {
+        "entity_id": "EN-7753b0382f29e6a8",
+        "canonical_entity_id": "",
+        "name": "耀速科技"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-e3069269d8186517",
+        "funding_insight_id": "FI-f3eb163aa24caf8a",
+        "event_ids": [
+          "EV-bc166d0f16140940"
+        ],
+        "company_entity_id": "EN-4b8de799d3cb1255",
+        "company_canonical_entity_id": "",
+        "company_name": "蜂巢互联",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "12亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "12 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d442164db5f81db",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+            "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+            "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+            "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+            "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+          }
+        ]
+      },
       {
         "activity_id": "IA-bdb87f8cf7348f00",
         "funding_insight_id": "FI-3923d1a4fc2b8a40",
@@ -132,6 +184,46 @@
         ]
       },
       {
+        "activity_id": "IA-18ec593432f5c8ea",
+        "funding_insight_id": "FI-ec899db298fe1efb",
+        "event_ids": [
+          "EV-d99be21ac665f1f9"
+        ],
+        "company_entity_id": "EN-7753b0382f29e6a8",
+        "company_canonical_entity_id": "",
+        "company_name": "耀速科技",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "近2亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-06-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-137a48f19e1119b4",
+            "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+            "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+            "source_content_hash": "4bba0dc5a705af7dff42b2ed2c3c95952ac77f1e01bf26b97db868814cefef84",
+            "quote": "本轮融资由国方创投、清松资本、广发信德、东方富海、沄柏资本共同参与，老股东雅亿资本持续加码支持。",
+            "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-3e4b6d9a9cb63b4f",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
@@ -169,6 +261,38 @@
             "source_content_hash": "0f321e5ffc10ea03",
             "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
             "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8635bd0908c822c5",
+        "funding_insight_id": "FI-8e7436171d45ed58",
+        "event_ids": [
+          "EV-21529e29a0eedf85"
+        ],
+        "company_entity_id": "EN-7753b0382f29e6a8",
+        "company_canonical_entity_id": "",
+        "company_name": "耀速科技（Xellar Biosystems）",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-137a48f19e1119b4",
+            "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+            "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+            "source_content_hash": "4bba0dc5a705af7d",
+            "quote": "本轮融资由国方创投、清松资本、广发信德、东方富海、沄柏资本共同参与，老股东雅亿资本持续加码支持。",
+            "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
           }
         ]
       },
@@ -272,12 +396,28 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6d442164db5f81db",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+        "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+        "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+        "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+        "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+      },
+      {
         "source_id": "FISRC-760e793448781182",
         "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
         "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
         "source_content_hash": "8b2b4166d5cfc440ad705c54d27b2283f53fb500afe8c3300ba824137632fc87",
         "quote": "本轮融资投资方阵容多元，产业资本与专业创投联合入局，包括张江高科、壁仞科技、东方富海、中科创星、成为资本、石溪资本、上海天使会、孚腾资本、元禾璞华、华山资本十家机构",
         "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
+      },
+      {
+        "source_id": "FISRC-137a48f19e1119b4",
+        "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+        "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+        "source_content_hash": "4bba0dc5a705af7d",
+        "quote": "本轮融资由国方创投、清松资本、广发信德、东方富海、沄柏资本共同参与，老股东雅亿资本持续加码支持。",
+        "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
       },
       {
         "source_id": "FISRC-b4d6b7523ee32ad7",
@@ -373,16 +513,16 @@
           "source_id": "ofc_partner_overview"
         },
         {
+          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d442164db5f81db"
+        },
+        {
           "description": "融资来源记录：灵睿智芯 · Pre-A轮 · 2026-07-13 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-760e793448781182"
         },
         {
-          "description": "融资来源记录：它石智航 · Pre-A轮 · 2026-04-16 · 本轮参投 · 超4.5亿美元（约30亿元）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b4d6b7523ee32ad7"
-        },
-        {
-          "description": "融资来源记录：奕行智能 · 历史轮次未披露 · Pre-A轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-afa0818eda6a6b72"
+          "description": "融资来源记录：耀速科技 · A+轮 · 2026-06-30 · 本轮参投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-137a48f19e1119b4"
         }
       ],
       "contacts": [
@@ -442,6 +582,14 @@
           "quote_hash": "0239291222ce6bf4a89d5cedb9ee2265f4eb12d85c23f5e9ab7aa2197236b8da"
         },
         {
+          "source_id": "FISRC-6d442164db5f81db",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+          "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+          "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+        },
+        {
           "source_id": "FISRC-760e793448781182",
           "source_url": "https://www.dramx.com/News/IC/20260713-40772.html",
           "source_title": "灵睿智芯完成数亿元Pre-A轮融资，推进高端RISC-V内核P100流片落地",
@@ -450,20 +598,12 @@
           "quote_hash": "ad4cdec7019f2399d9eeb7f30e95e9276f95aea304853b693997f7d42cec5400"
         },
         {
-          "source_id": "FISRC-b4d6b7523ee32ad7",
-          "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-          "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-          "source_content_hash": "0f321e5ffc10ea03",
-          "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
-          "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
-        },
-        {
-          "source_id": "FISRC-afa0818eda6a6b72",
-          "source_url": "https://news.pedaily.cn/202210/502518.shtml",
-          "source_title": "首发 | 「奕行智能」完成超3亿Pre-A轮融资，广汽资本、东方富海联合领投_投资界",
-          "source_content_hash": "502650dfb353872d",
-          "quote": "本轮融资由 广汽资本 领投、 东方富海 联合领投",
-          "quote_hash": "2f57307a3f960d3b9eb292e180b55fc17d3a40bd876664581ad741cd3f95ad11"
+          "source_id": "FISRC-137a48f19e1119b4",
+          "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+          "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+          "source_content_hash": "4bba0dc5a705af7dff42b2ed2c3c95952ac77f1e01bf26b97db868814cefef84",
+          "quote": "本轮融资由国方创投、清松资本、广发信德、东方富海、沄柏资本共同参与，老股东雅亿资本持续加码支持。",
+          "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
         }
       ],
       "last_verified_at": "2026-09-27"

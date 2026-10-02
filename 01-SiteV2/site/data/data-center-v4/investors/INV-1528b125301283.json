@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 24,
+    "current_round_count": 25,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 19,
+    "portfolio_company_count": 20,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,7 +76,7 @@
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 5,
-      "lead": 9,
+      "lead": 10,
       "participant": 14
     },
     "round_codes": [
@@ -166,6 +166,11 @@
         "entity_id": "EN-0fdf674dcd7e8566",
         "canonical_entity_id": "",
         "name": "Reactor"
+      },
+      {
+        "entity_id": "EN-586e52112859378f",
+        "canonical_entity_id": "",
+        "name": "Ricursive Intelligence"
       },
       {
         "entity_id": "EN-7331374f7091259f",
@@ -1085,6 +1090,46 @@
         ]
       },
       {
+        "activity_id": "IA-32b1d402fba71bb7",
+        "funding_insight_id": "FI-30d30c4d482b3f6f",
+        "event_ids": [
+          "EV-ee9a4433b4e7715e"
+        ],
+        "company_entity_id": "EN-586e52112859378f",
+        "company_canonical_entity_id": "",
+        "company_name": "Ricursive Intelligence",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7faa441242e94444",
+            "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+            "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+            "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+            "quote": "a $300 million Series A funding round led by Lightspeed Venture Partners at a $4 billion post-money valuation",
+            "quote_hash": "6c090239399e3c3fbc0707608cff01e40c79643ff11f1ed3598293d56758912b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-96a7321aeaae5470",
         "funding_insight_id": "FI-0312b291d6672487",
         "event_ids": [
@@ -1509,6 +1554,14 @@
         "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
         "quote": "New investors Lightspeed Venture Partners, Evantic Capital, BOND are joining the round to help the company go deeper & quicker.",
         "quote_hash": "13ff7eb47a2d19dad92780954659859c4881c8d955857e73b2d922a07d90ed99"
+      },
+      {
+        "source_id": "FISRC-7faa441242e94444",
+        "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+        "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+        "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+        "quote": "a $300 million Series A funding round led by Lightspeed Venture Partners at a $4 billion post-money valuation",
+        "quote_hash": "6c090239399e3c3fbc0707608cff01e40c79643ff11f1ed3598293d56758912b"
       },
       {
         "source_id": "FISRC-c5289e6345684ca4",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,22 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-26",
+    "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-08-23",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
@@ -88,6 +89,11 @@
         "entity_id": "EN-7f871cbf905f6e0c",
         "canonical_entity_id": "EN-7f871cbf905f6e0c",
         "name": "OpenRouter"
+      },
+      {
+        "entity_id": "EN-586e52112859378f",
+        "canonical_entity_id": "",
+        "name": "Ricursive Intelligence"
       }
     ],
     "activities": [
@@ -170,6 +176,46 @@
             "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
           }
         ]
+      },
+      {
+        "activity_id": "IA-ceed610de4bd312d",
+        "funding_insight_id": "FI-30d30c4d482b3f6f",
+        "event_ids": [
+          "EV-ee9a4433b4e7715e"
+        ],
+        "company_entity_id": "EN-586e52112859378f",
+        "company_canonical_entity_id": "",
+        "company_name": "Ricursive Intelligence",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7faa441242e94444",
+            "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+            "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+            "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+            "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+            "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -188,6 +234,14 @@
         "source_content_hash": "c1afd6dfb4036688",
         "quote": "The round also drew checks from NVentures (NVIDIA's venture arm)",
         "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
+      },
+      {
+        "source_id": "FISRC-7faa441242e94444",
+        "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+        "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+        "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+        "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+        "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
       }
     ],
     "public_profile": {
@@ -206,6 +260,10 @@
         {
           "description": "融资来源记录：OpenRouter · B轮 · 2026-05-26 · 本轮参投 · $113 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d1b42068c59f51d1"
+        },
+        {
+          "description": "融资来源记录：Ricursive Intelligence · A轮 · 2026-01-26 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7faa441242e94444"
         }
       ],
       "contacts": [],
@@ -225,6 +283,14 @@
           "source_content_hash": "c1afd6dfb4036688",
           "quote": "The round also drew checks from NVentures (NVIDIA's venture arm)",
           "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
+        },
+        {
+          "source_id": "FISRC-7faa441242e94444",
+          "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+          "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+          "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+          "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+          "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
         }
       ],
       "last_verified_at": "2026-09-25"

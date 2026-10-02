@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,6 +64,7 @@
     ],
     "eventIds": [
       "EV-4c5dc2fc6d805b3f",
+      "EV-f36f5f7b24b2bfde",
       "EV-ccbf97fdf4dc11d0",
       "EV-2069f6a931b8c9d6",
       "EV-02882e6f5e1902c6",
@@ -115,6 +116,10 @@
       "EV-b85139b8fba1a5c5",
       "EV-c4303801ea8c54dc",
       "EV-0b6cfbf67ba2da31",
+      "EV-63de2b6408efd796",
+      "EV-42dbdf8a9207c0a8",
+      "EV-3d5daffd1cb9521b",
+      "EV-a4b2d57251589ede",
       "EV-8b0f056571d68269",
       "EV-4b545e310ded2baa",
       "EV-b4eb99a878be9bb2",
@@ -216,6 +221,11 @@
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-4c5dc2fc6d805b3f",
+        "EV-f36f5f7b24b2bfde",
+        "EV-63de2b6408efd796",
+        "EV-42dbdf8a9207c0a8",
+        "EV-3d5daffd1cb9521b",
+        "EV-a4b2d57251589ede",
         "EV-ccbf97fdf4dc11d0",
         "EV-0b6cfbf67ba2da31",
         "EV-2069f6a931b8c9d6",
@@ -389,6 +399,162 @@
         "entityIds": [
           "EN-7b9b33ca95deff50",
           "EN-8d4321d936320802",
+          "EN-96eebba49dbbf422"
+        ]
+      },
+      {
+        "id": "EV-f36f5f7b24b2bfde",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-03",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-d5dee8daa2eb5cc5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-d5dee8daa2eb5cc5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-d5dee8daa2eb5cc5",
+          "EN-80d387ccb3289295",
+          "EN-96eebba49dbbf422"
+        ]
+      },
+      {
+        "id": "EV-63de2b6408efd796",
+        "dataDate": "2026-10-02",
+        "date": "2026-02-24",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-dfc0fdff7af68ed2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-dfc0fdff7af68ed2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-dfc0fdff7af68ed2"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-dfc0fdff7af68ed2",
+          "EN-96eebba49dbbf422",
+          "EN-80d387ccb3289295",
+          "EN-df291c8675ee8392"
+        ]
+      },
+      {
+        "id": "EV-42dbdf8a9207c0a8",
+        "dataDate": "2026-10-02",
+        "date": "2026-02-17",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "推出 Mesh",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-e960687a2eca9de3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e960687a2eca9de3",
+          "EN-e78bdebae031095b",
+          "EN-96eebba49dbbf422"
+        ]
+      },
+      {
+        "id": "EV-3d5daffd1cb9521b",
+        "dataDate": "2026-10-02",
+        "date": "2026-01-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+        "displayTags": [],
+        "entityIds": [
+          "EN-b8f1c575bfcf5ece",
+          "EN-ea3bd73e2b506e00",
+          "EN-968e2d5b08687bf4",
+          "EN-96eebba49dbbf422"
+        ]
+      },
+      {
+        "id": "EV-a4b2d57251589ede",
+        "dataDate": "2026-10-02",
+        "date": "2026-01-21",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4e24b4c8c700c60f",
+          "EN-d2c4f1b5a5369864",
           "EN-96eebba49dbbf422"
         ]
       },
@@ -7809,13 +7975,18 @@
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
         "EV-89ec502a1340079a",
+        "EV-d3c5eb69eb9d397a",
+        "EV-0e854ee566f6d0b9",
+        "EV-bc166d0f16140940",
         "EV-ab839326ca9597d8",
         "EV-6a5a3f316200d1e3",
         "EV-77f9a1a9bcf8cc65",
         "EV-95385e7d45e69784",
+        "EV-beee465b894317c7",
         "EV-1744d0e71176f9a1",
         "EV-bdcb22b1a53358f5",
         "EV-50b5c4f93ead145d",
+        "EV-bec127224b1f1aca",
         "EV-bf8ce460c05b9ff0",
         "EV-c1295b8f58024ff6",
         "EV-83728e3b6c7736ce",
@@ -7823,6 +7994,7 @@
         "EV-673637ebe2ac2f2d",
         "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
+        "EV-f36f5f7b24b2bfde",
         "EV-9ed6a759555d7e77",
         "EV-13e08bc37724e276",
         "EV-53253b5e23970958",
@@ -7930,8 +8102,10 @@
         "EV-2d0d165e866cd770",
         "EV-4a6cbe937d1b9701",
         "EV-ac5e33e067906a6d",
+        "EV-ed73cd2c438a470d",
         "EV-acdeebead5324344",
         "EV-4ef09c71be4c84cb",
+        "EV-63de2b6408efd796",
         "EV-6de81d4ca248ff31",
         "EV-3c408fe984c73089",
         "EV-e70b6a1287dcaa59",
@@ -8449,13 +8623,17 @@
         "EN-55c37c5c0b75471a",
         "EN-b0a61df9bfe99f72",
         "EN-071f3eca285403f1",
+        "EN-5ba042c14b39398d",
+        "EN-4b8de799d3cb1255",
         "EN-05bb7905b99d8025",
         "EN-96c842ee0d60fa41",
         "EN-b01ef9255dcc0caa",
         "EN-a1b7a0cc37ed257d",
+        "EN-6411d31f2aefa743",
         "EN-01b4537c6e0a2da7",
         "EN-67e8c106650aa683",
         "EN-2dc010636b9dce91",
+        "EN-d6d6dcf0bb132a3d",
         "EN-8526299f9ecc5fac",
         "EN-249fdefbb63fa7b3",
         "EN-240389f4b730bad4",
@@ -8463,6 +8641,7 @@
         "EN-18131bed4bcc2f1a",
         "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
+        "EN-d5dee8daa2eb5cc5",
         "EN-2be663431f007250",
         "EN-77a82bb9aafc81d9",
         "EN-65819e198c32566a",
@@ -8558,8 +8737,10 @@
         "EN-47afad612b1f9cc8",
         "EN-6c7cceb7ce4d4e6a",
         "EN-a675d46aba3c7e48",
+        "EN-4125bf4687377f47",
         "EN-5b3767eb23d5e4ed",
         "EN-470be66761dfc2e9",
+        "EN-dfc0fdff7af68ed2",
         "EN-b30b83d324e678e4",
         "EN-a3b8fbb2200a105a",
         "EN-5c443a92518833f1",
@@ -9942,6 +10123,145 @@
         "EN-7d3194f79e645c42",
         "EN-373ac021a2c0bb2c",
         "EN-96eebba49dbbf422"
+      ]
+    }
+  ],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-35f321bc30af6411",
+      "snapshotKey": "35f321bc30af6411",
+      "snapshotId": "HWS-ccbb674af284637e",
+      "eventId": "EV-42dbdf8a9207c0a8",
+      "eventIds": [
+        "EV-42dbdf8a9207c0a8"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Mesh Optical Technologies",
+      "subject": "Mesh Optical Technologies",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "50",
+          "unit": "$million",
+          "fact_ref": "HWF-20bf72b612429688"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-20bf72b612429688",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-02-17",
+          "subject_entity_id": "EN-e960687a2eca9de3",
+          "subject_name": "Mesh Optical Technologies",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "50",
+          "unit": "$million",
+          "source_quote": "Mesh Optical Technologies was founded to change that, not just to close a supply chain gap, but to develop new optical manufacturing techniques that make the next generation of optical systems possible.\nOur initial product, the Alpha C1, is an optical transceiver that linearly translates electrical signals to light at 1.6 Terabits per second. It delivers better power efficiency, lower latency, and higher reliability for AI workloads and power-constrained data centers.\nUniquely, its optical engine is manufactured entirely with fast and repeatable flip chip die bonding, the same technology used to package chips in modern processors.\nMesh has raised over $50 million led by Thrive Capital and other major investors to scale production of Alpha C1. Our team brings deep experience from SpaceX, Intel, and other advanced manufacturing environments where we designed, programmed, and tested optical systems, and refined production processes for lines that ship millions of units per year.\n",
+          "event_refs": [
+            "EV-42dbdf8a9207c0a8"
+          ],
+          "claim_ref": "CL-d6cdfcf66ddc8043",
+          "source_refs": [
+            "SA-cf8a812622db9d8b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.meshoptical.com/blog/introducing-mesh",
+      "entityIds": [
+        "EN-e960687a2eca9de3",
+        "EN-e78bdebae031095b",
+        "EN-96eebba49dbbf422"
+      ]
+    },
+    {
+      "id": "HWC-39beb659726df680",
+      "snapshotKey": "39beb659726df680",
+      "snapshotId": "HWS-5a0e331b1e191b8f",
+      "eventId": "EV-63de2b6408efd796",
+      "eventIds": [
+        "EV-63de2b6408efd796"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "SambaNova",
+      "subject": "SambaNova",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "50",
+          "unit": "chip",
+          "fact_ref": "HWF-10e3eba2a74ce1c0"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-10e3eba2a74ce1c0",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-02-24",
+          "subject_entity_id": "EN-dfc0fdff7af68ed2",
+          "subject_name": "SambaNova",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "50",
+          "unit": "chip",
+          "source_quote": "BACK TO PRESS RELEASES\n SambaNova Unveils Fastest Chip for Agentic AI, Collaborates with Intel, and Raises $350M+\n By\n SambaNova\n February 24, 2026\nNew SN50 chip boasts a max speed of 5X faster than competitive chips\nRun agentic AI at a 3X lower cost than GPUs – slashing inference costs and maximizing margins\nSoftBank Corp. will be the first customer to deploy SN50 within its next‑generation AI data centers in Japan\nSambaNova, Intel plan multi-year strategic collaboration to deliver cloud-scale AI inference to unlock multi-billion-dollar market opportunity\n$350 million in strategic Series E financing to expand manufacturing and cloud capacity; new investors include Vista Equity Partners, Cambium Capital, Intel Capital, First Data, Battery Ventures, and accounts advised by T. Rowe Price Associates, Inc.\nSAN JOSE, Calif., Feb. 24, 2026 — SambaNova today introduced their SN50 AI chip, which boasts a max speed that’s 5X faster than competitive chips. The company also announced a planned collaboration with Intel to deliver high‑performance, cost‑efficient AI inference solutions, and more ",
+          "event_refs": [
+            "EV-63de2b6408efd796"
+          ],
+          "claim_ref": "CL-cf9da44b07f84af5",
+          "source_refs": [
+            "SA-bd3e6f5391f7a64f"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-dfc0fdff7af68ed2"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+      "entityIds": [
+        "EN-dfc0fdff7af68ed2",
+        "EN-96eebba49dbbf422",
+        "EN-80d387ccb3289295",
+        "EN-df291c8675ee8392"
       ]
     }
   ]

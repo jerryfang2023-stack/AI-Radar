@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,29 +61,35 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-22",
+    "first_disclosed_at": "2026-01-21",
     "latest_disclosed_at": "2026-06-22",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
         "name": "Upscale AI"
+      },
+      {
+        "entity_id": "EN-d2c4f1b5a5369864",
+        "canonical_entity_id": "",
+        "name": "Upscale, Inc."
       }
     ],
     "activities": [
@@ -124,6 +130,46 @@
             "source_content_hash": "23145edb5fdd8d69",
             "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
             "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cf41b0734ec69c20",
+        "funding_insight_id": "FI-efe78d5245c912b4",
+        "event_ids": [
+          "EV-a4b2d57251589ede"
+        ],
+        "company_entity_id": "EN-d2c4f1b5a5369864",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3c60f2ab7fcb8b84",
+            "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+            "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+            "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+            "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+            "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
           }
         ]
       },
@@ -202,6 +248,14 @@
         "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
       },
       {
+        "source_id": "FISRC-3c60f2ab7fcb8b84",
+        "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+        "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+        "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+        "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+        "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+      },
+      {
         "source_id": "FISRC-b8b7d456eceee943",
         "source_url": "https://news.pedaily.cn/202606/564786.shtml",
         "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
@@ -262,12 +316,12 @@
           "source_id": "FISRC-7dcdc22c0b1702bf"
         },
         {
-          "description": "融资来源记录：千寻智能 · 历史轮次未披露 · Pre-A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b8b7d456eceee943"
+          "description": "融资来源记录：Upscale, Inc. · A轮 · 2026-01-21 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3c60f2ab7fcb8b84"
         },
         {
-          "description": "融资来源记录：穹彻智能 · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e3b51be471b79167"
+          "description": "融资来源记录：千寻智能 · 历史轮次未披露 · Pre-A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b8b7d456eceee943"
         }
       ],
       "contacts": [
@@ -312,20 +366,20 @@
           "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
         },
         {
+          "source_id": "FISRC-3c60f2ab7fcb8b84",
+          "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+          "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+          "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+          "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+          "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+        },
+        {
           "source_id": "FISRC-b8b7d456eceee943",
           "source_url": "https://news.pedaily.cn/202606/564786.shtml",
           "source_title": "首发| 3个月近50亿，千寻打破具身融资纪录 - 投资界",
           "source_content_hash": "23a4c9a3f74c9f59",
           "quote": "2025年3月，5.28亿元Pre-A轮融资出炉，由阿美风险投资旗下Prosperity7 Ventures（P7）领投",
           "quote_hash": "00d032ce01998fc3009e7662c7071edca6119fd19c4482cc7e193431f8df2ea5"
-        },
-        {
-          "source_id": "FISRC-e3b51be471b79167",
-          "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
-          "source_title": "锡创动态 | 穹彻智能完成新一轮融资，锡创投加码人工智能“大脑”赛道",
-          "source_content_hash": "6b768055188f3cb9061ad40773e551b420975d25beb5d6a0dfe2e06bbe6f89c0",
-          "quote": "历史投资方包括沙特阿美P7、红杉资本、阿里、360战投等",
-          "quote_hash": "51972a2bcdf7e26966adf9b94b89d74fbbcd82502e3fb422b66d9c4d7f848b3c"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -336,7 +390,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[1].role": {
+        "activities[2].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",

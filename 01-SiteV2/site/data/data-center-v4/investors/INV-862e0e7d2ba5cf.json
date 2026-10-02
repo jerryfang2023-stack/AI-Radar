@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 25,
-    "historical_or_ambiguous_count": 10,
-    "portfolio_company_count": 20,
+    "current_round_count": 26,
+    "historical_or_ambiguous_count": 11,
+    "portfolio_company_count": 21,
     "market_regions": [
       "GLOBAL"
     ],
@@ -75,10 +75,10 @@
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 10,
+      "historical_or_ambiguous": 11,
       "lead": 11,
       "other_current_round": 1,
-      "participant": 11
+      "participant": 12
     },
     "round_codes": [
       "multi_round",
@@ -178,6 +178,11 @@
         "entity_id": "FICO-d750f652e8f2dd92",
         "canonical_entity_id": "",
         "name": "Profound"
+      },
+      {
+        "entity_id": "EN-586e52112859378f",
+        "canonical_entity_id": "",
+        "name": "Ricursive Intelligence"
       },
       {
         "entity_id": "EN-cfd90af8403941bf",
@@ -1095,6 +1100,46 @@
         ]
       },
       {
+        "activity_id": "IA-a44e8b5fc86112d8",
+        "funding_insight_id": "FI-30d30c4d482b3f6f",
+        "event_ids": [
+          "EV-ee9a4433b4e7715e"
+        ],
+        "company_entity_id": "EN-586e52112859378f",
+        "company_canonical_entity_id": "",
+        "company_name": "Ricursive Intelligence",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7faa441242e94444",
+            "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+            "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+            "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+            "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+            "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-6e84abef51ce3db2",
         "funding_insight_id": "FI-5826d8691460f196",
         "event_ids": [
@@ -1533,6 +1578,38 @@
             "quote_hash": "3c51432ac77fbe9687fa76da3e989bf662f1236b291b742ecc06600be08c881c"
           }
         ]
+      },
+      {
+        "activity_id": "IA-de67b6ecbf446a06",
+        "funding_insight_id": "FI-fbb8358f9cd7d1f6",
+        "event_ids": [
+          "EV-2975bb5b57ce53d9"
+        ],
+        "company_entity_id": "EN-7dfadeb219464a45",
+        "company_canonical_entity_id": "",
+        "company_name": "Zūm",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1d97f99b2bf1db30",
+            "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+            "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+            "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+            "quote": "Zum is backed by leading investors including Sequoia Capital, GIC, SoftBank, and TPG.",
+            "quote_hash": "8718e19b46e5c4a3bbb41a97dc7c265065dad77eacb163fada467800ba0615f5"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -1729,6 +1806,14 @@
         "quote_hash": "7cb4326a3ca8b7952ffc6abaf89fae0c85c70155564fa413ebacd6fceb7ffba2"
       },
       {
+        "source_id": "FISRC-7faa441242e94444",
+        "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+        "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+        "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+        "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+        "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
+      },
+      {
         "source_id": "FISRC-dcf11a862138a06d",
         "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
         "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
@@ -1831,6 +1916,14 @@
         "source_content_hash": "d1bd5f5bb5d9679b",
         "quote": "xAI has raised $45B in funding from investors like Andreessen Horowitz, Sequoia Capital and Qatar Investment Authority",
         "quote_hash": "3c51432ac77fbe9687fa76da3e989bf662f1236b291b742ecc06600be08c881c"
+      },
+      {
+        "source_id": "FISRC-1d97f99b2bf1db30",
+        "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+        "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+        "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+        "quote": "Zum is backed by leading investors including Sequoia Capital, GIC, SoftBank, and TPG.",
+        "quote_hash": "8718e19b46e5c4a3bbb41a97dc7c265065dad77eacb163fada467800ba0615f5"
       }
     ],
     "public_profile": {
@@ -1935,7 +2028,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[27].role": {
+        "activities[28].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
@@ -1943,7 +2036,7 @@
           "translated_at": "2026-10-01T19:38:36.584Z",
           "status": "translated"
         },
-        "activities[29].role": {
+        "activities[30].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

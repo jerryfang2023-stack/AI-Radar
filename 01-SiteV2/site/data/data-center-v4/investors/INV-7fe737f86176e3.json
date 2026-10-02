@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,25 +61,27 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-28",
+    "first_disclosed_at": "2026-02-24",
     "latest_disclosed_at": "2026-08-06",
     "role_counts": {
       "co_lead": 2,
+      "historical_or_ambiguous": 2,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "pre_seed",
       "series_a",
       "series_c",
+      "series_e",
       "series_f"
     ],
     "portfolio_companies": [
@@ -92,6 +94,11 @@
         "entity_id": "EN-aa06a7dba2266341",
         "canonical_entity_id": "",
         "name": "Modiqo"
+      },
+      {
+        "entity_id": "EN-dfc0fdff7af68ed2",
+        "canonical_entity_id": "EN-dfc0fdff7af68ed2",
+        "name": "SambaNova"
       },
       {
         "entity_id": "EN-6907a22fafe13a63",
@@ -264,6 +271,110 @@
             "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
           }
         ]
+      },
+      {
+        "activity_id": "IA-27bc0ddea733a85e",
+        "funding_insight_id": "FI-cae0d45e071abebd",
+        "event_ids": [
+          "EV-63de2b6408efd796"
+        ],
+        "company_entity_id": "EN-dfc0fdff7af68ed2",
+        "company_canonical_entity_id": "EN-dfc0fdff7af68ed2",
+        "company_name": "SambaNova",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "more than $350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": 350000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 3.5 亿美元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d47a3aba63bc33dc",
+            "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+            "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+            "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+            "quote": "New investors joining the round include: First Data, Assam Ventures, Battery Ventures, Gulf Development Public Company Limited, Mayfield Capital, Saudi First Data, Seligman Ventures, and accounts advised by T. Rowe Price Associates, Inc.",
+            "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7be934dba41be72b",
+        "funding_insight_id": "FI-643b76798f958bf3",
+        "event_ids": [
+          "EV-3d5daffd1cb9521b"
+        ],
+        "company_entity_id": "EN-b8f1c575bfcf5ece",
+        "company_canonical_entity_id": "",
+        "company_name": "Eliyan Corporation",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-474b4b7e510758ec",
+            "source_url": "https://eliyan.com/news/eliyan-achieves-unicorn-status-with-145-million-series-c/",
+            "source_title": "Eliyan Achieves Unicorn Status with $145 Million Series C to Advance Electro-optical Interconnects for AI",
+            "source_content_hash": "aa46329e58562db5",
+            "quote": "The oversubscribed round was led by Seligman Ventures",
+            "quote_hash": "d9dc77fe2bc201ffa47306e70892db6d437b107fbaefbe282d2110cb81517a95"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a4b2373c0e836401",
+        "funding_insight_id": "FI-efe78d5245c912b4",
+        "event_ids": [
+          "EV-a4b2d57251589ede"
+        ],
+        "company_entity_id": "EN-d2c4f1b5a5369864",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale, Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A-1轮新投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a6d3f9f9ce9ab2b",
+            "source_url": "https://fortune.com/2026/06/22/nvidia-upscale-ai-next-ciscoand-seligman-ventures-premji/",
+            "source_title": "Exclusive: Upscale AI wants to be the next Cisco—and it just raised another $190 million",
+            "source_content_hash": "541e8f85e65bdad2",
+            "quote": "New investors include Nvidia, Salesforce Ventures, Temasek, and Seligman Ventures",
+            "quote_hash": "2c24cad7757d567cadf9b860e80f9217a8bbfdd9f82b88710efb13de58b1f453"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -298,6 +409,30 @@
         "source_content_hash": "776c62cfdeacb511",
         "quote": "The round was co-led by Heavybit and Seligman Ventures",
         "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
+      },
+      {
+        "source_id": "FISRC-d47a3aba63bc33dc",
+        "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+        "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+        "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+        "quote": "New investors joining the round include: First Data, Assam Ventures, Battery Ventures, Gulf Development Public Company Limited, Mayfield Capital, Saudi First Data, Seligman Ventures, and accounts advised by T. Rowe Price Associates, Inc.",
+        "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
+      },
+      {
+        "source_id": "FISRC-474b4b7e510758ec",
+        "source_url": "https://eliyan.com/news/eliyan-achieves-unicorn-status-with-145-million-series-c/",
+        "source_title": "Eliyan Achieves Unicorn Status with $145 Million Series C to Advance Electro-optical Interconnects for AI",
+        "source_content_hash": "aa46329e58562db5",
+        "quote": "The oversubscribed round was led by Seligman Ventures",
+        "quote_hash": "d9dc77fe2bc201ffa47306e70892db6d437b107fbaefbe282d2110cb81517a95"
+      },
+      {
+        "source_id": "FISRC-7a6d3f9f9ce9ab2b",
+        "source_url": "https://fortune.com/2026/06/22/nvidia-upscale-ai-next-ciscoand-seligman-ventures-premji/",
+        "source_title": "Exclusive: Upscale AI wants to be the next Cisco—and it just raised another $190 million",
+        "source_content_hash": "541e8f85e65bdad2",
+        "quote": "New investors include Nvidia, Salesforce Ventures, Temasek, and Seligman Ventures",
+        "quote_hash": "2c24cad7757d567cadf9b860e80f9217a8bbfdd9f82b88710efb13de58b1f453"
       }
     ],
     "public_profile": {
@@ -433,6 +568,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[5].role": {
+          "text": "Series C 领投",
+          "source_hash": "c55ed79792c5d8940ad622d8d48ba34699b43b78b6c1f267f19f91e6570bbcca",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "官网示例包括 Velaura AI 1.1 亿美元 Series A、Lumilens 超过 7 亿美元融资；此处记录被投企业融资披露，不是 Seligman Ventures 的回报率。",
           "source_hash": "239bd0e966127bb9e2403993a58540b432695ae3a80c2ab27a4b054f3e7c8d2d",
