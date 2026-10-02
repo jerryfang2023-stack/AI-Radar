@@ -4,6 +4,8 @@ This directory keeps only current operator and handoff documentation.
 
 ## Current Entries
 
+- `02-Miniprogram/README.md`: current native Mini Program release, feature and permission boundaries; `02-Miniprogram/docs/release-runbook.md` owns packaging, upload verification and cache troubleshooting.
+
 - `docs/agent-handoff.md`: current project handoff.
 - `docs/obsidian-vault.md`: independent Vault structure, refresh, validation, and recovery.
 - `docs/operations-console.md`: unified operations, membership analytics, Skill ownership, and release checks.

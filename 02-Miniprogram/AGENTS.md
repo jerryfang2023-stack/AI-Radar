@@ -1,5 +1,7 @@
 # Guanlan Funding Mini Program
 
+As of 2026-10-02, verified development upload is 1.2.5 from `a25f1a1e9e5b0d10969ad435488c9cfa5e4ba6dc` (206 tests; 1627191 bytes). Review/publication is owner-controlled and not confirmed. Start from README.md and docs/release-runbook.md; immutable upload evidence is docs/releases/1.2.5/README.md. The version-specific contracts below are cumulative history, with newer contracts taking precedence.
+
 Current source 1.2.5: funding lists contain one card per verified company. Historical rounds remain inside the subject detail. Capital-flow models read index.events (legacy fallback index.cards), while browsing reads index.cards. Old funding IDs resolve through cardAliases. Never infer event totals from the number of subject cards.
 
 Current source 1.2.4: registration captures the final native nickname on blur, invalidates eligibility while editing, and waits for the supported native nickname-review result before submitting. Failed/timed-out reviews and placeholder/WeChat-ID names cannot start new registration; older base libraries use final blur values. Verified-phone community lookup remains available without a nickname. Persist the server-confirmed display name after login. Never infer a person's name from a wxid or claim phone authorization returns a nickname.
