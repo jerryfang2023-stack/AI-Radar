@@ -140,10 +140,41 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "爱美客集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "队列名称为“爱美客集团”；官方报告将“爱美客”指向爱美客技术发展股份有限公司，并确认香港爱美客为其全资子公司。本条只确认协议层面的参投活动，不表示投资已完成。",
+      "summary": "爱美客技术发展股份有限公司的2026年半年度报告披露，其全资子公司香港爱美客于2026年4月与Good Mood Holdings Limited签署投资协议，以人民币2,000万元认购新股；报告注明截至2026年6月30日尚未交割。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "报告主体",
+          "value": "报告释义将“爱美客”指向爱美客技术发展股份有限公司。",
+          "source_id": "imeik_company"
+        },
+        {
+          "field": "subsidiary",
+          "label": "投资子公司",
+          "value": "香港爱美客公司（Imeik（HK）Limited）为公司全资子公司。",
+          "source_id": "imeik_subsidiary"
+        },
+        {
+          "field": "investment_activity",
+          "label": "已披露协议",
+          "value": "2026年4月，香港爱美客与Good Mood Holdings Limited签署投资协议，以人民币2,000万元认购其新股，并与关联方安杰睦德科技（香港）有限公司共同出资。",
+          "source_id": "imeik_activity"
+        },
+        {
+          "field": "investment_status",
+          "label": "报告期末状态",
+          "value": "截至2026年6月30日，该笔投资尚未交割。",
+          "source_id": "imeik_activity"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-04",
+          "description": "香港爱美客与Good Mood Holdings Limited签署投资协议；截至报告期末尚未交割。",
+          "source_id": "imeik_activity"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：好心情（Good Mood） · 轮次未披露 · 2026-09-30 · 本轮参投 · 近3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
@@ -153,6 +184,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "imeik_company",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225487535.PDF",
+          "source_title": "爱美客技术发展股份有限公司2026年半年度报告",
+          "source_content_hash": "69acc86d395299fd8c3f0c6a5d74fcfc00055f65926525c897dfc0b7706a9c0d",
+          "quote": "爱美客指爱美客技术发展股份有限公司",
+          "quote_hash": "d816d106946a7ae207901e6c7b775ef303b356d77735aa9a2064b0c99e61cb12"
+        },
+        {
+          "source_id": "imeik_subsidiary",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225487535.PDF",
+          "source_title": "爱美客技术发展股份有限公司2026年半年度报告",
+          "source_content_hash": "69acc86d395299fd8c3f0c6a5d74fcfc00055f65926525c897dfc0b7706a9c0d",
+          "quote": "香港爱美客公司指 Imeik（HK）Limited，系公司全资子公司",
+          "quote_hash": "0f4c9038c3d64dd5ad700f5c0575137418009b0d0c09f8d17a204f0995e681f7"
+        },
+        {
+          "source_id": "imeik_activity",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-08-21/1225487535.PDF",
+          "source_title": "爱美客技术发展股份有限公司2026年半年度报告",
+          "source_content_hash": "69acc86d395299fd8c3f0c6a5d74fcfc00055f65926525c897dfc0b7706a9c0d",
+          "quote": "2026年4月，公司子公司香港爱美客公司与Good Mood Holdings Limited (简称“Good Mood\")签署投资协议，投资人民币2000万元认购Good Mood发行的新股，公司关联方安杰睦德科技(香港)有限公司共同出资。截至报告期末，该笔投资尚未交割。",
+          "quote_hash": "31b0876a01e07d3ae39e567445524961e27d70b1f61b33b35865a4dcf2f456c8"
+        },
+        {
           "source_id": "FISRC-fd10d8d231daf83d",
           "source_url": "https://caifuhao.eastmoney.com/news/20260930080532421516720",
           "source_title": "【首发】好心情完成近3亿元新一轮融资，加速 AI 创新与国际化布局",
@@ -161,7 +216,7 @@
           "quote_hash": "4c78d8de1b18274ce3ee3373bea795e0815c1dce5530d772881b1b4f98d5d9b0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

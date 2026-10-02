@@ -139,10 +139,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Evercurious VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "Evercurious VC是一家以雅典为基地、投资欧洲的风险投资机构。官网披露其投资阶段、票面金额和科技方向；其隐私政策列明希腊注册的基金管理公司法律名称。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段与票面",
+          "value": "领投pre-seed，参与seed和Series A；官网列示单笔投资金额为25万至75万欧元。",
+          "source_id": "evc_strategy"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资方向",
+          "value": "官网列出生命科学、食品与农业、制造业、先进材料、交通与物流、机器人、气候与能源等领域，重点关注硬件与软件交叉。",
+          "source_id": "evc_sectors"
+        },
+        {
+          "field": "geography",
+          "label": "地域",
+          "value": "总部位于雅典，投资欧洲。",
+          "source_id": "evc_location"
+        },
+        {
+          "field": "legal_entity",
+          "label": "管理实体",
+          "value": "隐私政策将法律主体列为EVERCURIOUS VC DIACHEIRISIS AMOIVAION KEFALAION EPICHEIRIMATIKON SYMMETOCHON SOCIETE ANONYME；以Evercurious VC为商业名称，并按希腊法律管理风险投资基金。",
+          "source_id": "evc_legal"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +175,60 @@
           "source_id": "FISRC-3290be19a3eb1c09"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.evercurious.vc/",
+          "url": "https://www.evercurious.vc/",
+          "source_id": "evc_strategy"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "hello@evercurious.vc",
+          "source_id": "evc_location"
+        },
+        {
+          "kind": "address",
+          "label": "办公地址",
+          "value": "Elpidos 2A, 153 43 Ag. Paraskevi, Greece",
+          "source_id": "evc_location"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "evc_strategy",
+          "source_url": "https://www.evercurious.vc/",
+          "source_title": "Evercurious VC",
+          "source_content_hash": "143b32a8e2accdcc5b76ac0fd9b44e28e00f302736721045dafa4e789107cbad",
+          "quote": "We lead pre-seed rounds and co-invest in seed and Series A, with tickets ranging from €250k to €750k",
+          "quote_hash": "10c540d137401be777ddeac805bebd4376b6b252cfa248b3ce27784c8731773c"
+        },
+        {
+          "source_id": "evc_sectors",
+          "source_url": "https://www.evercurious.vc/",
+          "source_title": "Evercurious VC",
+          "source_content_hash": "143b32a8e2accdcc5b76ac0fd9b44e28e00f302736721045dafa4e789107cbad",
+          "quote": "Our sweet spot lies at the intersection of Hardware and Software. We lead pre-seed rounds and co-invest in seed and Series A, with tickets ranging from €250k to €750k Life sciences Food & Agriculture Manufacturing Advanced Materials Mobility & Logistics Robotics Climate & Energy",
+          "quote_hash": "f5df3cc0accbcccceffed538dd28b271a5ecc789ed817406f90f73c9e0304442"
+        },
+        {
+          "source_id": "evc_location",
+          "source_url": "https://www.evercurious.vc/",
+          "source_title": "Evercurious VC",
+          "source_content_hash": "143b32a8e2accdcc5b76ac0fd9b44e28e00f302736721045dafa4e789107cbad",
+          "quote": "Based in Athens. Investing in Europe. Elpidos 2A, 153 43 Ag. Paraskevi, Greece hello@evercurious.vc",
+          "quote_hash": "a1eeede5b42ae98bdbdf771bc8df389a572988f7a975f3a9b9a90a28cf3d87bd"
+        },
+        {
+          "source_id": "evc_legal",
+          "source_url": "https://www.evercurious.vc/privacy-policy",
+          "source_title": "Privacy Policy | Evercurious VC",
+          "source_content_hash": "94e8ae8384787554d9058ea62e14a5c81164448b55cb82b3c109ca5d09f9f7eb",
+          "quote": "This policy is a statement by EVERCURIOUS VC DIACHEIRISIS AMOIVAION KEFALAION EPICHEIRIMATIKON SYMMETOCHON SOCIETE ANONYME, operating under the commercial title Evercurious VC (hereinafter referred to as \"the Company\"), to comply with Articles 13 and 14 of the EU General Data Protection Regulation (GDPR, Regulation (EU) 2016/679). It provides information on the processing of personal data and the rights of data subjects. This policy is intended for employees, limited partners, regulatory bodies, and other interested parties. Evercurious VC is a société anonyme established under the laws of Greece and acts as a management company for Venture Capital Funds (hereinafter referred to as \"Fund\" or \"Funds\") in accordance with Article 7 of Law 2992/2002.",
+          "quote_hash": "f36b2c9d4efdcfba099ed28b8a7d6b9636285e1be3404a7caf094504505cb60b"
+        },
         {
           "source_id": "FISRC-3290be19a3eb1c09",
           "source_url": "https://ggba.swiss/en/geneva-based-oramavr-raises-usd-4-5-million-to-scale-medical-xr-training-solutions/",
@@ -161,7 +238,7 @@
           "quote_hash": "21f491e0a93dc34d651c86420f068032f3506f739fd5db8c98d2d6314091ada1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

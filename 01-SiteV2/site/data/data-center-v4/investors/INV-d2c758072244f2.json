@@ -139,10 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DSC Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "韩国 DART 公司信息登记记载 DSC Investment Inc.（代码 241520）于 2012 年 1 月 18 日成立，在 KOSDAQ 上市，行业分类为其他金融投资业务。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "英文法定名称",
+          "value": "DSC Investment Inc.。",
+          "source_id": "dsc_legal_name"
+        },
+        {
+          "field": "founded",
+          "label": "成立日期",
+          "value": "2012-01-18。",
+          "source_id": "dsc_founded"
+        },
+        {
+          "field": "listing",
+          "label": "上市信息",
+          "value": "KOSDAQ，代码 241520。",
+          "source_id": "dsc_listing"
+        },
+        {
+          "field": "industry",
+          "label": "行业分类",
+          "value": "其他金融投资业务。",
+          "source_id": "dsc_industry"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +174,47 @@
           "source_id": "FISRC-f5de203e610041a3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站（DART 登记）",
+          "value": "www.dscinvestment.com",
+          "source_id": "dsc_industry"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "dsc_legal_name",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
+          "quote": "Company Name (English) DSC Investment Inc.",
+          "quote_hash": "41f018bca13b23780544961b3afba3bab0bf5aa1877c73868756ab77c4742cb7"
+        },
+        {
+          "source_id": "dsc_founded",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
+          "quote": "Establishment Date 2012-01-18",
+          "quote_hash": "bdf429421049f4358d1bb6664fadfa92ef02201330b95e7122c63469cbe75488"
+        },
+        {
+          "source_id": "dsc_listing",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
+          "quote": "Company Code 241520 Representative Market Listing KOSDAQ Market",
+          "quote_hash": "d9e5367b5c49ce6ee85d7933b782e6efe56ffa42b0e8e00f4233293b7abc8314"
+        },
+        {
+          "source_id": "dsc_industry",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=01109715",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "00ad74d8a6837c32c339d65fcadbb5f82c86da0cb5cfc904ee5f66b841dc0654",
+          "quote": "Industry Other financial investment businesses",
+          "quote_hash": "8d3eb1c047fde0f62f271af5c886e16de04836023e063adb7ba54d8956bbaeea"
+        },
         {
           "source_id": "FISRC-f5de203e610041a3",
           "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
@@ -161,7 +224,8 @@
           "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

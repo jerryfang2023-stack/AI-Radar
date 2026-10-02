@@ -139,10 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Merck Global Health Innovation Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Merck 2020 年新闻稿将 Merck Global Health Innovation Fund 描述为企业医疗健康风险投资基金，向全球新兴医疗科技公司提供成长资本并广泛投资数字健康；该新闻稿记载当时管理规模为 5 亿美元，2010 年末以来投资超过 50 家数字健康公司。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "业务定位（2020 新闻稿）",
+          "value": "企业医疗健康风险投资基金，连接互补技术以形成综合医疗解决方案。",
+          "source_id": "merck_business"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资方向（2020 新闻稿）",
+          "value": "全球医疗科技公司，重点广泛投资数字健康。",
+          "source_id": "merck_scope"
+        },
+        {
+          "field": "historical_aum",
+          "label": "管理规模（2020 新闻稿）",
+          "value": "5 亿美元。",
+          "source_id": "merck_aum"
+        },
+        {
+          "field": "historical_track_record",
+          "label": "投资记录（截至 2020 新闻稿）",
+          "value": "自 2010 年末以来，在数字健康领域完成超过 50 项投资。",
+          "source_id": "merck_track"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +174,48 @@
           "source_id": "FISRC-3372eff279ee29db"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金官网（新闻稿所列）",
+          "value": "https://www.merckghifund.com/",
+          "url": "https://www.merckghifund.com/",
+          "source_id": "merck_scope"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "merck_business",
+          "source_url": "https://s2.q4cdn.com/584635680/files/doc_news/Infectious-Disease-Connect-and-ILM-Health-Solutions-Combine-to-Advance-Precision-Treatment-of-Infectious-Diseases-and-Antimicrobial-S-9PW55.pdf",
+          "source_title": "Merck news release: Infectious Disease Connect and ILÚM Health Solutions Combine (2020-05-19)",
+          "source_content_hash": "4f0ff14adc161e0796123c738106939ddacbb93f8b51797cb233df6cab96e048",
+          "quote": "Merck Global Health Innovation Fund (Merck GHIF) is evolving corporate healthcare venture capital globally",
+          "quote_hash": "b5bb25c3eaa868621c88c5d756272cbd8201d19b139d6aaa2042ea13dad5687a"
+        },
+        {
+          "source_id": "merck_scope",
+          "source_url": "https://s2.q4cdn.com/584635680/files/doc_news/Infectious-Disease-Connect-and-ILM-Health-Solutions-Combine-to-Advance-Precision-Treatment-of-Infectious-Diseases-and-Antimicrobial-S-9PW55.pdf",
+          "source_title": "Merck news release: Infectious Disease Connect and ILÚM Health Solutions Combine (2020-05-19)",
+          "source_content_hash": "4f0ff14adc161e0796123c738106939ddacbb93f8b51797cb233df6cab96e048",
+          "quote": "GHIF invests broadly in digital health.",
+          "quote_hash": "3cecff114b9fa5540c01002070d8490607d1e218819b6c70308708052b4cf297"
+        },
+        {
+          "source_id": "merck_aum",
+          "source_url": "https://s2.q4cdn.com/584635680/files/doc_news/Infectious-Disease-Connect-and-ILM-Health-Solutions-Combine-to-Advance-Precision-Treatment-of-Infectious-Diseases-and-Antimicrobial-S-9PW55.pdf",
+          "source_title": "Merck news release: Infectious Disease Connect and ILÚM Health Solutions Combine (2020-05-19)",
+          "source_content_hash": "4f0ff14adc161e0796123c738106939ddacbb93f8b51797cb233df6cab96e048",
+          "quote": "Merck GHIF has $500M under\r\nmanagement",
+          "quote_hash": "7786d54c5a366532c048915257041871c3a82f14adb37454119adfd7d4a0e944"
+        },
+        {
+          "source_id": "merck_track",
+          "source_url": "https://s2.q4cdn.com/584635680/files/doc_news/Infectious-Disease-Connect-and-ILM-Health-Solutions-Combine-to-Advance-Precision-Treatment-of-Infectious-Diseases-and-Antimicrobial-S-9PW55.pdf",
+          "source_title": "Merck news release: Infectious Disease Connect and ILÚM Health Solutions Combine (2020-05-19)",
+          "source_content_hash": "4f0ff14adc161e0796123c738106939ddacbb93f8b51797cb233df6cab96e048",
+          "quote": "Since\r\nlate 2010, Merck GHIF has made over 50 investments in Digital Health companies",
+          "quote_hash": "8d82278a652c448fff8c2d424afa6c7d29075479d476d50698582f3a412be9d6"
+        },
         {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
@@ -161,7 +225,8 @@
           "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

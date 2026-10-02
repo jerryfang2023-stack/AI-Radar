@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Unicorn India Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Unicorn India Ventures 官网将其起点标注为 2016 年，列出创始管理合伙人 Anil Joshi 与 Bhaskar Majumdar，并记录 Fund I、II、III 及 IITM Unicorn Frontier Fund 的推出时间。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2016 年。",
+          "source_id": "uiv_founding"
+        },
+        {
+          "field": "founders",
+          "label": "创始管理合伙人",
+          "value": "Anil Joshi、Bhaskar Majumdar。",
+          "source_id": "uiv_founders"
+        },
+        {
+          "field": "fund_history",
+          "label": "基金时间线",
+          "value": "Fund I 于 2016 年、Fund II 于 2020 年、Fund III 于 2023 年推出；IITM Unicorn Frontier Fund 于 2025 年推出。",
+          "source_id": "uiv_timeline"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,40 @@
           "source_id": "FISRC-7f3013f24d769a11"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.unicornivc.com/our-firm-deep-tech-investors-in-india",
+          "url": "https://www.unicornivc.com/our-firm-deep-tech-investors-in-india",
+          "source_id": "uiv_founding"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "uiv_founding",
+          "source_url": "https://www.unicornivc.com/our-firm-deep-tech-investors-in-india",
+          "source_title": "Our Firm | DeepTech Venture Capital Firm in India | Unicorn India Ventures",
+          "source_content_hash": "00be3588774c1c7612dbb4acc9ff3bf6edd166729b96335cc92ff4cf54b7679e",
+          "quote": "In 2016, two operators founded UIV",
+          "quote_hash": "dd33c3b403d1d105a8a7f974dbdbfc591485c045289697c31091dd4f466ef252"
+        },
+        {
+          "source_id": "uiv_founders",
+          "source_url": "https://www.unicornivc.com/our-firm-deep-tech-investors-in-india",
+          "source_title": "Our Firm | DeepTech Venture Capital Firm in India | Unicorn India Ventures",
+          "source_content_hash": "00be3588774c1c7612dbb4acc9ff3bf6edd166729b96335cc92ff4cf54b7679e",
+          "quote": "Anil Joshi Founder · Managing Partner Bhaskar Majumdar Founder · Managing Partner",
+          "quote_hash": "46a337f01587c66036169e11d4756b1372350f9b202b0893829c5272197d7cd1"
+        },
+        {
+          "source_id": "uiv_timeline",
+          "source_url": "https://www.unicornivc.com/our-firm-deep-tech-investors-in-india",
+          "source_title": "Our Firm | DeepTech Venture Capital Firm in India | Unicorn India Ventures",
+          "source_content_hash": "00be3588774c1c7612dbb4acc9ff3bf6edd166729b96335cc92ff4cf54b7679e",
+          "quote": "2016 Fund I Launch 2020 Fund II Launch 2023 Fund III Launch 2025 IITM Unicorn Frontier Fund Launched",
+          "quote_hash": "63a6c0dde676faa73acca09b582c2564cd9d62e69c082022f87bc903cffd4421"
+        },
         {
           "source_id": "FISRC-7f3013f24d769a11",
           "source_url": "https://india.entrepreneur.com/news-and-trends/fabless-semiconductor-startup-vervesemi-raises-usd-10-mn-in/502790",
@@ -161,7 +211,8 @@
           "quote_hash": "b44cbe296902a68c37cbf2597f646cf9c3dab913f2d9787169caf639e0518040"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

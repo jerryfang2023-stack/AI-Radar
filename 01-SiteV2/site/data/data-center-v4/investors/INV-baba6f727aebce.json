@@ -139,10 +139,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Abu Dhabi Investment Council 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "Abu Dhabi Investment Council（ADIC）官网称其为成立于2007年的主权财富基金，现由Mubadala Investment Company全资持有；自2018年起作为Mubadala的间接投资部门运营，投资覆盖多个资产类别和地区。",
+      "facts": [
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "主权财富基金。",
+          "source_id": "adic_profile"
+        },
+        {
+          "field": "founding_year",
+          "label": "成立年份",
+          "value": "2007。",
+          "source_id": "adic_profile"
+        },
+        {
+          "field": "ownership",
+          "label": "隶属关系",
+          "value": "由Mubadala Investment Company全资持有；自2018年起作为Mubadala的间接投资部门运营。",
+          "source_id": "adic_profile"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资范围",
+          "value": "跨资产类别和地区进行长期投资；官网列示管理资产规模超过1,600亿美元。",
+          "source_id": "adic_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +175,24 @@
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.adic.ae/en/",
+          "url": "https://www.adic.ae/en/",
+          "source_id": "adic_profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "adic_profile",
+          "source_url": "https://www.adic.ae/en/",
+          "source_title": "Abu Dhabi Investment Council",
+          "source_content_hash": "7026f0d731d4d4caf04f2e7e339043f7c6690a40599c85b38a3e63bae991e917",
+          "quote": "Abu Dhabi Investment Council (ADIC) is a sovereign wealth fund established in 2007 and wholly owned by Mubadala Investment Company . ADIC safeguards and grows Abu Dhabi’s financial future through sustainable, long-term investments across asset classes and geographies, managing an AUM of over $160 billion. Since 2018, ADIC has operated as Mubadala’s indirect investment arm, complementing the broader portfolio with an endowment-style approach.",
+          "quote_hash": "cdb6b48d502946e15c405e0c74ea177344e71b1fc53140df874024be1742da12"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -161,7 +202,7 @@
           "quote_hash": "fc5db38002b21b1decd438417bac1dfdc98b2900159b1d7b3161859e98a2e15a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

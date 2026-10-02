@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "NuVentures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "NuVentures 官网将其描述为早期风险投资基金，合作对象为新泽西与班加罗尔的创业者，并提供资金、战略指导和行业网络。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期风险投资基金。",
+          "source_id": "nu_position"
+        },
+        {
+          "field": "geographic_reach",
+          "label": "地域",
+          "value": "官网称其业务联系覆盖新泽西与班加罗尔。",
+          "source_id": "nu_geography"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "提供资金、战略指导和可信赖的网络。",
+          "source_id": "nu_support"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,40 @@
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://nuventures.vc/",
+          "url": "https://nuventures.vc/",
+          "source_id": "nu_position"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nu_position",
+          "source_url": "https://nuventures.vc/about/",
+          "source_title": "About - nuventures",
+          "source_content_hash": "67040a410237e6118780cc39e2c4beec2300b94c4ae80317f0015d666ee7ec9a",
+          "quote": "NuVentures is an early-stage venture fund partnering with founders building what is next.",
+          "quote_hash": "45b166e9bc5b966403813627ab660a5b82e3045b6179a369a2051189c9e653da"
+        },
+        {
+          "source_id": "nu_geography",
+          "source_url": "https://nuventures.vc/about/",
+          "source_title": "About - nuventures",
+          "source_content_hash": "67040a410237e6118780cc39e2c4beec2300b94c4ae80317f0015d666ee7ec9a",
+          "quote": "Across New Jersey and Bengaluru, we bring capital, strategic guidance, and trusted networks to every stage of the journey.",
+          "quote_hash": "9aee0ba5e38b62cbb8a9b844f61463d2a59bfea18cbc6e9c4ecdd8f6cc7bc387"
+        },
+        {
+          "source_id": "nu_support",
+          "source_url": "https://nuventures.vc/about/",
+          "source_title": "About - nuventures",
+          "source_content_hash": "67040a410237e6118780cc39e2c4beec2300b94c4ae80317f0015d666ee7ec9a",
+          "quote": "capital, strategic guidance, and trusted networks",
+          "quote_hash": "7dd6044e41ca2463bb6c9cc61cf62b0b2f38fceddc7e67a924cdce71a64d14d9"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +211,8 @@
           "quote_hash": "8ca5d93f509e1be996b438627d872929ca9c5cea3070e089f665bfe8894bef33"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

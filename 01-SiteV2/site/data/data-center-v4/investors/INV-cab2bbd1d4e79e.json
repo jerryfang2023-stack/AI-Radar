@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TDK Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "TDK Ventures, Inc. 是TDK旗下企业风险投资机构；官网称其全球投资早期技术与创新创业者，聚焦计算与连接、健康科技、出行、工业机器人、清洁能源和新一代材料等领域。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "主体身份",
+          "value": "官网标注 TDK Ventures, Inc.。",
+          "source_id": "tdk_legal"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网将其投资网络描述为全球早期技术与创新网络。",
+          "source_id": "tdk_stage"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资方向",
+          "value": "官网列出的方向包括计算与连接、农业与健康科技、出行与航天、工业与机器人、能源与清洁技术、新一代材料。",
+          "source_id": "tdk_scope"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,40 @@
           "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://tdk-ventures.com/",
+          "url": "https://tdk-ventures.com/",
+          "source_id": "tdk_legal"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tdk_legal",
+          "source_url": "https://tdk-ventures.com/",
+          "source_title": "Investing in Tomorrow&#039;s Tech Today | TDK Ventures",
+          "source_content_hash": "df8f8f76a44a629bc41744447e882db827c4b6db428981cb458c64ba0f335a6a",
+          "quote": "TDK Ventures, Inc.",
+          "quote_hash": "b1222e20d6be0cbd0b308b8be3d35d43bbc1b4d2976645fc4702c7bd1cb176d1"
+        },
+        {
+          "source_id": "tdk_stage",
+          "source_url": "https://tdk-ventures.com/",
+          "source_title": "Investing in Tomorrow&#039;s Tech Today | TDK Ventures",
+          "source_content_hash": "df8f8f76a44a629bc41744447e882db827c4b6db428981cb458c64ba0f335a6a",
+          "quote": "building true partnerships in a global and extensive early-stage technology and innovation network.",
+          "quote_hash": "ce3e57c7ea6696d156ad5d75d7ddc24b70b037ef2e1812db589ef4df68546f1a"
+        },
+        {
+          "source_id": "tdk_scope",
+          "source_url": "https://tdk-ventures.com/",
+          "source_title": "Investing in Tomorrow&#039;s Tech Today | TDK Ventures",
+          "source_content_hash": "df8f8f76a44a629bc41744447e882db827c4b6db428981cb458c64ba0f335a6a",
+          "quote": "Computing & Connectivity AgTech & HealthTech Mobility & Space Industrial & Robotics Energy & CleanTech Next-Gen Materials",
+          "quote_hash": "38d147e8636b2f2c65f4f6c6d7f3d2a101e7837979ad7d9f2f4fa552257ff4a0"
+        },
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
           "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
@@ -161,7 +211,8 @@
           "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

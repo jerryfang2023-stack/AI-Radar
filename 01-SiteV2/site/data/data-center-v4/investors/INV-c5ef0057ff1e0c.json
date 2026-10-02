@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "KAUST Innovation Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "KAUST Innovation Ventures 是KAUST创新生态的风险投资基金，官网称其投资深科技初创企业，重点为在沙特运营或拓展到沙特的项目；投资阶段从pre-seed到early Series A，覆盖健康、能源、食品、水和人工智能。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "组织身份",
+          "value": "KAUST Innovation Ventures Fund 是KAUST创新生态中的风险投资基金。",
+          "source_id": "kiv_identity"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed至early Series A。",
+          "source_id": "kiv_stage"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资方向",
+          "value": "健康、能源、食品、水和人工智能五个方向。",
+          "source_id": "kiv_pillars"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,40 @@
           "source_id": "FISRC-9e1446cb9cb3e95e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.kaust.edu.sa/en/innovate/kaust-innovation-ventures",
+          "url": "https://www.kaust.edu.sa/en/innovate/kaust-innovation-ventures",
+          "source_id": "kiv_identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kiv_identity",
+          "source_url": "https://www.kaust.edu.sa/en/innovate/kaust-innovation-ventures",
+          "source_title": "KAUST Innovation Ventures",
+          "source_content_hash": "84b73b3c60f2aacbd032d8f7de6ab46898133062627c558488c8600dadec4fe4",
+          "quote": "KAUST Innovation Ventures Fund",
+          "quote_hash": "99ff12ad769f5db9fa1862262c36f04dca6a2bbae9e1efefc51b07ac21f4c0de"
+        },
+        {
+          "source_id": "kiv_stage",
+          "source_url": "https://www.kaust.edu.sa/en/innovate/kaust-innovation-ventures",
+          "source_title": "KAUST Innovation Ventures",
+          "source_content_hash": "84b73b3c60f2aacbd032d8f7de6ab46898133062627c558488c8600dadec4fe4",
+          "quote": "We back companies from pre-seed to early Series A, with typical ticket sizes ranging from $100K to $700K, often alongside leading co-investors.",
+          "quote_hash": "492e90faaab72ab2bc65ff09e59c539a53a839b4b6b63c87b3b5ac332b10fc7f"
+        },
+        {
+          "source_id": "kiv_pillars",
+          "source_url": "https://www.kaust.edu.sa/en/innovate/kaust-innovation-ventures",
+          "source_title": "KAUST Innovation Ventures",
+          "source_content_hash": "84b73b3c60f2aacbd032d8f7de6ab46898133062627c558488c8600dadec4fe4",
+          "quote": "KAUST Innovation Ventures invests in deep-tech startups across five strategic pillars: Health, Energy, Food, Water, and AI.",
+          "quote_hash": "c973ca3bfb6cae415f761ef907f35f8f43bf46295f063d5ba0e8f33d069feb2e"
+        },
         {
           "source_id": "FISRC-9e1446cb9cb3e95e",
           "source_url": "https://waya.media/sinai-ai-raises-usd-1-45m-pre-seed-to-turn-books-into-ai-powered-experiences/",
@@ -161,7 +211,8 @@
           "quote_hash": "77a70bb3a2725a51b4d51f7e35d324ee64367d6a4351cadd7b0bd8e452aabe5d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

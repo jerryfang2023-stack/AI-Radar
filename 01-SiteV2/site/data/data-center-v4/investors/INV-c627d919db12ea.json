@@ -155,23 +155,89 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TriplePoint Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Triple Point Ventures 官网称其在pre-seed和seed阶段投资早期公司，领域包括金融科技、医疗、气候、数据和人工智能，并表示可领投、单笔规模最高500万英镑。官网将Triple Point Ventures置于Triple Point Group品牌体系中。",
+      "facts": [
+        {
+          "field": "group_relationship",
+          "label": "品牌及集团关系",
+          "value": "官网说明 Triple Point 是 Triple Point Group 的交易名称；页面以 Triple Point Ventures 名义开展风投业务。",
+          "source_id": "tp_identity"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed和seed阶段，早期领投。",
+          "source_id": "tp_stage"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资方向",
+          "value": "金融科技、医疗、气候、数据和人工智能。",
+          "source_id": "tp_sectors"
+        },
+        {
+          "field": "ticket_size",
+          "label": "单笔规模",
+          "value": "官网称领投轮次的单笔投资最高£5m。",
+          "source_id": "tp_ticket"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "融资来源记录：Chalkie AI Ltd. · 其他融资 · 2026-03-19 · 本轮领投 · $4M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ec143a998301194a"
-        },
-        {
-          "description": "融资来源记录：Chalkie AI Ltd. · 其他融资 · 2026-03-19 · 本轮领投 · $4M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f44e40d43e9d8583"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.triplepoint.vc/",
+          "url": "https://www.triplepoint.vc/",
+          "source_id": "tp_stage"
+        },
+        {
+          "kind": "email",
+          "label": "投资联系邮箱",
+          "value": "team@triplepoint.vc",
+          "source_id": "tp_stage"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tp_identity",
+          "source_url": "https://www.triplepoint.vc/",
+          "source_title": "Triple Point Ventures — Backing bold founders from day one",
+          "source_content_hash": "a55f1bb33a3d87c86a07425ab0df937130e5d7faa07cacf91e9deed7ac9307c6",
+          "quote": "Triple Point is the trading name for the Triple Point Group",
+          "quote_hash": "c6d210a3e18a20abc1a567b1b7b35809a284d7d1d46378ad524b536d1a9b780d"
+        },
+        {
+          "source_id": "tp_stage",
+          "source_url": "https://www.triplepoint.vc/",
+          "source_title": "Triple Point Ventures — Backing bold founders from day one",
+          "source_content_hash": "a55f1bb33a3d87c86a07425ab0df937130e5d7faa07cacf91e9deed7ac9307c6",
+          "quote": "Pre-seed & seed stage We meet founders early and move quickly. We invest early, and we lead.",
+          "quote_hash": "ae0f821ffa4a5fdff5a986d0758638b083d6625a666ee9a9bb2a9a8a463bab01"
+        },
+        {
+          "source_id": "tp_sectors",
+          "source_url": "https://www.triplepoint.vc/",
+          "source_title": "Triple Point Ventures — Backing bold founders from day one",
+          "source_content_hash": "a55f1bb33a3d87c86a07425ab0df937130e5d7faa07cacf91e9deed7ac9307c6",
+          "quote": "We invest across sectors, from fintech and health to climate, data and AI, backing founders long before the market catches on.",
+          "quote_hash": "643f7d8fbbd8a1bfea619fefae6490b92841023741cd181b97c24a5da4d810f6"
+        },
+        {
+          "source_id": "tp_ticket",
+          "source_url": "https://www.triplepoint.vc/",
+          "source_title": "Triple Point Ventures — Backing bold founders from day one",
+          "source_content_hash": "a55f1bb33a3d87c86a07425ab0df937130e5d7faa07cacf91e9deed7ac9307c6",
+          "quote": "We like to lead rounds with tickets up to £5m.",
+          "quote_hash": "67e32d6db0b7c0a340cbf510353a6ad1f030f5d0759dd6dc941c21b4a853a50e"
+        },
         {
           "source_id": "FISRC-ec143a998301194a",
           "source_url": "https://www.prnewswire.com/news-releases/chalkie-ai-powered-lesson-plan-builder-for-teachers-closes-4m-funding-round-302718442.html",
@@ -189,7 +255,8 @@
           "quote_hash": "566fbc0a8fd2d6d1113c2b638fb1cc929fea8f869b03f171eddc7d32dcba29c8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

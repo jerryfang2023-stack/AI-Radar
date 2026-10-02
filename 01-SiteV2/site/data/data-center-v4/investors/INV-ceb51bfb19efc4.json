@@ -123,10 +123,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "3W Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "香港交易所招股书将 3W Fund 对应至 3W Fund Management Limited，记载其为香港注册并获 SFC 第 9 类资产管理牌照的管理人；其管理的基金采用基本面与价值投资原则。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法律主体",
+          "value": "3W Fund Management Limited（简称 3W Fund），香港注册有限公司。",
+          "source_id": "threew_identity"
+        },
+        {
+          "field": "license",
+          "label": "监管牌照",
+          "value": "获香港证监会许可从事第 9 类资产管理活动。",
+          "source_id": "threew_identity"
+        },
+        {
+          "field": "fund_management",
+          "label": "基金管理",
+          "value": "管理 3W Greater China Focus Fund 和 3W Global Fund。",
+          "source_id": "threew_management"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "通过基本面研究与价值投资原则追求绝对回报和长期资本增长。",
+          "source_id": "threew_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -137,6 +161,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "threew_identity",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2021/1217/2021121700005.pdf",
+          "source_title": "History and Development — Project Unicorn listing prospectus",
+          "source_content_hash": "f6267ac36010a02048b4fa5bc197d37bf3da2df035987574cb9c0c48afdc29ef",
+          "quote": "3W Fund Management Limited (“ 3W Fund ”) is incorporated in Hong Kong with limited liability and\r\nlicensed by the SFC to carry out Type 9 (asset management) regulated activity. 3W Fund has agreed to\r\nprocure certain investors, namely 3W Greater China Focus Fund and 3W Global Fund, that 3W Fund has\r\ndiscretionary investment management power over, to subscribe for such number of the Investor Shares.\r\n3W Greater China Focus Fund and 3W Global Fund pursue to maximize absolute return and seek\r\nlong-term capital growth primarily through fundamental investment principle with value approach.",
+          "quote_hash": "4c60f5bea3f5ca86e045e68a49244731509b935168a5dc322fcc3e7370f64e23"
+        },
+        {
+          "source_id": "threew_management",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2021/1217/2021121700005.pdf",
+          "source_title": "History and Development — Project Unicorn listing prospectus",
+          "source_content_hash": "f6267ac36010a02048b4fa5bc197d37bf3da2df035987574cb9c0c48afdc29ef",
+          "quote": "3W Fund Management Limited (“ 3W Fund ”) is incorporated in Hong Kong with limited liability and\r\nlicensed by the SFC to carry out Type 9 (asset management) regulated activity. 3W Fund has agreed to\r\nprocure certain investors, namely 3W Greater China Focus Fund and 3W Global Fund, that 3W Fund has\r\ndiscretionary investment management power over, to subscribe for such number of the Investor Shares.\r\n3W Greater China Focus Fund and 3W Global Fund pursue to maximize absolute return and seek\r\nlong-term capital growth primarily through fundamental investment principle with value approach.",
+          "quote_hash": "4c60f5bea3f5ca86e045e68a49244731509b935168a5dc322fcc3e7370f64e23"
+        },
+        {
+          "source_id": "threew_strategy",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2021/1217/2021121700005.pdf",
+          "source_title": "History and Development — Project Unicorn listing prospectus",
+          "source_content_hash": "f6267ac36010a02048b4fa5bc197d37bf3da2df035987574cb9c0c48afdc29ef",
+          "quote": "3W Greater China Focus Fund and 3W Global Fund pursue to maximize absolute return and seek\r\nlong-term capital growth primarily through fundamental investment principle with value approach.",
+          "quote_hash": "25e62a223ee84aa13814af90c4d86b80668798345212a24a84d2329ab60d1937"
+        },
+        {
           "source_id": "FISRC-6d1ff348d372728c",
           "source_url": "https://pixverse.ai/en/blog/pixverse-joins-global-ai-unicorns-asia-largest-funding-ai-video",
           "source_title": "PixVerse Joins the Ranks of Global AI Unicorns with Asia's Largest Funding Round in AI Video Generation",
@@ -145,7 +193,8 @@
           "quote_hash": "6e69a63fe64f947335fec080603c5175d7449159fd66a7eca4054cdad34aeb09"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

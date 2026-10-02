@@ -139,10 +139,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "LionTree Investment Fund, L.P. 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案只描述SEC申报可确认的基金法律身份和分类；不将该基金载体与其他LionTree关联实体合并，也不推断其投资策略。",
+      "summary": "美国证券交易委员会2021年Form D将 LionTree Investment Fund, L.P. 列为开曼群岛有限合伙，并勾选为集合投资基金及私募股权基金。该申报确认具体基金载体和管理关系，但未披露其投资策略或组合。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法律形式与注册地",
+          "value": "Form D列示为有限合伙，注册地为开曼群岛，设立年份为2021。",
+          "source_id": "liontree_identity"
+        },
+        {
+          "field": "fund_type",
+          "label": "监管申报分类",
+          "value": "Form D勾选集合投资基金与私募股权基金；未勾选风险投资基金。",
+          "source_id": "liontree_fund_type"
+        },
+        {
+          "field": "general_partner",
+          "label": "普通合伙人",
+          "value": "LionTree Investment Fund GP, L.P.被列为该发行人的普通合伙人。",
+          "source_id": "liontree_gp"
+        },
+        {
+          "field": "manager",
+          "label": "管理人",
+          "value": "LionTree Investment Management, LLC被列为该基金发行人的管理人。",
+          "source_id": "liontree_manager"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +178,38 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "liontree_identity",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1888958/000156761921019205/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "a9fed96a9656385ac09b5936b2bb684eef6649aebd94dc570b64f84bd9f07b95",
+          "quote": "Entity Type 0001888958 Corporation X Limited Partnership Limited Liability Company General Partnership Business Trust Other (Specify) Name of Issuer LionTree Investment Fund, L.P. Jurisdiction of Incorporation/Organization CAYMAN ISLANDS Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2021 Yet to Be Formed",
+          "quote_hash": "5fbdbf6f7a8a43982aca3e3ddade5f92870b893d6da5d1148d50139dd55a5181"
+        },
+        {
+          "source_id": "liontree_fund_type",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1888958/000156761921019205/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "a9fed96a9656385ac09b5936b2bb684eef6649aebd94dc570b64f84bd9f07b95",
+          "quote": "4. Industry Group Agriculture Banking & Financial Services Commercial Banking Insurance Investing Investment Banking X Pooled Investment Fund Hedge Fund X Private Equity Fund Venture Capital Fund Other Investment Fund Is the issuer registered as an investment company under the Investment Company Act of 1940? Yes X No Other Banking & Financial Services Business Services Energy Coal Mining Electric Utilities Energy Conservation Environmental Services Oil & Gas Other Energy Health Care Biotechnology Health Insurance Hospitals & Physicians Pharmaceuticals Other Health Care Manufacturing Real Estate Commercial Construction REITS & Finance Residential Other Real Estate Retailing Restaurants Technology Computers Telecommunications Other Technology Travel Airlines & Airports Lodging & Conventions Tourism & Travel Services Other Travel Other 5. Issuer Size",
+          "quote_hash": "c2890127172229d5eea0c00ce04dc8f8deb888a88ff1ebb1e9576fdde7f52eda"
+        },
+        {
+          "source_id": "liontree_gp",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1888958/000156761921019205/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "a9fed96a9656385ac09b5936b2bb684eef6649aebd94dc570b64f84bd9f07b95",
+          "quote": "LionTree Investment Fund GP, L.P. N/A Street Address 1 Street Address 2 c/o LionTree Investment Management, LLC 660 Madison Ave., 15th Floor City State/Province/Country ZIP/PostalCode New York NEW YORK 10065 Relationship: X Executive Officer Director Promoter Clarification of Response (if Necessary): General Partner of the Issuer",
+          "quote_hash": "e93487002b18804f2b9b7da630651e51a802da3c7f927e63c74fe4c82990f64e"
+        },
+        {
+          "source_id": "liontree_manager",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1888958/000156761921019205/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "a9fed96a9656385ac09b5936b2bb684eef6649aebd94dc570b64f84bd9f07b95",
+          "quote": "LionTree Investment Management, LLC 660 Madison Ave., 15th Floor City State/Province/Country ZIP/PostalCode New York NEW YORK 10065 Relationship: X Executive Officer Director Promoter Clarification of Response (if Necessary): General Partner of the Issuer Last Name First Name Middle Name LionTree Investment Fund GP, LLC N/A Street Address 1 Street Address 2 c/o LionTree Investment Management, LLC 660 Madison Ave., 15th Floor City State/Province/Country ZIP/PostalCode New York NEW YORK 10065 Relationship: X Executive Officer Director Promoter Clarification of Response (if Necessary): General Partner of General Partner of Issuer Last Name First Name Middle Name LionTree Investment Management, LLC N/A Street Address 1 Street Address 2 660 Madison Ave., 15th Floor City State/Province/Country ZIP/PostalCode New York NEW YORK 10065 Relationship: X Executive Officer Director Promoter Clarification of Response (if Necessary): Manager of Issuer",
+          "quote_hash": "d70b1f13c4595b63f5280268ded4ec1b7f3c9a7dda71784aa899bffb8c1585a6"
+        },
+        {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
           "source_title": "NSCALE 在 IPO 前可转换融资中筹集 $3.36B",
@@ -161,7 +218,7 @@
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

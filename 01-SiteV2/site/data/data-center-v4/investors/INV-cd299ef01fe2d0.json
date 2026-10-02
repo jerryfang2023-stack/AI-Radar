@@ -180,10 +180,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Systemiq Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Systemiq Capital Limited 是受英国金融行为监管局监管的风险投资机构；官网称其主要在Series A阶段前后投资英国、欧洲和美国的创业公司，关注电气化、自然系统和应用人工智能。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法律身份",
+          "value": "官网列明 Systemiq Capital Limited，并称其获英国金融行为监管局授权和监管。",
+          "source_id": "sys_legal"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Series A阶段前后。",
+          "source_id": "sys_stage"
+        },
+        {
+          "field": "investment_scope",
+          "label": "地域与方向",
+          "value": "地域覆盖英国、欧洲和美国；重点为电气化、解码自然和应用人工智能。",
+          "source_id": "sys_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +213,40 @@
           "source_id": "FISRC-6421d8860f804048"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.systemiqcapital.earth/",
+          "url": "https://www.systemiqcapital.earth/",
+          "source_id": "sys_stage"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sys_legal",
+          "source_url": "https://www.systemiqcapital.earth/",
+          "source_title": "Systemiq Capital",
+          "source_content_hash": "ae7b47bee628845163e5305325006b677998f46bfcbcec5e9409fb93da276404",
+          "quote": "Systemiq Capital Limited is authorised and regulated by the Financial Conduct Authority (FRN. 1031756).",
+          "quote_hash": "d298c75558d41863e325e21724c2793c16af8d1b8ef5f0bd8ba91a2a2e55e099"
+        },
+        {
+          "source_id": "sys_stage",
+          "source_url": "https://www.systemiqcapital.earth/",
+          "source_title": "Systemiq Capital",
+          "source_content_hash": "ae7b47bee628845163e5305325006b677998f46bfcbcec5e9409fb93da276404",
+          "quote": "Systemiq Capital is a venture firm investing at Series A +/– across the UK, Europe and the US, backing founders in Electrification, Decoding Nature and Applied AI.",
+          "quote_hash": "30847acf9dc086af431e56d8ff98f56c31849d030dc6c44bed861ba583c491c1"
+        },
+        {
+          "source_id": "sys_focus",
+          "source_url": "https://www.systemiqcapital.earth/",
+          "source_title": "Systemiq Capital",
+          "source_content_hash": "ae7b47bee628845163e5305325006b677998f46bfcbcec5e9409fb93da276404",
+          "quote": "backing founders in Electrification, Decoding Nature and Applied AI.",
+          "quote_hash": "46610de631e0b632057f8f697b076217460da8d835f42e1976a407802270a994"
+        },
         {
           "source_id": "FISRC-2877a4b61010da1c",
           "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
@@ -214,7 +264,8 @@
           "quote_hash": "756a044d006f2f5b97198da9a18532229656ff69fff15b8613cb758e883c723d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

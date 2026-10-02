@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "YOUXEL Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "YOUXEL Ventures 官网称其主要投资早期 B2B 初创公司，覆盖 IT、保险、物流、社会服务和医疗健康，并可通过直投或合作基金投资。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资阶段与对象",
+          "value": "重点关注早期 B2B 初创公司。",
+          "source_id": "youxel_stage"
+        },
+        {
+          "field": "investment_scope",
+          "label": "行业范围",
+          "value": "IT、保险、物流、社会服务和医疗健康。",
+          "source_id": "youxel_sectors"
+        },
+        {
+          "field": "investment_method",
+          "label": "投资方式",
+          "value": "可直接投资项目、公司和初创企业，也可通过合作基金投资。",
+          "source_id": "youxel_method"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,40 @@
           "source_id": "FISRC-9e1446cb9cb3e95e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://youxel.vc/",
+          "url": "https://youxel.vc/",
+          "source_id": "youxel_stage"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "youxel_stage",
+          "source_url": "https://youxel.vc/investment-thesis",
+          "source_title": "YOUXEL Ventures | Investment Thesis",
+          "source_content_hash": "bcbca25d1bead3750f4a55ba049bc741ff014faa5d561d88c927a9cde4c02d43",
+          "quote": "Our primary focus is on early-stage B2B startups where our expertise and strategic support can accelerate growth.",
+          "quote_hash": "85c6829b45ffabe94955722e558084d9b5c1c9991f0d9895d90ea2fc3c409a12"
+        },
+        {
+          "source_id": "youxel_sectors",
+          "source_url": "https://youxel.vc/investment-thesis",
+          "source_title": "YOUXEL Ventures | Investment Thesis",
+          "source_content_hash": "bcbca25d1bead3750f4a55ba049bc741ff014faa5d561d88c927a9cde4c02d43",
+          "quote": "We invest across key verticals including IT, insurance, logistics, social services, and healthcare—balancing innovation with impact.",
+          "quote_hash": "b6ad585542ad71d3608b03d061a4bcc6de55846c51f4cb2571529c35d63d798a"
+        },
+        {
+          "source_id": "youxel_method",
+          "source_url": "https://youxel.vc/about",
+          "source_title": "YOUXEL Ventures | About",
+          "source_content_hash": "102f10ba40ebda737de49457a0fab56b57588f882f45da82f3d95382a76d2eff",
+          "quote": "We back IT projects, companies, and startups directly or through trusted funds that share our vision.",
+          "quote_hash": "f95058059fcf289a4f87db7280ca3abe5bf9869e4025269652fb7a0497185456"
+        },
         {
           "source_id": "FISRC-9e1446cb9cb3e95e",
           "source_url": "https://waya.media/sinai-ai-raises-usd-1-45m-pre-seed-to-turn-books-into-ai-powered-experiences/",
@@ -161,7 +211,8 @@
           "quote_hash": "77a70bb3a2725a51b4d51f7e35d324ee64367d6a4351cadd7b0bd8e452aabe5d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

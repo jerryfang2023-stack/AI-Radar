@@ -139,10 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Neotribe Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Neotribe Ventures 的官方博客显示，其投资平台覆盖种子轮至成长期：Neotribe Ventures Fund I、II关注 Seed 和 Series A，2022年推出的 Ignite Fund I 面向 Series B+ 公司。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资阶段",
+          "value": "Neotribe Ventures Fund I、II关注 Seed 和 Series A；Ignite Fund I 投资 Series B+ 公司。",
+          "source_id": "neo_stages"
+        },
+        {
+          "field": "fundraising",
+          "label": "基金规模",
+          "value": "官方文章于2022年宣布推出规模为9,000万美元的 Neotribe Ignite Fund I；此为历史募资信息。",
+          "source_id": "neo_ignite"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +165,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "neo_stages",
+          "source_url": "https://blog.neotribe.vc/neotribe-ventures-launches-90m-fund-to-investment-in-early-growth-stage-companies/",
+          "source_title": "Neotribe Ventures Launches $90M Fund to Invest in Growth Stage Companies",
+          "source_content_hash": "a017b7c1cf72e4289ae8b3af1c11915bce91e676f6d5e07a9975b81fe76a3e00",
+          "quote": "The Ignite Fund is a natural extension of our existing platform, which includes our first two funds (Neotribe Ventures Fund I and II) that are focused on Seed and Series A companies.",
+          "quote_hash": "2d6677a616c06244f7d0149d6cf03abbf7be54c84e1819f8d944ee323df779db"
+        },
+        {
+          "source_id": "neo_ignite",
+          "source_url": "https://blog.neotribe.vc/neotribe-ventures-launches-90m-fund-to-investment-in-early-growth-stage-companies/",
+          "source_title": "Neotribe Ventures Launches $90M Fund to Invest in Growth Stage Companies",
+          "source_content_hash": "a017b7c1cf72e4289ae8b3af1c11915bce91e676f6d5e07a9975b81fe76a3e00",
+          "quote": "We are very excited to formally announce the launch of Neotribe Ignite Fund I, a $90M Fund that invests in Series B+ companies.",
+          "quote_hash": "766e0a2839a5800bed3b32e70ef903310274716896de3d02082648f7133be4d0"
+        },
+        {
           "source_id": "FISRC-7a7bcfb1a7209676",
           "source_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
           "source_title": "听力科技初创公司Legato结束隐身模式，获1200万美元融资，并首度展示其AI助听眼镜",
@@ -161,7 +189,8 @@
           "quote_hash": "068e407153c0ee66fc1c27e152aa5c92b47d9f150426b70b3b9449b8699da6fa"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
