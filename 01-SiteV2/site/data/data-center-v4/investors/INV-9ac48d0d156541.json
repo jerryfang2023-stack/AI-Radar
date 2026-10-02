@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-04",
     "latest_disclosed_at": "2026-07-16",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 2,
       "participant": 3
     },
@@ -302,6 +303,38 @@
             "quote_hash": "203c17999b1234ae949971f9a5ea71fa3abfbe76982d0381beb1fd7260c8c8de"
           }
         ]
+      },
+      {
+        "activity_id": "IA-3f4220146fcf9b08",
+        "funding_insight_id": "FI-3a45fb24c3af4f80",
+        "event_ids": [
+          "EV-39247400114d59dd"
+        ],
+        "company_entity_id": "EN-0d0dd4bc07420a2c",
+        "company_canonical_entity_id": "",
+        "company_name": "Volantis",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ea8cb9d5a8099465",
+            "source_url": "https://volantissemi.ai/news-insights/our-88m-series-a-demolishing-the-memory-wall-with-photonics-post",
+            "source_title": "Our $88M Series A: Demolishing the Memory Wall With Photonics | Volantis",
+            "source_content_hash": "090c5d55a2126f25",
+            "quote": "totalling $97M in funds raised to date, including from Sam Altman, Jeff Dean, Dylan Patel, John Doerr & others",
+            "quote_hash": "f5a899d38f8dfda3866d6641d2cf9c67a5777e2e7a1d3460d5bd24f98b1e58b3"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -344,6 +377,14 @@
         "source_content_hash": "ae17cd699a04f8e6",
         "quote": "angel investment from Google SVP Jeff Dean",
         "quote_hash": "203c17999b1234ae949971f9a5ea71fa3abfbe76982d0381beb1fd7260c8c8de"
+      },
+      {
+        "source_id": "FISRC-ea8cb9d5a8099465",
+        "source_url": "https://volantissemi.ai/news-insights/our-88m-series-a-demolishing-the-memory-wall-with-photonics-post",
+        "source_title": "Our $88M Series A: Demolishing the Memory Wall With Photonics | Volantis",
+        "source_content_hash": "090c5d55a2126f25",
+        "quote": "totalling $97M in funds raised to date, including from Sam Altman, Jeff Dean, Dylan Patel, John Doerr & others",
+        "quote_hash": "f5a899d38f8dfda3866d6641d2cf9c67a5777e2e7a1d3460d5bd24f98b1e58b3"
       }
     ],
     "public_profile": {

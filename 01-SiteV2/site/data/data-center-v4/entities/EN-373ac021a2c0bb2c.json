@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-39247400114d59dd",
       "EV-0f7dc05e62a249e8",
       "EV-bd5b6110559f2fda",
       "EV-8fcb52bb6ec980af",
@@ -90,13 +91,14 @@
       "EN-7d3194f79e645c42"
     ],
     "firstSeen": "2026-05-27",
-    "lastSeen": "2026-09-22",
+    "lastSeen": "2026-10-02",
     "relationIds": [
       "REL2-f8319ba3694b2987",
       "REL2-59ab2863fcb1e150"
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-39247400114d59dd",
         "EV-0f7dc05e62a249e8"
       ],
       "deployments": [
@@ -123,6 +125,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-39247400114d59dd",
+        "dataDate": "2026-10-02",
+        "date": "2026-10-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-0d0dd4bc07420a2c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-0d0dd4bc07420a2c",
+          "EN-8d4321d936320802",
+          "EN-373ac021a2c0bb2c"
+        ]
+      },
       {
         "id": "EV-0f7dc05e62a249e8",
         "dataDate": "2026-09-22",
@@ -1119,13 +1151,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
-        "TX-use_case-security_operations",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-use_case-security_operations",
+        "TX-product_form-enterprise_software_platform",
+        "TX-industry-financial_services",
         "TX-industry-media_entertainment",
         "TX-target_user-consumer",
         "TX-industry-legal_services",
-        "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
@@ -1135,12 +1168,12 @@
         "TX-product_form-end_user_application",
         "TX-use_case-content_creation",
         "TX-product_form-chip_accelerator",
+        "TX-industry-retail_ecommerce",
         "TX-use_case-customer_support",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
+        "TX-technology-code_generation",
         "TX-technology-speech_audio",
-        "TX-industry-financial_services",
-        "TX-industry-retail_ecommerce",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
@@ -1148,7 +1181,6 @@
         "TX-product_form-developer_tool",
         "TX-use_case-software_development",
         "TX-industry-professional_services",
-        "TX-technology-code_generation",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
         "TX-technology-image_generation",
@@ -1247,10 +1279,17 @@
       "typeLabel": "技术",
       "valueId": "agentic_execution",
       "eventIds": [
+        "EV-1c7050585c7f4791",
+        "EV-39247400114d59dd",
+        "EV-42a74865c9b654bb",
+        "EV-7c43338b102d18f2",
         "EV-80aeba0846bbd197",
         "EV-98ea446e097a9a95",
         "EV-e124ba0fc4fef3c0",
+        "EV-f30a987e608c70ae",
         "EV-4c9c7ab2dded69b3",
+        "EV-5bf410afc8aa8178",
+        "EV-bccd915b61c48911",
         "EV-35fa913e4709b4d6",
         "EV-1ef8979f39a2ccc5",
         "EV-3d0b9dcdf8daec4c",
@@ -1880,10 +1919,17 @@
         "EV-c17f5a364ed6a3ac"
       ],
       "entityIds": [
+        "EN-f8223ea5a9c41813",
+        "EN-0d0dd4bc07420a2c",
+        "EN-aeb82e4e68b4f60f",
+        "EN-2235ec582ab306e6",
         "EN-6dcc023b5791108c",
         "EN-bbdefa2950f49882",
         "EN-8bacc14fb816a980",
+        "EN-0aa3069e184a3bce",
         "EN-324a65940c9148ba",
+        "EN-4b49fcc30b9a847a",
+        "EN-a89df13c958d37ea",
         "EN-b4c73396844f7d05",
         "EN-f76a8103e49bcc36",
         "EN-190832408e35096c",
@@ -2338,7 +2384,10 @@
       "typeLabel": "行业",
       "valueId": "manufacturing",
       "eventIds": [
+        "EV-72c91001092a54bd",
+        "EV-4c5dc2fc6d805b3f",
         "EV-f2950d2104e97163",
+        "EV-04d9a4c160a01586",
         "EV-3c86fb0161715336",
         "EV-3ca24f79062a359e",
         "EV-71d477e3af99ef9a",
@@ -2558,7 +2607,10 @@
         "EV-2c7d13d234147817"
       ],
       "entityIds": [
+        "EN-6aa1fcea0024c6ce",
+        "EN-7b9b33ca95deff50",
         "EN-50d7f4250bdd8888",
+        "EN-8775c1a21007e7c0",
         "EN-67895119a5182d06",
         "EN-73c2f5aa8e632c19",
         "EN-e7d56af70143fcd7",
@@ -3965,6 +4017,81 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-62b734209df1f885",
+      "snapshotKey": "62b734209df1f885",
+      "snapshotId": "HWS-570781fe4081b6b9",
+      "eventId": "EV-39247400114d59dd",
+      "eventIds": [
+        "EV-39247400114d59dd"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "SAN FRANCISCO",
+      "subject": "SAN FRANCISCO",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "88",
+          "unit": "$million",
+          "fact_ref": "HWF-9b3548f205ab3538"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-9b3548f205ab3538",
+          "fact_type": "product",
+          "observed_at": "2026-10-01",
+          "subject_entity_id": "EN-1a2290470e0aa754",
+          "subject_name": "SAN FRANCISCO",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "88",
+          "unit": "$million",
+          "source_quote": "SAN FRANCISCO, Oct. 1, 2026 /PRNewswire/ -- Volantis, a semiconductor company building a new category of AI inference system, today announced an $88 million Series A co-led by Lachy Groom and Abstract Ventures, with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures. The round also includes angel investors Dwarkesh Patel, Naveen Rao and Sholto Douglas.\nVolantis is building a new AI inference architecture that eliminates the tradeoff between memory capacity and bandwidth. Its first system, A-1, is being designed to run models exceeding 20 trillion parameters at up to 10,000 tokens per second per user, while reducing inference cost per token.\nThe company's founding team includes semiconductor and photonics veterans from NVIDIA, AMD, Broadcom and Ayar Labs. Their previous work includes the first CoWoS product, the first high-volume tunable VCSELs and early silicon photonics co-packaged optics systems.\n\"As AI agents take on more work, how fast they complete that work will increasingly determine how fast companies can operate,\" said Tapa Ghosh, CEO and co-founder of V",
+          "event_refs": [
+            "EV-39247400114d59dd"
+          ],
+          "claim_ref": "CL-2fe94cd175514e8b",
+          "source_refs": [
+            "SA-12d830f9b8949fb4"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0d0dd4bc07420a2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-0d0dd4bc07420a2c",
+        "EN-8d4321d936320802",
+        "EN-373ac021a2c0bb2c"
+      ]
+    },
     {
       "id": "HWC-782f385baae37a60",
       "snapshotKey": "782f385baae37a60",

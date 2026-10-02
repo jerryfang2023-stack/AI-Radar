@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,25 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 6,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
-    "china_market_company_count": 6,
+    "china_market_activity_count": 7,
+    "china_market_company_count": 7,
     "first_disclosed_at": "2026-03-05",
-    "latest_disclosed_at": "2026-08-31",
+    "latest_disclosed_at": "2026-09-25",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 1,
+      "other_current_round": 1,
       "participant": 4
     },
     "round_codes": [
+      "angel_plus",
       "multi_round",
       "pre_series_a",
       "pre_series_b",
@@ -86,6 +88,11 @@
       "series_b_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e3a0a86bbd35dc79",
+        "canonical_entity_id": "",
+        "name": "北京新烛时代科技有限公司"
+      },
       {
         "entity_id": "EN-e7492db096492304",
         "canonical_entity_id": "EN-e7492db096492304",
@@ -118,6 +125,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-181ddc048bcf0cfc",
+        "funding_insight_id": "FI-fe50512419bbefbd",
+        "event_ids": [
+          "EV-eb5cde943f5c8858"
+        ],
+        "company_entity_id": "EN-e3a0a86bbd35dc79",
+        "company_canonical_entity_id": "",
+        "company_name": "北京新烛时代科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "超过4000万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 40000000,
+          "min_value": 40000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 4000 万元"
+        },
+        "announced_at": "2026-09-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-0992c85652bbaa98",
+            "source_url": "https://m.sohu.com/a/1080637979_114984?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "新烛时代获超4000万元天使+轮融资，中金资本等共同出资",
+            "source_content_hash": "b04480c76287403febb6695af771722f99c6278a591cc41526663e41ca1c3886",
+            "quote": "中金资本、天鹰资本、顺创产投以及中新绿电共同出资。",
+            "quote_hash": "0613174e008758f56944c2951c1c79b29107a3cf34d089476da94d532f8b3eed"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9d06b526afd43975",
         "funding_insight_id": "FI-0393a877e1b99840",
@@ -469,6 +516,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0992c85652bbaa98",
+        "source_url": "https://m.sohu.com/a/1080637979_114984?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "新烛时代获超4000万元天使+轮融资，中金资本等共同出资",
+        "source_content_hash": "b04480c76287403febb6695af771722f99c6278a591cc41526663e41ca1c3886",
+        "quote": "中金资本、天鹰资本、顺创产投以及中新绿电共同出资。",
+        "quote_hash": "0613174e008758f56944c2951c1c79b29107a3cf34d089476da94d532f8b3eed"
+      },
+      {
         "source_id": "FISRC-1ae72db61aa80327",
         "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
         "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
@@ -620,16 +675,16 @@
           "source_id": "ccicapital_home"
         },
         {
+          "description": "融资来源记录：北京新烛时代科技有限公司 · 天使+轮 · 2026-09-25 · 本轮联合投资 · 超过4000万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0992c85652bbaa98"
+        },
+        {
           "description": "融资来源记录：松应科技 · 多轮融资 · 2026-08-31 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ae72db61aa80327"
         },
         {
           "description": "融资来源记录：MemoraX AI · 种子轮 · 2026-05-20 · 本轮联合领投 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-924702999fc88d2f"
-        },
-        {
-          "description": "融资来源记录：它石智航 · Pre-A轮 · 2026-04-16 · 本轮参投 · 超4.5亿美元（约30亿元）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b4d6b7523ee32ad7"
         }
       ],
       "contacts": [
@@ -665,6 +720,14 @@
           "quote_hash": "9eaacaf7782097da4e80fd6fac1856de57326c203c62a83814eeab3d3d1d8738"
         },
         {
+          "source_id": "FISRC-0992c85652bbaa98",
+          "source_url": "https://m.sohu.com/a/1080637979_114984?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "新烛时代获超4000万元天使+轮融资，中金资本等共同出资",
+          "source_content_hash": "b04480c76287403febb6695af771722f99c6278a591cc41526663e41ca1c3886",
+          "quote": "中金资本、天鹰资本、顺创产投以及中新绿电共同出资。",
+          "quote_hash": "0613174e008758f56944c2951c1c79b29107a3cf34d089476da94d532f8b3eed"
+        },
+        {
           "source_id": "FISRC-1ae72db61aa80327",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
           "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
@@ -679,14 +742,6 @@
           "source_content_hash": "76bcd79d46511d45",
           "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
           "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
-        },
-        {
-          "source_id": "FISRC-b4d6b7523ee32ad7",
-          "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-          "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-          "source_content_hash": "0f321e5ffc10ea03",
-          "quote": "美团龙珠、中金资本、凯联资本、东方富海、钧山投资等知名财务基金跟投",
-          "quote_hash": "b3b9c68d94864a2a92f1b96221e71974952e1eb702fac2cdea4e04de605a537a"
         }
       ],
       "coverage_status": "researched",
@@ -697,7 +752,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[7].role": {
           "text": "Pre-A+轮及Pre-B轮投资方",
           "source_hash": "835c2f14217bdc7f4dc70b73a9dc6d6fa0ef29f3df00cd31ad15041aaa55a817",
           "provider": "deepseek",

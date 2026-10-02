@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-23",
-    "latest_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-09-24",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6d478f33a9e3cba3",
+        "canonical_entity_id": "",
+        "name": "BigHat Biosciences"
+      },
       {
         "entity_id": "EN-8c15a763882d4862",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5e1e6053b39bc371",
+        "funding_insight_id": "FI-ba9adf4a4c9d49c3",
+        "event_ids": [
+          "EV-acd3165ca45a6b36"
+        ],
+        "company_entity_id": "EN-6d478f33a9e3cba3",
+        "company_canonical_entity_id": "",
+        "company_name": "BigHat Biosciences",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$75 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7500 万美元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3372eff279ee29db",
+            "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+            "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+            "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+            "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+            "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
+          }
+        ]
+      },
       {
         "activity_id": "IA-850d93ebf00aad75",
         "funding_insight_id": "FI-0393a8a6e43ef544",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-3372eff279ee29db",
+        "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+        "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+        "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+        "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+        "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
+      },
+      {
         "source_id": "FISRC-1898b8cd3bcc2449",
         "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
         "source_title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
@@ -141,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Section 32 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Section 32 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3372eff279ee29db"
+        },
         {
           "description": "融资来源记录：Ema · B轮 · 2026-09-23 · 本轮参投 · $77M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1898b8cd3bcc2449"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-3372eff279ee29db",
+          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+          "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+          "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+          "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+          "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
+        },
         {
           "source_id": "FISRC-1898b8cd3bcc2449",
           "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",

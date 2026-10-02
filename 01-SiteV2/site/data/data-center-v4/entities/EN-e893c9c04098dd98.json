@@ -1,0 +1,185 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3811,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-e893c9c04098dd98",
+    "name": "杭州佳量脑科学股份有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-04edcb21249dffcf"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-08",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-04edcb21249dffcf"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-04edcb21249dffcf",
+        "dataDate": "2026-10-02",
+        "date": "2026-09-08",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-b733f8c3adeccf85"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b733f8c3adeccf85",
+          "EN-e893c9c04098dd98"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-f1868a9ced3a02e4",
+      "snapshotKey": "f1868a9ced3a02e4",
+      "snapshotId": "HWS-b2140cc0a14280f7",
+      "eventId": "EV-04edcb21249dffcf",
+      "eventIds": [
+        "EV-04edcb21249dffcf"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "佳量脑科学",
+      "subject": "佳量脑科学",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-8a71e41719cbcf6e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-8a71e41719cbcf6e",
+          "fact_type": "product",
+          "observed_at": "2026-09-08",
+          "subject_entity_id": "EN-b733f8c3adeccf85",
+          "subject_name": "佳量脑科学",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "近日，中国领先的数据驱动全栈脑机接口平台企业——杭州佳量脑科学股份有限公司（下称“佳量脑科学”）宣布连续完成C轮及D轮两轮融资，累计融资金额达数亿元人民币。其中C轮融资由启明创投领投。\n本轮融资后，佳量脑科学将围绕商业化、国际化持续投入：加快推进Epilcure™注册上市及商业化进程，持续推进Vivastep™等下一代神经接口产品的临床转化，进一步完善脑科学数据和算法平台建设；在海外市场，公司将推进FDA、CE等国际注册及全球临床合作，依托杭州与新加坡的双中心布局，逐步建立面向国际市场的产品和临床合作体系。对于佳量脑科学而言，下一阶段的核心目标已经从证明技术可行，转向证明产品价值、扩大临床应用并形成商业化能力。\n脑机接口是材料、芯片、AI算法、神经科学、精密工程等多学科融合的硬科技制高点，技术壁垒极高。业内普遍认为，随着政策支持、临床刚需、AI算法、植入式硬件和精密制造能力逐步成熟，脑机接口产业的竞争焦点正在从单点技术突破，转向跨学科、跨产品、跨场景复用的平台能力。本轮融资释放出一个清晰信号：脑机接口正在从前沿技术探索，进入临床验证和产业化落地并行的新阶段。\n佳量脑科学成立于2020年，总部位于杭州，在新加坡设有国际化中心，秉持“Brain to Beyond｜从脑出发，超越边界”的愿景，聚焦脑疾病精准诊疗、闭环神经调控与脑健康管理，是这一产业拐点的代表企业。\n01/\n核心产品持续兑现，从技术创新走向临床应用\n佳量脑科学研发的LaserRO™磁共振监测半导体激光治疗系统已取得国家三类医疗器械注册证，完成从创新医疗器械特别审查、临床验证到注册上市的产品兑现。系统通过术前影像规划、立体定向植入和磁共振实时热成像监测，对颅内病灶实施精准激光消融，为药物难治性癫痫及脑部病变提供微创治疗方案；其双波长激光、实时温度监测和术前规划等技术，可进一步提升消融治疗的精准性和可控性。\n公司研发的S-Deep™颅内深部电极（SEEG）已取得国家三类医疗器械注册证，用于颅内脑电信号采集及癫痫精准定位，并可作为植入式脑机接口系统的重要神经接口。由此，佳量脑科学在神经信号采集、精准定位与神经调控之间形成了产品协同，为后续闭环脑机接口产品的临床应用提供基础。\n佳量脑科学研发的Epilcure™植入式脑机接口神经刺激系统面向药物难治性局灶性癫痫，通过植入式电极持续监测颅内脑电活动，在识别异常脑电信号后自动启动响应性刺激，实现基于脑电感知的闭环神经调控。该产品于2022年进入国家创新医疗器械特别审查程序，2025年完成110例确证性临床试验入组，累计完成120余例临床植入。与传统开环神经刺激不同",
+          "event_refs": [
+            "EV-04edcb21249dffcf"
+          ],
+          "claim_ref": "CL-52b2780d02559b02",
+          "source_refs": [
+            "SA-b0b434b63bfc36ef"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
+      "entityIds": [
+        "EN-b733f8c3adeccf85",
+        "EN-e893c9c04098dd98"
+      ]
+    }
+  ]
+}

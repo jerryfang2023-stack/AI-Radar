@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -56,29 +56,29 @@
     "id": "INV-b8a0e793124952",
     "name": "Andreessen Horowitz",
     "aliases": [
-      "a16z",
-      "Andreessen Horowitz (a16z)"
+      "Andreessen Horowitz (a16z)",
+      "a16z"
     ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 25,
+    "current_round_count": 28,
     "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 23,
+    "portfolio_company_count": 26,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-09-22",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 4,
       "historical_or_ambiguous": 7,
       "lead": 18,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "multi_round",
@@ -90,9 +90,20 @@
       "series_c",
       "series_d",
       "series_e",
-      "series_f"
+      "series_f",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
+      },
+      {
+        "entity_id": "EN-6d478f33a9e3cba3",
+        "canonical_entity_id": "",
+        "name": "BigHat Biosciences"
+      },
       {
         "entity_id": "EN-4b6cef91ffb05303",
         "canonical_entity_id": "",
@@ -107,6 +118,11 @@
         "entity_id": "EN-e853b4e183ed0870",
         "canonical_entity_id": "",
         "name": "ElevenLabs"
+      },
+      {
+        "entity_id": "EN-7f4fdb8eb6e82b27",
+        "canonical_entity_id": "",
+        "name": "EliseAI"
       },
       {
         "entity_id": "FICO-etched",
@@ -210,6 +226,126 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-667f3e72d11e4164",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+            "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0828f27d38ee3801",
+        "funding_insight_id": "FI-6d5a9688ad42d1a0",
+        "event_ids": [
+          "EV-fc1d79dc823bfdd9"
+        ],
+        "company_entity_id": "EN-7f4fdb8eb6e82b27",
+        "company_canonical_entity_id": "",
+        "company_name": "EliseAI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$350 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4f44cd6d16442bdc",
+            "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
+            "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
+            "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
+            "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
+            "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-538632fb7381290b",
+        "funding_insight_id": "FI-ba9adf4a4c9d49c3",
+        "event_ids": [
+          "EV-acd3165ca45a6b36"
+        ],
+        "company_entity_id": "EN-6d478f33a9e3cba3",
+        "company_canonical_entity_id": "",
+        "company_name": "BigHat Biosciences",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$75 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7500 万美元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3372eff279ee29db",
+            "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+            "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+            "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+            "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+            "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
+          }
+        ]
+      },
       {
         "activity_id": "IA-89f6da7a504835b5",
         "funding_insight_id": "FI-00a8a79e470f2469",
@@ -1498,6 +1634,30 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+        "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+      },
+      {
+        "source_id": "FISRC-4f44cd6d16442bdc",
+        "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
+        "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
+        "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
+        "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
+        "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
+      },
+      {
+        "source_id": "FISRC-3372eff279ee29db",
+        "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+        "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+        "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+        "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+        "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
+      },
+      {
         "source_id": "FISRC-b764d2ad8902084d",
         "source_url": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
         "source_title": "Andreessen Horowitz 推出“学院”，无作业，并与 Palantir、Google 和 Meta 建立合作",
@@ -1867,16 +2027,16 @@
           "source_id": "a16z_about"
         },
         {
-          "description": "融资来源记录：Horowitz Andreessen Academy · 其他融资 · 2026-09-22 · 本轮领投 · $42 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b764d2ad8902084d"
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮联合领投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
         },
         {
-          "description": "融资来源记录：Vals · A轮 · 2026-09-19 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-404aba285b240b86"
+          "description": "融资来源记录：EliseAI · 轮次未披露 · 2026-09-29 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4f44cd6d16442bdc"
         },
         {
-          "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮领投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c224adac23aa7c1e"
+          "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3372eff279ee29db"
         }
       ],
       "contacts": [
@@ -1984,28 +2144,28 @@
           "quote_hash": "e99e0a75d100056586e1a241fc521ff6d9da626d9a7fcf9ab6dd36440c63b9bb"
         },
         {
-          "source_id": "FISRC-b764d2ad8902084d",
-          "source_url": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy",
-          "source_title": "Andreessen Horowitz 推出“学院”，无作业，并与 Palantir、Google 和 Meta 建立合作",
-          "source_content_hash": "23b7d549e5738d99",
-          "quote": "along with $42 million in funding led by a16z",
-          "quote_hash": "7c92bbc84205d4e3380a559570b5dcb0093a93f308557c5f669f3bd209bb4474"
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+          "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
         },
         {
-          "source_id": "FISRC-404aba285b240b86",
-          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
-          "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
-          "source_content_hash": "5d9a4e3004c9d318",
-          "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
-          "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+          "source_id": "FISRC-4f44cd6d16442bdc",
+          "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
+          "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
+          "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
+          "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
+          "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
         },
         {
-          "source_id": "FISRC-c224adac23aa7c1e",
-          "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
-          "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
-          "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
-          "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
-          "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
+          "source_id": "FISRC-3372eff279ee29db",
+          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+          "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+          "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+          "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+          "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         }
       ],
       "last_verified_at": "2026-09-25",

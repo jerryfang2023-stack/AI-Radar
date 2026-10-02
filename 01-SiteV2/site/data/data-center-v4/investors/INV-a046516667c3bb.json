@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 20,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 20,
+    "current_round_count": 22,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 22,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "co_lead": 1,
-      "historical_or_ambiguous": 2,
+      "co_lead": 2,
+      "historical_or_ambiguous": 3,
       "lead": 11,
-      "participant": 8
+      "participant": 9
     },
     "round_codes": [
       "multi_round",
@@ -103,6 +103,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
       },
       {
         "entity_id": "EN-834cc12fc35adde7",
@@ -133,6 +138,11 @@
         "entity_id": "EN-50b2676afbe30c83",
         "canonical_entity_id": "EN-50b2676afbe30c83",
         "name": "Higgsfield"
+      },
+      {
+        "entity_id": "EN-02d6646fb8486fbd",
+        "canonical_entity_id": "",
+        "name": "Kanu AI"
       },
       {
         "entity_id": "EN-5326805dc305fa71",
@@ -191,6 +201,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-8de03b56d96817f0",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+            "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-636415104ce806c3",
+        "funding_insight_id": "FI-21345da91c7c8f2d",
+        "event_ids": [
+          "EV-1715439efc5423dd"
+        ],
+        "company_entity_id": "EN-02d6646fb8486fbd",
+        "company_canonical_entity_id": "",
+        "company_name": "Kanu AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$11.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1170 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f7ac48fc9a7bad75",
+            "source_url": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html",
+            "source_title": "Kanu 走出隐身模式，为企业构建 AGI",
+            "source_content_hash": "bc2e40cccbf53714552441cd48b5c7f12f4a51781fc6841091a44eeec67cc80e",
+            "quote": "Trilogy Equity Partners leads the $11.7 million round, with participation from a16z speedrun, BMW i Ventures and Accel",
+            "quote_hash": "72cc048644e790883bca2e23bd1ef7ed5554805d2522ef8820680192178c268f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f18adfb4c87b7fcb",
         "funding_insight_id": "FI-0393a8a6e43ef544",
@@ -1001,6 +1091,38 @@
         ]
       },
       {
+        "activity_id": "IA-0e13f576a1b761b4",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "领投A轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-14fa67bc80a1ece9",
+            "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+            "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+            "source_content_hash": "f5a108f3994daf10",
+            "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+            "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-9749d0329f9fc775",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
@@ -1066,6 +1188,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+        "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+      },
+      {
+        "source_id": "FISRC-f7ac48fc9a7bad75",
+        "source_url": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html",
+        "source_title": "Kanu 走出隐身模式，为企业构建 AGI",
+        "source_content_hash": "bc2e40cccbf53714552441cd48b5c7f12f4a51781fc6841091a44eeec67cc80e",
+        "quote": "Trilogy Equity Partners leads the $11.7 million round, with participation from a16z speedrun, BMW i Ventures and Accel",
+        "quote_hash": "72cc048644e790883bca2e23bd1ef7ed5554805d2522ef8820680192178c268f"
+      },
       {
         "source_id": "FISRC-1898b8cd3bcc2449",
         "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
@@ -1235,6 +1373,14 @@
         "quote_hash": "508ac3f9ff7ee89de5dcb27977f3dba89a922f33afcc8cb15a9d2ce946817cea"
       },
       {
+        "source_id": "FISRC-14fa67bc80a1ece9",
+        "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+        "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+        "source_content_hash": "f5a108f3994daf10",
+        "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+        "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+      },
+      {
         "source_id": "FISRC-35d27946fd70aa42",
         "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
         "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
@@ -1285,16 +1431,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮联合领投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
+          "description": "融资来源记录：Kanu AI · 种子轮 · 2026-09-30 · 本轮参投 · $11.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f7ac48fc9a7bad75"
+        },
+        {
           "description": "融资来源记录：Ema · B轮 · 2026-09-23 · 本轮参投 · $77M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1898b8cd3bcc2449"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮领投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Atira · 种子轮 · 2026-09-03 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dfab45611a59a6cf"
         }
       ],
       "contacts": [
@@ -1367,28 +1513,28 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+          "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+        },
+        {
+          "source_id": "FISRC-f7ac48fc9a7bad75",
+          "source_url": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html",
+          "source_title": "Kanu 走出隐身模式，为企业构建 AGI",
+          "source_content_hash": "bc2e40cccbf53714552441cd48b5c7f12f4a51781fc6841091a44eeec67cc80e",
+          "quote": "Trilogy Equity Partners leads the $11.7 million round, with participation from a16z speedrun, BMW i Ventures and Accel",
+          "quote_hash": "72cc048644e790883bca2e23bd1ef7ed5554805d2522ef8820680192178c268f"
+        },
+        {
           "source_id": "FISRC-1898b8cd3bcc2449",
           "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
           "source_title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
           "source_content_hash": "aed60de0b0299f2e",
           "quote": "with existing investors Accel, Section 32, and Prosus increasing their stakes",
           "quote_hash": "069118ff869b0b60360e17fac78c42a06952f1dfe4275a277ebeb7c57898ee1e"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "The financing was led by new investors Andreessen Horowitz and Accel",
-          "quote_hash": "8aeaa43c0a1d28458ebe6cee07b19c91f3e4052962f30ba1e0151ceb0a77246a"
-        },
-        {
-          "source_id": "FISRC-dfab45611a59a6cf",
-          "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
-          "source_title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
-          "source_content_hash": "2c19612efff8843e",
-          "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
-          "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
         }
       ],
       "last_verified_at": "2026-09-25",

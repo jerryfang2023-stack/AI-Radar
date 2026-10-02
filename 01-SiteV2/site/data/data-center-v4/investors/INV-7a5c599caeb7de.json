@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -56,6 +56,7 @@
     "id": "INV-7a5c599caeb7de",
     "name": "Y Combinator",
     "aliases": [
+      "YCombinator",
       "YC"
     ],
     "canonical_entity_id": "EN-275b0f4a4023d91c",
@@ -63,20 +64,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 30,
-    "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 29,
+    "current_round_count": 32,
+    "historical_or_ambiguous_count": 7,
+    "portfolio_company_count": 31,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-08-13",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "historical_or_ambiguous": 6,
+      "historical_or_ambiguous": 7,
       "lead": 4,
-      "participant": 26
+      "participant": 28
     },
     "round_codes": [
       "multi_round",
@@ -123,6 +124,11 @@
         "entity_id": "EN-7f67f2f8692510cf",
         "canonical_entity_id": "EN-7f67f2f8692510cf",
         "name": "Hadrius"
+      },
+      {
+        "entity_id": "EN-72cf2441fa286574",
+        "canonical_entity_id": "",
+        "name": "Halluminate"
       },
       {
         "entity_id": "EN-eaa1c24270a0d057",
@@ -178,6 +184,11 @@
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
         "name": "Replit"
+      },
+      {
+        "entity_id": "EN-2235ec582ab306e6",
+        "canonical_entity_id": "",
+        "name": "Revnu"
       },
       {
         "entity_id": "EN-8ab71d56a963f706",
@@ -236,6 +247,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-990f66ba138188f9",
+        "funding_insight_id": "FI-5df4f9c7d5d359fa",
+        "event_ids": [
+          "EV-7f89984c1b858df2"
+        ],
+        "company_entity_id": "EN-72cf2441fa286574",
+        "company_canonical_entity_id": "",
+        "company_name": "Halluminate",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4799c620c14fef7b",
+            "source_url": "https://www.halluminate.ai/blog/series-a",
+            "source_title": "Halluminate - 金融服务强化学习环境",
+            "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
+            "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
+            "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cec0d7edd4633a8b",
+        "funding_insight_id": "FI-e57b9730bfc14b51",
+        "event_ids": [
+          "EV-7c43338b102d18f2"
+        ],
+        "company_entity_id": "EN-2235ec582ab306e6",
+        "company_canonical_entity_id": "",
+        "company_name": "Revnu",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$3m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "300 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ee1ac79a0f3dddbb",
+            "source_url": "https://www.prolificnorth.co.uk/news/21-year-old-founders-choose-manchester-over-silicon-valley-after-raising-3m/",
+            "source_title": "21岁创始人融资300万美元后选择曼彻斯特而非硅谷",
+            "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
+            "quote": "Revnu also received backing from Y Combinator.",
+            "quote_hash": "a64a4c7318a4083b60fc808ee59b900963424788f7b70c270b4b2d5bd502e388"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5be59ff7d20e0b03",
         "funding_insight_id": "FI-43e6948d7884584e",
@@ -1525,6 +1616,38 @@
         ]
       },
       {
+        "activity_id": "IA-380ea94662349b11",
+        "funding_insight_id": "FI-5df4f9c7d5d359fa",
+        "event_ids": [
+          "EV-7f89984c1b858df2"
+        ],
+        "company_entity_id": "EN-72cf2441fa286574",
+        "company_canonical_entity_id": "",
+        "company_name": "Halluminate",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资者，本轮继续参与",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cc76e017a813c66e",
+            "source_url": "https://fortune.com/2026/10/01/halluminate-raises-30-million-series-a-oakhc-ft/",
+            "source_title": "Exclusive: Nine-person Halluminate raises $30 million, counts four top U.S. AI labs as customers",
+            "source_content_hash": "bc9abdc4bbc3fc25",
+            "quote": "Existing Halluminate investors Y Combinator, Orange Collective, and Heavybit participated in the round, along with individual researchers from Anthropic, OpenAI, and Meta, according to Wu.",
+            "quote_hash": "35ec8bf18ee09527e3273be7273a2dcc21d41ab2a2b16400a6280e073174f7da"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-ae41855538894eb0",
         "funding_insight_id": "FI-920fe5e68b71a61c",
         "event_ids": [
@@ -1654,6 +1777,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4799c620c14fef7b",
+        "source_url": "https://www.halluminate.ai/blog/series-a",
+        "source_title": "Halluminate - 金融服务强化学习环境",
+        "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
+        "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
+        "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
+      },
+      {
+        "source_id": "FISRC-ee1ac79a0f3dddbb",
+        "source_url": "https://www.prolificnorth.co.uk/news/21-year-old-founders-choose-manchester-over-silicon-valley-after-raising-3m/",
+        "source_title": "21岁创始人融资300万美元后选择曼彻斯特而非硅谷",
+        "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
+        "quote": "Revnu also received backing from Y Combinator.",
+        "quote_hash": "a64a4c7318a4083b60fc808ee59b900963424788f7b70c270b4b2d5bd502e388"
+      },
       {
         "source_id": "FISRC-f80a0b6f2f7f63f8",
         "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
@@ -1935,6 +2074,14 @@
         "quote_hash": "5eba83da8394915347c8504892c95caf9a5b5200146cff45fd78980404e44273"
       },
       {
+        "source_id": "FISRC-cc76e017a813c66e",
+        "source_url": "https://fortune.com/2026/10/01/halluminate-raises-30-million-series-a-oakhc-ft/",
+        "source_title": "Exclusive: Nine-person Halluminate raises $30 million, counts four top U.S. AI labs as customers",
+        "source_content_hash": "bc9abdc4bbc3fc25",
+        "quote": "Existing Halluminate investors Y Combinator, Orange Collective, and Heavybit participated in the round, along with individual researchers from Anthropic, OpenAI, and Meta, according to Wu.",
+        "quote_hash": "35ec8bf18ee09527e3273be7273a2dcc21d41ab2a2b16400a6280e073174f7da"
+      },
+      {
         "source_id": "FISRC-1f322d172be14af7",
         "source_url": "https://www.vcbacked.co/company/ontora",
         "source_title": "Ontora Funding & Investors - Pre-Seed - Dover | VCBacked",
@@ -2004,16 +2151,16 @@
           "source_id": "yc_press"
         },
         {
+          "description": "融资来源记录：Halluminate · A轮 · 2026-10-01 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4799c620c14fef7b"
+        },
+        {
+          "description": "融资来源记录：Revnu · 种子轮 · 2026-10-01 · 本轮参投 · $3m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ee1ac79a0f3dddbb"
+        },
+        {
           "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f80a0b6f2f7f63f8"
-        },
-        {
-          "description": "融资来源记录：River AI · 多轮融资 · 2026-08-11 · 本轮参投 · $1.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0deb7f666bec5423"
-        },
-        {
-          "description": "融资来源记录：Discovered Materials · 种子轮 · 2026-08-10 · 本轮参投 · $9 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c3267e56ad969be2"
         }
       ],
       "contacts": [
@@ -2057,28 +2204,28 @@
           "quote_hash": "4ed4875e0047c94acb0efae75ec6e5f47b2b446f507a0d444211c08edd926a82"
         },
         {
+          "source_id": "FISRC-4799c620c14fef7b",
+          "source_url": "https://www.halluminate.ai/blog/series-a",
+          "source_title": "Halluminate - 金融服务强化学习环境",
+          "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
+          "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
+          "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
+        },
+        {
+          "source_id": "FISRC-ee1ac79a0f3dddbb",
+          "source_url": "https://www.prolificnorth.co.uk/news/21-year-old-founders-choose-manchester-over-silicon-valley-after-raising-3m/",
+          "source_title": "21岁创始人融资300万美元后选择曼彻斯特而非硅谷",
+          "source_content_hash": "9e473dfe8da950af126dbbf2c1ba0ddeac7aa62b318ef3582dbc19a49eab246b",
+          "quote": "Revnu also received backing from Y Combinator.",
+          "quote_hash": "a64a4c7318a4083b60fc808ee59b900963424788f7b70c270b4b2d5bd502e388"
+        },
+        {
           "source_id": "FISRC-f80a0b6f2f7f63f8",
           "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
           "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
           "source_content_hash": "a7c980dcd5f3e30f",
           "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
           "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
-        },
-        {
-          "source_id": "FISRC-0deb7f666bec5423",
-          "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-          "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
-          "source_content_hash": "a44322af824e0f8f",
-          "quote": "with participation from Nvidia, AMD Ventures, Y Combinator, and Temasek",
-          "quote_hash": "2fea4aa95f455cf668da90f6bbb80a60ef5d93295e469d69604b0b43586f6284"
-        },
-        {
-          "source_id": "FISRC-c3267e56ad969be2",
-          "source_url": "https://techcrunch.com/2026/08/10/discovered-materials-is-playing-ai-whack-a-mole-to-hunt-cooler-chips/",
-          "source_title": "Discovered Materials 正玩 AI 打地鼠游戏，寻找更凉爽的芯片",
-          "source_content_hash": "c3f8c7225d49e92f",
-          "quote": "with investment from Peak XV Partners and angel investors Paul Graham, Gokul Rajaram, and Thariq Shihipar",
-          "quote_hash": "fe23b98efb3b0950a65b4d0b36fda4dae613ccf86bb390b6e12a4e6930b547e6"
         }
       ],
       "last_verified_at": "2026-09-25",

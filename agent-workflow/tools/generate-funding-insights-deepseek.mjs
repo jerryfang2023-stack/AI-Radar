@@ -221,12 +221,23 @@ const fundingSearchGateway = createSearchGateway({
   maxRequests: Number(args.get("search-request-budget") || 120), timeoutMs: 25000,
 });
 
+export function reusableResearchCapture(cached = {}, url = '') {
+  const originalCapture = cached.capture_method === 'direct_fetch'
+    || (cached.capture_method === 'web_open_excerpt'
+      && cached.review?.tool === 'web.run.open'
+      && cached.review?.source_url === url
+      && Boolean(cached.review?.reviewer)
+      && Number.isFinite(Date.parse(cached.review?.reviewed_at)));
+  return cached.source_url === url && originalCapture
+    && cached.body_clean?.length >= 300
+    && cached.content_hash === sourceTextHash(cached.body_clean);
+}
+
 async function capturePage(result) {
   const privateCache = args.get("research-seeds") ? path.join(resolvePrivateEvidenceBackupRoot(root, { required: true }), "funding-research", stableId("FISRC", result.url) + ".json") : "";
   if (privateCache && fs.existsSync(privateCache)) {
     const cached = readJson(privateCache, {});
-    if (cached.source_url === result.url && cached.capture_method === "direct_fetch"
-      && cached.body_clean?.length >= 300 && cached.content_hash === sourceTextHash(cached.body_clean)) return cached;
+    if (reusableResearchCapture(cached, result.url)) return cached;
   }
   let page;
   try {

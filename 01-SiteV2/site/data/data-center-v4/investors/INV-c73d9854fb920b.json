@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,20 +63,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 22,
+    "current_round_count": 24,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 19,
+    "portfolio_company_count": 21,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-09-25",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 20
+      "participant": 22
     },
     "round_codes": [
       "multi_round",
@@ -84,6 +84,7 @@
       "seed",
       "series_a",
       "series_a_extension",
+      "series_b",
       "series_c",
       "series_d",
       "series_e",
@@ -123,9 +124,19 @@
         "name": "Crusoe"
       },
       {
+        "entity_id": "EN-7b9b33ca95deff50",
+        "canonical_entity_id": "",
+        "name": "CScale"
+      },
+      {
         "entity_id": "EN-e647c818ac38b6ca",
         "canonical_entity_id": "EN-e647c818ac38b6ca",
         "name": "Elorian"
+      },
+      {
+        "entity_id": "EN-6aa1fcea0024c6ce",
+        "canonical_entity_id": "",
+        "name": "GMI Cloud"
       },
       {
         "entity_id": "FICO-gradium",
@@ -189,6 +200,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3274283a90b5081c",
+        "funding_insight_id": "FI-f674fbdbe195b88e",
+        "event_ids": [
+          "EV-72c91001092a54bd"
+        ],
+        "company_entity_id": "EN-6aa1fcea0024c6ce",
+        "company_canonical_entity_id": "",
+        "company_name": "GMI Cloud",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$223 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 223000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.23 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f5de203e610041a3",
+            "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
+            "source_title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
+            "source_content_hash": "6f9fae4898bb4f10ab4e5c003449f2f9c04b6c292b4932a18191ec992f12be3a",
+            "quote": "The Series B was led by San Francisco-based AI and robotics investor ARCHIV, with participation from NVIDIA.",
+            "quote_hash": "7ac07c25698384735d26d5c90ece68d2a93d64aa698275ec7c096f924f395533"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-46d8639f7fb56a02",
+        "funding_insight_id": "FI-07d1ab9787e1c9dd",
+        "event_ids": [
+          "EV-4c5dc2fc6d805b3f"
+        ],
+        "company_entity_id": "EN-7b9b33ca95deff50",
+        "company_canonical_entity_id": "",
+        "company_name": "CScale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$145 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 145000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.45 亿美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f84ad840508b39",
+            "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+            "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+            "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+            "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+            "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e82b15d3fa8a338e",
         "funding_insight_id": "FI-d7d0812b1a643d03",
@@ -1206,6 +1297,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f5de203e610041a3",
+        "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
+        "source_title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
+        "source_content_hash": "6f9fae4898bb4f10ab4e5c003449f2f9c04b6c292b4932a18191ec992f12be3a",
+        "quote": "The Series B was led by San Francisco-based AI and robotics investor ARCHIV, with participation from NVIDIA.",
+        "quote_hash": "7ac07c25698384735d26d5c90ece68d2a93d64aa698275ec7c096f924f395533"
+      },
+      {
+        "source_id": "FISRC-98f84ad840508b39",
+        "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+        "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+        "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+        "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+        "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+      },
+      {
         "source_id": "FISRC-060d60f0bcc42b9d",
         "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
         "source_title": "NSCALE 在 IPO 前可转换融资中筹集 $3.36B",
@@ -1473,16 +1580,16 @@
           "source_id": "nvidia_nventures"
         },
         {
+          "description": "融资来源记录：GMI Cloud · B轮 · 2026-10-01 · 本轮参投 · $223 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f5de203e610041a3"
+        },
+        {
+          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f84ad840508b39"
+        },
+        {
           "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮参投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
-        },
-        {
-          "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ecd2ea74974f4ff3"
-        },
-        {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5fc65e3f4fb1b347"
         }
       ],
       "contacts": [
@@ -1527,28 +1634,28 @@
           "quote_hash": "ee1e54cd9f847ba4c9a860b598e9dfd0b8bd5688c398c80253a8a4aa8f1ef820"
         },
         {
+          "source_id": "FISRC-f5de203e610041a3",
+          "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
+          "source_title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
+          "source_content_hash": "6f9fae4898bb4f10ab4e5c003449f2f9c04b6c292b4932a18191ec992f12be3a",
+          "quote": "The Series B was led by San Francisco-based AI and robotics investor ARCHIV, with participation from NVIDIA.",
+          "quote_hash": "7ac07c25698384735d26d5c90ece68d2a93d64aa698275ec7c096f924f395533"
+        },
+        {
+          "source_id": "FISRC-98f84ad840508b39",
+          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+          "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+        },
+        {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
           "source_title": "NSCALE 在 IPO 前可转换融资中筹集 $3.36B",
           "source_content_hash": "5ebbe835664f567a51c54687b46ae2cf87e594d88de74ae878848a31a9e9f928",
           "quote": "The convertible funding round was also supported by new and existing investors including NVIDIA, funds managed by Apollo, Citadel, Hudson Bay Capital, Abu Dhabi Investment Council, and 8090 Industries.",
           "quote_hash": "fc5db38002b21b1decd438417bac1dfdc98b2900159b1d7b3161859e98a2e15a"
-        },
-        {
-          "source_id": "FISRC-ecd2ea74974f4ff3",
-          "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
-          "source_title": "更正 -- Basecamp Research",
-          "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
-          "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
-          "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
-        },
-        {
-          "source_id": "FISRC-5fc65e3f4fb1b347",
-          "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
-          "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
-          "source_content_hash": "a5d809d221408d5b",
-          "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
-          "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1559,7 +1666,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[11].role": {
+        "activities[13].role": {
           "text": "2026年7月Series C参投",
           "source_hash": "ca89a4b6213c63b73693d1f4cbdbc294103169f8c18273db948594868797614d",
           "provider": "deepseek",

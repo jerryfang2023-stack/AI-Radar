@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
-    "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 10,
+    "current_round_count": 12,
+    "historical_or_ambiguous_count": 5,
+    "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09-05",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "lead": 4,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "seed",
@@ -94,6 +94,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
       },
       {
         "entity_id": "EN-f3d05a0f6248941d",
@@ -137,6 +142,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-cd9265bf54d9d560",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+            "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3fc83004271208dc",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
@@ -619,6 +664,38 @@
         ]
       },
       {
+        "activity_id": "IA-837b837e15c041b5",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-14fa67bc80a1ece9",
+            "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+            "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+            "source_content_hash": "f5a108f3994daf10",
+            "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+            "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-e264a686c0b42f06",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
@@ -725,6 +802,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+        "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+      },
+      {
         "source_id": "FISRC-7c15ac15bf3d0b1a",
         "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
         "source_title": "Higgsfield Raises $400M in Series B Funding",
@@ -829,6 +914,14 @@
         "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
       },
       {
+        "source_id": "FISRC-14fa67bc80a1ece9",
+        "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+        "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+        "source_content_hash": "f5a108f3994daf10",
+        "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+        "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+      },
+      {
         "source_id": "FISRC-35d27946fd70aa42",
         "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
         "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
@@ -904,16 +997,16 @@
           "source_id": "menlo_about"
         },
         {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7c15ac15bf3d0b1a"
         },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮领投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7de0ac22c0c4ca3"
-        },
-        {
-          "description": "融资来源记录：Lovable · C轮 · 2026-08-12 · 本轮领投 · $400 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dcf82db3dd7ead1a"
         }
       ],
       "contacts": [
@@ -964,6 +1057,14 @@
           "quote_hash": "6b65a50b891d8c111e5bfd530d4bc9eb08bdefcd9718bf4b8706cad0502cd1ab"
         },
         {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+        },
+        {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
           "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
           "source_title": "Higgsfield Raises $400M in Series B Funding",
@@ -978,14 +1079,6 @@
           "source_content_hash": "ee00eb4103124f93",
           "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
           "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
-        },
-        {
-          "source_id": "FISRC-dcf82db3dd7ead1a",
-          "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
-          "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
-          "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
-          "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
-          "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
         }
       ],
       "last_verified_at": "2026-09-25",

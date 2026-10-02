@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,26 +61,27 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 7,
-    "china_market_company_count": 7,
+    "china_market_activity_count": 8,
+    "china_market_company_count": 8,
     "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-08-26",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 6,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "angel",
       "multi_round",
       "series_a",
       "series_a_plus_plus",
+      "series_b",
       "series_c",
       "undisclosed"
     ],
@@ -106,6 +107,11 @@
         "name": "无界动力"
       },
       {
+        "entity_id": "EN-0e8fc8beffbe3307",
+        "canonical_entity_id": "",
+        "name": "无锡迅杰光远科技有限公司"
+      },
+      {
         "entity_id": "EN-997a5e6e513f2a90",
         "canonical_entity_id": "",
         "name": "星辰技术"
@@ -122,6 +128,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9b88906847554206",
+        "funding_insight_id": "FI-847c0d8bd70ec24b",
+        "event_ids": [
+          "EV-832662689cd1aa3d"
+        ],
+        "company_entity_id": "EN-0e8fc8beffbe3307",
+        "company_canonical_entity_id": "",
+        "company_name": "无锡迅杰光远科技有限公司",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0b86e961d03687b6",
+            "source_url": "https://www.chinaventure.com.cn/news/114-20260930-393487.html",
+            "source_title": "迅杰光远完成超亿元B轮融资",
+            "source_content_hash": "d56fe0f257b1c1d0ea91e2680905be9f8d5660dd18e76b4a9dfcc64baf0f8490",
+            "quote": "本轮融资由深创投、云晖资本、翠微基金共同投资。",
+            "quote_hash": "ccb58f61befa1aada431e46bf6bf982d7db230c6092a837a7e2a68c08e61f662"
+          }
+        ]
+      },
       {
         "activity_id": "IA-362c6bee844274f9",
         "funding_insight_id": "FI-8cf15f7318cc6265",
@@ -600,6 +646,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0b86e961d03687b6",
+        "source_url": "https://www.chinaventure.com.cn/news/114-20260930-393487.html",
+        "source_title": "迅杰光远完成超亿元B轮融资",
+        "source_content_hash": "d56fe0f257b1c1d0ea91e2680905be9f8d5660dd18e76b4a9dfcc64baf0f8490",
+        "quote": "本轮融资由深创投、云晖资本、翠微基金共同投资。",
+        "quote_hash": "ccb58f61befa1aada431e46bf6bf982d7db230c6092a837a7e2a68c08e61f662"
+      },
+      {
         "source_id": "FISRC-662073c15d82f553",
         "source_url": "http://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260826_6001551.shtml",
         "source_title": "湖北省经济和信息化厅",
@@ -717,16 +771,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：无锡迅杰光远科技有限公司 · B轮 · 2026-09-30 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0b86e961d03687b6"
+        },
+        {
           "description": "融资来源记录：微纳核芯 · 多轮融资 · 2026-06-15 · 本轮参投 · 超10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b96684face6f5223"
         },
         {
           "description": "融资来源记录：墨芯人工智能 · C轮 · 2026-05-29 · 本轮参投 · 近10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6202f2642c216aa5"
-        },
-        {
-          "description": "融资来源记录：面壁智能 · 轮次未披露 · 2026-04-09 · 本轮联合领投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5e868b9dacd5325c"
         }
       ],
       "contacts": [
@@ -762,6 +816,14 @@
           "quote_hash": "471328d4f4406107854ffe9575e9c659910a1d48b96c58c10f1523a459f760f3"
         },
         {
+          "source_id": "FISRC-0b86e961d03687b6",
+          "source_url": "https://www.chinaventure.com.cn/news/114-20260930-393487.html",
+          "source_title": "迅杰光远完成超亿元B轮融资",
+          "source_content_hash": "d56fe0f257b1c1d0ea91e2680905be9f8d5660dd18e76b4a9dfcc64baf0f8490",
+          "quote": "本轮融资由深创投、云晖资本、翠微基金共同投资。",
+          "quote_hash": "ccb58f61befa1aada431e46bf6bf982d7db230c6092a837a7e2a68c08e61f662"
+        },
+        {
           "source_id": "FISRC-b96684face6f5223",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
           "source_title": "微纳核芯完成超10亿元B轮系列融资",
@@ -776,14 +838,6 @@
           "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
           "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
           "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
-        },
-        {
-          "source_id": "FISRC-5e868b9dacd5325c",
-          "source_url": "https://finance.sina.com.cn/stock/t/2026-04-09/doc-inhtwhrc8925749.shtml",
-          "source_title": "大模型公司面壁智能完成数亿元融资投后估值迈入独角兽门槛",
-          "source_content_hash": "21fcbff02b369abf",
-          "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
-          "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
         }
       ],
       "last_verified_at": "2026-09-25",

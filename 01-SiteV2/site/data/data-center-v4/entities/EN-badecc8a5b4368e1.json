@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3811,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-badecc8a5b4368e1",
+    "name": "日前已顺利",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-003043f085bebbeb"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-25",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-003043f085bebbeb"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-003043f085bebbeb",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "芯光界完成亿元天使轮融资，启明创投独家投资",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-83dd78f287b80ce3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-f02fcc72908c332a",
+          "EN-83dd78f287b80ce3",
+          "EN-badecc8a5b4368e1"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-aaca9fd0914b1c8c",
+      "snapshotKey": "aaca9fd0914b1c8c",
+      "snapshotId": "HWS-fd96ac5b64d87e71",
+      "eventId": "EV-003043f085bebbeb",
+      "eventIds": [
+        "EV-003043f085bebbeb"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "中国光互连初创企业上海芯光界智能科技有限公司",
+      "subject": "中国光互连初创企业上海芯光界智能科技有限公司",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "",
+          "unit": "数千万元",
+          "fact_ref": "HWF-8d5db1f5b8665f64"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-8d5db1f5b8665f64",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-25",
+          "subject_entity_id": "EN-f02fcc72908c332a",
+          "subject_name": "中国光互连初创企业上海芯光界智能科技有限公司",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "",
+          "unit": "数千万元",
+          "source_quote": "日前，中国光互连初创企业上海芯光界智能科技有限公司（下称“芯光界”）宣布，公司日前已顺利完成天使轮融资。本轮由创投行业头部机构启明创投独家投资，融资总额达亿元人民币。融资资金将为公司核心技术研发、产品迭代及团队建设提供坚实资金保障。后续公司将集中核心资源攻坚行业关键核心技术，加速NPO产品商业化落地、CPO前沿技术预研与技术迭代，推进产品客户验证与场景适配，同步吸纳领域高端人才，夯实公司的核心优势和技术壁垒。\n芯光界于2026年5月启动，并迅速完成种子轮数千万元融资。公司由国际知名硅光及光互连方向顶尖专家创立。芯光界聚焦前沿光互连和硅光通信技术的创新研发与成果转化，致力于为全球AI智算集群提供核心光互连产品和下一代全栈光互连解决方案，旨在成为全球AI智算集群光互连技术的定义者。公司遵循“NPO切入、CPO主流、OIO布局”的三阶段技术路径，构建了从芯片设计、封装耦合到系统级信号完整性的全链路自研能力。核心研发团队覆盖硅光芯片设计、先进封装、高频信号完整性等领域，各板块负责人均拥有15年以上行业从业经验，具备国内头部企业工作经历与成熟项目交付经验。芯光界首款NPO光引擎已与国内头部GPU厂商及数据中心客户启动技术方案对接与验证，并积极参与ODCC、CPX MSA等核心行业标准制定。\n芯光界创始人兼CEO董坡表示：“AI算力产业高速发展，带动光互连技术需求持续升级，高集成、高性能的光互连方案已成为算力集群迭代的重要支撑。本次获得亿元天使轮融资是对团队技术积累与赛道发展前景的充分认可。未来我们将持续深耕光互连核心技术，加速产品迭代与商业化落地，打磨更具竞争力的行业解决方案，助力算力光互连产业创新发展。”\n启明创投主管合伙人周志峰表示：“随着大规模AI算力集群加速落地，高集成、高性能的高速光互连技术已成为算力产业升级的核心刚需，赛道增量空间广阔。芯光界团队具备扎实的底层技术功底与成熟的工程化、商业化落地能力，在技术自研、产品量产与客户落地方面优势显著。我们十分看好公司在AI算力光互连赛道的发展潜力，期待公司持续深耕技术、打磨标杆产品，持续赋能算力光互连产业创新发展。”\n 更多新闻\n 投资企业新闻\n启明星 | Robochallenge全球化进展与生态共建发布| WAIC 2026\n09/14 2026\n 投资企业新闻\n启明星 | 单次治疗，长期获益：信玖凝®全国首方落地，血友病B诊疗步入基因治疗时代\n09/14 2026\n 投资企业新闻\n启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮\n09/08 2026\n 投资企业新闻\n启明星 | 全球领先的机器人",
+          "event_refs": [
+            "EV-003043f085bebbeb"
+          ],
+          "claim_ref": "CL-3b82cf39b6bb6b17",
+          "source_refs": [
+            "SA-218728afe6f70d71"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E8%8A%AF%E5%85%89%E7%95%8C%E5%AE%8C%E6%88%90%E4%BA%BF%E5%85%83%E5%A4%A9%E4%BD%BF%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E7%8B%AC%E5%AE%B6%E6%8A%95%E8%B5%84",
+      "entityIds": [
+        "EN-f02fcc72908c332a",
+        "EN-83dd78f287b80ce3",
+        "EN-badecc8a5b4368e1"
+      ]
+    }
+  ]
+}

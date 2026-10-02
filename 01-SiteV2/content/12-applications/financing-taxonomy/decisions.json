@@ -18804,27 +18804,32 @@
       "evidence_indices": [
         0,
         1,
-        2
+        2,
+        3
       ],
-      "rationale": "Outmarket AI 是专为保险行业打造的 AI 平台，直接连接代理管理系统并自动化保险业务流程，属于行业 AI 中的金融与保险细分。",
-      "input_hash": "0931dc7df076808b981c7d544a686109fc6292b939952b132dadc71424badc94",
+      "rationale": "Outmarket AI 是专为保险行业打造的 AI 平台，帮助保险代理和经纪人自动化文书工作，属于行业 AI 中的金融与保险细分。",
+      "input_hash": "d2bd828d86af4988deda4a34696b275bbd54c2b722988b09bab29b03a4451314",
       "evidence_refs": [
         {
           "source_id": "FISRC-1a2ad9b1108e3f59",
-          "quote": "Outmarket AI, the leading AI platform purpose-built for insurance"
+          "quote": "Outmarket AI, the leading AI platform purpose-built for insurance, today announced it has raised $34.5 million in Series B funding."
+        },
+        {
+          "source_id": "FISRC-651e659be31fd032",
+          "quote": "Outmarket, a startup that uses AI to help insurance agencies and brokers automate all their tedious paperwork."
         },
         {
           "source_id": "FISRC-1a2ad9b1108e3f59",
           "quote": "Outmarket's comprehensive platform connects directly to agency management systems (AMS) automating complex, high-stakes processes across commercial, benefits, personal lines, and specialty insurance."
         },
         {
-          "source_id": "FISRC-013cf73ce258339a",
-          "quote": "We now run production workflows across Commercial Lines, Benefits, and Personal Lines, covering the work that fills the day in any agency. Quote comparison, policy review, renewal comparison, coverage gap analysis, tower analysis, claim denial challenges, and loss runs extraction across every major carrier format."
+          "source_id": "FISRC-1385169b582f2c6f",
+          "quote": "Every day, brokers use Outmarket for quote comparisons, policy checks, coverage analysis, benefits comparisons, certificates, loss runs, AMS account setup, and other work that previously consumed hours of their teams' time."
         }
       ],
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "generated_at": "2026-10-01T16:29:07.410Z"
+      "generated_at": "2026-10-02T03:50:06.978Z"
     },
     "EV-4c9c7ab2dded69b3": {
       "id": "EV-4c9c7ab2dded69b3",
@@ -22329,7 +22334,1061 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "generated_at": "2026-10-02T02:11:20.829Z"
+    },
+    "EV-acd3165ca45a6b36": {
+      "id": "EV-acd3165ca45a6b36",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "life-sciences",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "BigHat Biosciences 是一家临床阶段的 AI 驱动蛋白质治疗平台公司，核心业务是药物研发，属于行业 AI 中的生命科学赛道。",
+      "input_hash": "b6584d36c9164a1f094e630a0c74d85b6f3d5d0399134a315033e0d6fc9e2042",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3372eff279ee29db",
+          "quote": "BigHat Biosciences, a clinical-stage, AI-driven protein therapeutics platform company"
+        },
+        {
+          "source_id": "FISRC-20d8f5fabe22f976",
+          "quote": "BigHat Biosciences is building the enabling infrastructure, data generation engine, and AI models"
+        },
+        {
+          "source_id": "FISRC-3372eff279ee29db",
+          "quote": "BigHat has built an autonomous AI and experimental platform that generates proprietary, fit-for-purpose biological data at scale to drive today’s leading frontier models for therapeutic design."
+        },
+        {
+          "source_id": "FISRC-20d8f5fabe22f976",
+          "quote": "Its “lab-in-the-loop” platform makes and tests thousands of novel proteins every week, generating proprietary real-world data to improve its models and the next round of protein designs."
+        },
+        {
+          "source_id": "FISRC-3372eff279ee29db",
+          "quote": "Dosed the first patient in a Phase 1 trial evaluating lead program, BHB810, a novel CDH17-directed antibody-drug conjugate (ADC) for gastric cancer and other advanced gastrointestinal tumors."
+        },
+        {
+          "source_id": "FISRC-3372eff279ee29db",
+          "quote": "Advanced BHB299, an avidity-driven T-cell engager designed to selectively target CEACAM6-expressing solid tumors, which is nearing completion of preclinical development. The company plans to begin human trials of BHB299 in 2027."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.915Z"
+    },
+    "EV-2c217907879cd2a8": {
+      "id": "EV-2c217907879cd2a8",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Positron AI 是一家 AI 推理硬件公司，提供 AI 芯片与推理系统，属于 AI 算力与芯片赛道。",
+      "input_hash": "79adcd266153cb9aa752ae708d65f0e3264ba3aec0bd5137a890f250dd0f16ac",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3947ce709f26c22a",
+          "quote": "Positron AI, the AI inference hardware company built to make serving AI models dramatically cheaper and more energy efficient"
+        },
+        {
+          "source_id": "FISRC-3947ce709f26c22a",
+          "quote": "Positron is deploying more than 50 racks of Atlas, its first-generation inference system, at Oracle Cloud Infrastructure."
+        },
+        {
+          "source_id": "FISRC-3947ce709f26c22a",
+          "quote": "Asimov tapes out on TSMC N3P at the end of 2026, with production in the second half of 2027, and pairs Positron's compute architecture with 288 GB to 2,304 GB of memory per chip."
+        },
+        {
+          "source_id": "FISRC-a30e805a722a7e2c",
+          "quote": "Per Chip Memory Capacity288GB to 2.3TB"
+        },
+        {
+          "source_id": "FISRC-3947ce709f26c22a",
+          "quote": "Titan combines four to eight Asimov chips into a single system, designed to serve models beyond 16 trillion parameters and context windows beyond 10 million tokens in a single node, scaling to thousands of nodes."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.915Z"
+    },
+    "EV-5bf410afc8aa8178": {
+      "id": "EV-5bf410afc8aa8178",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Menos AI 为资产管理公司提供 AI 原生平台和投资研究智能体，属于行业 AI 中的金融与保险赛道。",
+      "input_hash": "f33d91aeadacbf8258a92f67d87961d53e72e3de3d77d21b3e319e24c57aac2d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-61f4ef734c265738",
+          "quote": "Menos AI, based in San Jose, California, provides an AI-native platform designed to serve as an institutional intelligence layer for asset management firms."
+        },
+        {
+          "source_id": "FISRC-c13b4f46047b6a0c",
+          "quote": "AgentOS is the custom agent development and workflow skills layer that transforms how institutional investors capture, synthesize, and act on intelligence"
+        },
+        {
+          "source_id": "FISRC-c13b4f46047b6a0c",
+          "quote": "Sonαr is the first agent built within AgentOS, purpose-designed for investment research."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.915Z"
+    },
+    "EV-42a74865c9b654bb": {
+      "id": "EV-42a74865c9b654bb",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Unveilr AI 通过 AI 代理监控品牌在 AI 搜索引擎中的可见度并优化推荐，属于企业通用 AI 中的销售与营销赛道。",
+      "input_hash": "b0e6a306cf6f6a2099ae4762e06a7edc7eac2092aea1c4be1ba3f508bb71ca0a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fd345751b04929f7",
+          "quote": "The company, founded by Sanditya Srivastava and launched in February 2026, is building for a shift in how consumers discover businesses."
+        },
+        {
+          "source_id": "FISRC-78e8facb4ec5a3c9",
+          "quote": "Unveilr AI combines search engine optimisation (SEO) with Answer Engine Optimisation (AEO). Its AI agents track how brands appear across search engines, identify queries where competitors are recommended and analyse the sources used by AI platforms."
+        },
+        {
+          "source_id": "FISRC-fd345751b04929f7",
+          "quote": "Its proprietary AI agents monitor a brand's visibility across AI engines, flag queries where competitors appear, and map the sources those engines cite."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.915Z"
+    },
+    "EV-526a96dee64aea7b": {
+      "id": "EV-526a96dee64aea7b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Blue Fire AI 专注于金融市场的神经符号 AI 决策引擎，为投资组合经理提供基本面分析，属于行业 AI 中的金融与保险赛道。",
+      "input_hash": "054ea62a47a77a6cfb327ab70a69fa2d74e27b6d3e976180f5167242576fc4f5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-871d82cb3d4c702e",
+          "quote": "Blue Fire AI, a technology company based in Singapore that specializes in neuro-symbolic AI decision engines for financial markets"
+        },
+        {
+          "source_id": "FISRC-d69144b9e83a3521",
+          "quote": "This will allow AM-One’s portfolio managers to perform bottom-up fundamental analysis at scale, identify overvalued securities and deliver repeatable, informed alpha."
+        },
+        {
+          "source_id": "FISRC-871d82cb3d4c702e",
+          "quote": "Its platform enables portfolio managers to perform fundamental analysis at scale, identify market opportunities, and generate informed investment alpha."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.915Z"
+    },
+    "EV-04edcb21249dffcf": {
+      "id": "EV-04edcb21249dffcf",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "佳量脑科学以 AI 模型和脑机接口支持神经疾病诊疗及闭环调控，主营临床医疗设备，原文未显示机器人本体或核心部件业务。",
+      "input_hash": "0bfd7bae57c2a05c092c4c4f043518b93ca221b5edd5036365dc1d29fec98307",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "quote": "中国领先的数据驱动全栈脑机接口平台企业——杭州佳量脑科学股份有限公司"
+        },
+        {
+          "source_id": "FISRC-12a866ed59f9b09e",
+          "quote": "数据驱动全栈脑机接口平台企业——杭州佳量脑科学股份有限公司"
+        },
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "quote": "公司已搭建“智能硬件+多模态数据+AI大模型”三位一体深度融合技术体系，形成覆盖智能硬件、底层算法、系统平台及临床应用的全链条研发能力。"
+        },
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "quote": "Epilcure™植入式脑机接口神经刺激系统面向药物难治性局灶性癫痫，通过植入式电极持续监测颅内脑电活动，在识别异常脑电信号后自动启动响应性刺激，实现基于脑电感知的闭环神经调控。"
+        },
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "quote": "Vivastep™闭环脊髓神经接口系统面向脊髓损伤及瘫痪患者，融合硬膜外脊髓电刺激、神经信号解码与闭环自适应调控等技术，通过“神经信号感知—刺激调控—运动训练”的协同机制，帮助患者恢复站立和行走能力。"
+        },
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "quote": "LaserRO™磁共振监测半导体激光治疗系统已取得国家三类医疗器械注册证，完成从创新医疗器械特别审查、临床验证到注册上市的产品兑现。"
+        }
+      ],
+      "provider": "agent_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T03:50:06.915Z",
+      "reviewed_at": "2026-10-02T03:53:11.977Z",
+      "review_note": "依据已存原文补齐公司 AI 主营证据并复核临床设备与机器人边界。"
+    },
+    "EV-609da9983f836426": {
+      "id": "EV-609da9983f836426",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "content-creation",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Neowow 是面向专业个人用户的画布类工具，提供 AI 视频创作、图片处理和声音定制服务，属于消费 AI 应用中的内容创作。",
+      "input_hash": "0c82195dbb0111fc97b76afc023b02eedd438f48a36e879222868cd5a237df47",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cf2e1c9a5bf8e680",
+          "quote": "NeoAI创意内容工坊（以下简称“本平台”）是上海智灵新境科技有限公司及其关联方（以下简称“我们”）合法运营的官方网站"
+        },
+        {
+          "source_id": "FISRC-99789a9391e06f7c",
+          "quote": "智灵新境的主营业务是画布类工具和平台“Neowow”，主要面向专业的个人用户"
+        },
+        {
+          "source_id": "FISRC-cf2e1c9a5bf8e680",
+          "quote": "旨在为用户（以下也称“您”）提供完整的AI视频创作、图片处理、声音定制等服务"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.978Z"
+    },
+    "EV-39247400114d59dd": {
+      "id": "EV-39247400114d59dd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Volantis 是一家半导体公司，构建基于光子学的新型 AI 推理系统，属于 AI 算力与芯片中的 AI 芯片与加速器。",
+      "input_hash": "36efa3c04a326e08d3a31228af4b421b7bd052ca93666c5091a61de5d97964df",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f61726ece8d567da",
+          "quote": "Volantis, a semiconductor company building a new category of AI inference system"
+        },
+        {
+          "source_id": "FISRC-ea8cb9d5a8099465",
+          "quote": "We’re building a system for AI inference that uses photonics to break the memory wall."
+        },
+        {
+          "source_id": "FISRC-f61726ece8d567da",
+          "quote": "Its first system, A-1, is being designed to run models exceeding 20 trillion parameters at up to 10,000 tokens per second per user, while reducing inference cost per token."
+        },
+        {
+          "source_id": "FISRC-f61726ece8d567da",
+          "quote": "Its architecture uses custom micro-VCSELs rather than external lasers"
+        },
+        {
+          "source_id": "FISRC-f61726ece8d567da",
+          "quote": "enabling end-to-end links consuming less than one picojoule per bit"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.978Z"
+    },
+    "EV-2ab7252166b42c03": {
+      "id": "EV-2ab7252166b42c03",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Ascerta 为企业领导者提供衡量 AI 使用、价值和 ROI 的系统，属于企业通用 AI 中的业务流程与企业智能体。",
+      "input_hash": "e441c586d33b4aa373288803c0812e2d40b7c7419552771fc8a133be6e885811",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1ae6b18ce755c2a8",
+          "quote": "Ascerta gives leaders one system to see how their organization uses AI, what that AI is doing and whether it pays off. It connects to the AI already running across the enterprise and deploys alongside existing systems."
+        },
+        {
+          "source_id": "FISRC-1ae6b18ce755c2a8",
+          "quote": "Its proprietary research ties each use case to the business KPIs it was meant to move, showing which initiatives create value, which need fixing and which should be cut."
+        },
+        {
+          "source_id": "FISRC-1ae6b18ce755c2a8",
+          "quote": "Atlas measures AI value, adoption and ROI, from a single workflow to the full portfolio."
+        },
+        {
+          "source_id": "FISRC-1ae6b18ce755c2a8",
+          "quote": "Forge shows how engineering teams use coding agents and turns that adoption into real productivity."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.978Z"
+    },
+    "EV-1715439efc5423dd": {
+      "id": "EV-1715439efc5423dd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Kanu AI 学习团队工作方式后构建智能体和应用来自动化组织工作流，属于企业通用 AI 中的业务流程与企业智能体。",
+      "input_hash": "fcbc721038d69ff9a4e982df4391807654cecd26a4ebf9efd96e88a603cdcad9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-34adfee3859391ff",
+          "quote": "Kanu learns how your team actually works, then builds the agents and apps that do it - reading the documents, following your rules, and handing back finished work inside your own cloud."
+        },
+        {
+          "source_id": "FISRC-34adfee3859391ff",
+          "quote": "Kanu uses your data, system integrations, documents, and what it learns about how your teams work to create software that automates your organization's workflows."
+        },
+        {
+          "source_id": "FISRC-34adfee3859391ff",
+          "quote": "Kanu apps give every role software built around the way they work, with interfaces that evolve as your operations change."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.978Z"
+    },
+    "EV-eb2796fc4bcc5ac0": {
+      "id": "EV-eb2796fc4bcc5ac0",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "芯光界专注于光互连和硅光通信技术，为 AI 智算集群提供核心光互连产品和解决方案，属于 AI 算力与芯片中的数据中心与算力基础设施。",
+      "input_hash": "6e7c34ce00e74c58fa8a601f1171b01b04335aa1dc53320b7f524a45e2ee3349",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "quote": "专注于光互连和硅光通信技术的上海芯光界智能科技有限公司（以下简称“芯光界”）已于近日完成Pre-A和A轮两轮融资，累计金额近10亿元。"
+        },
+        {
+          "source_id": "FISRC-7b5da7a1fb11c00b",
+          "quote": "芯光界聚焦前沿光互连和硅光通信技术的创新研发与成果转化，致力于为全球AI智算集群提供核心光互连产品和下一代全栈光互连解决方案"
+        },
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "quote": "目前公司首款NPO光引擎已进入技术验证阶段，从算力侧到交换侧都有头部厂商进行对接。"
+        },
+        {
+          "source_id": "FISRC-7b5da7a1fb11c00b",
+          "quote": "芯光界首款NPO光引擎已与国内头部GPU厂商及数据中心客户启动技术方案对接与验证"
+        },
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "quote": "除硬件产品外，公司还提供系统级解决方案，包括系统适配、测试优化等服务。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:06.978Z"
+    },
+    "EV-1c7050585c7f4791": {
+      "id": "EV-1c7050585c7f4791",
+      "company": "Armadin",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Armadin 是一家 AI 原生网络安全公司，其平台通过自主智能体模拟攻击路径，属于企业通用 AI 中的网络安全与风控赛道。",
+      "input_hash": "e4fee95c39f46c490726aec9d533c911b4c3fd51ef34ea6b661a86bba7e54e81",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "quote": "Armadin, an AI-native cybersecurity company building effective autonomous security, today announced it has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel that brings the company's valuation to over $2.5 billion."
+        },
+        {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "quote": "Armadin deploys an autonomous swarm of specialized agents that reason like a skilled adversary across the attack surface, chaining individually low-severity weaknesses into validated kill chains."
+        },
+        {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "quote": "Armadin's platform safely delivers the most comprehensive and powerful AI Hyperattacks to identify new and novel attack paths before adversaries can exploit them."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:13.026Z"
+    },
+    "EV-fc1d79dc823bfdd9": {
+      "id": "EV-fc1d79dc823bfdd9",
+      "company": "EliseAI",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "property",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "EliseAI 的核心产品是面向住房和医疗行业的深度工作流自动化平台，其 AI 智能体直接集成到租赁、维护、续租等物业管理流程中，属于行业 AI 中的建筑与房地产赛道。",
+      "input_hash": "e6396b997dabf5c3e7c993495e49ddf44bae4e0ead306d907767e709b3cd6e03",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4f44cd6d16442bdc",
+          "quote": "EliseAI is an AI company transforming housing and healthcare — the two largest household expenses in America — through deep workflow automation."
+        },
+        {
+          "source_id": "FISRC-4f44cd6d16442bdc",
+          "quote": "Its AI agents integrate directly into operations, automating leasing, maintenance, renewals, billing, patient scheduling, intake, and front-desk workflows end to end."
+        },
+        {
+          "source_id": "FISRC-4f44cd6d16442bdc",
+          "quote": "Apollo, the agentic AI teammate EliseAI launched earlier this month, is the latest step in that direction. Capable of performing any task in the Elise platform, Apollo works within the systems property teams already use and carries tasks through to completion, changing how everyone from leasing agents to executives does their job."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:13.026Z"
+    },
+    "EV-bccd915b61c48911": {
+      "id": "EV-bccd915b61c48911",
+      "company": "Dodge AI",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Dodge AI 的产品是面向企业应用维护的 AI 控制平面，跨 SAP、Salesforce 等系统进行故障根因分析和修复建议，属于企业通用 AI 中的业务流程与企业智能体赛道。",
+      "input_hash": "f95d0cb382dd306f519b89fb253b11f9444b2803652bf082ec0aac609d9f8d57",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-79d7e597795281b6",
+          "quote": "The startup calls its product an AI control plane for enterprise application maintenance: a layer that sits across systems such as SAP, Salesforce, Microsoft Dynamics, Kinaxis, and Oracle JDE, looks for the root cause of incidents, and recommends fixes."
+        },
+        {
+          "source_id": "FISRC-bef005b72c80a059",
+          "quote": "Its agents work across systems such as SAP, Salesforce, Microsoft Dynamics, Kinaxis, and Oracle JDE to investigate incidents, recommend or execute fixes, and preserve the reasoning behind each change."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:13.026Z"
+    },
+    "EV-846e5333ad31f647": {
+      "id": "EV-846e5333ad31f647",
+      "company": "Prodoc AI",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Prodoc AI 是一家医疗健康 AI 公司，其 Patient Journey OS 作为医院现有技术之上的智能层协调患者旅程，属于行业 AI 中的医疗服务与临床赛道。",
+      "input_hash": "3584da93b3dd5b5375d18db44c485b0f047a5cfcb3e74120fa930414167b5ad4",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c10bdfb5983aece2",
+          "quote": "Bengaluru-based healthcare AI company Prodoc AI has raised an undisclosed amount in a seed round led by the Dr A. Velumani Family Office."
+        },
+        {
+          "source_id": "FISRC-c10bdfb5983aece2",
+          "quote": "Prodoc AI’s answer is a Patient Journey OS, an intelligence layer that sits across a hospital’s existing technology. It connects these isolated channels, keeps track of patient context and coordinates the next action, without asking hospitals to replace the systems they already use."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:13.026Z"
+    },
+    "EV-04d9a4c160a01586": {
+      "id": "EV-04d9a4c160a01586",
+      "company": "Autoheal",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Autoheal 为工程团队提供构建、运行和治理智能体的平台，连接编码智能体、代码仓库和 CI/CD 工具，属于 AI 开发与数据中的智能体开发与编排赛道。",
+      "input_hash": "17bd402d000c68125052cb3387a486ff7b22489a46de9d7fc4ed1536aff03150",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-212b01f9c4f8d05c",
+          "quote": "Autoheal is a self-improving software factory for removing that bottleneck: one platform where enterprise engineering teams build, run, govern and continuously improve worker agents for incident response, vulnerability remediation and AI coding cost efficiency."
+        },
+        {
+          "source_id": "FISRC-8d87afd85fa574a9",
+          "quote": "Autoheal is a platform designed to help engineering teams manage and govern AI agents. By connecting existing coding agents, repositories, and CI/CD tools, Autoheal creates a shared engineering context graph and utilizes evaluator and healer agents to automate improvements in SDLC workflows, including incident response and vulnerability remediation."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:13.026Z"
+    },
+    "EV-f30a987e608c70ae": {
+      "id": "EV-f30a987e608c70ae",
+      "company": "Metaview",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "finance-hr",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Metaview 提供 AI 驱动的招聘平台，通过智能体自动化寻源、筛选和面试记录，属于企业通用 AI 中的财务、人力与企业管理赛道。",
+      "input_hash": "11baecac8da169170b81c2d77d617900f69c303fd10d305eb69004471437504e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-62e06e29d2d7be04",
+          "quote": "Metaview, a London, San Francisco, and New York-based developer of an AI-powered agentic recruiting platform"
+        },
+        {
+          "source_id": "FISRC-62e06e29d2d7be04",
+          "quote": "Metaview provides an AI-driven platform that integrates into the recruitment lifecycle. By capturing interview conversations and utilizing AI agents, the platform automates sourcing, screening, and interview documentation to help companies build and scale hiring processes more efficiently."
+        },
+        {
+          "source_id": "FISRC-62e06e29d2d7be04",
+          "quote": "Metaview plans to use the new capital to bring its autonomous recruiting coworker, fillmore, to general availability alongside a suite of new specialist agents."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:13.026Z"
+    },
+    "EV-003043f085bebbeb": {
+      "id": "EV-003043f085bebbeb",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "芯光界为AI智算集群提供光互连产品和解决方案，属于数据中心与算力基础设施。",
+      "input_hash": "33aae327aed17ff856ef59bd3d14e635ab75a3c168ea78023fa3cb2fb1945fbc",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7b5da7a1fb11c00b",
+          "quote": "中国光互连初创企业上海芯光界智能科技有限公司（下称“芯光界”）"
+        },
+        {
+          "source_id": "FISRC-af1e85ea9b45d934",
+          "quote": "上海芯光界智能科技有限公司（简称“芯光界”）是一家聚焦前沿光互连和硅光通信技术的创新研发与成果转化，致力于为全球AI智算集群提供核心光互连产品和下一代全栈光互连解决方案的企业"
+        },
+        {
+          "source_id": "FISRC-7b5da7a1fb11c00b",
+          "quote": "芯光界首款NPO光引擎已与国内头部GPU厂商及数据中心客户启动技术方案对接与验证"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.416Z"
+    },
+    "EV-4c5dc2fc6d805b3f": {
+      "id": "EV-4c5dc2fc6d805b3f",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "CScale为AI基础设施提供集成光引擎以实现可靠光连接，属于数据中心与算力基础设施。",
+      "input_hash": "8461934988d07a2728ad351662e543b961ef543d5db34fe19f62bc0f54158395",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-98f84ad840508b39",
+          "quote": "CScale is building an integrated light engine to deliver reliable optical connectivity for AI infrastructure at gigawatt scale."
+        },
+        {
+          "source_id": "FISRC-ada896cff81be9a6",
+          "quote": "The startup, founded in 2023, is building an integrated light engine for reliable optical connectivity at that scale, with an architecture designed to contain failures rather than propagate them to the workload."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.416Z"
+    },
+    "EV-72c91001092a54bd": {
+      "id": "EV-72c91001092a54bd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "GMI Cloud提供面向企业的Nvidia GPU云服务，属于AI云与算力服务。",
+      "input_hash": "f9d70542d791c5175fb44c84afbbaca343a2928680880cb6118ecb9136cd99bf",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b143ad2fc72f6941",
+          "quote": "GMI Cloud (general machine intelligence; ~5 years old; Nvidia GPU cloud for enterprises)"
+        },
+        {
+          "source_id": "FISRC-b143ad2fc72f6941",
+          "quote": "Nvidia GPU cloud for enterprises"
+        },
+        {
+          "source_id": "FISRC-f5de203e610041a3",
+          "quote": "The company will also use the proceeds to expand its inference services and hire additional staff"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.416Z"
+    },
+    "EV-7f89984c1b858df2": {
+      "id": "EV-7f89984c1b858df2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Halluminate构建金融工作领域的基准测试和强化学习环境，属于AI评测与训练数据平台。",
+      "input_hash": "a99a03324a6ee92e9c46575c9618beb3e319b9b38eb201a969feee8cbc678c1f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4799c620c14fef7b",
+          "quote": "Halluminate is a data research lab building the benchmarks and RL environments needed to push the frontier of AI in knowledge work."
+        },
+        {
+          "source_id": "FISRC-cc76e017a813c66e",
+          "quote": "Halluminate, a nine-person San Francisco startup building AI training environments for financial work"
+        },
+        {
+          "source_id": "FISRC-4799c620c14fef7b",
+          "quote": "Released Westworld Due Diligence, a leading frontier benchmark for realistic financial work"
+        },
+        {
+          "source_id": "FISRC-cc76e017a813c66e",
+          "quote": "A benchmark released by the company in August asked seven frontier models to work through a simulated company-acquisition due-diligence process. The 88 tasks were based on anonymized private-equity transactions and written and reviewed by practicing deal professionals."
+        },
+        {
+          "source_id": "FISRC-cc76e017a813c66e",
+          "quote": "Halluminate benchmarks AI models on financial tasks to find where they fall short and builds simulated training environments aimed at those gaps."
+        },
+        {
+          "source_id": "FISRC-cc76e017a813c66e",
+          "quote": "Benchmarks like this would identify where agents break down in complex financial workflows, then turn those failure modes into reinforcement-learning environments."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.416Z"
+    },
+    "EV-7c43338b102d18f2": {
+      "id": "EV-7c43338b102d18f2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Revnu用AI代理帮助企业获客、投放广告和搭建销售管道，属于销售与营销。",
+      "input_hash": "e721adfdef9163736814e3f6714148900efdb6d2021aee2df553c74762a3c35a",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ee1ac79a0f3dddbb",
+          "quote": "Two 21-year-old founders have raised $3m to build Manchester-based AI marketing startup Revnu"
+        },
+        {
+          "source_id": "FISRC-ee1ac79a0f3dddbb",
+          "quote": "Revnu’s platform uses AI agents to help early-stage businesses find customers, run marketing campaigns and build sales pipelines without immediately investing in large in-house teams."
+        },
+        {
+          "source_id": "FISRC-d0f962647d9413a9",
+          "quote": "Revnu finds your buyers, runs your ads and writes the pages that get you into ChatGPT answers."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.416Z"
+    },
+    "EV-ebc2adbcc21f7145": {
+      "id": "EV-ebc2adbcc21f7145",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "LinqAlpha为全球公开市场机构投资者构建AI代理以发现市场信号，属于金融与保险行业AI。",
+      "input_hash": "f3c21c940ea8adf793a0cd6e2c110933b8ee42038f2e67c9fe6ac4ade845452d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2967c8cb86b79dd2",
+          "quote": "LinqAlpha is a New York-based AI company building the Alpha Intelligence Layer for global public markets."
+        },
+        {
+          "source_id": "FISRC-2967c8cb86b79dd2",
+          "quote": "LinqAlpha turns each investor's own research into AI agents that surface market-moving signals before they are priced in."
+        },
+        {
+          "source_id": "FISRC-2967c8cb86b79dd2",
+          "quote": "LinqAlpha enables institutional teams to deploy specialized AI agents that learn each user's unique investment framework."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.416Z"
+    },
+    "EV-832662689cd1aa3d": {
+      "id": "EV-832662689cd1aa3d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "迅杰光远将 AI 算法用于光谱检测智能传感器，面向农业、化工等工业检测场景，归入工业与制造。",
+      "input_hash": "b28717e2fa678918c30c91a399b29c55f11ea9201f63c05221c7ac4bc2aadc36",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-652152ccada8c335",
+          "quote": "迅杰光远成立于2016年，总部位于江苏省无锡市新吴区，是一家近红外光谱仪研发制造商，提供小型便携式设备及快检服务。"
+        },
+        {
+          "source_id": "FISRC-765f94af766451f1",
+          "quote": "公司通过硬件结构创新、组装工艺打磨、AI算法引入，将传统实验室用的复杂科研仪器，打造成了可便携、可在线检测的智能传感器"
+        },
+        {
+          "source_id": "FISRC-652152ccada8c335",
+          "quote": "是一家近红外光谱仪研发制造商，提供小型便携式设备及快检服务。"
+        },
+        {
+          "source_id": "FISRC-765f94af766451f1",
+          "quote": "2026年4月，迅杰光远正式发布实验室级高端产品傅立叶变换近红外光谱分析仪，标志着公司产品线实现从便携式、在线式到高端实验室级的全场景覆盖。"
+        }
+      ],
+      "provider": "agent_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T03:50:16.998Z",
+      "reviewed_at": "2026-10-02T03:53:11.976Z",
+      "review_note": "依据已存原文补齐公司 AI 主营证据并复核临床设备与机器人边界。"
+    },
+    "EV-eb5cde943f5c8858": {
+      "id": "EV-eb5cde943f5c8858",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "energy",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "公司聚焦聚变工程场景，打造AI自进化研发平台，属于能源行业的AI软件。",
+      "input_hash": "7076eac9441bce43ab5cb2d1a97f2e970d5e7196046cae205698768524e0ab84",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6a228d23e02b0038",
+          "quote": "新烛时代聚焦聚变工程场景，打造面向复杂工业场景的AI for AI4Fusion自进化研发平台"
+        },
+        {
+          "source_id": "FISRC-6a228d23e02b0038",
+          "quote": "公司将加快AI for AI4Fusion自进化研发平台建设与技术创新，持续打磨资源沉淀系统、自主闭环研发系统、核心大脑与底层基础设施（Infra），通过全栈技术闭环迭代，持续提升平台自主感知、推理与自进化能力。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.998Z"
+    },
+    "EV-241460a0e72336d7": {
+      "id": "EV-241460a0e72336d7",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司构建AI原生抵押贷款平台，协调贷款发放流程，属于金融与保险行业AI。",
+      "input_hash": "7224aae7fd90beee3e96cd807c8ce636ee9f07e834506680a7de0169ccf572ad",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f199e5c78b7a74fc",
+          "quote": "Elio Mortgage, an AI-native mortgage company redesigning how home loans are originated, today emerged from stealth with $5.1 million in pre-seed funding"
+        },
+        {
+          "source_id": "FISRC-f199e5c78b7a74fc",
+          "quote": "Elio is taking a different approach by building its proprietary AI-native platform from inside a working mortgage operation, where engineers and loan officers work side by side."
+        },
+        {
+          "source_id": "FISRC-fefab9ff474faa66",
+          "quote": "The company is building an agentic platform meant to coordinate work across origination, from application through closing, so loan officers spend more time on advice and relationships."
+        },
+        {
+          "source_id": "FISRC-f199e5c78b7a74fc",
+          "quote": "Through Elio Embedded, the same platform enables Elio to serve as the mortgage arm for RIAs, real estate agents, home builders, and single-family rental operators, helping them capture mortgage demand already flowing through their businesses without taking on the operational complexity of mortgage origination."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.998Z"
+    },
+    "EV-51221c8be7d20b5d": {
+      "id": "EV-51221c8be7d20b5d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Mona为小企业提供AI驱动的融资与财务辅导平台，属于金融与保险行业AI。",
+      "input_hash": "6886bbc48d324d73184f7bcf3baaeb8d3e31e2a0aa34afc094d156ee7b78270e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-22cce00c604ac941",
+          "quote": "Mona is an AI platform that helps small businesses across the U.S. access capital and financial coaching."
+        },
+        {
+          "source_id": "FISRC-22cce00c604ac941",
+          "quote": "Entrepreneurs complete a common application, which Mona uses to surface relevant opportunities, streamline applications, and tailor guidance."
+        },
+        {
+          "source_id": "FISRC-22cce00c604ac941",
+          "quote": "Mona – recently named to Fast Company’s World Changing Ideas List – pairs AI with human coaching, offering ongoing support beyond a one-time funding search."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.998Z"
+    },
+    "EV-f7c48f02fd8618a2": {
+      "id": "EV-f7c48f02fd8618a2",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "好心情以AI和数字医疗技术驱动精神心理健康服务，属于医疗服务与临床行业AI。",
+      "input_hash": "9ba588ece91e472ddac9734f683e5b3e5db6d0a04270eec7d888b3f986ef6054",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fd10d8d231daf83d",
+          "quote": "领先的精神心理数字医疗服务企业好心情（Good Mood）完成新一轮近3亿元人民币融资"
+        },
+        {
+          "source_id": "FISRC-a22a437c0eb95829",
+          "quote": "好心情成立于2016年，是一家以人工智能和数字医疗技术驱动的心理健康与精神医疗科技集团"
+        },
+        {
+          "source_id": "FISRC-fd10d8d231daf83d",
+          "quote": "其核心模式是以专业医疗服务为基础，连接规模化精神心理专业医生网络、线上互联网医疗服务和线下医疗机构，同时与企业、保险及医药企业等建立合作，覆盖预防、筛查、心理咨询、诊疗、治疗、随访及长期健康管理等环节。"
+        },
+        {
+          "source_id": "FISRC-a22a437c0eb95829",
+          "quote": "通过“AI评估与分层 + 数字心理服务 + 心理治疗 + 精神科医疗 + 线下专业机构”的综合服务体系，公司希望帮助企业从传统的员工心理咨询，进一步升级为覆盖员工心理健康风险识别、干预和治疗的完整解决方案。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T03:50:16.998Z"
     }
   },
-  "generated_at": "2026-10-02T02:11:20.829Z"
+  "generated_at": "2026-10-02T03:50:16.998Z"
 }
