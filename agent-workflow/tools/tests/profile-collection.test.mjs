@@ -32,7 +32,7 @@ test('candidate validation blocks invented quotes, missing sources, identity gap
  const {queue:q}=fixture(t);const job=q.claim('research')[0],p=profile(q,job);
  assert.throws(()=>q.complete(job.key,job.token,{...p,sources:[{...p.sources[0],quote:'invented',quote_hash:digest('invented')}]}),/exact/);
  assert.throws(()=>q.complete(job.key,job.token,{...p,facts:[{...p.facts[0],source_id:'absent'}]}),/Missing field source/);
- assert.throws(()=>q.complete(job.key,job.token,{...p,identity_status:'pending_verification'}),/source-reviewed/);
+  assert.throws(()=>q.complete(job.key,job.token,{...p,identity_status:'pending_verification'}),/verified identity/);
  assert.throws(()=>q.complete(job.key,job.token,{...p,last_verified_at:'2099-01-01'}),/Verification date/);
  q.complete(job.key,job.token,p);assert.equal(q.status().counts.candidate,1);assert.equal(q.status().counts.accepted,undefined);q.approve(job.key,'editor');assert.equal(q.status().counts.accepted,1);
 });
