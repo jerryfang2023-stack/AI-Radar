@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kiwoom Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "summary": "Kiwoom Investment 是 Kiwoom 集团旗下的风险投资机构。WOWTALE 报道称其作为 Algorix 既有投资方，参与了该公司的 1150 万美元 A 轮后续投资。",
+      "coverage_note": "机构类型来自 Kiwoom 官方集团页面；具体投资关系来自 WOWTALE 融资报道。未披露 Kiwoom 的单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "WOWTALE 报道称 Kiwoom Investment 参与 Algorix 的 1150 万美元 A 轮后续投资。",
+          "source_id": "kiwoom_algorix_round"
+        },
         {
           "description": "融资来源记录：Algorix · 多轮融资 · 2026-08-14 · 本轮参投 · $11.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4e441239551a1fd6"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "kiwoom_official_identity",
+          "source_url": "https://www.kiwoom.com/h/ir/engintroduce/VEngSubsidiaryView",
+          "source_title": "Profile/Shareholder Composition | Company Overview | About KIWOOM | KIWOOM",
+          "source_content_hash": "eab3fdf88b04531dbe0c0d6e552e5b9314b3daf5948768527de8d1b5eb6ae4bf",
+          "quote": "Kiwoom Investment is a venture capital firm managing venture investment funds.",
+          "quote_hash": "5b69733e0faa6fe80217fc7ebf39fa783ac44588ddc56ed15891aa5b09320f56"
+        },
+        {
+          "source_id": "kiwoom_algorix_round",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE",
+          "source_content_hash": "ab17b1c899f8d7ecb53f9e19326ac772fc4a45c3e18ad82ecc7cb1995704e661",
+          "quote": "Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+          "quote_hash": "cce4790200d68d29b7bcc7dfe04c1eacfa489a327b096e8324064f370611bc7f"
+        },
         {
           "source_id": "FISRC-4e441239551a1fd6",
           "source_url": "https://en.wowtale.net/2026/08/14/234729/",
@@ -161,7 +185,7 @@
           "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

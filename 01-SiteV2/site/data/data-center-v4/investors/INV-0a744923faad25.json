@@ -137,25 +137,51 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "孔小仙 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "person",
+      "summary": "孔小仙是浙江图灵算力研究院理事长、院长；公开报道将其列为智诊科技天使轮领投人之一。",
+      "coverage_note": "职务来自浙江新闻报道，融资参与来自新浪财经转载的医疗器械创新网报道；公开资料未说明其通过哪个投资载体出资。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "organization": "浙江图灵算力研究院",
+          "title": "理事长、院长",
+          "source_id": "kongxiaoxian_role"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
         {
-          "description": "融资来源记录：智诊科技 · 历史轮次未披露 · 本轮领投人之一。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-af08b5d32f6398e0"
+          "description": "报道将孔小仙列为智诊科技天使轮领投人之一。",
+          "source_id": "kongxiaoxian_zhizhen_angel"
         },
         {
           "description": "融资来源记录：智诊科技 · 历史轮次未披露 · 本轮领投人之一。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-631ef546105b066a"
+          "source_id": "FISRC-af08b5d32f6398e0"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "kongxiaoxian_role",
+          "source_url": "https://zjnews.zjol.com.cn/202606/t20260608_31712349.shtml",
+          "source_title": "智能体时代，浙商如何再赢一次？2026浙商（投融资）合作周盛大启幕",
+          "source_content_hash": "c773e1f5b7726449dae766b9312dfe335bf35ce92b4b952b9e6aea85c903ffa8",
+          "quote": "浙江图灵算力研究院理事长、院长孔小仙",
+          "quote_hash": "1a538fa171679f41ecbaa78c0a3818d4ca37d3a865076be25fe32afb927930da"
+        },
+        {
+          "source_id": "kongxiaoxian_zhizhen_angel",
+          "source_url": "https://finance.sina.com.cn/wm/2026-05-08/doc-inhxerwi4200401.shtml",
+          "source_title": "6500万！医疗AI大模型企业完成天使轮融资_新浪财经_新浪网",
+          "source_content_hash": "adaa47c567bc7031e0e39d57cf1bc043a52563b40140dec2789f1190b875393e",
+          "quote": "公开信息显示， 浙江图灵算力研究院理事长、院长孔小仙 参与领投",
+          "quote_hash": "6519ee2f007d1c2bed1f8d455fd09a36ac989ed9d2ee77456d773fd0548d5171"
+        },
         {
           "source_id": "FISRC-af08b5d32f6398e0",
           "source_url": "https://finance.sina.com.cn/wm/2026-05-08/doc-inhxerwi4200401.shtml",
@@ -173,7 +199,7 @@
           "quote_hash": "c39123fad46d17674e4085f0364d8c5bfa0b36739be807a6360a3167faf24665"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -304,12 +304,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Bpifrance 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Bpifrance 是法国公共投资银行，2013 年正式成立，为企业成长的不同阶段提供连续的支持方案。",
+      "coverage_note": "机构历史及创业企业服务定位依据 Bpifrance 官方历史页；不采用未经当前核验的资产或组合规模。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "官网称 Bpifrance 于 2013 年正式成立。",
+          "source_id": "bpifrance_history"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "法国公共投资银行。",
+          "source_id": "bpifrance_bank"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -326,7 +339,35 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "bpifrance_history",
+          "source_url": "https://www.bpifrance.com/our-history/",
+          "source_title": "Our history - Bpifrance.com",
+          "source_content_hash": "09338e655269efd8ff92979e956839958115e3f2b64bda265c2d36f82040f525",
+          "quote": "Officially Bpifrance was created in 2013 but its roots go back a hundred years.",
+          "quote_hash": "60c93320dd3aef29982c5d2ce9a0d666f1941237802d007efe7c2ea578eb355e"
+        },
+        {
+          "source_id": "bpifrance_mission",
+          "source_url": "https://www.bpifrance.com/our-history/",
+          "source_title": "Our history - Bpifrance.com",
+          "source_content_hash": "09338e655269efd8ff92979e956839958115e3f2b64bda265c2d36f82040f525",
+          "quote": "Today, we are the trusted partner for entrepreneurs and offer a continuum of solutions adapted to every key step in a business’ growth.",
+          "quote_hash": "37669156dad3b503a25c4f96dcdf8fe6cca56f151d1447d8ab476c803331c456"
+        },
+        {
+          "source_id": "bpifrance_bank",
+          "source_url": "https://www.bpifrance.com/our-history/",
+          "source_title": "Our history - Bpifrance.com",
+          "source_content_hash": "09338e655269efd8ff92979e956839958115e3f2b64bda265c2d36f82040f525",
+          "quote": "Creation of the Public Investment Bank",
+          "quote_hash": "8e08bd4f4323fa9864571a9fa1076c7c4d2b047e0335838f6488c066dc8f1904"
+        },
         {
           "source_id": "FISRC-6d8407107e870ebc",
           "source_url": "https://www.maddyness.com/?p=1441578",
@@ -352,7 +393,7 @@
           "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

@@ -209,12 +209,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BAI资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "BAI 资本是中国风险投资团队，官网介绍其前身为贝塔斯曼亚洲投资基金，并称团队于 2020 年底开始独立募资，关注早期至成长期企业。",
+      "coverage_note": "机构沿革与投资阶段采用 BAI Capital 官方介绍；网页披露的累计投资与退出数字未作为当前事实固化。",
+      "facts": [
+        {
+          "field": "history",
+          "label": "机构沿革",
+          "value": "官网称 BAI 资本前身为贝塔斯曼亚洲投资基金，团队于 2020 年底独立募资。",
+          "source_id": "bai_origin"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其寻找并支持早期到成长期企业。",
+          "source_id": "bai_stage"
+        },
+        {
+          "field": "fundraising_history",
+          "label": "募资沿革",
+          "value": "官网称团队于 2020 年底进行独立募资。",
+          "source_id": "bai_independent"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -224,14 +243,38 @@
         {
           "description": "融资来源记录：斯塔维科 · 天使轮 · 2026-08-17 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-461dd8e08e175615"
-        },
-        {
-          "description": "融资来源记录：斯塔维科 · 天使轮 · 2026-08-17 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c29d5aec6e795d60"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "bai_origin",
+          "source_url": "https://bai-cap.com/about.html",
+          "source_title": "BAI资本-BAI Capital",
+          "source_content_hash": "ec67042a199e42c6aa3dd70edf7ce8d242c2ece2390e6730f13adcbefcc58d62",
+          "quote": "BAI资本的前身是贝塔斯曼集团旗下贝塔斯曼亚洲投资基金。",
+          "quote_hash": "249ad688d95c0053d685394e3f6c8604e54f86163ef5b39bae473817f4b33cb9"
+        },
+        {
+          "source_id": "bai_stage",
+          "source_url": "https://bai-cap.com/about.html",
+          "source_title": "BAI资本-BAI Capital",
+          "source_content_hash": "ec67042a199e42c6aa3dd70edf7ce8d242c2ece2390e6730f13adcbefcc58d62",
+          "quote": "BAI致力于寻找并持续支持早期到成长期的市场领先者、创新开创者和趋势引领者",
+          "quote_hash": "a8f7f16f98c288f2bbbb3810efbb2ebcfb71f6681fbd7895a195d3304069063d"
+        },
+        {
+          "source_id": "bai_independent",
+          "source_url": "https://bai-cap.com/about.html",
+          "source_title": "BAI资本-BAI Capital",
+          "source_content_hash": "ec67042a199e42c6aa3dd70edf7ce8d242c2ece2390e6730f13adcbefcc58d62",
+          "quote": "2020年底，BAI资本团队进行独立募资",
+          "quote_hash": "80966a018edc7c341a60cbb07ff5e4e8bd93df2d275053dfb3410a4a7856594d"
+        },
         {
           "source_id": "FISRC-0dd42e7d7de8bcd9",
           "source_url": "https://rccaijing.com/news-7496079406088779054.html",
@@ -257,7 +300,7 @@
           "quote_hash": "c886cb0929a6da0783acf0914452f0048dd2d901a87e61dc58069a5ebd919b3f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

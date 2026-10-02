@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "XTX Markets 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "XTX Markets 官网将自身描述为算法交易公司，并设有 XTX Ventures 投资板块。该投资板块面向技术型创业者，官网称覆盖 Seed 至 Series B 及后续阶段，重点关注 AI 与机器学习技术。",
+      "coverage_note": "公司主业和 XTX Ventures 的投资策略均据同域名官网页面；将 XTX Ventures 作为官网展示的投资板块，不推断为独立法律实体。",
+      "facts": [
+        {
+          "field": "venture_investment",
+          "label": "风险投资活动",
+          "value": "XTX Ventures 官网称其与 Seed 至 Series B 阶段及后续的创始人合作，并关注 AI 与机器学习。",
+          "source_id": "xtx_markets_ventures"
+        },
+        {
+          "field": "business_type",
+          "label": "主要业务",
+          "value": "XTX Markets 官网将其描述为算法交易公司。",
+          "source_id": "xtx_markets_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "xtx_markets_ventures",
+          "source_url": "https://www.xtxmarkets.com/ventures/",
+          "source_title": "Ventures | XTX Markets",
+          "source_content_hash": "f267504ed0a1f2322134de65bb4a7b88f7364a832bfad54e6824cceef6b42a8b",
+          "quote": "We partner with founders from Seed to Series B - and beyond.",
+          "quote_hash": "12860c56a36314ab47dd12bb8f3dca930a9925f116a90065d3facfbe2a02e031"
+        },
+        {
+          "source_id": "xtx_markets_home",
+          "source_url": "https://www.xtxmarkets.com/",
+          "source_title": "Home | XTX Markets",
+          "source_content_hash": "df0a84971309b91a354639254f3f7f1afd2714a20429ad7ee95d68eea26c0fe5",
+          "quote": "We are a leading algorithmic trading firm that uses state-of-the-art machine learning technology to produce price forecasts for over 53,000 financial instruments across equities, fixed income, currencies, commodities and crypto.",
+          "quote_hash": "b7b621cb628f2e8e59f42029dff43bb6ea4f0a5fa939974124c8131e06bb7d06"
+        },
         {
           "source_id": "FISRC-03aa198ddff34236",
           "source_url": "https://siliconangle.com/2026/07/14/sovereign-ai-infrastructure-startup-valarian-raises-50m-help-nations-secure-military-defense-systems/",
@@ -161,7 +194,7 @@
           "quote_hash": "59082d2970c48e7a02826f97133fcac56c34d999aad32d2da218f17c22247c22"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

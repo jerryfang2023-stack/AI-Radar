@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Forestay Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Forestay Capital 是面向企业软件公司的成长阶段投资机构。Pivot 官方公告称其 4000 万美元 B 轮由 Forestay Capital 与 Notion Capital 领投。",
+      "coverage_note": "投资方向来自 Forestay Capital 官网；融资轮次及领投关系来自被投公司 Pivot 的官方公告，未披露 Forestay 的单独出资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Pivot 官方公告称其 4000 万美元 B 轮由 Forestay Capital 与 Notion Capital 领投；未披露 Forestay 单独出资金额。",
+          "source_id": "pivot_official_round"
+        },
         {
           "description": "融资来源记录：Pivot · B轮 · 2026-05-21 · 本轮领投 · $40m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-58b2708f2adcb70e"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "forestay_strategy",
+          "source_url": "https://www.forestay.vc/",
+          "source_title": "Forestay Capital",
+          "source_content_hash": "5ad78117f3f0441a53280fe501e470e7eb38a75866378ab2d6168cbb4ba8db58",
+          "quote": "We are a team of enterprise software investors providing growth capital to category-defining companies at their inflection point.",
+          "quote_hash": "c785d789453f9f2b84946fd38b914d008bb6dbd04a75b50ac1e4d3594ec33a2e"
+        },
+        {
+          "source_id": "pivot_official_round",
+          "source_url": "https://www.pivotapp.ai/blog/pivot-raises-40-million-series-b-to-replace-legacy-procurement-software-with-an-enterprise-ai-operating-system",
+          "source_title": "Pivot Raises $40 Million Series B to Replace Legacy Software",
+          "source_content_hash": "4f71a3cc4003ad4882a843ebaf26ba0f3c3fb27f3d18b933cc7d450285466929",
+          "quote": "The oversubscribed round was led by Forestay Capital and Notion Capital, with participation from Greyhound and procurement industry veterans",
+          "quote_hash": "d3371a52f4eb75141e11d8d62c09db27c67078a7eefd0dfe00afb9ff8a3bc19c"
+        },
         {
           "source_id": "FISRC-58b2708f2adcb70e",
           "source_url": "https://thenextweb.com/news/pivot-40m-series-b-agentic-ai-procurement-operating-system",
@@ -161,7 +185,7 @@
           "quote_hash": "17b6e623e7eae5e5597b6fbff227feabc152ea69596a740e7b1bfd850e684029"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

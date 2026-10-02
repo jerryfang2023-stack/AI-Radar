@@ -140,19 +140,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "盛奕资本(润泽集团产业资本) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "未找到可确认的机构官网；档案限于公开基金合作、创始合伙人身份与融资参与记录，不把相关合作方直接视作法律股东或管理人。",
+      "summary": "盛奕资本是公开融资与产业基金资料中出现的投资机构。中国金融信息网报道，盛奕资本合伙人郭谦参与签署重庆渝富龙泽并购母基金合伙协议；潮新闻称郭谦为盛奕资本创始合伙人。耀途资本的硅基流动融资报道将盛奕资本列为追加投资的老股东。",
+      "facts": [
+        {
+          "field": "founding_partner",
+          "label": "创始合伙人",
+          "value": "郭谦",
+          "source_id": "shengyi_guo"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "盛奕资本合伙人郭谦参与签署重庆渝富龙泽并购母基金合伙协议。",
+          "source_id": "shengyi_fund"
+        },
+        {
+          "description": "耀途资本的融资公告将盛奕资本列为硅基流动 B+ 轮二期及 C 轮的追加投资老股东。",
+          "source_id": "shengyi_siliconflow"
+        },
         {
           "description": "融资来源记录：硅基流动 · B轮 · 2026-06-16 · 本轮联合投资 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-879cc82306af58a1"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "该档案目前只收录可由公开基金活动和融资材料核实的机构关系；没有找到足够材料确认其法定主体、完整团队或投资业绩。",
       "sources": [
+        {
+          "source_id": "shengyi_fund",
+          "source_url": "https://www.cnfin.com/jbzfb-lb/detail/20230518/3866055_1.html",
+          "source_title": "重庆渝富龙泽并购基金（母基金）成立 - 中国金融信息网",
+          "source_content_hash": "fcf872d13cb6b4c00da9d285129f9a285ba88985cd4f4f0a20f64d8184749f4c",
+          "quote": "在九龙坡区委书记李春奎、渝富控股集团董事长胡际权及润泽集团董事长周超男等领导及嘉宾的共同见证下，渝富资本集团董事长马宝、润泽集团董事李笠、渝隆集团董事长王源源，灼华基金合伙人白继山，盛奕资本合伙人郭谦签署基金合伙协议。",
+          "quote_hash": "917648f30cc96dd588b8928dd8b71346b049a8e54c23e3568a9d6fc3558f4dd8"
+        },
+        {
+          "source_id": "shengyi_siliconflow",
+          "source_url": "https://www.glory-ventures.com/news/a/457.html",
+          "source_title": "硅基流动完成B+轮二期及C轮融资，耀途资本五次下注 投资组合",
+          "source_content_hash": "a4cc640270d747ace4b7d8f2e5f4b105a5edd0274b929fe4b119359a2c931eda",
+          "quote": "老股东耀途资本、盛奕资本和国泰创投集团追加投资。",
+          "quote_hash": "af4b9bf0150919b30246f88d4630281ab041a5dda98b657638c5e7ee3c617112"
+        },
+        {
+          "source_id": "shengyi_guo",
+          "source_url": "https://tidenews.com.cn/news.html?id=2939797",
+          "source_title": "聚焦人工智能！“投资嘉兴”专场路演活动顺利举行 - 潮新闻",
+          "source_content_hash": "1f48179d806cb175801f6e333a5c9bcb3f38ec9ad8c33336a2151b9528613fb0",
+          "quote": "活动现场，盛奕资本创始合伙人郭谦从回顾、透视、思考、沉淀及智启六个维度深入剖析了人工智能行业的发展，并指出",
+          "quote_hash": "67b746b3940aba88d4934b6d08da6d0da104bfd95460b500f930f244b52566b0"
+        },
         {
           "source_id": "FISRC-879cc82306af58a1",
           "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
@@ -162,7 +205,7 @@
           "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "K Street Capital 当前按“投资组织”收录。最新融资披露记录日期为 2025-11-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "summary": "K Street Capital 是总部位于华盛顿特区的风险投资机构。Procurement Sciences 官方公告将其列为公司 3000 万美元 B 轮参投方。",
+      "coverage_note": "机构身份和投资策略来自 K Street Capital 官网；融资关系及轮次来自被投公司公告，未披露其单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Procurement Sciences 官方公告将 K Street Capital 列入其 3000 万美元 B 轮投资方名单。",
+          "source_id": "kstreet_procurement_series_b"
+        },
         {
           "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 既有投资方，本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa41049d7cbdf303"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "kstreet_official_identity",
+          "source_url": "https://www.kstreet.vc/what-we-do",
+          "source_title": "What We Do",
+          "source_content_hash": "92e3140a900d3c41b121e8229eb8ae108a42e9b5cb552ef7c17d7d235040d36f",
+          "quote": "K Street Capital is a Washington, DC–based venture capital firm",
+          "quote_hash": "af0f4e10d2e65e5ffc8ad6d97c542a964f4c5b3c318e76094ff9cd9c713cc232"
+        },
+        {
+          "source_id": "kstreet_procurement_series_b",
+          "source_url": "https://www.procurementsciences.com/blog/series-b",
+          "source_title": "Procurement Sciences Raises $30M Series B",
+          "source_content_hash": "adec4ce8adfbf6ca67dbd7c91e1943f400d5fd9cf435af97be939e7add6bd683",
+          "quote": "Battery Ventures, Bosch Ventures, Citi, Tower Research Ventures, Blu Ventures, K Street Capital, and strategic angel investors.",
+          "quote_hash": "237f272a7323f6a6342d646eb5c40f4e2395d471376469de62db20fc79adca7d"
+        },
         {
           "source_id": "FISRC-fa41049d7cbdf303",
           "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
@@ -161,7 +185,7 @@
           "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

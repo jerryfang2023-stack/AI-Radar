@@ -137,21 +137,80 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "JAZZ Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2023-04-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "官网使用名称 JAZZ Venture Partners，队列旧名为 JAZZ Ventures；官网组合页列出 Robust AI，与现有融资记录对应。阶段、方向和组合案例按官网口径记录。",
+      "summary": "JAZZ Venture Partners 与早期及成长阶段企业合作，关注企业、健康、医疗和消费市场；官网组合页列出 Robust AI。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期及成长阶段。",
+          "source_id": "jazz_stage"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "企业、健康、医疗和消费市场。",
+          "source_id": "jazz_stage"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资主题",
+          "value": "关注科技、科学与人类表现交叉领域的突破。",
+          "source_id": "jazz_thesis"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网组合页列出 Robust AI，并介绍其协作机器人认知引擎。",
+          "source_id": "jazz_robust"
+        },
         {
           "description": "融资来源记录：Robust.AI · A1轮 · 2023-04-20 · 本轮参投，A轮领投 · $20M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f4e29cbc583c9f01"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "JAZZ Venture Partners 官网",
+          "value": "JAZZ Venture Partners",
+          "url": "https://jazzvp.com/",
+          "source_id": "jazz_stage"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "jazz_stage",
+          "source_url": "https://jazzvp.com/",
+          "source_title": "JAZZ Venture Partners",
+          "source_content_hash": "73ebb75f5da7185eb91507c74a3d124668ffea21bfd89ccfe9d4aaca53428e39",
+          "quote": "JAZZ partners with early and growth stage companies in enterprise, wellness, healthcare, and consumer markets.",
+          "quote_hash": "45483d88e6d7f118d06b2062433760187f0ff811d303b52689d8b51a522328aa"
+        },
+        {
+          "source_id": "jazz_thesis",
+          "source_url": "https://jazzvp.com/",
+          "source_title": "JAZZ Venture Partners",
+          "source_content_hash": "73ebb75f5da7185eb91507c74a3d124668ffea21bfd89ccfe9d4aaca53428e39",
+          "quote": "JAZZ seeks breakthroughs at the convergence of technology, science, and humanity",
+          "quote_hash": "1b7576936154bc9c17cc61a6ef4692440ff8be7422f68a73159df05bb71818f7"
+        },
+        {
+          "source_id": "jazz_robust",
+          "source_url": "https://jazzvp.com/",
+          "source_title": "JAZZ Venture Partners",
+          "source_content_hash": "73ebb75f5da7185eb91507c74a3d124668ffea21bfd89ccfe9d4aaca53428e39",
+          "quote": "Robust AI is developing the world's first industrial-grade cognitive engine for robots that work collaboratively with humans.",
+          "quote_hash": "f17e36f7a64313374c3ebb1a54d54c2b157b0ae3e53b2150d86220abd9aefde4"
+        },
         {
           "source_id": "FISRC-f4e29cbc583c9f01",
           "source_url": "https://o.parsers.vc/startup/robust.ai/",
@@ -161,7 +220,7 @@
           "quote_hash": "78c95084a56906e913d57ffd0ffd449173cc7b5ac3425a09a060fd7f5388a9db"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

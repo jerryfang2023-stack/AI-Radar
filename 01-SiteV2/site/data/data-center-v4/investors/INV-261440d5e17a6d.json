@@ -121,12 +121,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Earlybird Digital East 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Digital East Fund（DEF I/II）于 2012 年由 Dan Lupu 共同创立，关注中东欧地区科技初创企业。Earlybird 官网将其描述为在许可下使用 Earlybird 品牌运营的独立公司。",
+      "coverage_note": "根据 Earlybird 官方团队和法律披露区分 Digital East Fund 与 Earlybird 品牌；只记录已披露的成立年份、区域方向及品牌关系，不补推法律注册细节。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "Earlybird 官网称 Dan Lupu 于 2012 年共同创立 Digital East Fund（DEF I/II）。",
+          "source_id": "digital_east_dan_lupu"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "官方简介称基金关注中东欧地区。",
+          "source_id": "digital_east_dan_lupu"
+        },
+        {
+          "field": "brand_relationship",
+          "label": "品牌关系",
+          "value": "Earlybird 法律披露称 Digital East Fund 是使用许可“Earlybird”品牌运营的独立公司。",
+          "source_id": "digital_east_legal_disclosure"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,7 +154,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "digital_east_dan_lupu",
+          "source_url": "https://earlybird.com/members/dan-lupu",
+          "source_title": "Dan Lupu - Earlybird",
+          "source_content_hash": "5ea599e3c2e269534a86c08c9093e42fa92fceb55f1ef378ba268af18ec59714",
+          "quote": "Dan co-founded the Earlybird-licensed Digital East Fund (DEF I/II) in 2012, focusing on the CEE region.",
+          "quote_hash": "599000cabed47c36abace323e9198446b365bc8a4475198a5373e9ab236131d7"
+        },
+        {
+          "source_id": "digital_east_legal_disclosure",
+          "source_url": "https://earlybird.com/legal",
+          "source_title": "Earlybird",
+          "source_content_hash": "0c8b49ad3e4871d868134932a47bf3a3924d32c2ca877c0f0e15f764e0390866",
+          "quote": "Digital East Fund which was operating under the licensed 'Earlybird' brand.",
+          "quote_hash": "b4f526756c7d2a54fbcebfd411bf7ba39dabfa0c598af7dfc1df964107a60e24"
+        },
         {
           "source_id": "FISRC-39755042b7f329d6",
           "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -145,7 +184,7 @@
           "quote_hash": "2ec5063fe68b5e7db534d2c70019f6756a6fac8bcefc74abbb6b119d713ef81d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

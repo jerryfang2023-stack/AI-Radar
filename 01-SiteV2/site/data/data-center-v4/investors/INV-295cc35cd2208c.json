@@ -121,12 +121,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "爱尔医疗 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "爱尔医疗对应爱尔医疗投资集团有限公司。爱尔眼科 2024 年公告将其列为控股股东，并披露其经营范围包括自有资金投资、医院管理及健康管理等业务。",
+      "coverage_note": "主体名称和业务范围依据爱尔眼科上市公司公告；此处描述的是控股股东爱尔医疗投资集团有限公司，不与上市主体爱尔眼科混同。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "爱尔医疗投资集团有限公司。",
+          "source_id": "aier_medical_identity"
+        },
+        {
+          "field": "business_scope",
+          "label": "经营范围",
+          "value": "公告披露范围包括自有资金投资、企业总部管理、医院管理及健康管理等。",
+          "source_id": "aier_medical_business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,7 +148,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "aier_medical_identity",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-08-21/1220937416.PDF",
+          "source_title": "爱尔眼科医院集团股份有限公司关于控股股东变更住所及经营范围并完成工商变更登记的公告",
+          "source_content_hash": "1a04306c52ded085a3e9a7363c508bacef3361eb292625c8032283c08ccd2e9d",
+          "quote": "爱尔眼科医院集团股份有限公司（以下简称“公司”）于近日收到控股股东爱尔医疗投资集团有限公司的通知",
+          "quote_hash": "9f9c3ebfde9264868f71857207d7130fa792d97eb831148c022ba0250714247f"
+        },
+        {
+          "source_id": "aier_medical_business",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2024-08-21/1220937416.PDF",
+          "source_title": "爱尔眼科医院集团股份有限公司关于控股股东变更住所及经营范围并完成工商变更登记的公告",
+          "source_content_hash": "1a04306c52ded085a3e9a7363c508bacef3361eb292625c8032283c08ccd2e9d",
+          "quote": "一般项目：以自有资金从事投资活动；企业总部管理；物业管理；住房租赁；非居住房地产租赁；医院管理；健康咨询服务（不含诊疗服务）；远程健康管理服务；企业管理咨询。",
+          "quote_hash": "33ff8bd20c690036a51a335377a454aca0ccd3542f1f51a9bb65590e61d4cac2"
+        },
         {
           "source_id": "FISRC-65e2ca710ece93bc",
           "source_url": "https://www.36kr.com/p/1627551190660871",
@@ -145,7 +178,7 @@
           "quote_hash": "33525476f5cd026e8afe1a6f75f5db64caacf3af56c00218a1e0346dcf71b236"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

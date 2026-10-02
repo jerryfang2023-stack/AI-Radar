@@ -232,12 +232,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "一村资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "一村资本有限公司于 2015 年在上海成立，聚焦产业资产投资发现、长期运营与整合交易，官网将其定位为并购投资机构。",
+      "coverage_note": "主体沿革与投资模式来自一村资本官方愿景页面；没有把其愿景表述当作业绩或市场排名。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "官网称一村资本于 2015 年在上海成立。",
+          "source_id": "yicun_founded"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "官网将一村资本定位为并购投资机构。",
+          "source_id": "yicun_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -254,7 +267,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "yicun_founded",
+          "source_url": "https://ma.v-capital.cn/manifesto.html",
+          "source_title": "企业愿景-一村资本官网-投资全球产业变革者",
+          "source_content_hash": "8014d244d92aada6cefeb857a62c80c71de5dca2063db4b09672ff708e47f007",
+          "quote": "2015年夏",
+          "quote_hash": "151c58a2302ae6ac067de7d79d5e8245f09896ed2f64b85f969c9a697bb61bac"
+        },
+        {
+          "source_id": "yicun_strategy",
+          "source_url": "https://ma.v-capital.cn/manifesto.html",
+          "source_title": "企业愿景-一村资本官网-投资全球产业变革者",
+          "source_content_hash": "8014d244d92aada6cefeb857a62c80c71de5dca2063db4b09672ff708e47f007",
+          "quote": "投资发现、长期运营、整合交易",
+          "quote_hash": "740729b138ce038d5c551ef7c8d00604c2102062b976ed8d8749d34752922cdd"
+        },
         {
           "source_id": "FISRC-e3b51be471b79167",
           "source_url": "https://www.wuxicapital.com.cn/news_59/575.html",
@@ -280,7 +313,7 @@
           "quote_hash": "c85da4980414a31981422a897b72286447cacfc54f10dfb0335807fa4395208f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

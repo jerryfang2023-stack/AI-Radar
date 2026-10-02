@@ -193,14 +193,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "天际资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "FutureX Capital 官网以“天际资本”为中文品牌，将自身定位为创办于亚洲的全球化投资平台，关注人工智能和前沿科技；投资界报道其领投万卷智能 Pre-A 轮。",
+      "coverage_note": "机构定位及中英文品牌对应来自官网；投资关系来自投资界报道。未推断天际资本单独出资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "投资界报道万卷智能 Pre-A 轮由天际资本领投。",
+          "source_id": "futurex_wanjuan_pre_a"
+        },
         {
           "description": "融资来源记录：万卷智能 · Pre-A轮 · 2026-08-18 · 本轮领投 · 超千万。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ef8d3e6bdcd3b9fd"
@@ -210,8 +219,23 @@
           "source_id": "FISRC-55041228ee583f8a"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "futurex_identity",
+          "source_url": "https://futurex.capital/",
+          "source_title": "FutureX Capital · 天际资本 | 投资 AI 时代的构建者",
+          "source_content_hash": "7187cfd3f64eab163b39350ec2643e0834ebb4fb38e9662cd88433650a965b02",
+          "quote": "FutureX Capital 是创办于亚洲的全球化投资平台",
+          "quote_hash": "f4e45e0b78fc13155c9e4d78368802879df04afa08e8a10f1b6ca03c392ebb03"
+        },
+        {
+          "source_id": "futurex_wanjuan_pre_a",
+          "source_url": "https://news.pedaily.cn/202608/567787.shtml",
+          "source_title": "万卷智能完成超千万Pre-A轮融资，天际资本领投_投资界",
+          "source_content_hash": "980ff145c7820dc0ebdc4ff92013dccdb899edad9e477207e29b022a2cca5ed0",
+          "quote": "本轮融资由 天际资本领投",
+          "quote_hash": "bf1facdc4a9dd71825622d35a1725d1c69a3c4f99bea58a0dcc49da406498877"
+        },
         {
           "source_id": "FISRC-ef8d3e6bdcd3b9fd",
           "source_url": "https://news.pedaily.cn/202608/567787.shtml",
@@ -229,7 +253,7 @@
           "quote_hash": "d0dbb96aee7f328e9265044785e68897778ec2a2261dab27203e5a3087e10eb9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

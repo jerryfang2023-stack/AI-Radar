@@ -137,14 +137,43 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Novera Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "SEC Form D 核实 Delaware 法律主体 Novera Ventures, L.P.；Graphon 融资报道将 Novera Ventures 列为领投方，相关投资归属按报道口径记录。",
+      "summary": "Novera Ventures, L.P. 是一家于 2025 年设立、注册于 Delaware 的有限合伙企业。SEC Form D 将 Arvind Gupta 列为其普通合伙人管理成员；Graphon AI 融资报道将 Novera Ventures 列为 830 万美元种子轮领投方。",
+      "facts": [
+        {
+          "field": "legal_form",
+          "label": "法律形式",
+          "value": "Delaware limited partnership（有限合伙企业）。",
+          "source_id": "novera_sec"
+        },
+        {
+          "field": "year_established",
+          "label": "设立年份",
+          "value": "SEC Form D 申报的设立年份为 2025。",
+          "source_id": "novera_sec"
+        },
+        {
+          "field": "management",
+          "label": "管理人",
+          "value": "SEC Form D 将 Arvind Gupta 列为普通合伙人的管理成员。",
+          "source_id": "novera_sec"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-07-25",
+          "description": "Novera Ventures, L.P. 提交 SEC Form D 申报。",
+          "source_id": "novera_sec"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Unite.AI 报道称 Graphon AI 的 830 万美元种子轮由 Novera Ventures 领投。",
+          "source_id": "graphon_round"
+        },
         {
           "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮领投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9c4c0f115d1f38be"
@@ -152,6 +181,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "novera_sec",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2080771/000147083125000118/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "bb72f2f0596ab820c30da17788ab0e52ea0bb762e72fc5f1b4e776117ddd3e31",
+          "quote": "Novera Ventures, L.P.",
+          "quote_hash": "8374705d9bc8436c3f7af2c7b1494f22898f7a8e3994ea455894ce8222148199"
+        },
+        {
+          "source_id": "novera_sec_manager",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2080771/000147083125000118/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "bb72f2f0596ab820c30da17788ab0e52ea0bb762e72fc5f1b4e776117ddd3e31",
+          "quote": "ARVIND GUPTA",
+          "quote_hash": "08410da45e068927709708683dd1c82e6457db79d0388a198c1e254fdb8e0097"
+        },
+        {
+          "source_id": "graphon_round",
+          "source_url": "https://www.unite.ai/graphon-ai-emerges-from-stealth-with-8-3m-to-build-an-intelligence-layer-for-enterprise-ai/",
+          "source_title": "Graphon AI Emerges From Stealth With $8.3M to Build an “Intelligence Layer” for Enterprise AI &#8211; Unite.AI",
+          "source_content_hash": "c0a60caf3de8f0db9801d4fae610cfcdf059bccf0db0fffc4ce7ad5dcdc5ef16",
+          "quote": "The round was led by Novera Ventures",
+          "quote_hash": "7f0b087f1ffa4de2df1d6e17360a61a5f3a7b882e29934b3d474adab53b12ad2"
+        },
         {
           "source_id": "FISRC-9c4c0f115d1f38be",
           "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
@@ -161,7 +214,7 @@
           "quote_hash": "7f0b087f1ffa4de2df1d6e17360a61a5f3a7b882e29934b3d474adab53b12ad2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Aiconic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Aiconic Ventures 是投资 AI 企业的风险投资机构，其官网将 Lumilens 列入投资组合。",
+      "coverage_note": "机构身份和组合关系均来自 Aiconic Ventures 官网；不据媒体报道为 Lumilens 的具体融资轮次或 Aiconic 单独出资额背书。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Aiconic Ventures 官方组合页将 Lumilens 列为 AI Infrastructure 领域投资组合公司。",
+          "source_id": "aiconic_lumilens_portfolio"
+        },
         {
           "description": "融资来源记录：Lumilens · C轮 · 2026-08-06 · 本轮参投 · $700 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1661d3e646fd132d"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "aiconic_identity",
+          "source_url": "https://www.aiconicventures.com/",
+          "source_title": "AI &amp; Deep Tech Venture Capital | AICONIC VENTURES",
+          "source_content_hash": "8d0e134244603274713cb724a2e11a28564285f09dc36e6236ceda4e79e3edd1",
+          "quote": "AICONIC VENTURES identifies and invests in the next generation, category-defining AI companies.",
+          "quote_hash": "ecd62af519b3deff98f93bc2ba753442b51cd8a1cb05fd2e0074bc74c80d24d8"
+        },
+        {
+          "source_id": "aiconic_lumilens_portfolio",
+          "source_url": "https://www.aiconicventures.com/portfolio/lumilens/",
+          "source_title": "Next-Generation Photonics for Data Centers and AI | AICONIC VENTURES",
+          "source_content_hash": "dc3c860a49ad18b5a61b471ecb3f551a67f035079d9a0b9a9440b006e3b7030c",
+          "quote": "Lumilens Next-Generation Photonics for Data Centers and AI Thesis AI Infrastructure",
+          "quote_hash": "a253d10d4ba6f041ec600a1f825bbc165eaa911a25b44958e2244ab9f20ef32c"
+        },
         {
           "source_id": "FISRC-1661d3e646fd132d",
           "source_url": "https://www.financialcontent.com/article/bizwire-2026-8-6-lumilens-emerges-from-stealth-with-more-than-900-million-in-funding-to-break-ais-connectivity-bottlenecks-in-the-data-center",
@@ -161,7 +185,7 @@
           "quote_hash": "5c6dc8d8f04b41d8809db0a2dff73dab098ead2ec9aa2a5525d286176c5326f8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

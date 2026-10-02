@@ -121,21 +121,67 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Trevor Blackwell (YC) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "coverage_note": "Y Combinator 创始人名录核实了其退休创始人身份、机器人研究经历和学历；TechCrunch 对 Adam 融资的报道将其列为天使投资人。",
+      "summary": "Trevor Blackwell 是 Y Combinator 的退休创始人和机器人研究者，拥有哈佛大学计算机科学博士学位。TechCrunch 将他列为 Adam 种子轮天使投资人。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Y Combinator",
+          "title": "创始人（官网标注为退休）",
+          "period": "Y Combinator 创始人名录当前标注",
+          "description": "Y Combinator 创始人名录将 Trevor Blackwell 标注为 Founder, Retired，并介绍其机器人研究经历。",
+          "source_id": "yc_profile"
+        }
+      ],
+      "education": [
+        {
+          "institution": "哈佛大学",
+          "qualification": "计算机科学博士；另有 Carleton 工程学学士学位",
+          "source_id": "yc_education"
+        }
+      ],
+      "experience_summary": "Y Combinator 创始人名录介绍其为机器人研究者；目前核实到一项 Adam 融资中的天使投资活动。",
       "track_record": [
+        {
+          "description": "TechCrunch 报道将 Trevor Blackwell 列入 Adam 种子轮天使投资人名单。",
+          "source_id": "adam_seed"
+        },
         {
           "description": "融资来源记录：Adam · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1e12e93a65d54b9a"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "yc_profile",
+          "source_url": "https://www.ycombinator.com/people/?source=post_page---------------------------",
+          "source_title": "People | Y Combinator",
+          "source_content_hash": "fa40fe9670cebbd24d9f642085d1af385583b58281257ef09083baf77e1760e6",
+          "quote": "Trevor Blackwell is a roboticist who in 2007 built the first dynamically balancing biped robot",
+          "quote_hash": "4f546ccf661c04107c1b8480587ac70bba47b7b552a1423ede4d587619d0c4d3"
+        },
+        {
+          "source_id": "yc_education",
+          "source_url": "https://www.ycombinator.com/people/?source=post_page---------------------------",
+          "source_title": "People | Y Combinator",
+          "source_content_hash": "fa40fe9670cebbd24d9f642085d1af385583b58281257ef09083baf77e1760e6",
+          "quote": "He has a BEng from Carleton, and a PhD in Computer Science from Harvard.",
+          "quote_hash": "982c436ffbc0060ea5eea97dff95939021b5e8c78fa82963339b877ca034fe3f"
+        },
+        {
+          "source_id": "adam_seed",
+          "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
+          "source_title": "YC alum Adam raises $4.1M to turn viral text-to-3D tool into AI copilot | TechCrunch",
+          "source_content_hash": "dac4ca777e5f9f00b40b617284296763a67b8fac612857dba06d447de90a96bb",
+          "quote": "Adam is also backed by angel investors, including Tim Glaser (PostHog), Trevor Blackwell (YC), and Theo Browne (T3 Chat)",
+          "quote_hash": "c236bbb9da99e74609afc935e94ce45c89e631d1524cbdc9a1cad10365051c71"
+        },
         {
           "source_id": "FISRC-1e12e93a65d54b9a",
           "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
@@ -145,7 +191,7 @@
           "quote_hash": "c236bbb9da99e74609afc935e94ce45c89e631d1524cbdc9a1cad10365051c71"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

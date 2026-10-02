@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mission Street Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "summary": "Mission Street Capital 是一家总部位于旧金山、关注早期项目的综合型风险投资机构。Smallest AI 官方公告将其列入公司 2026 年 7 月 1300 万美元 Series A 投资方名单。",
+      "coverage_note": "投资机构身份由 Mission Street Capital 官网说明；融资关系和轮次来自 Smallest AI 官方融资公告。公告未披露其单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Smallest AI 官方公告将 Mission Street Capital 列入其 2026 年 7 月 1300 万美元 Series A 投资方名单。",
+          "source_id": "mission_street_smallest_series_a"
+        },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b1944359351ee14"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "mission_street_identity",
+          "source_url": "https://www.missionstcapital.com/",
+          "source_title": "Mission Street Capital",
+          "source_content_hash": "e673e635be2e965e07ff5550de2ea41eb78d5e594e77ecf5be6f372f3f2b9a33",
+          "quote": "Mission Street Capital is a generalist early stage venture firm born out of Mission Control, a hacker house founded by Thiel Fellows in 2014.",
+          "quote_hash": "139dd1e311c16d28fd2102059d6446c85d3a58d1ecfcfb885856d9699c9585b1"
+        },
+        {
+          "source_id": "mission_street_smallest_series_a",
+          "source_url": "https://smallest.ai/blog/series-a-funding-13m-next-generation-voice-ai",
+          "source_title": "Announcing our Series A funding - Smallest.ai",
+          "source_content_hash": "384d8d11b68d62e71cac0df0c45240cdc2780a65088a25ca0fde3bab08c3878a",
+          "quote": "DeVC , Mission Street Capital , and a group of angel investors who believe in the future of real-time voice AI.",
+          "quote_hash": "a03a5d6d9a0ab4ff34f03724a663d65d08ecfb708c51f43b4ec36c834bdae4da"
+        },
         {
           "source_id": "FISRC-6b1944359351ee14",
           "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
@@ -161,7 +185,7 @@
           "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

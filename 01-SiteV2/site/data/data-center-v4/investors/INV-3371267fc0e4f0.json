@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "CapitalT 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2023-11-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "CapitalT 是早期风险投资基金，官网说明其投资阶段覆盖 pre-seed 和 seed，并关注应用人工智能、深科技、Physical AI 与净正向影响主题。",
+      "coverage_note": "基金定位、投资阶段与主题依据 CapitalT 官方网站；网站展示的是机构自述的投资方向，不将精选组合等同于完整投资记录。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网列出 pre-seed 与 seed 阶段。",
+          "source_id": "capitalt_stage"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网列出 Applied AI、Deeptech、Physical AI 与 Net Positive。",
+          "source_id": "capitalt_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,59 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "capitalt_identity",
+          "source_url": "https://www.capitaltvc.com/",
+          "source_title": "CapitalT",
+          "source_content_hash": "0333f4dcd144ce932562f5a53d659a68998cc1fa62436ca03173f997114f61fe",
+          "quote": "CapitalT is the investor all founders need:",
+          "quote_hash": "35e5bbd8dc214ac5422c6094ed8ade7ff574032122475b4547d8c07064fc060c"
+        },
+        {
+          "source_id": "capitalt_stage",
+          "source_url": "https://www.capitaltvc.com/",
+          "source_title": "CapitalT",
+          "source_content_hash": "0333f4dcd144ce932562f5a53d659a68998cc1fa62436ca03173f997114f61fe",
+          "quote": "PRE-SEED & SEED",
+          "quote_hash": "e5356ed5584e2112c9f7ad8b8c414a580b6f58336f618177c9dbfb1c384c592e"
+        },
+        {
+          "source_id": "capitalt_focus",
+          "source_url": "https://www.capitaltvc.com/",
+          "source_title": "CapitalT",
+          "source_content_hash": "0333f4dcd144ce932562f5a53d659a68998cc1fa62436ca03173f997114f61fe",
+          "quote": "Applied AI",
+          "quote_hash": "9110e71734ec9aa861c1b631c6a328e9bd3bed874db6b3628a1a51f1df593727"
+        },
+        {
+          "source_id": "capitalt_deeptech",
+          "source_url": "https://www.capitaltvc.com/",
+          "source_title": "CapitalT",
+          "source_content_hash": "0333f4dcd144ce932562f5a53d659a68998cc1fa62436ca03173f997114f61fe",
+          "quote": "Deeptech",
+          "quote_hash": "a66d595e1e5d906032b461b5cc882edcd4e8a288ff17be3cbe8935c67bbf163d"
+        },
+        {
+          "source_id": "capitalt_physical_ai",
+          "source_url": "https://www.capitaltvc.com/",
+          "source_title": "CapitalT",
+          "source_content_hash": "0333f4dcd144ce932562f5a53d659a68998cc1fa62436ca03173f997114f61fe",
+          "quote": "Physical AI",
+          "quote_hash": "2393599cc5897bc277681338f5ea152a6aaec87e903d75d197604f090517fc46"
+        },
+        {
+          "source_id": "capitalt_net_positive",
+          "source_url": "https://www.capitaltvc.com/",
+          "source_title": "CapitalT",
+          "source_content_hash": "0333f4dcd144ce932562f5a53d659a68998cc1fa62436ca03173f997114f61fe",
+          "quote": "Net Positive",
+          "quote_hash": "4a54386de91369c625938cef49c792ab7a7433e2ff01c6c7aa17c2bcd8979cf3"
+        },
         {
           "source_id": "FISRC-bcc816239b773128",
           "source_url": "https://startuprise.co.uk/luna-ai-raises-2-5m-in-a-pre-seed-funding",
@@ -161,7 +226,7 @@
           "quote_hash": "c48cca783fa89c4596beb83ebf42c8c70a12cbb1abc88ebf711e9380b84b4128"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

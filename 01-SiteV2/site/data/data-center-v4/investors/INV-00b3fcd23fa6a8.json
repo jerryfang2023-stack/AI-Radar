@@ -137,21 +137,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "GHOVC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Global Hands-On VC（GHOVC）是一家为日本科技初创企业提供全球化支持的风险投资机构。TYLsemi 官方公告将 GHOVC 列为 2026 年 7 月早期融资参与方。",
+      "coverage_note": "机构定位及其 TYLsemi 投资组合由 GHOVC 官网确认；TYLsemi 公告披露融资参与，未提供 GHOVC 单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "TYLsemi 官方 2026 年 7 月 14 日融资公告列出 GHOVC 为本轮参与方。",
+          "source_id": "ghovc_tylsemi_round"
+        },
         {
           "description": "融资来源记录：TYLsemi Inc. · 早期融资 · 2026-07-14 · 本轮参投 · $43 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2be3945d96fe8e7c"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "ghovc_identity",
+          "source_url": "https://www.ghovc.com/en",
+          "source_title": "Global Hands-On VC",
+          "source_content_hash": "098a71ca426419fc937265103cba233a52bee87900b86a879103da79fd020edf",
+          "quote": "support for Japanese technology startups to go global",
+          "quote_hash": "158676fdb06d5d4c16783ebe965ac61114d44abcc68d1b66d74b5aa9efc2c7d8"
+        },
+        {
+          "source_id": "ghovc_portfolio",
+          "source_url": "https://www.ghovc.com/en/investment",
+          "source_title": "Investment | Global Hands-On VC",
+          "source_content_hash": "c2c1a465494c3e33ec1285c176510d51111bf8e9288dbe48484d534c2e43bf1b",
+          "quote": "GHOVC Fund I Investment",
+          "quote_hash": "42e29fffec6cb26404f48f83e696c04ca27ebd7351f6381199884bba7560b7de"
+        },
+        {
+          "source_id": "ghovc_tylsemi_round",
+          "source_url": "https://www.tylsemi.ai/press-releases/tylsemi-raises-43-million-to-launch-first-full-stack-chipletplatform-for-custom-ai-silicon/",
+          "source_title": "TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI&nbsp;Silicon - TYLsemi",
+          "source_content_hash": "77f478a33ec5723003bedebe89243d479264a5ddf69c5437115dac13afc87c38",
+          "quote": "participation from Viola Ventures, GHOVC, Egis Technology",
+          "quote_hash": "804e6d43e9e6cc14f60e72032bb834afbc99f357225ab380f09691f7243c4fda"
+        },
         {
           "source_id": "FISRC-2be3945d96fe8e7c",
           "source_url": "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding/",
@@ -161,7 +193,7 @@
           "quote_hash": "21ff1d9d7a44925f5beac895dcbe0b4f6914d8ba80d4e264912049f5d1142e61"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "广和通 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "广和通（Fibocom）是无线通信模组及 AI 解决方案提供商。官网称公司成立于 1999 年，并在 A 股和 H 股上市。",
+      "coverage_note": "公司业务及上市信息来自 Fibocom 官网自述；未据官网首页推断其具体投资部门或对外投资策略。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "官网称其提供无线通信模组与 AI 解决方案，并以无线通信和人工智能为核心技术。",
+          "source_id": "fibocom_company"
+        },
+        {
+          "field": "listed_shares",
+          "label": "上市信息",
+          "value": "官网列示代码为 300638.SZ 与 0638.HK。",
+          "source_id": "fibocom_company"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "fibocom_company",
+          "source_url": "https://www.fibocom.com/en/gywm/index.html",
+          "source_title": "Global leading IoT Module Manufacturers - Fibocom",
+          "source_content_hash": "abae5caf0fb7f7161d164c32759065de92391fd78d2be56090b66e4dd89330ee",
+          "quote": "Fibocom, founded in 1999, is China’s first wireless communication module company listed on both the A-share and H-share markets (300638.SZ, 0638.HK).",
+          "quote_hash": "3c88505305ce4ed9896d4ccfb2d7fe33d924621460b4fe9bb4e3fa4f0e3444ea"
+        },
         {
           "source_id": "FISRC-8a995421b25ccbf7",
           "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
@@ -161,7 +186,7 @@
           "quote_hash": "5b4846a5d829bc8e76f19e1887636525b1114feb220e7c1c12fcadd948911d09"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

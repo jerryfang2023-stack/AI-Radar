@@ -137,21 +137,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Alfred P. Sloan Foundation 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "GitHub 官方文章将 Alfred P. Sloan Foundation 列为开源安全项目的 Funding Partner。",
+      "coverage_note": "本档案只记录 GitHub 对其资助伙伴身份的公开列示；本来源未披露金额，也不足以描述该基金会的投资策略或将其归类为风险投资机构。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "GitHub 官方文章将 Alfred P. Sloan Foundation 列入开源安全项目 Funding Partners。",
+          "source_id": "sloan_github_funding_partner"
+        },
         {
           "description": "融资来源记录：GitHub · 其他融资 · 2026-08-13 · 本轮参投 · $500,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-08365977cd80206b"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "sloan_github_funding_partner",
+          "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
+          "source_title": "What 50 open source projects taught us about security in the AI era - The GitHub Blog",
+          "source_content_hash": "3c0bf05f730f866ecc287e72f6661d9835c25aa9e955ca784d331bf5c0c6259b",
+          "quote": "Funding Partners: Alfred P. Sloan Foundation",
+          "quote_hash": "ee51adfc1047b21f3fa267c46d6c41f71936fe1855ece7067295aa2b2702466a"
+        },
         {
           "source_id": "FISRC-08365977cd80206b",
           "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
@@ -161,7 +177,7 @@
           "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

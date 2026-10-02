@@ -191,14 +191,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Section 32 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Section 32 是一家高集中度风险投资机构；BigHat Biosciences 官方公告将其列入 2026 年 9 月 C 轮融资的既有投资方。",
+      "coverage_note": "机构定位来自 Section 32 官网，投资关系来自被投公司官方融资公告；未披露其本轮单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "BigHat Biosciences 2026 年 9 月 24 日的 7500 万美元 C 轮公告将 Section 32 列入既有投资方。",
+          "source_id": "section32_bighat_series_c"
+        },
         {
           "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3372eff279ee29db"
@@ -208,8 +217,23 @@
           "source_id": "FISRC-1898b8cd3bcc2449"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "section32_identity",
+          "source_url": "https://section32.com/",
+          "source_title": "S32 | Venture Beyond",
+          "source_content_hash": "f82b639e189701c06c7114d887cd47110190114f7f2cb51dbb055c2710b93462",
+          "quote": "S32 is a high-conviction venture firm.",
+          "quote_hash": "b425f085be1d957a705ac83a49be62fa17e624d8798b66655567808ed621dea8"
+        },
+        {
+          "source_id": "section32_bighat_series_c",
+          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+          "source_title": "BigHat Biosciences",
+          "source_content_hash": "e99b0727f583df1e79158317316dd3d12f8c6c2cc5790bdce109c5c1b0ac5283",
+          "quote": "Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+          "quote_hash": "23cd93947371dd2f2f3397c63e8d0a2038215195f0ab82d35201a7fcbfa27dd1"
+        },
         {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
@@ -227,7 +251,7 @@
           "quote_hash": "069118ff869b0b60360e17fac78c42a06952f1dfe4275a277ebeb7c57898ee1e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -121,21 +121,70 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Primary Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "投资阶段与 Etched 投资关系均来自 Primary Venture Partners 官方网站及其对 Etched 投资历程的说明。",
+      "summary": "Primary Venture Partners 是总部位于纽约的种子阶段投资机构。其官网将阶段范围列为公司创立至种子期；机构文章称其领投 Etched 种子轮，并持续参与后续各轮。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "从公司创立阶段到种子期。",
+          "source_id": "primary_stage"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "纽约。",
+          "source_id": "primary_fund_facts"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Primary 官方文章称其领投 Etched 种子轮，并在后续每一轮继续投资。",
+          "source_id": "etched_investments"
+        },
         {
           "description": "融资来源记录：Etched · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-93ad55204895a7ae"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Primary Venture Partners 官网",
+          "value": "Primary Venture Partners",
+          "url": "https://www.primary.vc/",
+          "source_id": "primary_stage"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "primary_stage",
+          "source_url": "https://www.primary.vc/approach",
+          "source_title": "Approach",
+          "source_content_hash": "e00e32e0b6c92b0c08eecc607bad5b026f3074554dc6c6588df36423d2d16dd1",
+          "quote": "Stage Inception to Seed",
+          "quote_hash": "2da0c26441d44a17db43aa285eaa2deeec24796f3ac3e192fdd99f76a68af09b"
+        },
+        {
+          "source_id": "primary_fund_facts",
+          "source_url": "https://www.primary.vc/approach",
+          "source_title": "Approach",
+          "source_content_hash": "e00e32e0b6c92b0c08eecc607bad5b026f3074554dc6c6588df36423d2d16dd1",
+          "quote": "HQ NYC",
+          "quote_hash": "83bdcbbf24c9a1d1f45196de00427a823e52b543657a81743f2cb601496200ff"
+        },
+        {
+          "source_id": "etched_investments",
+          "source_url": "https://www.primary.vc/articles/why-we-invested-in-etched-in-every-round",
+          "source_title": "Why we invested in Etched in every round",
+          "source_content_hash": "a1e8e3702089eb88d5a529bfa7d4f35f25683d698b925787ddbd9b17130f3dba",
+          "quote": "Primary led the seed round less than 40 months ago is remarkable; we have invested in every round and refreshed our underwriting each time",
+          "quote_hash": "8eccdec37e071f2e59095731557c60f2d93f4f016216de3789433bd09412ee24"
+        },
         {
           "source_id": "FISRC-93ad55204895a7ae",
           "source_url": "https://techfundingnews.com/nvidia-rival-ai-chip-maker-etched-founded-by-harvard-dropouts-lands-500m-at-5b-valuation/",
@@ -145,7 +194,7 @@
           "quote_hash": "bb5b32bb7c59b66508b84a857c6ade35fa71d0e501fd0fc207f254d4ea793fa8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

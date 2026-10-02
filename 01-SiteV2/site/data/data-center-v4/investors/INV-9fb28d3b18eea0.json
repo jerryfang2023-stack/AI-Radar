@@ -326,12 +326,22 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pear VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立时间",
+          "value": "2013 年",
+          "source_id": "pear_foundation"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资阶段",
+          "value": "Pre-Seed 和 Seed 阶段。",
+          "source_id": "pear_stage"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -347,8 +357,40 @@
           "source_id": "FISRC-b3973965c733b20b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Pear VC 官网",
+          "value": "Pear VC",
+          "url": "https://pear.vc/",
+          "source_id": "pear_foundation"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "Pear VC 官网核实机构起源、早期投资阶段及创始人支持方式；未补录未核实的基金规模。",
+      "summary": "Pear VC 是一家以创始人为中心的早期投资机构。官网称其于 2013 年创立，主要投资 Pre-Seed 和 Seed 阶段，并通过创始人服务支持早期团队。",
       "sources": [
+        {
+          "source_id": "pear_foundation",
+          "source_url": "https://pear.vc/our-story/",
+          "source_title": "Our Story - Pear VC",
+          "source_content_hash": "b49483bc61dffca341408beebb59398059ee2101bfca748babded2ecf5cc235c",
+          "quote": "Pear VC was founded in 2013 with a simple goal: to build a venture firm that truly puts founders first.",
+          "quote_hash": "b22e53c500eb4ead347cb0513fdaa29193340acbf8ea0ed67699fec6436ab92c"
+        },
+        {
+          "source_id": "pear_stage",
+          "source_url": "https://pear.vc/our-story/",
+          "source_title": "Our Story - Pear VC",
+          "source_content_hash": "b49483bc61dffca341408beebb59398059ee2101bfca748babded2ecf5cc235c",
+          "quote": "Over the past decade, we’ve invested in hundreds of companies at the pre-seed and seed stages.",
+          "quote_hash": "45166dc75be3c5cb02a083ffc500fa6654edbeb472b6d2da181d79dfbca55556"
+        },
         {
           "source_id": "FISRC-404aba285b240b86",
           "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
@@ -373,8 +415,7 @@
           "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
           "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     },
     "translations": {
       "zh-CN": {

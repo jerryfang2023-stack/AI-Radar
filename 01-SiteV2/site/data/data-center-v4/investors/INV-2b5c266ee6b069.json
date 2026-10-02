@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "汇丰 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "HSBC 是成立于 1865 年的全球银行与金融服务机构。官网介绍其战略以服务客户为中心，并通过国际网络支持企业跨境经营。",
+      "coverage_note": "机构历史和业务定位来自 HSBC 官方公司介绍；未把官网品牌表述转化为排名或业务规模断言。",
+      "facts": [
+        {
+          "field": "business_type",
+          "label": "机构性质",
+          "value": "全球银行及金融服务机构。",
+          "source_id": "hsbc_who_we_are"
+        },
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "官网称 HSBC 于 1865 年创立。",
+          "source_id": "hsbc_who_we_are"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "hsbc_who_we_are",
+          "source_url": "https://www.hsbc.com/who-we-are",
+          "source_title": "Who we are: Our purpose and strategy | HSBC Holdings plc",
+          "source_content_hash": "6a6a0dfc40ef5b48c86c1f4d836d288ed6ccd81d40faa6ac186158d906c009c6",
+          "quote": "Founded in 1865, HSBC is one of the world’s largest banking and financial services organisations.",
+          "quote_hash": "58816554536fe5bab8a06664415d3ea987448019b27d6249f9fe181dea65fd40"
+        },
         {
           "source_id": "FISRC-fcd3c6a1e0c3d822",
           "source_url": "https://www.chinaventure.com.cn/news/80-20260915-393275.html",
@@ -161,7 +186,7 @@
           "quote_hash": "dd63ef011438ec5982b5402880736ba43d49fc64651e972c6351c342c0d5996a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

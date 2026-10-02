@@ -122,21 +122,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "凯泰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "凯泰资本是风险资本管理机构；36 氪报道其作为西湖心辰老股东跟投。",
+      "coverage_note": "机构定位来自凯泰资本官网，融资关系来自 36 氪报道；未将跟投金额或基金份额推断为已披露事实。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "36 氪报道西湖心辰 Pre-A 轮由百度风投领投，老股东凯泰资本跟投。",
+          "source_id": "kaitai_xihu_pre_a"
+        },
         {
           "description": "融资来源记录：西湖心辰 · 历史轮次未披露 · Pre-A轮跟投方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c0671e3e70d8ae56"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "kaitai_identity",
+          "source_url": "https://kaitaicapital.com/",
+          "source_title": "凯泰资本",
+          "source_content_hash": "cb166d5bbcf07acaa516d29fa46f36477485f4cf6973fca97c680c6cb9eec7d1",
+          "quote": "凯泰资本是一家风险资本管理机构，主要从事创新投资管理业务。",
+          "quote_hash": "62ea73a06048dded42427004e73cffe613aed04e3e2acbc3e6da19b7e29fe22f"
+        },
+        {
+          "source_id": "kaitai_xihu_pre_a",
+          "source_url": "https://www.36kr.com/p/2179385107198212",
+          "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
+          "source_content_hash": "582b26ae4cc86360a40c95190ddf09240b203bfeb912c5fdcad4bcbae895986e",
+          "quote": "老股东凯泰资本和西湖教育基金会可持续发展平台跟投",
+          "quote_hash": "9e2faf87506724208baa5563a20e6f1ec5283a695af61ea14779927444b0346d"
+        },
         {
           "source_id": "FISRC-c0671e3e70d8ae56",
           "source_url": "https://m.36kr.com/p/2179385107198212",
@@ -146,7 +170,7 @@
           "quote_hash": "9e2faf87506724208baa5563a20e6f1ec5283a695af61ea14779927444b0346d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

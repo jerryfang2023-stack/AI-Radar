@@ -122,21 +122,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Aloniq 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Archestra 官方资料将 Aloniq 列为早期投资伙伴，并注明其由 Mark Shmulevich 创立和管理。Archestra 的融资公告称其种子轮时获得 Aloniq 等前一轮投资者回投。",
+      "coverage_note": "机构品牌与管理者关系由被投公司官方团队页披露；历史投资关系来自 Archestra 官方融资公告。未推断 Aloniq 的法律主体名称。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Archestra 官方 2026 年 6 月融资公告称其 pre-seed 投资者 Aloniq 在 seed 轮继续投资。",
+          "source_id": "aloniq_archestra_seed"
+        },
         {
           "description": "融资来源记录：Archestra · 轮次未披露 · 既有投资方（种子前轮）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "aloniq_archestra_identity",
+          "source_url": "https://archestra.ai/about",
+          "source_title": "About Us | Team &amp; Mission | Archestra",
+          "source_content_hash": "3fc1ed89f77c7b1fae2861b7a3a2d7215109e274d4f0912eaa593faef274187e",
+          "quote": "Aloniq By Mark Shmulevich, Founder & Managing Partner",
+          "quote_hash": "998725ba14ef11429797dcf26ef2fbfdaeb347cbaa1e911bbe10e1c3a5b6dd36"
+        },
+        {
+          "source_id": "aloniq_archestra_seed",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
+          "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
+          "quote": "Aloniq — came back in.",
+          "quote_hash": "3e7cca164357db212b651dbc6c66109abcc680599905b41e4fc218eadc97dbfb"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -146,7 +170,7 @@
           "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

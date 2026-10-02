@@ -137,12 +137,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Sahin Boydas 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-09-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "profile_type": "person",
+      "summary": "Sahin Boydas 是硅谷连续创业者和天使投资人。其个人官网自述拥有两次成功退出，并称已进行 222+ 项天使投资，列举 Anthropic、OpenAI 和 Scale AI。",
+      "coverage_note": "当前投资活动与数量来自本人官网自述，未经独立审计；不据此推断投资额、持股比例或完整投资组合。",
+      "facts": [
+        {
+          "field": "angel_investments",
+          "label": "天使投资活动",
+          "value": "本人官网自述有 222+ 项天使投资，并列出 Anthropic、OpenAI 和 Scale AI。",
+          "source_id": "sahin_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +158,25 @@
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "天使投资人",
+          "organization": "个人投资活动",
+          "source_id": "sahin_profile"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "本人官网称其创办 RemoteTeam、MovieLaLa、Leo AR 及 MojiLaLa，其中 RemoteTeam 与 MovieLaLa 已退出。",
       "sources": [
+        {
+          "source_id": "sahin_profile",
+          "source_url": "https://sahin.io/blog/angel-investing-in-logistics-and-supply-chain-tech",
+          "source_title": "Angel Investing in Logistics and Supply Chain Tech — Sahin Boydas",
+          "source_content_hash": "53e4f20ca4a18e0c2cdd0bba5f3ffcaf2f9de1495d4f5b79a131f322e381d267",
+          "quote": "222+ angel investments including Anthropic, OpenAI and Scale AI",
+          "quote_hash": "108f1eb229a5012273d4419f17448ef8f070bcd1e44bc4aef2df2e897add63cf"
+        },
         {
           "source_id": "FISRC-d06ceea5a84c2928",
           "source_url": "https://startupintros.com/orgs/sigmanticai",
@@ -161,7 +186,7 @@
           "quote_hash": "02b545ef9189f1335acf278f8a619296b464288388b1a444c77d95798ca2c704"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

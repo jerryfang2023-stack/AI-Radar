@@ -137,21 +137,70 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TLV Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "投资阶段与 Qodo 组合关系来自 TLV Partners 官网；Qodo 的官方 Series B 公告列出 TLV Partners 为本轮参与方。",
+      "summary": "TLV Partners 是专注以色列早期科技公司的风险投资机构，官网称其通常投资种子轮和 A 轮，并将 Qodo 列入组合。Qodo 官方 7000 万美元 Series B 公告将 TLV Partners 列为参与方之一。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子轮及 A 轮。",
+          "source_id": "tlv_stage"
+        },
+        {
+          "field": "market",
+          "label": "重点市场",
+          "value": "以色列早期科技创业公司。",
+          "source_id": "tlv_stage"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Qodo 官方公告称 Qumra Capital 领投其 7000 万美元 B 轮，并将 TLV Partners 列为参与方之一。",
+          "source_id": "qodo_round"
+        },
         {
           "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f001682a294672d5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "TLV Partners 官网",
+          "value": "TLV Partners",
+          "url": "https://www.tlv.partners/",
+          "source_id": "tlv_stage"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tlv_stage",
+          "source_url": "https://www.tlv.partners/why-us/",
+          "source_title": "About Us | TLV Partners",
+          "source_content_hash": "2354e466c71a36bdec85fdaaea9907152c56f70065fc144c427625cde35b3e53",
+          "quote": "We invest in early-stage companies. We’ve invested in teams with little more than an idea as well as companies with initial traction. In more traditional VC terminology, we invest in seed and A rounds.",
+          "quote_hash": "434fd2a8388a57d35b4f42addeed79a824602126e112038807103472c4572b18"
+        },
+        {
+          "source_id": "tlv_qodo_portfolio",
+          "source_url": "https://www.tlv.partners/portfolio/",
+          "source_title": "Portfolio Companies | TLV Partners",
+          "source_content_hash": "59f5df959ae60d0ffe6eeabf9697a822845631db02712b58cd62a032d128148f",
+          "quote": "Qodo is an AI code review and governance platform.",
+          "quote_hash": "f3d250e6aa2938103f18d42e3a478cc7829b648ebc09b77b9d9bab5de4130b8e"
+        },
+        {
+          "source_id": "qodo_round",
+          "source_url": "https://www.qodo.ai/blog/qodo-70m-series-b-shift-to-artificial-wisdom/",
+          "source_title": "Beyond Intelligence: Qodo’s $70M Series B and the Shift to Artificial Wisdom - Qodo",
+          "source_content_hash": "55acbc3a444492c967b56898d259977b5d75ccc33650fc2e9aba8f421f094629",
+          "quote": "TLV Partners and Vine Ventures",
+          "quote_hash": "04d0a053c7b17ef1c193a1a43700fe88f3e88ac0e408cdf270b17362756e00db"
+        },
         {
           "source_id": "FISRC-f001682a294672d5",
           "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
@@ -161,7 +210,7 @@
           "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

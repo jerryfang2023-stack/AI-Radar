@@ -137,12 +137,22 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kindred Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-10-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "主要为 Pre-Seed 和 Seed。",
+          "source_id": "kindred_stage"
+        },
+        {
+          "field": "founder",
+          "label": "创始人兼管理合伙人",
+          "value": "Steve Jang",
+          "source_id": "kindred_steve"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +160,48 @@
           "source_id": "FISRC-f3e9aa548f7703f9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Kindred Ventures 官网",
+          "value": "Kindred Ventures",
+          "url": "https://kindredventures.com/",
+          "source_id": "kindred_stage"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "Kindred Ventures 官网核实其最早期投资策略和 Steve Jang 的创始人兼管理合伙人职务；未将其个人历史投资全部归为机构投资。",
+      "summary": "Kindred Ventures 是一家专注科技公司最早期阶段的投资机构。官网称其主要投资 Pre-Seed 和 Seed，并强调以有运营经验的创始人及经营者支持新一代创始人；Steve Jang 为创始人兼管理合伙人。",
       "sources": [
+        {
+          "source_id": "kindred_stage",
+          "source_url": "https://kindredventures.com/about",
+          "source_title": "About - Kindred Ventures",
+          "source_content_hash": "3176dd16b05fde9b0541cd1e3966b202b60bec541cf7bed582a2f6fb1467a2fb",
+          "quote": "We invest in technology startups in their earliest rounds of financing, primarily pre-seed and seed",
+          "quote_hash": "709bdd9a119da26a29b06e923ab5d4e7e4bbebbf145f9960cfc7d8b7901e586a"
+        },
+        {
+          "source_id": "kindred_approach",
+          "source_url": "https://kindredventures.com/about",
+          "source_title": "About - Kindred Ventures",
+          "source_content_hash": "3176dd16b05fde9b0541cd1e3966b202b60bec541cf7bed582a2f6fb1467a2fb",
+          "quote": "Experienced founders / operators investing in new founders",
+          "quote_hash": "784914f8b5d8ea407579b3951c76f870ace6febac74652a9f2bebfe4567d34f7"
+        },
+        {
+          "source_id": "kindred_steve",
+          "source_url": "https://kindredventures.com/about/steve-jang/",
+          "source_title": "Steve Jang - Kindred Ventures",
+          "source_content_hash": "b214b6cfc653eae03323578847fe8a8e7ad2d6ddee001f24db67bba3eb409134",
+          "quote": "Steve is the Founder and Managing Partner at Kindred Ventures.",
+          "quote_hash": "23e5a21f3491ea7cbb068af2f8d4cdaf5872143ddcafbbf1e3c3cf321a72d3c3"
+        },
         {
           "source_id": "FISRC-f3e9aa548f7703f9",
           "source_url": "https://www.prnewswire.com/news-releases/mem0-raises-24m-series-a-to-build-memory-layer-for-ai-agents-302597157.html",
@@ -160,8 +210,7 @@
           "quote": "a Seed led by Kindred Ventures and Series A led by Basis Set Ventures, with participation from Peak XV Partners, GitHub Fund, and Y Combinator",
           "quote_hash": "67b8c2a049ec8a7b543cb91d96129ac6c30dfe99abe717ca3780b91c8b52a379"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

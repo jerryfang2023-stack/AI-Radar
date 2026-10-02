@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "卡莱特 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "卡莱特是一家以视频处理算法和硬件设备为基础提供视频图像解决方案的科技公司。其官方新闻稿称，公司是无问芯穹本轮融资跟投方及战略合作伙伴。",
+      "coverage_note": "公司身份及融资参与均来自卡莱特官网；未披露其单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "卡莱特官方新闻稿称其跟投无问芯穹 2026 年 5 月完成的超 7 亿元融资。",
+          "source_id": "colorlight_infinigence_round"
+        },
         {
           "description": "融资来源记录：无问芯穹 · 基础设施融资 · 2026-05-07 · 本轮参投 · 7 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5d0583f94886034"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "colorlight_identity",
+          "source_url": "https://colorlightinside.com/about/index/?language=cn",
+          "source_title": "卡莱特-关于我们-公司简介",
+          "source_content_hash": "48a63afaf3f07f2a52ab9e50297919d6a364aca9b421564d5d0b18bf01ff439a",
+          "quote": "卡莱特是一家以视频处理算法为核心、硬件设备为载体",
+          "quote_hash": "65f4142ee0f736563755534bf84b047c6075f6a7e23989ce6eff8388e9a81482"
+        },
+        {
+          "source_id": "colorlight_infinigence_round",
+          "source_url": "https://colorlightinside.com/news/company/14629.html",
+          "source_title": "热烈祝贺无问芯穹再获超7亿融资，规模居行业之首！ - 公司新闻",
+          "source_content_hash": "bcd5f9449bb2f3b36615d82645c7c73ea9cc3f75f6f0b60fe6fbfc3ee5d5e647",
+          "quote": "作为无问芯穹的战略合作伙伴和本轮跟投方，卡莱特自2025年起前瞻布局AI赛道。",
+          "quote_hash": "ad80f94200a8d9c82b0d9b424bc2ef50bd84498f92adeb12eb575506551c71b5"
+        },
         {
           "source_id": "FISRC-e5d0583f94886034",
           "source_url": "https://news.pedaily.cn/202605/563518.shtml",
@@ -161,7 +185,7 @@
           "quote_hash": "d1f4f980aceff974e80c0b6b6bc161a81c83e6e96a8de7bbe57e466be82f3880"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

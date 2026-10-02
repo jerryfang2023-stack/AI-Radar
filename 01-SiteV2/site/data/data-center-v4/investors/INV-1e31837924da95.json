@@ -137,12 +137,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "VentureFriends 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "VentureFriends 是一家主要投资 Pre-Seed 和 Seed 阶段的早期风险投资机构。",
+      "coverage_note": "投资阶段与地域均采用 VentureFriends 官网自述；基金规模与组合数据可能变化，未纳入。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其主要投资 Pre-Seed 与 Seed 阶段。",
+          "source_id": "venturefriends_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +158,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "venturefriends_about",
+          "source_url": "https://www.venturefriends.vc/about",
+          "source_title": "About | VentureFriends",
+          "source_content_hash": "4a44fe9327905dc30d75a59970e91f2e0e958415b45c036e9cd143c37765ef81",
+          "quote": "We are early-stage investors investing predominantly in Pre-Seed and Seed.",
+          "quote_hash": "5ff0affadd36856392bd33bec605d9e71094e6d2df765c4799be928434d4e787"
+        },
         {
           "source_id": "FISRC-7a0d2741d3dddcef",
           "source_url": "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/",
@@ -161,7 +180,7 @@
           "quote_hash": "ae1bb77e5a724b53c15c856ac390016abe90e7b84758fc53ffce26d2683c610d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

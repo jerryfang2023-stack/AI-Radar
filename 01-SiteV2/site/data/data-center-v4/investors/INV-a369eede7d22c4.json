@@ -138,12 +138,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "IN Venture 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "官网核实机构品牌、住友商事支持关系及投资方向；投资阶段和地区按官网自述记录。",
+      "summary": "IN Venture 是由住友商事支持的风险投资基金，官网称其投资以色列早期深科技初创企业，目标是支持具备全球发展潜力的公司。",
+      "facts": [
+        {
+          "field": "backing",
+          "label": "背景",
+          "value": "由住友商事支持的风险投资基金。",
+          "source_id": "in_identity"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "以色列早期深科技初创企业。",
+          "source_id": "in_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +164,36 @@
           "source_id": "FISRC-9661f69b0104e76e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "IN Venture 官网",
+          "value": "IN Venture",
+          "url": "https://in-venture.com/",
+          "source_id": "in_identity"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "in_identity",
+          "source_url": "https://in-venture.com/about/",
+          "source_title": "About us &#8211; IN Venture",
+          "source_content_hash": "06a7ad5893d08b42fb947b729c16566d1569a9d5229eec40184fd37adb783632",
+          "quote": "IN Venture is a Sumitomo Corporation backed venture fund",
+          "quote_hash": "f1be7adc19a93b2dcbc19be54e2f4707f44aa32d9bfb4f10810d48e37e3d10a1"
+        },
+        {
+          "source_id": "in_focus",
+          "source_url": "https://in-venture.com/about/",
+          "source_title": "About us &#8211; IN Venture",
+          "source_content_hash": "06a7ad5893d08b42fb947b729c16566d1569a9d5229eec40184fd37adb783632",
+          "quote": "We invest in deep-tech early stage Israeli startups that have the potential to become global category leaders.",
+          "quote_hash": "58ac7ccf69c318830f31c9eef1252e5ef05cad68c23d4d5f5c54bef064390d7b"
+        },
         {
           "source_id": "FISRC-9661f69b0104e76e",
           "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
@@ -162,7 +203,7 @@
           "quote_hash": "a00a631b882b0821b3dceb35b6c930973b9fa657114015975169def2203f7394"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -121,12 +121,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "愉悦资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "愉悦资本（北京愉悦资本投资管理有限公司）是私募股权基金管理相关机构。官网声明其仅面向符合条件的特定合格投资人募集资金，不向社会公众公开募集。",
+      "coverage_note": "主体名称和募集对象依据愉悦资本官网公告；公告亦提醒公众防范冒用品牌的募资信息。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "官网将愉悦资本称为私募股权基金，并称其仅面向符合条件的特定合格投资人募集资金。",
+          "source_id": "joycapital_official_notice"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,7 +142,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "joycapital_official_notice",
+          "source_url": "https://www.joycapital.com.cn/?s=index",
+          "source_title": "愉悦资本",
+          "source_content_hash": "53c58b293c06b52ca95431fb31d81702d5bd5ae05c5d5f4053a917232472fed1",
+          "quote": "愉悦资本是私募股权基金，仅面向符合条件的特定合格投资人募集资金，不通过任何公开方式向社会公众募集资金。",
+          "quote_hash": "3942ee8a6bf547bf7a3bcbd67b97de1c944ec6b95c0e81075a33c0c115724eeb"
+        },
         {
           "source_id": "FISRC-c5b971b07e7344e1",
           "source_url": "https://m.sohu.com/a/1000028992_112831",
@@ -145,7 +164,7 @@
           "quote_hash": "c03ad7bf0c5c08ba90e3a3b1f2780303d379c56602f9b11f3c90a8e797667252"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

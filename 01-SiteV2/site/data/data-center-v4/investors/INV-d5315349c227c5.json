@@ -123,21 +123,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jay Simons 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "coverage_note": "Sycamore 官方融资公告将 Jay Simons 标注为 BOND 普通合伙人，并列为其种子轮天使投资人；不据此扩写更完整履历。",
+      "summary": "Sycamore 官方 6500 万美元种子轮公告将 Jay Simons 标注为 BOND 普通合伙人，并列入该轮天使投资人名单。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "BOND",
+          "title": "General Partner",
+          "period": "Sycamore 2026-03-30 融资公告所述",
+          "description": "Sycamore 官方融资公告将 Jay Simons 标注为 BOND 普通合伙人。",
+          "source_id": "sycamore_jay"
+        }
+      ],
+      "education": [],
+      "experience_summary": "当前可核实资料仅确认其在 BOND 的普通合伙人身份及 Sycamore 种子轮天使投资活动。",
       "track_record": [
+        {
+          "description": "Sycamore 官方融资公告将 Jay Simons 列为 6500 万美元种子轮的天使投资人。",
+          "source_id": "sycamore_jay"
+        },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "sycamore_jay",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
+          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
+          "quote": "Jay Simons (General Partner at BOND)",
+          "quote_hash": "3c4670f3d28e38159e909561d10694ad0759200ba3aaa4f169e0fcf15879bce9"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -147,7 +171,7 @@
           "quote_hash": "3c4670f3d28e38159e909561d10694ad0759200ba3aaa4f169e0fcf15879bce9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

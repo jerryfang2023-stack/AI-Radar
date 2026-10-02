@@ -137,21 +137,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "T. Rowe Price Associates 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "T. Rowe Price 是全球投资管理机构；美国 SEC 文件确认 T. Rowe Price Associates, Inc. 的法定名称。TechCrunch 将其列入 SambaNova F 轮参与方。",
+      "coverage_note": "投资管理业务和法定实体名称分别来自公司官网及 SEC 文件；融资关系来自 TechCrunch 报道，未推断其单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "TechCrunch 报道 T. Rowe Price Associates 参与 SambaNova 2026 年 7 月融资。",
+          "source_id": "trowe_sambanova_f"
+        },
         {
           "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dbf8259066547c8e"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "trowe_identity",
+          "source_url": "https://www.troweprice.com/institutional/us/en/about/global-story/global-section-1.html",
+          "source_title": "Global Section 1",
+          "source_content_hash": "1abb683d68a7cf0875918413e5b52124ce5a0a74909e9a46a084339532bd397a",
+          "quote": "We are an independent, global investment management firm",
+          "quote_hash": "fea93c5e83d3893b739a896036b38de452975fa1fc83fa5a6cd8021f40aa7392"
+        },
+        {
+          "source_id": "trowe_legal_entity",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2097666/000199937126013702/gsprivate-n2a_062926.htm",
+          "source_title": "www.sec.gov",
+          "source_content_hash": "cd35702f7caacec70c2b1f1290367c0da0be008ac17eb4b089e988129b7ea23f",
+          "quote": "T. Rowe Price Associates, Inc.",
+          "quote_hash": "b2104447b3fcc1404265e6203142323fd291a8a35db0f85e26ecf2ebc77b8e32"
+        },
+        {
+          "source_id": "trowe_sambanova_f",
+          "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
+          "source_title": "AI chip maker SambaNova raises $1B at $11B valuation, 5 months after last mega round | TechCrunch",
+          "source_content_hash": "3c7f98ccfb26afc328abf5574b68caa0468cc3e744fff6a2b13954eb5c4fd7c0",
+          "quote": "Other investors participating in the round include Seligman Ventures, T. Rowe Price Associates",
+          "quote_hash": "9d29d40754a292e8eac7da571a54ddd4d0424b0c7d2420299f5b386fee583dcc"
+        },
         {
           "source_id": "FISRC-dbf8259066547c8e",
           "source_url": "https://techcrunch.com/2026/07/08/sambanova-draws-1b-at-11b-valuation-in-series-f-first-close/",
@@ -161,7 +193,7 @@
           "quote_hash": "9d29d40754a292e8eac7da571a54ddd4d0424b0c7d2420299f5b386fee583dcc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

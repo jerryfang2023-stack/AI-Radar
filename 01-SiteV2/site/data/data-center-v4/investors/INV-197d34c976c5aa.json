@@ -137,11 +137,11 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Ofer Smadari 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "person",
+      "summary": "Ofer Smadari 是 Torq 联合创始人兼 CEO。Torq 官网介绍公司由 Ofer Smadari、Eldad Livni 和 Leonid Belkind 于 2020 年创立。",
+      "coverage_note": "人物身份及公开职务依据 Torq 官网；未据融资报道扩展为其完整个人投资履历。",
       "facts": [],
       "milestones": [],
       "track_record": [
@@ -151,7 +151,33 @@
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "联合创始人兼首席执行官",
+          "organization": "Torq",
+          "source_id": "ofer_torq_role"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Torq 官网将 Ofer Smadari 列为公司联合创始人和 CEO；其其他履历未在本轮官网来源中核实。",
       "sources": [
+        {
+          "source_id": "ofer_torq_bio",
+          "source_url": "https://torq.io/company/",
+          "source_title": "About Torq | The Leading AI SOC Platform",
+          "source_content_hash": "8f9e1ac11444123d44095890da531fe62078de4e84ffc22f174f88b5c9f5e6b7",
+          "quote": "Founded in 2020 by security trailblazers Ofer Smadari, Eldad Livni, and Leonid Belkind",
+          "quote_hash": "000755c65cc29e64f5fa1bc71d7babdec4b34c38b2a451c22ec841578028a14c"
+        },
+        {
+          "source_id": "ofer_torq_role",
+          "source_url": "https://torq.io/blog/torq-series-d/",
+          "source_title": "Torq’s $140M Series D: The Agentic SOC is Here | Torq",
+          "source_content_hash": "4e7b90bd5c82c13f3e885330af131c4423cba3be3a7d0c53664bf94b30d89afd",
+          "quote": "By Ofer Smadari, CEO & Co-Founder",
+          "quote_hash": "1c2bc8aad9601e85cc20cdc15820f081c505f56f208c36c7022b6bcdf901e251"
+        },
         {
           "source_id": "FISRC-370a65ed92921303",
           "source_url": "https://runtimewire.com/article/arrakis-security-raises-8-million-ai-agent-runtime-controls",
@@ -161,7 +187,7 @@
           "quote_hash": "1a9436e2461129344592c49d49488f0a5a1e7d580b3c4cfb443d5cf7cc193be4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

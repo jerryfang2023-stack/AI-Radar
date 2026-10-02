@@ -178,12 +178,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中国中车 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "中国中车官网介绍的中国中车集团有限公司是经国务院同意、国务院国资委批准的国有独资企业，主营轨道交通装备及相关产业，并拥有多家上市公司。",
+      "coverage_note": "官方页面同页涉及集团与上市公司；本档案以明确写出的“中国中车集团有限公司”为主体，不把集团和中国中车股份有限公司混为同一法律主体。",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "企业性质",
+          "value": "官网称中国中车集团有限公司为国有独资企业。",
+          "source_id": "crrc_group_identity"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "官网列出轨道交通装备研发制造、实业投资与管理、资产管理等业务。",
+          "source_id": "crrc_business_scope"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -196,7 +209,35 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "crrc_group_identity",
+          "source_url": "https://www.crrcgc.cc/eportal/ui?pageId=m719781",
+          "source_title": "中国中车股份有限公司-公司简介",
+          "source_content_hash": "f47593bd3c344534c959867977d2d1d24a229f262d1b427a50f7675e0109fc52",
+          "quote": "中国中车集团有限公司（简称中国中车集团）是经国务院同意、国务院国资委批准的国有独资企业",
+          "quote_hash": "9831dfbb1ecd2c3b1763f6dd714610fde3c634bb598a7a67584025ac2d366b52"
+        },
+        {
+          "source_id": "crrc_business_scope",
+          "source_url": "https://www.crrcgc.cc/eportal/ui?pageId=m719781",
+          "source_title": "中国中车股份有限公司-公司简介",
+          "source_content_hash": "f47593bd3c344534c959867977d2d1d24a229f262d1b427a50f7675e0109fc52",
+          "quote": "铁路机车车辆、动车组、城市轨道交通车辆、工程机械、电子设备及零部件等的研发、设计、制造、修理、销售、租赁与技术服务；信息咨询；实业投资与管理；资产管理；进出口业务。",
+          "quote_hash": "1a1d6db30cc58c69f2afde125d948e3395df74f4a28a038e96b5c33346dab5e2"
+        },
+        {
+          "source_id": "crrc_listed_subs",
+          "source_url": "https://www.crrcgc.cc/eportal/ui?pageId=m719781",
+          "source_title": "中国中车股份有限公司-公司简介",
+          "source_content_hash": "f47593bd3c344534c959867977d2d1d24a229f262d1b427a50f7675e0109fc52",
+          "quote": "拥有中国中车股份有限公司、沃顿科技公司、时代电气公司、时代新材公司4家上市公司",
+          "quote_hash": "b1602b4559900e6667db028924abc33a4c904b7bc8e94c5f965880ec86b4c103"
+        },
         {
           "source_id": "FISRC-f5fa738edf400dda",
           "source_url": "https://news.pedaily.cn/202609/569430.shtml",
@@ -214,7 +255,7 @@
           "quote_hash": "e6023b90fbeea193fe01e750ec2da8463226290de8488aa01988b87a4293d23a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

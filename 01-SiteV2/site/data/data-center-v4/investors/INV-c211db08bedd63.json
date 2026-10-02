@@ -137,21 +137,76 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Standard Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "Standard Capital 官网明确使用同名并说明其 Series A 投资策略；Starcloud 参与投资的信息来自 TechCrunch 报道，官网未单独列示该组合公司。",
+      "summary": "Standard Capital 是一家面向已达到 product-market fit 企业的 Series A 投资机构。官网称其为创始人提供标准化条款并不要求董事会席位；TechCrunch 将其列为 Starcloud Series A extension 的参与投资方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Series A。",
+          "source_id": "standard_strategy"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资对象",
+          "value": "已实现 product-market fit 的公司。",
+          "source_id": "standard_strategy"
+        },
+        {
+          "field": "governance",
+          "label": "治理方式",
+          "value": "官网称其不要求董事会席位，采用创始人友好的标准化条款。",
+          "source_id": "standard_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道将 Standard Capital 列为 Starcloud 2.5 亿美元 Series A extension 的参与方之一；机构官网未单独列出该组合关系。",
+          "source_id": "starcloud_report"
+        },
         {
           "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05f582b31c0a37a3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Standard Capital 官网",
+          "value": "Standard Capital",
+          "url": "https://www.standardcap.com/",
+          "source_id": "standard_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "standard_strategy",
+          "source_url": "https://www.standardcap.com/",
+          "source_title": "Standard Capital - The AI-native Series A firm",
+          "source_content_hash": "7162e218f960aed3698785ea321e825ea90881fd54ea06e3ed6052a9d5fd8fc4",
+          "quote": "Standard Capital leads Series A rounds in the top post-PMF companies.",
+          "quote_hash": "de87cd77b95a55d39ff7f52b3a4f98b0954af8b1aa966cae81f4caa9fa17837b"
+        },
+        {
+          "source_id": "standard_terms",
+          "source_url": "https://www.standardcap.com/",
+          "source_title": "Standard Capital - The AI-native Series A firm",
+          "source_content_hash": "7162e218f960aed3698785ea321e825ea90881fd54ea06e3ed6052a9d5fd8fc4",
+          "quote": "Standard Capital does not take board seats.",
+          "quote_hash": "58aab118debb6ca2696a7e5ffb791172247620ad6bbf404893a65b719012927a"
+        },
+        {
+          "source_id": "starcloud_report",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/",
+          "source_title": "Starcloud raises $250 million for orbital data centers as launch options dry up | TechCrunch",
+          "source_content_hash": "c7cf980f8064a9c56813a31eb46856f394dd0aa3258f7e1183ec73130aedb9c7",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        },
         {
           "source_id": "FISRC-05f582b31c0a37a3",
           "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
@@ -161,7 +216,7 @@
           "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

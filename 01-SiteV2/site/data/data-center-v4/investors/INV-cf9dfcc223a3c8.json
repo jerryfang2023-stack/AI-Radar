@@ -123,21 +123,83 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nima Khajehnouri 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "person",
+      "coverage_note": "Dave 官网董事简介核实了 Nima Khajehnouri 的现任工程职务、董事身份及学历；Sycamore 公司融资公告将其列为天使投资人。",
+      "summary": "Nima Khajehnouri 是 Meta 工程副总裁及 Dave 董事会成员。Dave 官网披露了他的工程管理履历与学历；Sycamore 官方融资公告将他列为种子轮天使投资人。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "organization": "Meta",
+          "title": "工程副总裁",
+          "source_id": "dave_meta_role"
+        },
+        {
+          "organization": "Dave Inc.",
+          "title": "董事会成员",
+          "source_id": "dave_board_role"
+        }
+      ],
+      "career": [],
+      "education": [
+        {
+          "institution": "Sharif University of Technology",
+          "qualification": "电气工程学士",
+          "source_id": "dave_education"
+        },
+        {
+          "institution": "加州大学洛杉矶分校（UCLA）",
+          "qualification": "电气工程与计算机科学博士；另完成计算机科学博士后研究",
+          "source_id": "dave_education"
+        }
+      ],
+      "experience_summary": "Dave 官网介绍其在 Meta、Google、Snap 和 NetSeer 的工程领导经历；本档案仅录入当前职务、董事身份和学历。",
       "track_record": [
+        {
+          "description": "Sycamore 官方 6500 万美元种子轮公告将 Nima Khajehnouri 列为天使投资人。",
+          "source_id": "sycamore_angel"
+        },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "dave_meta_role",
+          "source_url": "https://investors.dave.com/board-member/nima-khajehnouri",
+          "source_title": "Nima Khajehnouri | Board Member | Dave Inc.",
+          "source_content_hash": "99215c38be889c4ae24c858380b108e56af7f1e1930e34f12c0c4459b76ad489",
+          "quote": "Mr. Khajehnouri has served as Vice President of Engineering at Meta since May 2025",
+          "quote_hash": "7a248dac3de13355f12aa561f9cda38c0f7a123a6cd83fe5c887c6503b8df2da"
+        },
+        {
+          "source_id": "dave_board_role",
+          "source_url": "https://investors.dave.com/board-member/nima-khajehnouri",
+          "source_title": "Nima Khajehnouri | Board Member | Dave Inc.",
+          "source_content_hash": "99215c38be889c4ae24c858380b108e56af7f1e1930e34f12c0c4459b76ad489",
+          "quote": "Nima Khajehnouri has served as a member of the board of directors of the Company since January 2026",
+          "quote_hash": "dcf91c5b76311ad281bf0ecd0ba11b7a1247bb656a094919f1e158b0b9cdae75"
+        },
+        {
+          "source_id": "dave_education",
+          "source_url": "https://investors.dave.com/board-member/nima-khajehnouri",
+          "source_title": "Nima Khajehnouri | Board Member | Dave Inc.",
+          "source_content_hash": "99215c38be889c4ae24c858380b108e56af7f1e1930e34f12c0c4459b76ad489",
+          "quote": "a Bachelor of Electrical Engineering from Sharif University of Technology, a PhD in Electrical Engineering and Computer Science from UCLA",
+          "quote_hash": "34c7ca10e8d06cdaee7390f4421bf0cbe7a819f8e038439282e2061ac768bf7f"
+        },
+        {
+          "source_id": "sycamore_angel",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
+          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
+          "quote": "Nima Khajehnouri (VP Engineering at Meta)",
+          "quote_hash": "c93baf866677ae361e6f3943d13ba3dcff537b1373ae29084fa845975e0fb441"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -147,7 +209,7 @@
           "quote_hash": "c93baf866677ae361e6f3943d13ba3dcff537b1373ae29084fa845975e0fb441"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

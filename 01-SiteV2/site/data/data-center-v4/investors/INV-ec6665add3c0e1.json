@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Juniper Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "summary": "Juniper Ventures 官网将 Goodfire 列入其投资组合；The AI Insider 报道称 Juniper Ventures 参与了 Goodfire 1.5 亿美元 B 轮融资。",
+      "coverage_note": "机构官网核实其与 Goodfire 的投资组合关系；融资轮次及本轮参投信息来自 The AI Insider 报道，未披露 Juniper 单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "The AI Insider 报道将 Juniper Ventures 列为 Goodfire 1.5 亿美元 B 轮既有投资方之一。",
+          "source_id": "juniper_goodfire_series_b"
+        },
         {
           "description": "融资来源记录：Goodfire AI · B轮 · 2026-02-05 · 既有投资方，本轮参投 · $150M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f0d4056113fd3650"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "juniper_official_portfolio",
+          "source_url": "https://juniperventures.xyz/",
+          "source_title": "Juniper Ventures — AI safety &amp; assurance venture capital",
+          "source_content_hash": "59b1aa01de6db0dc17aa60e7ef8de079b2309279c9fad062051c4083a135fd0b",
+          "quote": "Some of our investments: Goodfire : research company using interpretability to understand, learn from, and design AI systems. (pre-seed + series B & board).",
+          "quote_hash": "4705a056284535307bddb4b27387d58f7cd1248f9459f0f1dc506634c7693dbc"
+        },
+        {
+          "source_id": "juniper_goodfire_series_b",
+          "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
+          "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
+          "source_content_hash": "eefd824054268b3160bceebb794340d472be821f97a05893b44de96323c58c3b",
+          "quote": "participation from existing investors Juniper Ventures",
+          "quote_hash": "904e87dd7b5fbd2a3abf42f836e98d8758ad00acae59ddf7951ed42faf9437e6"
+        },
         {
           "source_id": "FISRC-f0d4056113fd3650",
           "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
@@ -161,7 +185,7 @@
           "quote_hash": "904e87dd7b5fbd2a3abf42f836e98d8758ad00acae59ddf7951ed42faf9437e6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

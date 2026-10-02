@@ -138,12 +138,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "晶科能源控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "JinkoSolar Holding Co., Ltd. 是开曼群岛注册的控股公司。公司投资者关系页面将其识别为纽约证券交易所代码 JKS 的清洁能源企业，业务围绕太阳能产品及解决方案。",
+      "coverage_note": "SEC 2025 年 20-F 文件说明控股公司身份；晶科能源官方投资者关系页说明 JKS 上市主体及太阳能产品业务。未将名称变更提案记作已完成事实。",
+      "facts": [
+        {
+          "field": "legal_type",
+          "label": "主体性质",
+          "value": "SEC 文件将 JinkoSolar Holding Co., Ltd. 定义为开曼群岛控股公司。",
+          "source_id": "jinko_holding_company"
+        },
+        {
+          "field": "listed_company",
+          "label": "上市信息",
+          "value": "官方投资者关系页列出纽约证券交易所代码 JKS。",
+          "source_id": "jinko_ir_profile"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "官方投资者关系页介绍其太阳能产品、清洁能源解决方案与服务。",
+          "source_id": "jinko_business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -152,7 +171,35 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "jinko_holding_company",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1481513/000110465926050737/jks-20251231x20f.htm",
+          "source_title": "JinkoSolar Holding Co., Ltd. Annual Report on Form 20-F",
+          "source_content_hash": "b260679817390451695b3e8c86ab12db404901b197f07a99e0619808648200e3",
+          "quote": "“Company” refers to JinkoSolar Holding Co., Ltd., a Cayman Islands holding company; “we,” “us,” “our company,” “our” or “JinkoSolar” refers to JinkoSolar Holding Co., Ltd. and its consolidated subsidiaries.",
+          "quote_hash": "b260679817390451695b3e8c86ab12db404901b197f07a99e0619808648200e3"
+        },
+        {
+          "source_id": "jinko_ir_profile",
+          "source_url": "https://ir.jinkosolar.com/investor-relations",
+          "source_title": "JinkoSolar | Investor Relations",
+          "source_content_hash": "5fc17e306ab3027ec5ca2b8af46cb928427dc928d34fef211e9b34c9eb5855f5",
+          "quote": "JinkoSolar (NYSE: JKS) is a global leader in clean energy technology.",
+          "quote_hash": "f37a9ee996164be56157d0099d60cb6f7ce09e5a47caedb42387e6be69133787"
+        },
+        {
+          "source_id": "jinko_business",
+          "source_url": "https://ir.jinkosolar.com/investor-relations",
+          "source_title": "JinkoSolar | Investor Relations",
+          "source_content_hash": "5fc17e306ab3027ec5ca2b8af46cb928427dc928d34fef211e9b34c9eb5855f5",
+          "quote": "JinkoSolar distributes its solar products and sells its solutions and services",
+          "quote_hash": "243a41d5b29a14c29805de085052c82fb9db71b4ed46c5f9a22a162cf0e56e63"
+        },
         {
           "source_id": "FISRC-879cc82306af58a1",
           "source_url": "https://finance.sina.com.cn/cj/2026-06-16/doc-inicqxfr7674800.shtml",
@@ -162,7 +209,7 @@
           "quote_hash": "f796dc8935627ac07c9e10095601668534f3ae14bc1db8cb272c41940cdacd09"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

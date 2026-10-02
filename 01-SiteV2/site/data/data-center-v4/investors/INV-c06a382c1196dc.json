@@ -137,21 +137,51 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jeffrey Tiong 当前按“个人投资者”收录。最新融资披露记录日期为 2026-04-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "coverage_note": "PatSnap 官方页面核实 Jeffrey Tiong 为创始人兼 CEO；Vertex Ventures SEA 的 FORMAS.AI 融资公告将他列为天使投资人之一。",
+      "summary": "Jeffrey Tiong 是 PatSnap 的联合创始人兼 CEO。Vertex Ventures SEA 的公司融资公告称，他作为企业 SaaS 创业者参与 FORMAS.AI 的天使轮投资。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Founder & CEO",
+          "organization": "PatSnap",
+          "source_id": "patsnap_role"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "PatSnap 官方资料将他列为公司创始人兼 CEO；FORMAS.AI 融资公告记载其以天使投资人身份参与该轮融资。",
       "track_record": [
+        {
+          "description": "Vertex Ventures SEA 报道将 Jeffrey Tiong 列为 FORMAS.AI 预种子轮天使投资人之一，并称其为 PatSnap 联合创始人。",
+          "source_id": "formas_round"
+        },
         {
           "description": "融资来源记录：FORMAS.AI · 预种子轮 · 2026-04-29 · 本轮天使投资人 · 398万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dc1378b0805f976c"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "patsnap_role",
+          "source_url": "https://www.patsnap.com/resources/blog/press-category/in-the-press/",
+          "source_title": "In the Press Archives | Patsnap",
+          "source_content_hash": "095da8497a9dc2ffb0dd4d4e37a65b2397dec82817fe72baef97af2a4e269a00",
+          "quote": "PatSnap Founder and CEO Jeffrey Tiong shares his perspective on how AI agents are reshaping research and development.",
+          "quote_hash": "a9f638e9785a941fae8fb337a4bec1d57a1c6ec3c25243c24d46e709fc854d5b"
+        },
+        {
+          "source_id": "formas_round",
+          "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
+          "source_title": "FORMAS.AI Raises US$3.98 Million in Oversubscribed Pre-Seed Round to Build the AI-Native Design Workspace for Architecture | Vertex Ventures SEA",
+          "source_content_hash": "e536bc23534753ef217c69211cc0b970eb0249522333eb166fe691ee22ce2840",
+          "quote": "angel investors including enterprise SaaS unicorn founder, Jeffrey Tiong, Co-founder of Patsnap",
+          "quote_hash": "45c4541c768d3092ec3a551c14c2c4004c9bc3ab9be2a0b77aec36605d090700"
+        },
         {
           "source_id": "FISRC-dc1378b0805f976c",
           "source_url": "https://www.vertexventures.sg/news/formas-ai-raises-us-3-98-million-in-oversubscribed-pre-seed-round-to-build-the-ai-native-design-workspace-for-architecture/",
@@ -161,7 +191,7 @@
           "quote_hash": "45c4541c768d3092ec3a551c14c2c4004c9bc3ab9be2a0b77aec36605d090700"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

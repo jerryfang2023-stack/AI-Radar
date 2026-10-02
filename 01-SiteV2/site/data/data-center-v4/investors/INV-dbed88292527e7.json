@@ -137,21 +137,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Redstart Labs (Info Edge Ventures) 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Redstart Labs 是 Info Edge 投资体系中的早期深科技投资载体；Redstart Ventures 的官方投资组合页面仍以 Redstart Labs 标记 Aina 等历史投资。",
+      "coverage_note": "关联官网介绍 Redstart Labs 的起源及深科技方向，官方投资组合页将 Aina 列为 Redstart Labs 投资。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "科学、技术和深科技早期企业",
+          "source_id": "redstart_vehicle"
+        }
+      ],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Redstart Ventures 官方投资组合将 Aina 列为 Redstart Labs 投资。",
+          "source_id": "redstart_aina_portfolio"
+        },
         {
           "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮联合领投 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9e755507b523ddb2"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "redstart_vehicle",
+          "source_url": "https://www.redstart.vc/about",
+          "source_title": "Redstart Ventures | About",
+          "source_content_hash": "7621889f128d3f99a128ac5b12ed1691689dad18af74b66966ebf42b811696b3",
+          "quote": "2019 Redstart Labs Where it started - Info Edge’s own capital, backing founders who build on real science.",
+          "quote_hash": "4d195f3de7b8bbf34acf4885156120b549210e0d48f12d506cf31b09b2ef6a76"
+        },
+        {
+          "source_id": "redstart_aina_portfolio",
+          "source_url": "https://www.redstart.vc/investments",
+          "source_title": "Redstart Ventures | Investments",
+          "source_content_hash": "a1cbb728d9e955a8873427a578e79718415f42339524bac37eb80bac4c56c1ed",
+          "quote": "002 Redstart Labs Aina Building the future of interaction.",
+          "quote_hash": "b79bfd80293ee69c02762e83d5eec74b4e0661a82b7665008cb41f3a92f47bb0"
+        },
         {
           "source_id": "FISRC-9e755507b523ddb2",
           "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
@@ -161,7 +192,7 @@
           "quote_hash": "8b2ad6a4b7dbc612aa5263beacf5668c03926cae03f08c0b80c1223a7dfdecda"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

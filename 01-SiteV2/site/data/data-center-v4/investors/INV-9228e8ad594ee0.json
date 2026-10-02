@@ -138,21 +138,61 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "PeakSpan Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资阶段与方向",
+          "value": "关注 Applied AI B2B 软件成长公司，官网列出的 ARR 范围为 300 万至 5000 万美元以上。",
+          "source_id": "peakspan_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Aligned 于 2026 年宣布完成 6000 万美元 B 轮融资，公告称该轮由 PeakSpan Capital 领投。",
+          "source_id": "peakspan_aligned"
+        },
         {
           "description": "融资来源记录：Aligned · B轮 · 2026-07-01 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7c7a5a66361dc784"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "PeakSpan Capital 官网",
+          "value": "PeakSpan Capital",
+          "url": "https://www.peakspancapital.com/",
+          "source_id": "peakspan_strategy"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "机构官网及 Aligned 的融资公告核实其投资策略和一项投资记录；未推断基金规模、回报或其他未核实数据。",
+      "summary": "PeakSpan Capital 是一家面向 B2B 软件成长公司的投资机构。官网将其关注阶段描述为 Applied AI B2B 软件从 300 万美元 ARR 起至 5000 万美元 ARR 以上；Aligned 官方公告披露 PeakSpan 领投其 6000 万美元 B 轮。",
       "sources": [
+        {
+          "source_id": "peakspan_strategy",
+          "source_url": "https://www.peakspancapital.com/",
+          "source_title": "Scale-Up Partner of Choice | PeakSpan Capital",
+          "source_content_hash": "9515c841a17e4a4bfa15851edf070d05a75640be27a4115becf5fed534d737ed",
+          "quote": "Partner of choice for scale-ups that are defining what’s next in Applied AI B2B software from $3M to $50M ARR and beyond.",
+          "quote_hash": "93ed40b22851ba684af50e383fdefea8a91cfc8931e7b2cc8521bdf36a8b16d9"
+        },
+        {
+          "source_id": "peakspan_aligned",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/01/3320495/0/en/aligned-closes-60m-series-b-to-solidify-leadership-position-as-the-system-of-action-for-b2b-sales.html",
+          "source_title": "Aligned Closes $60M Series B to Solidify Leadership",
+          "source_content_hash": "9adeb9001673b47033c79400d4a4f718c1153e9de2d6f98a08000fd810a0df4a",
+          "quote": "The round was led by PeakSpan Capital, with participation from all existing investors, Hetz Ventures, JAL Ventures and NFX.",
+          "quote_hash": "b5389d78f12080354888ab4cd27738808932d8274b40ad1c5e2b09c57ea71058"
+        },
         {
           "source_id": "FISRC-7c7a5a66361dc784",
           "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
@@ -161,8 +201,7 @@
           "quote": "Aligned announced a $60 million Series B financing on July 1 2026, led by PeakSpan Capital",
           "quote_hash": "ee883417a031275a2e636abc8aaf716d3876a4f1261c447d94e96fb0ce68441f"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

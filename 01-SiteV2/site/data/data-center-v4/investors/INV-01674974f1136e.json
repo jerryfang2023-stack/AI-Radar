@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "吉利控股 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "浙江吉利控股集团是汽车、科技及投资集团。新浪财经报道晶能微电子融资投资方包括吉利控股。",
+      "coverage_note": "集团身份与投资业务范围来自吉利控股官网；晶能微电子投资关系来自新浪财经报道。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "新浪财经报道吉利控股参与晶能微电子此前完成的多轮融资。",
+          "source_id": "geely_jingneng_rounds"
+        },
         {
           "description": "融资来源记录：浙江晶能微电子股份有限公司 · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1d9d3631d83282b0"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "geely_identity",
+          "source_url": "https://zgh.com/overview/?lang=en",
+          "source_title": "Overview &#8211; Zhejiang Geely Holding Group",
+          "source_content_hash": "66dbea60d89fab72910b49776753e38e519e98bd41b693d81356d746078e995c",
+          "quote": "automotive, technology and investment group",
+          "quote_hash": "9cf739234905c46a03ada38834246cc2e7e5e187244cce977a5b0f7d74976d5e"
+        },
+        {
+          "source_id": "geely_jingneng_rounds",
+          "source_url": "https://finance.sina.com.cn/jjxw/2024-10-28/doc-incucmqv8547504.shtml",
+          "source_title": "晶能微电子融了5亿元 大股东吉利密集落子汽车半导体|微电子_新浪财经_新浪网",
+          "source_content_hash": "82921d25c763cbdf5ffb8e9e00b7ada6c543aee4aed43ec307c5a9e3cff1e896",
+          "quote": "投资方包括吉利控股、华登国际、高榕资本、春山资本、余杭国投",
+          "quote_hash": "9b29ef1406012331c75a75548fbb68a52c2c0252d4705e1e3bd4163c1f819292"
+        },
         {
           "source_id": "FISRC-1d9d3631d83282b0",
           "source_url": "https://finance.sina.com.cn/jjxw/2024-10-28/doc-incucmqv8547504.shtml",
@@ -145,7 +169,7 @@
           "quote_hash": "86ac340beb005da05b72fdc061347188328775b4ca4473a0dd9bcdbfc22c3f0b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "涂鸦智能 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "涂鸦智能是全球 AI 云平台服务商；每经网报道其跟投珞博智能 2026 年 Pre-A 轮融资。",
+      "coverage_note": "公司身份来自涂鸦智能投资者关系官网；融资参与来自每经网报道，未推断涂鸦智能通过独立 VC 子公司投资。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "每经网报道涂鸦智能跟投珞博智能 Pre-A 轮。",
+          "source_id": "tuya_robopoet_pre_a"
+        },
         {
           "description": "融资来源记录：珞博智能 · Pre-A轮 · 2026-07-13 · 本轮参投 · 亿元级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8a995421b25ccbf7"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "tuya_identity",
+          "source_url": "https://ir.tuya.com/",
+          "source_title": "Investor Relations | Tuya Inc.",
+          "source_content_hash": "e2b4e3fb8d8d4a29194524b8ae7362b2c6162ee81993c0075339995e43422aed",
+          "quote": "Tuya Inc. (NYSE: TUYA; HKEX: 2391) is a leading global AI cloud platform service provider",
+          "quote_hash": "ed7f804cee725c48b016b8650de61fb04ea7202d47e12e0e5ff1dc37a7eebfd4"
+        },
+        {
+          "source_id": "tuya_robopoet_pre_a",
+          "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
+          "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局 | 每经网",
+          "source_content_hash": "11d8b301d21282e69144a5e79645631eb70b92623ae56992d43ca82e8659fd7f",
+          "quote": "涂鸦智能跟投",
+          "quote_hash": "b2c5ff99d1597ea5e96e143fb036f7cea637c75d35c125e1c1c4bae7ec481dca"
+        },
         {
           "source_id": "FISRC-8a995421b25ccbf7",
           "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
@@ -161,7 +185,7 @@
           "quote_hash": "b2c5ff99d1597ea5e96e143fb036f7cea637c75d35c125e1c1c4bae7ec481dca"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

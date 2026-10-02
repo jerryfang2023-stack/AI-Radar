@@ -233,12 +233,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国投创新 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "国投创新是由国投集团发起设立的私募股权投资管理机构，官网列出的重点领域包括先进制造、新能源汽车、生命科学、人工智能和集成电路。",
+      "coverage_note": "机构定位、设立背景和投资领域依据国投创新官网；未沿用页面上未标注统计时点的管理规模与投资数量。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "发起设立",
+          "value": "官网称国投创新由国投集团于 2009 年发起设立。",
+          "source_id": "sdic_identity"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网列出智能制造、新能源汽车、生命科学、ICT、人工智能及集成电路等领域。",
+          "source_id": "sdic_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -251,7 +264,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "sdic_identity",
+          "source_url": "https://sdicfund.com/gtcx/gywm/A6201index_1.htm",
+          "source_title": "关于我们",
+          "source_content_hash": "367a0ed27e9b6b987ea91d70ca3dcc39f67050f610078fb3071d5bbc3b664a29",
+          "quote": "国投创新是中国领先的私募股权投资管理机构，由国投集团于2009年发起设立",
+          "quote_hash": "17815e010071d310442d93e67cfa0dd3e89d5f89be13d4872a8b425a13bed891"
+        },
+        {
+          "source_id": "sdic_focus",
+          "source_url": "https://sdicfund.com/gtcx/gywm/A6201index_1.htm",
+          "source_title": "关于我们",
+          "source_content_hash": "367a0ed27e9b6b987ea91d70ca3dcc39f67050f610078fb3071d5bbc3b664a29",
+          "quote": "重点关注智能制造、新能源智能汽车、生命科学和生物制造、信息和通信技术、人工智能、集成电路等领域",
+          "quote_hash": "c62d3bb042239d588e6427d699caec4e3200c2d7b20959ce1b9ecd9afcb8c649"
+        },
         {
           "source_id": "FISRC-899fa4d253299e85",
           "source_url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihtewm4131588.shtml",
@@ -269,7 +302,7 @@
           "quote_hash": "76ef591c6d4ca616ce480398a2ba71d5279671714499b7bb2d71a8a86d3f652d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

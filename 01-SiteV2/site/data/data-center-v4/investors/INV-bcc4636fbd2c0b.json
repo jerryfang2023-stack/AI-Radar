@@ -121,21 +121,51 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Misha Laskin 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "coverage_note": "Lightspeed 官方公司页核实姓名、Reflection AI 联合创始人和 CEO 职务。人物经历资料有限；Niteshift 投资活动来自 TechCrunch 报道，按报道归属记录。",
+      "summary": "Misha Laskin 是 Reflection AI 联合创始人兼 CEO。TechCrunch 于 2026 年 6 月报道 Niteshift 融资时，将他列为该公司的天使投资人之一。",
+      "current_roles": [
+        {
+          "title": "CEO, Co-Founder",
+          "organization": "Reflection AI",
+          "source_id": "lsvp_leadership"
+        }
+      ],
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "目前可核实的公开资料主要包括其在 Reflection AI 的领导职务，以及媒体报道提及的一项天使投资活动。",
       "track_record": [
+        {
+          "description": "TechCrunch 报道将 Misha Laskin of Reflection AI 列为 Niteshift 的天使投资人之一。",
+          "source_id": "niteshift_report"
+        },
         {
           "description": "融资来源记录：Niteshift · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-01df70e43799a400"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "lsvp_leadership",
+          "source_url": "https://lsvp.com/company/reflection/",
+          "source_title": "Reflection - Lightspeed Venture Partners",
+          "source_content_hash": "56ded34947f54b5915f904ba57e564e329eb05b0ec57f509c27e477f2b4b71eb",
+          "quote": "Misha Laskin - CEO, Co-Founder",
+          "quote_hash": "43f163ff46f32199863580d9fe1e89c17bea0b12c9318f29a949f1da639b9f4e"
+        },
+        {
+          "source_id": "niteshift_report",
+          "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in/",
+          "source_title": "Datadog veterans launch AI coding startup Niteshift on a bet against Big AI lock-in | TechCrunch",
+          "source_content_hash": "38616d9541f13396040ce0e39dd623b7013f0d6f400d0556e37566702d95266d",
+          "quote": "Misha Laskin of Reflection AI",
+          "quote_hash": "8cb00745aac03c3f787633ea257622aa5d251805a5f3bc9de5bf03f6455f0d07"
+        },
         {
           "source_id": "FISRC-01df70e43799a400",
           "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
@@ -145,7 +175,7 @@
           "quote_hash": "40f67c01bdbbbce26ad3c095c1b1c5454b2a2b4a9b9c2140446f895388ef9fd4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

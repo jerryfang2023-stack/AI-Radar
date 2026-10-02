@@ -137,21 +137,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "UC Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "UC Investments 是加州大学董事会首席投资官办公室，管理大学投资资金并承担受托监督；OpenAI 官方 2026 年融资公告将其列为机构投资者。",
+      "coverage_note": "加州大学官网确认机构身份和职责；OpenAI 官方公告列出其参与当年融资，但未披露 UC 单独投资金额。",
+      "facts": [
+        {
+          "field": "institutional_role",
+          "label": "机构职责",
+          "value": "管理加州大学投资资金并提供受托监督",
+          "source_id": "uc_investments_identity"
+        }
+      ],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "OpenAI 官方 2026 年融资公告将 UC Investments 列入参投机构名单；未披露其单独出资金额。",
+          "source_id": "uc_openai_round"
+        },
         {
           "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1e2b3bad243bd066"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "uc_investments_identity",
+          "source_url": "https://www.ucop.edu/investment-office/index.html",
+          "source_title": "UC Investments | UCOP",
+          "source_content_hash": "3d8adf37a0b0eca898970670863981fb0579b4361cd08ddfadf70de0449cb0db",
+          "quote": "We at UC Investments (The Office of the Chief Investment Officer of the Regents) manage University of California investment funds and provide fiduciary oversight.",
+          "quote_hash": "98c9830f5fd469fbf69b02079ef585345cbce3b1dc5f64e48da191079f5fb848"
+        },
+        {
+          "source_id": "uc_openai_round",
+          "source_url": "https://openai.com/index/accelerating-the-next-phase-ai/",
+          "source_title": "OpenAI raises $122 billion to accelerate the next phase of AI | OpenAI",
+          "source_content_hash": "a6bbf8b020868edec7d0c2eb9e08019165406529f765dc72d5240824dcf02250",
+          "quote": "UC Investments (University of California CIO Office)",
+          "quote_hash": "dfe87bf94c2bd2adce78ddc35416cbf7531e728b25e86eb64900aa8ce72180a7"
+        },
         {
           "source_id": "FISRC-1e2b3bad243bd066",
           "source_url": "https://yespress.io/openais-122-b-megaround",
@@ -161,7 +192,7 @@
           "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

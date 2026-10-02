@@ -139,21 +139,55 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Soham Mazumdar 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "person",
+      "coverage_note": "人物身份和现任职务依据 WisdomAI 官方团队页面；Sycamore 官方融资公告将一位联合创始人的姓氏拼作 Majumdar，并称其为天使投资人。为避免把拼写差异另建成重复人物，本档案采用本人公司页面的 Mazumdar 拼写并保留来源原文。",
+      "summary": "Soham Mazumdar 是 WisdomAI 联合创始人兼 CEO；Sycamore 的官方种子轮公告列出一位名为 Soham Majumdar 的 Rubrik 与 Wisdom AI 联合创始人天使投资人，来源拼写与 WisdomAI 团队页不同。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Co-founder & CEO",
+          "organization": "WisdomAI",
+          "source_id": "wisdom_role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Rubrik",
+          "title": "Co-founder",
+          "period": "",
+          "description": "Sycamore 官方公告将其列为 Rubrik 联合创始人；公告中姓氏拼写为 Majumdar。",
+          "source_id": "sycamore_identity"
+        }
+      ],
+      "education": [],
+      "experience_summary": "企业数据分析与软件创业者；现任职务由 WisdomAI 官方团队页确认。",
       "track_record": [
         {
           "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮天使投资人 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-afa7f3db79250046"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "wisdom_role",
+          "source_url": "https://www.wisdom.ai/about",
+          "source_title": "About | WisdomAI",
+          "source_content_hash": "f3fc8be3b9def2f6c555fe35b4f56ff7e3a7308e9938a09e893090a74416fb43",
+          "quote": "Soham Mazumdar Co-founder & CEO",
+          "quote_hash": "5caedef861fbee74abecd5c76e47bf2db5418a3f744f731be39335606cb2f593"
+        },
+        {
+          "source_id": "sycamore_identity",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
+          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
+          "quote": "Soham Majumdar (co-founder of Rubrik and Wisdom AI)",
+          "quote_hash": "5a108a84143e683805bd851d7136f8bb8a3a876141ed3d3eb050b5ec12c3265c"
+        },
         {
           "source_id": "FISRC-afa7f3db79250046",
           "source_url": "https://techcrunch.com/2026/03/30/former-coatue-partner-raises-huge-65m-seed-for-enterprise-ai-agent-startup/",
@@ -163,7 +197,7 @@
           "quote_hash": "2aa3038b19a9c39342ba978f213aea5f5228ccb3eb4d63b7112c843b3fc0f92c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

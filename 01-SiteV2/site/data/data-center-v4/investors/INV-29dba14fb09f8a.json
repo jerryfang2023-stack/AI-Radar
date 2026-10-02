@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "daphni 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "daphni 是欧洲风险投资机构，官网展示其当前基金包括欧洲综合型基金、全球数字零售基金，以及支持背景较少创始人的基金。",
+      "coverage_note": "机构性质与基金方向采用 daphni 官网自述；基金策略和募集阶段可能变化，未外推基金规模或收益。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网提及气候、深科技、零售、包容性等领域。",
+          "source_id": "daphni_about"
+        },
+        {
+          "field": "fund_strategies",
+          "label": "基金策略",
+          "value": "官网页面展示三项策略，包括欧洲综合型、全球数字零售及支持背景较少创始人的基金。",
+          "source_id": "daphni_funds"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "daphni_about",
+          "source_url": "https://www.daphni.com/about-us",
+          "source_title": "About daphni - Not just funders. Partners. We’re all in.",
+          "source_content_hash": "9a1c45bfbc2e1e6101f67458bebbe47fd14dfe7a0eb32f12b2f5f3ed0fb2bc82",
+          "quote": "At daphni, we don’t chase hype. We look for the real shifts, scientific, societal, environmental, and back those who shape them.",
+          "quote_hash": "56ed1067c193b8c8fd99e5bdd1f20ea35cb3860aff5c1ebb024bee91d2cc1a0f"
+        },
+        {
+          "source_id": "daphni_funds",
+          "source_url": "https://www.daphni.com/about-us",
+          "source_title": "About daphni - Not just funders. Partners. We’re all in.",
+          "source_content_hash": "9a1c45bfbc2e1e6101f67458bebbe47fd14dfe7a0eb32f12b2f5f3ed0fb2bc82",
+          "quote": "3 active funds with 3 different strategies",
+          "quote_hash": "dce1d215d20ce9f77cf5e8de5c7ab1aebee905daa2d6c3ec7be7ff86c1bab8db"
+        },
         {
           "source_id": "FISRC-f7589987753ab2c6",
           "source_url": "https://www.linkedin.com/posts/cathay-innovation_ami-labs-x-cathay-innovation-activity-7437049850921152513-l6Ou",
@@ -161,7 +194,7 @@
           "quote_hash": "d5f086c488afe9db90b9bbb7761b3ac73005b45161865996f236e4a0b1468aff"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

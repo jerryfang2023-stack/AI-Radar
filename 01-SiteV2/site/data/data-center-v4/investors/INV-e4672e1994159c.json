@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Shorewind Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Shorewind Capital 是聚焦前沿技术投资的投资机构；logcat.ai 团队页将其列为 logcat.ai 255 万美元种子前融资的投资者之一。",
+      "coverage_note": "机构定位来自 Shorewind Capital 官网；logcat.ai 团队页核实具体投资关系，该轮由 Founders' Co-op 领投。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "logcat.ai 团队页将 Shorewind Capital 列为其 255 万美元种子前融资参投方之一。",
+          "source_id": "logcat_preseed"
+        },
         {
           "description": "融资来源记录：logcat.ai · 预种子轮 · 2026-07-16 · 本轮参投 · $2.55M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-adb92a0723de45a1"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "shorewind_official_identity",
+          "source_url": "https://www.shorewindcapital.com/",
+          "source_title": "Shorewind Capital",
+          "source_content_hash": "adac7ca19e9739442adf7610e5ab5ab94080d6413e5a19257317ac24da886ae3",
+          "quote": "Investing in cutting-edge technology that moves humanity forward",
+          "quote_hash": "704a9d5d7aa699450b611cc55d7b337f658a32645fcafcf0691559d96982de24"
+        },
+        {
+          "source_id": "logcat_preseed",
+          "source_url": "https://logcat.ai/team/",
+          "source_title": "Team: logcat.ai | The Founders Building Autonomous OS Bring-Up",
+          "source_content_hash": "057f39caec5c81b76d73adf8913c62dadce58b737bdfb2a9614f83f86ffe5716",
+          "quote": "§ 04 — Backing $2.55M pre-seed, led by Founders' Co-op. With Act One Ventures, TheFounderVC, Shorewind Capital, Clayoquot Capital, and Alumni Ventures.",
+          "quote_hash": "e27b3bd66e13a1f713e2593753aa1a6c7563a43d89302284b39397cb04c0a775"
+        },
         {
           "source_id": "FISRC-adb92a0723de45a1",
           "source_url": "https://blog.logcat.ai/2026/07/16/logcat.ai-raises-2.55m-to-build-the-future-of-device-systems-engineering/",
@@ -161,7 +185,7 @@
           "quote_hash": "4203370d402238a15912e531fe70d3001f6dd4f8566c942b203406c38e70dbf9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

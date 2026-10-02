@@ -193,12 +193,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Morgan Creek Digital 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Morgan Creek Digital 是 Morgan Creek Capital 旗下数字创新投资业务，官网称其投资人工智能、区块链、计算基础设施和大数据等转型技术。",
+      "coverage_note": "投资范围和组织归属依据 Morgan Creek 官网数字业务页面；不将其视作经核实的独立法律主体。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网列出人工智能、区块链、计算基础设施和大数据。",
+          "source_id": "morgan_creek_digital"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -211,7 +218,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "morgan_creek_digital",
+          "source_url": "https://www.morgancreekcap.com/morgan-creek-digital/",
+          "source_title": "Morgan Creek",
+          "source_content_hash": "93314ba7bdd2411c59d1e77a4f67ba463ffa43ec73d615bea737fe23b72fc006",
+          "quote": "Morgan Creek Digital (MCD) invests in the transformational technologies that include Artificial Intelligence, Blockchain Technology, Computing Infrastructure and Big Data.",
+          "quote_hash": "936a6892d4de17cac55c2ad179543a8b3a7078653eb2b2279605cfa1a5c8fe8e"
+        },
         {
           "source_id": "FISRC-b7d7449114c23ca5",
           "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
@@ -229,7 +248,7 @@
           "quote_hash": "463b5c688051af8f6a0fbebecb308f842788fbbf5c7c7b116eec43ae70cfdfb4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

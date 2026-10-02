@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Byers Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Byers Capital 是单一家族办公室。Upstarts Media 的 Adapter 融资报道将 Byers Capital 列为该公司 1780 万美元融资的投资者之一。",
+      "coverage_note": "机构身份和投资性质来自 Byers Capital 官网；融资关系仅由 Upstarts Media 的融资报道支持，未找到 Adapter 或 Byers Capital 对该轮的官方公告，也未披露单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Upstarts Media 报道将 Byers Capital 列入 Adapter 的 1780 万美元融资投资者名单；未披露单独投资金额。",
+          "source_id": "adapter_round_secondary"
+        },
         {
           "description": "融资来源记录：Adapter · 种子轮 · 2026-07-14 · 种子轮参投 · 1780万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-74e051fb023f526b"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "byers_official_identity",
+          "source_url": "https://www.byerscap.com/",
+          "source_title": "Byers Capital",
+          "source_content_hash": "db1625b494c91285632f69c318d1dcf9e739e6aabcfd736d56c96fc8c03a5f8f",
+          "quote": "Byers Capital is a single family office that makes concentrated investment in companies we believe can have generational impact.",
+          "quote_hash": "93a61e5099b22f5ac2662df64fcb1ae5db296f6e09fe3f3e1534ee46f0791768"
+        },
+        {
+          "source_id": "adapter_round_secondary",
+          "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
+          "source_title": "Exclusive: Startup Adapter Launches With $17.8M To Bring New &#x27;Cognition&#x27; To AI Tools",
+          "source_content_hash": "167b43cd39e1597c49e9450ef3941c9694185fac3163c7af183bc800780fc249",
+          "quote": "a number of other investors including Eric Schmidt’s family office Hillspire, Byers Capital, the funds of former Lookout founder Kevin Patrick Mahaffey and Shana Fischer",
+          "quote_hash": "fbf5afe7fb7fb372351e5874848290d5e4145cf9e7d17a1698450071620421f9"
+        },
         {
           "source_id": "FISRC-74e051fb023f526b",
           "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
@@ -161,7 +185,7 @@
           "quote_hash": "8f9bb12f45a877354a9a78a8cae2d4fa5f2e400761c8651c8c25a198525e6b3d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

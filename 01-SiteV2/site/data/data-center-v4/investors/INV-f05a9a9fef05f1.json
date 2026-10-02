@@ -123,21 +123,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "BJ Jenkins 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "summary": "Sycamore 官方介绍将 BJ Jenkins 列为 Palo Alto Networks 总裁及 Sycamore 天使投资人。",
+      "coverage_note": "人物身份和对 Sycamore 的天使投资关系均由 Sycamore 官方页面支持；本档案限于这一可核实活动。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Sycamore 官方页面将 BJ Jenkins 列在其天使投资人名单中。",
+          "source_id": "bj_jenkins_sycamore"
+        },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "bj_jenkins_sycamore",
+          "source_url": "https://sycamorelab.org/about/",
+          "source_title": "About / Sycamore",
+          "source_content_hash": "dd64e86b9ee7fd88944b592035f9257eec3ff27fc96a67d01c2ebd7bfec082f9",
+          "quote": "BJ Jenkins President, Palo Alto Networks",
+          "quote_hash": "77a1f7259383993f36b6cfc6c7cd4f74b8b0418730640ec31c46d954813e6061"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -147,7 +163,7 @@
           "quote_hash": "3897b8cb338bf248602bfa83b80973ba0422553612e5855d9c62691abd74ac5b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

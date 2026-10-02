@@ -137,21 +137,68 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Rhapsody Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "机构策略来自 Rhapsody 官网；Relativity Networks 融资公告由公司通过 PR Newswire 发布，并直接列明 Rhapsody Venture Partners 为新投资方。",
+      "summary": "Rhapsody Venture Partners 专注投资解决工业问题的硬科学创业公司，通常领投种子轮，并披露首笔投资通常为 50 万至 200 万美元。Relativity Networks 的融资公告将其列为新投资方之一。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "解决工业问题的硬科学创业公司。",
+          "source_id": "rhapsody_strategy"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子轮及后续轮次；官网称其通常领投种子轮。",
+          "source_id": "rhapsody_strategy"
+        },
+        {
+          "field": "initial_check_size",
+          "label": "首笔投资",
+          "value": "官网披露通常为 50 万至 200 万美元。",
+          "source_id": "rhapsody_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Relativity Networks 的融资公告将 Rhapsody Venture Partners 列为本轮新投资方之一。",
+          "source_id": "relativity_round"
+        },
         {
           "description": "融资来源记录：Relativity Networks · 后续发行 · 2026-08-19 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e32f49cf414731d3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Rhapsody Venture Partners 官网",
+          "value": "Rhapsody Venture Partners",
+          "url": "https://rhapsodyvp.com/",
+          "source_id": "rhapsody_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "rhapsody_strategy",
+          "source_url": "https://rhapsodyvp.com/",
+          "source_title": "Home | Rhapsody Venture Partners",
+          "source_content_hash": "d3c126aca524a4476e962e13b0b95eda2ab54018c0fd19a6692ab955165283a7",
+          "quote": "We invest exclusively in hard science startups addressing industrial problems. We are lead investors for seed rounds. Our first check is typically $500K to $2MM",
+          "quote_hash": "a4a06f301e985517a4a5dc1e407ff5a345e6a09d7764c674d5b46c18fa26f7f4"
+        },
+        {
+          "source_id": "relativity_round",
+          "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
+          "source_title": "Relativity Networks Raises $22M and Lands $40M Hyperscaler Contract to Power the AI Geography Era",
+          "source_content_hash": "7b42a9ed074f0ac1a25a3a1f676ca8b7f6d3029b8a4a39f7ad1377b9d958b911",
+          "quote": "in a round drawn by new investors including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC",
+          "quote_hash": "bdfe1429f66dc6ad35673f77ca8328b584d20f41dbd406adbf0ca36199f7c75f"
+        },
         {
           "source_id": "FISRC-e32f49cf414731d3",
           "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
@@ -161,7 +208,7 @@
           "quote_hash": "bdfe1429f66dc6ad35673f77ca8328b584d20f41dbd406adbf0ca36199f7c75f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

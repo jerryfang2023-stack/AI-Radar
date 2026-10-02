@@ -137,21 +137,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "RRE Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "投资阶段与机构介绍来自 RRE 官网；VoiceRun 通过 PR Newswire 发布的融资公告确认 RRE Ventures 为 550 万美元种子轮投资方。",
+      "summary": "RRE Ventures 是一家专注早期投资的风险投资机构，官网强调对创始人和组合公司的长期支持。VoiceRun 官方融资公告将 RRE Ventures 列为其 550 万美元种子轮的参与方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期阶段。",
+          "source_id": "rre_strategy"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "投后支持",
+          "value": "官网强调与创始人建立长期、深入的支持关系。",
+          "source_id": "rre_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "VoiceRun 官方融资公告披露其 550 万美元种子轮由 Flybridge 领投，RRE Ventures 参与。",
+          "source_id": "voicerun_round"
+        },
         {
           "description": "融资来源记录：VoiceRun · 种子轮 · 2026-01-14 · 本轮参投 · $5.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4b3f6b59387f35f7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "RRE Ventures 官网",
+          "value": "RRE Ventures",
+          "url": "https://rre.com/",
+          "source_id": "rre_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "rre_strategy",
+          "source_url": "https://rre.com/",
+          "source_title": "RRE: Early-Stage Venture Capital Partner",
+          "source_content_hash": "4f18cd0acb710f25f97dd027b207b705794dc90e0fa8dc4b5467f768046d1ac8",
+          "quote": "We combine 30 years of experience and deep AI analysis to identify the rare early-stage founders",
+          "quote_hash": "8aec31bd08b1fb98fcf52927eb6e496b07e450422b8833bab1dcb21bb6d80ec7"
+        },
+        {
+          "source_id": "voicerun_round",
+          "source_url": "https://www.prnewswire.com/news-releases/voicerun-launches-full-stack-voice-ai-platform-for-enterprises-with-5-5-million-seed-round-302660750.html",
+          "source_title": "VoiceRun Launches Full-Stack Voice AI Platform for Enterprises with $5.5 Million Seed Round",
+          "source_content_hash": "8fe796d7ca47055f4a6630829fd6c1db086e688dfe8e04f3687da91ad76e96eb",
+          "quote": "with participation from RRE Ventures and Link Ventures",
+          "quote_hash": "67d93efd1aa65daa7eea1453fbd653388fdfe9ffa84b453c7ba38f3fe6c8c061"
+        },
         {
           "source_id": "FISRC-4b3f6b59387f35f7",
           "source_url": "https://siliconangle.com/2026/01/14/voicerun-gets-5-5m-seed-funding-give-enterprises-control-voice-ai-agents/",
@@ -161,7 +202,7 @@
           "quote_hash": "048f43627c9f8b05bbeabdec070ecd51344aedf9a169825c1f5790b694d13920"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

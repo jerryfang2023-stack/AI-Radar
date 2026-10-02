@@ -137,21 +137,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "协创智慧 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "协创智慧科技有限公司的公开工商及上市公司披露将其业务列为创业投资和以自有资金投资；融资报道将“协创智慧”列为瞬适科技种子轮投资方。",
+      "coverage_note": "实体名称及投资经营范围来自巨潮资讯网正式披露的协创数据年报；具体投资关系来自投资界报道。未将其与协创数据上市公司主体混为一谈。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "投资界报道协创智慧参与瞬适科技种子轮融资。",
+          "source_id": "xiechuang_shunshi_seed"
+        },
         {
           "description": "融资来源记录：瞬适科技 · 种子轮 · 2026-08-28 · 本轮联合投资 · 千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-918cf8d34c141df4"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "xiechuang_legal_name",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-01/1222975767.PDF",
+          "source_title": "协创数据技术股份有限公司2024年度报告（巨潮资讯网正式披露）",
+          "source_content_hash": "e3b0dfb9d7098715dccab5528643cdb708c4c73bd0c22a58cabc181436d1d1ea",
+          "quote": "公司名称：协创智慧科技有限公司",
+          "quote_hash": "c77d50e9971f6295d30a8850afbe3f81b538de4c252691c5499de4f52a8ab874"
+        },
+        {
+          "source_id": "xiechuang_business_scope",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-04-01/1222975767.PDF",
+          "source_title": "协创数据技术股份有限公司2024年度报告（巨潮资讯网正式披露）",
+          "source_content_hash": "e3b0dfb9d7098715dccab5528643cdb708c4c73bd0c22a58cabc181436d1d1ea",
+          "quote": "协创智慧主要业务为创业投资及以自有资金从事投资活动",
+          "quote_hash": "f7bb1d546f0abd532bcd747433dde96b2a872f5f38859493203c23022204cc57"
+        },
+        {
+          "source_id": "xiechuang_shunshi_seed",
+          "source_url": "https://news.pedaily.cn/202608/568250.shtml",
+          "source_title": "「瞬适科技」完成千万美元种子轮融资，加速物理AI数据基础设施建设_投资界",
+          "source_content_hash": "0a624ef9e5e78bb74116b3fa22c50814f0c1a64b53ab96646a3c68bb436d1fb7",
+          "quote": "由协创智慧、云晖资本、浦东创投和吴越天使等机构联合投资",
+          "quote_hash": "63a1a6b5aa3ed48f6093048dc21d80e3dd6278ed51396e940144b3a1ceca8222"
+        },
         {
           "source_id": "FISRC-918cf8d34c141df4",
           "source_url": "https://news.pedaily.cn/202608/568250.shtml",
@@ -161,7 +193,7 @@
           "quote_hash": "63a1a6b5aa3ed48f6093048dc21d80e3dd6278ed51396e940144b3a1ceca8222"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

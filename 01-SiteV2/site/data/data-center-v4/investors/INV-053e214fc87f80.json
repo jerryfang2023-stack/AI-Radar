@@ -178,14 +178,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Playground Global 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2023-04-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Playground Global 是深科技早期投资机构，其官方投资组合将 Robust.AI 列为被投公司。",
+      "coverage_note": "档案仅记录机构官网公开的组合关系，不将第三方记录中的融资轮次、日期或金额回填为已核实事实。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Playground Global 官方投资组合页面将 Robust.AI 列为其投资组合公司。",
+          "source_id": "playground_global_robust"
+        },
         {
           "description": "融资来源记录：Robust.AI · A1轮 · 2023-04-20 · 本轮参投，A轮参投 · $20M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f4e29cbc583c9f01"
@@ -195,8 +204,23 @@
           "source_id": "FISRC-5b6c7c4ae002a992"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "playground_global_portfolio",
+          "source_url": "https://playgroundglobal.co/portfolio",
+          "source_title": "Portfolio",
+          "source_content_hash": "abae14d5b2ceea4a3e96a26d0e5ec4a901bb3a530bc14928fe02048738547868",
+          "quote": "These are some of the companies we’ve backed.",
+          "quote_hash": "f52fcb9acb5444e05da84cedc7e48e3523b1612a4fb53f29ce1292412530bddd"
+        },
+        {
+          "source_id": "playground_global_robust",
+          "source_url": "https://playgroundglobal.co/portfolio",
+          "source_title": "Portfolio",
+          "source_content_hash": "abae14d5b2ceea4a3e96a26d0e5ec4a901bb3a530bc14928fe02048738547868",
+          "quote": "Robust.AI combines AI, robotics, and human-centered design",
+          "quote_hash": "4085803bf7e26e51610443aa42dad1525f882255bd4983eb35f1a6b4f3ac7972"
+        },
         {
           "source_id": "FISRC-f4e29cbc583c9f01",
           "source_url": "https://o.parsers.vc/startup/robust.ai/",
@@ -214,7 +238,7 @@
           "quote_hash": "66f916ca657af50c0ff86226d63523ee9d7017bbcb51c0eadbc6a69a5145aa1b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

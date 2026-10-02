@@ -137,21 +137,84 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Scribble Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "基金策略来自 Scribble Ventures 官方网站；Hostie 公司 Series A 公告核实其参与投资。",
+      "summary": "Scribble Ventures 是一家以 AI 原生公司为重点的 pre-seed 与 seed 阶段投资机构，官网称其初始支票通常为 75 万至 150 万美元。Hostie 公司公告将其列入 1200 万美元 Series A 参与投资方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed 与 Seed。",
+          "source_id": "scribble_strategy"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "AI 原生公司。",
+          "source_id": "scribble_strategy"
+        },
+        {
+          "field": "initial_check_size",
+          "label": "初始支票规模",
+          "value": "官网表述为 750k–$1.5M。",
+          "source_id": "scribble_check"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Hostie 公司公告列出 Scribble Ventures 为其 1200 万美元 Series A 参与投资方之一。",
+          "source_id": "hostie_round"
+        },
         {
           "description": "融资来源记录：Hostie · A轮 · 2026-07-08 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d81171d6c6910b85"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Scribble Ventures 官网",
+          "value": "Scribble Ventures",
+          "url": "https://www.scribble.vc/",
+          "source_id": "scribble_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "scribble_strategy",
+          "source_url": "https://www.scribble.vc/",
+          "source_title": "HOME | Scribble 2022",
+          "source_content_hash": "13ce1cdcf7c8677cc98426f5cf4146440664d6dfcc17e9f1af817d3361ded3df",
+          "quote": "We invest in Pre-seed and Seed companies.",
+          "quote_hash": "612cb64081168d746c7848844a64d869b2ee32c723712eacd101d7819eb26a51"
+        },
+        {
+          "source_id": "scribble_focus",
+          "source_url": "https://www.scribble.vc/",
+          "source_title": "HOME | Scribble 2022",
+          "source_content_hash": "13ce1cdcf7c8677cc98426f5cf4146440664d6dfcc17e9f1af817d3361ded3df",
+          "quote": "AI native companies.",
+          "quote_hash": "523f5e8f78af2a827754953f6ef2c7d03637d98ec66c04decc2078bf414c6f6c"
+        },
+        {
+          "source_id": "scribble_check",
+          "source_url": "https://www.scribble.vc/",
+          "source_title": "HOME | Scribble 2022",
+          "source_content_hash": "13ce1cdcf7c8677cc98426f5cf4146440664d6dfcc17e9f1af817d3361ded3df",
+          "quote": "our initial check is typically 750k-$1.5M.",
+          "quote_hash": "e7c328cd570e0721f4c420c3e8058d8909729c3e6d68b28cff7a4a83915f8c0c"
+        },
+        {
+          "source_id": "hostie_round",
+          "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
+          "source_content_hash": "092c8022c5ecc67b43c42ddc70e993697186d6a2f718bc68ae900a27c7356e16",
+          "quote": "with participation from Gradient, Scribble Ventures, Burst Capital, and Behind Genius Ventures",
+          "quote_hash": "8b99c57ea941638ff9932a3b0a80a037314fb5f9d4a578561dbd7e1312b0e84e"
+        },
         {
           "source_id": "FISRC-d81171d6c6910b85",
           "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
@@ -161,7 +224,7 @@
           "quote_hash": "8b99c57ea941638ff9932a3b0a80a037314fb5f9d4a578561dbd7e1312b0e84e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

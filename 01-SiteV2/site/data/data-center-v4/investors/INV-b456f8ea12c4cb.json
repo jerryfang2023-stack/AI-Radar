@@ -246,14 +246,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Union Square Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "投资方向、阶段及联系信息依据 Union Square Ventures 官网；Gritt 是官网首页列出的组合案例。",
+      "summary": "Union Square Ventures 是一家总部位于纽约的风险投资机构，关注大型市场受技术变革影响的机会，并从创业早期投资。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "关注技术变革中的大型市场边缘，并支持构建新基础设施与服务的企业。",
+          "source_id": "usv_thesis"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称主要在创业最早期阶段投资。",
+          "source_id": "usv_stage"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "AI、机器人、能源、消费、金融和生物科技等类别。",
+          "source_id": "usv_thesis"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网首页列出 Gritt 的 Series A 融资，日期为 2026-07-21。",
+          "source_id": "usv_gritt"
+        },
         {
           "description": "融资来源记录：Gritt · 多轮融资 · 2026-07-21 · 本轮参投 · $32.4M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5ce259c107507e9"
@@ -267,8 +290,52 @@
           "source_id": "FISRC-840402012d166d60"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Union Square Ventures 官网",
+          "value": "Union Square Ventures",
+          "url": "https://www.usv.com/",
+          "source_id": "usv_identity"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "usv_identity",
+          "source_url": "https://www.usv.com/",
+          "source_title": "Union Square Ventures",
+          "source_content_hash": "a13fed5b6d2fc7dcb86d419ace9efaf2ddae3d76744913311c30779093120a83",
+          "quote": "Union Square Ventures is a venture capital firm based in New York City.",
+          "quote_hash": "56d703e67df9a638427afcecd2f73de79c9c7d33ee5b1806674284bda4bbdbb5"
+        },
+        {
+          "source_id": "usv_thesis",
+          "source_url": "https://www.usv.com/",
+          "source_title": "Union Square Ventures",
+          "source_content_hash": "a13fed5b6d2fc7dcb86d419ace9efaf2ddae3d76744913311c30779093120a83",
+          "quote": "We partner with companies building durable new infrastructure and services across categories such as AI, Robotics, Energy, Consumer, Money, and Biotech.",
+          "quote_hash": "b178784eb667b073605d8e409d884bbfb2d6bd5701ea48c7b4f8d5660f92d20a"
+        },
+        {
+          "source_id": "usv_stage",
+          "source_url": "https://www.usv.com/",
+          "source_title": "Union Square Ventures",
+          "source_content_hash": "a13fed5b6d2fc7dcb86d419ace9efaf2ddae3d76744913311c30779093120a83",
+          "quote": "We are generalist investors who invest at the earliest stages of company building",
+          "quote_hash": "49727043ea3b7a45c556013dbbca26e79c62fadf0b7ad106cf47234655ba0eab"
+        },
+        {
+          "source_id": "usv_gritt",
+          "source_url": "https://www.usv.com/",
+          "source_title": "Union Square Ventures",
+          "source_content_hash": "a13fed5b6d2fc7dcb86d419ace9efaf2ddae3d76744913311c30779093120a83",
+          "quote": "Gritt Series A — Jul 21, 2026",
+          "quote_hash": "a4b9c0f51fa506e4ef9c423bda19e1291bec5effb29d1286cafcb6a4d440443a"
+        },
         {
           "source_id": "FISRC-e5ce259c107507e9",
           "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
@@ -294,7 +361,7 @@
           "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

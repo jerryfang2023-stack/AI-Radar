@@ -194,14 +194,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "上海国投先导 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "上海国投先导私募基金管理有限公司是上海国有资本投资有限公司的全资子公司，管理上海三大先导产业母基金。新浪财经报道其与国投创新联合领投天鹜科技 A++ 轮。",
+      "coverage_note": "机构身份和基金管理定位来自官方官网；融资关系来自新浪财经报道，未披露单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "新浪财经 2026 年 7 月 13 日报道，上海国投先导与国投创新联合领投天鹜科技 A++ 轮。",
+          "source_id": "ssci_tianwu_a_plus_plus"
+        },
         {
           "description": "融资来源记录：天鹜科技 · A++轮 · 2026-07-13 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-899fa4d253299e85"
@@ -211,8 +220,23 @@
           "source_id": "FISRC-b4d6b7523ee32ad7"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "ssci_identity",
+          "source_url": "https://www.ssci-leadingfund.com/",
+          "source_title": "上海国投先导",
+          "source_content_hash": "f3790cbb3796ef20fd135f9800d4d190dba63e4ead6760795fc73d161f03f9a1",
+          "quote": "上海国投先导私募基金管理有限公司（ 简称“上海国投先导” ）成立于2024年5月",
+          "quote_hash": "aaf67a0ecfa84355ad2b8f5e9203335f2c71f2d95de30cd1601e51cf24597095"
+        },
+        {
+          "source_id": "ssci_tianwu_a_plus_plus",
+          "source_url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihtewm4131588.shtml",
+          "source_title": "天鹜科技完成数亿元A++轮融资_新浪财经_新浪网",
+          "source_content_hash": "7fb14bca3a4b02f369b88382d5ee5ae981e556ee372282761e8e25006079abe5",
+          "quote": "本轮融资由上海国投先导、国投创新联合领投",
+          "quote_hash": "0661bf50e5b8d1581ada179824cbec4880666ed9fbbeeffd0326a4a0d969766c"
+        },
         {
           "source_id": "FISRC-899fa4d253299e85",
           "source_url": "https://finance.sina.com.cn/wm/2026-07-13/doc-inihtewm4131588.shtml",
@@ -230,7 +254,7 @@
           "quote_hash": "a48cd109e91e585e43e14a021c8d7a4ff9074e88cdb4d2c8d831f1ca129679ac"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

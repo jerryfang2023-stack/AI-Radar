@@ -121,12 +121,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "方圆资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "方圆资本成立于 2018 年，专注生命科学和医疗健康领域的私募股权投资，并为被投企业提供从创业到上市后的长期支持。",
+      "coverage_note": "机构定位、创立年份与关注领域均采用方圆官网自述；不外推团队历史业绩与投资项目规模。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "官网称方圆资本成立于 2018 年。",
+          "source_id": "fangyuan_strategy"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网称其专注于生命科学与医疗健康领域。",
+          "source_id": "fangyuan_strategy"
+        },
+        {
+          "field": "portfolio_support",
+          "label": "投后支持",
+          "value": "官网称其为投资企业提供从创业至上市后的持续支持。",
+          "source_id": "fangyuan_support"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,7 +154,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "fangyuan_strategy",
+          "source_url": "https://fangyuanfh.com/zh/primary_market/",
+          "source_title": "一級市場基金 &#8211; 方圓",
+          "source_content_hash": "25da491f4a12880bfae8ca23ca9d08daf4461c729fa6c236e12c3edc8af5fdd1",
+          "quote": "方圆资本成立于2018年，扎根中国、放眼全球，专注于生命科学和医疗健康领域的私募股权投资",
+          "quote_hash": "39141b31960c2c19967d7eaa7d44b499da2aec8eb84ae7358e5196c103721839"
+        },
+        {
+          "source_id": "fangyuan_support",
+          "source_url": "https://fangyuanfh.com/zh/primary_market/",
+          "source_title": "一級市場基金 &#8211; 方圓",
+          "source_content_hash": "25da491f4a12880bfae8ca23ca9d08daf4461c729fa6c236e12c3edc8af5fdd1",
+          "quote": "为投资企业从创业至上市后的持续发展深度赋能",
+          "quote_hash": "ecefb76004b5981cdb4feaf24f07e9a911d971c1c832c21dee15e921abde9d36"
+        },
         {
           "source_id": "FISRC-ad78c308ef4022ae",
           "source_url": "https://news.pedaily.cn/202106/472864.shtml",
@@ -145,7 +184,7 @@
           "quote_hash": "c8fec8864638cfc00138048d18774c6eaf37760908782699e6675dd672130ee2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

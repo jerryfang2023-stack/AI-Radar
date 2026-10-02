@@ -162,12 +162,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "赛富投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "SAIF Partners 中国官网将其描述为亚洲私募股权投资机构，重点关注中国市场，并称其进行非公开协商的股权或股权关联投资。",
+      "coverage_note": "官网内容页版权标注 2020 年，本档案仅记录该官方页面可核实的机构定位与投资地域；未采纳可能过期的资产管理规模。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官方页面列举互联网与 TMT、医疗健康与新材料、清洁技术等领域。",
+          "source_id": "saif_about"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "官网称其主要关注大中华地区。",
+          "source_id": "saif_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -180,7 +193,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "saif_about",
+          "source_url": "https://www.sbaif.com/about-saif.html",
+          "source_title": "About SAIF Partners | SAIF Partners China",
+          "source_content_hash": "399c4ef575eb0aceb9ada53685fd42b115cbd6ce36e962009e1fbddd650ff3ac",
+          "quote": "SAIF makes privately negotiated equity or equity-linked investments across several growth sectors",
+          "quote_hash": "775758799b3f530ced69f2c9c8bc57ecff25a6c506b4908e7a4d57ae88021a9a"
+        },
         {
           "source_id": "FISRC-62bfb7c7dd37177e",
           "source_url": "https://www.163.com/dy/article/KUTU3HNL05118HJE.html",
@@ -198,7 +223,7 @@
           "quote_hash": "133261190b5f1fcecfcbb8f696734b300d444c765b7ffcf74082ba55837584ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

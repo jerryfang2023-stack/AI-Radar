@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "玖兆投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "玖兆投资官网显示其对应玖兆康乾投资管理有限公司，主要围绕硬科技和大健康领域进行投资；融资报道将玖兆投资列为欧拉万象天使轮投资方。",
+      "coverage_note": "主体名称与投资方向来自玖兆投资官网，投资关系来自搜狐融资报道；未推断独立基金实体或单独出资额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "报道列玖兆投资为欧拉万象天使轮联合投资方。",
+          "source_id": "jiuzhao_euler_angel"
+        },
         {
           "description": "融资来源记录：欧拉万象 · 天使轮 · 2026-06-26 · 本轮参投 · 超过亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-aad97c1f07ceb5c6"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "jiuzhao_legal_identity",
+          "source_url": "https://www.jiuzhaotz.com/",
+          "source_title": "玖兆投资-经玖至兆 为您投资",
+          "source_content_hash": "24356916d090082ba577f0054dbbab586f3f7b4bec6fc56560938896bc4c8833",
+          "quote": "玖兆康乾投资管理有限公司成立于2016年5月",
+          "quote_hash": "85e40954ac72cea88b15b2c0c9e82dd46c84188692cb3c6a5aa42145bcfd065d"
+        },
+        {
+          "source_id": "jiuzhao_euler_angel",
+          "source_url": "https://www.sohu.com/a/1041806074_120109837",
+          "source_title": "成立3个月 家庭具身智能企业欧拉万象获第三轮融资_资本_创投_物理",
+          "source_content_hash": "9d260d9d0f976d809c394b478b65fbd6b78ffcd5f98df494c18465d9d261821e",
+          "quote": "本轮融资由某产业资本、慕华科创、百度风投、玖兆投资、聚合资本联合投资，老股东持续跟投。",
+          "quote_hash": "c339f97068fae4fed428375d7d7d2247ab186257c87a3dc89b1ef9e256c737f3"
+        },
         {
           "source_id": "FISRC-aad97c1f07ceb5c6",
           "source_url": "https://www.sohu.com/a/1041806074_120109837",
@@ -161,7 +185,7 @@
           "quote_hash": "c339f97068fae4fed428375d7d7d2247ab186257c87a3dc89b1ef9e256c737f3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

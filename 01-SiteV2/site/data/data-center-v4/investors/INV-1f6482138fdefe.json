@@ -192,12 +192,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Galvanize 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Galvanize 是一家全球资产管理机构，聚焦能源创新、韧性和智能化交叉领域。官网列出的策略覆盖种子、风险投资、成长投资、公开市场股票、信贷和房地产。",
+      "coverage_note": "机构身份与策略类别采用 Galvanize 官网公司介绍；不将官网表述进一步解释为气候基金之外的单一法律主体。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网将投资领域概括为能源创新、韧性和智能化交叉领域。",
+          "source_id": "galvanize_company"
+        },
+        {
+          "field": "investment_strategies",
+          "label": "投资策略",
+          "value": "官网列出种子、风险投资、成长投资、公开市场股票、信贷及房地产策略。",
+          "source_id": "galvanize_company"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -210,7 +223,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "galvanize_company",
+          "source_url": "https://galvanizeclimate.com/about",
+          "source_title": "Company | Galvanize",
+          "source_content_hash": "a31a977d00df7112f94ed402cf53fca75663e1ab02e28afc3e80329cd592bfa9",
+          "quote": "Galvanize is a global asset manager investing at the intersection of energy innovation, resilience, and intelligence",
+          "quote_hash": "8277485fb62a514232206ab2baae901c9a9963f0d2e93bdc2f59b2cde92f1794"
+        },
         {
           "source_id": "FISRC-2daabe6c0da09480",
           "source_url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative",
@@ -228,7 +253,7 @@
           "quote_hash": "ace2c505954342f14be106f335c319907b33342a8a62e9f212abf4fd2c1a2721"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

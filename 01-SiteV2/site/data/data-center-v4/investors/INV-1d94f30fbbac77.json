@@ -193,12 +193,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Jump Trading 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Jump Trading 是一家全球交易公司。",
+      "coverage_note": "本档案核实的是官网所述交易业务主体；官网页面未确认其是否设有独立风险投资基金，不据此推断其对外投资策略。",
+      "facts": [
+        {
+          "field": "business_type",
+          "label": "机构性质",
+          "value": "全球交易公司；官网重点介绍交易、技术与研究业务。",
+          "source_id": "jump_trading_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -211,7 +218,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "jump_trading_home",
+          "source_url": "https://www.jumptrading.com/",
+          "source_title": "Jump Trading",
+          "source_content_hash": "37f15ccfcbdc20f3b34e9505c5aa084f753c29da2451180c8bcbc710826c3e62",
+          "quote": "Jump Trading is a global trading firm where smart people build remarkable things.",
+          "quote_hash": "f09203723431aca13e964ae0a26b64dc4ecadfdc24fb3031094e4c594e941206"
+        },
         {
           "source_id": "FISRC-41379635293a6bc8",
           "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
@@ -229,7 +248,7 @@
           "quote_hash": "4e8f0812b1550eed31439bcf851c396e3e6a72cb2ae8e12a93c5459a9f3f2911"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

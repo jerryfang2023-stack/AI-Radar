@@ -137,21 +137,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "The House Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "The House Fund 官网聚焦 Berkeley 创业者；Bespoke Labs 公司融资公告将其列为 Series A 参与方。",
+      "summary": "The House Fund 是一家聚焦 Berkeley 创业者、从企业创立初期提供支持的投资基金。Bespoke Labs 的 Series A 公司公告将 The House Fund 列为参与投资方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资对象",
+          "value": "Berkeley 的创业者。",
+          "source_id": "house_site"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "企业创立初期。",
+          "source_id": "house_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Bespoke Labs 公司公告称其 Series A 轮由 Wing VC 领投，The House Fund 参与。",
+          "source_id": "bespoke_round"
+        },
         {
           "description": "融资来源记录：Bespoke Labs · 多轮融资 · 2026-07-06 · Series A轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bcf489b2ae49f41b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "The House Fund 官网",
+          "value": "The House Fund",
+          "url": "https://thehouse.fund/",
+          "source_id": "house_site"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "house_site",
+          "source_url": "https://thehouse.fund/",
+          "source_title": "The House Fund - We invest in Berkeley alumni, faculty, students",
+          "source_content_hash": "59e23d70f6dff6e3d69e006568060e4037b2178fac7a6424c356906fc23d7700",
+          "quote": "The House Fund invests at inception in",
+          "quote_hash": "3b292974cff3ae80a185ba76f4e22ed782859ec38c12a1ebaf01d1a53d1d98a4"
+        },
+        {
+          "source_id": "bespoke_round",
+          "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
+          "source_title": "Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents - My Framer Site",
+          "source_content_hash": "7b7d96c5a9652bb4b4c0269079219d1883bd179321deef2799fb8e5a972f5843",
+          "quote": "Our Series A round was led by Wing VC, with participation from Mayfield, The House Fund",
+          "quote_hash": "19fc962679a4833b4e571136f9538f947657548135ac49756446db8d15f40e5a"
+        },
         {
           "source_id": "FISRC-bcf489b2ae49f41b",
           "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
@@ -161,7 +202,7 @@
           "quote_hash": "d79798601e389d5e9d5d1c42ee0eb3b5b3e920e8bf562fe328a17a844b0ce7a7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

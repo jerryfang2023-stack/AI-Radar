@@ -192,14 +192,35 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Qumra Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "机构定位来自 Qumra 官网；Zenity 与 Qodo 的公司公告分别确认其参与 Zenity C 轮和领投 Qodo B 轮。",
+      "summary": "Qumra Capital 是专注以色列成长型科技公司的风险投资机构。Zenity 官方公告将其列为 C 轮新投资方；Qodo 官方公告则称 Qumra Capital 领投其 B 轮。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "以色列成长阶段科技公司。",
+          "source_id": "qumra_strategy"
+        },
+        {
+          "field": "market",
+          "label": "重点市场",
+          "value": "以色列成长市场。",
+          "source_id": "qumra_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Zenity 官方公告将 Qumra Capital 列为其 1.25 亿美元 C 轮的新投资方之一。",
+          "source_id": "zenity_round"
+        },
+        {
+          "description": "Qodo 官方公告称 Qumra Capital 领投其 7000 万美元 B 轮。",
+          "source_id": "qodo_round"
+        },
         {
           "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7bf361b38b905ca3"
@@ -209,8 +230,40 @@
           "source_id": "FISRC-f001682a294672d5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Qumra Capital 官网",
+          "value": "Qumra Capital",
+          "url": "https://qumracapital.com/",
+          "source_id": "qumra_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "qumra_strategy",
+          "source_url": "https://qumracapital.com/",
+          "source_title": "Qumra Capital - Home to exceptional late-stage technology companies",
+          "source_content_hash": "54c972e22a2a3f4a01ff48561a022c87904bff7b03760fb28a0858ad6c7e166e",
+          "quote": "We are the first Israeli Venture Capital fund to focus on the Israeli growth market",
+          "quote_hash": "4ca8dc718e234168995791d4388f1bf0f2e890c4de9f81e635e95c49016369f4"
+        },
+        {
+          "source_id": "zenity_round",
+          "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+          "source_title": "Zenity Raises $125 Million to Secure the Era of 1 Billion AI Agents",
+          "source_content_hash": "16db186cd8183b2a5071cc3d2563a05701f227c558b1884a28ffbc2803c86d25",
+          "quote": "New investors Qumra Capital, SoftBank Vision Fund 2, Hitachi Ventures and LG Technology Ventures joined the round",
+          "quote_hash": "d5be7f5cb4019d51ad8e98d3a313040c2d36f4907ad52a8b93520922e8711733"
+        },
+        {
+          "source_id": "qodo_round",
+          "source_url": "https://www.qodo.ai/blog/qodo-70m-series-b-shift-to-artificial-wisdom/",
+          "source_title": "Beyond Intelligence: Qodo’s $70M Series B and the Shift to Artificial Wisdom - Qodo",
+          "source_content_hash": "55acbc3a444492c967b56898d259977b5d75ccc33650fc2e9aba8f421f094629",
+          "quote": "The round was led by Qumra Capital, with participation from Maor Ventures, Phoenix Capital Partners , S Ventures, Square Peg, Susa Ventures, TLV Partners and Vine Ventures",
+          "quote_hash": "be1f7eab45f89bc03b290f09ebb1c960d5905f82738c1dbff91732334c70954f"
+        },
         {
           "source_id": "FISRC-7bf361b38b905ca3",
           "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
@@ -228,7 +281,7 @@
           "quote_hash": "3e82aa71f693635b2bd0e6364f60001938827eed0b90971a598e94d38261b40e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

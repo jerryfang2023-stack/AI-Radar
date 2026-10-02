@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Rogue Women VC 当前按“投资组织”收录。最新融资披露记录日期为 2025-12-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "队列名称为 Rogue Women VC；机构官网以 Rogue Women’s Fund 为品牌名。简介和投资策略均按官网自述记录，未录入未注明基准日期的业绩指标。",
+      "summary": "Rogue Women’s Fund 是一家面向美国女性创办科技公司的早期风险投资机构。官网披露其关注早期种子轮，并列出女性健康、护理经济、体验科技及基础产业等投资领域。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期种子轮；官网称投资美国注册公司。",
+          "source_id": "rogue_stage"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "女性创办的 B2B SaaS、企业软件及 B2B2C 软件；领域包括女性健康、护理经济、体验科技和基础产业。",
+          "source_id": "rogue_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,36 @@
           "source_id": "FISRC-99e63c0e1fbdfa5c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Rogue Women’s Fund 官网",
+          "value": "Rogue Women’s Fund",
+          "url": "https://www.roguewmn.com/",
+          "source_id": "rogue_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "rogue_focus",
+          "source_url": "https://www.roguewmn.com/",
+          "source_title": "Rogue Womens Fund",
+          "source_content_hash": "bc7892a4e34eef8eb8793d5a93476a05ed890eefee35f79be47ae6989cce2b2c",
+          "quote": "Rogue Women’s Fund is an early-stage venture capital firm investing in women-led B2B SaaS, Enterprise, and B2B2C software companies.",
+          "quote_hash": "20c71cc19da55e36b72ecd522d8176939dced87390dd1ec5f2a8551c14fcaaab"
+        },
+        {
+          "source_id": "rogue_stage",
+          "source_url": "https://www.roguewmn.com/",
+          "source_title": "Rogue Womens Fund",
+          "source_content_hash": "bc7892a4e34eef8eb8793d5a93476a05ed890eefee35f79be47ae6989cce2b2c",
+          "quote": "We invest in early seed stage companies incorporated in the US.",
+          "quote_hash": "08145072183f67ba02185d64977142eb83c23e3a63ff1f8783ebd545f3825f6b"
+        },
         {
           "source_id": "FISRC-99e63c0e1fbdfa5c",
           "source_url": "https://www.finsmes.com/2025/12/empromptu-raises-2m-in-pre-seed-funding.html",
@@ -161,7 +202,7 @@
           "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

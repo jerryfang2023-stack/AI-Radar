@@ -137,12 +137,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "K2 Investment Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "韩国风险投资协会目录和韩国交易所公开披露确认机构名称、法人形式及业务范围；协会目录提供公开官网和电话。官网正文无法由采集器读取，因此未推断投资策略或业绩。",
+      "summary": "K2 Investment Partners LLC 是一家从事中小企业及风险投资的韩国有限责任公司；官方名录列出其官网和联系电话。",
+      "facts": [
+        {
+          "field": "organization_verification",
+          "label": "机构核验",
+          "value": "韩国风险投资协会会员名录列为 K2 Investment Partners LLC。",
+          "source_id": "k2_directory"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "韩国交易所披露其业务为中小企业及风险投资。",
+          "source_id": "k2_krx"
+        },
+        {
+          "field": "legal_form",
+          "label": "法人形式",
+          "value": "有限责任公司。",
+          "source_id": "k2_krx"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,50 @@
           "source_id": "FISRC-4e441239551a1fd6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "K2 Investment Partners 官网（协会名录）",
+          "value": "K2 Investment Partners LLC",
+          "url": "https://www.k2investment.co.kr/",
+          "source_id": "k2_directory"
+        },
+        {
+          "kind": "phone",
+          "label": "协会名录电话",
+          "value": "02-566-0526",
+          "source_id": "k2_directory"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "k2_directory",
+          "source_url": "https://www.kvca.or.kr/en/Program/membership_directory/list.html?a_cd=1&a_gb=eng&a_item=0&sm=2_1",
+          "source_title": "KVCA - DIRECTORY > Membership Directory",
+          "source_content_hash": "df56ed62653b12208cd396fa611abb0618f31ec871c12a1a5ea40be451cb2536",
+          "quote": "199 K2 Investment Partners LLC 02-566-0526 www.k2investment.co.kr/",
+          "quote_hash": "244a788f03bf108fc488267f80199e333c80bc54213c3bbe6c4603c8fdb6e4d1"
+        },
+        {
+          "source_id": "k2_krx",
+          "source_url": "https://kind.krx.co.kr/external/2025/12/09/000246/20251209001072/00637.htm",
+          "source_title": "kind.krx.co.kr",
+          "source_content_hash": "5262046ea1643eb6d2f942ed5565cb1f08abaf7cb87ab6b837473421cebe637d",
+          "quote": "K2 Investment Partners LLC",
+          "quote_hash": "f4cf287ccffe0755f823e72591152789409f93fcc99794cd10cc5838f315ae06"
+        },
+        {
+          "source_id": "k2_krx_business",
+          "source_url": "https://kind.krx.co.kr/external/2025/12/09/000246/20251209001072/00637.htm",
+          "source_title": "kind.krx.co.kr",
+          "source_content_hash": "5262046ea1643eb6d2f942ed5565cb1f08abaf7cb87ab6b837473421cebe637d",
+          "quote": "중소기업 및 벤처투자",
+          "quote_hash": "136bdf7a70b844362b5eb13a6136788242b8b72a38ebf33418b9e11e9c524dfc"
+        },
         {
           "source_id": "FISRC-4e441239551a1fd6",
           "source_url": "https://en.wowtale.net/2026/08/14/234729/",
@@ -161,7 +222,7 @@
           "quote_hash": "50ef80ac9bdb15134d82ca7561562bc20369c6c7a67bd41de1ab224f1c92cb34"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -138,21 +138,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mark Goldberger 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "coverage_note": "Archestra 的公司融资公告将 Mark Goldberger 标注为 Metaview 的 VP Sales，并把他列在投资支持者名单中；公开履历资料较少，不补写其他经历。",
+      "summary": "Mark Goldberger 在 Archestra 2026 年 6 月的种子轮公告中被标注为 Metaview 的 VP Sales，并列入该轮投资支持者名单。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "education": [],
+      "career": [
+        {
+          "organization": "Metaview",
+          "title": "VP Sales",
+          "period": "Archestra 2026-06-02 公告所述",
+          "description": "融资公告将其标注为 Metaview 的 VP Sales。",
+          "source_id": "archestra_round"
+        }
+      ],
+      "experience_summary": "目前已核实的公开信息为其在 Metaview 的销售职务及一项早期投资活动。",
       "track_record": [
+        {
+          "description": "Archestra 公司公告将 Mark Goldberger 列在其 1000 万美元种子轮的投资支持者名单中。",
+          "source_id": "archestra_round"
+        },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "archestra_round",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
+          "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
+          "quote": "Mark Goldberger (VP Sales at Metaview)",
+          "quote_hash": "c5a82a11e227f795051ce3c941eb38e58b0742626ad13da55457ebedb5a251f2"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -162,7 +186,7 @@
           "quote_hash": "c5a82a11e227f795051ce3c941eb38e58b0742626ad13da55457ebedb5a251f2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

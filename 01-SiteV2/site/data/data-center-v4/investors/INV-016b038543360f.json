@@ -191,14 +191,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Alpha Wave 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Alpha Wave 是跨私募股权、私募信贷及保险和退休业务的另类资产管理机构。Cognition 官方 Series D 公告将 Alpha Wave 列为其既有投资方。",
+      "coverage_note": "机构身份由 Alpha Wave Global 官网确认；融资关系来自 Cognition 官方公告，未据此推断单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Cognition 官方 Series D 公告将 Alpha Wave 列入其既有投资方。",
+          "source_id": "alpha_wave_cognition_series_d"
+        },
         {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
@@ -208,8 +217,23 @@
           "source_id": "FISRC-a7bbb48af7503bf0"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "alpha_wave_identity",
+          "source_url": "https://alphawaveglobal.com/",
+          "source_title": "Alpha Wave Overview",
+          "source_content_hash": "b27cfa937a604a6d71321ef4bf347f3c78ad78b438b5c9fbf2145efd44d6b0c5",
+          "quote": "Alpha Wave is an alternative asset manager that operates across private equity, private credit, and insurance and retirement solutions.",
+          "quote_hash": "661046c1b8cb6eb3f8d2ca2bfce21216880108a099080fe56613e454b1e93790"
+        },
+        {
+          "source_id": "alpha_wave_cognition_series_d",
+          "source_url": "https://cognition.com/blog/series-d",
+          "source_title": "More Devins in More Places | Cognition",
+          "source_content_hash": "fdf1da0bf21b758bc27c4024126ffd8a07474ee9a8e1d8b7653542d1f0d6cd7e",
+          "quote": "Alpha Wave, Definition Capital, Positive Sum",
+          "quote_hash": "d140dbb908f7fd9592646b04f37536b4cdc447834c2da53e3ff5aa8035bfe86d"
+        },
         {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
@@ -227,7 +251,7 @@
           "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

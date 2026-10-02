@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "岩山科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "岩山科技是从事科技业务的上市公司；新浪财经转载的协会信息将其列为墨芯人工智能 C 轮投资方。",
+      "coverage_note": "公司身份来自岩山科技官网，融资关系来自新浪财经转载的合肥市投资基金协会信息；不据此称其为独立投资基金。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "报道将岩山科技列为墨芯人工智能近 10 亿元 C 轮投资方。",
+          "source_id": "stonehill_moxin_c"
+        },
         {
           "description": "融资来源记录：墨芯人工智能 · C轮 · 2026-05-29 · 本轮参投 · 近10亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6202f2642c216aa5"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "stonehill_identity",
+          "source_url": "https://www.stonehill-tech.com/",
+          "source_title": "岩山科技",
+          "source_content_hash": "ba471f28cb9b6d9b8f675f8957b6338557437b8d15cabd0b09a38e01393c855a",
+          "quote": "岩山科技",
+          "quote_hash": "2ca452ceeaf2172422f9d5ee20cb641e6442772b21d0eb725fdce26d9d86bc50"
+        },
+        {
+          "source_id": "stonehill_moxin_c",
+          "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
+          "source_title": "【会员动态】AI芯片设计商「墨芯人工智能」获得近10亿人民币C轮融资_新浪财经_新浪网",
+          "source_content_hash": "6c4f6da8006b26ad1cac77e6f33883424fb2a8ff6d8d2a49eecdc04b3474f8d3",
+          "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园",
+          "quote_hash": "1b53e68cf7b37526e2b6bfa79e9bf191989c4082cfdaf0ed705b3abfe10ab184"
+        },
         {
           "source_id": "FISRC-6202f2642c216aa5",
           "source_url": "https://finance.sina.com.cn/roll/2026-05-29/doc-inhzqccm9474762.shtml",
@@ -161,7 +185,7 @@
           "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

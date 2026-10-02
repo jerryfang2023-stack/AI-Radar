@@ -123,11 +123,30 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Z基金(智谱) 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "智谱官方资料核实“Z 基金”为智谱联合生态伙伴发起的 AGI 生态基金品牌；未将其外推为独立法律实体，也未推断管理人。",
+      "summary": "Z 基金是智谱 AI 联合生态伙伴发起的 AGI 生态基金，官方介绍其用于支持大模型赛道有潜力的早期项目。公开来源未在本档案中确认基金的独立法律主体或管理人。",
+      "facts": [
+        {
+          "field": "fund_identity",
+          "label": "基金定位",
+          "value": "智谱 AI 联合生态伙伴发起的 AGI 生态基金。",
+          "source_id": "z_fund_official"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "支持大模型赛道有潜力的早期项目。",
+          "source_id": "z_fund_official"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-08-04",
+          "description": "智谱官方文章称，智谱 AI CEO 在 Z DemoDay 宣布联合生态伙伴推出 AGI 生态基金 Z 基金。",
+          "source_id": "z_fund_official"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：趋境科技 · 历史轮次未披露 · 天使轮领投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -137,6 +156,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "z_fund_official",
+          "source_url": "https://www.zhipuai.cn/en/news/135",
+          "source_title": "Z.ai - Inspiring AGI to Benefit Humanity",
+          "source_content_hash": "0d54771822c7b36349e619d08719158d88b9802afbb284320538f7a8d88440ba",
+          "quote": "并宣布智谱 AI 联合生态伙伴正式推出 AGI 生态基金： Z 基金 ，以支持更多大模型赛道有潜力的早期项目！",
+          "quote_hash": "86ae26150797bca48f8b477645df27c2a0c44d9456dddc9d00fb7f324cfe51f9"
+        },
+        {
           "source_id": "FISRC-53ef187e17deac50",
           "source_url": "https://unifuncs.com/s/lVd0EmYJ",
           "source_title": "从清华实验室到Token工厂领跑者：趋境科技崛起之路 - U深搜",
@@ -145,7 +172,7 @@
           "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -274,12 +274,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Ontario Teachers' Pension Plan 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Ontario Teachers’ Pension Plan 是安大略省教师的独立养老金计划与全球投资者。官网称其在固定收益、公开和私募股权、房地产、基础设施、自然资源、信贷及风险投资等资产类别进行全球投资。",
+      "coverage_note": "组织历史和资产类别依据 Ontario Teachers’ 官网；没有把养老金计划与安大略省政府混为一体。",
+      "facts": [
+        {
+          "field": "investment_scope",
+          "label": "投资范围",
+          "value": "官网列示固定收益、公开及私募股权、房地产、基础设施、自然资源、信贷和风险投资。",
+          "source_id": "otpp_history"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -296,7 +303,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "otpp_history",
+          "source_url": "https://www.otpp.com/en-ca/about-us/our-story/our-history/",
+          "source_title": "Our History | Ontario Teachers&#39; Pension Plan",
+          "source_content_hash": "0f785ecaa23d8f12174c5262b74fd3490b65396b4e5736c718b8f2c6f9875a9e",
+          "quote": "Ontario Teachers’ invests globally in fixed income, public and private equity markets, real estate, infrastructure, natural resources, credit, and venture capital through the Teachers’ Venture Growth (TVG).",
+          "quote_hash": "6696e6b979f79a2b63068c6e0d59ed86bd9156f4b66183266c5f9c2e153ae36a"
+        },
         {
           "source_id": "FISRC-4f44cd6d16442bdc",
           "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
@@ -322,7 +341,7 @@
           "quote_hash": "391e366a08a482b8300bdb754bfb3ea9fe9401d88df0a21209bbe00e28242ed1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -138,21 +138,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "润泽科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "润泽科技发展有限公司是数据中心和数字经济基础设施运营商。如身机器人融资消息将“头部算力上市公司润泽科技”列为投资方。",
+      "coverage_note": "公司业务及投资者关系页面来自润泽科技官网；投资关系来自投资界融资报道。现有来源按“算力上市公司”描述投资方，未推断其具体出资主体或单独金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "如身机器人 Pre-A 轮融资报道将头部算力上市公司润泽科技列为共同投资方。",
+          "source_id": "runze_rushen_pre_a"
+        },
         {
           "description": "融资来源记录：如身机器人 · Pre-A轮 · 2026-07-03 · 本轮参投 · 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-994a98c6328cb7a7"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "runze_identity",
+          "source_url": "https://www.rangeidc.com/aboutus/",
+          "source_title": "认识润泽New &#8211; 润泽科技发展有限公司",
+          "source_content_hash": "e644b95e18074c11cb3cee6b9703ab3c4912bf4c03c1f2cc57a1faa379992e9b",
+          "quote": "润泽科技发展有限公司于2009年8月在廊坊经济技术开发区注册成立",
+          "quote_hash": "b0fc1f52553e762f8cad6c3e38acefee78e13595c0014ade89ff36b0f7c5280c"
+        },
+        {
+          "source_id": "runze_ir",
+          "source_url": "https://www.rangeidc.com/stock/",
+          "source_title": "投资者关系 &#8211; 润泽科技发展有限公司",
+          "source_content_hash": "914f9fa097c7fb304c5bd19ab4569dcffe5b8a35170b30642db4ec824e7bdee1",
+          "quote": "投资者关系",
+          "quote_hash": "597f21c32fd81235fe74f3c2ed7bf510afd67b2103e57ccd7c20c24379b4bfa1"
+        },
+        {
+          "source_id": "runze_rushen_pre_a",
+          "source_url": "https://news.pedaily.cn/202607/565817.shtml",
+          "source_title": "如身机器人完成亿元Pre-A轮融资，推动养老机器人规模化落地_投资界",
+          "source_content_hash": "71e43416c61834651df19866413c605a0ca6268d06783a2ee4c992b4464f7dc2",
+          "quote": "头部算力上市公司润泽科技及平湖泽新共同投资",
+          "quote_hash": "4df9d969bc2e197a01d214cbdfe548c357a1814bd32b38e1065696de7c869f8c"
+        },
         {
           "source_id": "FISRC-994a98c6328cb7a7",
           "source_url": "https://news.pedaily.cn/202607/565817.shtml",
@@ -162,7 +194,7 @@
           "quote_hash": "18fa7c8d7b507aee12ada5408a11f9e8a2911404d1f9cc7e1c497baa3e570078"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

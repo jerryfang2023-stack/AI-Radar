@@ -137,21 +137,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "MVP Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "summary": "MVP Ventures 是一家早期风险投资机构，面向技术创业公司。Wispr 联合创始人 Tanay Kothari 在机构官网的创始人案例中介绍了 MVP 的合作支持；TechCrunch 报道称 MVP Ventures 参与了 Wispr 2026 年 8 月 2.8 亿美元 B 轮追加投资。",
+      "coverage_note": "机构身份与 Wispr 的历史合作线索来自 MVP 官网；当前 B 轮参与名单来自 TechCrunch 报道。没有证据显示 MVP Ventures 在该轮单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "TechCrunch 报道将 MVP Ventures 列为 Wispr 2026 年 8 月 2.8 亿美元 B 轮追加投资的既有投资方。",
+          "source_id": "mvp_wispr_series_b"
+        },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "mvp_official_identity",
+          "source_url": "https://www.mvp-vc.com/",
+          "source_title": "MVP Ventures — Your Most Valuable Partner",
+          "source_content_hash": "704a47eee7888294940da5b8d33b7c49bad524ae32e61e0326aba9b18ff1ade5",
+          "quote": "MVP Ventures is an early-stage venture firm backing technical founders building differentiated, defensible technology.",
+          "quote_hash": "87726ca2be70dfff687bf38dc2bba30cc96af87bd7fc20da97a0fb37850948d8"
+        },
+        {
+          "source_id": "mvp_wispr_founder_testimonial",
+          "source_url": "https://www.mvp-vc.com/",
+          "source_title": "MVP Ventures — Your Most Valuable Partner",
+          "source_content_hash": "704a47eee7888294940da5b8d33b7c49bad524ae32e61e0326aba9b18ff1ade5",
+          "quote": "Tanay Kothari CEO & Co-Founder, Wispr",
+          "quote_hash": "23df09384762690376857dbb1ddcfcdcca12ee56e436ed0031f2469e8628d337"
+        },
+        {
+          "source_id": "mvp_wispr_series_b",
+          "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/",
+          "source_title": "Wispr raises $280M at $2B valuation as it looks beyond dictation | TechCrunch",
+          "source_content_hash": "ce6d80b37021dee61ba828ef24173605de18402fac78a89cc0c681c49de93a3f",
+          "quote": "Existing investors, including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, doubled down in the latest round.",
+          "quote_hash": "f3c3d3aa216135321d4f460efe056f3fc8e616d46ee40fee2514e2eb5b556649"
+        },
         {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
@@ -161,7 +193,7 @@
           "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

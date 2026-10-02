@@ -122,12 +122,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华熙生物 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "华熙生物科技股份有限公司是生物科技与生物制造企业，官网介绍其以透明质酸生物制造为基础，布局医药、医美、营养科学及皮肤科学等领域。",
+      "coverage_note": "公司身份、成立年份与产品领域来自华熙生物官网；官网自述的市场地位不作为独立核验的竞争排名。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "官网介绍其业务涵盖生物材料，以及医药、医美、营养科学和皮肤科学。",
+          "source_id": "bloomage_about"
+        },
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "官网称华熙生物成立于 2000 年。",
+          "source_id": "bloomage_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -136,7 +149,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "bloomage_about",
+          "source_url": "https://bloomagebiotech.com/about.html",
+          "source_title": "关于我们",
+          "source_content_hash": "9b79a525d7ea3e8b3cb2ac8bb5f1607e57d72d67503999c993791eaf41fd5626",
+          "quote": "华熙生物成立于2000年，作为一家全球领先的生物科技与生物制造企业",
+          "quote_hash": "7607007eb393cb61999aba31a70b421f833608bdf7bc2771d806bf6beac5abe6"
+        },
         {
           "source_id": "FISRC-b78c44b13620e61a",
           "source_url": "https://news.pedaily.cn/202602/561111.shtml",
@@ -146,7 +171,7 @@
           "quote_hash": "595292baf7996f7be60baba3cbbfed51bdf7bcdd035d60f7b2c1b6c29cd6a681"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

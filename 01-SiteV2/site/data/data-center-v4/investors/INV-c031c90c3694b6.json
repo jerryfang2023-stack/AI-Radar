@@ -137,21 +137,70 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Eight Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "Eight Capital 官网明确聚焦 YC 公司并描述其投资阶段；Lemma 的发行方融资公告将 Eight Capital 列入 pre-seed 投资方。",
+      "summary": "Eight Capital 是一家聚焦 Y Combinator 创业公司的早期投资机构，官网称其希望投资每一届 YC 批次中的前 10% 团队。Lemma 公司公告列出 Eight Capital 为其 230 万美元 pre-seed 轮参与方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资对象",
+          "value": "Y Combinator 创业公司。",
+          "source_id": "eight_site"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Seed、Demo Day 前的 YC 初期融资。",
+          "source_id": "eight_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Lemma 公司公告列出 Eight Capital 为其 230 万美元 pre-seed 轮投资方之一。",
+          "source_id": "lemma_round"
+        },
         {
           "description": "融资来源记录：Lemma · 预种子轮 · 2026-08-07 · 本轮参投 · $2.3M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-efe4db4aff32c4ea"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Eight Capital 官网",
+          "value": "Eight Capital",
+          "url": "https://www.eightcapital.com/",
+          "source_id": "eight_site"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "eight_site",
+          "source_url": "https://www.eightcapital.com/portfolio",
+          "source_title": "Eight Capital — YC Seed, Before Demo Day",
+          "source_content_hash": "85fcd6efeacc772947bddc3baf3ce862702747c0f63638b7661408bb9d98b0b3",
+          "quote": "Eight Capital — YC Seed, Before Demo Day",
+          "quote_hash": "8c5872dce7140b15295845bc14d355f26cf92763ecfe2ae60e9e2fb6e45fad5d"
+        },
+        {
+          "source_id": "eight_criteria",
+          "source_url": "https://www.eightcapital.com/portfolio",
+          "source_title": "Eight Capital — YC Seed, Before Demo Day",
+          "source_content_hash": "85fcd6efeacc772947bddc3baf3ce862702747c0f63638b7661408bb9d98b0b3",
+          "quote": "We invest in the top 10% of each YC batch",
+          "quote_hash": "ecd7b491f20e8642d76f3f17c419f428f9e43a74dc3863fb030ac798ea032988"
+        },
+        {
+          "source_id": "lemma_round",
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/13/3344773/0/en/2-3m-pre-seed-for-lemma-backed-by-matrix-yc-openai-xai-operators-to-fix-silent-ai-agent-failures.html",
+          "source_title": "$2.3M Pre-Seed for Lemma – Backed by Matrix, YC &amp;",
+          "source_content_hash": "2a8ef9f549d47930bb09bafa4a1f791f04bfa6b0a1be8c41868b4656fdacf3b6",
+          "quote": "The round includes participation from Matrix, Y Combinator, Liquid 2 Ventures, Vermilion Cliffs Ventures, Irregular Expressions, Cervin Ventures, Comma Capital, Position Ventures, and Eight Capital",
+          "quote_hash": "b8a8719a097ca6fe1653e5e91862ccd1bc05cda88a5edc345b4c1d0e9c866004"
+        },
         {
           "source_id": "FISRC-efe4db4aff32c4ea",
           "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
@@ -161,7 +210,7 @@
           "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

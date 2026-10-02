@@ -122,21 +122,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Supermicro 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Supermicro 是计算机系统与 AI 基础设施供应商；Crusoe 的 Series E 官方融资公告将 Supermicro 列入参投方名单。",
+      "coverage_note": "Supermicro 官网核实公司身份及 AI 系统业务；Crusoe 官方融资公告核实战略投资关系。该档案记录的是企业投资者活动，不将 Supermicro描述为风险投资基金。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Crusoe Series E 官方公告将 Supermicro 列入参投方名单；未披露 Supermicro 单独投资金额。",
+          "source_id": "crusoe_series_e"
+        },
         {
           "description": "融资来源记录：Crusoe · 历史轮次未披露 · Series E 参投方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4afc17abd0ce2781"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "supermicro_official_identity",
+          "source_url": "https://www.supermicro.com/en/about",
+          "source_title": "About Us | Supermicro",
+          "source_content_hash": "76e7f50d28eb7798a5f36c45d012c33e797cdb394eb963a8110dfd17a320f13a",
+          "quote": "Supermicro delivers the broadest selection of AI systems and solutions",
+          "quote_hash": "b39dd167841045ffceded179f30e93e1f0bd70ff6c1f849945397fb5fcbcb750"
+        },
+        {
+          "source_id": "crusoe_series_e",
+          "source_url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-e-funding",
+          "source_title": "Crusoe raises $1.375B at $10B valuation to power AI | Crusoe",
+          "source_content_hash": "987ad051c3aa90da7bfbe78cabe1b2cf11c4382c4a04412af91b5bb588f33f98",
+          "quote": "Spark Capital, StepStone Group, Supermicro, T. Rowe Price, Tiger Global Management",
+          "quote_hash": "9c55582dd45fa7fff65d61e552cfce2af09206c34b88d78594c1e395580c7df6"
+        },
         {
           "source_id": "FISRC-4afc17abd0ce2781",
           "source_url": "https://sacra.com/c/crusoe/",
@@ -146,7 +170,7 @@
           "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

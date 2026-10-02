@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Genesys 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Genesys 是全球客户体验编排软件公司；Genesys 官方公告确认其对 Scaled Cognition 进行了投资。",
+      "coverage_note": "公司身份和投资关系均来自 Genesys 官方新闻稿；档案不把未在官方公告中说明的本轮金额、轮次或条款作为已确认信息。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Genesys 官方公告称其已投资 Scaled Cognition，并宣布双方的战略合作。",
+          "source_id": "genesys_scaled_official"
+        },
         {
           "description": "融资来源记录：Scaled Cognition · A轮 · 2026-06-25 · 本轮参投 · 1 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-72c797dbf1b03cc1"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "genesys_scaled_official",
+          "source_url": "https://www.genesys.com/company/newsroom/announcements/genesys-and-scaled-cognition-partner-to-advance-responsible-agentic-ai-customer-experience-orchestration",
+          "source_title": "Genesys and Scaled Cognition Partner to Advance Responsible Agentic AI Customer Experience Orchestration | Genesys",
+          "source_content_hash": "3dbb2c439c2e747c65bb37ff135edd9ea1226c9dc85c0a8a4fd62c4832502027",
+          "quote": "Alongside the partnership, Genesys has invested in Scaled Cognition to support its growth and joint innovation",
+          "quote_hash": "633ada823cdd6e8168aab3d114a58933ec3eb7bd1b8c53601a046eee9312af3f"
+        },
+        {
+          "source_id": "scaled_cognition_official",
+          "source_url": "https://www.scaledcognition.com/about",
+          "source_title": "About Us | Scaled Cognition",
+          "source_content_hash": "9c866c0ec1a8a0a329763bb399e101a2cf0130a8ef88c509bc89025716817ed6",
+          "quote": "Our mission is backed by Vinod Khosla, Genesys, and partners",
+          "quote_hash": "0e0d61f3b8286e263d5ca5fa7d455ad82ec1c8f22017983f7054faf9d0f6461c"
+        },
         {
           "source_id": "FISRC-72c797dbf1b03cc1",
           "source_url": "https://startuprise.io/scaled-cognition-raises-100m-in-series-a-funding-round/",
@@ -161,7 +185,7 @@
           "quote_hash": "b7b11314f4824154c9fbb8679d041fb601eddb3ec4db09612a5847b07b6bc53d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

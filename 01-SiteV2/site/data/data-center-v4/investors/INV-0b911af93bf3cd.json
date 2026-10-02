@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Main Sequence 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Main Sequence 是面向深科技的风险投资机构；Aigentsphere 官方公告称其种子轮由 Main Sequence 领投。",
+      "coverage_note": "机构定位来自 Main Sequence 官网，融资关系来自 Aigentsphere 官方公告；未披露其单独出资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Aigentsphere 官方公告称其 400 万美元种子轮由 Main Sequence 领投。",
+          "source_id": "main_sequence_aigentsphere_seed"
+        },
         {
           "description": "融资来源记录：Aigentsphere · 种子轮 · 2026-04-29 · 本轮领投 · 400万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f3c10b61ea844c50"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "main_sequence_identity",
+          "source_url": "https://www.mseq.vc/",
+          "source_title": "Main Sequence - a venture capital firm designed for deeptech",
+          "source_content_hash": "9a56bfde1ef602fd2fd03679785b5e227b4d2a82665deb3ec46e90d5510ceaba",
+          "quote": "a venture capital firm designed for deeptech",
+          "quote_hash": "75aa1d4993d5d199cf3113c81d783f36beb488b8616b770154e780116333e23a"
+        },
+        {
+          "source_id": "main_sequence_aigentsphere_seed",
+          "source_url": "https://www.aigentsphere.com/resources/aigentsphere-raises-4m",
+          "source_title": "Aigentsphere raises $4M to Bring Governance and Oversight to Enterprise AI Agents",
+          "source_content_hash": "9979c6f44d8963ff99938b1b429f1fc072aa8210f33a5b4d7f79463d7391838a",
+          "quote": "Main Sequence",
+          "quote_hash": "e251bad2439c0bfd610d87f2ce6858c675fcea1ab9736fe6546cb6ca419cf0bb"
+        },
         {
           "source_id": "FISRC-f3c10b61ea844c50",
           "source_url": "https://www.startupdaily.net/topic/funding/ai-governance-startup-pockets-4-million-seed-round/",
@@ -161,7 +185,7 @@
           "quote_hash": "178ed06f7e5817897129560e186358a67b60cf1c4910782fd1c9a11a3b9251fa"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

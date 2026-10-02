@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国开科创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "国开科技创业投资有限责任公司（国开科创）是国开金融全资子公司。北京市经济和信息化局与国家开发银行北京分行的专项合作文件披露，国开科创可对科技企业直接投资或持有认股期权。",
+      "coverage_note": "投资机制依据 2022 年北京市经信局与国开行北京分行联合发布的合作通知；本档案不把该专项产品的历史额度表述为当前标准。",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "股权关系",
+          "value": "通知称国开科创为国开金融全资子公司。",
+          "source_id": "cdb_vc_identity_role"
+        },
+        {
+          "field": "investment_instruments",
+          "label": "投资方式",
+          "value": "通知披露国开科创可直接投资科技企业或持有认股期权。",
+          "source_id": "cdb_vc_identity_role"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "cdb_vc_identity_role",
+          "source_url": "https://jxj.beijing.gov.cn/jxdt/tzgg/202209/t20220901_2806968.html",
+          "source_title": "北京市经济和信息化局国家开发银行北京市分行 关于开发性金融助力高精尖产业高质量发展推进首都产业强链筑基专项合作的通知_通知公告_北京市经济和信息化局",
+          "source_content_hash": "3808c05d401d68b663fea14119cb41c2d2ea65b6e35512e92d61b47a54e7d378",
+          "quote": "由国开金融全资子公司国开科技创业投资有限责任公司对企业进行直接投资或持有认股期权",
+          "quote_hash": "ea9b24c4714b1acb316abf6fa8f37b410aa675347cca5cc49a2b0c5b42d35ebe"
+        },
         {
           "source_id": "FISRC-2a3446f702110142",
           "source_url": "https://news.pedaily.cn/202608/568060.shtml",
@@ -161,7 +186,7 @@
           "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

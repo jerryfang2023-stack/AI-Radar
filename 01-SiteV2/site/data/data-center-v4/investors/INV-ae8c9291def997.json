@@ -137,12 +137,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Operator Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "投资模式、阶段范围和支持方式均为机构官网自述；未录入未经一手来源核验的投资数量或基金规模。",
+      "summary": "Operator Partners 是一家由创业经营者出资的投资机构。官网称其使用自有资金投资从创立到 Series B 阶段的科技公司，并在投后提供业务建设和规模化支持。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "从公司创立阶段至 Series B。",
+          "source_id": "operator_stage"
+        },
+        {
+          "field": "capital_source",
+          "label": "资金来源",
+          "value": "官网称不接受外部投资者，使用自有资金。",
+          "source_id": "operator_capital"
+        },
+        {
+          "field": "support",
+          "label": "投后支持",
+          "value": "为组合公司提供业务建设和规模化方面的支持。",
+          "source_id": "operator_support"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,44 @@
           "source_id": "FISRC-fe66d902ece1db68"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Operator Partners 官网",
+          "value": "Operator Partners",
+          "url": "https://www.operatorpartners.com/",
+          "source_id": "operator_stage"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "operator_stage",
+          "source_url": "https://www.operatorpartners.com/",
+          "source_title": "Operator Partners",
+          "source_content_hash": "3d8c7d6cafff493bef67b36dd45e9fd4a6b30c34abf0cb7b677acbc9e709485c",
+          "quote": "We invest in technology companies from inception through Series B.",
+          "quote_hash": "0c551a9fba7f87c8e5cf029341b4cda39b70745d6fcf2e236ad8e78a38d09eaf"
+        },
+        {
+          "source_id": "operator_capital",
+          "source_url": "https://www.operatorpartners.com/",
+          "source_title": "Operator Partners",
+          "source_content_hash": "3d8c7d6cafff493bef67b36dd45e9fd4a6b30c34abf0cb7b677acbc9e709485c",
+          "quote": "No outside investors, just our own capital.",
+          "quote_hash": "4320d7104b03f8201706a1e0219da2c2055c432462b16344659d00d72bb8a02a"
+        },
+        {
+          "source_id": "operator_support",
+          "source_url": "https://www.operatorpartners.com/",
+          "source_title": "Operator Partners",
+          "source_content_hash": "3d8c7d6cafff493bef67b36dd45e9fd4a6b30c34abf0cb7b677acbc9e709485c",
+          "quote": "We support our portfolio companies on the business building and scaling questions that come up between board meetings.",
+          "quote_hash": "f16e95e634a3b05ae9bee9317190071371f434d8bd4b421bb585c7c94a0adfbe"
+        },
         {
           "source_id": "FISRC-fe66d902ece1db68",
           "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
@@ -161,7 +216,7 @@
           "quote_hash": "c8cb081b2609863215379438fff46d03b2db5e96296d6ae1a443310805779284"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

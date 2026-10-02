@@ -122,12 +122,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Franklin Templeton 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Franklin Templeton, Inc. 是全球投资管理机构，通过旗下实体使用 Franklin Templeton 品牌，业务涵盖股票、固定收益、多资产及另类投资。",
+      "coverage_note": "机构性质与业务范围来自公司投资者关系官网简介。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "全球投资管理机构；该官网简介将 Franklin Templeton, Inc. 描述为其母体实体，并称旗下子公司以 Franklin Templeton 名称运营。",
+          "source_id": "franklin_templeton_ir"
+        },
+        {
+          "field": "investment_capabilities",
+          "label": "业务范围",
+          "value": "官网列出的投资管理能力包括股票、固定收益、多资产解决方案及另类投资。",
+          "source_id": "franklin_capabilities"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -136,7 +149,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "franklin_templeton_ir",
+          "source_url": "https://investors.franklintempleton.com/investor-relations/investor-home/",
+          "source_title": "Franklin Templeton Inc. - Investors",
+          "source_content_hash": "553fd588a6e059f50d5c80d47ca6c33739085e5da3a557778b1048c89ffb451f",
+          "quote": "Franklin Templeton, Inc. (NYSE:BEN) is a global investment management organization with subsidiaries operating as Franklin Templeton and serving clients in over 165 countries.",
+          "quote_hash": "1f7285ce89d014b389925ea1bec412e3605cec931408fe4fe0e80edbc3a8acc9"
+        },
+        {
+          "source_id": "franklin_capabilities",
+          "source_url": "https://investors.franklintempleton.com/investor-relations/investor-home/",
+          "source_title": "Franklin Templeton Inc. - Investors",
+          "source_content_hash": "553fd588a6e059f50d5c80d47ca6c33739085e5da3a557778b1048c89ffb451f",
+          "quote": "Through its specialist investment managers, the company brings extensive capabilities in equity, fixed income, multi-asset solutions and alternatives.",
+          "quote_hash": "b35916d28cec4e369e474f9ae3a328b38cc95092640540e8fa0d597cb35bf042"
+        },
         {
           "source_id": "FISRC-4afc17abd0ce2781",
           "source_url": "https://sacra.com/c/crusoe/",
@@ -146,7 +179,7 @@
           "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {
