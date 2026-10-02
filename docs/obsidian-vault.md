@@ -14,16 +14,17 @@ status: current
 观澜AI/
 ├── 00-总览/
 ├── 10-系统现状/
-├── 20-数据中心/
-├── 30-应用中心/
+├── 20-融资情报/              # 融资总览、融资报告、已发布报告档案
+├── 30-专题研究/              # 社群监测、Builders观点、FDE、AI硬件
 ├── 40-运营中心/
 ├── 50-规则与契约/
-├── 60-知识资产/
+├── 60-知识资产/              # 按融资/FDE/AI硬件/Builders观点/社群监测分目录
 └── 90-工作区/
 ```
 
-- 数据中心保存当前可追溯事实和独立栏目投影。
-- 应用中心只保留变化雷达入口；融资情报与周报/月报统一链接到独立 AI 融资站，机会地图保留为内部实验室。
+- 融资情报只读取已验收的 `financing-catalog-v1.json`；硬件、FDE 企业符合融资准入规则的融资事件仍保留在融资域。
+- 专题研究与融资导航分开；独立栏目不进入融资读库，机会地图、变化雷达归内部实验室。
+- `.guanlan-domains.json` 分别记录融资、社群、Builders、FDE、硬件和共享资产的内容哈希；专题更新不会改变融资域版本。
 - 运营中心是网站运营总台、运行状态、自动化与质量门禁入口。
 - 知识资产保存去重后仍有长期价值的正式报告、FDE、硬件、融资、一线人物和社群资料。
 - 工作区保存人工笔记；不会反向覆盖生产数据。
@@ -35,6 +36,7 @@ AI Startup Radar 已退役且不迁移，不能与内部机会地图实验室混
 ```powershell
 npm run sync:guanlan-vault
 npm run assert:guanlan-vault
+npm run build:financing-read-model
 npm run assert:private-evidence-backup
 npm run assert:public-evidence-boundary
 npm run register:guanlan-vault
@@ -46,7 +48,9 @@ Vault 不设置 Markdown 总量硬上限；验收输出仅记录文件数。每�
 
 `local-sync-from-main.ps1` 在本地 `main` 快进后自动刷新新 Vault。GitHub Actions 不访问本机 Vault。
 
-每日 Final Closure 不依赖主工作区是否干净：它从 `origin/main` 创建隔离工作树，完成 Vault 构建、证据索引同步和断言，并把来源提交记录到 `%LOCALAPPDATA%\WaveSight\runtime`。主工作区的未提交改动既不会进入 Vault，也不会阻塞这次投影；手动执行 `local-sync-from-main.ps1` 时仍须先处理本地主分支状态。
+每日融资发布闭环不依赖主工作区是否干净：它从 `origin/main` 创建隔离工作树，刷新共享数据湖、独立融资读库及 Vault，并在项目 runtime 中记录来源提交。主工作区的未提交改动不会进入投影。
+
+旧布局首次升级必须先在独立目录构建并验收，再通过 `migrate-guanlan-vault-layout.mjs --target=... --staging=... --backup=... --apply=true` 迁移。迁移备份全部修改前内容，校验并发修改，只修正人工笔记的路径引用，保留正文与现有 Obsidian 设置。生成器会拒绝直接覆盖旧布局或正在迁移的 Vault。迁移完成后恢复正常单向同步。
 
 ## Production Boundary
 

@@ -140,6 +140,13 @@ if (fresh && fs.existsSync(vaultRoot)) {
   throw new Error(`Fresh build refused because target already exists: ${vaultRoot}`);
 }
 const previousManifestPath = path.join(vaultRoot, ".guanlan-generated.json");
+if (fs.existsSync(path.join(vaultRoot, '.guanlan-layout-migration.lock'))) throw new Error('vault_layout_migration_busy');
+if (fs.existsSync(previousManifestPath)) {
+  const previous = JSON.parse(fs.readFileSync(previousManifestPath, 'utf8'));
+  if (previous.generatedFiles?.length && previous.layoutVersion !== GUANLAN_VAULT_LAYOUT_VERSION) {
+    throw new Error('vault_layout_migration_required: build and validate an independent staging Vault, then run migrate-guanlan-vault-layout.mjs');
+  }
+}
 const previousGeneratedFiles = fs.existsSync(previousManifestPath)
   ? (() => {
       try {

@@ -3,6 +3,18 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {resolveGuanlanVaultRoot,GUANLAN_VAULT_LAYOUT_VERSION} from './guanlan-vault-paths.mjs';
 import {isMainModule} from './lib/module-entry.mjs';
+export function verifyVaultDomains(vaultRoot) {
+  const inventory=JSON.parse(fs.readFileSync(path.join(vaultRoot,'.guanlan-generated.json'),'utf8'));
+  const manifest=JSON.parse(fs.readFileSync(path.join(vaultRoot,'.guanlan-domains.json'),'utf8'));
+  if(manifest.layoutVersion!==GUANLAN_VAULT_LAYOUT_VERSION || manifest.schemaVersion!=='GUANLAN-VAULT-DOMAINS-1')throw Error('vault_domain_contract_mismatch');
+  const expected=inventory.generatedFiles.filter(p=>p.endsWith('.md')&&!p.startsWith('90-工作区/')).sort(),seen=[];
+  for(const domain of Object.values(manifest.domains)) {
+    if(domain.fileCount!==domain.files.length || domain.contentHash!==crypto.createHash('sha256').update(JSON.stringify(domain.files)).digest('hex'))throw Error('vault_domain_version_mismatch');
+    for(const file of domain.files){if(!expected.includes(file.path)||file.sha256!==crypto.createHash('sha256').update(fs.readFileSync(path.join(vaultRoot,file.path))).digest('hex'))throw Error(`vault_domain_asset_mismatch:${file.path}`);seen.push(file.path);}
+  }
+  if(JSON.stringify(seen.sort())!==JSON.stringify(expected))throw Error('vault_domain_inventory_mismatch');
+  return manifest;
+}
 export function buildVaultDomains(vaultRoot) {
   const file=path.join(vaultRoot,'.guanlan-generated.json'),manifest=JSON.parse(fs.readFileSync(file,'utf8'));
   const groups={financing:[],fde:[],hardware:[],builders:[],community:[],shared:[]};

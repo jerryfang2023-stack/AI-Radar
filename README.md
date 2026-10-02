@@ -10,6 +10,10 @@ Start with [the documentation entry](docs/README.md) for setup and operations,
 [daily recovery](docs/daily-production-recovery.md) for failed-stage recovery.
 Agents must follow [AGENTS.md](AGENTS.md) and its task-specific routes.
 
+The [financing data foundation](docs/financing-data-foundation.md) keeps shared
+facts and evidence, an independent financing read database, separately versioned
+application indexes and distinct financing/topic sections in the Obsidian Vault.
+
 Runtime logs, credentials, private original bodies and local databases stay
 outside Git. A funding update is complete only after website and Mini Program
 release receipts match; GitHub Pages success alone is not public publication.
