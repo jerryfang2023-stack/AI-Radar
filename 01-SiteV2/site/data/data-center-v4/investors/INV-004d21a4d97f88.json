@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-01-14",
-    "latest_disclosed_at": "2026-01-14",
+    "latest_disclosed_at": "2026-06-03",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "pre_seed",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-57cbf9481b8ad9b7",
+        "canonical_entity_id": "",
+        "name": "ProLearn"
+      },
       {
         "entity_id": "EN-185ea241778d39c7",
         "canonical_entity_id": "",
@@ -85,6 +92,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-891e83fb6f29f49c",
+        "funding_insight_id": "FI-3f12c272c41b3506",
+        "event_ids": [
+          "EV-4de1d2ff326a90a4"
+        ],
+        "company_entity_id": "EN-57cbf9481b8ad9b7",
+        "company_canonical_entity_id": "",
+        "company_name": "ProLearn",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "INR 30 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿印度卢比"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4b309c6cf2daefde",
+            "source_url": "https://businessnewsthisweek.com/education/prolearn-secures-inr-30-crore-pre-seed-round-led-by-beenext/",
+            "source_title": "ProLearn 获得由 BEENEXT 领投的 INR 30 Crore 种子前轮融资",
+            "source_content_hash": "64129bf9720f7a50dc2f875d1fcfd969db4b1bc2c93901729c38bdfc51a55c85",
+            "quote": "raised INR 30 crore in a Pre-Seed funding round led by BEENEXT, with participation from Eximius Ventures, Antler, and several notable founders and operators as angel investors",
+            "quote_hash": "97bd7954dc0febba51afa9e4251eb4f088c74829d74ef2025c7aabc6f8ea5f21"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f7494f25e56efd7e",
         "funding_insight_id": "FI-ae8031b7eb15f5c7",
@@ -128,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-4b309c6cf2daefde",
+        "source_url": "https://businessnewsthisweek.com/education/prolearn-secures-inr-30-crore-pre-seed-round-led-by-beenext/",
+        "source_title": "ProLearn 获得由 BEENEXT 领投的 INR 30 Crore 种子前轮融资",
+        "source_content_hash": "64129bf9720f7a50dc2f875d1fcfd969db4b1bc2c93901729c38bdfc51a55c85",
+        "quote": "raised INR 30 crore in a Pre-Seed funding round led by BEENEXT, with participation from Eximius Ventures, Antler, and several notable founders and operators as angel investors",
+        "quote_hash": "97bd7954dc0febba51afa9e4251eb4f088c74829d74ef2025c7aabc6f8ea5f21"
+      },
+      {
         "source_id": "FISRC-b3973965c733b20b",
         "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
         "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
@@ -141,10 +196,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BEENEXT 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "BEENEXT 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：ProLearn · 预种子轮 · 2026-06-03 · 本轮领投 · INR 30 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4b309c6cf2daefde"
+        },
         {
           "description": "融资来源记录：Quadric · C轮 · 2026-01-14 · 本轮参投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b3973965c733b20b"
@@ -152,6 +211,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-4b309c6cf2daefde",
+          "source_url": "https://businessnewsthisweek.com/education/prolearn-secures-inr-30-crore-pre-seed-round-led-by-beenext/",
+          "source_title": "ProLearn 获得由 BEENEXT 领投的 INR 30 Crore 种子前轮融资",
+          "source_content_hash": "64129bf9720f7a50dc2f875d1fcfd969db4b1bc2c93901729c38bdfc51a55c85",
+          "quote": "raised INR 30 crore in a Pre-Seed funding round led by BEENEXT, with participation from Eximius Ventures, Antler, and several notable founders and operators as angel investors",
+          "quote_hash": "97bd7954dc0febba51afa9e4251eb4f088c74829d74ef2025c7aabc6f8ea5f21"
+        },
         {
           "source_id": "FISRC-b3973965c733b20b",
           "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",

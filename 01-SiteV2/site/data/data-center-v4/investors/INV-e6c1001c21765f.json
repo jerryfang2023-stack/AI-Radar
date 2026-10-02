@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 6,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
@@ -73,6 +73,7 @@
     "latest_disclosed_at": "2026-08-25",
     "role_counts": {
       "co_lead": 2,
+      "historical_or_ambiguous": 1,
       "participant": 4
     },
     "round_codes": [
@@ -354,6 +355,38 @@
             "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
           }
         ]
+      },
+      {
+        "activity_id": "IA-db99bff107fae90b",
+        "funding_insight_id": "FI-d956a9d29808b6fa",
+        "event_ids": [
+          "EV-848d81fb5ed7b3cd"
+        ],
+        "company_entity_id": "EN-22389189b08cb05c",
+        "company_canonical_entity_id": "",
+        "company_name": "Ayar Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有战略投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b6c7c4ae002a992",
+            "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+            "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+            "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+            "quote": "and existing strategic investors, AMD Ventures, and NVIDIA",
+            "quote_hash": "0b724462bac913eb56dd778f7de617c4cfee0fdb67a69679155b0765001d1c7c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -404,6 +437,14 @@
         "source_content_hash": "415a2b10b75139c0",
         "quote": "has secured $20 million in Series A funding co-led by AMD Ventures and Airbus Ventures",
         "quote_hash": "61042ef1b031096ded1062a4e4013c5d79cc58a7c7c2e785b6f73637995ba297"
+      },
+      {
+        "source_id": "FISRC-5b6c7c4ae002a992",
+        "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+        "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+        "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+        "quote": "and existing strategic investors, AMD Ventures, and NVIDIA",
+        "quote_hash": "0b724462bac913eb56dd778f7de617c4cfee0fdb67a69679155b0765001d1c7c"
       }
     ],
     "public_profile": {

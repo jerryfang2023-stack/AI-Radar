@@ -1,6 +1,6 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-02T05:46:49.369Z",
+  "generated_at": "2026-10-02T09:14:33.839Z",
   "data_date": "2026-10-02",
   "prompt_version": "model-assist-2026-07-18.2",
   "source_count": 507,
@@ -34703,6 +34703,1349 @@
         "reviewer": "Codex:summary22 financing original review",
         "reviewed_at": "2026-10-02T05:46:49.365Z",
         "note": "采用更正后的公司公告：1亿美元为本轮融资，4.3亿美元为累计，17亿美元为估值。AI用于真实有人驾驶校车的路线、调度和运营协调，非机器人本体。 人工复核原文融资段落，剔除推荐新闻与历史轮次干扰；未披露额与多轮合并披露按原文明确区分。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-467e1940dd11bb5c",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-77c43c5fffa1ac44",
+      "raw_id": "RAW-0e2e66d59af07b47",
+      "source_ref": "SA-77c43c5fffa1ac44",
+      "source_hash": "b791ad4a2cb69b4a",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "OLIX",
+            "object": "raised $220 million financing; round undisclosed",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 73,
+          "end": 973,
+          "quote": "London – February 11, 2026 – Cooley advised OLIX, a UK semiconductor startup, on its latest $220 million financing round.\nLondon-based Hummingbird Ventures led the funding round, valuing the startup at just more than $1 billion.\nLawyers Ali Ramadan, Ella Donegan, Charles Baker, Mo Swart and Maddie Drabble led the Cooley team advising OLIX.\n About Cooley LLP\nClients partner with Cooley on transformative deals, complex IP and regulatory matters, and high-stakes litigation.\nCooley has nearly 1,400 lawyers across 19 offices in the United States, Asia and Europe, and a total workforce of more than 3,000 people.\n Armadin Raises $255.5 Million Series B\n Press Release\n October 1, 2026\n Varda Announces $251 Million Series D\n Press Release\n September 30, 2026\n Efficient Computer Announces $97 Million Series B\n Press Release\n September 29, 2026\n Crusoe Raises $3.9 Billion Series F\n Press Release\n S"
+        }
+      ],
+      "generated_at": "2026-10-02T09:03:42.042Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:03:42.042Z",
+        "note": "律师事务所交易公告确认金额、领投、日期；该原文未写Series A，不强填。8月3日3.12亿美元B轮已在目录，不重复新增。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-c7dbc17735001875",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-da8cf6f8f14c208a",
+      "raw_id": "RAW-a474bc95f49b746e",
+      "source_ref": "SA-da8cf6f8f14c208a",
+      "source_hash": "e81a29413c6b6609",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "OLIX",
+            "object": "raised $220 million financing; round undisclosed",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 211,
+          "end": 1111,
+          "quote": "UK-based chip startup Olix has raised $220 million for the development of AI chips that the company claims will be faster and cheaper than Nvidia’s.\nAccording to a report from the FT , the startup, which was founded in 2024 by James Dacombe, has been valued at $1 billion following a funding round led by Hummingbird Ventures. The company has previously attracted investment from Plural, Vertex Ventures, LocalGlobe, and Entrepreneurs First.\nImage: UK chips\n– Getty Images\nInstead of challenging Nvidia’s current iteration of hardware, Olix is developing an optical digital processor with a “novel memory and interconnect architecture” that is compatible with existing AI models and can support inferencing workloads.\nOn its website, the company claims that existing semiconductors are unable to serve current user demands and, consequently, Olix is “building a new class of accelerator designed to a"
+        }
+      ],
+      "generated_at": "2026-10-02T09:11:46.424Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:11:46.424Z",
+        "note": "律师事务所交易公告确认金额、领投、日期；该原文未写Series A，不强填。8月3日3.12亿美元B轮已在目录，不重复新增。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-62c0b5859b60dfe2",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-5be983c5d7cfdcd9",
+      "raw_id": "RAW-328182770e5ff7f7",
+      "source_ref": "SA-5be983c5d7cfdcd9",
+      "source_hash": "26f3b6c777913b5c",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "九川智能",
+            "object": "完成近亿元人民币A轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 696,
+          "quote": "近日，辖区企业合肥九川智能装备有限公司（以下简称“九川智能”）完成近亿元A轮融资。本轮融资由光大控股领投，正菱创投参股子基金跟投，资金将重点用于加速高阶电测飞针设备量产落地与市场推广，并持续加大在AI视觉检测、第三代成像系统等核心技术领域的研发投入。此前，高新区国资平台合肥高投已在天使轮阶段以1500万元资金予以支持，以金融活水赋能企业早期发展。\n九川智能研发生产基地\n 九川智能深耕PCB及泛半导体领域高端检测设备的研发、制造与销售。企业首创AVI与AI深度交互机器视觉检测平台，在行业内率先实现IR光测试、孔壁检测及AI系统内置等核心功能。在高阶电测飞针设备这一关键领域，企业坚持自主创新，推动PCB、IC载板核心检测设备国产化替代，有效补齐国内高端半导体检测领域技术短板。\n 企业的稳步发展，离不开区域的精准服务与耐心陪伴。在九川智能发展过程中，高新区持续提供了涵盖资源对接、政策辅导等多元化投后赋能，助力企业在泛半导体高端检测设备领域稳步前行。\n 近年来，高新区紧扣高端装备制造业发展需求，打好“资金+载体+政策”组合拳，构建起“天使-VC-PE-Pre-IPO”全生命周期基金体系。通过“贷投联动”、搭建银企对接平台、提供定制化金融产品等举措，有效缓解轻资产科技企业融资难题。同时，叠加人才引进、研发补贴等保障，形成全方位、立体化的服务护航体系。\n 下一步，高新区将继续深化金融赋能，持续做大做强基金集群，做精做细投后服务，推动更多科创企业从实验室走向生产线，为区域高端装备制造业高质量发展提供坚实支撑。\n【此文系转载，来源于高新控股集团、合肥高投，版权归属原作者】实习编辑：陈慧"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:32.801Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:32.802Z",
+        "note": "金额保留“近亿元”，不改成精确1亿元；8月3日未得到原文支持，按8月19日披露。工业AI检测设备不强塞消费硬件；产品形态需现行分类维护者确认。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-49c9522e4e7c5a6b",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-2717a8931e1dfc3a",
+      "raw_id": "RAW-8180426a163eeeb3",
+      "source_ref": "SA-2717a8931e1dfc3a",
+      "source_hash": "64f6b1e9b23aafdc",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "清程极智",
+            "object": "完成数亿元人民币A++轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 351,
+          "end": 1251,
+          "quote": "证券之星消息，根据天眼查APP于8月14日公布的信息整理，北京清程极智科技有限公司A++轮融资，融资额数亿人民币，参与投资的机构包括中国电信投资，瀚晖资本，商汤科技，直真科技，华胜天成，建信北京投资，领阳基金。\n清程极智成立于2023年12月，公司致力于构建高效的 AI 系统软件，赋能国产算力，支撑大模型行业发展。清程极智公司拥有完全掌握从底层编译器到上层并行加速相关技术的全栈研发团队，在支持国产智能算力的系统软件方面具备多项核心能力，涵盖并行系统、计算框架、通信库、算子库、AI编译器、编程语言、调度系统、存储系统、内存管理、容错系统等关键技术领域，可实现高效的模型端到端训练和推理服务，并提供极致的性能优化能力。针对国产人工智能芯片种类多，效率低的问题，公司自研了可为多种芯片生成高效代码的智能编译器，以充分利用各类国产智算芯片，实现代码可移植和性能可移植，消除用户的迁移成本，降低人工智能在各领域落地部署的门槛。\n数据来源：天眼查APP\n以上内容为证券之星据公开信息整理，仅供参考不构成投资建议。\n 广告\n 相关股票：\n 直真科技\n 中国电信\n 华胜天成\n 中国电信\n 好投资评级：\n好价格评级：\n证券之星估值分析提示直真科技行业内竞争力的护城河一般，盈利能力一般，营收成长性一般，综合基本面各维度看，估值偏高。 更多>>\n 好投资评级：\n好价格评级：\n证券之星估值分析提示中国电信行业内竞争力的护城河优秀，盈利能力良好，营收成长性良好，综合基本面各维度看，估值偏低。 更多>>\n 好投资评级：\n好价格评级：\n证券之星估值分析提示华胜天成行业内竞争力的护城河良好，盈利能力较差，营收成长性较差，综合基本面各维度看，估值偏高。 更多>>\n 好投资评级：\n好价格评级：\n证券之星估值分析提示中国电信行业内竞争力的护城河优秀，盈利能力一般，营收成长性良好，综合基本面各维度看，估值合理。 更多>>\n 精彩推荐\n 1\n 杭州银行：以普惠金融活水润泽实体经...\n 2\n 一图看懂 | HBM涨价预期大幅上...\n 3\n 数据显微镜｜HBM涨价预期大幅上调...\n 4\n 散热“补课”开启：AI眼镜的"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:32.860Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:32.860Z",
+        "note": "证券之星8月19日引用8月14日天眼查披露；不是公司宣布8月14日交割。2025年7月14日融资不能作为本轮原文。 对外日期采用可核验的证券之星8月19日文章披露日；8月14日仅为文章转述的数据库日期。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-c2fb970a5f299cde",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-6d6d43cac9e299b6",
+      "raw_id": "RAW-ba0a43c2138562f9",
+      "source_ref": "SA-6d6d43cac9e299b6",
+      "source_hash": "d650a72627b8e15b",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "明视脑机",
+            "object": "完成天使轮、天使+轮、天使++轮系列融资，合计1.5亿元人民币",
+            "evidence_index": 0,
+            "amount_scope": "combined_rounds"
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 13,
+          "end": 913,
+          "quote": "脑机接口头部企业明视脑机已连续完成天使轮、天使+轮、天使++轮系列融资，累计融资金额达1.5亿元。作为国内首家完成人体验证的视觉重建脑机接口公司，明视脑机创立仅一年半就创造了多项全球首例的进展，进入全球视觉重建脑机接口的第一梯队。\n随着本次融资完成，明视脑机形成了多元化资本背景的股东圈，覆盖了顶级资本、产业背景资本、国有背景资本以及战投背景资本，包括中科创星、领屹投资、海贝创投、华方资本、德联资本、弘晖基金、恒旭资本、鼎兴量子、伴飞孵化等。\n其中，华方资本有着华立集团背景。华立集团是中国民营企业500强，旗下控股多家医药、科技类上市和非上市公司；德联资本掌管有德联博健脑科学基金，身后有着三博脑科医院、上海未来产业基金等背景；弘晖基金曾投资蓝生脑科医院、冬雷脑科医院等优质脑科医院。\n具体而言，系列融资中天使轮的领投方是中科创星，天使+轮的联合领投方是华方资本、德联资本、弘晖基金，天使++轮包括德联资本、弘晖基金、恒旭资本、鼎兴量子、领屹投资等都有进一步加注投资。基本所有基金股东每轮融资都有积极推进跟投，其中，领屹投资更是从天使轮开始每一轮都有加注。不同于市场上很多公司一般通过独家FA财务顾问进行撮合，明视脑机完成融资的过程也很独特，基本都是基金机构通过对脑机接口产业深度的分析和市场调研后，直接锁定公司再对接完成投资。\n据明视脑机透露，本次融资资金将主要用于推动视觉重建脑机接口技术向可临床验证的产品阶段快速迈进，为开展注册临床打下坚实的技术与临床数据基础，进一步巩固明视脑机在视觉重建领域的领军地位。\n在“十五五”规划中，脑机接口被列为未来六大重点产业之一。而随着今年3月我国首款侵入式脑机接口医疗器械获批上市，当前脑机接口领域正从创新前沿技术探索进一步迈入临床价值验证的关键阶段。随着政策利好、资本加持、技术落地，行业有望迎来全新发展。\n作为一家由海外顶尖脑机接口实验室博士团队归国创立的硬科技企业，明视脑机自成立之初便选择了一条极具挑战的细分赛道——主攻“视觉重建脑机接口”。类似人工耳蜗是重建听觉，视觉重建是通过植入式脑机接口技术，为视神经完全损伤、传统医学无法治愈的全盲患者，"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.022Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.022Z",
+        "note": "1.5亿元是三轮合计披露，不生成三张各1.5亿元的卡片；医疗设备产品形态仍需确认。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-4ceeba50bc8d38ba",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-59888aa0354c911e",
+      "raw_id": "RAW-8403136b989677b4",
+      "source_ref": "SA-59888aa0354c911e",
+      "source_hash": "3777424f08f689b1",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "明视脑机",
+            "object": "完成Pre-A轮融资，金额未披露",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 29,
+          "end": 834,
+          "quote": "脑机接口社区独家获悉，视觉重建领域的领军企业明视脑机近期再度完成Pre-A轮融资。此前，明视脑机已完成1.5亿元的天使轮系列融资；据悉，公司Pre-A轮系列融资总额预计将达到3.5亿元。随着相关融资完成，明视脑机天使轮与Pre-A轮两个阶段的融资总额预计将达到5亿元。目前，本轮具体投资机构公司暂未对外披露。\n融资持续推进的同时，明视脑机在视觉皮层脑机接口临床转化方面也取得新的实验进展。近期，公司在视觉重建IIT实验中，继实现阿拉伯数字“7”的结构化视觉感知后，进一步完成了汉字“八”的结构化感知复现，推动了视觉编码技术从“单一符号”向“复杂结构化图文信息”的升维突破。\n围绕视觉重建这一核心方向，明视脑机正在持续积累人体“刺激参数—感知结果”配对数据，构建全球稀缺的“大脑高通量视觉重建模型数据库”，并用于完善视觉皮层拓扑图谱、结构功能预测及视觉重建模型。随着本次IIT人体验证的推进，明视脑机也成为中国唯一完成“形状+颜色+灰度+汉字写入+100%靶点命中”人体IIT验证的视皮层视觉重建公司，公司也正在加快从技术验证向临床转化和产品化阶段迈进。\n脑机接口社区是国内首家脑机接口(BCI)产业服务平台、国内脑机接口新媒体开创者与引领者。主要为企业、科研团队、投资机构和从业者提供以下服务：\n宣传报道：图文、短视频、直播形式报道企业动态、技术解读、产品介绍等内容，提升曝光和行业影响力。\n资源对接：根据需求匹配资本、供应链、临床机构、渠道方等资源，完成真实对接，促进合作。\n成果转化：协助技术团队寻找产业方、投资人及落地场景，推动技术到产品的转化。\n活动策划执行：承接线上线下路演、沙龙、论坛等活动的策划与执行。\n其他定制需求：包括报告定制、市场调研、人才招聘支持等个性化服务。\n（备注：姓名-单位-合作）\n🌟星标置顶🌟\n不错过每一条脑机前沿进展\n一键三连「分享」、「点赞」和「在看」\n欢迎在评论区聊聊"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.054Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.054Z",
+        "note": "3.5亿元为预计Pre-A系列总额，5亿元为两个阶段预计累计，不计入已完成金额。本次可核实的是媒体报道已完成一笔Pre-A，单笔金额、投资方未披露。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-2dd52faeb288444e",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-d3c6af246ad4436e",
+      "raw_id": "RAW-7b3cfd364ceb9882",
+      "source_ref": "SA-d3c6af246ad4436e",
+      "source_hash": "09239a3cd7ca2ab0",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "曦望",
+            "object": "获得新一轮20亿元人民币融资，轮次未披露",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 88,
+          "end": 988,
+          "quote": "暗涌Waves独家获悉，曦望Sunrise近日再获新一轮20亿元融资，投后估值达到约200亿元。就在今年4月，曦望完成了由杭州资本领投的超10亿元融资，估值破百亿人民币。不到半年时间里，估值接近翻倍。\n 粗略计算，自2024年底从商汤科技分拆至今，曦望已累计融资接近60亿元。\n 针对上述消息，曦望方面回应称：暂不便做进一步评论。\n 曦望的独立时间不长，芯片团队却已经存在多年。2024年底，商汤推进“1+X”架构调整，将高投入、长周期的芯片业务拆分独立，由商汤联合创始人徐冰担任董事长，两位联席CEO王勇曾在AMD、昆仑芯担任核心架构师，2020年加入商汤负责芯片业务；王湛曾任百度副总裁。\n 拆分前，这支团队已量产过两款芯片：多模态视觉推理芯片S1、大模型推理GPU S2。在信奉“连续成功”的投资圈，这是重要加分项。\n 据知情方透露、结合工商变更信息等，2026年8月曦望的新一轮融资中，产业资本的名单继续扩大，包括正大集团、九安医疗、盈峰环境、同程旅行等。同时，人保股权、建信股权 “国家队”资金进场；Janchor Partners、中科创星、同创伟业等财务机构也参与投资。\n 为什么短短数月间，一家推理芯片公司的估值会接近翻倍？\n 站在2026年中节点来看，AI算力需求结构的改变已比较明朗。过去几年，AI算力消耗最多的时刻是在大模型训练阶段；而今，Agent批量进入生产环节，一次任务可能会发生几十次模型调用，24小时不间断的推理和token生产，成为算力消耗增长的重点。\n 特别是今年夏天，Kimi K3、MiniMax H3、DeepSeek-V4开源模型陆续发布，AI Coding、视频生成、办公的需求明显提速。这几类任务往往会产生大量长上下文、多轮调用和工具使用，调用规模越大、用户对产生的成本越敏感。\n 这也是今年“Token经济学”被反复讨论的原因。当推理成为一门好生意，一颗芯片能够稳定生成多少Token，每个Token要消耗多少电、多少钱，能否稳定供应，是采购方必然考虑的真实账本。\n 曦望2026年1月发布的推理芯片S3，尝试在推理效率、成本、供应确定性等方面提前卡"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.097Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.097Z",
+        "note": "36氪独家报道；公司回应暂不便进一步评论，不能写成公司公告。与4月20日超10亿元属于不同披露。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-ff8ecd3f63368367",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-06454c4b30c1e54d",
+      "raw_id": "RAW-7c6db7d893a559f1",
+      "source_ref": "SA-06454c4b30c1e54d",
+      "source_hash": "eb71f20ce696ad99",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "ChipAgents",
+            "object": "closed $50 million Series A1 funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 225,
+          "end": 1125,
+          "quote": "SANTA CLARA, Calif.--(BUSINESS WIRE )--ChipAgents, the category leader for Agentic AI platforms in the semiconductor design industry, announced it has closed an oversubscribed $50 million Series A1 funding round, bringing total capital raised to $74 million. The round was led by Matter Venture Partners, a TSMC-backed HardTech VC firm, with participation from existing investors Bessemer Venture Partners, Micron, MediaTek, and Ericsson.\nAs part of the investment, Wen Hsieh, Founding Managing Partner of Matter VP, will join ChipAgents' Board of Directors, bringing over two decades of expertise and relationships in semiconductor design and manufacturing.\nBuilding the AI Workforce for Chip Design Companies\nThis new capital will enable ChipAgents to aggressively scale its Agentic AI platform, expand its engineering and research organization, and accelerate global deployment of multi-agent chip"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.155Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.156Z",
+        "note": "7400万美元是累计数字，单笔新增5000万美元；企业专用于半导体工程，不按综述位置归教育。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-1fc07169b41cb227",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-0d06050c5f1691e2",
+      "raw_id": "RAW-a75b321983fba1f3",
+      "source_ref": "SA-0d06050c5f1691e2",
+      "source_hash": "c4c1856ea78e7070",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "ChipAgents",
+            "object": "closed $60 million Series A2 funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1142,
+          "end": 2042,
+          "quote": "SANTA CLARA, Calif.--(BUSINESS WIRE )--ChipAgents , the category leader in agentic AI platforms for semiconductor design, announced an additional $60 million in Series A2 financing, bringing the expanded round to $134 million just six months after its initial Series A close.\nThe financing reflects continued investor confidence in the company’s commercial momentum, with new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.\n> “We’re enabling the industry to move beyond AI assistants toward autonomous agents that can execute meaningful engineering work.\" - William Wang, CEO and Founder, ChipAgents\n>\n> Share\nThis financing follows a strong first half of 2026, during which ChipAgents saw 6x growth in ARR and deployed to more than 120 semiconductor companies including MediaTek and Micron. Today, the company has established one"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.217Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.218Z",
+        "note": "1.34亿美元为扩展后的累计数字，本笔新增6000万美元。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-358bf59795de7e27",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-e82715615e8c7e1d",
+      "raw_id": "RAW-ff55796997990cc2",
+      "source_ref": "SA-e82715615e8c7e1d",
+      "source_hash": "38efe6ca7478e0c0",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Claros",
+            "object": "raised $30 million seed funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 858,
+          "end": 1758,
+          "quote": "As I write this, I’m surrounded by moving boxes that will soon be headed for a lab much larger than the one we currently occupy. This move follows our oversubscribed $30 million seed round co-led by General Catalyst and Red Cell Partners, with participation from new and existing investors like Systemiq Capital, Aero X Ventures, Trenches Capital, a leading power semiconductor provider, and others.\n Turning Wasted Megawatts into Tokens\n U.S. data centers now consume as much electricity as some countries, and global demand is set to double in four years. But there’s only so much power the grid can deliver, and data centers are already pushing up against that limit.\nSince the ChatGPT boom, market demand has been met through more power generation, more grid capacity, more megawatts. In fact, U.S. utilities are on track to invest more than $1 trillion in the next two years to keep up. While th"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.291Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.291Z",
+        "note": "公司创始人原文确认。是数据中心供电公司claros.tech，不是同名水处理企业Claros Technologies。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-72fb1e4b04294979",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-d266adc305f8a927",
+      "raw_id": "RAW-3c50c89dd92436d8",
+      "source_ref": "SA-d266adc305f8a927",
+      "source_hash": "231dd0b5747407fa",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Ayar Labs",
+            "object": "closed $500 million Series E funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1477,
+          "end": 2377,
+          "quote": "SAN JOSE, Calif. — March 3, 2026 — Ayar Labs , the leader in co-packaged optics (CPO) solutions for AI scale-up, announced the closing of $500 million in Series E funding led by Neuberger Berman. The company will use the funds to scale high-volume production and test capacity to accelerate the deployment of its CPO solution. This brings the company’s total funding to $870 million and raises the company’s valuation to $3.75 billion.\n> “AI infrastructure is hitting a power wall driven by interconnect inefficiency. As bandwidth demands explode, copper becomes the bottleneck — consuming too much power and limiting AI throughput per watt and per dollar,” said Mark Wade, CEO and co-founder of Ayar Labs. “Co-packaged optics overcomes these barriers, enabling thousands of GPUs to operate as a unified system. This funding fuels our ability to meet the demands of hyperscale AI.”\nThe round aligns p"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.353Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.353Z",
+        "note": "官网原文经web open读取；本机直接抓取403已保留，不能宣称保存了完整HTML。8.7亿美元是累计，37.5亿美元是估值。9月另有扩展融资线索，未在本事件金额中混算。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-eb135087050da5cd",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-56da4a37542fc8d3",
+      "raw_id": "RAW-b1c7a1d09c1bfad7",
+      "source_ref": "SA-56da4a37542fc8d3",
+      "source_hash": "3017084b12ef7fa4",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "OLIX",
+            "object": "raised $220 million financing; round undisclosed",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 118,
+          "end": 1018,
+          "quote": "OLIX Computing Ltd., a startup developing an artificial intelligence chip with integrated optical components, has raised $220 million in funding.\nThe Financial Times reported today that the investment was led by Belgian venture capital firm Hummingbird Ventures. The deal values U.K.-based OLIX Computing at over $1 billion. The company previously raised an undisclosed amount of funding from Plural, Vertex Ventures, LocalGlobe and Entrepreneurs First.\nOLIX’s chip is optimized for inference, the task of running AI models in production after training is complete. It’s unclear what optical components are included in the processor or how they’re used. However, a blog post on the company’s website states that its chip features a “novel memory and interconnect architecture.” That suggests OLIX is using the photonic components to power an interconnect, the part of a processor responsible for movi"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.407Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.407Z",
+        "note": "律师事务所交易公告确认金额、领投、日期；该原文未写Series A，不强填。8月3日3.12亿美元B轮已在目录，不重复新增。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-33a3c983708ec9dd",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-cc2ce7c3480698dd",
+      "raw_id": "RAW-c9523db52b984de0",
+      "source_ref": "SA-cc2ce7c3480698dd",
+      "source_hash": "537902652194c212",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Xscape Photonics",
+            "object": "raised $37 million Series A extension financing",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 323,
+          "end": 1223,
+          "quote": "SANTA CLARA, Calif., March 11, 2026-- Xscape Photonics (“the Company”), a semiconductor startup developing photonic solutions for next-generation AI data center fabrics, today announced $37 million in additional funding, bringing the company’s total Series A funding to $81 million. The latest funding was led by Addition, a new investor, with continued support from existing investors, including IAG Capital Partners and NVIDIA, among others.\n The new investment builds on the company's $44 million Series A round announced in 2024. Xscape Photonics also announced the launch of FalconX: the industry’s first fully redundant External Laser Small Form-factor Pluggable (ELSFP) device capable of emitting up to eight wavelengths or colors of light for ultra-fast, high-capacity and low-power optical data transmission.\n “Rapidly increasing bandwidth, power and cost demands of AI workloads have create"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.448Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.448Z",
+        "note": "本笔3700万美元；Series A累计8100万美元、公司历次累计近9500万美元分别保留。旧模糊匹配Photon为不同企业，已排除误去重。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-7a38ac3fe6240f00",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-017895f0f882568f",
+      "raw_id": "RAW-390b4d7aa39775d8",
+      "source_ref": "SA-017895f0f882568f",
+      "source_hash": "e080ac75daa6077e",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "南粟科技",
+            "object": "完成数千万元人民币Pre-B轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 900,
+          "quote": "投资界（ID：pedaily2012）6月23日消息，深耕神经康复数字疗法多年的杭州南粟科技有限公司（下称“南粟科技”）已完成数千万元Pre-B轮融资。本轮融资由梅花创投领投，江西金控集团跟投。融资所获资金将主要用于“时间靶点”闭环脑机接口技术平台的研发，数电（数字疗法－电调控）联合治疗产品的临床验证、注册申报和产业化落地，以及进一步完善产业生态和服务网络。\n所谓“时间靶点”，是进一步追问“在动态神经活动的哪个毫秒级时间窗口刺激，以及以怎样的时间序列刺激”。前者对应最 佳的刺激时间节点，后者对应随神经活动动态变化的最 佳刺激序列。在“空间靶点”之外引入“时间靶点”，有望让神经调控从“盲刺模式”走向“精准制导”，形成体系化的神经编码策略。\n而传统神经调控长期更关注刺激的位置，即“空间靶点”，却难以匹配动态神经活动中的最 佳刺激时机和刺激序列。\n南粟科技正在致力于使基于“空间靶点+时间靶点+脑状态”的精准调控成为可能。\n数字疗法+脑机接口的融合，是神经康复迈向精准医疗趋势下的必然。“数字疗法+脑机接口”在构建一条新的闭环治疗链路：以数字疗法的任务刺激精准诱发神经活动，以脑电采集感知脑状态，以电刺激等神经调控手段在正确的时间以正确的刺激序列介入，再通过数据反馈持续迭代调控策略。它有机会推动神经精神康复从黑箱式干预，走向可感知、可量化、可解释的新范式。\n数据方面，南粟科技的小南听说系列产品已覆盖全国1300多家医院及康复中心，累计服务超过5万名神经发育障碍儿童，沉淀了百万小时训练与疗效数据。这些真实世界数据，构成了公司向闭环脑机接口延伸的重要基础。\n技术方面，据了解，南粟科技创始团队具备多年人工耳蜗等神经电刺激产品产业化经验，在动态神经编码策略等核心技术上有长期的创新与实践经验。这使其并非从数字疗法单点跨界，而是在数字康复和神经电刺激两条技术脉络上同时具备根基。\n南粟科技创始人王宁远强调，过去神经调控往往更重视刺激的位置是否准确，但刺激的时机同样关键。以语言康复为例，患者从听到声音、识别语音、提取语义到形成反应，每一步都对应不同的神经加工阶段。刺激发生在不同时间窗会带来不同的干"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.499Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.499Z",
+        "note": "展商自身产品页确认AI语言康复产品，不仅依据“智能”字样。医疗软硬件组合的辅助产品形态待确认。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-0f2b3a894e0b8a7f",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-892c0442767bb09a",
+      "raw_id": "RAW-b6e47f4ab73b8a88",
+      "source_ref": "SA-892c0442767bb09a",
+      "source_hash": "107680611c422462",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "智象未来",
+            "object": "获得亿级人民币B+轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 119,
+          "end": 575,
+          "quote": "5月20日，天眼查融资历程显示，智象未来（合肥）信息技术有限公司近日获得“B+轮”融资，涉及融资金额亿级人民币，投资机构为深创投，金浦投资，湖南财鑫集团，复聚投资。\n资料显示，智象未来（合肥）信息技术有限公司法定代表人为王科，成立于2023年，位于合肥市，是一家以从事软件和信息技术服务业为主的企业。企业注册资本161.0064万人民币，并已于2026年完成了B+轮，交易金额亿级人民币。\n通过天眼查大数据分析，智象未来（合肥）信息技术有限公司共对外投资了6家企业，知识产权方面有商标信息157条，专利信息8条，此外企业还拥有行政许可2个。\n天眼查信息显示，智象未来（合肥）信息技术有限公司的股东为：梅涛、上海智象灿灵人工智能科技合伙企业（有限合伙）、上海智象光炎科技合伙企业（有限合伙）、合肥国耀创智创业投资合伙企业（有限合伙）、上海智象际元信息咨询合伙企业（有限合伙）。\n来源：市场资讯返回搜狐，查看更多\n 阅读 ()\n 平台声明\n 该文观点仅代表作者本人，搜狐号系信息发布平台，搜狐仅提供信息存储空间服务。"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.530Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.530Z",
+        "note": "融资数据库披露由金融界报道；原综述的B轮、近1亿元应改为B+轮、亿级。4月融资是不同事件且已有卡片，不能再次新增。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-50df62801b11ff56",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-ccde244e0f60ed26",
+      "raw_id": "RAW-9e8c18c370e86952",
+      "source_ref": "SA-ccde244e0f60ed26",
+      "source_hash": "64129bf9720f7a50",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "ProLearn",
+            "object": "raised INR 30 crore Pre-Seed funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 900,
+          "quote": "Bengaluru, June 3 : ProLearn, an AI-native learning platform building a real-time interactive learning companion for India’s K-12 and competitive exam students, today announced that it has raised INR 30 crore in a Pre-Seed funding round led by BEENEXT, with participation from Eximius Ventures, Antler, and several notable founders and operators as angel investors.\nThe funds will be used to accelerate product and engineering development, strengthen the company’s underlying AI and reasoning infrastructure, expand curriculum-aligned content, hire senior talent across AI/ML, product, and growth, and scale go-to-market efforts ahead of the company’s public launch.\nFounded in April 2026 by Ravneet Singh, a former Vedantu technology leader, ProLearn is rethinking online learning around one core idea: students learn better when learning feels interactive, personal, and adaptive in real time. The "
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.582Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.582Z",
+        "note": "保留公司新闻稿披露日6月3日；另有6月2日报道，同一笔不新增。30 crore=3亿卢比，不能录成30亿；不以美元换算替代原币金额。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-fa8a9a6b15ccea25",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-62759134a956c6a9",
+      "raw_id": "RAW-c395758e5b9f6f36",
+      "source_ref": "SA-62759134a956c6a9",
+      "source_hash": "c9e923bd1711ca2e",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Vimi",
+            "object": "raised $12 million seed funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1231,
+          "end": 1341,
+          "quote": "Vimi, an AI tutoring platform for K-12 students, raised a $12 million seed round led by Viola Ventures and BRM"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.612Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.612Z",
+        "note": "融资事实来自Axios原文公开预览（非搜索摘要），正文收费部分没有获取。发布器不得标为完整HTML归档；先做证据门禁适配。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-c55d87a161e30342",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-31f675b71ffa1ad1",
+      "raw_id": "RAW-8672c8d25a7e5241",
+      "source_ref": "SA-31f675b71ffa1ad1",
+      "source_hash": "0d3950d9d866a7a8",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "南京创析智能",
+            "object": "完成1000万元人民币天使轮融资",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 50,
+          "end": 256,
+          "quote": "创析智能是一家AI教育软件研发商，聚焦人工智能、数字科技、教育科技、大健康等高成长赛道，以“资本+资源+产业”三位一体的投后赋能模式，助力优质科创企业快速成长。近日，创析智能完成1000万元人民币天使轮融资，本轮融资由香港和洛恒盈产业科技集团有限公司独家战略投资。融资资金将全面用于AI教育产品研发迭代、核心技术攻坚、市场渠道拓展与团队建设，助力公司加快GeoYan AI智能答疑系统的商业化落地与全国市场布局。"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.637Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.637Z",
+        "note": "使用IT桔子官方账号3月24日披露，不使用综述表格的3月1日。产品商业化处于研发推进阶段，不写已实现客户收入。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-b1a6ed3df8a85455",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-72344d0615fba1b3",
+      "raw_id": "RAW-d2e1038ef470a013",
+      "source_ref": "SA-72344d0615fba1b3",
+      "source_hash": "5e46fe601ec9b824",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Third Space Learning",
+            "object": "secured £4.4 million investment; round undisclosed",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 143,
+          "end": 1043,
+          "quote": "Virtual online education platform, Third Space Learning (TSL), has secured a £4.4 million investment from the South West Investment Fund, managed by Maven, alongside Blackfinch Ventures and existing investors Foresight and Nesta.\nSwindon-based TSL delivers curriculum-aligned, online one-to-one maths tutoring to primary and secondary school students in the UK and US via its spoken AI tutor, Skye. Generating large scale evidence of high-impact AI tutoring efficacy, Skye has received validation from leading research institutions and policy bodies.\nTSL says there is an emerging shift toward AI powered tutoring driven by the personalised, adaptive learning that AI platforms can provide. As education systems face increasingly diverse learner needs, the company says AI tutors such as Skye can continuously adjust pace, difficulty and feedback based on individual performance.\nThe investment will "
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.671Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.671Z",
+        "note": "原Virtual Class是法定主体别名。投资方Maven公告4月29日、币种英镑，不能使用综述的5月5日和美元。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-f7554e3a255d05df",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-2b84a2823be00d13",
+      "raw_id": "RAW-e45b0fc97b3a8a3f",
+      "source_ref": "SA-2b84a2823be00d13",
+      "source_hash": "a4bc03ad3ff63c33",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Pool",
+            "object": "raised over $2 million pre-seed funding",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Pool",
+            "object": "raised over $2 million pre-seed funding",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 3806,
+          "end": 4206,
+          "quote": "The founders were in Lisbon when we chatted — no longer in a van! — but were headed to San Francisco in late May to meet with investors. The startup previously raised a pre-seed round of just over $2 million from General Catalyst, Kima Ventures, Paris-based Source Ventures, and other angels, including Winston Du, Julian Blessin, and Thomas Ricouard.\nPool is available now as a free download on iOS."
+        },
+        {
+          "start": 677,
+          "end": 1014,
+          "quote": "The app is one of many reinventing bookmarking in the AI era. Startups like mymind, Fabric, and Raindrop help users organize links, images, or other saved content, but Pool focuses specifically on screenshots and then uses AI to help users rediscover and act on things they intended to revisit later, similar to apps like Captr or Sorti."
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.721Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.721Z",
+        "note": "TechCrunch采访披露日6月11日，不等于当天交割；公司社交公告无可读绝对日期，不使用相对时间倒算。主业是AI截图搜索/整理，不是教育应用。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-20eec2ab1b76bfdc",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-a58ee12ffc86cac2",
+      "raw_id": "RAW-db79cff184537514",
+      "source_ref": "SA-a58ee12ffc86cac2",
+      "source_hash": "9e4d038c607d8625",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "VITURE",
+            "object": "closed $100 million financing; round undisclosed",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "VITURE",
+            "object": "closed $100 million financing; round undisclosed",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 192,
+          "end": 1092,
+          "quote": "February 26th, 2026 – Following its $100 million raise last September, VITURE has officially closed another $100 million financing round, bringing total capital raised within six months to over $200 million.\nThe latest round is led by Legend Capital, alongside a group of prominent strategic investors from the global technology ecosystem, including several prestigious investors from the previous round.\nThis new infusion of capital further strengthens investor confidence in VITURE’s leadership position within XR and AR hardware innovation, reinforcing strong momentum heading into 2026.\nA Breakout Year for XR.\n2025 marked a defining year for VITURE’s evolution from a fast-growing startup into a dominant player in the XR industry.\nIn the second half of the year alone, VITURE launched its third-generation lineup — the Luma Series, representing its first major step into true AR experiences wit"
+        },
+        {
+          "start": 2509,
+          "end": 2694,
+          "quote": "In October, VITURE announced a joint initiative with NVIDIA and Stanford Medicine, combining AR and AI technologies to streamline laboratory workflows and accelerate research processes."
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.764Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.764Z",
+        "note": "官网明确本轮1亿美元，半年累计超过2亿美元不可当本轮；官文未明确B+，不强填。现有AI内容转3D功能提供AI消费硬件依据。"
+      },
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
+      "candidate_id": "MAC-917e3792dce411d6",
+      "task_type": "qa_repair",
+      "asset_id": "FINANCING-P44-SA-bce6fecbaa822492",
+      "raw_id": "RAW-0f5b3c60a6bd3b2c",
+      "source_ref": "SA-bce6fecbaa822492",
+      "source_hash": "3921f1bcd1390a83",
+      "provider": "manual_review",
+      "model": "Codex",
+      "prompt_version": "financing-pending44-reviewed-facts-20261002",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "原文核验主体、融资完成状态、轮次与单轮金额，区分累计额、估值和预期融资。",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Mojo Vision",
+            "object": "secured $17.5 million strategic investment",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1514,
+          "end": 2414,
+          "quote": "Mojo Vision , the high-performance micro-LED platform company, today announced a $17.5 million strategic investment from Future Ventures, the venture capital firm co-founded and led by Steve Jurvetson. The investment follows Mojo Vision’s $75 million financing last August and will help accelerate the development and commercialization of its micro-LED platform for next-generation AI infrastructure.\nAs AI workloads continue to scale, data center interconnects are emerging as a critical bottleneck, with bandwidth density and power efficiency becoming increasingly limiting factors. Mojo Vision’s micro-LED technology is designed to enable a new class of optical I/O, delivering massively parallel connectivity with higher bandwidth density and lower energy per bit.\nThe investment also builds on Mojo Vision’s recently announced strategic collaboration with Marvell to develop next-generation, hig"
+        }
+      ],
+      "generated_at": "2026-10-02T09:14:33.832Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "Codex:pending44 original review",
+        "reviewed_at": "2026-10-02T09:14:33.832Z",
+        "note": "公司Business Wire新闻稿镜像3月25日；本笔用于AI数据中心光互连，不沿用AR显示标签。去年8月7500万美元不可当2026年新融资。"
       },
       "gate_results": [
         {

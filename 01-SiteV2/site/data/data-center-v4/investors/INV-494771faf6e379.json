@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -75,13 +75,19 @@
     "latest_disclosed_at": "2026-03-11",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_d",
+      "series_e",
       "series_h"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-22389189b08cb05c",
+        "canonical_entity_id": "",
+        "name": "Ayar Labs"
+      },
       {
         "entity_id": "EN-2f4436342c46decc",
         "canonical_entity_id": "",
@@ -131,6 +137,46 @@
             "source_content_hash": "c906371275e7a3ca",
             "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789, Y Combinator, Coatue, a16z, Craft, and Qatar Investment Authority.",
             "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5ad3f2b49ea0f412",
+        "funding_insight_id": "FI-d956a9d29808b6fa",
+        "event_ids": [
+          "EV-848d81fb5ed7b3cd"
+        ],
+        "company_entity_id": "EN-22389189b08cb05c",
+        "company_canonical_entity_id": "",
+        "company_name": "Ayar Labs",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-03-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b6c7c4ae002a992",
+            "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+            "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+            "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+            "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+            "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
           }
         ]
       },
@@ -250,6 +296,14 @@
         "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
       },
       {
+        "source_id": "FISRC-5b6c7c4ae002a992",
+        "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+        "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+        "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+        "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+        "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+      },
+      {
         "source_id": "FISRC-51b0427643bffd15",
         "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
         "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
@@ -302,12 +356,12 @@
           "source_id": "FISRC-00ed3d8fd701898b"
         },
         {
-          "description": "融资来源记录：Cerebras Systems · H轮 · 2026-02-03 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-51b0427643bffd15"
+          "description": "融资来源记录：Ayar Labs · E轮 · 2026-03-03 · 本轮参投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5b6c7c4ae002a992"
         },
         {
-          "description": "融资来源记录：Groq · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-28e142eb564f6762"
+          "description": "融资来源记录：Cerebras Systems · H轮 · 2026-02-03 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51b0427643bffd15"
         }
       ],
       "contacts": [
@@ -345,20 +399,20 @@
           "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
         },
         {
+          "source_id": "FISRC-5b6c7c4ae002a992",
+          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+          "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+          "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+          "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+          "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+        },
+        {
           "source_id": "FISRC-51b0427643bffd15",
           "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
           "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
           "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
           "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
           "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
-        },
-        {
-          "source_id": "FISRC-28e142eb564f6762",
-          "source_url": "https://www.verdict.co.uk/groq-obtains-750m-in-funding-ai-inference-technology/",
-          "source_title": "Groq obtains $750m in funding for AI inference technology",
-          "source_content_hash": "b6f5ca4d5c31cfb3",
-          "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
-          "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
         }
       ],
       "last_verified_at": "2026-09-26",

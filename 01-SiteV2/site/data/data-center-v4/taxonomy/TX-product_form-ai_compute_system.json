@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -70,6 +70,7 @@
       "EV-e9d06e8a06aa7318",
       "EV-dbbe3fd637be213f",
       "EV-44ec7c229995ca3c",
+      "EV-0319b53ac4d33276",
       "EV-ad6c755f7cf588c4",
       "EV-c3b67ac2dcd72881",
       "EV-ac069339ca20e4c6",
@@ -104,6 +105,7 @@
       "EN-4e4b333252f207fd",
       "EN-bbdefa2950f49882",
       "EN-cecdd8369134f75e",
+      "EN-5e32e49bd68c92c0",
       "EN-984a4161f72f4121",
       "EN-e1680f5d27ebecb8",
       "EN-c7fb6b39e587e345",
@@ -141,7 +143,7 @@
       "HW-fceac179a4df80f5",
       "HW-9a39a7f449362f96"
     ],
-    "firstSeen": "2026-05-08",
+    "firstSeen": "2026-03-11",
     "lastSeen": "2026-10-02"
   },
   "events": [
@@ -4523,6 +4525,94 @@
       "publisher": "投资界"
     },
     {
+      "id": "EV-0319b53ac4d33276",
+      "dataDate": "2026-10-02",
+      "date": "2026-03-11",
+      "updatedDate": "2026-03-11",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Xscape Photonics 宣布获得 3700 万美元新融资，推出用于 AI 数据中心网络的八波长激光器",
+      "originalTitle": "Xscape Photonics Announces $37 Million in New Funding, Launches Eight-Wavelength Laser for AI Data Center Netw",
+      "subject": "Xscape Photonics",
+      "action": "funding",
+      "object": "raised $37 million Series A extension financing",
+      "metrics": [
+        "$37 million",
+        "$81 million",
+        "$44 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "ai_compute_system",
+            "name": "AI 计算系统",
+            "entityIds": [
+              "EN-5e32e49bd68c92c0"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-5e32e49bd68c92c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "ai_compute_system",
+          "name": "AI 计算系统",
+          "entityIds": [
+            "EN-5e32e49bd68c92c0"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4e24b4c8c700c60f",
+        "EN-5e32e49bd68c92c0",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Santa Clara",
+        "Xscape Photonics",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.vcaonline.com/news/2026031104/xscape-photonics-announces-37-million-in-new-funding-launches-eight-wavelength-laser-for-ai-data-center-networks/",
+      "publisher": "www.vcaonline.com"
+    },
+    {
       "id": "EV-ad6c755f7cf588c4",
       "dataDate": "2026-09-16",
       "date": "2026-09-15",
@@ -7931,7 +8021,9 @@
         "EV-20e5d57a05b69a95",
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
+        "EV-0319b53ac4d33276",
         "EV-68d5a02e5213b43c",
+        "EV-8150d00d04b65ef4",
         "EV-2edec0302b3e0626",
         "EV-c503664bc5c24b10",
         "EV-ee9a4433b4e7715e",
@@ -8735,6 +8827,27 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-05-08",
       "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-5e32e49bd68c92c0",
+      "name": "Xscape Photonics",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-0319b53ac4d33276"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-ai_compute_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-03-11",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-984a4161f72f4121",
@@ -9901,6 +10014,111 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-8b9ef9650b200871",
+      "snapshotKey": "8b9ef9650b200871",
+      "snapshotId": "HWS-52de8e67f01679f7",
+      "eventId": "EV-cebdfb6bbc3dee38",
+      "eventIds": [
+        "EV-cebdfb6bbc3dee38",
+        "EV-0319b53ac4d33276"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Santa Clara",
+      "subject": "Santa Clara",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment",
+        "product"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "50",
+          "unit": "$million",
+          "fact_ref": "HWF-4c8cb5630c84604c"
+        },
+        "product": {
+          "metric_value": "37",
+          "unit": "$million",
+          "fact_ref": "HWF-2fe307bec5df7291"
+        }
+      },
+      "factCount": 2,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-4c8cb5630c84604c",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-02-17",
+          "subject_entity_id": "EN-4e24b4c8c700c60f",
+          "subject_name": "Santa Clara",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "50",
+          "unit": "$million",
+          "source_quote": "SANTA CLARA, Calif.--(BUSINESS WIRE )--ChipAgents, the category leader for Agentic AI platforms in the semiconductor design industry, announced it has closed an oversubscribed $50 million Series A1 funding round, bringing total capital raised to $74 million. The round was led by Matter Venture Partners, a TSMC-backed HardTech VC firm, with participation from existing investors Bessemer Venture Partners, Micron, MediaTek, and Ericsson.\nAs part of the investment, Wen Hsieh, Founding Managing Partner of Matter VP, will join ChipAgents' Board of Directors, bringing over two decades of expertise and relationships in semiconductor design and manufacturing.\nBuilding the AI Workforce for Chip Design Companies\nThis new capital will enable ChipAgents to aggressively scale its Agentic AI platform, expand its engineering and research organization, and accelerate global deployment of multi-agent chip",
+          "event_refs": [
+            "EV-cebdfb6bbc3dee38"
+          ],
+          "claim_ref": "CL-9923833334981084",
+          "source_refs": [
+            "SA-06454c4b30c1e54d"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-2fe307bec5df7291",
+          "fact_type": "product",
+          "observed_at": "2026-03-11",
+          "subject_entity_id": "EN-4e24b4c8c700c60f",
+          "subject_name": "Santa Clara",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "37",
+          "unit": "$million",
+          "source_quote": "SANTA CLARA, Calif., March 11, 2026-- Xscape Photonics (“the Company”), a semiconductor startup developing photonic solutions for next-generation AI data center fabrics, today announced $37 million in additional funding, bringing the company’s total Series A funding to $81 million. The latest funding was led by Addition, a new investor, with continued support from existing investors, including IAG Capital Partners and NVIDIA, among others.\n The new investment builds on the company's $44 million Series A round announced in 2024. Xscape Photonics also announced the launch of FalconX: the industry’s first fully redundant External Laser Small Form-factor Pluggable (ELSFP) device capable of emitting up to eight wavelengths or colors of light for ultra-fast, high-capacity and low-power optical data transmission.\n “Rapidly increasing bandwidth, power and cost demands of AI workloads have create",
+          "event_refs": [
+            "EV-0319b53ac4d33276"
+          ],
+          "claim_ref": "CL-065ef7d2be4d7933",
+          "source_refs": [
+            "SA-cc2ce7c3480698dd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-1b636bc7ad667158"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.businesswire.com/news/home/20260217568914/en/ChipAgents-Raises-%2474M-to-Scale-an-Agentic-AI-Platform-to-Accelerate-Chip-Design",
+      "entityIds": [
+        "EN-4e24b4c8c700c60f",
+        "EN-1b636bc7ad667158",
+        "EN-5e32e49bd68c92c0",
+        "EN-8d4321d936320802"
+      ]
+    },
     {
       "id": "HWC-a2c7435a695d0e0a",
       "snapshotKey": "a2c7435a695d0e0a",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-03-10",
+    "first_disclosed_at": "2026-02-17",
     "latest_disclosed_at": "2026-03-10",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_a1"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1b636bc7ad667158",
+        "canonical_entity_id": "",
+        "name": "ChipAgents"
+      },
       {
         "entity_id": "EN-1acda6c36aafa568",
         "canonical_entity_id": "",
@@ -124,6 +130,46 @@
             "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f73d89aab570b264",
+        "funding_insight_id": "FI-0f9cd85435fc58eb",
+        "event_ids": [
+          "EV-cebdfb6bbc3dee38"
+        ],
+        "company_entity_id": "EN-1b636bc7ad667158",
+        "company_canonical_entity_id": "",
+        "company_name": "ChipAgents",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-02-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b82705c0aaa6a5ee",
+            "source_url": "https://www.businesswire.com/news/home/20260217568914/en/ChipAgents-Raises-%2474M-to-Scale-an-Agentic-AI-Platform-to-Accelerate-Chip-Design",
+            "source_title": "ChipAgents 融资 7400 万美元，以扩展加速芯片设计的智能体 AI 平台",
+            "source_content_hash": "eb71f20ce696ad99870220afaf668b866948fd868b45034259d2e76e0c7feb33",
+            "quote": "The round was led by Matter Venture Partners, a TSMC-backed HardTech VC firm, with participation from existing investors Bessemer Venture Partners, Micron, MediaTek, and Ericsson.",
+            "quote_hash": "a8278de53198826272dc5c7045989ecb50ff2bdac47a68de9ac09adb8810b1c1"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +180,14 @@
         "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
         "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners",
         "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
+      },
+      {
+        "source_id": "FISRC-b82705c0aaa6a5ee",
+        "source_url": "https://www.businesswire.com/news/home/20260217568914/en/ChipAgents-Raises-%2474M-to-Scale-an-Agentic-AI-Platform-to-Accelerate-Chip-Design",
+        "source_title": "ChipAgents 融资 7400 万美元，以扩展加速芯片设计的智能体 AI 平台",
+        "source_content_hash": "eb71f20ce696ad99870220afaf668b866948fd868b45034259d2e76e0c7feb33",
+        "quote": "The round was led by Matter Venture Partners, a TSMC-backed HardTech VC firm, with participation from existing investors Bessemer Venture Partners, Micron, MediaTek, and Ericsson.",
+        "quote_hash": "a8278de53198826272dc5c7045989ecb50ff2bdac47a68de9ac09adb8810b1c1"
       }
     ],
     "public_profile": {
@@ -148,6 +202,10 @@
         {
           "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d4642fdc4a2457c"
+        },
+        {
+          "description": "融资来源记录：ChipAgents · A1轮 · 2026-02-17 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b82705c0aaa6a5ee"
         }
       ],
       "contacts": [],
@@ -159,6 +217,14 @@
           "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
           "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners",
           "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
+        },
+        {
+          "source_id": "FISRC-b82705c0aaa6a5ee",
+          "source_url": "https://www.businesswire.com/news/home/20260217568914/en/ChipAgents-Raises-%2474M-to-Scale-an-Agentic-AI-Platform-to-Accelerate-Chip-Design",
+          "source_title": "ChipAgents 融资 7400 万美元，以扩展加速芯片设计的智能体 AI 平台",
+          "source_content_hash": "eb71f20ce696ad99870220afaf668b866948fd868b45034259d2e76e0c7feb33",
+          "quote": "The round was led by Matter Venture Partners, a TSMC-backed HardTech VC firm, with participation from existing investors Bessemer Venture Partners, Micron, MediaTek, and Ericsson.",
+          "quote_hash": "a8278de53198826272dc5c7045989ecb50ff2bdac47a68de9ac09adb8810b1c1"
         }
       ],
       "last_verified_at": "2026-09-28"

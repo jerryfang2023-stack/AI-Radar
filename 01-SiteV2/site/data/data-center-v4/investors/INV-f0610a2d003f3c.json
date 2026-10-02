@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -74,7 +74,7 @@
     "latest_disclosed_at": "2026-09-29",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "pre_seed",
@@ -95,6 +95,11 @@
         "entity_id": "EN-835fb9db44937917",
         "canonical_entity_id": "",
         "name": "First Concepts"
+      },
+      {
+        "entity_id": "EN-57cbf9481b8ad9b7",
+        "canonical_entity_id": "",
+        "name": "ProLearn"
       }
     ],
     "activities": [
@@ -175,6 +180,46 @@
             "source_content_hash": "495ca48cb14fa6d7",
             "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund.",
             "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-16d5ed15afaa1df7",
+        "funding_insight_id": "FI-3f12c272c41b3506",
+        "event_ids": [
+          "EV-4de1d2ff326a90a4"
+        ],
+        "company_entity_id": "EN-57cbf9481b8ad9b7",
+        "company_canonical_entity_id": "",
+        "company_name": "ProLearn",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "INR 30 crore",
+        "amount_normalized": {
+          "currency": "INR",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿印度卢比"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4b309c6cf2daefde",
+            "source_url": "https://businessnewsthisweek.com/education/prolearn-secures-inr-30-crore-pre-seed-round-led-by-beenext/",
+            "source_title": "ProLearn 获得由 BEENEXT 领投的 INR 30 Crore 种子前轮融资",
+            "source_content_hash": "64129bf9720f7a50dc2f875d1fcfd969db4b1bc2c93901729c38bdfc51a55c85",
+            "quote": "raised INR 30 crore in a Pre-Seed funding round led by BEENEXT, with participation from Eximius Ventures, Antler, and several notable founders and operators as angel investors",
+            "quote_hash": "97bd7954dc0febba51afa9e4251eb4f088c74829d74ef2025c7aabc6f8ea5f21"
           }
         ]
       },
@@ -341,6 +386,14 @@
         "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
       },
       {
+        "source_id": "FISRC-4b309c6cf2daefde",
+        "source_url": "https://businessnewsthisweek.com/education/prolearn-secures-inr-30-crore-pre-seed-round-led-by-beenext/",
+        "source_title": "ProLearn 获得由 BEENEXT 领投的 INR 30 Crore 种子前轮融资",
+        "source_content_hash": "64129bf9720f7a50dc2f875d1fcfd969db4b1bc2c93901729c38bdfc51a55c85",
+        "quote": "raised INR 30 crore in a Pre-Seed funding round led by BEENEXT, with participation from Eximius Ventures, Antler, and several notable founders and operators as angel investors",
+        "quote_hash": "97bd7954dc0febba51afa9e4251eb4f088c74829d74ef2025c7aabc6f8ea5f21"
+      },
+      {
         "source_id": "FISRC-e713775ebfd9779c",
         "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
         "source_title": "First Concepts 获100万美元融资，开发面向创意工作的AI原生操作系统 - Tech.eu",
@@ -399,8 +452,8 @@
           "source_id": "FISRC-9e755507b523ddb2"
         },
         {
-          "description": "融资来源记录：First Concepts · 预种子轮 · 2026-03-17 · 本轮参投 · $1,000,000。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e713775ebfd9779c"
+          "description": "融资来源记录：ProLearn · 预种子轮 · 2026-06-03 · 本轮参投 · INR 30 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4b309c6cf2daefde"
         }
       ],
       "contacts": [],
@@ -422,12 +475,12 @@
           "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
         },
         {
-          "source_id": "FISRC-e713775ebfd9779c",
-          "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
-          "source_title": "First Concepts 获100万美元融资，开发面向创意工作的AI原生操作系统 - Tech.eu",
-          "source_content_hash": "290464341ec7404f",
-          "quote": "The round was led by Arāya Ventures alongside Antler",
-          "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
+          "source_id": "FISRC-4b309c6cf2daefde",
+          "source_url": "https://businessnewsthisweek.com/education/prolearn-secures-inr-30-crore-pre-seed-round-led-by-beenext/",
+          "source_title": "ProLearn 获得由 BEENEXT 领投的 INR 30 Crore 种子前轮融资",
+          "source_content_hash": "64129bf9720f7a50dc2f875d1fcfd969db4b1bc2c93901729c38bdfc51a55c85",
+          "quote": "raised INR 30 crore in a Pre-Seed funding round led by BEENEXT, with participation from Eximius Ventures, Antler, and several notable founders and operators as angel investors",
+          "quote_hash": "97bd7954dc0febba51afa9e4251eb4f088c74829d74ef2025c7aabc6f8ea5f21"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,37 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-01",
-    "latest_disclosed_at": "2026-07-01",
+    "first_disclosed_at": "2026-02-17",
+    "latest_disclosed_at": "2026-07-29",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 4
     },
     "round_codes": [
-      "series_a"
+      "series_a",
+      "series_a1",
+      "series_a2",
+      "series_e"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-22389189b08cb05c",
+        "canonical_entity_id": "",
+        "name": "Ayar Labs"
+      },
+      {
+        "entity_id": "EN-1b636bc7ad667158",
+        "canonical_entity_id": "",
+        "name": "ChipAgents"
+      },
       {
         "entity_id": "FICO-oxmiq",
         "canonical_entity_id": "",
@@ -86,6 +99,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-db4db9024d9f304f",
+        "funding_insight_id": "FI-50354632d843dddd",
+        "event_ids": [
+          "EV-73dd24ff36008b7d"
+        ],
+        "company_entity_id": "EN-1b636bc7ad667158",
+        "company_canonical_entity_id": "",
+        "company_name": "ChipAgents",
+        "round": "A2轮",
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-cd04c9b2d1340164",
+            "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
+            "source_title": "ChipAgents 将 A 轮融资扩大至 13400 万美元，半导体设计对智能体 AI 的需求日益增长",
+            "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
+            "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
+            "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9d36b4a0cafc10bd",
         "funding_insight_id": "FI-0f332b05a9ce8b6f",
@@ -130,6 +183,86 @@
         ]
       },
       {
+        "activity_id": "IA-e1105f5ac9e219db",
+        "funding_insight_id": "FI-d956a9d29808b6fa",
+        "event_ids": [
+          "EV-848d81fb5ed7b3cd"
+        ],
+        "company_entity_id": "EN-22389189b08cb05c",
+        "company_canonical_entity_id": "",
+        "company_name": "Ayar Labs",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-03-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b6c7c4ae002a992",
+            "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+            "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+            "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+            "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+            "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0f4d991d1e3d4fdb",
+        "funding_insight_id": "FI-0f9cd85435fc58eb",
+        "event_ids": [
+          "EV-cebdfb6bbc3dee38"
+        ],
+        "company_entity_id": "EN-1b636bc7ad667158",
+        "company_canonical_entity_id": "",
+        "company_name": "ChipAgents",
+        "round": "A1轮",
+        "round_code": "series_a1",
+        "round_original": "A1轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-02-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b82705c0aaa6a5ee",
+            "source_url": "https://www.businesswire.com/news/home/20260217568914/en/ChipAgents-Raises-%2474M-to-Scale-an-Agentic-AI-Platform-to-Accelerate-Chip-Design",
+            "source_title": "ChipAgents 融资 7400 万美元，以扩展加速芯片设计的智能体 AI 平台",
+            "source_content_hash": "eb71f20ce696ad99870220afaf668b866948fd868b45034259d2e76e0c7feb33",
+            "quote": "The round was led by Matter Venture Partners, a TSMC-backed HardTech VC firm, with participation from existing investors Bessemer Venture Partners, Micron, MediaTek, and Ericsson.",
+            "quote_hash": "a8278de53198826272dc5c7045989ecb50ff2bdac47a68de9ac09adb8810b1c1"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-5ff0ffdb69f14832",
         "funding_insight_id": "FI-a160ff15fc811200",
         "event_ids": [
@@ -164,12 +297,36 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-cd04c9b2d1340164",
+        "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
+        "source_title": "ChipAgents 将 A 轮融资扩大至 13400 万美元，半导体设计对智能体 AI 的需求日益增长",
+        "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
+        "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
+        "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
+      },
+      {
         "source_id": "FISRC-2ac2183ceab4ddd7",
         "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
         "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
         "source_content_hash": "b11173439b5612a7",
         "quote": "MediaTek, a seed investor and one of the world's leading fabless semiconductor companies, is reinvesting.",
         "quote_hash": "1408f6cb9eb9ac1ac296ea980a51ada3a80d5ea2004bb95ee7f6bbaf179f642b"
+      },
+      {
+        "source_id": "FISRC-5b6c7c4ae002a992",
+        "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+        "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+        "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+        "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+        "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+      },
+      {
+        "source_id": "FISRC-b82705c0aaa6a5ee",
+        "source_url": "https://www.businesswire.com/news/home/20260217568914/en/ChipAgents-Raises-%2474M-to-Scale-an-Agentic-AI-Platform-to-Accelerate-Chip-Design",
+        "source_title": "ChipAgents 融资 7400 万美元，以扩展加速芯片设计的智能体 AI 平台",
+        "source_content_hash": "eb71f20ce696ad99870220afaf668b866948fd868b45034259d2e76e0c7feb33",
+        "quote": "The round was led by Matter Venture Partners, a TSMC-backed HardTech VC firm, with participation from existing investors Bessemer Venture Partners, Micron, MediaTek, and Ericsson.",
+        "quote_hash": "a8278de53198826272dc5c7045989ecb50ff2bdac47a68de9ac09adb8810b1c1"
       },
       {
         "source_id": "FISRC-6d4642fdc4a2457c",
@@ -185,21 +342,33 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "MediaTek 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "MediaTek 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cd04c9b2d1340164"
+        },
         {
           "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 种子轮投资方及本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2ac2183ceab4ddd7"
         },
         {
-          "description": "融资来源记录：Eridu · 历史轮次未披露 · 历史投资方（轮次语境不明）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6d4642fdc4a2457c"
+          "description": "融资来源记录：Ayar Labs · E轮 · 2026-03-03 · 本轮参投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5b6c7c4ae002a992"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-cd04c9b2d1340164",
+          "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
+          "source_title": "ChipAgents 将 A 轮融资扩大至 13400 万美元，半导体设计对智能体 AI 的需求日益增长",
+          "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
+          "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
+          "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
+        },
         {
           "source_id": "FISRC-2ac2183ceab4ddd7",
           "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
@@ -209,12 +378,12 @@
           "quote_hash": "1408f6cb9eb9ac1ac296ea980a51ada3a80d5ea2004bb95ee7f6bbaf179f642b"
         },
         {
-          "source_id": "FISRC-6d4642fdc4a2457c",
-          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
-          "source_title": "Eridu - 更快的 AI",
-          "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
-          "quote": "Eridu is backed by leading investors including Black Opal Ventures, Bosch Ventures, Capricorn Investment Group, Catapult Ventures, Chamaeleon, Eclipse Capital, Fathom Fund, Friends & Family Capital, Fusion Fund, Godfrey Capital, Hudson River Trading, Hyperlink, John Doerr, Leslie Enterprises, Matter Venture Partners, MediaTek, Modi Ventures, Ohio Innovation, Open Field Capital, Osage University Partners, Perkins Enterprises, Pierre Lamond, Rice Management, SBVA, Socratic Partners, Struck Capital, TDK Ventures, Triple Point Capital, VentureTech Alliance, Zelda Ventures and numerous others.",
-          "quote_hash": "2c19ad21e2903ad41b62a677b99434dc557ec09e08c5d17165051c77cdb42211"
+          "source_id": "FISRC-5b6c7c4ae002a992",
+          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+          "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+          "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+          "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+          "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
         }
       ],
       "last_verified_at": "2026-09-25"

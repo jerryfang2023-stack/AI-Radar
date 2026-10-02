@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 25,
-    "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 22,
+    "current_round_count": 27,
+    "historical_or_ambiguous_count": 5,
+    "portfolio_company_count": 24,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,9 +74,9 @@
     "first_disclosed_at": "2025-09-09",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "historical_or_ambiguous": 4,
+      "historical_or_ambiguous": 5,
       "lead": 2,
-      "participant": 23
+      "participant": 25
     },
     "round_codes": [
       "multi_round",
@@ -108,6 +108,11 @@
         "entity_id": "EN-ae3d8efc01c7627d",
         "canonical_entity_id": "",
         "name": "Astrocade"
+      },
+      {
+        "entity_id": "EN-22389189b08cb05c",
+        "canonical_entity_id": "",
+        "name": "Ayar Labs"
       },
       {
         "entity_id": "EN-6ecf7f43c6c5a2b0",
@@ -203,6 +208,11 @@
         "entity_id": "EN-6fcba5d96a4fadfd",
         "canonical_entity_id": "EN-6fcba5d96a4fadfd",
         "name": "xAI"
+      },
+      {
+        "entity_id": "EN-5e32e49bd68c92c0",
+        "canonical_entity_id": "",
+        "name": "Xscape Photonics"
       }
     ],
     "activities": [
@@ -1109,6 +1119,86 @@
         ]
       },
       {
+        "activity_id": "IA-dbadd681914bf916",
+        "funding_insight_id": "FI-46358a6db2b698d8",
+        "event_ids": [
+          "EV-0319b53ac4d33276"
+        ],
+        "company_entity_id": "EN-5e32e49bd68c92c0",
+        "company_canonical_entity_id": "",
+        "company_name": "Xscape Photonics",
+        "round": "A轮扩展",
+        "round_code": "series_a_extension",
+        "round_original": "A轮追加",
+        "amount_original": "$37 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 37000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3700 万美元"
+        },
+        "announced_at": "2026-03-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6cc6b0a81efafb6",
+            "source_url": "https://www.vcaonline.com/news/2026031104/xscape-photonics-announces-37-million-in-new-funding-launches-eight-wavelength-laser-for-ai-data-center-networks/",
+            "source_title": "Xscape Photonics 宣布获得 3700 万美元新融资，推出用于 AI 数据中心网络的八波长激光器",
+            "source_content_hash": "eec8902036c0e8c910f2ed833539506f482f2055ca35957c73a49714facafb8b",
+            "quote": "with continued support from existing investors, including IAG Capital Partners and NVIDIA, among others",
+            "quote_hash": "cc3658a753e342cf61f4aa2a4b4232654089219299337eeac299293958a45810"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-91a32194d27b71c6",
+        "funding_insight_id": "FI-d956a9d29808b6fa",
+        "event_ids": [
+          "EV-848d81fb5ed7b3cd"
+        ],
+        "company_entity_id": "EN-22389189b08cb05c",
+        "company_canonical_entity_id": "",
+        "company_name": "Ayar Labs",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-03-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b6c7c4ae002a992",
+            "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+            "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+            "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+            "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+            "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-d5f762ca1d1f0d30",
         "funding_insight_id": "FI-4a3b79f9329c86c7",
         "event_ids": [
@@ -1305,6 +1395,38 @@
             "source_content_hash": "0e21dc8c5bf73e44",
             "quote": "Nvidia, located in Santa Clara (United States), made their first investment in Anthropic on Feb 12, 2026 in its Series G round.",
             "quote_hash": "b27a6b67311bb1ecaedd1b754365c400284ca355770456bf2e49321c0b828f3e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9ecadcfc5b6904ad",
+        "funding_insight_id": "FI-d956a9d29808b6fa",
+        "event_ids": [
+          "EV-848d81fb5ed7b3cd"
+        ],
+        "company_entity_id": "EN-22389189b08cb05c",
+        "company_canonical_entity_id": "",
+        "company_name": "Ayar Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有战略投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b6c7c4ae002a992",
+            "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+            "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+            "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+            "quote": "and existing strategic investors, AMD Ventures, and NVIDIA",
+            "quote_hash": "0b724462bac913eb56dd778f7de617c4cfee0fdb67a69679155b0765001d1c7c"
           }
         ]
       },
@@ -1575,6 +1697,22 @@
         "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
       },
       {
+        "source_id": "FISRC-f6cc6b0a81efafb6",
+        "source_url": "https://www.vcaonline.com/news/2026031104/xscape-photonics-announces-37-million-in-new-funding-launches-eight-wavelength-laser-for-ai-data-center-networks/",
+        "source_title": "Xscape Photonics 宣布获得 3700 万美元新融资，推出用于 AI 数据中心网络的八波长激光器",
+        "source_content_hash": "eec8902036c0e8c910f2ed833539506f482f2055ca35957c73a49714facafb8b",
+        "quote": "with continued support from existing investors, including IAG Capital Partners and NVIDIA, among others",
+        "quote_hash": "cc3658a753e342cf61f4aa2a4b4232654089219299337eeac299293958a45810"
+      },
+      {
+        "source_id": "FISRC-5b6c7c4ae002a992",
+        "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+        "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+        "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+        "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+        "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+      },
+      {
         "source_id": "FISRC-f911788bc29402eb",
         "source_url": "https://www.worldlabs.ai/blog/funding-2026",
         "source_title": "世界实验室宣布新融资",
@@ -1621,6 +1759,14 @@
         "source_content_hash": "0e21dc8c5bf73e44",
         "quote": "Nvidia, located in Santa Clara (United States), made their first investment in Anthropic on Feb 12, 2026 in its Series G round.",
         "quote_hash": "b27a6b67311bb1ecaedd1b754365c400284ca355770456bf2e49321c0b828f3e"
+      },
+      {
+        "source_id": "FISRC-5b6c7c4ae002a992",
+        "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+        "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+        "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+        "quote": "and existing strategic investors, AMD Ventures, and NVIDIA",
+        "quote_hash": "0b724462bac913eb56dd778f7de617c4cfee0fdb67a69679155b0765001d1c7c"
       },
       {
         "source_id": "FISRC-3b8fce2e43a41d5b",

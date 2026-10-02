@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 8,
-    "china_market_company_count": 8,
+    "china_market_activity_count": 9,
+    "china_market_company_count": 9,
     "first_disclosed_at": "2026-01-12",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 7,
-      "participant": 6
+      "participant": 7
     },
     "round_codes": [
       "angel",
@@ -82,6 +82,7 @@
       "series_a",
       "series_a_plus_plus",
       "series_b",
+      "series_b_plus",
       "series_c",
       "undisclosed"
     ],
@@ -115,6 +116,11 @@
         "entity_id": "EN-997a5e6e513f2a90",
         "canonical_entity_id": "",
         "name": "星辰技术"
+      },
+      {
+        "entity_id": "EN-3f0cfc0d9c60b562",
+        "canonical_entity_id": "EN-3f0cfc0d9c60b562",
+        "name": "智象未来"
       },
       {
         "entity_id": "EN-8dc72a4672894e0f",
@@ -285,6 +291,46 @@
             "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
             "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
             "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-65de896cd813c957",
+        "funding_insight_id": "FI-c60d55aaf6d333b9",
+        "event_ids": [
+          "EV-7257a7f4ab72c018"
+        ],
+        "company_entity_id": "EN-3f0cfc0d9c60b562",
+        "company_canonical_entity_id": "EN-3f0cfc0d9c60b562",
+        "company_name": "智象未来",
+        "round": "B+轮",
+        "round_code": "series_b_plus",
+        "round_original": "B+轮",
+        "amount_original": "亿级人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-58b7882b379da6fd",
+            "source_url": "https://www.sohu.com/a/1025264778_114984",
+            "source_title": "智象未来（合肥）信息技术有限公司获“B+轮”融资，金额亿级人民币",
+            "source_content_hash": "f596ec77bde2bb76b72aacf182209ce01d5af452db9f408835a879079f48c964",
+            "quote": "5月20日，天眼查融资历程显示，智象未来（合肥）信息技术有限公司近日获得“B+轮”融资，涉及融资金额亿级人民币，投资机构为深创投，金浦投资，湖南财鑫集团，复聚投资。",
+            "quote_hash": "71d391145b1e7abf801c31ce95f731a2a62161f8495e9c4a0223ad89493cf09a"
           }
         ]
       },
@@ -708,6 +754,14 @@
         "source_content_hash": "acb7f98eff8e5a18cafd8588c7b7e359b5aeab6222f18d676e54328e28236b61",
         "quote": "本轮投资方包括深创投、 岩山科技 、大湾区共同家园、 我会会员单位力鼎资本 、蕴盛资本等",
         "quote_hash": "23b6cdc1274fabc3b892f5e1360779d1ec84cbeaf39e60791428fd74ed5f14b8"
+      },
+      {
+        "source_id": "FISRC-58b7882b379da6fd",
+        "source_url": "https://www.sohu.com/a/1025264778_114984",
+        "source_title": "智象未来（合肥）信息技术有限公司获“B+轮”融资，金额亿级人民币",
+        "source_content_hash": "f596ec77bde2bb76b72aacf182209ce01d5af452db9f408835a879079f48c964",
+        "quote": "5月20日，天眼查融资历程显示，智象未来（合肥）信息技术有限公司近日获得“B+轮”融资，涉及融资金额亿级人民币，投资机构为深创投，金浦投资，湖南财鑫集团，复聚投资。",
+        "quote_hash": "71d391145b1e7abf801c31ce95f731a2a62161f8495e9c4a0223ad89493cf09a"
       },
       {
         "source_id": "FISRC-5e868b9dacd5325c",

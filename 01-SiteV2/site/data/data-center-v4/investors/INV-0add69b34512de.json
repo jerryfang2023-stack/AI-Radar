@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-02-11",
+    "latest_disclosed_at": "2026-02-11",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-1360aaacd76daa34",
+        "canonical_entity_id": "",
+        "name": "OLIX Computing Ltd."
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-2058da49764b4f12",
+        "funding_insight_id": "FI-3e6cc07696a6e9e0",
+        "event_ids": [
+          "EV-18554a19b342911e"
+        ],
+        "company_entity_id": "EN-1360aaacd76daa34",
+        "company_canonical_entity_id": "",
+        "company_name": "OLIX Computing Ltd.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$220 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 220000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.2 亿美元"
+        },
+        "announced_at": "2026-02-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8ac45c45da22b49",
+            "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
+            "source_title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
+            "source_content_hash": "48033349283b73c285686033b79c23c21dc36495571664c01e0ddfd34bd2dab3",
+            "quote": "The Financial Times reported today that the investment was led by Belgian venture capital firm Hummingbird Ventures.",
+            "quote_hash": "a9e6d45cda2830f2236fcf3e1c22bb89f52a08b6ed374c7aa4874567bafa4c2c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-40862f6523711d10",
         "funding_insight_id": "FI-392e264418bb0c75",
@@ -111,6 +160,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b8ac45c45da22b49",
+        "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
+        "source_title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
+        "source_content_hash": "48033349283b73c285686033b79c23c21dc36495571664c01e0ddfd34bd2dab3",
+        "quote": "The Financial Times reported today that the investment was led by Belgian venture capital firm Hummingbird Ventures.",
+        "quote_hash": "a9e6d45cda2830f2236fcf3e1c22bb89f52a08b6ed374c7aa4874567bafa4c2c"
+      },
       {
         "source_id": "FISRC-88b7fd63299c3c59",
         "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment",
@@ -169,6 +226,10 @@
         {
           "description": "Hummingbird 的招聘项目页面自述，多支基金净回报超过 10 倍并向投资人分配实际资金。该数字为机构自述，页面未列基金名称、测算时间或审计数据，不能视为独立业绩核验。",
           "source_id": "hummingbird_returns"
+        },
+        {
+          "description": "融资来源记录：OLIX Computing Ltd. · 轮次未披露 · 2026-02-11 · 本轮领投 · $220 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b8ac45c45da22b49"
         },
         {
           "description": "融资来源记录：Olix Computing Ltd. · 历史轮次未披露 · 历史轮次领投方，本轮追加投资。这是本库收录的披露案例，不代表完整投资组合。",
@@ -346,6 +407,14 @@
           "source_content_hash": "9ecb5df7fca3fdbc01189513442e03062d6dd3794924e3260d7ed6835adba98f",
           "quote": "hello@hummingbird.vc",
           "quote_hash": "c3c8ed603038f4c7505382dac7511c75a9276f234bab3279730cb97803c96f7f"
+        },
+        {
+          "source_id": "FISRC-b8ac45c45da22b49",
+          "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
+          "source_title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
+          "source_content_hash": "48033349283b73c285686033b79c23c21dc36495571664c01e0ddfd34bd2dab3",
+          "quote": "The Financial Times reported today that the investment was led by Belgian venture capital firm Hummingbird Ventures.",
+          "quote_hash": "a9e6d45cda2830f2236fcf3e1c22bb89f52a08b6ed374c7aa4874567bafa4c2c"
         },
         {
           "source_id": "FISRC-88b7fd63299c3c59",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,26 +63,32 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-03-31",
+    "first_disclosed_at": "2026-03-03",
     "latest_disclosed_at": "2026-08-26",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "series_a",
       "series_d",
+      "series_e",
       "series_f"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-22389189b08cb05c",
+        "canonical_entity_id": "",
+        "name": "Ayar Labs"
+      },
       {
         "entity_id": "EN-a31f26263a2fe821",
         "canonical_entity_id": "",
@@ -222,6 +228,46 @@
         ]
       },
       {
+        "activity_id": "IA-e1cd1dfbedcdb771",
+        "funding_insight_id": "FI-d956a9d29808b6fa",
+        "event_ids": [
+          "EV-848d81fb5ed7b3cd"
+        ],
+        "company_entity_id": "EN-22389189b08cb05c",
+        "company_canonical_entity_id": "",
+        "company_name": "Ayar Labs",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-03-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b6c7c4ae002a992",
+            "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+            "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+            "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+            "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+            "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-af79cf77560b0034",
         "funding_insight_id": "FI-082c684e1b4a88c2",
         "event_ids": [
@@ -278,6 +324,14 @@
         "source_content_hash": "494969b64dc816f3",
         "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
         "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+      },
+      {
+        "source_id": "FISRC-5b6c7c4ae002a992",
+        "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+        "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+        "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+        "quote": "Neuberger Berman leads round joined by premier institutional investors including ARK Invest, Insight Partners, Qatar Investment Authority (QIA), Sequoia Global Equities, and 1789 Capital alongside key commercial strategic investors AMD, Alchip, MediaTek, and NVIDIA",
+        "quote_hash": "fc04a543036e2a2f83e8b6e7ea17ce12310bb4149d8e45c9397e021bc4811d3b"
       },
       {
         "source_id": "FISRC-0349532f469a6b45",

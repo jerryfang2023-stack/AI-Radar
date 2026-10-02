@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 3,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-04-28",
-    "latest_disclosed_at": "2026-06-23",
+    "latest_disclosed_at": "2026-08-28",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "angel"
+      "angel",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8a34369ccc996a51",
+        "canonical_entity_id": "",
+        "name": "曦望"
+      },
       {
         "entity_id": "EN-8936494cd8a7fddb",
         "canonical_entity_id": "EN-8936494cd8a7fddb",
@@ -90,6 +96,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-02669c3084310344",
+        "funding_insight_id": "FI-7d70135fa137ac80",
+        "event_ids": [
+          "EV-ea64ab88a85eabd0"
+        ],
+        "company_entity_id": "EN-8a34369ccc996a51",
+        "company_canonical_entity_id": "",
+        "company_name": "曦望",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "新一轮",
+        "amount_original": "20亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 2000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "20 亿元"
+        },
+        "announced_at": "2026-08-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c87caae716bd4910",
+            "source_url": "https://eu.36kr.com/zh/p/3957213787995526",
+            "source_title": "曦望再融20亿元 四个月估值翻倍至200亿「独家」",
+            "source_content_hash": "09239a3cd7ca2ab09d1238c0c5781d7702b49ba8f60e89a2593f9f24d9140c79",
+            "quote": "产业资本的名单继续扩大，包括正大集团、九安医疗、盈峰环境、同程旅行等",
+            "quote_hash": "375dd00f55fb4e2798c653f7905e2b0ebc7ecc483208089af0b6a541411a18be"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ed2e30450c52b110",
         "funding_insight_id": "FI-e01c1a6b5ba6c003",
@@ -172,6 +218,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-c87caae716bd4910",
+        "source_url": "https://eu.36kr.com/zh/p/3957213787995526",
+        "source_title": "曦望再融20亿元 四个月估值翻倍至200亿「独家」",
+        "source_content_hash": "09239a3cd7ca2ab09d1238c0c5781d7702b49ba8f60e89a2593f9f24d9140c79",
+        "quote": "产业资本的名单继续扩大，包括正大集团、九安医疗、盈峰环境、同程旅行等",
+        "quote_hash": "375dd00f55fb4e2798c653f7905e2b0ebc7ecc483208089af0b6a541411a18be"
+      },
       {
         "source_id": "FISRC-7896c13384a2de29",
         "source_url": "https://news.pedaily.cn/202606/565442.shtml",
@@ -284,6 +338,10 @@
           "source_id": "cpgroup_about_official"
         },
         {
+          "description": "融资来源记录：曦望 · 轮次未披露 · 2026-08-28 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c87caae716bd4910"
+        },
+        {
           "description": "融资来源记录：正行创新 · 天使轮 · 2026-06-23 · 本轮参投 · 近亿。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7896c13384a2de29"
         },
@@ -346,6 +404,14 @@
           "source_content_hash": "b1cd670fa0dfbffa8b4713ac513835138f139adf27176a1691fd1f2138eb4088",
           "quote": "投诉信箱：idea@cpgroup.cn；咨询服务电话：400-858-1717、400-930-8000。",
           "quote_hash": "257a883c553eaa7f10728cfedc7a8c8dc39391a8c358377d04beb40ce0df1f6c"
+        },
+        {
+          "source_id": "FISRC-c87caae716bd4910",
+          "source_url": "https://eu.36kr.com/zh/p/3957213787995526",
+          "source_title": "曦望再融20亿元 四个月估值翻倍至200亿「独家」",
+          "source_content_hash": "09239a3cd7ca2ab09d1238c0c5781d7702b49ba8f60e89a2593f9f24d9140c79",
+          "quote": "产业资本的名单继续扩大，包括正大集团、九安医疗、盈峰环境、同程旅行等",
+          "quote_hash": "375dd00f55fb4e2798c653f7905e2b0ebc7ecc483208089af0b6a541411a18be"
         },
         {
           "source_id": "FISRC-7896c13384a2de29",

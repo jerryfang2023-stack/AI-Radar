@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,10 +73,11 @@
     "latest_disclosed_at": "2026-09-28",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a1",
+      "strategic",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -84,6 +85,11 @@
         "entity_id": "EN-40a9543b0f7b0cf9",
         "canonical_entity_id": "",
         "name": "Modulate"
+      },
+      {
+        "entity_id": "EN-6803beb35a5db4ab",
+        "canonical_entity_id": "",
+        "name": "Mojo Vision"
       },
       {
         "entity_id": "EN-6b5df3bd8bb0c67d",
@@ -129,6 +135,46 @@
             "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
             "quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar.",
             "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-adc01b00366a4cd5",
+        "funding_insight_id": "FI-7959f6b30e6677c5",
+        "event_ids": [
+          "EV-4afe2cc49684aeed"
+        ],
+        "company_entity_id": "EN-6803beb35a5db4ab",
+        "company_canonical_entity_id": "",
+        "company_name": "Mojo Vision",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$17.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1750 万美元"
+        },
+        "announced_at": "2026-03-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-11b5a2bec1da52ac",
+            "source_url": "https://money.mymotherlode.com/clarkebroadcasting.mymotherlode/article/bizwire-2026-3-25-mojo-vision-secures-175m-strategic-investment-from-future-ventures-to-advance-next-generation-optical-io-for-ai-infrastructure",
+            "source_title": "Mojo Vision 获 Future Ventures 1750 万美元战略投资，推进面向 AI 基础设施的下一代光学 I/O",
+            "source_content_hash": "ea05a369395533ec3041dd2799cc06ddc2d2b48a056522430b2306d6b4f955a6",
+            "quote": "today announced a $17.5 million strategic investment from Future Ventures, the venture capital firm co-founded and led by Steve Jurvetson",
+            "quote_hash": "d19eee8522c9e571960374e90b3fce13fd8509f115f7126808470183d4ab8c79"
           }
         ]
       },
@@ -183,6 +229,14 @@
         "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
       },
       {
+        "source_id": "FISRC-11b5a2bec1da52ac",
+        "source_url": "https://money.mymotherlode.com/clarkebroadcasting.mymotherlode/article/bizwire-2026-3-25-mojo-vision-secures-175m-strategic-investment-from-future-ventures-to-advance-next-generation-optical-io-for-ai-infrastructure",
+        "source_title": "Mojo Vision 获 Future Ventures 1750 万美元战略投资，推进面向 AI 基础设施的下一代光学 I/O",
+        "source_content_hash": "ea05a369395533ec3041dd2799cc06ddc2d2b48a056522430b2306d6b4f955a6",
+        "quote": "today announced a $17.5 million strategic investment from Future Ventures, the venture capital firm co-founded and led by Steve Jurvetson",
+        "quote_hash": "d19eee8522c9e571960374e90b3fce13fd8509f115f7126808470183d4ab8c79"
+      },
+      {
         "source_id": "FISRC-344b2fbfbe7b7c56",
         "source_url": "https://techcrunch.com/2023/04/20/robust-ai-raises-20m-as-it-scales-robot-deliveries-for-pilot-customers/",
         "source_title": "Robust.AI 融资2000万美元，扩大机器人配送试点客户规模",
@@ -205,6 +259,10 @@
           "source_id": "FISRC-6ec519350686cbda"
         },
         {
+          "description": "融资来源记录：Mojo Vision · 战略融资 · 2026-03-25 · 本轮参投 · $17.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-11b5a2bec1da52ac"
+        },
+        {
           "description": "融资来源记录：Robust.AI · A1轮 · 2023-04-20 · 本轮参投 · $20M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-344b2fbfbe7b7c56"
         }
@@ -218,6 +276,14 @@
           "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
           "quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar.",
           "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
+        },
+        {
+          "source_id": "FISRC-11b5a2bec1da52ac",
+          "source_url": "https://money.mymotherlode.com/clarkebroadcasting.mymotherlode/article/bizwire-2026-3-25-mojo-vision-secures-175m-strategic-investment-from-future-ventures-to-advance-next-generation-optical-io-for-ai-infrastructure",
+          "source_title": "Mojo Vision 获 Future Ventures 1750 万美元战略投资，推进面向 AI 基础设施的下一代光学 I/O",
+          "source_content_hash": "ea05a369395533ec3041dd2799cc06ddc2d2b48a056522430b2306d6b4f955a6",
+          "quote": "today announced a $17.5 million strategic investment from Future Ventures, the venture capital firm co-founded and led by Steve Jurvetson",
+          "quote_hash": "d19eee8522c9e571960374e90b3fce13fd8509f115f7126808470183d4ab8c79"
         },
         {
           "source_id": "FISRC-344b2fbfbe7b7c56",
