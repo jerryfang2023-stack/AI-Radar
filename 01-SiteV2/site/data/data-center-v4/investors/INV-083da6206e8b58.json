@@ -246,12 +246,46 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "LG Technology Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "LG Technology Ventures官网称其于2018年成立、总部位于硅谷，投资AI、生物科技和清洁科技等领域的早期及成长期公司，并可连接LG集团资源。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2018",
+          "source_id": "about"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "硅谷",
+          "source_id": "about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期及成长期",
+          "source_id": "about"
+        },
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "AI、生物科技、清洁科技",
+          "source_id": "about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "官网称LG Technology Ventures成立。",
+          "source_id": "about"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网称被投企业可获得LG集团全球网络带来的知识与合作机会。",
+          "source_id": "about"
+        },
         {
           "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3372eff279ee29db"
@@ -265,8 +299,24 @@
           "source_id": "FISRC-1811bc88b6a13090"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.lgtechventures.com/",
+          "source_id": "about",
+          "url": "https://www.lgtechventures.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "about",
+          "source_url": "https://www.lgtechventures.com/",
+          "source_title": "LG Technology Ventures",
+          "source_content_hash": "a39a86982913905c79492190d518be52fd1b66c184d1c29235f4d2b97b068fda",
+          "quote": "Founded in 2018 and headquartered in Silicon Valley, we partner with early- and growth-stage companies across sectors including AI, biotech, and cleantech.",
+          "quote_hash": "b3e026bc23a67a105ee4769357831abbd5c7ea1d756925beda525ba539955aa6"
+        },
         {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
@@ -292,7 +342,8 @@
           "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

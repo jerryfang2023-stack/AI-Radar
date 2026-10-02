@@ -203,12 +203,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Eclipse Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Eclipse Ventures官网将自身投资重点描述为实体经济企业，面向关系到韧性、竞争力与安全的行业，并以建设硬件、工厂和供应链的经验支持创业公司。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "实体经济及影响韧性、竞争力与安全的行业",
+          "source_id": "about-thesis"
+        },
+        {
+          "field": "operating_support",
+          "label": "运营支持",
+          "value": "战略、技术评估、人才招聘及客户拓展",
+          "source_id": "about-team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网称团队成员曾建设工厂、交付硬件、扩展供应链并处理政策与监管复杂性。",
+          "source_id": "about-team"
+        },
         {
           "description": "融资来源记录：AheadComputing, Inc. · 历史轮次未披露 · 2024年种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b57e758a492553d2"
@@ -222,8 +238,64 @@
           "source_id": "FISRC-38adde4dd9384d54"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://eclipse.vc/about",
+          "source_id": "about-thesis",
+          "url": "https://eclipse.vc/"
+        },
+        {
+          "kind": "email",
+          "label": "联系邮箱",
+          "value": "admin@eclipse.capital",
+          "source_id": "about-contact"
+        },
+        {
+          "kind": "phone",
+          "label": "联系电话",
+          "value": "650-720-4667",
+          "source_id": "about-contact"
+        },
+        {
+          "kind": "address",
+          "label": "湾区办公室",
+          "value": "514 High Street, Palo Alto, CA 94301",
+          "source_id": "about-contact"
+        },
+        {
+          "kind": "address",
+          "label": "纽约办公室",
+          "value": "594 Broadway #707, New York, NY 10012",
+          "source_id": "about-contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "about-thesis",
+          "source_url": "https://eclipse.vc/about",
+          "source_title": "About",
+          "source_content_hash": "ad73a6b63b6a5a99ca05c3b7bf72fe7c777b83745d474bad2fc8ec2d827ce511",
+          "quote": "Eclipse invests in entrepreneurs building the next generation of companies in the physical economy — the industries that determine resilience, competitiveness, and security.",
+          "quote_hash": "f67644c7e800dcda1300d37f49e7ec7b139de4b3706e3ef1f4782304a65a405a"
+        },
+        {
+          "source_id": "about-team",
+          "source_url": "https://eclipse.vc/about",
+          "source_title": "About",
+          "source_content_hash": "ad73a6b63b6a5a99ca05c3b7bf72fe7c777b83745d474bad2fc8ec2d827ce511",
+          "quote": "Our team has built factories, shipped hardware, scaled supply chains, and navigated the policy and regulatory complexity that shapes the essential economy.",
+          "quote_hash": "d4665b32ee876e06ac513182ad4edb6636427adb8a80e3c1c48c122d2c956376"
+        },
+        {
+          "source_id": "about-contact",
+          "source_url": "https://eclipse.vc/about",
+          "source_title": "About",
+          "source_content_hash": "ad73a6b63b6a5a99ca05c3b7bf72fe7c777b83745d474bad2fc8ec2d827ce511",
+          "quote": "Bay Area office 514 High Street Palo Alto, CA 94301 New York City office 594 Broadway #707 New York, NY 10012 650-720-4667 admin@eclipse.capital",
+          "quote_hash": "012ba9edff1d250f46f5be9c5aad3a129c6f45b1574ed9d1b86604449022026d"
+        },
         {
           "source_id": "FISRC-b57e758a492553d2",
           "source_url": "https://startupintros.com/orgs/aheadcomputing",
@@ -249,7 +321,8 @@
           "quote_hash": "a4362013536bfc45cb51e1e5f05727ab3e2aca6ca1bbb766b6b247e94fb6f4e1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

@@ -123,19 +123,137 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mastercard Strive USA Innovation Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案涉及的是 Mastercard Strive USA 的创新资助项目。官方资料将其资金形式描述为面向小企业相关方案的 grant；按融资情报库“投资组织”分类展示，不据此推断其为传统股权 VC，也不推断融资轮次或具体出资额。",
+      "summary": "Mastercard Strive USA Innovation Fund 是 Mastercard Center for Inclusive Growth 支持的美国小企业创新资助项目，通过拨款支持改善小企业财务健康的早期方案。Mastercard 官方资料显示，Mona 入选 2026 年该基金的获选项目；现有披露没有给出该笔支持的金额或股权性质。",
+      "facts": [
+        {
+          "field": "program_type",
+          "label": "项目类型",
+          "value": "面向小企业创新方案的拨款资助项目；官网称其将提供 grant。",
+          "source_id": "program"
+        },
+        {
+          "field": "focus",
+          "label": "资助方向",
+          "value": "改善美国小企业的财务健康，支持处于原型或早期测试阶段的产品与服务。",
+          "source_id": "program"
+        },
+        {
+          "field": "program_support",
+          "label": "项目支持方",
+          "value": "由 Mastercard Center for Inclusive Growth 支持，DAI 负责实施。",
+          "source_id": "program"
+        },
+        {
+          "field": "funding",
+          "label": "2025 项目额度",
+          "value": "该届项目总拨款最高 100 万美元，单个组织最高 25 万美元。",
+          "source_id": "program"
+        },
+        {
+          "field": "geography",
+          "label": "地域",
+          "value": "美国。",
+          "source_id": "program"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023",
+          "description": "Mastercard Strive 官方文章称，Mastercard Center for Inclusive Growth 于 2023 年发起 Mastercard Strive USA Innovation Fund。",
+          "source_id": "launch"
+        },
+        {
+          "date": "2026",
+          "description": "Mastercard 官方文章将 Mona 列为 2026 年 Mastercard Strive USA Innovation Fund 的两家获选项目之一。",
+          "source_id": "2026-winners"
+        }
+      ],
       "track_record": [
+        {
+          "description": "2023 年该基金向 4 家组织提供接近 100 万美元的 grant funding，用于开发、测试和扩大支持小企业成长与财务韧性的方案。",
+          "source_id": "grantees"
+        },
+        {
+          "description": "Mastercard UK 官方文章称，Mona 是 2026 年基金的两家获选项目之一；该文未披露此项支持的金额或股权性质。",
+          "source_id": "2026-winners"
+        },
+        {
+          "description": "Mona 于 2026 年 9 月融资公告另称其获得 Mastercard Strive USA Innovation Fund 支持；公告未披露具体金额或投资轮次。",
+          "source_id": "mona-support"
+        },
         {
           "description": "融资来源记录：Mona · 历史轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-22cce00c604ac941"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Mastercard Strive USA 2025 Innovation Fund 项目页",
+          "value": "https://www.mastercardstrive.org/innovation-funds/usa-2025",
+          "source_id": "program",
+          "url": "https://www.mastercardstrive.org/innovation-funds/usa-2025"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "program",
+          "source_url": "https://www.mastercardstrive.org/innovation-funds/usa-2025",
+          "source_title": "2025 USA Innovation Fund | Innovation Fund | Mastercard Strive",
+          "source_content_hash": "da6c3ebadf4b9fb03e267bf237201424921a2c234631eb5963f618426288f997",
+          "quote": "supported by the Mastercard Center for Inclusive Growth and implemented by DAI",
+          "quote_hash": "c4b06f0cef4ceaad50a0386c8f53d9b7ca0b675bea365fe1bee5d927b7f9ae1a"
+        },
+        {
+          "source_id": "grant-scope",
+          "source_url": "https://www.mastercardstrive.org/innovation-funds/usa-2025",
+          "source_title": "2025 USA Innovation Fund | Innovation Fund | Mastercard Strive",
+          "source_content_hash": "da6c3ebadf4b9fb03e267bf237201424921a2c234631eb5963f618426288f997",
+          "quote": "provides up to $1 million in grants to early-stage organizations developing solutions that strengthen small business financial health",
+          "quote_hash": "67d9abe69e35357216c3ef7813966384de6e826e23b8b489693f442592efd125"
+        },
+        {
+          "source_id": "grant-ceiling",
+          "source_url": "https://www.mastercardstrive.org/innovation-funds/usa-2025",
+          "source_title": "2025 USA Innovation Fund | Innovation Fund | Mastercard Strive",
+          "source_content_hash": "da6c3ebadf4b9fb03e267bf237201424921a2c234631eb5963f618426288f997",
+          "quote": "up to $250,000 per organization",
+          "quote_hash": "064f04df3aee779ab16046836d6f10f47c9391c2c6d5dd2980e8b15473845e2d"
+        },
+        {
+          "source_id": "launch",
+          "source_url": "https://www.mastercardstrive.org/articles/2023/12/fueling-small-business-growth-in-the-united-states-meet-the-mastercard-strive-usa-innovation-fund-winners",
+          "source_title": "Fueling small business growth in the United States: Meet the Mastercard Strive USA Innovation Fund winners | Articles | Mastercard Strive",
+          "source_content_hash": "ae159163382b917035f4a23b9a288d78b7b11eefaa0967c5566b9facd06d960b",
+          "quote": "the Mastercard Center for Inclusive Growth launched the Mastercard Strive USA Innovation Fund in 2023",
+          "quote_hash": "2c327a7fdf21b18cbcd40578b7100955e17a2e86836235361cd33f9beae5676a"
+        },
+        {
+          "source_id": "grantees",
+          "source_url": "https://www.mastercardstrive.org/articles/2023/12/fueling-small-business-growth-in-the-united-states-meet-the-mastercard-strive-usa-innovation-fund-winners",
+          "source_title": "Fueling small business growth in the United States: Meet the Mastercard Strive USA Innovation Fund winners | Articles | Mastercard Strive",
+          "source_content_hash": "ae159163382b917035f4a23b9a288d78b7b11eefaa0967c5566b9facd06d960b",
+          "quote": "providing nearly $1 million USD in grant funding to four change-making organizations",
+          "quote_hash": "9af16d2da5bb42e7b3f827ce83fe430eafe975b7ef208834ab594d79020582cb"
+        },
+        {
+          "source_id": "2026-winners",
+          "source_url": "https://www.mastercard.com/gb/en/news-and-trends/stories/2026/mona-small-business-access-to-capital.html",
+          "source_title": "How Mona uses AI to help small businesses find funding | Mastercard UK",
+          "source_content_hash": "f4f9d09b33fdd6670b16f470c8997579dbf8d838e9c8b6c7afa1bf3665700e37",
+          "quote": "selection as one of two winners of the 2026 Mastercard Strive USA Innovation Fund",
+          "quote_hash": "336fa2be3b215d280b30f0845a8edb7026e35d6a09f225e483ac134a951cb20a"
+        },
+        {
+          "source_id": "mona-support",
+          "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
+          "source_title": "Mona Raises $3.5M to Expand Its AI Platform for Small Business Capital Access and Financial Coaching",
+          "source_content_hash": "e1b8312e89acc5c10e638a05c81449193c4b2cf48f91a49be0ab6a361abd450b",
+          "quote": "Mona is also backed by the Mastercard Strive USA Innovation Fund.",
+          "quote_hash": "a2a52bf481bb46c90d946a6ab5a859021085907928729ef4b6d4dfeda26cf3b3"
+        },
         {
           "source_id": "FISRC-22cce00c604ac941",
           "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
@@ -145,7 +263,7 @@
           "quote_hash": "a2a52bf481bb46c90d946a6ab5a859021085907928729ef4b6d4dfeda26cf3b3"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -292,18 +292,43 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "龙芯创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "金卡智能的公告将龙芯（深圳）私募创业投资基金管理有限公司列为共青城龙芯汇航创业投资合伙企业（有限合伙）的发起管理方，并披露其私募基金管理人登记编号P1068738。",
+      "coverage_note": "队列名称“龙芯创投”为简称；本条以公告中的法定名称和管理人登记号识别主体。公告同时说明的空天产业FOF是特定基金的投资方向，不代表管理人全部策略。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定名称",
+          "value": "龙芯（深圳）私募创业投资基金管理有限公司",
+          "source_id": "filing-identity"
+        },
+        {
+          "field": "registered_capital",
+          "label": "注册资本",
+          "value": "1,000万元",
+          "source_id": "filing-identity"
+        },
+        {
+          "field": "business_scope",
+          "label": "公告所列经营范围",
+          "value": "私募股权投资基金管理、创业投资基金管理服务",
+          "source_id": "filing-identity"
+        },
+        {
+          "field": "manager_registration",
+          "label": "私募基金管理人登记编号",
+          "value": "P1068738",
+          "source_id": "filing-registration"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-57de475f4ec2ac5a"
+          "description": "金卡智能公告披露其发起设立共青城龙芯汇航创业投资合伙企业（有限合伙）；该基金为创业投资FOF，公告所列方向为空天产业。",
+          "source_id": "filing-fund"
         },
         {
           "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-270f085d1cb4d09f"
+          "source_id": "FISRC-57de475f4ec2ac5a"
         },
         {
           "description": "融资来源记录：原力引擎 · 天使+轮 · 2026-08-26 · 本轮参投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -312,6 +337,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "filing-identity",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
+          "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
+          "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
+          "quote": "名称：龙芯（深圳）私募创业投资基金管理有限公司\n注册资本：1,000万元\n类型：有限责任公司",
+          "quote_hash": "9f7c9b2660bb27dd140a2bd7adb6f6bba4c6e9e60d9526efb769e51432ad8aa1"
+        },
+        {
+          "source_id": "filing-registration",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
+          "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
+          "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
+          "quote": "登记备案情况：龙芯深圳已在中国证券投资基金业协会登记备案私募基\n金管理人，登记编号：P1068738。",
+          "quote_hash": "8c7b5b55a9f6a354210c6a4c63bfa4bd59edd693816d52017b2833411ff62ae7"
+        },
+        {
+          "source_id": "filing-fund",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
+          "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
+          "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
+          "quote": "本基金为创业投资FOF基金，将通过投资主基金方\n式，对空天产业领域内的优质企业开展创业投资或从事与投资相关的活动。",
+          "quote_hash": "8e9ed84c095da3b4910fd4dd7c77280d110d3e8afa8fe47a9bcf397419f3c1e8"
+        },
         {
           "source_id": "FISRC-57de475f4ec2ac5a",
           "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
@@ -337,7 +386,7 @@
           "quote_hash": "ef1a3c84f19febf3822077b0defbdb7d3dd1bf7e0074244e431160ed8c99c6aa"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

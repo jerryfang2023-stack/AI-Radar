@@ -220,11 +220,24 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Maverick Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Maverick Capital官网应用程序包中的首页元数据称其为全球投资机构，结合深入基本面研究和数据驱动洞察管理客户资本；官方时间线记载公司于1993年创立。",
+      "coverage_note": "官网首页无法直接提取正文；此条引用同域官方首页应用程序包中可读的元数据与时间线字符串。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "基本面研究与数据驱动洞察",
+          "source_id": "homepage-metadata"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1993",
+          "description": "官网时间线记载Maverick Capital创立。",
+          "source_id": "history-1993"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮参投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -239,8 +252,32 @@
           "source_id": "FISRC-284ec16980778f24"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.maverickcapital.com/",
+          "source_id": "homepage-metadata",
+          "url": "https://www.maverickcapital.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "homepage-metadata",
+          "source_url": "https://www.maverickcapital.com/assets/index-Cbce7i7V.js",
+          "source_title": "Maverick Capital official website application bundle",
+          "source_content_hash": "dcb1d21683f5075a76a2d81cb1164a0826b8b9e295b557b0251a0deaeb5a231c",
+          "quote": "Maverick Capital is a global investment firm applying deep fundamental research and data-driven insights to preserve and grow client capital.",
+          "quote_hash": "26dd8e871182b58c175216bfebde571031956656c6508c214ed211266373927d"
+        },
+        {
+          "source_id": "history-1993",
+          "source_url": "https://www.maverickcapital.com/assets/index-Cbce7i7V.js",
+          "source_title": "Maverick Capital official website application bundle",
+          "source_content_hash": "dcb1d21683f5075a76a2d81cb1164a0826b8b9e295b557b0251a0deaeb5a231c",
+          "quote": "year:\"1993\",title:\"Maverick Capital is founded\"",
+          "quote_hash": "0382533b68571a8e74c3434ac9b381a7740811ec566a481f61b43abf95eb1044"
+        },
         {
           "source_id": "FISRC-c224adac23aa7c1e",
           "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
@@ -266,7 +303,7 @@
           "quote_hash": "58c100fd471e1350d829e77117467236d5dbb132f5843d37304bbd3202a897fc"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

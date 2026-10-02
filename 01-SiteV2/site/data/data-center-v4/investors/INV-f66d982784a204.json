@@ -342,12 +342,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Fidelity Management & Research Company 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Fidelity官方历史页面记载，Edward Johnson 2d于1946年创立Fidelity Management & Research，作为Fidelity Fund的唯一顾问。该历史材料不单独说明该实体当前的法律范围或投资职能。",
+      "coverage_note": "本条基于Fidelity官方历史页面；仅确认1946年创立及当时与Fidelity Fund的顾问关系，不据此推断当前法律实体范围。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "1946",
+          "source_id": "history"
+        },
+        {
+          "field": "historical_role",
+          "label": "历史角色",
+          "value": "Fidelity Fund的唯一顾问",
+          "source_id": "history"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1946",
+          "description": "Fidelity Management & Research成立；官网称其当时为Fidelity Fund的唯一顾问。",
+          "source_id": "history"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官方历史记载其成立时承担Fidelity Fund唯一顾问职责。",
+          "source_id": "history"
+        },
         {
           "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮联合领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-926f8f2e0ad24f56"
@@ -361,8 +384,24 @@
           "source_id": "FISRC-f911788bc29402eb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Fidelity官方历史页面",
+          "value": "https://about.fidelity.com/",
+          "source_id": "history",
+          "url": "https://about.fidelity.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "history",
+          "source_url": "https://about.fidelity.com/",
+          "source_title": "Fidelity Investments | About Fidelity",
+          "source_content_hash": "2c2bd3fb68a73e6814ca4bd33e040e73f4f0ef7c7d8a56c738e05d901db9b8fd",
+          "quote": "After taking over the Fidelity Fund three years earlier, in 1946 Edward Johnson 2d founded a new company, Fidelity Management & Research, to act as the sole adviser to Fidelity Fund.",
+          "quote_hash": "343ba7660ab0fae22de6a4b64cd42c62c164c9d32469470eb53e4c2d84eb817b"
+        },
         {
           "source_id": "FISRC-926f8f2e0ad24f56",
           "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
@@ -388,7 +427,7 @@
           "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

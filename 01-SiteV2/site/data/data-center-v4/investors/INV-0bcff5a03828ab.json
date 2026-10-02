@@ -139,19 +139,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "MoreTech Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "MoreTech Ventures是2020年成立的风险投资机构，重点支持面向以色列及与以色列相关市场的成长期机会。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2020",
+          "source_id": "about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "成长期",
+          "source_id": "about"
+        },
+        {
+          "field": "geography",
+          "label": "地域",
+          "value": "以色列及与以色列相关的投资机会",
+          "source_id": "about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020",
+          "description": "官网记载MoreTech Ventures于2020年成立。",
+          "source_id": "about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：enso · A轮 · 2026-10-01 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7877f8925288c583"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.moretech.vc/",
+          "source_id": "about",
+          "url": "https://www.moretech.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "about",
+          "source_url": "https://www.moretech.vc/",
+          "source_title": "MoreTech VC",
+          "source_content_hash": "a0ace7754638af1cd509ab9a65b69bd665c6b97b5f0f12b4d9b13e22b1ec66ea",
+          "quote": "MoreTech Ventures was founded in 2020, with the objective of funding great management teams with outstanding technology, targeted at solving meaningful problems.",
+          "quote_hash": "1195550885824beef99c19760608a6ac085b35c7222695332c60b661d3fb3776"
+        },
+        {
+          "source_id": "focus",
+          "source_url": "https://www.moretech.vc/",
+          "source_title": "MoreTech VC",
+          "source_content_hash": "a0ace7754638af1cd509ab9a65b69bd665c6b97b5f0f12b4d9b13e22b1ec66ea",
+          "quote": "We focus on Israeli and Israeli-related growth-stage investment opportunities, across all market segments.",
+          "quote_hash": "19e18de3797faeef30f64f977f7ec2929ffc03b9f459aab1f5ec1334cf064c59"
+        },
         {
           "source_id": "FISRC-7877f8925288c583",
           "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
@@ -161,7 +209,8 @@
           "quote_hash": "1c3e7099004b631f4b36a507df37a5b9764f8debf9a68fe77bec24ee047a5359"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

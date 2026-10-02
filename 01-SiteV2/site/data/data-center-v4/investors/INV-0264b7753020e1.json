@@ -124,8 +124,8 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "John Laban 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_note": "OpsLevel官方资料可确认John Laban的身份与公司职务，但该页面不证明其个人投资记录；此档案仅收录可核验职业信息，不扩写投资履历。",
+      "summary": "OpsLevel官方团队页列John Laban为公司CEO及联合创始人。当前核实内容限于该职业身份，个人投资经历未由该来源确认。",
       "facts": [],
       "milestones": [],
       "track_record": [
@@ -135,7 +135,33 @@
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "CEO & Co-Founder",
+          "organization": "OpsLevel",
+          "source_id": "role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "OpsLevel",
+          "title": "CEO & Co-Founder",
+          "period": "2026-10-02官网页面",
+          "description": "OpsLevel官方团队页将John Laban列为CEO及联合创始人。",
+          "source_id": "role"
+        }
+      ],
+      "education": [],
+      "experience_summary": "已核实的公开职业信息仅包括OpsLevel现职；该来源没有个人投资履历或教育信息。",
       "sources": [
+        {
+          "source_id": "role",
+          "source_url": "https://www.opslevel.com/about",
+          "source_title": "About Us | OpsLevel",
+          "source_content_hash": "fc26d89eae2de2f1f7c4316ee1caa3441ca844d5a4db06f76f2dbe1c9ea37d52",
+          "quote": "John Laban CEO & Co-Founder",
+          "quote_hash": "82356af8b2562864e8e1286b317d7affa96ec8b1e5fbced657be5731cf454734"
+        },
         {
           "source_id": "FISRC-9fd6ba5210b37fed",
           "source_url": "https://modem.dev/blog/modem-raises-4-4m",
@@ -145,7 +171,7 @@
           "quote_hash": "7b9e4823e10bdb7c661a9b549d007a6632ae645732d94a94b5bb5ab3e5dd8065"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

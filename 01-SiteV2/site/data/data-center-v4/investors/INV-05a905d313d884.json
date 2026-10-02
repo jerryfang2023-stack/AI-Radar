@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Overlap Holdings 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Overlap Holdings聚焦科学创新与硬件交叉领域的前沿科技公司，官网称其投资Seed、A轮和B轮，并以非领投方身份跟投。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "科学创新与硬件交叉的前沿科技",
+          "source_id": "thesis"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Seed、A、B轮",
+          "source_id": "stage"
+        },
+        {
+          "field": "investment_role",
+          "label": "投资角色",
+          "value": "不领投，倾向与优秀VC共同投资",
+          "source_id": "stage"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,32 @@
           "source_id": "FISRC-840402012d166d60"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://overlapholdings.com/about-us/",
+          "source_id": "thesis",
+          "url": "https://overlapholdings.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "thesis",
+          "source_url": "https://overlapholdings.com/about-us/",
+          "source_title": "About us &#8211; Overlap Holdings",
+          "source_content_hash": "5360c0fbaa8fcf6fec80624fde41b7830e95a717d1cfa6cc86eaf53db1063202",
+          "quote": "We exclusively invest in companies building technologies at the intersection of scientific innovation and hardware.",
+          "quote_hash": "b98113345c38edd1b9b2986de75d9d59d9eec9463dce37de87b821bbf2799429"
+        },
+        {
+          "source_id": "stage",
+          "source_url": "https://overlapholdings.com/about-us/",
+          "source_title": "About us &#8211; Overlap Holdings",
+          "source_content_hash": "5360c0fbaa8fcf6fec80624fde41b7830e95a717d1cfa6cc86eaf53db1063202",
+          "quote": "We invest in Seed, A, and B equity rounds of frontier tech startups. We do not lead rounds, but prefer to follow great VCs",
+          "quote_hash": "60d0af5ef8276f7a6b927505ca74bac9b08c204425f2a0522982f686c56dc681"
+        },
         {
           "source_id": "FISRC-840402012d166d60",
           "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
@@ -161,7 +203,8 @@
           "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

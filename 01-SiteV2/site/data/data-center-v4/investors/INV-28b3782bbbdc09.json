@@ -180,11 +180,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Wing Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Wing Venture Capital官网将其描述为由创始人和运营者组成的早期风险投资机构，主投AI优先经济的Seed与Series A公司；机构于2013年创立，早期投资论点围绕数据云计算重塑企业。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Seed、Series A",
+          "source_id": "about-stage"
+        },
+        {
+          "field": "focus",
+          "label": "投资主题",
+          "value": "AI优先经济",
+          "source_id": "about-stage"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2013",
+          "description": "官网记载Wing于2013年创立。",
+          "source_id": "about-founded"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Synthefy · 种子轮 · 2026-08-18 · 本轮领投 · $6.5M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -195,8 +213,40 @@
           "source_id": "FISRC-151268915a1d6942"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.wing.vc/about",
+          "source_id": "about-stage",
+          "url": "https://www.wing.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "about-early",
+          "source_url": "https://www.wing.vc/about",
+          "source_title": "About Us | Wing Venture Capital",
+          "source_content_hash": "304e20b66a4f28ee513379549f2d42551dfdf66497d3817d9c0ab3618d79c057",
+          "quote": "Wing is an early-stage venture firm built by founders and operators.",
+          "quote_hash": "eb629d96aa084ba5ed0dc220d55debd4ed1dbbeece0d3eeb28f1793d99e810e8"
+        },
+        {
+          "source_id": "about-stage",
+          "source_url": "https://www.wing.vc/about",
+          "source_title": "About Us | Wing Venture Capital",
+          "source_content_hash": "304e20b66a4f28ee513379549f2d42551dfdf66497d3817d9c0ab3618d79c057",
+          "quote": "We lead Seed and Series A investments, backing founders who are building the AI-first economy.",
+          "quote_hash": "20e6a56b39e35d590feea0d9a0c5d892e282eae0d55beb645932c03a858a9625"
+        },
+        {
+          "source_id": "about-founded",
+          "source_url": "https://www.wing.vc/about",
+          "source_title": "About Us | Wing Venture Capital",
+          "source_content_hash": "304e20b66a4f28ee513379549f2d42551dfdf66497d3817d9c0ab3618d79c057",
+          "quote": "We founded Wing in 2013 on the bet that data cloud computing would reshape the enterprise.",
+          "quote_hash": "4c3394cbd0c419b294434ae290ee6e49351300ef9d30595072a8e1ab2b03ec04"
+        },
         {
           "source_id": "FISRC-7cafec2373293af1",
           "source_url": "https://www.synthefy.com/blog/synthefy-raises-6-5m-for-structured-data-foundation-models",
@@ -214,7 +264,8 @@
           "quote_hash": "2397896249a53c0a05d88c5af2e95c70b31fe19f0af9b5e1037f43cfb49e7144"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

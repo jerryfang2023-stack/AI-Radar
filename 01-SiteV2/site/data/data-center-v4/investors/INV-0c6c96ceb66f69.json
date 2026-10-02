@@ -123,10 +123,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Eric Schmidt's First Spark Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网显示Eric Schmidt为Founding Non-Managing Partner兼战略顾问；本条只记录该公开身份，不据此称其管理该基金。",
+      "summary": "First Spark Ventures是专注深科技的风险投资基金，投资有望让世界更健康、更安全和更高效的突破性技术；官网列Eric Schmidt为创始非管理合伙人及战略顾问。",
+      "facts": [
+        {
+          "field": "fund_focus",
+          "label": "基金方向",
+          "value": "深科技",
+          "source_id": "fund"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资主题",
+          "value": "改善健康、安全与生产力的突破性技术",
+          "source_id": "fund"
+        },
+        {
+          "field": "Eric Schmidt官网身份",
+          "label": "Eric Schmidt身份",
+          "value": "创始非管理合伙人、战略顾问",
+          "source_id": "team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +153,32 @@
           "source_id": "FISRC-3c1b4f6326a3ee76"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.firstsparkventures.com/",
+          "source_id": "fund",
+          "url": "https://www.firstsparkventures.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fund",
+          "source_url": "https://www.firstsparkventures.com/",
+          "source_title": "First Spark Ventures: Home",
+          "source_content_hash": "acc00f0294fa5480f42cf46b4f1e30314a3d825c9d82b041dbc7ac3a4ada4348",
+          "quote": "First Spark Ventures is a Deep Tech venture capital fund investing in breakthrough technologies that make the world healthier, safer, and more productive.",
+          "quote_hash": "dc8267f022e1eb9deeed52c68b4b25b5b8dfbccfca28fb41603fb5dc9e10dd56"
+        },
+        {
+          "source_id": "team",
+          "source_url": "https://www.firstsparkventures.com/",
+          "source_title": "First Spark Ventures: Home",
+          "source_content_hash": "acc00f0294fa5480f42cf46b4f1e30314a3d825c9d82b041dbc7ac3a4ada4348",
+          "quote": "Eric Schmidt, Ph.D. Strategic Advisor & Founding Non-Managing Partner",
+          "quote_hash": "e9cb3577179ebebd8db2442e29ff30000725c554e90031bcf40e2700dc45c7e9"
+        },
         {
           "source_id": "FISRC-3c1b4f6326a3ee76",
           "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
@@ -145,7 +188,7 @@
           "quote_hash": "21687a98084e726aa8f7c265c14c8e03bd1bafe6732b59331da83b20dc408489"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

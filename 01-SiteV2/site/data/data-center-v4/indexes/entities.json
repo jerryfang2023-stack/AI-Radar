@@ -74950,12 +74950,35 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Fidelity Management & Research Company 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Fidelity官方历史页面记载，Edward Johnson 2d于1946年创立Fidelity Management & Research，作为Fidelity Fund的唯一顾问。该历史材料不单独说明该实体当前的法律范围或投资职能。",
+        "coverage_note": "本条基于Fidelity官方历史页面；仅确认1946年创立及当时与Fidelity Fund的顾问关系，不据此推断当前法律实体范围。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "创立年份",
+            "value": "1946",
+            "source_id": "history"
+          },
+          {
+            "field": "historical_role",
+            "label": "历史角色",
+            "value": "Fidelity Fund的唯一顾问",
+            "source_id": "history"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1946",
+            "description": "Fidelity Management & Research成立；官网称其当时为Fidelity Fund的唯一顾问。",
+            "source_id": "history"
+          }
+        ],
         "track_record": [
+          {
+            "description": "官方历史记载其成立时承担Fidelity Fund唯一顾问职责。",
+            "source_id": "history"
+          },
           {
             "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮联合领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-926f8f2e0ad24f56"
@@ -74969,8 +74992,24 @@
             "source_id": "FISRC-f911788bc29402eb"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Fidelity官方历史页面",
+            "value": "https://about.fidelity.com/",
+            "source_id": "history",
+            "url": "https://about.fidelity.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "history",
+            "source_url": "https://about.fidelity.com/",
+            "source_title": "Fidelity Investments | About Fidelity",
+            "source_content_hash": "2c2bd3fb68a73e6814ca4bd33e040e73f4f0ef7c7d8a56c738e05d901db9b8fd",
+            "quote": "After taking over the Fidelity Fund three years earlier, in 1946 Edward Johnson 2d founded a new company, Fidelity Management & Research, to act as the sole adviser to Fidelity Fund.",
+            "quote_hash": "343ba7660ab0fae22de6a4b64cd42c62c164c9d32469470eb53e4c2d84eb817b"
+          },
           {
             "source_id": "FISRC-926f8f2e0ad24f56",
             "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
@@ -74996,7 +75035,7 @@
             "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02"
       },
       "activity_count": 5,
       "portfolio_companies": [
@@ -87942,12 +87981,46 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "LG Technology Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "LG Technology Ventures官网称其于2018年成立、总部位于硅谷，投资AI、生物科技和清洁科技等领域的早期及成长期公司，并可连接LG集团资源。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "2018",
+            "source_id": "about"
+          },
+          {
+            "field": "headquarters",
+            "label": "总部",
+            "value": "硅谷",
+            "source_id": "about"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "早期及成长期",
+            "source_id": "about"
+          },
+          {
+            "field": "focus",
+            "label": "关注领域",
+            "value": "AI、生物科技、清洁科技",
+            "source_id": "about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2018",
+            "description": "官网称LG Technology Ventures成立。",
+            "source_id": "about"
+          }
+        ],
         "track_record": [
+          {
+            "description": "官网称被投企业可获得LG集团全球网络带来的知识与合作机会。",
+            "source_id": "about"
+          },
           {
             "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-3372eff279ee29db"
@@ -87961,8 +88034,24 @@
             "source_id": "FISRC-1811bc88b6a13090"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.lgtechventures.com/",
+            "source_id": "about",
+            "url": "https://www.lgtechventures.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "about",
+            "source_url": "https://www.lgtechventures.com/",
+            "source_title": "LG Technology Ventures",
+            "source_content_hash": "a39a86982913905c79492190d518be52fd1b66c184d1c29235f4d2b97b068fda",
+            "quote": "Founded in 2018 and headquartered in Silicon Valley, we partner with early- and growth-stage companies across sectors including AI, biotech, and cleantech.",
+            "quote_hash": "b3e026bc23a67a105ee4769357831abbd5c7ea1d756925beda525ba539955aa6"
+          },
           {
             "source_id": "FISRC-3372eff279ee29db",
             "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
@@ -87988,7 +88077,8 @@
             "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 3,
       "portfolio_companies": [
@@ -112510,11 +112600,29 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Forerunner Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Forerunner Ventures官网将其定位为早期风险投资机构，投资希望从起步阶段定义新类别的创始人；官网标示成立于2012年并由创始人主导投资团队。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "早期",
+            "source_id": "about"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资理念",
+            "value": "支持从起步阶段定义新类别的创始人",
+            "source_id": "about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2012",
+            "description": "官网标示Forerunner Ventures成立于2012年。",
+            "source_id": "founded"
+          }
+        ],
         "track_record": [
           {
             "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮领投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -112525,8 +112633,32 @@
             "source_id": "FISRC-55e5e881c734a50f"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.forerunnerventures.com/?page_id=399",
+            "source_id": "about",
+            "url": "https://www.forerunnerventures.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "about",
+            "source_url": "https://www.forerunnerventures.com/?page_id=399",
+            "source_title": "Forerunner Ventures",
+            "source_content_hash": "ef798855b1d6f2fcc232d92a404f9c34736b322a05780bffcdc3801398990eae",
+            "quote": "Forerunner is an early-stage venture firm that invests in founders with the vision to define entire categories and the courage to own the totality of what they build from the start.",
+            "quote_hash": "05391fac2de097e174bda175f05c87959afee8dda9204bf2ef90c07d45c77d61"
+          },
+          {
+            "source_id": "founded",
+            "source_url": "https://www.forerunnerventures.com/?page_id=399",
+            "source_title": "Forerunner Ventures",
+            "source_content_hash": "ef798855b1d6f2fcc232d92a404f9c34736b322a05780bffcdc3801398990eae",
+            "quote": "2012 Founded in",
+            "quote_hash": "712ded800cc1885e44c084363cbe7d4fead08c8c01112d4f390899d1364989dc"
+          },
           {
             "source_id": "FISRC-39cbb5f315cdae11",
             "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
@@ -112544,7 +112676,8 @@
             "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -112849,11 +112982,35 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Quadrille Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Quadrille Capital官网称其2001年创立，是独立投资管理机构，覆盖风险投资和成长型股权投资。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "创立年份",
+            "value": "2001",
+            "source_id": "firm"
+          },
+          {
+            "field": "investment_strategy",
+            "label": "策略",
+            "value": "风险投资、成长型股权投资",
+            "source_id": "firm"
+          },
+          {
+            "field": "organization_type",
+            "label": "机构类型",
+            "value": "独立投资管理机构",
+            "source_id": "firm"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2001",
+            "description": "官网称Quadrille于2001年创立。",
+            "source_id": "firm"
+          }
+        ],
         "track_record": [
           {
             "description": "融资来源记录：Reco · B轮扩展 · 2026-09-29 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -112868,8 +113025,24 @@
             "source_id": "FISRC-0d891f327f6f719c"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.quadrillecapital.com/our-firm/",
+            "source_id": "firm",
+            "url": "https://www.quadrillecapital.com/our-firm/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "firm",
+            "source_url": "https://www.quadrillecapital.com/our-firm/",
+            "source_title": "Our firm - Quadrille Capital",
+            "source_content_hash": "dfbca690efb3c899a5a037b23f0cdd7e7dda2f3effad2ae0b444ef055ad99a2c",
+            "quote": "Founded in 2001, Quadrille is an independent investment manager providing global coverage of Venture Capital and Growth Equity.",
+            "quote_hash": "2e75ae6219d9aec60ffdf41a6eefc52bad57f7f9f24a0c24accb98734bd4c97f"
+          },
           {
             "source_id": "FISRC-5ade874e36670280",
             "source_url": "https://news.qq.com/rain/a/20260930A000JE00",
@@ -112895,7 +113068,8 @@
             "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 3,
       "portfolio_companies": [
@@ -114433,10 +114607,22 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "U&I Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "U&I Ventures官网称其聚焦最早期的AI原生云创新，面向工程、IT和安全交叉领域的软件基础设施创业公司，并以企业技术运营者社群为支持方式。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "最早期",
+            "source_id": "thesis"
+          },
+          {
+            "field": "focus",
+            "label": "关注方向",
+            "value": "AI原生云创新、软件基础设施、工程、IT与安全",
+            "source_id": "thesis"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -114448,8 +114634,24 @@
             "source_id": "FISRC-dffcc55088dd6fc6"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://uandi.vc/",
+            "source_id": "thesis",
+            "url": "https://uandi.vc/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "thesis",
+            "source_url": "https://uandi.vc/",
+            "source_title": "U&amp;I Ventures",
+            "source_content_hash": "0e540d7a67873ab51ed00731e1c9c32bb71dd504d14ff788dee0313771221f12",
+            "quote": "Our thesis is to lean into AI-native cloud innovation at the earliest stages by building the world’s largest curated technical community of operators sitting in CIO, CTO, and CISO roles to do two things.",
+            "quote_hash": "872410ae327d056b7f147f32dbb43fb9fda2266a669cc7922d20ad144ed4f16d"
+          },
           {
             "source_id": "FISRC-212b01f9c4f8d05c",
             "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
@@ -114467,7 +114669,8 @@
             "quote_hash": "b215777c949ba082207bfc3f75c4369a1e3c063d802a02c2b550b33d37bcc681"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -122185,12 +122388,34 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Mantis VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Mantis VC官网称其由Alex Pall、Drew Taggart及风险投资人士和创业者Milan Koch、Jeffrey Evans组成，投资早期科技型公司；官网将Seed与Series A列为投资重点。",
+        "facts": [
+          {
+            "field": "founding_team",
+            "label": "创始/合伙团队",
+            "value": "Alex Pall、Drew Taggart、Milan Koch、Jeffrey Evans",
+            "source_id": "about-team"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "Seed、Series A",
+            "source_id": "about-focus"
+          },
+          {
+            "field": "focus",
+            "label": "关注领域",
+            "value": "科技赋能型初创公司",
+            "source_id": "about-team"
+          }
+        ],
         "milestones": [],
         "track_record": [
+          {
+            "description": "官网自述已进行130余笔投资。",
+            "source_id": "about-investments"
+          },
           {
             "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-1c7459d2ce055880"
@@ -122200,8 +122425,40 @@
             "source_id": "FISRC-f4c8c4cc3e97ab74"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.mantisvc.com/about",
+            "source_id": "about-team",
+            "url": "https://www.mantisvc.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "about-team",
+            "source_url": "https://www.mantisvc.com/about",
+            "source_title": "About",
+            "source_content_hash": "9ebe129ad563d430498718ee696b8b1acd154c93684104f4ef850cb8a5cdb179",
+            "quote": "Mantis VC is a partnership between Alex Pall and Drew Taggart, otherwise known as The Chainsmokers, and experienced Venture Capital professionals and entrepreneurs Milan Koch and Jeffrey Evans that invests opportunistically in early stage technology enabled startups.",
+            "quote_hash": "7b645726eee11a1bab539357c573040b9400e11035261aaff6334494e498e509"
+          },
+          {
+            "source_id": "about-focus",
+            "source_url": "https://www.mantisvc.com/about",
+            "source_title": "About",
+            "source_content_hash": "9ebe129ad563d430498718ee696b8b1acd154c93684104f4ef850cb8a5cdb179",
+            "quote": "Seed & Series A technology-enabled startups",
+            "quote_hash": "f51eab578032a55102a699a752f03da9e6830d27b8e304c0ae82c4e29f0d0116"
+          },
+          {
+            "source_id": "about-investments",
+            "source_url": "https://www.mantisvc.com/about",
+            "source_title": "About",
+            "source_content_hash": "9ebe129ad563d430498718ee696b8b1acd154c93684104f4ef850cb8a5cdb179",
+            "quote": "Through our 130+ investments, we’ve listened to and worked with many unique and diverse founders.",
+            "quote_hash": "1951c92f18be4de7391fcd8de2cc2cb47ff1af4c079201eb7e65892596eb003b"
+          },
           {
             "source_id": "FISRC-1c7459d2ce055880",
             "source_url": "https://factory.ai/news/5-billion-valuation",
@@ -122219,7 +122476,8 @@
             "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 3,
       "portfolio_companies": [
@@ -127151,18 +127409,43 @@
         "profile_type": "organization",
         "identity_status": "verified",
         "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "龙芯创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "金卡智能的公告将龙芯（深圳）私募创业投资基金管理有限公司列为共青城龙芯汇航创业投资合伙企业（有限合伙）的发起管理方，并披露其私募基金管理人登记编号P1068738。",
+        "coverage_note": "队列名称“龙芯创投”为简称；本条以公告中的法定名称和管理人登记号识别主体。公告同时说明的空天产业FOF是特定基金的投资方向，不代表管理人全部策略。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "法定名称",
+            "value": "龙芯（深圳）私募创业投资基金管理有限公司",
+            "source_id": "filing-identity"
+          },
+          {
+            "field": "registered_capital",
+            "label": "注册资本",
+            "value": "1,000万元",
+            "source_id": "filing-identity"
+          },
+          {
+            "field": "business_scope",
+            "label": "公告所列经营范围",
+            "value": "私募股权投资基金管理、创业投资基金管理服务",
+            "source_id": "filing-identity"
+          },
+          {
+            "field": "manager_registration",
+            "label": "私募基金管理人登记编号",
+            "value": "P1068738",
+            "source_id": "filing-registration"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
-            "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-57de475f4ec2ac5a"
+            "description": "金卡智能公告披露其发起设立共青城龙芯汇航创业投资合伙企业（有限合伙）；该基金为创业投资FOF，公告所列方向为空天产业。",
+            "source_id": "filing-fund"
           },
           {
             "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-            "source_id": "FISRC-270f085d1cb4d09f"
+            "source_id": "FISRC-57de475f4ec2ac5a"
           },
           {
             "description": "融资来源记录：原力引擎 · 天使+轮 · 2026-08-26 · 本轮参投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -127171,6 +127454,30 @@
         ],
         "contacts": [],
         "sources": [
+          {
+            "source_id": "filing-identity",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
+            "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
+            "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
+            "quote": "名称：龙芯（深圳）私募创业投资基金管理有限公司\n注册资本：1,000万元\n类型：有限责任公司",
+            "quote_hash": "9f7c9b2660bb27dd140a2bd7adb6f6bba4c6e9e60d9526efb769e51432ad8aa1"
+          },
+          {
+            "source_id": "filing-registration",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
+            "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
+            "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
+            "quote": "登记备案情况：龙芯深圳已在中国证券投资基金业协会登记备案私募基\n金管理人，登记编号：P1068738。",
+            "quote_hash": "8c7b5b55a9f6a354210c6a4c63bfa4bd59edd693816d52017b2833411ff62ae7"
+          },
+          {
+            "source_id": "filing-fund",
+            "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
+            "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
+            "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
+            "quote": "本基金为创业投资FOF基金，将通过投资主基金方\n式，对空天产业领域内的优质企业开展创业投资或从事与投资相关的活动。",
+            "quote_hash": "8e9ed84c095da3b4910fd4dd7c77280d110d3e8afa8fe47a9bcf397419f3c1e8"
+          },
           {
             "source_id": "FISRC-57de475f4ec2ac5a",
             "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
@@ -127196,7 +127503,7 @@
             "quote_hash": "ef1a3c84f19febf3822077b0defbdb7d3dd1bf7e0074244e431160ed8c99c6aa"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02"
       },
       "activity_count": 4,
       "portfolio_companies": [
@@ -134172,11 +134479,35 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Tencent 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "腾讯官网称其为全球互联网和科技公司，1998年创立于中国深圳，开发面向消费者和企业的产品与服务。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "1998",
+            "source_id": "history"
+          },
+          {
+            "field": "headquarters",
+            "label": "总部",
+            "value": "中国深圳",
+            "source_id": "history"
+          },
+          {
+            "field": "business",
+            "label": "业务",
+            "value": "互联网与科技产品和服务",
+            "source_id": "overview"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1998",
+            "description": "腾讯官网记载公司于1998年成立，总部位于深圳。",
+            "source_id": "history"
+          }
+        ],
         "track_record": [
           {
             "description": "融资来源记录：Lovable · C轮 · 2026-08-12 · 本轮参投 · $400 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -134187,8 +134518,32 @@
             "source_id": "FISRC-b382348e8f96c9b9"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+            "source_id": "overview",
+            "url": "https://www.tencent.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "overview",
+            "source_url": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+            "source_title": "Who we are - Tencent",
+            "source_content_hash": "4f0c701113ac8d4ab9bdddca5f79621f61137867820f70175f67c8ac211697a5",
+            "quote": "Tencent is a world-leading internet and technology company that develops innovative products and services to improve the quality of life of people around the world.",
+            "quote_hash": "dccd6edd8b412bcc64a98bf6a4d3641002675bf81b6726dd8f384c3692c3d635"
+          },
+          {
+            "source_id": "history",
+            "source_url": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+            "source_title": "Who we are - Tencent",
+            "source_content_hash": "4f0c701113ac8d4ab9bdddca5f79621f61137867820f70175f67c8ac211697a5",
+            "quote": "Founded in 1998 with its headquarters in Shenzhen, China, Tencent's guiding principle is to use technology for good.",
+            "quote_hash": "d52d607074c1ccc080cff41590fa60147c95b2c1000a0eac78a8162ab6d2a07d"
+          },
           {
             "source_id": "FISRC-94676d99b2defaa4",
             "source_url": "https://lovable.dev/blog/series-c",
@@ -134206,7 +134561,8 @@
             "quote_hash": "5888e5985b14641653ee65e4d3420c693c8d354d4bf2fc626e1bc2d956da8148"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -153801,9 +154157,15 @@
         "profile_type": "organization",
         "identity_status": "verified",
         "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Quiet Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "summary": "Quiet Capital官网称其团队由创业建设者组成，从公司创立之初投资有潜力的创始人。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "Day Zero / 创业起始阶段",
+            "source_id": "homepage"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -153815,8 +154177,24 @@
             "source_id": "FISRC-7a85c433c7dbed44"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://quiet.com/",
+            "source_id": "homepage",
+            "url": "https://quiet.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "homepage",
+            "source_url": "https://quiet.com/",
+            "source_title": "Quiet Capital",
+            "source_content_hash": "0f191b8d401041fb47d249895ddb9f46bf89a4621ec3cafd1e2fed3fe3ab6403",
+            "quote": "We are builders who invest in remarkable Founders from day zero.",
+            "quote_hash": "a50b268c06bdbd161f1eef53af95e1b6b8ba20853c188c42fdcc09799e97f62b"
+          },
           {
             "source_id": "FISRC-92bdc04603fa5ff2",
             "source_url": "https://multiples.vc/private-comps/suno",
@@ -153834,7 +154212,8 @@
             "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -154690,10 +155069,22 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "T. Rowe Price Associates, Inc. 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "T. Rowe Price Associates, Inc.官网披露其为SEC登记的投资顾问之一，为T. Rowe Price旗下策略、ETF和共同基金提供投资顾问服务，并属于T. Rowe Price Group, Inc.旗下子公司。",
+        "facts": [
+          {
+            "field": "business_role",
+            "label": "业务角色",
+            "value": "SEC登记投资顾问，为T. Rowe Price策略、ETF及共同基金提供投资顾问服务",
+            "source_id": "advisor-role"
+          },
+          {
+            "field": "parent_company",
+            "label": "所属集团",
+            "value": "T. Rowe Price Group, Inc.",
+            "source_id": "group"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -154705,8 +155096,40 @@
             "source_id": "FISRC-d47a3aba63bc33dc"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.troweprice.com/en/us/about-us",
+            "source_id": "advisor-role",
+            "url": "https://www.troweprice.com/en/us/about-us"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "legal-name",
+            "source_url": "https://www.troweprice.com/en/us/about-us",
+            "source_title": "About Us | T. Rowe Price",
+            "source_content_hash": "cb660d319e4e907341418875e4dc6e37426d26375704150f420377008a1271fe",
+            "quote": "T. Rowe Price Associates, Inc.",
+            "quote_hash": "b2104447b3fcc1404265e6203142323fd291a8a35db0f85e26ecf2ebc77b8e32"
+          },
+          {
+            "source_id": "advisor-role",
+            "source_url": "https://www.troweprice.com/en/us/about-us",
+            "source_title": "About Us | T. Rowe Price",
+            "source_content_hash": "cb660d319e4e907341418875e4dc6e37426d26375704150f420377008a1271fe",
+            "quote": "registered with the SEC, are investment advisers to T. Rowe Price strategies, ETFs and mutual funds.",
+            "quote_hash": "072e3d2cd3cc91942d9dc3dc9b6ddf9eafeb19ca7608c34cbac452a7a40d999b"
+          },
+          {
+            "source_id": "group",
+            "source_url": "https://www.troweprice.com/en/us/about-us",
+            "source_title": "About Us | T. Rowe Price",
+            "source_content_hash": "cb660d319e4e907341418875e4dc6e37426d26375704150f420377008a1271fe",
+            "quote": "TRPIS, TRPA and TRPIM are subsidiaries of T. Rowe Price Group, Inc.",
+            "quote_hash": "77acc02d51ff28e1c2eca6b663b0f92593dfd8c09b8d43e5c72550d84bafe256"
+          },
           {
             "source_id": "FISRC-b5e22ae086a6b353",
             "source_url": "https://www.anthropic.com/news/series-h",
@@ -154724,7 +155147,8 @@
             "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -162945,10 +163369,28 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Socratic Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Socratic Partners官网称其为早中期风险投资机构，主题聚焦半导体技术；官网同时说明其为The Raptor Group旗下关联机构。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "早期至中期",
+            "source_id": "about-thesis"
+          },
+          {
+            "field": "focus",
+            "label": "关注领域",
+            "value": "半导体技术",
+            "source_id": "about-thesis"
+          },
+          {
+            "field": "affiliation",
+            "label": "关联关系",
+            "value": "The Raptor Group关联机构",
+            "source_id": "about-affiliation"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -162960,8 +163402,32 @@
             "source_id": "FISRC-c98d10de3e945941"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.socraticpartners.com/about/",
+            "source_id": "about-thesis",
+            "url": "https://www.socraticpartners.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "about-thesis",
+            "source_url": "https://www.socraticpartners.com/about/",
+            "source_title": "About Us - Socratic Partners",
+            "source_content_hash": "a70bcb87995b0740922881260dab1e3ddb82c23adf6fb58d94559129be3a0ec1",
+            "quote": "Socratic Partners is an early to mid-stage venture capital firm that invests thematically in semiconductor technology that accelerates global advancement and drastically transforms industries.",
+            "quote_hash": "5ef40d669afa68d6e6e9467a9e16a4a7ba61eaefe7e961c3b21e011676698414"
+          },
+          {
+            "source_id": "about-affiliation",
+            "source_url": "https://www.socraticpartners.com/about/",
+            "source_title": "About Us - Socratic Partners",
+            "source_content_hash": "a70bcb87995b0740922881260dab1e3ddb82c23adf6fb58d94559129be3a0ec1",
+            "quote": "Socratic is an affiliate of The Raptor Group, a family office and venture capital firm established in 2009 that has active investments within the technology, consumer, financial services, healthcare, and sports and media verticals.",
+            "quote_hash": "a7b3c05aa9e5d15c433016bc76d2a6eea474dd9843de4820274a86fd55cf3afd"
+          },
           {
             "source_id": "FISRC-6d4642fdc4a2457c",
             "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
@@ -162979,7 +163445,8 @@
             "quote_hash": "79ca9010fb260bede6b4f64f868f374ac28150ce0d3e7b769a12853eb5889580"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -163509,10 +163976,28 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Triatomic Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Triatomic Capital官网将其描述为研究驱动型风险投资机构，从最早期开始投资变革性科技公司；总部位于帕洛阿尔托，采取全球投资策略。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "最早期",
+            "source_id": "thesis"
+          },
+          {
+            "field": "focus",
+            "label": "投资方向",
+            "value": "变革性科技公司",
+            "source_id": "thesis"
+          },
+          {
+            "field": "headquarters",
+            "label": "总部",
+            "value": "美国加州帕洛阿尔托",
+            "source_id": "location"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -163524,8 +164009,32 @@
             "source_id": "FISRC-840402012d166d60"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.triatomic.ai/",
+            "source_id": "thesis",
+            "url": "https://www.triatomic.ai/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "thesis",
+            "source_url": "https://www.triatomic.ai/",
+            "source_title": "Triatomic Capital | Venture Capital",
+            "source_content_hash": "0ead5c33cb4054b0aed2e297ece8cc1553cf84775fd438bf5d7e4d241442a445",
+            "quote": "Triatomic Capital is a research-driven venture firm that invests in transformative technology companies from their earliest stages.",
+            "quote_hash": "7161adb59c23e24dd47231e99f9d79aceda5f77e075e09aa3373901442ed3ad1"
+          },
+          {
+            "source_id": "location",
+            "source_url": "https://www.triatomic.ai/",
+            "source_title": "Triatomic Capital | Venture Capital",
+            "source_content_hash": "0ead5c33cb4054b0aed2e297ece8cc1553cf84775fd438bf5d7e4d241442a445",
+            "quote": "Headquartered in Palo Alto with a global investment mandate, we bring a deeply collaborative approach to partnering with visionary founders.",
+            "quote_hash": "5cb0d05fd7f0156fa030449ba0fa1a3fc7435a8688f5b6095acd6972d66ff99c"
+          },
           {
             "source_id": "FISRC-c6e81d3e611e6fe3",
             "source_url": "https://matx.com/research/series_b",
@@ -163543,7 +164052,8 @@
             "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -166093,10 +166603,16 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Garuda Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Garuda Ventures官网称其为首笔投资基金，为创始团队提供早期资本，并支持公司从初始构想到成长为品类领先企业。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "首轮/早期",
+            "source_id": "first-check"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -166104,8 +166620,24 @@
             "source_id": "FISRC-62e06e29d2d7be04"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.garuda.vc/",
+            "source_id": "first-check",
+            "url": "https://www.garuda.vc/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "first-check",
+            "source_url": "https://www.garuda.vc/",
+            "source_title": "Garuda Ventures | First check investors backing ambitious, relentless founders",
+            "source_content_hash": "fecbde7d6256e0c9d85c2a8d52e5e6f2cab1044b2e74f16f4edfd59f293e2f15",
+            "quote": "We are a first check fund We invest $500K to $1.5M behind founders as they go from a deck and a dream to a category defining company.",
+            "quote_hash": "a1f1f0cd3ab5f2b26c140cd40ad03cf170631f8c28d14857c90781aff811eefc"
+          },
           {
             "source_id": "FISRC-62e06e29d2d7be04",
             "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
@@ -166115,7 +166647,8 @@
             "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -167222,19 +167755,67 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "MoreTech Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "MoreTech Ventures是2020年成立的风险投资机构，重点支持面向以色列及与以色列相关市场的成长期机会。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "2020",
+            "source_id": "about"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "成长期",
+            "source_id": "about"
+          },
+          {
+            "field": "geography",
+            "label": "地域",
+            "value": "以色列及与以色列相关的投资机会",
+            "source_id": "about"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2020",
+            "description": "官网记载MoreTech Ventures于2020年成立。",
+            "source_id": "about"
+          }
+        ],
         "track_record": [
           {
             "description": "融资来源记录：enso · A轮 · 2026-10-01 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-7877f8925288c583"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.moretech.vc/",
+            "source_id": "about",
+            "url": "https://www.moretech.vc/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "about",
+            "source_url": "https://www.moretech.vc/",
+            "source_title": "MoreTech VC",
+            "source_content_hash": "a0ace7754638af1cd509ab9a65b69bd665c6b97b5f0f12b4d9b13e22b1ec66ea",
+            "quote": "MoreTech Ventures was founded in 2020, with the objective of funding great management teams with outstanding technology, targeted at solving meaningful problems.",
+            "quote_hash": "1195550885824beef99c19760608a6ac085b35c7222695332c60b661d3fb3776"
+          },
+          {
+            "source_id": "focus",
+            "source_url": "https://www.moretech.vc/",
+            "source_title": "MoreTech VC",
+            "source_content_hash": "a0ace7754638af1cd509ab9a65b69bd665c6b97b5f0f12b4d9b13e22b1ec66ea",
+            "quote": "We focus on Israeli and Israeli-related growth-stage investment opportunities, across all market segments.",
+            "quote_hash": "19e18de3797faeef30f64f977f7ec2929ffc03b9f459aab1f5ec1334cf064c59"
+          },
           {
             "source_id": "FISRC-7877f8925288c583",
             "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
@@ -167244,7 +167825,8 @@
             "quote_hash": "1c3e7099004b631f4b36a507df37a5b9764f8debf9a68fe77bec24ee047a5359"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -170512,10 +171094,22 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Capital One Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Capital One Ventures是Capital One的战略投资者，通过投资与Capital One业务相关、推动数据、技术和金融服务创新的初创公司加速集团创新。",
+        "facts": [
+          {
+            "field": "organization_type",
+            "label": "机构属性",
+            "value": "Capital One战略投资部门",
+            "source_id": "strategy"
+          },
+          {
+            "field": "focus",
+            "label": "投资方向",
+            "value": "数据、技术及金融服务领域，并与Capital One业务相关",
+            "source_id": "strategy"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -170523,8 +171117,24 @@
             "source_id": "FISRC-32de5b12bdde4fb9"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://growthventures.capitalone.com/",
+            "source_id": "strategy",
+            "url": "https://growthventures.capitalone.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "strategy",
+            "source_url": "https://growthventures.capitalone.com/",
+            "source_title": "Home | Capital One Ventures",
+            "source_content_hash": "fe770fa8974f80548b49a63708f91d652a619b82ecc750a3afcad565a4faa042",
+            "quote": "Capital One Ventures is a strategic investor, harnessing the potential of startups to accelerate innovation. We invest in pioneering companies that are transforming the future of data, technology and financial services and relate to the business of Capital One.",
+            "quote_hash": "3a688b18541ca1b33b6fc78af09f0c068a8cea38780c79c8f70e72564e898f15"
+          },
           {
             "source_id": "FISRC-32de5b12bdde4fb9",
             "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
@@ -170534,7 +171144,8 @@
             "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
           }
         ],
-        "last_verified_at": "2026-09-25"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -171135,19 +171746,67 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Iberis Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Iberis Capital是葡萄牙的私募股权与风险投资基金管理人，由四位合伙人于2017年创立，投资业务覆盖成长与收购、风险投资、收益型投资及可持续投资。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "成立年份",
+            "value": "2017",
+            "source_id": "about"
+          },
+          {
+            "field": "organization_type",
+            "label": "机构类型",
+            "value": "葡萄牙私募股权与风险投资基金管理人",
+            "source_id": "about"
+          },
+          {
+            "field": "strategies",
+            "label": "投资策略",
+            "value": "成长与收购、风险投资、收益型投资、可持续投资",
+            "source_id": "strategies"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2017",
+            "description": "Iberis Capital官网记载机构于2017年创立。",
+            "source_id": "about"
+          }
+        ],
         "track_record": [
           {
             "description": "融资来源记录：Traveltech Tryp.com · 轮次未披露 · 2026-09-30 · 本轮参投 · €1.9 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-ea432ae33551275b"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://iberiscapital.com/about-iberis/",
+            "source_id": "about",
+            "url": "https://iberiscapital.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "about",
+            "source_url": "https://iberiscapital.com/about-iberis/",
+            "source_title": "About Iberis - Iberis Capital",
+            "source_content_hash": "f117006d005fed18d704d6b442c321186782cb1e65bd1b4064ab8fcc4b861a9e",
+            "quote": "Iberis Capital is a Private Equity and Venture Capital fund manager founded in 2017 by four partners with a shared vision of the available opportunities in the Portuguese economy and the opportunity to build a true professional partnership in the Portuguese private equity landscape.",
+            "quote_hash": "51ba269b3aaa8e0f00f4db2352b1d4f2d201319d94dc61cec6595941c656fdb1"
+          },
+          {
+            "source_id": "strategies",
+            "source_url": "https://iberiscapital.com/about-iberis/",
+            "source_title": "About Iberis - Iberis Capital",
+            "source_content_hash": "f117006d005fed18d704d6b442c321186782cb1e65bd1b4064ab8fcc4b861a9e",
+            "quote": "The company mainly operates across four areas: Growth and Buyout, Venture Capital, Yielding Investments and Sustainable Investments.",
+            "quote_hash": "a666d83169771c6a7b8e2902914f116c8b021211cfd75fac0ba1dae9c80c8159"
+          },
           {
             "source_id": "FISRC-ea432ae33551275b",
             "source_url": "https://tech.eu/2026/09/30/from-six-engineering-students-to-10m-users-trypcom-raises-eur19m/",
@@ -171157,7 +171816,8 @@
             "quote_hash": "a88646d7b25948a6efdaa69be51ee0310f5a843fc7ff130dcf5c9c443ccc52fc"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -196582,11 +197242,24 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Maverick Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Maverick Capital官网应用程序包中的首页元数据称其为全球投资机构，结合深入基本面研究和数据驱动洞察管理客户资本；官方时间线记载公司于1993年创立。",
+        "coverage_note": "官网首页无法直接提取正文；此条引用同域官方首页应用程序包中可读的元数据与时间线字符串。",
+        "facts": [
+          {
+            "field": "investment_approach",
+            "label": "投资方式",
+            "value": "基本面研究与数据驱动洞察",
+            "source_id": "homepage-metadata"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "1993",
+            "description": "官网时间线记载Maverick Capital创立。",
+            "source_id": "history-1993"
+          }
+        ],
         "track_record": [
           {
             "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮参投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -196601,8 +197274,32 @@
             "source_id": "FISRC-284ec16980778f24"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.maverickcapital.com/",
+            "source_id": "homepage-metadata",
+            "url": "https://www.maverickcapital.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "homepage-metadata",
+            "source_url": "https://www.maverickcapital.com/assets/index-Cbce7i7V.js",
+            "source_title": "Maverick Capital official website application bundle",
+            "source_content_hash": "dcb1d21683f5075a76a2d81cb1164a0826b8b9e295b557b0251a0deaeb5a231c",
+            "quote": "Maverick Capital is a global investment firm applying deep fundamental research and data-driven insights to preserve and grow client capital.",
+            "quote_hash": "26dd8e871182b58c175216bfebde571031956656c6508c214ed211266373927d"
+          },
+          {
+            "source_id": "history-1993",
+            "source_url": "https://www.maverickcapital.com/assets/index-Cbce7i7V.js",
+            "source_title": "Maverick Capital official website application bundle",
+            "source_content_hash": "dcb1d21683f5075a76a2d81cb1164a0826b8b9e295b557b0251a0deaeb5a231c",
+            "quote": "year:\"1993\",title:\"Maverick Capital is founded\"",
+            "quote_hash": "0382533b68571a8e74c3434ac9b381a7740811ec566a481f61b43abf95eb1044"
+          },
           {
             "source_id": "FISRC-c224adac23aa7c1e",
             "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
@@ -196628,7 +197325,7 @@
             "quote_hash": "58c100fd471e1350d829e77117467236d5dbb132f5843d37304bbd3202a897fc"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02"
       },
       "activity_count": 3,
       "portfolio_companies": [
@@ -215360,11 +216057,29 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Wing Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Wing Venture Capital官网将其描述为由创始人和运营者组成的早期风险投资机构，主投AI优先经济的Seed与Series A公司；机构于2013年创立，早期投资论点围绕数据云计算重塑企业。",
+        "facts": [
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "Seed、Series A",
+            "source_id": "about-stage"
+          },
+          {
+            "field": "focus",
+            "label": "投资主题",
+            "value": "AI优先经济",
+            "source_id": "about-stage"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2013",
+            "description": "官网记载Wing于2013年创立。",
+            "source_id": "about-founded"
+          }
+        ],
         "track_record": [
           {
             "description": "融资来源记录：Synthefy · 种子轮 · 2026-08-18 · 本轮领投 · $6.5M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -215375,8 +216090,40 @@
             "source_id": "FISRC-151268915a1d6942"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.wing.vc/about",
+            "source_id": "about-stage",
+            "url": "https://www.wing.vc/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "about-early",
+            "source_url": "https://www.wing.vc/about",
+            "source_title": "About Us | Wing Venture Capital",
+            "source_content_hash": "304e20b66a4f28ee513379549f2d42551dfdf66497d3817d9c0ab3618d79c057",
+            "quote": "Wing is an early-stage venture firm built by founders and operators.",
+            "quote_hash": "eb629d96aa084ba5ed0dc220d55debd4ed1dbbeece0d3eeb28f1793d99e810e8"
+          },
+          {
+            "source_id": "about-stage",
+            "source_url": "https://www.wing.vc/about",
+            "source_title": "About Us | Wing Venture Capital",
+            "source_content_hash": "304e20b66a4f28ee513379549f2d42551dfdf66497d3817d9c0ab3618d79c057",
+            "quote": "We lead Seed and Series A investments, backing founders who are building the AI-first economy.",
+            "quote_hash": "20e6a56b39e35d590feea0d9a0c5d892e282eae0d55beb645932c03a858a9625"
+          },
+          {
+            "source_id": "about-founded",
+            "source_url": "https://www.wing.vc/about",
+            "source_title": "About Us | Wing Venture Capital",
+            "source_content_hash": "304e20b66a4f28ee513379549f2d42551dfdf66497d3817d9c0ab3618d79c057",
+            "quote": "We founded Wing in 2013 on the bet that data cloud computing would reshape the enterprise.",
+            "quote_hash": "4c3394cbd0c419b294434ae290ee6e49351300ef9d30595072a8e1ab2b03ec04"
+          },
           {
             "source_id": "FISRC-7cafec2373293af1",
             "source_url": "https://www.synthefy.com/blog/synthefy-raises-6-5m-for-structured-data-foundation-models",
@@ -215394,7 +216141,8 @@
             "quote_hash": "2397896249a53c0a05d88c5af2e95c70b31fe19f0af9b5e1037f43cfb49e7144"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -258650,10 +259398,22 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Resolute Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Resolute Ventures官网称其通常担任所投创始团队的领投方，并常作为创始人的首笔VC投资；其自述从创立到退出持续支持被投企业。",
+        "facts": [
+          {
+            "field": "investment_role",
+            "label": "投资角色",
+            "value": "通常领投，并常提供首笔VC投资",
+            "source_id": "approach"
+          },
+          {
+            "field": "support",
+            "label": "投后支持",
+            "value": "从创立到退出与创始人保持长期合作",
+            "source_id": "approach"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -258665,8 +259425,32 @@
             "source_id": "FISRC-7f8e788eab384554"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.resolute.vc/about",
+            "source_id": "approach",
+            "url": "https://www.resolute.vc/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "approach",
+            "source_url": "https://www.resolute.vc/about",
+            "source_title": "About Resolute Ventures",
+            "source_content_hash": "194df9085a44e353af393540d816295e37fbdf55dc9e225ad68132290cfcd108",
+            "quote": "We back our founders as a lead investor and are almost always their first VC check.",
+            "quote_hash": "3d85e2366e5db71b056809de579d366ddee4f5b614e9bfff5b215676bb8c39df"
+          },
+          {
+            "source_id": "support",
+            "source_url": "https://www.resolute.vc/about",
+            "source_title": "About Resolute Ventures",
+            "source_content_hash": "194df9085a44e353af393540d816295e37fbdf55dc9e225ad68132290cfcd108",
+            "quote": "From outset to exit, founders trust us and lean on us during the key inflection points as they build great companies.",
+            "quote_hash": "d3aaab77dbac6e02af569b684a7fa8770d8a6f2fbfd44770958f995cd87feaff"
+          },
           {
             "source_id": "FISRC-9e7066e699b3555c",
             "source_url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom",
@@ -258684,7 +259468,8 @@
             "quote_hash": "b7bab8ca83243fe88ae21f49ee2ba4bf472391655f731e15e339d8048c80418e"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -267934,19 +268719,114 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "国方创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "上海国方私募基金管理公司（品牌“国际国方”）是上海国际集团旗下科技产业投资机构，官网称其聚焦半导体、数字智能和生物医药。",
+        "coverage_note": "队列显示简称为“国方创投”；官网确认主体名称为上海国方私募基金管理公司、品牌为“国际国方”。档案以官方主体与品牌为准，并保留队列简称与正式名称间的映射说明。",
+        "facts": [
+          {
+            "field": "legal_name",
+            "label": "官网主体名称",
+            "value": "上海国方私募基金管理公司",
+            "source_id": "entity"
+          },
+          {
+            "field": "brand",
+            "label": "品牌",
+            "value": "国际国方",
+            "source_id": "brand"
+          },
+          {
+            "field": "parent_company",
+            "label": "所属集团",
+            "value": "上海国际集团",
+            "source_id": "brand"
+          },
+          {
+            "field": "founded",
+            "label": "成立时间",
+            "value": "2017年6月",
+            "source_id": "brand"
+          },
+          {
+            "field": "focus",
+            "label": "投资领域",
+            "value": "半导体、数字智能、生物医药",
+            "source_id": "focus"
+          },
+          {
+            "field": "aum",
+            "label": "管理规模",
+            "value": "超过330亿元（截至2025年末）",
+            "source_id": "aum"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2017-06",
+            "description": "上海国方私募基金管理公司成立。",
+            "source_id": "brand"
+          }
+        ],
         "track_record": [
+          {
+            "description": "代表上海国际集团管理产业转型升级二期基金及长三角产业基金（一期、二期）。",
+            "source_id": "track-record"
+          },
           {
             "description": "融资来源记录：耀速科技 · A+轮 · 2026-06-30 · 本轮参投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-137a48f19e1119b4"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.sig-am.com/html/business/industrial-funds/",
+            "source_id": "entity",
+            "url": "https://www.sig-am.com/html/business/industrial-funds/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "entity",
+            "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+            "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+            "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+            "quote": "上海国方私募基金管理公司",
+            "quote_hash": "9bc44277217c5e171df2072fec538d46104c191fadd595a6c0561698e0acce5c"
+          },
+          {
+            "source_id": "brand",
+            "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+            "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+            "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+            "quote": "成立于2017年6月，是上海国际集团旗下兼具市场广度与产业深度的科技产业投资机构。",
+            "quote_hash": "8ed12cc26f655cf3d8eb81585dd1a4d7e4e1a5f378d9a4943d7a264268d0cc74"
+          },
+          {
+            "source_id": "focus",
+            "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+            "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+            "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+            "quote": "长期深度聚焦半导体、数字智能、生物医药三大科技产业",
+            "quote_hash": "50fda460b7456ab7e650cf05068580fa1c197ccdc46cbf05a100b098364d4f7e"
+          },
+          {
+            "source_id": "track-record",
+            "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+            "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+            "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+            "quote": "代表集团管理了上海市级基金&mdash;&mdash;产业转型升级二期基金，以及全国首支服务长三角一体化国家战略的产业基金&mdash;&mdash;长三角产业基金（一期、二期）。",
+            "quote_hash": "83638c662a6ce10048e15ca5958ca2d3a9185096fc609bbe632728519f31248b"
+          },
+          {
+            "source_id": "aum",
+            "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+            "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+            "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+            "quote": "截至2025年末，国际国方累计管理规模超330亿元",
+            "quote_hash": "cec81cbf782f3b0df54033aae2f33cc8a9d2931f3fac67a8c3cbe4f9ddc51cb8"
+          },
           {
             "source_id": "FISRC-137a48f19e1119b4",
             "source_url": "https://news.pedaily.cn/202606/565703.shtml",
@@ -267956,7 +268836,7 @@
             "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-03"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -281293,19 +282173,87 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Scale Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Scale Venture Partners是专注AI与B2B软件的早期风险投资机构，官网称其主要领投Series A和Series B，并创建于2000年。",
+        "facts": [
+          {
+            "field": "focus",
+            "label": "关注领域",
+            "value": "AI、B2B软件",
+            "source_id": "business"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "Series A、Series B",
+            "source_id": "stage"
+          },
+          {
+            "field": "investment_role",
+            "label": "投资角色",
+            "value": "多数投资轮次为领投",
+            "source_id": "stage"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2000",
+            "description": "官网记载Scale Venture Partners于2000年创立。",
+            "source_id": "founded"
+          }
+        ],
         "track_record": [
+          {
+            "description": "官网称其曾早期投资DocuSign、Box、HubSpot、BILL及JFrog。",
+            "source_id": "track-record"
+          },
           {
             "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-a6233a9ab76850de"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网FAQ",
+            "value": "https://www.scalevp.com/frequently-asked-questions",
+            "source_id": "business",
+            "url": "https://www.scalevp.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "business",
+            "source_url": "https://www.scalevp.com/frequently-asked-questions",
+            "source_title": "Frequently asked questions | Scale Venture Partners",
+            "source_content_hash": "cd27c9ee9e49280ce8c95dd380050f7087cc784db873bd9123950ac10ca05042",
+            "quote": "Scale is an early-stage venture capital firm focused on AI and B2B software.",
+            "quote_hash": "5a169105b347037d9a926eac0a90a0f77df1437b32928322590d2add94cb6058"
+          },
+          {
+            "source_id": "stage",
+            "source_url": "https://www.scalevp.com/frequently-asked-questions",
+            "source_title": "Frequently asked questions | Scale Venture Partners",
+            "source_content_hash": "cd27c9ee9e49280ce8c95dd380050f7087cc784db873bd9123950ac10ca05042",
+            "quote": "Scale leads 80% of the Series A and Series B rounds we invest in.",
+            "quote_hash": "7c6c57012b20791b90dfa7a94489de3a4fb6f0faf6194a31d595aa11fa0bc20f"
+          },
+          {
+            "source_id": "founded",
+            "source_url": "https://www.scalevp.com/frequently-asked-questions",
+            "source_title": "Frequently asked questions | Scale Venture Partners",
+            "source_content_hash": "cd27c9ee9e49280ce8c95dd380050f7087cc784db873bd9123950ac10ca05042",
+            "quote": "Founded in 2000 and based in the Bay Area, Scale manages $2.8 billion in assets.",
+            "quote_hash": "df18d6ced6e478749d57f7aa85357805d8ccded5349056b5c537a26b47a9bf3b"
+          },
+          {
+            "source_id": "track-record",
+            "source_url": "https://www.scalevp.com/frequently-asked-questions",
+            "source_title": "Frequently asked questions | Scale Venture Partners",
+            "source_content_hash": "cd27c9ee9e49280ce8c95dd380050f7087cc784db873bd9123950ac10ca05042",
+            "quote": "Hundreds of companies over 25 years, with early checks into DocuSign, Box, HubSpot, BILL, and JFrog.",
+            "quote_hash": "00f3d01e05d33130b54f8dbbc54965fa7f66621d7e4b0bf21fa7ea96a45b13f6"
+          },
           {
             "source_id": "FISRC-a6233a9ab76850de",
             "source_url": "https://multiples.vc/private-comps/bland-ai",
@@ -281315,7 +282263,8 @@
             "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -311058,10 +312007,22 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Google's AI Futures Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Google官方介绍称AI Futures Fund与AI创业公司合作，为不同发展阶段的初创企业提供Google DeepMind模型早期使用、技术支持，并允许部分企业申请Google直接股权投资。",
+        "facts": [
+          {
+            "field": "program_type",
+            "label": "项目性质",
+            "value": "Google面向AI初创公司的合作与投资项目",
+            "source_id": "launch"
+          },
+          {
+            "field": "support",
+            "label": "支持方式",
+            "value": "模型早期访问、技术协作；部分企业可申请Google直接投资",
+            "source_id": "equity"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -311069,8 +312030,40 @@
             "source_id": "FISRC-1811bc88b6a13090"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Google官方介绍",
+            "value": "https://blog.google/innovation-and-ai/models-and-research/google-labs/ai-futures-fund/",
+            "source_id": "launch",
+            "url": "https://blog.google/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "launch",
+            "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/ai-futures-fund/",
+            "source_title": "Google’s AI Futures Fund works with AI startups",
+            "source_content_hash": "c07326b9a70719640398dc8e8dff647219a65a00bab11599aef040b6dd338f5c",
+            "quote": "Today, we’re introducing the AI Futures Fund to invest in and collaborate with ambitious startups.",
+            "quote_hash": "ce8fab9bfd96929d08849bd5f7a3c1ec27a7920f5e4b7a16c80899ce7e00d1ae"
+          },
+          {
+            "source_id": "equity",
+            "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/ai-futures-fund/",
+            "source_title": "Google’s AI Futures Fund works with AI startups",
+            "source_content_hash": "c07326b9a70719640398dc8e8dff647219a65a00bab11599aef040b6dd338f5c",
+            "quote": "Equity investment: Select startups get the opportunity to seek direct investment from Google to fuel growth and scale AI development.",
+            "quote_hash": "f4d548935fed833be9a5e138913f27a5913cae0b9deafa96bd3e136264db1afe"
+          },
+          {
+            "source_id": "eligibility",
+            "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/ai-futures-fund/",
+            "source_title": "Google’s AI Futures Fund works with AI startups",
+            "source_content_hash": "c07326b9a70719640398dc8e8dff647219a65a00bab11599aef040b6dd338f5c",
+            "quote": "The AI Futures Fund is open to companies anywhere Gemini is available, and we’re looking for startups that want to build the future of AI with us.",
+            "quote_hash": "160907b38af03fca46853fd0c94d3eb28afd8a298d525f74fa782d8fe9c35120"
+          },
           {
             "source_id": "FISRC-1811bc88b6a13090",
             "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
@@ -311080,7 +312073,8 @@
             "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -316787,19 +317781,81 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "GV (formerly Google Ventures) 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "GV是Alphabet旗下独立风险投资机构，2009年以Google Ventures之名成立，投资种子期至成长期的科技和生命科学企业。",
+        "facts": [
+          {
+            "field": "founded_year",
+            "label": "创立年份",
+            "value": "2009",
+            "source_id": "founded"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "种子期至成长期",
+            "source_id": "investment"
+          },
+          {
+            "field": "focus",
+            "label": "关注行业",
+            "value": "科技、生命科学",
+            "source_id": "investment"
+          },
+          {
+            "field": "parent_company",
+            "label": "唯一有限合伙人",
+            "value": "Alphabet",
+            "source_id": "investment"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2009",
+            "description": "GV以Google Ventures之名成立。",
+            "source_id": "founded"
+          }
+        ],
         "track_record": [
           {
             "description": "融资来源记录：Recursive Superintelligence · 轮次未披露 · 2026-04-18 · 本轮领投 · at least $500 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-b0bb1841559d4fad"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.gv.com/about",
+            "source_id": "investment",
+            "url": "https://www.gv.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "founded",
+            "source_url": "https://www.gv.com/about",
+            "source_title": "GV - About GV",
+            "source_content_hash": "c02f78e618c41bfff5af019447f825766bde31fa59ee42fad6295dbcf737d1de",
+            "quote": "Launched as Google Ventures in 2009, GV originated as an independent venture capital firm for innovative founders.",
+            "quote_hash": "d6e6597d42521031351c8fb824f7c7385ad004374c13166e01775b04fd270629"
+          },
+          {
+            "source_id": "investment",
+            "source_url": "https://www.gv.com/about",
+            "source_title": "GV - About GV",
+            "source_content_hash": "c02f78e618c41bfff5af019447f825766bde31fa59ee42fad6295dbcf737d1de",
+            "quote": "With Alphabet as our sole limited partner, we focus all our energy on meeting and supporting founders at every stage of company-building.",
+            "quote_hash": "3511bdf0fd8c3bd0df5a8305ce7ac0bb4f5e4b0ef7d3b6bb4f9e03abb263b87f"
+          },
+          {
+            "source_id": "stages",
+            "source_url": "https://www.gv.com/about",
+            "source_title": "GV - About GV",
+            "source_content_hash": "c02f78e618c41bfff5af019447f825766bde31fa59ee42fad6295dbcf737d1de",
+            "quote": "Today, with over $13 billion in assets under management, we invest from seed to growth stages across the technology and life sciences sectors.",
+            "quote_hash": "7f83dbf75e1a72ba4cab3015a136cac0291a8a4ee3e8529ad13b79086240a4c7"
+          },
           {
             "source_id": "FISRC-b0bb1841559d4fad",
             "source_url": "https://the-decoder.com/self-improving-ai-startup-recursive-superintelligence-pulls-in-500-million-just-four-months-after-founding",
@@ -316809,7 +317865,8 @@
             "quote_hash": "b5e77b5882c61dcbfcafa36bd61ae36227c481e36d75a35e6c1b2de667cb3cd5"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -345868,10 +346925,28 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Overlap Holdings 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Overlap Holdings聚焦科学创新与硬件交叉领域的前沿科技公司，官网称其投资Seed、A轮和B轮，并以非领投方身份跟投。",
+        "facts": [
+          {
+            "field": "focus",
+            "label": "关注领域",
+            "value": "科学创新与硬件交叉的前沿科技",
+            "source_id": "thesis"
+          },
+          {
+            "field": "investment_stage",
+            "label": "投资阶段",
+            "value": "Seed、A、B轮",
+            "source_id": "stage"
+          },
+          {
+            "field": "investment_role",
+            "label": "投资角色",
+            "value": "不领投，倾向与优秀VC共同投资",
+            "source_id": "stage"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -345879,8 +346954,32 @@
             "source_id": "FISRC-840402012d166d60"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://overlapholdings.com/about-us/",
+            "source_id": "thesis",
+            "url": "https://overlapholdings.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "thesis",
+            "source_url": "https://overlapholdings.com/about-us/",
+            "source_title": "About us &#8211; Overlap Holdings",
+            "source_content_hash": "5360c0fbaa8fcf6fec80624fde41b7830e95a717d1cfa6cc86eaf53db1063202",
+            "quote": "We exclusively invest in companies building technologies at the intersection of scientific innovation and hardware.",
+            "quote_hash": "b98113345c38edd1b9b2986de75d9d59d9eec9463dce37de87b821bbf2799429"
+          },
+          {
+            "source_id": "stage",
+            "source_url": "https://overlapholdings.com/about-us/",
+            "source_title": "About us &#8211; Overlap Holdings",
+            "source_content_hash": "5360c0fbaa8fcf6fec80624fde41b7830e95a717d1cfa6cc86eaf53db1063202",
+            "quote": "We invest in Seed, A, and B equity rounds of frontier tech startups. We do not lead rounds, but prefer to follow great VCs",
+            "quote_hash": "60d0af5ef8276f7a6b927505ca74bac9b08c204425f2a0522982f686c56dc681"
+          },
           {
             "source_id": "FISRC-840402012d166d60",
             "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
@@ -345890,7 +346989,8 @@
             "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 1,
       "portfolio_companies": [
@@ -354333,12 +355433,35 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Silicon Catalyst Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Silicon Catalyst Ventures是硅谷半导体加速器生态中的投资主体，官网称其2024年2月设立，资助进入加速器两年项目的早期创业公司。",
+        "coverage_note": "本条专指Silicon Catalyst Ventures（SCV）投资主体，不与Silicon Catalyst加速器本身混为一谈。官网的26笔投资数字为页面采集时自述。",
+        "facts": [
+          {
+            "field": "launched",
+            "label": "设立时间",
+            "value": "2024年2月",
+            "source_id": "scv"
+          },
+          {
+            "field": "investment_scope",
+            "label": "投资对象",
+            "value": "进入Silicon Catalyst两年加速项目的早期创业公司",
+            "source_id": "scv"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2024-02",
+            "description": "官网称Silicon Catalyst Ventures（SCV）于2024年2月启动。",
+            "source_id": "scv"
+          }
+        ],
         "track_record": [
+          {
+            "description": "官网自述SCV已投资26家Silicon Catalyst组合公司。",
+            "source_id": "scv-investments"
+          },
           {
             "description": "融资来源记录：Neurophos Inc. · A轮 · 2026-01-22 · 本轮参投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-d542f1ad9da7e0ac"
@@ -354348,8 +355471,32 @@
             "source_id": "FISRC-9f9b41abcfe2abd0"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://siliconcatalyst.com/",
+            "source_id": "scv",
+            "url": "https://siliconcatalyst.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "scv",
+            "source_url": "https://siliconcatalyst.com/",
+            "source_title": "Silicon Catalyst",
+            "source_content_hash": "b50b177f161e8741e70532e04059c62f4cb8cbefe79722b9e875ea8c13280a5b",
+            "quote": "In February of 2024, Silicon Catalyst Ventures (SCV) was launched to fund early-stage startups accepted into the accelerator’s two-year program.",
+            "quote_hash": "b6b5a5fafc173f364e1a5c86dfc760be0854e0c639f855c083a5ca4ab5fcc1da"
+          },
+          {
+            "source_id": "scv-investments",
+            "source_url": "https://siliconcatalyst.com/",
+            "source_title": "Silicon Catalyst",
+            "source_content_hash": "b50b177f161e8741e70532e04059c62f4cb8cbefe79722b9e875ea8c13280a5b",
+            "quote": "SCV has already made 26 investments in Silicon Catalyst Portfolio Companies.",
+            "quote_hash": "30433161a5aca599ad073f2d02a2134083e6d1f2e3dbc4d84cfd3a1c3b1bd6d3"
+          },
           {
             "source_id": "FISRC-d542f1ad9da7e0ac",
             "source_url": "https://dukecapitalpartners.duke.edu/news/neurophos-secures-110-million-series-a-to-launch-exaflop-scale-photonic-ai-chips/",
@@ -354367,7 +355514,7 @@
             "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02"
       },
       "activity_count": 2,
       "portfolio_companies": [
@@ -417076,12 +418223,28 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Eclipse Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "summary": "Eclipse Ventures官网将自身投资重点描述为实体经济企业，面向关系到韧性、竞争力与安全的行业，并以建设硬件、工厂和供应链的经验支持创业公司。",
+        "facts": [
+          {
+            "field": "focus",
+            "label": "关注领域",
+            "value": "实体经济及影响韧性、竞争力与安全的行业",
+            "source_id": "about-thesis"
+          },
+          {
+            "field": "operating_support",
+            "label": "运营支持",
+            "value": "战略、技术评估、人才招聘及客户拓展",
+            "source_id": "about-team"
+          }
+        ],
         "milestones": [],
         "track_record": [
+          {
+            "description": "官网称团队成员曾建设工厂、交付硬件、扩展供应链并处理政策与监管复杂性。",
+            "source_id": "about-team"
+          },
           {
             "description": "融资来源记录：AheadComputing, Inc. · 历史轮次未披露 · 2024年种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-b57e758a492553d2"
@@ -417095,8 +418258,64 @@
             "source_id": "FISRC-38adde4dd9384d54"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://eclipse.vc/about",
+            "source_id": "about-thesis",
+            "url": "https://eclipse.vc/"
+          },
+          {
+            "kind": "email",
+            "label": "联系邮箱",
+            "value": "admin@eclipse.capital",
+            "source_id": "about-contact"
+          },
+          {
+            "kind": "phone",
+            "label": "联系电话",
+            "value": "650-720-4667",
+            "source_id": "about-contact"
+          },
+          {
+            "kind": "address",
+            "label": "湾区办公室",
+            "value": "514 High Street, Palo Alto, CA 94301",
+            "source_id": "about-contact"
+          },
+          {
+            "kind": "address",
+            "label": "纽约办公室",
+            "value": "594 Broadway #707, New York, NY 10012",
+            "source_id": "about-contact"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "about-thesis",
+            "source_url": "https://eclipse.vc/about",
+            "source_title": "About",
+            "source_content_hash": "ad73a6b63b6a5a99ca05c3b7bf72fe7c777b83745d474bad2fc8ec2d827ce511",
+            "quote": "Eclipse invests in entrepreneurs building the next generation of companies in the physical economy — the industries that determine resilience, competitiveness, and security.",
+            "quote_hash": "f67644c7e800dcda1300d37f49e7ec7b139de4b3706e3ef1f4782304a65a405a"
+          },
+          {
+            "source_id": "about-team",
+            "source_url": "https://eclipse.vc/about",
+            "source_title": "About",
+            "source_content_hash": "ad73a6b63b6a5a99ca05c3b7bf72fe7c777b83745d474bad2fc8ec2d827ce511",
+            "quote": "Our team has built factories, shipped hardware, scaled supply chains, and navigated the policy and regulatory complexity that shapes the essential economy.",
+            "quote_hash": "d4665b32ee876e06ac513182ad4edb6636427adb8a80e3c1c48c122d2c956376"
+          },
+          {
+            "source_id": "about-contact",
+            "source_url": "https://eclipse.vc/about",
+            "source_title": "About",
+            "source_content_hash": "ad73a6b63b6a5a99ca05c3b7bf72fe7c777b83745d474bad2fc8ec2d827ce511",
+            "quote": "Bay Area office 514 High Street Palo Alto, CA 94301 New York City office 594 Broadway #707 New York, NY 10012 650-720-4667 admin@eclipse.capital",
+            "quote_hash": "012ba9edff1d250f46f5be9c5aad3a129c6f45b1574ed9d1b86604449022026d"
+          },
           {
             "source_id": "FISRC-b57e758a492553d2",
             "source_url": "https://startupintros.com/orgs/aheadcomputing",
@@ -417122,7 +418341,8 @@
             "quote_hash": "a4362013536bfc45cb51e1e5f05727ab3e2aca6ca1bbb766b6b247e94fb6f4e1"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 3,
       "portfolio_companies": [],
@@ -417812,10 +419032,29 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Eric Schmidt's First Spark Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
+        "coverage_status": "researched",
+        "coverage_note": "官网显示Eric Schmidt为Founding Non-Managing Partner兼战略顾问；本条只记录该公开身份，不据此称其管理该基金。",
+        "summary": "First Spark Ventures是专注深科技的风险投资基金，投资有望让世界更健康、更安全和更高效的突破性技术；官网列Eric Schmidt为创始非管理合伙人及战略顾问。",
+        "facts": [
+          {
+            "field": "fund_focus",
+            "label": "基金方向",
+            "value": "深科技",
+            "source_id": "fund"
+          },
+          {
+            "field": "investment_thesis",
+            "label": "投资主题",
+            "value": "改善健康、安全与生产力的突破性技术",
+            "source_id": "fund"
+          },
+          {
+            "field": "Eric Schmidt官网身份",
+            "label": "Eric Schmidt身份",
+            "value": "创始非管理合伙人、战略顾问",
+            "source_id": "team"
+          }
+        ],
         "milestones": [],
         "track_record": [
           {
@@ -417823,8 +419062,32 @@
             "source_id": "FISRC-3c1b4f6326a3ee76"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "官网",
+            "value": "https://www.firstsparkventures.com/",
+            "source_id": "fund",
+            "url": "https://www.firstsparkventures.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "fund",
+            "source_url": "https://www.firstsparkventures.com/",
+            "source_title": "First Spark Ventures: Home",
+            "source_content_hash": "acc00f0294fa5480f42cf46b4f1e30314a3d825c9d82b041dbc7ac3a4ada4348",
+            "quote": "First Spark Ventures is a Deep Tech venture capital fund investing in breakthrough technologies that make the world healthier, safer, and more productive.",
+            "quote_hash": "dc8267f022e1eb9deeed52c68b4b25b5b8dfbccfca28fb41603fb5dc9e10dd56"
+          },
+          {
+            "source_id": "team",
+            "source_url": "https://www.firstsparkventures.com/",
+            "source_title": "First Spark Ventures: Home",
+            "source_content_hash": "acc00f0294fa5480f42cf46b4f1e30314a3d825c9d82b041dbc7ac3a4ada4348",
+            "quote": "Eric Schmidt, Ph.D. Strategic Advisor & Founding Non-Managing Partner",
+            "quote_hash": "e9cb3577179ebebd8db2442e29ff30000725c554e90031bcf40e2700dc45c7e9"
+          },
           {
             "source_id": "FISRC-3c1b4f6326a3ee76",
             "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
@@ -417834,7 +419097,7 @@
             "quote_hash": "21687a98084e726aa8f7c265c14c8e03bd1bafe6732b59331da83b20dc408489"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -425335,8 +426598,8 @@
         "profile_type": "person",
         "identity_status": "verified",
         "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "John Laban 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+        "coverage_note": "OpsLevel官方资料可确认John Laban的身份与公司职务，但该页面不证明其个人投资记录；此档案仅收录可核验职业信息，不扩写投资履历。",
+        "summary": "OpsLevel官方团队页列John Laban为公司CEO及联合创始人。当前核实内容限于该职业身份，个人投资经历未由该来源确认。",
         "facts": [],
         "milestones": [],
         "track_record": [
@@ -425346,7 +426609,33 @@
           }
         ],
         "contacts": [],
+        "current_roles": [
+          {
+            "title": "CEO & Co-Founder",
+            "organization": "OpsLevel",
+            "source_id": "role"
+          }
+        ],
+        "career": [
+          {
+            "organization": "OpsLevel",
+            "title": "CEO & Co-Founder",
+            "period": "2026-10-02官网页面",
+            "description": "OpsLevel官方团队页将John Laban列为CEO及联合创始人。",
+            "source_id": "role"
+          }
+        ],
+        "education": [],
+        "experience_summary": "已核实的公开职业信息仅包括OpsLevel现职；该来源没有个人投资履历或教育信息。",
         "sources": [
+          {
+            "source_id": "role",
+            "source_url": "https://www.opslevel.com/about",
+            "source_title": "About Us | OpsLevel",
+            "source_content_hash": "fc26d89eae2de2f1f7c4316ee1caa3441ca844d5a4db06f76f2dbe1c9ea37d52",
+            "quote": "John Laban CEO & Co-Founder",
+            "quote_hash": "82356af8b2562864e8e1286b317d7affa96ec8b1e5fbced657be5731cf454734"
+          },
           {
             "source_id": "FISRC-9fd6ba5210b37fed",
             "source_url": "https://modem.dev/blog/modem-raises-4-4m",
@@ -425356,7 +426645,7 @@
             "quote_hash": "7b9e4823e10bdb7c661a9b549d007a6632ae645732d94a94b5bb5ab3e5dd8065"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -429324,19 +430613,137 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Mastercard Strive USA Innovation Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "coverage_note": "本档案涉及的是 Mastercard Strive USA 的创新资助项目。官方资料将其资金形式描述为面向小企业相关方案的 grant；按融资情报库“投资组织”分类展示，不据此推断其为传统股权 VC，也不推断融资轮次或具体出资额。",
+        "summary": "Mastercard Strive USA Innovation Fund 是 Mastercard Center for Inclusive Growth 支持的美国小企业创新资助项目，通过拨款支持改善小企业财务健康的早期方案。Mastercard 官方资料显示，Mona 入选 2026 年该基金的获选项目；现有披露没有给出该笔支持的金额或股权性质。",
+        "facts": [
+          {
+            "field": "program_type",
+            "label": "项目类型",
+            "value": "面向小企业创新方案的拨款资助项目；官网称其将提供 grant。",
+            "source_id": "program"
+          },
+          {
+            "field": "focus",
+            "label": "资助方向",
+            "value": "改善美国小企业的财务健康，支持处于原型或早期测试阶段的产品与服务。",
+            "source_id": "program"
+          },
+          {
+            "field": "program_support",
+            "label": "项目支持方",
+            "value": "由 Mastercard Center for Inclusive Growth 支持，DAI 负责实施。",
+            "source_id": "program"
+          },
+          {
+            "field": "funding",
+            "label": "2025 项目额度",
+            "value": "该届项目总拨款最高 100 万美元，单个组织最高 25 万美元。",
+            "source_id": "program"
+          },
+          {
+            "field": "geography",
+            "label": "地域",
+            "value": "美国。",
+            "source_id": "program"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2023",
+            "description": "Mastercard Strive 官方文章称，Mastercard Center for Inclusive Growth 于 2023 年发起 Mastercard Strive USA Innovation Fund。",
+            "source_id": "launch"
+          },
+          {
+            "date": "2026",
+            "description": "Mastercard 官方文章将 Mona 列为 2026 年 Mastercard Strive USA Innovation Fund 的两家获选项目之一。",
+            "source_id": "2026-winners"
+          }
+        ],
         "track_record": [
+          {
+            "description": "2023 年该基金向 4 家组织提供接近 100 万美元的 grant funding，用于开发、测试和扩大支持小企业成长与财务韧性的方案。",
+            "source_id": "grantees"
+          },
+          {
+            "description": "Mastercard UK 官方文章称，Mona 是 2026 年基金的两家获选项目之一；该文未披露此项支持的金额或股权性质。",
+            "source_id": "2026-winners"
+          },
+          {
+            "description": "Mona 于 2026 年 9 月融资公告另称其获得 Mastercard Strive USA Innovation Fund 支持；公告未披露具体金额或投资轮次。",
+            "source_id": "mona-support"
+          },
           {
             "description": "融资来源记录：Mona · 历史轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-22cce00c604ac941"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Mastercard Strive USA 2025 Innovation Fund 项目页",
+            "value": "https://www.mastercardstrive.org/innovation-funds/usa-2025",
+            "source_id": "program",
+            "url": "https://www.mastercardstrive.org/innovation-funds/usa-2025"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "program",
+            "source_url": "https://www.mastercardstrive.org/innovation-funds/usa-2025",
+            "source_title": "2025 USA Innovation Fund | Innovation Fund | Mastercard Strive",
+            "source_content_hash": "da6c3ebadf4b9fb03e267bf237201424921a2c234631eb5963f618426288f997",
+            "quote": "supported by the Mastercard Center for Inclusive Growth and implemented by DAI",
+            "quote_hash": "c4b06f0cef4ceaad50a0386c8f53d9b7ca0b675bea365fe1bee5d927b7f9ae1a"
+          },
+          {
+            "source_id": "grant-scope",
+            "source_url": "https://www.mastercardstrive.org/innovation-funds/usa-2025",
+            "source_title": "2025 USA Innovation Fund | Innovation Fund | Mastercard Strive",
+            "source_content_hash": "da6c3ebadf4b9fb03e267bf237201424921a2c234631eb5963f618426288f997",
+            "quote": "provides up to $1 million in grants to early-stage organizations developing solutions that strengthen small business financial health",
+            "quote_hash": "67d9abe69e35357216c3ef7813966384de6e826e23b8b489693f442592efd125"
+          },
+          {
+            "source_id": "grant-ceiling",
+            "source_url": "https://www.mastercardstrive.org/innovation-funds/usa-2025",
+            "source_title": "2025 USA Innovation Fund | Innovation Fund | Mastercard Strive",
+            "source_content_hash": "da6c3ebadf4b9fb03e267bf237201424921a2c234631eb5963f618426288f997",
+            "quote": "up to $250,000 per organization",
+            "quote_hash": "064f04df3aee779ab16046836d6f10f47c9391c2c6d5dd2980e8b15473845e2d"
+          },
+          {
+            "source_id": "launch",
+            "source_url": "https://www.mastercardstrive.org/articles/2023/12/fueling-small-business-growth-in-the-united-states-meet-the-mastercard-strive-usa-innovation-fund-winners",
+            "source_title": "Fueling small business growth in the United States: Meet the Mastercard Strive USA Innovation Fund winners | Articles | Mastercard Strive",
+            "source_content_hash": "ae159163382b917035f4a23b9a288d78b7b11eefaa0967c5566b9facd06d960b",
+            "quote": "the Mastercard Center for Inclusive Growth launched the Mastercard Strive USA Innovation Fund in 2023",
+            "quote_hash": "2c327a7fdf21b18cbcd40578b7100955e17a2e86836235361cd33f9beae5676a"
+          },
+          {
+            "source_id": "grantees",
+            "source_url": "https://www.mastercardstrive.org/articles/2023/12/fueling-small-business-growth-in-the-united-states-meet-the-mastercard-strive-usa-innovation-fund-winners",
+            "source_title": "Fueling small business growth in the United States: Meet the Mastercard Strive USA Innovation Fund winners | Articles | Mastercard Strive",
+            "source_content_hash": "ae159163382b917035f4a23b9a288d78b7b11eefaa0967c5566b9facd06d960b",
+            "quote": "providing nearly $1 million USD in grant funding to four change-making organizations",
+            "quote_hash": "9af16d2da5bb42e7b3f827ce83fe430eafe975b7ef208834ab594d79020582cb"
+          },
+          {
+            "source_id": "2026-winners",
+            "source_url": "https://www.mastercard.com/gb/en/news-and-trends/stories/2026/mona-small-business-access-to-capital.html",
+            "source_title": "How Mona uses AI to help small businesses find funding | Mastercard UK",
+            "source_content_hash": "f4f9d09b33fdd6670b16f470c8997579dbf8d838e9c8b6c7afa1bf3665700e37",
+            "quote": "selection as one of two winners of the 2026 Mastercard Strive USA Innovation Fund",
+            "quote_hash": "336fa2be3b215d280b30f0845a8edb7026e35d6a09f225e483ac134a951cb20a"
+          },
+          {
+            "source_id": "mona-support",
+            "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
+            "source_title": "Mona Raises $3.5M to Expand Its AI Platform for Small Business Capital Access and Financial Coaching",
+            "source_content_hash": "e1b8312e89acc5c10e638a05c81449193c4b2cf48f91a49be0ab6a361abd450b",
+            "quote": "Mona is also backed by the Mastercard Strive USA Innovation Fund.",
+            "quote_hash": "a2a52bf481bb46c90d946a6ab5a859021085907928729ef4b6d4dfeda26cf3b3"
+          },
           {
             "source_id": "FISRC-22cce00c604ac941",
             "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
@@ -429346,7 +430753,7 @@
             "quote_hash": "a2a52bf481bb46c90d946a6ab5a859021085907928729ef4b6d4dfeda26cf3b3"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-03"
       },
       "activity_count": 1,
       "portfolio_companies": [],
@@ -429510,12 +430917,40 @@
       "public_profile": {
         "profile_type": "organization",
         "identity_status": "verified",
-        "coverage_status": "activity_only",
-        "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-        "summary": "Micron Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-        "facts": [],
-        "milestones": [],
+        "coverage_status": "researched",
+        "summary": "Micron于2026年8月宣布推出Micron Ventures Paradigm Fund，规模2.5亿美元，是其第三只、截至公告时规模最大的一只基金，投资覆盖AI技术栈。",
+        "facts": [
+          {
+            "field": "fund_size",
+            "label": "Paradigm Fund规模",
+            "value": "2.5亿美元",
+            "source_id": "fund-launch"
+          },
+          {
+            "field": "fund_position",
+            "label": "基金序列",
+            "value": "Micron Ventures第三只、公告时规模最大的一只基金",
+            "source_id": "fund-launch"
+          },
+          {
+            "field": "focus",
+            "label": "投资主题",
+            "value": "AI技术栈：模型架构、算力、企业应用及实体AI",
+            "source_id": "fund-launch"
+          }
+        ],
+        "milestones": [
+          {
+            "date": "2026-08-13",
+            "description": "Micron宣布推出2.5亿美元Paradigm Fund。",
+            "source_id": "fund-launch"
+          }
+        ],
         "track_record": [
+          {
+            "description": "Paradigm Fund建立在Micron Ventures于2019年推出的Fund I和2022年推出的Fund II之上。",
+            "source_id": "fund-history"
+          },
           {
             "description": "融资来源记录：Eliyan Corporation · 历史轮次未披露 · Series A 参投。这是本库收录的披露案例，不代表完整投资组合。",
             "source_id": "FISRC-2e3c849f55d66222"
@@ -429525,8 +430960,32 @@
             "source_id": "FISRC-3c1b4f6326a3ee76"
           }
         ],
-        "contacts": [],
+        "contacts": [
+          {
+            "kind": "website",
+            "label": "Micron公告",
+            "value": "https://stage-investors.micron.com/news/press-release/2026/Micron-Ventures-Launches-250-Million-Fund-to-Invest-in-the-Next-Generation-of-AI/default.aspx",
+            "source_id": "fund-launch",
+            "url": "https://www.micron.com/"
+          }
+        ],
         "sources": [
+          {
+            "source_id": "fund-launch",
+            "source_url": "https://stage-investors.micron.com/news/press-release/2026/Micron-Ventures-Launches-250-Million-Fund-to-Invest-in-the-Next-Generation-of-AI/default.aspx",
+            "source_title": "Micron Ventures Launches $250 Million Fund to Invest in the Next Generation of AI",
+            "source_content_hash": "1c8df2c7aac051bf23ea87b930cf88d1de12503c9502d2ac0d1e1ae67c331f29",
+            "quote": "Micron Technology, Inc. (Nasdaq: MU) today launched the Micron Ventures Paradigm Fund, a $250 million investment vehicle built to partner with the companies shaping the future of AI. Micron Ventures’ third and largest fund to date, the Paradigm Fund will invest across the full AI technology stack, from model architectures and compute infrastructure to enterprise applications and physical AI.",
+            "quote_hash": "b2d59be139a1dc1f75956a263684a98f36ac4c3e862a67ed3c4bed6fbf44e801"
+          },
+          {
+            "source_id": "fund-history",
+            "source_url": "https://stage-investors.micron.com/news/press-release/2026/Micron-Ventures-Launches-250-Million-Fund-to-Invest-in-the-Next-Generation-of-AI/default.aspx",
+            "source_title": "Micron Ventures Launches $250 Million Fund to Invest in the Next Generation of AI",
+            "source_content_hash": "1c8df2c7aac051bf23ea87b930cf88d1de12503c9502d2ac0d1e1ae67c331f29",
+            "quote": "The Paradigm Fund builds on Micron Ventures’ Fund I (launched in 2019) and Fund II (launched in 2022, still actively deploying capital).",
+            "quote_hash": "5bb98ca974e0d2da0b82c8a1db39db9e11dc536faf2987703c28492a852ba2db"
+          },
           {
             "source_id": "FISRC-2e3c849f55d66222",
             "source_url": "https://startupintros.com/orgs/eliyan",
@@ -429544,7 +431003,8 @@
             "quote_hash": "21687a98084e726aa8f7c265c14c8e03bd1bafe6732b59331da83b20dc408489"
           }
         ],
-        "last_verified_at": "2026-09-28"
+        "last_verified_at": "2026-10-02",
+        "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
       },
       "activity_count": 2,
       "portfolio_companies": [],

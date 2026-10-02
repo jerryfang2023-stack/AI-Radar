@@ -163,12 +163,40 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Micron Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Micron于2026年8月宣布推出Micron Ventures Paradigm Fund，规模2.5亿美元，是其第三只、截至公告时规模最大的一只基金，投资覆盖AI技术栈。",
+      "facts": [
+        {
+          "field": "fund_size",
+          "label": "Paradigm Fund规模",
+          "value": "2.5亿美元",
+          "source_id": "fund-launch"
+        },
+        {
+          "field": "fund_position",
+          "label": "基金序列",
+          "value": "Micron Ventures第三只、公告时规模最大的一只基金",
+          "source_id": "fund-launch"
+        },
+        {
+          "field": "focus",
+          "label": "投资主题",
+          "value": "AI技术栈：模型架构、算力、企业应用及实体AI",
+          "source_id": "fund-launch"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-08-13",
+          "description": "Micron宣布推出2.5亿美元Paradigm Fund。",
+          "source_id": "fund-launch"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Paradigm Fund建立在Micron Ventures于2019年推出的Fund I和2022年推出的Fund II之上。",
+          "source_id": "fund-history"
+        },
         {
           "description": "融资来源记录：Eliyan Corporation · 历史轮次未披露 · Series A 参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2e3c849f55d66222"
@@ -178,8 +206,32 @@
           "source_id": "FISRC-3c1b4f6326a3ee76"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Micron公告",
+          "value": "https://stage-investors.micron.com/news/press-release/2026/Micron-Ventures-Launches-250-Million-Fund-to-Invest-in-the-Next-Generation-of-AI/default.aspx",
+          "source_id": "fund-launch",
+          "url": "https://www.micron.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "fund-launch",
+          "source_url": "https://stage-investors.micron.com/news/press-release/2026/Micron-Ventures-Launches-250-Million-Fund-to-Invest-in-the-Next-Generation-of-AI/default.aspx",
+          "source_title": "Micron Ventures Launches $250 Million Fund to Invest in the Next Generation of AI",
+          "source_content_hash": "1c8df2c7aac051bf23ea87b930cf88d1de12503c9502d2ac0d1e1ae67c331f29",
+          "quote": "Micron Technology, Inc. (Nasdaq: MU) today launched the Micron Ventures Paradigm Fund, a $250 million investment vehicle built to partner with the companies shaping the future of AI. Micron Ventures’ third and largest fund to date, the Paradigm Fund will invest across the full AI technology stack, from model architectures and compute infrastructure to enterprise applications and physical AI.",
+          "quote_hash": "b2d59be139a1dc1f75956a263684a98f36ac4c3e862a67ed3c4bed6fbf44e801"
+        },
+        {
+          "source_id": "fund-history",
+          "source_url": "https://stage-investors.micron.com/news/press-release/2026/Micron-Ventures-Launches-250-Million-Fund-to-Invest-in-the-Next-Generation-of-AI/default.aspx",
+          "source_title": "Micron Ventures Launches $250 Million Fund to Invest in the Next Generation of AI",
+          "source_content_hash": "1c8df2c7aac051bf23ea87b930cf88d1de12503c9502d2ac0d1e1ae67c331f29",
+          "quote": "The Paradigm Fund builds on Micron Ventures’ Fund I (launched in 2019) and Fund II (launched in 2022, still actively deploying capital).",
+          "quote_hash": "5bb98ca974e0d2da0b82c8a1db39db9e11dc536faf2987703c28492a852ba2db"
+        },
         {
           "source_id": "FISRC-2e3c849f55d66222",
           "source_url": "https://startupintros.com/orgs/eliyan",
@@ -197,7 +249,8 @@
           "quote_hash": "21687a98084e726aa8f7c265c14c8e03bd1bafe6732b59331da83b20dc408489"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

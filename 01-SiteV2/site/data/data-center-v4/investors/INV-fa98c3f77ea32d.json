@@ -172,19 +172,114 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "国方创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "上海国方私募基金管理公司（品牌“国际国方”）是上海国际集团旗下科技产业投资机构，官网称其聚焦半导体、数字智能和生物医药。",
+      "coverage_note": "队列显示简称为“国方创投”；官网确认主体名称为上海国方私募基金管理公司、品牌为“国际国方”。档案以官方主体与品牌为准，并保留队列简称与正式名称间的映射说明。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网主体名称",
+          "value": "上海国方私募基金管理公司",
+          "source_id": "entity"
+        },
+        {
+          "field": "brand",
+          "label": "品牌",
+          "value": "国际国方",
+          "source_id": "brand"
+        },
+        {
+          "field": "parent_company",
+          "label": "所属集团",
+          "value": "上海国际集团",
+          "source_id": "brand"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2017年6月",
+          "source_id": "brand"
+        },
+        {
+          "field": "focus",
+          "label": "投资领域",
+          "value": "半导体、数字智能、生物医药",
+          "source_id": "focus"
+        },
+        {
+          "field": "aum",
+          "label": "管理规模",
+          "value": "超过330亿元（截至2025年末）",
+          "source_id": "aum"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017-06",
+          "description": "上海国方私募基金管理公司成立。",
+          "source_id": "brand"
+        }
+      ],
       "track_record": [
+        {
+          "description": "代表上海国际集团管理产业转型升级二期基金及长三角产业基金（一期、二期）。",
+          "source_id": "track-record"
+        },
         {
           "description": "融资来源记录：耀速科技 · A+轮 · 2026-06-30 · 本轮参投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-137a48f19e1119b4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_id": "entity",
+          "url": "https://www.sig-am.com/html/business/industrial-funds/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "entity",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "上海国方私募基金管理公司",
+          "quote_hash": "9bc44277217c5e171df2072fec538d46104c191fadd595a6c0561698e0acce5c"
+        },
+        {
+          "source_id": "brand",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "成立于2017年6月，是上海国际集团旗下兼具市场广度与产业深度的科技产业投资机构。",
+          "quote_hash": "8ed12cc26f655cf3d8eb81585dd1a4d7e4e1a5f378d9a4943d7a264268d0cc74"
+        },
+        {
+          "source_id": "focus",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "长期深度聚焦半导体、数字智能、生物医药三大科技产业",
+          "quote_hash": "50fda460b7456ab7e650cf05068580fa1c197ccdc46cbf05a100b098364d4f7e"
+        },
+        {
+          "source_id": "track-record",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "代表集团管理了上海市级基金&mdash;&mdash;产业转型升级二期基金，以及全国首支服务长三角一体化国家战略的产业基金&mdash;&mdash;长三角产业基金（一期、二期）。",
+          "quote_hash": "83638c662a6ce10048e15ca5958ca2d3a9185096fc609bbe632728519f31248b"
+        },
+        {
+          "source_id": "aum",
+          "source_url": "https://www.sig-am.com/html/business/industrial-funds/",
+          "source_title": "产业基金 - 上海国际集团资产管理有限公司",
+          "source_content_hash": "9faf1d06e22007da7d228c9ae725b7f0882814b67f14e8dcdaf70d92bc11afc3",
+          "quote": "截至2025年末，国际国方累计管理规模超330亿元",
+          "quote_hash": "cec81cbf782f3b0df54033aae2f33cc8a9d2931f3fac67a8c3cbe4f9ddc51cb8"
+        },
         {
           "source_id": "FISRC-137a48f19e1119b4",
           "source_url": "https://news.pedaily.cn/202606/565703.shtml",
@@ -194,7 +289,7 @@
           "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

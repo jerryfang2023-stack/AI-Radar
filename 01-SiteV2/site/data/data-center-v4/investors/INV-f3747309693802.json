@@ -192,10 +192,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "U&I Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "U&I Ventures官网称其聚焦最早期的AI原生云创新，面向工程、IT和安全交叉领域的软件基础设施创业公司，并以企业技术运营者社群为支持方式。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "最早期",
+          "source_id": "thesis"
+        },
+        {
+          "field": "focus",
+          "label": "关注方向",
+          "value": "AI原生云创新、软件基础设施、工程、IT与安全",
+          "source_id": "thesis"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -207,8 +219,24 @@
           "source_id": "FISRC-dffcc55088dd6fc6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://uandi.vc/",
+          "source_id": "thesis",
+          "url": "https://uandi.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "thesis",
+          "source_url": "https://uandi.vc/",
+          "source_title": "U&amp;I Ventures",
+          "source_content_hash": "0e540d7a67873ab51ed00731e1c9c32bb71dd504d14ff788dee0313771221f12",
+          "quote": "Our thesis is to lean into AI-native cloud innovation at the earliest stages by building the world’s largest curated technical community of operators sitting in CIO, CTO, and CISO roles to do two things.",
+          "quote_hash": "872410ae327d056b7f147f32dbb43fb9fda2266a669cc7922d20ad144ed4f16d"
+        },
         {
           "source_id": "FISRC-212b01f9c4f8d05c",
           "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
@@ -226,7 +254,8 @@
           "quote_hash": "b215777c949ba082207bfc3f75c4369a1e3c063d802a02c2b550b33d37bcc681"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -194,11 +194,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tencent 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "腾讯官网称其为全球互联网和科技公司，1998年创立于中国深圳，开发面向消费者和企业的产品与服务。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1998",
+          "source_id": "history"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "中国深圳",
+          "source_id": "history"
+        },
+        {
+          "field": "business",
+          "label": "业务",
+          "value": "互联网与科技产品和服务",
+          "source_id": "overview"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1998",
+          "description": "腾讯官网记载公司于1998年成立，总部位于深圳。",
+          "source_id": "history"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Lovable · C轮 · 2026-08-12 · 本轮参投 · $400 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -209,8 +233,32 @@
           "source_id": "FISRC-b382348e8f96c9b9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+          "source_id": "overview",
+          "url": "https://www.tencent.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "overview",
+          "source_url": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+          "source_title": "Who we are - Tencent",
+          "source_content_hash": "4f0c701113ac8d4ab9bdddca5f79621f61137867820f70175f67c8ac211697a5",
+          "quote": "Tencent is a world-leading internet and technology company that develops innovative products and services to improve the quality of life of people around the world.",
+          "quote_hash": "dccd6edd8b412bcc64a98bf6a4d3641002675bf81b6726dd8f384c3692c3d635"
+        },
+        {
+          "source_id": "history",
+          "source_url": "https://www.tencent.com/en-us/about.html?trk=s-bl",
+          "source_title": "Who we are - Tencent",
+          "source_content_hash": "4f0c701113ac8d4ab9bdddca5f79621f61137867820f70175f67c8ac211697a5",
+          "quote": "Founded in 1998 with its headquarters in Shenzhen, China, Tencent's guiding principle is to use technology for good.",
+          "quote_hash": "d52d607074c1ccc080cff41590fa60147c95b2c1000a0eac78a8162ab6d2a07d"
+        },
         {
           "source_id": "FISRC-94676d99b2defaa4",
           "source_url": "https://lovable.dev/blog/series-c",
@@ -228,7 +276,8 @@
           "quote_hash": "5888e5985b14641653ee65e4d3420c693c8d354d4bf2fc626e1bc2d956da8148"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

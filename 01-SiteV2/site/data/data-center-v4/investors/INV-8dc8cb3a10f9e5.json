@@ -194,11 +194,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Forerunner Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Forerunner Ventures官网将其定位为早期风险投资机构，投资希望从起步阶段定义新类别的创始人；官网标示成立于2012年并由创始人主导投资团队。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "about"
+        },
+        {
+          "field": "investment_thesis",
+          "label": "投资理念",
+          "value": "支持从起步阶段定义新类别的创始人",
+          "source_id": "about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "官网标示Forerunner Ventures成立于2012年。",
+          "source_id": "founded"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮领投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -209,8 +227,32 @@
           "source_id": "FISRC-55e5e881c734a50f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.forerunnerventures.com/?page_id=399",
+          "source_id": "about",
+          "url": "https://www.forerunnerventures.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "about",
+          "source_url": "https://www.forerunnerventures.com/?page_id=399",
+          "source_title": "Forerunner Ventures",
+          "source_content_hash": "ef798855b1d6f2fcc232d92a404f9c34736b322a05780bffcdc3801398990eae",
+          "quote": "Forerunner is an early-stage venture firm that invests in founders with the vision to define entire categories and the courage to own the totality of what they build from the start.",
+          "quote_hash": "05391fac2de097e174bda175f05c87959afee8dda9204bf2ef90c07d45c77d61"
+        },
+        {
+          "source_id": "founded",
+          "source_url": "https://www.forerunnerventures.com/?page_id=399",
+          "source_title": "Forerunner Ventures",
+          "source_content_hash": "ef798855b1d6f2fcc232d92a404f9c34736b322a05780bffcdc3801398990eae",
+          "quote": "2012 Founded in",
+          "quote_hash": "712ded800cc1885e44c084363cbe7d4fead08c8c01112d4f390899d1364989dc"
+        },
         {
           "source_id": "FISRC-39cbb5f315cdae11",
           "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
@@ -228,7 +270,8 @@
           "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

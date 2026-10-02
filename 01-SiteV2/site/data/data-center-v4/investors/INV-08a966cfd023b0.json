@@ -139,10 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Capital One Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Capital One Ventures是Capital One的战略投资者，通过投资与Capital One业务相关、推动数据、技术和金融服务创新的初创公司加速集团创新。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构属性",
+          "value": "Capital One战略投资部门",
+          "source_id": "strategy"
+        },
+        {
+          "field": "focus",
+          "label": "投资方向",
+          "value": "数据、技术及金融服务领域，并与Capital One业务相关",
+          "source_id": "strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +162,24 @@
           "source_id": "FISRC-32de5b12bdde4fb9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://growthventures.capitalone.com/",
+          "source_id": "strategy",
+          "url": "https://growthventures.capitalone.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "strategy",
+          "source_url": "https://growthventures.capitalone.com/",
+          "source_title": "Home | Capital One Ventures",
+          "source_content_hash": "fe770fa8974f80548b49a63708f91d652a619b82ecc750a3afcad565a4faa042",
+          "quote": "Capital One Ventures is a strategic investor, harnessing the potential of startups to accelerate innovation. We invest in pioneering companies that are transforming the future of data, technology and financial services and relate to the business of Capital One.",
+          "quote_hash": "3a688b18541ca1b33b6fc78af09f0c068a8cea38780c79c8f70e72564e898f15"
+        },
         {
           "source_id": "FISRC-32de5b12bdde4fb9",
           "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
@@ -161,7 +189,8 @@
           "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
