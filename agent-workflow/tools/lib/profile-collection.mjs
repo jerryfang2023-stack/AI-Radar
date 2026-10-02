@@ -101,7 +101,7 @@ export class ProfileQueue {
   checkCandidate(job,profile,{requireFresh=false}={}){
     const data={schema_version:'PUBLIC-ENTITY-PROFILES-V1.0',as_of:profile.last_verified_at,institutions:{},people:{}};data[job.collection][job.id]=profile;
     if(!this.validate(data))throw new Error(JSON.stringify(this.validate.errors));
-    if(profile.coverage_status!=='researched'||profile.identity_status==='pending_verification'||!profile.summary?.trim())throw new Error('Candidate must be source-reviewed research');
+    if(!['researched','activity_only','self_declared_affiliation'].includes(profile.coverage_status)||profile.identity_status!=='verified'||!profile.summary?.trim())throw new Error('Candidate must have a verified identity and supported coverage status');
     if(job.collection==='institutions'&&(!['organization','person'].includes(profile.profile_type)||profile.identity_status!=='verified'))throw new Error('Investor identity and profile type must be explicit');
     const sources=new Map();
     for(const source of profile.sources){

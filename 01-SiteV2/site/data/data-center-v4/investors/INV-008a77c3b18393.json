@@ -234,12 +234,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Redpoint Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Redpoint Ventures 官网公开团队、公司目录和投资资讯。团队成员页面展示 early 与 growth 岗位，并分别披露个人关注领域和部分投资案例；本档案不把个人专长推断为全机构的完整投资策略。",
+      "coverage_note": "团队领域和投资案例按官网个人页面归属到相应投资人；投资案例是选列信息，不代表完整组合或投资回报。",
+      "facts": [
+        {
+          "field": "investment_team_early",
+          "label": "早期投资团队",
+          "value": "官网将 Jordan Segall 标为 Partner, early；其页面称他与 SaaS、开发工具、AI 和安全领域的企业创始人合作。此为个人页面所述范围。",
+          "source_id": "redpoint_jordan"
+        },
+        {
+          "field": "investment_team_growth",
+          "label": "成长投资团队",
+          "value": "官网将 Scott Raney 标为 Managing Director, growth；其个人页面称其关注企业软件基础设施与应用。此为个人页面所述范围。",
+          "source_id": "redpoint_scott"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Scott Raney 的官网个人投资页面列出 Adap.tv（Series A）作为一个选列投资案例；这不是机构完整组合清单或回报记录。",
+          "source_id": "redpoint_scott_case"
+        },
         {
           "description": "融资来源记录：Restate · A轮 · 2026-09-30 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-32de5b12bdde4fb9"
@@ -253,8 +270,48 @@
           "source_id": "FISRC-897ee0f062e50b23"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Redpoint Ventures",
+          "url": "https://www.redpoint.com/",
+          "source_id": "redpoint_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "redpoint_home",
+          "source_url": "https://www.redpoint.com/",
+          "source_title": "Redpoint Ventures",
+          "source_content_hash": "e6f5f5d9cbec1c2dce7bc033c44b952ca48062367b700ace0f11732dc56a8e2f",
+          "quote": "Redpoint Ventures Redpoint Companies Team Content Hub Companies Team Content Hub",
+          "quote_hash": "b45d5f639f0673a3e37f34f79f8096848555a4f5cacd27656336b357706b79c0"
+        },
+        {
+          "source_id": "redpoint_jordan",
+          "source_url": "https://www.redpoint.com/our-people/jordan-segall/",
+          "source_title": "Jordan Segall | Redpoint Ventures",
+          "source_content_hash": "2d330dd5e059d1912ee1f771a33fde7a9a6ec19a4415c101f53b4146459bf4ba",
+          "quote": "Jordan Segall Partner , early Jordan joined Redpoint in 2021 to work with enterprise founders across SaaS, developer tools, AI, and security.",
+          "quote_hash": "b3ac88ffc6cd0f37e8b97ed8a4c6735802a97397f6d17bdea3a2870a75fbdc75"
+        },
+        {
+          "source_id": "redpoint_scott",
+          "source_url": "https://www.redpoint.com/our-people/scott-raney/",
+          "source_title": "Scott Raney | Redpoint Ventures",
+          "source_content_hash": "425e2014e4e5ea6c9f9810f169931ccb723334d3497bd2b70fc313bdff61d694",
+          "quote": "Scott Raney Managing Director , growth Scott joined Redpoint in 2000 and is an experienced investor focused on enterprise software, both infrastructure and applications.",
+          "quote_hash": "5beec6ca354686cea2583a17ebe2abf4a6b355aaccab8b50cf23d10fa49da4ba"
+        },
+        {
+          "source_id": "redpoint_scott_case",
+          "source_url": "https://www.redpoint.com/our-people/scott-raney/",
+          "source_title": "Scott Raney | Redpoint Ventures",
+          "source_content_hash": "425e2014e4e5ea6c9f9810f169931ccb723334d3497bd2b70fc313bdff61d694",
+          "quote": "Adap.tv Adap.tv, now a part of ONE by AOL, is transforming the way programmatic video advertising is bought and sold. Series A",
+          "quote_hash": "e30584648a0302fd0003eff79ad376e340036737d6597da397d309434eb14bdc"
+        },
         {
           "source_id": "FISRC-32de5b12bdde4fb9",
           "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
@@ -280,7 +337,7 @@
           "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

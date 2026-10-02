@@ -139,19 +139,54 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Naval Ravikant 当前按“个人投资者”收录。最新融资披露记录日期为 2023-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "Replit 官方公告将 Naval Ravikant 列入融资参与方；AngelList 官方访谈以 AngelList 联合创始人身份介绍他。",
+      "summary": "Naval Ravikant 是 AngelList 联合创始人及天使投资人。Replit 官方公告将他列为 2023 年 9700 万美元 B 轮扩展的参投人之一。",
+      "current_roles": [
+        {
+          "title": "Co-founder",
+          "organization": "AngelList",
+          "source_id": "PFSRC-INV-69f372f640d6ea-2"
+        }
+      ],
+      "career": [
+        {
+          "organization": "AngelList",
+          "title": "Co-founder",
+          "period": "2010 年创立",
+          "description": "AngelList 官方访谈称 Naval Ravikant 为公司联合创始人。",
+          "source_id": "PFSRC-INV-69f372f640d6ea-2"
+        }
+      ],
+      "education": [],
+      "experience_summary": "AngelList 联合创始人，个人投资记录仅录入 Replit 官方公告确认的这一笔。",
       "track_record": [
+        {
+          "description": "Replit 官方融资公告将 Naval Ravikant 列为其 2023 年 9700 万美元 B 轮扩展的参投人之一。",
+          "source_id": "PFSRC-INV-69f372f640d6ea-1"
+        },
         {
           "description": "融资来源记录：Replit · B轮扩展 · 2023-04-27 · 本轮参投（天使投资人） · $97.4 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b0f32fe01d091cc"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-69f372f640d6ea-1",
+          "source_url": "https://replit.com/blog/b-extension",
+          "source_title": "Raising $97.4M at $1.16B Valuation to Expand our | Replit",
+          "source_content_hash": "28b811e1cc705b59827a7ebfa6549106d50456912cc1ad7de39f86b5d5d4155b",
+          "quote": "Others participating include Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures (Cathie Woods), and Hamilton Helmer, the author of ground-breaking “7 Powers.”",
+          "quote_hash": "70dbb43800642964c5463ad5215206f3beee54cd4c7e5c6832356abdad493028"
+        },
+        {
+          "source_id": "PFSRC-INV-69f372f640d6ea-2",
+          "source_url": "https://www.angellist.com/blog/q-a-with-angellist-co-founder-naval-ravikant",
+          "source_title": "Q&amp;A With AngelList Co-Founder Naval Ravikant | AngelList",
+          "source_content_hash": "f57dc72b441d0eb28f91397c5f6a93b0fa1869063bcfc0072a7ce21935ee3d36",
+          "quote": "Q&A With AngelList Co-Founder Naval Ravikant",
+          "quote_hash": "ba978718a3de583ffeba50fdaa193a6b661a14b5daa400d46ca5d4bf9f954000"
+        },
         {
           "source_id": "FISRC-9b0f32fe01d091cc",
           "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
@@ -161,7 +196,10 @@
           "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

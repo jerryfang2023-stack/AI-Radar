@@ -139,19 +139,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SYN Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "SYN Ventures 是专注网络安全创新公司的风险投资机构。官网区分主基金与种子基金策略，并介绍其通过安全行业网络为创始团队提供资源。",
+      "coverage_note": "官网策略为机构自述；组合案例只列出官网展示的个别公司，不代表完整组合或投资回报。",
+      "facts": [
+        {
+          "field": "fund_strategy",
+          "label": "基金策略",
+          "value": "官网称主基金策略为领投后期 Seed、Series A 与 Series B 的网络安全公司；SYN Seed Fund 领投或联合领投网络安全种子轮。",
+          "source_id": "syn_about"
+        },
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网称其为创始人及组合公司对接安全与商业生态中的领导者，并提供设计合作、客户参考等资源。",
+          "source_id": "syn_founder_support"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SYN 官网组合页列示 Arcade 为 2026 年 Series A 阶段的组合案例，并将其描述为生产环境 AI agent 的安全执行层；这是官网列选的案例，不代表完整组合或投资回报。",
+          "source_id": "syn_portfolio_arcade"
+        },
         {
           "description": "融资来源记录：Arcade AI Inc. · A轮 · 2026-06-15 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0e863445463ffc16"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "SYN Ventures",
+          "url": "https://www.synventures.com/about/",
+          "source_id": "syn_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "syn_about",
+          "source_url": "https://www.synventures.com/about/",
+          "source_title": "SYN Ventures | About the Firm | Investing in Cybersecurity Innovators",
+          "source_content_hash": "6851b9404ecc02a39a6cb749b4e57b089fb20597a0890d53740f76f8e1d9773c",
+          "quote": "Venture strategy leading late-stage Seed, Series A & B rounds for global cybersecurity companies with enterprise traction. SYN Seed Fund Seed strategy leading or co-leading Seed rounds for cybersecurity companies.",
+          "quote_hash": "554707ce319875de457d8dcaa7a078f6fa9ba996c441c06bd67a292b12a48084"
+        },
+        {
+          "source_id": "syn_founder_support",
+          "source_url": "https://www.synventures.com/about/",
+          "source_title": "SYN Ventures | About the Firm | Investing in Cybersecurity Innovators",
+          "source_content_hash": "6851b9404ecc02a39a6cb749b4e57b089fb20597a0890d53740f76f8e1d9773c",
+          "quote": "Beyond funding, SYN Ventures provides founders and their companies with unrivaled access to leaders across the security and business ecosystems. These relationships drive design partnerships, capital investments, customer references and more.",
+          "quote_hash": "e3749d106fe59fc2978735010ab01b99c35da0fdab96033ae40cc5e875715738"
+        },
+        {
+          "source_id": "syn_portfolio_arcade",
+          "source_url": "https://www.synventures.com/portfolio-companies/",
+          "source_title": "SYN Ventures Portfolio Companies | Cyber, Industrial Security, Privacy",
+          "source_content_hash": "ea6f27358595d4cd9cb5ad9eeaa144c5821eecfc8f361138280458e39491e34f",
+          "quote": "Series A, 2026 Arcade is the secure action layer for production AI agents.",
+          "quote_hash": "177d600b10e414640e9c6cd3eee28304d6735419e50f229de3bcaba7e31efe7b"
+        },
         {
           "source_id": "FISRC-0e863445463ffc16",
           "source_url": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
@@ -161,7 +210,7 @@
           "quote_hash": "af0401b8d1bd3adb3e1e9d2c064aeb7258fe1e2d812334aa013db48d6e233bf7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

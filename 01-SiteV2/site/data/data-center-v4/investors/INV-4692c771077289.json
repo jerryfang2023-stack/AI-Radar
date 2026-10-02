@@ -140,12 +140,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "United Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位和 Seltz 投资披露均来自 United Ventures 官方网站。",
+      "summary": "United Ventures 官网自述其为独立风险投资机构，支持以技术重塑行业的创业者；其官方文章记录参与 Seltz 的 1,250 万美元种子轮。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资定位",
+          "value": "独立风险投资机构，支持以技术重塑行业的创业者",
+          "source_id": "PFSRC-INV-4692c771077289-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "United Ventures 官方文章称其参与 Seltz 的 1,250 万美元 Seed 轮。",
+          "source_id": "PFSRC-INV-4692c771077289-2"
+        },
         {
           "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮参投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05007e2b6b43ffda"
@@ -153,6 +168,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-4692c771077289-1",
+          "source_url": "https://unitedventures.com/",
+          "source_title": "United Ventures &mdash; We invest in people and technology",
+          "source_content_hash": "ffccbd1736d0b8af9a0426790247cf550f24b09b3decabbe56785105b9410b61",
+          "quote": "We are an independent Venture Capital firm supporting visionary entrepreneurs to reinvent industries through technology",
+          "quote_hash": "07b533f9bd77eee45f691a86916e2c8edfe67aefd768d298f7adfe607d14a921"
+        },
+        {
+          "source_id": "PFSRC-INV-4692c771077289-2",
+          "source_url": "https://unitedventures.com/2026/06/24/why-we-backed-seltz-rebuilding-search-for-the-agentic-web/",
+          "source_title": "Why We Backed Seltz: Rebuilding Search for the Agentic Web &mdash; United Ventures",
+          "source_content_hash": "01d66f4efb212ebd6136c00cc6ec4f473cda85595a4beb795c858e7ba66328bf",
+          "quote": "This is the gap Seltz was built to close, and it is why we are proud to have joined the company&rsquo;s $12.5M Seed round.",
+          "quote_hash": "17b6f3b441711d34d93ae31f20750338bf359f9c7caadb5e86347ac3d59e3f38"
+        },
         {
           "source_id": "FISRC-05007e2b6b43ffda",
           "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
@@ -162,7 +193,7 @@
           "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -140,11 +140,26 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "We Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "We Ventures 官网确认其为韩国的 We Ventures Limited Company，但其公开组合列表未列 Algorix；WOWTALE 报道的 We Ventures 与该官网机构的对应关系尚未由一手交易公告确认，因此仅保留融资披露层面的活动覆盖。",
+      "summary": "WOWTALE 报道 We Ventures 参与 Algorix 后续融资；We Ventures 官网确认该公司为韩国投资机构。当前档案仅记录这笔可追溯融资披露，不代表完整机构背景、业绩或组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "official_identity",
+          "label": "机构官网主体名称",
+          "value": "官网主体为 We Ventures Limited Company，办公地址位于韩国首尔。",
+          "source_id": "PFSRC-INV-49ad92ff76936c-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "WOWTALE 报道称 We Ventures 参与 Algorix 的 2024 年 9 月 Pre-Series A，并在 2026 年 8 月 A 轮回投；官网公开组合列表未列 Algorix。",
+          "source_id": "PFSRC-INV-49ad92ff76936c-2"
+        },
         {
           "description": "融资来源记录：Algorix · 多轮融资 · 2026-08-14 · 本轮参投 · $11.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4e441239551a1fd6"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-49ad92ff76936c-1",
+          "source_url": "https://en.weventures.co.kr/",
+          "source_title": "weventures",
+          "source_content_hash": "1b02eb74b9f393b6027ed13f4a81d1de5f01423f72a5768275b33bc8cb12c981",
+          "quote": "We Ventures Limited Company",
+          "quote_hash": "7fc1231e0d0e16048cccffe4cb23c9423ec55c5eaee54567c96114af731d14e6"
+        },
+        {
+          "source_id": "PFSRC-INV-49ad92ff76936c-2",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE",
+          "source_content_hash": "ab17b1c899f8d7ecb53f9e19326ac772fc4a45c3e18ad82ecc7cb1995704e661",
+          "quote": "We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment.",
+          "quote_hash": "72f58a53439c8cf5bd6dc3adc08d0b2affd4af33b379c8d0e74144de5bc09fb4"
+        },
         {
           "source_id": "FISRC-4e441239551a1fd6",
           "source_url": "https://en.wowtale.net/2026/08/14/234729/",
@@ -161,7 +192,7 @@
           "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

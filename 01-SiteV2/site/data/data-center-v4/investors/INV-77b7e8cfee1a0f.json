@@ -139,19 +139,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Valor Atreides AI Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "SEC Form D 将该基金登记为 Valor Atreides AI I L.P.；Sable 的发行方新闻稿确认 Valor Atreides AI Fund 参与 4500 万美元融资。",
+      "summary": "Valor Atreides AI Fund 对应的 SEC 登记实体为 Valor Atreides AI I L.P.，登记地址在芝加哥。Sable 的发行方新闻稿确认该基金参与其 2026 年 7 月 4500 万美元融资；公告没有披露具体轮次名称。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "SEC 登记实体名称",
+          "value": "Valor Atreides AI I L.P.",
+          "source_id": "PFSRC-INV-77b7e8cfee1a0f-1"
+        },
+        {
+          "field": "address",
+          "label": "SEC 登记邮寄地址",
+          "value": "320 North Sangamon Street, Suite 1200, Chicago, IL 60607。",
+          "source_id": "PFSRC-INV-77b7e8cfee1a0f-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Sable 发行方新闻稿称，Valor Atreides AI Fund 参与其 2026 年 7 月公布的 4500 万美元融资；新闻稿未标注具体轮次名称。",
+          "source_id": "PFSRC-INV-77b7e8cfee1a0f-2"
+        },
         {
           "description": "融资来源记录：Sable · 轮次未披露 · 2026-07-16 · 本轮参投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f8cec869ac3008e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "address",
+          "label": "SEC Form D 登记地址",
+          "value": "320 North Sangamon Street, Suite 1200, Chicago, IL 60607",
+          "source_id": "PFSRC-INV-77b7e8cfee1a0f-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-77b7e8cfee1a0f-1",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2033590/000101297525000041/0001012975-25-000041-index.htm",
+          "source_title": "EDGAR Filing Documents for 0001012975-25-000041",
+          "source_content_hash": "8a4cb0d73048b25486fc0744c008aaccebd7e78fd69bd16265018fcffc8ae273",
+          "quote": "VALOR ATREIDES AI I L.P. (Filer)",
+          "quote_hash": "2098fda6283bd377453fc5731090d6dc000f84c8326ba712801b4c7edd40745c"
+        },
+        {
+          "source_id": "PFSRC-INV-77b7e8cfee1a0f-2",
+          "source_url": "https://www.newswire.com/news/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain",
+          "source_title": "Sable Raises $45M to Build the First AI Employee that can Click, See, and Explain | Newswire",
+          "source_content_hash": "a47a61fee1b3115ff23f2aca65adb99a9e63b4c05f5691c1177db3729cb482e4",
+          "quote": "with participation from BoxGroup, SV Angel, Valor Atreides AI Fund, Sabrina and Evan Hahn",
+          "quote_hash": "cee153e599bc046661c9005c4551c47a960c143147b85a35e8befc5d3fcfb6bb"
+        },
         {
           "source_id": "FISRC-9f8cec869ac3008e",
           "source_url": "https://www.citybiz.co/article/876088/sable-raises-45m-to-build-ai-employee-for-customer-relations/",
@@ -161,7 +201,7 @@
           "quote_hash": "c9b09741a783eeded8d5ba6e91bf31f306cc1e89aff8eb3e3905e54b1ac16dbb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DYDX Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "DYDX Capital 官网说明其投资理念、早期支票和投后支持方式；Tribal 于 2026 年 5 月通过 GlobeNewswire 发布的公司新闻稿确认 DYDX Capital 参与种子轮。",
+      "summary": "DYDX Capital 是一家专注以数据解决复杂问题的早期风险投资机构。官网称其倾向于作为首批投资人，并为组合公司提供治理、业务网络和客户引荐支持。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "偏好早期首笔投资。",
+          "source_id": "PFSRC-INV-815fd791bd7dd1-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的关注方向",
+          "value": "以数据分析解决复杂问题，覆盖高科技、软件安全、医疗健康和工业等领域。",
+          "source_id": "PFSRC-INV-815fd791bd7dd1-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投后支持",
+          "value": "提供治理支持、业务网络和客户引荐。",
+          "source_id": "PFSRC-INV-815fd791bd7dd1-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Tribal 2026 年 5 月 20 日公司新闻稿称，DYDX Capital 参与其 1000 万美元种子轮。",
+          "source_id": "PFSRC-INV-815fd791bd7dd1-2"
+        },
         {
           "description": "融资来源记录：Tribal AI Inc. · 种子轮 · 2026-05-20 · 本轮参投 · 1000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5f73fd929efb7ea"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "DYDX Capital 官网",
+          "value": "https://dydxcap.com/",
+          "url": "https://dydxcap.com/",
+          "source_id": "PFSRC-INV-815fd791bd7dd1-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-815fd791bd7dd1-1",
+          "source_url": "https://dydxcap.com/",
+          "source_title": "Home - DYDX Capital",
+          "source_content_hash": "c7c8fbe2677297ba1ec8efba431e67becd0bc79918eb8586d87b5b65657ecf8c",
+          "quote": "We like to write the first checks to help bring people and ideas to the table",
+          "quote_hash": "8ccafab130a90a993b80b7307e09fb4c38792d1e791736b67afd9e36815d504d"
+        },
+        {
+          "source_id": "PFSRC-INV-815fd791bd7dd1-2",
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/20/3298634/0/en/tribal-raises-10m-seed-to-bring-context-aware-ai-agents-to-enterprise-systems.html",
+          "source_title": "Tribal Raises $10M Seed to Bring Context-Aware AI Agents to",
+          "source_content_hash": "c460b9223a0644efda52188213c4da4a9b616f6e7f8d6a72ec4f5d569c9d25e6",
+          "quote": "Tribal today announced a $10 million seed round led by Team8, with participation from DYDX Capital and a group of angel investors",
+          "quote_hash": "b806b2e8fb0bf89a51f066c2c48f6eba04aabdad9137d1ac6f50d927fb9b1efa"
+        },
         {
           "source_id": "FISRC-b5f73fd929efb7ea",
           "source_url": "https://siliconangle.com/2026/05/20/tribal-ai-lands-10m-seed-funding-bring-metadata-native-agents-enterprise/",
@@ -161,7 +208,7 @@
           "quote_hash": "8c4b83ac5004727fc9d8b02dffe787ac8ef9e2d5238d5f3828696c6058a8aca1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

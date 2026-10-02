@@ -140,12 +140,34 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Debo Dutta 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "依据 Archestra 发行方融资公告及 Nutanix 官方人物/新闻页面；职务时间按来源日期区分。",
+      "summary": "Archestra 官方种子轮公告将 Debo Dutta 列为天使投资人，并称其为 Nutanix 首席 AI 官；Nutanix 将 Debo Dutta 识别为 Debojyoti“Debo”Dutta，2024 年人物简介记载其任 AI 工程副总裁。",
+      "current_roles": [
+        {
+          "title": "Chief AI Officer",
+          "organization": "Nutanix",
+          "source_id": "PFSRC-INV-3b9d2d8ae2ba8b-3"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Nutanix",
+          "title": "Vice President of Engineering, AI",
+          "period": "2024 年 3 月（官网人物简介）",
+          "description": "Nutanix 2024 年人物简介将其称为 AI 工程副总裁；2026 年 Nutanix 页面将其称为首席 AI 官。",
+          "source_id": "PFSRC-INV-3b9d2d8ae2ba8b-2"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Nutanix 官方资料将其列为 AI 领域的工程负责人，并在 2026 年页面称为首席 AI 官。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Archestra 官方公告将 Debo Dutta 列入其 2026 年种子轮天使投资人。",
+          "source_id": "PFSRC-INV-3b9d2d8ae2ba8b-1"
+        },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
@@ -153,6 +175,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-3b9d2d8ae2ba8b-1",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
+          "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
+          "quote": "Debo Dutta (Chief AI Officer at Nutanix)",
+          "quote_hash": "e18144f39002222583b4e5c60fb7980d72d6b28a6dd6d00580d747ed28889419"
+        },
+        {
+          "source_id": "PFSRC-INV-3b9d2d8ae2ba8b-2",
+          "source_url": "https://www.nutanix.com/theforecastbynutanix/profile/debo-duta-enabling-ai-powered-computational-biology-in-pursuit-of-precision-medicines",
+          "source_title": "Debo Duta Enabling AI-Powered Computational Biology in Pursuit of Precision Medicines",
+          "source_content_hash": "68265240f99953f66b1abb7711fd1e205c66061b5d9ae882731864543dadab17",
+          "quote": "Debojyoti “Debo” Dutta, vice president of engineering, AI at Nutanix",
+          "quote_hash": "2d91daf3caf2299429748c6780288c7d7a1f90599d022159320bce9122f4ab01"
+        },
+        {
+          "source_id": "PFSRC-INV-3b9d2d8ae2ba8b-3",
+          "source_url": "https://www.nutanix.com/theforecastbynutanix/news/ai-gateway-to-protect-data-and-enable-innovation?dicbo=v4-XaNobnr-1202207278-1",
+          "source_title": "AI Gateway to Protect Data and Enable Innovation",
+          "source_content_hash": "ec125ec3f2ae21f687e0145b75317ff9ed3a4a3d1c47ddae96c7384691500482",
+          "quote": "Nutanix CEO Rajiv Ramaswami and Nutanix Chief AI Officer Debo Dutta discuss how enterprise AI is evolving from inference to agents",
+          "quote_hash": "00ee331590fee275040222afefc64dc00ee66d17d80a042504aa929871042281"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -162,7 +208,7 @@
           "quote_hash": "e18144f39002222583b4e5c60fb7980d72d6b28a6dd6d00580d747ed28889419"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

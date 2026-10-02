@@ -139,12 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Biotech Development Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "渶策资本官网新闻明确称 Biotech Development Fund 由高瓴和辉瑞共同发起设立，并将其列为华深智药融资参与方。未找到该基金独立官网、管理法律主体或完整投资策略，本档案只覆盖已披露的设立关系和投资活动。",
+      "summary": "Biotech Development Fund 是由高瓴资本与辉瑞共同发起设立的基金。渶策资本2026年4月13日公告将其列为华深智药（Earendil Labs）多轮累计融资7.87亿美元的投资参与方；本次公开资料未确认独立管理主体或官网。",
+      "facts": [
+        {
+          "field": "founding_sponsors",
+          "label": "发行方投资机构披露的发起方",
+          "value": "高瓴资本与辉瑞共同发起设立",
+          "source_id": "PFSRC-INV-873c84a791b2a3-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "渶策资本公告将 Biotech Development Fund 列为华深智药多轮累计7.87亿美元融资的参与方；公告未披露该基金的单独投资金额或具体轮次。",
+          "source_id": "PFSRC-INV-873c84a791b2a3-1"
+        },
         {
           "description": "融资来源记录：华深智药 · 多轮融资 · 2026-03-25 · 本轮参投 · 7.87亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-972ef11d09af7ec8"
@@ -152,6 +163,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-873c84a791b2a3-1",
+          "source_url": "https://www.incecap.com.cn/news/detail/268",
+          "source_title": "新闻动态-渶策资本官网",
+          "source_content_hash": "8db76bb9b75b6d9bcd340da0f74c6066d5a68e52b36ea779090b7ad623009361",
+          "quote": "以及由高瓴和辉瑞共同发起设立的Biotech Development Fund，另有多家新老科技及医疗健康投资人共同参与。",
+          "quote_hash": "e5524a8cf2393dcf342a4af5d672171f8326c230628a488cedda95fa56aaaf13"
+        },
         {
           "source_id": "FISRC-972ef11d09af7ec8",
           "source_url": "https://vc.pedaily.cn/company/205217.html",
@@ -161,7 +180,7 @@
           "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

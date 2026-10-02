@@ -140,19 +140,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mindset Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Mindset Ventures 官方官网介绍其投资理念，官方组合页列出 Alta；Alta 官方融资公告将 Mindset Ventures 列为 A 轮参投方。已用组合页区分名称相近的其他 Mindset 机构。",
+      "summary": "Mindset Ventures 是聚焦美国与以色列早期科技投资的风险投资机构，官网称其与顶级 VC 共同投资并为组合公司提供国际拓展等支持；官方组合页列有 Alta，融资公告将其列入 Alta 的 2500 万美元 A 轮参投方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述的投资范围",
+          "value": "美国与以色列的早期科技投资。",
+          "source_id": "PFSRC-INV-6da5f6c29b2edc-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资方式",
+          "value": "行业不设限，并与顶级风险投资机构共同投资。",
+          "source_id": "PFSRC-INV-6da5f6c29b2edc-1"
+        },
+        {
+          "field": "portfolio",
+          "label": "官网披露的组合公司",
+          "value": "Alta。",
+          "source_id": "PFSRC-INV-6da5f6c29b2edc-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Alta 官方公告将 Mindset Ventures 列为其 2026 年 7 月 2500 万美元 A 轮参投方。",
+          "source_id": "PFSRC-INV-6da5f6c29b2edc-3"
+        },
         {
           "description": "融资来源记录：Alta · A轮 · 2026-07-08 · 本轮参投 · 2500万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9661f69b0104e76e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Mindset Ventures 官网",
+          "value": "https://mindset.ventures/",
+          "url": "https://mindset.ventures/",
+          "source_id": "PFSRC-INV-6da5f6c29b2edc-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-6da5f6c29b2edc-1",
+          "source_url": "https://mindset.ventures/our-mindset/",
+          "source_title": "Our mindset - mindset",
+          "source_content_hash": "1aa0a64a94206c38e86d888ac3d8a51dc858cd9cb1efc8efc1473954e453ed00",
+          "quote": "We are industry agnostic and invest alongside top-tier venture capital funds.",
+          "quote_hash": "d6856d2dd14c56b2899f88fca322ee8d3e48def947a3266a1069f8c8f45ec2b7"
+        },
+        {
+          "source_id": "PFSRC-INV-6da5f6c29b2edc-2",
+          "source_url": "https://mindset.ventures/our-companies/",
+          "source_title": "Portfolio - mindset",
+          "source_content_hash": "9cc312ae83286ae0192ff90dc92c945dc0af0e26873cad13333a6e2e9d559053",
+          "quote": "Alta positions itself as the #1 AI-native GTM Operating System (OS)",
+          "quote_hash": "7bcc92fad178c61c71ca56eeb10f6af7633f576f7efe0e0c86323161eea0c920"
+        },
+        {
+          "source_id": "PFSRC-INV-6da5f6c29b2edc-3",
+          "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+          "source_title": "Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams",
+          "source_content_hash": "f7ed101070b924a88e6a1a3a6b612f9ceb60c876acd0949ed7b46d51e1c4ae90",
+          "quote": "The round was led by IN Venture, with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+          "quote_hash": "ff800632b9137de5cf9dbadf3556fef58b94d4ed868783c3b24df1cdab335f0a"
+        },
         {
           "source_id": "FISRC-9661f69b0104e76e",
           "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
@@ -162,7 +221,7 @@
           "quote_hash": "bb6bdd242d277957bb00a906cb2f149887d14dd972545d84aa35fd2d5e951977"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

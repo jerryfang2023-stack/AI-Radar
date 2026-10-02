@@ -139,12 +139,42 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Logan Green 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "Lyft 官方材料记录 Logan Green 的联合创始人、CEO 和董事会任期；Monogram 官方公告列出一笔天使投资，不代表完整投资组合。",
+      "summary": "Lyft 官方材料记录 Logan Green 是公司联合创始人，曾任 CEO 并于 2025 年离开董事会；Monogram 官方公告将其列入 2026 年种子轮天使投资者。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Lyft",
+          "title": "Co-founder and CEO",
+          "period": "2012 – April 2023",
+          "description": "Lyft 官方年报材料称 Logan Green 自公司创立起担任 CEO，直至 2023 年 4 月。",
+          "source_id": "PFSRC-INV-4bb72442249d9a-1"
+        },
+        {
+          "organization": "Lyft",
+          "title": "Chair of the Board",
+          "period": "April 2023 – August 14, 2025",
+          "description": "Lyft 官方公告称 Green 于 2023 年 4 月任董事会主席，并于 2025 年 8 月离开董事会。",
+          "source_id": "PFSRC-INV-4bb72442249d9a-2"
+        },
+        {
+          "organization": "Autotech Ventures",
+          "title": "Venture Partner",
+          "period": "Lyft reported this role in August 2025; end date not disclosed",
+          "description": "Lyft 2025 年公告称其将继续担任 Autotech Ventures 的 Venture Partner；未据此推断其在本次核验日仍任职。",
+          "source_id": "PFSRC-INV-4bb72442249d9a-2"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Lyft 官方材料记录其联合创立并领导 Lyft；Monogram 官方公告列其为天使投资者。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Monogram 官方公告将 Logan Green 列入其 4,000 万美元种子轮天使投资者。",
+          "source_id": "PFSRC-INV-4bb72442249d9a-3"
+        },
         {
           "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮天使投资人 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-907e4297862ddd8c"
@@ -152,6 +182,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-4bb72442249d9a-1",
+          "source_url": "https://investor.lyft.com/financials/sec-filings/content/0001759509-24-000055/lyft-20240425.htm",
+          "source_title": "April 25, 2024 - DEF 14A: Definitive proxy statements | Lyft, Inc. (LYFT)",
+          "source_content_hash": "ff7353b1d7cdf9a4459fa53f410fc89f2c2f707f68bffa43f4a2e880e2630125",
+          "quote": "He served as our Chief Executive Officer from our founding until April 2023.",
+          "quote_hash": "2f08953a483ef28c3230b3f2375c6ad7665f6700049c27d2358440fd5950e804"
+        },
+        {
+          "source_id": "PFSRC-INV-4bb72442249d9a-2",
+          "source_url": "https://investor.lyft.com/news-events-presentations/press-releases/detail/93/lyft-announces-updates-to-board-of-directors-and-enhanced-voting-and-governance-structures",
+          "source_title": "Lyft Announces Updates to Board of Directors and Enhanced Voting and Governance Structures :: Lyft, Inc. (LYFT)",
+          "source_content_hash": "df61b33ab14846b53319291b61055b6fd5299031bbfbae7059872c296c605e4b",
+          "quote": "Co-Founders Logan Green and John Zimmer to Step Down from Lyft Board",
+          "quote_hash": "8ed302979780d8bf5ec79db1685c7a56b2b3f12b01866da71f57c33900b0bd34"
+        },
+        {
+          "source_id": "PFSRC-INV-4bb72442249d9a-3",
+          "source_url": "https://www.monogram.ai/blog/introducing-monogram",
+          "source_title": "Launching Monogram, a new interface for AI — Monogram",
+          "source_content_hash": "91b3af8ddad6f5f68585b4be64a4341254b82711e9e24977a9a5b281834da684",
+          "quote": "angel investors including Arthur Mensch , Logan Green , Karim Atiyeh",
+          "quote_hash": "a62ca457eb2fec33dcce6d25bf75e42480381a30134236c305d1ee2b03f17648"
+        },
         {
           "source_id": "FISRC-907e4297862ddd8c",
           "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
@@ -161,7 +215,7 @@
           "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

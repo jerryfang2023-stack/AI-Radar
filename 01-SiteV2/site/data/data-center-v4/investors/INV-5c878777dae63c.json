@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Lobster Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略和 Harper 案例来自 Lobster Capital 官方网站；公开组合列表仅作为选例，不代表完整业绩。",
+      "summary": "Lobster Capital 官网称其采用聚焦 Y Combinator 的投资策略；官方组合页列出 Harper，并将其描述为 AI 商业保险经纪平台。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资方法",
+          "value": "聚焦 Y Combinator 创业公司的投资策略。",
+          "source_id": "PFSRC-INV-5c878777dae63c-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Lobster Capital 官方组合页列出 Harper，并描述其为 AI 商业保险经纪平台。",
+          "source_id": "PFSRC-INV-5c878777dae63c-2"
+        },
         {
           "description": "融资来源记录：Harper · 多轮融资 · 2026-02-25 · 本轮参投 · $46.8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7f1c22fc0cc9f63f"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-5c878777dae63c-1",
+          "source_url": "https://www.lobstercap.com/about/",
+          "source_title": "About · Lobster Capital",
+          "source_content_hash": "395bf35650b5ec3abfbc203d4ed1ab6ac0c31f186cac1dc2d301c6ceefa77a5d",
+          "quote": "In 2023, that groundwork became Lobster Capital: a fund built on YC specialization and a disciplined approach to investing in the best of the best.",
+          "quote_hash": "b2af27e3d6f0163af5617f0be2797b1bc40235ea2a444efa2d4feefa58fd6d6e"
+        },
+        {
+          "source_id": "PFSRC-INV-5c878777dae63c-2",
+          "source_url": "https://www.lobstercap.com/companies/",
+          "source_title": "Companies · Lobster Capital",
+          "source_content_hash": "d4a1b31a08b44ecedf35078dff772bc5227ea1ab3653993fbeaaddc3fb09d7a8",
+          "quote": "Harper AI-native commercial insurance brokerage",
+          "quote_hash": "59453636e037f03a6edb1e15a7afbe927c4ca7c0b297dae3a16735df0adb2788"
+        },
         {
           "source_id": "FISRC-7f1c22fc0cc9f63f",
           "source_url": "https://techcrunch.com/2026/02/25/ai-insurance-brokerage-harper-raises-45m-series-a-and-seed/",
@@ -161,7 +192,7 @@
           "quote_hash": "f99567302db388c0f0e1bc1872b532b90bf6d6cce0efab2b158a6546e55060ce"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

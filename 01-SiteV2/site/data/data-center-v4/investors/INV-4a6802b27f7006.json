@@ -123,12 +123,26 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Peter Mattis 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "Cockroach Labs 官方页面支持当前职务；Blacksmith 发行方公告将 Peter Mattis 列入一笔种子轮天使投资者。该一笔不代表其完整投资组合。",
+      "summary": "Cockroach Labs 官网列 Peter Mattis 为联合创始人兼 CTO；Blacksmith 官方公告将他列为其 350 万美元种子轮天使投资者。",
+      "current_roles": [
+        {
+          "title": "Co-founder, Chief Technology Officer",
+          "organization": "Cockroach Labs",
+          "source_id": "PFSRC-INV-4a6802b27f7006-1"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Cockroach Labs 官网将 Peter Mattis 列为联合创始人和首席技术官；Blacksmith 公告将他列为 CTO of Cockroach Labs。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Blacksmith 官方种子轮公告将 Peter Mattis（Cockroach Labs CTO）列为天使投资者。",
+          "source_id": "PFSRC-INV-4a6802b27f7006-2"
+        },
         {
           "description": "融资来源记录：Blacksmith · 历史轮次未披露 · 种子轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ba55b463daced495"
@@ -136,6 +150,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-4a6802b27f7006-1",
+          "source_url": "https://www.cockroachlabs.com/about/",
+          "source_title": "About Cockroach Labs",
+          "source_content_hash": "6dddb8a9e9c4a20d276b51205f32d3ddc2a7d2409857b5b7553f93c30340cb40",
+          "quote": "Peter Mattis Co-Founder, Chief Technology Officer",
+          "quote_hash": "6364961603d5f73354c201881fbb26adb7116b3e09a4bde80c83bce793dc2564"
+        },
+        {
+          "source_id": "PFSRC-INV-4a6802b27f7006-2",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "f0a8c6efed1593527cbcfd5d612329a573bbcbcca91bab3081f80abab8cf0840",
+          "quote": "Peter Mattis (CTO of Cockroach Labs)",
+          "quote_hash": "07ab43709c44a9e930bfe582e2fb6541b747fa47ad83ae8d44f380f7e9845c97"
+        },
         {
           "source_id": "FISRC-ba55b463daced495",
           "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
@@ -145,7 +175,7 @@
           "quote_hash": "07ab43709c44a9e930bfe582e2fb6541b747fa47ad83ae8d44f380f7e9845c97"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

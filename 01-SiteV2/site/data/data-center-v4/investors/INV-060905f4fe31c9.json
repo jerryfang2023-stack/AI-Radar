@@ -156,9 +156,16 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Titan Capital Winners Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Titan Capital 官网的一篇融资文章称，Titan Capital Winners Fund 继续支持 Mitigata，并在该公司种子轮时已投资。",
+      "coverage_note": "档案仅记录 Titan Capital 官方披露的 Winners Fund 投资活动。管理团队、基金规模及独立投资策略未由该来源说明。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "已披露投资活动",
+          "value": "Titan Capital 官方文章称 Winners Fund 继续支持 Mitigata，且早期已在其种子轮投资。",
+          "source_id": "titan_mitigata"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -167,7 +174,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "当前仅核实到一项官方披露的被投企业后续融资活动。",
       "sources": [
+        {
+          "source_id": "titan_mitigata",
+          "source_url": "https://www.titancapital.vc/blogs/mitigata",
+          "quote": "with Titan Capital Winners Fund continuing to back the company it first backed at seed.",
+          "source_title": "Mitigata Raises $15M to Scale Cyber Resilience - Titan Capital",
+          "source_content_hash": "de27c923fd0dc196a1e0877c988d7d1bda55451c639588fff0bb27de190a4513",
+          "quote_hash": "d5934cac9b01602bb085cc1a28df52835f23bc66e90f8ffacd02fc62cebf9215"
+        },
         {
           "source_id": "FISRC-78278ca61a2d245e",
           "source_url": "https://startupsunion.com/contravault-ai-raises-3-1m-pre-series-a-to-revolutionize-procurement-intelligence/",
@@ -177,7 +196,7 @@
           "quote_hash": "d0fa13091e690219da3bfa96a5adbf73d65b2f105f7df58a18d94ce915e2e5ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

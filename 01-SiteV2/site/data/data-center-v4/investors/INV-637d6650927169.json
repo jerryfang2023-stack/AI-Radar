@@ -123,12 +123,33 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Eli Brown 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Blacksmith 官方融资文章以“Guilded 创始人”区分 Eli Brown，并列为天使投资人；Blacksmith 官网将同名人士列为 Y Combinator Partner。档案仅记录这两项有来源支持的经历。",
+      "summary": "Blacksmith 官方资料将 Eli Brown 介绍为 Guilded 创始人、Y Combinator Partner，并记载其作为天使投资人参与 Blacksmith 的 350 万美元种子轮。",
+      "current_roles": [
+        {
+          "title": "Partner",
+          "organization": "Y Combinator",
+          "source_id": "PFSRC-INV-637d6650927169-2"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "founder",
+          "label": "创业经历",
+          "value": "Blacksmith 官方融资文章将其称为 Guilded 创始人。",
+          "source_id": "PFSRC-INV-637d6650927169-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Blacksmith 官方公告将 Eli Brown 列为该公司 350 万美元种子轮的天使投资人之一。",
+          "source_id": "PFSRC-INV-637d6650927169-1"
+        },
         {
           "description": "融资来源记录：Blacksmith · 历史轮次未披露 · 种子轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ba55b463daced495"
@@ -136,6 +157,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-637d6650927169-1",
+          "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
+          "source_title": "Blacksmith Raises $3.5M led by GV and Y Combinator to Build a High-Performance CI Cloud. | Blacksmith",
+          "source_content_hash": "f0a8c6efed1593527cbcfd5d612329a573bbcbcca91bab3081f80abab8cf0840",
+          "quote": "Eli Brown (Founder of Guilded) and Theo Browne (Founder of T3 Chat).",
+          "quote_hash": "78187009343f97dbaa6fbada958cc2f0949e62938e8096a087721f96aac7ae0b"
+        },
+        {
+          "source_id": "PFSRC-INV-637d6650927169-2",
+          "source_url": "https://www.blacksmith.sh/company",
+          "source_title": "About Blacksmith | Making GitHub Actions Fast",
+          "source_content_hash": "b9b2681a20a0f5549240ab686954cb01d07f0ee9657085142b8198c2a7e91d51",
+          "quote": "Eli Brown Partner, Y Combinator",
+          "quote_hash": "67bc07c652cf5ad09fb661bd36f1d5ead4999d62d8d23fc763e4951034760573"
+        },
         {
           "source_id": "FISRC-ba55b463daced495",
           "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
@@ -145,7 +182,7 @@
           "quote_hash": "3fec831f7e01baec1eb075a2acb0dca9164071ad6850ec67cd884149a6df5c74"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

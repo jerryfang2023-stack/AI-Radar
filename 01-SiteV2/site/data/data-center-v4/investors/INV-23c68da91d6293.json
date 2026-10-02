@@ -140,11 +140,32 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Olivier Godement 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "目前只核实到 Arrakis 2026 年融资公告中的投资者身份和 OpenAI 职务，未补充完整履历或教育经历。",
+      "summary": "Arrakis 的 2026 年融资公告将 Olivier Godement 列为支持该公司的科技行业人士，并称其为 OpenAI 商业产品负责人。本档案只记录这项公开活动及公告所载职务。",
+      "current_roles": [
+        {
+          "title": "Head of business products",
+          "organization": "OpenAI",
+          "source_id": "olivier_arrakis"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Arrakis 公告将 Olivier Godement 介绍为 OpenAI 商业产品负责人。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "公开投资活动",
+          "value": "Arrakis 2026 年公告将 Olivier Godement 列入该公司支持者；未披露个人投资金额。",
+          "source_id": "olivier_arrakis"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Arrakis 2026 年融资公告将 Olivier Godement 列为公司支持者；公告未披露其个人投资金额。",
+          "source_id": "olivier_arrakis"
+        },
         {
           "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮天使投资人 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ac4fd601f33650ff"
@@ -152,6 +173,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "olivier_arrakis",
+          "source_url": "https://via.ritzau.dk/pressemeddelelse/15058492/arrakis-comes-out-of-stealth-with-dollar38m-to-help-industrial-enterprises-compete-in-the-ai-era?publisherId=90456",
+          "quote": "Olivier Godement, OpenAI’s Head of business products",
+          "source_title": "Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | Business Wire",
+          "source_content_hash": "f6c5007d0b9e6329b9ceee78aa5ccbacf70f5a81d122cccd2ef149815d655743",
+          "quote_hash": "da6ace4b35a3101932342706f84fe6eba8fb31bc0e29b93e50e40c45059bd529"
+        },
         {
           "source_id": "FISRC-ac4fd601f33650ff",
           "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
@@ -161,7 +190,7 @@
           "quote_hash": "31b35d92a4b8a42a9b1fba4d971e7ac3d8bbcc7ef89ffc4a0fe61c7e641b9764"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

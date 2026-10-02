@@ -376,12 +376,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Evantic Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Evantic 官网说明其总部位于伦敦并专注全球 AI 公司；Fireworks 官方融资公告确认 Evantic Capital 参与其 Series D。",
+      "summary": "Evantic 是一家总部位于伦敦、面向全球的风险投资机构，官网称其聚焦新兴 AI 公司。Fireworks 2026 年 Series D 官方公告列出 Evantic Capital 为参与方。",
+      "facts": [
+        {
+          "field": "location",
+          "label": "官网披露的总部",
+          "value": "伦敦。",
+          "source_id": "PFSRC-INV-7c15768ec5a12f-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "全球新兴人工智能公司。",
+          "source_id": "PFSRC-INV-7c15768ec5a12f-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资策略",
+          "value": "覆盖早期投资、成长阶段高确信度投资及对表现领先组合公司的追加投资。",
+          "source_id": "PFSRC-INV-7c15768ec5a12f-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Fireworks 2026 年 7 月 15 日公告称其完成 15.05 亿美元 Series D，并将 Evantic Capital 列为参与方。",
+          "source_id": "PFSRC-INV-7c15768ec5a12f-2"
+        },
         {
           "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c7459d2ce055880"
@@ -395,8 +418,32 @@
           "source_id": "FISRC-f4c8c4cc3e97ab74"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Evantic 官网",
+          "value": "https://www.evantic.ai/",
+          "url": "https://www.evantic.ai/",
+          "source_id": "PFSRC-INV-7c15768ec5a12f-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7c15768ec5a12f-1",
+          "source_url": "https://www.evantic.ai/",
+          "source_title": "Evantic",
+          "source_content_hash": "b5bd819e21e3f6ee5950469dc8df2cd60cf98900776ac4da4f979fe6cfcd27bb",
+          "quote": "Evantic is a globally-focused venture capital firm based in London. We aim to invest in and partner with the best rising AI companies in the world.",
+          "quote_hash": "832263b6ada9bbd72219c76e2880d23b1390188432db2b797182889c5aa15252"
+        },
+        {
+          "source_id": "PFSRC-INV-7c15768ec5a12f-2",
+          "source_url": "https://fireworks.ai/blog/series-d-announcement",
+          "source_title": "Fireworks Secures $1.5 Billion in Series D Funding",
+          "source_content_hash": "24a680502de1a49ead047ec0c9ffdcc27db4a53899efdf1fed1c8194d05b635d",
+          "quote": "Today, Fireworks announced a $1.505 billion Series D at a $17.5 billion valuation, led by Atreides Management, Index Ventures, and TCV, with participation from Evantic Capital, Lightspeed Venture Partners, Nvidia, 20VC, Bessemer Venture Partners, Menlo Ventures, and others.",
+          "quote_hash": "191b0ae0c9fd5edea81b26ac09ef1702a892f2bd4edda132d68627e146c74118"
+        },
         {
           "source_id": "FISRC-1c7459d2ce055880",
           "source_url": "https://factory.ai/news/5-billion-valuation",
@@ -422,7 +469,7 @@
           "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

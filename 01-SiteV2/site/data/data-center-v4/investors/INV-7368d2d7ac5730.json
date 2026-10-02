@@ -123,19 +123,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Intact Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Intact Financial 官方资料将 Intact Ventures 定义为其企业风险投资部门；Gatik 官方融资公告将其列为 2021 年 8500 万美元 Series B 的既有参投方，纠正队列二手来源中的轮次标注。",
+      "summary": "Intact Ventures 是 Intact Financial Corporation 的企业风险投资部门，Intact Financial 官方资料将其管理层描述为公司 corporate venture arm。Gatik 官方 2021 年融资公告确认 Intact Ventures 参与其 8500 万美元 Series B。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "Intact Financial Corporation 的企业风险投资部门。",
+          "source_id": "PFSRC-INV-7368d2d7ac5730-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的部门性质",
+          "value": "作为 Intact Financial 的 corporate venture arm 开展业务。",
+          "source_id": "PFSRC-INV-7368d2d7ac5730-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Gatik 官方公告确认 Intact Ventures 参与其 2021 年 8500 万美元 Series B；本条按发行方公告采用 Series B 轮次。",
+          "source_id": "PFSRC-INV-7368d2d7ac5730-2"
+        },
         {
           "description": "融资来源记录：Gatik · 历史轮次未披露 · 参投C轮。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7dc8a65571f189f0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Intact Financial Corporation 官网",
+          "value": "https://www.intactfc.com/",
+          "url": "https://www.intactfc.com/",
+          "source_id": "PFSRC-INV-7368d2d7ac5730-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7368d2d7ac5730-1",
+          "source_url": "https://newsroom.intactfc.com/2019-12-13-Intact-Financial-makes-insurance-easier-with-AI",
+          "source_title": "News | Intact Financial Corporation - Press Releases",
+          "source_content_hash": "b6d1453f9f156bed08871b91f9ad26a5bc795dc0624521929fcc76e9dd97b538",
+          "quote": "Karim Hirji, senior vice-president and managing director of Intact Ventures",
+          "quote_hash": "0c09b2b1356f8efc4a4975a5e0dd1c67a79fb52516b0b69a2037e8ddcd636def"
+        },
+        {
+          "source_id": "PFSRC-INV-7368d2d7ac5730-2",
+          "source_url": "https://www.globenewswire.com/news-release/2021/08/31/2289058/0/en/Gatik-Raises-85-Million-in-Series-B-Funding-Led-by-Koch-Disruptive-Technologies-KDT-to-Scale-Its-Fleet-of-Autonomous-Box-Trucks-Across-North-America.html",
+          "source_title": "Gatik Raises $85 Million in Series B Funding Led by Koch",
+          "source_content_hash": "f980fde7fdd43840c2867520bfb2ee8b7c14258cf96d872796e967c29ef019c4",
+          "quote": "Intact Ventures and others also participated.",
+          "quote_hash": "30c06742400eb5149831248a56308ba9623645a7eaf2be435ff1ed5bc1c66c25"
+        },
         {
           "source_id": "FISRC-7dc8a65571f189f0",
           "source_url": "https://salestools.io/en/report/gatik-raises-85m-series-c",
@@ -145,7 +190,7 @@
           "quote_hash": "ce8efb3244d703ecf37a83cb264f23bbd4fa29c81a61e76e114a7cb7701c26ae"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

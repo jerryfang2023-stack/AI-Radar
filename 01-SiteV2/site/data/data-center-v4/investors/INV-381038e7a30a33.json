@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vermilion Cliffs Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Vermilion Cliffs Ventures 官网自述及 Lemma 发行方融资公告；基金投资方向采用其自我描述口径。",
+      "summary": "Vermilion Cliffs Ventures 官网自述为 operator-founded 的早期开发者技术投资机构，关注 agent 时代开发栈；Lemma 发行方公告将其列为 $2.3M pre-seed 轮参投者。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述的投资方向",
+          "value": "早期投资重建 agent 时代开发栈的技术创始团队",
+          "source_id": "PFSRC-INV-381038e7a30a33-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Lemma 的发行方公告将 Vermilion Cliffs Ventures 列入 $2.3M pre-seed 轮参投机构。",
+          "source_id": "PFSRC-INV-381038e7a30a33-2"
+        },
         {
           "description": "融资来源记录：Lemma · 预种子轮 · 2026-08-07 · 本轮参投 · $2.3M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-efe4db4aff32c4ea"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-381038e7a30a33-1",
+          "source_url": "https://www.vermilion.fund/",
+          "source_title": "Vermilion Cliffs Ventures | Built for the Next Generation of Developer-Led Companies",
+          "source_content_hash": "4e91ec0a62029a5934bad167f6ed69ca0d0b6321b68e178a6d5053545b236bce",
+          "quote": "We invest early in the founders who are rebuilding the development stack for the agent era",
+          "quote_hash": "c81da8c363d4515ab732f4eb827c7ad38224ec0ccff1243861cbbedb966f3720"
+        },
+        {
+          "source_id": "PFSRC-INV-381038e7a30a33-2",
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/13/3344773/0/en/2-3m-pre-seed-for-lemma-backed-by-matrix-yc-openai-xai-operators-to-fix-silent-ai-agent-failures.html",
+          "source_title": "$2.3M Pre-Seed for Lemma – Backed by Matrix, YC &amp;",
+          "source_content_hash": "2a8ef9f549d47930bb09bafa4a1f791f04bfa6b0a1be8c41868b4656fdacf3b6",
+          "quote": "The round includes participation from Matrix, Y Combinator, Liquid 2 Ventures, Vermilion Cliffs Ventures",
+          "quote_hash": "60087a9d2cbb9645cee4df2e44bb3eb4af6723364fe8936f27b3331029880557"
+        },
         {
           "source_id": "FISRC-efe4db4aff32c4ea",
           "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
@@ -161,7 +192,7 @@
           "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -139,12 +139,53 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "荣成荣鑫基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "投中网对“荣成荣鑫基金”的报道披露了政府引导基金属性、设立背景、规模、投资方式、方向和管理方；36氪将该简称列为希夕智能天使轮参投方。公开资料未在本次核验中完成报道简称与单一工商登记主体的官方映射，档案不补写法律实体名称。",
+      "summary": "荣成荣鑫基金是由荣成市政府牵头设立的政府引导基金。投中网报道其于2022年设立、总规模20亿元，采取“母基金+直投”方式，服务荣成本地新旧动能转换和海洋经济升级，并称管理人为山东国融公司。36氪将荣成荣鑫基金列为希夕智能天使轮参投方。",
+      "facts": [
+        {
+          "field": "established_year",
+          "label": "公开报道的设立年份",
+          "value": "2022年",
+          "source_id": "PFSRC-INV-8608885d499135-1"
+        },
+        {
+          "field": "fund_size",
+          "label": "公开报道的基金规模",
+          "value": "20亿元",
+          "source_id": "PFSRC-INV-8608885d499135-1"
+        },
+        {
+          "field": "investment_model",
+          "label": "公开报道的投资方式",
+          "value": "母基金+直投",
+          "source_id": "PFSRC-INV-8608885d499135-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开报道的投资方向",
+          "value": "服务荣成本地新旧动能转换和海洋经济升级",
+          "source_id": "PFSRC-INV-8608885d499135-1"
+        },
+        {
+          "field": "manager",
+          "label": "公开报道的基金管理人",
+          "value": "山东国融公司",
+          "source_id": "PFSRC-INV-8608885d499135-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022",
+          "description": "投中网报道该政府引导基金由荣成市政府牵头设立。",
+          "source_id": "PFSRC-INV-8608885d499135-1"
+        }
+      ],
       "track_record": [
+        {
+          "description": "36氪2026年1月29日报道，荣成荣鑫基金参与希夕智能数千万元天使轮融资。报道未披露该基金的具体投资金额。",
+          "source_id": "PFSRC-INV-8608885d499135-2"
+        },
         {
           "description": "融资来源记录：希夕智能 · 天使轮 · 2026-01-29 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5cd75a049f99e1a"
@@ -152,6 +193,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-8608885d499135-1",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260129-389976.html",
+          "source_title": "几十家机构争抢，新希望、非夕联合孵化的项目完成天使轮融资 | 投中网",
+          "source_content_hash": "027579870fc80d16a56a1d7a4b7f0f82492ab122a37ab4a7e5f51e18752368b6",
+          "quote": "荣成荣鑫基金是2022年由荣成市政府牵头设立的政府引导基金，总规模20亿元，定位是“母基金+直投”双轮驱动，主要服务本市新旧动能转换和海洋经济升级，管理人为山东国融公司。",
+          "quote_hash": "029cacf3c9b28633be3176d7d1b062f5eabb9a809cd2e8838c2f14f832e95511"
+        },
+        {
+          "source_id": "PFSRC-INV-8608885d499135-2",
+          "source_url": "https://eu.36kr.com/zh/p/3659839708259207",
+          "source_title": "重磅！新希望携手非夕科技孵化具身智能公司，天使轮斩获数千万元融资",
+          "source_content_hash": "a4a8ff7e425c93dbbde295cb16b85c1a87369960d824a5eb2929b45e82c0c58b",
+          "quote": "投资机构： 宁波北仑商贸物流投资集团领投，荣成荣鑫基金和盛景嘉成跟投",
+          "quote_hash": "d9aceff8ee6d53aae8c7170936c816f5c004499cc6773568ca3e9c93199622b5"
+        },
         {
           "source_id": "FISRC-f5cd75a049f99e1a",
           "source_url": "https://eu.36kr.com/zh/p/3659839708259207",
@@ -161,7 +218,7 @@
           "quote_hash": "5778d26928d342a6e1526d5396db496163ff56315f2e53f65ddf05f010ce6e71"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

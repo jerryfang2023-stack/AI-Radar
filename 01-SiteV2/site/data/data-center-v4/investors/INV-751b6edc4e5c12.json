@@ -123,19 +123,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "NVentures (NVIDIA) 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "NVIDIA 官方页面确认 NVentures 是其风险投资部门并披露投资领域；Odyssey 官方公告直接确认其投资关系。",
+      "summary": "NVentures 是 NVIDIA 的风险投资部门，官网称其投资 AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等领域。Odyssey 官方公告确认 NVentures 参与其融资。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "NVIDIA 的风险投资部门。",
+          "source_id": "PFSRC-INV-751b6edc4e5c12-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "AI 基础设施、机器人、数字生物学、应用 AI 和前沿计算等。",
+          "source_id": "PFSRC-INV-751b6edc4e5c12-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Odyssey 官方公告称 NVentures 参与其投资；公告未披露金额或具体轮次。",
+          "source_id": "PFSRC-INV-751b6edc4e5c12-2"
+        },
         {
           "description": "融资来源记录：Odyssey ML · 战略融资 · 战略轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-413e994d081f8e0f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NVentures 官方页面",
+          "value": "https://www.nvidia.com/en-us/startups/nventures/",
+          "url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_id": "PFSRC-INV-751b6edc4e5c12-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-751b6edc4e5c12-1",
+          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_title": "NVentures — NVIDIA’s Venture Capital Arm | NVIDIA",
+          "source_content_hash": "9c771e9fbccc5260abed43fe702ef6ebf1f5a2cfbdcb9d5771a0d6c2af00a108",
+          "quote": "NVentures is NVIDIA’s venture capital arm, dedicated to investing in technology visionaries who are solving complex problems.",
+          "quote_hash": "535eb1d3dd9a0ede7a4958f84a905ce5903d2d3de6018f2bd8a838faf2bba38b"
+        },
+        {
+          "source_id": "PFSRC-INV-751b6edc4e5c12-2",
+          "source_url": "https://odyssey.systems/investment-from-nvidia-and-samsung",
+          "source_title": "Odyssey Announces Investment from NVentures and Samsung Next",
+          "source_content_hash": "f1d83ff9158d15c4cb62a1a84017b83ad071ba21efb74a856e414b4ff4c29542",
+          "quote": "Today, we’re excited to announce an investment from NVentures—NVIDIA’s venture capital arm—and Samsung Next",
+          "quote_hash": "2d57e216fcbf0501e8ed89e77236fc7ebd9b1ae98b52207fe4ecf10a059c9b12"
+        },
         {
           "source_id": "FISRC-413e994d081f8e0f",
           "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
@@ -145,7 +190,7 @@
           "quote_hash": "7580ce8d49fd9666e802de453ea162d2bb44131247c6889a3dfc84df499c3a27"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

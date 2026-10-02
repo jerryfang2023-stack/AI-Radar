@@ -140,19 +140,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mango Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Mango Capital 是一家专注企业软件的早期风险投资机构，由 Robin Vasan 创立并管理。官网称其在产品市场匹配前投资，重点关注智能应用与智能体基础设施。",
+      "coverage_note": "投资策略、创始人及历史案例均按机构官网或被投公司公告自述；未将 LP 分配或 DPI 作为审计业绩。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资方向",
+          "value": "官网称 Mango Capital 在企业软件公司产品市场匹配前投资，重点关注智能体基础设施与智能应用。",
+          "source_id": "mango_home"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "官网称 Robin Vasan 是创始人及唯一普通合伙人；Mango Capital 于 2018 年创立。",
+          "source_id": "mango_home"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018",
+          "description": "官网记载 Robin Vasan 于 2018 年创立 Mango Capital。",
+          "source_id": "mango_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Seltz 的 2026 年 6 月 24 日官方公告将 Mango Capital 列为 1,250 万美元种子轮的参投方；金额为整轮融资。",
+          "source_id": "seltz_round"
+        },
         {
           "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮参投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05007e2b6b43ffda"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Mango Capital",
+          "url": "https://mangocap.com/",
+          "source_id": "mango_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "mango_home",
+          "source_url": "https://mangocap.com/",
+          "quote": "Mango Capital backs enterprise software founders at inception",
+          "source_title": "Mango Capital",
+          "source_content_hash": "4835e96a1a0c9bba8d91345aa3a00cb183d500d2ac0e010b1215d3d1600b78d2",
+          "quote_hash": "3f49877030d10899a505f97dcc3469747d9bf903d2f38ab74b4c429c5813f544"
+        },
+        {
+          "source_id": "seltz_round",
+          "source_url": "https://seltz.ai/blog/seed-round-announcement",
+          "quote": "Mango Capital, 2100 Ventures, and Future Back Ventures",
+          "source_title": "We've raised $12.5M to build state-of-the-art Web Search for agents | Seltz Blog",
+          "source_content_hash": "03064fdb48b4a619fdd6bde5c72c651a30f855d325c75149578d553b6fbc41c5",
+          "quote_hash": "3c3a53e46bb6155f22b3e988cc69c747c809479e4f33bd2507e74416d0194c88"
+        },
         {
           "source_id": "FISRC-05007e2b6b43ffda",
           "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
@@ -162,7 +209,7 @@
           "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

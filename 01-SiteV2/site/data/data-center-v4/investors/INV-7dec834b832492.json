@@ -139,19 +139,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tower Research Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-11-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Tower Research Ventures 官网说明其投资早期公司；Procurement Sciences 官方新闻确认 Tower Research Ventures 参与该公司 Series B。",
+      "summary": "Tower Research Ventures 是与 Tower Research Capital 相关的风险投资业务，官网称其与初创公司合作并投资 pre-seed 和 seed 阶段。Procurement Sciences 官方公告将其列为 2025 年 Series B 参与方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "Pre-seed 和 seed 阶段；也可从创意孵化阶段开始合作。",
+          "source_id": "PFSRC-INV-7dec834b832492-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Procurement Sciences 2025 年 11 月 5 日官方公告确认其完成 3000 万美元 Series B，并将 Tower Research Ventures 列为参与方。",
+          "source_id": "PFSRC-INV-7dec834b832492-2"
+        },
         {
           "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 既有投资方，本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa41049d7cbdf303"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Tower Research Ventures 官网",
+          "value": "https://tower-research.com/ventures/",
+          "url": "https://tower-research.com/ventures/",
+          "source_id": "PFSRC-INV-7dec834b832492-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7dec834b832492-1",
+          "source_url": "https://tower-research.com/ventures/",
+          "source_title": "Ventures - Tower Research Capital",
+          "source_content_hash": "e63c0595d586dab86370627d729f216c390b3a18aa990042d13ded0ef559a017",
+          "quote": "Tower Research Ventures combines Tower’s technological expertise with thoughtful due diligence and market insight to find value. TRV partners with startups in the earliest stages – from incubating ideas with founders, to investing in pre-seed and seed rounds.",
+          "quote_hash": "fb178cbd60886c9fac273a670a66cdc19bf85c9b7873e153162dc45ca0a88284"
+        },
+        {
+          "source_id": "PFSRC-INV-7dec834b832492-2",
+          "source_url": "https://www.procurementsciences.com/blog/series-b",
+          "source_title": "Procurement Sciences Raises $30M Series B",
+          "source_content_hash": "adec4ce8adfbf6ca67dbd7c91e1943f400d5fd9cf435af97be939e7add6bd683",
+          "quote": "Procurement Sciences has closed $30 million in Series B funding, led by Catalyst Investors, with participation from Battery Ventures, Bosch Ventures, Citi, Tower Research Ventures, Blu Ventures, K Street Capital, and strategic angel investors.",
+          "quote_hash": "652110ebbe3c07f7e4593b5e5e81bc9eb34726f814868530f56d958bc0db68e7"
+        },
         {
           "source_id": "FISRC-fa41049d7cbdf303",
           "source_url": "https://finance.yahoo.com/news/procurement-sciences-closes-30-million-130000493.html",
@@ -161,7 +196,7 @@
           "quote_hash": "8a3fe96ddb485842efdf9669e0bce45e77d6e1a311449ec23211c7ce9ace7da2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

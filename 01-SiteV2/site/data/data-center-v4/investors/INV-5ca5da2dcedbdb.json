@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Shine Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Shine Capital 官网说明其为早期风险投资机构；Zenskar 官方 FAQ 将其列为 2026 年 4 月 1500 万美元 Series A 的领投方之一。此处仅记录已核验的策略与一笔融资，不代表完整投资组合。",
+      "summary": "Shine Capital 官网自述其为早期风险投资机构，支持创意明确、执行坚定的创业者；Zenskar 官方 FAQ 披露其参与 2026 年 4 月的 1500 万美元 Series A。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "早期风险投资。",
+          "source_id": "PFSRC-INV-5ca5da2dcedbdb-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Zenskar 官方 FAQ 将 Shine Capital 列为其 2026 年 4 月 1500 万美元 Series A 领投方之一。",
+          "source_id": "PFSRC-INV-5ca5da2dcedbdb-2"
+        },
         {
           "description": "融资来源记录：Zenskar · A轮 · 2026-04-17 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d87b08783c0a062f"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-5ca5da2dcedbdb-1",
+          "source_url": "https://www.shine.vc/",
+          "source_title": "Shine Capital",
+          "source_content_hash": "6b5748c0c698e87b897cb70841298ef3d1939f198915689ab826e84b27e9bd46",
+          "quote": "Shine is an early-stage venture capital firm that partners with creative, convincing, relentless entrepreneurs to build iconic businesses.",
+          "quote_hash": "77427157b1afccf90db1e18b5dc25ab29ed25e5febb928192e0621d45c11045c"
+        },
+        {
+          "source_id": "PFSRC-INV-5ca5da2dcedbdb-2",
+          "source_url": "https://www.zenskar.com/faq",
+          "source_title": "Zenskar FAQs | Everything You Need to Know",
+          "source_content_hash": "5c42d9e2d9b877de3326ecf45049ad9509bd7b6eee46f9df519069ad16c897c5",
+          "quote": "Zenskar closed a $15 million Series A in April 2026 led by Susquehanna International Group, Bessemer Venture Partners, Shine Capital, and Rho",
+          "quote_hash": "15b8c1934729a527a9a02ab9b0eadba35f3ea9ac3f0b5498fe41b794e1b123e4"
+        },
         {
           "source_id": "FISRC-d87b08783c0a062f",
           "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
@@ -161,7 +192,7 @@
           "quote_hash": "13a213a58f9d56d4c606db97e416ac8976cfb1c4b35d7633d5d1c4e9a47b1895"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

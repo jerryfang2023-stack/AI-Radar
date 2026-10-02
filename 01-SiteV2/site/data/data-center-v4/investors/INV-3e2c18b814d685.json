@@ -171,23 +171,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "PXN Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 PXN Ventures 官网自述及 BidScript 融资报道；不将 PXN 集团管理的基金结构混写成 PXN Ventures 的独立法律主体。",
+      "summary": "PXN Ventures 官网称其为 PXN Group 的交易名称之一，面向北英格兰和苏格兰创业公司提供从 pre-seed 到 Series B+ 的投资支持；BidScript 融资报道记录 NPIF II 通过 PXN Ventures 继续支持该公司。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的阶段",
+          "value": "pre-seed 至 Series B+",
+          "source_id": "PFSRC-INV-3e2c18b814d685-2"
+        },
+        {
+          "field": "regional_focus",
+          "label": "官网自述的区域",
+          "value": "北英格兰及苏格兰",
+          "source_id": "PFSRC-INV-3e2c18b814d685-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：BidScript LTD · 预种子轮 · 2026-07-02 · 本轮参投、种子轮领投 · $800,000。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b3dcbc1ef66abc3b"
+          "description": "BidScript 融资报道将 NPIF II 的继续支持归于 PXN Ventures。",
+          "source_id": "PFSRC-INV-3e2c18b814d685-1"
         },
         {
           "description": "融资来源记录：BidScript LTD · 预种子轮 · 2026-07-02 · 本轮参投、种子轮领投 · $800,000。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3cc883cf3e85683e"
+          "source_id": "FISRC-b3dcbc1ef66abc3b"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-3e2c18b814d685-1",
+          "source_url": "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering",
+          "source_title": "BidScript Secures $800K to Scale AI Platform Modernizing Public and Private Sector Tendering | FounderTrove",
+          "source_content_hash": "1899b8c7739e4af1ac38fe80e00cf17fc46aa0cb0c11aed5142d0393031989a3",
+          "quote": "The round attracted continued backing from NPIF II through PXN Ventures",
+          "quote_hash": "74b77f4715b4ed33c37263212958b0ff6771c36fa99ac0f7b86e9ab7bec8d897"
+        },
+        {
+          "source_id": "PFSRC-INV-3e2c18b814d685-2",
+          "source_url": "https://www.pxnventures.co.uk/",
+          "source_title": "PXN Ventures | Venture Capital &amp; Investment for the North",
+          "source_content_hash": "b5b093c1197ea498c7f487de48e9fdd7d91d3234cb6e278df86300c0b340f301",
+          "quote": "An investor built in the North, for the North. Delivering at scale for founders from preseed to Series B+.",
+          "quote_hash": "348fc104bbaa18f6a80fa820223c5e9adfefa7b831bb292f44cce4d137a58a4e"
+        },
+        {
+          "source_id": "PFSRC-INV-3e2c18b814d685-3",
+          "source_url": "https://www.pxnventures.co.uk/",
+          "source_title": "PXN Ventures | Venture Capital &amp; Investment for the North",
+          "source_content_hash": "b5b093c1197ea498c7f487de48e9fdd7d91d3234cb6e278df86300c0b340f301",
+          "quote": "PXN Group, PXN Ventures, & PXN Investments are trading names of PXN Group.",
+          "quote_hash": "aa8d15e9d34b69bb8c67ca5a656344f5df41627d8db35c9e8e6ecbbd5a4aa542"
+        },
         {
           "source_id": "FISRC-b3dcbc1ef66abc3b",
           "source_url": "https://foundertrove.com/bidscript-secures-800k-to-scale-ai-platform-modernizing-public-and-private-sector-tendering",
@@ -205,7 +246,7 @@
           "quote_hash": "60482d0d01767855c582b420df4527f68001f13d9861adba8f87287721e2d2ac"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

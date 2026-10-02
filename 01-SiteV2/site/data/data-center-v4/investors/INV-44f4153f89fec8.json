@@ -142,12 +142,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pegatron Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构隶属与投资方向采用 Piermont Bank 官方公告中的基金介绍；OXMIQ 融资活动采用 OXMIQ 发布的融资稿。",
+      "summary": "Piermont Bank 官方公告称 Pegatron Venture Capital 是 Pegatron Group 的风险投资部门，并披露其投资方向；OXMIQ 发行方融资公告将其列为 2026 年 3,500 万美元 A 轮参投方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "被投方公告披露的机构关系",
+          "value": "Pegatron Group 的风险投资部门",
+          "source_id": "PFSRC-INV-44f4153f89fec8-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公开披露的投资方向",
+          "value": "人工智能、金融科技、区块链、半导体及其他新兴科技",
+          "source_id": "PFSRC-INV-44f4153f89fec8-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "OXMIQ 发行方公告将 Pegatron Venture Capital 列为其 2026 年 3,500 万美元 Series A 参投机构。",
+          "source_id": "PFSRC-INV-44f4153f89fec8-1"
+        },
         {
           "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b7d7449114c23ca5"
@@ -155,6 +176,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-44f4153f89fec8-1",
+          "source_url": "https://www.newswire.co.kr/newsRead.php?no=1037911",
+          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture - 뉴스와이어",
+          "source_content_hash": "1b19187f67264db6bfd82d90b5fb82668e564cc783b1a295d2ee05fb3013d715",
+          "quote": "with participation from MediaTek, AM Intelligence Labs, Pegatron Venture Capital, CDIB-TEN, Darwin Ventures, and Morgan Creek Digital",
+          "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
+        },
+        {
+          "source_id": "PFSRC-INV-44f4153f89fec8-2",
+          "source_url": "https://www.piermontbank.com/piermont-bank-secures-strategic-investment-from-pegatron-venture-capital-accelerate-technology-innovation-and-growth/",
+          "source_title": "Piermont Bank Secures Strategic Investment from Pegatron Venture Capital Accelerate Technology Innovation and Growth - Piermont Bank",
+          "source_content_hash": "5d83b40404e80f26fc2aec2efad2f68097e5648650b145dc3b03a8560d1724d8",
+          "quote": "Pegatron Venture Capital, the venture investment arm of Pegatron Group",
+          "quote_hash": "c5ec0428b18d7d9ee923e08fc7cf772004343455be6daa2a515f0209f73ed616"
+        },
+        {
+          "source_id": "PFSRC-INV-44f4153f89fec8-3",
+          "source_url": "https://www.piermontbank.com/piermont-bank-secures-strategic-investment-from-pegatron-venture-capital-accelerate-technology-innovation-and-growth/",
+          "source_title": "Piermont Bank Secures Strategic Investment from Pegatron Venture Capital Accelerate Technology Innovation and Growth - Piermont Bank",
+          "source_content_hash": "5d83b40404e80f26fc2aec2efad2f68097e5648650b145dc3b03a8560d1724d8",
+          "quote": "Pegatron Venture Capital invests in founders and companies advancing transformative technologies across artificial intelligence, fintech, blockchain, semiconductors and other emerging sectors.",
+          "quote_hash": "d4f5c24052bdde8aca2b538c4816477c487084e9f718453f9140531116897033"
+        },
         {
           "source_id": "FISRC-b7d7449114c23ca5",
           "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
@@ -164,7 +209,7 @@
           "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

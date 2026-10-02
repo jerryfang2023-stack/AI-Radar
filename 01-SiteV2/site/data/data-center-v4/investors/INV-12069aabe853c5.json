@@ -139,19 +139,50 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Thomas Wolf (Hugging Face) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Thomas Wolf 本人介绍称，他是 Hugging Face 联合创始人兼首席科学官，参与开源、开放科学及机器人相关工作。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "联合创始人兼首席科学官",
+          "organization": "Hugging Face",
+          "source_id": "thomas_wolf_bio"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Lawrence Berkeley National Laboratory 的 BELLA Center",
+          "title": "研究人员（本人简介未披露具体职务）",
+          "period": "具体任期未披露",
+          "description": "本人简介称其曾从事激光-等离子体相互作用研究。",
+          "source_id": "thomas_wolf_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Ecole Polytechnique",
+          "qualification": "毕业（学位未披露）",
+          "source_id": "thomas_wolf_bio"
+        }
+      ],
+      "experience_summary": "本人简介称其长期参与开放源码与开放科学工作，包括 Hugging Face 的多个机器学习工具，并曾从事物理研究。",
       "track_record": [
         {
           "description": "融资来源记录：Work Nexus Labs Limited (trading as Zaro) · 预种子轮 · 2026-06-19 · 本轮参投（天使投资人） · $5.1M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9eb5597be7955958"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "thomas_wolf_bio",
+          "source_url": "https://thomwolf.io/index.html",
+          "quote": "Thomas Wolf is co-founder and Chief Science Officer (CSO) of Hugging Face",
+          "source_title": "Thomas Wolf",
+          "source_content_hash": "8c8d7e0c8aff8c4d49b4decbf0860cdfa3e151c7c08489f9f911e2748a4ca229",
+          "quote_hash": "cb1676a28448bf4e02fd973bab1dbc9d7f9eddab25eb3fc4f20a17cb2024cb81"
+        },
         {
           "source_id": "FISRC-9eb5597be7955958",
           "source_url": "https://theaiinsider.tech/2026/06/19/zaro-ai-secures-5-1m-to-unify-enterprise-ai-agents-data-and-applications-in-a-single-context-layer/",
@@ -161,7 +192,8 @@
           "quote_hash": "425f5749c651c13805bd644f2cf82adb5a7eb7946a6d9f1d56bdc166e3f3ddcb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

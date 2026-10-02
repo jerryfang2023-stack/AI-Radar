@@ -139,19 +139,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mercer Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Mercer Ventures 是一家投资基础设施软件的风险投资机构，官网列出的方向包括金融服务、数据与分析、网络安全、医疗保健和数字医疗。其公开组合包括 Harmony。",
+      "coverage_note": "行业方向及组合公司来自 Mercer Ventures 官网；本档案不将官网展示的总组合价值或后续融资额归因于 Mercer 单独投资。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资方向",
+          "value": "官网称其投资金融服务、数据与分析、网络安全、医疗保健及数字医疗等基础设施软件。",
+          "source_id": "mercer_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Mercer Ventures 官网将 Harmony 列为组合公司，并描述其企业 IT 运营平台。",
+          "source_id": "mercer_home"
+        },
         {
           "description": "融资来源记录：Harmony · 种子轮 · 2026-07-28 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fe66d902ece1db68"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Mercer Ventures",
+          "url": "https://www.mercer.vc/",
+          "source_id": "mercer_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "mercer_home",
+          "source_url": "https://www.mercer.vc/",
+          "quote": "We invest in infrastructure software across five sectors: financial services, data & analytics, cybersecurity, healthcare, and digital health.",
+          "source_title": "Mercer Ventures",
+          "source_content_hash": "be52201aa8b5cd024583f42243cf2a564530e439899be2d24282baa9c51d4a0d",
+          "quote_hash": "ff124088d78b92d377b20788ad4afb056c8ad9d468a3572a7da7595763bd3240"
+        },
+        {
+          "source_id": "mercer_harmony",
+          "source_url": "https://www.mercer.vc/",
+          "quote": "Harmony AI-native IT operations platform unifying service desk, asset management",
+          "source_title": "Mercer Ventures",
+          "source_content_hash": "be52201aa8b5cd024583f42243cf2a564530e439899be2d24282baa9c51d4a0d",
+          "quote_hash": "f1a88e3a28ea907fc944862e27710686ffbe67fc607767322a08c47bf6ac7a83"
+        },
         {
           "source_id": "FISRC-fe66d902ece1db68",
           "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
@@ -161,7 +196,7 @@
           "quote_hash": "c8cb081b2609863215379438fff46d03b2db5e96296d6ae1a443310805779284"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

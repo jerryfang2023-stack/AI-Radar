@@ -123,12 +123,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Wischoff Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构官网说明投资阶段和策略；Natural 发行方仅将创始人 Nichole Wischoff 列为该轮支持者，没有明确将该项个人投资归到基金组合。",
+      "summary": "Wischoff Ventures 官网称其投资高增长科技公司并主导 pre-seed、seed 轮；Natural 的 2026 年 Series A 公告将创始人 Nichole Wischoff 列为支持者。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资范围",
+          "value": "投资高增长科技公司。",
+          "source_id": "PFSRC-INV-485c195379a914-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "主导 pre-seed 和 seed 轮。",
+          "source_id": "PFSRC-INV-485c195379a914-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Natural 发行方公告将 Nichole Wischoff（Wischoff Ventures 创始人）列为 2026 年 Series A 支持者；原文未说明该投资由其个人还是基金作出。",
+          "source_id": "PFSRC-INV-485c195379a914-2"
+        },
         {
           "description": "融资来源记录：Natural AI, Inc. · 历史轮次未披露 · 本轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cbb8abca74aa20f4"
@@ -136,6 +157,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-485c195379a914-1",
+          "source_url": "https://www.wischoff.com/about",
+          "source_title": "About Wischoff Ventures",
+          "source_content_hash": "11af29845a9931f4083479057433ac15e5aebb3a0514f42c37b8cbb489da2a93",
+          "quote": "Wischoff Ventures invests in relentless early stage, high growth technology companies.",
+          "quote_hash": "2378825e821bad1cb1143fbd4c43e0902d94349722d3a63a1ebd36d59b7833dd"
+        },
+        {
+          "source_id": "PFSRC-INV-485c195379a914-3",
+          "source_url": "https://www.wischoff.com/about",
+          "source_title": "About Wischoff Ventures",
+          "source_content_hash": "11af29845a9931f4083479057433ac15e5aebb3a0514f42c37b8cbb489da2a93",
+          "quote": "We lead rounds at pre-seed and seed.",
+          "quote_hash": "8af60cb7f42fd1f2b312c6412dd8f337e9546c25e23e7c3bf6c7de64162f4076"
+        },
+        {
+          "source_id": "PFSRC-INV-485c195379a914-2",
+          "source_url": "https://www.natural.com/blog/natural-series-a",
+          "source_title": "$30M to build payments for AI agents — Natural",
+          "source_content_hash": "4a58a6748da5245891d6fab518dd341fce8de6a27b49f43b2f54282683eae6bb",
+          "quote": "Nichole Wischoff (Founder of Wischoff Ventures)",
+          "quote_hash": "66de641c326fc9a890b8d941397400ffd0c7bb141a694c87f355e5acea2d1cdd"
+        },
         {
           "source_id": "FISRC-cbb8abca74aa20f4",
           "source_url": "https://fintech.global/2026/07/21/natural-raises-30m-to-power-payments-for-ai-agents/",
@@ -145,7 +190,7 @@
           "quote_hash": "3c9ae70f661d5cfd4eb54c8362b6136404fea7eb7de65a065666ec12f3b79bae"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

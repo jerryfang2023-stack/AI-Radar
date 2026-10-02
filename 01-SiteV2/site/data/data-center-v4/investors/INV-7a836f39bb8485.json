@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Union Square Ventures (USV) 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "USV 官网确认机构身份、投资阶段和主题；TechCrunch 对 Nous Research 新融资的报道仍处于谈判阶段，因此没有将该消息写作已完成投资。",
+      "summary": "Union Square Ventures（USV）是一家位于纽约的风险投资机构，官网称其关注 AI、机器人、能源、消费、金融和生物科技领域，并在企业早期阶段投资。TechCrunch 报道其可能参与 Nous Research 的新融资，但报道时融资仍在谈判，不作为已完成投资记录。",
+      "facts": [
+        {
+          "field": "location",
+          "label": "机构所在地",
+          "value": "New York City。",
+          "source_id": "PFSRC-INV-7a836f39bb8485-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资阶段和策略",
+          "value": "通才投资，关注企业早期阶段，并围绕大型市场的技术变革边缘进行投资。",
+          "source_id": "PFSRC-INV-7a836f39bb8485-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的关注领域",
+          "value": "AI、机器人、能源、消费、金融和生物科技。",
+          "source_id": "PFSRC-INV-7a836f39bb8485-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,32 @@
           "source_id": "FISRC-74000160f5a289fa"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Union Square Ventures 官网",
+          "value": "https://www.usv.com/",
+          "url": "https://www.usv.com/",
+          "source_id": "PFSRC-INV-7a836f39bb8485-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7a836f39bb8485-1",
+          "source_url": "https://www.usv.com/",
+          "source_title": "Union Square Ventures",
+          "source_content_hash": "a13fed5b6d2fc7dcb86d419ace9efaf2ddae3d76744913311c30779093120a83",
+          "quote": "Union Square Ventures is a venture capital firm based in New York City.",
+          "quote_hash": "56d703e67df9a638427afcecd2f73de79c9c7d33ee5b1806674284bda4bbdbb5"
+        },
+        {
+          "source_id": "PFSRC-INV-7a836f39bb8485-2",
+          "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",
+          "source_title": "Hermes agent maker Nous Research in talks for new funding at $1.5B valuation | TechCrunch",
+          "source_content_hash": "37aea0da19888f61100b9456c304bd02e3d165dcdb5790334bbbdeb8c8899028",
+          "quote": "with significant participation from USV",
+          "quote_hash": "edfa21cfb1d10cbc61dc6a166d7b5e48684fbe7bff17b85ac95ed04e272e5238"
+        },
         {
           "source_id": "FISRC-74000160f5a289fa",
           "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",
@@ -161,7 +204,7 @@
           "quote_hash": "edfa21cfb1d10cbc61dc6a166d7b5e48684fbe7bff17b85ac95ed04e272e5238"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

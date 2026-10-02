@@ -139,10 +139,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Evercrest Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Evercrest Capital Partners LLC 官网将其业务定位为风险与成长资本，面向其称为 “Companies of Consequence” 的企业。",
+      "coverage_note": "官网公开信息较少；目前只确认机构名称与风险/成长资本定位，未披露基金规模、具体投资阶段、组合公司或回报数据，故不补写这些字段。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网业务定位",
+          "value": "官网自述为面向 “Companies of Consequence” 的 venture and growth capital。",
+          "source_id": "evercrest_positioning"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +157,32 @@
           "source_id": "FISRC-7f85c191231c7c71"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Evercrest Capital",
+          "url": "https://www.evercrestlp.com/",
+          "source_id": "evercrest_identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "evercrest_identity",
+          "source_url": "https://www.evercrestlp.com/",
+          "source_title": "Evercrest Capital",
+          "source_content_hash": "740ea44b982d24ad4656c01a626f37ff0274b703dd539d21695d526411c85b57",
+          "quote": "E V E R C R E S T C A P I T A L P A R T N E R S L L C",
+          "quote_hash": "7d1eb6579775b2ba6df10985cc7675680154dc19849306f7a2cec3a9e73e2dcc"
+        },
+        {
+          "source_id": "evercrest_positioning",
+          "source_url": "https://www.evercrestlp.com/",
+          "source_title": "Evercrest Capital",
+          "source_content_hash": "740ea44b982d24ad4656c01a626f37ff0274b703dd539d21695d526411c85b57",
+          "quote": "Venture and growth capital for Companies of Consequence",
+          "quote_hash": "0fba11b19f8b03cde14c1457e2915c3fd24d254ffa7ee5d6f3836401ba329107"
+        },
         {
           "source_id": "FISRC-7f85c191231c7c71",
           "source_url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
@@ -161,7 +192,7 @@
           "quote_hash": "c0094dbb5d1f53d9883c7569db8bf97ab87df757fed1462cc7a0f6fa02d05ac7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

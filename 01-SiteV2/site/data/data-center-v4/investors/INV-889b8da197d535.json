@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kyle Vogt 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "通用汽车公告确认 Kyle Vogt 是 Cruise Automation 创始人；Odyssey 官方投资公告将他列为其投资人之一，TechCrunch进一步将其列入 Odyssey 3.1亿美元B轮天使投资人。",
+      "summary": "Kyle Vogt 是 Cruise Automation 创始人，也曾任 Cruise CEO。Odyssey 官方公告将他列为投资人之一；TechCrunch报道称他作为天使投资人参与 Odyssey 的3.1亿美元B轮融资。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Cruise Automation",
+          "title": "创始人",
+          "period": "创立至2016年GM收购公告",
+          "description": "通用汽车公告称 Kyle Vogt 是 Cruise Automation 创始人。",
+          "source_id": "PFSRC-INV-889b8da197d535-1"
+        },
+        {
+          "organization": "Cruise",
+          "title": "CEO（前任）",
+          "period": "截至2023年11月离任",
+          "description": "GM相关公告记录 Kyle Vogt 曾任 Cruise CEO；本档案不补充未经本次来源核实的其他经历。",
+          "source_id": "PFSRC-INV-889b8da197d535-1"
+        }
+      ],
+      "education": [],
+      "experience_summary": "已核实的职业信息包括创立 Cruise Automation、曾任 Cruise CEO，以及作为投资人支持 Odyssey。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
       "track_record": [
+        {
+          "description": "Odyssey官方公告将 Kyle Vogt 列为其投资人之一；TechCrunch于2026年6月17日报道其作为天使投资人参与Odyssey的3.1亿美元B轮。",
+          "source_id": "PFSRC-INV-889b8da197d535-2"
+        },
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮天使投资人 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e94365d0212a78f3"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-889b8da197d535-1",
+          "source_url": "https://investor.gm.com/news-releases/news-release-details/gm-acquire-cruise-automation-accelerate-autonomous-vehicle",
+          "source_title": "GM to Acquire Cruise Automation to Accelerate Autonomous Vehicle Development | General Motors",
+          "source_content_hash": "832eaa362c842cd7608c714b14cc98ddaa4759fd9692415ab0a1abe46d782fe8",
+          "quote": "Kyle Vogt, founder of Cruise Automation",
+          "quote_hash": "b9d8242ec20b88f6d4dc71d0e7ac6ecee47efeab6ce8b7d3326356f1f709818c"
+        },
+        {
+          "source_id": "PFSRC-INV-889b8da197d535-2",
+          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names/",
+          "source_title": "World model maker Odyssey nabs $1.45B valuation backed by Amazon and other big names | TechCrunch",
+          "source_content_hash": "2797f48f5916b924c8599df48070134cbbfa4a81c25ed43e58001d3dc032e11e",
+          "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
+          "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+        },
+        {
+          "source_id": "PFSRC-INV-889b8da197d535-3",
+          "source_url": "https://odyssey.ml/investment-from-nvidia-and-samsung",
+          "source_title": "Odyssey Announces Investment from NVentures and Samsung Next",
+          "source_content_hash": "f1d83ff9158d15c4cb62a1a84017b83ad071ba21efb74a856e414b4ff4c29542",
+          "quote": "This adds to our funding from other world-class investors, such as GV, EQT, Air Street Capital, Elad Gil, Jeff Dean, Guillermo Rauch, Garry Tan, and Kyle Vogt.",
+          "quote_hash": "0be87500bb96be722afb0bce18ea5f1200856c5c5670021212066922f6f6fcf0"
+        },
         {
           "source_id": "FISRC-e94365d0212a78f3",
           "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
@@ -161,7 +208,7 @@
           "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

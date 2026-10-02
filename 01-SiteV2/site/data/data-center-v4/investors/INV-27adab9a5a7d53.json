@@ -141,18 +141,39 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Gerhard Eschelbeck 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Archestra.AI 的官方种子轮公告将 Gerhard Eschelbeck 列为个人投资者，并注明其曾任 Google 首席信息安全官。本档案仅记录该次公开投资及公告披露的职业身份。",
+      "coverage_note": "职业称谓按 Archestra.AI 公告原文；不据此扩写其完整任职经历。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Google",
+          "title": "曾任首席信息安全官",
+          "period": "历史任职，起止时间未披露",
+          "description": "Archestra.AI 公告称 Gerhard Eschelbeck 曾任 Google CISO。",
+          "source_id": "archestra_round"
+        }
+      ],
+      "education": [],
+      "experience_summary": "企业 AI 初创公司公告确认其为种子轮个人投资者，并披露其曾任 Google CISO。",
       "track_record": [
+        {
+          "description": "Archestra.AI 于 2026 年 6 月 2 日公告 1,000 万美元种子轮，列 Gerhard Eschelbeck 为投资者。",
+          "source_id": "archestra_round"
+        },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "archestra_round",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "quote": "Gerhard Eschelbeck (former CISO at Google)",
+          "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
+          "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
+          "quote_hash": "72708fe1f64ecfe373bc41e1ff51f012f24e341815d942960eb5dd9e6b20906a"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -162,7 +183,10 @@
           "quote_hash": "72708fe1f64ecfe373bc41e1ff51f012f24e341815d942960eb5dd9e6b20906a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

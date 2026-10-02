@@ -123,19 +123,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Decibel Partners 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Decibel官网将其介绍为与Cisco合作创立的独立早期风险投资机构，官网聚焦开发者平台、网络安全、数据、机器学习和人工智能。E2B发行方资料披露其参与2025年Series A。",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "机构定位",
+          "value": "与Cisco合作创立的独立早期风险投资机构",
+          "source_id": "PFSRC-2e6e60919665e7-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": "开发者平台、网络安全、数据、机器学习和人工智能",
+          "source_id": "PFSRC-2e6e60919665e7-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "E2B发行方的2025年融资公告将Decibel列为Series A参投方。",
+          "source_id": "PFSRC-2e6e60919665e7-3"
+        },
         {
           "description": "融资来源记录：E2B · 种子轮 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a63eab38d837820b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.decibel.vc/",
+          "url": "https://www.decibel.vc/",
+          "source_id": "PFSRC-2e6e60919665e7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-2e6e60919665e7-1",
+          "source_url": "https://www.decibel.vc/articles/decibel-the-exponential-power-of-our-entrepreneurs",
+          "source_title": "Decibel: The Exponential Power of our Entrepreneurs - Decibel",
+          "source_content_hash": "a76194bea43f283ed15607d1a348f0128fbbc5e3a49d13829efd2449414e480a",
+          "quote": "Today I am excited to announce Decibel, a new early-stage venture capital firm created in partnership with Cisco",
+          "quote_hash": "9ccf6b17b40867d3aa9589fcdebdff8bdb86d8912d7e19222140f5cc2a933e2a"
+        },
+        {
+          "source_id": "PFSRC-2e6e60919665e7-2",
+          "source_url": "https://www.decibel.vc/why-decibel",
+          "source_title": "Why Decibel - Decibel",
+          "source_content_hash": "041aa8b502c56bdea662bc9e2b966735cb96216568b854a732439970217b59dc",
+          "quote": "Developer Platforms Empowering all digital builders Cyber Security Securing our digital world Data, ML, and AI Bringing insights and AI to all",
+          "quote_hash": "95d2a7d43c2ddc26684359c2e7742d9809e2f33c5bdc5014ed98b6e46f73bff5"
+        },
+        {
+          "source_id": "PFSRC-2e6e60919665e7-3",
+          "source_url": "https://changelog.e2b.dev/resources/series-a",
+          "source_title": "We Raised $21M to Give Fortune 100 Cloud for AI Agents | E2B",
+          "source_content_hash": "5a9119880f3408da69b835fd55f160f4d54408601bedcaef37021b10ece3704b",
+          "quote": "Today, we’re excited to announce that E2B has raised a $21M Series A funding round led by global software investor Insight Partners, with participation from Decibel, Sunflower Capital, and Kaya",
+          "quote_hash": "99087519fdc6095dacd390903aa8bc1a7ad17f77969d8993c349a1214b54d680"
+        },
         {
           "source_id": "FISRC-a63eab38d837820b",
           "source_url": "https://euis.eu/e2b-raises-21m/",
@@ -145,7 +193,8 @@
           "quote_hash": "80a507edc34c09ed22f8097e61b1ff6f5c8c932de2652a9f77cee9a18823374e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -141,9 +141,16 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Stone Venture(磊石资本) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "新石器官网将阿联酋磊石资本（Stone Venture）列为其2025年D轮融资领投方。现有来源只确认这一活动关联。",
+      "coverage_note": "未找到该机构的官方自述页面；此档案仅依据被投公司融资公告确认名称、地区和一项领投活动，不扩展为完整机构介绍。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "已披露投资活动",
+          "value": "新石器官网称2025年D轮融资由阿联酋磊石资本（Stone Venture）领投。",
+          "source_id": "neolix_d_round"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -152,7 +159,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "只核实到新石器官方公告所披露的一项领投活动，机构团队与策略暂无一手资料。",
       "sources": [
+        {
+          "source_id": "neolix_d_round",
+          "source_url": "https://www.neolix.ai/zh/news/d-round-funding/",
+          "quote": "本轮融资由阿联酋磊石资本（Stone Venture）领投",
+          "source_title": "新石器D轮融资超6亿美元，创中国自动驾驶领域融资纪录 | Neolix",
+          "source_content_hash": "1f7aeda0ae0a268ba5036cf900f03551820cc11b4c29a919d4fec6351554bc4f",
+          "quote_hash": "67b7257d0d698c266b4ff79c7a79f39cfa69c17854cd012cd71647efa2bc2b14"
+        },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
@@ -162,7 +181,7 @@
           "quote_hash": "3b4482b2426f6535e214554cc11cecd5659013822d0f1106390ffa7c1e7642d1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

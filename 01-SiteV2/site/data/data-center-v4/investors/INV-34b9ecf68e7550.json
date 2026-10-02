@@ -139,12 +139,48 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Othman Laraki 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "依据 Color Health 官方人物简介和 Monogram 官方发布；早期职务年份未在官网标注，教育学位与院校未逐一对应。",
+      "summary": "Color Health 官网介绍 Othman Laraki 为联合创始人兼 CEO，并记载其在 Google、MixerLabs 和 Twitter 的职业经历；Monogram 官方发布将他列为天使投资人。",
+      "current_roles": [
+        {
+          "title": "Chief Executive Officer and Co-founder",
+          "organization": "Color Health",
+          "source_id": "PFSRC-INV-34b9ecf68e7550-2"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Google",
+          "title": "早期产品负责人",
+          "period": "官网未注明",
+          "description": "Color Health 官网称其曾任 Google 早期产品负责人，任职时间未注明。",
+          "source_id": "PFSRC-INV-34b9ecf68e7550-2"
+        },
+        {
+          "organization": "MixerLabs",
+          "title": "共同创始人",
+          "period": "官网未注明",
+          "description": "Color Health 官网称其离开 Google 后共同创立 MixerLabs，具体任职日期未注明。",
+          "source_id": "PFSRC-INV-34b9ecf68e7550-2"
+        },
+        {
+          "organization": "Twitter",
+          "title": "产品副总裁",
+          "period": "官网未注明",
+          "description": "Color Health 官网称其曾任 Twitter 产品副总裁，任职时间未注明。",
+          "source_id": "PFSRC-INV-34b9ecf68e7550-2"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Color Health 官网将他描述为科技创业者和投资人，并记载其曾在 Google、MixerLabs 和 Twitter 任职。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Monogram 官方发布将 Othman Laraki 列入天使投资人名单。",
+          "source_id": "PFSRC-INV-34b9ecf68e7550-1"
+        },
         {
           "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮天使投资人 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-907e4297862ddd8c"
@@ -152,6 +188,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-34b9ecf68e7550-1",
+          "source_url": "https://www.monogram.ai/blog/introducing-monogram",
+          "source_title": "Launching Monogram, a new interface for AI — Monogram",
+          "source_content_hash": "91b3af8ddad6f5f68585b4be64a4341254b82711e9e24977a9a5b281834da684",
+          "quote": "Mario Schlosser , Othman Laraki",
+          "quote_hash": "de7cece7bf25796bed2eb85a801a666ea864c57bbcd1bd1cd0e4d2996648bd9e"
+        },
+        {
+          "source_id": "PFSRC-INV-34b9ecf68e7550-2",
+          "source_url": "https://www.color.com/leadership/",
+          "source_title": "Leadership - Color Health",
+          "source_content_hash": "f88fa5b9125033e2dc51caebfb9b7d26938758f019e73363e39f3e5cb91c5a75",
+          "quote": "Othman Laraki is a technology entrepreneur, an investor, and the co-founder and CEO of Color Health. Othman was an early Product leader at Google, where he worked on performance infrastructure and client-side software, including the Google Chrome browser. After leaving Google, he co-founded MixerLabs, which was one of Twitter’s first acquisitions. At Twitter, Othman was the Vice President of Product",
+          "quote_hash": "a91b4202f8969139f81147895277aa3b0130abf637413af87d3d5afedce2b10e"
+        },
         {
           "source_id": "FISRC-907e4297862ddd8c",
           "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
@@ -161,7 +213,7 @@
           "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

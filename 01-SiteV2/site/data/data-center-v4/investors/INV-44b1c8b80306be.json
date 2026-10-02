@@ -140,12 +140,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "JAL Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段和区域及 enSights 融资记录均来自 JAL Ventures 官方新闻页面；本档案未扩展至未披露的基金规模或业绩。",
+      "summary": "JAL Ventures 官网称其重点投资以色列早期收入阶段科技公司的 post-seed 与 Series A 轮；官网新闻记录其与其他机构共同领投 enSights 的 1,000 万美元 A 轮。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "Post-seed 与 Series A；早期收入阶段",
+          "source_id": "PFSRC-INV-44b1c8b80306be-1"
+        },
+        {
+          "field": "regional_focus",
+          "label": "官网自述的投资区域",
+          "value": "以色列科技公司",
+          "source_id": "PFSRC-INV-44b1c8b80306be-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "JAL Ventures 官网新闻称其与 XT VC、Menomadin Foundation 共同领投 enSights 的 1,000 万美元 Series A。",
+          "source_id": "PFSRC-INV-44b1c8b80306be-2"
+        },
         {
           "description": "融资来源记录：Aligned · B轮 · 2026-07-01 · 本轮参投，既有投资方 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7c7a5a66361dc784"
@@ -153,6 +174,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-44b1c8b80306be-1",
+          "source_url": "https://www.jalventures.com/news/",
+          "source_title": "JAL Ventures News - JAL Ventures",
+          "source_content_hash": "de9644f898c95bf03cd4cdbb07c4edd71a49815bcb9b49ace825017d44ccf577",
+          "quote": "JAL focuses on investment in post-seed and Series A rounds in early revenue stage Israeli technology companies.",
+          "quote_hash": "62d48fe97b3873774ddaeaf7cce0f6d6333dbef0110adc69b5e8608c73674d0a"
+        },
+        {
+          "source_id": "PFSRC-INV-44b1c8b80306be-2",
+          "source_url": "https://www.jalventures.com/news/",
+          "source_title": "JAL Ventures News - JAL Ventures",
+          "source_content_hash": "de9644f898c95bf03cd4cdbb07c4edd71a49815bcb9b49ace825017d44ccf577",
+          "quote": "enSights, an Israeli SaaS company specializing in AI-powered clean energy optimization, has secured $10 million in Series A funding, co-led by JAL Ventures, XT VC, and the Menomadin Foundation",
+          "quote_hash": "09cfc2d2f77edade8aaebefdb497b5619e818570a5e3daff3cd220b053660619"
+        },
         {
           "source_id": "FISRC-7c7a5a66361dc784",
           "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
@@ -162,7 +199,7 @@
           "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

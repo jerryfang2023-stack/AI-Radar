@@ -139,19 +139,57 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Goanna Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Goanna Capital 官网披露其直接科技投资与 GP-led 二级份额两条策略；TechCrunch 报道其参与 Starcloud 的 Series A 扩展轮，未将媒体报道写作发行方公告。",
+      "summary": "Goanna Capital 是一家全球私募市场投资机构，拥有直接科技投资和 GP-led 二级份额两条策略。其直接策略覆盖 B 轮至 IPO 前的科技公司；TechCrunch 报道其参与 Starcloud 的 2026 年 Series A 扩展轮。",
+      "facts": [
+        {
+          "field": "investment_strategies",
+          "label": "官网披露的投资策略",
+          "value": [
+            "直接风险投资与成长期投资，覆盖 Series B 至 IPO 前的单一资产机会",
+            "私募股权二级市场及 GP-led venture/growth 二级交易"
+          ],
+          "source_id": "PFSRC-INV-848636eedf385d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道 Starcloud 获得 2.5 亿美元 Series A 扩展融资，并将 Goanna Capital 列为参与方；该条为媒体报道。",
+          "source_id": "PFSRC-INV-848636eedf385d-2"
+        },
         {
           "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05f582b31c0a37a3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Goanna Capital 官网",
+          "value": "https://goannacapital.com/",
+          "url": "https://goannacapital.com/",
+          "source_id": "PFSRC-INV-848636eedf385d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-848636eedf385d-1",
+          "source_url": "https://goannacapital.com/",
+          "source_title": "Goanna Capital",
+          "source_content_hash": "e6012e38972be032236081eba4556d70a86f1085b575511eb4c2535ae61a360e",
+          "quote": "A global private markets investment firm.",
+          "quote_hash": "2ef6afdf4b6d4a41ece4e192b164138ffc42106ae0d970474298a1d2bc412168"
+        },
+        {
+          "source_id": "PFSRC-INV-848636eedf385d-2",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud raises $250 million for orbital data centers as launch options dry up | TechCrunch",
+          "source_content_hash": "796ffe277f0c0497b34eae17a41ea8b219c7f8040a1314e0ff7f6d1cc1128554",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        },
         {
           "source_id": "FISRC-05f582b31c0a37a3",
           "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
@@ -161,7 +199,7 @@
           "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

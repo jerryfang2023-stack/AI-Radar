@@ -139,19 +139,61 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Peter Welinder (OpenAI) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "OpenAI 官方 Operator 发布页将 Peter Welinder 列于 Leadership 名单。TechCrunch 报道其参与 Qodo 的 7000 万美元 B 轮；Qodo 自身公告确认轮次与金额，但没有点名该个人。",
+      "summary": "Peter Welinder 被 OpenAI 官方 Operator 发布页列入 Leadership 名单。TechCrunch 报道其参与 Qodo 的 7000 万美元 B 轮融资；Qodo 官方公告确认该轮次和金额，但未点名个人投资者。",
+      "current_roles": [
+        {
+          "title": "Leadership 名单成员（官方页面列示）",
+          "organization": "OpenAI",
+          "source_id": "PFSRC-INV-76a9df28fdabfd-1"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "OpenAI 官方 Operator 发布页将 Peter Welinder 列于 Leadership 名单。TechCrunch 报道其参与 Qodo 2026 年 B 轮融资。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道 Peter Welinder（OpenAI）参与 Qodo 的 7000 万美元 B 轮融资；Qodo 官方公告确认融资轮次及金额，但未单独列出其姓名。",
+          "source_id": "PFSRC-INV-76a9df28fdabfd-2"
+        },
+        {
+          "description": "Qodo 官方公告确认其于 2026 年 3 月公布 7000 万美元 B 轮融资。",
+          "source_id": "PFSRC-INV-76a9df28fdabfd-3"
+        },
         {
           "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮天使投资人 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f001682a294672d5"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-76a9df28fdabfd-1",
+          "source_url": "https://openai.com/index/introducing-operator/",
+          "source_title": "Introducing Operator | OpenAI",
+          "source_content_hash": "a51884acd5ba8b8268f32fd4fb05d59957c4b6fafa7a08900d4f75b05a34112d",
+          "quote": "Leadership Anna Makanju, Greg Brockman, Hannah Wong, Jerry Tworek, Liam Fedus, Mark Chen, Peter Welinder, Sam Altman, Wojciech Zaremba",
+          "quote_hash": "52f4d162720cc6229e01d1caa2e03b728f3e82fa6743eb927a6f3a3ba946724f"
+        },
+        {
+          "source_id": "PFSRC-INV-76a9df28fdabfd-2",
+          "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
+          "source_title": "Qodo raises $70M for code verification as AI coding scales | TechCrunch",
+          "source_content_hash": "70fc1f16423598a93011a5d2b376e4e4c2dd1b6f8a393cd9d7b8df571a8c7fb3",
+          "quote": "Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
+          "quote_hash": "8289c1808e0026857041e47dfeb94545f74d2ebfe9a2e13ff06705bb2a5a71b6"
+        },
+        {
+          "source_id": "PFSRC-INV-76a9df28fdabfd-3",
+          "source_url": "https://www.qodo.ai/blog/qodo-70m-series-b-shift-to-artificial-wisdom/",
+          "source_title": "Beyond Intelligence: Qodo’s $70M Series B and the Shift to Artificial Wisdom - Qodo",
+          "source_content_hash": "55acbc3a444492c967b56898d259977b5d75ccc33650fc2e9aba8f421f094629",
+          "quote": "Today, we are thrilled to announce that Qodo has raised $70 million in Series B funding",
+          "quote_hash": "94a4bd7577464baa5e8e7129154c47e146c41813c8482eb234fd10f9970bb4c4"
+        },
         {
           "source_id": "FISRC-f001682a294672d5",
           "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
@@ -161,7 +203,7 @@
           "quote_hash": "8289c1808e0026857041e47dfeb94545f74d2ebfe9a2e13ff06705bb2a5a71b6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -192,10 +192,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Drysdale Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "当前档案收录 Drysdale Ventures 官网可核实的机构团队与 vintage 信息；队列中的 AMI Labs 关系未进入已核验交易记录，待一手材料确认后再补。",
+      "summary": "Drysdale Ventures 官网列出了创始人、投资团队及运营伙伴，并显示 2025、2026 两个 vintage 的公司数量。本次没有将 AMI Labs 交易写入已核验投资记录。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "team",
+          "label": "官网列出的团队",
+          "value": "创始人 Nicolas Essayan、Principal Vittorio Noury、Associate Dalia Mahfouf、Operating Partner Xavier Fischer，以及两位 Sparring Partner。",
+          "source_id": "PFSRC-INV-6c7b7c56795791-1"
+        },
+        {
+          "field": "portfolio_vintages",
+          "label": "官网显示的 vintage 公司数量",
+          "value": "2025 vintage 为 27 家，2026 vintage 为 18 家。",
+          "source_id": "PFSRC-INV-6c7b7c56795791-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -207,8 +224,24 @@
           "source_id": "FISRC-676054bb104d0746"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Drysdale Ventures 官网",
+          "value": "https://www.drysdale.vc/",
+          "url": "https://www.drysdale.vc/",
+          "source_id": "PFSRC-INV-6c7b7c56795791-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-6c7b7c56795791-1",
+          "source_url": "https://www.drysdale.vc/",
+          "source_title": "Drysdale Ventures",
+          "source_content_hash": "4e0865e7ffd894b10e40ef6e355f37d92ab4206982da8c45e0b5eb946eb0db58",
+          "quote": "Nicolas Essayan Founder Vittorio Noury Principal Dalia Mahfouf Associate Xavier Fischer Operating Partner Olivier Bonnet Sparring Partner Claire Calméjane Sparring Partner 2025 vintage: 27 companies loaded. 2026 vintage: 18 companies loaded.",
+          "quote_hash": "89f2ede2e4b3e5b47fce1661f965b81f2e6ce7cc01fc6b478b5313245ae4b113"
+        },
         {
           "source_id": "FISRC-115626db07e52373",
           "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
@@ -226,7 +259,7 @@
           "quote_hash": "a46a718a8e39c04b8200634f52ca5ea254f4a24f386762ffcb4f8d8381da59ae"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

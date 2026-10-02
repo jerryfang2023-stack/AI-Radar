@@ -139,10 +139,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jibe Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Jibe Ventures 官网将其描述为一家早期“founders fund”，支持具有全球抱负的以色列科技创业者。",
+      "coverage_note": "机构阶段和地域定位来自官网自述；当前来源没有披露基金规模或完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资阶段与对象",
+          "value": "官网自述其支持以色列科技创业者的早期阶段，并寻求与创始人保持目标一致。",
+          "source_id": "jibe_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +157,38 @@
           "source_id": "FISRC-5f2474a76a35b205"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Jibe Ventures",
+          "url": "https://www.jibevc.com/",
+          "source_id": "jibe_about"
+        },
+        {
+          "kind": "email",
+          "label": "机构联系邮箱",
+          "value": "contact@jibevc.com",
+          "source_id": "jibe_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "jibe_about",
+          "source_url": "https://www.jibevc.com/about-us",
+          "quote": "Jibe is an early stage \"founders fund\" that is backing Israeli entrepreneurs driven by technology with global ambitions.",
+          "source_title": "About Us | Jibe Ventures",
+          "source_content_hash": "f92d7ab2e920246736c2ee52f3ae6c7592787fe886f63085119b3c12b0fa41d4",
+          "quote_hash": "a5d2d6a2c6dbf6ca5437be9269bcbc33635fa50cc4a38a3e646cec9049d0eef0"
+        },
+        {
+          "source_id": "jibe_email",
+          "source_url": "https://www.jibevc.com/about-us",
+          "quote": "contact@jibevc.com",
+          "source_title": "About Us | Jibe Ventures",
+          "source_content_hash": "f92d7ab2e920246736c2ee52f3ae6c7592787fe886f63085119b3c12b0fa41d4",
+          "quote_hash": "9030e95798bf6d716a2efd35b5a2fbbe3504225a0875b0bdd1c9b2cf0bb305a7"
+        },
         {
           "source_id": "FISRC-5f2474a76a35b205",
           "source_url": "https://www.notch.cx/post/notch-30-million-series-a",
@@ -161,7 +198,7 @@
           "quote_hash": "d4e45d0fbd15b449663551d23e6d1eab47553f2cad61df8827083af645fb85a6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

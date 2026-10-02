@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sumitomo Corporation 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Sumitomo Corporation 官网介绍其集团 CVC 职能，并披露对 AIsa 的一笔种子轮参投；AIsa 公告没有将该交易归属到集团内某个具体投资子公司，故此处保持公司层级表述。",
+      "summary": "Sumitomo Corporation 集团由 Sumisho Venture Partners 负责日本的企业风险投资活动；AIsa 官方公告将 Sumitomo Corporation 列为其 650 万美元种子轮参投方之一。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "corporate_venture_capital",
+          "label": "集团创投活动",
+          "value": "Sumisho Venture Partners 负责 Sumitomo Corporation 集团在日本的 CVC 活动；集团于 2026 年宣布设立一支规模为 100 亿日元的新创业投资基金（规模口径包含现有管理投资）。",
+          "source_id": "PFSRC-INV-64bf5dc86f9940-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "AIsa 官方公告将 Sumitomo Corporation 列为其 650 万美元种子轮参投方之一。",
+          "source_id": "PFSRC-INV-64bf5dc86f9940-2"
+        },
         {
           "description": "融资来源记录：AIsa · 种子轮 · 2026-07-07 · 本轮参投 · 650万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-199e9e6224efb819"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-64bf5dc86f9940-1",
+          "source_url": "https://www.sumitomocorp.com/en/asia-oceania/news/release/2026/group/20960",
+          "source_title": "Sumisho Venture Partners Establishes New ¥10 Billion-Scale Fund | Sumitomo Corporation in Asia Oceania",
+          "source_content_hash": "8d9f66ecf8413319a908f60dbd57432aef8940f00a0bcd49892d100d6a8b9457",
+          "quote": "Sumisho Venture Partners, Inc. (hereinafter \"SVP\"), which is responsible for the Group's corporate venture capital (CVC) activities in Japan, has established a new startup investment fund",
+          "quote_hash": "c362093981c829697953f0673574ac91738618f4b1175676eb9165b4122701e0"
+        },
+        {
+          "source_id": "PFSRC-INV-64bf5dc86f9940-2",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html",
+          "source_title": "AIsa Raises $6.5M, Co-Led by Alibaba and Tribe Capital, to",
+          "source_content_hash": "c4cff2ed434b576971760d43e3c9698c8e0dff815576c244f42b833cde57d79c",
+          "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+          "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
+        },
         {
           "source_id": "FISRC-199e9e6224efb819",
           "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html",
@@ -161,7 +192,7 @@
           "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -140,18 +140,42 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cédric O 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Partech 的 NP Company 融资公告将 Cédric O 列为天使投资人，并称其为 Mistral AI 联合创始人。本档案仅记录这笔公开活动，不扩写其完整职业履历。",
+      "coverage_note": "投资关系与联合创始人身份均来自 Partech 官方融资公告；只确认 NP Company 这一笔公开参投。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Mistral AI",
+          "title": "联合创始人",
+          "period": "公告未披露任职时间",
+          "description": "Partech 官方融资公告将其标为 Mistral AI 联合创始人。",
+          "source_id": "npco_round"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Partech 官方公告将其列为 NP Company 天使投资人，并称其为 Mistral AI 联合创始人。",
       "track_record": [
+        {
+          "description": "Partech 于 2026 年 6 月 2 日公告 NP Company 完成 600 万欧元 pre-seed 融资，并列 Cédric O 为天使投资人。",
+          "source_id": "npco_round"
+        },
         {
           "description": "融资来源记录：NP Company · 预种子轮 · 2026-06-02 · 本轮天使投资人 · €6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c311f61df097447"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "npco_round",
+          "source_url": "https://partechpartners.com/news/np-co-raises-6m-pre-seed-to-bring-frontier-ai-to-industrial-engineering-backed-by-mistral-ai-founders",
+          "quote": "angel investors including Guillaume Lample and Cédric O (co-founders of Mistral AI)",
+          "source_title": "NP CO RAISES €6M PRE-SEED TO BRING FRONTIER AI TO INDUSTRIAL ENGINEERING, BACKED BY MISTRAL AI FOUNDERS",
+          "source_content_hash": "dd82ed805afc7603227df9dd50648a12d6f530458856d956cf641c0349004ccf",
+          "quote_hash": "5485ba71b9bb7333acbd59d8a7f90933d84911ec969a72698f964d66abc48f54"
+        },
         {
           "source_id": "FISRC-5c311f61df097447",
           "source_url": "https://tech.eu/2026/06/02/backed-by-mistral-ai-founders-np-company-secures-eur6m-pre-seed-to-advance-ai-for-engineering/",
@@ -161,7 +185,7 @@
           "quote_hash": "4ff2124b6150046d1dcdd900fe8bc829931f0c4d8c8a2ba3892a8c7de6e12b05"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

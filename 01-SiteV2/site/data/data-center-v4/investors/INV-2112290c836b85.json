@@ -139,19 +139,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Storm Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Storm Ventures 是一家专注 B2B 企业软件的早期风险投资机构。官网称其关注企业基础设施与网络安全等领域，并有二十余年的企业软件投资经验。",
+      "coverage_note": "投资阶段与领域来自 Storm Ventures 官网自述；Actualyze 是其公开融资记录之一，融资总额属于整轮。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "投资方向",
+          "value": "早期 B2B 企业软件；官网提及企业基础设施、网络安全和 B2B AI 软件。",
+          "source_id": "storm_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Actualyze AI 的官方融资公告披露其 2026 年 8 月 3 日获得 700 万美元种子轮融资，并将 Storm Ventures 列为投资方。",
+          "source_id": "actualyze_round"
+        },
         {
           "description": "融资来源记录：Actualyze AI · 种子轮 · 2026-08-03 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7d5911b83ac40a4d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Storm Ventures",
+          "url": "https://www.stormventures.com/",
+          "source_id": "storm_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "storm_home",
+          "source_url": "https://www.stormventures.com/",
+          "quote": "We are an early stage B2B-focused venture firm that specializes in building enterprise leaders.",
+          "source_title": "Homepage - Storm Ventures",
+          "source_content_hash": "aab37c34c35501ce39cea61b063060788337f09d9e6098cdbdf9bf311c59f195",
+          "quote_hash": "aa6a657636377426d07bfbdd945b9b04b38a2fe7157c19054d4e7e834f3ac310"
+        },
+        {
+          "source_id": "actualyze_round",
+          "source_url": "https://www.prnewswire.com/news-releases/actualyze-ai-emerges-from-stealth-with-7m-seed-round-to-deliver-enterprises-one-platform-for-every-ai-request-302840716.html",
+          "quote": "backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures",
+          "source_title": "Actualyze AI Emerges from Stealth with $7M Seed Round to Deliver Enterprises One Platform for Every AI Request",
+          "source_content_hash": "6b9b6a7613043c9f46e79feabb31f21fe83914eabc350f65f7ec4762647bb591",
+          "quote_hash": "1e943b0f73f5b14f764b6afd4ec7aed28b7e21a30647013df61bbccd7f936663"
+        },
         {
           "source_id": "FISRC-7d5911b83ac40a4d",
           "source_url": "https://www.prnewswire.com/news-releases/actualyze-ai-emerges-from-stealth-with-7m-seed-round-to-deliver-enterprises-one-platform-for-every-ai-request-302840716.html",
@@ -161,7 +196,7 @@
           "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -139,12 +139,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kaya VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资区域、早期策略和 Rohlik 案例均为 KAYA VC 官网自述；案例仅作已披露示例。",
+      "summary": "KAYA VC 官网称其自 2011 年起支持中东欧及其离散创业者，并以早期首轮支票为重点；官网记载其 2014 年领投 Rohlik 种子轮。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "regional_focus",
+          "label": "官网自述的投资区域",
+          "value": "中东欧及该地区离散创业者。",
+          "source_id": "PFSRC-INV-5b0c3df7c1a694-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "早期投资，提供首轮支票。",
+          "source_id": "PFSRC-INV-5b0c3df7c1a694-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "KAYA VC 官网称其于 2014 年领投 Rohlik 的种子轮。",
+          "source_id": "PFSRC-INV-5b0c3df7c1a694-2"
+        },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮参投 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
@@ -152,6 +173,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-5b0c3df7c1a694-1",
+          "source_url": "https://www.kaya.vc/facts",
+          "source_title": "About",
+          "source_content_hash": "5de2519ae73240cb1b3c95356efb1d717a6b18e05131a1d80c3cea284a185f9d",
+          "quote": "Kaya VC has been backing technical founders in Central and Eastern Europe since 2011",
+          "quote_hash": "b936fdceaf602cf35c6bc83fa5cbe9ad182e25485039df8a0225718dc0d8f12c"
+        },
+        {
+          "source_id": "PFSRC-INV-5b0c3df7c1a694-2",
+          "source_url": "https://www.kaya.vc/facts",
+          "source_title": "About",
+          "source_content_hash": "5de2519ae73240cb1b3c95356efb1d717a6b18e05131a1d80c3cea284a185f9d",
+          "quote": "We led Rohlik&#x27;s seed in 2014",
+          "quote_hash": "3f62682fc039b407885220f02031ce024080287ec87601798d50f21c129a30ec"
+        },
         {
           "source_id": "FISRC-ce83b857608dabeb",
           "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
@@ -161,7 +198,7 @@
           "quote_hash": "53368ad6bc0901835a1a09c706cb0b7122b133272092c3545b0852207a55555b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

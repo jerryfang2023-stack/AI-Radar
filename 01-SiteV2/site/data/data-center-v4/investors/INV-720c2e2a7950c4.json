@@ -139,19 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Overture Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Overture 官网称其投资能源、AI、韧性和工业转型领域；机构官方博客将 LGND 列为其支持对象，直接关联机构身份与该组合活动。",
+      "summary": "Overture 是早期风险投资机构，官网称其投资能源、AI、韧性及工业转型创业公司，并协助企业获得政府支持及应对监管问题。机构官方博客发布了关于支持 LGND 的文章；本档案没有录入未经一手公告确认的融资轮次金额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "早期。",
+          "source_id": "PFSRC-INV-720c2e2a7950c4-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "能源、人工智能、韧性和工业转型。",
+          "source_id": "PFSRC-INV-720c2e2a7950c4-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Overture 官方博客于 2025 年 7 月发布 “Making Earth Searchable: Why We’re Backing LGND”，确认其支持 LGND；没有纳入该融资的金额或轮次。",
+          "source_id": "PFSRC-INV-720c2e2a7950c4-2"
+        },
         {
           "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 本轮参投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-295efcf234fa6b4b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Overture 官网",
+          "value": "https://www.overture.vc/",
+          "url": "https://www.overture.vc/",
+          "source_id": "PFSRC-INV-720c2e2a7950c4-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-720c2e2a7950c4-1",
+          "source_url": "https://www.overture.vc/home-new",
+          "source_title": "Home New &mdash; Overture",
+          "source_content_hash": "c53ccfe9619da0c9f5b465101840a42ddf9a5a7c002fbdd8111914f337f29e3b",
+          "quote": "We back founders in energy, AI, resilience, and industrial transformation",
+          "quote_hash": "182811ff73c226388027b2a3122f7c699298359dd16cecb7e1285e3fd773e663"
+        },
+        {
+          "source_id": "PFSRC-INV-720c2e2a7950c4-2",
+          "source_url": "https://www.overture.vc/blog",
+          "source_title": "Blog &mdash; Overture",
+          "source_content_hash": "e9d0096df6b633cf722ee919de7b1ae2313d137c0c3e428deef30287168217d4",
+          "quote": "Making Earth Searchable: Why We’re Backing LGND JULY 10, 2025",
+          "quote_hash": "ddb0cb8df3364ab5fe5ad77cb7dc752a8beead690dd430c1bff520e0defe3020"
+        },
         {
           "source_id": "FISRC-295efcf234fa6b4b",
           "source_url": "https://www.linkedin.com/posts/climatecap_exclusive-lgnd-wants-to-make-chatgpt-for-activity-7349146378834501632-ku4h",
@@ -161,7 +206,7 @@
           "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

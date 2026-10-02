@@ -140,11 +140,25 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Shashank Kumar 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_note": "仅记录 Aina 融资参投和 Razorpay 官网当前职务；不构成完整履历。",
+      "summary": "Aina 官方融资公告将 Razorpay 的 Shashank 列入 2026 年种子轮天使投资人；Razorpay 官网将 Shashank Kumar 列为 MD and Co-founder。本档案仅记录这项参投活动与官网所载职务。",
+      "current_roles": [
+        {
+          "title": "MD and Co-founder",
+          "organization": "Razorpay",
+          "source_id": "PFSRC-INV-2f45961e30f009-2"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Razorpay 官网将 Shashank Kumar 列为 MD and Co-founder。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Aina 的 2026 年种子轮公告将 Razorpay 的 Shashank 列入天使投资人。",
+          "source_id": "PFSRC-INV-2f45961e30f009-1"
+        },
         {
           "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮天使投资人 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9e755507b523ddb2"
@@ -152,6 +166,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-2f45961e30f009-1",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/16/3328464/0/en/aina-raises-5-5m-with-new-hardware-interface-for-the-age-of-ai-beyond-touchscreens-and-keyboards.html",
+          "source_title": "Aina raises $5.5M with new hardware interface for the age",
+          "source_content_hash": "704f93661f833232cfc87e7ab6463a3063efa6f1bd3eaefd3fb6c5e64287bfaf",
+          "quote": "angels including Kunal Shah (WhatsApp/Cred), Tikhon Bernstam (Scribd), Harshil and Shashank (Razorpay), Vaibhav Domkundwar (Better Capital)",
+          "quote_hash": "50f4658d203e10e90b32b63a2dd83987595eda1c45810f78eddfb0df85ff7cfe"
+        },
+        {
+          "source_id": "PFSRC-INV-2f45961e30f009-2",
+          "source_url": "https://razorpay.com/newsroom/leadership-team/",
+          "source_title": "Leadership Team - Razorpay Software Private Limited",
+          "source_content_hash": "5c094d866d3a9890c31e57afd89c80648b82fa55e114bcf13eb00bdf1ad61bff",
+          "quote": "Shashank Kumar MD and Co-founder",
+          "quote_hash": "6d6802b5f4b2600bdf982fb5dbc0b2b9ac217310a46b89ef4f9a3a2be7b9b0f1"
+        },
         {
           "source_id": "FISRC-9e755507b523ddb2",
           "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
@@ -161,7 +191,7 @@
           "quote_hash": "cbb90101787681174c537c49fab8b931af921e68e513a732441c8e25052b37b7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }
