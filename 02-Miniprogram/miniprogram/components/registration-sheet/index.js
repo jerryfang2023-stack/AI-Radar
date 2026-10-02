@@ -18,6 +18,18 @@ function trackRegistration(event, properties = {}) {
   analytics.flush();
 }
 
+function supportsNicknameReview() {
+  return typeof wx !== "undefined" && Boolean(wx.canIUse?.("input.bindnicknamereview"));
+}
+
+function nicknameError(value) {
+  const name = String(value || "").trim();
+  if (!name) return "请选择或填写昵称";
+  if (name.length > 20) return "昵称最多 20 个字";
+  if (/^wxid_/i.test(name) || /^(微信用户|观澜用户)$/.test(name)) return "请使用昵称，不要填写微信 ID";
+  return "";
+}
+
 Component({
   properties: {
     visible: { type: Boolean, value: false },
@@ -30,6 +42,9 @@ Component({
     avatarSelected: false,
     avatarPickerOpen: false,
     nickname: "",
+    nicknameFocused: false,
+    nicknameReview: "idle",
+    nicknameNotice: "",
     canSubmit: false,
     registering: false,
     linkingExisting: false,
@@ -66,7 +81,7 @@ Component({
     noop() {},
 
     close() {
-      if (this.data.registering) return;
+      if (this.data.registering || this.data.linkingExisting) return;
       this.triggerEvent("close");
     },
 
@@ -77,12 +92,41 @@ Component({
       this.setData({ avatarUrl: event.detail.avatarUrl, avatarSelected: true, avatarPickerOpen: false }, () => this.updateSubmitState());
     },
 
+    focusNickname() {
+      this.setData({ nicknameFocused: true, nicknameReview: "idle", nicknameNotice: "" }, () => this.updateSubmitState());
+    },
+
     inputNickname(event) {
-      this.setData({ nickname: event.detail.value }, () => this.updateSubmitState());
+      this.setData({ nickname: event.detail.value, nicknameReview: "idle", nicknameNotice: "" }, () => this.updateSubmitState());
+    },
+
+    blurNickname(event) {
+      // Native "use WeChat nickname" may only provide its final value on blur.
+      const nickname = String(event.detail.value || "").trim();
+      const error = nicknameError(nickname);
+      this.setData({
+        nickname, nicknameFocused: false,
+        nicknameReview: error ? "failed" : supportsNicknameReview() ? "pending" : "passed",
+        nicknameNotice: error || (supportsNicknameReview() ? "正在确认昵称…" : ""),
+      }, () => this.updateSubmitState());
+    },
+
+    reviewNickname(event) {
+      if (this.data.nicknameReview !== "pending" || this.data.nicknameFocused) return;
+      const passed = event.detail.pass === true && !event.detail.timeout;
+      this.setData({
+        nicknameReview: passed ? "passed" : "failed",
+        nicknameNotice: passed ? "" : event.detail.timeout ? "昵称确认超时，请重新选择" : "请重新选择或填写昵称",
+      }, () => this.updateSubmitState());
+    },
+
+    nicknameReady() {
+      return !this.data.nicknameFocused && !nicknameError(this.data.nickname)
+        && (!supportsNicknameReview() || this.data.nicknameReview === "passed");
     },
 
     updateSubmitState() {
-      this.setData({ canSubmit: this.data.avatarSelected && Boolean(this.data.nickname.trim()) });
+      this.setData({ canSubmit: this.data.avatarSelected && this.nicknameReady() });
     },
 
     syncAccountSnapshot(result, profile = {}) {
@@ -90,7 +134,7 @@ Component({
       if (result.community) syncCommunity(result.community);
       if (result.wallet) syncWallet(result.wallet);
       saveProfile({
-        nickname: profile.nickname || result.profile?.nickname || "观澜用户",
+        nickname: result.profile?.nickname || profile.nickname || "观澜用户",
         ...(profile.avatarUrl ? { avatarUrl: profile.avatarUrl } : {}),
         phoneMasked: result.profile?.phoneMasked || "",
         phonePending: false,
@@ -109,6 +153,10 @@ Component({
 
     async linkExistingMember(event) {
       if (this.data.linkingExisting || this.data.registering) return;
+      if ((this.data.nickname || this.data.nicknameFocused) && !this.nicknameReady()) {
+        wx.showToast({ title: this.data.nicknameNotice || "请先完成昵称填写", icon: "none" });
+        return;
+      }
       const phoneCode = event.detail.code;
       if (!phoneCode) {
         trackRegistration("registration_failed", { flow: "community_link", reason: "phone_authorization_cancelled" });
@@ -132,7 +180,9 @@ Component({
     },
 
     async registerWithPhone(event) {
-      if (!this.data.canSubmit || this.data.registering) return;
+      if (this.data.registering || this.data.linkingExisting) return;
+      this.updateSubmitState();
+      if (!this.data.canSubmit) return;
       const phoneCode = event.detail.code;
       if (!phoneCode) {
         trackRegistration("registration_failed", { flow: "new_registration", reason: "phone_authorization_cancelled" });

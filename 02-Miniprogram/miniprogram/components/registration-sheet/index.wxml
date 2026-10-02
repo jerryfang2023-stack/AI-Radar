@@ -22,12 +22,12 @@
           </view>
         </button>
         <view class="profile-input-row nickname-row">
-          <view><text class="field-title">昵称</text><text class="field-note">使用微信昵称</text></view>
-          <input type="nickname" maxlength="20" value="{{nickname}}" placeholder="选择微信昵称" bindinput="inputNickname" />
+          <view><text class="field-title">昵称</text><text class="field-note">{{nicknameNotice || '使用微信昵称'}}</text></view>
+          <input type="nickname" maxlength="20" value="{{nickname}}" placeholder="选择微信昵称" confirm-type="done" disabled="{{registering || linkingExisting || nicknameReview === 'pending'}}" bindfocus="focusNickname" bindinput="inputNickname" bindblur="blurNickname" bindnicknamereview="reviewNickname" />
         </view>
       </view>
 
-      <button class="registration-primary" disabled="{{!canSubmit || registering}}" loading="{{registering}}" open-type="getPhoneNumber" bindgetphonenumber="registerWithPhone">授权手机号并开启体验</button>
+      <button class="registration-primary" disabled="{{!canSubmit || registering || linkingExisting}}" loading="{{registering}}" open-type="getPhoneNumber" bindgetphonenumber="registerWithPhone">授权手机号并开启体验</button>
       <button class="registration-secondary" bindtap="close">暂不注册，返回当前内容</button>
       <view class="registration-price">体验结束后可选择 30 元/月、168 元/半年或 300 元/年，不自动续费</view>
     </block>
