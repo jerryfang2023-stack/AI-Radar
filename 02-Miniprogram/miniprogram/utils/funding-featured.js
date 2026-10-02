@@ -4,11 +4,14 @@ const { companyDisplayName } = require('./company-display.js');
 function chinaDate(now = new Date()) {
   return new Date(now.getTime() + 8 * 3600000).toISOString().slice(0, 10);
 }
-function selectFeatured(cards, market, today = chinaDate(), observations = {}) {
+function selectFeatured(cards, market, today = chinaDate(), observations = {}, selection = null, now = Date.now()) {
   const visible = cards.filter(c => c.marketRegion === market && isFundingVisible(c) && !["", "未分类", "未披露"].includes(c.subcategory || c.category || "") && /^\d{4}-\d{2}-\d{2}$/.test(c.date || "") && c.date <= today);
   const latest = visible.reduce((date, c) => c.date > date ? c.date : date, "");
   const seen = new Set();
-  const selected = [...visible].sort((a,b) => b.date.localeCompare(a.date) || String(a.id).localeCompare(String(b.id))).filter(c => {
+  // An explicit selection (including null/empty) is authoritative. Never fill vacancies with unreviewed latest cards.
+  const window = selection?.windows?.find(w => Date.parse(w.startsAt) <= now && now < Date.parse(w.endsAt));
+  const curated = (window?.markets?.[market] || []).map(row => visible.find(c => c.id === row.fundingId && c.date === row.date && observations[c.id])).filter(Boolean);
+  const selected = curated.filter(c => {
     if (!c.id || seen.has(c.id)) return false;
     seen.add(c.id); return true;
   }).slice(0, 3).map(c => {

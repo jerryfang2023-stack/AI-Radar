@@ -27,3 +27,23 @@ test('same-day content updates and removal need no funding manifest change; fail
   const removed=service.refreshObservations();callback.success({statusCode:200,data:{schemaVersion:1,entries:[]}});assert.deepEqual(await removed,{});
  } finally {delete global.wx;}
 });
+
+const selection={schemaVersion:1,windows:[{startsAt:'2026-10-02T00:00:00Z',endsAt:'2026-10-03T00:00:00Z',markets:{global:[{fundingId:entry.fundingId,date:'2026-10-01'}],china:[]}}]};
+test('selection rejects overlaps, invalid dates, duplicate IDs and overfull markets',()=>{
+ const {parseSelection}=require('../miniprogram/utils/featured-observations.js');
+ assert.equal(parseSelection(undefined),null);assert.equal(parseSelection(selection).windows.length,1);
+ for(const bad of [
+  {...selection,windows:[selection.windows[0],selection.windows[0]]},
+  {...selection,windows:[{...selection.windows[0],endsAt:'invalid'}]},
+  {...selection,windows:[{...selection.windows[0],markets:{global:Array(4).fill(selection.windows[0].markets.global[0]),china:[]}}]},
+ ])assert.throws(()=>parseSelection(bad));
+});
+test('feed accepts copy and selection atomically; valid empty clears, malformed update retains',async()=>{
+ delete require.cache[require.resolve('../miniprogram/utils/featured-observations.js')];
+ const service=require('../miniprogram/utils/featured-observations.js');let callback;global.wx={request:o=>{callback=o;}};
+ try {
+  const first=service.refreshFeatured();callback.success({statusCode:200,data:{schemaVersion:1,entries:[entry],selection}});const accepted=await first;
+  const bad=service.refreshFeatured();callback.success({statusCode:200,data:{schemaVersion:1,entries:[],selection:{}}});assert.deepEqual(await bad,accepted);
+  const empty=service.refreshFeatured();callback.success({statusCode:200,data:{schemaVersion:1,entries:[],selection:{schemaVersion:1,windows:[]}}});assert.deepEqual(await empty,{observations:{},selection:{schemaVersion:1,windows:[]}});
+ }finally{delete global.wx;}
+});

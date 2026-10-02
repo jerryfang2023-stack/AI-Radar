@@ -1,5 +1,7 @@
 # Guanlan Funding Mini Program
 
+Current source 1.2.6: financing featured cards are selected by the server's reviewed policy, not latest-three slicing. Read the current bounded selection window from funding-featured.json; honor market, date and visibility, do not fill missing slots with unreviewed cards. No active selection means empty. Keep the existing three-card carousel and detail permissions. Background failures may retain only still-valid accepted data; foreground time boundaries refresh without a new upload. Operator rules and scoring live in Portal config/funding-featured-policy.json; short copy stays in config/funding-featured-observations.json. Run npm run sync:featured after the verified server deployment and before packaging.
+
 As of 2026-10-02, verified development upload is 1.2.5 from `a25f1a1e9e5b0d10969ad435488c9cfa5e4ba6dc` (206 tests; 1627191 bytes). Review/publication is owner-controlled and not confirmed. Start from README.md and docs/release-runbook.md; immutable upload evidence is docs/releases/1.2.5/README.md. The version-specific contracts below are cumulative history, with newer contracts taking precedence.
 
 Current source 1.2.5: funding lists contain one card per verified company. Historical rounds remain inside the subject detail. Capital-flow models read index.events (legacy fallback index.cards), while browsing reads index.cards. Old funding IDs resolve through cardAliases. Never infer event totals from the number of subject cards.

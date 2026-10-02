@@ -1,8 +1,9 @@
 {
   "name": "guanlan-funding-miniprogram",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "private": true,
   "scripts": {
+    "sync:featured": "node scripts/sync-featured.mjs",
     "build:funding": "node scripts/build-funding-data.mjs",
     "build:reports": "node scripts/build-report-data.mjs",
     "build:data": "npm run build:funding && npm run build:reports",

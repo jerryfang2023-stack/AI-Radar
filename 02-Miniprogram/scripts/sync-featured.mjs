@@ -1,0 +1,12 @@
+import fs from 'node:fs';
+import { createRequire } from 'node:module';
+const require = createRequire(import.meta.url);
+const { parseObservations, parseSelection } = require('../miniprogram/utils/featured-observations.js');
+const response = await fetch(`https://www.zkdlj.vip/data/funding-featured.json?refresh=${Date.now()}`, {signal:AbortSignal.timeout(20000)});
+if (!response.ok) throw new Error(`Featured HTTP ${response.status}`);
+const payload = await response.json();
+parseObservations(payload);
+const selection = parseSelection(payload.selection);
+if (!selection) throw new Error('Live featured policy has not been deployed');
+fs.writeFileSync(new URL('../miniprogram/data/funding-featured.js',import.meta.url), `// Reviewed online snapshot; refreshed by scripts/sync-featured.mjs.\nmodule.exports = ${JSON.stringify(payload)};\n`);
+console.log(JSON.stringify({observations:payload.entries.length,windows:selection.windows.length,asOfDate:payload.selection.asOfDate}));

@@ -9,6 +9,7 @@
 1. 核对工作树与远端，保留其他任务改动；固定准备上传的源码提交。
 2. 在 `02-Miniprogram` 运行 `node scripts/sync-reviewed-funding.mjs`，核对线上清单与审核源。若线上正处于切版、返回旧模型或异常数量，不能直接覆盖已审核基线；先确认服务器发布回执，再重读版本与索引。
 3. 运行 `npm run verify`，检查生成差异属于本次已接受更新。1.2.5 的 `cards` 是主体卡，`events` 是独立融资事件，二者数量不可互换；确认历史轮次和旧 ID 别名仍保留。
+   1.2.6 起，服务端精选部署后运行 `npm run sync:featured` 固定已发布精选快照。线上缺少有效 selection 时停止打包，不能以最新三条充当审核精选。
 4. `package.json`、`miniprogram/utils/analytics.js` 和 CLI 上传版本一致；末位达到 9 后进位，不使用 1.1.10。
 5. 将接受的改动提交并推送，再从精确提交 `git archive` 到私有发布目录。逐文件核对 Git blob，避免上传未提交代码。私有预览、日志和回执不进入公开仓库。
 

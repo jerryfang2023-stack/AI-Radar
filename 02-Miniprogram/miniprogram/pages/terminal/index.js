@@ -1,4 +1,4 @@
-const { refreshObservations } = require("../../utils/featured-observations.js");
+const { refreshFeatured, getFeatured } = require("../../utils/featured-observations.js");
 const { selectFeatured, chinaDate } = require("../../utils/funding-featured.js");
 const { filterCards, sortCards } = require("../../utils/funding.js");
 const { getWatchIds, toggleWatch, getCompareIds } = require("../../utils/storage.js");
@@ -44,6 +44,9 @@ Page({
   },
 
   onLoad() {
+    const featured = getFeatured();
+    this.featuredObservations = featured.observations;
+    this.featuredSelection = featured.selection;
     if (wx.showShareMenu) wx.showShareMenu({ menus: ["shareAppMessage", "shareTimeline"] });
     this.allCards = bundledFundingIndex.cards;
     this.filteredCards = [];
@@ -62,6 +65,7 @@ Page({
   },
 
   onShow() {
+    this.featuredVisible = true;
     syncTabBar(this, 0);
     this.refreshFeaturedObservations();
     refreshFundingData().then(state => { if(!this.featuredDisposed)this.applyFundingData(state.index); });
@@ -72,12 +76,24 @@ Page({
     this.setData({ selectedIds }, () => this.renderSlice(Math.max(this.data.visibleCount, this.pageSize)));
   },
 
-  onUnload() { this.featuredDisposed = true; },
+  onHide() { this.featuredVisible = false; clearTimeout(this.featuredTimer); },
+  onUnload() { this.featuredDisposed = true; this.featuredVisible = false; clearTimeout(this.featuredTimer); },
+
+  scheduleFeaturedBoundary() {
+    if (!this.featuredVisible || this.featuredDisposed) return;
+    clearTimeout(this.featuredTimer);
+    const now = Date.now();
+    const next = (this.featuredSelection?.windows || []).flatMap(w => [Date.parse(w.startsAt), Date.parse(w.endsAt)]).filter(t => t > now).sort((a,b) => a-b)[0];
+    if (next) this.featuredTimer = setTimeout(() => {
+      if (this.featuredVisible && !this.featuredDisposed) this.updateMetrics({ cards: this.allCards || [], meta: this.data.meta });
+    }, Math.min(next - now + 25, 2147483647));
+  },
 
   refreshFeaturedObservations() {
-    return refreshObservations().then(observations => {
+    return refreshFeatured().then(({ observations, selection }) => {
       if (this.featuredDisposed) return;
       this.featuredObservations = observations;
+      this.featuredSelection = selection;
       this.updateMetrics({ cards: this.allCards || [], meta: this.data.meta });
     });
   },
@@ -101,7 +117,8 @@ Page({
       const current = new Date(`${card.date}T00:00:00`);
       return Number.isFinite(current.getTime()) && latest.getTime() - current.getTime() <= 6 * 86400000;
     }).length;
-    const featured = selectFeatured(index.cards, this.data.selectedMarketRegion, chinaDate(), this.featuredObservations || {});
+    const featured = selectFeatured(index.cards, this.data.selectedMarketRegion, chinaDate(), this.featuredObservations || {}, this.featuredSelection || null);
+    this.scheduleFeaturedBoundary();
     this.setData({
       featuredCards: featured.cards,
       featuredCurrent: Math.max(0, featured.cards.findIndex(card => card.id === this.data.featuredCards[this.data.featuredCurrent]?.id)),
