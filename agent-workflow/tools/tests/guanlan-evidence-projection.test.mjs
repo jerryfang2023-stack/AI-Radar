@@ -46,8 +46,8 @@ test("Guanlan evidence projection links assets to V4 evidence without copying or
   const dateRoot = path.join(root, "01-SiteV2/content/11-databases/data-center-v4/2026-07-30");
   const sourceUrl = "https://example.test/product-launch";
   const privateBody = "PRIVATE ORIGINAL BODY MUST NEVER ENTER THE VAULT";
-  const assetRelative = "60-知识资产/企业 AI 案例/example.md";
-  const reportRelative = "30-应用中心/行业报告档案/example-report.md";
+  const assetRelative = "60-知识资产/FDE/企业 AI 案例/example.md";
+  const reportRelative = "20-融资情报/报告档案/example-report.md";
 
   writeJson(path.join(dateRoot, "source-artifacts.json"), [{
     source_artifact_id: "SA-example",
@@ -131,8 +131,8 @@ test("Guanlan evidence projection links assets to V4 evidence without copying or
   const citationFile = fs.readdirSync(citationDir).find((name) => name.startsWith("SA-example--"));
   assert.ok(citationFile);
   const citation = fs.readFileSync(path.join(citationDir, citationFile), "utf8");
-  assert.match(citation, /\[\[60-知识资产\/企业 AI 案例\/example\|示例资产\]\]/u);
-  assert.match(citation, /\[\[30-应用中心\/行业报告档案\/example-report\|示例报告\]\]/u);
+  assert.match(citation, /\[\[60-知识资产\/FDE\/企业 AI 案例\/example\|示例资产\]\]/u);
+  assert.match(citation, /\[\[20-融资情报\/报告档案\/example-report\|示例报告\]\]/u);
   assert.match(citation, /CL-example/u);
   assert.match(citation, /EV-example/u);
   assert.match(citation, /EN-example/u);

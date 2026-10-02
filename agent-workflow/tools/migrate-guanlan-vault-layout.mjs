@@ -5,6 +5,7 @@ import crypto from 'node:crypto';
 import {isMainModule} from './lib/module-entry.mjs';
 import {GUANLAN_VAULT_LAYOUT_VERSION} from './guanlan-vault-paths.mjs';
 import {rewriteVaultLinks} from './lib/guanlan-vault-layout.mjs';
+import {VAULT_SCAN_SKIP_DIRECTORIES} from './lib/guanlan-vault-scan.mjs';
 const digest=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const safe=(root,relative)=>{const file=path.resolve(root,relative),rel=path.relative(root,file);if(!rel||rel.startsWith('..')||path.isAbsolute(rel))throw Error('vault_migration_path_escape');return file;};
 export function planMigration({target,staging}) {
@@ -25,7 +26,7 @@ export function planMigration({target,staging}) {
   for(const relative of old)if(!next.has(relative)&&!relative.startsWith('90-工作区/')) {const file=safe(target,relative);if(fs.existsSync(file))changes.push({path:relative,kind:'remove',previousHash:digest(fs.readFileSync(file))});}
   const stack=[target];
   while(stack.length){const directory=stack.pop();for(const entry of fs.readdirSync(directory,{withFileTypes:true})){
-    if(['.git','node_modules','.venv','venv','__pycache__','_归档','发布记录','repos','tmp','output','outputs'].includes(entry.name)||entry.isSymbolicLink())continue;
+    if(VAULT_SCAN_SKIP_DIRECTORIES.has(entry.name)||['_归档','发布记录','repos','tmp','output','outputs'].includes(entry.name)||entry.isSymbolicLink())continue;
     const file=path.join(directory,entry.name);if(entry.isDirectory()){stack.push(file);continue;}
     const relative=path.relative(target,file).replaceAll('\\','/');if(!entry.isFile()||!relative.endsWith('.md')||old.has(relative)||relative==='AGENTS.md'||relative.endsWith('/AGENTS.md'))continue;
     const bytes=fs.readFileSync(file),content=bytes.toString('utf8'),updated=rewriteVaultLinks(content);

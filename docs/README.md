@@ -8,6 +8,7 @@ This directory keeps only current operator and handoff documentation.
 
 - `docs/agent-handoff.md`: current project handoff.
 - `docs/obsidian-vault.md`: independent Vault structure, refresh, validation, and recovery.
+- `docs/financing-data-foundation.md`: shared facts, independent financing database, application domains, compatibility and migration boundaries.
 - `docs/operations-console.md`: unified operations, membership analytics, Skill ownership, and release checks.
 - `docs/daily-production-recovery.md`: checkpoint recovery, runtime isolation, and website/Mini Program publication acceptance.
 - `docs/china-funding-monitor.md`, `docs/china-funding-history.md`: domestic monitoring and historical collection workflow.
