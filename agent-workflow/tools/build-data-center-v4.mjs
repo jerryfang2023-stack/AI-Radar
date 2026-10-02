@@ -1863,14 +1863,23 @@ export function reviewedFundingDate(review, { subject, amount, publishedAt, sour
   const body = String(source?.clean_text || source?.full_text || "");
   const expected = metricValues(amount).map(normalizedFundingMetric);
   const actual = metricValues(quote).map(normalizedFundingMetric);
+  const dateParts = String(review.date || "").match(/^(\d{4})-(\d{2})-(\d{2})$/u);
+  const explicitAnnouncement = review.date_basis === "explicit_announcement"
+    && dateParts && String(source?.published_at).startsWith(dateParts[1])
+    && [...quote.matchAll(/(?:^|[^\d])(?:(\d{4})年)?(\d{1,2})月(\d{1,2})日/gu)].some(match =>
+      (!match[1] || match[1] === dateParts[1])
+      && Number(match[2]) === Number(dateParts[2]) && Number(match[3]) === Number(dateParts[3]))
+    && /宣布.{0,24}(?:完成|获得).{0,40}融资/u.test(quote);
   if (review.status !== "accepted" || !review.reviewer || !source
       || !/^\d{4}-\d{2}-\d{2}$/.test(review.date || "")
-      || String(source.published_at).slice(0, 10) !== review.date
+      || (!explicitAnnouncement && String(source.published_at).slice(0, 10) !== review.date)
       || review.date > String(publishedAt).slice(0, 10)
       || !quote || !body.includes(quote)
       || !quote.toLowerCase().includes(String(subject).toLowerCase())
       || !/(?:融资|raised|raises|funding|financing)/iu.test(quote)
-      || !expected.some(value => actual.includes(value))) throw new Error('invalid_reviewed_funding_date');
+      || !(expected.some(value => actual.includes(value))
+        || (explicitAnnouncement && !expected.length && String(amount || '').trim()
+          && quote.includes(String(amount).trim())))) throw new Error('invalid_reviewed_funding_date');
   return review.date;
 }
 
