@@ -35,7 +35,7 @@ try{
   case 'complete':result=queue.complete(need('key'),need('token'),readJson(need('input')))||{status:'candidate'};break;
   case 'approve':result=queue.approve(need('key'),need('reviewer'))||{status:'accepted'};break;
   case 'reopen':result=queue.reopen(need('key'),need('reason'));break;
-  case 'integrate':result=integrateProfileBatch(queue,{batchSize:Number(args.get('batch-size')||30),flush:args.get('flush')==='true'});break;
+  case 'integrate':result=integrateProfileBatch(queue,{batchSize:Number(args.get('batch-size')||30),flush:args.get('flush')==='true',reviewer:args.get('reviewer')||undefined});break;
   case 'report':{result={date:today(),...queue.status()};break;}
   default:throw new Error('Commands: seed, claim, heartbeat, capture, import-capture, complete, approve, reopen, fail, retry, integrate, status, report');
  }
