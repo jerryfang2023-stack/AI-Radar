@@ -140,11 +140,15 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Picture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Ocean Security 官方融资公告称本轮融资有 Picture Capital 参与，并称 Mike Fey 为 Picture Capital GP。此处仅归档该公司披露的融资活动，不据同名网站补写基金背景。",
+      "coverage_note": "仅使用 Ocean Security 的官方融资公告确认其对 Picture Capital 的融资披露；未将同名网站的历史交易映射到该投资者。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Ocean Security 官方公告将 Picture Capital 列为其融资参与方。",
+          "source_id": "activity_round"
+        },
         {
           "description": "融资来源记录：Ocean · 轮次未披露 · 2026-05-19 · 本轮参投 · $28 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0191618f7b8a168d"
@@ -152,6 +156,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "activity_round",
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/19/3297836/0/en/Ocean-Raises-28M-as-Enterprises-Confront-a-New-Wave-of-AI-Powered-Email-Attacks.html",
+          "source_title": "Ocean Raises $28M as Enterprises Confront a New Wave of",
+          "source_content_hash": "faa51d7775bc5d7341889715cf96a083ecb1556e631f9d5b4d63571e34038fbc",
+          "quote": "nced its launch from stealth with $28 million in total funding, led by Lightspeed Venture Partners, with participation from Picture Capital and Cerca Partners.",
+          "quote_hash": "f74d161a2bffa757df245bae2e47a8a10bc098869695e752f6553e80c905ecdf"
+        },
+        {
+          "source_id": "activity_gp",
+          "source_url": "https://www.globenewswire.com/news-release/2026/05/19/3297836/0/en/Ocean-Raises-28M-as-Enterprises-Confront-a-New-Wave-of-AI-Powered-Email-Attacks.html",
+          "source_title": "Ocean Raises $28M as Enterprises Confront a New Wave of",
+          "source_content_hash": "faa51d7775bc5d7341889715cf96a083ecb1556e631f9d5b4d63571e34038fbc",
+          "quote": "That’s a real shift in how this category operates.” “AI broke email security and handed attackers an unfair advantage overnight,” said Mike Fey, GP at Picture Capital and CEO of Island.",
+          "quote_hash": "ef16cbac815c8dea9c34f3d68d56669ab6c8d97b4007233e24742c55e1f0539a"
+        },
         {
           "source_id": "FISRC-0191618f7b8a168d",
           "source_url": "https://techcrunch.com/2026/05/19/from-teen-hacker-to-iron-dome-researcher-this-founder-raised-28m-to-fight-ai-phishing",
@@ -161,7 +181,7 @@
           "quote_hash": "babcc47f7a265fac0a2cb70741b577202390ed5449ec4f97cfbd014e30dbc61d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

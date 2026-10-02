@@ -123,19 +123,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Drive Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Drive Capital 官网称其 2012 年从硅谷迁往俄亥俄创办，如今总部位于哥伦布，是投资下一代市场定义型公司的风险投资机构。",
+      "facts": [
+        {
+          "field": "founding_year",
+          "label": "创立年份",
+          "value": "2012",
+          "source_id": "drive_story"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "Columbus, Ohio",
+          "source_id": "drive_story"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "下一代市场定义型公司",
+          "source_id": "drive_story"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "官网回顾团队离开硅谷，在俄亥俄创办 Drive Capital。",
+          "source_id": "drive_story"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Normal Computing · 历史轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c1b4f6326a3ee76"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Drive Capital官网",
+          "url": "https://drivecapital.com/our-story",
+          "source_id": "drive_story"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "drive_story",
+          "source_url": "https://drivecapital.com/our-story",
+          "source_title": "Drive Capital - Stories",
+          "source_content_hash": "9cc556bfc9f7870339a9ddb545ce1105d6a5c5fdde8a109cb119bd07a841beae",
+          "quote": "When we left Silicon Valley in 2012 to start a venture capital firm in Ohio, people literally told us we were crazy, but give us a few minutes.",
+          "quote_hash": "282fcce2f4fb357741f6d363f567d3671a9a09f34dfabdba82f2b86413a1ab37"
+        },
         {
           "source_id": "FISRC-3c1b4f6326a3ee76",
           "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
@@ -145,7 +185,8 @@
           "quote_hash": "21687a98084e726aa8f7c265c14c8e03bd1bafe6732b59331da83b20dc408489"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

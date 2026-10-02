@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "G+D Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "G+D Ventures 官网将其投资方向定位为 TrustTech。Osavul 官方公告称其参与了 1000 万美元（850 万欧元）A 轮融资；该轮由 33N Ventures 领投。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "投资方向",
+          "value": "官网将 G+D Ventures 定位为投资 TrustTech 的业务。",
+          "source_id": "gd"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "Osavul 公告将其列为 A 轮参与方。",
+          "source_id": "osavul"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "参与 Osavul 的 1000 万美元（850 万欧元）A 轮；公告将 33N Ventures 列为领投方。",
+          "source_id": "osavul"
+        },
         {
           "description": "融资来源记录：Osavul · A轮 · 2026-10-01 · 本轮参投 · €8.5m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4dc390804d079769"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.gi-de.com/en/ventures",
+          "source_id": "gd",
+          "url": "https://www.gi-de.com/en/ventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gd",
+          "source_url": "https://www.gi-de.com/en/ventures",
+          "source_title": "G+D Ventures - investing in TrustTech | G+D",
+          "source_content_hash": "e4bfdf6bb6dcab7896548c75f65421499fb0878a31156b4b40b1d6e6e3a7328c",
+          "quote": "G+D Ventures - investing in TrustTech | G+D About us Careers Contact EN Digital Security Digital Security Connectivity & IoT Connectivity & IoT Asset Tracking IoT Connectivity SIM eSIM iSIM SIM & Device Management Network & Data Security IoT Shop ",
+          "quote_hash": "8c25a07a063a86d4a0456d40849262743e183f1cb0262643db69e9f73d3e8b24"
+        },
+        {
+          "source_id": "osavul",
+          "source_url": "https://www.osavul.cloud/blog/osavul-raised-series-a-round",
+          "source_title": "Osavul Raised $10M (€8.5M) Series A to Scale Hybrid Risk Intelligence Globally",
+          "source_content_hash": "c297d9d05c33da3c791bfae3041da336d7d5e223a8cd46fad7f6cfd6dd818f94",
+          "quote": "ns worldwide, raised $10M (€8.5M) in Series A funding led by 33N Ventures, with participation from Balnord, G+D Ventures and existing investor 42CAP. The round accelerates Osavul’s expansion from government and defence into enterprises and critical infrastructure operators — bringing the same intelligence capability that identif",
+          "quote_hash": "1c188f8d9b62f7690d530a754482cfa3f12a0cab78627ea8465970f490172af7"
+        },
         {
           "source_id": "FISRC-4dc390804d079769",
           "source_url": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
@@ -161,7 +202,7 @@
           "quote_hash": "7210a96814a82e3e8392379255027cb96e86dd45ca3f5dd0e7390c7c154ac689"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

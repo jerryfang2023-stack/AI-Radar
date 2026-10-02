@@ -139,19 +139,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bass Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "BASS Ventures 官网以创始人支持为核心，称与创始人合作并帮助其发展。Wowtale 报道其参与 Pensive 种子轮。",
+      "coverage_note": "机构使命依据 BASS Ventures 官网自述；Pensive 交易信息来自媒体报道。",
+      "facts": [
+        {
+          "field": "founder_support",
+          "label": "创始人支持",
+          "value": "官网自述与创始人合作并帮助创始人发展",
+          "source_id": "bass_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Wowtale 报道 Bass Ventures 参与 Pensive 种子轮。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Pensive · 种子轮 · 2026-02-27 · 本轮参投 · $6.8M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4c101bd2bd412982"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://bass.vc/intro?tl=en",
+          "url": "https://bass.vc/intro?tl=en",
+          "source_id": "bass_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bass_official",
+          "source_url": "https://bass.vc/intro?tl=en",
+          "source_title": "Intro - BASS Ventures",
+          "source_content_hash": "3cf3ae91cc5c94e7c1b3fd02abc7930ea1c693a2f3fa05299c24ed0544a2398b",
+          "quote": "With our founders, BASS Ventures turn wild visions into anthems of success.",
+          "quote_hash": "04dbb094139f6dcd17fc9117636e309ef804acc9605b1f8a4c4b75a7f840f7d0"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+          "source_title": "Pensive Raises $6.8M Seed Round to Scale AI-Assisted Grading and Personalized Learning - WOWTALE",
+          "source_content_hash": "16316c1346cd82f2527d5292937a3aa6f47d3eafc34d336b7ae5a61ec89e2ef9",
+          "quote": "The round was led by Mayfield , with participation from Reach Capital , Anti Fund , a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures , Vela Partners , Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
+          "quote_hash": "125450e6fdab47c828803b36ac9325ab8828e4598d532547492b6aab176c03bc"
+        },
         {
           "source_id": "FISRC-4c101bd2bd412982",
           "source_url": "https://en.wowtale.net/2026/02/27/233611/",
@@ -161,7 +196,7 @@
           "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

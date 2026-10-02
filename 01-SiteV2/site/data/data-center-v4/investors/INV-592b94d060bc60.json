@@ -140,11 +140,22 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "国家人工智能产业投资基金合伙企业(有限合伙) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "工信部材料称国家人工智能产业投资基金启动运行、资金规模达 600 亿元。IT之家报道将“国家人工智能产业投资基金合伙企业（有限合伙）”列入 DeepSeek 首轮融资投资方；本条仅记录该媒体披露，不扩展为完整组合。",
+      "coverage_note": "基金规模与启动运行信息来自工信部；有限合伙名称及其与 DeepSeek 融资的关联来自 IT之家对投资人名单的报道，未作为该基金的独立官方业绩披露。",
+      "facts": [
+        {
+          "field": "reported_fund_size",
+          "label": "工信部披露规模",
+          "value": "600亿元；材料称已启动运行",
+          "source_id": "miit_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "IT之家报道将该有限合伙列入 DeepSeek 首轮融资投资方；属于媒体报道，未视为基金官方完整投资组合。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e0178cb313198d39"
@@ -152,6 +163,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "miit_official",
+          "source_url": "https://www.miit.gov.cn/xwfb/bldhd/art/2026/art_4ba01aa6d2f54ced8ba3490ea4fb52c4.html",
+          "source_title": "工业和信息化部：2025年工业和信息化发展主要目标任务顺利完成",
+          "source_content_hash": "975fe7921756cb213bbd8c96747e3a9681bcf447eb7e6a631e368ba6449a0d98",
+          "quote": "启动运行国家人工智能产业投资基金，资金规模达600亿元。",
+          "quote_hash": "d0b84cc0ad6ca1f4bb3ab4fd5c916e368aa197ed58108317918004ac08300da8"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://www.ithome.com/0/965/686.htm",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等 - IT之家",
+          "source_content_hash": "9c2935c329e79c86a273afaa6b86bffcecb3779f8cbcc69d425c012fe71b950e",
+          "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+          "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+        },
         {
           "source_id": "FISRC-e0178cb313198d39",
           "source_url": "https://www.ithome.com/0/965/686.htm",
@@ -161,7 +188,7 @@
           "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

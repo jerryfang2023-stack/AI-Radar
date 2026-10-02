@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "GRIDS Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "GRIDS Capital 官网披露其深科技投资定位、组合规模和联系方式；组合规模按官网自述记录，不代表独立核验的完整投资清单。",
+      "summary": "GRIDS Capital 是深科技风险投资机构。官网称其投资组合涵盖150多家公司，并通过直接投资和精选基金管理人进行配置。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资定位",
+          "value": "深科技投资。",
+          "source_id": "PFSRC-INV-a4f43775028913-focus"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露的组合规模",
+          "value": "官网称其投资了150多家公司，既有直接投资，也通过精选GP投资。",
+          "source_id": "PFSRC-INV-a4f43775028913-portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,46 @@
           "source_id": "FISRC-3372eff279ee29db"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "GRIDS Capital 官网",
+          "value": "https://www.gridscapital.com/",
+          "url": "https://www.gridscapital.com/",
+          "source_id": "PFSRC-INV-a4f43775028913-focus"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "info@gridscapital.com",
+          "source_id": "PFSRC-INV-a4f43775028913-email"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-a4f43775028913-focus",
+          "source_url": "https://www.gridscapital.com/",
+          "source_title": "GRIDS Capital | Venture Capital",
+          "source_content_hash": "eabaa3fff21996d2e92f4664c505667689f731c8273d460a3cf0e8a611a1b1e3",
+          "quote": "WE INVEST IN DEEP TECH VENTURES.",
+          "quote_hash": "7631bb78499a997d8d1ce56bf4aedd5fc4994dac1a1a1daa0c1588f14d7c5bff"
+        },
+        {
+          "source_id": "PFSRC-INV-a4f43775028913-portfolio",
+          "source_url": "https://www.gridscapital.com/",
+          "source_title": "GRIDS Capital | Venture Capital",
+          "source_content_hash": "eabaa3fff21996d2e92f4664c505667689f731c8273d460a3cf0e8a611a1b1e3",
+          "quote": "We have investments in 150+ companies, building a well-balanced, risk-adjusted portfolio, both directly and through selected GPs.",
+          "quote_hash": "d400fb412573d23ea1f2259453360171d938ca017982ff85236b16f700d1ec08"
+        },
+        {
+          "source_id": "PFSRC-INV-a4f43775028913-email",
+          "source_url": "https://www.gridscapital.com/",
+          "source_title": "GRIDS Capital | Venture Capital",
+          "source_content_hash": "eabaa3fff21996d2e92f4664c505667689f731c8273d460a3cf0e8a611a1b1e3",
+          "quote": "info@gridscapital.com",
+          "quote_hash": "1e44430666d84da1734cdfc63b87f72cfc25730610999b78d525871330d63d11"
+        },
         {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
@@ -161,7 +212,7 @@
           "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,19 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "无锡滨湖产业集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "信用无锡将无锡滨湖产业投资发展（集团）有限公司简称为“滨湖产业集团”，并介绍其产业投资、园区开发、招商运营、人才安居和金融服务业务。好心情官方公告将无锡滨湖产业集团列为近 3 亿元新一轮融资的投资方之一。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "登记主体",
+          "value": "无锡滨湖产业投资发展（集团）有限公司，官方页面简称“滨湖产业集团”。",
+          "source_id": "wuxi"
+        },
+        {
+          "field": "business_scope",
+          "label": "业务方向",
+          "value": "产业投资、园区开发、招商运营、人才安居和金融服务。",
+          "source_id": "wuxi-scope"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "好心情公告将其列为近 3 亿元融资的投资方之一。",
+          "source_id": "goodmood"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "参与好心情近 3 亿元新一轮融资；公告没有将其单列为领投方。",
+          "source_id": "goodmood"
+        },
         {
           "description": "融资来源记录：好心情（Good Mood） · 轮次未披露 · 2026-09-30 · 本轮参投 · 近3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd10d8d231daf83d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://wuxicredit.wuxi.gov.cn/doc/2024/10/11/4407355.shtml",
+          "source_id": "wuxi",
+          "url": "https://wuxicredit.wuxi.gov.cn/doc/2024/10/11/4407355.shtml"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wuxi",
+          "source_url": "https://wuxicredit.wuxi.gov.cn/doc/2024/10/11/4407355.shtml",
+          "source_title": "信用无锡",
+          "source_content_hash": "9e6da9bde35156cba62e817cfbfa3a609e0c3096b94613d1e98e2758cd1605db",
+          "quote": " 首页 > 信用动态 > 信用动态 滨湖产业集团获评AA+主体信用评级 发布时间： 2024/10/11 | 阅读次数： | 专栏： 信用动态 近日，无锡滨湖产业投资发展（集团）有限公司（以下简称&ldquo;滨湖产业集团&rdquo;）经国内权威评级机构&mdash;&mdash;上海新世纪资信评估投资服务有限公司评定为主体信用等级AA+，评级展望为&ldquo;稳定&rdquo;。 此次获评&ldquo;AA+&rdquo;主体信用等级，不仅彰显了滨湖产业集团在国内资本市场中的强劲实力和良好信誉，更是对其长期以来坚持高质量发展、不断优化产业布局、持续提升企业核心竞争力的充分认可。 2023年11",
+          "quote_hash": "e4f7fee035a61f16cf97020303784def6ecfaf8e54f4f2dd3f3b65876897f1c2"
+        },
+        {
+          "source_id": "goodmood",
+          "source_url": "https://haoxinqing.cn/article/detail42025.html",
+          "source_title": "好心情完成近3亿元新一轮融资 加速 AI 创新与国际化布局_好心情",
+          "source_content_hash": "04638605c31319c1892f415b49f9cc684966710bc92a73391a9c8c6a76ad0a87",
+          "quote": "际化布局 主讲人：好心情 779人 2026-09-28 领先的精神心理数字医疗服务企业好心情（Good Mood）宣布完成新一轮近3亿元人民币融资。本轮投资方包括爱美客集团、中信建投资本、无锡滨湖产业集团、山东发展、Unifuture Capital等。 此前，好心情已经完成六轮融资，投资方包括字节跳动、中信医疗基金、恩华药业、复星健康、通和毓承、KIP等二十余家机构。本轮融资完成后，其股东阵容进一步扩展至近三十家机构与企业，覆盖科技、医疗健康、专业投资及地方产业资本等不同类型。 据了解，本轮融资将主要用于AI产品研发与应用、精神心理健康服务体系建设以及国际业务拓展。 从业务布局来看，好心情目前已不再局限于单一的心理",
+          "quote_hash": "8d5116a4ef1fce81013b72a8ee6798c90df6e3194cc42a7caebf880719e1630f"
+        },
+        {
+          "source_id": "wuxi-scope",
+          "source_url": "https://wuxicredit.wuxi.gov.cn/doc/2024/10/11/4407355.shtml",
+          "source_title": "信用无锡",
+          "source_content_hash": "9e6da9bde35156cba62e817cfbfa3a609e0c3096b94613d1e98e2758cd1605db",
+          "quote": "革正式实施，滨湖产业集团组建成立，按照深化、优化、专业化、市场化的要求推进国企改革，以成为&ldquo;领先的产业投资发展服务商&rdquo;为目标，锚定产业投资、园区开发、招商运营、人才安居、金融服务等行业领域，加速推进&ldquo;科技+金融+产业&rdquo;融合发展，公司经营发展和重点工作有力有序推进。 金融创投有效赋能。聚焦产业科技前沿和关键领域，着力强化基金赋能，促进创新链、产业链、资金链深度融合。今年以来，完成惠然科技等5个投资项目交割；新增滨湖锡创健康产业基金和锡创聚力基金市场化合作基金2支；参股设立的市场化合作基金完成返投项目5个。 产业园区加速布局。着力推进园区载体建设，滨湖复星人形机器人产业园由产业集团",
+          "quote_hash": "a2d871e187c2af00bebf641ab9e85efec7cbb39b2cc985e709a68b0b9853494f"
+        },
         {
           "source_id": "FISRC-fd10d8d231daf83d",
           "source_url": "https://caifuhao.eastmoney.com/news/20260930080532421516720",
@@ -161,7 +216,7 @@
           "quote_hash": "4c78d8de1b18274ce3ee3373bea795e0815c1dce5530d772881b1b4f98d5d9b0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

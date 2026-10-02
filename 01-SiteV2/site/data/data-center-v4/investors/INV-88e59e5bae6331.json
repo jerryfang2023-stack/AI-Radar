@@ -140,10 +140,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "AT&T Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "AT&T Ventures 官网称其以早期投资支持连接、物联网、人工智能等技术创新，投资阶段主要从 Seed 到 Series B。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": "Seed 至 Series B",
+          "source_id": "att_ventures"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示领域",
+          "value": [
+            "连接技术",
+            "物联网",
+            "人工智能",
+            "网络与边缘计算",
+            "机器人与物理 AI",
+            "网络安全与量子技术"
+          ],
+          "source_id": "att_verticals"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +170,40 @@
           "source_id": "FISRC-cf8b38a998770223"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "AT&T Ventures 官网",
+          "url": "https://about.att.com/pages/ventures",
+          "source_id": "att_ventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "att_ventures",
+          "source_url": "https://about.att.com/pages/ventures",
+          "source_title": "AT&amp;T Ventures: Supporting and Funding Tech Start Ups",
+          "source_content_hash": "a11668933df329fdcd4588df27b5defd725579605ee009c8f2a4fb964256315f",
+          "quote": "early-stage investments primarily ranging from Seed funding up to Series B stage companies.",
+          "quote_hash": "2f3d1788bcaa2c823cd09f7bcc4cb09fd525443295e0ae0eeea8339737fe20a1"
+        },
+        {
+          "source_id": "att_focus",
+          "source_url": "https://about.att.com/pages/ventures",
+          "source_title": "AT&amp;T Ventures: Supporting and Funding Tech Start Ups",
+          "source_content_hash": "a11668933df329fdcd4588df27b5defd725579605ee009c8f2a4fb964256315f",
+          "quote": "AT&T Ventures invests in companies that drive innovation in connectivity, IoT, artificial intelligence and more.",
+          "quote_hash": "4ddf2a7e08d3323870ff386edb1fbe08b1693fb3fa97c9722e3e427ebda8af8c"
+        },
+        {
+          "source_id": "att_verticals",
+          "source_url": "https://about.att.com/pages/ventures",
+          "source_title": "AT&amp;T Ventures: Supporting and Funding Tech Start Ups",
+          "source_content_hash": "a11668933df329fdcd4588df27b5defd725579605ee009c8f2a4fb964256315f",
+          "quote": "AT&T Ventures is committed to working with startups and entrepreneurs across several technology verticals including: Network and edge computing-related technologies Connected infrastructure and IOT Consumer solutions Robotics & physical AI Cybersecurity & quantum Data & AI",
+          "quote_hash": "ec3a58708f025d90c05025ea4320c94e4e71d3bb140720e5c856339a698c0941"
+        },
         {
           "source_id": "FISRC-cf8b38a998770223",
           "source_url": "https://www.reco.ai/blog/reco-raises-55-million-in-additional-funding-with-participation-from-at-t-ventures",
@@ -162,7 +213,8 @@
           "quote_hash": "554d3a59efd37ed0c373595b90ce948f55347429828fda4d8d000cb25af14dc2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

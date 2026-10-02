@@ -139,12 +139,49 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alexandria Venture Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Alexandria Venture Investments 是 Alexandria Real Estate Equities, Inc. 的战略风险投资平台。该公司新闻稿称平台自1996年起投资生命科学、农业食品科技、气候与技术企业；截至2021年底，众多组合公司的已实现和未实现回报超过10倍（公司自述）。2026年BigHat Biosciences公告将其列为Series C现有投资方之一。",
+      "facts": [
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "Alexandria Real Estate Equities, Inc. 的战略风险投资平台",
+          "source_id": "alexandria_platform"
+        },
+        {
+          "field": "inception_year",
+          "label": "平台创立年份",
+          "value": "1996",
+          "source_id": "alexandria_background"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资领域",
+          "value": [
+            "生命科学",
+            "农业食品科技",
+            "气候变化",
+            "科技"
+          ],
+          "source_id": "alexandria_background"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1996",
+          "description": "公司资料称平台自1996年起开展战略投资。",
+          "source_id": "alexandria_background"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Alexandria官方投资者关系新闻稿称，截至2021年12月31日，众多组合公司的已实现和未实现回报超过10倍；这是公司披露口径，并非当前基金整体净回报。",
+          "source_id": "alexandria_returns"
+        },
+        {
+          "description": "BigHat Biosciences于2026年9月24日发布的Series C融资公告将Alexandria Venture Investments列为现有投资方之一。",
+          "source_id": "bighat_series_c"
+        },
         {
           "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3372eff279ee29db"
@@ -152,6 +189,38 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "alexandria_platform",
+          "source_url": "https://investor.are.com/news-events-and-webcasts/news/news-details/2022/Alexandria-Venture-Investments-Achieves-Fifth-Consecutive-Annual-1-Most-Active-Corporate-Investor-in-Biopharma/default.aspx",
+          "source_title": "Alexandria Venture Investments Achieves Fifth Consecutive Annual #1 Most Active Corporate Investor in Biopharma",
+          "source_content_hash": "d83a74922a0402ad0ce6f10d320011e9cc1bfd552efa8e52a6b90d86d2859941",
+          "quote": "Alexandria Venture Investments, the strategic venture capital platform of Alexandria Real Estate Equities, Inc.",
+          "quote_hash": "04baf8eb3b583ce97bbfa28c6f683292b84a370e6316ed2b3b54f38c03f6f5a2"
+        },
+        {
+          "source_id": "alexandria_background",
+          "source_url": "https://investor.are.com/news-events-and-webcasts/news/news-details/2022/Alexandria-Venture-Investments-Achieves-Fifth-Consecutive-Annual-1-Most-Active-Corporate-Investor-in-Biopharma/default.aspx",
+          "source_title": "Alexandria Venture Investments Achieves Fifth Consecutive Annual #1 Most Active Corporate Investor in Biopharma",
+          "source_content_hash": "d83a74922a0402ad0ce6f10d320011e9cc1bfd552efa8e52a6b90d86d2859941",
+          "quote": "Since its inception in 1996, Alexandria Venture Investments has strategically invested in disruptive life science, agrifoodtech, climate change and technology companies.",
+          "quote_hash": "25975bf45053d6b3877817fa687b6b12a67afa3c3c6f7b3d9491df3912b3abb6"
+        },
+        {
+          "source_id": "alexandria_returns",
+          "source_url": "https://investor.are.com/news-events-and-webcasts/news/news-details/2022/Alexandria-Venture-Investments-Achieves-Fifth-Consecutive-Annual-1-Most-Active-Corporate-Investor-in-Biopharma/default.aspx",
+          "source_title": "Alexandria Venture Investments Achieves Fifth Consecutive Annual #1 Most Active Corporate Investor in Biopharma",
+          "source_content_hash": "d83a74922a0402ad0ce6f10d320011e9cc1bfd552efa8e52a6b90d86d2859941",
+          "quote": "As of December 31, 2021, the platform's deep track record has enabled Alexandria Venture Investments to generate realized and unrealized returns in excess of 10x for numerous portfolio companies that are working across infectious diseases, neuroscience, oncology and next-generation medicines platforms.",
+          "quote_hash": "34f856d7b5d2cba538685f3b8e52dee8b2dce91968c6d687c832bed431eb060b"
+        },
+        {
+          "source_id": "bighat_series_c",
+          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+          "source_title": "BigHat Biosciences Announces $75 Million Series C Financing to Advance AI-Designed Therapeutics and Leading Agentic Data Platform for Rapid Protein Design",
+          "source_content_hash": "84685446ee4b2690d9ca7016de80b3f2451ffb0ed9b2e6f0344a42cda55f7330",
+          "quote": "The round was co-led by DFJ Growth & Premji Invest with participation from Catalio Capital Management, LG Technology Ventures, Sigmas Group, and existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+          "quote_hash": "d0ded9ffd694f2f7958a77648ed24e72c38017f5cc10640bc464fa695e64640e"
+        },
         {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
@@ -161,7 +230,8 @@
           "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

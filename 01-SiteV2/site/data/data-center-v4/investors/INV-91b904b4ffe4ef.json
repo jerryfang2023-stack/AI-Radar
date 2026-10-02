@@ -123,10 +123,43 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "UOB Venture Management 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "UOB Venture Management（UOBVM）是大华银行全资子公司。官网称其自 1992 年以来通过直接股权投资，为东南亚和大中华区非上市公司提供融资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网所列名称",
+          "value": "UOB Venture Management Private Limited",
+          "source_id": "uob_about"
+        },
+        {
+          "field": "parent_relationship",
+          "label": "官网所述母子公司关系",
+          "value": "United Overseas Bank Limited (UOB) 的全资子公司",
+          "source_id": "uob_about"
+        },
+        {
+          "field": "operating_since",
+          "label": "官网所述业务起始年份",
+          "value": "1992",
+          "source_id": "uob_about"
+        },
+        {
+          "field": "geography",
+          "label": "官网列示地域",
+          "value": [
+            "Southeast Asia",
+            "Greater China"
+          ],
+          "source_id": "uob_about"
+        },
+        {
+          "field": "investment_method",
+          "label": "官网所述投资方式",
+          "value": "direct equity investment",
+          "source_id": "uob_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +167,24 @@
           "source_id": "FISRC-6d1ff348d372728c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "UOB Venture Management",
+          "url": "https://www.uobvm.com.sg/en/about-us/index.page",
+          "source_id": "uob_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "uob_about",
+          "source_url": "https://www.uobvm.com.sg/en/about-us/index.page",
+          "source_title": "About Us | UOB Venture Management",
+          "source_content_hash": "8450e88ff19207ba59237139e449898876177b7a4b91238da92022bc320f3dbf",
+          "quote": "Since 1992, UOB Venture Management Private Limited (\"UOBVM\"), a wholly owned subsidiary of United Overseas Bank Limited (\"UOB\"), has been providing financing to privately-held companies in Southeast Asia and Greater China, through direct equity investment.",
+          "quote_hash": "4429fbc035063836fd8cde3e1a20d52776f8616bec44a125e51c932dfac56012"
+        },
         {
           "source_id": "FISRC-6d1ff348d372728c",
           "source_url": "https://pixverse.ai/en/blog/pixverse-joins-global-ai-unicorns-asia-largest-funding-ai-video",
@@ -145,7 +194,8 @@
           "quote_hash": "6e69a63fe64f947335fec080603c5175d7449159fd66a7eca4054cdad34aeb09"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

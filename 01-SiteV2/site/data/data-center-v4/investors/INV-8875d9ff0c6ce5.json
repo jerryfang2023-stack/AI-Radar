@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Felicis Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "阶段占比为官网于核验日展示的表述，未将其当作按年度统计或完整投资组合的口径。",
+      "summary": "Felicis 官网介绍其投资早期创业公司，并称其投资中 94% 为 Seed 或 Series A；官网时间线显示首支 FV I 基金于 2006 年。",
+      "facts": [
+        {
+          "field": "founding_year",
+          "label": "官网时间线所列首支基金年份",
+          "value": "2006",
+          "source_id": "felicis_timeline"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网当前列示阶段分布",
+          "value": "官网称其投资的 94% 为 Seed 或 Series A",
+          "source_id": "felicis_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,32 @@
           "source_id": "FISRC-7faa441242e94444"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Felicis 官网",
+          "url": "https://www.felicis.com/about",
+          "source_id": "felicis_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "felicis_about",
+          "source_url": "https://www.felicis.com/about",
+          "source_title": "About | Felicis",
+          "source_content_hash": "0fb4a9e1addbabbb7d291c2a6eb44f5d7aeddbe08ef97e9f88c6dbea0ed9967c",
+          "quote": "94% of our investments are Seed or Series A.",
+          "quote_hash": "91553da5121c24641efefb80656e0c8b16b6d12662768d80291108840fdf12a9"
+        },
+        {
+          "source_id": "felicis_timeline",
+          "source_url": "https://www.felicis.com/about",
+          "source_title": "About | Felicis",
+          "source_content_hash": "0fb4a9e1addbabbb7d291c2a6eb44f5d7aeddbe08ef97e9f88c6dbea0ed9967c",
+          "quote": "2006 $4M FV I fund First investor in Y Combinator 2010 2010 $41M FV II fund First institutional Shopify Series A 2012 2012 May $71M FV III fund Pledge to always vote with founders.",
+          "quote_hash": "9b74dde942ee5a59f36f9a9c71070bf4aa62f45c021452669b738e48af51e22f"
+        },
         {
           "source_id": "FISRC-7faa441242e94444",
           "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
@@ -161,7 +198,7 @@
           "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

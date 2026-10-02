@@ -123,19 +123,76 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "UpHonest Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "UpHonest Capital官网列出Wei GUO为Founding Partner、Jane DU为Managing Partner，并公布Palo Alto办公地址和BP联系邮箱。其官网组合详情页列出The EVERY Company，记载创始人Arturo Elizondo及投资年份2015；该单项不代表完整组合。",
+      "facts": [
+        {
+          "field": "leadership",
+          "label": "官网列示的管理团队",
+          "value": [
+            "Wei GUO（Founding Partner）",
+            "Jane DU（Managing Partner）"
+          ],
+          "source_id": "uphonest_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "UpHonest Capital官网组合详情页将The EVERY Company列为组合项目，页面标注创始人Arturo Elizondo、投资年份2015；作为选列案例，不代表完整组合。",
+          "source_id": "uphonest_every"
+        },
         {
           "description": "融资来源记录：Cerebras Systems · 历史轮次未披露 · Series C 参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2c01dfb7ebd1357c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网团队与联系页",
+          "value": "https://www.uphonestcapital.com/team",
+          "url": "https://www.uphonestcapital.com/team",
+          "source_id": "uphonest_contacts"
+        },
+        {
+          "kind": "email",
+          "label": "商业计划书联系邮箱（BP）",
+          "value": "info@uphonest.capital",
+          "source_id": "uphonest_contacts"
+        },
+        {
+          "kind": "address",
+          "label": "Silicon Valley办公地址",
+          "value": "555 Hamilton Avenue, Suite 100, Palo Alto, CA 94301",
+          "source_id": "uphonest_contacts"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "uphonest_team",
+          "source_url": "https://www.uphonestcapital.com/team",
+          "source_title": "Team | UpHonest Capital",
+          "source_content_hash": "c5679d88d625ea915365e08ac856f54682838ea795d070ea95eb386554324be3",
+          "quote": "Wei GUO Founding Partner Jane DU Managing Partner",
+          "quote_hash": "53ae5bab5ef1c23551b7577030f3f21aa292b1114522ff01b0321e1de3b274cd"
+        },
+        {
+          "source_id": "uphonest_contacts",
+          "source_url": "https://www.uphonestcapital.com/team",
+          "source_title": "Team | UpHonest Capital",
+          "source_content_hash": "c5679d88d625ea915365e08ac856f54682838ea795d070ea95eb386554324be3",
+          "quote": "Contact Silicon Valley 555 Hamilton Avenue, Suite 100, Palo Alto, CA 94301 BP: info@uphonest.capital LP: investor@uphonest.capital",
+          "quote_hash": "94208021682e2926475680f8c63192f2f5b65c18bd6820c3f7e9a7f0875be0bb"
+        },
+        {
+          "source_id": "uphonest_every",
+          "source_url": "https://www.uphonestcapital.com/portfolios/the-every-company",
+          "source_title": "The EVERY Company | UpHonest Capital",
+          "source_content_hash": "e14baef016939d180f2e9b93caae38c11040b9c19f3235b34f0affc39aac068a",
+          "quote": "The EVERY Company makes real animal protein without the use of a single animal, starting with chicken-less egg proteins. Founder Arturo Elizondo Invested in 2015 Others",
+          "quote_hash": "126ab08e23423c9f0a15efc4e49fe1805b36c5973f4035f5ae3fa4c06711aed8"
+        },
         {
           "source_id": "FISRC-2c01dfb7ebd1357c",
           "source_url": "https://startupintros.com/orgs/cerebras-systems",
@@ -145,7 +202,8 @@
           "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

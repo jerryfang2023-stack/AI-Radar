@@ -139,29 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "359 Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构信息引用官网；Fish Audio 融资关系引用 TechCrunch 报道，属于媒体二手披露。",
+      "summary": "359 Capital 官网称其管理资产规模为 $300M，投资 Seed 至 Series C 的消费与消费相关企业，重点领域包括新一代媒体、数字商业、游戏、社交和 AI 应用。TechCrunch 报道将其列为 Fish Audio $52M 种子轮参投方之一。",
+      "facts": [
         {
-          "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "官网披露管理资产规模为 $300M。",
+          "source_id": "359_profile"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "官网称投资 Seed 至 Series C。",
+          "source_id": "359_profile"
+        },
+        {
+          "field": "focus",
+          "label": "投资领域",
+          "value": "官网列出新一代媒体、数字商业、游戏、社交、AI 应用、Prosumer 工具和 Wellness。",
+          "source_id": "359_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "TechCrunch 报道将 359 Capital 列为 Fish Audio 种子轮参投方之一。",
           "source_id": "FISRC-e06e94375ec64ac4"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "TechCrunch 报道称 359 Capital 参与 Fish Audio 的 $52M 种子轮融资；该信息为媒体披露。",
+          "source_id": "FISRC-e06e94375ec64ac4"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.359capital.com/",
+          "source_id": "359_profile",
+          "url": "https://www.359capital.com/"
+        }
+      ],
       "sources": [
         {
+          "source_id": "359_profile",
+          "source_url": "https://www.359capital.com/",
+          "source_title": "Helping Founders do the Impossible | 359 Capital",
+          "source_content_hash": "69754819c7819eca11f9db8caad3497683256f5718a49fcaae4dd78bb2882826",
+          "quote": "With $300M under management, we back Seed to Series C consumer and consumer adjacent companies.",
+          "quote_hash": "5c3cd69847149d52ac2d20b1d70d34cef7aa31e6cb3330d5f67c5b4fd5cfc24c"
+        },
+        {
           "source_id": "FISRC-e06e94375ec64ac4",
-          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
-          "source_title": "Fish Audio 融资 5200 万美元种子轮，为创作者和企业构建 AI 语音模型",
-          "source_content_hash": "a41c14ab44af8ba104136f93550190aef8e472c0b80b5d27cb60215833dc0035",
+          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/",
+          "source_title": "Fish Audio raises $52M seed to build AI voice models for creators and enterprises | TechCrunch",
+          "source_content_hash": "32012af370b5a4cdcc8decfab2ec3a88654370477e106f8c104f73a1ddf6af4e",
           "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
           "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

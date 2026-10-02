@@ -140,29 +140,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Matrix Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段及组合信息引用机构官网；Suno D 轮投资关系仅有二手数据库来源，未作一手确认。",
+      "summary": "Matrix 官网称其投资从创意阶段到 A 轮。Suno 2026 年 D 轮的参投信息目前仅由 Multiples 第三方数据库列示，按二手披露标注。",
+      "facts": [
         {
-          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其投资从创意阶段到 A 轮。",
+          "source_id": "matrix_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资披露",
+          "value": "Multiples 数据库将 Matrix Partners 列入 Suno 的 D 轮投资者记录；该轮信息为二手披露。",
           "source_id": "FISRC-92bdc04603fa5ff2"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Multiples 数据库列出 Matrix Partners 为 Suno 的 D 轮投资者之一；该信息未经 Suno 官方公告单独核实。",
+          "source_id": "FISRC-92bdc04603fa5ff2"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://matrix.vc/",
+          "source_id": "matrix_profile",
+          "url": "https://matrix.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "matrix_profile",
+          "source_url": "https://matrix.vc/",
+          "source_title": "Matrix",
+          "source_content_hash": "bb6e7adcab6ef618b0d24c71cab133573f9f59c45bad8ec4ce2712281d034368",
+          "quote": "t About Team Portfolio Contact We engage early, wear well, and are steady. Matrix is an early-stage venture capital firm, investing from idea through Series A. As a close-knit team of former founders and company builders, we&#x27;ve partnered with companies from Apple and FedEx to Oculus and Canva. We&#x27;re contrarians who inv",
+          "quote_hash": "e2634679e2dc6e15cbb018334e0022ee2e59212ee518c8520a6c6166aa006e2c"
+        },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
           "source_url": "https://multiples.vc/private-comps/suno",
-          "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
-          "source_content_hash": "410c3c737fbffa4a",
-          "quote": "The $400M round was led by Bond, with participation from Menlo Ventures, IVP, Union Square Ventures, Matrix Partners, Forerunner and 4 other investors.",
-          "quote_hash": "196e46702a08074a6cce528df96b2b092f0193b570c0e9db51c7fc50718fa471"
+          "source_title": "Suno Revenue, Valuation, Funding &amp; Investors | Multiples",
+          "source_content_hash": "c64c02febd96b49bf374e45e51870f05fe6936e47dc7924c2cb6c60ac9b92eb6",
+          "quote": "300M Series D · Jun 2026 Key investors in Suno Lightspeed Venture Partners Matrix Partners Menlo Ventures Union Square Ventures Founder Collective IVP Jump to Section Overview Valuation Revenue Funding history Investors Acquisitions Competitors Public comps FAQ about Suno Sign up to see the full Sun",
+          "quote_hash": "4fc2a3d7373f1f2319321f4fc529bd8dd98df7b09787c2e8f2c85caf425b1224"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

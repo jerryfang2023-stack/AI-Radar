@@ -124,19 +124,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "boldstart ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "boldstart 官网描述其为技术创始人的早期首轮投资方；官方公司目录列出的是精选组合，并非完整组合或回报清单。",
+      "summary": "boldstart ventures 是面向技术创始人的早期投资机构，官网称其自2010年以来进行首轮投资，并展示网络安全、AI基础设施、Physical AI 和智能体等主题。官网精选组合页列有 Snyk 等公司。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "面向技术创始人的首轮投资；官网称这一定位自2010年以来持续。",
+          "source_id": "PFSRC-INV-a729b4fae85721-approach"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网展示的主题",
+          "value": "网络安全、AI基础设施、Physical AI 和智能体。",
+          "source_id": "PFSRC-INV-a729b4fae85721-focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "boldstart 官网精选组合页列出 Snyk，并标注其自2015年起获得支持。该页面为精选组合展示。",
+          "source_id": "PFSRC-INV-a729b4fae85721-companies"
+        },
         {
           "description": "融资来源记录：Reco · 历史轮次未披露 · B轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0d891f327f6f719c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "boldstart ventures 官网",
+          "value": "https://boldstart.vc/",
+          "url": "https://boldstart.vc/",
+          "source_id": "PFSRC-INV-a729b4fae85721-approach"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-a729b4fae85721-approach",
+          "source_url": "https://boldstart.vc/",
+          "source_title": "boldstart ventures | The Inception Fund",
+          "source_content_hash": "394708a4c8d6b2bae522dbe18339b3c2d5d2a82a0e35077faba68478eadea7de",
+          "quote": "First checks for technical founders since 2010.",
+          "quote_hash": "22b09ea59196c40ce4ffc0edbc3eb046eb7265e75b7476c64630a72a97529948"
+        },
+        {
+          "source_id": "PFSRC-INV-a729b4fae85721-focus",
+          "source_url": "https://boldstart.vc/",
+          "source_title": "boldstart ventures | The Inception Fund",
+          "source_content_hash": "394708a4c8d6b2bae522dbe18339b3c2d5d2a82a0e35077faba68478eadea7de",
+          "quote": "Cybersecurity AI Infra Physical AI Agents",
+          "quote_hash": "7fff76d6eda9f0eb51ccdf01d90e51b29227a795626471bf491d718227d29723"
+        },
+        {
+          "source_id": "PFSRC-INV-a729b4fae85721-companies",
+          "source_url": "https://boldstart.vc/companies-2/",
+          "source_title": "Companies - boldstart ventures",
+          "source_content_hash": "5c881d453f571ca1df75faa38f8012f73686ca41ece53f6faf2d1a33d5990e65",
+          "quote": "Snyk Developer-first security Backed since 2015",
+          "quote_hash": "23295fab762856951e985f73d56c6f2d44d206892d707620d88237706123cb21"
+        },
         {
           "source_id": "FISRC-0d891f327f6f719c",
           "source_url": "https://www.reco.ai/blog/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for-saas-ai-security-among-enterprises",
@@ -146,7 +195,7 @@
           "quote_hash": "ca211a78c722ca8c38527d41f26cb67e145dae43400db66839b441183ceae001"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

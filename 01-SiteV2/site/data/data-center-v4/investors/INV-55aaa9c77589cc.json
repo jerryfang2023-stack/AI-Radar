@@ -140,11 +140,15 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Point Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Tryp.com 官方融资公告称，其 €1.9M 融资由 Point Capital Partners 领投。本条只记录该公司披露的交易关联。",
+      "coverage_note": "仅归档 Tryp.com 公司官网对本轮领投方的披露；没有将名称近似的机构网站映射为 Point Capital Partners。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Tryp.com 官方公告称本轮由 Point Capital Partners 领投。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Traveltech Tryp.com · 轮次未披露 · 2026-09-30 · 本轮领投 · €1.9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ea432ae33551275b"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "activity",
+          "source_url": "https://www.tryp.com/en/blog/we-just-raised-19m-to-help-you-travel-more-for-less",
+          "source_title": "Tryp.com | We just raised €1.9M to help you travel more, for less",
+          "source_content_hash": "a2df1437c33c06679abd43ac216cd274623472276ebe51668cc1797999e3f841",
+          "quote": "Who&#x27;s joining the journey The round is led by Point Capital Partners , with Iberis Capital, who led our previous round and decided to back us again, and angel investors from the travel industry.",
+          "quote_hash": "a22278a5e169f3cf237b48785e265b7752a812ccd4bc2973233fe68b8ea25c0b"
+        },
         {
           "source_id": "FISRC-ea432ae33551275b",
           "source_url": "https://tech.eu/2026/09/30/from-six-engineering-students-to-10m-users-trypcom-raises-eur19m/",
@@ -161,7 +173,7 @@
           "quote_hash": "b2322fd58a6df261cc415512bc8de9573a9fee6dc2253ab25110db7e86a5d76e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

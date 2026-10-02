@@ -139,10 +139,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Upfront Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "候选引用来自 Upfront 官网公开摘录；仅记录其自述定位和地域连接，未推定基金阶段、规模或投资组合。",
+      "summary": "SEC/IAPD Form ADV 将 UPFRONT VENTURES MANAGEMENT, LLC 列为法律名称、UPFRONT VENTURES 列为主要业务名称，并列出 CRD 编号 175144。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "登记法律名称",
+          "value": "UPFRONT VENTURES MANAGEMENT, LLC",
+          "source_id": "upfront_legal"
+        },
+        {
+          "field": "primary_business_name",
+          "label": "主要业务名称",
+          "value": "UPFRONT VENTURES",
+          "source_id": "upfront_identity"
+        },
+        {
+          "field": "CRD_number",
+          "label": "CRD 编号",
+          "value": "175144",
+          "source_id": "upfront_identity"
+        },
+        {
+          "field": "SEC_file_number",
+          "label": "SEC 文件号",
+          "value": "801-122759",
+          "source_id": "upfront_registration"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +178,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "upfront_identity",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/175144/PDF/175144.pdf",
+          "source_title": "Form ADV | UPFRONT VENTURES MANAGEMENT, LLC | CRD 175144",
+          "source_content_hash": "4fab9360067eadcab65627885063de8a37df5422d5bea2f5cdb3aabed5acc244",
+          "quote": "Primary Business Name:UPFRONT VENTURES CRD Number: 175144",
+          "quote_hash": "7ee131929266900e3b002ce1d86ff98367720ff2c46f54f1f3aaf9c217fd2658"
+        },
+        {
+          "source_id": "upfront_legal",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/175144/PDF/175144.pdf",
+          "source_title": "Form ADV | UPFRONT VENTURES MANAGEMENT, LLC | CRD 175144",
+          "source_content_hash": "4fab9360067eadcab65627885063de8a37df5422d5bea2f5cdb3aabed5acc244",
+          "quote": "UPFRONT VENTURES MANAGEMENT, LLC",
+          "quote_hash": "a16066ea766157a198136cdb837d664458bf8342d6d0f2138adf4e29221c14d4"
+        },
+        {
+          "source_id": "upfront_registration",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/175144/PDF/175144.pdf",
+          "source_title": "Form ADV | UPFRONT VENTURES MANAGEMENT, LLC | CRD 175144",
+          "source_content_hash": "4fab9360067eadcab65627885063de8a37df5422d5bea2f5cdb3aabed5acc244",
+          "quote": "If you are registered with the SEC as an investment adviser, your SEC file number: 801-122759",
+          "quote_hash": "58b6c1aa7dbb85d20069453380f651c45c70c46204286181b5494721103e4634"
+        },
+        {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
           "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
@@ -161,7 +210,7 @@
           "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

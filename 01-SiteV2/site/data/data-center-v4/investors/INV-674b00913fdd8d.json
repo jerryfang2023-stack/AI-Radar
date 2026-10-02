@@ -181,13 +181,20 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vertex Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "Zenity 官方融资公告将 Vertex Ventures 列为现有投资者。Vertex Ventures 由多个区域独立基金组成；该公告未说明参与的具体区域基金，本档案不作分支归属推定。",
+      "facts": [
+        {
+          "field": "public_investment",
+          "label": "公开投资披露",
+          "value": "Zenity 官方公告将 Vertex Ventures 列为现有投资者，具体区域基金未披露。",
+          "source_id": "FISRC-7bf361b38b905ca3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Zenity 官方融资公告列出 Vertex Ventures 为现有投资者之一；公告未披露具体区域基金。",
           "source_id": "FISRC-7bf361b38b905ca3"
         },
         {
@@ -200,10 +207,10 @@
         {
           "source_id": "FISRC-7bf361b38b905ca3",
           "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
-          "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
-          "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
-          "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital",
-          "quote_hash": "3f04ae6390a8470ee7784d445965e2efd5568199fcb106ebc6ca971196da7664"
+          "source_title": "Zenity Raises $125 Million to Secure the Era of 1 Billion AI Agents",
+          "source_content_hash": "16db186cd8183b2a5071cc3d2563a05701f227c558b1884a28ffbc2803c86d25",
+          "quote": "2, Hitachi Ventures and LG Technology Ventures joined the round, alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital. \"We have followed Zenity&#x27;s journey for years and have been impressed by the team&#x27;s vision and execution. As enterprises rapidly adopt AI agents across c",
+          "quote_hash": "2eff8926799db0a54e4e9610aa7c9d21e1a66f027a2df00530ba888de5bd7986"
         },
         {
           "source_id": "FISRC-b8ac45c45da22b49",
@@ -214,7 +221,7 @@
           "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

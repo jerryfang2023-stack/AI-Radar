@@ -139,10 +139,41 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hana Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Hana Ventures 官网称其成立于 2018 年 10 月 4 日，由 Hana Financial Group 全资持有，并列出其主要投资领域。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示名称",
+          "value": "Hana Ventures Inc.",
+          "source_id": "hana_company"
+        },
+        {
+          "field": "establishment_date",
+          "label": "官网列示成立日期",
+          "value": "2018-10-04",
+          "source_id": "hana_company"
+        },
+        {
+          "field": "parent_relationship",
+          "label": "官网列示最大股东",
+          "value": "Hana Financial Group Inc.，持股 100%",
+          "source_id": "hana_company"
+        },
+        {
+          "field": "investment_areas",
+          "label": "官网列示主要投资领域",
+          "value": [
+            "互联网、移动与金融科技",
+            "生物科技与医疗",
+            "游戏与内容",
+            "软件与基础设施",
+            "硬件与工业",
+            "智能移动与航空航天"
+          ],
+          "source_id": "hana_areas"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +181,32 @@
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Hana Ventures",
+          "url": "https://www.hanaventures.co.kr/main/en/company/intro",
+          "source_id": "hana_company"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hana_company",
+          "source_url": "https://www.hanaventures.co.kr/main/en/company/intro",
+          "source_title": "Hana Ventures - Best Running Mate for Startups",
+          "source_content_hash": "320d9eb22460110612c8f2e1693e4b51942f76b1c2ff6a1a74c95cb1df24d453",
+          "quote": "Hana Ventures is a growth partner of startups. Current status Company Name Hana Ventures Inc. Establishment Date October 4th, 2018. CEO JaeHyeok Yang Largest Shareholder Hana Financial Group Inc. 100%",
+          "quote_hash": "812f0edad7181066065a901628e432825e9e4c979d4ca08da48bbbebcac091c2"
+        },
+        {
+          "source_id": "hana_areas",
+          "source_url": "https://www.hanaventures.co.kr/main/en/company/intro",
+          "source_title": "Hana Ventures - Best Running Mate for Startups",
+          "source_content_hash": "320d9eb22460110612c8f2e1693e4b51942f76b1c2ff6a1a74c95cb1df24d453",
+          "quote": "Major investment areas Internet, Mobile & Fintech Internet, mobile platforms and fintech industries Biotech & Healthcare Pharmaceuticals, medical appliances, digital healthcare industries Gaming & Contents Gaming, digital content entertainment industries Software & Infrastructure Software and cutting-edge technology industries Hardware & Industrial Hardware and materials, parts, equipment industries Smart Mobility & Aerospace Cutting edge charging, power, transportation, and aerospace industries",
+          "quote_hash": "b9cd2f3baafd04fed07e17ed01fac8602e5d9842e49a9d221480d516b670c113"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +216,8 @@
           "quote_hash": "635226e5bbc13dc2401a8d1b21681f6e106ffa66c6dbd898c4b733e9f4fc2dd6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -139,19 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Non Sibi Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Non Sibi Ventures 官网称其为早期风险投资机构，主要投资美国科技初创企业，方向包括工业技术、人工智能和可持续发展。TechCrunch 报道其领投 Satlyt 种子轮。",
+      "coverage_note": "非营利/机构简介来自 Non Sibi Ventures 官网；Satlyt 融资角色来自 TechCrunch 报道。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "早期风险投资",
+          "source_id": "nonsibi_official"
+        },
+        {
+          "field": "geography",
+          "label": "地域",
+          "value": "美国",
+          "source_id": "nonsibi_official"
+        },
+        {
+          "field": "sectors",
+          "label": "行业方向",
+          "value": [
+            "工业技术",
+            "人工智能",
+            "可持续发展"
+          ],
+          "source_id": "nonsibi_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道 Satlyt 种子轮由 Non Sibi Ventures 领投。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Satlyt · 种子轮 · 2026-10-01 · 本轮领投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a116d3c393215970"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.nonsibi.vc/",
+          "url": "https://www.nonsibi.vc/",
+          "source_id": "nonsibi_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nonsibi_official",
+          "source_url": "https://www.nonsibi.vc/",
+          "source_title": "non sibi ventures | vc",
+          "source_content_hash": "47348229b1f5fd24c5e341cc7865047fc4c2a13f7eb29a0a16d609e99a5af7a8",
+          "quote": "ORTFOLIO TEAM INSIGHTS SUBMIT Menu Close Empowering Founders beyond capital non sibi ventures is an early-stage venture capital firm that invests in category defining U.S.-based technology startups in sectors where we have domain expertise: industrial technologies, AI, and sustainability.",
+          "quote_hash": "0f19ddaa710698f87d20a9e3f5adbd64d527d8f1dcc0eec2e386e283a362423d"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
+          "source_title": "Satlyt, founded by a former Google and SpaceX product manager, raises $8M to run AI on satellites | TechCrunch",
+          "source_content_hash": "8873e69dcb5d8824dcc9774968838c8d5aaceeec4ca3269467340f8aa370f648",
+          "quote": "Satlyt’s seed round was led by Houston-based Non Sibi Ventures, where partner Bernard Harris, who served as a NASA astronaut for more than 20 years, helped ground the firm’s conviction in a novel, space-based business.",
+          "quote_hash": "7342bfcac8dda11f4dafa6eabfb4e126973cfa28913ac92fd7142859ace3dc5b"
+        },
         {
           "source_id": "FISRC-a116d3c393215970",
           "source_url": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
@@ -161,7 +212,7 @@
           "quote_hash": "ed342520f5c33ca8d0f3e0be234ae7a88e2715df57c8f35b3726ed269999ae04"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

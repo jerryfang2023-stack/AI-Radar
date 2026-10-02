@@ -139,11 +139,30 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Amgen Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Amgen 2004 年设立公告，只表述基金成立时的方向；未外推其当前规模、团队或投资条款。",
+      "summary": "Amgen 于 2004 年公告设立 Amgen Ventures，并将其描述为支持早期生物科技公司推进人类治疗方向发现的企业风险投资基金。此处记录的是设立时的定位，不代表当前基金规模或策略细节。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "公告所述基金类型",
+          "value": "企业风险投资基金",
+          "source_id": "amgen_2004"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公告所述方向",
+          "value": "早期生物科技公司及人类治疗",
+          "source_id": "amgen_2004"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2004-11-11",
+          "description": "Amgen 公告设立 Amgen Ventures。",
+          "source_id": "amgen_date"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -153,6 +172,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "amgen_2004",
+          "source_url": "https://www.amgen.com/newsroom/press-releases/2004/11/amgen-announces-the-formation-of-amgen-ventures-venture-capital-fund-designed-to-provide-resources-to-help-advance-earlystage-biotechnology-companies-and-human-therapeutics",
+          "source_title": "Amgen Announces the Formation of Amgen Ventures; Venture Capital Fund Designed to Provide Resources to Help Advance Early-Stage Biotechnology Companies and Human Therapeutics| Amgen",
+          "source_content_hash": "ca3ab616231cb6ab2b704a0e2961cad5de511e5c5777fee99be2669a52b32647",
+          "quote": "today announced the formation of Amgen Ventures, a corporate venture capital fund designed to provide emerging biotechnology companies with resources to develop pioneering discoveries focused on human therapeutics.",
+          "quote_hash": "a486aece0baabb7a99f44924a7d34d60c9049753ec5dcada1eaeaba4f0eab80a"
+        },
+        {
+          "source_id": "amgen_date",
+          "source_url": "https://www.amgen.com/newsroom/press-releases/2004/11/amgen-announces-the-formation-of-amgen-ventures-venture-capital-fund-designed-to-provide-resources-to-help-advance-earlystage-biotechnology-companies-and-human-therapeutics",
+          "source_title": "Amgen Announces the Formation of Amgen Ventures; Venture Capital Fund Designed to Provide Resources to Help Advance Early-Stage Biotechnology Companies and Human Therapeutics| Amgen",
+          "source_content_hash": "ca3ab616231cb6ab2b704a0e2961cad5de511e5c5777fee99be2669a52b32647",
+          "quote": "Nov. 11, 2004--Amgen Inc. (NASDAQ:AMGN), the world's largest biotechnology company, today announced the formation of Amgen Ventures, a corporate venture capital fund designed to provide emerging biotechnology companies with resources to develop pioneering discoveries focused on human therapeutics. Amgen Ventures reflects Amgen's commitment to helping patients through cutting-edge science and is an important component of Amgen's overall outreach strategy. Amgen Ventures can offer early stage companies access to Amge",
+          "quote_hash": "c66c7aa2c2295a6faadcfbaceba5c77645dca9f4142dc151d046c488c1d39a13"
+        },
+        {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
           "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
@@ -161,7 +196,7 @@
           "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

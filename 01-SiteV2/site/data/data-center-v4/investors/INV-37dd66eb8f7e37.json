@@ -155,23 +155,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Salt VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网和被投方公告整理；公开案例仅代表可追溯披露，不代表完整组合或投资业绩。",
+      "summary": "Salt VC 官网称其投资 pre-seed 和 seed 阶段，并面向具有长期潜力的创始人。Throne Science 官方博客将其列为一轮 Series A 参与方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其投资 pre-seed 和 seed 阶段。",
+          "source_id": "salt"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "Throne Science 官方博客将其列为 Series A 参与方。",
+          "source_id": "throne"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2c2bafaec002c33e"
+          "description": "参与 Throne Science 的 Series A；公司博客将 Will Ventures 列为领投方。",
+          "source_id": "throne"
         },
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2a587e714925b882"
+          "source_id": "FISRC-2c2bafaec002c33e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.salt.vc/",
+          "source_id": "salt",
+          "url": "https://www.salt.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "salt",
+          "source_url": "https://www.salt.vc/",
+          "source_title": "Salt VC — With you from day one",
+          "source_content_hash": "dd50b380ce94db5a0f9d900a89eb8db2b281bfdf44354eef3eab47a411310f37",
+          "quote": "Salt VC — With you from day one Skip to main content Portfolio Team Get in touch With you, from day one. We back pre-seed and seed rounds for generational founders — often before the round, the deck, or the company exists. Why Salt? Througho",
+          "quote_hash": "a7a23c2a86bdf5d184f8f90aa928194cfc2c425119a7fb15354861511571150c"
+        },
+        {
+          "source_id": "throne",
+          "source_url": "https://thronescience.com/blogs/signals/throne-raised-10-million-heres-what-its-for",
+          "source_title": "Throne Raised $10 Million. Here&#39;s What It&#39;s For &ndash; Throne Science",
+          "source_content_hash": "4fb68fdd53b571e0dd3981b821b3e879f7d3052e280d07837bf012800813ef29",
+          "quote": "Today we're thrilled to announce a $10 million Series A, led by Will Ventures, with Workshop, Emerson Collective, Accomplice, Moxxie, Salt VC, LEAD VC, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger participating.",
+          "quote_hash": "e3722ecc019e1f1b6c2b2dd1e5b45b0882e0a9c384e79e11872ce47e7d19568a"
+        },
         {
           "source_id": "FISRC-2c2bafaec002c33e",
           "source_url": "https://news.crunchbase.com/health-wellness-biotech/throne-science-microbiome-gut-health-toilet-camera-startup-john-capodilupo-whoop/",
@@ -189,7 +226,7 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

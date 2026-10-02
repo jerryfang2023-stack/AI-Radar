@@ -139,19 +139,81 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SV Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "SV Investment 官网列示其截至 2025 年 12 月 31 日的管理规模、毛 IRR、上市组合企业数及累计投资数。LinqAlpha 官方融资公告将 SV Investment 列为投资方。",
+      "facts": [
+        {
+          "field": "reported_metrics_as_of_2025_12_31",
+          "label": "官网披露指标（截至2025-12-31）",
+          "value": "AUM 19,346亿韩元；Gross IRR 23.6%；上市企业65家；累计投资344起",
+          "source_id": "sv_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "LinqAlpha 官方公告将 SV Investment 列为其融资投资方。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：LinqAlpha · A轮 · 2026-07-02 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.svinvest.com/",
+          "url": "https://www.svinvest.com/",
+          "source_id": "sv_official"
+        },
+        {
+          "kind": "email",
+          "label": "一般联系邮箱",
+          "value": "master@svinvest.com",
+          "source_id": "sv_email"
+        },
+        {
+          "kind": "phone",
+          "label": "联系电话",
+          "value": "02-3775-1020",
+          "source_id": "sv_contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sv_official",
+          "source_url": "https://www.svinvest.com/",
+          "source_title": "SV Investment",
+          "source_content_hash": "b7cc213a5a7a70ec08bd07b799b6a136449b66b52362e38ed7c68a95cf9548ef",
+          "quote": "*2025.12.31 기준 AUM 19346 억원 Gross IRR 23.6 % 상장기업 65 개 기업 투자기업 344 건 취소 확인 Meet Our SV인베스트먼트는 혁신 기업을 발굴하고 지원하여 글로벌 유니콘으로 함께 성장합니다.",
+          "quote_hash": "40aab704093e38726ee53c640ca313ae53ce79d09d3b25331b3fc52096e782b7"
+        },
+        {
+          "source_id": "sv_contact",
+          "source_url": "https://www.svinvest.com/",
+          "source_title": "SV Investment",
+          "source_content_hash": "b7cc213a5a7a70ec08bd07b799b6a136449b66b52362e38ed7c68a95cf9548ef",
+          "quote": "People Portfolio News SV인베스트먼트 주식회사 T. 02-3775-1020 F.",
+          "quote_hash": "3ac0827ea55e745b8b9453bd4cde5839d0f6c4cecf94982153f11260214f08a5"
+        },
+        {
+          "source_id": "sv_email",
+          "source_url": "https://www.svinvest.com/",
+          "source_title": "SV Investment",
+          "source_content_hash": "b7cc213a5a7a70ec08bd07b799b6a136449b66b52362e38ed7c68a95cf9548ef",
+          "quote": "02-3775-1021 E. master@svinvest.com 대표: 박성호, 홍원호 주소: 서울 영등포구 국제금융로 10 (여의도동, 국제금융센터) Three IFC 46층 ⓒ2023 SV INVESTMENT.",
+          "quote_hash": "d61bdaf2adeadddea6f5a1d22777a3a87fb6436e7513e64c497050f34496a17f"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
+          "source_title": "LinqAlpha Raises $22 Million to Build the Alpha Intelligence Layer for Global Public Markets",
+          "source_content_hash": "46fd8dc306376be8e4765c9865106bc3d748a05dea9b73c47ea7725b4da561f7",
+          "quote": "Betatron Venture Group, East Ventures, and SV Investment across Southeast Asia and Hong Kong SAR ;",
+          "quote_hash": "ea94050d307866bb2f462e489aaa51fc709b07c5365b706a9fcf057ac00e8394"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +223,8 @@
           "quote_hash": "707c0113f23e4bdf09d6ec28dbaf84392bddeb95729bb1a6188870dec5362809"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -139,10 +139,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Third Point Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Third Point Ventures 官网称其以长期关系支持创始人，并将投资覆盖企业生命周期各阶段；官网列示其在私人公司投资方面拥有 20 多年经验。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段覆盖",
+          "value": "企业生命周期各阶段",
+          "source_id": "thirdpoint_lifecycle"
+        },
+        {
+          "field": "experience",
+          "label": "官网列示投资经验",
+          "value": "20+ years in private company investment",
+          "source_id": "thirdpoint_home"
+        },
+        {
+          "field": "support_approach",
+          "label": "官网列示支持方式",
+          "value": [
+            "指导",
+            "辅导",
+            "连接资源"
+          ],
+          "source_id": "thirdpoint_support"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +172,40 @@
           "source_id": "FISRC-7bf361b38b905ca3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Third Point Ventures",
+          "url": "https://www.thirdpointventures.com/home/",
+          "source_id": "thirdpoint_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "thirdpoint_home",
+          "source_url": "https://www.thirdpointventures.com/home/",
+          "source_title": "Third Point Ventures | Home - Third Point Ventures",
+          "source_content_hash": "ccd96402238ac2372e1d0b8ce0782b8688efa448f533210dcdc50e801d3fe72e",
+          "quote": "Putting two decades worth of successful private company investment into every decision.",
+          "quote_hash": "e5ddaf92c9256ab4e399c197f03386fb5208c0f0ac261d5dddcf59195c2866fd"
+        },
+        {
+          "source_id": "thirdpoint_lifecycle",
+          "source_url": "https://www.thirdpointventures.com/home/",
+          "source_title": "Third Point Ventures | Home - Third Point Ventures",
+          "source_content_hash": "ccd96402238ac2372e1d0b8ce0782b8688efa448f533210dcdc50e801d3fe72e",
+          "quote": "Full Corporate Lifecycle Bringing comprehensive investment strategies to every stage of the corporate lifecycle .",
+          "quote_hash": "606a27cba55d48322518e33eeca37b586c13d6a3dc47b8bf336d5b14b4555b3b"
+        },
+        {
+          "source_id": "thirdpoint_support",
+          "source_url": "https://www.thirdpointventures.com/home/",
+          "source_title": "Third Point Ventures | Home - Third Point Ventures",
+          "source_content_hash": "ccd96402238ac2372e1d0b8ce0782b8688efa448f533210dcdc50e801d3fe72e",
+          "quote": "We do more than invest. We guide, coach, and connect our companies so they can get down to the business of making a difference.",
+          "quote_hash": "880ae7831b9958965076e75b1ea5efcc2b30a64c15735e45e8546b62c835cdfe"
+        },
         {
           "source_id": "FISRC-7bf361b38b905ca3",
           "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
@@ -161,7 +215,8 @@
           "quote_hash": "3f04ae6390a8470ee7784d445965e2efd5568199fcb106ebc6ca971196da7664"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

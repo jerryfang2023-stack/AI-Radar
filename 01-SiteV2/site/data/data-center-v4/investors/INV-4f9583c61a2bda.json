@@ -139,19 +139,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kaszek Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Kaszek 官网称其由科技创业者组成，面向拉丁美洲与创业者合作，并提供资本及战略、运营、团队建设和增长方面的支持。Lovable 官方公告将 Kaszek Ventures 列为 C 轮投资方。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "主要地域",
+          "value": "拉丁美洲",
+          "source_id": "kaszek_official"
+        },
+        {
+          "field": "founder_support",
+          "label": "创业支持",
+          "value": "提供资本以及战略、运营、团队建设和增长方面的经验",
+          "source_id": "kaszek_services"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Lovable 官方融资公告将 Kaszek Ventures 列为 C 轮投资方。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Lovable · C轮 · 2026-08-12 · 本轮参投 · $400 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-94676d99b2defaa4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://kaszek.com/",
+          "url": "https://kaszek.com/",
+          "source_id": "kaszek_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kaszek_official",
+          "source_url": "https://kaszek.com/",
+          "source_title": "Kaszek - Entrepreneurial Capital in Latin America",
+          "source_content_hash": "8ee90f9e02159154e9bc4b69712c943f6106898962fd6dc2c371c3a3653c61af",
+          "quote": "uch Ethos Companies People Jobs Get in touch Entrepreneurial capital Amazon Rainforest, Brazil 23°C We are tech entrepreneurs partnering with the most extraordinary founders in Latin America.",
+          "quote_hash": "fffab756d055de96967898c196d89c11d537a0fad920ea5de59920ae74bd2baf"
+        },
+        {
+          "source_id": "kaszek_services",
+          "source_url": "https://kaszek.com/",
+          "source_title": "Kaszek - Entrepreneurial Capital in Latin America",
+          "source_content_hash": "8ee90f9e02159154e9bc4b69712c943f6106898962fd6dc2c371c3a3653c61af",
+          "quote": "In addition to capital, we provide first-hand expertise and insights in strategy, operational execution, team-building, growth, technology, product development, networking, fundraising and more.",
+          "quote_hash": "f1e3a8095613b612f459991beb90b687911a1db673446250c61864af7259f77f"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://lovable.dev/blog/series-c",
+          "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+          "source_content_hash": "b6e6a851334a228e21e33195defcc033393ccc72089fe9fb5e43e97a3fc1aa59",
+          "quote": "The round also welcomes Balderton Capital and Carmignac from Europe, Kaszek Ventures and LTS Growth from Latin America, Tencent and World Innovation Lab from Asia, and Regent from the United States, broadening the group of investors backing Lovable’s global ambition.",
+          "quote_hash": "490b56867fe1a26c3b35a54399926396e9cce94ff91d7e0e3a9d331c4d272486"
+        },
         {
           "source_id": "FISRC-94676d99b2defaa4",
           "source_url": "https://lovable.dev/blog/series-c",
@@ -161,7 +209,8 @@
           "quote_hash": "65256cbe24e687fbe64f7aa04cbc338e3a8d1fa61cb2828e035537449817738e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

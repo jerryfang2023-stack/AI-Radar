@@ -139,19 +139,80 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DisrupTech Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网描述其支持非洲科技创业者，并公布 Sinai.ai 融资新闻。首页组合统计同时出现26和0两组动态数字，因此未录入组合总数；仅保留可对应原文的项目及联系方式信息。",
+      "summary": "DisrupTech Ventures 是面向非洲科技创业者的投资机构。官网于2026年4月发布消息称其与 KAUST Innovation Ventures 共同领投 Sinai.ai 的145万美元 pre-seed 融资，并公布其埃及 Giza 办公地址及联系方式。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的组合定位",
+          "value": "支持非洲科技创业者将创新想法转化为实际业务。",
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-thesis"
+        },
+        {
+          "field": "location",
+          "label": "官网列示的办公地址",
+          "value": "Capital Business Park, B3, 4th Floor, Sheikh Zayed, Giza, Egypt。",
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-contact"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网2026年4月21日新闻称，DisrupTech Ventures 与 KAUST Innovation Ventures 共同领投 Sinai.ai 的145万美元 pre-seed 融资。",
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-sinai"
+        },
         {
           "description": "融资来源记录：Sinai.ai · 预种子轮 · 2026-04-21 · 本轮领投 · USD 1.45 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9e1446cb9cb3e95e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "DisrupTech Ventures 官网",
+          "value": "https://www.disruptechventures.com/",
+          "url": "https://www.disruptechventures.com/",
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-thesis"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "info@disruptechegypt.com",
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-contact"
+        },
+        {
+          "kind": "phone",
+          "label": "官网公开电话",
+          "value": "++20 2 3790 2227",
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-thesis",
+          "source_url": "https://www.disruptechventures.com/",
+          "source_title": "DisrupTech Ventures",
+          "source_content_hash": "9b87119352d3d819adb1d0bff6b663a77314e1bfffd4ca4b413d494fffd13d98",
+          "quote": "Our growing portfolio boasts Africa’s most daring tech entrepreneurs, turning their disruptive visions into reality with impact at the core and execution excellence at the forefront.",
+          "quote_hash": "c89f0b70994fd955e29703e297c558cdb73d97e28dc21f8b38bda3f4979f0f3c"
+        },
+        {
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-sinai",
+          "source_url": "https://www.disruptechventures.com/",
+          "source_title": "DisrupTech Ventures",
+          "source_content_hash": "9b87119352d3d819adb1d0bff6b663a77314e1bfffd4ca4b413d494fffd13d98",
+          "quote": "April 21, 2026 – Sinai.ai, an AI-native reading platform, has raised $1.45M in pre-seed funding in a round co-led by DisrupTech Ventures and KAUST Innovation Ventures, with participation from Maza Ventures, YOUXEL Ventures, and a group of angel investors.",
+          "quote_hash": "eb037d0842f714d74227ebffc9ed48c96808d8ae3a4bf54b389c42f981dced5d"
+        },
+        {
+          "source_id": "PFSRC-INV-acb3df58d6dc7b-contact",
+          "source_url": "https://www.disruptechventures.com/",
+          "source_title": "DisrupTech Ventures",
+          "source_content_hash": "9b87119352d3d819adb1d0bff6b663a77314e1bfffd4ca4b413d494fffd13d98",
+          "quote": "Capital Business Park, B3, 4th Floor, Sheikh Zayed, Giza, Egypt. info@disruptechegypt.com ++20 2 3790 2227",
+          "quote_hash": "d10326d9a1f27b7104a6d2a04c5c959d2f2af32f2754be25716f5443f769aca4"
+        },
         {
           "source_id": "FISRC-9e1446cb9cb3e95e",
           "source_url": "https://waya.media/sinai-ai-raises-usd-1-45m-pre-seed-to-turn-books-into-ai-powered-experiences/",
@@ -161,7 +222,7 @@
           "quote_hash": "77a70bb3a2725a51b4d51f7e35d324ee64367d6a4351cadd7b0bd8e452aabe5d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

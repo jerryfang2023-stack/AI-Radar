@@ -123,29 +123,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "EnvisionX Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "EnvisionX Capital 官网称其面向具有全球发展目标的科技公司进行 early-growth 投资。PixVerse 官方公告列出 EnvisionX Capital 为投资者之一。",
+      "facts": [
         {
-          "description": "融资来源记录：PixVerse · 历史轮次未披露 · 参投C轮。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其面向科技企业开展 early-growth 阶段投资。",
+          "source_id": "envision_profile"
+        },
+        {
+          "field": "investment_support",
+          "label": "支持方式",
+          "value": "官网称其结合运营经验与资本市场经验支持企业。",
+          "source_id": "envision_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "PixVerse 官方公告将其列为融资参与方。",
           "source_id": "FISRC-6d1ff348d372728c"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "参与 PixVerse 一轮融资；公司公告将 CDH Investments 列为领投方，并列出 EnvisionX Capital 等参投方。",
+          "source_id": "FISRC-6d1ff348d372728c"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.envisionxcapital.com/home",
+          "source_id": "envision_profile",
+          "url": "https://www.envisionxcapital.com/home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "envision_profile",
+          "source_url": "https://www.envisionxcapital.com/home",
+          "source_title": "EnvisionX Capital",
+          "source_content_hash": "6d7d1c25687c6f5c92436cd2cf43dcd1cd77649daf64dcf757a57eb081166b9b",
+          "quote": "ley and broadly connected with a global ecosystem, EnvisionX Capital is an early growth stage fund empowering technology-driven companies with global ambitions by applying unique operational expertise and capital market experience. What we look for. Cutting-edge technology Product-driven startups with clear technical differentiation and a desire",
+          "quote_hash": "66025324d1026255844d5494d0f38f38c3a8916c3a5d3294cb014653b98a81b0"
+        },
         {
           "source_id": "FISRC-6d1ff348d372728c",
           "source_url": "https://pixverse.ai/en/blog/pixverse-joins-global-ai-unicorns-asia-largest-funding-ai-video",
-          "source_title": "PixVerse Joins the Ranks of Global AI Unicorns with Asia's Largest Funding Round in AI Video Generation",
-          "source_content_hash": "b98bf780bb54dac4",
-          "quote": "The round was led by CDH Investments, with participation from international investors Antler, EnvisionX Capital, iGlobe Partners, Lion X Ventures, UOB Venture Management, and 3W Fund, alongside other investors.",
-          "quote_hash": "6e69a63fe64f947335fec080603c5175d7449159fd66a7eca4054cdad34aeb09"
+          "source_title": "PixVerse Joins the Ranks of Global AI Unicorns with Asia&#39;s Largest Funding Round in AI Video Generation | PixVerse",
+          "source_content_hash": "78119b45ff7fc46e8bd67e58595c1c23286058266367707f5d0952ab8cb1aca1",
+          "quote": " CDH Investments , with participation from international investors Antler, EnvisionX Capital, iGlobe Partners, Lion X Ventures, UOB Venture Management , and 3W Fund , alongside other investors. The global AI video generation market is at an inflection point. Demand for AI-generated video content is ac",
+          "quote_hash": "10082de23f65483896adaac4756874f8f30b7523e889a92cfe66a8dc6eac8c6d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

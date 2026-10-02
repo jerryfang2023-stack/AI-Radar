@@ -139,19 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Phenomen VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Phenomen VC 官网自述为投资美国、欧洲和以色列的全球风险投资机构。CTech 报道其参与 enso 的 A 轮融资。",
+      "coverage_note": "机构地域和投资定位依据 Phenomen VC 官网自述；enso 融资角色来自 CTech 媒体报道。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": [
+            "美国",
+            "欧洲",
+            "以色列"
+          ],
+          "source_id": "phenomen_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "CTech 报道 Phenomen VC 参与 enso A 轮融资。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：enso · A轮 · 2026-10-01 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7877f8925288c583"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://phenomenvc.com/main-copy",
+          "url": "https://phenomenvc.com/main-copy",
+          "source_id": "phenomen_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "phenomen_official",
+          "source_url": "https://phenomenvc.com/main-copy",
+          "source_title": "Main copy — Phenomen VC",
+          "source_content_hash": "8a3de0b05cb9956b2bfb528ff87e15b1555794bf068ac64a99329d7c61600b94",
+          "quote": "Main copy — Phenomen VC One of the leading global venture capital firms investing in the US, Europe and Israel.",
+          "quote_hash": "af08bf5c310baf2c9248c91b264c2b75761a64676d23aecaec43a96d1935f95e"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+          "source_title": "RapidAPI co-founder raises $15 million for AI marketing startup enso | Ctech",
+          "source_content_hash": "f2638b6e2ca93f991dd3d8ad4f26eb6979b834ec50f8306cc7b96dc6e53f43d5",
+          "quote": "ised $15 million in a Series A round led by MoreTech Ventures, with participation from existing investor NFX, Phenomen VC, and Gil Hirsch. The round brings the company’s total funding to $23 million. Full list of Israeli high-tech funding rounds in 2026 The new capital will be used to expand enso’s operations in what the company calls “Agentic Growth Hacking,” as businesses incr",
+          "quote_hash": "fbb51bba48d6316fae46e2277819aefa80a03c44edfbf3f31002864fb65617e6"
+        },
         {
           "source_id": "FISRC-7877f8925288c583",
           "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
@@ -161,7 +200,7 @@
           "quote_hash": "7d766cdfb29a3560b554293dcedb4e3e0bd63fd57881a27bc366adabf20d36cd"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

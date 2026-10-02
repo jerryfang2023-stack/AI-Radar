@@ -139,19 +139,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Permanent Capital Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "Permanent Capital Ventures 是一家面向应用型 AI 公司的早期风险投资机构，官网称其主导 A 轮投资。Outmarket 官方披露该机构参与了 2026 年 9 月的 B 轮融资，未列为领投方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期投资，官网称其主导应用型 AI 公司的 A 轮融资。",
+          "source_id": "pcv"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "官网称 PCV Fund II 规模为 2 亿美元。",
+          "source_id": "pcv"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "披露案例",
+          "value": "Outmarket 官方融资公告将其列为 3450 万美元 B 轮参与方；该轮由 SignalFire 领投。",
+          "source_id": "outmarket"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-09-25",
+          "description": "Outmarket 官方公告 3450 万美元 B 轮融资，Permanent Capital Ventures 参与。",
+          "source_id": "outmarket"
+        }
+      ],
       "track_record": [
+        {
+          "description": "参与 Outmarket 的 3450 万美元 B 轮；公司公告将 SignalFire 列为领投方。",
+          "source_id": "outmarket"
+        },
         {
           "description": "融资来源记录：Outmarket AI · B轮 · 2026-09-25 · 本轮参投 · $34.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1a2ad9b1108e3f59"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.permanent-capital.vc/",
+          "source_id": "pcv",
+          "url": "https://www.permanent-capital.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "pcv",
+          "source_url": "https://www.permanent-capital.vc/",
+          "source_title": "Permanent Capital Ventures",
+          "source_content_hash": "251ec678f9b967c267950056e9eec67f290a2d9be89329729775b53f8385fb8d",
+          "quote": " Ventures ‍Today we’re excited to introduce Permanent Capital Ventures, an early-stage venture capital firm leading Series A investments in applied AI companies. Since inception in early 2024, we’ve raised more than $350M and are now investing out of PCV Fund II, a $200M vehicle designed to help technical founders manifest their full potential by building world class ",
+          "quote_hash": "ad48d9d864787351bd9231c15a24bc910fa55b76e42911aca28efe7c0967be30"
+        },
+        {
+          "source_id": "outmarket",
+          "source_url": "https://outmarket.ai/blog/outmarket-raises-34.5-million-series-b-four-months-after-our-series-a",
+          "source_title": "Outmarket Raises $34.5 Million Series B, Four Months After Announcing Our Series A | Outmarket Blog",
+          "source_content_hash": "a28d45bf97126737b6c580bb6c6a8577af1bbe997869407f4096d82d4e4b464e",
+          "quote": "that Outmarket has raised a $34.5 million Series B led by SignalFire, with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital, and Dash Fund. We announced our Series A recently. We did not expect to raise again this soon. What changed was the speed at which brokers adopted Outmarket. Since our Series A, more agencies hav",
+          "quote_hash": "9c24a175660a29c5bbe1e0d559b22a92d5d934618674064eb739de1a7b4cf210"
+        },
         {
           "source_id": "FISRC-1a2ad9b1108e3f59",
           "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
@@ -161,7 +214,7 @@
           "quote_hash": "9c4dfa4bd1f917cdee90a6d7b63e7f79e690df1508c925d76e125149ae2fbe18"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

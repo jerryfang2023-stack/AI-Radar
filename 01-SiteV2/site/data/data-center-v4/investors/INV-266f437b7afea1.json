@@ -155,23 +155,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "UK Sovereign AI Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "UK Sovereign AI Fund 是英国政府支持的主权 AI 投资基金，官网称其资金规模最高 5 亿英镑，目标是支持高潜力 AI 初创企业和成长型公司。Isomorphic Labs 官方公告将其列为 21 亿美元 B 轮融资参与方。",
+      "facts": [
+        {
+          "field": "fund_size",
+          "label": "资金规模",
+          "value": "最高 5 亿英镑。",
+          "source_id": "sovereign"
+        },
+        {
+          "field": "focus",
+          "label": "投资方向",
+          "value": "支持高潜力 AI 初创企业与成长型公司，强化英国在前沿 AI 的自主能力。",
+          "source_id": "sovereign"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "披露案例",
+          "value": "Isomorphic Labs 官方融资公告将该基金列为 21 亿美元 B 轮参与方。",
+          "source_id": "isomorphic"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-05-12",
+          "description": "Isomorphic Labs 公告 21 亿美元 B 轮融资，UK Sovereign AI Fund 参与。",
+          "source_id": "isomorphic"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-05-12 · 本轮参投 · $2.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-618d95b339c7b308"
+          "description": "参与 Isomorphic Labs 的 21 亿美元 B 轮；该轮由 Thrive Capital 领投。",
+          "source_id": "isomorphic"
         },
         {
           "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-05-12 · 本轮参投 · $2.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-82c9573ed9c6ba66"
+          "source_id": "FISRC-618d95b339c7b308"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.sovereignai.gov.uk/about",
+          "source_id": "sovereign",
+          "url": "https://www.sovereignai.gov.uk/about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sovereign",
+          "source_url": "https://www.sovereignai.gov.uk/about",
+          "source_title": "About Us | UK Sovereign AI Fund Investment Team",
+          "source_content_hash": "39112c44c2f6234f8c1a5882845a11ed5cd416cc1118739a6d85d144ca469341",
+          "quote": " and prosperity. Countries that don&#x27;t will rent it from someone else. Backed by up to £500 million, the Fund exists to turn ambition into action, supporting high-potential AI startups and scaleups to become national champions and strengthening the UK’s sovereign capability in frontier AI. What you’ll do Bui",
+          "quote_hash": "bdf7f52ce8076af2272b143e3eac28bc4a5467e31a81f7d6a1a782e50740dd61"
+        },
+        {
+          "source_id": "isomorphic",
+          "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+          "source_title": "Isomorphic Labs 2.0",
+          "source_content_hash": "a07df13d4da3856b30e323f1634988ea0b4839b1a4c16d2132d48a43ac3296ab",
+          "quote": "ackers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund, significantly expanding Isomorphic Labs&#x27; global capital base. The new capital will be used for the continued development and deployment of Isomorphic Labs&#x27; AI drug design engine (IsoDDE), accelerating and expanding its pipe",
+          "quote_hash": "b4b9f501a7c68f81a135c1c6f35920b2231d47d223d0b0b89e80d7557581a76e"
+        },
         {
           "source_id": "FISRC-618d95b339c7b308",
           "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
@@ -189,7 +238,7 @@
           "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,10 +139,26 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Zetta Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Zetta Venture Partners 官网称其为 AI Native 创业者提供从零到一资本与实操支持，重点覆盖 AI Native 应用、基础设施及开发者工具。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网列示投资方向",
+          "value": [
+            "AI Native 应用",
+            "基础设施",
+            "开发者工具"
+          ],
+          "source_id": "zetta_home"
+        },
+        {
+          "field": "support_approach",
+          "label": "官网所述支持",
+          "value": "从零到一资本与实操支持",
+          "source_id": "zetta_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +166,24 @@
           "source_id": "FISRC-bed538fdd09d371c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Zetta Venture Partners 官网",
+          "url": "https://www.zettavp.com/",
+          "source_id": "zetta_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zetta_home",
+          "source_url": "https://www.zettavp.com/",
+          "source_title": "Zetta Venture Partners | First Believers in AI Startups",
+          "source_content_hash": "38b656c5750dacc60d8cac0bf3da44a4b85eeef7d4792c677633020442fff8db",
+          "quote": "Zero to one capital and hands-on support for builders of AI Native applications, infrastructure, and developer tools.",
+          "quote_hash": "764f3c713739322041cda32ad6129a399fec0d3bb08ce6f83ff28c39d921312c"
+        },
         {
           "source_id": "FISRC-bed538fdd09d371c",
           "source_url": "https://pulse2.com/naive-raises-28-5-million-series-a-to-build-infrastructure-for-autonomous-companies/",
@@ -161,7 +193,8 @@
           "quote_hash": "4ef9bec974783902673a3e4d9e2b4f2d4eaf45fd1dca9777929ab09d40de0e52"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

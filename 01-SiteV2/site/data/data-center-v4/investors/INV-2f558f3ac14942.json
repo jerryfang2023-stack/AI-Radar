@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "VXI Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "VXI Capital 官网称其与解决重大问题的创业者合作，并采用集中组合的 barbell 投资策略。Volantis 官方新闻稿将其列为 8800 万美元 A 轮参与方。",
+      "facts": [
+        {
+          "field": "strategy",
+          "label": "公开策略",
+          "value": "官网称其采用集中投资组合的 barbell 投资策略。",
+          "source_id": "vxi"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "披露案例",
+          "value": "Volantis 官方新闻稿将 VXI Capital 列为 8800 万美元 A 轮参与方。",
+          "source_id": "volantis"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-10-01",
+          "description": "Volantis 宣布完成 8800 万美元 A 轮融资，VXI Capital 参与。",
+          "source_id": "volantis"
+        }
+      ],
       "track_record": [
+        {
+          "description": "参与 Volantis 的 8800 万美元 A 轮；该轮由 Lachy Groom 与 Abstract Ventures 共同领投。",
+          "source_id": "volantis"
+        },
         {
           "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮参投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f61726ece8d567da"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.vxicapital.com/",
+          "source_id": "vxi",
+          "url": "https://www.vxicapital.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vxi",
+          "source_url": "https://www.vxicapital.com/",
+          "source_title": "Home",
+          "source_content_hash": "8969b6dc0c5e381e38bdbdbb79129a6d7b830f0c6c6d722f4d86b18c4fac5b84",
+          "quote": "me Search this site Embedded Files Skip to main content Skip to navigation VXI Capital partners with founders that are addressing significant global problems, utilizing company growth to expand their reach and impact. VXI employs a \"barbell\" investment strategy amongst a small group of companies, investing in or aroun",
+          "quote_hash": "43de475753623349fd657b5e9b63021cf688a1e37d2a575a4e2e9f6b7e5ef29a"
+        },
+        {
+          "source_id": "volantis",
+          "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+          "source_title": "Volantis Raises $88M Series A to Demolish the AI Memory Wall With Photonics",
+          "source_content_hash": "bf05c258251cc2a394818005201729517a13ba2799747e88ff3a48e355b1fa5f",
+          "quote": "unced an $88 million Series A co-led by Lachy Groom and Abstract Ventures, with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures. The round also includes angel investors Dwarkesh Patel, Naveen Rao and Sholto Douglas. Volantis is building a new AI inference architecture that eliminates the tradeoff between me",
+          "quote_hash": "f5bf5de10d8a703273f3617fa040904c558c7a761862e58b4b484b9b5938e105"
+        },
         {
           "source_id": "FISRC-f61726ece8d567da",
           "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
@@ -161,7 +208,7 @@
           "quote_hash": "2da44dbcebe4bfa9bb98c78f5e465ad49971edc1b5eb23e78d6ad9c6ceda7422"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

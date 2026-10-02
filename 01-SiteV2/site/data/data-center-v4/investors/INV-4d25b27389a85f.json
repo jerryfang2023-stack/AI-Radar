@@ -123,19 +123,49 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Lindsey Simon 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "self_declared_affiliation",
+      "summary": "Lindsey Simon 的个人网站自述其为 Vercel 工程副总裁；Modem 公司融资公告将 Lindsey Simon（Vercel）列为天使投资人。",
+      "coverage_note": "Vercel 任职信息来自 Lindsey Simon 的个人网站自述；投资人身份来自 Modem 公司融资公告。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "VP of Engineering",
+          "organization": "Vercel",
+          "source_id": "lindsey_site"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "个人网站展示其产品、团队和社区建设经历；本档案不根据该网站补写其他职业履历。",
       "track_record": [
+        {
+          "description": "Modem 公司融资公告将 Lindsey Simon（Vercel）列为天使投资人。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Vercel）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "lindsey_site",
+          "source_url": "https://www.idreamofuni.com/",
+          "source_title": "Lindsey Simon - Builder, musician, web developer",
+          "source_content_hash": "1ab77249f82110aaa3cb3a6374d7da1b38544fae2a23ec1911183ed3760de941",
+          "quote": "VP of Engineering at Vercel.",
+          "quote_hash": "e1aa67cebcb455729643b4b4e6ed6e3e954b99192d137782bd329bb383c4f162"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
+          "quote": "products: David Cramer and Chris Jennings (Sentry), Ivan Zhang (Cohere), Koen Bok and Jorn van Dijk (Framer), Lindsey Simon (Vercel), Armin Ronacher (Flask), Jacob Thornton (Bootstrap, Pierre Computer Co), John Laban and Kenneth Rose (OpsLevel), Dave Johnson (PhoneGap/Cordova), and others we&#x27;re lucky to have behind us. This funding lets us go deeper on building the product tools that",
+          "quote_hash": "9693dc9665af4865350214d5ea49ff22fbe4afada338fe07f13fcd782733006f"
+        },
         {
           "source_id": "FISRC-9fd6ba5210b37fed",
           "source_url": "https://modem.dev/blog/modem-raises-4-4m",
@@ -145,7 +175,7 @@
           "quote_hash": "6505764f6865d20151c667ff71e4f9bbd1b0c4f2a1162c74b0239f98d270fcc3"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

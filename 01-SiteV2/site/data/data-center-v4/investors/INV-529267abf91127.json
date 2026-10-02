@@ -163,12 +163,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Boardman Bay Capital Management 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Boardman Bay 官网称 Boardman Bay Capital Management LLC 是 SEC 注册投资顾问，关注生成式 AI、共封装光学、数据中心基础设施、机器人、国防科技和自动驾驶等科技领域。Ayar Labs 官方公告将其列为 Series E 金融投资方。",
+      "facts": [
+        {
+          "field": "registration",
+          "label": "注册身份",
+          "value": "SEC 注册投资顾问",
+          "source_id": "boardman_official"
+        },
+        {
+          "field": "sectors",
+          "label": "投资方向",
+          "value": [
+            "生成式人工智能",
+            "共封装光学",
+            "数据中心基础设施",
+            "机器人",
+            "国防科技",
+            "自动驾驶"
+          ],
+          "source_id": "boardman_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Ayar Labs 官方公告将 Boardman Bay Capital Management 列为其 Series E 金融投资方。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Ayar Labs · 历史轮次未披露 · 既有财务投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5b6c7c4ae002a992"
@@ -178,8 +201,40 @@
           "source_id": "FISRC-3947ce709f26c22a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.boardmanbay.com/",
+          "url": "https://www.boardmanbay.com/",
+          "source_id": "boardman_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "boardman_official",
+          "source_url": "https://www.boardmanbay.com/",
+          "source_title": "Boardman Bay",
+          "source_content_hash": "ee28db65f23d3e10a83a2860dd44b493a1861cc58617e100fb5789e16f9ee16a",
+          "quote": "1120 Avenue of Americas | 4th Floor | New York, NY 10036 For inquiries, please contact ir@boardmanbay.com Boardman Bay Capital Management LLC (“BBCM”) is an SEC-registered investment adviser.",
+          "quote_hash": "630fde2bd5a0e7cb265f5d4664bd1d2992c06f5f1c7bd31268e579948a8db1c7"
+        },
+        {
+          "source_id": "boardman_focus",
+          "source_url": "https://www.boardmanbay.com/",
+          "source_title": "Boardman Bay",
+          "source_content_hash": "ee28db65f23d3e10a83a2860dd44b493a1861cc58617e100fb5789e16f9ee16a",
+          "quote": "We focus on high-growth opportunities in transformative technology subsectors, including Generative AI, Co-Packaged Optics, Datacenter Infrastructure, Robotics, Defense Technology, and Autonomy.",
+          "quote_hash": "b6e5cde7ca6b54fde9dfa64666eaf4dfbd826231efa1c7e1a664330a869c244c"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+          "source_title": "Ayar Labs Closes $500M Series E, Accelerates Volume Production of Co‑Packaged Optics",
+          "source_content_hash": "ca2199749f0afba3fbf0c6139eb12a83a1c933879686270714bfcd02449d1a14",
+          "quote": "They join existing financial institutions such as Advent Global Opportunities, Boardman Bay Capital Management, IAG Capital Partners, Light Street Capital, and Playground Global, and existing strategic investors, AMD Ventures, and NVIDIA.",
+          "quote_hash": "c8ff681a950d8b7ae4e808e79876f2da639ef8b3ebe96721ec8e28b9483fb105"
+        },
         {
           "source_id": "FISRC-5b6c7c4ae002a992",
           "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
@@ -197,7 +252,8 @@
           "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

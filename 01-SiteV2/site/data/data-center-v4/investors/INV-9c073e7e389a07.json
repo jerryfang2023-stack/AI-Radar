@@ -139,10 +139,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Atinum Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Atinum Investment 官网将公司描述为依据企业本质价值投资国内外成长阶段初创公司的风险投资机构，重点关注市场与技术创新，以及 IT、生物科技和医疗健康领域。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网自述类型",
+          "value": "venture capital firm",
+          "source_id": "atinum_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": "growth-stage startups",
+          "source_id": "atinum_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示方向",
+          "value": [
+            "市场与技术创新",
+            "IT",
+            "生物科技与医疗健康"
+          ],
+          "source_id": "atinum_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +172,40 @@
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Atinum Investment",
+          "url": "https://www.atinuminvest.co.kr/",
+          "source_id": "atinum_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "atinum_home",
+          "source_url": "https://www.atinuminvest.co.kr/",
+          "source_title": "에이티넘인베스트먼트 - Atinum Investment",
+          "source_content_hash": "c428993128ec9ea86b97e80d456b4e97984198403167732d50d7d2bee63be8e1",
+          "quote": "에이티넘인베스트먼트는 기업의 본질가치에 집중하는 투자 철학으로 국내외 유망 스타트업에 투자하는 벤처캐피탈 입니다",
+          "quote_hash": "7b4e7b2d3e81b3113364f3d800ba27894096590c65566925afd50e4af806c737"
+        },
+        {
+          "source_id": "atinum_stage",
+          "source_url": "https://www.atinuminvest.co.kr/",
+          "source_title": "에이티넘인베스트먼트 - Atinum Investment",
+          "source_content_hash": "c428993128ec9ea86b97e80d456b4e97984198403167732d50d7d2bee63be8e1",
+          "quote": "성장단계에 진입한 스타트업에 투자합니다",
+          "quote_hash": "ad331910520fde0c238d27bd28a66343d7a74d88fd77a60b079e446ec4a7497a"
+        },
+        {
+          "source_id": "atinum_focus",
+          "source_url": "https://www.atinuminvest.co.kr/",
+          "source_title": "에이티넘인베스트먼트 - Atinum Investment",
+          "source_content_hash": "c428993128ec9ea86b97e80d456b4e97984198403167732d50d7d2bee63be8e1",
+          "quote": "패러다임 변화를 선도하는 IT, 바이오/헬스케어 스타트업에 투자합니다",
+          "quote_hash": "8b55b966d49976c50310186c0a297710fe4bf7d2cd3481ee9416919dc9009999"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +215,8 @@
           "quote_hash": "212288c934da475b761d45e7247e6d88052a52459f5112dbeedb2e6c12b2e5de"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

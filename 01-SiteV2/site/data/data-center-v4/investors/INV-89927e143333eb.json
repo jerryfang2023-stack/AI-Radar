@@ -139,11 +139,30 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SoftBank Vision Fund 2 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "仅记录 SoftBank Group 2019 年公告中的基金设立计划与目标；未把原始 MOUs 或目标金额表述成基金当前规模。",
+      "summary": "SoftBank Group 于 2019 年宣布计划设立 SoftBank Vision Fund 2，公告目标是通过投资具备技术能力的成长型公司，继续加速 AI 革命。此处记录的是设立公告中的目标。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "设立公告所述基金类型",
+          "value": "私人投资基金",
+          "source_id": "softbank_type"
+        },
+        {
+          "field": "investment_objective",
+          "label": "设立公告所述目标",
+          "value": "通过投资具备技术能力的成长型公司加速 AI 发展",
+          "source_id": "softbank_launch"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019-07-26",
+          "description": "SoftBank Group 公告计划设立 SoftBank Vision Fund 2。",
+          "source_id": "softbank_date"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -153,6 +172,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "softbank_launch",
+          "source_url": "https://group.softbank/en/news/press/20190726",
+          "source_title": "Launch of SoftBank Vision Fund 2 | SoftBank Group Corp.",
+          "source_content_hash": "3ac1b7fadfbf4e28821bf6d5669fef77c88661908ff60ae8f68796ce9f763dd1",
+          "quote": "The objective of the Fund is to facilitate the continued acceleration of the AI revolution through investment in market-leading, tech-enabled growth companies.",
+          "quote_hash": "be5f63d77d9e3dc78378f4606411dcf7681c22031026f65fdf225712538c2d8a"
+        },
+        {
+          "source_id": "softbank_date",
+          "source_url": "https://group.softbank/en/news/press/20190726",
+          "source_title": "Launch of SoftBank Vision Fund 2 | SoftBank Group Corp.",
+          "source_content_hash": "3ac1b7fadfbf4e28821bf6d5669fef77c88661908ff60ae8f68796ce9f763dd1",
+          "quote": "July 26, 2019 SoftBank Group Corp.",
+          "quote_hash": "6fc09f91d6bd7804d92d657a09ccf48f15d3e08a8db81fa2793759fa2f462e47"
+        },
+        {
+          "source_id": "softbank_type",
+          "source_url": "https://group.softbank/en/news/press/20190726",
+          "source_title": "Launch of SoftBank Vision Fund 2 | SoftBank Group Corp.",
+          "source_content_hash": "3ac1b7fadfbf4e28821bf6d5669fef77c88661908ff60ae8f68796ce9f763dd1",
+          "quote": "a new private investment fund",
+          "quote_hash": "95c933057e7d9479037a9456b4e4fecc0a2485ae9fcda4adb5e24fc70a1bf94d"
+        },
+        {
           "source_id": "FISRC-7bf361b38b905ca3",
           "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
           "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
@@ -161,7 +204,7 @@
           "quote_hash": "d5be7f5cb4019d51ad8e98d3a313040c2d36f4907ad52a8b93520922e8711733"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

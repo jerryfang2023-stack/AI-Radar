@@ -139,10 +139,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Maj Invest 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本条对应 Maj Invest 集团品牌；官网介绍的投资策略具体归属于 Maj Invest Minorities，不将其表述为所有集团实体统一适用的策略。",
+      "summary": "Maj Invest 官网列出多家集团实体，包括 Maj Invest Holding A/S、Fondsmæglerselskabet Maj Invest A/S 和 Maj Invest Equity A/S。其 Maj Invest Minorities 页面介绍这一业务聚焦科技、生命科学、能源转型和数字基础设施，并通过少数股权投资参与成熟私募股权交易及早期风险投资机会。",
+      "facts": [
+        {
+          "field": "group_entities",
+          "label": "官网列示的集团实体",
+          "value": [
+            "Maj Invest Holding A/S",
+            "Fondsmæglerselskabet Maj Invest A/S",
+            "Maj Invest Equity A/S"
+          ],
+          "source_id": "PFSRC-INV-ace3672b6800b2-entities"
+        },
+        {
+          "field": "investment_focus",
+          "label": "Maj Invest Minorities 官网披露的领域",
+          "value": "科技、生命科学、能源转型和数字基础设施。",
+          "source_id": "PFSRC-INV-ace3672b6800b2-minorities"
+        },
+        {
+          "field": "investment_approach",
+          "label": "Maj Invest Minorities 官网披露的策略",
+          "value": "在成熟私募股权交易和早期风险投资机会中取得5%至15%的少数股权。",
+          "source_id": "PFSRC-INV-ace3672b6800b2-approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +173,40 @@
           "source_id": "FISRC-5b1ac109014789f1"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Maj Invest 官网",
+          "value": "https://www.majinvest.com/en",
+          "url": "https://www.majinvest.com/en",
+          "source_id": "PFSRC-INV-ace3672b6800b2-entities"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-ace3672b6800b2-entities",
+          "source_url": "https://www.majinvest.com/en",
+          "source_title": "Explore the Opportunities at Maj Invest - Maj Invest",
+          "source_content_hash": "9969faa774df2434ae4b97e8662d9f84c8f1b5c2c4a87af01954685c3343bebc",
+          "quote": "Annual reports, policies etc. for all Group entities. Maj Invest Holding A/S Fondsmæglerselskabet Maj Invest A/S Maj Invest Equity A/S",
+          "quote_hash": "821e762b8e9a78755e00978a958ce922b4c66602c498a65f80e4862506d8e719"
+        },
+        {
+          "source_id": "PFSRC-INV-ace3672b6800b2-minorities",
+          "source_url": "https://www.majinvest.com/en/minorities",
+          "source_title": "Private Equity - Maj Invest",
+          "source_content_hash": "3751b8f76650bd5fa425e94f084dac1deae829ad4a944b746d5ed1391edf477d",
+          "quote": "Maj Invest Minorities is a minority Private Equity, Venture Capital and Infrastructure investor focused on technology, life sciences, energy transition and digital infrastucture.",
+          "quote_hash": "b1bf4b5f81078f5282b7bef7d5f5f651b498960c9c3f864b3f91aa864c0d7835"
+        },
+        {
+          "source_id": "PFSRC-INV-ace3672b6800b2-approach",
+          "source_url": "https://www.majinvest.com/en/minorities/about",
+          "source_title": "The Minorities Approach - Maj Invest",
+          "source_content_hash": "fd15d47a1e533f0e3eee85f4101d47c3ac55cc2ea9fe0d009aaf06923f62198e",
+          "quote": "We acquire minority stakes of 5 to 15% in mid-to-large-cap private equity deals and early-stage venture capital opportunities within innovative technology and life sciences companies in developed markets.",
+          "quote_hash": "59053e6bdf66e03085c0ef6095a4ebe176498e77df006da8583cfdc126e0e029"
+        },
         {
           "source_id": "FISRC-5b1ac109014789f1",
           "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
@@ -161,7 +216,7 @@
           "quote_hash": "7067b0f2a0ffecb0c09ed46fcb3bc2d25cf3cf0a4480de2e3ba2c23de4bb1a6c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

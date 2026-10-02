@@ -139,10 +139,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Intermountain Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Intermountain Health 官网称 Intermountain Ventures 是其风险投资与创新部门，投资医疗领域早期和成长期公司，并提供资本及运营支持。",
+      "facts": [
+        {
+          "field": "parent_relationship",
+          "label": "官网所述组织关系",
+          "value": "Intermountain Health 的风险投资与创新部门",
+          "source_id": "intermountain_ventures"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": "早期与成长期",
+          "source_id": "intermountain_focus"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示领域",
+          "value": [
+            "企业赋能",
+            "医疗服务场所优化",
+            "劳动力转型",
+            "消费者体验",
+            "临床进展",
+            "预防性医疗"
+          ],
+          "source_id": "intermountain_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +175,32 @@
           "source_id": "FISRC-3372eff279ee29db"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Intermountain Ventures 官网",
+          "url": "https://intermountainhealthcare.org/about/ventures",
+          "source_id": "intermountain_ventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "intermountain_ventures",
+          "source_url": "https://intermountainhealthcare.org/about/ventures",
+          "source_title": "Intermountain Ventures",
+          "source_content_hash": "49665c13f997bc68a4246ea9ec2d3431bd45ea6f1f21613f8b0a9beaaab65635",
+          "quote": "Intermountain Ventures is the venture capital and innovation arm of Intermountain Health, focused on driving transformative change in healthcare and beyond.",
+          "quote_hash": "4e76544c1d010d1838baf56bd0ff329dc16398e38553dbdb73a913c48c5b4027"
+        },
+        {
+          "source_id": "intermountain_focus",
+          "source_url": "https://intermountainhealthcare.org/about/ventures",
+          "source_title": "Intermountain Ventures",
+          "source_content_hash": "49665c13f997bc68a4246ea9ec2d3431bd45ea6f1f21613f8b0a9beaaab65635",
+          "quote": "Intermountain Ventures funds promising early- and growth-stage companies in six primary areas: Enterprise Enablement, Care Site Optimization, Workforce Transformation, Consumer Experience, Clinical Advancement, and Proactive Care.",
+          "quote_hash": "09340bfb13e72959f2c2e9ed27cce27269b5af7fcb078dfb92267b210acd0c3b"
+        },
         {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
@@ -161,7 +210,8 @@
           "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

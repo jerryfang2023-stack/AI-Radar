@@ -124,18 +124,47 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Chris Jennings 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "Sentry 历史关联来自 Sentry 官方文章；天使活动来自 Modem 公司公告，仅展示已证实事项。",
+      "summary": "Sentry 官方历史文章记载，Chris Jennings 于 2012 年与 David Cramer 共同创立公司以商业化 Sentry；Modem 的融资公告把 Chris Jennings（Sentry）列入天使支持者。资料未确认其当前职务或教育背景。",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Sentry",
+          "title": "共同创办商业化公司",
+          "period": "2012",
+          "description": "Sentry 官方历史文章称 David Cramer 与 Chris Jennings 于 2012 年创办公司，将 Sentry 商业化。",
+          "source_id": "sentry_history"
+        }
+      ],
+      "education": [],
+      "experience_summary": "可核验的公开材料仅支持其与 Sentry 的历史创办关联及 Modem 一笔天使支持记录；未据此推定当前职务、教育或完整职业履历。",
       "track_record": [
+        {
+          "description": "Modem 官方融资公告将 Chris Jennings（Sentry）列在支持该公司的天使投资者名单中。",
+          "source_id": "modem_announcement"
+        },
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Sentry）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "sentry_history",
+          "source_url": "https://blog.sentry.io/sentrys-open-source-values/",
+          "source_title": "Sentry&#39;s Open Source Values | Sentry Blog",
+          "source_content_hash": "f5759ff569c3c4fd199c9996cd2fa17b4c7041ed0414b644c0a5cda3d24b1d79",
+          "quote": "In 2012, David founded a company with Chris Jennings to commercialize Sentry, and together with hundreds of others over the years they have built a successful business around the project.",
+          "quote_hash": "9f53c9ef127879eafa7bc4c52c907485ae470c82ed74efffa995cc2e0670b73b"
+        },
+        {
+          "source_id": "modem_announcement",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "795309165c89beae2c0f10566341e38989cb94def4aec88cf6b0920808609e9a",
+          "quote": "a group of incredible angels behind foundational developer tools and AI products:\nDavid Cramer and Chris Jennings (Sentry), Ivan Zhang (Cohere), Koen Bok and Jorn van Dijk (Framer), Lindsey Simon (Vercel), Armin Ronacher (Flask), Jacob Thornton (Bootstrap, Pierre Computer Co), John Laban and Kenneth Rose (OpsLevel), Dave Johnson (PhoneGap/Cordova), and others we're lucky to have behind us.",
+          "quote_hash": "8a0ae2a2300ea1508e4daa7301f82091c76c612bc6366aacec21a90d89fb19cc"
+        },
         {
           "source_id": "FISRC-9fd6ba5210b37fed",
           "source_url": "https://modem.dev/blog/modem-raises-4-4m",
@@ -145,7 +174,10 @@
           "quote_hash": "1574c672f68e153fc5073128a6615aede0352b8bc39b3ede67b49b0db2483ec3"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     },
     "translations": {
       "zh-CN": {

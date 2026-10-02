@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ivy Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "Ivy Capital 官网称其 2008 年创立于上海，并聚焦人工智能与深科技。PixVerse 官方公告将 Ivy Capital 列为 C 轮扩展融资的投资者之一。",
+      "facts": [
         {
-          "description": "融资来源记录：PixVerse · C轮扩展 · 2026-07-13 · 本轮参投 · $439 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "founded",
+          "label": "成立时间",
+          "value": "官网称 Ivy Capital 于 2008 年创立于上海。",
+          "source_id": "ivy_profile"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网披露其关注人工智能与深科技。",
+          "source_id": "ivy_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "PixVerse 官方公告将其列为 C 轮扩展融资投资者。",
           "source_id": "FISRC-002776ecfe7ba6a0"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "milestones": [],
+      "track_record": [
         {
-          "source_id": "FISRC-002776ecfe7ba6a0",
-          "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
-          "source_title": "视频生成初创公司PixVerse融资4.39亿美元，估值突破20亿美元",
-          "source_content_hash": "8613eee6f7b9e1c8f7dc544c000940dea87d210a3d3a7afd1d82a09eeb569abe",
-          "quote": "PixVerse said that investors in the extension round include Alibaba, Lollapalooza Capital, Ivy Capital, Grand Mount Capital, Eastern Bell Capital, Mirae Asset, BlueFocus, and CloudAlpha, joining returning investors iGlobe Partners and OCBC’s Lion X Ventures.",
-          "quote_hash": "e5a8e278829adf97feebafc8274fdaa9ac9b4ff38b56fb6bc45d2b16fb673068"
+          "description": "参与 PixVerse 的 C 轮扩展融资；相关投资者名单来自 PixVerse 官方公告。",
+          "source_id": "FISRC-002776ecfe7ba6a0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.ivycapital.com/index.php?lang=en",
+          "source_id": "ivy_profile",
+          "url": "https://www.ivycapital.com/index.php?lang=en"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "ivy_profile",
+          "source_url": "https://www.ivycapital.com/index.php?lang=en",
+          "source_title": "Ivy Capital",
+          "source_content_hash": "ef358269a624f2147a56d37f5c1962b65482ca957868bba77d3f15a19c7823e2",
+          "quote": "th our founders through cycles, for decades. I V a l u e Y o u I. About Us Founded in Shanghai in 2008, Ivy Capital is one of China's earliest independent venture capital firms. For nearly two decades, we have been guided by deep research and industry insight &mdash; backing entrepreneurs with the resilience an",
+          "quote_hash": "0f97edb84483bf328ed7cdc2c366e568a708e3114af5a34b7a7d8fd2d556f61c"
+        },
+        {
+          "source_id": "FISRC-002776ecfe7ba6a0",
+          "source_url": "https://pixverse.blog/en/updates/pixverse-closes-series-c-extension-and-announces-expansion-into-interactive-entertainment/",
+          "source_title": "PixVerse Closes Series C Extension, Bringing Total to USD 439 Million, and Announces Expansion Into Interactive Entertainment",
+          "source_content_hash": "76c568be5e05a4af903207e073d405694a884fc468d439b69bda0a56b55e7828",
+          "quote": "gy. New investors in this extension include Alibaba, Lollapalooza Capital, Ivy Capital, Grand Mount Capital, Eastern Bell Capital, Mirae Asset, BlueFocus, and CloudAlpha, joining returning investors iGlobe Partners and OCBC’s LionX Ventures. Building Toward Interactive Worlds PixVerse was built ",
+          "quote_hash": "11e26e97ebc7a3aa70123f7b23ff65d3ad889dfae7f51115eff09227860c2ecb"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
     }
   }
 }

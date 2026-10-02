@@ -123,19 +123,62 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sriram Rajamani 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Microsoft Research 官网列示 Sriram Rajamani 为 Corporate Vice President；Pramaana Labs 的公司融资公告将他列为早期支持者之一。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Corporate Vice President",
+          "organization": "Microsoft Research",
+          "source_id": "microsoft_profile"
+        }
+      ],
+      "career": [],
+      "education": [
+        {
+          "institution": "University of California, Berkeley",
+          "qualification": "PhD",
+          "source_id": "sriram_education"
+        }
+      ],
+      "experience_summary": "Microsoft Research 页面介绍其研究与管理职务；Pramaana Labs 官方公告将其列为早期支持者。",
       "track_record": [
+        {
+          "description": "Pramaana Labs 官方融资公告将 Sriram Rajamani 列为早期支持者。",
+          "source_id": "pramaana_release"
+        },
         {
           "description": "融资来源记录：Pramaana Labs · 历史轮次未披露 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-618b53dc6c4fff7d"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "microsoft_profile",
+          "source_url": "https://www.microsoft.com/en-us/research/people/sriram/",
+          "source_title": "Sriram Rajamani at Microsoft Research",
+          "source_content_hash": "14e10c4f04772c8232a636ba5f06e6050b1f4e428f8b4950b1c30e02667a5090",
+          "quote": "nter Documentation Events Licensing Microsoft Learn Microsoft Research View Sitemap Sriram Rajamani Corporate Vice President, Microsoft Research Connect on LinkedIn About Projects Publications Videos More Info About Sriram Rajamani is Corporate Vice President at Microsoft Research.",
+          "quote_hash": "32200617ee455f5dd94e57841cccdc82b46f377addd076ede2f04d08c4c3f146"
+        },
+        {
+          "source_id": "sriram_education",
+          "source_url": "https://www.microsoft.com/en-us/research/people/sriram/",
+          "source_title": "Sriram Rajamani at Microsoft Research",
+          "source_content_hash": "14e10c4f04772c8232a636ba5f06e6050b1f4e428f8b4950b1c30e02667a5090",
+          "quote": "(opens in new tab) Sriram has a PhD from UC Berkeley (opens in new tab) , MS from University of Virginia (opens in new tab) and BEng from College of Engineering, Guindy (opens in new tab) , all with specialization in Computer Science.",
+          "quote_hash": "455a3f5a5325a41cef25a4713e64f41953b686331df8040ff0d0c03920043a24"
+        },
+        {
+          "source_id": "pramaana_release",
+          "source_url": "https://pramaanalabs.ai/blog/we-raised-27m-to-build-a-compiler-for-mission-critical-ai",
+          "source_title": "We Raised $27M To Build A Compiler For Mission-Critical AI",
+          "source_content_hash": "2ae5be92c1505a404ccd082603fe011bfa4ccbac72ffd40d63d980fb25baaefe",
+          "quote": "Our early backers include the world's leading minds in formal verification, including Pushmeet Kohli (VP, Google DeepMind) and Sriram Rajamani (Corporate VP, Microsoft Research), and by a frontier research lab spanning IIT Delhi, IIT Madras, and UC Berkeley, with our tax effort advised by former IRS Commissioner Danny Werfel.",
+          "quote_hash": "776812f78c1f600f003c32594d82b262813a0c6e3bf646708b69ece39c91e4e2"
+        },
         {
           "source_id": "FISRC-618b53dc6c4fff7d",
           "source_url": "https://tracxn.com/d/companies/pramaana-labs/__S3HQl9WEeyweOdK-exyohpJ9V2I5QhqUMsMz6Ipwu5U/funding-and-investors",
@@ -145,7 +188,8 @@
           "quote_hash": "3e75fed6a02405d2e9c4516326e09eccd9ec16f552d2ac28b30d070166ec0e01"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

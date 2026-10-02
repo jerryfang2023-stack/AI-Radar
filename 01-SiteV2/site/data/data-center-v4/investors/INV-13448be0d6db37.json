@@ -193,12 +193,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Matter Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Matter Venture Partners 官网将自身描述为专注 HardTech 的实操型风险投资机构；法律声明将网站运营方列为 Matter Venture Partners, LLC。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "HardTech",
+          "source_id": "matter_home"
+        },
+        {
+          "field": "legal_entity",
+          "label": "官网法律名称",
+          "value": "Matter Venture Partners, LLC",
+          "source_id": "matter_legal"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网称结合运营经验与产业关系支持技术规模化",
+          "source_id": "matter_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网首页列出 Path Robotics 与 Lumafield 等组合公司示例；不代表完整组合。",
+          "source_id": "matter_home"
+        },
         {
           "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d4642fdc4a2457c"
@@ -208,8 +230,32 @@
           "source_id": "FISRC-b82705c0aaa6a5ee"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Matter Venture Partners官网",
+          "url": "https://www.mattervp.com/",
+          "source_id": "matter_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "matter_home",
+          "source_url": "https://www.mattervp.com/",
+          "source_title": "Matter VP",
+          "source_content_hash": "10d4e3526fe495ea24179ef528e0346edb84f38a0b48b5865a84f6db3b334adc",
+          "quote": "hands-on venture firm purpose-built to support founders developing technologies that matter most – in the actual world.",
+          "quote_hash": "dc581b48e6724fca78cdce3c2002e325dfde22b4de1e8320090b2c92952500d0"
+        },
+        {
+          "source_id": "matter_legal",
+          "source_url": "https://www.mattervp.com/privacy-policy",
+          "source_title": "Privacy Policy | Matter VP",
+          "source_content_hash": "5741585d5bc31ad0643e127258039e7a007558b7bfafbaed78ceedcdcd58b6b2",
+          "quote": "Matter Venture Partners LLC Thank you for mattervp.com (the “Site”), owned and operated by Matter Venture Partners, LLC (“we,” or “us”).",
+          "quote_hash": "31f7549ed260872e1080c3c5c5ffe262b86c62226c60d8fd0c6cebe8aac594dd"
+        },
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
           "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
@@ -227,7 +273,8 @@
           "quote_hash": "a8278de53198826272dc5c7045989ecb50ff2bdac47a68de9ac09adb8810b1c1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

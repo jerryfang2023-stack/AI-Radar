@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Osage University Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "Osage University Partners 官网强调支持解决重大问题的科研人员与创业者，并披露其高校合作网络。Eridu 官方公告将其列为 Series A 参与机构之一。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "支持方向",
+          "value": "官网称其支持解决重大问题的科研人员和创业者。",
+          "source_id": "oup"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "Eridu 公告将其列为 Series A 参与方。",
+          "source_id": "eridu"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Eridu 官方公告将 Osage University Partners 列为 Series A 参与机构之一。",
+          "source_id": "eridu"
+        },
         {
           "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://oup.vc/",
+          "source_id": "oup",
+          "url": "https://oup.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "oup",
+          "source_url": "https://oup.vc/",
+          "source_title": "Osage University Partners",
+          "source_content_hash": "bebc14e75c0e7237e76e8c0038dc944a8dadd00cebf385fd60e16fb0ad53c77d",
+          "quote": "ach Portfolio Team Partner Institutions Insights Investing at the Frontier Backing breakout researchers and entrepreneurs solving the toughest problems Our Portfolio $ 800 M Under Management 150 + Portfolio Companies 35 + IPOs 150 + Partner Universities & Research Institutions $ 1-20 M Investment Size Our Approach We invest in breakthrough startups emerging f",
+          "quote_hash": "1d0fead276887313668ab5a0a3ba1ebe6f0d02f4641561d2b6bd8c995f6f9085"
+        },
+        {
+          "source_id": "eridu",
+          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+          "source_title": "Eridu Emerges from Stealth with Over $200M in Funding To Break Through the Network Wall and Unlock Faster AI &#8211; Eridu &#8211; Faster AI",
+          "source_content_hash": "202be508dc6ef6408937696d2a107814ef1ee486ab6bb150fcf28a5bcc3210ea",
+          "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners, with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventur",
+          "quote_hash": "13d6a4e7814a63edd906cfa80bdbc14bfc1c79efd9a5fd193dedc13174d3b53c"
+        },
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
           "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
@@ -161,7 +202,7 @@
           "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

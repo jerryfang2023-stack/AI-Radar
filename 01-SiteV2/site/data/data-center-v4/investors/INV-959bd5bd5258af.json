@@ -139,10 +139,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Morgan Creek Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Morgan Creek Capital Management 官网称其为 SEC 注册投资顾问，为机构和富裕家庭提供投资管理服务。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网自述类型",
+          "value": "SEC 注册投资顾问",
+          "source_id": "morgan_home"
+        },
+        {
+          "field": "client_types",
+          "label": "官网列示客户类型",
+          "value": [
+            "institutions",
+            "wealthy families"
+          ],
+          "source_id": "morgan_home"
+        },
+        {
+          "field": "services",
+          "label": "官网列示服务",
+          "value": "investment management services",
+          "source_id": "morgan_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,24 @@
           "source_id": "FISRC-d542f1ad9da7e0ac"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Morgan Creek Capital Management",
+          "url": "https://www.morgancreekcap.com/",
+          "source_id": "morgan_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "morgan_home",
+          "source_url": "https://www.morgancreekcap.com/",
+          "source_title": "Morgan Creek",
+          "source_content_hash": "ef81afb83ec3c07943de7b62d33eade39e967c201ed503a46b6e8e286cecef8d",
+          "quote": "Morgan Creek Capital Management, LLC is a SEC-registered investment adviser providing investment management services to institutions and wealthy families.",
+          "quote_hash": "758ab562bb68de4f81e1d1434eb574cb32155f479a0a2fc3052512ebb9fb5c9a"
+        },
         {
           "source_id": "FISRC-d542f1ad9da7e0ac",
           "source_url": "https://dukecapitalpartners.duke.edu/news/neurophos-secures-110-million-series-a-to-launch-exaflop-scale-photonic-ai-chips/",
@@ -161,7 +198,8 @@
           "quote_hash": "50c11b90182d71d1c76feba7fea4ab7c8d121a9ce5b518cdb89537ef990c68d6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

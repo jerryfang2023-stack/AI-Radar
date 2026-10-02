@@ -139,11 +139,51 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京人工智能基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "组织与出资信息来自港交所文件第193页，持有比例为该文件所述最后实际可行日期口径。",
+      "summary": "港交所披露文件记载，北京人工智能基金于 2023 年 12 月 28 日成立，为从事人工智能领域股权投资的中国有限合伙企业；文件还列出其普通合伙人及唯一有限合伙人。",
+      "facts": [
+        {
+          "field": "formation_date",
+          "label": "文件所列成立日期",
+          "value": "2023-12-28",
+          "source_id": "beijing_hkex"
+        },
+        {
+          "field": "legal_form",
+          "label": "文件所列组织形式",
+          "value": "中国有限合伙企业",
+          "source_id": "beijing_hkex"
+        },
+        {
+          "field": "investment_focus",
+          "label": "文件所列投资方向",
+          "value": "人工智能领域股权投资",
+          "source_id": "beijing_hkex"
+        },
+        {
+          "field": "general_partners",
+          "label": "文件所列普通合伙人",
+          "value": [
+            "北京启赋管理咨询合伙企业（有限合伙）",
+            "北京京国管置业管理有限公司；各持有0.50%合伙权益"
+          ],
+          "source_id": "beijing_hkex_partners"
+        },
+        {
+          "field": "limited_partner",
+          "label": "文件所列唯一有限合伙人",
+          "value": "北京市政府投资引导基金（有限合伙）；截至文件所称最后实际可行日期持有99%合伙权益",
+          "source_id": "beijing_hkex_lp"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-12-28",
+          "description": "港交所披露文件记载北京人工智能基金成立。",
+          "source_id": "beijing_hkex"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Moonshot AI · D轮 · 2026-05-19 · 本轮参投 · 5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -153,6 +193,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "beijing_hkex",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0205/2026020500038_c.pdf",
+          "source_title": "歷史、發展及公司架構 — 第193頁",
+          "source_content_hash": "e12e440bbdc5fa66332f4b035f377bc7add0f114b6aafb2ad8a8e90aeca6f81b",
+          "quote": "北京人工智能基金為一家於2023年12月28日成立的中國有限合夥企業，主要從事人工智能領域的股權投資。",
+          "quote_hash": "f26f641c543955ac8b22985a51c5467fcf5cd4574f85fe56a5968c929c5c6204"
+        },
+        {
+          "source_id": "beijing_hkex_partners",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0205/2026020500038_c.pdf",
+          "source_title": "歷史、發展及公司架構 — 第193頁",
+          "source_content_hash": "e12e440bbdc5fa66332f4b035f377bc7add0f114b6aafb2ad8a8e90aeca6f81b",
+          "quote": "截至最後實際可行日期，北京啟賦管理諮詢合夥企業（有限合夥）及北京京國管置業管理有限公司擔任普通合夥人，各持有0.50%的合夥權益。",
+          "quote_hash": "c1f01cdafc18b492f24b48455f6da1c7efcea0f2aec9a151b6ddd5cb19abb6f0"
+        },
+        {
+          "source_id": "beijing_hkex_lp",
+          "source_url": "https://www1.hkexnews.hk/listedco/listconews/sehk/2026/0205/2026020500038_c.pdf",
+          "source_title": "歷史、發展及公司架構 — 第193頁",
+          "source_content_hash": "e12e440bbdc5fa66332f4b035f377bc7add0f114b6aafb2ad8a8e90aeca6f81b",
+          "quote": "北京人工智能基金的唯一有限合夥人為北京市政府投資引導基金（有限合夥），截至最後實際可行日期，持有99%的合夥權益。",
+          "quote_hash": "0b0de5018aa0b8a821657bec064195b96d8974a2cdf777432fd1d9330e8d8a1c"
+        },
+        {
           "source_id": "FISRC-aa17d1f1d8d04ffb",
           "source_url": "https://www.ithome.com/0/952/336.htm",
           "source_title": "月之暗面 Kimi 融资获国资加持，国智投、中国移动等央企巨头入场",
@@ -161,7 +225,7 @@
           "quote_hash": "a0b8d621ed141fc38c7428f5472b750ac635b5ef9127b7a09c6447f0e9eb22d8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

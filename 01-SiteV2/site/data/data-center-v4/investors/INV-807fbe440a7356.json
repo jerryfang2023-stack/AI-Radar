@@ -140,9 +140,34 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Dylan Patel's SemiAnalysis Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "仅采用 SEC Form D 申报的基金法律信息与管理人栏；未将 SemiAnalysis 媒体业务或创办人资料外推为该基金策略。",
+      "summary": "SEC Form D 将该发行主体列为 SemiAnalysis Capital Fund I, LP，组织地为 Delaware，成立于 2026 年，并把 Dylan Patel 列为普通合伙人的经理。该申报不说明基金投资策略或完整组合。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "SEC Form D 所列法律名称",
+          "value": "SemiAnalysis Capital Fund I, LP",
+          "source_id": "semi_sec"
+        },
+        {
+          "field": "jurisdiction",
+          "label": "SEC Form D 所列组织地",
+          "value": "Delaware",
+          "source_id": "semi_jurisdiction"
+        },
+        {
+          "field": "formation_year",
+          "label": "SEC Form D 所列成立年份",
+          "value": "2026",
+          "source_id": "semi_formation"
+        },
+        {
+          "field": "manager",
+          "label": "SEC Form D 所列普通合伙人经理",
+          "value": "Dylan Patel",
+          "source_id": "semi_manager"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +178,38 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "semi_sec",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2145695/000090514826003383/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "af46c37d7e6a4759b3b6a691ceac3e6e4a523029661ebfaaee140b1071fa6892",
+          "quote": "Name of Issuer SemiAnalysis Capital Fund I, LP Jurisdiction of Incorporation/Organization DELAWARE Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2026 Yet to Be Formed 2.",
+          "quote_hash": "9e811f552460a56f95ab80405986d4b02e4c31dba3374bce62643c5f91edcc71"
+        },
+        {
+          "source_id": "semi_jurisdiction",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2145695/000090514826003383/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "af46c37d7e6a4759b3b6a691ceac3e6e4a523029661ebfaaee140b1071fa6892",
+          "quote": "Jurisdiction of Incorporation/Organization DELAWARE Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2026 Yet to Be Formed 2.",
+          "quote_hash": "b244a41320df338376062277970d739e573ec9c1cce8fe0ab5cd07188e531a5e"
+        },
+        {
+          "source_id": "semi_formation",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2145695/000090514826003383/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "af46c37d7e6a4759b3b6a691ceac3e6e4a523029661ebfaaee140b1071fa6892",
+          "quote": "Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2026 Yet to Be Formed 2.",
+          "quote_hash": "4527c8634b8ca692d50a2dfab8c641c88a05ba1c81550b989ba677719aa249af"
+        },
+        {
+          "source_id": "semi_manager",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2145695/000090514826003383/xslFormDX01/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "af46c37d7e6a4759b3b6a691ceac3e6e4a523029661ebfaaee140b1071fa6892",
+          "quote": "Dylan Patel Manager of the General Partner of the Issuer 2026-07-29 Persons who respond to the collection of information contained in this form are not required to respond unless the form displays a currently valid OMB number.",
+          "quote_hash": "660225f39a8c2130f8b619878c5f8f2dcf28aec1fb1e5e7049149e7ff700a5d2"
+        },
+        {
           "source_id": "FISRC-3947ce709f26c22a",
           "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
           "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
@@ -161,7 +218,7 @@
           "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

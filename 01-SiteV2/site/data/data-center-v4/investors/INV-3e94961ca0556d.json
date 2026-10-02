@@ -139,19 +139,90 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Backed VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位与基金数据来自 Backed VC 官网自述；Zenithon 融资参与情况由 Seraphim Space 报道核验。官网展示组合仅作为当前公开组合线索，不视作业绩或完整投资组合。",
+      "summary": "Backed VC 官网自称是欧洲种子基金，官网显示当前基金规模为 1 亿美元、平均投资票面为 50 万至 500 万美元。Seraphim Space 报道称 Backed VC 领投 Zenithon 的 1000 万美元融资；Backed 官网组合页也将 Zenithon 列入组合。",
+      "facts": [
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "专注欧洲市场的种子基金（官网自述）。",
+          "source_id": "backed_home"
+        },
+        {
+          "field": "current_fund",
+          "label": "当前基金规模",
+          "value": "官网显示 1 亿美元。",
+          "source_id": "backed_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Seed；官网自述主要在早期领投。",
+          "source_id": "backed_home"
+        },
+        {
+          "field": "average_ticket",
+          "label": "平均投资票面",
+          "value": "官网自述为 50 万至 500 万美元。",
+          "source_id": "backed_home"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "Seraphim Space 报道称 Backed VC 领投 Zenithon 的 1000 万美元初始融资。",
+          "source_id": "zenithon_round"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Seraphim Space 报道称 Backed VC 领投 Zenithon 的 1000 万美元初始融资。",
+          "source_id": "zenithon_round"
+        },
+        {
+          "description": "Backed VC 官网组合页将 Zenithon 列为其组合公司，并标注为英国种子期制造业项目。",
+          "source_id": "backed_zenithon_portfolio"
+        },
         {
           "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-51e4efce7466f2fd"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.backed.vc/",
+          "source_id": "backed_home",
+          "url": "https://www.backed.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "backed_home",
+          "source_url": "https://www.backed.vc/",
+          "source_title": "Built to back the bold",
+          "source_content_hash": "0a3d7dc765d9be94452d9a1960cdbad166ca254cb9cfd96464c33cdae7a6c735",
+          "quote": "Built To Back The Bold WE ARE HOME TO BRAVE FOUNDERS BUILDING GENERATION- DEFINING COMPANIES IN FRONTIER TECHNOLOGY Unicorns 06 CURRENT FUND $100M Event Attendees In 2024 4800+ Our Ethos We are your human centric seed fund. We’re determined to do European venture differently. We lead and invest early, with average ticket size $500K - $5M",
+          "quote_hash": "07bbb3eb403eebe4862661174c3bf7efbec5abb6500f697241a66ea0283e50dc"
+        },
+        {
+          "source_id": "backed_zenithon_portfolio",
+          "source_url": "https://www.backed.vc/portfolio",
+          "source_title": "Portfolio",
+          "source_content_hash": "d0242c8630564f5efa0f4040baec7ba5364731b78861547f8aae9bd39ecc64c9",
+          "quote": "Manufacturing UK Seed Zenithon The first world models for extreme physics.",
+          "quote_hash": "ee7c0cb14a55e756bef9e4128a7504ac94548278c2729c9cd2fd0b605279ec63"
+        },
+        {
+          "source_id": "zenithon_round",
+          "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
+          "source_title": "Zenithon Raises $10M For AI Engineering Models | Seraphim Space",
+          "source_content_hash": "3b9e47f9376b40707339f5ac0b038a2624c0b79c5dc51d37dbf334ad75fd7a5b",
+          "quote": "Zenithon AI, a UK-based company developing AI world models for extreme physics has raised $10 million in initial funding. The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "c768cd7de5e297ace014613c4f9d609ef43af4930e73a6b360f3c7f5d1dbb85a"
+        },
         {
           "source_id": "FISRC-51e4efce7466f2fd",
           "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
@@ -161,7 +232,7 @@
           "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

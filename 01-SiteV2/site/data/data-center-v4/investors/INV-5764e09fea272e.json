@@ -140,11 +140,15 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Longaeva Partners L.P. 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Nscale 官方融资公告将 Longaeva Partners L.P. 列为其可转债融资参与方。本条仅归档该项公司披露。",
+      "coverage_note": "仅记录 Nscale 官方公告所列投资方名称；未获得该基金的独立官网或公开策略资料，也不把 Balyasny 其他品牌信息合并到此记录。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Nscale 官方公告将 Longaeva Partners L.P. 列为融资参与方。",
+          "source_id": "nscale_release"
+        },
         {
           "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮参投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "nscale_release",
+          "source_url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing",
+          "source_title": "Nscale Raises $3.36 Billion in Pre-IPO Convertible Financing | Nscale",
+          "source_content_hash": "9194dea938db859cf719910c546c5b015923c76e8d81c3d2d8b5bd8731c3a490",
+          "quote": "Other investors that participated in the financing include Davidson Kempner Capital Management, Qube Research & Technologies (QRT), Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors.",
+          "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -161,7 +173,7 @@
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

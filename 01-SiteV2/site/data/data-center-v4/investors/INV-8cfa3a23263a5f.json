@@ -139,12 +139,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中广创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "简介与案例来自转载文章中的企业署名供稿（页面标注“文章来源：广东中广创投”），按机构自述归类，所列业绩未逐项独立核验；级数AI签约信息由项目服务平台中投华创发布。",
+      "summary": "转载的机构署名供稿将“广东中广创投”对应为广东中广创业投资管理有限公司，自述该公司于2011年成立、总部位于粤港澳大湾区，是私募股权投资机构。供稿列举若干上市企业投资案例；中投华创的项目消息另称，级数AI天使轮由中广创投签约参与。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "供稿披露的公司全称",
+          "value": "广东中广创业投资管理有限公司",
+          "source_id": "zhongguang_self_profile"
+        },
+        {
+          "field": "founding_year",
+          "label": "成立年份（机构自述）",
+          "value": "2011",
+          "source_id": "zhongguang_self_profile"
+        },
+        {
+          "field": "headquarters_region",
+          "label": "总部区域（机构自述）",
+          "value": "粤港澳大湾区",
+          "source_id": "zhongguang_self_profile"
+        },
+        {
+          "field": "institution_type",
+          "label": "机构类型（机构自述）",
+          "value": "私募股权投资机构",
+          "source_id": "zhongguang_self_profile"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "机构自述的投资方向",
+          "value": [
+            "第三代半导体",
+            "新能源",
+            "新材料",
+            "新一代信息技术",
+            "生物医药及军民融合",
+            "人工智能",
+            "低空经济"
+          ],
+          "source_id": "zhongguang_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "署名供稿列举其近年投资培育的多个上市企业案例，包括嘉元科技（688388）等；按机构自述展示。",
+          "source_id": "zhongguang_track_record"
+        },
+        {
+          "description": "中投华创2026年4月发布的签约消息称，级数AI签约对接中广创投并引入超千万元天使轮；报道将郑强称为中广创投董事长兼总经理。",
+          "source_id": "jishu_ai_financing"
+        },
         {
           "description": "融资来源记录：级数AI · 天使轮 · 2026-04-22 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-577050f06608d2f8"
@@ -152,6 +199,46 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "zhongguang_self_profile",
+          "source_url": "https://www.10100.com/article/39687373",
+          "source_title": "会员单位风采｜广东中广创投已投项目2025年第三季度动态- 大数跨境",
+          "source_content_hash": "7c68f8911ee879ca0444b224086b121b89328121950c5870a34087305d6edf5f",
+          "quote": "广东中广创业投资管理有限公司(以下简称:公司)是2011年成立的总部设立在粤港澳大湾区的私募股权投资机构。",
+          "quote_hash": "5eb85d03d551f18da4e8dbb36dd2a2a7c357d38f7512f2c40c7580be24418a69"
+        },
+        {
+          "source_id": "zhongguang_source_attribution",
+          "source_url": "https://www.10100.com/article/39687373",
+          "source_title": "会员单位风采｜广东中广创投已投项目2025年第三季度动态- 大数跨境",
+          "source_content_hash": "7c68f8911ee879ca0444b224086b121b89328121950c5870a34087305d6edf5f",
+          "quote": "文章来源： 广东中广创投",
+          "quote_hash": "9723bd504ced2039b8e27b0fac004558c60c4fd052ddc6c0efdc51ae72c4297c"
+        },
+        {
+          "source_id": "zhongguang_focus",
+          "source_url": "https://www.10100.com/article/39687373",
+          "source_title": "会员单位风采｜广东中广创投已投项目2025年第三季度动态- 大数跨境",
+          "source_content_hash": "7c68f8911ee879ca0444b224086b121b89328121950c5870a34087305d6edf5f",
+          "quote": "公司作为总部设立在粤港澳大湾区的投资机构，未来投资仍将坚持初心，立足粤港澳大湾区投资布局第三代半导体 、新能源、新材料、新一代信息技术、生物医药及军民融合、人工智能、低空经济等战略性新兴产业项目和科创项目，以服务于粤港澳大湾区实体经济和科技创新产业为目标。",
+          "quote_hash": "d723c1a279bca7c31596148f2033bd4ca76ea6011e234090e1f1735208454ca2"
+        },
+        {
+          "source_id": "zhongguang_track_record",
+          "source_url": "https://www.10100.com/article/39687373",
+          "source_title": "会员单位风采｜广东中广创投已投项目2025年第三季度动态- 大数跨境",
+          "source_content_hash": "7c68f8911ee879ca0444b224086b121b89328121950c5870a34087305d6edf5f",
+          "quote": "公司基金及团队近年投资并成功培育了： 1.宏大爆破（002683），2.通宇通讯（002792），3.中富通（300560），4.国立科技（300716），5.文灿股份（603348），6.宏川智慧（002930），7.明阳智能（601615），8.嘉元科技（688388,科创板首批上市）",
+          "quote_hash": "b26ac4f95242e6344abe5857bd79579cda0f26d4e2fa34a2cf2565ac5c697120"
+        },
+        {
+          "source_id": "jishu_ai_financing",
+          "source_url": "https://www.zhongtouhuac.com/h-nd-4193.html",
+          "source_title": "喜讯 | 级数AI 智慧教育项目签约资方中广创投，引入超1000万天使轮融资 - 中投华创-不辜负每个创业梦想",
+          "source_content_hash": "7600c7249a770b19837eb7dcc0ae19667cb9fa0edcf9a496ae7e965325daaf60",
+          "quote": "正式签约对接资方 中广创投，引入超1000万天使轮融资！ 项目至此将 迈入 技术创新、资本助力、产业生态协同发展 的全新阶段。 投资签约仪式现场，级数 AI 创始人兼执行董事陈柯利先生，与中广创投董事长兼总经理郑强先生签署投资协议。",
+          "quote_hash": "772a9cd7a7d81f2b3b17f8ba6212ed64db40cd3d962b909dfa67cc63548abed5"
+        },
         {
           "source_id": "FISRC-577050f06608d2f8",
           "source_url": "https://view.inews.qq.com/a/20260422A041U200",
@@ -161,7 +248,7 @@
           "quote_hash": "bb7d463b1abf135207563fea4a59505e992fa17d64caf81e8b5e8494512faa12"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

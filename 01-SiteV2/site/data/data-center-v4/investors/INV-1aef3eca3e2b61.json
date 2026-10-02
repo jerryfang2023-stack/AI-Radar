@@ -140,9 +140,16 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Daniel Gross and Nat Friedman’s fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "仅按 MatX 融资公告原文记录这一未具正式名称的基金标签；未推断其法律主体、基金条款或完整投资组合。",
+      "summary": "MatX 官方 Series B 公告将参投方之一描述为“Daniel Gross and Nat Friedman’s fund”。Daniel Gross 个人网站称其为早期投资人，常与 Nat Friedman 合作；所涉基金的正式名称、法律主体和完整组合未在这些页面披露。",
+      "facts": [
+        {
+          "field": "public_identity",
+          "label": "公开名称",
+          "value": "融资公告以 Daniel Gross and Nat Friedman’s fund 描述；正式基金名称未披露",
+          "source_id": "matx_series_b"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +157,32 @@
           "source_id": "FISRC-c6e81d3e611e6fe3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "MatX Series B公告",
+          "url": "https://matx.com/research/series_b",
+          "source_id": "matx_series_b"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "matx_series_b",
+          "source_url": "https://matx.com/research/series_b",
+          "source_title": "MatX One and our Series B | MatX",
+          "source_content_hash": "5e3b77e276dc8bbe9929f6045e00b94923e684e271149ca3403f4641ecbf53d4",
+          "quote": "Daniel Gross and Nat Friedman ’s fund, Patrick and John Collison , Triatomic Capital , Harpoon Ventures , Andrej Karpathy , Dwarkesh Patel , and others.",
+          "quote_hash": "e97c2557f9fe2912efae5b050ea0a7713645bd26a5aadd26ca347e6f09ef603e"
+        },
+        {
+          "source_id": "daniel_home",
+          "source_url": "https://danielgross.com/",
+          "source_title": "Daniel Gross",
+          "source_content_hash": "dd7cdc1904f8b855733c97de769e93846f937550173f7c40c873258fbc2b01ca",
+          "quote": "Early stage venture investor, often with Nat Friedman .",
+          "quote_hash": "aa8f01c307ed2b0ec2524ff443dd7b4e182d6b5a06a848c49dda9fe2bcfa42dc"
+        },
         {
           "source_id": "FISRC-c6e81d3e611e6fe3",
           "source_url": "https://matx.com/research/series_b",
@@ -161,7 +192,7 @@
           "quote_hash": "f9c420645022484a3cf7b40de0f2d9f7f6fb7a023bf4533cb6ea80cf33bd2b4a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

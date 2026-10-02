@@ -123,19 +123,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "中信私募 当前按“投资组织”收录。最新融资披露记录日期为 2026-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "中信投资控股官网介绍基金业务板块并将中信私募列为核心管理和运营主体；其广西人工智能产业投资基金公告为合作发起项目，公告披露规模33亿元。",
+      "summary": "中信私募基金管理有限公司是中信投资控股有限公司全资子公司，官网称其为基金业务板块的核心管理和运营主体。其基金业务涵盖母基金、直投基金、专项基金及基础设施、并购、财务型基金，重点关注先进制造、先进材料、信息技术、新能源和节能环保等领域。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "官网披露的机构名称及关系",
+          "value": "中信投资控股有限公司全资子公司中信私募基金管理有限公司。",
+          "source_id": "PFSRC-INV-a3cb0e8b635e19-identity"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的基金业务方向",
+          "value": "先进智造、先进材料、新一代信息技术、新能源与节能环保等战略新兴产业。",
+          "source_id": "PFSRC-INV-a3cb0e8b635e19-focus"
+        },
+        {
+          "field": "fund_matrix",
+          "label": "官网披露的基金类型",
+          "value": "母基金、直投基金、专项基金，以及基础设施基金、并购基金、财务型基金等。",
+          "source_id": "PFSRC-INV-a3cb0e8b635e19-focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "中信私募与广西投资引导基金合作发起广西人工智能产业投资基金，公告披露基金规模为33亿元。",
+          "source_id": "PFSRC-INV-a3cb0e8b635e19-guangxi"
+        },
         {
           "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2026-02 · 2026年2月D轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中信投资控股业务布局页",
+          "value": "https://www.invest.citic/p/yewubuju.html",
+          "url": "https://www.invest.citic/p/yewubuju.html",
+          "source_id": "PFSRC-INV-a3cb0e8b635e19-identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-a3cb0e8b635e19-identity",
+          "source_url": "https://www.invest.citic/p/yewubuju.html",
+          "source_title": "业务布局 - 中信投资控股",
+          "source_content_hash": "82d886005175906dbd11f777e008bb065aeafe5b5f651d59432d95376b31b07e",
+          "quote": "中信投资控股有限公司全资子公司中信私募基金管理有限公司（以下简称“中信私募”）",
+          "quote_hash": "6dadf4326bb27361575364bbd8300ff5d3d7c8e2474814f37ca11fece25a37bd"
+        },
+        {
+          "source_id": "PFSRC-INV-a3cb0e8b635e19-focus",
+          "source_url": "https://www.invest.citic/p/yewubuju.html",
+          "source_title": "业务布局 - 中信投资控股",
+          "source_content_hash": "82d886005175906dbd11f777e008bb065aeafe5b5f651d59432d95376b31b07e",
+          "quote": "基金业务板块以中信私募为核心管理和运营主体，打造多层次、多元化基金矩阵，涵盖母基金、直投基金、专项基金，并进一步延伸至基础设施基金、并购基金、财务型基金等类型。重点关注先进智造、先进材料、新一代信息技术、新能源与节能环保等战略新兴产业",
+          "quote_hash": "d49f3376908e46e0d492bdd61e54c0954854528da74683be89eb3ad670e774a4"
+        },
+        {
+          "source_id": "PFSRC-INV-a3cb0e8b635e19-guangxi",
+          "source_url": "https://www.invest.citic/p/yewubuju.html",
+          "source_title": "业务布局 - 中信投资控股",
+          "source_content_hash": "82d886005175906dbd11f777e008bb065aeafe5b5f651d59432d95376b31b07e",
+          "quote": "广西人工智能产业投资基金子基金管理机构遴选公告：中信投资控股有限公司全资子公司中信私募基金管理有限公司（以下简称“中信私募”）联合广西投资引导基金有限责任公司（以下简称“广西引导基金”）合作发起设立广西人工智能产业投资基金合伙企业（有限合伙）（以下简称“母基金”或“本基金”）。本基金是广西壮族自治区省级专注人工智能领域投资的母基金，基金规模33亿元",
+          "quote_hash": "30bb824ce67ab3252ebdbc8627f3f62115b9cbf85692eea61a71f71b71b42ee3"
+        },
         {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",
           "source_url": "https://news.pedaily.cn/202607/566303.shtml",
@@ -145,7 +200,7 @@
           "quote_hash": "fdf9af6cf9ddc851e8a4a990fb82a4b9f616486e204a050f5724acb62a9bead6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -124,13 +124,20 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "BV Baidu Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "此条仅记录媒体披露的融资关系；机构官网正文未能留存。",
+      "summary": "36氪报道援引 BV Baidu Ventures 称，Tiiny AI 完成天使轮系列融资并列出 BV Baidu Ventures 为共同投资方之一。当前仅记录该公开参投披露；机构官网页面目前无法在共享缓存中留存。",
+      "facts": [
+        {
+          "field": "public_investment",
+          "label": "公开投资披露",
+          "value": "36氪报道将 BV Baidu Ventures 列为 Tiiny AI 天使轮系列融资投资方。",
+          "source_id": "FISRC-dea11fc16cbc6f8b"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Tiiny AI · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "36氪报道将 BV Baidu Ventures 列为 Tiiny AI 数千万美元天使轮系列融资参与方；报道称消息来自 BV Baidu Ventures。",
           "source_id": "FISRC-dea11fc16cbc6f8b"
         }
       ],
@@ -138,14 +145,14 @@
       "sources": [
         {
           "source_id": "FISRC-dea11fc16cbc6f8b",
-          "source_url": "https://baike.baidu.com/en/item/Tiiny%20AI%20Pocket%20Lab/4187767",
-          "source_title": "Tiiny AI Pocket Lab",
-          "source_content_hash": "dca95956a277601d",
-          "quote": "In 2025, Tiiny AI completed its seed funding round, led by Guangqi Capital, with participation from BV Baidu Ventures and Guangyuan L2F Entrepreneur Fund.",
-          "quote_hash": "802814dc73f82c9ebe4855482cd11ef646d421d5fa235a79b48411b41ce40df4"
+          "source_url": "https://eu.36kr.com/en/newsflashes/3917887919582600",
+          "source_title": "&quot;Tiiny AI&quot; has completed an angel round of financing worth tens of millions of US dollars.-36氪",
+          "source_content_hash": "f85b7466e83ae949af81e96a19bce13ff6a80008287bb7f0c6886de26c702f47",
+          "quote": "g worth tens of millions of US dollars. 2026-07-30 16:41 36Kr learned from BV Baidu Ventures that Personal Agent OS company \"Tiiny AI\" has announced the completion of a multi-million US dollar angel series of financing. This round of financing was jointly participated by Shunwei Capital, Matrix Partne",
+          "quote_hash": "4a35879e3510b9ac0e076557538ab803c470bad8f080c6acf31842fb8dd00ef5"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

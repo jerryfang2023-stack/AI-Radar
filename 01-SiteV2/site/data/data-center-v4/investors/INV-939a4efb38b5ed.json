@@ -139,10 +139,37 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Betatron Venture Group 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Betatron Venture Group 官网称其投资总部位于香港或新加坡、面向亚洲传统大型行业的早期 B2B 科技初创企业；其首笔投资可达 200 万美元，覆盖 Seed 至 Series A。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": "Seed 至 Series A",
+          "source_id": "betatron_checks"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示对象",
+          "value": "亚洲大型行业中的早期 B2B 科技初创企业",
+          "source_id": "betatron_home"
+        },
+        {
+          "field": "headquarters",
+          "label": "官网列示主要地点",
+          "value": [
+            "Hong Kong",
+            "Singapore"
+          ],
+          "source_id": "betatron_home"
+        },
+        {
+          "field": "initial_check",
+          "label": "官网列示首笔投资上限",
+          "value": "up to US$2 million",
+          "source_id": "betatron_checks"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +177,32 @@
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Betatron Venture Group",
+          "url": "https://betatron.co/homedraft",
+          "source_id": "betatron_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "betatron_home",
+          "source_url": "https://betatron.co/homedraft",
+          "source_title": "Home | Betatron Venture Group &mdash; Betatron Venture Group",
+          "source_content_hash": "b52cee5fd332ec878355f3d6b524fc0cef28a051dac20d14309ebf0ce5605945",
+          "quote": "Backing B2B tech champions headquartered in Hong Kong and Singapore Betatron funds early-stage B2B tech startups disrupting Asia’s largest industries: manufacturing, logistics, finance, trade, communications and environmental technology.",
+          "quote_hash": "1298a9df51493bc520211fc35012addea14dc8d7a0ad2d3db088f92e572635a4"
+        },
+        {
+          "source_id": "betatron_checks",
+          "source_url": "https://betatron.co/homedraft",
+          "source_title": "Home | Betatron Venture Group &mdash; Betatron Venture Group",
+          "source_content_hash": "b52cee5fd332ec878355f3d6b524fc0cef28a051dac20d14309ebf0ce5605945",
+          "quote": "Writing first checks of up to US$2 million in seed to series A funding rounds, we can also write follow-on investments.",
+          "quote_hash": "82b799c7f8bb9a6394f581a3c6e94ec47b43bc1b1e1fe0e8c9b93a90bd77cceb"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +212,8 @@
           "quote_hash": "707c0113f23e4bdf09d6ec28dbaf84392bddeb95729bb1a6188870dec5362809"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

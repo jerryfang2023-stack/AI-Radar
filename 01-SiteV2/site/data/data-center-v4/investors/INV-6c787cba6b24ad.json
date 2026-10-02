@@ -139,29 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "南创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "南京市创新投资集团官网介绍其为南京市国有创新投资集团。蜂巢互联官网另一篇公告明确将“南创投”对应为南京创新投资集团；其 2026 年融资公告再将南创投列为区域国资股东。",
+      "facts": [
         {
-          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "legal_name",
+          "label": "机构名称",
+          "value": "机构官网名称为南京市创新投资集团有限责任公司。",
+          "source_id": "njicg_profile"
+        },
+        {
+          "field": "investment_mission",
+          "label": "机构使命",
+          "value": "官网称集团集聚创新资本和资源，推动创新型企业发展。",
+          "source_id": "njicg_profile"
+        },
+        {
+          "field": "alias",
+          "label": "公开简称",
+          "value": "蜂巢互联公告将“南创投”明确对应南京创新投资集团。",
+          "source_id": "south_alias"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资披露",
+          "value": "蜂巢互联 2026 年融资公告将南创投列为区域国资股东。",
           "source_id": "FISRC-6d442164db5f81db"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "milestones": [],
+      "track_record": [
         {
-          "source_id": "FISRC-6d442164db5f81db",
-          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
-          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
-          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
-          "quote": "国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资",
-          "quote_hash": "35ae44ccdff618ec98c46559a29250db0bd4e23281fdb1042ebad42b9f0efddb"
+          "description": "蜂巢互联 2026 年融资公告将南创投列为区域国资股东。",
+          "source_id": "FISRC-6d442164db5f81db"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.njicg.com/",
+          "source_id": "njicg_profile",
+          "url": "https://www.njicg.com/"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "njicg_profile",
+          "source_url": "https://www.njicg.com/",
+          "source_title": "南京市创新投资集团有限责任公司",
+          "source_content_hash": "c5d24aeb67ae8545ae5a5cc5b591c76a749119e94afa478462223806b9e48a85",
+          "quote": "南京市创新投资集团有限责任公司 首页 业务板块 业务体系 4+N 产业基金集群 母基金 直接投资基金 S基金 特色业务基金 投资案例 公示公告 遴选公告 结果公示 集团资讯 新闻资讯 创投实拍 企业荣誉 大咖说 行业研究 创投实录 申报通道 关于我们 集团概况 企业文化 企业荣誉 党建工作 社会责任 资 本 赋 能 创 新 ， 创 新 引 领 未 来 资 本 赋 能 创 新 创 新 引 领 未 来 关于创投集团 ABOUT US 南京市创新投资集",
+          "quote_hash": "0de1bd7f9d66961a6d7c660da5a547fcce49bab9efc1f9283babf92ed8193e87"
+        },
+        {
+          "source_id": "south_alias",
+          "source_url": "https://www.honeycombtech.com/news/company/3004",
+          "source_title": "蜂巢互联与南京江北新区、南创投成立10亿工业软件并购基金-深圳蜂巢互联科技有限公司",
+          "source_content_hash": "3fb83fda2284f0fdab9b5c0e156fe593dd08ed45f73014b5dd0f73b9d3e821a2",
+          "quote": "互联在核心工业软件领域的布局开展投资并购，快速吸引云泊软件、未来技术等多家优秀工业软件企业在江北新区设立了分支机构。 近日，蜂巢互联与南京江北新区、 南京创新投资集团（以下简称南创投）完成第二支总规模10亿元的工业软件并购基金设立，重点围绕蜂巢互联打造有全球竞争力的工业软件产业航母舰队进行整合并购投资。 作为首批江苏省战略性新兴产业母基金签约的省市合作基金，这是2月份江苏南京软件与信息服务专项母基金率先落地后第一支成立的工业软件产业基金。 同时，蜂巢互联计划在南京江北新区建设第二总部基地，依托江苏省、南京市优质的制造业基础、人才优势、产业政策，面向轨道交通、船舶、钢铁、高端装备制造等江苏省优势行业",
+          "quote_hash": "3c7d62f5809057b0650b7081b1b73203732d060deaa380b94b162cec2c8d777f"
+        },
+        {
+          "source_id": "FISRC-6d442164db5f81db",
+          "source_url": "https://www.honeycombtech.com/news/company/3210",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+          "source_content_hash": "e38536e6270d1bf78e8b4d574a64cd413a0a33c3060d07b4d50acfa9d5c2804b",
+          "quote": "化投资机构、产业资本三方互补、长期协同的战略股东体系。 国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资，深度联动各地高端制造产业资源，助力区域工业数字化转型落地； 市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构，聚焦企业长期价值成长； 产业链投资方引入海尔资本、利元亨、中软国际、金百泽等上下游，实现技术、客户、场景双向赋能。 蜂巢互联创始人马震表示：多元稳定、坚持长期主义的股东阵容，",
+          "quote_hash": "3fdde927b6e80cfd44aeedc374dff9ef76d8837595da44ee944f909a4d7d290d"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
     }
   }
 }

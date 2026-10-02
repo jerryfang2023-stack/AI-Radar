@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "OG Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "O.G. Venture Partners 官网称其为多阶段风险投资机构，由 Ofer Global 作为唯一有限合伙人支持；官网还介绍了其运营经验和企业网络支持。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网自述类型",
+          "value": "多阶段风险投资机构",
+          "source_id": "og_home"
+        },
+        {
+          "field": "limited_partner",
+          "label": "官网列示唯一有限合伙人",
+          "value": "Ofer Global",
+          "source_id": "og_home"
+        },
+        {
+          "field": "support_approach",
+          "label": "官网列示非资本支持",
+          "value": "运营经验及 Eyal Ofer 企业网络",
+          "source_id": "og_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,32 @@
           "source_id": "FISRC-6442b5e548ad70ee"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "O.G. Venture Partners",
+          "url": "https://www.og-vp.com/",
+          "source_id": "og_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "og_home",
+          "source_url": "https://www.og-vp.com/",
+          "source_title": "O.G. Venture Partners — Multi-Stage Venture Capital",
+          "source_content_hash": "5aec5b786c27ebdba46b34b6dc0a2690a849420b79e05ad461d8c6f7ebab0b10",
+          "quote": "O.G. Venture Partners is a multi‑stage VC firm backed by a single LP, Ofer Global. O.G. Venture Partners is a multi‑stage VC firm backed by a single LP, Ofer Global. O.G. Venture Partners is a multi‑stage VC firm backed by a single LP, Ofer Global. O.G. Venture Partners is a multi‑stage VC firm backed by a single LP, Ofer Global. Our structure enables us to move decisively, invest with conviction, and remain aligned with founders building transfo",
+          "quote_hash": "0f052f626abc4c4f71a21cc73370191c9f46754399739fb3b326c7092337e501"
+        },
+        {
+          "source_id": "og_support",
+          "source_url": "https://www.og-vp.com/",
+          "source_title": "O.G. Venture Partners — Multi-Stage Venture Capital",
+          "source_content_hash": "5aec5b786c27ebdba46b34b6dc0a2690a849420b79e05ad461d8c6f7ebab0b10",
+          "quote": "Beyond capital, we bring operational expertise and access to Eyal Ofer's multi‑generational network of businesses.",
+          "quote_hash": "2ee4268de5abdd15cad3852cd1998cfafebe87d7ad60720935c2f809f24c5165"
+        },
         {
           "source_id": "FISRC-6442b5e548ad70ee",
           "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
@@ -161,7 +203,8 @@
           "quote_hash": "c8c2a1a95dd7dc0c6598d1f3d8da1fd15725127ef1c3300c8d9d32b1931001a1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

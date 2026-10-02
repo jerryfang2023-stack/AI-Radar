@@ -139,10 +139,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Context Capital Management 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Context Capital Management 官网称其为另类资产管理机构，在加州 La Jolla 与康涅狄格州 Greenwich 设有地址，采用相对价值投资方法并以资本保全为重点。",
+      "facts": [
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "Alternative asset management firm",
+          "source_id": "context_about"
+        },
+        {
+          "field": "locations",
+          "label": "官网列出地址",
+          "value": [
+            "La Jolla, California",
+            "Greenwich, Connecticut"
+          ],
+          "source_id": "context_about"
+        },
+        {
+          "field": "approach",
+          "label": "投资方式",
+          "value": "Relative value；以绝对回报为目标并强调资本保全",
+          "source_id": "context_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,24 @@
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Context Capital Management官网",
+          "url": "https://contextfunds.com/about-us/",
+          "source_id": "context_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "context_about",
+          "source_url": "https://contextfunds.com/about-us/",
+          "source_title": "About Us - Context Capital Management",
+          "source_content_hash": "f74048654ea75a918112e09a35c8df212391086ef9366820b1fda261c8c6aa4e",
+          "quote": "Context Capital Management, LLC is an alternative asset management firm based in La Jolla, California and Greenwich, Connecticut.",
+          "quote_hash": "531968ec15f56077e903f3e62f4a9bff457685c69e8700e2d6669bb534f8b15c"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -161,7 +198,8 @@
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

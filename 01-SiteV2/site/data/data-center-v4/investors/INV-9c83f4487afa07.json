@@ -125,11 +125,15 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TIAA Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_note": "此记录只反映 Nuveen 公告所披露的一笔合作投资；未将其扩写为 TIAA Ventures 的整体策略或组合。",
+      "summary": "Nuveen 2025 年公告称，Nuveen 于 2023 年与 TIAA Ventures 合作投资 Brooklyn Investment Group，并涉及少数股权；公告没有说明 TIAA Ventures 单独持有的份额。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Nuveen 公告称，Nuveen 于 2023 年与 TIAA Ventures 合作投资 Brooklyn Investment Group，并涉及少数股权；公告未披露 TIAA Ventures 单独持股信息或份额。",
+          "source_id": "tiaa_brooklyn"
+        },
         {
           "description": "融资来源记录：Reco · 历史轮次未披露 · B轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0d891f327f6f719c"
@@ -137,6 +141,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "tiaa_brooklyn",
+          "source_url": "https://documents.nuveen.com/Documents/Nuveen/Viewer.aspx?download=1&uniqueId=7342a591-2c1c-45e6-bf43-25acd0a94db1",
+          "source_title": "Nuveen Acquires Leading Custom Multi-Asset Direct Indexing Provider, Brooklyn Investment Group",
+          "source_content_hash": "99fb8fe51d91cdb098a35e1557e3132622bf82da1fccd937c37a17fed5c716ed",
+          "quote": "Further underscoring our conviction in the opportunity, Nuveen invested in Brooklyn in partnership with TIAA Ventures, taking on a minority stake in 2023.",
+          "quote_hash": "71e91699838f2abff6fd5a111aac71d22dec5d4a868c4e92e7eeeacaa3ddf68b"
+        },
         {
           "source_id": "FISRC-0d891f327f6f719c",
           "source_url": "https://www.reco.ai/blog/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for-saas-ai-security-among-enterprises",
@@ -146,7 +158,7 @@
           "quote_hash": "768ea10b4f225d9d73535388c1b11d52ef9e755c0780e9b3cbc83fc06177cd4a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

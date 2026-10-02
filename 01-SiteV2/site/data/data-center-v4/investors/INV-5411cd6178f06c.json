@@ -139,10 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "NextLadder Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "NextLadder Ventures 官网称其为融合慈善资本与市场资本的新基金，投资帮助家庭重获经济机会的变革性技术，并支持导航技术工具。",
+      "facts": [
+        {
+          "field": "capital_sources",
+          "label": "资本来源",
+          "value": "慈善资本与市场资本",
+          "source_id": "nextladder_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "帮助家庭提升经济流动性与财务安全的导航技术",
+          "source_id": "nextladder_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +162,32 @@
           "source_id": "FISRC-404aba285b240b86"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "NextLadder Ventures官网",
+          "url": "https://www.nextladder.com/",
+          "source_id": "nextladder_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nextladder_home",
+          "source_url": "https://www.nextladder.com/",
+          "source_title": "Better Lives Today | NextLadder Ventures",
+          "source_content_hash": "6f93f6576fb751e0a00722bd863d4932b33839ff42fd2249de89a2946e92d218",
+          "quote": "NextLadder Ventures is a new fund investing in transformative technologies that empower more families to reclaim their path to prosperity.",
+          "quote_hash": "76c5571e2733fabf96569f717467c939e974a4bc585d29b1c764ad96ea275385"
+        },
+        {
+          "source_id": "nextladder_about",
+          "source_url": "https://www.nextladder.com/about-us",
+          "source_title": "About Us — NextLadder",
+          "source_content_hash": "6e2e6c9959fbd4a8e6cff1d6369878e3b5eb0758a3284e6325ea672315ad3c53",
+          "quote": "blending philanthropy and market capital to invest in transformative technologies that empower more families to reclaim their path to progress.",
+          "quote_hash": "ef13e4ffa2dca0a894c801c4d11a2d5a7cafe60c93a4d2bfc90be08ea6ccc7aa"
+        },
         {
           "source_id": "FISRC-404aba285b240b86",
           "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
@@ -161,7 +197,8 @@
           "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

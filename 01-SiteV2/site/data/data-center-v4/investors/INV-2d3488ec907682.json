@@ -124,18 +124,51 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DG Daiwa Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "DG Daiwa Ventures Inc. 官网投资组合页将 Relixir, Inc.（品牌 Naïve）列为现有组合企业，并介绍其开发 AI agent 编排平台。本条采用官网组合页作为公开披露案例，不推断未披露的投资日期与金额。",
+      "facts": [
+        {
+          "field": "portfolio_company",
+          "label": "公开投资组合",
+          "value": "官网将 Relixir, Inc.（品牌 Naïve）列为现有组合企业。",
+          "source_id": "dgdv"
+        },
+        {
+          "field": "portfolio_company_business",
+          "label": "被投企业业务",
+          "value": "Relixir 提供自动化销售、营销、产品开发与运营工作的 AI agent 编排服务。",
+          "source_id": "dgdv"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官方组合页将 Relixir, Inc.（品牌 Naïve）列为现有组合企业；官网未在该页披露轮次或金额。",
+          "source_id": "dgdv"
+        },
         {
           "description": "融资来源记录：Naïve · 历史轮次未披露 · Seed轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce3d6a1d340a142b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://dg-daiwa-v.com/en/portfolio/",
+          "source_id": "dgdv",
+          "url": "https://dg-daiwa-v.com/en/portfolio/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "dgdv",
+          "source_url": "https://dg-daiwa-v.com/en/portfolio/",
+          "source_title": "PORTFOLIO | DG Daiwa Ventures Inc.",
+          "source_content_hash": "4da473fef0886400fcfae854100e686e58e00bd201a518ab7d741b169b4e67a7",
+          "quote": "enabling direct bank payments for online commerce. Fintech Current Website Relixir, Inc.（Brand: Naïve） Headquarters：USA / Established：2024/ Representative director：Sean Dorje Providing an AI agent orchestration platform automating sales, marketing, product development, and operations. Current Website Kanaglee, ",
+          "quote_hash": "30bba7ea0d58cb15e43034f25b159ff1a17800c01521739622e8cc80fdd893a4"
+        },
         {
           "source_id": "FISRC-ce3d6a1d340a142b",
           "source_url": "https://www.caplight.com/company/usenaive",
@@ -145,7 +178,7 @@
           "quote_hash": "7afe54b1d0d86bae6509fc3a43424fcec4ed7335d41ad02c3ca8546c2eb06b8b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

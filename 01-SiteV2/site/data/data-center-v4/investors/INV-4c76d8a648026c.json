@@ -139,19 +139,62 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Baron Capital Group 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Baron Capital 官方隐私声明说明 Baron Capital Group, Inc. 与其关联机构统称为 Baron Capital；官网将其描述为专注成长型股票投资方案的资产管理机构。CNBC 报道 Baron Capital Group 参与 xAI E 轮融资。",
+      "coverage_note": "机构品牌与法律主体说明来自 Baron Capital 官方隐私声明；xAI 交易信息来自 CNBC 报道。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "业务方向",
+          "value": "为机构、财务顾问及个人投资者提供成长型股票投资方案",
+          "source_id": "baron_press"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "CNBC 报道 Baron Capital Group 参与 xAI E 轮融资。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-23bba75e0baa6d39"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.baroncapitalgroup.com/",
+          "url": "https://www.baroncapitalgroup.com/privacy-policy",
+          "source_id": "baron_legal"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "baron_legal",
+          "source_url": "https://www.baroncapitalgroup.com/privacy-policy",
+          "source_title": "Privacy Policy | Baron Funds",
+          "source_content_hash": "9ca1795ca5f9567eb0c971280050eb71abe08956c5cc4799a9c102436935cba5",
+          "quote": "UK Residents Privacy Policy for California Consumers DIFC Privacy Notice Privacy Notice Commitment to Privacy Baron Capital Group, Inc. and its affiliates, and their respective successors and assigns (collectively, “ Baron Capital ,” “ Baron ,” “ we ,” “ us ” or “ our ”) are committed to responsibly handling personal information that we collect, use or otherwise process regarding our investors (including, for t",
+          "quote_hash": "c39138babda410edf6f6de824e695bfdcac2bf50f4a0a570de398e1b24dfb1b9"
+        },
+        {
+          "source_id": "baron_press",
+          "source_url": "https://www.baroncapitalgroup.com/news-and-press/baron-capital-expands-ucits-launches-four-new-funds",
+          "source_title": "Baron Capital Expands UCITS Offering with Launch of Four New Funds | Baron Funds",
+          "source_content_hash": "34fdccb5e070bca40e99a0a784334b0e274b04e1e5a99f2575389beb882f7060",
+          "quote": "“The four new funds are a natural next step in expanding our product line and global footprint.” About Baron Capital Baron Capital is a premier asset management firm focused exclusively on delivering growth equity investment solutions to institutions, financial advisors, and individual investors.",
+          "quote_hash": "eb1056e25bfae169aac87d90e7980288f152cfc04048024b331442cfe8bdcb54"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+          "source_title": "Elon Musk xAI raises $20 billion from Nvidia, Cisco, investors",
+          "source_content_hash": "e53feda9608b4728be8a79af3f901eba9a3fd8a39670ea90dc4840f5863e2866",
+          "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi&#x27;s MGX and Baron Capital Group.",
+          "quote_hash": "9d2dfc41ca8a07f9fdb7da75144ecf1763d16384bcd5cf00fae5a289aee29f54"
+        },
         {
           "source_id": "FISRC-23bba75e0baa6d39",
           "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
@@ -161,7 +204,7 @@
           "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

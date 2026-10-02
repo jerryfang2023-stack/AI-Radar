@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Llama Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Llama Ventures 官网称其为早期风险投资机构，支持构建 AI-native 企业的创始人，投资范围覆盖深科技硬件、AI 基础设施、垂直 SaaS、医疗与金融科技。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "Early stage",
+          "source_id": "llama_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": [
+            "Deeptech Hardware",
+            "AI Infrastructure",
+            "Vertical SaaS",
+            "Healthcare",
+            "Fintech"
+          ],
+          "source_id": "llama_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,24 @@
           "source_id": "FISRC-199e9ff185705c78"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Llama Ventures官网",
+          "url": "https://llamaventures.vc/about/",
+          "source_id": "llama_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "llama_about",
+          "source_url": "https://llamaventures.vc/about/",
+          "source_title": "About — Llama Ventures",
+          "source_content_hash": "10ffd124084a060b53c29d0a34b899b420abe0e7e2f3885f7e610dbc699e9357",
+          "quote": "Llama Ventures is an early stage venture firm backing ambitious founders building the enduring, AI-native companies of the next decade.",
+          "quote_hash": "56c6aebd2e435de29d1f5ac5634a0d3978c9de288c13f2c830916f4f8b432ad3"
+        },
         {
           "source_id": "FISRC-199e9ff185705c78",
           "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
@@ -161,7 +195,8 @@
           "quote_hash": "ac15258cb66619a32697a75618de792e84a4ec14c9481f0569cbe019e775c33a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

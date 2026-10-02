@@ -139,19 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Atypical Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网元标题与正文对项目退出数量的表述存在差异；本档案不收录退出数量，仅摘录正文中可核对的项目名称。历史项目为机构自述，不代表完整组合。",
+      "summary": "Atypical Ventures 官网自述为关注高科技中早期创业公司的风险基金，介绍创始人卢蓉，并列举快手、UCloud、奇安信等公开项目。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "关注高科技中早期创业公司。",
+          "source_id": "atypical"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "官网介绍创始人卢蓉（Ruby Lu）。",
+          "source_id": "atypical"
+        },
+        {
+          "field": "portfolio_examples",
+          "label": "官网列举项目",
+          "value": "官网列举快手、UCloud、奇安信、当当网、易车和优信等项目。",
+          "source_id": "atypical"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列举的历史项目包括快手、UCloud、奇安信、当当网、易车和优信；此为机构自述案例。",
+          "source_id": "atypical"
+        },
         {
           "description": "融资来源记录：明日新程 · 多轮融资 · 2026-04-13 · 本轮联合领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7e62ff671767e98d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.atypical-vc.com/",
+          "source_id": "atypical",
+          "url": "https://www.atypical-vc.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "atypical",
+          "source_url": "https://www.atypical-vc.com/",
+          "source_title": "Atypical Ventures | Atypical Ventures 官网 | Atypical Ventures是关注高科技领域中早期创业公司的风险投资机构，单笔投资规模在100万美金到2000万美金间。Atypical Ventures创始合伙人卢蓉（Ruby Lu）在过去十五年主导20笔投资，其中有6家成功上市，5家并购退出。她主导的项目包括快手、优信、UCloud、丁香园、好大夫和亿咖通等。",
+          "source_content_hash": "a684cb8d06c28c5a02c33bf89a69e30e54127ff9220723a0024a792bdfe2dba2",
+          "quote": "快手、优信、UCloud、丁香园、好大夫和亿咖通等。 EN EN Home About Team Portfolios Values Contact Atypical Ventures 是关注高科技中早期创业公司的风险基金。基金创始人卢蓉（Ruby Lu）从 03 年从事风险投资至今主导了二十余笔投资，其中有 8 家公司成功上市，即快手、UCloud、奇安信、Kodiak Science、当当网、易车、优信、文思海辉；4 个并购退出，即 Musical.ly，乐动力，优雅100，渡鸦科技；还有若干超级独角兽，包括ECarX亿咖通、好大夫、丁香园、Omada、OrthoBullets等。 Atypical寓意敢为不同。Atypical ",
+          "quote_hash": "26938314904e1fc0a17b511091b2f6f4a1a792ade67cba3ecbab4b36864823ab"
+        },
         {
           "source_id": "FISRC-7e62ff671767e98d",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-04-13/doc-inhuitrc9723839.shtml",
@@ -161,7 +200,7 @@
           "quote_hash": "3171ba642df2ca76a3e79b457c4579918611803aa67892146b2d0abdefb822d8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

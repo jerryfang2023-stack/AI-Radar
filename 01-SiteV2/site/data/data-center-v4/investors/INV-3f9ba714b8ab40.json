@@ -139,19 +139,61 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "National Security Strategic Investment Fund (NSSIF) 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "NSSIF 是英国政府的国家安全与国防深科技风险投资基金。官网称其直接投资于具有战略相关性的双重用途科技初创企业；Optalysys 官方公告将其列为该轮参投方。",
+      "facts": [
+        {
+          "field": "investment_mandate",
+          "label": "投资方向",
+          "value": "直接投资具有国家安全与国防战略相关性的双重用途科技初创企业",
+          "source_id": "nssif_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Optalysys 官方融资公告将 NSSIF 列为参投方。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Optalysys · A轮扩展 · 2026-01-22 · 本轮参投 · £23m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-243f9a39823d6336"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.nssif.gov.uk/",
+          "url": "https://www.nssif.gov.uk/",
+          "source_id": "nssif_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nssif_official",
+          "source_url": "https://www.nssif.gov.uk/",
+          "source_title": "NSSIF | Home",
+          "source_content_hash": "e184fe6380761d2eac867f2eab02f5f6972e85e5d1ff07819fd5039cde9be932",
+          "quote": "What we do Investing in the future We invest directly in pioneering start-ups developing dual-use technologies with strategic relevance to National Security and Defence (NS&D) – as well as indirectly leading venture capital funds.",
+          "quote_hash": "88a5019123965d29888f4b0ca35142cb3953a2acb07ce7024b707ceedec2fb35"
+        },
+        {
+          "source_id": "nssif_identity",
+          "source_url": "https://www.nssif.gov.uk/",
+          "source_title": "NSSIF | Home",
+          "source_content_hash": "e184fe6380761d2eac867f2eab02f5f6972e85e5d1ff07819fd5039cde9be932",
+          "quote": "The UK Government’s deep tech venture capital fund for National Security and Defence.",
+          "quote_hash": "e64d5f8974ba50d044a1f6d8b1618d8fdae36e19450c300c30680a31a60427ab"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://optalysys.com/resource/optalysys-secures-23m-funding-to-advance-photonic-computing/",
+          "source_title": "Optalysys secures £23m to advance photonic computing and US expansion",
+          "source_content_hash": "c43739cadf81505d69c64ebbe0abada652626f39d8bc2adc5289c37fb078677e",
+          "quote": "Careers at Optalysys Contact Optalysys secures £23m to advance photonic computing and US expansion Leeds, UK, 22nd January 2026: Optalysys , the photonic computing company, has raised £23 million in a Series A extension round led by Northern Gritstone with participation from imec.xpand, Lingotto Horizon, and the UK government’s National Security Strategic Investment Fund (NSSIF).",
+          "quote_hash": "52b6326d57122eb76c3f3957dd93cf4bab45574d1fd6de100461fe14e84df881"
+        },
         {
           "source_id": "FISRC-243f9a39823d6336",
           "source_url": "https://optalysys.com/resource/optalysys-secures-23m-funding-to-advance-photonic-computing/",
@@ -161,7 +203,8 @@
           "quote_hash": "e9a5b6742e4007d3cbaa425e00b2689f6d41ee721f7441ad8d2e931d5a24a794"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

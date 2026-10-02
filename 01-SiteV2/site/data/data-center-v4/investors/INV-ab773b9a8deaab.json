@@ -139,19 +139,82 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Felix Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Felix Capital 官网将其定位为服务 Creative Class 的风险投资机构，并展示精选投资和伦敦联系方式；投资列表为官网选列展示。",
+      "summary": "Felix Capital 是一家以科技与创造力交汇为定位的风险投资机构，官网将目标描述为 Creative Class，关注家庭、工作及其间的人类体验变化。官网列有伦敦办公地址及公开邮箱。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的机构定位",
+          "value": "官网将其称为服务 Creative Class 的风险投资机构，并关注科技与创造力交汇处及人类体验的变化。",
+          "source_id": "PFSRC-INV-ab773b9a8deaab-thesis"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Felix Capital 官网精选投资展示包括 Bioptimus、CreativeFabrica 和 Dust；该展示不代表完整投资组合。",
+          "source_id": "PFSRC-INV-ab773b9a8deaab-portfolio"
+        },
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a587e714925b882"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Felix Capital 官网",
+          "value": "https://www.felixcap.com/",
+          "url": "https://www.felixcap.com/",
+          "source_id": "PFSRC-INV-ab773b9a8deaab-thesis"
+        },
+        {
+          "kind": "address",
+          "label": "官网列示的伦敦地址",
+          "value": "27 Beak St. W1F 9RU London, United Kingdom",
+          "source_id": "PFSRC-INV-ab773b9a8deaab-contact"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "info@felixcap.com",
+          "source_id": "PFSRC-INV-ab773b9a8deaab-contact"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-ab773b9a8deaab-thesis",
+          "source_url": "https://www.felixcap.com/",
+          "source_title": "Felix Capital",
+          "source_content_hash": "f8c394cc40ab8ffd7caaae813074f4250b14ec491059971564116c63e9e4c96c",
+          "quote": "We are a venture capital firm for the Creative Class We operate at the intersection of technology and creativity.",
+          "quote_hash": "8555d735cabd4a79d60b9b9938c06c9ff18156db0555d225770bf21ae11cf42c"
+        },
+        {
+          "source_id": "PFSRC-INV-ab773b9a8deaab-experience",
+          "source_url": "https://www.felixcap.com/",
+          "source_title": "Felix Capital",
+          "source_content_hash": "f8c394cc40ab8ffd7caaae813074f4250b14ec491059971564116c63e9e4c96c",
+          "quote": "We focus on the evolution of the human experience - at home, at work and in-between.",
+          "quote_hash": "e4c64a9c003e5adc500e2c2bfce3eeba7c3707520c1d342e375be01346f0edbc"
+        },
+        {
+          "source_id": "PFSRC-INV-ab773b9a8deaab-contact",
+          "source_url": "https://www.felixcap.com/",
+          "source_title": "Felix Capital",
+          "source_content_hash": "f8c394cc40ab8ffd7caaae813074f4250b14ec491059971564116c63e9e4c96c",
+          "quote": "27 Beak St. W1F 9RU London, United Kingdom info@felixcap.com",
+          "quote_hash": "f51fe75e5ec7a3950aac404ae175d6c29cc752c2960462626bdb79c75aae19da"
+        },
+        {
+          "source_id": "PFSRC-INV-ab773b9a8deaab-portfolio",
+          "source_url": "https://www.felixcap.com/",
+          "source_title": "Felix Capital",
+          "source_content_hash": "f8c394cc40ab8ffd7caaae813074f4250b14ec491059971564116c63e9e4c96c",
+          "quote": "Bioptimus Read more → CreativeFabrica Read more → Dust Read more →",
+          "quote_hash": "adbce9fab1236e538561d5b95a0f3b749e0e8482112475aebeba98d8114ab352"
+        },
         {
           "source_id": "FISRC-2a587e714925b882",
           "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
@@ -161,7 +224,7 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

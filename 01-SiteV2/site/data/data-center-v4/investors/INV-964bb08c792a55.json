@@ -139,11 +139,36 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "KT Corporation 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "创业孵化与基金信息来自 KT 官方 ESG 报告；联合基金是运营商共同设立，不等同于 KT 独立基金。",
+      "summary": "KT 2023 年 ESG 报告称，Business Collaboration 项目为初创企业对接 KT 业务部门并支持业务开发，单家支持最高 KRW 70 million；报告还记载 KT 于 2022 年与另外两家电信运营商共同设立 KRW 40 billion ESG 基金，投向采用 ESG 技术的初创企业。",
+      "facts": [
+        {
+          "field": "startup_support",
+          "label": "创业企业合作支持",
+          "value": "Business Collaboration 为初创企业对接 KT 业务部门并支持业务开发，单家最高 KRW 70 million。",
+          "source_id": "kt_incubation"
+        },
+        {
+          "field": "joint_fund",
+          "label": "联合 ESG 基金",
+          "value": "2022 年与另外两家电信运营商设立 KRW 40 billion 基金。",
+          "source_id": "kt_esg"
+        },
+        {
+          "field": "fund_focus",
+          "label": "基金方向",
+          "value": "投资采用 ESG 技术的潜力初创企业。",
+          "source_id": "kt_esg"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022",
+          "description": "KT 与另外两家主要电信运营商设立总额 KRW 40 billion 的联合 ESG 基金。",
+          "source_id": "kt_esg"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：GMI Cloud · B轮 · 2026-10-01 · 本轮参投 · $223 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -153,6 +178,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "kt_incubation",
+          "source_url": "https://corp.kt.com/eng/archive/ipgrpt/attach/now/OURFOCUSSTRATEGY_%EC%98%81%EB%AC%B8.pdf",
+          "source_title": "KT ESG Report 2023",
+          "source_content_hash": "e7e19cfce5a9bc62f5a5fcf34483277239fd8368372a78e2f13265e356e3aa39",
+          "quote": "To facilitate the startup ecosystem, we identify outstanding startups, match each startup with a business department of KT to develop business and provide up to KRW 70 million.",
+          "quote_hash": "b56a2b44c11224d14ef58b3ff25815162579e25febe887d91d6a7b582c6f3a5a"
+        },
+        {
+          "source_id": "kt_esg",
+          "source_url": "https://corp.kt.com/eng/archive/ipgrpt/attach/now/OURFOCUSSTRATEGY_%EC%98%81%EB%AC%B8.pdf",
+          "source_title": "KT ESG Report 2023",
+          "source_content_hash": "e7e19cfce5a9bc62f5a5fcf34483277239fd8368372a78e2f13265e356e3aa39",
+          "quote": "KT created and established an ESG fund worth KRW 40 billion in 2022 in cooperation with two other telecommunications companies",
+          "quote_hash": "dfb4b91c22d270ead24cbccc42d054505972a85ee2a27acf4187c8b45bbbb9cc"
+        },
+        {
+          "source_id": "kt_esg_focus",
+          "source_url": "https://corp.kt.com/eng/archive/ipgrpt/attach/now/OURFOCUSSTRATEGY_%EC%98%81%EB%AC%B8.pdf",
+          "source_title": "KT ESG Report 2023",
+          "source_content_hash": "e7e19cfce5a9bc62f5a5fcf34483277239fd8368372a78e2f13265e356e3aa39",
+          "quote": "invest in promising startups with technologies in the ESG field",
+          "quote_hash": "2fe3eecfc6000993e85c4fe66125f681c74a47ae6237b1c56b541e6f8eda957d"
+        },
+        {
           "source_id": "FISRC-f5de203e610041a3",
           "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
           "source_title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
@@ -161,7 +210,7 @@
           "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

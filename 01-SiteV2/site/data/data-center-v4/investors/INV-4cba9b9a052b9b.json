@@ -140,19 +140,53 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "March Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "March Capital 官网称其投资于人工智能革命前沿的科技企业，并寻找大型市场机会。Together AI 官方公告将 March Capital 列为其 C 轮投资方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "处于人工智能发展前沿的科技企业",
+          "source_id": "march_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Together AI 官方公告将 March Capital 列为 C 轮投资方。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c76c0a4ea6adedb7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://marchcp.com/",
+          "url": "https://marchcp.com/",
+          "source_id": "march_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "march_official",
+          "source_url": "https://marchcp.com/",
+          "source_title": "Home - March Capital",
+          "source_content_hash": "9c6d9488d08eab400b311375c3b43db09c0816da1990c03835e3415d5b5c2b5c",
+          "quote": "folio The Montgomery Summit For Founders For Investors Media & Insights Investor Login Press Kit Terms of Use WE INVEST IN FRONTIER TECHNOLOGY COMPANIES AT THE LEADING EDGE OF THE AI REVOLUTION ABOUT US WE LOOK FOR MASSIVE MARKET OPPORTUNITIES AND TEAMS BUILDING WITH VELOCITY Our Portfolio WE PARTNER WITH EXCEPTIONAL ENTREPRENEURS TO BUILD CATEGORY-DEFINING COMPANIES FOR FOUNDERS WE INVEST IN FRONTIER TECHNOL",
+          "quote_hash": "13838cd08e9ced5836c92ef8a6260db822bf56e38d255dc574d8feaddc43ec66"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://www.together.ai/blog/announcing-our-series-c",
+          "source_title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
+          "source_content_hash": "7198081df0d210e6030fd412bc25ea5dc31cbf2fceb19796a17dafcc54144d8f",
+          "quote": "Today, I am excited to announce the next milestone in our journey with Series C funding of $800 million from an incredible group of investors including Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others.",
+          "quote_hash": "84603f01549054736f29d93ec9f544ee3d4f0ae9fbc6e754e57c1037a677bd3e"
+        },
         {
           "source_id": "FISRC-c76c0a4ea6adedb7",
           "source_url": "https://www.together.ai/blog/announcing-our-series-c",
@@ -162,7 +196,8 @@
           "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

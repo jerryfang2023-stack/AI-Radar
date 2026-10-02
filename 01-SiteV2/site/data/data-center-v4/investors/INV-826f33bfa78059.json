@@ -139,12 +139,41 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "前海母基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "政府报道将“前海母基金”明确描述为前海方舟管理的第一只基金；投资数量与金额按 2026-06-01 报道口径记录。",
+      "summary": "深圳市前海管理局 2026 年 6 月报道记载，前海方舟管理的第一只基金“前海母基金”于 2016 年在前海注册；截至该报道披露时，该基金已投资 35 个前海项目，决策投资金额超过 23 亿元。",
+      "facts": [
+        {
+          "field": "operator",
+          "label": "政府报道所述管理机构",
+          "value": "前海方舟资产管理有限公司",
+          "source_id": "qianhai_operator"
+        },
+        {
+          "field": "registration_year",
+          "label": "政府报道所述注册年份",
+          "value": "2016",
+          "source_id": "qianhai_official"
+        },
+        {
+          "field": "report_date",
+          "label": "政府报道发布日期",
+          "value": "2026-06-01",
+          "source_id": "qianhai_report"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2016",
+          "description": "深圳市前海管理局报道记载前海母基金于 2016 年在前海注册。",
+          "source_id": "qianhai_official"
+        }
+      ],
       "track_record": [
+        {
+          "description": "截至 2026-06-01 政府报道披露时，前海母基金已投资 35 个前海项目，决策投资金额超过 23 亿元；这是有明确日期的选定公开口径。",
+          "source_id": "qianhai_report"
+        },
         {
           "description": "融资来源记录：OmAI联汇 · 轮次未披露 · 2026-08-05 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c67465ccaf22ff61"
@@ -152,6 +181,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "qianhai_official",
+          "source_url": "https://qh.sz.gov.cn/sygnan/lssj/content/post_12821980.html",
+          "source_title": "前海“数智空间”正式启用，首批12家优质科技企业集中入驻",
+          "source_content_hash": "4837e41f390232e71317b7f6267d10254e0c01c0c182290712e5d1a926d7853b",
+          "quote": "前海母基金注册于2016年前海，目前已投资前海项目包括墨芯科技、灵图创新等35个，决策投资金额超23亿元，助力招商落地前海子公司80个，注册资本超66亿元。",
+          "quote_hash": "2d211753ddfcb0642d69a1de8205a1cddb631d01786417a4f508cd619355bed9"
+        },
+        {
+          "source_id": "qianhai_operator",
+          "source_url": "https://qh.sz.gov.cn/sygnan/lssj/content/post_12821980.html",
+          "source_title": "前海“数智空间”正式启用，首批12家优质科技企业集中入驻",
+          "source_content_hash": "4837e41f390232e71317b7f6267d10254e0c01c0c182290712e5d1a926d7853b",
+          "quote": "前海方舟资产管理有限公司主管合伙人黄小荣表示，公司管理的第一只基金前海母基金注册于2016年前海，目前已投资前海项目包括墨芯科技、灵图创新等35个，决策投资金额超23亿元，助力招商落地前海子公司80个，注册资本超66亿元。",
+          "quote_hash": "15ce9dbaa1ffe7c8e04c76a7f34390a90339f6190b43db305d1f6ac0a4ebba8c"
+        },
+        {
+          "source_id": "qianhai_report",
+          "source_url": "https://qh.sz.gov.cn/sygnan/lssj/content/post_12821980.html",
+          "source_title": "前海“数智空间”正式启用，首批12家优质科技企业集中入驻",
+          "source_content_hash": "d2a22f117bfee7d67a37385d0f6093631ae8ead0a5774edf43d3986544530181",
+          "quote": "发布日期：2026-06-01\n“对我们来说，前海数智空间扮演了‘项目过滤’和‘生态链接’角色，通过聚焦硬科技赛道，汇聚一批高成长性的企业，有效提升我们对投资项目的触达效率和精准度。”前海方舟资产管理有限公司主管合伙人黄小荣表示，公司管理的第一只基金前海母基金注册于2016年前海，目前已投资前海项目包括墨芯科技、灵图创新等35个，决策投资金额超23亿元",
+          "quote_hash": "901b38f46cbd67c972fc13978414a42ca8506e9ef8cebe4acaa00d608075974e"
+        },
         {
           "source_id": "FISRC-c67465ccaf22ff61",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-08-05/doc-inimfshr4736366.shtml",
@@ -161,7 +214,7 @@
           "quote_hash": "47678438dbefe7cf4b82b4c36abcf1f846b491f19062a436c965c3a4fc046674"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

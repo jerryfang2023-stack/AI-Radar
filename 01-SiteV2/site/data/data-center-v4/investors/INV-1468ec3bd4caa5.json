@@ -123,10 +123,16 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cota Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Cota Capital 官网强调支持打造“net new”技术的创始人，并介绍其通过知识与创始人协作推动企业发展。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网强调支持创始人打造新技术与新市场",
+          "source_id": "cota_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +140,24 @@
           "source_id": "FISRC-2c01dfb7ebd1357c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Cota Capital官网",
+          "url": "https://www.cotacapital.com/",
+          "source_id": "cota_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cota_home",
+          "source_url": "https://www.cotacapital.com/",
+          "source_title": "Cota Capital",
+          "source_content_hash": "5e7e0fe615b1124828b5e1b354e1515aab1d31eb08531175ac7344270be4cd25",
+          "quote": "Cota empowers founders building net new technologies: visionary ideas that either were never before possible or are solving problems that didn’t exist before now.",
+          "quote_hash": "7b2d5229041b5c0aba630aec4a8b1fbd055b0cb84d0794cef9d8388f542ae5ff"
+        },
         {
           "source_id": "FISRC-2c01dfb7ebd1357c",
           "source_url": "https://startupintros.com/orgs/cerebras-systems",
@@ -145,7 +167,8 @@
           "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

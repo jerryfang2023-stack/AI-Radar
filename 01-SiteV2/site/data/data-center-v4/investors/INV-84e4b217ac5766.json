@@ -139,12 +139,41 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Horizon Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "采用 Horizon Capital 发布的 Preply 投资公告识别其乌克兰导向基金；未与其他同名 Horizon Capital 实体合并。",
+      "summary": "Horizon Capital 2023 年发布的 Preply 投资公告将其描述为投资乌克兰快速增长科技与出口导向企业的美国私募股权机构；公告确认该交易是 Horizon Capital Growth Fund IV 的首笔投资。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "公告所述机构类型",
+          "value": "美国私募股权机构",
+          "source_id": "horizon_preply"
+        },
+        {
+          "field": "geography",
+          "label": "公告所述投资地域",
+          "value": "乌克兰",
+          "source_id": "horizon_preply"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公告所述投资方向",
+          "value": "快速增长科技与出口导向企业",
+          "source_id": "horizon_preply"
+        },
+        {
+          "field": "fund",
+          "label": "公告所述交易所属基金",
+          "value": "Horizon Capital Growth Fund IV (HCGF IV)",
+          "source_id": "horizon_fund"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Horizon Capital 2023-07-20 公告称对 Preply 的投资是 HCGF IV 的首笔投资。",
+          "source_id": "horizon_fund"
+        },
         {
           "description": "融资来源记录：Preply · D轮 · 2026-01-21 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7e564fafd9f90842"
@@ -152,6 +181,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "horizon_preply",
+          "source_url": "https://www.prnewswire.com/news-releases/horizon-capital-backs-preply-as-the-first-deal-of-its-historic-ukraine-focused-hcgf-iv-fund-301881600.html",
+          "source_title": "Horizon Capital Backs Preply as the First Deal of its Historic Ukraine-focused HCGF IV Fund",
+          "source_content_hash": "1e47e83526d2390d66bf026a4359420f5a8f648c6e01f50cf3e181d8e016c444",
+          "quote": "U.S. private equity firm investing primarily in fast-growing tech and export oriented companies in Ukraine , announced an investment into Ukrainian-founded Preply, a leading global online language learning platform. This transaction marks the first investment from Horizon Capital's latest fund, Horizon Capital Growth Fund IV (HCGF IV), which reached $254 million at its Interim Closing on April 28, 2023 . Founded in 2012 by three Ukrainian founders Kirill Bigai , Serge Lukyanov , and Dmytro Voloshyn , Preply has bec",
+          "quote_hash": "f198e3936b7e1bf4715a3a66f75371b1bfe6cf71e2e296af03c0f6ca57db541b"
+        },
+        {
+          "source_id": "horizon_fund",
+          "source_url": "https://www.prnewswire.com/news-releases/horizon-capital-backs-preply-as-the-first-deal-of-its-historic-ukraine-focused-hcgf-iv-fund-301881600.html",
+          "source_title": "Horizon Capital Backs Preply as the First Deal of its Historic Ukraine-focused HCGF IV Fund",
+          "source_content_hash": "1e47e83526d2390d66bf026a4359420f5a8f648c6e01f50cf3e181d8e016c444",
+          "quote": "This transaction marks the first investment from Horizon Capital's latest fund, Horizon Capital Growth Fund IV (HCGF IV), which reached $254 million at its Interim Closing on April 28, 2023 .",
+          "quote_hash": "efc2359b55d994414245bb9ae4ac89ecf3f3d0350fff8dfd34cef58b97fb64fd"
+        },
         {
           "source_id": "FISRC-7e564fafd9f90842",
           "source_url": "https://www.prnewswire.com/news-releases/preply-raises-150-million-to-shape-the-future-of-education-through-human-led-ai-enhanced-learning-302665890.html",
@@ -161,7 +206,7 @@
           "quote_hash": "26afa3762b4fde0fb22402c25b5e88dd8ed9a50d7365113a5c0b121168f15e20"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -123,19 +123,65 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Naver Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "NAVER 于 2025 年宣布计划在硅谷设立 NAVER Ventures，作为面向北美初创企业的全球投资计划，并称其首笔投资为视频 AI 公司 TwelveLabs。",
+      "facts": [
+        {
+          "field": "initiative",
+          "label": "投资计划",
+          "value": "NAVER Ventures：NAVER 的硅谷全球风险投资计划",
+          "source_id": "naver_press"
+        },
+        {
+          "field": "initial_investment",
+          "label": "首笔投资",
+          "value": "TwelveLabs（视频 AI）",
+          "source_id": "naver_press"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-06-08",
+          "description": "NAVER 发布计划在硅谷设立 NAVER Ventures 的公告。",
+          "source_id": "naver_press"
+        }
+      ],
       "track_record": [
+        {
+          "description": "NAVER 官方公告称其将从视频 AI 初创企业 TwelveLabs 开始投资。",
+          "source_id": "naver_press"
+        },
         {
           "description": "融资来源记录：Positron AI · 历史轮次未披露 · 参与整体融资安排，所属分期未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3947ce709f26c22a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "NAVER Ventures公告（NAVER Corp.）",
+          "url": "https://www.navercorp.com/en/media/pressReleasesDetail?seq=32559",
+          "source_id": "naver_press"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "naver_press",
+          "source_url": "https://www.navercorp.com/en/media/pressReleasesDetail?seq=32559",
+          "source_title": "NAVER Expands Startup Investments in Silicon Valley with the Planned Establishment of NAVER Ventures l NAVER Corp.",
+          "source_content_hash": "b3c626a037ef2c63ce006c00b7face9deca524f32fb600671619b4d2e5f76817",
+          "quote": "Planned Establishment of NAVER Ventures l NAVER Corp.",
+          "quote_hash": "2071a5f978c3a09865348e4a16c157bbdbe17cf74bbe8435fde8e83dff9c0041"
+        },
+        {
+          "source_id": "naver_story",
+          "source_url": "https://www.navercorp.com/en/story/storyDetail?seq=32621",
+          "source_title": "Chairman Lee Hae-jin talks about the background for establishing “NAVER Ventures,” the venture capital arm of NAVER in North America l NAVER Corp.",
+          "source_content_hash": "dd607e57c04c5fb536d5b56d0854f168a1ccaa8cb6a1c1a6f494a2545ff13511",
+          "quote": "the venture capital arm of NAVER in North America l NAVER Corp.",
+          "quote_hash": "9ec2676cda6213c75a58a7c0887dfa06f666e680f4b6145c78c160266a5d0b5d"
+        },
         {
           "source_id": "FISRC-3947ce709f26c22a",
           "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
@@ -145,7 +191,8 @@
           "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

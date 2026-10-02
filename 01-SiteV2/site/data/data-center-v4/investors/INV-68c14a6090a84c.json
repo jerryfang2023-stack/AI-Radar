@@ -139,29 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vela Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构定位引用官网；Pensive 融资关系来自媒体报道，未表述为公司官方公告。",
+      "summary": "Vela Partners 官网将自身描述为量化、AI 原生、科学化的风险投资机构。WOWTALE 报道将其列为 Pensive 种子轮参投方之一；该融资信息按媒体二手披露标注。",
+      "facts": [
         {
-          "description": "融资来源记录：Pensive · 种子轮 · 2026-02-27 · 本轮参投 · $6.8M。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "investment_approach",
+          "label": "投资方法",
+          "value": "官网自述其采用量化、AI 原生和科学化的方法开展风险投资。",
+          "source_id": "vela_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资披露",
+          "value": "WOWTALE 报道将其列为 Pensive 种子轮投资方之一。",
           "source_id": "FISRC-4c101bd2bd412982"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "WOWTALE 报道称其参与 Pensive 680 万美元种子轮；该笔融资关系为媒体二手披露。",
+          "source_id": "FISRC-4c101bd2bd412982"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://vela.partners/about",
+          "source_id": "vela_profile",
+          "url": "https://vela.partners/about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vela_profile",
+          "source_url": "https://vela.partners/about",
+          "source_title": "About Vela Partners | Vela Partners",
+          "source_content_hash": "368a716b9024c4880f398313300ffa892ae9761c56fc02a5b13bf47034749f6e",
+          "quote": "artners Research Products Portfolio Company ▾ Menu ▾ About · Vela Partners A quant, AI-native , scientific VC. Find outliers earliest with the highest precision. Our Vision Home ownership sits near the base of Maslow&#x27;s hierarchy, and it is genuinely remarkable that in much of the world today, anyone who works har",
+          "quote_hash": "1460f30f1dc6dbef71e32f7fdf39d18036438ea73a85be63f8cba3d2be0cd9f1"
+        },
         {
           "source_id": "FISRC-4c101bd2bd412982",
           "source_url": "https://en.wowtale.net/2026/02/27/233611/",
-          "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
-          "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
-          "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
-          "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
+          "source_title": "Pensive Raises $6.8M Seed Round to Scale AI-Assisted Grading and Personalized Learning - WOWTALE",
+          "source_content_hash": "16316c1346cd82f2527d5292937a3aa6f47d3eafc34d336b7ae5a61ec89e2ef9",
+          "quote": "i Fund , a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures , Vela Partners , Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others. The company is also opening its platform to all instructors, following a close",
+          "quote_hash": "e9a1335bfe3a7a9f3f5c8fbb80323b68680fa7f3f8813456fc1229de3d58137d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,29 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Copper Sky Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构定位引用官网；Menos AI 融资关系目前来自第三方新闻，不表述为公司官方公告。",
+      "summary": "Copper Sky Capital 官网称其投资美国内陆地区的早期软件公司。Menos AI 的融资报道将其列为 510 万美元 Pre-A 轮领投方；融资信息来自第三方报道，未找到被投方官网公告。",
+      "facts": [
         {
-          "description": "融资来源记录：Menos AI · Pre-A轮 · 2026-09-29 · 本轮领投 · $5.1M。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网称其投资美国内陆地区的早期软件公司。",
+          "source_id": "copper_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资披露",
+          "value": "第三方报道将其列为 Menos AI 510 万美元 Pre-A 轮领投方。",
           "source_id": "FISRC-61f4ef734c265738"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "The SaaS News 报道称其领投 Menos AI 510 万美元 Pre-A 轮；该信息为媒体二手披露。",
+          "source_id": "FISRC-61f4ef734c265738"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://copperskycapital.com/",
+          "source_id": "copper_profile",
+          "url": "https://copperskycapital.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "copper_profile",
+          "source_url": "https://copperskycapital.com/",
+          "source_title": "Copper Sky Capital",
+          "source_content_hash": "34f41c046e1ce1b22bff038c0f49fe3fc197a65feae0d0ca86a3123db6671a92",
+          "quote": "sting in innovation across the American Interior. Copper Sky Capital is an early-stage venture firm investing in non-obvious markets, where innovation is happening quietly but powerfully. Copper Sky Capital is an early-stage venture firm investing in non-obvious markets, where innovation is happening quietly but powerfully. We believe found",
+          "quote_hash": "70c5bad5bc1be9298ee36893b8bc0d687280db7c2c80a0c45180d5f38711947a"
+        },
         {
           "source_id": "FISRC-61f4ef734c265738",
           "source_url": "https://www.thesaasnews.com/news/menos-ai-raises-5-1m-pre-a/",
-          "source_title": "Menos AI 完成 510 万美元 Pre-A 轮融资",
-          "source_content_hash": "a1513f9b0184b70b418580c49d4f13cf9e50218b8ab77bd321eed31c302649e0",
-          "quote": "The funding round was led by Copper Sky Capital, with participation from Alpha Square Group.",
-          "quote_hash": "c7a9c8495f0813a0092c7aa232203559ea77591f24d04308fc1f7d8a5e6272af"
+          "source_title": "Menos AI Raises $5.1M Pre-A",
+          "source_content_hash": "fd4050a4513eac232bdafabbf77b34cadee5d00f5383f2d7cccebfebabd0592c",
+          "quote": "d Round Menos AI Raises $5.1M Pre-A Menos AI raises $5.1M in Pre-A funding led by Copper Sky Capital to expand its institutional AI intelligence layer for asset management firms. by Ben Murray Updated September 28, 2026 Link copied! Copy failed! Menos AI Raises $5.1M Pre-A Menos AI, based in San Jose, Califor",
+          "quote_hash": "edb5f48ec1ecbff75587475796fe6c129f1057f9a64248830b58c904b599e4ba"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,19 +139,74 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sovereign AI 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网披露的信息仅代表当前可追溯内容，不代表完整投资组合或投资业绩。",
+      "summary": "UK Sovereign AI Fund（官网品牌 Sovereign AI）为英国主权风险投资基金。官网显示基金规模为 £500M，覆盖 Pre-Seed 至 Growth，单笔投资约 £1m–£10m；官方公告称其参与 Basecamp Research 的 $140m 融资。",
+      "facts": [
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "官网显示基金规模为 £500M。",
+          "source_id": "sovereign_terms"
+        },
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "官网称覆盖 Pre-Seed 至 Growth。",
+          "source_id": "sovereign_terms"
+        },
+        {
+          "field": "check_size",
+          "label": "单笔投资范围",
+          "value": "官网显示单笔投资额约 £1m–£10m。",
+          "source_id": "sovereign_terms"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Sovereign AI 官方公告称其参与 Basecamp Research 的 $140m 融资；公告称该公司是其第六家获得股权投资的企业。",
+          "source_id": "sovereign_basecamp"
+        },
         {
           "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ecd2ea74974f4ff3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.sovereignai.gov.uk/",
+          "source_id": "sovereign_home",
+          "url": "https://www.sovereignai.gov.uk/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sovereign_home",
+          "source_url": "https://www.sovereignai.gov.uk/",
+          "source_title": "UK Sovereign AI Fund | Backing British AI Startups",
+          "source_content_hash": "918c503568788102f6afa3aa1cac2aaadad6ab61c816f92cf7b18fcfac3425c5",
+          "quote": "Britain&#x27;s Sovereign Venture Fund dedicated to scaling British AI startups.",
+          "quote_hash": "873c78f2b8f455f70543c2e0d51e95f203dad5fff9ec29c19bea553fd8576b74"
+        },
+        {
+          "source_id": "sovereign_terms",
+          "source_url": "https://www.sovereignai.gov.uk/",
+          "source_title": "UK Sovereign AI Fund | Backing British AI Startups",
+          "source_content_hash": "918c503568788102f6afa3aa1cac2aaadad6ab61c816f92cf7b18fcfac3425c5",
+          "quote": "£ 500M Fund Size Pre-Seed to Growth Stage Focus Sovereign Compute Up to 1M GPU Hours £1m ~ £10m Cheque size WHAT WE BRING The United Kingdom is your unfair advantage Any serious VC can write a cheque.",
+          "quote_hash": "cd37e7e252d1a557d6f18c81b62188de0c61946dab09d1af2c364bbab3acd643"
+        },
+        {
+          "source_id": "sovereign_basecamp",
+          "source_url": "https://www.sovereignai.gov.uk/post/sovereign-ai-invests-in-basecamp-research-to-help-design-the-next-generation-of-medicines",
+          "source_title": "Sovereign AI invests in Basecamp Research to help design the next generation of medicines | Sovereign AI",
+          "source_content_hash": "a542fc5bc42257ea2a42357c33830df74dfa1ff699c43db68a43bafdc0c6059c",
+          "quote": "invested in Basecamp Research as part of its $140m round.",
+          "quote_hash": "8d14355173e8c87ad06548e933906515b79281f719c5ac4d51b2beff625100f0"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
@@ -161,7 +216,7 @@
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }
