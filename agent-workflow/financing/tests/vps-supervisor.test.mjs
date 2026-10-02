@@ -10,6 +10,7 @@ test('Shanghai daily start and recovery survive midnight and blocked yesterday',
   assert.equal(selectRunDate([{date:'2026-10-02',status:'needs_attention'}],start),'2026-10-03');
   assert.equal(selectRunDate([{date:'2026-10-02',status:'published'}],start),'2026-10-03');
   assert.throws(()=>selectRunDate([],start,'2026-10-04'),/invalid_vps_run_date/);
+  assert.throws(()=>selectRunDate([],start,'2026-02-31'),/invalid_vps_run_date/);
 });
 test('acceptance binds reviewed date and SHA, all checks, actual evidence and no open issues',()=>{
   const identity={date:'2026-10-03',head:'a'.repeat(40)};
