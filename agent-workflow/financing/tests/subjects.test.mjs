@@ -1,6 +1,14 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
 import {buildFundingSubjects} from '../subjects.mjs';
+test('reviewed product alias excerpts retain matching quote hashes',()=>{
+ const review=JSON.parse(fs.readFileSync(new URL('../../../01-SiteV2/content/12-applications/funding-insights/card-review.json',import.meta.url)));
+ for(const subject of Object.values(review.subjects))for(const product of subject.product_alias_evidence||[])for(const ref of product.evidence_refs||[]){
+  if(ref.quote_hash)assert.equal(ref.quote_hash,crypto.createHash('sha256').update(ref.quote).digest('hex'),product.name);
+ }
+});
 function card(id,subject,date,round,value){return {funding_insight_id:id,triggered_by_event_id:`EV-${id}`,company:{name:subject,full_name:`${subject} Inc.`,application_entity_id:subject,entity_id:'stale-shared-id'},financing:{round,round_code:round,announced_at:date,amount_original:`$${value}`,amount_normalized:{currency:'USD',value,status:'exact'},investors:[{name:`Investor-${id}`}],evidence_refs:[{source_id:id,quote:'Financing announcement'}]},products:[{name:'Product',evidence_refs:[{source_id:id,quote:'Product description'}]}],research_sources:[{source_id:id,source_url:`https://example.org/${id}`} ]};}
 test('one subject card preserves separate rounds, sources, products, investors and event statistics',()=>{
  const old=card('old','Acme','2026-01-01','seed',10),latest=card('latest','Acme','2026-03-01','series_a',20),other=card('other','Different','2026-02-01','seed',8);
