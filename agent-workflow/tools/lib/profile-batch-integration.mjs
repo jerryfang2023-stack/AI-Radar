@@ -12,23 +12,27 @@ export function buildProfileBatch(repo){
   }
 }
 
-export function integrateProfileBatch(queue,{batchSize=30,flush=false,build=buildProfileBatch,archive}={}){
+export function integrateProfileBatch(queue,{batchSize=30,flush=false,reviewer,build=buildProfileBatch,archive}={}){
   if(!Number.isInteger(batchSize)||batchSize<1||batchSize>50)throw new Error('Batch size must be 1..50');
+  if(reviewer!==undefined&&(!String(reviewer).trim()||String(reviewer).length>120))throw new Error('Reviewer filter must be a non-empty name of at most 120 characters');
   const token=queue.lock('integrate');const planFile=path.join(queue.stateDir,'integration.json');
   try{
     let plan=fs.existsSync(planFile)?readJson(planFile):null;
     if(plan?.stage==='done')plan=null;
+    if(plan&&reviewer&&(plan.reviewer||undefined)!==reviewer)throw new Error(`Unfinished integration belongs to reviewer ${plan.reviewer||'the unfiltered shared queue'}; resume it with the same reviewer scope`);
     if(!plan){
-      const jobs=queue.db.prepare("SELECT * FROM jobs WHERE state='accepted' ORDER BY updated,key LIMIT ?").all(batchSize);
-      if(!jobs.length||(!flush&&jobs.length<batchSize))return {status:'waiting_for_batch',accepted:jobs.length,batchSize};
+      const jobs=reviewer
+        ?queue.db.prepare("SELECT * FROM jobs WHERE state='accepted' AND reviewer=? ORDER BY updated,key LIMIT ?").all(reviewer,batchSize)
+        :queue.db.prepare("SELECT * FROM jobs WHERE state='accepted' ORDER BY updated,key LIMIT ?").all(batchSize);
+      if(!jobs.length||(!flush&&jobs.length<batchSize))return {status:'waiting_for_batch',accepted:jobs.length,batchSize,...(reviewer?{reviewer}:{})};
       const source=queue.source();const problems=[];
       for(const job of jobs){const profile=JSON.parse(job.result);queue.checkCandidate(job,profile);
         if(digest(source[job.collection]?.[job.id])!==job.base_hash&&digest(source[job.collection]?.[job.id])!==digest(profile))problems.push(job.key);
       }
       if(problems.length)throw new Error(`Source changed after claim; re-review these IDs: ${problems.join(',')}`);
       const next=structuredClone(source);for(const job of jobs)next[job.collection][job.id]=JSON.parse(job.result);next.as_of=[source.as_of,...jobs.map(j=>JSON.parse(j.result).last_verified_at)].sort().at(-1);
-      plan={id:`profiles-${today()}-${token.slice(0,8)}`,repo:queue.repo,stage:'prepared',jobs:jobs.map(j=>({key:j.key,id:j.id,collection:j.collection,result:j.result})),beforeHash:digest(source),afterHash:digest(next),startedAt:queue.clock(),before:source,next};
-      atomicJson(planFile,plan);queue.event(null,'batch_prepared',{id:plan.id,count:jobs.length});
+      plan={id:`profiles-${today()}-${token.slice(0,8)}`,repo:queue.repo,reviewer:reviewer||null,stage:'prepared',jobs:jobs.map(j=>({key:j.key,id:j.id,collection:j.collection,result:j.result})),beforeHash:digest(source),afterHash:digest(next),startedAt:queue.clock(),before:source,next};
+      atomicJson(planFile,plan);queue.event(null,'batch_prepared',{id:plan.id,count:jobs.length,reviewer:plan.reviewer});
     }
     if(plan.repo!==queue.repo)throw new Error('Resume integration in its original isolated checkout');
     if(plan.stage==='prepared'){
@@ -47,6 +51,6 @@ export function integrateProfileBatch(queue,{batchSize=30,flush=false,build=buil
     queue.transaction(()=>{for(const job of plan.jobs){queue.db.prepare("UPDATE jobs SET state='integrated',updated=? WHERE key=? AND state='accepted'").run(queue.clock(),job.key);queue.event(job.key,'integrated',{batch:plan.id});}
       queue.event(null,'batch_built',{id:plan.id,count:plan.jobs.length,milliseconds:queue.clock()-buildStarted});});
     plan.stage='done';plan.completedAt=queue.clock();atomicJson(planFile,plan);atomicJson(path.join(queue.stateDir,'batches',`${plan.id}.json`),{...plan,before:undefined,next:undefined});
-    return {status:'integrated',batch:plan.id,count:plan.jobs.length,publication:'awaiting_commit_and_publish'};
+    return {status:'integrated',batch:plan.id,count:plan.jobs.length,reviewer:plan.reviewer||undefined,publication:'awaiting_commit_and_publish'};
   }catch(error){queue.event(null,'integration_failed',{reason:error.message});throw error;}finally{queue.unlock('integrate',token);}
 }
