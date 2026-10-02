@@ -55,7 +55,7 @@ export function productionPlan(date, directory, { extract = true } = {}) {
       ['agent-workflow/financing/catalog.mjs'],
     ], outputs: ['01-SiteV2/site/data/financing-catalog-v1.json'] },
     { id: 'release_gate', commands: [
-      ['agent-workflow/financing/read-model.mjs', '--database=false'],
+      ['agent-workflow/financing/read-model.mjs', '--database=false', `--output=${path.join(directory,'read-model-gate')}`],
       [script('assert-data-lake-v4'), '--duckdb=skip'],
       [script('assert-funding-insights-v1'), '--all=true', '--frontstage=true'],
       [script('assert-investment-institutions-v1')],

@@ -46,7 +46,20 @@ export function applyMigration(plan,backup) {
     fs.writeFileSync(path.join(backup,'migration.json'),JSON.stringify({...plan,changes:plan.changes.map(({body,...change})=>change)},null,2)+'\n');
     for(const change of plan.changes){const file=safe(plan.target,change.path),current=fs.existsSync(file)?digest(fs.readFileSync(file)):null;if(current!==change.previousHash)throw Error(`vault_changed_during_migration:${change.path}`);if(change.kind==='remove')fs.unlinkSync(file);else{fs.mkdirSync(path.dirname(file),{recursive:true});const tmp=`${file}.${process.pid}.tmp`;fs.writeFileSync(tmp,change.body);fs.renameSync(tmp,file);}done.push(change);}
     return{applied:done.length,backup};
-  }catch(error){for(const change of done.reverse()){const file=safe(plan.target,change.path),copy=safe(backup,change.path);if(change.previousHash){fs.copyFileSync(copy,file);}else if(fs.existsSync(file))fs.unlinkSync(file);}throw error;}
+  }catch(error){
+    const conflicts=[];
+    for(const change of done.reverse()) {
+      const file=safe(plan.target,change.path),copy=safe(backup,change.path);
+      const current=fs.existsSync(file)?digest(fs.readFileSync(file)):null;
+      const owned=change.kind==='remove'?null:change.newHash;
+      if(current!==owned){conflicts.push({path:change.path,reason:'changed_after_migration',currentHash:current});continue;}
+      try {if(change.previousHash)fs.copyFileSync(copy,file);else if(fs.existsSync(file))fs.unlinkSync(file);}
+      catch(restoreError){conflicts.push({path:change.path,reason:restoreError.message});}
+    }
+    fs.writeFileSync(path.join(backup,'rollback.json'),JSON.stringify({status:conflicts.length?'partial':'restored',error:error.message,conflicts},null,2)+'\n');
+    if(conflicts.length)error.message+=`; vault_rollback_conflicts:${conflicts.map(c=>c.path).join(',')}; recovery:${backup}`;
+    throw error;
+  }
   finally{fs.closeSync(fd);fs.unlinkSync(lock);}
 }
 if(isMainModule(import.meta.url)){const args=new Map(process.argv.slice(2).map(arg=>{const [key,...v]=arg.replace(/^--/,'').split('=');return[key,v.join('=')];}));try{if(!args.get('target')||!args.get('staging'))throw Error('target_and_staging_required');const plan=planMigration({target:args.get('target'),staging:args.get('staging')});console.log(JSON.stringify(args.get('apply')==='true'?applyMigration(plan,args.get('backup')):{target:plan.target,staging:plan.staging,changes:plan.changes.map(({body,...change})=>change)},null,2));}catch(error){console.error(error.message);process.exitCode=1;}}
