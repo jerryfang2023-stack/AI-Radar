@@ -8,6 +8,13 @@ const capital=require('../miniprogram/utils/capital-map.js');
 const taxonomy=require('../miniprogram/data/financing-taxonomy.js');
 const card=(id,date,extra={})=>({id,date,marketRegion:'global',categoryId:'subcategory:operations',parentCategoryId:'enterprise',...extra});
 const index=(cards,date='2026-10-01')=>({meta:{taxonomyVersion:taxonomy.version,latestDate:date},cards});
+
+test('two independent rounds in one subject remain two events in the capital map',()=>{
+  const events=[card('seed','2026-08-01',{subjectCardId:'latest'}),card('latest','2026-09-01')];
+  const grouped={...index([events[1]]),events};
+  assert.equal(capital.build(grouped,taxonomy).count,2);
+  assert.equal(grouped.cards.length,1);
+});
 test('all 7 parents and 45 children remain discoverable; correct distinct market totals and share denominators',()=>{
   const a=card('a','2026-09-01');
   const m=capital.build(index([a,a,card('b','2026-09-02',{categoryId:'subcategory:general-models',parentCategoryId:'models'}),card('cn','2026-09-02',{marketRegion:'china'}),card('unknown','2026-09-02',{marketRegion:'unknown'}),card('future','2026-10-02'),card('bad-date','2026-09-31')]),taxonomy,{unit:'share'});

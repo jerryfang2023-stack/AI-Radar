@@ -34,7 +34,7 @@
     const previous = ready ? monthAt(date, partial ? -2 : -1) : '';
     const children = new Map(taxonomy.sectors.map(s => ['subcategory:' + s.id, s]));
     const seen = new Set(); let unclassified = 0;
-    const cards = ready ? (index.cards || []).filter(c => {
+    const cards = ready ? (index.events || index.cards || []).filter(c => {
       if (!c.id || seen.has(c.id) || c.marketRegion !== market || !validDate(c.date) || c.date > date) return false;
       seen.add(c.id);
       const child = children.get(c.categoryId);

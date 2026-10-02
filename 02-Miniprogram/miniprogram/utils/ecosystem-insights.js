@@ -15,7 +15,7 @@ function sectorName(card) {
 function financingCards(index) {
   if (index?.meta?.taxonomyVersion !== taxonomyVersion) return [];
   const seen = new Set();
-  return (index.cards || []).filter(card => {
+  return (index.events || index.cards || []).filter(card => {
     if (!card.id || seen.has(card.id) || !sectorName(card) || !/^\d{4}-\d{2}-\d{2}$/.test(card.date) || card.date > index.meta.latestDate) return false;
     seen.add(card.id);
     return true;

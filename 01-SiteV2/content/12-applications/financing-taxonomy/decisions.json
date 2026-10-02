@@ -8390,7 +8390,7 @@
     },
     "EV-e59938ae531af428": {
       "id": "EV-e59938ae531af428",
-      "scope": "included",
+      "scope": "excluded",
       "sector_id": "developer-data",
       "subsector_id": "data-platforms",
       "product_form_id": "developer-platform",
@@ -8404,7 +8404,7 @@
         3,
         4
       ],
-      "rationale": "公司为机器人模型提供仿真数据、评测与基础设施，属于面向开发者的数据平台与评测服务。",
+      "rationale": "主营物理AI/具身智能仿真、机器人数据及评测基础设施，属于具身智能赛道；不是通用软件偶然服务机器人客户。",
       "input_hash": "cae24eff37b51ba717b96d3ff677eda76e84d36c06104363de90265669d1ba58",
       "evidence_refs": [
         {
@@ -8430,7 +8430,8 @@
       ],
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "generated_at": "2026-10-01T14:01:22.095Z"
+      "generated_at": "2026-10-01T14:01:22.095Z",
+      "exclusion_reason": "embodied_robotics"
     },
     "EV-3a591b0f027f66cf": {
       "id": "EV-3a591b0f027f66cf",
@@ -14005,8 +14006,8 @@
     },
     "EV-3632f9193a3f3f28": {
       "id": "EV-3632f9193a3f3f28",
-      "scope": "included",
-      "exclusion_reason": "",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
       "sector_id": "developer-data",
       "subsector_id": "data-services",
       "product_form_id": "developer-platform",
@@ -14020,7 +14021,7 @@
         3,
         4
       ],
-      "rationale": "公司为具身智能和自动驾驶提供合成数据解决方案与仿真引擎，属于AI开发与数据赛道中的数据标注与合成细分。",
+      "rationale": "主营物理AI/具身智能仿真、机器人数据及评测基础设施，属于具身智能赛道；不是通用软件偶然服务机器人客户。",
       "input_hash": "3f1978c997f2e6a524abe2697f1c60823d013633d954b02c02a1d321c6474379",
       "evidence_refs": [
         {
@@ -23435,29 +23436,19 @@
       "exclusion_reason": "",
       "sector_id": "consumer-devices",
       "subsector_id": "glasses",
-      "product_form_id": "chip-system",
+      "product_form_id": null,
       "customer_ids": [
         "business"
       ],
       "evidence_indices": [
-        0,
-        2,
-        3
+        0
       ],
-      "rationale": "至格科技专注于AR衍射光波导镜片，是消费AI眼镜的核心光学部件供应商。",
-      "input_hash": "f319990a02897c90c2626298317d216a3513e51540eda44ae1355e8584c8fd82",
+      "rationale": "原文确认AI眼镜专用显示/光学产品；保留消费AI硬件供应链，组件不标为完整眼镜终端。",
+      "input_hash": "e229b152c3a01a7bd6e81a356c212839781310566ed9e356ec8a58803599108c",
       "evidence_refs": [
         {
           "source_id": "FISRC-c5ff4d32946d43f2",
-          "quote": "至格科技成立于 2019 年，是一家专注于 AR 衍射光波导、衍射光栅和微纳光学领域的高新技术企业和专精特新企业，公司由清华大学精密仪器系光栅与测量实验室孵化而来"
-        },
-        {
-          "source_id": "FISRC-c5ff4d32946d43f2",
-          "quote": "其最新波导镜片重量仅 3 克、厚度 0.5 毫米，比普通镜片更轻薄"
-        },
-        {
-          "source_id": "FISRC-94216b1f99be5dcc",
-          "quote": "至格科技通过精密光学设计和先进工艺，使波导镜片整体透光率超过98%，非光栅区域达99%以上"
+          "quote": "近期，AI眼镜光学公司至格科技完成新一轮亿元级融资。本轮融资由长江证券创新投资领投，北京市新材料产业投资基金、东科创资本跟投。本轮资金将主要用于产能提升、团队扩充和产品研发。值得注意的是，这是过去一年以来，至格科技完成的第三轮亿元级融资。"
         }
       ],
       "provider": "deepseek",
@@ -24363,31 +24354,21 @@
       "id": "EV-13796d1f3cea3221",
       "scope": "included",
       "exclusion_reason": "",
-      "sector_id": "compute",
-      "subsector_id": "ai-chips",
-      "product_form_id": "chip-system",
+      "sector_id": "consumer-devices",
+      "subsector_id": "glasses",
+      "product_form_id": null,
       "customer_ids": [
         "business"
       ],
       "evidence_indices": [
-        0,
-        1,
-        2
+        0
       ],
-      "rationale": "公司专注于Micro-LED微显示芯片与模组，产品覆盖AR眼镜等AI应用领域，属于AI芯片与加速器。",
-      "input_hash": "75de084aff4d3bcc82e7024e2736498d78e296b96ad109f5de8facdf6d1a6364",
+      "rationale": "原文确认AI眼镜专用显示/光学产品；保留消费AI硬件供应链，组件不标为完整眼镜终端。",
+      "input_hash": "4608b9a8347c3e3cd801e77ad8dce8e9bd71b8f485782a9435cd6900c273ae2b",
       "evidence_refs": [
         {
           "source_id": "FISRC-ed5e30c1c99002a5",
-          "quote": "「秋水半导体」成立于2022年11月，是一家专注于Micro-LED微显示芯片与模组的半导体公司，产品覆盖数字车灯、AR眼镜、微投影等应用领域。公司总部原在苏州，近期已整体搬迁至宁波。"
-        },
-        {
-          "source_id": "FISRC-ed5e30c1c99002a5",
-          "quote": "在产品方面，「秋水半导体」此前已推出0.61英寸的数字车灯芯片，并完成了客户送样验证。"
-        },
-        {
-          "source_id": "FISRC-d5068f248b055320",
-          "quote": "公司的第一代产品是0.61英寸的数字车灯芯片。数字车灯是一种新型的车灯技术，它利用Micro-LED芯片实现更精细的照明控制。"
+          "quote": "硬氪获悉，Micro-LED显示技术公司「秋水半导体」已于近期连续完成Pre-A及A轮融资，合计近2亿元人民币。本轮融资由朝晖资本领投，通商基金、盛宇投资、宁波人才发展基金、嘉溢创投、涌现科技、数字光芯及兴棠资本跟投，兴棠资本担任长期财务顾问。本轮融资资金将主要用于在宁波高新区建设8英寸混合键合量产线及后续研发投入。 「秋水半导体」成立于2022年11月，是一家专注于Micro-LED微显示芯片与模组的半导体公司，产品覆盖数字车灯、AR眼镜、微投影等应用领域。公司总部原在苏州，近期已整体搬迁至宁波。 Micro-LED常被认为是下一代显示技术的重要方向，但过去几年量产进程始终卡在芯片端。根据IDC数据，2025年全球AR/VR头显与无显示器智能眼镜合计出货量超过1400万台。但具备显示功能的AR眼镜出货量不足百万。在数字车灯领域，TrendForce分析指出，自适应性头灯（ADB）市场渗透率预计到2029年有望达到21.6%，保时捷等车厂已开始采用Micro LED像素模块的头灯方案。芯片端的量产瓶颈是这两大应用落地的主要障碍。 造成这一局面的关键在于技术路线。过去，传统方案采用4英寸蓝宝石衬底，先通过金属键合将LED晶圆与驱动电路连接，再通过刻蚀来分割像素。但刻蚀过程会对发光材料造成损伤，导致芯片效率大幅下降、良率偏低、出光角度过大，始终难以实现规模化量产。2024年以来，行业开始转向8英寸晶圆级混合键合工艺，但真正打通量产环节的企业仍然极少。 因此，「秋水半导体」的方案则不再对发光材料进行刻蚀，而是通过无损芯片架构的创新，从根源上避免了材料损伤。配合8英寸硅衬底和混合键合3D封装工艺，可将芯片良率提升至6N以上，出光角度从±60°收窄到±10°，工作温度范围从低于50℃拓展至超过140℃。 秋水“乐鱼”AR系列模组 在产品方面，「秋水半导体」此前已推出0.61英寸的数字车灯芯片，并完成了客户送样验证。同时，AR单绿色芯片计划于今年出货。「秋水半导体」创始人蒋振宇判断，“单色绿光芯片已经能满足游泳眼镜、会议提词、翻译、车载导航等特定场景的需求。且未来一年内具备显示功能的AI眼镜出货量有望从目前的四五十万台提升至千万台级别，千万级芯片出货能力仍然具备挑战。此外要迎来Micro-LED产业的“iphone时刻”，则必须解决彩色化问题，传统红光Micro-LED芯片因刻蚀损伤导致光效损失超过97%，是无法绕过的障碍，而无损技术是解决这一问题的关键，是打开彩色化大门的钥匙。「秋水半导体」预计将在年底实现彩色化的技术突破。” 秋水“乐鱼”AR系列模组 在国内竞争格局上，"
         }
       ],
       "provider": "deepseek",
@@ -25177,8 +25158,8 @@
     },
     "EV-b9f933fceca9085b": {
       "id": "EV-b9f933fceca9085b",
-      "scope": "included",
-      "exclusion_reason": "",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
       "sector_id": "compute",
       "subsector_id": "ai-chips",
       "product_form_id": "chip-system",
@@ -25188,7 +25169,7 @@
         1,
         2
       ],
-      "rationale": "公司开发面向自动驾驶和物理 AI 系统的以太网数据包处理器，属于 AI 芯片与加速器。",
+      "rationale": "主营面向车辆、机器人自主系统的实时感知与控制专用Physical AI网络芯片，属于本次排除的具身/机器人核心部件。",
       "input_hash": "d2f5ad509ca423b80a258d6a798a280c6445c597e1c247a7e7780ab876f1bfca",
       "evidence_refs": [
         {

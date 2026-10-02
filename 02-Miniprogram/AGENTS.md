@@ -1,5 +1,7 @@
 # Guanlan Funding Mini Program
 
+Current source 1.2.5: funding lists contain one card per verified company. Historical rounds remain inside the subject detail. Capital-flow models read index.events (legacy fallback index.cards), while browsing reads index.cards. Old funding IDs resolve through cardAliases. Never infer event totals from the number of subject cards.
+
 Current source 1.2.4: registration captures the final native nickname on blur, invalidates eligibility while editing, and waits for the supported native nickname-review result before submitting. Failed/timed-out reviews and placeholder/WeChat-ID names cannot start new registration; older base libraries use final blur values. Verified-phone community lookup remains available without a nickname. Persist the server-confirmed display name after login. Never infer a person's name from a wxid or claim phone authorization returns a nickname.
 
 Current source 1.2.3: entity detail permission verification has a separate pending state; never render a registration/renewal gate before the server result or treat network failures as denial. Late public catalog responses cannot replace a verified full profile. Chinese company titles use the reviewed display-name mapping in data-input/company-display-names.json; retain canonical names and keys for requests, links, follows and search. Add source evidence when extending the mapping; do not strip city or legal suffixes heuristically.

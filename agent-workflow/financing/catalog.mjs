@@ -4,6 +4,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { taxonomy, classificationInput, classificationProblems, displayClassification } from './taxonomy.mjs';
 import { read,write } from './state.mjs';
+import { buildFundingSubjects } from './subjects.mjs';
 
 export function publicationHold(card, review) {
   if (!review) return null;
@@ -22,7 +23,7 @@ export function buildFinancingCatalog(root) {
   const funding=path.join(root,'01-SiteV2/content/12-applications/funding-insights');
   const inputs=new Map();
   for(const file of fs.readdirSync(funding).filter(file=>/^\d{4}-\d{2}-\d{2}\.json$/u.test(file)).sort()) for(const card of read(path.join(funding,file)).cards || []) inputs.set(card.triggered_by_event_id,classificationInput(card));
-  const excluded=[],pending=[],cards=[];
+  const excluded=[],pending=[],eligible=[];
   const publicationPending=[];
   const review=read(path.join(funding,'publication-review.json'));
   for(const card of source.cards){
@@ -44,11 +45,13 @@ export function buildFinancingCatalog(root) {
     copy.market_subcategory={...tags.subsector,dimension:'financing_subsector'};
     copy.market_application=null;
     copy.product_form=tags.product_form?{...tags.product_form,dimension:'financing_product_form'}:null;
-    cards.push(copy);
+    eligible.push(copy);
   }
+  const subjects=buildFundingSubjects(eligible,read(path.join(funding,'card-review.json')) || {});
+  const cards=subjects.cards;
   const used=(items,get)=>items.filter(row=>cards.some(card=>get(card)===row.id));
   return {
-    meta:{...source.meta,taxonomy_version:taxonomy.version,card_count:cards.length,china_market_card_count:cards.filter(card=>card.market_scope?.market_region==='CN').length,
+    meta:{...source.meta,taxonomy_version:taxonomy.version,card_count:cards.length,event_count:subjects.event_cards.length,aggregation_strategy:'reviewed_funding_subject',duplicate_rounds_removed:subjects.duplicate_rounds_removed,china_market_card_count:cards.filter(card=>card.market_scope?.market_region==='CN').length,
       scope:'all_ai_financing_except_embodied_and_robotics',excluded_count:excluded.length,pending_classification_count:pending.length,
       pending_publication_count:publicationPending.length,
       market_category_framework:{name:'观澜 AI 融资分类',version:taxonomy.version,sources:taxonomy.sources.map(row=>({name:row.name,url:row.url}))}},
@@ -57,7 +60,7 @@ export function buildFinancingCatalog(root) {
       market_categories:used(taxonomy.sectors,card=>card.financing_tags.sector.id).map(({id,name})=>({id,name})),
       market_subcategories:taxonomy.sectors.flatMap(sector=>used(sector.subsectors,card=>card.financing_tags.subsector.id).map(row=>({...row,parent_id:sector.id}))),
       product_forms:used(taxonomy.product_forms,card=>card.financing_tags.product_form?.id),customers:taxonomy.customers},
-    cards,review:{excluded,pending,publication_pending:publicationPending},
+    cards,event_cards:subjects.event_cards,card_aliases:subjects.aliases,company_aliases:subjects.company_aliases,review:{excluded,pending,publication_pending:publicationPending},
   };
 }
 if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){

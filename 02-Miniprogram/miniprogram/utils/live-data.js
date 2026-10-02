@@ -167,7 +167,7 @@ function projectPortalCard(card) {
         scenario: text(item.scenario),
         difference: text(item.coreDifference),
       })).filter((item) => item.name || item.difference),
-      history: list(card.historicalRounds).slice(0, 12).map((item) => ({
+      history: list(card.historicalRounds).map((item) => ({
         round: text(item.round || item.roundOriginal) || "轮次未披露",
         amount: amountDisplay(item.amountNormalized, item.amountOriginal, marketRegion),
         date: text(item.announcedAt),
@@ -205,6 +205,7 @@ function projectPortalFundingData(data) {
       meta: {
         schemaVersion: "GUANLAN-MINIPROGRAM-DATA-V1.1",
         sourceSchemaVersion: text(data.meta.sourceSchemaVersion),
+        taxonomyVersion: text(data.meta.taxonomyVersion),
         fundingVersion: text(data.meta.sourceColumnVersion),
         latestDate: text(data.meta.latestDate),
         generatedAt: text(data.meta.generatedAt),
@@ -218,6 +219,8 @@ function projectPortalFundingData(data) {
       categories,
       rounds,
       cards,
+      events: list(data.eventCards || data.cards).filter(isFundingVisible).map(card => ({ ...projectPortalCard(card).summary, subjectCardId: card.subjectCardId || card.id })),
+      cardAliases: data.cardAliases || {},
     },
     details: Object.fromEntries(projected.map((item) => [item.detail.id, item.detail])),
   };
@@ -442,6 +445,7 @@ function refreshFundingEntities() {
 }
 
 function getFundingDetail(id) {
+  id = fundingState.index.cardAliases?.[id] || id;
   if (!fundingState.index.cards.some(card => card.id === id)) return Promise.resolve(null);
   const version = fundingManifest?.version;
   const fallback = fundingState.details[id] || null;

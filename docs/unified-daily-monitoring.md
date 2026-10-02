@@ -39,3 +39,7 @@ PR/CI 合并到 main 并完成 Pages 后，运行：
 `dispatched/running/checks_pending/ci_failed/ready_for_review/awaiting_portal` 均不等于发布完成。当天只维护一份知识库 `90-工作区/每日监测整合/YYYY-MM-DD-日报.md`，记录各赛道、六类硬件覆盖、待核验/排除、接口故障、工作流/PR、接受提交及线上回读。仅有可行动新增、更正、持续失败或需用户处理时通知；无变化保持安静。不提高模型预算或自动购买搜索额度。
 
 接口与 AIHOT 边界见 [搜索链路](daily-monitor-search.md)。融资专用分类规则独立于旧平台的技术与实施标签。
+
+## 融资主体卡与轮次
+
+前台每个已核验融资主体仅展示一张卡，主信息采用最新已接受轮次，卡内保存历次融资。`catalog.mjs` 通过 `subjects.mjs` 生成主体 `cards` 与独立统计 `event_cards`；资本流向必须使用后者。主体身份优先使用已审核 `application_entity_id`，不按失配的历史 canonical ID 或名称相似度自动合并。简称、跨编号主体别名、同轮重复披露与产品别名由 `funding-insights/card-review.json` 保存核验依据。旧卡链接和无歧义主体旧编号映射到当前主体；不同币种不相加，累计总额及拟融资不能当作新轮次。详见 [本次复查](2026-10-02-financing-card-review.md)。
