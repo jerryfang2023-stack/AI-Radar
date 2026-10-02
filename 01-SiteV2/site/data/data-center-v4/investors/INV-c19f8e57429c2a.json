@@ -123,11 +123,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ansa Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Ansa Capital Management, LLC（Ansa Capital）自述专注于连接早期风险投资与成长期投资；其2022年公告称首只基金完成1亿美元首轮募资，目标初始投资额为500万至1,500万美元。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "主体身份",
+          "value": "官网使用 Ansa Capital Management, LLC 作为主体名称，并以 Ansa Capital 自称。",
+          "source_id": "ansa_legal"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资阶段",
+          "value": "专注连接早期风险投资与成长期投资。",
+          "source_id": "ansa_stage"
+        },
+        {
+          "field": "fundraising",
+          "label": "首只基金募资（2022）",
+          "value": "2022年公告称首只基金完成1亿美元首轮募资。",
+          "source_id": "ansa_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-08-31",
+          "description": "Ansa Capital 公告称其首只基金完成1亿美元首轮募资，并给出500万至1,500万美元的目标初始投资额。",
+          "source_id": "ansa_fund"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Bland · 历史轮次未披露 · Series A 参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -137,6 +161,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "ansa_legal",
+          "source_url": "https://www.ansa.co/terms-of-use",
+          "source_title": "Terms of use",
+          "source_content_hash": "a366c1b992529271a826e68531e7df352516fd1f903a3d66f1cb9ff1fc736a5d",
+          "quote": "Welcome to the Ansa Capital Management, LLC (“Ansa,” “Ansa Capital,” “we,” “us,” or “our”) website (“Website”).",
+          "quote_hash": "402edcaaef8dd0c34e075b9d1f60387c2f5a98fff5b468fd4ec7106c05a64c57"
+        },
+        {
+          "source_id": "ansa_stage",
+          "source_url": "https://www.ansa.co/insight/how-we-invest-at-ansa",
+          "source_title": "How We Invest at Ansa",
+          "source_content_hash": "5222c481ef00dddc85b6425ee1b1b1d8d377d00c54c0d78cebed10498b7139b5",
+          "quote": "Our mission is, and has always been, to bridge the gap between early venture and growth-stage investing.",
+          "quote_hash": "b9ea1863fd095c5b6f69bf7acad0a0ae160ac8c6274a3352da15c220a3159ad8"
+        },
+        {
+          "source_id": "ansa_fund",
+          "source_url": "https://www.ansa.co/insight/ansa-announces-100-million-first-close",
+          "source_title": "Ansa Announces $100 Million First Close",
+          "source_content_hash": "637deee7c067ffe108e8c65e54108881c91a33ead353a0994aac3f12c5b29a32",
+          "quote": "Ansa Capital, a new venture firm, today announced a $100 million initial raise of its debut fund that will focus on emerging growth stage companies.",
+          "quote_hash": "2b483d013d27fdb263e85d547ba648c5349cf75027a3fda7da048f7c9260e7e2"
+        },
+        {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
           "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
@@ -145,7 +193,8 @@
           "quote_hash": "9c2b2a90614757a548bd0a81d0f587f61b55f459be760bb3cf580b658cde6bab"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

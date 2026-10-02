@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Artesian Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Artesian 官网介绍其为全球另类资产管理机构，业务包括债权投资和风险投资；公司于 2004 年创立，并于 2010 年拓展至风险投资。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "业务类型",
+          "value": "债权与风险投资。",
+          "source_id": "artesian_about"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2004 年，由 Jeremy Colless、Matt Clunies-Ross 和 John McCartney 创立。",
+          "source_id": "artesian_history"
+        },
+        {
+          "field": "venture_since",
+          "label": "风险投资业务",
+          "value": "2010 年开展亚太地区种子投资。",
+          "source_id": "artesian_vc"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,40 @@
           "source_id": "FISRC-903aa25f932bc468"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.artesianinvest.com/",
+          "url": "https://www.artesianinvest.com/",
+          "source_id": "artesian_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "artesian_about",
+          "source_url": "https://www.artesianinvest.com/",
+          "source_title": "Artesian | Alternative Investment Management",
+          "source_content_hash": "8a4a7e818522a748d718fa138448f9863aeaed940b6b48bd937712f62874409f",
+          "quote": "Artesian is a global alternative asset manager specialising in debt and venture capital.",
+          "quote_hash": "58b4ee6cf3ed9e3faab6f053a944dd70aa4be04965f7de5c7ba9e3d34e1f9e9f"
+        },
+        {
+          "source_id": "artesian_history",
+          "source_url": "https://www.artesianinvest.com/",
+          "source_title": "Artesian | Alternative Investment Management",
+          "source_content_hash": "8a4a7e818522a748d718fa138448f9863aeaed940b6b48bd937712f62874409f",
+          "quote": "2004 Artesian founded by Jeremy Colless, Matt Clunies-Ross and John McCartney",
+          "quote_hash": "76aa59b5e2a357974a42905519abc51434ddfb69e8a1af444166fb58f42beab6"
+        },
+        {
+          "source_id": "artesian_vc",
+          "source_url": "https://www.artesianinvest.com/",
+          "source_title": "Artesian | Alternative Investment Management",
+          "source_content_hash": "8a4a7e818522a748d718fa138448f9863aeaed940b6b48bd937712f62874409f",
+          "quote": "2010 Expansion into venture capital with proprietary seed investments across Asia-Pacific including China",
+          "quote_hash": "bae342fa646a024d55b7466c236c22a8daca58601ee391d9c1015c4f35e9aee2"
+        },
         {
           "source_id": "FISRC-903aa25f932bc468",
           "source_url": "https://elsewhere.news/zh/5ycapital/matrixorigina-5y-news",
@@ -161,7 +211,8 @@
           "quote_hash": "7b292223ffea3776b6ea4e886a29a5d7a8b4a018497e25d9df20ac6fa4665da0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -139,10 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Wipro Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Wipro Ventures 官网称其于 2015 年成立，是 Wipro Limited 的战略投资部门，投资早中期企业软件公司。",
+      "facts": [
+        {
+          "field": "group_relationship",
+          "label": "集团关系",
+          "value": "Wipro Ventures 是 Wipro Limited 的战略投资部门。",
+          "source_id": "wipro_about"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2015 年。",
+          "source_id": "wipro_about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期至中期。",
+          "source_id": "wipro_about"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资方向",
+          "value": "企业软件。",
+          "source_id": "wipro_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +174,24 @@
           "source_id": "FISRC-1ae6b18ce755c2a8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.wipro.com/ventures/",
+          "url": "https://www.wipro.com/ventures/",
+          "source_id": "wipro_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wipro_about",
+          "source_url": "https://www.wipro.com/ventures/",
+          "source_title": "Wipro Ventures Driving Strategic Business Investments",
+          "source_content_hash": "94c4d9bbd7303e136c2c7409ed083f54fb75fc83c4cbe9f82f4e85f546849784",
+          "quote": "Established in 2015 as the strategic investment arm of Wipro Limited, we invest in early to mid-stage companies building innovative enterprise software solutions.",
+          "quote_hash": "d18f637373a092ef40ef6cf83e30d07c15ae226bfedf9d0ab711961c89742a6b"
+        },
         {
           "source_id": "FISRC-1ae6b18ce755c2a8",
           "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
@@ -161,7 +201,8 @@
           "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

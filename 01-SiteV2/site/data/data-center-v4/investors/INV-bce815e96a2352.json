@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Capital Today 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "summary": "Capital Today官网公开列出Fund I、Fund II和Evergreen Fund的设立年份与规模数据；网页未注明规模币种，因此档案不补推币种。",
+      "facts": [
+        {
+          "field": "fund_history",
+          "label": "基金信息",
+          "value": "官网列示Fund I（2006年，280 million）和Fund II（2010年，408 million）。网页未标注币种。",
+          "source_id": "ct_funds"
+        },
+        {
+          "field": "evergreen_fund",
+          "label": "Evergreen Fund",
+          "value": "官网列出2014、2018、2022三期，规模依次为752、989和1,108 million，合计2,849 million；网页未标注币种。",
+          "source_id": "ct_evergreen"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述原则",
+          "value": "强调专注与纪律、主动参与和长期耐心。",
+          "source_id": "ct_principles"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,54 @@
           "source_id": "FISRC-e06e94375ec64ac4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://capitaltoday.com/",
+          "url": "https://capitaltoday.com/",
+          "source_id": "ct_funds"
+        },
+        {
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "info@capitaltoday.com",
+          "source_id": "ct_email"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ct_funds",
+          "source_url": "https://capitaltoday.com/",
+          "source_title": "Capital Today",
+          "source_content_hash": "00a8e76698cdc43397eaaa3982e5d42c2cba464a6199a2be5edf4f62df70e037",
+          "quote": "Fund I Vintage Year 2006 Fund Size 280 million Fund II Vintage Year 2010 Fund Size 408 Million",
+          "quote_hash": "dd9372567a9c21e3278e2093817661c345bcb5e4e32368487db2d2b070272378"
+        },
+        {
+          "source_id": "ct_evergreen",
+          "source_url": "https://capitaltoday.com/",
+          "source_title": "Capital Today",
+          "source_content_hash": "00a8e76698cdc43397eaaa3982e5d42c2cba464a6199a2be5edf4f62df70e037",
+          "quote": "Evergreen Fund Vintage Year Fund Size Tranche 1 2014 752 million Tranche 2 2018 989 million Tranche 3 2022 1,108 million Total 2,849 million",
+          "quote_hash": "e217484e7975cd14f0d503774618df3ab1ebf78b07a8ba03b9e239af6cb7f4fb"
+        },
+        {
+          "source_id": "ct_principles",
+          "source_url": "https://capitaltoday.com/",
+          "source_title": "Capital Today",
+          "source_content_hash": "00a8e76698cdc43397eaaa3982e5d42c2cba464a6199a2be5edf4f62df70e037",
+          "quote": "Our \"DNA\" Focus & Discipline Hands-on with \"Capital Today 3 Weapons\" Long-Term Patience",
+          "quote_hash": "2695a47ee0420307a32de7515074dff1b4cd88916e9d6803d2af4688ee9b430e"
+        },
+        {
+          "source_id": "ct_email",
+          "source_url": "https://capitaltoday.com/",
+          "source_title": "Capital Today",
+          "source_content_hash": "00a8e76698cdc43397eaaa3982e5d42c2cba464a6199a2be5edf4f62df70e037",
+          "quote": "info@capitaltoday.com",
+          "quote_hash": "809310f9856abf1d7cf34c328093d2d29541c1d72198149235ba7d9102aeee63"
+        },
         {
           "source_id": "FISRC-e06e94375ec64ac4",
           "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
@@ -161,7 +226,7 @@
           "quote_hash": "6c3baf83c08049f9bfde8005c652c54219a4d59d90ae359933e49a68d1618c0b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

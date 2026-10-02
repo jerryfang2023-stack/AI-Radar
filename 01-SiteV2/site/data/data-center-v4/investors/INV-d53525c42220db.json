@@ -139,10 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Australian Gulf Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "ADGM 官方登记将 AG (Australian Gulf) Capital Limited 列为活跃金融服务公司，登记号 220056，获准管理风险投资基金；官网将 Australian Gulf Capital 描述为中后期风险投资与结构化信贷机构，关注 AI 基础设施。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "登记名称",
+          "value": "AG (Australian Gulf) Capital Limited。",
+          "source_id": "agc_register"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "监管登记",
+          "value": "ADGM FSRA FSP 220056，状态为 Active。",
+          "source_id": "agc_register"
+        },
+        {
+          "field": "regulated_activity",
+          "label": "受监管活动",
+          "value": "管理风险投资基金。",
+          "source_id": "agc_vc_funds"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资方向",
+          "value": "中后期风险投资与结构化信贷，聚焦模型、算力、机器人及 AI 基础设施。",
+          "source_id": "agc_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +174,48 @@
           "source_id": "FISRC-83ab416cf84d3f07"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.ausgulf.com/",
+          "url": "https://www.ausgulf.com/",
+          "source_id": "agc_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "agc_about",
+          "source_url": "https://www.ausgulf.com/",
+          "source_title": "Australian Gulf Capital | AI Infrastructure VC & Private Credit",
+          "source_content_hash": "499ed76748aa5384fa376bbe9617ecb2528da591986b6a1780247656bf5a4693",
+          "quote": "Australian Gulf Capital is a mid-to-late stage venture and structured-credit firm backing the foundational technologies of the AI era — models, compute, robotics, and the infrastructure beneath them.",
+          "quote_hash": "902655f21d32a455163d01a54c5941de7bcca5e16e7055790590b64cca390fb8"
+        },
+        {
+          "source_id": "agc_register",
+          "source_url": "https://www.adgm.com/public-registers/fsra/firms/financial-firms/ag-australian-gulf-capital-limited-220056",
+          "source_title": "AG (Australian Gulf) Capital Limited",
+          "source_content_hash": "faeefd263758d6684dcc97969708e908a79c6ad81c2afc5260c37929973072eb",
+          "quote": "FSP Number 220056",
+          "quote_hash": "477ffe6b821f892b07f5419c32d20e164381b6fd210b245e39f3adb45f6c7b9a"
+        },
+        {
+          "source_id": "agc_active",
+          "source_url": "https://www.adgm.com/public-registers/fsra/firms/financial-firms/ag-australian-gulf-capital-limited-220056",
+          "source_title": "AG (Australian Gulf) Capital Limited",
+          "source_content_hash": "faeefd263758d6684dcc97969708e908a79c6ad81c2afc5260c37929973072eb",
+          "quote": "Status Active",
+          "quote_hash": "230719f690966e980e5871b5a7e89ded9952dc5e4920674e33300347e2da38c7"
+        },
+        {
+          "source_id": "agc_vc_funds",
+          "source_url": "https://www.adgm.com/public-registers/fsra/firms/financial-firms/ag-australian-gulf-capital-limited-220056",
+          "source_title": "AG (Australian Gulf) Capital Limited",
+          "source_content_hash": "faeefd263758d6684dcc97969708e908a79c6ad81c2afc5260c37929973072eb",
+          "quote": "Managing a Collective Investment Fund is limited to managing only Venture Capital Funds",
+          "quote_hash": "0cc4a8c8e87db575eec26c2ec1f6c38422aae714fc04eafa470b38049ff2c586"
+        },
         {
           "source_id": "FISRC-83ab416cf84d3f07",
           "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
@@ -161,7 +225,8 @@
           "quote_hash": "5bbc687eb304c7f93ee48df3f9465221569a81f836df93acde2db9dad59a8219"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

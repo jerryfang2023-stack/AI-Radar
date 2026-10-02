@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "T. Rowe Price Investment Management, Inc. 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "T. Rowe Price Investment Management, Inc.（TRPIM）由 T. Rowe Price 于2022年设立；T. Rowe Price 2026年公告称，TRPIM 目前作为集团部门提供股票、固定收益和多资产策略。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "主体身份",
+          "value": "T. Rowe Price 于2020年宣布设立 T. Rowe Price Investment Management, Inc.（TRPIM），作为独立的美国注册投资顾问。",
+          "source_id": "trpim_entity"
+        },
+        {
+          "field": "investment_scope",
+          "label": "策略范围",
+          "value": "提供股票、固定收益和多资产策略，服务机构、金融中介及个人投资者。",
+          "source_id": "trpim_scope"
+        },
+        {
+          "field": "group_relationship",
+          "label": "集团关系",
+          "value": "T. Rowe Price 2026年公告称 TRPIM 是 T. Rowe Price Group 的部门，成立于2022年。",
+          "source_id": "trpim_status"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +171,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "trpim_entity",
+          "source_url": "https://investors.troweprice.com/node/21241/html",
+          "source_title": "SEC Filing | T. Rowe Price Group, Inc.",
+          "source_content_hash": "72058898c04a38858292660b3d1154e3b5dcf3f07972b18d153035e0b7338a63",
+          "quote": "T. Rowe Price Investment Management, Inc. (TRPIM), as a separate U.S.-based SEC-registered investment adviser.",
+          "quote_hash": "49315451e0dcc5a431b1a6a248308bcb4ef64fd2101006da32c94854428ff588"
+        },
+        {
+          "source_id": "trpim_scope",
+          "source_url": "https://investors.troweprice.com/node/28126",
+          "source_title": "STEPH JACKSON TO RETIRE FROM T. ROWE PRICE INVESTMENT MANAGEMENT | T. Rowe Price Group, Inc.",
+          "source_content_hash": "5a0c5e82759ea27d23acf15815d7bebe879adb91fb39db4040891b8402865f38",
+          "quote": "The division offers equity, fixed income, and multi-asset strategies to institutions, financial intermediaries, and individual investors worldwide.",
+          "quote_hash": "beb7349299852609eeb7a31a8e6c6f5ebfaffd9f2646113dbb59c62c214ed833"
+        },
+        {
+          "source_id": "trpim_status",
+          "source_url": "https://investors.troweprice.com/node/28126",
+          "source_title": "STEPH JACKSON TO RETIRE FROM T. ROWE PRICE INVESTMENT MANAGEMENT | T. Rowe Price Group, Inc.",
+          "source_content_hash": "5a0c5e82759ea27d23acf15815d7bebe879adb91fb39db4040891b8402865f38",
+          "quote": "T. Rowe Price Investment Management (TRPIM) is a division of T. Rowe Price Group, Inc. (NASDAQ-GS: TROW), established in 2022 to enhance the firm's ability to deliver specialized investment solutions for clients globally.",
+          "quote_hash": "96a96ab1bcdba49f7e985660439edb2766e3625cf73955ba1635aeb5011c67e0"
+        },
+        {
           "source_id": "FISRC-b5e22ae086a6b353",
           "source_url": "https://www.anthropic.com/news/series-h",
           "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
@@ -161,7 +203,8 @@
           "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

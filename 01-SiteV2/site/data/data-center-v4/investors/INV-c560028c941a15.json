@@ -140,10 +140,29 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "北京市新材料产业投资基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "目前一手公开信息只确认设立时间、规模层级和截至2025年5月的区内投资活动；未确认具体注册载体、基金管理人或完整投资策略。",
+      "summary": "北京市政府门户2025年报道显示，北京于2024年6月成立百亿级新材料产业投资基金；截至该报道发布时，该基金已投资房山区企业4家。",
+      "facts": [
+        {
+          "field": "fund_identity",
+          "label": "基金设立",
+          "value": "北京市政府门户报道称，北京市于2024年6月成立百亿级新材料产业投资基金。",
+          "source_id": "beijing_launch"
+        },
+        {
+          "field": "investment_activity",
+          "label": "截至2025年5月的投资活动",
+          "value": "北京市政府门户称该基金已投资房山区企业4家。",
+          "source_id": "beijing_activity"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-06",
+          "description": "北京市政府门户报道该新材料产业投资基金于2024年6月成立。",
+          "source_id": "beijing_launch"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：至格科技 · 轮次未披露 · 2026-03-24 · 本轮参投 · 亿元级。这是本库收录的披露案例，不代表完整投资组合。",
@@ -153,6 +172,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "beijing_launch",
+          "source_url": "https://www.beijing.gov.cn/ywdt/gqrd/202505/t20250520_4093804.html",
+          "source_title": "房山区：2025年北京新材料大会暨第七届京津冀石墨烯大会在京召开_各区热点_首都之窗_北京市人民政府门户网站",
+          "source_content_hash": "7e3eeb65cfdea99b529a9c0dd037902e6996dd5cc802375624faab140a046aef",
+          "quote": "2024年6月，北京市成立百亿级新材料产业投资基金。",
+          "quote_hash": "d02db9159aaaf969ce9de2d6b8ce5360fcf35458781f4d34c243efd864468d70"
+        },
+        {
+          "source_id": "beijing_activity",
+          "source_url": "https://www.beijing.gov.cn/ywdt/gqrd/202505/t20250520_4093804.html",
+          "source_title": "房山区：2025年北京新材料大会暨第七届京津冀石墨烯大会在京召开_各区热点_首都之窗_北京市人民政府门户网站",
+          "source_content_hash": "7e3eeb65cfdea99b529a9c0dd037902e6996dd5cc802375624faab140a046aef",
+          "quote": "截至目前，新材料基金已投资区内企业4家，为企业的发展提供了重要支撑。",
+          "quote_hash": "a4f3a74f259c80f5dfa67670fc443d5fa87a3c52730f08bbd81e3eb9e99452db"
+        },
+        {
           "source_id": "FISRC-c5ff4d32946d43f2",
           "source_url": "https://finance.sina.com.cn/wm/2026-03-24/doc-inhsavws1704662.shtml?froms=ggmp",
           "source_title": "AI眼镜光学公司至格科技完成新一轮亿元级融资",
@@ -161,7 +196,7 @@
           "quote_hash": "39c243b0fd5293cebc77928547cbad7306a457072466bfb765d75b2c458adf11"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

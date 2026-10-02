@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Theory Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Theory Ventures 是总部位于旧金山的早期风险投资机构，投资软件公司，阶段包括创意/成立期、seed、Series A和Series B；官网披露的投资金额区间为$1–40m。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "法律主体",
+          "value": "官网页脚标注 Theory Ventures, LLC。",
+          "source_id": "theory_legal"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Inception、Seed、Series A和Series B。",
+          "source_id": "theory_stages"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资对象及金额",
+          "value": "投资利用技术变化建立市场进入优势的软件公司；官网标注投资金额区间$1–40m，未在该字段补推币种。",
+          "source_id": "theory_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,46 @@
           "source_id": "FISRC-674392f5f750c88f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://theoryvc.com/",
+          "url": "https://theoryvc.com/",
+          "source_id": "theory_strategy"
+        },
+        {
+          "kind": "email",
+          "label": "联系邮箱",
+          "value": "info@theoryvc.com",
+          "source_id": "theory_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "theory_legal",
+          "source_url": "https://theoryvc.com/about",
+          "source_title": "About Theory Ventures — $688M AI &amp; Data Infrastructure VC",
+          "source_content_hash": "d19ff8218633029a7d98e45138fc733eb7b663cda7cbda644b63d143fa7c5b24",
+          "quote": "© 2026 Theory Ventures, LLC",
+          "quote_hash": "14b756ff9a162a0fadc24ff33c5b556cf2935c1d7cd256c98976d701540be6b8"
+        },
+        {
+          "source_id": "theory_stages",
+          "source_url": "https://theoryvc.com/about",
+          "source_title": "About Theory Ventures — $688M AI &amp; Data Infrastructure VC",
+          "source_content_hash": "d19ff8218633029a7d98e45138fc733eb7b663cda7cbda644b63d143fa7c5b24",
+          "quote": "Stages [Inception, Seed, Series A, Series B]",
+          "quote_hash": "a187376250bdaf07462e31b313d270a476e827eed4197ca2f64735dc117602af"
+        },
+        {
+          "source_id": "theory_strategy",
+          "source_url": "https://theoryvc.com/about",
+          "source_title": "About Theory Ventures — $688M AI &amp; Data Infrastructure VC",
+          "source_content_hash": "d19ff8218633029a7d98e45138fc733eb7b663cda7cbda644b63d143fa7c5b24",
+          "quote": "We invest $1-40m in software companies that leverage technology discontinuities into go-to-market advantages.",
+          "quote_hash": "c245e16a58b41ae75571cab168002e37d5c05162e5823bfe264ba7927b90ca78"
+        },
         {
           "source_id": "FISRC-674392f5f750c88f",
           "source_url": "https://techcrunch.com/2026/07/09/popular-open-source-ai-developer-tool-ollama-raises-65m-grows-to-nearly-9m-users",
@@ -161,7 +217,8 @@
           "quote_hash": "eaaf9e28e0ecf61487ee1978fc4c92d040cb0397b02b00a8f6fb0a079d00274b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

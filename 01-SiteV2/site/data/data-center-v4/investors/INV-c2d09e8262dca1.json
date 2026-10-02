@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SoftBank Group Corp. 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "SoftBank Group Corp. 将自身描述为战略投资控股公司，面向全球投资于推动信息革命的企业；其生态包括集团子公司、集团直接投资以及愿景基金等投资组合。",
+      "facts": [
+        {
+          "field": "legal_identity",
+          "label": "主体定位",
+          "value": "SoftBank Group 将自身定位为战略投资控股公司。",
+          "source_id": "softbank_identity"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资范围",
+          "value": "在全球投资于推动信息革命、建设更互联与赋能世界的公司和业务。",
+          "source_id": "softbank_scope"
+        },
+        {
+          "field": "investment_structure",
+          "label": "投资载体",
+          "value": "投资生态包括集团子公司、集团直接投资项目，以及 SoftBank Vision Funds 和其他基金的组合公司。",
+          "source_id": "softbank_structure"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +171,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "softbank_identity",
+          "source_url": "https://group.softbank/en/ir/financials/annual_reports/2026/who_we_are",
+          "source_title": "Who We Are - SoftBank Group Report 2026 | SoftBank Group Corp.",
+          "source_content_hash": "13738da46ddc9b017a624793eed338fb1cbf2ebec5389a2e3f3f0774af66d6d5",
+          "quote": "SBG = A strategic investment holding company",
+          "quote_hash": "a8ede4d80321fc90c239b587699c580e468d99126bfbe51eff700598d3c6c43d"
+        },
+        {
+          "source_id": "softbank_scope",
+          "source_url": "https://group.softbank/en/ir/financials/annual_reports/2026/who_we_are",
+          "source_title": "Who We Are - SoftBank Group Report 2026 | SoftBank Group Corp.",
+          "source_content_hash": "13738da46ddc9b017a624793eed338fb1cbf2ebec5389a2e3f3f0774af66d6d5",
+          "quote": "We invest in companies and businesses around the world which lead the acceleration of the Information Revolution and a more connected, empowered, and joyful world for all.",
+          "quote_hash": "184a2c887faac99a8f9054ffb5f36d0aa44ce512372ec04c56c596abd6813976"
+        },
+        {
+          "source_id": "softbank_structure",
+          "source_url": "https://group.softbank/en/ir/financials/annual_reports/2026/who_we_are",
+          "source_title": "Who We Are - SoftBank Group Report 2026 | SoftBank Group Corp.",
+          "source_content_hash": "13738da46ddc9b017a624793eed338fb1cbf2ebec5389a2e3f3f0774af66d6d5",
+          "quote": "These include subsidiaries and Group companies such as Arm, companies in which SBG invests directly with a view to creating value over the long term, and the portfolio companies within SoftBank Vision Funds and other funds.",
+          "quote_hash": "3d4e8293f59287a0d96bc4e9330764fe9d64a78a665d37cdbb4cd6cc4990ce1f"
+        },
+        {
           "source_id": "FISRC-733f644691b6d881",
           "source_url": "https://kandou.com/news/2026-03-23-kandou-ai-secures-strategic-funding-to-redefine-ai-connectivity-and-break-memory-bottlenecks-in-ai/",
           "source_title": "Kandou AI 获得战略融资，重新定义 AI 连接并突破 AI 内存瓶颈",
@@ -161,7 +203,8 @@
           "quote_hash": "cb526767b8b5f53676b6657a8bd43907b4163199623161491bcc086528f725f6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
