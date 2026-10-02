@@ -13,6 +13,13 @@ const cards = [
 ];
 const index = { meta: { taxonomyVersion: "AI-FUNDING-TAGS-1.0", latestDate: "2026-08-16" }, cards };
 
+test('subject aggregation does not lower event totals or inflate unique companies',()=>{
+  const events=[cards[0],{...cards[1],company:cards[0].company,subjectCardId:cards[0].id}];
+  const grouped={...index,cards:[cards[0]],events};
+  const sector=buildSector(grouped,{},cards[0].subcategory,'global');
+  assert.equal(sector.eventCount,2);assert.equal(sector.companyCount,1);
+});
+
 test('legacy taxonomy cannot populate capital-flow charts or sector details', () => {
   const old = { ...index, meta: { latestDate: index.meta.latestDate } };
   assert.equal(buildOverview(old).ranking.length, 0);
