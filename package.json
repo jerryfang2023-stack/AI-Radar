@@ -174,6 +174,7 @@
     "test:china-funding": "node --test agent-workflow/tools/tests/search-gateway.test.mjs agent-workflow/tools/tests/consumer-ai-hardware-monitor.test.mjs agent-workflow/tools/tests/china-funding-lane.test.mjs agent-workflow/tools/tests/china-funding-history.test.mjs agent-workflow/tools/tests/china-funding-entities.test.mjs",
     "build:scys-library": "node agent-workflow/tools/build-scys-community-library.mjs",
     "assert:scys-library": "node agent-workflow/tools/build-scys-community-library.mjs --check",
+    "build:financing-read-model": "node agent-workflow/financing/read-model.mjs",
     "test:financing-monitor": "node --test agent-workflow/financing/tests/*.test.mjs",
     "financing:dispatch": "node agent-workflow/financing/dispatch.mjs",
     "financing:run": "node agent-workflow/financing/run.mjs",

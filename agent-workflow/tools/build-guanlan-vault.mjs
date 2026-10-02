@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 
 import fs from "node:fs";
+import {rewriteVaultLinks} from "./lib/guanlan-vault-layout.mjs";
 import path from "node:path";
 import {
   GUANLAN_VAULT_NAME,
+  GUANLAN_VAULT_LAYOUT_VERSION,
+  GUANLAN_VAULT_PATH_MIGRATIONS,
   GUANLAN_VAULT_PATHS,
   REPOSITORY_CONTENT_PATHS,
   resolveGuanlanVaultRoot,
@@ -57,7 +60,7 @@ function write(relativePath, content) {
     throw new Error(`Refusing to write outside Guanlan Vault: ${relativePath}`);
   }
   fs.mkdirSync(path.dirname(output), { recursive: true });
-  fs.writeFileSync(output, `${content.trimEnd()}\n`, "utf8");
+  fs.writeFileSync(output, `${rewriteVaultLinks(content).trimEnd()}\n`, "utf8");
   generatedFiles.push(relativePath.replaceAll("\\", "/"));
 }
 
@@ -123,6 +126,7 @@ function copyIndustryReports() {
         continue;
       }
       if (!entry.isFile() || path.extname(entry.name).toLowerCase() !== ".md" || entry.name === "README.md") continue;
+      if (!/^status:\s*published\s*$/mu.test(fs.readFileSync(source, "utf8"))) continue;
       const sourceRelative = path.relative(sourceRoot, source);
       const targetRelative = path.join(GUANLAN_VAULT_PATHS.industryReportArchive, sourceRelative).replaceAll("\\", "/");
       write(targetRelative, fs.readFileSync(source, "utf8"));
@@ -154,7 +158,7 @@ const fdeIndex = readJson("01-SiteV2/site/data/data-center-v4/indexes/fde.json",
 const fdeDetails = readJson("01-SiteV2/site/data/data-center-v4/details/fde.json", { fde: [] });
 const hardwareIndex = readJson("01-SiteV2/site/data/data-center-v4/indexes/hardware.json", { hardware: [] });
 const hardwareDetails = readJson("01-SiteV2/site/data/data-center-v4/details/hardware.json", { hardware: [] });
-const funding = readJson("01-SiteV2/site/data/funding-insights-v1.json", { cards: [] });
+const funding = readJson("01-SiteV2/site/data/financing-catalog-v1.json", { cards: [] });
 const trend = readJson("01-SiteV2/site/data/trend-radar-v1.json");
 const opportunity = readJson("01-SiteV2/site/data/opportunity-evidence-v2.json", { evidence: [], directionCards: [] });
 const viewpoints = readJson("01-SiteV2/site/data/first-line-viewpoints-v4.json", { builders: [], remarks: [] });
@@ -195,8 +199,8 @@ write(GUANLAN_VAULT_PATHS.home, `${yaml("观澜 AI")}# 观澜 AI
 
 - [[10-系统现状/当前版本|当前版本]]
 - [[10-系统现状/产品地图|产品地图]]
-- [[20-数据中心/数据中心总览|数据中心]]
-- [[30-应用中心/应用中心总览|应用中心]]
+- [[20-融资情报/融资总览|融资情报]]
+- [[30-专题研究/专题研究总览|专题研究]]
 - [[40-运营中心/网站运营总台|网站运营总台]]
 - [[40-运营中心/运行状态|运行状态]]
 - [[60-知识资产/知识资产总览|知识资产]]
@@ -222,7 +226,7 @@ write(GUANLAN_VAULT_PATHS.currentVersion, `${yaml("当前版本")}# 当前版本
 
 | 层 | 当前版本 |
 |---|---|
-| 站点 | SITE-V4.4.0 two-center focus |
+| 站点 | SITE-V4.6.1-research-retirement |
 | 数据中心 | ${text(manifest.dataVersion)} |
 | 实体 | ${text(manifest.entityVersion)} |
 | 关系 | ${text(manifest.relationshipVersion)} |
@@ -251,13 +255,13 @@ write(GUANLAN_VAULT_PATHS.productMap, `${yaml("产品地图")}# 产品地图
 ## 应用中心
 
 - [变化雷达](${siteBase}/trend-radar.html)
-- [周报与月报](https://www.zkdlj.vip/#reports)
+- [[20-融资情报/融资报告|融资报告归档]]
 
-融资洞察是观澜研究的资本专题；机会地图是未列入公开导航的内部实验室。
+融资站与小程序消费融资专用投影；专题研究资料单独管理，机会地图仅保留历史内部资料。
 
 ## 运营
 
-- [OPS 仪表盘](${siteBase}/operations-console.html)`);
+- [OPS 仪表盘](https://www.zkdlj.vip/ops/)`);
 
 write(GUANLAN_VAULT_PATHS.dataCenterOverview, `${yaml("数据中心总览")}# 数据中心总览
 
@@ -323,24 +327,28 @@ ${listRows(latestCommunity, (item) => `- **${text(item.source || item.category)}
 
 社群内容是线索；只有经过原始来源捕获和 Claim 门禁后才能进入事实层。`);
 
-write(GUANLAN_VAULT_PATHS.applicationCenterOverview, `${yaml("应用中心总览")}# 应用中心总览
+write(GUANLAN_VAULT_PATHS.applicationCenterOverview, `${yaml("专题研究总览")}# 专题研究总览
 
 应用中心消费 V4 事实，但其研究、趋势、机会和资本判断不回写事实层。
 
 - [[变化雷达]]
-- [[行业报告|观澜研究]]
+- [[20-融资情报/融资报告|融资报告]]
+- [[30-专题研究/FDE/企业 AI 与 FDE|FDE]]
+- [[30-专题研究/AI硬件/AI 硬件|AI硬件]]
+- [[30-专题研究/Builders观点/一线观点|Builders观点]]
+- [[30-专题研究/社群监测/社群情报|社群监测]]
 
-融资洞察归入观澜研究的资本专题；机会地图保留为内部实验室。`);
+社群监测、Builders 观点、FDE 与硬件专题保留已有资料，监测任务目前暂停；它们不属于融资业务。`);
 
-write(GUANLAN_VAULT_PATHS.industryReports, `${yaml("观澜研究")}# 观澜研究
+write(GUANLAN_VAULT_PATHS.industryReports, `${yaml("融资报告")}# 融资报告
 
 当前归档 ${reportFiles.length} 份。
 
 ${listRows(reportFiles, (file) => `- [[${file.replace(/\.md$/u, "")}|${path.basename(file, ".md")}]]`)}
 
-[打开周报与月报](https://www.zkdlj.vip/#reports)`);
+周报和月报由小程序受保护内容接口提供；PC 观察频道已退役。`);
 
-write(GUANLAN_VAULT_PATHS.fundingInsights, `${yaml("观澜研究·资本与融资")}# 观澜研究·资本与融资
+write(GUANLAN_VAULT_PATHS.fundingInsights, `${yaml("融资情报")}# 融资情报
 
 - 已发布卡片：${number(funding.cards?.length)}
 - 最新日期：${text(funding.meta?.latest_date)}
@@ -388,15 +396,15 @@ write(GUANLAN_VAULT_PATHS.siteOperations, `${yaml("网站运营总台")}# 网站
 - Vault 是单向生成的本地控制面，不直接参加 GitHub Actions。
 - \`90-工作区\` 的人工笔记不会自动进入生产。
 - 需要发布的内容必须先进入仓库对应的 V4 数据、应用或报告路径并通过门禁。
-- 观澜研究的正式周期报告源位于 \`01-SiteV2/content/12-applications/industry-reports/\`。
+- 正式周期报告源位于 \`01-SiteV2/content/12-applications/industry-reports/\`。
 
 ## 网站入口
 
 - [事件库](${siteBase}/data-center.html?view=events)
 - [实体库](${siteBase}/data-center.html?view=index)
 - [变化雷达](${siteBase}/trend-radar.html)
-- [周报与月报](https://www.zkdlj.vip/#reports)
-- [OPS 仪表盘](${siteBase}/operations-console.html)`);
+- [[20-融资情报/融资报告|融资报告归档]]
+- [OPS 仪表盘](https://www.zkdlj.vip/ops/)`);
 
 write(GUANLAN_VAULT_PATHS.operations, `${yaml("运行状态")}# 运行状态
 
@@ -540,7 +548,7 @@ const fundingAssetFiles = (funding.cards || []).map((card) => {
 | 金额 | ${text(financing.amount)} |
 | 累计融资 | ${text(financing.total_raised)} |
 | 总部 | ${text(company.headquarters)} |
-| 产品分类 | ${text(card.application_category?.name)} |
+| 融资赛道 | ${text(card.financing_tags?.subsector?.name)} |
 | 发布状态 | ${text(card.publication_status)} |
 
 ## 公司与产品
@@ -653,6 +661,8 @@ for (const relativePath of previousGeneratedFiles) {
 
 write(".guanlan-generated.json", JSON.stringify({
   schemaVersion: "GUANLAN-VAULT-PROJECTION-V1.0",
+  layoutVersion: GUANLAN_VAULT_LAYOUT_VERSION,
+  pathMigrations: GUANLAN_VAULT_PATH_MIGRATIONS,
   vaultName: GUANLAN_VAULT_NAME,
   generatedAt: new Date().toISOString(),
   generatedDate,

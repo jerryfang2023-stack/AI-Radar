@@ -95,7 +95,7 @@ if (vaultRoot) {
     const fileProblems = relativePath.startsWith("90-工作区/") || relativePath === "AGENTS.md"
       ? workspaceWarnings : problems;
     const isPublishedKnowledgeAsset = (
-      relativePath.startsWith("30-应用中心/行业报告档案/")
+      relativePath.startsWith("20-融资情报/报告档案/")
       || (
         relativePath.startsWith("60-知识资产/")
         && relativePath.split("/").length >= 3

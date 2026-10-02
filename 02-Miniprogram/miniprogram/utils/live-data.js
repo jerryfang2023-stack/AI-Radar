@@ -1,3 +1,4 @@
+const {unpackIndex}=require("./compact-index.js");
 const { isFundingVisible } = require("./funding-visibility.js");
 const { currentFinancingIndex, taxonomyVersion } = require('./financing-taxonomy.js');
 const bundledFundingIndex = require("../data/funding-index.js");
@@ -407,7 +408,10 @@ function refreshFundingData() {
     if (cachedManifest?.version === manifest.version && cachedIndex) {
       try { return acceptIndex(cachedIndex); } catch { /* re-fetch a corrupt or obsolete cache */ }
     }
-    return requestJson(`${PUBLIC_ORIGIN}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`).then((index) => {
+    const loadIndex=manifest.compactIndexPath === "/data/mini/domains/financing/compact-index.json"
+      ? requestJson(`${PUBLIC_ORIGIN}${manifest.compactIndexPath}?v=${encodeURIComponent(manifest.version)}`).then(unpackIndex).then(index=>{assertFundingIndex(index,manifest);return index;}).catch(()=>requestJson(`${PUBLIC_ORIGIN}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`))
+      : requestJson(`${PUBLIC_ORIGIN}${manifest.indexPath}?v=${encodeURIComponent(manifest.version)}`);
+    return loadIndex.then((index) => {
       assertFundingIndex(index, manifest);
       writeStorage(CACHE_KEYS.fundingManifest, manifest);
       writeStorage(CACHE_KEYS.fundingIndex, index);
