@@ -3,7 +3,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
-import { acquireLock, read, write, runStages } from './state.mjs';
+import { acquireLock, read, write, runStages, digest } from './state.mjs';
+import {verifyReadModel} from './read-model.mjs';
 import { queryPlan } from './discovery.mjs';
 import { parseArgs } from './args.mjs';
 
@@ -20,7 +21,7 @@ const primary = path.dirname(path.resolve(root,run('git',['rev-parse','--git-com
 const directory = path.resolve(args.get('runtime-dir') || path.join(primary,'..','..','runtime','financing',date));
 const portal = path.resolve(args.get('portal-repo') || process.env.GUANLAN_FUNDING_PORTAL_REPO || path.join(primary,'..','Guanlan-Funding-Portal'));
 if (args.get('dry-run') === 'true') {
-  console.log(JSON.stringify({date,stages:['accepted_main','pages','data_lake','vault','portal_with_live_parity','ops'],portal,directory}));
+  console.log(JSON.stringify({date,stages:['accepted_main','pages','data_lake','financing_read_model','vault','portal_with_live_parity','ops'],portal,directory}));
 } else {
   const unlock = acquireLock(directory);
   let checkout, linked=false;
@@ -45,6 +46,7 @@ if (args.get('dry-run') === 'true') {
     const lake = `--lake-dir=${path.join(primary,'data-lake')}`;
     const plans = [
       {id:'data_lake', commands:[['agent-workflow/tools/sync-light-data-lake.mjs','--v4-only=true',lake],['agent-workflow/tools/assert-data-lake-v4.mjs',lake]]},
+      {id:'financing_read_model', commands:[['agent-workflow/financing/read-model.mjs',`--output=${path.join(primary,'data-marts','financing')}`]]},
       {id:'vault', commands:[['agent-workflow/tools/sync-guanlan-vault-from-main.mjs',`--date=${date}`,`--runtime-dir=${directory}`]]},
       {id:'portal', commands:[['agent-workflow/tools/assert-funding-insights-v1.mjs',`--date=${date}`],[path.join(portal,'scripts/publish-from-wavesight.mjs'),`--wavesight-repo=${checkout}`]]},
       {id:'ops', commands:[['agent-workflow/tools/publish-ops-console.mjs']]},
@@ -52,7 +54,14 @@ if (args.get('dry-run') === 'true') {
       // The accepted SHA already binds the checkout contents. A fresh temporary
       // path must not invalidate a completed release when resuming the OPS step.
       checkpointCommands:stage.commands.map(command=>command.map(value=>value.replaceAll(checkout,'<accepted-checkout>'))),
-      valid:()=>true}));
+      valid:()=>{
+        if(stage.id!=='financing_read_model')return true;
+        try {
+          const output=path.join(primary,'data-marts','financing'),pointer=read(path.join(output,'current.json'));
+          const manifest=verifyReadModel(path.join(output,'releases',pointer.releaseId));
+          return manifest.inputHash===digest(fs.readFileSync(path.join(checkout,'01-SiteV2/site/data/financing-catalog-v1.json'),'utf8'));
+        } catch {return false;}
+      }}));
     await runStages({date,codeVersion:sha,stages:plans,file:path.join(directory,'publication-stages.json'), execute: async stage => {
       for(const command of stage.commands) {
         const output=run(process.execPath,command,checkout,1200000);

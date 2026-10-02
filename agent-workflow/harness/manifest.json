@@ -357,6 +357,30 @@
           "path": "scripts/validate-report-data.mjs",
           "layer": "closure",
           "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "docs/data-domains.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "scripts/data-domains.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "scripts/data-domains.test.mjs",
+          "layer": "closure",
+          "kind": "source"
+        },
+        {
+          "root": "portal",
+          "path": "scripts/profile-deployment.test.mjs",
+          "layer": "closure",
+          "kind": "source"
         }
       ],
       "check": {
@@ -410,6 +434,12 @@
           "path": "02-Miniprogram/docs/releases/1.0.0/README.md",
           "layer": "closure",
           "kind": "evidence"
+        },
+        {
+          "root": "wavesight",
+          "path": "02-Miniprogram/tests/compact-index.test.mjs",
+          "layer": "closure",
+          "kind": "source"
         }
       ],
       "check": {
@@ -575,6 +605,24 @@
           "path": "agent-workflow/tools/tests/data-lake-v4-convergence.test.mjs",
           "layer": "closure",
           "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "docs/financing-data-foundation.md",
+          "layer": "design",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/financing/read-model.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/financing/tests/read-model.test.mjs",
+          "layer": "closure",
+          "kind": "source"
         }
       ],
       "check": {
@@ -670,6 +718,18 @@
           "root": "wavesight",
           "path": "agent-workflow/tools/build-guanlan-vault.mjs",
           "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/tools/migrate-guanlan-vault-layout.mjs",
+          "layer": "execution",
+          "kind": "source"
+        },
+        {
+          "root": "wavesight",
+          "path": "agent-workflow/financing/tests/vault-layout.test.mjs",
+          "layer": "closure",
           "kind": "source"
         }
       ],

@@ -110,7 +110,7 @@ function markdownFiles(root) {
 function isKnowledgeAsset(relativePath) {
   const normalized = relativePath.replaceAll("\\", "/");
   if (normalized.startsWith(`${CITATION_ROOT}/`) || normalized === RELATION_INDEX) return false;
-  if (normalized.startsWith("30-应用中心/行业报告档案/")) return true;
+  if (normalized.startsWith("20-融资情报/报告档案/")) return true;
   if (!normalized.startsWith("60-知识资产/")) return false;
   return normalized.split("/").length >= 3;
 }
@@ -278,7 +278,7 @@ export function syncGuanlanEvidence({
     }));
 
   const reportRefsBySource = new Map();
-  for (const asset of allAssets.filter((item) => item.relativePath.startsWith("30-应用中心/行业报告档案/"))) {
+  for (const asset of allAssets.filter((item) => item.relativePath.startsWith("20-融资情报/报告档案/"))) {
     for (const sourceRef of unique([...asset.urls.flatMap((url) => sourceIdsByUrl.get(url) || []), ...asset.explicitSources])) {
         if (!reportRefsBySource.has(sourceRef)) reportRefsBySource.set(sourceRef, []);
         reportRefsBySource.get(sourceRef).push(asset.relativePath);
@@ -290,7 +290,7 @@ export function syncGuanlanEvidence({
     const sourceRefs = unique([...asset.urls.flatMap((url) => sourceIdsByUrl.get(url) || []), ...asset.explicitSources]);
     const relations = sourceRefs.map((sourceRef) => graph.bySource.get(sourceRef)).filter(Boolean);
     const reportRefs = unique([
-      ...(asset.relativePath.startsWith("30-应用中心/行业报告档案/") ? [asset.relativePath] : []),
+      ...(asset.relativePath.startsWith("20-融资情报/报告档案/") ? [asset.relativePath] : []),
       ...sourceRefs.flatMap((sourceRef) => reportRefsBySource.get(sourceRef) || []),
     ]);
     assetLinks.push({
@@ -315,7 +315,7 @@ export function syncGuanlanEvidence({
     .map((sourceRef) => {
       const relation = graph.bySource.get(sourceRef);
       const assets = sourceAssets.get(sourceRef) || [];
-      const reportCount = assets.filter((asset) => asset.relativePath.startsWith("30-应用中心/行业报告档案/")).length;
+      const reportCount = assets.filter((asset) => asset.relativePath.startsWith("20-融资情报/报告档案/")).length;
       return {
         sourceRef,
         relation,
@@ -372,8 +372,8 @@ ${EVIDENCE_END}`;
   for (const item of rankedSources) {
     const source = item.relation.source;
     const relativePath = citationPathBySource.get(item.sourceRef);
-    const reportAssets = item.assets.filter((asset) => asset.relativePath.startsWith("30-应用中心/行业报告档案/"));
-    const otherAssets = item.assets.filter((asset) => !asset.relativePath.startsWith("30-应用中心/行业报告档案/"));
+    const reportAssets = item.assets.filter((asset) => asset.relativePath.startsWith("20-融资情报/报告档案/"));
+    const otherAssets = item.assets.filter((asset) => !asset.relativePath.startsWith("20-融资情报/报告档案/"));
     const sourceUrl = source.canonical_url || source.source_url || "";
     const snapshotRefs = unique(source.snapshot_refs || []);
     const relationLinks = [

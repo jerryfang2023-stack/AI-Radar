@@ -2,9 +2,11 @@
 
 import fs from "node:fs";
 import path from "node:path";
+import {verifyVaultDomains} from './build-guanlan-vault-domains.mjs';
 import { VAULT_SCAN_SKIP_DIRECTORIES } from "./lib/guanlan-vault-scan.mjs";
 import {
   GUANLAN_VAULT_PATHS,
+  GUANLAN_VAULT_LAYOUT_VERSION,
   REPOSITORY_CONTENT_PATHS,
   resolveGuanlanVaultRoot,
 } from "./guanlan-vault-paths.mjs";
@@ -59,6 +61,7 @@ if (vaultRoot) {
     ...Object.values(GUANLAN_VAULT_PATHS),
     ".guanlan-generated.json",
     ".guanlan-evidence.json",
+    ".guanlan-domains.json",
     "60-知识资产/证据关系索引.md",
   ];
   for (const relativePath of required) {
@@ -95,7 +98,7 @@ if (vaultRoot) {
     const fileProblems = relativePath.startsWith("90-工作区/") || relativePath === "AGENTS.md"
       ? workspaceWarnings : problems;
     const isPublishedKnowledgeAsset = (
-      relativePath.startsWith("30-应用中心/行业报告档案/")
+      relativePath.startsWith("20-融资情报/报告档案/")
       || (
         relativePath.startsWith("60-知识资产/")
         && relativePath.split("/").length >= 3
@@ -153,6 +156,8 @@ if (vaultRoot) {
 
   try {
     const manifest = JSON.parse(fs.readFileSync(path.join(vaultRoot, ".guanlan-generated.json"), "utf8"));
+    if(manifest.layoutVersion!==GUANLAN_VAULT_LAYOUT_VERSION)problems.push('Guanlan Vault layout migration is required');
+    verifyVaultDomains(vaultRoot);
     const generatedFiles = Array.isArray(manifest.generatedFiles) ? manifest.generatedFiles : [];
     generatedManifestFiles = new Set(generatedFiles.map((relativePath) => relativePath.replaceAll("\\", "/")));
     if (!generatedFiles.length) problems.push("generated manifest has no file inventory");
