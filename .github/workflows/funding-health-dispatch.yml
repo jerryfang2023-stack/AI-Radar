@@ -11,6 +11,7 @@ permissions:
   contents: read
   actions: write
   pull-requests: read
+  checks: read
 concurrency:
   group: financing-health-dispatch
   cancel-in-progress: false

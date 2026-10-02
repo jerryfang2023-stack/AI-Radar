@@ -23,11 +23,14 @@ test('migration-only publication cannot suppress financing discovery', () => {
 
 test('an open financing PR waits for Codex review instead of starting the same day again', () => {
   const pr={headRefName:`automation/financing-${date}`,state:'OPEN',url:'https://example.com/pull/42',headRefOid:'reviewed-sha'};
-  assert.deepEqual(pendingReviewStatus([pr],date),{
+  assert.deepEqual(pendingReviewStatus([pr],date,'passed'),{
     date,status:'ready_for_review',pr_url:pr.url,head_sha:pr.headRefOid,
   });
+  assert.equal(pendingReviewStatus([pr],date,'waiting').status,'checks_pending');
+  assert.equal(pendingReviewStatus([pr],date,'failed').status,'ci_failed');
   assert.equal(pendingReviewStatus([{...pr,state:'CLOSED'}],date),null);
   assert.equal(pendingReviewStatus([pr],'2026-10-02'),null);
+  assert.match(read('.github/workflows/funding-health-dispatch.yml'),/^  checks: read$/mu);
 });
 
 test('retired daily workflows are removed and weekly monitor code stays manual and paused', () => {

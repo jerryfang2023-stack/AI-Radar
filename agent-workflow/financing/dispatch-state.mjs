@@ -6,7 +6,8 @@ export function acceptedPublicationStatus(publication, date) {
     : null;
 }
 
-export function pendingReviewStatus(prs, date) {
+export function pendingReviewStatus(prs, date, checksStatus = 'waiting') {
   const pr = prs.find(row => row.state === 'OPEN' && row.headRefName === `automation/financing-${date}`);
-  return pr ? { date, status: 'ready_for_review', pr_url: pr.url, head_sha: pr.headRefOid } : null;
+  const status = checksStatus === 'passed' ? 'ready_for_review' : checksStatus === 'failed' ? 'ci_failed' : 'checks_pending';
+  return pr ? { date, status, pr_url: pr.url, head_sha: pr.headRefOid } : null;
 }

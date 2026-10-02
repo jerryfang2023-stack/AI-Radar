@@ -3,6 +3,7 @@ import { spawnSync } from 'node:child_process';
 import { queryPlan } from './discovery.mjs';
 import { acceptedPublicationStatus, pendingReviewStatus } from './dispatch-state.mjs';
 import { parseArgs } from './args.mjs';
+import { inspectProductionChecks } from '../tools/wait-for-production-code-checks.mjs';
 const args = parseArgs();
 const date = args.get('date') || new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 queryPlan(date);
@@ -22,7 +23,9 @@ if (acceptedStatus) {
   const prs = JSON.parse(gh(['pr','list','--repo',repo,'--head',`automation/financing-${date}`,'--state','open','--json','headRefName,state,url,headRefOid']));
   const review = pendingReviewStatus(prs, date);
   if (review) {
-    console.log(JSON.stringify(review));
+    const checks = JSON.parse(gh(['api',`repos/${repo}/commits/${review.head_sha}/check-runs?per_page=100`]));
+    const ci = inspectProductionChecks(checks.check_runs || [], review.head_sha);
+    console.log(JSON.stringify(pendingReviewStatus(prs, date, ci.status)));
   } else {
     const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion']));
     const matching = runs.filter(run => run.displayTitle === `Financing ${date}`);
