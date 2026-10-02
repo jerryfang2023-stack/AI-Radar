@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,7 +54,7 @@
   },
   "entity": {
     "id": "EN-cc2ab268105df889",
-    "name": "Olix Computing Ltd.",
+    "name": "OLIX Computing Ltd.",
     "entityType": "organization_candidate",
     "typeLabel": "公司与机构",
     "aliases": [],
@@ -63,7 +63,8 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-4d2852e1694b2818"
+      "EV-4d2852e1694b2818",
+      "EV-18554a19b342911e"
     ],
     "viewpointIds": [],
     "classificationRefs": [
@@ -74,11 +75,12 @@
       "TX-ai_market_subcategory-hardware_computing"
     ],
     "relatedEntityIds": [],
-    "firstSeen": "2026-08-03",
-    "lastSeen": "2026-08-08",
+    "firstSeen": "2026-02-11",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-18554a19b342911e",
         "EV-4d2852e1694b2818"
       ],
       "deployments": [],
@@ -89,6 +91,34 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-18554a19b342911e",
+        "dataDate": "2026-10-02",
+        "date": "2026-02-11",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-1360aaacd76daa34"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-cc2ab268105df889",
+          "EN-1360aaacd76daa34"
+        ]
+      },
       {
         "id": "EV-4d2852e1694b2818",
         "dataDate": "2026-08-08",
@@ -710,6 +740,7 @@
         "EV-2a2f79242a9479e7",
         "EV-0f7dc05e62a249e8",
         "EV-4af14568b1bdeb35",
+        "EV-a00db4c596de6947",
         "EV-83728e3b6c7736ce",
         "EV-ef2ac2c9b425491c",
         "EV-b116eafe60d71fbe",
@@ -848,6 +879,7 @@
         "EN-e9c2b868dc8f92df",
         "EN-d6aaf8306449a07d",
         "EN-9cb45a27a2808c01",
+        "EN-aeb9dcb5fa3fbdb0",
         "EN-adda212f0afa4781",
         "EN-373da2ec629326c0",
         "EN-a7e079ed603b3436",

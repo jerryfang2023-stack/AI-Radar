@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,15 +73,21 @@
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 2,
+      "lead": 3,
       "participant": 2
     },
     "round_codes": [
       "seed",
+      "series_a2",
       "series_b",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1b636bc7ad667158",
+        "canonical_entity_id": "",
+        "name": "ChipAgents"
+      },
       {
         "entity_id": "EN-641a309108850fc9",
         "canonical_entity_id": "",
@@ -141,6 +147,54 @@
             "source_content_hash": "6e420312a93cf1d9fb0c5dc88ec2b95cb97f03a273ccf1896a5f466aad867989",
             "quote": "B Capital, an existing shareholder, participated in the Series C along with other global investors.",
             "quote_hash": "1043fc03f0085f30abd22fdd944799f6255d995bcbb6d45705a95d31f851a03d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dc73d97795f7eaca",
+        "funding_insight_id": "FI-50354632d843dddd",
+        "event_ids": [
+          "EV-73dd24ff36008b7d"
+        ],
+        "company_entity_id": "EN-1b636bc7ad667158",
+        "company_canonical_entity_id": "",
+        "company_name": "ChipAgents",
+        "round": "A2轮",
+        "round_code": "series_a2",
+        "round_original": "A2轮",
+        "amount_original": "$60 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-07-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-cd04c9b2d1340164",
+            "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
+            "source_title": "ChipAgents 将 A 轮融资扩大至 13400 万美元，半导体设计对智能体 AI 的需求日益增长",
+            "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
+            "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
+            "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
+          },
+          {
+            "source_id": "FISRC-762232331bf847c3",
+            "source_url": "https://chipagents.ai/newsroom",
+            "source_title": "Newsroom | ChipAgents",
+            "source_content_hash": "a785ef14f4e73e9e",
+            "quote": "VMblog covers ChipAgents' $60 million Series A2 financing, led by new investor B Capital",
+            "quote_hash": "63f81caf7553f7371b7b9201335029726cb7150e3fcfd8fe54feb198696478e6"
           }
         ]
       },
@@ -308,6 +362,22 @@
         "quote_hash": "1043fc03f0085f30abd22fdd944799f6255d995bcbb6d45705a95d31f851a03d"
       },
       {
+        "source_id": "FISRC-cd04c9b2d1340164",
+        "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
+        "source_title": "ChipAgents 将 A 轮融资扩大至 13400 万美元，半导体设计对智能体 AI 的需求日益增长",
+        "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
+        "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
+        "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
+      },
+      {
+        "source_id": "FISRC-762232331bf847c3",
+        "source_url": "https://chipagents.ai/newsroom",
+        "source_title": "Newsroom | ChipAgents",
+        "source_content_hash": "a785ef14f4e73e9e",
+        "quote": "VMblog covers ChipAgents' $60 million Series A2 financing, led by new investor B Capital",
+        "quote_hash": "63f81caf7553f7371b7b9201335029726cb7150e3fcfd8fe54feb198696478e6"
+      },
+      {
         "source_id": "FISRC-05007e2b6b43ffda",
         "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
         "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
@@ -392,12 +462,8 @@
           "source_id": "FISRC-05cde27c80650d6f"
         },
         {
-          "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-05007e2b6b43ffda"
-        },
-        {
-          "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 既有投资方，本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1347e63f3abd5d34"
+          "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮领投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cd04c9b2d1340164"
         }
       ],
       "contacts": [
@@ -443,20 +509,20 @@
           "quote_hash": "1043fc03f0085f30abd22fdd944799f6255d995bcbb6d45705a95d31f851a03d"
         },
         {
-          "source_id": "FISRC-05007e2b6b43ffda",
-          "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
-          "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
-          "source_content_hash": "4affcb58ccdfce57",
-          "quote": "The round was led by Speedinvest and B Capital.",
-          "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
+          "source_id": "FISRC-cd04c9b2d1340164",
+          "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
+          "source_title": "ChipAgents 将 A 轮融资扩大至 13400 万美元，半导体设计对智能体 AI 的需求日益增长",
+          "source_content_hash": "c4c1856ea78e70706a7dad6982ee3f116a9a0d69cacfc9abdf153799bdc32118",
+          "quote": "new investor B Capital joining Bessemer Venture Partners, Micron, MediaTek, Ericsson, ScOp, and other existing investors.",
+          "quote_hash": "15ca66efc054a9b1d989df055e9764043657c53d027c285dbc934bdeaf2f9961"
         },
         {
-          "source_id": "FISRC-1347e63f3abd5d34",
-          "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
-          "source_title": "独家：Oro Labs利用AI智能体简化企业采购，获1亿美元融资",
-          "source_content_hash": "903d49978d88c371",
-          "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
-          "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
+          "source_id": "FISRC-762232331bf847c3",
+          "source_url": "https://chipagents.ai/newsroom",
+          "source_title": "Newsroom | ChipAgents",
+          "source_content_hash": "a785ef14f4e73e9e",
+          "quote": "VMblog covers ChipAgents' $60 million Series A2 financing, led by new investor B Capital",
+          "quote_hash": "63f81caf7553f7371b7b9201335029726cb7150e3fcfd8fe54feb198696478e6"
         }
       ],
       "last_verified_at": "2026-09-25",

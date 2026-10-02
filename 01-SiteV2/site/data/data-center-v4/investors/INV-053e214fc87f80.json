@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2023-04-20",
     "latest_disclosed_at": "2023-04-20",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "78c95084a56906e913d57ffd0ffd449173cc7b5ac3425a09a060fd7f5388a9db"
           }
         ]
+      },
+      {
+        "activity_id": "IA-31b2219721104725",
+        "funding_insight_id": "FI-d956a9d29808b6fa",
+        "event_ids": [
+          "EV-848d81fb5ed7b3cd"
+        ],
+        "company_entity_id": "EN-22389189b08cb05c",
+        "company_canonical_entity_id": "",
+        "company_name": "Ayar Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有财务投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5b6c7c4ae002a992",
+            "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+            "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+            "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+            "quote": "They join existing financial institutions such as Advent Global Opportunities, Boardman Bay Capital Management, IAG Capital Partners, Light Street Capital, and Playground Global",
+            "quote_hash": "66f916ca657af50c0ff86226d63523ee9d7017bbcb51c0eadbc6a69a5145aa1b"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "5938e32dd8eaa644",
         "quote": "04.11.2020 Series A $22.5M -",
         "quote_hash": "78c95084a56906e913d57ffd0ffd449173cc7b5ac3425a09a060fd7f5388a9db"
+      },
+      {
+        "source_id": "FISRC-5b6c7c4ae002a992",
+        "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+        "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+        "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+        "quote": "They join existing financial institutions such as Advent Global Opportunities, Boardman Bay Capital Management, IAG Capital Partners, Light Street Capital, and Playground Global",
+        "quote_hash": "66f916ca657af50c0ff86226d63523ee9d7017bbcb51c0eadbc6a69a5145aa1b"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：Robust.AI · A1轮 · 2023-04-20 · 本轮参投，A轮参投 · $20M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f4e29cbc583c9f01"
+        },
+        {
+          "description": "融资来源记录：Ayar Labs · 历史轮次未披露 · 既有财务投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5b6c7c4ae002a992"
         }
       ],
       "contacts": [],
@@ -159,6 +204,14 @@
           "source_content_hash": "5938e32dd8eaa644",
           "quote": "04.11.2020 Series A $22.5M -",
           "quote_hash": "78c95084a56906e913d57ffd0ffd449173cc7b5ac3425a09a060fd7f5388a9db"
+        },
+        {
+          "source_id": "FISRC-5b6c7c4ae002a992",
+          "source_url": "https://ayarlabs.com/news/ayar-labs-closes-500m-series-e-accelerates-volume-production-of-co-packaged-optics/",
+          "source_title": "Ayar Labs 完成 5 亿美元 E 轮融资，加速共封装光学器件量产",
+          "source_content_hash": "5b278bb1a7465c76bb7f6e6f1dddb2bc8fb93b5a774abd93c5228bd45624a78a",
+          "quote": "They join existing financial institutions such as Advent Global Opportunities, Boardman Bay Capital Management, IAG Capital Partners, Light Street Capital, and Playground Global",
+          "quote_hash": "66f916ca657af50c0ff86226d63523ee9d7017bbcb51c0eadbc6a69a5145aa1b"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -65,6 +65,7 @@
       "EV-b5dd10300e34f2d3",
       "EV-b4d6c556eadaa272",
       "EV-88158ddf272e4731",
+      "EV-ef3af6120a610f28",
       "EV-d778b532e1d6e74f",
       "EV-e2a94eb223c11a66",
       "EV-51d8aec94225e9c6",
@@ -78,6 +79,7 @@
       "EN-e22521e7de65d819",
       "EN-ada6f7916f22af98",
       "EN-f0a77f08b0db14ab",
+      "EN-a2f8dc95e7c8ffa7",
       "EN-713589016b2361a3",
       "EN-bd86ebd32193b381",
       "EN-78e778b471fd74fd",
@@ -3182,6 +3184,124 @@
       "publisher": "搜狐"
     },
     {
+      "id": "EV-ef3af6120a610f28",
+      "dataDate": "2026-10-02",
+      "date": "2026-04-29",
+      "updatedDate": "2026-04-29",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Maven 领投 Third Space Learning 440 万英镑融资",
+      "originalTitle": "Maven leads £4.4 million investment in Third Space Learning",
+      "subject": "Third Space Learning",
+      "action": "funding",
+      "object": "secured £4.4 million investment; round undisclosed",
+      "metrics": [
+        "£4.4 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-a2f8dc95e7c8ffa7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "education_learning",
+            "name": "教育与学习",
+            "entityIds": [
+              "EN-a2f8dc95e7c8ffa7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-a2f8dc95e7c8ffa7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-a2f8dc95e7c8ffa7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-a2f8dc95e7c8ffa7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "education_learning",
+          "name": "教育与学习",
+          "entityIds": [
+            "EN-a2f8dc95e7c8ffa7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-a2f8dc95e7c8ffa7"
+      ],
+      "entityNames": [
+        "Third Space Learning"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.mavencp.com/latest-news/maven-leads-4.4-million-investment-to-scale-ai-tutoring?hs_amp=true",
+      "publisher": "www.mavencp.com"
+    },
+    {
       "id": "EV-d778b532e1d6e74f",
       "dataDate": "2026-10-02",
       "date": "2026-04-22",
@@ -5088,6 +5208,28 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-06-26",
       "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-a2f8dc95e7c8ffa7",
+      "name": "Third Space Learning",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-ef3af6120a610f28"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-education_learning"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-04-29",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-713589016b2361a3",

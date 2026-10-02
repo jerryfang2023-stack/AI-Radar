@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -130,6 +130,7 @@
       "EV-d853eabcf7e759bd",
       "EV-44a4e92c03a31ab1",
       "EV-a84ec4216d3ded6d",
+      "EV-7257a7f4ab72c018",
       "EV-69ac49d771d3b778",
       "EV-f9b346bec4251166",
       "EV-ada36aac02003efe",
@@ -225,6 +226,7 @@
       "EN-ca2325e126df04fc",
       "EN-ce65fa41b16c33ff",
       "EN-ee04228c5c6d8b08",
+      "EN-f6631f3f9c250c24",
       "EN-4ad230340ce031eb",
       "EN-00e5330d08a779e8",
       "EN-69c5804b91710f4d",
@@ -29299,6 +29301,101 @@
       "publisher": "prnewswire.com"
     },
     {
+      "id": "EV-7257a7f4ab72c018",
+      "dataDate": "2026-10-02",
+      "date": "2026-05-20",
+      "updatedDate": "2026-05-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "智象未来（合肥）信息技术有限公司获“B+轮”融资，金额亿级人民币",
+      "originalTitle": "",
+      "subject": "智象未来",
+      "action": "funding",
+      "object": "获得亿级人民币B+轮融资",
+      "metrics": [
+        "161.0064万"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-4b183b424f3bd79f"
+        ]
+      },
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "data_analysis",
+            "name": "数据分析",
+            "entityIds": [
+              "EN-f6631f3f9c250c24"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-f6631f3f9c250c24"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "data_analysis",
+          "name": "数据分析",
+          "entityIds": [
+            "EN-f6631f3f9c250c24"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f6631f3f9c250c24",
+        "EN-4cab994c57f770ed"
+      ],
+      "entityNames": [
+        "智象未来",
+        "近日"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.sohu.com/a/1025264778_114984",
+      "publisher": "www.sohu.com"
+    },
+    {
       "id": "EV-69ac49d771d3b778",
       "dataDate": "2026-09-12",
       "date": "2026-05-19",
@@ -36809,7 +36906,9 @@
         "EV-20e5d57a05b69a95",
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
+        "EV-0319b53ac4d33276",
         "EV-68d5a02e5213b43c",
+        "EV-8150d00d04b65ef4",
         "EV-2edec0302b3e0626",
         "EV-c503664bc5c24b10",
         "EV-ee9a4433b4e7715e",
@@ -37387,9 +37486,9 @@
         "TX-ai_market_subcategory-sales",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
+        "TX-technology-long_context",
         "TX-technology-image_generation",
         "TX-technology-computer_use",
-        "TX-technology-long_context",
         "TX-technology-reasoning",
         "TX-deployment_model-cloud",
         "TX-technology-tool_use",
@@ -39725,8 +39824,8 @@
         "TX-industry-professional_services",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
-        "TX-technology-computer_use",
         "TX-technology-long_context",
+        "TX-technology-computer_use",
         "TX-technology-model_context_protocol",
         "TX-technology-guardrails_safety",
         "TX-technology-human_in_loop",
@@ -40354,9 +40453,9 @@
         "TX-industry-professional_services",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
+        "TX-technology-long_context",
         "TX-technology-image_generation",
         "TX-technology-computer_use",
-        "TX-technology-long_context",
         "TX-technology-reasoning",
         "TX-technology-guardrails_safety",
         "TX-technology-inference_optimization",

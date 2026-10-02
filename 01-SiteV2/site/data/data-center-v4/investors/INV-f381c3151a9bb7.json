@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 20,
+    "current_round_count": 22,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 17,
+    "portfolio_company_count": 19,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,13 +72,14 @@
     "first_disclosed_at": "2025-03-03",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 3,
-      "lead": 9,
+      "lead": 10,
       "participant": 10
     },
     "round_codes": [
       "multi_round",
+      "pre_seed",
       "seed",
       "series_a",
       "series_c",
@@ -112,6 +113,11 @@
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
         "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-73fac6765f991fe7",
+        "canonical_entity_id": "",
+        "name": "Claros"
       },
       {
         "entity_id": "EN-ac32f27ba7a1346f",
@@ -162,6 +168,11 @@
         "entity_id": "EN-f5cfcb570b7edac2",
         "canonical_entity_id": "",
         "name": "Nexus Enterprises, Inc"
+      },
+      {
+        "entity_id": "EN-27cac5503836765c",
+        "canonical_entity_id": "",
+        "name": "Pool"
       },
       {
         "entity_id": "EN-8ab71d56a963f706",
@@ -539,6 +550,46 @@
         ]
       },
       {
+        "activity_id": "IA-78a422a423b54e18",
+        "funding_insight_id": "FI-b1485b12ec96b8d6",
+        "event_ids": [
+          "EV-7d37eeb73c3d2317"
+        ],
+        "company_entity_id": "EN-27cac5503836765c",
+        "company_canonical_entity_id": "",
+        "company_name": "Pool",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "over $2 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2000000,
+          "min_value": 2000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 200 万美元"
+        },
+        "announced_at": "2026-06-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5497463d6c7b6acf",
+            "source_url": "https://www.linkedin.com/posts/poolday_introducing-pool-weve-raised-2m-in-activity-7470874080842285056-GzNS",
+            "source_title": "Introducing Pool 🏊 We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard Pool is \"just an app for… | Pool",
+            "source_content_hash": "25273f45b49e8af2",
+            "quote": "We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard",
+            "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-fc8680d54bf1e931",
         "funding_insight_id": "FI-274044e5d2a8eb25",
         "event_ids": [
@@ -867,6 +918,46 @@
         ]
       },
       {
+        "activity_id": "IA-389d3a0cb279a177",
+        "funding_insight_id": "FI-cc2860ce291ce03f",
+        "event_ids": [
+          "EV-e0d9944bb56fe3da"
+        ],
+        "company_entity_id": "EN-73fac6765f991fe7",
+        "company_canonical_entity_id": "",
+        "company_name": "Claros",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-03-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2877a4b61010da1c",
+            "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
+            "source_title": "从芯片到电网重新定义数据中心能源基础设施",
+            "source_content_hash": "904713ab4fa86f2ea7546f7229f8bfca76272454fd1556e862479e67cf57708e",
+            "quote": "our oversubscribed $30 million seed round co-led by General Catalyst and Red Cell Partners",
+            "quote_hash": "892a781499cfed0d233e5c65f2168b644fc84b7ca1bd4012e89871cf9029f1f0"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-da5ec791ed08ad43",
         "funding_insight_id": "FI-94de7d23d9ebd5ba",
         "event_ids": [
@@ -1157,6 +1248,14 @@
         "quote_hash": "7396fd22e5914332bfb4e95b5d54d556ac8d008ff51ca34abbdf7b5d79786d9f"
       },
       {
+        "source_id": "FISRC-5497463d6c7b6acf",
+        "source_url": "https://www.linkedin.com/posts/poolday_introducing-pool-weve-raised-2m-in-activity-7470874080842285056-GzNS",
+        "source_title": "Introducing Pool 🏊 We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard Pool is \"just an app for… | Pool",
+        "source_content_hash": "25273f45b49e8af2",
+        "quote": "We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard",
+        "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
+      },
+      {
         "source_id": "FISRC-e9a8d571db654fd4",
         "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
         "source_title": "Factorial 完成 1.5 亿美元 D 轮融资，估值达 25 亿美元，成为欧洲最具价值的 AI 智能体规模化企业之一",
@@ -1227,6 +1326,14 @@
         "source_content_hash": "9f6d47f3b99dee7c",
         "quote": "General Catalyst led the round.",
         "quote_hash": "c0ad465782008d45a74714c5a990e2a70e3ca417603a8c7b2ed8efdd33740271"
+      },
+      {
+        "source_id": "FISRC-2877a4b61010da1c",
+        "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
+        "source_title": "从芯片到电网重新定义数据中心能源基础设施",
+        "source_content_hash": "904713ab4fa86f2ea7546f7229f8bfca76272454fd1556e862479e67cf57708e",
+        "quote": "our oversubscribed $30 million seed round co-led by General Catalyst and Red Cell Partners",
+        "quote_hash": "892a781499cfed0d233e5c65f2168b644fc84b7ca1bd4012e89871cf9029f1f0"
       },
       {
         "source_id": "FISRC-f961f60a13274764",
@@ -1475,7 +1582,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[20].role": {
+        "activities[22].role": {
           "text": "Pre-Seed 轮领投",
           "source_hash": "b679d7fa92689a42e5e3729978cbf6f81b503b4ff4fa9193c6a9694195d14b03",
           "provider": "deepseek",

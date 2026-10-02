@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-10-01",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -124,6 +125,38 @@
             "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
           }
         ]
+      },
+      {
+        "activity_id": "IA-79227cc5fc584db7",
+        "funding_insight_id": "FI-3e6cc07696a6e9e0",
+        "event_ids": [
+          "EV-18554a19b342911e"
+        ],
+        "company_entity_id": "EN-1360aaacd76daa34",
+        "company_canonical_entity_id": "",
+        "company_name": "OLIX Computing Ltd.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b8ac45c45da22b49",
+            "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
+            "source_title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
+            "source_content_hash": "48033349283b73c285686033b79c23c21dc36495571664c01e0ddfd34bd2dab3",
+            "quote": "The company previously raised an undisclosed amount of funding from Plural, Vertex Ventures, LocalGlobe and Entrepreneurs First.",
+            "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
         "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
         "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
+      },
+      {
+        "source_id": "FISRC-b8ac45c45da22b49",
+        "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
+        "source_title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
+        "source_content_hash": "48033349283b73c285686033b79c23c21dc36495571664c01e0ddfd34bd2dab3",
+        "quote": "The company previously raised an undisclosed amount of funding from Plural, Vertex Ventures, LocalGlobe and Entrepreneurs First.",
+        "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62e06e29d2d7be04"
+        },
+        {
+          "description": "融资来源记录：OLIX Computing Ltd. · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b8ac45c45da22b49"
         }
       ],
       "contacts": [],
@@ -159,6 +204,14 @@
           "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
           "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
           "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
+        },
+        {
+          "source_id": "FISRC-b8ac45c45da22b49",
+          "source_url": "https://siliconangle.com/2026/02/11/photonic-ai-chip-startup-olix-nabs-220m-investment/",
+          "source_title": "光子AI芯片初创公司OLIX获得2.2亿美元投资",
+          "source_content_hash": "48033349283b73c285686033b79c23c21dc36495571664c01e0ddfd34bd2dab3",
+          "quote": "The company previously raised an undisclosed amount of funding from Plural, Vertex Ventures, LocalGlobe and Entrepreneurs First.",
+          "quote_hash": "d40641b698e2fe5a5d8acdc9e6f890f4c2be6865312d99aa85c5e18e6972b91d"
         }
       ],
       "last_verified_at": "2026-09-28"

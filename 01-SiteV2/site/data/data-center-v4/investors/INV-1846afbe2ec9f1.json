@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3870,
+    "eventCount": 3887,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-25",
+    "first_disclosed_at": "2026-03-19",
     "latest_disclosed_at": "2026-06-25",
     "role_counts": {
+      "co_lead": 1,
       "participant": 1
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-73fac6765f991fe7",
+        "canonical_entity_id": "",
+        "name": "Claros"
+      },
       {
         "entity_id": "EN-19a5848a577315c5",
         "canonical_entity_id": "",
@@ -124,6 +130,46 @@
             "quote_hash": "e9e43a522d75bb5eb50abdce4cd715c9e12a2027dabbb21a7f777691a80ef35c"
           }
         ]
+      },
+      {
+        "activity_id": "IA-87babd04f15d5ae4",
+        "funding_insight_id": "FI-cc2860ce291ce03f",
+        "event_ids": [
+          "EV-e0d9944bb56fe3da"
+        ],
+        "company_entity_id": "EN-73fac6765f991fe7",
+        "company_canonical_entity_id": "",
+        "company_name": "Claros",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-03-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2877a4b61010da1c",
+            "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
+            "source_title": "从芯片到电网重新定义数据中心能源基础设施",
+            "source_content_hash": "904713ab4fa86f2ea7546f7229f8bfca76272454fd1556e862479e67cf57708e",
+            "quote": "our oversubscribed $30 million seed round co-led by General Catalyst and Red Cell Partners",
+            "quote_hash": "892a781499cfed0d233e5c65f2168b644fc84b7ca1bd4012e89871cf9029f1f0"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +180,14 @@
         "source_content_hash": "3ca48ddc85e02167",
         "quote": "with participation from Red Cell Partners and other investors",
         "quote_hash": "e9e43a522d75bb5eb50abdce4cd715c9e12a2027dabbb21a7f777691a80ef35c"
+      },
+      {
+        "source_id": "FISRC-2877a4b61010da1c",
+        "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
+        "source_title": "从芯片到电网重新定义数据中心能源基础设施",
+        "source_content_hash": "904713ab4fa86f2ea7546f7229f8bfca76272454fd1556e862479e67cf57708e",
+        "quote": "our oversubscribed $30 million seed round co-led by General Catalyst and Red Cell Partners",
+        "quote_hash": "892a781499cfed0d233e5c65f2168b644fc84b7ca1bd4012e89871cf9029f1f0"
       }
     ],
     "public_profile": {
@@ -161,6 +215,10 @@
         {
           "description": "融资来源记录：Trase · 种子轮 · 2026-06-25 · 本轮参投 · 1.07 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d8b3693de0579b6"
+        },
+        {
+          "description": "融资来源记录：Claros · 种子轮 · 2026-03-19 · 本轮联合领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2877a4b61010da1c"
         }
       ],
       "contacts": [
@@ -196,6 +254,14 @@
           "source_content_hash": "3ca48ddc85e02167",
           "quote": "with participation from Red Cell Partners and other investors",
           "quote_hash": "e9e43a522d75bb5eb50abdce4cd715c9e12a2027dabbb21a7f777691a80ef35c"
+        },
+        {
+          "source_id": "FISRC-2877a4b61010da1c",
+          "source_url": "https://claros.tech/redefining-data-center-energy-infrastructure-from-chip-to-grid/",
+          "source_title": "从芯片到电网重新定义数据中心能源基础设施",
+          "source_content_hash": "904713ab4fa86f2ea7546f7229f8bfca76272454fd1556e862479e67cf57708e",
+          "quote": "our oversubscribed $30 million seed round co-led by General Catalyst and Red Cell Partners",
+          "quote_hash": "892a781499cfed0d233e5c65f2168b644fc84b7ca1bd4012e89871cf9029f1f0"
         }
       ],
       "last_verified_at": "2026-10-02"

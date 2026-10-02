@@ -25429,7 +25429,557 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "generated_at": "2026-10-02T06:29:48.163Z"
+    },
+    "EV-4de1d2ff326a90a4": {
+      "id": "EV-4de1d2ff326a90a4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "personal-learning",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "原文产品是面向学生的实时对话学习伙伴，按个人学习应用分类。",
+      "input_hash": "6ad9c0c89ddf5787d985fdc48afce1c35b9ec7e5b141f2b10afaac35626b1505",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4b309c6cf2daefde",
+          "quote": "ProLearn, an AI-native learning platform building a real-time interactive learning companion for India’s K-12 and competitive exam students"
+        },
+        {
+          "source_id": "FISRC-4b309c6cf2daefde",
+          "quote": "The company is building an AI-native learning companion, a conversational tutor that listens, explains, asks questions, adapts to each learner’s pace, and helps students actively work through concepts instead of passively watching recorded lectures."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T09:34:47.492Z"
+    },
+    "EV-7257a7f4ab72c018": {
+      "id": "EV-7257a7f4ab72c018",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "智象未来以 HiDream 系列大模型为底座并通过 Token Hub 平台输出模型能力，属于基础模型中的语音、图像与视频模型。",
+      "input_hash": "56abeaa1cba831e0e84e8463b7be7ba27e32f87ee0e4f6001d400ca0198045c6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9670ee7c1fec7480",
+          "quote": "当前，智象未来已构建起“1+1+3”的商业化全景，即以1个HiDream系列大模型为底座，构建1个Token Hub平台提供标准化模型能力输出，并在此之上围绕商业营销、影视创作、社媒内容创作三大场景实现AIGC产品创新。"
+        },
+        {
+          "source_id": "FISRC-9670ee7c1fec7480",
+          "quote": "构建1个Token Hub平台提供标准化模型能力输出，并在此之上围绕商业营销、影视创作、社媒内容创作三大场景实现AIGC产品创新。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.392Z"
+    },
+    "EV-848d81fb5ed7b3cd": {
+      "id": "EV-848d81fb5ed7b3cd",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Ayar Labs 提供用于 AI 扩展的共封装光学解决方案和光引擎，属于数据中心与算力基础设施。",
+      "input_hash": "3302f979a9ab2dd96e3f10c8ff82bab038350b53c7833908db467f0aa7504264",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5b6c7c4ae002a992",
+          "quote": "Ayar Labs , the leader in co-packaged optics (CPO) solutions for AI scale-up"
+        },
+        {
+          "source_id": "FISRC-b60ddf5bcfd146ee",
+          "quote": "Founded in 2015, Ayar Labs' TeraPHY chiplets provide an alternative to copper for chip-to-chip communications"
+        },
+        {
+          "source_id": "FISRC-5b6c7c4ae002a992",
+          "quote": "At the heart of the solution is the TeraPHY™ optical engine, built on the standard form factor, manufacturing, and packaging flows used by major accelerator and switch vendors"
+        },
+        {
+          "source_id": "FISRC-b60ddf5bcfd146ee",
+          "quote": "One of these reference designs was developed in collaboration with Alchip and uses eight of Ayar's next-gen TeraPHY chiplets. Combined, the company claims it can support more than 200 Tbps of aggregate bandwidth per package."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.392Z"
+    },
+    "EV-0319b53ac4d33276": {
+      "id": "EV-0319b53ac4d33276",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "Xscape Photonics 为下一代 AI 数据中心结构开发光子解决方案，属于数据中心与算力基础设施。",
+      "input_hash": "2bd7fb9fe68acb3a1a9948cf46a1da6dee0bdb8e7ea34c1d633fbfbf1830c3c2",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f6cc6b0a81efafb6",
+          "quote": "Xscape Photonics (“the Company”), a semiconductor startup developing photonic solutions for next-generation AI data center fabrics"
+        },
+        {
+          "source_id": "FISRC-f6cc6b0a81efafb6",
+          "quote": "ChromX, the industry's first programmable multi-wavelength photonics platform for custom AI data center fabrics"
+        },
+        {
+          "source_id": "FISRC-f6cc6b0a81efafb6",
+          "quote": "targeting the emission of 16, 32 and, ultimately, 128 colors and beyond"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.392Z"
+    },
+    "EV-73dd24ff36008b7d": {
+      "id": "EV-73dd24ff36008b7d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "原文明确产品服务半导体设计与验证工作流，按主营交付归入工业制造 AI，与同公司另一轮融资保持一致。",
+      "input_hash": "9edd17d905db4f19cad534dc04d500dd8a675d9de1b5218fd8e9e616fb1669ca",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-cd04c9b2d1340164",
+          "quote": "ChipAgents is an Agentic AI platform that transforms specifications and code into production-ready RTL, verification assets, and automated root-cause analysis, dramatically shortening design and verification cycles."
+        },
+        {
+          "source_id": "FISRC-cd04c9b2d1340164",
+          "quote": "Founded in 2024, the company brings autonomous AI Agents into production semiconductor workflows, serving both design and verification engineers and embedded systems teams at leading semiconductor companies worldwide."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T09:34:47.490Z"
+    },
+    "EV-e0d9944bb56fe3da": {
+      "id": "EV-e0d9944bb56fe3da",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Claros 为数据中心和 AI 芯片提供集成电压调节器和电源管理平台，属于数据中心与算力基础设施。",
+      "input_hash": "e19ee936d127f637b2ce29d5da1129145ef64727bf35a93b6ec753b737a421a7",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2877a4b61010da1c",
+          "quote": "I started Claros with a simple conviction: The way we deliver power to data centers, and to the chips inside them, is broken."
+        },
+        {
+          "source_id": "FISRC-2877a4b61010da1c",
+          "quote": "Our Integrated Voltage Regulator (IVR) cuts that distance from inches to millimeters, delivering power directly at the point of compute. We expect AI chips using our IVR to be roughly 15% more energy efficient."
+        },
+        {
+          "source_id": "FISRC-2877a4b61010da1c",
+          "quote": "Our DC-native power management platform reduces distribution and conversion losses by up to 50% while integrating seamlessly with on-site generation and storage."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.392Z"
+    },
+    "EV-18554a19b342911e": {
+      "id": "EV-18554a19b342911e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "公司开发集成光学组件的人工智能芯片（OTPU），属于AI算力与芯片赛道。",
+      "input_hash": "bf673ede3c3b020e232c61a1ec576fe617c7fa1e9b4eb708f63fa489129c378f",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b8ac45c45da22b49",
+          "quote": "OLIX Computing Ltd., a startup developing an artificial intelligence chip with integrated optical components, has raised $220 million in funding."
+        },
+        {
+          "source_id": "FISRC-5cc8b0f8b794cffb",
+          "quote": "UK-based chip startup Olix has raised $220 million for the development of AI chips that the company claims will be faster and cheaper than Nvidia’s."
+        },
+        {
+          "source_id": "FISRC-b8ac45c45da22b49",
+          "quote": "OLIX’s chip is called the OLIX Optical Tensor Processing Unit, or OTPU for short."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.519Z"
+    },
+    "EV-8150d00d04b65ef4": {
+      "id": "EV-8150d00d04b65ef4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "glasses",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "公司主打Luma系列、Pro XR等消费级XR眼镜产品，并部署AI沉浸式3D功能，属于消费AI硬件中的AI眼镜。",
+      "input_hash": "de488a247421424a25ddbc0c6c1706db308c247a1b3db660777c0d398499ee21",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4ca036285a111b05",
+          "quote": "VITURE launched its third-generation lineup — the Luma Series, representing its first major step into true AR experiences with Luma Ultra, alongside significant XR performance advances with its flagship model, The Beast."
+        },
+        {
+          "source_id": "FISRC-5e6ff0489e8cf2ec",
+          "quote": "Across its product lineup — the VITURE Pro XR, the Luma series, and the flagship Beast — VITURE deploys Sony’s latest Micro-OLED panels, delivering peak brightness between 1,000 and 1,250 nits."
+        },
+        {
+          "source_id": "FISRC-5e6ff0489e8cf2ec",
+          "quote": "AI Immersive 3D"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.519Z"
+    },
+    "EV-4afe2cc49684aeed": {
+      "id": "EV-4afe2cc49684aeed",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-infrastructure",
+      "product_form_id": "chip-system",
+      "customer_ids": [],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "公司开发用于AI基础设施的下一代光学I/O微LED平台，属于数据中心与算力基础设施。",
+      "input_hash": "09bbd514ab2d9be9b68d96dbe5e7271de40da61452625983b32b30f79c1d004c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-09590627de542e4a",
+          "quote": "Mojo Vision Secures $17.5M Strategic Investment from Future Ventures to Advance Next-Generation Optical I/O for AI Infrastructure"
+        },
+        {
+          "source_id": "FISRC-11b5a2bec1da52ac",
+          "quote": "Mojo Vision is pioneering a wafers-in, wafers-out micro-LED platform designed to enable AI applications in multiple high-growth markets."
+        },
+        {
+          "source_id": "FISRC-11b5a2bec1da52ac",
+          "quote": "Leveraging this technology, Mojo Vision has developed a new class of massively parallel optical interconnects that enable thousands of channels in a compact footprint, delivering ultra-high bandwidth density, low energy per bit, and built-in redundancy for reliable AI-scale performance."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.519Z"
+    },
+    "EV-7d37eeb73c3d2317": {
+      "id": "EV-7d37eeb73c3d2317",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "Pool是一款帮助用户整理数字内容并内置AI助手进行搜索的应用，属于消费AI个人助手。",
+      "input_hash": "3fb467d971948f6cd20c7765020ab71503616b92d8d8188ff7410e9492138566",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-54305d1346e7ff1c",
+          "quote": "Today, a new app called Pool is arriving to help you finally make sense of this digital clutter."
+        },
+        {
+          "source_id": "FISRC-54305d1346e7ff1c",
+          "quote": "To find things in Pool, you can search or ask its built-in AI assistant for help."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.519Z"
+    },
+    "EV-4f6e281feb1f3701": {
+      "id": "EV-4f6e281feb1f3701",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "personal-learning",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "原文产品是学生直接使用的个人 AI 数学家教，按个人学习应用分类。",
+      "input_hash": "81e503590bc3252383b3ecb7e90b21730aefff149cc5303bf241009ee3585b0d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-92a209babacd8894",
+          "quote": "Vimi, an AI tutoring platform for K-12 students, raised a $12 million seed round led by Viola Ventures and BRM"
+        },
+        {
+          "source_id": "FISRC-8a150192d9a25726",
+          "quote": "Meet Vimi, your personalized tutor, built to help you crush math in class."
+        },
+        {
+          "source_id": "FISRC-8a150192d9a25726",
+          "quote": "Vimi is your on-demand personal AI math tutor."
+        },
+        {
+          "source_id": "FISRC-8a150192d9a25726",
+          "quote": "Vimi currently supports students from 1st to 9th grade."
+        },
+        {
+          "source_id": "FISRC-8a150192d9a25726",
+          "quote": "You can scan any question with your phone camera or ask Vimi in the chat, and it will help you work through it step by step."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T09:34:47.492Z"
+    },
+    "EV-8adcbbba58984d62": {
+      "id": "EV-8adcbbba58984d62",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "education",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [],
+      "evidence_indices": [
+        0,
+        2
+      ],
+      "rationale": "创析智能是AI教育软件研发商，核心产品为GeoYan AI智能答疑系统，属于行业AI中的教育。",
+      "input_hash": "edc0c58ef5d87280d0be2fa81ddac1fb48b47c75a59a65920c5d620d7754f265",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6a68515914425f23",
+          "quote": "创析智能是一家AI教育软件研发商，聚焦人工智能、数字科技、教育科技、大健康等高成长赛道"
+        },
+        {
+          "source_id": "FISRC-6a68515914425f23",
+          "quote": "助力公司加快GeoYan AI智能答疑系统的商业化落地与全国市场布局"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:23.519Z"
+    },
+    "EV-cebdfb6bbc3dee38": {
+      "id": "EV-cebdfb6bbc3dee38",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "ChipAgents 是面向半导体设计行业的智能体 AI 平台，将规格与代码转化为 RTL 和验证资产，属于工业软件与制造细分。",
+      "input_hash": "381c9b1e43c5ac4b7aee03689a1fd94e3837179ab4928247638d15416ce85b37",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b82705c0aaa6a5ee",
+          "quote": "ChipAgents, the category leader for Agentic AI platforms in the semiconductor design industry"
+        },
+        {
+          "source_id": "FISRC-b82705c0aaa6a5ee",
+          "quote": "ChipAgents is an Agentic AI platform that transforms specifications and code into production-ready RTL, verification assets, and automated root-cause analysis, dramatically shortening design and verification cycles."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:28.150Z"
+    },
+    "EV-ea64ab88a85eabd0": {
+      "id": "EV-ea64ab88a85eabd0",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "chip-system",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        5
+      ],
+      "rationale": "曦望是 AI 推理芯片公司，已量产多款推理芯片，主营为 AI 芯片与加速器。",
+      "input_hash": "8f7afed87bfdce3b82e837775e61f66f4d249c511248ce799637d3ba7317f980",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-85ff43aa8c582e53",
+          "quote": "AI推理芯片公司浙江曦望智能科技股份有限公司（下称“曦望”）完成新一轮20亿元人民币融资，投后估值约200亿元"
+        },
+        {
+          "source_id": "FISRC-c87caae716bd4910",
+          "quote": "曦望2026年1月发布的推理芯片S3，尝试在推理效率、成本、供应确定性等方面提前卡位"
+        },
+        {
+          "source_id": "FISRC-c87caae716bd4910",
+          "quote": "拆分前，这支团队已量产过两款芯片：多模态视觉推理芯片S1、大模型推理GPU S2"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:28.150Z"
+    },
+    "EV-a00db4c596de6947": {
+      "id": "EV-a00db4c596de6947",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3,
+        4,
+        6
+      ],
+      "rationale": "清程极智提供大模型训练系统、推理引擎和智能编译器，面向国产算力赋能大模型开发，属于训练、微调与部署平台。",
+      "input_hash": "38d4a54469a8e03579c7a637dda780f9dea2800f69530da61963affab043c7e6",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5ffa5747cf097be6",
+          "quote": "清程极智成立于2023年12月，公司致力于构建高效的 AI 系统软件，赋能国产算力，支撑大模型行业发展。"
+        },
+        {
+          "source_id": "FISRC-4e5e18cc64404b40",
+          "quote": "清程极智联合清华大学研发的“八卦炉（Bagualu）”高性能大模型训练系统已在多个大规模国产算力集群完成适配验证。"
+        },
+        {
+          "source_id": "FISRC-178895bbb061ef5a",
+          "quote": "在大规模算力集群上，八卦炉已实现比肩DeepSeek的混合专家模型训练效率。"
+        },
+        {
+          "source_id": "FISRC-4e5e18cc64404b40",
+          "quote": "清程极智与清华团队共同开源的“赤兔（Chitu）”推理引擎面向国产算力进行深度优化，具备低延迟、高吞吐、低显存占用等技术优势。"
+        },
+        {
+          "source_id": "FISRC-5ffa5747cf097be6",
+          "quote": "针对国产人工智能芯片种类多，效率低的问题，公司自研了可为多种芯片生成高效代码的智能编译器，以充分利用各类国产智算芯片，实现代码可移植和性能可移植，消除用户的迁移成本，降低人工智能在各领域落地部署的门槛。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T09:22:28.150Z"
+    },
+    "EV-6883cfd1f11ab15d": {
+      "id": "EV-6883cfd1f11ab15d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "主营 PCB 机器视觉检测平台与设备，属于工业制造 AI；现有产品形态无直接匹配项，留空。",
+      "input_hash": "859557ffc6668270e869e4af0835928a021a5900fc0bf61919c7c2013e56e604",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5fb234c4fe85bc54",
+          "quote": "九川智能核心团队深耕PCB超20年，深谙PCB制造痛点，汇聚图像处理、光学、机械及AI领域的高学历人才。"
+        },
+        {
+          "source_id": "FISRC-9d452499b4ff68fd",
+          "quote": "企业首创AVI与AI深度交互机器视觉检测平台，在行业内率先实现IR光测试、孔壁检测及AI系统内置等核心功能。"
+        },
+        {
+          "source_id": "FISRC-9d452499b4ff68fd",
+          "quote": "在高阶电测飞针设备这一关键领域，企业坚持自主创新，推动PCB、IC载板核心检测设备国产化替代"
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T09:34:47.492Z"
     }
   },
-  "generated_at": "2026-10-02T06:35:51.381Z"
+  "generated_at": "2026-10-02T09:34:47.492Z"
 }
