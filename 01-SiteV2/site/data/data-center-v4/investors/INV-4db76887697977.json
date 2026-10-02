@@ -131,12 +131,32 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Edith Harbaugh 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "LaunchDarkly 官方人物简介核验现任身份、经验和教育；Empromptu 发行方公告记录一笔天使投资。",
+      "summary": "LaunchDarkly 官网列 Edith Harbaugh 为联合创始人兼 Executive Chair，并披露其工程、产品和市场经验；Empromptu 官方公告将她列为一笔 pre-seed 轮天使投资者。",
+      "current_roles": [
+        {
+          "title": "Co-Founder and Executive Chair",
+          "organization": "LaunchDarkly",
+          "source_id": "PFSRC-INV-4db76887697977-1"
+        }
+      ],
+      "career": [],
+      "education": [
+        {
+          "institution": "Harvey Mudd College",
+          "qualification": "B.S. in Engineering",
+          "source_id": "PFSRC-INV-4db76887697977-1"
+        }
+      ],
+      "experience_summary": "LaunchDarkly 官网称她在工程、产品和市场领域拥有超过 15 年经验，曾在 TripIt 和 Concur 等消费与企业初创公司工作。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Empromptu 官方公告将 Edith Harbaugh（LaunchDarkly 联合创始人）列为 200 万美元 pre-seed 轮天使投资者。",
+          "source_id": "PFSRC-INV-4db76887697977-2"
+        },
         {
           "description": "融资来源记录：Empromptu · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-99e63c0e1fbdfa5c"
@@ -144,6 +164,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-4db76887697977-1",
+          "source_url": "https://launchdarkly.com/blog/author/edithharbaugh/",
+          "source_title": "Blogs by Edith Harbaugh | LaunchDarkly",
+          "source_content_hash": "2d54597bce6a18be7a341d625be1535bcaab3c9a4d6d5fc755140212cd245c00",
+          "quote": "Edith Harbaugh is Co-Founder and Executive Chair of LaunchDarkly",
+          "quote_hash": "c760b5bcb55aa562da364a69c1207fdf7e5ec26b434085efd0d528452697a917"
+        },
+        {
+          "source_id": "PFSRC-INV-4db76887697977-2",
+          "source_url": "https://empromptu.ai/blog/empromptu-raises-usd2-million-to-launch-fully-self-managing-ai-context-the-first-step-toward-artificial-general",
+          "source_title": "Empromptu Raises $2 Million to Launch Fully",
+          "source_content_hash": "5a78d16a4ae0a25e0e947d60ccd67de7247c0f90f88333280c99e05ebcfeff9c",
+          "quote": "angel investor Edith Harbaugh, Co-founder of LaunchDarkly",
+          "quote_hash": "f204094b531d690c1812dcba561d7b1b1cb3636172f28ecb3b5e0487958d2d8f"
+        },
         {
           "source_id": "FISRC-99e63c0e1fbdfa5c",
           "source_url": "https://www.finsmes.com/2025/12/empromptu-raises-2m-in-pre-seed-funding.html",
@@ -153,7 +189,7 @@
           "quote_hash": "b11725cc36c897a7dff6c20071d193cd8f29dd802c2e6faecd7fbb7f9ff77050"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

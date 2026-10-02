@@ -131,12 +131,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Leonis Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Leonis Capital 官网；Viktor 参投关系由 Leonis 官方文章直接披露，属于已核验案例而非完整组合。",
+      "summary": "Leonis Capital 官网称其为技术创始人提供研究驱动的投资支持；该机构关于 Viktor 的官方文章称其于 2024 年基于技术判断投资。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资方法",
+          "value": "通过研究将前沿 AI 研究转化为投资判断，支持 AI 原生公司。",
+          "source_id": "PFSRC-INV-5c87b09e049ade-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Leonis Capital 官方文章称其于 2024 年基于技术判断投资 Viktor。",
+          "source_id": "PFSRC-INV-5c87b09e049ade-2"
+        },
         {
           "description": "融资来源记录：Viktor · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
@@ -144,6 +159,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-5c87b09e049ade-1",
+          "source_url": "https://www.leoniscap.com/",
+          "source_title": "Leonis Capital | The First Partner for Technical Founders",
+          "source_content_hash": "7b8c5885bd6f0ccf784fdc97451c930b8ec9d469e66c3285e3dc4c09d91dffe1",
+          "quote": "Our mission is to turn groundbreaking AI research into investment conviction, backing AI-native companies before the category is obvious.",
+          "quote_hash": "ad1744c1fc72591ee790a8867b96dea9d8e70ae9839322b8261b7fb02496e0e7"
+        },
+        {
+          "source_id": "PFSRC-INV-5c87b09e049ade-2",
+          "source_url": "https://www.leoniscap.com/research/building-towards-ai-employees-our-journey-with-viktor",
+          "source_title": "Building Towards AI Employees: Our Journey with Viktor - Leonis Capital",
+          "source_content_hash": "dba7a59e8ffbf20621af923ad0a5e6352f7d3cf86c360eb7a828733d10f0fdf0",
+          "quote": "we invested on technical conviction alone. We signed the deal at a Joe and the Juice in downtown San Francisco, summer 2024.",
+          "quote_hash": "6519c89dd78441e109e7b60b6ff81301f02d136b43cb1b8089653582538155d4"
+        },
         {
           "source_id": "FISRC-ce83b857608dabeb",
           "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
@@ -153,7 +184,7 @@
           "quote_hash": "01293235bfcea5e8c9c70f95ce618c6790d48d3628af8ce9e23528c290a0dbb9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

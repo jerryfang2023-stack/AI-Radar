@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "NVIDIA (NVentures) 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "以 NVIDIA 官方页面和 Odyssey 发行方公告核验 NVentures 身份及一项独立披露的投资；不把该活动与队列内其他融资轮合并。",
+      "summary": "NVIDIA 官网说明 NVentures 是其风险投资部门，专注支持解决复杂问题的科技团队；Odyssey 官方公告在 2026 年 2 月披露获得 NVentures 和 Samsung Next 投资。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资方向",
+          "value": "投资解决复杂问题的技术团队",
+          "source_id": "PFSRC-INV-3e526929b01c6b-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Odyssey 官方公告将 NVentures 列为该公司投资方之一。",
+          "source_id": "PFSRC-INV-3e526929b01c6b-2"
+        },
         {
           "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-413e994d081f8e0f"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-3e526929b01c6b-1",
+          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_title": "NVentures — NVIDIA’s Venture Capital Arm | NVIDIA",
+          "source_content_hash": "9c771e9fbccc5260abed43fe702ef6ebf1f5a2cfbdcb9d5771a0d6c2af00a108",
+          "quote": "NVentures is NVIDIA’s venture capital arm, dedicated to investing in technology visionaries who are solving complex problems.",
+          "quote_hash": "535eb1d3dd9a0ede7a4958f84a905ce5903d2d3de6018f2bd8a838faf2bba38b"
+        },
+        {
+          "source_id": "PFSRC-INV-3e526929b01c6b-2",
+          "source_url": "https://odyssey.ml/investment-from-nvidia-and-samsung",
+          "source_title": "Odyssey Announces Investment from NVentures and Samsung Next",
+          "source_content_hash": "f1d83ff9158d15c4cb62a1a84017b83ad071ba21efb74a856e414b4ff4c29542",
+          "quote": "Today, we’re excited to announce an investment from NVentures—NVIDIA’s venture capital arm—and Samsung Next",
+          "quote_hash": "2d57e216fcbf0501e8ed89e77236fc7ebd9b1ae98b52207fe4ecf10a059c9b12"
+        },
         {
           "source_id": "FISRC-413e994d081f8e0f",
           "source_url": "https://awesomeagents.ai/news/odyssey-amazon-310m-world-models/",
@@ -161,7 +192,7 @@
           "quote_hash": "8c0228b2aef0a849c3db75844ca67d9dfc8b23ac708b039044c6448432886568"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

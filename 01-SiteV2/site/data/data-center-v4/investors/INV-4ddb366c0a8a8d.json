@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ritual Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略来自 Ritual Capital 官网；Mandel AI 官方公告披露一笔种子轮融资参与，不代表完整组合。",
+      "summary": "Ritual Capital 官网称其为小型 seed-stage 风险投资机构，早期支持创始人；Mandel AI 官方公告称其参与 390 万美元种子轮。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "Seed 阶段，早期支持创始人。",
+          "source_id": "PFSRC-INV-4ddb366c0a8a8d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Mandel AI 官方公告称 Ritual Capital 参与其 390 万美元种子轮。",
+          "source_id": "PFSRC-INV-4ddb366c0a8a8d-2"
+        },
         {
           "description": "融资来源记录：Mandel AI · 种子轮 · 2026-03-25 · 本轮参投 · $3.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1913db3e18347025"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-4ddb366c0a8a8d-1",
+          "source_url": "https://ritualcapital.com/",
+          "source_title": "Ritual Capital",
+          "source_content_hash": "e31212b09eacb1d18823e132be7e998db3a52f76e28cdb6d5f5401c94fd7a3cd",
+          "quote": "Ritual Capital is an intentionally small seed-stage venture firm.",
+          "quote_hash": "7dc6fee7958bdb3a6c0170405069e47c34c3bfbecdd42cedcd5451134a377ff4"
+        },
+        {
+          "source_id": "PFSRC-INV-4ddb366c0a8a8d-2",
+          "source_url": "https://www.mandel.ai/blog/seed-announcement",
+          "source_title": "Supply Chains Still Run on Email. We Raised $3.9M to Fix That. | Mandel AI",
+          "source_content_hash": "c70278dc004af4153e8ce7f67dfc86376f3fe1001c8c6f62d375e2e9665b58fe",
+          "quote": "Ritual Capital , e2vc , and others to build the AI coordination layer",
+          "quote_hash": "b3564a74b90d41fa483a73486a1cc51a590882e5afabca7055b17c7ee3270a20"
+        },
         {
           "source_id": "FISRC-1913db3e18347025",
           "source_url": "https://tech.eu/2026/03/25/y-combinator-backed-mandel-ai-raises-3-9m-to-automate-global-supply-chains/",
@@ -161,7 +192,7 @@
           "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

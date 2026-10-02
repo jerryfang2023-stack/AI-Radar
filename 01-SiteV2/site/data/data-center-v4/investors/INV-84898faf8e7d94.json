@@ -155,23 +155,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SFC Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "SFC Capital 官网介绍其 SEIS/EIS 早期投资基金；SFC Capital 官方组合页列出 BidScript。官网资料未在本次缓存中披露该组合公司的融资轮次和投资金额。",
+      "summary": "SFC Capital 是英国早期企业投资机构，通过 SEIS/EIS 基金投资符合条件的初创企业。SFC Capital 官方组合页面列出 BidScript，但页面没有披露其融资轮次或投资金额。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的基金投资阶段",
+          "value": "向符合 SEIS/EIS 资格的早期企业投资。",
+          "source_id": "PFSRC-INV-84898faf8e7d94-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：BidScript LTD · 预种子轮 · 2026-07-02 · 本轮领投 · $800,000。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-db39986ef5f46b8d"
+          "description": "SFC Capital 官方组合页面列出 BidScript，并以“Turning knowledge into winning proposals”介绍其产品；页面未披露融资轮次或金额。",
+          "source_id": "PFSRC-INV-84898faf8e7d94-2"
         },
         {
           "description": "融资来源记录：BidScript LTD · 预种子轮 · 2026-07-02 · 本轮领投 · $800,000。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b3dcbc1ef66abc3b"
+          "source_id": "FISRC-db39986ef5f46b8d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "SFC Capital 官网",
+          "value": "https://sfccapital.com/",
+          "url": "https://sfccapital.com/",
+          "source_id": "PFSRC-INV-84898faf8e7d94-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-84898faf8e7d94-1",
+          "source_url": "https://sfccapital.com/",
+          "source_title": "The leading SEIS fund | SFC Capital",
+          "source_content_hash": "fc02e9b3516d8e0ad8f30a576e8d577c46a82e95c1d5053ce054bdaecd93f359",
+          "quote": "The SFC Angel Fund is an SEIS/EIS fund which raises money for early-stage businesses by investing in SEIS and EIS eligible ventures",
+          "quote_hash": "0d84de9f33b216cab3ab4f07e34fff4830ceb63534032566d026b95fedc95304"
+        },
+        {
+          "source_id": "PFSRC-INV-84898faf8e7d94-2",
+          "source_url": "https://portal.sfccapital.com/portfolio",
+          "source_title": "Portfolio | SFC Capital",
+          "source_content_hash": "7384dcbecb031873c5e5028f4003d4c65201ec9d5ab68e88e98a9c53a2382043",
+          "quote": "BidScript Turning knowledge into winning proposals. www.bidscript.co.uk",
+          "quote_hash": "4b8097a77b89ac32d6f930e838443e7807743184c5aaeaa523a76e08ce6fa982"
+        },
         {
           "source_id": "FISRC-db39986ef5f46b8d",
           "source_url": "https://www.linkedin.com/posts/henry-brogan_today-bidscript-ltd-crossed-1m-in-funding-activity-7478352587042373632-4BY5",
@@ -189,7 +220,7 @@
           "quote_hash": "1e058f0dbed5854463ea76541cc96ce9641c44e6eee35a42de4dc098b480ce52"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

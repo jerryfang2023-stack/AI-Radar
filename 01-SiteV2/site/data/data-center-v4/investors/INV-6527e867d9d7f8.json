@@ -131,10 +131,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "IBM 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "档案概述 IBM 官方披露的 IBM Ventures 企业创投计划；现有 Mistral AI 关联仅来自二手投资名单，本条不将其记为已核验的 Mistral 交易。",
+      "summary": "IBM Ventures 是 IBM 面向企业科技初创公司的投资平台，官方页面称其采用 capital-plus 模式，重点关注企业 AI 与量子技术，并披露超过 5 亿美元的资本承诺。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官方披露的投资方向",
+          "value": "早期企业科技，重点包括 AI 与量子计算。",
+          "source_id": "PFSRC-INV-6527e867d9d7f8-1"
+        },
+        {
+          "field": "capital_commitment",
+          "label": "官方披露的资本承诺",
+          "value": "超过 5 亿美元。",
+          "source_id": "PFSRC-INV-6527e867d9d7f8-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -145,6 +162,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PFSRC-INV-6527e867d9d7f8-1",
+          "source_url": "https://www.ibm.com/ventures",
+          "source_title": "IBM Ventures",
+          "source_content_hash": "9ba7e837613f1cf5f2f83f3c053e9198e4503fae3561170932c95acd8df1eec2",
+          "quote": "IBM Ventures backs visionary founders building the next generation of enterprise technology. We accelerate innovation through our capital-plus model",
+          "quote_hash": "e734b015320e7e260859774bd5d204fb500f7b976f42047df8df421908fec9ba"
+        },
+        {
+          "source_id": "PFSRC-INV-6527e867d9d7f8-2",
+          "source_url": "https://www.ibm.com/ventures",
+          "source_title": "IBM Ventures",
+          "source_content_hash": "9ba7e837613f1cf5f2f83f3c053e9198e4503fae3561170932c95acd8df1eec2",
+          "quote": "500M+ USD capital commitment",
+          "quote_hash": "e2ac166fc18de92b38129f68bdc018c1ca9185a9c249b5a74ff96d18822fbbea"
+        },
+        {
           "source_id": "FISRC-9ce92685289bf3ad",
           "source_url": "https://grep.news/episode/asml-just-bet-%E2%82%AC1-7b-on-mistral-ai's-european-answer",
           "source_title": "Tamez Labs: ASML Just Bet €1.7B on Mistral AI's European Answer | Grep News",
@@ -153,7 +186,7 @@
           "quote_hash": "7bb5c81e6a76104c8b1f44381d9a8cba1ea8453b4da0246c96f7e1a420386fb9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

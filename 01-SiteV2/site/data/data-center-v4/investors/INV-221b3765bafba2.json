@@ -131,12 +131,38 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nir Zohar 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Wix 官方页面列出 Nir Zohar 为 President & COO，并记载他自 2007 年起任职 Wix。Willow 的公司融资公告称他曾在 Willow 最早期进行天使投资。",
+      "current_roles": [
+        {
+          "title": "President & COO",
+          "organization": "Wix",
+          "source_id": "nir_wix_role"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Wix 官方资料称他自 2007 年起在 Wix 任职，并参与公司运营规模化；未在本档案中补入未核实的教育或其他履历。",
+      "facts": [
+        {
+          "field": "wix_tenure",
+          "label": "Wix 任职",
+          "value": "Wix 官方资料记载 Nir Zohar 自 2007 年起在 Wix 任职。",
+          "source_id": "nir_wix_tenure"
+        },
+        {
+          "field": "investment_activity",
+          "label": "公开投资活动",
+          "value": "Willow 公司公告称 Nir Zohar 在 Willow 最早期进行了天使投资；未披露个人投资金额。",
+          "source_id": "nir_willow"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Willow 公司 2026 年种子轮公告将 Nir Zohar 列为早期天使投资人；公告未披露其个人投资金额。",
+          "source_id": "nir_willow"
+        },
         {
           "description": "融资来源记录：Willow · 天使轮 · 早期天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f6d49c20866c811c"
@@ -144,6 +170,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "nir_willow",
+          "source_url": "https://www.prnewswire.com/il/news-releases/willow-raises-7m-seed-to-ensure-enterprises-can-fully-oversee-and-govern-autonomous-agents-302791492.html",
+          "quote": "following early angel investment from Wix Co-Founder and CEO Avishai Abrahami and President Nir Zohar",
+          "source_title": "Willow Raises $7M Seed to Ensure Enterprises Can Fully Oversee and Govern Autonomous Agents",
+          "source_content_hash": "8b1c16977d744361b0de96e2e14a550b7173b761784f4fbff7ee704c9d01d702",
+          "quote_hash": "51f2ee0d8c685ef30c68e2dff0f62f87e89396b94ece4eb1a06d5760378f9176"
+        },
+        {
+          "source_id": "nir_wix_role",
+          "source_url": "https://hi.wix.com/about/us/nir-zohar",
+          "quote": "Nir Zohar - Wix President & COO",
+          "source_title": "Nir Zohar - Wix President &amp; COO",
+          "source_content_hash": "aa44a3239bb987a2c06f9db52a8ed65868445f2bd687afba1d44fee90399a66b",
+          "quote_hash": "744feae617fac625a7d8fa16c0adc97b4e0fe99067bbff353b2ec9aed0256836"
+        },
+        {
+          "source_id": "nir_wix_tenure",
+          "source_url": "https://hi.wix.com/about/us/nir-zohar",
+          "quote": "Nir has been with Wix since 2007",
+          "source_title": "Nir Zohar - Wix President &amp; COO",
+          "source_content_hash": "aa44a3239bb987a2c06f9db52a8ed65868445f2bd687afba1d44fee90399a66b",
+          "quote_hash": "fff5ae7f9a1983c6a534db57add88a8a6902b1a228b0968ac99c2dfef8d75537"
+        },
         {
           "source_id": "FISRC-f6d49c20866c811c",
           "source_url": "https://www.finsmes.com/2026/06/willow-raises-7m-in-seed-funding.html",
@@ -153,7 +203,8 @@
           "quote_hash": "51f2ee0d8c685ef30c68e2dff0f62f87e89396b94ece4eb1a06d5760378f9176"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -155,23 +155,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Prime Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2025-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Prime Venture Partners 官网；Illumine 投资额与关系来自机构自己的投资说明。",
+      "summary": "Prime Venture Partners 是印度早期风险投资基金，官网称其常作为类别型科技初创公司的首家机构投资人；机构官方投资文章记载其向 Illumine 投资 250 万美元。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期。",
+          "source_id": "PFSRC-INV-6acc04efa7bca7-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资角色",
+          "value": "常作为类别型科技初创公司的首家机构投资人。",
+          "source_id": "PFSRC-INV-6acc04efa7bca7-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Illumine · 种子轮 · 2025-06-18 · 本轮领投 · $2.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-16e0be8104cbcbf7"
+          "description": "Prime Venture Partners 官方文章称其近期向学前教育与托育管理平台 Illumine 投资 250 万美元。",
+          "source_id": "PFSRC-INV-6acc04efa7bca7-2"
         },
         {
           "description": "融资来源记录：Illumine · 种子轮 · 2025-06-18 · 本轮领投 · $2.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8fb1785a6254557c"
+          "source_id": "FISRC-16e0be8104cbcbf7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Prime Venture Partners 官网",
+          "value": "https://www.primevp.in/about-us",
+          "url": "https://www.primevp.in/about-us",
+          "source_id": "PFSRC-INV-6acc04efa7bca7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-6acc04efa7bca7-1",
+          "source_url": "https://www.primevp.in/about-us",
+          "source_title": "About Us | Prime Venture Partners",
+          "source_content_hash": "6299e69799dde62ab0b14761b8e7362225a4e0522d37fe3f8c4aa6b4b584f723",
+          "quote": "Prime Venture Partners is an early-stage Venture Capital (VC) fund led by Sanjay Swamy, Shripati Acharya, Amit Somani",
+          "quote_hash": "2c7d5a6256d48379ff7ae8e645498eea30f35a0f4cd4ac36efb513cef84f5b31"
+        },
+        {
+          "source_id": "PFSRC-INV-6acc04efa7bca7-2",
+          "source_url": "https://www.primevp.in/content/blog/why-we-invested-in-illumine",
+          "source_title": "Why We Invested in Illumine",
+          "source_content_hash": "9b52429995842de08426215037cd6cd5353cd0b1bed2d3936a7d8e34add19b9e",
+          "quote": "Our recent $2.5M investment in Illumine",
+          "quote_hash": "ab5d51e83d10585e90f64598dc7688d9789e03c7e847171982bae866a4d8371c"
+        },
         {
           "source_id": "FISRC-16e0be8104cbcbf7",
           "source_url": "https://startuprise.org/illumine-raises-2-5-million-in-seed-funding-led-by-prime-venture-partners",
@@ -189,7 +230,7 @@
           "quote_hash": "2e5229522d0fa3404c3c10d355b55bee6860d7e6c49b0106b94d699b32205679"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

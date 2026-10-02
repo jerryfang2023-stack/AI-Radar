@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "OSS Capital 当前按“投资组织”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "OSS Capital 官网将其定位为专注商业开源软件（COSS）创业者的全球早期风险投资机构，自述从2018年起开展此项投资。",
+      "coverage_note": "该机构使用“first and only”等自我定位措辞，本档案只转述其业务范围与成立/投资时间自述，不将宣传语作为独立排名。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网自述专注商业开源软件（COSS）创业者，并进行全球早期投资。",
+          "source_id": "oss_about"
+        },
+        {
+          "field": "investment_history",
+          "label": "投资历史",
+          "value": "官网称其自2018年起开展该项投资。",
+          "source_id": "oss_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,24 @@
           "source_id": "FISRC-4e5f377f1837e2e5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "OSS Capital",
+          "url": "https://oss.capital/",
+          "source_id": "oss_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "oss_about",
+          "source_url": "https://oss.capital/",
+          "quote": "OSS Capital is the first and only early-stage VC exclusively dedicated to backing leading COSS (commercial open source) startup founders on a global basis since 2018.",
+          "source_title": "OSS Capital &#8211; Open source software eats everything.",
+          "source_content_hash": "584fde61242092b328639c0a35139b7bd95a2f2aa323507a436cffb6506dad7d",
+          "quote_hash": "121cc9b1a20134b8091540ec48f12475aa21a12c4edc16d4e020c6d6a5e270e4"
+        },
         {
           "source_id": "FISRC-4e5f377f1837e2e5",
           "source_url": "https://www.bostonglobe.com/2023/12/06/business/liquid-ai-boston-chatgpt/",
@@ -161,7 +190,7 @@
           "quote_hash": "37d7e70576527ae9391a25dc2a00a0a9fc519a860c59e8cde41a55cccc7a1526"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

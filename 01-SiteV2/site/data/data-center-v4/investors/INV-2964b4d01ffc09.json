@@ -132,18 +132,31 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jeff Dean (Google DeepMind) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "P-1 AI 的官方融资新闻稿将 Google 的 Jeff Dean 列为该公司的既有 AI 天使投资者。本档案只收录这笔公开投资活动，不扩写其履历或投资组合。",
+      "coverage_note": "活动由被投公司发布的融资新闻稿确认；未据此推断投资金额或其他个人投资。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅确认 P-1 AI 公告列出 Jeff Dean 为既有天使投资者。",
       "track_record": [
+        {
+          "description": "P-1 AI 于 2026 年 7 月 29 日宣布 A 轮融资，并在新闻稿中将 Google 的 Jeff Dean 列为既有 AI 天使投资者。",
+          "source_id": "p1_round"
+        },
         {
           "description": "融资来源记录：P-1 AI, Inc. · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-272ed2cd5b9ebcfa"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "p1_round",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/29/3335235/0/en/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-company-s-board.html",
+          "quote": "Google’s Jeff Dean",
+          "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A",
+          "source_content_hash": "6120f182588f9251af6dad4d4abb18d6104e705f1916b6a8373e6ae8c1873152",
+          "quote_hash": "17c629f684d440b561dece0e8a12946b1a59fa3eba8a1f85805c31ba14d08b99"
+        },
         {
           "source_id": "FISRC-272ed2cd5b9ebcfa",
           "source_url": "https://p-1.ai/",
@@ -153,7 +166,10 @@
           "quote_hash": "07473e0f7e56e8a2b03c91dd4ccd56819af832a598f4158bd1ddbec80abc373c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

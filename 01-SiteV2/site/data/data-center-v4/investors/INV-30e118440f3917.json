@@ -140,11 +140,19 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "NVentures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_note": "仅记录 OpenRouter Series B 参投信息及 NVIDIA 官网对 NVentures 的身份说明；不扩展未核实的团队、规模或策略。",
+      "summary": "OpenRouter 官方公告将 NVentures 列为 Series B 参投者，并称其为 NVIDIA 的风险投资部门；NVIDIA 官网设有 NVentures 官方页面。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "OpenRouter 的 Series B 公告列出 NVentures 为参投者。",
+          "source_id": "PFSRC-INV-30e118440f3917-1"
+        },
         {
           "description": "融资来源记录：OpenRouter · B轮 · 2026-05-26 · 本轮参投 · $113 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d1b42068c59f51d1"
@@ -152,6 +160,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-30e118440f3917-1",
+          "source_url": "https://openrouter.ai/blog/announcements/series-b/",
+          "source_title": "OpenRouter Raises $113M Series B",
+          "source_content_hash": "dff2f02fe6db8142e67851a24303d2b0294a688f9e44de7d811c011089db954f",
+          "quote": "with participation from NVentures (NVIDIA’s venture capital arm)",
+          "quote_hash": "42db7a6f6c8287582d6a8bd41de7f18ef32e1a901eb6ac58f412583078e5f70c"
+        },
+        {
+          "source_id": "PFSRC-INV-30e118440f3917-2",
+          "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_title": "NVentures — NVIDIA’s Venture Capital Arm | NVIDIA",
+          "source_content_hash": "9c771e9fbccc5260abed43fe702ef6ebf1f5a2cfbdcb9d5771a0d6c2af00a108",
+          "quote": "NVentures — NVIDIA’s Venture Capital Arm",
+          "quote_hash": "4a711eec508bb832b92f9228955386f9090bb96653abe1b71162de93a774aea1"
+        },
         {
           "source_id": "FISRC-d1b42068c59f51d1",
           "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
@@ -161,7 +185,7 @@
           "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

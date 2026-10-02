@@ -139,19 +139,69 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pacific Alliance Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Pacific Alliance Ventures 官网说明其由 Shinsegae Group 支持并在洛杉矶和首尔设有办公室；Stability AI 官方公告确认其参与 2026 年 8 月融资。",
+      "summary": "Pacific Alliance Ventures（PAV）是一家由 Shinsegae Group 支持、在洛杉矶和首尔设有办公室的投资机构。官网称其支持以技术服务未来的创业者；Stability AI 发行方公告将其列为 2026 年 8 月 Series B 参投方。",
+      "facts": [
+        {
+          "field": "backing",
+          "label": "官网披露的集团支持关系",
+          "value": "Powered by Shinsegae Group。",
+          "source_id": "PFSRC-INV-843eb7584e1343-1"
+        },
+        {
+          "field": "offices",
+          "label": "官网披露的办公地点",
+          "value": [
+            "Beverly Hills, California, United States",
+            "Seoul, Republic of Korea"
+          ],
+          "source_id": "PFSRC-INV-843eb7584e1343-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资理念",
+          "value": "支持以技术服务未来的创业者。",
+          "source_id": "PFSRC-INV-843eb7584e1343-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Stability AI 2026 年 8 月 25 日官方公告将 Pacific Alliance Ventures 列为 7600 万美元 Series B 融资参与方。",
+          "source_id": "PFSRC-INV-843eb7584e1343-2"
+        },
         {
           "description": "融资来源记录：Stability AI · B轮 · 2026-08-25 · 本轮参投 · $76 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e825eacb926a575f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Pacific Alliance Ventures 官网",
+          "value": "https://www.pav.vc/",
+          "url": "https://www.pav.vc/",
+          "source_id": "PFSRC-INV-843eb7584e1343-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-843eb7584e1343-1",
+          "source_url": "https://www.pav.vc/",
+          "source_title": "Pacific Alliance Ventures",
+          "source_content_hash": "6992fdd5feb29a1b5337c3fa9a858b5aecdf3bfc52be039647d4093c273eddf6",
+          "quote": "Powered by Shinsegae Group",
+          "quote_hash": "598a125657578b25b8fb45df59e7eff03eefc3a10e846f645e06d628daadf5f4"
+        },
+        {
+          "source_id": "PFSRC-INV-843eb7584e1343-2",
+          "source_url": "https://stability.ai/news-updates/stability-ai-latest-funding-backed-by-entertainment-industry-biggest-names",
+          "source_title": "Stability AI latest funding backed by entertainment industry biggest names &mdash; Stability AI",
+          "source_content_hash": "e6af631a2ed62ec0955ced844890a732c80bbbfe37a0674d7b056757a92c12b5",
+          "quote": "investment firms AMD Ventures and Pacific Alliance Ventures",
+          "quote_hash": "9c4da65681e9d65c965a9c9ea3a580bfc3c31adfb0b8a519bcccb007d1c594ca"
+        },
         {
           "source_id": "FISRC-e825eacb926a575f",
           "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
@@ -161,7 +211,7 @@
           "quote_hash": "4fb0689898de7c251bf6ce182549c3ddebb3bf4a41fe74e9b6afa2695d45a2f4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

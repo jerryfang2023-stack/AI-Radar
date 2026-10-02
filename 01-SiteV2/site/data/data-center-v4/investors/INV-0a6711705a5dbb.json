@@ -131,10 +131,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "ServiceNow 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "ServiceNow Ventures 官网称其以企业风险投资方式支持新兴技术，并聚焦人工智能运营、AI体验以及云安全和管理等企业软件方向。",
+      "coverage_note": "本档案只整理 ServiceNow Ventures 投资板块的公开信息，不替代 ServiceNow 整体公司介绍；$10亿投资承诺页面所载目标日期为2026年，发布前需复核兑现状态。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网称其广泛投资新兴技术以推进AI，并关注AI运营、AI体验、云安全和管理。",
+          "source_id": "servicenow_ventures"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -142,8 +149,24 @@
           "source_id": "FISRC-ff92324bbd437a73"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "ServiceNow Ventures",
+          "value": "投资项目介绍",
+          "url": "https://www.servicenow.com/company/ventures.html",
+          "source_id": "servicenow_ventures"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "servicenow_ventures",
+          "source_url": "https://www.servicenow.com/company/ventures.html",
+          "quote": "ServiceNow Ventures invests broadly across emerging technologies to accelerate the potential of AI.",
+          "source_title": "ServiceNow Ventures: Investing in AI Innovators for Enterprise Transformation",
+          "source_content_hash": "01b12791551eae9214abb88eb4bf10cdfbaa459472978474dacb790d7d7f3929",
+          "quote_hash": "ddb6ac36cc1483050653dc26ba574dfdbf969530380dd96d599954634be66c0f"
+        },
         {
           "source_id": "FISRC-ff92324bbd437a73",
           "source_url": "https://notice.co/c/mistral-ai",
@@ -153,7 +176,7 @@
           "quote_hash": "164941bd706cdf0bb83f26a55de7177ea01fa25260f44258c1f0ea16d53f07dd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

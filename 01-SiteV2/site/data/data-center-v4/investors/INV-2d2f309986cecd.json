@@ -140,19 +140,83 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Carolyn Everson 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "可口可乐公司董事会简历显示，Carolyn Everson现任Permira高级顾问，并于2022年当选可口可乐公司董事；履历包括Instacart、Facebook和Microsoft。Archestra的2026年种子轮公告提到Visible Ventures与她共同参与。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Archestra 2026年种子轮公告列出Visible Ventures with Carolyn Everson；公告未单列其个人投资金额。",
+          "source_id": "PFSRC-2d2f309986cecd-3"
+        },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "高级顾问",
+          "organization": "Permira",
+          "source_id": "PFSRC-2d2f309986cecd-1"
+        },
+        {
+          "title": "董事",
+          "organization": "The Coca-Cola Company",
+          "source_id": "PFSRC-2d2f309986cecd-1"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Instacart",
+          "title": "总裁",
+          "period": "加入Permira前",
+          "description": "可口可乐公司董事简历记载她此前担任Instacart总裁。",
+          "source_id": "PFSRC-2d2f309986cecd-2"
+        },
+        {
+          "organization": "Facebook（现Meta）",
+          "title": "全球业务集团副总裁",
+          "period": "加入Instacart前",
+          "description": "可口可乐公司董事简历记载她曾负责Facebook全球业务集团。",
+          "source_id": "PFSRC-2d2f309986cecd-2"
+        },
+        {
+          "organization": "Microsoft",
+          "title": "全球广告销售、战略与市场营销公司副总裁",
+          "period": "加入Facebook前",
+          "description": "可口可乐公司董事简历列出其在Microsoft的公司副总裁经历。",
+          "source_id": "PFSRC-2d2f309986cecd-2"
+        }
+      ],
+      "education": [],
+      "experience_summary": "公开董事简历显示其长期从事媒体和消费领域管理工作，并有天使投资、私募股权顾问和多家公司董事经历。",
       "sources": [
+        {
+          "source_id": "PFSRC-2d2f309986cecd-1",
+          "source_url": "https://www.coca-colacompany.com/about-us/board-of-directors/carolyn-everson",
+          "source_title": "Carolyn Everson",
+          "source_content_hash": "2c35b10405d511150e8933000748f81e54e1374a3733e7054842f20967bfc087",
+          "quote": "Carolyn Everson was elected as a Director of The Coca-Cola Company in 2022. Ms. Everson is a Senior Advisor at Permira, a global private equity firm, and has held this position since January, 2023.",
+          "quote_hash": "cf083bc02a4b2d300606ad582b00eaaf4dd07c1fe61c0649485101ccb7853467"
+        },
+        {
+          "source_id": "PFSRC-2d2f309986cecd-2",
+          "source_url": "https://www.coca-colacompany.com/about-us/board-of-directors/carolyn-everson",
+          "source_title": "Carolyn Everson",
+          "source_content_hash": "2c35b10405d511150e8933000748f81e54e1374a3733e7054842f20967bfc087",
+          "quote": "Prior to joining Permira, she was an Advisor/Active Angel Investor and prior to that, she served as president of Instacart. Prior to that role, she was vice president, Global Business Group, at Facebook, Inc., now known as Meta Platforms, Inc., where she led a global team of more than 4,000 people and was responsible for over $80 billion in revenue. Prior to Facebook, Ms. Everson was corporate vice president of the Global Advertising Sales, Strategy and Marketing at Microsoft Corporation.",
+          "quote_hash": "b478379b0e5de9e87e1f664414d3e56f453831a68209c9100e49b44d7e17adfa"
+        },
+        {
+          "source_id": "PFSRC-2d2f309986cecd-3",
+          "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
+          "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
+          "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
+          "quote": "Visible Ventures with Carolyn Everson (Senior Advisor at Permira, Board Member at Coca-Cola and Disney)",
+          "quote_hash": "6cceb5620f081a4236461c696e53f585fbaad7511dcbe813c4d8c814c1cfc1a6"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -162,7 +226,8 @@
           "quote_hash": "6cceb5620f081a4236461c696e53f585fbaad7511dcbe813c4d8c814c1cfc1a6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

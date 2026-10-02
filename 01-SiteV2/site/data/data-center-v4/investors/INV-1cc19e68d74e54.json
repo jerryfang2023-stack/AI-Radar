@@ -155,23 +155,72 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Raphael Schaad 当前按“个人投资者”收录。最新融资披露记录日期为 2026-03-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Raphael Schaad 是 Y Combinator General Partner，曾创办并担任 Cron CEO；Cron 于 2022 年被 Notion 收购。YC 页面还披露他曾在 Notion 负责 Calendar 增长及新产品设计，并列出其计算机科学与媒体艺术和科学学历。",
+      "coverage_note": "职业经历和教育来自 YC 官方人物页；Nexus 融资仅作为其一笔已披露的天使投资记录。",
+      "current_roles": [
+        {
+          "title": "General Partner",
+          "organization": "Y Combinator",
+          "source_id": "raphael_yc"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Cron",
+          "title": "创始人兼 CEO",
+          "period": "至 2022 年收购",
+          "description": "创办并领导 Cron；产品于 2022 年被 Notion 收购。",
+          "source_id": "raphael_yc"
+        },
+        {
+          "organization": "Notion",
+          "title": "Calendar 增长及新产品设计负责人",
+          "period": "任职时间未披露",
+          "description": "YC 页面称他在 Notion 将 Calendar 用户规模扩展至数百万。",
+          "source_id": "raphael_yc"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Bern University of Applied Sciences",
+          "qualification": "计算机科学学士",
+          "source_id": "raphael_yc"
+        },
+        {
+          "institution": "MIT Media Lab",
+          "qualification": "媒体艺术与科学硕士",
+          "source_id": "raphael_yc"
+        }
+      ],
+      "experience_summary": "从事产品设计与创业；曾创办 Cron，后加入 Notion；现任 Y Combinator General Partner。",
       "track_record": [
         {
-          "description": "融资来源记录：Nexus Enterprises, Inc · 种子轮 · 2026-03-31 · 本轮天使投资人 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-14ff8eaae437ca5e"
+          "description": "Nexus 官方融资公告将 Raphael Schaad 列为 2026 年 3 月种子轮天使投资者之一。",
+          "source_id": "nexus_round"
         },
         {
           "description": "融资来源记录：Nexus Enterprises, Inc · 种子轮 · 2026-03-31 · 本轮天使投资人 · $4.3M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8d734c978810d91a"
+          "source_id": "FISRC-14ff8eaae437ca5e"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "raphael_yc",
+          "source_url": "https://www.ycombinator.com/people/raphael-schaad",
+          "quote": "Raphael Schaad is a General Partner at YC. He was the founder and CEO of Cron (YC W20)",
+          "source_title": "Raphael Schaad: YC Partner | Y Combinator",
+          "source_content_hash": "a6502228346badf0a4474640e2d1160c551d0cc77890f9350b7a3e5180307a5a",
+          "quote_hash": "46017ce41072248ed90b7d529c1792598f78d3bdfd825cb26a0e521708fd1db4"
+        },
+        {
+          "source_id": "nexus_round",
+          "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
+          "quote": "angel investors like Gokul Rajaram, Raphael Schaad and Jake Mintz",
+          "source_title": "Nexus Raises $4.3M Seed Round to Help Business Teams Deploy",
+          "source_content_hash": "2af31687c6e9e270339d07814bc63a90e1c5b42972c0b802013a1ccc0f3fca4b",
+          "quote_hash": "0878a7ba0fee35aaadfb6825c49ec5bf9f931e2472eba3621d7c3d15a0dee348"
+        },
         {
           "source_id": "FISRC-14ff8eaae437ca5e",
           "source_url": "https://www.globenewswire.com/de/news-release/2026/03/31/3265301/0/en/Nexus-Raises-4-3M-Seed-Round-to-Help-Business-Teams-Deploy-AI-Agents.html",
@@ -189,7 +238,10 @@
           "quote_hash": "436080699317a279908b87acd550ac114e130996094788e841faab0c55e930d0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

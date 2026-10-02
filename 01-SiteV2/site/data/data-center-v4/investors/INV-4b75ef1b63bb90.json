@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Dimension Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Dimension 官网说明其机构定位；Earendil Labs 官方公告列出其参投并引用 Founding Managing Partner Zavain Dar。该记录限于已核验的一笔交易。",
+      "summary": "Dimension 官网将其描述为覆盖科学与计算领域的多阶段研究型投资机构；Earendil Labs 官方公告将 Dimension Capital 列为 7.87 亿美元融资的参与投资方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的机构定位",
+          "value": "多阶段、研究导向，投资科学与计算前沿领域。",
+          "source_id": "PFSRC-INV-4b75ef1b63bb90-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Earendil Labs 官方公告将 Dimension Capital 列为其 7.87 亿美元融资的参与投资方，并引述 Founding Managing Partner Zavain Dar。",
+          "source_id": "PFSRC-INV-4b75ef1b63bb90-2"
+        },
         {
           "description": "融资来源记录：华深智药 · 多轮融资 · 2026-03-25 · 本轮参投 · 7.87亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-972ef11d09af7ec8"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-4b75ef1b63bb90-1",
+          "source_url": "https://www.dimensioncap.com/",
+          "source_title": "DIMENSION",
+          "source_content_hash": "df0f86f6de1dce1720621423d1b5f036a310dbd68854c25cbf01888cc0eb2e7a",
+          "quote": "multistage, research oriented, investment firm partnering with companies across the frontiers of science and compute",
+          "quote_hash": "dc75b997ea7b05fb969aeea6323776eacdded1f4f3bfc229e241da81d4c8454a"
+        },
+        {
+          "source_id": "PFSRC-INV-4b75ef1b63bb90-2",
+          "source_url": "https://www.prnewswire.com/news-releases/earendil-labs-announces-787-million-in-financing-to-scale-ai-driven-biologics-discovery-and-development-302719748.html",
+          "source_title": "Earendil Labs Announces $787 Million in Financing to Scale AI-Driven Biologics Discovery and Development",
+          "source_content_hash": "f7fee84fbe4618aa4a1c2c8f72f6223541ad27747f3982919af11b7b952dd00e",
+          "quote": "including Dimension Capital, DST Global, INCE Capital",
+          "quote_hash": "c34fa71c1573b2af2989a93dbd471363ff942b3aadf09373611da4a073e3dad9"
+        },
         {
           "source_id": "FISRC-972ef11d09af7ec8",
           "source_url": "https://vc.pedaily.cn/company/205217.html",
@@ -161,7 +192,7 @@
           "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

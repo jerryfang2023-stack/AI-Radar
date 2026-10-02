@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Morado Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Morado 官网介绍其早期投资定位与关注领域；Actualyze AI 发行方公告确认 Morado Ventures 参与 700 万美元种子轮。",
+      "summary": "Morado Ventures 是专注早期投资的风险投资机构，官网披露其关注人工智能、数据基础设施、工业物联网、机器人与自主系统、计算机视觉和健康科技。Actualyze AI 的发行方公告确认其参与该公司 700 万美元种子轮。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "早期、种子阶段。",
+          "source_id": "PFSRC-INV-76177063958cac-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的关注领域",
+          "value": "人工智能、数据基础设施、工业物联网、机器人与自主系统、计算机视觉和健康科技。",
+          "source_id": "PFSRC-INV-76177063958cac-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Actualyze AI 发行方公告确认 Morado Ventures 参与其 2026 年 8 月公布的 700 万美元种子轮。",
+          "source_id": "PFSRC-INV-76177063958cac-2"
+        },
         {
           "description": "融资来源记录：Actualyze AI · 种子轮 · 2026-08-03 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7d5911b83ac40a4d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Morado Ventures 官网",
+          "value": "https://www.moradoventures.com/",
+          "url": "https://www.moradoventures.com/",
+          "source_id": "PFSRC-INV-76177063958cac-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-76177063958cac-1",
+          "source_url": "https://www.moradoventures.com/",
+          "source_title": "Morado Ventures - Tech-Forward Seed Fund",
+          "source_content_hash": "0b7c9aba59b3475f3ad66a57b552213f4f9050bdc46d4b3c4a74b6e01b86aef4",
+          "quote": "Your partner in seed-stage investments.",
+          "quote_hash": "ef4efbeebf5695690c404b59b4d4299fbdd8ee52062d378ca2639d82ec3ace61"
+        },
+        {
+          "source_id": "PFSRC-INV-76177063958cac-2",
+          "source_url": "https://www.prnewswire.com/news-releases/actualyze-ai-emerges-from-stealth-with-7m-seed-round-to-deliver-enterprises-one-platform-for-every-ai-request-302840716.html",
+          "source_title": "Actualyze AI Emerges from Stealth with $7M Seed Round to Deliver Enterprises One Platform for Every AI Request",
+          "source_content_hash": "6b9b6a7613043c9f46e79feabb31f21fe83914eabc350f65f7ec4762647bb591",
+          "quote": "backed with $7 million in seed funding from Storm Ventures, Canaan Partners, Morado Ventures, and Jerry Yang's AME Cloud Ventures",
+          "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
+        },
         {
           "source_id": "FISRC-7d5911b83ac40a4d",
           "source_url": "https://www.prnewswire.com/news-releases/actualyze-ai-emerges-from-stealth-with-7m-seed-round-to-deliver-enterprises-one-platform-for-every-ai-request-302840716.html",
@@ -161,7 +202,7 @@
           "quote_hash": "69cbee4b0d08b8459255ff8e36ce3e5276eb038abeb04a605510eef96a35dad6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

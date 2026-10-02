@@ -131,12 +131,39 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Brizan Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略与身份来自 Brizan Ventures 官网；跃然创新融资参与仅由搜狐转载报道披露，作为单条活动记录，不代表完整组合。",
+      "summary": "Brizan Ventures 官网称其自 2017 年起支持硬科技创业公司，重点涉及机器人芯片、物联网、出行和健康科技；搜狐报道将其列为跃然创新 2025 年 A 轮系列融资的持续加注方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "Seed 起步的早期创业公司。",
+          "source_id": "PFSRC-INV-5c5f35bd8e3e82-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网自述的投资方向",
+          "value": "硬科技，涉及机器人芯片、物联网、出行和健康科技。",
+          "source_id": "PFSRC-INV-5c5f35bd8e3e82-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "官网称 Brizan Ventures 于 2017 年由 Professor Ko Ping Keung 与 Andrew Kwong 联合创立。",
+          "source_id": "PFSRC-INV-5c5f35bd8e3e82-1"
+        }
+      ],
       "track_record": [
+        {
+          "description": "搜狐报道将 Brizan Ventures 列为跃然创新 2025 年 2 亿元 A 轮系列融资的老股东持续加注方；未披露其具体出资额。",
+          "source_id": "PFSRC-INV-5c5f35bd8e3e82-2"
+        },
         {
           "description": "融资来源记录：深圳跃然创新科技有限公司 · 历史轮次未披露 · A轮老股东持续加注。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c5b971b07e7344e1"
@@ -144,6 +171,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-5c5f35bd8e3e82-1",
+          "source_url": "https://www.brizanvp.com/",
+          "source_title": "Home | www.brizanvp.com",
+          "source_content_hash": "1f1e8f5b9528b6ef4afac4669090588c2e4f2264c47994798319ddf71b0ad6de",
+          "quote": "Brizan Ventures primarily invests in early stage startups, from Seed onwards.",
+          "quote_hash": "77ee1159281b1183170629732da4c35f281286a84dac3eefb50c37fa5cace4c0"
+        },
+        {
+          "source_id": "PFSRC-INV-5c5f35bd8e3e82-2",
+          "source_url": "https://m.sohu.com/a/1000028992_112831",
+          "source_title": "蚂蚁集团入股跃然创新，后者首家线下门店将开业_玩具公司_产品_CocoMate",
+          "source_content_hash": "f98864f54ce9f84a094a447e4483a0f12991e7d500f90b8b23f5d538af74f3f4",
+          "quote": "Brizan Ventures 等老股东持续加注",
+          "quote_hash": "3f73bbaa635dddb05dc201162dfa0cd748e5d6cede43580dbb49f6e71095403b"
+        },
         {
           "source_id": "FISRC-c5b971b07e7344e1",
           "source_url": "https://m.sohu.com/a/1000028992_112831",
@@ -153,7 +196,7 @@
           "quote_hash": "c03ad7bf0c5c08ba90e3a3b1f2780303d379c56602f9b11f3c90a8e797667252"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

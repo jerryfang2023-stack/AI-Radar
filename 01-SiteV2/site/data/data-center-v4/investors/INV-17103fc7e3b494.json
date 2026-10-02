@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Schema Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Schema Ventures 官网称其支持技术创业者的pre-seed和seed轮项目，投资范围包括企业软件、开发者基础设施和工业技术。",
+      "coverage_note": "阶段、投资方向、支票规模及创始人支持方式均来自机构官网自述。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其关注pre-seed和seed阶段，有时在公司形成初步想法前投入。",
+          "source_id": "schema_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网列出企业软件、开发者基础设施和工业技术。",
+          "source_id": "schema_about"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露的投资金额范围",
+          "value": "官网列示单笔投资通常为25万至50万美元。",
+          "source_id": "schema_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,40 @@
           "source_id": "FISRC-6b1944359351ee14"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Schema Ventures",
+          "url": "https://schemavc.com/",
+          "source_id": "schema_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "schema_about",
+          "source_url": "https://schemavc.com/",
+          "quote": "Schema Ventures is an early‑stage venture fund backing technical founders at the pre‑seed and seed stage.",
+          "source_title": "Schema Ventures",
+          "source_content_hash": "a91fe7e09c1f8b3f6682e24650dc9e6ed7977cd02e992f744eff59e3caa86074",
+          "quote_hash": "3910abc512fbfccb7243e987286db34488850730d79e1c94bdd2793633ca821a"
+        },
+        {
+          "source_id": "schema_details",
+          "source_url": "https://schemavc.com/",
+          "quote": "We invest in enterprise software, developer infrastructure, and industrial technology",
+          "source_title": "Schema Ventures",
+          "source_content_hash": "a91fe7e09c1f8b3f6682e24650dc9e6ed7977cd02e992f744eff59e3caa86074",
+          "quote_hash": "f3ab6c51222088df77b3793944b78e2f00491831fe2c4d0a089962c2dbc97a33"
+        },
+        {
+          "source_id": "schema_check",
+          "source_url": "https://schemavc.com/",
+          "quote": "Check Size $250K&ndash;$500K",
+          "source_title": "Schema Ventures",
+          "source_content_hash": "a91fe7e09c1f8b3f6682e24650dc9e6ed7977cd02e992f744eff59e3caa86074",
+          "quote_hash": "ff8aaa90b0fc57ab82fa5c4c07940ce178bc6ee7cc6d414559b739e93181e6bc"
+        },
         {
           "source_id": "FISRC-6b1944359351ee14",
           "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
@@ -161,7 +212,7 @@
           "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

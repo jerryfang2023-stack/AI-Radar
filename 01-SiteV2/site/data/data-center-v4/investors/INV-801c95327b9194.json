@@ -131,19 +131,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Google 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Google 官网提供企业使命信息；TechCrunch 于 2025-01-22 报道 Google 向 Anthropic 追加投资约 10 亿美元，文章将其表述为“reportedly”，且注明源自 Financial Times，未在本次缓存中找到 Google 官方确认。",
+      "summary": "Google 是 Alphabet 旗下科技公司，官网称其工作包括推进 AI 领域并解决复杂挑战。TechCrunch 于 2025 年 1 月报道 Google 据称向 Anthropic 追加约 10 亿美元投资；该融资消息在本档案中保留为媒体报道，未作为 Google 官方确认事实。",
+      "facts": [
+        {
+          "field": "company_mission",
+          "label": "官网说明的工作方向",
+          "value": "推进 AI 领域并帮助解决复杂挑战。",
+          "source_id": "PFSRC-INV-801c95327b9194-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 于 2025 年 1 月 22 日报道 Anthropic 据称又从 Google 获得约 10 亿美元投资，并说明该消息最初由 Financial Times 报道；Google 官方页面未在本次缓存中确认这笔交易。",
+          "source_id": "PFSRC-INV-801c95327b9194-2"
+        },
         {
           "description": "融资来源记录：Anthropic PBC · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ef9fd29dc050f7ca"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Google 公司信息",
+          "value": "https://about.google/intl/en_ALL/company-info/",
+          "url": "https://about.google/intl/en_ALL/company-info/",
+          "source_id": "PFSRC-INV-801c95327b9194-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-801c95327b9194-1",
+          "source_url": "https://about.google/intl/en_ALL/company-info/",
+          "source_title": "About Google company information",
+          "source_content_hash": "21c2c56a4c2d5cec6115b00f7cd185306b1ec7e0d0c5ac22f3ddb953ef8772f9",
+          "quote": "Our teams are working to solve complex challenges, advance the field of AI and help as many people as possible.",
+          "quote_hash": "b4ce2ab6eeafc98f7eb8cccba5d8d2c3d262fa28ab6541d1a876b4732dad00d2"
+        },
+        {
+          "source_id": "PFSRC-INV-801c95327b9194-2",
+          "source_url": "https://techcrunch.com/2025/01/22/anthropic-reportedly-secures-an-additional-1b-from-google/",
+          "source_title": "Anthropic reportedly secures an additional $1B from Google | TechCrunch",
+          "source_content_hash": "686c0ea2f10d1d26313c21b6dfe195765cf8dfa92927f0eb221bf1bdd89c43b5",
+          "quote": "Anthropic has reportedly raised around $1 billion from Google as the AI company looks to deliver a number of major product updates this year.",
+          "quote_hash": "ce795612942541bc993c725417df2f84b6350c0beadc16953854843a51fe7151"
+        },
         {
           "source_id": "FISRC-ef9fd29dc050f7ca",
           "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
@@ -153,7 +188,7 @@
           "quote_hash": "1e13409ae0b41dc474d131020206f63c8afd4bc0e232d9ac8416b5cb48f25ee8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

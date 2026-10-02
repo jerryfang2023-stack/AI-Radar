@@ -131,9 +131,48 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Kevin Johnson 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "Goldman Sachs 官方董事资料和任命公告支持当前角色与公开履历；本条不补写未经重新采集的投资交易细节。",
+      "summary": "Goldman Sachs 官网列 Kevin Johnson 自 2022 年 10 月起担任董事；其官方履历记录了在 Starbucks、Juniper Networks 和 Microsoft 的领导岗位。",
+      "current_roles": [
+        {
+          "title": "Director (since October 2022)",
+          "organization": "Goldman Sachs",
+          "source_id": "PFSRC-INV-46d04809744df9-1"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Starbucks",
+          "title": "President and CEO",
+          "period": "April 2017 – April 2022",
+          "description": "Goldman Sachs 记录其于 2022 年 4 月卸任 Starbucks 总裁兼 CEO；该职务自 2017 年 4 月起。",
+          "source_id": "PFSRC-INV-46d04809744df9-2"
+        },
+        {
+          "organization": "Starbucks",
+          "title": "President and COO",
+          "period": "March 2015 – April 2017",
+          "description": "Goldman Sachs 记录其于 2015 年 3 月起担任 Starbucks 总裁兼 COO。",
+          "source_id": "PFSRC-INV-46d04809744df9-3"
+        },
+        {
+          "organization": "Juniper Networks",
+          "title": "CEO",
+          "period": "September 2008 – January 2014",
+          "description": "Goldman Sachs 官方任命公告列出其 Juniper Networks CEO 任期。",
+          "source_id": "PFSRC-INV-46d04809744df9-4"
+        },
+        {
+          "organization": "Microsoft",
+          "title": "President, Platforms and Services",
+          "period": "2005 – September 2008",
+          "description": "Goldman Sachs 官方任命公告列出其 Microsoft 职务。",
+          "source_id": "PFSRC-INV-46d04809744df9-4"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Goldman Sachs 官方资料记录其在科技行业超过 32 年的经验，涉及 Starbucks、Juniper Networks 和 Microsoft。",
       "facts": [],
       "milestones": [],
       "track_record": [
@@ -145,6 +184,38 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PFSRC-INV-46d04809744df9-1",
+          "source_url": "https://www.goldmansachs.com/our-firm/our-people-and-leadership/leadership/board-of-directors/kevin-r-johnson",
+          "source_title": "Kevin Johnson | Goldman Sachs",
+          "source_content_hash": "664be61f0466c2920ef821d624564884ae5d8d311e7f82d60de4cda5b3299a17",
+          "quote": "Director Since: October 2022",
+          "quote_hash": "e3cf6b5b8a5b8bf4add729ee8b5dd7561f425402d2073064e87f4e52ad232e20"
+        },
+        {
+          "source_id": "PFSRC-INV-46d04809744df9-2",
+          "source_url": "https://www.goldmansachs.com/pressroom/press-releases/2022/kevin-johnson-joins-goldman-sachs-board",
+          "source_title": "Kevin Johnson Joins Goldman Sachs Board of Directors | Goldman Sachs",
+          "source_content_hash": "229946dcf4e9e7fe1d95bab66891760f4d17695db2a2ec29c00a376227c8981e",
+          "quote": "Mr. Johnson retired in April 2022 as the President and Chief Executive Officer of Starbucks Corporation, a role he had held since April 2017.",
+          "quote_hash": "c7293e115bb911e4ad0ca25ecc3c1da94f14331438c5eb58f5d5cfb135d877db"
+        },
+        {
+          "source_id": "PFSRC-INV-46d04809744df9-3",
+          "source_url": "https://www.goldmansachs.com/pressroom/press-releases/2022/kevin-johnson-joins-goldman-sachs-board",
+          "source_title": "Kevin Johnson Joins Goldman Sachs Board of Directors | Goldman Sachs",
+          "source_content_hash": "229946dcf4e9e7fe1d95bab66891760f4d17695db2a2ec29c00a376227c8981e",
+          "quote": "Previously, he served as President and Chief Operating Officer of Starbucks from March 2015",
+          "quote_hash": "f3a7a5167afabe761d4b410f89ea349a0caa4e038cec39dae3126687082678b2"
+        },
+        {
+          "source_id": "PFSRC-INV-46d04809744df9-4",
+          "source_url": "https://www.goldmansachs.com/pressroom/press-releases/2022/kevin-johnson-joins-goldman-sachs-board",
+          "source_title": "Kevin Johnson Joins Goldman Sachs Board of Directors | Goldman Sachs",
+          "source_content_hash": "229946dcf4e9e7fe1d95bab66891760f4d17695db2a2ec29c00a376227c8981e",
+          "quote": "From September 2008 to January 2014, Mr. Johnson served as Chief Executive Officer of Juniper Networks, Inc. and served in a variety of roles of increasing seniority at Microsoft Corporation, including as President, Platforms and Services from 2005 to September 2008",
+          "quote_hash": "fcf241650a7b604d04edde71ebdddab95d3de125cee6fca8d8c25fb6d835a941"
+        },
+        {
           "source_id": "FISRC-64c63dc926fc8a24",
           "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
           "source_title": "Starcloud achieves unicorn status with $170 million raise for orbital data centers - SpaceNews",
@@ -153,7 +224,7 @@
           "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

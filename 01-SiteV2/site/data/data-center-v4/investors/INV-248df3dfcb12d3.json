@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Touring Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Touring Capital 是一家专注 AI 软件的早期风险投资机构。官网公布其团队与行业观点，并披露对 AI 芯片推理软件公司 Infinity 的投资。",
+      "coverage_note": "阶段、领域与投资案例来自 Touring Capital 官网；未推断基金规模或投资回报。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其投资接近产品市场匹配阶段的早期公司。",
+          "source_id": "touring_home"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资方向",
+          "value": "官网将重点方向描述为 AI 软件。",
+          "source_id": "touring_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Touring Capital 官网发布对 Infinity 的投资文章，介绍其为 AI 芯片提供推理软件层。",
+          "source_id": "touring_infinity"
+        },
         {
           "description": "融资来源记录：Infinity · 种子轮 · 2026-07-20 · 本轮领投 · $15M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8b7c6346d6bc0dc2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Touring Capital",
+          "url": "https://touringcapital.com/",
+          "source_id": "touring_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "touring_home",
+          "source_url": "https://touringcapital.com/",
+          "quote": "We invest in early-stage companies approaching product-market-fit in their categories.",
+          "source_title": "Touring Capital &#8211; Investing in the next-generation of software companies",
+          "source_content_hash": "38df4e3ffe83816ddcccbee55421e036a37fa1a31da0f947adf4c061a8f57d7c",
+          "quote_hash": "60e52cfa83d9e214db6a214fec8587bb5629e13c1b002741287155b0d287b3d0"
+        },
+        {
+          "source_id": "touring_infinity",
+          "source_url": "https://touringcapital.com/news/the-software-unlock-for-heterogeneous-compute-our-investment-in-infinity/",
+          "quote": "The Software Unlock for Heterogeneous Compute: Our Investment in Infinity",
+          "source_title": "The Software Unlock for Heterogeneous Compute: Our Investment in Infinity &#8211; Touring Capital",
+          "source_content_hash": "3f81b78ea66da241ec9e933893e1efde777b7cad3318ae921fe4b0a26d60e2b0",
+          "quote_hash": "7477c5cd80e4c99dea31660d0cfc5a3507c60fc95e3b129ce1aa6aacde172bb5"
+        },
         {
           "source_id": "FISRC-8b7c6346d6bc0dc2",
           "source_url": "https://valueaddvc.com/pulse/infinity-15m-inference-touring-capital-2026",
@@ -161,7 +202,7 @@
           "quote_hash": "7e50de0b07f998b3024aacc3f9685795d8043627165eb42ef328331019e0da97"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

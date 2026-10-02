@@ -139,19 +139,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Valor Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Valor官网将其定位为连接美国、拉丁美洲与全球科技市场的跨境风险投资机构，并在官网组合公司列表中列有Higgsfield AI。",
+      "facts": [
+        {
+          "field": "investment_geography",
+          "label": "投资地域",
+          "value": "美国、拉丁美洲及全球科技市场",
+          "source_id": "PFSRC-2ed30490e9cd64-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资关注",
+          "value": "消费互联网和企业软件",
+          "source_id": "PFSRC-2ed30490e9cd64-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Valor官网组合公司列表列有Higgsfield AI；本条仅记录官网公开组合关系。",
+          "source_id": "PFSRC-2ed30490e9cd64-2"
+        },
         {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b235ace767812393"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://valorcapitalgroup.com/",
+          "url": "https://valorcapitalgroup.com/",
+          "source_id": "PFSRC-2ed30490e9cd64-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-2ed30490e9cd64-1",
+          "source_url": "https://valorcapitalgroup.com/",
+          "source_title": "Valor Capital Group | Driving Local Innovation",
+          "source_content_hash": "cd40e400a80aac7464e767ca981b067fe7a6f571d92b56a03333cb3549c3bb7d",
+          "quote": "We are the pioneer cross-border venture fund bridging the US, Latin American and Global technology markets powered by investors with unmatched technical expertise in the venture scene Decades of Experience Investing in the Consumer Internet and Enterprise Software Trends Defining the 21st Century",
+          "quote_hash": "0339d3332253735cd5b0a0475f5ef590ea541aac18c8b35d6639fa270e4dba96"
+        },
+        {
+          "source_id": "PFSRC-2ed30490e9cd64-2",
+          "source_url": "https://valorcapitalgroup.com/companies/",
+          "source_title": "Companies Archive - Valor",
+          "source_content_hash": "1fa36a649d500c92aed059094ebf903435ad577b50ab9ac4ccbdfe3bd4f151c4",
+          "quote": "Higgsfield AI",
+          "quote_hash": "cda285a15b31ddacb4cf680e87f23660aa05367ce98e2b9b9ec8f08cd30068cf"
+        },
         {
           "source_id": "FISRC-b235ace767812393",
           "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -161,7 +201,8 @@
           "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

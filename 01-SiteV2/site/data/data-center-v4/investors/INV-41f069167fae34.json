@@ -139,12 +139,26 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nicole Krasinski (Atomic Workshop) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "当前角色由 Atomic Workshop 官网团队页核验，投资活动由 Hostie 发行方融资公告核验；不外推完整投资组合。",
+      "summary": "Atomic Workshop 官网列 Nicole Krasinski 为糕点主厨兼所有者；Hostie 官方融资公告将她与两位 Atomic Workshop 同事列为该轮投资者。",
+      "current_roles": [
+        {
+          "title": "Pastry Chef & Owner",
+          "organization": "Atomic Workshop",
+          "source_id": "PFSRC-INV-41f069167fae34-2"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Atomic Workshop 官网将 Nicole Krasinski 介绍为糕点主厨兼所有者。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Hostie 官方公告将 Nicole Krasinski 与 Stuart Brioza、Elizabeth DePalmer 一同列为 Atomic Workshop 的参投者。",
+          "source_id": "PFSRC-INV-41f069167fae34-1"
+        },
         {
           "description": "融资来源记录：Hostie · A轮 · 2026-07-08 · 本轮天使投资人 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d81171d6c6910b85"
@@ -152,6 +166,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-41f069167fae34-1",
+          "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
+          "source_content_hash": "092c8022c5ecc67b43c42ddc70e993697186d6a2f718bc68ae900a27c7356e16",
+          "quote": "The round also includes investments from leading restaurant operators Tim Stannard of Bacchus Management Group and Stuart Brioza, Nicole Krasinski, and Elizabeth DePalmer of Atomic Workshop",
+          "quote_hash": "0e4d704c713406b77dc97172360d48b84f9637f988a0afc1bdb04fe91996b287"
+        },
+        {
+          "source_id": "PFSRC-INV-41f069167fae34-2",
+          "source_url": "https://atomic-workshop.com/team",
+          "source_title": "The Team - Atomic Workshop &mdash; Atomic Workshop",
+          "source_content_hash": "37d089423bc4bff2c0cc8b9c5c2b6d9e76b927fa40b720a7c22ec5fcf1bf36ea",
+          "quote": "Nicole Krasinski, Pastry Chef & OWNER",
+          "quote_hash": "cd5bd86e95c3999e0cdd99053bfaa0858456ae09feda45663939753ff67cbe6e"
+        },
         {
           "source_id": "FISRC-d81171d6c6910b85",
           "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
@@ -161,7 +191,7 @@
           "quote_hash": "11c559e08dad657c07a7f9c8ce27ec2aa740ad037753e1d3f0f024534fddd13b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

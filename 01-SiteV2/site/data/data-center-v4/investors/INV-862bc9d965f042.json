@@ -139,19 +139,80 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "FUSE VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "FUSE 官方网站将其标注为 FUSE Venture Partners，介绍其早期投资取向、关注领域和成立年份；TechCrunch 报道 FUSE VC 领投 General Compute 种子轮。",
+      "summary": "FUSE Venture Partners（FUSE VC）是一家支持早期创业公司的风险投资机构。官网称其关注从 AI 医疗到太空经济基础设施等方向，并记录机构于2020年成立；TechCrunch 报道其领投了 General Compute 的种子轮。",
+      "facts": [
+        {
+          "field": "established_year",
+          "label": "官网披露的成立年份",
+          "value": "2020年",
+          "source_id": "PFSRC-INV-862bc9d965f042-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "创业早期，常在机会尚未显现时支持创始人",
+          "source_id": "PFSRC-INV-862bc9d965f042-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "AI医疗、太空经济基础设施等",
+          "source_id": "PFSRC-INV-862bc9d965f042-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch于2026年5月28日报道，FUSE VC领投General Compute的1500万美元种子轮。",
+          "source_id": "PFSRC-INV-862bc9d965f042-3"
+        },
         {
           "description": "融资来源记录：General Compute · 种子轮 · 2026-05-28 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7f85c191231c7c71"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "官网联系邮箱",
+          "value": "info@fuse.vc",
+          "source_id": "PFSRC-INV-862bc9d965f042-1"
+        },
+        {
+          "kind": "website",
+          "label": "FUSE官网",
+          "value": "https://fuse.vc/",
+          "url": "https://fuse.vc/",
+          "source_id": "PFSRC-INV-862bc9d965f042-2"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-862bc9d965f042-1",
+          "source_url": "https://fuse.vc/about",
+          "source_title": "About - FUSE",
+          "source_content_hash": "c9ac514736cc852034fa24b01dfda6700e2c0c7741713276023805fbcd611742",
+          "quote": "Founded 2020",
+          "quote_hash": "92273227888052b63ca38f60e9db68517d956edb3b47357b3d149771fc771bff"
+        },
+        {
+          "source_id": "PFSRC-INV-862bc9d965f042-2",
+          "source_url": "https://fuse.vc/",
+          "source_title": "FUSE",
+          "source_content_hash": "1720e2df0f25987410bf51e8a66d41779b992478ff0739a3bd4ba64a451ac707",
+          "quote": "FUSE backs ambitious founders from the earliest days, often before the opportunity is obvious to everyone else. We follow that conviction wherever it leads, from AI-driven healthcare to the infrastructure powering the space economy.",
+          "quote_hash": "0185700b14128d8400dc8e6f3fcce9204da16a906beafd05364c7fe9b507055e"
+        },
+        {
+          "source_id": "PFSRC-INV-862bc9d965f042-3",
+          "source_url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
+          "source_title": "Has the hunt for AI compute uncovered the next Cerebras? | TechCrunch",
+          "source_content_hash": "bc9a77133f91ad661520606e98b77eb7fd1629776a10dcde03c835eb2b059f10",
+          "quote": "led by FUSE VC with participation from Carya Venture Partners and Village Global Ventures",
+          "quote_hash": "7dd3adcfa67127167fb9c70ed64d7cd6f65fa574ef2e784afde1cb8cd66490f2"
+        },
         {
           "source_id": "FISRC-7f85c191231c7c71",
           "source_url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
@@ -161,7 +222,7 @@
           "quote_hash": "7dd3adcfa67127167fb9c70ed64d7cd6f65fa574ef2e784afde1cb8cd66490f2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -139,19 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "MIXI Global Investments 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "MIXI Global Investments 官网自述其为 MIXI, Inc. 的企业创投部门；Aina 官方融资公告将其列为 2026 年 7 月种子轮参投方。",
+      "summary": "MIXI Global Investments（MGI）是 MIXI, Inc. 的企业创投部门，官网称其主要在印度及全球范围内投资数字娱乐、生活方式和体育领域的初创公司；Aina 官方公告将 MGI 列为 550 万美元种子轮的参投方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "MIXI, Inc. 的企业创投部门。",
+          "source_id": "PFSRC-INV-684db02d5d682e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "数字娱乐、生活方式和体育，重点关注印度并进行全球投资。",
+          "source_id": "PFSRC-INV-684db02d5d682e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Aina 官方公告将 MIXI Global Investments 列为其 2026 年 7 月 550 万美元种子轮参投方。",
+          "source_id": "PFSRC-INV-684db02d5d682e-2"
+        },
         {
           "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮参投 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9e755507b523ddb2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "MIXI Global Investments 官网",
+          "value": "https://mixiglobalinv.com/",
+          "url": "https://mixiglobalinv.com/",
+          "source_id": "PFSRC-INV-684db02d5d682e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-684db02d5d682e-1",
+          "source_url": "https://mixiglobalinv.com/",
+          "source_title": "MIXI Global Investments",
+          "source_content_hash": "fe780e0cbc473e7271ff4e47ac11b6799be3796fd7413f5376a00deaaee88fc6",
+          "quote": "MIXI Global Investments (MGI) is a corporate venture capital of MIXI, Inc. We invest in startups mainly in the sector of Digital Entertainment, Lifestyle, and Sports in India and globally.",
+          "quote_hash": "775f2e8e3d96294481f7751ecd1a9224b7bbb7ebd8bf91df41d2c3e21818e712"
+        },
+        {
+          "source_id": "PFSRC-INV-684db02d5d682e-2",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/16/3328464/0/en/aina-raises-5-5m-with-new-hardware-interface-for-the-age-of-ai-beyond-touchscreens-and-keyboards.html",
+          "source_title": "Aina raises $5.5M with new hardware interface for the age",
+          "source_content_hash": "704f93661f833232cfc87e7ab6463a3063efa6f1bd3eaefd3fb6c5e64287bfaf",
+          "quote": "with participation from MIXI Global Investments, Antler, Blume Founders Fund",
+          "quote_hash": "807260f3aca37c7aab7e0dca77228eff920cca80277be14d5f488e76fc6ddf87"
+        },
         {
           "source_id": "FISRC-9e755507b523ddb2",
           "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
@@ -161,7 +206,7 @@
           "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

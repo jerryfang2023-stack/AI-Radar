@@ -131,19 +131,94 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Oxford Seed Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Oxford Saïd Business School 官方 FAQs 说明该基金的牛津关联资格、投资阶段和支票规模；EU-Startups 于 2026 年 5 月报道 Viktor 将 Oxford Seed Fund 列为既有投资方，该投资关系为媒体报道。",
+      "summary": "Oxford Seed Fund 是由牛津大学学生和校友主导的风险投资基金，项目须在创始团队中有牛津大学学生、校友或研究人员。该基金由 Saïd Business School 的 Oxford Saïd Entrepreneurship Centre 支持，通常投向 pre-seed 和 seed 阶段。",
+      "facts": [
+        {
+          "field": "eligibility",
+          "label": "官网披露的项目资格",
+          "value": "创始团队中需有牛津大学在读学生、校友或研究人员。",
+          "source_id": "PFSRC-INV-80e4931d9ff93f-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "可作为首笔投资，也参与 pre-seed 和 seed 阶段。",
+          "source_id": "PFSRC-INV-80e4931d9ff93f-2"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露的单笔投资上限",
+          "value": "最高 £100,000。",
+          "source_id": "PFSRC-INV-80e4931d9ff93f-1"
+        },
+        {
+          "field": "sector_focus",
+          "label": "官网披露的领域",
+          "value": "不限定行业；常见主题包括医疗、气候、金融、AI 和深科技。",
+          "source_id": "PFSRC-INV-80e4931d9ff93f-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "EU-Startups 2026 年 5 月报道 Viktor 的 Series A，并将 Oxford Seed Fund 列为既有投资方；报道没有称其为本轮新加入投资者。",
+          "source_id": "PFSRC-INV-80e4931d9ff93f-3"
+        },
         {
           "description": "融资来源记录：Viktor · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "项目申请与咨询邮箱",
+          "value": "seedfund@sbs.ox.ac.uk",
+          "source_id": "PFSRC-INV-80e4931d9ff93f-4"
+        },
+        {
+          "kind": "website",
+          "label": "Oxford Seed Fund 官方 FAQs",
+          "value": "https://www.sbs.ox.ac.uk/sites/default/files/2025-11/Oxford-Seed-Fund-FAQs-2526.pdf",
+          "url": "https://www.sbs.ox.ac.uk/sites/default/files/2025-11/Oxford-Seed-Fund-FAQs-2526.pdf",
+          "source_id": "PFSRC-INV-80e4931d9ff93f-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-80e4931d9ff93f-1",
+          "source_url": "https://www.sbs.ox.ac.uk/sites/default/files/2025-11/Oxford-Seed-Fund-FAQs-2526.pdf",
+          "source_title": "Oxford Seed Fund FAQs 2025–26 | Saïd Business School, University of Oxford",
+          "source_content_hash": "b2bae1f36b5908da1b43867a0d2c86b6b54d7acf41e600abf2345f216be64b6c",
+          "quote": "The University of Oxford’s student-and-alumni led venture capital fund, investing up to £100,000 cheques into Oxford-affiliated startups",
+          "quote_hash": "6dfb2955393eff9a8faaf319ba924334c8c441defab896912ab41b05057a7952"
+        },
+        {
+          "source_id": "PFSRC-INV-80e4931d9ff93f-2",
+          "source_url": "https://www.sbs.ox.ac.uk/sites/default/files/2025-11/Oxford-Seed-Fund-FAQs-2526.pdf",
+          "source_title": "Oxford Seed Fund FAQs 2025–26 | Saïd Business School, University of Oxford",
+          "source_content_hash": "b2bae1f36b5908da1b43867a0d2c86b6b54d7acf41e600abf2345f216be64b6c",
+          "quote": "In terms of stage, we invest either as the very first cheque, or at pre-seed and seed-stage alongside angels and other VC funds.",
+          "quote_hash": "bf740d208e4d58a24d7649b646ecef2e567154cf66ed9dd4e0a5cef85e0ab45a"
+        },
+        {
+          "source_id": "PFSRC-INV-80e4931d9ff93f-3",
+          "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
+          "source_title": "AI coworker startup Viktor raises €64.7 million Series A after hitting €12.9 million revenue run rate within 10 weeks of launch | EU-Startups",
+          "source_content_hash": "3a91a7f737e20cb73ed393fb6684f95c81b2f76f85b78027905f5498b28e2f88",
+          "quote": "They join existing investors, including Leonis Capital, Oxford Seed Fund, Nat Friedman (former GitHub CEO), Daniel Gross (former Head of AI at Y Combinator/Apple), Charlie Songhurst, Nico Rosberg, and Mati Staniszewski (co-founder of ElevenLabs).",
+          "quote_hash": "8b0e0434f4dd9eeac6a0f5417697cda0bcbda6fabbaa62f2a3732dd79d98221e"
+        },
+        {
+          "source_id": "PFSRC-INV-80e4931d9ff93f-4",
+          "source_url": "https://www.sbs.ox.ac.uk/sites/default/files/2025-11/Oxford-Seed-Fund-FAQs-2526.pdf",
+          "source_title": "Oxford Seed Fund FAQs 2025–26 | Saïd Business School, University of Oxford",
+          "source_content_hash": "b2bae1f36b5908da1b43867a0d2c86b6b54d7acf41e600abf2345f216be64b6c",
+          "quote": "You may apply by simply emailing your pitch deck to seedfund@sbs.ox.ac.uk",
+          "quote_hash": "0ea0e751c3d7b278fb68fc5cabfa38124b689159835b74211cee0e98b7c6b547"
+        },
         {
           "source_id": "FISRC-ce83b857608dabeb",
           "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
@@ -153,7 +228,7 @@
           "quote_hash": "46dc75eeaddcb790723d52c33bb886cffc86d102d0b5b5aa20b0c809f8f355b1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

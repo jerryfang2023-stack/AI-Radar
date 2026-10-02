@@ -139,19 +139,46 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Java Capital 当前按“投资组织”收录。最新融资披露记录日期为 2024-08-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Java Capital 官网的 AI & Tools 组合清单列有 Quash；该页面没有提供融资轮次、金额或投资时间，因此不补写这些字段。",
+      "summary": "Java Capital 官网将自己定位为印度深科技种子基金，并在 AI & Tools 组合清单中列出 Quash。现有官网摘录未披露该项目的轮次、金额或投资日期。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网定位及组合分类",
+          "value": "印度深科技种子基金；官网将 Quash 归入 AI & Tools 组合。",
+          "source_id": "PFSRC-INV-7addbb02eb292d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Java Capital 官网的 AI & Tools 组合页列出 Quash，并称其为用于移动应用测试和 QA 的生成式 AI agent；该页面未披露投资日期或轮次。",
+          "source_id": "PFSRC-INV-7addbb02eb292d-1"
+        },
         {
           "description": "融资来源记录：Quash · 预种子轮 · 2024-08-20 · 本轮参投 · $635,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-70b20379e494fa2f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Java Capital 官网",
+          "value": "https://www.javacapital.co/",
+          "url": "https://www.javacapital.co/",
+          "source_id": "PFSRC-INV-7addbb02eb292d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7addbb02eb292d-1",
+          "source_url": "https://www.javacapital.co/portfolio",
+          "source_title": "Java Capital India Deep Tech Seed Fund",
+          "source_content_hash": "0f77cdce3f6d6184726a92d13e2fabcf4d854918525ae377345dab77c4584e9f",
+          "quote": "Java Capital India Deep Tech Seed Fund`nPortfolio`nAI & Tools`nQuash`nGenerative AI agents that automate testing and QA for mobile applications.",
+          "quote_hash": "eedbffff4373aab6a29ae228f252a89f97bead02606920ef414d6848b3e9f62e"
+        },
         {
           "source_id": "FISRC-70b20379e494fa2f",
           "source_url": "https://incubees.com/agentic-ai-startup-quash-raised-635k-pre-seed-funding-from-arali-ventures",
@@ -161,7 +188,7 @@
           "quote_hash": "ae7745b4f0a7a1897fc71656c3393b61a2f21aa032a63360425876c54e7bb68d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

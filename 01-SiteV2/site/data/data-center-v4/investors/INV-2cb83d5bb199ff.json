@@ -142,10 +142,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Darwin Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Darwin Ventures官网将其介绍为风险投资母基金管理机构，主要投资美国早期风险投资基金，并覆盖科技、信息技术和医疗健康等领域。",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "投资模式",
+          "value": "风险投资母基金（fund of funds）",
+          "source_id": "PFSRC-2cb83d5bb199ff-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资范围",
+          "value": "美国早期风险投资基金；科技、信息技术、医疗健康",
+          "source_id": "PFSRC-2cb83d5bb199ff-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,8 +165,32 @@
           "source_id": "FISRC-b7d7449114c23ca5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://darwinvc.com/",
+          "url": "https://darwinvc.com/",
+          "source_id": "PFSRC-2cb83d5bb199ff-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-2cb83d5bb199ff-1",
+          "source_url": "https://darwinvc.com/",
+          "source_title": "Home - Darwin Ventures",
+          "source_content_hash": "b3c13f6f37050925337aaf2ea72d7f602c6d6d6f4854106e53a5f98febc0656b",
+          "quote": "Darwin Ventures is a venture capital fund of funds that provides individual and institutional investors (primarily educational endowments and foundations) unique access to investment opportunities that are generally unavailable to most investors.",
+          "quote_hash": "68384e38f2fefa00794ffb61aa641e95279d341ee964a2e0d0abd59ef3e8ef96"
+        },
+        {
+          "source_id": "PFSRC-2cb83d5bb199ff-2",
+          "source_url": "https://darwinvc.com/",
+          "source_title": "Home - Darwin Ventures",
+          "source_content_hash": "b3c13f6f37050925337aaf2ea72d7f602c6d6d6f4854106e53a5f98febc0656b",
+          "quote": "These investments include a diverse group of venture capital partnerships with a focus on US-based early-stage venture capital funds diversified across industry sectors including technology, information technology, and healthcare.",
+          "quote_hash": "cdc0149264d4b386d1b9f799ec342635a45a8e5ad8dfbdf05a00521c697d97cb"
+        },
         {
           "source_id": "FISRC-b7d7449114c23ca5",
           "source_url": "https://www.hpcwire.com/off-the-wire/oxmiq-raises-35m-to-scale-oxcoretm-architecture/",
@@ -164,7 +200,8 @@
           "quote_hash": "f885b1fb938999e03ded403bc6f1587379842bf4acb9ab15ec22174e21777602"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

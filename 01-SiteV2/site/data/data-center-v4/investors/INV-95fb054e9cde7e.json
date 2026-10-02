@@ -188,10 +188,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Human Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Human Capital 官网将其描述为多阶段风险投资公司，并称公司投资于关键产业、与创始人合作组建团队。此处保留官网自述，不延伸为未披露的行业或地域范围。",
+      "coverage_note": "当前档案依据机构官网 About 页面；该页未披露基金规模、完整组合清单或投资回报。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "投资阶段",
+          "value": "官网自述为多阶段风险投资公司。",
+          "source_id": "human_capital_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资与创始人支持",
+          "value": "官网称其投资关键产业公司，并与创始人合作组建团队。",
+          "source_id": "human_capital_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -203,8 +216,24 @@
           "source_id": "FISRC-cbb8abca74aa20f4"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Human Capital",
+          "url": "https://human.capital/",
+          "source_id": "human_capital_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "human_capital_about",
+          "source_url": "https://human.capital/about",
+          "source_title": "Human Capital - About",
+          "source_content_hash": "a9db3f9b25955bd3db2efe861ad0800391ea95d8ced4c998d01786354cf61fd0",
+          "quote": "Human Capital is a multi-stage venture capital firm. We build and invest in companies that define the world’s most critical industries. We partner with founders to assemble teams that create exceptional businesses.",
+          "quote_hash": "764748e0a9e200d1755b60f69066cb5fbfe18a9f431cfb17f15cba71721f0e10"
+        },
         {
           "source_id": "FISRC-3511f7baf76701e3",
           "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
@@ -222,7 +251,7 @@
           "quote_hash": "a3b4476b8d9476b7472566bc6e7eaa67eb85883c646cdda1945d1184488345a0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

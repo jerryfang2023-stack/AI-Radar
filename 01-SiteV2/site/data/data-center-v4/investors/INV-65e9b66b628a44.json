@@ -139,10 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Quantum Leap Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位与投资方向来自 Quantum Leap Ventures 官方网站；未找到可由机构或被投公司一手资料核验的 dodoAI 交易披露，未将这笔融资归入其组合。",
+      "summary": "Quantum Leap Ventures 官网称其面向全球早期深科技创业公司，关注医疗、气候与可持续发展、金融和教育领域。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "早期。",
+          "source_id": "PFSRC-INV-65e9b66b628a44-1"
+        },
+        {
+          "field": "sector_focus",
+          "label": "官网自述的关注领域",
+          "value": "医疗、气候与可持续发展、金融、教育及深科技。",
+          "source_id": "PFSRC-INV-65e9b66b628a44-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +170,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PFSRC-INV-65e9b66b628a44-1",
+          "source_url": "https://ql-vc.com/",
+          "source_title": "Quantum Leap Venture &#8211; Discover. Invest. Rise to new heights",
+          "source_content_hash": "f168747f57c745119f28eba46247603e2ac33f98e72869e966e1d179ccb7c1ef",
+          "quote": "Quantum Leap Ventures actively identifies and supports early stage startups building deep technology powered solutions for problems in healthcare, climate & sustainability, finance and education.",
+          "quote_hash": "ec798db5cc41cd1b0d11b338828a25768d118135040287fb4ae436a6225d96a0"
+        },
+        {
           "source_id": "FISRC-93ed43eb62fcbfea",
           "source_url": "https://coverager.com/dodoai-raises-%c2%a5280m-seed-for-enterprise-ai-governance-platform/",
           "source_title": "dodoAI 获 2.8 亿日元种子轮融资，用于企业 AI 治理平台",
@@ -161,7 +186,7 @@
           "quote_hash": "62da8c66dda53abf2ba57c8cbbcf5742f4009ee5257be0daad0a6bdabaf7224b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

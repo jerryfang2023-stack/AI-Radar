@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Uncorrelated Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Uncorrelated 官网自述投资基础设施、软件和硬件，并披露基金及组合规模；Reo.Dev 官方页面确认其参与该公司 Series A。规模为机构自报数据。",
+      "summary": "Uncorrelated Ventures 是一家投资基础设施、软件和硬件领域的风险投资机构。官网自述管理三支活跃基金、资产管理规模超过 7.5 亿美元并早期投资 100 多家公司；Reo.Dev 的融资公告将其列为 Series A 参与方。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "基础设施、软件和硬件。",
+          "source_id": "PFSRC-INV-7d770249928e81-1"
+        },
+        {
+          "field": "fund_scale",
+          "label": "官网自述的基金规模",
+          "value": "超过 7.5 亿美元 AUM，分布于三支活跃基金；官网称其早期投资了 100 多家公司。",
+          "source_id": "PFSRC-INV-7d770249928e81-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Reo.Dev 官方融资页面列出 Uncorrelated Ventures 为其 Series A 参与方。",
+          "source_id": "PFSRC-INV-7d770249928e81-2"
+        },
         {
           "description": "融资来源记录：Reo.Dev · A轮 · 2026-07-16 · 本轮参投 · 1130 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ca3d343739410c39"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Uncorrelated Ventures 官网",
+          "value": "https://uncorrelated.vc/",
+          "url": "https://uncorrelated.vc/",
+          "source_id": "PFSRC-INV-7d770249928e81-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7d770249928e81-1",
+          "source_url": "https://uncorrelated.vc/",
+          "source_title": "Uncorrelated",
+          "source_content_hash": "dc4664d6da1d8b8276171427ec4ac6d021538689a3b6dbbcd9c031aad7f0971a",
+          "quote": "We invest in infrastructure`nSoftware and Hardware`nPortfolio`n$750M+ AUM across three active funds invested early in 100+ companies",
+          "quote_hash": "9104fef3c1b5a0e12d508a55c2b964b9bded16759274819c139609d0cefa2263"
+        },
+        {
+          "source_id": "PFSRC-INV-7d770249928e81-2",
+          "source_url": "https://www.reo.dev/blog/reo-dev-series-a",
+          "source_title": "Reo.Dev raises $11.3M Series A to scale AI signals for Companies Selling to Engineering Teams",
+          "source_content_hash": "8435ca09710b5552e20040aa179587077eb4a02e7426660df582a6a57bfe99c4",
+          "quote": "Uncorrelated Ventures joined",
+          "quote_hash": "84591303a028295973619d1f752d92df1a24485e7dc79509929f3f390deeea16"
+        },
         {
           "source_id": "FISRC-ca3d343739410c39",
           "source_url": "https://www.reo.dev/blog/reo-dev-series-a",
@@ -161,7 +202,7 @@
           "quote_hash": "84591303a028295973619d1f752d92df1a24485e7dc79509929f3f390deeea16"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TQ Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2025-10-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构方法来自 TQ Ventures 官网自述；组合案例仅列官网公开的 Adam 一例，不能据此视作完整组合。",
+      "summary": "TQ Ventures 官网介绍其从投资基本原则出发、深度支持创始人的方法；官网组合页将 Adam 列为 2025 年 Enterprise AI 公司。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资方法",
+          "value": "从投资基本原则出发，与有前景的创始人建立深入合作关系。",
+          "source_id": "PFSRC-INV-56c0edb4a13d2e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TQ Ventures 官网组合页将 Adam 列为 2025 年 Enterprise AI 公司。",
+          "source_id": "PFSRC-INV-56c0edb4a13d2e-2"
+        },
         {
           "description": "融资来源记录：Adam · 种子轮 · 2025-10-31 · 本轮领投 · $4.1 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1e12e93a65d54b9a"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-56c0edb4a13d2e-1",
+          "source_url": "https://tq.vc/about",
+          "source_title": "About | TQ Ventures",
+          "source_content_hash": "b2314a767f29099fb516b398362f960d762d2d6a66cf4044143106aa81b10392",
+          "quote": "they built TQ from first principles around the simple question: how do we identify, partner with, and support the world’s most promising founders?",
+          "quote_hash": "fd8525d4678b224a45700a7e9147083e509fc98319c85a25b2aba73b34c9f4c1"
+        },
+        {
+          "source_id": "PFSRC-INV-56c0edb4a13d2e-2",
+          "source_url": "https://tq.vc/companies",
+          "source_title": "Companies | TQ Ventures",
+          "source_content_hash": "68bd5116b3f5bd5c39e5691bdda4c1eb87bad2f114731bdb6ad7fc68b177a19d",
+          "quote": "Adam Enterprise AI North America 2025",
+          "quote_hash": "3b741ed0178c29348c49c2f3fcd9b59ea2f5a7c054257db188be6347371cb1b9"
+        },
         {
           "source_id": "FISRC-1e12e93a65d54b9a",
           "source_url": "https://techcrunch.com/2025/10/31/yc-alum-adam-raises-4-1m-to-turn-viral-text-to-3d-tool-into-ai-copilot/",
@@ -161,7 +192,7 @@
           "quote_hash": "21d97208a2c28f6eeba638be586f88b6921309aa9716c17d37855ca227b61c19"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

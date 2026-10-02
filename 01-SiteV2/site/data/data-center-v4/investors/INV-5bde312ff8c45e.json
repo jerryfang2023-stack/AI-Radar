@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Koinos Capital SGR 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略和 Lapi 案例来自 Koinos Capital SGR 官网；Compri 的 pre-seed 投资方记录另由 Caplight 列名，本档案未将其扩写为已由发行方核验的事实。",
+      "summary": "Koinos Capital SGR 官网将其描述为意大利多策略投资公司，风险投资策略聚焦从 pre-seed 到 Series A 的意大利创业团队；官网新闻记录其收购 Lapi 多数股权。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资策略",
+          "value": "风险投资支持具有全球目标的意大利早期创业公司，同时运营私募股权和私募市场策略。",
+          "source_id": "PFSRC-INV-5bde312ff8c45e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Koinos Capital 官网新闻称其收购 Lapi 多数股权，以建立意大利热成型领域产业平台。",
+          "source_id": "PFSRC-INV-5bde312ff8c45e-2"
+        },
         {
           "description": "融资来源记录：Compri · 种子轮 · 2026-06-24 · 种子前轮参投 · 320万欧元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf02c2eec77471e8"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-5bde312ff8c45e-1",
+          "source_url": "https://www.koinoscapital.com/",
+          "source_title": "Koinos Capital | The Entrepreneurs&#x27; Investment Company",
+          "source_content_hash": "4c7c4fbd9f8b677f5b4ba8df4d75b9f745e8322c377e65a628ce4a65e28371de",
+          "quote": "Venture Capital Italian founders with global ambition, from pre-seed to Series A",
+          "quote_hash": "0037704fe884f04b3515a2e013e19e273c21a6b0ea1a069be2803b8e200105a9"
+        },
+        {
+          "source_id": "PFSRC-INV-5bde312ff8c45e-2",
+          "source_url": "https://www.koinoscapital.com/news",
+          "source_title": "Newsroom | Koinos Capital",
+          "source_content_hash": "e0d9ad915199f798697cfe441c13ce9e73ed6b789736c9700eac03f3273c37cf",
+          "quote": "Koinos Capital acquires a majority stake in Lapi, to establish an Italian centre of excellence in the thermoforming sector",
+          "quote_hash": "59ef6003d9e3c35d9ce7d802add99e9b53d83a2669107ffeb2598059517a2223"
+        },
         {
           "source_id": "FISRC-cf02c2eec77471e8",
           "source_url": "https://www.caplight.com/company/compri",
@@ -161,7 +192,7 @@
           "quote_hash": "e88c31164062bf4fe5a79ac462efdd6bf3e8d7e058335daae1cfe010904a2c7b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

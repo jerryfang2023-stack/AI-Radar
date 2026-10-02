@@ -140,19 +140,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Skywell Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Skywell Capital Partners 官网确认机构名称、风险投资定位与领域方向；Alta 官方融资新闻稿使用“Skywell Capital”简称列为参投方，按名称与机构官网匹配归档。",
+      "summary": "Skywell Capital Partners 是多阶段风险投资机构，官网列出 fintech、SaaS、AI 和 marketplace 等关注领域。Alta 官方 2026 年 7 月融资公告将 Skywell Capital 列为 2500 万美元 A 轮参投方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "多阶段。",
+          "source_id": "PFSRC-INV-6ae4243051a533-1"
+        },
+        {
+          "field": "sector_focus",
+          "label": "官网列出的投资领域",
+          "value": "Fintech、SaaS、AI、marketplaces 等。",
+          "source_id": "PFSRC-INV-6ae4243051a533-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Alta 官方融资公告将 Skywell Capital 列为其 2026 年 7 月 2500 万美元 A 轮参投方。",
+          "source_id": "PFSRC-INV-6ae4243051a533-2"
+        },
         {
           "description": "融资来源记录：Alta · A轮 · 2026-07-08 · 本轮参投 · 2500万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9661f69b0104e76e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Skywell Capital Partners 官网",
+          "value": "https://skywellcap.com/",
+          "url": "https://skywellcap.com/",
+          "source_id": "PFSRC-INV-6ae4243051a533-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-6ae4243051a533-1",
+          "source_url": "https://skywellcap.com/",
+          "source_title": "SkyWell",
+          "source_content_hash": "877bdc2d072336aa6ec4e035acbd3b038e66c6e4be1eaf61e13f28893750361b",
+          "quote": "Skywell Capital Partners is a multi-stage venture capital firm that invests in entrepreneurs with visionary ideas around the globe.",
+          "quote_hash": "779680e70b50937b4d439e98c1943769456e3f9d2616e49728fdbe0a1dec617a"
+        },
+        {
+          "source_id": "PFSRC-INV-6ae4243051a533-2",
+          "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
+          "source_title": "Alta Raises $25M to Redefine the Go-to-Market Architecture for Revenue Teams",
+          "source_content_hash": "f7ed101070b924a88e6a1a3a6b612f9ceb60c876acd0949ed7b46d51e1c4ae90",
+          "quote": "with participation from Mindset Ventures, Skywell Capital, LeumiTech77 and existing investors Entrée Capital, Target Global, and Verissimo Ventures",
+          "quote_hash": "bb6bdd242d277957bb00a906cb2f149887d14dd972545d84aa35fd2d5e951977"
+        },
         {
           "source_id": "FISRC-9661f69b0104e76e",
           "source_url": "https://prnewswire.com/news-releases/alta-raises-25m-to-redefine-the-go-to-market-architecture-for-revenue-teams-302820618.html",
@@ -162,7 +207,7 @@
           "quote_hash": "bb6bdd242d277957bb00a906cb2f149887d14dd972545d84aa35fd2d5e951977"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

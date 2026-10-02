@@ -132,19 +132,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Shanghai State-owned Capital Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "上海国投官网确认法律主体、定位及截至 2026 年 6 月的自报数据。KR Asia 报道把上海国投与其关联基金一并列入阶跃星辰投资方，但没有说明具体投资载体，档案保留这一归属限制。",
+      "summary": "上海国有资本投资有限公司（Shanghai State-owned Capital Investment Co., Ltd.，简称上海国投）是上海市属国有资本投资运营平台，官网定位为“基金管理+创新孵化”，重点投早、投小、投长期和投硬科技。官网披露截至 2026 年 6 月基金主动管理规模近 3000 亿元、投资企业超过 3000 家。",
+      "facts": [
+        {
+          "field": "platform_role",
+          "label": "官网披露的平台定位",
+          "value": "上海市属三大国有资本投资运营平台之一。",
+          "source_id": "PFSRC-INV-828a20b1754f8e-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "投早、投小、投长期、投硬科技。",
+          "source_id": "PFSRC-INV-828a20b1754f8e-1"
+        },
+        {
+          "field": "fund_scale",
+          "label": "官网披露的主动管理规模",
+          "value": "近 3000 亿元，数据截至 2026 年 6 月。",
+          "source_id": "PFSRC-INV-828a20b1754f8e-1"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露的投资企业数量",
+          "value": "超过 3000 家，数据截至 2026 年 6 月。",
+          "source_id": "PFSRC-INV-828a20b1754f8e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "KR Asia 报道称阶跃星辰投资方包括上海国有资本投资有限公司及关联基金；报道没有区分具体基金或投资主体，因此不将其表述为已确认的直接投资载体。",
+          "source_id": "PFSRC-INV-828a20b1754f8e-2"
+        },
         {
           "description": "融资来源记录：StepFun · 历史轮次未披露 · B轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e424026c5a172d4b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "上海国投官网",
+          "value": "https://www.sh-ssci.com/index.html",
+          "url": "https://www.sh-ssci.com/index.html",
+          "source_id": "PFSRC-INV-828a20b1754f8e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-828a20b1754f8e-1",
+          "source_url": "https://www.sh-ssci.com/index.html",
+          "source_title": "上海国有资本投资有限公司",
+          "source_content_hash": "8fc45d97f01bc86cf526c62dd973a0391aa7c80988c877b6858be8ffe4874cc4",
+          "quote": "定位“基金管理+创新孵化”，是专注投早、投小、投长期、投硬科技的国有资本投资运营专业平台。",
+          "quote_hash": "c5bc1f19fa522f4bbf8a054222d69452e848300df22c220c3e70e5053b8f4a42"
+        },
+        {
+          "source_id": "PFSRC-INV-828a20b1754f8e-2",
+          "source_url": "https://kr-asia.com/as-ai-consolidates-what-makes-stepfun-worth-a-rmb-5-billion-raise",
+          "source_title": "As AI consolidates, what makes StepFun worth a RMB 5 billion raise?",
+          "source_content_hash": "a63b2896a72c37285bc5d0925ff8b58750082bea14c30d876d257eb7ff6d2ad2",
+          "quote": "Investors included Shanghai State-owned Capital Investment and affiliated funds, Hong Kong Investment Corporation, Tencent, and returning shareholders.",
+          "quote_hash": "445fdeeca39f08c8f2f991b4cfb79b002bd33e062a19187d0eb70b498ca5e3ea"
+        },
         {
           "source_id": "FISRC-e424026c5a172d4b",
           "source_url": "https://kr-asia.com/as-ai-consolidates-what-makes-stepfun-worth-a-rmb-5-billion-raise",
@@ -154,7 +207,7 @@
           "quote_hash": "445fdeeca39f08c8f2f991b4cfb79b002bd33e062a19187d0eb70b498ca5e3ea"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

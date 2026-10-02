@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Delta-v Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资策略来自 Delta-v 官方网站；HiddenLayer 发行方公告披露 Delta-v 领投一笔 B 轮。",
+      "summary": "Delta-v Capital 官网称其与科技企业领导者合作支持企业下一阶段增长；HiddenLayer 官方公告称 Delta-v 领投其 1 亿美元 B 轮。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资方式",
+          "value": "与科技企业领导者合作，支持企业进入下一阶段增长。",
+          "source_id": "PFSRC-INV-4b4a8d38bd2159-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "HiddenLayer 官方公告称 Delta-v Capital 领投其 1 亿美元 Series B。",
+          "source_id": "PFSRC-INV-4b4a8d38bd2159-2"
+        },
         {
           "description": "融资来源记录：HiddenLayer · 多轮融资 · 2026-09-02 · 本轮领投 · $100M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d8f7e5310c5b9a5e"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-4b4a8d38bd2159-1",
+          "source_url": "https://www.deltavcapital.com/",
+          "source_title": "Home | Delta-v",
+          "source_content_hash": "c64b0f8974a12a64862f4b6f8d8f4d9327dba8816786b68f154ec725f13ea863",
+          "quote": "We partner with visionary leaders of technology companies to accelerate their next phase of growth",
+          "quote_hash": "02f1f9f759b24e6542ab9b29e536ad4c96a076f241939fcf1604ed22874013e0"
+        },
+        {
+          "source_id": "PFSRC-INV-4b4a8d38bd2159-2",
+          "source_url": "https://www.prnewswire.com/news-releases/hiddenlayer-raises-100m-series-b-to-advance-trustworthy-ai-302867783.html",
+          "source_title": "HiddenLayer Raises $100M Series B to Advance Trustworthy AI",
+          "source_content_hash": "3a2b6a44ca8388dcbb4b6bd10c2ac8bbd6d421b1e4c89c8c8ebd32058df8c5d8",
+          "quote": "funding round led by Delta-v Capital",
+          "quote_hash": "24b6733ad3aed84037bae9269e5479a569ebd7ce965cf56443ee242b18593182"
+        },
         {
           "source_id": "FISRC-d8f7e5310c5b9a5e",
           "source_url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments",
@@ -161,7 +192,7 @@
           "quote_hash": "54f3eadb85ed75ef25adb2a0d0b6630b6b583558f4114c2b3a95040a92451316"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

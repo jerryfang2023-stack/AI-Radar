@@ -140,12 +140,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Future Back Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构策略来自 Future Back Ventures 官网；Seltz 官方公告披露一笔种子轮参投，不代表完整投资组合。",
+      "summary": "Future Back Ventures 是 Bain & Company 旗下的早期风险投资基金，官网称其投资由 Bain 校友创立或领导的初创公司；Seltz 官方公告列出其参与 1,250 万美元种子轮。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资策略",
+          "value": "Bain & Company 旗下基金，投资由 Bain 校友创立或领导的早期初创公司。",
+          "source_id": "PFSRC-INV-48b33b2e0ecd38-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Seltz 官方公告称 Future Back Ventures 参与其 1,250 万美元种子轮。",
+          "source_id": "PFSRC-INV-48b33b2e0ecd38-2"
+        },
         {
           "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮参投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05007e2b6b43ffda"
@@ -153,6 +168,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-48b33b2e0ecd38-1",
+          "source_url": "https://www.futureback.vc/about",
+          "source_title": "About",
+          "source_content_hash": "e0e0712bf6dbc95522f4998e670be5f1b8e4c354c814c6f5a2d33d50796a5b09",
+          "quote": "We are a venture fund within Bain & Company that invests in early-stage, promising start-ups founded or led by Bain alumni.",
+          "quote_hash": "4fc65fbc61360f14a0e2eccb577fd9a85910ecbe1e4c4d1f24ffb3e71de4c42e"
+        },
+        {
+          "source_id": "PFSRC-INV-48b33b2e0ecd38-2",
+          "source_url": "https://seltz.ai/blog/seed-round-announcement",
+          "source_title": "We've raised $12.5M to build state-of-the-art Web Search for agents | Seltz Blog",
+          "source_content_hash": "03064fdb48b4a619fdd6bde5c72c651a30f855d325c75149578d553b6fbc41c5",
+          "quote": "and Future Back Ventures, alongside angels from Google, Ramp, Tako, and Hugging Face.",
+          "quote_hash": "9e7b1b18e1c7b578c6005aec32a35dc093f622357f4c2a3fa737f07a731bef2d"
+        },
         {
           "source_id": "FISRC-05007e2b6b43ffda",
           "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
@@ -162,7 +193,7 @@
           "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

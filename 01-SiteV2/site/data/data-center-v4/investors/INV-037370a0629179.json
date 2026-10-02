@@ -140,9 +140,16 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Bell Ventures Inc. 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Relativity Networks 的融资公告将 Bell Ventures Inc. 列为该轮新投资者之一；现有一手来源仅支持这项投资活动，未形成机构完整背景。",
+      "coverage_note": "仅有被投公司融资通稿可核实该机构名称与一次活动。Bell Canada 的 Bell Ventures 页面拒绝访问，团队、投资策略与组合信息待补。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "已披露投资活动",
+          "value": "Relativity Networks 的融资公告将 Bell Ventures Inc. 列入该轮新投资者。",
+          "source_id": "relativity_round"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +158,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "目前只确认一项融资活动，尚无足够来源整理机构团队或策略。",
       "sources": [
+        {
+          "source_id": "relativity_round",
+          "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
+          "quote": "including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC.",
+          "source_title": "Relativity Networks Raises $22M and Lands $40M Hyperscaler Contract to Power the AI Geography Era",
+          "source_content_hash": "7b42a9ed074f0ac1a25a3a1f676ca8b7f6d3029b8a4a39f7ad1377b9d958b911",
+          "quote_hash": "985c62b930ff3b44ee89d8b5c5962826958a05c97df400d1b662c0270a9bec22"
+        },
         {
           "source_id": "FISRC-e32f49cf414731d3",
           "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
@@ -161,7 +180,7 @@
           "quote_hash": "bdfe1429f66dc6ad35673f77ca8328b584d20f41dbd406adbf0ca36199f7c75f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

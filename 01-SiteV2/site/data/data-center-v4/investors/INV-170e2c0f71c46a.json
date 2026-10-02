@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "King River Capital 当前按“投资组织”收录。最新融资披露记录日期为 2025-05-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "King River Capital 官网称其在北美和澳大利亚投资科技企业；其风险投资基金覆盖早期至成长期，重点为软件公司。",
+      "coverage_note": "本档案按官网当前“Venture fund”介绍归纳，不将其 Digital Assets Fund 与一般风险投资策略合并。",
+      "facts": [
+        {
+          "field": "investment_geography",
+          "label": "主要投资地域",
+          "value": "官网称其创立目标之一是在美国和澳大利亚寻找科技投资机会。",
+          "source_id": "kingriver_story"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段与方向",
+          "value": "官网称其风险投资基金面向早期至成长期、主要位于北美或澳大利亚的软件企业。",
+          "source_id": "kingriver_fund"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网称其优先领投或共同领投，也可跟投，主要使用优先股投资。",
+          "source_id": "kingriver_fund"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,32 @@
           "source_id": "FISRC-e2076aaadf946323"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "King River Capital",
+          "url": "https://kingriver.co/",
+          "source_id": "kingriver_story"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kingriver_story",
+          "source_url": "https://kingriver.co/approach/",
+          "quote": "We formed King River Capital with two goals in mind: to source extraordinary technology investments in the US and Australia",
+          "source_title": "Approach - King River",
+          "source_content_hash": "fa9b32d8d9e181ce6eecc574939378085d8399e6ec44fc12d3fe1e8c4695f073",
+          "quote_hash": "a828edf506ab99cbe1702ec073eeadab82d747f40a0030c403a5ee94beb70f12"
+        },
+        {
+          "source_id": "kingriver_fund",
+          "source_url": "https://kingriver.co/approach/",
+          "quote": "Our venture fund is earmarked for early to growth stage software companies primarily based in North America or Australia.",
+          "source_title": "Approach - King River",
+          "source_content_hash": "fa9b32d8d9e181ce6eecc574939378085d8399e6ec44fc12d3fe1e8c4695f073",
+          "quote_hash": "47b197cf0d63cc1e837e73125a733ee9192f63e897ac23d92f33ded80c9c3db8"
+        },
         {
           "source_id": "FISRC-e2076aaadf946323",
           "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
@@ -161,7 +204,7 @@
           "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

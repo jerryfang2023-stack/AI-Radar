@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Red Cell Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Red Cell Partners 官网称其以投资与孵化相结合的模式，建设并支持医疗、国家安全和网络安全领域的科技公司。",
+      "coverage_note": "机构将自己定位为投资与孵化混合模式；公司数量、融资与孵化数据均为官方自述，未视为独立审计业绩。",
+      "facts": [
+        {
+          "field": "organization_model",
+          "label": "机构模式",
+          "value": "官网文章称 Red Cell 不是典型早期VC或孵化器，而是两者的混合模式。",
+          "source_id": "redcell_model"
+        },
+        {
+          "field": "investment_focus",
+          "label": "业务方向",
+          "value": "官网介绍其建设并投资医疗、国家安全和网络安全相关的高增长科技公司。",
+          "source_id": "redcell_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,32 @@
           "source_id": "FISRC-9d8b3693de0579b6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Red Cell Partners",
+          "url": "https://www.redcellpartners.com/",
+          "source_id": "redcell_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "redcell_model",
+          "source_url": "https://www.redcellpartners.com/perspectives/why-red-cell-why-now/",
+          "quote": "Red Cell is not a typical early-stage venture capital investment firm or incubator. It is a hybrid of the two; an asset class onto itself, if you will.",
+          "source_title": "Why Red Cell, Why Now - Red Cell Partners",
+          "source_content_hash": "d93dc7f23b2b8140edd49e9c7ce4bde476b6a3a929d4893bae8f82b6f2d4e77d",
+          "quote_hash": "80849404af7b91d392256a2cc1bc36012cca4db5228a416aaebf9c588634f546"
+        },
+        {
+          "source_id": "redcell_home",
+          "source_url": "https://www.redcellpartners.com/",
+          "quote": "We build rapidly scalable technology companies that are bringing revolutionary advancement to market in healthcare and national security.",
+          "source_title": "Red Cell Partners | Impact Through Innovation",
+          "source_content_hash": "43736b2aa594df49b2b90989f590a5fec26cd6b51381d5c2a4f1731c9fa1de64",
+          "quote_hash": "9fa840353e93204f0e880c1df9e9af8a96dbacd71a32b7920e9a33acc5503780"
+        },
         {
           "source_id": "FISRC-9d8b3693de0579b6",
           "source_url": "https://pulse2.com/trase-raises-107-million-seed-round-led-by-arch-venture-partners/",
@@ -161,7 +198,7 @@
           "quote_hash": "e9e43a522d75bb5eb50abdce4cd715c9e12a2027dabbb21a7f777691a80ef35c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

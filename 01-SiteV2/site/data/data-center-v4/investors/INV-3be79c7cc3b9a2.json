@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Saison Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "依据 Saison International 官方页面和 AIsa 发行方融资公告；投资策略采用集团官网自述口径。",
+      "summary": "Saison International 官网称 Saison Capital 是其企业风险投资部门，投资新兴市场早期公司；AIsa 官方融资公告将其列为种子轮参投机构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述的投资方向",
+          "value": "新兴市场早期企业；官网提及金融科技、电商和 Web3",
+          "source_id": "PFSRC-INV-3be79c7cc3b9a2-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "AIsa 官方公告将 Saison Capital 列为种子轮参投机构。",
+          "source_id": "PFSRC-INV-3be79c7cc3b9a2-1"
+        },
         {
           "description": "融资来源记录：AIsa · 种子轮 · 2026-07-07 · 本轮参投 · 650万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-199e9e6224efb819"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-3be79c7cc3b9a2-1",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html",
+          "source_title": "AIsa Raises $6.5M, Co-Led by Alibaba and Tribe Capital, to",
+          "source_content_hash": "c4cff2ed434b576971760d43e3c9698c8e0dff815576c244f42b833cde57d79c",
+          "quote": "with participation from Draper Associates, Sumitomo Corporation, Saison Capital and other investors",
+          "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
+        },
+        {
+          "source_id": "PFSRC-INV-3be79c7cc3b9a2-2",
+          "source_url": "https://saison-indonesia.com/impact/",
+          "source_title": "Saison International | Driving Sustainable Impact and Inclusion Across Markets",
+          "source_content_hash": "82fc182fa6b4b738fa787fe55d73ebaa7876ebfc445d2a0c25f41468bac932f5",
+          "quote": "Saison Capital, the corporate venture capital arm of Saison International, invests in promising early-stage companies in emerging markets. Saison Capital operates with a clear innovation mandate",
+          "quote_hash": "6bd23a56725b549a8ca547b6f0a73ad405556a97f72c16dc2ec9f5abff0a6568"
+        },
         {
           "source_id": "FISRC-199e9e6224efb819",
           "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323663/0/en/AIsa-Raises-6-5M-Co-Led-by-Alibaba-and-Tribe-Capital-to-Build-the-Transaction-Network-for-AI-Agents.html",
@@ -161,7 +192,7 @@
           "quote_hash": "87aab5143043930ac5e2cf2eb148ce1fbb223b98f5d5cf807eb2cd0c27cc865d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

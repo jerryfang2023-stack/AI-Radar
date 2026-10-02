@@ -139,19 +139,63 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Zeno Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Zeno 官网介绍其风险投资平台通过支持创业者打造企业，并列有日内瓦、苏黎世和旧金山办公室。官网组合页列出 Trace，描述为连接人与 AI 智能体的工作流自动化平台。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "Investing in extraordinary individuals to build exceptional companies.",
+          "source_id": "zeno_approach"
+        },
+        {
+          "field": "offices",
+          "label": "办公室",
+          "value": [
+            "Geneva",
+            "Zurich",
+            "San Francisco"
+          ],
+          "source_id": "zeno_approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网组合页列出 Trace，并介绍其工作流自动化平台可在人员与 AI 智能体之间协调任务。",
+          "source_id": "zeno_trace"
+        },
         {
           "description": "融资来源记录：Trace · 种子轮 · 2026-02-26 · 本轮参投 · $3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ea2a22594e77fd6a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.zenopartners.com/",
+          "url": "https://www.zenopartners.com/",
+          "source_id": "zeno_approach"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zeno_approach",
+          "source_url": "https://www.zenopartners.com/our-activities/",
+          "quote": "Investing in extraordinary individuals to build exceptional companies. Offices Geneva Zurich San Francisco",
+          "source_title": "Our Businesses - Zeno",
+          "source_content_hash": "ec5e2c1b7032ca92295babb1df225512f3690f156ab0271a7d42e9a110af5d93",
+          "quote_hash": "1e42b23ec36bc93e1bd64979e919fe101491020cc59e65acfc4af081b0ad4f05"
+        },
+        {
+          "source_id": "zeno_trace",
+          "source_url": "https://www.zenopartners.com/portfolio/",
+          "quote": "TRACE Trace is an AI-powered workflow automation platform that coordinates tasks between humans and AI agents.",
+          "source_title": "Portfolio - Zeno",
+          "source_content_hash": "2d00bb74c66d327eac896500ec8596db32c282c545bc4a73bc313543fc43e65f",
+          "quote_hash": "883556d80ab3c52c903189c69c0d3864b4da76ad315cce2cc004a6c474ba5084"
+        },
         {
           "source_id": "FISRC-ea2a22594e77fd6a",
           "source_url": "https://techcrunch.com/2026/02/26/trace-raises-3-million-to-solve-the-agent-adoption-problem/",
@@ -161,7 +205,8 @@
           "quote_hash": "0ced4359dfcdc0e820178707640abbac3d1d212857810ea67c3616cb06ffb902"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

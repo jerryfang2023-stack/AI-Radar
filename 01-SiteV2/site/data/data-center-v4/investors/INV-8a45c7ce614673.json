@@ -133,19 +133,78 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Rajiv Gupta 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "Axiamatic官网将 Rajiv Gupta 列为联合创始人兼CEO并介绍其创业经历；Sycamore官网将其列为天使投资人。",
+      "summary": "Rajiv Gupta 是 Axiamatic 联合创始人兼CEO，曾共同创立 Skyhigh Networks，并参与创立 Confluent Software 和 Securent。Sycamore官方融资公告将他列为该公司的天使投资人之一。",
+      "current_roles": [
+        {
+          "title": "联合创始人兼CEO",
+          "organization": "Axiamatic",
+          "source_id": "PFSRC-INV-8a45c7ce614673-1"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Axiamatic",
+          "title": "联合创始人兼CEO",
+          "period": "当前（官网资料）",
+          "description": "Axiamatic官网将 Rajiv Gupta 列为联合创始人兼CEO。",
+          "source_id": "PFSRC-INV-8a45c7ce614673-1"
+        },
+        {
+          "organization": "Skyhigh Networks",
+          "title": "联合创始人",
+          "period": "官网未注明",
+          "description": "Axiamatic官网称 Rajiv Gupta 与团队创建了 Skyhigh Networks，该公司后来被 McAfee 收购。",
+          "source_id": "PFSRC-INV-8a45c7ce614673-1"
+        },
+        {
+          "organization": "Confluent Software",
+          "title": "联合创始人",
+          "period": "官网未注明",
+          "description": "Axiamatic官网称 Rajiv Gupta 共同创立并带领该公司完成退出，Oracle 后来收购该公司。",
+          "source_id": "PFSRC-INV-8a45c7ce614673-1"
+        },
+        {
+          "organization": "Securent",
+          "title": "联合创始人",
+          "period": "官网未注明",
+          "description": "Axiamatic官网称 Rajiv Gupta 共同创立并带领该公司完成退出，Cisco 后来收购该公司。",
+          "source_id": "PFSRC-INV-8a45c7ce614673-1"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Axiamatic官网回顾 Rajiv Gupta 在云安全、企业软件领域的创业经历，并将他列为 Axiamatic 联合创始人兼CEO。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
       "track_record": [
+        {
+          "description": "Sycamore官方融资公告将 Rajiv Gupta（Axiamatic联合创始人）列入其天使投资人。",
+          "source_id": "PFSRC-INV-8a45c7ce614673-2"
+        },
         {
           "description": "融资来源记录：Sycamore · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-8a45c7ce614673-1",
+          "source_url": "https://www.axiamatic.com/company",
+          "source_title": "Company | Axiamatic",
+          "source_content_hash": "da0d9b7c24193944f831a53c3e0fa12f148a13f8fdf4444f9274f8cac54e361a",
+          "quote": "Rajiv co-founded and led two more successful exits, including Confluent Software (acquired by Oracle) and Securent (acquired by Cisco).",
+          "quote_hash": "0c8239d347e574e8b11923ac575e3c46c70c51eb6aa243b54ee16a2e8dce2a37"
+        },
+        {
+          "source_id": "PFSRC-INV-8a45c7ce614673-2",
+          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
+          "source_title": "Sycamore Raises $65M to Build the Trusted Agent Operating System for the Enterprise",
+          "source_content_hash": "ebd89f06f7aac0e52ecdbbea0e88cbdee116486643a65781b7af4a27c01c9f44",
+          "quote": "and Rajiv Gupta (co-founder of Axiamatic).",
+          "quote_hash": "c5a1417d6abc1e2a5f1de6cc974e37f65254523f056e923207d91ab6ffd1d56e"
+        },
         {
           "source_id": "FISRC-d354011359557f2f",
           "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
@@ -155,7 +214,7 @@
           "quote_hash": "5ca5f6ea1e915256d0866eb19cdffd80e0807de013c1a938087ba67ad57c7efd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

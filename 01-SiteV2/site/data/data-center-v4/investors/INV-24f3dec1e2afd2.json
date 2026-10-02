@@ -140,19 +140,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Primary VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Primary VC 是纽约起家的早期风险投资机构，官网记载其 2015 年成立，投资阶段覆盖公司创立初期至种子轮，并通过运营团队为组合公司提供支持。",
+      "coverage_note": "基金规模和投资业绩按 Primary 官网自述；Etched 案例为机构选列记录，不代表完整组合或回报。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网将策略描述为从公司创立初期至种子轮，覆盖全球项目。",
+          "source_id": "primary_approach"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2015 年。",
+          "source_id": "primary_approach"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "纽约。",
+          "source_id": "primary_approach"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2015",
+          "description": "Primary 官网记载机构于 2015 年成立。",
+          "source_id": "primary_approach"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Primary 官网称其领投 Etched 种子轮，并在其后每轮继续投资；这是机构公开披露的单一组合案例。",
+          "source_id": "primary_etched"
+        },
         {
           "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投 · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41379635293a6bc8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Primary VC",
+          "url": "https://www.primary.vc/",
+          "source_id": "primary_approach"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "primary_approach",
+          "source_url": "https://www.primary.vc/approach",
+          "quote": "Founded 2015 Stage Inception to Seed HQ NYC",
+          "source_title": "Approach",
+          "source_content_hash": "e00e32e0b6c92b0c08eecc607bad5b026f3074554dc6c6588df36423d2d16dd1",
+          "quote_hash": "2c4d24791f416afe62ea8f6c71866832c690fe805a2955937d94deee1df333d3"
+        },
+        {
+          "source_id": "primary_etched",
+          "source_url": "https://www.primary.vc/articles/why-we-invested-in-etched-in-every-round",
+          "quote": "Primary led the seed round less than 40 months ago",
+          "source_title": "Why we invested in Etched in every round",
+          "source_content_hash": "a1e8e3702089eb88d5a529bfa7d4f35f25683d698b925787ddbd9b17130f3dba",
+          "quote_hash": "5e7fab6e94ce75518418b09816b0ccaa35e43066dfc94edc06d244516b98275c"
+        },
         {
           "source_id": "FISRC-41379635293a6bc8",
           "source_url": "https://www.mitsloanme.com/article/nvidia-rival-etched-steps-out-of-stealth-with-5b-valuation/",
@@ -162,7 +215,7 @@
           "quote_hash": "8a6562666516580b1caa4a5d94a4d08ad77dc1a7f457799e74cb1999cf57de54"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

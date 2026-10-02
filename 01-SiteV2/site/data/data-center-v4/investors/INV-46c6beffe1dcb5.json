@@ -139,12 +139,33 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Sunflower Capital 当前按“投资组织”收录。最新融资披露记录日期为 2025-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "早期投资策略来自 Sunflower Capital 官网自述，E2B 融资活动来自发行方公告。",
+      "summary": "Sunflower Capital 官网自述其在最早期支持建设现代企业、关键产业和实体经济基础设施的团队，并称会在创始人写下第一行代码前提供首笔投资；E2B 发行方公告将其列为 2025 年 A 轮参投者。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "最早期；可在创始人写代码前提供首笔投资",
+          "source_id": "PFSRC-INV-46c6beffe1dcb5-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网自述的投资方向",
+          "value": "现代企业、关键产业和实体世界的基础建设",
+          "source_id": "PFSRC-INV-46c6beffe1dcb5-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "E2B 官方公告将 Sunflower Capital 列为其 2025 年 2,100 万美元 Series A 参投机构。",
+          "source_id": "PFSRC-INV-46c6beffe1dcb5-3"
+        },
         {
           "description": "融资来源记录：E2B · A轮 · 2025-07-28 · 本轮参投 · $21 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c4bbfe8565d35dc2"
@@ -152,6 +173,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-46c6beffe1dcb5-1",
+          "source_url": "https://sunflowercapital.co/",
+          "source_title": "Sunflower Capital",
+          "source_content_hash": "18691ce642a529f40b1e34d909d51ceec0a0072180b1a7b40a60a418d0339867",
+          "quote": "Sunflower Capital partners at the earliest stage with companies building foundations for modern enterprises, critical industries, and the physical world.",
+          "quote_hash": "66ef911e9a00efd6f89afb9ad5c4a18454621079d02ea388d6c42744cc0553c9"
+        },
+        {
+          "source_id": "PFSRC-INV-46c6beffe1dcb5-2",
+          "source_url": "https://sunflowercapital.co/",
+          "source_title": "Sunflower Capital",
+          "source_content_hash": "18691ce642a529f40b1e34d909d51ceec0a0072180b1a7b40a60a418d0339867",
+          "quote": "We write the first check to founders before their first line of code, and we remain trusted advisors through every pivotal moment.",
+          "quote_hash": "ee06ef0a8f6ec196bd00624766496f415f8abc37bd9207b63ff2a48e2ff12c02"
+        },
+        {
+          "source_id": "PFSRC-INV-46c6beffe1dcb5-3",
+          "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
+          "source_title": "E2B Raises a $21M Series A to Offer Cloud for AI Agents to Fortune 100",
+          "source_content_hash": "0f4529730cf11290c7eba58faa5c9c2005ebbf499b52e379b826a46b93fff00d",
+          "quote": "with participation from Decibel, Sunflower Capital, and Kaya",
+          "quote_hash": "ecc329c679dac3ee81bd3cfabfd35ae86fdbcc7ffc17204599897764fca54da2"
+        },
         {
           "source_id": "FISRC-c4bbfe8565d35dc2",
           "source_url": "https://www.prnewswire.com/news-releases/e2b-raises-a-21m-series-a-to-offer-cloud-for-ai-agents-to-fortune-100-302514540.html",
@@ -161,7 +206,7 @@
           "quote_hash": "5b5da6549cb255b29d66558a9d02d656aed208a194504d2efa73c7e270c5dc5b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

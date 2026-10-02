@@ -139,12 +139,41 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Amit Agarwal 当前按“个人投资者”收录。最新融资披露记录日期为 2025-03-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "依据 Onyx 融资公告与 Datadog 官方领导团队简介；页面未列出各职务的完整任期。",
+      "summary": "Onyx 官方融资公告将 Amit Agarwal（Datadog）列为天使投资人；Datadog 官网介绍他现任 STLabs 创始人兼 CEO，曾任 Datadog 总裁及 ICONIQ Capital 普通合伙人。",
+      "current_roles": [
+        {
+          "title": "Founder & CEO",
+          "organization": "STLabs",
+          "source_id": "PFSRC-INV-36524b62ee3eee-2"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Datadog",
+          "title": "总裁；此前任首席产品官",
+          "period": "官网未注明",
+          "description": "Datadog 官网称其曾任总裁，此前任首席产品官；具体任职时间未注明。",
+          "source_id": "PFSRC-INV-36524b62ee3eee-2"
+        },
+        {
+          "organization": "ICONIQ Capital",
+          "title": "普通合伙人",
+          "period": "官网未注明",
+          "description": "Datadog 官网称其曾任 ICONIQ Capital 普通合伙人；具体任职时间未注明。",
+          "source_id": "PFSRC-INV-36524b62ee3eee-2"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Datadog 官网描述其有企业软件产品、战略与管理经验，曾任 Datadog 总裁和首席产品官。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Onyx 官方融资公告将 Amit Agarwal（Datadog）列为其融资轮参投者。",
+          "source_id": "PFSRC-INV-36524b62ee3eee-1"
+        },
         {
           "description": "融资来源记录：Onyx · 种子轮 · 2025-03-12 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-03b9d51b95b8c6ce"
@@ -152,6 +181,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-36524b62ee3eee-1",
+          "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
+          "source_title": "Onyx Raises $10M To Help Teams Find Knowledge Faster with",
+          "source_content_hash": "e4e0ab4060cf0b1345ecbf26516a54991a30daf4726d62a20804af3b84870122",
+          "quote": "Amit Agarwal (Datadog)",
+          "quote_hash": "bf0ca91ee9549213576b04ab7e792ffe53ea8728b85909c9cd0b1a1da24dbd99"
+        },
+        {
+          "source_id": "PFSRC-INV-36524b62ee3eee-2",
+          "source_url": "https://www.datadoghq.com/about/leadership/",
+          "source_title": "Leadership | Datadog",
+          "source_content_hash": "c69d0a1668ebf39ee66c889d630e63ec21d076119e5eb6912a527d69e486ff22",
+          "quote": "Amit Agarwal is the founder and CEO of STLabs. He is the former President of Datadog and a former General Partner at ICONIQ Capital. With 25 years of experience in enterprise software",
+          "quote_hash": "5e3f646ec59d6916d8e555b2fd4f2af3815d724db00ffd6b26fad4dd347dda53"
+        },
         {
           "source_id": "FISRC-03b9d51b95b8c6ce",
           "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
@@ -161,7 +206,7 @@
           "quote_hash": "bf0ca91ee9549213576b04ab7e792ffe53ea8728b85909c9cd0b1a1da24dbd99"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

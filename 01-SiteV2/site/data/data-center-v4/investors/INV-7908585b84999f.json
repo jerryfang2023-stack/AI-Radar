@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Implic Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Implic Capital 官网自述其投资平台聚焦 AI、物理系统及相关基础设施；36氪将其列为灵机天赐 Pre-A 轮领投方，该融资关系来自媒体报道。",
+      "summary": "Implic Capital 是聚焦人工智能、物理系统及其底层基础设施的投资平台。36氪报道其领投灵机天赐 Pre-A 轮；该机构与投资方向依据其官网，融资关系依据媒体报道。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "AI、物理系统及相关基础设施，包括模型与软件、实体世界的智能系统、算力、半导体、数据中心和能源。",
+          "source_id": "PFSRC-INV-7908585b84999f-1"
+        },
+        {
+          "field": "legal_entity",
+          "label": "官网标注的法律实体",
+          "value": "Implic AZ Capital Limited。",
+          "source_id": "PFSRC-INV-7908585b84999f-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "36氪报道，灵机天赐 Pre-A 轮由 Implic Capital 领投，融资金额为数千万元人民币。",
+          "source_id": "PFSRC-INV-7908585b84999f-2"
+        },
         {
           "description": "融资来源记录：灵机天赐 · 多轮融资 · 2026-04-20 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4a75e97ab3db73ce"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Implic Capital 官网",
+          "value": "https://www.impliccap.com/",
+          "url": "https://www.impliccap.com/",
+          "source_id": "PFSRC-INV-7908585b84999f-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7908585b84999f-1",
+          "source_url": "https://www.impliccap.com/",
+          "source_title": "Implic Capital — Investing in AI and Deep Technology",
+          "source_content_hash": "7aade3a4e0880e985bb4268658c46e98b53245f4fef3b465729ce44910774fd1",
+          "quote": "An investment platform focused on AI, physical systems, and the infrastructure that makes them possible.",
+          "quote_hash": "fbc07b8b13e65cd920d73ffce0c37af3d33a374f6fec3ded684006fd24e80ea2"
+        },
+        {
+          "source_id": "PFSRC-INV-7908585b84999f-2",
+          "source_url": "https://www.36kr.com/p/3774692365206280",
+          "source_title": "36氪首发 | 首创“玩偶+主机”模式，多智能体儿童AI玩具品牌获数千万元融资-36氪",
+          "source_content_hash": "5c47f842cd62a56ff3bac2803fb513e6ca192dede8c5c511989481783365052a",
+          "quote": "Pre-A轮由Implic Capital领投",
+          "quote_hash": "11e95153f5f749e0907ecea7cbfef1364d0c4c9abd4c8dcdff50b1cb73ae53b3"
+        },
         {
           "source_id": "FISRC-4a75e97ab3db73ce",
           "source_url": "https://www.36kr.com/p/3774692365206280",
@@ -161,7 +202,7 @@
           "quote_hash": "11e95153f5f749e0907ecea7cbfef1364d0c4c9abd4c8dcdff50b1cb73ae53b3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

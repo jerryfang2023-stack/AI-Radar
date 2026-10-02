@@ -131,10 +131,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "GOVO Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "GOVO Ventures 对应的机构官网名称为 GOVO Venture Partners。其官方融资文章称 GOVO Fund I 投资种子轮至A轮、且业务与政府业务或监管路径相关的早期公司。",
+      "coverage_note": "档案根据同一官方文章中“GOVO Ventures”称呼与“GOVO Venture Partners”机构介绍匹配名称。投资策略及基金信息均为机构自述。",
+      "facts": [
+        {
+          "field": "fund_strategy",
+          "label": "基金投资范围",
+          "value": "官网称 GOVO Fund I 投资种子轮至A轮的早期公司，重点关注业务涉及政府或监管事务的企业。",
+          "source_id": "govo_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -142,8 +149,24 @@
           "source_id": "FISRC-7d6c90badf296dee"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "GOVO Venture Partners",
+          "url": "https://govovp.com/",
+          "source_id": "govo_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "govo_about",
+          "source_url": "https://govovp.com/govo-venture-partners-invests-in-starfish-technology-inc/",
+          "quote": "GOVO Fund I is a venture fund that invests, seed round through series A, in early-stage companies for which doing business with government or navigating government regulations is an important success factor.",
+          "source_title": "GOVO Venture Partners Invests in Starfish Technology Inc. - Govo Venture Partners",
+          "source_content_hash": "ae6e333a0efed0687304881d1acc4dd2f9cb25f95581028900f3f98bfdb0c1fd",
+          "quote_hash": "a5a7a550dfdb548053d072eb63e68d9f38547953611621f7340b6aa450a56716"
+        },
         {
           "source_id": "FISRC-7d6c90badf296dee",
           "source_url": "https://www.datacenterdynamics.com/en/news/relativity-networks-secures-61m-during-latest-seed-funding-for-hollow-core-fiber-development/",
@@ -153,7 +176,7 @@
           "quote_hash": "381ffb1e6172901645be39df726e69cd9825a9fcd049dbc392ec65583f7ad3a6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -131,19 +131,65 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Joe Sullivan 当前按“个人投资者”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "个人官网支持现任咨询业务和过往安全职务；Manifold 官方公告记录一笔天使投资。未将此列作其完整投资组合。",
+      "summary": "Joe Sullivan 官网列其为 Joe Sullivan Security CEO，并记录其曾任 Facebook、Uber 和 Cloudflare 安全负责人；Manifold 官方公告将其列为天使投资人。",
+      "current_roles": [
+        {
+          "title": "CEO",
+          "organization": "Joe Sullivan Security LLC",
+          "source_id": "PFSRC-INV-5b3bf84a744f1c-1"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Uber",
+          "title": "Chief Security Officer",
+          "period": "2015–2017",
+          "description": "官网列出其在 Uber 担任 Chief Security Officer。",
+          "source_id": "PFSRC-INV-5b3bf84a744f1c-2"
+        }
+      ],
+      "education": [],
+      "experience_summary": "官网列出其在 Facebook、Uber 和 Cloudflare 的安全领导经历，并介绍其当前咨询工作。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
       "track_record": [
+        {
+          "description": "Manifold 官方融资公告将 Joe Sullivan 列为天使投资人，并注明其曾任 Uber CSO。",
+          "source_id": "PFSRC-INV-5b3bf84a744f1c-3"
+        },
         {
           "description": "融资来源记录：Manifold · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-65020b3601939429"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-5b3bf84a744f1c-1",
+          "source_url": "https://www.joesullivansecurity.com/about",
+          "source_title": "About | Joe Sullivan Security",
+          "source_content_hash": "de46baa33a16fbaf4c917170585d06018c5eb7f3e54d544f5a09c32754163398",
+          "quote": "Joe is the CEO of Joe Sullivan Security LLC, where he advises companies of all sizes, leads security consulting projects, and mentors security leaders.",
+          "quote_hash": "e432570a2dc13c6b6320836ab9c1aa5d5c370a48bd6979d003f1c8e5a13995f3"
+        },
+        {
+          "source_id": "PFSRC-INV-5b3bf84a744f1c-2",
+          "source_url": "https://www.joesullivansecurity.com/about",
+          "source_title": "About | Joe Sullivan Security",
+          "source_content_hash": "de46baa33a16fbaf4c917170585d06018c5eb7f3e54d544f5a09c32754163398",
+          "quote": "Chief Security Officer at Facebook (2008-2015), Uber (2015-2017), and Cloudflare (2018-2022).",
+          "quote_hash": "90760aaaf86ef94cbb16ca7cf74dbcd06369d669d2c845bead6a4d46b6c33d29"
+        },
+        {
+          "source_id": "PFSRC-INV-5b3bf84a744f1c-3",
+          "source_url": "https://www.manifold.security/blog/manifold-raises-8m-seed-funding",
+          "source_title": "Manifold Raises $8M to Secure AI Agents on Endpoints - Manifold Security",
+          "source_content_hash": "a1e09237055ba4b76d228f1ee08ad5ec23510bab5ed1a86e68a6e84d7c9707f8",
+          "quote": "notable angel investors including former Uber CSO Joe Sullivan",
+          "quote_hash": "c00fd205f815bf15cf3d8e1dc24b98df2cb04f214aaf507a65d0a1ebc96cd8d0"
+        },
         {
           "source_id": "FISRC-65020b3601939429",
           "source_url": "https://www.manifold.security/blog/manifold-raises-8m-seed-funding",
@@ -153,7 +199,7 @@
           "quote_hash": "c00fd205f815bf15cf3d8e1dc24b98df2cb04f214aaf507a65d0a1ebc96cd8d0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

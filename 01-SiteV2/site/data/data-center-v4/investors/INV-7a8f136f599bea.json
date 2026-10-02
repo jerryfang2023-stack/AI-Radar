@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tiny VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Tiny Supercomputer Investment Company 官网自述其自 2017 年以来投资 450 多家公司，通常投向欧洲 pre-seed/seed 阶段；Smallest.ai 的公司新闻稿把 Tiny VC 列为支持方。后者是发行方提供的融资信息。",
+      "summary": "Tiny Supercomputer Investment Company（TSIC，品牌 Tiny VC）是一家早期科技投资机构。官网称其主要投资欧洲 pre-seed 和 seed 阶段，通常不领投、不加入被投公司的董事会；Smallest.ai 的公司新闻稿将 Tiny VC 列为其支持方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "主要投资欧洲 pre-seed 和 seed 阶段。",
+          "source_id": "PFSRC-INV-7a8f136f599bea-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的投资方式",
+          "value": "单笔约 20万至25万美元；通常不领投、不加入董事会。",
+          "source_id": "PFSRC-INV-7a8f136f599bea-1"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网自述的投资组合规模",
+          "value": "官网称自 2017 年以来已支持 450 多家公司。",
+          "source_id": "PFSRC-INV-7a8f136f599bea-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Smallest.ai 于 2026 年 7 月发布的公司新闻稿将 Tiny VC 列为其投资支持方；公告未在该摘录中披露 Tiny VC 的具体投资金额。",
+          "source_id": "PFSRC-INV-7a8f136f599bea-2"
+        },
         {
           "description": "融资来源记录：Smallest.ai · A轮 · 2026-08-01 · 本轮参投 · 1300万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b1944359351ee14"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Tiny VC 官网",
+          "value": "https://tiny.vc/",
+          "url": "https://tiny.vc/",
+          "source_id": "PFSRC-INV-7a8f136f599bea-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7a8f136f599bea-1",
+          "source_url": "https://tiny.vc/",
+          "source_title": "TSIC: Tiny Supercomputer Investment Company",
+          "source_content_hash": "67bbe4b293ce323517cc46ef38e2849082ffd1d37fb79f4284b4cb49667b6793",
+          "quote": "We invest about 200-250K, mostly in European startups at pre-seed and seed stages. We don’t lead rounds or join boards,",
+          "quote_hash": "e78ee98fa27b1ac3024c124f7b66419427eaa2b4b08f2b2ccf27e7959d3a63fb"
+        },
+        {
+          "source_id": "PFSRC-INV-7a8f136f599bea-2",
+          "source_url": "https://www.prnewswire.com/news-releases/smallestai-gets-21-million-in-funding-to-build-voice-40--the-next-generation-of-enterprise-voice-ai-302839266.html?tc=eml_cleartime",
+          "source_title": "Smallest.ai gets $21 Million in Funding to Build Voice 4.0, the Next Generation of Enterprise Voice AI",
+          "source_content_hash": "75c4a5bd322be5fb2cfa3cbfccd1ebc20a74ba7c07e7087aa4bcab596359a158",
+          "quote": "The company is backed by Seligman Ventures, Sierra Ventures, 3one4 Capital, Better Capital, Upsparks Capital, Schema Ventures, Tiny VC, DeVC, Mission Street Capital, and other angel investors.",
+          "quote_hash": "cf7117c9cea44ee1741914c83151a2897c72ac7b8dc3a519514da8c244e84a9d"
+        },
         {
           "source_id": "FISRC-6b1944359351ee14",
           "source_url": "https://www.cmswire.com/customer-experience/smallestai-lands-13m-series-a-for-voice-ai/",
@@ -161,7 +208,7 @@
           "quote_hash": "d3116772e7bd1a31da8517573b2bf881df9a8e9995cb9da8be8b45d450a584c4"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

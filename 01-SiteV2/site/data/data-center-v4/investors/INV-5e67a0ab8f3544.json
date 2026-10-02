@@ -139,10 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nova Venture 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Nova Venture 官网可支持其早期投资定位和创始人导向的方法论；没有把融资报道中简称“Nova”的条目直接归入 Nova Venture，组合与交易记录仍待核验。",
+      "summary": "Nova Venture 官网称其为支持有远见创始人的早期投资机构，关注产品导向、具备非显而易见洞见与执行力的创始团队。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "早期投资。",
+          "source_id": "PFSRC-INV-5e67a0ab8f3544-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资方法",
+          "value": "优先关注产品导向、拥有非显而易见洞见且具备执行力的创始人。",
+          "source_id": "PFSRC-INV-5e67a0ab8f3544-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +170,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PFSRC-INV-5e67a0ab8f3544-1",
+          "source_url": "https://www.novaventure.it/",
+          "source_title": "Nova Venture | Holding of Investments",
+          "source_content_hash": "5e399b95d39656096b0d93bc38ffe1dcb1b338397ca3283116ba70b64579c293",
+          "quote": "We are an early-stage Investor backing visionary founders.",
+          "quote_hash": "9804d3757751e851aded154883097f4f621607e095def775964de113bd0e6efa"
+        },
+        {
+          "source_id": "PFSRC-INV-5e67a0ab8f3544-2",
+          "source_url": "https://www.novaventure.it/",
+          "source_title": "Nova Venture | Holding of Investments",
+          "source_content_hash": "5e399b95d39656096b0d93bc38ffe1dcb1b338397ca3283116ba70b64579c293",
+          "quote": "We look for founders with non-obvious insights and the drive to create.",
+          "quote_hash": "d9335a9a2303c9b776640a7f6db69f9ba8592541da73985b4ada7433d26fbc61"
+        },
+        {
           "source_id": "FISRC-495f39954954d0bc",
           "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
           "source_title": "米兰初创公司Cato融资600万欧元，用AI帮助企业寻找并赢得公开招标",
@@ -161,7 +194,7 @@
           "quote_hash": "a4d6e3e32a549d83752403efb846686fa1c750e768b55c079a23d85cd2c91004"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

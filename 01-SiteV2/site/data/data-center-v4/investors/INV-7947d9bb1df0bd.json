@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Linden Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Linden Capital GmbH 官网说明其为早期/中期 AI 与深科技投资机构，并在组合公司名单列出 INXM；未把媒体报道中的融资轮次写入档案。",
+      "summary": "Linden Capital GmbH 是位于柏林的早期/中期风险投资机构，官网称其投资 AI 与深科技初创公司，并在其组合公司列表中列出 INXM。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网登记名称",
+          "value": "Linden Capital GmbH。",
+          "source_id": "PFSRC-INV-7947d9bb1df0bd-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "早期和中期 AI 与深科技。",
+          "source_id": "PFSRC-INV-7947d9bb1df0bd-1"
+        },
+        {
+          "field": "location",
+          "label": "官网地址",
+          "value": "Berlin, Germany。",
+          "source_id": "PFSRC-INV-7947d9bb1df0bd-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Linden Capital GmbH 官网的精选组合公司名单列出 INXM；本档案不据此推断融资轮次或投资日期。",
+          "source_id": "PFSRC-INV-7947d9bb1df0bd-2"
+        },
         {
           "description": "融资来源记录：INXM · 预种子轮 · 2026-06-03 · 本轮参投 · €5.7 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8b3715219a93e9b2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Linden Capital GmbH 官网",
+          "value": "https://lindencapital.de/",
+          "url": "https://lindencapital.de/",
+          "source_id": "PFSRC-INV-7947d9bb1df0bd-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-7947d9bb1df0bd-1",
+          "source_url": "https://lindencapital.de/",
+          "source_title": "Linden Capital",
+          "source_content_hash": "3a2bb51b67251c196165dccef7c6b174490b79d3f567dcd9e132214d13f67a94",
+          "quote": "As seasoned Venture Capital investors, we fuel early-stage AI and Deep Tech startups with capital",
+          "quote_hash": "399cd60dccb06541794c9e8dfd65cfbe7d0a75860e706bb0c63b50bc35e46be0"
+        },
+        {
+          "source_id": "PFSRC-INV-7947d9bb1df0bd-2",
+          "source_url": "https://lindencapital.de/",
+          "source_title": "Linden Capital",
+          "source_content_hash": "3a2bb51b67251c196165dccef7c6b174490b79d3f567dcd9e132214d13f67a94",
+          "quote": "INXM Almetra Dirigent Gixel Daisytuner Next Mobility Labs",
+          "quote_hash": "78b085d526298be37458e7522460f98aa7f4b95d1b0fb4c39af2769eae4f9ccd"
+        },
         {
           "source_id": "FISRC-8b3715219a93e9b2",
           "source_url": "https://pulse2.com/inxm-raises-e5-7-million-pre-seed-to-bridge-the-gap-between-enterprise-ai-demos-and-real-operational-deployment/",
@@ -161,7 +208,7 @@
           "quote_hash": "417c916e4c339c007c54e734feb79c028ba0045ab64344aa646baeb5e24594d9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

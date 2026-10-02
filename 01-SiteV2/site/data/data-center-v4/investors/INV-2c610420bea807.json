@@ -139,19 +139,59 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "J-Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "J-Ventures官网自述其为总部位于硅谷、由投资人、创业者和高管组成的全球风险投资基金，并以社群网络支持被投公司。",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "投资模式",
+          "value": "社区驱动的全球风险投资基金",
+          "source_id": "PFSRC-2c610420bea807-1"
+        },
+        {
+          "field": "headquarters",
+          "label": "所在地",
+          "value": "硅谷",
+          "source_id": "PFSRC-2c610420bea807-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Zenskar官网融资问答将J-Ventures列入其2026年4月A轮参投机构。",
+          "source_id": "PFSRC-2c610420bea807-2"
+        },
         {
           "description": "融资来源记录：Zenskar · A轮 · 2026-04-17 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d87b08783c0a062f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.j-ventures.com/",
+          "url": "https://www.j-ventures.com/",
+          "source_id": "PFSRC-2c610420bea807-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-2c610420bea807-1",
+          "source_url": "https://www.j-ventures.com/",
+          "source_title": "HOME | J-Ventures",
+          "source_content_hash": "ff1de89ed56410c350bd538ab8bc62bfe212168313982f81ef5a2bb742bbe9c6",
+          "quote": "J-Ventures is a community-driven global venture capital fund of top investors, executives, and founders. Based in Silicon Valley, we operate as a collaborative community of leaders with shared values and a strong network of connected capital.",
+          "quote_hash": "b40d435d2a889460eb2a7b6288bd67a5175d0a4d175351136c9108ed0c520a1b"
+        },
+        {
+          "source_id": "PFSRC-2c610420bea807-2",
+          "source_url": "https://www.zenskar.com/faq",
+          "source_title": "Zenskar FAQs | Everything You Need to Know",
+          "source_content_hash": "5c42d9e2d9b877de3326ecf45049ad9509bd7b6eee46f9df519069ad16c897c5",
+          "quote": "Zenskar closed a $15 million Series A in April 2026 led by Susquehanna International Group, Bessemer Venture Partners, Shine Capital, and Rho, with participation from Rocketship, J-Ventures, Future Back Ventures by Bain & Company, and Converge.",
+          "quote_hash": "131a3fe6c97d08f0fa569caec1a801fb628abd936b2f4737d1430a31041314bb"
+        },
         {
           "source_id": "FISRC-d87b08783c0a062f",
           "source_url": "https://www.businesswire.com/news/home/20260416872552/en/Zenskar-Raises-%2415-Million-Series-A-to-Expand-Agentic-Capabilities-for-B2B-Revenue-Automation",
@@ -161,7 +201,8 @@
           "quote_hash": "90631e3bd2a5b5b513357f91a31d0c99a6ea4f92c480c0e5921baebdded90a2e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

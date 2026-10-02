@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mutschler Ventures AG 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Mutschler Ventures 官网将其描述为总部位于瑞士楚格的家族办公室旗下早期风险投资机构，并称其投资已有初步营收和验证的科技公司。",
+      "coverage_note": "投资阶段、行业和地域口径均为官网自述；官网未披露当前基金规模或完整组合表现。",
+      "facts": [
+        {
+          "field": "organization_background",
+          "label": "机构背景",
+          "value": "官网自述其属于瑞士楚格的一家单一家族办公室。",
+          "source_id": "mutschler_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网自述关注已有初步营收和市场验证的科技公司，主要涉及金融科技、数字健康、PropTech、RegTech、教育科技、清洁技术和移动出行。",
+          "source_id": "mutschler_home"
+        },
+        {
+          "field": "investment_history",
+          "label": "投资经历",
+          "value": "官网称自2007年以来在DACH地区开展早期风险投资，并披露已支持40多家公司；此为机构自述，非独立审计统计。",
+          "source_id": "mutschler_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,40 @@
           "source_id": "FISRC-b9bdf878150fb854"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Mutschler Ventures",
+          "url": "https://www.mutschler-ventures.com/",
+          "source_id": "mutschler_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "mutschler_home",
+          "source_url": "https://www.mutschler-ventures.com/",
+          "quote": "Mutschler Ventures is part of a single family office based in Zug, Switzerland.",
+          "source_title": "Home | Mutschler Ventures | Zug",
+          "source_content_hash": "c6da521b1ec7447eb71c53274a9e18f1f7104daedd369065228b5b040b7e4cbb",
+          "quote_hash": "28f755df5305715e40969a0b1551c01d0fc28e0c44204458826bc8248e666808"
+        },
+        {
+          "source_id": "mutschler_focus",
+          "source_url": "https://www.mutschler-ventures.com/",
+          "quote": "We invest in scalable tech companies with initial traction (revenue) and first validation across several sectors",
+          "source_title": "Home | Mutschler Ventures | Zug",
+          "source_content_hash": "c6da521b1ec7447eb71c53274a9e18f1f7104daedd369065228b5b040b7e4cbb",
+          "quote_hash": "fd0ef97aeaedd214da7323ba044f3abac15f622c4bcb8f314c6fd4b358de2f12"
+        },
+        {
+          "source_id": "mutschler_history",
+          "source_url": "https://www.mutschler-ventures.com/",
+          "quote": "Since 2007, we have been one of the most active early-stage Venture Capital Investors with a family-office background within the DACH-region",
+          "source_title": "Home | Mutschler Ventures | Zug",
+          "source_content_hash": "c6da521b1ec7447eb71c53274a9e18f1f7104daedd369065228b5b040b7e4cbb",
+          "quote_hash": "96790984f5b3366428551c3c87c78fac533ddaa7dd6526defcc60aa43873fcf0"
+        },
         {
           "source_id": "FISRC-b9bdf878150fb854",
           "source_url": "https://www.linkedin.com/posts/eu-startups-menlo-media_yc-backed-telli-raises-131-million-to-build-activity-7485941475046813696-kBmJ",
@@ -161,7 +212,7 @@
           "quote_hash": "5660af156bfec8dfa93471a29032ef5aa10d771b71bf043a9ff22b1788847a04"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

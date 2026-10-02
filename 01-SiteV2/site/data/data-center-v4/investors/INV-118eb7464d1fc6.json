@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TransLink Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "TransLink Capital 官网称其投资科技公司，并帮助被投企业建立与亚洲企业的商业联系；官网披露其投资阶段以种子轮至B轮为主。",
+      "coverage_note": "阶段、地区和经验数据为机构自述；不把被投企业数量或合作网络等自报数字解释为独立核验的投资业绩。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网披露投资阶段为种子轮至B轮，重点为A轮。",
+          "source_id": "translink_stage"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "官网称其全球投资，重点覆盖北美、西欧和亚洲。",
+          "source_id": "translink_geography"
+        },
+        {
+          "field": "investment_approach",
+          "label": "跨境支持",
+          "value": "官网称其帮助被投企业与亚洲大型企业建立客户、渠道伙伴或供应商关系。",
+          "source_id": "translink_crossborder"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,40 @@
           "source_id": "FISRC-2daabe6c0da09480"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Translink Capital",
+          "url": "https://www.translinkcapital.com/",
+          "source_id": "translink_crossborder"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "translink_stage",
+          "source_url": "https://www.translinkcapital.com/",
+          "quote": "Stage of investments: Seed to Series B, with a focus on Series A",
+          "source_title": "Translink Capital USA-based venture capital partners | Translink Capital",
+          "source_content_hash": "64f6b59fb7dede70c4cfe44113b0dff5f37c85b98edce9456ead75e9cfe8e93d",
+          "quote_hash": "7b49b9117248c7aa24a2dc36c57fa6687fc4ca0d13b3f8ad89fc54a4da7b7c4b"
+        },
+        {
+          "source_id": "translink_geography",
+          "source_url": "https://www.translinkcapital.com/",
+          "quote": "We invest globally, but concentrated in North America, Western Europe, and Asia",
+          "source_title": "Translink Capital USA-based venture capital partners | Translink Capital",
+          "source_content_hash": "64f6b59fb7dede70c4cfe44113b0dff5f37c85b98edce9456ead75e9cfe8e93d",
+          "quote_hash": "70b7f43ab919112adece43584a9e624fbc85e14117ef6f07ba526286ad5c14dc"
+        },
+        {
+          "source_id": "translink_crossborder",
+          "source_url": "https://www.translinkcapital.com/",
+          "quote": "We help our portfolio companies establish customer, channel partner, or supplier relationships with Asia&#x27;s largest companies",
+          "source_title": "Translink Capital USA-based venture capital partners | Translink Capital",
+          "source_content_hash": "64f6b59fb7dede70c4cfe44113b0dff5f37c85b98edce9456ead75e9cfe8e93d",
+          "quote_hash": "8aef42b03b1c1a35105f990f589dd27ae4630c77ac27a95bef27838c9f0990b1"
+        },
         {
           "source_id": "FISRC-2daabe6c0da09480",
           "source_url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative",
@@ -161,7 +212,7 @@
           "quote_hash": "4e88ddb77f70111a514c20f1062d62d0dc0c067dc77fab1beccf099097f26e24"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

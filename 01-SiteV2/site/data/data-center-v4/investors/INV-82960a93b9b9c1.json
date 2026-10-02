@@ -139,19 +139,64 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vincent Luciani 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "coverage_note": "Artefact 官网列出 Vincent Luciani 的当前职位并回顾其创业经历；Tech.eu 报道其参与 NP Company 种子前融资，该融资关系来源为媒体报道。",
+      "summary": "Vincent Luciani 是 Artefact 的执行董事长和联合创始人。Artefact 官网称他曾任 McKinsey 经理并参与创立 Artefact；Tech.eu 报道他作为天使投资人参与 NP Company 的 600 万欧元种子前融资。",
+      "current_roles": [
+        {
+          "title": "Executive Chairman and Co-founder",
+          "organization": "Artefact",
+          "source_id": "PFSRC-INV-82960a93b9b9c1-1"
+        }
+      ],
+      "career": [
+        {
+          "organization": "McKinsey",
+          "title": "Manager（前任）",
+          "period": "创立 Artefact 之前",
+          "description": "Artefact 官网称 Vincent Luciani 曾任 McKinsey 经理。",
+          "source_id": "PFSRC-INV-82960a93b9b9c1-1"
+        },
+        {
+          "organization": "Artefact",
+          "title": "联合创始人",
+          "period": "Artefact 创立以来",
+          "description": "Artefact 官网将他列为联合创始人。",
+          "source_id": "PFSRC-INV-82960a93b9b9c1-1"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Artefact 官网将 Vincent Luciani 列为执行董事长和联合创始人，并称他此前曾任 McKinsey 经理。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
       "track_record": [
+        {
+          "description": "Tech.eu 报道 Vincent Luciani 参与 NP Company 的 600 万欧元种子前轮，并称他为 Artefact 创始人兼 CEO；本档案将该投资关系标为媒体报道。",
+          "source_id": "PFSRC-INV-82960a93b9b9c1-2"
+        },
         {
           "description": "融资来源记录：NP Company · 预种子轮 · 2026-06-02 · 本轮天使投资人 · €6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c311f61df097447"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-82960a93b9b9c1-1",
+          "source_url": "https://www.artefact.com/company/about-us/",
+          "source_title": "About us - Company Artefact",
+          "source_content_hash": "32f7d6a0f814f4f2cacfa63adcc7445258d8a7665e8316d05044fda010741124",
+          "quote": "Vincent Luciani Executive Chairman and Co-founder Artefact France",
+          "quote_hash": "0ece75742f94b85191e899fc78a18b6fa10b7052a3e3e624f7801e12671e4595"
+        },
+        {
+          "source_id": "PFSRC-INV-82960a93b9b9c1-2",
+          "source_url": "https://tech.eu/2026/06/02/backed-by-mistral-ai-founders-np-company-secures-eur6m-pre-seed-to-advance-ai-for-engineering/",
+          "source_title": "Backed by Mistral AI founders, NP Company secures €6M pre-seed to advance AI for engineering - Tech.eu",
+          "source_content_hash": "e92410366540fdc5cff62559c82b953709e772ee242a931299b3d3b6d5fc83a5",
+          "quote": "and Vincent Luciani, founder and CEO of Artefact.",
+          "quote_hash": "25bbb49ef613c499667b5bbd4e697babf475b5877b64cf04dadaf69974411dd5"
+        },
         {
           "source_id": "FISRC-5c311f61df097447",
           "source_url": "https://tech.eu/2026/06/02/backed-by-mistral-ai-founders-np-company-secures-eur6m-pre-seed-to-advance-ai-for-engineering/",
@@ -161,7 +206,7 @@
           "quote_hash": "4ad1b8bc6103774637e93dbf5b9b61c6dc61ad07b8d9a8e6f6e005e8a7819ca5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -139,12 +139,27 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Quad Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "QUAD Ventures 官网支持韩国机构身份与投资理念；Algorix 后续投资信息目前仅见 WOWTALE 二手报道，未找到被投公司或机构的一手公告，故仅按该报道归因并标明来源限制。",
+      "summary": "QUAD Ventures 官网称其发掘推动变化的创业者并关注相关技术；WOWTALE 报道称 Quad Ventures 参与了 Algorix 2026 年 Series A 后续投资。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资方法",
+          "value": "发掘推动有意义变化的创业者，关注支撑其发展的技术。",
+          "source_id": "PFSRC-INV-6753c968c80bd4-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "WOWTALE 报道称 Quad Ventures 参与 Algorix 2026 年 Series A 后续投资；此项来自二手报道，未由机构或发行方公告独立核验。",
+          "source_id": "PFSRC-INV-6753c968c80bd4-2"
+        },
         {
           "description": "融资来源记录：Algorix · 多轮融资 · 2026-08-14 · 本轮参投 · $11.5M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4e441239551a1fd6"
@@ -152,6 +167,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-6753c968c80bd4-1",
+          "source_url": "https://www.quads.vc/",
+          "source_title": "쿼드벤처스 | QUAD Ventures",
+          "source_content_hash": "82e393d1965384165c77b992120977c1295c28475dac3bf46fd5b7c3fdadf777",
+          "quote": "We discover founders who lead meaningful change in the world, and focus on the technologies that enable them.",
+          "quote_hash": "aff7f5805eb86acaabc5d35bda5b47c2259761541131ff68c61bc135c9789d14"
+        },
+        {
+          "source_id": "PFSRC-INV-6753c968c80bd4-2",
+          "source_url": "https://en.wowtale.net/2026/08/14/234729/",
+          "source_title": "Algorix Raises $11.5M Series A Led by K2 Investment Partners, Bringing Total Funding to $14M - WOWTALE",
+          "source_content_hash": "ab17b1c899f8d7ecb53f9e19326ac772fc4a45c3e18ad82ecc7cb1995704e661",
+          "quote": "while Quad Ventures, Kiwoom Investment, and We Ventures—all of whom participated in the September 2024 pre–Series A—returned for follow-on investment",
+          "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
+        },
         {
           "source_id": "FISRC-4e441239551a1fd6",
           "source_url": "https://en.wowtale.net/2026/08/14/234729/",
@@ -161,7 +192,7 @@
           "quote_hash": "31397bbbf4d849a0a3becbba55142a4eee2e73e28d9755257b3de136a962635a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }
