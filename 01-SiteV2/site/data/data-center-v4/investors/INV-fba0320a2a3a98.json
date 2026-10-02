@@ -180,19 +180,87 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Scale Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Scale Venture Partners是专注AI与B2B软件的早期风险投资机构，官网称其主要领投Series A和Series B，并创建于2000年。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "AI、B2B软件",
+          "source_id": "business"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Series A、Series B",
+          "source_id": "stage"
+        },
+        {
+          "field": "investment_role",
+          "label": "投资角色",
+          "value": "多数投资轮次为领投",
+          "source_id": "stage"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2000",
+          "description": "官网记载Scale Venture Partners于2000年创立。",
+          "source_id": "founded"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网称其曾早期投资DocuSign、Box、HubSpot、BILL及JFrog。",
+          "source_id": "track-record"
+        },
         {
           "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6233a9ab76850de"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网FAQ",
+          "value": "https://www.scalevp.com/frequently-asked-questions",
+          "source_id": "business",
+          "url": "https://www.scalevp.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "business",
+          "source_url": "https://www.scalevp.com/frequently-asked-questions",
+          "source_title": "Frequently asked questions | Scale Venture Partners",
+          "source_content_hash": "cd27c9ee9e49280ce8c95dd380050f7087cc784db873bd9123950ac10ca05042",
+          "quote": "Scale is an early-stage venture capital firm focused on AI and B2B software.",
+          "quote_hash": "5a169105b347037d9a926eac0a90a0f77df1437b32928322590d2add94cb6058"
+        },
+        {
+          "source_id": "stage",
+          "source_url": "https://www.scalevp.com/frequently-asked-questions",
+          "source_title": "Frequently asked questions | Scale Venture Partners",
+          "source_content_hash": "cd27c9ee9e49280ce8c95dd380050f7087cc784db873bd9123950ac10ca05042",
+          "quote": "Scale leads 80% of the Series A and Series B rounds we invest in.",
+          "quote_hash": "7c6c57012b20791b90dfa7a94489de3a4fb6f0faf6194a31d595aa11fa0bc20f"
+        },
+        {
+          "source_id": "founded",
+          "source_url": "https://www.scalevp.com/frequently-asked-questions",
+          "source_title": "Frequently asked questions | Scale Venture Partners",
+          "source_content_hash": "cd27c9ee9e49280ce8c95dd380050f7087cc784db873bd9123950ac10ca05042",
+          "quote": "Founded in 2000 and based in the Bay Area, Scale manages $2.8 billion in assets.",
+          "quote_hash": "df18d6ced6e478749d57f7aa85357805d8ccded5349056b5c537a26b47a9bf3b"
+        },
+        {
+          "source_id": "track-record",
+          "source_url": "https://www.scalevp.com/frequently-asked-questions",
+          "source_title": "Frequently asked questions | Scale Venture Partners",
+          "source_content_hash": "cd27c9ee9e49280ce8c95dd380050f7087cc784db873bd9123950ac10ca05042",
+          "quote": "Hundreds of companies over 25 years, with early checks into DocuSign, Box, HubSpot, BILL, and JFrog.",
+          "quote_hash": "00f3d01e05d33130b54f8dbbc54965fa7f66621d7e4b0bf21fa7ea96a45b13f6"
+        },
         {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
@@ -202,7 +270,8 @@
           "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

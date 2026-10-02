@@ -139,19 +139,81 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "GV (formerly Google Ventures) 当前按“投资组织”收录。最新融资披露记录日期为 2026-04-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "GV是Alphabet旗下独立风险投资机构，2009年以Google Ventures之名成立，投资种子期至成长期的科技和生命科学企业。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "创立年份",
+          "value": "2009",
+          "source_id": "founded"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "种子期至成长期",
+          "source_id": "investment"
+        },
+        {
+          "field": "focus",
+          "label": "关注行业",
+          "value": "科技、生命科学",
+          "source_id": "investment"
+        },
+        {
+          "field": "parent_company",
+          "label": "唯一有限合伙人",
+          "value": "Alphabet",
+          "source_id": "investment"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2009",
+          "description": "GV以Google Ventures之名成立。",
+          "source_id": "founded"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Recursive Superintelligence · 轮次未披露 · 2026-04-18 · 本轮领投 · at least $500 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b0bb1841559d4fad"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.gv.com/about",
+          "source_id": "investment",
+          "url": "https://www.gv.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "founded",
+          "source_url": "https://www.gv.com/about",
+          "source_title": "GV - About GV",
+          "source_content_hash": "c02f78e618c41bfff5af019447f825766bde31fa59ee42fad6295dbcf737d1de",
+          "quote": "Launched as Google Ventures in 2009, GV originated as an independent venture capital firm for innovative founders.",
+          "quote_hash": "d6e6597d42521031351c8fb824f7c7385ad004374c13166e01775b04fd270629"
+        },
+        {
+          "source_id": "investment",
+          "source_url": "https://www.gv.com/about",
+          "source_title": "GV - About GV",
+          "source_content_hash": "c02f78e618c41bfff5af019447f825766bde31fa59ee42fad6295dbcf737d1de",
+          "quote": "With Alphabet as our sole limited partner, we focus all our energy on meeting and supporting founders at every stage of company-building.",
+          "quote_hash": "3511bdf0fd8c3bd0df5a8305ce7ac0bb4f5e4b0ef7d3b6bb4f9e03abb263b87f"
+        },
+        {
+          "source_id": "stages",
+          "source_url": "https://www.gv.com/about",
+          "source_title": "GV - About GV",
+          "source_content_hash": "c02f78e618c41bfff5af019447f825766bde31fa59ee42fad6295dbcf737d1de",
+          "quote": "Today, with over $13 billion in assets under management, we invest from seed to growth stages across the technology and life sciences sectors.",
+          "quote_hash": "7f83dbf75e1a72ba4cab3015a136cac0291a8a4ee3e8529ad13b79086240a4c7"
+        },
         {
           "source_id": "FISRC-b0bb1841559d4fad",
           "source_url": "https://the-decoder.com/self-improving-ai-startup-recursive-superintelligence-pulls-in-500-million-just-four-months-after-founding",
@@ -161,7 +223,8 @@
           "quote_hash": "b5e77b5882c61dcbfcafa36bd61ae36227c481e36d75a35e6c1b2de667cb3cd5"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

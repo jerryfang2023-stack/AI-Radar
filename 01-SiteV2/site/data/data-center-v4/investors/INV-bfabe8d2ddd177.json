@@ -180,12 +180,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Silicon Catalyst Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Silicon Catalyst Ventures是硅谷半导体加速器生态中的投资主体，官网称其2024年2月设立，资助进入加速器两年项目的早期创业公司。",
+      "coverage_note": "本条专指Silicon Catalyst Ventures（SCV）投资主体，不与Silicon Catalyst加速器本身混为一谈。官网的26笔投资数字为页面采集时自述。",
+      "facts": [
+        {
+          "field": "launched",
+          "label": "设立时间",
+          "value": "2024年2月",
+          "source_id": "scv"
+        },
+        {
+          "field": "investment_scope",
+          "label": "投资对象",
+          "value": "进入Silicon Catalyst两年加速项目的早期创业公司",
+          "source_id": "scv"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-02",
+          "description": "官网称Silicon Catalyst Ventures（SCV）于2024年2月启动。",
+          "source_id": "scv"
+        }
+      ],
       "track_record": [
+        {
+          "description": "官网自述SCV已投资26家Silicon Catalyst组合公司。",
+          "source_id": "scv-investments"
+        },
         {
           "description": "融资来源记录：Neurophos Inc. · A轮 · 2026-01-22 · 本轮参投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d542f1ad9da7e0ac"
@@ -195,8 +218,32 @@
           "source_id": "FISRC-9f9b41abcfe2abd0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://siliconcatalyst.com/",
+          "source_id": "scv",
+          "url": "https://siliconcatalyst.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "scv",
+          "source_url": "https://siliconcatalyst.com/",
+          "source_title": "Silicon Catalyst",
+          "source_content_hash": "b50b177f161e8741e70532e04059c62f4cb8cbefe79722b9e875ea8c13280a5b",
+          "quote": "In February of 2024, Silicon Catalyst Ventures (SCV) was launched to fund early-stage startups accepted into the accelerator’s two-year program.",
+          "quote_hash": "b6b5a5fafc173f364e1a5c86dfc760be0854e0c639f855c083a5ca4ab5fcc1da"
+        },
+        {
+          "source_id": "scv-investments",
+          "source_url": "https://siliconcatalyst.com/",
+          "source_title": "Silicon Catalyst",
+          "source_content_hash": "b50b177f161e8741e70532e04059c62f4cb8cbefe79722b9e875ea8c13280a5b",
+          "quote": "SCV has already made 26 investments in Silicon Catalyst Portfolio Companies.",
+          "quote_hash": "30433161a5aca599ad073f2d02a2134083e6d1f2e3dbc4d84cfd3a1c3b1bd6d3"
+        },
         {
           "source_id": "FISRC-d542f1ad9da7e0ac",
           "source_url": "https://dukecapitalpartners.duke.edu/news/neurophos-secures-110-million-series-a-to-launch-exaflop-scale-photonic-ai-chips/",
@@ -214,7 +261,7 @@
           "quote_hash": "f5ce2d621f9ac250a9e41b51b95dc8f6aa163663e165009067632e538ad62da8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

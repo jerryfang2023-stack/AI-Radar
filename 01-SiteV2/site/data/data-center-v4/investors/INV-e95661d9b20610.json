@@ -195,9 +195,15 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Quiet Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Quiet Capital官网称其团队由创业建设者组成，从公司创立之初投资有潜力的创始人。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Day Zero / 创业起始阶段",
+          "source_id": "homepage"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +215,24 @@
           "source_id": "FISRC-7a85c433c7dbed44"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://quiet.com/",
+          "source_id": "homepage",
+          "url": "https://quiet.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "homepage",
+          "source_url": "https://quiet.com/",
+          "source_title": "Quiet Capital",
+          "source_content_hash": "0f191b8d401041fb47d249895ddb9f46bf89a4621ec3cafd1e2fed3fe3ab6403",
+          "quote": "We are builders who invest in remarkable Founders from day zero.",
+          "quote_hash": "a50b268c06bdbd161f1eef53af95e1b6b8ba20853c188c42fdcc09799e97f62b"
+        },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
           "source_url": "https://multiples.vc/private-comps/suno",
@@ -228,7 +250,8 @@
           "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

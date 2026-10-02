@@ -194,10 +194,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Socratic Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Socratic Partners官网称其为早中期风险投资机构，主题聚焦半导体技术；官网同时说明其为The Raptor Group旗下关联机构。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期至中期",
+          "source_id": "about-thesis"
+        },
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "半导体技术",
+          "source_id": "about-thesis"
+        },
+        {
+          "field": "affiliation",
+          "label": "关联关系",
+          "value": "The Raptor Group关联机构",
+          "source_id": "about-affiliation"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +227,32 @@
           "source_id": "FISRC-c98d10de3e945941"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.socraticpartners.com/about/",
+          "source_id": "about-thesis",
+          "url": "https://www.socraticpartners.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "about-thesis",
+          "source_url": "https://www.socraticpartners.com/about/",
+          "source_title": "About Us - Socratic Partners",
+          "source_content_hash": "a70bcb87995b0740922881260dab1e3ddb82c23adf6fb58d94559129be3a0ec1",
+          "quote": "Socratic Partners is an early to mid-stage venture capital firm that invests thematically in semiconductor technology that accelerates global advancement and drastically transforms industries.",
+          "quote_hash": "5ef40d669afa68d6e6e9467a9e16a4a7ba61eaefe7e961c3b21e011676698414"
+        },
+        {
+          "source_id": "about-affiliation",
+          "source_url": "https://www.socraticpartners.com/about/",
+          "source_title": "About Us - Socratic Partners",
+          "source_content_hash": "a70bcb87995b0740922881260dab1e3ddb82c23adf6fb58d94559129be3a0ec1",
+          "quote": "Socratic is an affiliate of The Raptor Group, a family office and venture capital firm established in 2009 that has active investments within the technology, consumer, financial services, healthcare, and sports and media verticals.",
+          "quote_hash": "a7b3c05aa9e5d15c433016bc76d2a6eea474dd9843de4820274a86fd55cf3afd"
+        },
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
           "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
@@ -228,7 +270,8 @@
           "quote_hash": "79ca9010fb260bede6b4f64f868f374ac28150ce0d3e7b769a12853eb5889580"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -193,10 +193,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "T. Rowe Price Associates, Inc. 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "T. Rowe Price Associates, Inc.官网披露其为SEC登记的投资顾问之一，为T. Rowe Price旗下策略、ETF和共同基金提供投资顾问服务，并属于T. Rowe Price Group, Inc.旗下子公司。",
+      "facts": [
+        {
+          "field": "business_role",
+          "label": "业务角色",
+          "value": "SEC登记投资顾问，为T. Rowe Price策略、ETF及共同基金提供投资顾问服务",
+          "source_id": "advisor-role"
+        },
+        {
+          "field": "parent_company",
+          "label": "所属集团",
+          "value": "T. Rowe Price Group, Inc.",
+          "source_id": "group"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +220,40 @@
           "source_id": "FISRC-d47a3aba63bc33dc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.troweprice.com/en/us/about-us",
+          "source_id": "advisor-role",
+          "url": "https://www.troweprice.com/en/us/about-us"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "legal-name",
+          "source_url": "https://www.troweprice.com/en/us/about-us",
+          "source_title": "About Us | T. Rowe Price",
+          "source_content_hash": "cb660d319e4e907341418875e4dc6e37426d26375704150f420377008a1271fe",
+          "quote": "T. Rowe Price Associates, Inc.",
+          "quote_hash": "b2104447b3fcc1404265e6203142323fd291a8a35db0f85e26ecf2ebc77b8e32"
+        },
+        {
+          "source_id": "advisor-role",
+          "source_url": "https://www.troweprice.com/en/us/about-us",
+          "source_title": "About Us | T. Rowe Price",
+          "source_content_hash": "cb660d319e4e907341418875e4dc6e37426d26375704150f420377008a1271fe",
+          "quote": "registered with the SEC, are investment advisers to T. Rowe Price strategies, ETFs and mutual funds.",
+          "quote_hash": "072e3d2cd3cc91942d9dc3dc9b6ddf9eafeb19ca7608c34cbac452a7a40d999b"
+        },
+        {
+          "source_id": "group",
+          "source_url": "https://www.troweprice.com/en/us/about-us",
+          "source_title": "About Us | T. Rowe Price",
+          "source_content_hash": "cb660d319e4e907341418875e4dc6e37426d26375704150f420377008a1271fe",
+          "quote": "TRPIS, TRPA and TRPIM are subsidiaries of T. Rowe Price Group, Inc.",
+          "quote_hash": "77acc02d51ff28e1c2eca6b663b0f92593dfd8c09b8d43e5c72550d84bafe256"
+        },
         {
           "source_id": "FISRC-b5e22ae086a6b353",
           "source_url": "https://www.anthropic.com/news/series-h",
@@ -227,7 +271,8 @@
           "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

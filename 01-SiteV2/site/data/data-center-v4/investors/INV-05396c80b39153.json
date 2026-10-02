@@ -139,10 +139,16 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Garuda Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Garuda Ventures官网称其为首笔投资基金，为创始团队提供早期资本，并支持公司从初始构想到成长为品类领先企业。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "首轮/早期",
+          "source_id": "first-check"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +156,24 @@
           "source_id": "FISRC-62e06e29d2d7be04"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.garuda.vc/",
+          "source_id": "first-check",
+          "url": "https://www.garuda.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "first-check",
+          "source_url": "https://www.garuda.vc/",
+          "source_title": "Garuda Ventures | First check investors backing ambitious, relentless founders",
+          "source_content_hash": "fecbde7d6256e0c9d85c2a8d52e5e6f2cab1044b2e74f16f4edfd59f293e2f15",
+          "quote": "We are a first check fund We invest $500K to $1.5M behind founders as they go from a deck and a dream to a category defining company.",
+          "quote_hash": "a1f1f0cd3ab5f2b26c140cd40ad03cf170631f8c28d14857c90781aff811eefc"
+        },
         {
           "source_id": "FISRC-62e06e29d2d7be04",
           "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
@@ -161,7 +183,8 @@
           "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -172,19 +172,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Iberis Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Iberis Capital是葡萄牙的私募股权与风险投资基金管理人，由四位合伙人于2017年创立，投资业务覆盖成长与收购、风险投资、收益型投资及可持续投资。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2017",
+          "source_id": "about"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "葡萄牙私募股权与风险投资基金管理人",
+          "source_id": "about"
+        },
+        {
+          "field": "strategies",
+          "label": "投资策略",
+          "value": "成长与收购、风险投资、收益型投资、可持续投资",
+          "source_id": "strategies"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2017",
+          "description": "Iberis Capital官网记载机构于2017年创立。",
+          "source_id": "about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Traveltech Tryp.com · 轮次未披露 · 2026-09-30 · 本轮参投 · €1.9 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ea432ae33551275b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://iberiscapital.com/about-iberis/",
+          "source_id": "about",
+          "url": "https://iberiscapital.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "about",
+          "source_url": "https://iberiscapital.com/about-iberis/",
+          "source_title": "About Iberis - Iberis Capital",
+          "source_content_hash": "f117006d005fed18d704d6b442c321186782cb1e65bd1b4064ab8fcc4b861a9e",
+          "quote": "Iberis Capital is a Private Equity and Venture Capital fund manager founded in 2017 by four partners with a shared vision of the available opportunities in the Portuguese economy and the opportunity to build a true professional partnership in the Portuguese private equity landscape.",
+          "quote_hash": "51ba269b3aaa8e0f00f4db2352b1d4f2d201319d94dc61cec6595941c656fdb1"
+        },
+        {
+          "source_id": "strategies",
+          "source_url": "https://iberiscapital.com/about-iberis/",
+          "source_title": "About Iberis - Iberis Capital",
+          "source_content_hash": "f117006d005fed18d704d6b442c321186782cb1e65bd1b4064ab8fcc4b861a9e",
+          "quote": "The company mainly operates across four areas: Growth and Buyout, Venture Capital, Yielding Investments and Sustainable Investments.",
+          "quote_hash": "a666d83169771c6a7b8e2902914f116c8b021211cfd75fac0ba1dae9c80c8159"
+        },
         {
           "source_id": "FISRC-ea432ae33551275b",
           "source_url": "https://tech.eu/2026/09/30/from-six-engineering-students-to-10m-users-trypcom-raises-eur19m/",
@@ -194,7 +242,8 @@
           "quote_hash": "a88646d7b25948a6efdaa69be51ee0310f5a843fc7ff130dcf5c9c443ccc52fc"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

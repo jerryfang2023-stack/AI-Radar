@@ -194,10 +194,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Triatomic Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Triatomic Capital官网将其描述为研究驱动型风险投资机构，从最早期开始投资变革性科技公司；总部位于帕洛阿尔托，采取全球投资策略。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "最早期",
+          "source_id": "thesis"
+        },
+        {
+          "field": "focus",
+          "label": "投资方向",
+          "value": "变革性科技公司",
+          "source_id": "thesis"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部",
+          "value": "美国加州帕洛阿尔托",
+          "source_id": "location"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +227,32 @@
           "source_id": "FISRC-840402012d166d60"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "https://www.triatomic.ai/",
+          "source_id": "thesis",
+          "url": "https://www.triatomic.ai/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "thesis",
+          "source_url": "https://www.triatomic.ai/",
+          "source_title": "Triatomic Capital | Venture Capital",
+          "source_content_hash": "0ead5c33cb4054b0aed2e297ece8cc1553cf84775fd438bf5d7e4d241442a445",
+          "quote": "Triatomic Capital is a research-driven venture firm that invests in transformative technology companies from their earliest stages.",
+          "quote_hash": "7161adb59c23e24dd47231e99f9d79aceda5f77e075e09aa3373901442ed3ad1"
+        },
+        {
+          "source_id": "location",
+          "source_url": "https://www.triatomic.ai/",
+          "source_title": "Triatomic Capital | Venture Capital",
+          "source_content_hash": "0ead5c33cb4054b0aed2e297ece8cc1553cf84775fd438bf5d7e4d241442a445",
+          "quote": "Headquartered in Palo Alto with a global investment mandate, we bring a deeply collaborative approach to partnering with visionary founders.",
+          "quote_hash": "5cb0d05fd7f0156fa030449ba0fa1a3fc7435a8688f5b6095acd6972d66ff99c"
+        },
         {
           "source_id": "FISRC-c6e81d3e611e6fe3",
           "source_url": "https://matx.com/research/series_b",
@@ -228,7 +270,8 @@
           "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
