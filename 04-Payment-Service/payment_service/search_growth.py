@@ -69,7 +69,7 @@ def normalize_import(body, today, questions):
             if not isinstance(row, dict) or set(row) - {"caseId", "engine", "model", "observedAt", "citations", "accuracyReview"}:
                 raise ValueError("评测字段无效")
             stamp = parsed(row.get("observedAt"))
-            if not stamp or stamp.date() > today or stamp.date() < date.fromisoformat(questions["baselineDate"]):
+            if not stamp or stamp.astimezone(LOCAL).date() > today or stamp.astimezone(LOCAL).date() < date.fromisoformat(questions["baselineDate"]):
                 raise ValueError("评测须有题库日期之后的真实观察时间")
             case, engine = cases.get(row.get("caseId")), row.get("engine")
             review = row.get("accuracyReview", "unreviewed")

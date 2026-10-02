@@ -60,6 +60,8 @@ def test_evaluation_reuses_question_ids_and_does_not_infer_accuracy():
     assert value['accuracyReview'] == 'unreviewed'
     assert value['citationURLs'] == [case['expectedCitationURLs'][0]]
     assert 'private' not in json.dumps(value)
+    body['rows'][0]['observedAt'] = '2026-10-01T16:01:00Z'
+    assert normalize_import(body,date(2026,10,2),QUESTIONS)['rows'][0]['date'] == '2026-10-02'
     body['rows'][0]['caseId'] = 'unknown'
     with pytest.raises(ValueError): normalize_import(body,date(2026,10,2),QUESTIONS)
 
