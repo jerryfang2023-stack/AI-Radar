@@ -23,8 +23,8 @@ if (acceptedStatus) {
   const prs = JSON.parse(gh(['pr','list','--repo',repo,'--head',`automation/financing-${date}`,'--state','open','--json','headRefName,state,url,headRefOid']));
   const review = pendingReviewStatus(prs, date);
   if (review) {
-    const checks = JSON.parse(gh(['api',`repos/${repo}/commits/${review.head_sha}/check-runs?per_page=100`]));
-    const ci = inspectProductionChecks(checks.check_runs || [], review.head_sha);
+    const pages = JSON.parse(gh(['api',`repos/${repo}/commits/${review.head_sha}/check-runs?per_page=100`,'--paginate','--slurp']));
+    const ci = inspectProductionChecks(pages.flatMap(page => page.check_runs || []), review.head_sha);
     console.log(JSON.stringify(pendingReviewStatus(prs, date, ci.status)));
   } else {
     const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion']));
