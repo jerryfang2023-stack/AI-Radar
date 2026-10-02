@@ -1,5 +1,6 @@
 // Use the reviewed public index only; no protected detail or demo copy.
 const { isFundingVisible } = require("./funding-visibility.js");
+const { companyDisplayName } = require('./company-display.js');
 function chinaDate(now = new Date()) {
   return new Date(now.getTime() + 8 * 3600000).toISOString().slice(0, 10);
 }
@@ -14,7 +15,7 @@ function selectFeatured(cards, market, today = chinaDate(), observations = {}) {
     const product = (c.products || []).find(p => typeof p === "string" && p.trim() && p !== c.company) || "";
     const sector = c.subcategory || c.category || "";
     const observation = observations[c.id] || "";
-    return { id: c.id, date:c.date, dateShort:c.date.slice(5), company: c.company, product: product.startsWith(c.company + " ") ? product.slice(c.company.length).trim() : product, amount: c.amount || "金额未披露", round: c.round || "轮次未披露", sector, observation };
+    return { id: c.id, date:c.date, dateShort:c.date.slice(5), company: companyDisplayName(c.company,c.marketRegion), product: product.startsWith(c.company + " ") ? product.slice(c.company.length).trim() : product, amount: c.amount || "金额未披露", round: c.round || "轮次未披露", sector, observation };
   });
   return { cards: selected, date: latest, label: latest && latest !== today ? `最近披露 · ${latest.slice(5)}` : "" };
 }

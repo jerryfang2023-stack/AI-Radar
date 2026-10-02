@@ -3,15 +3,16 @@
   <view wx:if="{{entity}}" class="page-content entity-detail">
     <view class="entity-hero">
       <text class="eyebrow">{{type === 'companies' ? (entity.categoriesText || 'AI 企业') : (type === 'investors' ? '机构库' : (type==='products'?'产品库':'人物库'))}}</text>
-      <view class="hero-title"><view class="avatar serif">{{entity.initial}}</view><view><text class="name serif">{{entity.name}}</text><text class="role" wx:if="{{type === 'people'}}">{{entity.roleText}}</text></view></view>
+      <view class="hero-title"><view class="avatar serif">{{entity.initial}}</view><view><text class="name serif">{{entity.displayName || entity.name}}</text><text class="role" wx:if="{{type === 'people'}}">{{entity.roleText}}</text></view></view>
       <text wx:if="{{entity.summary}}" class="deck">{{entity.summary}}</text>
       <text wx:elif="{{type === 'investors'}}" class="deck">已投企业：{{entity.companiesText}}</text>
       <text wx:else class="deck">关联企业：{{entity.companiesText}}</text>
     </view>
 
     <view class="entity-actions"><button bindtap="toggleEntityFollow" loading="{{followBusy}}" disabled="{{followBusy}}">{{following?'已关注':'关注'}}</button><button wx:if="{{type==='companies' && entity.rounds.length}}" bindtap="compareCompany">加入对比</button><button wx:if="{{entity.website}}" bindtap="copyWebsite">复制官网</button></view>
-    <button wx:if="{{contentError && !contentLocked}}" class="plain-copy" bindtap="verifyServerAccess">{{contentError}}</button>
-    <view wx:if="{{contentLocked}}" class="content-access-gate">
+    <view wx:if="{{accessPending}}" class="plain-copy" aria-live="polite">正在加载档案…</view>
+    <button wx:if="{{contentError && !accessPending}}" class="plain-copy" bindtap="verifyServerAccess">{{contentError}}</button>
+    <view wx:if="{{contentLocked && !accessPending && lockReason !== 'error'}}" class="content-access-gate">
       <text class="gate-kicker">{{lockReason === 'expired' ? '浏览权益已到期' : lockReason === 'session' ? '登录状态待恢复' : '游客试读已完成'}}</text>
       <text class="gate-title serif">{{lockReason === 'session' ? '重新登录后继续浏览' : lockReason === 'expired' ? '开通会员查看完整档案' : '注册后查看完整档案'}}</text>
       <text class="gate-copy">主体名称和简介可见，履历、研究资料、关联关系与融资历史需有效浏览权益。</text>
@@ -19,7 +20,7 @@
       <text class="gate-note">可随时返回生态栏目。</text>
     </view>
 
-    <block wx:else>
+    <block wx:elif="{{!contentLocked && !accessPending}}">
 
     <block wx:if="{{entity.publicProfile}}">
       <view wx:if="{{entity.publicProfile.experienceSummary}}" class="detail-section"><text class="section-title serif">专业经历</text><text class="plain-copy">{{entity.publicProfile.experienceSummary}}</text></view>

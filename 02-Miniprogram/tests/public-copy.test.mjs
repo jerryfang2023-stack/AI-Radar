@@ -131,7 +131,7 @@ test("keeps lists public and gates only the second distinct detail behind a volu
     assert.doesNotMatch(logic, /onLoad\([\s\S]{0,800}registrationOpen:\s*true/u);
   }
   for (const source of [detailSource, entityDetailSource, reportDetailSource, sectorDetailSource]) {
-    assert.match(source, /wx:if="\{\{contentLocked\}\}"/u);
+    assert.match(source, /wx:if="\{\{contentLocked(?: && !accessPending && lockReason !== 'error')?\}\}"/u);
     assert.match(source, /bindtap="unlockContent"/u);
     assert.match(source, /<registration-sheet/u);
   }

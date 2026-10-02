@@ -1,3 +1,4 @@
+const {companyDisplayName}=require('./company-display.js');
 function normalize(value) {
   return String(value || "").trim().toLowerCase();
 }
@@ -39,7 +40,8 @@ function buildEntityLibrary(cards = [], details = {}) {
       key: companyId,
       type: "companies",
       name: companyName,
-      initial: companyName.slice(0, 1).toUpperCase(),
+      displayName: companyDisplayName(companyName,card.marketRegion),
+      initial: companyDisplayName(companyName,card.marketRegion).slice(0, 1).toUpperCase(),
       summary: detail.companySummary || card.summary || "企业介绍暂未披露",
       website: detail.website || "",
       headquarters: card.headquarters || "总部未披露",
@@ -137,7 +139,7 @@ function buildEntityLibrary(cards = [], details = {}) {
     founders: item.founders.map((founder) => ({ ...founder, key: personEntityKey(founder, item.name) })),
     secondary: [item.headquarters, item.products.slice(0, 2).join("、")].filter(Boolean).join(" · "),
     categoriesText: item.categories.slice(0, 2).join(" · "),
-    searchText: normalize([item.name, item.summary, item.headquarters, ...item.products, ...item.categories].join(" ")),
+    searchText: normalize([item.name, item.displayName, item.summary, item.headquarters, ...item.products, ...item.categories].join(" ")),
   })).sort((left, right) => String(right.latestDate).localeCompare(String(left.latestDate)));
 
   const investorItems = Array.from(investors.values()).map((item) => ({

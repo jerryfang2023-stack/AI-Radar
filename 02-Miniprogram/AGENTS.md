@@ -1,5 +1,7 @@
 # Guanlan Funding Mini Program
 
+Current source 1.2.3: entity detail permission verification has a separate pending state; never render a registration/renewal gate before the server result or treat network failures as denial. Late public catalog responses cannot replace a verified full profile. Chinese company titles use the reviewed display-name mapping in data-input/company-display-names.json; retain canonical names and keys for requests, links, follows and search. Add source evidence when extending the mapping; do not strip city or legal suffixes heuristically.
+
 Current source 1.2.1: directory markets are China/global only; list introductions clamp at four lines and public product-use previews stay bounded. Remove native canvases while financing sheets are open and redraw after dismissal. Profile actions share icon geometry and button styling. See docs/REVIEW-1.2.1.md.
 
 Current source 1.2.2: investor directory summaries use sourced investmentDirection, never general company descriptions or inferred portfolio mandates. Community protected entries use an inline gate and only explicit registration clicks open the shared registration sheet. Preserve unified reading entitlement and linked-member write restrictions; group application approval is not a browsing condition.
