@@ -121,21 +121,78 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Markus Flik 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "person",
+      "summary": "Markus Flik 是 Flik GmbH 的管理合伙人，拥有工业企业管理经历；其个人投资页面列出 Atira，Atira 官方种子轮公告也将他列为新投资人。",
+      "coverage_note": "个人官网核实其管理履历和对 Atira 的投资关联；Atira 官方公告确认他参与该轮。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "organization": "Flik GmbH",
+          "title": "管理合伙人",
+          "source_id": "markus_bio"
+        }
+      ],
+      "career": [
+        {
+          "organization": "多家工业企业",
+          "title": "首席执行官",
+          "period": "17 年",
+          "description": "曾在三家工业企业担任 CEO。",
+          "source_id": "markus_bio"
+        }
+      ],
+      "education": [
+        {
+          "institution": "斯图加特大学及苏黎世联邦理工学院（ETH Zurich）",
+          "qualification": "机械工程学习经历",
+          "source_id": "markus_bio"
+        },
+        {
+          "institution": "加州大学伯克利分校",
+          "qualification": "机械工程博士",
+          "source_id": "markus_bio"
+        }
+      ],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Atira 官方种子轮公告将 Markus Flik 列为新投资人；其个人官网也将 Atira GmbH 列入持股/投资页面。",
+          "source_id": "atira_seed_investor"
+        },
         {
           "description": "融资来源记录：Atira · 历史轮次未披露 · 个人投资者。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ea3a79586b031d21"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "markus_bio",
+          "source_url": "https://www.markus-flik.de/who-we-are.html",
+          "source_title": "Flik GmbH - Who we are",
+          "source_content_hash": "aa8fb2a454d1af3723a7426281b5ae8d906d388405966a5ccec0420a477b7dc4",
+          "quote": "Our managing partner Dr. Markus Flik studied mechanical engineering in Stuttgart & at ETH Zurich and received his doctorate from UC Berkeley.",
+          "quote_hash": "617a0139ab27216b47f1719df7b2910d18d0293ae1589552f5a997574cf1fad5"
+        },
+        {
+          "source_id": "markus_atira_holding",
+          "source_url": "https://www.markus-flik.de/beteiligungen.html",
+          "source_title": "Flik GmbH - Beteiligungen",
+          "source_content_hash": "12b6310dbf02272675f03a1eb68b5ed363632deb241f9ff43b18fd6a49dfce6c",
+          "quote": "Atira GmbH, München (seit 2025)",
+          "quote_hash": "73e9ec0907b4e95bc8a594fab046c996005e21c1da3869f8cd3c3930062dea17"
+        },
+        {
+          "source_id": "atira_seed_investor",
+          "source_url": "https://atira.ai/de/news",
+          "source_title": "News",
+          "source_content_hash": "27441bfd46efa200c293a7e4001049f8fc90bfd8c0eaabccb68c447271331d3c",
+          "quote": "The round includes industry leaders like Ann-Kristin Achleitner, Marc Bitzer (CEO of the Whirlpool Corporation), Dr. Markus Flik (multiple industrial boards), and Bastian Nominacher (co-founder and co-CEO of Celonis) as new investors.",
+          "quote_hash": "fd97b281856c3f2875d987103cbae42b408a79efe879d8db96168ae792575ee4"
+        },
         {
           "source_id": "FISRC-ea3a79586b031d21",
           "source_url": "https://thundertiger-europe.com/atira-17-5-million-accel-industrial-sales-ai/",
@@ -145,7 +202,7 @@
           "quote_hash": "12035122e81a64707a9f32128b5c44d9ed053b4db8acdb5af62582a5e40468e6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

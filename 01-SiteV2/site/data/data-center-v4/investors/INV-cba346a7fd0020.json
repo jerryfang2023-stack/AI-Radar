@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Luminous Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "coverage_note": "INCE Capital 官网的投资动态在华深智药融资新闻中列出 Luminous Ventures。本轮单独金额、时间及该机构的投资策略、团队或联系方式未获一手资料核实。",
+      "summary": "INCE Capital 官网称华深智药多轮累计融资 7.87 亿美元，并在列示本轮投资方时列出 Luminous Ventures。公告未披露 Luminous Ventures 的单独投资金额或时间。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "INCE Capital 官网的华深智药融资公告将 Luminous Ventures 列为本轮投资方之一。",
+          "source_id": "ince_helixon_round"
+        },
         {
           "description": "融资来源记录：华深智药 · 多轮融资 · 2026-03-25 · 本轮参投 · 7.87亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-972ef11d09af7ec8"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "ince_helixon_round",
+          "source_url": "https://www.incecap.com.cn/news/detail/268",
+          "source_title": "新闻动态-渶策资本官网",
+          "source_content_hash": "8db76bb9b75b6d9bcd340da0f74c6066d5a68e52b36ea779090b7ad623009361",
+          "quote": "本轮投资方包括一批全球领先机构，如Dimension Capital、DST Global、INCE Capital、Luminous Ventures、Miracle Capital、赛诺菲，以及由高瓴和辉瑞共同发起设立的Biotech Development Fund",
+          "quote_hash": "4bae1309a0af2e73957b0b949d24db4bc8d8012fa91f14be5243c97ee9fa6075"
+        },
         {
           "source_id": "FISRC-972ef11d09af7ec8",
           "source_url": "https://vc.pedaily.cn/company/205217.html",
@@ -161,7 +173,7 @@
           "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

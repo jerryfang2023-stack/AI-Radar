@@ -137,21 +137,73 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Elizabeth DePalmer (Atomic Workshop) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "person",
+      "coverage_note": "Atomic Workshop 团队页将 Elizabeth “Eli” DePalmer 列为 Managing Partner；Hostie 公司融资新闻稿将她列在 Atomic Workshop 参与投资者中。",
+      "summary": "Elizabeth “Eli” DePalmer 是 Atomic Workshop 的 Managing Partner，负责餐厅前场团队、员工文化与福利及业务管理；Hostie 公司融资新闻稿将她列为 Atomic Workshop 的参与投资者。",
+      "current_roles": [
+        {
+          "title": "Managing Partner",
+          "organization": "Atomic Workshop",
+          "source_id": "atomic_team_role"
+        }
+      ],
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "career": [
+        {
+          "organization": "Atomic Workshop",
+          "title": "Managing Partner",
+          "period": "现任（官网团队页）",
+          "description": "负责前场团队、员工文化与福利及餐厅业务侧管理。",
+          "source_id": "atomic_team_role"
+        }
+      ],
+      "education": [
+        {
+          "institution": "California Culinary Academy",
+          "qualification": "完成 Chef’s curriculum（厨师课程）",
+          "source_id": "atomic_team_bio"
+        }
+      ],
+      "experience_summary": "在进入餐饮行业前有数年销售与市场营销工作经历，之后完成厨师课程并加入餐饮经营。",
       "track_record": [
+        {
+          "description": "Hostie 的公司融资新闻稿在其 $12M Series A 相关投资者名单中列出 Elizabeth DePalmer of Atomic Workshop。",
+          "source_id": "hostie_series_a"
+        },
         {
           "description": "融资来源记录：Hostie · A轮 · 2026-07-08 · 本轮天使投资人 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d81171d6c6910b85"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "atomic_team_role",
+          "source_url": "https://atomic-workshop.com/team",
+          "source_title": "The Team - Atomic Workshop &mdash; Atomic Workshop",
+          "source_content_hash": "37d089423bc4bff2c0cc8b9c5c2b6d9e76b927fa40b720a7c22ec5fcf1bf36ea",
+          "quote": "As Managing Partner, she manages the Front of House teams; the People, Culture & Benefits; and the business side of the restaurants.",
+          "quote_hash": "5068d9c71db5bdc193970c18e6c549304442bec72dbf548a954b37961ac8e73b"
+        },
+        {
+          "source_id": "atomic_team_bio",
+          "source_url": "https://atomic-workshop.com/team",
+          "source_title": "The Team - Atomic Workshop &mdash; Atomic Workshop",
+          "source_content_hash": "37d089423bc4bff2c0cc8b9c5c2b6d9e76b927fa40b720a7c22ec5fcf1bf36ea",
+          "quote": "After several years in Sales and Marketing working with everything from power tools to teddy bears, Eli decided to follow her heart and completed the Chef’s curriculum at CA Culinary Academy.",
+          "quote_hash": "f230ffa10338ff17aa7499071be95d2c3f7b9ec901462b7afb3657c4fc3e080e"
+        },
+        {
+          "source_id": "hostie_series_a",
+          "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
+          "source_content_hash": "092c8022c5ecc67b43c42ddc70e993697186d6a2f718bc68ae900a27c7356e16",
+          "quote": "Stuart Brioza, Nicole Krasinski, and Elizabeth DePalmer of Atomic Workshop",
+          "quote_hash": "11c559e08dad657c07a7f9c8ce27ec2aa740ad037753e1d3f0f024534fddd13b"
+        },
         {
           "source_id": "FISRC-d81171d6c6910b85",
           "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
@@ -161,7 +213,7 @@
           "quote_hash": "11c559e08dad657c07a7f9c8ce27ec2aa740ad037753e1d3f0f024534fddd13b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

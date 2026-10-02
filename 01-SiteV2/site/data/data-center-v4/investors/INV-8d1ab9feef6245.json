@@ -123,19 +123,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "KT 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构身份与基础业务依据 KT 官网核实；Rebellions 官方公告称 KT 领投一轮融资，融资事实沿用发行方披露。",
+      "summary": "KT Corporation（KT）是韩国通信与平台企业。KT 官网称其于 1981 年成立；AI 芯片企业 Rebellions 的官方公告称，KT 领投了其 2024 年 Series B 融资。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "韩国信息通信行业企业，官网将其定位为 AX Platform Company。",
+          "source_id": "kt_company"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1981 年。",
+          "source_id": "kt_company"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024-01-30",
+          "description": "Rebellions 官方公告称 KT 领投其 1.24 亿美元 Series B 融资。",
+          "source_id": "kt_rebellions"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Rebellions 官方公告称其 2024 年 Series B 融资由 KT 领投，并列出 kt cloud 等其他参与方。",
+          "source_id": "kt_rebellions"
+        },
         {
           "description": "融资来源记录：Rebellions Inc. · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1bd642bd46e5675c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "KT 官方网站",
+          "value": "KT Corporation",
+          "url": "https://corp.kt.com/eng/html/intro/main.html",
+          "source_id": "kt_company"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "kt_company",
+          "source_url": "https://corp.kt.com/eng/html/intro/main.html",
+          "source_title": "Our Company | KT",
+          "source_content_hash": "3ff4d36853d1c7e0b301305cf18e2e576f8b9c244964981234bec621a7e89585",
+          "quote": "Since its founding in 1981, KT has led Korea’s information and communications industry.",
+          "quote_hash": "797c24efad623e7190641b851694bdc2fff42149e37d8904bbdca00133a42213"
+        },
+        {
+          "source_id": "kt_rebellions",
+          "source_url": "https://rebellions.ai/newsroom/korean-ai-chipmaker-rebellions-closes-124m-series-b-fundraise/",
+          "source_title": "Korean AI chipmaker Rebellions Closes $124M Series B Fundraise - Rebellions",
+          "source_content_hash": "64bdb842da1c38c83d71ec9caabf8372769cfcb018fc851e67347813a3980068",
+          "quote": "The funding was led by KT, Korea’s premier datacenter corporation, and included notable participation from KT’s subsidiary kt cloud and Shinhan Venture Investment.",
+          "quote_hash": "a875b7123a67287bb97d71c2827f603d0f7c2b39fdffae7012b56f31a7732d61"
+        },
         {
           "source_id": "FISRC-1bd642bd46e5675c",
           "source_url": "https://app.fundz.net/fundings/rebellions-funding-round-c52470",
@@ -145,7 +192,7 @@
           "quote_hash": "0d216e74fe4708aa8dbde7fe908fd76dcf31573cac944588137ef79f714a56d0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

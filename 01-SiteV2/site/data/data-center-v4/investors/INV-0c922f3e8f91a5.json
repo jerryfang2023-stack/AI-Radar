@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "MCJ 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "MCJ 官网将其定位为投资气候与产业转型领域创业公司的投资机构，并将 LGND 列入其投资组合。",
+      "coverage_note": "身份和投资组合关系均来自 MCJ 官网；该档案仅记录官网确认的投资关系，不据此回填 LinkedIn 未能访问的融资轮次或金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "MCJ 官网将 LGND 列为其投资组合公司，并发布“MCJ’s Investment in LGND”介绍。",
+          "source_id": "mcj_lgnd_portfolio"
+        },
         {
           "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 本轮参投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-295efcf234fa6b4b"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "mcj_identity_portfolio",
+          "source_url": "https://mcj.vc/capital",
+          "source_title": "Venture Capital &mdash; MCJ",
+          "source_content_hash": "a0ee3ea17be0bbc65b74a51456e8ac150ba4186ca0bd0b7b406d91bebee3bf41",
+          "quote": "MCJ backs extraordinary founders leading the transition of energy and industry and solving the inevitable impacts of climate change.",
+          "quote_hash": "14d71a6a834c78437f58ac129e3cd91d30da244aa7880abb4900afd41b7dc6a1"
+        },
+        {
+          "source_id": "mcj_lgnd_portfolio",
+          "source_url": "https://mcj.vc/capital",
+          "source_title": "Venture Capital &mdash; MCJ",
+          "source_content_hash": "a0ee3ea17be0bbc65b74a51456e8ac150ba4186ca0bd0b7b406d91bebee3bf41",
+          "quote": "MCJ’s Investment in LGND",
+          "quote_hash": "4d94f455abcb46aba19184faaa8159fbb9f4841876139a44554d6292984f1b1e"
+        },
         {
           "source_id": "FISRC-295efcf234fa6b4b",
           "source_url": "https://www.linkedin.com/posts/climatecap_exclusive-lgnd-wants-to-make-chatgpt-for-activity-7349146378834501632-ku4h",
@@ -161,7 +185,7 @@
           "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

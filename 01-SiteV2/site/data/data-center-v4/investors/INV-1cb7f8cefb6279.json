@@ -137,12 +137,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Tether 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Tether 通过官网所称的 Tether Ventures 开展投资活动，重点关注支付基础设施、可再生能源、比特币、农业、人工智能和代币化等方向。",
+      "coverage_note": "投资板块和方向均按 Tether 官网自述呈现；Tether Ventures 在此作为其官网投资板块名称，不推断为独立法律主体。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网列出的方向包括支付基础设施、可再生能源、比特币、农业、人工智能及代币化。",
+          "source_id": "tether_ventures_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +158,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "tether_ventures",
+          "source_url": "https://tether.io/ventures/",
+          "source_title": "Ventures - Tether.io",
+          "source_content_hash": "f3f66483261f04ffdc6c0fd4197b0cd528b4e5c9844f6850433c5c6ab7b0c6ee",
+          "quote": "At Tether, we invest in transformative companies, visionary teams, and groundbreaking technologies that champion decentralization and individual sovereignty.",
+          "quote_hash": "3e0a04112578e2320743865666c4f1a7919ffe3dca1110e3ca51c26377980a39"
+        },
+        {
+          "source_id": "tether_ventures_focus",
+          "source_url": "https://tether.io/ventures/",
+          "source_title": "Ventures - Tether.io",
+          "source_content_hash": "f3f66483261f04ffdc6c0fd4197b0cd528b4e5c9844f6850433c5c6ab7b0c6ee",
+          "quote": "Our focus spans critical sectors including payment infrastructure, renewable energy, Bitcoin, agriculture, artificial intelligence, and tokenization.",
+          "quote_hash": "d1d4c558903783ca8a2091af89a3ea42d1333e90092ec752154bef8770d39bf1"
+        },
         {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -161,7 +188,7 @@
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

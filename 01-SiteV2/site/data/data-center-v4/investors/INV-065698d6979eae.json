@@ -178,14 +178,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "天图投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "天图投资的香港上市发行人以 TIAN TU CAPITAL 名称在港交所披露信息；投资界报道其参与智推时代天使轮。",
+      "coverage_note": "发行人名称和代码来自港交所；融资关系来自投资界报道。来源未披露天图投资单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "投资界报道天图投资参与智推时代天使轮融资。",
+          "source_id": "tiantu_zhi_tui_seed"
+        },
         {
           "description": "融资来源记录：智推时代 · 天使轮 · 2026-07-07 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-602fdc3dbd5462df"
@@ -195,8 +204,23 @@
           "source_id": "FISRC-eea8e7a4669a91fa"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "tiantu_hkex_identity",
+          "source_url": "https://www1.hkexnews.hk/search/titlesearch.xhtml?category=0&lang=EN&market=SEHK&stockId=1000202949",
+          "source_title": "Listed Company Information Title Search",
+          "source_content_hash": "035ad1de7fc10896ed72a98c9a110635a5931a882f4219f2d23d1bd8492d5e4e",
+          "quote": "Stock Code: 01973 Stock Short Name: TIAN TU CAPITAL",
+          "quote_hash": "5d71b7ac87114c641f7b613311afbe9884e25ab7e0492fb3db4f70405c1f062c"
+        },
+        {
+          "source_id": "tiantu_zhi_tui_seed",
+          "source_url": "https://news.pedaily.cn/202607/565918.shtml",
+          "source_title": "首发| AI搜索诞生一个天使轮，智推时代融资数千万元_投资界",
+          "source_content_hash": "fe0ec11bf2e42e8201772d2a95e3a1edff12ea6146274bede0aaeaadedb3fe62",
+          "quote": "天图投资、知名个人投资人魏巍等参与投资",
+          "quote_hash": "0c067f122165db73ab50b2f71a923539ed3713312f4d99e1fa780be1b1cc676c"
+        },
         {
           "source_id": "FISRC-602fdc3dbd5462df",
           "source_url": "https://news.pedaily.cn/202607/565918.shtml",
@@ -214,7 +238,7 @@
           "quote_hash": "1ac21d296e9d45858e33702b8083d80ef4d3288b3d973093c06dbfb7751fb3ba"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

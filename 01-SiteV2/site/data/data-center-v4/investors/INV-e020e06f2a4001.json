@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Principal VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Principal VC 的官网将机构称为 Principal Venture Partners（PVP），定位为投资早期 AI 原生创业公司；TechCrunch 将 Principal VC 列入 Infinity 的 1500 万美元融资投资者名单。",
+      "coverage_note": "官网可核实 Principal Venture Partners 的机构定位，TechCrunch 融资报道采用 Principal VC 名称并核实其参与 Infinity 融资。未披露该机构单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "TechCrunch 报道将 Principal VC 列为 Infinity 2026 年 1500 万美元融资的投资者；未披露单独投资金额。",
+          "source_id": "principal_infinity_round"
+        },
         {
           "description": "融资来源记录：Infinity · 种子轮 · 2026-07-20 · 本轮参投 · $15M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fe9df758c254a64e"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "principal_official_identity",
+          "source_url": "https://www.principalvc.com/about",
+          "source_title": "About",
+          "source_content_hash": "a5f51cda22fa37797a63edd0a51d3cc684046330d1356cfcb0a10f66bf06d695",
+          "quote": "Founded in 2024, PVP is a venture capital firm focused on identifying and nurturing early stage, AI-native startups that will remake entire industries, such as insurance, logistics, and healthcare.",
+          "quote_hash": "eeb8dca5bf5a4a80ff89081d3fe83c57476ecec690e8a2d11585677f25546a53"
+        },
+        {
+          "source_id": "principal_infinity_round",
+          "source_url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/",
+          "source_title": "Inference startup Infinity raises $15M from Touring Capital, OpenAI and Anthropic researchers | TechCrunch",
+          "source_content_hash": "eb3e58d226dcceb5bb7be84464bfbf40c7fbc3758cb4e8cb6ebbccc4fff295e3",
+          "quote": "AI infrastructure company Infinity announced a $15 million raise at a $100 million valuation on Monday from investors including Touring Capital, Principal VC, and researchers from companies such as OpenAI and Anthropic.",
+          "quote_hash": "c2583bae161f96669cd9b681b0c36835933d84d199bf5cf2d9be81a044aa1466"
+        },
         {
           "source_id": "FISRC-fe9df758c254a64e",
           "source_url": "https://techcrunch.com/2026/07/20/inference-startup-infinity-raises-15m-from-touring-capital-openai-and-athropic-researchers/",
@@ -161,7 +185,7 @@
           "quote_hash": "e9a74fcd638618c0ae2b7da37f095c3d06221cfd6c7eb4427965a79cc898eb3e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

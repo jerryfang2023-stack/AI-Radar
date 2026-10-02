@@ -237,14 +237,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "信宸资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "信宸资本是中信资本的私募股权投资业务。投资界报道其与德诚资本联合领投宇道生物 C1 轮。",
+      "coverage_note": "机构身份由中信资本官网确认；具体融资参与来自投资界和投中网报道，未披露信宸资本单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "投资界 2026 年 9 月 15 日报道，信宸资本与德诚资本联合领投宇道生物 C1 轮。",
+          "source_id": "trustar_yudao_c1"
+        },
         {
           "description": "融资来源记录：上海宇道生物技术有限公司 · C1轮 · 2026-09-15 · 本轮联合领投 · 数千万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5567e9a53d1316c"
@@ -258,8 +267,31 @@
           "source_id": "FISRC-5a92715d1392fa36"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "trustar_citic_identity",
+          "source_url": "https://www.citiccapital.com/zh/business/private-equity/",
+          "source_title": "私募股权投资 - Citic Capital Citic Capital",
+          "source_content_hash": "83b78f75c847682e605d9584277b3e5509bb217281791bd7e8e621badf268e88",
+          "quote": "中信资本的私募股权投资业务——信宸资本是一家亚洲领先的私募股权投资公司",
+          "quote_hash": "e0cdfffa8896b6757486d1f8bddf06f54c2164c2095a7839a7cee3da796a9a97"
+        },
+        {
+          "source_id": "trustar_yudao_c1",
+          "source_url": "https://news.pedaily.cn/202609/569003.shtml",
+          "source_title": "宇道生物完成数千万美元C1轮融资,专攻难成药靶标的AI原生Biotech_投资界",
+          "source_content_hash": "1426d096eb591081b83a07cce68230485d82646c73cca6b2f52539cc51f3dbf6",
+          "quote": "由信宸资本与德诚资本联合领投",
+          "quote_hash": "def51424dd9cf02475e7acbb52e9ae3e0e42c0bb1ecd8197a02a657b46f9846e"
+        },
+        {
+          "source_id": "trustar_xuntu_b",
+          "source_url": "https://www.chinaventure.com.cn/news/113-20260914-393253.html",
+          "source_title": "讯兔科技（Alpha派）完成超3亿元B轮融资 | 投中网",
+          "source_content_hash": "1284cb99d61caf68f18362353e3472f07853937159e2b079ff92341f9e0569aa",
+          "quote": "信宸资本、钟鼎资本等头部创投机构和老股东的鼎力支持",
+          "quote_hash": "704b0cbcda0fab030d4582ddccf2c426628e6a839f697836f01f4297de357a9a"
+        },
         {
           "source_id": "FISRC-e5567e9a53d1316c",
           "source_url": "https://news.pedaily.cn/202609/569003.shtml",
@@ -285,7 +317,7 @@
           "quote_hash": "ad797fb27f2844c7ce3129a4889d312f976c874c9e9bafcf38fe6f63f94574e5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

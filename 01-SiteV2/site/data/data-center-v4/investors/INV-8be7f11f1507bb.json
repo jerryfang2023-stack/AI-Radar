@@ -139,19 +139,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Otherwise Fund 当前按“投资组织”收录。最新融资披露记录日期为 2023-06-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网对机构定位的公开说明较简短；Parabola 融资参与信息来自 TechCrunch 报道，作为单一已披露案例，不代表完整组合。",
+      "summary": "Otherwise 官方将自身描述为“创始人投资创始人”的网络，使命是增强创始人的能力。TechCrunch 报道将 Otherwise Fund 列为 Parabola 2023 年融资参与方之一。",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "投资模式",
+          "value": "创始人投资创始人的网络。",
+          "source_id": "otherwise_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道将 Otherwise Fund 列为 Parabola 2023 年 2400 万美元融资的参与方之一；此为公开披露的单一案例。",
+          "source_id": "otherwise_parabola"
+        },
         {
           "description": "融资来源记录：Parabola · B轮 · 2023-06-28 · 本轮参投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-20776ee2d93a4e99"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Otherwise Fund 官网",
+          "value": "Otherwise",
+          "url": "https://www.otherwisefund.com/",
+          "source_id": "otherwise_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "otherwise_home",
+          "source_url": "https://www.otherwisefund.com/",
+          "source_title": "Otherwise",
+          "source_content_hash": "f64df5caca6957ff0efd84ac3ad2f09f203c2f6be62a6212f344c37560fb28b6",
+          "quote": "Otherwise is a network of founders investing in founders",
+          "quote_hash": "77225ad30a0611b9fecec44d28f83ed1586d6b460edf60ea1f64807734bdfcb6"
+        },
+        {
+          "source_id": "otherwise_parabola",
+          "source_url": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup/",
+          "source_title": "Workflow automation startup Parabola raises $24M | TechCrunch",
+          "source_content_hash": "f26ea571b08019e8b11e16e84b8ea0b943a8315863a3f6180925e8dfb72bc1f4",
+          "quote": "with participation from strategic investor Flexport alongside Matrix, Thrive, Good Friends, Webflow, Otherwise Fund, Abstract Ventures and Merus Capital.",
+          "quote_hash": "1ec94451bd01e499a364968a73f77245b6f7aee1a6c5b54bf5dfbfa6194d2b65"
+        },
         {
           "source_id": "FISRC-20776ee2d93a4e99",
           "source_url": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup/",
@@ -161,7 +196,7 @@
           "quote_hash": "ba4678e2c789b897f041fe53687155d8361e5a6375f512bee89a0f091ba7907e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

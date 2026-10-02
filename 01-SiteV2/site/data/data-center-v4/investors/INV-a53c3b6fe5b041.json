@@ -122,12 +122,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Zero Prime Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "官网核实其品牌、投资方向和创始合伙人信息；未补录未经核验的基金规模或业绩。",
+      "summary": "Zero Prime Ventures 是一家面向技术型创业者的投资机构，官网称其支持工程师创办的企业，关注 AI 基础设施、平台及应用。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI 基础设施、平台和应用；强调支持技术型工程师创业。",
+          "source_id": "zero_focus"
+        },
+        {
+          "field": "founding_partner",
+          "label": "创始合伙人",
+          "value": "Pete Soderling",
+          "source_id": "zero_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,8 +148,36 @@
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Zero Prime Ventures 官网",
+          "value": "Zero Prime Ventures",
+          "url": "https://www.zeroprime.vc/",
+          "source_id": "zero_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "zero_focus",
+          "source_url": "https://www.zeroprime.vc/",
+          "source_title": "Zero Prime Ventures",
+          "source_content_hash": "78f7160b556becf65422ed51f4043307700734fcfec90e5d740d0a35630a0b84",
+          "quote": "We back deeply technical teams building the infrastructure, platforms and applications behind AI.",
+          "quote_hash": "9d11c4af97b8930fdbfc9c00c787fa09e865708555b1b46159406a4ed832a427"
+        },
+        {
+          "source_id": "zero_team",
+          "source_url": "https://www.zeroprime.vc/team",
+          "source_title": "Team | Zero Prime Ventures - Engineers Turned Investors",
+          "source_content_hash": "b316f724f828ee99bb0de28ba94d7704c2bee5c1c6cd2f511a56beccb553cebb",
+          "quote": "Pete Soderling | Founding Partner",
+          "quote_hash": "08efbe2a7adf6acae4f91c4fa60f824723a4882b5e7cbae02416e08144a0f540"
+        },
         {
           "source_id": "FISRC-50130a45d72291a2",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
@@ -146,7 +187,7 @@
           "quote_hash": "2f653aa9e0a1b1cead77e89e9a782db3c2fc2e35ebb2e67dc763689267e7fc34"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

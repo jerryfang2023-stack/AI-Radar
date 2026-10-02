@@ -137,12 +137,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Flexport 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2023-06-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Flexport 是面向全球贸易与物流的技术平台。官网将其描述为整合货运、履约、订单与库存信息的运营平台，并介绍其 AI 产品。",
+      "coverage_note": "公司业务范围依据 Flexport 官网；融资活动不在该机构背景页重复推断。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "官网描述其服务全球贸易与物流，并建设整合运输、履约、订单及库存的运营平台。",
+          "source_id": "flexport_platform"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +158,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "flexport_about",
+          "source_url": "https://www.flexport.com/company/about-us/",
+          "source_title": "About Flexport | Global Trade &amp; Logistics Platform | Flexport",
+          "source_content_hash": "95b51ceb9fc16b235b21fe99fa2461228e7fc43f0230189a864e3203cd626205",
+          "quote": "We're building the autonomous operating platform for global trade: AI that spots problems before they happen, calculates the fix, and executes it.",
+          "quote_hash": "8df68f971f572ee5255dd02ff9930d9f9b18f9a54a415a91f02778f1e655d865"
+        },
+        {
+          "source_id": "flexport_platform",
+          "source_url": "https://www.flexport.com/company/about-us/",
+          "source_title": "About Flexport | Global Trade &amp; Logistics Platform | Flexport",
+          "source_content_hash": "95b51ceb9fc16b235b21fe99fa2461228e7fc43f0230189a864e3203cd626205",
+          "quote": "Unify shipments, orders, and inventory in one AI-powered platform.",
+          "quote_hash": "b460871e827f93cb57fc807c6d7ca659c9f64529e72f3ac13b9b65cc0674be1b"
+        },
         {
           "source_id": "FISRC-20776ee2d93a4e99",
           "source_url": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup/",
@@ -161,7 +188,7 @@
           "quote_hash": "321e27289e0b1f72217930dfbf62538677e42459fa39c9e92fb0d95a608f6ff8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

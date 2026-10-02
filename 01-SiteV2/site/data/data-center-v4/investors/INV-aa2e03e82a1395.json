@@ -137,21 +137,92 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "NEC Corporation 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "公司身份、主要业务及总部信息取自 NEC 官网；NEC X 的设立和加速器计划是 NEC 2018 年公告的历史信息，不据此推断该计划目前仍在运行。",
+      "summary": "NEC Corporation 是一家日本科技公司，官网列出的主要业务为 IT 服务和社会基础设施。NEC 于 2018 年设立 NEC X，以利用硅谷创业生态推进新业务开发，并启动了创业加速器计划。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1899 年 7 月 17 日。",
+          "source_id": "nec_founded"
+        },
+        {
+          "field": "main_business",
+          "label": "主要业务",
+          "value": "IT 服务和社会基础设施。",
+          "source_id": "nec_business"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2018-06-20",
+          "description": "NEC 宣布在硅谷设立 NEC X，并表示该公司将推动开放式创新及新业务开发。",
+          "source_id": "nec_x"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Noetra Corp. · 政府及产业融资 · 2026-07-22 · 本轮参投 · 超过3800亿日元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e2099306a92fc69f"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NEC Corporation 官网",
+          "value": "NEC",
+          "url": "https://group.nec/global/en/about/corporate/profile/",
+          "source_id": "nec_identity"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "nec_identity",
+          "source_url": "https://group.nec/global/en/about/corporate/profile/",
+          "source_title": "Profile",
+          "source_content_hash": "791508192540da3b30556907faa6d28cfcae32138090dcc01b701ea0cf4130ed",
+          "quote": "NEC Corporation [Corporate Number: 7010401022916]",
+          "quote_hash": "a4333e49613e6244e01dea9b73b315894ea1ea38bdee0370139809c77fd2218d"
+        },
+        {
+          "source_id": "nec_founded",
+          "source_url": "https://group.nec/global/en/about/corporate/profile/",
+          "source_title": "Profile",
+          "source_content_hash": "791508192540da3b30556907faa6d28cfcae32138090dcc01b701ea0cf4130ed",
+          "quote": "Founded 1 1 17th July, 1899",
+          "quote_hash": "d6b6dc85f5296b611fa71fd9ed1c2ae68ce5dbc1295154645c2a4b4a3c51aa4f"
+        },
+        {
+          "source_id": "nec_business",
+          "source_url": "https://group.nec/global/en/about/corporate/profile/",
+          "source_title": "Profile",
+          "source_content_hash": "791508192540da3b30556907faa6d28cfcae32138090dcc01b701ea0cf4130ed",
+          "quote": "IT Services Business, Social Infrastructure Business",
+          "quote_hash": "107f6c47b30d4232541392506e7039ff71fb4993b09c8f6047bb8527015bf67f"
+        },
+        {
+          "source_id": "nec_x",
+          "source_url": "https://www.nec.com/en/press/201806/global_20180620_01.html",
+          "source_title": "NEC establishes &quot;NEC X&quot; in Silicon Valley: Press Releases | NEC",
+          "source_content_hash": "ee38346ccbbc1b273b92bee9039f7671d202a5d38b6be8bc3b49d2418cde523d",
+          "quote": "Tokyo, June 20, 2018 - NEC Corporation (NEC; TSE: 6701) today announced the establishment of NEC X, Inc. (NEC X) in Santa Clara, California, in the heart of Silicon Valley, in order to capitalize on the region's startup ecosystem and accelerate the development of new business based on the strengths of NEC's Central Research Laboratories technologies.",
+          "quote_hash": "ebae433ef0b60bc060dfa8836e6e35411847f7573ce0a2973dfd1a05d6d33014"
+        },
+        {
+          "source_id": "nec_program",
+          "source_url": "https://www.nec.com/en/press/201806/global_20180620_01.html",
+          "source_title": "NEC establishes &quot;NEC X&quot; in Silicon Valley: Press Releases | NEC",
+          "source_content_hash": "ee38346ccbbc1b273b92bee9039f7671d202a5d38b6be8bc3b49d2418cde523d",
+          "quote": "As one of the new company's first initiatives, NEC X will begin implementing the \"NEC Accelerator Program\" in July 2018 in order to launch the first startups in early 2019.",
+          "quote_hash": "334f82f2630843de4b23338648eeb08e706596ddd98bbc71885da4d185143bc7"
+        },
         {
           "source_id": "FISRC-e2099306a92fc69f",
           "source_url": "https://www.noetra.co.jp/pressrelease20260716-en",
@@ -161,7 +232,7 @@
           "quote_hash": "00cd2853e8b64bcad71d006817efe71475f8134f982d9944dcce31f2b0f07520"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

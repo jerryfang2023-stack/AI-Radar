@@ -178,14 +178,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jorn van Dijk 当前按“个人投资者”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "summary": "Framer CEO 兼联合创始人 Jorn van Dijk 被 Modem 官方融资公告列入其 440 万美元融资的个人天使支持者名单。",
+      "coverage_note": "人物身份来自 Framer 官方人物专访；天使投资关系来自被投公司 Modem 的官方融资公告。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Modem 官方公告将 Jorn van Dijk 列入该公司 440 万美元融资的天使支持者名单。",
+          "source_id": "jorn_modem_round"
+        },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
@@ -195,8 +204,23 @@
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "jorn_framer_identity",
+          "source_url": "https://www.framer.com/blog/why-designers-should-become-founders/",
+          "source_title": "From Mac Apps to a $2B Design Platform: Jorn van Dijk on Building Framer, Pivoting Under Pressure, and Designing in an AI World",
+          "source_content_hash": "0fa0013a8366882e639cbf40ebfeafd0a2a757b49ff629ecfebe33622cdd12d6",
+          "quote": "Framer CEO and co-founder Jorn van Dijk",
+          "quote_hash": "01d0a1aec23730f41711562b10b460804da228b4371db7f9b21bb01f6332370d"
+        },
+        {
+          "source_id": "jorn_modem_round",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
+          "quote": "Koen Bok and Jorn van Dijk (Framer)",
+          "quote_hash": "6924052e4067eb4a2eeeb8542068125fecde1b62dfdd7427afd77f9367652548"
+        },
         {
           "source_id": "FISRC-ce83b857608dabeb",
           "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
@@ -214,7 +238,7 @@
           "quote_hash": "6924052e4067eb4a2eeeb8542068125fecde1b62dfdd7427afd77f9367652548"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

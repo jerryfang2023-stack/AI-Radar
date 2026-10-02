@@ -137,21 +137,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Category Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Category Ventures 官网称其在最早期支持打造 AI 应用的创始团队；Mandel AI 的 390 万美元种子轮报道将其列为投资方之一。",
+      "coverage_note": "投资方向来自机构官网；Mandel AI 轮次及 Category Ventures 参投信息来自融资报道。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "最早期 AI 应用创业公司",
+          "source_id": "category_strategy"
+        }
+      ],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Tech.eu 报道将 Category Ventures 列为 Mandel AI 390 万美元种子轮投资方。",
+          "source_id": "category_mandel_round"
+        },
         {
           "description": "融资来源记录：Mandel AI · 种子轮 · 2026-03-25 · 本轮参投 · $3.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1913db3e18347025"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "category_strategy",
+          "source_url": "https://www.categoryvc.com/",
+          "source_title": "Category Ventures",
+          "source_content_hash": "c5f779075fb2d7707a05a1e67d87dacee74e3b7c40c7e4c567de19d486ce3a49",
+          "quote": "We partner with founders 1 building ambitious AI applications at the earliest stages.",
+          "quote_hash": "9409a13bd09444d99157377fc117f68e236afa484f91294aeaafcb802603e480"
+        },
+        {
+          "source_id": "category_mandel_round",
+          "source_url": "https://tech.eu/2026/03/25/y-combinator-backed-mandel-ai-raises-3-9m-to-automate-global-supply-chains/",
+          "source_title": "Y Combinator-backed Mandel AI raises $3.9M to automate global supply chains - Tech.eu",
+          "source_content_hash": "64e53be93514e7edc9f03b465f109841d60933ac9e148b208e2d3f2e0d005259",
+          "quote": "The round is backed by Y Combinator, Category Ventures, Ritual Capital, e2vc, and other Silicon Valley investors and angels.",
+          "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
+        },
         {
           "source_id": "FISRC-1913db3e18347025",
           "source_url": "https://tech.eu/2026/03/25/y-combinator-backed-mandel-ai-raises-3-9m-to-automate-global-supply-chains/",
@@ -161,7 +192,7 @@
           "quote_hash": "48c54af8cdccc275a87d59e0f5a844d471e259eac73584eaa7f3916d62a5e250"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

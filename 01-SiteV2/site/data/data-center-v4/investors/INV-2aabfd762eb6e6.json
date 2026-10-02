@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "1517 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "1517 Fund 是面向早期创业者的风险投资基金与社区，官网称其支持解决重大问题的大学辍学生及深科技科学家。",
+      "coverage_note": "基金定位、创立时间和投资阶段采用 1517 官方网站自述；未把网站展示的精选项目当作完整投资组合。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其在公司最早期阶段投资。",
+          "source_id": "1517_about"
+        },
+        {
+          "field": "founded",
+          "label": "创立时间",
+          "value": "官网称基金由 Thiel Fellowship 联合创始人于 2015 年创立。",
+          "source_id": "1517_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "1517_about",
+          "source_url": "https://1517fund.com/",
+          "source_title": "1517 Fund - Backing Dropouts, Students &amp; SciFi Science",
+          "source_content_hash": "be839427513498433bdf58528a1499c0d11cbdf1574988eb483c5fd1bc31a368",
+          "quote": "1517 is a venture capital fund and community supporting college dropouts solving hard problems and deep tech scientists with investment at the earliest stages of their companies.",
+          "quote_hash": "ca9fd5cb25f64a1c7f54aea4927862ab57b49e96a7001bcb34e8f5dd9ed9b9e0"
+        },
         {
           "source_id": "FISRC-086094933b1962b5",
           "source_url": "https://theaiinsider.tech/2026/02/04/positron-ai-raises-230m-series-b-at-over-1-billion-valuation-to-scale-energy-efficient-ai-inference/",
@@ -161,7 +186,7 @@
           "quote_hash": "76f05922dddf3379cab455bf86997d74c54329743387b6b1bf2e9265d97e3fe7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

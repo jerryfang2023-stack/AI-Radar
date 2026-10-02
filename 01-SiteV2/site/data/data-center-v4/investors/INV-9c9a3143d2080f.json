@@ -138,12 +138,16 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Parkway Venture Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "深科技，官网列出的领域包括人工智能、模拟、量子技术、普适数据和复杂工程。",
+          "source_id": "parkway_themes"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +155,40 @@
           "source_id": "FISRC-9b94f245fa27a161"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Parkway Venture Capital 官网",
+          "value": "Parkway VC",
+          "url": "https://www.parkway.vc/",
+          "source_id": "parkway_focus"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "官网核实机构名称及其深科技投资定位；未补录未经核实的基金规模或收益数据。",
+      "summary": "Parkway Venture Capital 是一家关注深科技领域的风险投资机构。官网将其投资重点概括为具有根本性突破的技术，并展示人工智能、模拟、量子技术、普适数据和复杂工程等方向。",
       "sources": [
+        {
+          "source_id": "parkway_focus",
+          "source_url": "https://www.parkway.vc/",
+          "source_title": "Parkway VC - We put the future&#x27;s most important founders on a fast-track to success",
+          "source_content_hash": "2d46f99dba22e60b58b4a1634099b851d9cc8270c272f25e92e4f112210f6bfb",
+          "quote": "VC designed for fundamentally disruptive technologies",
+          "quote_hash": "96c4452b6709353d909f97cfd16f6da9d8f4e317021196f30c5e3a59d5eea97e"
+        },
+        {
+          "source_id": "parkway_themes",
+          "source_url": "https://www.parkway.vc/",
+          "source_title": "Parkway VC - We put the future&#x27;s most important founders on a fast-track to success",
+          "source_content_hash": "2d46f99dba22e60b58b4a1634099b851d9cc8270c272f25e92e4f112210f6bfb",
+          "quote": "Artificial Intelligence A.I. Simulation Simulation Quantum Tech Quantum Tech Ubiquitous Data Ubiquitous Data Complex Engineering Complex Engineering",
+          "quote_hash": "17ca8ac92c1649c1490efc64830b8409c202238bfc3f3f928411b9545df6d027"
+        },
         {
           "source_id": "FISRC-9b94f245fa27a161",
           "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
@@ -161,8 +197,7 @@
           "quote": "led by Parkway Venture Capital",
           "quote_hash": "12c195e14088aa3165cd3bcfa1c6ff5feb224a8dfec0a6476a45dd7fb5e641ed"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

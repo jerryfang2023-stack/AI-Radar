@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "GU Equity Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "韩国风险投资协会目录核实机构名称、官网和电话；GU 官网自述其为与具备创新洞察力的企业家合作的风险投资机构。",
+      "summary": "GU Equity Partners（韩文官网名：지유투자）是一家韩国风险投资机构，官网称其与具有创新洞察力的企业家合作。",
+      "facts": [
+        {
+          "field": "organization_verification",
+          "label": "机构核验",
+          "value": "韩国风险投资协会会员名录列有 GU Equity Partners。",
+          "source_id": "gu_directory"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网自述为与具备创新洞察力的企业家并肩合作。",
+          "source_id": "gu_approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,42 @@
           "source_id": "FISRC-4e441239551a1fd6"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "GU Equity Partners 官网（协会名录）",
+          "value": "GU Equity Partners",
+          "url": "https://www.guequity.co.kr/",
+          "source_id": "gu_directory"
+        },
+        {
+          "kind": "phone",
+          "label": "协会名录电话",
+          "value": "02-561-5274",
+          "source_id": "gu_directory"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "gu_directory",
+          "source_url": "https://www.kvca.or.kr/en/Program/membership_directory/list.html?a_cd=1&a_gb=eng&a_item=0&sm=2_1",
+          "source_title": "KVCA - DIRECTORY > Membership Directory",
+          "source_content_hash": "df56ed62653b12208cd396fa611abb0618f31ec871c12a1a5ea40be451cb2536",
+          "quote": "181 GU Equity Partners 02-561-5274 www.guequity.co.kr",
+          "quote_hash": "4c0d372a0e9e93283ca6b4e4fa3292a1721d3745434babeb994dc0c2bdbb01aa"
+        },
+        {
+          "source_id": "gu_approach",
+          "source_url": "https://www.guequity.co.kr/",
+          "source_title": "지유투자",
+          "source_content_hash": "82f4ffaa2a896bb560568657b74eb65ec2b4f75042a4b1e348e00527f504e2f0",
+          "quote": "지유투자는 창조적이고 혁신적인 통찰력을 가진 기업가의 도전에 함께하는 벤처캐피탈입니다",
+          "quote_hash": "3964ec222cd4cfcb4b97510d37017d7cb7a360914509b02be4ccabf15ce49bc6"
+        },
         {
           "source_id": "FISRC-4e441239551a1fd6",
           "source_url": "https://en.wowtale.net/2026/08/14/234729/",
@@ -161,7 +208,7 @@
           "quote_hash": "743fd2dbf3333a810f80dc660202cf0502afc2a9e6aa8ef7d418fb8dc074c190"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

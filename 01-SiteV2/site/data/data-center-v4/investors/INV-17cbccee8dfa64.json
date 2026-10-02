@@ -137,11 +137,11 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Hamilton Helmer 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2023-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "person",
+      "summary": "Hamilton Helmer 是商业战略研究者、作者及投资人。其官网作者简介称，他长期从事战略咨询、基于战略洞察进行投资并教授战略；官网还列出其现任 Strategy Capital 联合创始人兼首席投资官。",
+      "coverage_note": "人物经历和职务依据其官网作者简介；未据此推断其完整投资组合或收益表现。",
       "facts": [],
       "milestones": [],
       "track_record": [
@@ -151,7 +151,63 @@
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "联合创始人兼首席投资官",
+          "organization": "Strategy Capital",
+          "source_id": "hamilton_strategy_capital"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Bain & Company",
+          "title": "任职经历；官网未说明职级",
+          "period": "任期未披露",
+          "description": "官网称其在创办 Helmer & Associates 前曾任职于 Bain & Company。",
+          "source_id": "hamilton_bain"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Yale University",
+          "qualification": "经济学博士",
+          "source_id": "hamilton_education"
+        }
+      ],
+      "experience_summary": "官网称其曾任策略顾问、主动股票投资者及 Stanford University 商业战略教师；具体教学年份和多数任期以官网披露为准。",
       "sources": [
+        {
+          "source_id": "hamilton_7powers_bio",
+          "source_url": "https://7powers.com/author/",
+          "source_title": "About the Author &#8211; 7 Powers",
+          "source_content_hash": "0675d026f15fc6e9efd6d2ea58dbe1236b190709528cba0274ddc6f83446e359",
+          "quote": "Hamilton Helmer has spent his career as a practicing business strategist: advising companies, investing based on strategy insights, and teaching strategy.",
+          "quote_hash": "6f739f1cc7565f2499c857b1a7f6b776a48818912ffdb087662966310dda7977"
+        },
+        {
+          "source_id": "hamilton_strategy_capital",
+          "source_url": "https://7powers.com/author/",
+          "source_title": "About the Author &#8211; 7 Powers",
+          "source_content_hash": "0675d026f15fc6e9efd6d2ea58dbe1236b190709528cba0274ddc6f83446e359",
+          "quote": "In the last two decades, he has also utilized his Strategy concepts as an active equity investor and is currently Chief Investment Officer and Co-Founder Strategy Capital.",
+          "quote_hash": "4d3dece29c80e17c65762e308823300c4da16e2f0428e2737b5d00fa83af3378"
+        },
+        {
+          "source_id": "hamilton_bain",
+          "source_url": "https://7powers.com/author/",
+          "source_title": "About the Author &#8211; 7 Powers",
+          "source_content_hash": "0675d026f15fc6e9efd6d2ea58dbe1236b190709528cba0274ddc6f83446e359",
+          "quote": "Prior to Helmer & Associates, he was employed at Bain & Company.",
+          "quote_hash": "c673fbd112d1489839762442d51a1f88d46e93ed39bcd94057ab5fd60f049f99"
+        },
+        {
+          "source_id": "hamilton_education",
+          "source_url": "https://7powers.com/author/",
+          "source_title": "About the Author &#8211; 7 Powers",
+          "source_content_hash": "0675d026f15fc6e9efd6d2ea58dbe1236b190709528cba0274ddc6f83446e359",
+          "quote": "He holds a Ph.D. in Economics from Yale University and is a Phi Beta Kappa graduate of Williams College.",
+          "quote_hash": "10c9dcfbec7a7dcc91c528fb0b5862b5893c9dc267dab5a2e611b18ef9a7924c"
+        },
         {
           "source_id": "FISRC-9b0f32fe01d091cc",
           "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
@@ -161,7 +217,7 @@
           "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

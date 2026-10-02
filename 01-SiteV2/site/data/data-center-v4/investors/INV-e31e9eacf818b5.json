@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Restive Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Restive Ventures 是投资早期金融科技公司的投资机构。其官网发布的 Natural AI 投资说明称，Restive 是该团队首个联系的投资方，并参与其 980 万美元种子轮。",
+      "coverage_note": "机构定位来自 Restive Ventures 官网；Natural AI 融资关系来自 Restive 自述的投资文章。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Restive Ventures 官方投资文章称其参与 Natural AI 的 980 万美元种子轮。",
+          "source_id": "restive_natural_ai"
+        },
         {
           "description": "融资来源记录：Natural AI, Inc. · 历史轮次未披露 · 本轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6fe11d1e74b865b4"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "restive_official_identity",
+          "source_url": "https://www.restive.com/",
+          "source_title": "Building The World&#x27;s Best Fintech Companies | Restive",
+          "source_content_hash": "b20a5812d942e50e8f5358d7b17ec158a35fe7745cdd42ca69180fa8f010c287",
+          "quote": "Nothing is too early for us, and we work hard to unlock the capital, connections, and industry knowledge you need to grow quickly.",
+          "quote_hash": "2703c0704466a1dfe61caf6f89a5c58895ac1a4055acf4768930c73738069238"
+        },
+        {
+          "source_id": "restive_natural_ai",
+          "source_url": "https://www.restive.com/blog/why-we-invested-in-natural-ai",
+          "source_title": "Why We Invested in Natural AI",
+          "source_content_hash": "c45878607604dfc3bc0ca4f4be20e30ab979bf6b8fc46434f30e0e32a84a4c72",
+          "quote": "Today, Natural AI is announcing their $9.8M Seed round. We were the team’s first call and we’re super excited to back Natural AI",
+          "quote_hash": "c475eb3608f5135c2761a020e77e773a5562e9c6413229688cf30542fee3bae5"
+        },
         {
           "source_id": "FISRC-6fe11d1e74b865b4",
           "source_url": "https://www.linkedin.com/posts/jake-moross_big-day-for-the-natural-team-congrats-activity-7485041411692638208-9ph-",
@@ -145,7 +169,7 @@
           "quote_hash": "947f1e429113a5eef0eff25787d18b83fe12d68fab22ded41025fc448f261bfd"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

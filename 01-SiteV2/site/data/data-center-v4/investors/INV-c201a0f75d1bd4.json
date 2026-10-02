@@ -137,21 +137,82 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Maor Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "官方官网使用品牌名 Maor Investments；Qodo 公司公告在融资投资者名单中写作 Maor Ventures。本档案保留队列名称并记录官网品牌差异。",
+      "summary": "Maor（官网品牌 Maor Investments）是一家专注以色列科技公司的 growth VC。官网称其投资收入已验证、已有产品验证并计划扩张的企业；Qodo 公司公告将 Maor Ventures 列为其 7000 万美元 Series B 参与方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Growth VC。",
+          "source_id": "maor_strategy"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "已产生收入、验证产品市场并寻求扩张的以色列科技公司。",
+          "source_id": "maor_strategy"
+        },
+        {
+          "field": "geography",
+          "label": "重点地区",
+          "value": "以色列科技，并连接欧洲与以色列市场。",
+          "source_id": "maor_strategy"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-03-30",
+          "description": "Maor 官网报道 Qodo 完成 7000 万美元 Series B 融资。",
+          "source_id": "maor_qodo_news"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Qodo 公司公告将 Maor Ventures 列为其 7000 万美元 Series B 参与投资方之一。",
+          "source_id": "qodo_round"
+        },
         {
           "description": "融资来源记录：Qodo · B轮 · 2026-03-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f001682a294672d5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Maor Investments 官网",
+          "value": "Maor Investments",
+          "url": "https://maorinvestments.com/",
+          "source_id": "maor_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "maor_strategy",
+          "source_url": "https://maorinvestments.com/",
+          "source_title": "Maor Investments &#8211; INVESTING IN ISRAELI TECHNOLOGY",
+          "source_content_hash": "c65ef949ff58e99e1216ec44b648b412b22a9f07716d27b6cadee78a0627d34f",
+          "quote": "Maor is a VC fund focused on revenue-generating Israeli tech companies with an established proof of concept and a need to scale up.",
+          "quote_hash": "b0bfa7ec8149b14b785887d0d09d44bf9c1114385e2df1797280ea871786014f"
+        },
+        {
+          "source_id": "maor_qodo_news",
+          "source_url": "https://maorinvestments.com/news/",
+          "source_title": "News &#8211; Maor Investments",
+          "source_content_hash": "70c4d4613d8e2df6fbe47d86fd269935c1cbacba4cbd0dae10a8a4e30f790e67",
+          "quote": "Qodo Raises $70 Million Series B to Tackle AI’s Code Quality Problem",
+          "quote_hash": "4e9b124e0632843f83eb3e3a63c30f5a99fc1c5bfd5638d9856a48442544c85b"
+        },
+        {
+          "source_id": "qodo_round",
+          "source_url": "https://www.qodo.ai/blog/qodo-70m-series-b-shift-to-artificial-wisdom/",
+          "source_title": "Beyond Intelligence: Qodo’s $70M Series B and the Shift to Artificial Wisdom - Qodo",
+          "source_content_hash": "55acbc3a444492c967b56898d259977b5d75ccc33650fc2e9aba8f421f094629",
+          "quote": "The round was led by Qumra Capital, with participation from Maor Ventures",
+          "quote_hash": "7771e7aa1056cbc0c884c65abe72d4c4ed4bf69ef06a3e4946e5fbf202871410"
+        },
         {
           "source_id": "FISRC-f001682a294672d5",
           "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
@@ -161,7 +222,7 @@
           "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

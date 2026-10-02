@@ -137,21 +137,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Space Capital 当前按“投资组织”收录。最新融资披露记录日期为 2025-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "投资方向与 LGND 组合关系均来自 Space Capital 官网；LGND 组合页面未披露投资轮次或金额。",
+      "summary": "Space Capital 投资于航天经济的基础设施、分发和应用层，官网重点列出 GPS、地理空间情报和卫星通信等领域。其官网组合页收录 LGND；该页面未说明具体投资轮次或金额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "航天经济的基础设施、分发和应用层。",
+          "source_id": "space_strategy"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "重点领域",
+          "value": "GPS、地理空间情报和卫星通信。",
+          "source_id": "space_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Space Capital 官方组合页将 LGND 列为组合公司；该页未披露投资轮次或金额。",
+          "source_id": "space_lgnd"
+        },
         {
           "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 本轮参投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-295efcf234fa6b4b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Space Capital 官网",
+          "value": "Space Capital",
+          "url": "https://www.spacecapital.com/",
+          "source_id": "space_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "space_strategy",
+          "source_url": "https://www.spacecapital.com/about",
+          "source_title": "About | Space Capital",
+          "source_content_hash": "03baecd066c2deeb2189721c550d5b9850dfbf11515ef9bb6b341274887779e7",
+          "quote": "Early-stage companies across the three technology layers of the space economy",
+          "quote_hash": "4921607b89d7d42dd709427e5133fafa8fd449c83a50f009877b6c48bff423fb"
+        },
+        {
+          "source_id": "space_lgnd",
+          "source_url": "https://www.spacecapital.com/portfolio/lgnd",
+          "source_title": "LGND | Portfolio company | Space Capital",
+          "source_content_hash": "2e84dab0bafae03a992b534ea8586beee979a3b77059fc60e4952dfcbc237bf0",
+          "quote": "LGND is building AI infrastructure to make Earth observation data searchable, composable, and real-time",
+          "quote_hash": "622bff4e7f85154e0931d7e7646e7b19e470f3358405a4b0946ca70336de53a3"
+        },
         {
           "source_id": "FISRC-295efcf234fa6b4b",
           "source_url": "https://www.linkedin.com/posts/climatecap_exclusive-lgnd-wants-to-make-chatgpt-for-activity-7349146378834501632-ku4h",
@@ -161,7 +202,7 @@
           "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

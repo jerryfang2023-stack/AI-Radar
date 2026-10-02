@@ -178,14 +178,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Morgan Stanley 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Morgan Stanley 是全球金融服务机构；Arcade 官方公告称其对 Arcade 的 Series A 融资进行了战略投资。",
+      "coverage_note": "公司身份来自 Morgan Stanley 官网，融资关系来自 Arcade 官方公告；来源未指出另一独立 VC 法人或其单独出资额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Arcade 官方融资公告将 Morgan Stanley 列为 Series A 战略投资方。",
+          "source_id": "morgan_stanley_arcade_series_a"
+        },
         {
           "description": "融资来源记录：Arcade AI Inc. · A轮 · 2026-06-15 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0e863445463ffc16"
@@ -195,8 +204,23 @@
           "source_id": "FISRC-081d8fda5173dab0"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "morgan_stanley_identity",
+          "source_url": "https://www.morganstanley.com/what-we-do/investment-banking",
+          "source_title": "Investment Banking &amp; Capital Markets | Morgan Stanley",
+          "source_content_hash": "211aa9bc042ec69aee7ab425a9b3b4110f896c954ad03b8dbcabbcf6c1486ced",
+          "quote": "Morgan Stanley’s reputation as a global leader in investment banking",
+          "quote_hash": "01901b5b0d19a300e5b64a21b025330244d5894b9c67f5e214510ac208ca332c"
+        },
+        {
+          "source_id": "morgan_stanley_arcade_series_a",
+          "source_url": "https://www.arcade.dev/blog/arcade-series-a/",
+          "source_title": "Arcade.dev Raises $60M Series A",
+          "source_content_hash": "21dd7b706168e4df454a7c3da90744cd538fd57b58c4615ea62093daa6576b91",
+          "quote": "The round was led by SYN Ventures, with strategic investment from Morgan Stanley and Wipro.",
+          "quote_hash": "7e243cdcaf3795bcd37d98793750d89c383f1ad1add88a73195d3ce09226dcfc"
+        },
         {
           "source_id": "FISRC-0e863445463ffc16",
           "source_url": "https://siliconangle.com/2026/06/15/ai-agent-authorization-startup-arcade-nabs-60m-investment/",
@@ -214,7 +238,7 @@
           "quote_hash": "bedca6a5faa504970ac18d04c5590f3931153bc7e8cf49cb3dcaf62052477c13"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

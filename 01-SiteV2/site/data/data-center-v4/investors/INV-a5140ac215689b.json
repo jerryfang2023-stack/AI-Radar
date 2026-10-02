@@ -137,12 +137,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Oceans Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "官网核实机构定位和投资阶段；未将官网展示的网络规模当作基金规模或投资业绩。",
+      "summary": "Oceans Ventures 是一家在纽约创立、由运营者主导的风险投资机构。官网称其主要领投或共同领投 Pre-Seed 和 Seed 轮，并参与 Series A。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "主要领投或共同领投 Pre-Seed 和 Seed 轮，并参与 Series A。",
+          "source_id": "oceans_stage"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +157,28 @@
           "source_id": "FISRC-29a5cc0bbf402ca0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Oceans Ventures 官网",
+          "value": "Oceans",
+          "url": "https://www.oceans.ventures/",
+          "source_id": "oceans_stage"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "oceans_stage",
+          "source_url": "https://www.oceans.ventures/",
+          "source_title": "Oceans",
+          "source_content_hash": "2886be20934755c695a19ccb4348e4b3c994c1b5ed5d5fede135ac7a3eb608e8",
+          "quote": "An operator-led venture firm built in New York. We lead and co-lead pre-seed and seed and co-invest at Series A.",
+          "quote_hash": "5b6d75dc8e805fed61fa85234926040912ca92abfb685ab0b689431aecba1d1b"
+        },
         {
           "source_id": "FISRC-29a5cc0bbf402ca0",
           "source_url": "https://www.calcalistech.com/ctechnews/article/bkcksmp11gx",
@@ -161,7 +188,7 @@
           "quote_hash": "fa79fa9fa70619b2d600eb90b691d577c04d56a6859fa5f80929c00b8e5ee252"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

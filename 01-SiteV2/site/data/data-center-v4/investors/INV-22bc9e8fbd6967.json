@@ -236,12 +236,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Carmignac 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Carmignac 是一家成立于 1989 年、由家族和员工持有的欧洲独立投资管理机构。官网称其采用以信念为基础的投资方法，并通过多项聚焦型策略管理资产。",
+      "coverage_note": "公司历史和投资方法均依据 Carmignac 官方介绍；未据此推断特定基金表现。",
+      "facts": [
+        {
+          "field": "ownership",
+          "label": "所有权结构",
+          "value": "官网称其由家族和员工持有。",
+          "source_id": "carmignac_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方法",
+          "value": "官网称其采用 conviction-based 方法，并设置多项聚焦型策略。",
+          "source_id": "carmignac_approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -258,7 +271,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "carmignac_about",
+          "source_url": "https://www.carmignac.com/en-fr/about-us",
+          "source_title": "Discover our Company | Carmignac",
+          "source_content_hash": "b99767323ff369d90d4455ee8ecf65000261a5467280c44b304a17f3f7f99e0b",
+          "quote": "We are an independent – family and employee-owned – European investment management boutique established in 1989.",
+          "quote_hash": "91fc07674986fdaebf853b02f7652f3a85096a8d505f60715570339410ba027e"
+        },
+        {
+          "source_id": "carmignac_approach",
+          "source_url": "https://www.carmignac.com/en-fr/about-us",
+          "source_title": "Discover our Company | Carmignac",
+          "source_content_hash": "b99767323ff369d90d4455ee8ecf65000261a5467280c44b304a17f3f7f99e0b",
+          "quote": "At Carmignac, we adopt a conviction-based approach, embodied in a number of focused investment strategies",
+          "quote_hash": "f23224455fa58904fa27b0c0bcd131668e954a4bb0b82e9808706bc3449f44f6"
+        },
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
           "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
@@ -284,7 +317,7 @@
           "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

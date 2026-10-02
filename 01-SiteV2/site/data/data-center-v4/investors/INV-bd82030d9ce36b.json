@@ -178,14 +178,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Comma Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "Comma Capital 官方网站为 comma.vc；Lemma 的公司融资公告将 Comma Capital 列为投资方。",
+      "summary": "Comma Capital 是一家位于纽约与旧金山、关注早期阶段的投资机构。Lemma 的发行方融资公告将 Comma Capital 列为其 230 万美元 pre-seed 轮参与方。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "最早期阶段。",
+          "source_id": "comma_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Lemma 公司公告列出 Comma Capital 为其 230 万美元 pre-seed 轮投资方之一。",
+          "source_id": "lemma_round"
+        },
         {
           "description": "融资来源记录：Lemma · 预种子轮 · 2026-08-07 · 本轮参投 · $2.3M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-efe4db4aff32c4ea"
@@ -195,8 +206,32 @@
           "source_id": "FISRC-60fb49b2b22b693c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Comma Capital 官网",
+          "value": "Comma Capital",
+          "url": "https://comma.vc/",
+          "source_id": "comma_site"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "comma_site",
+          "source_url": "https://comma.vc/",
+          "source_title": "Comma Capital",
+          "source_content_hash": "a1a0e167d5ab8aeb7deaabc27a88229c8d80b5fd1bc89763488b9976525ac93c",
+          "quote": "Investing at the earliest stages. Based in New York City & San Francisco.",
+          "quote_hash": "6f426aba3106b78a137c6696c7f35c088d0a8dab744f787886f37d29bc015bf6"
+        },
+        {
+          "source_id": "lemma_round",
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/13/3344773/0/en/2-3m-pre-seed-for-lemma-backed-by-matrix-yc-openai-xai-operators-to-fix-silent-ai-agent-failures.html",
+          "source_title": "$2.3M Pre-Seed for Lemma – Backed by Matrix, YC &amp;",
+          "source_content_hash": "2a8ef9f549d47930bb09bafa4a1f791f04bfa6b0a1be8c41868b4656fdacf3b6",
+          "quote": "The round includes participation from Matrix, Y Combinator, Liquid 2 Ventures, Vermilion Cliffs Ventures, Irregular Expressions, Cervin Ventures, Comma Capital, Position Ventures, and Eight Capital",
+          "quote_hash": "b8a8719a097ca6fe1653e5e91862ccd1bc05cda88a5edc345b4c1d0e9c866004"
+        },
         {
           "source_id": "FISRC-efe4db4aff32c4ea",
           "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
@@ -214,7 +249,7 @@
           "quote_hash": "b2069cdc82007fee384147560f42f2d622fd407855e9be1a49baa4cbfebea567"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -233,12 +233,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Georgian 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Georgian 是一家专注高增长 B2B 科技企业的成长型股权投资机构，官网称其重点关注新一代 AI 技术栈。",
+      "coverage_note": "投资阶段、行业范围及策略采用机构官网自述；资产管理规模等时效性指标未纳入。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "重点关注新一代 AI 技术栈中的高增长 B2B 科技公司。",
+          "source_id": "georgian_investors"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -251,7 +258,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "georgian_investors",
+          "source_url": "https://georgian.io/for-investors",
+          "source_title": "Georgian | For Investors",
+          "source_content_hash": "c3da0041b27dbc0be2ac6a37f0a41e2cea2af0367fbf292b57bb9db87e1dd0df",
+          "quote": "Georgian focuses on high-growth B2B technology companies across the new AI stack.",
+          "quote_hash": "90af77cd6b3b162a6f1adba0f4c39c99c59357ba03794f8f2ae127d373b72005"
+        },
         {
           "source_id": "FISRC-329a0525efb0e1f9",
           "source_url": "https://supabase.com/blog/supabase-series-f",
@@ -269,7 +288,7 @@
           "quote_hash": "e347d23fe9ed9260e964427833a9010c6ab952a733e9191d54279e81ebed8ce8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

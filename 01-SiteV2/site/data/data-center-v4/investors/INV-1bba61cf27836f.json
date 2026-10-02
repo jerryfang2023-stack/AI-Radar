@@ -137,12 +137,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "9Yards 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "9Yards Capital Management LP（9Yards Capital）是美国 SEC 注册投资顾问。官网提示，注册本身不代表特定技能或培训水平；该页面也说明其组合公司示例不代表完整投资组合。",
+      "coverage_note": "注册顾问身份来自机构官网自述；官网明确说明注册不代表特定技能或培训水平，并提示其组合公司示例不构成完整投资组合。",
+      "facts": [
+        {
+          "field": "adviser_registration",
+          "label": "监管登记",
+          "value": "官网称 9Yards Capital Management LP 为 SEC 注册投资顾问，并明确说明该注册不代表特定技能或培训水平。",
+          "source_id": "9yards_disclosures"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +158,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "9yards_disclosures",
+          "source_url": "https://www.9yardscapital.com/disclosures",
+          "source_title": "Homepage | 9Yards Capital",
+          "source_content_hash": "e3667a54904c694a4a32b4053eb29822d9ec2555eef652270afe3fb70f9a1781",
+          "quote": "9Yards Capital Management LP (“9Yards Capital”) is an SEC registered investment Adviser.",
+          "quote_hash": "39059f622c8db947f30e658f9d34c78de92d43bedd1c75cee3629faba65b9191"
+        },
+        {
+          "source_id": "9yards_disclosure_limit",
+          "source_url": "https://www.9yardscapital.com/disclosures",
+          "source_title": "Homepage | 9Yards Capital",
+          "source_content_hash": "e3667a54904c694a4a32b4053eb29822d9ec2555eef652270afe3fb70f9a1781",
+          "quote": "Any reference to 9Yards as a registered investment adviser does not imply a certain level of skill or training.",
+          "quote_hash": "48b43693d1e408928032002c40e2a3550978f52fb7675e58f1f194d724061ed0"
+        },
         {
           "source_id": "FISRC-3bc5a4e973b035eb",
           "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
@@ -161,7 +188,7 @@
           "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

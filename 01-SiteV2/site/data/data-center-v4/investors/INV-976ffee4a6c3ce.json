@@ -121,21 +121,54 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "JJ Fliegelman 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "WayUp 于 2021 年宣布与 Yello 合并；公司首席执行官称该公司由她与 JJ Fliegelman 于 2014 年共同创立。",
+          "source_id": "jj_wayup"
+        },
         {
           "description": "融资来源记录：Blacksmith · 历史轮次未披露 · 种子轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ba55b463daced495"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "WayUp",
+          "title": "共同创办人、CTO",
+          "period": "2014 年创立；2021 年宣布合并",
+          "description": "WayUp 官方文章回顾其于 2014 年共同创立公司；公司于 2021 年宣布与 Yello 合并。资料未说明其合并后的任职情况。",
+          "source_id": "jj_wayup"
+        }
+      ],
+      "education": [],
+      "experience_summary": "可核实的公开经历为共同创立 WayUp 并担任 CTO；没有足够一手材料确认更早或合并后的履历。",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "person",
+      "coverage_note": "WayUp 与 Y Combinator 页面交叉核实其共同创办人及 CTO 经历；没有据此推断其并购后的任职情况或其他投资记录。",
+      "summary": "JJ Fliegelman 是 WayUp 的共同创办人及 CTO。WayUp 首席执行官在 2021 年宣布公司与 Yello 合并时回顾，WayUp 于 2014 年由她与 JJ Fliegelman 共同创立。",
       "sources": [
+        {
+          "source_id": "jj_wayup",
+          "source_url": "https://www.wayup.com/employers/blog/wayup-is-merging-with-yello",
+          "source_title": "WayUp Is Merging With Yello",
+          "source_content_hash": "e569fb9a7f9ad88cde6bd9b94ca30b521651565e2404b226f3ee58eb51acf51e",
+          "quote": "I am incredibly excited to share that WayUp, the company that JJ Fliegelman and I founded in 2014 (and is now the #1 DE&I recruiting platform), is merging with Yello, the leading talent acquisition software company for early career recruiting teams.",
+          "quote_hash": "aab587180fd52dd0a4e83274da423ee32c4e9015930a74a3ec2e9cbc37661fc7"
+        },
+        {
+          "source_id": "jj_yc",
+          "source_url": "https://www.ycombinator.com/companies/wayup",
+          "source_title": "WayUp: Marketplace for employers to recruit college students and recent grads | Y Combinator",
+          "source_content_hash": "2d7a029d45154b7ea2268448cc56e3adb60cf6dd8b7761b0331228b615b95ea2",
+          "quote": "JJ Fliegelman Founder/CTO",
+          "quote_hash": "f8c4aa89c2434373cc723ffe7eeee1a280ad564b5cd97c9c8818ee8b749d83e9"
+        },
         {
           "source_id": "FISRC-ba55b463daced495",
           "source_url": "https://www.blacksmith.sh/blog/blacksmith-seed-announcement",
@@ -144,8 +177,7 @@
           "quote": "JJ Fliegelman (Co-founder of WayUp)",
           "quote_hash": "2cf5cc668c79154472f93899e818162118761e9fddc4d9793ddf1864490398a7"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

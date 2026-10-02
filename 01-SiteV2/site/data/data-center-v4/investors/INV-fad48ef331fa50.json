@@ -121,21 +121,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Schematic Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "summary": "Schematic Ventures 是位于旧金山的早期风险投资基金，关注供应链、制造业和软件基础设施。其官网及 P-1 AI 官网均将 Schematic Ventures 列为 P-1 AI 投资方；The AI Insider 报道将其列入 P-1 AI 2300 万美元种子轮投资者名单。",
+      "coverage_note": "机构定位和 P-1 AI 投资关系由双方官网确认；种子轮融资金额及本轮参投名单来自 The AI Insider 报道，未披露 Schematic 单独投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "P-1 AI 官网将 Schematic Ventures 列入其机构投资者；The AI Insider 报道其参与了 P-1 AI 2300 万美元种子轮。",
+          "source_id": "schematic_p1_seed_round"
+        },
         {
           "description": "融资来源记录：P-1 AI, Inc. · 种子轮 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-699e40f6a1ab35eb"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "schematic_official_identity",
+          "source_url": "https://www.schematicventures.com/",
+          "source_title": "Schematic Ventures",
+          "source_content_hash": "5ba31eee2aaf81d328ff3c9250100545281425b2cab8d988c4083351293c5518",
+          "quote": "Schematic Ventures is an early-stage venture capital fund located in San Francisco.",
+          "quote_hash": "2043e0b98b69b872867674242d77ef89c27117cd0bc3735f91fc1f011063cc31"
+        },
+        {
+          "source_id": "p1_official_investor_list",
+          "source_url": "https://p-1.ai/",
+          "source_title": "P-1 AI",
+          "source_content_hash": "1bb0f491fc37200b522e062abe8ad8051d9bddfb844a6b59aa343b161ccfdb8b",
+          "quote": "Institutional: NEA , Radical Ventures , Village Global , Schematic Ventures , Lerer Hippeau",
+          "quote_hash": "3b257192f679719e941cc025f9a5ad88ee7c229a38951057af087c3bfa02fdfc"
+        },
+        {
+          "source_id": "schematic_p1_seed_round",
+          "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
+          "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI &#039;Archie&#039;",
+          "source_content_hash": "562b89ef3be5c031da14216c60e8b0ca5fd723b70162e18afed6b18a2e86714e",
+          "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
+          "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+        },
         {
           "source_id": "FISRC-699e40f6a1ab35eb",
           "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
@@ -145,7 +177,7 @@
           "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

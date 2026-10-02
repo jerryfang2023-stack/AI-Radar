@@ -137,21 +137,90 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "UK government's Sovereign AI Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "基金规模、投资使命和名称来自 Sovereign AI 官方网站及 GOV.UK；Olix 投资归属目前只见于 TechTimes 报道，未在政府公告中找到独立确认。",
+      "summary": "UK Sovereign AI Fund 是英国政府支持的主权风险投资基金，官方材料称基金规模为 5 亿英镑，面向英国 AI 初创企业，从 pre-seed 到 growth 阶段提供投资。TechTimes 报道将该基金列为 Olix 融资参与方之一。",
+      "facts": [
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "£500 million。",
+          "source_id": "sovereign_gov"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "支持英国本土人工智能初创企业发展。",
+          "source_id": "sovereign_site"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-Seed 至 Growth。",
+          "source_id": "sovereign_site"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-04-16",
+          "description": "英国政府公布 Sovereign AI 首批投资支持，并介绍 5 亿英镑基金。",
+          "source_id": "sovereign_gov"
+        }
+      ],
       "track_record": [
+        {
+          "description": "TechTimes 报道称 UK government’s Sovereign AI Fund 参与 Olix 的 Series B 融资；该投资尚未由本次检索到的政府一手公告单独确认。",
+          "source_id": "olix_report"
+        },
         {
           "description": "融资来源记录：Olix Computing Ltd. · B轮 · 2026-08-03 · 本轮参投 · $312 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6c18c7d2adec363"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "UK Sovereign AI Fund 官网",
+          "value": "UK Sovereign AI Fund",
+          "url": "https://www.sovereignai.gov.uk/",
+          "source_id": "sovereign_site"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sovereign_site",
+          "source_url": "https://www.sovereignai.gov.uk/",
+          "source_title": "UK Sovereign AI Fund | Backing British AI Startups",
+          "source_content_hash": "918c503568788102f6afa3aa1cac2aaadad6ab61c816f92cf7b18fcfac3425c5",
+          "quote": "Britain&#x27;s Sovereign Venture Fund dedicated to scaling British AI startups.",
+          "quote_hash": "873c78f2b8f455f70543c2e0d51e95f203dad5fff9ec29c19bea553fd8576b74"
+        },
+        {
+          "source_id": "sovereign_stage",
+          "source_url": "https://www.sovereignai.gov.uk/",
+          "source_title": "UK Sovereign AI Fund | Backing British AI Startups",
+          "source_content_hash": "918c503568788102f6afa3aa1cac2aaadad6ab61c816f92cf7b18fcfac3425c5",
+          "quote": "£ 500M Fund Size Pre-Seed to Growth Stage Focus",
+          "quote_hash": "66f9a7462b57c036f65d9683f34255b8cdf1d3ec2900ae2172752ea0da05339c"
+        },
+        {
+          "source_id": "sovereign_gov",
+          "source_url": "https://www.gov.uk/government/news/ai-firms-pioneering-drug-discovery-cheaper-supercomputing-and-more-get-first-backing-through-uks-sovereign-ai",
+          "source_title": "AI firms pioneering drug discovery, cheaper supercomputing and more get first backing through UK’s Sovereign AI - GOV.UK",
+          "source_content_hash": "1bfd21e2d56bf26a847030197325adac8bd34be37135ed59a3f59a326d2ce804",
+          "quote": "Sovereign AI is the UK’s £500 million bet to back homegrown AI founders, drive growth and create jobs across the UK.",
+          "quote_hash": "b75974ecc1749eb1e9265c8126941596d0cb2fd84ba6ab23ef32fae3a0f3c060"
+        },
+        {
+          "source_id": "olix_report",
+          "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
+          "source_title": "Olix Raises $312M for Photonic AI Chip That Ditches HBM: Britain's Biggest Semiconductor Bet",
+          "source_content_hash": "0b32ab0ef26b937fa860dae08cb2a1a16fff8eaf2992c51ee2e718dd9e4a6d70",
+          "quote": "alongside the UK government's Sovereign AI Fund",
+          "quote_hash": "73a17702c9d8e43b96ec7beb3bafc57baae62d7b8a7b31a8de0becf549243fd9"
+        },
         {
           "source_id": "FISRC-a6c18c7d2adec363",
           "source_url": "https://www.techtimes.com/articles/322816/20260803/olix-raises-312m-photonic-ai-chip-that-ditches-hbm-britains-biggest-semiconductor-bet.htm",
@@ -161,7 +230,7 @@
           "quote_hash": "65481abef5c1b13467567c77759fcf55f07810485a97e34a0b0d496226d48675"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

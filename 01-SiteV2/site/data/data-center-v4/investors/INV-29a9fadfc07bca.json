@@ -138,12 +138,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "厦门国贸 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "厦门国贸集团股份有限公司（厦门国贸，600755.SH）是总部位于厦门的国有控股上市公司，聚焦供应链管理业务。",
+      "coverage_note": "公司全称、上市信息和主营业务依据上市公司官网；明确区分厦门国贸集团股份有限公司与其国有控股股东厦门国贸控股集团有限公司。",
+      "facts": [
+        {
+          "field": "listed_company",
+          "label": "上市信息",
+          "value": "官网列示上市主体为厦门国贸集团股份有限公司，代码 600755.SH。",
+          "source_id": "itg_company_about"
+        },
+        {
+          "field": "business_scope",
+          "label": "主营业务",
+          "value": "官网称国贸股份聚焦供应链管理核心主业。",
+          "source_id": "itg_company_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -152,7 +165,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "itg_company_about",
+          "source_url": "https://www.itg.com.cn/cn/company/about",
+          "source_title": "厦门国贸集团股份有限公司-公司概况",
+          "source_content_hash": "12bc589938c851ef87fd9cc519882d1d78de70e05fb614fb65bc782afaf61372",
+          "quote": "厦门国贸集团股份有限公司（简称“国贸股份”）是国有控股上市公司，始创于1980年，总部位于福建厦门，1996年在上海证券交易所上市（股票名称：厦门国贸，股票代码：600755.SH）",
+          "quote_hash": "883a48cbc7613fbbadde425b62ba793291081836cd9cfba61d542b5c56a3ef8f"
+        },
         {
           "source_id": "FISRC-de3bb93d57d25bdf",
           "source_url": "https://www.cyzone.cn/article/822685.html",
@@ -162,7 +187,7 @@
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

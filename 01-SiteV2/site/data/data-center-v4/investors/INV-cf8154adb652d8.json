@@ -137,21 +137,48 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Perplexity Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "Perplexity Fund 官网说明其面向早期 AI 项目投资，并在官网组合名单中列出 Graphon；该网页未披露该项目的具体轮次与金额。",
+      "summary": "Perplexity Fund 是专注早期 AI 的投资基金。官网组合页将 Graphon 列为 AI 基础设施与数据领域的组合公司；公开页面未披露该项投资的轮次与金额。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "早期 AI 应用与基础设施。",
+          "source_id": "perplexity_fund_site"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Perplexity Fund 官网组合页列出 Graphon（基础设施与数据类别）；该页未披露轮次或金额。",
+          "source_id": "perplexity_fund_site"
+        },
         {
           "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮参投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9c4c0f115d1f38be"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Perplexity Fund 官网",
+          "value": "Perplexity Fund",
+          "url": "https://perplexityfund.ai/",
+          "source_id": "perplexity_fund_site"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "perplexity_fund_site",
+          "source_url": "https://perplexityfund.ai/",
+          "source_title": "Perplexity Fund – Investing in decade-defining early stage AI",
+          "source_content_hash": "d1e9375bdcef1774974284f408086e716ef3245c3ccfa6e7656ac8d06e4b4530",
+          "quote": "Graphon Infrastructure and data USA Building the multimodal pre-model intelligence layer",
+          "quote_hash": "e9abe4c09ffe19dd042555bc68581e240399d1dd8a45c230116042fe6c24d8d8"
+        },
         {
           "source_id": "FISRC-9c4c0f115d1f38be",
           "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
@@ -161,7 +188,7 @@
           "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

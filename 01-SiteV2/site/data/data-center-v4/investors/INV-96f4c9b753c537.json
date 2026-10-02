@@ -246,14 +246,26 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Future Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资阶段与方向",
+          "value": "种子及早期阶段，关注使命驱动、面向新兴产业的创业公司。",
+          "source_id": "future_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网列出的早期投资案例包括 SpaceX、Tesla、Planet 和 Commonwealth Fusion。",
+          "source_id": "future_history"
+        },
+        {
+          "description": "Modulate 于 2026 年 9 月宣布获得 2500 万美元新融资，公告称该轮由 Future Ventures 领投。",
+          "source_id": "future_modulate"
+        },
         {
           "description": "融资来源记录：Modulate · 轮次未披露 · 2026-09-28 · 本轮领投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6ec519350686cbda"
@@ -267,8 +279,48 @@
           "source_id": "FISRC-344b2fbfbe7b7c56"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Future Ventures 官网",
+          "value": "Future Ventures",
+          "url": "https://future.ventures/",
+          "source_id": "future_strategy"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "Future Ventures 官网核实其种子及早期投资定位；Modulate 官方融资公告核实 Future Ventures 领投其 2026 年融资。",
+      "summary": "Future Ventures 是一家专注种子及早期阶段、使命驱动型创业公司的风险投资机构。官网列出的历史投资案例包括 SpaceX、Tesla、Planet 和 Commonwealth Fusion；Modulate 官方公告称 Future Ventures 领投其 2026 年 2500 万美元融资。",
       "sources": [
+        {
+          "source_id": "future_strategy",
+          "source_url": "https://future.ventures/",
+          "source_title": "Future Ventures",
+          "source_content_hash": "9f6eed5433386ae045461b9541c3e5964abf956f427e3b33f67959e90e33207d",
+          "quote": "We focus on seed and early-stage investments in trailblazing, purpose-driven entrepreneurs with unique ideas that have the potential to reinvent entire industries.",
+          "quote_hash": "46ca6cc34740c16fc350dbec2a4f92e2b33caebe539c7280e3fd6499f0513eba"
+        },
+        {
+          "source_id": "future_history",
+          "source_url": "https://future.ventures/",
+          "source_title": "Future Ventures",
+          "source_content_hash": "9f6eed5433386ae045461b9541c3e5964abf956f427e3b33f67959e90e33207d",
+          "quote": "Some of our early VC investments include Boring Company, Commonwealth Fusion, D-Wave, MythicAI, Planet, SpaceX, Tesla and Xona.",
+          "quote_hash": "7efea5af214f2d428e956b1ad842ab30b1166ca5a1d545707dc62ff896313b0a"
+        },
+        {
+          "source_id": "future_modulate",
+          "source_url": "https://www.modulate.ai/press-releases/modulate-raises-25m-to-scale-its-lead-in-frontier-audio-native-ai",
+          "source_title": "Modulate Raises $25M to Scale Its Lead in Frontier Audio-Native AI | Modulate",
+          "source_content_hash": "6ecf14a2db54b9f54d915a38b074fc05f856ab8a34a97c97070c21fe5495046e",
+          "quote": "today announced $25 million in new funding led by Future Ventures, with participation from Hyperplane and Lakestar",
+          "quote_hash": "e3d313f1de2c7fe5816edeb842119af5f6fc3997a8e7079896fa6c2559211764"
+        },
         {
           "source_id": "FISRC-6ec519350686cbda",
           "source_url": "https://techcrunch.com/2026/09/28/modulate-raises-25m-for-its-voice-models-and-analysis-suite/",
@@ -293,8 +345,7 @@
           "quote": "featuring Future Ventures, Energy Impact Partners, JAZZ Ventures and Playground Global",
           "quote_hash": "d026554b11923a5ab39299095707c7cb7db32d7f23f5e9fcaca2b71d8790f982"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

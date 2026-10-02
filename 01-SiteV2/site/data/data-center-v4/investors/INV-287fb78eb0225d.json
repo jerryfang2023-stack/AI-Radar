@@ -178,12 +178,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "云岫资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "云岫资本是科技产业投资服务机构，业务包括私募融资、并购、私募股权投资及科创产业孵化。官网称其投资管理业务始于 2021 年，目前管理硬科技专项基金及产业人民币基金。",
+      "coverage_note": "业务范围和策略采用云岫资本官网自述；官网统计口径随时间变化，本档案未固化融资金额或交易数量。",
+      "facts": [
+        {
+          "field": "investment_scope",
+          "label": "业务范围",
+          "value": "官网列出私募融资、并购重组、私募股权投资、投资管理和科创产业孵化。",
+          "source_id": "yunxiu_investment_business"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": "硬科技，包括半导体、新材料、AI、智能制造、生命科学和医疗科技等。",
+          "source_id": "yunxiu_investment_business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -196,7 +209,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "yunxiu_investment_business",
+          "source_url": "https://www.yunxiucap.com/",
+          "source_title": "云岫资本：中国领先的科技产业投资服务机构",
+          "source_content_hash": "9fa654a06ddc4d7c5d06a6caf843c2d88123e830175d2483b774b04e71fb7ef1",
+          "quote": "云岫资本投资业务始于2021年，目前已管理十数支硬科技专项基金及一支硬科技产业人民币基金。",
+          "quote_hash": "dd8fd1f15f76ccb0b546d1e8279313e0f4a48d4886ab658f1c599d9b3ba02233"
+        },
         {
           "source_id": "FISRC-ceee1629da3e3cce",
           "source_url": "https://news.pedaily.cn/202605/563553.shtml",
@@ -214,7 +239,7 @@
           "quote_hash": "6cb304630cc6380a67cdf97b73bd3b53b48d5a2e0574c0fcfd08b00899ffe5d0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

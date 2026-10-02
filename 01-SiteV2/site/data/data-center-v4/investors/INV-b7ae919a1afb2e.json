@@ -137,21 +137,82 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Striker Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "官网品牌名为 Striker Venture Partners；Elorian 官方页面使用简称 Striker Ventures。本档案保留名称差异，不推断单独基金法律实体。",
+      "summary": "Striker Venture Partners 于 2025 年成立，运营集中型基金，支持 AI 与网络安全领域的技术创始团队从创立早期建设公司。官网称其在 day zero 阶段投资 $5–30m；Elorian 官方页面把 Striker Ventures 列为其投资方之一。",
+      "facts": [
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "人工智能与网络安全。",
+          "source_id": "striker_strategy"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "从创立早期（day zero）开始投资。",
+          "source_id": "striker_strategy"
+        },
+        {
+          "field": "investment_amount",
+          "label": "单笔投资金额",
+          "value": "官网表述为 $5–30m；未进一步说明币种细节。",
+          "source_id": "striker_strategy"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025",
+          "description": "官网称 Striker Venture Partners 于 2025 年成立。",
+          "source_id": "striker_strategy"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Elorian 官方网站称其获得 $55 million 融资，并将 Striker Ventures 列为投资方之一；该页面未披露各方出资金额。",
+          "source_id": "elorian_backing"
+        },
         {
           "description": "融资来源记录：Elorian · 种子轮 · 2026-04 · 本轮联合领投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0a52165fbfc8575b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Striker Venture Partners 官网",
+          "value": "Striker Venture Partners",
+          "url": "https://striker.vc/",
+          "source_id": "striker_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "striker_strategy",
+          "source_url": "https://striker.vc/",
+          "source_title": "Striker Venture Partners",
+          "source_content_hash": "a7134ee2139144f85b95141acf0c7146cc764227ee2951788835e20705640fbb",
+          "quote": "Striker was founded in 2025 with one singular focus: helping technical founders build generational companies from inception.",
+          "quote_hash": "17621c1f111111bb6ea3c1a9c19d69fca6e3307933d3d8c5f0c1fb3129b7249f"
+        },
+        {
+          "source_id": "striker_focus",
+          "source_url": "https://striker.vc/",
+          "source_title": "Striker Venture Partners",
+          "source_content_hash": "a7134ee2139144f85b95141acf0c7146cc764227ee2951788835e20705640fbb",
+          "quote": "We invest $5-30m on day zero and forge a lasting partnership.",
+          "quote_hash": "1825d6c17ce0705c37b2e3a721971faacfa611eb80566364afdb30645ad434aa"
+        },
+        {
+          "source_id": "elorian_backing",
+          "source_url": "https://elorian.ai/",
+          "source_title": "Elorian — Frontier Intelligence",
+          "source_content_hash": "bcb9ac535f08eaef58f92ba7fceaad5b11dc1fb7d67344b8406498cc6961f8f1",
+          "quote": "Elorian is backed by $55 million in funding from Striker Ventures, Menlo Ventures, and Altimeter",
+          "quote_hash": "fef53f477844e0b4262de02b2bd4a263d7b40c7c5bb59773002dbe8196dac0ce"
+        },
         {
           "source_id": "FISRC-0a52165fbfc8575b",
           "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
@@ -161,7 +222,7 @@
           "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

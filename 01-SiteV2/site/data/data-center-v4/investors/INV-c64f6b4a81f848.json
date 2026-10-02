@@ -137,21 +137,86 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Prysm Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "机构策略与 Replit 组合关系来自 Prysm Capital 官网；Replit Series D 轮中 Prysm 的参与情况来自 Tech Startups 报道。",
+      "summary": "Prysm Capital 为科技与消费领域的成长型企业提供资本和合作支持。其官网组合页面列有 Replit；Tech Startups 报道将 Prysm 列为 Replit 4 亿美元 Series D 的投资方之一。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "成长资本。",
+          "source_id": "prysm_strategy"
+        },
+        {
+          "field": "investment_sectors",
+          "label": "投资方向",
+          "value": "科技与消费领域。",
+          "source_id": "prysm_strategy"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Prysm Capital 官网组合列表包含 Replit；Tech Startups 报道将 Prysm 列为 Replit 4 亿美元 Series D 参与方之一。",
+          "source_id": "replit_round"
+        },
         {
           "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投 · $400M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-00ed3d8fd701898b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Prysm Capital 官网",
+          "value": "Prysm Capital",
+          "url": "https://www.prysmcapital.com/",
+          "source_id": "prysm_strategy"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "prysm_strategy",
+          "source_url": "https://www.prysmcapital.com/",
+          "source_title": "Home | Prysm Capital",
+          "source_content_hash": "3ded330003a978915c15fea1bfd7cf9faf8090120b5f0cf854eeffb11b1001ba",
+          "quote": "flexible source of growth capital",
+          "quote_hash": "582a7e6177b70326f5247352255b8269d4c700df2a2531b1721294a4bac08659"
+        },
+        {
+          "source_id": "prysm_sectors",
+          "source_url": "https://www.prysmcapital.com/",
+          "source_title": "Home | Prysm Capital",
+          "source_content_hash": "3ded330003a978915c15fea1bfd7cf9faf8090120b5f0cf854eeffb11b1001ba",
+          "quote": "Technology & Consumer Sectors",
+          "quote_hash": "9ffae1beceea257d757e231ed32fc5af55f616bd7e394039c67d210692144b42"
+        },
+        {
+          "source_id": "prysm_portfolio",
+          "source_url": "https://www.prysmcapital.com/all-investments",
+          "source_title": "All Investments | Prysm Capital",
+          "source_content_hash": "39a9706d4e9a9d53835efcdce20be257614b7a2f5933c2ad7315f2824c69a6a6",
+          "quote": "Replit",
+          "quote_hash": "601a29658a2d36c46240627877f219040a13c267093e5e80d979bcc036d1df86"
+        },
+        {
+          "source_id": "prysm_portfolio_scope",
+          "source_url": "https://www.prysmcapital.com/all-investments",
+          "source_title": "All Investments | Prysm Capital",
+          "source_content_hash": "39a9706d4e9a9d53835efcdce20be257614b7a2f5933c2ad7315f2824c69a6a6",
+          "quote": "The companies presented on this page represent investments made by investment vehicles managed by Prysm Capital.",
+          "quote_hash": "7bf92d874c3f35ce367abfad586279a150783e1b393ef8d8379578079b131d12"
+        },
+        {
+          "source_id": "replit_round",
+          "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
+          "source_title": "Replit raises $400M at $9B valuation as AI coding platform surges to over 40M users - Tech Startups",
+          "source_content_hash": "c4ad299e85a4aff8d11c46dc7dbf1b63fcd33238a399a8ef0573e59d05b570c2",
+          "quote": "The round brought together a long list of investors, including Georgian, G Squared, Prysm, 1789",
+          "quote_hash": "0f601b2e073a5cdc6ce00558c7e22ec1bb1eb141b075349721c57b6b7612f218"
+        },
         {
           "source_id": "FISRC-00ed3d8fd701898b",
           "source_url": "https://techstartups.com/2026/03/11/replit-raises-400m-at-9b-valuation-as-ai-coding-platform-surges-to-over-40m-users/",
@@ -161,7 +226,7 @@
           "quote_hash": "43b6c52820315c7b7d8bb79333f9ec5196afe4add62139cb3c5f7ecaf9a3453a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "建发新兴 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "建发新兴投资是聚焦新兴产业的权益类资产管理机构；新浪财经报道其参与小雨智造 B+ 轮联合投资。",
+      "coverage_note": "机构定位来自建发新兴投资官网，融资关系来自新浪财经报道；未推断单独出资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "新浪财经报道北汽产投、复星锐正和建发新兴联合投资小雨智造 B+ 轮。",
+          "source_id": "jianfa_xiaoyu_b_plus"
+        },
         {
           "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7cae6e0a712567de"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "jianfa_identity",
+          "source_url": "https://www.jianfacapital.com/",
+          "source_title": "厦门建发新兴投资",
+          "source_content_hash": "c48e6c522665027cc3ca9b7f44eeb07d1d37d025a453a27ba64d5af3e8cb8c2d",
+          "quote": "聚焦新兴产业的权益类资产管理机构",
+          "quote_hash": "ab7ce48481b86cd21923a28cbbf2e0254900c2e81439f21857b993be06e3ea9c"
+        },
+        {
+          "source_id": "jianfa_xiaoyu_b_plus",
+          "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
+          "source_title": "小雨智造完成数亿元B+轮融资|融资_新浪财经_新浪网",
+          "source_content_hash": "da8d5dd55d408f2ff8508b38c7949f4e503f736b7a72404cb4abece0b2231513",
+          "quote": "本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资",
+          "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
+        },
         {
           "source_id": "FISRC-7cae6e0a712567de",
           "source_url": "https://finance.sina.com.cn/roll/2026-05-09/doc-inhxhuvc1441707.shtml",
@@ -161,7 +185,7 @@
           "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

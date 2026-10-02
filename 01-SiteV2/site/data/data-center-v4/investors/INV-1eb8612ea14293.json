@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "DE Shaw & Co 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "D. E. Shaw Group 是全球投资管理机构。官网称其自 1988 年开展系统化投资，并结合定量工具与人工判断，在全球公开和私募市场寻找回报来源。",
+      "coverage_note": "机构描述及成立年份采用 D. E. Shaw 官网自述；未据其融资报道扩展投资组合或业绩。",
+      "facts": [
+        {
+          "field": "business_type",
+          "label": "机构性质",
+          "value": "官网描述为投资管理机构，业务覆盖全球公开市场和私募市场。",
+          "source_id": "deshaw_what_we_do"
+        },
+        {
+          "field": "founded",
+          "label": "创立年份",
+          "value": "官网称其于 1988 年开始运营。",
+          "source_id": "deshaw_systematic_investing"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "deshaw_what_we_do",
+          "source_url": "https://www.deshaw.com/what-we-do",
+          "source_title": "What We Do - The D. E. Shaw Group",
+          "source_content_hash": "cca05e1fc886f8a1a516f416fa2e200508e185c824b888ad3a11c39943e5ee0a",
+          "quote": "The D. E. Shaw group is trusted by investors across the world to seek an optimal balance of risk and reward.",
+          "quote_hash": "27a6a5ea6185b343bf35010399a6618bb3becce04f15a2a314e7d731636a637c"
+        },
+        {
+          "source_id": "deshaw_systematic_investing",
+          "source_url": "https://www.deshaw.com/what-we-do",
+          "source_title": "What We Do - The D. E. Shaw Group",
+          "source_content_hash": "cca05e1fc886f8a1a516f416fa2e200508e185c824b888ad3a11c39943e5ee0a",
+          "quote": "We launched in 1988 as a pioneer in systematic investing",
+          "quote_hash": "c517387c25e00cb59fe43a0c7db8930c5aae6c51f0521465481ff384316ed0de"
+        },
         {
           "source_id": "FISRC-077b1124fc8e9581",
           "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
@@ -161,7 +194,7 @@
           "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

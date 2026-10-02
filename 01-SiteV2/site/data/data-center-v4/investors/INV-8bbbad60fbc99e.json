@@ -155,23 +155,56 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Zeal Capital 当前按“投资组织”收录。最新融资披露记录日期为 2025-12-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网核实其 Seed 核心投资方向和创始人职务；未补录未核实的基金规模或回报数据。",
+      "summary": "Zeal Capital Partners 是一家以 Seed 投资为核心的风险投资机构。官网称其投资方向覆盖金融科技、医疗健康、未来学习与工作，并披露 Nasir Qadree 为创始人兼管理合伙人。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "核心投资方向",
+          "value": "官网将 Seed 投资列为核心范围，覆盖金融科技、医疗健康、未来学习与工作。",
+          "source_id": "zeal_mandate"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "Nasir Qadree（Founder and Managing Partner）",
+          "source_id": "zeal_nasir"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "融资来源记录：Empromptu · 预种子轮 · 2025-12-09 · 本轮参投 · $2M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-79832d8eb3d1b153"
-        },
-        {
-          "description": "融资来源记录：Empromptu · 预种子轮 · 2025-12-09 · 本轮参投 · $2M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-99e63c0e1fbdfa5c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Zeal Capital Partners 官网",
+          "value": "Zeal Capital Partners",
+          "url": "https://www.zealcapitalpartners.com/",
+          "source_id": "zeal_mandate"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zeal_mandate",
+          "source_url": "https://www.zealcapitalpartners.com/zeal-core-investment-mandate/",
+          "source_title": "Zeal Capital Partners | 4-Zeal Core Investment Mandate",
+          "source_content_hash": "709b0ead4d8aaf71297424c6aca64ed2551c5f86f2cdbf696af9200d2be900a3",
+          "quote": "Our seed investments serve as our core investment mandate which enables us to source, invest, and scale high-growth companies across three categories: Financial Technology, Healthcare, and the Future of Learning and Work.",
+          "quote_hash": "43ce6e7995014c8945fff9901ea2e8fb8869b03ead5a52fedf39a906e9335a4b"
+        },
+        {
+          "source_id": "zeal_nasir",
+          "source_url": "https://www.zealcapitalpartners.com/nasir-qadree/",
+          "source_title": "Zeal Capital Partners | Nasir Qadree",
+          "source_content_hash": "e7069b65bb29c9eab14cbb2744cfc7e60861c64aad242d1d15f349c6a40c513a",
+          "quote": "Nasir Qadree Founder and Managing Partner",
+          "quote_hash": "aeab6609da71794005e4f8a656f428caf8bb83cb1a695e6d104d490e16574675"
+        },
         {
           "source_id": "FISRC-79832d8eb3d1b153",
           "source_url": "https://techcrunch.com/2025/12/09/empromptu-raises-2m-pre-seed-to-help-enterprises-build-ai-apps/",
@@ -189,7 +222,7 @@
           "quote_hash": "51accbd697c3fc2966ad47f6d7ed7f3145da46cc21f2e1c3e5dae993a82e2bab"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

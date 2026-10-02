@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Allianz 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Allianz Group 是跨国保险与资产管理集团，业务覆盖近 70 个国家。官网将其描述为保险客户资产的重要投资管理者，并区分集团自身投资与 PIMCO、Allianz Global Investors 管理的第三方资产。",
+      "coverage_note": "集团业务、客户资产投资与第三方资产管理业务均依据 Allianz 2026 年 9 月更新的官网页面；未将 PIMCO 或 Allianz Global Investors 误写为 Allianz 的独立法律子项。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "保险、资产管理及面向保险客户管理投资资产。",
+          "source_id": "allianz_at_a_glance"
+        },
+        {
+          "field": "assets_as_of",
+          "label": "官网披露口径",
+          "value": "截至 2026 年 6 月 30 日，官网称其代表保险客户管理约 7,910 亿欧元。",
+          "source_id": "allianz_investments"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "allianz_at_a_glance",
+          "source_url": "https://www.allianz.com/en/about-us/company/at-a-glance.html",
+          "source_title": "At a glance | Allianz",
+          "source_content_hash": "96b33a224ca849bcc6817c4ff850c8fd668465174ec3a1869208253ef34ffef6",
+          "quote": "The Allianz Group is one of the world’s leading insurers and asset managers, active in almost 70 countries and serving around 97 million private and corporate customers*.",
+          "quote_hash": "f9adcbb8f4b2bd895978854a0ea54ba8fc4058749e45e86e6ad277ea1017d11d"
+        },
+        {
+          "source_id": "allianz_investments",
+          "source_url": "https://www.allianz.com/en/about-us/company/at-a-glance.html",
+          "source_title": "At a glance | Allianz",
+          "source_content_hash": "96b33a224ca849bcc6817c4ff850c8fd668465174ec3a1869208253ef34ffef6",
+          "quote": "We are one of the world’s largest investors, managing around 791 billion euros** on behalf of our insurance customers.",
+          "quote_hash": "47260d28d56b75154d8106bf8cc29efdbc2bf0d4d309def0a00fbb10772c32fd"
+        },
         {
           "source_id": "FISRC-28fb551788d5a89b",
           "source_url": "https://techcrunch.com/2026/07/30/dili-raises-15-million-to-bring-ai-compliance-to-the-infrastructure-boom",
@@ -161,7 +194,7 @@
           "quote_hash": "a1065adb338df462350aa419f2d3e092d1c17ab05b9c4e32516a516edbf9567c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

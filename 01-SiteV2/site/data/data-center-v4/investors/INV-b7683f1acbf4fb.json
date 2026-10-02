@@ -137,21 +137,82 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "ISAI Cap Venture 当前按“投资组织”收录。最新融资披露记录日期为 2023-12-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "以 ISAI 与 Capgemini 的官方公告记录 ISAI Cap Venture II；Liquid AI 官方投资者说明确认 ISAI Cap Venture 的投资者关系。公告中的 €80M 为 II 期规模。",
+      "summary": "ISAI Cap Venture 是 ISAI 与 Capgemini 合作的企业风险投资基金系列，面向全球 B2B 初创企业和成长期公司。官方公告称 II 期于 2025 年推出，规模为 €80 million；Liquid AI 官方投资者说明将 ISAI Cap Venture 列为投资者之一。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "基金类型",
+          "value": "企业风险投资基金（与 Capgemini 合作）",
+          "source_id": "isai_launch_ii"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "全球高潜力 B2B 初创企业与成长期公司。",
+          "source_id": "isai_launch_ii"
+        },
+        {
+          "field": "fund_size",
+          "label": "基金规模",
+          "value": "ISAI Cap Venture II：€80 million。",
+          "source_id": "isai_launch_ii"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-04-10",
+          "description": "ISAI 与 Capgemini 宣布推出 ISAI Cap Venture II，基金规模为 €80 million。",
+          "source_id": "isai_launch_ii"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Liquid AI 官方投资者说明将 ISAI Cap Venture 列入其投资者名单。",
+          "source_id": "liquid_investors"
+        },
         {
           "description": "融资来源记录：Liquid AI · 种子轮 · 2023-12-06 · 本轮参投 · 3750万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d1080395d67df2c7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "ISAI Cap Venture",
+          "value": "ISAI Cap Venture",
+          "url": "https://www.isai.fr/isai-cap-venture",
+          "source_id": "isai_launch_ii"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "isai_launch_ii",
+          "source_url": "https://www.isai.fr/news/capgemini-et-isai-lancent-isai-cap-venture-ii",
+          "source_title": "CAPGEMINI ET ISAI LANCENT ISAI CAP VENTURE II &mdash; isai",
+          "source_content_hash": "c1ddb9ec79ef48da737974c9e1af7a594a5170afdb7649d4eac473ff4b140942",
+          "quote": "Paris, le 10 avril 2025 – A la suite du succès d'ISAI Cap Venture I, ISAI et Capgemini annoncent le lancement d'ISAI Cap Venture II, un nouveau véhicule d'investissement dédié à soutenir des startups et scale-ups B2B à fort potentiel dans le monde entier.",
+          "quote_hash": "94e5352131248c1f618cbb5617da649ff9ff2874a1404fc89a0c25947ccfb533"
+        },
+        {
+          "source_id": "isai_fund_size",
+          "source_url": "https://www.isai.fr/news/capgemini-et-isai-lancent-isai-cap-venture-ii",
+          "source_title": "CAPGEMINI ET ISAI LANCENT ISAI CAP VENTURE II &mdash; isai",
+          "source_content_hash": "c1ddb9ec79ef48da737974c9e1af7a594a5170afdb7649d4eac473ff4b140942",
+          "quote": "Cette deuxième édition du fonds, dotée de 80 millions d'euros",
+          "quote_hash": "f3e3aba3faf8615452f983854fa85292025a858929723d755e0b89367f89cb91"
+        },
+        {
+          "source_id": "liquid_investors",
+          "source_url": "https://www.liquid.ai/blog/new-generation-of-ai-models-from-first-principles",
+          "source_title": "Liquid AI: A New Generation of AI Models from First Principles | Blog | Liquid AI",
+          "source_content_hash": "8df0fab4548b6d02e671b4d036747b2c7a650625e653137c214d7abadcd3dffa",
+          "quote": "ISAI Cap Venture (Capgemini’s VC Fund managed by ISAI)",
+          "quote_hash": "c80c91c224e6842409dd125186d7950a24ff4bde3147ff77c4dffa73ec82bf64"
+        },
         {
           "source_id": "FISRC-d1080395d67df2c7",
           "source_url": "https://techcrunch.com/2023/12/06/liquid-ai-a-new-mit-spinoff-wants-to-build-an-entirely-new-type-of-ai/",
@@ -161,7 +222,7 @@
           "quote_hash": "ac475b04df8a6955aaec8bcb4cc432547454b79f534e7aa964edfba25b8b0b99"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -162,14 +162,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "险峰长青 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "险峰长青的官方天使投资页面将其列为基金投资与管理团队的一部分；设序科技官网记录险峰长青参与其天使轮。",
+      "coverage_note": "机构关系来自 K2VC 官方页面，融资关系来自设序科技官网的融资历程；不补入投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "设序科技官网披露其天使轮由险峰长青、高榕资本和联想创投投资。",
+          "source_id": "xianfeng_designorder_angel"
+        },
         {
           "description": "融资来源记录：设序科技 · 历史轮次未披露 · 天使轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-887f1542c828b426"
@@ -179,8 +188,23 @@
           "source_id": "FISRC-7dfa7efaace4f3c8"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "xianfeng_k2vc_identity",
+          "source_url": "https://www.k2vc.com/cn/angel",
+          "source_title": "险峰长青 | 险峰",
+          "source_content_hash": "0f24bd3541a4b8368ffbb31ac148bacd852cf906cbba103c0028cf5a51c39a2c",
+          "quote": "负责险峰长青基金投资及管理",
+          "quote_hash": "77c58fbe7845e633cab9ec52fb3b633c9076cb1e0a851619a825885ed92753c3"
+        },
+        {
+          "source_id": "xianfeng_designorder_angel",
+          "source_url": "https://www.designorder.cn/zh/about",
+          "source_title": "设序科技-基于AI的新一代工业CAD",
+          "source_content_hash": "dac68def5b1823da1499b556dfbe4feb9c7a1c681dfb3ef3f82f6e5c7e708c7c",
+          "quote": "天使轮融资 险峰长青、高榕资本、联想创投",
+          "quote_hash": "321c753dc9b67c821733e616ded437ee27ad192cfee469d02d061922faa9e2e5"
+        },
         {
           "source_id": "FISRC-887f1542c828b426",
           "source_url": "https://news.pedaily.cn/202609/569177.shtml",
@@ -198,7 +222,7 @@
           "quote_hash": "6e0944605f10f53334f72bbd7c6dcd9d6bf0cbd4d7686337eb3b786f2b37ed8b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

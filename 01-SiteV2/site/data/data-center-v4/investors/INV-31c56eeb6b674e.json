@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Nordstar 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Nordstar 是为全球成长型企业提供战略资本和运营支持的投资机构，官网称其关注软件及技术赋能业务，并在伦敦、纽约和吉隆坡设有业务枢纽。",
+      "coverage_note": "机构定位、投资方向、业务地点与英国登记信息依据 Nordstar 官方网站；不据此推断基金规模或收益表现。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网称其关注软件和技术赋能型业务。",
+          "source_id": "nordstar_focus"
+        },
+        {
+          "field": "legal_entity",
+          "label": "法律主体",
+          "value": "官网列示 Nordstar Partners Limited 为英格兰和威尔士注册公司，编号 12618701。",
+          "source_id": "nordstar_legal"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +164,43 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "nordstar_strategy",
+          "source_url": "https://www.nordstar.com/",
+          "source_title": "Nordstar",
+          "source_content_hash": "71464ed79218d11ddc4dec398d6dcaa0cf06c247042b4b94898fed7daa8ba90e",
+          "quote": "At Nordstar, we offer strategic capital and operational expertise to founders embarking on their next stage of growth.",
+          "quote_hash": "01e52a24a5d12f7a56281335aa8c3f1af5dd8086b3819254abef60cff6ceb10f"
+        },
+        {
+          "source_id": "nordstar_legal",
+          "source_url": "https://www.nordstar.com/",
+          "source_title": "Nordstar",
+          "source_content_hash": "71464ed79218d11ddc4dec398d6dcaa0cf06c247042b4b94898fed7daa8ba90e",
+          "quote": "Nordstar Partners Limited is a company registered in England and Wales (Company No. 12618701)",
+          "quote_hash": "11139d774512281732d733d0db2588746529d917718a3e29331c2251cc1c29a8"
+        },
+        {
+          "source_id": "nordstar_focus",
+          "source_url": "https://www.nordstar.com/",
+          "source_title": "Nordstar",
+          "source_content_hash": "71464ed79218d11ddc4dec398d6dcaa0cf06c247042b4b94898fed7daa8ba90e",
+          "quote": "We focus on software and tech-enabled businesses, and lean into models where execution and operational excellence win out.",
+          "quote_hash": "4f97a18ac3e66da641abb90a365a9780d3cc51b8b6b1c18e6c9f5d268f42e181"
+        },
+        {
+          "source_id": "nordstar_hubs",
+          "source_url": "https://www.nordstar.com/",
+          "source_title": "Nordstar",
+          "source_content_hash": "71464ed79218d11ddc4dec398d6dcaa0cf06c247042b4b94898fed7daa8ba90e",
+          "quote": "We operate globally with hubs in London, New York City, and Kuala Lumpur",
+          "quote_hash": "21198c6100c02defe0e31ed203a9af8f17e5df66b9e18d0f9c2d3cbb2e5b6a0b"
+        },
         {
           "source_id": "FISRC-44c6debf2c528a2a",
           "source_url": "https://siliconangle.com/2026/06/24/ornn-raises-33m-help-companies-buy-sell-ai-compute-commodity-like-oil/",
@@ -161,7 +210,7 @@
           "quote_hash": "b69e97a8f4d22f773d01e50f5f3f37c7f265bd537607e7ed226aaade2c8ef399"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

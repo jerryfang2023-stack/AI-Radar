@@ -246,12 +246,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Highland Europe 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Highland Europe 是一家位于伦敦和日内瓦的成长阶段投资机构。官网称其于 2012 年从 Highland Capital Partners 分拆，专注欧洲本土成长型企业。",
+      "coverage_note": "投资阶段、所在地和分拆时间均依据 Highland Europe 官网自述；未纳入可能变动的基金规模。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其专注成长阶段投资。",
+          "source_id": "highland_about"
+        },
+        {
+          "field": "geography",
+          "label": "地域",
+          "value": "官网列出伦敦和日内瓦，并称专注欧洲本土成长型企业。",
+          "source_id": "highland_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -268,7 +281,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "highland_about",
+          "source_url": "https://www.highlandeurope.com/about/",
+          "source_title": "About us - Highland Europe",
+          "source_content_hash": "d7a4aaa8feb39b30287ed2e46e234dfdc8cf26dce900e593f81b6f86267b7dc0",
+          "quote": "We are a growth-stage investment firm located in London and Geneva. We spun off from Highland Capital Partners in 2012 to focus entirely on European-rooted scale-ups.",
+          "quote_hash": "47ad61f355a986807d4a5b37ac5d7f4576a2d1cb97d76b9d18cab7a86d5ff7ff"
+        },
         {
           "source_id": "FISRC-5b1ac109014789f1",
           "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
@@ -294,7 +319,7 @@
           "quote_hash": "a4536fa99a996fdf227f7d630b49ea4524f8dcda813896f78eb7df775dc9b9fa"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

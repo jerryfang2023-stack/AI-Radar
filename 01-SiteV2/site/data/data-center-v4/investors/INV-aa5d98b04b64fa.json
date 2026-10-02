@@ -208,12 +208,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Javelin Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "coverage_note": "机构名称、投资策略及阶段和金额范围均按官网自述记录；支票金额可能随时间变化，本次依据 2026-10-02 页面核验。",
+      "summary": "Javelin Venture Partners 是一家向初创企业提供资本和运营支持的风险投资机构。官网称其主要投资 late Seed 和 early Series A 阶段，初始支票金额为 50 万至 400 万美元。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "late Seed 和 early Series A；官网列出的初始支票金额为 50 万至 400 万美元。",
+          "source_id": "javelin_stage"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "提供资本和运营支持。",
+          "source_id": "javelin_approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -223,14 +236,38 @@
         {
           "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 本轮领投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e329a4acc969b305"
-        },
-        {
-          "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 本轮领投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3ac522c61ae63836"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Javelin Venture Partners 官网",
+          "value": "Javelin Venture Partners",
+          "url": "https://www.javelinvp.com/",
+          "source_id": "javelin_approach"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "javelin_approach",
+          "source_url": "https://www.javelinvp.com/",
+          "source_title": "Javelin Venture Partners",
+          "source_content_hash": "efb5937ad4c6e923478750869759517bbbbeaf4efa4de2b7c118074bb2144be7",
+          "quote": "We invest capital and operational expertise to build transformational companies",
+          "quote_hash": "3a760744a2e2e668ba2ddb8576c2c86fb074787b84ddd1d4a7f0a4c2337448a0"
+        },
+        {
+          "source_id": "javelin_stage",
+          "source_url": "https://www.javelinvp.com/",
+          "source_title": "Javelin Venture Partners",
+          "source_content_hash": "efb5937ad4c6e923478750869759517bbbbeaf4efa4de2b7c118074bb2144be7",
+          "quote": "$500K-$4M initial checks into late Seed and early Series A rounds.",
+          "quote_hash": "4492eb2264a37abc25d0ee1b07a7096b52130351234f04660b76dbf5a64bc5b6"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -256,7 +293,7 @@
           "quote_hash": "23164901a8f8e1d14bab16c9f2bd02fa3a579a07f1902827f4dee31829a25f1e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

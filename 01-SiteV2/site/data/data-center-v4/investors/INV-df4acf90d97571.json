@@ -192,14 +192,30 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Viola Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Viola Ventures 是以色列科技投资集团 Viola 旗下的早期基金，官网列出的阶段覆盖 Pre-seed 至 A 轮；TYLsemi 官方公告确认其参与 4300 万美元早期融资。",
+      "coverage_note": "投资阶段和基金归属来自 Viola 官网；被投公司 TYLsemi 官方公告确认参投关系。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed 至 Series A",
+          "source_id": "viola_strategy"
+        }
+      ],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "TYLsemi 官方公告称 Viola Ventures 参与其 4300 万美元早期融资。",
+          "source_id": "viola_tylsemi_round"
+        },
         {
           "description": "融资来源记录：TYLsemi Inc. · 早期融资 · 2026-07-14 · 本轮参投 · $43 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2be3945d96fe8e7c"
@@ -209,8 +225,23 @@
           "source_id": "FISRC-92a209babacd8894"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "viola_strategy",
+          "source_url": "https://www.viola-group.com/fund/violaventures/",
+          "source_title": "Viola - Viola Ventures",
+          "source_content_hash": "8a772759cecf77f292882051fde897b0e5135ea464b7e54998132044e07f0e82",
+          "quote": "Viola Ventures is the early-stage fund within Viola, Israel’s largest tech investment group. We invest in transformational founders from their spark moment forward, all the way to peak velocity. We focus on pre-seed through Series A funding",
+          "quote_hash": "76df07dd89104de83c6c7c40f987045a7d6fdc493d7586888b853a40431c44a5"
+        },
+        {
+          "source_id": "viola_tylsemi_round",
+          "source_url": "https://www.tylsemi.ai/press-releases/tylsemi-raises-43-million-to-launch-first-full-stack-chipletplatform-for-custom-ai-silicon/",
+          "source_title": "TYLsemi Raises $43 Million to Launch First Full-Stack Chiplet Platform for Custom AI&nbsp;Silicon - TYLsemi",
+          "source_content_hash": "77f478a33ec5723003bedebe89243d479264a5ddf69c5437115dac13afc87c38",
+          "quote": "The funding round was led by Matter Venture Partners with participation from Viola Ventures, GHOVC, Egis Technology, and strategic investment from leading companies across the global semiconductor and AI infrastructure ecosystem.",
+          "quote_hash": "64a771ba09b5475e8ad1ff7bff64d05ce3e15d9dac21f5acaab8888b9ab394aa"
+        },
         {
           "source_id": "FISRC-2be3945d96fe8e7c",
           "source_url": "https://siliconangle.com/2026/07/14/custom-ai-chip-design-startup-tylsemi-launches-43m-early-stage-funding/",
@@ -228,7 +259,7 @@
           "quote_hash": "73a2aa08132bbe99976f89cfd3adad726459d5d6c20e90486950fb35ed6e9d0e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Anne Neuberger 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "person",
+      "summary": "Anne Neuberger 于 2026 年加入 Andreessen Horowitz，担任 General Partner 和 Head of Global Affairs。TechCrunch 报道称她参与了 AIR 的天使轮融资。",
+      "coverage_note": "人物身份和现职由 a16z 本人署名文章确认；融资关系来自 TechCrunch 报道，未补入来源未披露的投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "TechCrunch 报道将 Anne Neuberger 列为参与 AIR 融资的天使投资人。",
+          "source_id": "anne_air_angel"
+        },
         {
           "description": "融资来源记录：AIR · 种子轮 · 2026-09-01 · 本轮参投 · $50M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0426e4b3b9347f4f"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "anne_a16z_role",
+          "source_url": "https://a16z.com/technology-is-security-for-america-and-her-allies/",
+          "source_title": "Technology is Security, for America and Her Allies | Andreessen Horowitz",
+          "source_content_hash": "8e1798dd00ee18d751355f5179573ad7299f5110b7aabbbf354e7f7f9506e5bf",
+          "quote": "General Partner and Head of Global Affairs",
+          "quote_hash": "856ac5b64a94f320113bf5ddbcf7098d0a756e5e5f0d31606c45069c6e4d1b7d"
+        },
+        {
+          "source_id": "anne_air_angel",
+          "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
+          "source_title": "AIR raises $50M to help companies vet the skills and add-ons AI agents use | TechCrunch",
+          "source_content_hash": "2795f209de1c94ed4c7ab84b73df9f7098cf8bfa2cbc53bc58cdef9cf5b963ac",
+          "quote": "Anne Neuberger, Omer Adam, Varun Anand (co-founder of Clay), and other angel investors also participated.",
+          "quote_hash": "cdf293374f4d9a446ca155010bfc44b6988fca96101193fb17390e389493d713"
+        },
         {
           "source_id": "FISRC-0426e4b3b9347f4f",
           "source_url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use",
@@ -161,7 +185,7 @@
           "quote_hash": "17348f3a22de97f397577ba40624901ac6e031c17133cd6992f8993407068666"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

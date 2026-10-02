@@ -178,14 +178,28 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ubiquity Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "支持将软件带入物理世界的技术创始人。",
+          "source_id": "ubiquity_thesis"
+        },
+        {
+          "field": "founder",
+          "label": "创始人兼管理合伙人",
+          "value": "Sunil Nagaraj",
+          "source_id": "ubiquity_sunil"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网将 Rocket Lab、Auth0、Halter 和 Zapier 列为其早期投资案例。",
+          "source_id": "ubiquity_history"
+        },
         {
           "description": "融资来源记录：SOND · 种子轮 · 2026-05-27 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d8f2f6d7fc0871dd"
@@ -195,8 +209,48 @@
           "source_id": "FISRC-08b1a89e7ab437e8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Ubiquity Ventures 官网",
+          "value": "Ubiquity Ventures",
+          "url": "https://www.ubiquity.vc/",
+          "source_id": "ubiquity_thesis"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "官网核实其投资理念、创始人及过往案例；未补录未核实的基金规模或回报数据。",
+      "summary": "Ubiquity Ventures 是一家由技术投资人支持技术创始人的风险投资机构，官网称其关注将软件带入物理世界的项目。官网列出的创始人兼管理合伙人为 Sunil Nagaraj。",
       "sources": [
+        {
+          "source_id": "ubiquity_thesis",
+          "source_url": "https://www.ubiquity.vc/team",
+          "source_title": "Sunil Nagaraj and the Extended Team | Ubiquity Ventures",
+          "source_content_hash": "76e74b06fc9a77d7387d865c7367176abb90cc6ef2f1dfd9fa2fb6ef8e60d3ea",
+          "quote": "Technical investors backing technical founders bringing software into the physical world.",
+          "quote_hash": "3b43172f36718baef45de977758ecd5548299e0279759dd727128187dab54ba4"
+        },
+        {
+          "source_id": "ubiquity_sunil",
+          "source_url": "https://www.ubiquity.vc/team",
+          "source_title": "Sunil Nagaraj and the Extended Team | Ubiquity Ventures",
+          "source_content_hash": "76e74b06fc9a77d7387d865c7367176abb90cc6ef2f1dfd9fa2fb6ef8e60d3ea",
+          "quote": "Sunil Nagaraj Founder & Managing Partner",
+          "quote_hash": "398ecab30141ee0fd4f45ddf116536af6f61aa6da2b1ba2c44030de7dd45c1fb"
+        },
+        {
+          "source_id": "ubiquity_history",
+          "source_url": "https://www.ubiquity.vc/team",
+          "source_title": "Sunil Nagaraj and the Extended Team | Ubiquity Ventures",
+          "source_content_hash": "76e74b06fc9a77d7387d865c7367176abb90cc6ef2f1dfd9fa2fb6ef8e60d3ea",
+          "quote": "15 years investing off the beaten path, with early bets on Rocket Lab, Auth0, Halter, and Zapier before those categories were obvious.",
+          "quote_hash": "ff477395ded3260f44c7138e29a3367e184244e2ea71eb63ae309e7fd12e046c"
+        },
         {
           "source_id": "FISRC-d8f2f6d7fc0871dd",
           "source_url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
@@ -213,8 +267,7 @@
           "quote": "with participation from Khosla Ventures, Pear VC, Ubiquity Ventures, and Harvest Ventures",
           "quote_hash": "b6fa3131e1a1b22027a2fbfe50b77482a8b6c98df355475896b39b6b285d4279"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

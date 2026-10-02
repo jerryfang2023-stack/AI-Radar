@@ -137,21 +137,75 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Position Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "早期创业公司，重点支持创始人的定位与传播策略。",
+          "source_id": "position_strategy"
+        },
+        {
+          "field": "founder",
+          "label": "创始人兼普通合伙人",
+          "value": "Jenny He",
+          "source_id": "position_jenny"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Lemma 于 2026 年宣布完成 230 万美元 Pre-Seed 融资，并将 Position Ventures 列为参与机构。",
+          "source_id": "position_lemma"
+        },
         {
           "description": "融资来源记录：Lemma · 预种子轮 · 2026-08-07 · 本轮参投 · $2.3M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-efe4db4aff32c4ea"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Position Ventures 官网",
+          "value": "Position Ventures",
+          "url": "https://positionventures.com/",
+          "source_id": "position_strategy"
+        }
+      ],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "Position Ventures 官网核实机构定位与 Jenny He 职务；Lemma 发行方融资公告核实其参与一项 Pre-Seed 融资。",
+      "summary": "Position Ventures 是一家关注早期创业公司的投资机构，并通过定位与传播策略支持创始人。官网列出 Jenny He 为创始人兼普通合伙人；Lemma 的融资公告将 Position Ventures 列为 2026 年 Pre-Seed 轮参与方。",
       "sources": [
+        {
+          "source_id": "position_strategy",
+          "source_url": "https://positionventures.com/",
+          "source_title": "Position Ventures - Early Stage Venture Capital Fund",
+          "source_content_hash": "fe6809f399f1595b7734cd4bb9dcf932e4ac98096b81b2c79407b2321db0cd8c",
+          "quote": "Position Ventures invests in early stage startups and positions them for success by helping founders nail their positioning and communications strategy.",
+          "quote_hash": "5af4549d358e5e377237f5ad26c0485913209b899ce7dd5d54735f69ddcfa76e"
+        },
+        {
+          "source_id": "position_jenny",
+          "source_url": "https://positionventures.com/",
+          "source_title": "Position Ventures - Early Stage Venture Capital Fund",
+          "source_content_hash": "fe6809f399f1595b7734cd4bb9dcf932e4ac98096b81b2c79407b2321db0cd8c",
+          "quote": "Jenny He Founder & General Partner",
+          "quote_hash": "c37934c10a2f69aaf8a915fca04532a4be654ee3ca3a38fc55aad1dbbc3a5cde"
+        },
+        {
+          "source_id": "position_lemma",
+          "source_url": "https://www.globenewswire.com/news-release/2026/08/13/3344773/0/en/2-3m-pre-seed-for-lemma-backed-by-matrix-yc-openai-xai-operators-to-fix-silent-ai-agent-failures.html",
+          "source_title": "$2.3M Pre-Seed for Lemma – Backed by Matrix, YC &amp;",
+          "source_content_hash": "2a8ef9f549d47930bb09bafa4a1f791f04bfa6b0a1be8c41868b4656fdacf3b6",
+          "quote": "The round includes participation from Matrix, Y Combinator, Liquid 2 Ventures, Vermilion Cliffs Ventures, Irregular Expressions, Cervin Ventures, Comma Capital, Position Ventures, and Eight Capital, plus angels and operators from OpenAI, xAI, Meta, and DoorDash.",
+          "quote_hash": "10499d000fc31a08d100c6bc88e117e73da2ba63f3f9eb9ead49083dd60782ac"
+        },
         {
           "source_id": "FISRC-efe4db4aff32c4ea",
           "source_url": "https://dealroom.co/news/143810-lemma-raises-2-3m-pre-seed-to-catch-ai-agents-that-fail-silently/",
@@ -160,8 +214,7 @@
           "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
           "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

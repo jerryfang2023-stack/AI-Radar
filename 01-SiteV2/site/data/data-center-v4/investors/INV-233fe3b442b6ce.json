@@ -137,12 +137,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Electronic Arts (EA) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Electronic Arts（EA）是数字互动娱乐公司，开发并交付游戏、内容及在线服务，产品覆盖联网主机、移动设备和个人电脑。",
+      "coverage_note": "公司身份与业务范围来自 EA 官方公司介绍；未将其描述为专业投资机构。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "业务范围",
+          "value": "官网称 EA 开发并交付游戏、内容和在线服务。",
+          "source_id": "ea_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +158,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "ea_about",
+          "source_url": "https://www.ea.com/about?i=986&lang=en",
+          "source_title": "About EA - Electronic Arts",
+          "source_content_hash": "603fcb858d32e6f93493613393624c0c422a08551ea4a758805e8be989552b07",
+          "quote": "EA is a global leader in digital interactive entertainment.",
+          "quote_hash": "cf896dc61c8c14b9cddfcb73bd694c5009ce82c8e4a9c978d5bb2693916f7f2a"
+        },
         {
           "source_id": "FISRC-e825eacb926a575f",
           "source_url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding",
@@ -161,7 +180,7 @@
           "quote_hash": "25f166736876db6905ce4d5700611e87a65b69df14f3a3c85ee4c982c2b1cb2c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

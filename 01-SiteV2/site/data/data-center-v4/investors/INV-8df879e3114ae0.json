@@ -194,11 +194,30 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Lollapalooza Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "创立年份、创始人和投资方向依据机构官网自述；组合名单不直接解释为已逐笔核验的投资关系。",
+      "summary": "Lollapalooza Capital 是一家研究驱动的风险投资机构，由美团联合创始人王慧文于 2025 年创立，官网称其参与早期和成长期投资，关注大语言模型、AI 基础设施、AI 应用、智能硬件及机器人与具身智能。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "大语言模型、AI 基础设施、2C/2B AI 应用、智能硬件、机器人与具身智能。",
+          "source_id": "lolla_focus"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "王慧文（Huiwen Wang），美团联合创始人；官网称其于 2025 年创立该机构。",
+          "source_id": "lolla_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025",
+          "description": "官网称 Lollapalooza Capital 由王慧文于 2025 年创立。",
+          "source_id": "lolla_about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · 本轮参投 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -209,8 +228,32 @@
           "source_id": "FISRC-002776ecfe7ba6a0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Lollapalooza Capital 官网",
+          "value": "Lollapalooza Capital",
+          "url": "https://lollapalooza.hk/",
+          "source_id": "lolla_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lolla_about",
+          "source_url": "https://lollapalooza.hk/",
+          "source_title": "Lollapalooza Capital",
+          "source_content_hash": "a44ce2780b9b6a3533e2790649b71d465159c008f553af8b6a523a83d0cec5ab",
+          "quote": "Founded in 2025 by Huiwen Wang, co-founder of Meituan (SEHK:3690), Lollapalooza Capital brings operator depth and long-horizon judgment to venture investing.",
+          "quote_hash": "3b091b43eae1b04f36e4af332c2b5909a4d05ded0b0d4f10c206f9462325b8f8"
+        },
+        {
+          "source_id": "lolla_focus",
+          "source_url": "https://lollapalooza.hk/",
+          "source_title": "Lollapalooza Capital",
+          "source_content_hash": "a44ce2780b9b6a3533e2790649b71d465159c008f553af8b6a523a83d0cec5ab",
+          "quote": "We back exceptional founders across LLM, AI infrastructure, 2C/2B AI applications, intelligent hardware, and robotics & embodied AI with deep research and long-term conviction.",
+          "quote_hash": "6608d81ded23ee3809f0456130e808ee814c9478833089f6f88b10de717605f1"
+        },
         {
           "source_id": "FISRC-9476e3eff9c1e8fe",
           "source_url": "https://news.pedaily.cn/202607/566238.shtml",
@@ -228,7 +271,7 @@
           "quote_hash": "e5a8e278829adf97feebafc8274fdaa9ac9b4ff38b56fb6bc45d2b16fb673068"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

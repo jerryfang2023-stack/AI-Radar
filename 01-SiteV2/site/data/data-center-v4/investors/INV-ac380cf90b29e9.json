@@ -137,21 +137,105 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pete Flint 当前按“个人投资者”收录。最新融资披露记录日期为 2026-06-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "profile_type": "person",
+      "coverage_note": "NFX 官方人物页核实其现任合伙人身份、职业经历、教育背景和公开案例；该档案不扩展为完整个人投资组合。",
+      "summary": "Pete Flint 是 NFX 的 General Partner，也曾共同创办 Trulia 并担任 CEO，参与创办 lastminute.com。NFX 官方人物页将其概括为连续创办过两家独角兽企业的创始人和经营者。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "General Partner",
+          "organization": "NFX Capital",
+          "source_id": "pete_current"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Trulia",
+          "title": "共同创办人兼 CEO",
+          "period": "2004–2015",
+          "description": "共同创办 Trulia 并担任 CEO；NFX 记载该公司于 2015 年与 Zillow 合并。",
+          "source_id": "pete_trulia"
+        },
+        {
+          "organization": "lastminute.com",
+          "title": "创始团队成员",
+          "period": "1998–2003",
+          "description": "NFX 页面称其曾是 lastminute.com 创始团队成员；该公司于 2005 年被 Travelocity/Sabre Holdings 收购。",
+          "source_id": "pete_lastminute"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Stanford Graduate School of Business",
+          "qualification": "MBA",
+          "source_id": "pete_education"
+        },
+        {
+          "institution": "University of Oxford",
+          "qualification": "物理学硕士（最高荣誉）",
+          "source_id": "pete_education"
+        }
+      ],
+      "experience_summary": "NFX 官方人物页将 Pete Flint 描述为两次独角兽创业者及经营者，职业经历涵盖房地产科技、在线旅游和风险投资。",
       "track_record": [
+        {
+          "description": "共同创办的 Trulia 于 2015 年与 Zillow 合并；NFX 页面记载当时交易对 Trulia 的估值为 35 亿美元。",
+          "source_id": "pete_trulia"
+        },
+        {
+          "description": "lastminute.com 于 2005 年被 Travelocity/Sabre Holdings 收购；NFX 页面记载交易金额超过 10 亿美元。",
+          "source_id": "pete_lastminute"
+        },
         {
           "description": "融资来源记录：Monogram AI, Inc. · 种子轮 · 2026-06-30 · 本轮天使投资人 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-907e4297862ddd8c"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "pete_current",
+          "source_url": "https://www.nfx.com/team/pete-flint",
+          "source_title": "NFX - Pete Flint",
+          "source_content_hash": "1cab8d624b22ca83eecdbb330e80dffff5a049e97cdb31a91f5215b0cee4c68b",
+          "quote": "General Partner NFX Capital · 2016 - Present",
+          "quote_hash": "d9b563f02000890a5daec7a6d664ab77273f81146dcca3167d0f84271b0c9db8"
+        },
+        {
+          "source_id": "pete_role",
+          "source_url": "https://www.nfx.com/team/pete-flint",
+          "source_title": "NFX - Pete Flint",
+          "source_content_hash": "1cab8d624b22ca83eecdbb330e80dffff5a049e97cdb31a91f5215b0cee4c68b",
+          "quote": "Pete Flint General Partner · San Francisco",
+          "quote_hash": "73e73b2fdcadc2cbecb0416e4e6b151ccb145136e99d6c72ce453433464e25d6"
+        },
+        {
+          "source_id": "pete_trulia",
+          "source_url": "https://www.nfx.com/team/pete-flint",
+          "source_title": "NFX - Pete Flint",
+          "source_content_hash": "1cab8d624b22ca83eecdbb330e80dffff5a049e97cdb31a91f5215b0cee4c68b",
+          "quote": "Pete was the co-founder and former CEO of Trulia, one of the internet’s most successful marketplaces. He led the company from inception to one of the largest and fastest-growing real estate brands in the U.S. with more than 50 million monthly unique users and a merger with Zillow in 2015 that valued Trulia at $3.5 billion.",
+          "quote_hash": "2a5ae08ae67dbe6d20a3535ac0bc77f162ce60e3d4c253bb7736a40da9f89162"
+        },
+        {
+          "source_id": "pete_lastminute",
+          "source_url": "https://www.nfx.com/team/pete-flint",
+          "source_title": "NFX - Pete Flint",
+          "source_content_hash": "1cab8d624b22ca83eecdbb330e80dffff5a049e97cdb31a91f5215b0cee4c68b",
+          "quote": "Prior to starting Trulia, Pete was part of the founding team of lastminute.com, a leading European online travel site that was acquired in 2005 by Travelocity/Sabre Holdings for over $1 billion.",
+          "quote_hash": "dcf72937010eb0ac0de6f70c95f7c30606d388d2d9fc7cc1fbf891bbe67e0022"
+        },
+        {
+          "source_id": "pete_education",
+          "source_url": "https://www.nfx.com/team/pete-flint",
+          "source_title": "NFX - Pete Flint",
+          "source_content_hash": "1cab8d624b22ca83eecdbb330e80dffff5a049e97cdb31a91f5215b0cee4c68b",
+          "quote": "M.B.A, Stanford Graduate School of Business Masters in Physics, Highest Honors, University of Oxford",
+          "quote_hash": "ef8e202abb7aa032cfdcda92f69b8987eff8f9ebaa54c69695e7304cfe030a60"
+        },
         {
           "source_id": "FISRC-907e4297862ddd8c",
           "source_url": "https://www.thesaasnews.com/news/monogram-raises-40m-seed/",
@@ -161,7 +245,7 @@
           "quote_hash": "49b9176525c9b670b8fddd7882264ccd675914d00fe270263b9fd54c278087c0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

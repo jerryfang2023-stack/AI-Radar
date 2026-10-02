@@ -244,14 +244,23 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Founders Future 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Founders Future Capital Partners 是获 AMF 批准的资产管理公司；ZeroDrift 的种子轮融资公告将 Founders Future 列为投资方。",
+      "coverage_note": "机构名称和监管批准来自官网，融资关系来自 ZeroDrift 发布的融资公告；没有补入单独投资金额或基金载体信息。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "ZeroDrift 官方融资公告将 Founders Future 列入 2026 年种子轮投资方。",
+          "source_id": "founders_future_zerodrift_seed"
+        },
         {
           "description": "融资来源记录：Delos · A轮 · 2026-09-16 · 本轮参投 · €10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d8407107e870ebc"
@@ -265,8 +274,23 @@
           "source_id": "FISRC-115626db07e52373"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "founders_future_identity",
+          "source_url": "https://www.foundersfuture.com/en",
+          "source_title": "Founders Future | Investment Firm Backing AI Founders",
+          "source_content_hash": "067ede1a6e80d3415f2986045839363b36941f31f9eafe2473511107d68bf8a6",
+          "quote": "Founders Future Capital Partners is a portfolio management company approved by the AMF under the number GP-20240021.",
+          "quote_hash": "a2975c78b66a1fdc487749a8fc6530ee05fd2950a2c35533927d843a78bb1b74"
+        },
+        {
+          "source_id": "founders_future_zerodrift_seed",
+          "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/ZeroDrift-Raises-10M-Seed-Round-to-Build-the-Compliance-Firewall-for-AI.html",
+          "source_title": "ZeroDrift Raises $10M Seed Round to Build the Compliance",
+          "source_content_hash": "c1c7332e1706365088147fb1de401298715a0f9996781c4a1d7ce32ea49d7b29",
+          "quote": "Investors include a16z speedrun, Reign Ventures, PitchDrive Ventures, U&I Ventures, Active Capital, Geek Ventures, Converge Ventures, Atlas SGR, Founders Future, and others.",
+          "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
+        },
         {
           "source_id": "FISRC-6d8407107e870ebc",
           "source_url": "https://www.maddyness.com/?p=1441578",
@@ -292,7 +316,7 @@
           "quote_hash": "a799bc6e9b8be7996b147cfd574c3c2a171c3032c8a813133c84cec15dc858d1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

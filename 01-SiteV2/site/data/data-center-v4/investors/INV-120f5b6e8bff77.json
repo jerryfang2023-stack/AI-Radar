@@ -137,21 +137,51 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Tristan Handy 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "person",
+      "summary": "Tristan Handy 是 dbt Labs 创始人兼 CEO；Bespoke Labs 官方融资公告在其 Series A 参与方名单中列出他。",
+      "coverage_note": "职务来自 dbt Labs 官网，融资参与来自 Bespoke Labs 官方公告；来源未披露他的投资载体或个人出资额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Founder & CEO",
+          "organization": "dbt Labs",
+          "source_id": "tristan_dbt_role"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Bespoke Labs 官方公告称其 Series A 投资方包括 dbt Labs CEO Tristan Handy。",
+          "source_id": "tristan_bespoke_series_a"
+        },
         {
           "description": "融资来源记录：Bespoke Labs · 多轮融资 · 2026-07-06 · Series A轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bcf489b2ae49f41b"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "tristan_dbt_role",
+          "source_url": "https://www.getdbt.com/about-us",
+          "source_title": "About dbt Labs | Empowering data practitioners worldwide",
+          "source_content_hash": "7ce233fd70a941548faf4ed534f3935301b1e72b1a8f909053c33a58d152e253",
+          "quote": "Tristan Handy is the Founder and CEO of dbt Labs.",
+          "quote_hash": "4efd2cb251d219346ea3bc7a284435f721093047e4a3ef8dc38e0d889fbe617d"
+        },
+        {
+          "source_id": "tristan_bespoke_series_a",
+          "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
+          "source_title": "Bespoke Labs Raises $40M to Build Environments that Enable Reliable Agents - My Framer Site",
+          "source_content_hash": "7b7d96c5a9652bb4b4c0269079219d1883bd179321deef2799fb8e5a972f5843",
+          "quote": "Our Series A round was led by Wing VC, with participation from Mayfield, The House Fund, dbt Labs CEO Tristan Handy, and angels from Anthropic, OpenAI, and Meta, and others.",
+          "quote_hash": "a97d441a316a5525b49048377b233d5721ac38346b78656a405d7e94321eb52c"
+        },
         {
           "source_id": "FISRC-bcf489b2ae49f41b",
           "source_url": "https://bespokelabs.ai/blog/bespoke-labs-raises-40m-to-build-environments-that-enable-reliable-agents",
@@ -161,7 +191,7 @@
           "quote_hash": "a3e41a0b7030c15e8627cf5e5c30e51db2ae587adf99ac3b9f6c70eff8e12ce5"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

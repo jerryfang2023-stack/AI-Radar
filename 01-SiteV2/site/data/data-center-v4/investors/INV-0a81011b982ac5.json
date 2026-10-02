@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "宝通科技 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "宝通科技是 2009 年起在创业板上市的科技企业；中关村科学城发布的融资信息将其列为光轮智能本轮产业资本参与方。",
+      "coverage_note": "公司身份来自宝通科技官网，融资关系来自中关村科学城发布的公告；不推断其为独立 VC 基金。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "中关村科学城公告列宝通科技为光轮智能新一轮融资的产业资本参与方。",
+          "source_id": "boton_guanglun_round"
+        },
         {
           "description": "融资来源记录：光轮智能 · 基础设施融资 · 2026-07-01 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8787a3d3602feb17"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "boton_identity",
+          "source_url": "https://www.boton-tech.com/about",
+          "source_title": "宝通科技",
+          "source_content_hash": "e7f26cefda54d805ecb5d3d0dcbe55114126275b00e49dc25354e36efdc76a44",
+          "quote": "宝通成立于2000年，自2009年创业板上市以来",
+          "quote_hash": "86c850cac9c53bccaf3874d750f0d64c11216cff41f5aa84b0807bd17bf47d2e"
+        },
+        {
+          "source_id": "boton_guanglun_round",
+          "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
+          "source_title": "光轮智能完成新一轮10亿元融资，加速物理AI数据与评测基础设施",
+          "source_content_hash": "d27cab4f8d40474e5fbb7645a72bf14914fb35e53a73fde14f56a4cceadb74d7",
+          "quote": "宇信科技、宝通科技、中科产投、量图智策等产业资本及财务投资机构",
+          "quote_hash": "e5c9909268c6164e0443c19dc91fe2038877adddd608ff8ae5c86979e3cb5673"
+        },
         {
           "source_id": "FISRC-8787a3d3602feb17",
           "source_url": "https://www.ncsti.gov.cn/kjdt/scyq/zgckxc/zgcdt/202607/t20260701_250581.html",
@@ -161,7 +185,7 @@
           "quote_hash": "71792afe8c027b27e57bfc0819ab1d5d99a6ee5f1e108cb5f6f6b312377c3cee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -186,12 +186,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华盖创赢 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "北京华盖创赢私募基金管理有限公司是私募基金管理人。视觉中国 2026 年公告披露其登记编号为 P1067715，并由其担任一只科技基金的普通合伙人和管理人。",
+      "coverage_note": "管理人法定名称、登记编号和基金角色依据上市公司于 2026 年发布的交易公告；基金尚处设立与后续募资阶段，不据此宣称投资已经完成。",
+      "facts": [
+        {
+          "field": "manager_registration",
+          "label": "管理人登记",
+          "value": "公告披露其私募基金管理人登记编号为 P1067715。",
+          "source_id": "huagai_chuangying_role"
+        },
+        {
+          "field": "fund_role",
+          "label": "基金角色",
+          "value": "公告披露其担任生生不息（天津）智能科技合伙企业的普通合伙人及管理人。",
+          "source_id": "huagai_chuangying_role"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -200,7 +213,27 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "huagai_chuangying_identity",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-06/1224920627.PDF",
+          "source_title": "视觉中国关于全资子公司与专业投资机构共同投资的公告",
+          "source_content_hash": "3392f56af6f12eca72c17ef6341ed5ca24641fb42f9a316f0120d543d4144428",
+          "quote": "企业名称：北京华盖创赢私募基金管理有限公司。企业类型：有限责任公司。统一社会信用代码：91110101MA0010678Y。",
+          "quote_hash": "ce37a90be17081e704b64d88581d638f6d21d85043d96ebbf737f922f2ec63fa"
+        },
+        {
+          "source_id": "huagai_chuangying_role",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-06/1224920627.PDF",
+          "source_title": "视觉中国关于全资子公司与专业投资机构共同投资的公告",
+          "source_content_hash": "3392f56af6f12eca72c17ef6341ed5ca24641fb42f9a316f0120d543d4144428",
+          "quote": "华盖创赢为私募基金管理人，登记编号：P1067715。该管理人担任上述基金的普通合伙人及管理人。",
+          "quote_hash": "cf3b4cf8848fbb06a47f80cba7e5d27a00e46c1dda8a29be0633edf4bb10fe17"
+        },
         {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",
@@ -210,7 +243,7 @@
           "quote_hash": "d65491949cddef8dbbeb83255e6b1186dbf2888d42525d5dc2353472077af0ed"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

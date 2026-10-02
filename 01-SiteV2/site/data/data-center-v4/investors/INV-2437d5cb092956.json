@@ -137,12 +137,19 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Millennium Management 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Millennium Management 是全球多元化另类投资机构。官网称其使命是为投资者提供高质量回报，并介绍其自 1989 年以来持续演进。",
+      "coverage_note": "机构性质和使命依据 Millennium 官网；官网展示的规模数据具有时效性，本档案不固化此类数字。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构性质",
+          "value": "全球多元化另类投资机构。",
+          "source_id": "millennium_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +158,19 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "millennium_home",
+          "source_url": "https://www.mlp.com/",
+          "source_title": "Millennium Management Global Investment",
+          "source_content_hash": "efe61c6f8e091f83e7c5f812aaf26793d1f7cb99c40ad9bc1ec6446eae78dcb6",
+          "quote": "Millennium is a global, diversified alternative investment firm with the mission to deliver high-quality returns for our investors.",
+          "quote_hash": "565d3eb1149c7ae1a512fc5bd0b253e4a105e2026d1632ede60e2f39dcdafc34"
+        },
         {
           "source_id": "FISRC-36551c55b72c6244",
           "source_url": "https://www.artificialintelligence-news.com/news/gatik-200m-ai-autonomous-freight",
@@ -161,7 +180,7 @@
           "quote_hash": "d1baf78c8324a6eb3439ef5cbf4ad3954c1317b80423810099bd4e4858af4722"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

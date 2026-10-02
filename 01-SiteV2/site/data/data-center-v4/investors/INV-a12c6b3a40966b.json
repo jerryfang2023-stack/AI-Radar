@@ -121,21 +121,109 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Assaf Rappaport (Wiz 创始团队成员) 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "其共同创立并担任 CEO 的 Adallom 于 2015 年被 Microsoft 收购。",
+          "source_id": "assaf_adallom"
+        },
         {
           "description": "融资来源记录：Harmony · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a6970c8768c84ff"
         }
       ],
       "contacts": [],
+      "current_roles": [
+        {
+          "title": "共同创办人兼 CEO",
+          "organization": "Wiz",
+          "source_id": "assaf_role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Adallom",
+          "title": "共同创办人兼 CEO",
+          "period": "截至 2015 年",
+          "description": "共同创立并担任 CEO；公司于 2015 年被 Microsoft 收购。",
+          "source_id": "assaf_adallom"
+        },
+        {
+          "organization": "Microsoft",
+          "title": "负责 Cloud Security 团队；以色列研发中心总经理",
+          "period": "Adallom 被收购后",
+          "description": "Wiz 官方人物简介记载他曾领导 Microsoft Cloud Security 团队，并担任该公司以色列研发中心总经理。",
+          "source_id": "assaf_microsoft"
+        },
+        {
+          "organization": "McKinsey & Company",
+          "title": "战略项目相关工作",
+          "period": "未披露",
+          "description": "Wiz 官方人物简介称其早期曾在以色列和澳大利亚参与战略项目。",
+          "source_id": "assaf_mckinsey"
+        }
+      ],
+      "education": [
+        {
+          "institution": "Technion Israel Institute of Technology",
+          "qualification": "计算机科学硕士",
+          "source_id": "assaf_education"
+        },
+        {
+          "institution": "Hebrew University",
+          "qualification": "计算机科学、物理与数学学士",
+          "source_id": "assaf_education"
+        }
+      ],
+      "experience_summary": "Wiz 官方人物简介披露的职业经历包括 Wiz、Adallom、Microsoft 和 McKinsey；学历包括 Technion 计算机科学硕士及 Hebrew University 学士学位。",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "person",
+      "coverage_note": "Wiz 官方人物简介核实其职位、Adallom 与 Microsoft 职业经历及学历；该档案不推断其作为个人投资者的其他活动。",
+      "summary": "Assaf Rappaport 是 Wiz 的共同创办人兼 CEO。此前他共同创立 Adallom 并担任 CEO；Adallom 于 2015 年被 Microsoft 收购。他曾负责 Microsoft Cloud Security 团队及以色列研发中心，之后的公开履历还包括 McKinsey。",
       "sources": [
+        {
+          "source_id": "assaf_role",
+          "source_url": "https://www.wiz.io/authors/assaf-rappaport",
+          "source_title": "Posts by Assaf Rappaport | Wiz",
+          "source_content_hash": "38e8cd2292248c4608521441ebd8d63167a3bd9e9261fcc7cb162fae54d2cf10",
+          "quote": "Assaf Rappaport is the Co-founder and Chief Executive Officer of Wiz.",
+          "quote_hash": "01e1a9bc7d5300a080bfc74713608bfeb2f82c9d1754925e01c394ecc4b6b09b"
+        },
+        {
+          "source_id": "assaf_adallom",
+          "source_url": "https://www.wiz.io/authors/assaf-rappaport",
+          "source_title": "Posts by Assaf Rappaport | Wiz",
+          "source_content_hash": "38e8cd2292248c4608521441ebd8d63167a3bd9e9261fcc7cb162fae54d2cf10",
+          "quote": "Previously, Assaf was co-founder and CEO of Adallom, a leading cloud access security broker (CASB) acquired by Microsoft in 2015.",
+          "quote_hash": "55865cfdd484cbbb6fb713559fcb28b0e4a4e96987e7087d6d03f011f7394a29"
+        },
+        {
+          "source_id": "assaf_microsoft",
+          "source_url": "https://www.wiz.io/authors/assaf-rappaport",
+          "source_title": "Posts by Assaf Rappaport | Wiz",
+          "source_content_hash": "38e8cd2292248c4608521441ebd8d63167a3bd9e9261fcc7cb162fae54d2cf10",
+          "quote": "He led Microsoft’s Cloud Security group and served as the General Manager of the company’s Israel’s R&D Center.",
+          "quote_hash": "4caa532b917261591375a855e398a6f4de7122db96f4da4241633c2fd0b045a4"
+        },
+        {
+          "source_id": "assaf_mckinsey",
+          "source_url": "https://www.wiz.io/authors/assaf-rappaport",
+          "source_title": "Posts by Assaf Rappaport | Wiz",
+          "source_content_hash": "38e8cd2292248c4608521441ebd8d63167a3bd9e9261fcc7cb162fae54d2cf10",
+          "quote": "In his earlier days Assaf managed several strategy-focused projects in Israel and Australia, while working for McKinsey & Company.",
+          "quote_hash": "139e500183951f5d27690f93c9781c1c5e7f319d08ba05811aeb03c6838cb3db"
+        },
+        {
+          "source_id": "assaf_education",
+          "source_url": "https://www.wiz.io/authors/assaf-rappaport",
+          "source_title": "Posts by Assaf Rappaport | Wiz",
+          "source_content_hash": "38e8cd2292248c4608521441ebd8d63167a3bd9e9261fcc7cb162fae54d2cf10",
+          "quote": "He holds an M.Sc. in Computer Science from the Technion Israel Institute of Technology and a B.Sc. in Computer Science, Physics, and Mathematics from the Hebrew University.",
+          "quote_hash": "066d45f50adcc94e2851323cd91d39804ce0ed9bd57f8e5aefaaf7071f8c6439"
+        },
         {
           "source_id": "FISRC-2a6970c8768c84ff",
           "source_url": "https://www.accessnewswire.com/newsroom/en/computers-technology-and-internet/harmony-raises-34-million-to-reinvent-employee-experience-powered-1193998",
@@ -144,8 +232,7 @@
           "quote": "angel investors including Wiz founding team, including Assaf Rappaport, and Ofir Ehrlich, co-founder and CEO of Eon.io",
           "quote_hash": "7f59260f697968fe60cac70e9d088db6d297bf26c685727446a8a7724311fc60"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

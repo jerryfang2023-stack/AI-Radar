@@ -121,21 +121,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "SK Telecom 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "Rebellions 官方 2026 年 3 月融资公告将 SK Telecom 列为其投资方之一。该来源确认的是这一项公司融资关系，不构成 SK Telecom 的完整机构背景或投资组合档案。",
+      "coverage_note": "依据被投公司官方融资公告确认单项投资关系；未将 SK Telecom 归类为独立 VC 基金。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Rebellions 2026 年 3 月 30 日公告称，公司完成 4 亿美元 Pre-IPO 融资，并将 SK Telecom 列入支持其发展的投资方。该公告没有披露 SK Telecom 的单独出资金额。",
+          "source_id": "skt_rebellions_round"
+        },
         {
           "description": "融资来源记录：Rebellions Inc. · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1bd642bd46e5675c"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "skt_rebellions_2026",
+          "source_url": "https://rebellions.ai/newsroom/rebellions-closes-400-million-pre-ipo-and-launches-rebelrack-and-rebelpod-to-accelerate-global-expansion/",
+          "source_title": "Rebellions Closes $400 Million Pre-IPO and Launches RebelRack™ and RebelPOD™ to Accelerate Global Expansion - Rebellions",
+          "source_content_hash": "ee74af57afb1f6ea4e0b7f5d20f96ce580801ef134964cfbcfc1dad2e1de9fa2",
+          "quote": "Backed by Aramco, Arm, Kindred Ventures, KT, Mirae Asset Group, Samsung, SK Hynix, and SK Telecom",
+          "quote_hash": "a4418dd7b68a756345a0299c662cf58c656d9321ef2d59bf83b7bf46a48fd417"
+        },
+        {
+          "source_id": "skt_rebellions_round",
+          "source_url": "https://rebellions.ai/newsroom/rebellions-closes-400-million-pre-ipo-and-launches-rebelrack-and-rebelpod-to-accelerate-global-expansion/",
+          "source_title": "Rebellions Closes $400 Million Pre-IPO and Launches RebelRack™ and RebelPOD™ to Accelerate Global Expansion - Rebellions",
+          "source_content_hash": "ee74af57afb1f6ea4e0b7f5d20f96ce580801ef134964cfbcfc1dad2e1de9fa2",
+          "quote": "Seoul, South Korea – March 30, 2026 – Rebellions, a global leader in AI inference infrastructure, has raised $400 million in a pre-IPO funding round led by Mirae Asset Financial Group and the Korea National Growth Fund.",
+          "quote_hash": "5b0f1e8c5814e1b13929c516e2ed1feb5e6e30894396efa8d3be52fa989e344f"
+        },
         {
           "source_id": "FISRC-1bd642bd46e5675c",
           "source_url": "https://app.fundz.net/fundings/rebellions-funding-round-c52470",
@@ -145,7 +169,7 @@
           "quote_hash": "0d216e74fe4708aa8dbde7fe908fd76dcf31573cac944588137ef79f714a56d0"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

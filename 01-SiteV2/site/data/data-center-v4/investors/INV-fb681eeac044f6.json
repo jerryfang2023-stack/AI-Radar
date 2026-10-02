@@ -137,21 +137,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tim Stannard (Bacchus Management Group) 当前按“个人投资者”收录。最新融资披露记录日期为 2026-07-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "summary": "Tim Stannard 是 Bacchus Management Group 的餐饮经营者。Hostie 的 1200 万美元 Series A 新闻稿明确列出他作为餐饮运营者参与该轮投资。",
+      "coverage_note": "投资关系来自 Hostie 发布的融资新闻稿；Hostie 官方博客也将 Tim Stannard 与 Bacchus Management Group 关联。未披露个人投资金额。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "track_record": [
+        {
+          "description": "Hostie 2026 年 7 月 8 日 1200 万美元 Series A 新闻稿将 Tim Stannard 列为餐饮运营者投资人。",
+          "source_id": "tim_hostie_investment"
+        },
         {
           "description": "融资来源记录：Hostie · A轮 · 2026-07-08 · 本轮天使投资人 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d81171d6c6910b85"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "tim_hostie_investment",
+          "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality",
+          "source_content_hash": "092c8022c5ecc67b43c42ddc70e993697186d6a2f718bc68ae900a27c7356e16",
+          "quote": "The round also includes investments from leading restaurant operators Tim Stannard of Bacchus Management Group",
+          "quote_hash": "d4313fbbc6e6699588fc89fd32fbb849582357da651dc42e85d2a6836771920b"
+        },
+        {
+          "source_id": "tim_hostie_affiliation",
+          "source_url": "https://hostie.ai/blogs/hostie-news-seriesa",
+          "source_title": "Hostie Raises $12M Series A to Power the Future of Restaurant Hospitality - Hostie Blog",
+          "source_content_hash": "f1afba08c75d7f44f06d38c8f0358393360006190faa37937a513dba5568c0e6",
+          "quote": "Tim Stannard from Bacchus Management Group",
+          "quote_hash": "1678e2c1e7c9ade58e29a96c0482c74c5ef169b8cd9a8b1927b2c80ccf6596f3"
+        },
         {
           "source_id": "FISRC-d81171d6c6910b85",
           "source_url": "https://www.prnewswire.com/news-releases/hostie-raises-12m-series-a-to-power-the-future-of-restaurant-hospitality-302820521.html",
@@ -161,7 +185,7 @@
           "quote_hash": "d4313fbbc6e6699588fc89fd32fbb849582357da651dc42e85d2a6836771920b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

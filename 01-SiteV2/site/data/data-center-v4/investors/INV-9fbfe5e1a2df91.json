@@ -122,12 +122,22 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Lenovo Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "2016 年",
+          "source_id": "lenovo_identity"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "AI 及行业应用、算力软硬件、具身智能、智慧医疗、先进制造、新能源。",
+          "source_id": "lenovo_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -136,7 +146,31 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "last_verified_at": "2026-10-02",
+      "profile_type": "organization",
+      "coverage_note": "联想创投官网核实其成立背景、业务定位与公开投资方向；未扩写未在该页面核实的财务指标。",
+      "summary": "联想创投集团（Lenovo Capital and Incubator Group，LCIG）是联想集团旗下的科技产业基金，成立于 2016 年，通过投资和孵化布局科技产业。官网列出的投资方向包括 AI 及行业应用、算力软硬件、具身智能、智慧医疗、先进制造和新能源。",
       "sources": [
+        {
+          "source_id": "lenovo_identity",
+          "source_url": "https://capital.lenovo.com/team/lenovoteam.html",
+          "source_title": "Lenovo Capital",
+          "source_content_hash": "a06c31da28fe02ab8788654005d8ac06dc53c8c48ff516917f85c04370f9e32d",
+          "quote": "成立于2016年",
+          "quote_hash": "affa34167d8206a186c862b491390196d04bb103c892cad3da63552d760298ab"
+        },
+        {
+          "source_id": "lenovo_focus",
+          "source_url": "https://capital.lenovo.com/team/lenovoteam.html",
+          "source_title": "Lenovo Capital",
+          "source_content_hash": "a06c31da28fe02ab8788654005d8ac06dc53c8c48ff516917f85c04370f9e32d",
+          "quote": "主要投资方向包括：AI及行业应用、算力软硬件、具身智能、智慧医疗、先进制造、新能源",
+          "quote_hash": "62eb16088cffff37ff95c3e01b0a647c3483b11ef37b611f7a3b9fe5ae4f94d0"
+        },
         {
           "source_id": "FISRC-e424026c5a172d4b",
           "source_url": "https://kr-asia.com/as-ai-consolidates-what-makes-stepfun-worth-a-rmb-5-billion-raise",
@@ -145,8 +179,7 @@
           "quote": "That milestone helped anchor its second round, which drew a broader investor base, including USD-denominated funds managed by 5Y Capital and Shunwei Capital, as well as strategic investors such as Lenovo Capital.",
           "quote_hash": "55d6169a15272cb1e4086e5aadba12e3d1ea72a411092f0bbd969ee15b8c6d5b"
         }
-      ],
-      "last_verified_at": "2026-09-25"
+      ]
     }
   }
 }

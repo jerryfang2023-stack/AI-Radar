@@ -137,21 +137,52 @@
       }
     ],
     "public_profile": {
-      "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Victor Riparbelli 当前按“个人投资者”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "profile_type": "person",
+      "coverage_note": "Synthesia 官方作者页核实其共同创办人及 CEO 身份、创业经历和工作方向；该页没有披露个人投资经历，融资关联仍以已有活动记录为准。",
+      "summary": "Victor Riparbelli 是 Synthesia 的共同创办人兼 CEO。Synthesia 官方作者页称他于 2017 年与 AI 研究人员共同创办该公司，并有约十年的科技创业经验。",
+      "current_roles": [
+        {
+          "title": "共同创办人兼 CEO",
+          "organization": "Synthesia",
+          "source_id": "victor_role"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Synthesia",
+          "title": "共同创办人兼 CEO",
+          "period": "2017 年至今（官网页面核验于 2026-10-02）",
+          "description": "Synthesia 官方作者页称其共同创办了 Synthesia，并有约十年的科技创业经验。",
+          "source_id": "victor_bio"
+        }
+      ],
+      "education": [],
+      "experience_summary": "官方作者页将其经验概括为科技创业与 AI 视频领域，并称其关注负责任的创新。",
       "track_record": [
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "victor_role",
+          "source_url": "https://www.synthesia.io/blog/authors",
+          "source_title": "Authors - Synthesia Blog",
+          "source_content_hash": "5d4d3a5e4fc8872b8cc01b517826cebbaed5d9fddcd83302a991e61c51fc9813",
+          "quote": "Victor Riparbelli CEO & Co-Founder of Synthesia",
+          "quote_hash": "3c8b67611ef48b4f6edbe3e56aa53fc1808a5281c2d51a7fdeabebb098520db8"
+        },
+        {
+          "source_id": "victor_bio",
+          "source_url": "https://www.synthesia.io/blog/authors",
+          "source_title": "Authors - Synthesia Blog",
+          "source_content_hash": "5d4d3a5e4fc8872b8cc01b517826cebbaed5d9fddcd83302a991e61c51fc9813",
+          "quote": "Victor Riparbelli is co-founder of Synthesia, launched in 2017 with AI researchers. With a decade in tech entrepreneurship, he combines technical expertise and academic insight to advance AI video, focusing on ethical and responsible innovation.",
+          "quote_hash": "f999320d5210e2a7e6b00f41f17082f0f3dd7a4dee125d019fde17e3f738026c"
+        },
         {
           "source_id": "FISRC-ce83b857608dabeb",
           "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
@@ -161,7 +192,10 @@
           "quote_hash": "67a2d8f7cc806d87817028bea636ea98e906cd8a58820bf1029013e9919109b3"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02",
+      "facts": [],
+      "milestones": [],
+      "contacts": []
     }
   }
 }

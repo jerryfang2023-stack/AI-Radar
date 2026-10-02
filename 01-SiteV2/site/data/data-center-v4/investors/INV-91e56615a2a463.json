@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ripple Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、地区和金额区间来自 Ripple Ventures 官网自述；金额与策略属于官网披露，可能随基金周期调整。",
+      "summary": "Ripple Ventures 是一家面向 inception 阶段技术创业公司的风险投资机构。官网披露其通常投资 25 万至 100 万美元，主要支持加拿大和美国面向全球市场的初创公司。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Inception 阶段，包括注册前、产品前或尚未形成客户牵引时。",
+          "source_id": "ripple_home"
+        },
+        {
+          "field": "check_size",
+          "label": "单笔金额",
+          "value": "官网披露为 25 万至 100 万美元。",
+          "source_id": "ripple_home"
+        },
+        {
+          "field": "geography",
+          "label": "投资地区",
+          "value": "加拿大和美国、面向全球市场的初创公司。",
+          "source_id": "ripple_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,24 @@
           "source_id": "FISRC-d887dae741d872b9"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Ripple Ventures 官网",
+          "value": "Ripple Ventures",
+          "url": "https://www.rippleventures.com/",
+          "source_id": "ripple_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ripple_home",
+          "source_url": "https://www.rippleventures.com/",
+          "source_title": "Ripple Ventures",
+          "source_content_hash": "77c59fdfbcfbd938e74c9786684fc349a71d5bd44fb47161fdf5917cc5ff716a",
+          "quote": "Cheque Size : $250K – $1M USD Round Involvement : Typically lead or co-lead deals, with flexibility to join rounds as a supportive partner. Stage : Inception stage, which can be: pre-incorporation, pre-product, or pre-traction. Geography : Canadian and US startups that sell to global markets.",
+          "quote_hash": "3d39298b7c6aff114575e4391232d235880dc7479deca4a8659a9f170c9f61be"
+        },
         {
           "source_id": "FISRC-d887dae741d872b9",
           "source_url": "https://aijourn.com/katalyze-ai-raises-10-5m-led-by-bonfire-ventures-deploy-agentic-operating-system-for-pharma/",
@@ -161,7 +196,7 @@
           "quote_hash": "7b036bafbacbcc46dd6e0bdc7534cd212dce69bdbe1942c13d52270175df0e48"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

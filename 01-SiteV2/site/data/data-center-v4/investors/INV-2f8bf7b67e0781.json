@@ -137,12 +137,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Planven 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "profile_type": "organization",
+      "summary": "Planven 是面向欧洲和以色列市场的风险投资机构，官网介绍其投资颠覆性技术与可扩展商业模式，阶段覆盖扩张资本和风险成长。",
+      "coverage_note": "机构策略及地域信息来自 Planven 官方网站；网站所列资产管理规模等数字未标注本档案未核实的统计时点，故不引用。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网强调技术、可扩展商业模式与创业团队。",
+          "source_id": "planven_strategy"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网列出扩张资本与风险成长阶段。",
+          "source_id": "planven_stage"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "官网列出欧洲与以色列。",
+          "source_id": "planven_geography"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +170,35 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "planven_strategy",
+          "source_url": "https://www.planvenev.com/about-us.html",
+          "source_title": "Planven",
+          "source_content_hash": "e5dbb16a96083c93ca5365ff766541094fbe2814d09b992e0b2b768d4846ed75",
+          "quote": "We invest in disrupting technologies, scalable business models and outstanding founders",
+          "quote_hash": "ee9e294b99d5a157426895f357db75c2dd7c7d8cbb5a4bc222f8e1eb32823cc0"
+        },
+        {
+          "source_id": "planven_stage",
+          "source_url": "https://www.planvenev.com/about-us.html",
+          "source_title": "Planven",
+          "source_content_hash": "e5dbb16a96083c93ca5365ff766541094fbe2814d09b992e0b2b768d4846ed75",
+          "quote": "Expansion Capital / Venture Growth",
+          "quote_hash": "854c8d6ed7198bbe7617308f500d4ea450b9b51f66b622b81dc3bc9ea931b878"
+        },
+        {
+          "source_id": "planven_geography",
+          "source_url": "https://www.planvenev.com/about-us.html",
+          "source_title": "Planven",
+          "source_content_hash": "e5dbb16a96083c93ca5365ff766541094fbe2814d09b992e0b2b768d4846ed75",
+          "quote": "Geographical Focus Europe Israel",
+          "quote_hash": "717493ec061c7cb8e6a7a471791870750c674d03019b3e955a12ef3cf93f66bb"
+        },
         {
           "source_id": "FISRC-6734ffb9c928450a",
           "source_url": "https://www.prnewswire.com/news-releases/encore-ai-raises-30m-to-deploy-the-only-enterprise-ai-platform-built-to-generate-revenue-from-customer-interactions-302837694.html",
@@ -161,7 +208,7 @@
           "quote_hash": "c805f01cb8d74c3c125b4a7bf5ad505864720b28d1612896862447391121810b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

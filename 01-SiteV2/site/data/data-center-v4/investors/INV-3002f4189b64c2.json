@@ -121,12 +121,37 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "嘉兴沃永 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "profile_type": "organization",
+      "summary": "珀莱雅 2019 年与新沃股权投资基金管理（天津）有限公司、乐清乐盈贸易有限公司共同设立嘉兴沃永；上市公司公告披露其作为 45% 有限合伙人，并于 2025 年签署份额转让协议拟退出。",
+      "coverage_note": "主体类型、执行事务合伙人和历史份额依据珀莱雅 2025 年公告；公告表示交易完成后珀莱雅将不再持有，但本档案未核实转让最终完成，也不据此推断基金清算或其他合伙人持份变化。",
+      "facts": [
+        {
+          "field": "entity_type",
+          "label": "主体类型",
+          "value": "公告将其称为嘉兴沃永投资合伙企业（有限合伙）。",
+          "source_id": "jiaxing_woyong_disclosure"
+        },
+        {
+          "field": "disclosed_activity",
+          "label": "公开披露事项",
+          "value": "2025 年公告披露一名合伙人拟转让持有份额；公告使用“转让完成后”的条件表述。",
+          "source_id": "jiaxing_woyong_transfer"
+        },
+        {
+          "field": "executing_partner",
+          "label": "执行事务合伙人",
+          "value": "新沃股权投资基金管理（天津）有限公司。",
+          "source_id": "jiaxing_manager"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "公告列示成立日期为 2016 年 7 月 25 日。",
+          "source_id": "jiaxing_founded"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,7 +160,43 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "jiaxing_woyong_disclosure",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-06-20/1223933815.PDF",
+          "source_title": "珀莱雅化妆品股份有限公司关于转让投资基金份额暨退出投资基金的公告",
+          "source_content_hash": "ab90bd04dfb5f9c7961df82a32f398560d6043021a704056ef4f9aa37173cbba",
+          "quote": "共同出资设立嘉兴沃永投资合伙企业（有限合伙）",
+          "quote_hash": "0e8e0e71e6df7a1c8c603fc09be9c11ac49e63d89213cf473f13c012c713f7b3"
+        },
+        {
+          "source_id": "jiaxing_woyong_transfer",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-06-20/1223933815.PDF",
+          "source_title": "珀莱雅化妆品股份有限公司关于转让投资基金份额暨退出投资基金的公告",
+          "source_content_hash": "ab90bd04dfb5f9c7961df82a32f398560d6043021a704056ef4f9aa37173cbba",
+          "quote": "本次转让完成后，公司将不再持有嘉兴沃永份额。",
+          "quote_hash": "1ac5a969f8972c85b7dba2e645eb582c553fd86df5205a359f9a187f34c9dc69"
+        },
+        {
+          "source_id": "jiaxing_manager",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-06-20/1223933815.PDF",
+          "source_title": "珀莱雅化妆品股份有限公司关于转让投资基金份额暨退出投资基金的公告",
+          "source_content_hash": "ab90bd04dfb5f9c7961df82a32f398560d6043021a704056ef4f9aa37173cbba",
+          "quote": "执行事务合伙人：新沃股权投资基金管理（天津）有限公司",
+          "quote_hash": "f4e65bfd82070efb0d9f00f987a5ef0cd4ce2708731173e5ca2b677dab9f0609"
+        },
+        {
+          "source_id": "jiaxing_founded",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2025-06-20/1223933815.PDF",
+          "source_title": "珀莱雅化妆品股份有限公司关于转让投资基金份额暨退出投资基金的公告",
+          "source_content_hash": "ab90bd04dfb5f9c7961df82a32f398560d6043021a704056ef4f9aa37173cbba",
+          "quote": "成立日期：2016年7月25日",
+          "quote_hash": "aa25e04986efdd7c637cbb373de5a2e0d5c0dfdd79930903587ae24b389597bc"
+        },
         {
           "source_id": "FISRC-65e2ca710ece93bc",
           "source_url": "https://www.36kr.com/p/1627551190660871",
@@ -145,7 +206,7 @@
           "quote_hash": "33525476f5cd026e8afe1a6f75f5db64caacf3af56c00218a1e0346dcf71b236"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-02"
     }
   }
 }
