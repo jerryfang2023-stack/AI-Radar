@@ -17,7 +17,7 @@ export function chinaClock(now = new Date()) {
 }
 export function selectRunDate(states, clock, requested) {
   if (requested) {
-    if (!/^\d{4}-\d{2}-\d{2}$/u.test(requested) || Number.isNaN(Date.parse(requested)) || requested > clock.date) throw new Error('invalid_vps_run_date');
+    if (!/^\d{4}-\d{2}-\d{2}$/u.test(requested) || Number.isNaN(Date.parse(requested)) || new Date(requested).toISOString().slice(0,10)!==requested || requested > clock.date) throw new Error('invalid_vps_run_date');
     return requested;
   }
   const unfinished = states.filter(s=>s.date <= clock.date && !terminal.has(s.status)
@@ -105,7 +105,12 @@ async function cycle(args) {
       const log=fs.openSync(path.join(reviewDir,'hermes.log'),'a',0o600);
       let result;
       try {result=spawnSync(process.env.GUANLAN_HERMES_PYTHON || '/opt/guanlan-financing-tools/hermes-agent/venv/bin/python',[path.join(root,'agent-workflow/financing/hermes-review.py'),'--checkout',checkout,'--context',reviewDir,'--evidence',process.env.GUANLAN_EVIDENCE_BACKUP_ROOT,'--prompt',path.join(reviewDir,'prompt.txt'),'--schema',path.join(reviewDir,'schema.json'),'--output',path.join(reviewDir,'result.json')],{cwd:checkout,env:process.env,stdio:['ignore',log,log],timeout:1200000});}
-      finally {fs.closeSync(log);}
+      finally {
+        fs.closeSync(log);
+        // Retain the diff, result, schema and audit, not a complete repo copy
+        // for every daily review. A dirty checkout is preserved for inspection.
+        command('git',['worktree','remove','--',checkout]);
+      }
       if(result.error || result.status!==0)throw new Error('vps_hermes_review_failed_check_private_log');
       review=read(path.join(reviewDir,'result.json'));
       save({reviews:{...state.reviews,[reviewKey]:review}});
