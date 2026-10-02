@@ -6,6 +6,9 @@ import { spawnSync } from 'node:child_process';
 import { isMainModule } from '../tools/lib/module-entry.mjs';
 
 export const VERSION = 'FINANCING-READ-MODEL-1';
+export function resolveReadModelOutput(root, output = process.env.GUANLAN_FINANCING_READ_MODEL_ROOT) {
+  return path.resolve(root, output || 'data-marts/financing');
+}
 const hash = value => crypto.createHash('sha256').update(value).digest('hex');
 const list = value => Array.isArray(value) ? value : [];
 const json = value => JSON.stringify(value ?? null);
@@ -85,6 +88,14 @@ export function verifyReadModel(release) {
   if(manifest.database && (manifest.database!=='finance.duckdb' || hash(fs.readFileSync(path.join(release,manifest.database)))!==manifest.databaseHash)) throw new Error('financing_read_model_database_mismatch');
   return manifest;
 }
+export function verifyCurrentReadModel({output,inputHash,requireDatabase=true}) {
+  const pointer=JSON.parse(fs.readFileSync(path.join(output,'current.json'),'utf8'));
+  if(pointer.version!==VERSION || !/^[a-f0-9]{32}$/.test(pointer.releaseId || ''))throw new Error('financing_read_model_pointer_invalid');
+  const manifest=verifyReadModel(path.join(output,'releases',pointer.releaseId));
+  if(manifest.releaseId!==pointer.releaseId || manifest.inputHash!==pointer.inputHash || (inputHash && manifest.inputHash!==inputHash))throw new Error('financing_read_model_pointer_mismatch');
+  if(requireDatabase && manifest.database!=='finance.duckdb')throw new Error('financing_read_model_database_required');
+  return manifest;
+}
 export function buildReadModel({root,output,input=path.join(root,'01-SiteV2/site/data/financing-catalog-v1.json'),duckdb='duckdb',database=true}) {
   const bytes=fs.readFileSync(input), catalog=JSON.parse(bytes), tables=projectReadModel(catalog);
   const inputHash=hash(bytes), releaseId=hash(json([VERSION,inputHash,database,fs.readFileSync(new URL(import.meta.url))])).slice(0,32);
@@ -130,5 +141,5 @@ export function buildReadModel({root,output,input=path.join(root,'01-SiteV2/site
 if(isMainModule(import.meta.url)) {
   const args=new Map(process.argv.slice(2).map(arg=>{const [key,...value]=arg.replace(/^--/,'').split('=');return[key,value.join('=')];}));
   const root=path.resolve(args.get('root') || process.cwd());
-  try {console.log(JSON.stringify(buildReadModel({root,output:path.resolve(args.get('output') || path.join(root,'data-marts/financing')),input:args.has('input')?path.resolve(args.get('input')):undefined,duckdb:args.get('duckdb') || process.env.DUCKDB_BIN || 'duckdb',database:args.get('database')!=='false'})));} catch(error) {console.error(error.message);process.exitCode=1;}
+  try {console.log(JSON.stringify(buildReadModel({root,output:resolveReadModelOutput(root,args.get('output')),input:args.has('input')?path.resolve(args.get('input')):undefined,duckdb:args.get('duckdb') || process.env.DUCKDB_BIN || 'duckdb',database:args.get('database')!=='false'})));} catch(error) {console.error(error.message);process.exitCode=1;}
 }

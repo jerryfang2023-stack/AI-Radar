@@ -6,6 +6,8 @@
 
 每日生产门禁先验证无数据库的 JSONL 投影；合并后的 `agent-workflow/financing/publish.mjs` 构建独立 DuckDB。它与共享 `data-lake/` 使用不同目录和锁，不进入旧 24 表清理白名单。构建失败保留旧 current 指针；重复输入复用校验通过的完整版本。DuckDB CLI 由 `DUCKDB_BIN` 或 PATH 提供。
 
+预合并门禁只写当次运行目录的 `read-model-gate/`，不更新生产读库。发布默认更新调用 runner 的 `data-marts/financing/`，而非 Git 主工作仓；CLI 的 `--output`、发布器的 `--read-model-dir` 或统一环境变量 `GUANLAN_FINANCING_READ_MODEL_ROOT` 可指定同一外部目录。当前指针、release ID、输入哈希和实际 DuckDB 均须验证，JSONL-only 版本不能满足生产发布恢复检查。相同输入和实现复用旧 release 时，`sourceCommit` 保留首次构建来源，发布回执另外记录本次接受提交。
+
 门户生成 `/data/mini/domains/{financing,reports,community,profiles}/` 的独立清单和内容版本。融资索引排除专题栏目的非融资数据；融资报告与社群内容分开计版。紧凑索引使用列名、重复字符串字典和缺省字段表，保持 ID、别名、金额、筛选、事件和排序字段；新版客户端解码为原有对象，请求失败则回退旧接口。旧客户端继续使用既有 funding/report/profile 接口，详情仍按需读取，付费正文继续位于受保护目录。
 
 账户支付 SQLite 与创始会员 SQLite 不迁移。本轮不改变小程序版本号、不重复上传其他任务的 1.2.6 包。紧凑索引的客户端启用随后续正式包发布生效。

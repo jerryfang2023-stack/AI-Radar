@@ -191,7 +191,7 @@ Rules:
 - FDE follows the V4 evidence boundary: English title translation and source-backed fact extraction resolve through SourceArtifact, RawDocument, accepted Claims, and the FDE projection.
 - Missing FDE title/fact fields are repaired in V4 intake/extraction/projection, not through archived Cards.
 - If the source does not disclose implementation results, state that explicitly instead of inventing ROI or production outcome.
-- FDE detail openability is owned by the FDE skill. Its readable knowledge projection is rebuilt into `60-知识资产/企业 AI 案例` by the Guanlan Vault builder, not by generic Business Signals Card repair.
+- FDE detail openability is owned by the FDE skill. Its readable knowledge projection is rebuilt into `60-知识资产/FDE/企业 AI 案例` by the Guanlan Vault builder, not by generic Business Signals Card repair.
 
 ### UI / Page Work
 

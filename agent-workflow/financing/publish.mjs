@@ -4,7 +4,7 @@ import path from 'node:path';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { acquireLock, read, write, runStages, digest } from './state.mjs';
-import {verifyReadModel} from './read-model.mjs';
+import {resolveReadModelOutput,verifyCurrentReadModel} from './read-model.mjs';
 import { queryPlan } from './discovery.mjs';
 import { parseArgs } from './args.mjs';
 
@@ -20,8 +20,9 @@ const run = (command, argv, cwd = root, timeout = 600000) => {
 const primary = path.dirname(path.resolve(root,run('git',['rev-parse','--git-common-dir'])));
 const directory = path.resolve(args.get('runtime-dir') || path.join(primary,'..','..','runtime','financing',date));
 const portal = path.resolve(args.get('portal-repo') || process.env.GUANLAN_FUNDING_PORTAL_REPO || path.join(primary,'..','Guanlan-Funding-Portal'));
+const readModelOutput = resolveReadModelOutput(root,args.get('read-model-dir'));
 if (args.get('dry-run') === 'true') {
-  console.log(JSON.stringify({date,stages:['accepted_main','pages','data_lake','financing_read_model','vault','portal_with_live_parity','ops'],portal,directory}));
+  console.log(JSON.stringify({date,stages:['accepted_main','pages','data_lake','financing_read_model','vault','portal_with_live_parity','ops'],portal,directory,readModelOutput}));
 } else {
   const unlock = acquireLock(directory);
   let checkout, linked=false;
@@ -46,7 +47,7 @@ if (args.get('dry-run') === 'true') {
     const lake = `--lake-dir=${path.join(primary,'data-lake')}`;
     const plans = [
       {id:'data_lake', commands:[['agent-workflow/tools/sync-light-data-lake.mjs','--v4-only=true',lake],['agent-workflow/tools/assert-data-lake-v4.mjs',lake]]},
-      {id:'financing_read_model', commands:[['agent-workflow/financing/read-model.mjs',`--output=${path.join(primary,'data-marts','financing')}`]]},
+      {id:'financing_read_model', commands:[['agent-workflow/financing/read-model.mjs',`--output=${readModelOutput}`]]},
       {id:'vault', commands:[['agent-workflow/tools/sync-guanlan-vault-from-main.mjs',`--date=${date}`,`--runtime-dir=${directory}`]]},
       {id:'portal', commands:[['agent-workflow/tools/assert-funding-insights-v1.mjs',`--date=${date}`],[path.join(portal,'scripts/publish-from-wavesight.mjs'),`--wavesight-repo=${checkout}`]]},
       {id:'ops', commands:[['agent-workflow/tools/publish-ops-console.mjs']]},
@@ -57,9 +58,8 @@ if (args.get('dry-run') === 'true') {
       valid:()=>{
         if(stage.id!=='financing_read_model')return true;
         try {
-          const output=path.join(primary,'data-marts','financing'),pointer=read(path.join(output,'current.json'));
-          const manifest=verifyReadModel(path.join(output,'releases',pointer.releaseId));
-          return manifest.inputHash===digest(fs.readFileSync(path.join(checkout,'01-SiteV2/site/data/financing-catalog-v1.json'),'utf8'));
+          verifyCurrentReadModel({output:readModelOutput,inputHash:digest(fs.readFileSync(path.join(checkout,'01-SiteV2/site/data/financing-catalog-v1.json'),'utf8'))});
+          return true;
         } catch {return false;}
       }}));
     await runStages({date,codeVersion:sha,stages:plans,file:path.join(directory,'publication-stages.json'), execute: async stage => {

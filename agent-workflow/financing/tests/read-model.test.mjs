@@ -4,7 +4,9 @@ import fs from 'node:fs';
 import os from 'node:os';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
-import { projectReadModel, buildReadModel } from '../read-model.mjs';
+import {execFileSync} from 'node:child_process';
+import { projectReadModel, buildReadModel, verifyCurrentReadModel } from '../read-model.mjs';
+import {productionPlan} from '../run.mjs';
 
 function fixture() {
   const company={entity_id:'EN-a',application_entity_id:'EN-a',name:'Acme',founders:[{name:'Unknown identity',role:'Founder',entity_id:null}]};
@@ -38,4 +40,40 @@ test('failed database build keeps the previous accepted release pointer intact',
     assert.equal(fs.readFileSync(path.join(output,'current.json'),'utf8'),previous);
     assert.equal(fs.existsSync(path.join(output,'build.lock')),false);
   } finally {fs.rmSync(tmp,{recursive:true,force:true});}
+});
+
+test('the pre-merge projection gate never advances the published database pointer',()=>{
+  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'financing-gate-'));
+  try {
+    const input=path.join(tmp,'input.json'),published=path.join(tmp,'data-marts','financing');
+    fs.mkdirSync(published,{recursive:true});fs.writeFileSync(input,JSON.stringify(fixture()));
+    const pointer=path.join(published,'current.json'),accepted='{"releaseId":"accepted-database"}\n';
+    fs.writeFileSync(pointer,accepted);
+    const command=productionPlan('2026-10-03',path.join(tmp,'run')).find(stage=>stage.id==='release_gate').commands[0];
+    const outputArg=command.find(arg=>arg.startsWith('--output='));
+    const output=outputArg?outputArg.slice('--output='.length):published;
+    buildReadModel({root:fileURLToPath(new URL('../../../',import.meta.url)),input,output,database:false});
+    assert.equal(fs.readFileSync(pointer,'utf8'),accepted);
+    assert.equal(JSON.parse(fs.readFileSync(path.join(output,'current.json'))).version,'FINANCING-READ-MODEL-1');
+  } finally {fs.rmSync(tmp,{recursive:true,force:true});}
+});
+
+test('production resume rejects a JSONL-only pointer and mismatched release identities',()=>{
+  const tmp=fs.mkdtempSync(path.join(os.tmpdir(),'financing-pointer-'));
+  try {
+    const input=path.join(tmp,'input.json'),output=path.join(tmp,'output');fs.writeFileSync(input,JSON.stringify(fixture()));
+    const manifest=buildReadModel({root:fileURLToPath(new URL('../../../',import.meta.url)),input,output,database:false});
+    assert.throws(()=>verifyCurrentReadModel({output,inputHash:manifest.inputHash}),/database_required/);
+    assert.equal(verifyCurrentReadModel({output,inputHash:manifest.inputHash,requireDatabase:false}).releaseId,manifest.releaseId);
+    fs.writeFileSync(path.join(output,'current.json'),JSON.stringify({version:manifest.version,releaseId:manifest.releaseId,inputHash:'different'}));
+    assert.throws(()=>verifyCurrentReadModel({output,requireDatabase:false}),/pointer_mismatch/);
+  } finally {fs.rmSync(tmp,{recursive:true,force:true});}
+});
+
+test('a worktree publisher targets its caller read-model directory and honors an explicit shared location',()=>{
+  const root=fileURLToPath(new URL('../../../',import.meta.url)),script=path.join(root,'agent-workflow/financing/publish.mjs');
+  const readPlan=(extra=[])=>JSON.parse(execFileSync(process.execPath,[script,'--dry-run=true','--date=2026-10-03',...extra],{cwd:root,encoding:'utf8',env:{...process.env,GUANLAN_FINANCING_READ_MODEL_ROOT:''}}));
+  assert.equal(readPlan().readModelOutput,path.join(root,'data-marts','financing'));
+  const explicit=path.join(os.tmpdir(),'shared-financing-read-model');
+  assert.equal(readPlan([`--read-model-dir=${explicit}`]).readModelOutput,explicit);
 });
