@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { acceptedPublicationStatus } from '../dispatch-state.mjs';
+import { acceptedPublicationStatus, pendingReviewStatus } from '../dispatch-state.mjs';
 import { productionPlan, financingExtractionScope } from '../run.mjs';
 import { allowedCheckpointPath } from '../checkpoint.mjs';
 
@@ -19,6 +19,18 @@ test('migration-only publication cannot suppress financing discovery', () => {
   assert.equal(acceptedPublicationStatus({...report,status:'pending_verification'},date),'pending_verification');
   assert.equal(acceptedPublicationStatus(report,'2026-10-02'),null);
   assert.equal(acceptedPublicationStatus(null,date),null);
+});
+
+test('an open financing PR waits for Codex review instead of starting the same day again', () => {
+  const pr={headRefName:`automation/financing-${date}`,state:'OPEN',url:'https://example.com/pull/42',headRefOid:'reviewed-sha'};
+  assert.deepEqual(pendingReviewStatus([pr],date,'passed'),{
+    date,status:'ready_for_review',pr_url:pr.url,head_sha:pr.headRefOid,
+  });
+  assert.equal(pendingReviewStatus([pr],date,'waiting').status,'checks_pending');
+  assert.equal(pendingReviewStatus([pr],date,'failed').status,'ci_failed');
+  assert.equal(pendingReviewStatus([{...pr,state:'CLOSED'}],date),null);
+  assert.equal(pendingReviewStatus([pr],'2026-10-02'),null);
+  assert.match(read('.github/workflows/funding-health-dispatch.yml'),/^  checks: read$/mu);
 });
 
 test('retired daily workflows are removed and weekly monitor code stays manual and paused', () => {
@@ -64,12 +76,13 @@ test('financing extraction excludes historical same-date raw and FDE/hardware en
   assert.ok(noNew[0].commands.some(c=>c[0].endsWith('assert-data-center-v4.mjs')));
 });
 
-test('only gated manifest outputs enter PR and current-head CI must pass before merge', () => {
+test('only gated manifest outputs enter a PR for Codex review after current-head CI', () => {
   const text=read('.github/workflows/funding-daily-pr.yml');
   assert.match(text,/if: steps\.produce\.outcome == 'success'/u);
   assert.match(text,/for \(const \{file\} of manifest\.entries\)/u);
   assert.match(text,/wait-for-production-code-checks\.mjs --pr=/u);
-  assert.match(text,/gh pr merge "\$pr" --merge --match-head-commit "\$merge_head"/u);
+  assert.doesNotMatch(text,/\bgh pr merge\b/u);
+  assert.match(text,/review_required/u);
   assert.doesNotMatch(text,/sync-.*to-obsidian|build-guanlan-vault|git add -A/u);
   const persist=text.indexOf('git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main');
   assert.ok(persist>0 && persist<text.indexOf('Extract facts, research financing'));

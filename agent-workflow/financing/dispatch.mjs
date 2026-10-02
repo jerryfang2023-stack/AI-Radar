@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 import { spawnSync } from 'node:child_process';
 import { queryPlan } from './discovery.mjs';
-import { acceptedPublicationStatus } from './dispatch-state.mjs';
-const args = new Map(process.argv.slice(2).map(arg => { const [key,...value] = arg.replace(/^--/u,'').split('='); return [key,value.join('=')]; }));
+import { acceptedPublicationStatus, pendingReviewStatus } from './dispatch-state.mjs';
+import { parseArgs } from './args.mjs';
+import { inspectProductionChecks } from '../tools/wait-for-production-code-checks.mjs';
+const args = parseArgs();
 const date = args.get('date') || new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 queryPlan(date);
 const repo = process.env.GH_REPO || 'jerryfang2023-stack/AI-Radar';
@@ -18,17 +20,25 @@ const acceptedStatus = acceptedPublicationStatus(publication, date);
 if (acceptedStatus) {
   console.log(JSON.stringify({date,status:acceptedStatus, accepted_on_main:true}));
 } else {
-  const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion']));
-  const matching = runs.filter(run => run.displayTitle === `Financing ${date}`);
-  const active = matching.find(run => run.status !== 'completed');
-  if (active) console.log(JSON.stringify({date,status:'running',run_id:active.databaseId}));
-  else {
-    let resume;
-    for(const run of matching) {
-      const artifacts = JSON.parse(gh(['api',`repos/${repo}/actions/runs/${run.databaseId}/artifacts`]));
-      if(artifacts.artifacts.some(row => row.name === `financing-${date}` && !row.expired)) { resume=run.databaseId; break; }
+  const prs = JSON.parse(gh(['pr','list','--repo',repo,'--head',`automation/financing-${date}`,'--state','open','--json','headRefName,state,url,headRefOid']));
+  const review = pendingReviewStatus(prs, date);
+  if (review) {
+    const pages = JSON.parse(gh(['api',`repos/${repo}/commits/${review.head_sha}/check-runs?per_page=100`,'--paginate','--slurp']));
+    const ci = inspectProductionChecks(pages.flatMap(page => page.check_runs || []), review.head_sha);
+    console.log(JSON.stringify(pendingReviewStatus(prs, date, ci.status)));
+  } else {
+    const runs = JSON.parse(gh(['run','list','--repo',repo,'--workflow','funding-daily-pr.yml','--branch','main','--limit','60','--json','databaseId,displayTitle,status,conclusion']));
+    const matching = runs.filter(run => run.displayTitle === `Financing ${date}`);
+    const active = matching.find(run => run.status !== 'completed');
+    if (active) console.log(JSON.stringify({date,status:'running',run_id:active.databaseId}));
+    else {
+      let resume;
+      for(const run of matching) {
+        const artifacts = JSON.parse(gh(['api',`repos/${repo}/actions/runs/${run.databaseId}/artifacts`]));
+        if(artifacts.artifacts.some(row => row.name === `financing-${date}` && !row.expired)) { resume=run.databaseId; break; }
+      }
+      if(args.get('dry-run') !== 'true') gh(['workflow','run','funding-daily-pr.yml','--repo',repo,'--ref','main','-f',`date=${date}`,...(resume?['-f',`resume_run_id=${resume}`]:[])]);
+      console.log(JSON.stringify({date,status:args.get('dry-run') === 'true' ? 'planned' : 'dispatched',resume_run_id:resume || null}));
     }
-    if(args.get('dry-run') !== 'true') gh(['workflow','run','funding-daily-pr.yml','--repo',repo,'--ref','main','-f',`date=${date}`,...(resume?['-f',`resume_run_id=${resume}`]:[])]);
-    console.log(JSON.stringify({date,status:args.get('dry-run') === 'true' ? 'planned' : 'dispatched',resume_run_id:resume || null}));
   }
 }

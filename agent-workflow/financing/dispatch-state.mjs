@@ -5,3 +5,9 @@ export function acceptedPublicationStatus(publication, date) {
     ? (publication.status === 'ready_for_review' ? 'awaiting_portal' : publication.status)
     : null;
 }
+
+export function pendingReviewStatus(prs, date, checksStatus = 'waiting') {
+  const pr = prs.find(row => row.state === 'OPEN' && row.headRefName === `automation/financing-${date}`);
+  const status = checksStatus === 'passed' ? 'ready_for_review' : checksStatus === 'failed' ? 'ci_failed' : 'checks_pending';
+  return pr ? { date, status, pr_url: pr.url, head_sha: pr.headRefOid } : null;
+}

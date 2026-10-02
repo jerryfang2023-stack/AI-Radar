@@ -51,8 +51,10 @@ if (!checkpoint.includes("/intake-v1/${date}.json") || !financing.includes("mani
 if (!financing.includes("steps.produce.outcome == 'success'") || !producer.includes("release_gate")) {
   problems.push("financing publication must follow successful production gates");
 }
-if (!financing.includes("wait-for-production-code-checks.mjs") || !financing.includes('--match-head-commit "$merge_head"')) {
-  problems.push("financing merge must require current-head production checks");
+if (!financing.includes("wait-for-production-code-checks.mjs")
+    || !financing.includes("review_required: Codex must review")
+    || /\bgh pr merge\b/u.test(financing)) {
+  problems.push("financing PR must pass current-head production checks and await Codex review before merge");
 }
 
 const builder = read("agent-workflow/tools/build-data-center-v4.mjs");

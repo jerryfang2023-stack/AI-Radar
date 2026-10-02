@@ -8,6 +8,7 @@ import { config, queryPlan } from './discovery.mjs';
 import { acquireLock, digest, read, write, runStages } from './state.mjs';
 import { resolvePrivateEvidenceBackupRoot } from '../tools/private-evidence-backup-paths.mjs';
 import { indexFinancingEvidence } from './evidence-index.mjs';
+import { parseArgs } from './args.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const script = name => `agent-workflow/tools/${name}.mjs`;
@@ -65,7 +66,7 @@ export function productionPlan(date, directory, { extract = true } = {}) {
 }
 
 async function main() {
-  const args = new Map(process.argv.slice(2).map(arg => { const [key, ...value] = arg.replace(/^--/u, '').split('='); return [key, value.join('=')]; }));
+  const args = parseArgs();
   const date = args.get('date') || new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   queryPlan(date);
   const phase = args.get('phase') || 'all';
@@ -91,6 +92,7 @@ async function main() {
     write(scopeFile, extractionScope);
     const plans = productionPlan(date, directory, { extract: extractionScope.source_refs.length > 0 });
     const codeVersion = digest(intake);
+    const reviewedClaims = path.join(root, `01-SiteV2/content/11-databases/model-assist-v1/${date}.json`);
     const dependencyText = (file, seen = new Set()) => {
       if (seen.has(file) || !fs.existsSync(file)) return ''; seen.add(file);
       const body = fs.readFileSync(file, 'utf8');
@@ -99,7 +101,7 @@ async function main() {
     const previous = read(path.join(root,'01-SiteV2/site/data/data-center-v4-frontstage.json'));
     if (previous?.meta?.generatedAt) process.env.WAVESIGHT_FRONTSTAGE_GENERATED_AT = previous.meta.generatedAt;
     if (previous?.entityHistoryManifest?.generatedAt) process.env.WAVESIGHT_ENTITY_HISTORY_GENERATED_AT = previous.entityHistoryManifest.generatedAt;
-    const stages = plans.map(stage => ({ ...stage, version: digest(stage.commands.map(command => dependencyText(path.join(root,command[0]))).join('') + (stage.id === 'financing_tags' ? fs.readFileSync(new URL('./taxonomy.json', import.meta.url),'utf8') : '')), valid: () => stage.outputs.every(file => fs.existsSync(path.join(root, file))) }));
+    const stages = plans.map(stage => ({ ...stage, version: digest(stage.commands.map(command => dependencyText(path.join(root,command[0]))).join('') + (stage.id === 'financing_tags' ? fs.readFileSync(new URL('./taxonomy.json', import.meta.url),'utf8') : '')), inputVersion: stage.id === 'facts' ? () => fs.existsSync(reviewedClaims) ? digest(fs.readFileSync(reviewedClaims,'utf8')) : 'missing_reviewed_claims' : undefined, valid: () => stage.outputs.every(file => fs.existsSync(path.join(root, file))) }));
     await runStages({ date, codeVersion, file: path.join(directory, 'stages.json'), stages, execute: async stage => {
       const fd = fs.openSync(path.join(directory, `${stage.id}.log`), 'a');
       try {

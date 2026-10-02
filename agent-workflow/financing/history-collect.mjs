@@ -13,6 +13,7 @@ import { ingestPrivateEvidenceRecords } from '../tools/lib/private-evidence-back
 import { loadPrivateEvidenceRecord } from '../tools/lib/private-evidence-store.mjs';
 import { buildSourceIntake, mergeSourceIntakes, readSourceIntake, sourceIntakePath } from '../tools/lib/source-intake-v1.mjs';
 import { resolvePrivateEvidenceBackupRoot } from '../tools/private-evidence-backup-paths.mjs';
+import { parseArgs } from './args.mjs';
 
 export function historyUrlKey(value) {
   const url=canonicalSearchUrl(value); if(!url)return '';
@@ -89,7 +90,7 @@ export async function collectHistory({root,directory,backupRoot,date,from,to,inp
 }
 
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){
-  const args=new Map(process.argv.slice(2).map(a=>{const[k,...v]=a.replace(/^--/u,'').split('=');return[k,v.join('=')];}));
+  const args=parseArgs();
   const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../..');
   const directory=args.get('runtime-dir');if(!directory||!args.get('input'))throw Error('explicit_history_runtime_and_input_required');
   if(args.get('env-file'))process.loadEnvFile(path.resolve(args.get('env-file')));
