@@ -2,11 +2,13 @@ import importlib.util
 from pathlib import Path
 import tempfile
 import unittest
+import os
 
 spec=importlib.util.spec_from_file_location('hermes_review',Path(__file__).parents[1]/'hermes-review.py')
 review=importlib.util.module_from_spec(spec); spec.loader.exec_module(review)
 
 class ReadBoundaryTests(unittest.TestCase):
+    @unittest.skipIf(os.name == 'nt', 'VPS symlink boundaries are tested on Linux')
     def test_traversal_credentials_and_symlinks_are_blocked(self):
         with tempfile.TemporaryDirectory() as temp:
             base=Path(temp); repo=base/'repo'; repo.mkdir()
@@ -14,8 +16,9 @@ class ReadBoundaryTests(unittest.TestCase):
             (repo/'.env').write_text('secret')
             (repo/'safe.md').write_text('evidence\n' * 600)
             (repo/'escape').symlink_to(base/'secret')
+            (repo/'credential-alias').symlink_to(repo/'.env')
             roots={'repo':repo.resolve()}
-            for name in ['../secret','.env','escape',str(base/'secret')]:
+            for name in ['../secret','.env','escape','credential-alias',str(base/'secret')]:
                 self.assertIn('error',review.read_file(roots,{'path':name}))
             self.assertEqual(len(review.read_file(roots,{'path':'safe.md','limit':999})['lines']),500)
             found=review.find_files(roots,{'contains':'private'})
