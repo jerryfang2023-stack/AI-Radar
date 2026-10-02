@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3768,
+    "eventCount": 3783,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-08-27",
-    "latest_disclosed_at": "2026-08-21",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -89,6 +89,11 @@
         "name": "Aligned"
       },
       {
+        "entity_id": "FICO-10968da004160049",
+        "canonical_entity_id": "",
+        "name": "enso"
+      },
+      {
         "entity_id": "EN-098a40b4499d7512",
         "canonical_entity_id": "",
         "name": "Maisa AI"
@@ -100,6 +105,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1b2c0a38ff05f064",
+        "funding_insight_id": "FI-872dd8167746ac28",
+        "event_ids": [
+          "EV-98ea446e097a9a95"
+        ],
+        "company_entity_id": "FICO-10968da004160049",
+        "company_canonical_entity_id": "",
+        "company_name": "enso",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$15 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7877f8925288c583",
+            "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+            "source_title": "RapidAPI 联合创始人为 AI 营销初创公司 enso 融资 1500 万美元",
+            "source_content_hash": "8b0c05f8724f799ab943d0fe1e4bfe0abd15ca3b1654ba0efc163f694f34efa5",
+            "quote": "with participation from existing investor NFX, Phenomen VC, and Gil Hirsch",
+            "quote_hash": "7d766cdfb29a3560b554293dcedb4e3e0bd63fd57881a27bc366adabf20d36cd"
+          }
+        ]
+      },
       {
         "activity_id": "IA-529c96062ad76994",
         "funding_insight_id": "FI-8a42f200f5caa9f3",
@@ -304,6 +349,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-7877f8925288c583",
+        "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+        "source_title": "RapidAPI 联合创始人为 AI 营销初创公司 enso 融资 1500 万美元",
+        "source_content_hash": "8b0c05f8724f799ab943d0fe1e4bfe0abd15ca3b1654ba0efc163f694f34efa5",
+        "quote": "with participation from existing investor NFX, Phenomen VC, and Gil Hirsch",
+        "quote_hash": "7d766cdfb29a3560b554293dcedb4e3e0bd63fd57881a27bc366adabf20d36cd"
+      },
+      {
         "source_id": "FISRC-05f582b31c0a37a3",
         "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
         "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
@@ -357,10 +410,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "NFX 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "NFX 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：enso · A轮 · 2026-10-01 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7877f8925288c583"
+        },
         {
           "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05f582b31c0a37a3"
@@ -368,14 +425,18 @@
         {
           "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f80a0b6f2f7f63f8"
-        },
-        {
-          "description": "融资来源记录：Aligned · B轮 · 2026-07-01 · 本轮参投，既有投资方 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c7a5a66361dc784"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-7877f8925288c583",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+          "source_title": "RapidAPI 联合创始人为 AI 营销初创公司 enso 融资 1500 万美元",
+          "source_content_hash": "8b0c05f8724f799ab943d0fe1e4bfe0abd15ca3b1654ba0efc163f694f34efa5",
+          "quote": "with participation from existing investor NFX, Phenomen VC, and Gil Hirsch",
+          "quote_hash": "7d766cdfb29a3560b554293dcedb4e3e0bd63fd57881a27bc366adabf20d36cd"
+        },
         {
           "source_id": "FISRC-05f582b31c0a37a3",
           "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
@@ -391,14 +452,6 @@
           "source_content_hash": "a7c980dcd5f3e30f",
           "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
           "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
-        },
-        {
-          "source_id": "FISRC-7c7a5a66361dc784",
-          "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
-          "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
-          "source_content_hash": "9348da1b25f12b48",
-          "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
-          "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
         }
       ],
       "last_verified_at": "2026-09-25"

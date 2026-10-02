@@ -103,6 +103,18 @@ test("current English round is not combined with a historical seed in the next s
   assert.equal(canonicalFundingEventRound(event, [{ ...claim, source_quote: "Acme raised $12.55 million in Series A funding. Previously it raised seed funding." }]).code, "series_a");
 });
 
+test('Indian funding retains crore/lakh units and does not select another company dollar amount', () => {
+  for (const amount of ['Rs 9 crore','₹9 crore','INR 90 million','Rs. 900 lakh']) {
+    const parsed=normalizeFundingAmount(amount);
+    assert.equal(parsed.currency,'INR');assert.equal(parsed.value,90000000);assert.equal(parsed.status,'exact');
+  }
+  assert.equal(normalizeFundingAmount('over ₹2 crore').status,'lower_bound');
+  const event={event_id:'EV-INR',event_type:'funding',object:'Rs 9 crore',metrics:['Rs 9 crore','$2.7 million'],claim_refs:['CL-INR']};
+  const claims=[{claim_id:'CL-INR',claim_type:'funding',verification_status:'accepted',subject:'Vytalyou',object:'Rs 9 crore',source_quote:'Vytalyou has raised Rs 9 crore in a pre-Series A round. Biopeak raised $2.7 million in January.'}];
+  assert.equal(normalizeFundingAmount(canonicalFundingEventAmount(event,claims)).currency,'INR');
+  assert.equal(normalizeFundingAmount(canonicalFundingEventAmount(event,claims)).value,90000000);
+});
+
 test("qualified foreign Chinese amounts retain currency instead of a truncated CNY metric", () => {
   const event = { event_id: "EV-USD", event_type: "funding", metrics: ["超千万"], claim_refs: ["CL-USD"] };
   const claims = [{ claim_id: "CL-USD", claim_type: "funding", verification_status: "accepted", source_quote: "星路科技宣布，已于今年早些时候完成超千万美元A+轮战略融资，获汇丰参与。" }];

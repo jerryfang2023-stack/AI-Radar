@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3768,
+    "eventCount": 3783,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-17",
-    "latest_disclosed_at": "2026-06-17",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-bb84dd8999b353a3",
+        "canonical_entity_id": "",
+        "name": "Deepslate"
+      },
       {
         "entity_id": "EN-c0cd6e83b6dd78a5",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2abfa6621e784b08",
+        "funding_insight_id": "FI-a2159f0f769ce286",
+        "event_ids": [
+          "EV-c8a803c1bdfde04c"
+        ],
+        "company_entity_id": "EN-bb84dd8999b353a3",
+        "company_canonical_entity_id": "",
+        "company_name": "Deepslate",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "€7.7 million",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 7700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "770 万欧元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-57c1c364a7f270ee",
+            "source_url": "https://tech.eu/2026/10/01/deepslate-secures-eur77m-for-its-european-voice-ai-platform/",
+            "source_title": "Deepslate 为其欧洲语音 AI 平台获得 770 万欧元融资",
+            "source_content_hash": "180703c997b2068a2719adcc38dc12c06d7e36623ac3ba5d8b2ff7a0d0f4c3f1",
+            "quote": "with participation from Alstin Capital, existing investor SIVentures and several business angels",
+            "quote_hash": "ea2ff270583187ae37621658f3b47ca9e00f5c053cdcd520f4f68fa7d5e6332a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b0d8e305e3afff44",
         "funding_insight_id": "FI-e3d2d67c2c429e09",
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-57c1c364a7f270ee",
+        "source_url": "https://tech.eu/2026/10/01/deepslate-secures-eur77m-for-its-european-voice-ai-platform/",
+        "source_title": "Deepslate 为其欧洲语音 AI 平台获得 770 万欧元融资",
+        "source_content_hash": "180703c997b2068a2719adcc38dc12c06d7e36623ac3ba5d8b2ff7a0d0f4c3f1",
+        "quote": "with participation from Alstin Capital, existing investor SIVentures and several business angels",
+        "quote_hash": "ea2ff270583187ae37621658f3b47ca9e00f5c053cdcd520f4f68fa7d5e6332a"
+      },
       {
         "source_id": "FISRC-7a0d2741d3dddcef",
         "source_url": "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/",
@@ -203,6 +257,10 @@
         {
           "description": "融资记录：NeuralTrust · 种子轮 · 2026-06-17 · 领投；公开融资额为 €17.2 million（约 USD 20 million），未披露 Alstin Capital 单独出资额。此为本库收录案例，不代表完整投资组合。",
           "source_id": "FISRC-7a0d2741d3dddcef"
+        },
+        {
+          "description": "融资来源记录：Deepslate · 种子轮 · 2026-10-01 · 本轮参投 · €7.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57c1c364a7f270ee"
         }
       ],
       "contacts": [
@@ -253,6 +311,14 @@
           "source_content_hash": "7a4bd12b025049d2",
           "quote": "The round was led by Alstin Capital",
           "quote_hash": "03382ccc1da206b412bc52ae73b589536674279bf9f3ccebc0a240532adb91d0"
+        },
+        {
+          "source_id": "FISRC-57c1c364a7f270ee",
+          "source_url": "https://tech.eu/2026/10/01/deepslate-secures-eur77m-for-its-european-voice-ai-platform/",
+          "source_title": "Deepslate 为其欧洲语音 AI 平台获得 770 万欧元融资",
+          "source_content_hash": "180703c997b2068a2719adcc38dc12c06d7e36623ac3ba5d8b2ff7a0d0f4c3f1",
+          "quote": "with participation from Alstin Capital, existing investor SIVentures and several business angels",
+          "quote_hash": "ea2ff270583187ae37621658f3b47ca9e00f5c053cdcd520f4f68fa7d5e6332a"
         }
       ],
       "last_verified_at": "2026-09-27"

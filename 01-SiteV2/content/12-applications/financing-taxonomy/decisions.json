@@ -21935,7 +21935,401 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "generated_at": "2026-10-02T01:11:55.145Z"
+    },
+    "EV-5172f90d555f2781": {
+      "id": "EV-5172f90d555f2781",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "cybersecurity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "public-sector"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Osavul 提供 AI 驱动的混合风险情报平台，帮助政府和国防机构检测和预测敌对威胁，属于网络安全与风控类企业软件。",
+      "input_hash": "c490eae87b5a6db4cfaa135711942a1183840035f6d739ecf2fd292de2d88640",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-4dc390804d079769",
+          "quote": "A startup launched in light of Russia’s invasion of Ukraine whose tech helps NATO and governments detect hostile threats before they escalate"
+        },
+        {
+          "source_id": "FISRC-804729b225d6ef0e",
+          "quote": "Osavul, the AI-driven hybrid risk intelligence company trusted by NATO and by government and defence institutions worldwide"
+        },
+        {
+          "source_id": "FISRC-804729b225d6ef0e",
+          "quote": "Osavul’s AI platform draws on open and privileged data and refines it through a proprietary process built on knowledge its customers do not hold and competitors cannot replicate: years of attributing live hostile campaigns alongside defence and security institutions."
+        },
+        {
+          "source_id": "FISRC-adf2c67ef8606532",
+          "quote": "Its AI platform draws on open and privileged data to identify who is targeting a customer, then maps that intent against the customer's people, facilities, and supply chains to anticipate attacks."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.764Z"
+    },
+    "EV-bc9557a9936f727c": {
+      "id": "EV-bc9557a9936f727c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Vytalyou 是一家医生主导的长寿与预防性医疗初创公司，利用 AI 算法评估个人健康并制定个性化护理计划，属于医疗服务与临床行业 AI。",
+      "input_hash": "b1b0785d49791a1c91f5321882589446852323b5fe0f7440e2c43b167cbf9816",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c8567b52c3776e28",
+          "quote": "Doctor-led longevity and preventive healthcare startup Vytalyou has raised Rs 9 crore in a pre-Series A round"
+        },
+        {
+          "source_id": "FISRC-f1afa1ee03eee3fd",
+          "quote": "Mumbai-based Vytalyou, a doctor-led longevity and preventive healthcare startup"
+        },
+        {
+          "source_id": "FISRC-659d31cd1de2f549",
+          "quote": "The company uses an AI-based algorithm to assess an individual's health profile, biological ageing and potential health risks. The assessment is subsequently reviewed by doctors, who use the findings to create an individualised care plan."
+        },
+        {
+          "source_id": "FISRC-c8567b52c3776e28",
+          "quote": "The proceeds will be used to expand its network of Incremental Lifestyle Clinics in Mumbai"
+        },
+        {
+          "source_id": "FISRC-c8567b52c3776e28",
+          "quote": "offers services across pathology, radiology, cardio-respiratory assessments, body composition evaluation, genetic and cancer screening, gut microbiome evaluation, personalised IV therapies and regenerative interventions."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.764Z"
+    },
+    "EV-c8a803c1bdfde04c": {
+      "id": "EV-c8a803c1bdfde04c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "media-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Deepslate 开发原生语音到语音的 AI 模型，直接理解和生成语音，属于语音、图像与视频模型的基础模型赛道。",
+      "input_hash": "9cb18b2ad87e0f185a0042c02e4baa9f7673c1ae9571d1d27126173406151504",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-57c1c364a7f270ee",
+          "quote": "Berlin-based voice AI company Deepslate has raised €7.7 million in a seed round"
+        },
+        {
+          "source_id": "FISRC-11d05d552811b9ac",
+          "quote": "Deepslate is a native speech-to-speech voice AI model built in Europe. It listens, reasons and responds in 27 languages with 440 ms latency, hosted in the EU."
+        },
+        {
+          "source_id": "FISRC-5af17e34dac86a39",
+          "quote": "Deepslate has developed models that can understand and generate speech directly, without translating it into text."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.764Z"
+    },
+    "EV-3d0b9dcdf8daec4c": {
+      "id": "EV-3d0b9dcdf8daec4c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "核心交付是管理酒店多个岗位与流程的 AI 智能体平台，覆盖预订、员工运营和销售等，应归业务流程与企业智能体，不因预订场景归为电商供应链。",
+      "input_hash": "ddec413e3a8ebf58effedebaae7bb237ab482074b13070e30a0b9d48bec72915",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-5c1105ae11d900f9",
+          "quote": "Dextr AI is the AI agent platform for hospitality, where specialized AI agents automate workflows across guest experience, reservations, staff operations, sales and marketing for hundreds of properties, from independent hotels and resorts to franchised properties."
+        },
+        {
+          "source_id": "FISRC-5c1105ae11d900f9",
+          "quote": "Dextr AI is also unveiling Doss Gen 1, a command layer that allows employees to control the AI workforce in plain language, either by texting or talking to it. Doss is designed with the role-based permissions, audit trail and portfolio-wide consistency that enterprise operators require."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T02:15:39.460Z"
+    },
+    "EV-1ef8979f39a2ccc5": {
+      "id": "EV-1ef8979f39a2ccc5",
+      "scope": "excluded",
+      "exclusion_reason": "embodied_robotics",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "融资用途及主营交付明确为专用 Physical AI 芯片与全栈软硬件平台，属于具身/物理智能基础平台业务；并非一般软件仅服务机器人客户，按本任务范围排除。",
+      "input_hash": "70df0704eee33ba6993275317cdc19700d7a7602e278cac339d8496f4ca16b4e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "quote": "The proceeds will be used to scale Palette Neat, an agentic software environment for Physical AI, and develop next-generation hardware capable of delivering 1,000 TOPS of compute through purpose-built Physical AI silicon, SiMa.ai said in a press release."
+        },
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "quote": "The company offers a full-stack Physical AI platform that combines purpose-built silicon and software to simplify deployments."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T02:13:29.228Z"
+    },
+    "EV-201690debbddab65": {
+      "id": "EV-201690debbddab65",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Zenithon 开发用于极端物理的 AI 世界模型，利用神经算子学习复杂物理系统行为，属于专用模型与科学模型赛道。",
+      "input_hash": "0055a7882884de902a4807088ec068a19c733a0b1f3de370db079c5427b3c0ce",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-71beee65b9c4d6a4",
+          "quote": "UK AI startup Zenithon has raised $10 million to build what it describes as the first world models for extreme physics"
+        },
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "quote": "Zenithon AI, a UK-based company developing AI world models for extreme physics has raised $10 million in initial funding."
+        },
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "quote": "Zenithon is developing AI models that learn how these complex physical systems behave, enabling engineers to evaluate vastly larger design spaces in a fraction of the time required by conventional simulation approaches."
+        },
+        {
+          "source_id": "FISRC-6971fa8417f84420",
+          "quote": "Zenithon is using neural operators to build a world model for extreme physics. Its foundation model has learned the underlying physics from thousands of high-fidelity simulations. Engineers feed in a design and get back, in milliseconds, what a traditional run would take hours to tell them."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.764Z"
+    },
+    "EV-ef480d3fa3165905": {
+      "id": "EV-ef480d3fa3165905",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "assistants",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "直接面向个人用户按预算与时间规划、组合并预订旅行，是消费旅行助手；不是面向零售商或供应链的企业软件。",
+      "input_hash": "743fcc7a1dc3dc356c87e745da0bf82fce959b1eac7a8ccac816009044c6e4ef",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-ea432ae33551275b",
+          "quote": "Tryp.com is an AI-native online travel agency that builds and books complete multimodal trips…"
+        },
+        {
+          "source_id": "FISRC-e4525087dad7425b",
+          "quote": "Instead of starting with a destination, users can begin with a budget and time window, while its engine combines flights, trains, buses, ferries, stays and transfers into one booking across millions of travel options."
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T02:15:39.458Z"
+    },
+    "EV-6324ffde67e257fa": {
+      "id": "EV-6324ffde67e257fa",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "financial-services",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        3
+      ],
+      "rationale": "FRANK 为保险经纪公司提供 AI 驱动的行政自动化助手，围绕保险行业工作流程交付，属于金融与保险行业 AI。",
+      "input_hash": "d3bc2034821ed3a4a10ce590aacc98bd30d104d4b9cc06a44fb089526b6160df",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-31a4be392025f4f0",
+          "quote": "FRANK, a Lisbon-based insurtech startup that develops AI-driven administrative automation for insurance brokers"
+        },
+        {
+          "source_id": "FISRC-31a4be392025f4f0",
+          "quote": "FRANK provides an AI assistant designed to automate the administrative back-office tasks of insurance brokerages. The platform integrates with various communication channels and insurer portals to manage documentation and task execution"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.829Z"
+    },
+    "EV-6a63fabeceadc42b": {
+      "id": "EV-6a63fabeceadc42b",
+      "scope": "review",
+      "exclusion_reason": "",
+      "sector_id": "",
+      "subsector_id": "",
+      "product_form_id": "",
+      "customer_ids": [],
+      "evidence_indices": [],
+      "rationale": "Headline 是一家风险投资机构，融资事件为其基金募集而非 AI 企业融资，证据不足以按企业主营业务分类。",
+      "input_hash": "f5a281e6eabf8ad3fcb7cd3c7092b879be7210730875f884d176ca5e7d3ca13c",
+      "evidence_refs": [],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.829Z"
+    },
+    "EV-3a7e1e2c46daaa76": {
+      "id": "EV-3a7e1e2c46daaa76",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        4,
+        5
+      ],
+      "rationale": "DeepSeek 推出并开源万亿参数大模型，通过 API 向外部客户提供模型调用服务，属于通用基础模型。",
+      "input_hash": "e0a83e0c9a285977fae6bcc458f3e85e13506f145f16b7b216223bb997260271",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-802229cb01fa557e",
+          "quote": "2026年4月24日，中国大模型厂商DeepSeek正式推出DeepSeek-V4预览版，同步开源并上线官网、官方App及API服务，标志着百万级超长上下文能力进入普惠阶段。"
+        },
+        {
+          "source_id": "FISRC-fa1f87c1d59d2670",
+          "quote": "模型deepseek-flash(1)deepseek-v4-proBASE URL (OpenAI 格式)https://api.deepseek.comBASE URL (Anthropic 格式)https://api.deepseek.com/anthropic"
+        },
+        {
+          "source_id": "FISRC-483eb7ff4aaec1c4",
+          "quote": "通过 API 向外部客户提供模型调用服务的毛利率高达 82.9%，显示模型推理业务已经具备较高的直接毛利水平。"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.829Z"
+    },
+    "EV-98ea446e097a9a95": {
+      "id": "EV-98ea446e097a9a95",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "enso 开发面向营销和销售的 AI 智能体系统，跨搜索、销售外联和社交媒体等渠道执行增长任务，属于企业销售与营销 AI。",
+      "input_hash": "adafb5665ce9771c00855314358359a5df6f7149d38fd83887fa0edb5a1db341",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7877f8925288c583",
+          "quote": "Israeli startup enso, which develops AI agent systems for marketing and sales, has raised $15 million in a Series A round led by MoreTech Ventures, with participation from existing investor NFX, Phenomen VC, and Gil Hirsch."
+        },
+        {
+          "source_id": "FISRC-7877f8925288c583",
+          "quote": "Enso’s AI agents analyze how different platforms rank, recommend and cite content. They then test different approaches through small-scale experiments and measure the results. When an approach proves effective, enso can turn it into a repeatable growth mechanism for a customer."
+        },
+        {
+          "source_id": "FISRC-7877f8925288c583",
+          "quote": "The systems operate across several channels, including search and AI-answer visibility, sales outreach, online communities, newsletters and social media."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.829Z"
+    },
+    "EV-80aeba0846bbd197": {
+      "id": "EV-80aeba0846bbd197",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "compute-cloud",
+      "product_form_id": "compute",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "PaleBlueDot AI 提供自有 GPU 集群、GPU 市场和 serverless 推理的超级智能基础设施平台，属于 AI 云与算力服务。",
+      "input_hash": "f50af93c93466b1e7a7cc2a395446b9fd7375907191a4ba0befd45b537915f4b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-05cde27c80650d6f",
+          "quote": "PaleBlueDot AI's Super Intelligence Infrastructure Platform brings together self-owned GPU clusters, GPU marketplace and serverless inference businesses."
+        },
+        {
+          "source_id": "FISRC-eec28e0aa7eb977d",
+          "quote": "The company's Dot-1.1 platform, powered by its AI Cloud Agent, provides real-time GPU pricing intelligence, cost-optimized cluster deployment planning, and API access to advanced AI models like DeepSeek-R1."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T02:11:20.829Z"
     }
   },
-  "generated_at": "2026-10-02T01:11:55.148Z"
+  "generated_at": "2026-10-02T02:11:20.829Z"
 }

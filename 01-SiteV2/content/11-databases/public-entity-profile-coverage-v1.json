@@ -6114,6 +6114,57 @@
       "profile_type": "organization",
       "identity_status": "verified"
     },
+    "INV-b92b24e064ec0c": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "NFX 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：enso · A轮 · 2026-10-01 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7877f8925288c583"
+        },
+        {
+          "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05f582b31c0a37a3"
+        },
+        {
+          "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f80a0b6f2f7f63f8"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-7877f8925288c583",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+          "source_title": "RapidAPI 联合创始人为 AI 营销初创公司 enso 融资 1500 万美元",
+          "source_content_hash": "8b0c05f8724f799ab943d0fe1e4bfe0abd15ca3b1654ba0efc163f694f34efa5",
+          "quote": "with participation from existing investor NFX, Phenomen VC, and Gil Hirsch",
+          "quote_hash": "7d766cdfb29a3560b554293dcedb4e3e0bd63fd57881a27bc366adabf20d36cd"
+        },
+        {
+          "source_id": "FISRC-05f582b31c0a37a3",
+          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
+          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
+          "source_content_hash": "8e63b4f9948a4c5f",
+          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
+          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
+        },
+        {
+          "source_id": "FISRC-f80a0b6f2f7f63f8",
+          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+          "source_content_hash": "a7c980dcd5f3e30f",
+          "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+          "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
     "INV-48cc4817cd0056": {
       "summary": "Atreides Management, LP 是一家总部位于波士顿的跨市场投资管理机构，通过跨周期策略投资科技和消费领域的公开及私人市场。创始人 Gavin Baker 曾长期在 Fidelity 管理公开市场基金，并参与该公司的风险投资业务。官网公布了机构地址、电话和通用邮箱。",
       "facts": [
@@ -9133,6 +9184,129 @@
       ],
       "identity_status": "verified"
     },
+    "INV-91198398d07963": {
+      "summary": "B Capital 是一家提供早期及成长期投资的全球风险投资机构，官方资料列出的重点领域包括科技、医疗健康及能源与韧性。官网自述管理资产超过 120 亿美元、投资组合公司超过 200 家，并在全球设有 9 个办公地点。",
+      "facts": [
+        {
+          "field": "assets_under_management",
+          "label": "管理资产规模",
+          "value": "超过 120 亿美元（官网自述）",
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "portfolio_count",
+          "label": "组合公司数量",
+          "value": "超过 200 家，覆盖早期至后期阶段（官网自述）",
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期",
+            "成长期至后期"
+          ],
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "重点领域",
+          "value": [
+            "科技",
+            "医疗健康",
+            "能源与韧性"
+          ],
+          "source_id": "bcapital_home"
+        },
+        {
+          "field": "offices",
+          "label": "全球办公地点",
+          "value": "9 个（官网自述）",
+          "source_id": "bcapital_home"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "官网展示科技、医疗健康和能源韧性领域的组合公司案例；组合展示为机构选列样本，不代表全部项目或投资回报表现。",
+          "source_id": "bcapital_home"
+        },
+        {
+          "description": "融资来源记录：PaleBlueDot AI · C轮 · 2026-10-01 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05cde27c80650d6f"
+        },
+        {
+          "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05007e2b6b43ffda"
+        },
+        {
+          "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 既有投资方，本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1347e63f3abd5d34"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "B Capital 官方网站",
+          "value": "B Capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        },
+        {
+          "kind": "email",
+          "label": "投资人关系（LP/机构投资人联系；非创业项目投递邮箱）",
+          "value": "ir@b.capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        },
+        {
+          "kind": "email",
+          "label": "新闻媒体联系",
+          "value": "media@b.capital",
+          "url": "https://b.capital/",
+          "source_id": "bcapital_home"
+        }
+      ],
+      "coverage_status": "researched",
+      "coverage_note": "机构信息取自 B Capital 官网。资产规模、组合数量和地点数为机构当前自述；联系邮箱按官网栏目明确区分为投资人关系和媒体联系，不将其解释为创业项目投递渠道。",
+      "sources": [
+        {
+          "source_id": "bcapital_home",
+          "source_url": "https://b.capital/",
+          "source_title": "B Capital | We empower entrepreneurs to think bigger",
+          "source_content_hash": "c229fbe1905fea1449eea19ab39f4518434c2ebb65a2b516d2bf090b93aba92d",
+          "quote": "B Capital has over $12 billion in assets under management and more than 200 early to late-stage portfolio companies across nine global locations. Early and late-stage support in Technology, Healthcare and Energy & Resilience. Investors ir@b.capital Press/Media media@b.capital",
+          "quote_hash": "5a44a49f589dddc7f986598627306800a43e0491082d1a7b737f0a0036bc2f08"
+        },
+        {
+          "source_id": "FISRC-05cde27c80650d6f",
+          "source_url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
+          "source_title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
+          "source_content_hash": "6e420312a93cf1d9fb0c5dc88ec2b95cb97f03a273ccf1896a5f466aad867989",
+          "quote": "B Capital, an existing shareholder, participated in the Series C along with other global investors.",
+          "quote_hash": "1043fc03f0085f30abd22fdd944799f6255d995bcbb6d45705a95d31f851a03d"
+        },
+        {
+          "source_id": "FISRC-05007e2b6b43ffda",
+          "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
+          "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
+          "source_content_hash": "4affcb58ccdfce57",
+          "quote": "The round was led by Speedinvest and B Capital.",
+          "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
+        },
+        {
+          "source_id": "FISRC-1347e63f3abd5d34",
+          "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
+          "source_title": "独家：Oro Labs利用AI智能体简化企业采购，获1亿美元融资",
+          "source_content_hash": "903d49978d88c371",
+          "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
+          "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
+        }
+      ],
+      "last_verified_at": "2026-09-25",
+      "profile_type": "organization",
+      "identity_status": "verified"
+    },
     "INV-c9acfb4744dbfa": {
       "summary": "Battery Ventures 是一家自 1983 年起全球投资科技公司的投资机构，投资阶段覆盖初创、成长和收购，领域包括应用软件、基础设施软件、消费、工业科技与生命科学工具。官网称其目前投资第十五支旗舰基金 Battery Ventures XV，规模为 32.5 亿美元；投资组合页面列示历史投资超过 450 家公司。",
       "facts": [
@@ -9505,6 +9679,117 @@
         }
       ],
       "last_verified_at": "2026-09-26"
+    },
+    "INV-1396586020e70e": {
+      "summary": "Dell Technologies Capital（DTC）是Dell Technologies的企业风险投资团队，主要支持企业技术创业公司，通常从种子轮或A轮开始投资。官网列出的重点包括安全、AI/机器学习、边缘与物流、数据与分析、开发者工具、基础设施和芯片；并以Dell企业客户网络帮助组合公司拓展市场。",
+      "facts": [
+        {
+          "field": "parent",
+          "label": "母公司",
+          "value": "Dell Technologies",
+          "source_id": "delltechcapital_official_202609"
+        },
+        {
+          "field": "investment_stage",
+          "label": "常见首投阶段",
+          "value": [
+            "种子轮",
+            "A轮"
+          ],
+          "source_id": "delltechcapital_official_202609"
+        },
+        {
+          "field": "investment_focus",
+          "label": "关注领域",
+          "value": [
+            "网络安全",
+            "AI/机器学习",
+            "边缘与物流",
+            "数据与分析",
+            "开发者工具",
+            "基础设施",
+            "芯片"
+          ],
+          "source_id": "delltechcapital_official_202609"
+        },
+        {
+          "field": "cumulative_invested",
+          "label": "累计投资",
+          "value": "自2012年以来超过17亿美元；官网口径，非管理规模",
+          "source_id": "delltechcapital_official_202609"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2012",
+          "description": "Dell Tech Capital官网将投资团队起始时间列为2012年。",
+          "source_id": "delltechcapital_official_202609"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        },
+        {
+          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-afe2544836558c64"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "email",
+          "label": "项目联系邮箱",
+          "value": "delltechcapital@dell.com",
+          "source_id": "delltechcapital_official_202609"
+        },
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "团队、投资领域及联系方式",
+          "url": "https://www.delltechnologiescapital.com/",
+          "source_id": "delltechcapital_official_202609"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "delltechcapital_official_202609",
+          "source_url": "https://www.delltechnologiescapital.com/",
+          "source_title": "Dell Technologies Capital官网",
+          "source_content_hash": "f7395257d1caaf1e049387a4b632020d48a56890c38ba347a3a5e6f1e8070f80",
+          "quote": "Dell Technologies Capital官网将其定义为Dell Technologies风险投资团队，通常在种子轮或A轮首次投资，关注网络安全、AI/机器学习、边缘与物流、数据分析、开发者工具、基础设施和芯片；官网称自2012年以来累计投资超过17亿美元。",
+          "quote_hash": "7e9e235706eec5711c05ae022faf513bdde39650a0415d2f5c17d0faa2ce05a0"
+        },
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
+          "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+        },
+        {
+          "source_id": "FISRC-afe2544836558c64",
+          "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
+          "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
+          "source_content_hash": "596e7c850e10c828",
+          "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
+          "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
+        },
+        {
+          "source_id": "FISRC-3b1f1aee6b1a3091",
+          "source_url": "https://www.intelcapital.com/prime-intellect-the-full-stack-for-training-and-deploying-self-improving-agents/",
+          "source_title": "Prime Intellect: The Full Stack for Training and Deploying Self-Improving Agents – Intel Capital",
+          "source_content_hash": "91deffc98c827626",
+          "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors.",
+          "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
+        }
+      ],
+      "last_verified_at": "2026-09-26",
+      "profile_type": "organization",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、方向、联系方式和累计金额来自DTC官网；金额不是AUM或未部署资本。",
+      "identity_status": "verified"
     },
     "INV-cd8857f54a42ce": {
       "profile_type": "organization",
@@ -11523,57 +11808,6 @@
       "coverage_note": "策略、规模和成立年份使用机构官网表述；基金资本规模不等同单支基金认缴额或已投资组合估值。",
       "identity_status": "verified"
     },
-    "INV-b92b24e064ec0c": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "NFX 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Starcloud · A轮扩展 · 2026-08-21 · 本轮参投 · $250 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-05f582b31c0a37a3"
-        },
-        {
-          "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f80a0b6f2f7f63f8"
-        },
-        {
-          "description": "融资来源记录：Aligned · B轮 · 2026-07-01 · 本轮参投，既有投资方 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c7a5a66361dc784"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-05f582b31c0a37a3",
-          "source_url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up",
-          "source_title": "Starcloud 为轨道数据中心追加融资 2.5 亿美元，估值达 23 亿美元",
-          "source_content_hash": "8e63b4f9948a4c5f",
-          "quote": "Other participants included Benchmark, EQT, Soma, NFX, 776, Cedar Capital, Goanna Capital, and Standard Capital.",
-          "quote_hash": "a8914f5eae49499dc908ce2df7abc074883daadeedfd55131214b74e486bb786"
-        },
-        {
-          "source_id": "FISRC-f80a0b6f2f7f63f8",
-          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
-          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
-          "source_content_hash": "a7c980dcd5f3e30f",
-          "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
-          "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
-        },
-        {
-          "source_id": "FISRC-7c7a5a66361dc784",
-          "source_url": "https://www.saasrise.com/deals/aligned-bags-60m-in-funding-to-build-the-ainative-sales-execution-layer-for-enterprise-deals-5eecc03e-e805-4519-9bac-782e166d991a",
-          "source_title": "Aligned 为其 AI 销售执行平台筹集 6000 万美元 B 轮融资",
-          "source_content_hash": "9348da1b25f12b48",
-          "quote": "with participation from Hetz Ventures, JAL Ventures and NFX",
-          "quote_hash": "0e21e7dce274a10684bf7e6562c8a8fab7604afcb43ee0246b8e6a62125a4714"
-        }
-      ],
-      "last_verified_at": "2026-09-25"
-    },
     "INV-47ed8ff2439985": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -13267,6 +13501,57 @@
           "source_content_hash": "20d6f1f5cb5a6d21",
           "quote": "It also saw participation from Lakestar",
           "quote_hash": "5eaaa74b0372426800b797f9c61aa1b96a93a9eef2793fc1dfefb4d259c0bf5e"
+        }
+      ],
+      "last_verified_at": "2026-09-25"
+    },
+    "INV-6793571a77cee4": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "StepStone Group 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        },
+        {
+          "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7dcdc22c0b1702bf"
+        },
+        {
+          "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23bba75e0baa6d39"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
+          "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+        },
+        {
+          "source_id": "FISRC-7dcdc22c0b1702bf",
+          "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
+          "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
+          "source_content_hash": "23145edb5fdd8d69",
+          "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
+          "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
+        },
+        {
+          "source_id": "FISRC-23bba75e0baa6d39",
+          "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+          "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
+          "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
+          "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
+          "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
         }
       ],
       "last_verified_at": "2026-09-25"
@@ -18486,117 +18771,6 @@
       ],
       "last_verified_at": "2026-09-25"
     },
-    "INV-1396586020e70e": {
-      "summary": "Dell Technologies Capital（DTC）是Dell Technologies的企业风险投资团队，主要支持企业技术创业公司，通常从种子轮或A轮开始投资。官网列出的重点包括安全、AI/机器学习、边缘与物流、数据与分析、开发者工具、基础设施和芯片；并以Dell企业客户网络帮助组合公司拓展市场。",
-      "facts": [
-        {
-          "field": "parent",
-          "label": "母公司",
-          "value": "Dell Technologies",
-          "source_id": "delltechcapital_official_202609"
-        },
-        {
-          "field": "investment_stage",
-          "label": "常见首投阶段",
-          "value": [
-            "种子轮",
-            "A轮"
-          ],
-          "source_id": "delltechcapital_official_202609"
-        },
-        {
-          "field": "investment_focus",
-          "label": "关注领域",
-          "value": [
-            "网络安全",
-            "AI/机器学习",
-            "边缘与物流",
-            "数据与分析",
-            "开发者工具",
-            "基础设施",
-            "芯片"
-          ],
-          "source_id": "delltechcapital_official_202609"
-        },
-        {
-          "field": "cumulative_invested",
-          "label": "累计投资",
-          "value": "自2012年以来超过17亿美元；官网口径，非管理规模",
-          "source_id": "delltechcapital_official_202609"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "2012",
-          "description": "Dell Tech Capital官网将投资团队起始时间列为2012年。",
-          "source_id": "delltechcapital_official_202609"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-afe2544836558c64"
-        },
-        {
-          "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a6233a9ab76850de"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "email",
-          "label": "项目联系邮箱",
-          "value": "delltechcapital@dell.com",
-          "source_id": "delltechcapital_official_202609"
-        },
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "团队、投资领域及联系方式",
-          "url": "https://www.delltechnologiescapital.com/",
-          "source_id": "delltechcapital_official_202609"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "delltechcapital_official_202609",
-          "source_url": "https://www.delltechnologiescapital.com/",
-          "source_title": "Dell Technologies Capital官网",
-          "source_content_hash": "f7395257d1caaf1e049387a4b632020d48a56890c38ba347a3a5e6f1e8070f80",
-          "quote": "Dell Technologies Capital官网将其定义为Dell Technologies风险投资团队，通常在种子轮或A轮首次投资，关注网络安全、AI/机器学习、边缘与物流、数据分析、开发者工具、基础设施和芯片；官网称自2012年以来累计投资超过17亿美元。",
-          "quote_hash": "7e9e235706eec5711c05ae022faf513bdde39650a0415d2f5c17d0faa2ce05a0"
-        },
-        {
-          "source_id": "FISRC-afe2544836558c64",
-          "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
-          "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
-          "source_content_hash": "596e7c850e10c828",
-          "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
-          "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
-        },
-        {
-          "source_id": "FISRC-3b1f1aee6b1a3091",
-          "source_url": "https://www.intelcapital.com/prime-intellect-the-full-stack-for-training-and-deploying-self-improving-agents/",
-          "source_title": "Prime Intellect: The Full Stack for Training and Deploying Self-Improving Agents – Intel Capital",
-          "source_content_hash": "91deffc98c827626",
-          "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors.",
-          "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
-        },
-        {
-          "source_id": "FISRC-a6233a9ab76850de",
-          "source_url": "https://multiples.vc/private-comps/bland-ai",
-          "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
-          "source_content_hash": "61e54f8481bb7570",
-          "quote": "raised $50 million in Series C funding on June 16, 2026, led by Dell Technologies Capital",
-          "quote_hash": "85990b18962dbcf1240e6d8e2a3ead098f97a30a86ab5d5907bc648374655d5e"
-        }
-      ],
-      "last_verified_at": "2026-09-26",
-      "profile_type": "organization",
-      "coverage_status": "researched",
-      "coverage_note": "投资阶段、方向、联系方式和累计金额来自DTC官网；金额不是AUM或未部署资本。",
-      "identity_status": "verified"
-    },
     "INV-583f303fd1809b": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -19377,129 +19551,6 @@
         }
       ],
       "last_verified_at": "2026-09-26"
-    },
-    "INV-91198398d07963": {
-      "summary": "B Capital 是一家提供早期及成长期投资的全球风险投资机构，官方资料列出的重点领域包括科技、医疗健康及能源与韧性。官网自述管理资产超过 120 亿美元、投资组合公司超过 200 家，并在全球设有 9 个办公地点。",
-      "facts": [
-        {
-          "field": "assets_under_management",
-          "label": "管理资产规模",
-          "value": "超过 120 亿美元（官网自述）",
-          "source_id": "bcapital_home"
-        },
-        {
-          "field": "portfolio_count",
-          "label": "组合公司数量",
-          "value": "超过 200 家，覆盖早期至后期阶段（官网自述）",
-          "source_id": "bcapital_home"
-        },
-        {
-          "field": "investment_stage",
-          "label": "投资阶段",
-          "value": [
-            "早期",
-            "成长期至后期"
-          ],
-          "source_id": "bcapital_home"
-        },
-        {
-          "field": "focus_sectors",
-          "label": "重点领域",
-          "value": [
-            "科技",
-            "医疗健康",
-            "能源与韧性"
-          ],
-          "source_id": "bcapital_home"
-        },
-        {
-          "field": "offices",
-          "label": "全球办公地点",
-          "value": "9 个（官网自述）",
-          "source_id": "bcapital_home"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "官网展示科技、医疗健康和能源韧性领域的组合公司案例；组合展示为机构选列样本，不代表全部项目或投资回报表现。",
-          "source_id": "bcapital_home"
-        },
-        {
-          "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-05007e2b6b43ffda"
-        },
-        {
-          "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 既有投资方，本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1347e63f3abd5d34"
-        },
-        {
-          "description": "融资来源记录：Goodfire AI · B轮 · 2026-02-05 · 本轮领投 · $150M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f0d4056113fd3650"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "B Capital 官方网站",
-          "value": "B Capital",
-          "url": "https://b.capital/",
-          "source_id": "bcapital_home"
-        },
-        {
-          "kind": "email",
-          "label": "投资人关系（LP/机构投资人联系；非创业项目投递邮箱）",
-          "value": "ir@b.capital",
-          "url": "https://b.capital/",
-          "source_id": "bcapital_home"
-        },
-        {
-          "kind": "email",
-          "label": "新闻媒体联系",
-          "value": "media@b.capital",
-          "url": "https://b.capital/",
-          "source_id": "bcapital_home"
-        }
-      ],
-      "coverage_status": "researched",
-      "coverage_note": "机构信息取自 B Capital 官网。资产规模、组合数量和地点数为机构当前自述；联系邮箱按官网栏目明确区分为投资人关系和媒体联系，不将其解释为创业项目投递渠道。",
-      "sources": [
-        {
-          "source_id": "bcapital_home",
-          "source_url": "https://b.capital/",
-          "source_title": "B Capital | We empower entrepreneurs to think bigger",
-          "source_content_hash": "c229fbe1905fea1449eea19ab39f4518434c2ebb65a2b516d2bf090b93aba92d",
-          "quote": "B Capital has over $12 billion in assets under management and more than 200 early to late-stage portfolio companies across nine global locations. Early and late-stage support in Technology, Healthcare and Energy & Resilience. Investors ir@b.capital Press/Media media@b.capital",
-          "quote_hash": "5a44a49f589dddc7f986598627306800a43e0491082d1a7b737f0a0036bc2f08"
-        },
-        {
-          "source_id": "FISRC-05007e2b6b43ffda",
-          "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
-          "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
-          "source_content_hash": "4affcb58ccdfce57",
-          "quote": "The round was led by Speedinvest and B Capital.",
-          "quote_hash": "b68bf6c771cbe20280d08f6c63dfd6539e7a25e0e0151d64b99b2f0be98c15ce"
-        },
-        {
-          "source_id": "FISRC-1347e63f3abd5d34",
-          "source_url": "https://fortune.com/2026/03/12/oro-labs-corporate-procurement-ai-efficiency/",
-          "source_title": "独家：Oro Labs利用AI智能体简化企业采购，获1亿美元融资",
-          "source_content_hash": "903d49978d88c371",
-          "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
-          "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
-        },
-        {
-          "source_id": "FISRC-f0d4056113fd3650",
-          "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
-          "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
-          "source_content_hash": "065e9d351d56505a",
-          "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital",
-          "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
-        }
-      ],
-      "last_verified_at": "2026-09-25",
-      "profile_type": "organization",
-      "identity_status": "verified"
     },
     "INV-bebb703d97b31a": {
       "profile_type": "unverified",
@@ -20555,6 +20606,178 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-4c147c043d37de": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "42CAP 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Deepslate · 种子轮 · 2026-10-01 · 本轮领投 · €7.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57c1c364a7f270ee"
+        },
+        {
+          "description": "融资来源记录：Osavul · A轮 · 2026-10-01 · 本轮参投 · €8.5m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4dc390804d079769"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-57c1c364a7f270ee",
+          "source_url": "https://tech.eu/2026/10/01/deepslate-secures-eur77m-for-its-european-voice-ai-platform/",
+          "source_title": "Deepslate 为其欧洲语音 AI 平台获得 770 万欧元融资",
+          "source_content_hash": "180703c997b2068a2719adcc38dc12c06d7e36623ac3ba5d8b2ff7a0d0f4c3f1",
+          "quote": "led by Munich-based technology investor 42CAP",
+          "quote_hash": "5cec8926ecd0be229de452ea25f714dd6fe1c827c91abb8d8f3fb7046a990e0b"
+        },
+        {
+          "source_id": "FISRC-4dc390804d079769",
+          "source_url": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
+          "source_title": "敌对威胁预警初创公司Osavul融资850万欧元",
+          "source_content_hash": "e92078a4e61efac5b23ed5268dc390b10a085c84f6db716d6df83af919a7876c",
+          "quote": "The funding round in Osavul was led by 33N Ventures, the Europe-based global cybersecurity investor, with participation from Balnord, G+D Ventures and existing investor 42CAP.",
+          "quote_hash": "7210a96814a82e3e8392379255027cb96e86dd45ca3f5dd0e7390c7c154ac689"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-cdb3d95c05f469": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、行业、地域与初始投资金额来自 Alstin Capital 官网，团队经历数字是机构官网自述的合并历史，未提供统计期间，不能视为单一基金回报或当前基金业绩。NeuralTrust 披露的 €17.2m 是整轮融资金额，不是 Alstin Capital 的单独出资额。",
+      "summary": "Alstin Capital 是一家专注欧洲 B2B 软件企业的风险投资机构，官网列出晚期种子轮和 A 轮阶段，初始投资通常为 200 万至 800 万欧元。其关注金融科技、保险科技、监管科技、网络安全和气候科技等领域。官网团队页列出 Carsten Maschmeyer、Dr. Andreas Schenk 与 Alexander Meyer-Scharenberg 等合伙人。",
+      "facts": [
+        {
+          "field": "sector_focus",
+          "label": "投资主题",
+          "value": "B2B 软件。",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "晚期种子轮 / A 轮。",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "initial_investment",
+          "label": "官网披露的初始投资额",
+          "value": "EUR 2–8 million。",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "sector_focus",
+          "label": "官网列示领域",
+          "value": [
+            "金融科技",
+            "保险科技",
+            "监管科技",
+            "网络安全",
+            "气候科技及其他"
+          ],
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "欧洲。",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "field": "leadership",
+          "label": "官网当前团队",
+          "value": [
+            "Carsten Maschmeyer — Managing Partner",
+            "Dr. Andreas Schenk — Partner",
+            "Alexander Meyer-Scharenberg — Partner",
+            "Benjamin Kleinschnitz — Principal",
+            "Laura Keilhofer — Investment Manager",
+            "Nicolai Bastian — Senior Investment Manager"
+          ],
+          "source_id": "alstin_team"
+        }
+      ],
+      "milestones": [],
+      "experience_summary": "Alstin 官网称团队累计交易履历超过 300 笔、后续融资超过 150 笔、退出 25 次，并具备 B2B 销售和 B2B 软件经验。该数字为团队合并历史，官网未在此处披露统计区间或基金回报口径。",
+      "track_record": [
+        {
+          "description": "官网自述：Alstin 团队合并历史包括超过 300 笔交易、超过 150 笔后续融资和 25 次退出；统计区间和各基金归属未注明，不等于单一基金回报。",
+          "source_id": "alstin_team"
+        },
+        {
+          "description": "融资记录：NeuralTrust · 种子轮 · 2026-06-17 · 领投；公开融资额为 €17.2 million（约 USD 20 million），未披露 Alstin Capital 单独出资额。此为本库收录案例，不代表完整投资组合。",
+          "source_id": "FISRC-7a0d2741d3dddcef"
+        },
+        {
+          "description": "融资来源记录：Deepslate · 种子轮 · 2026-10-01 · 本轮参投 · €7.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57c1c364a7f270ee"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Alstin Capital",
+          "url": "https://alstin.capital/",
+          "source_id": "alstin_strategy"
+        },
+        {
+          "kind": "contact_form",
+          "label": "官网联系与项目提交页面",
+          "value": "Alstin Capital contact page",
+          "url": "https://alstin.capital/contact",
+          "source_id": "alstin_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "alstin_strategy",
+          "source_url": "https://alstin.capital/",
+          "source_title": "Alstin Capital - Alstin goes all-in.",
+          "source_content_hash": "41e7763256690394894619a7a07512a909945197dedde34543d87d548197bb44",
+          "quote": "B2B Software",
+          "quote_hash": "6c26897c00e92397ebc597d71a2ee62c441ed9cad537e9fefdf8097fcefffe83"
+        },
+        {
+          "source_id": "alstin_team",
+          "source_url": "https://alstin.capital/team",
+          "source_title": "Our Team – Alstin Capital",
+          "source_content_hash": "3aefd45f51032e97c51171b2a0feec534d42c35f62cbdd24829d3c86bd23f2c1",
+          "quote": "The Alstin team has a combined deal track record of >300 transactions, >150 follow-on financings and 25 exits.",
+          "quote_hash": "29fc970575aa24d8ba686c34262c320cc36e9305b913f5f74b7488a1d62ec5a9"
+        },
+        {
+          "source_id": "alstin_contact",
+          "source_url": "https://alstin.capital/contact",
+          "source_title": "Contact – Alstin Capital",
+          "source_content_hash": "3b298c7c4f0443542a73a617daada9dee63385bf29dcad384d724172b379fc30",
+          "quote": "Contact",
+          "quote_hash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e"
+        },
+        {
+          "source_id": "FISRC-7a0d2741d3dddcef",
+          "source_url": "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/",
+          "source_title": "总部位于巴塞罗那的 NeuralTrust 融资 1720 万欧元，用于保障和治理企业 AI 智能体",
+          "source_content_hash": "7a4bd12b025049d2",
+          "quote": "The round was led by Alstin Capital",
+          "quote_hash": "03382ccc1da206b412bc52ae73b589536674279bf9f3ccebc0a240532adb91d0"
+        },
+        {
+          "source_id": "FISRC-57c1c364a7f270ee",
+          "source_url": "https://tech.eu/2026/10/01/deepslate-secures-eur77m-for-its-european-voice-ai-platform/",
+          "source_title": "Deepslate 为其欧洲语音 AI 平台获得 770 万欧元融资",
+          "source_content_hash": "180703c997b2068a2719adcc38dc12c06d7e36623ac3ba5d8b2ff7a0d0f4c3f1",
+          "quote": "with participation from Alstin Capital, existing investor SIVentures and several business angels",
+          "quote_hash": "ea2ff270583187ae37621658f3b47ca9e00f5c053cdcd520f4f68fa7d5e6332a"
+        }
+      ],
+      "last_verified_at": "2026-09-27"
+    },
     "INV-008a77c3b18393": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -20735,6 +20958,245 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-b589b7440c714c": {
+      "summary": "Baron Capital 是成立于 1982 年、专注长期成长型股票与成长股权策略的资产管理机构。公司官网披露截至 2026-06-30 管理资产 697 亿美元，且称自 1992 年以来为投资者实现与未实现收益合计 712 亿美元；这些是公司自述口径，不代表单一基金表现。本库的 SpaceX IPO 记录来自二手报道，出资主体在报道中指向 Ron Baron 个人或 Baron Capital，尚未核实到具体基金；750 亿美元为整笔 IPO 披露口径而非 Baron 单笔金额。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "成长股权与长期成长型股票投资管理机构",
+          "source_id": "baron_about"
+        },
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "1982 年",
+          "source_id": "baron_history"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资理念",
+          "value": "长期投资具有持续成长潜力、耐久竞争优势和优秀管理团队的企业",
+          "source_id": "baron_strategy"
+        },
+        {
+          "field": "aum",
+          "label": "管理资产规模",
+          "value": "697 亿美元（截至 2026-06-30；公司自述，包含客户及自有账户）",
+          "source_id": "baron_about"
+        },
+        {
+          "field": "realized_unrealized_gains",
+          "label": "累计实现及未实现收益",
+          "value": "712 亿美元（自 1992 年以来，截至 2026-06-30；公司披露，非单只基金收益）",
+          "source_id": "baron_message_metrics"
+        },
+        {
+          "field": "leadership",
+          "label": "创始人、CEO 与投资组合经理",
+          "value": "Ronald Baron",
+          "source_id": "baron_people"
+        },
+        {
+          "field": "senior_team",
+          "label": "主要管理团队",
+          "value": [
+            "David Baron、Michael Baron — Co-Presidents",
+            "Cliff Greenberg、Andrew Peck — Co-CIOs"
+          ],
+          "source_id": "baron_message"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1982",
+          "description": "Baron Capital 官网将机构起源记为 1982 年。",
+          "source_id": "baron_about"
+        }
+      ],
+      "track_record": [
+        {
+          "description": "公司 2026 年第二季度公开信称，截至 2026-06-30，SpaceX 是 Baron Capital 最大持仓，占公司约 690 亿美元 AUM 的略高于 30%；这是公司整体口径，不能据此推断所有 Baron 基金持有相同比例。",
+          "source_id": "baron_q2_letter"
+        },
+        {
+          "description": "Motley Fool 的报道标题将 IPO 投入归于 Ron Baron，并称金额为 10 亿美元；该报道未在本档案中证明具体投资工具或基金载体。",
+          "source_id": "FISRC-70b91157a7013cad"
+        },
+        {
+          "description": "另一则 syndicated 报道称 Baron Capital 在 SpaceX IPO 提交了 10 亿美元订单，但没有披露最终配售或具体基金；该订单金额与融资数据库记录的 750 亿美元整笔交易金额不可混为一谈。",
+          "source_id": "FISRC-9adefaf867df19d6"
+        },
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Baron Capital",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "email",
+          "label": "机构总联系邮箱",
+          "value": "info@baroncapitalgroup.com",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "phone",
+          "label": "电话",
+          "value": "+1 212-583-2000",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        },
+        {
+          "kind": "address",
+          "label": "地址",
+          "value": "767 Fifth Avenue, New York, NY 10153",
+          "url": "https://www.baroncapitalgroup.com/",
+          "source_id": "baron_contact"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "baron_about",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "Baron Capital's assets under management have grown from $100 million in 1992 to $69.7* billion as of June 30, 2026.",
+          "quote_hash": "d856ea7c928c8b81b75570b8f80b9c0fd5efd12c05f23d7c18fbcce45d3e08c4"
+        },
+        {
+          "source_id": "baron_people",
+          "source_url": "https://www.baroncapitalgroup.com/our-people",
+          "source_title": "We Believe People Are the Drivers of a Successful Business | Baron Funds",
+          "source_content_hash": "b2d80291c5bccf2153589ce3e54f7afd1e86edd5617927e2b03810dbfe96796d",
+          "quote": "Ronald Baron Founder, CEO, and Portfolio Manager",
+          "quote_hash": "2204a2c077f81f12d1e65caaed01c166bbf53a867910ea8e5d5d7466a93853e2"
+        },
+        {
+          "source_id": "baron_message",
+          "source_url": "https://www.baroncapitalgroup.com/article/message-from-ron-baron",
+          "source_title": "A Message from Ron | Baron Funds",
+          "source_content_hash": "4755855dd9206d6bd54d59fea1ca7f0779f037f9f43fd3b0396bb28f04e7b6f1",
+          "quote": "As the Firm continues to grow, our next generation of portfolio managers and executives—led by my sons, Co-Presidents David and Michael, each with more than 23 years of experience, and our Co-CIOs Cliff Greenberg and Andrew Peck, with 42 and 30 years of experience, respectively—are all assuming more responsibilities for our businesses.",
+          "quote_hash": "81fef159f5b1e9eae4da99a94350c2ef5061dd23261ac6503b99c41bc00a1741"
+        },
+        {
+          "source_id": "baron_q2_letter",
+          "source_url": "https://www.baroncapitalgroup.com/article/letter-ron-q2-2026",
+          "source_title": "Letter from Ron | Q2 2026 | Baron Funds",
+          "source_content_hash": "ef31cfd075dd416419508bfe9f19f0d416de9fb9305114f61e688445d368e1ef",
+          "quote": "SpaceX is Baron Capital's largest holding and represents a little more than 30% of our Firm's $69 billion assets under management on June 30.",
+          "quote_hash": "bfe659906072e7063a1a57b7bb1c3c672ca3132e1f139e5287533deb285dd753"
+        },
+        {
+          "source_id": "baron_contact",
+          "source_url": "https://www.baroncapitalgroup.com/",
+          "source_title": "Baron Capital - Asset Management for Growth Equity Investments",
+          "source_content_hash": "2ad247031282fff9185e7506e18113caaf2818a444c60aa64f89012eab442d04",
+          "quote": "Phone 212-583-2000; Email info@baroncapitalgroup.com; Address 767 Fifth Avenue, New York, NY 10153.",
+          "quote_hash": "1aad39e79ce62a277fe66bce8cd16f568eb93f45a1941d00b1ba8a87d4e60aa6"
+        },
+        {
+          "source_id": "FISRC-70b91157a7013cad",
+          "source_url": "https://www.fool.com/investing/2026/06/18/spacex-stock-1-billion-ipo-buy-mistake/",
+          "source_title": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO | The Motley Fool",
+          "source_content_hash": "a23bc17d1a408325",
+          "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO.",
+          "quote_hash": "5144d6cd354049217c8415ea27737536becf697c38df3c3583c4ec8354ab8782"
+        },
+        {
+          "source_id": "FISRC-9adefaf867df19d6",
+          "source_url": "https://www.tradingview.com/news/stocktwits:c3fb917f9094b:0-spacex-will-be-largest-most-profitable-company-on-the-planet-says-veteran-elon-musk-bull-whose-funds-trail-us-markets/",
+          "source_title": "SpaceX Will Be 'Largest, Most Profitable Company On The Planet,' Says Veteran Elon Musk Bull | TradingView News",
+          "source_content_hash": "3549f091090ec02b",
+          "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO.",
+          "quote_hash": "e9e6aa400ba72e89e811139da45cef3b45fe9cfcde4b3551824cb7abba145c2d"
+        },
+        {
+          "source_id": "baron_history",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "The story of Baron Capital begins long before the founding of the company in 1982.",
+          "quote_hash": "3f15416965f59d28b96317857f928d1057a139da5e175a9e0f84235d29b31e61"
+        },
+        {
+          "source_id": "baron_strategy",
+          "source_url": "https://www.baroncapitalgroup.com/about-us",
+          "source_title": "Growth Equity Specialists | Baron Funds",
+          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
+          "quote": "At Baron Capital, our entire organization is aligned behind a single investment approach and shared objective. We are long-term investors in secular growth businesses that are run by great management teams and offer durable competitive advantages.",
+          "quote_hash": "7cd4792d0c369e44cb3e2d4c8744137d527babdba05fe044e6c7e86a39cc1381"
+        },
+        {
+          "source_id": "baron_message_metrics",
+          "source_url": "https://www.baroncapitalgroup.com/article/message-from-ron-baron",
+          "source_title": "A Message from Ron | Baron Funds",
+          "source_content_hash": "4755855dd9206d6bd54d59fea1ca7f0779f037f9f43fd3b0396bb28f04e7b6f1",
+          "quote": "Today, our assets under management total $69.7 billion (6/30/2026), and we have earned more than $71.2 billion (6/30/2026) in realized and unrealized gains for our investors.",
+          "quote_hash": "c6970ca02a8f7220fb6c96e424f3e2c25a0f01f5ec318eaa9928b49721cb9b27"
+        },
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "AllianceBernstein, Baron Capital and J.P. Morgan also joined the round as new investors.",
+          "quote_hash": "e47b49f692200b2912d7b385c181838dfe768e51836a4dc7381dbad873224021"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "AUM 与累计收益是 Baron Capital 官方披露，按公司整体口径并保留统计日期。SpaceX IPO 参投信息来自二手报道，当前来源无法确认订单主体、最终配售或具体基金；不可将 750 亿美元整笔 IPO 规模或个人报道视作 Baron 的投资金额或基金业绩。"
+    },
+    "INV-f66d982784a204": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Fidelity Management & Research Company 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮联合领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        },
+        {
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b5e22ae086a6b353"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
+          "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+        },
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+          "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-96f4c9b753c537": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -20812,6 +21274,350 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "INV-df1a4c6fb790e6": {
+      "summary": "Elevation Capital 是一家投资印度初创企业的风险投资机构，官网覆盖 Seed、Series A、Growth 与 Public 阶段，并列出消费科技、金融科技、医疗、消费品牌、企业 AI 与前沿科技等方向。官网团队页列 Ravi Adusumalli 与 Mukul Arora 为共同管理合伙人。",
+      "facts": [
+        {
+          "field": "investment_stages",
+          "label": "官网组合阶段",
+          "value": [
+            "Seed",
+            "Series A",
+            "Growth",
+            "Public"
+          ],
+          "source_id": "elevation_portfolio"
+        },
+        {
+          "field": "sectors",
+          "label": "官网列示投资领域",
+          "value": [
+            "消费科技",
+            "金融科技与金融服务",
+            "医疗健康",
+            "消费品牌",
+            "企业AI",
+            "前沿科技"
+          ],
+          "source_id": "elevation_home"
+        },
+        {
+          "field": "leadership",
+          "label": "共同管理合伙人",
+          "value": [
+            "Ravi Adusumalli",
+            "Mukul Arora"
+          ],
+          "source_id": "elevation_leadership"
+        },
+        {
+          "field": "experience",
+          "label": "团队经验",
+          "value": "官网称投资团队拥有超过20年的经验；其官网叙述属于机构自述。",
+          "source_id": "elevation_experience"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Elevation 官网自报曾在 Seed/Series A 阶段与 13 家后来成为独角兽的企业合作；该数字为机构口径。",
+          "source_id": "elevation_track"
+        },
+        {
+          "description": "Elevation 官网自报组合企业创造 750 亿美元、约占印度科技市场总市值 25%；属于机构网站披露，非独立审计数据。",
+          "source_id": "elevation_track"
+        },
+        {
+          "description": "融资披露案例：Reo.Dev 于 2026-07-16 宣布 1130 万美元 A 轮，Elevation Capital 为领投方；不代表完整组合或基金回报。",
+          "source_id": "FISRC-ca3d343739410c39"
+        },
+        {
+          "description": "融资来源记录：Dextr AI · 种子轮 · 2026-09-25 · 本轮领投 · $6.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c1105ae11d900f9"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Elevation Capital",
+          "url": "https://www.elevationcapital.com/",
+          "source_id": "elevation_experience"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开联系邮箱",
+          "value": "community@elevationcapital.com",
+          "url": "https://www.elevationcapital.com/team",
+          "source_id": "elevation_email"
+        },
+        {
+          "kind": "address",
+          "label": "Delhi-NCR 办公室",
+          "value": "Unit No. 101A, First Floor, One Horizon Centre, Golf Course Rd, DLF Phase 5, Sector 43, Gurugram, Haryana 122002",
+          "url": "https://www.elevationcapital.com/team",
+          "source_id": "elevation_delhi"
+        },
+        {
+          "kind": "address",
+          "label": "Bengaluru 办公室",
+          "value": "9th Floor, Unit No. 902 and 903, Campus 31, RMZ Ecoworld, Sarjapur-Marathahalli, Outer Ring Road, Bellandur, Bengaluru, 560103",
+          "url": "https://www.elevationcapital.com/team",
+          "source_id": "elevation_bengaluru"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "elevation_home",
+          "source_url": "https://www.elevationcapital.com/",
+          "source_title": "Elevation – Elevation Capital",
+          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+          "quote": "Consumer Tech Fintech & Financial Services Healthcare Consumer Brands Enterprise AI Frontier Tech.",
+          "quote_hash": "96cf2f4f7030bb539e5087cf2564cb77170c7ef23367c600adeaaa62c521129a"
+        },
+        {
+          "source_id": "elevation_experience",
+          "source_url": "https://www.elevationcapital.com/",
+          "source_title": "Elevation – Elevation Capital",
+          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+          "quote": "Our investment team, with over 20 years of expertise, inspires and shapes possibilities with you.",
+          "quote_hash": "5eaa59857ad205f4ca0cd28b11e8d2d084fcf9114ccf900ba78e0b4ac334041e"
+        },
+        {
+          "source_id": "elevation_leadership",
+          "source_url": "https://www.elevationcapital.com/team",
+          "source_title": "Team – Elevation Capital",
+          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+          "quote": "Ravi Adusumalli Co-Managing Partner; Mukul Arora Co-Managing Partner.",
+          "quote_hash": "44d9c1dbda6e5b4be4d6ca1a49d9e7d59d632825be5c0025ec0ccf302d6f06f1"
+        },
+        {
+          "source_id": "elevation_email",
+          "source_url": "https://www.elevationcapital.com/team",
+          "source_title": "Team – Elevation Capital",
+          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+          "quote": "community@elevationcapital.com",
+          "quote_hash": "1f70fa33d8205f78a4eeabf3c4ef659e4575333947005fd38bc55afb6c0bd075"
+        },
+        {
+          "source_id": "elevation_delhi",
+          "source_url": "https://www.elevationcapital.com/team",
+          "source_title": "Team – Elevation Capital",
+          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+          "quote": "Unit No. 101A, First Floor, One Horizon Centre, Golf Course Rd, DLF Phase 5, Sector 43, Gurugram, Haryana 122002.",
+          "quote_hash": "6fd1f646231a65c39ce9be62b0501bf121688d9899af132d3722faa154f1dc6f"
+        },
+        {
+          "source_id": "elevation_bengaluru",
+          "source_url": "https://www.elevationcapital.com/team",
+          "source_title": "Team – Elevation Capital",
+          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
+          "quote": "9th Floor, Unit No. 902 and 903, Campus 31, RMZ Ecoworld, Sarjapur-Marathahalli, Outer Ring Road, Bellandur, Bengaluru, 560103.",
+          "quote_hash": "78856e687438f5babea22a64e7ddc5ebb9bf2cb016b2065159ce0e35aeeb3b9e"
+        },
+        {
+          "source_id": "elevation_portfolio",
+          "source_url": "https://www.elevationcapital.com/portfolio",
+          "source_title": "Portfolio – Elevation Capital",
+          "source_content_hash": "9f36ec6a6aa0cfd897c9fa3753f452d2f3f43c4bd620aab3d57b9a5e364b2df4",
+          "quote": "Stage Seed Series A Growth Public.",
+          "quote_hash": "f6532f8e82f28286402a97cf654757a8da1ff814704c3d42b67c5ddf78b2e6d1"
+        },
+        {
+          "source_id": "elevation_track",
+          "source_url": "https://www.elevationcapital.com/",
+          "source_title": "Elevation – Elevation Capital",
+          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
+          "quote": "We've partnered with 13 unicorns from Seed/Series A stage. Our portfolio companies have created $75B (25%) of India’s total tech market cap.",
+          "quote_hash": "494e6822483a1042a4055e708a31085b4017cc8a05f59ee291cbab2c2f5ced92"
+        },
+        {
+          "source_id": "FISRC-ca3d343739410c39",
+          "source_url": "https://www.reo.dev/blog/reo-dev-series-a",
+          "source_title": "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务",
+          "source_content_hash": "ff5549c1a6dc8b11",
+          "quote": "We've raised $11.3 million in Series A, led by Elevation Capital",
+          "quote_hash": "1958df38fe8add9c7b791aaf8ee8bfcf03bb881487477007ba296cfe6eee47ca"
+        },
+        {
+          "source_id": "FISRC-5c1105ae11d900f9",
+          "source_url": "https://entrackr.com/snippets/elevation-capital-leads-67-million-seed-round-in-dextr-ai-12574387",
+          "source_title": "Elevation Capital 领投 Dextr AI 670 万美元种子轮",
+          "source_content_hash": "e406624e814d67b3537f9f3f65cb055843a58567f0da60953b1becb3f491eca2",
+          "quote": "has raised $6.7 million in a seed funding round led by Elevation Capital, with participation from Foundation Capital.",
+          "quote_hash": "412177563caa9ef75b59b584d2dee354b37b141c963d6bafeb7c95d217b29f8d"
+        }
+      ],
+      "last_verified_at": "2026-09-28",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
+    },
+    "INV-eb42bbe79e1bcf": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "last_verified_at": "2026-09-28",
+      "coverage_note": "官网首页展示的首次投资比例、IPO 数量和营收阶段占比均为 Foundation Capital 自述，不是审计投资回报或完整投资组合；公司轮次总额不代表其单笔出资。投资团队公开邮箱按其个人官网页面用途标注。",
+      "summary": "Foundation Capital 是一家美国早期风险投资机构，官网称其已支持创业者约 30 年，并聚焦企业软件、金融科技与加密技术，围绕 AI 和区块链建立投资主题。官网当前展示的首次投资比例、IPO 数量及营收阶段占比均为机构自述指标；本库另记录其参与 AegisAI 融资的公开案例，不代表基金回报。",
+      "facts": [
+        {
+          "field": "operating_history",
+          "label": "官网对机构历史的描述",
+          "value": "官网在 2026-09-28 核验时称已支持创业者 30 年；此为官网当前年数表述，不据此推断精确成立年份。",
+          "source_id": "foundation_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示的投资领域",
+          "value": [
+            "企业软件",
+            "金融科技",
+            "加密技术"
+          ],
+          "source_id": "foundation_practices"
+        },
+        {
+          "field": "technology_themes",
+          "label": "官网列示的技术主题",
+          "value": [
+            "人工智能",
+            "区块链"
+          ],
+          "source_id": "foundation_practices"
+        },
+        {
+          "field": "early_stage_approach",
+          "label": "早期投资方式",
+          "value": "官网强调没有过早的阶段，并称其可在创业构想阶段与创始人合作。",
+          "source_id": "foundation_early_stage"
+        }
+      ],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "截至 2026-09-28 官网首页展示：其约五分之四的投资案例中是公司的首位投资者、组合中有 37 家 IPO、77% 的投资对象在投资时尚未产生营收。以上为机构自述的组合指标，不等同于现金回报率。",
+          "source_id": "foundation_metrics"
+        },
+        {
+          "description": "融资报道将 Foundation Capital 列为 AegisAI 2026 年 7 月 3600 万美元 A 轮既有投资方之一；3600 万美元是全轮规模，未披露该机构单独出资额。",
+          "source_id": "FISRC-7a2e33bd2177a4c7"
+        },
+        {
+          "description": "融资来源记录：Dextr AI · 种子轮 · 2026-09-25 · 本轮参投 · $6.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5c1105ae11d900f9"
+        },
+        {
+          "description": "融资来源记录：AegisAI · A轮 · 2026-07-23 · 既有投资方，本轮参投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4b3af8138bc7fb99"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官方网站",
+          "value": "Foundation Capital",
+          "url": "https://foundationcapital.com/",
+          "source_id": "foundation_home"
+        },
+        {
+          "kind": "email",
+          "label": "投资团队公开邮箱（Steve Vassallo，General Partner）",
+          "value": "svassallo@foundationcap.com",
+          "url": "https://foundationcapital.com/team-members/steve-vassallo",
+          "source_id": "foundation_steve"
+        },
+        {
+          "kind": "address",
+          "label": "Palo Alto 办公室",
+          "value": "550 High St, 3rd Floor, Palo Alto, CA 94301",
+          "url": "https://foundationcapital.com/",
+          "source_id": "foundation_offices"
+        },
+        {
+          "kind": "address",
+          "label": "San Francisco 办公室",
+          "value": "2 Shaw Alley, 4th Floor, San Francisco, CA 94105",
+          "url": "https://foundationcapital.com/",
+          "source_id": "foundation_offices"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "foundation_home",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "For thirty years, we’ve backed extraordinary founders from day zero.",
+          "quote_hash": "3c4a07be639da7ea75db0e4b4e9ce404dde2e1e2737fb1a58519bfd95855fe20"
+        },
+        {
+          "source_id": "foundation_metrics",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "4 of 5 times we’re a company’s first investor; 37 IPOs; 77% of investments are pre-revenue.",
+          "quote_hash": "a6199957e68df408e9a9968a2582223aafbab9f7b611b844e205268eb2908cad"
+        },
+        {
+          "source_id": "foundation_practices",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "Our three practice areas — enterprise, fintech and crypto — are where we put that conviction to work.",
+          "quote_hash": "1e5c08481c3fddd9b846a85688d4e5faa3ec73b8c07f9db023fa4616100dab9c"
+        },
+        {
+          "source_id": "foundation_early_stage",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "No such thing as “too early”. For us, it’s a way of working.",
+          "quote_hash": "efd7309d5a5016a7e20c77a3a61d77c86e1f9d9624a1750c618614209a62bd77"
+        },
+        {
+          "source_id": "foundation_offices",
+          "source_url": "https://foundationcapital.com/",
+          "source_title": "Foundation Capital",
+          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
+          "quote": "550 High St, 3rd Floor Palo Alto, CA 94301; San Francisco 2 Shaw Alley #4th San Francisco, CA 94105.",
+          "quote_hash": "787dbb93f61311c23c05c1fd98c9915dd2ae93e86b760f66ab97a1b932e2e215"
+        },
+        {
+          "source_id": "foundation_steve",
+          "source_url": "https://foundationcapital.com/team-members/steve-vassallo",
+          "source_title": "Steve Vassallo - Foundation Capital",
+          "source_content_hash": "20b47edf2d79ec29d3989bb29d7420dc8c373f8f258c5bcb6387f2e77a4e4f9f",
+          "quote": "Steve Vassallo General Partner Contact svassallo@foundationcap.com.",
+          "quote_hash": "9368212a1af114faf34118d6127dac7e69f2791087e0b9a09507f713aae4fe5b"
+        },
+        {
+          "source_id": "FISRC-7a2e33bd2177a4c7",
+          "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
+          "source_title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
+          "source_content_hash": "afc63d021b3c19fe",
+          "quote": "with participation from existing backers Accel and Foundation Capital",
+          "quote_hash": "135a668db359733c9db451ba4077fe28839895951e03dbc7c09e79108f2c7770"
+        },
+        {
+          "source_id": "FISRC-5c1105ae11d900f9",
+          "source_url": "https://entrackr.com/snippets/elevation-capital-leads-67-million-seed-round-in-dextr-ai-12574387",
+          "source_title": "Elevation Capital 领投 Dextr AI 670 万美元种子轮",
+          "source_content_hash": "e406624e814d67b3537f9f3f65cb055843a58567f0da60953b1becb3f491eca2",
+          "quote": "has raised $6.7 million in a seed funding round led by Elevation Capital, with participation from Foundation Capital.",
+          "quote_hash": "412177563caa9ef75b59b584d2dee354b37b141c963d6bafeb7c95d217b29f8d"
+        },
+        {
+          "source_id": "FISRC-4b3af8138bc7fb99",
+          "source_url": "https://venturepost.co/enterprise/aegisai-funding",
+          "source_title": "AegisAI funding reaches $49 million after $36 million Series A | Venture Post",
+          "source_content_hash": "c1c81dabfa00282d",
+          "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
+          "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
+        }
+      ]
     },
     "INV-aa5d98b04b64fa": {
       "profile_type": "organization",
@@ -32534,45 +33340,6 @@
       ],
       "last_verified_at": "2026-09-25"
     },
-    "INV-6793571a77cee4": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Stepstone Group 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7dcdc22c0b1702bf"
-        },
-        {
-          "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-23bba75e0baa6d39"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-7dcdc22c0b1702bf",
-          "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
-          "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
-          "source_content_hash": "23145edb5fdd8d69",
-          "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
-          "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
-        },
-        {
-          "source_id": "FISRC-23bba75e0baa6d39",
-          "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
-          "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
-          "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
-          "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
-          "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
-        }
-      ],
-      "last_verified_at": "2026-09-25"
-    },
     "INV-2f98561b96d33e": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -33951,6 +34718,10 @@
         {
           "description": "融资来源记录：长亭科技 · 其他融资 · 2026-01-29 · 本轮参投 · 5亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4fe23845696fb5f2"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 首轮融资参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4a43446c1fdd8a31"
         }
       ],
       "profile_type": "organization",
@@ -33990,6 +34761,14 @@
           "source_content_hash": "b764c6638c521cc9",
           "quote": "投资人包括国家人工智能产业投资基金，上海国际集团旗下国方创新，北京市人工智能产业投资基金。",
           "quote_hash": "d4e8f7444a626c3a00cf012a0115c7c61c1fe62a41056d12dba1084ec55a7289"
+        },
+        {
+          "source_id": "FISRC-4a43446c1fdd8a31",
+          "source_url": "https://www.qbitai.com/2026/07/461220.html",
+          "source_title": "DeepSeek被曝主动叫停了第二轮融资签约",
+          "source_content_hash": "b0eb1d1fb5eb1976",
+          "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
+          "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
         }
       ],
       "last_verified_at": "2026-09-26"
@@ -38289,6 +39068,114 @@
       "coverage_note": "职位、学历和过往任职以Tracxn公司官网及年报为准；投资案例来自公司年报或融资来源记录，不能据此推断完整个人投资组合。",
       "last_verified_at": "2026-09-26"
     },
+    "INV-2528b6e46cf385": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "33N Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Osavul · A轮 · 2026-10-01 · 本轮领投 · €8.5m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4dc390804d079769"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-4dc390804d079769",
+          "source_url": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
+          "source_title": "敌对威胁预警初创公司Osavul融资850万欧元",
+          "source_content_hash": "e92078a4e61efac5b23ed5268dc390b10a085c84f6db716d6df83af919a7876c",
+          "quote": "The funding round in Osavul was led by 33N Ventures, the Europe-based global cybersecurity investor, with participation from Balnord, G+D Ventures and existing investor 42CAP.",
+          "quote_hash": "7210a96814a82e3e8392379255027cb96e86dd45ca3f5dd0e7390c7c154ac689"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-b56830007ae0ac": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Armilar 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FRANK · 轮次未披露 · 2026-10-01 · 本轮领投 · €2.9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-be723224266e1106"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-be723224266e1106",
+          "source_url": "https://tech.eu/2026/10/01/frank-raises-eur29m-to-cut-paperwork-for-insurance-brokers/",
+          "source_title": "FRANK 融资 290 万欧元，为保险经纪人减少文书工作",
+          "source_content_hash": "cacd42741e85d403c6fcd11db9badc6566248573b1ecab3a82a9f9efdbed8d64",
+          "quote": "led by Armilar and Start Ventures",
+          "quote_hash": "a3249d3c087957537aadbe9218a440edab2c91233bc8d32b1e01a7e0a22a8b32"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-77b9cf0430eb9d": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Balnord 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Osavul · A轮 · 2026-10-01 · 本轮参投 · €8.5m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4dc390804d079769"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-4dc390804d079769",
+          "source_url": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
+          "source_title": "敌对威胁预警初创公司Osavul融资850万欧元",
+          "source_content_hash": "e92078a4e61efac5b23ed5268dc390b10a085c84f6db716d6df83af919a7876c",
+          "quote": "The funding round in Osavul was led by 33N Ventures, the Europe-based global cybersecurity investor, with participation from Balnord, G+D Ventures and existing investor 42CAP.",
+          "quote_hash": "7210a96814a82e3e8392379255027cb96e86dd45ca3f5dd0e7390c7c154ac689"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-7b3a43acaab736": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "ComputeCore 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：PaleBlueDot AI · C轮 · 2026-10-01 · 本轮领投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05cde27c80650d6f"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-05cde27c80650d6f",
+          "source_url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
+          "source_title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
+          "source_content_hash": "6e420312a93cf1d9fb0c5dc88ec2b95cb97f03a273ccf1896a5f466aad867989",
+          "quote": "announced the completion of a $200 million Series C financing led by ComputeCore at a valuation of $3.2 billion",
+          "quote_hash": "26469562ac55e41f247fdf228ad23c6368d07e32f7617fc6c1a32d5af5a13b0a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-e4e9015f995531": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -38312,6 +39199,60 @@
           "source_content_hash": "f430492d981a90c520ea713271818099a7fc71620f0a2bccc8a967aed486c7c1",
           "quote": "Greycroft LP led the round, with participation from Craft Ventures Management, South Park Commons Management and other investors.",
           "quote_hash": "16e82e23b4fe6222edf4f1fa3be8ff168135fa6e47540af34ed00b3390db238e"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-36c8fb7786f984": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "G+D Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Osavul · A轮 · 2026-10-01 · 本轮参投 · €8.5m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4dc390804d079769"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-4dc390804d079769",
+          "source_url": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
+          "source_title": "敌对威胁预警初创公司Osavul融资850万欧元",
+          "source_content_hash": "e92078a4e61efac5b23ed5268dc390b10a085c84f6db716d6df83af919a7876c",
+          "quote": "The funding round in Osavul was led by 33N Ventures, the Europe-based global cybersecurity investor, with participation from Balnord, G+D Ventures and existing investor 42CAP.",
+          "quote_hash": "7210a96814a82e3e8392379255027cb96e86dd45ca3f5dd0e7390c7c154ac689"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-e7b87812531caa": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Gil Hirsch 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：enso · A轮 · 2026-10-01 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7877f8925288c583"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-7877f8925288c583",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+          "source_title": "RapidAPI 联合创始人为 AI 营销初创公司 enso 融资 1500 万美元",
+          "source_content_hash": "8b0c05f8724f799ab943d0fe1e4bfe0abd15ca3b1654ba0efc163f694f34efa5",
+          "quote": "with participation from existing investor NFX, Phenomen VC, and Gil Hirsch",
+          "quote_hash": "7d766cdfb29a3560b554293dcedb4e3e0bd63fd57881a27bc366adabf20d36cd"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -38409,6 +39350,33 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-0bcff5a03828ab": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "MoreTech Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：enso · A轮 · 2026-10-01 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7877f8925288c583"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-7877f8925288c583",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+          "source_title": "RapidAPI 联合创始人为 AI 营销初创公司 enso 融资 1500 万美元",
+          "source_content_hash": "8b0c05f8724f799ab943d0fe1e4bfe0abd15ca3b1654ba0efc163f694f34efa5",
+          "quote": "has raised $15 million in a Series A round led by MoreTech Ventures",
+          "quote_hash": "1c3e7099004b631f4b36a507df37a5b9764f8debf9a68fe77bec24ee047a5359"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-4a9074c8ced941": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -38436,6 +39404,60 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-58cc542f7bdb51": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Phenomen VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：enso · A轮 · 2026-10-01 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7877f8925288c583"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-7877f8925288c583",
+          "source_url": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+          "source_title": "RapidAPI 联合创始人为 AI 营销初创公司 enso 融资 1500 万美元",
+          "source_content_hash": "8b0c05f8724f799ab943d0fe1e4bfe0abd15ca3b1654ba0efc163f694f34efa5",
+          "quote": "with participation from existing investor NFX, Phenomen VC, and Gil Hirsch",
+          "quote_hash": "7d766cdfb29a3560b554293dcedb4e3e0bd63fd57881a27bc366adabf20d36cd"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-18bc4af86c2b1f": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "SIVentures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Deepslate · 种子轮 · 2026-10-01 · 本轮参投 · €7.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57c1c364a7f270ee"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-57c1c364a7f270ee",
+          "source_url": "https://tech.eu/2026/10/01/deepslate-secures-eur77m-for-its-european-voice-ai-platform/",
+          "source_title": "Deepslate 为其欧洲语音 AI 平台获得 770 万欧元融资",
+          "source_content_hash": "180703c997b2068a2719adcc38dc12c06d7e36623ac3ba5d8b2ff7a0d0f4c3f1",
+          "quote": "with participation from Alstin Capital, existing investor SIVentures and several business angels",
+          "quote_hash": "ea2ff270583187ae37621658f3b47ca9e00f5c053cdcd520f4f68fa7d5e6332a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-67baa04f73dfa6": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -38459,6 +39481,33 @@
           "source_content_hash": "f430492d981a90c520ea713271818099a7fc71620f0a2bccc8a967aed486c7c1",
           "quote": "Greycroft LP led the round, with participation from Craft Ventures Management, South Park Commons Management and other investors.",
           "quote_hash": "16e82e23b4fe6222edf4f1fa3be8ff168135fa6e47540af34ed00b3390db238e"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-7b6b1996be939c": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Start Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：FRANK · 轮次未披露 · 2026-10-01 · 本轮领投 · €2.9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-be723224266e1106"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-be723224266e1106",
+          "source_url": "https://tech.eu/2026/10/01/frank-raises-eur29m-to-cut-paperwork-for-insurance-brokers/",
+          "source_title": "FRANK 融资 290 万欧元，为保险经纪人减少文书工作",
+          "source_content_hash": "cacd42741e85d403c6fcd11db9badc6566248573b1ecab3a82a9f9efdbed8d64",
+          "quote": "led by Armilar and Start Ventures",
+          "quote_hash": "a3249d3c087957537aadbe9218a440edab2c91233bc8d32b1e01a7e0a22a8b32"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -38490,6 +39539,33 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-3e94961ca0556d": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Backed VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51e4efce7466f2fd"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
+          "source_title": "Zenithon Raises $10M For AI Engineering Models",
+          "source_content_hash": "59434f301bde0537",
+          "quote": "The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-08a966cfd023b0": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -38516,6 +39592,33 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "INV-707de85d8296c8": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Chetan Jain of Pharma Dose 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Vytalyou · Pre-A轮 · 2026-09-30 · 本轮参投 · Rs 9 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c8567b52c3776e28"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c8567b52c3776e28",
+          "source_url": "https://entrackr.com/snippets/longevity-startup-vytalyou-raises-rs-9-cr-in-pre-series-a-round-12593640",
+          "source_title": "长寿初创公司Vytalyou在pre-Series A轮融资中筹集了9 Cr卢比",
+          "source_content_hash": "5774882366d2c4f5746c8ae784bb63e142a0c621e5468f9ad8dda965d9020199",
+          "quote": "has raised Rs 9 crore in a pre-Series A round from Chetan Jain of Pharma Dose and Ratan Jain of Venus Industries",
+          "quote_hash": "00ce3caab4acf3141f426f727fe18b99a396611d1121c6b2e8c0624d6beb769d"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
     },
     "INV-95fb054e9cde7e": {
       "profile_type": "organization",
@@ -38556,6 +39659,33 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-d1200e640d40a4": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Iberis Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Traveltech Tryp.com · 轮次未披露 · 2026-09-30 · 本轮参投 · €1.9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ea432ae33551275b"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-ea432ae33551275b",
+          "source_url": "https://tech.eu/2026/09/30/from-six-engineering-students-to-10m-users-trypcom-raises-eur19m/",
+          "source_title": "从六名工程专业学生到1000万用户：Tryp.com 融资190万欧元",
+          "source_content_hash": "6ce0e21d241f1e9e80feafacbbe6307b89a217ea1d8a9a2632bb4203d6297558",
+          "quote": "Iberis Capital, which led Tryp.com’s previous round, also participated alongside angel investors.",
+          "quote_hash": "a88646d7b25948a6efdaa69be51ee0310f5a843fc7ff130dcf5c9c443ccc52fc"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-836fa036aff702": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -38582,6 +39712,60 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "INV-dbfb666897dbfa": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Lunar Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51e4efce7466f2fd"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
+          "source_title": "Zenithon Raises $10M For AI Engineering Models",
+          "source_content_hash": "59434f301bde0537",
+          "quote": "The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-dec28c61ebf7c7": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "MMC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51e4efce7466f2fd"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
+          "source_title": "Zenithon Raises $10M For AI Engineering Models",
+          "source_content_hash": "59434f301bde0537",
+          "quote": "The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
     },
     "INV-9755f7c5339bc4": {
       "profile_type": "unverified",
@@ -38649,6 +39833,60 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-55aaa9c77589cc": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Point Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Traveltech Tryp.com · 轮次未披露 · 2026-09-30 · 本轮领投 · €1.9 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ea432ae33551275b"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-ea432ae33551275b",
+          "source_url": "https://tech.eu/2026/09/30/from-six-engineering-students-to-10m-users-trypcom-raises-eur19m/",
+          "source_title": "从六名工程专业学生到1000万用户：Tryp.com 融资190万欧元",
+          "source_content_hash": "6ce0e21d241f1e9e80feafacbbe6307b89a217ea1d8a9a2632bb4203d6297558",
+          "quote": "Traveltech Tryp.com has raised €1.9 million in funding in a round led by Point Capital Partners.",
+          "quote_hash": "b2322fd58a6df261cc415512bc8de9573a9fee6dc2253ab25110db7e86a5d76e"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-ed554af356c16f": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Ratan Jain of Venus Industries 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Vytalyou · Pre-A轮 · 2026-09-30 · 本轮参投 · Rs 9 crore。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c8567b52c3776e28"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-c8567b52c3776e28",
+          "source_url": "https://entrackr.com/snippets/longevity-startup-vytalyou-raises-rs-9-cr-in-pre-series-a-round-12593640",
+          "source_title": "长寿初创公司Vytalyou在pre-Series A轮融资中筹集了9 Cr卢比",
+          "source_content_hash": "5774882366d2c4f5746c8ae784bb63e142a0c621e5468f9ad8dda965d9020199",
+          "quote": "has raised Rs 9 crore in a pre-Series A round from Chetan Jain of Pharma Dose and Ratan Jain of Venus Industries",
+          "quote_hash": "00ce3caab4acf3141f426f727fe18b99a396611d1121c6b2e8c0624d6beb769d"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-e8101ad099a805": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -38687,6 +39925,60 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "INV-8dc5e2ac3a2372": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Seraphim 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51e4efce7466f2fd"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
+          "source_title": "Zenithon Raises $10M For AI Engineering Models",
+          "source_content_hash": "59434f301bde0537",
+          "quote": "The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-ac9268f0f92f39": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "SOSV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Zenithon · 种子轮 · 2026-09-30 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51e4efce7466f2fd"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-51e4efce7466f2fd",
+          "source_url": "https://seraphim.vc/news/zenithon-raises-10m-ai-world-models-engineering-physics/",
+          "source_title": "Zenithon Raises $10M For AI Engineering Models",
+          "source_content_hash": "59434f301bde0537",
+          "quote": "The round was led by Backed VC with participation from Seraphim, Lunar Ventures, MMC, SOSV and more.",
+          "quote_hash": "4254c68c7c5a2d6453724232835c1fd6c67ca1b6edb33c677d6078e4b398539a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
     },
     "INV-8cbd8544b83d9e": {
       "profile_type": "unverified",
@@ -38862,6 +40154,99 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-de763b3678fae6": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "AllianceBernstein 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "AllianceBernstein, Baron Capital and J.P. Morgan also joined the round as new investors.",
+          "quote_hash": "e47b49f692200b2912d7b385c181838dfe768e51836a4dc7381dbad873224021"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-5a91e8fb7e47f9": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Alter Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
+          "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-dbcad58ec15837": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Amplify 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮联合领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        },
+        {
+          "description": "融资来源记录：Temporal · 历史轮次未披露 · 历史轮次投资者。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf83d78a216a5edf"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
+          "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+        },
+        {
+          "source_id": "FISRC-cf83d78a216a5edf",
+          "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+          "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+          "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+          "quote": "Returning investors include a16z, Sequoia, Index, GIC, Sapphire Ventures, and Amplify.",
+          "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-1d636b76f59ac9": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -38978,6 +40363,33 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "INV-e623e3951baee9": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "J.P. Morgan 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "AllianceBernstein, Baron Capital and J.P. Morgan also joined the round as new investors.",
+          "quote_hash": "e47b49f692200b2912d7b385c181838dfe768e51836a4dc7381dbad873224021"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
     },
     "INV-ef9775754a8d09": {
       "profile_type": "unverified",
@@ -47241,6 +48653,10 @@
         {
           "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮参投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c224adac23aa7c1e"
+        },
+        {
+          "description": "融资来源记录：SiMa.ai · 历史轮次未披露 · 既有投资者，本轮继续参与。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-284ec16980778f24"
         }
       ],
       "contacts": [],
@@ -47252,6 +48668,14 @@
           "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
           "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
           "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
+        },
+        {
+          "source_id": "FISRC-284ec16980778f24",
+          "source_url": "https://www.cxodigitalpulse.com/physical-ai-company-sima-ai-raises-150-mn-in-series-c-round/",
+          "source_title": "Physical AI Company SiMa.ai Raises $150 Mn in Series C Round",
+          "source_content_hash": "ba588b110e80a2c8",
+          "quote": "Existing investors Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group also participated in the round.",
+          "quote_hash": "58c100fd471e1350d829e77117467236d5dbb132f5843d37304bbd3202a897fc"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -60931,158 +62355,6 @@
       "last_verified_at": "2026-09-28",
       "identity_status": "verified"
     },
-    "INV-eb42bbe79e1bcf": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "last_verified_at": "2026-09-28",
-      "coverage_note": "官网首页展示的首次投资比例、IPO 数量和营收阶段占比均为 Foundation Capital 自述，不是审计投资回报或完整投资组合；公司轮次总额不代表其单笔出资。投资团队公开邮箱按其个人官网页面用途标注。",
-      "summary": "Foundation Capital 是一家美国早期风险投资机构，官网称其已支持创业者约 30 年，并聚焦企业软件、金融科技与加密技术，围绕 AI 和区块链建立投资主题。官网当前展示的首次投资比例、IPO 数量及营收阶段占比均为机构自述指标；本库另记录其参与 AegisAI 融资的公开案例，不代表基金回报。",
-      "facts": [
-        {
-          "field": "operating_history",
-          "label": "官网对机构历史的描述",
-          "value": "官网在 2026-09-28 核验时称已支持创业者 30 年；此为官网当前年数表述，不据此推断精确成立年份。",
-          "source_id": "foundation_home"
-        },
-        {
-          "field": "investment_focus",
-          "label": "官网列示的投资领域",
-          "value": [
-            "企业软件",
-            "金融科技",
-            "加密技术"
-          ],
-          "source_id": "foundation_practices"
-        },
-        {
-          "field": "technology_themes",
-          "label": "官网列示的技术主题",
-          "value": [
-            "人工智能",
-            "区块链"
-          ],
-          "source_id": "foundation_practices"
-        },
-        {
-          "field": "early_stage_approach",
-          "label": "早期投资方式",
-          "value": "官网强调没有过早的阶段，并称其可在创业构想阶段与创始人合作。",
-          "source_id": "foundation_early_stage"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "截至 2026-09-28 官网首页展示：其约五分之四的投资案例中是公司的首位投资者、组合中有 37 家 IPO、77% 的投资对象在投资时尚未产生营收。以上为机构自述的组合指标，不等同于现金回报率。",
-          "source_id": "foundation_metrics"
-        },
-        {
-          "description": "融资报道将 Foundation Capital 列为 AegisAI 2026 年 7 月 3600 万美元 A 轮既有投资方之一；3600 万美元是全轮规模，未披露该机构单独出资额。",
-          "source_id": "FISRC-7a2e33bd2177a4c7"
-        },
-        {
-          "description": "融资来源记录：AegisAI · A轮 · 2026-07-23 · 既有投资方，本轮参投 · $36 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4b3af8138bc7fb99"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "机构官方网站",
-          "value": "Foundation Capital",
-          "url": "https://foundationcapital.com/",
-          "source_id": "foundation_home"
-        },
-        {
-          "kind": "email",
-          "label": "投资团队公开邮箱（Steve Vassallo，General Partner）",
-          "value": "svassallo@foundationcap.com",
-          "url": "https://foundationcapital.com/team-members/steve-vassallo",
-          "source_id": "foundation_steve"
-        },
-        {
-          "kind": "address",
-          "label": "Palo Alto 办公室",
-          "value": "550 High St, 3rd Floor, Palo Alto, CA 94301",
-          "url": "https://foundationcapital.com/",
-          "source_id": "foundation_offices"
-        },
-        {
-          "kind": "address",
-          "label": "San Francisco 办公室",
-          "value": "2 Shaw Alley, 4th Floor, San Francisco, CA 94105",
-          "url": "https://foundationcapital.com/",
-          "source_id": "foundation_offices"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "foundation_home",
-          "source_url": "https://foundationcapital.com/",
-          "source_title": "Foundation Capital",
-          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
-          "quote": "For thirty years, we’ve backed extraordinary founders from day zero.",
-          "quote_hash": "3c4a07be639da7ea75db0e4b4e9ce404dde2e1e2737fb1a58519bfd95855fe20"
-        },
-        {
-          "source_id": "foundation_metrics",
-          "source_url": "https://foundationcapital.com/",
-          "source_title": "Foundation Capital",
-          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
-          "quote": "4 of 5 times we’re a company’s first investor; 37 IPOs; 77% of investments are pre-revenue.",
-          "quote_hash": "a6199957e68df408e9a9968a2582223aafbab9f7b611b844e205268eb2908cad"
-        },
-        {
-          "source_id": "foundation_practices",
-          "source_url": "https://foundationcapital.com/",
-          "source_title": "Foundation Capital",
-          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
-          "quote": "Our three practice areas — enterprise, fintech and crypto — are where we put that conviction to work.",
-          "quote_hash": "1e5c08481c3fddd9b846a85688d4e5faa3ec73b8c07f9db023fa4616100dab9c"
-        },
-        {
-          "source_id": "foundation_early_stage",
-          "source_url": "https://foundationcapital.com/",
-          "source_title": "Foundation Capital",
-          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
-          "quote": "No such thing as “too early”. For us, it’s a way of working.",
-          "quote_hash": "efd7309d5a5016a7e20c77a3a61d77c86e1f9d9624a1750c618614209a62bd77"
-        },
-        {
-          "source_id": "foundation_offices",
-          "source_url": "https://foundationcapital.com/",
-          "source_title": "Foundation Capital",
-          "source_content_hash": "c0420828619a1419fe6f2b1b13a16d47263e3ddd72c5676971ab1f4a3736e3bc",
-          "quote": "550 High St, 3rd Floor Palo Alto, CA 94301; San Francisco 2 Shaw Alley #4th San Francisco, CA 94105.",
-          "quote_hash": "787dbb93f61311c23c05c1fd98c9915dd2ae93e86b760f66ab97a1b932e2e215"
-        },
-        {
-          "source_id": "foundation_steve",
-          "source_url": "https://foundationcapital.com/team-members/steve-vassallo",
-          "source_title": "Steve Vassallo - Foundation Capital",
-          "source_content_hash": "20b47edf2d79ec29d3989bb29d7420dc8c373f8f258c5bcb6387f2e77a4e4f9f",
-          "quote": "Steve Vassallo General Partner Contact svassallo@foundationcap.com.",
-          "quote_hash": "9368212a1af114faf34118d6127dac7e69f2791087e0b9a09507f713aae4fe5b"
-        },
-        {
-          "source_id": "FISRC-7a2e33bd2177a4c7",
-          "source_url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/",
-          "source_title": "由前谷歌安全高管创立的AegisAI获3600万美元融资，用于阻止AI驱动的鱼叉式网络钓鱼",
-          "source_content_hash": "afc63d021b3c19fe",
-          "quote": "with participation from existing backers Accel and Foundation Capital",
-          "quote_hash": "135a668db359733c9db451ba4077fe28839895951e03dbc7c09e79108f2c7770"
-        },
-        {
-          "source_id": "FISRC-4b3af8138bc7fb99",
-          "source_url": "https://venturepost.co/enterprise/aegisai-funding",
-          "source_title": "AegisAI funding reaches $49 million after $36 million Series A | Venture Post",
-          "source_content_hash": "c1c81dabfa00282d",
-          "quote": "Accel Partners and Foundation Capital, both existing investors, also participating",
-          "quote_hash": "8c44a7cb3e99daf18aa6b5433123c5e8d8ba540c0a1c5c34d7f5224f0d10d221"
-        }
-      ]
-    },
     "INV-adcfa4feb7a7e4": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -62468,174 +63740,6 @@
         }
       ],
       "last_verified_at": "2026-09-25"
-    },
-    "INV-df1a4c6fb790e6": {
-      "summary": "Elevation Capital 是一家投资印度初创企业的风险投资机构，官网覆盖 Seed、Series A、Growth 与 Public 阶段，并列出消费科技、金融科技、医疗、消费品牌、企业 AI 与前沿科技等方向。官网团队页列 Ravi Adusumalli 与 Mukul Arora 为共同管理合伙人。",
-      "facts": [
-        {
-          "field": "investment_stages",
-          "label": "官网组合阶段",
-          "value": [
-            "Seed",
-            "Series A",
-            "Growth",
-            "Public"
-          ],
-          "source_id": "elevation_portfolio"
-        },
-        {
-          "field": "sectors",
-          "label": "官网列示投资领域",
-          "value": [
-            "消费科技",
-            "金融科技与金融服务",
-            "医疗健康",
-            "消费品牌",
-            "企业AI",
-            "前沿科技"
-          ],
-          "source_id": "elevation_home"
-        },
-        {
-          "field": "leadership",
-          "label": "共同管理合伙人",
-          "value": [
-            "Ravi Adusumalli",
-            "Mukul Arora"
-          ],
-          "source_id": "elevation_leadership"
-        },
-        {
-          "field": "experience",
-          "label": "团队经验",
-          "value": "官网称投资团队拥有超过20年的经验；其官网叙述属于机构自述。",
-          "source_id": "elevation_experience"
-        }
-      ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "Elevation 官网自报曾在 Seed/Series A 阶段与 13 家后来成为独角兽的企业合作；该数字为机构口径。",
-          "source_id": "elevation_track"
-        },
-        {
-          "description": "Elevation 官网自报组合企业创造 750 亿美元、约占印度科技市场总市值 25%；属于机构网站披露，非独立审计数据。",
-          "source_id": "elevation_track"
-        },
-        {
-          "description": "融资披露案例：Reo.Dev 于 2026-07-16 宣布 1130 万美元 A 轮，Elevation Capital 为领投方；不代表完整组合或基金回报。",
-          "source_id": "FISRC-ca3d343739410c39"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "Elevation Capital",
-          "url": "https://www.elevationcapital.com/",
-          "source_id": "elevation_experience"
-        },
-        {
-          "kind": "email",
-          "label": "官网公开联系邮箱",
-          "value": "community@elevationcapital.com",
-          "url": "https://www.elevationcapital.com/team",
-          "source_id": "elevation_email"
-        },
-        {
-          "kind": "address",
-          "label": "Delhi-NCR 办公室",
-          "value": "Unit No. 101A, First Floor, One Horizon Centre, Golf Course Rd, DLF Phase 5, Sector 43, Gurugram, Haryana 122002",
-          "url": "https://www.elevationcapital.com/team",
-          "source_id": "elevation_delhi"
-        },
-        {
-          "kind": "address",
-          "label": "Bengaluru 办公室",
-          "value": "9th Floor, Unit No. 902 and 903, Campus 31, RMZ Ecoworld, Sarjapur-Marathahalli, Outer Ring Road, Bellandur, Bengaluru, 560103",
-          "url": "https://www.elevationcapital.com/team",
-          "source_id": "elevation_bengaluru"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "elevation_home",
-          "source_url": "https://www.elevationcapital.com/",
-          "source_title": "Elevation – Elevation Capital",
-          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
-          "quote": "Consumer Tech Fintech & Financial Services Healthcare Consumer Brands Enterprise AI Frontier Tech.",
-          "quote_hash": "96cf2f4f7030bb539e5087cf2564cb77170c7ef23367c600adeaaa62c521129a"
-        },
-        {
-          "source_id": "elevation_experience",
-          "source_url": "https://www.elevationcapital.com/",
-          "source_title": "Elevation – Elevation Capital",
-          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
-          "quote": "Our investment team, with over 20 years of expertise, inspires and shapes possibilities with you.",
-          "quote_hash": "5eaa59857ad205f4ca0cd28b11e8d2d084fcf9114ccf900ba78e0b4ac334041e"
-        },
-        {
-          "source_id": "elevation_leadership",
-          "source_url": "https://www.elevationcapital.com/team",
-          "source_title": "Team – Elevation Capital",
-          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
-          "quote": "Ravi Adusumalli Co-Managing Partner; Mukul Arora Co-Managing Partner.",
-          "quote_hash": "44d9c1dbda6e5b4be4d6ca1a49d9e7d59d632825be5c0025ec0ccf302d6f06f1"
-        },
-        {
-          "source_id": "elevation_email",
-          "source_url": "https://www.elevationcapital.com/team",
-          "source_title": "Team – Elevation Capital",
-          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
-          "quote": "community@elevationcapital.com",
-          "quote_hash": "1f70fa33d8205f78a4eeabf3c4ef659e4575333947005fd38bc55afb6c0bd075"
-        },
-        {
-          "source_id": "elevation_delhi",
-          "source_url": "https://www.elevationcapital.com/team",
-          "source_title": "Team – Elevation Capital",
-          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
-          "quote": "Unit No. 101A, First Floor, One Horizon Centre, Golf Course Rd, DLF Phase 5, Sector 43, Gurugram, Haryana 122002.",
-          "quote_hash": "6fd1f646231a65c39ce9be62b0501bf121688d9899af132d3722faa154f1dc6f"
-        },
-        {
-          "source_id": "elevation_bengaluru",
-          "source_url": "https://www.elevationcapital.com/team",
-          "source_title": "Team – Elevation Capital",
-          "source_content_hash": "0df989d7064299fdb101f52b4ca186e4708779f61781ffe64c78c5dfd73867c8",
-          "quote": "9th Floor, Unit No. 902 and 903, Campus 31, RMZ Ecoworld, Sarjapur-Marathahalli, Outer Ring Road, Bellandur, Bengaluru, 560103.",
-          "quote_hash": "78856e687438f5babea22a64e7ddc5ebb9bf2cb016b2065159ce0e35aeeb3b9e"
-        },
-        {
-          "source_id": "elevation_portfolio",
-          "source_url": "https://www.elevationcapital.com/portfolio",
-          "source_title": "Portfolio – Elevation Capital",
-          "source_content_hash": "9f36ec6a6aa0cfd897c9fa3753f452d2f3f43c4bd620aab3d57b9a5e364b2df4",
-          "quote": "Stage Seed Series A Growth Public.",
-          "quote_hash": "f6532f8e82f28286402a97cf654757a8da1ff814704c3d42b67c5ddf78b2e6d1"
-        },
-        {
-          "source_id": "elevation_track",
-          "source_url": "https://www.elevationcapital.com/",
-          "source_title": "Elevation – Elevation Capital",
-          "source_content_hash": "6e82199a4a90dfc23df7a78d8c1354355d596822e71ef833826829aacf3a3970",
-          "quote": "We've partnered with 13 unicorns from Seed/Series A stage. Our portfolio companies have created $75B (25%) of India’s total tech market cap.",
-          "quote_hash": "494e6822483a1042a4055e708a31085b4017cc8a05f59ee291cbab2c2f5ced92"
-        },
-        {
-          "source_id": "FISRC-ca3d343739410c39",
-          "source_url": "https://www.reo.dev/blog/reo-dev-series-a",
-          "source_title": "Reo.Dev 完成 1130 万美元 A 轮融资，扩大面向工程团队的 AI 信号服务",
-          "source_content_hash": "ff5549c1a6dc8b11",
-          "quote": "We've raised $11.3 million in Series A, led by Elevation Capital",
-          "quote_hash": "1958df38fe8add9c7b791aaf8ee8bfcf03bb881487477007ba296cfe6eee47ca"
-        }
-      ],
-      "last_verified_at": "2026-09-28",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "背景、策略、人员及联系渠道按官网或官方公开页面整理；业绩数字标为机构自述，融资案例仅代表本库核验到的公开披露，不代表完整投资组合或基金回报。"
     },
     "INV-8321cf0a8dd7f4": {
       "profile_type": "unverified",
@@ -76510,127 +77614,6 @@
       ],
       "last_verified_at": "2026-09-28"
     },
-    "INV-cdb3d95c05f469": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "投资阶段、行业、地域与初始投资金额来自 Alstin Capital 官网，团队经历数字是机构官网自述的合并历史，未提供统计期间，不能视为单一基金回报或当前基金业绩。NeuralTrust 披露的 €17.2m 是整轮融资金额，不是 Alstin Capital 的单独出资额。",
-      "summary": "Alstin Capital 是一家专注欧洲 B2B 软件企业的风险投资机构，官网列出晚期种子轮和 A 轮阶段，初始投资通常为 200 万至 800 万欧元。其关注金融科技、保险科技、监管科技、网络安全和气候科技等领域。官网团队页列出 Carsten Maschmeyer、Dr. Andreas Schenk 与 Alexander Meyer-Scharenberg 等合伙人。",
-      "facts": [
-        {
-          "field": "sector_focus",
-          "label": "投资主题",
-          "value": "B2B 软件。",
-          "source_id": "alstin_strategy"
-        },
-        {
-          "field": "investment_stage",
-          "label": "投资阶段",
-          "value": "晚期种子轮 / A 轮。",
-          "source_id": "alstin_strategy"
-        },
-        {
-          "field": "initial_investment",
-          "label": "官网披露的初始投资额",
-          "value": "EUR 2–8 million。",
-          "source_id": "alstin_strategy"
-        },
-        {
-          "field": "sector_focus",
-          "label": "官网列示领域",
-          "value": [
-            "金融科技",
-            "保险科技",
-            "监管科技",
-            "网络安全",
-            "气候科技及其他"
-          ],
-          "source_id": "alstin_strategy"
-        },
-        {
-          "field": "geography",
-          "label": "投资地域",
-          "value": "欧洲。",
-          "source_id": "alstin_strategy"
-        },
-        {
-          "field": "leadership",
-          "label": "官网当前团队",
-          "value": [
-            "Carsten Maschmeyer — Managing Partner",
-            "Dr. Andreas Schenk — Partner",
-            "Alexander Meyer-Scharenberg — Partner",
-            "Benjamin Kleinschnitz — Principal",
-            "Laura Keilhofer — Investment Manager",
-            "Nicolai Bastian — Senior Investment Manager"
-          ],
-          "source_id": "alstin_team"
-        }
-      ],
-      "milestones": [],
-      "experience_summary": "Alstin 官网称团队累计交易履历超过 300 笔、后续融资超过 150 笔、退出 25 次，并具备 B2B 销售和 B2B 软件经验。该数字为团队合并历史，官网未在此处披露统计区间或基金回报口径。",
-      "track_record": [
-        {
-          "description": "官网自述：Alstin 团队合并历史包括超过 300 笔交易、超过 150 笔后续融资和 25 次退出；统计区间和各基金归属未注明，不等于单一基金回报。",
-          "source_id": "alstin_team"
-        },
-        {
-          "description": "融资记录：NeuralTrust · 种子轮 · 2026-06-17 · 领投；公开融资额为 €17.2 million（约 USD 20 million），未披露 Alstin Capital 单独出资额。此为本库收录案例，不代表完整投资组合。",
-          "source_id": "FISRC-7a0d2741d3dddcef"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "Alstin Capital",
-          "url": "https://alstin.capital/",
-          "source_id": "alstin_strategy"
-        },
-        {
-          "kind": "contact_form",
-          "label": "官网联系与项目提交页面",
-          "value": "Alstin Capital contact page",
-          "url": "https://alstin.capital/contact",
-          "source_id": "alstin_contact"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "alstin_strategy",
-          "source_url": "https://alstin.capital/",
-          "source_title": "Alstin Capital - Alstin goes all-in.",
-          "source_content_hash": "41e7763256690394894619a7a07512a909945197dedde34543d87d548197bb44",
-          "quote": "B2B Software",
-          "quote_hash": "6c26897c00e92397ebc597d71a2ee62c441ed9cad537e9fefdf8097fcefffe83"
-        },
-        {
-          "source_id": "alstin_team",
-          "source_url": "https://alstin.capital/team",
-          "source_title": "Our Team – Alstin Capital",
-          "source_content_hash": "3aefd45f51032e97c51171b2a0feec534d42c35f62cbdd24829d3c86bd23f2c1",
-          "quote": "The Alstin team has a combined deal track record of >300 transactions, >150 follow-on financings and 25 exits.",
-          "quote_hash": "29fc970575aa24d8ba686c34262c320cc36e9305b913f5f74b7488a1d62ec5a9"
-        },
-        {
-          "source_id": "alstin_contact",
-          "source_url": "https://alstin.capital/contact",
-          "source_title": "Contact – Alstin Capital",
-          "source_content_hash": "3b298c7c4f0443542a73a617daada9dee63385bf29dcad384d724172b379fc30",
-          "quote": "Contact",
-          "quote_hash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e"
-        },
-        {
-          "source_id": "FISRC-7a0d2741d3dddcef",
-          "source_url": "https://www.eu-startups.com/2026/06/barcelona-based-neuraltrust-raises-e17-2-million-to-secure-and-govern-enterprise-ai-agents/",
-          "source_title": "总部位于巴塞罗那的 NeuralTrust 融资 1720 万欧元，用于保障和治理企业 AI 智能体",
-          "source_content_hash": "7a4bd12b025049d2",
-          "quote": "The round was led by Alstin Capital",
-          "quote_hash": "03382ccc1da206b412bc52ae73b589536674279bf9f3ccebc0a240532adb91d0"
-        }
-      ],
-      "last_verified_at": "2026-09-27"
-    },
     "INV-ec89edf0db062b": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -79809,194 +80792,6 @@
       ],
       "last_verified_at": "2026-09-27"
     },
-    "INV-b589b7440c714c": {
-      "summary": "Baron Capital 是成立于 1982 年、专注长期成长型股票与成长股权策略的资产管理机构。公司官网披露截至 2026-06-30 管理资产 697 亿美元，且称自 1992 年以来为投资者实现与未实现收益合计 712 亿美元；这些是公司自述口径，不代表单一基金表现。本库的 SpaceX IPO 记录来自二手报道，出资主体在报道中指向 Ron Baron 个人或 Baron Capital，尚未核实到具体基金；750 亿美元为整笔 IPO 披露口径而非 Baron 单笔金额。",
-      "facts": [
-        {
-          "field": "organization_type",
-          "label": "机构类型",
-          "value": "成长股权与长期成长型股票投资管理机构",
-          "source_id": "baron_about"
-        },
-        {
-          "field": "founded",
-          "label": "成立时间",
-          "value": "1982 年",
-          "source_id": "baron_history"
-        },
-        {
-          "field": "investment_approach",
-          "label": "投资理念",
-          "value": "长期投资具有持续成长潜力、耐久竞争优势和优秀管理团队的企业",
-          "source_id": "baron_strategy"
-        },
-        {
-          "field": "aum",
-          "label": "管理资产规模",
-          "value": "697 亿美元（截至 2026-06-30；公司自述，包含客户及自有账户）",
-          "source_id": "baron_about"
-        },
-        {
-          "field": "realized_unrealized_gains",
-          "label": "累计实现及未实现收益",
-          "value": "712 亿美元（自 1992 年以来，截至 2026-06-30；公司披露，非单只基金收益）",
-          "source_id": "baron_message_metrics"
-        },
-        {
-          "field": "leadership",
-          "label": "创始人、CEO 与投资组合经理",
-          "value": "Ronald Baron",
-          "source_id": "baron_people"
-        },
-        {
-          "field": "senior_team",
-          "label": "主要管理团队",
-          "value": [
-            "David Baron、Michael Baron — Co-Presidents",
-            "Cliff Greenberg、Andrew Peck — Co-CIOs"
-          ],
-          "source_id": "baron_message"
-        }
-      ],
-      "milestones": [
-        {
-          "date": "1982",
-          "description": "Baron Capital 官网将机构起源记为 1982 年。",
-          "source_id": "baron_about"
-        }
-      ],
-      "track_record": [
-        {
-          "description": "公司 2026 年第二季度公开信称，截至 2026-06-30，SpaceX 是 Baron Capital 最大持仓，占公司约 690 亿美元 AUM 的略高于 30%；这是公司整体口径，不能据此推断所有 Baron 基金持有相同比例。",
-          "source_id": "baron_q2_letter"
-        },
-        {
-          "description": "Motley Fool 的报道标题将 IPO 投入归于 Ron Baron，并称金额为 10 亿美元；该报道未在本档案中证明具体投资工具或基金载体。",
-          "source_id": "FISRC-70b91157a7013cad"
-        },
-        {
-          "description": "另一则 syndicated 报道称 Baron Capital 在 SpaceX IPO 提交了 10 亿美元订单，但没有披露最终配售或具体基金；该订单金额与融资数据库记录的 750 亿美元整笔交易金额不可混为一谈。",
-          "source_id": "FISRC-9adefaf867df19d6"
-        }
-      ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "机构官网",
-          "value": "Baron Capital",
-          "url": "https://www.baroncapitalgroup.com/",
-          "source_id": "baron_contact"
-        },
-        {
-          "kind": "email",
-          "label": "机构总联系邮箱",
-          "value": "info@baroncapitalgroup.com",
-          "url": "https://www.baroncapitalgroup.com/",
-          "source_id": "baron_contact"
-        },
-        {
-          "kind": "phone",
-          "label": "电话",
-          "value": "+1 212-583-2000",
-          "url": "https://www.baroncapitalgroup.com/",
-          "source_id": "baron_contact"
-        },
-        {
-          "kind": "address",
-          "label": "地址",
-          "value": "767 Fifth Avenue, New York, NY 10153",
-          "url": "https://www.baroncapitalgroup.com/",
-          "source_id": "baron_contact"
-        }
-      ],
-      "sources": [
-        {
-          "source_id": "baron_about",
-          "source_url": "https://www.baroncapitalgroup.com/about-us",
-          "source_title": "Growth Equity Specialists | Baron Funds",
-          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
-          "quote": "Baron Capital's assets under management have grown from $100 million in 1992 to $69.7* billion as of June 30, 2026.",
-          "quote_hash": "d856ea7c928c8b81b75570b8f80b9c0fd5efd12c05f23d7c18fbcce45d3e08c4"
-        },
-        {
-          "source_id": "baron_people",
-          "source_url": "https://www.baroncapitalgroup.com/our-people",
-          "source_title": "We Believe People Are the Drivers of a Successful Business | Baron Funds",
-          "source_content_hash": "b2d80291c5bccf2153589ce3e54f7afd1e86edd5617927e2b03810dbfe96796d",
-          "quote": "Ronald Baron Founder, CEO, and Portfolio Manager",
-          "quote_hash": "2204a2c077f81f12d1e65caaed01c166bbf53a867910ea8e5d5d7466a93853e2"
-        },
-        {
-          "source_id": "baron_message",
-          "source_url": "https://www.baroncapitalgroup.com/article/message-from-ron-baron",
-          "source_title": "A Message from Ron | Baron Funds",
-          "source_content_hash": "4755855dd9206d6bd54d59fea1ca7f0779f037f9f43fd3b0396bb28f04e7b6f1",
-          "quote": "As the Firm continues to grow, our next generation of portfolio managers and executives—led by my sons, Co-Presidents David and Michael, each with more than 23 years of experience, and our Co-CIOs Cliff Greenberg and Andrew Peck, with 42 and 30 years of experience, respectively—are all assuming more responsibilities for our businesses.",
-          "quote_hash": "81fef159f5b1e9eae4da99a94350c2ef5061dd23261ac6503b99c41bc00a1741"
-        },
-        {
-          "source_id": "baron_q2_letter",
-          "source_url": "https://www.baroncapitalgroup.com/article/letter-ron-q2-2026",
-          "source_title": "Letter from Ron | Q2 2026 | Baron Funds",
-          "source_content_hash": "ef31cfd075dd416419508bfe9f19f0d416de9fb9305114f61e688445d368e1ef",
-          "quote": "SpaceX is Baron Capital's largest holding and represents a little more than 30% of our Firm's $69 billion assets under management on June 30.",
-          "quote_hash": "bfe659906072e7063a1a57b7bb1c3c672ca3132e1f139e5287533deb285dd753"
-        },
-        {
-          "source_id": "baron_contact",
-          "source_url": "https://www.baroncapitalgroup.com/",
-          "source_title": "Baron Capital - Asset Management for Growth Equity Investments",
-          "source_content_hash": "2ad247031282fff9185e7506e18113caaf2818a444c60aa64f89012eab442d04",
-          "quote": "Phone 212-583-2000; Email info@baroncapitalgroup.com; Address 767 Fifth Avenue, New York, NY 10153.",
-          "quote_hash": "1aad39e79ce62a277fe66bce8cd16f568eb93f45a1941d00b1ba8a87d4e60aa6"
-        },
-        {
-          "source_id": "FISRC-70b91157a7013cad",
-          "source_url": "https://www.fool.com/investing/2026/06/18/spacex-stock-1-billion-ipo-buy-mistake/",
-          "source_title": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO | The Motley Fool",
-          "source_content_hash": "a23bc17d1a408325",
-          "quote": "Billionaire Ron Baron Put $1 Billion Into SpaceX at the IPO.",
-          "quote_hash": "5144d6cd354049217c8415ea27737536becf697c38df3c3583c4ec8354ab8782"
-        },
-        {
-          "source_id": "FISRC-9adefaf867df19d6",
-          "source_url": "https://www.tradingview.com/news/stocktwits:c3fb917f9094b:0-spacex-will-be-largest-most-profitable-company-on-the-planet-says-veteran-elon-musk-bull-whose-funds-trail-us-markets/",
-          "source_title": "SpaceX Will Be 'Largest, Most Profitable Company On The Planet,' Says Veteran Elon Musk Bull | TradingView News",
-          "source_content_hash": "3549f091090ec02b",
-          "quote": "Baron Capital has submitted a $1 billion order in the upcoming SpaceX IPO.",
-          "quote_hash": "e9e6aa400ba72e89e811139da45cef3b45fe9cfcde4b3551824cb7abba145c2d"
-        },
-        {
-          "source_id": "baron_history",
-          "source_url": "https://www.baroncapitalgroup.com/about-us",
-          "source_title": "Growth Equity Specialists | Baron Funds",
-          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
-          "quote": "The story of Baron Capital begins long before the founding of the company in 1982.",
-          "quote_hash": "3f15416965f59d28b96317857f928d1057a139da5e175a9e0f84235d29b31e61"
-        },
-        {
-          "source_id": "baron_strategy",
-          "source_url": "https://www.baroncapitalgroup.com/about-us",
-          "source_title": "Growth Equity Specialists | Baron Funds",
-          "source_content_hash": "20991664d2c75cf5f25b808d450078c4f54ef0b7490f07926a422d516f7f4e3d",
-          "quote": "At Baron Capital, our entire organization is aligned behind a single investment approach and shared objective. We are long-term investors in secular growth businesses that are run by great management teams and offer durable competitive advantages.",
-          "quote_hash": "7cd4792d0c369e44cb3e2d4c8744137d527babdba05fe044e6c7e86a39cc1381"
-        },
-        {
-          "source_id": "baron_message_metrics",
-          "source_url": "https://www.baroncapitalgroup.com/article/message-from-ron-baron",
-          "source_title": "A Message from Ron | Baron Funds",
-          "source_content_hash": "4755855dd9206d6bd54d59fea1ca7f0779f037f9f43fd3b0396bb28f04e7b6f1",
-          "quote": "Today, our assets under management total $69.7 billion (6/30/2026), and we have earned more than $71.2 billion (6/30/2026) in realized and unrealized gains for our investors.",
-          "quote_hash": "c6970ca02a8f7220fb6c96e424f3e2c25a0f01f5ec318eaa9928b49721cb9b27"
-        }
-      ],
-      "last_verified_at": "2026-09-28",
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "researched",
-      "coverage_note": "AUM 与累计收益是 Baron Capital 官方披露，按公司整体口径并保留统计日期。SpaceX IPO 参投信息来自二手报道，当前来源无法确认订单主体、最终配售或具体基金；不可将 750 亿美元整笔 IPO 规模或个人报道视作 Baron 的投资金额或基金业绩。"
-    },
     "INV-8013f6bc135ae3": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -82536,33 +83331,6 @@
         }
       ],
       "last_verified_at": "2026-09-25"
-    },
-    "INV-f66d982784a204": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Fidelity Management & Research Company 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b5e22ae086a6b353"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-b5e22ae086a6b353",
-          "source_url": "https://www.anthropic.com/news/series-h",
-          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
-          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
-          "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
-          "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
-        }
-      ],
-      "last_verified_at": "2026-09-28"
     },
     "INV-862bc9d965f042": {
       "profile_type": "organization",
@@ -110581,13 +111349,17 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "CPE源峰 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "CPE 源峰 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
           "description": "融资来源记录：Moonshot AI · 历史轮次未披露 · 2026-05-02 · 2026年5月20亿美元融资参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-773362f4e07cd598"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 正在洽谈加入的新投资者。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-483eb7ff4aaec1c4"
         }
       ],
       "contacts": [],
@@ -110599,6 +111371,14 @@
           "source_content_hash": "4d700156140038e7",
           "quote": "今年5月，公司刚完成20亿美元融资，由美团龙珠领投，中国移动、CPE 源峰等机构参投",
           "quote_hash": "dcee290bad1bf3693aeb96575e5c165e1082ae7c245dd86ccef1ab0909600b8b"
+        },
+        {
+          "source_id": "FISRC-483eb7ff4aaec1c4",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-26/doc-inipsezp9146369.shtml",
+          "source_title": "DeepSeek正接近完成新一轮融资：已开始为潜在的科创板IPO做准备",
+          "source_content_hash": "ba93060af57afb73",
+          "quote": "投资者包括 DeepSeek 上一轮融资中的部分老股东，例如 Monolith、拾象资本，以及宁德时代（CATL），而正在洽谈加入的新投资者包括 CPE 源峰、君联资本等。",
+          "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
         }
       ],
       "last_verified_at": "2026-09-25"
@@ -111332,6 +112112,33 @@
         }
       ],
       "last_verified_at": "2026-09-27"
+    },
+    "INV-f15261d51b7f00": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "+ND Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · 历史轮次未披露 · 既有投资者，本轮继续参与。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-284ec16980778f24"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-284ec16980778f24",
+          "source_url": "https://www.cxodigitalpulse.com/physical-ai-company-sima-ai-raises-150-mn-in-series-c-round/",
+          "source_title": "Physical AI Company SiMa.ai Raises $150 Mn in Series C Round",
+          "source_content_hash": "ba588b110e80a2c8",
+          "quote": "Existing investors Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group also participated in the round.",
+          "quote_hash": "58c100fd471e1350d829e77117467236d5dbb132f5843d37304bbd3202a897fc"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
     },
     "INV-3d6706d4b36496": {
       "profile_type": "unverified",
@@ -116530,6 +117337,33 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "INV-58a78f3e6e8046": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "合肥国资背景的投资机构 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 本轮参与方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-483eb7ff4aaec1c4"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-483eb7ff4aaec1c4",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-26/doc-inipsezp9146369.shtml",
+          "source_title": "DeepSeek正接近完成新一轮融资：已开始为潜在的科创板IPO做准备",
+          "source_content_hash": "ba93060af57afb73",
+          "quote": "由兆易创新支持的基金，以及合肥国资背景的投资机构也参与其中。",
+          "quote_hash": "7e503be5186bd257fdb0f01451d4c4c317a6543f5f975464c42d56a833ec3685"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
     },
     "INV-8669699a55a43b": {
       "profile_type": "unverified",
@@ -122962,6 +123796,33 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-88fae2a9c242a7": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "拾象资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 上一轮融资老股东。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-483eb7ff4aaec1c4"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-483eb7ff4aaec1c4",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-26/doc-inipsezp9146369.shtml",
+          "source_title": "DeepSeek正接近完成新一轮融资：已开始为潜在的科创板IPO做准备",
+          "source_content_hash": "ba93060af57afb73",
+          "quote": "投资者包括 DeepSeek 上一轮融资中的部分老股东，例如 Monolith、拾象资本，以及宁德时代（CATL），而正在洽谈加入的新投资者包括 CPE 源峰、君联资本等。",
+          "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-768a033dca44c4": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -126472,6 +127333,33 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-b28ed94d42813a": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "兆易创新支持的基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 本轮参与方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-483eb7ff4aaec1c4"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-483eb7ff4aaec1c4",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-26/doc-inipsezp9146369.shtml",
+          "source_title": "DeepSeek正接近完成新一轮融资：已开始为潜在的科创板IPO做准备",
+          "source_content_hash": "ba93060af57afb73",
+          "quote": "由兆易创新支持的基金，以及合肥国资背景的投资机构也参与其中。",
+          "quote_hash": "7e503be5186bd257fdb0f01451d4c4c317a6543f5f975464c42d56a833ec3685"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-43553e995b3a8b": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -128091,33 +128979,6 @@
           "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
           "quote": "Existing investors - BroadLight, NFDG, Valor Capital, AMP Coalition and Smash Capital are also continuing their support",
           "quote_hash": "b0dd762d2ae44b8d22dc705c80b34ca750c6e554bf703aa26b5f7d9d337c34fe"
-        }
-      ],
-      "last_verified_at": "2026-09-28"
-    },
-    "INV-dbcad58ec15837": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Amplify 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "融资来源记录：Temporal · 历史轮次未披露 · 历史轮次投资者。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-cf83d78a216a5edf"
-        }
-      ],
-      "contacts": [],
-      "sources": [
-        {
-          "source_id": "FISRC-cf83d78a216a5edf",
-          "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
-          "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
-          "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
-          "quote": "Returning investors include a16z, Sequoia, Index, GIC, Sapphire Ventures, and Amplify.",
-          "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -130207,6 +131068,33 @@
           "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
           "quote": "Existing investors - BroadLight, NFDG, Valor Capital, AMP Coalition and Smash Capital are also continuing their support",
           "quote_hash": "b0dd762d2ae44b8d22dc705c80b34ca750c6e554bf703aa26b5f7d9d337c34fe"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-f28983e12e574b": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Brookfield Asset Management 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：PaleBlueDot AI · 历史轮次未披露 · 信贷融资提供方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-da12f9a4c84d5ed2"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-da12f9a4c84d5ed2",
+          "source_url": "https://www.unite.ai/palebluedot-ai-raises-200m-series-c-at-3-2b-valuation-to-expand-super-intelligence-compute/",
+          "source_title": "PaleBlueDot AI Raises $200M Series C at $3.2B Valuation to Expand Super Intelligence Compute",
+          "source_content_hash": "002708516b76881d",
+          "quote": "Brookfield Asset Management and Tor Investment Management provided the financing",
+          "quote_hash": "15a67ce17492a6bba0129613aa52a0d8fc3e76358bd71aa378be60258be77000"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -132677,6 +133565,33 @@
           "source_content_hash": "410c3c737fbffa4a",
           "quote": "raised a $125 million Series B funding round on May 21, 2024, led by Lightspeed Venture Partners with participation from Nat Friedman, Daniel Gross, Matrix, and Founder Collective.",
           "quote_hash": "c22714c76aea0223ddb37fa957ed0df2634d3bda436a8831dfabdc69b6108d1b"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-63df81dc3e5729": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "founders and hyperscaler directors 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Zenithon · 历史轮次未披露 · 本轮参投（泛称，未披露具体姓名）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-71beee65b9c4d6a4"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-71beee65b9c4d6a4",
+          "source_url": "https://tech.eu/2026/09/30/zenithon-raises-10m-to-build-world-models-for-extreme-physics/",
+          "source_title": "Zenithon 融资 1000 万美元，为极端物理构建世界模型",
+          "source_content_hash": "e67696fd16493e7ec093984f14f1d02063fdcdd22bef2c16b6c02efdca0d45fc",
+          "quote": "Its backers include BACKED, Lunar, Seraphim, MMC, and SOSV, alongside founders and hyperscaler directors.",
+          "quote_hash": "e6dc6fee599f9ed31208dc794f0fcd15d77876be690d6d911fa470eef236039b"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -137750,6 +138665,33 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-a19bdfd998e83d": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Point72 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · 历史轮次未披露 · 既有投资者，本轮继续参与。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-284ec16980778f24"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-284ec16980778f24",
+          "source_url": "https://www.cxodigitalpulse.com/physical-ai-company-sima-ai-raises-150-mn-in-series-c-round/",
+          "source_title": "Physical AI Company SiMa.ai Raises $150 Mn in Series C Round",
+          "source_content_hash": "ba588b110e80a2c8",
+          "quote": "Existing investors Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group also participated in the round.",
+          "quote_hash": "58c100fd471e1350d829e77117467236d5dbb132f5843d37304bbd3202a897fc"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-cce807a4e51566": {
       "profile_type": "organization",
       "identity_status": "verified",
@@ -138611,6 +139553,33 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-ef8b5f37682502": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "SMRK 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Osavul · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6b10616666cf4c79"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-6b10616666cf4c79",
+          "source_url": "https://www.osavul.cloud/blog/osavul-raises-the-next-round",
+          "source_title": "Osavul Raises $3 (€2.78) Million in Funding to Bring Information Security Technologies to the Business Sector",
+          "source_content_hash": "cd36f0da92c99ead",
+          "quote": "receives a seed investment of $3 mln (€2.78 mln) from three European investors: 42CAP, u.ventures, and SMRK.",
+          "quote_hash": "ddcda1dfa43bd6507551b69d74d929fa36daefb1238aabc289eedc0be6ce0367"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-35e2d5ffd6f3a4": {
       "profile_type": "unverified",
       "identity_status": "pending_verification",
@@ -138766,6 +139735,33 @@
           "source_content_hash": "1ebeeb62a1ce4a36",
           "quote": "Angel investor includes Sriram Rajamani",
           "quote_hash": "3e75fed6a02405d2e9c4516326e09eccd9ec16f552d2ac28b30d070166ec0e01"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "INV-8fe481d64028a2": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "State of Michigan 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · 历史轮次未披露 · 本轮新投资者。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-284ec16980778f24"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-284ec16980778f24",
+          "source_url": "https://www.cxodigitalpulse.com/physical-ai-company-sima-ai-raises-150-mn-in-series-c-round/",
+          "source_title": "Physical AI Company SiMa.ai Raises $150 Mn in Series C Round",
+          "source_content_hash": "ba588b110e80a2c8",
+          "quote": "AllianceBernstein, Baron Capital, J.P. Morgan and the State of Michigan joined as new investors.",
+          "quote_hash": "236218295551c714eb5158ff43108a86b2de31bb994725290acad6c739538bbc"
         }
       ],
       "last_verified_at": "2026-09-28"
@@ -139426,6 +140422,33 @@
       ],
       "last_verified_at": "2026-09-25"
     },
+    "INV-8e8804bb63afc9": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Tor Investment Management 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：PaleBlueDot AI · 历史轮次未披露 · 信贷融资提供方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-da12f9a4c84d5ed2"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-da12f9a4c84d5ed2",
+          "source_url": "https://www.unite.ai/palebluedot-ai-raises-200m-series-c-at-3-2b-valuation-to-expand-super-intelligence-compute/",
+          "source_title": "PaleBlueDot AI Raises $200M Series C at $3.2B Valuation to Expand Super Intelligence Compute",
+          "source_content_hash": "002708516b76881d",
+          "quote": "Brookfield Asset Management and Tor Investment Management provided the financing",
+          "quote_hash": "15a67ce17492a6bba0129613aa52a0d8fc3e76358bd71aa378be60258be77000"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
     "INV-cda60efa688692": {
       "profile_type": "person",
       "identity_status": "verified",
@@ -139452,6 +140475,33 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "INV-11eface07e33ee": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "u.ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Osavul · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6b10616666cf4c79"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-6b10616666cf4c79",
+          "source_url": "https://www.osavul.cloud/blog/osavul-raises-the-next-round",
+          "source_title": "Osavul Raises $3 (€2.78) Million in Funding to Bring Information Security Technologies to the Business Sector",
+          "source_content_hash": "cd36f0da92c99ead",
+          "quote": "receives a seed investment of $3 mln (€2.78 mln) from three European investors: 42CAP, u.ventures, and SMRK.",
+          "quote_hash": "ddcda1dfa43bd6507551b69d74d929fa36daefb1238aabc289eedc0be6ce0367"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
     },
     "INV-91b904b4ffe4ef": {
       "profile_type": "organization",

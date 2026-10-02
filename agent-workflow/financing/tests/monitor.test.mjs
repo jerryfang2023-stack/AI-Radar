@@ -112,3 +112,33 @@ test('restoring on a newer main preserves global data and invalidates dependent 
   assert.deepEqual(read(path.join(root,global)).cards,['newer']);
   assert.deepEqual(read(path.join(root,receipt)).stages,{});
 });
+test('newer main retains reviewed same-day evidence and research while adding checkpoint-only work',t=>{
+  const root=temporary(t),artifact=temporary(t);
+  const intake=`01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`;
+  const model=`01-SiteV2/content/11-databases/model-assist-v1/${date}.json`;
+  const research=`01-SiteV2/content/12-applications/funding-insights/${date}.json`;
+  const facts=`01-SiteV2/content/11-databases/data-center-v4/${date}/canonical-events.json`;
+  const makeIntake=rows=>({schema_version:'SOURCE-INTAKE-V1.1',data_date:date,source_artifacts:rows.map(([id,note])=>({source_artifact_id:id,note})),raw_documents:rows.map(([id,note])=>({raw_id:id,source_artifact_id:id,note}))});
+  write(path.join(root,intake),makeIntake([['shared','reviewed'],['later','accepted']]));
+  write(path.join(root,model),{candidates:[{candidate_id:'shared',status:'reviewed'},{candidate_id:'later',status:'accepted'}]});
+  write(path.join(root,research),{cards:[{funding_insight_id:'updated-round',triggered_by_event_id:'new',source_event_ids:['old','new']}],queue:[{event_id:'old',status:'deduplicated'}]});
+  write(path.join(root,facts),['accepted-facts']);
+  const rows=[
+    [intake,makeIntake([['shared','stale'],['daily','accepted']])],
+    [model,{candidates:[{candidate_id:'shared',status:'stale'},{candidate_id:'daily',status:'accepted'}]}],
+    [research,{cards:[{funding_insight_id:'old-round',triggered_by_event_id:'old'},{funding_insight_id:'daily',triggered_by_event_id:'daily'}],queue:[{event_id:'old',status:'stale'},{event_id:'daily',status:'accepted'}]}],
+    [facts,['stale-facts']],
+  ];
+  const entries=rows.map(([file,data])=>{write(path.join(artifact,'files',file),data);return{file,hash:digest(fs.readFileSync(path.join(artifact,'files',file),'utf8'))};});
+  write(path.join(artifact,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,base_commit:'old',entries});
+  restore(root,artifact,date);
+  const restored=read(path.join(root,intake));
+  assert.equal(restored.raw_documents.length,3);
+  assert.equal(restored.raw_documents.find(row=>row.raw_id==='shared').note,'reviewed');
+  assert.equal(restored.source_artifacts.find(row=>row.source_artifact_id==='shared').note,'reviewed');
+  assert.equal(read(path.join(root,model)).candidates.length,3);
+  assert.equal(read(path.join(root,model)).candidates.find(row=>row.candidate_id==='shared').status,'reviewed');
+  assert.deepEqual(read(path.join(root,research)).cards.map(row=>row.funding_insight_id).sort(),['daily','updated-round']);
+  assert.equal(read(path.join(root,research)).queue.find(row=>row.event_id==='old').status,'deduplicated');
+  assert.deepEqual(read(path.join(root,facts)),['accepted-facts']);
+});
