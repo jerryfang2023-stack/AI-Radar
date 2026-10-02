@@ -24,8 +24,8 @@ jobs:
     env:
       TZ: Asia/Shanghai
       DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
-      DEEPSEEK_FLASH_MODEL: deepseek-v4-flash
-      DEEPSEEK_PRO_MODEL: deepseek-v4-pro
+      DEEPSEEK_FLASH_MODEL: deepseek-flash
+      DEEPSEEK_PRO_MODEL: deepseek-flash
 
     steps:
       - name: Check out repository

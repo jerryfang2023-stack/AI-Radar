@@ -1,0 +1,11 @@
+[Unit]
+Description=Check Guanlan financing standby and recovery every ten minutes
+
+[Timer]
+OnCalendar=*-*-* *:00/10:00 Asia/Shanghai
+Persistent=true
+RandomizedDelaySec=15
+Unit=guanlan-financing.service
+
+[Install]
+WantedBy=timers.target

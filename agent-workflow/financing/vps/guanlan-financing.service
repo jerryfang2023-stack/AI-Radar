@@ -1,0 +1,24 @@
+[Unit]
+Description=Guanlan financing VPS standby supervisor
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=guanlan-financing
+Group=guanlan-financing
+WorkingDirectory=/srv/guanlan-financing/WaveSight
+EnvironmentFile=/etc/guanlan-financing/runtime.env
+ExecStart=/opt/guanlan-financing-tools/run.sh
+UMask=0077
+TimeoutStartSec=90min
+MemoryMax=1600M
+CPUQuota=100%
+PrivateTmp=false
+ProtectSystem=full
+ProtectHome=read-only
+StandardOutput=append:/srv/guanlan-financing/runtime/supervisor.log
+StandardError=append:/srv/guanlan-financing/runtime/supervisor.log
+
+[Install]
+WantedBy=multi-user.target
