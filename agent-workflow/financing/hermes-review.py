@@ -17,6 +17,8 @@ def resolve_read(root, relative):
     resolved = (root / candidate).resolve()
     if not resolved.is_relative_to(root) or not resolved.is_file():
         raise ValueError('read_path_rejected')
+    if any(part in BLOCKED or part.startswith('.env') for part in resolved.relative_to(root).parts):
+        raise ValueError('read_path_rejected')
     return resolved
 
 
