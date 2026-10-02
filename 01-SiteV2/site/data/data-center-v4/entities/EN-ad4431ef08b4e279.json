@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-ad4431ef08b4e279",
+    "name": "DSC Investment",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-72c91001092a54bd"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-10-01",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-72c91001092a54bd"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-72c91001092a54bd",
+        "dataDate": "2026-10-02",
+        "date": "2026-10-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "亚洲摘要：Zeya Health 收购 ConnectLah；亚洲投资者支持 GMI Cloud 的 6.68 亿美元融资",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-6aa1fcea0024c6ce"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-6aa1fcea0024c6ce"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-ad4431ef08b4e279",
+          "EN-6aa1fcea0024c6ce",
+          "EN-8d4321d936320802",
+          "EN-99d3fd0fa8fe115e",
+          "EN-7f871cbf905f6e0c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-2d27429eec434b40",
+      "snapshotKey": "2d27429eec434b40",
+      "snapshotId": "HWS-a6818cf923b1793b",
+      "eventId": "EV-72c91001092a54bd",
+      "eventIds": [
+        "EV-72c91001092a54bd"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "DSC Investment",
+      "subject": "DSC Investment",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "668",
+          "unit": "$",
+          "fact_ref": "HWF-4f58b713f8d14c4f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-4f58b713f8d14c4f",
+          "fact_type": "product",
+          "observed_at": "2026-10-01",
+          "subject_entity_id": "EN-ad4431ef08b4e279",
+          "subject_name": "DSC Investment",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "668",
+          "unit": "$",
+          "source_quote": "DSC Investment, Trend Micro, others back GMI Cloud\nA number of Asian investors have joined GMI Cloud‘s $668-million funding round as the AI infrastructure provider expands capacity across the US and Asia-Pacific, according to an announcement.\nThe financing comprises $223 million in Series B equity and a $445-million credit facility led by CTBC. The Series B was led by San Francisco-based AI and robotics investor ARCHIV, with participation from NVIDIA.\nAsia-Pacific investors, including DSC Investment, Trend Micro, KB Investment, Kyobo Life and KT Corporation, also participated in the funding round.\nGMI Cloud said the funding will support capacity expansion in the US, Taiwan, and other APAC markets, building on its Taiwan AI Factory launched in 2025 and a Japan sovereign AI initiative announced earlier this year.\nThe company will also use the proceeds to expand its inference services and hire additional staff, per the announcement. It counts Fireworks, Higgsfield, Nous Research, OpenRouter and Trend Micro among its customers.",
+          "event_refs": [
+            "EV-72c91001092a54bd"
+          ],
+          "claim_ref": "CL-14c08f55d781e74b",
+          "source_refs": [
+            "SA-2d34bc7f07c9ebd6"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
+      "entityIds": [
+        "EN-ad4431ef08b4e279",
+        "EN-6aa1fcea0024c6ce",
+        "EN-8d4321d936320802",
+        "EN-99d3fd0fa8fe115e",
+        "EN-7f871cbf905f6e0c"
+      ]
+    }
+  ]
+}

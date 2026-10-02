@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -71,10 +71,10 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-17",
-    "latest_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-09-29",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "participant": 2
+      "historical_or_ambiguous": 3,
+      "participant": 3
     },
     "round_codes": [
       "pre_seed",
@@ -87,6 +87,11 @@
         "name": "Aina"
       },
       {
+        "entity_id": "EN-a89df13c958d37ea",
+        "canonical_entity_id": "",
+        "name": "Dodge AI"
+      },
+      {
         "entity_id": "EN-835fb9db44937917",
         "canonical_entity_id": "",
         "name": "First Concepts"
@@ -94,7 +99,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-c00ad5012f71889b",
+        "activity_id": "IA-c54ac6a5ec4c19ac",
+        "funding_insight_id": "FI-579605002ee8aa63",
+        "event_ids": [
+          "EV-bccd915b61c48911"
+        ],
+        "company_entity_id": "EN-a89df13c958d37ea",
+        "company_canonical_entity_id": "",
+        "company_name": "Dodge AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$2.65 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2650000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "265 万美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-79d7e597795281b6",
+            "source_url": "https://techfundingnews.com/dodge-ai-raises-2-65m-from-accel-and-googles-ai-fund-to-cut-reliance-on-sap-consultants/",
+            "source_title": "Dodge AI 从 Accel 和 Google 的 AI 基金筹集 265 万美元，以减少对 SAP 顾问的依赖",
+            "source_content_hash": "db9220a882d5568676eb76971b7b8f7680544810d1ed5a22c24e3a4e043be70f",
+            "quote": "The round also included Schema Ventures, New Build Ventures, Antler, the early-stage investor that has backed more than 1,800 startups, and angels from the SAP ecosystem.",
+            "quote_hash": "8e48a005511f78dcefc3d0cfdd1b04759dcebb524bc0861aca98483043ae90da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3fd1d5437b4aba87",
         "funding_insight_id": "FI-20e67383e8533b80",
         "event_ids": [
           "EV-02882e6f5e1902c6"
@@ -134,47 +179,7 @@
         ]
       },
       {
-        "activity_id": "IA-4435dc1c38f614dc",
-        "funding_insight_id": "FI-124b4efd0f2fa1d9",
-        "event_ids": [
-          "EV-12f331aaf7d4cca6"
-        ],
-        "company_entity_id": "EN-964f260c9a904091",
-        "company_canonical_entity_id": "EN-964f260c9a904091",
-        "company_name": "爱诗科技",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "29.8亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 2980000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "29.8 亿元"
-        },
-        "announced_at": "2026-07-14",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "B轮跟投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-09c3ca37737a71ce",
-            "source_url": "https://stcn.com/article/detail/3386786.html",
-            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-            "source_content_hash": "edea92990a31710b",
-            "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
-            "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-6adcddd6ceeecab4",
+        "activity_id": "IA-355796928b9f3a1c",
         "funding_insight_id": "FI-4bc46dcf530c9077",
         "event_ids": [
           "EV-affa49966121461c"
@@ -220,9 +225,113 @@
             "quote_hash": "83ac9a99fdefea718722704357b8f99568b6e0877d2d2789cbe9c7a78e740986"
           }
         ]
+      },
+      {
+        "activity_id": "IA-20fd94974963c618",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "EN-964f260c9a904091",
+        "company_name": "爱诗科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09c3ca37737a71ce",
+            "source_url": "https://stcn.com/article/detail/3386786.html",
+            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+            "source_content_hash": "edea92990a31710b",
+            "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+            "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-064130e971b8b068",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "回归投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-94676d99b2defaa4",
+            "source_url": "https://lovable.dev/blog/series-c",
+            "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+            "source_content_hash": "f9c4cc8a8cd4a7c7",
+            "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+            "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b7cf4adf97ad6a55",
+        "funding_insight_id": "FI-97848c4266a2ba89",
+        "event_ids": [
+          "EV-5e847cd78e657cb5"
+        ],
+        "company_entity_id": "EN-5ae517f37304d77d",
+        "company_canonical_entity_id": "",
+        "company_name": "PixVerse",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "参投C轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d1ff348d372728c",
+            "source_url": "https://pixverse.ai/en/blog/pixverse-joins-global-ai-unicorns-asia-largest-funding-ai-video",
+            "source_title": "PixVerse Joins the Ranks of Global AI Unicorns with Asia's Largest Funding Round in AI Video Generation",
+            "source_content_hash": "b98bf780bb54dac4",
+            "quote": "The round was led by CDH Investments, with participation from international investors Antler, EnvisionX Capital, iGlobe Partners, Lion X Ventures, UOB Venture Management, and 3W Fund, alongside other investors.",
+            "quote_hash": "6e69a63fe64f947335fec080603c5175d7449159fd66a7eca4054cdad34aeb09"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-79d7e597795281b6",
+        "source_url": "https://techfundingnews.com/dodge-ai-raises-2-65m-from-accel-and-googles-ai-fund-to-cut-reliance-on-sap-consultants/",
+        "source_title": "Dodge AI 从 Accel 和 Google 的 AI 基金筹集 265 万美元，以减少对 SAP 顾问的依赖",
+        "source_content_hash": "db9220a882d5568676eb76971b7b8f7680544810d1ed5a22c24e3a4e043be70f",
+        "quote": "The round also included Schema Ventures, New Build Ventures, Antler, the early-stage investor that has backed more than 1,800 startups, and angels from the SAP ecosystem.",
+        "quote_hash": "8e48a005511f78dcefc3d0cfdd1b04759dcebb524bc0861aca98483043ae90da"
+      },
       {
         "source_id": "FISRC-9e755507b523ddb2",
         "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
@@ -230,14 +339,6 @@
         "source_content_hash": "495ca48cb14fa6d7",
         "quote": "The round also saw participation from MIXI Global Investments, Antler and Blume Founders Fund.",
         "quote_hash": "1723e7191739c658bc0aaa08f60bda7e3a13e67588e1a44e623cfc25b67d7238"
-      },
-      {
-        "source_id": "FISRC-09c3ca37737a71ce",
-        "source_url": "https://stcn.com/article/detail/3386786.html",
-        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-        "source_content_hash": "edea92990a31710b",
-        "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
-        "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
       },
       {
         "source_id": "FISRC-e713775ebfd9779c",
@@ -254,6 +355,30 @@
         "source_content_hash": "76ea52113df3fedb",
         "quote": "The round was led by Arāya Ventures with participation from Antler",
         "quote_hash": "83ac9a99fdefea718722704357b8f99568b6e0877d2d2789cbe9c7a78e740986"
+      },
+      {
+        "source_id": "FISRC-09c3ca37737a71ce",
+        "source_url": "https://stcn.com/article/detail/3386786.html",
+        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+        "source_content_hash": "edea92990a31710b",
+        "quote": "该轮融资由阿里巴巴领投，达晨财智、深创投、北京市AI基金、湖南电广传媒、巨人网络和Antler跟投。",
+        "quote_hash": "3e1964c5d30ce70d2f0eb1a20d63918f13352c60a9351bd4858c52ac3f5ff015"
+      },
+      {
+        "source_id": "FISRC-94676d99b2defaa4",
+        "source_url": "https://lovable.dev/blog/series-c",
+        "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+        "source_content_hash": "f9c4cc8a8cd4a7c7",
+        "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+        "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
+      },
+      {
+        "source_id": "FISRC-6d1ff348d372728c",
+        "source_url": "https://pixverse.ai/en/blog/pixverse-joins-global-ai-unicorns-asia-largest-funding-ai-video",
+        "source_title": "PixVerse Joins the Ranks of Global AI Unicorns with Asia's Largest Funding Round in AI Video Generation",
+        "source_content_hash": "b98bf780bb54dac4",
+        "quote": "The round was led by CDH Investments, with participation from international investors Antler, EnvisionX Capital, iGlobe Partners, Lion X Ventures, UOB Venture Management, and 3W Fund, alongside other investors.",
+        "quote_hash": "6e69a63fe64f947335fec080603c5175d7449159fd66a7eca4054cdad34aeb09"
       }
     ],
     "public_profile": {
@@ -261,10 +386,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Antler 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Antler 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Dodge AI · 种子轮 · 2026-09-29 · 本轮参投 · $2.65 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-79d7e597795281b6"
+        },
         {
           "description": "融资来源记录：Aina · 种子轮 · 2026-07-16 · 本轮参投 · 550万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9e755507b523ddb2"
@@ -272,14 +401,18 @@
         {
           "description": "融资来源记录：First Concepts · 预种子轮 · 2026-03-17 · 本轮参投 · $1,000,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e713775ebfd9779c"
-        },
-        {
-          "description": "融资来源记录：First Concepts · 预种子轮 · 2026-03-17 · 本轮参投 · $1,000,000。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f1b51a324bc9b70b"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-79d7e597795281b6",
+          "source_url": "https://techfundingnews.com/dodge-ai-raises-2-65m-from-accel-and-googles-ai-fund-to-cut-reliance-on-sap-consultants/",
+          "source_title": "Dodge AI 从 Accel 和 Google 的 AI 基金筹集 265 万美元，以减少对 SAP 顾问的依赖",
+          "source_content_hash": "db9220a882d5568676eb76971b7b8f7680544810d1ed5a22c24e3a4e043be70f",
+          "quote": "The round also included Schema Ventures, New Build Ventures, Antler, the early-stage investor that has backed more than 1,800 startups, and angels from the SAP ecosystem.",
+          "quote_hash": "8e48a005511f78dcefc3d0cfdd1b04759dcebb524bc0861aca98483043ae90da"
+        },
         {
           "source_id": "FISRC-9e755507b523ddb2",
           "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
@@ -295,14 +428,6 @@
           "source_content_hash": "290464341ec7404f",
           "quote": "The round was led by Arāya Ventures alongside Antler",
           "quote_hash": "aa214732f07a6c804bf8a1c3e894b2f54de97e4bd169a531a71821b23f0ebb5f"
-        },
-        {
-          "source_id": "FISRC-f1b51a324bc9b70b",
-          "source_url": "https://www.founderstoday.news/first-concepts-raises-1-million-pre-seed/",
-          "source_title": "First Concepts raises $1M pre-seed to develop AI workspace for creative teams - FoundersToday",
-          "source_content_hash": "76ea52113df3fedb",
-          "quote": "The round was led by Arāya Ventures with participation from Antler",
-          "quote_hash": "83ac9a99fdefea718722704357b8f99568b6e0877d2d2789cbe9c7a78e740986"
         }
       ],
       "last_verified_at": "2026-09-25"

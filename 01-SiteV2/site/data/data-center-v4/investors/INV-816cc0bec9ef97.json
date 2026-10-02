@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-13",
-    "latest_disclosed_at": "2026-09-28",
+    "first_disclosed_at": "2026-01-14",
+    "latest_disclosed_at": "2026-08-03",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "participant": 3
+      "historical_or_ambiguous": 2,
+      "participant": 6
     },
     "round_codes": [
       "seed",
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
@@ -91,54 +92,29 @@
         "name": "Intelligence"
       },
       {
+        "entity_id": "EN-720d7b20a013162b",
+        "canonical_entity_id": "",
+        "name": "Listen Labs"
+      },
+      {
         "entity_id": "EN-ee00b93bf0631b3e",
         "canonical_entity_id": "",
         "name": "Monogram AI, Inc."
+      },
+      {
+        "entity_id": "EN-50ac81f970325a3e",
+        "canonical_entity_id": "",
+        "name": "Town"
+      },
+      {
+        "entity_id": "EN-c32662785b597e46",
+        "canonical_entity_id": "",
+        "name": "Trajectory"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-d33ac91c39ddc334",
-        "funding_insight_id": "FI-1b6dd112c647d4a1",
-        "event_ids": [
-          "EV-35fa913e4709b4d6"
-        ],
-        "company_entity_id": "EN-b4c73396844f7d05",
-        "company_canonical_entity_id": "",
-        "company_name": "Instinct",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "$1B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿美元"
-        },
-        "announced_at": "2026-09-28",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "早期轮次投资",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-70f948c95dacb2f0",
-            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-            "source_content_hash": "0773286daf5bf525",
-            "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
-            "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-50f287118dee3322",
+        "activity_id": "IA-e87f440980924243",
         "funding_insight_id": "FI-36e2dba781b80e3a",
         "event_ids": [
           "EV-2301cd1470155075"
@@ -178,7 +154,7 @@
         ]
       },
       {
-        "activity_id": "IA-556c9d78d857dba8",
+        "activity_id": "IA-5a2be2c3f0b9288e",
         "funding_insight_id": "FI-12131c1300a2d205",
         "event_ids": [
           "EV-fab81bddb815267b"
@@ -218,7 +194,87 @@
         ]
       },
       {
-        "activity_id": "IA-a5173428e1618255",
+        "activity_id": "IA-d0d7c1ca9a50a7ff",
+        "funding_insight_id": "FI-dc787de827cfc638",
+        "event_ids": [
+          "EV-78f25fe89d25eeb6"
+        ],
+        "company_entity_id": "EN-50ac81f970325a3e",
+        "company_canonical_entity_id": "",
+        "company_name": "Town",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$55M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-55e5e881c734a50f",
+            "source_url": "https://www.town.com/press/series-a",
+            "source_title": "Town 筹集 A 轮融资",
+            "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+            "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
+            "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-08f6d32ec2515830",
+        "funding_insight_id": "FI-dd04330326d86da8",
+        "event_ids": [
+          "EV-54f4bd47b09c4dc3"
+        ],
+        "company_entity_id": "EN-c32662785b597e46",
+        "company_canonical_entity_id": "",
+        "company_name": "Trajectory",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$15 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-05-31",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-13a2dacfcddc2542",
+            "source_url": "https://pulse2.com/trajectory-raises-15-million-to-build-a-platform-for-continual-learning/",
+            "source_title": "Trajectory 融资 1500 万美元，打造持续学习平台",
+            "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+            "quote": "The funding round included participation from Conviction, Bessemer Venture Partners, Radical Ventures, as well as notable AI leaders including Jeff Dean and Fei-Fei Li.",
+            "quote_hash": "4d86e29cd2c6e8d8d65796ccaa48f1abe3c1dd687f6a6b365b6376524de1726c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4a682addb7c1c4e2",
         "funding_insight_id": "FI-27c50f0e1e7dd316",
         "event_ids": [
           "EV-70a994b9339f92e7"
@@ -256,17 +312,114 @@
             "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
           }
         ]
+      },
+      {
+        "activity_id": "IA-6ce37fadd193c946",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$69 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 69000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6900 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf11a862138a06d",
+            "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+            "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+            "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+            "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+            "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4c40d0b2128b60ed",
+        "funding_insight_id": "FI-4b143304af694a92",
+        "event_ids": [
+          "EV-35fa913e4709b4d6",
+          "EV-861d4440dcbb9b09"
+        ],
+        "company_entity_id": "FICO-instinct",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "早期轮次投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-70f948c95dacb2f0",
+            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+            "source_content_hash": "0773286daf5bf525",
+            "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
+            "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-338a7435ed44c69f",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5579fe42c2aff5ea",
+            "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
+            "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
+            "source_content_hash": "2cd25d2efd99688d",
+            "quote": "Listen Labs recently closed their $27M Series A round, led by Sequoia with participation from Conviction and Pear.",
+            "quote_hash": "b8981f82094227c36170dea81dfdee8f0e08156dca60071d3e83a0c4238466e9"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-70f948c95dacb2f0",
-        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-        "source_content_hash": "0773286daf5bf525",
-        "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
-        "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
-      },
       {
         "source_id": "FISRC-3fa34b4b7b9a1a77",
         "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
@@ -284,12 +437,52 @@
         "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
       },
       {
+        "source_id": "FISRC-55e5e881c734a50f",
+        "source_url": "https://www.town.com/press/series-a",
+        "source_title": "Town 筹集 A 轮融资",
+        "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+        "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
+        "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
+      },
+      {
+        "source_id": "FISRC-13a2dacfcddc2542",
+        "source_url": "https://pulse2.com/trajectory-raises-15-million-to-build-a-platform-for-continual-learning/",
+        "source_title": "Trajectory 融资 1500 万美元，打造持续学习平台",
+        "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+        "quote": "The funding round included participation from Conviction, Bessemer Venture Partners, Radical Ventures, as well as notable AI leaders including Jeff Dean and Fei-Fei Li.",
+        "quote_hash": "4d86e29cd2c6e8d8d65796ccaa48f1abe3c1dd687f6a6b365b6376524de1726c"
+      },
+      {
         "source_id": "FISRC-62071134d28f47b9",
         "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
         "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
         "source_content_hash": "49c881bff41c0376",
         "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
         "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
+      },
+      {
+        "source_id": "FISRC-dcf11a862138a06d",
+        "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+        "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+        "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+        "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+        "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+      },
+      {
+        "source_id": "FISRC-70f948c95dacb2f0",
+        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+        "source_content_hash": "0773286daf5bf525",
+        "quote": "An early round from Conviction’s Pranav Reddy and Greenoaks’ Neil Mehta valued it at $50 million",
+        "quote_hash": "cd7a52e8deca10f64ffdc59fc062741108bb1c3996d4164a66e47a4a725417e0"
+      },
+      {
+        "source_id": "FISRC-5579fe42c2aff5ea",
+        "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
+        "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
+        "source_content_hash": "2cd25d2efd99688d",
+        "quote": "Listen Labs recently closed their $27M Series A round, led by Sequoia with participation from Conviction and Pear.",
+        "quote_hash": "b8981f82094227c36170dea81dfdee8f0e08156dca60071d3e83a0c4238466e9"
       }
     ],
     "public_profile": {
@@ -310,8 +503,8 @@
           "source_id": "FISRC-907e4297862ddd8c"
         },
         {
-          "description": "融资来源记录：Fractile · B轮 · 2026-05-13 · 本轮参投 · 2.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62071134d28f47b9"
+          "description": "融资来源记录：Town · A轮 · 2026-06-03 · 本轮参投 · $55M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-55e5e881c734a50f"
         }
       ],
       "contacts": [],
@@ -333,15 +526,27 @@
           "quote_hash": "b9cc79ff3ee3d1c3099bd371810b95b959c3d159d0e36d1a13788c3e4675cda6"
         },
         {
-          "source_id": "FISRC-62071134d28f47b9",
-          "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
-          "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
-          "source_content_hash": "49c881bff41c0376",
-          "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
-          "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
+          "source_id": "FISRC-55e5e881c734a50f",
+          "source_url": "https://www.town.com/press/series-a",
+          "source_title": "Town 筹集 A 轮融资",
+          "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+          "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
+          "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[7].role": {
+          "text": "Series A 参投",
+          "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:18.725Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

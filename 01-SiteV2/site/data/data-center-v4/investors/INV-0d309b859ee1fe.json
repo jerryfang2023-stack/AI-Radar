@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,29 +63,32 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 7,
+    "current_round_count": 15,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-04-27",
-    "latest_disclosed_at": "2026-09-28",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "co_lead": 1,
-      "historical_or_ambiguous": 3,
-      "lead": 3,
-      "participant": 5
+      "co_lead": 2,
+      "historical_or_ambiguous": 4,
+      "lead": 4,
+      "participant": 9
     },
     "round_codes": [
       "seed",
+      "series_a",
+      "series_b",
       "series_b_extension",
       "series_c",
       "series_d",
       "series_f",
       "series_g",
+      "series_h",
       "strategic"
     ],
     "portfolio_companies": [
@@ -95,14 +98,29 @@
         "name": "Anthropic"
       },
       {
+        "entity_id": "EN-2f4436342c46decc",
+        "canonical_entity_id": "",
+        "name": "Cerebras Systems"
+      },
+      {
         "entity_id": "EN-2dc010636b9dce91",
         "canonical_entity_id": "EN-2dc010636b9dce91",
         "name": "Databricks"
       },
       {
-        "entity_id": "EN-b4c73396844f7d05",
+        "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
+      },
+      {
+        "entity_id": "EN-e2e2d8b189801fe6",
+        "canonical_entity_id": "",
+        "name": "Lightfield"
+      },
+      {
+        "entity_id": "EN-e3baa3a2daee23ae",
+        "canonical_entity_id": "",
+        "name": "Miter"
       },
       {
         "entity_id": "EN-712dffae168fe622",
@@ -120,6 +138,11 @@
         "name": "Replit"
       },
       {
+        "entity_id": "EN-4d7594e57f7d03f3",
+        "canonical_entity_id": "",
+        "name": "Supabase"
+      },
+      {
         "entity_id": "FICO-sycamore",
         "canonical_entity_id": "",
         "name": "Sycamore"
@@ -127,12 +150,53 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-8949342ab25bc941",
-        "funding_insight_id": "FI-1b6dd112c647d4a1",
+        "activity_id": "IA-8d562c264cb39690",
+        "funding_insight_id": "FI-9bf08b154efd4b4b",
         "event_ids": [
-          "EV-35fa913e4709b4d6"
+          "EV-55581be112058bd5"
         ],
-        "company_entity_id": "EN-b4c73396844f7d05",
+        "company_entity_id": "EN-e3baa3a2daee23ae",
+        "company_canonical_entity_id": "",
+        "company_name": "Miter",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8b2ed67c1554bee8",
+            "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
+            "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+            "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
+            "quote": "Existing investors Bessemer Venture Partners and Coatue also participated.",
+            "quote_hash": "8713cebee26bd9c6917c795b13a4f2d624f7dc4a428239f803c1d96a5380a3ee"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f208bdaeab37666b",
+        "funding_insight_id": "FI-4b143304af694a92",
+        "event_ids": [
+          "EV-35fa913e4709b4d6",
+          "EV-861d4440dcbb9b09"
+        ],
+        "company_entity_id": "FICO-instinct",
         "company_canonical_entity_id": "",
         "company_name": "Instinct",
         "round": "C轮",
@@ -160,54 +224,54 @@
             "source_id": "FISRC-560cbbccadfe271d",
             "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
             "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-            "source_content_hash": "7430813f0a12b226",
-            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-            "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+            "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
           }
         ]
       },
       {
-        "activity_id": "IA-f4cf362c0b3d249f",
-        "funding_insight_id": "FI-845dc20a9c30188f",
+        "activity_id": "IA-fbfb0ac563d083f4",
+        "funding_insight_id": "FI-4065d03db9160118",
         "event_ids": [
-          "EV-657176fd0dff6209"
+          "EV-d321124f4f5e0edc"
         ],
-        "company_entity_id": "EN-336ab1deb42d6284",
+        "company_entity_id": "EN-e2e2d8b189801fe6",
         "company_canonical_entity_id": "",
-        "company_name": "Stability AI",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "$76 million",
+        "company_name": "Lightfield",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$47 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 76000000,
+          "value": 47000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "7600 万美元"
+          "display_zh": "4700 万美元"
         },
-        "announced_at": "2026-08-25",
+        "announced_at": "2026-09-09",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "2022 年 1.01 亿美元融资领投方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-2a3c20bc832bd7ef",
-            "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
-            "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
-            "source_content_hash": "871d436c27d08479",
-            "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
-            "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+            "source_id": "FISRC-c224adac23aa7c1e",
+            "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+            "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+            "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+            "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+            "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
           }
         ]
       },
       {
-        "activity_id": "IA-5f1ce199a0098494",
+        "activity_id": "IA-a29588ce0f73d8a1",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
         "event_ids": [
           "EV-f5dd6dec49ad83aa"
@@ -247,10 +311,52 @@
         ]
       },
       {
-        "activity_id": "IA-a9bc72ac5dec06bb",
+        "activity_id": "IA-1ecd81a59ce26b02",
         "funding_insight_id": "FI-d00f79c5a43227dc",
         "event_ids": [
-          "EV-0d4e656aa51f9a46"
+          "EV-0d4e656aa51f9a46",
+          "EV-50b5c4f93ead145d"
+        ],
+        "company_entity_id": "EN-2dc010636b9dce91",
+        "company_canonical_entity_id": "EN-2dc010636b9dce91",
+        "company_name": "Databricks",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "新一轮战略融资",
+        "amount_original": "约 30 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 30 亿美元"
+        },
+        "announced_at": "2026-07-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-23f811fd2df5ab63",
+            "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+            "source_title": "Databricks 同比增长超80%，收入年化运行率突破$7B，扩展 Lakebase、Genie 和 Unity AI Gateway",
+            "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+            "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
+            "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a7552dcd1126736c",
+        "funding_insight_id": "FI-d00f79c5a43227dc",
+        "event_ids": [
+          "EV-0d4e656aa51f9a46",
+          "EV-50b5c4f93ead145d"
         ],
         "company_entity_id": "EN-2dc010636b9dce91",
         "company_canonical_entity_id": "EN-2dc010636b9dce91",
@@ -287,7 +393,7 @@
         ]
       },
       {
-        "activity_id": "IA-8f4a41e2fcdc2240",
+        "activity_id": "IA-ef558d4be03a8a0a",
         "funding_insight_id": "FI-9fd39f44b35d940c",
         "event_ids": [
           "EV-d9cc588fb41a7e67"
@@ -327,95 +433,87 @@
         ]
       },
       {
-        "activity_id": "IA-9fe25e9e8c5dcb81",
-        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "activity_id": "IA-42f3cc60cae0b9ac",
+        "funding_insight_id": "FI-d3f8f22849d09dcc",
         "event_ids": [
-          "EV-d9cc588fb41a7e67"
+          "EV-42ba61e8713cd2e6"
         ],
-        "company_entity_id": "EN-712dffae168fe622",
+        "company_entity_id": "EN-4d7594e57f7d03f3",
         "company_canonical_entity_id": "",
-        "company_name": "Nomos Ai Inc.",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "1.2亿美元",
+        "company_name": "Supabase",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$500M",
         "amount_normalized": {
           "currency": "USD",
-          "value": 120000000,
+          "value": 500000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "1.2 亿美元"
+          "display_zh": "5 亿美元"
         },
-        "announced_at": "2026-07-07",
+        "announced_at": "2026-06-04",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方（2025年1月参投）",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-afaa91a6569d1f7a",
-            "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-            "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-            "source_content_hash": "afe0afef4cf0ce8c",
-            "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
-            "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+            "source_id": "FISRC-a9654b37adce00dc",
+            "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+            "source_title": "Why Georgian Invested in Supabase",
+            "source_content_hash": "2ff196d4fa7dc98a",
+            "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+            "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
           }
         ]
       },
       {
-        "activity_id": "IA-20def59f85bb933b",
-        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "activity_id": "IA-3f43a90d888c4177",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
         "event_ids": [
-          "EV-ef7346378fcf9746"
+          "EV-823ca893b550b2f4"
         ],
-        "company_entity_id": "EN-e78bdebae031095b",
-        "company_canonical_entity_id": "EN-e78bdebae031095b",
-        "company_name": "SpaceX",
-        "round": "IPO",
-        "round_code": "ipo",
-        "round_original": "IPO",
-        "amount_original": "$75 billion",
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
         "amount_normalized": {
           "currency": "USD",
-          "value": 75000000000,
+          "value": 65000000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "750 亿美元"
+          "display_zh": "650 亿美元"
         },
-        "announced_at": "2026-06-03",
+        "announced_at": "2026-05-28",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
         "evidence": [
           {
-            "source_id": "FISRC-0349532f469a6b45",
-            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-            "source_title": "Early SpaceX investors will now reap the rewards",
-            "source_content_hash": "e4b5710f29e81069",
-            "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
-            "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
-          },
-          {
-            "source_id": "FISRC-0349532f469a6b45",
-            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-            "source_title": "Early SpaceX investors will now reap the rewards",
-            "source_content_hash": "e4b5710f29e81069",
-            "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds.",
-            "quote_hash": "5e8e04111f29d035d750044b9a6c77de787fbee92b8811dbab8aad251bbfb103"
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
+            "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
           }
         ]
       },
       {
-        "activity_id": "IA-952b10130072e40f",
+        "activity_id": "IA-63feda3ed4bc5d9e",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
         "event_ids": [
           "EV-d4e44892226be468"
@@ -455,7 +553,7 @@
         ]
       },
       {
-        "activity_id": "IA-717f8e2307853189",
+        "activity_id": "IA-0c9ab0d83ce3486d",
         "funding_insight_id": "FI-91df568a315de93f",
         "event_ids": [
           "EV-b695dedc9acda5dc",
@@ -497,7 +595,7 @@
         ]
       },
       {
-        "activity_id": "IA-93604d3f066943d4",
+        "activity_id": "IA-047c0ee544ee138a",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
         "event_ids": [
           "EV-8eb0acb180b7ad9d"
@@ -537,7 +635,7 @@
         ]
       },
       {
-        "activity_id": "IA-39d556ebfbdeb172",
+        "activity_id": "IA-969f5b679e6c0609",
         "funding_insight_id": "FI-352a7cfb23508f3e",
         "event_ids": [
           "EV-31df816db86db282"
@@ -577,7 +675,79 @@
         ]
       },
       {
-        "activity_id": "IA-77ff43331721bee6",
+        "activity_id": "IA-178e3406fbd4c7d2",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-51b0427643bffd15",
+            "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+            "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+            "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+            "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+            "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9750ebbf5192dcbc",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方（2025年1月参投）",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（2025年1月参投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-afaa91a6569d1f7a",
+            "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+            "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+            "source_content_hash": "afe0afef4cf0ce8c",
+            "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
+            "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-57f9067ede54f779",
         "funding_insight_id": "FI-c210fc9ab5481f28",
         "event_ids": [
           "EV-b31602193dbf4e08"
@@ -615,24 +785,136 @@
             "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8125a4553a0c16de",
+        "funding_insight_id": "FI-9bf08b154efd4b4b",
+        "event_ids": [
+          "EV-55581be112058bd5"
+        ],
+        "company_entity_id": "EN-e3baa3a2daee23ae",
+        "company_canonical_entity_id": "",
+        "company_name": "Miter",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-dec851f0b98b1556",
+            "source_url": "https://www.miter.com/resources/a-better-built-world/",
+            "source_title": "A Better Built World - Miter",
+            "source_content_hash": "813da1283dd449c1",
+            "quote": "today we’re announcing $38 million in funding led by Bessemer Venture Partners and Coatue",
+            "quote_hash": "012cccc156d2a78050f2f3c0c8a8bedb9b50d3727b4f0073b669e228a29c32e0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-42d542216a6aca1b",
+        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "event_ids": [
+          "EV-ef7346378fcf9746"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
+            "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
+          },
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds.",
+            "quote_hash": "5e8e04111f29d035d750044b9a6c77de787fbee92b8811dbab8aad251bbfb103"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c47791d0d04251ad",
+        "funding_insight_id": "FI-845dc20a9c30188f",
+        "event_ids": [
+          "EV-657176fd0dff6209"
+        ],
+        "company_entity_id": "EN-336ab1deb42d6284",
+        "company_canonical_entity_id": "",
+        "company_name": "Stability AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2022 年 1.01 亿美元融资领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2a3c20bc832bd7ef",
+            "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+            "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+            "source_content_hash": "871d436c27d08479",
+            "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+            "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+          }
+        ]
       }
     ],
     "evidence": [
       {
+        "source_id": "FISRC-8b2ed67c1554bee8",
+        "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
+        "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+        "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
+        "quote": "Existing investors Bessemer Venture Partners and Coatue also participated.",
+        "quote_hash": "8713cebee26bd9c6917c795b13a4f2d624f7dc4a428239f803c1d96a5380a3ee"
+      },
+      {
         "source_id": "FISRC-560cbbccadfe271d",
         "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
         "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-        "source_content_hash": "7430813f0a12b226",
-        "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-        "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+        "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+        "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+        "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
       },
       {
-        "source_id": "FISRC-2a3c20bc832bd7ef",
-        "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
-        "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
-        "source_content_hash": "871d436c27d08479",
-        "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
-        "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
+        "source_id": "FISRC-c224adac23aa7c1e",
+        "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+        "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+        "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+        "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+        "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
       },
       {
         "source_id": "FISRC-077b1124fc8e9581",
@@ -641,6 +923,14 @@
         "source_content_hash": "7ff9bbd6aca29214",
         "quote": "Singapore’s sovereign wealth fund GIC and Coatue Management led the deal, Anthropic said on Thursday.",
         "quote_hash": "ac5298f37850c97064e8b1fb759b846d39b392aa5084f25a2ff167911b5cee47"
+      },
+      {
+        "source_id": "FISRC-23f811fd2df5ab63",
+        "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+        "source_title": "Databricks 同比增长超80%，收入年化运行率突破$7B，扩展 Lakebase、Genie 和 Unity AI Gateway",
+        "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+        "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
+        "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
       },
       {
         "source_id": "FISRC-4f2f10efb22c92e2",
@@ -659,28 +949,20 @@
         "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
       },
       {
-        "source_id": "FISRC-afaa91a6569d1f7a",
-        "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-        "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-        "source_content_hash": "afe0afef4cf0ce8c",
-        "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
-        "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+        "source_id": "FISRC-a9654b37adce00dc",
+        "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+        "source_title": "Why Georgian Invested in Supabase",
+        "source_content_hash": "2ff196d4fa7dc98a",
+        "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+        "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
       },
       {
-        "source_id": "FISRC-0349532f469a6b45",
-        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-        "source_title": "Early SpaceX investors will now reap the rewards",
-        "source_content_hash": "e4b5710f29e81069",
-        "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
-        "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
-      },
-      {
-        "source_id": "FISRC-0349532f469a6b45",
-        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-        "source_title": "Early SpaceX investors will now reap the rewards",
-        "source_content_hash": "e4b5710f29e81069",
-        "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds.",
-        "quote_hash": "5e8e04111f29d035d750044b9a6c77de787fbee92b8811dbab8aad251bbfb103"
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
+        "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
       },
       {
         "source_id": "FISRC-1e2b3bad243bd066",
@@ -715,12 +997,60 @@
         "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
       },
       {
+        "source_id": "FISRC-51b0427643bffd15",
+        "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+        "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+        "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+        "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+        "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+      },
+      {
+        "source_id": "FISRC-afaa91a6569d1f7a",
+        "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+        "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+        "source_content_hash": "afe0afef4cf0ce8c",
+        "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
+        "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+      },
+      {
         "source_id": "FISRC-9b0f32fe01d091cc",
         "source_url": "https://techcrunch.com/2023/04/27/replit-funding-100m-generative-ai/",
         "source_title": "Replit，开发GitHub Copilot竞品的网页IDE，获1亿美元融资",
         "source_content_hash": "3b03664369ea0afe",
         "quote": "with participation from Khosla Ventures, Coatue, SV Angel, Y Combinator, Bloomberg Beta, Naval Ravikant, ARK Ventures and Hamilton Helmer.",
         "quote_hash": "11c752e870e24e5569eab06b3c051d8dce1a5ce34ab4a565784c8f1395bb884a"
+      },
+      {
+        "source_id": "FISRC-dec851f0b98b1556",
+        "source_url": "https://www.miter.com/resources/a-better-built-world/",
+        "source_title": "A Better Built World - Miter",
+        "source_content_hash": "813da1283dd449c1",
+        "quote": "today we’re announcing $38 million in funding led by Bessemer Venture Partners and Coatue",
+        "quote_hash": "012cccc156d2a78050f2f3c0c8a8bedb9b50d3727b4f0073b669e228a29c32e0"
+      },
+      {
+        "source_id": "FISRC-0349532f469a6b45",
+        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+        "source_title": "Early SpaceX investors will now reap the rewards",
+        "source_content_hash": "e4b5710f29e81069",
+        "quote": "as well as hedge funds such as D1 Capital Partners and Coatue Management",
+        "quote_hash": "f8f9c67c9b70b05e13670c4555108b666573762e5f8532104ea2f4a2955cc0f1"
+      },
+      {
+        "source_id": "FISRC-0349532f469a6b45",
+        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+        "source_title": "Early SpaceX investors will now reap the rewards",
+        "source_content_hash": "e4b5710f29e81069",
+        "quote": "hedge funds such as Coatue and D1 gained exposure through later private rounds.",
+        "quote_hash": "5e8e04111f29d035d750044b9a6c77de787fbee92b8811dbab8aad251bbfb103"
+      },
+      {
+        "source_id": "FISRC-2a3c20bc832bd7ef",
+        "source_url": "https://stability.ai/news-updates/stability-ai-announces-101-million-in-funding-for-open-source-artificial-intelligence",
+        "source_title": "Stability AI Announces $101 Million in Funding for Open-Source Artificial Intelligence &mdash; Stability AI",
+        "source_content_hash": "871d436c27d08479",
+        "quote": "The oversubscribed round was led by Coatue, Lightspeed Venture Partners, and O'Shaughnessy Ventures LLC.",
+        "quote_hash": "6341bc5bddb560309366a4d1adcc2ab034d9c2a252631e555b4517d61bddd331"
       }
     ],
     "public_profile": {
@@ -770,16 +1100,16 @@
           "source_id": "coatue_home"
         },
         {
+          "description": "融资来源记录：Miter · B轮 · 2026-09-30 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8b2ed67c1554bee8"
+        },
+        {
           "description": "融资来源记录：Instinct · C轮 · 2026-09-28 · 本轮参投 · $1B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-560cbbccadfe271d"
         },
         {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-08-10 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-077b1124fc8e9581"
-        },
-        {
-          "description": "融资来源记录：Databricks · 战略融资 · 2026-07-17 · 本轮领投 · 约 30 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4f2f10efb22c92e2"
+          "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮参投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c224adac23aa7c1e"
         }
       ],
       "contacts": [
@@ -829,28 +1159,28 @@
           "quote_hash": "7d269a691e28d24667fba1220aa52921d36a066250ef7a113f3e6bfee4795916"
         },
         {
+          "source_id": "FISRC-8b2ed67c1554bee8",
+          "source_url": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
+          "source_title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+          "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
+          "quote": "Existing investors Bessemer Venture Partners and Coatue also participated.",
+          "quote_hash": "8713cebee26bd9c6917c795b13a4f2d624f7dc4a428239f803c1d96a5380a3ee"
+        },
+        {
           "source_id": "FISRC-560cbbccadfe271d",
           "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
           "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-          "source_content_hash": "7430813f0a12b226",
-          "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-          "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+          "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+          "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+          "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
         },
         {
-          "source_id": "FISRC-077b1124fc8e9581",
-          "source_url": "https://sg.finance.yahoo.com/news/gic-backed-openai-rival-anthropic-202159553.html",
-          "source_title": "GIC-backed OpenAI rival Anthropic finalises US$30 bil funding at US$380 bil value",
-          "source_content_hash": "7ff9bbd6aca29214",
-          "quote": "Singapore’s sovereign wealth fund GIC and Coatue Management led the deal, Anthropic said on Thursday.",
-          "quote_hash": "ac5298f37850c97064e8b1fb759b846d39b392aa5084f25a2ff167911b5cee47"
-        },
-        {
-          "source_id": "FISRC-4f2f10efb22c92e2",
-          "source_url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act",
-          "source_title": "Databricks 估值达 1880 亿美元，Coatue 领投新一轮融资",
-          "source_content_hash": "905ee67082facdf9",
-          "quote": "The round was led by Coatue.",
-          "quote_hash": "fbe951c93654f636275f7cc1b5b0f2e96688afcfc3ab9681c40238e510d84e8e"
+          "source_id": "FISRC-c224adac23aa7c1e",
+          "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+          "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+          "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+          "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+          "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -861,6 +1191,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[16].role": {
+          "text": "Series A 领投",
+          "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:16.913Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "官网展示 Anthropic、OpenAI、Databricks、Stripe、SpaceX、Cursor 等私募投资示例，并明确提示这些公司不是全部组合或任何单一基金的代表样本。",
           "source_hash": "3174892f4385b22d4632b97b3de05d7b44d47a85bf981ef9ffd383887936c37f",

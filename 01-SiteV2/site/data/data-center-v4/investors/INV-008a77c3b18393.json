@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-25",
-    "latest_disclosed_at": "2026-06-25",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-5d3875c319452ecc",
+        "canonical_entity_id": "",
+        "name": "Restate"
+      },
       {
         "entity_id": "EN-d1fa538179ba6371",
         "canonical_entity_id": "",
@@ -86,7 +93,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-6546f65cf566c97d",
+        "activity_id": "IA-b02eb1b98d382d12",
+        "funding_insight_id": "FI-36310666a49716b1",
+        "event_ids": [
+          "EV-c2f262e118de5629"
+        ],
+        "company_entity_id": "EN-5d3875c319452ecc",
+        "company_canonical_entity_id": "",
+        "company_name": "Restate",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$20 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2000 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-32de5b12bdde4fb9",
+            "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+            "source_title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
+            "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+            "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+            "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-951f3d89308022d1",
         "funding_insight_id": "FI-b4ed51811a14f812",
         "event_ids": [
           "EV-921c843ad32c993c"
@@ -124,9 +171,49 @@
             "quote_hash": "8ec1c22dd9b07ac33c842f8d3fe5044c8e05058b99d4fa15511e9ce60c5a20c2"
           }
         ]
+      },
+      {
+        "activity_id": "IA-660b0f64474a2f8f",
+        "funding_insight_id": "FI-36310666a49716b1",
+        "event_ids": [
+          "EV-c2f262e118de5629"
+        ],
+        "company_entity_id": "EN-5d3875c319452ecc",
+        "company_canonical_entity_id": "",
+        "company_name": "Restate",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-897ee0f062e50b23",
+            "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
+            "source_title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
+            "source_content_hash": "01508a456a92b8fc",
+            "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+            "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-32de5b12bdde4fb9",
+        "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+        "source_title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
+        "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+        "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+        "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
+      },
       {
         "source_id": "FISRC-11ff205cb2054931",
         "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
@@ -134,6 +221,14 @@
         "source_content_hash": "314c02d8610d1604",
         "quote": "Other participating investors included Redpoint Ventures",
         "quote_hash": "8ec1c22dd9b07ac33c842f8d3fe5044c8e05058b99d4fa15511e9ce60c5a20c2"
+      },
+      {
+        "source_id": "FISRC-897ee0f062e50b23",
+        "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
+        "source_title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
+        "source_content_hash": "01508a456a92b8fc",
+        "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+        "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
       }
     ],
     "public_profile": {
@@ -163,8 +258,16 @@
           "source_id": "redpoint_scott_case"
         },
         {
+          "description": "融资来源记录：Restate · A轮 · 2026-09-30 · 本轮参投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-32de5b12bdde4fb9"
+        },
+        {
           "description": "融资来源记录：Sail Research · 多轮融资 · 2026-06-25 · 本轮参投 · $80 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-11ff205cb2054931"
+        },
+        {
+          "description": "融资来源记录：Restate · 历史轮次未披露 · 种子轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-897ee0f062e50b23"
         }
       ],
       "contacts": [
@@ -210,12 +313,28 @@
           "quote_hash": "e30584648a0302fd0003eff79ad376e340036737d6597da397d309434eb14bdc"
         },
         {
+          "source_id": "FISRC-32de5b12bdde4fb9",
+          "source_url": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+          "source_title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
+          "source_content_hash": "ce24b87fe266c679159d33ab6c8259293300502d15d5bad088c96b5066cd55da",
+          "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures.",
+          "quote_hash": "1af7de2513626c0c9424a5489c8c777f2cab19344ad912266c0f7e458ddae4fe"
+        },
+        {
           "source_id": "FISRC-11ff205cb2054931",
           "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
           "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
           "source_content_hash": "314c02d8610d1604",
           "quote": "Other participating investors included Redpoint Ventures",
           "quote_hash": "8ec1c22dd9b07ac33c842f8d3fe5044c8e05058b99d4fa15511e9ce60c5a20c2"
+        },
+        {
+          "source_id": "FISRC-897ee0f062e50b23",
+          "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
+          "source_title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
+          "source_content_hash": "01508a456a92b8fc",
+          "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+          "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
         }
       ],
       "last_verified_at": "2026-10-02"

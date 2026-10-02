@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,29 +61,35 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-20",
+    "first_disclosed_at": "2026-06-03",
     "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a",
-      "series_b"
+      "series_b",
+      "series_d"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-12765295db4f1e79",
         "canonical_entity_id": "",
         "name": "Natural AI, Inc."
+      },
+      {
+        "entity_id": "EN-586937124e151c46",
+        "canonical_entity_id": "EN-586937124e151c46",
+        "name": "Suno"
       },
       {
         "entity_id": "EN-8c5929d253b07fed",
@@ -93,7 +99,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-9a4bc3abbbc348fe",
+        "activity_id": "IA-a71cfd0ec9fd53cf",
         "funding_insight_id": "FI-c0b843a5e6f6ea0a",
         "event_ids": [
           "EV-d43103952399bc68"
@@ -133,7 +139,7 @@
         ]
       },
       {
-        "activity_id": "IA-5fdf0edec6819d46",
+        "activity_id": "IA-3a9b9a41f8bc5784",
         "funding_insight_id": "FI-a7f67888b410be24",
         "event_ids": [
           "EV-901155ab700a7e8e"
@@ -171,6 +177,47 @@
             "quote_hash": "b620aa65aeb193e4ceb76d6df49b7a121047539efabf33057e23eee1e6cd80ff"
           }
         ]
+      },
+      {
+        "activity_id": "IA-cdd2e7ef21304bba",
+        "funding_insight_id": "FI-cbf93da745326644",
+        "event_ids": [
+          "EV-3e92fba5502f1aba",
+          "EV-31579660b945ef01"
+        ],
+        "company_entity_id": "EN-586937124e151c46",
+        "company_canonical_entity_id": "EN-586937124e151c46",
+        "company_name": "Suno",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8a34984c8e02defc",
+            "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+            "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+            "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+            "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+            "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -189,6 +236,14 @@
         "source_content_hash": "487d88d020a14f20",
         "quote": "Kirsten Green, founder and managing partner at VC firm Forerunner. Green, whose firm focuses on consumer experiences and the future of commerce, led its $30 million Series A round",
         "quote_hash": "b620aa65aeb193e4ceb76d6df49b7a121047539efabf33057e23eee1e6cd80ff"
+      },
+      {
+        "source_id": "FISRC-8a34984c8e02defc",
+        "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+        "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+        "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+        "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+        "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
       }
     ],
     "public_profile": {
@@ -207,6 +262,10 @@
         {
           "description": "融资来源记录：Natural AI, Inc. · A轮 · 2026-07-20 · 本轮领投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cf3c8dfd6c45ed29"
+        },
+        {
+          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8a34984c8e02defc"
         }
       ],
       "contacts": [],
@@ -226,6 +285,14 @@
           "source_content_hash": "487d88d020a14f20",
           "quote": "Kirsten Green, founder and managing partner at VC firm Forerunner. Green, whose firm focuses on consumer experiences and the future of commerce, led its $30 million Series A round",
           "quote_hash": "b620aa65aeb193e4ceb76d6df49b7a121047539efabf33057e23eee1e6cd80ff"
+        },
+        {
+          "source_id": "FISRC-8a34984c8e02defc",
+          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
         }
       ],
       "last_verified_at": "2026-09-25"

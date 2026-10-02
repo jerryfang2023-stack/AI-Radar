@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,73 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-21",
-    "latest_disclosed_at": "2026-08-21",
+    "first_disclosed_at": "2026-08-13",
+    "latest_disclosed_at": "2026-08-13",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-607a596a603dd679",
+        "canonical_entity_id": "",
+        "name": "Starcloud"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-83f46ebb1b90f815",
+        "activity_id": "IA-570d0fabb1addad3",
+        "funding_insight_id": "FI-43e6948d7884584e",
+        "event_ids": [
+          "EV-a0b76c46462b5e3c"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "$170 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 170000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.7 亿美元"
+        },
+        "announced_at": "2026-08-13",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f80a0b6f2f7f63f8",
+            "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+            "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+            "source_content_hash": "a7c980dcd5f3e30f",
+            "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+            "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-80699618bcd09e66",
         "funding_insight_id": "FI-8a42f200f5caa9f3",
         "event_ids": [
           "EV-259566f35ea4f66d"
@@ -86,23 +135,15 @@
         "company_entity_id": "EN-607a596a603dd679",
         "company_canonical_entity_id": "",
         "company_name": "Starcloud",
-        "round": "A轮扩展",
-        "round_code": "series_a_extension",
-        "round_original": "A轮扩展",
-        "amount_original": "$250 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 250000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "2.5 亿美元"
-        },
-        "announced_at": "2026-08-21",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "历史轮次天使投资人",
         "role_code": "historical_or_ambiguous",
@@ -119,6 +160,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-f80a0b6f2f7f63f8",
+        "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+        "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+        "source_content_hash": "a7c980dcd5f3e30f",
+        "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+        "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
+      },
       {
         "source_id": "FISRC-64c63dc926fc8a24",
         "source_url": "https://spacenews.com/starcloud-achieves-unicorn-status-with-170-million-raise-for-orbital-data-centers/",
@@ -146,6 +195,10 @@
           "source_id": "PFSRC-INV-3770942243161b-1"
         },
         {
+          "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f80a0b6f2f7f63f8"
+        },
+        {
           "description": "融资来源记录：Starcloud · 历史轮次未披露 · 历史轮次天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-64c63dc926fc8a24"
         }
@@ -167,6 +220,14 @@
           "source_content_hash": "2ddfdc9ec892fd15717c44d8699d7f3f4808fe667ed718d1a1f52004a06573b3",
           "quote": "Dennis A. Muilenburg continues as CEO, president and a director.",
           "quote_hash": "b6fa4566ddb39ec24a1e0d8601c455ac4490a6f1eed07e5e000fe2b46a8b2c51"
+        },
+        {
+          "source_id": "FISRC-f80a0b6f2f7f63f8",
+          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
+          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans",
+          "source_content_hash": "a7c980dcd5f3e30f",
+          "quote": "Other investors included NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, Fuse Ventures, Manhattan West, and Monolith Power Systems as well as angel investors like former Boeing CEO Dennis Muilenburg.",
+          "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
         },
         {
           "source_id": "FISRC-64c63dc926fc8a24",

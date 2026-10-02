@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,17 +62,18 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-07-07",
     "latest_disclosed_at": "2026-07-07",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -87,7 +88,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-edc5f7384562a7b8",
+        "activity_id": "IA-095ee7ee53bba9b0",
         "funding_insight_id": "FI-43fe661ce1291832",
         "event_ids": [
           "EV-2f0f3200b9800877"
@@ -127,7 +128,7 @@
         ]
       },
       {
-        "activity_id": "IA-052e46c4ede92d8b",
+        "activity_id": "IA-c9f268783cae9638",
         "funding_insight_id": "FI-43fe661ce1291832",
         "event_ids": [
           "EV-2f0f3200b9800877"
@@ -135,23 +136,15 @@
         "company_entity_id": "EN-aa949c066d46acbf",
         "company_canonical_entity_id": "EN-aa949c066d46acbf",
         "company_name": "Even Realities Technology",
-        "round": "Pre-B轮",
-        "round_code": "pre_series_b",
-        "round_original": "Pre-B轮",
-        "amount_original": "1.5亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 150000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1.5 亿美元"
-        },
-        "announced_at": "2026-07-07",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "A轮投资方",
         "role_code": "historical_or_ambiguous",
@@ -163,6 +156,46 @@
             "source_content_hash": "5e7f9a9c8a73026b",
             "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
             "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-61080c384756656e",
+        "funding_insight_id": "FI-97848c4266a2ba89",
+        "event_ids": [
+          "EV-5e847cd78e657cb5"
+        ],
+        "company_entity_id": "EN-5ae517f37304d77d",
+        "company_canonical_entity_id": "",
+        "company_name": "PixVerse",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "领投C轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-002776ecfe7ba6a0",
+            "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
+            "source_title": "视频生成初创公司PixVerse融资4.39亿美元，估值突破20亿美元",
+            "source_content_hash": "8613eee6f7b9e1c8f7dc544c000940dea87d210a3d3a7afd1d82a09eeb569abe",
+            "quote": "The company closed its initial Series C round in March, led by CDH Investments.",
+            "quote_hash": "b83374a98cf59305090eb453d512533090960913274cc3ec7741319d9bff0afa"
+          },
+          {
+            "source_id": "FISRC-6d1ff348d372728c",
+            "source_url": "https://pixverse.ai/en/blog/pixverse-joins-global-ai-unicorns-asia-largest-funding-ai-video",
+            "source_title": "PixVerse Joins the Ranks of Global AI Unicorns with Asia's Largest Funding Round in AI Video Generation",
+            "source_content_hash": "b98bf780bb54dac4",
+            "quote": "The round was led by CDH Investments, with participation from international investors Antler, EnvisionX Capital, iGlobe Partners, Lion X Ventures, UOB Venture Management, and 3W Fund, alongside other investors.",
+            "quote_hash": "6e69a63fe64f947335fec080603c5175d7449159fd66a7eca4054cdad34aeb09"
           }
         ]
       }
@@ -183,6 +216,22 @@
         "source_content_hash": "5e7f9a9c8a73026b",
         "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
         "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+      },
+      {
+        "source_id": "FISRC-002776ecfe7ba6a0",
+        "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
+        "source_title": "视频生成初创公司PixVerse融资4.39亿美元，估值突破20亿美元",
+        "source_content_hash": "8613eee6f7b9e1c8f7dc544c000940dea87d210a3d3a7afd1d82a09eeb569abe",
+        "quote": "The company closed its initial Series C round in March, led by CDH Investments.",
+        "quote_hash": "b83374a98cf59305090eb453d512533090960913274cc3ec7741319d9bff0afa"
+      },
+      {
+        "source_id": "FISRC-6d1ff348d372728c",
+        "source_url": "https://pixverse.ai/en/blog/pixverse-joins-global-ai-unicorns-asia-largest-funding-ai-video",
+        "source_title": "PixVerse Joins the Ranks of Global AI Unicorns with Asia's Largest Funding Round in AI Video Generation",
+        "source_content_hash": "b98bf780bb54dac4",
+        "quote": "The round was led by CDH Investments, with participation from international investors Antler, EnvisionX Capital, iGlobe Partners, Lion X Ventures, UOB Venture Management, and 3W Fund, alongside other investors.",
+        "quote_hash": "6e69a63fe64f947335fec080603c5175d7449159fd66a7eca4054cdad34aeb09"
       }
     ],
     "public_profile": {
@@ -239,6 +288,10 @@
         {
           "description": "融资来源记录：Even Realities Technology · 历史轮次未披露 · A轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-340182e8dcb597a3"
+        },
+        {
+          "description": "融资来源记录：PixVerse · 历史轮次未披露 · 领投C轮。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-002776ecfe7ba6a0"
         }
       ],
       "contacts": [
@@ -330,6 +383,14 @@
           "source_content_hash": "5e7f9a9c8a73026b",
           "quote": "its initial $9 million Series A round included investment by CDH Investments, Cyanhill Capital, and China Growth Capital among others",
           "quote_hash": "ec94d96b08f5c55efa4344b591c4722d26e4e68c37ba1ba5da7bbde8161ce74f"
+        },
+        {
+          "source_id": "FISRC-002776ecfe7ba6a0",
+          "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
+          "source_title": "视频生成初创公司PixVerse融资4.39亿美元，估值突破20亿美元",
+          "source_content_hash": "8613eee6f7b9e1c8f7dc544c000940dea87d210a3d3a7afd1d82a09eeb569abe",
+          "quote": "The company closed its initial Series C round in March, led by CDH Investments.",
+          "quote_hash": "b83374a98cf59305090eb453d512533090960913274cc3ec7741319d9bff0afa"
         }
       ],
       "identity_status": "verified",

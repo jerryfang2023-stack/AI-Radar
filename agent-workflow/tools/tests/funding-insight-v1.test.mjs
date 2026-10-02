@@ -7,6 +7,7 @@ import test from "node:test";
 import { fileURLToPath } from "node:url";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
+import { taxonomyConsistencyProblems } from "../assert-taxonomy-consistency-v4-1.mjs";
 import {
   FUNDING_INDUSTRY_IDS,
   FUNDING_INSIGHT_VERSION,
@@ -42,13 +43,48 @@ import {
   fundingHistory,
   recoveryCardsFromGit,
   fundingResearchNameMatches,
+  modelCorrectionProblem,
 } from "../generate-funding-insights-deepseek.mjs";
+
+test("research hierarchy retries distinguish industry IDs from market subcategories", () => {
+  for (const issue of ["market_subcategory_id_unknown", "market_subcategory_parent_mismatch"]) {
+    const guidance = modelCorrectionProblem(issue);
+    assert.ok(guidance.startsWith(issue));
+    assert.ok(guidance.includes('"legal":"industry_applications"'));
+    assert.ok(guidance.includes("Do not copy industry_ids"));
+  }
+  assert.equal(modelCorrectionProblem("investors_missing"), "investors_missing");
+});
+
+test("late financing rounds retain their letters without reading prose as a round", () => {
+  assert.equal(normalizeFundingRound("Series H").code, "series_h");
+  assert.equal(normalizeFundingRound("L轮").code, "series_l");
+  assert.equal(normalizeFundingRound("Series H extension").code, "series_h_extension");
+  assert.notEqual(normalizeFundingRound("series investments").code, "series_i");
+  assert.notEqual(normalizeFundingRound("series funding").code, "series_f");
+});
 
 test("targeted funding research does not restore unrelated event cards from stale checkpoints", () => {
   const selected = new Set(["EV-current-a", "EV-current-b"]);
   assert.equal(checkpointCardMatchesSelection("EV-current-a", selected), true);
   assert.equal(checkpointCardMatchesSelection("EV-stale", selected), false);
   assert.equal(checkpointCardMatchesSelection("EV-any", new Set()), true);
+});
+
+test("financing taxonomy gate retains active checks without depending on frozen applications", () => {
+  const root = fs.mkdtempSync(path.join(os.tmpdir(), "financing-taxonomy-scope-"));
+  const write = (file, value) => { const target = path.join(root, file); fs.mkdirSync(path.dirname(target), { recursive: true }); fs.writeFileSync(target, JSON.stringify(value)); };
+  try {
+    fs.mkdirSync(path.join(root, "01-SiteV2/content/11-databases/data-center-v4"), { recursive: true });
+    fs.mkdirSync(path.join(root, "01-SiteV2/content/12-applications/funding-insights"), { recursive: true });
+    write("agent-workflow/product/tag-taxonomy-v4.json", { tags: [], facets: [] });
+    write("01-SiteV2/site/data/data-center-v4-frontstage.json", { meta: { taxonomyVersion: "TAG-V4.1" } });
+    write("01-SiteV2/site/data/funding-insights-v1.json", { meta: { taxonomy_version: "TAG-V4.1" } });
+    assert.deepEqual(taxonomyConsistencyProblems(root), []);
+    assert.ok(taxonomyConsistencyProblems(root, { includeArchivedApplications: true }).some(issue => issue.includes("trend application")));
+    write("01-SiteV2/site/data/funding-insights-v1.json", { meta: { taxonomy_version: "stale" } });
+    assert.ok(taxonomyConsistencyProblems(root).includes("funding application taxonomy version drift"));
+  } finally { fs.rmSync(root, { recursive: true, force: true }); }
 });
 
 test("accepted financing round takes precedence over infrastructure product descriptions", () => {
@@ -58,6 +94,25 @@ test("accepted financing round takes precedence over infrastructure product desc
   assert.equal(canonicalFundingEventRound(event, [{ ...claim, verification_status: "pending" }]).code, "infrastructure");
   assert.equal(canonicalFundingEventRound(event, [{ ...claim, claim_id: "UNRELATED" }]).code, "infrastructure");
   assert.equal(canonicalFundingEventRound({ object: "基础设施投资" }).code, "infrastructure");
+});
+
+test("current English round is not combined with a historical seed in the next sentence", () => {
+  const event = { claim_refs: ["CL-A"], object: "$25 million Series A" };
+  const claim = { claim_id: "CL-A", claim_type: "funding", verification_status: "accepted", source_quote: "Cymphony raised $25 million in Series A funding. The round follows a previously undisclosed seed investment of $5 million." };
+  assert.equal(canonicalFundingEventRound(event, [claim]).code, "series_a");
+  assert.equal(canonicalFundingEventRound(event, [{ ...claim, source_quote: "Acme raised $12.55 million in Series A funding. Previously it raised seed funding." }]).code, "series_a");
+});
+
+test('Indian funding retains crore/lakh units and does not select another company dollar amount', () => {
+  for (const amount of ['Rs 9 crore','₹9 crore','INR 90 million','Rs. 900 lakh']) {
+    const parsed=normalizeFundingAmount(amount);
+    assert.equal(parsed.currency,'INR');assert.equal(parsed.value,90000000);assert.equal(parsed.status,'exact');
+  }
+  assert.equal(normalizeFundingAmount('over ₹2 crore').status,'lower_bound');
+  const event={event_id:'EV-INR',event_type:'funding',object:'Rs 9 crore',metrics:['Rs 9 crore','$2.7 million'],claim_refs:['CL-INR']};
+  const claims=[{claim_id:'CL-INR',claim_type:'funding',verification_status:'accepted',subject:'Vytalyou',object:'Rs 9 crore',source_quote:'Vytalyou has raised Rs 9 crore in a pre-Series A round. Biopeak raised $2.7 million in January.'}];
+  assert.equal(normalizeFundingAmount(canonicalFundingEventAmount(event,claims)).currency,'INR');
+  assert.equal(normalizeFundingAmount(canonicalFundingEventAmount(event,claims)).value,90000000);
 });
 
 test("qualified foreign Chinese amounts retain currency instead of a truncated CNY metric", () => {
@@ -374,6 +429,9 @@ test("withdrawn financing fails eligibility and persisted-card consistency", () 
     "OpenAI又要融资了：1.2万亿美元估值，谁还敢接下一棒？",
     "人工智能公司寻求新一轮融资",
     "Acme AI in talks to raise $1.5B",
+    "Modal Labs closing in on $750M round at $15.75B valuation",
+    "Modal Labs is nearing a $750 million funding round",
+    "推理提供商 Modal Labs 即将完成 7.5 亿美元融资，估值达 157.5 亿美元",
   ]) {
     const event = { ...base, display_title_zh: title };
     assert.equal(isEligibleFundingInsightEvent(event), false, title);
@@ -444,6 +502,13 @@ test("valuation-of and valued-at wording cannot become round proceeds", () => {
     assert.equal(canonicalFundingEventAmount(event), "");
     assert.equal(isEligibleFundingInsightEvent(event), false);
   }
+});
+
+test("a historical valuation before current proceeds does not become the new round amount", () => {
+  const event = { object:'$1B Series C at a $10B valuation', metrics:['$2.5 billion','$1 billion','$10 billion'], claim_refs:['CL-CURRENT'] };
+  const claims = [{ claim_id:'CL-CURRENT', claim_type:'funding', verification_status:'accepted', source_quote:'Instinct announced a fundraise that valued it at $2.5 billion, and now the company has already raised another $1 billion from investors, valuing the company at $10 billion.' }];
+  assert.equal(canonicalFundingEventAmount(event, claims), '$1 billion');
+  assert.equal(canonicalFundingEventAmount({object:'fundraise valuing the startup at $10 billion',metrics:['$10 billion']}), '');
 });
 
 test("fundraising talks remain ineligible even when described as a funding round", () => {
@@ -851,6 +916,15 @@ test("a current seed round stays separate from a previously undisclosed pre-seed
   assert.equal(canonicalFundingEventAmount(event, [{ ...claims[0], source_quote: quote.replace("The company said it has", "Competitor Beta has") }]), "$17.5 million");
   assert.equal(normalizeFundingRound("seed and pre-seed").code, "multi_round");
   assert.equal(normalizeFundingRound("预种子轮").code, "pre_seed");
+});
+
+test("an announced Series A amount outranks the previous seed and total funding", () => {
+  const claims = [
+    { claim_id: "CL-A", claim_type: "funding", verification_status: "accepted", object: "$40 million Series A", source_quote: "On Tuesday, AIUC announced a $40 million Series A led by Ribbit Capital." },
+    { claim_id: "CL-SEED", claim_type: "funding", verification_status: "accepted", source_quote: "It previously closed a $15 million seed round, bringing its total funding to $55 million." },
+  ];
+  const event = { object: "$40 million Series A", metrics: ["$40 million", "$15 million", "$55 million"], claim_refs: ["CL-A", "CL-SEED"] };
+  assert.equal(canonicalFundingEventAmount(event, claims), "$40 million");
 });
 
 test("canonical source remains citable when private evidence body is unavailable", () => {
@@ -1728,11 +1802,7 @@ test("没有融资事件时生成器无需搜索或模型密钥也会写出可�
   }
 });
 
-test("融资透视自动化在商业事件工作流后增量研究、同步并发布", () => {
-  const workflow = fs.readFileSync(
-    path.join(root, ".github/workflows/daily-funding-insights-pr.yml"),
-    "utf8",
-  );
+test("融资事实、原文证明与历史分类台账门禁保留", () => {
   const pagesWorkflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
   const fullGate = fs.readFileSync(
     path.join(root, "agent-workflow/tools/assert-funding-insights-v1.mjs"),
@@ -1746,34 +1816,6 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
     path.join(root, "agent-workflow/tools/assert-taxonomy-consistency-v4-1.mjs"),
     "utf8",
   );
-  assert.match(workflow, /workflow_run:[\s\S]*WaveSight Business Signals PR/u);
-  assert.match(workflow, /inspect-funding-insight-work\.mjs/u);
-  assert.match(workflow, /TAVILY_DISABLED: "false"/u);
-  assert.match(workflow, /generate-funding-insights-deepseek\.mjs[\s\S]*assert-funding-insights-v1\.mjs[\s\S]*build-funding-insights-frontstage\.mjs/u);
-  assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
-  assert.match(workflow, /build-funding-insights-frontstage\.mjs[\s\S]*classify:funding-taxonomy-v4\.1 -- --write=true[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u);
-  assert.match(
-    workflow,
-    /classify:funding-taxonomy-v4\.1 -- --write=true --apply=true[\s\S]*project:funding-taxonomy-events[\s\S]*build-funding-insights-frontstage\.mjs[\s\S]*assert-funding-insights-v1\.mjs --all=true --frontstage=true/u,
-    "the funding workflow must rebuild the frontstage after applying taxonomy decisions",
-  );
-  assert.match(workflow, /assert-funding-insights-v1\.mjs --all=true --frontstage=true[\s\S]*build:investment-institutions[\s\S]*assert:investment-institutions[\s\S]*build:data-center-site/u);
-  assert.match(
-    workflow,
-    /git add[\s\S]*investment-institutions-v1\.json[\s\S]*"01-SiteV2\/site\/data\/data-center-v4"/u,
-    "the funding workflow must persist the complete split Data Center projection",
-  );
-  assert.match(workflow, /git add[\s\S]*taxonomy-decisions-v4-1\.json/u);
-  assert.doesNotMatch(workflow, /sync-funding-insights-to-obsidian\.mjs|vault\/20-Application-Center/u);
-  assert.match(workflow, /automation\/funding-insights-\$\{RUN_DATE\}/u);
-  assert.match(workflow, /push:[\s\S]*canonical-events\.json/u);
-  assert.match(workflow, /startsWith\(github\.event\.head_commit\.message, 'Persist business signals for '\)/u);
-  assert.match(workflow, /gh workflow run daily-funding-insights-pr\.yml --ref main -f date=/u);
-  assert.match(workflow, /group: wavesight-funding-insights-\$\{\{ needs\.resolve-date\.outputs\.date \}\}/u);
-  assert.match(workflow, /Wait for Funding Insights PR to reach main/u);
-  assert.match(workflow, /gh workflow run github-pages\.yml --ref main -f source_sha=/u);
-  assert.match(workflow, /wait-for-pages-deployment\.mjs --source-sha=/u);
-  assert.match(workflow, /awaiting_portal/u);
   assert.match(pagesWorkflow, /run-name: Deploy Frontstage to GitHub Pages \$\{\{ inputs\.source_sha \|\| github\.sha \}\}/u);
   assert.match(
     fullGate,
@@ -1802,34 +1844,8 @@ test("融资透视自动化在商业事件工作流后增量研究、同步并�
   );
   assert.match(taxonomyConsistencyGate, /reviewedByDecisionEvent\.size !== decisionEventIds\.size/u);
   assert.doesNotMatch(taxonomyConsistencyGate, /reviewed funding coverage must be \d+/u);
-  const fundingJob = workflow.slice(workflow.indexOf("  funding-insights-pr:"));
-  assert.doesNotMatch(fundingJob, /steps\.run-date\.outputs\.date/u);
 });
 
-test("商业事件工作流原子发布融资卡、机构索引与数据中心投影", () => {
-  const workflow = fs.readFileSync(
-    path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"),
-    "utf8",
-  );
-  const fundingStep = workflow.slice(
-    workflow.indexOf("      - name: Research, gate, and publish Funding Insights"),
-    workflow.indexOf("      - name: Record funding supply health"),
-  );
-  const fundingCommit = workflow.slice(
-    workflow.indexOf('          if [ "${{ steps.funding-insights.outcome }}" = "success" ]; then'),
-    workflow.indexOf('          if [ "${{ steps.opportunity-map-v4.outcome }}" = "success" ]; then'),
-  );
-  assert.match(
-    fundingStep,
-    /build-funding-insights-frontstage\.mjs[\s\S]*build:investment-institutions[\s\S]*build:data-center-site[\s\S]*translate:public-structured-fields[\s\S]*classify:funding-taxonomy-v4\.1[\s\S]*project:funding-taxonomy-events[\s\S]*sync-light-data-lake[\s\S]*build:trend-radar-site[\s\S]*build:opportunity-map-site[\s\S]*assert:taxonomy-consistency[\s\S]*frontstage-regression-gate\.mjs/u,
-    "business-signals publication must gate the complete funding projection before commit",
-  );
-  assert.match(
-    fundingCommit,
-    /if \[ "\$\{\{ steps\.funding-insights\.outcome \}\}" = "success" \]; then[\s\S]*reviewed-event-classifications\.json[\s\S]*taxonomy-decisions-v4-1\.json[\s\S]*investment-institutions-v1\.json[\s\S]*data-center-v4-frontstage\.json[\s\S]*site\/data\/data-center-v4[\s\S]*trend-radar-v1\.json[\s\S]*opportunity-evidence-v2\.json/u,
-    "business-signals publication must stage the institution registry and split Data Center projection with funding cards",
-  );
-});
 
 test("融资主体解析优先选择被投公司而不是投资方", () => {
   const entities = [

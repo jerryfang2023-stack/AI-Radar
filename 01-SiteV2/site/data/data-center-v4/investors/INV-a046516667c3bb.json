@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,29 +61,32 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 14,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 14,
+    "current_round_count": 22,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 22,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-03-12",
-    "latest_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "co_lead": 1,
-      "historical_or_ambiguous": 1,
-      "lead": 9,
-      "participant": 4
+      "co_lead": 2,
+      "historical_or_ambiguous": 4,
+      "lead": 11,
+      "participant": 9
     },
     "round_codes": [
+      "multi_round",
       "seed",
       "series_a",
       "series_b",
       "series_c",
       "series_e",
-      "series_g"
+      "series_f",
+      "series_g",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -100,6 +103,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
       },
       {
         "entity_id": "EN-834cc12fc35adde7",
@@ -132,6 +140,26 @@
         "name": "Higgsfield"
       },
       {
+        "entity_id": "EN-02d6646fb8486fbd",
+        "canonical_entity_id": "",
+        "name": "Kanu AI"
+      },
+      {
+        "entity_id": "EN-5326805dc305fa71",
+        "canonical_entity_id": "",
+        "name": "Keenable"
+      },
+      {
+        "entity_id": "EN-c5803a6e4daa6af4",
+        "canonical_entity_id": "",
+        "name": "Modal"
+      },
+      {
+        "entity_id": "EN-b30b83d324e678e4",
+        "canonical_entity_id": "",
+        "name": "Modem"
+      },
+      {
         "entity_id": "EN-636396f02b6571e4",
         "canonical_entity_id": "",
         "name": "n8n GmbH"
@@ -152,6 +180,21 @@
         "name": "PointFive Inc."
       },
       {
+        "entity_id": "EN-5862e00bd2052e99",
+        "canonical_entity_id": "",
+        "name": "Pramaana Labs"
+      },
+      {
+        "entity_id": "EN-18131bed4bcc2f1a",
+        "canonical_entity_id": "",
+        "name": "Sapiom"
+      },
+      {
+        "entity_id": "EN-4d7594e57f7d03f3",
+        "canonical_entity_id": "",
+        "name": "Supabase"
+      },
+      {
         "entity_id": "EN-ce65fa41b16c33ff",
         "canonical_entity_id": "",
         "name": "Viktor"
@@ -159,7 +202,87 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ba8b2a8a56fe03e5",
+        "activity_id": "IA-8de03b56d96817f0",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+            "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-636415104ce806c3",
+        "funding_insight_id": "FI-21345da91c7c8f2d",
+        "event_ids": [
+          "EV-1715439efc5423dd"
+        ],
+        "company_entity_id": "EN-02d6646fb8486fbd",
+        "company_canonical_entity_id": "",
+        "company_name": "Kanu AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$11.7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 11700000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1170 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f7ac48fc9a7bad75",
+            "source_url": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html",
+            "source_title": "Kanu 走出隐身模式，为企业构建 AGI",
+            "source_content_hash": "bc2e40cccbf53714552441cd48b5c7f12f4a51781fc6841091a44eeec67cc80e",
+            "quote": "Trilogy Equity Partners leads the $11.7 million round, with participation from a16z speedrun, BMW i Ventures and Accel",
+            "quote_hash": "72cc048644e790883bca2e23bd1ef7ed5554805d2522ef8820680192178c268f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f18adfb4c87b7fcb",
         "funding_insight_id": "FI-0393a8a6e43ef544",
         "event_ids": [
           "EV-4a045d3f9026286c"
@@ -199,7 +322,7 @@
         ]
       },
       {
-        "activity_id": "IA-d50085396d5aafb2",
+        "activity_id": "IA-fddd8d54858e4bc6",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -239,7 +362,7 @@
         ]
       },
       {
-        "activity_id": "IA-c74c7087dffbd76a",
+        "activity_id": "IA-f10c32a6a41e885e",
         "funding_insight_id": "FI-78f364239a4fd7d3",
         "event_ids": [
           "EV-bce46f2e5cc68d5d"
@@ -279,7 +402,47 @@
         ]
       },
       {
-        "activity_id": "IA-4f79850cbd50740e",
+        "activity_id": "IA-4af867b0823b8f2f",
+        "funding_insight_id": "FI-c5f0fd35dce1ae5c",
+        "event_ids": [
+          "EV-143532a48c11c3b1"
+        ],
+        "company_entity_id": "EN-5326805dc305fa71",
+        "company_canonical_entity_id": "",
+        "company_name": "Keenable",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$26 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 26000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2600 万美元"
+        },
+        "announced_at": "2026-08-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-706dcdf4cbb7e612",
+            "source_url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents",
+            "source_title": "Accel 投资的 Keenable 正在为 AI 智能体索引网络",
+            "source_content_hash": "cfc15cfefbd7415628b6fe8dc65a81f108b534ae89f9d9b5cd58b786e18a1c96",
+            "quote": "Accel led the funding round, which also saw participation from Conviction Partners and some business angels.",
+            "quote_hash": "2e371433b956568ba1a3b9c1aa0d621bf73ffcd51ff61505abc124961c4c9709"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0e7449c89d2b3858",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
           "EV-1dba157815d84342"
@@ -319,47 +482,47 @@
         ]
       },
       {
-        "activity_id": "IA-e14a74865b693fe5",
-        "funding_insight_id": "FI-94c0eaa68ec2b037",
+        "activity_id": "IA-6e340e9cf9ed5aa8",
+        "funding_insight_id": "FI-9255d12e7d1cdf9a",
         "event_ids": [
-          "EV-1dba157815d84342"
+          "EV-673637ebe2ac2f2d"
         ],
-        "company_entity_id": "EN-50b2676afbe30c83",
-        "company_canonical_entity_id": "EN-50b2676afbe30c83",
-        "company_name": "Higgsfield",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "Series B",
-        "amount_original": "4 亿美元",
+        "company_entity_id": "EN-18131bed4bcc2f1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Sapiom",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$35 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 400000000,
+          "value": 35000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "4 亿美元"
+          "display_zh": "3500 万美元"
         },
-        "announced_at": "2026-08-17",
+        "announced_at": "2026-08-05",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-35d27946fd70aa42",
-            "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
-            "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
-            "source_content_hash": "0d8d55e9f8e4182e",
-            "quote": "The round drew backing from Accel, GFT Ventures, and Menlo Ventures",
-            "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
+            "source_id": "FISRC-df6a9c9a32146320",
+            "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
+            "source_title": "Sapiom 融资 3500 万美元 A 轮，为下一个万亿级 AI 智能体提供动力",
+            "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+            "quote": "The round was led by Dragonfly, with participation from Accel, Gradient, Coinbase Ventures, Operator Collective, Formus Capital, and VanEck Ventures",
+            "quote_hash": "644554c16d4a0c3b35826e809f99d6cf04e8c4eaabff4be2a762bdabb02ecfe7"
           }
         ]
       },
       {
-        "activity_id": "IA-7d3be332fa5ef98c",
+        "activity_id": "IA-459ddc4b8838c638",
         "funding_insight_id": "FI-c540a5c7d84cb184",
         "event_ids": [
           "EV-9b81b0dd09a046ab"
@@ -407,7 +570,7 @@
         ]
       },
       {
-        "activity_id": "IA-2326d0ed9c4fd975",
+        "activity_id": "IA-c7dc5ebfb5cfb1b7",
         "funding_insight_id": "FI-cb627f50984e7151",
         "event_ids": [
           "EV-136b2edc9b9f3be8",
@@ -448,7 +611,7 @@
         ]
       },
       {
-        "activity_id": "IA-9e4ddadd2cfdbdda",
+        "activity_id": "IA-8a1032e7e66b60bb",
         "funding_insight_id": "FI-3c407a7a4dd718f1",
         "event_ids": [
           "EV-754e83c2d19005fe"
@@ -488,7 +651,7 @@
         ]
       },
       {
-        "activity_id": "IA-d252679058d4edf4",
+        "activity_id": "IA-b2f5f5b1a7cb7c36",
         "funding_insight_id": "FI-b965835fdaa907bc",
         "event_ids": [
           "EV-c64e6836b9cd2b17"
@@ -528,7 +691,47 @@
         ]
       },
       {
-        "activity_id": "IA-ae242b27fe6b97eb",
+        "activity_id": "IA-da3a3ff48e38f7a3",
+        "funding_insight_id": "FI-297719a093cb1b40",
+        "event_ids": [
+          "EV-07cef8183aa6c17b"
+        ],
+        "company_entity_id": "EN-5862e00bd2052e99",
+        "company_canonical_entity_id": "",
+        "company_name": "Pramaana Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-35c5de2fa4b68376",
+            "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+            "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+            "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+            "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
+            "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-002c87faf346200b",
         "funding_insight_id": "FI-0e45f5b02e149e04",
         "event_ids": [
           "EV-c3b8772c06a25dbc"
@@ -568,7 +771,87 @@
         ]
       },
       {
-        "activity_id": "IA-5591d7975724dea2",
+        "activity_id": "IA-234aa65862bae6a9",
+        "funding_insight_id": "FI-d3f8f22849d09dcc",
+        "event_ids": [
+          "EV-42ba61e8713cd2e6"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$500M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a9654b37adce00dc",
+            "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+            "source_title": "Why Georgian Invested in Supabase",
+            "source_content_hash": "2ff196d4fa7dc98a",
+            "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+            "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a614bcbe9c925865",
+        "funding_insight_id": "FI-772c8fb5434b1734",
+        "event_ids": [
+          "EV-1d31f1c839f9dab5"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$355 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 355000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.55 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-733016c3a34668d3",
+            "source_url": "https://modal.com/blog/modal-series-c",
+            "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+            "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+            "quote": "with Menlo, Bain Capital Ventures, and Accel joining as new investors",
+            "quote_hash": "26e6009b8459219d19331dc45cf2d4d37148f81177808b3185c6b88f4c732cfe"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3430b2ad70c8bb08",
         "funding_insight_id": "FI-664cc90f57688153",
         "event_ids": [
           "EV-44a4e92c03a31ab1"
@@ -608,7 +891,7 @@
         ]
       },
       {
-        "activity_id": "IA-0529117688a5dbdc",
+        "activity_id": "IA-70801cb241bff1a2",
         "funding_insight_id": "FI-27c50f0e1e7dd316",
         "event_ids": [
           "EV-70a994b9339f92e7"
@@ -648,7 +931,7 @@
         ]
       },
       {
-        "activity_id": "IA-a1c19cff097b353a",
+        "activity_id": "IA-edd7fba2b8ff184b",
         "funding_insight_id": "FI-352a7cfb23508f3e",
         "event_ids": [
           "EV-31df816db86db282"
@@ -688,7 +971,47 @@
         ]
       },
       {
-        "activity_id": "IA-8a72ad5d803a1ce7",
+        "activity_id": "IA-089f927dde9248f3",
+        "funding_insight_id": "FI-a7a280029acd72db",
+        "event_ids": [
+          "EV-6de81d4ca248ff31"
+        ],
+        "company_entity_id": "EN-b30b83d324e678e4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modem",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$4.4M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "440 万美元"
+        },
+        "announced_at": "2026-02-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9fd6ba5210b37fed",
+            "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+            "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+            "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+            "quote": "Modem has raised $4.4M in funding led by Accel, with participation by Inovia Capital",
+            "quote_hash": "b50c810129adf2731891f9829c115415155105c96bb4a56bf8c4440140161ad2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4f6ac061be432433",
         "funding_insight_id": "FI-7aef62aa956f090d",
         "event_ids": [
           "EV-286846e21412f3c7"
@@ -728,7 +1051,7 @@
         ]
       },
       {
-        "activity_id": "IA-cd5e376af2d8b662",
+        "activity_id": "IA-dd9c7b4e6c91e695",
         "funding_insight_id": "FI-a3bae2ae79c9b1b8",
         "event_ids": [
           "EV-0dfcd1e634de755b"
@@ -766,9 +1089,153 @@
             "quote_hash": "508ac3f9ff7ee89de5dcb27977f3dba89a922f33afcc8cb15a9d2ce946817cea"
           }
         ]
+      },
+      {
+        "activity_id": "IA-0e13f576a1b761b4",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "领投A轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-14fa67bc80a1ece9",
+            "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+            "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+            "source_content_hash": "f5a108f3994daf10",
+            "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+            "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a4338467cbf4bc52",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+            "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9749d0329f9fc775",
+        "funding_insight_id": "FI-94c0eaa68ec2b037",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "EN-50b2676afbe30c83",
+        "company_canonical_entity_id": "EN-50b2676afbe30c83",
+        "company_name": "Higgsfield",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-35d27946fd70aa42",
+            "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+            "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+            "source_content_hash": "0d8d55e9f8e4182e",
+            "quote": "The round drew backing from Accel, GFT Ventures, and Menlo Ventures",
+            "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-13a3b09fcdffbad3",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "回归投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-94676d99b2defaa4",
+            "source_url": "https://lovable.dev/blog/series-c",
+            "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+            "source_content_hash": "f9c4cc8a8cd4a7c7",
+            "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+            "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+        "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+      },
+      {
+        "source_id": "FISRC-f7ac48fc9a7bad75",
+        "source_url": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html",
+        "source_title": "Kanu 走出隐身模式，为企业构建 AGI",
+        "source_content_hash": "bc2e40cccbf53714552441cd48b5c7f12f4a51781fc6841091a44eeec67cc80e",
+        "quote": "Trilogy Equity Partners leads the $11.7 million round, with participation from a16z speedrun, BMW i Ventures and Accel",
+        "quote_hash": "72cc048644e790883bca2e23bd1ef7ed5554805d2522ef8820680192178c268f"
+      },
       {
         "source_id": "FISRC-1898b8cd3bcc2449",
         "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
@@ -794,6 +1261,14 @@
         "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
       },
       {
+        "source_id": "FISRC-706dcdf4cbb7e612",
+        "source_url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents",
+        "source_title": "Accel 投资的 Keenable 正在为 AI 智能体索引网络",
+        "source_content_hash": "cfc15cfefbd7415628b6fe8dc65a81f108b534ae89f9d9b5cd58b786e18a1c96",
+        "quote": "Accel led the funding round, which also saw participation from Conviction Partners and some business angels.",
+        "quote_hash": "2e371433b956568ba1a3b9c1aa0d621bf73ffcd51ff61505abc124961c4c9709"
+      },
+      {
         "source_id": "FISRC-7c15ac15bf3d0b1a",
         "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
         "source_title": "Higgsfield Raises $400M in Series B Funding",
@@ -802,12 +1277,12 @@
         "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
       },
       {
-        "source_id": "FISRC-35d27946fd70aa42",
-        "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
-        "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
-        "source_content_hash": "0d8d55e9f8e4182e",
-        "quote": "The round drew backing from Accel, GFT Ventures, and Menlo Ventures",
-        "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
+        "source_id": "FISRC-df6a9c9a32146320",
+        "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
+        "source_title": "Sapiom 融资 3500 万美元 A 轮，为下一个万亿级 AI 智能体提供动力",
+        "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+        "quote": "The round was led by Dragonfly, with participation from Accel, Gradient, Coinbase Ventures, Operator Collective, Formus Capital, and VanEck Ventures",
+        "quote_hash": "644554c16d4a0c3b35826e809f99d6cf04e8c4eaabff4be2a762bdabb02ecfe7"
       },
       {
         "source_id": "FISRC-7a2e33bd2177a4c7",
@@ -850,12 +1325,36 @@
         "quote_hash": "88974bce0aab07cf03d56a71b75754c7a57ab8b1dec8e5b7027c8f6f7a43b261"
       },
       {
+        "source_id": "FISRC-35c5de2fa4b68376",
+        "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+        "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+        "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+        "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
+        "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
+      },
+      {
         "source_id": "FISRC-3ca38471e3f8361d",
         "source_url": "https://siliconangle.com/2026/06/08/ai-infrastructure-cost-control-startup-pointfive-gets-60m-help-enterprises-save/",
         "source_title": "AI 基础设施成本控制初创公司 PointFive 获 6000 万美元融资，助力企业节省开支",
         "source_content_hash": "11683bab4c01ccd3",
         "quote": "Accel led the round",
         "quote_hash": "8e0705ecf58eaad0451a15274f1ca2e5cd980a08a9e609620031a7fe91e83c8e"
+      },
+      {
+        "source_id": "FISRC-a9654b37adce00dc",
+        "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+        "source_title": "Why Georgian Invested in Supabase",
+        "source_content_hash": "2ff196d4fa7dc98a",
+        "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+        "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
+      },
+      {
+        "source_id": "FISRC-733016c3a34668d3",
+        "source_url": "https://modal.com/blog/modal-series-c",
+        "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+        "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+        "quote": "with Menlo, Bain Capital Ventures, and Accel joining as new investors",
+        "quote_hash": "26e6009b8459219d19331dc45cf2d4d37148f81177808b3185c6b88f4c732cfe"
       },
       {
         "source_id": "FISRC-ce83b857608dabeb",
@@ -882,6 +1381,14 @@
         "quote_hash": "dd496c105397ae49540d0bf46c349a8d17db2380b866ac8c46ba30a2552fb6dc"
       },
       {
+        "source_id": "FISRC-9fd6ba5210b37fed",
+        "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+        "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+        "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+        "quote": "Modem has raised $4.4M in funding led by Accel, with participation by Inovia Capital",
+        "quote_hash": "b50c810129adf2731891f9829c115415155105c96bb4a56bf8c4440140161ad2"
+      },
+      {
         "source_id": "FISRC-d9093a8f62959034",
         "source_url": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
         "source_title": "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元",
@@ -896,6 +1403,38 @@
         "source_content_hash": "09c882710b28fe12",
         "quote": "has raised $29 million in a new funding round led by Accel",
         "quote_hash": "508ac3f9ff7ee89de5dcb27977f3dba89a922f33afcc8cb15a9d2ce946817cea"
+      },
+      {
+        "source_id": "FISRC-14fa67bc80a1ece9",
+        "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+        "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+        "source_content_hash": "f5a108f3994daf10",
+        "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+        "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+        "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
+      },
+      {
+        "source_id": "FISRC-35d27946fd70aa42",
+        "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+        "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+        "source_content_hash": "0d8d55e9f8e4182e",
+        "quote": "The round drew backing from Accel, GFT Ventures, and Menlo Ventures",
+        "quote_hash": "85da23dfa411719899fd29b9652deb3320a6c127dd5070049c91da199f65edf6"
+      },
+      {
+        "source_id": "FISRC-94676d99b2defaa4",
+        "source_url": "https://lovable.dev/blog/series-c",
+        "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+        "source_content_hash": "f9c4cc8a8cd4a7c7",
+        "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+        "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
       }
     ],
     "public_profile": {
@@ -932,16 +1471,16 @@
           "source_id": "accel_europe"
         },
         {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮联合领投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
+          "description": "融资来源记录：Kanu AI · 种子轮 · 2026-09-30 · 本轮参投 · $11.7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f7ac48fc9a7bad75"
+        },
+        {
           "description": "融资来源记录：Ema · B轮 · 2026-09-23 · 本轮参投 · $77M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1898b8cd3bcc2449"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮领投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Atira · 种子轮 · 2026-09-03 · 本轮领投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-dfab45611a59a6cf"
         }
       ],
       "contacts": [
@@ -1014,28 +1553,28 @@
           "quote_hash": "596b1ee652763f3ce41bb638fabd7df2a7d7c189a53631ad6dd499bf0d48e2bc"
         },
         {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "co-led by Andreessen Horowitz (a16z) and Accel",
+          "quote_hash": "1944942fb1701913bc20feb98df6c7d16bc935488f1671629e8f5a647f2c1acc"
+        },
+        {
+          "source_id": "FISRC-f7ac48fc9a7bad75",
+          "source_url": "https://www.prnewswire.com/news-releases/kanu-emerges-from-stealth-to-build-agi-for-the-enterprise-302893866.html",
+          "source_title": "Kanu 走出隐身模式，为企业构建 AGI",
+          "source_content_hash": "bc2e40cccbf53714552441cd48b5c7f12f4a51781fc6841091a44eeec67cc80e",
+          "quote": "Trilogy Equity Partners leads the $11.7 million round, with participation from a16z speedrun, BMW i Ventures and Accel",
+          "quote_hash": "72cc048644e790883bca2e23bd1ef7ed5554805d2522ef8820680192178c268f"
+        },
+        {
           "source_id": "FISRC-1898b8cd3bcc2449",
           "source_url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services",
           "source_title": "Ema 融资 7700 万美元，用 AI 智能体切入企业软件与服务市场",
           "source_content_hash": "aed60de0b0299f2e",
           "quote": "with existing investors Accel, Section 32, and Prosus increasing their stakes",
           "quote_hash": "069118ff869b0b60360e17fac78c42a06952f1dfe4275a277ebeb7c57898ee1e"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "The financing was led by new investors Andreessen Horowitz and Accel",
-          "quote_hash": "8aeaa43c0a1d28458ebe6cee07b19c91f3e4052962f30ba1e0151ceb0a77246a"
-        },
-        {
-          "source_id": "FISRC-dfab45611a59a6cf",
-          "source_url": "https://fortune.com/2026/09/03/exclusive-german-ai-startup-atira-raises-17-5-million-to-unclog-the-paperwork-bottleneck-in-industrial-dealmaking/",
-          "source_title": "独家：德国初创公司Atira融资1750万美元，以简化工业销售流程",
-          "source_content_hash": "2c19612efff8843e",
-          "quote": "The company said it has closed a $15 million seed round led by Accel, along with a previously undisclosed $2.5 million pre-seed.",
-          "quote_hash": "410bd9aef56bd89ee43e2fa5add2902b0d190a30bea7e3fde6024c0dbe19ddfc"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1046,6 +1585,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[23].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        },
         "public_profile.contacts[1].label": {
           "text": "Palo Alto 办公室",
           "source_hash": "fd88d0369a7cf219ef568b0c4070127338704b7d0868878e5c563e7d4a940b7a",

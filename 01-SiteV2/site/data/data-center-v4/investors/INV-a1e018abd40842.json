@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,24 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
-    "china_market_company_count": 2,
-    "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-09-21",
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-07-14",
+    "latest_disclosed_at": "2026-09-24",
     "role_counts": {
       "historical_or_ambiguous": 4,
       "other_current_round": 1,
-      "participant": 1
+      "participant": 3
     },
     "round_codes": [
+      "angel",
+      "multi_round",
       "seed"
     ],
     "portfolio_companies": [
@@ -89,62 +91,31 @@
         "entity_id": "EN-f1de3226b9e510ac",
         "canonical_entity_id": "EN-f1de3226b9e510ac",
         "name": "昆腾动力"
+      },
+      {
+        "entity_id": "EN-6965b510ec922ad4",
+        "canonical_entity_id": "",
+        "name": "瞬原科技"
+      },
+      {
+        "entity_id": "EN-37b24c76821f9ff1",
+        "canonical_entity_id": "EN-37b24c76821f9ff1",
+        "name": "索格智算"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-24cf1742ae56b6f0",
-        "funding_insight_id": "FI-16af0b20c345fd03",
+        "activity_id": "IA-f565b79098f23e9d",
+        "funding_insight_id": "FI-24c290b9676c9f6e",
         "event_ids": [
-          "EV-6f7ec978fd8ad3fc",
-          "EV-33df10f232e26f29"
+          "EV-e9c3669ece63cf7f"
         ],
-        "company_entity_id": "EN-2cee85064ca8de3f",
-        "company_canonical_entity_id": "",
-        "company_name": "弋途科技",
-        "round": "Pre-B轮",
-        "round_code": "pre_series_b",
-        "round_original": "Pre-B轮",
-        "amount_original": "近亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 100000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 1 亿元"
-        },
-        "announced_at": "2026-09-21",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A+轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-08be95e2b95904af",
-            "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
-            "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
-            "source_content_hash": "c2b3a4f00a437876",
-            "quote": "4月，A+轮超亿元，云启资本领投，赛富投资战略入局，以骏、德宁跟投",
-            "quote_hash": "133261190b5f1fcecfcbb8f696734b300d444c765b7ffcf74082ba55837584ee"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-c93e107793c741db",
-        "funding_insight_id": "FI-936426cb8df9b450",
-        "event_ids": [
-          "EV-c997b93aa153720b"
-        ],
-        "company_entity_id": "EN-e40403aad241b9fc",
-        "company_canonical_entity_id": "",
-        "company_name": "悦点科技",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
+        "company_entity_id": "EN-37b24c76821f9ff1",
+        "company_canonical_entity_id": "EN-37b24c76821f9ff1",
+        "company_name": "索格智算",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
         "amount_original": "数千万元",
         "amount_normalized": {
           "currency": "CNY",
@@ -155,66 +126,66 @@
           "status": "range",
           "display_zh": "2000 万元–9000 万元"
         },
-        "announced_at": "2026-09-16",
+        "announced_at": "2026-09-24",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮独家投资",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-e76b377b4dc40602",
-            "source_url": "https://finance.eastmoney.com/a/202609123872695227.html",
-            "source_title": "从知识图谱走向企业智能体，悦点科技获数千万元Pre-A轮融资 _ 东方财富网",
-            "source_content_hash": "3debc60865fc74d2",
-            "quote": "此前，公司于2024年12月获得云启资本独家投资的天使轮融资。",
-            "quote_hash": "fab203354e24e4c018642bacd6523f8e40a6965f810ee5c55da9806b0064da6f"
+            "source_id": "FISRC-83520370495890c1",
+            "source_url": "https://elsewhere.news/zh/yunqipartners/yunqi-capital-backs-suoge-zhizhis-angel-round-to-accelerate-",
+            "source_title": "云启参投「索格智算」天使轮，加速 AI 新材料产业化落地｜云启伙伴",
+            "source_content_hash": "a6da33b4652ddb97df643bdae633246d28328ba87f01806a4ba2b0a1da8b556e",
+            "quote": "本轮由复星创富领投、南通产控思源人工智能先导基金、云启资本、中赢创投跟投，紫竹科投等老股东追加投资。",
+            "quote_hash": "5f0d0cd5b7bb119975962787a9a75decbb6aa99561bdfa941791e49e4a06fa7d"
           }
         ]
       },
       {
-        "activity_id": "IA-236c7c09ea26f4fa",
-        "funding_insight_id": "FI-0393a877e1b99840",
+        "activity_id": "IA-54cef22be3545ae3",
+        "funding_insight_id": "FI-09d84a96790109f4",
         "event_ids": [
-          "EV-782e8dcca41fd545"
+          "EV-cf58eff49a08500d"
         ],
-        "company_entity_id": "EN-b321d29699ce1dcd",
-        "company_canonical_entity_id": "EN-b321d29699ce1dcd",
-        "company_name": "松应科技",
+        "company_entity_id": "EN-6965b510ec922ad4",
+        "company_canonical_entity_id": "",
+        "company_name": "瞬原科技",
         "round": "多轮融资",
         "round_code": "multi_round",
         "round_original": "多轮融资",
-        "amount_original": "数亿元",
+        "amount_original": "数千万元",
         "amount_normalized": {
           "currency": "CNY",
           "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
+          "min_value": 20000000,
+          "max_value": 90000000,
           "unit": "base",
           "status": "range",
-          "display_zh": "2 亿元–9 亿元"
+          "display_zh": "2000 万元–9000 万元"
         },
-        "announced_at": "2026-08-31",
+        "announced_at": "2026-09-02",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮投资方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-1ae72db61aa80327",
-            "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-            "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
-            "source_content_hash": "74d6b0dda1bd2148",
-            "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
-            "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+            "source_id": "FISRC-15cb977dd6c3c1bf",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-28/doc-inipwhrt5830028.shtml",
+            "source_title": "瞬原科技两月完成两轮数千万元融资",
+            "source_content_hash": "d3bf4195ee9cd97f",
+            "quote": "领投方为社保基金中关村自主创新专项基金（君联资本担任管理人），厚雪资本，云启资本跟投。",
+            "quote_hash": "a3984cbece70c9ead1d376dad15581db9bff38506f1b9e7cee74df3155e0f9f8"
           }
         ]
       },
       {
-        "activity_id": "IA-0328337173a861bb",
+        "activity_id": "IA-032e011408c15204",
         "funding_insight_id": "FI-0f172a51aed019fe",
         "event_ids": [
           "EV-7c3e301d345f8c2d"
@@ -254,7 +225,7 @@
         ]
       },
       {
-        "activity_id": "IA-98a6a1e4f2978484",
+        "activity_id": "IA-8c86a736fc3a4fe7",
         "funding_insight_id": "FI-150dae442fa0f1de",
         "event_ids": [
           "EV-71d7d8bbaa623228"
@@ -294,7 +265,104 @@
         ]
       },
       {
-        "activity_id": "IA-51feb6e3c04a99a1",
+        "activity_id": "IA-a2db161d0f1867e4",
+        "funding_insight_id": "FI-0393a877e1b99840",
+        "event_ids": [
+          "EV-782e8dcca41fd545"
+        ],
+        "company_entity_id": "EN-b321d29699ce1dcd",
+        "company_canonical_entity_id": "EN-b321d29699ce1dcd",
+        "company_name": "松应科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ae72db61aa80327",
+            "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+            "source_content_hash": "74d6b0dda1bd2148",
+            "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
+            "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5f2c96070685a3e0",
+        "funding_insight_id": "FI-16af0b20c345fd03",
+        "event_ids": [
+          "EV-6f7ec978fd8ad3fc",
+          "EV-33df10f232e26f29"
+        ],
+        "company_entity_id": "EN-2cee85064ca8de3f",
+        "company_canonical_entity_id": "",
+        "company_name": "弋途科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-08be95e2b95904af",
+            "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
+            "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
+            "source_content_hash": "c2b3a4f00a437876",
+            "quote": "4月，A+轮超亿元，云启资本领投，赛富投资战略入局，以骏、德宁跟投",
+            "quote_hash": "133261190b5f1fcecfcbb8f696734b300d444c765b7ffcf74082ba55837584ee"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-17f2fb08ee71daf2",
+        "funding_insight_id": "FI-936426cb8df9b450",
+        "event_ids": [
+          "EV-c997b93aa153720b"
+        ],
+        "company_entity_id": "EN-e40403aad241b9fc",
+        "company_canonical_entity_id": "",
+        "company_name": "悦点科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮独家投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-e76b377b4dc40602",
+            "source_url": "https://finance.eastmoney.com/a/202609123872695227.html",
+            "source_title": "从知识图谱走向企业智能体，悦点科技获数千万元Pre-A轮融资 _ 东方财富网",
+            "source_content_hash": "3debc60865fc74d2",
+            "quote": "此前，公司于2024年12月获得云启资本独家投资的天使轮融资。",
+            "quote_hash": "fab203354e24e4c018642bacd6523f8e40a6965f810ee5c55da9806b0064da6f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0272ba8b315e5510",
         "funding_insight_id": "FI-3dead88500d2a761",
         "event_ids": [
           "EV-565b6c1b10b3cf83",
@@ -303,23 +371,15 @@
         "company_entity_id": "EN-ce22f929f4a17467",
         "company_canonical_entity_id": "EN-ce22f929f4a17467",
         "company_name": "智平方",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-02-23",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "Pre-A+轮投资方",
         "role_code": "historical_or_ambiguous",
@@ -337,28 +397,20 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-08be95e2b95904af",
-        "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
-        "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
-        "source_content_hash": "c2b3a4f00a437876",
-        "quote": "4月，A+轮超亿元，云启资本领投，赛富投资战略入局，以骏、德宁跟投",
-        "quote_hash": "133261190b5f1fcecfcbb8f696734b300d444c765b7ffcf74082ba55837584ee"
+        "source_id": "FISRC-83520370495890c1",
+        "source_url": "https://elsewhere.news/zh/yunqipartners/yunqi-capital-backs-suoge-zhizhis-angel-round-to-accelerate-",
+        "source_title": "云启参投「索格智算」天使轮，加速 AI 新材料产业化落地｜云启伙伴",
+        "source_content_hash": "a6da33b4652ddb97df643bdae633246d28328ba87f01806a4ba2b0a1da8b556e",
+        "quote": "本轮由复星创富领投、南通产控思源人工智能先导基金、云启资本、中赢创投跟投，紫竹科投等老股东追加投资。",
+        "quote_hash": "5f0d0cd5b7bb119975962787a9a75decbb6aa99561bdfa941791e49e4a06fa7d"
       },
       {
-        "source_id": "FISRC-e76b377b4dc40602",
-        "source_url": "https://finance.eastmoney.com/a/202609123872695227.html",
-        "source_title": "从知识图谱走向企业智能体，悦点科技获数千万元Pre-A轮融资 _ 东方财富网",
-        "source_content_hash": "3debc60865fc74d2",
-        "quote": "此前，公司于2024年12月获得云启资本独家投资的天使轮融资。",
-        "quote_hash": "fab203354e24e4c018642bacd6523f8e40a6965f810ee5c55da9806b0064da6f"
-      },
-      {
-        "source_id": "FISRC-1ae72db61aa80327",
-        "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-        "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
-        "source_content_hash": "74d6b0dda1bd2148",
-        "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
-        "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+        "source_id": "FISRC-15cb977dd6c3c1bf",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-28/doc-inipwhrt5830028.shtml",
+        "source_title": "瞬原科技两月完成两轮数千万元融资",
+        "source_content_hash": "d3bf4195ee9cd97f",
+        "quote": "领投方为社保基金中关村自主创新专项基金（君联资本担任管理人），厚雪资本，云启资本跟投。",
+        "quote_hash": "a3984cbece70c9ead1d376dad15581db9bff38506f1b9e7cee74df3155e0f9f8"
       },
       {
         "source_id": "FISRC-acc5f267b943773d",
@@ -375,6 +427,30 @@
         "source_content_hash": "340f8c8784943503",
         "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
         "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
+      },
+      {
+        "source_id": "FISRC-1ae72db61aa80327",
+        "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
+        "source_content_hash": "74d6b0dda1bd2148",
+        "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
+        "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
+      },
+      {
+        "source_id": "FISRC-08be95e2b95904af",
+        "source_url": "https://www.lejucaijing.com/news-7507630694257588011.html",
+        "source_title": "年内第三轮、弋途科技完成Pre-B轮融资，上海半导体参投-乐居财经",
+        "source_content_hash": "c2b3a4f00a437876",
+        "quote": "4月，A+轮超亿元，云启资本领投，赛富投资战略入局，以骏、德宁跟投",
+        "quote_hash": "133261190b5f1fcecfcbb8f696734b300d444c765b7ffcf74082ba55837584ee"
+      },
+      {
+        "source_id": "FISRC-e76b377b4dc40602",
+        "source_url": "https://finance.eastmoney.com/a/202609123872695227.html",
+        "source_title": "从知识图谱走向企业智能体，悦点科技获数千万元Pre-A轮融资 _ 东方财富网",
+        "source_content_hash": "3debc60865fc74d2",
+        "quote": "此前，公司于2024年12月获得云启资本独家投资的天使轮融资。",
+        "quote_hash": "fab203354e24e4c018642bacd6523f8e40a6965f810ee5c55da9806b0064da6f"
       },
       {
         "source_id": "FISRC-b78c44b13620e61a",
@@ -465,16 +541,16 @@
           "source_id": "yunqi_official_about"
         },
         {
+          "description": "融资来源记录：索格智算 · 天使轮 · 2026-09-24 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-83520370495890c1"
+        },
+        {
+          "description": "融资来源记录：瞬原科技 · 多轮融资 · 2026-09-02 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-15cb977dd6c3c1bf"
+        },
+        {
           "description": "融资来源记录：昆腾动力 · 种子轮 · 2026-07-31 · 本轮联合投资 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-acc5f267b943773d"
-        },
-        {
-          "description": "融资来源记录：幻码跃迁 · 种子轮 · 2026-07-14 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7c0e1d89cdf9af82"
-        },
-        {
-          "description": "融资来源记录：松应科技 · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1ae72db61aa80327"
         }
       ],
       "contacts": [
@@ -526,28 +602,28 @@
           "quote_hash": "af232b342a2eb27cfed34c138513122bd587c2c9f9eee0df32d2748d80cd24ac"
         },
         {
+          "source_id": "FISRC-83520370495890c1",
+          "source_url": "https://elsewhere.news/zh/yunqipartners/yunqi-capital-backs-suoge-zhizhis-angel-round-to-accelerate-",
+          "source_title": "云启参投「索格智算」天使轮，加速 AI 新材料产业化落地｜云启伙伴",
+          "source_content_hash": "a6da33b4652ddb97df643bdae633246d28328ba87f01806a4ba2b0a1da8b556e",
+          "quote": "本轮由复星创富领投、南通产控思源人工智能先导基金、云启资本、中赢创投跟投，紫竹科投等老股东追加投资。",
+          "quote_hash": "5f0d0cd5b7bb119975962787a9a75decbb6aa99561bdfa941791e49e4a06fa7d"
+        },
+        {
+          "source_id": "FISRC-15cb977dd6c3c1bf",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-28/doc-inipwhrt5830028.shtml",
+          "source_title": "瞬原科技两月完成两轮数千万元融资",
+          "source_content_hash": "d3bf4195ee9cd97f",
+          "quote": "领投方为社保基金中关村自主创新专项基金（君联资本担任管理人），厚雪资本，云启资本跟投。",
+          "quote_hash": "a3984cbece70c9ead1d376dad15581db9bff38506f1b9e7cee74df3155e0f9f8"
+        },
+        {
           "source_id": "FISRC-acc5f267b943773d",
           "source_url": "https://news.pedaily.cn/202607/567074.shtml",
           "source_title": "昆腾动力完成超亿元种子轮融资，定义部署驱动的Physical AI平台",
           "source_content_hash": "291f515f8155da84",
           "quote": "本轮由 云启资本、商汤 国香资本 联合投资 。",
           "quote_hash": "7db7f30359c3d54a534e9a21f65ad10862b6a9c8fb8eb5254aa06577ffaa2f02"
-        },
-        {
-          "source_id": "FISRC-7c0e1d89cdf9af82",
-          "source_url": "https://news.pedaily.cn/202607/566249.shtml",
-          "source_title": "「幻码跃迁」完成数千万种子轮融资，打造量子×AI融合创新的量子计算基础设施",
-          "source_content_hash": "340f8c8784943503",
-          "quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程 共同参与",
-          "quote_hash": "9d550bd78ff799b3264b3b2282f0d9d5519c19d1d3062ffdb184d6343ff9d2ee"
-        },
-        {
-          "source_id": "FISRC-1ae72db61aa80327",
-          "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
-          "source_title": "松应科技完成A轮、A1轮数亿元融资：「成物理AI时代安卓」",
-          "source_content_hash": "74d6b0dda1bd2148",
-          "quote": "2022年，公司完成数百万美元种子轮融资，投资方包括红杉中国、云启资本",
-          "quote_hash": "5720d5d70f16e00eed2d27ad9715fb56be35e6a45841b62f7b41cd58a7a1fb8a"
         }
       ],
       "last_verified_at": "2026-09-25",

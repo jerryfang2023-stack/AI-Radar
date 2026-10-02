@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,50 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-13",
+    "first_disclosed_at": "2026-01-28",
     "latest_disclosed_at": "2026-05-13",
     "role_counts": {
-      "participant": 1
+      "participant": 4
     },
     "round_codes": [
+      "other",
+      "series_h",
+      "strategic",
       "undisclosed"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-2f4436342c46decc",
+        "canonical_entity_id": "",
+        "name": "Cerebras Systems"
+      },
+      {
+        "entity_id": "EN-b8f1c575bfcf5ece",
+        "canonical_entity_id": "",
+        "name": "Eliyan Corporation"
+      },
+      {
         "entity_id": "EN-b06631033a981321",
         "canonical_entity_id": "",
         "name": "Recursive Superintelligence Inc."
+      },
+      {
+        "entity_id": "EN-da2f0f03bc3a24f5",
+        "canonical_entity_id": "",
+        "name": "World Labs"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-c1ea976c53df7f07",
+        "activity_id": "IA-926d09fd693805e8",
         "funding_insight_id": "FI-3030a959696487d1",
         "event_ids": [
           "EV-12a42b0aabee236f"
@@ -124,6 +142,126 @@
             "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
           }
         ]
+      },
+      {
+        "activity_id": "IA-9e28aec39ca8ea65",
+        "funding_insight_id": "FI-4a3b79f9329c86c7",
+        "event_ids": [
+          "EV-c503664bc5c24b10"
+        ],
+        "company_entity_id": "EN-da2f0f03bc3a24f5",
+        "company_canonical_entity_id": "",
+        "company_name": "World Labs",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "new funding",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f911788bc29402eb",
+            "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+            "source_title": "世界实验室宣布新融资",
+            "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+            "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+            "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-51651beb704fb1c6",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-51b0427643bffd15",
+            "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+            "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+            "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+            "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+            "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d15056d37e0cd2d0",
+        "funding_insight_id": "FI-643b76798f958bf3",
+        "event_ids": [
+          "EV-3d5daffd1cb9521b"
+        ],
+        "company_entity_id": "EN-b8f1c575bfcf5ece",
+        "company_canonical_entity_id": "",
+        "company_name": "Eliyan Corporation",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$50 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-01-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5618afd8046eeb4f",
+            "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+            "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+            "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+            "quote": "including AMD, Arm, Coherent, and Meta",
+            "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +272,30 @@
         "source_content_hash": "926edc21ca4613eb",
         "quote": "They were joined by Nvidia Corp. and Advanced Micro Devices Inc.’s venture capital arm.",
         "quote_hash": "e27009a9dd08a65b25b7a316ddb093d3d3ba0b0cfe2445ed4d9e9b504c7901e3"
+      },
+      {
+        "source_id": "FISRC-f911788bc29402eb",
+        "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+        "source_title": "世界实验室宣布新融资",
+        "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+        "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+        "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+      },
+      {
+        "source_id": "FISRC-51b0427643bffd15",
+        "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+        "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+        "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+        "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+        "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+      },
+      {
+        "source_id": "FISRC-5618afd8046eeb4f",
+        "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+        "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+        "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+        "quote": "including AMD, Arm, Coherent, and Meta",
+        "quote_hash": "615a6f6e4c252151c0d37733ea1ba2c32e1bbf4e4547895b973190f20be8f494"
       }
     ],
     "public_profile": {
@@ -175,6 +337,14 @@
         {
           "description": "融资披露：2026-05-13 有关 Recursive Superintelligence 的报道写明 Nvidia 与 Advanced Micro Devices 旗下风险投资部门参投。该轮总额为 6.5 亿美元；来源没有披露 AMD Ventures 的支票金额，也不能据此确认由 AMD 母公司直接出资。",
           "source_id": "FISRC-61b930049ee4e86e"
+        },
+        {
+          "description": "融资来源记录：World Labs · 其他融资 · 2026-02-18 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f911788bc29402eb"
+        },
+        {
+          "description": "融资来源记录：Cerebras Systems · H轮 · 2026-02-03 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-51b0427643bffd15"
         }
       ],
       "contacts": [
@@ -241,6 +411,22 @@
           "source_content_hash": "7a40abb9f65837cdb7e9d99ff1d691430a4650b1c52c6cad14ae687bce55a32f",
           "quote": "Our technologies advance the future of the data center, embedded, gaming and PC markets.",
           "quote_hash": "25d82d77affa4ecd3d48ba2ebc46274b5fb44f2af899d0af9997be0becf5497e"
+        },
+        {
+          "source_id": "FISRC-f911788bc29402eb",
+          "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+          "source_title": "世界实验室宣布新融资",
+          "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+          "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+          "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+        },
+        {
+          "source_id": "FISRC-51b0427643bffd15",
+          "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+          "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+          "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+          "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+          "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
         }
       ],
       "last_verified_at": "2026-09-28",

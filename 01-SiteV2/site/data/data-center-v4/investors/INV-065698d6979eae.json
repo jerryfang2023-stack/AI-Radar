@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-07-07",
     "latest_disclosed_at": "2026-07-07",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -86,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-2ee0bb0a1a80fab0",
+        "activity_id": "IA-030ab8fb5cafb4f9",
         "funding_insight_id": "FI-27385b14e231f5ac",
         "event_ids": [
           "EV-59d5ab345e77ee7f"
@@ -124,6 +125,38 @@
             "quote_hash": "38a3453c6027233044d8f2e5fa4a5815ec37189fdb1c7083f4a6d3387a8a3ebf"
           }
         ]
+      },
+      {
+        "activity_id": "IA-ea93c971322ddfad",
+        "funding_insight_id": "FI-7c5fc042f5fa0ddc",
+        "event_ids": [
+          "EV-622f5d9407564ae3"
+        ],
+        "company_entity_id": "EN-d6d6dcf0bb132a3d",
+        "company_canonical_entity_id": "",
+        "company_name": "玩点旅行",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-eea8e7a4669a91fa",
+            "source_url": "https://news.pedaily.cn/202606/565039.shtml",
+            "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
+            "source_content_hash": "5d769e59ad9aaef2efe4222e8060570fc740fece3a4437d0b595a90e06e1ebe0",
+            "quote": "机构财通资本敦鸿资产藕舫天使天图投资",
+            "quote_hash": "1ac21d296e9d45858e33702b8083d80ef4d3288b3d973093c06dbfb7751fb3ba"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "939f8ade087f52a4",
         "quote": "由上海知识产权基金、天图投资、知名个人投资人魏巍等参与投资，老股东三七互娱继续跟投。",
         "quote_hash": "38a3453c6027233044d8f2e5fa4a5815ec37189fdb1c7083f4a6d3387a8a3ebf"
+      },
+      {
+        "source_id": "FISRC-eea8e7a4669a91fa",
+        "source_url": "https://news.pedaily.cn/202606/565039.shtml",
+        "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
+        "source_content_hash": "5d769e59ad9aaef2efe4222e8060570fc740fece3a4437d0b595a90e06e1ebe0",
+        "quote": "机构财通资本敦鸿资产藕舫天使天图投资",
+        "quote_hash": "1ac21d296e9d45858e33702b8083d80ef4d3288b3d973093c06dbfb7751fb3ba"
       }
     ],
     "public_profile": {
@@ -148,6 +189,10 @@
         {
           "description": "融资来源记录：智推时代 · 天使轮 · 2026-07-07 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-602fdc3dbd5462df"
+        },
+        {
+          "description": "融资来源记录：玩点旅行 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eea8e7a4669a91fa"
         }
       ],
       "contacts": [],
@@ -159,6 +204,14 @@
           "source_content_hash": "939f8ade087f52a4",
           "quote": "由上海知识产权基金、天图投资、知名个人投资人魏巍等参与投资，老股东三七互娱继续跟投。",
           "quote_hash": "38a3453c6027233044d8f2e5fa4a5815ec37189fdb1c7083f4a6d3387a8a3ebf"
+        },
+        {
+          "source_id": "FISRC-eea8e7a4669a91fa",
+          "source_url": "https://news.pedaily.cn/202606/565039.shtml",
+          "source_title": "AI旅行服务平台「玩点旅行」完成超亿元Pre-A轮融资",
+          "source_content_hash": "5d769e59ad9aaef2efe4222e8060570fc740fece3a4437d0b595a90e06e1ebe0",
+          "quote": "机构财通资本敦鸿资产藕舫天使天图投资",
+          "quote_hash": "1ac21d296e9d45858e33702b8083d80ef4d3288b3d973093c06dbfb7751fb3ba"
         }
       ],
       "last_verified_at": "2026-09-25"

@@ -6,7 +6,7 @@ const root = process.cwd();
 const problems = [];
 const read = (relative) => fs.readFileSync(path.join(root, relative), "utf8");
 const workflows = [
-  ".github/workflows/daily-persistent-assets-pr.yml",
+  ".github/workflows/funding-daily-pr.yml",
   ".github/workflows/daily-production-chain-dry-run.yml",
 ];
 const retiredCommands = [
@@ -31,47 +31,30 @@ for (const workflow of workflows) {
   for (const retiredPath of retiredStagePaths) {
     if (text.includes(retiredPath)) problems.push(`${workflow} still stages or inspects retired compatibility path ${retiredPath}`);
   }
-  if (!text.includes("data-center-v4/intake-v1/${RUN_DATE}.json")
-    && !text.includes("data-center-v4/intake-v1/${{ steps.run-date.outputs.date }}.json")) {
-    problems.push(`${workflow} does not persist the structured source intake`);
-  }
-  if (!text.includes("--compatibilityRetired=true")) {
-    problems.push(`${workflow} does not declare compatibility-retired classification`);
-  }
 }
 
-const persistent = read(workflows[0]);
-const classifier = read("agent-workflow/tools/classify-business-signals-production-state.mjs");
-if (!/id:\s*pre-commit-gate[\s\S]*steps\.data-center-v4-materialize\.outcome == 'success' && steps\.operations-data\.outcome == 'success'/u.test(persistent)) {
-  problems.push("persistent workflow pre-commit gate is not owned by V4 materialization and operations data");
-}
-if (/pre-commit-gate[\s\S]{0,400}(?:business-frontstage|card-editorial|pool-to-card)/u.test(persistent)) {
-  problems.push("persistent pre-commit gate still depends on a retired compatibility stage");
-}
-if (/\["application_projection",/u.test(classifier)) {
-  problems.push("Business Signals final classification still blocks accepted V4 facts on downstream application projections");
-}
-for (const projection of ["opportunity", "trend", "funding"]) {
-  if (!new RegExp(`\\["${projection}",`).test(classifier)) {
-    problems.push(`Business Signals final classification does not report ${projection} projection warnings`);
+const producer = read("agent-workflow/financing/run.mjs");
+const collector = read("agent-workflow/financing/collect.mjs");
+const checkpoint = read("agent-workflow/financing/checkpoint.mjs");
+const financing = read(workflows[0]);
+for (const text of [producer, collector, financing]) {
+  if (/run-guanlan-daily-monitor|run-china-funding-pipeline|classify-business-signals-production-state/u.test(text)) {
+    problems.push("current financing execution depends on a retired monitor/controller");
   }
 }
-
-const monitor = read("agent-workflow/tools/run-guanlan-daily-monitor.mjs");
-if (/writeFile\([^)]*(?:raw-candidates|pool-candidates)\.md/u.test(monitor)) {
-  problems.push("source monitor still writes candidate Markdown");
+if (!collector.includes("buildSourceIntake") || !collector.includes("mergeSourceIntakes")) {
+  problems.push("financing collector must persist structured intake and preserve accepted same-date evidence");
 }
-if (!monitor.includes("buildSourceIntake") || !monitor.includes("sourceIntakePath")) {
-  problems.push("source monitor does not write structured SourceArtifact / RawDocument intake");
+if (!checkpoint.includes("/intake-v1/${date}.json") || !financing.includes("manifest.entries")) {
+  problems.push("financing publication must persist accepted intake through its checked manifest");
 }
-if (/01-Signal-Cards|existingFormalCardSourceItems/u.test(monitor)) {
-  problems.push("source monitor still discovers compatibility Cards");
+if (!financing.includes("steps.produce.outcome == 'success'") || !producer.includes("release_gate")) {
+  problems.push("financing publication must follow successful production gates");
 }
-if (monitor.includes("resetGeneratedDir(originalDir")) {
-  problems.push("source monitor still deletes same-date immutable source snapshots on rerun");
-}
-if (!monitor.includes("fs.readdirSync(originalDir)")) {
-  problems.push("source monitor does not carry existing same-date snapshots into structured intake");
+if (!financing.includes("wait-for-production-code-checks.mjs")
+    || !financing.includes("review_required: Codex must review")
+    || /\bgh pr merge\b/u.test(financing)) {
+  problems.push("financing PR must pass current-head production checks and await Codex review before merge");
 }
 
 const builder = read("agent-workflow/tools/build-data-center-v4.mjs");

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,52 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-12",
+    "first_disclosed_at": "2026-01-06",
     "latest_disclosed_at": "2026-08-10",
     "role_counts": {
-      "co_lead": 2
+      "co_lead": 3,
+      "participant": 3
     },
     "round_codes": [
-      "series_g"
+      "series_b",
+      "series_e",
+      "series_g",
+      "series_h",
+      "strategic"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-2dc010636b9dce91",
+        "canonical_entity_id": "EN-2dc010636b9dce91",
+        "name": "Databricks"
+      },
+      {
+        "entity_id": "EN-37f52323f7361ee9",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
+      },
+      {
+        "entity_id": "EN-6fcba5d96a4fadfd",
+        "canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "name": "xAI"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-bac23661f6589de1",
+        "activity_id": "IA-e5f8fbbeef5ce2bf",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
         "event_ids": [
           "EV-f5dd6dec49ad83aa"
@@ -126,7 +146,136 @@
         ]
       },
       {
-        "activity_id": "IA-48792601e67c0482",
+        "activity_id": "IA-91ec0a46686b4b2b",
+        "funding_insight_id": "FI-d00f79c5a43227dc",
+        "event_ids": [
+          "EV-0d4e656aa51f9a46",
+          "EV-50b5c4f93ead145d"
+        ],
+        "company_entity_id": "EN-2dc010636b9dce91",
+        "company_canonical_entity_id": "EN-2dc010636b9dce91",
+        "company_name": "Databricks",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "新一轮战略融资",
+        "amount_original": "约 30 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 30 亿美元"
+        },
+        "announced_at": "2026-07-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-23f811fd2df5ab63",
+            "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+            "source_title": "Databricks 同比增长超80%，收入年化运行率突破$7B，扩展 Lakebase、Genie 和 Unity AI Gateway",
+            "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+            "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
+            "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0fc321aea2e01e4c",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+            "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3acb8a7f0947c21a",
+        "funding_insight_id": "FI-fd9ef3cc8a9f2a95",
+        "event_ids": [
+          "EV-347194d4f6eb2a63"
+        ],
+        "company_entity_id": "EN-37f52323f7361ee9",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$2.1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "21 亿美元"
+        },
+        "announced_at": "2026-05-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-618d95b339c7b308",
+            "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
+            "source_title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
+            "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
+            "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
+            "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
+          },
+          {
+            "source_id": "FISRC-82c9573ed9c6ba66",
+            "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+            "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+            "source_content_hash": "e6bdf28f1eee82d0",
+            "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+            "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d76fa9e603c020e4",
         "funding_insight_id": "FI-352a7cfb23508f3e",
         "event_ids": [
           "EV-31df816db86db282"
@@ -164,6 +313,46 @@
             "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
           }
         ]
+      },
+      {
+        "activity_id": "IA-4beaab32ceedeff2",
+        "funding_insight_id": "FI-4909d937138bd129",
+        "event_ids": [
+          "EV-688ef84a4024e075"
+        ],
+        "company_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_name": "xAI",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$20 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 亿美元"
+        },
+        "announced_at": "2026-01-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-23bba75e0baa6d39",
+            "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+            "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
+            "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
+            "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
+            "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -176,12 +365,52 @@
         "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
       },
       {
+        "source_id": "FISRC-23f811fd2df5ab63",
+        "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+        "source_title": "Databricks 同比增长超80%，收入年化运行率突破$7B，扩展 Lakebase、Genie 和 Unity AI Gateway",
+        "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+        "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
+        "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
+      },
+      {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+        "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+      },
+      {
+        "source_id": "FISRC-618d95b339c7b308",
+        "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
+        "source_title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
+        "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
+        "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
+        "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
+      },
+      {
+        "source_id": "FISRC-82c9573ed9c6ba66",
+        "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+        "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+        "source_content_hash": "e6bdf28f1eee82d0",
+        "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+        "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+      },
+      {
         "source_id": "FISRC-b58bb99dfec2e318",
         "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
         "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
         "source_content_hash": "c231466686007dd5",
         "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
         "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
+      },
+      {
+        "source_id": "FISRC-23bba75e0baa6d39",
+        "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+        "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
+        "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
+        "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
+        "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
       }
     ],
     "public_profile": {
@@ -198,8 +427,12 @@
           "source_id": "FISRC-077b1124fc8e9581"
         },
         {
-          "description": "融资来源记录：Anthropic · G轮 · 2026-02-12 · 本轮联合领投 · $30 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b58bb99dfec2e318"
+          "description": "融资来源记录：Databricks · 战略融资 · 2026-07-17 · 本轮联合领投 · 约 30 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23f811fd2df5ab63"
+        },
+        {
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b5e22ae086a6b353"
         }
       ],
       "contacts": [],
@@ -213,12 +446,20 @@
           "quote_hash": "bdfd56c7328c8886cb48b941b4f330aff7ca9c83b05f0664f43e60381537841f"
         },
         {
-          "source_id": "FISRC-b58bb99dfec2e318",
-          "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
-          "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
-          "source_content_hash": "c231466686007dd5",
-          "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
-          "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
+          "source_id": "FISRC-23f811fd2df5ab63",
+          "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+          "source_title": "Databricks 同比增长超80%，收入年化运行率突破$7B，扩展 Lakebase、Genie 和 Unity AI Gateway",
+          "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+          "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
+          "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
+        },
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+          "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
         }
       ],
       "last_verified_at": "2026-09-25"

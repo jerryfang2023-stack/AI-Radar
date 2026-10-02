@@ -1,0 +1,281 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-909c30d6fa68fe",
+    "name": "Mantis VC",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-04-16",
+    "latest_disclosed_at": "2026-09-15",
+    "role_counts": {
+      "historical_or_ambiguous": 1,
+      "participant": 2
+    },
+    "round_codes": [
+      "other",
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-06c8aaa93d80a768",
+        "canonical_entity_id": "",
+        "name": "Factory"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-198ac878d9648b0e",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "未明确轮次",
+        "amount_original": "$200M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c7459d2ce055880",
+            "source_url": "https://factory.ai/news/5-billion-valuation",
+            "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+            "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+            "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+            "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cb60ed57e2f34974",
+        "funding_insight_id": "FI-2beaec77613f6a7f",
+        "event_ids": [
+          "EV-20e5d57a05b69a95"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+            "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+            "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3b72e3a7ef3b973c",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory raises $150M Series C",
+            "source_content_hash": "64798c57510b20e2",
+            "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-1c7459d2ce055880",
+        "source_url": "https://factory.ai/news/5-billion-valuation",
+        "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+        "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+        "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+        "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+        "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+        "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory raises $150M Series C",
+        "source_content_hash": "64798c57510b20e2",
+        "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Mantis VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1c7459d2ce055880"
+        },
+        {
+          "description": "融资来源记录：Factory · C轮 · 2026-04-16 · 本轮参投 · $150M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f4c8c4cc3e97ab74"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-1c7459d2ce055880",
+          "source_url": "https://factory.ai/news/5-billion-valuation",
+          "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+          "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+          "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+          "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+        },
+        {
+          "source_id": "FISRC-f4c8c4cc3e97ab74",
+          "source_url": "https://factory.com/news/series-c",
+          "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+          "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+          "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+          "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[2].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

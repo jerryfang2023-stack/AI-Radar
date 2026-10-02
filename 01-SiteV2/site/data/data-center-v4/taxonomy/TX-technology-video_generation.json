@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,6 +61,7 @@
     "eventIds": [
       "EV-a46f31c7db36c728",
       "EV-08946a787b4827d0",
+      "EV-5e847cd78e657cb5",
       "EV-862b2014e51fe3e0",
       "EV-622ebdad1e1fad2d",
       "EV-11e2a4e252d48f94",
@@ -92,6 +93,7 @@
     "entityIds": [
       "EN-50b2676afbe30c83",
       "EN-964f260c9a904091",
+      "EN-5ae517f37304d77d",
       "EN-03567ce359a30148",
       "EN-9b21c9bf3305c0d6",
       "EN-478676438ee161a3",
@@ -117,7 +119,7 @@
       "HW-68457c8c0a7240ac"
     ],
     "firstSeen": "2026-01-19",
-    "lastSeen": "2026-09-12"
+    "lastSeen": "2026-10-02"
   },
   "events": [
     {
@@ -315,6 +317,105 @@
       "products": [],
       "sourceUrl": "https://cls.cn/detail/2426300",
       "publisher": "财联社／科创板日报"
+    },
+    {
+      "id": "EV-5e847cd78e657cb5",
+      "dataDate": "2026-10-02",
+      "date": "2026-07-13",
+      "updatedDate": "2026-07-13",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "视频生成初创公司PixVerse融资4.39亿美元，估值突破20亿美元",
+      "originalTitle": "Video-generation startup PixVerse raises $439M, valuation soars past $2B",
+      "subject": "PixVerse",
+      "action": "funding",
+      "object": "Series C extension",
+      "metrics": [
+        "$439 million",
+        "$2 billion",
+        "$300 million",
+        "150 million",
+        "15 million",
+        "$4.80 "
+      ],
+      "locations": [
+        "Singapore"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-5ae517f37304d77d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-5ae517f37304d77d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "video_generation",
+          "name": "视频生成",
+          "entityIds": [
+            "EN-5ae517f37304d77d"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-5ae517f37304d77d",
+        "EN-047364b9be67f665",
+        "EN-5388bc10736a0eff",
+        "EN-7d3194f79e645c42",
+        "EN-ea3bd73e2b506e00",
+        "EN-9c8ae69b84f21a2e"
+      ],
+      "entityNames": [
+        "PixVerse",
+        "Alibaba",
+        "ByteDance",
+        "OpenAI",
+        "Meta",
+        "Tencent"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/",
+      "publisher": "techcrunch.com"
     },
     {
       "id": "EV-862b2014e51fe3e0",
@@ -4040,13 +4141,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-ai_market_category-enterprise_applications",
-        "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
-        "TX-ai_market_subcategory-marketing",
         "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
+        "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
         "TX-use_case-content_creation",
+        "TX-ai_market_category-enterprise_applications",
+        "TX-ai_market_subcategory-marketing",
         "TX-use_case-marketing",
         "TX-technology-video_generation"
       ],
@@ -4072,20 +4173,41 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
+        "TX-technology-multimodal",
         "TX-target_user-business_user",
+        "TX-product_form-end_user_application",
+        "TX-use_case-content_creation",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
-        "TX-product_form-model",
-        "TX-technology-multimodal",
-        "TX-industry-media_entertainment",
-        "TX-use_case-content_creation",
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-19",
       "lastSeen": "2026-09-12"
+    },
+    {
+      "id": "EN-5ae517f37304d77d",
+      "name": "PixVerse",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-5e847cd78e657cb5"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-video_generation"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-07-13",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-03567ce359a30148",
@@ -4121,30 +4243,32 @@
       ],
       "eventIds": [
         "EV-5575555340c04c5a",
+        "EV-008220e3dc696cb5",
         "EV-535c2f4fb851332d",
         "EV-622ebdad1e1fad2d",
+        "EV-bf35f4d7b6193a47",
         "EV-2a30e4a6a8033bcc"
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
+        "TX-technology-multimodal",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
+        "TX-industry-retail_ecommerce",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
-        "TX-industry-retail_ecommerce",
-        "TX-technology-multimodal",
         "TX-use_case-software_development",
-        "TX-industry-media_entertainment",
-        "TX-use_case-content_creation",
         "TX-product_form-model_api_service",
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-02-05",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-478676438ee161a3",
@@ -4196,6 +4320,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-eb2796fc4bcc5ac0",
         "EV-a2f902b9707ffd02",
         "EV-47f16317cc2d62e2",
         "EV-88f346991085a2f3",
@@ -4203,7 +4328,9 @@
         "EV-8f3ed0e3e621bbec",
         "EV-00514c4ffc2e3cd3",
         "EV-c0c05d56ea3ef9d6",
+        "EV-dc99e57b58c1a944",
         "EV-08946a787b4827d0",
+        "EV-5e847cd78e657cb5",
         "EV-43b7f45e9bd7ec9b",
         "EV-3d93d1da8cb64462",
         "EV-847102580d2eeef1",
@@ -4211,6 +4338,7 @@
         "EV-71fc51b3d8e89851",
         "EV-21412412d86e827e",
         "EV-d2af76a0359ff86f",
+        "EV-cd44a59d68798f6a",
         "EV-ba564c41a3d3cb1b",
         "EV-060f003ce747acdd",
         "EV-7393716e1efbfbf6",
@@ -4306,16 +4434,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-business_user",
-        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-agentic_execution",
         "TX-product_form-model",
-        "TX-use_case-data_analysis",
         "TX-technology-multimodal",
-        "TX-product_form-ai_device",
+        "TX-target_user-business_user",
+        "TX-use_case-productivity_enterprise_workflows",
         "TX-technology-code_generation",
-        "TX-technology-video_generation",
         "TX-technology-speech_audio",
+        "TX-use_case-data_analysis",
+        "TX-product_form-ai_device",
+        "TX-technology-video_generation",
         "TX-technology-computer_use",
         "TX-technology-mixture_of_experts",
         "TX-technology-reasoning"
@@ -4329,7 +4457,7 @@
         "EN-d65d81c60c0c47c4"
       ],
       "firstSeen": "2026-01-12",
-      "lastSeen": "2026-09-26",
+      "lastSeen": "2026-10-02",
       "organizationFamilyId": "EN-047364b9be67f665",
       "organizationRole": "group",
       "organizationFamilyEntityIds": [
@@ -4371,8 +4499,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-technology-multimodal",
+        "TX-product_form-chip_accelerator",
         "TX-technology-video_generation"
       ],
       "relatedEntityIds": [
@@ -4415,9 +4543,12 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-eb2796fc4bcc5ac0",
         "EV-e993070274a188d9",
         "EV-ea95ea9406e76f62",
         "EV-43c9b851bd2a46c7",
+        "EV-d3c5eb69eb9d397a",
+        "EV-e11382111a5b99f6",
         "EV-3db9a076e3b7d4fd",
         "EV-b9ef27cd1fd9b9a9",
         "EV-87432dbb99cd6033",
@@ -4425,6 +4556,7 @@
         "EV-3a591b0f027f66cf",
         "EV-499a62114b0fd616",
         "EV-77a608db67e742a4",
+        "EV-ae564e305ca1bc3e",
         "EV-cc79a5c01f85909e",
         "EV-7e9cc6f0faab48ed",
         "EV-40dbd71782c11373",
@@ -4463,13 +4595,13 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-industry-healthcare_life_sciences",
         "TX-technology-multimodal",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
         "TX-product_form-ai_device",
         "TX-use_case-software_development",
-        "TX-technology-code_generation",
         "TX-technology-video_generation",
         "TX-deployment_model-cloud"
       ],
@@ -4479,7 +4611,7 @@
         "EN-24381ecb01753c1b"
       ],
       "firstSeen": "2026-01-13",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-572e31f55b6ac1b1",
@@ -4516,28 +4648,47 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-1c7050585c7f4791",
+        "EV-42a74865c9b654bb",
+        "EV-5b5237105fc868cd",
+        "EV-98ea446e097a9a95",
+        "EV-eb2796fc4bcc5ac0",
+        "EV-bccd915b61c48911",
+        "EV-51221c8be7d20b5d",
         "EV-2470b13ea55496d0",
         "EV-59870accd54d5efd",
         "EV-83697c1162a5faf9",
+        "EV-9f886463e1660f7a",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
+        "EV-3f9d420719641eda",
         "EV-a0ca934522418c0b",
         "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
+        "EV-002f1b7abaf28827",
+        "EV-71d7d8bbaa623228",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
         "EV-2bb63a3015195f9b",
         "EV-7f3298069258b3ea",
         "EV-43b56d49df9a73a2",
+        "EV-b61af70f81354b8e",
         "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
-        "EV-5762fe51987bc5ff",
+        "EV-9cf819fafc04ca0c",
+        "EV-d85ea5150230ee56",
         "EV-6cb8979f92cf74ce",
+        "EV-1891e6540ad2c1e0",
+        "EV-4e4ae1578720e907",
+        "EV-cd2970524c27dffb",
+        "EV-ed73cd2c438a470d",
         "EV-ef1de880e4ef9f75",
+        "EV-3f979612b8a14b28",
+        "EV-81f20b7ee39e3e19",
         "EV-63f49f303a80a6a0",
         "EV-0e424af71cfe12f8",
         "EV-67804da6b04fdcc5",
@@ -4807,38 +4958,40 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-aerospace_defense",
-        "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-sales",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
+        "TX-use_case-legal_compliance",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-multimodal",
+        "TX-industry-aerospace_defense",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
-        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-code_generation",
+        "TX-technology-speech_audio",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-model",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-technology-embodied_ai",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
-        "TX-technology-speech_audio",
-        "TX-use_case-legal_compliance",
-        "TX-deployment_model-cloud",
         "TX-technology-computer_use",
+        "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",
         "TX-technology-tool_use"
       ],
@@ -4864,7 +5017,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-1ba4a2b10cfc1093",
@@ -4996,8 +5149,8 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-technology-video_generation",
-        "TX-technology-speech_audio"
+        "TX-technology-speech_audio",
+        "TX-technology-video_generation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-17",
@@ -5021,7 +5174,10 @@
         "EV-59870accd54d5efd",
         "EV-55e7c286e95be405",
         "EV-6f092cfc7a064d64",
+        "EV-11d7d54272c6bb41",
         "EV-d4e44892226be468",
+        "EV-903f06f47afd671a",
+        "EV-fb3d98bc97f91047",
         "EV-1ac32035d5e425e1",
         "EV-8ae771f26c02f7c4",
         "EV-bbb3ed2040b40e3f",
@@ -5082,25 +5238,25 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-aerospace_defense",
-        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
-        "TX-use_case-research_discovery",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
-        "TX-use_case-software_development",
-        "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-physical_automation",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-industry-aerospace_defense",
+        "TX-technology-embodied_ai",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
+        "TX-technology-speech_audio",
+        "TX-use_case-research_discovery",
+        "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-code_generation",
         "TX-technology-vision_language",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
-        "TX-technology-speech_audio",
         "TX-technology-mixture_of_experts"
       ],
       "relatedEntityIds": [
@@ -5111,7 +5267,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-01f1074bb52ff605",
@@ -5153,10 +5309,15 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-f7c48f02fd8618a2",
         "EV-1043d78cc040ab30",
         "EV-41c54c428d84cc1e",
+        "EV-a6696955767a209e",
+        "EV-5e847cd78e657cb5",
         "EV-59e88ff6b13c901b",
+        "EV-cd2970524c27dffb",
         "EV-3f62161d9ba0d82e",
+        "EV-ae564e305ca1bc3e",
         "EV-97fdf068afbbe555",
         "EV-47a84a0f1a85c29c",
         "EV-6c361125c3f50bb6",
@@ -5182,16 +5343,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
+        "TX-product_form-enterprise_software_platform",
         "TX-technology-video_generation",
         "TX-technology-image_generation"
       ],
       "relatedEntityIds": [
         "EN-4f96127fdacbb405"
       ],
-      "firstSeen": "2026-04-09",
-      "lastSeen": "2026-09-24"
+      "firstSeen": "2026-02-27",
+      "lastSeen": "2026-10-02"
     }
   ],
   "fde": [],

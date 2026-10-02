@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 8,
+    "current_round_count": 13,
+    "historical_or_ambiguous_count": 5,
+    "portfolio_company_count": 12,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-09-05",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 3,
-      "lead": 3,
-      "participant": 5
+      "historical_or_ambiguous": 5,
+      "lead": 5,
+      "participant": 7
     },
     "round_codes": [
       "seed",
+      "series_a",
       "series_b",
       "series_c",
       "series_d",
@@ -96,9 +97,19 @@
         "name": "Anthropic PBC"
       },
       {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
+      },
+      {
         "entity_id": "EN-f3d05a0f6248941d",
         "canonical_entity_id": "",
         "name": "Assort Health"
+      },
+      {
+        "entity_id": "EN-0acbf84757d057b4",
+        "canonical_entity_id": "",
+        "name": "Axiom"
       },
       {
         "entity_id": "EN-e647c818ac38b6ca",
@@ -121,6 +132,16 @@
         "name": "Higgsfield"
       },
       {
+        "entity_id": "EN-2f9cb7cda5222087",
+        "canonical_entity_id": "",
+        "name": "Lovable"
+      },
+      {
+        "entity_id": "EN-586937124e151c46",
+        "canonical_entity_id": "EN-586937124e151c46",
+        "name": "Suno"
+      },
+      {
         "entity_id": "EN-8c5929d253b07fed",
         "canonical_entity_id": "",
         "name": "Wispr"
@@ -128,7 +149,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-9cfc9e6babe3bbfc",
+        "activity_id": "IA-cd9265bf54d9d560",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+            "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3fc83004271208dc",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
           "EV-1dba157815d84342"
@@ -168,47 +229,7 @@
         ]
       },
       {
-        "activity_id": "IA-25827e2078cca603",
-        "funding_insight_id": "FI-94c0eaa68ec2b037",
-        "event_ids": [
-          "EV-1dba157815d84342"
-        ],
-        "company_entity_id": "EN-50b2676afbe30c83",
-        "company_canonical_entity_id": "EN-50b2676afbe30c83",
-        "company_name": "Higgsfield",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "Series B",
-        "amount_original": "4 亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 400000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4 亿美元"
-        },
-        "announced_at": "2026-08-17",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-35d27946fd70aa42",
-            "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
-            "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
-            "source_content_hash": "0d8d55e9f8e4182e",
-            "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
-            "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-ff8d4f231a1e34c0",
+        "activity_id": "IA-2a24e2084dabff91",
         "funding_insight_id": "FI-c0b843a5e6f6ea0a",
         "event_ids": [
           "EV-d43103952399bc68"
@@ -248,7 +269,47 @@
         ]
       },
       {
-        "activity_id": "IA-b00f312fbbfc57da",
+        "activity_id": "IA-bb2ecff0db4b3f02",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$400 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf82db3dd7ead1a",
+            "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+            "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+            "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+            "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+            "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a47097c27273b25c",
         "funding_insight_id": "FI-f59cd4d7e9ffcb18",
         "event_ids": [
           "EV-44cd5e03d30c85b3"
@@ -288,7 +349,7 @@
         ]
       },
       {
-        "activity_id": "IA-c71e5939d0398452",
+        "activity_id": "IA-72869ec7323cc0ed",
         "funding_insight_id": "FI-3b1ea359415f476d",
         "event_ids": [
           "EV-4eaf3aabecae6016"
@@ -328,7 +389,7 @@
         ]
       },
       {
-        "activity_id": "IA-065cb48306410a3b",
+        "activity_id": "IA-249b97ba39b4bd67",
         "funding_insight_id": "FI-7ba66ce9eb0ab250",
         "event_ids": [
           "EV-f487788f3d44f288"
@@ -368,55 +429,48 @@
         ]
       },
       {
-        "activity_id": "IA-344d8da863cf3a9a",
-        "funding_insight_id": "FI-09809d62deea4164",
+        "activity_id": "IA-45a45b2fbadbac77",
+        "funding_insight_id": "FI-cbf93da745326644",
         "event_ids": [
-          "EV-0e84a2f49d765ce3"
+          "EV-3e92fba5502f1aba",
+          "EV-31579660b945ef01"
         ],
-        "company_entity_id": "EN-7f871cbf905f6e0c",
-        "company_canonical_entity_id": "EN-7f871cbf905f6e0c",
-        "company_name": "OpenRouter",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "Series B",
-        "amount_original": "$113 million",
+        "company_entity_id": "EN-586937124e151c46",
+        "company_canonical_entity_id": "EN-586937124e151c46",
+        "company_name": "Suno",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "4亿美元",
         "amount_normalized": {
           "currency": "USD",
-          "value": 113000000,
+          "value": 400000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "1.13 亿美元"
+          "display_zh": "4 亿美元"
         },
-        "announced_at": "2026-05-26",
+        "announced_at": "2026-06-03",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方（A轮领投）",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-d1b42068c59f51d1",
-            "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
-            "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
-            "source_content_hash": "c1afd6dfb4036688",
-            "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures",
-            "quote_hash": "c66b35a694c779db92ba5253dc1850819286f30a8138bca19779d3dffccbbcdd"
-          },
-          {
-            "source_id": "FISRC-d1b42068c59f51d1",
-            "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
-            "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
-            "source_content_hash": "c1afd6dfb4036688",
-            "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
-            "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+            "source_id": "FISRC-8a34984c8e02defc",
+            "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+            "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+            "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+            "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+            "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
           }
         ]
       },
       {
-        "activity_id": "IA-9ca331aec4405db5",
+        "activity_id": "IA-6d352c8c6692a2fa",
         "funding_insight_id": "FI-fecb7f6a77985938",
         "event_ids": [
           "EV-61546e58c0e669e7"
@@ -456,7 +510,7 @@
         ]
       },
       {
-        "activity_id": "IA-1d61dd1a0a3fabae",
+        "activity_id": "IA-9787993b5921ec81",
         "funding_insight_id": "FI-24441bfba8aff1ad",
         "event_ids": [
           "EV-6f092cfc7a064d64"
@@ -504,47 +558,47 @@
         ]
       },
       {
-        "activity_id": "IA-ac30461ccf399fb4",
-        "funding_insight_id": "FI-0312b291d6672487",
+        "activity_id": "IA-1ebc20bc0f4bacc5",
+        "funding_insight_id": "FI-84ed00f55e4ff49a",
         "event_ids": [
-          "EV-201b25d4f3cf696a"
+          "EV-ba8897c43e2915c0"
         ],
-        "company_entity_id": "EN-c70eca6b0f88f44d",
-        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-        "company_name": "Anthropic",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "Series F",
-        "amount_original": "$13 billion",
+        "company_entity_id": "EN-0acbf84757d057b4",
+        "company_canonical_entity_id": "",
+        "company_name": "Axiom",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$200 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 13000000000,
+          "value": 200000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "130 亿美元"
+          "display_zh": "2 亿美元"
         },
-        "announced_at": "2025-09-02",
+        "announced_at": "2026-03-12",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "参与E轮融资",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-c5289e6345684ca4",
-            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
-            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
-            "source_content_hash": "e918313869a22b8d",
-            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
-            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+            "source_id": "FISRC-b5aa4b20d12e0c1a",
+            "source_url": "https://menlovc.com/perspective/ai-will-write-all-the-code-mathematics-will-prove-it-works/",
+            "source_title": "AI 将编写所有代码。数学将证明其有效。",
+            "source_content_hash": "25f642f49a41907dcaa5d9840cd15abae5063c43b5fa1119a1f6fd05b3364db0",
+            "quote": "Today, I’m announcing that Menlo Ventures is leading Axiom’s Series A of $200 million at a $1.6 billion post-money valuation, and I’m joining the board.",
+            "quote_hash": "7737e2a3d8b0e511215a0e5efd2df933057751f56f0d315fec2ac5af4e7062d1"
           }
         ]
       },
       {
-        "activity_id": "IA-d59c010f287a2670",
+        "activity_id": "IA-16184970f90530e6",
         "funding_insight_id": "FI-6601d010adc14dd0",
         "event_ids": [
           "EV-78a11d309c3d4e97"
@@ -584,7 +638,7 @@
         ]
       },
       {
-        "activity_id": "IA-4bd500981cbe3ace",
+        "activity_id": "IA-ca5bae9d9f304d1d",
         "funding_insight_id": "FI-74a336bce144f22d",
         "event_ids": [
           "EV-d10684a6f16afe10"
@@ -622,9 +676,185 @@
             "quote_hash": "cf3397055174326401e342d004b986f90abf710e29e694a66f9fb4d3a5d131b9"
           }
         ]
+      },
+      {
+        "activity_id": "IA-7b5931e51e10cae1",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E轮参投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "参与E轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-837b837e15c041b5",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-14fa67bc80a1ece9",
+            "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+            "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+            "source_content_hash": "f5a108f3994daf10",
+            "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+            "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e264a686c0b42f06",
+        "funding_insight_id": "FI-94c0eaa68ec2b037",
+        "event_ids": [
+          "EV-1dba157815d84342"
+        ],
+        "company_entity_id": "EN-50b2676afbe30c83",
+        "company_canonical_entity_id": "EN-50b2676afbe30c83",
+        "company_name": "Higgsfield",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-35d27946fd70aa42",
+            "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+            "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+            "source_content_hash": "0d8d55e9f8e4182e",
+            "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
+            "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4cb517ecb43278be",
+        "funding_insight_id": "FI-09809d62deea4164",
+        "event_ids": [
+          "EV-0e84a2f49d765ce3"
+        ],
+        "company_entity_id": "EN-7f871cbf905f6e0c",
+        "company_canonical_entity_id": "EN-7f871cbf905f6e0c",
+        "company_name": "OpenRouter",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "既有投资方（A轮领投）",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（A轮领投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d1b42068c59f51d1",
+            "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+            "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+            "source_content_hash": "c1afd6dfb4036688",
+            "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures",
+            "quote_hash": "c66b35a694c779db92ba5253dc1850819286f30a8138bca19779d3dffccbbcdd"
+          },
+          {
+            "source_id": "FISRC-d1b42068c59f51d1",
+            "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+            "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+            "source_content_hash": "c1afd6dfb4036688",
+            "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+            "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2c733a856f796c05",
+        "funding_insight_id": "FI-9255d12e7d1cdf9a",
+        "event_ids": [
+          "EV-673637ebe2ac2f2d"
+        ],
+        "company_entity_id": "EN-18131bed4bcc2f1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Sapiom",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资者，本轮继续支持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-df6a9c9a32146320",
+            "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
+            "source_title": "Sapiom 融资 3500 万美元 A 轮，为下一个万亿级 AI 智能体提供动力",
+            "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+            "quote": "alongside continued backing from existing investors including Okta Ventures, Menlo Ventures, Anthropic, and Array Ventures",
+            "quote_hash": "02c9a649b7ce91186d46cb72d8fc8879a34042794f4042cce69b95c457139a84"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+        "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+      },
       {
         "source_id": "FISRC-7c15ac15bf3d0b1a",
         "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
@@ -634,20 +864,20 @@
         "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
       },
       {
-        "source_id": "FISRC-35d27946fd70aa42",
-        "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
-        "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
-        "source_content_hash": "0d8d55e9f8e4182e",
-        "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
-        "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
-      },
-      {
         "source_id": "FISRC-c7de0ac22c0c4ca3",
         "source_url": "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation",
         "source_title": "Wispr 获 2.8 亿美元 B 轮融资，估值 20 亿美元，业务拓展至会议记录",
         "source_content_hash": "ee00eb4103124f93",
         "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
         "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
+      },
+      {
+        "source_id": "FISRC-dcf82db3dd7ead1a",
+        "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+        "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+        "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+        "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+        "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
       },
       {
         "source_id": "FISRC-09d3aaaafa6cdabc",
@@ -674,20 +904,12 @@
         "quote_hash": "ddee37b39c5770ec6168c0ac684b6e5be75bea040f02a8f935249e93865b8b24"
       },
       {
-        "source_id": "FISRC-d1b42068c59f51d1",
-        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
-        "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
-        "source_content_hash": "c1afd6dfb4036688",
-        "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures",
-        "quote_hash": "c66b35a694c779db92ba5253dc1850819286f30a8138bca19779d3dffccbbcdd"
-      },
-      {
-        "source_id": "FISRC-d1b42068c59f51d1",
-        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
-        "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
-        "source_content_hash": "c1afd6dfb4036688",
-        "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
-        "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+        "source_id": "FISRC-8a34984c8e02defc",
+        "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+        "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+        "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+        "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+        "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
       },
       {
         "source_id": "FISRC-2513b5897a02dd3c",
@@ -714,12 +936,12 @@
         "quote_hash": "a84fddf630c74c7c1ba460e3abe4c6abdcf727c721006cbfa7b4d00f33c5cbb2"
       },
       {
-        "source_id": "FISRC-c5289e6345684ca4",
-        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
-        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
-        "source_content_hash": "e918313869a22b8d",
-        "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
-        "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+        "source_id": "FISRC-b5aa4b20d12e0c1a",
+        "source_url": "https://menlovc.com/perspective/ai-will-write-all-the-code-mathematics-will-prove-it-works/",
+        "source_title": "AI 将编写所有代码。数学将证明其有效。",
+        "source_content_hash": "25f642f49a41907dcaa5d9840cd15abae5063c43b5fa1119a1f6fd05b3364db0",
+        "quote": "Today, I’m announcing that Menlo Ventures is leading Axiom’s Series A of $200 million at a $1.6 billion post-money valuation, and I’m joining the board.",
+        "quote_hash": "7737e2a3d8b0e511215a0e5efd2df933057751f56f0d315fec2ac5af4e7062d1"
       },
       {
         "source_id": "FISRC-8aac4802151d3b7d",
@@ -736,6 +958,54 @@
         "source_content_hash": "98fe8fb23998f253",
         "quote": "a $5 million seed funding round led by Menlo Ventures",
         "quote_hash": "cf3397055174326401e342d004b986f90abf710e29e694a66f9fb4d3a5d131b9"
+      },
+      {
+        "source_id": "FISRC-c5289e6345684ca4",
+        "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+        "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+        "source_content_hash": "e918313869a22b8d",
+        "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+        "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+      },
+      {
+        "source_id": "FISRC-14fa67bc80a1ece9",
+        "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+        "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+        "source_content_hash": "f5a108f3994daf10",
+        "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+        "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+      },
+      {
+        "source_id": "FISRC-35d27946fd70aa42",
+        "source_url": "https://techstartups.com/2026/01/15/ai-video-startup-higgsfield-raises-80m-at-1-3b-valuation-as-demand-for-generative-video-surges/",
+        "source_title": "AI video startup Higgsfield raises $80M at $1.3B valuation as demand for generative video surges - Tech Startups",
+        "source_content_hash": "0d8d55e9f8e4182e",
+        "quote": "with participation from BroadLight Capital, NextEquity, and Menlo Ventures",
+        "quote_hash": "cb6eb89aab7c1200185db653dfe353094ec3e34324d608d7317f91f876adc116"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote": "alongside returning investors Andreessen Horowitz and Menlo Ventures",
+        "quote_hash": "c66b35a694c779db92ba5253dc1850819286f30a8138bca19779d3dffccbbcdd"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+        "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+      },
+      {
+        "source_id": "FISRC-df6a9c9a32146320",
+        "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
+        "source_title": "Sapiom 融资 3500 万美元 A 轮，为下一个万亿级 AI 智能体提供动力",
+        "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+        "quote": "alongside continued backing from existing investors including Okta Ventures, Menlo Ventures, Anthropic, and Array Ventures",
+        "quote_hash": "02c9a649b7ce91186d46cb72d8fc8879a34042794f4042cce69b95c457139a84"
       }
     ],
     "public_profile": {
@@ -781,16 +1051,16 @@
           "source_id": "menlo_about"
         },
         {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7c15ac15bf3d0b1a"
         },
         {
           "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮领投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c7de0ac22c0c4ca3"
-        },
-        {
-          "description": "融资来源记录：Elorian · 种子轮 · 2026-07-16 · 本轮参投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-09d3aaaafa6cdabc"
         }
       ],
       "contacts": [
@@ -841,6 +1111,14 @@
           "quote_hash": "6b65a50b891d8c111e5bfd530d4bc9eb08bdefcd9718bf4b8706cad0502cd1ab"
         },
         {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+        },
+        {
           "source_id": "FISRC-7c15ac15bf3d0b1a",
           "source_url": "https://www.finsmes.com/2026/08/higgsfield-raises-400m-in-series-b-funding.html",
           "source_title": "Higgsfield Raises $400M in Series B Funding",
@@ -855,14 +1133,6 @@
           "source_content_hash": "ee00eb4103124f93",
           "quote": "raised $280 million in Series B funding, led by Menlo Ventures",
           "quote_hash": "4ce46948a07016e67be78b2172659ab1be74d3b92043c967087099594a99c16c"
-        },
-        {
-          "source_id": "FISRC-09d3aaaafa6cdabc",
-          "source_url": "https://www.recall.it/summary/artificial-intelligence/how-elorian-ai-pulled-off-a-dollar300m-pre-seed-valuation-with-andrew-dai",
-          "source_title": "How Elorian AI pulled off a $300M pre-seed valuation with Andrew Dai | AI YouTube Summary | TechCrunch | Recall",
-          "source_content_hash": "7b935e4006e94036",
-          "quote": "attracting high‑profile investors such as Menlo Ventures, Nvidia, and Jeff Dean",
-          "quote_hash": "ebeaf596ca305a06070fb1ec2843b8ede18bcdeb117f767b82d14c002579f478"
         }
       ],
       "last_verified_at": "2026-09-25",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,27 +61,35 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "current_round_count": 7,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-16",
-    "latest_disclosed_at": "2026-09-17",
+    "latest_disclosed_at": "2026-09-14",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "lead": 1,
-      "participant": 3
+      "historical_or_ambiguous": 3,
+      "lead": 3,
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
+      "series_a",
       "series_c",
-      "series_d"
+      "series_d",
+      "series_e",
+      "series_h"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2f4436342c46decc",
+        "canonical_entity_id": "",
+        "name": "Cerebras Systems"
+      },
       {
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
@@ -101,52 +109,56 @@
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
         "name": "Upscale AI"
+      },
+      {
+        "entity_id": "EN-d2c4f1b5a5369864",
+        "canonical_entity_id": "",
+        "name": "Upscale, Inc."
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-224fee90954f6e3c",
-        "funding_insight_id": "FI-72df07926e3369ef",
+        "activity_id": "IA-78761b75e3a3e379",
+        "funding_insight_id": "FI-898cddb74dcff413",
         "event_ids": [
-          "EV-26a5749d8604455a",
-          "EV-40d4ce6d936d4d49"
+          "EV-6ed17a96a4a4079d"
         ],
-        "company_entity_id": "EN-d41ebd9f02722fc8",
-        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
-        "company_name": "Crusoe",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "Series F",
-        "amount_original": "$3.9B",
+        "company_entity_id": "EN-e4540a7c8404b1be",
+        "company_canonical_entity_id": "",
+        "company_name": "Temporal",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "$550M",
         "amount_normalized": {
           "currency": "USD",
-          "value": 3900000000,
+          "value": 550000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "39 亿美元"
+          "display_zh": "5.5 亿美元"
         },
-        "announced_at": "2026-09-17",
+        "announced_at": "2026-09-14",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "Series E 参投方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-4afc17abd0ce2781",
-            "source_url": "https://sacra.com/c/crusoe/",
-            "source_title": "Crusoe revenue, valuation & funding | Sacra",
-            "source_content_hash": "031d223859c249dd",
-            "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
-            "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+            "source_id": "FISRC-cf83d78a216a5edf",
+            "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+            "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+            "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+            "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+            "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
           }
         ]
       },
       {
-        "activity_id": "IA-9c20dd750476ef96",
+        "activity_id": "IA-fe8daed5fdd62f71",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
         "event_ids": [
           "EV-19dd4c3a5dd5a94b",
@@ -187,7 +199,7 @@
         ]
       },
       {
-        "activity_id": "IA-efc690e055a7bac9",
+        "activity_id": "IA-a85713ca9e44283d",
         "funding_insight_id": "FI-55464dd460014128",
         "event_ids": [
           "EV-236cbc2d64f0c455"
@@ -227,7 +239,7 @@
         ]
       },
       {
-        "activity_id": "IA-b2fdd76a3c8f615c",
+        "activity_id": "IA-e695fe7f0b8d4bb6",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
           "EV-3b40ec144e5db22c"
@@ -267,7 +279,87 @@
         ]
       },
       {
-        "activity_id": "IA-2ecffeb74be54b55",
+        "activity_id": "IA-e50776373dc00c07",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-51b0427643bffd15",
+            "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+            "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+            "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+            "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+            "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-554b86b6b1bd2a4b",
+        "funding_insight_id": "FI-efe78d5245c912b4",
+        "event_ids": [
+          "EV-a4b2d57251589ede"
+        ],
+        "company_entity_id": "EN-d2c4f1b5a5369864",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3c60f2ab7fcb8b84",
+            "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+            "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+            "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+            "quote": "$200 million Series A financing led by Tiger Global, Premji Invest, and Xora Innovation",
+            "quote_hash": "3e019e820247939f24cdb13d98a59bae43ec599929bc7218fc0ebe3216db2307"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3ad5f54dd2b438d8",
         "funding_insight_id": "FI-e5aed52f8dab81de",
         "event_ids": [
           "EV-60366423eaa67216"
@@ -305,16 +397,113 @@
             "quote_hash": "9eaaed652574b1beacba1844710f58106747549dba80d721fc0a8fcdeeb1d158"
           }
         ]
+      },
+      {
+        "activity_id": "IA-d9d446bebb3d2d38",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series G 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+            "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-57ab5d6edc2c698c",
+        "funding_insight_id": "FI-72df07926e3369ef",
+        "event_ids": [
+          "EV-26a5749d8604455a",
+          "EV-40d4ce6d936d4d49"
+        ],
+        "company_entity_id": "EN-d41ebd9f02722fc8",
+        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "company_name": "Crusoe",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series E 参投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4afc17abd0ce2781",
+            "source_url": "https://sacra.com/c/crusoe/",
+            "source_title": "Crusoe revenue, valuation & funding | Sacra",
+            "source_content_hash": "031d223859c249dd",
+            "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+            "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0475605c30c36d5d",
+        "funding_insight_id": "FI-643b76798f958bf3",
+        "event_ids": [
+          "EV-3d5daffd1cb9521b"
+        ],
+        "company_entity_id": "EN-b8f1c575bfcf5ece",
+        "company_canonical_entity_id": "",
+        "company_name": "Eliyan Corporation",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series B 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2e3c849f55d66222",
+            "source_url": "https://startupintros.com/orgs/eliyan",
+            "source_title": "Eliyan: Funding, Team & Investors",
+            "source_content_hash": "11e0a57400629219",
+            "quote": "Mar 1, 2024$60M Series BMarco Chisari, Tiger Global",
+            "quote_hash": "f451812afc2e3ed5cbf04b00687a9287b497327c397a9de0276cf50b1ab9e0f1"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-4afc17abd0ce2781",
-        "source_url": "https://sacra.com/c/crusoe/",
-        "source_title": "Crusoe revenue, valuation & funding | Sacra",
-        "source_content_hash": "031d223859c249dd",
-        "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
-        "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+        "source_id": "FISRC-cf83d78a216a5edf",
+        "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+        "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+        "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+        "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+        "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
       },
       {
         "source_id": "FISRC-134a8e8124653c90",
@@ -341,12 +530,52 @@
         "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
       },
       {
+        "source_id": "FISRC-51b0427643bffd15",
+        "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+        "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+        "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+        "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+        "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+      },
+      {
+        "source_id": "FISRC-3c60f2ab7fcb8b84",
+        "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+        "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+        "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+        "quote": "$200 million Series A financing led by Tiger Global, Premji Invest, and Xora Innovation",
+        "quote_hash": "3e019e820247939f24cdb13d98a59bae43ec599929bc7218fc0ebe3216db2307"
+      },
+      {
         "source_id": "FISRC-7e709202ce99cc8e",
         "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
         "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
         "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
         "quote": "The round was led by Tiger Global",
         "quote_hash": "9eaaed652574b1beacba1844710f58106747549dba80d721fc0a8fcdeeb1d158"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+        "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
+      },
+      {
+        "source_id": "FISRC-4afc17abd0ce2781",
+        "source_url": "https://sacra.com/c/crusoe/",
+        "source_title": "Crusoe revenue, valuation & funding | Sacra",
+        "source_content_hash": "031d223859c249dd",
+        "quote": "Its October 2025 Series E—oversubscribed and co-led by Valor Equity Partners and Mubadala Capital, with participation from NVIDIA, Fidelity, Founders Fund, Salesforce Ventures, Supermicro, T. Rowe Price, Tiger Global, Ribbit, Franklin Templeton, and Upper90, among others—was anticipated to total $1.375B and valued the company at over $10B.",
+        "quote_hash": "e78c455c702cb1c5edd7d55fa07af015b1b0db72944ba98fe163abcad48cc9e5"
+      },
+      {
+        "source_id": "FISRC-2e3c849f55d66222",
+        "source_url": "https://startupintros.com/orgs/eliyan",
+        "source_title": "Eliyan: Funding, Team & Investors",
+        "source_content_hash": "11e0a57400629219",
+        "quote": "Mar 1, 2024$60M Series BMarco Chisari, Tiger Global",
+        "quote_hash": "f451812afc2e3ed5cbf04b00687a9287b497327c397a9de0276cf50b1ab9e0f1"
       }
     ],
     "public_profile": {
@@ -381,16 +610,16 @@
           "source_id": "tiger_edge"
         },
         {
+          "description": "融资来源记录：Temporal · E轮 · 2026-09-14 · 本轮参投 · $550M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-cf83d78a216a5edf"
+        },
+        {
           "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-134a8e8124653c90"
         },
         {
           "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7dcdc22c0b1702bf"
-        },
-        {
-          "description": "融资来源记录：Temporal Technologies · D轮 · 2026-02-17 · 既有投资方，本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1f69885afd5fc439"
         }
       ],
       "contacts": [
@@ -434,6 +663,14 @@
           "quote_hash": "c1993b4525cabc40054293c1a5e2bb8a8067d972eff38d6341634b905fd026a5"
         },
         {
+          "source_id": "FISRC-cf83d78a216a5edf",
+          "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+          "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+          "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+          "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
+          "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
+        },
+        {
           "source_id": "FISRC-134a8e8124653c90",
           "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
           "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
@@ -448,14 +685,6 @@
           "source_content_hash": "23145edb5fdd8d69",
           "quote": "participation from existing investors, Maverick Silicon, Mayfield, Prosperity7 Ventures, StepStone Group, and Tiger Global",
           "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
-        },
-        {
-          "source_id": "FISRC-1f69885afd5fc439",
-          "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-          "source_title": "Temporal 完成 D 轮融资",
-          "source_content_hash": "74cb86598e6c9021",
-          "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-          "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -463,12 +692,28 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[0].role": {
+        "activities[7].role": {
+          "text": "Series G 参投",
+          "source_hash": "f55d0290b338dc301d7655ccb2e65e9c4e1f2abca1b8e5e6d65f68a9664f1861",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
+        "activities[8].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-09-18T02:49:06.821Z",
+          "status": "translated"
+        },
+        "activities[9].role": {
+          "text": "Series B 领投",
+          "source_hash": "c0369efbbec304e2393dfa7c92af040f8e3a41190a3fb71b346dc0ff3f230193",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:20.336Z",
           "status": "translated"
         }
       }

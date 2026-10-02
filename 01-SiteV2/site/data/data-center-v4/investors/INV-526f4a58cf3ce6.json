@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,78 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-05-27",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
-      "co_lead": 1
+      "co_lead": 2
     },
     "round_codes": [
-      "angel"
+      "angel",
+      "angel_plus"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-3ee57b807d91aa43",
         "canonical_entity_id": "EN-3ee57b807d91aa43",
         "name": "新智具身"
+      },
+      {
+        "entity_id": "EN-5ba042c14b39398d",
+        "canonical_entity_id": "",
+        "name": "原力引擎"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-c840e548946ba53f",
+        "activity_id": "IA-a8c4c29d9cdb3d40",
+        "funding_insight_id": "FI-cfac6fe1ce40d030",
+        "event_ids": [
+          "EV-0e854ee566f6d0b9"
+        ],
+        "company_entity_id": "EN-5ba042c14b39398d",
+        "company_canonical_entity_id": "",
+        "company_name": "原力引擎",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "近5000万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-642c04894404ccd5",
+            "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+            "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+            "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+            "quote": "本轮融资由上海国投旗下上海未来产业基金和上海科创集团共同领投",
+            "quote_hash": "b0f1d4a647c4b9de2fb3a0d805a77742e526ebfdb9e7ab77067c02944a414b17"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-94d4634a843c0c87",
         "funding_insight_id": "FI-e8a58a7e9f2d3264",
         "event_ids": [
           "EV-1a6fbd73eb4eb133"
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-642c04894404ccd5",
+        "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+        "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+        "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+        "quote": "本轮融资由上海国投旗下上海未来产业基金和上海科创集团共同领投",
+        "quote_hash": "b0f1d4a647c4b9de2fb3a0d805a77742e526ebfdb9e7ab77067c02944a414b17"
+      },
       {
         "source_id": "FISRC-e666934339b27e85",
         "source_url": "https://news.pedaily.cn/202605/564455.shtml",
@@ -195,6 +249,10 @@
         {
           "description": "融资来源记录：新智具身 · 天使轮 · 2026-05-27 · 联合领投 · 约1亿元。这是单条披露记录，不代表完整投资组合或集团单独出资额。",
           "source_id": "FISRC-e666934339b27e85"
+        },
+        {
+          "description": "融资来源记录：原力引擎 · 天使+轮 · 2026-08-26 · 本轮联合领投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-642c04894404ccd5"
         }
       ],
       "contacts": [
@@ -251,6 +309,14 @@
           "source_content_hash": "a3d55e3960392661",
           "quote": "本轮由上海国投旗下上海科创集团、复旦科创联合领投",
           "quote_hash": "a48247a13b3e5d8796103000c085404f8869646a8d4a74f21ef4427981deadea"
+        },
+        {
+          "source_id": "FISRC-642c04894404ccd5",
+          "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+          "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+          "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+          "quote": "本轮融资由上海国投旗下上海未来产业基金和上海科创集团共同领投",
+          "quote_hash": "b0f1d4a647c4b9de2fb3a0d805a77742e526ebfdb9e7ab77067c02944a414b17"
         }
       ],
       "last_verified_at": "2026-09-27"

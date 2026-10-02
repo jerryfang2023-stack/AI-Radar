@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,32 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-09-16",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-08-26",
     "latest_disclosed_at": "2026-09-16",
     "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
+      "angel_plus",
       "other"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-5ba042c14b39398d",
+        "canonical_entity_id": "",
+        "name": "原力引擎"
+      },
       {
         "entity_id": "FICO-anew-labs",
         "canonical_entity_id": "",
@@ -86,7 +95,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-fb952e356e9a9b1d",
+        "activity_id": "IA-1f5bbdaac9cc6388",
         "funding_insight_id": "FI-e81dafc2defecb80",
         "event_ids": [
           "EV-4bc690025cbda146",
@@ -127,6 +136,78 @@
             "quote_hash": "b3e33a531bf1d359d26fad5fe6a9e7c6cc2a2528e82d9b61df318b00c36ddd43"
           }
         ]
+      },
+      {
+        "activity_id": "IA-1c72b0f5b1fe2880",
+        "funding_insight_id": "FI-cfac6fe1ce40d030",
+        "event_ids": [
+          "EV-0e854ee566f6d0b9"
+        ],
+        "company_entity_id": "EN-5ba042c14b39398d",
+        "company_canonical_entity_id": "",
+        "company_name": "原力引擎",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "近5000万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-642c04894404ccd5",
+            "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+            "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+            "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+            "quote": "本轮融资由上海国投旗下上海未来产业基金和上海科创集团共同领投",
+            "quote_hash": "b0f1d4a647c4b9de2fb3a0d805a77742e526ebfdb9e7ab77067c02944a414b17"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c2b3764ed5d78146",
+        "funding_insight_id": "FI-d66ca0243fba30e1",
+        "event_ids": [
+          "EV-f453123978fbf095"
+        ],
+        "company_entity_id": "EN-feb09ffdcef55d25",
+        "company_canonical_entity_id": "",
+        "company_name": "鼎犀智创（Rhinovate™）",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-57de475f4ec2ac5a",
+            "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+            "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+            "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+            "quote": "这是继此前昆仲资本、元生创投、上海未来产业基金、晶泰科技等投资后一年内完成的第三轮融资。",
+            "quote_hash": "8789bd1eed49fe6256fa3c9423529cd18c841cfcd34c39e890d67b6a67fb455d"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -137,6 +218,22 @@
         "source_content_hash": "2896ab8dacb23e1a",
         "quote": "上海未来产业基金与中国生物制药也在名单中",
         "quote_hash": "b3e33a531bf1d359d26fad5fe6a9e7c6cc2a2528e82d9b61df318b00c36ddd43"
+      },
+      {
+        "source_id": "FISRC-642c04894404ccd5",
+        "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+        "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+        "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+        "quote": "本轮融资由上海国投旗下上海未来产业基金和上海科创集团共同领投",
+        "quote_hash": "b0f1d4a647c4b9de2fb3a0d805a77742e526ebfdb9e7ab77067c02944a414b17"
+      },
+      {
+        "source_id": "FISRC-57de475f4ec2ac5a",
+        "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+        "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+        "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+        "quote": "这是继此前昆仲资本、元生创投、上海未来产业基金、晶泰科技等投资后一年内完成的第三轮融资。",
+        "quote_hash": "8789bd1eed49fe6256fa3c9423529cd18c841cfcd34c39e890d67b6a67fb455d"
       }
     ],
     "public_profile": {
@@ -235,6 +332,14 @@
         {
           "description": "融资来源记录：Anew Labs（新生实验室） · 其他融资 · 2026-09-16 · 本轮参投 · 2.9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-55c913083e7dcd21"
+        },
+        {
+          "description": "融资来源记录：原力引擎 · 天使+轮 · 2026-08-26 · 本轮联合领投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-642c04894404ccd5"
+        },
+        {
+          "description": "融资来源记录：鼎犀智创（Rhinovate™） · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57de475f4ec2ac5a"
         }
       ],
       "current_roles": [
@@ -338,6 +443,22 @@
           "source_content_hash": "2896ab8dacb23e1a",
           "quote": "上海未来产业基金与中国生物制药也在名单中",
           "quote_hash": "b3e33a531bf1d359d26fad5fe6a9e7c6cc2a2528e82d9b61df318b00c36ddd43"
+        },
+        {
+          "source_id": "FISRC-642c04894404ccd5",
+          "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+          "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+          "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+          "quote": "本轮融资由上海国投旗下上海未来产业基金和上海科创集团共同领投",
+          "quote_hash": "b0f1d4a647c4b9de2fb3a0d805a77742e526ebfdb9e7ab77067c02944a414b17"
+        },
+        {
+          "source_id": "FISRC-57de475f4ec2ac5a",
+          "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+          "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+          "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+          "quote": "这是继此前昆仲资本、元生创投、上海未来产业基金、晶泰科技等投资后一年内完成的第三轮融资。",
+          "quote_hash": "8789bd1eed49fe6256fa3c9423529cd18c841cfcd34c39e890d67b6a67fb455d"
         }
       ],
       "last_verified_at": "2026-09-26"

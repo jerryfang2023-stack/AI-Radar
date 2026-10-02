@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-05",
-    "latest_disclosed_at": "2026-08-05",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-ff67fdf0672b8819",
+        "activity_id": "IA-8fa4adef35e5dfdf",
         "funding_insight_id": "FI-db2bd30618100f0d",
         "event_ids": [
           "EV-60f219702a66bf38"
@@ -86,23 +86,15 @@
         "company_entity_id": "EN-6861f63c27eb0ada",
         "company_canonical_entity_id": "",
         "company_name": "WindBorne Systems",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "$37 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 37000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3700 万美元"
-        },
-        "announced_at": "2026-08-05",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "A 轮参投方",
         "role_code": "historical_or_ambiguous",
@@ -306,6 +298,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "基于机构官网或机构本人公开资料核验；自述数据已注明口径，未公开的信息留空。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "官网披露，截至 2026 年第二季度，已投资 25 家公司，并列出 Table22、Cradlewise、Trendsi、Watershed、GPTZero、Elicit、Fuse、Monk 等选例；该组合清单为机构自述。",
+          "source_hash": "5997d2d1d5345d7a98e0e62e6050b71db84081d70b49386f4b0c9fa242b780e1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.career[2].description": {
+          "text": "投资 Athelas、Brigit、Canva、ClassDojo、Color Health、Frame.io、Lattice 等公司。",
+          "source_hash": "6208123a3a2e2239bbad04c08f631996739276f3cccbacd77da43a6182d1bcf4",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.career[3].description": {
+          "text": "官网称其曾任职于 Insight Partners，并加入 Artsy 创始团队。",
+          "source_hash": "8e9076e942cfd8671521e0650915bd4baa0694fe73b7b91dd68d1d9fc080c5fa",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

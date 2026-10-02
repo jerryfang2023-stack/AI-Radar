@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,13 +73,14 @@
     "latest_disclosed_at": "2026-08-13",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1,
-      "participant": 4
+      "lead": 2,
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
       "other",
       "seed",
+      "series_a",
       "series_d"
     ],
     "portfolio_companies": [
@@ -99,6 +100,11 @@
         "name": "Hang Ten Systems"
       },
       {
+        "entity_id": "EN-bf177397fc0b1c41",
+        "canonical_entity_id": "",
+        "name": "Pensive"
+      },
+      {
         "entity_id": "EN-70e7e370d5a50ea1",
         "canonical_entity_id": "",
         "name": "Retym"
@@ -107,11 +113,16 @@
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
         "name": "Upscale AI"
+      },
+      {
+        "entity_id": "EN-d2c4f1b5a5369864",
+        "canonical_entity_id": "",
+        "name": "Upscale, Inc."
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-c07905199abc5592",
+        "activity_id": "IA-e69f8264a70d83b5",
         "funding_insight_id": "FI-d856b9470e389a68",
         "event_ids": [
           "EV-75452672c9976d73"
@@ -151,47 +162,7 @@
         ]
       },
       {
-        "activity_id": "IA-e0de07b394a1b41e",
-        "funding_insight_id": "FI-0df914fcc4086c90",
-        "event_ids": [
-          "EV-b116eafe60d71fbe"
-        ],
-        "company_entity_id": "EN-373da2ec629326c0",
-        "company_canonical_entity_id": "",
-        "company_name": "Lumilens Inc.",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "$900M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 900000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "9 亿美元"
-        },
-        "announced_at": "2026-08-06",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-158eb924ad66ae7b",
-            "source_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
-            "source_title": "Lumilens emerges with $900M+ in Funding",
-            "source_content_hash": "1cd3346880763c40",
-            "quote": "That's why we partnered with Ankur Singla for the third time to help build Lumilens from inception, led their seed round, and have participated in every round since.",
-            "quote_hash": "2540bc57de90a2f90c6b79b51e8d7fdde2d0997fea267fc20e54bf235244a89b"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-33227e31c3fc11d1",
+        "activity_id": "IA-33039e2d04fd9c5f",
         "funding_insight_id": "FI-8e0c1c5789c6d1f8",
         "event_ids": [
           "EV-fb817fb0a5e63323"
@@ -231,7 +202,7 @@
         ]
       },
       {
-        "activity_id": "IA-ef9e1ba51949ecbb",
+        "activity_id": "IA-866e054adc90cba2",
         "funding_insight_id": "FI-03f2438d748b9029",
         "event_ids": [
           "EV-f0fee44c1dfdcb09"
@@ -271,7 +242,7 @@
         ]
       },
       {
-        "activity_id": "IA-7126666ad3bd59e3",
+        "activity_id": "IA-80ba487c1cc0da57",
         "funding_insight_id": "FI-55464dd460014128",
         "event_ids": [
           "EV-236cbc2d64f0c455"
@@ -311,7 +282,87 @@
         ]
       },
       {
-        "activity_id": "IA-4c39e932992ea83f",
+        "activity_id": "IA-8c2adb5f9d5353fa",
+        "funding_insight_id": "FI-603376be669bb001",
+        "event_ids": [
+          "EV-3aaa2e2c2260c84c"
+        ],
+        "company_entity_id": "EN-bf177397fc0b1c41",
+        "company_canonical_entity_id": "",
+        "company_name": "Pensive",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$6.8M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 6800000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "680 万美元"
+        },
+        "announced_at": "2026-02-27",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4c101bd2bd412982",
+            "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+            "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
+            "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
+            "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
+            "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-96f8518ae44d5212",
+        "funding_insight_id": "FI-efe78d5245c912b4",
+        "event_ids": [
+          "EV-a4b2d57251589ede"
+        ],
+        "company_entity_id": "EN-d2c4f1b5a5369864",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3c60f2ab7fcb8b84",
+            "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+            "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+            "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+            "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+            "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1af8821e3b53037a",
         "funding_insight_id": "FI-80a993bcabfd14ae",
         "event_ids": [
           "EV-7abe829941f97b65"
@@ -349,6 +400,38 @@
             "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
           }
         ]
+      },
+      {
+        "activity_id": "IA-45a3376439c7dde6",
+        "funding_insight_id": "FI-0df914fcc4086c90",
+        "event_ids": [
+          "EV-b116eafe60d71fbe"
+        ],
+        "company_entity_id": "EN-373da2ec629326c0",
+        "company_canonical_entity_id": "",
+        "company_name": "Lumilens Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-158eb924ad66ae7b",
+            "source_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+            "source_title": "Lumilens emerges with $900M+ in Funding",
+            "source_content_hash": "1cd3346880763c40",
+            "quote": "That's why we partnered with Ankur Singla for the third time to help build Lumilens from inception, led their seed round, and have participated in every round since.",
+            "quote_hash": "2540bc57de90a2f90c6b79b51e8d7fdde2d0997fea267fc20e54bf235244a89b"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -359,14 +442,6 @@
         "source_content_hash": "269f33be0068a71b",
         "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
         "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
-      },
-      {
-        "source_id": "FISRC-158eb924ad66ae7b",
-        "source_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
-        "source_title": "Lumilens emerges with $900M+ in Funding",
-        "source_content_hash": "1cd3346880763c40",
-        "quote": "That's why we partnered with Ankur Singla for the third time to help build Lumilens from inception, led their seed round, and have participated in every round since.",
-        "quote_hash": "2540bc57de90a2f90c6b79b51e8d7fdde2d0997fea267fc20e54bf235244a89b"
       },
       {
         "source_id": "FISRC-bcf489b2ae49f41b",
@@ -393,12 +468,36 @@
         "quote_hash": "d4db08a7784c3a46a464a3350c29751178db84d970cb4663b8517176519d3fcb"
       },
       {
+        "source_id": "FISRC-4c101bd2bd412982",
+        "source_url": "https://en.wowtale.net/2026/02/27/233611/",
+        "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
+        "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
+        "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
+        "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
+      },
+      {
+        "source_id": "FISRC-3c60f2ab7fcb8b84",
+        "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+        "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+        "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+        "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+        "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+      },
+      {
         "source_id": "FISRC-f1b764e21138a412",
         "source_url": "https://techcrunch.com/2025/03/31/spark-mayfield-and-kleiner-perkins-pour-another-75m-into-ai-data-center-chipmaker-retym/",
         "source_title": "Spark、Mayfield 和 Kleiner Perkins 再向 AI 数据中心芯片制造商 Retym 注资 7500 万美元",
         "source_content_hash": "b3e02e458342a3fb",
         "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated",
         "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
+      },
+      {
+        "source_id": "FISRC-158eb924ad66ae7b",
+        "source_url": "https://lumilens.com/news-insights/lumilens-emerges-with-900m-in-funding",
+        "source_title": "Lumilens emerges with $900M+ in Funding",
+        "source_content_hash": "1cd3346880763c40",
+        "quote": "That's why we partnered with Ankur Singla for the third time to help build Lumilens from inception, led their seed round, and have participated in every round since.",
+        "quote_hash": "2540bc57de90a2f90c6b79b51e8d7fdde2d0997fea267fc20e54bf235244a89b"
       }
     ],
     "public_profile": {
@@ -538,7 +637,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[2].role": {
+        "activities[1].role": {
           "text": "Series A轮参投",
           "source_hash": "99cddf784c9a464d7b5ce8ca580f3608814e694abebc189c143dbf304b1a1c1c",
           "provider": "deepseek",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 10,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 10,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-09",
-    "latest_disclosed_at": "2026-09-28",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "co_lead": 3,
       "historical_or_ambiguous": 2,
-      "lead": 2,
-      "participant": 5
+      "lead": 3,
+      "participant": 6
     },
     "round_codes": [
       "seed",
@@ -90,7 +90,12 @@
         "name": "Fireworks AI Inc."
       },
       {
-        "entity_id": "EN-26e59d6a3c92de80",
+        "entity_id": "EN-96c842ee0d60fa41",
+        "canonical_entity_id": "",
+        "name": "Inherent"
+      },
+      {
+        "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
       },
@@ -103,6 +108,11 @@
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
         "name": "Mistral AI"
+      },
+      {
+        "entity_id": "EN-9779cb30fd39ff9e",
+        "canonical_entity_id": "",
+        "name": "NewCore"
       },
       {
         "entity_id": "EN-ef292e56955a1c10",
@@ -127,47 +137,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-92fb4f47e4af01ed",
-        "funding_insight_id": "FI-1b6dd112c647d4a1",
-        "event_ids": [
-          "EV-35fa913e4709b4d6"
-        ],
-        "company_entity_id": "EN-b4c73396844f7d05",
-        "company_canonical_entity_id": "",
-        "company_name": "Instinct",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "$1B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿美元"
-        },
-        "announced_at": "2026-09-28",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "Series B 联合领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-70f948c95dacb2f0",
-            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-            "source_content_hash": "0773286daf5bf525",
-            "quote": "it co-led the $250 million Series B in August with Index Ventures",
-            "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-a026149fef692a82",
+        "activity_id": "IA-a352c285db289926",
         "funding_insight_id": "FI-e0e22d70a91e704e",
         "event_ids": [
           "EV-dccfca59b3e58638",
@@ -209,7 +179,7 @@
         ]
       },
       {
-        "activity_id": "IA-e1769379dafd63b0",
+        "activity_id": "IA-f8f07fc9bb9fa21c",
         "funding_insight_id": "FI-d61afc2c6c00363a",
         "event_ids": [
           "EV-81bbaaec2965864a"
@@ -249,52 +219,12 @@
         ]
       },
       {
-        "activity_id": "IA-fb7af8aabacb83c3",
-        "funding_insight_id": "FI-d61afc2c6c00363a",
-        "event_ids": [
-          "EV-81bbaaec2965864a"
-        ],
-        "company_entity_id": "FICO-wonderful",
-        "company_canonical_entity_id": "",
-        "company_name": "Wonderful",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "$550 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 550000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "5.5 亿美元"
-        },
-        "announced_at": "2026-09-02",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "领投A轮",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-714290c8e2823c5a",
-            "source_url": "https://techstartups.com/2026/09/02/wonderful-raises-550m-at-5-billion-valuation-just-20-months-after-launch/",
-            "source_title": "AI startup Wonderful raises $550M at $5 billion valuation just 20 months after launch - Tech Startups",
-            "source_content_hash": "ecd0ed91dee57818",
-            "quote": "Index Ventures led that round, joined by Insight Partners, IVP, Bessemer Venture Partners, and Vine Ventures.",
-            "quote_hash": "475cef1b4e2b713bdc387af09aa4b496ed807ecd1d8ba28fdb14d0b7de091054"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-ee0247175fd1494f",
-        "funding_insight_id": "FI-e57c1a5088b84f89",
+        "activity_id": "IA-5e5d884256eeadb6",
+        "funding_insight_id": "FI-d0c7f81818282df9",
         "event_ids": [
           "EV-276878c26b2a06dc"
         ],
-        "company_entity_id": "EN-26e59d6a3c92de80",
+        "company_entity_id": "FICO-instinct",
         "company_canonical_entity_id": "",
         "company_name": "Instinct",
         "round": "B轮",
@@ -329,7 +259,7 @@
         ]
       },
       {
-        "activity_id": "IA-eaaf5608468bd0c4",
+        "activity_id": "IA-29f0295d2b8832b0",
         "funding_insight_id": "FI-94d3afbe69796cf3",
         "event_ids": [
           "EV-c538fb9a61735afc"
@@ -369,7 +299,47 @@
         ]
       },
       {
-        "activity_id": "IA-a776c87efbe59c04",
+        "activity_id": "IA-45908f80866bf77e",
+        "funding_insight_id": "FI-b17b7b5dbec12f71",
+        "event_ids": [
+          "EV-6a5a3f316200d1e3"
+        ],
+        "company_entity_id": "EN-96c842ee0d60fa41",
+        "company_canonical_entity_id": "",
+        "company_name": "Inherent",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-08-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed8df2c3d21fb938",
+            "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
+            "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
+            "source_content_hash": "d71416937629ad73",
+            "quote": "announced a $50 million Seed round led by Index Ventures and Radical Ventures",
+            "quote_hash": "658d4f98f00963a60c481d1ace42995194c20a0572e978a40528ae75ad00296f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-132ac5cf1538ee02",
         "funding_insight_id": "FI-36e2dba781b80e3a",
         "event_ids": [
           "EV-2301cd1470155075"
@@ -409,7 +379,7 @@
         ]
       },
       {
-        "activity_id": "IA-2ccff733875d0d90",
+        "activity_id": "IA-2638d369311734b0",
         "funding_insight_id": "FI-3b1ea359415f476d",
         "event_ids": [
           "EV-4eaf3aabecae6016"
@@ -449,7 +419,47 @@
         ]
       },
       {
-        "activity_id": "IA-9c40441cc4c4431c",
+        "activity_id": "IA-57a883bc4910006e",
+        "funding_insight_id": "FI-e5dee46683ef97ba",
+        "event_ids": [
+          "EV-9e88b41977da9588"
+        ],
+        "company_entity_id": "EN-9779cb30fd39ff9e",
+        "company_canonical_entity_id": "",
+        "company_name": "NewCore",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$66 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 66000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6600 万美元"
+        },
+        "announced_at": "2026-06-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9cc6124e644d0e3d",
+            "source_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities",
+            "source_title": "随着AI智能体成为员工，NewCore携6600万美元崭露头角，赋予它们身份",
+            "source_content_hash": "98de354d6535c1c7abae06ff78b7606f97de5cce232684ad9aa2380176c9e85e",
+            "quote": "with participation from Index Ventures and Evolution Equity Partners",
+            "quote_hash": "1da6a624f5ba046f268facc8c72a025e49f70cc58ef14afc92d500953cf45704"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b3884b66442c58e0",
         "funding_insight_id": "FI-0e45f5b02e149e04",
         "event_ids": [
           "EV-c3b8772c06a25dbc"
@@ -489,7 +499,7 @@
         ]
       },
       {
-        "activity_id": "IA-9ba4b2698369cd81",
+        "activity_id": "IA-b502a4d598398d28",
         "funding_insight_id": "FI-2b8ea19368209f49",
         "event_ids": [
           "EV-aa33ca051f3a7f78",
@@ -531,7 +541,7 @@
         ]
       },
       {
-        "activity_id": "IA-fa1f9c98f4b139d8",
+        "activity_id": "IA-7b2e1d43d2bfed15",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
           "EV-3b40ec144e5db22c"
@@ -571,7 +581,7 @@
         ]
       },
       {
-        "activity_id": "IA-01d7d725733add3f",
+        "activity_id": "IA-5bd4cacdb18a1365",
         "funding_insight_id": "FI-1cf34218733257fd",
         "event_ids": [
           "EV-85506f9f86779a6d"
@@ -609,17 +619,74 @@
             "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
           }
         ]
+      },
+      {
+        "activity_id": "IA-377070b1425856c0",
+        "funding_insight_id": "FI-4b143304af694a92",
+        "event_ids": [
+          "EV-35fa913e4709b4d6",
+          "EV-861d4440dcbb9b09"
+        ],
+        "company_entity_id": "FICO-instinct",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series B 联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6ffdf43efe75ccde",
+            "source_url": "https://multiples.vc/private-comps/instinct",
+            "source_title": "Instinct Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "ae9ae5e9661bb061",
+            "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
+            "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c0cef4e36838f68a",
+        "funding_insight_id": "FI-d61afc2c6c00363a",
+        "event_ids": [
+          "EV-81bbaaec2965864a"
+        ],
+        "company_entity_id": "FICO-wonderful",
+        "company_canonical_entity_id": "",
+        "company_name": "Wonderful",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "领投A轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-714290c8e2823c5a",
+            "source_url": "https://techstartups.com/2026/09/02/wonderful-raises-550m-at-5-billion-valuation-just-20-months-after-launch/",
+            "source_title": "AI startup Wonderful raises $550M at $5 billion valuation just 20 months after launch - Tech Startups",
+            "source_content_hash": "ecd0ed91dee57818",
+            "quote": "Index Ventures led that round, joined by Insight Partners, IVP, Bessemer Venture Partners, and Vine Ventures.",
+            "quote_hash": "475cef1b4e2b713bdc387af09aa4b496ed807ecd1d8ba28fdb14d0b7de091054"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-70f948c95dacb2f0",
-        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-        "source_content_hash": "0773286daf5bf525",
-        "quote": "it co-led the $250 million Series B in August with Index Ventures",
-        "quote_hash": "14aa6239119b697d5bb22ca75ad4b8c63a7de28f6b52c6f70e685f423756e9ba"
-      },
       {
         "source_id": "FISRC-4d11ed62a144a3f4",
         "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
@@ -635,14 +702,6 @@
         "source_content_hash": "290d66b36443e7c5",
         "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
         "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
-      },
-      {
-        "source_id": "FISRC-714290c8e2823c5a",
-        "source_url": "https://techstartups.com/2026/09/02/wonderful-raises-550m-at-5-billion-valuation-just-20-months-after-launch/",
-        "source_title": "AI startup Wonderful raises $550M at $5 billion valuation just 20 months after launch - Tech Startups",
-        "source_content_hash": "ecd0ed91dee57818",
-        "quote": "Index Ventures led that round, joined by Insight Partners, IVP, Bessemer Venture Partners, and Vine Ventures.",
-        "quote_hash": "475cef1b4e2b713bdc387af09aa4b496ed807ecd1d8ba28fdb14d0b7de091054"
       },
       {
         "source_id": "FISRC-6050aa46cf9e60a2",
@@ -661,6 +720,14 @@
         "quote_hash": "46643d92ebdeb1c973ce2321599e5ea69f52c9ecff4626d3f7cc700daf6937f0"
       },
       {
+        "source_id": "FISRC-ed8df2c3d21fb938",
+        "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
+        "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
+        "source_content_hash": "d71416937629ad73",
+        "quote": "announced a $50 million Seed round led by Index Ventures and Radical Ventures",
+        "quote_hash": "658d4f98f00963a60c481d1ace42995194c20a0572e978a40528ae75ad00296f"
+      },
+      {
         "source_id": "FISRC-3fa34b4b7b9a1a77",
         "source_url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models",
         "source_title": "DesignArena 开发商 Intelligence 获 790 万美元种子轮融资，为 AI 模型注入\"品味\"",
@@ -675,6 +742,14 @@
         "source_content_hash": "82ccac3b5ede24d2",
         "quote": "Atreides Management, Index Ventures and TCV jointly led the Series D round.",
         "quote_hash": "995f46ff0c72d202ba404714a9ed0ef0df03e334f5693696904cef3c144b1a1d"
+      },
+      {
+        "source_id": "FISRC-9cc6124e644d0e3d",
+        "source_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities",
+        "source_title": "随着AI智能体成为员工，NewCore携6600万美元崭露头角，赋予它们身份",
+        "source_content_hash": "98de354d6535c1c7abae06ff78b7606f97de5cce232684ad9aa2380176c9e85e",
+        "quote": "with participation from Index Ventures and Evolution Equity Partners",
+        "quote_hash": "1da6a624f5ba046f268facc8c72a025e49f70cc58ef14afc92d500953cf45704"
       },
       {
         "source_id": "FISRC-3ca38471e3f8361d",
@@ -707,6 +782,22 @@
         "source_content_hash": "a710989bdebc7feb",
         "quote": "existing investors such as Nvidia, General Catalyst and Index Ventures participated",
         "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
+      },
+      {
+        "source_id": "FISRC-6ffdf43efe75ccde",
+        "source_url": "https://multiples.vc/private-comps/instinct",
+        "source_title": "Instinct Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "ae9ae5e9661bb061",
+        "quote": "Instinct raised a $250 million Series B co-led by Index Ventures and Benchmark in August 2026",
+        "quote_hash": "9067302dc1fbee1f689abec5656f1addcad4027f633033e3a026dc4200fcf8cd"
+      },
+      {
+        "source_id": "FISRC-714290c8e2823c5a",
+        "source_url": "https://techstartups.com/2026/09/02/wonderful-raises-550m-at-5-billion-valuation-just-20-months-after-launch/",
+        "source_title": "AI startup Wonderful raises $550M at $5 billion valuation just 20 months after launch - Tech Startups",
+        "source_content_hash": "ecd0ed91dee57818",
+        "quote": "Index Ventures led that round, joined by Insight Partners, IVP, Bessemer Venture Partners, and Vine Ventures.",
+        "quote_hash": "475cef1b4e2b713bdc387af09aa4b496ed807ecd1d8ba28fdb14d0b7de091054"
       }
     ],
     "public_profile": {
@@ -873,6 +964,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[12].role": {
+          "text": "Series B 联合领投",
+          "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:28.584Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "官网列举的被投企业包括 Figma、Revolut、Notion、Roblox 和 Anthropic；此处为部分案例。",
           "source_hash": "f6946c1809676fe5825fe8209214880696a68476d1c307424f239754ad0e755b",

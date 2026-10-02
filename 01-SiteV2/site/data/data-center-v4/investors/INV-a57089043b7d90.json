@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 10,
-    "portfolio_company_count": 7,
+    "portfolio_company_count": 8,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 7,
-    "china_market_company_count": 7,
-    "first_disclosed_at": "2024-09-12",
-    "latest_disclosed_at": "2026-09-20",
+    "china_market_activity_count": 8,
+    "china_market_company_count": 8,
+    "first_disclosed_at": "2026-02-11",
+    "latest_disclosed_at": "2026-09-17",
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 10,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "angel",
@@ -82,6 +82,7 @@
       "multi_round",
       "other",
       "pre_series_a",
+      "series_a",
       "series_b",
       "series_c"
     ],
@@ -112,6 +113,11 @@
         "name": "无界动力"
       },
       {
+        "entity_id": "EN-997a5e6e513f2a90",
+        "canonical_entity_id": "",
+        "name": "星辰技术"
+      },
+      {
         "entity_id": "EN-a6e5382c05dd0d16",
         "canonical_entity_id": "EN-a6e5382c05dd0d16",
         "name": "星海图"
@@ -124,47 +130,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f72f73dffbe6f3bd",
-        "funding_insight_id": "FI-cb9086864c5c66de",
-        "event_ids": [
-          "EV-bdd1611cc17c3325"
-        ],
-        "company_entity_id": "EN-c386ba3b954748fa",
-        "company_canonical_entity_id": "",
-        "company_name": "千觉机器人",
-        "round": "战略融资",
-        "round_code": "strategic",
-        "round_original": "战略融资",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-09-20",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "股东",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-3a00c703054126cd",
-            "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
-            "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
-            "source_content_hash": "3943ea5191d9c7eb",
-            "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
-            "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-59cb5d76c1e39e5f",
+        "activity_id": "IA-d31bdd1623312472",
         "funding_insight_id": "FI-e9d633fa8c039673",
         "event_ids": [
           "EV-412f7ce21693dc13"
@@ -204,7 +170,7 @@
         ]
       },
       {
-        "activity_id": "IA-42ec2a8f5a3c7df0",
+        "activity_id": "IA-83d0642b9a8b3a55",
         "funding_insight_id": "FI-e81dafc2defecb80",
         "event_ids": [
           "EV-4bc690025cbda146",
@@ -247,89 +213,47 @@
         ]
       },
       {
-        "activity_id": "IA-e75a45dd7533f2c4",
-        "funding_insight_id": "FI-257e4f42c36415ea",
+        "activity_id": "IA-f6ea67ef09a5b0cd",
+        "funding_insight_id": "FI-8cf15f7318cc6265",
         "event_ids": [
-          "EV-a38a33003b0d6d08",
-          "EV-63a4b6ce48e14829",
-          "EV-04bcb24d608a931c"
+          "EV-e11382111a5b99f6"
         ],
-        "company_entity_id": "FICO-rabyte",
+        "company_entity_id": "EN-997a5e6e513f2a90",
         "company_canonical_entity_id": "",
-        "company_name": "讯兔科技",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "超3亿元人民币",
+        "company_name": "星辰技术",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近50亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": 300000000,
-          "min_value": 300000000,
+          "value": 5000000000,
+          "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 3 亿元"
+          "status": "approximate",
+          "display_zh": "约 50 亿元"
         },
-        "announced_at": "2026-09-14",
+        "announced_at": "2026-08-26",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮共同领投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-5a92715d1392fa36",
-            "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
-            "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
-            "source_content_hash": "788675d51c86fa8d",
-            "quote": "启明创投、红杉中国、高瓴创投共同领投",
-            "quote_hash": "f68859618444ccfdb00daa69a9581dc1aaaa5cce420db9e71307ab2c55cf9e1d"
+            "source_id": "FISRC-662073c15d82f553",
+            "source_url": "http://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260826_6001551.shtml",
+            "source_title": "湖北省经济和信息化厅",
+            "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+            "quote": "据星辰技术最新的工商信息，这份投资方名单星光熠熠：高瓴创投、红杉中国、君联资本、中金资本、招银投资、深创投……",
+            "quote_hash": "3b4598ff323bfa39d8e54f8bb24d069fa10ab49783cadc2fdc85d2513636825a"
           }
         ]
       },
       {
-        "activity_id": "IA-71a34f289df74067",
-        "funding_insight_id": "FI-2a47fffabd6bfe6b",
-        "event_ids": [
-          "EV-88158ddf272e4731"
-        ],
-        "company_entity_id": "EN-f0a77f08b0db14ab",
-        "company_canonical_entity_id": "EN-f0a77f08b0db14ab",
-        "company_name": "欧拉万象",
-        "round": "天使轮",
-        "round_code": "angel",
-        "round_original": "天使轮",
-        "amount_original": "超过亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 100000000,
-          "min_value": 100000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 1 亿元"
-        },
-        "announced_at": "2026-06-26",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-aad97c1f07ceb5c6",
-            "source_url": "https://www.sohu.com/a/1041806074_120109837",
-            "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
-            "source_content_hash": "2af3607d3a79e574",
-            "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
-            "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-cdd6f9b28a3ff719",
+        "activity_id": "IA-94a6fd144df1924a",
         "funding_insight_id": "FI-033dd55115963cb3",
         "event_ids": [
           "EV-0896f0e7b703bed2"
@@ -369,47 +293,7 @@
         ]
       },
       {
-        "activity_id": "IA-c8091026ba7e5596",
-        "funding_insight_id": "FI-3734798e9a7f3c5c",
-        "event_ids": [
-          "EV-d94bcfdf64509513"
-        ],
-        "company_entity_id": "EN-0355fdd77dae437b",
-        "company_canonical_entity_id": "EN-0355fdd77dae437b",
-        "company_name": "趋境科技",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-05-20",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-53ef187e17deac50",
-            "source_url": "https://unifuncs.com/s/lVd0EmYJ",
-            "source_title": "从清华实验室到Token工厂领跑者：趋境科技崛起之路 - U深搜",
-            "source_content_hash": "180a822b9de0eefd",
-            "quote": "天使轮 (2025年2月): 数千万元，高瓴创投、Z基金（智谱）领投，水木校友种子基金跟投，真知创投追投",
-            "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-5e10d397e429d085",
+        "activity_id": "IA-a4c44130c94fb0a6",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
           "EV-1188b1585b835fe1",
@@ -450,129 +334,7 @@
         ]
       },
       {
-        "activity_id": "IA-0382bf0e767fb0d2",
-        "funding_insight_id": "FI-5c529fe1ecb9dd07",
-        "event_ids": [
-          "EV-1188b1585b835fe1",
-          "EV-81810a440198ac3c"
-        ],
-        "company_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_name": "它石智航",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "超4.5亿美元（约30亿元）",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 450000000,
-          "min_value": 450000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 4.5 亿美元"
-        },
-        "announced_at": "2026-04-16",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-877032defba1f3e1",
-            "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
-            "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
-            "source_content_hash": "9bc3ee36ffea717f",
-            "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
-            "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-3a11681df9d610dc",
-        "funding_insight_id": "FI-66e7dd713fc6bab5",
-        "event_ids": [
-          "EV-0ff10475efa53e6c",
-          "EV-435d7e7878b0c326"
-        ],
-        "company_entity_id": "EN-a6e5382c05dd0d16",
-        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
-        "company_name": "星海图",
-        "round": "B+轮",
-        "round_code": "series_b_plus",
-        "round_original": "B+轮",
-        "amount_original": "20亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 2000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "20 亿元"
-        },
-        "announced_at": "2026-04-02",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-7a614400d44a7041",
-            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-            "source_title": "星海图又融资20亿，估值200亿",
-            "source_content_hash": "05d5afb79601a323",
-            "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
-            "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-22c157df83f941d4",
-        "funding_insight_id": "FI-c3bce60cc6406ae5",
-        "event_ids": [
-          "EV-e6a4e0785ebb268a"
-        ],
-        "company_entity_id": "EN-be8f311b8bb47e9c",
-        "company_canonical_entity_id": "",
-        "company_name": "华深智药",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "7.87亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 787000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "7.87 亿美元"
-        },
-        "announced_at": "2026-03-25",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮及A轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-972ef11d09af7ec8",
-            "source_url": "https://vc.pedaily.cn/company/205217.html",
-            "source_title": "华深智药完成7.87亿美元B轮融资",
-            "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
-            "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
-            "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-cd8b37758a8ceb53",
+        "activity_id": "IA-57ddca21d0da3c49",
         "funding_insight_id": "FI-815e0d2563a8b10f",
         "event_ids": [
           "EV-9832526435c1695e"
@@ -612,47 +374,7 @@
         ]
       },
       {
-        "activity_id": "IA-af05ecf3e876a5fe",
-        "funding_insight_id": "FI-815e0d2563a8b10f",
-        "event_ids": [
-          "EV-9832526435c1695e"
-        ],
-        "company_entity_id": "EN-a43f157d208b2a63",
-        "company_canonical_entity_id": "EN-a43f157d208b2a63",
-        "company_name": "开物纪",
-        "round": "天使+轮",
-        "round_code": "angel_plus",
-        "round_original": "天使+轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-03-24",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮跟投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-3d10ec9bd5ef3ad4",
-            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-            "source_content_hash": "d5d8d61ad1133bc1",
-            "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
-            "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-4a8e1174a25ab380",
+        "activity_id": "IA-16e17dee2cd63771",
         "funding_insight_id": "FI-6763b86fb1d41259",
         "event_ids": [
           "EV-876baa523eb93c4f"
@@ -692,7 +414,7 @@
         ]
       },
       {
-        "activity_id": "IA-8bcd8134c93c3b05",
+        "activity_id": "IA-2813e40aa2c61c1a",
         "funding_insight_id": "FI-d5293ab06cfaa935",
         "event_ids": [
           "EV-371bc68f72326c02"
@@ -732,7 +454,265 @@
         ]
       },
       {
-        "activity_id": "IA-bb8b43e97f91fbc2",
+        "activity_id": "IA-d9084fbc62ed5999",
+        "funding_insight_id": "FI-17403f62777b52b5",
+        "event_ids": [
+          "EV-7a44a47bf36780d2"
+        ],
+        "company_entity_id": "EN-721eb3fd31f8e1f6",
+        "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
+        "company_name": "壁仞科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-B轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d13c49d0024ccf9b",
+            "source_url": "https://36kr.com/p/3225593100057736",
+            "source_title": "上海国资投了一家独角兽-36氪",
+            "source_content_hash": "a6b4082076c6f997",
+            "quote": "完成了Pre-B轮融资，由高瓴创投领投",
+            "quote_hash": "a699890fc0e0b97e15420644c04df44c309258b692d953792bd33eab18bb2c63"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fdd71591a906f8cb",
+        "funding_insight_id": "FI-c3bce60cc6406ae5",
+        "event_ids": [
+          "EV-e6a4e0785ebb268a"
+        ],
+        "company_entity_id": "EN-be8f311b8bb47e9c",
+        "company_canonical_entity_id": "",
+        "company_name": "华深智药",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮及A轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-972ef11d09af7ec8",
+            "source_url": "https://vc.pedaily.cn/company/205217.html",
+            "source_title": "华深智药完成7.87亿美元B轮融资",
+            "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+            "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
+            "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1524b966c495363b",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "EN-a43f157d208b2a63",
+        "company_name": "开物纪",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+            "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0e5ebb31785f8809",
+        "funding_insight_id": "FI-2a47fffabd6bfe6b",
+        "event_ids": [
+          "EV-88158ddf272e4731"
+        ],
+        "company_entity_id": "EN-f0a77f08b0db14ab",
+        "company_canonical_entity_id": "EN-f0a77f08b0db14ab",
+        "company_name": "欧拉万象",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-aad97c1f07ceb5c6",
+            "source_url": "https://www.sohu.com/a/1041806074_120109837",
+            "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
+            "source_content_hash": "2af3607d3a79e574",
+            "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
+            "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-107d8623d6ed1706",
+        "funding_insight_id": "FI-cb9086864c5c66de",
+        "event_ids": [
+          "EV-bdd1611cc17c3325"
+        ],
+        "company_entity_id": "EN-c386ba3b954748fa",
+        "company_canonical_entity_id": "",
+        "company_name": "千觉机器人",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "股东",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3a00c703054126cd",
+            "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
+            "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
+            "source_content_hash": "3943ea5191d9c7eb",
+            "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
+            "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d4c55dd27d8fc632",
+        "funding_insight_id": "FI-3734798e9a7f3c5c",
+        "event_ids": [
+          "EV-d94bcfdf64509513"
+        ],
+        "company_entity_id": "EN-0355fdd77dae437b",
+        "company_canonical_entity_id": "EN-0355fdd77dae437b",
+        "company_name": "趋境科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-53ef187e17deac50",
+            "source_url": "https://unifuncs.com/s/lVd0EmYJ",
+            "source_title": "从清华实验室到Token工厂领跑者：趋境科技崛起之路 - U深搜",
+            "source_content_hash": "180a822b9de0eefd",
+            "quote": "天使轮 (2025年2月): 数千万元，高瓴创投、Z基金（智谱）领投，水木校友种子基金跟投，真知创投追投",
+            "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6dd485f694795a73",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
+        "event_ids": [
+          "EV-1188b1585b835fe1",
+          "EV-81810a440198ac3c"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-877032defba1f3e1",
+            "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
+            "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
+            "source_content_hash": "9bc3ee36ffea717f",
+            "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
+            "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b81ce4b13fa358be",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+            "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-701da2a446c7bfb7",
         "funding_insight_id": "FI-d5293ab06cfaa935",
         "event_ids": [
           "EV-371bc68f72326c02"
@@ -740,23 +720,15 @@
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-02-11",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "Pre-A轮领投",
         "role_code": "historical_or_ambiguous",
@@ -772,55 +744,41 @@
         ]
       },
       {
-        "activity_id": "IA-6b9b97c6d8161ca6",
-        "funding_insight_id": "FI-17403f62777b52b5",
+        "activity_id": "IA-18dd6c61cb0b12ea",
+        "funding_insight_id": "FI-257e4f42c36415ea",
         "event_ids": [
-          "EV-7a44a47bf36780d2"
+          "EV-a38a33003b0d6d08",
+          "EV-63a4b6ce48e14829",
+          "EV-04bcb24d608a931c"
         ],
-        "company_entity_id": "EN-721eb3fd31f8e1f6",
-        "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
-        "company_name": "壁仞科技",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "超过50亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 5000000000,
-          "min_value": 5000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 50 亿元"
-        },
-        "announced_at": "2024-09-12",
+        "company_entity_id": "FICO-rabyte",
+        "company_canonical_entity_id": "",
+        "company_name": "讯兔科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
-        "role": "Pre-B轮领投",
+        "role": "A轮共同领投",
         "role_code": "historical_or_ambiguous",
         "evidence": [
           {
-            "source_id": "FISRC-d13c49d0024ccf9b",
-            "source_url": "https://36kr.com/p/3225593100057736",
-            "source_title": "上海国资投了一家独角兽-36氪",
-            "source_content_hash": "a6b4082076c6f997",
-            "quote": "完成了Pre-B轮融资，由高瓴创投领投",
-            "quote_hash": "a699890fc0e0b97e15420644c04df44c309258b692d953792bd33eab18bb2c63"
+            "source_id": "FISRC-5a92715d1392fa36",
+            "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
+            "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
+            "source_content_hash": "788675d51c86fa8d",
+            "quote": "启明创投、红杉中国、高瓴创投共同领投",
+            "quote_hash": "f68859618444ccfdb00daa69a9581dc1aaaa5cce420db9e71307ab2c55cf9e1d"
           }
         ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-3a00c703054126cd",
-        "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
-        "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
-        "source_content_hash": "3943ea5191d9c7eb",
-        "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
-        "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
-      },
       {
         "source_id": "FISRC-517ef1b31eac6dd3",
         "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
@@ -838,20 +796,12 @@
         "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
       },
       {
-        "source_id": "FISRC-5a92715d1392fa36",
-        "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
-        "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
-        "source_content_hash": "788675d51c86fa8d",
-        "quote": "启明创投、红杉中国、高瓴创投共同领投",
-        "quote_hash": "f68859618444ccfdb00daa69a9581dc1aaaa5cce420db9e71307ab2c55cf9e1d"
-      },
-      {
-        "source_id": "FISRC-aad97c1f07ceb5c6",
-        "source_url": "https://www.sohu.com/a/1041806074_120109837",
-        "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
-        "source_content_hash": "2af3607d3a79e574",
-        "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
-        "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
+        "source_id": "FISRC-662073c15d82f553",
+        "source_url": "http://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260826_6001551.shtml",
+        "source_title": "湖北省经济和信息化厅",
+        "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+        "quote": "据星辰技术最新的工商信息，这份投资方名单星光熠熠：高瓴创投、红杉中国、君联资本、中金资本、招银投资、深创投……",
+        "quote_hash": "3b4598ff323bfa39d8e54f8bb24d069fa10ab49783cadc2fdc85d2513636825a"
       },
       {
         "source_id": "FISRC-3e04e9bd8fc1ab06",
@@ -862,14 +812,6 @@
         "quote_hash": "ebd970ce2a6099f680dfb58136965c172713002cf04ecbda7a0ca39a1c65d42f"
       },
       {
-        "source_id": "FISRC-53ef187e17deac50",
-        "source_url": "https://unifuncs.com/s/lVd0EmYJ",
-        "source_title": "从清华实验室到Token工厂领跑者：趋境科技崛起之路 - U深搜",
-        "source_content_hash": "180a822b9de0eefd",
-        "quote": "天使轮 (2025年2月): 数千万元，高瓴创投、Z基金（智谱）领投，水木校友种子基金跟投，真知创投追投",
-        "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
-      },
-      {
         "source_id": "FISRC-b4d6b7523ee32ad7",
         "source_url": "https://news.pedaily.cn/202604/562863.shtml",
         "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
@@ -878,44 +820,12 @@
         "quote_hash": "489b6b76e01f5a277f1df6426e9f59d846ee1c1f026a4d2125a15cb8e71b7541"
       },
       {
-        "source_id": "FISRC-877032defba1f3e1",
-        "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
-        "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
-        "source_content_hash": "9bc3ee36ffea717f",
-        "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
-        "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
-      },
-      {
-        "source_id": "FISRC-7a614400d44a7041",
-        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-        "source_title": "星海图又融资20亿，估值200亿",
-        "source_content_hash": "05d5afb79601a323",
-        "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
-        "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
-      },
-      {
-        "source_id": "FISRC-972ef11d09af7ec8",
-        "source_url": "https://vc.pedaily.cn/company/205217.html",
-        "source_title": "华深智药完成7.87亿美元B轮融资",
-        "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
-        "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
-        "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
-      },
-      {
         "source_id": "FISRC-3d10ec9bd5ef3ad4",
         "source_url": "https://news.pedaily.cn/202603/562002.shtml",
         "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
         "source_content_hash": "d5d8d61ad1133bc1",
         "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
         "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
-      },
-      {
-        "source_id": "FISRC-3d10ec9bd5ef3ad4",
-        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-        "source_content_hash": "d5d8d61ad1133bc1",
-        "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
-        "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
       },
       {
         "source_id": "FISRC-daccbed46498e19c",
@@ -934,6 +844,70 @@
         "quote_hash": "f1ac7ba61a81f0b508053b00072c9796e40b7d27a78bb01f6c2a48f4cbfeffc1"
       },
       {
+        "source_id": "FISRC-d13c49d0024ccf9b",
+        "source_url": "https://36kr.com/p/3225593100057736",
+        "source_title": "上海国资投了一家独角兽-36氪",
+        "source_content_hash": "a6b4082076c6f997",
+        "quote": "完成了Pre-B轮融资，由高瓴创投领投",
+        "quote_hash": "a699890fc0e0b97e15420644c04df44c309258b692d953792bd33eab18bb2c63"
+      },
+      {
+        "source_id": "FISRC-972ef11d09af7ec8",
+        "source_url": "https://vc.pedaily.cn/company/205217.html",
+        "source_title": "华深智药完成7.87亿美元B轮融资",
+        "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
+        "quote": "天使轮融资：金额 千万级美元 ，投资方为襄禾资本、高瓴创投、清智资本",
+        "quote_hash": "9fe140fe0cff27185eab494a33c5b77f61f0691c72d2cd05a55500025f1e01d7"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+        "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+      },
+      {
+        "source_id": "FISRC-aad97c1f07ceb5c6",
+        "source_url": "https://www.sohu.com/a/1041806074_120109837",
+        "source_title": "成立3个月家庭具身智能企业欧拉万象获第三轮融资",
+        "source_content_hash": "2af3607d3a79e574",
+        "quote": "这是欧拉万象继获得招商局创投、高瓴创投、五源资本等机构密集加持后，再次迎来市场化与产业资本的重磅加注。",
+        "quote_hash": "8edd3a415182b0bb5eb87fd118477bebb65363f5f2881869f694d2ce5cdfd1b0"
+      },
+      {
+        "source_id": "FISRC-3a00c703054126cd",
+        "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393347.html",
+        "source_title": "千觉机器人宣布连续完成两轮数亿元战略融资 投资方包括知名双币基金蓝驰创投、中金资本旗下基金、靖亚资本等知名投资机构。 投中网 · 22小时前",
+        "source_content_hash": "3943ea5191d9c7eb",
+        "quote": "目前，千觉股东阵容已汇集高瓴创投、元禾原点、孚腾资本等知名财务投资机构",
+        "quote_hash": "01b8d7c5d02d6928d7583763d8be3efd8c373ae10dd820b90515844a61cfbced"
+      },
+      {
+        "source_id": "FISRC-53ef187e17deac50",
+        "source_url": "https://unifuncs.com/s/lVd0EmYJ",
+        "source_title": "从清华实验室到Token工厂领跑者：趋境科技崛起之路 - U深搜",
+        "source_content_hash": "180a822b9de0eefd",
+        "quote": "天使轮 (2025年2月): 数千万元，高瓴创投、Z基金（智谱）领投，水木校友种子基金跟投，真知创投追投",
+        "quote_hash": "1f6ec18f0ef23f2f8a0c02f654ea9a97edaf9ebf8045621021f1a3e02e5d3ebb"
+      },
+      {
+        "source_id": "FISRC-877032defba1f3e1",
+        "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
+        "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
+        "source_content_hash": "9bc3ee36ffea717f",
+        "quote": "线性资本、恒旭资本、洪泰基金、联想创投、襄禾资本、高瓴创投跟投",
+        "quote_hash": "ad0a3e590ffa110b3cf74a5f62e58f3e387290b3c658e3f5c91e312af6a29fd6"
+      },
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+        "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
+      },
+      {
         "source_id": "FISRC-2707f48aa6e437b7",
         "source_url": "https://news.pedaily.cn/202602/560956.shtml",
         "source_title": "清华90后带队，刚刚星海图又融10亿",
@@ -942,12 +916,12 @@
         "quote_hash": "e5444bec673d96fac26adbeaf60ee6448ecf4736d55fe8154e2ddcfef313da89"
       },
       {
-        "source_id": "FISRC-d13c49d0024ccf9b",
-        "source_url": "https://36kr.com/p/3225593100057736",
-        "source_title": "上海国资投了一家独角兽-36氪",
-        "source_content_hash": "a6b4082076c6f997",
-        "quote": "完成了Pre-B轮融资，由高瓴创投领投",
-        "quote_hash": "a699890fc0e0b97e15420644c04df44c309258b692d953792bd33eab18bb2c63"
+        "source_id": "FISRC-5a92715d1392fa36",
+        "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
+        "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
+        "source_content_hash": "788675d51c86fa8d",
+        "quote": "启明创投、红杉中国、高瓴创投共同领投",
+        "quote_hash": "f68859618444ccfdb00daa69a9581dc1aaaa5cce420db9e71307ab2c55cf9e1d"
       }
     ],
     "public_profile": {
@@ -1089,20 +1063,20 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[15].role": {
-          "text": "Pre-A轮领投",
-          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-08-14T07:17:18.959Z",
-          "status": "translated"
-        },
-        "activities[16].role": {
+        "activities[8].role": {
           "text": "Pre-B轮领投",
           "source_hash": "aebf442c5143e180f2950bcaa72a692c16eb3617aebf8ba3bb3eb5171f29e2d6",
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-08-14T07:17:21.597Z",
+          "status": "translated"
+        },
+        "activities[16].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
           "status": "translated"
         },
         "public_profile.contacts[0].label": {

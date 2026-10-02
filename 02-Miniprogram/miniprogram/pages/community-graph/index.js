@@ -1,7 +1,7 @@
 const { members, roles, getMember } = require("../../utils/community-data.js");
 const { getCommunity, getCommunityProfile, saveCommunityProfile } = require("../../utils/member.js");
 const { readExperience, saveExperience } = require("../../utils/experience.js");
-const { requireCommunityMember } = require("../../utils/community-access.js");
+const { requireCommunityMember, communityGate } = require("../../utils/community-access.js");
 const { communityRequest } = require("../../utils/payment.js");
 const { readCommunityPage } = require("../../utils/community-loading.js");
 
@@ -15,9 +15,11 @@ function decorateMember(member) {
 }
 
 Page({
+  ...communityGate,
   data: { mode: "graph", tab: "map", roles: [], activeRole: 0, activeRoleData: null, members: [], filteredMembers: [], member: null, profile: DEFAULT_PROFILE, query: "", experience: false, loading: false, error: "", saving: false, supply: [] },
   async onLoad(options = {}) {
-    if (!await requireCommunityMember()) return;
+    this.communityEntryOptions = options;
+    if (!await requireCommunityMember(undefined, this)) return;
     this.setData({ experience: Boolean(readExperience()) });
     const mode = options.mode || "graph";
     this.options = options;
@@ -39,7 +41,7 @@ Page({
     profile.avatar = profile.avatar || profile.name.slice(0, 1);
     this.setData({ mode, profile });
   },
-  onShow() {
+  onShow() { if (this.data.communityAccessBlocked) return this.onLoad(this.communityEntryOptions || {});
     if (!readExperience()) { if (this.options && !this.data.loading && this.data.mode !== "edit") this.refresh(); return; }
     if (this.data.mode === "profile") this.loadProfile("profile");
     if (this.data.mode === "graph") {
@@ -61,6 +63,7 @@ Page({
     this.search({ detail: { value: this.data.query } });
   },
   refresh() {
+    if(this.data.communityAccessBlocked)return Promise.resolve();
     return readCommunityPage(this, async () => {
       if (this.data.mode === "member" && !this.options?.id) throw new Error("成员链接无效，请返回通讯录重新打开");
       if (this.data.mode === "profile" || this.data.mode === "edit") {

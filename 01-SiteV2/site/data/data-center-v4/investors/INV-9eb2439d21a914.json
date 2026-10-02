@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 9,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 9,
+    "current_round_count": 12,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-31",
-    "latest_disclosed_at": "2026-09-28",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 3,
-      "participant": 5
+      "participant": 8
     },
     "round_codes": [
       "multi_round",
@@ -83,9 +83,15 @@
       "series_a",
       "series_b",
       "series_d",
-      "series_e"
+      "series_e",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
+      },
       {
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
@@ -95,6 +101,11 @@
         "entity_id": "EN-4b6cef91ffb05303",
         "canonical_entity_id": "",
         "name": "Cognition AI"
+      },
+      {
+        "entity_id": "EN-e88ecf834fa37e5a",
+        "canonical_entity_id": "",
+        "name": "Dazzle"
       },
       {
         "entity_id": "EN-450dcf23e621ff10",
@@ -134,47 +145,87 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-38dd0047941198a0",
-        "funding_insight_id": "FI-1b6dd112c647d4a1",
+        "activity_id": "IA-41f413974ebe625a",
+        "funding_insight_id": "FI-e7151a217bf0631d",
         "event_ids": [
-          "EV-35fa913e4709b4d6"
+          "EV-1c7050585c7f4791"
         ],
-        "company_entity_id": "EN-b4c73396844f7d05",
+        "company_entity_id": "EN-f8223ea5a9c41813",
         "company_canonical_entity_id": "",
-        "company_name": "Instinct",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "$1B",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 1000000000,
+          "value": 255500000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "10 亿美元"
+          "display_zh": "2.555 亿美元"
         },
-        "announced_at": "2026-09-28",
+        "announced_at": "2026-10-01",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "领投A轮",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-70f948c95dacb2f0",
-            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-            "source_content_hash": "0773286daf5bf525",
-            "quote": "Kleiner Perkins partner Mamoon Hamid then led a $75 million Series A at $500 million in early August",
-            "quote_hash": "f2360aaa4549f987e713fb36b41769c61a6dcbe7f02af6e67e0abac2b8179115"
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+            "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
           }
         ]
       },
       {
-        "activity_id": "IA-faa09d8964c4f32e",
+        "activity_id": "IA-534831c0860abae4",
+        "funding_insight_id": "FI-78c41d0e7b994533",
+        "event_ids": [
+          "EV-3b424be9d0d68b87"
+        ],
+        "company_entity_id": "EN-e88ecf834fa37e5a",
+        "company_canonical_entity_id": "",
+        "company_name": "Dazzle",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-39cbb5f315cdae11",
+            "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+            "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+            "source_content_hash": "0d32e048dc28b8dd",
+            "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+            "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b422f98d81840f9b",
         "funding_insight_id": "FI-28129028b23f82cb",
         "event_ids": [
           "EV-05b635c3958e4591"
@@ -214,7 +265,7 @@
         ]
       },
       {
-        "activity_id": "IA-73b0732c128db371",
+        "activity_id": "IA-a536f27e5570f247",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -254,7 +305,7 @@
         ]
       },
       {
-        "activity_id": "IA-b1525a9fe759a1f5",
+        "activity_id": "IA-809a6284f99ec587",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
         "event_ids": [
           "EV-19dd4c3a5dd5a94b",
@@ -295,47 +346,7 @@
         ]
       },
       {
-        "activity_id": "IA-f6b6cf6f78d25342",
-        "funding_insight_id": "FI-2dfbeaa7d627041d",
-        "event_ids": [
-          "EV-13ec78dfdbca678b"
-        ],
-        "company_entity_id": "EN-816bab802b34b308",
-        "company_canonical_entity_id": "",
-        "company_name": "Together AI",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "Series C",
-        "amount_original": "$800 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 800000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "8 亿美元"
-        },
-        "announced_at": "2026-07-01",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-6f0f12fb121fbd88",
-            "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-            "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-            "source_content_hash": "99e8e0f48b30eed2",
-            "quote": "a $102.5 million Series A funding round led by Kleiner Perkins",
-            "quote_hash": "2dd322954ffcde5288d4319db57d166dd2d4d1a740f9bddbf55df5411e121cff"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-ee111a0349cf179d",
+        "activity_id": "IA-5fb8a3e113c4a86b",
         "funding_insight_id": "FI-b4ed51811a14f812",
         "event_ids": [
           "EV-921c843ad32c993c"
@@ -375,7 +386,47 @@
         ]
       },
       {
-        "activity_id": "IA-bef92f656e141ebc",
+        "activity_id": "IA-a5d38aee39b1cb8c",
+        "funding_insight_id": "FI-6fdfe3674217723b",
+        "event_ids": [
+          "EV-0a9d7be146eeb62a"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$98 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8f5a35fa6bbc977d",
+            "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+            "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+            "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+            "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+            "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-52e85f339992de85",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
           "EV-20d762872664fddb"
@@ -415,47 +466,7 @@
         ]
       },
       {
-        "activity_id": "IA-13c163ca48bf7f00",
-        "funding_insight_id": "FI-bff055b65fdb260b",
-        "event_ids": [
-          "EV-20d762872664fddb"
-        ],
-        "company_entity_id": "EN-450dcf23e621ff10",
-        "company_canonical_entity_id": "",
-        "company_name": "Engram",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount_original": "$98M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 98000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "9800 万美元"
-        },
-        "announced_at": "2026-06-23",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-bcf01fbecb1fbdb6",
-            "source_url": "https://www.caplight.com/company/engram",
-            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-            "source_content_hash": "24739161319ad4eb",
-            "quote": "Kleiner Perkins Seed, Early Funding",
-            "quote_hash": "0cd883b62233958eb762f28a7822196059cd3d2c789a67dd12c6d86c1669c001"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-8f87045e67a94646",
+        "activity_id": "IA-a6ad1585c3869336",
         "funding_insight_id": "FI-da21481e9629e578",
         "event_ids": [
           "EV-b1138bccf5ccd86c",
@@ -496,7 +507,7 @@
         ]
       },
       {
-        "activity_id": "IA-1110b0be6deef4fb",
+        "activity_id": "IA-f013f97e780ac9d4",
         "funding_insight_id": "FI-9b370a988458c224",
         "event_ids": [
           "EV-88f4ee8cd57bdf42"
@@ -536,7 +547,7 @@
         ]
       },
       {
-        "activity_id": "IA-7afadf82d34b922d",
+        "activity_id": "IA-d3686cdfc9d2f0f9",
         "funding_insight_id": "FI-a308a87eb0e97da7",
         "event_ids": [
           "EV-dd3217aad32e6891"
@@ -576,7 +587,7 @@
         ]
       },
       {
-        "activity_id": "IA-fe6d74dc9be60fc6",
+        "activity_id": "IA-9fc029afa43e1fad",
         "funding_insight_id": "FI-80a993bcabfd14ae",
         "event_ids": [
           "EV-7abe829941f97b65"
@@ -614,16 +625,154 @@
             "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
           }
         ]
+      },
+      {
+        "activity_id": "IA-5a38d269ec2485d7",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-14fa67bc80a1ece9",
+            "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+            "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+            "source_content_hash": "f5a108f3994daf10",
+            "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+            "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-73155fc4b8d01bf1",
+        "funding_insight_id": "FI-bff055b65fdb260b",
+        "event_ids": [
+          "EV-20d762872664fddb"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcf01fbecb1fbdb6",
+            "source_url": "https://www.caplight.com/company/engram",
+            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+            "source_content_hash": "24739161319ad4eb",
+            "quote": "Kleiner Perkins Seed, Early Funding",
+            "quote_hash": "0cd883b62233958eb762f28a7822196059cd3d2c789a67dd12c6d86c1669c001"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3d8d8621cc92e78e",
+        "funding_insight_id": "FI-4b143304af694a92",
+        "event_ids": [
+          "EV-35fa913e4709b4d6",
+          "EV-861d4440dcbb9b09"
+        ],
+        "company_entity_id": "FICO-instinct",
+        "company_canonical_entity_id": "",
+        "company_name": "Instinct",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "领投A轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-70f948c95dacb2f0",
+            "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+            "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+            "source_content_hash": "0773286daf5bf525",
+            "quote": "Kleiner Perkins partner Mamoon Hamid then led a $75 million Series A at $500 million in early August",
+            "quote_hash": "f2360aaa4549f987e713fb36b41769c61a6dcbe7f02af6e67e0abac2b8179115"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-268381c0a1139e2b",
+        "funding_insight_id": "FI-b1c547937abcaf77",
+        "event_ids": [
+          "EV-4a73829a143cf3fc",
+          "EV-13ec78dfdbca678b"
+        ],
+        "company_entity_id": "EN-29a3723ce5ee3350",
+        "company_canonical_entity_id": "",
+        "company_name": "Together AI",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮领投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6f0f12fb121fbd88",
+            "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+            "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
+            "source_content_hash": "99e8e0f48b30eed2",
+            "quote": "a $102.5 million Series A funding round led by Kleiner Perkins",
+            "quote_hash": "2dd322954ffcde5288d4319db57d166dd2d4d1a740f9bddbf55df5411e121cff"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-70f948c95dacb2f0",
-        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
-        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
-        "source_content_hash": "0773286daf5bf525",
-        "quote": "Kleiner Perkins partner Mamoon Hamid then led a $75 million Series A at $500 million in early August",
-        "quote_hash": "f2360aaa4549f987e713fb36b41769c61a6dcbe7f02af6e67e0abac2b8179115"
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+        "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+      },
+      {
+        "source_id": "FISRC-39cbb5f315cdae11",
+        "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+        "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+        "source_content_hash": "0d32e048dc28b8dd",
+        "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+        "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
       },
       {
         "source_id": "FISRC-bed55d4f5e02a374",
@@ -650,14 +799,6 @@
         "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
       },
       {
-        "source_id": "FISRC-6f0f12fb121fbd88",
-        "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
-        "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
-        "source_content_hash": "99e8e0f48b30eed2",
-        "quote": "a $102.5 million Series A funding round led by Kleiner Perkins",
-        "quote_hash": "2dd322954ffcde5288d4319db57d166dd2d4d1a740f9bddbf55df5411e121cff"
-      },
-      {
         "source_id": "FISRC-11ff205cb2054931",
         "source_url": "https://www.prnewswire.com/news-releases/sail-research-raises-80-million-to-build-max-efficiency-infrastructure-for-ai-agents-302810497.html",
         "source_title": "Sail Research 获 8000 万美元融资，打造 AI 智能体最大效率基础设施",
@@ -666,20 +807,20 @@
         "quote_hash": "fddfe46cf72772289b60a71f74009798cb817f4b79003308f4ef6e0b38a1fb58"
       },
       {
+        "source_id": "FISRC-8f5a35fa6bbc977d",
+        "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+        "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+        "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+        "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+        "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+      },
+      {
         "source_id": "FISRC-39d911c5038cb1c0",
         "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
         "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
         "source_content_hash": "f7105d727554bb38",
         "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo",
         "quote_hash": "d6d2e6175424260b5170a8e5367eac93875a636a037b0e4d21c7a38705fd06e4"
-      },
-      {
-        "source_id": "FISRC-bcf01fbecb1fbdb6",
-        "source_url": "https://www.caplight.com/company/engram",
-        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-        "source_content_hash": "24739161319ad4eb",
-        "quote": "Kleiner Perkins Seed, Early Funding",
-        "quote_hash": "0cd883b62233958eb762f28a7822196059cd3d2c789a67dd12c6d86c1669c001"
       },
       {
         "source_id": "FISRC-1da4b36f3c2caa81",
@@ -712,6 +853,38 @@
         "source_content_hash": "b3e02e458342a3fb",
         "quote": "Existing investors — Mayfield’s Navin Chaddha and Kleiner Perkins’ Mamoon Hamid — also participated",
         "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
+      },
+      {
+        "source_id": "FISRC-14fa67bc80a1ece9",
+        "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+        "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+        "source_content_hash": "f5a108f3994daf10",
+        "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+        "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+      },
+      {
+        "source_id": "FISRC-bcf01fbecb1fbdb6",
+        "source_url": "https://www.caplight.com/company/engram",
+        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+        "source_content_hash": "24739161319ad4eb",
+        "quote": "Kleiner Perkins Seed, Early Funding",
+        "quote_hash": "0cd883b62233958eb762f28a7822196059cd3d2c789a67dd12c6d86c1669c001"
+      },
+      {
+        "source_id": "FISRC-70f948c95dacb2f0",
+        "source_url": "https://www.progressiverobot.com/2026/09/28/instinct-series-c-1b-10b-valuation-viral-ai-agent/",
+        "source_title": "Instinct Series C: Surprising $1B Raise and a $10B Risk",
+        "source_content_hash": "0773286daf5bf525",
+        "quote": "Kleiner Perkins partner Mamoon Hamid then led a $75 million Series A at $500 million in early August",
+        "quote_hash": "f2360aaa4549f987e713fb36b41769c61a6dcbe7f02af6e67e0abac2b8179115"
+      },
+      {
+        "source_id": "FISRC-6f0f12fb121fbd88",
+        "source_url": "https://techcrunch.com/2026/07/01/neocloud-together-ai-raises-800m-leaps-to-8-3b-valuation/",
+        "source_title": "Neocloud Together AI 融资 8 亿美元，估值跃升至 83 亿美元",
+        "source_content_hash": "99e8e0f48b30eed2",
+        "quote": "a $102.5 million Series A funding round led by Kleiner Perkins",
+        "quote_hash": "2dd322954ffcde5288d4319db57d166dd2d4d1a740f9bddbf55df5411e121cff"
       }
     ],
     "public_profile": {
@@ -740,16 +913,16 @@
           "source_id": "kp_about"
         },
         {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
+          "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-39cbb5f315cdae11"
+        },
+        {
           "description": "融资来源记录：Profound · D轮 · 2026-09-15 · 本轮联合领投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bed55d4f5e02a374"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
-        },
-        {
-          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-134a8e8124653c90"
         }
       ],
       "contacts": [
@@ -771,28 +944,28 @@
           "quote_hash": "ef9f5d49eeaa7661a644ec18334f865187a5bd9565cfd4e41c5149c6687ae704"
         },
         {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+        },
+        {
+          "source_id": "FISRC-39cbb5f315cdae11",
+          "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
+          "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
+          "source_content_hash": "0d32e048dc28b8dd",
+          "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
+          "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
+        },
+        {
           "source_id": "FISRC-bed55d4f5e02a374",
           "source_url": "https://techcrunch.com/2026/09/15/aeo-startup-profound-hits-unicorn-valuation-raises-180m-series-d-7-months-after-last-round",
           "source_title": "AEO 创业公司 Profound 融资 1.8 亿美元，估值达 18 亿美元",
           "source_content_hash": "8c26f4447adaeabc",
           "quote": "Sequoia and Kleiner Perkins led the round",
           "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
-        },
-        {
-          "source_id": "FISRC-134a8e8124653c90",
-          "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
-          "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
-          "source_content_hash": "e0e9398bf1a24e32",
-          "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
-          "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
         }
       ],
       "last_verified_at": "2026-09-25",

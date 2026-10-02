@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,39 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 3,
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN",
       "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2025-09-09",
+    "first_disclosed_at": "2026-01-26",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 2
+      "participant": 5
     },
     "round_codes": [
       "multi_round",
+      "series_a",
       "series_b",
-      "series_d"
+      "series_d",
+      "series_h"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-be8f311b8bb47e9c",
         "canonical_entity_id": "",
         "name": "华深智药"
+      },
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
       },
       {
         "entity_id": "EN-50b2676afbe30c83",
@@ -97,11 +104,21 @@
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
         "name": "Mistral AI"
+      },
+      {
+        "entity_id": "EN-1809f7cd0c75acf3",
+        "canonical_entity_id": "",
+        "name": "Prometheus"
+      },
+      {
+        "entity_id": "EN-586e52112859378f",
+        "canonical_entity_id": "",
+        "name": "Ricursive Intelligence"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-909a5207e385294b",
+        "activity_id": "IA-56820acb6cee1fb9",
         "funding_insight_id": "FI-e0e22d70a91e704e",
         "event_ids": [
           "EV-dccfca59b3e58638",
@@ -143,49 +160,7 @@
         ]
       },
       {
-        "activity_id": "IA-3fa7c0ea80c5b7d9",
-        "funding_insight_id": "FI-e0e22d70a91e704e",
-        "event_ids": [
-          "EV-dccfca59b3e58638",
-          "EV-5ea74d357e73366b",
-          "EV-dc442b91a69fcc5a"
-        ],
-        "company_entity_id": "EN-c04bd5ebd10ab696",
-        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
-        "company_name": "Mistral AI",
-        "round": "D轮",
-        "round_code": "series_d",
-        "round_original": "D轮",
-        "amount_original": "€3 billion",
-        "amount_normalized": {
-          "currency": "EUR",
-          "value": 3000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "30 亿欧元"
-        },
-        "announced_at": "2026-09-08",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-27e01480407caae0",
-            "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
-            "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
-            "source_content_hash": "d6a4b74f9e758dc8",
-            "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
-            "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-b1750d9ec17235af",
+        "activity_id": "IA-4d13fbe9867aff94",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
           "EV-1dba157815d84342"
@@ -233,7 +208,87 @@
         ]
       },
       {
-        "activity_id": "IA-25a00c92bdfbd56d",
+        "activity_id": "IA-7aed029cec9e940c",
+        "funding_insight_id": "FI-bb8e3f8e8f3f519c",
+        "event_ids": [
+          "EV-5eb9944487368ea0"
+        ],
+        "company_entity_id": "EN-1809f7cd0c75acf3",
+        "company_canonical_entity_id": "",
+        "company_name": "Prometheus",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$12 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "120 亿美元"
+        },
+        "announced_at": "2026-06-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0c708eb8dc3d758b",
+            "source_url": "https://multiples.vc/private-comps/prometheus",
+            "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "646b9259f23a27ec",
+            "quote": "The $12B round included Jeff Bezos, Goldman Sachs, BlackRock, JPMorgan Chase, DST Global and 1 other investor.",
+            "quote_hash": "e6c850cf7ceea5003c148380cbbffa2eb2c4f3f62c18b1026a296578a0f41f71"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9bc8151d370ffecd",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+            "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2cb5fbd685949164",
         "funding_insight_id": "FI-c3bce60cc6406ae5",
         "event_ids": [
           "EV-e6a4e0785ebb268a"
@@ -273,7 +328,113 @@
         ]
       },
       {
-        "activity_id": "IA-66cac6fa07599fb4",
+        "activity_id": "IA-d51a97168b205485",
+        "funding_insight_id": "FI-30d30c4d482b3f6f",
+        "event_ids": [
+          "EV-ee9a4433b4e7715e"
+        ],
+        "company_entity_id": "EN-586e52112859378f",
+        "company_canonical_entity_id": "",
+        "company_name": "Ricursive Intelligence",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7faa441242e94444",
+            "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+            "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+            "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+            "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+            "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2fd232ea7f8dace5",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "回归投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-94676d99b2defaa4",
+            "source_url": "https://lovable.dev/blog/series-c",
+            "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+            "source_content_hash": "f9c4cc8a8cd4a7c7",
+            "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+            "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3da27e5e3c8c87a4",
+        "funding_insight_id": "FI-e0e22d70a91e704e",
+        "event_ids": [
+          "EV-dccfca59b3e58638",
+          "EV-5ea74d357e73366b",
+          "EV-dc442b91a69fcc5a"
+        ],
+        "company_entity_id": "EN-c04bd5ebd10ab696",
+        "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
+        "company_name": "Mistral AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-27e01480407caae0",
+            "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
+            "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
+            "source_content_hash": "d6a4b74f9e758dc8",
+            "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
+            "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7fcb798a303dd69b",
         "funding_insight_id": "FI-1cf34218733257fd",
         "event_ids": [
           "EV-85506f9f86779a6d"
@@ -281,23 +442,15 @@
         "company_entity_id": "EN-c04bd5ebd10ab696",
         "company_canonical_entity_id": "EN-c04bd5ebd10ab696",
         "company_name": "Mistral AI",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "Series C",
-        "amount_original": "约17亿欧元（约20亿美元）",
-        "amount_normalized": {
-          "currency": "EUR",
-          "value": 1700000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 17 亿欧元"
-        },
-        "announced_at": "2025-09-09",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -323,14 +476,6 @@
         "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
       },
       {
-        "source_id": "FISRC-27e01480407caae0",
-        "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
-        "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
-        "source_content_hash": "d6a4b74f9e758dc8",
-        "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
-        "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
-      },
-      {
         "source_id": "FISRC-b235ace767812393",
         "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
         "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
@@ -347,12 +492,52 @@
         "quote_hash": "bd794bdbdb2cdb9460fd672ab4bb1f064247dd022f70488c70c7f56b353e53cc"
       },
       {
+        "source_id": "FISRC-0c708eb8dc3d758b",
+        "source_url": "https://multiples.vc/private-comps/prometheus",
+        "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "646b9259f23a27ec",
+        "quote": "The $12B round included Jeff Bezos, Goldman Sachs, BlackRock, JPMorgan Chase, DST Global and 1 other investor.",
+        "quote_hash": "e6c850cf7ceea5003c148380cbbffa2eb2c4f3f62c18b1026a296578a0f41f71"
+      },
+      {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+        "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+      },
+      {
         "source_id": "FISRC-972ef11d09af7ec8",
         "source_url": "https://vc.pedaily.cn/company/205217.html",
         "source_title": "华深智药完成7.87亿美元B轮融资",
         "source_content_hash": "7a5d62c400db7b6b8c647dad353abbfc6cb0bb7ebf6b31b70a895674725e71e3",
         "quote": "投资方为Dimension Capital、DST Global、高瓴资本、渶策资本、Luminous Ventures、琦迹资本、赛诺菲、Biotech Development Fund",
         "quote_hash": "50bd19105aa4ddc094866c630fa8f02864547d64102bd3c4636c35e7ee64bb72"
+      },
+      {
+        "source_id": "FISRC-7faa441242e94444",
+        "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+        "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+        "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+        "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+        "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
+      },
+      {
+        "source_id": "FISRC-94676d99b2defaa4",
+        "source_url": "https://lovable.dev/blog/series-c",
+        "source_title": "We just raised $400M in Series C funding to help people run their businesses | Lovable",
+        "source_content_hash": "f9c4cc8a8cd4a7c7",
+        "quote": "Returning investors include Accel, Antler, CapitalG, DST Global, Evantic Capital, HubSpot Ventures, and Salesforce Ventures.",
+        "quote_hash": "4e9e9950d18c21b26bf96be2494d8b75d9a1a4fd4c38257734fb008f4a2ecc06"
+      },
+      {
+        "source_id": "FISRC-27e01480407caae0",
+        "source_url": "https://www.sesamers.com/funding/mistral-ai-raises-3b-series-d-samsung/",
+        "source_title": "Mistral AI raises €3B Series D led by Samsung Electronics",
+        "source_content_hash": "d6a4b74f9e758dc8",
+        "quote": "Participants a16z Advent DST Global Eurazeo General Catalyst Headline Hillspire Index Ventures Korelya Capital Lightspeed Phoenix Court BlackRock (funds and accounts) Grand Duchy of Luxembourg ASML Belfius BNP Paribas CIB Bpifrance Carmignac Nvidia Phoenix Court (Solar fund) Salesforce Ventures",
+        "quote_hash": "4366f11c6e24e9307486d82a2c35757bff7230de3683d6d918c0c285f0830ea1"
       },
       {
         "source_id": "FISRC-110f0e95801f33f9",

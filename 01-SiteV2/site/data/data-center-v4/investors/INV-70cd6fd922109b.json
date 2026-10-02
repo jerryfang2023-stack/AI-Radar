@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,25 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-02",
-    "latest_disclosed_at": "2026-07-22",
+    "latest_disclosed_at": "2026-09-14",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "other_current_round": 2
+      "historical_or_ambiguous": 2,
+      "other_current_round": 2,
+      "participant": 1
     },
     "round_codes": [
       "seed",
-      "series_a"
+      "series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
@@ -89,11 +91,56 @@
         "entity_id": "EN-834cc12fc35adde7",
         "canonical_entity_id": "",
         "name": "Arrakis"
+      },
+      {
+        "entity_id": "EN-1ae1dd29593288ec",
+        "canonical_entity_id": "",
+        "name": "Flam"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-22b035e781556912",
+        "activity_id": "IA-34b511af6e12941f",
+        "funding_insight_id": "FI-ab5f000cdfdb1a10",
+        "event_ids": [
+          "EV-ce76d1c1572db8e4"
+        ],
+        "company_entity_id": "EN-1ae1dd29593288ec",
+        "company_canonical_entity_id": "",
+        "company_name": "Flam",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$40M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-83ab416cf84d3f07",
+            "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
+            "source_title": "Flam 融资 4000 万美元，让 AI 驱动的互动内容成为现实",
+            "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
+            "quote": "saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel, the Chief Executive Officer of Datadog Inc.",
+            "quote_hash": "7be730746e697b650893c650e5756ac715dad42320a9089c5737479e1ca869da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-77d4c2d32bb2f769",
         "funding_insight_id": "FI-3c407a7a4dd718f1",
         "event_ids": [
           "EV-754e83c2d19005fe"
@@ -133,47 +180,7 @@
         ]
       },
       {
-        "activity_id": "IA-988d6fe53b4907af",
-        "funding_insight_id": "FI-6deae4c748088f7f",
-        "event_ids": [
-          "EV-c0ec0c026233bea5"
-        ],
-        "company_entity_id": "EN-a7dd4a797cf9990b",
-        "company_canonical_entity_id": "",
-        "company_name": "Niteshift",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "种子轮",
-        "amount_original": "$7 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 7000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "700 万美元"
-        },
-        "announced_at": "2026-06-10",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使投资人",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-01df70e43799a400",
-            "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
-            "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
-            "source_content_hash": "21b15182c071a779",
-            "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc",
-            "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-3f942bbd3b7af36b",
+        "activity_id": "IA-8af65394dbfba8b4",
         "funding_insight_id": "FI-fe82f871887d3c1f",
         "event_ids": [
           "EV-f1a605a25af30dc5",
@@ -212,9 +219,81 @@
             "quote_hash": "5e16f4c08d67b884d79c10879877fb341755dc3306b67c0e0f65bf31b55e4294"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f6d66c66852870cd",
+        "funding_insight_id": "FI-6deae4c748088f7f",
+        "event_ids": [
+          "EV-c0ec0c026233bea5"
+        ],
+        "company_entity_id": "EN-a7dd4a797cf9990b",
+        "company_canonical_entity_id": "",
+        "company_name": "Niteshift",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使投资人",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-01df70e43799a400",
+            "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
+            "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
+            "source_content_hash": "21b15182c071a779",
+            "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc",
+            "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5261c8c949291c63",
+        "funding_insight_id": "FI-306e35da8ebe8088",
+        "event_ids": [
+          "EV-b58eb81bf5235a33"
+        ],
+        "company_entity_id": "EN-e34d1c9011e06204",
+        "company_canonical_entity_id": "",
+        "company_name": "Railway",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "本轮天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-72c8859fe2a25c85",
+            "source_url": "https://multiples.vc/private-comps/railway",
+            "source_title": "Railway Funding, Investors & Competitors | Multiples",
+            "source_content_hash": "914fbe85560ee8b3",
+            "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
+            "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-83ab416cf84d3f07",
+        "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
+        "source_title": "Flam 融资 4000 万美元，让 AI 驱动的互动内容成为现实",
+        "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
+        "quote": "saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel, the Chief Executive Officer of Datadog Inc.",
+        "quote_hash": "7be730746e697b650893c650e5756ac715dad42320a9089c5737479e1ca869da"
+      },
       {
         "source_id": "FISRC-ac4fd601f33650ff",
         "source_url": "https://www.financialcontent.com/article/bizwire-2026-7-22-arrakis-comes-out-of-stealth-with-38m-to-help-industrial-enterprises-compete-in-the-ai-era",
@@ -222,6 +301,14 @@
         "source_content_hash": "4d42f1ad7c55a3e3",
         "quote": "includes backing from prominent technology leaders, including Olivier Pomel, founder and chief executive of Datadog",
         "quote_hash": "23c11afd491ee076f76e385d788cd78cc1467fe8fbd0d8fe7eadcb74ca978f75"
+      },
+      {
+        "source_id": "FISRC-08f2020b7eca8380",
+        "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
+        "source_title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
+        "source_content_hash": "e9f5a2a28919e9c2",
+        "quote": "Angels investing in the round include Olivier Pomel, CEO and co-founder of Datadog",
+        "quote_hash": "5e16f4c08d67b884d79c10879877fb341755dc3306b67c0e0f65bf31b55e4294"
       },
       {
         "source_id": "FISRC-01df70e43799a400",
@@ -232,12 +319,12 @@
         "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
       },
       {
-        "source_id": "FISRC-08f2020b7eca8380",
-        "source_url": "https://tech.eu/2026/06/02/archestraai-raises-10m-to-unlock-next-gen-agentic-use-case/",
-        "source_title": "Archestra.AI 获1000万美元融资，解锁下一代自主代理应用场景 - Tech.eu",
-        "source_content_hash": "e9f5a2a28919e9c2",
-        "quote": "Angels investing in the round include Olivier Pomel, CEO and co-founder of Datadog",
-        "quote_hash": "5e16f4c08d67b884d79c10879877fb341755dc3306b67c0e0f65bf31b55e4294"
+        "source_id": "FISRC-72c8859fe2a25c85",
+        "source_url": "https://multiples.vc/private-comps/railway",
+        "source_title": "Railway Funding, Investors & Competitors | Multiples",
+        "source_content_hash": "914fbe85560ee8b3",
+        "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
+        "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
       }
     ],
     "public_profile": {
@@ -292,16 +379,16 @@
           "source_id": "pomel_datadog"
         },
         {
+          "description": "融资来源记录：Flam · B轮 · 2026-09-14 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-83ab416cf84d3f07"
+        },
+        {
           "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮天使投资人 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ac4fd601f33650ff"
         },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-08f2020b7eca8380"
-        },
-        {
-          "description": "融资来源记录：Niteshift · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-01df70e43799a400"
         }
       ],
       "sources": [
@@ -312,6 +399,14 @@
           "source_content_hash": "3c288123cf81b524a9094c0af767bf023c3ab084b4a12d0c85d2affefac63492",
           "quote": "Olivier Pomel — CEO & Co-Founder. Prior to founding Datadog, Olivier Pomel built data systems for K-12 teachers as a VP, Technology for Wireless Generation, where he grew the development team from a handful of people to close to 100. Before Wireless Generation, Olivier held software engineering positions at IBM Research and several internet startups. Olivier is an original author of the VLC media player and holds a MS, CS from the Ecole Centrale Paris.",
           "quote_hash": "66e3145c981479ce3c1f93af930bd95fc93616de0ce3b96da22d7c7861d212d5"
+        },
+        {
+          "source_id": "FISRC-83ab416cf84d3f07",
+          "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
+          "source_title": "Flam 融资 4000 万美元，让 AI 驱动的互动内容成为现实",
+          "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
+          "quote": "saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel, the Chief Executive Officer of Datadog Inc.",
+          "quote_hash": "7be730746e697b650893c650e5756ac715dad42320a9089c5737479e1ca869da"
         },
         {
           "source_id": "FISRC-ac4fd601f33650ff",
@@ -328,14 +423,6 @@
           "source_content_hash": "e9f5a2a28919e9c2",
           "quote": "Angels investing in the round include Olivier Pomel, CEO and co-founder of Datadog",
           "quote_hash": "5e16f4c08d67b884d79c10879877fb341755dc3306b67c0e0f65bf31b55e4294"
-        },
-        {
-          "source_id": "FISRC-01df70e43799a400",
-          "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
-          "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
-          "source_content_hash": "21b15182c071a779",
-          "quote": "the startup, founded by two former early Datadog engineers, has attracted some big-name angels like Reid Hoffman, Datadog’s Olivier Pomel and Alexis Lê-Quôc",
-          "quote_hash": "0a97a78cb513a7c08f340a295557d456130ec12667680c5c6039f375d939cc8b"
         }
       ],
       "last_verified_at": "2026-09-25",

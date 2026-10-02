@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,13 +72,20 @@
     "first_disclosed_at": "2026-03-12",
     "latest_disclosed_at": "2026-09-02",
     "role_counts": {
-      "participant": 2
+      "historical_or_ambiguous": 1,
+      "participant": 3
     },
     "round_codes": [
       "series_b",
-      "series_c"
+      "series_c",
+      "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-586937124e151c46",
+        "canonical_entity_id": "EN-586937124e151c46",
+        "name": "Suno"
+      },
       {
         "entity_id": "FICO-wonderful",
         "canonical_entity_id": "",
@@ -87,7 +94,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-5947c45a5b325f63",
+        "activity_id": "IA-2f43f8d27963fae9",
         "funding_insight_id": "FI-d61afc2c6c00363a",
         "event_ids": [
           "EV-81bbaaec2965864a"
@@ -127,7 +134,48 @@
         ]
       },
       {
-        "activity_id": "IA-dab2f38a3a543902",
+        "activity_id": "IA-9eeb5f610ee9e5b0",
+        "funding_insight_id": "FI-cbf93da745326644",
+        "event_ids": [
+          "EV-3e92fba5502f1aba",
+          "EV-31579660b945ef01"
+        ],
+        "company_entity_id": "EN-586937124e151c46",
+        "company_canonical_entity_id": "EN-586937124e151c46",
+        "company_name": "Suno",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8a34984c8e02defc",
+            "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+            "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+            "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+            "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+            "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4cc2bf7b3dbde440",
         "funding_insight_id": "FI-2b8ea19368209f49",
         "event_ids": [
           "EV-aa33ca051f3a7f78",
@@ -167,6 +215,38 @@
             "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a8a3fa0625bca1aa",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+            "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -179,12 +259,28 @@
         "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
       },
       {
+        "source_id": "FISRC-8a34984c8e02defc",
+        "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+        "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+        "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+        "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+        "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+      },
+      {
         "source_id": "FISRC-c29f00f067579660",
         "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
         "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
         "source_content_hash": "67f409ee5b146b1d",
         "quote": "with participation from existing investors Index Ventures, IVP, Bessemer Venture Partners, and Vine Ventures",
         "quote_hash": "4b692c3189d4f946e9961e92b0f637a386a65a07795ecd5b1e7edb1c27ae94d8"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+        "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
       }
     ],
     "public_profile": {
@@ -226,6 +322,10 @@
         {
           "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3bc5a4e973b035eb"
+        },
+        {
+          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8a34984c8e02defc"
         },
         {
           "description": "融资来源记录：Wonderful · B轮 · 2026-03-12 · 本轮参投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -311,6 +411,14 @@
           "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
         },
         {
+          "source_id": "FISRC-8a34984c8e02defc",
+          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+        },
+        {
           "source_id": "FISRC-c29f00f067579660",
           "source_url": "https://www.insightpartners.com/ideas/wonderful-raises-150m-series-b-to-accelerate-enterprise-ai-adoption-in-30-markets/",
           "source_title": "Wonderful Raises $150M Series B to Accelerate Enterprise AI Adoption in 30+ Markets | Insight Partners",
@@ -323,6 +431,18 @@
       "coverage_status": "researched",
       "coverage_note": "投资策略、行业与联系方式来自IVP官网；“每年约10家”是机构公开描述，不视为完整基金年度投资统计。",
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[3].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,12 +72,14 @@
     "first_disclosed_at": "2025-04-09",
     "latest_disclosed_at": "2026-07-16",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
       "series_a",
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
@@ -97,6 +99,11 @@
         "name": "Entire Inc."
       },
       {
+        "entity_id": "EN-06c8aaa93d80a768",
+        "canonical_entity_id": "",
+        "name": "Factory"
+      },
+      {
         "entity_id": "EN-0caee180da9d0f3f",
         "canonical_entity_id": "",
         "name": "Fireworks AI Inc."
@@ -109,7 +116,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-64b27764def91163",
+        "activity_id": "IA-576f1ecfb072d4a7",
         "funding_insight_id": "FI-3b1ea359415f476d",
         "event_ids": [
           "EV-4eaf3aabecae6016"
@@ -149,7 +156,7 @@
         ]
       },
       {
-        "activity_id": "IA-345ee7cd3909db0b",
+        "activity_id": "IA-2024f3d90e367b53",
         "funding_insight_id": "FI-fe82f871887d3c1f",
         "event_ids": [
           "EV-f1a605a25af30dc5",
@@ -198,7 +205,47 @@
         ]
       },
       {
-        "activity_id": "IA-d356a843fa9b5ed0",
+        "activity_id": "IA-8b7a87ad81a0e3a2",
+        "funding_insight_id": "FI-2beaec77613f6a7f",
+        "event_ids": [
+          "EV-20e5d57a05b69a95"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+            "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+            "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e54b12b61effd73f",
         "funding_insight_id": "FI-9c3c02658ff94312",
         "event_ids": [
           "EV-cded77b1de2db61a"
@@ -238,7 +285,7 @@
         ]
       },
       {
-        "activity_id": "IA-e0f56219b3a7d1a2",
+        "activity_id": "IA-69abec07639a8b99",
         "funding_insight_id": "FI-5e96c3937673ac2b",
         "event_ids": [
           "EV-618e5729145025e4"
@@ -278,7 +325,7 @@
         ]
       },
       {
-        "activity_id": "IA-3efa6a874bbbe79e",
+        "activity_id": "IA-fcce8fbe2b219722",
         "funding_insight_id": "FI-343cd8cad5810ba7",
         "event_ids": [
           "EV-86ca5af11ee4d275"
@@ -316,6 +363,38 @@
             "quote_hash": "de26b6b966f8f8750ffa4009013e2defb92ca992ba27d53a8252745d48412991"
           }
         ]
+      },
+      {
+        "activity_id": "IA-34f46ad27576ecc5",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory raises $150M Series C",
+            "source_content_hash": "64798c57510b20e2",
+            "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -344,6 +423,14 @@
         "quote_hash": "7db49d2541be58708e5471ae36968e3ca07be5e9cefbaad9cfe6390586da5533"
       },
       {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+        "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+        "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+      },
+      {
         "source_id": "FISRC-115626db07e52373",
         "source_url": "https://www.linkedin.com/posts/toyota-ventures_ami-labs-activity-7437189879689629697-0_Rg",
         "source_title": "AMI Labs receives $1.03B Seed round for World Models development | Toyota Ventures posted on the topic | LinkedIn",
@@ -366,6 +453,14 @@
         "source_content_hash": "04da38491f1bcf53",
         "quote": "a Series A funding round, led by 20VC",
         "quote_hash": "de26b6b966f8f8750ffa4009013e2defb92ca992ba27d53a8252745d48412991"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory raises $150M Series C",
+        "source_content_hash": "64798c57510b20e2",
+        "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
       }
     ],
     "public_profile": {
@@ -465,6 +560,18 @@
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[6].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

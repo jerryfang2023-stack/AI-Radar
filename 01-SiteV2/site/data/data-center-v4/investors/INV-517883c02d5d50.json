@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,14 +72,16 @@
     "first_disclosed_at": "2026-02-12",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "lead": 3,
+      "co_lead": 1,
+      "historical_or_ambiguous": 3,
+      "lead": 4,
       "participant": 1
     },
     "round_codes": [
       "series_d",
       "series_f",
-      "series_g"
+      "series_g",
+      "series_h"
     ],
     "portfolio_companies": [
       {
@@ -93,6 +95,11 @@
         "name": "Crusoe"
       },
       {
+        "entity_id": "EN-4d7594e57f7d03f3",
+        "canonical_entity_id": "",
+        "name": "Supabase"
+      },
+      {
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal Technologies"
@@ -100,7 +107,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-401e87f0d8ad17ae",
+        "activity_id": "IA-746a3e9358c85a85",
         "funding_insight_id": "FI-72df07926e3369ef",
         "event_ids": [
           "EV-26a5749d8604455a",
@@ -141,7 +148,7 @@
         ]
       },
       {
-        "activity_id": "IA-7c3b695cd0fd6187",
+        "activity_id": "IA-6adba3bb158c74ce",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
         "event_ids": [
           "EV-f5dd6dec49ad83aa"
@@ -181,47 +188,87 @@
         ]
       },
       {
-        "activity_id": "IA-a1d06669a2ba436b",
-        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "activity_id": "IA-e2eab5a9e3f04501",
+        "funding_insight_id": "FI-d3f8f22849d09dcc",
         "event_ids": [
-          "EV-f5dd6dec49ad83aa"
+          "EV-42ba61e8713cd2e6"
         ],
-        "company_entity_id": "EN-c70eca6b0f88f44d",
-        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-        "company_name": "Anthropic",
-        "round": "G轮",
-        "round_code": "series_g",
-        "round_original": "G轮",
-        "amount_original": "$30 billion",
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$500M",
         "amount_normalized": {
           "currency": "USD",
-          "value": 30000000000,
+          "value": 500000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "300 亿美元"
+          "display_zh": "5 亿美元"
         },
-        "announced_at": "2026-08-10",
+        "announced_at": "2026-06-04",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "F轮参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-2d91b8c40e694677",
-            "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
-            "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
-            "source_content_hash": "a0ff76f6894f0267",
-            "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
-            "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
+            "source_id": "FISRC-329a0525efb0e1f9",
+            "source_url": "https://supabase.com/blog/supabase-series-f",
+            "source_title": "Supabase F 轮融资",
+            "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+            "quote": "It’s led by GIC.",
+            "quote_hash": "385cc86683082ff62eb9d23c0277054470883367dfa920e337eb24d600b69cca"
           }
         ]
       },
       {
-        "activity_id": "IA-b33069ffbb563962",
+        "activity_id": "IA-0823d9b390531f01",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
+            "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d33988486026d453",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
           "EV-3b40ec144e5db22c"
@@ -269,7 +316,7 @@
         ]
       },
       {
-        "activity_id": "IA-4e47d2f27bc688d1",
+        "activity_id": "IA-675c8c9ab0f00f8b",
         "funding_insight_id": "FI-352a7cfb23508f3e",
         "event_ids": [
           "EV-31df816db86db282"
@@ -307,6 +354,102 @@
             "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
           }
         ]
+      },
+      {
+        "activity_id": "IA-0e6d29c89d3156cb",
+        "funding_insight_id": "FI-f55b62cf10cb7c98",
+        "event_ids": [
+          "EV-f5dd6dec49ad83aa"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "F轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2d91b8c40e694677",
+            "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
+            "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
+            "source_content_hash": "a0ff76f6894f0267",
+            "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
+            "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dfac1873a7fdbc23",
+        "funding_insight_id": "FI-898cddb74dcff413",
+        "event_ids": [
+          "EV-6ed17a96a4a4079d"
+        ],
+        "company_entity_id": "EN-e4540a7c8404b1be",
+        "company_canonical_entity_id": "",
+        "company_name": "Temporal",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf83d78a216a5edf",
+            "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+            "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+            "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+            "quote": "Returning investors include a16z, Sequoia, Index, GIC, Sapphire Ventures, and Amplify.",
+            "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a6ceb7a571079bf8",
+        "funding_insight_id": "FI-fbb8358f9cd7d1f6",
+        "event_ids": [
+          "EV-2975bb5b57ce53d9"
+        ],
+        "company_entity_id": "EN-7dfadeb219464a45",
+        "company_canonical_entity_id": "",
+        "company_name": "Zūm",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1d97f99b2bf1db30",
+            "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+            "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+            "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+            "quote": "Zum is backed by leading investors including Sequoia Capital, GIC, SoftBank, and TPG.",
+            "quote_hash": "8718e19b46e5c4a3bbb41a97dc7c265065dad77eacb163fada467800ba0615f5"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -327,12 +470,20 @@
         "quote_hash": "de507bc015d862739260e2ce19337e511d393916dd1bee9d748c8d93c7f22a72"
       },
       {
-        "source_id": "FISRC-2d91b8c40e694677",
-        "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
-        "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
-        "source_content_hash": "a0ff76f6894f0267",
-        "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
-        "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
+        "source_id": "FISRC-329a0525efb0e1f9",
+        "source_url": "https://supabase.com/blog/supabase-series-f",
+        "source_title": "Supabase F 轮融资",
+        "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+        "quote": "It’s led by GIC.",
+        "quote_hash": "385cc86683082ff62eb9d23c0277054470883367dfa920e337eb24d600b69cca"
+      },
+      {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
+        "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
       },
       {
         "source_id": "FISRC-1f69885afd5fc439",
@@ -357,6 +508,30 @@
         "source_content_hash": "c231466686007dd5",
         "quote": "led by GIC and Coatue",
         "quote_hash": "27b1fcdb8e8102afbf84113bae51103d064733269329486fc94fe8f01b33c8a6"
+      },
+      {
+        "source_id": "FISRC-2d91b8c40e694677",
+        "source_url": "https://www.gic.com.sg/newsroom/all/gic-leads-30-billion-series-g-in-anthropic/",
+        "source_title": "GIC Leads $30 Billion Series G in Anthropic | GIC Newsroom",
+        "source_content_hash": "a0ff76f6894f0267",
+        "quote": "This investment builds upon GIC’s significant investment in Anthropic’s $13B Series F, exemplifying GIC’s lifecycle investment approach",
+        "quote_hash": "88ada386b9a89ba03806fa6613b4fc8adda2326e794031cf77a4432f854d3099"
+      },
+      {
+        "source_id": "FISRC-cf83d78a216a5edf",
+        "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+        "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+        "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+        "quote": "Returning investors include a16z, Sequoia, Index, GIC, Sapphire Ventures, and Amplify.",
+        "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
+      },
+      {
+        "source_id": "FISRC-1d97f99b2bf1db30",
+        "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+        "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+        "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+        "quote": "Zum is backed by leading investors including Sequoia Capital, GIC, SoftBank, and TPG.",
+        "quote_hash": "8718e19b46e5c4a3bbb41a97dc7c265065dad77eacb163fada467800ba0615f5"
       }
     ],
     "public_profile": {
@@ -420,8 +595,8 @@
           "source_id": "FISRC-2d91b8c40e694677"
         },
         {
-          "description": "融资来源记录：Temporal Technologies · D轮 · 2026-02-17 · 既有投资方，本轮参投；曾领投2025年10月二级交易 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1f69885afd5fc439"
+          "description": "融资来源记录：Supabase · F轮 · 2026-06-04 · 本轮领投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-329a0525efb0e1f9"
         }
       ],
       "contacts": [
@@ -481,12 +656,12 @@
           "quote_hash": "de507bc015d862739260e2ce19337e511d393916dd1bee9d748c8d93c7f22a72"
         },
         {
-          "source_id": "FISRC-1f69885afd5fc439",
-          "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-          "source_title": "Temporal 完成 D 轮融资",
-          "source_content_hash": "74cb86598e6c9021",
-          "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-          "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+          "source_id": "FISRC-329a0525efb0e1f9",
+          "source_url": "https://supabase.com/blog/supabase-series-f",
+          "source_title": "Supabase F 轮融资",
+          "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+          "quote": "It’s led by GIC.",
+          "quote_hash": "385cc86683082ff62eb9d23c0277054470883367dfa920e337eb24d600b69cca"
         }
       ],
       "last_verified_at": "2026-09-25",

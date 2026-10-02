@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -70,7 +70,7 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-07-16",
-    "latest_disclosed_at": "2026-08-25",
+    "latest_disclosed_at": "2026-07-16",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "other_current_round": 1
@@ -87,47 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-69bb59322ceda4b2",
-        "funding_insight_id": "FI-164f373b7879a941",
-        "event_ids": [
-          "EV-3ee6b5e876146bb3"
-        ],
-        "company_entity_id": "EN-3b3ed571bbb19504",
-        "company_canonical_entity_id": "",
-        "company_name": "Ringg",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "$10 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 10000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1000 万美元"
-        },
-        "announced_at": "2026-08-25",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "Series A参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-5d8eb24ecea69660",
-            "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
-            "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
-            "source_content_hash": "64d3a17d3ff626b7",
-            "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
-            "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-0d6c135f317a30c7",
+        "activity_id": "IA-01e31abf57f9a772",
         "funding_insight_id": "FI-20e67383e8533b80",
         "event_ids": [
           "EV-02882e6f5e1902c6"
@@ -165,17 +125,41 @@
             "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
           }
         ]
+      },
+      {
+        "activity_id": "IA-869a648793ccc10f",
+        "funding_insight_id": "FI-164f373b7879a941",
+        "event_ids": [
+          "EV-3ee6b5e876146bb3"
+        ],
+        "company_entity_id": "EN-3b3ed571bbb19504",
+        "company_canonical_entity_id": "",
+        "company_name": "Ringg",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5d8eb24ecea69660",
+            "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+            "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+            "source_content_hash": "64d3a17d3ff626b7",
+            "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+            "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-5d8eb24ecea69660",
-        "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
-        "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
-        "source_content_hash": "64d3a17d3ff626b7",
-        "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
-        "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
-      },
       {
         "source_id": "FISRC-9e755507b523ddb2",
         "source_url": "https://inc42.com/buzz/aina-raises-5-5-mn-from-info-edge-ventures-360-one-asset-to-build-ai-native-interfaces/",
@@ -183,6 +167,14 @@
         "source_content_hash": "495ca48cb14fa6d7",
         "quote": "Angel investors included WhatsApp head Kunal Shah",
         "quote_hash": "2ee6c270a9481b0c3ddc7a19bf2941b1f182dc0c7a41dfd89df46ff1fda97684"
+      },
+      {
+        "source_id": "FISRC-5d8eb24ecea69660",
+        "source_url": "https://www.ringg.ai/blogs/ringg-ai-announcing-our-5-5-millon-usd-series-a",
+        "source_title": "Ringg AI Funding: $5.5M Series A for Voice AI Agents",
+        "source_content_hash": "64d3a17d3ff626b7",
+        "quote": "with participation from Groww Founder Fund, Kunal Shah, Whitecap Ventures, and Capital2B",
+        "quote_hash": "e3ad257b17e427286565efce38dfbfe55135f9bf9002bf584999a036a213838d"
       }
     ],
     "public_profile": {

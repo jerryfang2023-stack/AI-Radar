@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,6 +74,7 @@
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
@@ -89,11 +90,16 @@
         "entity_id": "EN-1c5483264189feef",
         "canonical_entity_id": "",
         "name": "Onyx"
+      },
+      {
+        "entity_id": "EN-5bf8433fda374b42",
+        "canonical_entity_id": "",
+        "name": "Ploy"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-2537b2951d1f2219",
+        "activity_id": "IA-3c615539aa5b1ed2",
         "funding_insight_id": "FI-2b717ea13b12294d",
         "event_ids": [
           "EV-13e08bc37724e276"
@@ -133,47 +139,47 @@
         ]
       },
       {
-        "activity_id": "IA-aff864a5313b346c",
-        "funding_insight_id": "FI-c813b159747ac208",
+        "activity_id": "IA-9dd43897e224cd37",
+        "funding_insight_id": "FI-de95c94135ad5e68",
         "event_ids": [
-          "EV-fcf3c464260b6730"
+          "EV-ba7fd8ed5a019717"
         ],
-        "company_entity_id": "EN-7ef08ef63597d47c",
+        "company_entity_id": "EN-5bf8433fda374b42",
         "company_canonical_entity_id": "",
-        "company_name": "Gritt",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "pre-seed and Series A",
-        "amount_original": "$32.4M",
+        "company_name": "Ploy",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$27 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 32400000,
+          "value": 27000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "3240 万美元"
+          "display_zh": "2700 万美元"
         },
-        "announced_at": "2026-07-21",
+        "announced_at": "2026-06-17",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-e5ce259c107507e9",
-            "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
-            "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
-            "source_content_hash": "6af714d5b7bb5158",
-            "quote": "support from previous investors First Round Capital",
-            "quote_hash": "91e74913d55d149989100f9a52e220a02499003f52b00783d3c8cbab90e514ce"
+            "source_id": "FISRC-06b0e5fa3929381b",
+            "source_url": "https://www.prnewswire.com/news-releases/ploy-raises-27m-to-turn-your-companys-website-into-your-hardest-working-employee-302803231.html",
+            "source_title": "Ploy 融资 2700 万美元，将你的公司网站变成你最勤奋的员工",
+            "source_content_hash": "9ad34c373c3c1927a5a5e75bac017b837c14a0fd801cb1af9373dd2000d77cbb",
+            "quote": "$27 million seed led by First Round Capital and Y Combinator",
+            "quote_hash": "7cb0f31df29d4b600ff82a7354709a5e6707f3920b96b2a6d33b726186d4f70d"
           }
         ]
       },
       {
-        "activity_id": "IA-f96c33395a59516a",
+        "activity_id": "IA-f4e11c0ef6309673",
         "funding_insight_id": "FI-a29040155764e60f",
         "event_ids": [
           "EV-b348083270be6c65"
@@ -211,6 +217,38 @@
             "quote_hash": "3b6a63c25ba8b8d8e2fd847a93d7b9bfba14d69d63bd14ce73e0b2435993fa28"
           }
         ]
+      },
+      {
+        "activity_id": "IA-88f001aee4879cec",
+        "funding_insight_id": "FI-c813b159747ac208",
+        "event_ids": [
+          "EV-fcf3c464260b6730"
+        ],
+        "company_entity_id": "EN-7ef08ef63597d47c",
+        "company_canonical_entity_id": "",
+        "company_name": "Gritt",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-e5ce259c107507e9",
+            "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
+            "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
+            "source_content_hash": "6af714d5b7bb5158",
+            "quote": "support from previous investors First Round Capital",
+            "quote_hash": "91e74913d55d149989100f9a52e220a02499003f52b00783d3c8cbab90e514ce"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -223,12 +261,12 @@
         "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
       },
       {
-        "source_id": "FISRC-e5ce259c107507e9",
-        "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
-        "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
-        "source_content_hash": "6af714d5b7bb5158",
-        "quote": "support from previous investors First Round Capital",
-        "quote_hash": "91e74913d55d149989100f9a52e220a02499003f52b00783d3c8cbab90e514ce"
+        "source_id": "FISRC-06b0e5fa3929381b",
+        "source_url": "https://www.prnewswire.com/news-releases/ploy-raises-27m-to-turn-your-companys-website-into-your-hardest-working-employee-302803231.html",
+        "source_title": "Ploy 融资 2700 万美元，将你的公司网站变成你最勤奋的员工",
+        "source_content_hash": "9ad34c373c3c1927a5a5e75bac017b837c14a0fd801cb1af9373dd2000d77cbb",
+        "quote": "$27 million seed led by First Round Capital and Y Combinator",
+        "quote_hash": "7cb0f31df29d4b600ff82a7354709a5e6707f3920b96b2a6d33b726186d4f70d"
       },
       {
         "source_id": "FISRC-03b9d51b95b8c6ce",
@@ -237,6 +275,14 @@
         "source_content_hash": "9266f35a39d4c471",
         "quote": "The round was co-led by Khosla Ventures and First Round Capital",
         "quote_hash": "3b6a63c25ba8b8d8e2fd847a93d7b9bfba14d69d63bd14ce73e0b2435993fa28"
+      },
+      {
+        "source_id": "FISRC-e5ce259c107507e9",
+        "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
+        "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
+        "source_content_hash": "6af714d5b7bb5158",
+        "quote": "support from previous investors First Round Capital",
+        "quote_hash": "91e74913d55d149989100f9a52e220a02499003f52b00783d3c8cbab90e514ce"
       }
     ],
     "public_profile": {
@@ -290,12 +336,12 @@
           "source_id": "FISRC-a8e6dd6c34cd416a"
         },
         {
-          "description": "融资来源记录：Onyx · 种子轮 · 2025-03-12 · 本轮联合领投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-03b9d51b95b8c6ce"
+          "description": "融资来源记录：Ploy · 种子轮 · 2026-06-17 · 本轮领投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-06b0e5fa3929381b"
         },
         {
-          "description": "融资来源记录：Gritt · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e5ce259c107507e9"
+          "description": "融资来源记录：Onyx · 种子轮 · 2025-03-12 · 本轮联合领投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-03b9d51b95b8c6ce"
         }
       ],
       "contacts": [
@@ -369,20 +415,20 @@
           "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
         },
         {
+          "source_id": "FISRC-06b0e5fa3929381b",
+          "source_url": "https://www.prnewswire.com/news-releases/ploy-raises-27m-to-turn-your-companys-website-into-your-hardest-working-employee-302803231.html",
+          "source_title": "Ploy 融资 2700 万美元，将你的公司网站变成你最勤奋的员工",
+          "source_content_hash": "9ad34c373c3c1927a5a5e75bac017b837c14a0fd801cb1af9373dd2000d77cbb",
+          "quote": "$27 million seed led by First Round Capital and Y Combinator",
+          "quote_hash": "7cb0f31df29d4b600ff82a7354709a5e6707f3920b96b2a6d33b726186d4f70d"
+        },
+        {
           "source_id": "FISRC-03b9d51b95b8c6ce",
           "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
           "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
           "source_content_hash": "9266f35a39d4c471",
           "quote": "The round was co-led by Khosla Ventures and First Round Capital",
           "quote_hash": "3b6a63c25ba8b8d8e2fd847a93d7b9bfba14d69d63bd14ce73e0b2435993fa28"
-        },
-        {
-          "source_id": "FISRC-e5ce259c107507e9",
-          "source_url": "https://www.gritt.ai/news/gritt-launches-physical-ai",
-          "source_title": "Gritt 获 3240 万美元融资，打造物理 AI 加速全球基础设施建设",
-          "source_content_hash": "6af714d5b7bb5158",
-          "quote": "support from previous investors First Round Capital",
-          "quote_hash": "91e74913d55d149989100f9a52e220a02499003f52b00783d3c8cbab90e514ce"
         }
       ],
       "last_verified_at": "2026-09-26",

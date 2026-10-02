@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,49 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-10",
-    "latest_disclosed_at": "2026-06-22",
+    "first_disclosed_at": "2026-01-06",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "participant": 2
+      "lead": 3,
+      "participant": 4
     },
     "round_codes": [
+      "growth",
       "multi_round",
-      "series_b"
+      "series_a",
+      "series_b",
+      "series_c",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7b9b33ca95deff50",
+        "canonical_entity_id": "",
+        "name": "CScale"
+      },
+      {
+        "entity_id": "EN-be0e15a9c31220b3",
+        "canonical_entity_id": "",
+        "name": "Ethernovia, Inc."
+      },
+      {
+        "entity_id": "EN-68b5359cd1c9fe9d",
+        "canonical_entity_id": "",
+        "name": "GS Microelectronics U.S., Inc."
+      },
+      {
+        "entity_id": "EN-101e32680e4bd993",
+        "canonical_entity_id": "",
+        "name": "Kandou AI"
+      },
       {
         "entity_id": "EN-3c1ae4e6276005e7",
         "canonical_entity_id": "EN-3c1ae4e6276005e7",
@@ -88,11 +113,56 @@
         "entity_id": "FICO-upscale-ai",
         "canonical_entity_id": "",
         "name": "Upscale AI"
+      },
+      {
+        "entity_id": "EN-d2c4f1b5a5369864",
+        "canonical_entity_id": "",
+        "name": "Upscale, Inc."
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-2fc4429a337e46f2",
+        "activity_id": "IA-9d4c19ef4b95d128",
+        "funding_insight_id": "FI-07d1ab9787e1c9dd",
+        "event_ids": [
+          "EV-4c5dc2fc6d805b3f"
+        ],
+        "company_entity_id": "EN-7b9b33ca95deff50",
+        "company_canonical_entity_id": "",
+        "company_name": "CScale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$145 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 145000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.45 亿美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f84ad840508b39",
+            "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+            "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+            "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+            "quote": "Sutter Hill Ventures, which has backed CScale since its inception, continued its support alongside existing investor Maverick Silicon.",
+            "quote_hash": "b24f4febcc9397478bcc6d9a518ee03fd847623529708cf4c467126a6cc7cf44"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2214846bbd91e25c",
         "funding_insight_id": "FI-55464dd460014128",
         "event_ids": [
           "EV-236cbc2d64f0c455"
@@ -132,7 +202,7 @@
         ]
       },
       {
-        "activity_id": "IA-20c45b32d0f37d6b",
+        "activity_id": "IA-d6651901cf92ed53",
         "funding_insight_id": "FI-1f714b499dc9751a",
         "event_ids": [
           "EV-6e516b6e68def9cf"
@@ -170,9 +240,177 @@
             "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
           }
         ]
+      },
+      {
+        "activity_id": "IA-3cd082973e9f486e",
+        "funding_insight_id": "FI-b6b9407080965634",
+        "event_ids": [
+          "EV-74aab2334332882a"
+        ],
+        "company_entity_id": "EN-101e32680e4bd993",
+        "company_canonical_entity_id": "",
+        "company_name": "Kandou AI",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$225m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 225000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.25 亿美元"
+        },
+        "announced_at": "2026-03-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-733f644691b6d881",
+            "source_url": "https://kandou.com/news/2026-03-23-kandou-ai-secures-strategic-funding-to-redefine-ai-connectivity-and-break-memory-bottlenecks-in-ai/",
+            "source_title": "Kandou AI 获得战略融资，重新定义 AI 连接并突破 AI 内存瓶颈",
+            "source_content_hash": "70c8a7dd62b5682d77f04624743fbf22778457d36d5fa6d184e1f0688fcb296f",
+            "quote": "The oversubscribed Series-A round was led by Maverick Silicon with strategic participation from SoftBank Group Corp., Synopsys, Inc., Cadence Design Systems, Inc. and Alchip Technologies Limited",
+            "quote_hash": "cb526767b8b5f53676b6657a8bd43907b4163199623161491bcc086528f725f6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5c71b0f2d234a97d",
+        "funding_insight_id": "FI-efe78d5245c912b4",
+        "event_ids": [
+          "EV-a4b2d57251589ede"
+        ],
+        "company_entity_id": "EN-d2c4f1b5a5369864",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3c60f2ab7fcb8b84",
+            "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+            "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+            "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+            "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+            "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5d1fc7a0d36fb2e3",
+        "funding_insight_id": "FI-80eaca431f864c56",
+        "event_ids": [
+          "EV-b9f933fceca9085b"
+        ],
+        "company_entity_id": "EN-be0e15a9c31220b3",
+        "company_canonical_entity_id": "",
+        "company_name": "Ethernovia, Inc.",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "over $90 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 90000000,
+          "min_value": 90000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 9000 万美元"
+        },
+        "announced_at": "2026-01-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c98d10de3e945941",
+            "source_url": "https://www.ethernovia.com/news/ethernovia-raises-over-90-million-series-b-to-scale-leading-edge-autonomy-and-physical-ai-networking-chips/",
+            "source_title": "Ethernovia 完成超 9000 万美元 B 轮融资，以扩展前沿自动驾驶与物理 AI 网络芯片",
+            "source_content_hash": "74849062816b351f172366add37fc09278897170957f6bae2c18e491338463b5",
+            "quote": "announced the close of a Series B funding round over $90 million led by Maverick Silicon with participation from Socratic Partners, Conduit Capital and CDIB-TEN Capital",
+            "quote_hash": "79ca9010fb260bede6b4f64f868f374ac28150ce0d3e7b769a12853eb5889580"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-be5d6644fb267e04",
+        "funding_insight_id": "FI-502d209b9d966b29",
+        "event_ids": [
+          "EV-e17db6cc62017add"
+        ],
+        "company_entity_id": "EN-68b5359cd1c9fe9d",
+        "company_canonical_entity_id": "",
+        "company_name": "GS Microelectronics U.S., Inc.",
+        "round": "成长轮",
+        "round_code": "growth",
+        "round_original": "成长轮",
+        "amount_original": "$35 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 35000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3500 万美元"
+        },
+        "announced_at": "2026-01-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5f68e871f3f14521",
+            "source_url": "https://www.prnewswire.com/news-releases/gsme-secures-35m-series-b-funding-302653221.html",
+            "source_title": "GSME 获得 3500 万美元 B 轮融资",
+            "source_content_hash": "df2e916a07278814bcfad4d6631dc912216dd16f33e559dd32539f43cf5ff859",
+            "quote": "GS Microelectronics U.S., Inc. (GSME) today announced a $35 million Series B round led by Maverick Silicon",
+            "quote_hash": "aa5b106c0375f9fc30433bb0592b1fadeaf77babf1ba56fa5ad425fd3c76fcf0"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-98f84ad840508b39",
+        "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+        "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+        "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+        "quote": "Sutter Hill Ventures, which has backed CScale since its inception, continued its support alongside existing investor Maverick Silicon.",
+        "quote_hash": "b24f4febcc9397478bcc6d9a518ee03fd847623529708cf4c467126a6cc7cf44"
+      },
       {
         "source_id": "FISRC-7dcdc22c0b1702bf",
         "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
@@ -188,6 +426,38 @@
         "source_content_hash": "1d75cf39c1185f55",
         "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
         "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
+      },
+      {
+        "source_id": "FISRC-733f644691b6d881",
+        "source_url": "https://kandou.com/news/2026-03-23-kandou-ai-secures-strategic-funding-to-redefine-ai-connectivity-and-break-memory-bottlenecks-in-ai/",
+        "source_title": "Kandou AI 获得战略融资，重新定义 AI 连接并突破 AI 内存瓶颈",
+        "source_content_hash": "70c8a7dd62b5682d77f04624743fbf22778457d36d5fa6d184e1f0688fcb296f",
+        "quote": "The oversubscribed Series-A round was led by Maverick Silicon with strategic participation from SoftBank Group Corp., Synopsys, Inc., Cadence Design Systems, Inc. and Alchip Technologies Limited",
+        "quote_hash": "cb526767b8b5f53676b6657a8bd43907b4163199623161491bcc086528f725f6"
+      },
+      {
+        "source_id": "FISRC-3c60f2ab7fcb8b84",
+        "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+        "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+        "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+        "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+        "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+      },
+      {
+        "source_id": "FISRC-c98d10de3e945941",
+        "source_url": "https://www.ethernovia.com/news/ethernovia-raises-over-90-million-series-b-to-scale-leading-edge-autonomy-and-physical-ai-networking-chips/",
+        "source_title": "Ethernovia 完成超 9000 万美元 B 轮融资，以扩展前沿自动驾驶与物理 AI 网络芯片",
+        "source_content_hash": "74849062816b351f172366add37fc09278897170957f6bae2c18e491338463b5",
+        "quote": "announced the close of a Series B funding round over $90 million led by Maverick Silicon with participation from Socratic Partners, Conduit Capital and CDIB-TEN Capital",
+        "quote_hash": "79ca9010fb260bede6b4f64f868f374ac28150ce0d3e7b769a12853eb5889580"
+      },
+      {
+        "source_id": "FISRC-5f68e871f3f14521",
+        "source_url": "https://www.prnewswire.com/news-releases/gsme-secures-35m-series-b-funding-302653221.html",
+        "source_title": "GSME 获得 3500 万美元 B 轮融资",
+        "source_content_hash": "df2e916a07278814bcfad4d6631dc912216dd16f33e559dd32539f43cf5ff859",
+        "quote": "GS Microelectronics U.S., Inc. (GSME) today announced a $35 million Series B round led by Maverick Silicon",
+        "quote_hash": "aa5b106c0375f9fc30433bb0592b1fadeaf77babf1ba56fa5ad425fd3c76fcf0"
       }
     ],
     "public_profile": {
@@ -195,10 +465,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Maverick Silicon 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Maverick Silicon 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f84ad840508b39"
+        },
         {
           "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7dcdc22c0b1702bf"
@@ -210,6 +484,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-98f84ad840508b39",
+          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote": "Sutter Hill Ventures, which has backed CScale since its inception, continued its support alongside existing investor Maverick Silicon.",
+          "quote_hash": "b24f4febcc9397478bcc6d9a518ee03fd847623529708cf4c467126a6cc7cf44"
+        },
         {
           "source_id": "FISRC-7dcdc22c0b1702bf",
           "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",

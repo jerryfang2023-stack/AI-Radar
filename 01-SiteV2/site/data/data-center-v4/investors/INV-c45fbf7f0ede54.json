@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,23 +62,55 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-30",
-    "latest_disclosed_at": "2026-07-30",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-eb98fc105e930374",
+        "activity_id": "IA-4acad7c7eef0d5c0",
+        "funding_insight_id": "FI-f8b9774f42814cb1",
+        "event_ids": [
+          "EV-a72d111131f8de60"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "洽谈投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d28724a1e6a3c6d4",
+            "source_url": "https://www.21jingji.com/article/20260507/herald/be3cf711cdfe8b63a1bdf39c21879cc6.html",
+            "source_title": "估值450亿美元？大基金或主导DeepSeek首轮融资",
+            "source_content_hash": "f7517f964ff6198a",
+            "quote": "到了4月22日，又有消息称，腾讯和阿里正在洽谈投资DeepSeek，DeepSeek目前正寻求以超过200亿美元估值筹集资金。",
+            "quote_hash": "cc7a958b575be5676187fe0c13898c4115517e95309a77d0fa30dfd3867e9a03"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3e2749645f78bdcb",
         "funding_insight_id": "FI-53612bad1f698300",
         "event_ids": [
           "EV-25d8a47fbc3c0fbb"
@@ -86,23 +118,15 @@
         "company_entity_id": "EN-b5251b35f15bedc4",
         "company_canonical_entity_id": "EN-b5251b35f15bedc4",
         "company_name": "Moonshot AI",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "F轮",
-        "amount_original": "35亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 3500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "35 亿美元"
-        },
-        "announced_at": "2026-07-30",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "2026年前两个月连续三轮融资老股东持续加码",
         "role_code": "historical_or_ambiguous",
@@ -119,6 +143,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-d28724a1e6a3c6d4",
+        "source_url": "https://www.21jingji.com/article/20260507/herald/be3cf711cdfe8b63a1bdf39c21879cc6.html",
+        "source_title": "估值450亿美元？大基金或主导DeepSeek首轮融资",
+        "source_content_hash": "f7517f964ff6198a",
+        "quote": "到了4月22日，又有消息称，腾讯和阿里正在洽谈投资DeepSeek，DeepSeek目前正寻求以超过200亿美元估值筹集资金。",
+        "quote_hash": "cc7a958b575be5676187fe0c13898c4115517e95309a77d0fa30dfd3867e9a03"
+      },
       {
         "source_id": "FISRC-773362f4e07cd598",
         "source_url": "https://news.pedaily.cn/202607/566986.shtml",
@@ -181,6 +213,10 @@
         {
           "description": "投资界2026年7月报道，阿里、腾讯和五源资本等是月之暗面2026年初连续融资的老股东。报道没有说明阿里通过哪一实体投资，不能用作特定基金的投资或回报记录。",
           "source_id": "ali_moonshot"
+        },
+        {
+          "description": "融资来源记录：DeepSeek · 历史轮次未披露 · 洽谈投资。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d28724a1e6a3c6d4"
         },
         {
           "description": "融资来源记录：Moonshot AI · 历史轮次未披露 · 2026年前两个月连续三轮融资老股东持续加码。这是本库收录的披露案例，不代表完整投资组合。",
@@ -443,6 +479,14 @@
           "source_content_hash": "29156109f14c40df0a5fa2a22591522254be74a44215dbc4e13e2052f32833ae",
           "quote": "Requests should be directed to Investor Relations Department, investor@alibaba-inc.com.",
           "quote_hash": "dfaa376eb936b78fdb5d7476b9725c5552199af1b403be3849fb60f074e8095f"
+        },
+        {
+          "source_id": "FISRC-d28724a1e6a3c6d4",
+          "source_url": "https://www.21jingji.com/article/20260507/herald/be3cf711cdfe8b63a1bdf39c21879cc6.html",
+          "source_title": "估值450亿美元？大基金或主导DeepSeek首轮融资",
+          "source_content_hash": "f7517f964ff6198a",
+          "quote": "到了4月22日，又有消息称，腾讯和阿里正在洽谈投资DeepSeek，DeepSeek目前正寻求以超过200亿美元估值筹集资金。",
+          "quote_hash": "cc7a958b575be5676187fe0c13898c4115517e95309a77d0fa30dfd3867e9a03"
         },
         {
           "source_id": "FISRC-773362f4e07cd598",

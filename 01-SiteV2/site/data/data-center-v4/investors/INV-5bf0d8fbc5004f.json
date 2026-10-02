@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
@@ -70,9 +70,9 @@
     "china_market_activity_count": 2,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-02-05",
-    "latest_disclosed_at": "2026-09-09",
+    "latest_disclosed_at": "2026-04-10",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 2
     },
     "round_codes": [
@@ -88,48 +88,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-018e295ce4f3dc60",
-        "funding_insight_id": "FI-0e108e32ef8a5b27",
-        "event_ids": [
-          "EV-43c9b851bd2a46c7",
-          "EV-d0dd835f3abb3163"
-        ],
-        "company_entity_id": "EN-4d916dc8b25421d2",
-        "company_canonical_entity_id": "EN-4d916dc8b25421d2",
-        "company_name": "比特无限",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "数千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-09-09",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮及天使+轮投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-6aea6a18fe712b45",
-            "source_url": "https://m.pedaily.cn/news/566841",
-            "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
-            "source_content_hash": "d48aefe2d69963c9",
-            "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
-            "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-dba7616c528d4ebf",
+        "activity_id": "IA-ff9b01cf5ae3a62d",
         "funding_insight_id": "FI-7108544d47292865",
         "event_ids": [
           "EV-5575555340c04c5a"
@@ -169,10 +128,11 @@
         ]
       },
       {
-        "activity_id": "IA-39242b8c6f976a15",
+        "activity_id": "IA-814dc0510b96f5ad",
         "funding_insight_id": "FI-474a441598e62f93",
         "event_ids": [
           "EV-622ebdad1e1fad2d",
+          "EV-bf35f4d7b6193a47",
           "EV-535c2f4fb851332d"
         ],
         "company_entity_id": "EN-9b21c9bf3305c0d6",
@@ -200,25 +160,82 @@
         "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-4177e5ca07c921a5",
-            "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-            "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-            "source_content_hash": "22fd0b6b2709ea7b",
-            "quote": "原有股东 启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等 投资人加码跟投",
-            "quote_hash": "4d881e2d381f26fec2c7ab029dbb700555c10c98ea6d02f4540dc9ddde177ebe"
+            "source_id": "FISRC-474b45f658d5b3df",
+            "source_url": "https://mp.weixin.qq.com/s/YF__CZuyK691nOIP4KKITw",
+            "source_title": "生数科技完成超6亿元A+轮融资：以多模态大模型为底座，重构AI在数字和物理世界的生产力",
+            "source_content_hash": "5bbe0b56b7dcd1fc529bb4ce455ac5bbf779ead29465cc22a1ca235f1afb8110",
+            "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投。",
+            "quote_hash": "f5aa09b1b13519ceb5bbf4df446f817d5e6bfefcfc0e9fbc4bb07af410a3bf56"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d3f9394951017fa8",
+        "funding_insight_id": "FI-0e108e32ef8a5b27",
+        "event_ids": [
+          "EV-43c9b851bd2a46c7",
+          "EV-d0dd835f3abb3163"
+        ],
+        "company_entity_id": "EN-4d916dc8b25421d2",
+        "company_canonical_entity_id": "EN-4d916dc8b25421d2",
+        "company_name": "比特无限",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮及天使+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-6aea6a18fe712b45",
+            "source_url": "https://m.pedaily.cn/news/566841",
+            "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
+            "source_content_hash": "d48aefe2d69963c9",
+            "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
+            "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1d34cda330a3880a",
+        "funding_insight_id": "FI-4880b1e3fb7a4da4",
+        "event_ids": [
+          "EV-008220e3dc696cb5"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_name": "生数科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "原有股东持续追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b07965e9cd2c01b5",
+            "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+            "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+            "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+            "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+            "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
           }
         ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-6aea6a18fe712b45",
-        "source_url": "https://m.pedaily.cn/news/566841",
-        "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
-        "source_content_hash": "d48aefe2d69963c9",
-        "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
-        "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
-      },
       {
         "source_id": "FISRC-fd865802af815ab3",
         "source_url": "https://news.pedaily.cn/202604/562614.shtml",
@@ -228,12 +245,28 @@
         "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
       },
       {
-        "source_id": "FISRC-4177e5ca07c921a5",
-        "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-        "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-        "source_content_hash": "22fd0b6b2709ea7b",
-        "quote": "原有股东 启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等 投资人加码跟投",
-        "quote_hash": "4d881e2d381f26fec2c7ab029dbb700555c10c98ea6d02f4540dc9ddde177ebe"
+        "source_id": "FISRC-474b45f658d5b3df",
+        "source_url": "https://mp.weixin.qq.com/s/YF__CZuyK691nOIP4KKITw",
+        "source_title": "生数科技完成超6亿元A+轮融资：以多模态大模型为底座，重构AI在数字和物理世界的生产力",
+        "source_content_hash": "5bbe0b56b7dcd1fc529bb4ce455ac5bbf779ead29465cc22a1ca235f1afb8110",
+        "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投。",
+        "quote_hash": "f5aa09b1b13519ceb5bbf4df446f817d5e6bfefcfc0e9fbc4bb07af410a3bf56"
+      },
+      {
+        "source_id": "FISRC-6aea6a18fe712b45",
+        "source_url": "https://m.pedaily.cn/news/566841",
+        "source_title": "词元无限完成天使++轮融资，卡位企业级AI Agent基础设施赛道|投资界",
+        "source_content_hash": "d48aefe2d69963c9",
+        "quote": "比特无限 上海比特无限人工智能科技有限公司 融资时间 2026-07-24 当前轮次 天使轮 融资金额 未披露 AI 涉及机构： 卓源亚洲 容亿投资 普华资本 壹德资本",
+        "quote_hash": "b8f53700bde821a96ad3d0463b9893d04c2982bb8e49cf22b6d5e9808ad5fc43"
+      },
+      {
+        "source_id": "FISRC-b07965e9cd2c01b5",
+        "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+        "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+        "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+        "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+        "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
       }
     ],
     "public_profile": {
@@ -251,7 +284,7 @@
         },
         {
           "description": "融资来源记录：生数科技 · A+轮 · 2026-02-05 · 本轮参投 · 6亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-4177e5ca07c921a5"
+          "source_id": "FISRC-474b45f658d5b3df"
         },
         {
           "description": "融资来源记录：比特无限 · 历史轮次未披露 · 天使轮及天使+轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -269,12 +302,12 @@
           "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
         },
         {
-          "source_id": "FISRC-4177e5ca07c921a5",
-          "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-          "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-          "source_content_hash": "22fd0b6b2709ea7b",
-          "quote": "原有股东 启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等 投资人加码跟投",
-          "quote_hash": "4d881e2d381f26fec2c7ab029dbb700555c10c98ea6d02f4540dc9ddde177ebe"
+          "source_id": "FISRC-474b45f658d5b3df",
+          "source_url": "https://mp.weixin.qq.com/s/YF__CZuyK691nOIP4KKITw",
+          "source_title": "生数科技完成超6亿元A+轮融资：以多模态大模型为底座，重构AI在数字和物理世界的生产力",
+          "source_content_hash": "5bbe0b56b7dcd1fc529bb4ce455ac5bbf779ead29465cc22a1ca235f1afb8110",
+          "quote": "原有股东启明创投、北京市人工智能产业投资基金、卓源亚洲、建发新兴投资、淮海投资等投资人加码跟投。",
+          "quote_hash": "f5aa09b1b13519ceb5bbf4df446f817d5e6bfefcfc0e9fbc4bb07af410a3bf56"
         },
         {
           "source_id": "FISRC-6aea6a18fe712b45",

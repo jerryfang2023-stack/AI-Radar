@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,16 +63,19 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-143532a48c11c3b1",
       "EV-6e9a64dce695ae7e"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-09-01",
-    "lastSeen": "2026-09-01",
+    "firstSeen": "2026-08-25",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-143532a48c11c3b1"
+      ],
       "deployments": [],
       "partnerships": [],
       "productsServices": [
@@ -83,6 +86,21 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-143532a48c11c3b1",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Accel 投资的 Keenable 正在为 AI 智能体索引网络",
+        "displayTags": [],
+        "entityIds": [
+          "EN-5326805dc305fa71"
+        ]
+      },
       {
         "id": "EV-6e9a64dce695ae7e",
         "dataDate": "2026-09-01",

@@ -5,14 +5,14 @@
     <view class="funding-metrics featured-panel">
       <view class="funding-metrics-head">
         <text>融资精选</text>
-        <text>{{featuredLabel}} {{featuredCards.length ? (featuredCurrent + 1) + '/' + featuredCards.length : ''}}</text>
+        <text>{{featuredCards.length ? featuredCards[featuredCurrent].dateShort : ''}} {{featuredCards.length ? (featuredCurrent + 1) + '/' + featuredCards.length : ''}}</text>
       </view>
       <swiper wx:if="{{featuredCards.length}}" class="featured-swiper" current="{{featuredCurrent}}" bindchange="changeFeatured" indicator-dots="{{featuredCards.length > 1}}" indicator-color="#62778a" indicator-active-color="#e2c57f">
         <swiper-item wx:for="{{featuredCards}}" wx:key="id">
           <view class="featured-card" data-id="{{item.id}}" bindtap="openFeatured" role="button" aria-label="查看{{item.company}}融资详情">
             <view class="featured-identity"><text class="featured-company">{{item.company}}</text><text wx:if="{{item.product}}" class="featured-product">{{item.product}}</text><text class="featured-arrow">›</text></view>
             <view class="featured-facts"><text class="featured-amount">{{item.amount}}</text><text class="featured-round">{{item.round}}</text><text class="featured-sector">{{item.sector}}</text></view>
-            <view wx:if="{{item.observation}}" class="featured-observation"><text class="featured-label">观察 </text>{{item.observation}}</view>
+            <view wx:if="{{item.observation}}" class="featured-observation"><text class="featured-label">观察：</text>{{item.observation}}</view>
           </view>
         </swiper-item>
       </swiper>

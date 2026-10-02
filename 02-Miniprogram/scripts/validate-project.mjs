@@ -9,6 +9,10 @@ const mini = path.join(root, "miniprogram");
 const app = JSON.parse(fs.readFileSync(path.join(mini, "app.json"), "utf8"));
 const project = JSON.parse(fs.readFileSync(path.join(root, "project.config.json"), "utf8"));
 const failures = [];
+const releaseVersion = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8")).version;
+if (!/^\d+\.[0-9]\.[0-9]$/.test(releaseVersion)) failures.push("release version must roll over at 9 (1.1.9 -> 1.2.0)");
+const analyticsSource = fs.readFileSync(path.join(mini, "utils/analytics.js"), "utf8");
+if (!analyticsSource.includes(`APP_VERSION = "${releaseVersion}"`)) failures.push("analytics APP_VERSION must match package.json");
 const require = createRequire(import.meta.url);
 
 function readJson(file) {

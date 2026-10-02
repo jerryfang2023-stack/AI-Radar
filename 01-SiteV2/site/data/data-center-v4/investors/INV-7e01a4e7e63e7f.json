@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,35 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-09-08",
-    "latest_disclosed_at": "2026-09-08",
+    "first_disclosed_at": "2026-08-12",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "lead": 1
+      "co_lead": 3
     },
     "round_codes": [
+      "series_a",
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-0ab04bcfc3de286b",
+        "canonical_entity_id": "",
+        "name": "Euclyd"
+      },
+      {
+        "entity_id": "EN-2f9cb7cda5222087",
+        "canonical_entity_id": "",
+        "name": "Lovable"
+      },
       {
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
@@ -86,7 +98,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-d6916fb712ff9678",
+        "activity_id": "IA-7c61a1df53e48471",
+        "funding_insight_id": "FI-1d043b12be806460",
+        "event_ids": [
+          "EV-375d04f7cc9746c6"
+        ],
+        "company_entity_id": "FICO-0ab04bcfc3de286b",
+        "company_canonical_entity_id": "",
+        "company_name": "Euclyd",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "2亿欧元",
+        "amount_normalized": {
+          "currency": "EUR",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿欧元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6cbfc1ea08a48a66",
+            "source_url": "https://www.cls.cn/detail/2484090",
+            "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
+            "source_content_hash": "9676197117c46240",
+            "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+            "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d0681f323f47ec3b",
         "funding_insight_id": "FI-e0e22d70a91e704e",
         "event_ids": [
           "EV-dccfca59b3e58638",
@@ -114,8 +166,8 @@
         "china_market_match": false,
         "disclosure_status": "disclosed",
         "scope": "current_round",
-        "role": "本轮领投",
-        "role_code": "lead",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
         "evidence": [
           {
             "source_id": "FISRC-056e24fe41ba3e93",
@@ -124,11 +176,67 @@
             "source_content_hash": "dec4a7c86fa7da81",
             "quote": "Mistral AI 本次融资的领投方包括三星电子、Scaleup Europe Fund、 PSG Equity。",
             "quote_hash": "f7f01ddd4c1ecfe0776c2ec8e56863f5db35a725427b3f51afb24c2dfff1b246"
+          },
+          {
+            "source_id": "FISRC-4d11ed62a144a3f4",
+            "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+            "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+            "source_content_hash": "714c413ab36c1848",
+            "quote": "Samsung Electronics led the round, joined by co-leads Scaleup Europe Fund, managed by EQT, and existing investor PSG Equity.",
+            "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-149942fc66537fc2",
+        "funding_insight_id": "FI-e8d4a2ba10a99308",
+        "event_ids": [
+          "EV-3f9d420719641eda"
+        ],
+        "company_entity_id": "EN-2f9cb7cda5222087",
+        "company_canonical_entity_id": "",
+        "company_name": "Lovable",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$400 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-08-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf82db3dd7ead1a",
+            "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+            "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+            "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+            "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+            "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
           }
         ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-6cbfc1ea08a48a66",
+        "source_url": "https://www.cls.cn/detail/2484090",
+        "source_title": "三星押注GPU替代方案赛道：荷兰初创公司获2亿欧元融资",
+        "source_content_hash": "9676197117c46240",
+        "quote": "三星、Somerset Capital Partners、EQT旗下Scaleup Europe Fund以及Innovation Industries共同领投",
+        "quote_hash": "05040103b8eb124e57e50a7a08bd5189f9de6a169757e0c2708bfb3ebf04d7f2"
+      },
       {
         "source_id": "FISRC-056e24fe41ba3e93",
         "source_url": "https://www.ithome.com/0/999/657.htm",
@@ -136,6 +244,22 @@
         "source_content_hash": "dec4a7c86fa7da81",
         "quote": "Mistral AI 本次融资的领投方包括三星电子、Scaleup Europe Fund、 PSG Equity。",
         "quote_hash": "f7f01ddd4c1ecfe0776c2ec8e56863f5db35a725427b3f51afb24c2dfff1b246"
+      },
+      {
+        "source_id": "FISRC-4d11ed62a144a3f4",
+        "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
+        "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
+        "source_content_hash": "714c413ab36c1848",
+        "quote": "Samsung Electronics led the round, joined by co-leads Scaleup Europe Fund, managed by EQT, and existing investor PSG Equity.",
+        "quote_hash": "bf15e9f88ac00a88606570b08a3efcc424ae66c4b81607e97906e6e2d8899846"
+      },
+      {
+        "source_id": "FISRC-dcf82db3dd7ead1a",
+        "source_url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m",
+        "source_title": "Lovable 确认新估值 133 亿美元，再融资 4 亿美元",
+        "source_content_hash": "22f6243443ce4342163a50f30a4a2ca9cc0d1333d80377f3a9be34218e8ac0b8",
+        "quote": "Lovable said on Wednesday that it has raised $400 million in a Series C round led by Menlo Ventures and the Scaleup Europe Fund",
+        "quote_hash": "2f7031cc609f978fb7e7a107ac2657f17f48a0eea2a4b5544815eecc1cc7baa6"
       }
     ],
     "public_profile": {
@@ -326,6 +450,154 @@
           "quote_hash": "0f81f96f6e40af4cca58e44f5ed00e0a6adb578ecdb7c50412a8b0cf441b8fe1"
         }
       ]
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Scaleup Europe Fund 是由 EQT 管理、并获 European Commission 和机构投资者支持的欧洲成长及后期科技基金。其目标规模为 50 亿欧元，专注于从 Series B 到 pre-IPO 阶段的战略技术。2026 年 9 月，该基金与 Samsung Electronics 领投、联合领投了 Mistral AI 的 30 亿欧元 Series D，并联合领投了 EUCLYD 的 2 亿欧元以上 Series A。两家公司均未披露该基金的单独出资额。",
+          "source_hash": "0d82ebd01ba06284b3794f68beb91b83d209720e430de073fcb9c9cc036281ee",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:28.584Z",
+          "status": "translated"
+        },
+        "public_profile.facts[0].label": {
+          "text": "基金管理人",
+          "source_hash": "f8625e9e0db5b7c28e4c6097525b4e602177298ee810b959ce47a410d5e6f53d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[1].label": {
+          "text": "目标基金规模",
+          "source_hash": "5370e6040e5e6740cb676bad919cc3ee956fb16f01aea7dcdcf624a30b876984",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[2].label": {
+          "text": "欧盟委员会出资",
+          "source_hash": "25b329bde373d8895aa29a597c6c935ed52d34841436f5aaf14a5f1477630a96",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[3].label": {
+          "text": "投资阶段与规模",
+          "source_hash": "86f8953842313fdced6aa9fbefecd923ca0b562bec169b5a054cee1d9b7bd335",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[4].label": {
+          "text": "战略技术重点",
+          "source_hash": "49cc3b480016a0b3ca599ad906f87fb2e411bc556be18e2538b49cb821e30d21",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[5].label": {
+          "text": "EQT 点名的创始投资者",
+          "source_hash": "ae1d6ed1ab7eadcb60b9be1ff55e333005c86e0f4f5eea7e3aa8c8ba3bbf8105",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.facts[6].label": {
+          "text": "投资治理",
+          "source_hash": "e0b8f695e28f06da53b669b622952c44ed51491f381668a395bc330944a835d3",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:50.429Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[0].description": {
+          "text": "Mistral AI 宣布完成 30 亿欧元 Series D，由 Samsung Electronics 领投，Scaleup Europe Fund 为联合领投方之一；该基金的单独出资额未披露。",
+          "source_hash": "536a896ee8f704c607e1504d8fdb4e3886eb0939c75de02f0959d213473c1db2",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:28.584Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[1].description": {
+          "text": "该基金及其管理人EQT在欧洲创新理事会峰会上公开亮相。",
+          "source_hash": "8c0c225eef83491d95a2c0df176f54af65569334310484daf05061ea20796c1d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[2].description": {
+          "text": "EUCLYD宣布了由Scaleup Europe Fund联合领投的超过2亿欧元A轮融资，并确认该基金由EQT管理。",
+          "source_hash": "dc11bb782aba9ad71d8fab1fb0eaad298df31404b31e49f4a4def8b6aea0d8d1",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "EUCLYD A轮融资（2026年9月）：该公司宣布总融资额超过2亿欧元，由Samsung、Somerset Capital Partners、Scaleup Europe Fund和Innovation Industries联合领投。该基金的单独出资额未披露。",
+          "source_hash": "f6f8b03d1e48f4e71d480ad978b6322dead256e125beaf7b42a2818dac8abbe7",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Euclyd的主要公告独立确认Scaleup Europe Fund为同一公司轮次中由EQT管理的联合领投方；披露的总额并非该基金的单独投资金额。",
+          "source_hash": "d8ce8e956ef98fdad8cd82281ae952383422ad34ff48138ab05cda08ec97dab6",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "Mistral AI Series D（2026 年 9 月）：该公司宣布完成 30 亿欧元融资，由 Samsung Electronics 领投，Scaleup Europe Fund 为联合领投方。30 亿欧元为公司整体轮次总额；该基金的单独出资额未披露。",
+          "source_hash": "34823d034e338c6f7a1156d86100dfe46ae1f6d1c48aec448799343be247a3fa",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:28.584Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[3].description": {
+          "text": "IT之家对 Mistral AI 2026 年 9 月 Series D 的报道提及公司整体 30 亿欧元轮次；Mistral 的主要公告澄清了领投/联合领投角色。该基金的单独出资额未披露。",
+          "source_hash": "4688326239bebb4a458d7b6825d34c7251f12062e1aa1b79131ae0648f3abd63",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:28.584Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[4].description": {
+          "text": "TechCrunch 的报道独立确认 Scaleup Europe Fund 为 Mistral AI 公司整体 30 亿欧元 Series D 的联合领投方；该基金的单独出资额未披露。",
+          "source_hash": "10cb82864a03ceed23d67fcf5d8b05c43333ca224aaa0691edf9c047b517e06f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:28.585Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[0].label": {
+          "text": "官方基金网站",
+          "source_hash": "a29706ef96b53f8a95856e009f361a06eb279405bd13325facba09f2b7345ce0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        },
+        "public_profile.contacts[1].label": {
+          "text": "欧盟委员会基金信息",
+          "source_hash": "fc3c2fe24555d5de22e38e1156d065d0c46708b89693005867b07ce76b9415d9",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-28T00:54:52.936Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

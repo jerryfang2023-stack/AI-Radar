@@ -19,13 +19,14 @@ function readCommunityPage(page, action, clearOnError) {
           page.setData({ loaded: true, error: "" });
           return;
         }
-        error = new Error("阅读权限已到期，请前往会员中心");
+        error = Object.assign(new Error("阅读权限已到期，请前往会员中心"), {accessState:"expired"});
       } catch (refreshError) { error = refreshError; }
     }
     if (clearOnError) {
       clearOnError(error);
       page.setData({ loaded: false });
     }
+    if (error.accessState || error.statusCode === 401) page.setData({communityAccessBlocked:true,lockReason:require("./metered-access.js").contentLockReason(error)});
     page.setData({ error: error.message });
   }).finally(() => {
     clearTimeout(timer);

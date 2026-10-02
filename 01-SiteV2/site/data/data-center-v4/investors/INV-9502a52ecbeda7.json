@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-26",
-    "latest_disclosed_at": "2026-08-26",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-ea06a49eb115d4a4",
+        "activity_id": "IA-79f1ac9dfa83f6fe",
         "funding_insight_id": "FI-9e3ed4fa47d92efa",
         "event_ids": [
           "EV-140ecf4fabe544ba"
@@ -86,23 +86,15 @@
         "company_entity_id": "EN-a31f26263a2fe821",
         "company_canonical_entity_id": "",
         "company_name": "Gatik",
-        "round": "D轮",
-        "round_code": "series_d",
-        "round_original": "D轮",
-        "amount_original": "$200M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 200000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "2 亿美元"
-        },
-        "announced_at": "2026-08-26",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "参投C轮",
         "role_code": "historical_or_ambiguous",
@@ -372,6 +364,50 @@
         }
       ],
       "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.milestones[0].description": {
+          "text": "The Goodyear Tire & Rubber Company 宣布设立 Goodyear Ventures，初始目标为未来十年向未来出行解决方案投入 1 亿美元。该数值为公告中的计划目标，不能视作当前 AUM。",
+          "source_hash": "c4fafd2cc5ead973021af44670e7af6af4bae3a95c9a9706f6db25d231be75ea",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.milestones[2].description": {
+          "text": "Goodyear 宣布将 Nova Labs 纳入组合，并称 Goodyear Ventures 参与该公司的 Series D 融资。公告没有披露机构具体出资额。",
+          "source_hash": "ebc995d610d8c6a8710e4807687e1ad58cb80d2471f2b72071c04f4aac403865",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "母公司公告称 Goodyear Ventures 参与 Nova Labs 的 Series D，并将其加入组合；未披露机构的出资额或基金回报。",
+          "source_hash": "036dca5a29f8b1ad23d611c8545f2a8725eb66ad37ee7d82766af3a31eb0d51b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[2].description": {
+          "text": "当前官网组合页列有 AmpUp、Autofleet、Gatik、Helm.ai、Nova Labs、Starship Technologies 等案例。该清单属于机构披露的组合展示，不表示已退出或产生特定回报。",
+          "source_hash": "2447fde9d876ce62cecc0f63fb5d5b9ef2e04ba1b9bdb7a7ce5eb64c1af4424a",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[3].description": {
+          "text": "融资库关联的一篇二手来源将 Goodyear Ventures 列入 Gatik 的 $85M Series C 投资方名单；$85M 是 Gatik 的该轮融资总额，不是 Goodyear Ventures 的出资额。该来源与本库将历史参投关联到 Gatik 后续 $200M D 轮记录，也不能证明 Goodyear 参与了 D 轮。Goodyear 自身官方公告另确认其参与 Gatik Series B。",
+          "source_hash": "2f7838d769a74c6de88f6b22ed8a062f62ed41c29a0b566762fbd981ba5cf23b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

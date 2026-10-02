@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,28 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-10",
-    "latest_disclosed_at": "2026-06-10",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-0f30fb5c3ecf590d",
+        "canonical_entity_id": "",
+        "name": "Artificial Intelligence Underwriting Company (AIUC)"
+      },
       {
         "entity_id": "EN-b314f58f5f506fd2",
         "canonical_entity_id": "",
@@ -86,7 +91,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-481f0e27ee4feba0",
+        "activity_id": "IA-75e167bf72dc9b39",
+        "funding_insight_id": "FI-dc65b78217aadd5b",
+        "event_ids": [
+          "EV-048612d1bcbd7a96"
+        ],
+        "company_entity_id": "FICO-0f30fb5c3ecf590d",
+        "company_canonical_entity_id": "",
+        "company_name": "Artificial Intelligence Underwriting Company (AIUC)",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-926b8b12b411de6f",
+            "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
+            "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
+            "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
+            "quote": "AIUC announced a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
+            "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fd9fe2f4e7f4ef6b",
         "funding_insight_id": "FI-da21481e9629e578",
         "event_ids": [
           "EV-b1138bccf5ccd86c",
@@ -129,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-926b8b12b411de6f",
+        "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
+        "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
+        "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
+        "quote": "AIUC announced a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
+        "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
+      },
+      {
         "source_id": "FISRC-e9c3e7b8cb15af82",
         "source_url": "https://www.tipranks.com/news/private-companies/poetic-secures-50-million-series-a-to-scale-deterministic-ai-for-complex-enterprise-workflows",
         "source_title": "",
@@ -142,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "First Harmonic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "First Harmonic 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Artificial Intelligence Underwriting Company (AIUC) · A轮 · 2026-09-15 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926b8b12b411de6f"
+        },
         {
           "description": "融资来源记录：Poetic · A轮 · 2026-06-10 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e9c3e7b8cb15af82"
@@ -153,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-926b8b12b411de6f",
+          "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
+          "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
+          "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
+          "quote": "AIUC announced a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
+          "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
+        },
         {
           "source_id": "FISRC-e9c3e7b8cb15af82",
           "source_url": "https://www.tipranks.com/news/private-companies/poetic-secures-50-million-series-a-to-scale-deterministic-ai-for-complex-enterprise-workflows",
@@ -163,6 +228,18 @@
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "融资来源记录：Artificial Intelligence Underwriting Company (AIUC) · A轮 · 2026-09-15 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_hash": "7c513a7c49873c9636e5458a00104acd950b283323915fcc71769a8d69537e04",
+          "provider": "manual_review",
+          "model": "Codex",
+          "translated_at": "2026-10-01T19:54:15.224Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

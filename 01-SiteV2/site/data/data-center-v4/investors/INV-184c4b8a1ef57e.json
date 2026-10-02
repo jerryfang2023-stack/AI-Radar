@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,23 +62,55 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-02",
-    "latest_disclosed_at": "2026-02-02",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-35105cc7b2a44a30",
+        "activity_id": "IA-72311b13fc6a2b2d",
+        "funding_insight_id": "FI-cf2d1d1fe378076e",
+        "event_ids": [
+          "EV-13796d1f3cea3221"
+        ],
+        "company_entity_id": "EN-4272dd59e5f45d43",
+        "company_canonical_entity_id": "",
+        "company_name": "秋水半导体",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮及天使+轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d5068f248b055320",
+            "source_url": "https://news.pedaily.cn/202411/542803.shtml",
+            "source_title": "秋水半导体获数千万元天使轮及天使+轮融资，聚焦Micro-LED显示技术",
+            "source_content_hash": "89c6a431e2b4400b",
+            "quote": "近日已连续完成了数千万元人民币的天使轮及天使+轮融资，由英诺天使基金领投，力合资本、汕韩光层和数字光芯跟投",
+            "quote_hash": "a8f7ae303c0149216d3dd8438e6d7c796cfb9264c008e2b86a4fec91089ec06e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4910379b17bfa7f3",
         "funding_insight_id": "FI-afd3b8c3d49ef1af",
         "event_ids": [
           "EV-3c408fe984c73089"
@@ -86,23 +118,15 @@
         "company_entity_id": "EN-a3b8fbb2200a105a",
         "company_canonical_entity_id": "EN-a3b8fbb2200a105a",
         "company_name": "卓世科技",
-        "round": "Pre-IPO",
-        "round_code": "pre_ipo",
-        "round_original": "Pre-IPO",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-02-02",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "历史轮次投资方",
         "role_code": "historical_or_ambiguous",
@@ -119,6 +143,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-d5068f248b055320",
+        "source_url": "https://news.pedaily.cn/202411/542803.shtml",
+        "source_title": "秋水半导体获数千万元天使轮及天使+轮融资，聚焦Micro-LED显示技术",
+        "source_content_hash": "89c6a431e2b4400b",
+        "quote": "近日已连续完成了数千万元人民币的天使轮及天使+轮融资，由英诺天使基金领投，力合资本、汕韩光层和数字光芯跟投",
+        "quote_hash": "a8f7ae303c0149216d3dd8438e6d7c796cfb9264c008e2b86a4fec91089ec06e"
+      },
       {
         "source_id": "FISRC-0ef31ab978027876",
         "source_url": "https://www.maas.com.cn/news/830.html",
@@ -138,12 +170,24 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：秋水半导体 · 历史轮次未披露 · 天使轮及天使+轮参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d5068f248b055320"
+        },
+        {
           "description": "融资来源记录：卓世科技 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0ef31ab978027876"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-d5068f248b055320",
+          "source_url": "https://news.pedaily.cn/202411/542803.shtml",
+          "source_title": "秋水半导体获数千万元天使轮及天使+轮融资，聚焦Micro-LED显示技术",
+          "source_content_hash": "89c6a431e2b4400b",
+          "quote": "近日已连续完成了数千万元人民币的天使轮及天使+轮融资，由英诺天使基金领投，力合资本、汕韩光层和数字光芯跟投",
+          "quote_hash": "a8f7ae303c0149216d3dd8438e6d7c796cfb9264c008e2b86a4fec91089ec06e"
+        },
         {
           "source_id": "FISRC-0ef31ab978027876",
           "source_url": "https://www.maas.com.cn/news/830.html",

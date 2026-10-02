@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,14 +72,16 @@
     "first_disclosed_at": "2025-03-03",
     "latest_disclosed_at": "2026-08-19",
     "role_counts": {
-      "lead": 2,
-      "participant": 3
+      "lead": 3,
+      "participant": 4
     },
     "round_codes": [
       "multi_round",
+      "series_b",
       "series_c",
       "series_d",
       "series_e",
+      "series_h",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -92,11 +94,16 @@
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-3b335699234f8e07",
+        "canonical_entity_id": "",
+        "name": "MatX"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-406e5b08df335375",
+        "activity_id": "IA-aae0bffa49acbd5f",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
         "event_ids": [
           "EV-19dd4c3a5dd5a94b",
@@ -137,7 +144,7 @@
         ]
       },
       {
-        "activity_id": "IA-0cc14fc6846c85d8",
+        "activity_id": "IA-bda5839031a6f1d0",
         "funding_insight_id": "FI-1590f6795e68ef12",
         "event_ids": [
           "EV-da1655ecfaf35feb"
@@ -177,7 +184,7 @@
         ]
       },
       {
-        "activity_id": "IA-68e082b91b112bd4",
+        "activity_id": "IA-6be41be7fd0e1810",
         "funding_insight_id": "FI-d24e79349c1e9713",
         "event_ids": [
           "EV-040fc355bc12a750",
@@ -218,7 +225,7 @@
         ]
       },
       {
-        "activity_id": "IA-008d978657304f2d",
+        "activity_id": "IA-a622b904b1a8cf5a",
         "funding_insight_id": "FI-5153381171755c70",
         "event_ids": [
           "EV-ad75efcb12a07793"
@@ -258,7 +265,95 @@
         ]
       },
       {
-        "activity_id": "IA-685d9cfde4055191",
+        "activity_id": "IA-e2161c510f3fe871",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+            "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cbb5c1cc1e824b75",
+        "funding_insight_id": "FI-06024b9ac7fd11f2",
+        "event_ids": [
+          "EV-52a5ebe8fdad8d3b"
+        ],
+        "company_entity_id": "EN-3b335699234f8e07",
+        "company_canonical_entity_id": "",
+        "company_name": "MatX",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$500M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c6e81d3e611e6fe3",
+            "source_url": "https://matx.com/research/series_b",
+            "source_title": "MatX One 与我们的 B 轮融资",
+            "source_content_hash": "2cff7bb3dd7cdd322441afbee191b44f945f92beebfc451f70a4eb2aa5e138c6",
+            "quote": "The round was led by Jane Street, one of the most tech-savvy Wall Street firms, and Situational Awareness LP",
+            "quote_hash": "592e06d9fc52b637048936a718790f7344ad553a85c76e465ca1845d52744b0d"
+          },
+          {
+            "source_id": "FISRC-e80cfbcccb0ffdce",
+            "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+            "source_title": "Nvidia challenger AI chip startup MatX raised $500M",
+            "source_content_hash": "296df8014db458cc",
+            "quote": "has raised a $500 million Series B led by Jane Street and Situational Awareness",
+            "quote_hash": "d0701760d0c84d3cfc6ca18c347e034900a143a8de5ed0604f4d20784f99c3da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ec046e23a48f937c",
         "funding_insight_id": "FI-6601d010adc14dd0",
         "event_ids": [
           "EV-78a11d309c3d4e97"
@@ -330,6 +425,30 @@
         "source_content_hash": "ae0a2fdbd54bc340",
         "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
         "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
+      },
+      {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+        "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+      },
+      {
+        "source_id": "FISRC-c6e81d3e611e6fe3",
+        "source_url": "https://matx.com/research/series_b",
+        "source_title": "MatX One 与我们的 B 轮融资",
+        "source_content_hash": "2cff7bb3dd7cdd322441afbee191b44f945f92beebfc451f70a4eb2aa5e138c6",
+        "quote": "The round was led by Jane Street, one of the most tech-savvy Wall Street firms, and Situational Awareness LP",
+        "quote_hash": "592e06d9fc52b637048936a718790f7344ad553a85c76e465ca1845d52744b0d"
+      },
+      {
+        "source_id": "FISRC-e80cfbcccb0ffdce",
+        "source_url": "https://techcrunch.com/2026/02/24/nvidia-challenger-ai-chip-startup-matx-raised-500m/",
+        "source_title": "Nvidia challenger AI chip startup MatX raised $500M",
+        "source_content_hash": "296df8014db458cc",
+        "quote": "has raised a $500 million Series B led by Jane Street and Situational Awareness",
+        "quote_hash": "d0701760d0c84d3cfc6ca18c347e034900a143a8de5ed0604f4d20784f99c3da"
       },
       {
         "source_id": "FISRC-52917ea3c077fbf0",

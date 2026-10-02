@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,84 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-26",
-    "latest_disclosed_at": "2026-05-26",
+    "first_disclosed_at": "2026-01-26",
+    "latest_disclosed_at": "2026-08-23",
     "role_counts": {
-      "participant": 1
+      "participant": 3
     },
     "round_codes": [
+      "seed",
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-96c842ee0d60fa41",
+        "canonical_entity_id": "",
+        "name": "Inherent"
+      },
+      {
         "entity_id": "EN-7f871cbf905f6e0c",
         "canonical_entity_id": "EN-7f871cbf905f6e0c",
         "name": "OpenRouter"
+      },
+      {
+        "entity_id": "EN-586e52112859378f",
+        "canonical_entity_id": "",
+        "name": "Ricursive Intelligence"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-0d64ccc9fbf2ff06",
+        "activity_id": "IA-177d9595c6b17240",
+        "funding_insight_id": "FI-b17b7b5dbec12f71",
+        "event_ids": [
+          "EV-6a5a3f316200d1e3"
+        ],
+        "company_entity_id": "EN-96c842ee0d60fa41",
+        "company_canonical_entity_id": "",
+        "company_name": "Inherent",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-08-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed8df2c3d21fb938",
+            "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
+            "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
+            "source_content_hash": "d71416937629ad73",
+            "quote": "with participation from investors including NVentures (NVIDIA's venture capital arm), Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures",
+            "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-12e684da0cd66000",
         "funding_insight_id": "FI-09809d62deea4164",
         "event_ids": [
           "EV-0e84a2f49d765ce3"
@@ -124,9 +176,57 @@
             "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
           }
         ]
+      },
+      {
+        "activity_id": "IA-ceed610de4bd312d",
+        "funding_insight_id": "FI-30d30c4d482b3f6f",
+        "event_ids": [
+          "EV-ee9a4433b4e7715e"
+        ],
+        "company_entity_id": "EN-586e52112859378f",
+        "company_canonical_entity_id": "",
+        "company_name": "Ricursive Intelligence",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7faa441242e94444",
+            "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+            "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+            "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+            "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+            "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-ed8df2c3d21fb938",
+        "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
+        "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
+        "source_content_hash": "d71416937629ad73",
+        "quote": "with participation from investors including NVentures (NVIDIA's venture capital arm), Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures",
+        "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
+      },
       {
         "source_id": "FISRC-d1b42068c59f51d1",
         "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
@@ -134,6 +234,14 @@
         "source_content_hash": "c1afd6dfb4036688",
         "quote": "The round also drew checks from NVentures (NVIDIA's venture arm)",
         "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
+      },
+      {
+        "source_id": "FISRC-7faa441242e94444",
+        "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+        "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+        "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+        "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+        "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
       }
     ],
     "public_profile": {
@@ -154,8 +262,16 @@
           "source_id": "PFSRC-INV-30e118440f3917-1"
         },
         {
+          "description": "融资来源记录：Inherent · 种子轮 · 2026-08-23 · 本轮参投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ed8df2c3d21fb938"
+        },
+        {
           "description": "融资来源记录：OpenRouter · B轮 · 2026-05-26 · 本轮参投 · $113 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d1b42068c59f51d1"
+        },
+        {
+          "description": "融资来源记录：Ricursive Intelligence · A轮 · 2026-01-26 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7faa441242e94444"
         }
       ],
       "contacts": [],
@@ -177,12 +293,28 @@
           "quote_hash": "4a711eec508bb832b92f9228955386f9090bb96653abe1b71162de93a774aea1"
         },
         {
+          "source_id": "FISRC-ed8df2c3d21fb938",
+          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
+          "source_title": "Wilson Sonsini Advises Inherent on $50 Million Seed Round as Company Emerges from Stealth",
+          "source_content_hash": "d71416937629ad73",
+          "quote": "with participation from investors including NVentures (NVIDIA's venture capital arm), Ex/Ante, Metaplanet, Macroscopic Ventures, and Mythos Ventures",
+          "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
+        },
+        {
           "source_id": "FISRC-d1b42068c59f51d1",
           "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
           "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
           "source_content_hash": "c1afd6dfb4036688",
           "quote": "The round also drew checks from NVentures (NVIDIA's venture arm)",
           "quote_hash": "9f53ecc6b715a0747835f390c12bc7e78094151e938fde7f19e4681afa1b5248"
+        },
+        {
+          "source_id": "FISRC-7faa441242e94444",
+          "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+          "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+          "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+          "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+          "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
         }
       ],
       "last_verified_at": "2026-10-02"

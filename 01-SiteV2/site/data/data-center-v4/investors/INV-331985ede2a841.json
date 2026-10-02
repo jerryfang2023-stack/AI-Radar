@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ce8f3ef782911374",
+        "activity_id": "IA-71f3cf75fe85d9f0",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
           "EV-3b40ec144e5db22c"
@@ -402,6 +402,26 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "基于机构官网或机构本人公开资料核验；自述数据已注明口径，未公开的信息留空。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Madrona 2018 年官方材料称其为 Amazon、Apptio、Smartsheet、Rover.com 和 Redfin 的早期投资者；该列表为历史选例，不代表当前完整组合。",
+          "source_hash": "d05f03a35217786cf6a4dd39576569216a2b5b8a69a91277af47c1e148f28884",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:38.853Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "Matt McIlwain 个人页面列出的历史投资包括 Apptio（2016 年 IPO、2018 年被 Vista 收购）等。",
+          "source_hash": "1c3d51bf56ba0cc8b353c579dad49d125e2b1a7997afff8fcbde849f5a515768",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:38.853Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

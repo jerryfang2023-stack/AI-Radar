@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,197 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-05",
-    "latest_disclosed_at": "2026-08-05",
+    "first_disclosed_at": "2026-01-14",
+    "latest_disclosed_at": "2026-09-19",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2,
+      "participant": 3
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a",
+      "series_b",
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-720d7b20a013162b",
+        "canonical_entity_id": "",
+        "name": "Listen Labs"
+      },
+      {
+        "entity_id": "EN-185ea241778d39c7",
+        "canonical_entity_id": "",
+        "name": "Quadric"
+      },
+      {
+        "entity_id": "EN-162103694fa33e7b",
+        "canonical_entity_id": "",
+        "name": "Vals"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-ececdce75e0c9b79",
+        "activity_id": "IA-233ee6c83af41c6d",
+        "funding_insight_id": "FI-05640b3db4ac3921",
+        "event_ids": [
+          "EV-0f7d759e759cfc09"
+        ],
+        "company_entity_id": "EN-162103694fa33e7b",
+        "company_canonical_entity_id": "",
+        "company_name": "Vals",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-09-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-404aba285b240b86",
+            "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+            "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+            "source_content_hash": "5d9a4e3004c9d318",
+            "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+            "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cf2677ac9a5ee8dd",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$69 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 69000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6900 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf11a862138a06d",
+            "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+            "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+            "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+            "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+            "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a9f14ffe51a7b780",
+        "funding_insight_id": "FI-ae8031b7eb15f5c7",
+        "event_ids": [
+          "EV-42335b1bae58c172"
+        ],
+        "company_entity_id": "EN-185ea241778d39c7",
+        "company_canonical_entity_id": "",
+        "company_name": "Quadric",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$30M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b3973965c733b20b",
+            "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+            "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+            "source_content_hash": "c8cfa51187a025ba",
+            "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+            "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-33ac586d36d16785",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Seed 轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5579fe42c2aff5ea",
+            "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
+            "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
+            "source_content_hash": "2cd25d2efd99688d",
+            "quote": "We are thrilled to announce our investment in Listen Labs’s seed round.",
+            "quote_hash": "dec1edd6a40e5d49c0c0d462bad8f3a71e350c8a7cb530656cb2c49aba1b2598"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-28259e62fa313458",
         "funding_insight_id": "FI-db2bd30618100f0d",
         "event_ids": [
           "EV-60f219702a66bf38"
@@ -86,23 +259,15 @@
         "company_entity_id": "EN-6861f63c27eb0ada",
         "company_canonical_entity_id": "",
         "company_name": "WindBorne Systems",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "$37 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 37000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3700 万美元"
-        },
-        "announced_at": "2026-08-05",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "A 轮参投方",
         "role_code": "historical_or_ambiguous",
@@ -120,6 +285,38 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-404aba285b240b86",
+        "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+        "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+        "source_content_hash": "5d9a4e3004c9d318",
+        "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+        "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+      },
+      {
+        "source_id": "FISRC-dcf11a862138a06d",
+        "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+        "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+        "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+        "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+        "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+      },
+      {
+        "source_id": "FISRC-b3973965c733b20b",
+        "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+        "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+        "source_content_hash": "c8cfa51187a025ba",
+        "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+        "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
+      },
+      {
+        "source_id": "FISRC-5579fe42c2aff5ea",
+        "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
+        "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
+        "source_content_hash": "2cd25d2efd99688d",
+        "quote": "We are thrilled to announce our investment in Listen Labs’s seed round.",
+        "quote_hash": "dec1edd6a40e5d49c0c0d462bad8f3a71e350c8a7cb530656cb2c49aba1b2598"
+      },
+      {
         "source_id": "FISRC-5f5111750b24d3d3",
         "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",
         "source_title": "WindBorne Systems Takes Flight with $15 Million in Series A Funding",
@@ -133,27 +330,63 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pear VC 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Pear VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：WindBorne Systems · 历史轮次未披露 · A 轮参投方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5f5111750b24d3d3"
+          "description": "融资来源记录：Vals · A轮 · 2026-09-19 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-404aba285b240b86"
+        },
+        {
+          "description": "融资来源记录：Listen Labs · B轮 · 2026-01-14 · 本轮参投 · $69 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dcf11a862138a06d"
+        },
+        {
+          "description": "融资来源记录：Quadric · C轮 · 2026-01-14 · 本轮参投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b3973965c733b20b"
         }
       ],
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-5f5111750b24d3d3",
-          "source_url": "https://parsers.vc/news/240605-windborne-systems-takes-flight-with-15/",
-          "source_title": "WindBorne Systems Takes Flight with $15 Million in Series A Funding",
-          "source_content_hash": "274d6fadc02167bf",
-          "quote": "existing investors such as Footwork VC, Pear VC, and Convective Capital also participated in this round",
-          "quote_hash": "8023b80146dd21ae9133d41cbd3bd534abb4a1bb0ff5b6a882a2428157bc4482"
+          "source_id": "FISRC-404aba285b240b86",
+          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+          "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+          "source_content_hash": "5d9a4e3004c9d318",
+          "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+          "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+        },
+        {
+          "source_id": "FISRC-dcf11a862138a06d",
+          "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+          "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+          "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+          "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+          "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+        },
+        {
+          "source_id": "FISRC-b3973965c733b20b",
+          "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+          "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+          "source_content_hash": "c8cfa51187a025ba",
+          "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+          "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[3].role": {
+          "text": "Seed 轮参投",
+          "source_hash": "a6b60428a44ceb28e07a1cedf367e76eb423a1e9698a0033135f215cd01febf5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T00:56:00.495Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

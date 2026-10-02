@@ -2,6 +2,27 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import { taxonomy,classificationInput,classificationProblems,displayClassification } from '../taxonomy.mjs';
+import { publicationHold } from '../catalog.mjs';
+import { verifiedFundingEventCardCoverageProblems } from '../../tools/funding-insight-v1-utils.mjs';
+
+test('an explicit publication hold permits a partial release without treating blocked research as coverage',()=>{
+ const event={event_id:'EV-review',event_type:'funding',publication_status:'verified',event_status:'completed',display_title_zh:'Acme 完成 A 轮融资',object:'$20 million',metrics:['$20 million']};
+ const queue=[{event_id:event.event_id,status:'blocked',problems:['research_sources_insufficient']}];
+ assert.deepEqual(verifiedFundingEventCardCoverageProblems([event],[],queue),['EV-review:verified_funding_event_without_valid_card']);
+ const review={version:'FINANCING-PUBLICATION-REVIEW-1',holds:[{event_id:event.event_id,status:'pending',source_url:'https://example.com/round',reason:'原始主体待核验'}]};
+ const eligible=[event].filter(row=>!publicationHold({triggered_by_event_id:row.event_id},review));
+ assert.deepEqual(verifiedFundingEventCardCoverageProblems(eligible,[],queue),[]);
+ assert.throws(()=>publicationHold({triggered_by_event_id:event.event_id},{...review,holds:[{event_id:event.event_id,status:'pending'}]}),/invalid_financing_publication_hold/);
+});
+
+test('disclosure review holds survive aggregation without changing sector classifications',()=>{
+ const hold={event_id:'EV-old',status:'pending',source_url:'https://example.com/original',reason:'融资日期待核验'};
+ const review={version:'FINANCING-PUBLICATION-REVIEW-1',holds:[hold]};
+ assert.equal(publicationHold({triggered_by_event_id:'EV-new',source_event_ids:['EV-old','EV-new']},review),hold);
+ assert.equal(publicationHold({triggered_by_event_id:'EV-other'},review),null);
+ assert.equal(publicationHold({},null),null);
+ assert.throws(()=>publicationHold({}, {version:'invalid',holds:[]}),/invalid_financing_publication_review/);
+});
 
 test('consumer companion devices survive scope migration; mixed robot portfolios remain reviewable',()=>{
   const registry=JSON.parse(fs.readFileSync(new URL('../../../01-SiteV2/content/12-applications/financing-taxonomy/decisions.json',import.meta.url))).decisions;

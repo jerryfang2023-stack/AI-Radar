@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-b34dee3218dacb",
+    "name": "龙芯创投",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "investment_institution",
+    "investor_kind_label": "投资机构",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 2,
+    "market_regions": [
+      "CN",
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2024-01",
+    "latest_disclosed_at": "2026-09-02",
+    "role_counts": {
+      "historical_or_ambiguous": 2,
+      "participant": 2
+    },
+    "round_codes": [
+      "angel_plus",
+      "pre_series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-feb09ffdcef55d25",
+        "canonical_entity_id": "",
+        "name": "鼎犀智创（Rhinovate™）"
+      },
+      {
+        "entity_id": "EN-5ba042c14b39398d",
+        "canonical_entity_id": "",
+        "name": "原力引擎"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-3d7c2108d92fc9a4",
+        "funding_insight_id": "FI-d66ca0243fba30e1",
+        "event_ids": [
+          "EV-f453123978fbf095"
+        ],
+        "company_entity_id": "EN-feb09ffdcef55d25",
+        "company_canonical_entity_id": "",
+        "company_name": "鼎犀智创（Rhinovate™）",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-57de475f4ec2ac5a",
+            "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+            "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+            "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+            "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+            "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+          },
+          {
+            "source_id": "FISRC-270f085d1cb4d09f",
+            "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+            "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+            "source_content_hash": "cc2f801c9dac56e7",
+            "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+            "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f73ba9d2cc5ea610",
+        "funding_insight_id": "FI-cfac6fe1ce40d030",
+        "event_ids": [
+          "EV-0e854ee566f6d0b9"
+        ],
+        "company_entity_id": "EN-5ba042c14b39398d",
+        "company_canonical_entity_id": "",
+        "company_name": "原力引擎",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "近5000万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-642c04894404ccd5",
+            "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+            "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+            "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+            "quote": "龙芯创投、成为资本等跟投",
+            "quote_hash": "ef1a3c84f19febf3822077b0defbdb7d3dd1bf7e0074244e431160ed8c99c6aa"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-84903c23b0369d17",
+        "funding_insight_id": "FI-dc68253303dac9b5",
+        "event_ids": [
+          "EV-e084947e3f9e0667"
+        ],
+        "company_entity_id": "EN-e12c9f7f64dec58c",
+        "company_canonical_entity_id": "",
+        "company_name": "北京面壁智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2024-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2024年12月融资联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ca5c9f62e4d3f2f3",
+            "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+            "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+            "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+            "quote": "2024年12月，面壁智能完成新一轮数亿元融资，由龙芯创投、鼎晖百孚、中关村科学城基金和赛富基金联合领投",
+            "quote_hash": "63a980f1ba127733849c97a30d0874700bd03202657aec194d72afc7a3a64b3d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3106253157e5e8ce",
+        "funding_insight_id": "FI-09d84a96790109f4",
+        "event_ids": [
+          "EV-cf58eff49a08500d"
+        ],
+        "company_entity_id": "EN-6965b510ec922ad4",
+        "company_canonical_entity_id": "",
+        "company_name": "瞬原科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-94a6cb89904f54ad",
+            "source_url": "https://finance.sina.com.cn/roll/2026-06-04/doc-iniafmms3725821.shtml?froms=ggmp",
+            "source_title": "聚焦聚变计算底座研发 瞬原科技完成首轮融资",
+            "source_content_hash": "f46b30f56f163ef0",
+            "quote": "本轮融资由龙芯创投领投，藕舫天使、中关村自主创新专项基金（君联资本担任管理人）跟投",
+            "quote_hash": "af7bb226b5f122d260b01661d6798de4194cc4983c4c26efe51b48a6ab0ccfb7"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-57de475f4ec2ac5a",
+        "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+        "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+        "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+        "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+        "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+      },
+      {
+        "source_id": "FISRC-270f085d1cb4d09f",
+        "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+        "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+        "source_content_hash": "cc2f801c9dac56e7",
+        "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+        "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+      },
+      {
+        "source_id": "FISRC-642c04894404ccd5",
+        "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+        "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+        "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+        "quote": "龙芯创投、成为资本等跟投",
+        "quote_hash": "ef1a3c84f19febf3822077b0defbdb7d3dd1bf7e0074244e431160ed8c99c6aa"
+      },
+      {
+        "source_id": "FISRC-ca5c9f62e4d3f2f3",
+        "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+        "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+        "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+        "quote": "2024年12月，面壁智能完成新一轮数亿元融资，由龙芯创投、鼎晖百孚、中关村科学城基金和赛富基金联合领投",
+        "quote_hash": "63a980f1ba127733849c97a30d0874700bd03202657aec194d72afc7a3a64b3d"
+      },
+      {
+        "source_id": "FISRC-94a6cb89904f54ad",
+        "source_url": "https://finance.sina.com.cn/roll/2026-06-04/doc-iniafmms3725821.shtml?froms=ggmp",
+        "source_title": "聚焦聚变计算底座研发 瞬原科技完成首轮融资",
+        "source_content_hash": "f46b30f56f163ef0",
+        "quote": "本轮融资由龙芯创投领投，藕舫天使、中关村自主创新专项基金（君联资本担任管理人）跟投",
+        "quote_hash": "af7bb226b5f122d260b01661d6798de4194cc4983c4c26efe51b48a6ab0ccfb7"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "龙芯创投 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57de475f4ec2ac5a"
+        },
+        {
+          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-270f085d1cb4d09f"
+        },
+        {
+          "description": "融资来源记录：原力引擎 · 天使+轮 · 2026-08-26 · 本轮参投 · 近5000万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-642c04894404ccd5"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-57de475f4ec2ac5a",
+          "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+          "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+          "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+          "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+          "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+        },
+        {
+          "source_id": "FISRC-270f085d1cb4d09f",
+          "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+          "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+          "source_content_hash": "cc2f801c9dac56e7",
+          "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+          "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+        },
+        {
+          "source_id": "FISRC-642c04894404ccd5",
+          "source_url": "https://news.pedaily.cn/202608/568123.shtml",
+          "source_title": "AI4Engineering新锐企业「原力引擎」完成天使+轮近5000万元融资",
+          "source_content_hash": "bd70eb4357b1953002a1e3b1b03f3f01eb8c85fd52917570c02811ee3fc0bc3c",
+          "quote": "龙芯创投、成为资本等跟投",
+          "quote_hash": "ef1a3c84f19febf3822077b0defbdb7d3dd1bf7e0074244e431160ed8c99c6aa"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    }
+  }
+}

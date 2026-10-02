@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 3,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
+    "china_market_activity_count": 3,
     "china_market_company_count": 2,
-    "first_disclosed_at": "2026-02-24",
-    "latest_disclosed_at": "2026-09-23",
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "first_external",
@@ -94,47 +94,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-bc610e4a48c3c11d",
-        "funding_insight_id": "FI-17089973bc48aad2",
-        "event_ids": [
-          "EV-0d0b83c319d971b0"
-        ],
-        "company_entity_id": "EN-ef5cac7907b28194",
-        "company_canonical_entity_id": "",
-        "company_name": "上海达卯科技有限公司",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "新一轮融资",
-        "amount_original": "约2亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 200000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 2 亿元"
-        },
-        "announced_at": "2026-09-23",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "股东方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-23e3875ee86bc918",
-            "source_url": "https://www.qbitai.com/2026/09/496494.html",
-            "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
-            "source_content_hash": "b652dc815aea1925",
-            "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
-            "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-fb1fe5f6e907fcc0",
+        "activity_id": "IA-3d9347a38b050708",
         "funding_insight_id": "FI-fae9478ac0e65316",
         "event_ids": [
           "EV-ac5e79d96a009ee1"
@@ -174,47 +134,47 @@
         ]
       },
       {
-        "activity_id": "IA-6ee549ac82757338",
-        "funding_insight_id": "FI-23cabede97d0111d",
+        "activity_id": "IA-91ecf58471af1ce4",
+        "funding_insight_id": "FI-a1d81c83315eb264",
         "event_ids": [
-          "EV-c6437ac13cb07531"
+          "EV-8ea9e79f7edcb94f"
         ],
-        "company_entity_id": "EN-4e781f6e9e5a49bc",
-        "company_canonical_entity_id": "EN-4e781f6e9e5a49bc",
-        "company_name": "深度智控",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "数亿元",
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资",
+        "amount_original": "约 510 亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
+          "value": 51000000000,
+          "min_value": null,
+          "max_value": null,
           "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
+          "status": "approximate",
+          "display_zh": "约 510 亿元"
         },
-        "announced_at": "2026-07-09",
+        "announced_at": "2026-06-17",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "B+轮投资方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-67ccadc4294defd6",
-            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-            "source_title": "深度智控 | 项目信息-36氪",
-            "source_content_hash": "ed75aafa3d8feb1d",
-            "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
-            "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
+            "source_id": "FISRC-e0178cb313198d39",
+            "source_url": "https://www.ithome.com/0/965/686.htm",
+            "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+            "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+            "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+            "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
           }
         ]
       },
       {
-        "activity_id": "IA-903143189e88f6dd",
+        "activity_id": "IA-9e6e5c26e3c0c6bc",
         "funding_insight_id": "FI-71c58a10a93101c8",
         "event_ids": [
           "EV-d4d7b019ff0015df",
@@ -263,7 +223,7 @@
         ]
       },
       {
-        "activity_id": "IA-1c304d46dc618eaa",
+        "activity_id": "IA-66ce4212a7a9ce5b",
         "funding_insight_id": "FI-846562dfba15b6a0",
         "event_ids": [
           "EV-61f07716fd7cb7ee"
@@ -271,23 +231,15 @@
         "company_entity_id": "EN-1032f7a4df33f629",
         "company_canonical_entity_id": "EN-1032f7a4df33f629",
         "company_name": "千寻智能",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "两轮融资",
-        "amount_original": "20亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 2000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "20 亿元"
-        },
-        "announced_at": "2026-02-24",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "产业资本",
         "role_code": "historical_or_ambiguous",
@@ -301,17 +253,105 @@
             "quote_hash": "e6f61b65a2027cb9b8f1e21db1dc7d0d242ecfda04601e47581256a4a58bcb84"
           }
         ]
+      },
+      {
+        "activity_id": "IA-53e8549293aaadbf",
+        "funding_insight_id": "FI-17089973bc48aad2",
+        "event_ids": [
+          "EV-0d0b83c319d971b0"
+        ],
+        "company_entity_id": "EN-ef5cac7907b28194",
+        "company_canonical_entity_id": "",
+        "company_name": "上海达卯科技有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "股东方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-23e3875ee86bc918",
+            "source_url": "https://www.qbitai.com/2026/09/496494.html",
+            "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+            "source_content_hash": "b652dc815aea1925",
+            "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+            "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-67891dce4fac088c",
+        "funding_insight_id": "FI-23cabede97d0111d",
+        "event_ids": [
+          "EV-c6437ac13cb07531"
+        ],
+        "company_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_canonical_entity_id": "EN-4e781f6e9e5a49bc",
+        "company_name": "深度智控",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "B+轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-67ccadc4294defd6",
+            "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+            "source_title": "深度智控 | 项目信息-36氪",
+            "source_content_hash": "ed75aafa3d8feb1d",
+            "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
+            "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7bc697ebf7efa770",
+        "funding_insight_id": "FI-e4c90ce26c3922b5",
+        "event_ids": [
+          "EV-3a7e1e2c46daaa76"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮融资参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4a43446c1fdd8a31",
+            "source_url": "https://www.qbitai.com/2026/07/461220.html",
+            "source_title": "DeepSeek被曝主动叫停了第二轮融资签约",
+            "source_content_hash": "b0eb1d1fb5eb1976",
+            "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
+            "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-23e3875ee86bc918",
-        "source_url": "https://www.qbitai.com/2026/09/496494.html",
-        "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
-        "source_content_hash": "b652dc815aea1925",
-        "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
-        "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
-      },
       {
         "source_id": "FISRC-ac5a938b8fdef1a9",
         "source_url": "https://news.pedaily.cn/202609/568645.shtml",
@@ -321,12 +361,12 @@
         "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
       },
       {
-        "source_id": "FISRC-67ccadc4294defd6",
-        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
-        "source_title": "深度智控 | 项目信息-36氪",
-        "source_content_hash": "ed75aafa3d8feb1d",
-        "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
-        "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
+        "source_id": "FISRC-e0178cb313198d39",
+        "source_url": "https://www.ithome.com/0/965/686.htm",
+        "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+        "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+        "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+        "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
       },
       {
         "source_id": "FISRC-d2c8c841370ed82a",
@@ -351,6 +391,30 @@
         "source_content_hash": "ba564b5b598fcd09",
         "quote": "此前，千寻智能引入了 宁德时代 、汇川技术、TCL、 京东 、 招商局创投 以及 华为 、 小米 等产业资本。",
         "quote_hash": "e6f61b65a2027cb9b8f1e21db1dc7d0d242ecfda04601e47581256a4a58bcb84"
+      },
+      {
+        "source_id": "FISRC-23e3875ee86bc918",
+        "source_url": "https://www.qbitai.com/2026/09/496494.html",
+        "source_title": "达卯科技完成新一轮融资，算电协同核心软件层“稀缺标的”",
+        "source_content_hash": "b652dc815aea1925",
+        "quote": "目前，达卯科技股东阵容包含宁德时代、商汤科技、寒武纪等产业链龙头企业",
+        "quote_hash": "3ea31f36954c8902959b2b0d0e7a4636bb9a7524cc8abfbcde3f12b5937a02e9"
+      },
+      {
+        "source_id": "FISRC-67ccadc4294defd6",
+        "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
+        "source_title": "深度智控 | 项目信息-36氪",
+        "source_content_hash": "ed75aafa3d8feb1d",
+        "quote": "B+轮 2026-09 数亿人民币 宁德时代 ， 阿美风险投资 ， 太平创新 ， 广发信德 ， 复星创富 ， 源码资本 ， Forebright Capital",
+        "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
+      },
+      {
+        "source_id": "FISRC-4a43446c1fdd8a31",
+        "source_url": "https://www.qbitai.com/2026/07/461220.html",
+        "source_title": "DeepSeek被曝主动叫停了第二轮融资签约",
+        "source_content_hash": "b0eb1d1fb5eb1976",
+        "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
+        "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
       }
     ],
     "public_profile": {
@@ -367,12 +431,12 @@
           "source_id": "FISRC-ac5a938b8fdef1a9"
         },
         {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d2c8c841370ed82a"
+          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e0178cb313198d39"
         },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-20480dcf3f970893"
+          "source_id": "FISRC-d2c8c841370ed82a"
         }
       ],
       "contacts": [],
@@ -386,20 +450,20 @@
           "quote_hash": "a67699da37c852c4d17e456cb1ca8a3f76385f1975283bd1a518a4d6f061273e"
         },
         {
+          "source_id": "FISRC-e0178cb313198d39",
+          "source_url": "https://www.ithome.com/0/965/686.htm",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+          "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+          "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+          "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+        },
+        {
           "source_id": "FISRC-d2c8c841370ed82a",
           "source_url": "https://ashareinsights.com/deepseek-7-billion-funding-term-sheet-control/",
           "source_title": "DeepSeek's $7.4B Term Sheet: Founder Control, Decoded",
           "source_content_hash": "1a156474d760e02b",
           "quote": "CATL ​¥5B",
           "quote_hash": "bcd88ca2e2bd8d6d580efd429b25e6a91889952bc2ee1f22526c0bd588bb03d5"
-        },
-        {
-          "source_id": "FISRC-20480dcf3f970893",
-          "source_url": "https://ventureburn.com/deepseek-raises-7-4b-at-50b-in-founder-led-deal/",
-          "source_title": "DeepSeek Raises $7.4B at $50B+ in Founder-Led Deal - Ventureburn",
-          "source_content_hash": "94a6c6ef0b270e0d",
-          "quote": "battery manufacturer CATL",
-          "quote_hash": "e0b616b1ac277c041925d4a8c3cf5a0787096db311274a1b71b625b306586175"
         }
       ],
       "last_verified_at": "2026-09-25"

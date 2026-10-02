@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,26 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 6,
+    "current_round_count": 10,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-03-31",
-    "latest_disclosed_at": "2026-08-19",
+    "first_disclosed_at": "2025-01",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "co_lead": 1,
+      "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 5
+      "participant": 8
     },
     "round_codes": [
       "infrastructure",
+      "other",
       "series_c",
       "series_d",
-      "series_f"
+      "series_f",
+      "series_h",
+      "strategic"
     ],
     "portfolio_companies": [
       {
@@ -89,9 +93,19 @@
         "name": "Anthropic"
       },
       {
+        "entity_id": "EN-2dc010636b9dce91",
+        "canonical_entity_id": "EN-2dc010636b9dce91",
+        "name": "Databricks"
+      },
+      {
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-06c8aaa93d80a768",
+        "canonical_entity_id": "",
+        "name": "Factory"
       },
       {
         "entity_id": "EN-712dffae168fe622",
@@ -116,7 +130,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-5fd7c8a0742aaaf2",
+        "activity_id": "IA-0a5ab6686509dd06",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "未明确轮次",
+        "amount_original": "$200M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c7459d2ce055880",
+            "source_url": "https://factory.ai/news/5-billion-valuation",
+            "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+            "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+            "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+            "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0a5e4cc197082b32",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
         "event_ids": [
           "EV-19dd4c3a5dd5a94b",
@@ -157,7 +211,7 @@
         ]
       },
       {
-        "activity_id": "IA-2247d3cf71f98547",
+        "activity_id": "IA-4fabc0014fafc7fe",
         "funding_insight_id": "FI-ed1d2ba02f527a10",
         "event_ids": [
           "EV-e70a48e36e99d57a"
@@ -197,7 +251,48 @@
         ]
       },
       {
-        "activity_id": "IA-06eafc5eedb18497",
+        "activity_id": "IA-1a4952ac1a2617cb",
+        "funding_insight_id": "FI-d00f79c5a43227dc",
+        "event_ids": [
+          "EV-0d4e656aa51f9a46",
+          "EV-50b5c4f93ead145d"
+        ],
+        "company_entity_id": "EN-2dc010636b9dce91",
+        "company_canonical_entity_id": "EN-2dc010636b9dce91",
+        "company_name": "Databricks",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "新一轮战略融资",
+        "amount_original": "约 30 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 3000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 30 亿美元"
+        },
+        "announced_at": "2026-07-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-23f811fd2df5ab63",
+            "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+            "source_title": "Databricks 同比增长超80%，收入年化运行率突破$7B，扩展 Lakebase、Genie 和 Unity AI Gateway",
+            "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+            "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
+            "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0bffb7bc32cd5cb2",
         "funding_insight_id": "FI-9fd39f44b35d940c",
         "event_ids": [
           "EV-d9cc588fb41a7e67"
@@ -237,47 +332,7 @@
         ]
       },
       {
-        "activity_id": "IA-f5b8adffb8afe8e3",
-        "funding_insight_id": "FI-9fd39f44b35d940c",
-        "event_ids": [
-          "EV-d9cc588fb41a7e67"
-        ],
-        "company_entity_id": "EN-712dffae168fe622",
-        "company_canonical_entity_id": "",
-        "company_name": "Nomos Ai Inc.",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "1.2亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 120000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1.2 亿美元"
-        },
-        "announced_at": "2026-07-07",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方（2025年1月参投，2025年11月参投）",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-afaa91a6569d1f7a",
-            "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-            "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-            "source_content_hash": "afe0afef4cf0ce8c",
-            "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue. Blackstone invested another $50 million in November 2025 alongside the launch of Norm Law.",
-            "quote_hash": "544078976891b5b901ce93b2e029b29e09f897ff2ad6f8639dce351c1490ac99"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-c2bb206fb703bb23",
+        "activity_id": "IA-6551e060750ddb0d",
         "funding_insight_id": "FI-3bd982e429974930",
         "event_ids": [
           "EV-0f520c9e5b1ea1d2"
@@ -325,47 +380,7 @@
         ]
       },
       {
-        "activity_id": "IA-e6954f3a9aec6727",
-        "funding_insight_id": "FI-44726ebdb985f37e",
-        "event_ids": [
-          "EV-4118202ed0f91895"
-        ],
-        "company_entity_id": "EN-0b79cf2de0ee6b8e",
-        "company_canonical_entity_id": "",
-        "company_name": "Groq",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "新一轮",
-        "amount_original": "6.5 亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 650000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "6.5 亿美元"
-        },
-        "announced_at": "2026-06-22",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-85e8550490e53490",
-            "source_url": "https://test-news.aibase.com/news/21366",
-            "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
-            "source_content_hash": "6efab5b69f3f9aa3",
-            "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
-            "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-b9014b155d9192dc",
+        "activity_id": "IA-f683cbddac5c42f8",
         "funding_insight_id": "FI-5f1fc44327efde20",
         "event_ids": [
           "EV-8861a42a8679562a"
@@ -413,7 +428,87 @@
         ]
       },
       {
-        "activity_id": "IA-c4b9c6d0a8767856",
+        "activity_id": "IA-3514e20cc91b5cff",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+            "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-258e2b154129391c",
+        "funding_insight_id": "FI-2beaec77613f6a7f",
+        "event_ids": [
+          "EV-20e5d57a05b69a95"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+            "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+            "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-962f405cdd9a7573",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
         "event_ids": [
           "EV-d4e44892226be468"
@@ -451,9 +546,114 @@
             "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
           }
         ]
+      },
+      {
+        "activity_id": "IA-abb10ca813f202bb",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方（2025年1月参投，2025年11月参投）",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（2025年1月参投，2025年11月参投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-afaa91a6569d1f7a",
+            "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+            "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+            "source_content_hash": "afe0afef4cf0ce8c",
+            "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue. Blackstone invested another $50 million in November 2025 alongside the launch of Norm Law.",
+            "quote_hash": "544078976891b5b901ce93b2e029b29e09f897ff2ad6f8639dce351c1490ac99"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9236352faed8a7ec",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory raises $150M Series C",
+            "source_content_hash": "64798c57510b20e2",
+            "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-edbba9c38c7e9e89",
+        "funding_insight_id": "FI-44726ebdb985f37e",
+        "event_ids": [
+          "EV-4118202ed0f91895",
+          "EV-aa6b83d9a5f77d41"
+        ],
+        "company_entity_id": "EN-0b79cf2de0ee6b8e",
+        "company_canonical_entity_id": "",
+        "company_name": "Groq",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-85e8550490e53490",
+            "source_url": "https://test-news.aibase.com/news/21366",
+            "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+            "source_content_hash": "6efab5b69f3f9aa3",
+            "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
+            "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1c7459d2ce055880",
+        "source_url": "https://factory.ai/news/5-billion-valuation",
+        "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+        "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+        "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+        "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+      },
       {
         "source_id": "FISRC-134a8e8124653c90",
         "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
@@ -471,20 +671,20 @@
         "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
       },
       {
+        "source_id": "FISRC-23f811fd2df5ab63",
+        "source_url": "https://www.databricks.com/company/newsroom/press-releases/databricks-grows-80-yoy-surpasses-7b-revenue-run-rate-scales",
+        "source_title": "Databricks 同比增长超80%，收入年化运行率突破$7B，扩展 Lakebase、Genie 和 Unity AI Gateway",
+        "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+        "quote": "The round was led by Coatue, along with Blackstone, MGX, accounts advised by T. Rowe Price Associates, Inc. and T. Rowe Price Investment Management, Inc., and new investor Sixth Street Growth.",
+        "quote_hash": "b233db421b569c9a4a4d161be9d7f8250496f79ea7110abbd433d88c071ba51d"
+      },
+      {
         "source_id": "FISRC-1b05d1dc5cb45a7b",
         "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
         "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
         "source_content_hash": "bdcf73e00730d3c9",
         "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
         "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
-      },
-      {
-        "source_id": "FISRC-afaa91a6569d1f7a",
-        "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-        "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-        "source_content_hash": "afe0afef4cf0ce8c",
-        "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue. Blackstone invested another $50 million in November 2025 alongside the launch of Norm Law.",
-        "quote_hash": "544078976891b5b901ce93b2e029b29e09f897ff2ad6f8639dce351c1490ac99"
       },
       {
         "source_id": "FISRC-f58149f5a78da9a4",
@@ -503,14 +703,6 @@
         "quote_hash": "d7cb9cc4c304a3922ecdce5764fa19d705a0ca5e12f9837f8819e59be508967e"
       },
       {
-        "source_id": "FISRC-85e8550490e53490",
-        "source_url": "https://test-news.aibase.com/news/21366",
-        "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
-        "source_content_hash": "6efab5b69f3f9aa3",
-        "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
-        "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
-      },
-      {
         "source_id": "FISRC-12d28955f3aa1a00",
         "source_url": "https://ir.apollo.com/news-events/press-releases/detail/629/apollo-leads-35-billion-capital-solution-for-broadcom-ai",
         "source_title": "Apollo Leads $35 Billion Capital Solution for Broadcom AI XPV Platform in Partnership with Blackstone and Leading Global Banks :: Apollo Global Management, Inc. (APO)",
@@ -527,12 +719,52 @@
         "quote_hash": "9cd11f1f01fe96fd799f5d5add5aa9b8f687f57dbe21aa034e6dcbd6a5086148"
       },
       {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+        "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+        "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+        "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+      },
+      {
         "source_id": "FISRC-1e2b3bad243bd066",
         "source_url": "https://yespress.io/openais-122-b-megaround",
         "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
         "source_content_hash": "494969b64dc816f3",
         "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
         "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
+      },
+      {
+        "source_id": "FISRC-afaa91a6569d1f7a",
+        "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+        "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+        "source_content_hash": "afe0afef4cf0ce8c",
+        "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue. Blackstone invested another $50 million in November 2025 alongside the launch of Norm Law.",
+        "quote_hash": "544078976891b5b901ce93b2e029b29e09f897ff2ad6f8639dce351c1490ac99"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory raises $150M Series C",
+        "source_content_hash": "64798c57510b20e2",
+        "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+      },
+      {
+        "source_id": "FISRC-85e8550490e53490",
+        "source_url": "https://test-news.aibase.com/news/21366",
+        "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
+        "source_content_hash": "6efab5b69f3f9aa3",
+        "quote": "This round was led by the Texas-based investment firm Disruptive, and also received significant investments from Blackstone, Newport Capital, Deutsche Telekom Capital Partners, and a major U.S. West Coast fund manager.",
+        "quote_hash": "1ab9a3e89cdba5fc45b86870174a402aea545f82fdce6c59c536a1a228b3080a"
       }
     ],
     "public_profile": {
@@ -585,16 +817,16 @@
           "source_id": "blackstone_innovations"
         },
         {
+          "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1c7459d2ce055880"
+        },
+        {
           "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-134a8e8124653c90"
         },
         {
           "description": "融资来源记录：NVIDIA · 基础设施融资 · 2026-08-15 · 本轮参投 · 超过 5000 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5514041be03e64ae"
-        },
-        {
-          "description": "融资来源记录：Nomos Ai Inc. · C轮 · 2026-07-07 · 本轮参投 · 1.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1b05d1dc5cb45a7b"
         }
       ],
       "contacts": [
@@ -646,6 +878,14 @@
           "quote_hash": "8ffe37a438662a1adc0c72c1cd00a9f468feb68cf03d28f5a5d61b9c655fbc10"
         },
         {
+          "source_id": "FISRC-1c7459d2ce055880",
+          "source_url": "https://factory.ai/news/5-billion-valuation",
+          "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+          "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+          "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+          "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+        },
+        {
           "source_id": "FISRC-134a8e8124653c90",
           "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
           "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
@@ -660,17 +900,21 @@
           "source_content_hash": "281ec3c5199ae992",
           "quote": "NVIDIA today announced strategic partnerships to establish independent compute financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR to mobilize over $500 billion of third-party capital for the buildout of AI infrastructure over time.",
           "quote_hash": "bca4883adfc66926e1ee2372403f7453b74408994ba78ee775c3f14531e961fe"
-        },
-        {
-          "source_id": "FISRC-1b05d1dc5cb45a7b",
-          "source_url": "https://siliconangle.com/2026/07/07/norm-ai-nabs-120m-1-2b-valuation-bring-ai-agents-law/",
-          "source_title": "Norm Ai 以 12 亿美元估值获 1.2 亿美元融资，将 AI 智能体引入法律领域",
-          "source_content_hash": "bdcf73e00730d3c9",
-          "quote": "Blackstone, Bain Capital Ventures, Craft Ventures, Coatue, Vanguard, New York Life, TIAA, and Fenwick LLP also participated.",
-          "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
         }
       ],
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[11].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

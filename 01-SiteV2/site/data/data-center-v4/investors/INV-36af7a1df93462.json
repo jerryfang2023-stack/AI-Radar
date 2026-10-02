@@ -1,0 +1,195 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-36af7a1df93462",
+    "name": "扬子江药业集团",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 1,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-06-24",
+    "role_counts": {
+      "co_lead": 1
+    },
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-d4944c6a862031ad",
+        "canonical_entity_id": "",
+        "name": "骁柔集团"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-6352121aa19e527d",
+        "funding_insight_id": "FI-1a7f254735eb8ea8",
+        "event_ids": [
+          "EV-492c46019767d76f"
+        ],
+        "company_entity_id": "EN-d4944c6a862031ad",
+        "company_canonical_entity_id": "",
+        "company_name": "骁柔集团",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-06-24",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-262aff12f0ba0ca3",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-24/doc-inientua3092643.shtml",
+            "source_title": "骁柔集团近亿元A轮战略融资 深耕AI院外医疗赛道开启规模化扩张",
+            "source_content_hash": "5e0bf189c311f8687c135067fb27dbdd04d5fc92dfac96ebeb44c1e27567da82",
+            "quote": "由知名创新药投资机构齐济资本、扬子江药业集团联合战略投资",
+            "quote_hash": "fb71c3499ca1a2e6469b45c166439f6a7f88771f1d4774a4c85dd2f71735e1c7"
+          },
+          {
+            "source_id": "FISRC-b236fcf616cfb11a",
+            "source_url": "https://www.sohu.com/a/1042173134_115035",
+            "source_title": "骁柔集团获扬子江药业等A轮投资",
+            "source_content_hash": "1de62b4fd87936f9",
+            "quote": "本轮融资由扬子江药业集团与齐济投资联合领投",
+            "quote_hash": "2ebc1b1726cb2af52bcf143b8b9daaf22c5a92eef4722f15cd7071bd5c864a7a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-262aff12f0ba0ca3",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-24/doc-inientua3092643.shtml",
+        "source_title": "骁柔集团近亿元A轮战略融资 深耕AI院外医疗赛道开启规模化扩张",
+        "source_content_hash": "5e0bf189c311f8687c135067fb27dbdd04d5fc92dfac96ebeb44c1e27567da82",
+        "quote": "由知名创新药投资机构齐济资本、扬子江药业集团联合战略投资",
+        "quote_hash": "fb71c3499ca1a2e6469b45c166439f6a7f88771f1d4774a4c85dd2f71735e1c7"
+      },
+      {
+        "source_id": "FISRC-b236fcf616cfb11a",
+        "source_url": "https://www.sohu.com/a/1042173134_115035",
+        "source_title": "骁柔集团获扬子江药业等A轮投资",
+        "source_content_hash": "1de62b4fd87936f9",
+        "quote": "本轮融资由扬子江药业集团与齐济投资联合领投",
+        "quote_hash": "2ebc1b1726cb2af52bcf143b8b9daaf22c5a92eef4722f15cd7071bd5c864a7a"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "扬子江药业集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：骁柔集团 · A轮 · 2026-06-24 · 本轮联合领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-262aff12f0ba0ca3"
+        },
+        {
+          "description": "融资来源记录：骁柔集团 · A轮 · 2026-06-24 · 本轮联合领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b236fcf616cfb11a"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-262aff12f0ba0ca3",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-24/doc-inientua3092643.shtml",
+          "source_title": "骁柔集团近亿元A轮战略融资 深耕AI院外医疗赛道开启规模化扩张",
+          "source_content_hash": "5e0bf189c311f8687c135067fb27dbdd04d5fc92dfac96ebeb44c1e27567da82",
+          "quote": "由知名创新药投资机构齐济资本、扬子江药业集团联合战略投资",
+          "quote_hash": "fb71c3499ca1a2e6469b45c166439f6a7f88771f1d4774a4c85dd2f71735e1c7"
+        },
+        {
+          "source_id": "FISRC-b236fcf616cfb11a",
+          "source_url": "https://www.sohu.com/a/1042173134_115035",
+          "source_title": "骁柔集团获扬子江药业等A轮投资",
+          "source_content_hash": "1de62b4fd87936f9",
+          "quote": "本轮融资由扬子江药业集团与齐济投资联合领投",
+          "quote_hash": "2ebc1b1726cb2af52bcf143b8b9daaf22c5a92eef4722f15cd7071bd5c864a7a"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    }
+  }
+}

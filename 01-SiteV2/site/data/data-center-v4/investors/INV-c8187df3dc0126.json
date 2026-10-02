@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,73 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-04-27",
-    "latest_disclosed_at": "2026-04-27",
+    "first_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-06-03",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_a"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-50ac81f970325a3e",
+        "canonical_entity_id": "",
+        "name": "Town"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-06aaf9292ab7da5f",
+        "activity_id": "IA-76816bb054c084e6",
+        "funding_insight_id": "FI-dc787de827cfc638",
+        "event_ids": [
+          "EV-78f25fe89d25eeb6"
+        ],
+        "company_entity_id": "EN-50ac81f970325a3e",
+        "company_canonical_entity_id": "",
+        "company_name": "Town",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$55M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-55e5e881c734a50f",
+            "source_url": "https://www.town.com/press/series-a",
+            "source_title": "Town 筹集 A 轮融资",
+            "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+            "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
+            "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-93af8c19df08bfd6",
         "funding_insight_id": "FI-a308a87eb0e97da7",
         "event_ids": [
           "EV-dd3217aad32e6891"
@@ -86,23 +135,15 @@
         "company_entity_id": "EN-2f88f41306209dd7",
         "company_canonical_entity_id": "",
         "company_name": "Avoca AI",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "种子轮、A轮、B轮",
-        "amount_original": "超过1.25亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 125000000,
-          "min_value": 125000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 1.25 亿美元"
-        },
-        "announced_at": "2026-04-27",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -119,6 +160,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-55e5e881c734a50f",
+        "source_url": "https://www.town.com/press/series-a",
+        "source_title": "Town 筹集 A 轮融资",
+        "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+        "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
+        "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
+      },
       {
         "source_id": "FISRC-3b2454278fe6d93e",
         "source_url": "https://www.linkedin.com/posts/ccheng805_were-thrilled-to-announce-that-capital-49-activity-7454614909348229121-9ih0",
@@ -164,6 +213,14 @@
           "source_content_hash": "042278cb42cb668134b913f70217acfb9f74b05bcbf73aa67c2e3c44f27fae3d",
           "quote": "Managing Director of the General Partner of the Issuer",
           "quote_hash": "35ca996e0425ef00fc040b37f553f5515e4e3646b23d3ff8beabe5a25d7f123f"
+        },
+        {
+          "source_id": "FISRC-55e5e881c734a50f",
+          "source_url": "https://www.town.com/press/series-a",
+          "source_title": "Town 筹集 A 轮融资",
+          "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+          "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
+          "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
         }
       ],
       "summary": "SEC Form D records Alt Capital I, L.P. and names Jack Altman as managing director of its general partner. Avoca’s careers page also displays Alt Capital in its investor group. Public sources reviewed here do not disclose Alt Capital’s individual investment amount in Avoca.",
@@ -196,6 +253,10 @@
         {
           "description": "Avoca 的招聘页面将 Alt Capital 列在投资方标识中；页面未披露对应轮次的单笔投资金额。",
           "source_id": "avoca_careers_2026"
+        },
+        {
+          "description": "融资来源记录：Town · A轮 · 2026-06-03 · 本轮参投 · $55M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-55e5e881c734a50f"
         },
         {
           "description": "融资来源记录：Avoca AI · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",

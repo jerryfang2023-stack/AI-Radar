@@ -15,7 +15,14 @@ const date='2026-10-01';
 test('all AI sectors allowed, robotics core business excluded, consumer companions preserved',()=>{
   for(const title of ['AI chip company raises Series A','AI drug discovery raises funding','AI enterprise software raises funding','AI toy startup raises $5M','AI companion robot startup raises $5M']) assert.equal(financingScope({title}).included,true,title);
   for(const title of ['Embodied AI startup raises $10M','Humanoid robot maker raises $1B','Robotics company raises $50M','具身智能企业完成融资','机器人核心部件企业获投']) assert.equal(financingScope({title}).included,false,title);
+  assert.equal(financingScope({title:'Humanoid robot maker raises $1B'}).pending,true);
   assert.equal(financingScope({title:'AI cloud company raises $10M',body:'Its customers include humanoid robot companies.'}).included,true);
+  assert.equal(financingScope({
+    title:'AI platform serving robotics startup customers raises funding',
+    body:'The company sells general AI workflow software to many industries. Robotics startups are among its customers.',
+  }).included,true);
+  assert.equal(financingScope({title:'AI工作流平台服务机器人企业客户获融资',body:'该平台面向多行业企业提供通用AI软件。'}).included,true);
+  assert.equal(financingScope({title:'Humanoid robot maker serving AI customers raises funding'}).included,false);
   assert.equal(financingScope({title:'Acme raises $10M',body:'Acme is a leading humanoid robot manufacturer using AI.'}).included,false);
 });
 const temporary=t=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'financing-test-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));return dir;};
@@ -28,7 +35,7 @@ test('every market has independent coverage for all six hardware categories and 
 });
 test('failed search differs from zero and only failed queries resume',async()=>{
   let calls=0;
-  const first=await discover({date,feed:emptyFeed,search:async()=>{calls++;if(calls===3)throw new Error('offline');return[];}});
+  const first=await discover({date,feed:emptyFeed,supplements:[],search:async()=>{calls++;if(calls===3)throw new Error('offline');return[];}});
   assert.equal(first.complete,false);assert.equal(first.failed.length,1);
   let retried=0;
   const second=await discover({date,feed:()=>{throw new Error('must reuse feed');},previous:first.receipts,search:async()=>{retried++;return[];}});
@@ -38,13 +45,19 @@ test('URL dedupe merges coverage; product launch and FDE deployment cannot enter
   const leads=uniqueLeads([{url:'https://example.com/a?utm_source=x',title:'AI startup raises $10M',coverage:['overseas:general:0']},{url:'https://example.com/a',title:'AI startup raises $10M',coverage:['overseas:glasses']},{url:'https://example.com/b',title:'New AI glasses launch'},{url:'https://example.com/c',title:'FDE enterprise deployment customer case'}]);
   assert.equal(leads.length,1);assert.equal(leads[0].coverage.length,2);assert.equal(leads[0].evidence_role,'discovery_only');
 });
-const html=({date='2026-09-30',body='An AI company raises $20 million in Series A financing. '.repeat(12)}={})=>`<html><head><meta property="article:published_time" content="${date}"><meta property="og:title" content="AI startup raises Series A"></head><article>${body}</article></html>`;
+const html=({date='2026-09-30',title='AI startup raises Series A',body='An AI company raises $20 million in Series A financing. '.repeat(12)}={})=>`<html><head><meta property="article:published_time" content="${date}"><meta property="og:title" content="${title}"></head><article>${body}</article></html>`;
 test('original body and original date required; search date and descriptions cannot replace them',async()=>{
   const lead={url:'https://example.com/round',published_at:'2026-09-30',summary:'AI financing snippet'};
   const response=source=>async()=>new Response(source,{headers:{'content-type':'text/html; charset=utf-8'}});
   const good=await captureOriginal(lead,{date,fetcher:response(html())});assert.equal(good.status,'accepted');assert.equal(good.record.published_at,'2026-09-30');
+  assert.equal(good.record.source_role,'original_source');
+  assert.equal(good.record.extraction_quality,'medium');
+  const quoted=await captureOriginal(lead,{date,fetcher:async()=>new Response(html(),{headers:{'content-type':'text/html; charset="utf-8"'}})});
+  assert.equal(quoted.status,'accepted');
   const missing=await captureOriginal(lead,{date,fetcher:response(html({date:''}))});assert.equal(missing.status,'pending');assert.equal(missing.reason,'original_date_missing');
   const stale=await captureOriginal(lead,{date,fetcher:response(html({date:'2025-01-01'}))});assert.equal(stale.status,'excluded');
+  const robotics=await captureOriginal(lead,{date,fetcher:response(html({title:'Humanoid robot maker raises AI funding',body:'The humanoid robot maker raises funding for its AI system. '.repeat(12)}))});
+  assert.equal(robotics.status,'pending');assert.match(robotics.reason,/robotics_core_business_review/u);
   const parsed=parseOriginal('<script type="application/ld+json">'+JSON.stringify({'@type':'NewsArticle',description:'AI raises funding '.repeat(30)})+'</script>');assert.equal(parsed.body,'');
 });
 test('accepted collection stores body privately and downstream retry does not recollect',async t=>{
@@ -52,11 +65,16 @@ test('accepted collection stores body privately and downstream retry does not re
   const gateway={search:async()=>[{url:'https://example.com/round',title:'AI startup raises Series A'}],status:()=>({}),attempts:[]};
   let captures=0;
   const capture=async lead=>{captures++;return captureOriginal(lead,{date,fetcher:async()=>new Response(html(),{headers:{'content-type':'text/html'}})});};
-  const first=await collect({root,directory,backupRoot,date,gateway,feed:emptyFeed,capture});assert.equal(first.accepted,true);assert.equal(captures,1);
+  const first=await collect({root,directory,backupRoot,date,gateway,feed:emptyFeed,supplements:[],capture});assert.equal(first.accepted,true);assert.equal(captures,1);
   const intake=read(path.join(root,`01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`));
   assert.match(intake.raw_documents[0].body_ref,/^evidence:\/\//u);assert.ok(!JSON.stringify(intake).includes('An AI company raises'));assert.ok(fs.existsSync(path.join(backupRoot,'catalog.jsonl')));
-  await collect({root,directory,backupRoot,date,gateway:{search:()=>{throw new Error('recollection forbidden');}},feed:emptyFeed,capture:()=>{throw new Error('recapture forbidden');}});
+  const indexFile=path.join(root,'01-SiteV2/content/01-raw/source-index.jsonl');
+  const indexText=fs.readFileSync(indexFile,'utf8');
+  assert.equal(JSON.parse(indexText.trim()).evidence_ref,intake.raw_documents[0].body_ref);
+  assert.ok(!indexText.includes('clean_text'));assert.ok(!indexText.includes('An AI company raises'));
+  await collect({root,directory,backupRoot,date,gateway:{search:()=>{throw new Error('recollection forbidden');}},feed:emptyFeed,supplements:[],capture:()=>{throw new Error('recapture forbidden');}});
   assert.equal(captures,1);
+  assert.equal(fs.readFileSync(indexFile,'utf8'),indexText);
 });
 test('failed stages resume without replaying successful prerequisites and lock prevents duplicate execution',async t=>{
   const dir=temporary(t),file=path.join(dir,'state.json'),seen=[];
@@ -69,6 +87,25 @@ test('failed stages resume without replaying successful prerequisites and lock p
   await runStages({date,file,stages,codeVersion:'v1',execute:async stage=>seen.push(stage.id)});
   assert.deepEqual(seen,['research','publish']);
   const release=acquireLock(dir);assert.throws(()=>acquireLock(dir),/already_active/u);release();
+});
+test('reviewed claim revisions replay facts and dependent stages without recollecting originals',async t=>{
+  const dir=temporary(t),file=path.join(dir,'stages.json'),seen=[];
+  let claims='initial';
+  const stages=[
+    {id:'facts',commands:['facts'],inputVersion:()=>claims,valid:()=>true},
+    {id:'research',commands:['research'],valid:()=>true},
+  ];
+  const execute=async stage=>{
+    seen.push(stage.id);
+    if(stage.id==='facts' && claims==='initial') claims='accepted';
+  };
+  await runStages({date,file,stages,codeVersion:'same-intake',execute});
+  seen.length=0;
+  await runStages({date,file,stages,codeVersion:'same-intake',execute});
+  assert.deepEqual(seen,[]);
+  claims='manually-corrected';
+  await runStages({date,file,stages,codeVersion:'same-intake',execute});
+  assert.deepEqual(seen,['facts','research']);
 });
 test('new execution graph has no comprehensive-monitor, quota, opinion or historical refill dependencies',()=>{
   const commands=productionPlan(date,'runtime').flatMap(stage=>stage.commands).flat().join('\n');
@@ -88,6 +125,8 @@ test('publication recovery reuses a successful portal despite a new temporary ch
 test('artifact restore cannot execute code or traverse paths',t=>{
   assert.equal(allowedCheckpointPath('../stolen.json',date),false);assert.equal(allowedCheckpointPath('agent-workflow/financing/run.mjs',date),false);
   assert.equal(allowedCheckpointPath('01-SiteV2/site/data/a.js',date),false);
+  assert.equal(allowedCheckpointPath('01-SiteV2/content/01-raw/source-index.jsonl',date),true);
+  assert.equal(allowedCheckpointPath('01-SiteV2/content/01-raw/originals.jsonl',date),false);
   const dir=temporary(t);write(path.join(dir,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,entries:[{file:'../escape.json',hash:'x'}]});
   assert.throws(()=>restore(dir,dir,date),/path_rejected/u);
 });
@@ -101,4 +140,34 @@ test('restoring on a newer main preserves global data and invalidates dependent 
   restore(root,artifact,date);
   assert.deepEqual(read(path.join(root,global)).cards,['newer']);
   assert.deepEqual(read(path.join(root,receipt)).stages,{});
+});
+test('newer main retains reviewed same-day evidence and research while adding checkpoint-only work',t=>{
+  const root=temporary(t),artifact=temporary(t);
+  const intake=`01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`;
+  const model=`01-SiteV2/content/11-databases/model-assist-v1/${date}.json`;
+  const research=`01-SiteV2/content/12-applications/funding-insights/${date}.json`;
+  const facts=`01-SiteV2/content/11-databases/data-center-v4/${date}/canonical-events.json`;
+  const makeIntake=rows=>({schema_version:'SOURCE-INTAKE-V1.1',data_date:date,source_artifacts:rows.map(([id,note])=>({source_artifact_id:id,note})),raw_documents:rows.map(([id,note])=>({raw_id:id,source_artifact_id:id,note}))});
+  write(path.join(root,intake),makeIntake([['shared','reviewed'],['later','accepted']]));
+  write(path.join(root,model),{candidates:[{candidate_id:'shared',status:'reviewed'},{candidate_id:'later',status:'accepted'}]});
+  write(path.join(root,research),{cards:[{funding_insight_id:'updated-round',triggered_by_event_id:'new',source_event_ids:['old','new']}],queue:[{event_id:'old',status:'deduplicated'}]});
+  write(path.join(root,facts),['accepted-facts']);
+  const rows=[
+    [intake,makeIntake([['shared','stale'],['daily','accepted']])],
+    [model,{candidates:[{candidate_id:'shared',status:'stale'},{candidate_id:'daily',status:'accepted'}]}],
+    [research,{cards:[{funding_insight_id:'old-round',triggered_by_event_id:'old'},{funding_insight_id:'daily',triggered_by_event_id:'daily'}],queue:[{event_id:'old',status:'stale'},{event_id:'daily',status:'accepted'}]}],
+    [facts,['stale-facts']],
+  ];
+  const entries=rows.map(([file,data])=>{write(path.join(artifact,'files',file),data);return{file,hash:digest(fs.readFileSync(path.join(artifact,'files',file),'utf8'))};});
+  write(path.join(artifact,'manifest.json'),{version:'FINANCING-CHECKPOINT-1',date,base_commit:'old',entries});
+  restore(root,artifact,date);
+  const restored=read(path.join(root,intake));
+  assert.equal(restored.raw_documents.length,3);
+  assert.equal(restored.raw_documents.find(row=>row.raw_id==='shared').note,'reviewed');
+  assert.equal(restored.source_artifacts.find(row=>row.source_artifact_id==='shared').note,'reviewed');
+  assert.equal(read(path.join(root,model)).candidates.length,3);
+  assert.equal(read(path.join(root,model)).candidates.find(row=>row.candidate_id==='shared').status,'reviewed');
+  assert.deepEqual(read(path.join(root,research)).cards.map(row=>row.funding_insight_id).sort(),['daily','updated-round']);
+  assert.equal(read(path.join(root,research)).queue.find(row=>row.event_id==='old').status,'deduplicated');
+  assert.deepEqual(read(path.join(root,facts)),['accepted-facts']);
 });

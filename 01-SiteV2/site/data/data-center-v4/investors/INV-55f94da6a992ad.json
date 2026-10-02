@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,23 +62,23 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-12",
-    "latest_disclosed_at": "2026-08-12",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-f31eafc01a2d6984",
+        "activity_id": "IA-cc6afe4518e2caae",
         "funding_insight_id": "FI-8ec3b23d30c575bf",
         "event_ids": [
           "EV-cca4bd983a16b8d9"
@@ -86,23 +86,15 @@
         "company_entity_id": "EN-8eae6c54657e94be",
         "company_canonical_entity_id": "",
         "company_name": "Blacksmith",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "$45 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 45000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "4500 万美元"
-        },
-        "announced_at": "2026-08-12",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "种子轮天使投资人",
         "role_code": "historical_or_ambiguous",
@@ -116,6 +108,38 @@
             "quote_hash": "f70d511a5e18f7edc70ba044079f07cbc4720a997edd6da9d68842f6020d7773"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8218968c489a92fb",
+        "funding_insight_id": "FI-306e35da8ebe8088",
+        "event_ids": [
+          "EV-b58eb81bf5235a33"
+        ],
+        "company_entity_id": "EN-e34d1c9011e06204",
+        "company_canonical_entity_id": "",
+        "company_name": "Railway",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "本轮天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-72c8859fe2a25c85",
+            "source_url": "https://multiples.vc/private-comps/railway",
+            "source_title": "Railway Funding, Investors & Competitors | Multiples",
+            "source_content_hash": "914fbe85560ee8b3",
+            "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
+            "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -126,6 +150,14 @@
         "source_content_hash": "716df167d49a13d7",
         "quote": "along with some prolific angels like Spencer Kimball (CEO of Cockroach Labs)",
         "quote_hash": "f70d511a5e18f7edc70ba044079f07cbc4720a997edd6da9d68842f6020d7773"
+      },
+      {
+        "source_id": "FISRC-72c8859fe2a25c85",
+        "source_url": "https://multiples.vc/private-comps/railway",
+        "source_title": "Railway Funding, Investors & Competitors | Multiples",
+        "source_content_hash": "914fbe85560ee8b3",
+        "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
+        "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
       }
     ],
     "public_profile": {
@@ -154,6 +186,10 @@
         {
           "description": "融资来源记录：Blacksmith · 历史轮次未披露 · 种子轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ba55b463daced495"
+        },
+        {
+          "description": "融资来源记录：Railway · 历史轮次未披露 · 本轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-72c8859fe2a25c85"
         }
       ],
       "contacts": [],
@@ -181,6 +217,14 @@
           "source_content_hash": "716df167d49a13d7",
           "quote": "along with some prolific angels like Spencer Kimball (CEO of Cockroach Labs)",
           "quote_hash": "f70d511a5e18f7edc70ba044079f07cbc4720a997edd6da9d68842f6020d7773"
+        },
+        {
+          "source_id": "FISRC-72c8859fe2a25c85",
+          "source_url": "https://multiples.vc/private-comps/railway",
+          "source_title": "Railway Funding, Investors & Competitors | Multiples",
+          "source_content_hash": "914fbe85560ee8b3",
+          "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
+          "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
         }
       ],
       "last_verified_at": "2026-10-02"

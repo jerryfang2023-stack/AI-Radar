@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,26 +61,38 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-04-27",
+    "first_disclosed_at": "2026-06-10",
     "latest_disclosed_at": "2026-08-26",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "lead": 1,
+      "participant": 2
     },
     "round_codes": [
+      "seed",
       "series_a",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f86fd89de87a848a",
+        "canonical_entity_id": "",
+        "name": "Naïve"
+      },
+      {
+        "entity_id": "EN-5862e00bd2052e99",
+        "canonical_entity_id": "",
+        "name": "Pramaana Labs"
+      },
       {
         "entity_id": "EN-27d914a99e32f0f2",
         "canonical_entity_id": "",
@@ -94,7 +106,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f8feb85c97fe7068",
+        "activity_id": "IA-db341703728d9ac9",
         "funding_insight_id": "FI-ce571cd60ef1b102",
         "event_ids": [
           "EV-0ea2bbb7280091f2"
@@ -134,7 +146,87 @@
         ]
       },
       {
-        "activity_id": "IA-3113857c79897b85",
+        "activity_id": "IA-822fc2f1755acc4c",
+        "funding_insight_id": "FI-06ac9b69bccd484e",
+        "event_ids": [
+          "EV-4d7f8b6f1f40e829"
+        ],
+        "company_entity_id": "EN-f86fd89de87a848a",
+        "company_canonical_entity_id": "",
+        "company_name": "Naïve",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$28.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 28500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2850 万美元"
+        },
+        "announced_at": "2026-08-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-29dadb15030915c7",
+            "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+            "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+            "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+            "quote": "the company has now raised $28.5 million in a Series A funding round led by Nexus Venture Partners",
+            "quote_hash": "4fc22fb355d4c2cc10b8941f0a0b13ef7a93f8c84d6f07f5b3f6f789939df0f3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-153bfabdeabdfc0b",
+        "funding_insight_id": "FI-297719a093cb1b40",
+        "event_ids": [
+          "EV-07cef8183aa6c17b"
+        ],
+        "company_entity_id": "EN-5862e00bd2052e99",
+        "company_canonical_entity_id": "",
+        "company_name": "Pramaana Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-35c5de2fa4b68376",
+            "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+            "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+            "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+            "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
+            "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bff21ea908049e4b",
         "funding_insight_id": "FI-1f714b499dc9751a",
         "event_ids": [
           "EV-6e516b6e68def9cf"
@@ -174,7 +266,7 @@
         ]
       },
       {
-        "activity_id": "IA-81234a77cef209cf",
+        "activity_id": "IA-7685338f44c7254a",
         "funding_insight_id": "FI-a308a87eb0e97da7",
         "event_ids": [
           "EV-dd3217aad32e6891"
@@ -182,23 +274,15 @@
         "company_entity_id": "EN-2f88f41306209dd7",
         "company_canonical_entity_id": "",
         "company_name": "Avoca AI",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "种子轮、A轮、B轮",
-        "amount_original": "超过1.25亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 125000000,
-          "min_value": 125000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 1.25 亿美元"
-        },
-        "announced_at": "2026-04-27",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -222,6 +306,22 @@
         "source_content_hash": "c050b0e757896e5c",
         "quote": "The Series A was co-led by Susquehanna Venture Capital and Nexus Venture Partners",
         "quote_hash": "172dcdf7baac6a1cd11e0762f9ca00906cb605dd539b08407ee8c8e0947085bc"
+      },
+      {
+        "source_id": "FISRC-29dadb15030915c7",
+        "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+        "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+        "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+        "quote": "the company has now raised $28.5 million in a Series A funding round led by Nexus Venture Partners",
+        "quote_hash": "4fc22fb355d4c2cc10b8941f0a0b13ef7a93f8c84d6f07f5b3f6f789939df0f3"
+      },
+      {
+        "source_id": "FISRC-35c5de2fa4b68376",
+        "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+        "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+        "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+        "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
+        "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
       },
       {
         "source_id": "FISRC-e98aedbd2eaa6410",
@@ -281,12 +381,12 @@
           "source_id": "FISRC-2d6054cc51934d57"
         },
         {
-          "description": "融资来源记录：TensorWave Inc. · B轮 · 2026-06-10 · 本轮参投 · 3.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e98aedbd2eaa6410"
+          "description": "融资来源记录：Naïve · A轮 · 2026-08-06 · 本轮领投 · $28.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-29dadb15030915c7"
         },
         {
-          "description": "融资来源记录：Avoca AI · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2315f11e10b4df0e"
+          "description": "融资来源记录：Pramaana Labs · 种子轮 · 2026-06-17 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-35c5de2fa4b68376"
         }
       ],
       "contacts": [
@@ -336,20 +436,20 @@
           "quote_hash": "172dcdf7baac6a1cd11e0762f9ca00906cb605dd539b08407ee8c8e0947085bc"
         },
         {
-          "source_id": "FISRC-e98aedbd2eaa6410",
-          "source_url": "https://siliconangle.com/2026/06/10/data-center-infrastructure-startup-tensorwave-raises-350m-help-break-nvidias-ai-chip-monopoly/",
-          "source_title": "数据中心基础设施初创公司TensorWave融资3.5亿美元，助力打破英伟达AI芯片垄断 - SiliconANGLE",
-          "source_content_hash": "1d75cf39c1185f55",
-          "quote": "Maverick Silicon, Nexus Venture Partners and Western Frontier also participated in the round",
-          "quote_hash": "2f0cca69832155a59a6375073985f6d917043546bb2ac523349ef7ebc0aee673"
+          "source_id": "FISRC-29dadb15030915c7",
+          "source_url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company",
+          "source_title": "Naïve 融资 2850 万美元，以自动化公司设立与运营中的繁琐工作",
+          "source_content_hash": "09692ed39033daa6ff86bd3559ffd4cfb5214f342cfd649b97237216c8d849d9",
+          "quote": "the company has now raised $28.5 million in a Series A funding round led by Nexus Venture Partners",
+          "quote_hash": "4fc22fb355d4c2cc10b8941f0a0b13ef7a93f8c84d6f07f5b3f6f789939df0f3"
         },
         {
-          "source_id": "FISRC-2315f11e10b4df0e",
-          "source_url": "https://www.avoca.ai/blog/avoca-raises-125m-series-b-1b-valuation",
-          "source_title": "Why We Are Building — Avoca | Avoca AI",
-          "source_content_hash": "81473027d0be2429",
-          "quote": "backed by Kleiner Perkins, Meritech, General Catalyst, Amplify Partners, Nexus Venture Partners, and Y Combinator",
-          "quote_hash": "3b2ea162be295ee50d93b66c82bdf36dc8bcf135b660987a22e1b0e42e25919f"
+          "source_id": "FISRC-35c5de2fa4b68376",
+          "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+          "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+          "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+          "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
+          "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
         }
       ],
       "last_verified_at": "2026-09-26",

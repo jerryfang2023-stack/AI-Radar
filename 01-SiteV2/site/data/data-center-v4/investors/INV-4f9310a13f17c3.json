@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,14 +73,21 @@
     "latest_disclosed_at": "2026-08-12",
     "role_counts": {
       "co_lead": 2,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
       "seed",
       "series_a",
+      "series_h",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
       {
         "entity_id": "EN-e647c818ac38b6ca",
         "canonical_entity_id": "EN-e647c818ac38b6ca",
@@ -99,7 +106,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-865b963eb4bb518d",
+        "activity_id": "IA-dd98131b777bac96",
         "funding_insight_id": "FI-208f5f069010d44d",
         "event_ids": [
           "EV-df8954acf9a13848"
@@ -139,7 +146,7 @@
         ]
       },
       {
-        "activity_id": "IA-ab81a76fd56729ae",
+        "activity_id": "IA-fe5589a2123d4ab7",
         "funding_insight_id": "FI-718b8020e0e74b3d",
         "event_ids": [
           "EV-2dea56b0e97c1685"
@@ -179,7 +186,47 @@
         ]
       },
       {
-        "activity_id": "IA-7eff84f550b66b21",
+        "activity_id": "IA-c31e665471b811f6",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+            "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e5cab6922acf0ce3",
         "funding_insight_id": "FI-24441bfba8aff1ad",
         "event_ids": [
           "EV-6f092cfc7a064d64"
@@ -237,6 +284,14 @@
         "quote_hash": "cfb6133020b31b97ad4332a99cf66d2e36c252d19d373bfe6694a8725ab94037"
       },
       {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+        "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
+      },
+      {
         "source_id": "FISRC-0a52165fbfc8575b",
         "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
         "source_title": "Elorian Raises $55M Seed at $300M Valuation for Visual AI Before Shipping a Product | MLQ News",
@@ -277,8 +332,8 @@
           "source_id": "FISRC-21a1d5a2dbf2a3b1"
         },
         {
-          "description": "融资来源记录：Elorian · 种子轮 · 2026-04 · 本轮联合领投 · $55 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0a52165fbfc8575b"
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮领投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b5e22ae086a6b353"
         }
       ],
       "contacts": [
@@ -351,12 +406,12 @@
           "quote_hash": "cfb6133020b31b97ad4332a99cf66d2e36c252d19d373bfe6694a8725ab94037"
         },
         {
-          "source_id": "FISRC-0a52165fbfc8575b",
-          "source_url": "https://mlq.ai/news/elorian-raises-55m-seed-at-300m-valuation-for-visual-ai-before-shipping-a-product/",
-          "source_title": "Elorian Raises $55M Seed at $300M Valuation for Visual AI Before Shipping a Product | MLQ News",
-          "source_content_hash": "ae17cd699a04f8e6",
-          "quote": "The round was co-led by Striker Ventures, Menlo Ventures, and Altimeter Capital",
-          "quote_hash": "14665b57fd112e3e955a3420968f8a312cf7bd39cf3e20d11b1cfae32c05027f"
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+          "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
         }
       ],
       "last_verified_at": "2026-09-26",

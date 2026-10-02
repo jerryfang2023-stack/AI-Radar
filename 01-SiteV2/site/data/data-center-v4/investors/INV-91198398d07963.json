@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,20 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-05",
-    "latest_disclosed_at": "2026-06-24",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed",
@@ -92,6 +93,11 @@
         "name": "Oro Labs"
       },
       {
+        "entity_id": "EN-6dcc023b5791108c",
+        "canonical_entity_id": "",
+        "name": "PaleBlueDot AI"
+      },
+      {
         "entity_id": "EN-e23228440ca5340f",
         "canonical_entity_id": "",
         "name": "Seltz"
@@ -99,7 +105,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-bbb9e321350e73b5",
+        "activity_id": "IA-aae55c071c1092b2",
+        "funding_insight_id": "FI-7a68c3471af400da",
+        "event_ids": [
+          "EV-80aeba0846bbd197"
+        ],
+        "company_entity_id": "EN-6dcc023b5791108c",
+        "company_canonical_entity_id": "",
+        "company_name": "PaleBlueDot AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-05cde27c80650d6f",
+            "source_url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
+            "source_title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
+            "source_content_hash": "6e420312a93cf1d9fb0c5dc88ec2b95cb97f03a273ccf1896a5f466aad867989",
+            "quote": "B Capital, an existing shareholder, participated in the Series C along with other global investors.",
+            "quote_hash": "1043fc03f0085f30abd22fdd944799f6255d995bcbb6d45705a95d31f851a03d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-320a319b7339e9c3",
         "funding_insight_id": "FI-180a459d0573eb2a",
         "event_ids": [
           "EV-f54ec32c67e9447c",
@@ -140,7 +186,7 @@
         ]
       },
       {
-        "activity_id": "IA-3ec2dfb7c18946c2",
+        "activity_id": "IA-5065cd6a839bb7ec",
         "funding_insight_id": "FI-c1d114a8d4c343c9",
         "event_ids": [
           "EV-0b6cfbf67ba2da31"
@@ -180,7 +226,7 @@
         ]
       },
       {
-        "activity_id": "IA-6d7b258f3ed365b7",
+        "activity_id": "IA-d71547f807b14f0a",
         "funding_insight_id": "FI-79b4dd0f0ff58a17",
         "event_ids": [
           "EV-26613b5bff756274"
@@ -218,9 +264,49 @@
             "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b36652e80c4b296d",
+        "funding_insight_id": "FI-7a68c3471af400da",
+        "event_ids": [
+          "EV-80aeba0846bbd197"
+        ],
+        "company_entity_id": "EN-6dcc023b5791108c",
+        "company_canonical_entity_id": "",
+        "company_name": "PaleBlueDot AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "领投B轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-da12f9a4c84d5ed2",
+            "source_url": "https://www.unite.ai/palebluedot-ai-raises-200m-series-c-at-3-2b-valuation-to-expand-super-intelligence-compute/",
+            "source_title": "PaleBlueDot AI Raises $200M Series C at $3.2B Valuation to Expand Super Intelligence Compute",
+            "source_content_hash": "002708516b76881d",
+            "quote": "The $150 million Series B valued PaleBlueDot AI at over $1 billion and was led by B Capital",
+            "quote_hash": "5e6613c7d7383f8656195eddff887d27c27ea4bd015ace20862342bccffa92a6"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-05cde27c80650d6f",
+        "source_url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
+        "source_title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
+        "source_content_hash": "6e420312a93cf1d9fb0c5dc88ec2b95cb97f03a273ccf1896a5f466aad867989",
+        "quote": "B Capital, an existing shareholder, participated in the Series C along with other global investors.",
+        "quote_hash": "1043fc03f0085f30abd22fdd944799f6255d995bcbb6d45705a95d31f851a03d"
+      },
       {
         "source_id": "FISRC-05007e2b6b43ffda",
         "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
@@ -244,6 +330,14 @@
         "source_content_hash": "065e9d351d56505a",
         "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital",
         "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
+      },
+      {
+        "source_id": "FISRC-da12f9a4c84d5ed2",
+        "source_url": "https://www.unite.ai/palebluedot-ai-raises-200m-series-c-at-3-2b-valuation-to-expand-super-intelligence-compute/",
+        "source_title": "PaleBlueDot AI Raises $200M Series C at $3.2B Valuation to Expand Super Intelligence Compute",
+        "source_content_hash": "002708516b76881d",
+        "quote": "The $150 million Series B valued PaleBlueDot AI at over $1 billion and was led by B Capital",
+        "quote_hash": "5e6613c7d7383f8656195eddff887d27c27ea4bd015ace20862342bccffa92a6"
       }
     ],
     "public_profile": {
@@ -294,16 +388,16 @@
           "source_id": "bcapital_home"
         },
         {
+          "description": "融资来源记录：PaleBlueDot AI · C轮 · 2026-10-01 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-05cde27c80650d6f"
+        },
+        {
           "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮领投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05007e2b6b43ffda"
         },
         {
           "description": "融资来源记录：Oro Labs · C轮 · 2026-03-12 · 既有投资方，本轮参投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1347e63f3abd5d34"
-        },
-        {
-          "description": "融资来源记录：Goodfire AI · B轮 · 2026-02-05 · 本轮领投 · $150M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f0d4056113fd3650"
         }
       ],
       "contacts": [
@@ -341,6 +435,14 @@
           "quote_hash": "5a44a49f589dddc7f986598627306800a43e0491082d1a7b737f0a0036bc2f08"
         },
         {
+          "source_id": "FISRC-05cde27c80650d6f",
+          "source_url": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
+          "source_title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
+          "source_content_hash": "6e420312a93cf1d9fb0c5dc88ec2b95cb97f03a273ccf1896a5f466aad867989",
+          "quote": "B Capital, an existing shareholder, participated in the Series C along with other global investors.",
+          "quote_hash": "1043fc03f0085f30abd22fdd944799f6255d995bcbb6d45705a95d31f851a03d"
+        },
+        {
           "source_id": "FISRC-05007e2b6b43ffda",
           "source_url": "https://siliconangle.com/2026/06/24/agentic-infrastructure-startup-seltz-raises-12-5m-help-ai-agents-search-web-answers/",
           "source_title": "智能体基础设施初创公司Seltz融资1250万美元，帮助AI代理搜索网络答案 - SiliconANGLE",
@@ -355,14 +457,6 @@
           "source_content_hash": "903d49978d88c371",
           "quote": "Existing investors Norwest Venture Partners, B Capital, XYZ Capital, and Felicis are also participating.",
           "quote_hash": "2758854e444ab6df3eb9d32daef6307353e57d69fcf49c16a5361ca212a26c43"
-        },
-        {
-          "source_id": "FISRC-f0d4056113fd3650",
-          "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
-          "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
-          "source_content_hash": "065e9d351d56505a",
-          "quote": "a $150 million Series B funding round at a $1.25 billion valuation. The round was led by B Capital",
-          "quote_hash": "8181c9adcb232ce7cf278ebe7c39d0c701d57cdf5448c2ffea29995f41d9dfbf"
         }
       ],
       "last_verified_at": "2026-09-25",

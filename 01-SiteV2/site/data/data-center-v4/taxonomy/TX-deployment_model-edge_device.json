@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,12 +62,14 @@
       "EV-9bade504e46219dd",
       "EV-d051cfbe3fd7e80f",
       "EV-c2718ea152dde192",
+      "EV-235f08be851797db",
       "EV-e084947e3f9e0667",
       "EV-a15da1b52d939967",
       "EV-736404028b8ad33e",
       "EV-71c4419c71d00625",
       "EV-181a7a6fd14cec08",
       "EV-4ef09c71be4c84cb",
+      "EV-42335b1bae58c172",
       "EV-8077605769c4d4eb",
       "EV-cc0d955aa68445ea",
       "EV-5bbc509a032b8309",
@@ -106,11 +108,13 @@
       "EN-955e510be03b9cc3",
       "EN-f2b9106253663314",
       "EN-10b106d9b0a27a4c",
+      "EN-d3c0a240ab92fda5",
       "EN-a35b80cf9d171015",
       "EN-48bebf25e5bd5aca",
       "EN-d37561692b664762",
       "EN-ff970851d49aee50",
       "EN-470be66761dfc2e9",
+      "EN-185ea241778d39c7",
       "EN-1a47edcb80cc76dd",
       "EN-b5318593e1260f2f",
       "EN-968e2d5b08687bf4",
@@ -140,7 +144,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-01-06",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-10-02"
   },
   "events": [
     {
@@ -592,10 +596,157 @@
       "publisher": "投中网"
     },
     {
+      "id": "EV-235f08be851797db",
+      "dataDate": "2026-10-02",
+      "date": "2026-08-05",
+      "updatedDate": "2026-08-05",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Om AI联汇完成新一轮数亿元融资",
+      "originalTitle": "",
+      "subject": "Om AI联汇",
+      "action": "funding",
+      "object": "数亿元新一轮融资",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-d3c0a240ab92fda5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d3c0a240ab92fda5"
+      ],
+      "entityNames": [
+        "Om AI联汇"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-08-05/doc-inimfshr4736366.shtml",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
       "id": "EV-e084947e3f9e0667",
-      "dataDate": "2026-09-12",
+      "dataDate": "2026-10-02",
       "date": "2026-07-15",
-      "updatedDate": "2026-09-12",
+      "updatedDate": "2026-07-15",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -603,10 +754,10 @@
       "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "面壁智能融资超50亿，估值超200亿",
-      "originalTitle": "",
+      "originalTitle": "首发| 面壁智能融资超50亿，估值超200亿",
       "subject": "面壁智能",
       "action": "funding",
-      "object": "已完成新一轮融资",
+      "object": "新一轮融资，金额未披露",
       "metrics": [],
       "locations": [],
       "marketScope": {
@@ -615,12 +766,10 @@
         "china_market_basis": [
           "event_market"
         ],
-        "source_registry_ids": [
-          "cn-sina-finance"
-        ],
+        "source_registry_ids": [],
         "claim_refs": [
-          "CL-27df6644c05f3fe1",
-          "CL-bd5e234ce59a1faa"
+          "CL-4e3a4de4da26ecf2",
+          "CL-c79386db3bd4a281"
         ]
       },
       "missingFields": [],
@@ -640,17 +789,7 @@
         "ai_market_category": [],
         "ai_market_subcategory": [],
         "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "product_form": [],
         "use_case": [],
         "industry": [],
         "deployment_model": [
@@ -677,15 +816,6 @@
           "assertionId": ""
         },
         {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
           "dimensionId": "deployment_model",
           "dimensionName": "部署形态",
           "id": "edge_device",
@@ -696,15 +826,6 @@
         }
       ],
       "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -734,8 +855,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://finance.sina.com.cn/roll/2026-07-15/doc-inihvytp7839583.shtml",
-      "publisher": "新浪财经"
+      "sourceUrl": "https://news.pedaily.cn/202607/566303.shtml",
+      "publisher": "news.pedaily.cn"
     },
     {
       "id": "EV-a15da1b52d939967",
@@ -1679,6 +1800,192 @@
       "products": [],
       "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-02-28/doc-inhpiryq3062221.shtml",
       "publisher": "新浪财经"
+    },
+    {
+      "id": "EV-42335b1bae58c172",
+      "dataDate": "2026-10-02",
+      "date": "2026-01-14",
+      "updatedDate": "2026-01-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "面向端侧AI芯片的推理引擎Quadric在边缘LLM、汽车和企业领域设计订单加速增长之际完成3000万美元C轮融资",
+      "originalTitle": "Quadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise",
+      "subject": "Quadric",
+      "action": "funding",
+      "object": "$30M Series C",
+      "metrics": [
+        "$30M",
+        "$30 million",
+        "$72 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-185ea241778d39c7"
+      ],
+      "entityNames": [
+        "Quadric"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+      "publisher": "quadric.ai"
     },
     {
       "id": "EV-8077605769c4d4eb",
@@ -5195,7 +5502,9 @@
         {
           "name": "Step Edge",
           "type": "模型",
-          "ownerNames": []
+          "ownerNames": [
+            "StepFun"
+          ]
         }
       ],
       "sourceUrl": "https://ithome.com/0/975/681.htm",
@@ -7557,9 +7866,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
         "TX-technology-multimodal",
+        "TX-product_form-chip_accelerator",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-vision_language"
@@ -7590,6 +7899,29 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-09-11",
       "lastSeen": "2026-09-15"
+    },
+    {
+      "id": "EN-d3c0a240ab92fda5",
+      "name": "Om AI联汇",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-235f08be851797db"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-05",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-a35b80cf9d171015",
@@ -7630,8 +7962,8 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-ai_market_category-infrastructure_compute",
         "TX-product_form-chip_accelerator",
+        "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-development_deployment",
         "TX-product_form-ai_infrastructure_software",
         "TX-technology-on_device",
@@ -7712,6 +8044,30 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-185ea241778d39c7",
+      "name": "Quadric",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-42335b1bae58c172"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-automotive_transportation",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-14",
+      "lastSeen": "2026-10-02"
+    },
+    {
       "id": "EN-1a47edcb80cc76dd",
       "name": "联想亮相阿里云栖大会",
       "entityType": "organization_candidate",
@@ -7773,13 +8129,18 @@
       "eventIds": [
         "EV-375d04f7cc9746c6",
         "EV-5ea74d357e73366b",
+        "EV-85506f9f86779a6d",
+        "EV-a1addb827a7ac17c",
+        "EV-95385e7d45e69784",
         "EV-a89bf7c0c4203ce2",
         "EV-48075ca70a5458ec",
         "EV-b3c7c4bff17063d8",
         "EV-79a0bbe8b8623b28",
         "EV-614fb5bb3cfc2519",
         "EV-59882383f82f215d",
+        "EV-f60bda3cfc54d5c0",
         "EV-18e3fa9303bdba4a",
+        "EV-3d5daffd1cb9521b",
         "EV-7311986c33501189",
         "EV-212aa5b375abf8a7",
         "EV-d5c00f302e1f808c",
@@ -7811,12 +8172,12 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
         "TX-target_user-developer",
+        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-chip_accelerator",
-        "TX-product_form-model",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
@@ -7827,8 +8188,8 @@
         "EN-c70eca6b0f88f44d",
         "EN-d84c1d1c315bc2f8"
       ],
-      "firstSeen": "2026-03-12",
-      "lastSeen": "2026-09-28"
+      "firstSeen": "2026-01-28",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-87c730bc4f32459e",
@@ -7981,7 +8342,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",
@@ -8002,9 +8363,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-end_user_application",
         "TX-technology-agentic_execution",
         "TX-use_case-physical_automation",
+        "TX-product_form-end_user_application",
         "TX-technology-embodied_ai",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
@@ -8029,16 +8390,16 @@
       "viewpointIds": [],
       "classificationRefs": [
         "TX-technology-agentic_execution",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
-        "TX-industry-healthcare_life_sciences",
         "TX-industry-financial_services",
+        "TX-industry-healthcare_life_sciences",
+        "TX-product_form-chip_accelerator",
         "TX-industry-government_public_sector",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-open_weights",
-        "TX-deployment_model-cloud",
-        "TX-technology-long_context"
+        "TX-technology-long_context",
+        "TX-deployment_model-cloud"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-09",
@@ -8062,7 +8423,10 @@
         "EV-59870accd54d5efd",
         "EV-55e7c286e95be405",
         "EV-6f092cfc7a064d64",
+        "EV-11d7d54272c6bb41",
         "EV-d4e44892226be468",
+        "EV-903f06f47afd671a",
+        "EV-fb3d98bc97f91047",
         "EV-1ac32035d5e425e1",
         "EV-8ae771f26c02f7c4",
         "EV-bbb3ed2040b40e3f",
@@ -8123,25 +8487,25 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-aerospace_defense",
-        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
-        "TX-use_case-physical_automation",
-        "TX-product_form-chip_accelerator",
         "TX-product_form-model",
-        "TX-use_case-research_discovery",
-        "TX-technology-multimodal",
-        "TX-technology-embodied_ai",
-        "TX-use_case-software_development",
-        "TX-industry-media_entertainment",
         "TX-use_case-security_operations",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-physical_automation",
+        "TX-industry-media_entertainment",
+        "TX-technology-multimodal",
+        "TX-industry-aerospace_defense",
+        "TX-technology-embodied_ai",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-code_generation",
+        "TX-technology-speech_audio",
+        "TX-use_case-research_discovery",
+        "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-code_generation",
         "TX-technology-vision_language",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
-        "TX-technology-speech_audio",
         "TX-technology-mixture_of_experts"
       ],
       "relatedEntityIds": [
@@ -8152,7 +8516,7 @@
         "EN-a3c3b987b09fc1bb"
       ],
       "firstSeen": "2026-06-02",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-e21783b898b55a31",
@@ -8194,17 +8558,17 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-automotive_transportation",
+        "TX-product_form-model",
         "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
         "TX-target_user-business_user",
         "TX-target_user-developer",
+        "TX-use_case-content_creation",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
-        "TX-use_case-content_creation",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
         "TX-technology-long_context"
@@ -8228,28 +8592,47 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-1c7050585c7f4791",
+        "EV-42a74865c9b654bb",
+        "EV-5b5237105fc868cd",
+        "EV-98ea446e097a9a95",
+        "EV-eb2796fc4bcc5ac0",
+        "EV-bccd915b61c48911",
+        "EV-51221c8be7d20b5d",
         "EV-2470b13ea55496d0",
         "EV-59870accd54d5efd",
         "EV-83697c1162a5faf9",
+        "EV-9f886463e1660f7a",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
+        "EV-3f9d420719641eda",
         "EV-a0ca934522418c0b",
         "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
+        "EV-002f1b7abaf28827",
+        "EV-71d7d8bbaa623228",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
         "EV-2bb63a3015195f9b",
         "EV-7f3298069258b3ea",
         "EV-43b56d49df9a73a2",
+        "EV-b61af70f81354b8e",
         "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
-        "EV-5762fe51987bc5ff",
+        "EV-9cf819fafc04ca0c",
+        "EV-d85ea5150230ee56",
         "EV-6cb8979f92cf74ce",
+        "EV-1891e6540ad2c1e0",
+        "EV-4e4ae1578720e907",
+        "EV-cd2970524c27dffb",
+        "EV-ed73cd2c438a470d",
         "EV-ef1de880e4ef9f75",
+        "EV-3f979612b8a14b28",
+        "EV-81f20b7ee39e3e19",
         "EV-63f49f303a80a6a0",
         "EV-0e424af71cfe12f8",
         "EV-67804da6b04fdcc5",
@@ -8519,38 +8902,40 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-aerospace_defense",
-        "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-sales",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
+        "TX-use_case-legal_compliance",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-multimodal",
+        "TX-industry-aerospace_defense",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
-        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-code_generation",
+        "TX-technology-speech_audio",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-model",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-technology-embodied_ai",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
-        "TX-technology-speech_audio",
-        "TX-use_case-legal_compliance",
-        "TX-deployment_model-cloud",
         "TX-technology-computer_use",
+        "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",
         "TX-technology-tool_use"
       ],
@@ -8576,7 +8961,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-44a9bf3b11abea5c",
@@ -8642,6 +9027,7 @@
       "eventIds": [
         "EV-66f24f6db71cc011",
         "EV-56c0d1d5b0c07971",
+        "EV-d3c5eb69eb9d397a",
         "EV-f282ab8740ff0096",
         "EV-2f0f3200b9800877",
         "EV-545bef6ff60cf3b2",
@@ -8781,7 +9167,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-dd920a8cd166f486",
@@ -8821,46 +9207,67 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-39247400114d59dd",
+        "EV-72c91001092a54bd",
+        "EV-4c5dc2fc6d805b3f",
+        "EV-eb2796fc4bcc5ac0",
+        "EV-471bf7c00cc06c85",
+        "EV-1ef8979f39a2ccc5",
+        "EV-f53bfa2bb0275904",
         "EV-2470b13ea55496d0",
+        "EV-6d92f16f6079fe38",
         "EV-26a5749d8604455a",
         "EV-375d04f7cc9746c6",
         "EV-9cf0ca490e9a6f4a",
+        "EV-fb14f97f5b644c1f",
         "EV-37cc66ca2e29a78c",
+        "EV-85506f9f86779a6d",
         "EV-532031a0c390a2e3",
         "EV-4f6e481c90ff0e3c",
-        "EV-c32dd87e1f72b09a",
         "EV-40fd274ae86434b8",
         "EV-10f04014fb3b62ff",
+        "EV-c32dd87e1f72b09a",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
+        "EV-a1addb827a7ac17c",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
-        "EV-e70a48e36e99d57a",
         "EV-55e7c286e95be405",
+        "EV-e70a48e36e99d57a",
         "EV-83728e3b6c7736ce",
         "EV-2dea56b0e97c1685",
-        "EV-da1655ecfaf35feb",
         "EV-e3792591090281c6",
         "EV-8b7cbb66a33a945d",
         "EV-4eaf3aabecae6016",
         "EV-87432dbb99cd6033",
         "EV-6e516b6e68def9cf",
         "EV-e41fc65eb014893f",
-        "EV-463cb26b5e03c7f7",
+        "EV-3e003f3fced9337a",
         "EV-13ec78dfdbca678b",
         "EV-040fc355bc12a750",
         "EV-7abd8ec418f1e7f3",
         "EV-80e54c9a390da293",
+        "EV-4a73829a143cf3fc",
         "EV-4118202ed0f91895",
         "EV-236cbc2d64f0c455",
+        "EV-aa6b83d9a5f77d41",
         "EV-a00763037a94d512",
+        "EV-838707b8974c3dde",
+        "EV-fb3d98bc97f91047",
         "EV-0e84a2f49d765ce3",
         "EV-784c98f1fde32c73",
+        "EV-d85ea5150230ee56",
         "EV-467d1a701d21327d",
+        "EV-4e4ae1578720e907",
+        "EV-20e5d57a05b69a95",
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
         "EV-68d5a02e5213b43c",
+        "EV-2edec0302b3e0626",
+        "EV-c503664bc5c24b10",
+        "EV-ee9a4433b4e7715e",
+        "EV-688ef84a4024e075",
         "EV-4087ac533a9a3b3d",
         "EV-ee40b65cc5f85c36",
         "EV-ad6c755f7cf588c4",
@@ -9094,60 +9501,61 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-use_case-security_operations",
+        "TX-product_form-enterprise_software_platform",
+        "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-industry-media_entertainment",
+        "TX-industry-legal_services",
+        "TX-industry-construction_real_estate",
+        "TX-industry-agriculture",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-multimodal",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
-        "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
+        "TX-product_form-chip_accelerator",
+        "TX-industry-retail_ecommerce",
+        "TX-use_case-customer_support",
+        "TX-technology-code_generation",
+        "TX-technology-speech_audio",
         "TX-industry-energy_utilities",
-        "TX-use_case-physical_automation",
         "TX-ai_market_application-chips",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-chip_accelerator",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-education",
         "TX-product_form-robotic_system",
-        "TX-technology-multimodal",
         "TX-product_form-ai_infrastructure_software",
-        "TX-industry-financial_services",
         "TX-industry-telecommunications",
-        "TX-technology-embodied_ai",
         "TX-industry-government_public_sector",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
         "TX-industry-professional_services",
-        "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-industry-agriculture",
-        "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality",
-        "TX-industry-legal_services",
-        "TX-technology-code_generation",
         "TX-product_form-model_api_service",
         "TX-technology-open_weights",
-        "TX-use_case-customer_support",
-        "TX-technology-speech_audio",
-        "TX-deployment_model-cloud",
         "TX-technology-long_context",
         "TX-technology-mixture_of_experts",
         "TX-technology-reasoning",
+        "TX-deployment_model-cloud",
         "TX-technology-tool_use"
       ],
       "relatedEntityIds": [
+        "EN-240389f4b730bad4",
         "EN-9fbf261b62c1d7c0",
         "EN-7d1507284a5757ca",
         "EN-7d3194f79e645c42",
@@ -9176,7 +9584,7 @@
         "EN-171fa23d27b5894b"
       ],
       "firstSeen": "2025-03-18",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-c3ce0cc92b48bbd6",
@@ -9214,11 +9622,19 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-3a7e1e2c46daaa76",
+        "EV-383a1cc6f0c68d6a",
         "EV-87432dbb99cd6033",
+        "EV-ed65f3187aa6aa40",
         "EV-d4d7b019ff0015df",
         "EV-27b69ea604475b72",
+        "EV-8ea9e79f7edcb94f",
         "EV-f8c3a83d883c9b22",
+        "EV-622f5d9407564ae3",
+        "EV-010d9a80536b3f11",
         "EV-5a1cfb0d6e47e552",
+        "EV-4fe0a7f6c02e9df5",
+        "EV-a72d111131f8de60",
         "EV-40dbd71782c11373",
         "EV-b69f78a4919cb1bc",
         "EV-0fc718ab409cdcf5",
@@ -9273,22 +9689,22 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-developer",
         "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-technology-multimodal",
+        "TX-target_user-developer",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
         "TX-target_user-researcher",
         "TX-use_case-research_discovery",
-        "TX-technology-multimodal",
         "TX-use_case-software_development",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device"
       ],
       "relatedEntityIds": [],
-      "firstSeen": "2026-05-08",
-      "lastSeen": "2026-10-01"
+      "firstSeen": "2026-04-24",
+      "lastSeen": "2026-10-02"
     }
   ],
   "fde": [
@@ -9682,6 +10098,78 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-196189d55bd383f7",
+      "snapshotKey": "196189d55bd383f7",
+      "snapshotId": "HWS-c3a592781ef2a55e",
+      "eventId": "EV-42335b1bae58c172",
+      "eventIds": [
+        "EV-42335b1bae58c172"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Quadric",
+      "subject": "Quadric",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "30",
+          "unit": "$M",
+          "fact_ref": "HWF-f285c6cf0db3953e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-f285c6cf0db3953e",
+          "fact_type": "product",
+          "observed_at": "2026-01-14",
+          "subject_entity_id": "EN-185ea241778d39c7",
+          "subject_name": "Quadric",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "30",
+          "unit": "$M",
+          "source_quote": "Back to Press ReleasesQuadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise\nTripling product revenues, comprehensive developer tools, and scalable inference IP for vision and LLM workloads, position Quadric as the platform for on-device AI.\nJanuary 14, 2026\nBURLINGAME, Calif., Jan. 14, 2026 /PRNewswire/ -- Quadric®, the inference engine that powers on-device AI chips, today announced an oversubscribed $30 million Series C funding round, bringing total capital raised to $72 million.\nACCELERATE Fund, managed by BEENEXT Capital Management, led the round. Uncork Capital returned with one of the largest insider commitments through its opportunity fund, joined by insider Pear VC. New investors include Volta, Gentree, Wanxiang America, Pivotal, and Silicon Catalyst Ventures.\nThe funding comes as Quadric hits a revenue inflection: product revenues more than tripled in 2025 vs. 2024. Quadric is entering 2026 with accelerating design-win momentum, driven by growing adoption of the General Purpose NPU (GPNPU",
+          "event_refs": [
+            "EV-42335b1bae58c172"
+          ],
+          "claim_ref": "CL-65951d326bebf27c",
+          "source_refs": [
+            "SA-80c1ccc9c4d7e230"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+      "entityIds": [
+        "EN-185ea241778d39c7"
+      ]
+    },
     {
       "id": "HWC-fde7880cbf9629d0",
       "snapshotKey": "fde7880cbf9629d0",

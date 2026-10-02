@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,23 +62,56 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-20",
-    "latest_disclosed_at": "2026-05-20",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-1639794e0ae1d86d",
+        "activity_id": "IA-1b43b9a00a37d217",
+        "funding_insight_id": "FI-cbf93da745326644",
+        "event_ids": [
+          "EV-3e92fba5502f1aba",
+          "EV-31579660b945ef01"
+        ],
+        "company_entity_id": "EN-586937124e151c46",
+        "company_canonical_entity_id": "EN-586937124e151c46",
+        "company_name": "Suno",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "参投B轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-92bdc04603fa5ff2",
+            "source_url": "https://multiples.vc/private-comps/suno",
+            "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "410c3c737fbffa4a",
+            "quote": "raised a $125 million Series B funding round on May 21, 2024, led by Lightspeed Venture Partners with participation from Nat Friedman, Daniel Gross, Matrix, and Founder Collective.",
+            "quote_hash": "c22714c76aea0223ddb37fa957ed0df2634d3bda436a8831dfabdc69b6108d1b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-18fb7293eaddf2a2",
         "funding_insight_id": "FI-664cc90f57688153",
         "event_ids": [
           "EV-44a4e92c03a31ab1"
@@ -86,23 +119,15 @@
         "company_entity_id": "EN-ce65fa41b16c33ff",
         "company_canonical_entity_id": "",
         "company_name": "Viktor",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "€64.7 million ($75 million)",
-        "amount_normalized": {
-          "currency": "EUR",
-          "value": 64700000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "6470 万欧元"
-        },
-        "announced_at": "2026-05-20",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -119,6 +144,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-92bdc04603fa5ff2",
+        "source_url": "https://multiples.vc/private-comps/suno",
+        "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "410c3c737fbffa4a",
+        "quote": "raised a $125 million Series B funding round on May 21, 2024, led by Lightspeed Venture Partners with participation from Nat Friedman, Daniel Gross, Matrix, and Founder Collective.",
+        "quote_hash": "c22714c76aea0223ddb37fa957ed0df2634d3bda436a8831dfabdc69b6108d1b"
+      },
       {
         "source_id": "FISRC-ce83b857608dabeb",
         "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",
@@ -138,12 +171,24 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：Suno · 历史轮次未披露 · 参投B轮融资。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-92bdc04603fa5ff2"
+        },
+        {
           "description": "融资来源记录：Viktor · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-92bdc04603fa5ff2",
+          "source_url": "https://multiples.vc/private-comps/suno",
+          "source_title": "Suno Revenue, Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "410c3c737fbffa4a",
+          "quote": "raised a $125 million Series B funding round on May 21, 2024, led by Lightspeed Venture Partners with participation from Nat Friedman, Daniel Gross, Matrix, and Founder Collective.",
+          "quote_hash": "c22714c76aea0223ddb37fa957ed0df2634d3bda436a8831dfabdc69b6108d1b"
+        },
         {
           "source_id": "FISRC-ce83b857608dabeb",
           "source_url": "https://www.eu-startups.com/2026/05/ai-coworker-startup-viktor-raises-e64-7-million-series-a-after-hitting-e12-9-million-revenue-run-rate-within-10-weeks-of-launch/",

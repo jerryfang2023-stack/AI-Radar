@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2023-06-28",
-    "latest_disclosed_at": "2026-08-01",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "co_lead": 1,
       "participant": 3
     },
     "round_codes": [
       "seed",
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
@@ -93,11 +95,56 @@
         "entity_id": "FICO-sycamore",
         "canonical_entity_id": "",
         "name": "Sycamore"
+      },
+      {
+        "entity_id": "EN-0d0dd4bc07420a2c",
+        "canonical_entity_id": "",
+        "name": "Volantis"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-f5bfc6f6f0dfac95",
+        "activity_id": "IA-901d6308f2f5464e",
+        "funding_insight_id": "FI-3a45fb24c3af4f80",
+        "event_ids": [
+          "EV-39247400114d59dd"
+        ],
+        "company_entity_id": "EN-0d0dd4bc07420a2c",
+        "company_canonical_entity_id": "",
+        "company_name": "Volantis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$88 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 88000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8800 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f61726ece8d567da",
+            "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+            "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+            "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+            "quote": "an $88 million Series A co-led by Lachy Groom and Abstract Ventures",
+            "quote_hash": "42cecc3b0d340b0b25d716ce06abbccb04c7edf38eee2740a3c3f443d7c3b62c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fa8ae5905bd6ab6f",
         "funding_insight_id": "FI-035c211b764aa7fa",
         "event_ids": [
           "EV-268e5c3d36e3ed28"
@@ -137,7 +184,7 @@
         ]
       },
       {
-        "activity_id": "IA-17ccd67a6f31ed00",
+        "activity_id": "IA-9fbcbf45e4e956c9",
         "funding_insight_id": "FI-91df568a315de93f",
         "event_ids": [
           "EV-b695dedc9acda5dc",
@@ -179,7 +226,7 @@
         ]
       },
       {
-        "activity_id": "IA-ec2bf59b5598d633",
+        "activity_id": "IA-a745a85c7c05590f",
         "funding_insight_id": "FI-3b3efb8e20671184",
         "event_ids": [
           "EV-acf1bcb321414706"
@@ -220,6 +267,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-f61726ece8d567da",
+        "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+        "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+        "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+        "quote": "an $88 million Series A co-led by Lachy Groom and Abstract Ventures",
+        "quote_hash": "42cecc3b0d340b0b25d716ce06abbccb04c7edf38eee2740a3c3f443d7c3b62c"
+      },
       {
         "source_id": "FISRC-e6ee0cd472bfb792",
         "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
@@ -281,16 +336,16 @@
       "experience_summary": "公开机构介绍聚焦种子和早期投资，官网称其提供创始人支持；未补充未披露的组合公司或绩效数据。",
       "track_record": [
         {
+          "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮联合领投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f61726ece8d567da"
+        },
+        {
           "description": "融资来源记录：Foundational Industries · 种子轮 · 2026-08-01 · 本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e6ee0cd472bfb792"
         },
         {
           "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮参投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d354011359557f2f"
-        },
-        {
-          "description": "融资来源记录：Parabola · B轮 · 2023-06-28 · 本轮参投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-20776ee2d93a4e99"
         }
       ],
       "contacts": [
@@ -312,6 +367,14 @@
           "quote_hash": "ee09641fb42a8711c08529c77f2d6aae1a1431fdf263ec78808ba995d58d4625"
         },
         {
+          "source_id": "FISRC-f61726ece8d567da",
+          "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+          "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+          "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+          "quote": "an $88 million Series A co-led by Lachy Groom and Abstract Ventures",
+          "quote_hash": "42cecc3b0d340b0b25d716ce06abbccb04c7edf38eee2740a3c3f443d7c3b62c"
+        },
+        {
           "source_id": "FISRC-e6ee0cd472bfb792",
           "source_url": "https://aiweekly.co/alerts/foundational-industries-raises-25m-to-build-ai-run-factories",
           "source_title": "Foundational Industries 筹集 2500 万美元，打造 AI 运营工厂",
@@ -326,14 +389,6 @@
           "source_content_hash": "7c851906b2d8f45f",
           "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
           "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
-        },
-        {
-          "source_id": "FISRC-20776ee2d93a4e99",
-          "source_url": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup/",
-          "source_title": "工作流自动化初创公司 Parabola 获 2400 万美元融资",
-          "source_content_hash": "3674f7931a74432f",
-          "quote": "Abstract Ventures",
-          "quote_hash": "8c5f16a0ffaec07812843823b0bb8b9211e639f8438ed0889288eeec2fde1386"
         }
       ],
       "last_verified_at": "2026-09-26",

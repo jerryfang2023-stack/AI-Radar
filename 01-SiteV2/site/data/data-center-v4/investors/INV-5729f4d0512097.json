@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-14",
-    "latest_disclosed_at": "2026-07-28",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "participant": 2
+      "participant": 4
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-70729a266daea738",
+        "canonical_entity_id": "",
+        "name": "Ascerta"
+      },
       {
         "entity_id": "EN-67e05af6c6502566",
         "canonical_entity_id": "",
@@ -87,11 +94,96 @@
         "entity_id": "EN-2be663431f007250",
         "canonical_entity_id": "",
         "name": "Harmony"
+      },
+      {
+        "entity_id": "EN-d5dee8daa2eb5cc5",
+        "canonical_entity_id": "",
+        "name": "Zenity"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-c6fe0e05dd82cab6",
+        "activity_id": "IA-925791568ce3fcb7",
+        "funding_insight_id": "FI-9641aad793c547e7",
+        "event_ids": [
+          "EV-2ab7252166b42c03"
+        ],
+        "company_entity_id": "EN-70729a266daea738",
+        "company_canonical_entity_id": "",
+        "company_name": "Ascerta",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$18 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 18000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1800 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ae6b18ce755c2a8",
+            "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
+            "source_title": "Ascerta 融资 1800 万美元，帮助企业最大化 AI 投资回报率",
+            "source_content_hash": "521590bc01ad839c146800f3914ce17726a6317d32a595d321959aefa581ffca",
+            "quote": "an $18 million Series A led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and earlier investors FUSE, Tola Capital, and Gaia Ventures",
+            "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-533a6739b6c07fc9",
+        "funding_insight_id": "FI-2ce1994709f52a05",
+        "event_ids": [
+          "EV-f36f5f7b24b2bfde"
+        ],
+        "company_entity_id": "EN-d5dee8daa2eb5cc5",
+        "company_canonical_entity_id": "",
+        "company_name": "Zenity",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$125 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.25 亿美元"
+        },
+        "announced_at": "2026-08-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bf361b38b905ca3",
+            "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+            "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+            "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
+            "quote": "New investors Qumra Capital, SoftBank Vision Fund 2, Hitachi Ventures and LG Technology Ventures joined the round",
+            "quote_hash": "d5be7f5cb4019d51ad8e98d3a313040c2d36f4907ad52a8b93520922e8711733"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6a574dad362f2460",
         "funding_insight_id": "FI-b8d28ad363a47e7a",
         "event_ids": [
           "EV-5f3ccb941a2fe5d7"
@@ -131,7 +223,7 @@
         ]
       },
       {
-        "activity_id": "IA-9acac455f5c19ae9",
+        "activity_id": "IA-361fc6195a16bfac",
         "funding_insight_id": "FI-f088ae47d2a3f35a",
         "event_ids": [
           "EV-e8d1de5c77f32b9c"
@@ -172,6 +264,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-1ae6b18ce755c2a8",
+        "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
+        "source_title": "Ascerta 融资 1800 万美元，帮助企业最大化 AI 投资回报率",
+        "source_content_hash": "521590bc01ad839c146800f3914ce17726a6317d32a595d321959aefa581ffca",
+        "quote": "an $18 million Series A led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and earlier investors FUSE, Tola Capital, and Gaia Ventures",
+        "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
+      },
+      {
+        "source_id": "FISRC-7bf361b38b905ca3",
+        "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+        "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+        "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
+        "quote": "New investors Qumra Capital, SoftBank Vision Fund 2, Hitachi Ventures and LG Technology Ventures joined the round",
+        "quote_hash": "d5be7f5cb4019d51ad8e98d3a313040c2d36f4907ad52a8b93520922e8711733"
+      },
       {
         "source_id": "FISRC-fe66d902ece1db68",
         "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
@@ -242,12 +350,16 @@
           "source_id": "hitachi_ventures_press_2025"
         },
         {
-          "description": "融资来源记录：Harmony · 种子轮 · 2026-07-28 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fe66d902ece1db68"
+          "description": "融资来源记录：Ascerta · A轮 · 2026-09-30 · 本轮参投 · $18 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1ae6b18ce755c2a8"
         },
         {
-          "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮参投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9c4c0f115d1f38be"
+          "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7bf361b38b905ca3"
+        },
+        {
+          "description": "融资来源记录：Harmony · 种子轮 · 2026-07-28 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fe66d902ece1db68"
         }
       ],
       "contacts": [
@@ -284,20 +396,28 @@
           "quote_hash": "7c097cfa6dfedac13dd10565bc80abf5489fb4c83879c78796ef6b3764a0fbde"
         },
         {
+          "source_id": "FISRC-1ae6b18ce755c2a8",
+          "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
+          "source_title": "Ascerta 融资 1800 万美元，帮助企业最大化 AI 投资回报率",
+          "source_content_hash": "521590bc01ad839c146800f3914ce17726a6317d32a595d321959aefa581ffca",
+          "quote": "an $18 million Series A led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and earlier investors FUSE, Tola Capital, and Gaia Ventures",
+          "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
+        },
+        {
+          "source_id": "FISRC-7bf361b38b905ca3",
+          "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+          "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+          "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
+          "quote": "New investors Qumra Capital, SoftBank Vision Fund 2, Hitachi Ventures and LG Technology Ventures joined the round",
+          "quote_hash": "d5be7f5cb4019d51ad8e98d3a313040c2d36f4907ad52a8b93520922e8711733"
+        },
+        {
           "source_id": "FISRC-fe66d902ece1db68",
           "source_url": "https://www.businessinsider.com/harmony-pitch-deck-ai-startup-34-million-seed-founders-cisco-2026-7",
           "source_title": "AI 初创公司 Harmony 在创始人离开思科后获得 3400 万美元种子轮融资",
           "source_content_hash": "dd2e48aec8384eca",
           "quote": "Hitachi Ventures, Fin Capital, Mercer Ventures, and Operator Partners also participated in Harmony's seed round.",
           "quote_hash": "c8cb081b2609863215379438fff46d03b2db5e96296d6ae1a443310805779284"
-        },
-        {
-          "source_id": "FISRC-9c4c0f115d1f38be",
-          "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
-          "source_title": "Graphon AI 获 830 万美元种子轮融资，为企业 AI 构建预模型智能层",
-          "source_content_hash": "941bad55959a928e",
-          "quote": "with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, and others",
-          "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
         }
       ],
       "last_verified_at": "2026-09-26",

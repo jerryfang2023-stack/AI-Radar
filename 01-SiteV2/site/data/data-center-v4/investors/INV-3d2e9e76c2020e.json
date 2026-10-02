@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,83 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-13",
-    "latest_disclosed_at": "2026-08-13",
+    "first_disclosed_at": "2026-05-20",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "participant": 1
+      "participant": 3
     },
     "round_codes": [
-      "other"
+      "other",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c0b0109d9439de57",
         "canonical_entity_id": "",
         "name": "GitHub"
+      },
+      {
+        "entity_id": "EN-ee314fcf465563d0",
+        "canonical_entity_id": "",
+        "name": "NanoCo"
+      },
+      {
+        "entity_id": "EN-db44daf2e965f230",
+        "canonical_entity_id": "",
+        "name": "Photon"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-ee41b4e4a24dcc8e",
+        "activity_id": "IA-7031d6a6455ec279",
+        "funding_insight_id": "FI-05c9bf808699d9dc",
+        "event_ids": [
+          "EV-f3d33551ace62c12"
+        ],
+        "company_entity_id": "EN-db44daf2e965f230",
+        "company_canonical_entity_id": "",
+        "company_name": "Photon",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$4.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "450 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-199e9ff185705c78",
+            "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+            "source_title": "Photon 为移动应用举办了一场葬礼。现在它获得 450 万美元，用于以 AI 智能体取代移动应用。",
+            "source_content_hash": "bc2ffb55206ece2a19a0d0f12702cb15e798cce8ba944df36d74566be93e4c8c",
+            "quote": "with participation from Vercel, HongShan, Z Fellows, Llama Ventures, Karman, and other angel investors",
+            "quote_hash": "ac15258cb66619a32697a75618de792e84a4ec14c9481f0569cbe019e775c33a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e091daaece5544dd",
         "funding_insight_id": "FI-d856b9470e389a68",
         "event_ids": [
           "EV-75452672c9976d73"
@@ -124,9 +175,57 @@
             "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
           }
         ]
+      },
+      {
+        "activity_id": "IA-ed123f4d94725485",
+        "funding_insight_id": "FI-c6f29c50d1e78506",
+        "event_ids": [
+          "EV-216f840c4af1d3fb"
+        ],
+        "company_entity_id": "EN-ee314fcf465563d0",
+        "company_canonical_entity_id": "",
+        "company_name": "NanoCo",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$12 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1200 万美元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-056bd835d7bc912e",
+            "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
+            "source_title": "NanoClaw 创始人拒绝 2000 万美元收购要约，转而完成 1200 万美元种子轮融资",
+            "source_content_hash": "43a06c7b097056dbcfcc0be744210b8fa02f0be69b16f886ed7437d32eba1205",
+            "quote": "The funding was led by Valley Capital Partners and saw participation from Docker, Vercel, Monday.com, Slow Ventures, and angels like Clem Delangue, CEO of Hugging Face.",
+            "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-199e9ff185705c78",
+        "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+        "source_title": "Photon 为移动应用举办了一场葬礼。现在它获得 450 万美元，用于以 AI 智能体取代移动应用。",
+        "source_content_hash": "bc2ffb55206ece2a19a0d0f12702cb15e798cce8ba944df36d74566be93e4c8c",
+        "quote": "with participation from Vercel, HongShan, Z Fellows, Llama Ventures, Karman, and other angel investors",
+        "quote_hash": "ac15258cb66619a32697a75618de792e84a4ec14c9481f0569cbe019e775c33a"
+      },
       {
         "source_id": "FISRC-08365977cd80206b",
         "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
@@ -134,6 +233,14 @@
         "source_content_hash": "269f33be0068a71b",
         "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
         "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+      },
+      {
+        "source_id": "FISRC-056bd835d7bc912e",
+        "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
+        "source_title": "NanoClaw 创始人拒绝 2000 万美元收购要约，转而完成 1200 万美元种子轮融资",
+        "source_content_hash": "43a06c7b097056dbcfcc0be744210b8fa02f0be69b16f886ed7437d32eba1205",
+        "quote": "The funding was led by Valley Capital Partners and saw participation from Docker, Vercel, Monday.com, Slow Ventures, and angels like Clem Delangue, CEO of Hugging Face.",
+        "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
       }
     ],
     "public_profile": {
@@ -154,8 +261,16 @@
           "source_id": "PFSRC-INV-3d2e9e76c2020e-1"
         },
         {
+          "description": "融资来源记录：Photon · 种子轮 · 2026-10-01 · 本轮参投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-199e9ff185705c78"
+        },
+        {
           "description": "融资来源记录：GitHub · 其他融资 · 2026-08-13 · 本轮参投 · $500,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-08365977cd80206b"
+        },
+        {
+          "description": "融资来源记录：NanoCo · 种子轮 · 2026-05-20 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-056bd835d7bc912e"
         }
       ],
       "contacts": [],
@@ -169,12 +284,28 @@
           "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
         },
         {
+          "source_id": "FISRC-199e9ff185705c78",
+          "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+          "source_title": "Photon 为移动应用举办了一场葬礼。现在它获得 450 万美元，用于以 AI 智能体取代移动应用。",
+          "source_content_hash": "bc2ffb55206ece2a19a0d0f12702cb15e798cce8ba944df36d74566be93e4c8c",
+          "quote": "with participation from Vercel, HongShan, Z Fellows, Llama Ventures, Karman, and other angel investors",
+          "quote_hash": "ac15258cb66619a32697a75618de792e84a4ec14c9481f0569cbe019e775c33a"
+        },
+        {
           "source_id": "FISRC-08365977cd80206b",
           "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
           "source_title": "50个开源项目教会我们的AI时代安全之道",
           "source_content_hash": "269f33be0068a71b",
           "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
           "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+        },
+        {
+          "source_id": "FISRC-056bd835d7bc912e",
+          "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
+          "source_title": "NanoClaw 创始人拒绝 2000 万美元收购要约，转而完成 1200 万美元种子轮融资",
+          "source_content_hash": "43a06c7b097056dbcfcc0be744210b8fa02f0be69b16f886ed7437d32eba1205",
+          "quote": "The funding was led by Valley Capital Partners and saw participation from Docker, Vercel, Monday.com, Slow Ventures, and angels like Clem Delangue, CEO of Hugging Face.",
+          "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
         }
       ],
       "last_verified_at": "2026-10-02"

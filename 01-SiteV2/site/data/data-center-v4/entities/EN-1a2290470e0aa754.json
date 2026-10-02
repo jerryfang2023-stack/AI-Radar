@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,19 +63,27 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-39247400114d59dd",
+      "EV-55581be112058bd5",
+      "EV-bbea3352983c2033",
       "EV-181cd28d97c4e61d",
       "EV-3d93d1da8cb64462",
       "EV-7f3298069258b3ea",
-      "EV-545bef6ff60cf3b2"
+      "EV-545bef6ff60cf3b2",
+      "EV-224077c33b02562c"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-03-12",
-    "lastSeen": "2026-09-26",
+    "firstSeen": "2026-01-14",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-39247400114d59dd",
+        "EV-55581be112058bd5",
+        "EV-bbea3352983c2033",
+        "EV-224077c33b02562c",
         "EV-545bef6ff60cf3b2",
         "EV-181cd28d97c4e61d",
         "EV-3d93d1da8cb64462",
@@ -89,6 +97,127 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-39247400114d59dd",
+        "dataDate": "2026-10-02",
+        "date": "2026-10-01",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-0d0dd4bc07420a2c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-0d0dd4bc07420a2c",
+          "EN-8d4321d936320802",
+          "EN-373ac021a2c0bb2c"
+        ]
+      },
+      {
+        "id": "EV-55581be112058bd5",
+        "dataDate": "2026-10-02",
+        "date": "2026-09-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+        "displayTags": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "construction_real_estate",
+            "name": "建筑与房地产",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-e3baa3a2daee23ae"
+        ]
+      },
+      {
+        "id": "EV-bbea3352983c2033",
+        "dataDate": "2026-10-02",
+        "date": "2026-09-25",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Outmarket AI 完成 3450 万美元 B 轮融资，以巩固其作为保险业排名第 1 的 AI 平台地位",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-f395aeb2c6e6abc8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "financial_services",
+            "name": "金融服务",
+            "entityIds": [
+              "EN-f395aeb2c6e6abc8"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-f395aeb2c6e6abc8"
+        ]
+      },
+      {
+        "id": "EV-224077c33b02562c",
+        "dataDate": "2026-10-02",
+        "date": "2026-01-14",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+        "displayTags": [],
+        "entityIds": [
+          "EN-1a2290470e0aa754",
+          "EN-720d7b20a013162b",
+          "EN-9fbf261b62c1d7c0"
+        ]
+      },
       {
         "id": "EV-545bef6ff60cf3b2",
         "dataDate": "2026-09-26",
@@ -409,6 +538,81 @@
   "fde": [],
   "hardware": [],
   "hardwareCatalog": [
+    {
+      "id": "HWC-62b734209df1f885",
+      "snapshotKey": "62b734209df1f885",
+      "snapshotId": "HWS-570781fe4081b6b9",
+      "eventId": "EV-39247400114d59dd",
+      "eventIds": [
+        "EV-39247400114d59dd"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "SAN FRANCISCO",
+      "subject": "SAN FRANCISCO",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "88",
+          "unit": "$million",
+          "fact_ref": "HWF-9b3548f205ab3538"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-9b3548f205ab3538",
+          "fact_type": "product",
+          "observed_at": "2026-10-01",
+          "subject_entity_id": "EN-1a2290470e0aa754",
+          "subject_name": "SAN FRANCISCO",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "88",
+          "unit": "$million",
+          "source_quote": "SAN FRANCISCO, Oct. 1, 2026 /PRNewswire/ -- Volantis, a semiconductor company building a new category of AI inference system, today announced an $88 million Series A co-led by Lachy Groom and Abstract Ventures, with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures. The round also includes angel investors Dwarkesh Patel, Naveen Rao and Sholto Douglas.\nVolantis is building a new AI inference architecture that eliminates the tradeoff between memory capacity and bandwidth. Its first system, A-1, is being designed to run models exceeding 20 trillion parameters at up to 10,000 tokens per second per user, while reducing inference cost per token.\nThe company's founding team includes semiconductor and photonics veterans from NVIDIA, AMD, Broadcom and Ayar Labs. Their previous work includes the first CoWoS product, the first high-volume tunable VCSELs and early silicon photonics co-packaged optics systems.\n\"As AI agents take on more work, how fast they complete that work will increasingly determine how fast companies can operate,\" said Tapa Ghosh, CEO and co-founder of V",
+          "event_refs": [
+            "EV-39247400114d59dd"
+          ],
+          "claim_ref": "CL-2fe94cd175514e8b",
+          "source_refs": [
+            "SA-12d830f9b8949fb4"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-0d0dd4bc07420a2c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-0d0dd4bc07420a2c",
+        "EN-8d4321d936320802",
+        "EN-373ac021a2c0bb2c"
+      ]
+    },
     {
       "id": "HWC-8f8d1fe13179e599",
       "snapshotKey": "8f8d1fe13179e599",

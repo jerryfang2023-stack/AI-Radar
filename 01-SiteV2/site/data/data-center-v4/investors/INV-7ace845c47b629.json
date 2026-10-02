@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,7 +69,7 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-22",
+    "first_disclosed_at": "2026-09-08",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
       "historical_or_ambiguous": 2,
@@ -87,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-90716927d3b01dd1",
+        "activity_id": "IA-9ff965e32f9d7f6f",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -127,7 +127,7 @@
         ]
       },
       {
-        "activity_id": "IA-acd8d80a41dc7e77",
+        "activity_id": "IA-5c1637ae331c77e5",
         "funding_insight_id": "FI-4b811c030362045e",
         "event_ids": [
           "EV-181cd28d97c4e61d"
@@ -135,23 +135,15 @@
         "company_entity_id": "EN-0b79cf2de0ee6b8e",
         "company_canonical_entity_id": "",
         "company_name": "Groq",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$350M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 350000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3.5 亿美元"
-        },
-        "announced_at": "2026-08-17",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "历史轮次投资方",
         "role_code": "historical_or_ambiguous",
@@ -167,31 +159,24 @@
         ]
       },
       {
-        "activity_id": "IA-a2e64081577cd093",
+        "activity_id": "IA-2c19c21c8c55c27d",
         "funding_insight_id": "FI-44726ebdb985f37e",
         "event_ids": [
-          "EV-4118202ed0f91895"
+          "EV-4118202ed0f91895",
+          "EV-aa6b83d9a5f77d41"
         ],
         "company_entity_id": "EN-0b79cf2de0ee6b8e",
         "company_canonical_entity_id": "",
         "company_name": "Groq",
         "round": "轮次未披露",
         "round_code": "undisclosed",
-        "round_original": "新一轮",
-        "amount_original": "6.5 亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 650000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "6.5 亿美元"
-        },
-        "announced_at": "2026-06-22",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",

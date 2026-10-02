@@ -6,6 +6,7 @@ import {
   MODEL_ASSIST_PROMPT_VERSION,
   MODEL_EVENT_TYPES,
   candidateStore,
+  qaResponseProblems,
   readJson,
   stableModelAssistId,
   withGateResult,
@@ -165,10 +166,7 @@ function outputProblems(taskType, payload) {
   if (taskType === "claim_extraction") return Array.isArray(payload.claims) ? [] : ["claims_must_be_array"];
   if (["fde_enrichment", "hardware_enrichment"].includes(taskType)) return Array.isArray(payload.fields) ? [] : ["fields_must_be_array"];
   if (taskType === "entity_resolution") return payload.decision && payload.quote ? [] : ["entity_decision_incomplete"];
-  if (!payload.action || !payload.quote) return ["qa_suggestion_incomplete"];
-  if (payload.action === "extract_claim" && (!Array.isArray(payload.claims) || !payload.claims.length)) return ["qa_extract_claim_missing_claims"];
-  if (payload.claims !== undefined && !Array.isArray(payload.claims)) return ["qa_claims_must_be_array"];
-  return [];
+  return qaResponseProblems(payload);
 }
 
 function normalizePayload(job, payload, body) {

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,73 +61,125 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-08-27",
-    "latest_disclosed_at": "2026-07-29",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "lead": 1
+      "lead": 2,
+      "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1dfcfd98725a39ea",
+        "canonical_entity_id": "",
+        "name": "Legato"
+      },
       {
         "entity_id": "EN-098a40b4499d7512",
         "canonical_entity_id": "",
         "name": "Maisa AI"
+      },
+      {
+        "entity_id": "EN-6d996a5b3ebd3606",
+        "canonical_entity_id": "",
+        "name": "Sazabi"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-f2fb281ab2f8a909",
-        "funding_insight_id": "FI-0d10135597ba793d",
+        "activity_id": "IA-fec5668d4f2cf317",
+        "funding_insight_id": "FI-19ab0d735fd82c47",
         "event_ids": [
-          "EV-39b075c62ba4e927"
+          "EV-83d913bce6fc6799"
         ],
-        "company_entity_id": "EN-f9075cc99990820a",
+        "company_entity_id": "EN-1dfcfd98725a39ea",
         "company_canonical_entity_id": "",
-        "company_name": "P-1 AI, Inc.",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$50 million",
+        "company_name": "Legato",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$12 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 50000000,
+          "value": 12000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "5000 万美元"
+          "display_zh": "1200 万美元"
         },
-        "announced_at": "2026-07-29",
+        "announced_at": "2026-08-26",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮参投",
-        "role_code": "historical_or_ambiguous",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-699e40f6a1ab35eb",
-            "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
-            "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI 'Archie'",
-            "source_content_hash": "2431ca9f7b3677f6",
-            "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
-            "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+            "source_id": "FISRC-7a7bcfb1a7209676",
+            "source_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
+            "source_title": "听力科技初创公司Legato结束隐身模式，获1200万美元融资，并首度展示其AI助听眼镜",
+            "source_content_hash": "ee31f942397e1de2295d1acc38413e133d72d1ac12d4414155bb5587bfb4ad8b",
+            "quote": "The company’s funding, which is from Neotribe Ventures, Listen, and Village Global, has largely gone toward product development, along with marketing efforts.",
+            "quote_hash": "068e407153c0ee66fc1c27e152aa5c92b47d9f150426b70b3b9449b8699da6fa"
           }
         ]
       },
       {
-        "activity_id": "IA-edebd89f3cff2ccb",
+        "activity_id": "IA-f17681aa95d54beb",
+        "funding_insight_id": "FI-a386f8736afd6355",
+        "event_ids": [
+          "EV-f713858c67327c28"
+        ],
+        "company_entity_id": "EN-6d996a5b3ebd3606",
+        "company_canonical_entity_id": "",
+        "company_name": "Sazabi",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-fbca80af0ef21f0d",
+            "source_url": "https://www.prnewswire.com/news-releases/sazabi-raises-8-million-seed-round-to-build-the-ai-native-observability-platform-for-fast-moving-engineering-teams-302810085.html",
+            "source_title": "Sazabi 完成 800 万美元种子轮融资，为快速发展的工程团队构建 AI 原生可观测性平台",
+            "source_content_hash": "ba2d7efd8fe4675920c21c93d4f1f1d1be23bebb8b4de1db51ede6b4be910bd8",
+            "quote": "an $8 million seed financing led by J2 Ventures, Village Global, and Y Combinator",
+            "quote_hash": "66231f250add3445a0eb787838465ec152c54b0d4c4bb1fc7a300b1e33e37a2e"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b63555053f82f6d5",
         "funding_insight_id": "FI-c9553191a021b77b",
         "event_ids": [
           "EV-4eb0556b8c72d410"
@@ -165,16 +217,56 @@
             "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
           }
         ]
+      },
+      {
+        "activity_id": "IA-064faa201e94ed47",
+        "funding_insight_id": "FI-0d10135597ba793d",
+        "event_ids": [
+          "EV-39b075c62ba4e927"
+        ],
+        "company_entity_id": "EN-f9075cc99990820a",
+        "company_canonical_entity_id": "",
+        "company_name": "P-1 AI, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮参投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-699e40f6a1ab35eb",
+            "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
+            "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI 'Archie'",
+            "source_content_hash": "2431ca9f7b3677f6",
+            "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
+            "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-699e40f6a1ab35eb",
-        "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
-        "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI 'Archie'",
-        "source_content_hash": "2431ca9f7b3677f6",
-        "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
-        "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
+        "source_id": "FISRC-7a7bcfb1a7209676",
+        "source_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
+        "source_title": "听力科技初创公司Legato结束隐身模式，获1200万美元融资，并首度展示其AI助听眼镜",
+        "source_content_hash": "ee31f942397e1de2295d1acc38413e133d72d1ac12d4414155bb5587bfb4ad8b",
+        "quote": "The company’s funding, which is from Neotribe Ventures, Listen, and Village Global, has largely gone toward product development, along with marketing efforts.",
+        "quote_hash": "068e407153c0ee66fc1c27e152aa5c92b47d9f150426b70b3b9449b8699da6fa"
+      },
+      {
+        "source_id": "FISRC-fbca80af0ef21f0d",
+        "source_url": "https://www.prnewswire.com/news-releases/sazabi-raises-8-million-seed-round-to-build-the-ai-native-observability-platform-for-fast-moving-engineering-teams-302810085.html",
+        "source_title": "Sazabi 完成 800 万美元种子轮融资，为快速发展的工程团队构建 AI 原生可观测性平台",
+        "source_content_hash": "ba2d7efd8fe4675920c21c93d4f1f1d1be23bebb8b4de1db51ede6b4be910bd8",
+        "quote": "an $8 million seed financing led by J2 Ventures, Village Global, and Y Combinator",
+        "quote_hash": "66231f250add3445a0eb787838465ec152c54b0d4c4bb1fc7a300b1e33e37a2e"
       },
       {
         "source_id": "FISRC-f154528a83a385f1",
@@ -183,6 +275,14 @@
         "source_content_hash": "8c799b616e20ea1d",
         "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
         "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
+      },
+      {
+        "source_id": "FISRC-699e40f6a1ab35eb",
+        "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
+        "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI 'Archie'",
+        "source_content_hash": "2431ca9f7b3677f6",
+        "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
+        "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
       }
     ],
     "public_profile": {
@@ -190,21 +290,41 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Village Global 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-08-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Village Global 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Maisa AI · 种子轮 · 2025-08-27 · 既有投资方（种子轮前领投），本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f154528a83a385f1"
+          "description": "融资来源记录：Legato · 轮次未披露 · 2026-08-26 · 本轮参投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7a7bcfb1a7209676"
         },
         {
-          "description": "融资来源记录：P-1 AI, Inc. · 种子轮 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-699e40f6a1ab35eb"
+          "description": "融资来源记录：Sazabi · 种子轮 · 2026-06-25 · 本轮领投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-fbca80af0ef21f0d"
+        },
+        {
+          "description": "融资来源记录：Maisa AI · 种子轮 · 2025-08-27 · 既有投资方（种子轮前领投），本轮参投 · $25 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f154528a83a385f1"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-7a7bcfb1a7209676",
+          "source_url": "https://techcrunch.com/2026/08/26/hearing-tech-startup-legato-emerges-from-stealth-with-12m-and-a-peek-at-its-ai-hearing-glasses",
+          "source_title": "听力科技初创公司Legato结束隐身模式，获1200万美元融资，并首度展示其AI助听眼镜",
+          "source_content_hash": "ee31f942397e1de2295d1acc38413e133d72d1ac12d4414155bb5587bfb4ad8b",
+          "quote": "The company’s funding, which is from Neotribe Ventures, Listen, and Village Global, has largely gone toward product development, along with marketing efforts.",
+          "quote_hash": "068e407153c0ee66fc1c27e152aa5c92b47d9f150426b70b3b9449b8699da6fa"
+        },
+        {
+          "source_id": "FISRC-fbca80af0ef21f0d",
+          "source_url": "https://www.prnewswire.com/news-releases/sazabi-raises-8-million-seed-round-to-build-the-ai-native-observability-platform-for-fast-moving-engineering-teams-302810085.html",
+          "source_title": "Sazabi 完成 800 万美元种子轮融资，为快速发展的工程团队构建 AI 原生可观测性平台",
+          "source_content_hash": "ba2d7efd8fe4675920c21c93d4f1f1d1be23bebb8b4de1db51ede6b4be910bd8",
+          "quote": "an $8 million seed financing led by J2 Ventures, Village Global, and Y Combinator",
+          "quote_hash": "66231f250add3445a0eb787838465ec152c54b0d4c4bb1fc7a300b1e33e37a2e"
+        },
         {
           "source_id": "FISRC-f154528a83a385f1",
           "source_url": "https://techcrunch.com/2025/08/27/maisa-ai-gets-25m-to-fix-enterprise-ais-95-failure-rate/",
@@ -212,14 +332,6 @@
           "source_content_hash": "8c799b616e20ea1d",
           "quote": "its $5 million pre-seed round last December was led by the San Francisco-based venture firms NFX and Village Global.",
           "quote_hash": "9888177aefd2e80747f8c1886fa1052069a071bbbfdc9de99c87b38f8b55d936"
-        },
-        {
-          "source_id": "FISRC-699e40f6a1ab35eb",
-          "source_url": "https://theaiinsider.tech/2025/04/28/p-1-ai-raises-23-million-in-seed-funding-to-develop-engineering-agi-archie/",
-          "source_title": "P-1 AI Raises $23 Million in Seed Funding to Develop Engineering AGI 'Archie'",
-          "source_content_hash": "2431ca9f7b3677f6",
-          "quote": "Investors in P-1 AI’s $23 million seed round led by Radical Ventures included Village Global, Schematic Ventures, Lerer Hippeau",
-          "quote_hash": "fd51126157c8363facbf6b8784e01eb012844c0661851df146d86665d8dd0f4f"
         }
       ],
       "last_verified_at": "2026-09-25"

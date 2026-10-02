@@ -1,3 +1,4 @@
+const {companyDisplayName}=require('../../utils/company-display.js');
 const { isFundingVisible } = require("../../utils/funding-visibility.js");
 const { isWatched, toggleWatch, isCompared, toggleCompare } = require("../../utils/storage.js");
 const { recordBrowse } = require("../../utils/member.js");
@@ -11,6 +12,7 @@ function normalizedCard(card) {
   if (!card) return null;
   return {
     ...card,
+    displayName:companyDisplayName(card.company,card.marketRegion),
     founders: card.founders || [],
     institutionRationales: card.institutionRationales || [],
     products: (card.products || []).map((item) => ({ ...item, features: item.features || [] })),

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-06",
+    "first_disclosed_at": "2026-01-14",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "pre_seed",
@@ -91,6 +91,11 @@
         "name": "Flow Engineering"
       },
       {
+        "entity_id": "EN-720d7b20a013162b",
+        "canonical_entity_id": "",
+        "name": "Listen Labs"
+      },
+      {
         "entity_id": "FICO-d750f652e8f2dd92",
         "canonical_entity_id": "",
         "name": "Profound"
@@ -98,7 +103,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-385b926b269a5772",
+        "activity_id": "IA-0aa35fe07f1e066f",
         "funding_insight_id": "FI-2309843d76ae81f9",
         "event_ids": [
           "EV-f2950d2104e97163"
@@ -138,7 +143,7 @@
         ]
       },
       {
-        "activity_id": "IA-f3d3fdddfd178b7d",
+        "activity_id": "IA-595d70e94794d072",
         "funding_insight_id": "FI-28129028b23f82cb",
         "event_ids": [
           "EV-05b635c3958e4591"
@@ -178,7 +183,7 @@
         ]
       },
       {
-        "activity_id": "IA-8d0f2b3874662237",
+        "activity_id": "IA-dba520e3b9b2d096",
         "funding_insight_id": "FI-7ba868edc61b3b2a",
         "event_ids": [
           "EV-4596181c26d7f672"
@@ -216,6 +221,46 @@
             "quote_hash": "c935e5b3d87073d8b068adab229cced4f2d0b39685f471c2b175c6d6ff2d7993"
           }
         ]
+      },
+      {
+        "activity_id": "IA-05c233c5b61822f0",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$69 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 69000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6900 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf11a862138a06d",
+            "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+            "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+            "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+            "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+            "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -242,6 +287,14 @@
         "source_content_hash": "e0d1baa182929cff",
         "quote": "with participation from Yellow, Evantic and Entrepreneurs First",
         "quote_hash": "c935e5b3d87073d8b068adab229cced4f2d0b39685f471c2b175c6d6ff2d7993"
+      },
+      {
+        "source_id": "FISRC-dcf11a862138a06d",
+        "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+        "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+        "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+        "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+        "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
       }
     ],
     "public_profile": {

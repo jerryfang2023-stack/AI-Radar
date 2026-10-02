@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 5,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 4,
     "market_regions": [
       "CN"
@@ -73,6 +73,7 @@
     "latest_disclosed_at": "2026-09-10",
     "role_counts": {
       "co_lead": 2,
+      "historical_or_ambiguous": 1,
       "lead": 1,
       "participant": 2
     },
@@ -107,7 +108,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-4e5fc138f48d5df0",
+        "activity_id": "IA-b98177ee96f731c5",
         "funding_insight_id": "FI-5797999d683fac6b",
         "event_ids": [
           "EV-65d274d4277815dc"
@@ -147,7 +148,7 @@
         ]
       },
       {
-        "activity_id": "IA-e7be87e5889b109b",
+        "activity_id": "IA-5845fb9be18481f8",
         "funding_insight_id": "FI-72a762e01ac47812",
         "event_ids": [
           "EV-dc35d54f273196f0"
@@ -187,7 +188,7 @@
         ]
       },
       {
-        "activity_id": "IA-15a94fb0dade5329",
+        "activity_id": "IA-c9a60852483f896b",
         "funding_insight_id": "FI-3734798e9a7f3c5c",
         "event_ids": [
           "EV-d94bcfdf64509513"
@@ -227,7 +228,7 @@
         ]
       },
       {
-        "activity_id": "IA-072ebd6c4760a3ca",
+        "activity_id": "IA-a0446c2ea456674e",
         "funding_insight_id": "FI-7108544d47292865",
         "event_ids": [
           "EV-5575555340c04c5a"
@@ -267,10 +268,11 @@
         ]
       },
       {
-        "activity_id": "IA-a314fb07a28e3106",
+        "activity_id": "IA-51deeda7d4757506",
         "funding_insight_id": "FI-474a441598e62f93",
         "event_ids": [
           "EV-622ebdad1e1fad2d",
+          "EV-bf35f4d7b6193a47",
           "EV-535c2f4fb851332d"
         ],
         "company_entity_id": "EN-9b21c9bf3305c0d6",
@@ -298,12 +300,44 @@
         "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-4177e5ca07c921a5",
-            "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-            "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-            "source_content_hash": "22fd0b6b2709ea7b",
-            "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
-            "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
+            "source_id": "FISRC-474b45f658d5b3df",
+            "source_url": "https://mp.weixin.qq.com/s/YF__CZuyK691nOIP4KKITw",
+            "source_title": "生数科技完成超6亿元A+轮融资：以多模态大模型为底座，重构AI在数字和物理世界的生产力",
+            "source_content_hash": "5bbe0b56b7dcd1fc529bb4ce455ac5bbf779ead29465cc22a1ca235f1afb8110",
+            "quote": "本轮融资由中关村科学城公司和星连资本领投",
+            "quote_hash": "dd453a2667e0f5fe37fef5df9cfb48c0a4944eae8d9f3fc0e0031f11e848f5c9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-42c102380db32bd5",
+        "funding_insight_id": "FI-4880b1e3fb7a4da4",
+        "event_ids": [
+          "EV-008220e3dc696cb5"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_name": "生数科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "原有股东持续追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b07965e9cd2c01b5",
+            "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+            "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+            "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+            "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+            "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
           }
         ]
       }
@@ -342,12 +376,20 @@
         "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
       },
       {
-        "source_id": "FISRC-4177e5ca07c921a5",
-        "source_url": "https://news.pedaily.cn/202602/560802.shtml",
-        "source_title": "重构AI在数字和物理世界的生产力，生数科技完成超6亿元A+轮融资",
-        "source_content_hash": "22fd0b6b2709ea7b",
-        "quote": "本轮融资由 中关村科学城公司和星连资本 领投",
-        "quote_hash": "6d1cbcf2aa8a47a0b5abc4725a927f5a4880b7092a67ef2a1056257ceed9d578"
+        "source_id": "FISRC-474b45f658d5b3df",
+        "source_url": "https://mp.weixin.qq.com/s/YF__CZuyK691nOIP4KKITw",
+        "source_title": "生数科技完成超6亿元A+轮融资：以多模态大模型为底座，重构AI在数字和物理世界的生产力",
+        "source_content_hash": "5bbe0b56b7dcd1fc529bb4ce455ac5bbf779ead29465cc22a1ca235f1afb8110",
+        "quote": "本轮融资由中关村科学城公司和星连资本领投",
+        "quote_hash": "dd453a2667e0f5fe37fef5df9cfb48c0a4944eae8d9f3fc0e0031f11e848f5c9"
+      },
+      {
+        "source_id": "FISRC-b07965e9cd2c01b5",
+        "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+        "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+        "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+        "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+        "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
       }
     ],
     "public_profile": {

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,34 +61,46 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 8,
+    "current_round_count": 11,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-19",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "historical_or_ambiguous": 3,
       "lead": 3,
-      "participant": 5
+      "participant": 8
     },
     "round_codes": [
       "multi_round",
       "seed",
       "series_a",
       "series_b",
+      "series_c",
       "series_d",
       "series_e",
       "undisclosed"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
+      },
+      {
         "entity_id": "EN-9007bd372bab6334",
         "canonical_entity_id": "",
         "name": "Bespoke Labs"
+      },
+      {
+        "entity_id": "EN-6d478f33a9e3cba3",
+        "canonical_entity_id": "",
+        "name": "BigHat Biosciences"
       },
       {
         "entity_id": "EN-ac32f27ba7a1346f",
@@ -121,6 +133,11 @@
         "name": "Sycamore"
       },
       {
+        "entity_id": "EN-162103694fa33e7b",
+        "canonical_entity_id": "",
+        "name": "Vals"
+      },
+      {
         "entity_id": "EN-8c5929d253b07fed",
         "canonical_entity_id": "",
         "name": "Wispr"
@@ -128,7 +145,127 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ba17be1ddeb7cb05",
+        "activity_id": "IA-54455b684ddb7466",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+            "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-41812a64998a80b8",
+        "funding_insight_id": "FI-ba9adf4a4c9d49c3",
+        "event_ids": [
+          "EV-acd3165ca45a6b36"
+        ],
+        "company_entity_id": "EN-6d478f33a9e3cba3",
+        "company_canonical_entity_id": "",
+        "company_name": "BigHat Biosciences",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$75 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7500 万美元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3372eff279ee29db",
+            "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+            "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+            "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+            "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+            "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3ad7f4c1ebab2fdd",
+        "funding_insight_id": "FI-05640b3db4ac3921",
+        "event_ids": [
+          "EV-0f7d759e759cfc09"
+        ],
+        "company_entity_id": "EN-162103694fa33e7b",
+        "company_canonical_entity_id": "",
+        "company_name": "Vals",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 40000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4000 万美元"
+        },
+        "announced_at": "2026-09-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-404aba285b240b86",
+            "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+            "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+            "source_content_hash": "5d9a4e3004c9d318",
+            "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+            "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d0240e8d07b44095",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -168,7 +305,7 @@
         ]
       },
       {
-        "activity_id": "IA-300b21df7d4cf3f1",
+        "activity_id": "IA-6d32c91c35567b09",
         "funding_insight_id": "FI-c0b843a5e6f6ea0a",
         "event_ids": [
           "EV-d43103952399bc68"
@@ -208,7 +345,7 @@
         ]
       },
       {
-        "activity_id": "IA-74fe6c5dab4b90d9",
+        "activity_id": "IA-bb75aa2bd94d604d",
         "funding_insight_id": "FI-2ebe52bd95cf8644",
         "event_ids": [
           "EV-1da2e46e39a57d33"
@@ -248,7 +385,7 @@
         ]
       },
       {
-        "activity_id": "IA-51e216620bcd5cb8",
+        "activity_id": "IA-a6f4f5a499f781ae",
         "funding_insight_id": "FI-8e0c1c5789c6d1f8",
         "event_ids": [
           "EV-fb817fb0a5e63323"
@@ -288,7 +425,7 @@
         ]
       },
       {
-        "activity_id": "IA-93f461af5907933d",
+        "activity_id": "IA-a5694d352dd2d93d",
         "funding_insight_id": "FI-5faa0336090509de",
         "event_ids": [
           "EV-5762fe51987bc5ff"
@@ -328,7 +465,7 @@
         ]
       },
       {
-        "activity_id": "IA-bde85807c1e785b8",
+        "activity_id": "IA-839bcde5176c1bfa",
         "funding_insight_id": "FI-27c50f0e1e7dd316",
         "event_ids": [
           "EV-70a994b9339f92e7"
@@ -368,7 +505,7 @@
         ]
       },
       {
-        "activity_id": "IA-f2074d1df1be19a9",
+        "activity_id": "IA-bf7b1cbb5a42a83f",
         "funding_insight_id": "FI-91df568a315de93f",
         "event_ids": [
           "EV-b695dedc9acda5dc",
@@ -410,7 +547,7 @@
         ]
       },
       {
-        "activity_id": "IA-a12b461a35f0ad37",
+        "activity_id": "IA-774897367aa7226f",
         "funding_insight_id": "FI-f7944cc1c3817381",
         "event_ids": [
           "EV-4c247b02485de09b"
@@ -448,9 +585,129 @@
             "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
           }
         ]
+      },
+      {
+        "activity_id": "IA-9ddd1e10828eb4c6",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-14fa67bc80a1ece9",
+            "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+            "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+            "source_content_hash": "f5a108f3994daf10",
+            "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+            "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1c3fa824b20c55e4",
+        "funding_insight_id": "FI-4065d03db9160118",
+        "event_ids": [
+          "EV-d321124f4f5e0edc"
+        ],
+        "company_entity_id": "EN-e2e2d8b189801fe6",
+        "company_canonical_entity_id": "",
+        "company_name": "Lightfield",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "B轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-151268915a1d6942",
+            "source_url": "https://www.caplight.com/company/lightfield",
+            "source_title": "Lightfield Valuation & Funding History | Caplight",
+            "source_content_hash": "d7270101bd4359fc",
+            "quote": "8VCSeries B",
+            "quote_hash": "8c1e9e07e42f647d9db7702a87465ef326194dad61cce9540f5db490a8b8b3e5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fa625a6b6515e7b5",
+        "funding_insight_id": "FI-05640b3db4ac3921",
+        "event_ids": [
+          "EV-0f7d759e759cfc09"
+        ],
+        "company_entity_id": "EN-162103694fa33e7b",
+        "company_canonical_entity_id": "",
+        "company_name": "Vals",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5138d9ca614d59c",
+            "source_url": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking",
+            "source_title": "由Andreessen Horowitz支持的Vals，正寻求成为AI基准测试的黄金标准",
+            "source_content_hash": "d7844898c08f12df27e154eb0a55b44ea0fa26607ba278efd54ad268334e9d31",
+            "quote": "last year, it managed to secure a seed round led by 8VC and Bloomberg Beta.",
+            "quote_hash": "caa1ea3b24b3a77337cab26c6a7c35cb925d85443e966f79ded5bcaebb507536"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+        "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+      },
+      {
+        "source_id": "FISRC-3372eff279ee29db",
+        "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+        "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+        "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+        "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+        "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
+      },
+      {
+        "source_id": "FISRC-404aba285b240b86",
+        "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+        "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+        "source_content_hash": "5d9a4e3004c9d318",
+        "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+        "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+      },
       {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
@@ -514,6 +771,30 @@
         "source_content_hash": "043f0819e45e2208",
         "quote": "which included investment from 8VC and A*z.",
         "quote_hash": "a17c6a3c0aa2ff6760f9f6b20f563d3a68b5d776f0dd68a240ebf389b9c5ad08"
+      },
+      {
+        "source_id": "FISRC-14fa67bc80a1ece9",
+        "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+        "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+        "source_content_hash": "f5a108f3994daf10",
+        "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+        "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+      },
+      {
+        "source_id": "FISRC-151268915a1d6942",
+        "source_url": "https://www.caplight.com/company/lightfield",
+        "source_title": "Lightfield Valuation & Funding History | Caplight",
+        "source_content_hash": "d7270101bd4359fc",
+        "quote": "8VCSeries B",
+        "quote_hash": "8c1e9e07e42f647d9db7702a87465ef326194dad61cce9540f5db490a8b8b3e5"
+      },
+      {
+        "source_id": "FISRC-c5138d9ca614d59c",
+        "source_url": "https://techcrunch.com/2026/09/19/vals-backed-by-andreessen-horowitz-is-looking-to-become-the-gold-standard-for-ai-benchmarking",
+        "source_title": "由Andreessen Horowitz支持的Vals，正寻求成为AI基准测试的黄金标准",
+        "source_content_hash": "d7844898c08f12df27e154eb0a55b44ea0fa26607ba278efd54ad268334e9d31",
+        "quote": "last year, it managed to secure a seed round led by 8VC and Bloomberg Beta.",
+        "quote_hash": "caa1ea3b24b3a77337cab26c6a7c35cb925d85443e966f79ded5bcaebb507536"
       }
     ],
     "public_profile": {
@@ -546,16 +827,16 @@
           "source_id": "8vc_home"
         },
         {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
         },
         {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2e7a3713da8f3e54"
+          "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3372eff279ee29db"
         },
         {
-          "description": "融资来源记录：Sable · 轮次未披露 · 2026-07-16 · 本轮领投 · $45 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c00aba21353833ae"
+          "description": "融资来源记录：Vals · A轮 · 2026-09-19 · 本轮参投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-404aba285b240b86"
         }
       ],
       "contacts": [
@@ -584,28 +865,28 @@
           "quote_hash": "a31ee06d5e18ff38f682f7a36645d1791229e2a75c161746a7b8a3919ba675af"
         },
         {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
         },
         {
-          "source_id": "FISRC-2e7a3713da8f3e54",
-          "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
-          "source_title": "Wispr Raises $280M in Series B Funding Led by Menlo Ventures, Valuation Hits $2B | Gate News",
-          "source_content_hash": "affdfd9a0ccfb188",
-          "quote": "with participation from existing investors including Notable Capital, NEA, Neo Ventures, 8VC, and MVP Ventures, alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
-          "quote_hash": "aba568fee486e1922b966cf3934b60f576f64daef335bb8592e1d089190091dd"
+          "source_id": "FISRC-3372eff279ee29db",
+          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+          "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+          "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+          "quote": "existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+          "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         },
         {
-          "source_id": "FISRC-c00aba21353833ae",
-          "source_url": "https://www.morningstar.com/news/accesswire/1191719msn/sable-raises-45m-to-build-the-first-ai-employee-that-can-click-see-and-explain",
-          "source_title": "Sable Raises $45M to Build the First AI Employee that can Click, See, and ...",
-          "source_content_hash": "7de5ccc4b9392027",
-          "quote": "a $45 million financing round led by Sequoia Capital and 8VC",
-          "quote_hash": "af34a0033840bdda36758eaf2b91beef489122297760365c644cdb1fde7e65f1"
+          "source_id": "FISRC-404aba285b240b86",
+          "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-vals-ai-on-dollar40-million-series-a-led-by-andreessen-horowitz.html",
+          "source_title": "Wilson Sonsini Advises Vals AI on $40 Million Series A led by Andreessen Horowitz",
+          "source_content_hash": "5d9a4e3004c9d318",
+          "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
+          "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -613,6 +894,18 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[11].role": {
+          "text": "Series A跟投",
+          "source_hash": "5a480a36be9fd468ee1c374e7271a64b47b5150288e0e4d416841f58966bed32",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T03:48:07.733Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

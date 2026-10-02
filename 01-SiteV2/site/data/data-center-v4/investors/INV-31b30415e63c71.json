@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,27 +63,39 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 7,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 6,
     "first_disclosed_at": "2026-05-08",
-    "latest_disclosed_at": "2026-07-24",
+    "latest_disclosed_at": "2026-09-02",
     "role_counts": {
       "historical_or_ambiguous": 1,
       "other_current_round": 1,
-      "participant": 4
+      "participant": 6
     },
     "round_codes": [
       "angel",
       "pre_series_a",
-      "seed"
+      "seed",
+      "series_a_plus_extension"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-feb09ffdcef55d25",
+        "canonical_entity_id": "",
+        "name": "鼎犀智创（Rhinovate™）"
+      },
+      {
+        "entity_id": "EN-68608367b27ccaeb",
+        "canonical_entity_id": "",
+        "name": "凌川科技"
+      },
       {
         "entity_id": "EN-cecdd8369134f75e",
         "canonical_entity_id": "EN-cecdd8369134f75e",
@@ -112,7 +124,55 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-935f1ff811c8bcb5",
+        "activity_id": "IA-b8d67b2a74860539",
+        "funding_insight_id": "FI-d66ca0243fba30e1",
+        "event_ids": [
+          "EV-f453123978fbf095"
+        ],
+        "company_entity_id": "EN-feb09ffdcef55d25",
+        "company_canonical_entity_id": "",
+        "company_name": "鼎犀智创（Rhinovate™）",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-57de475f4ec2ac5a",
+            "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+            "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+            "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+            "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+            "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+          },
+          {
+            "source_id": "FISRC-270f085d1cb4d09f",
+            "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+            "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+            "source_content_hash": "cc2f801c9dac56e7",
+            "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+            "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-be0e7e28c3c3075a",
         "funding_insight_id": "FI-62124a69da75bc76",
         "event_ids": [
           "EV-3db9a076e3b7d4fd",
@@ -153,47 +213,7 @@
         ]
       },
       {
-        "activity_id": "IA-d37b820d5fb6c130",
-        "funding_insight_id": "FI-124b4efd0f2fa1d9",
-        "event_ids": [
-          "EV-12f331aaf7d4cca6"
-        ],
-        "company_entity_id": "EN-964f260c9a904091",
-        "company_canonical_entity_id": "EN-964f260c9a904091",
-        "company_name": "爱诗科技",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "29.8亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 2980000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "29.8 亿元"
-        },
-        "announced_at": "2026-07-14",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "B+轮共同投资",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-09c3ca37737a71ce",
-            "source_url": "https://stcn.com/article/detail/3386786.html",
-            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-            "source_content_hash": "edea92990a31710b",
-            "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
-            "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-74914e57348f9900",
+        "activity_id": "IA-c4ecd95e69e3c72e",
         "funding_insight_id": "FI-6eb4d41cef37e680",
         "event_ids": [
           "EV-11c8183c180e4b97"
@@ -233,7 +253,47 @@
         ]
       },
       {
-        "activity_id": "IA-2b4a547f43b651ae",
+        "activity_id": "IA-1c1d7191195ec787",
+        "funding_insight_id": "FI-cf2e02493f285517",
+        "event_ids": [
+          "EV-193f535567067d95"
+        ],
+        "company_entity_id": "EN-68608367b27ccaeb",
+        "company_canonical_entity_id": "",
+        "company_name": "凌川科技",
+        "round": "A+轮扩展",
+        "round_code": "series_a_plus_extension",
+        "round_original": "A+轮扩展",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a39c77bc80e12506",
+            "source_url": "https://www.ithome.com/0/968/289.htm",
+            "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+            "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+            "quote": "老股东顺禧基金、九智资本持续追加投资。",
+            "quote_hash": "fef81c98aba286c10677549beb81092f9e5e3d2751f5d6e5e95d63db85de7eae"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b7d6fbd098d9d84c",
         "funding_insight_id": "FI-a23f361cdc15f347",
         "event_ids": [
           "EV-94f334e68144c720"
@@ -273,7 +333,7 @@
         ]
       },
       {
-        "activity_id": "IA-f229f97c6fb71d7b",
+        "activity_id": "IA-359a12d94cc51d79",
         "funding_insight_id": "FI-5e5fbfc1e1a1ca79",
         "event_ids": [
           "EV-3b817460afe0d3a6"
@@ -313,7 +373,7 @@
         ]
       },
       {
-        "activity_id": "IA-a3c62e19409eab41",
+        "activity_id": "IA-833c27ecc454a3d3",
         "funding_insight_id": "FI-f15f358f13811b9e",
         "event_ids": [
           "EV-44ec7c229995ca3c"
@@ -351,9 +411,57 @@
             "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
           }
         ]
+      },
+      {
+        "activity_id": "IA-aa73a8a6df3b9d77",
+        "funding_insight_id": "FI-124b4efd0f2fa1d9",
+        "event_ids": [
+          "EV-12f331aaf7d4cca6"
+        ],
+        "company_entity_id": "EN-964f260c9a904091",
+        "company_canonical_entity_id": "EN-964f260c9a904091",
+        "company_name": "爱诗科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "B+轮共同投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09c3ca37737a71ce",
+            "source_url": "https://stcn.com/article/detail/3386786.html",
+            "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+            "source_content_hash": "edea92990a31710b",
+            "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
+            "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-57de475f4ec2ac5a",
+        "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+        "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+        "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+        "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+        "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+      },
+      {
+        "source_id": "FISRC-270f085d1cb4d09f",
+        "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+        "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+        "source_content_hash": "cc2f801c9dac56e7",
+        "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+        "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+      },
       {
         "source_id": "FISRC-ee42dc11e9aa441b",
         "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
@@ -363,20 +471,20 @@
         "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
       },
       {
-        "source_id": "FISRC-09c3ca37737a71ce",
-        "source_url": "https://stcn.com/article/detail/3386786.html",
-        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-        "source_content_hash": "edea92990a31710b",
-        "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
-        "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
-      },
-      {
         "source_id": "FISRC-88fa6d3c9d641f6e",
         "source_url": "https://news.pedaily.cn/202606/565681.shtml",
         "source_title": "中科煜坤完成千万元级种子轮融资，北京顺禧基金独家投资",
         "source_content_hash": "7c7cac656140a0bd",
         "quote": "本轮融资由 北京顺禧基金独家投资",
         "quote_hash": "7452771ea962be80ffb6ebe60fd4ab29087cbcd92fe8dcdfb89a25a41fa77842"
+      },
+      {
+        "source_id": "FISRC-a39c77bc80e12506",
+        "source_url": "https://www.ithome.com/0/968/289.htm",
+        "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+        "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+        "quote": "老股东顺禧基金、九智资本持续追加投资。",
+        "quote_hash": "fef81c98aba286c10677549beb81092f9e5e3d2751f5d6e5e95d63db85de7eae"
       },
       {
         "source_id": "FISRC-93d4a052ba2f7977",
@@ -401,6 +509,14 @@
         "source_content_hash": "ca2b772ff852bb28bd763b58c146b51cb79ce7f39e56ba7a416b2dfa01b2573a",
         "quote": "顺禧基金、富华资本、万利达集团、长江创新投、水木清华校友基金、梅花创投等跟投",
         "quote_hash": "1268be5eb46af49b91553a5e559123a667d5373f1faaf25d9a7c3cfbcb145388"
+      },
+      {
+        "source_id": "FISRC-09c3ca37737a71ce",
+        "source_url": "https://stcn.com/article/detail/3386786.html",
+        "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
+        "source_content_hash": "edea92990a31710b",
+        "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
+        "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
       }
     ],
     "public_profile": {
@@ -464,16 +580,12 @@
           "source_id": "shunxi_news"
         },
         {
+          "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-57de475f4ec2ac5a"
+        },
+        {
           "description": "融资来源记录：元川微 · Pre-A轮 · 2026-07-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ee42dc11e9aa441b"
-        },
-        {
-          "description": "融资来源记录：中科煜坤 · 种子轮 · 2026-06-30 · 本轮独家投资 · 千万元级人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-88fa6d3c9d641f6e"
-        },
-        {
-          "description": "融资来源记录：知跃空间智能 · 天使轮 · 2026-06-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-93d4a052ba2f7977"
         }
       ],
       "contacts": [
@@ -503,28 +615,28 @@
           "quote_hash": "3f2c531a8803f9b6938ed3cec24e4d91d882fd4b4bb9a2509f572f2fbd8c402c"
         },
         {
+          "source_id": "FISRC-57de475f4ec2ac5a",
+          "source_url": "https://elsewhere.news/zh/unityventures/pre-a-physical-ai",
+          "source_title": "「鼎犀智创」完成 Pre-A 轮融资，以自进化 Physical AI 加速高性能材料研发 | 九合系新成员",
+          "source_content_hash": "91fc771bf1b8ddb6ba9a09aa5cc0a9f0ccd306337e927615d637f85b03b38da0",
+          "quote": "本轮融资由鼎晖百孚领投，九合创投、彬复资本、龙芯创投、顺禧基金、中关村资本跟投。",
+          "quote_hash": "6e3524ad712d2909331022a4e1c1e84411d6bbacc8b5c3a07478c2b3bdfbf776"
+        },
+        {
+          "source_id": "FISRC-270f085d1cb4d09f",
+          "source_url": "https://www.llinkslaw.com/news/projects-and-cases/2200",
+          "source_title": "通力助力鼎晖百孚领投「鼎犀智创」Pre-A轮融资",
+          "source_content_hash": "cc2f801c9dac56e7",
+          "quote": "本轮融资由鼎晖百孚领投, 龙芯创投、九合创投、彬复资本、顺禧基金、中关村资本跟投。",
+          "quote_hash": "704d218ef28d120c58690ee29eacb0507cf6fc15901de05df20b1e2d55e0f9a4"
+        },
+        {
           "source_id": "FISRC-ee42dc11e9aa441b",
           "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
           "source_title": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
           "source_content_hash": "e7bb87fdb5aacbc8",
           "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
           "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
-        },
-        {
-          "source_id": "FISRC-88fa6d3c9d641f6e",
-          "source_url": "https://news.pedaily.cn/202606/565681.shtml",
-          "source_title": "中科煜坤完成千万元级种子轮融资，北京顺禧基金独家投资",
-          "source_content_hash": "7c7cac656140a0bd",
-          "quote": "本轮融资由 北京顺禧基金独家投资",
-          "quote_hash": "7452771ea962be80ffb6ebe60fd4ab29087cbcd92fe8dcdfb89a25a41fa77842"
-        },
-        {
-          "source_id": "FISRC-93d4a052ba2f7977",
-          "source_url": "https://news.pedaily.cn/20260623/132658.shtml",
-          "source_title": "破局类脑智能底层模型：在大脑深处，寻找下一代智能的源代码_行业动态_投资界",
-          "source_content_hash": "f37cbb7fa5c2d565",
-          "quote": "老股东顺禧基金、驰星创投持续超额加码",
-          "quote_hash": "a7cd6670ff036681a3f895a23213bc306bc61a15c0892a8bd55e5d73acac0b1f"
         }
       ],
       "identity_status": "verified"

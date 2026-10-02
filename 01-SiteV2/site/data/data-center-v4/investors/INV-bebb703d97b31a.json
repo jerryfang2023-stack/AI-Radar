@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 2,
+    "china_market_activity_count": 3,
     "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-29",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-06-17",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "other_current_round": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "first_external",
@@ -94,7 +94,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-a237df2490b392ba",
+        "activity_id": "IA-4b393543b1016eb2",
+        "funding_insight_id": "FI-a1d81c83315eb264",
+        "event_ids": [
+          "EV-8ea9e79f7edcb94f"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资",
+        "amount_original": "约 510 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 51000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 510 亿元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e0178cb313198d39",
+            "source_url": "https://www.ithome.com/0/965/686.htm",
+            "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+            "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+            "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+            "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6f5f023d7d8d10ef",
         "funding_insight_id": "FI-71c58a10a93101c8",
         "event_ids": [
           "EV-d4d7b019ff0015df",
@@ -135,7 +175,7 @@
         ]
       },
       {
-        "activity_id": "IA-3ef502edede402f1",
+        "activity_id": "IA-b4b504069b67ab50",
         "funding_insight_id": "FI-f85557a8fbd55ef2",
         "event_ids": [
           "EV-71fc51b3d8e89851"
@@ -175,7 +215,7 @@
         ]
       },
       {
-        "activity_id": "IA-9d4ef8cbbf2f61e2",
+        "activity_id": "IA-79b3c87f15467ed8",
         "funding_insight_id": "FI-f85557a8fbd55ef2",
         "event_ids": [
           "EV-71fc51b3d8e89851"
@@ -183,23 +223,15 @@
         "company_entity_id": "EN-d9b679dae255b189",
         "company_canonical_entity_id": "EN-d9b679dae255b189",
         "company_name": "易启未来",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "A轮",
-        "amount_original": "数千万",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-05-29",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "天使股东，本轮继续提供资源支持",
         "role_code": "historical_or_ambiguous",
@@ -213,9 +245,49 @@
             "quote_hash": "ff4712f7068e2021e0fe31cb9f478c40cd507ea11e87174456b542a1ba76c2e0"
           }
         ]
+      },
+      {
+        "activity_id": "IA-6c32c3f18c491cd4",
+        "funding_insight_id": "FI-fb02f5cc84560b82",
+        "event_ids": [
+          "EV-ed65f3187aa6aa40"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac00611dd4c2a13f",
+            "source_url": "https://the-decoder.com/deepseek-needs-more-cash-just-weeks-after-closing-its-first-7-billion-round",
+            "source_title": "DeepSeek 在完成首轮 70 亿美元融资仅数周后就需要更多现金",
+            "source_content_hash": "aa319f5891e1ab4ca134be8950a02920d0912a5476fbf18bd9db8e6c5a8e2add",
+            "quote": "Other investors include CATL, Tencent, JD.com, NetEase, and China's state-backed AI fund.",
+            "quote_hash": "a841ea1f8781b8a5c242157c46dde12dd5adb0106867c0fbaab83d8834189e91"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-e0178cb313198d39",
+        "source_url": "https://www.ithome.com/0/965/686.htm",
+        "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+        "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+        "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+        "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+      },
       {
         "source_id": "FISRC-cb79cada9cfde759",
         "source_url": "https://techfastforward.com/articles/deepseek-raises-7-4b-at-up-to-a-59b-value-in-2026",
@@ -239,6 +311,14 @@
         "source_content_hash": "ea9384dd84819d0d",
         "quote": "天使股东网易继续提供资源支持",
         "quote_hash": "ff4712f7068e2021e0fe31cb9f478c40cd507ea11e87174456b542a1ba76c2e0"
+      },
+      {
+        "source_id": "FISRC-ac00611dd4c2a13f",
+        "source_url": "https://the-decoder.com/deepseek-needs-more-cash-just-weeks-after-closing-its-first-7-billion-round",
+        "source_title": "DeepSeek 在完成首轮 70 亿美元融资仅数周后就需要更多现金",
+        "source_content_hash": "aa319f5891e1ab4ca134be8950a02920d0912a5476fbf18bd9db8e6c5a8e2add",
+        "quote": "Other investors include CATL, Tencent, JD.com, NetEase, and China's state-backed AI fund.",
+        "quote_hash": "a841ea1f8781b8a5c242157c46dde12dd5adb0106867c0fbaab83d8834189e91"
       }
     ],
     "public_profile": {
@@ -246,10 +326,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "网易 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "网易 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-17 · 本轮参投 · 约 510 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e0178cb313198d39"
+        },
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cb79cada9cfde759"
@@ -257,14 +341,18 @@
         {
           "description": "融资来源记录：易启未来 · A轮 · 2026-05-29 · 本轮联合投资 · 数千万。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8dee449f158754f9"
-        },
-        {
-          "description": "融资来源记录：易启未来 · 历史轮次未披露 · 天使股东，本轮继续提供资源支持。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-88e104fba08edb35"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-e0178cb313198d39",
+          "source_url": "https://www.ithome.com/0/965/686.htm",
+          "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+          "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+          "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+          "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+        },
         {
           "source_id": "FISRC-cb79cada9cfde759",
           "source_url": "https://techfastforward.com/articles/deepseek-raises-7-4b-at-up-to-a-59b-value-in-2026",
@@ -280,14 +368,6 @@
           "source_content_hash": "3a64774991d5c2f6",
           "quote": "本轮融资由优山资本、同创伟业、杭州科创集团及网易联合投资",
           "quote_hash": "935929a855326e91db9fbce28f1fdd3888c60666f0bb5405524e8f15668b7889"
-        },
-        {
-          "source_id": "FISRC-88e104fba08edb35",
-          "source_url": "https://www.sohu.com/a/1029488708_100032554",
-          "source_title": "易启未来完成数千万元A轮融资：聚焦按摩机器人",
-          "source_content_hash": "ea9384dd84819d0d",
-          "quote": "天使股东网易继续提供资源支持",
-          "quote_hash": "ff4712f7068e2021e0fe31cb9f478c40cd507ea11e87174456b542a1ba76c2e0"
         }
       ],
       "last_verified_at": "2026-09-25"

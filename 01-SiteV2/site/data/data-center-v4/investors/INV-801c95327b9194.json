@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,23 +62,55 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2025-03-03",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-77508a8fc4151fe4",
+        "activity_id": "IA-bf723537f04232da",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a69f4d2abe539628",
+            "source_url": "https://tracxn.com/d/companies/anthropic/__SzoxXDMin-NK5tKB7ks8yHr6S9Mz68pjVCzFEcGFZ08/funding-and-investors",
+            "source_title": "Anthropic",
+            "source_content_hash": "0e21dc8c5bf73e44",
+            "quote": "Google, located in Mountain View (United States), made their first investment in Anthropic on May 16, 2023 in its Series C round.",
+            "quote_hash": "8c4af9a98d703a94e97ef31b65a4a10ce8d1f0a28ecff123c535ababca52f91f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e2deab32189d140e",
         "funding_insight_id": "FI-6601d010adc14dd0",
         "event_ids": [
           "EV-78a11d309c3d4e97"
@@ -86,23 +118,15 @@
         "company_entity_id": "EN-c70eca6b0f88f44d",
         "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
         "company_name": "Anthropic PBC",
-        "round": "E轮",
-        "round_code": "series_e",
-        "round_original": "Series E",
-        "amount_original": "$3.5B",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 3500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "35 亿美元"
-        },
-        "announced_at": "2025-03-03",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "既有投资方",
         "role_code": "historical_or_ambiguous",
@@ -119,6 +143,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-a69f4d2abe539628",
+        "source_url": "https://tracxn.com/d/companies/anthropic/__SzoxXDMin-NK5tKB7ks8yHr6S9Mz68pjVCzFEcGFZ08/funding-and-investors",
+        "source_title": "Anthropic",
+        "source_content_hash": "0e21dc8c5bf73e44",
+        "quote": "Google, located in Mountain View (United States), made their first investment in Anthropic on May 16, 2023 in its Series C round.",
+        "quote_hash": "8c4af9a98d703a94e97ef31b65a4a10ce8d1f0a28ecff123c535ababca52f91f"
+      },
       {
         "source_id": "FISRC-ef9fd29dc050f7ca",
         "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
@@ -147,6 +179,10 @@
         {
           "description": "TechCrunch 于 2025 年 1 月 22 日报道 Anthropic 据称又从 Google 获得约 10 亿美元投资，并说明该消息最初由 Financial Times 报道；Google 官方页面未在本次缓存中确认这笔交易。",
           "source_id": "PFSRC-INV-801c95327b9194-2"
+        },
+        {
+          "description": "融资来源记录：Anthropic · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a69f4d2abe539628"
         },
         {
           "description": "融资来源记录：Anthropic PBC · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
@@ -178,6 +214,14 @@
           "source_content_hash": "686c0ea2f10d1d26313c21b6dfe195765cf8dfa92927f0eb221bf1bdd89c43b5",
           "quote": "Anthropic has reportedly raised around $1 billion from Google as the AI company looks to deliver a number of major product updates this year.",
           "quote_hash": "ce795612942541bc993c725417df2f84b6350c0beadc16953854843a51fe7151"
+        },
+        {
+          "source_id": "FISRC-a69f4d2abe539628",
+          "source_url": "https://tracxn.com/d/companies/anthropic/__SzoxXDMin-NK5tKB7ks8yHr6S9Mz68pjVCzFEcGFZ08/funding-and-investors",
+          "source_title": "Anthropic",
+          "source_content_hash": "0e21dc8c5bf73e44",
+          "quote": "Google, located in Mountain View (United States), made their first investment in Anthropic on May 16, 2023 in its Series C round.",
+          "quote_hash": "8c4af9a98d703a94e97ef31b65a4a10ce8d1f0a28ecff123c535ababca52f91f"
         },
         {
           "source_id": "FISRC-ef9fd29dc050f7ca",

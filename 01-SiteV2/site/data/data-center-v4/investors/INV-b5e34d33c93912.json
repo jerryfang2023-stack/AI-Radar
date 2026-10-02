@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,16 +73,22 @@
     "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
-      "series_b"
+      "series_b",
+      "series_f"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-52f1bab72d488823",
         "canonical_entity_id": "",
         "name": "Relevance AI"
+      },
+      {
+        "entity_id": "EN-4d7594e57f7d03f3",
+        "canonical_entity_id": "",
+        "name": "Supabase"
       },
       {
         "entity_id": "EN-29e1a488361f12d3",
@@ -97,7 +103,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-ef4d574e68583cc3",
+        "activity_id": "IA-e5e719c437c8e239",
         "funding_insight_id": "FI-c0b843a5e6f6ea0a",
         "event_ids": [
           "EV-d43103952399bc68"
@@ -137,7 +143,47 @@
         ]
       },
       {
-        "activity_id": "IA-f6808ff749152fea",
+        "activity_id": "IA-eeb0856f2974e400",
+        "funding_insight_id": "FI-d3f8f22849d09dcc",
+        "event_ids": [
+          "EV-42ba61e8713cd2e6"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$500M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a9654b37adce00dc",
+            "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+            "source_title": "Why Georgian Invested in Supabase",
+            "source_content_hash": "2ff196d4fa7dc98a",
+            "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+            "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5803a8c3efdd3a01",
         "funding_insight_id": "FI-9b370a988458c224",
         "event_ids": [
           "EV-88f4ee8cd57bdf42"
@@ -177,7 +223,7 @@
         ]
       },
       {
-        "activity_id": "IA-a0dd68ae3888c25c",
+        "activity_id": "IA-73bc7e45481f60f2",
         "funding_insight_id": "FI-943beca4faf7346d",
         "event_ids": [
           "EV-15bbdd37c516309a"
@@ -227,6 +273,14 @@
         "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
       },
       {
+        "source_id": "FISRC-a9654b37adce00dc",
+        "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+        "source_title": "Why Georgian Invested in Supabase",
+        "source_content_hash": "2ff196d4fa7dc98a",
+        "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+        "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
+      },
+      {
         "source_id": "FISRC-46ca8e6bf27dfb82",
         "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
         "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
@@ -257,12 +311,12 @@
           "source_id": "FISRC-2e7a3713da8f3e54"
         },
         {
-          "description": "融资来源记录：Vapi Inc. · B轮 · 2026-05-12 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-46ca8e6bf27dfb82"
+          "description": "融资来源记录：Supabase · F轮 · 2026-06-04 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a9654b37adce00dc"
         },
         {
-          "description": "融资来源记录：Relevance AI · B轮 · 2025-05-06 · 既有投资方，本轮参投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e2076aaadf946323"
+          "description": "融资来源记录：Vapi Inc. · B轮 · 2026-05-12 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-46ca8e6bf27dfb82"
         }
       ],
       "contacts": [],
@@ -276,20 +330,20 @@
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
         },
         {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+          "source_title": "Why Georgian Invested in Supabase",
+          "source_content_hash": "2ff196d4fa7dc98a",
+          "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+          "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
+        },
+        {
           "source_id": "FISRC-46ca8e6bf27dfb82",
           "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
           "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
           "source_content_hash": "5fee028b6dad3dc4",
           "quote": "Peak XV led the Series B funding round",
           "quote_hash": "5cf2609379d34cf45ef5f1f8f92ffd6419417258e8d6163efa74713f7b619e7e"
-        },
-        {
-          "source_id": "FISRC-e2076aaadf946323",
-          "source_url": "https://techcrunch.com/2025/05/06/relevance-ai-raises-24m-series-b-to-help-anyone-build-teams-of-ai-agents/",
-          "source_title": "Relevance AI 获 2400 万美元融资，助力企业构建 AI 智能体",
-          "source_content_hash": "569a3e9ef99a7000",
-          "quote": "Returning investors King River Capital, Insight Partners, and Peak XV also participated",
-          "quote_hash": "f72178b073c8d598e270b84d1abc5c2f0a48a92296cb47a35233eadac198c052"
         }
       ],
       "last_verified_at": "2026-09-25"

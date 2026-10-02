@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-07-23",
-    "latest_disclosed_at": "2026-07-23",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "angel",
       "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e1a059fe52fe0377",
+        "canonical_entity_id": "",
+        "name": "上海智灵新境科技有限公司"
+      },
       {
         "entity_id": "EN-3f0cfc0d9c60b562",
         "canonical_entity_id": "EN-3f0cfc0d9c60b562",
@@ -86,7 +92,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-752b6063ec642768",
+        "activity_id": "IA-00ee2a53676decbb",
+        "funding_insight_id": "FI-8313ac2a4bfbeb71",
+        "event_ids": [
+          "EV-609da9983f836426"
+        ],
+        "company_entity_id": "EN-e1a059fe52fe0377",
+        "company_canonical_entity_id": "",
+        "company_name": "上海智灵新境科技有限公司",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "数千万元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 20000000,
+          "max_value": 90000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2000 万元–9000 万元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-99789a9391e06f7c",
+            "source_url": "https://news.qq.com/rain/a/20260928A0BY8Z00",
+            "source_title": "单月收入破千万，AI应用公司智灵新境完成数千万元天使轮融资｜36氪首发_腾讯新闻",
+            "source_content_hash": "a2bb086ce587dffa2d513b9fe991ee9bac73de7d7bc76ba2611e4fc1a81375ee",
+            "quote": "智灵新境近期完成了数千万元人民币天使轮融资，投资方为华策影视",
+            "quote_hash": "df0ae931c26368100c7107e672c3a7a5e56d7c6012fae249a70922ccfe927177"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6b03606b784f0ae7",
         "funding_insight_id": "FI-111c093076dbcf41",
         "event_ids": [
           "EV-e51643edc7bec259",
@@ -129,6 +175,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-99789a9391e06f7c",
+        "source_url": "https://news.qq.com/rain/a/20260928A0BY8Z00",
+        "source_title": "单月收入破千万，AI应用公司智灵新境完成数千万元天使轮融资｜36氪首发_腾讯新闻",
+        "source_content_hash": "a2bb086ce587dffa2d513b9fe991ee9bac73de7d7bc76ba2611e4fc1a81375ee",
+        "quote": "智灵新境近期完成了数千万元人民币天使轮融资，投资方为华策影视",
+        "quote_hash": "df0ae931c26368100c7107e672c3a7a5e56d7c6012fae249a70922ccfe927177"
+      },
+      {
         "source_id": "FISRC-9d4811d701a7c9af",
         "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",
         "source_title": "智象未来完成15亿元C轮融资，三个月融三轮",
@@ -142,10 +196,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华策影视 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "华策影视 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：上海智灵新境科技有限公司 · 天使轮 · 2026-09-28 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-99789a9391e06f7c"
+        },
         {
           "description": "融资来源记录：智象未来 · C轮 · 2026-07-23 · 本轮参投 · 15亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d4811d701a7c9af"
@@ -153,6 +211,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-99789a9391e06f7c",
+          "source_url": "https://news.qq.com/rain/a/20260928A0BY8Z00",
+          "source_title": "单月收入破千万，AI应用公司智灵新境完成数千万元天使轮融资｜36氪首发_腾讯新闻",
+          "source_content_hash": "a2bb086ce587dffa2d513b9fe991ee9bac73de7d7bc76ba2611e4fc1a81375ee",
+          "quote": "智灵新境近期完成了数千万元人民币天使轮融资，投资方为华策影视",
+          "quote_hash": "df0ae931c26368100c7107e672c3a7a5e56d7c6012fae249a70922ccfe927177"
+        },
         {
           "source_id": "FISRC-9d4811d701a7c9af",
           "source_url": "https://finance.sina.com.cn/jjxw/2026-07-23/doc-iniitzpn4522804.shtml",

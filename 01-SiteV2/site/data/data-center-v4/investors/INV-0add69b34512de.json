@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-03",
-    "latest_disclosed_at": "2026-08-03",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-60fb594d47e81135",
+        "activity_id": "IA-40862f6523711d10",
         "funding_insight_id": "FI-392e264418bb0c75",
         "event_ids": [
           "EV-4d2852e1694b2818"
@@ -86,23 +86,15 @@
         "company_entity_id": "EN-cc2ab268105df889",
         "company_canonical_entity_id": "",
         "company_name": "Olix Computing Ltd.",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "Series B",
-        "amount_original": "$312 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 312000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3.12 亿美元"
-        },
-        "announced_at": "2026-08-03",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "历史轮次领投方，本轮追加投资",
         "role_code": "historical_or_ambiguous",
@@ -369,6 +361,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "基于机构官网或机构本人公开资料核验；机构自述业绩和规模已注明口径。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "官网展示 Kraken、Deliveroo、Revolut、BillionToOne、Etched、Enveda 等组合公司，并称另有 70 多家公司；属机构公开组合选例。",
+          "source_hash": "c940149bef45e3830c9d27db571fe65b235711276fe9f52a82944a276358544b",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.career[0].description": {
+          "text": "此前在 Emerging Markets Structuring and Solutions group 工作；2012 年加入 Hummingbird。",
+          "source_hash": "fbb64b941fba4236dd3ef72e829bce8c82a9080bc64ec21cd0b7a70917b3a2df",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        },
+        "public_profile.career[1].description": {
+          "text": "创办 Nomads 与 Magnificent Grants；官网称其参与 Kraken，并曾支持 Deliveroo、Showpad 和 Frontier Car Group。",
+          "source_hash": "087bbaf4524eac52b56544ec6e0de457bf94be7442b3c46a3fb978da82175839",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:48.485Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f37f917797919682",
+        "activity_id": "IA-673100d746d4d789",
         "funding_insight_id": "FI-070bfdac9fe137a9",
         "event_ids": [
           "EV-52bf48005db3461a"
@@ -383,6 +383,26 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "基于机构官网或机构本人公开资料核验；自述数据已注明口径，未公开的信息留空。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Sameer Reddy 的官方简介列出其在 EIP 主导或参与 Arcadia、Dragos、ERock、ThinkLabs、Infravision、Urbint、Opus One、Attivo、Quilt 等投资；其中部分后续被收购，属机构自述的选例，不等于完整组合或回报统计。",
+          "source_hash": "3c597593a5311b006b442bbc7e3948ff8c63321d8436d826008fb8a9b8dec846",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:41.748Z",
+          "status": "translated"
+        },
+        "public_profile.career[4].description": {
+          "text": "在 Evercore Power and Renewable Energy Group 工作五年，之后在 GE Capital 能源风险投资组工作三年。",
+          "source_hash": "a86599df28c20aa6402f6cd232d584aab74610ef3d52abe0054d11ae2c7ff6d5",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.676Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

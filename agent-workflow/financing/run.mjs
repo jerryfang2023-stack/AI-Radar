@@ -7,23 +7,31 @@ import { collect } from './collect.mjs';
 import { config, queryPlan } from './discovery.mjs';
 import { acquireLock, digest, read, write, runStages } from './state.mjs';
 import { resolvePrivateEvidenceBackupRoot } from '../tools/private-evidence-backup-paths.mjs';
+import { indexFinancingEvidence } from './evidence-index.mjs';
+import { parseArgs } from './args.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const script = name => `agent-workflow/tools/${name}.mjs`;
 const site = name => `01-SiteV2/site/scripts/${name}.mjs`;
 
-export function productionPlan(date, directory) {
+export function financingExtractionScope(intake, collection) {
+  const raws = new Map((intake?.raw_documents || []).map(raw => [raw.raw_id, raw]));
+  const ids = [...new Set(collection?.raw_ids || [])];
+  if (ids.some(id => !raws.get(id)?.source_artifact_id)) throw new Error('financing_extraction_source_missing');
+  return { source_refs: [...new Set(ids.map(id => raws.get(id).source_artifact_id))] };
+}
+
+export function productionPlan(date, directory, { extract = true } = {}) {
   const d = `--date=${date}`;
   return [
     { id: 'facts', commands: [
       [script('build-data-center-v4'), d],
-      [script('generate-data-center-model-assist'), d, '--write=true', '--concurrency=2', '--reuse-existing=true'],
+      ...(extract ? [[script('generate-data-center-model-assist'), d, '--write=true', '--concurrency=2', '--reuse-existing=true', '--tasks=claim_extraction,entity_resolution,qa_repair']] : []),
       [script('assert-data-center-model-assist'), d],
       [script('build-data-center-v4'), d],
       [script('backfill-source-title-translations'), d, '--write=true', '--concurrency=3'],
       [script('build-data-center-v4'), d],
       [script('assert-data-center-v4'), d],
-      [script('assert-china-market-v1'), d, '--stage=bundle'],
     ], outputs: [`01-SiteV2/content/11-databases/data-center-v4/${date}/manifest.json`] },
     { id: 'research', commands: [
       [script('generate-funding-insights-deepseek'), d, '--write=true', `--checkpoint-dir=${path.join(directory, 'research')}`],
@@ -52,12 +60,13 @@ export function productionPlan(date, directory) {
       [script('assert-investment-institutions-v1')],
       [script('assert-public-entity-profiles-v1')],
       [script('assert-public-evidence-boundary')],
+      [script('assert-taxonomy-consistency-v4-1')],
     ], outputs: ['01-SiteV2/site/data/funding-insights-v1.json'] },
   ];
 }
 
 async function main() {
-  const args = new Map(process.argv.slice(2).map(arg => { const [key, ...value] = arg.replace(/^--/u, '').split('='); return [key, value.join('=')]; }));
+  const args = parseArgs();
   const date = args.get('date') || new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
   queryPlan(date);
   const phase = args.get('phase') || 'all';
@@ -72,13 +81,18 @@ async function main() {
     if (phase === 'collect') return;
     const collection = read(path.join(directory, 'collection.json'));
     if (!collection?.accepted || collection.date !== date) throw new Error('accepted_financing_collection_required');
+    indexFinancingEvidence({root, backupRoot, date, collection});
     // A clean zero day is not an extraction failure or a reason to invent cards.
     const intake = read(path.join(root, `01-SiteV2/content/11-databases/data-center-v4/intake-v1/${date}.json`));
     if (!intake?.raw_documents?.length) {
       write(path.join(directory, 'publication.json'), { version: config.version, date, status: collection.counts.pending ? 'pending_verification' : 'no_new_financing', counts: collection.counts }); return;
     }
-    const plans = productionPlan(date, directory);
+    const extractionScope = financingExtractionScope(intake, collection);
+    const scopeFile = path.join(directory, 'extraction-scope.json');
+    write(scopeFile, extractionScope);
+    const plans = productionPlan(date, directory, { extract: extractionScope.source_refs.length > 0 });
     const codeVersion = digest(intake);
+    const reviewedClaims = path.join(root, `01-SiteV2/content/11-databases/model-assist-v1/${date}.json`);
     const dependencyText = (file, seen = new Set()) => {
       if (seen.has(file) || !fs.existsSync(file)) return ''; seen.add(file);
       const body = fs.readFileSync(file, 'utf8');
@@ -87,13 +101,15 @@ async function main() {
     const previous = read(path.join(root,'01-SiteV2/site/data/data-center-v4-frontstage.json'));
     if (previous?.meta?.generatedAt) process.env.WAVESIGHT_FRONTSTAGE_GENERATED_AT = previous.meta.generatedAt;
     if (previous?.entityHistoryManifest?.generatedAt) process.env.WAVESIGHT_ENTITY_HISTORY_GENERATED_AT = previous.entityHistoryManifest.generatedAt;
-    const stages = plans.map(stage => ({ ...stage, version: digest(stage.commands.map(command => dependencyText(path.join(root,command[0]))).join('') + (stage.id === 'financing_tags' ? fs.readFileSync(new URL('./taxonomy.json', import.meta.url),'utf8') : '')), valid: () => stage.outputs.every(file => fs.existsSync(path.join(root, file))) }));
+    const stages = plans.map(stage => ({ ...stage, version: digest(stage.commands.map(command => dependencyText(path.join(root,command[0]))).join('') + (stage.id === 'financing_tags' ? fs.readFileSync(new URL('./taxonomy.json', import.meta.url),'utf8') : '')), inputVersion: stage.id === 'facts' ? () => fs.existsSync(reviewedClaims) ? digest(fs.readFileSync(reviewedClaims,'utf8')) : 'missing_reviewed_claims' : undefined, valid: () => stage.outputs.every(file => fs.existsSync(path.join(root, file))) }));
     await runStages({ date, codeVersion, file: path.join(directory, 'stages.json'), stages, execute: async stage => {
       const fd = fs.openSync(path.join(directory, `${stage.id}.log`), 'a');
       try {
         for (const command of stage.commands) {
           fs.writeSync(fd, `\n${new Date().toISOString()} node ${command.join(' ')}\n`);
-          const result = spawnSync(process.execPath, command, { cwd: root, env: process.env, windowsHide: true, stdio: ['ignore', fd, fd], timeout: 1800000 });
+          const env = command[0] === script('generate-data-center-model-assist')
+            ? { ...process.env, MODEL_ASSIST_SOURCE_REFS_FILE: scopeFile } : process.env;
+          const result = spawnSync(process.execPath, command, { cwd: root, env, windowsHide: true, stdio: ['ignore', fd, fd], timeout: 1800000 });
           if (result.error || result.status !== 0) throw new Error(`${stage.id}:${path.basename(command[0])}:${result.status ?? result.error?.code}`);
         }
       } finally { fs.closeSync(fd); }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-01-26",
+    "latest_disclosed_at": "2026-04-02",
     "role_counts": {
+      "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "series_a",
       "series_b_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7753b0382f29e6a8",
+        "canonical_entity_id": "",
+        "name": "耀速科技（Xellar Biosystems）"
+      },
       {
         "entity_id": "EN-2c348893efb2316e",
         "canonical_entity_id": "EN-2c348893efb2316e",
@@ -86,7 +94,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-899fa7be34a44aeb",
+        "activity_id": "IA-b0cc8f9adcba6670",
+        "funding_insight_id": "FI-8e7436171d45ed58",
+        "event_ids": [
+          "EV-21529e29a0eedf85"
+        ],
+        "company_entity_id": "EN-7753b0382f29e6a8",
+        "company_canonical_entity_id": "",
+        "company_name": "耀速科技（Xellar Biosystems）",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "超2亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿元"
+        },
+        "announced_at": "2026-04-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-5dbca4d3b6550c7f",
+            "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
+            "source_title": "晶泰科技参与耀速科技超2亿元A轮融资，AI+器官芯片+自动化构建下一代药物研发基础设施",
+            "source_content_hash": "83f7880e936b9d539c680c33d7c524450bc8c17a97caf9468f077fc6c97eab62",
+            "quote": "本轮融资由国寿股权独家领投，老股东晶泰科技、雅亿资本、君联资本持续加码。",
+            "quote_hash": "0c14b8843933f41cc84f45cbaf90abc591001d889abe47c8f6e6323f14015b83"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-820e3880077c2428",
         "funding_insight_id": "FI-74076c9ab29354a8",
         "event_ids": [
           "EV-df37e9341b5c7f04",
@@ -125,9 +173,49 @@
             "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
           }
         ]
+      },
+      {
+        "activity_id": "IA-1ac655c48e44caaf",
+        "funding_insight_id": "FI-ec899db298fe1efb",
+        "event_ids": [
+          "EV-d99be21ac665f1f9"
+        ],
+        "company_entity_id": "EN-7753b0382f29e6a8",
+        "company_canonical_entity_id": "",
+        "company_name": "耀速科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-137a48f19e1119b4",
+            "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+            "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+            "source_content_hash": "4bba0dc5a705af7dff42b2ed2c3c95952ac77f1e01bf26b97db868814cefef84",
+            "quote": "这是继今年年初完成由国寿股权领投的超2亿元A轮融资后，耀速科技再次完成一轮重大融资。",
+            "quote_hash": "dfb02baffe73759e76aa1351faf57ba4806f2f75ff5d6849ec6b8bdaaf6789b1"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-5dbca4d3b6550c7f",
+        "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
+        "source_title": "晶泰科技参与耀速科技超2亿元A轮融资，AI+器官芯片+自动化构建下一代药物研发基础设施",
+        "source_content_hash": "83f7880e936b9d539c680c33d7c524450bc8c17a97caf9468f077fc6c97eab62",
+        "quote": "本轮融资由国寿股权独家领投，老股东晶泰科技、雅亿资本、君联资本持续加码。",
+        "quote_hash": "0c14b8843933f41cc84f45cbaf90abc591001d889abe47c8f6e6323f14015b83"
+      },
       {
         "source_id": "FISRC-de3bb93d57d25bdf",
         "source_url": "https://www.cyzone.cn/article/822685.html",
@@ -135,6 +223,14 @@
         "source_content_hash": "3cd27a7369aa4df5",
         "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
         "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+      },
+      {
+        "source_id": "FISRC-137a48f19e1119b4",
+        "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+        "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+        "source_content_hash": "4bba0dc5a705af7dff42b2ed2c3c95952ac77f1e01bf26b97db868814cefef84",
+        "quote": "这是继今年年初完成由国寿股权领投的超2亿元A轮融资后，耀速科技再次完成一轮重大融资。",
+        "quote_hash": "dfb02baffe73759e76aa1351faf57ba4806f2f75ff5d6849ec6b8bdaaf6789b1"
       }
     ],
     "public_profile": {
@@ -142,17 +238,33 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国寿股权 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "国寿股权 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：耀速科技（Xellar Biosystems） · A轮 · 2026-04-02 · 本轮领投 · 超2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-5dbca4d3b6550c7f"
+        },
+        {
           "description": "融资来源记录：StepFun · B+轮 · 2026-01-26 · 本轮参投 · 50 亿人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-de3bb93d57d25bdf"
+        },
+        {
+          "description": "融资来源记录：耀速科技 · 历史轮次未披露 · A轮领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-137a48f19e1119b4"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-5dbca4d3b6550c7f",
+          "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
+          "source_title": "晶泰科技参与耀速科技超2亿元A轮融资，AI+器官芯片+自动化构建下一代药物研发基础设施",
+          "source_content_hash": "83f7880e936b9d539c680c33d7c524450bc8c17a97caf9468f077fc6c97eab62",
+          "quote": "本轮融资由国寿股权独家领投，老股东晶泰科技、雅亿资本、君联资本持续加码。",
+          "quote_hash": "0c14b8843933f41cc84f45cbaf90abc591001d889abe47c8f6e6323f14015b83"
+        },
         {
           "source_id": "FISRC-de3bb93d57d25bdf",
           "source_url": "https://www.cyzone.cn/article/822685.html",
@@ -160,6 +272,14 @@
           "source_content_hash": "3cd27a7369aa4df5",
           "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
           "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+        },
+        {
+          "source_id": "FISRC-137a48f19e1119b4",
+          "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+          "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+          "source_content_hash": "4bba0dc5a705af7dff42b2ed2c3c95952ac77f1e01bf26b97db868814cefef84",
+          "quote": "这是继今年年初完成由国寿股权领投的超2亿元A轮融资后，耀速科技再次完成一轮重大融资。",
+          "quote_hash": "dfb02baffe73759e76aa1351faf57ba4806f2f75ff5d6849ec6b8bdaaf6789b1"
         }
       ],
       "last_verified_at": "2026-09-25"

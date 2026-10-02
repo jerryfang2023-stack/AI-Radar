@@ -1,0 +1,395 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-9621fad4c05817",
+    "name": "Redpoint",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
+    "market_regions": [
+      "CN",
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-01-22",
+    "latest_disclosed_at": "2026-10-01",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
+      "participant": 3
+    },
+    "round_codes": [
+      "multi_round",
+      "series_b",
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-83dd78f287b80ce3",
+        "canonical_entity_id": "",
+        "name": "芯光界"
+      },
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
+      },
+      {
+        "entity_id": "EN-c5803a6e4daa6af4",
+        "canonical_entity_id": "",
+        "name": "Modal"
+      },
+      {
+        "entity_id": "EN-e34d1c9011e06204",
+        "canonical_entity_id": "",
+        "name": "Railway"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-a2cb4dc218fd9b1f",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
+            "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-468f3cd6afc77a24",
+        "funding_insight_id": "FI-219ba35e15dc4fb9",
+        "event_ids": [
+          "EV-eb2796fc4bcc5ac0"
+        ],
+        "company_entity_id": "EN-83dd78f287b80ce3",
+        "company_canonical_entity_id": "",
+        "company_name": "芯光界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Pre-A轮及A轮（合并披露）",
+        "amount_original": "近10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-09a0a8d8826c2cfe",
+            "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+            "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+            "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+            "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+            "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c88e34e2b8cd41db",
+        "funding_insight_id": "FI-772c8fb5434b1734",
+        "event_ids": [
+          "EV-1d31f1c839f9dab5"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$355 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 355000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.55 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-733016c3a34668d3",
+            "source_url": "https://modal.com/blog/modal-series-c",
+            "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+            "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+            "quote": "a round led by General Catalyst and Redpoint",
+            "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c31897ff5e2652c0",
+        "funding_insight_id": "FI-306e35da8ebe8088",
+        "event_ids": [
+          "EV-b58eb81bf5235a33"
+        ],
+        "company_entity_id": "EN-e34d1c9011e06204",
+        "company_canonical_entity_id": "",
+        "company_name": "Railway",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$100 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-01-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-978c6dfd9f2ff831",
+            "source_url": "https://www.prnewswire.com/news-releases/railway-raises-100-million-series-b-as-ai-pushes-todays-cloud-infrastructure-past-its-limits-302667768.html",
+            "source_title": "Railway 完成 1 亿美元 B 轮融资，AI 推动当今云基础设施突破极限",
+            "source_content_hash": "b6a948ff822aa4537ecc53f24924d65cbeac70d053fac9073e4c549875efb011",
+            "quote": "with participation from new and existing investors, FPV Ventures, Redpoint, and Unusual Ventures",
+            "quote_hash": "7af109f95ff3bd21d833475f0cca800dbef4c57599fda09f0c97f3303bc9eb35"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-684f97dbf8f0d3b9",
+        "funding_insight_id": "FI-306e35da8ebe8088",
+        "event_ids": [
+          "EV-b58eb81bf5235a33"
+        ],
+        "company_entity_id": "EN-e34d1c9011e06204",
+        "company_canonical_entity_id": "",
+        "company_name": "Railway",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A 轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-72c8859fe2a25c85",
+            "source_url": "https://multiples.vc/private-comps/railway",
+            "source_title": "Railway Funding, Investors & Competitors | Multiples",
+            "source_content_hash": "914fbe85560ee8b3",
+            "quote": "raised $20 million in a Series A round on May 31, 2022, led by Redpoint Ventures",
+            "quote_hash": "b3425089cedef29993ccfc7ef388a6bf10041d66591173053c916e78a71ea8f8"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
+        "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
+      },
+      {
+        "source_id": "FISRC-09a0a8d8826c2cfe",
+        "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+        "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+        "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+        "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+        "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+      },
+      {
+        "source_id": "FISRC-733016c3a34668d3",
+        "source_url": "https://modal.com/blog/modal-series-c",
+        "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+        "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+        "quote": "a round led by General Catalyst and Redpoint",
+        "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
+      },
+      {
+        "source_id": "FISRC-978c6dfd9f2ff831",
+        "source_url": "https://www.prnewswire.com/news-releases/railway-raises-100-million-series-b-as-ai-pushes-todays-cloud-infrastructure-past-its-limits-302667768.html",
+        "source_title": "Railway 完成 1 亿美元 B 轮融资，AI 推动当今云基础设施突破极限",
+        "source_content_hash": "b6a948ff822aa4537ecc53f24924d65cbeac70d053fac9073e4c549875efb011",
+        "quote": "with participation from new and existing investors, FPV Ventures, Redpoint, and Unusual Ventures",
+        "quote_hash": "7af109f95ff3bd21d833475f0cca800dbef4c57599fda09f0c97f3303bc9eb35"
+      },
+      {
+        "source_id": "FISRC-72c8859fe2a25c85",
+        "source_url": "https://multiples.vc/private-comps/railway",
+        "source_title": "Railway Funding, Investors & Competitors | Multiples",
+        "source_content_hash": "914fbe85560ee8b3",
+        "quote": "raised $20 million in a Series A round on May 31, 2022, led by Redpoint Ventures",
+        "quote_hash": "b3425089cedef29993ccfc7ef388a6bf10041d66591173053c916e78a71ea8f8"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "Redpoint 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
+          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-09a0a8d8826c2cfe"
+        },
+        {
+          "description": "融资来源记录：Modal · C轮 · 2026-05-21 · 本轮联合领投 · $355 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-733016c3a34668d3"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
+          "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
+        },
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+        },
+        {
+          "source_id": "FISRC-733016c3a34668d3",
+          "source_url": "https://modal.com/blog/modal-series-c",
+          "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+          "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+          "quote": "a round led by General Catalyst and Redpoint",
+          "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    }
+  }
+}

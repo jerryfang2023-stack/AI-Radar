@@ -9,9 +9,10 @@ function directory(state,{type='all',market='china',query='',category='全部赛
  for(const p of getResearchProfiles()) {
    if((market!=='all'&&!p.markets.includes(market))||(type!=='all'&&p.type!==type))continue;
    const existing=base.findIndex(e=>e.type===p.type&&e.key===p.key);
-   const row={...p,typeLabel:p.type==='people'?'人物库':'投资机构',subtitle:p.summary,updateLabel:'公开档案',updateTitle:'',latestDate:p.latestDate||'',searchText:p.searchText||p.name.toLowerCase()};
+   const row={...p,typeLabel:p.type==='people'?'人物库':'投资机构',subtitle:p.type==='investors'?(p.investmentDirection?'投资方向：'+p.investmentDirection:'投资方向暂未披露'):p.summary,updateLabel:p.type==='investors'?'':'公开档案',updateTitle:p.type==='investors'?(p.investmentDirection?'投资方向：'+p.investmentDirection:'投资方向暂未披露'):'',latestDate:p.latestDate||'',searchText:p.searchText||p.name.toLowerCase()};
    if(existing>=0)base[existing]={...base[existing],...row};else base.push(row);
  }
+ for(const row of base)if(row.type==='investors'&&!row.investmentDirection){row.subtitle='投资方向暂未披露';row.updateTitle=row.subtitle;row.updateLabel='';}
  const categories=['全部赛道',...[...new Set(base.flatMap(e=>e.categories||[]))].sort()];
  const activeCategory=categories.includes(category)?category:'全部赛道';
  const keyword=String(query).trim().toLowerCase();

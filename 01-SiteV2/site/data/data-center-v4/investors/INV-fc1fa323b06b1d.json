@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 4,
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
-    "first_disclosed_at": "2026-01-12",
-    "latest_disclosed_at": "2026-09-21",
+    "china_market_activity_count": 6,
+    "china_market_company_count": 6,
+    "first_disclosed_at": "2026-04-02",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 5,
       "lead": 1,
-      "participant": 3
+      "participant": 5
     },
     "round_codes": [
       "angel",
@@ -101,92 +101,61 @@
         "entity_id": "EN-0369c8fcda657a43",
         "canonical_entity_id": "EN-0369c8fcda657a43",
         "name": "无问芯穹"
+      },
+      {
+        "entity_id": "EN-997a5e6e513f2a90",
+        "canonical_entity_id": "",
+        "name": "星辰技术"
+      },
+      {
+        "entity_id": "EN-7753b0382f29e6a8",
+        "canonical_entity_id": "",
+        "name": "耀速科技（Xellar Biosystems）"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-62898c29ec6b958d",
-        "funding_insight_id": "FI-1c45f6b3bea32aad",
+        "activity_id": "IA-7d79fcfb6744ec63",
+        "funding_insight_id": "FI-8cf15f7318cc6265",
         "event_ids": [
-          "EV-fbb4b961191efa55"
+          "EV-e11382111a5b99f6"
         ],
-        "company_entity_id": "EN-e7d56af70143fcd7",
+        "company_entity_id": "EN-997a5e6e513f2a90",
         "company_canonical_entity_id": "",
-        "company_name": "数巅智能",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "数亿元",
+        "company_name": "星辰技术",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近50亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-09-21",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "pre-A轮老股东持续加码",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-9ebda1057c2926b3",
-            "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
-            "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
-            "source_content_hash": "6e9cfd36fd6943c7",
-            "quote": "老股东君联资本等也持续加码。",
-            "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-c5241f9002656c92",
-        "funding_insight_id": "FI-63374eeafcdd0df6",
-        "event_ids": [
-          "EV-7eead74c2baae511",
-          "EV-ef669a52c9a3f94f"
-        ],
-        "company_entity_id": "EN-1d79127e9d90e89b",
-        "company_canonical_entity_id": "EN-1d79127e9d90e89b",
-        "company_name": "智谱AI",
-        "round": "其他融资",
-        "round_code": "other",
-        "round_original": "约50亿美元融资",
-        "amount_original": "50 亿美元",
-        "amount_normalized": {
-          "currency": "USD",
           "value": 5000000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "50 亿美元"
+          "status": "approximate",
+          "display_zh": "约 50 亿元"
         },
-        "announced_at": "2026-09-13",
+        "announced_at": "2026-08-26",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "老股东跟投",
-        "role_code": "historical_or_ambiguous",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-e930be8aa5120588",
-            "source_url": "https://www.jiemian.com/article/12128930.html",
-            "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
-            "source_content_hash": "6039a35df79b1076",
-            "quote": "君联资本等老股东继续跟投",
-            "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+            "source_id": "FISRC-662073c15d82f553",
+            "source_url": "http://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260826_6001551.shtml",
+            "source_title": "湖北省经济和信息化厅",
+            "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+            "quote": "据星辰技术最新的工商信息，这份投资方名单星光熠熠：高瓴创投、红杉中国、君联资本、中金资本、招银投资、深创投……",
+            "quote_hash": "3b4598ff323bfa39d8e54f8bb24d069fa10ab49783cadc2fdc85d2513636825a"
           }
         ]
       },
       {
-        "activity_id": "IA-a4a764911bd537e4",
+        "activity_id": "IA-f812c203c4dc9c4d",
         "funding_insight_id": "FI-dc9e5d11c96e1760",
         "event_ids": [
           "EV-c9a11db49e1afbe5",
@@ -227,7 +196,7 @@
         ]
       },
       {
-        "activity_id": "IA-9d893d7c9272029d",
+        "activity_id": "IA-ed45fb74f2a5283a",
         "funding_insight_id": "FI-0cab7e240eb542ce",
         "event_ids": [
           "EV-e85e6fc6d630d56c"
@@ -267,7 +236,7 @@
         ]
       },
       {
-        "activity_id": "IA-876b8c70a98cb67b",
+        "activity_id": "IA-5b57abd9eaebf8be",
         "funding_insight_id": "FI-6adc0d7bfd441daa",
         "event_ids": [
           "EV-b4d6c556eadaa272"
@@ -307,7 +276,7 @@
         ]
       },
       {
-        "activity_id": "IA-5b5e0342e9acc0e9",
+        "activity_id": "IA-50cd50b69ba97dd3",
         "funding_insight_id": "FI-45331063d95f5f57",
         "event_ids": [
           "EV-81b7cd5d6a37912c"
@@ -347,7 +316,144 @@
         ]
       },
       {
-        "activity_id": "IA-b28fc9b02636781a",
+        "activity_id": "IA-096aeff1dd0e9962",
+        "funding_insight_id": "FI-8e7436171d45ed58",
+        "event_ids": [
+          "EV-21529e29a0eedf85"
+        ],
+        "company_entity_id": "EN-7753b0382f29e6a8",
+        "company_canonical_entity_id": "",
+        "company_name": "耀速科技（Xellar Biosystems）",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "超2亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": 200000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 2 亿元"
+        },
+        "announced_at": "2026-04-02",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5dbca4d3b6550c7f",
+            "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
+            "source_title": "晶泰科技参与耀速科技超2亿元A轮融资，AI+器官芯片+自动化构建下一代药物研发基础设施",
+            "source_content_hash": "83f7880e936b9d539c680c33d7c524450bc8c17a97caf9468f077fc6c97eab62",
+            "quote": "本轮融资由国寿股权独家领投，老股东晶泰科技、雅亿资本、君联资本持续加码。",
+            "quote_hash": "0c14b8843933f41cc84f45cbaf90abc591001d889abe47c8f6e6323f14015b83"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9cb284487d917a8d",
+        "funding_insight_id": "FI-1c45f6b3bea32aad",
+        "event_ids": [
+          "EV-fbb4b961191efa55"
+        ],
+        "company_entity_id": "EN-e7d56af70143fcd7",
+        "company_canonical_entity_id": "",
+        "company_name": "数巅智能",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "pre-A轮老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9ebda1057c2926b3",
+            "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
+            "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
+            "source_content_hash": "6e9cfd36fd6943c7",
+            "quote": "老股东君联资本等也持续加码。",
+            "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ce4005851022b096",
+        "funding_insight_id": "FI-ec899db298fe1efb",
+        "event_ids": [
+          "EV-d99be21ac665f1f9"
+        ],
+        "company_entity_id": "EN-7753b0382f29e6a8",
+        "company_canonical_entity_id": "",
+        "company_name": "耀速科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5dbca4d3b6550c7f",
+            "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
+            "source_title": "晶泰科技参与耀速科技超2亿元A轮融资，AI+器官芯片+自动化构建下一代药物研发基础设施",
+            "source_content_hash": "83f7880e936b9d53",
+            "quote": "本轮融资由国寿股权独家领投，老股东晶泰科技、雅亿资本、君联资本持续加码。",
+            "quote_hash": "0c14b8843933f41cc84f45cbaf90abc591001d889abe47c8f6e6323f14015b83"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-54d48989dcec8743",
+        "funding_insight_id": "FI-63374eeafcdd0df6",
+        "event_ids": [
+          "EV-7eead74c2baae511",
+          "EV-ef669a52c9a3f94f"
+        ],
+        "company_entity_id": "EN-1d79127e9d90e89b",
+        "company_canonical_entity_id": "EN-1d79127e9d90e89b",
+        "company_name": "智谱AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-e930be8aa5120588",
+            "source_url": "https://www.jiemian.com/article/12128930.html",
+            "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
+            "source_content_hash": "6039a35df79b1076",
+            "quote": "君联资本等老股东继续跟投",
+            "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-60358805fc5c2d7c",
         "funding_insight_id": "FI-e9bdd4e9374b04ca",
         "event_ids": [
           "EV-41c54c428d84cc1e",
@@ -357,23 +463,15 @@
         "company_entity_id": "EN-8dc72a4672894e0f",
         "company_canonical_entity_id": "EN-8dc72a4672894e0f",
         "company_name": "自变量机器人",
-        "round": "A++轮",
-        "round_code": "series_a_plus_plus",
-        "round_original": "A++轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-01-12",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "Pre-A++轮领投",
         "role_code": "historical_or_ambiguous",
@@ -387,24 +485,48 @@
             "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
           }
         ]
+      },
+      {
+        "activity_id": "IA-634495a5559aca6a",
+        "funding_insight_id": "FI-e4c90ce26c3922b5",
+        "event_ids": [
+          "EV-3a7e1e2c46daaa76"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "正在洽谈加入的新投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-483eb7ff4aaec1c4",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-26/doc-inipsezp9146369.shtml",
+            "source_title": "DeepSeek正接近完成新一轮融资：已开始为潜在的科创板IPO做准备",
+            "source_content_hash": "ba93060af57afb73",
+            "quote": "投资者包括 DeepSeek 上一轮融资中的部分老股东，例如 Monolith、拾象资本，以及宁德时代（CATL），而正在洽谈加入的新投资者包括 CPE 源峰、君联资本等。",
+            "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-9ebda1057c2926b3",
-        "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
-        "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
-        "source_content_hash": "6e9cfd36fd6943c7",
-        "quote": "老股东君联资本等也持续加码。",
-        "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
-      },
-      {
-        "source_id": "FISRC-e930be8aa5120588",
-        "source_url": "https://www.jiemian.com/article/12128930.html",
-        "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
-        "source_content_hash": "6039a35df79b1076",
-        "quote": "君联资本等老股东继续跟投",
-        "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+        "source_id": "FISRC-662073c15d82f553",
+        "source_url": "http://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260826_6001551.shtml",
+        "source_title": "湖北省经济和信息化厅",
+        "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+        "quote": "据星辰技术最新的工商信息，这份投资方名单星光熠熠：高瓴创投、红杉中国、君联资本、中金资本、招银投资、深创投……",
+        "quote_hash": "3b4598ff323bfa39d8e54f8bb24d069fa10ab49783cadc2fdc85d2513636825a"
       },
       {
         "source_id": "FISRC-b7725acf292395aa",
@@ -439,12 +561,44 @@
         "quote_hash": "1105a4aaa66c3414e7d340016a6fe0224d7ddfa26159efcc2cac1df7b71fdef4"
       },
       {
+        "source_id": "FISRC-5dbca4d3b6550c7f",
+        "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
+        "source_title": "晶泰科技参与耀速科技超2亿元A轮融资，AI+器官芯片+自动化构建下一代药物研发基础设施",
+        "source_content_hash": "83f7880e936b9d53",
+        "quote": "本轮融资由国寿股权独家领投，老股东晶泰科技、雅亿资本、君联资本持续加码。",
+        "quote_hash": "0c14b8843933f41cc84f45cbaf90abc591001d889abe47c8f6e6323f14015b83"
+      },
+      {
+        "source_id": "FISRC-9ebda1057c2926b3",
+        "source_url": "https://industry.caijing.com.cn/20260707/5169223.shtml",
+        "source_title": "迎驾贡酒投资数巅智能，后者提供企业级Data Agent解决方案_食饮_产经频道首页_财经网 - CAIJING.COM.CN",
+        "source_content_hash": "6e9cfd36fd6943c7",
+        "quote": "老股东君联资本等也持续加码。",
+        "quote_hash": "a05d9ce54923c229860f924a516aa8582eba626684335303691ad8d96c1e9346"
+      },
+      {
+        "source_id": "FISRC-e930be8aa5120588",
+        "source_url": "https://www.jiemian.com/article/12128930.html",
+        "source_title": "刚刚，智谱AI完成融资30亿|界面新闻 · JMedia",
+        "source_content_hash": "6039a35df79b1076",
+        "quote": "君联资本等老股东继续跟投",
+        "quote_hash": "09135137d26f26bd28b50094f83073165e1fc63f7387c73121997236f599dfa2"
+      },
+      {
         "source_id": "FISRC-449b969616ed1e95",
         "source_url": "https://www.36kr.com/p/3636080421586182",
         "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
         "source_content_hash": "abef77aff9b6b68f",
         "quote": "更早的2025年2月17日， 自变量完成数亿元Pre-A++轮融资 ，由光速光合、君联资本领投，北京机器人产业投资基金、神骐资本跟投。",
         "quote_hash": "e66e18ce0db7ee2bb2f9d2ee6aaee04aea057828e5f9a1cd637aba571b8852f3"
+      },
+      {
+        "source_id": "FISRC-483eb7ff4aaec1c4",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-26/doc-inipsezp9146369.shtml",
+        "source_title": "DeepSeek正接近完成新一轮融资：已开始为潜在的科创板IPO做准备",
+        "source_content_hash": "ba93060af57afb73",
+        "quote": "投资者包括 DeepSeek 上一轮融资中的部分老股东，例如 Monolith、拾象资本，以及宁德时代（CATL），而正在洽谈加入的新投资者包括 CPE 源峰、君联资本等。",
+        "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
       }
     ],
     "public_profile": {
@@ -640,7 +794,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[9].role": {
           "text": "Pre-A++轮领投",
           "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
           "provider": "deepseek",

@@ -2,6 +2,8 @@ import assert from "node:assert/strict";
 import crypto from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
+import { writeBundle } from "../build-data-center-v4.mjs";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { isReusableBusinessSignalsRun } from "../lib/business-signals-checkpoint.mjs";
@@ -17,6 +19,42 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
+
+test('soft-wrapped funding amounts retain their scale and rupee metrics retain their currency', async () => {
+  const {sentenceSpans}=await import('../build-data-center-v4.mjs');
+  const body='Berlin-based voice AI company Deepslate has raised €7.7\nmillion in a seed round led by 42CAP.\nThe company develops voice models.';
+  const spans=sentenceSpans(body);
+  assert.match(spans[0].quote,/€7\.7\s+million/u);
+  assert.equal(metricValues(spans[0].quote)[0],'€7.7 million');
+  assert.equal(metricValues('Vytalyou raised Rs 9 crore. Biopeak raised $2.7 million.')[0],'Rs 9 crore');
+});
+
+test('a reviewed financing date requires a captured earlier disclosure of the same company and amount', async () => {
+  const {reviewedFundingDate} = await import('../build-data-center-v4.mjs');
+  const quote='Acme Health raised $700 million in Series C funding.';
+  const context={subject:'Acme Health',amount:'$700 million',publishedAt:'2026-07-20',sources:new Map([['SA-original',{raw:{published_at:'2026-07-15',clean_text:quote}}]])};
+  const review={status:'accepted',reviewer:'fixture',date:'2026-07-15',source_ref:'SA-original',quote};
+  assert.equal(reviewedFundingDate(review,context),'2026-07-15');
+  assert.equal(reviewedFundingDate(null,context),'2026-07-20');
+  for(const bad of [{...review,date:'2026-07-14'},{...review,quote:'Changed text'},{...review,reviewer:''}])assert.throws(()=>reviewedFundingDate(bad,context),/invalid_reviewed_funding_date/);
+  assert.throws(()=>reviewedFundingDate(review,{...context,subject:'Another company'}),/invalid_reviewed_funding_date/);
+  assert.throws(()=>reviewedFundingDate(review,{...context,amount:'$70 million'}),/invalid_reviewed_funding_date/);
+});
+
+test('rebuilding raw intake preserves accepted reviews only for retained events', () => {
+  const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'reviewed-facts-'));
+  try {
+    const kept = {reviewed_classification_id:'REC-kept',event_id:'EV-kept',review_status:'accepted'};
+    const removed = {reviewed_classification_id:'REC-removed',event_id:'EV-removed',review_status:'accepted'};
+    fs.writeFileSync(path.join(directory,'reviewed-event-classifications.json'),JSON.stringify([kept,removed]));
+    const bundle={manifest:{counts:{}},canonical_events:[{event_id:'EV-kept'}],reviewed_event_classifications:[]};
+    writeBundle(bundle,date,directory);
+    assert.deepEqual(JSON.parse(fs.readFileSync(path.join(directory,'reviewed-event-classifications.json'))),[kept]);
+    assert.equal(JSON.parse(fs.readFileSync(path.join(directory,'manifest.json'))).counts.reviewed_event_classifications,1);
+    writeBundle({...bundle,reviewed_event_classifications:[{...kept,value_id:'updated'}]},date,directory);
+    assert.equal(JSON.parse(fs.readFileSync(path.join(directory,'reviewed-event-classifications.json')))[0].value_id,'updated');
+  } finally { fs.rmSync(directory,{recursive:true,force:true}); }
+});
 
 test("dated industry explainers are not new product releases", () => {
   for (const title of [
@@ -47,8 +85,8 @@ test("funding claim candidates reject an unrelated financing teaser near the art
 });
 
 test("daily recovery revalidates and reuses existing model decisions", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  assert.match(workflow, /generate-data-center-model-assist\.mjs[^]*?--reuse-existing=true/u);
+  const workflow = fs.readFileSync(path.join(root, "agent-workflow/financing/run.mjs"), "utf8");
+  assert.match(workflow, /generate-data-center-model-assist[^]*?--reuse-existing=true/u);
 });
 
 test("catalog coverage shares public admission and never auto-approves pending entities", () => {
@@ -494,6 +532,24 @@ function acceptedModelCandidate(sourceEntry, claims, evidence) {
     evidence,
   };
 }
+
+test('reviewed financing rounds do not merge through a shared investor and amount', () => {
+  const inputs = [
+    entry('funded-xai', 'xAI raises $20 billion in Series E', 'xAI has raised $20 billion in Series E funding. Nvidia participated. The company builds large language models.'),
+    entry('funded-openai', 'OpenAI raises $20 billion in Series G', 'OpenAI has raised $20 billion in Series G funding. Nvidia participated. The company builds large language models.'),
+  ];
+  const sourceRefs = inputs.map(item => sourceArtifact(item.raw, item.file).source_artifact_id);
+  const result = buildBundle(inputs, taxonomy, date, `${date}T00:00:00Z`, {
+    targetedFundingPolicy: { round_identity_source_refs: sourceRefs },
+  });
+  assert.equal(result.canonical_events.length, 2);
+  assert.ok(result.canonical_events.every(event => event.source_refs.length === 1));
+});
+
+test('software development agents provide explicit AI product evidence', () => {
+  assert.equal(eventAiRelevanceEvidence({claims:[{source_quote:'Droids are software development agents that operate autonomously.'}],eventType:'funding'}).accepted,true);
+  assert.equal(eventAiRelevanceEvidence({claims:[{source_quote:'The company hires agents for software development sales.'}],eventType:'funding'}).accepted,false);
+});
 
 test("a cross-linked AI snippet cannot publish an unrelated entity-free headline", () => {
   const bundle = buildBundle([
@@ -1768,6 +1824,23 @@ test("funding sources older than three months stay in QA by default", () => {
   assert.ok(bundle.qa_queue.some((item) => item.reason === "source_outside_funding_backfill_window"));
 });
 
+test("scoped historical financing permits extraction before event recognition and excludes product events", () => {
+  const source = entry("targeted-history-unrecognized", "More agents in more places",
+    "Natural is an AI software company. Its new equity round totals $30 million.",
+    { published_at: "2026-02-01" });
+  const product = entry("targeted-history-product", "Acme launches an AI agent platform",
+    "Acme launched an AI agent platform for enterprise customers.", { published_at: "2026-02-01" });
+  const policy = { schema_version: "TARGETED-FUNDING-AUTHORIZATION-V1", reviewed_by: "fixture",
+    from: "2026-01-01", to: "2026-10-02", source_refs: [source, product].map(e => sourceArtifact(e.raw, e.file).source_artifact_id) };
+  const build = targetedFundingPolicy => buildBundle([source, product], taxonomy, "2026-10-02", "2026-10-02T00:00:00Z", { targetedFundingPolicy });
+  const allowed = build(policy);
+  assert.equal(allowed.canonical_events.length, 0);
+  assert.ok(allowed.qa_queue.some(q => q.reason === "no_source_bounded_event"));
+  assert.ok(!allowed.qa_queue.some(q => /outside_.*window/u.test(q.reason)));
+  const denied = build({ ...policy, source_refs: [] });
+  assert.ok(denied.qa_queue.every(q => q.reason === "source_outside_daily_window"));
+});
+
 test("sources dated after the data day cannot become commercial events", () => {
   const bundle = buildBundle([
     entry(
@@ -2429,26 +2502,7 @@ test("integrity gate rejects duplicate stable identifiers", () => {
   assert.ok(result.failures.some((failure) => failure.includes("duplicate raw_id")));
 });
 
-test("daily workflow stages only V4-native outputs after the pre-commit gate succeeds", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  const stagingBlock = workflow.indexOf("- name: Commit Data Center V4 assets");
-
-  assert.ok(stagingBlock > 0);
-  for (const asset of [
-    "data-center-v4/intake-v1/${RUN_DATE}.json",
-    "data-center-v4/${RUN_DATE}",
-    "opportunity-evidence-v2.json",
-    "trend-radar-v1.json",
-    "collection-telemetry-v1.json",
-  ]) {
-    assert.ok(workflow.indexOf(asset, stagingBlock) > stagingBlock, `${asset} must be staged inside the V4-success block`);
-  }
-  assert.doesNotMatch(workflow, /(?:no-)?trend-candidate-decision\.md|v3-data-observation-desk\.json|intelligence-graph-index\.json|01-Signal-Cards/iu);
-  assert.match(workflow, /if: always\(\) && steps\.pre-commit-gate\.outcome == 'success'/iu);
-  assert.match(
-    workflow,
-    /Confirm site data freshness[\s\S]*set -euo pipefail[\s\S]*assert-data-center-projection-coverage\.mjs[\s\S]*--reports-dir="agent-workflow\/reports"/u,
-  );
+test("Pages validates factual projection coverage before deployment", () => {
   const pagesWorkflow = fs.readFileSync(path.join(root, ".github/workflows/github-pages.yml"), "utf8");
   assert.match(
     pagesWorkflow,
@@ -2472,61 +2526,15 @@ test("durable checkpoints support repeated and cancelled recovery without trusti
   assert.equal(isReusableBusinessSignalsRun(checkpoint([restored])), false);
 });
 
-test("daily workflow resumes downstream failures without repeating accepted collection", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"), "utf8");
-  const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
+test("dated title repair and immutable accepted evidence remain required", () => {
   const titleRepair = fs.readFileSync(path.join(root, "agent-workflow/tools/backfill-source-title-translations.mjs"), "utf8");
   const agentRules = fs.readFileSync(path.join(root, "AGENTS.md"), "utf8");
-
-  assert.match(workflow, /resume_run_id:/u);
-  assert.match(workflow, /Restore accepted source intake from failed run/u);
-  assert.match(workflow, /resume_dir="\$\(mktemp -d\)"/u);
-  assert.match(workflow, /gh run download "\$resume_run_id" --name "\$artifact_name" --dir "\$resume_dir\/artifact"/u);
-  assert.match(workflow, /cp -a "\$resume_dir\/artifact\/\." \./u);
-  assert.match(
-    workflow,
-    /guanlan-monitor-quality-gate\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*assert-daily-production-chain\.mjs[\s\S]*--stage=post-monitor/u,
-    "a restored intake must be re-evaluated by the current quality gate before post-monitor handoff",
-  );
-  assert.match(workflow, /Collect source raw artifacts[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
-  assert.match(workflow, /Run Daily Monitor with QC[\s\S]*?if: steps\.existing-assets\.outputs\.skip != 'true' && steps\.resume-artifact\.outputs\.used != 'true'/u);
-  assert.match(workflow, /isReusableBusinessSignalsRun\(run\)/u);
-  assert.match(dispatcher, /isReusableBusinessSignalsRun\(detail\)/u);
-  assert.doesNotMatch(workflow, /node agent-workflow\/tools\/normalize-(?:source-intake-titles|china-market-intake)\.mjs/u);
-  assert.match(workflow, /Confirm V4 source-intake handoff and dedupe state[\s\S]*?if: always\(\)/u);
-  assert.match(workflow, /Persist originals privately and enforce the public boundary[\s\S]*?\(steps\.source-artifacts\.outcome == 'success' \|\| steps\.resume-artifact\.outputs\.used == 'true'\)/u);
-  assert.match(workflow, /Repair required source-title translations[\s\S]*backfill-source-title-translations\.mjs[\s\S]*--date="\$\{RUN_DATE\}"[\s\S]*--write=true[\s\S]*build-data-center-v4\.mjs --date="\$\{RUN_DATE\}"[\s\S]*assert:source-titles/u);
-  assert.match(workflow, /Run Data Center V4 integrity gate[\s\S]*steps\.source-title-repair\.outcome == 'success'/u);
   assert.match(titleRepair, /const selectedDate = arg\("date"\)/u);
   assert.match(titleRepair, /filter\(\(date\) => !selectedDate \|\| date === selectedDate\)/u);
-  assert.match(workflow, /assert:private-evidence-backup -- --date="\$\{RUN_DATE\}"/u);
-  const evidenceBoundary = workflow.indexOf("Persist originals privately and enforce the public boundary");
-  const evidencePush = workflow.indexOf('git -C "$GUANLAN_EVIDENCE_BACKUP_ROOT" push origin HEAD:main', evidenceBoundary);
-  const evidenceAssert = workflow.indexOf('npm run assert:private-evidence-remote', evidencePush);
-  const evidenceCoverage = workflow.indexOf('npm run assert:private-evidence-backup -- --date="${RUN_DATE}"', evidencePush);
-  assert.ok(evidenceBoundary >= 0 && evidencePush > evidenceBoundary, "private evidence must push before final remote assertions");
-  assert.ok(evidenceAssert > evidencePush && evidenceCoverage > evidencePush, "private evidence coverage must run after push");
   assert.match(agentRules, /Same-date accepted collection is immutable reusable input/u);
   assert.match(agentRules, /must restore that artifact and must not recollect/u);
 });
 
-test("cloud Business Signals health dispatch waits for downstream completion", () => {
-  const workflow = fs.readFileSync(path.join(root, ".github/workflows/business-signals-health-dispatch.yml"), "utf8");
-  const dispatcher = fs.readFileSync(path.join(root, "agent-workflow/tools/run-business-signals-health-dispatch.mjs"), "utf8");
-
-  assert.match(workflow, /timeout-minutes: 45/u);
-  assert.match(workflow, /--wait=true/u);
-  assert.match(workflow, /--wait-timeout-minutes=35/u);
-  assert.match(dispatcher, /waitForBusinessSignalsRun/u);
-  assert.match(dispatcher, /waitForHealthyV4/u);
-  assert.match(dispatcher, /Business Signals run concluded/u);
-  assert.match(dispatcher, /\+refs\/heads\/main:refs\/remotes\/origin\/main/u);
-  assert.match(dispatcher, /data-center-v4\/manifest\.json/u);
-  assert.doesNotMatch(dispatcher, /frontstagePath = "01-SiteV2\/site\/data\/data-center-v4-frontstage\.json"/u);
-  assert.match(dispatcher, /ready: fetch\.ok/u);
-  assert.match(dispatcher, /Timed out waiting for Business Signals publication/u);
-  assert.match(dispatcher, /action: "completed"/u);
-});
 
 test("source-intake gate replays V4 evidence eligibility without private Raw routing fields", () => {
   const accepted = {
@@ -2830,6 +2838,10 @@ test("reviewed exact-span QA repairs replace headline recipients; stale and unre
   const build = (c) => buildBundle([source], taxonomy, date, "2026-07-16T00:00:00Z", { modelAssist: { candidates: [c] } });
   candidate.proposal.action = "extract_claim";
   assert.ok(build(candidate).claims.some(c => c.subject === "上海喜梨信息科技有限公司"));
+  const earlierAutomatic = { ...candidate, candidate_id: "MAC-earlier", task_type: "claim_extraction", review: undefined,
+    proposal: { claims: [{ ...candidate.proposal.claims[0], subject: "一家AI玩具公司" }] } };
+  const reviewedOverAutomatic = buildBundle([source], taxonomy, date, "2026-07-16T00:00:00Z", { modelAssist: { candidates: [earlierAutomatic, candidate] } });
+  assert.ok(reviewedOverAutomatic.claims.some(c => c.subject === "上海喜梨信息科技有限公司"));
   for (const c of [{...candidate, source_hash: "0".repeat(16)}, {...candidate, review: undefined}]) {
     assert.ok(!build(c).claims.some(row => row.extraction_method === "model_source_span"));
     assert.notEqual(build(c).claims[0]?.subject, "上海喜梨信息科技有限公司");

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,31 +61,43 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "current_round_count": 8,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-04",
+    "first_disclosed_at": "2026-02-03",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "co_lead": 4,
-      "participant": 1
+      "co_lead": 6,
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
       "series_b",
       "series_c",
       "series_d",
-      "series_f"
+      "series_f",
+      "series_h"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2f4436342c46decc",
+        "canonical_entity_id": "",
+        "name": "Cerebras Systems"
+      },
       {
         "entity_id": "EN-d41ebd9f02722fc8",
         "canonical_entity_id": "EN-d41ebd9f02722fc8",
         "name": "Crusoe"
+      },
+      {
+        "entity_id": "EN-7b9b33ca95deff50",
+        "canonical_entity_id": "",
+        "name": "CScale"
       },
       {
         "entity_id": "EN-0caee180da9d0f3f",
@@ -103,6 +115,11 @@
         "name": "Lumilens Inc."
       },
       {
+        "entity_id": "EN-897502f225e38bf5",
+        "canonical_entity_id": "",
+        "name": "Positron AI"
+      },
+      {
         "entity_id": "EN-0995103010d39563",
         "canonical_entity_id": "",
         "name": "Positron AI"
@@ -110,7 +127,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-3f07376f3fa1c0a7",
+        "activity_id": "IA-0e4d6c88c89ff71b",
+        "funding_insight_id": "FI-07d1ab9787e1c9dd",
+        "event_ids": [
+          "EV-4c5dc2fc6d805b3f"
+        ],
+        "company_entity_id": "EN-7b9b33ca95deff50",
+        "company_canonical_entity_id": "",
+        "company_name": "CScale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$145 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 145000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.45 亿美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f84ad840508b39",
+            "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+            "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+            "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+            "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+            "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-79bff61002f6cae4",
         "funding_insight_id": "FI-2309843d76ae81f9",
         "event_ids": [
           "EV-f2950d2104e97163"
@@ -150,7 +207,7 @@
         ]
       },
       {
-        "activity_id": "IA-dbb472211d8c881c",
+        "activity_id": "IA-1bbea9d5275895fe",
         "funding_insight_id": "FI-72df07926e3369ef",
         "event_ids": [
           "EV-26a5749d8604455a",
@@ -191,7 +248,47 @@
         ]
       },
       {
-        "activity_id": "IA-e7588d760e1d913f",
+        "activity_id": "IA-8b14521c6a22806b",
+        "funding_insight_id": "FI-16ec583e6204fbd2",
+        "event_ids": [
+          "EV-2c217907879cd2a8"
+        ],
+        "company_entity_id": "EN-897502f225e38bf5",
+        "company_canonical_entity_id": "",
+        "company_name": "Positron AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$375 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 375000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.75 亿美元"
+        },
+        "announced_at": "2026-09-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "C轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3947ce709f26c22a",
+            "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+            "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+            "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+            "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital.",
+            "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2dc02c74d77f50d8",
         "funding_insight_id": "FI-0df914fcc4086c90",
         "event_ids": [
           "EV-b116eafe60d71fbe"
@@ -231,7 +328,7 @@
         ]
       },
       {
-        "activity_id": "IA-bc6aa484bb907ee3",
+        "activity_id": "IA-a093da9250bffc7e",
         "funding_insight_id": "FI-3b1ea359415f476d",
         "event_ids": [
           "EV-4eaf3aabecae6016"
@@ -271,7 +368,7 @@
         ]
       },
       {
-        "activity_id": "IA-005adefb8c5fc7b5",
+        "activity_id": "IA-b06588411f4a6334",
         "funding_insight_id": "FI-cfb62be40852ea40",
         "event_ids": [
           "EV-7abd8ec418f1e7f3"
@@ -317,9 +414,89 @@
             "quote_hash": "ae596dcd76d7374cac3af9db38142d54ad3a8bd3c47828ea455bd5a4427a8230"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b7aff97e1b1bb3d4",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-51b0427643bffd15",
+            "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+            "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+            "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+            "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+            "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b670d78d7d608a58",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series G 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+            "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-98f84ad840508b39",
+        "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+        "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+        "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+        "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+        "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+      },
       {
         "source_id": "FISRC-3511f7baf76701e3",
         "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
@@ -335,6 +512,14 @@
         "source_content_hash": "a5d809d221408d5b",
         "quote": "The latest financing round was co-led by a powerhouse consortium of financial and strategic heavyweights: Atreides Management , Mubadala Capital , and Valor Equity Partners .",
         "quote_hash": "832326ba36c3882371b66633ca7e475b4a2091c8b2e568a29eacf4bc6ec42202"
+      },
+      {
+        "source_id": "FISRC-3947ce709f26c22a",
+        "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+        "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+        "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+        "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital.",
+        "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
       },
       {
         "source_id": "FISRC-a967da2448674734",
@@ -367,6 +552,22 @@
         "source_content_hash": "cbb6c55f3aa631df",
         "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others.",
         "quote_hash": "ae596dcd76d7374cac3af9db38142d54ad3a8bd3c47828ea455bd5a4427a8230"
+      },
+      {
+        "source_id": "FISRC-51b0427643bffd15",
+        "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+        "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+        "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+        "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+        "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+        "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
       }
     ],
     "public_profile": {
@@ -410,16 +611,16 @@
           "source_id": "atreides_gavin"
         },
         {
+          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮联合领投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f84ad840508b39"
+        },
+        {
           "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮联合领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3511f7baf76701e3"
         },
         {
           "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮联合领投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5fc65e3f4fb1b347"
-        },
-        {
-          "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 本轮联合领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a967da2448674734"
         }
       ],
       "contacts": [
@@ -465,6 +666,14 @@
           "quote_hash": "abf81470cfc557b443959c375e0e0ef25df92f24a2d5be7390d57ae00bf49866"
         },
         {
+          "source_id": "FISRC-98f84ad840508b39",
+          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+          "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+        },
+        {
           "source_id": "FISRC-3511f7baf76701e3",
           "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
           "source_title": "Press Release: Flow Engineering Raises $50M Series B at $750M Valuation to Make Hardware Iteration as Fast as Software — Flow Engineering",
@@ -479,14 +688,6 @@
           "source_content_hash": "a5d809d221408d5b",
           "quote": "The latest financing round was co-led by a powerhouse consortium of financial and strategic heavyweights: Atreides Management , Mubadala Capital , and Valor Equity Partners .",
           "quote_hash": "832326ba36c3882371b66633ca7e475b4a2091c8b2e568a29eacf4bc6ec42202"
-        },
-        {
-          "source_id": "FISRC-a967da2448674734",
-          "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
-          "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
-          "source_content_hash": "f3b1d21bc0dc0006",
-          "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
-          "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -495,6 +696,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[8].role": {
+          "text": "Series G 领投",
+          "source_hash": "f3f6de8acaa7ef2a6e0d57253fb12e64a3ac65374b7b99822bcbd922a39d98b0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
         "public_profile.milestones[0].description": {
           "text": "Gavin Baker 离开 Fidelity 后创立 Atreides Management。",
           "source_hash": "a9a1e2e2ceb7ef56957f33f986d6f9c4db528e2d6b33e0639e5c151d050f95d0",

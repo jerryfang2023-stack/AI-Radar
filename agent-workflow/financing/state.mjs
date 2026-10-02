@@ -31,11 +31,15 @@ export async function runStages({ stages, file, execute, codeVersion, date }) {
   if (state.date !== date || state.version !== 'FINANCING-RUN-1') throw new Error('checkpoint_identity_mismatch');
   let parent = date;
   for (const stage of stages) {
-    const key = digest([parent, stage.id, codeVersion, stage.version || "", stage.checkpointCommands || stage.commands]);
+    const keyForCurrentInputs = () => digest([parent, stage.id, codeVersion, stage.version || "", stage.checkpointCommands || stage.commands, stage.inputVersion?.() || ""]);
+    let key = keyForCurrentInputs();
     if (state.stages[stage.id]?.key !== key || !state.stages[stage.id]?.ok || !(await stage.valid())) {
       try {
         await execute(stage);
         if (!(await stage.valid())) throw new Error('stage_output_invalid');
+        // A stage may create its own reviewed input. Record the resulting key
+        // so the next resume skips it until that input changes again.
+        key = keyForCurrentInputs();
         state.stages[stage.id] = { ok: true, key, at: new Date().toISOString() };
       } catch (error) {
         state.stages[stage.id] = { ok: false, key, error: error.message, at: new Date().toISOString() };

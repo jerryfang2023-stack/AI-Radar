@@ -188,26 +188,4 @@ test("China market intake selection reads only the CN subset from a unified dail
   assert.deepEqual(selected.invalidMarketDocuments, []);
 });
 
-test("the daily post-monitor handoff runs the dated China market gate", () => {
-  const workflow = fs.readFileSync(
-    path.join(root, ".github/workflows/daily-persistent-assets-pr.yml"),
-    "utf8",
-  );
-  assert.match(
-    workflow,
-    /Confirm V4 source-intake handoff[\s\S]*npm run assert:china-market -- --date="\$\{RUN_DATE\}" --stage=intake/u,
-  );
-  assert.doesNotMatch(workflow, /node agent-workflow\/tools\/normalize-china-market-intake\.mjs/u);
-  assert.match(
-    workflow,
-    /Restore accepted source intake[\s\S]*source-title-translations-main\.json[\s\S]*guanlan-monitor-quality-gate\.mjs/u,
-  );
-  assert.match(
-    workflow,
-    /Run Data Center V4 integrity gate[\s\S]*npm run assert:china-market -- --date="\$\{RUN_DATE\}" --stage=bundle/u,
-  );
-  assert.match(
-    workflow,
-    /Confirm site data freshness[\s\S]*npm run assert:source-titles/u,
-  );
-});
+

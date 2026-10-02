@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-9815a13d3f13bbc6",
+    "name": "影目INMO",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-64b4b13e6fdcbedc"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-01-15",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-64b4b13e6fdcbedc"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-64b4b13e6fdcbedc",
+        "dataDate": "2026-10-02",
+        "date": "2026-01-15",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "一年3轮，影目INMO完成C1轮融资｜独家",
+        "displayTags": [],
+        "entityIds": [
+          "EN-9815a13d3f13bbc6"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-25575a3d485c0623",
+      "snapshotKey": "25575a3d485c0623",
+      "snapshotId": "HWS-5476d73cad63b4ba",
+      "eventId": "EV-64b4b13e6fdcbedc",
+      "eventIds": [
+        "EV-64b4b13e6fdcbedc"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "影目INMO",
+      "subject": "影目INMO",
+      "productNames": [],
+      "hardwareType": "smart_glasses",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "",
+          "fact_ref": "HWF-87e298502c9b6f6d"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-87e298502c9b6f6d",
+          "fact_type": "product",
+          "observed_at": "2026-01-15",
+          "subject_entity_id": "EN-9815a13d3f13bbc6",
+          "subject_name": "影目INMO",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "smart_glasses",
+          "metric_value": "",
+          "unit": "",
+          "source_quote": "公开资料显示，影目INMO成立于2020年，是国内最早入局AI眼镜赛道的公司之一，目前已经推出包括INMO AIR、INMO GO等多款系列产品。其中，INMO AIR系列主打无线一体式“AI+AR”智能眼镜，以自研IMOS空间操作系统和阵列光波导技术为核心，将“下一代移动智能终端”作为目标；INMO GO系列聚焦翻译、提词、会议助理等高频刚需场景；INMO X系列则是探索品牌联名与生态合作，拓展AI眼镜的场景边界。",
+          "event_refs": [
+            "EV-64b4b13e6fdcbedc"
+          ],
+          "claim_ref": "CL-dfc047f605b8f686",
+          "source_refs": [
+            "SA-9b8af1884de639bb"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://m.sohu.com/a/976239041_116132",
+      "entityIds": [
+        "EN-9815a13d3f13bbc6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,406 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-f66d982784a204",
+    "name": "Fidelity Management & Research Company",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "corporate_investor",
+    "investor_kind_label": "企业投资方",
+    "classification_confidence": "evidence_bounded",
+    "collection_status": "evidence_backed",
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 4,
+    "market_regions": [
+      "GLOBAL"
+    ],
+    "china_market_activity_count": 0,
+    "china_market_company_count": 0,
+    "first_disclosed_at": "2026-02-03",
+    "latest_disclosed_at": "2026-09-28",
+    "role_counts": {
+      "co_lead": 1,
+      "historical_or_ambiguous": 1,
+      "participant": 3
+    },
+    "round_codes": [
+      "other",
+      "series_c",
+      "series_h"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-2f4436342c46decc",
+        "canonical_entity_id": "",
+        "name": "Cerebras Systems"
+      },
+      {
+        "entity_id": "EN-f76a8103e49bcc36",
+        "canonical_entity_id": "",
+        "name": "SiMa.ai"
+      },
+      {
+        "entity_id": "EN-da2f0f03bc3a24f5",
+        "canonical_entity_id": "",
+        "name": "World Labs"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-9c9df46822a1399f",
+        "funding_insight_id": "FI-100e345b5bd4b3c6",
+        "event_ids": [
+          "EV-1ef8979f39a2ccc5"
+        ],
+        "company_entity_id": "EN-f76a8103e49bcc36",
+        "company_canonical_entity_id": "",
+        "company_name": "SiMa.ai",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-926f8f2e0ad24f56",
+            "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+            "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+            "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+            "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
+            "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dadcc11a9b624cfb",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+            "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-305970bc3c23e38e",
+        "funding_insight_id": "FI-4a3b79f9329c86c7",
+        "event_ids": [
+          "EV-c503664bc5c24b10"
+        ],
+        "company_entity_id": "EN-da2f0f03bc3a24f5",
+        "company_canonical_entity_id": "",
+        "company_name": "World Labs",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "new funding",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f911788bc29402eb",
+            "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+            "source_title": "世界实验室宣布新融资",
+            "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+            "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+            "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b8781b68024bc8be",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-51b0427643bffd15",
+            "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+            "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+            "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+            "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+            "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a2eea0d056e648e6",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series G 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+            "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-926f8f2e0ad24f56",
+        "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+        "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+        "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+        "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
+        "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+      },
+      {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+        "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+      },
+      {
+        "source_id": "FISRC-f911788bc29402eb",
+        "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+        "source_title": "世界实验室宣布新融资",
+        "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+        "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+        "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+      },
+      {
+        "source_id": "FISRC-51b0427643bffd15",
+        "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+        "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+        "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+        "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+        "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+        "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
+      "summary": "Fidelity Management & Research Company 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮联合领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
+        },
+        {
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b5e22ae086a6b353"
+        },
+        {
+          "description": "融资来源记录：World Labs · 其他融资 · 2026-02-18 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f911788bc29402eb"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
+          "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
+          "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+        },
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+          "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+        },
+        {
+          "source_id": "FISRC-f911788bc29402eb",
+          "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+          "source_title": "世界实验室宣布新融资",
+          "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+          "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+          "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[4].role": {
+          "text": "Series G 领投",
+          "source_hash": "f3f6de8acaa7ef2a6e0d57253fb12e64a3ac65374b7b99822bcbd922a39d98b0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        }
+      }
+    }
+  }
+}

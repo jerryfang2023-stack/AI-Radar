@@ -1,0 +1,234 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "institution": {
+    "id": "INV-718d680f5df2f2",
+    "name": "朝晖资本",
+    "aliases": [],
+    "canonical_entity_id": null,
+    "investor_kind": "unverified_investor",
+    "investor_kind_label": "投资方（类型待核验）",
+    "classification_confidence": "unverified",
+    "collection_status": "evidence_backed",
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 0,
+    "portfolio_company_count": 2,
+    "market_regions": [
+      "CN"
+    ],
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-05-29",
+    "latest_disclosed_at": "2026-06-25",
+    "role_counts": {
+      "lead": 1,
+      "participant": 1
+    },
+    "round_codes": [
+      "multi_round",
+      "series_a_plus_extension"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-68608367b27ccaeb",
+        "canonical_entity_id": "",
+        "name": "凌川科技"
+      },
+      {
+        "entity_id": "EN-4272dd59e5f45d43",
+        "canonical_entity_id": "",
+        "name": "秋水半导体"
+      }
+    ],
+    "activities": [
+      {
+        "activity_id": "IA-aa1f98fc425172ce",
+        "funding_insight_id": "FI-cf2e02493f285517",
+        "event_ids": [
+          "EV-193f535567067d95"
+        ],
+        "company_entity_id": "EN-68608367b27ccaeb",
+        "company_canonical_entity_id": "",
+        "company_name": "凌川科技",
+        "round": "A+轮扩展",
+        "round_code": "series_a_plus_extension",
+        "round_original": "A+轮扩展",
+        "amount_original": "数亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a39c77bc80e12506",
+            "source_url": "https://www.ithome.com/0/968/289.htm",
+            "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+            "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+            "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+            "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f9ea35be25c02adf",
+        "funding_insight_id": "FI-cf2d1d1fe378076e",
+        "event_ids": [
+          "EV-13796d1f3cea3221"
+        ],
+        "company_entity_id": "EN-4272dd59e5f45d43",
+        "company_canonical_entity_id": "",
+        "company_name": "秋水半导体",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Pre-A轮及A轮（合并披露）",
+        "amount_original": "近2亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-05-29",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed5e30c1c99002a5",
+            "source_url": "https://cn.chinadaily.com.cn/a/202605/29/WS6a195d2aa310942cc49af151.html",
+            "source_title": "获近2亿元融资，这家公司用无损Micro-LED加速AI眼镜全彩化进程",
+            "source_content_hash": "0f8c85bb1d1ff397d0896a0fe2a14bbc1e04d27850c600942a79b00d8fd6dcae",
+            "quote": "本轮融资由朝晖资本领投，通商基金、盛宇投资、宁波人才发展基金、嘉溢创投、涌现科技、数字光芯及兴棠资本跟投",
+            "quote_hash": "b297133589d2692c52f20307da5ffbe714acd08fbae378784433c98ef1234f31"
+          }
+        ]
+      }
+    ],
+    "evidence": [
+      {
+        "source_id": "FISRC-a39c77bc80e12506",
+        "source_url": "https://www.ithome.com/0/968/289.htm",
+        "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+        "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+        "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+        "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
+      },
+      {
+        "source_id": "FISRC-ed5e30c1c99002a5",
+        "source_url": "https://cn.chinadaily.com.cn/a/202605/29/WS6a195d2aa310942cc49af151.html",
+        "source_title": "获近2亿元融资，这家公司用无损Micro-LED加速AI眼镜全彩化进程",
+        "source_content_hash": "0f8c85bb1d1ff397d0896a0fe2a14bbc1e04d27850c600942a79b00d8fd6dcae",
+        "quote": "本轮融资由朝晖资本领投，通商基金、盛宇投资、宁波人才发展基金、嘉溢创投、涌现科技、数字光芯及兴棠资本跟投",
+        "quote_hash": "b297133589d2692c52f20307da5ffbe714acd08fbae378784433c98ef1234f31"
+      }
+    ],
+    "public_profile": {
+      "profile_type": "unverified",
+      "identity_status": "pending_verification",
+      "coverage_status": "identity_unverified",
+      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
+      "summary": "朝晖资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "facts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "融资来源记录：凌川科技 · A+轮扩展 · 2026-06-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a39c77bc80e12506"
+        },
+        {
+          "description": "融资来源记录：秋水半导体 · 多轮融资 · 2026-05-29 · 本轮领投 · 近2亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ed5e30c1c99002a5"
+        }
+      ],
+      "contacts": [],
+      "sources": [
+        {
+          "source_id": "FISRC-a39c77bc80e12506",
+          "source_url": "https://www.ithome.com/0/968/289.htm",
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+          "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+          "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+          "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
+        },
+        {
+          "source_id": "FISRC-ed5e30c1c99002a5",
+          "source_url": "https://cn.chinadaily.com.cn/a/202605/29/WS6a195d2aa310942cc49af151.html",
+          "source_title": "获近2亿元融资，这家公司用无损Micro-LED加速AI眼镜全彩化进程",
+          "source_content_hash": "0f8c85bb1d1ff397d0896a0fe2a14bbc1e04d27850c600942a79b00d8fd6dcae",
+          "quote": "本轮融资由朝晖资本领投，通商基金、盛宇投资、宁波人才发展基金、嘉溢创投、涌现科技、数字光芯及兴棠资本跟投",
+          "quote_hash": "b297133589d2692c52f20307da5ffbe714acd08fbae378784433c98ef1234f31"
+        }
+      ],
+      "last_verified_at": "2026-09-28"
+    }
+  }
+}

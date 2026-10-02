@@ -1,3 +1,4 @@
+const {companyDisplayName}=require('./company-display.js');
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 function normalize(value) {
@@ -16,7 +17,7 @@ function filterCards(cards, filters, latestDate) {
   const threshold = dateThreshold(latestDate, filters.period);
   return cards.filter((card) => {
     if (keyword) {
-      const haystack = normalize([card.company, card.companyFullName, card.summary, card.category, card.subcategory, card.productForm, ...(card.products || []), card.leadInvestor, card.investorsText].join(" "));
+      const haystack = normalize([card.company, companyDisplayName(card.company,card.marketRegion), card.companyFullName, card.summary, card.category, card.subcategory, card.productForm, ...(card.products || []), card.leadInvestor, card.investorsText].join(" "));
       if (!haystack.includes(keyword)) return false;
     }
     if (threshold && card.date < threshold) return false;

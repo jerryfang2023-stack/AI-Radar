@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,27 +61,33 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 7,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-09-08",
+    "first_disclosed_at": "2025-01",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 6
     },
     "round_codes": [
+      "series_b",
       "series_c",
       "series_d",
       "series_e"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
+      },
       {
         "entity_id": "EN-ac32f27ba7a1346f",
         "canonical_entity_id": "",
@@ -103,6 +109,11 @@
         "name": "Lumilens Inc."
       },
       {
+        "entity_id": "EN-c5803a6e4daa6af4",
+        "canonical_entity_id": "",
+        "name": "Modal"
+      },
+      {
         "entity_id": "EN-712dffae168fe622",
         "canonical_entity_id": "",
         "name": "Nomos Ai Inc."
@@ -110,7 +121,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-29388dffd969891d",
+        "activity_id": "IA-ab417a960a032800",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
+            "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ed9a1a5b08998d30",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -150,7 +201,7 @@
         ]
       },
       {
-        "activity_id": "IA-62fc46fa7ef70ef7",
+        "activity_id": "IA-bac5fa195201eaaa",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
         "event_ids": [
           "EV-19dd4c3a5dd5a94b",
@@ -191,7 +242,7 @@
         ]
       },
       {
-        "activity_id": "IA-775c0843eff631c1",
+        "activity_id": "IA-624467cd528ed54e",
         "funding_insight_id": "FI-0df914fcc4086c90",
         "event_ids": [
           "EV-b116eafe60d71fbe"
@@ -231,7 +282,7 @@
         ]
       },
       {
-        "activity_id": "IA-3d67ccda6f0d8d4b",
+        "activity_id": "IA-21ecb58d07fa503e",
         "funding_insight_id": "FI-9fd39f44b35d940c",
         "event_ids": [
           "EV-d9cc588fb41a7e67"
@@ -271,47 +322,7 @@
         ]
       },
       {
-        "activity_id": "IA-334b798ada8f91e4",
-        "funding_insight_id": "FI-9fd39f44b35d940c",
-        "event_ids": [
-          "EV-d9cc588fb41a7e67"
-        ],
-        "company_entity_id": "EN-712dffae168fe622",
-        "company_canonical_entity_id": "",
-        "company_name": "Nomos Ai Inc.",
-        "round": "C轮",
-        "round_code": "series_c",
-        "round_original": "C轮",
-        "amount_original": "1.2亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 120000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "1.2 亿美元"
-        },
-        "announced_at": "2026-07-07",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方（2025年1月参投）",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-afaa91a6569d1f7a",
-            "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-            "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-            "source_content_hash": "afe0afef4cf0ce8c",
-            "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
-            "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-d4c7c53a66eb4ace",
+        "activity_id": "IA-dd37a9a682d71f14",
         "funding_insight_id": "FI-5faa0336090509de",
         "event_ids": [
           "EV-5762fe51987bc5ff"
@@ -349,9 +360,89 @@
             "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
           }
         ]
+      },
+      {
+        "activity_id": "IA-c6978da282c601b3",
+        "funding_insight_id": "FI-772c8fb5434b1734",
+        "event_ids": [
+          "EV-1d31f1c839f9dab5"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$355 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 355000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.55 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-733016c3a34668d3",
+            "source_url": "https://modal.com/blog/modal-series-c",
+            "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+            "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+            "quote": "with Menlo, Bain Capital Ventures, and Accel joining as new investors",
+            "quote_hash": "26e6009b8459219d19331dc45cf2d4d37148f81177808b3185c6b88f4c732cfe"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ed28a83a5d05ff5c",
+        "funding_insight_id": "FI-9fd39f44b35d940c",
+        "event_ids": [
+          "EV-d9cc588fb41a7e67"
+        ],
+        "company_entity_id": "EN-712dffae168fe622",
+        "company_canonical_entity_id": "",
+        "company_name": "Nomos Ai Inc.",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方（2025年1月参投）",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（2025年1月参投）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-afaa91a6569d1f7a",
+            "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+            "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+            "source_content_hash": "afe0afef4cf0ce8c",
+            "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
+            "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
+        "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
+      },
       {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
@@ -385,20 +476,28 @@
         "quote_hash": "67ea6d53fe5895c7b9259e09b6099219f3a5195b03bfa47ecb2dbe337be24814"
       },
       {
-        "source_id": "FISRC-afaa91a6569d1f7a",
-        "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
-        "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
-        "source_content_hash": "afe0afef4cf0ce8c",
-        "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
-        "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
-      },
-      {
         "source_id": "FISRC-a7bbb48af7503bf0",
         "source_url": "https://cognition.com/blog/series-d",
         "source_title": "More Devins in More Places | Cognition",
         "source_content_hash": "f64d20b5549e1b58",
         "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
         "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
+      },
+      {
+        "source_id": "FISRC-733016c3a34668d3",
+        "source_url": "https://modal.com/blog/modal-series-c",
+        "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+        "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+        "quote": "with Menlo, Bain Capital Ventures, and Accel joining as new investors",
+        "quote_hash": "26e6009b8459219d19331dc45cf2d4d37148f81177808b3185c6b88f4c732cfe"
+      },
+      {
+        "source_id": "FISRC-afaa91a6569d1f7a",
+        "source_url": "https://justainews.com/companies/funding-news/norm-ai-raises-120m-series-c-at-1-2b-valuation/",
+        "source_title": "Norm Ai Raises $120M Series C at $1.2B Valuation",
+        "source_content_hash": "afe0afef4cf0ce8c",
+        "quote": "Norm Ai raised $48 million in January 2025 from Vanguard, Blackstone, Bain Capital, Citi, TIAA, and Coatue.",
+        "quote_hash": "d292cf5d747ec6021464ac837841f934420e0a2cd66127a1bdcf2f7ae54c2ec7"
       }
     ],
     "public_profile": {
@@ -454,16 +553,16 @@
           "source_id": "bain_ventures"
         },
         {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
         },
         {
           "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-134a8e8124653c90"
-        },
-        {
-          "description": "融资来源记录：Lumilens Inc. · C轮 · 2026-08-06 · 本轮联合领投 · $900M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a967da2448674734"
         }
       ],
       "contacts": [
@@ -535,6 +634,14 @@
           "quote_hash": "8e973d500d2e3e18b63efcde4308fd116c686f878b846379039b8f90cf9bd061"
         },
         {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint.",
+          "quote_hash": "822a3945748c96e0b198b8636dc8927a98d0b6a3a62939960ae30251cac425cb"
+        },
+        {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
           "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -549,14 +656,6 @@
           "source_content_hash": "e0e9398bf1a24e32",
           "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
           "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
-        },
-        {
-          "source_id": "FISRC-a967da2448674734",
-          "source_url": "https://siliconangle.com/2026/08/06/optical-networking-startup-lumilens-launches-900m-funding/",
-          "source_title": "光网络初创公司Lumilens以9亿美元资金启动",
-          "source_content_hash": "f3b1d21bc0dc0006",
-          "quote": "Atreides Management, Bain Capital Ventures, Meritech, Seligman Ventures and Spark Capital jointly led the investment.",
-          "quote_hash": "94812b7738edf261aeeb91479d522c33f2085d3a81ac0ce4f52f97200d1b0642"
         }
       ],
       "coverage_status": "researched",

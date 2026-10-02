@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,21 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
+    "china_market_activity_count": 4,
     "china_market_company_count": 3,
-    "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-08-24",
+    "first_disclosed_at": "2026-07-09",
+    "latest_disclosed_at": "2026-09-04",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "angel",
@@ -101,7 +101,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-0e6a9e2688790e6a",
+        "activity_id": "IA-ff8b6fbf56acac83",
+        "funding_insight_id": "FI-4a45f01cccfbfed5",
+        "event_ids": [
+          "EV-f2eb34f231afc8aa"
+        ],
+        "company_entity_id": "EN-9a970ad7900121db",
+        "company_canonical_entity_id": "EN-9a970ad7900121db",
+        "company_name": "小鹏机器人业务",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮融资",
+        "amount_original": "超9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": 900000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 9 亿美元"
+        },
+        "announced_at": "2026-09-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ea62510cec1d311",
+            "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+            "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+            "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+            "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+            "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5cf8d8de0138918d",
         "funding_insight_id": "FI-7f089c67ec59f0c9",
         "event_ids": [
           "EV-47f16317cc2d62e2",
@@ -142,7 +182,7 @@
         ]
       },
       {
-        "activity_id": "IA-0ffd0654f72fe426",
+        "activity_id": "IA-fab5856a14f23d47",
         "funding_insight_id": "FI-124b4efd0f2fa1d9",
         "event_ids": [
           "EV-12f331aaf7d4cca6"
@@ -182,7 +222,7 @@
         ]
       },
       {
-        "activity_id": "IA-2052792e5453c487",
+        "activity_id": "IA-44100bac37d4f3d5",
         "funding_insight_id": "FI-0cab7e240eb542ce",
         "event_ids": [
           "EV-e85e6fc6d630d56c"
@@ -222,7 +262,39 @@
         ]
       },
       {
-        "activity_id": "IA-dccce8c05ad02b14",
+        "activity_id": "IA-e9228eac05b1079b",
+        "funding_insight_id": "FI-a81898de30b8d7c3",
+        "event_ids": [
+          "EV-e94a992d410d6520"
+        ],
+        "company_entity_id": "EN-b5251b35f15bedc4",
+        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+        "company_name": "Moonshot AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5b27b074fcae4b4",
+            "source_url": "https://www.mg21.com/moonshot.html",
+            "source_title": "中国通用人工智能公司：月之暗面 Moonshot AI",
+            "source_content_hash": "2e4787bc0760def3",
+            "quote": "2024年2月，月之暗面获得10亿美金风险投资资金，Sequoia Capital China（红杉中国）、Alibaba Group（阿里巴巴）、Meituan（美团）和 Xiaohongshu（小红书）共同投资。",
+            "quote_hash": "8f7cb51d3edc54a66ab7e43c4a6987ff1308c8035f24c22163715f912667c5c7"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-020f7dc2992208f5",
         "funding_insight_id": "FI-f5103149f04ea6ed",
         "event_ids": [
           "EV-c5d7d88d1aef8edb"
@@ -230,23 +302,15 @@
         "company_entity_id": "EN-b5251b35f15bedc4",
         "company_canonical_entity_id": "EN-b5251b35f15bedc4",
         "company_name": "Moonshot AI",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "新一轮",
-        "amount_original": "约20亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 2000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 20 亿美元"
-        },
-        "announced_at": "2026-05-07",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "A+轮领投；B轮参投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "A+轮领投；B轮参投",
         "role_code": "historical_or_ambiguous",
@@ -272,6 +336,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2ea62510cec1d311",
+        "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+        "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+        "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+        "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+        "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+      },
+      {
         "source_id": "FISRC-2ec9a5e83ce18f75",
         "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
         "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
@@ -294,6 +366,14 @@
         "source_content_hash": "311224a4dfb089df",
         "quote": "本次融资由阿里巴巴、腾讯联合领投",
         "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
+      },
+      {
+        "source_id": "FISRC-c5b27b074fcae4b4",
+        "source_url": "https://www.mg21.com/moonshot.html",
+        "source_title": "中国通用人工智能公司：月之暗面 Moonshot AI",
+        "source_content_hash": "2e4787bc0760def3",
+        "quote": "2024年2月，月之暗面获得10亿美金风险投资资金，Sequoia Capital China（红杉中国）、Alibaba Group（阿里巴巴）、Meituan（美团）和 Xiaohongshu（小红书）共同投资。",
+        "quote_hash": "8f7cb51d3edc54a66ab7e43c4a6987ff1308c8035f24c22163715f912667c5c7"
       },
       {
         "source_id": "FISRC-5d82f5dc9fc96ce5",
@@ -351,16 +431,16 @@
           "source_id": "alibaba_group_qwen"
         },
         {
+          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-09-04 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ea62510cec1d311"
+        },
+        {
           "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2ec9a5e83ce18f75"
         },
         {
           "description": "融资来源记录：爱诗科技 · C轮 · 2026-07-14 · 本轮领投 · 29.8亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9476e3eff9c1e8fe"
-        },
-        {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮联合领投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
         }
       ],
       "contacts": [
@@ -390,6 +470,14 @@
           "quote_hash": "6171b6f1792de9f8e0c65f558d9126c28f2ad00d0a714acf0848286965aa4015"
         },
         {
+          "source_id": "FISRC-2ea62510cec1d311",
+          "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+          "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+          "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+          "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+          "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+        },
+        {
           "source_id": "FISRC-2ec9a5e83ce18f75",
           "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
           "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
@@ -404,14 +492,6 @@
           "source_content_hash": "31557c2904ef4cb8",
           "quote": "C+轮由 阿里巴巴 领投",
           "quote_hash": "3e5df43945a441f039da1157abbc541648e67051726fd33eccee87f262c8fe45"
-        },
-        {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "本次融资由阿里巴巴、腾讯联合领投",
-          "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
         }
       ],
       "last_verified_at": "2026-09-26",

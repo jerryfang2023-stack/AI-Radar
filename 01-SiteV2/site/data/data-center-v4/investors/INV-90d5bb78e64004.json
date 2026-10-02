@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -55,25 +55,28 @@
   "institution": {
     "id": "INV-90d5bb78e64004",
     "name": "GV",
-    "aliases": [],
+    "aliases": [
+      "Google Ventures"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "current_round_count": 8,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-16",
-    "latest_disclosed_at": "2026-09-22",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "historical_or_ambiguous": 3,
       "lead": 2,
-      "participant": 3
+      "participant": 6
     },
     "round_codes": [
       "seed",
@@ -87,6 +90,21 @@
         "entity_id": "EN-ae1eae1d76e5b7c8",
         "canonical_entity_id": "EN-ae1eae1d76e5b7c8",
         "name": "Adapter"
+      },
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
+      },
+      {
+        "entity_id": "EN-37f52323f7361ee9",
+        "canonical_entity_id": "",
+        "name": "Isomorphic Labs"
+      },
+      {
+        "entity_id": "EN-0aa3069e184a3bce",
+        "canonical_entity_id": "",
+        "name": "Metaview"
       },
       {
         "entity_id": "EN-1785cfc3bc6ac773",
@@ -111,7 +129,87 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-873a4789beb5d549",
+        "activity_id": "IA-da09fa10b11a1e1e",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+            "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f8eef2948871507e",
+        "funding_insight_id": "FI-568706815472d154",
+        "event_ids": [
+          "EV-f30a987e608c70ae"
+        ],
+        "company_entity_id": "EN-0aa3069e184a3bce",
+        "company_canonical_entity_id": "",
+        "company_name": "Metaview",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$60M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-62e06e29d2d7be04",
+            "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
+            "source_title": "Metaview 完成 6000 万美元 C 轮融资",
+            "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
+            "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
+            "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b2fc1bea26632d5b",
         "funding_insight_id": "FI-a83cd8c83852046e",
         "event_ids": [
           "EV-bba3677d51b85918"
@@ -151,7 +249,7 @@
         ]
       },
       {
-        "activity_id": "IA-4516e4774bc96f77",
+        "activity_id": "IA-72c43b24512eff7b",
         "funding_insight_id": "FI-208afacce2e95b9a",
         "event_ids": [
           "EV-4da1a7c4d527eb69"
@@ -191,7 +289,7 @@
         ]
       },
       {
-        "activity_id": "IA-70e8dfe141f1eebb",
+        "activity_id": "IA-9e9dcb559e64f23f",
         "funding_insight_id": "FI-479f9d5c1123dba2",
         "event_ids": [
           "EV-a00763037a94d512"
@@ -231,7 +329,7 @@
         ]
       },
       {
-        "activity_id": "IA-df45f2eb3704694c",
+        "activity_id": "IA-2eb5ae3f17fee1ef",
         "funding_insight_id": "FI-3030a959696487d1",
         "event_ids": [
           "EV-12a42b0aabee236f"
@@ -271,7 +369,55 @@
         ]
       },
       {
-        "activity_id": "IA-9fec50afddf68114",
+        "activity_id": "IA-878409b3f7917d9c",
+        "funding_insight_id": "FI-fd9ef3cc8a9f2a95",
+        "event_ids": [
+          "EV-347194d4f6eb2a63"
+        ],
+        "company_entity_id": "EN-37f52323f7361ee9",
+        "company_canonical_entity_id": "",
+        "company_name": "Isomorphic Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$2.1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 2100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "21 亿美元"
+        },
+        "announced_at": "2026-05-12",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-618d95b339c7b308",
+            "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
+            "source_title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
+            "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
+            "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
+            "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
+          },
+          {
+            "source_id": "FISRC-82c9573ed9c6ba66",
+            "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+            "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+            "source_content_hash": "e6bdf28f1eee82d0",
+            "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+            "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-de278e92fd63a683",
         "funding_insight_id": "FI-e5aed52f8dab81de",
         "event_ids": [
           "EV-60366423eaa67216"
@@ -309,9 +455,121 @@
             "quote_hash": "0e18ef143df443410be7bd64c5f3d44d18d83e7347e96dfa423d4f8a621c811a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a59517f514743a98",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-14fa67bc80a1ece9",
+            "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+            "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+            "source_content_hash": "f5a108f3994daf10",
+            "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+            "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0a4ff0b6aa6084c5",
+        "funding_insight_id": "FI-4065d03db9160118",
+        "event_ids": [
+          "EV-d321124f4f5e0edc"
+        ],
+        "company_entity_id": "EN-e2e2d8b189801fe6",
+        "company_canonical_entity_id": "",
+        "company_name": "Lightfield",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Tome 历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9ec1cf9a095c8889",
+            "source_url": "https://www.saastr.com/saastr-ai-app-of-the-week-lightfield-the-ai-native-crm-that-killed-tomes-25-million-users-to-build-something-better/",
+            "source_title": "SaaStr AI App of the Week: Lightfield — The AI-Native CRM That Updates Itself, Preps Your Meetings, and Actually Knows Your Customers Cold",
+            "source_content_hash": "ce21121fa2e470d4",
+            "quote": "raised $81M from Coatue, Greylock, Lightspeed, 8VC, and GV at a $300M valuation",
+            "quote_hash": "5cd3f40863ab4535df02530eeca9e224d5ed6e6d47ba92c6a9d776a54a515f28"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-799ae2fc96d2a74e",
+        "funding_insight_id": "FI-cae0d45e071abebd",
+        "event_ids": [
+          "EV-63de2b6408efd796"
+        ],
+        "company_entity_id": "EN-dfc0fdff7af68ed2",
+        "company_canonical_entity_id": "EN-dfc0fdff7af68ed2",
+        "company_name": "SambaNova",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资者参与本轮",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d47a3aba63bc33dc",
+            "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+            "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+            "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+            "quote": "Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital.",
+            "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+        "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+      },
+      {
+        "source_id": "FISRC-62e06e29d2d7be04",
+        "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
+        "source_title": "Metaview 完成 6000 万美元 C 轮融资",
+        "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
+        "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
+        "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
+      },
       {
         "source_id": "FISRC-16afc5791c45315a",
         "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
@@ -345,12 +603,52 @@
         "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
       },
       {
+        "source_id": "FISRC-618d95b339c7b308",
+        "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
+        "source_title": "Alphabet 旗下 Isomorphic Labs 融资 21 亿美元，推动 AI 药物发现规模化迈向临床试验",
+        "source_content_hash": "3f607094cf4bb5e846f46ad12d0a7bbf61cf45c0861dc19dc2ff6c5683b3673a",
+        "quote": "Thrive Capital led the round, with participation from Alphabet, GV, MGX, Temasek, CapitalG, and the UK Sovereign AI Fund.",
+        "quote_hash": "76b893d89910d96edfe5f9b458a86db5947938044a963d91b3bf24ed979ad1f9"
+      },
+      {
+        "source_id": "FISRC-82c9573ed9c6ba66",
+        "source_url": "https://www.isomorphiclabs.com/press/isomorphic-labs-funding",
+        "source_title": "Isomorphic Labs secures $2.1 Billion funding to scale its AI drug design engine",
+        "source_content_hash": "e6bdf28f1eee82d0",
+        "quote": "includes participation from existing backers Alphabet and GV alongside new investors MGX, Temasek, CapitalG, and the UK Sovereign AI Fund",
+        "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
+      },
+      {
         "source_id": "FISRC-7e709202ce99cc8e",
         "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
         "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
         "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
         "quote": "with significant support from existing shareholders GV, Highland Europe, EQT, Latitude, I2BF and Tapestry",
         "quote_hash": "0e18ef143df443410be7bd64c5f3d44d18d83e7347e96dfa423d4f8a621c811a"
+      },
+      {
+        "source_id": "FISRC-14fa67bc80a1ece9",
+        "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+        "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+        "source_content_hash": "f5a108f3994daf10",
+        "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+        "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+      },
+      {
+        "source_id": "FISRC-9ec1cf9a095c8889",
+        "source_url": "https://www.saastr.com/saastr-ai-app-of-the-week-lightfield-the-ai-native-crm-that-killed-tomes-25-million-users-to-build-something-better/",
+        "source_title": "SaaStr AI App of the Week: Lightfield — The AI-Native CRM That Updates Itself, Preps Your Meetings, and Actually Knows Your Customers Cold",
+        "source_content_hash": "ce21121fa2e470d4",
+        "quote": "raised $81M from Coatue, Greylock, Lightspeed, 8VC, and GV at a $300M valuation",
+        "quote_hash": "5cd3f40863ab4535df02530eeca9e224d5ed6e6d47ba92c6a9d776a54a515f28"
+      },
+      {
+        "source_id": "FISRC-d47a3aba63bc33dc",
+        "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+        "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+        "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+        "quote": "Existing investors participating include: A&E, 8Square, Atlantic Bridge, BlackRock, GV, Nepenthe, Nuri Capital, and Redline Capital.",
+        "quote_hash": "6a8a047c2802d955e749a731a26a2b27b5a2bede3a38a7b553c8955d9353f6d7"
       }
     ],
     "public_profile": {
@@ -433,16 +731,16 @@
           "source_id": "gv_about"
         },
         {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
+          "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮参投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-62e06e29d2d7be04"
+        },
+        {
           "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16afc5791c45315a"
-        },
-        {
-          "description": "融资来源记录：Adapter · 种子轮 · 2026-07-14 · 种子轮领投 · 1780万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-74e051fb023f526b"
-        },
-        {
-          "description": "融资来源记录：Odyssey ML · B轮 · 2026-06-17 · 本轮参投 · 3.1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-e94365d0212a78f3"
         }
       ],
       "contacts": [
@@ -466,28 +764,28 @@
           "quote_hash": "90cbdf37bd32985fe0287193ec4b8eaee618ac9632610f1ef38fb1e68a388701"
         },
         {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+        },
+        {
+          "source_id": "FISRC-62e06e29d2d7be04",
+          "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
+          "source_title": "Metaview 完成 6000 万美元 C 轮融资",
+          "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
+          "quote": "Additional investors participating in the round include GV, Intrepid Growth Partners, Seedcamp, Vertex Ventures US, Plural, and Garuda Ventures.",
+          "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
+        },
+        {
           "source_id": "FISRC-16afc5791c45315a",
           "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
           "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
           "source_content_hash": "ad04baf1994708d0",
           "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
           "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
-        },
-        {
-          "source_id": "FISRC-74e051fb023f526b",
-          "source_url": "https://www.upstartsmedia.com/p/deep-dive-adapter-launches-ai-cognition",
-          "source_title": "独家：初创公司 Adapter 获 1780 万美元融资，为 AI 工具注入全新“认知”能力",
-          "source_content_hash": "c4b4aec73019eeb8",
-          "quote": "has raised $17.8 million in capital to date from GV, Bond Partners (an early-stage fund within BOND), and a number of other investors",
-          "quote_hash": "918ca6b7204df55ee2a0ebea7cb4273f29d354276b90e6c473cd92d279be7154"
-        },
-        {
-          "source_id": "FISRC-e94365d0212a78f3",
-          "source_url": "https://techcrunch.com/2026/06/17/world-model-maker-odyssey-nabs-1-45b-valuation-backed-by-amazon-and-other-big-names",
-          "source_title": "世界模型公司Odyssey完成3.1亿美元B轮融资，估值14.5亿美元",
-          "source_content_hash": "75587989c4b9271c",
-          "quote": "with Amazon, AMD Ventures, GV, and others participating",
-          "quote_hash": "a36a967aacd4c90a1561022a9dc76b3a0a4d1cf9bc904ad059b99a95d150543b"
         }
       ],
       "last_verified_at": "2026-09-25",

@@ -1,3 +1,4 @@
+const {companyDisplayName}=require('../../utils/company-display.js');
 const {isCompared,toggleCompare}=require('../../utils/storage.js');
 const { getFundingData } = require("../../utils/live-data.js");
 const { buildEntityLibrary, findEntity, companyEntityKey } = require("../../utils/entity-library.js");
@@ -9,7 +10,7 @@ const {getResearchProfiles,refreshResearchProfiles}=require('../../utils/researc
 const TITLES = { companies: "企业档案", investors: "机构档案", people: "人物档案", products: "产品档案" };
 
 Page({
-  data: { title: "主体档案", type: "", entity: null, following: false, followBusy: false, contentError: "", sharedEntry: false, registrationOpen: false, contentLocked: false, lockReason: "" },
+  data: { title: "主体档案", type: "", entity: null, following: false, followBusy: false, contentError: "", sharedEntry: false, registrationOpen: false, accessPending: true, contentLocked: true, lockReason: "" },
 
   onLoad(options) {
     this.identity=getSessionIdentity();
@@ -24,30 +25,31 @@ Page({
     this.applyData(getFundingData());
     this.verifyServerAccess();
     this.refreshFollow();
-    refreshResearchProfiles().then(()=>{if(!this.disposed&&!this.data.entity?.publicProfile)this.applyData({index:getFundingData().index,details:{}});}).catch(()=>{});
+    refreshResearchProfiles().then(()=>{if(!this.disposed&&(this.data.accessPending||this.data.contentLocked))this.applyData({index:getFundingData().index,details:{}});}).catch(()=>{});
   },
 
   async refreshFollow(){ if(!hasAuthToken())return;const identity=getSessionIdentity();try{const result=await entityFollows();if(!this.disposed&&identity===getSessionIdentity())this.setData({following:result.items.some(item=>item.resourceId===protectedResourceId(`entity:${this.type}:${this.key}`))});}catch(_){} },
   async toggleEntityFollow(){if(this.data.followBusy)return;const access=getAccessState();if(access==='unregistered'){this.pendingAction='follow';this.setData({registrationOpen:true});return;}if(access==='expired'&&!this.data.following)return openMembership();this.setData({followBusy:true});try{const result=await entityFollows(this.data.following?'DELETE':'POST',protectedResourceId(`entity:${this.type}:${this.key}`));if(!this.disposed)this.setData({following:result.following});}catch(error){if(error.code!=='AUTH_CHANGED')wx.showToast({title:error.message||'操作失败，请重试',icon:'none'});}finally{if(!this.disposed)this.setData({followBusy:false});}},
-  onShow(){const identity=getSessionIdentity();if(this.hasShown){this.setData({entity:null,following:false,contentLocked:true});this.applyData({index:getFundingData().index,details:{}});this.verifyServerAccess();this.refreshFollow();}this.identity=identity;this.hasShown=true;},
+  onShow(){const identity=getSessionIdentity();if(this.hasShown){this.setData({entity:null,following:false,contentLocked:true,accessPending:true,contentError:''});this.applyData({index:getFundingData().index,details:{}});this.verifyServerAccess();this.refreshFollow();}this.identity=identity;this.hasShown=true;},
   onUnload(){this.disposed=true;},
   compareCompany(){const id=this.data.entity?.rounds?.[0]?.id;if(!id)return;toggleCompare(id);wx.showToast({title:isCompared(id)?'已加入对比':'已取消对比',icon:'none'});},
   copySource(e){const url=e.currentTarget.dataset.url;if(/^https?:\/\//.test(url||''))wx.setClipboardData({data:url});},
   async verifyServerAccess() {
-    if(!this.key)return;
+    if(!this.key){this.setData({accessPending:false,contentLocked:true,lockReason:'error',contentError:'档案链接无效，请返回重试'});return;}
     const requestId=this.requestId=(this.requestId||0)+1;
-    this.setData({contentError:''});
+    this.setData({contentError:'',accessPending:true});
     const identity=getSessionIdentity();
     try {
       const entity = await fetchProtectedContent("entity", protectedResourceId(`entity:${this.type}:${this.key}`));
       if(this.disposed||requestId!==this.requestId||identity!==(getSessionIdentity()))return;
       if (!entity || entity.hidden) throw Object.assign(new Error('资料暂不可用'),{statusCode:404});
-      if (entity) this.setData({ entity: {...this.data.entity,...entity}, type:entity.type||this.type, title:entity.publicProfile?.profileType==='person'?'人物档案':TITLES[this.type]||'主体档案' });
-      this.setData({ contentLocked: false, lockReason: "server" });
+      if (entity) this.setData({ entity: {...this.data.entity,...entity,...(this.type==='companies'?{displayName:companyDisplayName(entity.name),initial:companyDisplayName(entity.name).slice(0,1).toUpperCase()}:{} )}, type:entity.type||this.type, title:entity.publicProfile?.profileType==='person'?'人物档案':TITLES[this.type]||'主体档案' });
+      this.setData({ contentLocked: false, lockReason: "server", accessPending:false });
     } catch (error) {
       if(this.disposed||requestId!==this.requestId||(identity!==getSessionIdentity()&&!(error.accessState==='session'&&!getSessionIdentity()))||error.code==='AUTH_CHANGED')return;
-      this.setData({contentError:error.statusCode===404?'资料暂不可用':'资料加载失败，点击重试'});
-      if (error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID") { this.setData({entity:null,contentLocked:true,lockReason:contentLockReason(error)}); this.applyData({index:getFundingData().index,details:{}}); }
+      const denied=Boolean(error.accessState || error.statusCode === 401 || error.statusCode === 403 || error.code === "MEMBERSHIP_REQUIRED" || error.code === "AUTH_INVALID");
+      this.setData({entity:null,accessPending:false,contentLocked:true,lockReason:denied?contentLockReason(error):'error',contentError:denied?'':error.statusCode===404?'资料暂不可用':'资料加载失败，点击重试'});
+      this.applyData({index:getFundingData().index,details:{}});
     }
   },
 

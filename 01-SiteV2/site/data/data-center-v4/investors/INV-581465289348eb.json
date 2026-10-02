@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -55,38 +55,53 @@
   "institution": {
     "id": "INV-581465289348eb",
     "name": "IDG资本",
-    "aliases": [],
+    "aliases": [
+      "IDG 资本"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
-    "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 5,
+    "current_round_count": 9,
+    "historical_or_ambiguous_count": 7,
+    "portfolio_company_count": 7,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 5,
-    "first_disclosed_at": "2024-09-12",
+    "china_market_activity_count": 8,
+    "china_market_company_count": 6,
+    "first_disclosed_at": "2026-03-24",
     "latest_disclosed_at": "2026-09-16",
     "role_counts": {
-      "historical_or_ambiguous": 5,
-      "lead": 2,
-      "participant": 3
+      "historical_or_ambiguous": 7,
+      "lead": 3,
+      "participant": 6
     },
     "round_codes": [
       "angel_plus",
       "first_external",
+      "multi_round",
       "other",
-      "pre_series_a"
+      "pre_series_a",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-a43f157d208b2a63",
         "canonical_entity_id": "EN-a43f157d208b2a63",
         "name": "开物纪"
+      },
+      {
+        "entity_id": "EN-34069c35fbafefc6",
+        "canonical_entity_id": "",
+        "name": "数美万物"
+      },
+      {
+        "entity_id": "EN-9ec8c6ad047edf5a",
+        "canonical_entity_id": "",
+        "name": "威邦震电"
       },
       {
         "entity_id": "EN-9a970ad7900121db",
@@ -111,7 +126,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-243fc77b751019f1",
+        "activity_id": "IA-82561d2e5f450ad3",
         "funding_insight_id": "FI-e81dafc2defecb80",
         "event_ids": [
           "EV-4bc690025cbda146",
@@ -154,7 +169,87 @@
         ]
       },
       {
-        "activity_id": "IA-1fc79d27e6f68fcd",
+        "activity_id": "IA-e0859fa7c3bc6ac4",
+        "funding_insight_id": "FI-64b8247175959404",
+        "event_ids": [
+          "EV-474ec498c79f0629"
+        ],
+        "company_entity_id": "EN-9ec8c6ad047edf5a",
+        "company_canonical_entity_id": "",
+        "company_name": "威邦震电",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-09-14",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f9c8fdd671d3e193",
+            "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
+            "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
+            "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
+            "quote": "本轮融资由道彤投资领投，IDG资本共同参与。",
+            "quote_hash": "54b911518820bd90fc70f3f722879f5450857f2a1a38681d085498cd2a20573f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8ac278c82de5c55d",
+        "funding_insight_id": "FI-4a45f01cccfbfed5",
+        "event_ids": [
+          "EV-f2eb34f231afc8aa"
+        ],
+        "company_entity_id": "EN-9a970ad7900121db",
+        "company_canonical_entity_id": "EN-9a970ad7900121db",
+        "company_name": "小鹏机器人业务",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮融资",
+        "amount_original": "超9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": 900000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 9 亿美元"
+        },
+        "announced_at": "2026-09-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ea62510cec1d311",
+            "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+            "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+            "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+            "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+            "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-704715d9c5de1d98",
         "funding_insight_id": "FI-7f089c67ec59f0c9",
         "event_ids": [
           "EV-47f16317cc2d62e2",
@@ -195,7 +290,47 @@
         ]
       },
       {
-        "activity_id": "IA-dbdb07c2f20f89ea",
+        "activity_id": "IA-b80ff3a5f527d4fd",
+        "funding_insight_id": "FI-2e0a12585d18ffca",
+        "event_ids": [
+          "EV-f5a5d68ac60d2565"
+        ],
+        "company_entity_id": "EN-34069c35fbafefc6",
+        "company_canonical_entity_id": "",
+        "company_name": "数美万物",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万美元"
+        },
+        "announced_at": "2026-08-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0dd42e7d7de8bcd9",
+            "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+            "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+            "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+            "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+            "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-aff5dbc9a806026e",
         "funding_insight_id": "FI-62124a69da75bc76",
         "event_ids": [
           "EV-3db9a076e3b7d4fd",
@@ -236,48 +371,47 @@
         ]
       },
       {
-        "activity_id": "IA-2f46bb6eadc1dc37",
-        "funding_insight_id": "FI-f7342735e68375d9",
+        "activity_id": "IA-5768942fe2fe36a2",
+        "funding_insight_id": "FI-a1d81c83315eb264",
         "event_ids": [
-          "EV-a16d0d2a76e8d4a6",
-          "EV-6ca567f6e80c36c5"
+          "EV-8ea9e79f7edcb94f"
         ],
-        "company_entity_id": "EN-bbc41366a5a7cf78",
-        "company_canonical_entity_id": "EN-bbc41366a5a7cf78",
-        "company_name": "星动纪元",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "新一轮",
-        "amount_original": "10亿元",
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资",
+        "amount_original": "约 510 亿元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": 1000000000,
+          "value": 51000000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
+          "status": "approximate",
+          "display_zh": "约 510 亿元"
         },
-        "announced_at": "2026-07-06",
+        "announced_at": "2026-06-17",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "2026年4月新一轮参投",
-        "role_code": "historical_or_ambiguous",
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-8c073d38e1f34758",
-            "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-            "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
-            "source_content_hash": "38b0d26a979c4a8e",
-            "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
-            "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
+            "source_id": "FISRC-e0178cb313198d39",
+            "source_url": "https://www.ithome.com/0/965/686.htm",
+            "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+            "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+            "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+            "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
           }
         ]
       },
       {
-        "activity_id": "IA-3e557b0bed7f928f",
+        "activity_id": "IA-2bd1a452b997cb65",
         "funding_insight_id": "FI-71c58a10a93101c8",
         "event_ids": [
           "EV-d4d7b019ff0015df",
@@ -318,48 +452,40 @@
         ]
       },
       {
-        "activity_id": "IA-bf34ea0a6a77688f",
-        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "activity_id": "IA-c31185385a4d41b2",
+        "funding_insight_id": "FI-f7342735e68375d9",
         "event_ids": [
-          "EV-0ff10475efa53e6c",
-          "EV-435d7e7878b0c326"
+          "EV-a16d0d2a76e8d4a6",
+          "EV-6ca567f6e80c36c5"
         ],
-        "company_entity_id": "EN-a6e5382c05dd0d16",
-        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
-        "company_name": "星海图",
-        "round": "B+轮",
-        "round_code": "series_b_plus",
-        "round_original": "B+轮",
-        "amount_original": "20亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 2000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "20 亿元"
-        },
-        "announced_at": "2026-04-02",
+        "company_entity_id": "EN-bbc41366a5a7cf78",
+        "company_canonical_entity_id": "EN-bbc41366a5a7cf78",
+        "company_name": "星动纪元",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2026-04",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
+        "role": "2026年4月新一轮参投",
         "role_code": "historical_or_ambiguous",
         "evidence": [
           {
-            "source_id": "FISRC-7a614400d44a7041",
-            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-            "source_title": "星海图又融资20亿，估值200亿",
-            "source_content_hash": "05d5afb79601a323",
-            "quote": "刚成立两个月，星海图便完成天使轮融资第 一轮交割，此后更是融资凶猛，引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
-            "quote_hash": "fac951d83a7cfd8a58b1002e9267b5f5f4a3f2bf569294b5cda68728ae766a7b"
+            "source_id": "FISRC-8c073d38e1f34758",
+            "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+            "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+            "source_content_hash": "38b0d26a979c4a8e",
+            "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
+            "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
           }
         ]
       },
       {
-        "activity_id": "IA-9da5b9b149930bd9",
+        "activity_id": "IA-fbbd2495b5a4ef98",
         "funding_insight_id": "FI-815e0d2563a8b10f",
         "event_ids": [
           "EV-9832526435c1695e"
@@ -399,7 +525,39 @@
         ]
       },
       {
-        "activity_id": "IA-9413a15a4fe260a4",
+        "activity_id": "IA-641fdc7941d202ef",
+        "funding_insight_id": "FI-17403f62777b52b5",
+        "event_ids": [
+          "EV-7a44a47bf36780d2"
+        ],
+        "company_entity_id": "EN-721eb3fd31f8e1f6",
+        "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
+        "company_name": "壁仞科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-081c8476182d3ff7",
+            "source_url": "https://36kr.com/p/753999774079237",
+            "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
+            "source_content_hash": "48f7a6ff96b731e7",
+            "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+            "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-16727274cc4db982",
         "funding_insight_id": "FI-815e0d2563a8b10f",
         "event_ids": [
           "EV-9832526435c1695e"
@@ -407,23 +565,15 @@
         "company_entity_id": "EN-a43f157d208b2a63",
         "company_canonical_entity_id": "EN-a43f157d208b2a63",
         "company_name": "开物纪",
-        "round": "天使+轮",
-        "round_code": "angel_plus",
-        "round_original": "天使+轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-03-24",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "天使轮联合领投",
         "role_code": "historical_or_ambiguous",
@@ -439,7 +589,104 @@
         ]
       },
       {
-        "activity_id": "IA-14ec4fcee5aff540",
+        "activity_id": "IA-a50431667f6019fb",
+        "funding_insight_id": "FI-2e0a12585d18ffca",
+        "event_ids": [
+          "EV-f5a5d68ac60d2565"
+        ],
+        "company_entity_id": "EN-34069c35fbafefc6",
+        "company_canonical_entity_id": "",
+        "company_name": "数美万物",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "初始投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-eff56a0dccad1e36",
+            "source_url": "https://www.sohu.com/a/848831543_122074763",
+            "source_title": "速递｜张一鸣和王兴又联手投了新项目，抖音创始成员，估值已超1.5亿美元",
+            "source_content_hash": "7b66c4509a33a1bf",
+            "quote": "早在2024年2月，数美万物刚成立时便获得了红杉中国和IDG资本的初始投资。",
+            "quote_hash": "0b6a909269df720fdcc9ba65afc965393eff8bc6e588db6161d609848794d51d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ee09133723bb371a",
+        "funding_insight_id": "FI-219ba35e15dc4fb9",
+        "event_ids": [
+          "EV-eb2796fc4bcc5ac0"
+        ],
+        "company_entity_id": "EN-83dd78f287b80ce3",
+        "company_canonical_entity_id": "",
+        "company_name": "芯光界",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-09a0a8d8826c2cfe",
+            "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+            "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+            "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+            "quote": "5天之后，天使+轮落地，金额达数亿元，由IDG资本领投。",
+            "quote_hash": "82b2c98fdfdc7196afe18adbeffc2f94f92aca9e1962d0dcb9a51da790a1be0b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0321684a65c71fc6",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "刚成立两个月，星海图便完成天使轮融资第 一轮交割，此后更是融资凶猛，引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+            "quote_hash": "fac951d83a7cfd8a58b1002e9267b5f5f4a3f2bf569294b5cda68728ae766a7b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fbe0ebe47d858124",
         "funding_insight_id": "FI-d5293ab06cfaa935",
         "event_ids": [
           "EV-371bc68f72326c02"
@@ -447,23 +694,15 @@
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-02-11",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "天使轮领投",
         "role_code": "historical_or_ambiguous",
@@ -475,46 +714,6 @@
             "source_content_hash": "85e4d40faa23c515",
             "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
             "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-7fa1ddb302c0b378",
-        "funding_insight_id": "FI-17403f62777b52b5",
-        "event_ids": [
-          "EV-7a44a47bf36780d2"
-        ],
-        "company_entity_id": "EN-721eb3fd31f8e1f6",
-        "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
-        "company_name": "壁仞科技",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "超过50亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 5000000000,
-          "min_value": 5000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 50 亿元"
-        },
-        "announced_at": "2024-09-12",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-081c8476182d3ff7",
-            "source_url": "https://36kr.com/p/753999774079237",
-            "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
-            "source_content_hash": "48f7a6ff96b731e7",
-            "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
-            "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
           }
         ]
       }
@@ -529,12 +728,36 @@
         "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
       },
       {
+        "source_id": "FISRC-f9c8fdd671d3e193",
+        "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
+        "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
+        "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
+        "quote": "本轮融资由道彤投资领投，IDG资本共同参与。",
+        "quote_hash": "54b911518820bd90fc70f3f722879f5450857f2a1a38681d085498cd2a20573f"
+      },
+      {
+        "source_id": "FISRC-2ea62510cec1d311",
+        "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+        "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+        "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+        "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+        "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+      },
+      {
         "source_id": "FISRC-2ec9a5e83ce18f75",
         "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
         "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
         "source_content_hash": "b8e4f0b869df00ee",
         "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
         "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+      },
+      {
+        "source_id": "FISRC-0dd42e7d7de8bcd9",
+        "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+        "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+        "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+        "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+        "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
       },
       {
         "source_id": "FISRC-ee42dc11e9aa441b",
@@ -545,12 +768,12 @@
         "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
       },
       {
-        "source_id": "FISRC-8c073d38e1f34758",
-        "source_url": "https://news.pedaily.cn/202607/565883.shtml",
-        "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
-        "source_content_hash": "38b0d26a979c4a8e",
-        "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
-        "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
+        "source_id": "FISRC-e0178cb313198d39",
+        "source_url": "https://www.ithome.com/0/965/686.htm",
+        "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+        "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+        "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+        "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
       },
       {
         "source_id": "FISRC-d2c8c841370ed82a",
@@ -561,12 +784,12 @@
         "quote_hash": "79fea3f1302cad58d43e8de7957cc941552e4f021617eeaaf5ba9f94ea1deb3b"
       },
       {
-        "source_id": "FISRC-7a614400d44a7041",
-        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-        "source_title": "星海图又融资20亿，估值200亿",
-        "source_content_hash": "05d5afb79601a323",
-        "quote": "刚成立两个月，星海图便完成天使轮融资第 一轮交割，此后更是融资凶猛，引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
-        "quote_hash": "fac951d83a7cfd8a58b1002e9267b5f5f4a3f2bf569294b5cda68728ae766a7b"
+        "source_id": "FISRC-8c073d38e1f34758",
+        "source_url": "https://news.pedaily.cn/202607/565883.shtml",
+        "source_title": "首发| 星动纪元两个月融资25亿，国资组团入场 - 投资界",
+        "source_content_hash": "38b0d26a979c4a8e",
+        "quote": "顺丰集团领投，红杉中国、IDG资本等头部机构联合加注",
+        "quote_hash": "a52dcbacf49d2fc2c581a167fb6a7d967ec8cd14a5ff9b9fa76418934d13adbf"
       },
       {
         "source_id": "FISRC-3d10ec9bd5ef3ad4",
@@ -577,6 +800,14 @@
         "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
       },
       {
+        "source_id": "FISRC-081c8476182d3ff7",
+        "source_url": "https://36kr.com/p/753999774079237",
+        "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
+        "source_content_hash": "48f7a6ff96b731e7",
+        "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
+        "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
+      },
+      {
         "source_id": "FISRC-3d10ec9bd5ef3ad4",
         "source_url": "https://news.pedaily.cn/202603/562002.shtml",
         "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
@@ -585,20 +816,36 @@
         "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
       },
       {
+        "source_id": "FISRC-eff56a0dccad1e36",
+        "source_url": "https://www.sohu.com/a/848831543_122074763",
+        "source_title": "速递｜张一鸣和王兴又联手投了新项目，抖音创始成员，估值已超1.5亿美元",
+        "source_content_hash": "7b66c4509a33a1bf",
+        "quote": "早在2024年2月，数美万物刚成立时便获得了红杉中国和IDG资本的初始投资。",
+        "quote_hash": "0b6a909269df720fdcc9ba65afc965393eff8bc6e588db6161d609848794d51d"
+      },
+      {
+        "source_id": "FISRC-09a0a8d8826c2cfe",
+        "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+        "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+        "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+        "quote": "5天之后，天使+轮落地，金额达数亿元，由IDG资本领投。",
+        "quote_hash": "82b2c98fdfdc7196afe18adbeffc2f94f92aca9e1962d0dcb9a51da790a1be0b"
+      },
+      {
+        "source_id": "FISRC-7a614400d44a7041",
+        "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+        "source_title": "星海图又融资20亿，估值200亿",
+        "source_content_hash": "05d5afb79601a323",
+        "quote": "刚成立两个月，星海图便完成天使轮融资第 一轮交割，此后更是融资凶猛，引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+        "quote_hash": "fac951d83a7cfd8a58b1002e9267b5f5f4a3f2bf569294b5cda68728ae766a7b"
+      },
+      {
         "source_id": "FISRC-2707f48aa6e437b7",
         "source_url": "https://news.pedaily.cn/202602/560956.shtml",
         "source_title": "清华90后带队，刚刚星海图又融10亿",
         "source_content_hash": "85e4d40faa23c515",
         "quote": "2024年1月，天使轮第二轮融资千万美金，由IDG资本领投，BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资跟投",
         "quote_hash": "b6fdaa3f5a6c2e7d233c56ea352f73c00c806e8f3dc89f2497f13ad46b24688e"
-      },
-      {
-        "source_id": "FISRC-081c8476182d3ff7",
-        "source_url": "https://36kr.com/p/753999774079237",
-        "source_title": "最前线 | 成立九个月后，壁仞科技创完成11亿元A轮融资-36氪",
-        "source_content_hash": "48f7a6ff96b731e7",
-        "quote": "本轮融资由启明创投、IDG资本及华登国际中国基金领投",
-        "quote_hash": "29ea1383a7fbf4bad7e708fabb6a5e64030ba91561056c9f6110361ad5061f3b"
       }
     ],
     "public_profile": {
@@ -630,12 +877,12 @@
           "source_id": "FISRC-a2c9854f5230d423"
         },
         {
-          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮领投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ec9a5e83ce18f75"
+          "description": "融资来源记录：威邦震电 · B轮 · 2026-09-14 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f9c8fdd671d3e193"
         },
         {
-          "description": "融资来源记录：元川微 · Pre-A轮 · 2026-07-24 · 本轮领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ee42dc11e9aa441b"
+          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-09-04 · 本轮领投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ea62510cec1d311"
         }
       ],
       "contacts": [
@@ -694,20 +941,20 @@
           "quote_hash": "b39561dd1ac0be7734491e6d8c5951e687ceff86f0fa6dbf11feced93e7c4b87"
         },
         {
-          "source_id": "FISRC-2ec9a5e83ce18f75",
-          "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
-          "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
-          "source_content_hash": "b8e4f0b869df00ee",
-          "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
-          "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
+          "source_id": "FISRC-f9c8fdd671d3e193",
+          "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",
+          "source_title": "威邦震电完成近亿元B轮融资，道彤投资领投，推进工业检测、临床及AI for Science商业化进程｜道彤News",
+          "source_content_hash": "b77e2b4e3f147ce2a11962774d610e4452e112a260a22904f82729e47b346c49",
+          "quote": "本轮融资由道彤投资领投，IDG资本共同参与。",
+          "quote_hash": "54b911518820bd90fc70f3f722879f5450857f2a1a38681d085498cd2a20573f"
         },
         {
-          "source_id": "FISRC-ee42dc11e9aa441b",
-          "source_url": "https://www.cjcn.com.cn/news/show-475659.html",
-          "source_title": "华为22年老兵从AI终局倒推LPU，元川微完成新一轮数亿元融资_科技头条_资讯_财经中国",
-          "source_content_hash": "e7bb87fdb5aacbc8",
-          "quote": "本轮融资由IDG资本领投，孚腾资本、九坤创投、尚颀资本、顺禧基金、徐汇科创投联合投资",
-          "quote_hash": "4fc479d899c2302755938d07a87f5969b837f37def30907e2dc06841881dd454"
+          "source_id": "FISRC-2ea62510cec1d311",
+          "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+          "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+          "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+          "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+          "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
         }
       ],
       "last_verified_at": "2026-09-25",

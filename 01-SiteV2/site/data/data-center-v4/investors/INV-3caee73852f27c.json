@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,30 +54,33 @@
   },
   "institution": {
     "id": "INV-3caee73852f27c",
-    "name": "BV百度风投",
-    "aliases": [],
+    "name": "BV 百度风投",
+    "aliases": [
+      "BV百度风投"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 3,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 7,
+    "portfolio_company_count": 4,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
-    "first_disclosed_at": "2026-02-11",
-    "latest_disclosed_at": "2026-09-15",
+    "china_market_activity_count": 4,
+    "china_market_company_count": 4,
+    "first_disclosed_at": "2026-02-14",
+    "latest_disclosed_at": "2026-06-25",
     "role_counts": {
-      "historical_or_ambiguous": 6,
-      "participant": 3
+      "historical_or_ambiguous": 7,
+      "participant": 4
     },
     "round_codes": [
       "angel",
       "angel_plus",
+      "series_a_plus_extension",
       "series_b"
     ],
     "portfolio_companies": [
@@ -85,6 +88,11 @@
         "entity_id": "EN-a43f157d208b2a63",
         "canonical_entity_id": "EN-a43f157d208b2a63",
         "name": "开物纪"
+      },
+      {
+        "entity_id": "EN-68608367b27ccaeb",
+        "canonical_entity_id": "",
+        "name": "凌川科技"
       },
       {
         "entity_id": "EN-9b21c9bf3305c0d6",
@@ -99,57 +107,17 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-85e44204d4ad4e66",
-        "funding_insight_id": "FI-54e748b1e6abf463",
+        "activity_id": "IA-7f96ebab6f93c205",
+        "funding_insight_id": "FI-cf2e02493f285517",
         "event_ids": [
-          "EV-d98c10d4cba51686"
+          "EV-193f535567067d95"
         ],
-        "company_entity_id": "EN-2777b5a794959a7d",
+        "company_entity_id": "EN-68608367b27ccaeb",
         "company_canonical_entity_id": "",
-        "company_name": "上海宇道生物技术有限公司",
-        "round": "C1轮",
-        "round_code": "series_c1",
-        "round_original": "C1轮",
-        "amount_original": "数千万美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "数千万美元"
-        },
-        "announced_at": "2026-09-15",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "Pre-A轮共同领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-ad78c308ef4022ae",
-            "source_url": "https://news.pedaily.cn/202106/472864.shtml",
-            "source_title": "宇道生物完成2000万美元A轮融资，经纬中国领投_投资界",
-            "source_content_hash": "6252d8b33f3b6c2a",
-            "quote": "2020年12月，宇道生物完成近亿元Pre-A轮融资，由北极光创投、BV百度风投共同领投",
-            "quote_hash": "6ffd60b00f1b4f5cb0fe0c1818b8506e7336ce9f664e6e76e73187a5c3938b84"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-e53f223eb614d00a",
-        "funding_insight_id": "FI-3e97f5e30e99ff0b",
-        "event_ids": [
-          "EV-cbec329253108e80"
-        ],
-        "company_entity_id": "EN-ee2dce6ecf9a1bab",
-        "company_canonical_entity_id": "EN-ee2dce6ecf9a1bab",
-        "company_name": "深朴智能",
-        "round": "Pre-A+轮",
-        "round_code": "pre_series_a_plus",
-        "round_original": "Pre-A+轮",
+        "company_name": "凌川科技",
+        "round": "A+轮扩展",
+        "round_code": "series_a_plus_extension",
+        "round_original": "A+轮扩展",
         "amount_original": "数亿元",
         "amount_normalized": {
           "currency": "CNY",
@@ -160,67 +128,26 @@
           "status": "range",
           "display_zh": "2 亿元–9 亿元"
         },
-        "announced_at": "2026-09-04",
+        "announced_at": "2026-06-25",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-d3ed2da5812586ea",
-            "source_url": "https://caifuhao.eastmoney.com/news/20260906090920742991760",
-            "source_title": "一年四轮之后再拿数亿元Pre-A+轮融资，深朴智能的无本体数据引擎要从酒店跑进家庭_财富号_东方财富网",
-            "source_content_hash": "28bd9ee2b4d8b3a6",
-            "quote": "投资方名单覆盖顺为资本、BV百度风投、梅花创投、柯力传感等机构",
-            "quote_hash": "ad00b62d35c4db8f76f7f421e064b7c886795bec97b2ae4f2e967ddcbdbced87"
+            "source_id": "FISRC-a39c77bc80e12506",
+            "source_url": "https://www.ithome.com/0/968/289.htm",
+            "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+            "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+            "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+            "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
           }
         ]
       },
       {
-        "activity_id": "IA-e42f732b5f572338",
-        "funding_insight_id": "FI-057188417b7e7728",
-        "event_ids": [
-          "EV-88a984b765bb54f1",
-          "EV-775bae399bcf79d2"
-        ],
-        "company_entity_id": "EN-37ad0de3969166fa",
-        "company_canonical_entity_id": "EN-37ad0de3969166fa",
-        "company_name": "西湖心辰",
-        "round": "B+轮",
-        "round_code": "series_b_plus",
-        "round_original": "B+轮",
-        "amount_original": "数亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-08-03",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "Pre-A轮领投方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-c0671e3e70d8ae56",
-            "source_url": "https://m.36kr.com/p/2179385107198212",
-            "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
-            "source_content_hash": "1562678e3cf5d266",
-            "quote": "本轮融资领投方为百度风投",
-            "quote_hash": "edd77badf072b98fa744101d384a663989f16a20756d374e1f5ba9e0018970fd"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-7d9b7d63122ea768",
+        "activity_id": "IA-ed221f79d6bfafdb",
         "funding_insight_id": "FI-7108544d47292865",
         "event_ids": [
           "EV-5575555340c04c5a"
@@ -260,48 +187,7 @@
         ]
       },
       {
-        "activity_id": "IA-137151aca981ccf1",
-        "funding_insight_id": "FI-66e7dd713fc6bab5",
-        "event_ids": [
-          "EV-0ff10475efa53e6c",
-          "EV-435d7e7878b0c326"
-        ],
-        "company_entity_id": "EN-a6e5382c05dd0d16",
-        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
-        "company_name": "星海图",
-        "round": "B+轮",
-        "round_code": "series_b_plus",
-        "round_original": "B+轮",
-        "amount_original": "20亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 2000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "20 亿元"
-        },
-        "announced_at": "2026-04-02",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-7a614400d44a7041",
-            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
-            "source_title": "星海图又融资20亿，估值200亿",
-            "source_content_hash": "05d5afb79601a323",
-            "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
-            "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-8e9773aa13d0caa0",
+        "activity_id": "IA-d5af475eb594c561",
         "funding_insight_id": "FI-815e0d2563a8b10f",
         "event_ids": [
           "EV-9832526435c1695e"
@@ -341,47 +227,7 @@
         ]
       },
       {
-        "activity_id": "IA-78932d97137b980b",
-        "funding_insight_id": "FI-815e0d2563a8b10f",
-        "event_ids": [
-          "EV-9832526435c1695e"
-        ],
-        "company_entity_id": "EN-a43f157d208b2a63",
-        "company_canonical_entity_id": "EN-a43f157d208b2a63",
-        "company_name": "开物纪",
-        "round": "天使+轮",
-        "round_code": "angel_plus",
-        "round_original": "天使+轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-03-24",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮跟投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-3d10ec9bd5ef3ad4",
-            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-            "source_content_hash": "d5d8d61ad1133bc1",
-            "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
-            "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-e85ef36454d7b4f1",
+        "activity_id": "IA-0c8f13063f23ddf5",
         "funding_insight_id": "FI-6763b86fb1d41259",
         "event_ids": [
           "EV-876baa523eb93c4f"
@@ -421,7 +267,201 @@
         ]
       },
       {
-        "activity_id": "IA-bec43c556dabd532",
+        "activity_id": "IA-a5c67d575e008665",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "EN-a43f157d208b2a63",
+        "company_name": "开物纪",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+            "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e81d0e2384673a55",
+        "funding_insight_id": "FI-54e748b1e6abf463",
+        "event_ids": [
+          "EV-d98c10d4cba51686"
+        ],
+        "company_entity_id": "EN-2777b5a794959a7d",
+        "company_canonical_entity_id": "",
+        "company_name": "上海宇道生物技术有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮共同领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ad78c308ef4022ae",
+            "source_url": "https://news.pedaily.cn/202106/472864.shtml",
+            "source_title": "宇道生物完成2000万美元A轮融资，经纬中国领投_投资界",
+            "source_content_hash": "6252d8b33f3b6c2a",
+            "quote": "2020年12月，宇道生物完成近亿元Pre-A轮融资，由北极光创投、BV百度风投共同领投",
+            "quote_hash": "6ffd60b00f1b4f5cb0fe0c1818b8506e7336ce9f664e6e76e73187a5c3938b84"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4d36d91a6194c815",
+        "funding_insight_id": "FI-3e97f5e30e99ff0b",
+        "event_ids": [
+          "EV-cbec329253108e80"
+        ],
+        "company_entity_id": "EN-ee2dce6ecf9a1bab",
+        "company_canonical_entity_id": "EN-ee2dce6ecf9a1bab",
+        "company_name": "深朴智能",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d3ed2da5812586ea",
+            "source_url": "https://caifuhao.eastmoney.com/news/20260906090920742991760",
+            "source_title": "一年四轮之后再拿数亿元Pre-A+轮融资，深朴智能的无本体数据引擎要从酒店跑进家庭_财富号_东方财富网",
+            "source_content_hash": "28bd9ee2b4d8b3a6",
+            "quote": "投资方名单覆盖顺为资本、BV百度风投、梅花创投、柯力传感等机构",
+            "quote_hash": "ad00b62d35c4db8f76f7f421e064b7c886795bec97b2ae4f2e967ddcbdbced87"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5ad360662a83f74c",
+        "funding_insight_id": "FI-4880b1e3fb7a4da4",
+        "event_ids": [
+          "EV-008220e3dc696cb5"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_name": "生数科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "原有股东持续追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b07965e9cd2c01b5",
+            "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+            "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+            "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+            "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+            "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4b90e0ca9920eafc",
+        "funding_insight_id": "FI-057188417b7e7728",
+        "event_ids": [
+          "EV-88a984b765bb54f1",
+          "EV-775bae399bcf79d2"
+        ],
+        "company_entity_id": "EN-37ad0de3969166fa",
+        "company_canonical_entity_id": "EN-37ad0de3969166fa",
+        "company_name": "西湖心辰",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c0671e3e70d8ae56",
+            "source_url": "https://m.36kr.com/p/2179385107198212",
+            "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
+            "source_content_hash": "1562678e3cf5d266",
+            "quote": "本轮融资领投方为百度风投",
+            "quote_hash": "edd77badf072b98fa744101d384a663989f16a20756d374e1f5ba9e0018970fd"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2469acbcdc03b2d4",
+        "funding_insight_id": "FI-66e7dd713fc6bab5",
+        "event_ids": [
+          "EV-0ff10475efa53e6c",
+          "EV-435d7e7878b0c326"
+        ],
+        "company_entity_id": "EN-a6e5382c05dd0d16",
+        "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
+        "company_name": "星海图",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7a614400d44a7041",
+            "source_url": "https://news.pedaily.cn/202604/562366.shtml",
+            "source_title": "星海图又融资20亿，估值200亿",
+            "source_content_hash": "05d5afb79601a323",
+            "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
+            "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-befefb654a93d0c2",
         "funding_insight_id": "FI-d5293ab06cfaa935",
         "event_ids": [
           "EV-371bc68f72326c02"
@@ -429,23 +469,15 @@
         "company_entity_id": "EN-a6e5382c05dd0d16",
         "company_canonical_entity_id": "EN-a6e5382c05dd0d16",
         "company_name": "星海图",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-02-11",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "天使轮跟投",
         "role_code": "historical_or_ambiguous",
@@ -463,6 +495,46 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-a39c77bc80e12506",
+        "source_url": "https://www.ithome.com/0/968/289.htm",
+        "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+        "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+        "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+        "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
+      },
+      {
+        "source_id": "FISRC-fd865802af815ab3",
+        "source_url": "https://news.pedaily.cn/202604/562614.shtml",
+        "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
+        "source_content_hash": "a281cc701a9028fb",
+        "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
+        "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+        "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+      },
+      {
+        "source_id": "FISRC-daccbed46498e19c",
+        "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
+        "source_title": "无界动力宣布完成超2亿元天使+轮融资",
+        "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
+        "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
+        "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+        "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+      },
+      {
         "source_id": "FISRC-ad78c308ef4022ae",
         "source_url": "https://news.pedaily.cn/202106/472864.shtml",
         "source_title": "宇道生物完成2000万美元A轮融资，经纬中国领投_投资界",
@@ -479,6 +551,14 @@
         "quote_hash": "ad00b62d35c4db8f76f7f421e064b7c886795bec97b2ae4f2e967ddcbdbced87"
       },
       {
+        "source_id": "FISRC-b07965e9cd2c01b5",
+        "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+        "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+        "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+        "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+        "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
+      },
+      {
         "source_id": "FISRC-c0671e3e70d8ae56",
         "source_url": "https://m.36kr.com/p/2179385107198212",
         "source_title": "36氪首发｜打通大模型、中间层、产品应用三层能力，「西湖心辰」完成Pre-A轮融资-36氪",
@@ -487,44 +567,12 @@
         "quote_hash": "edd77badf072b98fa744101d384a663989f16a20756d374e1f5ba9e0018970fd"
       },
       {
-        "source_id": "FISRC-fd865802af815ab3",
-        "source_url": "https://news.pedaily.cn/202604/562614.shtml",
-        "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
-        "source_content_hash": "a281cc701a9028fb",
-        "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
-        "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
-      },
-      {
         "source_id": "FISRC-7a614400d44a7041",
         "source_url": "https://news.pedaily.cn/202604/562366.shtml",
         "source_title": "星海图又融资20亿，估值200亿",
         "source_content_hash": "05d5afb79601a323",
         "quote": "引进了IDG资本、BV百度风投、无限基金SEE FUND、金沙江创投、七熹投资、高瓴创投、蚂蚁集团领投，米哈游、无锡创投集团、同歌创投、Funplus等投资方。",
         "quote_hash": "d965a45e9e1fdee372f02819e678ec3a3d834f345bda20958143a8a32b78fb26"
-      },
-      {
-        "source_id": "FISRC-3d10ec9bd5ef3ad4",
-        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-        "source_content_hash": "d5d8d61ad1133bc1",
-        "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
-        "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
-      },
-      {
-        "source_id": "FISRC-3d10ec9bd5ef3ad4",
-        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-        "source_content_hash": "d5d8d61ad1133bc1",
-        "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
-        "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
-      },
-      {
-        "source_id": "FISRC-daccbed46498e19c",
-        "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-        "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-        "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-        "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
-        "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
       },
       {
         "source_id": "FISRC-2707f48aa6e437b7",
@@ -597,16 +645,16 @@
           "source_id": "bv_about"
         },
         {
+          "description": "融资来源记录：凌川科技 · A+轮扩展 · 2026-06-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a39c77bc80e12506"
+        },
+        {
           "description": "融资来源记录：生数科技 · B轮 · 2026-04-10 · 本轮参投 · 20亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd865802af815ab3"
         },
         {
           "description": "融资来源记录：开物纪 · 天使+轮 · 2026-03-24 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3d10ec9bd5ef3ad4"
-        },
-        {
-          "description": "融资来源记录：无界动力 · 天使轮 · 2026-02-14 · 本轮参投 · 超2亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-daccbed46498e19c"
         }
       ],
       "contacts": [
@@ -644,6 +692,14 @@
           "quote_hash": "530711d532083b7fad610c3dba95897713fa15d88d7a4e814f46e0bc20130d20"
         },
         {
+          "source_id": "FISRC-a39c77bc80e12506",
+          "source_url": "https://www.ithome.com/0/968/289.htm",
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
+          "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
+          "quote": "投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
+          "quote_hash": "b8b084f62166b01baa997d7ef8cc33abe227c38763f3e43a68024579cfe2cfa0"
+        },
+        {
           "source_id": "FISRC-fd865802af815ab3",
           "source_url": "https://news.pedaily.cn/202604/562614.shtml",
           "source_title": "生数科技完成近20亿元B轮融资，阿里云领投",
@@ -658,14 +714,6 @@
           "source_content_hash": "d5d8d61ad1133bc1",
           "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
           "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
-        },
-        {
-          "source_id": "FISRC-daccbed46498e19c",
-          "source_url": "https://jnzstatic.cs.com.cn/zzb/htmlInfo/115989.html",
-          "source_title": "无界动力宣布完成超2亿元天使+轮融资",
-          "source_content_hash": "f71a5fef7a18be7527726ba9b5eb5bd4aa7c2be242317d45634cf5ad0538d012",
-          "quote": "老股东红杉中国、线性资本、高瓴创投、华业天成、中金资本旗下基金、BV百度风投持续追投，新增深创投、创新工场、普华资本、钧山资本、雅瑞资本等加入。",
-          "quote_hash": "6867781360a245cd66582a24953eac9acacbc9a62098ae37517f6597e7475aec"
         }
       ],
       "last_verified_at": "2026-09-25",

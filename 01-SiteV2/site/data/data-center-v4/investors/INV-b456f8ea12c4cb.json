@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,44 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-21",
+    "first_disclosed_at": "2026-02-18",
     "latest_disclosed_at": "2026-07-21",
     "role_counts": {
-      "participant": 1
+      "participant": 3
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "series_a",
+      "series_d"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-15e420fd3ab3f2ef",
+        "canonical_entity_id": "",
+        "name": "Efficient Computer"
+      },
       {
         "entity_id": "EN-7ef08ef63597d47c",
         "canonical_entity_id": "",
         "name": "Gritt"
+      },
+      {
+        "entity_id": "EN-586937124e151c46",
+        "canonical_entity_id": "EN-586937124e151c46",
+        "name": "Suno"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-7f6a9a0744022ffb",
+        "activity_id": "IA-d6216cfdb882a3c6",
         "funding_insight_id": "FI-c813b159747ac208",
         "event_ids": [
           "EV-fcf3c464260b6730"
@@ -124,6 +136,87 @@
             "quote_hash": "270a616f6cefd09f4198c2a353dd251ce4b68b678ea5724ceea38026e8b519e7"
           }
         ]
+      },
+      {
+        "activity_id": "IA-0f8c624d2a75b943",
+        "funding_insight_id": "FI-cbf93da745326644",
+        "event_ids": [
+          "EV-3e92fba5502f1aba",
+          "EV-31579660b945ef01"
+        ],
+        "company_entity_id": "EN-586937124e151c46",
+        "company_canonical_entity_id": "EN-586937124e151c46",
+        "company_name": "Suno",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8a34984c8e02defc",
+            "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+            "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+            "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+            "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+            "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e086a6eef6efa82d",
+        "funding_insight_id": "FI-f6129bfd1bbdd9ed",
+        "event_ids": [
+          "EV-b9b446350006fbae"
+        ],
+        "company_entity_id": "EN-15e420fd3ab3f2ef",
+        "company_canonical_entity_id": "",
+        "company_name": "Efficient Computer",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$60 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-02-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-840402012d166d60",
+            "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+            "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+            "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+            "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+            "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +227,22 @@
         "source_content_hash": "6af714d5b7bb5158",
         "quote": "with participation from Union Square Ventures",
         "quote_hash": "270a616f6cefd09f4198c2a353dd251ce4b68b678ea5724ceea38026e8b519e7"
+      },
+      {
+        "source_id": "FISRC-8a34984c8e02defc",
+        "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+        "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+        "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+        "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+        "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+      },
+      {
+        "source_id": "FISRC-840402012d166d60",
+        "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+        "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+        "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+        "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+        "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
       }
     ],
     "public_profile": {
@@ -148,6 +257,14 @@
         {
           "description": "融资来源记录：Gritt · 多轮融资 · 2026-07-21 · 本轮参投 · $32.4M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e5ce259c107507e9"
+        },
+        {
+          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8a34984c8e02defc"
+        },
+        {
+          "description": "融资来源记录：Efficient Computer · A轮 · 2026-02-18 · 本轮参投 · $60 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-840402012d166d60"
         }
       ],
       "contacts": [],
@@ -159,6 +276,22 @@
           "source_content_hash": "6af714d5b7bb5158",
           "quote": "with participation from Union Square Ventures",
           "quote_hash": "270a616f6cefd09f4198c2a353dd251ce4b68b678ea5724ceea38026e8b519e7"
+        },
+        {
+          "source_id": "FISRC-8a34984c8e02defc",
+          "source_url": "https://the-decoder.com/ai-music-startup-suno-doubles-its-valuation-to-5-4-billion-while-fighting-major-record-labels-in-court",
+          "source_title": "AI音乐初创公司Suno估值翻倍至54亿美元，同时在法庭上与主要唱片公司抗争",
+          "source_content_hash": "f2317bf309f489b3c2b52f994b2137914b0fa6a5e6ff3799e1814e7f31c338a0",
+          "quote": "Bond Capital led the round, with participation from IVP, Forerunner, Union Square Ventures, and existing investors Lightspeed and Menlo Ventures.",
+          "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
+        },
+        {
+          "source_id": "FISRC-840402012d166d60",
+          "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+          "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+          "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+          "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+          "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
         }
       ],
       "last_verified_at": "2026-09-25"

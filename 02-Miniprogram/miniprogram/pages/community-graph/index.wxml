@@ -17,6 +17,12 @@
 </template>
 <view class="page-shell">
   <app-header title="角色图谱" show-back fallback-url="/pages/community/index" />
+  <view wx:if="{{communityAccessBlocked}}" class="content-access-gate community-gate">
+    <text class="gate-title">{{lockReason === 'expired' ? '开通会员继续浏览' : lockReason === 'session' ? '重新登录后继续浏览' : lockReason === 'retry' ? '账号状态暂未同步' : '注册后浏览社群内容'}}</text>
+    <text class="gate-copy">{{lockReason === 'retry' ? '请重试，也可返回社群首页。' : '使用统一账号与阅读权益，查看分享实录、成员图谱和社群积分。'}}</text>
+    <button bindtap="unlockCommunity">{{lockReason === 'expired' ? '查看会员权益' : lockReason === 'session' ? '重新登录' : lockReason === 'retry' ? '重试' : '注册并继续'}}</button>
+  </view><block wx:else>
+
   <view class="graph-page">
     <view wx:if="{{showLoading}}" class="community-skeleton" aria-label="加载中"><view></view><view></view><view></view></view>
     <button wx:if="{{error}}" class="service-state" bindtap="refresh">{{error}} · 点击重试</button>
@@ -65,4 +71,6 @@
       <button class="primary-button save" loading="{{saving}}" disabled="{{saving || loading}}" bindtap="saveProfile">保存修改</button>
     </block>
   </view>
+</block>
+<registration-sheet visible="{{registrationOpen}}" required="{{true}}" bind:close="closeRegistration" bind:continue="continueAfterRegistration"/>
 </view>

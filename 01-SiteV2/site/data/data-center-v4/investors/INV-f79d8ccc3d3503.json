@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,11 +61,12 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 5,
     "china_market_company_count": 5,
@@ -74,11 +75,13 @@
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 4,
+      "lead": 1,
       "participant": 4
     },
     "round_codes": [
       "angel",
       "angel_plus",
+      "multi_round",
       "pre_series_a",
       "strategic"
     ],
@@ -107,11 +110,16 @@
         "entity_id": "EN-fcfad5f0679009d4",
         "canonical_entity_id": "EN-fcfad5f0679009d4",
         "name": "薇光点亮"
+      },
+      {
+        "entity_id": "EN-2a92da4bc5db543c",
+        "canonical_entity_id": "",
+        "name": "Violoop"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-50a2e844d18fb9cd",
+        "activity_id": "IA-85b0dbf7d8a007fc",
         "funding_insight_id": "FI-cb9086864c5c66de",
         "event_ids": [
           "EV-bdd1611cc17c3325"
@@ -151,7 +159,47 @@
         ]
       },
       {
-        "activity_id": "IA-05a42061c44ca90b",
+        "activity_id": "IA-070d913eb09bda3c",
+        "funding_insight_id": "FI-29f297142676a40b",
+        "event_ids": [
+          "EV-04ac681ff8b72e6a"
+        ],
+        "company_entity_id": "EN-2a92da4bc5db543c",
+        "company_canonical_entity_id": "",
+        "company_name": "Violoop",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "亿级",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 100000000,
+          "max_value": 1000000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "1 亿元–10 亿元"
+        },
+        "announced_at": "2026-09-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3be0dc7558cb7d71",
+            "source_url": "https://elsewhere.news/zh/lanchi/violoopcontext",
+            "source_title": "蓝驰创投领投，Violoop正式完成亿元级融资，打造个人全量Context平台和自进化系统｜蓝驰家族",
+            "source_content_hash": "f6503c5ecc6ff13e459c42df57836279c72366107ba3335a8e62f71886d04975",
+            "quote": "蓝驰创投领投，其他知名产业投资机构和战投方共同投资",
+            "quote_hash": "ced182a6c134945975ac529b0297a2e92984c1df94a2240bda653fdcb2f7033f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7ffc4dddc2582b2c",
         "funding_insight_id": "FI-0cab7e240eb542ce",
         "event_ids": [
           "EV-e85e6fc6d630d56c"
@@ -191,87 +239,7 @@
         ]
       },
       {
-        "activity_id": "IA-9d5ee797bec67b67",
-        "funding_insight_id": "FI-6ada8d4502daa530",
-        "event_ids": [
-          "EV-e0a31302688c81ec"
-        ],
-        "company_entity_id": "EN-a5e5f031b6f878cf",
-        "company_canonical_entity_id": "EN-a5e5f031b6f878cf",
-        "company_name": "微纳核芯",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "超10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": 1000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 10 亿元"
-        },
-        "announced_at": "2026-06-15",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "老股东继续加持",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-b96684face6f5223",
-            "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
-            "source_title": "微纳核芯完成超10亿元B轮系列融资",
-            "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
-            "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
-            "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-5530369fe1598404",
-        "funding_insight_id": "FI-f5103149f04ea6ed",
-        "event_ids": [
-          "EV-c5d7d88d1aef8edb"
-        ],
-        "company_entity_id": "EN-b5251b35f15bedc4",
-        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-        "company_name": "Moonshot AI",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "新一轮",
-        "amount_original": "约20亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 2000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "approximate",
-          "display_zh": "约 20 亿美元"
-        },
-        "announced_at": "2026-05-07",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮参投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-5d82f5dc9fc96ce5",
-            "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
-            "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
-            "source_content_hash": "eeb091dd8db852e6",
-            "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投",
-            "quote_hash": "ce983bb92940dbb6f14d4981d97fbc6b7a87dc7e3c877c0706e8b68444455643"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-7795a7191d33d6b7",
+        "activity_id": "IA-3a91726b277e04a9",
         "funding_insight_id": "FI-5c529fe1ecb9dd07",
         "event_ids": [
           "EV-1188b1585b835fe1",
@@ -312,48 +280,7 @@
         ]
       },
       {
-        "activity_id": "IA-1974c526a5a4165b",
-        "funding_insight_id": "FI-5c529fe1ecb9dd07",
-        "event_ids": [
-          "EV-1188b1585b835fe1",
-          "EV-81810a440198ac3c"
-        ],
-        "company_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
-        "company_name": "它石智航",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "超4.5亿美元（约30亿元）",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 450000000,
-          "min_value": 450000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 4.5 亿美元"
-        },
-        "announced_at": "2026-04-16",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-877032defba1f3e1",
-            "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
-            "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
-            "source_content_hash": "9bc3ee36ffea717f",
-            "quote": "本轮融资由蓝驰创投、启明创投共同领投",
-            "quote_hash": "f8d88a4f7e7b9c372b8808d3d02bbd3bd172f9ab7e3eeb6bdd99019d9b40fb68"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-4a082f6d658ee6d3",
+        "activity_id": "IA-1dfa109112589943",
         "funding_insight_id": "FI-815e0d2563a8b10f",
         "event_ids": [
           "EV-9832526435c1695e"
@@ -393,47 +320,7 @@
         ]
       },
       {
-        "activity_id": "IA-e1fb9fdaafa649b6",
-        "funding_insight_id": "FI-815e0d2563a8b10f",
-        "event_ids": [
-          "EV-9832526435c1695e"
-        ],
-        "company_entity_id": "EN-a43f157d208b2a63",
-        "company_canonical_entity_id": "EN-a43f157d208b2a63",
-        "company_name": "开物纪",
-        "round": "天使+轮",
-        "round_code": "angel_plus",
-        "round_original": "天使+轮",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-03-24",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮联合领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-3d10ec9bd5ef3ad4",
-            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-            "source_content_hash": "d5d8d61ad1133bc1",
-            "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
-            "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-7762ae075cb784cd",
+        "activity_id": "IA-c421c55e5a6179e5",
         "funding_insight_id": "FI-dacbf556f71762a6",
         "event_ids": [
           "EV-cba16bd541a07032"
@@ -471,6 +358,135 @@
             "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
           }
         ]
+      },
+      {
+        "activity_id": "IA-044e23416220b733",
+        "funding_insight_id": "FI-815e0d2563a8b10f",
+        "event_ids": [
+          "EV-9832526435c1695e"
+        ],
+        "company_entity_id": "EN-a43f157d208b2a63",
+        "company_canonical_entity_id": "EN-a43f157d208b2a63",
+        "company_name": "开物纪",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3d10ec9bd5ef3ad4",
+            "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+            "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+            "source_content_hash": "d5d8d61ad1133bc1",
+            "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+            "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6ce8f4d031806f2a",
+        "funding_insight_id": "FI-5c529fe1ecb9dd07",
+        "event_ids": [
+          "EV-1188b1585b835fe1",
+          "EV-81810a440198ac3c"
+        ],
+        "company_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_canonical_entity_id": "EN-39ba5f9dcab4e98a",
+        "company_name": "它石智航",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-877032defba1f3e1",
+            "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
+            "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
+            "source_content_hash": "9bc3ee36ffea717f",
+            "quote": "本轮融资由蓝驰创投、启明创投共同领投",
+            "quote_hash": "f8d88a4f7e7b9c372b8808d3d02bbd3bd172f9ab7e3eeb6bdd99019d9b40fb68"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d47b4b56c5dabf08",
+        "funding_insight_id": "FI-6ada8d4502daa530",
+        "event_ids": [
+          "EV-e0a31302688c81ec"
+        ],
+        "company_entity_id": "EN-a5e5f031b6f878cf",
+        "company_canonical_entity_id": "EN-a5e5f031b6f878cf",
+        "company_name": "微纳核芯",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "老股东继续加持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b96684face6f5223",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-06-15/doc-inicnckx8338155.shtml",
+            "source_title": "微纳核芯完成超10亿元B轮系列融资",
+            "source_content_hash": "3001d7761836998ad785b02a8753e10abd430afc8267dd715a690f318b1cff60",
+            "quote": "中芯聚源、毅达资本、蓝驰创投、东方嘉富及 立讯精密 产投等老股东继续加持",
+            "quote_hash": "756b351a9fa6aa2ab3dfc4a87d296aea555b2d57dc75b235aa853a15a06db3cc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f4dbaa1896d06873",
+        "funding_insight_id": "FI-f5103149f04ea6ed",
+        "event_ids": [
+          "EV-c5d7d88d1aef8edb"
+        ],
+        "company_entity_id": "EN-b5251b35f15bedc4",
+        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+        "company_name": "Moonshot AI",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮参投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5d82f5dc9fc96ce5",
+            "source_url": "https://www.163.com/tech/article/KI4BQ4UN00098IEO.html",
+            "source_title": "月之暗面完成5亿美元C轮融资|c轮融资|现金|定西_网易科技",
+            "source_content_hash": "eeb091dd8db852e6",
+            "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投",
+            "quote_hash": "ce983bb92940dbb6f14d4981d97fbc6b7a87dc7e3c877c0706e8b68444455643"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -483,12 +499,60 @@
         "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
       },
       {
+        "source_id": "FISRC-3be0dc7558cb7d71",
+        "source_url": "https://elsewhere.news/zh/lanchi/violoopcontext",
+        "source_title": "蓝驰创投领投，Violoop正式完成亿元级融资，打造个人全量Context平台和自进化系统｜蓝驰家族",
+        "source_content_hash": "f6503c5ecc6ff13e459c42df57836279c72366107ba3335a8e62f71886d04975",
+        "quote": "蓝驰创投领投，其他知名产业投资机构和战投方共同投资",
+        "quote_hash": "ced182a6c134945975ac529b0297a2e92984c1df94a2240bda653fdcb2f7033f"
+      },
+      {
         "source_id": "FISRC-bea9d0be613bc1cd",
         "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
         "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
         "source_content_hash": "311224a4dfb089df",
         "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
         "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
+      },
+      {
+        "source_id": "FISRC-b4d6b7523ee32ad7",
+        "source_url": "https://news.pedaily.cn/202604/562863.shtml",
+        "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
+        "source_content_hash": "0f321e5ffc10ea03",
+        "quote": "同时启明创投、线性资本、蓝驰创投、襄禾资本、洪泰基金等老股东也进行了战略投资加注",
+        "quote_hash": "ea6504441ab3f48998d2e8af72feaeac84f46475c936005d5c8982232af6d170"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
+        "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
+      },
+      {
+        "source_id": "FISRC-80b46378aae68c24",
+        "source_url": "https://finance.sina.com.cn/roll/2026-03-16/doc-inhrevaq9814436.shtml",
+        "source_title": "薇光点亮完成超1亿元Pre-A轮融资",
+        "source_content_hash": "3f3e3c82d29ac541",
+        "quote": "本轮融资由红杉中国、蓝驰创投联合领投，蚂蚁战投、鼎晖投资、鞍羽资本跟投，老股东九合创投持续追投。",
+        "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
+      },
+      {
+        "source_id": "FISRC-3d10ec9bd5ef3ad4",
+        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
+        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
+        "source_content_hash": "d5d8d61ad1133bc1",
+        "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
+        "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
+      },
+      {
+        "source_id": "FISRC-877032defba1f3e1",
+        "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
+        "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
+        "source_content_hash": "9bc3ee36ffea717f",
+        "quote": "本轮融资由蓝驰创投、启明创投共同领投",
+        "quote_hash": "f8d88a4f7e7b9c372b8808d3d02bbd3bd172f9ab7e3eeb6bdd99019d9b40fb68"
       },
       {
         "source_id": "FISRC-b96684face6f5223",
@@ -505,46 +569,6 @@
         "source_content_hash": "eeb091dd8db852e6",
         "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投",
         "quote_hash": "ce983bb92940dbb6f14d4981d97fbc6b7a87dc7e3c877c0706e8b68444455643"
-      },
-      {
-        "source_id": "FISRC-b4d6b7523ee32ad7",
-        "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-        "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-        "source_content_hash": "0f321e5ffc10ea03",
-        "quote": "同时启明创投、线性资本、蓝驰创投、襄禾资本、洪泰基金等老股东也进行了战略投资加注",
-        "quote_hash": "ea6504441ab3f48998d2e8af72feaeac84f46475c936005d5c8982232af6d170"
-      },
-      {
-        "source_id": "FISRC-877032defba1f3e1",
-        "source_url": "https://www.chnfund.com/article/ARa02b65be-84b4-488b-1eea-3a18e4d5be1d",
-        "source_title": "它石智航完成天使轮1.2亿美元融资，蓝驰、启明、联想、高瓴等知名机构出手 中国基金报",
-        "source_content_hash": "9bc3ee36ffea717f",
-        "quote": "本轮融资由蓝驰创投、启明创投共同领投",
-        "quote_hash": "f8d88a4f7e7b9c372b8808d3d02bbd3bd172f9ab7e3eeb6bdd99019d9b40fb68"
-      },
-      {
-        "source_id": "FISRC-3d10ec9bd5ef3ad4",
-        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-        "source_content_hash": "d5d8d61ad1133bc1",
-        "quote": "本轮由 Monolith 领投，光合创投、集富亚洲跟投，高瓴创投、IDG资本、蓝驰创投、BV百度风投、L2F光源创业者基金等老股东超额加注。",
-        "quote_hash": "78ea609acc567b7782bb8c165d17ae0c27669ca0818891be37f22b3646bd833d"
-      },
-      {
-        "source_id": "FISRC-3d10ec9bd5ef3ad4",
-        "source_url": "https://news.pedaily.cn/202603/562002.shtml",
-        "source_title": "首发 | 90后博士掌舵，开物纪天使+轮融资数亿元",
-        "source_content_hash": "d5d8d61ad1133bc1",
-        "quote": "去年11月，开物纪宣布完成亿元级天使轮融资，由IDG 资本、蓝驰创投联合领投，BV 百度风投、L2F 光源创业者基金、高瓴创投跟投。",
-        "quote_hash": "1a07a5654a5c0fbf95500d5959cc1a274fc6fa02dd4be49d7e633b8899deecda"
-      },
-      {
-        "source_id": "FISRC-80b46378aae68c24",
-        "source_url": "https://finance.sina.com.cn/roll/2026-03-16/doc-inhrevaq9814436.shtml",
-        "source_title": "薇光点亮完成超1亿元Pre-A轮融资",
-        "source_content_hash": "3f3e3c82d29ac541",
-        "quote": "本轮融资由红杉中国、蓝驰创投联合领投，蚂蚁战投、鼎晖投资、鞍羽资本跟投，老股东九合创投持续追投。",
-        "quote_hash": "904259116e332ef4c86f2cc478e1db6d17dbdceb4821cfd2cc9566bdd5a5c3e5"
       }
     ],
     "public_profile": {
@@ -640,12 +664,12 @@
           "source_id": "FISRC-3a00c703054126cd"
         },
         {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
+          "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮领投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3be0dc7558cb7d71"
         },
         {
-          "description": "融资来源记录：它石智航 · Pre-A轮 · 2026-04-16 · 本轮参投 · 超4.5亿美元（约30亿元）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b4d6b7523ee32ad7"
+          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-bea9d0be613bc1cd"
         }
       ],
       "contacts": [
@@ -720,20 +744,20 @@
           "quote_hash": "b107f578d66cdfb0c455906070c8afb274d89805bad140a09769daf8c6fa1a89"
         },
         {
+          "source_id": "FISRC-3be0dc7558cb7d71",
+          "source_url": "https://elsewhere.news/zh/lanchi/violoopcontext",
+          "source_title": "蓝驰创投领投，Violoop正式完成亿元级融资，打造个人全量Context平台和自进化系统｜蓝驰家族",
+          "source_content_hash": "f6503c5ecc6ff13e459c42df57836279c72366107ba3335a8e62f71886d04975",
+          "quote": "蓝驰创投领投，其他知名产业投资机构和战投方共同投资",
+          "quote_hash": "ced182a6c134945975ac529b0297a2e92984c1df94a2240bda653fdcb2f7033f"
+        },
+        {
           "source_id": "FISRC-bea9d0be613bc1cd",
           "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
           "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
           "source_content_hash": "311224a4dfb089df",
           "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
           "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
-        },
-        {
-          "source_id": "FISRC-b4d6b7523ee32ad7",
-          "source_url": "https://news.pedaily.cn/202604/562863.shtml",
-          "source_title": "高瓴红杉，联合领投中国最大具身融资：它石智航融资4.55亿美金",
-          "source_content_hash": "0f321e5ffc10ea03",
-          "quote": "同时启明创投、线性资本、蓝驰创投、襄禾资本、洪泰基金等老股东也进行了战略投资加注",
-          "quote_hash": "ea6504441ab3f48998d2e8af72feaeac84f46475c936005d5c8982232af6d170"
         }
       ],
       "last_verified_at": "2026-09-25",

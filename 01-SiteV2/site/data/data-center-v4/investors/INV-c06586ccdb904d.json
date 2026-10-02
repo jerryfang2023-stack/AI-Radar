@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,35 +61,44 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-09-15",
-    "latest_disclosed_at": "2026-09-15",
+    "first_disclosed_at": "2022-07",
+    "latest_disclosed_at": "2026-01-14",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_c"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-185ea241778d39c7",
+        "canonical_entity_id": "",
+        "name": "Quadric"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-51e2923518c1e28e",
-        "funding_insight_id": "FI-1a6e7f08ffc4ef08",
+        "activity_id": "IA-859523e45bee2871",
+        "funding_insight_id": "FI-ae8031b7eb15f5c7",
         "event_ids": [
-          "EV-e5763ba54217d88a"
+          "EV-42335b1bae58c172"
         ],
-        "company_entity_id": "EN-456d7aad12e82e0e",
+        "company_entity_id": "EN-185ea241778d39c7",
         "company_canonical_entity_id": "",
-        "company_name": "Arch Systems",
-        "round": "成长轮",
-        "round_code": "growth",
-        "round_original": "成长轮",
-        "amount_original": "$30 Million",
+        "company_name": "Quadric",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$30M",
         "amount_normalized": {
           "currency": "USD",
           "value": 30000000,
@@ -99,10 +108,42 @@
           "status": "exact",
           "display_zh": "3000 万美元"
         },
-        "announced_at": "2026-09-15",
+        "announced_at": "2026-01-14",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b3973965c733b20b",
+            "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+            "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+            "source_content_hash": "c8cfa51187a025ba",
+            "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+            "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-691ad9e2aca28976",
+        "funding_insight_id": "FI-1a6e7f08ffc4ef08",
+        "event_ids": [
+          "EV-e5763ba54217d88a"
+        ],
+        "company_entity_id": "EN-456d7aad12e82e0e",
+        "company_canonical_entity_id": "",
+        "company_name": "Arch Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2022-07",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "2022年7月融资种子轮领投方及现有投资方",
         "role_code": "historical_or_ambiguous",
@@ -119,6 +160,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b3973965c733b20b",
+        "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+        "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+        "source_content_hash": "c8cfa51187a025ba",
+        "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+        "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
+      },
       {
         "source_id": "FISRC-d7613d54dcfcb87f",
         "source_url": "https://www.prnewswire.com/news-releases/arch-systems-secures-15m-in-new-funding-led-by-two-bear-capital-301587244.html",
@@ -183,6 +232,10 @@
           "source_id": "uncork_home"
         },
         {
+          "description": "融资来源记录：Quadric · C轮 · 2026-01-14 · 本轮参投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b3973965c733b20b"
+        },
+        {
           "description": "融资来源记录：Arch Systems · 历史轮次未披露 · 2022-07 · 2022年7月融资种子轮领投方及现有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d7613d54dcfcb87f"
         }
@@ -227,6 +280,14 @@
           "source_content_hash": "05611c77f053ee8f5f82f785921cfdab2c8db0bfc20ecaa28888ff448369362d",
           "quote": "Uncork Capital has raised $300 million in new funds: Uncork VIII, a $225 million seed fund, and Uncork Plus IV, a $75 million fund dedicated to follow-on support for Uncork portfolio companies.",
           "quote_hash": "9ec2224e52e0763ac59acdba1943335224c20a672e67da91990397aea55b6624"
+        },
+        {
+          "source_id": "FISRC-b3973965c733b20b",
+          "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+          "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+          "source_content_hash": "c8cfa51187a025ba",
+          "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+          "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
         },
         {
           "source_id": "FISRC-d7613d54dcfcb87f",

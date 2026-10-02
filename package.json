@@ -118,7 +118,7 @@
     "test:data-center-site:opportunity": "npm run test:data-center-site:preflight && node --test agent-workflow/tools/tests/industry-reports-frontstage.test.mjs agent-workflow/tools/tests/opportunity-direction-cards-deepseek.test.mjs",
     "test:data-center-site:retirement": "npm run assert:guanlan-vault -- --contract-only && npm run test:data-center-site:preflight",
     "test:trend-radar": "node --test agent-workflow/tools/tests/trend-radar-v1.test.mjs",
-    "test:funding-insights": "node --test agent-workflow/tools/tests/public-profile-stage-order.test.mjs agent-workflow/tools/tests/funding-insight-v1.test.mjs agent-workflow/tools/tests/funding-company-display.test.mjs && npm run test:financing-monitor",
+    "test:funding-insights": "node --test agent-workflow/tools/tests/public-profile-stage-order.test.mjs agent-workflow/tools/tests/funding-insight-v1.test.mjs agent-workflow/tools/tests/funding-company-display.test.mjs agent-workflow/tools/tests/financing-summary-evidence.test.mjs && npm run test:financing-monitor",
     "test:data-center-site:prepared": "npm run test:data-center-site:core && npm run test:data-center-site:retirement && npm run test:trend-radar && npm run test:funding-insights && npm run assert:taxonomy-consistency",
     "test:v4-frontstage-smoke": "node agent-workflow/tools/tests/v4-frontstage-smoke.mjs",
     "sync:pipeline-dashboard": "node 01-SiteV2/site/scripts/sync-pipeline-dashboard-data.mjs",
@@ -177,7 +177,8 @@
     "test:financing-monitor": "node --test agent-workflow/financing/tests/*.test.mjs",
     "financing:dispatch": "node agent-workflow/financing/dispatch.mjs",
     "financing:run": "node agent-workflow/financing/run.mjs",
-    "financing:publish": "node agent-workflow/financing/publish.mjs"
+    "financing:publish": "node agent-workflow/financing/publish.mjs",
+    "inspect:financing-sources": "node agent-workflow/financing/inspect-sources.mjs"
   },
   "repository": {
     "type": "git",
@@ -196,5 +197,8 @@
     "ajv": "^8.20.0",
     "ajv-formats": "^3.0.1",
     "playwright": "^1.60.0"
+  },
+  "dependencies": {
+    "cheerio": "1.2.0"
   }
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
-    "historical_or_ambiguous_count": 1,
+    "current_round_count": 8,
+    "historical_or_ambiguous_count": 5,
     "portfolio_company_count": 6,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
+    "china_market_activity_count": 8,
     "china_market_company_count": 6,
     "first_disclosed_at": "2026-01-26",
-    "latest_disclosed_at": "2026-08-24",
+    "latest_disclosed_at": "2026-09-04",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 1,
-      "participant": 4
+      "historical_or_ambiguous": 5,
+      "participant": 6
     },
     "round_codes": [
       "angel",
@@ -118,7 +118,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-6572f53bb165ac6f",
+        "activity_id": "IA-8e851719ebf599c5",
+        "funding_insight_id": "FI-4a45f01cccfbfed5",
+        "event_ids": [
+          "EV-f2eb34f231afc8aa"
+        ],
+        "company_entity_id": "EN-9a970ad7900121db",
+        "company_canonical_entity_id": "EN-9a970ad7900121db",
+        "company_name": "小鹏机器人业务",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "首轮融资",
+        "amount_original": "超9亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 900000000,
+          "min_value": 900000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 9 亿美元"
+        },
+        "announced_at": "2026-09-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ea62510cec1d311",
+            "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+            "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+            "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+            "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+            "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-15c5b4d25094486d",
         "funding_insight_id": "FI-7f089c67ec59f0c9",
         "event_ids": [
           "EV-47f16317cc2d62e2",
@@ -159,47 +199,7 @@
         ]
       },
       {
-        "activity_id": "IA-788ff3d5980e5881",
-        "funding_insight_id": "FI-53612bad1f698300",
-        "event_ids": [
-          "EV-25d8a47fbc3c0fbb"
-        ],
-        "company_entity_id": "EN-b5251b35f15bedc4",
-        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
-        "company_name": "Moonshot AI",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "F轮",
-        "amount_original": "35亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 3500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "35 亿美元"
-        },
-        "announced_at": "2026-07-30",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "2026年前两个月连续三轮融资老股东持续加码",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-773362f4e07cd598",
-            "source_url": "https://news.pedaily.cn/202607/566986.shtml",
-            "source_title": "月之暗面完成超35亿美元F轮融资",
-            "source_content_hash": "4d700156140038e7",
-            "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
-            "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-d157e3b993a8e457",
+        "activity_id": "IA-b61256fd361829e0",
         "funding_insight_id": "FI-0cab7e240eb542ce",
         "event_ids": [
           "EV-e85e6fc6d630d56c"
@@ -239,7 +239,7 @@
         ]
       },
       {
-        "activity_id": "IA-4306369201ed63f9",
+        "activity_id": "IA-d7823773df235b08",
         "funding_insight_id": "FI-43fe661ce1291832",
         "event_ids": [
           "EV-2f0f3200b9800877"
@@ -279,7 +279,47 @@
         ]
       },
       {
-        "activity_id": "IA-60bdf48f03f8b5d6",
+        "activity_id": "IA-e2ccdd8d10ce5d23",
+        "funding_insight_id": "FI-a1d81c83315eb264",
+        "event_ids": [
+          "EV-8ea9e79f7edcb94f"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "首次外部融资",
+        "round_code": "first_external",
+        "round_original": "首次外部融资",
+        "amount_original": "约 510 亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 51000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 510 亿元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e0178cb313198d39",
+            "source_url": "https://www.ithome.com/0/965/686.htm",
+            "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+            "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+            "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+            "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b7e79b6bbcc52af9",
         "funding_insight_id": "FI-71c58a10a93101c8",
         "event_ids": [
           "EV-d4d7b019ff0015df",
@@ -328,7 +368,7 @@
         ]
       },
       {
-        "activity_id": "IA-abc2ba20de982404",
+        "activity_id": "IA-606ddc0a4dd8e713",
         "funding_insight_id": "FI-033dd55115963cb3",
         "event_ids": [
           "EV-0896f0e7b703bed2"
@@ -368,7 +408,7 @@
         ]
       },
       {
-        "activity_id": "IA-9f4c670e85602297",
+        "activity_id": "IA-abd455c016c03c17",
         "funding_insight_id": "FI-74076c9ab29354a8",
         "event_ids": [
           "EV-df37e9341b5c7f04",
@@ -407,9 +447,177 @@
             "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
           }
         ]
+      },
+      {
+        "activity_id": "IA-a507048d2f521736",
+        "funding_insight_id": "FI-e4c90ce26c3922b5",
+        "event_ids": [
+          "EV-3a7e1e2c46daaa76"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮融资参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4a43446c1fdd8a31",
+            "source_url": "https://www.qbitai.com/2026/07/461220.html",
+            "source_title": "DeepSeek被曝主动叫停了第二轮融资签约",
+            "source_content_hash": "b0eb1d1fb5eb1976",
+            "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
+            "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ecff223936f66ea0",
+        "funding_insight_id": "FI-fb02f5cc84560b82",
+        "event_ids": [
+          "EV-ed65f3187aa6aa40"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "首轮投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ac00611dd4c2a13f",
+            "source_url": "https://the-decoder.com/deepseek-needs-more-cash-just-weeks-after-closing-its-first-7-billion-round",
+            "source_title": "DeepSeek 在完成首轮 70 亿美元融资仅数周后就需要更多现金",
+            "source_content_hash": "aa319f5891e1ab4ca134be8950a02920d0912a5476fbf18bd9db8e6c5a8e2add",
+            "quote": "Other investors include CATL, Tencent, JD.com, NetEase, and China's state-backed AI fund.",
+            "quote_hash": "a841ea1f8781b8a5c242157c46dde12dd5adb0106867c0fbaab83d8834189e91"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e89469d2cb307744",
+        "funding_insight_id": "FI-f8b9774f42814cb1",
+        "event_ids": [
+          "EV-a72d111131f8de60"
+        ],
+        "company_entity_id": "EN-6f7ac1823da81d2e",
+        "company_canonical_entity_id": "EN-6f7ac1823da81d2e",
+        "company_name": "DeepSeek",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "洽谈投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d28724a1e6a3c6d4",
+            "source_url": "https://www.21jingji.com/article/20260507/herald/be3cf711cdfe8b63a1bdf39c21879cc6.html",
+            "source_title": "估值450亿美元？大基金或主导DeepSeek首轮融资",
+            "source_content_hash": "f7517f964ff6198a",
+            "quote": "到了4月22日，又有消息称，腾讯和阿里正在洽谈投资DeepSeek，DeepSeek目前正寻求以超过200亿美元估值筹集资金。",
+            "quote_hash": "cc7a958b575be5676187fe0c13898c4115517e95309a77d0fa30dfd3867e9a03"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dc379a2443a927b6",
+        "funding_insight_id": "FI-a81898de30b8d7c3",
+        "event_ids": [
+          "EV-e94a992d410d6520"
+        ],
+        "company_entity_id": "EN-b5251b35f15bedc4",
+        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+        "company_name": "Moonshot AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5b27b074fcae4b4",
+            "source_url": "https://www.mg21.com/moonshot.html",
+            "source_title": "中国通用人工智能公司：月之暗面 Moonshot AI",
+            "source_content_hash": "2e4787bc0760def3",
+            "quote": "2024年8月，月之暗面完成3亿美金B+轮融资，腾讯集团、Gaorong Capital和阿里巴巴共同投资。",
+            "quote_hash": "0c6bdd919e478ba3bec621e1cd110c035ec760df6d0f895e3381cc88b5195467"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3dcc9a1a4af9108b",
+        "funding_insight_id": "FI-53612bad1f698300",
+        "event_ids": [
+          "EV-25d8a47fbc3c0fbb"
+        ],
+        "company_entity_id": "EN-b5251b35f15bedc4",
+        "company_canonical_entity_id": "EN-b5251b35f15bedc4",
+        "company_name": "Moonshot AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年前两个月连续三轮融资老股东持续加码",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-773362f4e07cd598",
+            "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+            "source_title": "月之暗面完成超35亿美元F轮融资",
+            "source_content_hash": "4d700156140038e7",
+            "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+            "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2ea62510cec1d311",
+        "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+        "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+        "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+        "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+        "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+      },
       {
         "source_id": "FISRC-2ec9a5e83ce18f75",
         "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
@@ -417,14 +625,6 @@
         "source_content_hash": "b8e4f0b869df00ee",
         "quote": "由 IDG资本领投，高榕创投参投，同时获得腾讯和阿里巴巴两家战略投资者的支持",
         "quote_hash": "0c0e04917436353a249175e0fe3954233525524468f8b84521713be86611d620"
-      },
-      {
-        "source_id": "FISRC-773362f4e07cd598",
-        "source_url": "https://news.pedaily.cn/202607/566986.shtml",
-        "source_title": "月之暗面完成超35亿美元F轮融资",
-        "source_content_hash": "4d700156140038e7",
-        "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
-        "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
       },
       {
         "source_id": "FISRC-bea9d0be613bc1cd",
@@ -441,6 +641,14 @@
         "source_content_hash": "5e7f9a9c8a73026b",
         "quote": "The round, which was led by Meituan and Tencent",
         "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
+      },
+      {
+        "source_id": "FISRC-e0178cb313198d39",
+        "source_url": "https://www.ithome.com/0/965/686.htm",
+        "source_title": "DeepSeek 以 4000 亿元估值完成首轮外部融资：510 亿元到账，投资方含梁文锋、腾讯、宁德时代、京东、网易等",
+        "source_content_hash": "289194a433d3de699fa0eff1b47b1155c254806702641f326f6e2eb4d4f77728",
+        "quote": "本轮融资的投资方阵容涵盖了产业资本、互联网巨头与国家队，具体投资方包括创始人梁文锋、腾讯、宁德时代、网易、京东、Monolith 砺思资本、IDG 资本、正心谷投资、拾象科技以及国家人工智能产业投资基金合伙企业（有限合伙）。",
+        "quote_hash": "84c2fe381278b77a550e83ecf357438b4205d4605660bf45020d3e4ed5fe4a3d"
       },
       {
         "source_id": "FISRC-d2c8c841370ed82a",
@@ -473,6 +681,46 @@
         "source_content_hash": "3cd27a7369aa4df5",
         "quote": "参与机构包括上国投先导基金、国寿股权、浦东创投、徐汇资本、无锡梁溪基金、厦门国贸、华勤技术等产业投资人，腾讯、启明、五源等老股东进一步跟投。",
         "quote_hash": "f7ef53522aea45928eba53deb0ba7cdf5dcbe8cc3badeae684c82ba9683bc546"
+      },
+      {
+        "source_id": "FISRC-4a43446c1fdd8a31",
+        "source_url": "https://www.qbitai.com/2026/07/461220.html",
+        "source_title": "DeepSeek被曝主动叫停了第二轮融资签约",
+        "source_content_hash": "b0eb1d1fb5eb1976",
+        "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
+        "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
+      },
+      {
+        "source_id": "FISRC-ac00611dd4c2a13f",
+        "source_url": "https://the-decoder.com/deepseek-needs-more-cash-just-weeks-after-closing-its-first-7-billion-round",
+        "source_title": "DeepSeek 在完成首轮 70 亿美元融资仅数周后就需要更多现金",
+        "source_content_hash": "aa319f5891e1ab4ca134be8950a02920d0912a5476fbf18bd9db8e6c5a8e2add",
+        "quote": "Other investors include CATL, Tencent, JD.com, NetEase, and China's state-backed AI fund.",
+        "quote_hash": "a841ea1f8781b8a5c242157c46dde12dd5adb0106867c0fbaab83d8834189e91"
+      },
+      {
+        "source_id": "FISRC-d28724a1e6a3c6d4",
+        "source_url": "https://www.21jingji.com/article/20260507/herald/be3cf711cdfe8b63a1bdf39c21879cc6.html",
+        "source_title": "估值450亿美元？大基金或主导DeepSeek首轮融资",
+        "source_content_hash": "f7517f964ff6198a",
+        "quote": "到了4月22日，又有消息称，腾讯和阿里正在洽谈投资DeepSeek，DeepSeek目前正寻求以超过200亿美元估值筹集资金。",
+        "quote_hash": "cc7a958b575be5676187fe0c13898c4115517e95309a77d0fa30dfd3867e9a03"
+      },
+      {
+        "source_id": "FISRC-c5b27b074fcae4b4",
+        "source_url": "https://www.mg21.com/moonshot.html",
+        "source_title": "中国通用人工智能公司：月之暗面 Moonshot AI",
+        "source_content_hash": "2e4787bc0760def3",
+        "quote": "2024年8月，月之暗面完成3亿美金B+轮融资，腾讯集团、Gaorong Capital和阿里巴巴共同投资。",
+        "quote_hash": "0c6bdd919e478ba3bec621e1cd110c035ec760df6d0f895e3381cc88b5195467"
+      },
+      {
+        "source_id": "FISRC-773362f4e07cd598",
+        "source_url": "https://news.pedaily.cn/202607/566986.shtml",
+        "source_title": "月之暗面完成超35亿美元F轮融资",
+        "source_content_hash": "4d700156140038e7",
+        "quote": "今年前两个月，公司还连续完成5亿、7亿、7亿美元三轮融资，估值从100亿美元攀升至180亿美元，阿里、腾讯、五源资本等老股东持续加码。",
+        "quote_hash": "1b04f6348a3383cbbcda8ce26c8dbd8a0f223287a55894621d0ba47dce291306"
       }
     ],
     "public_profile": {
@@ -526,16 +774,16 @@
           "source_id": "tencent_investment_strategy_2020"
         },
         {
+          "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-09-04 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2ea62510cec1d311"
+        },
+        {
           "description": "融资来源记录：小鹏机器人业务 · 其他融资 · 2026-08-24 · 本轮参投 · 超9亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2ec9a5e83ce18f75"
         },
         {
           "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮联合领投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bea9d0be613bc1cd"
-        },
-        {
-          "description": "融资来源记录：Even Realities Technology · Pre-B轮 · 2026-07-07 · 本轮联合领投 · 1.5亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-340182e8dcb597a3"
         }
       ],
       "contacts": [
@@ -603,6 +851,14 @@
           "quote_hash": "de3feafcd81368d41be78c53253a89b9ddd2c9c32424cf40089015550080528c"
         },
         {
+          "source_id": "FISRC-2ea62510cec1d311",
+          "source_url": "https://elsewhere.news/zh/gaorong/rongbao-physical-ai-domestic-computing-power-controllable-nu",
+          "source_title": "榕报｜物理AI、国产算力、可控核聚变、医疗创新公司完成重磅融资",
+          "source_content_hash": "67292d9f5d47dac6398751aa1f03bd21e591448b296f9cb106f2dc97d4c47f23",
+          "quote": "本轮融资由IDG资本领投，高榕创投参投，并获得腾讯、阿里巴巴两家战略投资者支持",
+          "quote_hash": "0014fb18984b4b4f96df9ff32c5ecb7a548050bfe2a96765df0e7837bc7b9b71"
+        },
+        {
           "source_id": "FISRC-2ec9a5e83ce18f75",
           "source_url": "https://www.xiaopeng.com/news/company_news/5585.html",
           "source_title": "小鹏机器人业务首轮融资超9亿美元，引领物理AI规模量产和应用-小鹏汽车官网",
@@ -617,14 +873,6 @@
           "source_content_hash": "311224a4dfb089df",
           "quote": "本次融资由阿里巴巴、腾讯联合领投",
           "quote_hash": "98b7d1967cc53e05ee6fae09461995df935db30454c5bf6627dc724464483c92"
-        },
-        {
-          "source_id": "FISRC-340182e8dcb597a3",
-          "source_url": "https://roadtovr.com/smart-glasses-even-realities-unicorn-150m-funding/",
-          "source_title": "Smart Glasses Startup Even Realities Secures Unicorn Status with $150M Funding Round | Road to VR",
-          "source_content_hash": "5e7f9a9c8a73026b",
-          "quote": "The round, which was led by Meituan and Tencent",
-          "quote_hash": "afbd81cb4fab2cf31f179d101afd4269ff50e40ba9fb921b87dd229c9f2b52a6"
         }
       ],
       "last_verified_at": "2026-09-25",

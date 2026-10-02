@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 3,
     "market_regions": [
@@ -73,11 +73,12 @@
     "latest_disclosed_at": "2026-06-23",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
-      "series_d"
+      "series_d",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -98,7 +99,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-cd9d2517038ba8ce",
+        "activity_id": "IA-2e775bf5232e8d68",
+        "funding_insight_id": "FI-6fdfe3674217723b",
+        "event_ids": [
+          "EV-0a9d7be146eeb62a"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$98 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8f5a35fa6bbc977d",
+            "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+            "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+            "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+            "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+            "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d8e3bd6e3c46d224",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
           "EV-20d762872664fddb"
@@ -138,47 +179,7 @@
         ]
       },
       {
-        "activity_id": "IA-4f83f6e75122cfe8",
-        "funding_insight_id": "FI-bff055b65fdb260b",
-        "event_ids": [
-          "EV-20d762872664fddb"
-        ],
-        "company_entity_id": "EN-450dcf23e621ff10",
-        "company_canonical_entity_id": "",
-        "company_name": "Engram",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount_original": "$98M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 98000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "9800 万美元"
-        },
-        "announced_at": "2026-06-23",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-bcf01fbecb1fbdb6",
-            "source_url": "https://www.caplight.com/company/engram",
-            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-            "source_content_hash": "24739161319ad4eb",
-            "quote": "Amplify Partners Seed, Early Funding",
-            "quote_hash": "74f164b9f3ae2b349fb6072043b9fa156393e9e8860ad27b6db4ddabcfe575bc"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-c886711a8e87f4fa",
+        "activity_id": "IA-287c7a6da27e1b6c",
         "funding_insight_id": "FI-6deae4c748088f7f",
         "event_ids": [
           "EV-c0ec0c026233bea5"
@@ -218,47 +219,7 @@
         ]
       },
       {
-        "activity_id": "IA-769c311a0a0f74c0",
-        "funding_insight_id": "FI-a308a87eb0e97da7",
-        "event_ids": [
-          "EV-dd3217aad32e6891"
-        ],
-        "company_entity_id": "EN-2f88f41306209dd7",
-        "company_canonical_entity_id": "",
-        "company_name": "Avoca AI",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "种子轮、A轮、B轮",
-        "amount_original": "超过1.25亿美元",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 125000000,
-          "min_value": 125000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 1.25 亿美元"
-        },
-        "announced_at": "2026-04-27",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-ce3d5e20846f6f71",
-            "source_url": "https://www.prnewswire.com/news-releases/avoca-raises-125m-at-1b-valuation-to-power-americas-services-economy-with-ai-302753962.html",
-            "source_title": "Avoca 获投超1.25亿美元，估值达10亿美元，以AI驱动美国服务业经济",
-            "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
-            "quote": "Backed by Meritech, General Catalyst, Kleiner Perkins, Amplify Partners, and Y Combinator",
-            "quote_hash": "fb53beeecba7914be33b58dd56bcbba747b5ebc2a3e35f0ab8e068cc39fc9f5c"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-3ae1eecc3a87b877",
+        "activity_id": "IA-0659232795a37006",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
           "EV-3b40ec144e5db22c"
@@ -296,9 +257,81 @@
             "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
           }
         ]
+      },
+      {
+        "activity_id": "IA-bca484d88ca58a03",
+        "funding_insight_id": "FI-a308a87eb0e97da7",
+        "event_ids": [
+          "EV-dd3217aad32e6891"
+        ],
+        "company_entity_id": "EN-2f88f41306209dd7",
+        "company_canonical_entity_id": "",
+        "company_name": "Avoca AI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ce3d5e20846f6f71",
+            "source_url": "https://www.prnewswire.com/news-releases/avoca-raises-125m-at-1b-valuation-to-power-americas-services-economy-with-ai-302753962.html",
+            "source_title": "Avoca 获投超1.25亿美元，估值达10亿美元，以AI驱动美国服务业经济",
+            "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
+            "quote": "Backed by Meritech, General Catalyst, Kleiner Perkins, Amplify Partners, and Y Combinator",
+            "quote_hash": "fb53beeecba7914be33b58dd56bcbba747b5ebc2a3e35f0ab8e068cc39fc9f5c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0dc46ed69d974560",
+        "funding_insight_id": "FI-bff055b65fdb260b",
+        "event_ids": [
+          "EV-20d762872664fddb"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcf01fbecb1fbdb6",
+            "source_url": "https://www.caplight.com/company/engram",
+            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+            "source_content_hash": "24739161319ad4eb",
+            "quote": "Amplify Partners Seed, Early Funding",
+            "quote_hash": "74f164b9f3ae2b349fb6072043b9fa156393e9e8860ad27b6db4ddabcfe575bc"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-8f5a35fa6bbc977d",
+        "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+        "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+        "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+        "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+        "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+      },
       {
         "source_id": "FISRC-39d911c5038cb1c0",
         "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
@@ -306,14 +339,6 @@
         "source_content_hash": "f7105d727554bb38",
         "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo",
         "quote_hash": "d6d2e6175424260b5170a8e5367eac93875a636a037b0e4d21c7a38705fd06e4"
-      },
-      {
-        "source_id": "FISRC-bcf01fbecb1fbdb6",
-        "source_url": "https://www.caplight.com/company/engram",
-        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-        "source_content_hash": "24739161319ad4eb",
-        "quote": "Amplify Partners Seed, Early Funding",
-        "quote_hash": "74f164b9f3ae2b349fb6072043b9fa156393e9e8860ad27b6db4ddabcfe575bc"
       },
       {
         "source_id": "FISRC-a1dac8a4c0e97aee",
@@ -324,6 +349,14 @@
         "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
       },
       {
+        "source_id": "FISRC-1f69885afd5fc439",
+        "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
+        "source_title": "Temporal 完成 D 轮融资",
+        "source_content_hash": "74cb86598e6c9021",
+        "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
+        "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+      },
+      {
         "source_id": "FISRC-ce3d5e20846f6f71",
         "source_url": "https://www.prnewswire.com/news-releases/avoca-raises-125m-at-1b-valuation-to-power-americas-services-economy-with-ai-302753962.html",
         "source_title": "Avoca 获投超1.25亿美元，估值达10亿美元，以AI驱动美国服务业经济",
@@ -332,12 +365,12 @@
         "quote_hash": "fb53beeecba7914be33b58dd56bcbba747b5ebc2a3e35f0ab8e068cc39fc9f5c"
       },
       {
-        "source_id": "FISRC-1f69885afd5fc439",
-        "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-        "source_title": "Temporal 完成 D 轮融资",
-        "source_content_hash": "74cb86598e6c9021",
-        "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-        "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
+        "source_id": "FISRC-bcf01fbecb1fbdb6",
+        "source_url": "https://www.caplight.com/company/engram",
+        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+        "source_content_hash": "24739161319ad4eb",
+        "quote": "Amplify Partners Seed, Early Funding",
+        "quote_hash": "74f164b9f3ae2b349fb6072043b9fa156393e9e8860ad27b6db4ddabcfe575bc"
       }
     ],
     "public_profile": {
@@ -403,16 +436,16 @@
           "source_id": "amplify_official_portfolio"
         },
         {
+          "description": "融资来源记录：Engram · 轮次未披露 · 2026-06-23 · 本轮参投 · $98 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8f5a35fa6bbc977d"
+        },
+        {
           "description": "融资来源记录：Engram · 种子轮 · 2026-06-23 · 本轮参投 · $98M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39d911c5038cb1c0"
         },
         {
           "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a1dac8a4c0e97aee"
-        },
-        {
-          "description": "融资来源记录：Temporal Technologies · D轮 · 2026-02-17 · 既有投资方，本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1f69885afd5fc439"
         }
       ],
       "contacts": [
@@ -450,6 +483,14 @@
           "quote_hash": "20f0fa198f9c751f7ee613e09acba365fc863b690c585e23cbea389adce9d1f8"
         },
         {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+          "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+          "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+          "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+        },
+        {
           "source_id": "FISRC-39d911c5038cb1c0",
           "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
           "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
@@ -464,14 +505,6 @@
           "source_content_hash": "c89dfd8f0a56c07f",
           "quote": "Niteshift has raised $7 million in a seed round led by Greylock, with participation from Amplify Partners, BoxGroup, and SV Angel.",
           "quote_hash": "b784d4f0084512f627cf683b07ea68a93c1cb7b5b6c53181d49da02707611ddc"
-        },
-        {
-          "source_id": "FISRC-1f69885afd5fc439",
-          "source_url": "https://temporal.io/news/temporal-raises-300M-to-make-agentic-ai-real-for-companies",
-          "source_title": "Temporal 完成 D 轮融资",
-          "source_content_hash": "74cb86598e6c9021",
-          "quote": "with strong participation from insiders Sequoia Capital, Index, Tiger, GIC, Madrona, and Amplify",
-          "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
         }
       ],
       "last_verified_at": "2026-09-25",

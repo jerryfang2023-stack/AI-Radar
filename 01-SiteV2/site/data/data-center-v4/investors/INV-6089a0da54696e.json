@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,12 +72,14 @@
     "first_disclosed_at": "2023-06-28",
     "latest_disclosed_at": "2026-08-07",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "pre_seed",
-      "series_b"
+      "series_b",
+      "series_d"
     ],
     "portfolio_companies": [
       {
@@ -89,11 +91,16 @@
         "entity_id": "EN-4bd78d9884b2d958",
         "canonical_entity_id": "EN-4bd78d9884b2d958",
         "name": "Parabola"
+      },
+      {
+        "entity_id": "EN-586937124e151c46",
+        "canonical_entity_id": "EN-586937124e151c46",
+        "name": "Suno"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-f9159cad9171a5f8",
+        "activity_id": "IA-c31de045be88bca9",
         "funding_insight_id": "FI-98e08b099fb39138",
         "event_ids": [
           "EV-c1295b8f58024ff6"
@@ -133,7 +140,48 @@
         ]
       },
       {
-        "activity_id": "IA-303c14a2ca34c09d",
+        "activity_id": "IA-e4208b93e2fe6d98",
+        "funding_insight_id": "FI-cbf93da745326644",
+        "event_ids": [
+          "EV-3e92fba5502f1aba",
+          "EV-31579660b945ef01"
+        ],
+        "company_entity_id": "EN-586937124e151c46",
+        "company_canonical_entity_id": "EN-586937124e151c46",
+        "company_name": "Suno",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "4亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 400000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4 亿美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8380bb7b0195ed3e",
+            "source_url": "https://www.ithome.com/0/959/592.htm",
+            "source_title": "深陷版权诉讼仍受资本热捧，AI 音乐生成公司 Suno 再融资 4 亿美元",
+            "source_content_hash": "71ccb4efdd74fe107258aa56eb8b66ea15188fdc7ea5782755dfe0a1d37d42ad",
+            "quote": "现有投资方 Matrix、Lightspeed、Menlo Ventures 以及施罗德资本也参与了本轮投资",
+            "quote_hash": "c78820ac7ddca4cccce27c5fb11be0eed08d6424f794d8d3c1ecac059b716510"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-110c2df0c8f13e7d",
         "funding_insight_id": "FI-3b3efb8e20671184",
         "event_ids": [
           "EV-acf1bcb321414706"
@@ -179,6 +227,38 @@
             "quote_hash": "2318dec0d7eeadb8934a8be2df97822282e3d7f6b7a4ebe551d11c0014d295a6"
           }
         ]
+      },
+      {
+        "activity_id": "IA-0a18f88169747e9a",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+            "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -189,6 +269,14 @@
         "source_content_hash": "af7a29745db5560a",
         "quote": "Matrix Dealroom has a profile for this one. Try Dealroom → , Y Combinator , Liquid 2 Ventures , Vermilion Cliffs Ventures Dealroom has a profile for this one. Try Dealroom → , Irregular Expressions Dealroom has a profile for this one. Try Dealroom → , Cervin Ventures Dealroom has a profile for this one. Try Dealroom → , Comma Capital Dealroom has a profile for this one. Try Dealroom → , Position Ventures Dealroom has a profile for this one. Try Dealroom → , and Eight Capital Dealroom has a profile for this one. Try Dealroom → took part.",
         "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
+      },
+      {
+        "source_id": "FISRC-8380bb7b0195ed3e",
+        "source_url": "https://www.ithome.com/0/959/592.htm",
+        "source_title": "深陷版权诉讼仍受资本热捧，AI 音乐生成公司 Suno 再融资 4 亿美元",
+        "source_content_hash": "71ccb4efdd74fe107258aa56eb8b66ea15188fdc7ea5782755dfe0a1d37d42ad",
+        "quote": "现有投资方 Matrix、Lightspeed、Menlo Ventures 以及施罗德资本也参与了本轮投资",
+        "quote_hash": "c78820ac7ddca4cccce27c5fb11be0eed08d6424f794d8d3c1ecac059b716510"
       },
       {
         "source_id": "FISRC-20776ee2d93a4e99",
@@ -205,6 +293,14 @@
         "source_content_hash": "cbb996eb7f2c68af",
         "quote": "Series A funding led by Matrix Partners",
         "quote_hash": "2318dec0d7eeadb8934a8be2df97822282e3d7f6b7a4ebe551d11c0014d295a6"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+        "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
       }
     ],
     "public_profile": {
@@ -221,12 +317,12 @@
           "source_id": "FISRC-efe4db4aff32c4ea"
         },
         {
-          "description": "融资来源记录：Parabola · B轮 · 2023-06-28 · 本轮参投；种子轮领投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-20776ee2d93a4e99"
+          "description": "融资来源记录：Suno · D轮 · 2026-06-03 · 本轮参投 · 4亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8380bb7b0195ed3e"
         },
         {
           "description": "融资来源记录：Parabola · B轮 · 2023-06-28 · 本轮参投；种子轮领投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-a935a92343f71467"
+          "source_id": "FISRC-20776ee2d93a4e99"
         }
       ],
       "contacts": [],
@@ -240,23 +336,35 @@
           "quote_hash": "60fc32eb93501fcfef0515f038fb96c35932dd7c57afe62466545b100412d8fc"
         },
         {
+          "source_id": "FISRC-8380bb7b0195ed3e",
+          "source_url": "https://www.ithome.com/0/959/592.htm",
+          "source_title": "深陷版权诉讼仍受资本热捧，AI 音乐生成公司 Suno 再融资 4 亿美元",
+          "source_content_hash": "71ccb4efdd74fe107258aa56eb8b66ea15188fdc7ea5782755dfe0a1d37d42ad",
+          "quote": "现有投资方 Matrix、Lightspeed、Menlo Ventures 以及施罗德资本也参与了本轮投资",
+          "quote_hash": "c78820ac7ddca4cccce27c5fb11be0eed08d6424f794d8d3c1ecac059b716510"
+        },
+        {
           "source_id": "FISRC-20776ee2d93a4e99",
           "source_url": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup/",
           "source_title": "工作流自动化初创公司 Parabola 获 2400 万美元融资",
           "source_content_hash": "3674f7931a74432f",
           "quote": "alongside Matrix",
           "quote_hash": "72a780fb34a1fb45e16c2c672c089ca3dcf227933cae79b6051f281545d1789d"
-        },
-        {
-          "source_id": "FISRC-a935a92343f71467",
-          "source_url": "https://techstartups.com/2023/06/28/workflow-automation-startup-parabola-raises-24m-in-funding-to-help-everyone-automate-manual-work-without-coding/",
-          "source_title": "Workflow automation startup Parabola raises $24M in funding to help automate manual work without coding - Tech Startups",
-          "source_content_hash": "cbb996eb7f2c68af",
-          "quote": "Series A funding led by Matrix Partners",
-          "quote_hash": "2318dec0d7eeadb8934a8be2df97822282e3d7f6b7a4ebe551d11c0014d295a6"
         }
       ],
       "last_verified_at": "2026-09-25"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[3].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -157,7 +157,7 @@ export function fundingCardsByTrigger(cards) {
   return byEvent;
 }
 
-export function taxonomyConsistencyProblems(rootDir = root) {
+export function taxonomyConsistencyProblems(rootDir = root, { includeArchivedApplications = false } = {}) {
   const failures = [];
   const taxonomy = readJson(path.join(rootDir, "agent-workflow/product/tag-taxonomy-v4.json"), {});
   const validValues = new Map([
@@ -308,6 +308,9 @@ export function taxonomyConsistencyProblems(rootDir = root) {
     if (!fundingCardHasClassification(card, row)) failures.push(`${row.reviewed_classification_id}: funding application classification missing`);
   }
 
+  // Retired trend/opportunity snapshots are manual audit artifacts. Their frozen
+  // classifications must not block accepted financing fact corrections.
+  if (!includeArchivedApplications) return failures;
   const opportunity = readJson(path.join(rootDir, "01-SiteV2/site/data/opportunity-evidence-v2.json"), {});
   if (opportunity.meta?.taxonomyVersion !== "TAG-V4.1") failures.push("opportunity application taxonomy version drift");
   for (const record of opportunity.evidence || []) {
@@ -336,7 +339,7 @@ export function taxonomyConsistencyProblems(rootDir = root) {
 }
 
 if (isMainModule(import.meta.url)) {
-  const failures = taxonomyConsistencyProblems();
+  const failures = taxonomyConsistencyProblems(root, { includeArchivedApplications: process.argv.includes("--include-archived-applications=true") });
   if (failures.length) {
     console.error(JSON.stringify({ ok: false, count: failures.length, failures: failures.slice(0, 100) }, null, 2));
     process.exit(1);

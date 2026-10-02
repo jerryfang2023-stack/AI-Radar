@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,18 +54,18 @@
   },
   "institution": {
     "id": "INV-67c7d458ae39ba",
-    "name": "Iconiq",
+    "name": "ICONIQ",
     "aliases": [
-      "ICONIQ"
+      "Iconiq"
     ],
     "canonical_entity_id": null,
     "investor_kind": "unverified_investor",
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
+    "current_round_count": 8,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,21 +74,28 @@
     "first_disclosed_at": "2025-09-02",
     "latest_disclosed_at": "2026-09-23",
     "role_counts": {
-      "co_lead": 2,
+      "co_lead": 3,
       "lead": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_a",
+      "series_d",
       "series_e",
       "series_f",
-      "series_g"
+      "series_g",
+      "series_h"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-e853b4e183ed0870",
+        "canonical_entity_id": "",
+        "name": "ElevenLabs"
       },
       {
         "entity_id": "EN-5ee1e4de588a016a",
@@ -108,7 +115,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-b1bfd25b2bac892a",
+        "activity_id": "IA-f96074d8056276b3",
         "funding_insight_id": "FI-5bf569d857da4dcb",
         "event_ids": [
           "EV-be364dc6883ec94b"
@@ -148,7 +155,7 @@
         ]
       },
       {
-        "activity_id": "IA-47fda0d590f5a669",
+        "activity_id": "IA-b240bdb76a2b1f68",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
         "event_ids": [
           "EV-f5dd6dec49ad83aa"
@@ -188,7 +195,7 @@
         ]
       },
       {
-        "activity_id": "IA-b263420b0363861d",
+        "activity_id": "IA-9b6d2bdb77d4f869",
         "funding_insight_id": "FI-cb627f50984e7151",
         "event_ids": [
           "EV-136b2edc9b9f3be8",
@@ -229,7 +236,7 @@
         ]
       },
       {
-        "activity_id": "IA-0077090f737204bb",
+        "activity_id": "IA-df3ec58a8fc88092",
         "funding_insight_id": "FI-eb27063b86f12aff",
         "event_ids": [
           "EV-463cb26b5e03c7f7"
@@ -277,7 +284,47 @@
         ]
       },
       {
-        "activity_id": "IA-d356b1690ac83352",
+        "activity_id": "IA-420a04b1c61e1d2a",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
+            "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e475717be16345ba",
         "funding_insight_id": "FI-352a7cfb23508f3e",
         "event_ids": [
           "EV-31df816db86db282"
@@ -317,7 +364,47 @@
         ]
       },
       {
-        "activity_id": "IA-5f32e28ca174603d",
+        "activity_id": "IA-948776d3fd4b9431",
+        "funding_insight_id": "FI-c5686c09063973a5",
+        "event_ids": [
+          "EV-199de9f816cc225c"
+        ],
+        "company_entity_id": "EN-e853b4e183ed0870",
+        "company_canonical_entity_id": "",
+        "company_name": "ElevenLabs",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-02-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bbfa0b0946953ff",
+            "source_url": "https://elevenlabs.io/blog/series-d",
+            "source_title": "ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资",
+            "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
+            "quote": "Andreessen Horowitz quadrupled down while ICONIQ tripled down, both with significant super pro-rata participation.",
+            "quote_hash": "dc002daf050b42ba6422d445f29a7b6528bdf5b58ce8d0f930a837049404ec6b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a02abf0b77de6060",
         "funding_insight_id": "FI-0312b291d6672487",
         "event_ids": [
           "EV-201b25d4f3cf696a"
@@ -399,12 +486,28 @@
         "quote_hash": "afbb1e05a4c50f5ca5fccb52cdf2d9a9c74ffd74b2445d88e54af6e9a3587138"
       },
       {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "The round was co-led by Capital Group, Coatue, D1 Capital Partners, GIC, ICONIQ, and XN.",
+        "quote_hash": "1b22b552c9476b33e7d3fec3fb8ee93a12aa097bc9379c4f61a9e2e05f08b075"
+      },
+      {
         "source_id": "FISRC-b58bb99dfec2e318",
         "source_url": "https://www.anthropic.com/news/anthropic-raises-30-billion-series-g-funding-380-billion-post-money-valuation",
         "source_title": "Anthropic raises $30 billion in Series G funding at $380 billion post-money valuation \\ Anthropic",
         "source_content_hash": "c231466686007dd5",
         "quote": "co-led by D. E. Shaw Ventures, Dragoneer, Founders Fund, ICONIQ, and MGX",
         "quote_hash": "6019b747ab0685aaf7a1a94e528c3bf9e16d73fee9f4b55ee910413ab94d63a7"
+      },
+      {
+        "source_id": "FISRC-7bbfa0b0946953ff",
+        "source_url": "https://elevenlabs.io/blog/series-d",
+        "source_title": "ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资",
+        "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
+        "quote": "Andreessen Horowitz quadrupled down while ICONIQ tripled down, both with significant super pro-rata participation.",
+        "quote_hash": "dc002daf050b42ba6422d445f29a7b6528bdf5b58ce8d0f930a837049404ec6b"
       },
       {
         "source_id": "FISRC-c5289e6345684ca4",

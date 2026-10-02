@@ -25,7 +25,7 @@ test("registers the confirmed native community hub as the third tab", () => {
 test("keeps the community home visible and gates detail actions", () => {
   for (const label of ["造浪者计划", "Token 权益", "积分榜", "角色图谱", "分享实录"]) assert.match(home, new RegExp(label, "u"));
   assert.match(home, /community-focus-card/u);
-  assert.match(homeLogic, /requireCommunityMember/u);
+  assert.doesNotMatch(homeLogic, /requireCommunityMember|registrationOpen/u);
   assert.match(access, /membership\?\.active/u);
   assert.doesNotMatch(access, /申请加入|claim_pending|community-apply/u);
   assert.doesNotMatch(access, /switchTab/u);
@@ -71,7 +71,7 @@ test("features three distinct real archives without homepage schedules or person
     memberAllowed = true;
     page.openArchive({ currentTarget: { dataset: { id: item.id } } });
   }
-  assert.equal(navigations.length, 3);
+  assert.equal(navigations.length, 6);
   page.setData = (value) => Object.assign(page.data, value);
   page.onShow();
   assert.equal(tabIndex, 2);

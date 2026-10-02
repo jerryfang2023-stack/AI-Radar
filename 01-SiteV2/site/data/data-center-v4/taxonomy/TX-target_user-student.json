@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -65,8 +65,10 @@
       "EV-41c54c428d84cc1e",
       "EV-8eb0acb180b7ad9d",
       "EV-e2a94eb223c11a66",
+      "EV-2975bb5b57ce53d9",
       "EV-435d7e7878b0c326",
       "EV-09b8a8e4ed03dd7f",
+      "EV-390a082fa13fe0a6",
       "EV-26439e34295a0519",
       "EV-58268b12aa406620"
     ],
@@ -77,13 +79,15 @@
       "EN-8dc72a4672894e0f",
       "EN-53b69ef92c836777",
       "EN-bd86ebd32193b381",
+      "EN-7dfadeb219464a45",
       "EN-a6e5382c05dd0d16",
-      "EN-04bd675006a7a1ed"
+      "EN-04bd675006a7a1ed",
+      "EN-ff8999faeaba6861"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-01-12",
-    "lastSeen": "2026-09-26"
+    "lastSeen": "2026-10-02"
   },
   "events": [
     {
@@ -3088,6 +3092,92 @@
       "publisher": "36氪"
     },
     {
+      "id": "EV-2975bb5b57ce53d9",
+      "dataDate": "2026-10-02",
+      "date": "2026-04-16",
+      "updatedDate": "2026-04-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+      "originalTitle": "Zum Raises $100 Million From TPG to Accelerate Zum’s Connected Mobility Experience (CMX) and for Continued Growth and Expansion",
+      "subject": "Zūm",
+      "action": "funding",
+      "object": "$100 million strategic investment",
+      "metrics": [
+        "$100 million",
+        "$430 million",
+        "$1.7 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [
+              "EN-7dfadeb219464a45"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-7dfadeb219464a45"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-7dfadeb219464a45"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-58b2192a9a01fa7b",
+        "EN-7dfadeb219464a45"
+      ],
+      "entityNames": [
+        "REDWOOD CITY",
+        "Zūm"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-435d7e7878b0c326",
       "dataDate": "2026-08-03",
       "date": "2026-04-02",
@@ -3871,6 +3961,91 @@
       "publisher": "36氪"
     },
     {
+      "id": "EV-390a082fa13fe0a6",
+      "dataDate": "2026-10-02",
+      "date": "2026-01-21",
+      "updatedDate": "2026-01-21",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Preply 融资 1.5 亿美元，通过人工主导、AI 增强的学习塑造教育未来",
+      "originalTitle": "Preply Raises $150 Million to Shape the Future of Education through Human-Led, AI-Enhanced Learning",
+      "subject": "Preply",
+      "action": "funding",
+      "object": "$150 million Series D",
+      "metrics": [
+        "$1.2 Billion",
+        "$150 million",
+        "$6 billion",
+        "$1.2 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "student",
+            "name": "学生",
+            "entityIds": [
+              "EN-ff8999faeaba6861"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-ff8999faeaba6861"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "student",
+          "name": "学生",
+          "entityIds": [
+            "EN-ff8999faeaba6861"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-ff8999faeaba6861"
+      ],
+      "entityNames": [
+        "Preply"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/preply-raises-150-million-to-shape-the-future-of-education-through-human-led-ai-enhanced-learning-302665890.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
       "id": "EV-26439e34295a0519",
       "dataDate": "2026-09-12",
       "date": "2026-01-12",
@@ -4454,9 +4629,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-end_user_application",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-product_form-end_user_application",
         "TX-industry-education",
         "TX-target_user-student",
         "TX-use_case-education_learning"
@@ -4480,16 +4655,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-consumer",
-        "TX-use_case-physical_automation",
         "TX-product_form-model",
+        "TX-use_case-physical_automation",
+        "TX-target_user-consumer",
         "TX-industry-healthcare_life_sciences",
+        "TX-technology-multimodal",
         "TX-industry-education",
         "TX-target_user-student",
         "TX-use_case-education_learning",
         "TX-ai_market_category-physical_ai",
-        "TX-product_form-robotic_system",
-        "TX-technology-multimodal"
+        "TX-product_form-robotic_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-09-22",
@@ -4530,41 +4705,41 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-product_form-model",
+        "TX-use_case-security_operations",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
+        "TX-industry-legal_services",
+        "TX-industry-construction_real_estate",
+        "TX-industry-agriculture",
+        "TX-industry-healthcare_life_sciences",
         "TX-industry-aerospace_defense",
         "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
+        "TX-industry-retail_ecommerce",
         "TX-industry-energy_utilities",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_application-models",
         "TX-ai_market_subcategory-development_deployment",
-        "TX-product_form-model",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
         "TX-use_case-research_discovery",
         "TX-industry-education",
         "TX-target_user-student",
         "TX-use_case-education_learning",
-        "TX-industry-financial_services",
         "TX-industry-telecommunications",
         "TX-industry-government_public_sector",
         "TX-target_user-educator",
         "TX-use_case-software_development",
         "TX-use_case-knowledge_search",
         "TX-industry-logistics_supply_chain",
-        "TX-industry-media_entertainment",
-        "TX-use_case-content_creation",
         "TX-industry-professional_services",
-        "TX-use_case-security_operations",
-        "TX-industry-agriculture",
-        "TX-industry-construction_real_estate",
         "TX-industry-food_hospitality",
-        "TX-industry-legal_services",
         "TX-technology-long_context"
       ],
       "relatedEntityIds": [
@@ -4595,10 +4770,10 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-physical_automation",
         "TX-industry-manufacturing",
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-use_case-physical_automation",
         "TX-industry-retail_ecommerce",
         "TX-target_user-researcher",
         "TX-use_case-data_analysis",
@@ -4631,8 +4806,8 @@
       "classificationRefs": [
         "TX-target_user-business_user",
         "TX-target_user-developer",
-        "TX-ai_market_category-enterprise_applications",
         "TX-product_form-end_user_application",
+        "TX-ai_market_category-enterprise_applications",
         "TX-target_user-student",
         "TX-target_user-educator",
         "TX-use_case-software_development",
@@ -4657,19 +4832,40 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-target_user-consumer",
+        "TX-use_case-content_creation",
+        "TX-industry-retail_ecommerce",
         "TX-ai_market_category-enterprise_applications",
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
-        "TX-target_user-consumer",
-        "TX-industry-retail_ecommerce",
         "TX-industry-education",
         "TX-target_user-student",
         "TX-use_case-education_learning",
-        "TX-product_form-ai_device",
-        "TX-use_case-content_creation"
+        "TX-product_form-ai_device"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-04-20",
       "lastSeen": "2026-09-26"
+    },
+    {
+      "id": "EN-7dfadeb219464a45",
+      "name": "Zūm",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-2975bb5b57ce53d9"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-student"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-04-16",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-a6e5382c05dd0d16",
@@ -4694,16 +4890,16 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-automotive_transportation",
-        "TX-industry-manufacturing",
-        "TX-target_user-business_user",
         "TX-use_case-physical_automation",
+        "TX-industry-manufacturing",
+        "TX-industry-automotive_transportation",
+        "TX-target_user-business_user",
+        "TX-technology-embodied_ai",
         "TX-target_user-researcher",
         "TX-industry-education",
         "TX-target_user-student",
         "TX-ai_market_category-physical_ai",
         "TX-product_form-robotic_system",
-        "TX-technology-embodied_ai",
         "TX-target_user-educator",
         "TX-industry-logistics_supply_chain"
       ],
@@ -4726,18 +4922,39 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-target_user-consumer",
         "TX-use_case-physical_automation",
+        "TX-industry-financial_services",
+        "TX-target_user-consumer",
         "TX-industry-education",
         "TX-target_user-student",
         "TX-use_case-education_learning",
         "TX-ai_market_category-physical_ai",
-        "TX-product_form-robotic_system",
-        "TX-industry-financial_services"
+        "TX-product_form-robotic_system"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-30",
       "lastSeen": "2026-09-26"
+    },
+    {
+      "id": "EN-ff8999faeaba6861",
+      "name": "Preply",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-390a082fa13fe0a6"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-target_user-student"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-21",
+      "lastSeen": "2026-10-02"
     }
   ],
   "fde": [],

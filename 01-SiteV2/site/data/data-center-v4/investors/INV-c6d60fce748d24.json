@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,25 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-30",
-    "latest_disclosed_at": "2026-08-19",
+    "first_disclosed_at": "2026-03-10",
+    "latest_disclosed_at": "2026-06-30",
     "role_counts": {
-      "historical_or_ambiguous": 1,
-      "participant": 2
+      "historical_or_ambiguous": 2,
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
+      "series_a",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1acda6c36aafa568",
+        "canonical_entity_id": "",
+        "name": "Eridu"
+      },
       {
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
@@ -88,48 +94,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-fe69aa34c489edf6",
-        "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
-        "event_ids": [
-          "EV-19dd4c3a5dd5a94b",
-          "EV-4af14568b1bdeb35"
-        ],
-        "company_entity_id": "FICO-etched",
-        "company_canonical_entity_id": "",
-        "company_name": "Etched",
-        "round": "D轮",
-        "round_code": "series_d",
-        "round_original": "Series D",
-        "amount_original": "$700m",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 700000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "7 亿美元"
-        },
-        "announced_at": "2026-08-19",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "战略投资",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-8691a2e5c39e8b10",
-            "source_url": "https://etched.com/",
-            "source_title": "Etched",
-            "source_content_hash": "44b6e972f66942d7",
-            "quote": "We've raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
-            "quote_hash": "bceda3c1a4c2afeeefd142cfd1436684fbf32619db78aca9e6f88566b450c624"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-11e4d7c4cc00d590",
+        "activity_id": "IA-c433eab19ac31498",
         "funding_insight_id": "FI-d24e79349c1e9713",
         "event_ids": [
           "EV-040fc355bc12a750",
@@ -170,7 +135,7 @@
         ]
       },
       {
-        "activity_id": "IA-79dc6dd94adb5a84",
+        "activity_id": "IA-af6abadb8f55ae50",
         "funding_insight_id": "FI-5153381171755c70",
         "event_ids": [
           "EV-ad75efcb12a07793"
@@ -208,17 +173,114 @@
             "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8f75e9a4f752f914",
+        "funding_insight_id": "FI-a160ff15fc811200",
+        "event_ids": [
+          "EV-a447ffe54b998b9d"
+        ],
+        "company_entity_id": "EN-1acda6c36aafa568",
+        "company_canonical_entity_id": "",
+        "company_name": "Eridu",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d4642fdc4a2457c",
+            "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+            "source_title": "Eridu - 更快的 AI",
+            "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+            "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+            "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-501a5b0a085e4980",
+        "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
+        "event_ids": [
+          "EV-19dd4c3a5dd5a94b",
+          "EV-4af14568b1bdeb35"
+        ],
+        "company_entity_id": "FICO-etched",
+        "company_canonical_entity_id": "",
+        "company_name": "Etched",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "战略投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8691a2e5c39e8b10",
+            "source_url": "https://etched.com/",
+            "source_title": "Etched",
+            "source_content_hash": "44b6e972f66942d7",
+            "quote": "We've raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
+            "quote_hash": "bceda3c1a4c2afeeefd142cfd1436684fbf32619db78aca9e6f88566b450c624"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d7511d5c7f26aa61",
+        "funding_insight_id": "FI-16ec583e6204fbd2",
+        "event_ids": [
+          "EV-2c217907879cd2a8"
+        ],
+        "company_entity_id": "EN-897502f225e38bf5",
+        "company_canonical_entity_id": "",
+        "company_name": "Positron AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "参与整体融资安排，所属分期未披露",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3947ce709f26c22a",
+            "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+            "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+            "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+            "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
+            "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-8691a2e5c39e8b10",
-        "source_url": "https://etched.com/",
-        "source_title": "Etched",
-        "source_content_hash": "44b6e972f66942d7",
-        "quote": "We've raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
-        "quote_hash": "bceda3c1a4c2afeeefd142cfd1436684fbf32619db78aca9e6f88566b450c624"
-      },
       {
         "source_id": "FISRC-ec090e2bf0f8f6e9",
         "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
@@ -234,6 +296,30 @@
         "source_content_hash": "ae0a2fdbd54bc340",
         "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
         "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
+      },
+      {
+        "source_id": "FISRC-6d4642fdc4a2457c",
+        "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+        "source_title": "Eridu - 更快的 AI",
+        "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+        "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+        "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
+      },
+      {
+        "source_id": "FISRC-8691a2e5c39e8b10",
+        "source_url": "https://etched.com/",
+        "source_title": "Etched",
+        "source_content_hash": "44b6e972f66942d7",
+        "quote": "We've raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
+        "quote_hash": "bceda3c1a4c2afeeefd142cfd1436684fbf32619db78aca9e6f88566b450c624"
+      },
+      {
+        "source_id": "FISRC-3947ce709f26c22a",
+        "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+        "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+        "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+        "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
+        "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
       }
     ],
     "public_profile": {
@@ -254,8 +340,8 @@
           "source_id": "FISRC-b750a2ea9e7c7b76"
         },
         {
-          "description": "融资来源记录：Etched · 历史轮次未披露 · 战略投资。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-8691a2e5c39e8b10"
+          "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
       "contacts": [],
@@ -277,12 +363,12 @@
           "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
         },
         {
-          "source_id": "FISRC-8691a2e5c39e8b10",
-          "source_url": "https://etched.com/",
-          "source_title": "Etched",
-          "source_content_hash": "44b6e972f66942d7",
-          "quote": "We've raised $800M across four unannounced financings, including a strategic investment from VentureTech Alliance.",
-          "quote_hash": "bceda3c1a4c2afeeefd142cfd1436684fbf32619db78aca9e6f88566b450c624"
+          "source_id": "FISRC-6d4642fdc4a2457c",
+          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+          "source_title": "Eridu - 更快的 AI",
+          "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+          "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+          "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
         }
       ],
       "last_verified_at": "2026-09-25"

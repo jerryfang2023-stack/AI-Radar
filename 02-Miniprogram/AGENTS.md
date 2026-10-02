@@ -1,11 +1,27 @@
 # Guanlan Funding Mini Program
 
+Current source 1.2.3: entity detail permission verification has a separate pending state; never render a registration/renewal gate before the server result or treat network failures as denial. Late public catalog responses cannot replace a verified full profile. Chinese company titles use the reviewed display-name mapping in data-input/company-display-names.json; retain canonical names and keys for requests, links, follows and search. Add source evidence when extending the mapping; do not strip city or legal suffixes heuristically.
+
+Current source 1.2.1: directory markets are China/global only; list introductions clamp at four lines and public product-use previews stay bounded. Remove native canvases while financing sheets are open and redraw after dismissal. Profile actions share icon geometry and button styling. See docs/REVIEW-1.2.1.md.
+
+Current source 1.2.2: investor directory summaries use sourced investmentDirection, never general company descriptions or inferred portfolio mandates. Community protected entries use an inline gate and only explicit registration clicks open the shared registration sheet. Preserve unified reading entitlement and linked-member write restrictions; group application approval is not a browsing condition.
+
+## Release numbering
+
+User policy: release digits roll over at 9. Use 1.1.9 -> 1.2.0, 1.2.9 -> 1.3.0, and 1.9.9 -> 2.0.0; never upload a patch or minor digit above 9. Keep package.json, analytics APP_VERSION and CLI upload version identical. Previous release 1.2.0 supersedes the interim 1.1.10 upload with the same accepted features. See docs/REVIEW-1.2.0.md.
+
+Current source: 1.1.10 displays editorial capital explanations directly after 观察：, without the 观澜分析 prefix. Institution quotations retain their institution attribution. Keep source validation and the current-market latest-three carousel from 1.1.9. See `docs/REVIEW-1.1.10.md`.
+
+Current source: 1.1.9 implements the approved full-taxonomy ecology heatmap/trends with the shared capital-map model. All 7 parents and 45 subsectors remain available; use snapshot dates and complete-month comparisons. See `docs/REVIEW-1.1.9.md`.
+
 Current source: 1.1.8 uses AI-FUNDING-TAGS-1.0 for capital-flow signals, rankings, heatmaps and sector drill-downs. The bundled index and live cache require matching taxonomy versions and valid sector/subsector pairs. See `docs/REVIEW-1.1.8.md`.
-Current source: 1.1.8 reads the reviewed institution/person profile catalog and protected research details. Directory has an explicit all-market selection; global still excludes China. Research sections retain source links and existing detail entitlements. See `docs/REVIEW-1.1.8.md`.
+Current source: 1.1.8 reads the reviewed institution/person profile catalog and protected research details. Directory market controls offer only China/global in one row; global excludes China and unknown markets. Research sections retain source links and existing detail entitlements. See `docs/REVIEW-1.1.8.md`.
 
 Current source: 1.1.7 uses unified active reading entitlement for community content, with no separate joined-status or application gate. Real community identity remains required for personal profile writes and reward attribution. Legacy application links redirect to community home. Financing heading is 融资精选. See `docs/REVIEW-1.1.7.md`.
 
-Current source: 1.1.6 colors the featured heading gold and reads reviewed, attributed investor observations from `/data/funding-featured.json` on every home entry. No verified observation means no observation row; never infer one from a sector. See `docs/REVIEW-1.1.6.md`.
+Current data contract (2026-10-02): 融资精选 reads `/data/funding-featured.json` on every home entry. The portal regenerates capital explanations with each financing publication and verifies the live JSON. Attribute an institution only when the accepted financing research includes its quote and matching source; otherwise excerpt existing accepted capital analysis. Metadata distinguishes editorial analysis, while the user-facing observation omits the 观澜分析 prefix. Never infer an explanation from sector tags or invent missing analysis.
+
+Previous source: 1.1.6 introduced the gold featured heading and attributed observations. See `docs/REVIEW-1.1.6.md`.
 
 Current source: 1.1.5 replaces only the financing overview with compact reviewed-data featured cards. Keep market partition, dated recent fallback and existing detail access controls. See `docs/REVIEW-1.1.5.md`.
 

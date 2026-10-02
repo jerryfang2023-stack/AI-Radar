@@ -105,6 +105,7 @@ export function sourceTitleFromCapturedPayload(payload = {}) {
 
 const moneyUnitFactors = new Map([
   ["trillion", 1e12],
+  ["t", 1e12],
   ["billion", 1e9],
   ["bn", 1e9],
   ["b", 1e9],
@@ -134,7 +135,7 @@ function moneyCurrency(value = "") {
 
 export function extractMoneyAmounts(value = "") {
   const text = String(value || "");
-  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)(?:\s*[-‑–—]?\s*(trillion|billion|million|crores?|bn|mn|cr|m|b|k|万亿|亿|万|千))?(?![A-Za-z])(?:\s*[-‑–—]?\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|(?:印度)?卢比|人民币|日元|元))?/giu;
+  const pattern = /(?:(?:US\$|\$|€|£|¥|₹|USD|EUR|GBP|RMB|CNY|JPY|INR)\s*)?(\d[\d,]*(?:\.\d+)?)(?:\s*[-‑–—]?\s*(trillion|billion|million|crores?|bn|mn|cr|m|b|t|k|万亿|亿|万|千))?(?![A-Za-z])(?:\s*[-‑–—]?\s*(?:US\s*)?(?:dollars?|euros?|pounds?|rupees?|yuan|yen|美元|美金|欧元|英镑|(?:印度)?卢比|人民币|日元|元))?/giu;
   const results = [];
   for (const match of text.matchAll(pattern)) {
     const raw = match[0];
@@ -220,9 +221,11 @@ function normalizeComparableScales(value) {
     .replace(/增长(?:了)?(?:超过|逾|超)?\s*([一二两三四五六七八九十]|\d+(?:\.\d+)?)\s*倍(?:多)?/gu,
       (_, number) => ` ${Number(chineseNumbers[number] ?? number) + 1} `)
     .replace(/翻(?:一)?倍|翻一番/gu, " 2 ")
+    .replace(/\b(?:doubles?|doubled)\s+down\b/giu, " recommits ")
     .replace(/\b(?:doubles?|doubled)\b/giu, " 2 ")
     .replace(/\b(?:triples?|tripled)\b/giu, " 3 ")
     .replace(/\b(?:quadruples?|quadrupled)\b/giu, " 4 ")
+    .replace(/\b(one|two|three|four|five|six|seven|eight|nine|ten)[- ]?fold\b/giu, (_, number) => ` ${englishNumbers[number.toLowerCase()]} `)
     .replace(/\b(one|two|three|four|five|six|seven|eight|nine|ten)\s+times?\b/giu, (_, number) => ` ${englishNumbers[number.toLowerCase()]} `)
     .replace(/([一二两三四五六七八九十])\s*倍/gu, (_, number) => ` ${chineseNumbers[number]} `)
     .replace(/(\d[\d,]*(?:\.\d+)?)\s*(trillion|billion|million)\b/giu, (_, number, unit) => {

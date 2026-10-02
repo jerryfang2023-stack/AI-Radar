@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,73 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 0,
-    "china_market_company_count": 0,
-    "first_disclosed_at": "2026-03-05",
-    "latest_disclosed_at": "2026-03-05",
+    "china_market_activity_count": 1,
+    "china_market_company_count": 1,
+    "first_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-b733f8c3adeccf85",
+        "canonical_entity_id": "",
+        "name": "佳量脑科学"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-bf83f49dca52a8ed",
+        "activity_id": "IA-99bbcbf76becb9cd",
+        "funding_insight_id": "FI-e036bacc0917616c",
+        "event_ids": [
+          "EV-04edcb21249dffcf"
+        ],
+        "company_entity_id": "EN-b733f8c3adeccf85",
+        "company_canonical_entity_id": "",
+        "company_name": "佳量脑科学",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "C轮及D轮（合并披露）",
+        "amount_original": "数亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": null,
+          "min_value": 200000000,
+          "max_value": 900000000,
+          "unit": "base",
+          "status": "range",
+          "display_zh": "2 亿元–9 亿元"
+        },
+        "announced_at": "2026-09-08",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0fc87012f374b083",
+            "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
+            "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | 启明创投",
+            "source_content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
+            "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
+            "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f1b4a7115ad372d3",
         "funding_insight_id": "FI-edc4e4cec2cd84bd",
         "event_ids": [
           "EV-77a608db67e742a4",
@@ -87,23 +136,15 @@
         "company_entity_id": "EN-e7492db096492304",
         "company_canonical_entity_id": "EN-e7492db096492304",
         "company_name": "极佳视界",
-        "round": "Pre-B轮",
-        "round_code": "pre_series_b",
-        "round_original": "Pre-B轮",
-        "amount_original": "10亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 1000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "10 亿元"
-        },
-        "announced_at": "2026-03-05",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "A2轮跟投方",
         "role_code": "historical_or_ambiguous",
@@ -121,6 +162,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0fc87012f374b083",
+        "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
+        "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | 启明创投",
+        "source_content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
+        "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
+        "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
+      },
+      {
         "source_id": "FISRC-fdfe58e2e68c7e9e",
         "source_url": "https://news.pedaily.cn/202603/561389.shtml",
         "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
@@ -134,10 +183,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "浦耀信晔 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "浦耀信晔 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：佳量脑科学 · 多轮融资 · 2026-09-08 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0fc87012f374b083"
+        },
         {
           "description": "融资来源记录：极佳视界 · 历史轮次未披露 · A2轮跟投方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
@@ -145,6 +198,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-0fc87012f374b083",
+          "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
+          "source_title": "启明星 | 佳量脑科学连续完成C轮及D轮两轮融资，启明创投领投C轮 | 启明创投",
+          "source_content_hash": "421f431cbb5e84018cc04f18b116bd58447a3aa7183a44bd69dd78d338481f66",
+          "quote": "C轮融资由启明创投领投，老股东余杭国投、辰德资本继续投资，泰珑投资、浦耀信晔、建源西证、临港蓝湾基金、渝富高质基金、禾合创投跟投。",
+          "quote_hash": "cc57f536c07b39a6ca04c83288ac32ea7348ed076980ecfdeddebef44ada2e0b"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",

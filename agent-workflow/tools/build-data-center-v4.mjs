@@ -134,6 +134,9 @@ export function fundingClaimGroupingProblem(claims) {
   if (subjects.size > 1) return "multiple_funding_recipients_require_separate_sources";
   if (claims.length && claims.every((claim) => {
     const quote = claim.source_quote || "";
+    if (claim.qualifiers?.funding_amount_scope === "combined_rounds"
+        && /合并披露/u.test(claim.object || "")
+        && /(?:连续完成|完成).{0,45}(?:三轮|3轮|两轮|2轮|种子轮、天使轮)/u.test(quote)) return false;
     const namedRounds = new Set(quote.match(/(?:pre[- ]?)?[A-F][+＋]?轮|天使轮|种子轮/giu) || []);
     // A disclosed total for one named round (including phased closes) is valid.
     return /累计|总融资|整个.{0,12}轮融资额/u.test(quote) && !/本轮|此次|新一轮/u.test(quote) && namedRounds.size !== 1;
@@ -260,8 +263,8 @@ function eventSourceEligibility(raw, artifact, title, dataDate = "", options = {
   const titleIssue = publicEventSourceTitleIssue(title);
   if (titleIssue) return { accepted: false, reason: titleIssue };
   const reviewedRetainedSource = REVIEWED_RETAINED_SOURCE.test(cleanString(artifact.source_url));
-  const sourceLead = cleanString(raw.clean_text || raw.full_text).slice(0, 1400);
-  if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title)) {
+  const sourceLead = financingDecisionText(cleanString(raw.clean_text || raw.full_text)).slice(0, 1400);
+  if (options.eventType === "funding" && PROPOSED_FINANCING_TITLE.test(title.replace(/\blesson plan(?:s)?\b/giu, "lesson curriculum"))) {
     return { accepted: false, reason: "proposed_financing_not_completed" };
   }
   if (VERSIONED_DEVELOPER_PACKAGE_TITLE.test(title)
@@ -596,6 +599,11 @@ function trimBoilerplate(text) {
   return normalizeEvidenceBody(text);
 }
 
+// Use only article content for financing status; preserve original evidence spans.
+export function financingDecisionText(text = "") {
+  return text.split(/\n\s*(?:海量资讯、精准解读|新浪科技公众号|【本文根据公开消息发布|投稿爆料[：:]|联系我们\s*(?:\n|$))/u)[0];
+}
+
 function sourceArtifact(raw, file, intakeDocument = null) {
   const sourceUrl = cleanString(raw.original_url || raw.canonical_url || raw.source_url || raw.url || raw.link || raw.discovery_record?.origin_url);
   const contentHash = cleanString(raw.content_hash || raw.full_text_hash || hash(raw.clean_text || raw.full_text));
@@ -705,6 +713,7 @@ function findEventRule(title, lead = "") {
 }
 
 function eventStatus(title, lead, eventType = "") {
+  if (eventType === "funding") lead = financingDecisionText(lead);
   const text = `${title}\n${lead}`;
   if (WITHDRAWN.test(title) || (eventType === "funding" && isWithdrawnFundingTitle(title))) return "withdrawn";
   const attributedCompletedFinancing = /据.{0,20}(?:官微|官方|公司|财务顾问).{0,12}消息.{0,100}(?:已完成|完成).{0,40}融资/iu.test(text);
@@ -1079,9 +1088,11 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
   return selected.slice(0, 6);
 }
 
-function sentenceSpans(body) {
+export function sentenceSpans(body) {
   const spans = [];
-  const regex = /[^\n。！？!?]+[。！？!?]?/gu;
+  // HTML soft wrapping can put a currency magnitude on the next line.
+  // Keep it with the amount rather than turning €7.7 million into €7.7.
+  const regex = /[^\n。！？!?]+(?:\n(?=\s*(?:million|billion|trillion|thousand|crores?|lakhs?)\b)[^\n。！？!?]+)*[。！？!?]?/giu;
   for (const match of body.matchAll(regex)) {
     const quote = normalizeSpace(match[0]);
     if (quote.length < 20 || BOILERPLATE_TEXT.test(quote)) continue;
@@ -1095,7 +1106,7 @@ function sentenceSpans(body) {
 }
 
 function metricValues(text) {
-  return [...text.matchAll(/(?:(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
+  return [...text.matchAll(/(?:(?:₹|\bINR\s*|\bRs\.?\s+)\d[\d,]*(?:\.\d+)?\s*(?:crores?|cr\b|lakhs?|lacs?|million|billion|thousand|[MBK]\b)?|(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
     .map((match) => match[0]).slice(0, 12);
 }
 
@@ -1137,7 +1148,8 @@ function buildModelClaim(rawId, proposed, evidence, index, status) {
     predicate: proposed.event_type,
     object: cleanString(proposed.object),
     qualifiers: { event_status: status, sequence: index + 1, model_candidate_id: proposed.model_candidate_id,
-      ...(proposed.amount_disclosure === "not_disclosed" ? { funding_amount_status: "not_disclosed" } : {}) },
+      ...(proposed.amount_disclosure === "not_disclosed" ? { funding_amount_status: "not_disclosed" } : {}),
+      ...(proposed.amount_scope === "combined_rounds" ? { funding_amount_scope: "combined_rounds" } : {}) },
     source_span: { raw_id: rawId, start: evidence.start, end: evidence.end },
     source_quote: evidence.quote,
     extraction_method: "model_source_span",
@@ -1301,7 +1313,7 @@ function facetAssertionsForClaim(claim, matchers) {
 
 export function eventAiRelevanceEvidence({ title = "", claims: eventClaims = [], entityNames = [], eventType = "" } = {}) {
   const claimQuotes = eventClaims.map((claim) => typeof claim === "string" ? claim : claim?.source_quote || "");
-  const strongClaimEvidence = claimQuotes.join("\n").match(/\b(?:agentic AI|generative AI|AI agents?|large language models?|foundation models?|coding models?|machine learning|deep learning)\b/iu);
+  const strongClaimEvidence = claimQuotes.join("\n").match(/\b(?:agentic AI|generative AI|AI agents?|software development agents?|large language models?|foundation models?|coding models?|machine learning|deep learning)\b/iu);
   const evidenceText = [title, ...claimQuotes].filter(Boolean).join("\n");
   const namedHardwareMatch = evidenceText.match(/\bQualcomm\b.{0,120}\bDragonfly\b/iu);
   if (namedHardwareMatch) return { accepted: true, basis: "named_ai_hardware", evidence: namedHardwareMatch[0] };
@@ -1844,13 +1856,47 @@ function forbiddenKeys(value, trail = "", out = []) {
   return out;
 }
 
+export function reviewedFundingDate(review, { subject, amount, publishedAt, sources }) {
+  if (!review) return publishedAt;
+  const source = sources.get(review.source_ref)?.raw;
+  const quote = String(review.quote || "");
+  const body = String(source?.clean_text || source?.full_text || "");
+  const expected = metricValues(amount).map(normalizedFundingMetric);
+  const actual = metricValues(quote).map(normalizedFundingMetric);
+  const dateParts = String(review.date || "").match(/^(\d{4})-(\d{2})-(\d{2})$/u);
+  const explicitAnnouncement = review.date_basis === "explicit_announcement"
+    && dateParts && String(source?.published_at).startsWith(dateParts[1])
+    && [...quote.matchAll(/(?:^|[^\d])(?:(\d{4})年)?(\d{1,2})月(\d{1,2})日/gu)].some(match =>
+      (!match[1] || match[1] === dateParts[1])
+      && Number(match[2]) === Number(dateParts[2]) && Number(match[3]) === Number(dateParts[3]))
+    && /宣布.{0,24}(?:完成|获得).{0,40}融资/u.test(quote);
+  if (review.status !== "accepted" || !review.reviewer || !source
+      || !/^\d{4}-\d{2}-\d{2}$/.test(review.date || "")
+      || (!explicitAnnouncement && String(source.published_at).slice(0, 10) !== review.date)
+      || review.date > String(publishedAt).slice(0, 10)
+      || !quote || !body.includes(quote)
+      || !quote.toLowerCase().includes(String(subject).toLowerCase())
+      || !/(?:融资|raised|raises|funding|financing)/iu.test(quote)
+      || !(expected.some(value => actual.includes(value))
+        || (explicitAnnouncement && !expected.length && String(amount || '').trim()
+          && quote.includes(String(amount).trim())))) throw new Error('invalid_reviewed_funding_date');
+  return review.date;
+}
+
 export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
-  const targetedFundingPolicy = readJson(path.join(outputRoot, date, "targeted-funding-authorization.json"), {});
+  const targetedFundingPolicy = options.targetedFundingPolicy
+    || readJson(path.join(outputRoot, date, "targeted-funding-authorization.json"), {});
   const historicalFundingPolicy = options.historicalFundingPolicy
     || readJson(path.join(outputRoot, date, "historical-funding-authorization.json"), {});
   // Keep already published identities stable while admitting new historical cases.
   const stablePublishedSources = new Set(historicalFundingPolicy.preserve_published_source_refs || []);
   const newHistoricalSources = new Set((historicalFundingPolicy.source_refs || []).filter((id) => !stablePublishedSources.has(id)));
+  // Explicit financing reviews identify the funded company, not its investors.
+  // Preserve this source-level decision so later rebuilds retain round identity.
+  const reviewedFundingSources = new Set([
+    ...newHistoricalSources,
+    ...(targetedFundingPolicy.round_identity_source_refs || []),
+  ]);
   const sourceArtifacts = [];
   const rawDocuments = [];
   const claims = [];
@@ -1912,7 +1958,9 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     const modelClaimCandidate = [
       ...(acceptedAssistByRaw.get(rawId) || []),
       ...(acceptedAssistBySource.get(artifact.source_artifact_id) || []),
-    ].sort((left, right) => Number(String(right.asset_id).startsWith("HISTORY-")) - Number(String(left.asset_id).startsWith("HISTORY-")))
+    ].sort((left, right) => Number(String(right.asset_id).startsWith("HISTORY-")) - Number(String(left.asset_id).startsWith("HISTORY-"))
+      || Number(right.task_type === "qa_repair" && right.review?.decision === "accept" && Boolean(right.review?.reviewer))
+        - Number(left.task_type === "qa_repair" && left.review?.decision === "accept" && Boolean(left.review?.reviewer)))
       .find((candidate) => ["claim_extraction", "qa_repair"].includes(candidate.task_type) && candidate.proposal?.claims?.length);
     const reviewedRepair = modelClaimCandidate?.task_type === "qa_repair"
       && modelClaimCandidate.review?.decision === "accept"
@@ -1926,19 +1974,21 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
       && cleanString(raw.published_at).slice(0, 10) >= targetedFundingPolicy.from
       && cleanString(raw.published_at).slice(0, 10) <= targetedFundingPolicy.to;
     const sourceEligibility = eventSourceEligibility(raw, artifact, title, date, {
-      eventType: newHistoricalSources.has(artifact.source_artifact_id) ? "funding" : (reviewedRepair ? proposedModelClaim?.event_type : candidateDeterministicRule?.eventType) || proposedModelClaim?.event_type || "",
+      eventType: (targetedFundingAllowed || newHistoricalSources.has(artifact.source_artifact_id)) ? "funding" : (reviewedRepair ? proposedModelClaim?.event_type : candidateDeterministicRule?.eventType) || proposedModelClaim?.event_type || "",
       allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
     });
     const authoritativeHistoryClaim = String(modelClaimCandidate?.asset_id || "").startsWith("HISTORY-")
       && historicalFundingAuthorized(raw, artifact, historicalFundingPolicy) && !stablePublishedSources.has(artifact.source_artifact_id);
     const requiresHistoryExtraction = newHistoricalSources.has(artifact.source_artifact_id);
-    const deterministicRule = sourceEligibility.accepted && !reviewedRepair && !authoritativeHistoryClaim && !requiresHistoryExtraction ? candidateDeterministicRule : null;
+    const deterministicRule = sourceEligibility.accepted && !reviewedRepair && !authoritativeHistoryClaim && !requiresHistoryExtraction
+      && (!targetedFundingAllowed || candidateDeterministicRule?.eventType === "funding") ? candidateDeterministicRule : null;
     const proposedModelEligibility = proposedModelClaim
       ? modelAssistedEventEligibility(raw, title, proposedModelClaim.event_type, date, {
           allowHistoricalFunding: options.allowHistoricalFunding === true || targetedFundingAllowed || historicalFundingAuthorized(raw, artifact, historicalFundingPolicy),
         })
       : { accepted: true, reason: "" };
-    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted && (!requiresHistoryExtraction || authoritativeHistoryClaim)
+    const rule = deterministicRule || (sourceEligibility.accepted && proposedModelClaim && proposedModelEligibility.accepted
+      && (!targetedFundingAllowed || proposedModelClaim.event_type === "funding") && (!requiresHistoryExtraction || authoritativeHistoryClaim)
       ? { eventType: proposedModelClaim.event_type, pattern: /$^/u }
       : null);
     const opinionOnly = (OPINION_ONLY.test(title) && !rule) || PROPOSAL_ONLY.test(title);
@@ -2167,7 +2217,11 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
 
       if (eventClaimRows.length) {
         const candidateId = `EC-${hash(`${rawId}|${rule.eventType}`)}`;
-        const eventTime = cleanString(raw.published_at);
+        const eventTime = rule.eventType === "funding"
+          ? reviewedFundingDate(targetedFundingPolicy.event_date_reviews?.[artifact.source_artifact_id], {
+            subject: parsed.subject, amount: parsed.object, publishedAt: cleanString(raw.published_at), sources: uniqueEntries,
+          })
+          : cleanString(raw.published_at);
         const disclosedAt = cleanString(raw.published_at || raw.collected_at);
         doc.event_candidate_ids.push(candidateId);
         const fundingActor = rule.eventType === "funding" ? chinaFundingActorEvidence(parsed.subject, eventClaimRows.map((claim) => claim.source_quote).join("\n")) : { matched: false };
@@ -2217,7 +2271,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     rawDocuments.push(doc);
   }
 
-  const clustered = clusterEvents(eventCandidates, newHistoricalSources);
+  const clustered = clusterEvents(eventCandidates, reviewedFundingSources);
   const entityRows = [...entities.values()];
   const claimsById = new Map(claims.map((claim) => [claim.claim_id, claim]));
   const rawById = new Map(rawDocuments.map((document) => [document.raw_id, document]));
@@ -2361,7 +2415,16 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
 
 export function writeBundle(bundle, date, destination = path.join(outputRoot, date)) {
   fs.mkdirSync(destination, { recursive: true });
-  for (const [name, value] of Object.entries(bundle)) {
+  // Reviewed rows are accepted evidence, not an output of raw extraction.
+  // Rebuilding a day's intake must not erase reviews of unchanged events.
+  const eventIds = new Set((bundle.canonical_events || []).map(event => event.event_id));
+  const previous = readJson(path.join(destination, 'reviewed-event-classifications.json'), []);
+  const reviewed = [...new Map([...previous, ...(bundle.reviewed_event_classifications || [])]
+    .filter(row => eventIds.has(row.event_id))
+    .map(row => [row.reviewed_classification_id, row])).values()];
+  const output = { ...bundle, reviewed_event_classifications: reviewed,
+    manifest: { ...bundle.manifest, counts: { ...bundle.manifest.counts, reviewed_event_classifications: reviewed.length } } };
+  for (const [name, value] of Object.entries(output)) {
     writeJson(path.join(destination, `${name.replace(/_/gu, "-")}.json`), value);
   }
   return destination;

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,25 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "current_round_count": 3,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-28",
-    "latest_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "co_lead": 1,
-      "lead": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
       "pre_seed",
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-72cf2441fa286574",
+        "canonical_entity_id": "",
+        "name": "Halluminate"
+      },
       {
         "entity_id": "EN-aa06a7dba2266341",
         "canonical_entity_id": "",
@@ -93,7 +100,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-c5b0bad50b1fc54f",
+        "activity_id": "IA-4554fa12599b7110",
+        "funding_insight_id": "FI-5df4f9c7d5d359fa",
+        "event_ids": [
+          "EV-7f89984c1b858df2"
+        ],
+        "company_entity_id": "EN-72cf2441fa286574",
+        "company_canonical_entity_id": "",
+        "company_name": "Halluminate",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$30 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-4799c620c14fef7b",
+            "source_url": "https://www.halluminate.ai/blog/series-a",
+            "source_title": "Halluminate - 金融服务强化学习环境",
+            "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
+            "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
+            "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b10a443e9ff40463",
         "funding_insight_id": "FI-e034f1d14161b5f5",
         "event_ids": [
           "EV-8b7cbb66a33a945d"
@@ -133,7 +180,7 @@
         ]
       },
       {
-        "activity_id": "IA-96ef39b94dcc9699",
+        "activity_id": "IA-14e587416955766d",
         "funding_insight_id": "FI-fd5dbffc8602c9a9",
         "event_ids": [
           "EV-9775b60c38285615"
@@ -171,9 +218,49 @@
             "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
           }
         ]
+      },
+      {
+        "activity_id": "IA-3a749aab28a0673c",
+        "funding_insight_id": "FI-5df4f9c7d5d359fa",
+        "event_ids": [
+          "EV-7f89984c1b858df2"
+        ],
+        "company_entity_id": "EN-72cf2441fa286574",
+        "company_canonical_entity_id": "",
+        "company_name": "Halluminate",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资者，本轮继续参与",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cc76e017a813c66e",
+            "source_url": "https://fortune.com/2026/10/01/halluminate-raises-30-million-series-a-oakhc-ft/",
+            "source_title": "Exclusive: Nine-person Halluminate raises $30 million, counts four top U.S. AI labs as customers",
+            "source_content_hash": "bc9abdc4bbc3fc25",
+            "quote": "Existing Halluminate investors Y Combinator, Orange Collective, and Heavybit participated in the round, along with individual researchers from Anthropic, OpenAI, and Meta, according to Wu.",
+            "quote_hash": "35ec8bf18ee09527e3273be7273a2dcc21d41ab2a2b16400a6280e073174f7da"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-4799c620c14fef7b",
+        "source_url": "https://www.halluminate.ai/blog/series-a",
+        "source_title": "Halluminate - 金融服务强化学习环境",
+        "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
+        "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
+        "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
+      },
       {
         "source_id": "FISRC-811e30c84ed4cc4b",
         "source_url": "https://completeaitraining.com/news/reodev-raises-113-million-in-funding-led-by-elevation/",
@@ -189,6 +276,14 @@
         "source_content_hash": "776c62cfdeacb511",
         "quote": "The round was co-led by Heavybit and Seligman Ventures",
         "quote_hash": "9287b0f17e3430ffdc073d9479898b634c826ea84ecf0de5c2aa77133eec9c76"
+      },
+      {
+        "source_id": "FISRC-cc76e017a813c66e",
+        "source_url": "https://fortune.com/2026/10/01/halluminate-raises-30-million-series-a-oakhc-ft/",
+        "source_title": "Exclusive: Nine-person Halluminate raises $30 million, counts four top U.S. AI labs as customers",
+        "source_content_hash": "bc9abdc4bbc3fc25",
+        "quote": "Existing Halluminate investors Y Combinator, Orange Collective, and Heavybit participated in the round, along with individual researchers from Anthropic, OpenAI, and Meta, according to Wu.",
+        "quote_hash": "35ec8bf18ee09527e3273be7273a2dcc21d41ab2a2b16400a6280e073174f7da"
       }
     ],
     "public_profile": {
@@ -196,10 +291,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Heavybit 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Heavybit 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Halluminate · A轮 · 2026-10-01 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4799c620c14fef7b"
+        },
         {
           "description": "融资来源记录：Reo.Dev · A轮 · 2026-07-16 · 既有投资方（种子轮领投），本轮参投 · 1130 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-811e30c84ed4cc4b"
@@ -211,6 +310,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-4799c620c14fef7b",
+          "source_url": "https://www.halluminate.ai/blog/series-a",
+          "source_title": "Halluminate - 金融服务强化学习环境",
+          "source_content_hash": "d6cd6d2cc6fbb3d215d709d3b622c3a54794cdc369d5b3d82a9e948c3a1a3ed4",
+          "quote": "we've raised $30 million in Series A funding led by Oak HC/FT with participation from YCombinator, Orange Collective, FT Partners, and Heavybit.",
+          "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
+        },
         {
           "source_id": "FISRC-811e30c84ed4cc4b",
           "source_url": "https://completeaitraining.com/news/reodev-raises-113-million-in-funding-led-by-elevation/",

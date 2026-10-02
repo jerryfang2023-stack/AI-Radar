@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-28",
-    "latest_disclosed_at": "2026-05-28",
+    "latest_disclosed_at": "2026-07-28",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-b76754bb5e10534b",
+        "canonical_entity_id": "",
+        "name": "Fish Audio"
+      },
       {
         "entity_id": "EN-18b4bbfd60f4137e",
         "canonical_entity_id": "",
@@ -86,7 +91,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-5787437170f3f784",
+        "activity_id": "IA-8583fe5e374dca1a",
+        "funding_insight_id": "FI-b6462ae4469f9dae",
+        "event_ids": [
+          "EV-2315aada5ad36397"
+        ],
+        "company_entity_id": "EN-b76754bb5e10534b",
+        "company_canonical_entity_id": "",
+        "company_name": "Fish Audio",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$52 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 52000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5200 万美元"
+        },
+        "announced_at": "2026-07-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-e06e94375ec64ac4",
+            "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
+            "source_title": "Fish Audio 融资 5200 万美元种子轮，为创作者和企业构建 AI 语音模型",
+            "source_content_hash": "a41c14ab44af8ba104136f93550190aef8e472c0b80b5d27cb60215833dc0035",
+            "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
+            "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-19377d2bfa23eab3",
         "funding_insight_id": "FI-ffc8edb1c916c028",
         "event_ids": [
           "EV-53acea531ac371d6"
@@ -128,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-e06e94375ec64ac4",
+        "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
+        "source_title": "Fish Audio 融资 5200 万美元种子轮，为创作者和企业构建 AI 语音模型",
+        "source_content_hash": "a41c14ab44af8ba104136f93550190aef8e472c0b80b5d27cb60215833dc0035",
+        "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
+        "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
+      },
+      {
         "source_id": "FISRC-7f85c191231c7c71",
         "source_url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",
         "source_title": "AI 算力争夺战是否催生了下一个 Cerebras？",
@@ -141,10 +194,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Carya Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Carya Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Fish Audio · 种子轮 · 2026-07-28 · 本轮参投 · $52 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-e06e94375ec64ac4"
+        },
         {
           "description": "融资来源记录：General Compute · 种子轮 · 2026-05-28 · 本轮参投 · $15 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7f85c191231c7c71"
@@ -152,6 +209,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-e06e94375ec64ac4",
+          "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
+          "source_title": "Fish Audio 融资 5200 万美元种子轮，为创作者和企业构建 AI 语音模型",
+          "source_content_hash": "a41c14ab44af8ba104136f93550190aef8e472c0b80b5d27cb60215833dc0035",
+          "quote": "The funding also saw participation from 359 Capital, Parable, Play Time, Alphalist Partners, Bayhouse Ventures, Carya Venture Partners, and HF0.",
+          "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
+        },
         {
           "source_id": "FISRC-7f85c191231c7c71",
           "source_url": "https://techcrunch.com/2026/05/28/has-the-hunt-for-ai-compute-uncovered-the-next-cerebras/",

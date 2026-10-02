@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,80 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-06-11",
     "role_counts": {
-      "other_current_round": 1
+      "historical_or_ambiguous": 1,
+      "other_current_round": 1,
+      "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_b"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-1809f7cd0c75acf3",
+        "canonical_entity_id": "",
+        "name": "Prometheus"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-2a8ab4d1c58caa4f",
+        "activity_id": "IA-5676976da24175c0",
+        "funding_insight_id": "FI-bb8e3f8e8f3f519c",
+        "event_ids": [
+          "EV-5eb9944487368ea0"
+        ],
+        "company_entity_id": "EN-1809f7cd0c75acf3",
+        "company_canonical_entity_id": "",
+        "company_name": "Prometheus",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$12 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "120 亿美元"
+        },
+        "announced_at": "2026-06-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b17263945320e175",
+            "source_url": "https://www.cnbc.com/2026/06/11/project-prometheus-bezos-bajaj-live-updates.html",
+            "source_title": "贝索斯在融资120亿美元后公开谈论AI初创公司Prometheus：“我们并非刻意保密”",
+            "source_content_hash": "35a586159ce189ad7416ee53b77859761dc40f5b9f2abfe9c01cfba4a3cd3b3a",
+            "quote": "Bezos said he participated in Prometheus' series B, after contributing a chunk of capital in its first fundraising round.",
+            "quote_hash": "93b69a065d720ffdcf86f56b3df1b32dfd2418c7bf0a8194a4649ab7bfd620a0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4aa539d002af8e42",
         "funding_insight_id": "FI-9c3c02658ff94312",
         "event_ids": [
           "EV-cded77b1de2db61a"
@@ -124,9 +172,49 @@
             "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-84944fba8a8a8893",
+        "funding_insight_id": "FI-184c6532af326d6a",
+        "event_ids": [
+          "EV-4d9754466f03bf16"
+        ],
+        "company_entity_id": "EN-ec418abaacc30a58",
+        "company_canonical_entity_id": "",
+        "company_name": "AheadComputing, Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b57e758a492553d2",
+            "source_url": "https://startupintros.com/orgs/aheadcomputing",
+            "source_title": "AheadComputing: Funding, Team & Investors",
+            "source_content_hash": "4cd0c2bf6161fa55",
+            "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+            "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-b17263945320e175",
+        "source_url": "https://www.cnbc.com/2026/06/11/project-prometheus-bezos-bajaj-live-updates.html",
+        "source_title": "贝索斯在融资120亿美元后公开谈论AI初创公司Prometheus：“我们并非刻意保密”",
+        "source_content_hash": "35a586159ce189ad7416ee53b77859761dc40f5b9f2abfe9c01cfba4a3cd3b3a",
+        "quote": "Bezos said he participated in Prometheus' series B, after contributing a chunk of capital in its first fundraising round.",
+        "quote_hash": "93b69a065d720ffdcf86f56b3df1b32dfd2418c7bf0a8194a4649ab7bfd620a0"
+      },
       {
         "source_id": "FISRC-6c35525e379488bf",
         "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
@@ -134,6 +222,14 @@
         "source_content_hash": "adc0cc9ffe3c9dd0",
         "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
         "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
+      },
+      {
+        "source_id": "FISRC-b57e758a492553d2",
+        "source_url": "https://startupintros.com/orgs/aheadcomputing",
+        "source_title": "AheadComputing: Funding, Team & Investors",
+        "source_content_hash": "4cd0c2bf6161fa55",
+        "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+        "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
       }
     ],
     "public_profile": {
@@ -159,8 +255,16 @@
           "source_id": "jeff_bezos_expeditions"
         },
         {
+          "description": "融资来源记录：Prometheus · B轮 · 2026-06-11 · 本轮参投 · $12 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b17263945320e175"
+        },
+        {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c35525e379488bf"
+        },
+        {
+          "description": "融资来源记录：AheadComputing, Inc. · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b57e758a492553d2"
         }
       ],
       "contacts": [
@@ -230,12 +334,28 @@
           "quote_hash": "df45081c5205140b51cde9f740da4cf9098bafed2f306fd4bd12e9fb5f725cc9"
         },
         {
+          "source_id": "FISRC-b17263945320e175",
+          "source_url": "https://www.cnbc.com/2026/06/11/project-prometheus-bezos-bajaj-live-updates.html",
+          "source_title": "贝索斯在融资120亿美元后公开谈论AI初创公司Prometheus：“我们并非刻意保密”",
+          "source_content_hash": "35a586159ce189ad7416ee53b77859761dc40f5b9f2abfe9c01cfba4a3cd3b3a",
+          "quote": "Bezos said he participated in Prometheus' series B, after contributing a chunk of capital in its first fundraising round.",
+          "quote_hash": "93b69a065d720ffdcf86f56b3df1b32dfd2418c7bf0a8194a4649ab7bfd620a0"
+        },
+        {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
           "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
           "source_content_hash": "adc0cc9ffe3c9dd0",
           "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
           "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
+        },
+        {
+          "source_id": "FISRC-b57e758a492553d2",
+          "source_url": "https://startupintros.com/orgs/aheadcomputing",
+          "source_title": "AheadComputing: Funding, Team & Investors",
+          "source_content_hash": "4cd0c2bf6161fa55",
+          "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+          "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
         }
       ],
       "last_verified_at": "2026-09-26",

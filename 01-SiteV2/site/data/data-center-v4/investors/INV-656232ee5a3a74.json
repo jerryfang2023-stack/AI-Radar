@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "current_round_count": 6,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-04",
+    "first_disclosed_at": "2026-01-06",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "co_lead": 2,
-      "historical_or_ambiguous": 1,
-      "participant": 1
+      "co_lead": 4,
+      "historical_or_ambiguous": 2,
+      "participant": 2
     },
     "round_codes": [
       "series_b",
+      "series_c",
+      "series_e",
       "series_f"
     ],
     "portfolio_companies": [
@@ -87,19 +89,74 @@
         "name": "Crusoe"
       },
       {
+        "entity_id": "EN-7b9b33ca95deff50",
+        "canonical_entity_id": "",
+        "name": "CScale"
+      },
+      {
         "entity_id": "EN-50d7f4250bdd8888",
         "canonical_entity_id": "",
         "name": "Flow Engineering"
       },
       {
+        "entity_id": "EN-897502f225e38bf5",
+        "canonical_entity_id": "",
+        "name": "Positron AI"
+      },
+      {
         "entity_id": "EN-0995103010d39563",
         "canonical_entity_id": "",
         "name": "Positron AI"
+      },
+      {
+        "entity_id": "EN-6fcba5d96a4fadfd",
+        "canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "name": "xAI"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-a594949966a80458",
+        "activity_id": "IA-509d2eb44103291c",
+        "funding_insight_id": "FI-07d1ab9787e1c9dd",
+        "event_ids": [
+          "EV-4c5dc2fc6d805b3f"
+        ],
+        "company_entity_id": "EN-7b9b33ca95deff50",
+        "company_canonical_entity_id": "",
+        "company_name": "CScale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$145 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 145000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.45 亿美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f84ad840508b39",
+            "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+            "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+            "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+            "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+            "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d4aa37892c3d0045",
         "funding_insight_id": "FI-2309843d76ae81f9",
         "event_ids": [
           "EV-f2950d2104e97163"
@@ -147,7 +204,7 @@
         ]
       },
       {
-        "activity_id": "IA-981934815705d9a4",
+        "activity_id": "IA-fe3fc669c0c2cec2",
         "funding_insight_id": "FI-72df07926e3369ef",
         "event_ids": [
           "EV-26a5749d8604455a",
@@ -188,47 +245,47 @@
         ]
       },
       {
-        "activity_id": "IA-38159f8e0d27e8e6",
-        "funding_insight_id": "FI-032ffe6e999827b8",
+        "activity_id": "IA-f916d5580c7ae483",
+        "funding_insight_id": "FI-16ec583e6204fbd2",
         "event_ids": [
-          "EV-9486e14e99499e3b"
+          "EV-2c217907879cd2a8"
         ],
-        "company_entity_id": "EN-05f6ecf01ac4ebec",
+        "company_entity_id": "EN-897502f225e38bf5",
         "company_canonical_entity_id": "",
-        "company_name": "Impulse Space",
-        "round": "D轮",
-        "round_code": "series_d",
-        "round_original": "Series D",
-        "amount_original": "$500 million",
+        "company_name": "Positron AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$375 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 500000000,
+          "value": 375000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "5 亿美元"
+          "display_zh": "3.75 亿美元"
         },
-        "announced_at": "2026-06-02",
+        "announced_at": "2026-09-10",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "C轮参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "C轮联合领投",
+        "role_code": "co_lead",
         "evidence": [
           {
-            "source_id": "FISRC-f6b16eaba393b2b3",
-            "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
-            "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
-            "source_content_hash": "6f44e8a8123b489d",
-            "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
-            "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+            "source_id": "FISRC-3947ce709f26c22a",
+            "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+            "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+            "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+            "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital.",
+            "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
           }
         ]
       },
       {
-        "activity_id": "IA-6035a469d666609e",
+        "activity_id": "IA-b049625d0e8f46b3",
         "funding_insight_id": "FI-cfb62be40852ea40",
         "event_ids": [
           "EV-7abd8ec418f1e7f3"
@@ -274,9 +331,121 @@
             "quote_hash": "ae596dcd76d7374cac3af9db38142d54ad3a8bd3c47828ea455bd5a4427a8230"
           }
         ]
+      },
+      {
+        "activity_id": "IA-806db10d11d90f55",
+        "funding_insight_id": "FI-4909d937138bd129",
+        "event_ids": [
+          "EV-688ef84a4024e075"
+        ],
+        "company_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_name": "xAI",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$20 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 亿美元"
+        },
+        "announced_at": "2026-01-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-23bba75e0baa6d39",
+            "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+            "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
+            "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
+            "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
+            "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-88e9210ec570be24",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series G 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+            "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e1eef7cd9bdf6416",
+        "funding_insight_id": "FI-032ffe6e999827b8",
+        "event_ids": [
+          "EV-9486e14e99499e3b"
+        ],
+        "company_entity_id": "EN-05f6ecf01ac4ebec",
+        "company_canonical_entity_id": "",
+        "company_name": "Impulse Space",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮参投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f6b16eaba393b2b3",
+            "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
+            "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
+            "source_content_hash": "6f44e8a8123b489d",
+            "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+            "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-98f84ad840508b39",
+        "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+        "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+        "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+        "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+        "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+      },
       {
         "source_id": "FISRC-131c3b05243369a2",
         "source_url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
@@ -302,12 +471,12 @@
         "quote_hash": "832326ba36c3882371b66633ca7e475b4a2091c8b2e568a29eacf4bc6ec42202"
       },
       {
-        "source_id": "FISRC-f6b16eaba393b2b3",
-        "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
-        "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
-        "source_content_hash": "6f44e8a8123b489d",
-        "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
-        "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
+        "source_id": "FISRC-3947ce709f26c22a",
+        "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+        "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+        "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+        "quote": "The Series C, $375 million at a $3.5 billion pre-money valuation, was co-led by NEA, Andra Capital, Atreides Management, Valor Equity Partners, and Dylan Patel's SemiAnalysis Capital.",
+        "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
       },
       {
         "source_id": "FISRC-272c28400131d6f2",
@@ -324,6 +493,30 @@
         "source_content_hash": "cbb6c55f3aa631df",
         "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others.",
         "quote_hash": "ae596dcd76d7374cac3af9db38142d54ad3a8bd3c47828ea455bd5a4427a8230"
+      },
+      {
+        "source_id": "FISRC-23bba75e0baa6d39",
+        "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+        "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
+        "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
+        "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
+        "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+        "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
+      },
+      {
+        "source_id": "FISRC-f6b16eaba393b2b3",
+        "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
+        "source_title": "Impulse Space Secures $300 Million Series C to Accelerate the Future of In-Space Mobility",
+        "source_content_hash": "6f44e8a8123b489d",
+        "quote": "returning investors Valor Equity Partners, Founders Fund, Lux Capital, RTX Ventures, DCVC, Airbus Ventures, Spring Tide, First Principles Group, Balerion Space Ventures, Tamarack Global, and Trousdale Ventures",
+        "quote_hash": "151a5fa62366f0965a0ae020a32b34f84e3906b4c749da0ece2030a8dd8aa2db"
       }
     ],
     "public_profile": {
@@ -384,12 +577,12 @@
           "source_id": "valor_equity_growth"
         },
         {
-          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮联合领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-131c3b05243369a2"
+          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮联合领投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f84ad840508b39"
         },
         {
-          "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮联合领投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5fc65e3f4fb1b347"
+          "description": "融资来源记录：Flow Engineering · B轮 · 2026-09-30 · 本轮联合领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-131c3b05243369a2"
         }
       ],
       "profile_type": "organization",
@@ -454,6 +647,14 @@
           "quote_hash": "50577f0c89b6140a27948814332c77e7db0e71c7a5ad693845f6d594f960a38e"
         },
         {
+          "source_id": "FISRC-98f84ad840508b39",
+          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+          "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+        },
+        {
           "source_id": "FISRC-131c3b05243369a2",
           "source_url": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
           "source_title": "Flow Engineering 获 5000 万美元 B 轮融资，估值 7.5 亿美元，Valar、Atreides、红杉参投",
@@ -468,20 +669,20 @@
           "source_content_hash": "1ada124c6217cee1",
           "quote": "co-led by Antonio Gracias (Valor) and Gavin Baker (Atreides)",
           "quote_hash": "23a529da915c59f0aef3bf67d876de6ed66f2b07ee5a32f47f1420fe77a88135"
-        },
-        {
-          "source_id": "FISRC-5fc65e3f4fb1b347",
-          "source_url": "https://kingliber.com/the-ai-infrastructure-boom-crusoe-secures-3-9-billion-series-f-at-a-30-9-billion-valuation-to-power-the-next-generation-of-compute/",
-          "source_title": "The AI Infrastructure Boom: Crusoe Secures $3.9 Billion Series F at a $30.9 Billion Valuation to Power the Next Generation of Compute – King Liber",
-          "source_content_hash": "a5d809d221408d5b",
-          "quote": "The latest financing round was co-led by a powerhouse consortium of financial and strategic heavyweights: Atreides Management , Mubadala Capital , and Valor Equity Partners .",
-          "quote_hash": "832326ba36c3882371b66633ca7e475b4a2091c8b2e568a29eacf4bc6ec42202"
         }
       ],
       "last_verified_at": "2026-09-26"
     },
     "translations": {
       "zh-CN": {
+        "activities[6].role": {
+          "text": "Series G 参投",
+          "source_hash": "f55d0290b338dc301d7655ccb2e65e9c4e1f2abca1b8e5e6d65f68a9664f1861",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
         "public_profile.milestones[1].description": {
           "text": "Antonio Gracias 曾任 Tesla 董事；为个人履历，不表示 Valor 在整个期间持有该公司。",
           "source_hash": "69dd650f231cdd0f291b09da988b6d817bc70416dca6dee671bc9d71cc0afb23",

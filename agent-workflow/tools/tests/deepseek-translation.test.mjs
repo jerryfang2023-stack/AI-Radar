@@ -216,3 +216,11 @@ test("isolates translations when both model passes omit protected facts", async 
     if (previous.pro === undefined) delete process.env.DEEPSEEK_PRO_MODEL; else process.env.DEEPSEEK_PRO_MODEL = previous.pro;
   }
 });
+test('funding titles preserve trillion shorthand and fold growth without treating doubles down as a number', () => {
+  assert.equal(sourceTitleFactsPreserved('Anthropic raises $65 billion, nears $1T valuation ahead of IPO', 'Anthropic 融资 650 亿美元，IPO 前估值接近 1 万亿美元'), true);
+  assert.equal(sourceTitleFactsPreserved('Anthropic nears $1T valuation', 'Anthropic 估值接近 1 亿美元'), false);
+  assert.equal(sourceTitleFactsPreserved('Sequoia doubles down on Cymphony', '红杉加码 Cymphony'), true);
+  assert.equal(sourceTitleFactsPreserved('Revenue doubles', '营收增长'), false);
+  assert.equal(sourceTitleFactsPreserved('Anthropic revenue grows fivefold', 'Anthropic 营收增至五倍'), true);
+  assert.equal(sourceTitleFactsPreserved('Anthropic revenue grows fivefold', 'Anthropic 营收增长五倍'), false);
+});

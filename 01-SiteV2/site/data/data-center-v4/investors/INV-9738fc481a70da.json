@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,27 +61,35 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-09-17",
+    "first_disclosed_at": "2026-01-14",
+    "latest_disclosed_at": "2026-09-15",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 2,
       "other_current_round": 1,
       "participant": 2
     },
     "round_codes": [
       "multi_round",
+      "series_a",
+      "series_b",
       "series_d",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "FICO-0f30fb5c3ecf590d",
+        "canonical_entity_id": "",
+        "name": "Artificial Intelligence Underwriting Company (AIUC)"
+      },
       {
         "entity_id": "EN-ac32f27ba7a1346f",
         "canonical_entity_id": "",
@@ -91,52 +99,56 @@
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-720d7b20a013162b",
+        "canonical_entity_id": "",
+        "name": "Listen Labs"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-ed13982dfd035502",
-        "funding_insight_id": "FI-72df07926e3369ef",
+        "activity_id": "IA-f0739ad556a57592",
+        "funding_insight_id": "FI-dc65b78217aadd5b",
         "event_ids": [
-          "EV-26a5749d8604455a",
-          "EV-40d4ce6d936d4d49"
+          "EV-048612d1bcbd7a96"
         ],
-        "company_entity_id": "EN-d41ebd9f02722fc8",
-        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
-        "company_name": "Crusoe",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "Series F",
-        "amount_original": "$3.9B",
+        "company_entity_id": "FICO-0f30fb5c3ecf590d",
+        "company_canonical_entity_id": "",
+        "company_name": "Artificial Intelligence Underwriting Company (AIUC)",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$40 million",
         "amount_normalized": {
           "currency": "USD",
-          "value": 3900000000,
+          "value": 40000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "39 亿美元"
+          "display_zh": "4000 万美元"
         },
-        "announced_at": "2026-09-17",
+        "announced_at": "2026-09-15",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "历史轮次投资方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-4afc17abd0ce2781",
-            "source_url": "https://sacra.com/c/crusoe/",
-            "source_title": "Crusoe revenue, valuation & funding | Sacra",
-            "source_content_hash": "031d223859c249dd",
-            "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
-            "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+            "source_id": "FISRC-926b8b12b411de6f",
+            "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
+            "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
+            "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
+            "quote": "AIUC announced a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
+            "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
           }
         ]
       },
       {
-        "activity_id": "IA-252e7a8d4f9f336c",
+        "activity_id": "IA-85ad2c15e14fa3a8",
         "funding_insight_id": "FI-d24e79349c1e9713",
         "event_ids": [
           "EV-040fc355bc12a750",
@@ -177,7 +189,7 @@
         ]
       },
       {
-        "activity_id": "IA-e5d5cd7195819d38",
+        "activity_id": "IA-6b4d04efe0e398f2",
         "funding_insight_id": "FI-5153381171755c70",
         "event_ids": [
           "EV-ad75efcb12a07793"
@@ -217,7 +229,7 @@
         ]
       },
       {
-        "activity_id": "IA-7d19867ddc6b6243",
+        "activity_id": "IA-792dcdc4184d9add",
         "funding_insight_id": "FI-5faa0336090509de",
         "event_ids": [
           "EV-5762fe51987bc5ff"
@@ -255,16 +267,89 @@
             "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
           }
         ]
+      },
+      {
+        "activity_id": "IA-37fb41450d32b9d7",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$69 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 69000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6900 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf11a862138a06d",
+            "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+            "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+            "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+            "quote": "has raised a $69 million Series B led by Ribbit Capital",
+            "quote_hash": "52c8739c2f6f3a014a9639e1f76be81a926ee629bf03ae181eb0659370769660"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-30de47adc965bbd7",
+        "funding_insight_id": "FI-72df07926e3369ef",
+        "event_ids": [
+          "EV-26a5749d8604455a",
+          "EV-40d4ce6d936d4d49"
+        ],
+        "company_entity_id": "EN-d41ebd9f02722fc8",
+        "company_canonical_entity_id": "EN-d41ebd9f02722fc8",
+        "company_name": "Crusoe",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-4afc17abd0ce2781",
+            "source_url": "https://sacra.com/c/crusoe/",
+            "source_title": "Crusoe revenue, valuation & funding | Sacra",
+            "source_content_hash": "031d223859c249dd",
+            "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+            "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-4afc17abd0ce2781",
-        "source_url": "https://sacra.com/c/crusoe/",
-        "source_title": "Crusoe revenue, valuation & funding | Sacra",
-        "source_content_hash": "031d223859c249dd",
-        "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
-        "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+        "source_id": "FISRC-926b8b12b411de6f",
+        "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
+        "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
+        "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
+        "quote": "AIUC announced a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
+        "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
       },
       {
         "source_id": "FISRC-ec090e2bf0f8f6e9",
@@ -289,6 +374,22 @@
         "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
         "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
         "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
+      },
+      {
+        "source_id": "FISRC-dcf11a862138a06d",
+        "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+        "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+        "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+        "quote": "has raised a $69 million Series B led by Ribbit Capital",
+        "quote_hash": "52c8739c2f6f3a014a9639e1f76be81a926ee629bf03ae181eb0659370769660"
+      },
+      {
+        "source_id": "FISRC-4afc17abd0ce2781",
+        "source_url": "https://sacra.com/c/crusoe/",
+        "source_title": "Crusoe revenue, valuation & funding | Sacra",
+        "source_content_hash": "031d223859c249dd",
+        "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
+        "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
       }
     ],
     "public_profile": {
@@ -326,16 +427,16 @@
           "source_id": "ribbit_sec"
         },
         {
+          "description": "融资来源记录：Artificial Intelligence Underwriting Company (AIUC) · A轮 · 2026-09-15 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-926b8b12b411de6f"
+        },
+        {
           "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投（2025年12月5亿美元轮次） · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ec090e2bf0f8f6e9"
         },
         {
           "description": "融资来源记录：Etched · 轮次未披露 · 2026-06-30 · 本轮参投 · $500 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b750a2ea9e7c7b76"
-        },
-        {
-          "description": "融资来源记录：Cognition · D轮 · 2026-05-27 · 本轮新进投资方 · 超过 10 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c7d89f6e73a6fe5b"
         }
       ],
       "contacts": [
@@ -380,6 +481,14 @@
           "quote_hash": "af740693ac79712cf19236d0970930c81766acd8c41d1d7dcd83b367c3c16a6e"
         },
         {
+          "source_id": "FISRC-926b8b12b411de6f",
+          "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
+          "source_title": "Anthropic 早期员工、前 METR COO 找到了约束失控 AI 智能体的方法",
+          "source_content_hash": "f47f08e37782472741ba350cbabd98e87c97bdfffc91a4d53ef6569e1d71c5df",
+          "quote": "AIUC announced a $40 million Series A led by Ribbit Capital, with participation from First Harmonic.",
+          "quote_hash": "a84417bf13f516ae245d8f0761a4e6737d094ac2fab542d6e44f5373efce82f6"
+        },
+        {
           "source_id": "FISRC-ec090e2bf0f8f6e9",
           "source_url": "https://thenextweb.com/news/etched-800-million-jane-street-tsmc-inference-chip",
           "source_title": "英伟达竞争对手Etched获8亿美元融资，简街与台积电关联基金参投",
@@ -394,18 +503,22 @@
           "source_content_hash": "ae0a2fdbd54bc340",
           "quote": "including VentureTech Alliance, Jane Street, Hudson River Trading, Two Sigma, Ribbit Capital, and Stripes, who led the $500 million round",
           "quote_hash": "8f474813b74ad4ea341140749639ad9699d960b98cee4b622d9b22fdc17e405e"
-        },
-        {
-          "source_id": "FISRC-c7d89f6e73a6fe5b",
-          "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
-          "source_title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
-          "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
-          "quote": "The round also included new investors like Ribbit Capital, Atreides, and Layer Global.",
-          "quote_hash": "2c8e3fb8d1a37ea08291fea31823e097703b53cab4ef6c7e04fa2af1f073d850"
         }
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[1].description": {
+          "text": "融资来源记录：Artificial Intelligence Underwriting Company (AIUC) · A轮 · 2026-09-15 · 本轮领投 · $40 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_hash": "e30acc71fca13a7630baf585e25133caa0ed4ae5c38cd3ec0a45843f9cb00410",
+          "provider": "manual_review",
+          "model": "Codex",
+          "translated_at": "2026-10-01T19:54:15.224Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

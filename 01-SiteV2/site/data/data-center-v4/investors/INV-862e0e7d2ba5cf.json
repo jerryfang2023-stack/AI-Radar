@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 17,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 15,
+    "current_round_count": 26,
+    "historical_or_ambiguous_count": 11,
+    "portfolio_company_count": 21,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,14 +74,15 @@
     "first_disclosed_at": "2025-03-25",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "co_lead": 1,
-      "historical_or_ambiguous": 3,
-      "lead": 8,
+      "co_lead": 2,
+      "historical_or_ambiguous": 11,
+      "lead": 11,
       "other_current_round": 1,
-      "participant": 7
+      "participant": 12
     },
     "round_codes": [
       "multi_round",
+      "other",
       "seed",
       "series_a",
       "series_b",
@@ -89,6 +90,7 @@
       "series_d",
       "series_f",
       "series_g",
+      "series_h",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -103,14 +105,29 @@
         "name": "Anthropic"
       },
       {
+        "entity_id": "EN-ae3d8efc01c7627d",
+        "canonical_entity_id": "",
+        "name": "Astrocade"
+      },
+      {
         "entity_id": "EN-522656609ff15589",
         "canonical_entity_id": "",
         "name": "Bunkerhill Health"
       },
       {
+        "entity_id": "EN-9a0289cb4ea675d2",
+        "canonical_entity_id": "",
+        "name": "Cymphony"
+      },
+      {
         "entity_id": "EN-b10da733dff99be1",
         "canonical_entity_id": "",
         "name": "Edra"
+      },
+      {
+        "entity_id": "EN-e853b4e183ed0870",
+        "canonical_entity_id": "",
+        "name": "ElevenLabs"
       },
       {
         "entity_id": "EN-450dcf23e621ff10",
@@ -123,14 +140,24 @@
         "name": "Etched"
       },
       {
+        "entity_id": "EN-06c8aaa93d80a768",
+        "canonical_entity_id": "",
+        "name": "Factory"
+      },
+      {
         "entity_id": "EN-50d7f4250bdd8888",
         "canonical_entity_id": "",
         "name": "Flow Engineering"
       },
       {
-        "entity_id": "EN-b4c73396844f7d05",
+        "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
+      },
+      {
+        "entity_id": "EN-720d7b20a013162b",
+        "canonical_entity_id": "",
+        "name": "Listen Labs"
       },
       {
         "entity_id": "EN-636396f02b6571e4",
@@ -153,6 +180,11 @@
         "name": "Profound"
       },
       {
+        "entity_id": "EN-586e52112859378f",
+        "canonical_entity_id": "",
+        "name": "Ricursive Intelligence"
+      },
+      {
         "entity_id": "EN-cfd90af8403941bf",
         "canonical_entity_id": "",
         "name": "Sable"
@@ -170,7 +202,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-91d475ca6fd7a34a",
+        "activity_id": "IA-e486030801b01752",
         "funding_insight_id": "FI-2309843d76ae81f9",
         "event_ids": [
           "EV-f2950d2104e97163"
@@ -218,12 +250,13 @@
         ]
       },
       {
-        "activity_id": "IA-b1ef7f410ecd6cf7",
-        "funding_insight_id": "FI-1b6dd112c647d4a1",
+        "activity_id": "IA-0132c556ddf57d3c",
+        "funding_insight_id": "FI-4b143304af694a92",
         "event_ids": [
-          "EV-35fa913e4709b4d6"
+          "EV-35fa913e4709b4d6",
+          "EV-861d4440dcbb9b09"
         ],
-        "company_entity_id": "EN-b4c73396844f7d05",
+        "company_entity_id": "FICO-instinct",
         "company_canonical_entity_id": "",
         "company_name": "Instinct",
         "round": "C轮",
@@ -251,14 +284,54 @@
             "source_id": "FISRC-560cbbccadfe271d",
             "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
             "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-            "source_content_hash": "7430813f0a12b226",
-            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-            "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+            "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+            "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+            "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
           }
         ]
       },
       {
-        "activity_id": "IA-3eccb8c072d254ae",
+        "activity_id": "IA-26fe9bfa59a1c68a",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "未明确轮次",
+        "amount_original": "$200M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-09-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-1c7459d2ce055880",
+            "source_url": "https://factory.ai/news/5-billion-valuation",
+            "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+            "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+            "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+            "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dc7d74542cf7c9a9",
         "funding_insight_id": "FI-28129028b23f82cb",
         "event_ids": [
           "EV-05b635c3958e4591"
@@ -298,7 +371,47 @@
         ]
       },
       {
-        "activity_id": "IA-b8c2836011deda65",
+        "activity_id": "IA-3aedeb329dca3fa9",
+        "funding_insight_id": "FI-478e78c28af4dcfe",
+        "event_ids": [
+          "EV-319bc3b1c7e758b0"
+        ],
+        "company_entity_id": "EN-9a0289cb4ea675d2",
+        "company_canonical_entity_id": "",
+        "company_name": "Cymphony",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$25 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 25000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2500 万美元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bd06b11c1289ff0",
+            "source_url": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks",
+            "source_title": "红杉加码 Cymphony，AI 智能体带来新的企业安全风险",
+            "source_content_hash": "643135e217ab7a7d4dee0bbf3ad2731bb3af9b501c260b22fecd8df9a2a0de75",
+            "quote": "The funding includes a $25 million Series A co-led by Sequoia and SMBC Fin Atlas Beyond Fund",
+            "quote_hash": "6d80f06313914831ea6b64e76ac340b870a39c63cc7053eb8f95fade36d70a81"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8a14a4d4329b7414",
         "funding_insight_id": "FI-29e37a6d373071d9",
         "event_ids": [
           "EV-b9d8b3582f12bdc7"
@@ -338,7 +451,7 @@
         ]
       },
       {
-        "activity_id": "IA-9cc86dd5c6d39dab",
+        "activity_id": "IA-c15153c804a04b2c",
         "funding_insight_id": "FI-eb9e0a4f4b8c43d9",
         "event_ids": [
           "EV-19dd4c3a5dd5a94b",
@@ -379,7 +492,7 @@
         ]
       },
       {
-        "activity_id": "IA-e8b7f1f0fc2bd223",
+        "activity_id": "IA-14927dc47c7daa1d",
         "funding_insight_id": "FI-f55b62cf10cb7c98",
         "event_ids": [
           "EV-f5dd6dec49ad83aa"
@@ -419,7 +532,7 @@
         ]
       },
       {
-        "activity_id": "IA-a89767886f2714dc",
+        "activity_id": "IA-3b586bdb7c9e7b6a",
         "funding_insight_id": "FI-1590f6795e68ef12",
         "event_ids": [
           "EV-da1655ecfaf35feb"
@@ -467,7 +580,7 @@
         ]
       },
       {
-        "activity_id": "IA-126538c9d9391c40",
+        "activity_id": "IA-ed2896a00969d858",
         "funding_insight_id": "FI-af05392a4f819f5b",
         "event_ids": [
           "EV-6be89ebfbf8de6be"
@@ -507,7 +620,7 @@
         ]
       },
       {
-        "activity_id": "IA-4a6d1a33ee87f7af",
+        "activity_id": "IA-bdec646231a429ff",
         "funding_insight_id": "FI-2ebe52bd95cf8644",
         "event_ids": [
           "EV-1da2e46e39a57d33"
@@ -547,7 +660,7 @@
         ]
       },
       {
-        "activity_id": "IA-e6719a92602debd1",
+        "activity_id": "IA-400a5cf47ad5a12f",
         "funding_insight_id": "FI-b4ed51811a14f812",
         "event_ids": [
           "EV-921c843ad32c993c"
@@ -587,7 +700,47 @@
         ]
       },
       {
-        "activity_id": "IA-ef5dbcc89cc0f3d9",
+        "activity_id": "IA-020ed464cb738f7e",
+        "funding_insight_id": "FI-6fdfe3674217723b",
+        "event_ids": [
+          "EV-0a9d7be146eeb62a"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$98 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8f5a35fa6bbc977d",
+            "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+            "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+            "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+            "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+            "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d5b1a2119a702587",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
           "EV-20d762872664fddb"
@@ -627,47 +780,7 @@
         ]
       },
       {
-        "activity_id": "IA-cc52c14f6f1dae65",
-        "funding_insight_id": "FI-bff055b65fdb260b",
-        "event_ids": [
-          "EV-20d762872664fddb"
-        ],
-        "company_entity_id": "EN-450dcf23e621ff10",
-        "company_canonical_entity_id": "",
-        "company_name": "Engram",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount_original": "$98M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 98000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "9800 万美元"
-        },
-        "announced_at": "2026-06-23",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-bcf01fbecb1fbdb6",
-            "source_url": "https://www.caplight.com/company/engram",
-            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-            "source_content_hash": "24739161319ad4eb",
-            "quote": "Sequoia Capital Seed, Early Funding",
-            "quote_hash": "f98314528f1749422ac48c1d71cafc24e19bdd05cc0d31f54556d5bb0b18cc3c"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-4dca462d22fcff27",
+        "activity_id": "IA-ee3a1e009f3fdfcd",
         "funding_insight_id": "FI-0c0e3303d3634766",
         "event_ids": [
           "EV-2b15f160de3c7ddf"
@@ -707,87 +820,127 @@
         ]
       },
       {
-        "activity_id": "IA-79cef5fe960a65ed",
-        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "activity_id": "IA-43aa9fc8d712e786",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
         "event_ids": [
-          "EV-ef7346378fcf9746"
+          "EV-823ca893b550b2f4"
         ],
-        "company_entity_id": "EN-e78bdebae031095b",
-        "company_canonical_entity_id": "EN-e78bdebae031095b",
-        "company_name": "SpaceX",
-        "round": "IPO",
-        "round_code": "ipo",
-        "round_original": "IPO",
-        "amount_original": "$75 billion",
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
         "amount_normalized": {
           "currency": "USD",
-          "value": 75000000000,
+          "value": 65000000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "750 亿美元"
+          "display_zh": "650 亿美元"
         },
-        "announced_at": "2026-06-03",
+        "announced_at": "2026-05-28",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-0349532f469a6b45",
-            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-            "source_title": "Early SpaceX investors will now reap the rewards",
-            "source_content_hash": "e4b5710f29e81069",
-            "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz",
-            "quote_hash": "a13d368b080d768be47d6b15c3e178c28c6a312be3a864f12244b99a6e930b69"
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+            "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
           }
         ]
       },
       {
-        "activity_id": "IA-8b6fc3bbc3fe9090",
-        "funding_insight_id": "FI-09809d62deea4164",
+        "activity_id": "IA-f10acf87dd9363ae",
+        "funding_insight_id": "FI-03e399f9044022c0",
         "event_ids": [
-          "EV-0e84a2f49d765ce3"
+          "EV-4e4ae1578720e907"
         ],
-        "company_entity_id": "EN-7f871cbf905f6e0c",
-        "company_canonical_entity_id": "EN-7f871cbf905f6e0c",
-        "company_name": "OpenRouter",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "Series B",
-        "amount_original": "$113 million",
+        "company_entity_id": "EN-ae3d8efc01c7627d",
+        "company_canonical_entity_id": "",
+        "company_name": "Astrocade",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$56M",
         "amount_normalized": {
           "currency": "USD",
-          "value": 113000000,
+          "value": 56000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "1.13 亿美元"
+          "display_zh": "5600 万美元"
         },
-        "announced_at": "2026-05-26",
+        "announced_at": "2026-05-05",
         "market_region": "GLOBAL",
         "china_market_match": false,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮参投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
         "evidence": [
           {
-            "source_id": "FISRC-d1b42068c59f51d1",
-            "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
-            "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
-            "source_content_hash": "c1afd6dfb4036688",
-            "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
-            "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+            "source_id": "FISRC-1811bc88b6a13090",
+            "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
+            "source_title": "Astrocade 融资 5600 万美元，用于打造互动娱乐新时代",
+            "source_content_hash": "693c6512091f05ffa16b907ec04a3e307326051b109c094cbc783d00543e7a71",
+            "quote": "The funding includes a Series B led by Sequoia Capital and a Series A led by Sea, with participation from Google's AI Futures Fund, NVIDIA, LG Technology Ventures, Dentsu Ventures, Conviction Embed, Chaac Ventures, Rogue VC, and many more",
+            "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
           }
         ]
       },
       {
-        "activity_id": "IA-3421a5cccbb4403e",
+        "activity_id": "IA-5d25db4495f9f4ed",
+        "funding_insight_id": "FI-2beaec77613f6a7f",
+        "event_ids": [
+          "EV-20e5d57a05b69a95"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+            "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+            "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b6a33a273dd61b9e",
         "funding_insight_id": "FI-b76fffbf5d0d91bd",
         "event_ids": [
           "EV-d4e44892226be468"
@@ -827,7 +980,7 @@
         ]
       },
       {
-        "activity_id": "IA-3b84914020c980d3",
+        "activity_id": "IA-7762b766ab921917",
         "funding_insight_id": "FI-f7944cc1c3817381",
         "event_ids": [
           "EV-4c247b02485de09b"
@@ -867,7 +1020,7 @@
         ]
       },
       {
-        "activity_id": "IA-6873ee195ed1b429",
+        "activity_id": "IA-41f1fc5579cf174c",
         "funding_insight_id": "FI-0aa1eca49e73b783",
         "event_ids": [
           "EV-3b40ec144e5db22c"
@@ -907,7 +1060,127 @@
         ]
       },
       {
-        "activity_id": "IA-9dea7a6ee4b4023f",
+        "activity_id": "IA-b76b0fc4d63c62dd",
+        "funding_insight_id": "FI-c5686c09063973a5",
+        "event_ids": [
+          "EV-199de9f816cc225c"
+        ],
+        "company_entity_id": "EN-e853b4e183ed0870",
+        "company_canonical_entity_id": "",
+        "company_name": "ElevenLabs",
+        "round": "D轮",
+        "round_code": "series_d",
+        "round_original": "D轮",
+        "amount_original": "$500 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-02-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bbfa0b0946953ff",
+            "source_url": "https://elevenlabs.io/blog/series-d",
+            "source_title": "ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资",
+            "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
+            "quote": "The round was led by Sequoia Capital, with Andrew Reed joining the board",
+            "quote_hash": "7cb4326a3ca8b7952ffc6abaf89fae0c85c70155564fa413ebacd6fceb7ffba2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-a44e8b5fc86112d8",
+        "funding_insight_id": "FI-30d30c4d482b3f6f",
+        "event_ids": [
+          "EV-ee9a4433b4e7715e"
+        ],
+        "company_entity_id": "EN-586e52112859378f",
+        "company_canonical_entity_id": "",
+        "company_name": "Ricursive Intelligence",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$300 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 300000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3 亿美元"
+        },
+        "announced_at": "2026-01-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7faa441242e94444",
+            "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+            "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+            "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+            "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+            "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6e84abef51ce3db2",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$69 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 69000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6900 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf11a862138a06d",
+            "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+            "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+            "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+            "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+            "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-c3c90ff6ac35e582",
         "funding_insight_id": "FI-7aef62aa956f090d",
         "event_ids": [
           "EV-286846e21412f3c7"
@@ -947,7 +1220,7 @@
         ]
       },
       {
-        "activity_id": "IA-8ed2a3e992127261",
+        "activity_id": "IA-7d4d92fc0413720b",
         "funding_insight_id": "FI-3a05feff425e5dcb",
         "event_ids": [
           "EV-12ca2aae7bfcd080"
@@ -985,6 +1258,358 @@
             "quote_hash": "f3411a3d81225e862fd180c9eb64915b2b7e5d236423228eec433bf8bffbee5c"
           }
         ]
+      },
+      {
+        "activity_id": "IA-5638a0294048fb27",
+        "funding_insight_id": "FI-478e78c28af4dcfe",
+        "event_ids": [
+          "EV-319bc3b1c7e758b0"
+        ],
+        "company_entity_id": "EN-9a0289cb4ea675d2",
+        "company_canonical_entity_id": "",
+        "company_name": "Cymphony",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bd06b11c1289ff0",
+            "source_url": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks",
+            "source_title": "红杉加码 Cymphony，AI 智能体带来新的企业安全风险",
+            "source_content_hash": "643135e217ab7a7d4dee0bbf3ad2731bb3af9b501c260b22fecd8df9a2a0de75",
+            "quote": "The round follows a previously undisclosed seed investment from Sequoia.",
+            "quote_hash": "5437c28238e273da347dd865fcf0d2987f23cc1980ec7d4ebbe860fd0925b77c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-be7926b406a610cd",
+        "funding_insight_id": "FI-bff055b65fdb260b",
+        "event_ids": [
+          "EV-20d762872664fddb"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcf01fbecb1fbdb6",
+            "source_url": "https://www.caplight.com/company/engram",
+            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+            "source_content_hash": "24739161319ad4eb",
+            "quote": "Sequoia Capital Seed, Early Funding",
+            "quote_hash": "f98314528f1749422ac48c1d71cafc24e19bdd05cc0d31f54556d5bb0b18cc3c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-634bd239bcc2d75c",
+        "funding_insight_id": "FI-bc58830cddab75fe",
+        "event_ids": [
+          "EV-fb14f97f5b644c1f"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory raises $150M Series C",
+            "source_content_hash": "64798c57510b20e2",
+            "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-27f5910cafab695c",
+        "funding_insight_id": "FI-fbe655a1ee0c18ca",
+        "event_ids": [
+          "EV-a772b615a788251b"
+        ],
+        "company_entity_id": "EN-28cd2c5c15d13978",
+        "company_canonical_entity_id": "",
+        "company_name": "Island",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "参投B轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1bd8ed9d0103713f",
+            "source_url": "https://www.island.io/press/island-raises-115-million-in-series-b-funding-to-enable-massive-innovation-on-enterprise-browser",
+            "source_title": "Island Raises $115 Million in Series B Funding for Enterprise Browser",
+            "source_content_hash": "9d350b613f03c9c2",
+            "quote": "Existing investors Stripes and Sequoia Capital also participated in this round",
+            "quote_hash": "0db743559ffbdcee82409055d113f1214af7a14f117686b47504c37db0cc02d0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-26bbc7097963f053",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5579fe42c2aff5ea",
+            "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
+            "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
+            "source_content_hash": "2cd25d2efd99688d",
+            "quote": "Listen Labs recently closed their $27M Series A round, led by Sequoia with participation from Conviction and Pear.",
+            "quote_hash": "b8981f82094227c36170dea81dfdee8f0e08156dca60071d3e83a0c4238466e9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-9459223eff453321",
+        "funding_insight_id": "FI-09809d62deea4164",
+        "event_ids": [
+          "EV-0e84a2f49d765ce3"
+        ],
+        "company_entity_id": "EN-7f871cbf905f6e0c",
+        "company_canonical_entity_id": "EN-7f871cbf905f6e0c",
+        "company_name": "OpenRouter",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮参投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-d1b42068c59f51d1",
+            "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+            "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+            "source_content_hash": "c1afd6dfb4036688",
+            "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+            "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-37c30886dd76f78b",
+        "funding_insight_id": "FI-082c684e1b4a88c2",
+        "event_ids": [
+          "EV-ef7346378fcf9746"
+        ],
+        "company_entity_id": "EN-e78bdebae031095b",
+        "company_canonical_entity_id": "EN-e78bdebae031095b",
+        "company_name": "SpaceX",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-0349532f469a6b45",
+            "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+            "source_title": "Early SpaceX investors will now reap the rewards",
+            "source_content_hash": "e4b5710f29e81069",
+            "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz",
+            "quote_hash": "a13d368b080d768be47d6b15c3e178c28c6a312be3a864f12244b99a6e930b69"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6c4b7027b5e8c3b1",
+        "funding_insight_id": "FI-43e6948d7884584e",
+        "event_ids": [
+          "EV-a0b76c46462b5e3c"
+        ],
+        "company_entity_id": "EN-607a596a603dd679",
+        "company_canonical_entity_id": "",
+        "company_name": "Starcloud",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3b8fce2e43a41d5b",
+            "source_url": "https://multiples.vc/private-comps/starcloud",
+            "source_title": "Starcloud Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "fd3765e774ce97c7",
+            "quote": "Starcloud closed a Seed VC - II round on October 24, 2024, led by NFX with investors including 468 Capital, Andreessen Horowitz, Fortified Ventures, Fuse, Mergus Ventures, Sequoia Capital, and Soma Capital at a $40 million post-money valuation.",
+            "quote_hash": "a6b4c3ea139cc93878aff83541e4631d22c4fa2807a3c55b07e3a1168458bca3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-3250f7e7cf4814cd",
+        "funding_insight_id": "FI-898cddb74dcff413",
+        "event_ids": [
+          "EV-6ed17a96a4a4079d"
+        ],
+        "company_entity_id": "EN-e4540a7c8404b1be",
+        "company_canonical_entity_id": "",
+        "company_name": "Temporal",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资者",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-cf83d78a216a5edf",
+            "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+            "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+            "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+            "quote": "Returning investors include a16z, Sequoia, Index, GIC, Sapphire Ventures, and Amplify.",
+            "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8ea6405f74d4b1cb",
+        "funding_insight_id": "FI-4909d937138bd129",
+        "event_ids": [
+          "EV-688ef84a4024e075"
+        ],
+        "company_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_name": "xAI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3b4badfc5c7972fa",
+            "source_url": "https://tracxn.com/d/companies/xai/__saKrxbHN3TRWW-I4lYH6zkx6N5P_kMTqlLcKTzWs2ug",
+            "source_title": "xAI",
+            "source_content_hash": "d1bd5f5bb5d9679b",
+            "quote": "xAI has raised $45B in funding from investors like Andreessen Horowitz, Sequoia Capital and Qatar Investment Authority",
+            "quote_hash": "3c51432ac77fbe9687fa76da3e989bf662f1236b291b742ecc06600be08c881c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-de67b6ecbf446a06",
+        "funding_insight_id": "FI-fbb8358f9cd7d1f6",
+        "event_ids": [
+          "EV-2975bb5b57ce53d9"
+        ],
+        "company_entity_id": "EN-7dfadeb219464a45",
+        "company_canonical_entity_id": "",
+        "company_name": "Zūm",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1d97f99b2bf1db30",
+            "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+            "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+            "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+            "quote": "Zum is backed by leading investors including Sequoia Capital, GIC, SoftBank, and TPG.",
+            "quote_hash": "8718e19b46e5c4a3bbb41a97dc7c265065dad77eacb163fada467800ba0615f5"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -1008,9 +1633,17 @@
         "source_id": "FISRC-560cbbccadfe271d",
         "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
         "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-        "source_content_hash": "7430813f0a12b226",
-        "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-        "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+        "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+        "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+        "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
+      },
+      {
+        "source_id": "FISRC-1c7459d2ce055880",
+        "source_url": "https://factory.ai/news/5-billion-valuation",
+        "source_title": "Factory 以 50 亿美元估值融资 2 亿美元",
+        "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
+        "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
+        "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
       },
       {
         "source_id": "FISRC-bed55d4f5e02a374",
@@ -1019,6 +1652,14 @@
         "source_content_hash": "8c26f4447adaeabc",
         "quote": "Sequoia and Kleiner Perkins led the round",
         "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
+      },
+      {
+        "source_id": "FISRC-7bd06b11c1289ff0",
+        "source_url": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks",
+        "source_title": "红杉加码 Cymphony，AI 智能体带来新的企业安全风险",
+        "source_content_hash": "643135e217ab7a7d4dee0bbf3ad2731bb3af9b501c260b22fecd8df9a2a0de75",
+        "quote": "The funding includes a $25 million Series A co-led by Sequoia and SMBC Fin Atlas Beyond Fund",
+        "quote_hash": "6d80f06313914831ea6b64e76ac340b870a39c63cc7053eb8f95fade36d70a81"
       },
       {
         "source_id": "FISRC-0426e4b3b9347f4f",
@@ -1085,20 +1726,20 @@
         "quote_hash": "748365af413bdb57cb7af0f41091078e616e84eafee51da0d7e695b73b5beefe"
       },
       {
+        "source_id": "FISRC-8f5a35fa6bbc977d",
+        "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+        "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+        "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+        "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+        "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+      },
+      {
         "source_id": "FISRC-39d911c5038cb1c0",
         "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
         "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
         "source_content_hash": "f7105d727554bb38",
         "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo",
         "quote_hash": "d6d2e6175424260b5170a8e5367eac93875a636a037b0e4d21c7a38705fd06e4"
-      },
-      {
-        "source_id": "FISRC-bcf01fbecb1fbdb6",
-        "source_url": "https://www.caplight.com/company/engram",
-        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-        "source_content_hash": "24739161319ad4eb",
-        "quote": "Sequoia Capital Seed, Early Funding",
-        "quote_hash": "f98314528f1749422ac48c1d71cafc24e19bdd05cc0d31f54556d5bb0b18cc3c"
       },
       {
         "source_id": "FISRC-2174e1aa45a728ef",
@@ -1109,20 +1750,28 @@
         "quote_hash": "28e88bdbebbb89d6dc7b33486f23ba4cf95a2e4e836ccf1ce8b91c0b3fbdb336"
       },
       {
-        "source_id": "FISRC-0349532f469a6b45",
-        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
-        "source_title": "Early SpaceX investors will now reap the rewards",
-        "source_content_hash": "e4b5710f29e81069",
-        "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz",
-        "quote_hash": "a13d368b080d768be47d6b15c3e178c28c6a312be3a864f12244b99a6e930b69"
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+        "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
       },
       {
-        "source_id": "FISRC-d1b42068c59f51d1",
-        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
-        "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
-        "source_content_hash": "c1afd6dfb4036688",
-        "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
-        "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+        "source_id": "FISRC-1811bc88b6a13090",
+        "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
+        "source_title": "Astrocade 融资 5600 万美元，用于打造互动娱乐新时代",
+        "source_content_hash": "693c6512091f05ffa16b907ec04a3e307326051b109c094cbc783d00543e7a71",
+        "quote": "The funding includes a Series B led by Sequoia Capital and a Series A led by Sea, with participation from Google's AI Futures Fund, NVIDIA, LG Technology Ventures, Dentsu Ventures, Conviction Embed, Chaac Ventures, Rogue VC, and many more",
+        "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+        "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+        "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
       },
       {
         "source_id": "FISRC-1e2b3bad243bd066",
@@ -1149,6 +1798,30 @@
         "quote_hash": "e3f3d2d15b78bd35632ba28b62a2a86c87c45d4ecfbe8c86739628eb3f1b4eab"
       },
       {
+        "source_id": "FISRC-7bbfa0b0946953ff",
+        "source_url": "https://elevenlabs.io/blog/series-d",
+        "source_title": "ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资",
+        "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
+        "quote": "The round was led by Sequoia Capital, with Andrew Reed joining the board",
+        "quote_hash": "7cb4326a3ca8b7952ffc6abaf89fae0c85c70155564fa413ebacd6fceb7ffba2"
+      },
+      {
+        "source_id": "FISRC-7faa441242e94444",
+        "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
+        "source_title": "Ricursive Intelligence 以 40 亿美元估值完成 3 亿美元 A 轮融资，加速 AI 驱动的半导体设计",
+        "source_content_hash": "6b50dffbe68804385069c1455d1c8edad2f2d244febbe66e0c2fff154ab7f2a4",
+        "quote": "includes participation from DST Global, NVentures (NVIDIA's venture capital arm), Felicis Ventures, 49 Palms Ventures, Radical AI, and Sequoia Capital",
+        "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
+      },
+      {
+        "source_id": "FISRC-dcf11a862138a06d",
+        "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+        "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+        "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+        "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+        "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
+      },
+      {
         "source_id": "FISRC-d9093a8f62959034",
         "source_url": "https://startuprise.co.uk/ai-workflow-automation-startup-n8n-raises-180m-valued-at-2-5b",
         "source_title": "AI 工作流自动化初创公司 n8n 获 1.8 亿美元融资，估值达 25 亿美元",
@@ -1163,6 +1836,94 @@
         "source_content_hash": "27fac1d61d267f2c",
         "quote": "Sequoia led the seed round for n8n in 2020; Felicis the Series A in 2021.",
         "quote_hash": "f3411a3d81225e862fd180c9eb64915b2b7e5d236423228eec433bf8bffbee5c"
+      },
+      {
+        "source_id": "FISRC-7bd06b11c1289ff0",
+        "source_url": "https://techcrunch.com/2026/09/09/sequoia-doubles-down-on-cymphony-as-ai-agents-create-new-enterprise-security-risks",
+        "source_title": "红杉加码 Cymphony，AI 智能体带来新的企业安全风险",
+        "source_content_hash": "643135e217ab7a7d4dee0bbf3ad2731bb3af9b501c260b22fecd8df9a2a0de75",
+        "quote": "The round follows a previously undisclosed seed investment from Sequoia.",
+        "quote_hash": "5437c28238e273da347dd865fcf0d2987f23cc1980ec7d4ebbe860fd0925b77c"
+      },
+      {
+        "source_id": "FISRC-bcf01fbecb1fbdb6",
+        "source_url": "https://www.caplight.com/company/engram",
+        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+        "source_content_hash": "24739161319ad4eb",
+        "quote": "Sequoia Capital Seed, Early Funding",
+        "quote_hash": "f98314528f1749422ac48c1d71cafc24e19bdd05cc0d31f54556d5bb0b18cc3c"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory raises $150M Series C",
+        "source_content_hash": "64798c57510b20e2",
+        "quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "2208e0e98559f9e980a7182138fe97df4a4942511d0bb56aa09af57b564332c5"
+      },
+      {
+        "source_id": "FISRC-1bd8ed9d0103713f",
+        "source_url": "https://www.island.io/press/island-raises-115-million-in-series-b-funding-to-enable-massive-innovation-on-enterprise-browser",
+        "source_title": "Island Raises $115 Million in Series B Funding for Enterprise Browser",
+        "source_content_hash": "9d350b613f03c9c2",
+        "quote": "Existing investors Stripes and Sequoia Capital also participated in this round",
+        "quote_hash": "0db743559ffbdcee82409055d113f1214af7a14f117686b47504c37db0cc02d0"
+      },
+      {
+        "source_id": "FISRC-5579fe42c2aff5ea",
+        "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
+        "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
+        "source_content_hash": "2cd25d2efd99688d",
+        "quote": "Listen Labs recently closed their $27M Series A round, led by Sequoia with participation from Conviction and Pear.",
+        "quote_hash": "b8981f82094227c36170dea81dfdee8f0e08156dca60071d3e83a0c4238466e9"
+      },
+      {
+        "source_id": "FISRC-d1b42068c59f51d1",
+        "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
+        "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
+        "source_content_hash": "c1afd6dfb4036688",
+        "quote": "OpenRouter's Series A, led by Andreessen Horowitz and Menlo Ventures with Sequoia's participation",
+        "quote_hash": "c8176351944983028f478eee27aecb2d3a2f82740aa55270f96183d163ff0000"
+      },
+      {
+        "source_id": "FISRC-0349532f469a6b45",
+        "source_url": "https://www.cnbc.com/2026/06/11/spacex-investors-reap-rewards-1-8-trillion-valuation.html",
+        "source_title": "Early SpaceX investors will now reap the rewards",
+        "source_content_hash": "e4b5710f29e81069",
+        "quote": "Also poised to win are venture firms including Founders Fund, Sequoia Capital and Andreessen Horowitz",
+        "quote_hash": "a13d368b080d768be47d6b15c3e178c28c6a312be3a864f12244b99a6e930b69"
+      },
+      {
+        "source_id": "FISRC-3b8fce2e43a41d5b",
+        "source_url": "https://multiples.vc/private-comps/starcloud",
+        "source_title": "Starcloud Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "fd3765e774ce97c7",
+        "quote": "Starcloud closed a Seed VC - II round on October 24, 2024, led by NFX with investors including 468 Capital, Andreessen Horowitz, Fortified Ventures, Fuse, Mergus Ventures, Sequoia Capital, and Soma Capital at a $40 million post-money valuation.",
+        "quote_hash": "a6b4c3ea139cc93878aff83541e4631d22c4fa2807a3c55b07e3a1168458bca3"
+      },
+      {
+        "source_id": "FISRC-cf83d78a216a5edf",
+        "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+        "source_title": "Temporal 以 125.5 亿美元估值融资 5.5 亿美元，可靠 AI 基础设施需求增长",
+        "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
+        "quote": "Returning investors include a16z, Sequoia, Index, GIC, Sapphire Ventures, and Amplify.",
+        "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
+      },
+      {
+        "source_id": "FISRC-3b4badfc5c7972fa",
+        "source_url": "https://tracxn.com/d/companies/xai/__saKrxbHN3TRWW-I4lYH6zkx6N5P_kMTqlLcKTzWs2ug",
+        "source_title": "xAI",
+        "source_content_hash": "d1bd5f5bb5d9679b",
+        "quote": "xAI has raised $45B in funding from investors like Andreessen Horowitz, Sequoia Capital and Qatar Investment Authority",
+        "quote_hash": "3c51432ac77fbe9687fa76da3e989bf662f1236b291b742ecc06600be08c881c"
+      },
+      {
+        "source_id": "FISRC-1d97f99b2bf1db30",
+        "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+        "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+        "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+        "quote": "Zum is backed by leading investors including Sequoia Capital, GIC, SoftBank, and TPG.",
+        "quote_hash": "8718e19b46e5c4a3bbb41a97dc7c265065dad77eacb163fada467800ba0615f5"
       }
     ],
     "public_profile": {
@@ -1254,9 +2015,9 @@
           "source_id": "FISRC-560cbbccadfe271d",
           "source_url": "https://techcrunch.com/2026/09/28/viral-ai-agent-instinct-raises-1b-series-c-at-a-10b-valuation/",
           "source_title": "病毒式传播的AI智能体Instinct以100亿美元估值完成10亿美元C轮融资",
-          "source_content_hash": "7430813f0a12b226",
-          "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion",
-          "quote_hash": "c8c8d94a023f1b6f805b0ddbbcbf77b092957118b8b6f4e3e646cf2988ca1392"
+          "source_content_hash": "fb355ad80ad4fa37be9089c61363f3d43919961c2bcf2fcde01d861076b28766",
+          "quote": "raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue",
+          "quote_hash": "36d4b65bd3b65b26e7409cc07ed9bdc59d43e82b3c4c3bfeb23585122425a39d"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1267,6 +2028,22 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[28].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        },
+        "activities[30].role": {
+          "text": "Series A 领投",
+          "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:16.913Z",
+          "status": "translated"
+        },
         "public_profile.summary": {
           "text": "Sequoia Capital 是由 Don Valentine 于 1972 年创立的风险投资机构。其历史资料记载，早期基金投资了 Apple 和 Atari。",
           "source_hash": "8bee5c2a97ec4e2a130ea37d6ac5e5d33f3bb01900d366e446770079cd4ce790",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,16 +63,19 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-11d7d54272c6bb41",
       "EV-19ebde6e2de35fc9"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
-    "firstSeen": "2026-07-01",
-    "lastSeen": "2026-07-01",
+    "firstSeen": "2026-06-30",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-11d7d54272c6bb41"
+      ],
       "deployments": [],
       "partnerships": [
         "EV-19ebde6e2de35fc9"
@@ -83,6 +86,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-11d7d54272c6bb41",
+        "dataDate": "2026-10-02",
+        "date": "2026-06-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "构建扑克AI的DeepMind三人组现在正为量化对冲基金赚钱",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2b6e51bec93e86c1",
+          "EN-3de77a4bcfbd509f"
+        ]
+      },
       {
         "id": "EV-19ebde6e2de35fc9",
         "dataDate": "2026-07-01",

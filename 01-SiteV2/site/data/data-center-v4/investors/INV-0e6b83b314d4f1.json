@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-03-11",
     "latest_disclosed_at": "2026-03-11",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -86,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-80dc502ed2c6b5fe",
+        "activity_id": "IA-f17c4becb0a33b09",
         "funding_insight_id": "FI-2d6f9ac8b7ebeeee",
         "event_ids": [
           "EV-8eb0acb180b7ad9d"
@@ -124,6 +125,38 @@
             "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-05a0c8121d00ca4a",
+        "funding_insight_id": "FI-9255d12e7d1cdf9a",
+        "event_ids": [
+          "EV-673637ebe2ac2f2d"
+        ],
+        "company_entity_id": "EN-18131bed4bcc2f1a",
+        "company_canonical_entity_id": "",
+        "company_name": "Sapiom",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资者，本轮继续支持",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-df6a9c9a32146320",
+            "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
+            "source_title": "Sapiom 融资 3500 万美元 A 轮，为下一个万亿级 AI 智能体提供动力",
+            "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+            "quote": "alongside continued backing from existing investors including Okta Ventures, Menlo Ventures, Anthropic, and Array Ventures",
+            "quote_hash": "02c9a649b7ce91186d46cb72d8fc8879a34042794f4042cce69b95c457139a84"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +167,14 @@
         "source_content_hash": "c906371275e7a3ca",
         "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
         "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
+      },
+      {
+        "source_id": "FISRC-df6a9c9a32146320",
+        "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
+        "source_title": "Sapiom 融资 3500 万美元 A 轮，为下一个万亿级 AI 智能体提供动力",
+        "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+        "quote": "alongside continued backing from existing investors including Okta Ventures, Menlo Ventures, Anthropic, and Array Ventures",
+        "quote_hash": "02c9a649b7ce91186d46cb72d8fc8879a34042794f4042cce69b95c457139a84"
       }
     ],
     "public_profile": {
@@ -194,6 +235,10 @@
         {
           "description": "融资来源记录：Replit · D轮 · 2026-03-11 · 本轮参投（战略投资） · $400M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-00ed3d8fd701898b"
+        },
+        {
+          "description": "融资来源记录：Sapiom · 历史轮次未披露 · 既有投资者，本轮继续支持。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-df6a9c9a32146320"
         }
       ],
       "profile_type": "organization",
@@ -226,6 +271,14 @@
           "source_content_hash": "c906371275e7a3ca",
           "quote": "Strategic investments came from Accenture, Databricks, Okta, and Tether.",
           "quote_hash": "2a92d3648e85cfacdf3ad37c2766e637c846e12256cf248e68b79be36131c17a"
+        },
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
+          "source_title": "Sapiom 融资 3500 万美元 A 轮，为下一个万亿级 AI 智能体提供动力",
+          "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+          "quote": "alongside continued backing from existing investors including Okta Ventures, Menlo Ventures, Anthropic, and Array Ventures",
+          "quote_hash": "02c9a649b7ce91186d46cb72d8fc8879a34042794f4042cce69b95c457139a84"
         }
       ],
       "last_verified_at": "2026-09-27"

@@ -1,3 +1,4 @@
+const {companyDisplayName}=require('./company-display.js');
 function normalize(value) {
   return String(value || "").trim().toLowerCase();
 }
@@ -39,7 +40,8 @@ function buildEntityLibrary(cards = [], details = {}) {
       key: companyId,
       type: "companies",
       name: companyName,
-      initial: companyName.slice(0, 1).toUpperCase(),
+      displayName: companyDisplayName(companyName,card.marketRegion),
+      initial: companyDisplayName(companyName,card.marketRegion).slice(0, 1).toUpperCase(),
       summary: detail.companySummary || card.summary || "企业介绍暂未披露",
       website: detail.website || "",
       headquarters: card.headquarters || "总部未披露",
@@ -67,6 +69,7 @@ function buildEntityLibrary(cards = [], details = {}) {
       const key = `${companyId}|${entityKey(name)}`;
       const metadata = (detail.products || []).find(item => item.name === name) || {};
       const item = products.get(key) || { key, type: 'products', name, initial: name.slice(0,1).toUpperCase(), summary: metadata.description || '产品用途暂未披露', website: metadata.website || '', companyLinks: [{name:companyName,key:companyId}], companiesText: companyName, categories: [], rounds: [], latestDate: card.date || '', markets: [] };
+      if (item.summary === '产品用途暂未披露' && metadata.description) item.summary = metadata.description;
       appendUnique(item.categories, metadata.scenario || card.marketApplication || card.category);
       appendUnique(item.markets, card.marketRegion);
       item.rounds.push({id:card.id,company:companyName,date:card.date,round:card.round,amount:card.amount});
@@ -136,7 +139,7 @@ function buildEntityLibrary(cards = [], details = {}) {
     founders: item.founders.map((founder) => ({ ...founder, key: personEntityKey(founder, item.name) })),
     secondary: [item.headquarters, item.products.slice(0, 2).join("、")].filter(Boolean).join(" · "),
     categoriesText: item.categories.slice(0, 2).join(" · "),
-    searchText: normalize([item.name, item.summary, item.headquarters, ...item.products, ...item.categories].join(" ")),
+    searchText: normalize([item.name, item.displayName, item.summary, item.headquarters, ...item.products, ...item.categories].join(" ")),
   })).sort((left, right) => String(right.latestDate).localeCompare(String(left.latestDate)));
 
   const investorItems = Array.from(investors.values()).map((item) => ({

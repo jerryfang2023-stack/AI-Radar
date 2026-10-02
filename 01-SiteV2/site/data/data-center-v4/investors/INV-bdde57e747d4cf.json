@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-11-05",
-    "latest_disclosed_at": "2026-07-16",
+    "latest_disclosed_at": "2026-03-10",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1acda6c36aafa568",
+        "canonical_entity_id": "",
+        "name": "Eridu"
+      },
       {
         "entity_id": "EN-7035f6607ad2d162",
         "canonical_entity_id": "",
@@ -87,47 +93,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-103f410efa96d5a5",
-        "funding_insight_id": "FI-99dd363c1166667e",
+        "activity_id": "IA-a59893a6b40813dd",
+        "funding_insight_id": "FI-a160ff15fc811200",
         "event_ids": [
-          "EV-f6a72cddbda748b3"
+          "EV-a447ffe54b998b9d"
         ],
-        "company_entity_id": "EN-a5d2ae286d0d9e45",
+        "company_entity_id": "EN-1acda6c36aafa568",
         "company_canonical_entity_id": "",
-        "company_name": "Whale",
-        "round": "C3轮扩展",
-        "round_code": "series_c3_extension",
-        "round_original": "C3轮扩展融资",
-        "amount_original": "4000万美元",
+        "company_name": "Eridu",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "未披露",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 40000000,
+          "currency": "",
+          "value": null,
           "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "4000 万美元"
+          "status": "unparsed",
+          "display_zh": "未披露"
         },
-        "announced_at": "2026-07-16",
+        "announced_at": "2026-03-10",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "C轮既有投资方",
-        "role_code": "historical_or_ambiguous",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-f9990b5df3232b99",
-            "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
-            "source_title": "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模",
-            "source_content_hash": "c127cd6c0e3152a6",
-            "quote": "Earlier Series C participants include Bosch Ventures",
-            "quote_hash": "d05dd669f49047cb33429abcc65bd9cb4edbb11f1e2a81efdf91c89aef118731"
+            "source_id": "FISRC-6d4642fdc4a2457c",
+            "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+            "source_title": "Eridu - 更快的 AI",
+            "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+            "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+            "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
           }
         ]
       },
       {
-        "activity_id": "IA-a08cca5200d6aa02",
+        "activity_id": "IA-6de433f4566040d8",
         "funding_insight_id": "FI-a1e0649c0b730f39",
         "event_ids": [
           "EV-a3ba586cbc57b5fd"
@@ -165,16 +171,48 @@
             "quote_hash": "fa8893112d87b7782b21a1bfe7fb38d3b508fcc351c4a8a60f17db326afb1933"
           }
         ]
+      },
+      {
+        "activity_id": "IA-55eb512c4b8ad9d4",
+        "funding_insight_id": "FI-99dd363c1166667e",
+        "event_ids": [
+          "EV-f6a72cddbda748b3"
+        ],
+        "company_entity_id": "EN-a5d2ae286d0d9e45",
+        "company_canonical_entity_id": "",
+        "company_name": "Whale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "C轮既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-f9990b5df3232b99",
+            "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
+            "source_title": "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模",
+            "source_content_hash": "c127cd6c0e3152a6",
+            "quote": "Earlier Series C participants include Bosch Ventures",
+            "quote_hash": "d05dd669f49047cb33429abcc65bd9cb4edbb11f1e2a81efdf91c89aef118731"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-f9990b5df3232b99",
-        "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
-        "source_title": "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模",
-        "source_content_hash": "c127cd6c0e3152a6",
-        "quote": "Earlier Series C participants include Bosch Ventures",
-        "quote_hash": "d05dd669f49047cb33429abcc65bd9cb4edbb11f1e2a81efdf91c89aef118731"
+        "source_id": "FISRC-6d4642fdc4a2457c",
+        "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+        "source_title": "Eridu - 更快的 AI",
+        "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+        "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+        "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
       },
       {
         "source_id": "FISRC-fa41049d7cbdf303",
@@ -183,6 +221,14 @@
         "source_content_hash": "3b1619e1efabd120",
         "quote": "alongside new strategic investors Bosch Ventures, Citi and prominent industry angels",
         "quote_hash": "fa8893112d87b7782b21a1bfe7fb38d3b508fcc351c4a8a60f17db326afb1933"
+      },
+      {
+        "source_id": "FISRC-f9990b5df3232b99",
+        "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
+        "source_title": "Whale 完成 4000 万美元 C3 轮扩展融资，C 轮总融资额达 1 亿美元，用于扩大全球企业 AI 运营规模",
+        "source_content_hash": "c127cd6c0e3152a6",
+        "quote": "Earlier Series C participants include Bosch Ventures",
+        "quote_hash": "d05dd669f49047cb33429abcc65bd9cb4edbb11f1e2a81efdf91c89aef118731"
       }
     ],
     "public_profile": {
@@ -223,6 +269,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d4642fdc4a2457c"
+        },
         {
           "description": "融资来源记录：Procurement Sciences · B轮 · 2025-11-05 · 本轮参投 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fa41049d7cbdf303"
@@ -269,6 +319,14 @@
           "source_content_hash": "c6483f72324638cf1e61d620bf029a398fc96a7c8207977c0ffbf41e99e4724e",
           "quote": "Bosch Ventures官网列出德国、美国、以色列、中国等投资办公室及联系人，并公布斯图加特总部邮箱Info.RBVC@de.bosch.com和地址。",
           "quote_hash": "f260bb0deebf9ad8e55455f0cda527602021bc3c846d84d6837311dbedf3df0f"
+        },
+        {
+          "source_id": "FISRC-6d4642fdc4a2457c",
+          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+          "source_title": "Eridu - 更快的 AI",
+          "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+          "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+          "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
         },
         {
           "source_id": "FISRC-fa41049d7cbdf303",

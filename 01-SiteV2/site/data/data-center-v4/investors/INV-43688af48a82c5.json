@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,11 +73,12 @@
     "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "lead": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
       "series_b",
+      "series_c",
       "series_d",
       "series_e"
     ],
@@ -103,6 +104,11 @@
         "name": "Monogram AI, Inc."
       },
       {
+        "entity_id": "EN-29a3723ce5ee3350",
+        "canonical_entity_id": "",
+        "name": "Together AI"
+      },
+      {
         "entity_id": "EN-6861f63c27eb0ada",
         "canonical_entity_id": "",
         "name": "WindBorne Systems"
@@ -110,7 +116,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-c41694dbdaca595e",
+        "activity_id": "IA-b1074717f6e25fe6",
         "funding_insight_id": "FI-5bf569d857da4dcb",
         "event_ids": [
           "EV-be364dc6883ec94b"
@@ -150,7 +156,7 @@
         ]
       },
       {
-        "activity_id": "IA-3ce3bd9769d23f14",
+        "activity_id": "IA-d44b025b5692c6e8",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -190,7 +196,7 @@
         ]
       },
       {
-        "activity_id": "IA-d79f4fffe2584a59",
+        "activity_id": "IA-291124415bcfe0bf",
         "funding_insight_id": "FI-db2bd30618100f0d",
         "event_ids": [
           "EV-60f219702a66bf38"
@@ -230,7 +236,48 @@
         ]
       },
       {
-        "activity_id": "IA-dbd6d1527834103d",
+        "activity_id": "IA-36a830d6ddfa2250",
+        "funding_insight_id": "FI-b1c547937abcaf77",
+        "event_ids": [
+          "EV-4a73829a143cf3fc",
+          "EV-13ec78dfdbca678b"
+        ],
+        "company_entity_id": "EN-29a3723ce5ee3350",
+        "company_canonical_entity_id": "",
+        "company_name": "Together AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$800M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c76c0a4ea6adedb7",
+            "source_url": "https://www.together.ai/blog/announcing-our-series-c",
+            "source_title": "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变",
+            "source_content_hash": "458ee8ff3e8d5ff41a8e17f5ed67badb7598d15dddac9f914e564d6daca98cd7",
+            "quote": "Series C funding of $800 million from an incredible group of investors including Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others.",
+            "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4de433bed9d0c4cf",
         "funding_insight_id": "FI-12131c1300a2d205",
         "event_ids": [
           "EV-fab81bddb815267b"
@@ -270,7 +317,7 @@
         ]
       },
       {
-        "activity_id": "IA-34038d92027b19b9",
+        "activity_id": "IA-590957209a386300",
         "funding_insight_id": "FI-5faa0336090509de",
         "event_ids": [
           "EV-5762fe51987bc5ff"
@@ -334,6 +381,14 @@
         "source_content_hash": "dcf3c391fcc5ef9d",
         "quote": "with additional investments from Translink Capital, Lux Capital, and previous investors",
         "quote_hash": "4e88ddb77f70111a514c20f1062d62d0dc0c067dc77fab1beccf099097f26e24"
+      },
+      {
+        "source_id": "FISRC-c76c0a4ea6adedb7",
+        "source_url": "https://www.together.ai/blog/announcing-our-series-c",
+        "source_title": "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变",
+        "source_content_hash": "458ee8ff3e8d5ff41a8e17f5ed67badb7598d15dddac9f914e564d6daca98cd7",
+        "quote": "Series C funding of $800 million from an incredible group of investors including Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others.",
+        "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
       },
       {
         "source_id": "FISRC-907e4297862ddd8c",

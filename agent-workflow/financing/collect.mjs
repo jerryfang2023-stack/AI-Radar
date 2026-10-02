@@ -7,8 +7,12 @@ import { createSearchGateway } from '../tools/lib/search-gateway.mjs';
 import { ingestPrivateEvidenceRecords } from '../tools/lib/private-evidence-backup.mjs';
 import { loadPrivateEvidenceRecord } from '../tools/lib/private-evidence-store.mjs';
 import { buildSourceIntake, mergeSourceIntakes, readSourceIntake, sourceIntakePath } from '../tools/lib/source-intake-v1.mjs';
+import { indexFinancingEvidence } from './evidence-index.mjs';
+import { collectSubscriptions } from './subscriptions.mjs';
+import { syncAIHotSelected } from './aihot-selected.mjs';
+import { createOriginalReader } from './original-reader.mjs';
 
-export async function collect({ root, directory, backupRoot, date, gateway, feed, capture = captureOriginal }) {
+export async function collect({ root, directory, backupRoot, date, gateway, feed, supplements, capture = captureOriginal }) {
   const file = path.join(directory, 'collection.json');
   const previous = read(file);
   if (previous && (previous.date !== date || previous.version !== config.version)) throw new Error('collection_checkpoint_identity_mismatch');
@@ -16,21 +20,29 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   if (previous?.accepted) {
     const intake = readSourceIntake(root, date);
     if (!intake || !previous.raw_ids.every(id => intake.payload.raw_documents.some(row => row.raw_id === id))) throw new Error('accepted_intake_missing_restore_checkpoint');
+    indexFinancingEvidence({root, backupRoot, date, collection:previous});
     return previous;
   }
   gateway ||= createSearchGateway({ cacheDir: path.join(directory, 'search-cache'), maxRequests: config.max_search_requests });
   const state = previous || { version: config.version, date, captures: {} };
+  const sourceState = path.join(backupRoot,'financing-monitor-state');
+  const reader=createOriginalReader({directory:path.join(sourceState,'original-reader'),date});
   const discovered = await discover({ date, search: gateway.search, feed, previous: state.receipts,
+    supplements: supplements || [
+      {id:'subscriptions',run:()=>collectSubscriptions({date,stateFile:path.join(sourceState,'subscriptions.json'),search:gateway.search})},
+      {id:'aihot_selected',run:()=>syncAIHotSelected({date,stateFile:path.join(sourceState,'aihot-selected.json')})},
+    ],
     onPage: page => write(path.join(directory, 'aihot', `${page.page}.json`), page),
     save: receipts => { state.receipts = receipts; write(file, state); },
   });
   state.discovery_complete = discovered.complete; state.failed_queries = discovered.failed;
+  state.supplemental_failures = discovered.supplementalFailures;
   state.search_health = gateway.status?.() || {}; state.search_attempts = gateway.attempts || [];
   const remaining = discovered.leads.filter(lead => !state.captures[lead.url]);
   const batch = remaining.slice(0, config.max_capture_attempts);
   for (let i = 0; i < batch.length; i += config.capture_concurrency) {
     const results = await Promise.all(batch.slice(i, i + config.capture_concurrency).map(async lead => {
-      try { return { lead, result: await capture(lead, { date }) }; }
+      try { return { lead, result: await capture(lead, { date, reader }) }; }
       catch (error) { return { lead, result: { status: 'pending', reason: error.message } }; }
     }));
     const records = results.filter(({ result }) => result.status === 'accepted').map(({ lead, result }) => ({
@@ -54,6 +66,7 @@ export async function collect({ root, directory, backupRoot, date, gateway, feed
   intake.source_artifacts.forEach(row => { row.snapshot_refs = [`evidence://${row.content_hash}`]; });
   intake.raw_documents.forEach(row => { row.body_ref = `evidence://${row.content_hash}`; });
   write(sourceIntakePath(root, date), mergeSourceIntakes(readSourceIntake(root, date)?.payload, intake));
+  indexFinancingEvidence({root, backupRoot, date, collection:state});
   state.raw_ids = intake.raw_documents.map(row => row.raw_id);
   state.unattempted = Math.max(0, remaining.length - batch.length);
   state.counts = { leads: discovered.leads.length, accepted_originals: entries.length, pending: Object.values(state.captures).filter(row => row.status === 'pending').length, excluded: Object.values(state.captures).filter(row => row.status === 'excluded').length };

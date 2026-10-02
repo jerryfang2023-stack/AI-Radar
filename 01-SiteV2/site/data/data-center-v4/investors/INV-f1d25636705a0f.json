@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-30",
-    "latest_disclosed_at": "2026-03-30",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
@@ -82,11 +83,56 @@
         "entity_id": "EN-5b3767eb23d5e4ed",
         "canonical_entity_id": "",
         "name": "Qodo"
+      },
+      {
+        "entity_id": "EN-0d0dd4bc07420a2c",
+        "canonical_entity_id": "",
+        "name": "Volantis"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-b5768cefb8704542",
+        "activity_id": "IA-85c960b2e39f6af6",
+        "funding_insight_id": "FI-3a45fb24c3af4f80",
+        "event_ids": [
+          "EV-39247400114d59dd"
+        ],
+        "company_entity_id": "EN-0d0dd4bc07420a2c",
+        "company_canonical_entity_id": "",
+        "company_name": "Volantis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$88 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 88000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8800 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f61726ece8d567da",
+            "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+            "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+            "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+            "quote": "with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures",
+            "quote_hash": "2da44dbcebe4bfa9bb98c78f5e465ad49971edc1b5eb23e78d6ad9c6ceda7422"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-dfd42370c42cd69c",
         "funding_insight_id": "FI-f8ac4d58dc2c42cb",
         "event_ids": [
           "EV-acdeebead5324344"
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-f61726ece8d567da",
+        "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+        "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+        "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+        "quote": "with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures",
+        "quote_hash": "2da44dbcebe4bfa9bb98c78f5e465ad49971edc1b5eb23e78d6ad9c6ceda7422"
+      },
       {
         "source_id": "FISRC-f001682a294672d5",
         "source_url": "https://techcrunch.com/2026/03/30/qodo-bets-on-code-verification-as-ai-coding-scales-raises-70m/",
@@ -189,6 +243,10 @@
         {
           "description": "融资数据库也记录了 Susa 参与 Qodo B 轮的披露；该记录中的金额是公司融资总额，不是 Susa 的出资额。",
           "source_id": "FISRC-f001682a294672d5"
+        },
+        {
+          "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮参投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f61726ece8d567da"
         }
       ],
       "contacts": [
@@ -232,6 +290,14 @@
           "source_content_hash": "043dbfa14e6bef8c",
           "quote": "Maor Ventures, Phoenix Venture Partners, S Ventures, Square Peg, Susa Ventures, TLV Partners, Vine Ventures, Peter Welinder (OpenAI), and Clara Shih (Meta) also joined in the round.",
           "quote_hash": "a027f2b22de724675eb349b0bafb306c4f586cad722a3279c84850378ab6a186"
+        },
+        {
+          "source_id": "FISRC-f61726ece8d567da",
+          "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+          "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+          "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+          "quote": "with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures",
+          "quote_hash": "2da44dbcebe4bfa9bb98c78f5e465ad49971edc1b5eb23e78d6ad9c6ceda7422"
         }
       ],
       "profile_type": "organization",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -86,7 +86,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-a001c295537cc258",
+        "activity_id": "IA-5f78298b5a61ab58",
         "funding_insight_id": "FI-72755fd9439ecca6",
         "event_ids": [
           "EV-68d5a02e5213b43c"
@@ -290,6 +290,34 @@
       "identity_status": "verified",
       "coverage_status": "researched",
       "coverage_note": "本档案针对英伟达这一企业投资方汇总官方公开资料。官方文章将企业投资、NVentures风险投资和初创加速/创投联盟区分为不同路径；2023年数量均按文章发布日期标注，不代表2026年当前投资规模。NVIDIA Inception邮箱用于创投联盟咨询，不是NVentures项目递交地址。"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.facts[3].label": {
+          "text": "NVentures披露数量",
+          "source_hash": "bb30421d0258194a5ecdbe3aa95651d450a6b4533b3cea3ee13651538f1ebd82",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:38.853Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[0].description": {
+          "text": "NVIDIA官方文章列出的企业战略投资案例包括Ayar Labs、Hugging Face、Databricks和Cohere等；这是2023年文章的选例，不代表当前完整组合。",
+          "source_hash": "14172f8ef4148b467991ca1d4a1008965a628b917d8be6b2a11d0feed1162f69",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:38.853Z",
+          "status": "translated"
+        },
+        "public_profile.track_record[1].description": {
+          "text": "NVentures官方文章列举Genesis Therapeutics、Inceptive、Terray、Charm、Evozyne、Generate、Superluminal、Machina Labs和Seurat Technologies等投资案例。",
+          "source_hash": "cdcbfa48bb5fc869e20e941d5a205ac84b3189533bb38263783526c41192788f",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:38.853Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

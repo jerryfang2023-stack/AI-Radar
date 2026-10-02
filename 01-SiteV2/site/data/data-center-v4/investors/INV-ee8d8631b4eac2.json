@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2026-09-04",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-08-26",
     "latest_disclosed_at": "2026-09-04",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "multi_round",
       "pre_series_a_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-4b8de799d3cb1255",
+        "canonical_entity_id": "",
+        "name": "蜂巢互联"
+      },
       {
         "entity_id": "EN-ee2dce6ecf9a1bab",
         "canonical_entity_id": "EN-ee2dce6ecf9a1bab",
@@ -86,7 +92,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-26cadf220ce458da",
+        "activity_id": "IA-ce661364f93f6780",
         "funding_insight_id": "FI-3e97f5e30e99ff0b",
         "event_ids": [
           "EV-cbec329253108e80"
@@ -124,6 +130,46 @@
             "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
           }
         ]
+      },
+      {
+        "activity_id": "IA-f8190ff17f10c047",
+        "funding_insight_id": "FI-f3eb163aa24caf8a",
+        "event_ids": [
+          "EV-bc166d0f16140940"
+        ],
+        "company_entity_id": "EN-4b8de799d3cb1255",
+        "company_canonical_entity_id": "",
+        "company_name": "蜂巢互联",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "12亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "12 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d442164db5f81db",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+            "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+            "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+            "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+            "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +180,14 @@
         "source_content_hash": "34bcef102c1e755b",
         "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
         "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+      },
+      {
+        "source_id": "FISRC-6d442164db5f81db",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+        "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+        "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+        "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+        "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
       }
     ],
     "public_profile": {
@@ -148,6 +202,10 @@
         {
           "description": "融资来源记录：深朴智能 · Pre-A+轮 · 2026-09-04 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a65ce425f6a14bd6"
+        },
+        {
+          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d442164db5f81db"
         }
       ],
       "contacts": [],
@@ -159,6 +217,14 @@
           "source_content_hash": "34bcef102c1e755b",
           "quote": "本轮融资获得 珂玺资本、上海科创旗下知识产权基金、金浦投资、亳州产投、上城资本、乾融资本，以及老股东线性资本的共同支持",
           "quote_hash": "63cc64e026257c66ef879cdc3ec4b8d1d9c592b120f4c191292f6ba20fa7b625"
+        },
+        {
+          "source_id": "FISRC-6d442164db5f81db",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+          "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+          "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
         }
       ],
       "last_verified_at": "2026-09-25"

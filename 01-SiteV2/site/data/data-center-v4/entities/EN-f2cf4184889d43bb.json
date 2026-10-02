@@ -1,0 +1,192 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-f2cf4184889d43bb",
+    "name": "Enflame",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [
+      "燧原科技"
+    ],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7954932dac49a74a"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [
+      "EN-0b706b4b95ba647c"
+    ],
+    "firstSeen": "2026-10-01",
+    "lastSeen": "2026-10-01",
+    "relationIds": [
+      "REL2-2fb7b448b8d07ab4"
+    ],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-7954932dac49a74a"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [
+        "EV-218c2f6ecf3c369f"
+      ],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7954932dac49a74a",
+        "dataDate": "2026-10-01",
+        "date": "2026-10-01",
+        "eventType": "ipo_listing",
+        "eventTypeLabel": "IPO 与上市",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "2026国产AI算力资本化加速：哪些公司值得关注？哪些芯片架构支持元计算？",
+        "displayTags": [],
+        "entityIds": [
+          "EN-aac3a4d62c3f408d",
+          "EN-f2cf4184889d43bb"
+        ]
+      },
+      {
+        "id": "EV-218c2f6ecf3c369f",
+        "dataDate": "2026-07-20",
+        "date": "2026-07-19",
+        "eventType": "hardware_product",
+        "eventTypeLabel": "硬件产品",
+        "eventGroup": "AI 硬件",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "燧原科技联合中兴通讯发布云燧 ESL64-O 超节点，自研 AI 芯片与 OEX 架构降低互联成本",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-e95cf508b2bef361"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-e95cf508b2bef361",
+          "EN-4dbe391b8fcf977a",
+          "EN-0b706b4b95ba647c"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [
+    {
+      "id": "EN-0b706b4b95ba647c",
+      "name": "云燧 ESL64-O 超节点",
+      "entityType": "product_candidate",
+      "typeLabel": "产品、模型与服务",
+      "aliases": [
+        "ESL64-O"
+      ],
+      "verificationStatus": "verified",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-218c2f6ecf3c369f"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [],
+      "relatedEntityIds": [
+        "EN-f2cf4184889d43bb"
+      ],
+      "firstSeen": "2026-07-19",
+      "lastSeen": "2026-07-20"
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "REL2-2fb7b448b8d07ab4",
+      "relationship_version": "RELATION-V2.1",
+      "subject_ref": "EN-f2cf4184889d43bb",
+      "subject_type": "entity",
+      "predicate": "publishes",
+      "object_ref": "EN-0b706b4b95ba647c",
+      "object_type": "entity",
+      "event_id": "EV-218c2f6ecf3c369f",
+      "claim_refs": [
+        "CL-bef992849f6c8110",
+        "CL-4acaacad906c6cc7",
+        "CL-23db5f68b34959d3"
+      ],
+      "source_refs": [
+        "SA-0729ccc28efa48d9"
+      ],
+      "data_date": "2026-07-20",
+      "status": "verified"
+    }
+  ],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": []
+}

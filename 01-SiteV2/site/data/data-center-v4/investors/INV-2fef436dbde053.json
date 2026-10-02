@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,105 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-23",
-    "latest_disclosed_at": "2026-06-23",
+    "first_disclosed_at": "2026-05-19",
+    "latest_disclosed_at": "2026-05-19",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "undisclosed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-47afad612b1f9cc8",
+        "canonical_entity_id": "",
+        "name": "Ocean"
+      }
+    ],
     "activities": [
       {
-        "activity_id": "IA-9667b73cd2afeeb2",
+        "activity_id": "IA-ec8366b01ad2e418",
+        "funding_insight_id": "FI-0e4f80762088cfd0",
+        "event_ids": [
+          "EV-2d0d165e866cd770"
+        ],
+        "company_entity_id": "EN-47afad612b1f9cc8",
+        "company_canonical_entity_id": "",
+        "company_name": "Ocean",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$28 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 28000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2800 万美元"
+        },
+        "announced_at": "2026-05-19",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0191618f7b8a168d",
+            "source_url": "https://techcrunch.com/2026/05/19/from-teen-hacker-to-iron-dome-researcher-this-founder-raised-28m-to-fight-ai-phishing",
+            "source_title": "从青少年黑客到铁穹研究员，这位创始人融资2800万美元以对抗AI钓鱼",
+            "source_content_hash": "c2fb0635b7d5e4c5549c2e2679b33c49a4bc1394fbb801ccb6b502b5019f26fc",
+            "quote": "High-profile angel investors also joined the round, including Wiz co-founder and CEO Assaf Rappaport, as well as Yevgeny Dibrov and Nadir Izrael, the co-founders of Armis",
+            "quote_hash": "5d28d4c0a8db9fdd2b544c64f91805021ce841251b7d396afb5f34265370e398"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-2f911d2c1d85eac9",
+        "funding_insight_id": "FI-6fdfe3674217723b",
+        "event_ids": [
+          "EV-0a9d7be146eeb62a"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资人与顾问",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-8f5a35fa6bbc977d",
+            "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+            "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+            "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+            "quote": "notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz",
+            "quote_hash": "1fb50c74dffb8efb65871514ab19b795bccb6f83505878678ac39218bd809569"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1d8d715bce417016",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
           "EV-20d762872664fddb"
@@ -86,23 +167,15 @@
         "company_entity_id": "EN-450dcf23e621ff10",
         "company_canonical_entity_id": "",
         "company_name": "Engram",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount_original": "$98M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 98000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "9800 万美元"
-        },
-        "announced_at": "2026-06-23",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使投资人",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "天使投资人",
         "role_code": "historical_or_ambiguous",
@@ -119,6 +192,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0191618f7b8a168d",
+        "source_url": "https://techcrunch.com/2026/05/19/from-teen-hacker-to-iron-dome-researcher-this-founder-raised-28m-to-fight-ai-phishing",
+        "source_title": "从青少年黑客到铁穹研究员，这位创始人融资2800万美元以对抗AI钓鱼",
+        "source_content_hash": "c2fb0635b7d5e4c5549c2e2679b33c49a4bc1394fbb801ccb6b502b5019f26fc",
+        "quote": "High-profile angel investors also joined the round, including Wiz co-founder and CEO Assaf Rappaport, as well as Yevgeny Dibrov and Nadir Izrael, the co-founders of Armis",
+        "quote_hash": "5d28d4c0a8db9fdd2b544c64f91805021ce841251b7d396afb5f34265370e398"
+      },
+      {
+        "source_id": "FISRC-8f5a35fa6bbc977d",
+        "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+        "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+        "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+        "quote": "notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz",
+        "quote_hash": "1fb50c74dffb8efb65871514ab19b795bccb6f83505878678ac39218bd809569"
+      },
       {
         "source_id": "FISRC-39d911c5038cb1c0",
         "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
@@ -201,6 +290,14 @@
           "source_id": "assaf_engram_activity"
         },
         {
+          "description": "融资来源记录：Ocean · 轮次未披露 · 2026-05-19 · 本轮参投 · $28 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0191618f7b8a168d"
+        },
+        {
+          "description": "融资来源记录：Engram · 历史轮次未披露 · 天使投资人与顾问。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-8f5a35fa6bbc977d"
+        },
+        {
           "description": "融资来源记录：Engram · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39d911c5038cb1c0"
         }
@@ -237,6 +334,22 @@
           "source_content_hash": "f7105d727554bb38",
           "quote": "backed by notable angels including Andrej Karpathy, co-founder of OpenAI, and Assaf Rappaport, co-founder and CEO of Wiz.",
           "quote_hash": "31f3d14e96326aa6bbfd5f95c46a49ad59ebc0bef7635fbe0f2925084613ea1d"
+        },
+        {
+          "source_id": "FISRC-0191618f7b8a168d",
+          "source_url": "https://techcrunch.com/2026/05/19/from-teen-hacker-to-iron-dome-researcher-this-founder-raised-28m-to-fight-ai-phishing",
+          "source_title": "从青少年黑客到铁穹研究员，这位创始人融资2800万美元以对抗AI钓鱼",
+          "source_content_hash": "c2fb0635b7d5e4c5549c2e2679b33c49a4bc1394fbb801ccb6b502b5019f26fc",
+          "quote": "High-profile angel investors also joined the round, including Wiz co-founder and CEO Assaf Rappaport, as well as Yevgeny Dibrov and Nadir Izrael, the co-founders of Armis",
+          "quote_hash": "5d28d4c0a8db9fdd2b544c64f91805021ce841251b7d396afb5f34265370e398"
+        },
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+          "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+          "quote": "notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz",
+          "quote_hash": "1fb50c74dffb8efb65871514ab19b795bccb6f83505878678ac39218bd809569"
         }
       ],
       "last_verified_at": "2026-09-27",

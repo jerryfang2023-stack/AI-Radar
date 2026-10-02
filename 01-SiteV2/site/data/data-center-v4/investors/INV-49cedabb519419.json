@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,73 +61,80 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2025-08-01",
-    "latest_disclosed_at": "2026-07-09",
+    "first_disclosed_at": "2025-01",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
-      "historical_or_ambiguous": 2,
-      "other_current_round": 1
+      "historical_or_ambiguous": 3,
+      "other_current_round": 1,
+      "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-132106a20b11b49b",
+        "canonical_entity_id": "",
+        "name": "Mona"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-70e7c69caaca6c10",
-        "funding_insight_id": "FI-3bbba5a15bb40a85",
+        "activity_id": "IA-f9b355250a4f495a",
+        "funding_insight_id": "FI-53d101dc94d7e28e",
         "event_ids": [
-          "EV-e41fc65eb014893f"
+          "EV-51221c8be7d20b5d"
         ],
-        "company_entity_id": "FICO-gradium",
+        "company_entity_id": "EN-132106a20b11b49b",
         "company_canonical_entity_id": "",
-        "company_name": "Gradium",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "种子轮",
-        "amount_original": "$100 million",
+        "company_name": "Mona",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$3.5M",
         "amount_normalized": {
           "currency": "USD",
-          "value": 100000000,
+          "value": 3500000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
           "status": "exact",
-          "display_zh": "1 亿美元"
+          "display_zh": "350 万美元"
         },
-        "announced_at": "2026-07-09",
+        "announced_at": "2026-09-28",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "种子轮参投（2025年12月首次披露）",
-        "role_code": "historical_or_ambiguous",
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-9af7e6a4d7b3d5e7",
-            "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
-            "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
-            "source_content_hash": "84b42b7082dca9a3",
-            "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
-            "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+            "source_id": "FISRC-22cce00c604ac941",
+            "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
+            "source_title": "Mona 融资 350 万美元，扩展其 AI 平台，助力小企业获取资本和财务辅导",
+            "source_content_hash": "31ee6f37bf938bace64ffc1557995a300c7a959c474b8f5b0adc755a5d96b98c",
+            "quote": "The round was led by Sandberg Bernthal Venture Partners, with participation from Alumni Ventures, Wisdom Ventures, angels including former Google CEO Eric Schmidt, and others.",
+            "quote_hash": "b59cb931e6bcc686806ca8aaf25c7554221cb7ee7bb077ca8d480e676a0494bc"
           }
         ]
       },
       {
-        "activity_id": "IA-8e41a65c80c262b0",
+        "activity_id": "IA-6d8bfbac9a8d8f98",
         "funding_insight_id": "FI-9c3c02658ff94312",
         "event_ids": [
           "EV-cded77b1de2db61a"
@@ -167,7 +174,71 @@
         ]
       },
       {
-        "activity_id": "IA-6f785c04106cc3f7",
+        "activity_id": "IA-846c65ea9b0bf582",
+        "funding_insight_id": "FI-3bbba5a15bb40a85",
+        "event_ids": [
+          "EV-e41fc65eb014893f"
+        ],
+        "company_entity_id": "FICO-gradium",
+        "company_canonical_entity_id": "",
+        "company_name": "Gradium",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮参投（2025年12月首次披露）",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "种子轮参投（2025年12月首次披露）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9af7e6a4d7b3d5e7",
+            "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+            "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+            "source_content_hash": "84b42b7082dca9a3",
+            "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+            "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-7f224c8bbc3892ed",
+        "funding_insight_id": "FI-03e399f9044022c0",
+        "event_ids": [
+          "EV-4e4ae1578720e907"
+        ],
+        "company_entity_id": "EN-ae3d8efc01c7627d",
+        "company_canonical_entity_id": "",
+        "company_name": "Astrocade",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2b972d6dc3210f21",
+            "source_url": "https://tracxn.com/d/companies/astrocade/__t69tbE9q7gh0hwUSnmOw-0M1iyCjs5tL31Yn9xDNOT8/funding-and-investors",
+            "source_title": "Astrocade",
+            "source_content_hash": "a9f9f9fd5bd9030c",
+            "quote": "Astrocade has total 19 investors, 13 are institutional investors including Sequoia Capital and 12 others, 6 are Angel investors including Eric Schmidt and 5 others.",
+            "quote_hash": "815eb8f39e78ee764f94a200ff12317a354c71e91f56fd9c9194c49558aad404"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-cfd7cd4c4b3d2b74",
         "funding_insight_id": "FI-1064b8c5f69e8336",
         "event_ids": [
           "EV-23ae55daa341be06"
@@ -175,23 +246,15 @@
         "company_entity_id": "EN-50e2a4156631df49",
         "company_canonical_entity_id": "",
         "company_name": "Fundamental Research Labs",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$33 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 33000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3300 万美元"
-        },
-        "announced_at": "2025-08-01",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮参投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "种子轮参投",
         "role_code": "historical_or_ambiguous",
@@ -209,12 +272,12 @@
     ],
     "evidence": [
       {
-        "source_id": "FISRC-9af7e6a4d7b3d5e7",
-        "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
-        "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
-        "source_content_hash": "84b42b7082dca9a3",
-        "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
-        "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+        "source_id": "FISRC-22cce00c604ac941",
+        "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
+        "source_title": "Mona 融资 350 万美元，扩展其 AI 平台，助力小企业获取资本和财务辅导",
+        "source_content_hash": "31ee6f37bf938bace64ffc1557995a300c7a959c474b8f5b0adc755a5d96b98c",
+        "quote": "The round was led by Sandberg Bernthal Venture Partners, with participation from Alumni Ventures, Wisdom Ventures, angels including former Google CEO Eric Schmidt, and others.",
+        "quote_hash": "b59cb931e6bcc686806ca8aaf25c7554221cb7ee7bb077ca8d480e676a0494bc"
       },
       {
         "source_id": "FISRC-6c35525e379488bf",
@@ -223,6 +286,22 @@
         "source_content_hash": "adc0cc9ffe3c9dd0",
         "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
         "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
+      },
+      {
+        "source_id": "FISRC-9af7e6a4d7b3d5e7",
+        "source_url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia",
+        "source_title": "巴黎AI语音初创Gradium获1亿美元种子轮融资，Nvidia参投",
+        "source_content_hash": "84b42b7082dca9a3",
+        "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
+        "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
+      },
+      {
+        "source_id": "FISRC-2b972d6dc3210f21",
+        "source_url": "https://tracxn.com/d/companies/astrocade/__t69tbE9q7gh0hwUSnmOw-0M1iyCjs5tL31Yn9xDNOT8/funding-and-investors",
+        "source_title": "Astrocade",
+        "source_content_hash": "a9f9f9fd5bd9030c",
+        "quote": "Astrocade has total 19 investors, 13 are institutional investors including Sequoia Capital and 12 others, 6 are Angel investors including Eric Schmidt and 5 others.",
+        "quote_hash": "815eb8f39e78ee764f94a200ff12317a354c71e91f56fd9c9194c49558aad404"
       },
       {
         "source_id": "FISRC-3ac436d049634bc2",
@@ -314,16 +393,16 @@
           "source_id": "schmidt_bio"
         },
         {
+          "description": "融资来源记录：Mona · 轮次未披露 · 2026-09-28 · 本轮参投 · $3.5M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-22cce00c604ac941"
+        },
+        {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c35525e379488bf"
         },
         {
           "description": "融资来源记录：Gradium · 种子轮 · 2025-01 · 种子轮参投（2025年12月首次披露）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9af7e6a4d7b3d5e7"
-        },
-        {
-          "description": "融资来源记录：Fundamental Research Labs · 种子轮 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3ac436d049634bc2"
         }
       ],
       "sources": [
@@ -334,6 +413,14 @@
           "source_content_hash": "a59f57b8cdb68692929dda637a72903936fc8e1fb6e1aca128d327b81259acf0",
           "quote": "Eric Schmidt, KBE, Chair and CEO of Relativity Space ... during his tenure as CEO and Chairman from 2001 to 2011. From 2018-2020, Eric served as the Technical Advisor to Alphabet. He was Executive Chairman of Alphabet from 2015-2018 and remained Chairman of Google until 2015. Prior to Google, Eric was Chairman and CEO of Novell. He spent 14 years at Sun Microsystems, rising to Chief Technology Officer. Since 2022 he has served as Chairman of Sandbox AQ. In 2021, he launched, and currently Chairs, the Special Competitive Studies Project. Eric holds a bachelor’s degree in electrical engineering from Princeton University and a master’s degree and Ph.D. in computer science from UC Berkeley.",
           "quote_hash": "b097ce8ea78b14ba0bed697e650b89800ff37800870b0d7797b37b3df992e109"
+        },
+        {
+          "source_id": "FISRC-22cce00c604ac941",
+          "source_url": "https://www.businesswire.com/news/home/20260928892666/en/Mona-Raises-%243.5M-to-Expand-Its-AI-Platform-for-Small-Business-Capital-Access-and-Financial-Coaching",
+          "source_title": "Mona 融资 350 万美元，扩展其 AI 平台，助力小企业获取资本和财务辅导",
+          "source_content_hash": "31ee6f37bf938bace64ffc1557995a300c7a959c474b8f5b0adc755a5d96b98c",
+          "quote": "The round was led by Sandberg Bernthal Venture Partners, with participation from Alumni Ventures, Wisdom Ventures, angels including former Google CEO Eric Schmidt, and others.",
+          "quote_hash": "b59cb931e6bcc686806ca8aaf25c7554221cb7ee7bb077ca8d480e676a0494bc"
         },
         {
           "source_id": "FISRC-6c35525e379488bf",
@@ -350,14 +437,6 @@
           "source_content_hash": "84b42b7082dca9a3",
           "quote": "Gradium originally launched out of stealth in December with $70 million from a roster of impressive investors, including FirstMark Capital, Eurazeo, DST Global Partners, Eric Schmidt, and French telecom billionaire Xavier Niel.",
           "quote_hash": "8a279183c65affc5bbc27dbf381db1b94f01e896b7ab8f45b484410fc650fb5d"
-        },
-        {
-          "source_id": "FISRC-3ac436d049634bc2",
-          "source_url": "https://techcrunch.com/2025/08/01/fundamental-research-labs-nabs-33-million-from-prosus-to-build-ai-agents-for-multiple-verticals/",
-          "source_title": "Fundamental Research Labs 获超 3000 万美元融资，用于跨垂直领域构建 AI 智能体",
-          "source_content_hash": "7ac40477f31de3c2",
-          "quote": "with participation from a16z Speedrun and Eric Schmidt",
-          "quote_hash": "e9a47343212197afc2f14cc7884d6536820ef9694080c8de5d1edeb520f0fdb0"
         }
       ],
       "last_verified_at": "2026-09-25",

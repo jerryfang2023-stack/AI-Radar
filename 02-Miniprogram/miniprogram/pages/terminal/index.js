@@ -64,6 +64,7 @@ Page({
   onShow() {
     syncTabBar(this, 0);
     this.refreshFeaturedObservations();
+    refreshFundingData().then(state => { if(!this.featuredDisposed)this.applyFundingData(state.index); });
     const currentIndex = getFundingData().index;
     if (currentIndex.meta.generatedAt !== this.data.meta.generatedAt) this.applyFundingData(currentIndex);
     else this.updateMetrics(currentIndex);
@@ -103,7 +104,7 @@ Page({
     const featured = selectFeatured(index.cards, this.data.selectedMarketRegion, chinaDate(), this.featuredObservations || {});
     this.setData({
       featuredCards: featured.cards,
-      featuredCurrent: 0,
+      featuredCurrent: Math.max(0, featured.cards.findIndex(card => card.id === this.data.featuredCards[this.data.featuredCurrent]?.id)),
       featuredLabel: featured.label,
       todayCount,
       weekCount,
@@ -195,7 +196,8 @@ Page({
   },
 
   changeFeatured(event) {
-    this.setData({ featuredCurrent: event.detail.current });
+    const current=Number(event.detail.current);
+    if(Number.isInteger(current) && current>=0 && current<this.data.featuredCards.length)this.setData({ featuredCurrent: current });
   },
 
   openFeatured(event) {

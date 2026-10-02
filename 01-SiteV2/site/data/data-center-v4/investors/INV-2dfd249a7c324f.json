@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "CN"
@@ -73,6 +73,7 @@
     "latest_disclosed_at": "2026-08-12",
     "role_counts": {
       "co_lead": 1,
+      "historical_or_ambiguous": 1,
       "participant": 2
     },
     "round_codes": [
@@ -94,7 +95,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-8feaeec11d57c119",
+        "activity_id": "IA-ccd55530c6bcffcd",
         "funding_insight_id": "FI-42815b3fc014db68",
         "event_ids": [
           "EV-64c5290cc685eb93"
@@ -134,7 +135,7 @@
         ]
       },
       {
-        "activity_id": "IA-69e9a4c590fe0e0b",
+        "activity_id": "IA-45848b56adb8c5ea",
         "funding_insight_id": "FI-7a7b9825a0a59da6",
         "event_ids": [
           "EV-34a58f84a7ba4e92"
@@ -174,7 +175,7 @@
         ]
       },
       {
-        "activity_id": "IA-bbc93db9671b4d49",
+        "activity_id": "IA-274288f86c8fb610",
         "funding_insight_id": "FI-7108544d47292865",
         "event_ids": [
           "EV-5575555340c04c5a"
@@ -212,6 +213,38 @@
             "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
           }
         ]
+      },
+      {
+        "activity_id": "IA-0039ffca1edf9057",
+        "funding_insight_id": "FI-4880b1e3fb7a4da4",
+        "event_ids": [
+          "EV-008220e3dc696cb5"
+        ],
+        "company_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_canonical_entity_id": "EN-9b21c9bf3305c0d6",
+        "company_name": "生数科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "原有股东持续追加投资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b07965e9cd2c01b5",
+            "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+            "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+            "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+            "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+            "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -238,6 +271,14 @@
         "source_content_hash": "a281cc701a9028fb",
         "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资",
         "quote_hash": "f35899115b693a02a891df90bd23087e3313109be82ae0066df26adecfb5827b"
+      },
+      {
+        "source_id": "FISRC-b07965e9cd2c01b5",
+        "source_url": "https://mp.weixin.qq.com/s/JwVjjqEzE7MChEl4IRvsVg",
+        "source_title": "生数科技完成近20亿元B轮融资，以通用世界模型定义下一代数字与物理世界生产力底座",
+        "source_content_hash": "33b185944330ae035c659dcbfd06a8b1186deb4d17606cae1a786cf4dbabb4f7",
+        "quote": "星连资本、达泰资本、建发新兴投资、BV百度风投、卓源亚洲等原有股东持续追加投资。",
+        "quote_hash": "5547fd519297b9ae3dd99e248d43e72d69ec15eae75148ff880805a3fc7180d0"
       }
     ],
     "public_profile": {

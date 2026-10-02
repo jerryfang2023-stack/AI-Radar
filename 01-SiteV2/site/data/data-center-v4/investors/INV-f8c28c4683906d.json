@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,33 +61,40 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-30",
+    "first_disclosed_at": "2026-05-31",
     "latest_disclosed_at": "2026-06-30",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "other_current_round": 1
+      "other_current_round": 1,
+      "participant": 1
     },
     "round_codes": [
-      "multi_round"
+      "multi_round",
+      "seed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "FICO-etched",
         "canonical_entity_id": "",
         "name": "Etched"
+      },
+      {
+        "entity_id": "EN-c32662785b597e46",
+        "canonical_entity_id": "",
+        "name": "Trajectory"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-73537e6fa6173f67",
+        "activity_id": "IA-f62b1f8f68c47c12",
         "funding_insight_id": "FI-d24e79349c1e9713",
         "event_ids": [
           "EV-040fc355bc12a750",
@@ -128,7 +135,47 @@
         ]
       },
       {
-        "activity_id": "IA-d99c95b90ef42d74",
+        "activity_id": "IA-d5f2bfd34398a9de",
+        "funding_insight_id": "FI-dd04330326d86da8",
+        "event_ids": [
+          "EV-54f4bd47b09c4dc3"
+        ],
+        "company_entity_id": "EN-c32662785b597e46",
+        "company_canonical_entity_id": "",
+        "company_name": "Trajectory",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$15 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-05-31",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-13a2dacfcddc2542",
+            "source_url": "https://pulse2.com/trajectory-raises-15-million-to-build-a-platform-for-continual-learning/",
+            "source_title": "Trajectory 融资 1500 万美元，打造持续学习平台",
+            "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+            "quote": "The funding round included participation from Conviction, Bessemer Venture Partners, Radical Ventures, as well as notable AI leaders including Jeff Dean and Fei-Fei Li.",
+            "quote_hash": "4d86e29cd2c6e8d8d65796ccaa48f1abe3c1dd687f6a6b365b6376524de1726c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8ae7f75fbc38fc56",
         "funding_insight_id": "FI-5153381171755c70",
         "event_ids": [
           "EV-ad75efcb12a07793"
@@ -136,23 +183,15 @@
         "company_entity_id": "FICO-etched",
         "company_canonical_entity_id": "",
         "company_name": "Etched",
-        "round": "轮次未披露",
-        "round_code": "undisclosed",
-        "round_original": "未披露轮次",
-        "amount_original": "$500 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 500000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "5 亿美元"
-        },
-        "announced_at": "2026-06-30",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使投资人",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "天使投资人",
         "role_code": "historical_or_ambiguous",
@@ -176,6 +215,14 @@
         "source_content_hash": "fa74de6f9a9e3ef8",
         "quote": "So are computer vision pioneer Fei-Fei Li and hedge fund manager Stanley Druckenmiller.",
         "quote_hash": "8cb5619f1d1778424ce9f51b1d4534660655d0afedfc5faa24b9bb31ed5a32e0"
+      },
+      {
+        "source_id": "FISRC-13a2dacfcddc2542",
+        "source_url": "https://pulse2.com/trajectory-raises-15-million-to-build-a-platform-for-continual-learning/",
+        "source_title": "Trajectory 融资 1500 万美元，打造持续学习平台",
+        "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+        "quote": "The funding round included participation from Conviction, Bessemer Venture Partners, Radical Ventures, as well as notable AI leaders including Jeff Dean and Fei-Fei Li.",
+        "quote_hash": "4d86e29cd2c6e8d8d65796ccaa48f1abe3c1dd687f6a6b365b6376524de1726c"
       },
       {
         "source_id": "FISRC-b750a2ea9e7c7b76",
@@ -239,6 +286,10 @@
           "source_id": "FISRC-ec090e2bf0f8f6e9"
         },
         {
+          "description": "融资来源记录：Trajectory · 种子轮 · 2026-05-31 · 本轮参投 · $15 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-13a2dacfcddc2542"
+        },
+        {
           "description": "融资来源记录：Etched · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b750a2ea9e7c7b76"
         }
@@ -275,6 +326,14 @@
           "source_content_hash": "fa74de6f9a9e3ef8",
           "quote": "So are computer vision pioneer Fei-Fei Li and hedge fund manager Stanley Druckenmiller.",
           "quote_hash": "8cb5619f1d1778424ce9f51b1d4534660655d0afedfc5faa24b9bb31ed5a32e0"
+        },
+        {
+          "source_id": "FISRC-13a2dacfcddc2542",
+          "source_url": "https://pulse2.com/trajectory-raises-15-million-to-build-a-platform-for-continual-learning/",
+          "source_title": "Trajectory 融资 1500 万美元，打造持续学习平台",
+          "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+          "quote": "The funding round included participation from Conviction, Bessemer Venture Partners, Radical Ventures, as well as notable AI leaders including Jeff Dean and Fei-Fei Li.",
+          "quote_hash": "4d86e29cd2c6e8d8d65796ccaa48f1abe3c1dd687f6a6b365b6376524de1726c"
         },
         {
           "source_id": "FISRC-b750a2ea9e7c7b76",

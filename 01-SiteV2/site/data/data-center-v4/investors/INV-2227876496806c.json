@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,63 +62,24 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 0,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-04-27",
-    "latest_disclosed_at": "2026-08-24",
+    "first_disclosed_at": "2025-07",
+    "latest_disclosed_at": "2025-07",
     "role_counts": {
-      "historical_or_ambiguous": 2
+      "historical_or_ambiguous": 3
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-52c4c007a53eda42",
-        "funding_insight_id": "FI-c30743074ff47419",
-        "event_ids": [
-          "EV-07d112b2a4c980d2"
-        ],
-        "company_entity_id": "EN-8eacc6bab17d7e7f",
-        "company_canonical_entity_id": "EN-8eacc6bab17d7e7f",
-        "company_name": "中数睿智",
-        "round": "战略融资",
-        "round_code": "strategic",
-        "round_original": "战略融资",
-        "amount_original": "数亿元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-08-24",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A+轮跟投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-9d2d4022c60030f2",
-            "source_url": "https://news.pedaily.cn/202608/568010.shtml",
-            "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
-            "source_content_hash": "fd43c36630768ac3",
-            "quote": "2025年，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
-            "quote_hash": "ce00fdb7ec135ede2663793c8b77c571b190f97a67145c1d8017b995a29dc1f8"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-403c9898d2075ce7",
+        "activity_id": "IA-79b749bb59fb5a04",
         "funding_insight_id": "FI-f0e7ae76f6d51eac",
         "event_ids": [
           "EV-ac5e33e067906a6d"
@@ -126,23 +87,15 @@
         "company_entity_id": "EN-8eacc6bab17d7e7f",
         "company_canonical_entity_id": "EN-8eacc6bab17d7e7f",
         "company_name": "中数睿智",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "亿元级别",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 100000000,
-          "max_value": 1000000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "1 亿元–10 亿元"
-        },
-        "announced_at": "2026-04-27",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2025-07",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "2025年7月A+轮跟投",
         "role_code": "historical_or_ambiguous",
@@ -156,17 +109,73 @@
             "quote_hash": "840d17d170fdecea23cdc2ba674c6744b4378982010197f4b78232634fa16b3e"
           }
         ]
+      },
+      {
+        "activity_id": "IA-62bf19d442b28e06",
+        "funding_insight_id": "FI-f3af1d77a00eff70",
+        "event_ids": [
+          "EV-ae564e305ca1bc3e"
+        ],
+        "company_entity_id": "EN-449d8bc804b1866d",
+        "company_canonical_entity_id": "",
+        "company_name": "致敬未知",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-106f72a415fbb41c",
+            "source_url": "https://www.tmtpost.com/7892206.html",
+            "source_title": "阿里之后再获创维、博裕等加注，致敬未知获亿元PreA轮融资｜独家-钛媒体官方网站",
+            "source_content_hash": "47e93b5404ceb604",
+            "quote": "在本轮融资之前，致敬未知已获得阿里创投、合肥北城资本、泥藕资本NEEO、泰亚投资、泰岳梧桐资本等机构的投资。",
+            "quote_hash": "eda8a96d050bd51da0403263b46a562720e0070f058b7ac0032f927d74f3f62f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-d15460cbf15cd1e6",
+        "funding_insight_id": "FI-c30743074ff47419",
+        "event_ids": [
+          "EV-07d112b2a4c980d2"
+        ],
+        "company_entity_id": "EN-8eacc6bab17d7e7f",
+        "company_canonical_entity_id": "EN-8eacc6bab17d7e7f",
+        "company_name": "中数睿智",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9d2d4022c60030f2",
+            "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+            "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+            "source_content_hash": "fd43c36630768ac3",
+            "quote": "2025年，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
+            "quote_hash": "ce00fdb7ec135ede2663793c8b77c571b190f97a67145c1d8017b995a29dc1f8"
+          }
+        ]
       }
     ],
     "evidence": [
-      {
-        "source_id": "FISRC-9d2d4022c60030f2",
-        "source_url": "https://news.pedaily.cn/202608/568010.shtml",
-        "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
-        "source_content_hash": "fd43c36630768ac3",
-        "quote": "2025年，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
-        "quote_hash": "ce00fdb7ec135ede2663793c8b77c571b190f97a67145c1d8017b995a29dc1f8"
-      },
       {
         "source_id": "FISRC-a57106724774253f",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-04-27/doc-inhvwwmk9150394.shtml",
@@ -174,6 +183,22 @@
         "source_content_hash": "9491841eabf55f1c",
         "quote": "2025年7月，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
         "quote_hash": "840d17d170fdecea23cdc2ba674c6744b4378982010197f4b78232634fa16b3e"
+      },
+      {
+        "source_id": "FISRC-106f72a415fbb41c",
+        "source_url": "https://www.tmtpost.com/7892206.html",
+        "source_title": "阿里之后再获创维、博裕等加注，致敬未知获亿元PreA轮融资｜独家-钛媒体官方网站",
+        "source_content_hash": "47e93b5404ceb604",
+        "quote": "在本轮融资之前，致敬未知已获得阿里创投、合肥北城资本、泥藕资本NEEO、泰亚投资、泰岳梧桐资本等机构的投资。",
+        "quote_hash": "eda8a96d050bd51da0403263b46a562720e0070f058b7ac0032f927d74f3f62f"
+      },
+      {
+        "source_id": "FISRC-9d2d4022c60030f2",
+        "source_url": "https://news.pedaily.cn/202608/568010.shtml",
+        "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
+        "source_content_hash": "fd43c36630768ac3",
+        "quote": "2025年，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
+        "quote_hash": "ce00fdb7ec135ede2663793c8b77c571b190f97a67145c1d8017b995a29dc1f8"
       }
     ],
     "public_profile": {
@@ -190,6 +215,10 @@
           "source_id": "FISRC-a57106724774253f"
         },
         {
+          "description": "融资来源记录：致敬未知 · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-106f72a415fbb41c"
+        },
+        {
           "description": "融资来源记录：中数睿智 · 历史轮次未披露 · A+轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9d2d4022c60030f2"
         }
@@ -203,6 +232,14 @@
           "source_content_hash": "9491841eabf55f1c",
           "quote": "2025年7月，中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投",
           "quote_hash": "840d17d170fdecea23cdc2ba674c6744b4378982010197f4b78232634fa16b3e"
+        },
+        {
+          "source_id": "FISRC-106f72a415fbb41c",
+          "source_url": "https://www.tmtpost.com/7892206.html",
+          "source_title": "阿里之后再获创维、博裕等加注，致敬未知获亿元PreA轮融资｜独家-钛媒体官方网站",
+          "source_content_hash": "47e93b5404ceb604",
+          "quote": "在本轮融资之前，致敬未知已获得阿里创投、合肥北城资本、泥藕资本NEEO、泰亚投资、泰岳梧桐资本等机构的投资。",
+          "quote_hash": "eda8a96d050bd51da0403263b46a562720e0070f058b7ac0032f927d74f3f62f"
         },
         {
           "source_id": "FISRC-9d2d4022c60030f2",

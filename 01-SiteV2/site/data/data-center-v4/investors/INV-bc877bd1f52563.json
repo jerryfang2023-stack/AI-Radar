@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -73,6 +73,7 @@
     "latest_disclosed_at": "2026-08-03",
     "role_counts": {
       "co_lead": 1,
+      "historical_or_ambiguous": 1,
       "lead": 1
     },
     "round_codes": [
@@ -93,7 +94,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-0b44a0346acd07fc",
+        "activity_id": "IA-d37869d447a912e9",
         "funding_insight_id": "FI-392e264418bb0c75",
         "event_ids": [
           "EV-4d2852e1694b2818"
@@ -133,7 +134,7 @@
         ]
       },
       {
-        "activity_id": "IA-cfa87e86323b49ca",
+        "activity_id": "IA-0a74f41a738bf957",
         "funding_insight_id": "FI-0f332b05a9ce8b6f",
         "event_ids": [
           "EV-b3c7c4bff17063d8",
@@ -174,6 +175,38 @@
             "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
           }
         ]
+      },
+      {
+        "activity_id": "IA-be57112913879c1a",
+        "funding_insight_id": "FI-184c6532af326d6a",
+        "event_ids": [
+          "EV-4d9754466f03bf16"
+        ],
+        "company_entity_id": "EN-ec418abaacc30a58",
+        "company_canonical_entity_id": "",
+        "company_name": "AheadComputing, Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b57e758a492553d2",
+            "source_url": "https://startupintros.com/orgs/aheadcomputing",
+            "source_title": "AheadComputing: Funding, Team & Investors",
+            "source_content_hash": "4cd0c2bf6161fa55",
+            "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+            "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -192,6 +225,14 @@
         "source_content_hash": "7277428ab4a1fd81",
         "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
         "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
+      },
+      {
+        "source_id": "FISRC-b57e758a492553d2",
+        "source_url": "https://startupintros.com/orgs/aheadcomputing",
+        "source_title": "AheadComputing: Funding, Team & Investors",
+        "source_content_hash": "4cd0c2bf6161fa55",
+        "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+        "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
       }
     ],
     "public_profile": {
@@ -210,6 +251,10 @@
         {
           "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮联合领投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b7d7449114c23ca5"
+        },
+        {
+          "description": "融资来源记录：AheadComputing, Inc. · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b57e758a492553d2"
         }
       ],
       "contacts": [],
@@ -229,6 +274,14 @@
           "source_content_hash": "7277428ab4a1fd81",
           "quote": "The round was co-led by Fundomo and Samsung Catalyst Fund",
           "quote_hash": "db8d06b90dc3f05edd5b006fff3400f71f0465307d4a9599a59a46fc2a83debf"
+        },
+        {
+          "source_id": "FISRC-b57e758a492553d2",
+          "source_url": "https://startupintros.com/orgs/aheadcomputing",
+          "source_title": "AheadComputing: Funding, Team & Investors",
+          "source_content_hash": "4cd0c2bf6161fa55",
+          "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+          "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
         }
       ],
       "last_verified_at": "2026-09-25"

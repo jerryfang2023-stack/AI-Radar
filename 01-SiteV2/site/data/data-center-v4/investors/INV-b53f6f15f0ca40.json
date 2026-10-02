@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,32 +61,38 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-06",
+    "first_disclosed_at": "2026-02-10",
     "latest_disclosed_at": "2026-07-06",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-caaa8e02be54cfc9",
         "canonical_entity_id": "",
         "name": "Katalyze AI"
+      },
+      {
+        "entity_id": "EN-b30b83d324e678e4",
+        "canonical_entity_id": "",
+        "name": "Modem"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-c4c6679c1beb3756",
+        "activity_id": "IA-ad8da251970d6bce",
         "funding_insight_id": "FI-18186044521daced",
         "event_ids": [
           "EV-6e06cfa28f76a76f"
@@ -124,6 +130,46 @@
             "quote_hash": "e9fd63d1b8548455862cc55fd7e34ba9aadc97adf1594a3743b8345ff1fb6b06"
           }
         ]
+      },
+      {
+        "activity_id": "IA-058e961e13d6a335",
+        "funding_insight_id": "FI-a7a280029acd72db",
+        "event_ids": [
+          "EV-6de81d4ca248ff31"
+        ],
+        "company_entity_id": "EN-b30b83d324e678e4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modem",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$4.4M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 4400000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "440 万美元"
+        },
+        "announced_at": "2026-02-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-9fd6ba5210b37fed",
+            "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+            "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+            "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+            "quote": "Modem has raised $4.4M in funding led by Accel, with participation by Inovia Capital",
+            "quote_hash": "b50c810129adf2731891f9829c115415155105c96bb4a56bf8c4440140161ad2"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +180,14 @@
         "source_content_hash": "d3fbadee56dcb775",
         "quote": "the seed round also saw participation from Inovia Capital",
         "quote_hash": "e9fd63d1b8548455862cc55fd7e34ba9aadc97adf1594a3743b8345ff1fb6b06"
+      },
+      {
+        "source_id": "FISRC-9fd6ba5210b37fed",
+        "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+        "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+        "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+        "quote": "Modem has raised $4.4M in funding led by Accel, with participation by Inovia Capital",
+        "quote_hash": "b50c810129adf2731891f9829c115415155105c96bb4a56bf8c4440140161ad2"
       }
     ],
     "public_profile": {
@@ -244,6 +298,10 @@
         {
           "description": "融资活动库亦记录 Inovia 参与 Katalyze AI 种子轮；金额为全轮融资额，不代表 Inovia 单家出资。",
           "source_id": "FISRC-d887dae741d872b9"
+        },
+        {
+          "description": "融资来源记录：Modem · 轮次未披露 · 2026-02-10 · 本轮参投 · $4.4M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
       "current_roles": [],
@@ -336,6 +394,14 @@
           "source_content_hash": "d3fbadee56dcb775",
           "quote": "the seed round also saw participation from Inovia Capital",
           "quote_hash": "e9fd63d1b8548455862cc55fd7e34ba9aadc97adf1594a3743b8345ff1fb6b06"
+        },
+        {
+          "source_id": "FISRC-9fd6ba5210b37fed",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem 融资 440 万美元，为智能体编程时代打造自动分诊 PM",
+          "source_content_hash": "98af6b8921418bc0158fb0ebee9218f90e73a0454a086f3bf041aae13443a513",
+          "quote": "Modem has raised $4.4M in funding led by Accel, with participation by Inovia Capital",
+          "quote_hash": "b50c810129adf2731891f9829c115415155105c96bb4a56bf8c4440140161ad2"
         }
       ],
       "last_verified_at": "2026-09-28"

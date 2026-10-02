@@ -1,14 +1,16 @@
 const { schedules, archives, getArchive } = require("../../utils/community-data.js");
 const { isExperience } = require("../../utils/experience.js");
 const sharingPreview = require("../../utils/sharing-preview.js");
-const { requireCommunityMember } = require("../../utils/community-access.js");
+const { requireCommunityMember, communityGate } = require("../../utils/community-access.js");
 const { communityRequest } = require("../../utils/payment.js");
 const { readCommunityPage } = require("../../utils/community-loading.js");
 
 Page({
+  ...communityGate,
   data: { mode: "list", activeTab: "schedule", schedules: [], archives: [], item: null, speaker: null, error: "", loading: false, sessionCount: 0, speakerCount: 0 },
   async onLoad(options = {}) {
-    if (!await requireCommunityMember()) return;
+    this.communityEntryOptions = options;
+    if (!await requireCommunityMember(undefined, this)) return;
     this.options = options;
     if (!isExperience()) return this.refresh();
     this.setData({ schedules, archives, loaded: true, sessionCount: archives.length, speakerCount: archives.length * 3 });
@@ -22,8 +24,9 @@ Page({
     else if (options.type === "schedule") this.setData({ mode: "schedule", item: schedules.find((value) => value.id === options.id) || schedules[0] });
     else this.setData({ activeTab: options.tab === "archive" ? "archive" : "schedule" });
   },
-  onShow() { if (this.data.loaded && !isExperience()) return this.refresh(); },
+  onShow() { if (this.data.communityAccessBlocked) return this.onLoad(this.communityEntryOptions || {}); if (this.data.loaded && !isExperience()) return this.refresh(); },
   refresh() {
+    if(this.data.communityAccessBlocked)return Promise.resolve();
     const options = this.options || {};
     if (!this.data.loaded) this.setData({ activeTab: options.tab === "archive" ? "archive" : "schedule" });
     return readCommunityPage(this, async () => {

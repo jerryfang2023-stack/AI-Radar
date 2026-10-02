@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,25 +61,38 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-05-21",
-    "latest_disclosed_at": "2026-08-17",
+    "first_disclosed_at": "2026-01-21",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 9
     },
     "round_codes": [
       "series_a",
-      "series_b"
+      "series_b",
+      "series_c",
+      "series_e",
+      "strategic"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7b9b33ca95deff50",
+        "canonical_entity_id": "",
+        "name": "CScale"
+      },
+      {
+        "entity_id": "EN-b8f1c575bfcf5ece",
+        "canonical_entity_id": "",
+        "name": "Eliyan Corporation"
+      },
       {
         "entity_id": "EN-245f1e177c5169cb",
         "canonical_entity_id": "",
@@ -99,11 +112,66 @@
         "entity_id": "EN-fa373257792c6b9b",
         "canonical_entity_id": "EN-fa373257792c6b9b",
         "name": "Prime Intellect"
+      },
+      {
+        "entity_id": "EN-dfc0fdff7af68ed2",
+        "canonical_entity_id": "EN-dfc0fdff7af68ed2",
+        "name": "SambaNova"
+      },
+      {
+        "entity_id": "EN-d2c4f1b5a5369864",
+        "canonical_entity_id": "",
+        "name": "Upscale, Inc."
+      },
+      {
+        "entity_id": "EN-d5dee8daa2eb5cc5",
+        "canonical_entity_id": "",
+        "name": "Zenity"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-358cb8c3867cc286",
+        "activity_id": "IA-3c1cc75d2d5b8bac",
+        "funding_insight_id": "FI-07d1ab9787e1c9dd",
+        "event_ids": [
+          "EV-4c5dc2fc6d805b3f"
+        ],
+        "company_entity_id": "EN-7b9b33ca95deff50",
+        "company_canonical_entity_id": "",
+        "company_name": "CScale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$145 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 145000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.45 亿美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f84ad840508b39",
+            "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+            "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+            "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+            "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+            "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fd57dddc32f0fc6c",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
           "EV-1dba157815d84342"
@@ -143,7 +211,47 @@
         ]
       },
       {
-        "activity_id": "IA-1add88cc35768ebf",
+        "activity_id": "IA-9013d6f922630715",
+        "funding_insight_id": "FI-2ce1994709f52a05",
+        "event_ids": [
+          "EV-f36f5f7b24b2bfde"
+        ],
+        "company_entity_id": "EN-d5dee8daa2eb5cc5",
+        "company_canonical_entity_id": "",
+        "company_name": "Zenity",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$125 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 125000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.25 亿美元"
+        },
+        "announced_at": "2026-08-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bf361b38b905ca3",
+            "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+            "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+            "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
+            "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital",
+            "quote_hash": "3f04ae6390a8470ee7784d445965e2efd5568199fcb106ebc6ca971196da7664"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-fb55aa29530f8224",
         "funding_insight_id": "FI-eb27063b86f12aff",
         "event_ids": [
           "EV-463cb26b5e03c7f7"
@@ -183,7 +291,7 @@
         ]
       },
       {
-        "activity_id": "IA-23512099da927896",
+        "activity_id": "IA-457c4a43df9ff4e9",
         "funding_insight_id": "FI-0f332b05a9ce8b6f",
         "event_ids": [
           "EV-b3c7c4bff17063d8",
@@ -226,50 +334,7 @@
         ]
       },
       {
-        "activity_id": "IA-31c2f0ff2790e676",
-        "funding_insight_id": "FI-0f332b05a9ce8b6f",
-        "event_ids": [
-          "EV-b3c7c4bff17063d8",
-          "EV-415b083fdaa8077f",
-          "EV-48075ca70a5458ec",
-          "EV-63dee9f748531f08"
-        ],
-        "company_entity_id": "FICO-oxmiq",
-        "company_canonical_entity_id": "",
-        "company_name": "OXMIQ",
-        "round": "A轮",
-        "round_code": "series_a",
-        "round_original": "Series A",
-        "amount_original": "$35 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 35000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "3500 万美元"
-        },
-        "announced_at": "2026-07-01",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方（战略IP合作伙伴）",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-2ac2183ceab4ddd7",
-            "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
-            "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
-            "source_content_hash": "b11173439b5612a7",
-            "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
-            "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-95988571a59872b4",
+        "activity_id": "IA-19056b4913f47f0d",
         "funding_insight_id": "FI-35b63d84f1f7c2b0",
         "event_ids": [
           "EV-450f624a6a6446ce",
@@ -308,9 +373,172 @@
             "quote_hash": "31c11f9aa7b9e216830bfa1aca1ac6bf8d0cdd6fe9082147ea6f01879eeb6cf0"
           }
         ]
+      },
+      {
+        "activity_id": "IA-588f4faf7ad9b75a",
+        "funding_insight_id": "FI-cae0d45e071abebd",
+        "event_ids": [
+          "EV-63de2b6408efd796"
+        ],
+        "company_entity_id": "EN-dfc0fdff7af68ed2",
+        "company_canonical_entity_id": "EN-dfc0fdff7af68ed2",
+        "company_name": "SambaNova",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "more than $350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": 350000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 3.5 亿美元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d47a3aba63bc33dc",
+            "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+            "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+            "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+            "quote": "with strong participation from Intel Capital",
+            "quote_hash": "0f448f3993b92c5483fad909a130dad4e9c84602bd0d490aabbe43eb246530ca"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-886d8c5985a13b96",
+        "funding_insight_id": "FI-643b76798f958bf3",
+        "event_ids": [
+          "EV-3d5daffd1cb9521b"
+        ],
+        "company_entity_id": "EN-b8f1c575bfcf5ece",
+        "company_canonical_entity_id": "",
+        "company_name": "Eliyan Corporation",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "战略融资",
+        "amount_original": "$50 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-01-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-5618afd8046eeb4f",
+            "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+            "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+            "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+            "quote": "existing strategic investors Samsung Catalyst Fund and Intel Capital also participated in the round",
+            "quote_hash": "60c30e9af193e5a605fa3ea3630b41759d8848bf0a286ca1b815bfea3f41662c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-58f67d61b595d486",
+        "funding_insight_id": "FI-efe78d5245c912b4",
+        "event_ids": [
+          "EV-a4b2d57251589ede"
+        ],
+        "company_entity_id": "EN-d2c4f1b5a5369864",
+        "company_canonical_entity_id": "",
+        "company_name": "Upscale, Inc.",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$200 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2 亿美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3c60f2ab7fcb8b84",
+            "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+            "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+            "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+            "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+            "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-240ad0ef2a95c8ed",
+        "funding_insight_id": "FI-0f332b05a9ce8b6f",
+        "event_ids": [
+          "EV-b3c7c4bff17063d8",
+          "EV-415b083fdaa8077f",
+          "EV-48075ca70a5458ec",
+          "EV-63dee9f748531f08"
+        ],
+        "company_entity_id": "FICO-oxmiq",
+        "company_canonical_entity_id": "",
+        "company_name": "OXMIQ",
+        "round": "战略融资",
+        "round_code": "strategic",
+        "round_original": "既有投资方（战略IP合作伙伴）",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方（战略IP合作伙伴）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2ac2183ceab4ddd7",
+            "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
+            "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
+            "source_content_hash": "b11173439b5612a7",
+            "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
+            "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-98f84ad840508b39",
+        "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+        "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+        "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+        "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+        "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+      },
       {
         "source_id": "FISRC-b235ace767812393",
         "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
@@ -318,6 +546,14 @@
         "source_content_hash": "06ecfd55822882e3",
         "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital and more than a half-dozen existing investors",
         "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
+      },
+      {
+        "source_id": "FISRC-7bf361b38b905ca3",
+        "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+        "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+        "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
+        "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital",
+        "quote_hash": "3f04ae6390a8470ee7784d445965e2efd5568199fcb106ebc6ca971196da7664"
       },
       {
         "source_id": "FISRC-fbda7a24ef3d8ef8",
@@ -342,6 +578,30 @@
         "source_content_hash": "e91739ca23d21469",
         "quote": "Intel Capital",
         "quote_hash": "31c11f9aa7b9e216830bfa1aca1ac6bf8d0cdd6fe9082147ea6f01879eeb6cf0"
+      },
+      {
+        "source_id": "FISRC-d47a3aba63bc33dc",
+        "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+        "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+        "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+        "quote": "with strong participation from Intel Capital",
+        "quote_hash": "0f448f3993b92c5483fad909a130dad4e9c84602bd0d490aabbe43eb246530ca"
+      },
+      {
+        "source_id": "FISRC-5618afd8046eeb4f",
+        "source_url": "https://eliyan.com/press-release/eliyan-secures-50-million-in-strategic-investments/",
+        "source_title": "Eliyan 获得领先超大规模云服务商和 AI 基础设施提供的 5000 万美元战略投资",
+        "source_content_hash": "aaa35dfa2124488a2276415976fd32309750a815bcc448299f98c4daba4e8086",
+        "quote": "existing strategic investors Samsung Catalyst Fund and Intel Capital also participated in the round",
+        "quote_hash": "60c30e9af193e5a605fa3ea3630b41759d8848bf0a286ca1b815bfea3f41662c"
+      },
+      {
+        "source_id": "FISRC-3c60f2ab7fcb8b84",
+        "source_url": "https://upscaleai.com/from-100m-seed-to-unicorn-in-months-upscale-ai-closes-oversubscribed-200m-series-a-to-build-the-first-pure-play-ai-networking-company/",
+        "source_title": "从1亿美元种子轮数月内成为独角兽，Upscale超额认购2亿美元A轮融资，打造首家纯AI网络公司",
+        "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
+        "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
+        "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
       }
     ],
     "public_profile": {
@@ -408,16 +668,16 @@
           "source_id": "intel_capital_impact"
         },
         {
+          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f84ad840508b39"
+        },
+        {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b235ace767812393"
         },
         {
-          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fbda7a24ef3d8ef8"
-        },
-        {
-          "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮参投（战略IP合作伙伴） · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ac2183ceab4ddd7"
+          "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-7bf361b38b905ca3"
         }
       ],
       "contacts": [
@@ -478,6 +738,14 @@
           "quote_hash": "024caaeace6f7f1f2651d5257e90c4c8e986770dc72a59954463dde23b79b1aa"
         },
         {
+          "source_id": "FISRC-98f84ad840508b39",
+          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+          "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+        },
+        {
           "source_id": "FISRC-b235ace767812393",
           "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
           "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
@@ -486,20 +754,12 @@
           "quote_hash": "802b4e0ce5c62a28a2fc893e6f1263efeb759174a6c6e4d57e7a3f8a1aa7de8c"
         },
         {
-          "source_id": "FISRC-fbda7a24ef3d8ef8",
-          "source_url": "https://vtechxhub.com/insights/prime-intellect-raises-130m-series-power-enterprise-ai",
-          "source_title": "Prime Intellect Raises $130M for Enterprise AI Development 2026",
-          "source_content_hash": "56b4a47eeb530513",
-          "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
-          "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
-        },
-        {
-          "source_id": "FISRC-2ac2183ceab4ddd7",
-          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
-          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
-          "source_content_hash": "b11173439b5612a7",
-          "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
-          "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
+          "source_id": "FISRC-7bf361b38b905ca3",
+          "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+          "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+          "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
+          "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital",
+          "quote_hash": "3f04ae6390a8470ee7784d445965e2efd5568199fcb106ebc6ca971196da7664"
         }
       ],
       "coverage_status": "researched",

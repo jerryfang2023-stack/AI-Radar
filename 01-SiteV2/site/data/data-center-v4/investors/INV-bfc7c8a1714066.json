@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,17 +62,17 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-04-09",
+    "first_disclosed_at": "2024-01",
     "latest_disclosed_at": "2026-07-01",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 1
     },
     "round_codes": [
@@ -87,7 +87,7 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-caa7c891e58ea0b9",
+        "activity_id": "IA-056aef5abc377d88",
         "funding_insight_id": "FI-d94dd0bea44a17d1",
         "event_ids": [
           "EV-e59938ae531af428"
@@ -127,7 +127,39 @@
         ]
       },
       {
-        "activity_id": "IA-7e619adab7bb4a5a",
+        "activity_id": "IA-cba7e0c0791d2b49",
+        "funding_insight_id": "FI-dc68253303dac9b5",
+        "event_ids": [
+          "EV-e084947e3f9e0667"
+        ],
+        "company_entity_id": "EN-e12c9f7f64dec58c",
+        "company_canonical_entity_id": "",
+        "company_name": "北京面壁智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2024-01",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2024年12月融资联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ca5c9f62e4d3f2f3",
+            "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+            "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+            "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+            "quote": "2024年12月，面壁智能完成新一轮数亿元融资，由龙芯创投、鼎晖百孚、中关村科学城基金和赛富基金联合领投",
+            "quote_hash": "63a980f1ba127733849c97a30d0874700bd03202657aec194d72afc7a3a64b3d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b62d148959811827",
         "funding_insight_id": "FI-a7e1a675674f1a0b",
         "event_ids": [
           "EV-314db5cbf5010d41"
@@ -135,23 +167,15 @@
         "company_entity_id": "EN-3309b3b14807f39a",
         "company_canonical_entity_id": "EN-3309b3b14807f39a",
         "company_name": "面壁智能",
-        "round": "轮次未披露",
+        "round": "历史轮次未披露",
         "round_code": "undisclosed",
-        "round_original": "新一轮数亿元人民币融资",
-        "amount_original": "数亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
-        },
-        "announced_at": "2026-04-09",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "北京国资持续加注",
         "role_code": "historical_or_ambiguous",
@@ -175,6 +199,14 @@
         "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
         "quote": "本轮投资方包括中关村科学城基金、四川发展科创基金、山东发展科创投等政府基金",
         "quote_hash": "b3723f9de6e9a09c248d641d2d6e47081bc5fd4c0a25f31ae4b59238ea741e82"
+      },
+      {
+        "source_id": "FISRC-ca5c9f62e4d3f2f3",
+        "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+        "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+        "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+        "quote": "2024年12月，面壁智能完成新一轮数亿元融资，由龙芯创投、鼎晖百孚、中关村科学城基金和赛富基金联合领投",
+        "quote_hash": "63a980f1ba127733849c97a30d0874700bd03202657aec194d72afc7a3a64b3d"
       },
       {
         "source_id": "FISRC-5e868b9dacd5325c",
@@ -218,6 +250,10 @@
           "source_id": "FISRC-8787a3d3602feb17"
         },
         {
+          "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2024-01 · 2024年12月融资联合领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ca5c9f62e4d3f2f3"
+        },
+        {
           "description": "融资来源记录：面壁智能 · 历史轮次未披露 · 北京国资持续加注。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5e868b9dacd5325c"
         }
@@ -259,6 +295,14 @@
           "source_content_hash": "20bb1f5550c82ab572303b31d101c327f03c9d8cc9fa77681017d9005da78fe3",
           "quote": "本轮投资方包括中关村科学城基金、四川发展科创基金、山东发展科创投等政府基金",
           "quote_hash": "b3723f9de6e9a09c248d641d2d6e47081bc5fd4c0a25f31ae4b59238ea741e82"
+        },
+        {
+          "source_id": "FISRC-ca5c9f62e4d3f2f3",
+          "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+          "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+          "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+          "quote": "2024年12月，面壁智能完成新一轮数亿元融资，由龙芯创投、鼎晖百孚、中关村科学城基金和赛富基金联合领投",
+          "quote_hash": "63a980f1ba127733849c97a30d0874700bd03202657aec194d72afc7a3a64b3d"
         },
         {
           "source_id": "FISRC-5e868b9dacd5325c",

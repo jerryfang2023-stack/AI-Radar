@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,22 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-09-17",
+    "first_disclosed_at": "2026-04-16",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "other",
       "series_f"
     ],
     "portfolio_companies": [
@@ -82,11 +84,16 @@
         "entity_id": "EN-d41ebd9f02722fc8",
         "canonical_entity_id": "EN-d41ebd9f02722fc8",
         "name": "Crusoe"
+      },
+      {
+        "entity_id": "EN-7dfadeb219464a45",
+        "canonical_entity_id": "",
+        "name": "Zūm"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-645db480e83f1195",
+        "activity_id": "IA-628db661e6a26920",
         "funding_insight_id": "FI-72df07926e3369ef",
         "event_ids": [
           "EV-26a5749d8604455a",
@@ -125,6 +132,54 @@
             "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
           }
         ]
+      },
+      {
+        "activity_id": "IA-09dc32dd70429619",
+        "funding_insight_id": "FI-fbb8358f9cd7d1f6",
+        "event_ids": [
+          "EV-2975bb5b57ce53d9"
+        ],
+        "company_entity_id": "EN-7dfadeb219464a45",
+        "company_canonical_entity_id": "",
+        "company_name": "Zūm",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "Private Equity (TPG / The Rise Fund)",
+        "amount_original": "$100 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1d97f99b2bf1db30",
+            "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+            "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+            "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+            "quote": "Zūm, the leader in Connected Mobility Experience (CMX™), today announced a $100 million strategic investment from TPG",
+            "quote_hash": "a502a704a59be461013aff314bdd6023605b176c26fd0e0b0e5690737162aaeb"
+          },
+          {
+            "source_id": "FISRC-dd82a86f0e9c67ca",
+            "source_url": "https://www.ridezum.com/press-release/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion",
+            "source_title": "Zum Raises $100 Million From TPG to Accelerate Zum’s Connected Mobility Experience (CMX) and for Continued Growth and Expansion",
+            "source_content_hash": "1bb92a26638b3c5b",
+            "quote": "today announced a $100 million investment from TPG",
+            "quote_hash": "aa30f748afae27d629622aa726cb18835a63070fcd2838d0d6ec7a358d740abc"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -135,6 +190,22 @@
         "source_content_hash": "a5d809d221408d5b",
         "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
         "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
+      },
+      {
+        "source_id": "FISRC-1d97f99b2bf1db30",
+        "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+        "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+        "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+        "quote": "Zūm, the leader in Connected Mobility Experience (CMX™), today announced a $100 million strategic investment from TPG",
+        "quote_hash": "a502a704a59be461013aff314bdd6023605b176c26fd0e0b0e5690737162aaeb"
+      },
+      {
+        "source_id": "FISRC-dd82a86f0e9c67ca",
+        "source_url": "https://www.ridezum.com/press-release/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion",
+        "source_title": "Zum Raises $100 Million From TPG to Accelerate Zum’s Connected Mobility Experience (CMX) and for Continued Growth and Expansion",
+        "source_content_hash": "1bb92a26638b3c5b",
+        "quote": "today announced a $100 million investment from TPG",
+        "quote_hash": "aa30f748afae27d629622aa726cb18835a63070fcd2838d0d6ec7a358d740abc"
       }
     ],
     "public_profile": {
@@ -149,6 +220,14 @@
         {
           "description": "融资来源记录：Crusoe · F轮 · 2026-09-17 · 本轮参投 · $3.9B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5fc65e3f4fb1b347"
+        },
+        {
+          "description": "融资来源记录：Zūm · 其他融资 · 2026-04-16 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1d97f99b2bf1db30"
+        },
+        {
+          "description": "融资来源记录：Zūm · 其他融资 · 2026-04-16 · 本轮领投 · $100 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dd82a86f0e9c67ca"
         }
       ],
       "contacts": [],
@@ -160,6 +239,22 @@
           "source_content_hash": "a5d809d221408d5b",
           "quote": "They were joined by a roster of elite institutional and corporate investors, including Founders Fund , GIC , Nvidia , the Qatar Investment Authority (QIA) , Radical Ventures , and TPG .",
           "quote_hash": "f095cfa01d7214cc37d55b841ff30c29ca4c63f1172dcbde315aadbad247b8e2"
+        },
+        {
+          "source_id": "FISRC-1d97f99b2bf1db30",
+          "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
+          "source_title": "Zum 从 TPG 筹集 1 亿美元，以加速 Zum 的互联出行体验（CMX）并支持持续增长与扩张",
+          "source_content_hash": "33d8cac4ac6987034e3cf1cdf7126fae5b277936a09efac633d6463e53a7d130",
+          "quote": "Zūm, the leader in Connected Mobility Experience (CMX™), today announced a $100 million strategic investment from TPG",
+          "quote_hash": "a502a704a59be461013aff314bdd6023605b176c26fd0e0b0e5690737162aaeb"
+        },
+        {
+          "source_id": "FISRC-dd82a86f0e9c67ca",
+          "source_url": "https://www.ridezum.com/press-release/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion",
+          "source_title": "Zum Raises $100 Million From TPG to Accelerate Zum’s Connected Mobility Experience (CMX) and for Continued Growth and Expansion",
+          "source_content_hash": "1bb92a26638b3c5b",
+          "quote": "today announced a $100 million investment from TPG",
+          "quote_hash": "aa30f748afae27d629622aa726cb18835a63070fcd2838d0d6ec7a358d740abc"
         }
       ],
       "last_verified_at": "2026-09-25"

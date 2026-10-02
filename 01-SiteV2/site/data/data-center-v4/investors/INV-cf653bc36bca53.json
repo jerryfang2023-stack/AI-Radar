@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,38 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
-    "first_disclosed_at": "2024-09-12",
-    "latest_disclosed_at": "2026-07-08",
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
+    "first_disclosed_at": "2026-04-29",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "participant": 1
+      "lead": 1,
+      "participant": 2
     },
     "round_codes": [
+      "multi_round",
+      "series_a",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6d4ddfac145496cd",
+        "canonical_entity_id": "",
+        "name": "科辉智药（Artivila Biopharma）"
+      },
+      {
+        "entity_id": "EN-83dd78f287b80ce3",
+        "canonical_entity_id": "",
+        "name": "芯光界"
+      },
       {
         "entity_id": "EN-09afdeb63bb109fc",
         "canonical_entity_id": "",
@@ -87,88 +101,87 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-f66464fb587d1341",
-        "funding_insight_id": "FI-3290a302d01a731c",
+        "activity_id": "IA-e691e96470fe79fb",
+        "funding_insight_id": "FI-219ba35e15dc4fb9",
         "event_ids": [
-          "EV-a52dd9e9cac23694",
-          "EV-7532c5a950295e97"
+          "EV-eb2796fc4bcc5ac0"
         ],
-        "company_entity_id": "EN-ed8ff30f2dcaf9d6",
-        "company_canonical_entity_id": "EN-ed8ff30f2dcaf9d6",
-        "company_name": "德睿智药",
-        "round": "B轮",
-        "round_code": "series_b",
-        "round_original": "B轮",
-        "amount_original": "5200万美元",
+        "company_entity_id": "EN-83dd78f287b80ce3",
+        "company_canonical_entity_id": "",
+        "company_name": "芯光界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Pre-A轮及A轮（合并披露）",
+        "amount_original": "近10亿元",
         "amount_normalized": {
-          "currency": "USD",
-          "value": 52000000,
+          "currency": "CNY",
+          "value": 1000000000,
           "min_value": null,
           "max_value": null,
           "unit": "base",
-          "status": "exact",
-          "display_zh": "5200 万美元"
+          "status": "approximate",
+          "display_zh": "约 10 亿元"
         },
-        "announced_at": "2026-07-08",
-        "market_region": "CN",
-        "china_market_match": true,
-        "disclosure_status": "partially_disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "A轮联合领投",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-c8803e2f7419599f",
-            "source_url": "https://www.vcbeathealth.com/article/59793",
-            "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
-            "source_content_hash": "674418393ee4156c",
-            "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
-            "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-ab409ec2c67c5c80",
-        "funding_insight_id": "FI-a3033e661b23b30e",
-        "event_ids": [
-          "EV-92d6132ee2a3505a"
-        ],
-        "company_entity_id": "EN-fcc9af8dc8c25167",
-        "company_canonical_entity_id": "EN-fcc9af8dc8c25167",
-        "company_name": "智子芯元",
-        "round": "天使+轮",
-        "round_code": "angel_plus",
-        "round_original": "天使+轮",
-        "amount_original": "数千万元",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": null,
-          "min_value": 20000000,
-          "max_value": 90000000,
-          "unit": "base",
-          "status": "range",
-          "display_zh": "2000 万元–9000 万元"
-        },
-        "announced_at": "2026-06-23",
+        "announced_at": "2026-09-30",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "天使轮跟投",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
         "evidence": [
           {
-            "source_id": "FISRC-31d9f2f1a48dfdc8",
-            "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
-            "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
-            "source_content_hash": "d6e545bc49396418",
-            "quote": "老股东英诺天使与松禾资本超额跟投",
-            "quote_hash": "716e29ccdb171ae092066acfb5d46243c59cdcd03da5f444264416cde69e2c6c"
+            "source_id": "FISRC-09a0a8d8826c2cfe",
+            "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+            "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+            "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+            "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+            "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
           }
         ]
       },
       {
-        "activity_id": "IA-61634abde2d5bc69",
+        "activity_id": "IA-8bb309477cf6c341",
+        "funding_insight_id": "FI-952bcc16f52df3d2",
+        "event_ids": [
+          "EV-60e3781058f5e904"
+        ],
+        "company_entity_id": "EN-6d4ddfac145496cd",
+        "company_canonical_entity_id": "",
+        "company_name": "科辉智药（Artivila Biopharma）",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-dd4073b84f3b363b",
+            "source_url": "https://artivila.com/cn_news/details-17.html",
+            "source_title": "科辉智药完成近亿元人民币A轮融资",
+            "source_content_hash": "794648fe162cd7c4",
+            "quote": "本轮融资由松禾资本领投，君熠投资等跟投。",
+            "quote_hash": "72c74f17250529d36a2ee10a0c9e994ac8b919420e86d07d9a22ee79d3e1151b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8515a9cbd3a7beba",
         "funding_insight_id": "FI-cc917301b3cfdfc0",
         "event_ids": [
           "EV-3c75e8ce83d89604"
@@ -208,7 +221,7 @@
         ]
       },
       {
-        "activity_id": "IA-9bf1b05573339fb1",
+        "activity_id": "IA-0344189ea4613754",
         "funding_insight_id": "FI-17403f62777b52b5",
         "event_ids": [
           "EV-7a44a47bf36780d2"
@@ -216,23 +229,15 @@
         "company_entity_id": "EN-721eb3fd31f8e1f6",
         "company_canonical_entity_id": "EN-721eb3fd31f8e1f6",
         "company_name": "壁仞科技",
-        "round": "多轮融资",
-        "round_code": "multi_round",
-        "round_original": "多轮融资",
-        "amount_original": "超过50亿元人民币",
-        "amount_normalized": {
-          "currency": "CNY",
-          "value": 5000000000,
-          "min_value": 5000000000,
-          "max_value": null,
-          "unit": "base",
-          "status": "lower_bound",
-          "display_zh": "超过 50 亿元"
-        },
-        "announced_at": "2024-09-12",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "CN",
         "china_market_match": true,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "A轮参投",
         "role_code": "historical_or_ambiguous",
@@ -246,24 +251,89 @@
             "quote_hash": "a0a875bf892469b0fe2386d4aeed2bb9ddc313654b1886f1e17f4b29ce6cc5e8"
           }
         ]
+      },
+      {
+        "activity_id": "IA-eff7d11f031528e2",
+        "funding_insight_id": "FI-3290a302d01a731c",
+        "event_ids": [
+          "EV-a52dd9e9cac23694",
+          "EV-7532c5a950295e97"
+        ],
+        "company_entity_id": "EN-ed8ff30f2dcaf9d6",
+        "company_canonical_entity_id": "EN-ed8ff30f2dcaf9d6",
+        "company_name": "德睿智药",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c8803e2f7419599f",
+            "source_url": "https://www.vcbeathealth.com/article/59793",
+            "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
+            "source_content_hash": "674418393ee4156c",
+            "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+            "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8d5ed8fc839aa7a0",
+        "funding_insight_id": "FI-a3033e661b23b30e",
+        "event_ids": [
+          "EV-92d6132ee2a3505a"
+        ],
+        "company_entity_id": "EN-fcc9af8dc8c25167",
+        "company_canonical_entity_id": "EN-fcc9af8dc8c25167",
+        "company_name": "智子芯元",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "天使轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-31d9f2f1a48dfdc8",
+            "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+            "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+            "source_content_hash": "d6e545bc49396418",
+            "quote": "老股东英诺天使与松禾资本超额跟投",
+            "quote_hash": "716e29ccdb171ae092066acfb5d46243c59cdcd03da5f444264416cde69e2c6c"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-c8803e2f7419599f",
-        "source_url": "https://www.vcbeathealth.com/article/59793",
-        "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
-        "source_content_hash": "674418393ee4156c",
-        "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
-        "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+        "source_id": "FISRC-09a0a8d8826c2cfe",
+        "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+        "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+        "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+        "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+        "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
       },
       {
-        "source_id": "FISRC-31d9f2f1a48dfdc8",
-        "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
-        "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
-        "source_content_hash": "d6e545bc49396418",
-        "quote": "老股东英诺天使与松禾资本超额跟投",
-        "quote_hash": "716e29ccdb171ae092066acfb5d46243c59cdcd03da5f444264416cde69e2c6c"
+        "source_id": "FISRC-dd4073b84f3b363b",
+        "source_url": "https://artivila.com/cn_news/details-17.html",
+        "source_title": "科辉智药完成近亿元人民币A轮融资",
+        "source_content_hash": "794648fe162cd7c4",
+        "quote": "本轮融资由松禾资本领投，君熠投资等跟投。",
+        "quote_hash": "72c74f17250529d36a2ee10a0c9e994ac8b919420e86d07d9a22ee79d3e1151b"
       },
       {
         "source_id": "FISRC-99af5f038476e2fe",
@@ -280,6 +350,22 @@
         "source_content_hash": "48f7a6ff96b731e7",
         "quote": "格力创投、松禾资本、云晖资本、国开装备基金、华映资本、广微控股、耀途资本等知名投资机构和产业方联合参投",
         "quote_hash": "a0a875bf892469b0fe2386d4aeed2bb9ddc313654b1886f1e17f4b29ce6cc5e8"
+      },
+      {
+        "source_id": "FISRC-c8803e2f7419599f",
+        "source_url": "https://www.vcbeathealth.com/article/59793",
+        "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
+        "source_content_hash": "674418393ee4156c",
+        "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
+        "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
+      },
+      {
+        "source_id": "FISRC-31d9f2f1a48dfdc8",
+        "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+        "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+        "source_content_hash": "d6e545bc49396418",
+        "quote": "老股东英诺天使与松禾资本超额跟投",
+        "quote_hash": "716e29ccdb171ae092066acfb5d46243c59cdcd03da5f444264416cde69e2c6c"
       }
     ],
     "public_profile": {
@@ -287,25 +373,41 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "松禾资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "松禾资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-09a0a8d8826c2cfe"
+        },
+        {
+          "description": "融资来源记录：科辉智药（Artivila Biopharma） · A轮 · 2026-06-25 · 本轮领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-dd4073b84f3b363b"
+        },
+        {
           "description": "融资来源记录：壁仞科技 · 历史轮次未披露 · A轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-081c8476182d3ff7"
-        },
-        {
-          "description": "融资来源记录：德睿智药 · 历史轮次未披露 · A轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c8803e2f7419599f"
-        },
-        {
-          "description": "融资来源记录：智子芯元 · 历史轮次未披露 · 天使轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-31d9f2f1a48dfdc8"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+        },
+        {
+          "source_id": "FISRC-dd4073b84f3b363b",
+          "source_url": "https://artivila.com/cn_news/details-17.html",
+          "source_title": "科辉智药完成近亿元人民币A轮融资",
+          "source_content_hash": "794648fe162cd7c4",
+          "quote": "本轮融资由松禾资本领投，君熠投资等跟投。",
+          "quote_hash": "72c74f17250529d36a2ee10a0c9e994ac8b919420e86d07d9a22ee79d3e1151b"
+        },
         {
           "source_id": "FISRC-081c8476182d3ff7",
           "source_url": "https://36kr.com/p/753999774079237",
@@ -313,22 +415,6 @@
           "source_content_hash": "48f7a6ff96b731e7",
           "quote": "格力创投、松禾资本、云晖资本、国开装备基金、华映资本、广微控股、耀途资本等知名投资机构和产业方联合参投",
           "quote_hash": "a0a875bf892469b0fe2386d4aeed2bb9ddc313654b1886f1e17f4b29ce6cc5e8"
-        },
-        {
-          "source_id": "FISRC-c8803e2f7419599f",
-          "source_url": "https://www.vcbeathealth.com/article/59793",
-          "source_title": "MindRank Secures $52M Series B Funding to Advance AI-Driven Oral GLP-1RA into Phase III Clinical Trials-VCBeat",
-          "source_content_hash": "674418393ee4156c",
-          "quote": "in December 2021, it secured a tens-of-millions-of-US-dollars Series A round co-led by Huagai Capital and Sinopharm Capital (Songhe Capital)",
-          "quote_hash": "436917467eb2c63eaa6f8d044a7875eeb2e3fdedd86b477e1a27c054a83cfa13"
-        },
-        {
-          "source_id": "FISRC-31d9f2f1a48dfdc8",
-          "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
-          "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
-          "source_content_hash": "d6e545bc49396418",
-          "quote": "老股东英诺天使与松禾资本超额跟投",
-          "quote_hash": "716e29ccdb171ae092066acfb5d46243c59cdcd03da5f444264416cde69e2c6c"
         }
       ],
       "last_verified_at": "2026-09-25"

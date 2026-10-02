@@ -5,6 +5,16 @@ import { fileURLToPath } from 'node:url';
 import { taxonomy, classificationInput, classificationProblems, displayClassification } from './taxonomy.mjs';
 import { read,write } from './state.mjs';
 
+export function publicationHold(card, review) {
+  if (!review) return null;
+  if (review.version !== 'FINANCING-PUBLICATION-REVIEW-1' || !Array.isArray(review.holds)) throw new Error('invalid_financing_publication_review');
+  const events = new Set([card.triggered_by_event_id, ...(card.source_event_ids || [])]);
+  return review.holds.find(row => {
+    if (!row.event_id || !row.reason || !row.source_url || row.status !== 'pending') throw new Error('invalid_financing_publication_hold');
+    return events.has(row.event_id);
+  }) || null;
+}
+
 export function buildFinancingCatalog(root) {
   const source=read(path.join(root,'01-SiteV2/site/data/funding-insights-v1.json'));
   const registry=read(path.join(root,'01-SiteV2/content/12-applications/financing-taxonomy/decisions.json'));
@@ -13,7 +23,11 @@ export function buildFinancingCatalog(root) {
   const inputs=new Map();
   for(const file of fs.readdirSync(funding).filter(file=>/^\d{4}-\d{2}-\d{2}\.json$/u.test(file)).sort()) for(const card of read(path.join(funding,file)).cards || []) inputs.set(card.triggered_by_event_id,classificationInput(card));
   const excluded=[],pending=[],cards=[];
+  const publicationPending=[];
+  const review=read(path.join(funding,'publication-review.json'));
   for(const card of source.cards){
+    const hold=publicationHold(card,review);
+    if(hold){publicationPending.push({event_id:hold.event_id,company:card.company.name,reason:hold.reason,source_url:hold.source_url});continue;}
     const id=card.triggered_by_event_id,input=inputs.get(id),decision=registry.decisions[id];
     if(!input || !decision || decision.input_hash!==input.input_hash || classificationProblems(decision,input).length) throw new Error(`financing_classification_missing_or_stale:${id}`);
     if(decision.scope==='excluded'){excluded.push({event_id:id,company:card.company.name,reason:decision.exclusion_reason});continue;}
@@ -36,13 +50,14 @@ export function buildFinancingCatalog(root) {
   return {
     meta:{...source.meta,taxonomy_version:taxonomy.version,card_count:cards.length,china_market_card_count:cards.filter(card=>card.market_scope?.market_region==='CN').length,
       scope:'all_ai_financing_except_embodied_and_robotics',excluded_count:excluded.length,pending_classification_count:pending.length,
+      pending_publication_count:publicationPending.length,
       market_category_framework:{name:'观澜 AI 融资分类',version:taxonomy.version,sources:taxonomy.sources.map(row=>({name:row.name,url:row.url}))}},
     taxonomy,
     filters:{market_regions:source.filters.market_regions,rounds:[...new Set(cards.map(card=>card.financing.round).filter(Boolean))].sort(),
       market_categories:used(taxonomy.sectors,card=>card.financing_tags.sector.id).map(({id,name})=>({id,name})),
       market_subcategories:taxonomy.sectors.flatMap(sector=>used(sector.subsectors,card=>card.financing_tags.subsector.id).map(row=>({...row,parent_id:sector.id}))),
       product_forms:used(taxonomy.product_forms,card=>card.financing_tags.product_form?.id),customers:taxonomy.customers},
-    cards,review:{excluded,pending},
+    cards,review:{excluded,pending,publication_pending:publicationPending},
   };
 }
 if(process.argv[1] && path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){

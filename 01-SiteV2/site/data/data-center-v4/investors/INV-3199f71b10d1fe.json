@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-05-19",
-    "latest_disclosed_at": "2026-08-26",
+    "latest_disclosed_at": "2026-09-25",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "other_current_round": 1,
       "participant": 1
     },
     "round_codes": [
       "angel_plus"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e3a0a86bbd35dc79",
+        "canonical_entity_id": "",
+        "name": "北京新烛时代科技有限公司"
+      },
       {
         "entity_id": "EN-5f03b37d8cca57e1",
         "canonical_entity_id": "EN-5f03b37d8cca57e1",
@@ -87,47 +93,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-c97603759ca095d0",
-        "funding_insight_id": "FI-a3c129ab8eb46aa4",
+        "activity_id": "IA-44c52eeae0f78f26",
+        "funding_insight_id": "FI-fe50512419bbefbd",
         "event_ids": [
-          "EV-d67dd793fe1f2c04"
+          "EV-eb5cde943f5c8858"
         ],
-        "company_entity_id": "EN-5f03b37d8cca57e1",
-        "company_canonical_entity_id": "EN-5f03b37d8cca57e1",
-        "company_name": "灵御智能",
-        "round": "Pre-A轮",
-        "round_code": "pre_series_a",
-        "round_original": "Pre-A轮",
-        "amount_original": "数亿元",
+        "company_entity_id": "EN-e3a0a86bbd35dc79",
+        "company_canonical_entity_id": "",
+        "company_name": "北京新烛时代科技有限公司",
+        "round": "天使+轮",
+        "round_code": "angel_plus",
+        "round_original": "天使+轮",
+        "amount_original": "超过4000万元",
         "amount_normalized": {
           "currency": "CNY",
-          "value": null,
-          "min_value": 200000000,
-          "max_value": 900000000,
+          "value": 40000000,
+          "min_value": 40000000,
+          "max_value": null,
           "unit": "base",
-          "status": "range",
-          "display_zh": "2 亿元–9 亿元"
+          "status": "lower_bound",
+          "display_zh": "超过 4000 万元"
         },
-        "announced_at": "2026-08-26",
+        "announced_at": "2026-09-25",
         "market_region": "CN",
         "china_market_match": true,
         "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "过往投资方",
-        "role_code": "historical_or_ambiguous",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
         "evidence": [
           {
-            "source_id": "FISRC-1ff3ce30945e8f13",
-            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
-            "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
-            "source_content_hash": "7d6a41ce0da829ca",
-            "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
-            "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+            "source_id": "FISRC-0992c85652bbaa98",
+            "source_url": "https://m.sohu.com/a/1080637979_114984?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "新烛时代获超4000万元天使+轮融资，中金资本等共同出资",
+            "source_content_hash": "b04480c76287403febb6695af771722f99c6278a591cc41526663e41ca1c3886",
+            "quote": "中金资本、天鹰资本、顺创产投以及中新绿电共同出资。",
+            "quote_hash": "0613174e008758f56944c2951c1c79b29107a3cf34d089476da94d532f8b3eed"
           }
         ]
       },
       {
-        "activity_id": "IA-c3c710b582a8b5be",
+        "activity_id": "IA-8a042b00b6b265d6",
         "funding_insight_id": "FI-9c8b829633ef0aea",
         "event_ids": [
           "EV-b0e0458e4ae40f66"
@@ -165,16 +171,48 @@
             "quote_hash": "7e2eccb466a27ee65bf5e6dc9ba46669e8e2d59ae9cf4f59452db9847e45e152"
           }
         ]
+      },
+      {
+        "activity_id": "IA-16ff7f6dc5456f25",
+        "funding_insight_id": "FI-a3c129ab8eb46aa4",
+        "event_ids": [
+          "EV-d67dd793fe1f2c04"
+        ],
+        "company_entity_id": "EN-5f03b37d8cca57e1",
+        "company_canonical_entity_id": "EN-5f03b37d8cca57e1",
+        "company_name": "灵御智能",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "过往投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-1ff3ce30945e8f13",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+            "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+            "source_content_hash": "7d6a41ce0da829ca",
+            "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
+            "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+          }
+        ]
       }
     ],
     "evidence": [
       {
-        "source_id": "FISRC-1ff3ce30945e8f13",
-        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
-        "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
-        "source_content_hash": "7d6a41ce0da829ca",
-        "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
-        "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
+        "source_id": "FISRC-0992c85652bbaa98",
+        "source_url": "https://m.sohu.com/a/1080637979_114984?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "新烛时代获超4000万元天使+轮融资，中金资本等共同出资",
+        "source_content_hash": "b04480c76287403febb6695af771722f99c6278a591cc41526663e41ca1c3886",
+        "quote": "中金资本、天鹰资本、顺创产投以及中新绿电共同出资。",
+        "quote_hash": "0613174e008758f56944c2951c1c79b29107a3cf34d089476da94d532f8b3eed"
       },
       {
         "source_id": "FISRC-0b807b7fa8b0845a",
@@ -183,6 +221,14 @@
         "source_content_hash": "4d7c1e7d0cd742c0",
         "quote": "本轮融资由福田资本领投，力合创投、金沙江联合资本、复利多、楹辉创投、华仓资本跟投，老股东英诺基金、天鹰资本持续加注",
         "quote_hash": "7e2eccb466a27ee65bf5e6dc9ba46669e8e2d59ae9cf4f59452db9847e45e152"
+      },
+      {
+        "source_id": "FISRC-1ff3ce30945e8f13",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprivs1014861.shtml",
+        "source_title": "「灵御智能」完成数亿元Pre-A轮融资 - 新浪财经",
+        "source_content_hash": "7d6a41ce0da829ca",
+        "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
+        "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
       }
     ],
     "public_profile": {
@@ -190,10 +236,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "天鹰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "天鹰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：北京新烛时代科技有限公司 · 天使+轮 · 2026-09-25 · 本轮联合投资 · 超过4000万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0992c85652bbaa98"
+        },
         {
           "description": "融资来源记录：灵御智能 · 天使+轮 · 2026-05-19 · 本轮参投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-0b807b7fa8b0845a"
@@ -205,6 +255,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-0992c85652bbaa98",
+          "source_url": "https://m.sohu.com/a/1080637979_114984?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "新烛时代获超4000万元天使+轮融资，中金资本等共同出资",
+          "source_content_hash": "b04480c76287403febb6695af771722f99c6278a591cc41526663e41ca1c3886",
+          "quote": "中金资本、天鹰资本、顺创产投以及中新绿电共同出资。",
+          "quote_hash": "0613174e008758f56944c2951c1c79b29107a3cf34d089476da94d532f8b3eed"
+        },
         {
           "source_id": "FISRC-0b807b7fa8b0845a",
           "source_url": "https://finance.sina.com.cn/roll/2026-05-19/doc-inhymumf2211979.shtml",

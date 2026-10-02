@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 13,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 12,
+    "current_round_count": 20,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 17,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,9 +72,10 @@
     "first_disclosed_at": "2025-03-03",
     "latest_disclosed_at": "2026-09-08",
     "role_counts": {
-      "historical_or_ambiguous": 2,
-      "lead": 7,
-      "participant": 6
+      "co_lead": 1,
+      "historical_or_ambiguous": 3,
+      "lead": 9,
+      "participant": 10
     },
     "round_codes": [
       "multi_round",
@@ -82,7 +83,9 @@
       "series_a",
       "series_c",
       "series_d",
-      "series_e"
+      "series_e",
+      "series_h",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -91,9 +94,19 @@
         "name": "AgentMail"
       },
       {
+        "entity_id": "EN-e3797aea6accf7d7",
+        "canonical_entity_id": "",
+        "name": "Almanac Health, Inc."
+      },
+      {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-1b9db8eef57865ee",
+        "canonical_entity_id": "",
+        "name": "Arga Labs"
       },
       {
         "entity_id": "EN-2f88f41306209dd7",
@@ -131,9 +144,19 @@
         "name": "Mistral AI"
       },
       {
+        "entity_id": "EN-c5803a6e4daa6af4",
+        "canonical_entity_id": "",
+        "name": "Modal"
+      },
+      {
         "entity_id": "EN-e781481ff5ffe530",
         "canonical_entity_id": "",
         "name": "Nace.AI"
+      },
+      {
+        "entity_id": "EN-46a10435f014ccc9",
+        "canonical_entity_id": "",
+        "name": "Neko Health"
       },
       {
         "entity_id": "EN-f5cfcb570b7edac2",
@@ -144,11 +167,16 @@
         "entity_id": "EN-8ab71d56a963f706",
         "canonical_entity_id": "",
         "name": "River AI"
+      },
+      {
+        "entity_id": "EN-29a3723ce5ee3350",
+        "canonical_entity_id": "",
+        "name": "Together AI"
       }
     ],
     "activities": [
       {
-        "activity_id": "IA-fdf8b30e783e52cf",
+        "activity_id": "IA-fe0efe5a2660f407",
         "funding_insight_id": "FI-d9fc0a409d33d577",
         "event_ids": [
           "EV-6d6715223e80e7a6"
@@ -188,7 +216,7 @@
         ]
       },
       {
-        "activity_id": "IA-7c314cde69f709fb",
+        "activity_id": "IA-25f08ef2fccc3e09",
         "funding_insight_id": "FI-e0e22d70a91e704e",
         "event_ids": [
           "EV-dccfca59b3e58638",
@@ -230,7 +258,47 @@
         ]
       },
       {
-        "activity_id": "IA-f4356ca54d284e17",
+        "activity_id": "IA-264584c23697181d",
+        "funding_insight_id": "FI-68cd3b0b2986de61",
+        "event_ids": [
+          "EV-e1b684a3701d3ff5"
+        ],
+        "company_entity_id": "EN-1b9db8eef57865ee",
+        "company_canonical_entity_id": "",
+        "company_name": "Arga Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b6920185a5e7fa72",
+            "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+            "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+            "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+            "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+            "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6abf1fc3f0f1a2b6",
         "funding_insight_id": "FI-d1444f877a3e580e",
         "event_ids": [
           "EV-55e7c286e95be405"
@@ -270,7 +338,88 @@
         ]
       },
       {
-        "activity_id": "IA-7de0c03a9dd2a607",
+        "activity_id": "IA-998ae68f6958e604",
+        "funding_insight_id": "FI-df55ec22162132fb",
+        "event_ids": [
+          "EV-68cb62eca02df206"
+        ],
+        "company_entity_id": "EN-46a10435f014ccc9",
+        "company_canonical_entity_id": "",
+        "company_name": "Neko Health",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$700m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-07-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6442b5e548ad70ee",
+            "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+            "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+            "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+            "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
+            "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-adbcc4b9ccff23f4",
+        "funding_insight_id": "FI-b1c547937abcaf77",
+        "event_ids": [
+          "EV-4a73829a143cf3fc",
+          "EV-13ec78dfdbca678b"
+        ],
+        "company_entity_id": "EN-29a3723ce5ee3350",
+        "company_canonical_entity_id": "",
+        "company_name": "Together AI",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$800M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 800000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8 亿美元"
+        },
+        "announced_at": "2026-07-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b7537d2258bce6eb",
+            "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+            "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+            "source_content_hash": "80d971eac6d90be3",
+            "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+            "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-61d1cdddd2396836",
         "funding_insight_id": "FI-9e8f37e4b7cf28a5",
         "event_ids": [
           "EV-7283de3f3a76d22b"
@@ -310,7 +459,47 @@
         ]
       },
       {
-        "activity_id": "IA-f0e53763bc2abb5a",
+        "activity_id": "IA-fba02838c9e442ec",
+        "funding_insight_id": "FI-6fdfe3674217723b",
+        "event_ids": [
+          "EV-0a9d7be146eeb62a"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$98 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8f5a35fa6bbc977d",
+            "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+            "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+            "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+            "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+            "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0f4d6dbb00083bbc",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
           "EV-20d762872664fddb"
@@ -350,47 +539,7 @@
         ]
       },
       {
-        "activity_id": "IA-231df2aabb782bd3",
-        "funding_insight_id": "FI-bff055b65fdb260b",
-        "event_ids": [
-          "EV-20d762872664fddb"
-        ],
-        "company_entity_id": "EN-450dcf23e621ff10",
-        "company_canonical_entity_id": "",
-        "company_name": "Engram",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "Seed",
-        "amount_original": "$98M",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 98000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "9800 万美元"
-        },
-        "announced_at": "2026-06-23",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "既有投资方",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-bcf01fbecb1fbdb6",
-            "source_url": "https://www.caplight.com/company/engram",
-            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-            "source_content_hash": "24739161319ad4eb",
-            "quote": "General Catalyst Seed, Early Funding",
-            "quote_hash": "96f3584ab764d92902c27c282f58db0711a3971ad3b88b68da097d8485e156a5"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-ea762919b14ec83f",
+        "activity_id": "IA-fc8680d54bf1e931",
         "funding_insight_id": "FI-274044e5d2a8eb25",
         "event_ids": [
           "EV-7e1624d7df300713"
@@ -430,7 +579,47 @@
         ]
       },
       {
-        "activity_id": "IA-9c4d028c9fca5f88",
+        "activity_id": "IA-08fb44d47eab61d1",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+            "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-208066251689886b",
         "funding_insight_id": "FI-5faa0336090509de",
         "event_ids": [
           "EV-5762fe51987bc5ff"
@@ -470,7 +659,47 @@
         ]
       },
       {
-        "activity_id": "IA-bd95770f6f7c1f82",
+        "activity_id": "IA-bc37704162ac071f",
+        "funding_insight_id": "FI-772c8fb5434b1734",
+        "event_ids": [
+          "EV-1d31f1c839f9dab5"
+        ],
+        "company_entity_id": "EN-c5803a6e4daa6af4",
+        "company_canonical_entity_id": "",
+        "company_name": "Modal",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$355 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 355000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.55 亿美元"
+        },
+        "announced_at": "2026-05-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-733016c3a34668d3",
+            "source_url": "https://modal.com/blog/modal-series-c",
+            "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+            "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+            "quote": "a round led by General Catalyst and Redpoint",
+            "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-55a40e0ff09c049a",
         "funding_insight_id": "FI-f68564c4b5e7f54b",
         "event_ids": [
           "EV-917a390341b9fce6"
@@ -510,7 +739,7 @@
         ]
       },
       {
-        "activity_id": "IA-3f4301e627bc00fd",
+        "activity_id": "IA-12ed36163235a7f1",
         "funding_insight_id": "FI-a308a87eb0e97da7",
         "event_ids": [
           "EV-dd3217aad32e6891"
@@ -550,7 +779,47 @@
         ]
       },
       {
-        "activity_id": "IA-b99c59792a0774b9",
+        "activity_id": "IA-c00563d7898581a0",
+        "funding_insight_id": "FI-96276ea81e78cfe5",
+        "event_ids": [
+          "EV-c34ebd1db6227471"
+        ],
+        "company_entity_id": "EN-e3797aea6accf7d7",
+        "company_canonical_entity_id": "",
+        "company_name": "Almanac Health, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-04-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6946be83f05bd7fd",
+            "source_url": "https://www.thesaasnews.com/news/almanac-health-raises-10m-in-seed-round/",
+            "source_title": "Almanac Health 完成 1000 万美元种子轮融资",
+            "source_content_hash": "907c7a9b4e5df9a833c71d340559caf6f86896cb55d395824156214072e94e6d",
+            "quote": "The round was led by F-Prime, with participation from General Catalyst and Lightspeed Venture Partners.",
+            "quote_hash": "f9f2b40f7a82566a7f4ebcb63c723a73b06e284f7e6e19bec41c28e44c3943a9"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-e481a2218530cb05",
         "funding_insight_id": "FI-19731873c2b7d1c1",
         "event_ids": [
           "EV-c8928410f6c145eb"
@@ -598,7 +867,7 @@
         ]
       },
       {
-        "activity_id": "IA-f78fb9bce9a65207",
+        "activity_id": "IA-da5ec791ed08ad43",
         "funding_insight_id": "FI-94de7d23d9ebd5ba",
         "event_ids": [
           "EV-9055cb4fa2b4ee62"
@@ -638,7 +907,7 @@
         ]
       },
       {
-        "activity_id": "IA-94aef3964e4ec820",
+        "activity_id": "IA-704df23a43bb8aa7",
         "funding_insight_id": "FI-1cf34218733257fd",
         "event_ids": [
           "EV-85506f9f86779a6d"
@@ -678,47 +947,7 @@
         ]
       },
       {
-        "activity_id": "IA-caa549ef3d2a6e63",
-        "funding_insight_id": "FI-0312b291d6672487",
-        "event_ids": [
-          "EV-201b25d4f3cf696a"
-        ],
-        "company_entity_id": "EN-c70eca6b0f88f44d",
-        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
-        "company_name": "Anthropic",
-        "round": "F轮",
-        "round_code": "series_f",
-        "round_original": "Series F",
-        "amount_original": "$13 billion",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 13000000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "130 亿美元"
-        },
-        "announced_at": "2025-09-02",
-        "market_region": "GLOBAL",
-        "china_market_match": false,
-        "disclosure_status": "disclosed",
-        "scope": "historical_or_ambiguous",
-        "role": "参与E轮融资",
-        "role_code": "historical_or_ambiguous",
-        "evidence": [
-          {
-            "source_id": "FISRC-c5289e6345684ca4",
-            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
-            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
-            "source_content_hash": "e918313869a22b8d",
-            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
-            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
-          }
-        ]
-      },
-      {
-        "activity_id": "IA-eb5412ed546daef1",
+        "activity_id": "IA-395b0a4ef85df7a3",
         "funding_insight_id": "FI-6601d010adc14dd0",
         "event_ids": [
           "EV-78a11d309c3d4e97"
@@ -756,6 +985,102 @@
             "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
           }
         ]
+      },
+      {
+        "activity_id": "IA-516d03e284ce15c3",
+        "funding_insight_id": "FI-96276ea81e78cfe5",
+        "event_ids": [
+          "EV-c34ebd1db6227471"
+        ],
+        "company_entity_id": "EN-e3797aea6accf7d7",
+        "company_canonical_entity_id": "",
+        "company_name": "Almanac Health, Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-Seed 轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7b44b1af3d3f9dce",
+            "source_url": "https://pulse2.com/almanac-health-10-million-raised-for-research-validated-clinical-ai-platform-empowering-clinicians",
+            "source_title": "Almanac Health: $10 Million Raised For Research-Validated Clinical AI Platform Empowering Clinicians",
+            "source_content_hash": "1417cb34729fda44",
+            "quote": "General Catalyst previously led the company’s pre-seed round, which also included participation from Soma Capital.",
+            "quote_hash": "91e25ae38fee38334c8f1160f99dbf40c38a7b1415edcd969f37034141b51c7a"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-234bbf6b11cb0c9f",
+        "funding_insight_id": "FI-0312b291d6672487",
+        "event_ids": [
+          "EV-201b25d4f3cf696a"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E轮参投",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "参与E轮融资",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-c5289e6345684ca4",
+            "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
+            "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
+            "source_content_hash": "e918313869a22b8d",
+            "quote": "The round was announced on March 3 and was led by Lightspeed with participation from Salesforce Ventures, Menlo Ventures, and General Catalyst, among others.",
+            "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0d81706a7318b40c",
+        "funding_insight_id": "FI-bff055b65fdb260b",
+        "event_ids": [
+          "EV-20d762872664fddb"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "既有投资方",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-bcf01fbecb1fbdb6",
+            "source_url": "https://www.caplight.com/company/engram",
+            "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+            "source_content_hash": "24739161319ad4eb",
+            "quote": "General Catalyst Seed, Early Funding",
+            "quote_hash": "96f3584ab764d92902c27c282f58db0711a3971ad3b88b68da097d8485e156a5"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -776,12 +1101,36 @@
         "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
       },
       {
+        "source_id": "FISRC-b6920185a5e7fa72",
+        "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+        "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+        "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+        "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+        "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+      },
+      {
         "source_id": "FISRC-0deb7f666bec5423",
         "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
         "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
         "source_content_hash": "a44322af824e0f8f",
         "quote": "led by General Catalyst and AMP PBC",
         "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+      },
+      {
+        "source_id": "FISRC-6442b5e548ad70ee",
+        "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+        "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+        "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+        "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
+        "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
+      },
+      {
+        "source_id": "FISRC-b7537d2258bce6eb",
+        "source_url": "https://stackmaven.io/news/together-ai-800m-series-c/",
+        "source_title": "Together AI raises $800M at a reported $8.3B valuation as open-model inference demand compounds",
+        "source_content_hash": "80d971eac6d90be3",
+        "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
+        "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
       },
       {
         "source_id": "FISRC-1fcc20a8b95a7aec",
@@ -792,20 +1141,20 @@
         "quote_hash": "87bf9a8cee415ae8aa119075ce53dc29890588ef9e8c4f58553ba01180d40993"
       },
       {
+        "source_id": "FISRC-8f5a35fa6bbc977d",
+        "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+        "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+        "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+        "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+        "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+      },
+      {
         "source_id": "FISRC-709d518a9cc449f2",
         "source_url": "https://www.vktr.com/ai-news/engram-launches-with-98m-to-give-enterprise-ai-memory/",
         "source_title": "Engram Builds Enterprise AI Memory Layer",
         "source_content_hash": "f18a33f76104f554",
         "quote": "emerged from stealth on June 23 with $98 million in funding co-led by General Catalyst and Modern Capital.",
         "quote_hash": "7396fd22e5914332bfb4e95b5d54d556ac8d008ff51ca34abbdf7b5d79786d9f"
-      },
-      {
-        "source_id": "FISRC-bcf01fbecb1fbdb6",
-        "source_url": "https://www.caplight.com/company/engram",
-        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
-        "source_content_hash": "24739161319ad4eb",
-        "quote": "General Catalyst Seed, Early Funding",
-        "quote_hash": "96f3584ab764d92902c27c282f58db0711a3971ad3b88b68da097d8485e156a5"
       },
       {
         "source_id": "FISRC-e9a8d571db654fd4",
@@ -816,12 +1165,28 @@
         "quote_hash": "b60ff6d091951b5033820c3e6c24ff6c66fe6ef1004947c9d8afb5cadc97dbbc"
       },
       {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+        "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+      },
+      {
         "source_id": "FISRC-c7d89f6e73a6fe5b",
         "source_url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/",
         "source_title": "AI 编程初创公司 Cognition 以 250 亿美元投前估值融资 10 亿美元",
         "source_content_hash": "445b41ae8041de388e8eeed8aa095258418bead9b091cd79f777917d08b87656",
         "quote": "The round was led by Lux Capital, General Catalyst and 8VC",
         "quote_hash": "e9c26401b28b95ba14901b7cd9d160600834299249f53acc81e8697d54b6f697"
+      },
+      {
+        "source_id": "FISRC-733016c3a34668d3",
+        "source_url": "https://modal.com/blog/modal-series-c",
+        "source_title": "Modal 的 C 轮融资：以 46.5 亿美元估值筹集 3.55 亿美元",
+        "source_content_hash": "6b7259a41a24ba5cf5f5b613a8b2159e9caa382fdbdc428d3f341874d7dc471a",
+        "quote": "a round led by General Catalyst and Redpoint",
+        "quote_hash": "eb1d354d77b77301b97269301f89be55e3aa7bd2f5428bd46a0423b8d83ed7e9"
       },
       {
         "source_id": "FISRC-be2cfb1d0da46098",
@@ -838,6 +1203,14 @@
         "source_content_hash": "3fe3680f5835b8e221f8fb86df7befe7d39650d543b3c9aca986695aedac8491",
         "quote": "The Series B funding was led by Meritech and General Catalyst",
         "quote_hash": "bcb53c848d1b78b1efb58f1af73eaaa779195c1267261467e6639c004498f612"
+      },
+      {
+        "source_id": "FISRC-6946be83f05bd7fd",
+        "source_url": "https://www.thesaasnews.com/news/almanac-health-raises-10m-in-seed-round/",
+        "source_title": "Almanac Health 完成 1000 万美元种子轮融资",
+        "source_content_hash": "907c7a9b4e5df9a833c71d340559caf6f86896cb55d395824156214072e94e6d",
+        "quote": "The round was led by F-Prime, with participation from General Catalyst and Lightspeed Venture Partners.",
+        "quote_hash": "f9f2b40f7a82566a7f4ebcb63c723a73b06e284f7e6e19bec41c28e44c3943a9"
       },
       {
         "source_id": "FISRC-14ff8eaae437ca5e",
@@ -872,6 +1245,22 @@
         "quote_hash": "62fc95ba91a9ff49ef0c6eb3f17c1494a2a8747aa90c11a6b4dcd719dd2de14e"
       },
       {
+        "source_id": "FISRC-52917ea3c077fbf0",
+        "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
+        "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
+        "source_content_hash": "574df0fdc225fe9e",
+        "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
+        "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
+      },
+      {
+        "source_id": "FISRC-7b44b1af3d3f9dce",
+        "source_url": "https://pulse2.com/almanac-health-10-million-raised-for-research-validated-clinical-ai-platform-empowering-clinicians",
+        "source_title": "Almanac Health: $10 Million Raised For Research-Validated Clinical AI Platform Empowering Clinicians",
+        "source_content_hash": "1417cb34729fda44",
+        "quote": "General Catalyst previously led the company’s pre-seed round, which also included participation from Soma Capital.",
+        "quote_hash": "91e25ae38fee38334c8f1160f99dbf40c38a7b1415edcd969f37034141b51c7a"
+      },
+      {
         "source_id": "FISRC-c5289e6345684ca4",
         "source_url": "https://techcrunch.com/2026/01/19/here-are-the-49-us-ai-startups-that-have-raised-100m-or-more-in-2025/",
         "source_title": "2025 年美国 55 家 AI 初创公司融资超 1 亿美元",
@@ -880,12 +1269,12 @@
         "quote_hash": "99ac1a2c76fdc0f8cae04b9fd4cfa99e172468497ad14d7feda5bc570a359919"
       },
       {
-        "source_id": "FISRC-52917ea3c077fbf0",
-        "source_url": "https://techstartups.com/2025/03/04/amazon-backed-ai-startup-anthropic-hits-61-5b-valuation-after-3-5b-funding-round/",
-        "source_title": "Amazon-backed AI startup Anthropic hits $61.5B valuation after $3.5B funding round - Tech Startups",
-        "source_content_hash": "574df0fdc225fe9e",
-        "quote": "Lightspeed Venture Partners led the round, with participation from Salesforce Ventures, Cisco Investments, Fidelity Management & Research Co., General Catalyst, D1 Capital Partners, and Jane Street, among others.",
-        "quote_hash": "b6a7c1a96202c070c7844ca8f575954e5708e3527595fbd4d6510df17ee37161"
+        "source_id": "FISRC-bcf01fbecb1fbdb6",
+        "source_url": "https://www.caplight.com/company/engram",
+        "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
+        "source_content_hash": "24739161319ad4eb",
+        "quote": "General Catalyst Seed, Early Funding",
+        "quote_hash": "96f3584ab764d92902c27c282f58db0711a3971ad3b88b68da097d8485e156a5"
       }
     ],
     "public_profile": {
@@ -923,8 +1312,8 @@
           "source_id": "FISRC-4d11ed62a144a3f4"
         },
         {
-          "description": "融资来源记录：River AI · 多轮融资 · 2026-08-11 · 本轮领投 · $1.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-0deb7f666bec5423"
+          "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮领投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b6920185a5e7fa72"
         }
       ],
       "contacts": [
@@ -1070,12 +1459,12 @@
           "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
         },
         {
-          "source_id": "FISRC-0deb7f666bec5423",
-          "source_url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai",
-          "source_title": "General Catalyst 领投 River AI 11 亿美元融资",
-          "source_content_hash": "a44322af824e0f8f",
-          "quote": "led by General Catalyst and AMP PBC",
-          "quote_hash": "013a3889f84a5ad377bf90a22775a82f1aa282b45db2c3cb0e6e2cae1fcfbe37"
+          "source_id": "FISRC-b6920185a5e7fa72",
+          "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
+          "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
+          "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
+          "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
+          "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1086,6 +1475,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[20].role": {
+          "text": "Pre-Seed 轮领投",
+          "source_hash": "b679d7fa92689a42e5e3729978cbf6f81b503b4ff4fa9193c6a9694195d14b03",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T00:56:00.494Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "General Catalyst 的种子投资介绍列出 Anduril、Applied Intuition、Deel、Helsing、Mistral、Stripe 和 Zepto 等合作企业，作为案例而非完整组合。",
           "source_hash": "4dea6ca3615da8e410cd09170ce41e54565527318fa486722cb9fa99bcb85dd0",

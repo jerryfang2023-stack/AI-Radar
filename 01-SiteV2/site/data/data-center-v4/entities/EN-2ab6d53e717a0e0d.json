@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-d3c5eb69eb9d397a",
       "EV-d1a3f5c8045e548d",
       "EV-1ff169120ed385f6"
     ],
@@ -74,12 +75,14 @@
       "EN-bbdefa2950f49882"
     ],
     "firstSeen": "2026-06-22",
-    "lastSeen": "2026-07-16",
+    "lastSeen": "2026-10-02",
     "relationIds": [
       "REL2-7a95bce5aecaba79"
     ],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-d3c5eb69eb9d397a"
+      ],
       "deployments": [],
       "partnerships": [
         "EV-d1a3f5c8045e548d"
@@ -92,6 +95,82 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-d3c5eb69eb9d397a",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-31",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenCSG完成数亿元Pre-A轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-55c37c5c0b75471a",
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29",
+          "EN-b81c8201acfc7639",
+          "EN-2ab6d53e717a0e0d",
+          "EN-25cdd04cf7fba6b1"
+        ]
+      },
       {
         "id": "EV-1ff169120ed385f6",
         "dataDate": "2026-07-16",
@@ -157,28 +236,47 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-1c7050585c7f4791",
+        "EV-42a74865c9b654bb",
+        "EV-5b5237105fc868cd",
+        "EV-98ea446e097a9a95",
+        "EV-eb2796fc4bcc5ac0",
+        "EV-bccd915b61c48911",
+        "EV-51221c8be7d20b5d",
         "EV-2470b13ea55496d0",
         "EV-59870accd54d5efd",
         "EV-83697c1162a5faf9",
+        "EV-9f886463e1660f7a",
         "EV-fe49d2ee580cfea2",
         "EV-d57fb9108f2cb220",
         "EV-1744d0e71176f9a1",
         "EV-a6cb4aef5284eb68",
+        "EV-3f9d420719641eda",
         "EV-a0ca934522418c0b",
         "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
+        "EV-002f1b7abaf28827",
+        "EV-71d7d8bbaa623228",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
         "EV-2bb63a3015195f9b",
         "EV-7f3298069258b3ea",
         "EV-43b56d49df9a73a2",
+        "EV-b61af70f81354b8e",
         "EV-0e84a2f49d765ce3",
         "EV-dbbe3fd637be213f",
         "EV-4a162c41bb82f325",
-        "EV-5762fe51987bc5ff",
+        "EV-9cf819fafc04ca0c",
+        "EV-d85ea5150230ee56",
         "EV-6cb8979f92cf74ce",
+        "EV-1891e6540ad2c1e0",
+        "EV-4e4ae1578720e907",
+        "EV-cd2970524c27dffb",
+        "EV-ed73cd2c438a470d",
         "EV-ef1de880e4ef9f75",
+        "EV-3f979612b8a14b28",
+        "EV-81f20b7ee39e3e19",
         "EV-63f49f303a80a6a0",
         "EV-0e424af71cfe12f8",
         "EV-67804da6b04fdcc5",
@@ -448,38 +546,40 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-industry-aerospace_defense",
-        "TX-industry-manufacturing",
+        "TX-technology-agentic_execution",
+        "TX-product_form-model",
+        "TX-use_case-security_operations",
         "TX-product_form-enterprise_software_platform",
+        "TX-industry-manufacturing",
+        "TX-industry-financial_services",
+        "TX-use_case-sales",
+        "TX-industry-media_entertainment",
+        "TX-target_user-consumer",
+        "TX-use_case-legal_compliance",
+        "TX-industry-healthcare_life_sciences",
+        "TX-technology-multimodal",
+        "TX-industry-aerospace_defense",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-product_form-end_user_application",
-        "TX-target_user-consumer",
-        "TX-technology-agentic_execution",
+        "TX-technology-embodied_ai",
+        "TX-industry-retail_ecommerce",
+        "TX-technology-code_generation",
+        "TX-technology-speech_audio",
         "TX-ai_market_category-infrastructure_compute",
         "TX-ai_market_subcategory-hardware_computing",
-        "TX-product_form-model",
-        "TX-industry-retail_ecommerce",
-        "TX-industry-healthcare_life_sciences",
         "TX-use_case-research_discovery",
-        "TX-technology-multimodal",
-        "TX-industry-financial_services",
-        "TX-technology-embodied_ai",
         "TX-use_case-software_development",
         "TX-product_form-ai_compute_system",
         "TX-ai_market_application-computing_infrastructure",
-        "TX-use_case-security_operations",
         "TX-technology-on_device",
         "TX-deployment_model-edge_device",
-        "TX-technology-code_generation",
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
-        "TX-technology-speech_audio",
-        "TX-use_case-legal_compliance",
-        "TX-deployment_model-cloud",
         "TX-technology-computer_use",
+        "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",
         "TX-technology-tool_use"
       ],
@@ -505,7 +605,7 @@
         "EN-bdfecbcd7dbf76d2"
       ],
       "firstSeen": "2025-10-09",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     }
   ],
   "relationships": [
@@ -532,5 +632,84 @@
   ],
   "taxonomyNodes": [],
   "fde": [],
-  "hardware": []
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-84acc3c635ac339b",
+      "snapshotKey": "84acc3c635ac339b",
+      "snapshotId": "HWS-66a10961798fa054",
+      "eventId": "EV-d3c5eb69eb9d397a",
+      "eventIds": [
+        "EV-d3c5eb69eb9d397a"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "OpenCSG",
+      "subject": "OpenCSG",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "24",
+          "unit": "亿",
+          "fact_ref": "HWF-1489cdfb1f7fa525"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-1489cdfb1f7fa525",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-31",
+          "subject_entity_id": "EN-55c37c5c0b75471a",
+          "subject_name": "OpenCSG",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "亿",
+          "source_quote": "本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。\n近日，开放传神（OpenCSG）宣布完成数亿元人民币Pre-A轮融资，投后估值迈入独角兽级别。本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。本轮融资完成后，OpenCSG将进一步加大在开源AI基础设施、Agentic AI平台、全球开发者生态及城市级AI基础设施等方向的投入，推动中国开源AI技术与生态走向全球。成立于 2023 年的 OpenCSG，是一家面向大模型与智能体时代的 AI 原生公司，致力于通过开源开放的技术生态，帮助企业、园区和城市客户构建可管理、可部署、可运营的 AI 能力底座。从开源大模型社区出发，公司逐步将能力延伸至企业级 AI 平台、Agentic AI 以及城市级 AI 基础设施。\n 新浪科技公众号\n “掌”握科技鲜闻 （微信搜索techsina或扫描左侧二维码关注）\n 相关新闻\n 创事记\n 索尼游戏，进退两难\n OpenAI抢后台，马斯克抢前台\n 陌陌母公司挚文季报图解：营收24亿净利降19% 唐岩刚获派息超8000万\n 阅读排行榜\n 评论排行榜\n 苹果折叠屏iPhone正在测试手写笔：乔布斯当年最嫌弃的配件回归\n 塞浦路斯一艘载有约270名乘客渡轮倾覆，出事海域海况恶劣，当地镇长：已救起159人\n “雪王”猛踩刹车，蜜雪集团能否大象转身？\n 第一批买网红小家电的人 已经开始后悔了\n 告别100年流水线！车自己去找工位？探秘全国唯一的“领航级”汽车工厂\n 华为鸿蒙折叠电脑要出小尺寸版本：配备独立外屏 定价更香\n 年销千辆暴跌90%，豪车玛莎拉蒂“诺基亚”了\n 市值2700亿 国产GPU四小龙之一的沐曦首次盈利：7nm显卡已量产\n 快递寄丢45万爱马仕仅赔500元 当事人还倒贴近万元\n 16年磨一镜！NASA罗曼空间望远镜终于升空：视野达哈勃的100倍\n 告别100年流水线！车自己去找工位？探秘全国唯一的“领航级”汽车工厂\n 无人快递车顶上趴着俩人搭便车！厂商回应：绕过摄像头就识别不了\n 国内首部 AIGC 长剧《后西游记》今日开播，首部“边审边播”剧集\n 当事乘客回应“厦航飞北京航班上遭邻座扇耳光”：对方系中年女性 航司称乘务员目击脚踹动作\n 苹果折叠屏iPhone正在测试手写笔：乔布斯当年最嫌弃的配件回归\n 苹果发布会倒计时，首款折叠iPhone价格曝光\n 上海电信突发大范围断网 手机信号网络全无：官方致歉 已陆续恢复\n ",
+          "event_refs": [
+            "EV-d3c5eb69eb9d397a"
+          ],
+          "claim_ref": "CL-7b7205b2d52422c3",
+          "source_refs": [
+            "SA-87f7278abfa670cd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-55c37c5c0b75471a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
+      "entityIds": [
+        "EN-55c37c5c0b75471a",
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29",
+        "EN-b81c8201acfc7639",
+        "EN-2ab6d53e717a0e0d",
+        "EN-25cdd04cf7fba6b1"
+      ]
+    }
+  ]
 }

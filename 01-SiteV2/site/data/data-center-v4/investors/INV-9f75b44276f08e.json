@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-09-22",
-    "latest_disclosed_at": "2026-09-22",
+    "latest_disclosed_at": "2026-09-24",
     "role_counts": {
-      "lead": 1
+      "lead": 2
     },
     "round_codes": [
+      "series_c",
       "series_e"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6ecf7f43c6c5a2b0",
+        "canonical_entity_id": "",
+        "name": "Basecamp Research"
+      },
       {
         "entity_id": "EN-7331374f7091259f",
         "canonical_entity_id": "",
@@ -86,7 +92,47 @@
     ],
     "activities": [
       {
-        "activity_id": "IA-4ea2d040a773b01b",
+        "activity_id": "IA-f9e93285dd2e8af1",
+        "funding_insight_id": "FI-d00cadc2bcc871e6",
+        "event_ids": [
+          "EV-6d92f16f6079fe38"
+        ],
+        "company_entity_id": "EN-6ecf7f43c6c5a2b0",
+        "company_canonical_entity_id": "",
+        "company_name": "Basecamp Research",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$140M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 140000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.4 亿美元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-ecd2ea74974f4ff3",
+            "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+            "source_title": "更正 -- Basecamp Research",
+            "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
+            "quote": "The oversubscribed round was led by S32",
+            "quote_hash": "373cc132f8e9f98ac798d6003cf4d568541cda97709e7137841943f7493e6b58"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-eb38f9b3e746c7c9",
         "funding_insight_id": "FI-a83cd8c83852046e",
         "event_ids": [
           "EV-bba3677d51b85918"
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-ecd2ea74974f4ff3",
+        "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+        "source_title": "更正 -- Basecamp Research",
+        "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
+        "quote": "The oversubscribed round was led by S32",
+        "quote_hash": "373cc132f8e9f98ac798d6003cf4d568541cda97709e7137841943f7493e6b58"
+      },
+      {
         "source_id": "FISRC-16afc5791c45315a",
         "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
         "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
@@ -141,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "S32 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "S32 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮领投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ecd2ea74974f4ff3"
+        },
         {
           "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16afc5791c45315a"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-ecd2ea74974f4ff3",
+          "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
+          "source_title": "更正 -- Basecamp Research",
+          "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
+          "quote": "The oversubscribed round was led by S32",
+          "quote_hash": "373cc132f8e9f98ac798d6003cf4d568541cda97709e7137841943f7493e6b58"
+        },
         {
           "source_id": "FISRC-16afc5791c45315a",
           "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",

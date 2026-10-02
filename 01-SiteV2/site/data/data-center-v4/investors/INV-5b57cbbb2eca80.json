@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-01",
-    "currentDate": "2026-10-01",
-    "eventCount": 3632,
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -69,8 +69,8 @@
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-10",
-    "latest_disclosed_at": "2026-06-10",
+    "first_disclosed_at": "",
+    "latest_disclosed_at": "",
     "role_counts": {
       "historical_or_ambiguous": 1
     },
@@ -78,7 +78,7 @@
     "portfolio_companies": [],
     "activities": [
       {
-        "activity_id": "IA-2b276e8a04f87744",
+        "activity_id": "IA-78928ca202fe0c58",
         "funding_insight_id": "FI-6deae4c748088f7f",
         "event_ids": [
           "EV-c0ec0c026233bea5"
@@ -86,23 +86,15 @@
         "company_entity_id": "EN-a7dd4a797cf9990b",
         "company_canonical_entity_id": "",
         "company_name": "Niteshift",
-        "round": "种子轮",
-        "round_code": "seed",
-        "round_original": "种子轮",
-        "amount_original": "$7 million",
-        "amount_normalized": {
-          "currency": "USD",
-          "value": 7000000,
-          "min_value": null,
-          "max_value": null,
-          "unit": "base",
-          "status": "exact",
-          "display_zh": "700 万美元"
-        },
-        "announced_at": "2026-06-10",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使投资人",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
         "market_region": "GLOBAL",
         "china_market_match": false,
-        "disclosure_status": "disclosed",
+        "disclosure_status": "unknown",
         "scope": "historical_or_ambiguous",
         "role": "天使投资人",
         "role_code": "historical_or_ambiguous",
@@ -215,6 +207,26 @@
         }
       ],
       "last_verified_at": "2026-09-28"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.summary": {
+          "text": "Ankur Goyal 是 Braintrust 创办人兼 CEO，拥有 Carnegie Mellon University 计算机科学学习背景。其公开履历包括在 SingleStore 负责工程、创立 Impira 并将其出售给 Figma，之后在 Figma 领导机器学习平台；Braintrust 的创办与产品方向延续了他在 AI 产品评估方面的经验。融资记录将其列为 Niteshift 2026 年种子轮天使投资人。",
+          "source_hash": "e53af5afd7bbbec81f260cd78d1b5c8b8bc34aa2f4a801e9822e3b86cbeeacab",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        },
+        "public_profile.career[2].description": {
+          "text": "Impira 并入 Figma 后负责机器学习平台；Braintrust 创办文章回顾了他在 Impira 与 Figma 构建 AI 产品的经历。",
+          "source_hash": "02cf5458149b7e13b3134bc29a1e07b4958bd30d604f2adb133eb6cfa9072b6c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:14:44.677Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -4,6 +4,7 @@ import path from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import { chinaFundingPublicationScope } from "./lib/china-funding-publication-scope.mjs";
+import { publicationHold } from "../financing/catalog.mjs";
 import {
   FUNDING_INSIGHT_FRONTSTAGE_VERSION,
   FUNDING_INSIGHT_GATE_VERSION,
@@ -286,7 +287,11 @@ function main() {
   const currentQueue = results.find((result) => result.data?.meta?.date === date)?.data?.queue || [];
   const historyPolicy = readJson(path.join(root, "01-SiteV2/content/11-databases/data-center-v4", date, "historical-funding-authorization.json"), {});
   const coverage = chinaFundingPublicationScope(currentEvents, historyPolicy);
-  problems.push(...verifiedFundingEventCardCoverageProblems(coverage.events, persistedCards, currentQueue, loadDailyBundle(root, date).claims)
+  const publicationReview = readJson(path.join(root, "01-SiteV2/content/12-applications/funding-insights/publication-review.json"), null);
+  // A documented hold excludes the same event from the public catalog. Missing
+  // cards without a reviewed hold still fail; every existing card is validated.
+  const publishableEvents = coverage.events.filter(event => !publicationHold({ triggered_by_event_id: event.event_id }, publicationReview));
+  problems.push(...verifiedFundingEventCardCoverageProblems(publishableEvents, persistedCards, currentQueue, loadDailyBundle(root, date).claims)
     .map((problem) => `${date}:${problem}`));
   if (all) {
     problems.push(...validateEntityReviewQueue(normalizedCards));
