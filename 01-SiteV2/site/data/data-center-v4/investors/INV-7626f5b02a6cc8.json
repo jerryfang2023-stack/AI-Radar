@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
+    "current_round_count": 12,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 9,
+    "portfolio_company_count": 10,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-05-06",
-    "latest_disclosed_at": "2026-09-22",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "historical_or_ambiguous": 3,
-      "lead": 4,
+      "lead": 5,
       "participant": 7
     },
     "round_codes": [
@@ -113,6 +113,11 @@
         "name": "InstaLILY AI"
       },
       {
+        "entity_id": "EN-0aa3069e184a3bce",
+        "canonical_entity_id": "",
+        "name": "Metaview"
+      },
+      {
         "entity_id": "EN-7d3194f79e645c42",
         "canonical_entity_id": "EN-7d3194f79e645c42",
         "name": "OpenAI"
@@ -134,6 +139,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-07bc8d145d8ba687",
+        "funding_insight_id": "FI-568706815472d154",
+        "event_ids": [
+          "EV-f30a987e608c70ae"
+        ],
+        "company_entity_id": "EN-0aa3069e184a3bce",
+        "company_canonical_entity_id": "",
+        "company_name": "Metaview",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$60M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-62e06e29d2d7be04",
+            "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
+            "source_title": "Metaview 完成 6000 万美元 C 轮融资",
+            "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
+            "quote": "The funding round was led by Insight Partners",
+            "quote_hash": "af6e5688857c42bcf8680a735df5157bbf3b10fdf6d60e4a7b4d1cec2d61b172"
+          }
+        ]
+      },
       {
         "activity_id": "IA-ebbacf6ca36371d3",
         "funding_insight_id": "FI-a83cd8c83852046e",
@@ -684,6 +729,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-62e06e29d2d7be04",
+        "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
+        "source_title": "Metaview 完成 6000 万美元 C 轮融资",
+        "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
+        "quote": "The funding round was led by Insight Partners",
+        "quote_hash": "af6e5688857c42bcf8680a735df5157bbf3b10fdf6d60e4a7b4d1cec2d61b172"
+      },
+      {
         "source_id": "FISRC-16afc5791c45315a",
         "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
         "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
@@ -845,16 +898,16 @@
           "source_id": "insight_media"
         },
         {
+          "description": "融资来源记录：Metaview · C轮 · 2026-10-01 · 本轮领投 · $60M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-62e06e29d2d7be04"
+        },
+        {
           "description": "融资来源记录：Snorkel AI · E轮 · 2026-09-22 · 本轮领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-16afc5791c45315a"
         },
         {
           "description": "融资来源记录：Factory · 其他融资 · 2026-09-15 · 本轮参投 · $200M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1c7459d2ce055880"
-        },
-        {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮领投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc5a4e973b035eb"
         }
       ],
       "contacts": [
@@ -912,6 +965,14 @@
           "quote_hash": "5384858027688c8f977287dfc08a527d40044033e1bf6d0114bdb609ec48472a"
         },
         {
+          "source_id": "FISRC-62e06e29d2d7be04",
+          "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
+          "source_title": "Metaview 完成 6000 万美元 C 轮融资",
+          "source_content_hash": "ba1a5b65bf914bb75a72ed976def420590dbbb69a4197105c1b64ddc982eadfe",
+          "quote": "The funding round was led by Insight Partners",
+          "quote_hash": "af6e5688857c42bcf8680a735df5157bbf3b10fdf6d60e4a7b4d1cec2d61b172"
+        },
+        {
           "source_id": "FISRC-16afc5791c45315a",
           "source_url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms",
           "source_title": "Snorkel AI 完成 3.5 亿美元 E 轮融资，估值升至 35 亿美元",
@@ -926,14 +987,6 @@
           "source_content_hash": "89b6f0ad0ac348f8d7d6f68388a64256f7b603116c2ffaf1fe5d049631fea7a1",
           "quote": "This financing from Blackstone, Khosla Ventures, Sequoia Capital, Insight Partners, Evantic Capital, Sound Ventures, NEA, Mantis VC, and Clearlake brings our total funding to over $400 million.",
           "quote_hash": "d3a83d6053f03b18bab56b3f5df54e61a6fb4f30a541ae4b370e8f049f5820f3"
-        },
-        {
-          "source_id": "FISRC-3bc5a4e973b035eb",
-          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-          "source_content_hash": "290d66b36443e7c5",
-          "quote": "Insight Partners returned to lead this round, too",
-          "quote_hash": "e83ddba2629ebc0a50266e83e0af77210dffaeef336e64cea6a1df209dc9e9de"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -944,7 +997,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[11].role": {
+        "activities[12].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",

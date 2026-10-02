@@ -62,6 +62,8 @@ npm run inspect:financing-sources -- --live=true --selected=true --date=YYYY-MM-
 
 每个意图最多增加两份成功原文，每事件最多尝试 24 次正文抓取、保留八份来源。搜索命中和实际正文均核对公司名称或别名，失败原文尝试下一个 URL。只把搜索片段作为发现线索。存在 `FUNDING-RESEARCH-SEEDS-V1` 时优先复用人工确认链接和私有缓存。
 
+人工通过 `web.run.open` 实际阅读的原页面摘录可作为二次研究缓存，明确标为 `web_open_excerpt`，不冒充完整正文或直接 HTTP 抓取。复用必须同时通过原 URL、正文哈希、审核人、审核时间与工具来源校验；搜索摘要不适用。摘录保存在私有证据仓，仍须通过独立来源和逐项引用检查。它不修改融资原始披露日期，也不替代首轮融资原文采集。
+
 同出版方、相同或大段转载正文、明确相同原始 URL 合并计算独立来源；两个不同链接不自动算两份独立证据。新生成融资卡至少需要两组独立来源，再通过主体、轮次、金额、投资方和逐项原文引用门禁。缺口检测只是节省查询的规划信号，不产生事实或替代模型证据审查。历史接受卡不会被本次搜索升级重复生成。
 
 验证：`npm run test:funding-insights`、`node --test agent-workflow/tools/tests/search-gateway.test.mjs`。恢复遵循 [每日监测规则](unified-daily-monitoring.md)，不因下游失败重采接受原文。

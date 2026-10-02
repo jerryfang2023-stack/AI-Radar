@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,25 +61,31 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-21",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 4
+      "participant": 5
     },
     "round_codes": [
       "series_a",
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7b9b33ca95deff50",
+        "canonical_entity_id": "",
+        "name": "CScale"
+      },
       {
         "entity_id": "EN-245f1e177c5169cb",
         "canonical_entity_id": "",
@@ -102,6 +108,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3c1cc75d2d5b8bac",
+        "funding_insight_id": "FI-07d1ab9787e1c9dd",
+        "event_ids": [
+          "EV-4c5dc2fc6d805b3f"
+        ],
+        "company_entity_id": "EN-7b9b33ca95deff50",
+        "company_canonical_entity_id": "",
+        "company_name": "CScale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$145 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 145000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.45 亿美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f84ad840508b39",
+            "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+            "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+            "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+            "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+            "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fd57dddc32f0fc6c",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
@@ -304,6 +350,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f84ad840508b39",
+        "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+        "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+        "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+        "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+        "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+      },
+      {
         "source_id": "FISRC-b235ace767812393",
         "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
         "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
@@ -400,16 +454,16 @@
           "source_id": "intel_capital_impact"
         },
         {
+          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f84ad840508b39"
+        },
+        {
           "description": "融资来源记录：Higgsfield · B轮 · 2026-08-17 · 本轮参投 · 4 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b235ace767812393"
         },
         {
           "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fbda7a24ef3d8ef8"
-        },
-        {
-          "description": "融资来源记录：OXMIQ · A轮 · 2026-07-01 · 本轮参投（战略IP合作伙伴） · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2ac2183ceab4ddd7"
         }
       ],
       "contacts": [
@@ -470,6 +524,14 @@
           "quote_hash": "024caaeace6f7f1f2651d5257e90c4c8e986770dc72a59954463dde23b79b1aa"
         },
         {
+          "source_id": "FISRC-98f84ad840508b39",
+          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote": "NVIDIA and Intel Capital joined as CScale’s first strategic investors.",
+          "quote_hash": "7ddac5dd1cbda69cd992cfbfe569404a65e6d88c024bc1f60b83ed7560861171"
+        },
+        {
           "source_id": "FISRC-b235ace767812393",
           "source_url": "https://siliconangle.com/2026/08/17/higgsfield-raises-400m-at-5-4-billion-valuation-to-scale-video-and-image-generation-platform/",
           "source_title": "Higgsfield raises $400M at $5.4 billion valuation to scale video and image generation platform - SiliconANGLE",
@@ -484,14 +546,6 @@
           "source_content_hash": "56b4a47eeb530513",
           "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
           "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
-        },
-        {
-          "source_id": "FISRC-2ac2183ceab4ddd7",
-          "source_url": "https://oxmiq.ai/blog-oxmiq-raises-35m-series-a",
-          "source_title": "OXMIQ Raises $35 Million to Scale OxCore™ Architecture — OXMIQ",
-          "source_content_hash": "b11173439b5612a7",
-          "quote": "Intel Capital rounds out the group as a strategic IP partner, adding to OXMIQ's design and engineering depth.",
-          "quote_hash": "da54bd89e1be8487b6860476d59b89bb31508895b2f511f2c9110944d33f2d4c"
         }
       ],
       "coverage_status": "researched",

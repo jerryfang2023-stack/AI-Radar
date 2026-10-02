@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 1,
-    "china_market_company_count": 1,
+    "china_market_activity_count": 2,
+    "china_market_company_count": 2,
     "first_disclosed_at": "2026-07-13",
-    "latest_disclosed_at": "2026-07-13",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 3
+      "historical_or_ambiguous": 3,
+      "participant": 1
     },
     "round_codes": [
+      "multi_round",
       "pre_series_a"
     ],
     "portfolio_companies": [
@@ -83,9 +85,54 @@
         "entity_id": "EN-e22521e7de65d819",
         "canonical_entity_id": "EN-e22521e7de65d819",
         "name": "珞博智能"
+      },
+      {
+        "entity_id": "EN-83dd78f287b80ce3",
+        "canonical_entity_id": "",
+        "name": "芯光界"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-6988ab207d5f081e",
+        "funding_insight_id": "FI-219ba35e15dc4fb9",
+        "event_ids": [
+          "EV-eb2796fc4bcc5ac0"
+        ],
+        "company_entity_id": "EN-83dd78f287b80ce3",
+        "company_canonical_entity_id": "",
+        "company_name": "芯光界",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "Pre-A轮及A轮（合并披露）",
+        "amount_original": "近10亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 10 亿元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-09a0a8d8826c2cfe",
+            "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+            "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+            "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+            "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+            "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+          }
+        ]
+      },
       {
         "activity_id": "IA-8c25a29db4f42255",
         "funding_insight_id": "FI-fd1db2608b7fc431",
@@ -227,6 +274,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-09a0a8d8826c2cfe",
+        "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+        "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+        "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+        "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+        "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+      },
+      {
         "source_id": "FISRC-8a995421b25ccbf7",
         "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
         "source_title": "珞博智能完成亿元级Pre-A轮融资，加速AI潮玩全球化布局",
@@ -264,10 +319,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华映资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "华映资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-09a0a8d8826c2cfe"
+        },
         {
           "description": "融资来源记录：珞博智能 · Pre-A轮 · 2026-07-13 · 本轮联合领投 · 亿元级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8a995421b25ccbf7"
@@ -275,14 +334,18 @@
         {
           "description": "融资来源记录：灵御智能 · 历史轮次未披露 · 过往投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ff3ce30945e8f13"
-        },
-        {
-          "description": "融资来源记录：灵御智能 · 历史轮次未披露 · 种子+轮领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-57aa18abc9964b6e"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-09a0a8d8826c2cfe",
+          "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
+          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
+          "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
+        },
         {
           "source_id": "FISRC-8a995421b25ccbf7",
           "source_url": "https://www.nbd.com.cn/articles/2026-07-13/4469618.html",
@@ -298,21 +361,13 @@
           "source_content_hash": "7d6a41ce0da829ca",
           "quote": "过往投资方包括英诺基金、华映资本、银河创新资本、福田资本、力合创投、天鹰资本等",
           "quote_hash": "3c24d6c3b8556c87bf74fabda332ef2b72b1906a983c34fb1b6b0c0d5f73db1d"
-        },
-        {
-          "source_id": "FISRC-57aa18abc9964b6e",
-          "source_url": "https://www.163.com/dy/article/K8KEAAD105198R3E.html",
-          "source_title": "「灵御智能」获千万元级种子+轮融资，华映资本领投|智元机器人_网易订阅",
-          "source_content_hash": "7fb543b9712ad8c7",
-          "quote": "本轮融资由 华映资本 领投，老股东 英诺天使基金、水木清华校友种子基金、远镜创投 跟投。",
-          "quote_hash": "b17d1dacb1b8aa93de1cdef202377cbffee56a43fe1ad5311b859a8b5c4a2083"
         }
       ],
       "last_verified_at": "2026-09-25"
     },
     "translations": {
       "zh-CN": {
-        "activities[3].role": {
+        "activities[4].role": {
           "text": "Pre-A+++轮领投",
           "source_hash": "2bc4a0506b339486d82e3b953efe6c83dce23da9ab475f137cd102ae5118e3f6",
           "provider": "deepseek",

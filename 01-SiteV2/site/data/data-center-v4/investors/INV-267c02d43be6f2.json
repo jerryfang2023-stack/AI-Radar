@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,30 +61,76 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-08-06",
-    "latest_disclosed_at": "2026-08-06",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-7ebe9a17c4d4c271",
         "canonical_entity_id": "",
         "name": "Mechanize"
+      },
+      {
+        "entity_id": "EN-0d0dd4bc07420a2c",
+        "canonical_entity_id": "",
+        "name": "Volantis"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0f86f139063d6eb5",
+        "funding_insight_id": "FI-3a45fb24c3af4f80",
+        "event_ids": [
+          "EV-39247400114d59dd"
+        ],
+        "company_entity_id": "EN-0d0dd4bc07420a2c",
+        "company_canonical_entity_id": "",
+        "company_name": "Volantis",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$88 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 88000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "8800 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f61726ece8d567da",
+            "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+            "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+            "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+            "quote": "The round also includes angel investors Dwarkesh Patel, Naveen Rao and Sholto Douglas.",
+            "quote_hash": "11e4620a179c470b6e32a46c61880a254f51423657e55a216e8f68c6f14931c4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-83f2fefffb7edb16",
         "funding_insight_id": "FI-ad56bb800ab98d44",
@@ -128,6 +174,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-f61726ece8d567da",
+        "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+        "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+        "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+        "quote": "The round also includes angel investors Dwarkesh Patel, Naveen Rao and Sholto Douglas.",
+        "quote_hash": "11e4620a179c470b6e32a46c61880a254f51423657e55a216e8f68c6f14931c4"
+      },
+      {
         "source_id": "FISRC-9bd81942662ab7e7",
         "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",
         "source_title": "谷歌瞄准Mechanize的15亿美元投资，这家初创公司103天前刚筹集了910万美元种子轮",
@@ -141,10 +195,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Dwarkesh Patel 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Dwarkesh Patel 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮参投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f61726ece8d567da"
+        },
         {
           "description": "融资来源记录：Mechanize · 种子轮 · 2026-08-06 · 本轮参投 · $1.5B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9bd81942662ab7e7"
@@ -152,6 +210,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-f61726ece8d567da",
+          "source_url": "https://www.prnewswire.com/news-releases/volantis-raises-88m-series-a-to-demolish-the-ai-memory-wall-with-photonics-302895940.html",
+          "source_title": "Volantis 融资 8800 万美元 A 轮，用光子学打破 AI 内存墙",
+          "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
+          "quote": "The round also includes angel investors Dwarkesh Patel, Naveen Rao and Sholto Douglas.",
+          "quote_hash": "11e4620a179c470b6e32a46c61880a254f51423657e55a216e8f68c6f14931c4"
+        },
         {
           "source_id": "FISRC-9bd81942662ab7e7",
           "source_url": "https://dealroom.co/news/143496-google-eyes-1-5b-for-mechanize-a-startup-that-raised-9-1m-seed-103-days/",

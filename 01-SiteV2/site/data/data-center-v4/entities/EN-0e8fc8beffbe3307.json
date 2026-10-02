@@ -1,0 +1,243 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3811,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-0e8fc8beffbe3307",
+    "name": "迅杰光远",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-832662689cd1aa3d"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [
+      "TX-industry-agriculture"
+    ],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-09-30",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-832662689cd1aa3d"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-832662689cd1aa3d",
+        "dataDate": "2026-10-02",
+        "date": "2026-09-30",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "迅杰光远完成超亿元B轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "agriculture",
+            "name": "农业",
+            "entityIds": [
+              "EN-0e8fc8beffbe3307"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-0e8fc8beffbe3307",
+          "EN-8d8bc08ccc72efa4"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [
+    {
+      "id": "TX-industry-agriculture",
+      "name": "农业",
+      "nodeType": "industry",
+      "typeLabel": "行业",
+      "valueId": "agriculture",
+      "eventIds": [
+        "EV-832662689cd1aa3d",
+        "EV-ef669a52c9a3f94f",
+        "EV-a297fa9b321c3717",
+        "EV-e70a48e36e99d57a",
+        "EV-60f219702a66bf38",
+        "EV-2dea56b0e97c1685",
+        "EV-4d2183d4275ea9cf",
+        "EV-e31a6bf3c0a979f8",
+        "EV-7817dc69d5228cbb",
+        "EV-561e2028a6212b99",
+        "EV-9fc8916c19c19f99",
+        "EV-e579af588ad8cf64",
+        "EV-b0ed8d5a37784214",
+        "EV-3b40ec144e5db22c",
+        "EV-c46e427fedbf518d",
+        "EV-2433fb027c7bea24",
+        "EV-4242ed9f08123c32",
+        "EV-01b003fbae67ae91",
+        "EV-0f0b2013927ce156",
+        "EV-1add9dad81afe82a"
+      ],
+      "entityIds": [
+        "EN-0e8fc8beffbe3307",
+        "EN-1d79127e9d90e89b",
+        "EN-a47b7e6b22395632",
+        "EN-8d4321d936320802",
+        "EN-6861f63c27eb0ada",
+        "EN-6fae0bc5a895aab8",
+        "EN-e22daec9e0564fba",
+        "EN-2dcd958b2064843f",
+        "EN-e69f64149edae6b1",
+        "EN-19a5848a577315c5",
+        "EN-f96246b78ef26d59",
+        "EN-2b81d85809794782",
+        "EN-7ea76c82c786a5e1",
+        "EN-e4540a7c8404b1be",
+        "EN-eafe895eb8119e6e",
+        "EN-3c9aa9ae0c7ad659",
+        "EN-0a5667ab6d63725e",
+        "EN-0bd36bfd4d80867c",
+        "EN-cc70f504af53013a",
+        "EN-963cd73004547f84"
+      ],
+      "fdeIds": [],
+      "hardwareIds": [],
+      "firstSeen": "2026-01-29",
+      "lastSeen": "2026-10-02"
+    }
+  ],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-2e7f19fbe4701bac",
+      "snapshotKey": "2e7f19fbe4701bac",
+      "snapshotId": "HWS-50558700821faba5",
+      "eventId": "EV-832662689cd1aa3d",
+      "eventIds": [
+        "EV-832662689cd1aa3d"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "迅杰光远",
+      "subject": "迅杰光远",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "",
+          "unit": "超亿元",
+          "fact_ref": "HWF-ac0100cb6d6a570c"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-ac0100cb6d6a570c",
+          "fact_type": "product",
+          "observed_at": "2026-09-30",
+          "subject_entity_id": "EN-0e8fc8beffbe3307",
+          "subject_name": "迅杰光远",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "",
+          "unit": "超亿元",
+          "source_quote": "近日，无锡迅杰光远科技有限公司（简称“迅杰光远”，英文简称IAS）宣布完成超亿元B轮融资。本轮融资由深创投、云晖资本、翠微基金共同投资。\n对于本轮融资的资金用途，迅杰光远表示将重点用于四大战略方向：一是持续深化核心技术研发，巩固在MEMS分光、计量建模及AI算法等底层技术上的领先优势；二是加速傅立叶变换等高端新品市场推广，推动实验室级产品在石油石化、化工、粮油等行业的规模化落地；三是加速半导体行业的批量化渗透与纵深推进，在已实现清洗设备市场突破的基础上，推进多项半导体检测新产品的研发与市场导入，把握国产替代的战略窗口期；四是持续推进AI与光谱分析的深度融合，在数据体系建设、算法模型研究及应用场景落地等方面持续布局，并进一步加强国内多行业渗透与海外农业产业链市场的拓展。\n依托自主研发的MEMS（微机电系统）光学分光技术，迅杰光远成功攻克了硬件小型化与成本难题，将传统需要复杂精密光学部件的分光系统高度集成，使近红外设备具备了走向一线场景的便携化基础。\n 网站编辑：\n 郭靖\n 0\n 第一时间获取股权投资行业新鲜资讯和深度商业分析，请在微信公众账号中搜索投中网，或用手机扫描左侧二维码，即可获得投中网每日精华内容推送。\n 发表评论\n / 200\n 发表评论\n 全部评论\n —— 没有更多评论了 ——\n 点击加载更多\n —— 没有更多评论了 ——\n 联系我们\n 欢迎投稿\n 投中网\n CVS投中数据\n 创新经济的\n智识、洞见和未来\n 投资人都在用的\n数据专家\n 返回顶部",
+          "event_refs": [
+            "EV-832662689cd1aa3d"
+          ],
+          "claim_ref": "CL-f6cec1ad0bc9f1d4",
+          "source_refs": [
+            "SA-d2d5357497132d63"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.chinaventure.com.cn/news/114-20260930-393487.html",
+      "entityIds": [
+        "EN-0e8fc8beffbe3307",
+        "EN-8d8bc08ccc72efa4"
+      ]
+    }
+  ]
+}

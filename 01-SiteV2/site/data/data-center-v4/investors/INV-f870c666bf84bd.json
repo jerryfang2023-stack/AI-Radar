@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,30 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-10",
-    "latest_disclosed_at": "2026-06-22",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-7b9b33ca95deff50",
+        "canonical_entity_id": "",
+        "name": "CScale"
+      },
       {
         "entity_id": "EN-3c1ae4e6276005e7",
         "canonical_entity_id": "EN-3c1ae4e6276005e7",
@@ -91,6 +97,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-9d4c19ef4b95d128",
+        "funding_insight_id": "FI-07d1ab9787e1c9dd",
+        "event_ids": [
+          "EV-4c5dc2fc6d805b3f"
+        ],
+        "company_entity_id": "EN-7b9b33ca95deff50",
+        "company_canonical_entity_id": "",
+        "company_name": "CScale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$145 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 145000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.45 亿美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f84ad840508b39",
+            "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+            "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+            "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+            "quote": "Sutter Hill Ventures, which has backed CScale since its inception, continued its support alongside existing investor Maverick Silicon.",
+            "quote_hash": "b24f4febcc9397478bcc6d9a518ee03fd847623529708cf4c467126a6cc7cf44"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2214846bbd91e25c",
         "funding_insight_id": "FI-55464dd460014128",
@@ -174,6 +220,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f84ad840508b39",
+        "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+        "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+        "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+        "quote": "Sutter Hill Ventures, which has backed CScale since its inception, continued its support alongside existing investor Maverick Silicon.",
+        "quote_hash": "b24f4febcc9397478bcc6d9a518ee03fd847623529708cf4c467126a6cc7cf44"
+      },
+      {
         "source_id": "FISRC-7dcdc22c0b1702bf",
         "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
         "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
@@ -195,10 +249,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Maverick Silicon 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Maverick Silicon 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮参投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f84ad840508b39"
+        },
         {
           "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 既有投资方（本轮参投） · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7dcdc22c0b1702bf"
@@ -210,6 +268,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-98f84ad840508b39",
+          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote": "Sutter Hill Ventures, which has backed CScale since its inception, continued its support alongside existing investor Maverick Silicon.",
+          "quote_hash": "b24f4febcc9397478bcc6d9a518ee03fd847623529708cf4c467126a6cc7cf44"
+        },
         {
           "source_id": "FISRC-7dcdc22c0b1702bf",
           "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",

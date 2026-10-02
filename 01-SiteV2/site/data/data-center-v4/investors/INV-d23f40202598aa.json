@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-02-04",
     "latest_disclosed_at": "2026-02-04",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -132,6 +133,38 @@
             "quote_hash": "76f05922dddf3379cab455bf86997d74c54329743387b6b1bf2e9265d97e3fe7"
           }
         ]
+      },
+      {
+        "activity_id": "IA-672c0baf37e72ca9",
+        "funding_insight_id": "FI-16ec583e6204fbd2",
+        "event_ids": [
+          "EV-2c217907879cd2a8"
+        ],
+        "company_entity_id": "EN-897502f225e38bf5",
+        "company_canonical_entity_id": "",
+        "company_name": "Positron AI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "参与整体融资安排，所属分期未披露",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3947ce709f26c22a",
+            "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+            "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+            "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+            "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
+            "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -150,6 +183,14 @@
         "source_content_hash": "68542f86ea7b9e33",
         "quote": "Existing investors Valor Equity Partners, Atreides Management, DFJ Growth, Resilience Reserve, Flume Ventures, and 1517 also participated.",
         "quote_hash": "76f05922dddf3379cab455bf86997d74c54329743387b6b1bf2e9265d97e3fe7"
+      },
+      {
+        "source_id": "FISRC-3947ce709f26c22a",
+        "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+        "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+        "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+        "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
+        "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
       }
     ],
     "public_profile": {
@@ -168,6 +209,10 @@
         {
           "description": "融资来源记录：Positron AI · B轮 · 2026-02-04 · 既有投资方（本轮参投） · $230 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-086094933b1962b5"
+        },
+        {
+          "description": "融资来源记录：Positron AI · 历史轮次未披露 · 参与整体融资安排，所属分期未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3947ce709f26c22a"
         }
       ],
       "contacts": [],
@@ -187,6 +232,14 @@
           "source_content_hash": "68542f86ea7b9e33",
           "quote": "Existing investors Valor Equity Partners, Atreides Management, DFJ Growth, Resilience Reserve, Flume Ventures, and 1517 also participated.",
           "quote_hash": "76f05922dddf3379cab455bf86997d74c54329743387b6b1bf2e9265d97e3fe7"
+        },
+        {
+          "source_id": "FISRC-3947ce709f26c22a",
+          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+          "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
+          "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
+          "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
+          "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
         }
       ],
       "last_verified_at": "2026-09-25"

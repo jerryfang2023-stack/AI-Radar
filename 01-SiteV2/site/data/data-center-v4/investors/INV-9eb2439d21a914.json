@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 11,
-    "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 10,
+    "current_round_count": 12,
+    "historical_or_ambiguous_count": 4,
+    "portfolio_company_count": 11,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-31",
-    "latest_disclosed_at": "2026-09-29",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 3,
+      "historical_or_ambiguous": 4,
       "lead": 3,
-      "participant": 7
+      "participant": 8
     },
     "round_codes": [
       "multi_round",
@@ -87,6 +87,11 @@
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-f8223ea5a9c41813",
+        "canonical_entity_id": "",
+        "name": "Armadin"
+      },
       {
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
@@ -139,6 +144,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-41f413974ebe625a",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$255.5 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 255500000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.555 亿美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-58d9b75c832876e1",
+            "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+            "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+            "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+            "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+            "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+          }
+        ]
+      },
       {
         "activity_id": "IA-534831c0860abae4",
         "funding_insight_id": "FI-78c41d0e7b994533",
@@ -582,6 +627,38 @@
         ]
       },
       {
+        "activity_id": "IA-5a38d269ec2485d7",
+        "funding_insight_id": "FI-e7151a217bf0631d",
+        "event_ids": [
+          "EV-1c7050585c7f4791"
+        ],
+        "company_entity_id": "EN-f8223ea5a9c41813",
+        "company_canonical_entity_id": "",
+        "company_name": "Armadin",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-14fa67bc80a1ece9",
+            "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+            "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+            "source_content_hash": "f5a108f3994daf10",
+            "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+            "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-73155fc4b8d01bf1",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
@@ -682,6 +759,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-58d9b75c832876e1",
+        "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+        "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+        "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+        "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+        "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+      },
+      {
         "source_id": "FISRC-39cbb5f315cdae11",
         "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
         "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
@@ -770,6 +855,14 @@
         "quote_hash": "f624829735654441c5d0cc7ae15763dc8e1883f5d03fe7ea748456cf995a02d0"
       },
       {
+        "source_id": "FISRC-14fa67bc80a1ece9",
+        "source_url": "https://www.unite.ai/armadin-raises-255-5m-series-b-at-over-2-5b-valuation-to-scale-its-agentic-security-platform/",
+        "source_title": "Armadin Raises $255.5M Series B at Over $2.5B Valuation",
+        "source_content_hash": "f5a108f3994daf10",
+        "quote": "Accel led that financing, with participation from Google Ventures, Kleiner Perkins, Menlo Ventures, and In-Q-Tel, and follow-on investment from 8VC and Ballistic Ventures.",
+        "quote_hash": "25e1d20c25a59de7cf2dbd9b2ea825654b8c92cf2707a39ed8549cb514ebac01"
+      },
+      {
         "source_id": "FISRC-bcf01fbecb1fbdb6",
         "source_url": "https://www.caplight.com/company/engram",
         "source_title": "Engram | Valuation, Funding Rounds & Stock Price | Caplight",
@@ -820,16 +913,16 @@
           "source_id": "kp_about"
         },
         {
+          "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-58d9b75c832876e1"
+        },
+        {
           "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39cbb5f315cdae11"
         },
         {
           "description": "融资来源记录：Profound · D轮 · 2026-09-15 · 本轮联合领投 · $180M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bed55d4f5e02a374"
-        },
-        {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
       "contacts": [
@@ -851,6 +944,14 @@
           "quote_hash": "ef9f5d49eeaa7661a644ec18334f865187a5bd9565cfd4e41c5149c6687ae704"
         },
         {
+          "source_id": "FISRC-58d9b75c832876e1",
+          "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
+          "source_title": "Armadin 筹集 2.555 亿美元 B 轮融资，以扩展有效的自主安全",
+          "source_content_hash": "5c10d7c20a115da0bd6e41dc8184747cda84dbe8d3b6cc54c4503d8c55fef1f1",
+          "quote": "Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned",
+          "quote_hash": "b77b521afebf710f7b03a893bd330cefefaa9141dc209784140ea5e5cb78b194"
+        },
+        {
           "source_id": "FISRC-39cbb5f315cdae11",
           "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
           "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
@@ -865,14 +966,6 @@
           "source_content_hash": "8c26f4447adaeabc",
           "quote": "Sequoia and Kleiner Perkins led the round",
           "quote_hash": "d4d9e59aedc610a257eec88140bbe4eb526f5e2384d02fe9df4a43ae1ac2be3b"
-        },
-        {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
-          "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
         }
       ],
       "last_verified_at": "2026-09-25",

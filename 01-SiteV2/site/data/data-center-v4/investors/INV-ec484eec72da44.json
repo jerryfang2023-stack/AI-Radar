@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-09-24",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_c",
@@ -84,6 +84,11 @@
         "entity_id": "EN-6ecf7f43c6c5a2b0",
         "canonical_entity_id": "",
         "name": "Basecamp Research"
+      },
+      {
+        "entity_id": "EN-6d478f33a9e3cba3",
+        "canonical_entity_id": "",
+        "name": "BigHat Biosciences"
       },
       {
         "entity_id": "EN-5ee1e4de588a016a",
@@ -129,6 +134,46 @@
             "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
             "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
             "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1ec39652a572a884",
+        "funding_insight_id": "FI-ba9adf4a4c9d49c3",
+        "event_ids": [
+          "EV-acd3165ca45a6b36"
+        ],
+        "company_entity_id": "EN-6d478f33a9e3cba3",
+        "company_canonical_entity_id": "",
+        "company_name": "BigHat Biosciences",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$75 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7500 万美元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-3372eff279ee29db",
+            "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+            "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+            "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+            "quote": "with participation from Catalio Capital Management, LG Technology Ventures, Sigmas Group, and existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+            "quote_hash": "73ce53d270a57af85681b7f95ff77e6c0b9db653af7861474fd336ab41c00597"
           }
         ]
       },
@@ -181,6 +226,14 @@
         "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
         "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
         "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
+      },
+      {
+        "source_id": "FISRC-3372eff279ee29db",
+        "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+        "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+        "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+        "quote": "with participation from Catalio Capital Management, LG Technology Ventures, Sigmas Group, and existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+        "quote_hash": "73ce53d270a57af85681b7f95ff77e6c0b9db653af7861474fd336ab41c00597"
       },
       {
         "source_id": "FISRC-b2cab94e5375e0ba",
@@ -271,6 +324,10 @@
         {
           "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ecd2ea74974f4ff3"
+        },
+        {
+          "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3372eff279ee29db"
         }
       ],
       "experience_summary": "官网资料显示，两位创始管理合伙人此前均在 Camden Partners 从事医疗或生物医学技术投资；Catalio 另设由科学家和创业者组成的 Venture Partner 网络。",
@@ -392,6 +449,14 @@
           "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
           "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
+        },
+        {
+          "source_id": "FISRC-3372eff279ee29db",
+          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+          "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+          "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+          "quote": "with participation from Catalio Capital Management, LG Technology Ventures, Sigmas Group, and existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32.",
+          "quote_hash": "73ce53d270a57af85681b7f95ff77e6c0b9db653af7861474fd336ab41c00597"
         }
       ],
       "last_verified_at": "2026-09-27",

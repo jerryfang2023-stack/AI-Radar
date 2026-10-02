@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,21 +61,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-17",
+    "first_disclosed_at": "2026-07-02",
     "latest_disclosed_at": "2026-08-17",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
+      "series_a",
       "series_b"
     ],
     "portfolio_companies": [
@@ -83,6 +85,11 @@
         "entity_id": "EN-50b2676afbe30c83",
         "canonical_entity_id": "EN-50b2676afbe30c83",
         "name": "Higgsfield"
+      },
+      {
+        "entity_id": "EN-5a291fd1ab842f58",
+        "canonical_entity_id": "",
+        "name": "LinqAlpha"
       }
     ],
     "activities": [
@@ -127,6 +134,46 @@
         ]
       },
       {
+        "activity_id": "IA-88140ecdb37a6bed",
+        "funding_insight_id": "FI-a38ead7267d01f90",
+        "event_ids": [
+          "EV-ebc2adbcc21f7145"
+        ],
+        "company_entity_id": "EN-5a291fd1ab842f58",
+        "company_canonical_entity_id": "",
+        "company_name": "LinqAlpha",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$22 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 22000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2200 万美元"
+        },
+        "announced_at": "2026-07-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2967c8cb86b79dd2",
+            "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
+            "source_title": "LinqAlpha 融资 2200 万美元，为全球公开市场构建 Alpha 智能层",
+            "source_content_hash": "4a715b2a5964f624352304e70b67f66c9d6425a46e969e70ddc50f0999e19e3e",
+            "quote": "The round was anchored by AVP, Atinum Investment, and GFT Ventures",
+            "quote_hash": "212288c934da475b761d45e7247e6d88052a52459f5112dbeedb2e6c12b2e5de"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-1c477c9a95b33bb3",
         "funding_insight_id": "FI-94c0eaa68ec2b037",
         "event_ids": [
@@ -167,6 +214,14 @@
         "source_content_hash": "66d04514886f3d3e",
         "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
         "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+      },
+      {
+        "source_id": "FISRC-2967c8cb86b79dd2",
+        "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
+        "source_title": "LinqAlpha 融资 2200 万美元，为全球公开市场构建 Alpha 智能层",
+        "source_content_hash": "4a715b2a5964f624352304e70b67f66c9d6425a46e969e70ddc50f0999e19e3e",
+        "quote": "The round was anchored by AVP, Atinum Investment, and GFT Ventures",
+        "quote_hash": "212288c934da475b761d45e7247e6d88052a52459f5112dbeedb2e6c12b2e5de"
       },
       {
         "source_id": "FISRC-35d27946fd70aa42",
@@ -217,6 +272,10 @@
           "source_id": "FISRC-7c15ac15bf3d0b1a"
         },
         {
+          "description": "融资来源记录：LinqAlpha · A轮 · 2026-07-02 · 本轮领投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2967c8cb86b79dd2"
+        },
+        {
           "description": "融资来源记录：Higgsfield · 历史轮次未披露 · 历史轮次领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-35d27946fd70aa42"
         }
@@ -254,6 +313,14 @@
           "source_content_hash": "66d04514886f3d3e",
           "quote": "with participation from Tribe Capital, Growth Equity at Goldman Sachs Alternatives, Smash Capital, Fifth Wall, Valor Capital, Intel Capital, Liberty Global Tech Ventures, Mirae Asset Capital, NTT DOCOMO Ventures, Accel, Menlo Ventures, AI Capital Partners, GFT Ventures, Capra Ventures, BAM Corner Point, BroadLight Capital, and Natalia Vodianova Arnault",
           "quote_hash": "f2d170b06d7d95a66bb1a37e76577ee8c44898a0f37d8ec63f1900d3f15ba92a"
+        },
+        {
+          "source_id": "FISRC-2967c8cb86b79dd2",
+          "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
+          "source_title": "LinqAlpha 融资 2200 万美元，为全球公开市场构建 Alpha 智能层",
+          "source_content_hash": "4a715b2a5964f624352304e70b67f66c9d6425a46e969e70ddc50f0999e19e3e",
+          "quote": "The round was anchored by AVP, Atinum Investment, and GFT Ventures",
+          "quote_hash": "212288c934da475b761d45e7247e6d88052a52459f5112dbeedb2e6c12b2e5de"
         },
         {
           "source_id": "FISRC-35d27946fd70aa42",

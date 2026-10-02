@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,26 +61,38 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-17",
-    "latest_disclosed_at": "2026-09-23",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
+      "co_lead": 2,
       "lead": 1,
       "participant": 2
     },
     "round_codes": [
       "multi_round",
       "seed",
+      "series_c",
       "series_e"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-6d478f33a9e3cba3",
+        "canonical_entity_id": "",
+        "name": "BigHat Biosciences"
+      },
+      {
+        "entity_id": "EN-7b9b33ca95deff50",
+        "canonical_entity_id": "",
+        "name": "CScale"
+      },
       {
         "entity_id": "EN-5ee1e4de588a016a",
         "canonical_entity_id": "",
@@ -98,6 +110,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-c4046a96ec5c1d73",
+        "funding_insight_id": "FI-07d1ab9787e1c9dd",
+        "event_ids": [
+          "EV-4c5dc2fc6d805b3f"
+        ],
+        "company_entity_id": "EN-7b9b33ca95deff50",
+        "company_canonical_entity_id": "",
+        "company_name": "CScale",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$145 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 145000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.45 亿美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-98f84ad840508b39",
+            "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+            "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+            "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+            "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+            "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8d5f8fc9aa12489d",
+        "funding_insight_id": "FI-ba9adf4a4c9d49c3",
+        "event_ids": [
+          "EV-acd3165ca45a6b36"
+        ],
+        "company_entity_id": "EN-6d478f33a9e3cba3",
+        "company_canonical_entity_id": "",
+        "company_name": "BigHat Biosciences",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$75 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 75000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7500 万美元"
+        },
+        "announced_at": "2026-09-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-3372eff279ee29db",
+            "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+            "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+            "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+            "quote": "The round was co-led by DFJ Growth & Premji Invest",
+            "quote_hash": "c549e5192a7c3eae0d959c7c805ef06ad83c9c58dd6cf40db4b07347f69526e7"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f9db8aaf7a7ebc6b",
         "funding_insight_id": "FI-5bf569d857da4dcb",
@@ -221,6 +313,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-98f84ad840508b39",
+        "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+        "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+        "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+        "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+        "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+      },
+      {
+        "source_id": "FISRC-3372eff279ee29db",
+        "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+        "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+        "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+        "quote": "The round was co-led by DFJ Growth & Premji Invest",
+        "quote_hash": "c549e5192a7c3eae0d959c7c805ef06ad83c9c58dd6cf40db4b07347f69526e7"
+      },
+      {
         "source_id": "FISRC-852df50f4128c47b",
         "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
         "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
@@ -283,16 +391,16 @@
       "milestones": [],
       "track_record": [
         {
+          "description": "融资来源记录：CScale · C轮 · 2026-09-30 · 本轮联合领投 · $145 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-98f84ad840508b39"
+        },
+        {
+          "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮联合领投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-3372eff279ee29db"
+        },
+        {
           "description": "融资来源记录：Enveda · E轮 · 2026-09-23 · 本轮参投 · $311M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-852df50f4128c47b"
-        },
-        {
-          "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 本轮领投 · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7dcdc22c0b1702bf"
-        },
-        {
-          "description": "融资来源记录：Pramaana Labs · 种子轮 · 2026-06-17 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-35c5de2fa4b68376"
         }
       ],
       "contacts": [
@@ -340,28 +448,28 @@
           "quote_hash": "4526d04e278c97b0e375c17c63dc63c1a15c030cb464cfdce3e36d65487f12fc"
         },
         {
+          "source_id": "FISRC-98f84ad840508b39",
+          "source_url": "https://fnny.marketminute.com/article/bizwire-2026-9-30-cscale-exits-stealth-with-145-million-to-build-the-interconnect-for-gigawatt-scale-ai",
+          "source_title": "CScale结束隐身模式，融资1.45亿美元，为吉瓦级AI构建互连",
+          "source_content_hash": "10f20dc5377443e5bb5d90108fa09a5513ebe4122cdd99269416d1b81c2fdf23",
+          "quote": "The round was co-led by Atreides Management, Valor Equity Partners, and Premji Invest.",
+          "quote_hash": "60c86cc928a83dca9a72d7c77b5efc8d4b740c887bb5858726dabac4d7d4a85d"
+        },
+        {
+          "source_id": "FISRC-3372eff279ee29db",
+          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+          "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
+          "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+          "quote": "The round was co-led by DFJ Growth & Premji Invest",
+          "quote_hash": "c549e5192a7c3eae0d959c7c805ef06ad83c9c58dd6cf40db4b07347f69526e7"
+        },
+        {
           "source_id": "FISRC-852df50f4128c47b",
           "source_url": "https://www.bioxconomy.com/investment/enveda-s-311m-series-e-to-found-ai-driven-drug-discovery-platform",
           "source_title": "Enveda's $311m Series E to fund AI-driven drug discovery",
           "source_content_hash": "e6486e5f995e038e",
           "quote": "Existing investors Baillie Gifford, Premji Invest, FPV Ventures, True Ventures, Kinnevik, Dimension, Lifeforce Capital, and Lux Capital also participated.",
           "quote_hash": "882202cb44ad9d9c134b2a21b4c2fb2c2449305ea2081d7480583ed23e7792bf"
-        },
-        {
-          "source_id": "FISRC-7dcdc22c0b1702bf",
-          "source_url": "https://upscale.com/blogs/upscale-ai-adds-190-million-in-extension-to-series-a-reaching-half-billion-dollars-in-total-funding?from_theconsensus=1",
-          "source_title": "Upscale AI 完成1.9亿美元A轮扩展融资，总融资额达5亿美元",
-          "source_content_hash": "23145edb5fdd8d69",
-          "quote": "The Series A-1 round was led by Premji Invest",
-          "quote_hash": "bc528b10ef7cf201e43a02dd127ae1d446150320a90391b10ae0ebc3b2330db3"
-        },
-        {
-          "source_id": "FISRC-35c5de2fa4b68376",
-          "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
-          "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
-          "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
-          "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
-          "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
         }
       ],
       "identity_status": "verified",

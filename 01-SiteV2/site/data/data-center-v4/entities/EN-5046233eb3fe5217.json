@@ -1,0 +1,175 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3811,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-5046233eb3fe5217",
+    "name": "Causeway Capital Management",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-ebc2adbcc21f7145"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-07-02",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-ebc2adbcc21f7145"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-ebc2adbcc21f7145",
+        "dataDate": "2026-10-02",
+        "date": "2026-07-02",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "LinqAlpha 融资 2200 万美元，为全球公开市场构建 Alpha 智能层",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bd732730bd39834d",
+          "EN-5a291fd1ab842f58",
+          "EN-5046233eb3fe5217"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-4196242b68fc0954",
+      "snapshotKey": "4196242b68fc0954",
+      "snapshotId": "HWS-30d7007e022640c3",
+      "eventId": "EV-ebc2adbcc21f7145",
+      "eventIds": [
+        "EV-ebc2adbcc21f7145"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "NEW YORK",
+      "subject": "NEW YORK",
+      "productNames": [],
+      "hardwareType": "ai_device",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "22",
+          "unit": "$million",
+          "fact_ref": "HWF-2d28e55e6f210238"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-2d28e55e6f210238",
+          "fact_type": "product",
+          "observed_at": "2026-07-02",
+          "subject_entity_id": "EN-bd732730bd39834d",
+          "subject_name": "NEW YORK",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_device",
+          "metric_value": "22",
+          "unit": "$million",
+          "source_quote": "NEW YORK, July 2, 2026 /PRNewswire/ -- LinqAlpha, the AI-native company building the Alpha Intelligence Layer for global public markets, today announced $22 million in Series A funding. The round was anchored by AVP, Atinum Investment, and GFT Ventures, with participation from a global syndicate of strategic financial institutions and venture platforms.\n Continue Reading\n LinqAlpha\nFounded by Jacob Choi, Subeen Pang, Jin Kim, and Hojun Choi, LinqAlpha brings together former Goldman Sachs analysts and MIT computer science PhDs. Since launch, the platform has seen rapid adoption, serving over 70 financial institutions across the U.S., Europe, and Asia, including sell-side sales, trading, and research teams at leading investment banks, as well as buy-side clients such as Causeway Capital Management LLC and Schonfeld Strategic Advisors LLC. Collectively, LinqAlpha's buy-side clients manage more than $5 trillion in assets.\n The company was built to address a critical inflection point in modern finance: public markets have become too fast, global, and interconnected for traditional researc",
+          "event_refs": [
+            "EV-ebc2adbcc21f7145"
+          ],
+          "claim_ref": "CL-df4b8fcd4197aa88",
+          "source_refs": [
+            "SA-a519984f3fd68de0"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
+      "entityIds": [
+        "EN-bd732730bd39834d",
+        "EN-5a291fd1ab842f58",
+        "EN-5046233eb3fe5217"
+      ]
+    }
+  ]
+}

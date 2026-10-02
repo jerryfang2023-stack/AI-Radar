@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,28 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-02",
-    "latest_disclosed_at": "2026-06-02",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "seed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-8775c1a21007e7c0",
+        "canonical_entity_id": "",
+        "name": "Autoheal"
+      },
       {
         "entity_id": "EN-05fdf088833f5600",
         "canonical_entity_id": "",
@@ -85,6 +90,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-ef324eb0bccdb7d1",
+        "funding_insight_id": "FI-4d807fc9d0b8523b",
+        "event_ids": [
+          "EV-04d9a4c160a01586"
+        ],
+        "company_entity_id": "EN-8775c1a21007e7c0",
+        "company_canonical_entity_id": "",
+        "company_name": "Autoheal",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$7.9M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7900000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "790 万美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-212b01f9c4f8d05c",
+            "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
+            "source_title": "Autoheal 融资 790 万美元，为企业构建自我改进的软件工厂",
+            "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
+            "quote": "Today, we are announcing our $7.9M seed round, led by Harpinder Singh at Innovation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values.",
+            "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
+          }
+        ]
+      },
       {
         "activity_id": "IA-94e30520773a67c0",
         "funding_insight_id": "FI-6cb1ff8bd620236b",
@@ -128,6 +173,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-212b01f9c4f8d05c",
+        "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
+        "source_title": "Autoheal 融资 790 万美元，为企业构建自我改进的软件工厂",
+        "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
+        "quote": "Today, we are announcing our $7.9M seed round, led by Harpinder Singh at Innovation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values.",
+        "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
+      },
+      {
         "source_id": "FISRC-dffcc55088dd6fc6",
         "source_url": "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves",
         "source_title": "ZeroDrift 融资 1000 万美元，保护 AI 模型免受自身影响",
@@ -141,10 +194,14 @@
       "identity_status": "verified",
       "coverage_status": "activity_only",
       "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "U&I Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "U&I Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Autoheal · 种子轮 · 2026-09-28 · 本轮参投 · $7.9M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-212b01f9c4f8d05c"
+        },
         {
           "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dffcc55088dd6fc6"
@@ -152,6 +209,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-212b01f9c4f8d05c",
+          "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
+          "source_title": "Autoheal 融资 790 万美元，为企业构建自我改进的软件工厂",
+          "source_content_hash": "db9fc8dd24df889f563eb8b09a5c63dfa0a5b96918734e65c10e95c659e10e53",
+          "quote": "Today, we are announcing our $7.9M seed round, led by Harpinder Singh at Innovation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values.",
+          "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
+        },
         {
           "source_id": "FISRC-dffcc55088dd6fc6",
           "source_url": "https://techcrunch.com/2026/06/02/zerodrift-raises-10-million-to-protect-ai-models-from-themselves",

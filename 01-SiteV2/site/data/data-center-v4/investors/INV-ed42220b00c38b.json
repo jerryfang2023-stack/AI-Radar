@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 16,
+    "current_round_count": 17,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 15,
+    "portfolio_company_count": 16,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2025-03-03",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 2,
       "lead": 5,
       "participant": 10
@@ -84,7 +84,8 @@
       "series_b",
       "series_c",
       "series_d",
-      "series_e"
+      "series_e",
+      "undisclosed"
     ],
     "portfolio_companies": [
       {
@@ -101,6 +102,11 @@
         "entity_id": "EN-4b6cef91ffb05303",
         "canonical_entity_id": "",
         "name": "Cognition AI"
+      },
+      {
+        "entity_id": "EN-7f4fdb8eb6e82b27",
+        "canonical_entity_id": "",
+        "name": "EliseAI"
       },
       {
         "entity_id": "EN-0caee180da9d0f3f",
@@ -201,6 +207,46 @@
             "source_content_hash": "c5cd447d1a48bf94d4477d990914f688e2af5271a7ec78a65a70efa9ff0cb39e",
             "quote": "Existing investors Bessemer Venture Partners and Coatue also participated.",
             "quote_hash": "8713cebee26bd9c6917c795b13a4f2d624f7dc4a428239f803c1d96a5380a3ee"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1b4438df6120bd0a",
+        "funding_insight_id": "FI-6d5a9688ad42d1a0",
+        "event_ids": [
+          "EV-fc1d79dc823bfdd9"
+        ],
+        "company_entity_id": "EN-7f4fdb8eb6e82b27",
+        "company_canonical_entity_id": "",
+        "company_name": "EliseAI",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$350 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-4f44cd6d16442bdc",
+            "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
+            "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
+            "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
+            "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
+            "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
           }
         ]
       },
@@ -889,6 +935,14 @@
         "quote_hash": "8713cebee26bd9c6917c795b13a4f2d624f7dc4a428239f803c1d96a5380a3ee"
       },
       {
+        "source_id": "FISRC-4f44cd6d16442bdc",
+        "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
+        "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
+        "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
+        "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
+        "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
+      },
+      {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
         "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -1080,12 +1134,12 @@
           "source_id": "FISRC-8b2ed67c1554bee8"
         },
         {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
+          "description": "融资来源记录：EliseAI · 轮次未披露 · 2026-09-29 · 本轮联合领投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-4f44cd6d16442bdc"
         },
         {
-          "description": "融资来源记录：Wonderful · C轮 · 2026-09-02 · 本轮参投 · $550 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3bc5a4e973b035eb"
+          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
       "contacts": [
@@ -1228,20 +1282,20 @@
           "quote_hash": "8713cebee26bd9c6917c795b13a4f2d624f7dc4a428239f803c1d96a5380a3ee"
         },
         {
+          "source_id": "FISRC-4f44cd6d16442bdc",
+          "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
+          "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
+          "source_content_hash": "c4be8294b9475931eab4f291e805900850ae28a25cfeb6c54a03811033dccc00",
+          "quote": "The financing was led by Andreessen Horowitz (a16z) and Bessemer Venture Partners, with participation from Ontario Teachers' Pension Plan, Sapphire Ventures, and Navitas Capital.",
+          "quote_hash": "4351258f1b60a0bebd8d3c4264542973ef33354112aca6497c979fcf32c61458"
+        },
+        {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
           "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
           "source_content_hash": "274ba4a54870c633",
           "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
           "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
-        },
-        {
-          "source_id": "FISRC-3bc5a4e973b035eb",
-          "source_url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months",
-          "source_title": "Wonderful 融资 5.5 亿美元，估值半年内翻倍至 50 亿美元",
-          "source_content_hash": "290d66b36443e7c5",
-          "quote": "existing investors Index Ventures, IVP, Vine Ventures, 9Yards, and Bessemer Venture Partners are participating once again",
-          "quote_hash": "7cfbf6002c6b3d827fa06c95fbd97b23e8834d8a8fcf043c93f9f377b51a9686"
         }
       ],
       "last_verified_at": "2026-09-25",
@@ -1252,7 +1306,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[17].role": {
+        "activities[18].role": {
           "text": "Series A 领投",
           "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
           "provider": "deepseek",

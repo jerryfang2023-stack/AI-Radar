@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3783,
+    "eventCount": 3811,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -65,6 +65,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-609da9983f836426",
       "EV-47a84a0f1a85c29c",
       "EV-d1d36268ff74be0e",
       "EV-3167e6eed75597e9",
@@ -77,10 +78,12 @@
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-06-10",
-    "lastSeen": "2026-07-30",
+    "lastSeen": "2026-10-02",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-609da9983f836426"
+      ],
       "deployments": [
         "EV-47a84a0f1a85c29c"
       ],
@@ -99,6 +102,36 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-609da9983f836426",
+        "dataDate": "2026-10-02",
+        "date": "2026-09-28",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "单月收入破千万，AI应用公司智灵新境完成数千万元天使轮融资｜36氪首发_腾讯新闻",
+        "displayTags": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-e1a059fe52fe0377"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-b888b9bfd6b78d16",
+          "EN-e1a059fe52fe0377",
+          "EN-9c8ae69b84f21a2e",
+          "EN-43a340bb75b45f02"
+        ]
+      },
       {
         "id": "EV-666f2f4b5756c679",
         "dataDate": "2026-07-30",

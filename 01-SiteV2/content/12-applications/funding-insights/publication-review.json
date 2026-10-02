@@ -9,12 +9,6 @@
       "reason": "本篇为产品报道，原文明确 800 万美元种子轮发生在 last December；不可作为 2026-09-29 新融资发布。待按原始融资披露日重新入库。"
     },
     {
-      "event_id": "EV-bbea3352983c2033",
-      "status": "pending",
-      "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
-      "reason": "原文日期为 Sept. 25, 2026，明确为 3450 万美元 Series B；当前提取为 9 月 28 日多轮融资，需修复事实日期与轮次后再发布。"
-    },
-    {
       "event_id": "EV-34f58445170831ae",
       "status": "pending",
       "source_url": "https://news.pedaily.cn/202609/569716.shtml",
@@ -181,6 +175,23 @@
       "status": "pending",
       "source_url": "https://m.pedaily.cn/news/569663",
       "reason": "原文同时称完成与接近结束、部分审核仍在进行；IPO属于相邻袁记食品新闻，不能作为DeepSeek轮次。待明确交割状态和本轮披露，不发布本条。"
+    }
+  ],
+  "resolutions": [
+    {
+      "event_id": "EV-bbea3352983c2033",
+      "status": "resolved",
+      "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
+      "reason": "原文日期为 Sept. 25, 2026，明确为 3450 万美元 Series B；当前提取为 9 月 28 日多轮融资，需修复事实日期与轮次后再发布。",
+      "resolution": {
+        "reviewer": "Codex financing-212 source review",
+        "date": "2026-10-02",
+        "source_ref": "SA-e35a41673f681a97",
+        "announced_at": "2026-09-25",
+        "round": "Series B",
+        "amount": "$34.5 million",
+        "reason": "原文精确引文重新提取，发布前重新生成并核验卡片。"
+      }
     }
   ]
 }
