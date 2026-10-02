@@ -1,6 +1,6 @@
 # Unified Operations Console
 
-Release baseline: OPS-V3.8.0-engineering-integration / Skill Store v2.4.0
+Release baseline: OPS-V3.9.0-search-ai-growth / Skill Store v2.4.0
 
 Historical funding quality adds a separate monthly census view: discovery rows, captured originals, verified China events, corresponding-round cards, unresolved sources and secondary-search failures. Index rows and same-company cards cannot be reported as completed financing cases. Its completion status remains independent of the daily monitor.
 
@@ -65,9 +65,13 @@ The list includes only non-merged accounts with a verified WeChat OpenID identit
 
 Supported writes are deliberately narrow: extend entitlement by 7/30/90/180/365 days or adjust available points by ±1—100000. A 2—120 character reason and a unique operation ID are mandatory, so a retried request cannot apply twice. Entitlement changes append `membership_ledger`; point changes append `point_ledger` without changing lifetime points; both append `operations_admin_audits` with administrator identity fingerprint, before/after values and timestamp. Negative available balances are rejected. Account deletion, identity edit/merge, order mutation, arbitrary expiry replacement and lifetime-point rewriting are not exposed.
 
+## 搜索与 AI 增长（3.9.0）
+
+`#growth` 读取 PC 来源流量，分开展示搜索展现点击、平台 AI 曝光/引用、固定题库评测及收录/发布核验。站长平台数据可用受保护的 CSV/JSON 导入；未接入与未评测保留明确状态。接口、统计口径、导入格式和验证见 [搜索与 AI 增长](search-ai-growth.md)。
+
 ## Scope and boundaries
 
-Six primary modules: Overview, Analytics, Membership & Entitlements, Data Quality, Skill Store, System Management. System Management combines version governance with collapsible integration/display settings; #settings routes to #governance and opens settings. Membership & Entitlements owns five second-level routes: Community Application Review, Community Member Management, Mini Program Member Management, Activity Scheduling, and Token Entitlements.
+Seven primary modules: Overview, Analytics, Search & AI Growth, Membership & Entitlements, Data Quality, Skill Store, System Management. System Management combines version governance with collapsible integration/display settings; #settings routes to #governance and opens settings. Membership & Entitlements owns five second-level routes: Community Application Review, Community Member Management, Mini Program Member Management, Activity Scheduling, and Token Entitlements.
 Issue-center and task-chain panels are retired. Incident records, daily supervision, collection telemetry and batch history remain owned by their existing workflows.
 
 The production console, scripts and snapshots require the VPS session. Public aggregate APIs remain identity-free and may still be used by other products; their existence is not treated as console authorization. Member identities, payment/admin actions and protected community pages retain their own server-side boundaries.
@@ -130,4 +134,4 @@ workspace-registry.json 是共享项目标识源；ops-console.json.shared 提�
 
 新增工程入口字体采用现有 --sans，14/20px、500；地址输入14/24px、400。连接设置默认折叠；只保留打开入口和必要连接反馈。桌面1440与手机390由 workspace-browser.test.mjs 验证，固定版本与字段关联由 workspace-contract.test.mjs 验证。
 
-完整 Skill Store、线上版本列表、生产质量明细只保留在 OPS。工程端仅展示 Harness 所需的 Skill 维护引用、本机 Git/发布回执及本机控制器记录。六个栏目与五个会员子栏目由 OPS 界面回归覆盖；不删除底层业务数据或已有故障记录。
+完整 Skill Store、线上版本列表、生产质量明细只保留在 OPS。工程端仅展示 Harness 所需的 Skill 维护引用、本机 Git/发布回执及本机控制器记录。七个栏目与五个会员子栏目由 OPS 界面回归覆盖；不删除底层业务数据或已有故障记录。

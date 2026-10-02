@@ -565,3 +565,6 @@ def register(app, db, clock):
             updated = mini_program_user(conn, user_id)
             result = admin_user(conn, updated, now)
         return jsonify(schemaVersion=ADMIN_VERSION, user=result)
+
+    from payment_service.search_growth import register as register_search_growth
+    register_search_growth(app, db, clock, admin_required)

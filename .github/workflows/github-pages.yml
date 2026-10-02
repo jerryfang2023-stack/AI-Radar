@@ -167,7 +167,7 @@ jobs:
           node agent-workflow/tools/validate-guanlan-skills.mjs
           node agent-workflow/tools/assert-skill-store-dashboard.mjs
           npm run test:ops-unified
-          node --test agent-workflow/tools/tests/application-analytics.test.mjs
+          node --test agent-workflow/tools/tests/application-analytics.test.mjs agent-workflow/tools/tests/search-growth.test.mjs
 
       - name: Finalize OPS publication telemetry for Pages
         if: steps.deployment-gate.outputs.deploy == 'true'
@@ -200,6 +200,8 @@ jobs:
             --exclude="assets/operations-auth.js" \
             --exclude="assets/application-analytics.css" \
             --exclude="assets/application-analytics.js" \
+            --exclude="assets/search-growth.js" \
+            --exclude="assets/search-growth.css" \
             --exclude="assets/member-operations.css" \
             --exclude="assets/member-operations.js" \
             --exclude="assets/local-skill-store.css" \
