@@ -12,7 +12,7 @@
     "lead_status_counts": {
       "pending_verification": 40,
       "excluded_robotics": 22,
-      "verified_card_ready": 56,
+      "published": 56,
       "duplicate_existing": 5,
       "pending_scope": 4,
       "excluded_no_ai_evidence": 13
@@ -37,7 +37,8 @@
     "Vertical Compute新增3700万欧元，累计5700万欧元；ORamaVR为450万美元股权及可转换贷款组合。",
     "自动生成缺产品的Sinai.ai已根据媒体原文和公司官网人工补齐并通过相同门禁。",
     "已发布的479张卡片ID全部保留；一次重复报道关联原卡片，不增加笔数。",
-    "正文受限与证据不足项目保留待核验，未凭搜索摘要入库。"
+    "正文受限与证据不足项目保留待核验，未凭搜索摘要入库。",
+    "玩点旅行和致敬未知采用正文明确的融资宣布日8月10日和2月27日，原始文章发布日期保持不变。"
   ],
   "records": [
     {
@@ -89,9 +90,9 @@
     {
       "candidate_id": "SUM22-002",
       "event_id": "EV-bec127224b1f1aca",
-      "funding_insight_id": "FI-169caf1c2721c1af",
+      "funding_insight_id": "FI-083d1c971205fd26",
       "company": "玩点旅行",
-      "date": "2026-08-13",
+      "date": "2026-08-10",
       "round": "Pre-A+轮",
       "round_original": "Pre-A+轮",
       "amount": "近亿元",
@@ -2497,9 +2498,9 @@
     {
       "candidate_id": "SUM22-054",
       "event_id": "EV-ae564e305ca1bc3e",
-      "funding_insight_id": "FI-14a283707b55f0f2",
+      "funding_insight_id": "FI-f3af1d77a00eff70",
       "company": "致敬未知",
-      "date": "2026-02-28",
+      "date": "2026-02-27",
       "round": "Pre-A轮",
       "round_original": "Pre-A轮",
       "amount": "超亿元",
@@ -2928,5 +2929,30 @@
       "source_url": "https://www.prnewswire.com/news-releases/zum-raises-100-million-from-tpg-to-accelerate-zums-connected-mobility-experience-cmx-and-for-continued-growth-and-expansion-302744410.html",
       "source_lead": "S41-20"
     }
-  ]
+  ],
+  "announcement_date_corrections": {
+    "reviewed_at": "2026-10-02T07:10:43.478Z",
+    "changes": [
+      {
+        "group": "SUM22-002",
+        "event_id": "EV-bec127224b1f1aca",
+        "company": "玩点旅行",
+        "previous_article_date": "2026-08-13",
+        "announcement_date": "2026-08-10",
+        "source_ref": "SA-aed27f95fb36b8f4",
+        "source_url": "https://m.sohu.com/a/1062342177_120491808?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "quote": "8月10日，AI旅行产业互联网平台——玩点旅行宣布完成近亿元Pre-A+轮融资，本轮融资由复星锐正，敦鸿资产共同投资。"
+      },
+      {
+        "group": "SUM22-054",
+        "event_id": "EV-ae564e305ca1bc3e",
+        "company": "致敬未知",
+        "previous_article_date": "2026-02-28",
+        "announcement_date": "2026-02-27",
+        "source_ref": "SA-d873d2e5c3a6a3f0",
+        "source_url": "https://www.brandark.com/t/ipNtlMZg",
+        "quote": "品牌方舟获悉，2月27日，致敬未知宣布完成超亿元Pre-A轮融资。"
+      }
+    ]
+  }
 }

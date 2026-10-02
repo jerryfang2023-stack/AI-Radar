@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {financingDecisionText,fundingClaimGroupingProblem,eventSourceEligibility} from '../build-data-center-v4.mjs';
+import {financingDecisionText,fundingClaimGroupingProblem,eventSourceEligibility,reviewedFundingDate} from '../build-data-center-v4.mjs';
 import {canonicalFundingEventAmount,isEligibleFundingInsightEvent,normalizeFundingAmount,subjectCompanyForEvent} from '../funding-insight-v1-utils.mjs';
 import {isPendingFundingTitle} from '../lib/funding-transaction-status.mjs';
 const event={event_type:'funding',event_status:'completed',publication_status:'verified',display_title_zh:'某AI企业完成融资',claim_refs:['C'],metrics:['1.45 million']};
@@ -37,4 +37,20 @@ test('financing adverb cannot override the accepted company subject',()=>{
  const e={...event,entities:['E1','E2'],object:c.object,metrics:['5000万美元']};
  const es=[{entity_id:'E1',entity_type:'organization_candidate',canonical_name:'数美万物'},{entity_id:'E2',entity_type:'organization_candidate',canonical_name:'连续'}];
  assert.equal(subjectCompanyForEvent(e,es,{},[c],[q]).canonical_name,'数美万物');
+});
+
+test('reviewed announcement date can precede the article without rewriting its publication date',()=>{
+ const quote='8月10日，玩点旅行宣布完成近亿元Pre-A+轮融资。';
+ const source={published_at:'2026-08-13',clean_text:quote};
+ const context={subject:'玩点旅行',amount:'近亿元Pre-A+轮融资',publishedAt:'2026-08-13',sources:new Map([['SA',{raw:source}]])};
+ const review={status:'accepted',reviewer:'test',date:'2026-08-10',source_ref:'SA',quote,date_basis:'explicit_announcement'};
+ assert.equal(reviewedFundingDate(review,context),'2026-08-10');
+ assert.equal(source.published_at,'2026-08-13');
+ assert.throws(()=>reviewedFundingDate({...review,date_basis:undefined},context),/invalid_reviewed_funding_date/);
+ assert.throws(()=>reviewedFundingDate({...review,date:'2026-08-11'},context),/invalid_reviewed_funding_date/);
+ assert.throws(()=>reviewedFundingDate({...review,date:'2025-08-10'},context),/invalid_reviewed_funding_date/);
+ assert.throws(()=>reviewedFundingDate(review,{...context,publishedAt:'2026-08-09'}),/invalid_reviewed_funding_date/);
+ assert.throws(()=>reviewedFundingDate(review,{...context,amount:'超2亿元A轮融资'}),/invalid_reviewed_funding_date/);
+ const historicalQuote='2025年8月10日，玩点旅行宣布完成近亿元Pre-A+轮融资。';
+ assert.throws(()=>reviewedFundingDate({...review,quote:historicalQuote},{...context,sources:new Map([['SA',{raw:{...source,clean_text:historicalQuote}}]])}),/invalid_reviewed_funding_date/);
 });
