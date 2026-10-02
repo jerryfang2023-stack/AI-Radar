@@ -16,7 +16,7 @@ function run(command, args, options = {}) {
 if (!dryRun) run("git", ["fetch", "origin", "main"]);
 const sha = run("git", ["rev-parse", "origin/main"]).trim();
 if (!/^[a-f0-9]{40}$/u.test(sha)) throw new Error("Invalid accepted main commit");
-const files = ["operations-console.html", "assets/operations-console.js", "assets/member-operations.js", "assets/application-analytics.js", "assets/operations-auth.js", "data/ops-console.js", "data/ops-console.json", "data/local-skill-store-data.js"];
+const files = ["operations-console.html", "assets/operations-console.js", "assets/member-operations.js", "assets/application-analytics.js", "assets/operations-auth.js", "assets/search-growth.js", "assets/search-growth.css", "data/ops-console.js", "data/ops-console.json", "data/local-skill-store-data.js"];
 const receipt = { sourceCommit: sha, checkedAt: new Date().toISOString(), files: {}, authenticatedProductionBrowserVerified: false };
 const staging = fs.mkdtempSync(path.join(os.tmpdir(), "wavesight-ops-"));
 try {

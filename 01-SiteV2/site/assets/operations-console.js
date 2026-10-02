@@ -15,7 +15,7 @@
     get(key) { try { return localStorage.getItem(key); } catch { return null; } },
     set(key, value) { try { localStorage.setItem(key, value); return true; } catch { return false; } },
   };
-  const validPanels = new Set(["overview", "analytics", "membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token", "quality", "governance", "skills", "settings"]);
+  const validPanels = new Set(["overview", "analytics", "growth", "membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token", "quality", "governance", "skills", "settings"]);
   const membershipPanels = new Set(["membership", "membership-community", "membership-approval", "membership-users", "membership-schedule", "membership-token"]);
   function workbenchUrl(value) {
     try { const u = new URL(value); return !u.username && !u.password && ((u.protocol === "http:" && ["localhost", "127.0.0.1", "[::1]"].includes(u.hostname)) || u.protocol === "https:") ? u.href : ""; } catch { return ""; }
@@ -65,6 +65,7 @@
     membershipParent?.classList.toggle("is-context", membershipPanels.has(state.panel) && state.panel !== "membership");
     $$("[data-panel]").forEach((panel) => panel.classList.toggle("is-active", panel.dataset.panel === state.panel));
     history.replaceState(null, "", "#" + state.panel);
+    if (state.panel === "growth") $("[data-search-growth]")?.dispatchEvent(new Event("growth:open"));
     if (state.panel === "analytics") $("[data-application-analytics]")?.dispatchEvent(new Event("analytics:open"));
     if (membershipPanels.has(state.panel)) $("[data-member-operations]")?.dispatchEvent(new CustomEvent("membership:open", { detail: { view: state.panel } }));
     if (state.panel === "skills") resizeSkillFrame();

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="wavesight-ops-console-version" content="OPS-V3.8.0-engineering-integration">
+  <meta name="wavesight-ops-console-version" content="OPS-V3.9.0-search-ai-growth">
   <title>运营后台｜观澜 AI</title>
   <style>
     :root {
@@ -361,6 +361,7 @@
 </style>
   <meta name="wavesight-analytics-version" content="APP-ANALYTICS-V1.3.0-ops-readonly">
   <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="assets/search-growth.css?v=20261002-growth-v1">
   <link rel="stylesheet" href="assets/application-analytics.css?v=20260830-ops-readonly">
   <link rel="stylesheet" href="assets/operations-auth.css?v=ops-v341">
   <link rel="stylesheet" href="assets/member-operations.css?v=ops-membership-20260910">
@@ -368,11 +369,12 @@
 <body class="page-operations-console">
   <main class="shell" data-ops-console tabindex="-1" hidden>
     <aside class="rail">
-      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.8.0</small></div>
+      <div class="brand"><strong>观澜 AI</strong><span>WAVESIGHT AI</span><small>OPS V3.9.0</small></div>
       <nav class="nav">
         <button type="button" data-tab="overview" aria-current="true"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="7" cy="7" r="3"/><circle cx="17" cy="7" r="3"/><circle cx="7" cy="17" r="3"/><path d="M14 17h6"/></svg></span><span class="nav-text">总览</span></button>
         <button type="button" data-tab="quality"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 18V8l7 4 9-7v13"/><path d="M4 18h16"/></svg></span><span class="nav-text">数据质量</span></button>
         <button type="button" data-tab="analytics"><span class="nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20h16M7 16v-5M12 16V4M17 16V8"/></svg></span><span class="nav-text">运营统计</span></button>
+        <button type="button" data-tab="growth"><span class="nav-icon" aria-hidden="true">↗</span><span class="nav-text">搜索与 AI 增长</span></button>
         <div class="nav-group" data-membership-nav>
           <button type="button" data-tab="membership" aria-expanded="true" aria-controls="membership-subnav"><span class="nav-icon" aria-hidden="true">◇</span><span class="nav-text">会员与权益</span></button>
           <div class="nav-sub" id="membership-subnav" aria-label="会员与权益子栏目">
@@ -434,6 +436,31 @@
           <section><div class="module-head"><div><span class="kicker">Production Stages</span><h2>数据生产状态</h2></div><p>采集、事实构建、应用投影与发布的批次遥测。</p></div><div class="grid grid-4" data-production-stages></div></section>
           <section><div class="module-head"><div><span class="kicker">BATCH HISTORY</span><h2>近期数据批次</h2></div></div><div class="timeline" data-daily-timeline></div></section>
         </div>
+      </section>
+
+      <section class="panel" data-panel="growth" data-search-growth>
+        <div class="page-surface"><div class="growth-panel">
+          <header class="growth-head"><div><h1>搜索与 AI 增长</h1><p>查看搜索表现、AI 引用和来源访问</p></div><span class="growth-note" data-growth-updated></span></header>
+          <div class="growth-toolbar" aria-label="统计周期"><button type="button" data-growth-days="7" aria-pressed="false">近 7 天</button><button type="button" data-growth-days="30" aria-pressed="true">近 30 天</button><button type="button" data-growth-days="90" aria-pressed="false">近 90 天</button><button type="button" data-growth-refresh>刷新</button></div>
+          <p class="growth-status" data-growth-status role="status">登录后可查看</p>
+          <div data-growth-content hidden>
+            <section class="growth-section"><h2>来源流量</h2><div class="growth-kpis" data-growth-kpis></div><div data-growth-trend></div><div data-growth-channels></div><p class="growth-note">来源流量仅统计可识别的来访；入口点击代表意向。</p></section>
+            <section class="growth-section"><h2>搜索表现</h2><div class="growth-grid" data-growth-search></div><p class="growth-note">平台报告按原平台口径展示，Google 日期为太平洋时间。</p><p><a href="https://search.google.com/search-console" target="_blank" rel="noopener noreferrer">Google Search Console ↗</a> · <a href="https://www.bing.com/webmasters/" target="_blank" rel="noopener noreferrer">Bing Webmaster Tools ↗</a> · <a href="https://ziyuan.baidu.com/" target="_blank" rel="noopener noreferrer">百度搜索资源平台 ↗</a></p></section>
+            <section class="growth-section"><h2>AI 引用</h2><div class="growth-grid" data-growth-ai-platforms></div><p class="growth-note" data-growth-question-count></p><div data-growth-evaluations></div><p class="growth-note">引用率仅针对已录入的题库回答。</p></section>
+            <section class="growth-section"><h2>收录与发布</h2><div class="growth-grid" data-growth-indexing></div><div class="growth-card" data-growth-health></div><p class="growth-note">更新通知已接收不代表收录或引用。</p></section>
+          </div>
+          <details class="growth-import"><summary>导入报表</summary>
+            <form data-growth-form>
+              <label>平台<select data-growth-provider><option value="google_search">Google 搜索</option><option value="bing_search">Bing 搜索</option><option value="baidu_search">百度搜索</option><option value="google_ai">Google AI 搜索曝光</option><option value="bing_ai">Bing AI 引用</option><option value="google_indexing">Google 收录</option><option value="bing_indexing">Bing 收录</option><option value="baidu_indexing">百度收录</option><option value="ai_evaluation">AI 回答评测</option></select></label>
+              <label>维度<select data-growth-dimension><option value="date">日期</option><option value="page">页面</option><option value="query">关键词</option></select></label>
+              <label>开始日期<input type="date" data-growth-start></label><label>结束日期<input type="date" data-growth-end></label>
+              <label class="growth-wide">选择文件<input type="file" accept=".json,.csv,application/json,text/csv" data-growth-file required></label>
+              <p class="growth-note growth-wide">JSON 或 UTF-8 CSV。日期报表自动识别周期；页面和关键词报表需填写周期。AI 评测使用真实观察记录 JSON。</p>
+              <div class="growth-import-actions growth-wide"><button type="submit" data-growth-submit>导入报表</button><button type="button" data-growth-template>下载模板</button></div>
+              <p class="growth-note growth-wide" data-growth-import-status role="status"></p>
+            </form>
+          </details>
+        </div></div>
       </section>
 
       <section class="panel" data-panel="analytics" data-application-analytics>
@@ -617,7 +644,7 @@
           <div class="grid grid-2">
             <article class="card"><span class="label">LOCAL PREFERENCES</span><h2>本机显示偏好</h2>
               <form class="preferences-form" data-preferences-form>
-                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="membership">会员与权益总览</option><option value="membership-community">社群成员管理</option><option value="membership-approval">社群加入审核</option><option value="membership-users">小程序会员管理</option><option value="membership-schedule">活动排期管理</option><option value="quality">数据质量</option><option value="skills">Skill Store</option><option value="governance">系统管理</option></select></label>
+                <label>默认打开页面<select data-setting-landing><option value="overview">总览</option><option value="analytics">运营统计</option><option value="growth">搜索与 AI 增长</option><option value="membership">会员与权益总览</option><option value="membership-community">社群成员管理</option><option value="membership-approval">社群加入审核</option><option value="membership-users">小程序会员管理</option><option value="membership-schedule">活动排期管理</option><option value="quality">数据质量</option><option value="skills">Skill Store</option><option value="governance">系统管理</option></select></label>
                 <label>快照过期提醒<select data-setting-stale><option value="24">超过 24 小时</option><option value="48">超过 48 小时</option><option value="72">超过 72 小时</option></select></label>
                 <label class="checkbox-label"><input type="checkbox" data-setting-compact>使用紧凑卡片间距</label>
                 <div class="form-actions"><button type="submit">保存本机设置</button><button type="button" data-reset-preferences>恢复默认</button></div>
@@ -644,9 +671,10 @@
 
   <script src="data/pipeline-dashboard.js"></script>
   <script src="data/ops-console.js"></script>
-  <script src="assets/operations-console.js?v=ops-380-engineering-20260913"></script>
+  <script src="assets/operations-console.js?v=ops-390-growth-20261002"></script>
   <script src="assets/application-analytics.js?v=ops-astra-20260912"></script>
   <script src="assets/member-operations.js?v=ops-astra-20260912"></script>
+  <script src="assets/search-growth.js?v=20261002-growth-v1"></script>
   <script src="assets/operations-auth.js?v=ops-astra-20260912"></script>
 </body>
 </html>

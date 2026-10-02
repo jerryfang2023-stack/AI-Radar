@@ -49,7 +49,7 @@
           "key": "MINIPROGRAM",
           "label": "微信小程序",
           "category": "融资产品",
-          "value": "1.1.6",
+          "value": "1.2.4",
           "source": "02-Miniprogram/package.json",
           "status": "源码版本 · 微信线上待核验",
           "kind": "source",
@@ -120,7 +120,7 @@
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.8.0-engineering-integration",
+        "value": "OPS-V3.9.0-search-ai-growth",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -315,7 +315,7 @@
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.6",
+        "value": "1.2.4",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -518,8 +518,8 @@
     "sourceBaseline": "SITE-V4.6.1-research-retirement"
   },
   "meta": {
-    "version": "OPS-V3.8.0-engineering-integration",
-    "generatedAt": "2026-10-01T09:28:35.842Z",
+    "version": "OPS-V3.9.0-search-ai-growth",
+    "generatedAt": "2026-10-02T11:21:01.001Z",
     "date": "2026-10-01",
     "sources": [
       "agent-workflow/reports/daily-supervision-report-latest.json",
@@ -537,6 +537,10 @@
     {
       "id": "analytics",
       "label": "运营统计"
+    },
+    {
+      "id": "growth",
+      "label": "搜索与 AI 增长"
     },
     {
       "id": "membership",
@@ -1549,7 +1553,7 @@
       }
     ],
     "sourceQuality": {
-      "updatedAt": "2026-10-01T09:28:35.834Z",
+      "updatedAt": "2026-10-02T11:21:00.944Z",
       "sampleNote": "按最新 V4 RawDocument 的 acquisition_channel 聚合；样本量为已落盘 Raw 文档数。",
       "metricNote": "诊断分由可用率、全文率、高质提取率、可读性和事实命中率组成，仅用于运营观察，不参与来源准入、排序或事实门禁。",
       "rows": [
@@ -1589,10 +1593,10 @@
           "fullTextRate": 76,
           "highQualityRate": 71,
           "readabilityScore": 71,
-          "factHitRate": 2,
-          "acceptedClaims": 6,
-          "canonicalEvents": 2,
-          "score": 65,
+          "factHitRate": 4,
+          "acceptedClaims": 9,
+          "canonicalEvents": 3,
+          "score": 66,
           "grade": "中"
         },
         {
@@ -1608,6 +1612,20 @@
           "canonicalEvents": 0,
           "score": 58,
           "grade": "待改善"
+        },
+        {
+          "id": "financing",
+          "label": "financing",
+          "total": 45,
+          "eligibleRate": 100,
+          "fullTextRate": 100,
+          "highQualityRate": 100,
+          "readabilityScore": 0,
+          "factHitRate": 53,
+          "acceptedClaims": 48,
+          "canonicalEvents": 25,
+          "score": 78,
+          "grade": "中"
         }
       ]
     },
@@ -23342,7 +23360,7 @@
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.8.0-engineering-integration",
+        "value": "OPS-V3.9.0-search-ai-growth",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -23537,7 +23555,7 @@
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.6",
+        "value": "1.2.4",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -27818,7 +27836,7 @@
       {
         "key": "OPS",
         "label": "整体运营后台",
-        "value": "OPS-V3.8.0-engineering-integration",
+        "value": "OPS-V3.9.0-search-ai-growth",
         "category": "运营与规则",
         "source": "context/version-ledger.md",
         "status": "仓库基线",
@@ -28032,7 +28050,7 @@
         "key": "MINIPROGRAM",
         "label": "微信小程序",
         "category": "融资产品",
-        "value": "1.1.6",
+        "value": "1.2.4",
         "source": "02-Miniprogram/package.json",
         "status": "源码版本 · 微信线上待核验",
         "kind": "source",
@@ -28152,6 +28170,6 @@
       }
     ],
     "catalogGeneratedAt": "2026-09-13 16:21:58",
-    "snapshotGeneratedAt": "2026-10-01T09:28:35.842Z"
+    "snapshotGeneratedAt": "2026-10-02T11:21:01.001Z"
   }
 }

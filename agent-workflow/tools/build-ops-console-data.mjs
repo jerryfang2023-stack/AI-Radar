@@ -332,6 +332,7 @@ const data = {
   navigation: [
     { id: "overview", label: "总览" },
     { id: "analytics", label: "运营统计" },
+    { id: "growth", label: "搜索与 AI 增长" },
     { id: "membership", label: "会员与权益" },
     { id: "quality", label: "数据质量" },
     { id: "governance", label: "系统管理" },

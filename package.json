@@ -178,7 +178,8 @@
     "financing:dispatch": "node agent-workflow/financing/dispatch.mjs",
     "financing:run": "node agent-workflow/financing/run.mjs",
     "financing:publish": "node agent-workflow/financing/publish.mjs",
-    "inspect:financing-sources": "node agent-workflow/financing/inspect-sources.mjs"
+    "inspect:financing-sources": "node agent-workflow/financing/inspect-sources.mjs",
+    "test:search-growth": "node --test agent-workflow/tools/tests/search-growth.test.mjs agent-workflow/tools/tests/search-growth-browser.test.mjs"
   },
   "repository": {
     "type": "git",
