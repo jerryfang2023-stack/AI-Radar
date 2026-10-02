@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-2e0b2975bf95b561",
+    "name": "Vervesemi Microelectronics",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-7662ee4e805e9748"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-02-18",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-7662ee4e805e9748"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-7662ee4e805e9748",
+        "dataDate": "2026-10-02",
+        "date": "2026-02-18",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "无晶圆厂半导体初创公司Vervesemi在A轮融资中筹集1000万美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-2e0b2975bf95b561"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-8a8f0a9fa2b8608d",
+      "snapshotKey": "8a8f0a9fa2b8608d",
+      "snapshotId": "HWS-b4ea4313ab269e35",
+      "eventId": "EV-7662ee4e805e9748",
+      "eventIds": [
+        "EV-7662ee4e805e9748"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Vervesemi Microelectronics",
+      "subject": "Vervesemi Microelectronics",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "10",
+          "unit": "million",
+          "fact_ref": "HWF-a43e81044173045f"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-a43e81044173045f",
+          "fact_type": "product",
+          "observed_at": "2026-02-18",
+          "subject_entity_id": "EN-2e0b2975bf95b561",
+          "subject_name": "Vervesemi Microelectronics",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "10",
+          "unit": "million",
+          "source_quote": "You're reading Entrepreneur India, an international franchise of Entrepreneur Media.\n Fabless semiconductor startup Vervesemi Microelectronics has raised USD 10 million in a Series A funding round led by market investor Ashish Kacholia and Unicorn India Ventures.\nThe round also saw participation from Roots Ventures, Caperize Fina and MAIQ Growth Scheme.\nThe newly raised funds will be deployed across three strategic priorities. The company plans to accelerate commercialisation of its machine learning–enhanced analog signal chain integrated circuits, including advanced data converters and intelligent power and sensing solutions aimed at industrial automation, smart energy, motor control and avionics markets.\nInvestment will also support production readiness of existing silicon chips, product qualification processes, and expansion of engineering and applications teams to serve global customers.\nIn addition, part of the funding will be used to expand its intellectual property portfolio and strengthen research and development in next-generation precision analog architectures.\nFounded in 2",
+          "event_refs": [
+            "EV-7662ee4e805e9748"
+          ],
+          "claim_ref": "CL-8a5fa99b2365bf12",
+          "source_refs": [
+            "SA-680275f3915e36e4"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://india.entrepreneur.com/news-and-trends/fabless-semiconductor-startup-vervesemi-raises-usd-10-mn-in/502790",
+      "entityIds": [
+        "EN-2e0b2975bf95b561"
+      ]
+    }
+  ]
+}

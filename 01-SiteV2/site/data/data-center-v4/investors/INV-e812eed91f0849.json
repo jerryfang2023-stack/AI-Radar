@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 3,
+    "historical_or_ambiguous_count": 4,
     "portfolio_company_count": 0,
     "market_regions": [
       "CN"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 3
+      "historical_or_ambiguous": 4
     },
     "round_codes": [],
     "portfolio_companies": [],
@@ -143,6 +143,38 @@
         ]
       },
       {
+        "activity_id": "IA-ef2d130ae0e08b7d",
+        "funding_insight_id": "FI-cb3399f8c90eec40",
+        "event_ids": [
+          "EV-d744fd553ce68349"
+        ],
+        "company_entity_id": "EN-f78336305b0bc8bc",
+        "company_canonical_entity_id": "",
+        "company_name": "晰见科技",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方（来源表述为天使轮投资方）",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-410928b8ba42b627",
+            "source_url": "https://www.cls.cn/detail/2466861",
+            "source_title": "晰见科技完成近5亿元天使轮融资",
+            "source_content_hash": "addd4b9820ad617a",
+            "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
+            "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-865806bda687c1cd",
         "funding_insight_id": "FI-1b4327c7d35c5dad",
         "event_ids": [
@@ -191,6 +223,14 @@
         "source_content_hash": "e0633690ea582b36",
         "quote": "由英诺天使基金领投，水木清华校友种子基金、零以创投、海南零点一科技及个人投资者跟投",
         "quote_hash": "d1f5f3d74973c136dd6e33cea193780ffcb786fb26caf93b05e900bcc6ba0d7c"
+      },
+      {
+        "source_id": "FISRC-410928b8ba42b627",
+        "source_url": "https://www.cls.cn/detail/2466861",
+        "source_title": "晰见科技完成近5亿元天使轮融资",
+        "source_content_hash": "addd4b9820ad617a",
+        "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
+        "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
       },
       {
         "source_id": "FISRC-fa0e608145757727",
@@ -251,8 +291,8 @@
           "source_id": "FISRC-a6c76bf98227d92c"
         },
         {
-          "description": "融资来源记录：PureblueAI清蓝 · 历史轮次未披露 · 种子轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fa0e608145757727"
+          "description": "融资来源记录：晰见科技 · 历史轮次未披露 · 历史轮次投资方（来源表述为天使轮投资方）。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-410928b8ba42b627"
         }
       ],
       "contacts": [
@@ -298,12 +338,12 @@
           "quote_hash": "d1f5f3d74973c136dd6e33cea193780ffcb786fb26caf93b05e900bcc6ba0d7c"
         },
         {
-          "source_id": "FISRC-fa0e608145757727",
-          "source_url": "https://www.pureblueai.com/about-us",
-          "source_title": "关于我们—PureblueAI清蓝-算法驱动的下一代 AI 营销引擎",
-          "source_content_hash": "7bc2a6cca71b83c7",
-          "quote": "2025年8月，获得由英诺基金与蓝色光标共同领投、水木清华校友种子基金跟投的超千万元人民币种子轮融资。",
-          "quote_hash": "ba70f63514e78ae06332f0fd6df2d0eb9ea7119ae333ecdd8a8872b864609965"
+          "source_id": "FISRC-410928b8ba42b627",
+          "source_url": "https://www.cls.cn/detail/2466861",
+          "source_title": "晰见科技完成近5亿元天使轮融资",
+          "source_content_hash": "addd4b9820ad617a",
+          "quote": "本轮投资方包括徐汇科创投、经纬创投、华映资本、英诺基金、水木清华校友种子基金。",
+          "quote_hash": "98cd229dc0b6d4958d71cd002b92b03e6c5bdb23ea547745e7367ac89a867230"
         }
       ],
       "last_verified_at": "2026-09-26",

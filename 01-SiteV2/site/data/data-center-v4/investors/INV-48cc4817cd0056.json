@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,27 +61,34 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 7,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 7,
+    "current_round_count": 8,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 8,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-02-04",
+    "first_disclosed_at": "2026-02-03",
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "co_lead": 6,
-      "participant": 1
+      "historical_or_ambiguous": 1,
+      "participant": 2
     },
     "round_codes": [
       "series_b",
       "series_c",
       "series_d",
-      "series_f"
+      "series_f",
+      "series_h"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2f4436342c46decc",
+        "canonical_entity_id": "",
+        "name": "Cerebras Systems"
+      },
       {
         "entity_id": "EN-d41ebd9f02722fc8",
         "canonical_entity_id": "EN-d41ebd9f02722fc8",
@@ -407,6 +414,78 @@
             "quote_hash": "ae596dcd76d7374cac3af9db38142d54ad3a8bd3c47828ea455bd5a4427a8230"
           }
         ]
+      },
+      {
+        "activity_id": "IA-b7aff97e1b1bb3d4",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-51b0427643bffd15",
+            "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+            "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+            "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+            "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+            "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-b670d78d7d608a58",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series G 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+            "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -473,6 +552,22 @@
         "source_content_hash": "cbb6c55f3aa631df",
         "quote": "Existing investors joining the round included Valor Equity Partners, Atreides Management and DFJ Growth, among others.",
         "quote_hash": "ae596dcd76d7374cac3af9db38142d54ad3a8bd3c47828ea455bd5a4427a8230"
+      },
+      {
+        "source_id": "FISRC-51b0427643bffd15",
+        "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+        "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+        "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+        "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+        "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Sep 30, 2025$1.1B Series GAtreides Management, Fidelity Management & Research CompanyPaul Abrahimzadeh, Tiger Global, Valor Equity PartnersAnnounced",
+        "quote_hash": "5883ded100c68d85a5cb450f154d4336703119202090c77be759cd12cf37ce9a"
       }
     ],
     "public_profile": {
@@ -601,6 +696,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[8].role": {
+          "text": "Series G 领投",
+          "source_hash": "f3f6de8acaa7ef2a6e0d57253fb12e64a3ac65374b7b99822bcbd922a39d98b0",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
         "public_profile.milestones[0].description": {
           "text": "Gavin Baker 离开 Fidelity 后创立 Atreides Management。",
           "source_hash": "a9a1e2e2ceb7ef56957f33f986d6f9c4db528e2d6b33e0639e5c151d050f95d0",

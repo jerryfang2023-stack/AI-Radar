@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 7,
-    "portfolio_company_count": 3,
+    "current_round_count": 5,
+    "historical_or_ambiguous_count": 8,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN",
       "GLOBAL"
@@ -73,8 +73,9 @@
     "first_disclosed_at": "2024-01",
     "latest_disclosed_at": "2026-09-02",
     "role_counts": {
-      "historical_or_ambiguous": 7,
-      "participant": 3
+      "historical_or_ambiguous": 8,
+      "other_current_round": 1,
+      "participant": 4
     },
     "round_codes": [
       "angel",
@@ -91,6 +92,16 @@
         "entity_id": "EN-ada6f7916f22af98",
         "canonical_entity_id": "EN-ada6f7916f22af98",
         "name": "求之科技"
+      },
+      {
+        "entity_id": "EN-449d8bc804b1866d",
+        "canonical_entity_id": "",
+        "name": "致敬未知"
+      },
+      {
+        "entity_id": "EN-3c52384d8749fcb4",
+        "canonical_entity_id": "",
+        "name": "OJO"
       },
       {
         "entity_id": "EN-2a92da4bc5db543c",
@@ -180,6 +191,54 @@
         ]
       },
       {
+        "activity_id": "IA-c4e6b2f40fb2dd86",
+        "funding_insight_id": "FI-ae4729db347716e3",
+        "event_ids": [
+          "EV-a6696955767a209e"
+        ],
+        "company_entity_id": "EN-3c52384d8749fcb4",
+        "company_canonical_entity_id": "",
+        "company_name": "OJO",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-08-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-38f475f459741d00",
+            "source_url": "https://i.ifeng.com/c/8vsFiyiShVs",
+            "source_title": "OJO完成近亿元天使轮融资，打造设计Agent Team Workspace",
+            "source_content_hash": "e4cb3dc7917d61581edcebcf0cb6eb908e6524fe298803d3a870516407b51f3c",
+            "quote": "本轮融资由顺为资本和联想创投联合投资",
+            "quote_hash": "5a9bed8876b3e64961269e666925f476cfa6e447aec2e950e7ff609127bd098b"
+          },
+          {
+            "source_id": "FISRC-59edf924430b552c",
+            "source_url": "https://finance.sina.com.cn/stock/t/2026-08-26/doc-iniprqcq0953033.shtml",
+            "source_title": "前剪映负责人张琪智创业，OJO拿下顺为、联想创投近亿元天使轮",
+            "source_content_hash": "a27136b4c0213556",
+            "quote": "投资方是顺为资本和联想创投",
+            "quote_hash": "646ef31d02989d4fa6de6ebfb2ac7e0b6a3ad639ac31d3bdbe8f6ba7e15b635c"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-88b481f323732578",
         "funding_insight_id": "FI-6adc0d7bfd441daa",
         "event_ids": [
@@ -220,6 +279,46 @@
         ]
       },
       {
+        "activity_id": "IA-f9ed5c928bd12f5d",
+        "funding_insight_id": "FI-14a283707b55f0f2",
+        "event_ids": [
+          "EV-ae564e305ca1bc3e"
+        ],
+        "company_entity_id": "EN-449d8bc804b1866d",
+        "company_canonical_entity_id": "",
+        "company_name": "致敬未知",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-02-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a9a96903b0bbba52",
+            "source_url": "https://www.brandark.com/t/ipNtlMZg",
+            "source_title": "AI运动科技公司「致敬未知」完成超亿元Pre-A轮融资",
+            "source_content_hash": "dd27d9ea6719c8cb400059bdaa62c804158b4ef0acb065993e8ddef47574e857",
+            "quote": "本轮融资由创维投资、博裕创投、联想创投、广发乾和等产业及财务资本联合参与",
+            "quote_hash": "fa865b569c3676e6b02da83df504e1aa310264536146170576e6e0d63397fa17"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-0465d88545dbf2b8",
         "funding_insight_id": "FI-f7342735e68375d9",
         "event_ids": [
@@ -249,6 +348,38 @@
             "source_content_hash": "94c0241a07c069e5",
             "quote": "Lenovo Capital --> --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 创投简介 成员企业 新闻动态 生态合作 创投学院 科技瞭望塔 联系我们 孵化于清华的「星动纪元」获联想创投领投超亿元天使轮融资，&ldquo;具身智能&rdquo;大幕已拉开丨 LCIG Portfolio 2024 01/10 人形机器人研发公司「星动纪元」获超亿元天使轮融资， 由联想创投领投 ，金鼎资本、清控天诚跟投，老股东世纪金源超额追投，华兴资本担任本次融资独家财务顾问。",
             "quote_hash": "4d0283d7b7b6dde474c1af6357f5250daaa677996cd88412cbec71857b1350d0"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-44465a408bdb7794",
+        "funding_insight_id": "FI-a733821457c6cc8d",
+        "event_ids": [
+          "EV-d3c5eb69eb9d397a"
+        ],
+        "company_entity_id": "EN-55c37c5c0b75471a",
+        "company_canonical_entity_id": "",
+        "company_name": "开放传神（OpenCSG）",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ed4f088f02c38455",
+            "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
+            "source_title": "OpenCSG完成数亿元Pre-A轮融资",
+            "source_content_hash": "4fa5b4b2071cbe25f6578f34ac0b632b0cd5ffb051655b692b67b3d70070ee5c",
+            "quote": "此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。",
+            "quote_hash": "766784dc98f1518b2251ec45fdc68713623806cb4f3866e9055254a93fcaacbd"
           }
         ]
       },
@@ -466,6 +597,22 @@
         "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
       },
       {
+        "source_id": "FISRC-38f475f459741d00",
+        "source_url": "https://i.ifeng.com/c/8vsFiyiShVs",
+        "source_title": "OJO完成近亿元天使轮融资，打造设计Agent Team Workspace",
+        "source_content_hash": "e4cb3dc7917d61581edcebcf0cb6eb908e6524fe298803d3a870516407b51f3c",
+        "quote": "本轮融资由顺为资本和联想创投联合投资",
+        "quote_hash": "5a9bed8876b3e64961269e666925f476cfa6e447aec2e950e7ff609127bd098b"
+      },
+      {
+        "source_id": "FISRC-59edf924430b552c",
+        "source_url": "https://finance.sina.com.cn/stock/t/2026-08-26/doc-iniprqcq0953033.shtml",
+        "source_title": "前剪映负责人张琪智创业，OJO拿下顺为、联想创投近亿元天使轮",
+        "source_content_hash": "a27136b4c0213556",
+        "quote": "投资方是顺为资本和联想创投",
+        "quote_hash": "646ef31d02989d4fa6de6ebfb2ac7e0b6a3ad639ac31d3bdbe8f6ba7e15b635c"
+      },
+      {
         "source_id": "FISRC-d45f7a4d8fd76b88",
         "source_url": "https://www.sohu.com/a/1044130792_120109837",
         "source_title": "求之科技完成超1亿美元天使轮融资",
@@ -474,12 +621,28 @@
         "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
       },
       {
+        "source_id": "FISRC-a9a96903b0bbba52",
+        "source_url": "https://www.brandark.com/t/ipNtlMZg",
+        "source_title": "AI运动科技公司「致敬未知」完成超亿元Pre-A轮融资",
+        "source_content_hash": "dd27d9ea6719c8cb400059bdaa62c804158b4ef0acb065993e8ddef47574e857",
+        "quote": "本轮融资由创维投资、博裕创投、联想创投、广发乾和等产业及财务资本联合参与",
+        "quote_hash": "fa865b569c3676e6b02da83df504e1aa310264536146170576e6e0d63397fa17"
+      },
+      {
         "source_id": "FISRC-077f534a8b9f515e",
         "source_url": "https://capital.lenovo.com/news/detail/id/932/s/1.html",
         "source_title": "Lenovo Capital",
         "source_content_hash": "94c0241a07c069e5",
         "quote": "Lenovo Capital --> --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 --> 关注公众号，发送 【白皮书】 或 【BP投递】 等关键词，获取相关支持，更多信息和服务详见公众号 创投简介 成员企业 新闻动态 生态合作 创投学院 科技瞭望塔 联系我们 孵化于清华的「星动纪元」获联想创投领投超亿元天使轮融资，&ldquo;具身智能&rdquo;大幕已拉开丨 LCIG Portfolio 2024 01/10 人形机器人研发公司「星动纪元」获超亿元天使轮融资， 由联想创投领投 ，金鼎资本、清控天诚跟投，老股东世纪金源超额追投，华兴资本担任本次融资独家财务顾问。",
         "quote_hash": "4d0283d7b7b6dde474c1af6357f5250daaa677996cd88412cbec71857b1350d0"
+      },
+      {
+        "source_id": "FISRC-ed4f088f02c38455",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
+        "source_title": "OpenCSG完成数亿元Pre-A轮融资",
+        "source_content_hash": "4fa5b4b2071cbe25f6578f34ac0b632b0cd5ffb051655b692b67b3d70070ee5c",
+        "quote": "此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。",
+        "quote_hash": "766784dc98f1518b2251ec45fdc68713623806cb4f3866e9055254a93fcaacbd"
       },
       {
         "source_id": "FISRC-4aa24ed616a59504",
@@ -598,8 +761,8 @@
           "source_id": "FISRC-2a3446f702110142"
         },
         {
-          "description": "融资来源记录：求之科技 · 天使轮 · 2026-07-01 · 本轮参投 · 1亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d45f7a4d8fd76b88"
+          "description": "融资来源记录：OJO · 天使轮 · 2026-08-25 · 本轮联合投资 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-38f475f459741d00"
         }
       ],
       "contacts": [
@@ -667,12 +830,12 @@
           "quote_hash": "f850c173b12fcf1c560b4cafd4cd1a72d412acf7ca3752964ad6e7e0faaa57c5"
         },
         {
-          "source_id": "FISRC-d45f7a4d8fd76b88",
-          "source_url": "https://www.sohu.com/a/1044130792_120109837",
-          "source_title": "求之科技完成超1亿美元天使轮融资",
-          "source_content_hash": "ef8ed950cecf5cd3",
-          "quote": "参投方包括君联资本、信产投资、联想创投、沄柏资本、普华资本、临港科创投、琥珀资本、庚辛资本等。",
-          "quote_hash": "cd4df0216b022c08c23ab0d5f2c10ad4f2f0ea25858f492d74541294ea3c5c62"
+          "source_id": "FISRC-38f475f459741d00",
+          "source_url": "https://i.ifeng.com/c/8vsFiyiShVs",
+          "source_title": "OJO完成近亿元天使轮融资，打造设计Agent Team Workspace",
+          "source_content_hash": "e4cb3dc7917d61581edcebcf0cb6eb908e6524fe298803d3a870516407b51f3c",
+          "quote": "本轮融资由顺为资本和联想创投联合投资",
+          "quote_hash": "5a9bed8876b3e64961269e666925f476cfa6e447aec2e950e7ff609127bd098b"
         }
       ],
       "coverage_status": "researched",

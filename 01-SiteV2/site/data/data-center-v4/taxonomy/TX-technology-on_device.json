@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,12 +62,14 @@
       "EV-9bade504e46219dd",
       "EV-d051cfbe3fd7e80f",
       "EV-c2718ea152dde192",
+      "EV-235f08be851797db",
       "EV-e084947e3f9e0667",
       "EV-a15da1b52d939967",
       "EV-736404028b8ad33e",
       "EV-71c4419c71d00625",
       "EV-181a7a6fd14cec08",
       "EV-4ef09c71be4c84cb",
+      "EV-42335b1bae58c172",
       "EV-8077605769c4d4eb",
       "EV-cc0d955aa68445ea",
       "EV-5bbc509a032b8309",
@@ -108,11 +110,13 @@
       "EN-955e510be03b9cc3",
       "EN-f2b9106253663314",
       "EN-10b106d9b0a27a4c",
+      "EN-d3c0a240ab92fda5",
       "EN-a35b80cf9d171015",
       "EN-48bebf25e5bd5aca",
       "EN-d37561692b664762",
       "EN-ff970851d49aee50",
       "EN-470be66761dfc2e9",
+      "EN-185ea241778d39c7",
       "EN-1a47edcb80cc76dd",
       "EN-b5318593e1260f2f",
       "EN-968e2d5b08687bf4",
@@ -142,7 +146,7 @@
     ],
     "hardwareIds": [],
     "firstSeen": "2026-01-06",
-    "lastSeen": "2026-09-24"
+    "lastSeen": "2026-10-02"
   },
   "events": [
     {
@@ -594,10 +598,157 @@
       "publisher": "投中网"
     },
     {
+      "id": "EV-235f08be851797db",
+      "dataDate": "2026-10-02",
+      "date": "2026-08-05",
+      "updatedDate": "2026-08-05",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Om AI联汇完成新一轮数亿元融资",
+      "originalTitle": "",
+      "subject": "Om AI联汇",
+      "action": "funding",
+      "object": "数亿元新一轮融资",
+      "metrics": [],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-d3c0a240ab92fda5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-d3c0a240ab92fda5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d3c0a240ab92fda5"
+      ],
+      "entityNames": [
+        "Om AI联汇"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-08-05/doc-inimfshr4736366.shtml",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
       "id": "EV-e084947e3f9e0667",
-      "dataDate": "2026-09-12",
+      "dataDate": "2026-10-02",
       "date": "2026-07-15",
-      "updatedDate": "2026-09-12",
+      "updatedDate": "2026-07-15",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
@@ -605,10 +756,10 @@
       "statusLabel": "已完成",
       "publicationStatus": "verified",
       "title": "面壁智能融资超50亿，估值超200亿",
-      "originalTitle": "",
+      "originalTitle": "首发| 面壁智能融资超50亿，估值超200亿",
       "subject": "面壁智能",
       "action": "funding",
-      "object": "已完成新一轮融资",
+      "object": "新一轮融资，金额未披露",
       "metrics": [],
       "locations": [],
       "marketScope": {
@@ -617,12 +768,10 @@
         "china_market_basis": [
           "event_market"
         ],
-        "source_registry_ids": [
-          "cn-sina-finance"
-        ],
+        "source_registry_ids": [],
         "claim_refs": [
-          "CL-27df6644c05f3fe1",
-          "CL-bd5e234ce59a1faa"
+          "CL-4e3a4de4da26ecf2",
+          "CL-c79386db3bd4a281"
         ]
       },
       "missingFields": [],
@@ -642,17 +791,7 @@
         "ai_market_category": [],
         "ai_market_subcategory": [],
         "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "model",
-            "name": "模型",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
+        "product_form": [],
         "use_case": [],
         "industry": [],
         "deployment_model": [
@@ -679,15 +818,6 @@
           "assertionId": ""
         },
         {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
           "dimensionId": "deployment_model",
           "dimensionName": "部署形态",
           "id": "edge_device",
@@ -698,15 +828,6 @@
         }
       ],
       "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "model",
-          "name": "模型",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -736,8 +857,8 @@
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://finance.sina.com.cn/roll/2026-07-15/doc-inihvytp7839583.shtml",
-      "publisher": "新浪财经"
+      "sourceUrl": "https://news.pedaily.cn/202607/566303.shtml",
+      "publisher": "news.pedaily.cn"
     },
     {
       "id": "EV-a15da1b52d939967",
@@ -1681,6 +1802,192 @@
       "products": [],
       "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-02-28/doc-inhpiryq3062221.shtml",
       "publisher": "新浪财经"
+    },
+    {
+      "id": "EV-42335b1bae58c172",
+      "dataDate": "2026-10-02",
+      "date": "2026-01-14",
+      "updatedDate": "2026-01-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "面向端侧AI芯片的推理引擎Quadric在边缘LLM、汽车和企业领域设计订单加速增长之际完成3000万美元C轮融资",
+      "originalTitle": "Quadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise",
+      "subject": "Quadric",
+      "action": "funding",
+      "object": "$30M Series C",
+      "metrics": [
+        "$30M",
+        "$30 million",
+        "$72 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-185ea241778d39c7"
+      ],
+      "entityNames": [
+        "Quadric"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+      "publisher": "quadric.ai"
     },
     {
       "id": "EV-8077605769c4d4eb",
@@ -7821,6 +8128,29 @@
       "lastSeen": "2026-09-15"
     },
     {
+      "id": "EN-d3c0a240ab92fda5",
+      "name": "Om AI联汇",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-235f08be851797db"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-multimodal",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-05",
+      "lastSeen": "2026-10-02"
+    },
+    {
       "id": "EN-a35b80cf9d171015",
       "name": "高通官宣",
       "entityType": "organization_candidate",
@@ -7941,6 +8271,30 @@
       "lastSeen": "2026-09-12"
     },
     {
+      "id": "EN-185ea241778d39c7",
+      "name": "Quadric",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-42335b1bae58c172"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-automotive_transportation",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-14",
+      "lastSeen": "2026-10-02"
+    },
+    {
       "id": "EN-1a47edcb80cc76dd",
       "name": "联想亮相阿里云栖大会",
       "entityType": "organization_candidate",
@@ -8003,6 +8357,7 @@
         "EV-375d04f7cc9746c6",
         "EV-5ea74d357e73366b",
         "EV-85506f9f86779a6d",
+        "EV-a1addb827a7ac17c",
         "EV-95385e7d45e69784",
         "EV-a89bf7c0c4203ce2",
         "EV-48075ca70a5458ec",
@@ -8010,7 +8365,9 @@
         "EV-79a0bbe8b8623b28",
         "EV-614fb5bb3cfc2519",
         "EV-59882383f82f215d",
+        "EV-f60bda3cfc54d5c0",
         "EV-18e3fa9303bdba4a",
+        "EV-3d5daffd1cb9521b",
         "EV-7311986c33501189",
         "EV-212aa5b375abf8a7",
         "EV-d5c00f302e1f808c",
@@ -8058,7 +8415,7 @@
         "EN-c70eca6b0f88f44d",
         "EN-d84c1d1c315bc2f8"
       ],
-      "firstSeen": "2026-03-12",
+      "firstSeen": "2026-01-28",
       "lastSeen": "2026-10-02"
     },
     {
@@ -8212,7 +8569,7 @@
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-12"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-e3ce9cc5efa9354c",
@@ -8279,6 +8636,7 @@
         "EV-c32dd87e1f72b09a",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
+        "EV-a1addb827a7ac17c",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
@@ -8313,6 +8671,9 @@
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
         "EV-68d5a02e5213b43c",
+        "EV-2edec0302b3e0626",
+        "EV-c503664bc5c24b10",
+        "EV-ee9a4433b4e7715e",
         "EV-688ef84a4024e075",
         "EV-4087ac533a9a3b3d",
         "EV-ee40b65cc5f85c36",
@@ -8886,7 +9247,11 @@
         "EV-6cb8979f92cf74ce",
         "EV-1891e6540ad2c1e0",
         "EV-4e4ae1578720e907",
+        "EV-cd2970524c27dffb",
+        "EV-ed73cd2c438a470d",
         "EV-ef1de880e4ef9f75",
+        "EV-3f979612b8a14b28",
+        "EV-81f20b7ee39e3e19",
         "EV-63f49f303a80a6a0",
         "EV-0e424af71cfe12f8",
         "EV-67804da6b04fdcc5",
@@ -9281,6 +9646,7 @@
       "eventIds": [
         "EV-66f24f6db71cc011",
         "EV-56c0d1d5b0c07971",
+        "EV-d3c5eb69eb9d397a",
         "EV-f282ab8740ff0096",
         "EV-2f0f3200b9800877",
         "EV-545bef6ff60cf3b2",
@@ -9420,7 +9786,7 @@
         "EN-45b5216872656eb3"
       ],
       "firstSeen": "2026-03-12",
-      "lastSeen": "2026-10-01"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-dd920a8cd166f486",
@@ -9491,6 +9857,7 @@
         "EV-27b69ea604475b72",
         "EV-8ea9e79f7edcb94f",
         "EV-f8c3a83d883c9b22",
+        "EV-622f5d9407564ae3",
         "EV-010d9a80536b3f11",
         "EV-5a1cfb0d6e47e552",
         "EV-4fe0a7f6c02e9df5",
@@ -9958,6 +10325,78 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-196189d55bd383f7",
+      "snapshotKey": "196189d55bd383f7",
+      "snapshotId": "HWS-c3a592781ef2a55e",
+      "eventId": "EV-42335b1bae58c172",
+      "eventIds": [
+        "EV-42335b1bae58c172"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Quadric",
+      "subject": "Quadric",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "30",
+          "unit": "$M",
+          "fact_ref": "HWF-f285c6cf0db3953e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-f285c6cf0db3953e",
+          "fact_type": "product",
+          "observed_at": "2026-01-14",
+          "subject_entity_id": "EN-185ea241778d39c7",
+          "subject_name": "Quadric",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "30",
+          "unit": "$M",
+          "source_quote": "Back to Press ReleasesQuadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise\nTripling product revenues, comprehensive developer tools, and scalable inference IP for vision and LLM workloads, position Quadric as the platform for on-device AI.\nJanuary 14, 2026\nBURLINGAME, Calif., Jan. 14, 2026 /PRNewswire/ -- Quadric®, the inference engine that powers on-device AI chips, today announced an oversubscribed $30 million Series C funding round, bringing total capital raised to $72 million.\nACCELERATE Fund, managed by BEENEXT Capital Management, led the round. Uncork Capital returned with one of the largest insider commitments through its opportunity fund, joined by insider Pear VC. New investors include Volta, Gentree, Wanxiang America, Pivotal, and Silicon Catalyst Ventures.\nThe funding comes as Quadric hits a revenue inflection: product revenues more than tripled in 2025 vs. 2024. Quadric is entering 2026 with accelerating design-win momentum, driven by growing adoption of the General Purpose NPU (GPNPU",
+          "event_refs": [
+            "EV-42335b1bae58c172"
+          ],
+          "claim_ref": "CL-65951d326bebf27c",
+          "source_refs": [
+            "SA-80c1ccc9c4d7e230"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+      "entityIds": [
+        "EN-185ea241778d39c7"
+      ]
+    },
     {
       "id": "HWC-fde7880cbf9629d0",
       "snapshotKey": "fde7880cbf9629d0",

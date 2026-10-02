@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,31 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-08-17",
-    "latest_disclosed_at": "2026-08-17",
+    "latest_disclosed_at": "2026-08-20",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
-      "angel"
+      "angel",
+      "multi_round"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-34069c35fbafefc6",
+        "canonical_entity_id": "",
+        "name": "数美万物"
+      },
       {
         "entity_id": "EN-4e65b9e12aaa5d0e",
         "canonical_entity_id": "",
@@ -85,6 +93,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-dd209deea283b9d7",
+        "funding_insight_id": "FI-2e0a12585d18ffca",
+        "event_ids": [
+          "EV-f5a5d68ac60d2565"
+        ],
+        "company_entity_id": "EN-34069c35fbafefc6",
+        "company_canonical_entity_id": "",
+        "company_name": "数美万物",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万美元"
+        },
+        "announced_at": "2026-08-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0dd42e7d7de8bcd9",
+            "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+            "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+            "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+            "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+            "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+          }
+        ]
+      },
       {
         "activity_id": "IA-97d1accf2ca3aa28",
         "funding_insight_id": "FI-526adfa75dc88836",
@@ -136,6 +184,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0dd42e7d7de8bcd9",
+        "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+        "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+        "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+        "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+        "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+      },
+      {
         "source_id": "FISRC-461dd8e08e175615",
         "source_url": "https://www.cls.cn/detail/2450542",
         "source_title": "BAI资本出手！AI穿戴智能硬件企业斯塔维科完成天使轮融资",
@@ -157,10 +213,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BAI资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "BAI资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：数美万物 · 多轮融资 · 2026-08-20 · 本轮领投 · 近5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0dd42e7d7de8bcd9"
+        },
         {
           "description": "融资来源记录：斯塔维科 · 天使轮 · 2026-08-17 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-461dd8e08e175615"
@@ -172,6 +232,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-0dd42e7d7de8bcd9",
+          "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+          "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+          "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+          "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+          "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+        },
         {
           "source_id": "FISRC-461dd8e08e175615",
           "source_url": "https://www.cls.cn/detail/2450542",

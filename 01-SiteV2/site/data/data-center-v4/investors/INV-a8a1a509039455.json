@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,25 +61,32 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-07-01",
+    "first_disclosed_at": "2026-02-24",
     "latest_disclosed_at": "2026-07-08",
     "role_counts": {
+      "co_lead": 1,
       "lead": 1,
       "participant": 1
     },
     "round_codes": [
       "series_c",
+      "series_e",
       "series_f"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-dfc0fdff7af68ed2",
+        "canonical_entity_id": "EN-dfc0fdff7af68ed2",
+        "name": "SambaNova"
+      },
       {
         "entity_id": "EN-6907a22fafe13a63",
         "canonical_entity_id": "",
@@ -172,6 +179,46 @@
             "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
           }
         ]
+      },
+      {
+        "activity_id": "IA-e5216f1d2214f6b1",
+        "funding_insight_id": "FI-cae0d45e071abebd",
+        "event_ids": [
+          "EV-63de2b6408efd796"
+        ],
+        "company_entity_id": "EN-dfc0fdff7af68ed2",
+        "company_canonical_entity_id": "EN-dfc0fdff7af68ed2",
+        "company_name": "SambaNova",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "E轮",
+        "amount_original": "more than $350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": 350000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 3.5 亿美元"
+        },
+        "announced_at": "2026-02-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d47a3aba63bc33dc",
+            "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+            "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+            "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+            "quote": "The oversubscribed Series E round was led by Vista Equity Partners and Cambium Capital",
+            "quote_hash": "e184c50545ebd9e4ac7084370ed9e15774022126d0b0d91f91c9f11bc2e5315a"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -190,6 +237,14 @@
         "source_content_hash": "80d971eac6d90be3",
         "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
         "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
+      },
+      {
+        "source_id": "FISRC-d47a3aba63bc33dc",
+        "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+        "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+        "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+        "quote": "The oversubscribed Series E round was led by Vista Equity Partners and Cambium Capital",
+        "quote_hash": "e184c50545ebd9e4ac7084370ed9e15774022126d0b0d91f91c9f11bc2e5315a"
       }
     ],
     "public_profile": {
@@ -260,6 +315,10 @@
         {
           "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮领投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b7537d2258bce6eb"
+        },
+        {
+          "description": "融资来源记录：SambaNova · E轮 · 2026-02-24 · 本轮联合领投 · more than $350M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d47a3aba63bc33dc"
         }
       ],
       "contacts": [
@@ -310,6 +369,14 @@
           "source_content_hash": "80d971eac6d90be3",
           "quote": "The equity round was led by Aramco Ventures, NVIDIA, Vista Equity Partners, General Catalyst, and Emergence Capital",
           "quote_hash": "3d35b0709e581b096c90c3035f742812e438ad1d1ef450f41d840c7f1493da52"
+        },
+        {
+          "source_id": "FISRC-d47a3aba63bc33dc",
+          "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
+          "source_title": "SambaNova 推出面向智能体 AI 的最快芯片，与 Intel 合作，并融资 $350M+",
+          "source_content_hash": "a8a674a909a941b6f4eda47c45eb48d08d2c01be3e8f4e2038eb18121f8d3c3f",
+          "quote": "The oversubscribed Series E round was led by Vista Equity Partners and Cambium Capital",
+          "quote_hash": "e184c50545ebd9e4ac7084370ed9e15774022126d0b0d91f91c9f11bc2e5315a"
         }
       ],
       "last_verified_at": "2026-09-26",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
@@ -72,11 +72,43 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [],
     "portfolio_companies": [],
     "activities": [
+      {
+        "activity_id": "IA-73e7742f1b14a9bd",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series C 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+            "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4127cfb0be48442d",
         "funding_insight_id": "FI-72df07926e3369ef",
@@ -112,6 +144,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+        "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
+      },
       {
         "source_id": "FISRC-4afc17abd0ce2781",
         "source_url": "https://sacra.com/c/crusoe/",
@@ -184,6 +224,10 @@
         {
           "description": "第三方融资资料将 Long Journey Ventures 列为 Crusoe 的知名历史投资方之一，并明确说该名单不属于 Series D 参与方。不能据此认定其参与 Crusoe 2026 年 Series F 或将该轮金额归属于 Long Journey。",
           "source_id": "FISRC-4afc17abd0ce2781"
+        },
+        {
+          "description": "融资来源记录：Cerebras Systems · 历史轮次未披露 · Series C 参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2c01dfb7ebd1357c"
         }
       ],
       "contacts": [
@@ -282,12 +326,28 @@
           "source_content_hash": "031d223859c249dd",
           "quote": "Notable investors beyond the Series D participants include Fidelity, Mubadala, Ribbit Capital, and Long Journey Ventures.",
           "quote_hash": "253edf90d0e9e4ee8916dbb3a27d6bdf86519572600a3a3ef41bdba815507644"
+        },
+        {
+          "source_id": "FISRC-2c01dfb7ebd1357c",
+          "source_url": "https://startupintros.com/orgs/cerebras-systems",
+          "source_title": "Cerebras Systems: Funding, Team & Investors",
+          "source_content_hash": "d841a55a66370963",
+          "quote": "Dec 1, 2016$60M Series C—Accel, Cota Capital, Factor Capital, FPV Fund, IVP, Long Journey Ventures, Matrix, PS Investments, ThirdLove, UpHonest Capital, Y Combinator, Joshua Schachter, Scott Banister, Tikhon BernstamAnnounced",
+          "quote_hash": "ff0138672275123ca5e4132b494ff782e6dce6649f431b5a1bba124e442a720c"
         }
       ],
       "last_verified_at": "2026-09-28"
     },
     "translations": {
       "zh-CN": {
+        "activities[0].role": {
+          "text": "Series C 参投",
+          "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        },
         "public_profile.facts[4].label": {
           "text": "Cyan Banister 过往经历",
           "source_hash": "67f894cea51679d48318c308ba9ec462b8e777b57d216564856eac51be346879",

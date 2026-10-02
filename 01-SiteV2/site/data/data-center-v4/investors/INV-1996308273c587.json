@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,30 +63,36 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "current_round_count": 7,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-08-13",
+    "first_disclosed_at": "2026-02-03",
     "latest_disclosed_at": "2026-09-28",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "series_a",
       "series_a_extension",
       "series_b",
       "series_c",
-      "series_e"
+      "series_e",
+      "series_h"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-2f4436342c46decc",
+        "canonical_entity_id": "",
+        "name": "Cerebras Systems"
+      },
       {
         "entity_id": "EN-4b6cef91ffb05303",
         "canonical_entity_id": "",
@@ -351,6 +357,78 @@
         ]
       },
       {
+        "activity_id": "IA-1466a8781b301353",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-51b0427643bffd15",
+            "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+            "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+            "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+            "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+            "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1f35b32f205312ab",
+        "funding_insight_id": "FI-bd9d3811bf597d1c",
+        "event_ids": [
+          "EV-6df993c01938fc9a"
+        ],
+        "company_entity_id": "EN-2f4436342c46decc",
+        "company_canonical_entity_id": "",
+        "company_name": "Cerebras Systems",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Venture Round 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2c01dfb7ebd1357c",
+            "source_url": "https://startupintros.com/orgs/cerebras-systems",
+            "source_title": "Cerebras Systems: Funding, Team & Investors",
+            "source_content_hash": "d841a55a66370963",
+            "quote": "Dec 19, 2016$25M Venture RoundBenchmark Capital—Announced",
+            "quote_hash": "d4dd70692c6a2ae6ba94ae493a5e044f6de7e1cafd85bae0f088379314c83d2b"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-f3bc324f9e7a7aee",
         "funding_insight_id": "FI-4b143304af694a92",
         "event_ids": [
@@ -432,6 +510,22 @@
         "source_content_hash": "a7c980dcd5f3e30f",
         "quote": "VC firm Benchmark led the initial round with participation from EQT Ventures. Both investors co-led an extension round.",
         "quote_hash": "557c28d549d52f257db995b878f3f971a3f9998a1eb87c980eb96262ec60107a"
+      },
+      {
+        "source_id": "FISRC-51b0427643bffd15",
+        "source_url": "https://www.cerebras.ai/press-release/cerebras-systems-raises-usd1-billion-series-h",
+        "source_title": "Cerebras 以 230 亿美元估值完成 10 亿美元 H 轮融资",
+        "source_content_hash": "4526b8c81e54bf50a3c9010b2e3a22eeb88ee3f74e319b7d371e44ed64273f6c",
+        "quote": "The round was led by Tiger Global, with participation from Benchmark, Fidelity Management & Research Company, Atreides Management, Alpha Wave Global, Altimeter, AMD, Coatue, and 1789 Capital, among others.",
+        "quote_hash": "6fa853ca8a2ca8d767eac96b3533bc97014ce36df65d1407383b7726c9629abc"
+      },
+      {
+        "source_id": "FISRC-2c01dfb7ebd1357c",
+        "source_url": "https://startupintros.com/orgs/cerebras-systems",
+        "source_title": "Cerebras Systems: Funding, Team & Investors",
+        "source_content_hash": "d841a55a66370963",
+        "quote": "Dec 19, 2016$25M Venture RoundBenchmark Capital—Announced",
+        "quote_hash": "d4dd70692c6a2ae6ba94ae493a5e044f6de7e1cafd85bae0f088379314c83d2b"
       },
       {
         "source_id": "FISRC-6ffdf43efe75ccde",
@@ -584,7 +678,15 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[7].role": {
+          "text": "Venture Round 参投",
+          "source_hash": "06c87ef49262ae10ee600994008f183c80d7e1cd9788cd80d3ef49509dceba0e",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
+        "activities[8].role": {
           "text": "Series B 联合领投",
           "source_hash": "df85403fc7ccc1dfc164ef363e563fceb9055deb495ed979d8fbb70df3719147",
           "provider": "deepseek",

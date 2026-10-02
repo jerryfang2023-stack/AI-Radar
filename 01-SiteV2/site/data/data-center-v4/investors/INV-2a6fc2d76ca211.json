@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -55,37 +55,52 @@
   "institution": {
     "id": "INV-2a6fc2d76ca211",
     "name": "华业天成",
-    "aliases": [],
+    "aliases": [
+      "华业天成资本"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 7,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 6,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
-    "china_market_activity_count": 5,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 6,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-02-14",
-    "latest_disclosed_at": "2026-08-12",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
       "co_lead": 1,
-      "participant": 4
+      "lead": 1,
+      "participant": 5
     },
     "round_codes": [
       "angel",
+      "multi_round",
       "seed",
       "seed_plus_plus",
       "series_b_plus"
     ],
     "portfolio_companies": [
       {
+        "entity_id": "EN-4b8de799d3cb1255",
+        "canonical_entity_id": "",
+        "name": "蜂巢互联"
+      },
+      {
         "entity_id": "EN-a3802b1f5a583189",
         "canonical_entity_id": "EN-a3802b1f5a583189",
         "name": "墨奇智能"
+      },
+      {
+        "entity_id": "EN-34069c35fbafefc6",
+        "canonical_entity_id": "",
+        "name": "数美万物"
       },
       {
         "entity_id": "EN-4731aa5b66658c7f",
@@ -104,6 +119,86 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2df6466799d28ffd",
+        "funding_insight_id": "FI-f3eb163aa24caf8a",
+        "event_ids": [
+          "EV-bc166d0f16140940"
+        ],
+        "company_entity_id": "EN-4b8de799d3cb1255",
+        "company_canonical_entity_id": "",
+        "company_name": "蜂巢互联",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "12亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "12 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d442164db5f81db",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+            "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+            "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+            "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+            "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4265bf559a8ecc16",
+        "funding_insight_id": "FI-2e0a12585d18ffca",
+        "event_ids": [
+          "EV-f5a5d68ac60d2565"
+        ],
+        "company_entity_id": "EN-34069c35fbafefc6",
+        "company_canonical_entity_id": "",
+        "company_name": "数美万物",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万美元"
+        },
+        "announced_at": "2026-08-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-0dd42e7d7de8bcd9",
+            "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+            "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+            "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+            "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+            "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+          }
+        ]
+      },
       {
         "activity_id": "IA-e6ed9a3b34a11c91",
         "funding_insight_id": "FI-42815b3fc014db68",
@@ -307,6 +402,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-6d442164db5f81db",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+        "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+        "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+        "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+        "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+      },
+      {
+        "source_id": "FISRC-0dd42e7d7de8bcd9",
+        "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+        "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+        "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+        "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+        "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+      },
+      {
         "source_id": "FISRC-4a456deffcbf4bfd",
         "source_url": "https://news.pedaily.cn/202608/567590.shtml",
         "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
@@ -407,16 +518,16 @@
           "source_id": "huaye_about"
         },
         {
+          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d442164db5f81db"
+        },
+        {
+          "description": "融资来源记录：数美万物 · 多轮融资 · 2026-08-20 · 本轮领投 · 近5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0dd42e7d7de8bcd9"
+        },
+        {
           "description": "融资来源记录：MemoraX AI · 种子++轮 · 2026-08-12 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4a456deffcbf4bfd"
-        },
-        {
-          "description": "融资来源记录：墨奇智能 · 天使轮 · 2026-07-09 · 本轮参投 · 10 亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-bea9d0be613bc1cd"
-        },
-        {
-          "description": "融资来源记录：MemoraX AI · 种子轮 · 2026-05-20 · 本轮联合领投 · 数千万人民币。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-924702999fc88d2f"
         }
       ],
       "contacts": [
@@ -460,28 +571,28 @@
           "quote_hash": "b6dbd92310190ecbf72594e17c35261364be01ab5f8ed8b250da4f8cbb0e8e2f"
         },
         {
+          "source_id": "FISRC-6d442164db5f81db",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+          "quote": "市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构",
+          "quote_hash": "8e2a0ec924978a9660aa96e5dc82fb338ddb5d989428766457f762706aa198a1"
+        },
+        {
+          "source_id": "FISRC-0dd42e7d7de8bcd9",
+          "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+          "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+          "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+          "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+          "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+        },
+        {
           "source_id": "FISRC-4a456deffcbf4bfd",
           "source_url": "https://news.pedaily.cn/202608/567590.shtml",
           "source_title": "「MemoraX AI」完成数亿元种子++轮融资，三个月连融3轮",
           "source_content_hash": "c26b4f6c5b757ce3",
           "quote": "本轮融资由 北洋海棠基金、尚势资本、仁爱资本联合领投，银杏谷资本跟投，华业天成、达泰资本 等老股东持续加码投资。",
           "quote_hash": "c940fe3b12e9e760642901ea669b9984b6b36816b863de7d64621d7344c07512"
-        },
-        {
-          "source_id": "FISRC-bea9d0be613bc1cd",
-          "source_url": "https://finance.sina.com.cn/roll/2026-07-09/doc-inihfazc5336299.shtml?froms=ggmp",
-          "source_title": "具身智能企业墨奇智能完成10亿元天使轮融资 - 新浪财经",
-          "source_content_hash": "311224a4dfb089df",
-          "quote": "蓝驰创投、君联资本、华业天成、高榕资本、中科创星、源码资本、光合创投、柏睿资本、58 产业基金等多家专业投资机构共同参与",
-          "quote_hash": "ec3f3255ca1ad3b762f10c8464560a301ec0efedbd9e312f027cac2f0749684b"
-        },
-        {
-          "source_id": "FISRC-924702999fc88d2f",
-          "source_url": "https://www.chinaventure.com.cn/news/116-20260520-391447.html",
-          "source_title": "「MemoraX AI」完成数千万人民币种子+轮融资",
-          "source_content_hash": "76bcd79d46511d45",
-          "quote": "本轮由中金资本、达泰资本、华业天成联合领投",
-          "quote_hash": "87dab2266ac0906c976ca534acc2aadbd10203242f22a09e359ab687abc46980"
         }
       ],
       "identity_status": "verified"

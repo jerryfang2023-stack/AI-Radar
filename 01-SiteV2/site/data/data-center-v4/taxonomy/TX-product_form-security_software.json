@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,6 +64,7 @@
       "EV-f0a666f5416e049f",
       "EV-75452672c9976d73",
       "EV-33053abbe1a60b38",
+      "EV-f36f5f7b24b2bfde",
       "EV-9b81b0dd09a046ab",
       "EV-2069f6a931b8c9d6",
       "EV-c84b6d7338f87990",
@@ -87,6 +88,7 @@
       "EN-befd0093486b775d",
       "EN-c0b0109d9439de57",
       "EN-c5f011f1169120f2",
+      "EN-d5dee8daa2eb5cc5",
       "EN-57b8b5990c299db8",
       "EN-73ef176d9f12809e",
       "EN-05cd4b807503b0f2",
@@ -106,7 +108,7 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2025-11-17",
-    "lastSeen": "2026-10-01"
+    "lastSeen": "2026-10-02"
   },
   "events": [
     {
@@ -1531,6 +1533,128 @@
       "products": [],
       "sourceUrl": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era",
       "publisher": "GitHub Blog AI"
+    },
+    {
+      "id": "EV-f36f5f7b24b2bfde",
+      "dataDate": "2026-10-02",
+      "date": "2026-08-03",
+      "updatedDate": "2026-08-03",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+      "originalTitle": "Zenity Raises $125 Million to Secure the Era of 1 Billion AI Agents",
+      "subject": "Zenity",
+      "action": "funding",
+      "object": "$125 million Series C",
+      "metrics": [
+        "$125 Million",
+        "1 Billion",
+        "$125 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d5dee8daa2eb5cc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-d5dee8daa2eb5cc5"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d5dee8daa2eb5cc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-d5dee8daa2eb5cc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-d5dee8daa2eb5cc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-d5dee8daa2eb5cc5"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-d5dee8daa2eb5cc5",
+        "EN-80d387ccb3289295",
+        "EN-96eebba49dbbf422"
+      ],
+      "entityNames": [
+        "Zenity",
+        "SoftBank",
+        "Intel"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+      "publisher": "zenity.io"
     },
     {
       "id": "EV-9b81b0dd09a046ab",
@@ -7244,6 +7368,29 @@
       "relatedEntityIds": [],
       "firstSeen": "2026-08-13",
       "lastSeen": "2026-08-18"
+    },
+    {
+      "id": "EN-d5dee8daa2eb5cc5",
+      "name": "Zenity",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b9d8b3582f12bdc7",
+        "EV-f36f5f7b24b2bfde"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-product_form-security_software"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-08-03",
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "EN-57b8b5990c299db8",

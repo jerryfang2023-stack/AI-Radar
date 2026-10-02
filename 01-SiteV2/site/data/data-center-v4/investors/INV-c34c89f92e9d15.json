@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-01-21",
+    "latest_disclosed_at": "2026-01-21",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "seed"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-ec418abaacc30a58",
+        "canonical_entity_id": "",
+        "name": "AheadComputing, Inc."
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-610b9deb2050e254",
+        "funding_insight_id": "FI-184c6532af326d6a",
+        "event_ids": [
+          "EV-4d9754466f03bf16"
+        ],
+        "company_entity_id": "EN-ec418abaacc30a58",
+        "company_canonical_entity_id": "",
+        "company_name": "AheadComputing, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$30M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-71f6a0b77ac7d607",
+            "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
+            "source_title": "AheadComputing Inc. 额外融资3000万美元 Seed2 轮，旨在重塑 CPU 架构",
+            "source_content_hash": "8998c2f98329cefde978c1e75b66e3332758f5b9206e1b46ee846cc9a8bf0f43",
+            "quote": "with additional participation from Corner, Trousdale Ventures, EPIQ, MESH, and Stata",
+            "quote_hash": "f069689efe7f2c1fd0553c3cadf3625892b2a08052c4a60f640d5452e377a76a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-396b76469cca2222",
         "funding_insight_id": "FI-032ffe6e999827b8",
@@ -111,6 +160,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-71f6a0b77ac7d607",
+        "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
+        "source_title": "AheadComputing Inc. 额外融资3000万美元 Seed2 轮，旨在重塑 CPU 架构",
+        "source_content_hash": "8998c2f98329cefde978c1e75b66e3332758f5b9206e1b46ee846cc9a8bf0f43",
+        "quote": "with additional participation from Corner, Trousdale Ventures, EPIQ, MESH, and Stata",
+        "quote_hash": "f069689efe7f2c1fd0553c3cadf3625892b2a08052c4a60f640d5452e377a76a"
+      },
       {
         "source_id": "FISRC-f6b16eaba393b2b3",
         "source_url": "http://impulsespace.com/updates/impulse-space-secures-300-million-dollar-series-c-to-accelerate-the-future-of-in-space-mobility",
@@ -147,6 +204,10 @@
         {
           "description": "官网展示其在可持续材料、低糖消费品等领域的组合案例，包括 Ecovative、Solugen、Super Coffee 与 Reel；该列表为官网精选案例。",
           "source_id": "trousdale_about"
+        },
+        {
+          "description": "融资来源记录：AheadComputing, Inc. · 种子轮 · 2026-01-21 · 本轮参投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-71f6a0b77ac7d607"
         }
       ],
       "contacts": [
@@ -166,6 +227,14 @@
           "source_content_hash": "39113316b8566bb7f12f88c5c82fb55334300d24696124cd94d8ee9894eb3fae",
           "quote": "Our mission as a global venture capital firm is to contribute to the betterment of the world by working with founders in building exceptional companies. Trousdale Ventures invests in mission-driven companies that have the potential to be a catalyst for positive change. Its sectors include Space + Mobility, Climate Tech, Deep Tech, and Consumer.",
           "quote_hash": "49d2778948105f0735f21f69d73a72d1692573284aa133898839feae811f97cf"
+        },
+        {
+          "source_id": "FISRC-71f6a0b77ac7d607",
+          "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
+          "source_title": "AheadComputing Inc. 额外融资3000万美元 Seed2 轮，旨在重塑 CPU 架构",
+          "source_content_hash": "8998c2f98329cefde978c1e75b66e3332758f5b9206e1b46ee846cc9a8bf0f43",
+          "quote": "with additional participation from Corner, Trousdale Ventures, EPIQ, MESH, and Stata",
+          "quote_hash": "f069689efe7f2c1fd0553c3cadf3625892b2a08052c4a60f640d5452e377a76a"
         }
       ],
       "last_verified_at": "2026-09-25",

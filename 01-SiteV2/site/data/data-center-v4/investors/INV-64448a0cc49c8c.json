@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,27 +61,34 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 3,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 6,
+    "portfolio_company_count": 4,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 3,
     "first_disclosed_at": "2026-02-11",
-    "latest_disclosed_at": "2026-05-07",
+    "latest_disclosed_at": "2026-08-20",
     "role_counts": {
-      "historical_or_ambiguous": 5,
+      "historical_or_ambiguous": 6,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "multi_round",
       "pre_series_a",
       "series_b",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-34069c35fbafefc6",
+        "canonical_entity_id": "",
+        "name": "数美万物"
+      },
       {
         "entity_id": "EN-39ba5f9dcab4e98a",
         "canonical_entity_id": "EN-39ba5f9dcab4e98a",
@@ -99,6 +106,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-3f89bc3b991fae05",
+        "funding_insight_id": "FI-2e0a12585d18ffca",
+        "event_ids": [
+          "EV-f5a5d68ac60d2565"
+        ],
+        "company_entity_id": "EN-34069c35fbafefc6",
+        "company_canonical_entity_id": "",
+        "company_name": "数美万物",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万美元"
+        },
+        "announced_at": "2026-08-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0dd42e7d7de8bcd9",
+            "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+            "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+            "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+            "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+            "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3577b62c60de59f7",
         "funding_insight_id": "FI-f5103149f04ea6ed",
@@ -293,6 +340,38 @@
         ]
       },
       {
+        "activity_id": "IA-7ca260fc20cb9d75",
+        "funding_insight_id": "FI-2e0a12585d18ffca",
+        "event_ids": [
+          "EV-f5a5d68ac60d2565"
+        ],
+        "company_entity_id": "EN-34069c35fbafefc6",
+        "company_canonical_entity_id": "",
+        "company_name": "数美万物",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-eff56a0dccad1e36",
+            "source_url": "https://www.sohu.com/a/848831543_122074763",
+            "source_title": "速递｜张一鸣和王兴又联手投了新项目，抖音创始成员，估值已超1.5亿美元",
+            "source_content_hash": "7b66c4509a33a1bf",
+            "quote": "本轮融资由美团龙珠领投，锦秋基金跟投，老股东红杉中国与IDG资本继续支持。",
+            "quote_hash": "daeb4a1dbe758efc8a14910c5a4c9cc36546d0c2b3b25d03af08421a50063b3a"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-9290cb0664381533",
         "funding_insight_id": "FI-66e7dd713fc6bab5",
         "event_ids": [
@@ -394,6 +473,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0dd42e7d7de8bcd9",
+        "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+        "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+        "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+        "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+        "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+      },
+      {
         "source_id": "FISRC-c268e82669700804",
         "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
         "source_title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
@@ -440,6 +527,14 @@
         "source_content_hash": "c7ad77c1a9165c73",
         "quote": "从融资节奏看，地瓜机器人呈现出罕见的资本加速度： · 2025年：完成1亿美元A轮，高瓴创投、五源资本、线性资本等入场； · 2026年3月：完成1.2亿美元B1轮，滴滴、美团龙珠、北汽产投等加入； · 2026年4月：完成1.5亿美元B2轮，Prosperity7、云锋基金、远景科技等跟投； · 2026年9月：完成4亿美元C轮，未来资产领投。",
         "quote_hash": "3784ba81aac1a65aac464e06a7054d058416e2c96b64c8010d52796e61728668"
+      },
+      {
+        "source_id": "FISRC-eff56a0dccad1e36",
+        "source_url": "https://www.sohu.com/a/848831543_122074763",
+        "source_title": "速递｜张一鸣和王兴又联手投了新项目，抖音创始成员，估值已超1.5亿美元",
+        "source_content_hash": "7b66c4509a33a1bf",
+        "quote": "本轮融资由美团龙珠领投，锦秋基金跟投，老股东红杉中国与IDG资本继续支持。",
+        "quote_hash": "daeb4a1dbe758efc8a14910c5a4c9cc36546d0c2b3b25d03af08421a50063b3a"
       },
       {
         "source_id": "FISRC-7a614400d44a7041",
@@ -516,12 +611,12 @@
           "source_id": "dragonball_profile"
         },
         {
-          "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-05-07 · 本轮领投；A轮参投 · 约20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-c268e82669700804"
+          "description": "融资来源记录：数美万物 · 多轮融资 · 2026-08-20 · 本轮参投 · 近5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0dd42e7d7de8bcd9"
         },
         {
-          "description": "融资来源记录：Moonshot AI · 历史轮次未披露 · 2026-05-02 · 2026年5月20亿美元融资领投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-773362f4e07cd598"
+          "description": "融资来源记录：Moonshot AI · 轮次未披露 · 2026-05-07 · 本轮领投；A轮参投 · 约20亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c268e82669700804"
         }
       ],
       "contacts": [
@@ -545,6 +640,14 @@
           "quote_hash": "49a01cb1a1136125fbe7ded04a706db70da8685015abcb0ab75ca2bc37179ebc"
         },
         {
+          "source_id": "FISRC-0dd42e7d7de8bcd9",
+          "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+          "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+          "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+          "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+          "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+        },
+        {
           "source_id": "FISRC-c268e82669700804",
           "source_url": "https://www.nbd.com.cn/articles/2026-05-07/4381686.html",
           "source_title": "月之暗面完成约20亿美元融资 投后估值超过200亿美元",
@@ -559,19 +662,23 @@
           "source_content_hash": "eeb091dd8db852e6",
           "quote": "2023年7月A轮，美团龙珠、襄禾资本、蓝驰创投",
           "quote_hash": "ce983bb92940dbb6f14d4981d97fbc6b7a87dc7e3c877c0706e8b68444455643"
-        },
-        {
-          "source_id": "FISRC-773362f4e07cd598",
-          "source_url": "https://news.pedaily.cn/202607/566986.shtml",
-          "source_title": "月之暗面完成超35亿美元F轮融资",
-          "source_content_hash": "4d700156140038e7",
-          "quote": "今年5月，公司刚完成20亿美元融资，由美团龙珠领投，中国移动、CPE 源峰等机构参投",
-          "quote_hash": "dcee290bad1bf3693aeb96575e5c165e1082ae7c245dd86ccef1ab0909600b8b"
         }
       ],
       "last_verified_at": "2026-09-25",
       "profile_type": "organization",
       "identity_status": "verified"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[6].role": {
+          "text": "Pre-A轮领投",
+          "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

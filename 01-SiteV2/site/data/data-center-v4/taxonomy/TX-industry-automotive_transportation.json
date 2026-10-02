@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -125,6 +125,8 @@
       "EV-371bc68f72326c02",
       "EV-794f0a86004da0c9",
       "EV-df37e9341b5c7f04",
+      "EV-b9f933fceca9085b",
+      "EV-42335b1bae58c172",
       "EV-d2f89de76c27be7f",
       "EV-cafe435ddd007821",
       "EV-9dab7fa55702e561",
@@ -186,6 +188,8 @@
       "EN-8b332ded81dc8d3a",
       "EN-a6e5382c05dd0d16",
       "EN-2c348893efb2316e",
+      "EN-be0e15a9c31220b3",
+      "EN-185ea241778d39c7",
       "EN-b9b408a52b47a660",
       "EN-9044b6bac0e6d022"
     ],
@@ -193,7 +197,7 @@
     "hardwareIds": [
       "HW-ceb55d9bc637c1d3"
     ],
-    "firstSeen": "2026-01-26",
+    "firstSeen": "2026-01-14",
     "lastSeen": "2026-10-02"
   },
   "events": [
@@ -32660,6 +32664,308 @@
       "publisher": "创业邦"
     },
     {
+      "id": "EV-b9f933fceca9085b",
+      "dataDate": "2026-10-02",
+      "date": "2026-01-20",
+      "updatedDate": "2026-01-20",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Ethernovia 完成超 9000 万美元 B 轮融资，以扩展前沿自动驾驶与物理 AI 网络芯片",
+      "originalTitle": "Ethernovia Raises Over $90 Million Series B to Scale Leading-Edge Autonomy and Physical AI Networking Chips",
+      "subject": "Ethernovia",
+      "action": "funding",
+      "object": "over $90 million Series B",
+      "metrics": [
+        "$90 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-be0e15a9c31220b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-be0e15a9c31220b3"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-be0e15a9c31220b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-be0e15a9c31220b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-be0e15a9c31220b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-be0e15a9c31220b3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-be0e15a9c31220b3"
+      ],
+      "entityNames": [
+        "Ethernovia"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.ethernovia.com/news/ethernovia-raises-over-90-million-series-b-to-scale-leading-edge-autonomy-and-physical-ai-networking-chips/",
+      "publisher": "www.ethernovia.com"
+    },
+    {
+      "id": "EV-42335b1bae58c172",
+      "dataDate": "2026-10-02",
+      "date": "2026-01-14",
+      "updatedDate": "2026-01-14",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "面向端侧AI芯片的推理引擎Quadric在边缘LLM、汽车和企业领域设计订单加速增长之际完成3000万美元C轮融资",
+      "originalTitle": "Quadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise",
+      "subject": "Quadric",
+      "action": "funding",
+      "object": "$30M Series C",
+      "metrics": [
+        "$30M",
+        "$30 million",
+        "$72 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "chip_accelerator",
+            "name": "芯片与加速器",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [
+          {
+            "dimensionId": "deployment_model",
+            "dimensionName": "部署形态",
+            "id": "edge_device",
+            "name": "边缘与端侧",
+            "entityIds": [
+              "EN-185ea241778d39c7"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "chip_accelerator",
+          "name": "芯片与加速器",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "deployment_model",
+          "dimensionName": "部署形态",
+          "id": "edge_device",
+          "name": "边缘与端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-185ea241778d39c7"
+      ],
+      "entityNames": [
+        "Quadric"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+      "publisher": "quadric.ai"
+    },
+    {
       "id": "EV-d2f89de76c27be7f",
       "dataDate": "2026-09-20",
       "date": "2026-09-20",
@@ -34353,6 +34659,7 @@
         "EV-c32dd87e1f72b09a",
         "EV-68bb3d5cb4bbd61b",
         "EV-b382525eb51777b9",
+        "EV-a1addb827a7ac17c",
         "EV-b231e1a452a7c74a",
         "EV-c6d84982982597aa",
         "EV-181cd28d97c4e61d",
@@ -34387,6 +34694,9 @@
         "EV-ef1de880e4ef9f75",
         "EV-18e3fa9303bdba4a",
         "EV-68d5a02e5213b43c",
+        "EV-2edec0302b3e0626",
+        "EV-c503664bc5c24b10",
+        "EV-ee9a4433b4e7715e",
         "EV-688ef84a4024e075",
         "EV-4087ac533a9a3b3d",
         "EV-ee40b65cc5f85c36",
@@ -35295,6 +35605,7 @@
         "canonical"
       ],
       "eventIds": [
+        "EV-a1addb827a7ac17c",
         "EV-dcbe916c6138e5cb",
         "EV-7f3298069258b3ea",
         "EV-a00763037a94d512",
@@ -35938,6 +36249,52 @@
       "lastSeen": "2026-10-02"
     },
     {
+      "id": "EN-be0e15a9c31220b3",
+      "name": "Ethernovia",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-b9f933fceca9085b"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-automotive_transportation",
+        "TX-technology-embodied_ai"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-20",
+      "lastSeen": "2026-10-02"
+    },
+    {
+      "id": "EN-185ea241778d39c7",
+      "name": "Quadric",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-42335b1bae58c172"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-industry-automotive_transportation",
+        "TX-product_form-chip_accelerator",
+        "TX-technology-on_device",
+        "TX-deployment_model-edge_device"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-01-14",
+      "lastSeen": "2026-10-02"
+    },
+    {
       "id": "EN-b9b408a52b47a660",
       "name": "Major organizations",
       "entityType": "organization_candidate",
@@ -36224,6 +36581,78 @@
       "entityIds": [
         "EN-f76a8103e49bcc36",
         "EN-8d4321d936320802"
+      ]
+    },
+    {
+      "id": "HWC-196189d55bd383f7",
+      "snapshotKey": "196189d55bd383f7",
+      "snapshotId": "HWS-c3a592781ef2a55e",
+      "eventId": "EV-42335b1bae58c172",
+      "eventIds": [
+        "EV-42335b1bae58c172"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Quadric",
+      "subject": "Quadric",
+      "productNames": [],
+      "hardwareType": "ai_accelerator",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "30",
+          "unit": "$M",
+          "fact_ref": "HWF-f285c6cf0db3953e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-f285c6cf0db3953e",
+          "fact_type": "product",
+          "observed_at": "2026-01-14",
+          "subject_entity_id": "EN-185ea241778d39c7",
+          "subject_name": "Quadric",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "ai_accelerator",
+          "metric_value": "30",
+          "unit": "$M",
+          "source_quote": "Back to Press ReleasesQuadric, Inference Engine for On-Device AI Chips, Raises $30M Series C as Design Wins Accelerate Across Edge LLMs, Automotive, and Enterprise\nTripling product revenues, comprehensive developer tools, and scalable inference IP for vision and LLM workloads, position Quadric as the platform for on-device AI.\nJanuary 14, 2026\nBURLINGAME, Calif., Jan. 14, 2026 /PRNewswire/ -- Quadric®, the inference engine that powers on-device AI chips, today announced an oversubscribed $30 million Series C funding round, bringing total capital raised to $72 million.\nACCELERATE Fund, managed by BEENEXT Capital Management, led the round. Uncork Capital returned with one of the largest insider commitments through its opportunity fund, joined by insider Pear VC. New investors include Volta, Gentree, Wanxiang America, Pivotal, and Silicon Catalyst Ventures.\nThe funding comes as Quadric hits a revenue inflection: product revenues more than tripled in 2025 vs. 2024. Quadric is entering 2026 with accelerating design-win momentum, driven by growing adoption of the General Purpose NPU (GPNPU",
+          "event_refs": [
+            "EV-42335b1bae58c172"
+          ],
+          "claim_ref": "CL-65951d326bebf27c",
+          "source_refs": [
+            "SA-80c1ccc9c4d7e230"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "on_device",
+          "name": "端侧",
+          "entityIds": [
+            "EN-185ea241778d39c7"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
+      "entityIds": [
+        "EN-185ea241778d39c7"
       ]
     },
     {

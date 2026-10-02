@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-24",
+    "first_disclosed_at": "2026-01-22",
     "latest_disclosed_at": "2026-06-24",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "pre_seed",
       "seed"
     ],
     "portfolio_companies": [
@@ -82,6 +83,11 @@
         "entity_id": "EN-e23228440ca5340f",
         "canonical_entity_id": "",
         "name": "Seltz"
+      },
+      {
+        "entity_id": "EN-91d1e715d6886f6b",
+        "canonical_entity_id": "",
+        "name": "Sparkli"
       }
     ],
     "activities": [
@@ -125,6 +131,46 @@
             "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
           }
         ]
+      },
+      {
+        "activity_id": "IA-18c26b7a1e417b1f",
+        "funding_insight_id": "FI-7e5be9d6c6299a04",
+        "event_ids": [
+          "EV-3f979612b8a14b28"
+        ],
+        "company_entity_id": "EN-91d1e715d6886f6b",
+        "company_canonical_entity_id": "",
+        "company_name": "Sparkli",
+        "round": "预种子轮",
+        "round_code": "pre_seed",
+        "round_original": "预种子轮",
+        "amount_original": "5 million USD",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 5000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "500 万美元"
+        },
+        "announced_at": "2026-01-22",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-20a83c87c0b64e7f",
+            "source_url": "https://www.trendingtopics.eu/sparkli-former-google-trio-raises-5-million-for-child-friendly-ai-learning-platform/",
+            "source_title": "Sparkli：前谷歌三人组为儿童友好型AI学习平台融资500万美元",
+            "source_content_hash": "c24e7de0cd5898cdfbbf52a86093388ddec080752cf00de1d1c8ad3a3b68454b",
+            "quote": "The pre-seed financing round is led by Founderful, with participation from Arc Investors and funding from Innosuisse.",
+            "quote_hash": "64d5a3036f53bc29fdfd92c24b63b24e0524672511020668c1724c7fec3f631c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -135,6 +181,14 @@
         "source_content_hash": "4affcb58ccdfce57",
         "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures",
         "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
+      },
+      {
+        "source_id": "FISRC-20a83c87c0b64e7f",
+        "source_url": "https://www.trendingtopics.eu/sparkli-former-google-trio-raises-5-million-for-child-friendly-ai-learning-platform/",
+        "source_title": "Sparkli：前谷歌三人组为儿童友好型AI学习平台融资500万美元",
+        "source_content_hash": "c24e7de0cd5898cdfbbf52a86093388ddec080752cf00de1d1c8ad3a3b68454b",
+        "quote": "The pre-seed financing round is led by Founderful, with participation from Arc Investors and funding from Innosuisse.",
+        "quote_hash": "64d5a3036f53bc29fdfd92c24b63b24e0524672511020668c1724c7fec3f631c"
       }
     ],
     "public_profile": {
@@ -149,6 +203,10 @@
         {
           "description": "融资来源记录：Seltz · 种子轮 · 2026-06-24 · 本轮参投 · $12.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-05007e2b6b43ffda"
+        },
+        {
+          "description": "融资来源记录：Sparkli · 预种子轮 · 2026-01-22 · 本轮参投 · 5 million USD。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-20a83c87c0b64e7f"
         }
       ],
       "contacts": [],
@@ -160,6 +218,14 @@
           "source_content_hash": "4affcb58ccdfce57",
           "quote": "Also participating were Italian Founders Fund, Future Back Ventures, futurepresent, Arc Investors, Vento Ventures, Mango Capital, 2100 Ventures and United Ventures",
           "quote_hash": "9317d27dcd44755a08a62438a5ebbfd6628ad5af27501300e72473c6cac0a332"
+        },
+        {
+          "source_id": "FISRC-20a83c87c0b64e7f",
+          "source_url": "https://www.trendingtopics.eu/sparkli-former-google-trio-raises-5-million-for-child-friendly-ai-learning-platform/",
+          "source_title": "Sparkli：前谷歌三人组为儿童友好型AI学习平台融资500万美元",
+          "source_content_hash": "c24e7de0cd5898cdfbbf52a86093388ddec080752cf00de1d1c8ad3a3b68454b",
+          "quote": "The pre-seed financing round is led by Founderful, with participation from Arc Investors and funding from Innosuisse.",
+          "quote_hash": "64d5a3036f53bc29fdfd92c24b63b24e0524672511020668c1724c7fec3f631c"
         }
       ],
       "last_verified_at": "2026-09-25"

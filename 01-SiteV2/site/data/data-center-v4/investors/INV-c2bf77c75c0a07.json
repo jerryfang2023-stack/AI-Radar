@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,30 +61,41 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 3,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-01-12",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
-      "co_lead": 1,
-      "participant": 2
+      "co_lead": 2,
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
       "series_a_plus_plus",
-      "series_c"
+      "series_c",
+      "series_c1"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-c5146e8a5659ab7e",
         "canonical_entity_id": "",
         "name": "地瓜机器人"
+      },
+      {
+        "entity_id": "EN-4b8de799d3cb1255",
+        "canonical_entity_id": "",
+        "name": "蜂巢互联"
+      },
+      {
+        "entity_id": "EN-9815a13d3f13bbc6",
+        "canonical_entity_id": "",
+        "name": "影目INMO"
       },
       {
         "entity_id": "EN-8dc72a4672894e0f",
@@ -139,6 +150,46 @@
         ]
       },
       {
+        "activity_id": "IA-2d6feac97412a53e",
+        "funding_insight_id": "FI-f3eb163aa24caf8a",
+        "event_ids": [
+          "EV-bc166d0f16140940"
+        ],
+        "company_entity_id": "EN-4b8de799d3cb1255",
+        "company_canonical_entity_id": "",
+        "company_name": "蜂巢互联",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "12亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 1200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "12 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d442164db5f81db",
+            "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+            "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+            "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+            "quote": "国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资",
+            "quote_hash": "35ae44ccdff618ec98c46559a29250db0bd4e23281fdb1042ebad42b9f0efddb"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-c8a4c1b53659e2e9",
         "funding_insight_id": "FI-60f3b8be148ee817",
         "event_ids": [
@@ -175,6 +226,54 @@
             "source_content_hash": "f1ce876ef35c247587d664660c57d06e4a87fe526a44ba7dd66e7b39945922bb",
             "quote": "投资方：深创投、南山战新投、老股东火火兔",
             "quote_hash": "6f02a45cb65932eccb5cb91b23bf234a00d2b7a396c799776ff16dcfebac7751"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4cac638e949fc457",
+        "funding_insight_id": "FI-d8defc8493708ea9",
+        "event_ids": [
+          "EV-64b4b13e6fdcbedc"
+        ],
+        "company_entity_id": "EN-9815a13d3f13bbc6",
+        "company_canonical_entity_id": "",
+        "company_name": "影目INMO",
+        "round": "C1轮",
+        "round_code": "series_c1",
+        "round_original": "C1轮",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-01-15",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-923328c723032ab6",
+            "source_url": "https://m.sohu.com/a/976239041_116132",
+            "source_title": "一年3轮，影目INMO完成C1轮融资｜独家",
+            "source_content_hash": "3a8ec6845192d1f3411ce03034c5d856f03c71d8d16741826916c77959f2d879",
+            "quote": "本轮由成都科创投、南山战新投、普丰资本共同参与投资",
+            "quote_hash": "87bc3f7afdde2ae865ff31272c727ce4938d160b7d1975085d370e167f9d175b"
+          },
+          {
+            "source_id": "FISRC-7237685b19c66a17",
+            "source_url": "https://news.qq.com/rain/a/20260115A0640K00",
+            "source_title": "一年三轮融资，影目INMO凭什么成为“AI手机替代者”的头号玩家？_腾讯新闻",
+            "source_content_hash": "2412efb2600397c8",
+            "quote": "此次C1轮融资由成都科创投、南山战新投和普丰资本联合领投",
+            "quote_hash": "20a921e20bbe4b182ade4490f8389fd2b6815e28116fbde15e872d552a640828"
           }
         ]
       },
@@ -231,12 +330,36 @@
         "quote_hash": "db6615f0bc6be64adc00905e8397a7987c5404414dc230c81d8ff62eff831a12"
       },
       {
+        "source_id": "FISRC-6d442164db5f81db",
+        "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+        "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+        "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+        "quote": "国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资",
+        "quote_hash": "35ae44ccdff618ec98c46559a29250db0bd4e23281fdb1042ebad42b9f0efddb"
+      },
+      {
         "source_id": "FISRC-d7c96804962827cf",
         "source_url": "https://www.36kr.com/p/3654915542130816",
         "source_title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
         "source_content_hash": "f1ce876ef35c247587d664660c57d06e4a87fe526a44ba7dd66e7b39945922bb",
         "quote": "投资方：深创投、南山战新投、老股东火火兔",
         "quote_hash": "6f02a45cb65932eccb5cb91b23bf234a00d2b7a396c799776ff16dcfebac7751"
+      },
+      {
+        "source_id": "FISRC-923328c723032ab6",
+        "source_url": "https://m.sohu.com/a/976239041_116132",
+        "source_title": "一年3轮，影目INMO完成C1轮融资｜独家",
+        "source_content_hash": "3a8ec6845192d1f3411ce03034c5d856f03c71d8d16741826916c77959f2d879",
+        "quote": "本轮由成都科创投、南山战新投、普丰资本共同参与投资",
+        "quote_hash": "87bc3f7afdde2ae865ff31272c727ce4938d160b7d1975085d370e167f9d175b"
+      },
+      {
+        "source_id": "FISRC-7237685b19c66a17",
+        "source_url": "https://news.qq.com/rain/a/20260115A0640K00",
+        "source_title": "一年三轮融资，影目INMO凭什么成为“AI手机替代者”的头号玩家？_腾讯新闻",
+        "source_content_hash": "2412efb2600397c8",
+        "quote": "此次C1轮融资由成都科创投、南山战新投和普丰资本联合领投",
+        "quote_hash": "20a921e20bbe4b182ade4490f8389fd2b6815e28116fbde15e872d552a640828"
       },
       {
         "source_id": "FISRC-449b969616ed1e95",
@@ -261,12 +384,12 @@
           "source_id": "FISRC-517ef1b31eac6dd3"
         },
         {
-          "description": "融资来源记录：FoloToy · 多轮融资 · 2026-01-30 · 本轮联合领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d7c96804962827cf"
+          "description": "融资来源记录：蜂巢互联 · 多轮融资 · 2026-08-26 · 本轮参投 · 12亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d442164db5f81db"
         },
         {
-          "description": "融资来源记录：自变量机器人 · A++轮 · 2026-01-12 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-449b969616ed1e95"
+          "description": "融资来源记录：FoloToy · 多轮融资 · 2026-01-30 · 本轮联合领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d7c96804962827cf"
         }
       ],
       "contacts": [],
@@ -280,20 +403,20 @@
           "quote_hash": "db6615f0bc6be64adc00905e8397a7987c5404414dc230c81d8ff62eff831a12"
         },
         {
+          "source_id": "FISRC-6d442164db5f81db",
+          "source_url": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+          "source_title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+          "source_content_hash": "8c7fd7d385a63c61bc0e66648e06aff003e8717f8159bdd06bac1dc35ff1be53",
+          "quote": "国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资",
+          "quote_hash": "35ae44ccdff618ec98c46559a29250db0bd4e23281fdb1042ebad42b9f0efddb"
+        },
+        {
           "source_id": "FISRC-d7c96804962827cf",
           "source_url": "https://www.36kr.com/p/3654915542130816",
           "source_title": "一家AI玩具公司获数千万元融资，核心产品销量翻五倍｜硬氪首发-36氪",
           "source_content_hash": "f1ce876ef35c247587d664660c57d06e4a87fe526a44ba7dd66e7b39945922bb",
           "quote": "投资方：深创投、南山战新投、老股东火火兔",
           "quote_hash": "6f02a45cb65932eccb5cb91b23bf234a00d2b7a396c799776ff16dcfebac7751"
-        },
-        {
-          "source_id": "FISRC-449b969616ed1e95",
-          "source_url": "https://www.36kr.com/p/3636080421586182",
-          "source_title": "具身智能开年最大融资，字节红杉领投10亿-36氪",
-          "source_content_hash": "abef77aff9b6b68f",
-          "quote": "这轮融资由字节跳动、红杉中国领投，北京信息产业发展基金、深创投、南山战新投、锡创投等顶级机构与多元地方平台联合参与。",
-          "quote_hash": "2e2b6fbe0aae04e97855fa8f931a0f401d0a69c53851e388313a7896ddefb23e"
         }
       ],
       "last_verified_at": "2026-09-25"

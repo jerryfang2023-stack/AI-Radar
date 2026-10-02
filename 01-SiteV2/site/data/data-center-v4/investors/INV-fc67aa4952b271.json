@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +72,7 @@
     "first_disclosed_at": "2026-03-12",
     "latest_disclosed_at": "2026-06-11",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "other_current_round": 1,
       "participant": 1
     },
@@ -171,6 +172,38 @@
             "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-84944fba8a8a8893",
+        "funding_insight_id": "FI-184c6532af326d6a",
+        "event_ids": [
+          "EV-4d9754466f03bf16"
+        ],
+        "company_entity_id": "EN-ec418abaacc30a58",
+        "company_canonical_entity_id": "",
+        "company_name": "AheadComputing, Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-b57e758a492553d2",
+            "source_url": "https://startupintros.com/orgs/aheadcomputing",
+            "source_title": "AheadComputing: Funding, Team & Investors",
+            "source_content_hash": "4cd0c2bf6161fa55",
+            "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+            "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -189,6 +222,14 @@
         "source_content_hash": "adc0cc9ffe3c9dd0",
         "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
         "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
+      },
+      {
+        "source_id": "FISRC-b57e758a492553d2",
+        "source_url": "https://startupintros.com/orgs/aheadcomputing",
+        "source_title": "AheadComputing: Funding, Team & Investors",
+        "source_content_hash": "4cd0c2bf6161fa55",
+        "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+        "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
       }
     ],
     "public_profile": {
@@ -220,6 +261,10 @@
         {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮个人投资者 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c35525e379488bf"
+        },
+        {
+          "description": "融资来源记录：AheadComputing, Inc. · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b57e758a492553d2"
         }
       ],
       "contacts": [
@@ -303,6 +348,14 @@
           "source_content_hash": "adc0cc9ffe3c9dd0",
           "quote": "individual investors including Jeff Bezos, Mark Cuban, Eric Schmidt, and Tim Berners-Lee",
           "quote_hash": "60f42c380f06d6bfad4ffb0b92dfbc7d978e62e09c5c80452af8d9b4d7fea76a"
+        },
+        {
+          "source_id": "FISRC-b57e758a492553d2",
+          "source_url": "https://startupintros.com/orgs/aheadcomputing",
+          "source_title": "AheadComputing: Funding, Team & Investors",
+          "source_content_hash": "4cd0c2bf6161fa55",
+          "quote": "Eclipse Ventures, K2 Global, Jeff Bezos, JIM Keller, Epiq Capital Group, Fundomo, Maverick Capital",
+          "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
         }
       ],
       "last_verified_at": "2026-09-26",

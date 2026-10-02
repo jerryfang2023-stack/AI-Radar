@@ -1,0 +1,187 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-50b90accdfefda89",
+    "name": "Maria Deutscher Taalas",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-2edec0302b3e0626"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-02-19",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-2edec0302b3e0626"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-2edec0302b3e0626",
+        "dataDate": "2026-10-02",
+        "date": "2026-02-19",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-15ea2fa417bd8597"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-15ea2fa417bd8597",
+          "EN-50b90accdfefda89",
+          "EN-8d4321d936320802"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-f70a23daf7ba0848",
+      "snapshotKey": "f70a23daf7ba0848",
+      "snapshotId": "HWS-ae76e8505090c689",
+      "eventId": "EV-2edec0302b3e0626",
+      "eventIds": [
+        "EV-2edec0302b3e0626"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Taalas",
+      "subject": "Taalas",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "product"
+      ],
+      "latestValues": {
+        "product": {
+          "metric_value": "169",
+          "unit": "$M",
+          "fact_ref": "HWF-ac0b1fd03fa33d27"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-ac0b1fd03fa33d27",
+          "fact_type": "product",
+          "observed_at": "2026-02-19",
+          "subject_entity_id": "EN-15ea2fa417bd8597",
+          "subject_name": "Taalas",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "169",
+          "unit": "$M",
+          "source_quote": "UPDATED 20:22 EST / FEBRUARY 19 2026\n INFRA\n Taalas raises $169M in funding to develop model-specific AI chips\n by Maria Deutscher\n Taalas Inc., a startup that develops chips optimized to run specific artificial intelligence models, has raised $169 million in funding.\nReuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond. The round brings Taalas’ total outside funding to more than $200 million.\nThe company’s first product is a chip optimized to run the open-source Llama 3.1 8B language model. Taalas says that it can generate 17,000 output tokens per second, or 73 times more than Nvidia Corp.’s H200 graphics card. Moreover, the processor provides that performance while using 1/10th the power.\nTailoring a chip to a specific AI model improves efficiency partly because it allows engineers to do away with redundant components. An off-the-shelf graphics card, for example, might include more DRAM than an AI model can use. A custom chip can swap the unused RAM for extra transistors that enable the model to run fas",
+          "event_refs": [
+            "EV-2edec0302b3e0626"
+          ],
+          "claim_ref": "CL-09a1918927ca6b65",
+          "source_refs": [
+            "SA-ffa508a8f3658c79"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
+      "entityIds": [
+        "EN-15ea2fa417bd8597",
+        "EN-50b90accdfefda89",
+        "EN-8d4321d936320802"
+      ]
+    }
+  ]
+}

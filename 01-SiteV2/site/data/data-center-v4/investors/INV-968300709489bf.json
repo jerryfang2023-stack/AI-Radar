@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,18 +62,18 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 1,
     "market_regions": [
       "CN"
     ],
     "china_market_activity_count": 1,
     "china_market_company_count": 1,
-    "first_disclosed_at": "2026-04-09",
+    "first_disclosed_at": "2026-04",
     "latest_disclosed_at": "2026-04-09",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2
     },
     "round_codes": [
       "undisclosed"
@@ -127,6 +127,38 @@
         ]
       },
       {
+        "activity_id": "IA-5fdd79e008659fe9",
+        "funding_insight_id": "FI-dc68253303dac9b5",
+        "event_ids": [
+          "EV-e084947e3f9e0667"
+        ],
+        "company_entity_id": "EN-e12c9f7f64dec58c",
+        "company_canonical_entity_id": "",
+        "company_name": "北京面壁智能科技股份有限公司",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "2026-04",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "2026年4月D+轮联合领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-ca5c9f62e4d3f2f3",
+            "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+            "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+            "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+            "quote": "今年4月，再度获得新一轮数亿元融资，由深创投和汇川产投联合领投",
+            "quote_hash": "113a0bcc3e529c9942521f6e2066bdade5d7d625f49aad00052d05c0dffecb28"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-e9dacf2a30e8790a",
         "funding_insight_id": "FI-23cabede97d0111d",
         "event_ids": [
@@ -169,6 +201,14 @@
         "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
       },
       {
+        "source_id": "FISRC-ca5c9f62e4d3f2f3",
+        "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+        "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+        "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+        "quote": "今年4月，再度获得新一轮数亿元融资，由深创投和汇川产投联合领投",
+        "quote_hash": "113a0bcc3e529c9942521f6e2066bdade5d7d625f49aad00052d05c0dffecb28"
+      },
+      {
         "source_id": "FISRC-67ccadc4294defd6",
         "source_url": "https://pitchhub.36kr.com/project/1958573801870344",
         "source_title": "深度智控 | 项目信息-36氪",
@@ -191,6 +231,10 @@
           "source_id": "FISRC-5e868b9dacd5325c"
         },
         {
+          "description": "融资来源记录：北京面壁智能科技股份有限公司 · 历史轮次未披露 · 2026-04 · 2026年4月D+轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-ca5c9f62e4d3f2f3"
+        },
+        {
           "description": "融资来源记录：深度智控 · 历史轮次未披露 · A轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-67ccadc4294defd6"
         }
@@ -204,6 +248,14 @@
           "source_content_hash": "21fcbff02b369abf",
           "quote": "本轮融资由深创投、 汇川技术 旗下汇川产投联合领投，道禾长期投资、 国泰海通 创新投、武岳峰科创等多家头部机构跟投。",
           "quote_hash": "fb602ee1614b7b09ce81c869fec6e3b8bc3c018cf8eac9dbd6b43120689450de"
+        },
+        {
+          "source_id": "FISRC-ca5c9f62e4d3f2f3",
+          "source_url": "https://news.pedaily.cn/202607/566303.shtml",
+          "source_title": "首发| 面壁智能融资超50亿，估值超200亿",
+          "source_content_hash": "a1bc38c4c0a90cbafbaa7b31c70c8bde825b8401c8f2881b61267ea8c0b505ce",
+          "quote": "今年4月，再度获得新一轮数亿元融资，由深创投和汇川产投联合领投",
+          "quote_hash": "113a0bcc3e529c9942521f6e2066bdade5d7d625f49aad00052d05c0dffecb28"
         },
         {
           "source_id": "FISRC-67ccadc4294defd6",

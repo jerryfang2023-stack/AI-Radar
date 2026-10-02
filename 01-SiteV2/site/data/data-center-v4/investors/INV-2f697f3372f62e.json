@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,11 +61,12 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 3,
     "china_market_company_count": 2,
@@ -75,9 +76,11 @@
       "co_lead": 1,
       "historical_or_ambiguous": 3,
       "lead": 1,
+      "other_current_round": 1,
       "participant": 1
     },
     "round_codes": [
+      "angel",
       "other",
       "seed",
       "series_a_plus"
@@ -92,6 +95,11 @@
         "entity_id": "FICO-deepkernel",
         "canonical_entity_id": "",
         "name": "深度内核（DeepKernel）"
+      },
+      {
+        "entity_id": "EN-3c52384d8749fcb4",
+        "canonical_entity_id": "",
+        "name": "OJO"
       }
     ],
     "activities": [
@@ -133,6 +141,54 @@
             "source_content_hash": "4d4f7417581fed42",
             "quote": "由顺为资本领投， L2F光源创业者基金跟投",
             "quote_hash": "7c0a452061bc6289441586c201662d2e9549f4cc18441dbb159a96b49ebecb1f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-713be03efd858ecc",
+        "funding_insight_id": "FI-ae4729db347716e3",
+        "event_ids": [
+          "EV-a6696955767a209e"
+        ],
+        "company_entity_id": "EN-3c52384d8749fcb4",
+        "company_canonical_entity_id": "",
+        "company_name": "OJO",
+        "round": "天使轮",
+        "round_code": "angel",
+        "round_original": "天使轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-08-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合投资",
+        "role_code": "other_current_round",
+        "evidence": [
+          {
+            "source_id": "FISRC-38f475f459741d00",
+            "source_url": "https://i.ifeng.com/c/8vsFiyiShVs",
+            "source_title": "OJO完成近亿元天使轮融资，打造设计Agent Team Workspace",
+            "source_content_hash": "e4cb3dc7917d61581edcebcf0cb6eb908e6524fe298803d3a870516407b51f3c",
+            "quote": "本轮融资由顺为资本和联想创投联合投资",
+            "quote_hash": "5a9bed8876b3e64961269e666925f476cfa6e447aec2e950e7ff609127bd098b"
+          },
+          {
+            "source_id": "FISRC-59edf924430b552c",
+            "source_url": "https://finance.sina.com.cn/stock/t/2026-08-26/doc-iniprqcq0953033.shtml",
+            "source_title": "前剪映负责人张琪智创业，OJO拿下顺为、联想创投近亿元天使轮",
+            "source_content_hash": "a27136b4c0213556",
+            "quote": "投资方是顺为资本和联想创投",
+            "quote_hash": "646ef31d02989d4fa6de6ebfb2ac7e0b6a3ad639ac31d3bdbe8f6ba7e15b635c"
           }
         ]
       },
@@ -323,6 +379,22 @@
         "quote_hash": "7c0a452061bc6289441586c201662d2e9549f4cc18441dbb159a96b49ebecb1f"
       },
       {
+        "source_id": "FISRC-38f475f459741d00",
+        "source_url": "https://i.ifeng.com/c/8vsFiyiShVs",
+        "source_title": "OJO完成近亿元天使轮融资，打造设计Agent Team Workspace",
+        "source_content_hash": "e4cb3dc7917d61581edcebcf0cb6eb908e6524fe298803d3a870516407b51f3c",
+        "quote": "本轮融资由顺为资本和联想创投联合投资",
+        "quote_hash": "5a9bed8876b3e64961269e666925f476cfa6e447aec2e950e7ff609127bd098b"
+      },
+      {
+        "source_id": "FISRC-59edf924430b552c",
+        "source_url": "https://finance.sina.com.cn/stock/t/2026-08-26/doc-iniprqcq0953033.shtml",
+        "source_title": "前剪映负责人张琪智创业，OJO拿下顺为、联想创投近亿元天使轮",
+        "source_content_hash": "a27136b4c0213556",
+        "quote": "投资方是顺为资本和联想创投",
+        "quote_hash": "646ef31d02989d4fa6de6ebfb2ac7e0b6a3ad639ac31d3bdbe8f6ba7e15b635c"
+      },
+      {
         "source_id": "FISRC-fc5617428a7935ed",
         "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
         "source_title": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
@@ -402,12 +474,8 @@
           "source_id": "FISRC-9eb697a746e19a88"
         },
         {
-          "description": "融资来源记录：千寻智能 · A+轮 · 2026-04-07 · 本轮联合领投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-fc5617428a7935ed"
-        },
-        {
-          "description": "融资来源记录：千寻智能 · 其他融资 · 2026-02-24 · 本轮参投 · 20亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-ee3064edf7c871f4"
+          "description": "融资来源记录：OJO · 天使轮 · 2026-08-25 · 本轮联合投资 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-38f475f459741d00"
         }
       ],
       "contacts": [
@@ -453,20 +521,20 @@
           "quote_hash": "7c0a452061bc6289441586c201662d2e9549f4cc18441dbb159a96b49ebecb1f"
         },
         {
-          "source_id": "FISRC-fc5617428a7935ed",
-          "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",
-          "source_title": "千寻智能30天融资30亿元：马云、雷军罕见“同框”！重金押注“百万小时”数据规模，具身智能马太效应加剧",
-          "source_content_hash": "4c0590395b225d91834ea11c5dc4e3a325b4487f06e04055a1c05a08c2038da2",
-          "quote": "本轮融资由雷军旗下顺为资本、马云旗下云锋基金联合领投",
-          "quote_hash": "8445397bb38fdfaed62a63a987ce32a622be2525e7415323ab0bcb42d4fe69c8"
+          "source_id": "FISRC-38f475f459741d00",
+          "source_url": "https://i.ifeng.com/c/8vsFiyiShVs",
+          "source_title": "OJO完成近亿元天使轮融资，打造设计Agent Team Workspace",
+          "source_content_hash": "e4cb3dc7917d61581edcebcf0cb6eb908e6524fe298803d3a870516407b51f3c",
+          "quote": "本轮融资由顺为资本和联想创投联合投资",
+          "quote_hash": "5a9bed8876b3e64961269e666925f476cfa6e447aec2e950e7ff609127bd098b"
         },
         {
-          "source_id": "FISRC-ee3064edf7c871f4",
-          "source_url": "https://www.qbitai.com/2026/02/381766.html",
-          "source_title": "20亿融资，百亿估值加冕！千寻智能开年引爆具身智能赛道 - 量子位",
-          "source_content_hash": "0ad2701645471c8d",
-          "quote": "顺为资本、Prosperity7、达晨财智、柏睿资本、弘晖基金、华泰紫金、东方嘉富、千乘资本、广发信德等老股东全部选择继续大额认购",
-          "quote_hash": "7856dba9de35c6cfdd0403af562bc80983a2b76d4818fc5468e4da4cf874099d"
+          "source_id": "FISRC-59edf924430b552c",
+          "source_url": "https://finance.sina.com.cn/stock/t/2026-08-26/doc-iniprqcq0953033.shtml",
+          "source_title": "前剪映负责人张琪智创业，OJO拿下顺为、联想创投近亿元天使轮",
+          "source_content_hash": "a27136b4c0213556",
+          "quote": "投资方是顺为资本和联想创投",
+          "quote_hash": "646ef31d02989d4fa6de6ebfb2ac7e0b6a3ad639ac31d3bdbe8f6ba7e15b635c"
         }
       ],
       "last_verified_at": "2026-09-25",

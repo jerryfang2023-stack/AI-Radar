@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-10-01",
+    "first_disclosed_at": "2026-03-10",
     "latest_disclosed_at": "2026-10-01",
     "role_counts": {
+      "lead": 1,
       "participant": 1
     },
     "round_codes": [
       "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1acda6c36aafa568",
+        "canonical_entity_id": "",
+        "name": "Eridu"
+      },
       {
         "entity_id": "EN-0d0dd4bc07420a2c",
         "canonical_entity_id": "",
@@ -124,6 +130,46 @@
             "quote_hash": "2da44dbcebe4bfa9bb98c78f5e465ad49971edc1b5eb23e78d6ad9c6ceda7422"
           }
         ]
+      },
+      {
+        "activity_id": "IA-81bd1d4fde2b1daa",
+        "funding_insight_id": "FI-a160ff15fc811200",
+        "event_ids": [
+          "EV-a447ffe54b998b9d"
+        ],
+        "company_entity_id": "EN-1acda6c36aafa568",
+        "company_canonical_entity_id": "",
+        "company_name": "Eridu",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d4642fdc4a2457c",
+            "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+            "source_title": "Eridu - 更快的 AI",
+            "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+            "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners",
+            "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +180,14 @@
         "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
         "quote": "with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures",
         "quote_hash": "2da44dbcebe4bfa9bb98c78f5e465ad49971edc1b5eb23e78d6ad9c6ceda7422"
+      },
+      {
+        "source_id": "FISRC-6d4642fdc4a2457c",
+        "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+        "source_title": "Eridu - 更快的 AI",
+        "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+        "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners",
+        "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
       }
     ],
     "public_profile": {
@@ -148,6 +202,10 @@
         {
           "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮参投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f61726ece8d567da"
+        },
+        {
+          "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
       "contacts": [],
@@ -159,6 +217,14 @@
           "source_content_hash": "5fcd38b5be5344b5b8dd9c0f1ec2253f587c9aa2fd16dde2b11d3e6573a15cfa",
           "quote": "with participation from John Doerr, VXI Capital, Triatomic and Susa Ventures",
           "quote_hash": "2da44dbcebe4bfa9bb98c78f5e465ad49971edc1b5eb23e78d6ad9c6ceda7422"
+        },
+        {
+          "source_id": "FISRC-6d4642fdc4a2457c",
+          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+          "source_title": "Eridu - 更快的 AI",
+          "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+          "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners",
+          "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
         }
       ],
       "last_verified_at": "2026-09-28"

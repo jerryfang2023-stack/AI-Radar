@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-4272dd59e5f45d43",
+    "name": "秋水半导体",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-13796d1f3cea3221"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-05-29",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-13796d1f3cea3221"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-13796d1f3cea3221",
+        "dataDate": "2026-10-02",
+        "date": "2026-05-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "获近2亿元融资，这家公司用无损Micro-LED加速AI眼镜全彩化进程",
+        "displayTags": [],
+        "entityIds": [
+          "EN-4272dd59e5f45d43"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-8129ec91260b6fb6",
+      "snapshotKey": "8129ec91260b6fb6",
+      "snapshotId": "HWS-1ab85245ff8dfefc",
+      "eventId": "EV-13796d1f3cea3221",
+      "eventIds": [
+        "EV-13796d1f3cea3221"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "秋水半导体",
+      "subject": "秋水半导体",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "2",
+          "unit": "亿",
+          "fact_ref": "HWF-d23bc1c23f5d5fe8"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-d23bc1c23f5d5fe8",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-05-29",
+          "subject_entity_id": "EN-4272dd59e5f45d43",
+          "subject_name": "秋水半导体",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "2",
+          "unit": "亿",
+          "source_quote": "硬氪获悉，Micro-LED显示技术公司「秋水半导体」已于近期连续完成Pre-A及A轮融资，合计近2亿元人民币。本轮融资由朝晖资本领投，通商基金、盛宇投资、宁波人才发展基金、嘉溢创投、涌现科技、数字光芯及兴棠资本跟投，兴棠资本担任长期财务顾问。本轮融资资金将主要用于在宁波高新区建设8英寸混合键合量产线及后续研发投入。\n「秋水半导体」成立于2022年11月，是一家专注于Micro-LED微显示芯片与模组的半导体公司，产品覆盖数字车灯、AR眼镜、微投影等应用领域。公司总部原在苏州，近期已整体搬迁至宁波。\nMicro-LED常被认为是下一代显示技术的重要方向，但过去几年量产进程始终卡在芯片端。根据IDC数据，2025年全球AR/VR头显与无显示器智能眼镜合计出货量超过1400万台。但具备显示功能的AR眼镜出货量不足百万。在数字车灯领域，TrendForce分析指出，自适应性头灯（ADB）市场渗透率预计到2029年有望达到21.6%，保时捷等车厂已开始采用Micro LED像素模块的头灯方案。芯片端的量产瓶颈是这两大应用落地的主要障碍。\n造成这一局面的关键在于技术路线。过去，传统方案采用4英寸蓝宝石衬底，先通过金属键合将LED晶圆与驱动电路连接，再通过刻蚀来分割像素。但刻蚀过程会对发光材料造成损伤，导致芯片效率大幅下降、良率偏低、出光角度过大，始终难以实现规模化量产。2024年以来，行业开始转向8英寸晶圆级混合键合工艺，但真正打通量产环节的企业仍然极少。\n因此，「秋水半导体」的方案则不再对发光材料进行刻蚀，而是通过无损芯片架构的创新，从根源上避免了材料损伤。配合8英寸硅衬底和混合键合3D封装工艺，可将芯片良率提升至6N以上，出光角度从±60°收窄到±10°，工作温度范围从低于50℃拓展至超过140℃。\n秋水“乐鱼”AR系列模组\n在产品方面，「秋水半导体」此前已推出0.61英寸的数字车灯芯片，并完成了客户送样验证。同时，AR单绿色芯片计划于今年出货。「秋水半导体」创始人蒋振宇判断，“单色绿光芯片已经能满足游泳眼镜、会议提词、翻译、车载导航等特定场景的需求。且未来一年内具备显示功能的AI眼镜出货量有望从目前的四五十万台提升至千万台级别，千万级芯片出货能力仍然具备挑战。此外要迎来Micro-LED产业的“iphone时刻”，则必须解决彩色化问题，传统红光Micro-LED芯片因刻蚀损伤导致光效损失超过97%，是无法绕过的障碍，而无损技术是解决这一问题的关键，是打开彩色化大门的钥匙。「秋水半导体」预计将在年底实现彩色化的技术突破。”\n秋水“乐鱼”AR系列模组\n在国内竞争格局上，",
+          "event_refs": [
+            "EV-13796d1f3cea3221"
+          ],
+          "claim_ref": "CL-c41081ac384fe4b2",
+          "source_refs": [
+            "SA-827dd94bd70bd7a8"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "https://cn.chinadaily.com.cn/a/202605/29/WS6a195d2aa310942cc49af151.html",
+      "entityIds": [
+        "EN-4272dd59e5f45d43"
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 6,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 6,
+    "current_round_count": 7,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 7,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 6,
-    "china_market_company_count": 6,
+    "china_market_activity_count": 7,
+    "china_market_company_count": 7,
     "first_disclosed_at": "2026-02-24",
     "latest_disclosed_at": "2026-09-17",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "other",
+      "series_a_plus",
       "series_b",
       "series_b_plus",
       "series_c"
@@ -112,6 +113,11 @@
         "entity_id": "FICO-rabyte",
         "canonical_entity_id": "",
         "name": "讯兔科技"
+      },
+      {
+        "entity_id": "EN-7753b0382f29e6a8",
+        "canonical_entity_id": "",
+        "name": "耀速科技"
       }
     ],
     "activities": [
@@ -320,6 +326,46 @@
         ]
       },
       {
+        "activity_id": "IA-407b271dabac796c",
+        "funding_insight_id": "FI-ec899db298fe1efb",
+        "event_ids": [
+          "EV-d99be21ac665f1f9"
+        ],
+        "company_entity_id": "EN-7753b0382f29e6a8",
+        "company_canonical_entity_id": "",
+        "company_name": "耀速科技",
+        "round": "A+轮",
+        "round_code": "series_a_plus",
+        "round_original": "A+轮",
+        "amount_original": "近2亿元人民币",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 200000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 2 亿元"
+        },
+        "announced_at": "2026-06-30",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-137a48f19e1119b4",
+            "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+            "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+            "source_content_hash": "4bba0dc5a705af7dff42b2ed2c3c95952ac77f1e01bf26b97db868814cefef84",
+            "quote": "本轮融资由国方创投、清松资本、广发信德、东方富海、沄柏资本共同参与，老股东雅亿资本持续加码支持。",
+            "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-c1c582da09aa7a9c",
         "funding_insight_id": "FI-846562dfba15b6a0",
         "event_ids": [
@@ -422,6 +468,38 @@
             "quote_hash": "262d9e1980aabc396d208a46c39e53dcdb002c842dc4d7c4ab0d5576d78cc36d"
           }
         ]
+      },
+      {
+        "activity_id": "IA-425d3d73ecae4756",
+        "funding_insight_id": "FI-8e7436171d45ed58",
+        "event_ids": [
+          "EV-21529e29a0eedf85"
+        ],
+        "company_entity_id": "EN-7753b0382f29e6a8",
+        "company_canonical_entity_id": "",
+        "company_name": "耀速科技（Xellar Biosystems）",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "A+轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-137a48f19e1119b4",
+            "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+            "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+            "source_content_hash": "4bba0dc5a705af7d",
+            "quote": "本轮融资由国方创投、清松资本、广发信德、东方富海、沄柏资本共同参与，老股东雅亿资本持续加码支持。",
+            "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -464,6 +542,14 @@
         "source_content_hash": "04e62dc8a14bfb33",
         "quote": "由广发信德领投，西湖创新投、武汉江豚基金、容亿投资、南通投管等多家机构跟投，58产业基金等产业资本参与，老股东蚂蚁集团、汤姆猫提供全面支持",
         "quote_hash": "17ba19f965e577d2806b3596f71f9cdb2027edf1a97eca6e3322fd2145858f65"
+      },
+      {
+        "source_id": "FISRC-137a48f19e1119b4",
+        "source_url": "https://news.pedaily.cn/202606/565703.shtml",
+        "source_title": "耀速科技完成近2亿元A+轮融资，打造下一代生物医药研发平台",
+        "source_content_hash": "4bba0dc5a705af7d",
+        "quote": "本轮融资由国方创投、清松资本、广发信德、东方富海、沄柏资本共同参与，老股东雅亿资本持续加码支持。",
+        "quote_hash": "111c7bf80859d44488a2240e897f0420bf3b7640f8de10b52238a050ef419a5e"
       },
       {
         "source_id": "FISRC-ee3064edf7c871f4",

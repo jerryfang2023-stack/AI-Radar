@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,17 +73,23 @@
     "latest_disclosed_at": "2026-09-19",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "series_a",
-      "series_b"
+      "series_b",
+      "series_c"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-720d7b20a013162b",
         "canonical_entity_id": "",
         "name": "Listen Labs"
+      },
+      {
+        "entity_id": "EN-185ea241778d39c7",
+        "canonical_entity_id": "",
+        "name": "Quadric"
       },
       {
         "entity_id": "EN-162103694fa33e7b",
@@ -173,6 +179,46 @@
         ]
       },
       {
+        "activity_id": "IA-a9f14ffe51a7b780",
+        "funding_insight_id": "FI-ae8031b7eb15f5c7",
+        "event_ids": [
+          "EV-42335b1bae58c172"
+        ],
+        "company_entity_id": "EN-185ea241778d39c7",
+        "company_canonical_entity_id": "",
+        "company_name": "Quadric",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$30M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b3973965c733b20b",
+            "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+            "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+            "source_content_hash": "c8cfa51187a025ba",
+            "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+            "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-33ac586d36d16785",
         "funding_insight_id": "FI-5826d8691460f196",
         "event_ids": [
@@ -255,6 +301,14 @@
         "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
       },
       {
+        "source_id": "FISRC-b3973965c733b20b",
+        "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+        "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+        "source_content_hash": "c8cfa51187a025ba",
+        "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+        "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
+      },
+      {
         "source_id": "FISRC-5579fe42c2aff5ea",
         "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
         "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
@@ -289,8 +343,8 @@
           "source_id": "FISRC-dcf11a862138a06d"
         },
         {
-          "description": "融资来源记录：Listen Labs · 历史轮次未披露 · Seed 轮参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5579fe42c2aff5ea"
+          "description": "融资来源记录：Quadric · C轮 · 2026-01-14 · 本轮参投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b3973965c733b20b"
         }
       ],
       "contacts": [],
@@ -312,19 +366,19 @@
           "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
         },
         {
-          "source_id": "FISRC-5579fe42c2aff5ea",
-          "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
-          "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
-          "source_content_hash": "2cd25d2efd99688d",
-          "quote": "We are thrilled to announce our investment in Listen Labs’s seed round.",
-          "quote_hash": "dec1edd6a40e5d49c0c0d462bad8f3a71e350c8a7cb530656cb2c49aba1b2598"
+          "source_id": "FISRC-b3973965c733b20b",
+          "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+          "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+          "source_content_hash": "c8cfa51187a025ba",
+          "quote": "Existing investors increased their investment in this close: Pear VC, which led Quadric's seed round; Uncork Capital; and BEENEXT, which led the round's first close.",
+          "quote_hash": "e1dee92756885acd207de0ae662095ae3d04441a3d5d8e12dff5439507d09a5c"
         }
       ],
       "last_verified_at": "2026-09-25"
     },
     "translations": {
       "zh-CN": {
-        "activities[2].role": {
+        "activities[3].role": {
           "text": "Seed 轮参投",
           "source_hash": "a6b60428a44ceb28e07a1cedf367e76eb423a1e9698a0033135f215cd01febf5",
           "provider": "deepseek",

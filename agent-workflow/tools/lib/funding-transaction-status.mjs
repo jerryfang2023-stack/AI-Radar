@@ -2,7 +2,7 @@
 // Do not scan an article's whole body: a cancelled historical round must not
 // withdraw a separately completed current round.
 export function isPendingFundingTitle(value = "") {
-  const text = String(value || "");
+  const text = String(value || "").replace(/(?:课程|教学|备课|教案)计划(?:构建|生成|编制)?/gu, "教案");
   return /(?:又要|欲|拟|寻求|筹划|计划|即将完成|有望完成|接近完成).{0,24}(?:融资|募资)|(?:融资|募资).{0,20}(?:初步接触|早期谈判|洽谈中|谈判中)/u.test(text)
     || /\b(?:in talks|in discussions|seeking|plans? to|negotiating|nearing|closing in on|close to closing)\b.{0,90}\b(?:raise|funding|financing|round)\b/iu.test(text);
 }

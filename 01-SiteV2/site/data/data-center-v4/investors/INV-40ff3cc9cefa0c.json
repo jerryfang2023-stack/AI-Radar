@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,25 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
-    "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 2,
+    "current_round_count": 4,
+    "historical_or_ambiguous_count": 3,
+    "portfolio_company_count": 3,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 3,
-    "china_market_company_count": 2,
+    "china_market_activity_count": 4,
+    "china_market_company_count": 3,
     "first_disclosed_at": "2026-05-09",
-    "latest_disclosed_at": "2026-06-15",
+    "latest_disclosed_at": "2026-08-13",
     "role_counts": {
       "co_lead": 1,
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
+      "lead": 1,
       "participant": 2
     },
     "round_codes": [
       "multi_round",
+      "pre_series_a_plus",
       "series_b2",
       "series_b_plus"
     ],
@@ -88,12 +90,57 @@
         "name": "极佳视界"
       },
       {
+        "entity_id": "EN-d6d6dcf0bb132a3d",
+        "canonical_entity_id": "",
+        "name": "玩点旅行"
+      },
+      {
         "entity_id": "EN-7d0445227e7dde72",
         "canonical_entity_id": "EN-7d0445227e7dde72",
         "name": "小雨智造"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1ad198ad21e47661",
+        "funding_insight_id": "FI-169caf1c2721c1af",
+        "event_ids": [
+          "EV-bec127224b1f1aca"
+        ],
+        "company_entity_id": "EN-d6d6dcf0bb132a3d",
+        "company_canonical_entity_id": "",
+        "company_name": "玩点旅行",
+        "round": "Pre-A+轮",
+        "round_code": "pre_series_a_plus",
+        "round_original": "Pre-A+轮",
+        "amount_original": "近亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 1 亿元"
+        },
+        "announced_at": "2026-08-13",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-9f1d96a7fbbd6303",
+            "source_url": "https://m.sohu.com/a/1062342177_120491808?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "AI旅行服务平台 “玩点旅行” 完成近亿元 Pre-A+ 轮融资",
+            "source_content_hash": "2e90001b13c317b7503d54a9ac01759068aca704740ae5a987f23400308f4a01",
+            "quote": "本轮融资由复星锐正领投，敦鸿资产等多家新老股东联合参与",
+            "quote_hash": "887f835a1f6a2bc6d376d569bca051d652145042b31d851287c57ae9bbcd769e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-4d378ed31cd81f43",
         "funding_insight_id": "FI-60ae9fb62661395b",
@@ -277,9 +324,49 @@
             "quote_hash": "b6c5ec7e55786a17c6c0cfbe170205a9a72adc2f7cae3db5836283c19477d8d9"
           }
         ]
+      },
+      {
+        "activity_id": "IA-5f6cc4f55110704b",
+        "funding_insight_id": "FI-7c5fc042f5fa0ddc",
+        "event_ids": [
+          "EV-622f5d9407564ae3"
+        ],
+        "company_entity_id": "EN-d6d6dcf0bb132a3d",
+        "company_canonical_entity_id": "",
+        "company_name": "玩点旅行",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A+轮领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-9f1d96a7fbbd6303",
+            "source_url": "https://m.sohu.com/a/1062342177_120491808?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+            "source_title": "AI旅行服务平台 “玩点旅行” 完成近亿元 Pre-A+ 轮融资",
+            "source_content_hash": "2e90001b13c317b7",
+            "quote": "本轮融资由复星锐正领投，敦鸿资产等多家新老股东联合参与。",
+            "quote_hash": "de2e1920020187ba0bf0ed1bc33cc04acddae395e1386a161c8f57f05af03abc"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-9f1d96a7fbbd6303",
+        "source_url": "https://m.sohu.com/a/1062342177_120491808?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "AI旅行服务平台 “玩点旅行” 完成近亿元 Pre-A+ 轮融资",
+        "source_content_hash": "2e90001b13c317b7503d54a9ac01759068aca704740ae5a987f23400308f4a01",
+        "quote": "本轮融资由复星锐正领投，敦鸿资产等多家新老股东联合参与",
+        "quote_hash": "887f835a1f6a2bc6d376d569bca051d652145042b31d851287c57ae9bbcd769e"
+      },
       {
         "source_id": "FISRC-ce47b663ca256878",
         "source_url": "https://news.pedaily.cn/202606/565201.shtml",
@@ -319,6 +406,14 @@
         "source_content_hash": "f8b4957d1ad7226c",
         "quote": "本轮融资由复星锐正领投、老股东奇绩创坛加码跟投。",
         "quote_hash": "b6c5ec7e55786a17c6c0cfbe170205a9a72adc2f7cae3db5836283c19477d8d9"
+      },
+      {
+        "source_id": "FISRC-9f1d96a7fbbd6303",
+        "source_url": "https://m.sohu.com/a/1062342177_120491808?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+        "source_title": "AI旅行服务平台 “玩点旅行” 完成近亿元 Pre-A+ 轮融资",
+        "source_content_hash": "2e90001b13c317b7",
+        "quote": "本轮融资由复星锐正领投，敦鸿资产等多家新老股东联合参与。",
+        "quote_hash": "de2e1920020187ba0bf0ed1bc33cc04acddae395e1386a161c8f57f05af03abc"
       }
     ],
     "public_profile": {
@@ -404,16 +499,16 @@
           "source_id": "fosunrz_news"
         },
         {
+          "description": "融资来源记录：玩点旅行 · Pre-A+轮 · 2026-08-13 · 本轮领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-9f1d96a7fbbd6303"
+        },
+        {
           "description": "融资来源记录：极佳视界 · B2轮 · 2026-06-15 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce47b663ca256878"
         },
         {
           "description": "融资来源记录：小雨智造 · B+轮 · 2026-05-09 · 本轮联合领投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7cae6e0a712567de"
-        },
-        {
-          "description": "融资来源记录：爱诗科技 · 历史轮次未披露 · B+轮共同投资。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-09c3ca37737a71ce"
         }
       ],
       "contacts": [
@@ -457,6 +552,14 @@
           "quote_hash": "2c07d54e34e4edbf6e63fda3c0834be0c0d804a621ff1e8c37a4e02a97758ae8"
         },
         {
+          "source_id": "FISRC-9f1d96a7fbbd6303",
+          "source_url": "https://m.sohu.com/a/1062342177_120491808?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",
+          "source_title": "AI旅行服务平台 “玩点旅行” 完成近亿元 Pre-A+ 轮融资",
+          "source_content_hash": "2e90001b13c317b7503d54a9ac01759068aca704740ae5a987f23400308f4a01",
+          "quote": "本轮融资由复星锐正领投，敦鸿资产等多家新老股东联合参与",
+          "quote_hash": "887f835a1f6a2bc6d376d569bca051d652145042b31d851287c57ae9bbcd769e"
+        },
+        {
           "source_id": "FISRC-ce47b663ca256878",
           "source_url": "https://news.pedaily.cn/202606/565201.shtml",
           "source_title": "首发| 极佳视界三个月融资35亿，投资人开抢物理世界OpenAI",
@@ -471,26 +574,26 @@
           "source_content_hash": "320a14d704f62a2d42fda843b83e1e1542fcc79e50110842dd13af84440e9b2b",
           "quote": "本轮融资由北汽产投、复星锐正和建发新兴三家新进投资方联合投资",
           "quote_hash": "ac0161d399343ccd00f4ef57f57f7ccab85837dc32aa86b16f2d2118d8c700db"
-        },
-        {
-          "source_id": "FISRC-09c3ca37737a71ce",
-          "source_url": "https://stcn.com/article/detail/3386786.html",
-          "source_title": "爱诗科技完成B+轮融资 ARR突破4000万美金",
-          "source_content_hash": "edea92990a31710b",
-          "quote": "10月17日，AI视频企业爱诗科技宣布完成1亿元人民币B+轮融资，由复星锐正、同创伟业、顺禧基金等共同投资。",
-          "quote_hash": "e9aae3ff1b77f083544e7ec6565ade2999a46e7937b2893111210677a5f7bd3e"
         }
       ],
       "identity_status": "verified"
     },
     "translations": {
       "zh-CN": {
-        "activities[4].role": {
+        "activities[5].role": {
           "text": "Pre-A轮领投",
           "source_hash": "c61fa44ebf092b66526cb4a8de607b70e57d3e5006aa179d3a2b39fd8925f719",
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-08-14T07:17:18.959Z",
+          "status": "translated"
+        },
+        "activities[6].role": {
+          "text": "Pre-A+轮领投",
+          "source_hash": "1adb788e082cf499077e735ffbcd24d724364263f89095c7c720c521141ddf4c",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:51.670Z",
           "status": "translated"
         }
       }

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,29 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2024-01-30",
-    "latest_disclosed_at": "2024-01-30",
+    "latest_disclosed_at": "2026-03-10",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1acda6c36aafa568",
+        "canonical_entity_id": "",
+        "name": "Eridu"
+      },
       {
         "entity_id": "EN-07c370b082ffd370",
         "canonical_entity_id": "",
@@ -85,6 +91,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-749572ee78cfb85e",
+        "funding_insight_id": "FI-a160ff15fc811200",
+        "event_ids": [
+          "EV-a447ffe54b998b9d"
+        ],
+        "company_entity_id": "EN-1acda6c36aafa568",
+        "company_canonical_entity_id": "",
+        "company_name": "Eridu",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "Series A",
+        "amount_original": "未披露",
+        "amount_normalized": {
+          "currency": "",
+          "value": null,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "unparsed",
+          "display_zh": "未披露"
+        },
+        "announced_at": "2026-03-10",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6d4642fdc4a2457c",
+            "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+            "source_title": "Eridu - 更快的 AI",
+            "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+            "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+            "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9fc229a2d574f4c1",
         "funding_insight_id": "FI-d63f40171d330dcb",
@@ -127,6 +173,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-6d4642fdc4a2457c",
+        "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+        "source_title": "Eridu - 更快的 AI",
+        "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+        "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+        "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
+      },
       {
         "source_id": "FISRC-177fc20098275686",
         "source_url": "https://techcrunch.com/2024/01/30/inference-ai-matches-ai-workloads-with-cloud-gpu-compute/",
@@ -197,6 +251,10 @@
         {
           "description": "Fusion Fund官网称You.com与Vectara是其Fund III投资组合公司，并记录两家公司入选CB Insights 2023 Generative AI 50；这是所选组合案例，不代表完整投资组合或基金回报。",
           "source_id": "fusion_track"
+        },
+        {
+          "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮参投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6d4642fdc4a2457c"
         },
         {
           "description": "融资来源记录：Inference.ai · 种子轮 · 2024-01-30 · 本轮参投 · $4 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -290,6 +348,14 @@
           "source_content_hash": "49e4027ee94bd4e6489670c91307c674a6c676e1e3839e77ddb19e496dbdd3ba",
           "quote": "Two Fusion Fund portfolio companies from Fund III, You.com and Vectara, were highlighted in CB Insights' Generative Al 50.",
           "quote_hash": "b9dcd44ff4967d2c27e876e58d48c80e72ce8e0ac4e0cdaa86b00361228ecf38"
+        },
+        {
+          "source_id": "FISRC-6d4642fdc4a2457c",
+          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+          "source_title": "Eridu - 更快的 AI",
+          "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
+          "quote": "with participation by Bosch Ventures, Eclipse Capital, Fusion Fund, Osage University Partners, SBVA, TDK Ventures, VentureTech Alliance, and Zelda Ventures among others.",
+          "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
         },
         {
           "source_id": "FISRC-177fc20098275686",

@@ -1,0 +1,219 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3870,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-5dae20f10551cc69",
+    "name": "深圳蜂巢互联科技股份有限公司",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "verified",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-bc166d0f16140940"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-bc166d0f16140940"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-bc166d0f16140940",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-26",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "蜂巢互联完成12亿元融资，加码物理AI仿真引擎",
+        "displayTags": [
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-4b8de799d3cb1255"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-4b8de799d3cb1255"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-4b8de799d3cb1255"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-4b8de799d3cb1255",
+          "EN-5dae20f10551cc69"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-e7d145e26c37b627",
+      "snapshotKey": "e7d145e26c37b627",
+      "snapshotId": "HWS-b3251e8a7c6a3b50",
+      "eventId": "EV-bc166d0f16140940",
+      "eventIds": [
+        "EV-bc166d0f16140940"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "蜂巢互联",
+      "subject": "蜂巢互联",
+      "productNames": [],
+      "hardwareType": "data_center",
+      "factTypes": [
+        "oem_odm"
+      ],
+      "latestValues": {
+        "oem_odm": {
+          "metric_value": "12",
+          "unit": "亿",
+          "fact_ref": "HWF-62db95af0afbf922"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-62db95af0afbf922",
+          "fact_type": "oem_odm",
+          "observed_at": "2026-08-26",
+          "subject_entity_id": "EN-4b8de799d3cb1255",
+          "subject_name": "蜂巢互联",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "data_center",
+          "metric_value": "12",
+          "unit": "亿",
+          "source_quote": "原标题：蜂巢互联完成12亿元融资，加码物理AI仿真引擎\n深圳蜂巢互联科技股份有限公司（简称：蜂巢互联）是一家物理AI仿真引擎基础设施服务商。投资界（ID：pedaily2012）8月26日消息，近日，蜂巢互联完成新一轮融资正式交割，数月密集完成两轮总额12亿元。充分印证资本市场对公司仿真技术路线和国产工业软件产业价值的高度认可，持续加码工业AI基础设施赛道。本轮融资完成后，蜂巢互联股东结构进一步优化完善，形成国资CVC、市场化投资机构、产业资本三方互补、长期协同的战略股东体系。国资股东覆盖多省市重点产业投资平台，包括深重投、龙岗金控、南山战新投、东莞科创集团、中山投控、南创投、扬子国投、浙创科技、重庆两江基金等区域国资，深度联动各地高端制造产业资源，助力区域工业数字化转型落地；市场化专业投资机构汇聚鼎晖投资、钧山资本、华业天成、博睿资本、道禾资本、东方富海、中信证券、珂玺资本等深耕硬科技智能制造赛道的头部投资机构，聚焦企业长期价值成长；产业链投资方引入海尔资本、利元亨、中软国际、金百泽等上下游，实现技术、客户、场景双向赋能。\n蜂巢互联创始人马震表示：多元稳定、坚持长期主义的股东阵容，是公司持续深耕底层技术与推进产业规模化落地的核心战略支撑。\n蜂巢互联坚持底层技术自主攻坚，以先进仿真底座+一体化工具链平台为核心业务主线，每年稳定投入约3亿元用于研发，持续突破几何、网格等仿真根技术，在细分工艺仿真赛道构建深厚垂直技术壁垒。产业整合加速是必然趋势，蜂巢互联将持续布局，全力打造新一代工业软件航母舰队。\n目前蜂巢互联已深度服务电子信息、新能源汽车、高端装备、家电、航空航天、船舶等行业数百家头部企业，共建新一代研发平台，助力高端制造业完成研发模式智能化革新。\n立足经典CAE根技术积累，蜂巢互联近日完成战略升级，定位从“仿真底座+工具链平台”拓展为“物理AI仿真引擎基础设施服务商”，补齐工业软件智能化短板，推动AI扎进产业现场。\n公司搭建起完整全链路技术架构：底层依托异构并行计算底座BeeInfra夯实算力支撑；中间层通过智能体BeeAgent实现经典CAE加速优化，搭配数据模型铸造厂BeeFoundry提供高保真准实时物理引擎；上层BeeFDE专业服务赋能客户完成私域数智化转型，助力客户打造自主掌控的工业AI专业技术团队。\n文章来源：投资界原文地址：https://news.pedaily.cn/202608/568148.shtml\n 海量资讯、精准解读，尽在新浪财经APP\n VIP课程推荐\n 加载中...\n 新浪直播\n 百位牛人在线解读股市热点，带你挖掘板块龙头\n 收起",
+          "event_refs": [
+            "EV-bc166d0f16140940"
+          ],
+          "claim_ref": "CL-beb3449b51ed9823",
+          "source_refs": [
+            "SA-8c01c4c74d5ff40b"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-4b8de799d3cb1255"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://finance.sina.com.cn/jjxw/2026-08-26/doc-iniprumt6047316.shtml",
+      "entityIds": [
+        "EN-4b8de799d3cb1255",
+        "EN-5dae20f10551cc69"
+      ]
+    }
+  ]
+}

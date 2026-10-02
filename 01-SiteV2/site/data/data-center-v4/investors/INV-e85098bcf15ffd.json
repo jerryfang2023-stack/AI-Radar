@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-03-12",
+    "first_disclosed_at": "2026-02-18",
     "latest_disclosed_at": "2026-05-05",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "multi_round",
+      "other",
       "seed"
     ],
     "portfolio_companies": [
@@ -89,6 +90,11 @@
         "entity_id": "EN-ae3d8efc01c7627d",
         "canonical_entity_id": "",
         "name": "Astrocade"
+      },
+      {
+        "entity_id": "EN-da2f0f03bc3a24f5",
+        "canonical_entity_id": "",
+        "name": "World Labs"
       }
     ],
     "activities": [
@@ -171,6 +177,46 @@
             "quote_hash": "fefcda8483f86b88c16b6c9f5de983ebededb411fadfa343302cca0b008ae44a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-368a24e76e160331",
+        "funding_insight_id": "FI-4a3b79f9329c86c7",
+        "event_ids": [
+          "EV-c503664bc5c24b10"
+        ],
+        "company_entity_id": "EN-da2f0f03bc3a24f5",
+        "company_canonical_entity_id": "",
+        "company_name": "World Labs",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "new funding",
+        "amount_original": "$1 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 1000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "10 亿美元"
+        },
+        "announced_at": "2026-02-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f911788bc29402eb",
+            "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+            "source_title": "世界实验室宣布新融资",
+            "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+            "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+            "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -189,6 +235,14 @@
         "source_content_hash": "5d530dab1f01bc4c",
         "quote": "Sea (Southeast Asian tech giant)",
         "quote_hash": "fefcda8483f86b88c16b6c9f5de983ebededb411fadfa343302cca0b008ae44a"
+      },
+      {
+        "source_id": "FISRC-f911788bc29402eb",
+        "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+        "source_title": "世界实验室宣布新融资",
+        "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+        "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+        "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
       }
     ],
     "public_profile": {
@@ -207,6 +261,10 @@
         {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-bcebf5ead5f70f46"
+        },
+        {
+          "description": "融资来源记录：World Labs · 其他融资 · 2026-02-18 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f911788bc29402eb"
         }
       ],
       "contacts": [],
@@ -226,6 +284,14 @@
           "source_content_hash": "5d530dab1f01bc4c",
           "quote": "Sea (Southeast Asian tech giant)",
           "quote_hash": "fefcda8483f86b88c16b6c9f5de983ebededb411fadfa343302cca0b008ae44a"
+        },
+        {
+          "source_id": "FISRC-f911788bc29402eb",
+          "source_url": "https://www.worldlabs.ai/blog/funding-2026",
+          "source_title": "世界实验室宣布新融资",
+          "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
+          "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
+          "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
         }
       ],
       "last_verified_at": "2026-09-25"

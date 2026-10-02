@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,24 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 2,
-    "first_disclosed_at": "2026-04-02",
+    "first_disclosed_at": "2026-02-28",
     "latest_disclosed_at": "2026-05-07",
     "role_counts": {
       "historical_or_ambiguous": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "infrastructure",
+      "pre_series_a",
       "series_b_plus"
     ],
     "portfolio_companies": [
@@ -89,6 +91,11 @@
         "entity_id": "EN-a6e5382c05dd0d16",
         "canonical_entity_id": "EN-a6e5382c05dd0d16",
         "name": "星海图"
+      },
+      {
+        "entity_id": "EN-449d8bc804b1866d",
+        "canonical_entity_id": "",
+        "name": "致敬未知"
       }
     ],
     "activities": [
@@ -174,6 +181,46 @@
         ]
       },
       {
+        "activity_id": "IA-7fcb55687a6c5a62",
+        "funding_insight_id": "FI-14a283707b55f0f2",
+        "event_ids": [
+          "EV-ae564e305ca1bc3e"
+        ],
+        "company_entity_id": "EN-449d8bc804b1866d",
+        "company_canonical_entity_id": "",
+        "company_name": "致敬未知",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "超亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 100000000,
+          "min_value": 100000000,
+          "max_value": null,
+          "unit": "base",
+          "status": "lower_bound",
+          "display_zh": "超过 1 亿元"
+        },
+        "announced_at": "2026-02-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a9a96903b0bbba52",
+            "source_url": "https://www.brandark.com/t/ipNtlMZg",
+            "source_title": "AI运动科技公司「致敬未知」完成超亿元Pre-A轮融资",
+            "source_content_hash": "dd27d9ea6719c8cb400059bdaa62c804158b4ef0acb065993e8ddef47574e857",
+            "quote": "本轮融资由创维投资、博裕创投、联想创投、广发乾和等产业及财务资本联合参与",
+            "quote_hash": "fa865b569c3676e6b02da83df504e1aa310264536146170576e6e0d63397fa17"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-144c9267d9c15266",
         "funding_insight_id": "FI-257e4f42c36415ea",
         "event_ids": [
@@ -226,6 +273,14 @@
         "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
       },
       {
+        "source_id": "FISRC-a9a96903b0bbba52",
+        "source_url": "https://www.brandark.com/t/ipNtlMZg",
+        "source_title": "AI运动科技公司「致敬未知」完成超亿元Pre-A轮融资",
+        "source_content_hash": "dd27d9ea6719c8cb400059bdaa62c804158b4ef0acb065993e8ddef47574e857",
+        "quote": "本轮融资由创维投资、博裕创投、联想创投、广发乾和等产业及财务资本联合参与",
+        "quote_hash": "fa865b569c3676e6b02da83df504e1aa310264536146170576e6e0d63397fa17"
+      },
+      {
         "source_id": "FISRC-5a92715d1392fa36",
         "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
         "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
@@ -252,8 +307,8 @@
           "source_id": "FISRC-7a614400d44a7041"
         },
         {
-          "description": "融资来源记录：讯兔科技 · 历史轮次未披露 · A轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-5a92715d1392fa36"
+          "description": "融资来源记录：致敬未知 · Pre-A轮 · 2026-02-28 · 本轮参投 · 超亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a9a96903b0bbba52"
         }
       ],
       "contacts": [],
@@ -275,12 +330,12 @@
           "quote_hash": "099a646a87fd528b3ab1d27c6205599c0515fdfb1ca0127615f5f0499b20d120"
         },
         {
-          "source_id": "FISRC-5a92715d1392fa36",
-          "source_url": "https://finance.sina.com.cn/wm/2026-03-26/doc-inhsiqkn0105281.shtml",
-          "source_title": "讯兔科技（Alpha派）完成近2亿元A轮融资：金融行业是AI垂直落地的最优赛道|AI_新浪财经_新浪网",
-          "source_content_hash": "788675d51c86fa8d",
-          "quote": "广发乾和、信宸资本（中信资本旗下私募股权投资业务）、清科控股跟投并赋能产业协同",
-          "quote_hash": "ad797fb27f2844c7ce3129a4889d312f976c874c9e9bafcf38fe6f63f94574e5"
+          "source_id": "FISRC-a9a96903b0bbba52",
+          "source_url": "https://www.brandark.com/t/ipNtlMZg",
+          "source_title": "AI运动科技公司「致敬未知」完成超亿元Pre-A轮融资",
+          "source_content_hash": "dd27d9ea6719c8cb400059bdaa62c804158b4ef0acb065993e8ddef47574e857",
+          "quote": "本轮融资由创维投资、博裕创投、联想创投、广发乾和等产业及财务资本联合参与",
+          "quote_hash": "fa865b569c3676e6b02da83df504e1aa310264536146170576e6e0d63397fa17"
         }
       ],
       "last_verified_at": "2026-09-25"

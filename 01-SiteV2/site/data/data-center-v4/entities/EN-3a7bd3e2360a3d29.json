@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -67,6 +67,7 @@
     "eventIds": [
       "EV-66f24f6db71cc011",
       "EV-56c0d1d5b0c07971",
+      "EV-d3c5eb69eb9d397a",
       "EV-f282ab8740ff0096",
       "EV-2f0f3200b9800877",
       "EV-545bef6ff60cf3b2",
@@ -206,7 +207,7 @@
       "EN-45b5216872656eb3"
     ],
     "firstSeen": "2026-03-12",
-    "lastSeen": "2026-10-01",
+    "lastSeen": "2026-10-02",
     "relationIds": [
       "REL2-59587a82f0b820bc",
       "REL2-a3bd8b736cbfac80",
@@ -227,6 +228,7 @@
     ],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-d3c5eb69eb9d397a",
         "EV-545bef6ff60cf3b2",
         "EV-66f24f6db71cc011",
         "EV-56c0d1d5b0c07971",
@@ -363,6 +365,82 @@
       ]
     },
     "timeline": [
+      {
+        "id": "EV-d3c5eb69eb9d397a",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-31",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "OpenCSG完成数亿元Pre-A轮融资",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "technology",
+            "dimensionName": "技术",
+            "id": "agentic_execution",
+            "name": "智能体",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "manufacturing",
+            "name": "制造业",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-55c37c5c0b75471a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-55c37c5c0b75471a",
+          "EN-7d3194f79e645c42",
+          "EN-3a7bd3e2360a3d29",
+          "EN-b81c8201acfc7639",
+          "EN-2ab6d53e717a0e0d",
+          "EN-25cdd04cf7fba6b1"
+        ]
+      },
       {
         "id": "EV-d1e3dd4ecf7bf9dc",
         "dataDate": "2026-10-01",
@@ -3353,6 +3431,7 @@
         "EV-bce46f2e5cc68d5d",
         "EV-8ed7d4e02cc5c2ab",
         "EV-f2c93c155070cd35",
+        "EV-d3c5eb69eb9d397a",
         "EV-086902ad904c1c90",
         "EV-8018e028f1840136",
         "EV-fe49d2ee580cfea2",
@@ -4478,13 +4557,18 @@
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
         "EV-89ec502a1340079a",
+        "EV-d3c5eb69eb9d397a",
+        "EV-0e854ee566f6d0b9",
+        "EV-bc166d0f16140940",
         "EV-ab839326ca9597d8",
         "EV-6a5a3f316200d1e3",
         "EV-77f9a1a9bcf8cc65",
         "EV-95385e7d45e69784",
+        "EV-beee465b894317c7",
         "EV-1744d0e71176f9a1",
         "EV-bdcb22b1a53358f5",
         "EV-50b5c4f93ead145d",
+        "EV-bec127224b1f1aca",
         "EV-bf8ce460c05b9ff0",
         "EV-c1295b8f58024ff6",
         "EV-83728e3b6c7736ce",
@@ -4492,6 +4576,7 @@
         "EV-673637ebe2ac2f2d",
         "EV-b6f025a2dc297b78",
         "EV-dc35d54f273196f0",
+        "EV-f36f5f7b24b2bfde",
         "EV-9ed6a759555d7e77",
         "EV-13e08bc37724e276",
         "EV-53253b5e23970958",
@@ -4599,8 +4684,10 @@
         "EV-2d0d165e866cd770",
         "EV-4a6cbe937d1b9701",
         "EV-ac5e33e067906a6d",
+        "EV-ed73cd2c438a470d",
         "EV-acdeebead5324344",
         "EV-4ef09c71be4c84cb",
+        "EV-63de2b6408efd796",
         "EV-6de81d4ca248ff31",
         "EV-3c408fe984c73089",
         "EV-e70b6a1287dcaa59",
@@ -5118,13 +5205,17 @@
         "EN-55c37c5c0b75471a",
         "EN-b0a61df9bfe99f72",
         "EN-071f3eca285403f1",
+        "EN-5ba042c14b39398d",
+        "EN-4b8de799d3cb1255",
         "EN-05bb7905b99d8025",
         "EN-96c842ee0d60fa41",
         "EN-b01ef9255dcc0caa",
         "EN-a1b7a0cc37ed257d",
+        "EN-6411d31f2aefa743",
         "EN-01b4537c6e0a2da7",
         "EN-67e8c106650aa683",
         "EN-2dc010636b9dce91",
+        "EN-d6d6dcf0bb132a3d",
         "EN-8526299f9ecc5fac",
         "EN-249fdefbb63fa7b3",
         "EN-240389f4b730bad4",
@@ -5132,6 +5223,7 @@
         "EN-18131bed4bcc2f1a",
         "EN-360a940182e67c66",
         "EN-e6f19fa7a6b52367",
+        "EN-d5dee8daa2eb5cc5",
         "EN-2be663431f007250",
         "EN-77a82bb9aafc81d9",
         "EN-65819e198c32566a",
@@ -5227,8 +5319,10 @@
         "EN-47afad612b1f9cc8",
         "EN-6c7cceb7ce4d4e6a",
         "EN-a675d46aba3c7e48",
+        "EN-4125bf4687377f47",
         "EN-5b3767eb23d5e4ed",
         "EN-470be66761dfc2e9",
+        "EN-dfc0fdff7af68ed2",
         "EN-b30b83d324e678e4",
         "EN-a3b8fbb2200a105a",
         "EN-5c443a92518833f1",
@@ -5586,12 +5680,15 @@
         "EV-d15929b5f2859e29",
         "EV-6cfa72f00022d66a",
         "EV-b3d47ecc5b08def7",
+        "EV-d3c5eb69eb9d397a",
         "EV-e11382111a5b99f6",
         "EV-657176fd0dff6209",
         "EV-7077778f0eb84f6c",
+        "EV-a1addb827a7ac17c",
         "EV-b231e1a452a7c74a",
         "EV-b73d931bd6adb78d",
         "EV-4f56483024dd4e84",
+        "EV-beee465b894317c7",
         "EV-bdcb22b1a53358f5",
         "EV-3f9d420719641eda",
         "EV-f5dd6dec49ad83aa",
@@ -5614,7 +5711,6 @@
         "EV-44cd5e03d30c85b3",
         "EV-f6a72cddbda748b3",
         "EV-6f092cfc7a064d64",
-        "EV-e084947e3f9e0667",
         "EV-64fb6d791e19d10a",
         "EV-12f331aaf7d4cca6",
         "EV-71d7d8bbaa623228",
@@ -5668,8 +5764,10 @@
         "EV-81b7cd5d6a37912c",
         "EV-c5d7d88d1aef8edb",
         "EV-7d75469a0d1ef8fa",
+        "EV-d778b532e1d6e74f",
         "EV-a9095d1178664a0b",
         "EV-64ee295aa85c2f65",
+        "EV-ed73cd2c438a470d",
         "EV-5575555340c04c5a",
         "EV-314db5cbf5010d41",
         "EV-9832526435c1695e",
@@ -5680,12 +5778,15 @@
         "EV-a592606de9958bbc",
         "EV-4ef09c71be4c84cb",
         "EV-565b6c1b10b3cf83",
+        "EV-2edec0302b3e0626",
         "EV-535c2f4fb851332d",
         "EV-622ebdad1e1fad2d",
         "EV-bf35f4d7b6193a47",
         "EV-3c408fe984c73089",
         "EV-794f0a86004da0c9",
         "EV-df37e9341b5c7f04",
+        "EV-ee9a4433b4e7715e",
+        "EV-4cc192a29a3099e8",
         "EV-bee8896bf7efa594",
         "EV-11e2a4e252d48f94",
         "EV-8077605769c4d4eb",
@@ -5974,9 +6075,11 @@
         "EN-122ae8e9e5fb4660",
         "EN-336ab1deb42d6284",
         "EN-be9d587defa1f0c0",
+        "EN-2bd806c97f0e00af",
         "EN-8d4321d936320802",
         "EN-7dd2a89f628d7525",
         "EN-586466805b277098",
+        "EN-6411d31f2aefa743",
         "EN-67e8c106650aa683",
         "EN-2f9cb7cda5222087",
         "EN-c70eca6b0f88f44d",
@@ -6037,8 +6140,10 @@
         "EN-d3531cc88f7ce911",
         "EN-09b680b7f0755af5",
         "EN-0369c8fcda657a43",
+        "EN-713589016b2361a3",
         "EN-ad27d4918a2a9660",
         "EN-7a8ce298d662e4cc",
+        "EN-4125bf4687377f47",
         "EN-9b21c9bf3305c0d6",
         "EN-3309b3b14807f39a",
         "EN-a43f157d208b2a63",
@@ -6048,9 +6153,12 @@
         "EN-168d2cac8014ba30",
         "EN-470be66761dfc2e9",
         "EN-90596b71813a2ee2",
+        "EN-15ea2fa417bd8597",
         "EN-a3b8fbb2200a105a",
         "EN-2c348893efb2316e",
         "EN-f0d59425e4c32abb",
+        "EN-586e52112859378f",
+        "EN-bac6d661867571f7",
         "EN-b5d7671990b8d4a8",
         "EN-f2b9106253663314",
         "EN-86b7b29d698963ef",
@@ -6219,12 +6327,14 @@
         "EV-9bade504e46219dd",
         "EV-d051cfbe3fd7e80f",
         "EV-c2718ea152dde192",
+        "EV-235f08be851797db",
         "EV-e084947e3f9e0667",
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
         "EV-71c4419c71d00625",
         "EV-181a7a6fd14cec08",
         "EV-4ef09c71be4c84cb",
+        "EV-42335b1bae58c172",
         "EV-8077605769c4d4eb",
         "EV-cc0d955aa68445ea",
         "EV-5bbc509a032b8309",
@@ -6265,11 +6375,13 @@
         "EN-955e510be03b9cc3",
         "EN-f2b9106253663314",
         "EN-10b106d9b0a27a4c",
+        "EN-d3c0a240ab92fda5",
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
         "EN-d37561692b664762",
         "EN-ff970851d49aee50",
         "EN-470be66761dfc2e9",
+        "EN-185ea241778d39c7",
         "EN-1a47edcb80cc76dd",
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
@@ -6299,7 +6411,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "TX-deployment_model-edge_device",
@@ -6311,12 +6423,14 @@
         "EV-9bade504e46219dd",
         "EV-d051cfbe3fd7e80f",
         "EV-c2718ea152dde192",
+        "EV-235f08be851797db",
         "EV-e084947e3f9e0667",
         "EV-a15da1b52d939967",
         "EV-736404028b8ad33e",
         "EV-71c4419c71d00625",
         "EV-181a7a6fd14cec08",
         "EV-4ef09c71be4c84cb",
+        "EV-42335b1bae58c172",
         "EV-8077605769c4d4eb",
         "EV-cc0d955aa68445ea",
         "EV-5bbc509a032b8309",
@@ -6355,11 +6469,13 @@
         "EN-955e510be03b9cc3",
         "EN-f2b9106253663314",
         "EN-10b106d9b0a27a4c",
+        "EN-d3c0a240ab92fda5",
         "EN-a35b80cf9d171015",
         "EN-48bebf25e5bd5aca",
         "EN-d37561692b664762",
         "EN-ff970851d49aee50",
         "EN-470be66761dfc2e9",
+        "EN-185ea241778d39c7",
         "EN-1a47edcb80cc76dd",
         "EN-b5318593e1260f2f",
         "EN-968e2d5b08687bf4",
@@ -6389,7 +6505,7 @@
       ],
       "hardwareIds": [],
       "firstSeen": "2026-01-06",
-      "lastSeen": "2026-09-24"
+      "lastSeen": "2026-10-02"
     },
     {
       "id": "TX-industry-food_hospitality",
@@ -6717,6 +6833,83 @@
     }
   ],
   "hardwareCatalog": [
+    {
+      "id": "HWC-84acc3c635ac339b",
+      "snapshotKey": "84acc3c635ac339b",
+      "snapshotId": "HWS-66a10961798fa054",
+      "eventId": "EV-d3c5eb69eb9d397a",
+      "eventIds": [
+        "EV-d3c5eb69eb9d397a"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "OpenCSG",
+      "subject": "OpenCSG",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "shipment_deployment"
+      ],
+      "latestValues": {
+        "shipment_deployment": {
+          "metric_value": "24",
+          "unit": "亿",
+          "fact_ref": "HWF-1489cdfb1f7fa525"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-1489cdfb1f7fa525",
+          "fact_type": "shipment_deployment",
+          "observed_at": "2026-08-31",
+          "subject_entity_id": "EN-55c37c5c0b75471a",
+          "subject_name": "OpenCSG",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "24",
+          "unit": "亿",
+          "source_quote": "本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。\n近日，开放传神（OpenCSG）宣布完成数亿元人民币Pre-A轮融资，投后估值迈入独角兽级别。本轮融资由静安资本、市北高新、徐汇资本、黄海金控等共同参与。此前，OpenCSG已获得联想创投、北京国信中数、中科升哲等机构投资。本轮融资完成后，OpenCSG将进一步加大在开源AI基础设施、Agentic AI平台、全球开发者生态及城市级AI基础设施等方向的投入，推动中国开源AI技术与生态走向全球。成立于 2023 年的 OpenCSG，是一家面向大模型与智能体时代的 AI 原生公司，致力于通过开源开放的技术生态，帮助企业、园区和城市客户构建可管理、可部署、可运营的 AI 能力底座。从开源大模型社区出发，公司逐步将能力延伸至企业级 AI 平台、Agentic AI 以及城市级 AI 基础设施。\n 新浪科技公众号\n “掌”握科技鲜闻 （微信搜索techsina或扫描左侧二维码关注）\n 相关新闻\n 创事记\n 索尼游戏，进退两难\n OpenAI抢后台，马斯克抢前台\n 陌陌母公司挚文季报图解：营收24亿净利降19% 唐岩刚获派息超8000万\n 阅读排行榜\n 评论排行榜\n 苹果折叠屏iPhone正在测试手写笔：乔布斯当年最嫌弃的配件回归\n 塞浦路斯一艘载有约270名乘客渡轮倾覆，出事海域海况恶劣，当地镇长：已救起159人\n “雪王”猛踩刹车，蜜雪集团能否大象转身？\n 第一批买网红小家电的人 已经开始后悔了\n 告别100年流水线！车自己去找工位？探秘全国唯一的“领航级”汽车工厂\n 华为鸿蒙折叠电脑要出小尺寸版本：配备独立外屏 定价更香\n 年销千辆暴跌90%，豪车玛莎拉蒂“诺基亚”了\n 市值2700亿 国产GPU四小龙之一的沐曦首次盈利：7nm显卡已量产\n 快递寄丢45万爱马仕仅赔500元 当事人还倒贴近万元\n 16年磨一镜！NASA罗曼空间望远镜终于升空：视野达哈勃的100倍\n 告别100年流水线！车自己去找工位？探秘全国唯一的“领航级”汽车工厂\n 无人快递车顶上趴着俩人搭便车！厂商回应：绕过摄像头就识别不了\n 国内首部 AIGC 长剧《后西游记》今日开播，首部“边审边播”剧集\n 当事乘客回应“厦航飞北京航班上遭邻座扇耳光”：对方系中年女性 航司称乘务员目击脚踹动作\n 苹果折叠屏iPhone正在测试手写笔：乔布斯当年最嫌弃的配件回归\n 苹果发布会倒计时，首款折叠iPhone价格曝光\n 上海电信突发大范围断网 手机信号网络全无：官方致歉 已陆续恢复\n ",
+          "event_refs": [
+            "EV-d3c5eb69eb9d397a"
+          ],
+          "claim_ref": "CL-7b7205b2d52422c3",
+          "source_refs": [
+            "SA-87f7278abfa670cd"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "specificationFacts": [],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-55c37c5c0b75471a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://finance.sina.com.cn/tech/roll/2026-08-31/doc-iniqexup7868136.shtml",
+      "entityIds": [
+        "EN-55c37c5c0b75471a",
+        "EN-7d3194f79e645c42",
+        "EN-3a7bd3e2360a3d29",
+        "EN-b81c8201acfc7639",
+        "EN-2ab6d53e717a0e0d",
+        "EN-25cdd04cf7fba6b1"
+      ]
+    },
     {
       "id": "HWC-9aa8dc06359294bf",
       "snapshotKey": "9aa8dc06359294bf",

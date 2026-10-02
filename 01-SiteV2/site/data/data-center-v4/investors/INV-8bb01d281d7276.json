@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,27 +61,39 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-03-12",
+    "first_disclosed_at": "2026-01-21",
     "latest_disclosed_at": "2026-03-12",
     "role_counts": {
-      "participant": 1
+      "co_lead": 1,
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_a"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-ec418abaacc30a58",
+        "canonical_entity_id": "",
+        "name": "AheadComputing, Inc."
+      },
+      {
+        "entity_id": "EN-15e420fd3ab3f2ef",
+        "canonical_entity_id": "",
+        "name": "Efficient Computer"
       }
     ],
     "activities": [
@@ -124,6 +136,86 @@
             "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-08827f2d152f2a9a",
+        "funding_insight_id": "FI-f6129bfd1bbdd9ed",
+        "event_ids": [
+          "EV-b9b446350006fbae"
+        ],
+        "company_entity_id": "EN-15e420fd3ab3f2ef",
+        "company_canonical_entity_id": "",
+        "company_name": "Efficient Computer",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$60 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 60000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6000 万美元"
+        },
+        "announced_at": "2026-02-18",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-840402012d166d60",
+            "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+            "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+            "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+            "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+            "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ade7bf94656925c1",
+        "funding_insight_id": "FI-184c6532af326d6a",
+        "event_ids": [
+          "EV-4d9754466f03bf16"
+        ],
+        "company_entity_id": "EN-ec418abaacc30a58",
+        "company_canonical_entity_id": "",
+        "company_name": "AheadComputing, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$30M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 30000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3000 万美元"
+        },
+        "announced_at": "2026-01-21",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-71f6a0b77ac7d607",
+            "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
+            "source_title": "AheadComputing Inc. 额外融资3000万美元 Seed2 轮，旨在重塑 CPU 架构",
+            "source_content_hash": "8998c2f98329cefde978c1e75b66e3332758f5b9206e1b46ee846cc9a8bf0f43",
+            "quote": "The round was co-led by Eclipse, Toyota Ventures, and Cambium",
+            "quote_hash": "f8c1f320ac18f6f1650fba29ebc05ab4f6e3730385a3e2284a954a3ea70d5e0c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +226,22 @@
         "source_content_hash": "adc0cc9ffe3c9dd0",
         "quote": "additional backing from NVIDIA, Temasek, Samsung, Toyota Ventures, Bpifrance",
         "quote_hash": "20b43e14b78ede902de6f83471ab12268aca45d526e2b5d016ab4996e017499a"
+      },
+      {
+        "source_id": "FISRC-840402012d166d60",
+        "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+        "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+        "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+        "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+        "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
+      },
+      {
+        "source_id": "FISRC-71f6a0b77ac7d607",
+        "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
+        "source_title": "AheadComputing Inc. 额外融资3000万美元 Seed2 轮，旨在重塑 CPU 架构",
+        "source_content_hash": "8998c2f98329cefde978c1e75b66e3332758f5b9206e1b46ee846cc9a8bf0f43",
+        "quote": "The round was co-led by Eclipse, Toyota Ventures, and Cambium",
+        "quote_hash": "f8c1f320ac18f6f1650fba29ebc05ab4f6e3730385a3e2284a954a3ea70d5e0c"
       }
     ],
     "public_profile": {
@@ -237,6 +345,14 @@
         {
           "description": "第三方报道称 Toyota Ventures 参与 AMI Labs 10.3 亿美元种子轮；此金额为全轮总额，未披露机构单家出资额，且并非机构官方交易公告。",
           "source_id": "FISRC-6c35525e379488bf"
+        },
+        {
+          "description": "融资来源记录：Efficient Computer · A轮 · 2026-02-18 · 本轮参投 · $60 Million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-840402012d166d60"
+        },
+        {
+          "description": "融资来源记录：AheadComputing, Inc. · 种子轮 · 2026-01-21 · 本轮联合领投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-71f6a0b77ac7d607"
         }
       ],
       "current_roles": [],
@@ -383,6 +499,22 @@
           "source_content_hash": "4a0f3092b265251a120bf52b7a37fc80c207a683fd701fa2d1f0d5f2d983a758",
           "quote": "Investment Board. Gill Pratt. Board Member.",
           "quote_hash": "513c21f13c4ca6eecaa157898585585ab4125edaebc5e4452b273f009b8123bc"
+        },
+        {
+          "source_id": "FISRC-840402012d166d60",
+          "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
+          "source_title": "Efficient Computer 融资 6000 万美元，推进面向 AI 的节能通用处理器",
+          "source_content_hash": "a0edd68c5374470f0638aa5079a21a7e544f8a8370e4030847e40a96e98a5654",
+          "quote": "a $60 million Series A funding round led by Triatomic Capital with participation from Eclipse,Union Square Ventures, Overlap Holdings, Box Group, RTX Ventures, Toyota Ventures, Overmatch Ventures, and others.",
+          "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
+        },
+        {
+          "source_id": "FISRC-71f6a0b77ac7d607",
+          "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
+          "source_title": "AheadComputing Inc. 额外融资3000万美元 Seed2 轮，旨在重塑 CPU 架构",
+          "source_content_hash": "8998c2f98329cefde978c1e75b66e3332758f5b9206e1b46ee846cc9a8bf0f43",
+          "quote": "The round was co-led by Eclipse, Toyota Ventures, and Cambium",
+          "quote_hash": "f8c1f320ac18f6f1650fba29ebc05ab4f6e3730385a3e2284a954a3ea70d5e0c"
         }
       ],
       "last_verified_at": "2026-09-28"

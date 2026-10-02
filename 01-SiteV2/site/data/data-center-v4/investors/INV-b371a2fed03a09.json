@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,7 +64,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 2,
-    "historical_or_ambiguous_count": 2,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
@@ -74,7 +74,7 @@
     "first_disclosed_at": "2026-05-28",
     "latest_disclosed_at": "2026-07-23",
     "role_counts": {
-      "historical_or_ambiguous": 2,
+      "historical_or_ambiguous": 3,
       "participant": 2
     },
     "round_codes": [
@@ -208,6 +208,38 @@
         ]
       },
       {
+        "activity_id": "IA-159885d4dab88910",
+        "funding_insight_id": "FI-643b76798f958bf3",
+        "event_ids": [
+          "EV-3d5daffd1cb9521b"
+        ],
+        "company_entity_id": "EN-b8f1c575bfcf5ece",
+        "company_canonical_entity_id": "",
+        "company_name": "Eliyan Corporation",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series B 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-2e3c849f55d66222",
+            "source_url": "https://startupintros.com/orgs/eliyan",
+            "source_title": "Eliyan: Funding, Team & Investors",
+            "source_content_hash": "11e0a57400629219",
+            "quote": "Mar 1, 2024$60M Series BMarco Chisari, Tiger GlobalEhukai Investments, Intel Capital, Cleveland Avenue, Mesh Ventures, SK Hynix",
+            "quote_hash": "55523339e25b9ed4dc6b8df27fceffe2d79afaa2990ca0f9f7380c3c98a84de7"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-7dd78b88983c809d",
         "funding_insight_id": "FI-12d0278b1cf72d65",
         "event_ids": [
@@ -264,6 +296,14 @@
         "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
         "quote": "Joining them are strategic infrastructure partners—Micron, Samsung, and SK hynix—whose technologies play a critical role in the world's supply of memory, storage, and logic chips.",
         "quote_hash": "d234fc755255a6c0cf9808e2602c1842e9441b13f179294561bed037bdb0bc15"
+      },
+      {
+        "source_id": "FISRC-2e3c849f55d66222",
+        "source_url": "https://startupintros.com/orgs/eliyan",
+        "source_title": "Eliyan: Funding, Team & Investors",
+        "source_content_hash": "11e0a57400629219",
+        "quote": "Mar 1, 2024$60M Series BMarco Chisari, Tiger GlobalEhukai Investments, Intel Capital, Cleveland Avenue, Mesh Ventures, SK Hynix",
+        "quote_hash": "55523339e25b9ed4dc6b8df27fceffe2d79afaa2990ca0f9f7380c3c98a84de7"
       },
       {
         "source_id": "FISRC-0465de4e7032d422",
@@ -333,6 +373,14 @@
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-08-21T02:11:59.594Z",
+          "status": "translated"
+        },
+        "activities[3].role": {
+          "text": "Series B 参投",
+          "source_hash": "eddcb633d9d5f698a999db85c2bed65b9d7c88927129b6818a7c40bf0be659ff",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:20.336Z",
           "status": "translated"
         }
       }

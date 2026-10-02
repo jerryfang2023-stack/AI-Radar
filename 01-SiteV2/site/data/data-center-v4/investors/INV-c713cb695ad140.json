@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3811,
+    "eventCount": 3870,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,104 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "current_round_count": 1,
+    "historical_or_ambiguous_count": 2,
+    "portfolio_company_count": 1,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-08-20",
+    "latest_disclosed_at": "2026-08-20",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 2,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "multi_round"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-34069c35fbafefc6",
+        "canonical_entity_id": "",
+        "name": "数美万物"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-9a5fa80dbd8ca94c",
+        "funding_insight_id": "FI-2e0a12585d18ffca",
+        "event_ids": [
+          "EV-f5a5d68ac60d2565"
+        ],
+        "company_entity_id": "EN-34069c35fbafefc6",
+        "company_canonical_entity_id": "",
+        "company_name": "数美万物",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "近5000万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 5000 万美元"
+        },
+        "announced_at": "2026-08-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0dd42e7d7de8bcd9",
+            "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+            "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+            "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+            "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+            "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f8d5c506edf7bb5c",
+        "funding_insight_id": "FI-2e0a12585d18ffca",
+        "event_ids": [
+          "EV-f5a5d68ac60d2565"
+        ],
+        "company_entity_id": "EN-34069c35fbafefc6",
+        "company_canonical_entity_id": "",
+        "company_name": "数美万物",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-A轮跟投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-eff56a0dccad1e36",
+            "source_url": "https://www.sohu.com/a/848831543_122074763",
+            "source_title": "速递｜张一鸣和王兴又联手投了新项目，抖音创始成员，估值已超1.5亿美元",
+            "source_content_hash": "7b66c4509a33a1bf",
+            "quote": "本轮融资由美团龙珠领投，锦秋基金跟投，老股东红杉中国与IDG资本继续支持。",
+            "quote_hash": "daeb4a1dbe758efc8a14910c5a4c9cc36546d0c2b3b25d03af08421a50063b3a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3db040e3be9c10e1",
         "funding_insight_id": "FI-8acd5314a46c6068",
@@ -111,6 +193,22 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-0dd42e7d7de8bcd9",
+        "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+        "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+        "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+        "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+        "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+      },
+      {
+        "source_id": "FISRC-eff56a0dccad1e36",
+        "source_url": "https://www.sohu.com/a/848831543_122074763",
+        "source_title": "速递｜张一鸣和王兴又联手投了新项目，抖音创始成员，估值已超1.5亿美元",
+        "source_content_hash": "7b66c4509a33a1bf",
+        "quote": "本轮融资由美团龙珠领投，锦秋基金跟投，老股东红杉中国与IDG资本继续支持。",
+        "quote_hash": "daeb4a1dbe758efc8a14910c5a4c9cc36546d0c2b3b25d03af08421a50063b3a"
+      },
       {
         "source_id": "FISRC-d0c3dca85d845330",
         "source_url": "https://news.pedaily.cn/202609/569015.shtml",
@@ -164,6 +262,14 @@
         {
           "description": "投资界2026年9月报道因克斯完成超3亿元B轮，并称复星创富、深创投、华控基金、锦秋基金、普华资本等老股东持续多轮追投；超3亿元为整轮金额，未披露锦秋基金本轮出资额。",
           "source_id": "FISRC-d0c3dca85d845330"
+        },
+        {
+          "description": "融资来源记录：数美万物 · 多轮融资 · 2026-08-20 · 本轮参投 · 近5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0dd42e7d7de8bcd9"
+        },
+        {
+          "description": "融资来源记录：数美万物 · 历史轮次未披露 · Pre-A轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eff56a0dccad1e36"
         }
       ],
       "contacts": [
@@ -206,6 +312,22 @@
           "source_content_hash": "e86bd6fffaf894b4",
           "quote": "同时 复星创富、深创投、华控基金、锦秋基金、普华资本作为老股东持续多轮追投。",
           "quote_hash": "0553874275a9d1405d1a0f8e1cc88e61b74f557cf7f1adcb9fac56dd7353f161"
+        },
+        {
+          "source_id": "FISRC-0dd42e7d7de8bcd9",
+          "source_url": "https://rccaijing.com/news-7496079406088779054.html",
+          "source_title": "原字节PICO副总裁任利锋再创业，数美万物完成A+轮融资、红杉和美团都投了 - 瑞财经",
+          "source_content_hash": "daf5a83a616455b0bc9c5a0e07a4a2fc844a3048208d82e6b0121af372bd9890",
+          "quote": "两轮融资由BAI资本、华业天成资本连续领投，云晖资本及老股东红杉中国、IDG资本、美团龙珠、清流资本、锦秋基金跟投。",
+          "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
+        },
+        {
+          "source_id": "FISRC-eff56a0dccad1e36",
+          "source_url": "https://www.sohu.com/a/848831543_122074763",
+          "source_title": "速递｜张一鸣和王兴又联手投了新项目，抖音创始成员，估值已超1.5亿美元",
+          "source_content_hash": "7b66c4509a33a1bf",
+          "quote": "本轮融资由美团龙珠领投，锦秋基金跟投，老股东红杉中国与IDG资本继续支持。",
+          "quote_hash": "daeb4a1dbe758efc8a14910c5a4c9cc36546d0c2b3b25d03af08421a50063b3a"
         }
       ],
       "coverage_note": "成立时间、投资方向、团队和组合案例来自基金官网；官网展示案例不是完整组合或业绩回报。融资报道中的超3亿元为因克斯B轮总额，不是锦秋基金的单独出资金额。",
@@ -213,6 +335,18 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "researched"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[1].role": {
+          "text": "Pre-A轮跟投",
+          "source_hash": "9306282e5fd3ce623e009065f8fbf0fd8c2acd50b228ea756806f4b558632a17",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-09-12T09:32:49.993Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }
