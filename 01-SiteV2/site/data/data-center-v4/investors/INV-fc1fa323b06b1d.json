@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,20 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 3,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "CN"
     ],
-    "china_market_activity_count": 4,
-    "china_market_company_count": 4,
+    "china_market_activity_count": 5,
+    "china_market_company_count": 5,
     "first_disclosed_at": "2026-05-07",
-    "latest_disclosed_at": "2026-08-19",
+    "latest_disclosed_at": "2026-08-26",
     "role_counts": {
       "historical_or_ambiguous": 3,
       "lead": 1,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "angel",
@@ -101,9 +101,54 @@
         "entity_id": "EN-0369c8fcda657a43",
         "canonical_entity_id": "EN-0369c8fcda657a43",
         "name": "无问芯穹"
+      },
+      {
+        "entity_id": "EN-997a5e6e513f2a90",
+        "canonical_entity_id": "",
+        "name": "星辰技术"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7d79fcfb6744ec63",
+        "funding_insight_id": "FI-8cf15f7318cc6265",
+        "event_ids": [
+          "EV-e11382111a5b99f6"
+        ],
+        "company_entity_id": "EN-997a5e6e513f2a90",
+        "company_canonical_entity_id": "",
+        "company_name": "星辰技术",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "近50亿元",
+        "amount_normalized": {
+          "currency": "CNY",
+          "value": 5000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "approximate",
+          "display_zh": "约 50 亿元"
+        },
+        "announced_at": "2026-08-26",
+        "market_region": "CN",
+        "china_market_match": true,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-662073c15d82f553",
+            "source_url": "http://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260826_6001551.shtml",
+            "source_title": "湖北省经济和信息化厅",
+            "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+            "quote": "据星辰技术最新的工商信息，这份投资方名单星光熠熠：高瓴创投、红杉中国、君联资本、中金资本、招银投资、深创投……",
+            "quote_hash": "3b4598ff323bfa39d8e54f8bb24d069fa10ab49783cadc2fdc85d2513636825a"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f812c203c4dc9c4d",
         "funding_insight_id": "FI-dc9e5d11c96e1760",
@@ -367,6 +412,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-662073c15d82f553",
+        "source_url": "http://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260826_6001551.shtml",
+        "source_title": "湖北省经济和信息化厅",
+        "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+        "quote": "据星辰技术最新的工商信息，这份投资方名单星光熠熠：高瓴创投、红杉中国、君联资本、中金资本、招银投资、深创投……",
+        "quote_hash": "3b4598ff323bfa39d8e54f8bb24d069fa10ab49783cadc2fdc85d2513636825a"
+      },
+      {
         "source_id": "FISRC-b7725acf292395aa",
         "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-19/doc-ininvmyx9448955.shtml",
         "source_title": "清雁科技完成数亿元A轮融资",
@@ -616,7 +669,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[6].role": {
+        "activities[7].role": {
           "text": "Pre-A++轮领投",
           "source_hash": "c17edb52e19a80f769b3d7eaff613c94c5bc182eadef3ef691dfcf2d817465cd",
           "provider": "deepseek",

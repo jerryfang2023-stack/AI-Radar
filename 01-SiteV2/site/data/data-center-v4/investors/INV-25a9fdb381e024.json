@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 14,
+    "current_round_count": 16,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 14,
+    "portfolio_company_count": 15,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,7 +74,7 @@
     "role_counts": {
       "co_lead": 2,
       "historical_or_ambiguous": 4,
-      "lead": 7,
+      "lead": 9,
       "participant": 5
     },
     "round_codes": [
@@ -131,6 +131,11 @@
         "entity_id": "EN-1c5483264189feef",
         "canonical_entity_id": "",
         "name": "Onyx"
+      },
+      {
+        "entity_id": "EN-5862e00bd2052e99",
+        "canonical_entity_id": "",
+        "name": "Pramaana Labs"
       },
       {
         "entity_id": "FICO-d750f652e8f2dd92",
@@ -664,6 +669,86 @@
         ]
       },
       {
+        "activity_id": "IA-7b2eeaa743c3c98b",
+        "funding_insight_id": "FI-297719a093cb1b40",
+        "event_ids": [
+          "EV-07cef8183aa6c17b"
+        ],
+        "company_entity_id": "EN-5862e00bd2052e99",
+        "company_canonical_entity_id": "",
+        "company_name": "Pramaana Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-35c5de2fa4b68376",
+            "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+            "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+            "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+            "quote": "Pramaana Labs announced $27 million in seed funding led by Khosla Ventures, with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound.",
+            "quote_hash": "b16956281fa9db44d3537b3e8a54685b2b573cdb2d177a53989b1d9662b1fe66"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-ada08a0477c83647",
+        "funding_insight_id": "FI-2beaec77613f6a7f",
+        "event_ids": [
+          "EV-20e5d57a05b69a95"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+            "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+            "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-09226cb09331ee6b",
         "funding_insight_id": "FI-a29040155764e60f",
         "event_ids": [
@@ -994,6 +1079,22 @@
         "quote_hash": "02ef66cfce6123679777d9adcb9092ea6330aeb530c4716f9b316ea573f745b8"
       },
       {
+        "source_id": "FISRC-35c5de2fa4b68376",
+        "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+        "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+        "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+        "quote": "Pramaana Labs announced $27 million in seed funding led by Khosla Ventures, with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound.",
+        "quote_hash": "b16956281fa9db44d3537b3e8a54685b2b573cdb2d177a53989b1d9662b1fe66"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+        "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+        "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
+      },
+      {
         "source_id": "FISRC-03b9d51b95b8c6ce",
         "source_url": "https://www.globenewswire.com/news-release/2025/03/12/3041638/0/en/Onyx-Raises-10M-To-Help-Teams-Find-Knowledge-Faster-with-Open-Source-AI-Agents.html",
         "source_title": "Onyx 获 1000 万美元融资，助力团队更快获取知识",
@@ -1196,7 +1297,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[14].role": {
+        "activities[16].role": {
           "text": "Series C 领投",
           "source_hash": "c55ed79792c5d8940ad622d8d48ba34699b43b78b6c1f267f19f91e6570bbcca",
           "provider": "deepseek",

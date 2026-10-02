@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,10 +72,11 @@
     "first_disclosed_at": "2026-05-07",
     "latest_disclosed_at": "2026-09-28",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
+      "series_c",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -83,6 +84,11 @@
         "entity_id": "EN-40a9543b0f7b0cf9",
         "canonical_entity_id": "",
         "name": "Modulate"
+      },
+      {
+        "entity_id": "EN-46a10435f014ccc9",
+        "canonical_entity_id": "",
+        "name": "Neko Health"
       },
       {
         "entity_id": "EN-d2d165dff04ba225",
@@ -128,6 +134,46 @@
             "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
             "quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar.",
             "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-843d000fa603e184",
+        "funding_insight_id": "FI-df55ec22162132fb",
+        "event_ids": [
+          "EV-68cb62eca02df206"
+        ],
+        "company_entity_id": "EN-46a10435f014ccc9",
+        "company_canonical_entity_id": "",
+        "company_name": "Neko Health",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$700m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-07-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6442b5e548ad70ee",
+            "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+            "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+            "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+            "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
+            "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
           }
         ]
       },
@@ -182,6 +228,14 @@
         "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
       },
       {
+        "source_id": "FISRC-6442b5e548ad70ee",
+        "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+        "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+        "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+        "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
+        "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
+      },
+      {
         "source_id": "FISRC-1ac5030ddaba00a3",
         "source_url": "https://siliconangle.com/2026/05/07/ai-product-team-startup-pit-raises-16m-a16z-others-automate-enterprise-workflows/",
         "source_title": "AI 产品团队初创公司 Pit 获 a16z 等投资 1600 万美元，用于自动化企业工作流",
@@ -204,6 +258,10 @@
           "source_id": "FISRC-6ec519350686cbda"
         },
         {
+          "description": "融资来源记录：Neko Health · C轮 · 2026-07-15 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6442b5e548ad70ee"
+        },
+        {
           "description": "融资来源记录：Pitdotcom Sweden AB · 种子轮 · 2026-05-07 · 本轮参投 · $16 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1ac5030ddaba00a3"
         }
@@ -217,6 +275,14 @@
           "source_content_hash": "9e972b90fef24b98d2f60cb378f78e88317d2c65c1d57d82bb346680ac8c97a2",
           "quote": "Modulate’s new funding was led by Future Ventures with participation from Hyperplane and Lakestar.",
           "quote_hash": "74f64b47ac286aaf6413d8cc24e567a010092fa0545e2ce869d5a3f70f1f3d76"
+        },
+        {
+          "source_id": "FISRC-6442b5e548ad70ee",
+          "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+          "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+          "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+          "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
+          "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
         },
         {
           "source_id": "FISRC-1ac5030ddaba00a3",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -59,6 +59,7 @@
     "typeLabel": "应用场景",
     "valueId": "legal_compliance",
     "eventIds": [
+      "EV-e124ba0fc4fef3c0",
       "EV-ab839326ca9597d8",
       "EV-ea109db692b88079",
       "EV-bffc68e7bb4d598b",
@@ -77,6 +78,7 @@
       "EV-6e96760ed7e2ebaa"
     ],
     "entityIds": [
+      "EN-8bacc14fb816a980",
       "EN-05bb7905b99d8025",
       "EN-26997989b8425dac",
       "EN-7f67f2f8692510cf",
@@ -95,9 +97,172 @@
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-01-20",
-    "lastSeen": "2026-09-12"
+    "lastSeen": "2026-10-02"
   },
   "events": [
+    {
+      "id": "EV-e124ba0fc4fef3c0",
+      "dataDate": "2026-10-02",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "新模型律所Arceus融资1700万美元",
+      "originalTitle": "New Model Law Firm Arceus Raises $17m",
+      "subject": "Arceus Legal",
+      "action": "funding",
+      "object": "$17 million",
+      "metrics": [
+        "$17 million",
+        "$17M",
+        "$500."
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8bacc14fb816a980"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8bacc14fb816a980"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "legal_compliance",
+            "name": "法律与合规",
+            "entityIds": [
+              "EN-8bacc14fb816a980"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "legal_services",
+            "name": "法律服务",
+            "entityIds": [
+              "EN-8bacc14fb816a980"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8bacc14fb816a980"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-8bacc14fb816a980"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "legal_compliance",
+          "name": "法律与合规",
+          "entityIds": [
+            "EN-8bacc14fb816a980"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "legal_compliance",
+          "name": "法律与合规",
+          "entityIds": [
+            "EN-8bacc14fb816a980"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-8bacc14fb816a980"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "legal_services",
+          "name": "法律服务",
+          "entityIds": [
+            "EN-8bacc14fb816a980"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-8bacc14fb816a980"
+      ],
+      "entityNames": [
+        "Arceus Legal"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.artificiallawyer.com/2026/10/01/new-model-law-firm-arceus-raises-17m/",
+      "publisher": "www.artificiallawyer.com"
+    },
     {
       "id": "EV-ab839326ca9597d8",
       "dataDate": "2026-08-30",
@@ -5371,6 +5536,29 @@
   ],
   "entities": [
     {
+      "id": "EN-8bacc14fb816a980",
+      "name": "Arceus Legal",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-e124ba0fc4fef3c0"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-legal_services",
+        "TX-use_case-legal_compliance"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-10-01",
+      "lastSeen": "2026-10-02"
+    },
+    {
       "id": "EN-05bb7905b99d8025",
       "name": "CogniLex",
       "entityType": "organization_candidate",
@@ -5385,15 +5573,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-legal_services",
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-use_case-data_analysis",
         "TX-use_case-knowledge_search",
-        "TX-industry-legal_services",
         "TX-product_form-model_api_service",
-        "TX-ai_market_subcategory-legal",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-legal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-08-23",
@@ -5414,14 +5602,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-ai_market_subcategory-industrials",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
         "TX-industry-construction_real_estate",
         "TX-product_form-end_user_application",
-        "TX-industry-energy_utilities",
-        "TX-use_case-legal_compliance"
+        "TX-industry-energy_utilities"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-30",
@@ -5442,13 +5630,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-ai_market_subcategory-financial_services",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-23",
@@ -5469,15 +5657,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-legal_services",
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-product_form-end_user_application",
         "TX-industry-government_public_sector",
-        "TX-industry-legal_services",
         "TX-use_case-procurement_supply_chain",
-        "TX-ai_market_subcategory-legal",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-legal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -5498,13 +5686,13 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-legal_services",
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-target_user-business_user",
         "TX-product_form-end_user_application",
         "TX-use_case-content_creation",
-        "TX-industry-legal_services",
-        "TX-ai_market_subcategory-legal",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-legal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -5525,14 +5713,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-legal_services",
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-legal_services",
-        "TX-ai_market_subcategory-legal",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-legal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-09",
@@ -5553,14 +5741,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-industry-legal_services",
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
-        "TX-industry-legal_services",
-        "TX-ai_market_subcategory-legal",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-legal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-08",
@@ -5581,14 +5769,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
-        "TX-technology-agentic_execution",
         "TX-industry-financial_services",
         "TX-use_case-finance_accounting",
-        "TX-ai_market_subcategory-financial_services",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-financial_services"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-06-19",
@@ -5609,15 +5797,15 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-industry-legal_services",
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-target_user-business_user",
         "TX-product_form-end_user_application",
         "TX-industry-government_public_sector",
         "TX-target_user-public_sector_user",
-        "TX-industry-legal_services",
         "TX-use_case-procurement_supply_chain",
-        "TX-ai_market_subcategory-legal",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-legal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-05-23",
@@ -5641,6 +5829,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-legal_compliance",
         "TX-target_user-business_user",
         "TX-product_form-security_software",
         "TX-industry-financial_services",
@@ -5650,8 +5839,7 @@
         "TX-target_user-public_sector_user",
         "TX-use_case-security_operations",
         "TX-ai_market_application-model_agent_security",
-        "TX-ai_market_subcategory-observability_evaluation",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-observability_evaluation"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-24",
@@ -5674,6 +5862,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-legal_compliance",
         "TX-ai_market_category-industry_applications",
         "TX-industry-aerospace_defense",
         "TX-product_form-enterprise_software_platform",
@@ -5681,8 +5870,7 @@
         "TX-industry-government_public_sector",
         "TX-target_user-public_sector_user",
         "TX-use_case-procurement_supply_chain",
-        "TX-ai_market_subcategory-legal",
-        "TX-use_case-legal_compliance"
+        "TX-ai_market_subcategory-legal"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-03-19",
@@ -5703,6 +5891,7 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-use_case-legal_compliance",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-use_case-productivity_enterprise_workflows",
@@ -5710,8 +5899,7 @@
         "TX-ai_market_subcategory-productivity_enterprise_workflows",
         "TX-industry-healthcare_life_sciences",
         "TX-industry-retail_ecommerce",
-        "TX-use_case-finance_accounting",
-        "TX-use_case-legal_compliance"
+        "TX-use_case-finance_accounting"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-01-20",
@@ -5732,9 +5920,9 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
-        "TX-product_form-enterprise_software_platform",
         "TX-technology-agentic_execution",
-        "TX-use_case-legal_compliance"
+        "TX-use_case-legal_compliance",
+        "TX-product_form-enterprise_software_platform"
       ],
       "relatedEntityIds": [],
       "firstSeen": "2026-07-28",
@@ -5767,6 +5955,7 @@
         "EV-cfbfc6c80338aa12",
         "EV-9b81b0dd09a046ab",
         "EV-002f1b7abaf28827",
+        "EV-71d7d8bbaa623228",
         "EV-e41fc65eb014893f",
         "EV-dfddbb260b3d1c77",
         "EV-78a11d309c3d4e97",
@@ -5780,6 +5969,8 @@
         "EV-9cf819fafc04ca0c",
         "EV-d85ea5150230ee56",
         "EV-6cb8979f92cf74ce",
+        "EV-1891e6540ad2c1e0",
+        "EV-4e4ae1578720e907",
         "EV-ef1de880e4ef9f75",
         "EV-63f49f303a80a6a0",
         "EV-0e424af71cfe12f8",
@@ -6050,13 +6241,14 @@
       ],
       "viewpointIds": [],
       "classificationRefs": [
+        "TX-technology-agentic_execution",
+        "TX-use_case-legal_compliance",
         "TX-industry-aerospace_defense",
         "TX-industry-manufacturing",
         "TX-product_form-enterprise_software_platform",
         "TX-target_user-business_user",
         "TX-target_user-developer",
         "TX-use_case-productivity_enterprise_workflows",
-        "TX-technology-agentic_execution",
         "TX-product_form-end_user_application",
         "TX-technology-embodied_ai",
         "TX-target_user-consumer",
@@ -6079,7 +6271,6 @@
         "TX-technology-open_weights",
         "TX-technology-video_generation",
         "TX-technology-image_generation",
-        "TX-use_case-legal_compliance",
         "TX-technology-computer_use",
         "TX-deployment_model-cloud",
         "TX-deployment_model-on_premise",

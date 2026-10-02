@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,15 +54,17 @@
   },
   "institution": {
     "id": "INV-ef04cc956f66dd",
-    "name": "Nvidia Ventures",
-    "aliases": [],
+    "name": "NVIDIA Ventures",
+    "aliases": [
+      "Nvidia Ventures"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "investment_institution",
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
@@ -72,6 +74,7 @@
     "first_disclosed_at": "2026-07-08",
     "latest_disclosed_at": "2026-07-08",
     "role_counts": {
+      "historical_or_ambiguous": 1,
       "participant": 1
     },
     "round_codes": [
@@ -132,6 +135,38 @@
             "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
           }
         ]
+      },
+      {
+        "activity_id": "IA-9f99b190ba14f737",
+        "funding_insight_id": "FI-03e399f9044022c0",
+        "event_ids": [
+          "EV-4e4ae1578720e907"
+        ],
+        "company_entity_id": "EN-ae3d8efc01c7627d",
+        "company_canonical_entity_id": "",
+        "company_name": "Astrocade",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "既有投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-236be7e662176457",
+            "source_url": "https://startupintros.com/orgs/astrocade",
+            "source_title": "Astrocade: Funding, Team & Investors",
+            "source_content_hash": "85199978301e944b",
+            "quote": "Astrocade is financially backed by a syndicate of notable technology investors, including Eric Schmidt, NVIDIA Ventures, John Riccitiello, David Baszucki, and Radical Ventures.",
+            "quote_hash": "0961c943eb436ed2d634fc85e6c90116f67fcb1d838bd46b36a52071626b56d5"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -150,6 +185,14 @@
         "source_content_hash": "56b4a47eeb530513",
         "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
         "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
+      },
+      {
+        "source_id": "FISRC-236be7e662176457",
+        "source_url": "https://startupintros.com/orgs/astrocade",
+        "source_title": "Astrocade: Funding, Team & Investors",
+        "source_content_hash": "85199978301e944b",
+        "quote": "Astrocade is financially backed by a syndicate of notable technology investors, including Eric Schmidt, NVIDIA Ventures, John Riccitiello, David Baszucki, and Radical Ventures.",
+        "quote_hash": "0961c943eb436ed2d634fc85e6c90116f67fcb1d838bd46b36a52071626b56d5"
       }
     ],
     "public_profile": {
@@ -191,6 +234,10 @@
         {
           "description": "另一则同轮报道将 NVentures 列为参投方。两份媒体材料的主体称呼存在差异，因此暂以待核实的公开活动记录呈现，不据此确认法定主体或出资额。",
           "source_id": "FISRC-fbda7a24ef3d8ef8"
+        },
+        {
+          "description": "融资来源记录：Astrocade · 历史轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-236be7e662176457"
         }
       ],
       "contacts": [
@@ -241,6 +288,14 @@
           "source_content_hash": "56b4a47eeb530513",
           "quote": "Radical Ventures led the charge, with Nvidia Ventures and Intel Capital jumping in.",
           "quote_hash": "24bdc3b7a36b729c317ee6fed8d24a6aab20830cfcd7d9956ef47fab33d60d6b"
+        },
+        {
+          "source_id": "FISRC-236be7e662176457",
+          "source_url": "https://startupintros.com/orgs/astrocade",
+          "source_title": "Astrocade: Funding, Team & Investors",
+          "source_content_hash": "85199978301e944b",
+          "quote": "Astrocade is financially backed by a syndicate of notable technology investors, including Eric Schmidt, NVIDIA Ventures, John Riccitiello, David Baszucki, and Radical Ventures.",
+          "quote_hash": "0961c943eb436ed2d634fc85e6c90116f67fcb1d838bd46b36a52071626b56d5"
         }
       ],
       "coverage_note": "公开的 Prime Intellect 融资来源对 NVIDIA/NVentures 名称的表述不同；融资总额不是该投资者的单笔出资额。官网媒体联系邮箱不是投资申请渠道。",

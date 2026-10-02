@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,13 +73,14 @@
     "latest_disclosed_at": "2026-06-24",
     "role_counts": {
       "lead": 3,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
       "series_a",
       "series_b",
-      "series_c"
+      "series_c",
+      "series_f"
     ],
     "portfolio_companies": [
       {
@@ -106,6 +107,11 @@
         "entity_id": "EN-e69f64149edae6b1",
         "canonical_entity_id": "EN-e69f64149edae6b1",
         "name": "Runlayer"
+      },
+      {
+        "entity_id": "EN-4d7594e57f7d03f3",
+        "canonical_entity_id": "",
+        "name": "Supabase"
       }
     ],
     "activities": [
@@ -154,6 +160,46 @@
             "source_content_hash": "36d67b31b12d3716",
             "quote": "Felicis preempted the round — a strong signal of investor conviction — after having also led the company’s $11 million seed round",
             "quote_hash": "39ca999c5b3b8fd54de07533fe179ee51e8c2ef40953f3c4e8466ebdf69f1e5b"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bc67ec54e6cffc32",
+        "funding_insight_id": "FI-d3f8f22849d09dcc",
+        "event_ids": [
+          "EV-42ba61e8713cd2e6"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$500M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a9654b37adce00dc",
+            "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+            "source_title": "Why Georgian Invested in Supabase",
+            "source_content_hash": "2ff196d4fa7dc98a",
+            "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+            "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
           }
         ]
       },
@@ -336,6 +382,14 @@
         "quote_hash": "39ca999c5b3b8fd54de07533fe179ee51e8c2ef40953f3c4e8466ebdf69f1e5b"
       },
       {
+        "source_id": "FISRC-a9654b37adce00dc",
+        "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+        "source_title": "Why Georgian Invested in Supabase",
+        "source_content_hash": "2ff196d4fa7dc98a",
+        "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+        "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
+      },
+      {
         "source_id": "FISRC-62071134d28f47b9",
         "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
         "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
@@ -422,8 +476,8 @@
           "source_id": "FISRC-06082ac5aeed96c9"
         },
         {
-          "description": "融资来源记录：Fractile · B轮 · 2026-05-13 · 本轮参投 · 2.2亿美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-62071134d28f47b9"
+          "description": "融资来源记录：Supabase · F轮 · 2026-06-04 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a9654b37adce00dc"
         }
       ],
       "contacts": [
@@ -471,12 +525,12 @@
           "quote_hash": "39ca999c5b3b8fd54de07533fe179ee51e8c2ef40953f3c4e8466ebdf69f1e5b"
         },
         {
-          "source_id": "FISRC-62071134d28f47b9",
-          "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
-          "source_title": "Fractile 融资2.2亿美元，打造下一代推理硬件",
-          "source_content_hash": "49c881bff41c0376",
-          "quote": "with participation from Conviction, Gigascale, 01A, Felicis, Buckley Ventures and 8VC",
-          "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
+          "source_id": "FISRC-a9654b37adce00dc",
+          "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+          "source_title": "Why Georgian Invested in Supabase",
+          "source_content_hash": "2ff196d4fa7dc98a",
+          "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+          "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
         }
       ],
       "last_verified_at": "2026-09-25",

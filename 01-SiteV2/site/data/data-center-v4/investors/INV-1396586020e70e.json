@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,13 +72,20 @@
     "first_disclosed_at": "2026-03-30",
     "latest_disclosed_at": "2026-07-08",
     "role_counts": {
+      "lead": 1,
       "participant": 2
     },
     "round_codes": [
       "seed",
-      "series_a"
+      "series_a",
+      "series_c"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-9db7cd4f9d5b9566",
+        "canonical_entity_id": "",
+        "name": "Bland"
+      },
       {
         "entity_id": "EN-fa373257792c6b9b",
         "canonical_entity_id": "EN-fa373257792c6b9b",
@@ -136,6 +143,46 @@
             "source_content_hash": "91deffc98c827626",
             "quote": "with participation from NVIDIA Ventures, Intel Capital, Dell Technologies Capital and our existing investors.",
             "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-8cd02e5a8e19096b",
+        "funding_insight_id": "FI-8c15d4f82acbe6d8",
+        "event_ids": [
+          "EV-796f551775a566ba"
+        ],
+        "company_entity_id": "EN-9db7cd4f9d5b9566",
+        "company_canonical_entity_id": "",
+        "company_name": "Bland",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6233a9ab76850de",
+            "source_url": "https://multiples.vc/private-comps/bland-ai",
+            "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
+            "source_content_hash": "61e54f8481bb7570",
+            "quote": "raised $50 million in Series C funding on June 16, 2026, led by Dell Technologies Capital",
+            "quote_hash": "85990b18962dbcf1240e6d8e2a3ead098f97a30a86ab5d5907bc648374655d5e"
           }
         ]
       },
@@ -200,6 +247,14 @@
         "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
       },
       {
+        "source_id": "FISRC-a6233a9ab76850de",
+        "source_url": "https://multiples.vc/private-comps/bland-ai",
+        "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
+        "source_content_hash": "61e54f8481bb7570",
+        "quote": "raised $50 million in Series C funding on June 16, 2026, led by Dell Technologies Capital",
+        "quote_hash": "85990b18962dbcf1240e6d8e2a3ead098f97a30a86ab5d5907bc648374655d5e"
+      },
+      {
         "source_id": "FISRC-d354011359557f2f",
         "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
         "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
@@ -260,8 +315,8 @@
           "source_id": "FISRC-afe2544836558c64"
         },
         {
-          "description": "融资来源记录：Sycamore · 种子轮 · 2026-03-30 · 本轮参投 · $65 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-d354011359557f2f"
+          "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-a6233a9ab76850de"
         }
       ],
       "contacts": [
@@ -305,12 +360,12 @@
           "quote_hash": "5421dd8df5fa5799f9462d13c2a7517435d84c180f9c4d9fd0cab23352e27c9f"
         },
         {
-          "source_id": "FISRC-d354011359557f2f",
-          "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
-          "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
-          "source_content_hash": "7c851906b2d8f45f",
-          "quote": "with additional participation from Abstract Ventures, Dell Technologies Capital, 8VC, Fellows Fund, and E14 Fund",
-          "quote_hash": "e443cbfb7f795d800b13ba7a1cba8c2f429b60d8881136f8543d2e9968332aca"
+          "source_id": "FISRC-a6233a9ab76850de",
+          "source_url": "https://multiples.vc/private-comps/bland-ai",
+          "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
+          "source_content_hash": "61e54f8481bb7570",
+          "quote": "raised $50 million in Series C funding on June 16, 2026, led by Dell Technologies Capital",
+          "quote_hash": "85990b18962dbcf1240e6d8e2a3ead098f97a30a86ab5d5907bc648374655d5e"
         }
       ],
       "last_verified_at": "2026-09-26",

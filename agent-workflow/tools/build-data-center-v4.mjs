@@ -1301,7 +1301,7 @@ function facetAssertionsForClaim(claim, matchers) {
 
 export function eventAiRelevanceEvidence({ title = "", claims: eventClaims = [], entityNames = [], eventType = "" } = {}) {
   const claimQuotes = eventClaims.map((claim) => typeof claim === "string" ? claim : claim?.source_quote || "");
-  const strongClaimEvidence = claimQuotes.join("\n").match(/\b(?:agentic AI|generative AI|AI agents?|large language models?|foundation models?|coding models?|machine learning|deep learning)\b/iu);
+  const strongClaimEvidence = claimQuotes.join("\n").match(/\b(?:agentic AI|generative AI|AI agents?|software development agents?|large language models?|foundation models?|coding models?|machine learning|deep learning)\b/iu);
   const evidenceText = [title, ...claimQuotes].filter(Boolean).join("\n");
   const namedHardwareMatch = evidenceText.match(/\bQualcomm\b.{0,120}\bDragonfly\b/iu);
   if (namedHardwareMatch) return { accepted: true, basis: "named_ai_hardware", evidence: namedHardwareMatch[0] };
@@ -1844,6 +1844,24 @@ function forbiddenKeys(value, trail = "", out = []) {
   return out;
 }
 
+export function reviewedFundingDate(review, { subject, amount, publishedAt, sources }) {
+  if (!review) return publishedAt;
+  const source = sources.get(review.source_ref)?.raw;
+  const quote = String(review.quote || "");
+  const body = String(source?.clean_text || source?.full_text || "");
+  const expected = metricValues(amount).map(normalizedFundingMetric);
+  const actual = metricValues(quote).map(normalizedFundingMetric);
+  if (review.status !== "accepted" || !review.reviewer || !source
+      || !/^\d{4}-\d{2}-\d{2}$/.test(review.date || "")
+      || String(source.published_at).slice(0, 10) !== review.date
+      || review.date > String(publishedAt).slice(0, 10)
+      || !quote || !body.includes(quote)
+      || !quote.toLowerCase().includes(String(subject).toLowerCase())
+      || !/(?:融资|raised|raises|funding|financing)/iu.test(quote)
+      || !expected.some(value => actual.includes(value))) throw new Error('invalid_reviewed_funding_date');
+  return review.date;
+}
+
 export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date().toISOString(), options = {}) {
   const targetedFundingPolicy = options.targetedFundingPolicy
     || readJson(path.join(outputRoot, date, "targeted-funding-authorization.json"), {});
@@ -1852,6 +1870,12 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
   // Keep already published identities stable while admitting new historical cases.
   const stablePublishedSources = new Set(historicalFundingPolicy.preserve_published_source_refs || []);
   const newHistoricalSources = new Set((historicalFundingPolicy.source_refs || []).filter((id) => !stablePublishedSources.has(id)));
+  // Explicit financing reviews identify the funded company, not its investors.
+  // Preserve this source-level decision so later rebuilds retain round identity.
+  const reviewedFundingSources = new Set([
+    ...newHistoricalSources,
+    ...(targetedFundingPolicy.round_identity_source_refs || []),
+  ]);
   const sourceArtifacts = [];
   const rawDocuments = [];
   const claims = [];
@@ -2172,7 +2196,11 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
 
       if (eventClaimRows.length) {
         const candidateId = `EC-${hash(`${rawId}|${rule.eventType}`)}`;
-        const eventTime = cleanString(raw.published_at);
+        const eventTime = rule.eventType === "funding"
+          ? reviewedFundingDate(targetedFundingPolicy.event_date_reviews?.[artifact.source_artifact_id], {
+            subject: parsed.subject, amount: parsed.object, publishedAt: cleanString(raw.published_at), sources: uniqueEntries,
+          })
+          : cleanString(raw.published_at);
         const disclosedAt = cleanString(raw.published_at || raw.collected_at);
         doc.event_candidate_ids.push(candidateId);
         const fundingActor = rule.eventType === "funding" ? chinaFundingActorEvidence(parsed.subject, eventClaimRows.map((claim) => claim.source_quote).join("\n")) : { matched: false };
@@ -2222,7 +2250,7 @@ export function buildBundle(rawEntries, taxonomy, date, generatedAt = new Date()
     rawDocuments.push(doc);
   }
 
-  const clustered = clusterEvents(eventCandidates, newHistoricalSources);
+  const clustered = clusterEvents(eventCandidates, reviewedFundingSources);
   const entityRows = [...entities.values()];
   const claimsById = new Map(claims.map((claim) => [claim.claim_id, claim]));
   const rawById = new Map(rawDocuments.map((document) => [document.raw_id, document]));

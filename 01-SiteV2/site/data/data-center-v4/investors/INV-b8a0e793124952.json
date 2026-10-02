@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,9 +64,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 22,
-    "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 20,
+    "current_round_count": 25,
+    "historical_or_ambiguous_count": 7,
+    "portfolio_company_count": 23,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,8 +76,8 @@
     "latest_disclosed_at": "2026-09-22",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 6,
-      "lead": 15,
+      "historical_or_ambiguous": 7,
+      "lead": 18,
       "participant": 5
     },
     "round_codes": [
@@ -114,9 +114,19 @@
         "name": "Etched"
       },
       {
+        "entity_id": "EN-4968d0cf3b24d26d",
+        "canonical_entity_id": "",
+        "name": "Exa"
+      },
+      {
         "entity_id": "EN-0830e0bf8e8fa471",
         "canonical_entity_id": "",
         "name": "Horowitz Andreessen Academy"
+      },
+      {
+        "entity_id": "EN-e2e2d8b189801fe6",
+        "canonical_entity_id": "",
+        "name": "Lightfield"
       },
       {
         "entity_id": "EN-20b5af8f2c749bf8",
@@ -182,6 +192,11 @@
         "entity_id": "EN-e4540a7c8404b1be",
         "canonical_entity_id": "",
         "name": "Temporal Technologies"
+      },
+      {
+        "entity_id": "EN-50ac81f970325a3e",
+        "canonical_entity_id": "",
+        "name": "Town"
       },
       {
         "entity_id": "EN-162103694fa33e7b",
@@ -272,6 +287,46 @@
             "source_content_hash": "5d9a4e3004c9d318",
             "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
             "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-366c1bcc02596394",
+        "funding_insight_id": "FI-4065d03db9160118",
+        "event_ids": [
+          "EV-d321124f4f5e0edc"
+        ],
+        "company_entity_id": "EN-e2e2d8b189801fe6",
+        "company_canonical_entity_id": "",
+        "company_name": "Lightfield",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$47 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 47000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4700 万美元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-c224adac23aa7c1e",
+            "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+            "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+            "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+            "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+            "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
           }
         ]
       },
@@ -792,6 +847,86 @@
         ]
       },
       {
+        "activity_id": "IA-cb60c5a72804ce06",
+        "funding_insight_id": "FI-dc787de827cfc638",
+        "event_ids": [
+          "EV-78f25fe89d25eeb6"
+        ],
+        "company_entity_id": "EN-50ac81f970325a3e",
+        "company_canonical_entity_id": "",
+        "company_name": "Town",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$55M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 55000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5500 万美元"
+        },
+        "announced_at": "2026-06-03",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-55e5e881c734a50f",
+            "source_url": "https://www.town.com/press/series-a",
+            "source_title": "Town 筹集 A 轮融资",
+            "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+            "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
+            "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-1e492cb616a60cff",
+        "funding_insight_id": "FI-7822461c5b0cb24a",
+        "event_ids": [
+          "EV-1891e6540ad2c1e0"
+        ],
+        "company_entity_id": "EN-4968d0cf3b24d26d",
+        "company_canonical_entity_id": "",
+        "company_name": "Exa",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$250 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 250000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2.5 亿美元"
+        },
+        "announced_at": "2026-05-20",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6e4164653718cbf6",
+            "source_url": "https://exa.ai/blog/announcing-series-c",
+            "source_title": "Exa Raises $250M Series C to Build the Search Engine for AIs",
+            "source_content_hash": "7e93df0b8b2a9a6c",
+            "quote": "Exa just raised $250M at a $2.2B valuation led by a16z to power all agents with the highest quality web search.",
+            "quote_hash": "2b05a00de0ededaebd5b935ecaaef910a14cb55786c1d3b68949707bdc84da72"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-1d0707cf5ade66e7",
         "funding_insight_id": "FI-46b16b5be44061ef",
         "event_ids": [
@@ -1115,7 +1250,8 @@
         "activity_id": "IA-57bfc7f4bff7d399",
         "funding_insight_id": "FI-d00f79c5a43227dc",
         "event_ids": [
-          "EV-0d4e656aa51f9a46"
+          "EV-0d4e656aa51f9a46",
+          "EV-50b5c4f93ead145d"
         ],
         "company_entity_id": "EN-2dc010636b9dce91",
         "company_canonical_entity_id": "EN-2dc010636b9dce91",
@@ -1326,6 +1462,38 @@
             "quote_hash": "8de955fedd9a600da4f847a96b45e6ac7a7657d415ee9b85d232dbe0f90c7955"
           }
         ]
+      },
+      {
+        "activity_id": "IA-fd6aab161f041b40",
+        "funding_insight_id": "FI-4909d937138bd129",
+        "event_ids": [
+          "EV-688ef84a4024e075"
+        ],
+        "company_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_name": "xAI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3b4badfc5c7972fa",
+            "source_url": "https://tracxn.com/d/companies/xai/__saKrxbHN3TRWW-I4lYH6zkx6N5P_kMTqlLcKTzWs2ug",
+            "source_title": "xAI",
+            "source_content_hash": "d1bd5f5bb5d9679b",
+            "quote": "xAI has raised $45B in funding from investors like Andreessen Horowitz, Sequoia Capital and Qatar Investment Authority",
+            "quote_hash": "3c51432ac77fbe9687fa76da3e989bf662f1236b291b742ecc06600be08c881c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -1344,6 +1512,14 @@
         "source_content_hash": "5d9a4e3004c9d318",
         "quote": "Andreessen Horowitz led the round, with participation from existing investors 8VC, Pear VC, and Bloomberg, and new investors Hudson River Trading and NextLadder Ventures.",
         "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
+      },
+      {
+        "source_id": "FISRC-c224adac23aa7c1e",
+        "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+        "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+        "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+        "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+        "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
       },
       {
         "source_id": "FISRC-61aa8db010b34dfa",
@@ -1472,6 +1648,22 @@
         "source_content_hash": "a16374502f4b3e1e",
         "quote": "Andreessen Horowitz (Lead)",
         "quote_hash": "7d2f14aa29b80a188862ffe118b1a76e9520ee9948674cd5e1d4a805422dd026"
+      },
+      {
+        "source_id": "FISRC-55e5e881c734a50f",
+        "source_url": "https://www.town.com/press/series-a",
+        "source_title": "Town 筹集 A 轮融资",
+        "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+        "quote": "Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.",
+        "quote_hash": "0123c800ff988f6b0147a82f001a067a8d110f8406f7dc125a3f8c1065a85ddf"
+      },
+      {
+        "source_id": "FISRC-6e4164653718cbf6",
+        "source_url": "https://exa.ai/blog/announcing-series-c",
+        "source_title": "Exa Raises $250M Series C to Build the Search Engine for AIs",
+        "source_content_hash": "7e93df0b8b2a9a6c",
+        "quote": "Exa just raised $250M at a $2.2B valuation led by a16z to power all agents with the highest quality web search.",
+        "quote_hash": "2b05a00de0ededaebd5b935ecaaef910a14cb55786c1d3b68949707bdc84da72"
       },
       {
         "source_id": "FISRC-1ac5030ddaba00a3",
@@ -1608,6 +1800,14 @@
         "source_content_hash": "c6a337d11f76c192",
         "quote": "The round was led by Andreessen Horowitz (a16z), and joined by Lightspeed Venture Partners and Sapphire Ventures",
         "quote_hash": "8de955fedd9a600da4f847a96b45e6ac7a7657d415ee9b85d232dbe0f90c7955"
+      },
+      {
+        "source_id": "FISRC-3b4badfc5c7972fa",
+        "source_url": "https://tracxn.com/d/companies/xai/__saKrxbHN3TRWW-I4lYH6zkx6N5P_kMTqlLcKTzWs2ug",
+        "source_title": "xAI",
+        "source_content_hash": "d1bd5f5bb5d9679b",
+        "quote": "xAI has raised $45B in funding from investors like Andreessen Horowitz, Sequoia Capital and Qatar Investment Authority",
+        "quote_hash": "3c51432ac77fbe9687fa76da3e989bf662f1236b291b742ecc06600be08c881c"
       }
     ],
     "public_profile": {
@@ -1675,8 +1875,8 @@
           "source_id": "FISRC-404aba285b240b86"
         },
         {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮领投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
+          "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮领投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c224adac23aa7c1e"
         }
       ],
       "contacts": [
@@ -1800,12 +2000,12 @@
           "quote_hash": "bc9a92a99d5d786538d8359e73dcfccf869dae88e81dba5fa977b6618c97e34c"
         },
         {
-          "source_id": "FISRC-61aa8db010b34dfa",
-          "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
-          "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
-          "source_content_hash": "274ba4a54870c633",
-          "quote": "The financing was led by new investors Andreessen Horowitz and Accel",
-          "quote_hash": "8aeaa43c0a1d28458ebe6cee07b19c91f3e4052962f30ba1e0151ceb0a77246a"
+          "source_id": "FISRC-c224adac23aa7c1e",
+          "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+          "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+          "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+          "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+          "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
         }
       ],
       "last_verified_at": "2026-09-25",

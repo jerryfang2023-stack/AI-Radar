@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -59,17 +59,105 @@
     "typeLabel": "技术",
     "valueId": "memory_system",
     "eventIds": [
+      "EV-a3e9feaed5234078",
       "EV-cffa617426a5e139"
     ],
     "entityIds": [
+      "EN-cfb378a90039f2d3",
       "EN-fb646a85ad74e7c5"
     ],
     "fdeIds": [],
     "hardwareIds": [],
     "firstSeen": "2026-08-03",
-    "lastSeen": "2026-08-08"
+    "lastSeen": "2026-10-02"
   },
   "events": [
+    {
+      "id": "EV-a3e9feaed5234078",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-16",
+      "updatedDate": "2026-09-16",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Delos 融资 €10M，将其自主“AI 员工”引入美国",
+      "originalTitle": "Delos raises €10M to bring its autonomous \"AI employees\" to the US",
+      "subject": "Delos",
+      "action": "funding",
+      "object": "€10 million Series A",
+      "metrics": [
+        "€10M",
+        "€10 million",
+        "$11.5 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "memory_system",
+          "name": "记忆系统",
+          "entityIds": [
+            "EN-cfb378a90039f2d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "memory_system",
+          "name": "记忆系统",
+          "entityIds": [
+            "EN-cfb378a90039f2d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "memory_system",
+          "name": "记忆系统",
+          "entityIds": [
+            "EN-cfb378a90039f2d3"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-cfb378a90039f2d3"
+      ],
+      "entityNames": [
+        "Delos"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://dealroom.co/news/151111-delos-raises-10m-to-bring-its-autonomous-ai-employees-to-the-us/",
+      "publisher": "dealroom.co"
+    },
     {
       "id": "EV-cffa617426a5e139",
       "dataDate": "2026-08-08",
@@ -186,7 +274,29 @@
       "publisher": "MarkTechPost（RSS）"
     }
   ],
-  "entities": [],
+  "entities": [
+    {
+      "id": "EN-cfb378a90039f2d3",
+      "name": "Delos",
+      "entityType": "organization_candidate",
+      "typeLabel": "公司与机构",
+      "aliases": [],
+      "verificationStatus": "candidate",
+      "datasetScopes": [
+        "canonical"
+      ],
+      "eventIds": [
+        "EV-a3e9feaed5234078"
+      ],
+      "viewpointIds": [],
+      "classificationRefs": [
+        "TX-technology-memory_system"
+      ],
+      "relatedEntityIds": [],
+      "firstSeen": "2026-09-16",
+      "lastSeen": "2026-10-02"
+    }
+  ],
   "fde": [],
   "hardware": []
 }

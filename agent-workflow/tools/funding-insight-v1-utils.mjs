@@ -274,7 +274,7 @@ function fundingAmountMentions(value = "") {
       // A financing verb in an earlier clause must not own a later valuation.
       /(?:完成|获得|获)[^，,：:；;。！？.!?]{0,32}$/u.test(before) && /^[^，,：:；;。！？.!?]{0,24}融资/u.test(after)
       ||
-      /^\s*(?:pre[-\s]?)?series\s+[a-g](?:\+|\d)?\b/iu.test(after)
+      /^\s*(?:pre[-\s]?)?series\s+[a-z](?![a-z])(?:\+|\d)?\b/iu.test(after)
       ||
       /(?:融资|筹集|募资|raises?|raised|raising|secured|expanded\s+its\s+(?:seed\s+)?funding\s+by|funding\s+round|round\s+of)[^，,：:；;。！？.!?]{0,48}$/iu.test(before)
       || (!/previously\s+(?:undisclosed|announced|raised)/iu.test(text) && /(?:closes?|closed)[^，,：:；;。！？.!?]{0,48}$/iu.test(before))
@@ -301,7 +301,7 @@ function currentRoundBesideHistoricalDisclosure(event = {}, claims = []) {
     if (historical < 0) continue;
     // The headline can aggregate both rounds. Only a completed, explicitly
     // amount-bound round before the historical clause owns current proceeds.
-    const match = quote.slice(0, historical).match(/^The company\s+(?:said it\s+)?(?:has\s+)?(?:closed|raised|secured)\s+(?:a\s+)?([$€£]\s*\d[\d,]*(?:\.\d+)?\s*(?:billion|million|thousand|[BMK])?)\s+(?:in\s+(?:a\s+)?)?((?:pre[-\s]?)?seed|(?:pre[-\s]?)?series\s+[a-g])\s+(?:round|funding)\b/iu);
+    const match = quote.slice(0, historical).match(/^The company\s+(?:said it\s+)?(?:has\s+)?(?:closed|raised|secured)\s+(?:a\s+)?([$€£]\s*\d[\d,]*(?:\.\d+)?\s*(?:billion|million|thousand|[BMK])?)\s+(?:in\s+(?:a\s+)?)?((?:pre[-\s]?)?seed|(?:pre[-\s]?)?series\s+[a-z](?![a-z]))\s+(?:round|funding)\b/iu);
     if (!match) continue;
     const round = normalizeFundingRound(match[2]);
     const amount = clean(match[1]);
@@ -399,15 +399,15 @@ const FUNDING_ROUND_LABELS = {
 
 function roundSeriesToken(value = "") {
   const text = clean(value).normalize("NFKC").toLowerCase();
-  const plus = text.match(/((?:pre[-\s]*)?)(?:series\s*)?([a-g])\s*(\+{1,3})\s*(?:轮|round|$)/iu);
+  const plus = text.match(/((?:pre[-\s]*)?)(?:series\s*)?([a-z](?![a-z]))\s*(\+{1,3})\s*(?:轮|round|$)/iu);
   if (plus) return { code: `${plus[1] ? "pre_" : ""}series_${plus[2]}${"_plus".repeat(plus[3].length)}`, label: `${plus[1] ? "Pre-" : ""}${plus[2].toUpperCase()}${plus[3]}轮` };
   const match = text.match(
-    /(?:(?:pre[-\s]*)?series\s*([a-g])(?:[-\s]?(\d+))?|(?:pre[-\s]*)?([a-g])(?:[-\s]?(\d+))?\s*轮)/iu,
+    /(?:(?:pre[-\s]*)?series\s*([a-z](?![a-z]))(?:[-\s]?(\d+))?|(?:pre[-\s]*)?([a-z](?![a-z]))(?:[-\s]?(\d+))?\s*轮)/iu,
   );
   if (!match) return null;
   const letter = (match[1] || match[3]).toLowerCase();
   const suffix = match[2] || match[4] || "";
-  const isPre = /\bpre[-\s]*(?:series\s*)?[a-g]\b|pre[-\s]*[a-g]轮/iu.test(text);
+  const isPre = /\bpre[-\s]*(?:series\s*)?[a-z](?![a-z])\b|pre[-\s]*[a-z](?![a-z])轮/iu.test(text);
   const isExtension = /extension|extend|扩展|延伸|追加|加注/iu.test(text);
   return {
     code: `${isPre ? "pre_" : ""}series_${letter}${suffix}${isExtension ? "_extension" : ""}`,
@@ -419,7 +419,7 @@ export function normalizeFundingRound(value = "") {
   const original = clean(value);
   // A duration after the series letter is prose, not a numbered sub-round.
   const text = original.normalize("NFKC").toLowerCase().replace(
-    /(\b(?:pre[-\s]*)?series\s*[a-g])\s+(?=\d+(?:\.\d+)?\s*(?:hours?|days?|weeks?|months?|years?)\b)/giu,
+    /(\b(?:pre[-\s]*)?series\s*[a-z](?![a-z]))\s+(?=\d+(?:\.\d+)?\s*(?:hours?|days?|weeks?|months?|years?)\b)/giu,
     "$1, ",
   );
   const compact = text.replace(/[\s_]+/gu, "").replace(/[－—–]/gu, "-");
@@ -435,7 +435,7 @@ export function normalizeFundingRound(value = "") {
     signals.add(`angel${"_plus".repeat(plus.length)}`);
   }
   const seriesMatches = [...text.matchAll(
-    /(?:(?:pre[-\s]*)?series\s*[a-g](?:[-\s]?\d+)?(?:\+{1,3})?|(?:pre[-\s]*)?[a-g](?:[-\s]?\d+)?\s*(?:\+{1,3})?\s*轮)/giu,
+    /(?:(?:pre[-\s]*)?series\s*[a-z](?![a-z])(?:[-\s]?\d+)?(?:\+{1,3})?|(?:pre[-\s]*)?[a-z](?![a-z])(?:[-\s]?\d+)?\s*(?:\+{1,3})?\s*轮)/giu,
   )];
   for (const match of seriesMatches) {
     const token = roundSeriesToken(match[0]);
@@ -449,13 +449,13 @@ export function normalizeFundingRound(value = "") {
   const materialRounds = [...signals].filter((code) => code !== "early_stage");
   if (
     materialRounds.length > 1
-    || /多轮|(?:seed|种子).{0,12}(?:and|\+|、|和|及).{0,12}(?:series|[a-g]\s*轮)/iu.test(text)
+    || /多轮|(?:seed|种子).{0,12}(?:and|\+|、|和|及).{0,12}(?:series|[a-z](?![a-z])\s*轮)/iu.test(text)
   ) {
     return { code: "multi_round", label: FUNDING_ROUND_LABELS.multi_round, original };
   }
   if (materialRounds.length === 1) {
     const code = materialRounds[0];
-    const series = code.match(/^(pre_)?series_([a-g])(\d+)?((?:_plus)*)(_extension)?$/u);
+    const series = code.match(/^(pre_)?series_([a-z](?![a-z]))(\d+)?((?:_plus)*)(_extension)?$/u);
     const label = series
       ? `${series[1] ? "Pre-" : ""}${series[2].toUpperCase()}${series[3] || ""}${"+".repeat((series[4] || "").split("_plus").length - 1)}轮${series[5] ? "扩展" : ""}`
       : /^(?:seed|angel)(?:_plus)+$/u.test(code) ? `${code.startsWith("seed") ? "种子" : "天使"}${"+".repeat(code.split("_plus").length - 1)}轮` : FUNDING_ROUND_LABELS[code];
@@ -1123,7 +1123,7 @@ export function fundingTrancheDisclosureNeedsReview(event = {}, claims = []) {
   return claims.some((claim) => (event.claim_refs || []).includes(claim.claim_id)
     && claim.claim_type === "funding" && claim.verification_status === "accepted"
     && /\b(?:the|this) financing was raised in (?:two|multiple|\d+) tranches\b/iu.test(claim.source_quote || "")
-    && /\bseries\s+[a-g](?:-?\d+)?\s*,\s*up to\s*[$€£]\s*\d/iu.test(claim.source_quote || ""));
+    && /\bseries\s+[a-z](?![a-z])(?:-?\d+)?\s*,\s*up to\s*[$€£]\s*\d/iu.test(claim.source_quote || ""));
 }
 
 export function fundingEventCardConsistencyProblems(card = {}, event = {}, claims = [], entities = []) {
@@ -1145,7 +1145,7 @@ export function fundingEventCardConsistencyProblems(card = {}, event = {}, claim
     && acceptedClaims.some((claim) => fundingAmountMentions(claim.source_quote).some((mention) => mention.cumulative))) {
     return ["funding_cumulative_amount_used_as_round"];
   }
-  if (acceptedClaims.some((claim) => /\bseries\s+[a-g]\s+\d+\s*(?:hours?|days?|weeks?|months?|years?)\b/iu.test(claim.source_quote || ""))
+  if (acceptedClaims.some((claim) => /\bseries\s+[a-z](?![a-z])\s+\d+\s*(?:hours?|days?|weeks?|months?|years?)\b/iu.test(claim.source_quote || ""))
     && normalizeFundingRound(card.financing?.round).code !== canonicalFundingEventRound(event, claims).code) {
     return ["funding_current_round_label_mismatch"];
   }

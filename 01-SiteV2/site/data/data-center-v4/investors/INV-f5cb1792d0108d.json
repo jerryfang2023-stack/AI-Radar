@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,7 +64,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
@@ -74,7 +74,7 @@
     "first_disclosed_at": "2024-05-21",
     "latest_disclosed_at": "2026-06-30",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 3
     },
     "round_codes": [
@@ -220,6 +220,38 @@
         ]
       },
       {
+        "activity_id": "IA-db402943da8d4d0b",
+        "funding_insight_id": "FI-96276ea81e78cfe5",
+        "event_ids": [
+          "EV-c34ebd1db6227471"
+        ],
+        "company_entity_id": "EN-e3797aea6accf7d7",
+        "company_canonical_entity_id": "",
+        "company_name": "Almanac Health, Inc.",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Pre-Seed 轮参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7b44b1af3d3f9dce",
+            "source_url": "https://pulse2.com/almanac-health-10-million-raised-for-research-validated-clinical-ai-platform-empowering-clinicians",
+            "source_title": "Almanac Health: $10 Million Raised For Research-Validated Clinical AI Platform Empowering Clinicians",
+            "source_content_hash": "1417cb34729fda44",
+            "quote": "General Catalyst previously led the company’s pre-seed round, which also included participation from Soma Capital.",
+            "quote_hash": "91e25ae38fee38334c8f1160f99dbf40c38a7b1415edcd969f37034141b51c7a"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-e142b582a5b73c0d",
         "funding_insight_id": "FI-43e6948d7884584e",
         "event_ids": [
@@ -276,6 +308,14 @@
         "source_content_hash": "13e16154329e1e7e",
         "quote": "Investors include Gradient Ventures, Beat Ventures and True Capital along with Lambda Labs, Y Combinator, Soma Capital and Epakon Capital.",
         "quote_hash": "910c2d34c389aa7e90cfaa57d5c64dcdefffb1a4955dac810e8b8403bfc676c5"
+      },
+      {
+        "source_id": "FISRC-7b44b1af3d3f9dce",
+        "source_url": "https://pulse2.com/almanac-health-10-million-raised-for-research-validated-clinical-ai-platform-empowering-clinicians",
+        "source_title": "Almanac Health: $10 Million Raised For Research-Validated Clinical AI Platform Empowering Clinicians",
+        "source_content_hash": "1417cb34729fda44",
+        "quote": "General Catalyst previously led the company’s pre-seed round, which also included participation from Soma Capital.",
+        "quote_hash": "91e25ae38fee38334c8f1160f99dbf40c38a7b1415edcd969f37034141b51c7a"
       },
       {
         "source_id": "FISRC-3b8fce2e43a41d5b",
@@ -395,6 +435,18 @@
         }
       ],
       "last_verified_at": "2026-09-26"
+    },
+    "translations": {
+      "zh-CN": {
+        "activities[3].role": {
+          "text": "Pre-Seed 轮参投",
+          "source_hash": "f5cb988c26f629ab8de6db933918a11722e78ee826e2af40ebf57b1b01cc710d",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T00:56:00.495Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

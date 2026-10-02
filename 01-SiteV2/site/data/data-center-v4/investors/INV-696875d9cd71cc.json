@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,18 +61,18 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2022-12-14",
-    "latest_disclosed_at": "2026-03-30",
+    "latest_disclosed_at": "2026-05-27",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
@@ -85,12 +85,57 @@
         "name": "EnCharge AI"
       },
       {
+        "entity_id": "EN-8775a329d57598d2",
+        "canonical_entity_id": "",
+        "name": "SOND"
+      },
+      {
         "entity_id": "FICO-sycamore",
         "canonical_entity_id": "",
         "name": "Sycamore"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-90bf43b0c4042720",
+        "funding_insight_id": "FI-f11db770b9a0a7f8",
+        "event_ids": [
+          "EV-03fc697a9838f39e"
+        ],
+        "company_entity_id": "EN-8775a329d57598d2",
+        "company_canonical_entity_id": "",
+        "company_name": "SOND",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$7 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 7000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "700 万美元"
+        },
+        "announced_at": "2026-05-27",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-d8f2f6d7fc0871dd",
+            "source_url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
+            "source_title": "Bose 前睡眠业务负责人创立的睡眠科技初创公司 SOND 结束隐身模式，获 700 万美元融资",
+            "source_content_hash": "29820751dcab4ec5b5ce0cf030397688f6dfa3a330040840b8e553a189d4af39",
+            "quote": "Its initial investment of the $7 million comes from E14 Fund (an MIT-affiliated fund), Crosslink Capital, Ubiquity Ventures, Alumni Ventures, Meach Cove Capital, and Boston Scientific co-founder, John Abele.",
+            "quote_hash": "356707d0ca4066d08b4a0c5aca9f7f97ed784cdc0c538e7483478f1dc4eab20f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3c7b8983ada3647c",
         "funding_insight_id": "FI-91df568a315de93f",
@@ -176,6 +221,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-d8f2f6d7fc0871dd",
+        "source_url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
+        "source_title": "Bose 前睡眠业务负责人创立的睡眠科技初创公司 SOND 结束隐身模式，获 700 万美元融资",
+        "source_content_hash": "29820751dcab4ec5b5ce0cf030397688f6dfa3a330040840b8e553a189d4af39",
+        "quote": "Its initial investment of the $7 million comes from E14 Fund (an MIT-affiliated fund), Crosslink Capital, Ubiquity Ventures, Alumni Ventures, Meach Cove Capital, and Boston Scientific co-founder, John Abele.",
+        "quote_hash": "356707d0ca4066d08b4a0c5aca9f7f97ed784cdc0c538e7483478f1dc4eab20f"
+      },
+      {
         "source_id": "FISRC-d354011359557f2f",
         "source_url": "https://sycamore.so/press-releases/sycamore-raises-65m-seed/",
         "source_title": "Sycamore融资6500万美元，为企业打造可信代理操作系统",
@@ -258,6 +311,10 @@
         {
           "description": "官网称其收益的一大部分捐赠给 MIT；未将参投披露推断为基金回报。",
           "source_id": "e14_about"
+        },
+        {
+          "description": "融资来源记录：SOND · 种子轮 · 2026-05-27 · 本轮参投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-d8f2f6d7fc0871dd"
         }
       ],
       "contacts": [
@@ -293,6 +350,14 @@
           "source_content_hash": "445fe4fb390d84db8e1063f8860b2dcbb233806eb3acbab1ce70ed989fbabc2c",
           "quote": "Officially affiliated with MIT, E14 Fund invests in scalable, deep-tech startups tackling big, meaningful missions.",
           "quote_hash": "fccbc5decea3dc4c470bdf359849ad5b2439807eb5c2a99959cebb321b59da93"
+        },
+        {
+          "source_id": "FISRC-d8f2f6d7fc0871dd",
+          "source_url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
+          "source_title": "Bose 前睡眠业务负责人创立的睡眠科技初创公司 SOND 结束隐身模式，获 700 万美元融资",
+          "source_content_hash": "29820751dcab4ec5b5ce0cf030397688f6dfa3a330040840b8e553a189d4af39",
+          "quote": "Its initial investment of the $7 million comes from E14 Fund (an MIT-affiliated fund), Crosslink Capital, Ubiquity Ventures, Alumni Ventures, Meach Cove Capital, and Boston Scientific co-founder, John Abele.",
+          "quote_hash": "356707d0ca4066d08b4a0c5aca9f7f97ed784cdc0c538e7483478f1dc4eab20f"
         }
       ],
       "last_verified_at": "2026-09-26"

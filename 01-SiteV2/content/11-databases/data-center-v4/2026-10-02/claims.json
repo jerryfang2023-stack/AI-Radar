@@ -1199,66 +1199,25 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-cecd258a77004292",
+    "claim_id": "CL-87dc867bce1d82de",
     "raw_id": "RAW-7857411f448babca",
     "claim_type": "funding",
     "subject": "Anthropic",
     "predicate": "funding",
-    "object": "$65B in Series H funding at $965B post-money valuation",
+    "object": "$65 billion Series H",
     "qualifiers": {
-      "event_status": "completed",
-      "sequence": 1
-    },
-    "source_span": {
-      "raw_id": "RAW-7857411f448babca",
-      "start": 14,
-      "end": 85
-    },
-    "source_quote": "Anthropic raises $65B in Series H funding at $965B post-money valuation",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.9,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-2b44a8429160b362",
-    "raw_id": "RAW-7857411f448babca",
-    "claim_type": "funding",
-    "subject": "Anthropic",
-    "predicate": "funding",
-    "object": "$65B in Series H funding at $965B post-money valuation",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 2
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-45c5fa4e0c9d64cd"
     },
     "source_span": {
       "raw_id": "RAW-7857411f448babca",
       "start": 99,
-      "end": 268
-    },
-    "source_quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
-    "verification_status": "accepted"
-  },
-  {
-    "claim_id": "CL-0d39ffa1059ffcaf",
-    "raw_id": "RAW-7857411f448babca",
-    "claim_type": "funding",
-    "subject": "Anthropic",
-    "predicate": "funding",
-    "object": "$65B in Series H funding at $965B post-money valuation",
-    "qualifiers": {
-      "event_status": "completed",
-      "sequence": 3
-    },
-    "source_span": {
-      "raw_id": "RAW-7857411f448babca",
-      "start": 269,
       "end": 794
     },
-    "source_quote": "Global enterprises across industries are deploying Claude in their core operations, and a growing number of people around the world use it for their everyday work. Since our Series G in February, adoption has continued to grow across global enterprise customers, and our run-rate revenue crossed $47 billion earlier this month. This latest funding is expected to advance our safety and interpretability research, expand compute to meet growing demand for Claude, and scale the products and partnerships our customers rely on.",
-    "extraction_method": "deterministic_source_span",
-    "extraction_confidence": 0.82,
+    "source_quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money.\nGlobal enterprises across industries are deploying Claude in their core operations, and a growing number of people around the world use it for their everyday work. Since our Series G in February, adoption has continued to grow across global enterprise customers, and our run-rate revenue crossed $47 billion earlier this month. This latest funding is expected to advance our safety and interpretability research, expand compute to meet growing demand for Claude, and scale the products and partnerships our customers rely on.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   },
   {
@@ -1824,23 +1783,23 @@
     "verification_status": "accepted"
   },
   {
-    "claim_id": "CL-d9755ba204cf6bee",
+    "claim_id": "CL-0cebba2bc2f36e55",
     "raw_id": "RAW-78c286414b8d18bc",
     "claim_type": "funding",
     "subject": "Tiiny AI",
     "predicate": "funding",
     "object": "数千万美元天使轮系列融资",
     "qualifiers": {
-      "event_status": "announced",
+      "event_status": "completed",
       "sequence": 1,
-      "model_candidate_id": "MAC-e39a9ef01261da51"
+      "model_candidate_id": "MAC-f9787cde82838c28"
     },
     "source_span": {
       "raw_id": "RAW-78c286414b8d18bc",
-      "start": 0,
+      "start": 8,
       "end": 66
     },
-    "source_quote": "云启种子轮被投、Personal Agent OS 公司「Tiiny AI」近日宣布完成数千万美元天使轮系列融资，云启本轮继续加注。",
+    "source_quote": "Personal Agent OS 公司「Tiiny AI」近日宣布完成数千万美元天使轮系列融资，云启本轮继续加注。",
     "extraction_method": "model_source_span",
     "extraction_confidence": 0.72,
     "verification_status": "accepted"
@@ -3360,6 +3319,776 @@
     "source_quote": "2月5日，生数科技宣布完成超过6亿元人民币A+轮融资。",
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.82,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-90cd41c5476ccef4",
+    "raw_id": "RAW-4aaed26b796b355a",
+    "claim_type": "funding",
+    "subject": "Prometheus",
+    "predicate": "funding",
+    "object": "$12 billion",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ab3c547bd73446bc"
+    },
+    "source_span": {
+      "raw_id": "RAW-4aaed26b796b355a",
+      "start": 232,
+      "end": 1070
+    },
+    "source_quote": "Prometheus, one of Jeff Bezos' newest ventures, announced a $12 billion funding round on Thursday that values the company at $41 billion.\nThe artificial intelligence startup launched in November with $6.2 billion in funding.\nBezos, who stepped down as Amazon CEO in 2021, serves as co-CEO alongside Vik Bajaj, a professor at Stanford University's School of Medicine who previously co-founded Alphabet's Verily, a research lab dedicated to life sciences.\nCNBC's David Faber spoke with Bezos and Bajaj exclusively from Prometheus headquarters in San Francisco on Thursday.\nKey moments from the exclusive interview:\nPrometheus raises $12 billion at $41 billion valuation\nAmazon could work with Prometheus\nBezos says Prometheus isn't being \"secretive\"\nBezos on AI regulation: \"Reasonable\" rules are needed\nAI will raise the standard of living",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-6f85c42d8cc9f520",
+    "raw_id": "RAW-12688800bcae8a4d",
+    "claim_type": "funding",
+    "subject": "Arceus Legal",
+    "predicate": "funding",
+    "object": "$17 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a14631ffddb59146"
+    },
+    "source_span": {
+      "raw_id": "RAW-12688800bcae8a4d",
+      "start": 0,
+      "end": 702
+    },
+    "source_quote": "It’s raining new model law firms! And here is Arceus, which launched this year and has just announced a $17 million fundraise led by Greycroft.\nAnd yep, it’s an MSO. And yep, it ‘combines licensed attorneys with AI agents and proprietary software to deliver fast legal services’.\nAnd also yep, it focuses on ‘commercial legal work, reviewing, drafting and negotiating contracts at a flat price’, often for startups and scale-ups.\nPlus, it says that ‘standard reviews are guaranteed within eight hours or the review is free’ – which is nice.\nThe view of one client.\nAnd also, as with many others now, they’ve built some of their own software. In this case it’s a proprietary operating system, CounselOS.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-263e2172783ad94a",
+    "raw_id": "RAW-adfb0ca1960d711b",
+    "claim_type": "funding",
+    "subject": "Arceus Legal",
+    "predicate": "funding",
+    "object": "$17 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-1fd0d3ce929eda88"
+    },
+    "source_span": {
+      "raw_id": "RAW-adfb0ca1960d711b",
+      "start": 0,
+      "end": 711
+    },
+    "source_quote": "UPDATED 11:00 EDT / OCTOBER 01 2026\n AI\n AI-driven law firm Arceus Legal raises $17M to move beyond contract work\n by Duncan Riley\n Artificial intelligence-driven law firm Arceus Legal today disclosed that it has raised $17 million in funding to expand beyond the commercial contract work it started with.\nArceus provides legal services to fast-growing companies at a flat price that is quoted before a matter begins. Licensed attorneys approve every piece of work, with help from AI agents and software Arceus built itself.\nIf a standard contract review takes longer than eight hours, the client does not pay for it, and the firm said most are finished in three to five. Its website lists that service at $500.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-bc492381844cc709",
+    "raw_id": "RAW-5634236c08345445",
+    "claim_type": "funding",
+    "subject": "Almanac Health",
+    "predicate": "funding",
+    "object": "$10 million Seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f8aa201d3c7e8cef"
+    },
+    "source_span": {
+      "raw_id": "RAW-5634236c08345445",
+      "start": 0,
+      "end": 691
+    },
+    "source_quote": "Almanac Health, a Boston, MA–based unified clinical AI platform for clinical decision support, has raised $10 million in Seed funding.\nInvestors\nThe round was led by F-Prime, with participation from General Catalyst and Lightspeed Venture Partners.\nF-Prime is a global venture capital firm that invests in healthcare and technology companies. With decades of investing experience, it operates across stages from early venture to growth, while maintaining a strong emphasis on deep science, including biotechnology, therapeutics, and data-driven healthcare, alongside enterprise software and fintech. The firm manages $4.8 billion in assets under management (AUM).\nAlmanac Health Use of Funds",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-ef01cc8d4a4521a5",
+    "raw_id": "RAW-d49859c5f865cd49",
+    "claim_type": "funding",
+    "subject": "Delos",
+    "predicate": "funding",
+    "object": "€10 million Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c98ddaf39d07a354"
+    },
+    "source_span": {
+      "raw_id": "RAW-d49859c5f865cd49",
+      "start": 0,
+      "end": 815
+    },
+    "source_quote": "News › Delos raises €10M to bring its autonomous \"AI employees\" to …\n What's the deal? French startup Delos has raised €10 million ($11.5 million) in a Series A round led by Bpifrance, C4 VenturesDealroom has a profile for this one. Try Dealroom →, and Founders FutureDealroom has a profile for this one. Try Dealroom →. The company builds autonomous \"AI employees\" that handle complex business tasks — from sales prospecting to back-office work — and plans to use the funds to expand in France and the US.\nWhat's the endgame? Founded three years ago, Delos began with an office software platform before pivoting to virtual colleagues. Each \"worker\" gets a name, a role, an email address, a phone number, a cloud computer, and long-term memory, and can plan and complete missions without constant human supervision.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3c7484371e4c89b4",
+    "raw_id": "RAW-c49cb99d54872371",
+    "claim_type": "funding",
+    "subject": "Lightfield",
+    "predicate": "funding",
+    "object": "$47 million Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-8419a313b9f0ed28"
+    },
+    "source_span": {
+      "raw_id": "RAW-c49cb99d54872371",
+      "start": 0,
+      "end": 713
+    },
+    "source_quote": "More than 5,000 companies have signed up for Lightfield since launch in November, deploying AI agents that build pipeline, work deals, and manage customers from a shared, living record of their business.\nSAN FRANCISCO, Sept. 9, 2026 /PRNewswire/ -- Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.\nCRM was designed for people to type into, not for agents to work from. For forty years, customer relationships have been translated into fields, stages, and notes — a record of whatever someone had time to enter, stored in a structure agents can't reason from.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-247fc4111301fe36",
+    "raw_id": "RAW-4cbaf2b4a12e2d05",
+    "claim_type": "funding",
+    "subject": "CloudNC",
+    "predicate": "funding",
+    "object": "$20 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fca85cf7ebe8aa99"
+    },
+    "source_span": {
+      "raw_id": "RAW-4cbaf2b4a12e2d05",
+      "start": 285,
+      "end": 1043
+    },
+    "source_quote": "CloudNC, the technology company that created the leading AI software for precision machining, today announces that it has raised $20 million in new investment capital. The funding is led by Nimble Ventures, a US-based venture investor, with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund.\nCloudNC will use the investment to further catalyze the acceleration of advanced manufacturing by enabling more machine shops to adopt its AI solutions, and to expand into new and existing markets. The funding will also support the development and launch of new products, including Quote Agent, an AI solution for quoting and estimating that will be available this year.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0eb3eabf736cfe76",
+    "raw_id": "RAW-61302f192f1907e0",
+    "claim_type": "funding",
+    "subject": "CloudNC",
+    "predicate": "funding",
+    "object": "$20 million Series B extension",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-dd4aa3a32ad4a97c"
+    },
+    "source_span": {
+      "raw_id": "RAW-61302f192f1907e0",
+      "start": 0,
+      "end": 854
+    },
+    "source_quote": "U.K.-based manufacturing software startup CloudNC announced a $20 million Series B extension round on Wednesday, bringing its lifetime total amount raised to $128 million. The company’s last major raise was four years ago, its co-founder and CEO Theo Saville told TechCrunch.\nSaville launched CloudNC in 2015 with Chris Emery, now the company’s chief science officer, and offers AI-powered CAM Assist software that automates parts of computer numerical control (CNC) machining. CNC is the process of using computer-controlled machines to cut or shape materials precisely into the parts that are then used in automotive, defense, or consumer hardware industries.\nBefore a part can be cut, Saville said, a machinist or a computer-aided manufacturing programmer has to decide issues like how a part should be held or what tools should be used, Saville said.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a6c1e1aa6a6784b9",
+    "raw_id": "RAW-19c4b3d14b1d07ce",
+    "claim_type": "funding",
+    "subject": "湖北星辰技术",
+    "predicate": "funding",
+    "object": "近50亿元A轮融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-54bd2a65e8cd2655"
+    },
+    "source_span": {
+      "raw_id": "RAW-19c4b3d14b1d07ce",
+      "start": 300,
+      "end": 1935
+    },
+    "source_quote": "8月25日，湖北星辰技术有限公司（以下简称星辰技术）成立5周年。几天前，在光谷同济医院的病房里，刚刚开完一个电话会议的公司总经理王逸群，一边打着点滴，一边接受记者采访，复盘公司最近完成的近50亿元A轮融资。\n紧迫感与行动力，构成了这家企业最真实的两面。2021年2月，湖北江城实验室挂牌；6个月后，星辰技术诞生。实验室负责科研攻关，公司负责将成果推向市场，利润再反哺研发。这种“实验室+公司”的孵化模式在湖北属于首例，在全国亦鲜有先例。\n5年时间，这家从实验室走出的企业宛如一匹“黑马”，不仅刷新了国内先进封装领域的融资纪录，更规划出月产10万片、剑指百亿营收的发展蓝图。如今，它正以先进封装技术为支点，试图为中国芯片产业蹚出一条换道超车的新路。\n星辰技术建设的先进封装综合实验平台\n资本竞相“抢筹”\n“融资近50亿元，新加入的股东投了45亿元。”采访一开始，王逸群就纠正了外界流传的数字。\n据星辰技术最新的工商信息，这份投资方名单星光熠熠：高瓴创投、红杉中国、君联资本、中金资本、招银投资、深创投……\n“开始是我们主动找机构，后来信息传开，大资金都自己找上门。”王逸群说。\n资本热情背后，有两条清晰的逻辑线。明线是赛道和前景。随着芯片制程逼近物理极限，先进封装成为“后摩尔时代”破局的关键，星辰技术主攻的3D先进封装，正是这条赛道里技术壁垒最高、想象空间最大的细分领域。\n暗线是团队加技术。董事长杨道虹现任湖北江城实验室主任，曾任多家大型半导体企业核心高管，擅长战略操盘。总经理王逸群是清华大学集成电路专业博士，亲历国家存储器基地从无到有的突破，主抓经营与技术落地。核心成员多出自半导体大厂，历经5年自主研发，现已掌握国内最领先技术。\n“我们不是临时拼凑的团队，是在大项目里一起打过胜仗的。”王逸群说。正是这种默契，让他们在9个月内打通了第一条产线，并在6个月内完成第一款产品的量产。\n更打动投资人的，是团队的“决心”。A轮融资前，团队自掏腰包投入超过6亿元，大部分都抵押了房子。“大家真金白银投进去了。”这种“All in”的姿态，成了最硬核的背书。\n用先进封装破解算力焦虑\n什么是先进封装？王逸群打了个比方：传统芯片制程就像在平地上盖房，地皮越缩越小，盖房愈发困难；而先进封装则是直接往上“盖楼”，通过垂直互连，将逻辑芯片、存储芯片等不同功能的小“房间”紧密“叠”在一起。\n今年5月，华为发表韬（τ）定律，这是中国企业首次在芯片领域提出全球产业发展新原则，其最底层的制造技术正是先进封装。\n在AI大模型爆发的当下，这项技术已成为破解算力瓶颈的关键。“国内算力不能过度依赖海外芯片。”王逸群说。通过先进封装，星辰技术将存储芯片、逻辑芯片等集成在一起，形成更紧密的互联结构，将推理带宽比传统结构提升1到2个数量级。\n正如任正非所言“用数学补物理、非摩尔补摩尔”，王逸群认为，当单点制程受阻，就用系统集成换取整体性能。“这本质上是靠先进封装弥补制程差距，实现国产芯片的换道超车。”\n一个多月前，总部位于上海的东方算芯发布全球首颗采用三维近存计算技术的AI芯片DF1000，正是由星辰技术完成量产验证，一举破解了算力系统长期面临的“存储墙”“带宽墙”“功耗墙”等瓶颈。\n王逸群说，国外巨头拥有先进制程，对堆叠需求并不迫切；而国内AI算力饥渴，倒逼产业链另寻出路。“在多堆叠高通量三维互联技术上，我们走在国际最前面。”\n先进封装综合实验平台上，星辰技术工程师正在分析实验数据\n成为产业链关键枢纽\n采访当日，星辰技术二期中试线正加紧搬入核心工艺设备，预计9月全线通线。目前一期、二期合计投资超70亿元，月产能规划2万片，已建成国内规模最大、技术领先的高密度集成封装中试和小批量量产平台。同样位于光谷的九龙湖产业化基地也在加快建设，预计明年下半年投产。\n从轻资产摸索到重资产布局，星辰技术的定位始终清晰：专注先进封装服务。王逸群表示，独立的第三方定位，使其成为产业链的关键枢纽。",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-438df192dbda42b3",
+    "raw_id": "RAW-cadd902c0e0ce26f",
+    "claim_type": "funding",
+    "subject": "Synthefy",
+    "predicate": "funding",
+    "object": "$6.5M seed round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c81544d6f9311345"
+    },
+    "source_span": {
+      "raw_id": "RAW-cadd902c0e0ce26f",
+      "start": 0,
+      "end": 788
+    },
+    "source_quote": "Back to Resources\nCompany News UpdatesAugust 18, 20266 min read\nBuilding Foundation Models for the World's Structured Data\nBy Synthefy Team\nWe're announcing our $6.5M seed round, led by Wing Venture Capital, to build Structured Data Foundation Models for the numerical data that runs the world.\n#Company News#Structured Data#Foundation Models#Nori\nWe're announcing our $6.5M seed round, led by Wing Venture Capital, to build Structured Data Foundation Models for the numerical data that runs the world.\nStructured data is the numerical layer of the physical and digital economy: sensor readings, meter pulses, financial transactions, trades, inventory, and customer records. The volume, speed, and complexity of the decisions this data drives are beyond what any human can reason through.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-59743f69f460a280",
+    "raw_id": "RAW-f53dbaae6796a56c",
+    "claim_type": "funding",
+    "subject": "Xpander",
+    "predicate": "funding",
+    "object": "$7.5 million Seed round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-63c2c0babcad733b"
+    },
+    "source_span": {
+      "raw_id": "RAW-f53dbaae6796a56c",
+      "start": 0,
+      "end": 823
+    },
+    "source_quote": "Former AWS principal engineers launch Xpander to overcome the challenges enterprises are facing when aiming to become AI-native and to enable AI utilization at unparalleled scale\nSAN FRANCISCO, Aug. 17, 2026 /PRNewswire/ -- Xpander today announced a $7.5 million Seed round led by Pico Venture Partners with participation from Emerge Ventures, Samsung Next, and SeedIL. The funding will be used to accelerate Xpander's market penetration with its turnkey, vendor-neutral, all-in-one AI enablement platform. The company also introduced Omni, its enterprise AI agent, which achieved a 90.9% score on the GAIA benchmark.\n Continue Reading\n Xpander, the vendor-neutral platform enabling enterprises to go AI-native, announces a $7.5M Seed round. Founders, from left: Moriel Pahima (CTO), David Twizer (CEO), Ran Sheinberg (CPO)",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0c5a0f5bf6b61c55",
+    "raw_id": "RAW-1d9c60c7fdb6bf9d",
+    "claim_type": "funding",
+    "subject": "Databricks",
+    "predicate": "funding",
+    "object": "$5 billion strategic funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-ee646e70a00181c9"
+    },
+    "source_span": {
+      "raw_id": "RAW-1d9c60c7fdb6bf9d",
+      "start": 746,
+      "end": 1103
+    },
+    "source_quote": "the company closed a $5 billion strategic funding round at a $190 billion valuation. The investment will drive continued innovation across Lakebase, its serverless Postgres database built for AI agents, Genie, Databricks’ AI coworker that turns business data into trusted answers and actions, and Unity AI Gateway, for multi-AI governance and cost controls.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f4ff0907cbc17bbc",
+    "raw_id": "RAW-e08ef78245b69068",
+    "claim_type": "funding",
+    "subject": "Sapiom",
+    "predicate": "funding",
+    "object": "$35 million Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-91e43dfc949c5d6b"
+    },
+    "source_span": {
+      "raw_id": "RAW-e08ef78245b69068",
+      "start": 0,
+      "end": 640
+    },
+    "source_quote": "FOR RELEASE: WEDNESDAY, AUGUST 5 AT 9 AM PT\nSAN FRANCISCO, August 5, 2026. Sapiom, the platform builders use to ship, run, and scale AI agents, today announced a $35 million Series A. The round was led by Dragonfly, with participation from Accel, Gradient, Coinbase Ventures, Operator Collective, Formus Capital, and VanEck Ventures, alongside continued backing from existing investors including Okta Ventures, Menlo Ventures, Anthropic, and Array Ventures.\nThe Series A comes six months after Sapiom’s $15 million seed round and just 11 months after the company was founded, bringing total funding to $50 million.\n From demo to production.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-61946d7154955896",
+    "raw_id": "RAW-12323af29d7c4360",
+    "claim_type": "funding",
+    "subject": "幻码跃迁",
+    "predicate": "funding",
+    "object": "数千万元种子轮融资",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c779b97baadab4e4"
+    },
+    "source_span": {
+      "raw_id": "RAW-12323af29d7c4360",
+      "start": 0,
+      "end": 875
+    },
+    "source_quote": "本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程共同参与，光源资本同时担任孵化方。\n近日，上海幻码跃迁量子科技有限公司（简称“幻码跃迁”）完成数千万元种子轮融资。本轮融资由 L2F 光源创业者基金领投，云启资本、小苗朗程共同参与，光源资本同时担任孵化方。本轮资金将主要用于核心人才团队建设、量子计算全栈软件研发、量子人工智能技术研发，以及跨平台量子计算产业生态建设。幻码跃迁聚焦量子计算与 AI 融合创新，定位为国产量子计算系统级软件与应用解决方案提供商，致力于构建支撑容错运行、规模化部署与产业应用的软件基础设施和智能体平台。公司希望通过“底层软件栈 + 上层算法应用 + AI 驱动研发工具”的路径，将异构量子硬件能力转化为产业侧可调用、可评估、可验证的新型计算能力，加速量子计算从实验验证走向工程化和产业化。\n 新浪科技公众号\n “掌”握科技鲜闻 （微信搜索techsina或扫描左侧二维码关注）\n 相关新闻\n 创事记\n OpenAI抢后台，马斯克抢前台\n 陌陌母公司挚文季报图解：营收24亿净利降19% 唐岩刚获派息超8000万\n 风口上的AI短剧人，如履薄冰\n 阅读排行榜\n 评论排行榜\n 女子睡觉时被虫咬断一大把头发 专业人士科普揭秘“凶手”身份\n 人均日通话降至8.7分钟：为何国人不爱接电话了 背后原因揭开\n 抢跑豆包手机？阶跃发布STEPX终端品牌，全球首款大模型原生智能体手机登场\n Windows彻底出局！央采笔记本100%国产系统：联想成最大赢家\n OpenAI 多名员工公开声援 CEO 奥尔特曼，证实其乐于听取不同意见\n 长鑫科技超6000员工获股份 千万富翁或批量诞生\n 全国首个！海南2030年将全面禁止销售燃油车\n 资深电影人施南生去世：系徐克前妻\n 2026暑期档票房破30亿！周星驰《功夫女足》上映3天票房破5.5亿\n AI 5秒挖出潜伏15年的漏洞！Google重奖61万元\n 比亚迪全新 B 级闪充轿车秦 MAX 官宣，路天称定位在秦 L 之上\n 68 万元起，比亚迪腾势 Z 电动超跑国内预售开启",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-1fc4a55408ba9826",
+    "raw_id": "RAW-46c1c7ab9ef735aa",
+    "claim_type": "funding",
+    "subject": "Engram",
+    "predicate": "funding",
+    "object": "$98 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-f4f881aefc909f61"
+    },
+    "source_span": {
+      "raw_id": "RAW-46c1c7ab9ef735aa",
+      "start": 758,
+      "end": 1477
+    },
+    "source_quote": "Engram on Tuesday announced that it raised $98 million from investors including General Catalyst, Kleiner Perkins and Sequoia, as well as OpenAI co-founder Andrej Karpathy, who recently joined Anthropic.\nThe startup, which dubs itself the \"learned memory\" of AI, says its models can recall organization-specific workflows and context to anticipate questions and give smarter responses with cheaper output. The company claims its models can match or outperform frontier labs using up to 100 times fewer tokens, which are the currency for running AI queries.\nNew and more sophisticated AI models are proving pricier than previous iterations, challenging the conventional view that greater scale would lead to lower costs.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-9e712752193c9b36",
+    "raw_id": "RAW-e5785cc28557c363",
+    "claim_type": "funding",
+    "subject": "Sazabi",
+    "predicate": "funding",
+    "object": "$8 million seed financing",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-882e16be1808be93"
+    },
+    "source_span": {
+      "raw_id": "RAW-e5785cc28557c363",
+      "start": 0,
+      "end": 683
+    },
+    "source_quote": "Investors include more than 60 angels from leading AI, developer tools, and infrastructure companies\nSAN FRANCISCO, June 25, 2026 /PRNewswire/ -- Sazabi, the AI-native observability platform for fast-moving engineering teams, today announced an $8 million seed financing led by J2 Ventures, Village Global, and Y Combinator, with participation from Orange Collective and over 60 angel investors from leading AI companies, including Vercel, Cursor, LangChain, OpenAI, Anthropic, GitHub, Replit, Browserbase, and others. Sazabi will use the funding to expand its engineering team, accelerate product development, and deepen its integrations across modern cloud and developer platforms.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f1da3caa06579bbd",
+    "raw_id": "RAW-7abfed9f38bef0fc",
+    "claim_type": "funding",
+    "subject": "Bland",
+    "predicate": "funding",
+    "object": "$50 million Series C",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-718a16863144a078"
+    },
+    "source_span": {
+      "raw_id": "RAW-7abfed9f38bef0fc",
+      "start": 0,
+      "end": 779
+    },
+    "source_quote": "Back to blogSeries C Unlocked: What's Next for Bland\nBland has raised an additional $50 million — past $100 million total in under three years. Why we build our own voice models in-house, and what the new funding accelerates.\nIsaiah GranetJune 16, 2026Updated September 1, 20263 min read\nMost voice AI only tackles the simple stuff: those quick, scripted calls where you just press a button for billing. But those aren't the conversations that actually move the needle for a business.\nThe calls that matter are never simple. They wander, people interrupt or change their minds, and questions come up that no script could ever predict. For years, companies had to fill whole teams just to keep up with these kinds of conversations, because nothing else could actually manage them.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-f85089b05be34f6d",
+    "raw_id": "RAW-307ea859bcc87c30",
+    "claim_type": "funding",
+    "subject": "Ploy",
+    "predicate": "funding",
+    "object": "$27 million seed",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-0b5aca6109a12392"
+    },
+    "source_span": {
+      "raw_id": "RAW-307ea859bcc87c30",
+      "start": 0,
+      "end": 820
+    },
+    "source_quote": "Backed by First Round Capital and Y Combinator, Ploy is an AI growth platform that runs a company's entire marketing system in the background\nSAN FRANCISCO, June 17, 2026 /PRNewswire/ -- Ploy today launched out of stealth with $27 million seed led by First Round Capital and Y Combinator. The AI growth platform is now generally available to any user.\nFounded by Bryant Chou, co-founder and former CTO of Webflow, Ploy is an all-in-one marketing platform built around the website — the hub that connects every growth channel. Its agents handle the operational and technical work end to end: designing pages, writing copy, running campaigns, optimizing performance, and syncing data back to the CRM. Continuously, in the background.\n Continue Reading\n What's Ploy in 90 Seconds | Product Overview\n Speed\n Speed\n Ploy logo",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-39b1e36586cbac80",
+    "raw_id": "RAW-528d3bb9cab0eeaa",
+    "claim_type": "funding",
+    "subject": "Pramaana Labs",
+    "predicate": "funding",
+    "object": "$27 million seed funding",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5f4138cadb5ef4e8"
+    },
+    "source_span": {
+      "raw_id": "RAW-528d3bb9cab0eeaa",
+      "start": 0,
+      "end": 887
+    },
+    "source_quote": "As enterprises struggle to turn AI pilot programs into functional parts of their business, reliability has taken center stage. A new startup is hoping to solve that problem by drawing on the tools of mathematical formalization, combining one of computer science’s most reliable systems with one of its most chaotic.\nOn Wednesday, Pramaana Labs announced $27 million in seed funding led by Khosla Ventures, with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound.\nPramaana will focus on highly sensitive verticals like law, drug discovery, and tax preparation — where errors can be costly and reliability is at a premium. Deploying AI in those systems will require stronger protections against hallucinations and errors than we currently have. But as Pramaana co-founder and CEO Ranjan Rajagopalan sees it, they’re also uniquely suited to formalization.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e70d6bf1b3c1cf2e",
+    "raw_id": "RAW-485e8fb284c5f8e8",
+    "claim_type": "funding",
+    "subject": "Supabase",
+    "predicate": "funding",
+    "object": "$500M Series F",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-5c536acaf8171187"
+    },
+    "source_span": {
+      "raw_id": "RAW-485e8fb284c5f8e8",
+      "start": 0,
+      "end": 1554
+    },
+    "source_quote": "Blog / company\nSupabase Series F\n4 Jun 2026\n·\n3 minute read\nPaul CopplestoneCEO and Co-Founder\nSupabase has raised a $500M Series F at a $10B pre-money valuation. It’s led by GIC. All existing investors joined the round, Stripe made a second investment. Georgian and Salesforce Ventures joined as new investors.\nThe round is for three things:\nAccelerate development of open source / Postgres tools.\nTo support our growth.\nLiquidity for the employees.\nOpen source development#\nToday we're releasing Multigres v0.1 alpha. It’s open source and self-hostable.\nPostgres is hard to run at scale. Multigres is a scalable operating system for Postgres that provides high availability and operational simplicity. In a future release it will provide Vitess-grade horizontal scaling.\nThe alpha status is to signal that it’s ready to try, but not yet production-ready. We’ll get there in a few months. If you’re running a large Postgres workload you can apply to be a Multigres partner and help shape the direction of Multigres.\nMultigres will be available on the platform when it moves out of alpha. Together with our work on OrioleDB (targeting production-readiness this year), we believe that we will have a complete Postgres solution that solves many hairy Postgres problems, including bloat, connection pooling, and Jepsen-level high availability. Sharding is also on the menu - we'll share more details later.\nSupabase growth#\nIn the past year, database launches on Supabase have grown 600%. More than 60% of new databases are launched by some sort of AI tool.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-92e986a321da75a0",
+    "raw_id": "RAW-da3e97117593937f",
+    "claim_type": "funding",
+    "subject": "Coralogix",
+    "predicate": "funding",
+    "object": "$200 million Series F",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-67b6534b6153912c"
+    },
+    "source_span": {
+      "raw_id": "RAW-da3e97117593937f",
+      "start": 0,
+      "end": 899
+    },
+    "source_quote": "BOSTON, June 03, 2026 (GLOBE NEWSWIRE) -- Coralogix, the data and AI platform for observability, today announced it has raised $200 million in Series F funding. The round was co-led by Advent, CPPIB, and Greenfield, with participation from Brighton Park Capital, bringing total funding in Coralogix to $550M.\n “AI is fundamentally changing the way enterprises operate, and observability is quickly evolving into a core layer of business intelligence,” said Alek Ferro of Advent. “Coralogix has consistently stayed ahead of that transformation, building a platform designed for the scale, speed and complexity of the agentic era. Since our initial investment, the company has continued to accelerate innovation and market adoption, reinforcing our belief that Coralogix is positioned to define the future of AI-powered observability.”\n Legacy Observability Was Built for a World That No Longer Exists",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-0520dbc27bf080fa",
+    "raw_id": "RAW-639afbaab4f9d4a8",
+    "claim_type": "funding",
+    "subject": "Trajectory",
+    "predicate": "funding",
+    "object": "$15 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2a3e4116528d95f7"
+    },
+    "source_span": {
+      "raw_id": "RAW-639afbaab4f9d4a8",
+      "start": 0,
+      "end": 510
+    },
+    "source_quote": "Trajectory Raises $15 Million To Build A Platform For Continual Learning\n Trajectory, a research lab and product company focused on continual learning, announced that it has raised $15 million in funding to develop a platform that enables companies to continuously train large-scale agentic models using signals generated from product usage.\nThe funding round included participation from Conviction, Bessemer Venture Partners, Radical Ventures, as well as notable AI leaders including Jeff Dean and Fei-Fei Li.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-e3b60e272da138ee",
+    "raw_id": "RAW-b0acc9f118edebb3",
+    "claim_type": "funding",
+    "subject": "SOND",
+    "predicate": "funding",
+    "object": "$7 million",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-2a0afe6d7b3909ab"
+    },
+    "source_span": {
+      "raw_id": "RAW-b0acc9f118edebb3",
+      "start": 628,
+      "end": 1291
+    },
+    "source_quote": "Its initial investment of the $7 million comes from E14 Fund (an MIT-affiliated fund), Crosslink Capital, Ubiquity Ventures, Alumni Ventures, Meach Cove Capital, and Boston Scientific co-founder, John Abele.\nTo work, the device tracks signals like respiration, heart rate variability, cardiorespiratory coupling, sleep staging, body position, snoring, and seismocardiography (SCG, or the mechanical vibrations of the chest wall produced by the beating heart).\nThis sensor data streams in real time to a cloud-based AI sleep coach that then selects a sleep audio program, or generates one on demand, learning over time which ones work best for the individual user.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-cfce5ef44e186b60",
+    "raw_id": "RAW-a5d4656ae9c0b3f1",
+    "claim_type": "funding",
+    "subject": "Exa",
+    "predicate": "funding",
+    "object": "$250 million Series C",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a53d2065ebcd189e"
+    },
+    "source_span": {
+      "raw_id": "RAW-a5d4656ae9c0b3f1",
+      "start": 210,
+      "end": 954
+    },
+    "source_quote": "The company reached that valuation with a $250 million Series C funding round announced Wednesday (May 20). It is money that Exa says will help it train its next generation of models and scale its systems to support hundreds of thousands of searches per second.\n“As trillions of agents come online over the coming years, search needs will grow thousands of times beyond the total search volume of Google,” Exa Co-Founder and CEO Will Bryk said in the company’s announcement.\n“And as agents make increasingly important business decisions, their requirements for comprehensiveness, freshness, and precision will far exceed what humans require. In short, agents will need perfect search over all the world’s information at an unprecedented scale.”",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d553afbfbfa2af9c",
+    "raw_id": "RAW-c78dbc0103720047",
+    "claim_type": "funding",
+    "subject": "Astrocade",
+    "predicate": "funding",
+    "object": "$56M Series A and Series B",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-c71a953f8af2472e"
+    },
+    "source_span": {
+      "raw_id": "RAW-c78dbc0103720047",
+      "start": 0,
+      "end": 670
+    },
+    "source_quote": "AboutBlogCreatorsCommunityCareers\nPlay & Create\nAstrocade Raises $56M in New Funding to Build a New Era of Interactive Entertainment\nAstrocadeMay 5th, 2026\nLoading...\nWe're thrilled to announce $56M in new funding. The funding includes a Series B led by Sequoia Capital and a Series A led by Sea, with participation from Google's AI Futures Fund, NVIDIA, LG Technology Ventures, Dentsu Ventures, Conviction Embed, Chaac Ventures, Rogue VC, and many more, to build a new kind of interactive entertainment platform. In just eight months since launch, more than 20 million engaged users have joined Astrocade, creating, playing, and showing us what the platform can become.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3f2a534f5d4b054d",
+    "raw_id": "RAW-55e0388a9822df98",
+    "claim_type": "funding",
+    "subject": "Factory",
+    "predicate": "funding",
+    "object": "$150M Series C",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d89839ad0a4834b4"
+    },
+    "source_span": {
+      "raw_id": "RAW-55e0388a9822df98",
+      "start": 227,
+      "end": 1687
+    },
+    "source_quote": "We are excited to announce our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC. This puts Factory's valuation at $1.5B and will accelerate our investment in research, product, and global go-to-market.\nWe started Factory three years ago with a single mission: bring autonomy to software engineering. Today, Droids are used daily by hundreds of thousands of developers across enterprises including Nvidia, Adobe, EY, Palo Alto Networks, and Adyen. For each of the past six months, we've doubled revenue month over month. Enterprises worldwide are building fully autonomous software factories on our platform, designed to work with any model, any interface, and every stage of development.\nThe Factory platform itself has undergone a step-function change. Droids have evolved from best-in-class software development agents into full-spectrum autonomous systems that operate as the critical unit across multiple functions across a software business. We introduced Missions, enabling Droids to coordinate long-horizon, multi-step, multi-agent workflows that tackle weeks' worth of work. We shipped Factory Desktop, bringing Droids natively to your machine with full system access and local context. Now anything that can be done on a computer, can be done with a Droid. And we maintained our status as #1 across the leading software development agent benchmarks.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-d7a680dc4cc74fbb",
+    "raw_id": "RAW-04684246bc355502",
+    "claim_type": "funding",
+    "subject": "Railway",
+    "predicate": "funding",
+    "object": "$100 Million Series B",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-4bca645f9807fdf5"
+    },
+    "source_span": {
+      "raw_id": "RAW-04684246bc355502",
+      "start": 0,
+      "end": 628
+    },
+    "source_quote": "Round led by TQ Ventures with participation from FPV Ventures, Redpoint, and Unusual Ventures; fuels Railway's vision to eliminate infrastructure friction and help developers ship faster\nSAN FRANCISCO, Jan. 22, 2026 /PRNewswire/ -- Today, Railway, a cloud platform that allows developers to ship faster and more efficiently, announced its $100 Million Series B round led by TQ Ventures, with participation from new and existing investors, FPV Ventures, Redpoint, and Unusual Ventures. The funding will fuel Railway's vision to make infrastructure invisible, so software works with developers, not against them.\n Continue Reading",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-41caedae0f84f519",
+    "raw_id": "RAW-b0402240b22dcefd",
+    "claim_type": "funding",
+    "subject": "Listen Labs",
+    "predicate": "funding",
+    "object": "$69 million Series B",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-45d7e5a9e9324d9e"
+    },
+    "source_span": {
+      "raw_id": "RAW-b0402240b22dcefd",
+      "start": 0,
+      "end": 847
+    },
+    "source_quote": "SAN FRANCISCO, Jan. 14, 2026 /PRNewswire/ -- Listen Labs, the AI-first customer research platform, has raised a $69 million Series B led by Ribbit Capital, with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC.\nSince launching nine months ago, Listen has grown its annualized revenue by 15x, reaching a 8-figure revenue, interviewed over one million people, and now serves hundreds of enterprises including Microsoft, Sweetgreen, Perplexity, and Robinhood.\nHow it works\nListen is an AI-first customer research platform. Its AI interviewer talks to people the way a great interviewer would. With access to 30 million pre-qualified participants across demographics and geographies, teams can quickly learn what people think about anything, from ads and messaging to new product concepts and usability tests.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-198a4100c57590d9",
+    "raw_id": "RAW-9f82094c9318f6b8",
+    "claim_type": "funding",
+    "subject": "xAI",
+    "predicate": "funding",
+    "object": "$20 billion",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-fa8270522b7ef704"
+    },
+    "source_span": {
+      "raw_id": "RAW-9f82094c9318f6b8",
+      "start": 413,
+      "end": 1016
+    },
+    "source_quote": "Elon Musk's xAI said it raised $20 billion in a funding round, exceeding its prior target of $15 billion.\nCNBC reported in November that a financing would value the artificial intelligence startup at about $230 billion. After an initial report that xAI was raising $15 billion, Musk called the story \"False\" in a post on X.\nInvestors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.\nBoth Nvidia and Cisco work with xAI as vendors and strategic partners.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2c4951625c5d099c",
+    "raw_id": "RAW-7b41ef7f6be12357",
+    "claim_type": "funding",
+    "subject": "Flam",
+    "predicate": "funding",
+    "object": "$40 million Series B",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-e37c5a005275e6f1"
+    },
+    "source_span": {
+      "raw_id": "RAW-7b41ef7f6be12357",
+      "start": 0,
+      "end": 643
+    },
+    "source_quote": "UPDATED 12:00 EDT / SEPTEMBER 14 2026\n AI\n Flam raises $40M in funding to make AI-enabled interactive content a reality\n by Mike Wheatley\n Interactive content startup Flam is looking to build up impressive traction that it says was made while operating in “stealth mode” after announcing a $40 million Series B round of funding today.\nThe round was led by QED Investors and saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel, the Chief Executive Officer of Datadog Inc. Existing backers including RTP Global and Dovetail also participated in the round.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-828089a85c155dd0",
+    "raw_id": "RAW-1a2c20adfc000895",
+    "claim_type": "funding",
+    "subject": "Tiiny AI",
+    "predicate": "funding",
+    "object": "angel round",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-607948f593a6ddef"
+    },
+    "source_span": {
+      "raw_id": "RAW-1a2c20adfc000895",
+      "start": 0,
+      "end": 797
+    },
+    "source_quote": "News › Tiiny AI raises tens of millions in angel round backed by Ba…\n What's the deal? Tiiny AIDealroom has a profile for this one. Try Dealroom →, a Personal Agent OS company, has raised tens of millions of dollars in an angel round, according to Baidu VenturesDealroom has a profile for this one. Try Dealroom →. The round drew a lineup of prominent backers, including Shunwei Capital, Matrix Partners China, and Baidu VenturesDealroom has a profile for this one. Try Dealroom →.\nWho's in? Also participating were Jinqiu FundDealroom has a profile for this one. Try Dealroom →, Yunqi PartnersDealroom has a profile for this one. Try Dealroom →, the Gobi-Alibaba Hong Kong Entrepreneurs Fund, and Lightsource L2F Fund. The breadth of established Chinese investors is the round's standout feature.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-012e032d00896273",
+    "raw_id": "RAW-1db1b70c9cb8a19f",
+    "claim_type": "funding",
+    "subject": "Engram",
+    "predicate": "funding",
+    "object": "$98M",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-cb1a0815b7d3cc2f"
+    },
+    "source_span": {
+      "raw_id": "RAW-1db1b70c9cb8a19f",
+      "start": 0,
+      "end": 608
+    },
+    "source_quote": "Founded by Leading AI Researchers from Stanford, Berkeley, and Cornell, Engram Launches with Microsoft, Notion and Harvey as Early Partners\nSAN FRANCISCO, June 23, 2026 /PRNewswire/ -- Today, Engram, the company building the learned memory layer for AI, emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-3b9d00534c0c26ac",
+    "raw_id": "RAW-c766b8605e31e5d6",
+    "claim_type": "funding",
+    "subject": "Town",
+    "predicate": "funding",
+    "object": "$55 million Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-aa8542a4e5e4c905"
+    },
+    "source_span": {
+      "raw_id": "RAW-c766b8605e31e5d6",
+      "start": 0,
+      "end": 844
+    },
+    "source_quote": "PressTown Raises $55M Series Ato Build the AI AssistantThat Works for Everyone\nLed by a16z, with participation from Forerunner Ventures, First Round, Alt Capital and Conviction\nTony Vincent\nJean-Denis Greze\nPublished June 3, 20265 min\nAI has changed everything — except most people’s actual day.\nThey’re reading about it, talking about it, watching it reshape entire industries, and still spending their mornings triaging an inbox, their afternoons tracking down follow-ups, their evenings catching up on what slipped through. The gap between what AI was supposed to do and what it actually does for most people remains enormous.\nThat gap is why we built Town. And today, we’re announcing that Town has raised a $55 million Series A led by a16z, with participation from Forerunner Ventures, Alt Capital and Conviction.\nThe Problem We’re Solving",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-8fe547e59dec1471",
+    "raw_id": "RAW-a89667aef4c24ca3",
+    "claim_type": "funding",
+    "subject": "Reactor",
+    "predicate": "funding",
+    "object": "$59M Seed and Series A",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-b86ca0de16d52454"
+    },
+    "source_span": {
+      "raw_id": "RAW-a89667aef4c24ca3",
+      "start": 0,
+      "end": 506
+    },
+    "source_quote": "05/28/2026\n AI\n Share on twitter\n Share on facebook\n Share on linkedin\n Copy link\n The Developer Platform for World Models: Our Series A in Reactor\n Today, Lightspeed is announcing we’re leading Reactor’s Series A after co-leading their Seed — $59M in combined funding — to further their goal of becoming the de facto inference platform for real-time video models.\nIn the six months since their Seed round, Reactor is enabling a new generation of interactive AI applications across media and entertainment.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-a9722a8407b99bbf",
+    "raw_id": "RAW-4cc58c7ffbd9288a",
+    "claim_type": "funding",
+    "subject": "Neko Health",
+    "predicate": "funding",
+    "object": "$700 million Series C",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-80650c40ccf60b2a"
+    },
+    "source_span": {
+      "raw_id": "RAW-4cc58c7ffbd9288a",
+      "start": 0,
+      "end": 800
+    },
+    "source_quote": "Neko Health raises $700m to expand preventative care model into US\n Healthcare\n 20 Jul 2026\n |\n Siân Yates\n Share\n Swedish health technology company will use fresh investment to expand its AI-enabled preventative screening clinics and accelerate international growth\n Swedish preventative healthcare company Neko Health has raised US$700 million in a Series C funding round as it prepares to launch its first clinic in the US later this year, reflecting growing investor interest in technology-driven models focused on the early detection of disease.\nThe Stockholm-based company said the funding round was led by Lightspeed Venture Partners and co-led by OG Venture Partners, with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
     "verification_status": "accepted"
   }
 ]

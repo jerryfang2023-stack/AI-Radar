@@ -18,6 +18,7 @@ import {
   FUNDING_INSIGHT_VERSION,
   FUNDING_TARGET_USER_IDS,
   FUNDING_USE_CASE_IDS,
+  FUNDING_MARKET_SUBCATEGORY_PARENTS,
   clean,
   canonicalFundingEventAmount,
   ensureCanonicalFundingEvidence,
@@ -456,7 +457,10 @@ function ensureSecondSourceEvidence(payload, company, sources) {
   return payload;
 }
 
-function modelCorrectionProblem(problem = "") {
+export function modelCorrectionProblem(problem = "") {
+  if (["market_subcategory_id_unknown", "market_subcategory_parent_mismatch"].includes(problem)) {
+    return `${problem}:analysis.market_subcategory_id must use an exact key in ${JSON.stringify(Object.fromEntries(FUNDING_MARKET_SUBCATEGORY_PARENTS))}; the value is its required market_category_id. Do not copy industry_ids such as legal_services or use_case_ids such as legal_compliance into this field.`;
+  }
   if (problem === "physical_ai_product_form_mismatch") {
     return "physical_ai_product_form_mismatch:ai_device_must_choose_a_non_physical_market_category_and_its_valid_subcategory_application_hierarchy";
   }

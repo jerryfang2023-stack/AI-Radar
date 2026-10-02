@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-09-29",
+    "latest_disclosed_at": "2026-10-01",
     "role_counts": {
       "co_lead": 1,
-      "lead": 1,
+      "lead": 2,
       "participant": 3
     },
     "round_codes": [
@@ -86,6 +86,11 @@
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-8bacc14fb816a980",
+        "canonical_entity_id": "",
+        "name": "Arceus Legal"
       },
       {
         "entity_id": "EN-e88ecf834fa37e5a",
@@ -109,6 +114,54 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-0aa30147042a1f82",
+        "funding_insight_id": "FI-f39e8c7f4d280bac",
+        "event_ids": [
+          "EV-e124ba0fc4fef3c0"
+        ],
+        "company_entity_id": "EN-8bacc14fb816a980",
+        "company_canonical_entity_id": "",
+        "company_name": "Arceus Legal",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露轮次",
+        "amount_original": "$17 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 17000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1700 万美元"
+        },
+        "announced_at": "2026-10-01",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-54220f8d78441b23",
+            "source_url": "https://www.artificiallawyer.com/2026/10/01/new-model-law-firm-arceus-raises-17m/",
+            "source_title": "新模型律所Arceus融资1700万美元",
+            "source_content_hash": "cc8bef3d921d543f005662af473c08bdb28d09414a2a1db6a1a8e20b22e5a281",
+            "quote": "has just announced a $17 million fundraise led by Greycroft",
+            "quote_hash": "739240f829edc0a628ecd3bd9f134af86bf01adaefea7c94a97ff3d8c9ad7a11"
+          },
+          {
+            "source_id": "FISRC-dcf45e1aac1af636",
+            "source_url": "https://siliconangle.com/2026/10/01/ai-driven-law-firm-arceus-legal-raises-17m-to-move-beyond-contract-work/",
+            "source_title": "AI 驱动的律师事务所 Arceus Legal 融资 1700 万美元，以拓展合同业务之外的服务",
+            "source_content_hash": "f430492d981a90c520ea713271818099a7fc71620f0a2bccc8a967aed486c7c1",
+            "quote": "Greycroft LP led the round, with participation from Craft Ventures Management, South Park Commons Management and other investors.",
+            "quote_hash": "16e82e23b4fe6222edf4f1fa3be8ff168135fa6e47540af34ed00b3390db238e"
+          }
+        ]
+      },
       {
         "activity_id": "IA-fc8884bc74da6231",
         "funding_insight_id": "FI-78c41d0e7b994533",
@@ -313,6 +366,22 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-54220f8d78441b23",
+        "source_url": "https://www.artificiallawyer.com/2026/10/01/new-model-law-firm-arceus-raises-17m/",
+        "source_title": "新模型律所Arceus融资1700万美元",
+        "source_content_hash": "cc8bef3d921d543f005662af473c08bdb28d09414a2a1db6a1a8e20b22e5a281",
+        "quote": "has just announced a $17 million fundraise led by Greycroft",
+        "quote_hash": "739240f829edc0a628ecd3bd9f134af86bf01adaefea7c94a97ff3d8c9ad7a11"
+      },
+      {
+        "source_id": "FISRC-dcf45e1aac1af636",
+        "source_url": "https://siliconangle.com/2026/10/01/ai-driven-law-firm-arceus-legal-raises-17m-to-move-beyond-contract-work/",
+        "source_title": "AI 驱动的律师事务所 Arceus Legal 融资 1700 万美元，以拓展合同业务之外的服务",
+        "source_content_hash": "f430492d981a90c520ea713271818099a7fc71620f0a2bccc8a967aed486c7c1",
+        "quote": "Greycroft LP led the round, with participation from Craft Ventures Management, South Park Commons Management and other investors.",
+        "quote_hash": "16e82e23b4fe6222edf4f1fa3be8ff168135fa6e47540af34ed00b3390db238e"
+      },
+      {
         "source_id": "FISRC-39cbb5f315cdae11",
         "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
         "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
@@ -398,16 +467,12 @@
           "source_id": "greycroft_investments"
         },
         {
+          "description": "融资来源记录：Arceus Legal · 轮次未披露 · 2026-10-01 · 本轮领投 · $17 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-54220f8d78441b23"
+        },
+        {
           "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39cbb5f315cdae11"
-        },
-        {
-          "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-9b94f245fa27a161"
-        },
-        {
-          "description": "融资来源记录：Recursive Superintelligence Inc. · 轮次未披露 · 2026-05-13 · 本轮领投 · $650 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61b930049ee4e86e"
         }
       ],
       "contacts": [
@@ -473,44 +538,32 @@
           "quote_hash": "c60ac9f3d066b42d62971147c4f89974f4412cded8d0edeeef8024a3caf034e6"
         },
         {
+          "source_id": "FISRC-54220f8d78441b23",
+          "source_url": "https://www.artificiallawyer.com/2026/10/01/new-model-law-firm-arceus-raises-17m/",
+          "source_title": "新模型律所Arceus融资1700万美元",
+          "source_content_hash": "cc8bef3d921d543f005662af473c08bdb28d09414a2a1db6a1a8e20b22e5a281",
+          "quote": "has just announced a $17 million fundraise led by Greycroft",
+          "quote_hash": "739240f829edc0a628ecd3bd9f134af86bf01adaefea7c94a97ff3d8c9ad7a11"
+        },
+        {
+          "source_id": "FISRC-dcf45e1aac1af636",
+          "source_url": "https://siliconangle.com/2026/10/01/ai-driven-law-firm-arceus-legal-raises-17m-to-move-beyond-contract-work/",
+          "source_title": "AI 驱动的律师事务所 Arceus Legal 融资 1700 万美元，以拓展合同业务之外的服务",
+          "source_content_hash": "f430492d981a90c520ea713271818099a7fc71620f0a2bccc8a967aed486c7c1",
+          "quote": "Greycroft LP led the round, with participation from Craft Ventures Management, South Park Commons Management and other investors.",
+          "quote_hash": "16e82e23b4fe6222edf4f1fa3be8ff168135fa6e47540af34ed00b3390db238e"
+        },
+        {
           "source_id": "FISRC-39cbb5f315cdae11",
           "source_url": "https://financialpost.com/pmn/business-wire-news-releases-pmn/marissa-mayers-new-startup-dazzle-ai-raises-8-million-seed-round",
           "source_title": "Marissa Mayer's New Startup Dazzle AI Raises $8 Million Seed Round | Financial Post",
           "source_content_hash": "0d32e048dc28b8dd",
           "quote": "The round was led by Kirsten Green of Forerunner with participation from Kleiner Perkins, Greycroft, Offline Ventures, Slow Ventures, and Bling Capital.",
           "quote_hash": "600471379db578d0c3a1b74082e5ab1414b3b43eaafa92f2fb6a9015fb2fa674"
-        },
-        {
-          "source_id": "FISRC-9b94f245fa27a161",
-          "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
-          "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
-          "source_content_hash": "e91739ca23d21469",
-          "quote": "Greycroft",
-          "quote_hash": "269ae42ee2c38d3580cd8f84435f3ddf2dd6883bee9956ab606ee7ef44301e07"
-        },
-        {
-          "source_id": "FISRC-61b930049ee4e86e",
-          "source_url": "https://siliconangle.com/2026/05/13/recursive-superintelligence-raises-650m-build-self-improving-ai-models/",
-          "source_title": "Recursive Superintelligence raises $650M to build self-improving AI models - SiliconANGLE",
-          "source_content_hash": "926edc21ca4613eb",
-          "quote": "Alphabet Inc.’s GV fund and Greycroft led the round.",
-          "quote_hash": "f390ee773199b41df67d5f2d9959f15d65a99ba3f977f978982815cd133aff09"
         }
       ],
       "last_verified_at": "2026-09-25",
       "identity_status": "verified"
-    },
-    "translations": {
-      "zh-CN": {
-        "public_profile.track_record[4].description": {
-          "text": "融资来源记录：Recursive Superintelligence Inc. · 轮次未披露 · 2026-05-13 · 本轮领投 · $650 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_hash": "011e3682947ef1e3a7a7322b1b988831e72f82fcee26b9740fc68ff5259be5cb",
-          "provider": "deepseek",
-          "model": "deepseek-v4-flash",
-          "translated_at": "2026-09-28T00:54:33.721Z",
-          "status": "translated"
-        }
-      }
     }
   }
 }

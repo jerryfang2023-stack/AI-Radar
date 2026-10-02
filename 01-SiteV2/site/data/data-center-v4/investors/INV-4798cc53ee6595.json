@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,23 +61,30 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-25",
+    "first_disclosed_at": "2026-06-11",
     "latest_disclosed_at": "2026-06-25",
     "role_counts": {
-      "lead": 1
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-1809f7cd0c75acf3",
+        "canonical_entity_id": "",
+        "name": "Prometheus"
+      },
       {
         "entity_id": "EN-19a5848a577315c5",
         "canonical_entity_id": "",
@@ -124,6 +131,46 @@
             "quote_hash": "514fa3df43415253e44cb5d3bd2de167210aaffa5fd4216f6266c074ec84b63a"
           }
         ]
+      },
+      {
+        "activity_id": "IA-6e01715a432c841d",
+        "funding_insight_id": "FI-bb8e3f8e8f3f519c",
+        "event_ids": [
+          "EV-5eb9944487368ea0"
+        ],
+        "company_entity_id": "EN-1809f7cd0c75acf3",
+        "company_canonical_entity_id": "",
+        "company_name": "Prometheus",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$12 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "120 亿美元"
+        },
+        "announced_at": "2026-06-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0c708eb8dc3d758b",
+            "source_url": "https://multiples.vc/private-comps/prometheus",
+            "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "646b9259f23a27ec",
+            "quote": "Jeff Bezos; Goldman Sachs; BlackRock; JPMorgan Chase; DST Global; ARCH Venture Partners",
+            "quote_hash": "511c911f2598de663a8bf4147e8afd0b79c2bc317180f52de5a0418255113f92"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -134,6 +181,14 @@
         "source_content_hash": "3ca48ddc85e02167",
         "quote": "The round was led by ARCH Venture Partners",
         "quote_hash": "514fa3df43415253e44cb5d3bd2de167210aaffa5fd4216f6266c074ec84b63a"
+      },
+      {
+        "source_id": "FISRC-0c708eb8dc3d758b",
+        "source_url": "https://multiples.vc/private-comps/prometheus",
+        "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "646b9259f23a27ec",
+        "quote": "Jeff Bezos; Goldman Sachs; BlackRock; JPMorgan Chase; DST Global; ARCH Venture Partners",
+        "quote_hash": "511c911f2598de663a8bf4147e8afd0b79c2bc317180f52de5a0418255113f92"
       }
     ],
     "public_profile": {
@@ -177,6 +232,10 @@
         {
           "description": "ARCH Venture Partners led Trase’s USD 107 million seed round announced in June 2026. The round amount is the company’s total financing, not ARCH’s individual check.",
           "source_id": "FISRC-9d8b3693de0579b6"
+        },
+        {
+          "description": "融资来源记录：Prometheus · B轮 · 2026-06-11 · 本轮参投 · $12 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0c708eb8dc3d758b"
         }
       ],
       "contacts": [
@@ -220,6 +279,14 @@
           "source_content_hash": "3ca48ddc85e02167",
           "quote": "The round was led by ARCH Venture Partners",
           "quote_hash": "514fa3df43415253e44cb5d3bd2de167210aaffa5fd4216f6266c074ec84b63a"
+        },
+        {
+          "source_id": "FISRC-0c708eb8dc3d758b",
+          "source_url": "https://multiples.vc/private-comps/prometheus",
+          "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "646b9259f23a27ec",
+          "quote": "Jeff Bezos; Goldman Sachs; BlackRock; JPMorgan Chase; DST Global; ARCH Venture Partners",
+          "quote_hash": "511c911f2598de663a8bf4147e8afd0b79c2bc317180f52de5a0418255113f92"
         }
       ],
       "last_verified_at": "2026-09-27"
