@@ -77,13 +77,20 @@ test("home member avatars open the same profile as the directory", async () => {
   }
 });
 
-test("home detail taps still require membership", () => {
+test("guest home taps navigate without registration overlay; destination guards prevent protected requests", async () => {
   const { page, events } = pageFor("community", async () => {}, false);
   const item = { id: "issue-13" };
   for (const marker of ['class="community-focus-card"', 'wx:for="{{olderArchives}}"', 'wx:for="{{featuredMembers}}"']) {
     tapHome(page, marker, { featuredArchive: item, item });
   }
-  assert.equal(events.length, 0);
+  assert.equal(events.length, 3);
+  for(const [,event] of events){
+    const parsed=new URL(event.url,'https://mini.test');let requests=0;
+    const target=pageFor(parsed.pathname.split('/')[2],async()=>{requests++;},false);
+    await target.page.onLoad(Object.fromEntries(parsed.searchParams));
+    assert.equal(requests,0);
+    assert.equal(target.page.data.registrationOpen,undefined);
+  }
 });
 
 test("detail readers reject missing IDs without requesting nonexistent content", async () => {

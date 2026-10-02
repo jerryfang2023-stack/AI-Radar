@@ -2,6 +2,8 @@
 
 Current source 1.2.1: directory markets are China/global only; list introductions clamp at four lines and public product-use previews stay bounded. Remove native canvases while financing sheets are open and redraw after dismissal. Profile actions share icon geometry and button styling. See docs/REVIEW-1.2.1.md.
 
+Current source 1.2.2: investor directory summaries use sourced investmentDirection, never general company descriptions or inferred portfolio mandates. Community protected entries use an inline gate and only explicit registration clicks open the shared registration sheet. Preserve unified reading entitlement and linked-member write restrictions; group application approval is not a browsing condition.
+
 ## Release numbering
 
 User policy: release digits roll over at 9. Use 1.1.9 -> 1.2.0, 1.2.9 -> 1.3.0, and 1.9.9 -> 2.0.0; never upload a patch or minor digit above 9. Keep package.json, analytics APP_VERSION and CLI upload version identical. Previous release 1.2.0 supersedes the interim 1.1.10 upload with the same accepted features. See docs/REVIEW-1.2.0.md.

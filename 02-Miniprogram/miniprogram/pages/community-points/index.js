@@ -1,14 +1,16 @@
 const { leaderboard, pointRules } = require("../../utils/community-data.js");
 const { readExperience } = require("../../utils/experience.js");
 const { getCommunity } = require("../../utils/member.js");
-const { requireCommunityMember } = require("../../utils/community-access.js");
+const { requireCommunityMember, communityGate } = require("../../utils/community-access.js");
 const { communityRequest } = require("../../utils/payment.js");
 const seasons = [{ id: "total", label: "总积分" }, { id: "season-2", label: "第二季" }, { id: "season-1", label: "第一季" }];
 
 Page({
+  ...communityGate,
   data: { mode: "list", season: "total", seasons, totalPoints: 0, totalMembers: 0, totalSessions: 0, leaderboard: [], pointRules, myPoints: 0, myRank: "—", myName: "", experience: false, latestPoints: "—", ledger: [], loading: false, error: "", sessionCount: 0, updatedAt: "—" },
   async onLoad(options = {}) {
-    if (!await requireCommunityMember()) return;
+    this.communityEntryOptions = options;
+    if (!await requireCommunityMember(undefined, this)) return;
     const preview = readExperience();
     this.setData({
       mode: ["list", "rules", "detail"].includes(options.mode) ? options.mode : "list",
@@ -18,8 +20,9 @@ Page({
     });
     if (this.data.mode !== "rules") return this.refresh();
   },
-  onShow() { if (this.data.loaded && !this.data.experience && this.data.mode !== "rules") return this.refresh(); },
+  onShow() { if (this.data.communityAccessBlocked) return this.onLoad(this.communityEntryOptions || {}); if (this.data.loaded && !this.data.experience && this.data.mode !== "rules") return this.refresh(); },
   async refresh(options = {}) {
+    if(this.data.communityAccessBlocked)return;
     const season = this.data.season;
     const generation = this._generation = (this._generation || 0) + 1;
     if (this.data.experience) {
@@ -38,6 +41,7 @@ Page({
       };
       apply(await communityRequest("season-points?season=" + season, { onCached: apply, force: Boolean(options.force) }));
     } catch (error) {
+      if(generation === this._generation && (error.accessState || error.statusCode === 401 || error.code === "MEMBERSHIP_REQUIRED"))this.setData({communityAccessBlocked:true,lockReason:require("../../utils/metered-access.js").contentLockReason(error)});
       if (generation === this._generation) this.setData({ error: error.message, loaded: false, leaderboard: [], ledger: [], myPoints: 0, myRank: "—", totalPoints: 0, totalMembers: 0, totalSessions: 0 });
     } finally {
       clearTimeout(timer);

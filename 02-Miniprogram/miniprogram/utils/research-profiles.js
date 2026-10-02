@@ -14,10 +14,10 @@ function refreshResearchProfiles() {
     if (next.schemaVersion !== manifest.schemaVersion || next.contentHash !== manifest.contentHash || next.profileCount !== manifest.profileCount || !Array.isArray(next.profiles) || next.profiles.length !== manifest.profileCount) throw new Error('档案清单不一致');
     const ids = new Set();
     for (const p of next.profiles) {
-      if (typeof p.id !== 'string' || !/^[A-Za-z0-9._-]+$/.test(p.id) || ids.has(p.id) || !['investors','people'].includes(p.type) || p.key !== `id:${p.id}` || typeof p.name !== 'string' || !p.name.trim() || !Array.isArray(p.markets) || !Array.isArray(p.categories) || p.markets.some(m=>!['china','global'].includes(m)) || p.categories.some(c=>typeof c!=='string') || ['summary','initial','latestDate','searchText','legacyInvestorKey'].some(k=>p[k]!==undefined && typeof p[k]!=='string')) throw new Error('档案条目不完整');
+      if (typeof p.id !== 'string' || !/^[A-Za-z0-9._-]+$/.test(p.id) || ids.has(p.id) || !['investors','people'].includes(p.type) || p.key !== `id:${p.id}` || typeof p.name !== 'string' || !p.name.trim() || !Array.isArray(p.markets) || !Array.isArray(p.categories) || p.markets.some(m=>!['china','global'].includes(m)) || p.categories.some(c=>typeof c!=='string') || ['investmentDirection','summary','initial','latestDate','searchText','legacyInvestorKey'].some(k=>p[k]!==undefined && typeof p[k]!=='string')) throw new Error('档案条目不完整');
       ids.add(p.id);
     }
-    catalog = {contentHash:next.contentHash,profiles:next.profiles.map(p=>({id:p.id,key:p.key,type:p.type,name:p.name,initial:p.initial||p.name.slice(0,1),summary:p.summary||'',markets:p.markets,categories:p.categories,latestDate:p.latestDate||'',searchText:p.searchText||p.name.toLowerCase(),legacyInvestorKey:p.legacyInvestorKey||''}))};
+    catalog = {contentHash:next.contentHash,profiles:next.profiles.map(p=>({id:p.id,key:p.key,type:p.type,name:p.name,initial:p.initial||p.name.slice(0,1),summary:p.summary||'',investmentDirection:p.investmentDirection||'',markets:p.markets,categories:p.categories,latestDate:p.latestDate||'',searchText:p.searchText||p.name.toLowerCase(),legacyInvestorKey:p.legacyInvestorKey||''}))};
     return catalog.profiles;
   })().finally(()=>{pending=null;});
   return pending;

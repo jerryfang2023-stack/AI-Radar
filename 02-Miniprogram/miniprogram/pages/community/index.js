@@ -1,5 +1,4 @@
 const { archives, getMember } = require("../../utils/community-data.js");
-const { requireCommunityMember } = require("../../utils/community-access.js");
 const { syncTabBar } = require("../../utils/tab-bar.js");
 const { isExperience, readExperience, saveExperience } = require("../../utils/experience.js");
 const { communityRequest, fetchMembership, prefetchCommunity, clearCommunityCache } = require("../../utils/payment.js");
@@ -49,17 +48,17 @@ Page({
   },
   openProtected(event) {
     const url = event.currentTarget.dataset.url;
-    requireCommunityMember(() => wx.navigateTo({ url }));
+    wx.navigateTo({ url });
   },
   openArchive(event) {
     const id = event.currentTarget.dataset.id;
     if (!id) return;
-    requireCommunityMember(() => wx.navigateTo({ url: `/pages/community-program/index?type=archive&id=${encodeURIComponent(id)}` }));
+    wx.navigateTo({ url: `/pages/community-program/index?type=archive&id=${encodeURIComponent(id)}` });
   },
   openMember(event) {
     const id = event.currentTarget.dataset.id;
     if (!id) return;
-    requireCommunityMember(() => wx.navigateTo({ url: `/pages/community-graph/index?mode=member&id=${encodeURIComponent(id)}` }));
+    wx.navigateTo({ url: `/pages/community-graph/index?mode=member&id=${encodeURIComponent(id)}` });
   },
   onShareAppMessage() { return { title: "观澜 AI 社群", path: "/pages/community/index" }; },
   onShareTimeline() { return { title: "观澜 AI 社群" }; },
