@@ -123,19 +123,62 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "David Cramer 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Sentry 官方博客回顾称 David Cramer 于 2008 年首次发布 Sentry，并于 2012 年与 Chris Jennings 创立公司将其商业化；Modem 融资公告将 David Cramer 列为天使投资人并标注 Sentry 关联。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Sentry",
+          "title": "联合创始人",
+          "period": "2012年",
+          "description": "Sentry 官方博客称，David Cramer 与 Chris Jennings 于 2012 年创立公司以商业化 Sentry。",
+          "source_id": "sentry_history"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Sentry 官方博客记述其从开源项目到商业化公司的历程；另有公司融资公告列其为天使投资人。",
       "track_record": [
+        {
+          "description": "Sentry 官方博客称 David Cramer 于 2008 年首次发布 Sentry。",
+          "source_id": "sentry_first"
+        },
+        {
+          "description": "Modem 公司融资公告将其列为天使投资人。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Sentry）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "sentry_history",
+          "source_url": "https://blog.sentry.io/sentrys-open-source-values/",
+          "source_title": "Sentry&#39;s Open Source Values | Sentry Blog",
+          "source_content_hash": "f5759ff569c3c4fd199c9996cd2fa17b4c7041ed0414b644c0a5cda3d24b1d79",
+          "quote": "In 2012, David founded a company with Chris Jennings to commercialize Sentry, and together with hundreds of others over the years they have built a successful business around the project.",
+          "quote_hash": "9f53c9ef127879eafa7bc4c52c907485ae470c82ed74efffa995cc2e0670b73b"
+        },
+        {
+          "source_id": "sentry_first",
+          "source_url": "https://blog.sentry.io/sentrys-open-source-values/",
+          "source_title": "Sentry&#39;s Open Source Values | Sentry Blog",
+          "source_content_hash": "f5759ff569c3c4fd199c9996cd2fa17b4c7041ed0414b644c0a5cda3d24b1d79",
+          "quote": "Our History David Cramer first published Sentry in 2008 as a non-commercial, public, license-less side project (cf.",
+          "quote_hash": "6e6c4cba499070cb313b6515267f94f0ba6da45a8f4d3e96d4d4303110b3318e"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
+          "quote": "ion from Inovia Capital and a group of incredible angels behind foundational developer tools and AI products: David Cramer and Chris Jennings (Sentry), Ivan Zhang (Cohere), Koen Bok and Jorn van Dijk (Framer), Lindsey Simon (Vercel), Armin Ronacher (Flask), Jacob Thornton (Bootstrap, Pierre Computer Co), John Laban and Kenneth Rose (OpsLevel), Dave Johnson (PhoneGap/Cordova), and",
+          "quote_hash": "374fbaccf566332e86878441fd3328ff3facf6170251c9a8d7c8a7be534587e5"
+        },
         {
           "source_id": "FISRC-9fd6ba5210b37fed",
           "source_url": "https://modem.dev/blog/modem-raises-4-4m",
@@ -145,7 +188,8 @@
           "quote_hash": "5f9d69b580b211e93300cc2c334160b1e5b55bf816b913072d04c40f9a51e303"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "translations": {
       "zh-CN": {

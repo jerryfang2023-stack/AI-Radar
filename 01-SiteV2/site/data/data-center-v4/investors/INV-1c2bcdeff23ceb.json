@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "776 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "官网页面使用“776”品牌；未据此推断“776 Ventures”为单独法律主体或基金名称。",
+      "summary": "776 的官方 Cerebro 页面称其产品由两名 776 成员打造，并将 Alexis Ohanian 列为创始人兼 General Partner；该页使用品牌名“776”。",
+      "facts": [
+        {
+          "field": "public_brand",
+          "label": "公开品牌",
+          "value": "776（队列标签为 776 Ventures；官网页面使用 776）",
+          "source_id": "776_cerebro"
+        },
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "Alexis Ohanian",
+          "source_id": "776_cerebro"
+        },
+        {
+          "field": "role",
+          "label": "官网所列职务",
+          "value": "Founder and General Partner, 776",
+          "source_id": "776_cerebro"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,24 @@
           "source_id": "FISRC-f80a0b6f2f7f63f8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Cerebro官方About页面",
+          "url": "https://tldr.cerebro.ai/about/",
+          "source_id": "776_cerebro"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "776_cerebro",
+          "source_url": "https://tldr.cerebro.ai/about/",
+          "source_title": "About · Cerebro",
+          "source_content_hash": "1db2087a0d8adb121073b8876e0bee42813c7c0e36da572ae767d53da68c1111",
+          "quote": "Alexis Ohanian co-founded Reddit and founded 776, where he is a General Partner.",
+          "quote_hash": "d6aeb10a7802ce56b2fa080c1285eb843ed627a04592e94fe1b7012134030e06"
+        },
         {
           "source_id": "FISRC-f80a0b6f2f7f63f8",
           "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
@@ -161,7 +196,7 @@
           "quote_hash": "a8c42143c5208d182cc831fec9649abcb05cff9f2e61246deb4b37d09fd1cfba"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

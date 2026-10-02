@@ -139,29 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Inception Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "Inception Fund 官网将 Basecamp Research 列入其投资组合，并称其为聚焦生命科学难题的前沿 AI 公司。Basecamp Research 官方融资新闻稿将 Inception Fund 列为 1.4 亿美元 C 轮投资者之一。",
+      "facts": [
         {
-          "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "portfolio_examples",
+          "label": "官网披露组合",
+          "value": "官网列出 Basecamp Research 为其投资组合公司。",
+          "source_id": "inception_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "Basecamp Research 公告将其列入 1.4 亿美元 C 轮投资方。",
           "source_id": "FISRC-ecd2ea74974f4ff3"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "参与 Basecamp Research 的 1.4 亿美元 C 轮；融资公告列出 Inception Fund 为投资者之一。",
+          "source_id": "FISRC-ecd2ea74974f4ff3"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.inceptionfund.vc/",
+          "source_id": "inception_profile",
+          "url": "https://www.inceptionfund.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "inception_profile",
+          "source_url": "https://www.inceptionfund.vc/",
+          "source_title": "Inception Fund",
+          "source_content_hash": "020a6e07b3eaac7ea5eea1cabaafd922d997d4cbdccb0ed3940e679738d709ee",
+          "quote": "hem. Who we have backed. Technical outliers. Inception portfolio companies Basecamp Research - Frontier AI company dedicated to solving the most pressing challenges in life sciences. Bottlecap AI - Frontier AI from Europe making existing LLMs radically more efficient. Recursive Superintelligence - Frontier AI lab building ",
+          "quote_hash": "67f1e5aaf6e9b9516fc678a6e2359c5b313660930e3d384d31537d0debd42523"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
-          "source_title": "更正 -- Basecamp Research",
-          "source_content_hash": "e53f1e2c96a09a59b3d2c0250baa37098aa57f90132cd42ed81a40d86422cf50",
-          "quote": "with participation from Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, NVIDIA, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI and True Ventures.",
-          "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
+          "source_title": "/C O R R E C T I O N -- Basecamp Research/",
+          "source_content_hash": "4e9c66123d0f871688da11a6f6403edff9d86e25c822636aeda63c774ce1b4d4",
+          "quote": "lio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI, and True Ventures. Funding will advance a pipeline of EDEN-designed therapeutics, starti",
+          "quote_hash": "c3c8251039a0e0ec146a946ff8ffb69b9a5a4d9a40a8875183c076ef9284e671"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,10 +139,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Starttech Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Starttech Ventures 官网称其除企业创建业务外，也投资早期 B2B SaaS 初创公司，并为被投团队提供产品、市场拓展和运营支持。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": "pre-seed and seed",
+          "source_id": "starttech_stage"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示对象",
+          "value": "B2B SaaS startups",
+          "source_id": "starttech_angel"
+        },
+        {
+          "field": "support_approach",
+          "label": "官网列示支持方式",
+          "value": [
+            "product",
+            "go-to-market",
+            "operational support"
+          ],
+          "source_id": "starttech_support"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +172,40 @@
           "source_id": "FISRC-3290be19a3eb1c09"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Starttech Ventures",
+          "url": "https://www.starttech.vc/angel-investment/",
+          "source_id": "starttech_angel"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "starttech_angel",
+          "source_url": "https://www.starttech.vc/angel-investment/",
+          "source_title": "Angel Investment - Starttech Ventures",
+          "source_content_hash": "56493346b470f8ed0dcbfb60fa39fa6032c4a1a61efa642cfe21a8f2c205498f",
+          "quote": "Alongside our venture-building work, we invest in early-stage B2B SaaS startups. These are companies at the very start — where the risk is real, and so is the opportunity.",
+          "quote_hash": "ebf5b203f6987904ee57a16f8fc95781e73f09e3f7cd819abb78d6a9fa3ff8b4"
+        },
+        {
+          "source_id": "starttech_stage",
+          "source_url": "https://www.starttech.vc/angel-investment/",
+          "source_title": "Angel Investment - Starttech Ventures",
+          "source_content_hash": "56493346b470f8ed0dcbfb60fa39fa6032c4a1a61efa642cfe21a8f2c205498f",
+          "quote": "Who it’s for: Pre-seed and seed-stage B2B SaaS startups solving real problems with capital-efficient models.",
+          "quote_hash": "c7589feda25a376fe8309a56338b705a5e9caac78b3c72d74adaade1a1cc91e5"
+        },
+        {
+          "source_id": "starttech_support",
+          "source_url": "https://www.starttech.vc/angel-investment/",
+          "source_title": "Angel Investment - Starttech Ventures",
+          "source_content_hash": "56493346b470f8ed0dcbfb60fa39fa6032c4a1a61efa642cfe21a8f2c205498f",
+          "quote": "We work closely with the teams we back, offering product, go-to-market, and operational support.",
+          "quote_hash": "9e3645d24cc1c63cd13488623e452aee8937a190aeac9be1eea385c223b1cf5c"
+        },
         {
           "source_id": "FISRC-3290be19a3eb1c09",
           "source_url": "https://ggba.swiss/en/geneva-based-oramavr-raises-usd-4-5-million-to-scale-medical-xr-training-solutions/",
@@ -161,7 +215,8 @@
           "quote_hash": "0e8df38b5243da199fc1b050a5b6d50a5244f8eba1f0729af62885a5fe62ab40"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

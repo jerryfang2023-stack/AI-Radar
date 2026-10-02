@@ -139,19 +139,61 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "VanEck Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "VanEck 官方私募市场页面介绍 VanEck Ventures Fund I：投资 crypto、金融科技与 AI 交叉领域，覆盖 pre-seed、seed 和 Series A，并披露首只基金于 2025 年初完成募集。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": [
+            "Crypto",
+            "Fintech",
+            "AI"
+          ],
+          "source_id": "vaneck_private"
+        },
+        {
+          "field": "stages",
+          "label": "投资阶段",
+          "value": [
+            "Pre-seed",
+            "Seed",
+            "Series A"
+          ],
+          "source_id": "vaneck_private"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025年初",
+          "description": "VanEck 官网称首只 VanEck Ventures Fund 于 2025 年初完成募集。",
+          "source_id": "vaneck_private"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Sapiom · 多轮融资 · 2026-08-05 · 本轮参投 · $35 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-df6a9c9a32146320"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "VanEck官网",
+          "url": "https://www.vaneck.com/us/en/investments/vaneck-capital/",
+          "source_id": "vaneck_private"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vaneck_private",
+          "source_url": "https://www.vaneck.com/us/en/investments/vaneck-capital/",
+          "source_title": "VanEck Capital | Private Market Investment Strategies | VanEck",
+          "source_content_hash": "c0213c8decdf6f2201d2d96ae43c914087dc36e30f7bcbac00ed8af684cbcd02",
+          "quote": "An early-stage strategy investing at the pre-seed, seed, and Series A stages in companies building at the intersection of crypto, fintech, and AI.",
+          "quote_hash": "2bab540155e60e2b84c948f0b0c333c3246e11bdf927524a687023309084a2a0"
+        },
         {
           "source_id": "FISRC-df6a9c9a32146320",
           "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
@@ -161,7 +203,8 @@
           "quote_hash": "644554c16d4a0c3b35826e809f99d6cf04e8c4eaabff4be2a762bdabb02ecfe7"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

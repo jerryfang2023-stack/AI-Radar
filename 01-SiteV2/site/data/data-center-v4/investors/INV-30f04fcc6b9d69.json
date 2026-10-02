@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "社保基金中关村自主创新专项基金(君联资本担任管理人) 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "政府科技平台报道确认君联资本担任社保基金中关村自主创新专项基金管理人，并介绍其在人工智能芯片、大模型、算力基础设施等硬科技领域的布局。融资报道将该专项基金列为瞬原科技新一轮数千万元融资的领投方。",
+      "facts": [
+        {
+          "field": "manager",
+          "label": "管理人",
+          "value": "君联资本担任该专项基金管理人。",
+          "source_id": "ncsti"
+        },
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "报道列出人工智能芯片与大模型、算力基础设施、手术机器人、脑机接口、商业航天、量子科技等方向。",
+          "source_id": "ncsti"
+        },
+        {
+          "field": "lead_investment",
+          "label": "公开投资案例",
+          "value": "融资报道将该专项基金列为瞬原科技新一轮数千万元融资领投方。",
+          "source_id": "veloalpha"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "领投瞬原科技新一轮数千万元融资；报道同时称该基金曾参与公司此前一轮融资。",
+          "source_id": "veloalpha"
+        },
         {
           "description": "融资来源记录：瞬原科技 · 多轮融资 · 2026-09-02 · 本轮领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-15cb977dd6c3c1bf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.ncsti.gov.cn/kjdt/xwjj/202608/t20260825_254377.html",
+          "source_id": "ncsti",
+          "url": "https://www.ncsti.gov.cn/kjdt/xwjj/202608/t20260825_254377.html"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ncsti",
+          "source_url": "https://www.ncsti.gov.cn/kjdt/xwjj/202608/t20260825_254377.html",
+          "source_title": "社保中关村专项基金：发现“水面之下”的硬核创新",
+          "source_content_hash": "fc41e1e61df2807eb10411c16541e1085b079731645a4b9af03b2a89db75fef0",
+          "quote": "合作，重点围绕人工智能、世界模型等关键领域进行联合研究和人才培养，积极推动科研成果的转化与落地，助力中国在人工智能领域迈向世界舞台中央。 这是3年来，作为社保基金中关村自主创新专项基金（以下简称“社保中关村专项基金”）的管理人，君联资本聚焦“早、新、硬、大、难、长”项目，投资人工智能芯片与大模型、算力基础设施、手术机器人、脑机接口、商业航天、量子科技等前沿赛道的一个缩影。 做真正重要的事 当前，中国进入“大科创时代”，一方面是硬核科技的狂飙猛进，科创基础设施在重新设置；另一方面是经济两头走极度的“K型分化”。在这个时代节点，地方政府和专业投资机构在“追风口”的科技叙事热潮中，保持自己的节奏，发出“",
+          "quote_hash": "e400c79f569b265c9a032db16985705cd1591273f5289119b12886b1351bc91e"
+        },
+        {
+          "source_id": "veloalpha",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-28/doc-inipwhrt5830028.shtml",
+          "source_title": "瞬原科技两月完成两轮数千万元融资_新浪科技_新浪网",
+          "source_content_hash": "95808b765cd540fe09e74f02c24b7232c58e6f3c51b5902abc84bd052466e774",
+          "quote": "两月完成两轮数千万元融资 2026年08月28日 17:47 投中网 新浪财经APP 缩小字体 放大字体 收藏 微博 微信 分享 腾讯QQ QQ空间 领投方为社保基金中关村自主创新专项基金（君联资本担任管理人），厚雪资本，云启资本跟投。 近日，北京瞬原科技有限公司（简称\"瞬原科技\"）完成第二轮数千万元人民币融资，领投方为社保基金中关村自主创新专项基金（君联资本担任管理人），厚雪资本，云启资本跟投。6月初，公司刚完成首轮数千万元融资，由龙芯创投领投，藕舫天使、社保基金中关村自主创新专项基金跟投。融资节奏背后是产品端和商业化端的快速推进。成立不到三个月，瞬原科技团队已扩张至30余人，密集发布VEQ、VSC",
+          "quote_hash": "e21f310a0ee363e6a4fee7b4e8f949fd3c6f5b38ce99559a0d3b8575ed3996ce"
+        },
         {
           "source_id": "FISRC-15cb977dd6c3c1bf",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-28/doc-inipwhrt5830028.shtml",
@@ -161,7 +208,7 @@
           "quote_hash": "a3984cbece70c9ead1d376dad15581db9bff38506f1b9e7cee74df3155e0f9f8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

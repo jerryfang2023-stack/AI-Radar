@@ -123,11 +123,36 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "社保基金中关村自主创新专项基金 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "档案依据社保基金会2023年5月30日的官方公告。公告披露的是设立计划及首期规模，并称拟优选管理人；该历史页面本身不能证明此后的登记、备案或实际运营状态。",
+      "summary": "社保基金中关村自主创新专项基金是全国社会保障基金理事会在2023年宣布设立的专项基金。官方公告称该基金由社保基金独立出资，首期规模50亿元，主要面向中关村早期和成长期科技企业并支持成果转化；公告当时称拟优选市场化管理人。",
+      "facts": [
+        {
+          "field": "funding_source",
+          "label": "公告披露的出资来源",
+          "value": "中关村自主创新专项基金由社保基金独立出资。",
+          "source_id": "PFSRC-INV-b4c03bba93106b-capital"
+        },
+        {
+          "field": "initial_scale",
+          "label": "公告披露的首期规模",
+          "value": "50亿元。",
+          "source_id": "PFSRC-INV-b4c03bba93106b-capital"
+        },
+        {
+          "field": "investment_focus",
+          "label": "公告披露的投资对象",
+          "value": "中关村早期和成长期科创企业，重点支持科技成果转化。",
+          "source_id": "PFSRC-INV-b4c03bba93106b-focus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-05-30",
+          "description": "全国社会保障基金理事会宣布将设立社保基金中关村自主创新专项基金。",
+          "source_id": "PFSRC-INV-b4c03bba93106b-announcement"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：瞬原科技 · 历史轮次未披露 · 首轮跟投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -137,6 +162,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "PFSRC-INV-b4c03bba93106b-announcement",
+          "source_url": "https://www.ssf.gov.cn/portal/tzyy/webinfo/2023/05/1687092394709751.htm",
+          "source_title": "社保基金会将设立社保基金中关村自主创新专项基金",
+          "source_content_hash": "70691f7171b3ada46bb442c9d13204594cac7ed1eafc36494afee144d8a17348",
+          "quote": "社保基金会宣布，将设立“社保基金中关村自主创新专项基金”。",
+          "quote_hash": "eaa018441bcb62b9a9e1a86134b29012d3dc8cf1f27dd0ff2c80c007ec605d60"
+        },
+        {
+          "source_id": "PFSRC-INV-b4c03bba93106b-capital",
+          "source_url": "https://www.ssf.gov.cn/portal/tzyy/webinfo/2023/05/1687092394709751.htm",
+          "source_title": "社保基金会将设立社保基金中关村自主创新专项基金",
+          "source_content_hash": "70691f7171b3ada46bb442c9d13204594cac7ed1eafc36494afee144d8a17348",
+          "quote": "中关村自主创新专项基金由社保基金独立出资，首期规模50亿元，拟优选市场头部机构担任管理人，按照市场化方式开展投资。",
+          "quote_hash": "fe80f3ede6193060244e6fdd109a1caf811b47beafd6db6aae22997a1fe9778c"
+        },
+        {
+          "source_id": "PFSRC-INV-b4c03bba93106b-focus",
+          "source_url": "https://www.ssf.gov.cn/portal/tzyy/webinfo/2023/05/1687092394709751.htm",
+          "source_title": "社保基金会将设立社保基金中关村自主创新专项基金",
+          "source_content_hash": "70691f7171b3ada46bb442c9d13204594cac7ed1eafc36494afee144d8a17348",
+          "quote": "基金期限超过10年，彰显长期资金特征，将主要投向中关村早期和成长期科创企业，重点支持科创企业成果转化。",
+          "quote_hash": "120d7b90a3163da221906135a8609c388365fac7c21a5eb7b3fd21c5bfb6ec3f"
+        },
+        {
           "source_id": "FISRC-15cb977dd6c3c1bf",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-28/doc-inipwhrt5830028.shtml",
           "source_title": "瞬原科技两月完成两轮数千万元融资",
@@ -145,7 +194,7 @@
           "quote_hash": "9a503b34e437e7aa6c603917f3953fdcf35ad610214232dbc2e30bbb75ff19bd"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

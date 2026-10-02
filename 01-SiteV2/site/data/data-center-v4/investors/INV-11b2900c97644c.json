@@ -139,10 +139,40 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Magnify Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Magnify Ventures 官网称其投资重塑家庭生活与照护经济的公司，聚焦 pre-seed 与 seed，通常投资 25 万至 200 万美元。",
+      "facts": [
+        {
+          "field": "stages",
+          "label": "投资阶段",
+          "value": [
+            "Pre-seed",
+            "Seed"
+          ],
+          "source_id": "magnify_home"
+        },
+        {
+          "field": "typical_check_size",
+          "label": "官网披露的常见投资额",
+          "value": "$250K–$2M",
+          "source_id": "magnify_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "家庭生活与照护经济",
+          "source_id": "magnify_home"
+        },
+        {
+          "field": "co_founders",
+          "label": "联合创始人",
+          "value": [
+            "Joanna Drake",
+            "Julie Wroblewski"
+          ],
+          "source_id": "magnify_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +180,32 @@
           "source_id": "FISRC-9e7066e699b3555c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Magnify Ventures官网",
+          "url": "https://www.magnify.vc/",
+          "source_id": "magnify_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "magnify_home",
+          "source_url": "https://www.magnify.vc/",
+          "source_title": "Magnify Ventures",
+          "source_content_hash": "889146ee91d0d13d67a2e14ea474359e77cb824677bf4129a33c0d7ee4f9e364",
+          "quote": "We invest at the pre-seed and seed stage companies, typically investing $250K to $2M.",
+          "quote_hash": "e6a49e547c4e34c6b26ccc49e5d11b25835565447a4ed8a29c63735f5495d5bc"
+        },
+        {
+          "source_id": "magnify_team",
+          "source_url": "https://www.magnify.vc/team",
+          "source_title": "Team | Magnify Ventures",
+          "source_content_hash": "cb3720c347d7b225ee740fd05485e9edebcfde8ace7de6b5a29657688e71a274",
+          "quote": "Joanna Drake Co-Founder & Managing Partner Julie Wroblewski Co-Founder & Managing Partner Marie Drez Chief Financial Officer Maricar Mahoney Executive Assistant/Project Coordinator Portfolio Team News LP portal Legal Contact Magnify Ventures 2219 Main St Unit #414 Santa Monica, CA 90405 info@magnify.vc Sign up for updates © Magnify Ventur",
+          "quote_hash": "f7952776410e0764bb85009c40826bde73cd126871bcb432afef8f12c3eb67fc"
+        },
         {
           "source_id": "FISRC-9e7066e699b3555c",
           "source_url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom",
@@ -161,7 +215,8 @@
           "quote_hash": "e0ccb001866e306c56bb8e179d65fc454ef4ef70ffdc7557ce049b87564ad95f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

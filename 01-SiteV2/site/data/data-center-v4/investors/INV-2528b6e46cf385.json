@@ -139,19 +139,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "33N Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "33N Ventures 官网称其全球投资网络安全、AI 与国防领域。Osavul 官方公告称，33N 领投了其 850 万欧元 A 轮融资。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "网络安全、人工智能与国防。",
+          "source_id": "33n"
+        },
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "官网描述为全球投资。",
+          "source_id": "33n"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "披露案例",
+          "value": "Osavul 官方公告确认 33N Ventures 领投其 850 万欧元 A 轮。",
+          "source_id": "osavul"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-10-01",
+          "description": "Osavul 公告 850 万欧元 A 轮融资，由 33N Ventures 领投。",
+          "source_id": "osavul"
+        }
+      ],
       "track_record": [
+        {
+          "description": "领投 Osavul 的 850 万欧元 A 轮；公告称融资后公司累计融资约 1200 万欧元。",
+          "source_id": "osavul"
+        },
         {
           "description": "融资来源记录：Osavul · A轮 · 2026-10-01 · 本轮领投 · €8.5m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4dc390804d079769"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://33n.vc/",
+          "source_id": "33n",
+          "url": "https://33n.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "33n",
+          "source_url": "https://33n.vc/",
+          "source_title": "33N Ventures",
+          "source_content_hash": "71dd45027af6f339d2cc3a02a43769c955b78d0f7fb7c97863d54b8b537cfe27",
+          "quote": " Your gateway to global growth Your gateway to global growth global growth 33N invests globally in Cybersecurity, AI, and Defense, leveraging on unique data, knowledge & relationships 33N invests globally in Cybersecurity, AI, and Defense, leveraging on unique data, knowledge & relationships Submit your pitch Submit your pitch Your gatew",
+          "quote_hash": "fea34f67cc0658b6e7766db017c2150bb8c4d4b5aba42d3d717074f9a7ab8db7"
+        },
+        {
+          "source_id": "osavul",
+          "source_url": "https://www.osavul.cloud/blog/osavul-raised-series-a-round",
+          "source_title": "Osavul Raised $10M (€8.5M) Series A to Scale Hybrid Risk Intelligence Globally",
+          "source_content_hash": "c297d9d05c33da3c791bfae3041da336d7d5e223a8cd46fad7f6cfd6dd818f94",
+          "quote": " NATO and security institutions worldwide, raised $10M (€8.5M) in Series A funding led by 33N Ventures, with participation from Balnord, G+D Ventures and existing investor 42CAP. The round accelerates Osavul’s expansion from government and defence into enterprises and critical infrastructure operators — bringin",
+          "quote_hash": "d5a3e833e8259c48c12807720b244be87dc1c543e7f1ff892a8efba0167e31d1"
+        },
         {
           "source_id": "FISRC-4dc390804d079769",
           "source_url": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
@@ -161,7 +214,7 @@
           "quote_hash": "7210a96814a82e3e8392379255027cb96e86dd45ca3f5dd0e7390c7c154ac689"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

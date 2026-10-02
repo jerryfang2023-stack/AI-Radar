@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "C4 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "C4 Ventures 官网将其描述为由科技运营者组成的欧洲风险投资机构，支持科技创业者；页面称团队由前 Apple、Microsoft 高管带领。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "官网自述地域",
+          "value": "欧洲",
+          "source_id": "c4_team"
+        },
+        {
+          "field": "team_background",
+          "label": "官网所述团队背景",
+          "value": "前 Apple 和 Microsoft 高管及科技企业运营者",
+          "source_id": "c4_team"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网所述支持对象",
+          "value": "科技创业者",
+          "source_id": "c4_team"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,24 @@
           "source_id": "FISRC-6d8407107e870ebc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "C4 Ventures 官网",
+          "url": "https://c4v.com/",
+          "source_id": "c4_team"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "c4_team",
+          "source_url": "https://c4v.com/about/who-we-are/",
+          "source_title": "Who We Are — Meet the Team at C4 Ventures",
+          "source_content_hash": "d3c7b3afbea311323ab835635faf7792eb874de067cac4976dab55b22b8c38f3",
+          "quote": "C4 Ventures is a leading European Venture firm led by former Apple and Microsoft executives, a team of business operators backing ambitious tech entrepreneurs.",
+          "quote_hash": "516964dec26bae0bd034b5e33edf23ab27f1e2a3a34f1555aa026be5047d1a2f"
+        },
         {
           "source_id": "FISRC-6d8407107e870ebc",
           "source_url": "https://www.maddyness.com/?p=1441578",
@@ -161,7 +195,8 @@
           "quote_hash": "e84015f18d180201ae57e28b0feb9e210a437c8f6be07a8718d935ed4f319015"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

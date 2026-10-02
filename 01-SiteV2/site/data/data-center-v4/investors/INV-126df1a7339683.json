@@ -139,10 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Endiya Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Endiya Partners 官网回顾其支持印度新一代可规模化产品企业的创立愿景，并称其作为初始机构投资者与创始团队紧密合作。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "印度创业者打造的可规模化产品公司",
+          "source_id": "endiya_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "官网自述以 first institutional investor 身份与创始人协作",
+          "source_id": "endiya_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +162,24 @@
           "source_id": "FISRC-49cedc22c0b6ea4e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Endiya Partners官网",
+          "url": "https://www.endiya.com/about-us",
+          "source_id": "endiya_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "endiya_about",
+          "source_url": "https://www.endiya.com/about-us",
+          "source_title": "About Us | Driving Innovation &amp; Growth in the Startup Ecosystem | Endiya",
+          "source_content_hash": "28a14d809a30a9cc8552ba36c939f1a6e39f20f222885329fc6ade0c9470b80a",
+          "quote": "Endiya Partners was founded with the vision of enabling the third wave of Indian entrepreneurship, led by scalable product companies.",
+          "quote_hash": "60dedf8d35ea3de46a488838f77bdceb3332415ea98c35135f4bab919f6479df"
+        },
         {
           "source_id": "FISRC-49cedc22c0b6ea4e",
           "source_url": "https://www.thesaasnews.com/news/thirdai-automation-raises-3m-seed-round/",
@@ -161,7 +189,8 @@
           "quote_hash": "2abe713d318778a8a7d15e50bc7774a3ea63d9b6525b327d1a8ee7a0c3d341f3"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

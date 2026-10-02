@@ -139,10 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mirae Asset Venture Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "韩国交易所 2021 年半年度报告列出未来资产风险投资的中英文公司名、1999 年 6 月 8 日成立时间，并记载其从事中小企业与创业投资、投资组合设立管理等业务。",
+      "facts": [
+        {
+          "field": "legal_name_ko",
+          "label": "韩文公司名（2021 年报告）",
+          "value": "미래에셋벤처투자주식회사",
+          "source_id": "mirae_identity"
+        },
+        {
+          "field": "legal_name_en",
+          "label": "英文公司名（2021 年报告）",
+          "value": "Mirae Asset Venture Investment Co., Ltd",
+          "source_id": "mirae_identity"
+        },
+        {
+          "field": "establishment_date",
+          "label": "成立日期（2021 年报告）",
+          "value": "1999-06-08",
+          "source_id": "mirae_founding"
+        },
+        {
+          "field": "company_type",
+          "label": "法定业务类型（2021 年报告）",
+          "value": "중소기업창업투자회사（创业投资公司）",
+          "source_id": "mirae_business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +174,48 @@
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Mirae Asset Venture Investment",
+          "url": "https://venture.miraeasset.co.kr/",
+          "source_id": "mirae_website"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "mirae_identity",
+          "source_url": "https://kind.krx.co.kr/external/2021/08/13/000208/20210813000533/11012.htm",
+          "source_title": "Mirae Asset Venture Investment 2021 Half-year Report | Korea Exchange KIND",
+          "source_content_hash": "0ce7c1d4dd0f7219502ab6ad1b3812347ee7ccf56bd4e09d3ab10674e9ff50ec",
+          "quote": "당사의 명칭은 미래에셋벤처투자주식회사라고 표기합니다. 또한, 영문으로는 Mirae Asset Venture Investment Co., Ltd 로 표기합니다. 단, 약식으로는 미래에셋벤처투자㈜ 또는 Mirae Asset Venture Investment 로 표기합니다.",
+          "quote_hash": "4f32c81cb2742f657a9fb95f49941a26db590260e69376987e60f77466c9e08d"
+        },
+        {
+          "source_id": "mirae_founding",
+          "source_url": "https://kind.krx.co.kr/external/2021/08/13/000208/20210813000533/11012.htm",
+          "source_title": "Mirae Asset Venture Investment 2021 Half-year Report | Korea Exchange KIND",
+          "source_content_hash": "0ce7c1d4dd0f7219502ab6ad1b3812347ee7ccf56bd4e09d3ab10674e9ff50ec",
+          "quote": "당사는 중소기업창업지원법에 근거하여 중소창업기업에 대한 투자지원, 창업투자조합의 결성 및 업무의 집행, 벤처기업육성에 관한 특별조치법에 의한 벤처기업에 대한투자등의 사업을 영위할 목적으로 1999년 06월 08일 설립되었습니다.",
+          "quote_hash": "0e0a4aa88229137df155ddc08ce615a51b4f7e8c89269f69cd2ba5786e8eedab"
+        },
+        {
+          "source_id": "mirae_business",
+          "source_url": "https://kind.krx.co.kr/external/2021/08/13/000208/20210813000533/11012.htm",
+          "source_title": "Mirae Asset Venture Investment 2021 Half-year Report | Korea Exchange KIND",
+          "source_content_hash": "0ce7c1d4dd0f7219502ab6ad1b3812347ee7ccf56bd4e09d3ab10674e9ff50ec",
+          "quote": "당사는 「중소기업창업지원법」 제10조 제1항 규정에 의해 설립된 중소기업창업투자회사입니다.",
+          "quote_hash": "d24c0eb3da6ffd8714f1cbd11196e6cfe7820ac88878b74652f5f0717e074a4a"
+        },
+        {
+          "source_id": "mirae_website",
+          "source_url": "https://kind.krx.co.kr/external/2021/08/13/000208/20210813000533/11012.htm",
+          "source_title": "Mirae Asset Venture Investment 2021 Half-year Report | Korea Exchange KIND",
+          "source_content_hash": "0ce7c1d4dd0f7219502ab6ad1b3812347ee7ccf56bd4e09d3ab10674e9ff50ec",
+          "quote": "홈페이지 : http://venture.miraeasset.co.kr",
+          "quote_hash": "f32d50e1186ed0247f6e3c8df159db915d69e2d4199f2dc0c34ee32cf73743ba"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +225,8 @@
           "quote_hash": "635226e5bbc13dc2401a8d1b21681f6e106ffa66c6dbd898c4b733e9f4fc2dd6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

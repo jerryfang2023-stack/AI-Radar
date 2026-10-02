@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Motive Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "Motive Partners 官网称其投资科技赋能的金融与商业服务企业，覆盖 venture 到 growth 及 buyout 阶段。Elio Mortgage 公司公告将其列为 510 万美元 pre-seed 融资方之一。",
+      "facts": [
         {
-          "description": "融资来源记录：Elio Mortgage · 预种子轮 · 2026-09-29 · 本轮领投 · $5.1 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网称其聚焦科技赋能的金融与商业服务企业。",
+          "source_id": "motive_profile"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网披露其投资范围覆盖 venture、growth 与 buyout。",
+          "source_id": "motive_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "Elio Mortgage 公告列出其为 510 万美元 pre-seed 融资方。",
           "source_id": "FISRC-f199e5c78b7a74fc"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "参与 Elio Mortgage 的 510 万美元 pre-seed 融资；公告还列出 Social Leverage。",
+          "source_id": "FISRC-f199e5c78b7a74fc"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://motivepartners.com/about",
+          "source_id": "motive_profile",
+          "url": "https://motivepartners.com/about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "motive_profile",
+          "source_url": "https://motivepartners.com/about",
+          "source_title": "Motive Partners | About",
+          "source_content_hash": "4001835a702e9918b188383cca4be05f3f1d6f997df0023d42f46498e2c0ee3c",
+          "quote": "eam Team Insights Insights News News Login Login Get in touch Get in touch We invest in tech-enabled financial and business services companies From venture to growth & buyout across North America and Europe founded 2016 Investments 67 Raised $6.4B investors, operators & innovators 150+ Venture We partner with founders who are building the next genera",
+          "quote_hash": "577a0735b65514fb7e91e25faf780b7b350b8df4f436541ae36a311785eeb1dc"
+        },
         {
           "source_id": "FISRC-f199e5c78b7a74fc",
           "source_url": "https://www.businesswire.com/news/home/20260929718646/en/Elio-Mortgage-Launches-with-%245.1-Million-in-Pre-Seed-Funding-to-Build-the-Mortgage-Company-for-the-AI-Era",
-          "source_title": "Elio Mortgage 以 510 万美元 pre-seed 融资启动，致力于打造 AI 时代的抵押贷款公司",
-          "source_content_hash": "549bea470c7c6610fe41ce7058b1bdbf65b5973d8f792bda0f6738d33f7df6ca",
-          "quote": "emerged from stealth with $5.1 million in pre-seed funding led by Motive Partners and Social Leverage",
-          "quote_hash": "23c340440a273e5ce0d38de436fe712e8ce8b7758802105842b40bfc06848e06"
+          "source_title": "Elio Mortgage Launches with $5.1 Million in Pre-Seed Funding to Build the Mortgage Company for the AI Era",
+          "source_content_hash": "8a3c9454aec3cc0b8c9ad8a58e491e905b4979e404e516642616fd464d37954f",
+          "quote": "ion in Pre-Seed Funding to Build the Mortgage Company for the AI Era Share Motive Partners and Social Leverage back Elio’s vision to transform the operating model and economics of mortgage origination NEW YORK--( BUSINESS WIRE )-- Elio Mortgage, an AI-native mortgage company redesigning how home loans are originated, t",
+          "quote_hash": "302b951126004719cee231f4525b09d15397af62b513db3653e9bb0d9a0a6663"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

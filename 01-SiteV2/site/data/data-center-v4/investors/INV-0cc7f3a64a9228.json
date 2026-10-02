@@ -123,29 +123,90 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Z21 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "机构定位、投资主题、阶段及目标市场依据 z21 Ventures 官网自述；Naïve Seed 轮投资方关系仅见 Caplight 二手数据库页面，未找到一手融资公告，故不记录金额、日期或领投角色；未据此推断基金回报或完整组合。",
+      "summary": "z21 Ventures 官网将其定位为社区驱动的早期投资基金，关注面向北美及全球市场的 AI-as-a-service 与深科技，主要投资 pre-seed 和 seed 阶段；官网称其社区有 205+ 名运营者与高管参与。",
+      "facts": [
         {
-          "description": "融资来源记录：Naïve · 历史轮次未披露 · Seed轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "以社区资源支持创业公司的早期投资基金。",
+          "source_id": "z21_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "AI-as-a-service 与深科技。",
+          "source_id": "z21_thesis"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "Pre-seed、Seed。",
+          "source_id": "z21_thesis"
+        },
+        {
+          "field": "target_market",
+          "label": "目标市场",
+          "value": "以北美及全球市场为目标；官网称创始人主要来自印度裔创业者及其全球侨民生态。",
+          "source_id": "z21_thesis"
+        },
+        {
+          "field": "community_network",
+          "label": "社区网络",
+          "value": "官网称有 205+ 名运营者和企业高管参与基金及组合支持。",
+          "source_id": "z21_thesis"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "Caplight 二手数据库将 z21 Ventures 列为 Naïve Seed 轮投资方；页面未列出该笔投资的金额、日期或领投角色。",
           "source_id": "FISRC-ce3d6a1d340a142b"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Caplight 二手数据库将 z21 Ventures 列为 Naïve Seed 轮投资方；页面未列金额、日期或领投角色。",
+          "source_id": "FISRC-ce3d6a1d340a142b"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://z21.ventures/",
+          "source_id": "z21_about",
+          "url": "https://z21.ventures/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "z21_about",
+          "source_url": "https://z21.ventures/aboutus",
+          "source_title": "About Us — z21 Ventures",
+          "source_content_hash": "3bb0e9bb69a0d34062a8379ee8801dd75e560fd36423c8439a225c3399a6ff59",
+          "quote": "Bring the power of community and capital to support entrepreneurs build and scale purposeful companies. Vision To be the best performing early stage fund by empowering exceptional founders through community and capital.",
+          "quote_hash": "29869b48ca91636566ef0a6e15d65c9a5f09b6ea475fd97497fa55393efb83b1"
+        },
+        {
+          "source_id": "z21_thesis",
+          "source_url": "https://z21.ventures/thesis",
+          "source_title": "Investment Thesis — z21 Ventures",
+          "source_content_hash": "6be2afd3300b7b9120c85ef864f3f88b214319cb63a3b3679859c31c9b7edb0d",
+          "quote": "z21 Ventures backs AI-as-a-service and deep tech companies targeting North America / Global markets — founded predominantly by world-class Indian-origin entrepreneurs, whether based in India or across the global diaspora. We focus here because this founder profile consistently produces deeply technical, capital-efficient teams building for large, underserved enterprise markets. What sets z21 apart is a community of 205+ operators and executives personally invested in the fund. They generate proprietary deal flow, validate investment decisions with real domain expertise, and remain active partners in every portfolio company through every stage of growth.",
+          "quote_hash": "952c7fbdeca3f0d81cd9e3cd09a648f00e0b8e2eb250121270f32ff3abcd8635"
+        },
         {
           "source_id": "FISRC-ce3d6a1d340a142b",
           "source_url": "https://www.caplight.com/company/usenaive",
-          "source_title": "Naïve Valuation & Funding History | Caplight",
-          "source_content_hash": "8ff1441f384090b6",
-          "quote": "Z21 VenturesSeed",
-          "quote_hash": "1f942b3b9f330f38cc3969ecb72cc9f484243ad9bfbbf70bbe4b60df662e8f25"
+          "source_title": "Naïve Valuation &amp; Funding History | Caplight",
+          "source_content_hash": "bc177a8db7b2727b4e2b550eaa30b0e161f2ea5e9117ac5bcde73e35ef1a665f",
+          "quote": "Naïve investors Investor Rounds Zetta Venture Partners Series A Z21 Ventures Seed DG Daiwa Ventures Seed Y Combinator Series A, Seed Rocket Internet Seed 468 Capital Seed Nexus Venture Partners Series A",
+          "quote_hash": "a4965fa2b77f5ba1008104a68488892beaafff654fbd2a66e73cae4e298d612f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

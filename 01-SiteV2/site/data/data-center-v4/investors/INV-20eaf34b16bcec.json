@@ -139,10 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Gulf Development Public Company Limited 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网页面核验的是 Gulf Development 的公司业务结构；创业投资活动仍按融资披露记录，不从企业经营业务推断投资策略。",
+      "summary": "Gulf Development Public Company Limited 官网的业务概览列出能源、港口与物流、数字业务及电信业务；该页面介绍的是企业业务结构，未披露其创业投资策略。",
+      "facts": [
+        {
+          "field": "businesses",
+          "label": "官网列出的业务",
+          "value": [
+            "Energy",
+            "Port and Logistics",
+            "Digital",
+            "Telecommunication"
+          ],
+          "source_id": "gulf_businesses"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +162,24 @@
           "source_id": "FISRC-d47a3aba63bc33dc"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Gulf Development官网",
+          "url": "https://www.gulf.co.th/en/our-businesses/business-overview",
+          "source_id": "gulf_businesses"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "gulf_businesses",
+          "source_url": "https://www.gulf.co.th/en/our-businesses/business-overview",
+          "source_title": "Business Overview | Gulf Development",
+          "source_content_hash": "8323a73a18869c095d689579f23f2f08cafdc7c1ee17227b43c6b26aeb686439",
+          "quote": "Energy Business Port and Logistics Business Digital Business Telecommunication Business Investors Sustainability News News News and Activities Corporate Videos Careers Careers Join the Gulf family and be an important part of our mission to create a sustainable future.",
+          "quote_hash": "fa125c38b8c1f9e56eefc660a27a6d09f2fa6cc5a8225551ff4780000f1a1f9e"
+        },
         {
           "source_id": "FISRC-d47a3aba63bc33dc",
           "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
@@ -161,7 +189,7 @@
           "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ventures Together 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "Ventures Together 官网将其描述为由创业者和运营者共同投资的邀请制社群。Throne Science 官方博客列出 Ventures Together 为其 Series A 参与方，并将 Will Ventures 列为领投方。",
+      "facts": [
+        {
+          "field": "organization_model",
+          "label": "组织形式",
+          "value": "由创业者和运营者共同投资的邀请制社群。",
+          "source_id": "vt"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "Throne Science 官方博客将其列为 Series A 参与方。",
+          "source_id": "throne"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "参与 Throne Science 的 Series A；公司博客将 Will Ventures 列为领投方。",
+          "source_id": "throne"
+        },
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a587e714925b882"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.venturestogether.com/",
+          "source_id": "vt",
+          "url": "https://www.venturestogether.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vt",
+          "source_url": "https://www.venturestogether.com/",
+          "source_title": "Ventures Together | Exceptional angel investor community",
+          "source_content_hash": "a38dad92ca5d67cad1998849fde07b35f48144533f4882b7776bc56b504708b1",
+          "quote": "quantity. Get in Touch Experienced start-up operators, investing together. An invite-only community for founders and operators investing together. VT dramatically reduces the amount of time needed to build a great, diversified angel portfolio. VT Members Portfolio Companies backed Portfolio We believe the best angel portfolios are diversified across mul",
+          "quote_hash": "5137b29893a5d5c221e9c5b9ebc05bb5a4f184080014de85ddf6d46f3e0ab37d"
+        },
+        {
+          "source_id": "throne",
+          "source_url": "https://thronescience.com/blogs/signals/throne-raised-10-million-heres-what-its-for",
+          "source_title": "Throne Raised $10 Million. Here&#39;s What It&#39;s For &ndash; Throne Science",
+          "source_content_hash": "4fb68fdd53b571e0dd3981b821b3e879f7d3052e280d07837bf012800813ef29",
+          "quote": "Today we're thrilled to announce a $10 million Series A, led by Will Ventures, with Workshop, Emerson Collective, Accomplice, Moxxie, Salt VC, LEAD VC, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger participating.",
+          "quote_hash": "e3722ecc019e1f1b6c2b2dd1e5b45b0882e0a9c384e79e11872ce47e7d19568a"
+        },
         {
           "source_id": "FISRC-2a587e714925b882",
           "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
@@ -161,7 +202,7 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

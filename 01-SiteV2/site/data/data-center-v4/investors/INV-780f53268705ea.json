@@ -123,19 +123,77 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Black Opal Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Black Opal Ventures 官网称 Tara Bishop 与 Eileen Tanghal 于 2021 年创立该机构，关注以技术解决重大问题，公开列出的领域包括医疗科技、科技生物、基础设施和网络安全。",
+      "facts": [
+        {
+          "field": "founders",
+          "label": "官网列示创办人",
+          "value": [
+            "Tara Bishop",
+            "Eileen Tanghal"
+          ],
+          "source_id": "blackopal_founders"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示投资领域",
+          "value": [
+            "医疗科技",
+            "科技生物",
+            "基础设施",
+            "网络安全"
+          ],
+          "source_id": "blackopal_sectors"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "官网称 Tara Bishop 与 Eileen Tanghal 于 2021 年创立 Black Opal Ventures。",
+          "source_id": "blackopal_home"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Eridu · 历史轮次未披露 · 历史投资方（轮次语境不明）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Black Opal Ventures 官网",
+          "url": "https://www.blackopalventures.com/home",
+          "source_id": "blackopal_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "blackopal_home",
+          "source_url": "https://www.blackopalventures.com/home",
+          "source_title": "Black Opal Ventures | Investing",
+          "source_content_hash": "1976996d9050dd81ff57a8977b2fa986414685b553aa0df6207a80c6c77a3cfd",
+          "quote": "In 2021, they founded Black Opal Ventures and turned this dream into reality.",
+          "quote_hash": "095f4e9feaf442d9191809be5f17f73c59255894283aaec0df2f0415cede32cd"
+        },
+        {
+          "source_id": "blackopal_founders",
+          "source_url": "https://www.blackopalventures.com/home",
+          "source_title": "Black Opal Ventures | Investing",
+          "source_content_hash": "1976996d9050dd81ff57a8977b2fa986414685b553aa0df6207a80c6c77a3cfd",
+          "quote": "Tara Bishop and Eileen Tanghal met 30 years ago while studying at MIT.",
+          "quote_hash": "3980da3b775d48ded8706dafb1c10c24362841c94d26a80b042df53d4258c798"
+        },
+        {
+          "source_id": "blackopal_sectors",
+          "source_url": "https://www.blackopalventures.com/home",
+          "source_title": "Black Opal Ventures | Investing",
+          "source_content_hash": "1976996d9050dd81ff57a8977b2fa986414685b553aa0df6207a80c6c77a3cfd",
+          "quote": "Healthtech Tech Bio Infrastructure Cybersecurity Backing Companies Solving the World's Biggest Problems &copy; 2024 Black Opal Ventures Home Team Impact Portfolio Fellows Features Insights Brilliant Tomorrows Contact LinkedIn Medium GET BLACK OPAL IDEAS IN YOUR INBOX Join Your email address will not be sold or shared.",
+          "quote_hash": "ca8bb98af992b5a96be6c46973b69e109771eee5cc794b35e6a17e319323912a"
+        },
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
           "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
@@ -145,7 +203,8 @@
           "quote_hash": "2c19ad21e2903ad41b62a677b99434dc557ec09e08c5d17165051c77cdb42211"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -124,11 +124,15 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Guangyuan L2F Entrepreneur Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_note": "仅有被投企业的融资公告确认这一参与方名称，不能据此扩写该机构的主体信息或投资策略。",
+      "summary": "Guangxiang Technology 的官方融资公告将 Guangyuan L2F Entrepreneur Fund 列为跟投机构之一。该公告未说明该基金的出资额、管理人或投资策略。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Guangxiang Technology 于 2026-03-27 公布多轮种子、天使及天使+融资，公告将 Guangyuan L2F Entrepreneur Fund 列为跟投方；未披露其单独出资金额。",
+          "source_id": "guangxiang_round"
+        },
         {
           "description": "融资来源记录：Tiiny AI · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dea11fc16cbc6f8b"
@@ -136,6 +140,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "guangxiang_round",
+          "source_url": "https://sunrising-ai.x.jsmo.xin/en-US/news",
+          "source_title": "News - Guangxiang Technology",
+          "source_content_hash": "2500e3787cf51eee0d46da82390802825e0f3985394c690ecd18d1e58e155d64",
+          "quote": "The financing was jointly led by financial investment institutions IDG Capital and Oriental Fuhai, with follow-on investments from robotics industry capital Efft, Zero One Venture Capital, Datai Capital, and Guangyuan L2F Entrepreneur Fund.",
+          "quote_hash": "7a9655f066315796e5a88c9b83966011c2f3b1f72a9f566b8cc12d4afb51bc5c"
+        },
         {
           "source_id": "FISRC-dea11fc16cbc6f8b",
           "source_url": "https://baike.baidu.com/en/item/Tiiny%20AI%20Pocket%20Lab/4187767",
@@ -145,7 +157,7 @@
           "quote_hash": "802814dc73f82c9ebe4855482cd11ef646d421d5fa235a79b48411b41ce40df4"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

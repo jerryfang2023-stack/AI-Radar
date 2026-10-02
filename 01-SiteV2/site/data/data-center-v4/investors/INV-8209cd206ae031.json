@@ -123,10 +123,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Epiq Capital Group 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Epiq Capital 官网自述为印度科技领域的成长及后期基金，使命是支持构建印度下一批大型科技企业的创业者。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": [
+            "Growth",
+            "Late stage"
+          ],
+          "source_id": "epiq_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示方向",
+          "value": "科技企业",
+          "source_id": "epiq_home"
+        },
+        {
+          "field": "geography",
+          "label": "官网所述市场",
+          "value": "印度",
+          "source_id": "epiq_market"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +155,32 @@
           "source_id": "FISRC-b57e758a492553d2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Epiq Capital 官网",
+          "url": "https://www.epiqcapital.com/",
+          "source_id": "epiq_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "epiq_home",
+          "source_url": "https://www.epiqcapital.com/",
+          "source_title": "Home-Epiq Capital",
+          "source_content_hash": "2e6696d9f3077a665971ad8cc426b6015dff7f2b675add37d08df4357bf47738",
+          "quote": "Premier growth and late stage tech fund $5 trillion digital India opportunity Partnering with exceptional entrepreneurs Relentless pursuit of India’s Magnificent 7 At Epiq Capital, our mission is to back founders building the Magnificent 7 of India.",
+          "quote_hash": "4af08657a289bef6d36cad0b701f838004e165776914cd8bcea7d2cb074643d4"
+        },
+        {
+          "source_id": "epiq_market",
+          "source_url": "https://www.epiqcapital.com/",
+          "source_title": "Home-Epiq Capital",
+          "source_content_hash": "2e6696d9f3077a665971ad8cc426b6015dff7f2b675add37d08df4357bf47738",
+          "quote": "At Epiq Capital, our mission is to back founders building the Magnificent 7 of India.",
+          "quote_hash": "0626de53b07c81a371a4ea58ef980f465514e1b1098865d85c041bebfe267f6d"
+        },
         {
           "source_id": "FISRC-b57e758a492553d2",
           "source_url": "https://startupintros.com/orgs/aheadcomputing",
@@ -145,7 +190,8 @@
           "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

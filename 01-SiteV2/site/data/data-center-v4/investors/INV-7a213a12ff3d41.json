@@ -139,10 +139,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Luminar Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Luminar Ventures 官网当前将其描述为北欧的通用型早期风险投资机构，公开列示 Pre-Seed 与 Seed 阶段。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": [
+            "Pre-Seed",
+            "Seed"
+          ],
+          "source_id": "luminar_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示策略",
+          "value": "Generalist",
+          "source_id": "luminar_home"
+        },
+        {
+          "field": "geography",
+          "label": "官网列示地域",
+          "value": "Nordics",
+          "source_id": "luminar_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,24 @@
           "source_id": "FISRC-5228f73ab8dc8458"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Luminar Ventures 官网",
+          "url": "https://www.luminarventures.com/",
+          "source_id": "luminar_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "luminar_home",
+          "source_url": "https://www.luminarventures.com/",
+          "source_title": "Luminar Ventures",
+          "source_content_hash": "007da4b0852565532dceb6d260ebf9b6cea1065aa59e817b679250c14c6814f7",
+          "quote": "Stage Pre-Seed & Seed Sector Generalist Geo Nordics Submit Your Pitch → Luminar in numbers 45 PORTFOLIO COMPANIES 90 % PRE-SEED FUND I INVESTMENTS RAISED SEED ROUNDS 2022 LATEST FUND VINTAGE € 125 AUM (in millions) As former founders and angel investors, we&#x27;ve now built the most active seed-stage VC fund in the Nordics.",
+          "quote_hash": "3134390e29f6b8cc7a946ca0db666f3c4baf1421754d1b6feeea8f5e15e85e8d"
+        },
         {
           "source_id": "FISRC-5228f73ab8dc8458",
           "source_url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates",
@@ -161,7 +198,8 @@
           "quote_hash": "95e9e6c90dca9ce4709247d5b84ca596f0bc265c26c8bf9e155bc4813c3c1b9b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

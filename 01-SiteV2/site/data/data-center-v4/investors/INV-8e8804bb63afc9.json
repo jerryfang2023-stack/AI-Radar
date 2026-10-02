@@ -123,10 +123,38 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tor Investment Management 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网摘录还列有管理规模，但本档案聚焦机构性质、地域与成立年份；团队和基金情况未作外推。",
+      "summary": "Tor Investment Management 官网介绍其为亚洲独立另类信贷管理机构，成立于 2012 年，业务覆盖亚太信贷市场。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网自述类型",
+          "value": "独立另类信贷管理机构",
+          "source_id": "tor_about"
+        },
+        {
+          "field": "geography",
+          "label": "官网列示市场",
+          "value": "Asia-Pacific credit markets",
+          "source_id": "tor_founding"
+        },
+        {
+          "field": "founding_year",
+          "label": "官网所列成立年份",
+          "value": "2012",
+          "source_id": "tor_founding"
+        },
+        {
+          "field": "based_in",
+          "label": "官网列示办公地",
+          "value": [
+            "Hong Kong",
+            "Singapore"
+          ],
+          "source_id": "tor_locations"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -137,6 +165,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "tor_about",
+          "source_url": "https://www.torinvestment.com/",
+          "source_title": "Tor Investment Management",
+          "source_content_hash": "bddc1226e3f3006df7410df7b53a7dd6f137d8e030f4027798bef649a2fa85e0",
+          "quote": "Tor Investment Management is a leading independent alternative credit manager in Asia with over $2 billion under management across seven sponsored funds and various co-investments.",
+          "quote_hash": "1c07be8118f7e8f2f3757425dc0981e5e9e267c1860844102c21c7c3cb7b2e6b"
+        },
+        {
+          "source_id": "tor_founding",
+          "source_url": "https://www.torinvestment.com/",
+          "source_title": "Tor Investment Management",
+          "source_content_hash": "bddc1226e3f3006df7410df7b53a7dd6f137d8e030f4027798bef649a2fa85e0",
+          "quote": "The firm was founded in 2012 by Patrik Edsparr, former Global Head of JP Morgan’s Proprietary and Principal Investing Division, and Chris Mikosh, former Head Trader of Goldman Sachs’ Asian Special Situations Group (ASSG), to provide investors with access to the Asia-Pacific credit markets in opportunities ranging from private financings to high-yield bonds and traded loans.",
+          "quote_hash": "e46618427b0e214b6a572a604a09f91fed6a24202dba1a93ec9c24fa821b62d8"
+        },
+        {
+          "source_id": "tor_locations",
+          "source_url": "https://www.torinvestment.com/",
+          "source_title": "Tor Investment Management",
+          "source_content_hash": "bddc1226e3f3006df7410df7b53a7dd6f137d8e030f4027798bef649a2fa85e0",
+          "quote": "Based in Hong Kong and Singapore, the platform consists of 50 employees, including an investment team of 18 professionals.",
+          "quote_hash": "0bf7cde09d6182774f7a39544f665cbaa9f8be0d9e982ac5ebf5df8dcef42c57"
+        },
+        {
           "source_id": "FISRC-da12f9a4c84d5ed2",
           "source_url": "https://www.unite.ai/palebluedot-ai-raises-200m-series-c-at-3-2b-valuation-to-expand-super-intelligence-compute/",
           "source_title": "PaleBlueDot AI Raises $200M Series C at $3.2B Valuation to Expand Super Intelligence Compute",
@@ -145,7 +197,7 @@
           "quote_hash": "15a67ce17492a6bba0129613aa52a0d8fc3e76358bd71aa378be60258be77000"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

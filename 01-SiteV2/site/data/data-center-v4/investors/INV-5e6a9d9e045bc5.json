@@ -123,29 +123,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "1517 Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "1517 Fund 官网称其在公司最早期支持从事高难度问题的辍学生与科幻科学家。Positron AI 官方融资公告将 1517 Fund 列入整体融资安排中的投资者；公告没有披露其对应的具体分期。",
+      "facts": [
         {
-          "description": "融资来源记录：Positron AI · 历史轮次未披露 · 参与整体融资安排，所属分期未披露。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其在创业最早期支持辍学生与科幻科学家（sci-fi scientists）。",
+          "source_id": "1517_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "Positron AI 官方公告将 1517 Fund 列入融资投资者名单。",
           "source_id": "FISRC-3947ce709f26c22a"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "Positron AI 官方公告列出 1517 Fund；该次融资由多笔历史融资及新资金安排组成，1517 的对应分期未披露。",
+          "source_id": "FISRC-3947ce709f26c22a"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.1517fund.com/",
+          "source_id": "1517_profile",
+          "url": "https://www.1517fund.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "1517_profile",
+          "source_url": "https://www.1517fund.com/",
+          "source_title": "1517 Fund - Backing Dropouts, Students &amp; SciFi Science",
+          "source_content_hash": "be839427513498433bdf58528a1499c0d11cbdf1574988eb483c5fd1bc31a368",
+          "quote": "mation/Theses/Disputation-on-the-power-and-efficacy-of-indulgences 184,242 We back dropouts working on hard problems & sci-fi scientists at the earliest stages of their companies. We’ll help you escape from captivity and start, build, and grow your venture, career, or insight. Let us know which best fits you - the site will ",
+          "quote_hash": "8b203aaa76f06ec4143991b2737286571893371c0c04750b5e7b4ec6024dfa4d"
+        },
         {
           "source_id": "FISRC-3947ce709f26c22a",
           "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
-          "source_title": "Positron AI 以 50 亿美元估值融资 8.75 亿美元，将其下一代推理芯片推向市场",
-          "source_content_hash": "6fba1e5175dc31c470a941be5c7c5d5c6b11416aa4fb9195aa3578c9afe99fdb",
-          "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
-          "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
+          "source_title": "Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
+          "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
+          "quote": " (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and ",
+          "quote_hash": "01318266221ccd9d4fe97a9b901bb5add4d35a5d3b30ceb469ef7aff59bd8eb2"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

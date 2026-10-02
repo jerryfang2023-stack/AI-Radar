@@ -139,19 +139,70 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Grand Mount Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "惠远资本（Grand Mount Capital）官网称其成立于 2019 年，由专业投资团队与国资共同设立，长期投资生命科学、人工智能等硬科技领域。",
+      "facts": [
+        {
+          "field": "establishment",
+          "label": "官网所列创立信息",
+          "value": "2019 年，由专业投资团队与国资共同设立",
+          "source_id": "grandmount_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示方向",
+          "value": [
+            "生命科学",
+            "人工智能等硬科技"
+          ],
+          "source_id": "grandmount_about"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网所述方式",
+          "value": "产业赋能与资本助力",
+          "source_id": "grandmount_strategy"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019",
+          "description": "惠远资本官网称机构于 2019 年成立。",
+          "source_id": "grandmount_about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：PixVerse · C轮扩展 · 2026-07-13 · 本轮参投 · $439 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-002776ecfe7ba6a0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "惠远资本（Grand Mount Capital）官网",
+          "url": "https://grandmountcapital.com/",
+          "source_id": "grandmount_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "grandmount_about",
+          "source_url": "https://grandmountcapital.com/index.php?a=lists&catid=1",
+          "source_title": "关于我们 - 惠远资本-中民惠远山东股权投资管理有限公司",
+          "source_content_hash": "ef355331fe3adc948aad50b587eae503fff212cb7fddcab44c1934b47661d44b",
+          "quote": "惠远资本成立于2019年，由专业投资团队与国资共同设立，是一家专注于生命科学和人工智能等硬科技领域长期投资的市场化投资机构，系统布局细分赛道中具有突破性和创新性技术的优质标的。",
+          "quote_hash": "2c2656d21f90d3f01eddb2880a2108157587acbff56d4c099016dff93552ef44"
+        },
+        {
+          "source_id": "grandmount_strategy",
+          "source_url": "https://grandmountcapital.com/index.php?a=lists&catid=1",
+          "source_title": "关于我们 - 惠远资本-中民惠远山东股权投资管理有限公司",
+          "source_content_hash": "ef355331fe3adc948aad50b587eae503fff212cb7fddcab44c1934b47661d44b",
+          "quote": "坚持以“产业赋能+资本助力”为投资策略",
+          "quote_hash": "13c91202e47d922e9c769d2c82430b5af39860df42974e99d77d10da8f20c286"
+        },
         {
           "source_id": "FISRC-002776ecfe7ba6a0",
           "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
@@ -161,7 +212,8 @@
           "quote_hash": "e5a8e278829adf97feebafc8274fdaa9ac9b4ff38b56fb6bc45d2b16fb673068"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

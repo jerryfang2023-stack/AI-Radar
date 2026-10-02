@@ -140,29 +140,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SE Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "SE Ventures 官网称其拥有超过 10 亿美元承诺资本，并利用 Schneider Electric 在能源管理和自动化方面的行业资源支持创业者。Together AI 官方公告将其列为 8 亿美元 C 轮投资者之一。",
+      "facts": [
         {
-          "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "capital",
+          "label": "承诺资本",
+          "value": "官网披露承诺资本超过 10 亿美元。",
+          "source_id": "se_profile"
+        },
+        {
+          "field": "investment_focus",
+          "label": "产业方向",
+          "value": "官网重点介绍能源管理、自动化、工业与可持续发展领域。",
+          "source_id": "se_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "Together AI 官方公告将其列为 8 亿美元 C 轮投资者。",
           "source_id": "FISRC-c76c0a4ea6adedb7"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "参与 Together AI 的 8 亿美元 C 轮；该轮由多家机构投资者共同参与。",
+          "source_id": "FISRC-c76c0a4ea6adedb7"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.seventures.com/approach/",
+          "source_id": "se_profile",
+          "url": "https://www.seventures.com/approach/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "se_profile",
+          "source_url": "https://www.seventures.com/approach/",
+          "source_title": "Approach - SE Ventures, Schneider Electric Venture Capital Fund | Schneider Electric",
+          "source_content_hash": "bebc36a483ac0cd9d0592202e55e3527644d8b71a09d0109c43b1f0c2d482a47",
+          "quote": "main expertise and customer base in energy management and automation. With over $1 billion in committed capital, SE Ventures is structured and incentivized like a traditional venture capital firm with a remit to deliver exceptional value and strategic assistance far beyond the norm. li]:list-decimal [&_ul>li]:list-disc ",
+          "quote_hash": "10d21f9433a772c98bb5db1134db78c5300ce03b2128753ad0a0d042864dec14"
+        },
         {
           "source_id": "FISRC-c76c0a4ea6adedb7",
           "source_url": "https://www.together.ai/blog/announcing-our-series-c",
-          "source_title": "宣布完成 8 亿美元 C 轮融资，加速向开源 AI 的转变",
-          "source_content_hash": "458ee8ff3e8d5ff41a8e17f5ed67badb7598d15dddac9f914e564d6daca98cd7",
-          "quote": "Series C funding of $800 million from an incredible group of investors including Aramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others.",
-          "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
+          "source_title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
+          "source_content_hash": "7198081df0d210e6030fd412bc25ea5dc31cbf2fceb19796a17dafcc54144d8f",
+          "quote": "ramco Ventures, NVIDIA, Vista Equity, General Catalyst, Emergence Capital, SE Ventures, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others. In addition to the equity capital, we have secured commitments for over 500 MW of compute capacity t",
+          "quote_hash": "84c575c2c1d436b23642f0a4d4e002a2eac2ffac6e2ef5bc9208a1b5cfdc87c1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

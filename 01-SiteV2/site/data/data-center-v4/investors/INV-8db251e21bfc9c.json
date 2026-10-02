@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alliance VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Alliance Venture Capital 官网将其定位为北欧风险投资机构，投资具有全球抱负创始人创立的早期科技公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网自述类型",
+          "value": "Nordic venture capital firm",
+          "source_id": "alliance_identity"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": "early-stage",
+          "source_id": "alliance_investment"
+        },
+        {
+          "field": "geography",
+          "label": "官网列示地域",
+          "value": "Nordic founders",
+          "source_id": "alliance_investment"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,32 @@
           "source_id": "FISRC-5228f73ab8dc8458"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Alliance Venture Capital",
+          "url": "https://alliance.vc/",
+          "source_id": "alliance_identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "alliance_identity",
+          "source_url": "https://alliance.vc/",
+          "source_title": "Alliance Venture Capital – We invest in Nordic founders with global ambitions",
+          "source_content_hash": "083ad96d28bcc2b645a0c9eeeb914b0d6206fca8c77fbbaffcad717edb4fcd3f",
+          "quote": "We are a Nordic venture capital firm run by experienced venture capitalists, operators and founders that helped create billion-dollar companies.",
+          "quote_hash": "c0909bb0dae1823b0c0e6777b7562ec9a3e6f579f2c658775926951c810dc118"
+        },
+        {
+          "source_id": "alliance_investment",
+          "source_url": "https://alliance.vc/",
+          "source_title": "Alliance Venture Capital – We invest in Nordic founders with global ambitions",
+          "source_content_hash": "083ad96d28bcc2b645a0c9eeeb914b0d6206fca8c77fbbaffcad717edb4fcd3f",
+          "quote": "We invest in exceptional early-stage tech companies founded by entrepreneurs with global ambitions.",
+          "quote_hash": "04dc9a66c708f949658747153593f5312a39e46bb02f9361639fe99d83d8a3b1"
+        },
         {
           "source_id": "FISRC-5228f73ab8dc8458",
           "source_url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates",
@@ -161,7 +203,8 @@
           "quote_hash": "95e9e6c90dca9ce4709247d5b84ca596f0bc265c26c8bf9e155bc4813c3c1b9b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

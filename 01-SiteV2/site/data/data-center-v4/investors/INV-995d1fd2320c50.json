@@ -139,10 +139,40 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Ghisallo Capital Management 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "SEC/IAPD Form ADV 将 GHISALLO CAPITAL MANAGEMENT LLC 列为主要业务名称，CRD 编号 309856，并列示其主要办公地址在波士顿。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "登记名称",
+          "value": "GHISALLO CAPITAL MANAGEMENT LLC",
+          "source_id": "ghisallo_identity"
+        },
+        {
+          "field": "organization_type",
+          "label": "监管登记",
+          "value": "SEC 注册投资顾问",
+          "source_id": "ghisallo_registration"
+        },
+        {
+          "field": "headquarters",
+          "label": "主要办公地址",
+          "value": "Boston, Massachusetts",
+          "source_id": "ghisallo_office"
+        },
+        {
+          "field": "CRD_number",
+          "label": "CRD 编号",
+          "value": "309856",
+          "source_id": "ghisallo_identity"
+        },
+        {
+          "field": "SEC_file_number",
+          "label": "SEC 文件号",
+          "value": "801-119233",
+          "source_id": "ghisallo_registration"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +183,30 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "ghisallo_identity",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/309856/PDF/309856.pdf",
+          "source_title": "Form ADV | GHISALLO CAPITAL MANAGEMENT LLC | CRD 309856",
+          "source_content_hash": "d0c23ceb69c7226dcd9b4d46c684a6f8d494f58db2fe1b70dda5a07abe162f45",
+          "quote": "Primary Business Name:GHISALLO CAPITAL MANAGEMENT LLC CRD Number: 309856",
+          "quote_hash": "a6cbaad5b318c268313b62c7509e599c3ee7c6a7865ed78ed7c6eaa80b845a65"
+        },
+        {
+          "source_id": "ghisallo_registration",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/309856/PDF/309856.pdf",
+          "source_title": "Form ADV | GHISALLO CAPITAL MANAGEMENT LLC | CRD 309856",
+          "source_content_hash": "d0c23ceb69c7226dcd9b4d46c684a6f8d494f58db2fe1b70dda5a07abe162f45",
+          "quote": "If you are registered with the SEC as an investment adviser, your SEC file number: 801-119233",
+          "quote_hash": "80a8491a5c5a6d0c05e364012ca280fc97e70888b9ce6684838491997456905d"
+        },
+        {
+          "source_id": "ghisallo_office",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/309856/PDF/309856.pdf",
+          "source_title": "Form ADV | GHISALLO CAPITAL MANAGEMENT LLC | CRD 309856",
+          "source_content_hash": "d0c23ceb69c7226dcd9b4d46c684a6f8d494f58db2fe1b70dda5a07abe162f45",
+          "quote": "BOSTON Massachusetts United States 02116",
+          "quote_hash": "7db4897580ec63ed58f40f6c3368d810c7c6550592273f121b41c8c7700dfd2a"
+        },
+        {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
           "source_title": "NSCALE 在 IPO 前可转换融资中筹集 $3.36B",
@@ -161,7 +215,8 @@
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

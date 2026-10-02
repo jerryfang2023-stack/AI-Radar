@@ -139,19 +139,72 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Reach Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "Reach Capital 是一家专注学习、健康与工作的早期风险投资机构。Pensive 官方融资公告披露，该机构参与了 Pensive 的 680 万美元种子轮；此记录只代表已公开案例。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期风险投资。",
+          "source_id": "reach"
+        },
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "学习、健康与工作。",
+          "source_id": "reach"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "披露案例",
+          "value": "Pensive 官方公告将 Reach Capital 列为 680 万美元融资的参与方；该公告没有将其列为领投方。",
+          "source_id": "pensive"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-02-24",
+          "description": "Pensive 官方公告称其 680 万美元融资由 Mayfield 领投，Reach Capital 参与。",
+          "source_id": "pensive"
+        }
+      ],
       "track_record": [
+        {
+          "description": "参与 Pensive 的 680 万美元种子轮；Pensive 公告将 Mayfield 列为领投方。",
+          "source_id": "pensive"
+        },
         {
           "description": "融资来源记录：Pensive · 种子轮 · 2026-02-27 · 本轮参投 · $6.8M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4c101bd2bd412982"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.reachcapital.com/about/",
+          "source_id": "reach",
+          "url": "https://www.reachcapital.com/about/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "reach",
+          "source_url": "https://www.reachcapital.com/about/",
+          "source_title": "Reach Capital | Venture Capital for Learning, Health &amp; Work",
+          "source_content_hash": "2a678fe8ec9e6688d85c5fe07b322d1382bd802b0d7a8178a346ce2672ff3886",
+          "quote": "mpact Platform Calendar The Wire Newsletter About us Our Commitment to You Reach Capital is an early-stage venture capital firm investing in founders across learning, health, and work. Since 2015, we’ve backed hundreds of visionary entrepreneurs building technologies that expand access to opportunity and care. Our belief is that when p",
+          "quote_hash": "3424ea9bd955b0bea060cd44e88efa62e364a56c801378bd3bb7bda865e62cfd"
+        },
+        {
+          "source_id": "pensive",
+          "source_url": "https://www.pensive.com/schools/blog/seed-funding/",
+          "source_title": "Pensive AI Grader",
+          "source_content_hash": "25bf3e49ba3e76d95fd3de99a44fe51569ea332967f72bef3fb133c7e65cb937",
+          "quote": "tor, and that most students never get. Our round was led by Mayfield, with participation from Reach Capital, Anti Fund, Sequoia Capital scout fund, a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder & CEO of Robinhood), Karim Atiyeh (co-founder & CTO of Ramp), the founders of Gradescope, and many ",
+          "quote_hash": "fc2bfd6efb44765a1c2667c92cb8c93c2a88d0c421d682c678c415ad5548dc5b"
+        },
         {
           "source_id": "FISRC-4c101bd2bd412982",
           "source_url": "https://en.wowtale.net/2026/02/27/233611/",
@@ -161,7 +214,7 @@
           "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

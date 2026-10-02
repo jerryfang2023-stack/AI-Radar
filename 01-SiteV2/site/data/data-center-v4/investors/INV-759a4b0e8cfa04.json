@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hudson Bay Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Hudson Bay Capital 官网将其描述为自 2006 年起服务外部投资人的全球另类资产管理机构，并介绍其把基本面研究、领域专长与宏观及地缘政治视角结合的投资方法。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网自述类型",
+          "value": "全球另类资产管理机构",
+          "source_id": "hbc_home"
+        },
+        {
+          "field": "operating_since",
+          "label": "官网称服务外部投资人的起始年份",
+          "value": "2006",
+          "source_id": "hbc_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网描述的方法",
+          "value": "基本面研究、领域专长、宏观与地缘政治分析",
+          "source_id": "hbc_approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,32 @@
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Hudson Bay Capital 官网",
+          "url": "https://www.hudsonbaycapital.com/",
+          "source_id": "hbc_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "hbc_home",
+          "source_url": "https://www.hudsonbaycapital.com/",
+          "source_title": "Hudson Bay Capital | Global Alternative Asset Manager",
+          "source_content_hash": "45526a2ca49a5a975f988af6efb6f5c63d11ac7c4cfc0ab4a2fd876cbf36872c",
+          "quote": "We are a global alternative asset manager serving outside investors since 2006.",
+          "quote_hash": "204e13ea8e300465233b40ad93f1779c5a18be10d75ddcb5711f97b9dbcc9d3e"
+        },
+        {
+          "source_id": "hbc_approach",
+          "source_url": "https://www.hudsonbaycapital.com/",
+          "source_title": "Hudson Bay Capital | Global Alternative Asset Manager",
+          "source_content_hash": "45526a2ca49a5a975f988af6efb6f5c63d11ac7c4cfc0ab4a2fd876cbf36872c",
+          "quote": "Our Holistic Approach to investing integrates deep fundamental research and domain expertise with macro and geopolitical insight to identify opportunities.",
+          "quote_hash": "9a7ea7f2ea8f5dd4213c3c256a613a4597cfe8d61b5d9ea9ae4206c69af6218a"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -161,7 +203,8 @@
           "quote_hash": "fc5db38002b21b1decd438417bac1dfdc98b2900159b1d7b3161859e98a2e15a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -123,10 +123,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "U First Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构背景取自 U First Capital 官网自述；创始团队背景及经验属于机构自己的介绍，不作为独立核验的业绩数据。",
+      "summary": "U First Capital 是一家位于硅谷的风险投资机构。官网称其创始团队具备技术背景，创始人均有技术博士学位，并与风险投资机构及创业者网络合作。",
+      "facts": [
+        {
+          "field": "location",
+          "label": "官网披露的机构所在地",
+          "value": "硅谷。",
+          "source_id": "PFSRC-INV-b68bf92d787198-profile"
+        },
+        {
+          "field": "founder_background",
+          "label": "官网披露的创始团队背景",
+          "value": "官网称两位创始人均拥有技术博士学位，团队在硅谷有超过35年的合计经验。",
+          "source_id": "PFSRC-INV-b68bf92d787198-profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +147,38 @@
           "source_id": "FISRC-3947ce709f26c22a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "U First Capital 官网",
+          "value": "https://www.ufirstcapital.com/",
+          "url": "https://www.ufirstcapital.com/",
+          "source_id": "PFSRC-INV-b68bf92d787198-profile"
+        },
+        {
+          "kind": "email",
+          "label": "官网公开邮箱",
+          "value": "info@ufirstcapital.com",
+          "source_id": "PFSRC-INV-b68bf92d787198-email"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-b68bf92d787198-profile",
+          "source_url": "https://www.ufirstcapital.com/",
+          "source_title": "U First Capital",
+          "source_content_hash": "ba15c0f0f5eee918857571f9f50e56d3fe47ac53c507ece00ea2b2e4cdac2886",
+          "quote": "U First Capital is a Silicon Valley-based firm that brings a unique mix of strong technology background (both Founders have technical PhDs), deep network with VCs and top Entrepreneurs (over 35 years of combined experience in Silicon Valley), and immense experience in driving Investments.",
+          "quote_hash": "569879375ba9475da2dc25bb8f88563d41ac68593a92f56fcd5c83fc746752c1"
+        },
+        {
+          "source_id": "PFSRC-INV-b68bf92d787198-email",
+          "source_url": "https://www.ufirstcapital.com/",
+          "source_title": "U First Capital",
+          "source_content_hash": "ba15c0f0f5eee918857571f9f50e56d3fe47ac53c507ece00ea2b2e4cdac2886",
+          "quote": "info@ufirstcapital.com",
+          "quote_hash": "57ab1fc82524822f3ea41bf090a836673796f80e41b4d69c55d46f8ca676734c"
+        },
         {
           "source_id": "FISRC-3947ce709f26c22a",
           "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
@@ -145,7 +188,7 @@
           "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

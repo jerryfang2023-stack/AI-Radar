@@ -139,19 +139,53 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Unusual Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Unusual Ventures 官网面向企业创业者提供从早期洞察到市场拓展的支持，并介绍其产品市场匹配方法。Railway 发布的融资公告将 Unusual Ventures 列为 B 轮参投方。",
+      "facts": [
+        {
+          "field": "founder_support",
+          "label": "创始人服务",
+          "value": "官网介绍其帮助企业创始人从早期洞察走向市场领导，并提供产品市场匹配方法",
+          "source_id": "unusual_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Railway 发布的融资公告将 Unusual Ventures 列为 1 亿美元 B 轮参投方。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Railway · B轮 · 2026-01-22 · 本轮参投 · $100 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-978c6dfd9f2ff831"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.unusual.vc/",
+          "url": "https://www.unusual.vc/",
+          "source_id": "unusual_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "unusual_official",
+          "source_url": "https://www.unusual.vc/",
+          "source_title": "Unusual Ventures | Venture Capital Firm - Unusual",
+          "source_content_hash": "57eac799f6f5b11aeb50ca7059775fb28c35b9f93db9e986f7b02e7e4d0145e2",
+          "quote": "For enterprise founders — from first insight to market leadership Find your PMF Unusual by design Turning product-market fit from improbable to inevitable Explore our Method Field Guide Proprietary playbook for finding Product-Market Fit.",
+          "quote_hash": "61b254959e8788b532be762f19521f2d979402a03dd9462cbca8c97e92f2235e"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://www.prnewswire.com/news-releases/railway-raises-100-million-series-b-as-ai-pushes-todays-cloud-infrastructure-past-its-limits-302667768.html",
+          "source_title": "Railway Raises $100 Million Series B As AI Pushes Today's Cloud Infrastructure Past Its Limits",
+          "source_content_hash": "7c636e64aca75c45f7125affdd060a2a226c6c5c6787143bbe8d9558db2c2940",
+          "quote": "X Share this article Share to X Round led by TQ Ventures with participation from FPV Ventures, Redpoint, and Unusual Ventures; fuels Railway's vision to eliminate infrastructure friction and help developers ship faster SAN FRANCISCO , Jan. 22, 2026 /PRNewswire/ -- Today, Railway, a cloud platform that allows developers to ship faster and more efficiently, announced its $100 Million",
+          "quote_hash": "80068a1dd41b5dedd6239410c9bcf7db0f54f98c03d7c8e1ad5437fc9860d4b3"
+        },
         {
           "source_id": "FISRC-978c6dfd9f2ff831",
           "source_url": "https://www.prnewswire.com/news-releases/railway-raises-100-million-series-b-as-ai-pushes-todays-cloud-infrastructure-past-its-limits-302667768.html",
@@ -161,7 +195,8 @@
           "quote_hash": "7af109f95ff3bd21d833475f0cca800dbef4c57599fda09f0c97f3303bc9eb35"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

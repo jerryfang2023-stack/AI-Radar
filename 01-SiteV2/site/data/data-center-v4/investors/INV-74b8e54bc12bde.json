@@ -139,19 +139,83 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Expedition Growth Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Expedition Growth Capital 官网称其投资已取得显著市场牵引力的快速增长软件与 AI 企业，并采用少数股权投资方式。团队页记载 Oliver Thomas 于 2020 年组建该公司。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "快速增长的软件与 AI 公司",
+          "source_id": "exp_approach"
+        },
+        {
+          "field": "ownership_approach",
+          "label": "官网列示投资方式",
+          "value": "少数股权投资",
+          "source_id": "exp_ownership"
+        },
+        {
+          "field": "entry_profile",
+          "label": "官网列示的入场特征",
+          "value": "投资时 ARR 通常为 300万至1000万美元以上",
+          "source_id": "exp_metrics"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020",
+          "description": "团队页称 Oliver Thomas 于 2020 年组建 Expedition。",
+          "source_id": "exp_team"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Omilia · B轮 · 2026-08-06 · 本轮领投 · $67 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-65466476b02403ef"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Expedition Growth Capital 官网",
+          "url": "https://expedition.capital/approach/",
+          "source_id": "exp_approach"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "exp_approach",
+          "source_url": "https://expedition.capital/approach/",
+          "source_title": "Approach - Expedition Growth Capital",
+          "source_content_hash": "121734ee6f4ef1bc8048ad7107330fa06b28532549b018e8d3866c891a1b0b4c",
+          "quote": "Our approach is to back ambitious, rapidly growing software & AI companies that have achieved significant traction thanks to deep domain expertise and customer centricity.",
+          "quote_hash": "53a5c47016a569bbbb7868daacaa99ad8241ee16cc8bcbc1f5ade741c893099d"
+        },
+        {
+          "source_id": "exp_team",
+          "source_url": "https://expedition.capital/team/",
+          "source_title": "Team - Expedition Growth Capital",
+          "source_content_hash": "5fd828645fae5e28510ea58d4ae1635fe1106cc7b3b1ff09d11ae6cf837120ba",
+          "quote": "Founder & Managing Partner Oliver Thomas Connect on LinkedIn Oliver is responsible for investment strategy and portfolio development. He formed Expedition in 2020, creating a software specialist growth equity firm with the backing of some of the world’s leading entrepreneurs, investors and charitable endowments.",
+          "quote_hash": "3365b70e65e777a9653e06e0209dd97637998d5b69d48577d168071f18ca39e2"
+        },
+        {
+          "source_id": "exp_metrics",
+          "source_url": "https://expedition.capital/approach/",
+          "source_title": "Approach - Expedition Growth Capital",
+          "source_content_hash": "121734ee6f4ef1bc8048ad7107330fa06b28532549b018e8d3866c891a1b0b4c",
+          "quote": "$ 3 – 10 million+ ARR at entry 50 – 100 %+ ARR growth rate 90 %+ gross revenue retention Domain Expert founders building durably WORKING WITH EXPEDITION The Expedition Operations Group WHERE WE SUPPORT How We Help The Expedition Operations Group (EOG) brings a menu of support that is designed for founder-owned software & AI companies growing from $5-10m to $50m+ ARR.",
+          "quote_hash": "a1952fff9320752ffc4632db590b3a537af302b59ae7675b746b98dfff28aaa3"
+        },
+        {
+          "source_id": "exp_ownership",
+          "source_url": "https://expedition.capital/approach/",
+          "source_title": "Approach - Expedition Growth Capital",
+          "source_content_hash": "121734ee6f4ef1bc8048ad7107330fa06b28532549b018e8d3866c891a1b0b4c",
+          "quote": "We partner respectfully with founders and support their companies’ paths to category leadership. $ 10 – 30 million+ investment size Minority ownership positions",
+          "quote_hash": "5577ccda44550972caeb62012a8faaabadc954c0d003a4c7bd166238501c6f56"
+        },
         {
           "source_id": "FISRC-65466476b02403ef",
           "source_url": "https://techcrunch.com/2026/08/06/omilia-raises-67m-to-scale-its-customer-support-platform",
@@ -161,7 +225,8 @@
           "quote_hash": "b2ddb4ff6f79d08809c741c8309a6ce158a218b211256805cb760742356d2722"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -139,19 +139,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Emerge Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "官网可确认品牌及组合页面，但公开正文未披露投资阶段、团队与基金条款；本档案不据同名机构资料补全。",
+      "summary": "Emerge Ventures 官网主页自称“here to help you do whatever it takes to win”，其组合页面列出多项 stealth 与 acquired 公司；当前公开页面未给出可核验的基金阶段、团队或投资条款。",
+      "facts": [
+        {
+          "field": "public_description",
+          "label": "官网简介",
+          "value": "“here to help you do whatever it takes to win”",
+          "source_id": "emerge_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Emerge Ventures 官网组合页列出多个以 Stealth 标识的项目及已收购项目；页面未给出完整投资组合说明。",
+          "source_id": "emerge_portfolio"
+        },
         {
           "description": "融资来源记录：Xpander · 种子轮 · 2026-08-17 · 本轮参投 · $7.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b58915641f762a44"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Emerge Ventures官网",
+          "url": "https://emerge.ventures/",
+          "source_id": "emerge_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "emerge_home",
+          "source_url": "https://emerge.ventures/",
+          "source_title": "Emerge Ventures - Emerge",
+          "source_content_hash": "d53d6ca966b15af5c0a5298023cda5df515e36304c0ec3394f16c84b443e2e64",
+          "quote": "here to help you do whatever it takes to win.",
+          "quote_hash": "58ec314a31f60b7d94a43853ec691e635b035e623c888e11fb7466b4cc0b33ff"
+        },
+        {
+          "source_id": "emerge_portfolio",
+          "source_url": "https://emerge.ventures/portfolio",
+          "source_title": "Portfolio - Emerge",
+          "source_content_hash": "9c959295b307e7f85cf8de98b696d04f398a9826fb8e1e26988b54bfc00c820d",
+          "quote": "Stealth &ndash; Agentic Commerce Stealth &ndash; B2A Stealth &ndash; B2C Stealth &ndash; Biotech Stealth &ndash; Consumer Research Stealth &ndash; Curing Cancer ACQUIRED Stealth &ndash; Enterprise Software Stealth &ndash; Fintech Stealth &ndash; Healthcare Stealth &ndash; Logistics Stealth &ndash; Vertical AI About Us Portfolio Contact Ab",
+          "quote_hash": "e697b738cb24c03131d5a5958418be4e783a5bce746fb0895ae5d247f33b7969"
+        },
         {
           "source_id": "FISRC-b58915641f762a44",
           "source_url": "https://www.prnewswire.com/news-releases/xpander-raises-7-5m-seed-to-unleash-ai-for-enterprises-302852698.html",
@@ -161,7 +196,7 @@
           "quote_hash": "a78ed035c5da0c7f827e96d9a06c29e26212e7cc0d0b2fd3f8f2ef5ed4a6ab87"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

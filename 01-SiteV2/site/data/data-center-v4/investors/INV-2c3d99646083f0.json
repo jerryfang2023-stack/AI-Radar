@@ -155,23 +155,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Will Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "Will Ventures 官网称其投资消费、娱乐与科技领域的企业。Throne Science 官方公告称其领投 2026 年 7 月宣布的 1000 万美元 A 轮。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "消费、娱乐与科技。",
+          "source_id": "will"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "披露案例",
+          "value": "Throne Science 官方融资公告将 Will Ventures 列为 1000 万美元 A 轮领投方。",
+          "source_id": "throne"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-07-28",
+          "description": "Throne Science 宣布完成 1000 万美元 A 轮，由 Will Ventures 领投。",
+          "source_id": "throne"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮领投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2c2bafaec002c33e"
+          "description": "领投 Throne Science 的 1000 万美元 A 轮。",
+          "source_id": "throne"
         },
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮领投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2a587e714925b882"
+          "source_id": "FISRC-2c2bafaec002c33e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.willventures.com/home",
+          "source_id": "will",
+          "url": "https://www.willventures.com/home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "will",
+          "source_url": "https://www.willventures.com/home",
+          "source_title": "Will Ventures | Will Ventures",
+          "source_content_hash": "4deb2f7d239e01600773f8dc36f68165c95d7a10b60dd4b42d69522994bfcb48",
+          "quote": "Will Ventures | Will Ventures Will Ventures Perspectives We invest in category-defining businesses in the consumer, entertainment, and technology industries. We're a team of competitors—entrepreneurs, operators, and investors with a hustle-first mentality Our Team Close Aaron Miller Partner Back Aaron Mille",
+          "quote_hash": "54dedbd2c6f06bf4b73092eb90303a095ef9333333c27f88c4ea3ff92eaa2fba"
+        },
+        {
+          "source_id": "throne",
+          "source_url": "https://thronescience.com/blogs/signals/throne-raised-10-million-heres-what-its-for",
+          "source_title": "Throne Raised $10 Million. Here&#39;s What It&#39;s For &ndash; Throne Science",
+          "source_content_hash": "4fb68fdd53b571e0dd3981b821b3e879f7d3052e280d07837bf012800813ef29",
+          "quote": "rone Scott Hickle Founder, Throne Science Today we're thrilled to announce a $10 million Series A, led by Will Ventures, with Workshop, Emerson Collective, Accomplice, Moxxie, Salt VC, LEAD VC, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger participating. Funding rounds",
+          "quote_hash": "0e202252b61b2aea59b58f676038dabd1bc6cbc51b0c11516b9a25850d831044"
+        },
         {
           "source_id": "FISRC-2c2bafaec002c33e",
           "source_url": "https://news.crunchbase.com/health-wellness-biotech/throne-science-microbiome-gut-health-toilet-camera-startup-john-capodilupo-whoop/",
@@ -189,7 +232,7 @@
           "quote_hash": "fa7f475e14b25443d6918c03315c98ecb6022fd638ba8e8a8609455e1fc5d2a3"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

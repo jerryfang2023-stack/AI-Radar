@@ -123,19 +123,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Celesta Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "Celesta Capital 官网称其为总部位于硅谷的全球深科技风险投资机构。Normal Computing 融资公告将其列为现有投资者。",
+      "facts": [
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "总部位于硅谷的全球深科技风险投资机构。",
+          "source_id": "celesta"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "Normal Computing 公告将其列为现有投资者。",
+          "source_id": "normal"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Normal Computing 官方融资公告将 Celesta Capital 列为现有投资者。",
+          "source_id": "normal"
+        },
         {
           "description": "融资来源记录：Normal Computing · 历史轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c1b4f6326a3ee76"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.celesta.vc/about",
+          "source_id": "celesta",
+          "url": "https://www.celesta.vc/about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "celesta",
+          "source_url": "https://www.celesta.vc/about",
+          "source_title": "About | Celesta Capital",
+          "source_content_hash": "8928f02839b4079d260efbeb6a07202c6d0c355ba97c0fbdf396c50ad7de38f3",
+          "quote": "nded in 2013 by seasoned technology industry leaders, Celesta Capital is a global deep tech venture capital firm headquartered in Silicon Valley. From next-generation compute hardware, to AI-driven software and engineering-powered biology, we seek out the breakthroughs that will power the next decade of technology advancement. Our Investments by the Nu",
+          "quote_hash": "92bc25f66f7821e816df9b3f3ccd309cca5abf80497cee967bab2fafdad71d7d"
+        },
+        {
+          "source_id": "normal",
+          "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
+          "source_title": "NORMAL COMPUTING RAISES $50M LED BY SAMSUNG CATALYST TO ACCELERATE SILICON DESIGN AND SOLVE AI HARDWARE ENERGY CRISIS",
+          "source_content_hash": "82274a635159b39ca0014f5c67a145d9bf7712c31d02a2519821f44be540a3e7",
+          "quote": "include Galvanize, Brevan Howard Macro Venture Fund, and ArcTern Ventures, alongside existing investors Celesta Capital, Drive Capital, Eric Schmidt's First Spark Ventures, and Micron Ventures. Normal was founded to tackle two converging crises: the escalating complexity of silicon design and the energy requirements of AI infra",
+          "quote_hash": "fceac2056b58a1bda7b552caf709701fcf1d41f0ccb2a3f0dcdfcc7c5771d9c3"
+        },
         {
           "source_id": "FISRC-3c1b4f6326a3ee76",
           "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
@@ -145,7 +186,7 @@
           "quote_hash": "21687a98084e726aa8f7c265c14c8e03bd1bafe6732b59331da83b20dc408489"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

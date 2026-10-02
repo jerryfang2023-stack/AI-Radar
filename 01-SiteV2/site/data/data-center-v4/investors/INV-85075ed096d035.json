@@ -139,19 +139,73 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tribeca Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Tribeca Venture Partners 官网称其为 2011 年成立的纽约风险投资机构，投资早期至成长期的科技公司；纽约是其所在地和主要市场。",
+      "facts": [
+        {
+          "field": "headquarters",
+          "label": "官网所列所在地",
+          "value": "New York",
+          "source_id": "tribeca_approach"
+        },
+        {
+          "field": "founding_year",
+          "label": "官网所列成立年份",
+          "value": "2011",
+          "source_id": "tribeca_approach"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网所述阶段",
+          "value": "早期至成长期",
+          "source_id": "tribeca_strategy"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网所述投资对象",
+          "value": "科技公司",
+          "source_id": "tribeca_strategy"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2011",
+          "description": "官网称 Tribeca Venture Partners 于 2011 年成立。",
+          "source_id": "tribeca_approach"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6233a9ab76850de"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Tribeca Venture Partners 官网",
+          "url": "https://tribecavp.com/",
+          "source_id": "tribeca_approach"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "tribeca_approach",
+          "source_url": "https://tribecavp.com/approach/",
+          "source_title": "Investment Approach - Tribeca Venture Partners",
+          "source_content_hash": "a30b71123f35e49ac8e915d492a72650c0cd303c4b53fb2d08e83c309edf005f",
+          "quote": "Tribeca Venture Partners is a New York-based venture capital firm founded in 2011.",
+          "quote_hash": "42716f2655654cfed559c1ee9fa7b12a738b7ab9fd714e7664e64f9c05b97082"
+        },
+        {
+          "source_id": "tribeca_strategy",
+          "source_url": "https://tribecavp.com/approach/",
+          "source_title": "Investment Approach - Tribeca Venture Partners",
+          "source_content_hash": "a30b71123f35e49ac8e915d492a72650c0cd303c4b53fb2d08e83c309edf005f",
+          "quote": "We back ambitious founders building technology companies that can become central to their industries. Our experience spans early-stage venture and growth investing, with a history that includes AlphaSense, ACV Auctions, AppNexus and ShopKeep.",
+          "quote_hash": "cf5cefbefcbd4b92458ee760879f5b4c0fefcae6579fe985fb9ae2f251c9a2c0"
+        },
         {
           "source_id": "FISRC-a6233a9ab76850de",
           "source_url": "https://multiples.vc/private-comps/bland-ai",
@@ -161,7 +215,8 @@
           "quote_hash": "fb2f8a7513b264a6b54aa968928993119fbde22aaa550af27135bf826b6dfd5e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

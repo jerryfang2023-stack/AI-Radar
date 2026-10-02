@@ -139,19 +139,65 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Valley Capital Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Valley Capital Partners 官网自述为早期风险投资机构，采取高集中度投资方式，并标注成立于 2013 年。TechCrunch 报道其领投 NanoClaw 种子轮。",
+      "facts": [
+        {
+          "field": "stage",
+          "label": "投资阶段",
+          "value": "早期风险投资",
+          "source_id": "valley_official"
+        },
+        {
+          "field": "founding_year",
+          "label": "官网标注成立年份",
+          "value": "2013",
+          "source_id": "valley_official"
+        },
+        {
+          "field": "investment_approach",
+          "label": "投资方式",
+          "value": "高信念、高集中度早期投资",
+          "source_id": "valley_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 报道 Valley Capital Partners 领投 NanoClaw 种子轮。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：NanoCo · 种子轮 · 2026-05-20 · 本轮领投 · $12 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-056bd835d7bc912e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.valleycapital.vc/",
+          "url": "https://www.valleycapital.vc/",
+          "source_id": "valley_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "valley_official",
+          "source_url": "https://www.valleycapital.vc/",
+          "source_title": "Backing Extraordinary Founders",
+          "source_content_hash": "585f8c9c936ece9b19b5a5d71775fd96230885326c5558d2bbb79e44cd3f8f86",
+          "quote": "Backing Extraordinary Founders Log in We Build With Extraordinary Founders High conviction, high concentration early stage capital Valley Capital Partners Early Stage Venture Capital Founded 2013 | $350M AUM | 19 Unicorns © 2026 Valley Capital Partners | All Rights Reserved",
+          "quote_hash": "585f8c9c936ece9b19b5a5d71775fd96230885326c5558d2bbb79e44cd3f8f86"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
+          "source_title": "NanoClaw creator turns down $20M buyout offer, raises $12M seed instead | TechCrunch",
+          "source_content_hash": "5b936efdd2b11364b06b4a3a782cef700ce5b4f30548d2b3fea87cbb4477e58f",
+          "quote": "The funding was led by Valley Capital Partners and saw participation from Docker, Vercel, Monday.com, Slow Ventures, and angels like Clem Delangue, CEO of Hugging Face.",
+          "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
+        },
         {
           "source_id": "FISRC-056bd835d7bc912e",
           "source_url": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead",
@@ -161,7 +207,8 @@
           "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -139,10 +139,22 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Zelda Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Zelda Ventures 官网称其在 pre-seed 阶段支持熟悉网络中的连续创业者，并强调长期关系、经验与创业者社区。",
+      "facts": [
+        {
+          "field": "stages",
+          "label": "投资阶段",
+          "value": "Pre-seed",
+          "source_id": "zelda_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资对象",
+          "value": "关系网络内的连续创业者",
+          "source_id": "zelda_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +162,24 @@
           "source_id": "FISRC-6d4642fdc4a2457c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Zelda Ventures官网",
+          "url": "https://zelda.vc/",
+          "source_id": "zelda_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zelda_home",
+          "source_url": "https://zelda.vc/",
+          "source_title": "Zelda Ventures",
+          "source_content_hash": "5336cb3a34ee079713d7f62a94a00e8a1906367110c985da63327483e1a9d629",
+          "quote": "Backing In-network Serial Entrepreneurs at Pre-seed Experienced Harnessing insights forged over decades operating in a flourishing entrepreneurial ecosystem, we deliver expert guidance and nuanced perspectives.",
+          "quote_hash": "47605650d1eec70675a41f0a5eeab045dd4651ea8e6f8ef0566ee2c4c121b840"
+        },
         {
           "source_id": "FISRC-6d4642fdc4a2457c",
           "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
@@ -161,7 +189,8 @@
           "quote_hash": "ef8f75bd5a8f3dbadeef87e1b8b3e59faa97745bf3b3981952bee2a7886bfb44"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

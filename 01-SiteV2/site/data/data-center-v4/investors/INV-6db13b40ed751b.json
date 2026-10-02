@@ -139,29 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Acrew Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "Acrew Capital 官网团队页面介绍创始合伙人及其风险投资经历。Savi Security 官方新闻稿称 Acrew Capital 领投其 700 万美元种子轮。",
+      "facts": [
         {
-          "description": "融资来源记录：Savi Security · 种子轮 · 2026-07-07 · 本轮领投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "team_experience",
+          "label": "团队背景",
+          "value": "官网介绍创始合伙人曾在 Aspect Ventures、Accel 等机构任职或共同创立机构。",
+          "source_id": "acrew_team"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "Savi Security 官方新闻稿称 Acrew Capital 领投 700 万美元种子轮。",
           "source_id": "FISRC-9e7066e699b3555c"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "milestones": [],
+      "track_record": [
         {
-          "source_id": "FISRC-9e7066e699b3555c",
-          "source_url": "https://techcrunch.com/2026/07/07/savis-app-aims-to-protect-consumers-from-realistic-ai-scams-like-kidnappers-demanding-ransom",
-          "source_title": "Savi 的应用旨在保护消费者免受逼真 AI 诈骗的侵害，例如绑架者索要赎金",
-          "source_content_hash": "5f6c8a8245f00873feaecf7993b4a2be05a044a5cfab631bed09de45675e01b8",
-          "quote": "The round was led by Acrew Capital, with participation from Magnify Ventures, TTCER, and Resolute Ventures.",
-          "quote_hash": "e0ccb001866e306c56bb8e179d65fc454ef4ef70ffdc7557ce049b87564ad95f"
+          "description": "领投 Savi Security 的 700 万美元种子轮；公司公告还列出 Magnify Ventures、TTCER 和 Resolute Ventures。",
+          "source_id": "FISRC-9e7066e699b3555c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.acrewcapital.com/team",
+          "source_id": "acrew_team",
+          "url": "https://www.acrewcapital.com/team"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "acrew_team",
+          "source_url": "https://www.acrewcapital.com/team",
+          "source_title": "Our Team",
+          "source_content_hash": "4c7b8778c6952d22a1e38321df6a86bb061ec01dce0d115e516f9c2dac3bbfa4",
+          "quote": " female peers, she has dedicated her 20-year career to changing the ratio. Prior to co-founding Acrew Capital, Theresia was a co-founder at Aspect Ventures and a Managing General Partner at Accel. Theresia has been fortunate to work with many successful companies through IPOs or acquisitions including: Forescout (FSCT",
+          "quote_hash": "2620ab16916bf2de0ab2c1cd658475ff1b0bbfa80595a00b60cdd763ff532074"
+        },
+        {
+          "source_id": "FISRC-9e7066e699b3555c",
+          "source_url": "https://www.globenewswire.com/news-release/2026/07/07/3323124/0/en/savi-security-launches-app-to-protect-families-from-ai-scams-and-fraud.html",
+          "source_title": "Savi Security Launches App to Protect Families from AI",
+          "source_content_hash": "6463fb22bc922cbdcc9d0c3fecd0c59c43073f8877145c13f0ca8fdc038e1aa1",
+          "quote": "gage. The company also announced it has raised $7 million in seed funding, led by Acrew Capital, to accelerate development of its behavioral AI technology to screen calls, messages, and digital communications before users engage. While the AI boom has delivered real benefits in areas like research and pr",
+          "quote_hash": "910f4963b945aceb756264673598d9a4cd148bb09d1460b3fb77766653f2e172"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
     }
   }
 }

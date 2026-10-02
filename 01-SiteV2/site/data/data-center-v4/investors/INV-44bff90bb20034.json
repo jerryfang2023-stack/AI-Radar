@@ -123,19 +123,53 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Episode 1 Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Episode 1 Ventures 官网列出 CloudNC 组合；CloudNC 官方融资公告也称公司获得 Episode 1 Ventures 支持。",
+      "facts": [
+        {
+          "field": "portfolio_example",
+          "label": "官网组合案例",
+          "value": "CloudNC",
+          "source_id": "episode1_portfolio"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "CloudNC 官方公告将 Episode 1 Ventures 列为支持公司的风险投资机构。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：CloudNC · 历史轮次未披露 · 历史投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-583456b85ec1179e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.episode1.com/",
+          "url": "https://www.episode1.com/portfolio",
+          "source_id": "episode1_portfolio"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "episode1_portfolio",
+          "source_url": "https://www.episode1.com/portfolio",
+          "source_title": "Portfolio | Episode 1",
+          "source_content_hash": "1bafb5b1dc896eb36f9d8c603cf166b23b6df35f728d139d7915831a7e35a53a",
+          "quote": "Stage Pre-Seed Status Active website Go to website go to website Text Link Cloud NC DeepTech Manufacturing Pre-Seed Active Company in short CloudNC is a next gen CAM (Computer Aided Manufacturing) application for CNC machines.",
+          "quote_hash": "8265e8e63f8acb8670daeebd16e568a0b06ed78c4784242af1806e888d33df84"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
+          "source_title": "CloudNC raises $20m to expand AI tools for precision machining",
+          "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
+          "quote": "The technology company is backed by leading venture capital firms Atomico and Episode 1 Ventures, alongside Autodesk and Lockheed Martin as strategic partners.",
+          "quote_hash": "2903308aa2ec185dc490baa2f68db98bb0ebd35cac0545ca15394b44a5bd26ee"
+        },
         {
           "source_id": "FISRC-583456b85ec1179e",
           "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
@@ -145,7 +179,8 @@
           "quote_hash": "2903308aa2ec185dc490baa2f68db98bb0ebd35cac0545ca15394b44a5bd26ee"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

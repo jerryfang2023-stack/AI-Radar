@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Darkmode Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "Darkmode Ventures 官网将其投资方向描述为早期 AI，重点关注企业软件与开发者平台。Autoheal 官方公告称其参与了 2026 年 9 月的 790 万美元种子轮。",
+      "facts": [
+        {
+          "field": "focus",
+          "label": "关注领域",
+          "value": "早期 AI、企业软件与开发者平台。",
+          "source_id": "darkmode"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "披露案例",
+          "value": "Autoheal 官方公告将 Darkmode Ventures 列为 790 万美元种子轮参与方。",
+          "source_id": "autoheal"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-09-28",
+          "description": "Autoheal 宣布完成 790 万美元种子轮，Darkmode Ventures 参与。",
+          "source_id": "autoheal"
+        }
+      ],
       "track_record": [
+        {
+          "description": "参与 Autoheal 的 790 万美元种子轮；公告将 Innovation Endeavors 列为领投方。",
+          "source_id": "autoheal"
+        },
         {
           "description": "融资来源记录：Autoheal · 种子轮 · 2026-09-28 · 本轮参投 · $7.9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-212b01f9c4f8d05c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.darkmode.vc/",
+          "source_id": "darkmode",
+          "url": "https://www.darkmode.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "darkmode",
+          "source_url": "https://www.darkmode.vc/",
+          "source_title": "DarkMode Ventures",
+          "source_content_hash": "8a96e5a9d442dab2ce92283525d926ca3d199ca017c6cc2558b0b4137bf3dd2e",
+          "quote": "ir Shevat , Kat Orekhova , and Rapha Danilo — current and former founders. We invest in early stage AI companies, with an emphasis on enterprise software and developer platforms. Portfolio / Drata Security Platform Partnered in 2021 Tessl AI Developer Platform Partnered in 2024 Camber Health Automation for healthcare Par",
+          "quote_hash": "561d3a8bda7b5bafcd9fd53af9f8319fbaa8ecfa23cd60d0ee384f3c89fc267c"
+        },
+        {
+          "source_id": "autoheal",
+          "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
+          "source_title": "Autoheal raises $7.9M to build the self-improving software factory for enterprises",
+          "source_content_hash": "2b1272abb8d5c05c85d845301f84e59369d8a30887a705beed387411006e85cc",
+          "quote": "vation Endeavors, with participation from Emergent Ventures, U&I Ventures, Darkmode Ventures, Batch Ventures (CTO Fund) and Param Hansa Values. Joining them as angel investors are industry leaders Shawn Kung, Founder of GIT100; Sumeet Arora, Chief Product Officer of Teradata; Anshu Sharma, Co-Founder ",
+          "quote_hash": "f1e66f915f2c41e33c2bbca5beec3d9c925c1ecbf3282d0e64729424e69f90f6"
+        },
         {
           "source_id": "FISRC-212b01f9c4f8d05c",
           "source_url": "https://autoheal.ai/blog/autoheal-seed-funding",
@@ -161,7 +208,7 @@
           "quote_hash": "59506ba0808ee0c2c8d9ac25f14f284dee11383679000e5830940658d2c79dd4"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

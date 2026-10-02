@@ -139,29 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alter Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "Alter Venture Partners 官网称其为创业公司提供支持，并帮助企业拓展国际市场。SiMa.ai 官方融资公告将 Alter Venture Partners 列为 C 轮参投方。",
+      "facts": [
         {
-          "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "support_model",
+          "label": "创业支持",
+          "value": "官网称其为企业提供支持并帮助拓展国际市场。",
+          "source_id": "alter_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "SiMa.ai 官方公告将其列为 C 轮参投方。",
           "source_id": "FISRC-926f8f2e0ad24f56"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "milestones": [],
+      "track_record": [
         {
-          "source_id": "FISRC-926f8f2e0ad24f56",
-          "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
-          "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
-          "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
-          "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
-          "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
+          "description": "SiMa.ai 官方融资公告将 Alter Venture Partners 列为 C 轮参投方；公告未将其列为领投方。",
+          "source_id": "FISRC-926f8f2e0ad24f56"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://altervp.com/about/",
+          "source_id": "alter_profile",
+          "url": "https://altervp.com/about/"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "alter_profile",
+          "source_url": "https://altervp.com/about/",
+          "source_title": "Alter Venture Partners - ABOUT",
+          "source_content_hash": "099b2ea2d4d41c3dd6a0e9681e166aac714ae04d6493e039584bd6115b667e01",
+          "quote": "al business. We have built an eco-system providing exceptional support and unparalleled access to international markets helping entrepreneurs build and grow their companies. We thrive through disruption We believe that companies with strong core technology can disrupt traditional markets. When led by passionate, experience entr",
+          "quote_hash": "d0320b413d5cb226685a96e6ba66125a727b7761d937cf8480cc338e1b6abf3a"
+        },
+        {
+          "source_id": "FISRC-926f8f2e0ad24f56",
+          "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+          "source_title": "SiMa.ai Reaches $1.45B Valuation with $500 Million in Total Funding to Scale Physical AI in Humanoids, Automotive, and Drones - SiMa AI",
+          "source_content_hash": "e4a445b8ad5e5db7fe9dd87384cc0fef61131e6be5f0b5f6b45e8c90d37e1889",
+          "quote": "idelity Management & Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group. AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan also joined the round as new investors. The glob",
+          "quote_hash": "a2f096bfcdad12b2556501e1557608e8efa9130da33d8534bd8d1e04459134f8"
+        }
+      ],
+      "last_verified_at": "2026-10-03"
     }
   }
 }

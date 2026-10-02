@@ -139,10 +139,35 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Tola Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "Tola Capital 官网自述其成立时间、所在地、阶段定位、融资规模及组合数量。组合数量和融资规模按官网当前页面口径记录。",
+      "summary": "Tola Capital 是一家总部位于西雅图、面向全球种子和早期企业软件公司的投资机构。官网称其成立于2010年，已募集6.88亿美元，并投资了50多家组合公司。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间及地点",
+          "value": "官网称其于2010年在美国华盛顿州西雅图成立。",
+          "source_id": "PFSRC-INV-a9c972b41464ec-profile"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的阶段与地域",
+          "value": "全球范围内的种子及早期阶段。",
+          "source_id": "PFSRC-INV-a9c972b41464ec-profile"
+        },
+        {
+          "field": "capital_raised",
+          "label": "官网披露的募集规模",
+          "value": "官网称已募集6.88亿美元。",
+          "source_id": "PFSRC-INV-a9c972b41464ec-profile"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露的组合数量",
+          "value": "官网称投资了50多家组合公司。",
+          "source_id": "PFSRC-INV-a9c972b41464ec-profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +175,24 @@
           "source_id": "FISRC-1ae6b18ce755c2a8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "Tola Capital 官网",
+          "value": "https://tolacapital.com/about",
+          "url": "https://tolacapital.com/about",
+          "source_id": "PFSRC-INV-a9c972b41464ec-profile"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-a9c972b41464ec-profile",
+          "source_url": "https://tolacapital.com/about",
+          "source_title": "About | Tola Capital",
+          "source_content_hash": "1096900d05ac620c0c3e33af8992c09e9b90dbb63464839f2786e44dea2e5550",
+          "quote": "Founded in 2010 in Seattle, WA Funding globally at seed and early stage We have raised $688M Invested in over 50 portfolio companies",
+          "quote_hash": "48bf420cd21d8c651e6c5c650e13515352320f45e0430886d9e240c2db775327"
+        },
         {
           "source_id": "FISRC-1ae6b18ce755c2a8",
           "source_url": "https://ascerta.com/resources/press/ascerta-raises-18m-series-a",
@@ -161,7 +202,7 @@
           "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

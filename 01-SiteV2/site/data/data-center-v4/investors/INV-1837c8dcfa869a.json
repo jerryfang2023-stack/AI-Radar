@@ -139,19 +139,53 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Geek Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Geek Ventures 官网称 Ihar Mahaniok 于 2021 年创立该机构，关注移民创业者；官网介绍其团队在早期支持移民创始人。",
+      "facts": [
+        {
+          "field": "founder",
+          "label": "创始人",
+          "value": "Ihar Mahaniok",
+          "source_id": "geek_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资对象",
+          "value": "移民创业者",
+          "source_id": "geek_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021",
+          "description": "官网称 Ihar Mahaniok 于 2021 年创立 Geek Ventures。",
+          "source_id": "geek_about"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5827c25c8bbe0d20"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Geek Ventures官网",
+          "url": "https://geek.vc/about",
+          "source_id": "geek_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "geek_about",
+          "source_url": "https://geek.vc/about",
+          "source_title": "About",
+          "source_content_hash": "6780d97fbee7ab035ecb1b3a793fb5f123b592381a37bc3379154bcaca673ea4",
+          "quote": "founded Geek Ventures in 2021 after seeing the difficulties immigrant entrepreneurs faced when trying to raise capital and make connections within the U.S.",
+          "quote_hash": "3ce99f58f459aa8b17602ef04e3a72704304c03b8d935667fdc52b09a642bc37"
+        },
         {
           "source_id": "FISRC-5827c25c8bbe0d20",
           "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/zerodrift-raises-10m-seed-round-to-build-the-compliance-firewall-for-ai.html",
@@ -161,7 +195,8 @@
           "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

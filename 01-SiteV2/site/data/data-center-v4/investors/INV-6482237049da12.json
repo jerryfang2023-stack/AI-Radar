@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "East Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "East Ventures 官网称其在东南亚支持从 Seed 到 Growth 阶段的创业者。LinqAlpha 公司公告将其列入 2200 万美元 A 轮融资的投资方名单。",
+      "facts": [
         {
-          "description": "融资来源记录：LinqAlpha · A轮 · 2026-07-02 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "investment_focus",
+          "label": "投资阶段",
+          "value": "官网称其覆盖 Seed 到 Growth 阶段。",
+          "source_id": "east_profile"
+        },
+        {
+          "field": "geography",
+          "label": "投资区域",
+          "value": "官网将其定位为东南亚风险投资机构。",
+          "source_id": "east_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "LinqAlpha 官方公告将其列入 A 轮投资者名单。",
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "参与 LinqAlpha 的 2200 万美元 A 轮；其公告将 East Ventures 列为东南亚投资方之一。",
+          "source_id": "FISRC-2967c8cb86b79dd2"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://east.vc/about-us",
+          "source_id": "east_profile",
+          "url": "https://east.vc/about-us"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "east_profile",
+          "source_url": "https://east.vc/about-us",
+          "source_title": "About East Ventures | Mission, Values &amp; Impact",
+          "source_content_hash": "9b7ac7ce6548a918716bba4f3b203b80b2153ee65dbbe801e5f9425a431ac000",
+          "quote": "entures East Ventures is a leading venture capital firm in Southeast Asia, backing visionary founders from Seed to Growth stage. We are committed to sustainable development and social impact through ESG-driven initiatives. Read More Reports Reports White papers Digital Competitiveness Index Sustainability Report East Ventures – Digital",
+          "quote_hash": "424614d72cf6ac262beb9ab651b33f76ceb3b7f2234b15302483d44fabd93272"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
-          "source_title": "LinqAlpha 融资 2200 万美元，为全球公开市场构建 Alpha 智能层",
-          "source_content_hash": "4a715b2a5964f624352304e70b67f66c9d6425a46e969e70ddc50f0999e19e3e",
-          "quote": "Betatron Venture Group, East Ventures, and SV Investment across Southeast Asia and Hong Kong SAR",
-          "quote_hash": "707c0113f23e4bdf09d6ec28dbaf84392bddeb95729bb1a6188870dec5362809"
+          "source_title": "LinqAlpha Raises $22 Million to Build the Alpha Intelligence Layer for Global Public Markets",
+          "source_content_hash": "46fd8dc306376be8e4765c9865106bc3d748a05dea9b73c47ea7725b4da561f7",
+          "quote": "rom SBI Investment and Z Venture Capital in Japan; Betatron Venture Group, East Ventures, and SV Investment across Southeast Asia and Hong Kong SAR ; Samsung Securities, Mirae Asset Venture Investment, Mirae Asset Capital, NH Investment & Securities, Shinhan Venture Investment, and Hana Ventures i",
+          "quote_hash": "4aa22c17d86abd97e5756235b574927e8ab143b51c15285b7165fcba2a808a80"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

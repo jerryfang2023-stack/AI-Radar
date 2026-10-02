@@ -155,23 +155,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "扬子江药业集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "扬子江药业集团官网称集团创建于 1971 年，旗下有多家生产型和研发型子公司。融资报道将其列为骁柔集团近亿元 A 轮战略融资的联合投资方之一。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "成立时间",
+          "value": "集团创建于 1971 年。",
+          "source_id": "yz"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "融资报道将扬子江药业集团列为骁柔集团近亿元 A 轮战略融资的联合投资方。",
+          "source_id": "xuorou"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-06-24",
+          "description": "骁柔集团公告完成近亿元 A 轮战略融资，扬子江药业集团参与联合战略投资。",
+          "source_id": "xuorou"
+        }
+      ],
       "track_record": [
         {
-          "description": "融资来源记录：骁柔集团 · A轮 · 2026-06-24 · 本轮联合领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-262aff12f0ba0ca3"
+          "description": "参与骁柔集团近亿元 A 轮战略融资；报道将齐济资本和扬子江药业集团列为联合战略投资方。",
+          "source_id": "xuorou"
         },
         {
           "description": "融资来源记录：骁柔集团 · A轮 · 2026-06-24 · 本轮联合领投 · 近亿元。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-b236fcf616cfb11a"
+          "source_id": "FISRC-262aff12f0ba0ca3"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.yangzijiang.com/About_Us/Group/Introduction",
+          "source_id": "yz",
+          "url": "https://www.yangzijiang.com/About_Us/Group/Introduction"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "yz",
+          "source_url": "https://www.yangzijiang.com/About_Us/Group/Introduction",
+          "source_title": "集团介绍_关于我们_扬子江药业集团",
+          "source_content_hash": "26febd7ed985d1a9ce2bf717422f00e657f0e4bddc5ded2632200252636031b3",
+          "quote": "集团介绍_关于我们_扬子江药业集团 首页 关于我们 集团介绍 集团创建于1971年，是科技部命名的全国首批创新型企业。 旗下子公司 旗下10多家生产型、研发型子公司分布泰州、北京、上海、南京、广州、成都、苏州、常州等地。 科学创新 研发中心 四大研发基地，千人研究团队，聚焦药物创新，共筑健康未来。 产品 中西药并举，拓展大健康，拥有多品牌、多元化的产品矩阵。 企业责任 ESG 我们做的越多，他们离幸福越近。 质量建设 以文化引领，精心打造具有扬子江特色的质量管理体系。 新闻中心 媒体报道 关注我们",
+          "quote_hash": "0e0c12c43ce72dea5e610f3bafa9361b11aeb84df3042b3e0536ca6088431c1a"
+        },
+        {
+          "source_id": "xuorou",
+          "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-24/doc-inientua3092643.shtml",
+          "source_title": "骁柔集团近亿元A轮战略融资 深耕AI院外医疗赛道开启规模化扩张_新浪科技_新浪网",
+          "source_content_hash": "c22437108f0910a1731642cbeade4658c20c48be5e5dbbe585bc07a0c495b1eb",
+          "quote": "年06月24日 14:32:57 近日，安徽骁柔健康科技集团有限公司（以下简称\"骁柔集团\"）正式完成近亿元A轮战略融资，由知名创新药投资机构齐济资本、扬子江药业集团联合战略投资。本轮融资资金将全部用于院外市场商业模式全国规模化复制、AI增长系统迭代升级及专业人才梯队建设，持续夯实企业核心竞争力，巩固其在AI院外医疗增长服务赛道的头部领跑地位。 立足千亿院外医疗赛道，打造AI全链路增长核心业务体系 当前，万亿规模院外市场成为行业增量主力，骁柔集团精准切入赛道痛点，聚焦药企院外增长核心难题，搭建起“药企院外增长（ToB）+ 用户健康服务（ToC）+ 数据增长闭环”的专属商业模式，定位AI驱动院",
+          "quote_hash": "4a8b71738cb5b5374b591b5277558db07f575b333c97e106a167f625eb6cbc98"
+        },
         {
           "source_id": "FISRC-262aff12f0ba0ca3",
           "source_url": "https://finance.sina.com.cn/tech/roll/2026-06-24/doc-inientua3092643.shtml",
@@ -189,7 +232,7 @@
           "quote_hash": "2ebc1b1726cb2af52bcf143b8b9daaf22c5a92eef4722f15cd7071bd5c864a7a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

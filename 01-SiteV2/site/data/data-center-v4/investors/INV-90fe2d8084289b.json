@@ -123,19 +123,85 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "ACCELERATE Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "Accelerate Fund 是支持阿尔伯塔省科技初创企业的早期共同投资基金，要求私人天使或共同投资者提供等额或更高配套资金。官网还称其关注生命科学、数字化转型、人工智能等领域。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": "early-stage",
+          "source_id": "accelerate_funding"
+        },
+        {
+          "field": "geography",
+          "label": "官网列示地域",
+          "value": "Alberta, Canada",
+          "source_id": "accelerate_funding"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示领域",
+          "value": [
+            "life sciences",
+            "digital transformation",
+            "artificial intelligence and emerging opportunities"
+          ],
+          "source_id": "accelerate_funding"
+        },
+        {
+          "field": "co_investment",
+          "label": "官网列示共同投资方式",
+          "value": "requires matching dollars from angel or private co-investors",
+          "source_id": "accelerate_about"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2024",
+          "description": "官网称第四期 Accelerate Fund 于 2024 年设立。",
+          "source_id": "accelerate_history"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Quadric · 历史轮次未披露 · C轮首关领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9f9b41abcfe2abd0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Accelerate Fund",
+          "url": "https://acceleratefund.ca/",
+          "source_id": "accelerate_funding"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "accelerate_funding",
+          "source_url": "https://acceleratefund.ca/funding/",
+          "source_title": "Funding for Alberta tech startups | Accelerate Fund",
+          "source_content_hash": "a50d2bd2aa8c246e7ecde2c32174d4e0d03f174ac258a8afeba953f08763bcf2",
+          "quote": "Early-stage co-investor for Alberta startups. What we invest in Alberta-based tech Early-stage startups Various B2B sectors Proven product demand Early-stage growth financing for Alberta tech Are you an Alberta tech startup seeking early-stage capital? Accelerate Fund looks to invest in high growth potential companies serving business or enterprise customers – that need funding to prove out a big market, attract talent to their team, and grow their companies large enough to warrant future capital raises to support that growth. We invest in entrepreneurs leading tech startups that are private, incorporated, and have a head office and more than 50% of employees located in Alberta. We focus on life sciences, digital transformation, and artificial intelligence and other emerging opportunities.",
+          "quote_hash": "79c52ce208decc5f989dacda2773b04d153af0fbda71c3a647490cf103cc3b37"
+        },
+        {
+          "source_id": "accelerate_about",
+          "source_url": "https://acceleratefund.ca/about/",
+          "source_title": "About Accelerate Fund - Our backers and team",
+          "source_content_hash": "0451e636488095542a628ba24547dcfb20f65635753396ee9f33a96a3f7d20c5",
+          "quote": "For startups to access Accelerate Fund investment, private angel investors need to be willing to invest equal or greater amounts into the investment round.",
+          "quote_hash": "051579e91359eaa3faec3a884b3e0e3b3747e34930db3e71877c7243f86bc65b"
+        },
+        {
+          "source_id": "accelerate_history",
+          "source_url": "https://acceleratefund.ca/about/",
+          "source_title": "About Accelerate Fund - Our backers and team",
+          "source_content_hash": "0451e636488095542a628ba24547dcfb20f65635753396ee9f33a96a3f7d20c5",
+          "quote": "2024 Accelerate Fund IV In 2024, a fourth Accelerate fund was created, with a $15 million anchor investment from Alberta Enterprise Corporation.",
+          "quote_hash": "025746b6d18e8aac06b7caf8501f2902042bc44e1daadaf64a9b618d5ed70e9c"
+        },
         {
           "source_id": "FISRC-9f9b41abcfe2abd0",
           "source_url": "https://quadric.ai/press-release/quadric-raises-30m-series-c-funding",
@@ -145,7 +211,8 @@
           "quote_hash": "8f6da40d3748608f0ed7958b1c7455b97af72906faac6604ddb79c7978bb34e2"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

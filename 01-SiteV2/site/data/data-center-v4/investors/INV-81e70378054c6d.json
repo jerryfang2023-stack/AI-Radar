@@ -140,11 +140,15 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Rogue VC 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_note": "仅确认 Astrocade 官网融资公告中的投资者标签和总融资披露；未把 Rogue VC 与同名投资组织合并，也未推断其具体轮次。",
+      "summary": "Astrocade 的公司公告列出 Rogue VC 为其新融资参与方，并说明融资包含由 Sequoia Capital 领投的 Series B 和由 Sea 领投的 Series A；公告没有将 Rogue VC 分配至某一轮。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Astrocade 于 2026-05-05 公布 5600 万美元新融资，并在参与方名单列出 Rogue VC；公告未说明其对应 Series A 或 Series B，也未披露金额。",
+          "source_id": "astro_blog"
+        },
         {
           "description": "融资来源记录：Astrocade · 多轮融资 · 2026-05-05 · 本轮参投 · $56M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1811bc88b6a13090"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "astro_blog",
+          "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
+          "source_title": "Astrocade Raises $56M in New Funding to Build a New Era of Interactive Entertainment | Astrocade Blog",
+          "source_content_hash": "4d84c2a57412fde80ce4152cc28093887d8ba173ef96cb0d628e741997b5a302",
+          "quote": "Astrocade May 5th, 2026 Loading... We&#x27;re thrilled to announce $56M in new funding. The funding includes a Series B led by Sequoia Capital and a Series A led by Sea, with participation from Google&#x27;s AI Futures Fund, NVIDIA, LG Technology Ventures, Dentsu Ventures, Conviction Embed, Chaac Ventures, Rogue VC, and many more, to build a new kind of interactive entertainment platform.",
+          "quote_hash": "269166db0b88ff33bec00a49b6ca6ee70196ac038d76e3415a7c790c280195ae"
+        },
         {
           "source_id": "FISRC-1811bc88b6a13090",
           "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
@@ -161,7 +173,7 @@
           "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

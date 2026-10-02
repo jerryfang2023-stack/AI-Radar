@@ -139,10 +139,40 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "49 Palms Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "49 Palms Ventures 官网称其投资 AI 创业者并帮助其解决商业化；美国 SEC Form D 列出同名系列基金 49 Palms Ventures Fund 1, LP，注册地 Delaware、成立年份 2025。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网所述投资对象",
+          "value": "AI 创业者",
+          "source_id": "palms_home"
+        },
+        {
+          "field": "support_approach",
+          "label": "官网所述支持方向",
+          "value": "帮助 AI 创业者做好商业化",
+          "source_id": "palms_home"
+        },
+        {
+          "field": "fund_legal_name",
+          "label": "SEC Form D 所列基金名称",
+          "value": "49 Palms Ventures Fund 1, LP",
+          "source_id": "palms_sec"
+        },
+        {
+          "field": "jurisdiction",
+          "label": "SEC Form D 所列注册地",
+          "value": "Delaware",
+          "source_id": "palms_jurisdiction"
+        },
+        {
+          "field": "formation_year",
+          "label": "SEC Form D 所列成立年份",
+          "value": "2025",
+          "source_id": "palms_formation"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +180,48 @@
           "source_id": "FISRC-7faa441242e94444"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "49 Palms Ventures 官网",
+          "url": "https://www.49palmsvc.com/",
+          "source_id": "palms_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "palms_home",
+          "source_url": "https://www.49palmsvc.com/",
+          "source_title": "49 Palms Ventures",
+          "source_content_hash": "014f719d52aba55102c25907929ca7b7fffc6e86802e8fc098696be3c6604595",
+          "quote": "We invest in AI founders & help them get monetization right .",
+          "quote_hash": "61384c58c4dbfef318090ae71982815ba297863810372210ab0d1982af3cd8dc"
+        },
+        {
+          "source_id": "palms_sec",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2086463/000208646325000001/xslFormDX08/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "404e59e7f6ce70554678b744a0e6909371e58d6c10b9a165b2f8627d4439219a",
+          "quote": "Name of Issuer 49 Palms Ventures Fund 1, LP Jurisdiction of Incorporation/Organization DELAWARE Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2025 Yet to Be Formed 2.",
+          "quote_hash": "404fb713eda392f4c1f83c3c6e92d51ed22da0ecff6f33504d7a4e637d4bd017"
+        },
+        {
+          "source_id": "palms_jurisdiction",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2086463/000208646325000001/xslFormDX08/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "404e59e7f6ce70554678b744a0e6909371e58d6c10b9a165b2f8627d4439219a",
+          "quote": "Jurisdiction of Incorporation/Organization DELAWARE Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2025 Yet to Be Formed 2.",
+          "quote_hash": "023c0287f5ef641c39b5035f193cf11ec565cc84a55cf56f5c998bdc4f4f9b20"
+        },
+        {
+          "source_id": "palms_formation",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/2086463/000208646325000001/xslFormDX08/primary_doc.xml",
+          "source_title": "SEC FORM D",
+          "source_content_hash": "404e59e7f6ce70554678b744a0e6909371e58d6c10b9a165b2f8627d4439219a",
+          "quote": "Year of Incorporation/Organization Over Five Years Ago X Within Last Five Years (Specify Year) 2025 Yet to Be Formed 2.",
+          "quote_hash": "f3901ab7489afffcc05b4a9dd00063d3144938bfaa77bc1799ada70f3d811002"
+        },
         {
           "source_id": "FISRC-7faa441242e94444",
           "source_url": "https://www.prnewswire.com/news-releases/ricursive-intelligence-raises-300-million-series-a-at-4-billion-valuation-to-accelerate-ai-driven-semiconductor-design-302670061.html",
@@ -161,7 +231,8 @@
           "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

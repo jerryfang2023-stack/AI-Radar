@@ -139,10 +139,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Overmatch Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-02-18；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "官网正文可读取信息有限，本档案仅记录页面直接展示的关注主题；阶段与投资条款未从外部目录推断。",
+      "summary": "Overmatch Ventures 官网当前可读取页面列出 Deep Tech、Defense 与 Space 作为关注主题；官网动态页面未提供可核验的投资阶段、基金规模或团队细节。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "关注主题",
+          "value": [
+            "Deep Tech",
+            "Defense",
+            "Space"
+          ],
+          "source_id": "overmatch_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +161,24 @@
           "source_id": "FISRC-840402012d166d60"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Overmatch Ventures官网",
+          "url": "https://www.overmatch.vc/",
+          "source_id": "overmatch_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "overmatch_home",
+          "source_url": "https://www.overmatch.vc/",
+          "source_title": "Overmatch Ventures",
+          "source_content_hash": "6217e6257b0f389d372fd8584983f4cc371530b763ba4663a88d01dd30ea281d",
+          "quote": "Deep Tech Defense Space OUR FOCUS THE COMPANIES PORTFOLIO / LEARN MORE ----------- NEXT >> ----------- PORTFOLIO / LEARN MORE Follow Overmatch on Linkedin SUBSCRIBE TO OUR NEWSLETTER Sign up to receive quarterly emails with the latest insights and updates from Overmatch.",
+          "quote_hash": "aab25a8bbe0b23a35939ef7ec2b64a2bff95432bc3673cf346aafd1ad67d5469"
+        },
         {
           "source_id": "FISRC-840402012d166d60",
           "source_url": "https://www.efficient.computer/resources/efficient-computer-raises-60-million",
@@ -161,7 +188,7 @@
           "quote_hash": "54f6131d40657aa4a2992e5cc83f4cf56c75053f7737c3a8174d58856b831ebe"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

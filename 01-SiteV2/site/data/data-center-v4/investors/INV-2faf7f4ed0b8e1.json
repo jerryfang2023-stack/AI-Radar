@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "International Finance Corporation 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "IFC 官网称其为聚焦发展中国家私营部门的全球开发机构。Quadric 公告称 IFC 领投其延长后的 C 轮融资，Series C 总额达到 4600 万美元。",
+      "facts": [
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "聚焦发展中国家私营部门的全球开发机构。",
+          "source_id": "ifc"
+        },
+        {
+          "field": "lead_investment",
+          "label": "公开投资案例",
+          "value": "Quadric 公告称 IFC 领投其 C 轮延长融资。",
+          "source_id": "quadric"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "领投 Quadric 的 C 轮延长融资；公告称 Series C 总额达到 4600 万美元，累计融资达到 9000 万美元。",
+          "source_id": "quadric"
+        },
         {
           "description": "融资来源记录：Quadric · C轮 · 2026-01-14 · 本轮领投 · $30M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b3973965c733b20b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.ifc.org/en/about",
+          "source_id": "ifc",
+          "url": "https://www.ifc.org/en/about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ifc",
+          "source_url": "https://www.ifc.org/en/about",
+          "source_title": "Who We Are | International Finance Corporation (IFC)",
+          "source_content_hash": "bbac32cc32e58373352e7d8bfe4c4cdc578b8631aa54e0a07c4cba3e93ec66c3",
+          "quote": "ation Disclosures Insights & Reports News Who We Are Who We Are IFC is the largest global development institution focused on the private sector in developing countries. By encouraging growth, IFC advances economic development, creates jobs and improves the lives of people. More About Us About Us Our Leadership Development Partners World Bank Group Annual Report Strategic Pri",
+          "quote_hash": "c187f8c583149b3639146208557795eba11bc08add443ef686fc37116faa90d1"
+        },
+        {
+          "source_id": "quadric",
+          "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
+          "source_title": "Quadric Extends Series C to $46M with Second Close led by World Bank's IFC",
+          "source_content_hash": "2da3194b385a5579a1124dcc6b03bcccefc72414b6e7667db361a05c4f00535e",
+          "quote": "re, locally controlled AI infrastructure. Quadric Series C Extension facts Led by the International Finance Corporation, the round brings Quadric's Series C to $46 million, with total capital raised reaching $90 million. The capital will expand Quadric's support and go-to-market teams for existing customers in automotive, AI PC",
+          "quote_hash": "4f11bbf587c122e0d18ddd07c212a64ec3e30995696755abe1d0fed220f4b9f7"
+        },
         {
           "source_id": "FISRC-b3973965c733b20b",
           "source_url": "https://www.prnewswire.com/news-releases/quadric-extends-series-c-to-46m-with-second-close-led-by-world-banks-ifc-302823301.html",
@@ -161,7 +202,7 @@
           "quote_hash": "2273763c21abae772ecb81b7f4294f88c684193ef8da93c3f0ce1c54ec35c27b"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

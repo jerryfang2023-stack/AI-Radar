@@ -123,10 +123,39 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vintage Investment Partners 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "资产规模为官网核验时展示值，页面未在该数字旁说明统计日期。",
+      "summary": "Vintage Investment Partners 官网称其成立于 2003 年，专注风险投资，在美国、欧洲和以色列开展业务；官网自报管理资产 47 亿美元。",
+      "facts": [
+        {
+          "field": "founding_year",
+          "label": "官网所列成立年份",
+          "value": "2003",
+          "source_id": "vintage_about"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网所述方向",
+          "value": "Venture Capital",
+          "source_id": "vintage_about"
+        },
+        {
+          "field": "geography",
+          "label": "官网所列地域",
+          "value": [
+            "United States",
+            "Europe",
+            "Israel"
+          ],
+          "source_id": "vintage_about"
+        },
+        {
+          "field": "assets",
+          "label": "官网所列资产规模",
+          "value": "US$4.7 billion",
+          "source_id": "vintage_about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +163,24 @@
           "source_id": "FISRC-7f8e788eab384554"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Vintage Investment Partners",
+          "url": "https://vintage-ip.com/about/",
+          "source_id": "vintage_about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "vintage_about",
+          "source_url": "https://vintage-ip.com/about/",
+          "source_title": "About - Vintage Investment Partners",
+          "source_content_hash": "9563105bea1da44748f4c8cf4f5fc395bc69226c00a7d060fddf0eb8d30527ad",
+          "quote": "Founded in 2003, Vintage Investment Partners is focused on Venture Capital with a strong footprint in the U.S., Europe, and Israel, and $4.7 billion in assets.",
+          "quote_hash": "5b10b2d8be48802c8949722c6c7d5cb7bda561a7193bbc9c415af050be04f8c8"
+        },
         {
           "source_id": "FISRC-7f8e788eab384554",
           "source_url": "https://valueaddvc.com/blog/alice-ai-security-valuation-2026-140m-raise-pushes-it-near-1b",
@@ -145,7 +190,7 @@
           "quote_hash": "b7bab8ca83243fe88ae21f49ee2ba4bf472391655f731e15e339d8048c80418e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

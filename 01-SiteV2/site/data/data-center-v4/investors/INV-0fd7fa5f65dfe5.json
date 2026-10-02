@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "FT Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "官网将 FT Partners 定位为金融科技投资银行。队列中的融资参投归属仍按发行方融资披露另行保留；官网未将公司描述为风险投资机构。",
+      "summary": "FT Partners 官网将公司定位为专注金融科技的投资银行，并说明其为客户提供战略投资银行与金融顾问服务；本档案记录其机构自述，不把顾问业务写成风险投资策略。",
+      "facts": [
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "FinTech investment bank；投资银行官网自述",
+          "source_id": "ft_services"
+        },
+        {
+          "field": "services",
+          "label": "服务",
+          "value": "战略投资银行与金融顾问服务",
+          "source_id": "ft_services"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,24 @@
           "source_id": "FISRC-4799c620c14fef7b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "FT Partners官网",
+          "url": "https://www.ftpartners.com/services",
+          "source_id": "ft_services"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "ft_services",
+          "source_url": "https://www.ftpartners.com/services",
+          "source_title": "Investment Banking San Francisco | Financial Advisory Services San Francisco",
+          "source_content_hash": "9e19fbd5f0d45bd2629b5987676c43f082ff9abcc89801f02da5fcf87f6d6f07",
+          "quote": "The Only Investment Bank Focused Exclusively on FinTech San Francisco New York Miami London Subscribe to our Newsletter About FT Partners News & Media Advisory Services Why FT Partners?",
+          "quote_hash": "21a9341430c5b9a135062f29bc9051215962988f6486f141c6db52ef55fcc809"
+        },
         {
           "source_id": "FISRC-4799c620c14fef7b",
           "source_url": "https://www.halluminate.ai/blog/series-a",
@@ -161,7 +190,7 @@
           "quote_hash": "9bf96bfe7f060e80a1ce3cca441c98ec5266a2934d32ceba64d63d2f5c25735a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

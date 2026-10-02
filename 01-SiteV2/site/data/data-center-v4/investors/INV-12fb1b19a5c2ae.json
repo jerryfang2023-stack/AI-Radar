@@ -139,19 +139,51 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Evolution Equity Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Evolution Equity Partners 官网称其为国际风险投资机构，关注网络安全，覆盖 seed 至 growth 阶段，并列出 SecurityScorecard、Arctic Wolf、Snyk 等组合案例。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "Cybersecurity",
+          "source_id": "evolution_home"
+        },
+        {
+          "field": "stages",
+          "label": "投资阶段",
+          "value": "Seed 至 Growth",
+          "source_id": "evolution_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网将 SecurityScorecard、Arctic Wolf 与 Snyk 列为合作企业/组合案例；该列举不代表完整组合。",
+          "source_id": "evolution_home"
+        },
         {
           "description": "融资来源记录：NewCore · 种子轮 · 2026-06-15 · 本轮参投 · $66 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9cc6124e644d0e3d"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Evolution Equity Partners官网",
+          "url": "https://evolutionequity.com/",
+          "source_id": "evolution_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "evolution_home",
+          "source_url": "https://evolutionequity.com/",
+          "source_title": "Evolution",
+          "source_content_hash": "eb2523e7a32fdb0cbd4913eec07669b6c8efa375db2301fe0c34d3e830d1cd53",
+          "quote": "Evolution Equity Partners is an international venture capital investor led by technology entrepreneurs who have built software companies around the world and who leverage tremendous operating, technical, product development and go-to-market expertise to help entrepreneurs win.",
+          "quote_hash": "a997b8f949b8f0256a702b09124e0c77fb65c1f3cd2ef0935dcdc4e89bea707c"
+        },
         {
           "source_id": "FISRC-9cc6124e644d0e3d",
           "source_url": "https://techcrunch.com/2026/06/15/ai-agents-are-becoming-employees-newcore-emerges-with-66m-to-give-them-identities",
@@ -161,7 +193,8 @@
           "quote_hash": "1da6a624f5ba046f268facc8c72a025e49f70cc58ef14afc92d500953cf45704"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

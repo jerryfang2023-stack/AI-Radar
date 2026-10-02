@@ -139,19 +139,78 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "SBI Investment 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "SBI Investment 官网将其使命表述为创造和培育 21 世纪核心产业。LinqAlpha 官方公告披露 SBI Investment 对其 2200 万美元 A 轮提供战略性投资参与。",
+      "facts": [
+        {
+          "field": "mission",
+          "label": "机构使命",
+          "value": "创造和培育 21 世纪核心产业。",
+          "source_id": "sbi"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "LinqAlpha 公告将 SBI Investment 列为战略参与方。",
+          "source_id": "linqalpha"
+        },
+        {
+          "field": "round_size",
+          "label": "公开轮次规模",
+          "value": "LinqAlpha 公布 2200 万美元 Series A。",
+          "source_id": "linqalpha-round"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "LinqAlpha 公布 2200 万美元 Series A。",
+          "source_id": "linqalpha-round"
+        },
+        {
+          "description": "LinqAlpha 官方公告将 SBI Investment 列为战略参与方。",
+          "source_id": "linqalpha"
+        },
         {
           "description": "融资来源记录：LinqAlpha · A轮 · 2026-07-02 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.sbinvestment.co.jp/en/",
+          "source_id": "sbi",
+          "url": "https://www.sbinvestment.co.jp/en/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sbi",
+          "source_url": "https://www.sbinvestment.co.jp/en/",
+          "source_title": "SBI Investment Co., Ltd.",
+          "source_content_hash": "80d2eebf4e17d7020c9eafda5525d44c355f6b5daccc5f326333e411e64c97c9",
+          "quote": "SBI Investment Co., Ltd. New Industry Creator For creating and cultivating core industries of the 21st century New Industry Creator For creating and cultivating core industries of the 21st century Features Features Concentrated Investments in Growth Field",
+          "quote_hash": "9b620eb57ea70a8ab4778bfe4988ef07fd9db86f0606849005732debf487da7a"
+        },
+        {
+          "source_id": "linqalpha",
+          "source_url": "https://linqalpha.com/blog/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets",
+          "source_title": "LinqAlpha Raises $22 Million to Build the Alpha Intelligence Layer for Global Public Markets",
+          "source_content_hash": "519c3fc253b0e837bd3431b7b823e0313a1d52242006fae580c641fd329961fa",
+          "quote": "www.linqalpha.com. Notes to Editors The Series A global syndicate includes strategic participation from SBI Investment and Z Venture Capital in Japan; Betatron Venture Group, East Ventures, and SV Investment across Southeast Asia and Hong Kong; Samsung Securities, Mirae Asset Venture Investment, Mirae Asset Capital, NH Investm",
+          "quote_hash": "da577d4a1f53794348e2955e56aa6de7bb3bc9d82b353335f7b699de16e4c2ad"
+        },
+        {
+          "source_id": "linqalpha-round",
+          "source_url": "https://linqalpha.com/blog/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets",
+          "source_title": "LinqAlpha Raises $22 Million to Build the Alpha Intelligence Layer for Global Public Markets",
+          "source_content_hash": "519c3fc253b0e837bd3431b7b823e0313a1d52242006fae580c641fd329961fa",
+          "quote": "LinqAlpha Raises $22 Million to Build the Alpha Intelligence Layer for Global Public Markets Product Security Customers Newsroom LLM Leaderboard Careers Sign In Request a Demo Company News LinqAlpha Raises $22 Million to Build the Alpha I",
+          "quote_hash": "9174f816a01fbc02f28e5bb9672dd1b57bf715735f311d657b1a77923dd8ec6f"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +220,7 @@
           "quote_hash": "d2d62a79730a04564e5e41e0d39b4b4bfbc18df7d57c420cce119a5346804bf0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

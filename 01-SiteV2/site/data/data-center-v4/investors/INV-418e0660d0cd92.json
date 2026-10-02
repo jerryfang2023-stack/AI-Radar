@@ -139,12 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Claypond Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "印度竞争委员会公开审查文件称，Claypond Capital 是在印度注册的私人公司，属于 Pai Family Group。SiliconANGLE 报道将其列为 Flam B 轮参与方。",
+      "coverage_note": "机构背景依据印度竞争委员会公开审查文件；Flam 融资参与信息来自 SiliconANGLE 报道。",
+      "facts": [
+        {
+          "field": "company_status",
+          "label": "主体性质",
+          "value": "在印度注册的私人公司",
+          "source_id": "cci_order"
+        },
+        {
+          "field": "group_affiliation",
+          "label": "集团关联",
+          "value": "Pai Family Group",
+          "source_id": "cci_group"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SiliconANGLE 报道称 Claypond Capital 参与 Flam B 轮融资。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Flam · B轮 · 2026-09-14 · 本轮参投 · $40M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-83ab416cf84d3f07"
@@ -152,6 +169,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "cci_order",
+          "source_url": "https://www.cci.gov.in/public/images/caseorders/en/order1749192288.pdf",
+          "source_title": "Combination Registration No. C-2025/02/1248",
+          "source_content_hash": "00e8e57b22bea205ddd71f9c13a39c3026add4dc5928ead0ae234a308c76506a",
+          "quote": "Claypond Capital incorporated in India is a private company.",
+          "quote_hash": "6ded1806fcb97df4a7b03804eed6c213c31d99096077b9aa6917aa94682f4a6e"
+        },
+        {
+          "source_id": "cci_group",
+          "source_url": "https://www.cci.gov.in/public/images/caseorders/en/order1749192288.pdf",
+          "source_title": "Combination Registration No. C-2025/02/1248",
+          "source_content_hash": "00e8e57b22bea205ddd71f9c13a39c3026add4dc5928ead0ae234a308c76506a",
+          "quote": "It belongs to the Pai Family Group (defined under Para 16 below).",
+          "quote_hash": "89b0b4226a908bb1c4e1016251f0aa24907f69de50a7e9433abba2ce5c2bcc9a"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
+          "source_title": "Flam raises $40M in funding to make AI-enabled interactive content a reality - SiliconANGLE",
+          "source_content_hash": "76714921b28c31d79c64341dc3d41de2b4868f79891db212bc0e82a44d5a573e",
+          "quote": "The round was led by QED Investors and saw the participation of Claypond Capital, Australian Gulf Capital, the SRK Family Office and angel investors Martin Chavez and Olivier Pomel, the Chief Executive Officer of Datadog Inc.",
+          "quote_hash": "14ca4fe2da7f2027b9862c40322068089e44397f684113e13442bf0a3d1c0697"
+        },
         {
           "source_id": "FISRC-83ab416cf84d3f07",
           "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
@@ -161,7 +202,7 @@
           "quote_hash": "5bbc687eb304c7f93ee48df3f9465221569a81f836df93acde2db9dad59a8219"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,10 +139,29 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "DNX Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "DNX 官网当前写明“DNX Ventures US is now DNX Technology Ventures”。本档案沿用队列名称 DNX Ventures，并保留官网现用名称说明；不据此推断具体法律实体边界。规模指标按官网当前展示记录。",
+      "summary": "DNX Ventures 是面向企业的风险投资机构。官网当前说明 DNX Ventures US 已更名为 DNX Technology Ventures；官网披露其有100多家活跃组合公司、5亿美元资产管理规模和200多项企业与初创公司合作，并关注网络安全、零售科技、气候与深科技、金融科技及企业AI。",
+      "facts": [
+        {
+          "field": "current_name_note",
+          "label": "官网当前名称说明",
+          "value": "官网页面称 DNX Ventures US is now DNX Technology Ventures。",
+          "source_id": "PFSRC-INV-a6e076695b20e7-name"
+        },
+        {
+          "field": "portfolio_scale",
+          "label": "官网披露的机构指标",
+          "value": "100多家活跃组合公司、5亿美元资产管理规模、200多项企业与初创公司合作。",
+          "source_id": "PFSRC-INV-a6e076695b20e7-scale"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "网络安全、零售科技、气候与深科技、金融科技和企业AI。",
+          "source_id": "PFSRC-INV-a6e076695b20e7-focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +169,40 @@
           "source_id": "FISRC-d542f1ad9da7e0ac"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "DNX Ventures 官方介绍页",
+          "value": "https://www.dnx.vc/usfund/about",
+          "url": "https://www.dnx.vc/usfund/about",
+          "source_id": "PFSRC-INV-a6e076695b20e7-name"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-a6e076695b20e7-name",
+          "source_url": "https://www.dnx.vc/usfund/about",
+          "source_title": "Home",
+          "source_content_hash": "7017a42d0c7b5dc72ce31172e2c94dfd0cc8145233e66a88fda1086603836a59",
+          "quote": "DNX Ventures US is now DNX Technology Ventures",
+          "quote_hash": "b5335279aef78854b9ac5fd0d18cbb651fc6d5ffd46978f66f39896fc969f617"
+        },
+        {
+          "source_id": "PFSRC-INV-a6e076695b20e7-scale",
+          "source_url": "https://www.dnx.vc/usfund/about",
+          "source_title": "Home",
+          "source_content_hash": "7017a42d0c7b5dc72ce31172e2c94dfd0cc8145233e66a88fda1086603836a59",
+          "quote": "Active portfolio companies 100+ Assets under management $500M Corporate-startup partnerships 200+",
+          "quote_hash": "62e57c95b7b353c6ddc6db9225fe2b1d9a96d055ec68f368e028080e205d6f56"
+        },
+        {
+          "source_id": "PFSRC-INV-a6e076695b20e7-focus",
+          "source_url": "https://www.dnx.vc/usfund/about",
+          "source_title": "Home",
+          "source_content_hash": "7017a42d0c7b5dc72ce31172e2c94dfd0cc8145233e66a88fda1086603836a59",
+          "quote": "We invest in B2B founders across cybersecurity, retail tech, climate & deep tech, fintech and enterprise AI.",
+          "quote_hash": "743a151453b5646261a91436caf04034c01c9ff5f02d506d1a85b1d0ed0f0c56"
+        },
         {
           "source_id": "FISRC-d542f1ad9da7e0ac",
           "source_url": "https://dukecapitalpartners.duke.edu/news/neurophos-secures-110-million-series-a-to-launch-exaflop-scale-photonic-ai-chips/",
@@ -161,7 +212,7 @@
           "quote_hash": "50c11b90182d71d1c76feba7fea4ab7c8d121a9ce5b518cdb89537ef990c68d6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

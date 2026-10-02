@@ -140,11 +140,15 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Converge Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "ZeroDrift 官方融资公告将 Converge Ventures 列入种子轮投资方。本条仅归档这项公司披露，不描述其基金策略或其他组合。",
+      "coverage_note": "只按 ZeroDrift 官方融资公告中的投资者原名记录，不映射到其他同名 Converge 实体。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "ZeroDrift 官方融资公告将 Converge Ventures 列为种子轮投资方。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：ZeroDrift · 种子轮 · 2026-06-02 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5827c25c8bbe0d20"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "activity",
+          "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/zerodrift-raises-10m-seed-round-to-build-the-compliance-firewall-for-ai.html",
+          "source_title": "ZeroDrift Raises $10M Seed Round to Build the Compliance",
+          "source_content_hash": "c1c7332e1706365088147fb1de401298715a0f9996781c4a1d7ce32ea49d7b29",
+          "quote": "Investors include a16z speedrun, Reign Ventures, PitchDrive Ventures, U&I Ventures, Active Capital, Geek Ventures, Converge Ventures, Atlas SGR, Founders Future, and others.",
+          "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
+        },
         {
           "source_id": "FISRC-5827c25c8bbe0d20",
           "source_url": "https://www.globenewswire.com/news-release/2026/06/02/3305264/0/en/zerodrift-raises-10m-seed-round-to-build-the-compliance-firewall-for-ai.html",
@@ -161,7 +173,7 @@
           "quote_hash": "22c9303e353466cccbd29cc3afb3f0d00a300b56627951c3b941581be21673de"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

@@ -123,19 +123,43 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Jacob Thornton 当前按“个人投资者”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "coverage_status": "researched",
+      "summary": "Bootstrap v5.1 官方团队页面列有 Jacob Thornton；Modem 的公司融资公告将 Jacob Thornton 列为天使支持者，并在姓名后标注 Bootstrap、Pierre Computer Co。",
+      "coverage_note": "Bootstrap 团队页面对应 v5.1 文档；不据此推断当前雇佣关系。Modem 融资公告把他列为天使支持者，并注明 Bootstrap、Pierre Computer Co 关联。",
       "facts": [],
       "milestones": [],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开资料确认其与 Bootstrap 项目相关；融资身份仅按 Modem 公告原文记录。",
       "track_record": [
+        {
+          "description": "Modem 公司融资公告将 Jacob Thornton 列为天使支持者。",
+          "source_id": "activity"
+        },
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（Bootstrap, Pierre Computer Co）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "bootstrap_team",
+          "source_url": "https://getbootstrap.com/docs/5.1/about/team/",
+          "source_title": "Team · Bootstrap v5.1",
+          "source_content_hash": "163207b5b260353e43be9426d84158aa01ad1d20182d8fc1af4c8f7c8572fbb4",
+          "quote": "Mark Otto @mdo Jacob Thornton @fat XhmikosR @xhmikosr GeoSot @geosot Rohit Sharma @rohit2sharma95 alpadev @alpadev Gaël Poupard @ffoodd Patrick H.",
+          "quote_hash": "a5e397683a840f57dbdc91150b68775fd11dc03197ed6d4794c75d224a190859"
+        },
+        {
+          "source_id": "activity",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
+          "quote": "y), Ivan Zhang (Cohere), Koen Bok and Jorn van Dijk (Framer), Lindsey Simon (Vercel), Armin Ronacher (Flask), Jacob Thornton (Bootstrap, Pierre Computer Co), John Laban and Kenneth Rose (OpsLevel), Dave Johnson (PhoneGap/Cordova), and others we&#x27;re lucky to have behind us. This funding lets us go deeper on building the product tools that the agentic coding era demands, so teams",
+          "quote_hash": "724735c75562765f263fbd8024822c92f5859ff8858cd065246ec0f47e741107"
+        },
         {
           "source_id": "FISRC-9fd6ba5210b37fed",
           "source_url": "https://modem.dev/blog/modem-raises-4-4m",
@@ -145,7 +169,7 @@
           "quote_hash": "a2230b31b1e05b9ad221d1d66f2ffae01114c40da04d2cfc987e9e65e13a9acc"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {

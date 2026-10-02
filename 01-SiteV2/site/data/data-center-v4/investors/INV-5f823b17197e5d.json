@@ -139,29 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Pico Venture Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "coverage_status": "researched",
+      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
+      "summary": "PICO Venture Partners 官网介绍其为早期创业公司提供资本、辅导与市场资源。Xpander 官方公告称 Pico Venture Partners 领投其 750 万美元种子轮。",
+      "facts": [
         {
-          "description": "融资来源记录：Xpander · 种子轮 · 2026-08-17 · 本轮领投 · $7.5 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其支持早期创业公司成长。",
+          "source_id": "pico_profile"
+        },
+        {
+          "field": "founder_support",
+          "label": "创业支持",
+          "value": "官网介绍其提供辅导、创业者资源和市场接入支持。",
+          "source_id": "pico_profile"
+        },
+        {
+          "field": "public_investment",
+          "label": "公开投资案例",
+          "value": "Xpander 官方公告称其领投 750 万美元种子轮。",
           "source_id": "FISRC-b58915641f762a44"
         }
       ],
-      "contacts": [],
+      "milestones": [],
+      "track_record": [
+        {
+          "description": "领投 Xpander 的 750 万美元种子轮；公告还列出 Emerge Ventures、Samsung Next 和 SeedIL。",
+          "source_id": "FISRC-b58915641f762a44"
+        }
+      ],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.pico.partners/approach",
+          "source_id": "pico_profile",
+          "url": "https://www.pico.partners/approach"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "pico_profile",
+          "source_url": "https://www.pico.partners/approach",
+          "source_title": "Approach &mdash; PICO Venture Partners",
+          "source_content_hash": "f6664b90d5f94f41cf87c18133306fa0d0920cca2f21cac356e9db04bb8dfa7f",
+          "quote": " strong support system. As seasoned launch-enablers , we thrive in helping early-stage startups grow into significant businesses. We work to provide mentorship across key milestones leading to launch – from fine tuning product to developing go-to-market processes to building teams. We offer founders our diverse expertise , collaborative",
+          "quote_hash": "1a389e906aef2213dffd03ae3af869c8e4804c64370555ef9bc2be6a719a10d2"
+        },
         {
           "source_id": "FISRC-b58915641f762a44",
           "source_url": "https://www.prnewswire.com/news-releases/xpander-raises-7-5m-seed-to-unleash-ai-for-enterprises-302852698.html",
-          "source_title": "Xpander 获 750 万美元种子轮融资，为企业释放 AI 潜能",
-          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
-          "quote": "Xpander today announced a $7.5 million Seed round led by Pico Venture Partners with participation from Emerge Ventures, Samsung Next, and SeedIL.",
-          "quote_hash": "a78ed035c5da0c7f827e96d9a06c29e26212e7cc0d0b2fd3f8f2ef5ed4a6ab87"
+          "source_title": "Xpander Raises $7.5M Seed to Unleash AI for Enterprises",
+          "source_content_hash": "bc1508ad9b279594ede84f387c09b3e4cd240cc28b1c50352ec3ddfe874ca8b9",
+          "quote": "17, 2026 /PRNewswire/ -- Xpander today announced a $7.5 million Seed round led by Pico Venture Partners with participation from Emerge Ventures , Samsung Next , and SeedIL . The funding will be used to accelerate Xpander's market penetration with its turnkey, vendor-neutral, all-in-one AI enablement platform. Th",
+          "quote_hash": "1c9f4982762157a49c883eaeeac8fd236cb8b577ccd070c3cbed0de64161f659"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

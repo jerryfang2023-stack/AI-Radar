@@ -140,18 +140,65 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Nimble Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
+      "summary": "Nimble Ventures 官网提供机构名称与联系邮箱；CloudNC 官方融资公告将其称为美国风险投资人，并披露其领投 2026 年 9 月宣布的 2000 万美元融资。官网公开资料有限，本档案不推断更广泛的投资策略。",
+      "facts": [
+        {
+          "field": "identity",
+          "label": "机构身份",
+          "value": "官网使用 Nimble Ventures 名称并公布联系邮箱。",
+          "source_id": "nimble"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "披露案例",
+          "value": "CloudNC 官方公告称 Nimble Ventures 领投其 2000 万美元融资。",
+          "source_id": "cloudnc"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-09-09",
+          "description": "CloudNC 宣布完成 2000 万美元融资，由 Nimble Ventures 领投。",
+          "source_id": "cloudnc"
+        }
+      ],
       "track_record": [
+        {
+          "description": "领投 CloudNC 的 2000 万美元融资；CloudNC 将 Nimble Ventures 描述为美国风险投资人。",
+          "source_id": "cloudnc"
+        },
         {
           "description": "融资来源记录：CloudNC · B轮 · 2026-09-09 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-583456b85ec1179e"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.nimble.vc/",
+          "source_id": "nimble",
+          "url": "https://www.nimble.vc/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nimble",
+          "source_url": "https://www.nimble.vc/",
+          "source_title": "Nimble Ventures",
+          "source_content_hash": "e3d4c9a6fa721c8aa194ca821f8fd71d2b6e20524b0f2dc2d39e188fc7081f0b",
+          "quote": "Nimble Ventures top of page Nimble Ventures Home About Team Portfolio Contact More... Use tab to navigate through the menu items. Nimble Ventures info@nimble.vc &copy; Nimble Ventures 2019 | All Rights Reserved Designed by Ha",
+          "quote_hash": "79e5432fd642783bf212f28a72ddf2eb97abdea90b1df272b76038caaabfaad1"
+        },
+        {
+          "source_id": "cloudnc",
+          "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
+          "source_title": "CloudNC raises $20m to expand AI tools for precision machining",
+          "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
+          "quote": "s that it has raised $20 million in new investment capital. The funding is led by Nimble Ventures, a US-based venture investor, with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund. CloudNC will use the investment to further catalyze the ",
+          "quote_hash": "c95ff22fcdd436dd52d3c7fd39dd2c748e6ac52292f5188ca941ff155b256882"
+        },
         {
           "source_id": "FISRC-583456b85ec1179e",
           "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
@@ -161,7 +208,7 @@
           "quote_hash": "341dd2bff3b4d4d01a56bd326a3c296e53dd77da66784f0c3238ffcf94dd4189"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

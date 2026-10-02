@@ -139,11 +139,54 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "南通产控思源人工智能先导基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "基金规模、方向及管理人均采用南通市政府 2026-05-15 报道口径。",
+      "summary": "南通市政府发布的签约消息记载，南通产控思源人工智能先导基金规模为 3.5 亿元，聚焦人工智能前沿赛道和新质生产力，重点布局数据、算法、智能制造、脑机接口等中早期项目；南通投管担任管理人。",
+      "facts": [
+        {
+          "field": "fund_size",
+          "label": "政府报道所列基金规模",
+          "value": "人民币 3.5 亿元",
+          "source_id": "nantong_fund"
+        },
+        {
+          "field": "investment_focus",
+          "label": "政府报道所述重点领域",
+          "value": [
+            "数据",
+            "算法",
+            "智能制造",
+            "脑机接口",
+            "AI+"
+          ],
+          "source_id": "nantong_fund"
+        },
+        {
+          "field": "investment_stage",
+          "label": "政府报道所述阶段",
+          "value": "中早期项目",
+          "source_id": "nantong_fund"
+        },
+        {
+          "field": "manager",
+          "label": "政府报道所列管理人",
+          "value": "南通投管",
+          "source_id": "nantong_fund"
+        },
+        {
+          "field": "fund_structure",
+          "label": "政府报道所述运作方式",
+          "value": "双 GP 市场化运作",
+          "source_id": "nantong_fund"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-05-15",
+          "description": "南通市政府发布基金设立签约报道。",
+          "source_id": "nantong_publish"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：索格智算 · 天使轮 · 2026-09-24 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -153,6 +196,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "nantong_fund",
+          "source_url": "https://www.nantong.gov.cn/ntsrmzf/ntxw/content/355650cb-fd19-4e6e-8554-69b9c923ce9e.html",
+          "source_title": "首支人工智能基金设立 南通产控思源人工智能先导基金签约活动举行-南通市人民政府",
+          "source_content_hash": "a229bd125750d883070a402d111bfe852361ffd9e1d7f24e1a1d0754053f28f0",
+          "quote": "南通产控思源人工智能先导基金是南通市首支人工智能主题专项基金，也是上海高校与南通国资合作的首支人工智能直投基金，基金规模3.5亿元，聚焦人工智能前沿赛道与新质生产力培育，重点布局数据、算法、智能制造、脑机接口、Al+等领域的中早期项目。基金由南通产控集团牵头设立，南通投管担任基金管理人，联合南通开控集团、菡源资产共同发起设立，采用双GP市场化运作模式，深度链接上海交大科研资源与校友生态，依托产控集团的产业资源与南通投管的专业投资能力，助力南通打造人工智能产业高地。",
+          "quote_hash": "2241caab3dbbd8db6873fa70611f820b52c57725003d0f18936b42cab9c1d4fb"
+        },
+        {
+          "source_id": "nantong_publish",
+          "source_url": "https://www.nantong.gov.cn/ntsrmzf/ntxw/content/355650cb-fd19-4e6e-8554-69b9c923ce9e.html",
+          "source_title": "首支人工智能基金设立 南通产控思源人工智能先导基金签约活动举行-南通市人民政府",
+          "source_content_hash": "a229bd125750d883070a402d111bfe852361ffd9e1d7f24e1a1d0754053f28f0",
+          "quote": "首支人工智能基金设立 南通产控思源人工智能先导基金签约活动举行-南通市人民政府 当前位置： 首页 > 新闻中心 > 南通新闻 首支人工智能基金设立 南通产控思源人工智能先导基金签约活动举行 来源：南通日报 发布时间：2026-05-15",
+          "quote_hash": "e1127fd27b8460c2fd256393147b46c216cbb6f7c914802838171abd2cf3c464"
+        },
+        {
           "source_id": "FISRC-83520370495890c1",
           "source_url": "https://elsewhere.news/zh/yunqipartners/yunqi-capital-backs-suoge-zhizhis-angel-round-to-accelerate-",
           "source_title": "云启参投「索格智算」天使轮，加速 AI 新材料产业化落地｜云启伙伴",
@@ -161,7 +220,7 @@
           "quote_hash": "5f0d0cd5b7bb119975962787a9a75decbb6aa99561bdfa941791e49e4a06fa7d"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,19 +139,73 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "云启-交大AI天使基金 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "队列标签写作“云启-交大AI天使基金”；云启资本官网及上海交通大学人工智能学院的正式页面使用“交大-云启AI天使基金”或“交大-云启”AI天使基金的名称顺序。本档案按两家主办方的官方页面归一，不扩展基金规模或投资业绩。",
+      "summary": "交大-云启AI天使基金由云启资本联合上海交通大学发起。云启官网将其定位为围绕高校与科研体系、接近技术源头的基金；上海交通大学人工智能学院官网记载该基金于2025年4月成立。",
+      "facts": [
+        {
+          "field": "founding_partners",
+          "label": "官网披露的发起方",
+          "value": [
+            "云启资本",
+            "上海交通大学"
+          ],
+          "source_id": "PFSRC-INV-b7321e021da7d2-partners"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的定位",
+          "value": "围绕高校与科研体系，接近技术源头。",
+          "source_id": "PFSRC-INV-b7321e021da7d2-approach"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-04-20",
+          "description": "上海交通大学人工智能学院大事记记载“交大-云启AI天使基金成立”。",
+          "source_id": "PFSRC-INV-b7321e021da7d2-sjtu"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：瞬原科技 · 多轮融资 · 2026-09-02 · 本轮参投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6a6128b0553b07a5"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "云启资本关于该基金的页面",
+          "value": "https://yunqi.vc/about",
+          "url": "https://yunqi.vc/about",
+          "source_id": "PFSRC-INV-b7321e021da7d2-partners"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PFSRC-INV-b7321e021da7d2-partners",
+          "source_url": "https://yunqi.vc/about",
+          "source_title": "云启资本-关于云启",
+          "source_content_hash": "f0a7d4e67a18ec800b5f87243f7c859cb327cae27827d8a685e5b4361d624706",
+          "quote": "联合上海交大发起「交大-云启AI天使基金」",
+          "quote_hash": "1efc23eb4a0eb1599a9279db0162beb0cdd62e5d4e408e777450db4fbf2d5a8b"
+        },
+        {
+          "source_id": "PFSRC-INV-b7321e021da7d2-approach",
+          "source_url": "https://yunqi.vc/about",
+          "source_title": "云启资本-关于云启",
+          "source_content_hash": "f0a7d4e67a18ec800b5f87243f7c859cb327cae27827d8a685e5b4361d624706",
+          "quote": "围绕高校与科研体系，联合上海交大发起「交大-云启AI天使基金」，持续走近技术源头。",
+          "quote_hash": "c3fc2c3d2a43d09422f71f2209bfc4daa7afe8d31b248d1e49eee0a2e8dcdeca"
+        },
+        {
+          "source_id": "PFSRC-INV-b7321e021da7d2-sjtu",
+          "source_url": "https://sai.sjtu.edu.cn/cn/show/53",
+          "source_title": "大事记 - 上海交通大学人工智能学院",
+          "source_content_hash": "b37809aca71cd945b0459e9fa9b6014d8b60aff56ab1e751418f4045cfff7e0f",
+          "quote": "2025.04.20 上海交通大学首届AI主题周启动 交大首届“AI交汇点”论坛及AI集市 “交大-云启”AI天使基金成立 人工智能校友会理事会换届会议",
+          "quote_hash": "f224e1fe484e52194682bb9bc01338b2568a8b7627a80710d62e5bb40795f7a1"
+        },
         {
           "source_id": "FISRC-6a6128b0553b07a5",
           "source_url": "https://elsewhere.news/zh/yunqipartners/yunqi-capital-co-invests-in-suiyuan-technologys-seed-round-t",
@@ -161,7 +215,7 @@
           "quote_hash": "70adbc180e835f96e6b4e2b5f3667b0228c366a90358613e0e900bc25f1f8e31"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

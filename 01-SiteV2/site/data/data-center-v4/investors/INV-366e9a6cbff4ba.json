@@ -140,19 +140,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "PSP Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "PSP Partners 官网将其定位为全球私人投资公司。Together AI 官方融资公告将 PSP Partners 列入其投资者名单。",
+      "facts": [
+        {
+          "field": "institution_type",
+          "label": "机构类型",
+          "value": "全球私人投资公司。",
+          "source_id": "psp"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "Together AI 官方公告将 PSP Partners 列入投资者名单。",
+          "source_id": "together"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Together AI 官方公告将 PSP Partners 列为投资者之一。",
+          "source_id": "together"
+        },
         {
           "description": "融资来源记录：Together AI · C轮 · 2026-07-01 · 本轮参投 · $800M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c76c0a4ea6adedb7"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.psppartners.com/",
+          "source_id": "psp",
+          "url": "https://www.psppartners.com/"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "psp",
+          "source_url": "https://www.psppartners.com/",
+          "source_title": "PSP Partners: A Global Private Investment Firm",
+          "source_content_hash": "046d5dedfc78634994fcba6f6092320d7599105cdf4033833310cda7b57c2237",
+          "quote": "PSP Partners: A Global Private Investment Firm PSP Partners, LLC About Us Overview Business Units Buyouts Venture Capital Real Estate Asset Management Our Values Our History Our Team Our Holdings Our Holdings Success Stories Penny Pritzker News & Resources News Releases Art",
+          "quote_hash": "0c342da59a6b55f0e56b87e705936cdd0104a83d1c8a8f7d77c81bd662dbddfb"
+        },
+        {
+          "source_id": "together",
+          "source_url": "https://www.together.ai/blog/announcing-our-series-c",
+          "source_title": "Announcing our $800M Series C to accelerate the shift to open-source AI",
+          "source_content_hash": "7198081df0d210e6030fd412bc25ea5dc31cbf2fceb19796a17dafcc54144d8f",
+          "quote": "s, Pegatron, Salesforce Ventures, March Capital, DTCP Growth, Lux Capital, Geodesic, PSP Partners, and others. In addition to the equity capital, we have secured commitments for over 500 MW of compute capacity to be capitalized independently by our new investors to support our expected compute growth in th",
+          "quote_hash": "899403bbd9489b9b60e27de438655cf91a425e7944e067c65214807cc9855363"
+        },
         {
           "source_id": "FISRC-c76c0a4ea6adedb7",
           "source_url": "https://www.together.ai/blog/announcing-our-series-c",
@@ -162,7 +203,7 @@
           "quote_hash": "99b67ba060973f701f51587964af955995f6615579746bc14cbe4a1cdccc04b8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

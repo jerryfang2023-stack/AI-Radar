@@ -139,10 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "OCBC’s Lion X Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Lion X Ventures 官网自述为推动东南亚数字创新的风险投资基金，并介绍了与 OCBC 的合作关系及覆盖从种子阶段到退出的创始人支持路径。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "官网列示投资地域",
+          "value": "东南亚",
+          "source_id": "lionx_home"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述方向",
+          "value": "推动东南亚数字创新",
+          "source_id": "lionx_home"
+        },
+        {
+          "field": "partnership",
+          "label": "官网描述的合作",
+          "value": "与 OCBC 合作支持创业者在东南亚拓展",
+          "source_id": "lionx_partnership"
+        },
+        {
+          "field": "support_scope",
+          "label": "官网列示支持阶段",
+          "value": "Seed 至退出",
+          "source_id": "lionx_scope"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +174,40 @@
           "source_id": "FISRC-002776ecfe7ba6a0"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Lion X Ventures 官网",
+          "url": "https://www.lionxventures.com/",
+          "source_id": "lionx_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "lionx_home",
+          "source_url": "https://www.lionxventures.com/",
+          "source_title": "Lion X Ventures",
+          "source_content_hash": "7838835a526ed0d95ceb2034cf9a5744751789a19a35573f93d7f8d49d241223",
+          "quote": "a mission to accelerate digital innovation across Southeast Asia.",
+          "quote_hash": "f92ed6734b6a82b1b92ca79131bbc08f3f6a4864661926a812af810139380b12"
+        },
+        {
+          "source_id": "lionx_partnership",
+          "source_url": "https://www.lionxventures.com/",
+          "source_title": "Lion X Ventures",
+          "source_content_hash": "7838835a526ed0d95ceb2034cf9a5744751789a19a35573f93d7f8d49d241223",
+          "quote": "Our Partnership with OCBC — Together with one of the region’s leading financial institutions, we help founders go \"Go‑to‑SEA\": opening doors to local expertise, enterprise customers, and capital pathways from seed to exit.",
+          "quote_hash": "a4e046fac1d1dc9dcd699807fb67952b445fd882c7cc870776790a1011b08dbb"
+        },
+        {
+          "source_id": "lionx_scope",
+          "source_url": "https://www.lionxventures.com/",
+          "source_title": "Lion X Ventures",
+          "source_content_hash": "7838835a526ed0d95ceb2034cf9a5744751789a19a35573f93d7f8d49d241223",
+          "quote": "capital pathways from seed to exit.",
+          "quote_hash": "1fd67062f2c39f6f1d52a25f0165fb3f073d7c7400e4889440c542635102e83f"
+        },
         {
           "source_id": "FISRC-002776ecfe7ba6a0",
           "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
@@ -161,7 +217,8 @@
           "quote_hash": "88be52ba8d6f8efe38d3bfd11ccc2c58fde3798407f249b4c425bc04fcbc9245"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

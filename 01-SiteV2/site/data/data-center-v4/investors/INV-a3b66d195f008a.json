@@ -124,10 +124,31 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Angular Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Angular Ventures 官网称其为 inception-stage 基金，偏好在首轮机构融资时投资，首笔支票通常为 50 万至 500 万美元，重点关注源自欧洲或以色列且计划以美国为市场的公司与创始人。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网列示阶段",
+          "value": "inception stage; first institutional round",
+          "source_id": "angular_approach"
+        },
+        {
+          "field": "initial_check",
+          "label": "官网列示首笔投资范围",
+          "value": "US$500,000–US$5 million",
+          "source_id": "angular_approach"
+        },
+        {
+          "field": "geography",
+          "label": "官网列示创始团队来源及市场",
+          "value": [
+            "Europe or Israel",
+            "planned US go-to-market"
+          ],
+          "source_id": "angular_approach"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,8 +156,24 @@
           "source_id": "FISRC-0d891f327f6f719c"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "Angular Ventures",
+          "url": "https://angularventures.com/how-we-invest",
+          "source_id": "angular_approach"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "angular_approach",
+          "source_url": "https://angularventures.com/how-we-invest",
+          "source_title": "How we invest | Angular Ventures",
+          "source_content_hash": "bc22b8ea2903e7e0e294f71f45638a915ed622a0b49f1c2e321700f433fd9e95",
+          "quote": "Angular is an inception-stage fund. We prefer to invest in the first institutional round. We are often the first investor a company has. Our first check is usually between $500K and $5M. We are set up to follow on throughout the life of a company. We are focused on companies/founders that originate from Europe or Israel, but with a planned US GTM focus.",
+          "quote_hash": "bc22b8ea2903e7e0e294f71f45638a915ed622a0b49f1c2e321700f433fd9e95"
+        },
         {
           "source_id": "FISRC-0d891f327f6f719c",
           "source_url": "https://www.reco.ai/blog/reco-raises-30m-b-round-for-a-total-of-85m-to-meet-rapidly-growing-demand-for-saas-ai-security-among-enterprises",
@@ -146,7 +183,8 @@
           "quote_hash": "ca211a78c722ca8c38527d41f26cb67e145dae43400db66839b441183ceae001"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

@@ -139,19 +139,60 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Cadence Design Systems, Inc. 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "本档案依据机构官网、政府页面或被投公司融资公告；列举案例仅代表可追溯公开披露，不代表完整组合或投资业绩。",
+      "summary": "Cadence Design Systems, Inc. 的 SEC 年报描述其为半导体电子设计、分析与验证软件及解决方案提供商。Kandou AI 官方公告称，Cadence 参与了其战略融资。",
+      "facts": [
+        {
+          "field": "business",
+          "label": "主营业务",
+          "value": "提供面向半导体的电子设计、分析与验证软件及解决方案。",
+          "source_id": "cadence10k"
+        },
+        {
+          "field": "track_record_scope",
+          "label": "公开投资案例",
+          "value": "Kandou AI 官方公告将 Cadence Design Systems 列为战略参与方。",
+          "source_id": "kandou"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "战略参与 Kandou AI 的一轮融资；公司公告同时列出 SoftBank Group、Synopsys 与 Alchip。",
+          "source_id": "kandou"
+        },
         {
           "description": "融资来源记录：Kandou AI · 战略融资 · 2026-03-23 · 本轮参投 · $225m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-733f644691b6d881"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm",
+          "source_id": "cadence10k",
+          "url": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "cadence10k",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/813672/000081367226000016/cdns-20251231.htm",
+          "source_title": "cdns-20251231",
+          "source_content_hash": "5182542eb72dd001cc0fd8a33400e38f6afebea03881cce4efe8a595ed4ab7e6",
+          "quote": ". Design Excellence: This pillar leverages our core expertise in AI-driven computational software and accelerated computing to deliver industry-leading electronic design, analysis, and verification products and solutions for semiconductors, which are embedded in many products and services that we use every",
+          "quote_hash": "c4acf2cb21ad67edc656351430db606c3dc0d67098ccf3e4031aba7e0bab9225"
+        },
+        {
+          "source_id": "kandou",
+          "source_url": "https://kandou.com/news/2026-03-23-kandou-ai-secures-strategic-funding-to-redefine-ai-connectivity-and-break-memory-bottlenecks-in-ai/",
+          "source_title": "Kandou AI Secures Strategic Funding to Redefine AI Connectivity and Break Memory Bottlenecks in AI - Kandou AI",
+          "source_content_hash": "d779fe30d4bdb618b47d27727bf60ecabdac507c76e308ada7229758dc182f90",
+          "quote": "on with strategic participation from SoftBank Group Corp., Synopsys, Inc., Cadence Design Systems, Inc. and Alchip Technologies Limited, signaling strong market conviction in Kandou AI’s mission to solve the critical data movement challenges in AI infrastructure. Several existing investors also participated in the financing round. As artificia",
+          "quote_hash": "b5e680531bd38471e31245c9f531d92845364c9acab87199f1c9823b9f81b9c0"
+        },
         {
           "source_id": "FISRC-733f644691b6d881",
           "source_url": "https://kandou.com/news/2026-03-23-kandou-ai-secures-strategic-funding-to-redefine-ai-connectivity-and-break-memory-bottlenecks-in-ai/",
@@ -161,7 +202,7 @@
           "quote_hash": "cb526767b8b5f53676b6657a8bd43907b4163199623161491bcc086528f725f6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,10 +139,38 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "NATO Innovation Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "NATO 官方资料称 NATO Innovation Fund 是由 24 个北约盟国支持的独立 10 亿欧元风险投资基金，投资深科技和双重用途技术公司，以支持联盟防务、安全与韧性。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "NATO 资料所述基金类型",
+          "value": "独立风险投资基金",
+          "source_id": "nato_nif"
+        },
+        {
+          "field": "commitment",
+          "label": "NATO 资料所列规模",
+          "value": "EUR 1 billion",
+          "source_id": "nato_nif"
+        },
+        {
+          "field": "backers",
+          "label": "NATO 资料所列支持方",
+          "value": "24 个 NATO Allies",
+          "source_id": "nato_nif"
+        },
+        {
+          "field": "investment_focus",
+          "label": "NATO 资料所述方向",
+          "value": [
+            "深科技",
+            "双重用途技术",
+            "防务、安全与韧性"
+          ],
+          "source_id": "nato_focus"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +181,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "nato_nif",
+          "source_url": "https://www.nato.int/en/work-with-us/business-and-project-opportunities/innovation-support-mechanisms",
+          "source_title": "Innovation Support Mechanisms",
+          "source_content_hash": "76bfde560d5596f5021c21cc5f460951bf66eb9f7e069815bbff8aa301b5c12b",
+          "quote": "The NATO Innovation Fund is an independent EUR 1 Billion venture capital fund backed by 24 NATO Allies.",
+          "quote_hash": "06acd440138ce599aff6a6d0f5c02ad29823a1b3c552adf260ec4578a9f7d20f"
+        },
+        {
+          "source_id": "nato_focus",
+          "source_url": "https://www.nato.int/en/work-with-us/business-and-project-opportunities/innovation-support-mechanisms",
+          "source_title": "Innovation Support Mechanisms",
+          "source_content_hash": "76bfde560d5596f5021c21cc5f460951bf66eb9f7e069815bbff8aa301b5c12b",
+          "quote": "The fund invests in deep-tech and dual-use companies developing advanced technologies that can strengthen defence, security, and resilience across the Alliance.",
+          "quote_hash": "b582137c2221232a0ebb87e0d209b47741734f5b5f975681c9f3b16a69acbf8c"
+        },
+        {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
           "source_title": "更正 -- Basecamp Research",
@@ -161,7 +205,8 @@
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

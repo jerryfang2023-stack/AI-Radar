@@ -123,19 +123,51 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "u.ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "u.ventures 官网以“投资早期科技初创公司”介绍自身，首页展示 NewHomesMate、Preply、Forward Group 等公司。",
+      "facts": [
+        {
+          "field": "stages",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "u_home"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资主题",
+          "value": "科技初创公司",
+          "source_id": "u_home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网首页 Companies 展示列出 Preply，并将其描述为全球教育科技平台；这是页面展示的案例，不代表完整组合。",
+          "source_id": "u_home"
+        },
         {
           "description": "融资来源记录：Osavul · 历史轮次未披露 · 种子轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6b10616666cf4c79"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "u.ventures官网",
+          "url": "https://u.ventures/",
+          "source_id": "u_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "u_home",
+          "source_url": "https://u.ventures/",
+          "source_title": "u.ventures | We invest in early stage technology startups",
+          "source_content_hash": "2ff99f0fabc9d7acc4637f2feac72a7f76c2e434d22fdf95b68bc59839771668",
+          "quote": "u.ventures | We invest in early stage technology startups About Us Companies Team Jobs Contact Us LN FB IG NewHomesMate A marketplace to find, compare, and buy new construction homes Preply Global edtech platform Forward Group Automating logistics workflows with AI Phases AI AI for clinical trial operations Daring ideas, transforming live",
+          "quote_hash": "885bb78d514fab514157e0df66599bd294535d9bcbb6cfa8ef99118277e74240"
+        },
         {
           "source_id": "FISRC-6b10616666cf4c79",
           "source_url": "https://www.osavul.cloud/blog/osavul-raises-the-next-round",
@@ -145,7 +177,8 @@
           "quote_hash": "ddcda1dfa43bd6507551b69d74d929fa36daefb1238aabc289eedc0be6ce0367"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
