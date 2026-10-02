@@ -5,8 +5,8 @@ export function deepSeekModels(env = process.env) {
     flash: env.DEEPSEEK_FLASH_MODEL
       || env.DEEPSEEK_TITLE_TRANSLATION_MODEL
       || env.DEEPSEEK_MODEL
-      || "deepseek-v4-flash",
-    pro: env.DEEPSEEK_PRO_MODEL || "deepseek-v4-pro",
+      || "deepseek-flash",
+    pro: env.DEEPSEEK_PRO_MODEL || "deepseek-flash",
   };
 }
 

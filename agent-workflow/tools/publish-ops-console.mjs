@@ -5,11 +5,13 @@ import os from "node:os";
 import path from "node:path";
 import crypto from "node:crypto";
 import { spawnSync } from "node:child_process";
+import { localVpsTransport } from './lib/local-vps-transport.mjs';
 
 const root = process.cwd();
 const dryRun = process.argv.includes("--dry-run=true");
 function run(command, args, options = {}) {
-  const result = spawnSync(command, args, { cwd: root, encoding: "utf8", windowsHide: true, ...options });
+  const spawnOptions = { cwd: root, encoding: "utf8", windowsHide: true, ...options };
+  const result = localVpsTransport(command, args, spawnOptions, spawnSync) || spawnSync(command, args, spawnOptions);
   if (result.status !== 0 || result.error) throw new Error(`${command} failed: ${result.stderr || result.error?.message}`);
   return result.stdout;
 }
