@@ -15,7 +15,14 @@ const date='2026-10-01';
 test('all AI sectors allowed, robotics core business excluded, consumer companions preserved',()=>{
   for(const title of ['AI chip company raises Series A','AI drug discovery raises funding','AI enterprise software raises funding','AI toy startup raises $5M','AI companion robot startup raises $5M']) assert.equal(financingScope({title}).included,true,title);
   for(const title of ['Embodied AI startup raises $10M','Humanoid robot maker raises $1B','Robotics company raises $50M','具身智能企业完成融资','机器人核心部件企业获投']) assert.equal(financingScope({title}).included,false,title);
+  assert.equal(financingScope({title:'Humanoid robot maker raises $1B'}).pending,true);
   assert.equal(financingScope({title:'AI cloud company raises $10M',body:'Its customers include humanoid robot companies.'}).included,true);
+  assert.equal(financingScope({
+    title:'AI platform serving robotics startup customers raises funding',
+    body:'The company sells general AI workflow software to many industries. Robotics startups are among its customers.',
+  }).included,true);
+  assert.equal(financingScope({title:'AI工作流平台服务机器人企业客户获融资',body:'该平台面向多行业企业提供通用AI软件。'}).included,true);
+  assert.equal(financingScope({title:'Humanoid robot maker serving AI customers raises funding'}).included,false);
   assert.equal(financingScope({title:'Acme raises $10M',body:'Acme is a leading humanoid robot manufacturer using AI.'}).included,false);
 });
 const temporary=t=>{const dir=fs.mkdtempSync(path.join(os.tmpdir(),'financing-test-'));t.after(()=>fs.rmSync(dir,{recursive:true,force:true}));return dir;};
@@ -38,16 +45,19 @@ test('URL dedupe merges coverage; product launch and FDE deployment cannot enter
   const leads=uniqueLeads([{url:'https://example.com/a?utm_source=x',title:'AI startup raises $10M',coverage:['overseas:general:0']},{url:'https://example.com/a',title:'AI startup raises $10M',coverage:['overseas:glasses']},{url:'https://example.com/b',title:'New AI glasses launch'},{url:'https://example.com/c',title:'FDE enterprise deployment customer case'}]);
   assert.equal(leads.length,1);assert.equal(leads[0].coverage.length,2);assert.equal(leads[0].evidence_role,'discovery_only');
 });
-const html=({date='2026-09-30',body='An AI company raises $20 million in Series A financing. '.repeat(12)}={})=>`<html><head><meta property="article:published_time" content="${date}"><meta property="og:title" content="AI startup raises Series A"></head><article>${body}</article></html>`;
+const html=({date='2026-09-30',title='AI startup raises Series A',body='An AI company raises $20 million in Series A financing. '.repeat(12)}={})=>`<html><head><meta property="article:published_time" content="${date}"><meta property="og:title" content="${title}"></head><article>${body}</article></html>`;
 test('original body and original date required; search date and descriptions cannot replace them',async()=>{
   const lead={url:'https://example.com/round',published_at:'2026-09-30',summary:'AI financing snippet'};
   const response=source=>async()=>new Response(source,{headers:{'content-type':'text/html; charset=utf-8'}});
   const good=await captureOriginal(lead,{date,fetcher:response(html())});assert.equal(good.status,'accepted');assert.equal(good.record.published_at,'2026-09-30');
   assert.equal(good.record.source_role,'original_source');
+  assert.equal(good.record.extraction_quality,'medium');
   const quoted=await captureOriginal(lead,{date,fetcher:async()=>new Response(html(),{headers:{'content-type':'text/html; charset="utf-8"'}})});
   assert.equal(quoted.status,'accepted');
   const missing=await captureOriginal(lead,{date,fetcher:response(html({date:''}))});assert.equal(missing.status,'pending');assert.equal(missing.reason,'original_date_missing');
   const stale=await captureOriginal(lead,{date,fetcher:response(html({date:'2025-01-01'}))});assert.equal(stale.status,'excluded');
+  const robotics=await captureOriginal(lead,{date,fetcher:response(html({title:'Humanoid robot maker raises AI funding',body:'The humanoid robot maker raises funding for its AI system. '.repeat(12)}))});
+  assert.equal(robotics.status,'pending');assert.match(robotics.reason,/robotics_core_business_review/u);
   const parsed=parseOriginal('<script type="application/ld+json">'+JSON.stringify({'@type':'NewsArticle',description:'AI raises funding '.repeat(30)})+'</script>');assert.equal(parsed.body,'');
 });
 test('accepted collection stores body privately and downstream retry does not recollect',async t=>{
@@ -77,6 +87,25 @@ test('failed stages resume without replaying successful prerequisites and lock p
   await runStages({date,file,stages,codeVersion:'v1',execute:async stage=>seen.push(stage.id)});
   assert.deepEqual(seen,['research','publish']);
   const release=acquireLock(dir);assert.throws(()=>acquireLock(dir),/already_active/u);release();
+});
+test('reviewed claim revisions replay facts and dependent stages without recollecting originals',async t=>{
+  const dir=temporary(t),file=path.join(dir,'stages.json'),seen=[];
+  let claims='initial';
+  const stages=[
+    {id:'facts',commands:['facts'],inputVersion:()=>claims,valid:()=>true},
+    {id:'research',commands:['research'],valid:()=>true},
+  ];
+  const execute=async stage=>{
+    seen.push(stage.id);
+    if(stage.id==='facts' && claims==='initial') claims='accepted';
+  };
+  await runStages({date,file,stages,codeVersion:'same-intake',execute});
+  seen.length=0;
+  await runStages({date,file,stages,codeVersion:'same-intake',execute});
+  assert.deepEqual(seen,[]);
+  claims='manually-corrected';
+  await runStages({date,file,stages,codeVersion:'same-intake',execute});
+  assert.deepEqual(seen,['facts','research']);
 });
 test('new execution graph has no comprehensive-monitor, quota, opinion or historical refill dependencies',()=>{
   const commands=productionPlan(date,'runtime').flatMap(stage=>stage.commands).flat().join('\n');

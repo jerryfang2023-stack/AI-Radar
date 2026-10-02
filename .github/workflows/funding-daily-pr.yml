@@ -136,5 +136,5 @@ jobs:
           else
             gh pr edit "$pr" --body-file "$body"
           fi
-          merge_head="$(node agent-workflow/tools/wait-for-production-code-checks.mjs --pr="$pr")"
-          gh pr merge "$pr" --merge --match-head-commit "$merge_head"
+          review_head="$(node agent-workflow/tools/wait-for-production-code-checks.mjs --pr="$pr")"
+          printf 'review_required: Codex must review %s at %s before merging.\n' "$pr" "$review_head" >> "$GITHUB_STEP_SUMMARY"

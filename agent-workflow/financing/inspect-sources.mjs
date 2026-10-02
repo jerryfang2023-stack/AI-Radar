@@ -3,7 +3,8 @@ import path from 'node:path';
 import {collectSubscriptions,sourceRegistry} from './subscriptions.mjs';
 import {syncAIHotSelected} from './aihot-selected.mjs';
 import {write} from './state.mjs';
-const args=new Map(process.argv.slice(2).map(a=>{const [k,...v]=a.replace(/^--/u,'').split('=');return[k,v.join('=')];}));
+import {parseArgs} from './args.mjs';
+const args=parseArgs();
 if(args.get('live')!=='true') {
   console.log(JSON.stringify({sources:sourceRegistry.sources,live:false},null,2));
 } else {

@@ -10,6 +10,7 @@ on:
 permissions:
   contents: read
   actions: write
+  pull-requests: read
 concurrency:
   group: financing-health-dispatch
   cancel-in-progress: false

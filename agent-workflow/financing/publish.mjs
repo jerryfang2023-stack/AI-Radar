@@ -5,9 +5,10 @@ import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { acquireLock, read, write, runStages } from './state.mjs';
 import { queryPlan } from './discovery.mjs';
+import { parseArgs } from './args.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
-const args = new Map(process.argv.slice(2).map(arg => { const [key,...value] = arg.replace(/^--/u,'').split('='); return [key,value.join('=')]; }));
+const args = parseArgs();
 const date = args.get('date') || new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 queryPlan(date);
 const run = (command, argv, cwd = root, timeout = 600000) => {
