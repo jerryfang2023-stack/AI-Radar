@@ -1,0 +1,200 @@
+{
+  "meta": {
+    "productVersion": "SITE-V4.2.0-entity-history",
+    "dataVersion": "SITE-V4.0-data-center",
+    "entityVersion": "ENTITY-V1.0",
+    "relationshipVersion": "RELATION-V2.1",
+    "taxonomyVersion": "TAG-V4.1",
+    "generatedAt": "2026-10-01T09:28:08.667Z",
+    "latestDataDate": "2026-10-02",
+    "currentDate": "2026-10-02",
+    "eventCount": 3768,
+    "quarantinedEventCount": 39,
+    "quarantinedEventIds": [
+      "EV-45f54bd33d01611b",
+      "EV-f389faf9d7a68a79",
+      "EV-9fd8d784459150e5",
+      "EV-6b668e4655192209",
+      "EV-4d66ddb791eca9a8",
+      "EV-bf8698a2e28fea12",
+      "EV-39b075c62ba4e927",
+      "EV-1fc7578ab4f32166",
+      "EV-53acea531ac371d6",
+      "EV-bd5fd963c3c71c29",
+      "EV-7b7f0cdf219434f6",
+      "EV-f9fe9f781c6ce583",
+      "EV-46eb66e72cc39e0e",
+      "EV-9f5a884337bf9275",
+      "EV-d96bce218c87d1b1",
+      "EV-09e321bf0eea87c2",
+      "EV-ca0c54e3f9776fa5",
+      "EV-e78ef81d4971565e",
+      "EV-31abbd556dd87fc9",
+      "EV-88a9fd0b8f602e16",
+      "EV-cab18aa68c8ae551",
+      "EV-844b61a6f671856b",
+      "EV-90a174964b9d1daf",
+      "EV-4b4943ce006aeb80",
+      "EV-ec55003461ff34b0",
+      "EV-0139c3fbe3e5a173",
+      "EV-ea0938a6f851008a",
+      "EV-a9c57b461ee10f8d",
+      "EV-eaec68a02bfa3db0",
+      "EV-6f27351f130e94bb",
+      "EV-29a7c7e2c55ac1ae",
+      "EV-9ae1c0b3be82f3a1",
+      "EV-f53d633bc72a1f88",
+      "EV-364af46ff86340dc",
+      "EV-4c39968436362c64",
+      "EV-c2f846268d747938",
+      "EV-9356dd1be92ef5c6",
+      "EV-4276fefac124f09c",
+      "EV-366c3fce7982b83b"
+    ]
+  },
+  "entity": {
+    "id": "EN-997a5e6e513f2a90",
+    "name": "最近",
+    "entityType": "organization_candidate",
+    "typeLabel": "公司与机构",
+    "aliases": [],
+    "verificationStatus": "candidate",
+    "datasetScopes": [
+      "canonical"
+    ],
+    "eventIds": [
+      "EV-e11382111a5b99f6"
+    ],
+    "viewpointIds": [],
+    "classificationRefs": [],
+    "relatedEntityIds": [],
+    "firstSeen": "2026-08-26",
+    "lastSeen": "2026-10-02",
+    "relationIds": [],
+    "groupedEventIds": {
+      "fundingAcquisition": [
+        "EV-e11382111a5b99f6"
+      ],
+      "deployments": [],
+      "partnerships": [],
+      "productsServices": [],
+      "hardware": [],
+      "organizationPeople": [],
+      "other": []
+    },
+    "timeline": [
+      {
+        "id": "EV-e11382111a5b99f6",
+        "dataDate": "2026-10-02",
+        "date": "2026-08-26",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "湖北省经济和信息化厅",
+        "displayTags": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-122ae8e9e5fb4660"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-122ae8e9e5fb4660"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "entityIds": [
+          "EN-122ae8e9e5fb4660",
+          "EN-a9fe35f3cbba10f5",
+          "EN-997a5e6e513f2a90",
+          "EN-b81c8201acfc7639"
+        ]
+      }
+    ],
+    "viewpoints": []
+  },
+  "relatedEntities": [],
+  "relationships": [],
+  "taxonomyNodes": [],
+  "fde": [],
+  "hardware": [],
+  "hardwareCatalog": [
+    {
+      "id": "HWC-72d57ff2cc6c653a",
+      "snapshotKey": "72d57ff2cc6c653a",
+      "snapshotId": "HWS-4a17c9944db8862a",
+      "eventId": "EV-e11382111a5b99f6",
+      "eventIds": [
+        "EV-e11382111a5b99f6"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "湖北星辰技术",
+      "subject": "湖北星辰技术",
+      "productNames": [],
+      "hardwareType": "semiconductor",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "50",
+          "unit": "亿",
+          "fact_ref": "HWF-78b3ebdd0bf71925"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-78b3ebdd0bf71925",
+          "fact_type": "specification",
+          "observed_at": "2026-08-26",
+          "subject_entity_id": "EN-122ae8e9e5fb4660",
+          "subject_name": "湖北星辰技术",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "semiconductor",
+          "metric_value": "50",
+          "unit": "亿",
+          "source_quote": "8月25日，湖北星辰技术有限公司（以下简称星辰技术）成立5周年。几天前，在光谷同济医院的病房里，刚刚开完一个电话会议的公司总经理王逸群，一边打着点滴，一边接受记者采访，复盘公司最近完成的近50亿元A轮融资。\n紧迫感与行动力，构成了这家企业最真实的两面。2021年2月，湖北江城实验室挂牌；6个月后，星辰技术诞生。实验室负责科研攻关，公司负责将成果推向市场，利润再反哺研发。这种“实验室+公司”的孵化模式在湖北属于首例，在全国亦鲜有先例。\n5年时间，这家从实验室走出的企业宛如一匹“黑马”，不仅刷新了国内先进封装领域的融资纪录，更规划出月产10万片、剑指百亿营收的发展蓝图。如今，它正以先进封装技术为支点，试图为中国芯片产业蹚出一条换道超车的新路。\n星辰技术建设的先进封装综合实验平台\n资本竞相“抢筹”\n“融资近50亿元，新加入的股东投了45亿元。”采访一开始，王逸群就纠正了外界流传的数字。\n据星辰技术最新的工商信息，这份投资方名单星光熠熠：高瓴创投、红杉中国、君联资本、中金资本、招银投资、深创投……\n“开始是我们主动找机构，后来信息传开，大资金都自己找上门。”王逸群说。\n资本热情背后，有两条清晰的逻辑线。明线是赛道和前景。随着芯片制程逼近物理极限，先进封装成为“后摩尔时代”破局的关键，星辰技术主攻的3D先进封装，正是这条赛道里技术壁垒最高、想象空间最大的细分领域。\n暗线是团队加技术。董事长杨道虹现任湖北江城实验室主任，曾任多家大型半导体企业核心高管，擅长战略操盘。总经理王逸群是清华大学集成电路专业博士，亲历国家存储器基地从无到有的突破，主抓经营与技术落地。核心成员多出自半导体大厂，历经5年自主研发，现已掌握国内最领先技术。\n“我们不是临时拼凑的团队，是在大项目里一起打过胜仗的。”王逸群说。正是这种默契，让他们在9个月内打通了第一条产线，并在6个月内完成第一款产品的量产。\n更打动投资人的，是团队的“决心”。A轮融资前，团队自掏腰包投入超过6亿元，大部分都抵押了房子。“大家真金白银投进去了。”这种“All in”的姿态，成了最硬核的背书。\n用先进封装破解算力焦虑\n什么是先进封装？王逸群打了个比方：传统芯片制程就像在平地上盖房，地皮越缩越小，盖房愈发困难；而先进封装则是直接往上“盖楼”，通过垂直互连，将逻辑芯片、存储芯片等不同功能的小“房间”紧密“叠”在一起。\n今年5月，华为发表韬（τ）定律，这是中国企业首次在芯片领域提出全球产业发展新原则，其最底层的制造技术正是先进封装。\n在AI大模型爆发的当下，这项技术已成为破解算力瓶颈的关键。“国内算力不能过度依赖海外芯片。”王逸群说。通过先进封装，星辰技术将存储芯片、逻辑芯片等集成在一起，形成更紧密的互联结构，将推理带宽比传统结构提升1到2个数量级。\n正如任正非所言“用数学补物理、非摩尔补摩尔”，王逸群认为，当单点制程受阻，就用系统集成换取整体性能。“这本质上是靠先进封装弥补制程差距，实现国产芯片的换道超车。”\n一个多月前，总部位于上海的东方算芯发布全球首颗采用三维近存计算技术的AI芯片DF1000，正是由星辰技术完成量产验证，一举破解了算力系统长期面临的“存储墙”“带宽墙”“功耗墙”等瓶颈。\n王逸群说，国外巨头拥有先进制程，对堆叠需求并不迫切；而国内AI算力饥渴，倒逼产业链另寻出路。“在多堆叠高通量三维互联技术上，我们走在国际最前面。”\n先进封装综合实验平台上，星辰技术工程师正在分析实验数据\n成为产业链关键枢纽\n采访当日，星辰技术二期中试线正加紧搬入核心工艺设备，预计9月全线通线。目前一期、二期合计投资超70亿元，月产能规划2万片，已建成国内规模最大、技术领先的高密度集成封装中试和小批量量产平台。同样位于光谷的九龙湖产业化基地也在加快建设，预计明年下半年投产。\n从轻资产摸索到重资产布局，星辰技术的定位始终清晰：专注先进封装服务。王逸群表示，独立的第三方定位，使其成为产业链的关键枢纽。",
+          "event_refs": [
+            "EV-e11382111a5b99f6"
+          ],
+          "claim_ref": "CL-a6c1e1aa6a6784b9",
+          "source_refs": [
+            "SA-2693334d94484c95"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [],
+      "sourceUrl": "http://jxt.hubei.gov.cn/bmdt/rdjj/202608/t20260826_6001551.shtml",
+      "entityIds": [
+        "EN-122ae8e9e5fb4660",
+        "EN-a9fe35f3cbba10f5",
+        "EN-997a5e6e513f2a90",
+        "EN-b81c8201acfc7639"
+      ]
+    }
+  ]
+}

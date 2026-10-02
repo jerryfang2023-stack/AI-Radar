@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,31 +61,77 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 4,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-03-12",
-    "latest_disclosed_at": "2026-03-12",
+    "latest_disclosed_at": "2026-05-28",
     "role_counts": {
       "historical_or_ambiguous": 4,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "seed"
+      "seed",
+      "series_h"
     ],
     "portfolio_companies": [
       {
         "entity_id": "EN-a83a3af1a4866fd5",
         "canonical_entity_id": "",
         "name": "Advanced Machine Intelligence Labs (AMI Labs)"
+      },
+      {
+        "entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "name": "Anthropic"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-7021d856e00b48a1",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Joining them are strategic infrastructure partners—Micron, Samsung, and SK hynix—whose technologies play a critical role in the world's supply of memory, storage, and logic chips.",
+            "quote_hash": "d234fc755255a6c0cf9808e2602c1842e9441b13f179294561bed037bdb0bc15"
+          }
+        ]
+      },
       {
         "activity_id": "IA-d29d060d92910971",
         "funding_insight_id": "FI-9c3c02658ff94312",
@@ -258,6 +304,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Joining them are strategic infrastructure partners—Micron, Samsung, and SK hynix—whose technologies play a critical role in the world's supply of memory, storage, and logic chips.",
+        "quote_hash": "d234fc755255a6c0cf9808e2602c1842e9441b13f179294561bed037bdb0bc15"
+      },
+      {
         "source_id": "FISRC-6c35525e379488bf",
         "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
         "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
@@ -342,16 +396,16 @@
           "source_id": "samsung_next_fund"
         },
         {
+          "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-b5e22ae086a6b353"
+        },
+        {
           "description": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6c35525e379488bf"
         },
         {
           "description": "融资来源记录：Groq · 历史轮次未披露 · 历史轮次投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-28e142eb564f6762"
-        },
-        {
-          "description": "融资来源记录：Groq · 轮次未披露 · 既有投资方。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-85e8550490e53490"
         }
       ],
       "contacts": [
@@ -395,6 +449,14 @@
           "quote_hash": "363140c23f9ab1c80666d7d454d8b918e53e223cfdceda53efad231608efb4d2"
         },
         {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "source_url": "https://www.anthropic.com/news/series-h",
+          "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+          "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+          "quote": "Joining them are strategic infrastructure partners—Micron, Samsung, and SK hynix—whose technologies play a critical role in the world's supply of memory, storage, and logic chips.",
+          "quote_hash": "d234fc755255a6c0cf9808e2602c1842e9441b13f179294561bed037bdb0bc15"
+        },
+        {
           "source_id": "FISRC-6c35525e379488bf",
           "source_url": "https://futurumgroup.com/insights/yann-lecuns-ami-raises-1bn-seed-round-is-the-world-model-era-finally-here",
           "source_title": "AMI Labs 获 1BN 美元种子轮融资，用于构建世界模型",
@@ -409,14 +471,6 @@
           "source_content_hash": "b6f5ca4d5c31cfb3",
           "quote": "Existing backers such as Cisco, Samsung, Altimeter, D1, 1789 Capital, and Infinitum also participated in this round.",
           "quote_hash": "3b8b0f2d6fdc4e05211295d3d973d1a094f085c2aa05c4ff742f5d14a4850982"
-        },
-        {
-          "source_id": "FISRC-85e8550490e53490",
-          "source_url": "https://test-news.aibase.com/news/21366",
-          "source_title": "Groq Raises $750 Million in Funding, Valuation Reaches $6.9 Billion",
-          "source_content_hash": "6efab5b69f3f9aa3",
-          "quote": "In addition, companies such as Samsung, Cisco, D1, Altimeter, 1789Capital, and Infinitum have continued to support Groq.",
-          "quote_hash": "e9d6c950ecfcf10df612acb50b9000d5111cfce790af32af95a51c83ef1ee077"
         }
       ],
       "last_verified_at": "2026-09-26",
@@ -434,7 +488,7 @@
           "translated_at": "2026-09-28T00:55:07.446Z",
           "status": "translated"
         },
-        "public_profile.track_record[1].description": {
+        "public_profile.track_record[2].description": {
           "text": "融资来源记录：Advanced Machine Intelligence Labs (AMI Labs) · 种子轮 · 2026-03-12 · 本轮参投 · 10.3亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_hash": "3305eafdecad1b5c098dece38ee38e11a0de8f06f76e31c0957702ad385a17e2",
           "provider": "deepseek",

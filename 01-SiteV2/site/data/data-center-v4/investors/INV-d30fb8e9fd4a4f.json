@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -62,7 +62,7 @@
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 3,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 2,
     "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-02-12",
     "latest_disclosed_at": "2026-08-13",
     "role_counts": {
-      "historical_or_ambiguous": 1,
+      "historical_or_ambiguous": 2,
       "participant": 3
     },
     "round_codes": [
@@ -219,6 +219,38 @@
         ]
       },
       {
+        "activity_id": "IA-002fe8190b344306",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-a69f4d2abe539628",
+            "source_url": "https://tracxn.com/d/companies/anthropic/__SzoxXDMin-NK5tKB7ks8yHr6S9Mz68pjVCzFEcGFZ08/funding-and-investors",
+            "source_title": "Anthropic",
+            "source_content_hash": "0e21dc8c5bf73e44",
+            "quote": "Microsoft, located in Redmond (United States), made their first investment in Anthropic on Feb 12, 2026 in its Series G round.",
+            "quote_hash": "e7bee5862fc5b73de8a9d9e0e6bc175a28460cad0b738cdbca5d947a84e2a978"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-b501814c231a76f5",
         "funding_insight_id": "FI-1cf34218733257fd",
         "event_ids": [
@@ -283,6 +315,14 @@
         "source_content_hash": "c231466686007dd5",
         "quote": "This round also includes a portion of the previously announced investments from Microsoft and NVIDIA.",
         "quote_hash": "635e438e7bd38921cfa2ae7869a8f79b29944b74f036ad7ced7b851de3e986af"
+      },
+      {
+        "source_id": "FISRC-a69f4d2abe539628",
+        "source_url": "https://tracxn.com/d/companies/anthropic/__SzoxXDMin-NK5tKB7ks8yHr6S9Mz68pjVCzFEcGFZ08/funding-and-investors",
+        "source_title": "Anthropic",
+        "source_content_hash": "0e21dc8c5bf73e44",
+        "quote": "Microsoft, located in Redmond (United States), made their first investment in Anthropic on Feb 12, 2026 in its Series G round.",
+        "quote_hash": "e7bee5862fc5b73de8a9d9e0e6bc175a28460cad0b738cdbca5d947a84e2a978"
       },
       {
         "source_id": "FISRC-9ce92685289bf3ad",

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,23 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "2026-06-22",
+    "first_disclosed_at": "2026-06-17",
     "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "lead": 1,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "multi_round",
+      "seed",
       "series_e"
     ],
     "portfolio_companies": [
@@ -84,6 +85,11 @@
         "entity_id": "EN-5ee1e4de588a016a",
         "canonical_entity_id": "",
         "name": "Enveda"
+      },
+      {
+        "entity_id": "EN-5862e00bd2052e99",
+        "canonical_entity_id": "",
+        "name": "Pramaana Labs"
       },
       {
         "entity_id": "FICO-upscale-ai",
@@ -171,6 +177,46 @@
             "quote_hash": "bc528b10ef7cf201e43a02dd127ae1d446150320a90391b10ae0ebc3b2330db3"
           }
         ]
+      },
+      {
+        "activity_id": "IA-52a01a1efd0e4247",
+        "funding_insight_id": "FI-297719a093cb1b40",
+        "event_ids": [
+          "EV-07cef8183aa6c17b"
+        ],
+        "company_entity_id": "EN-5862e00bd2052e99",
+        "company_canonical_entity_id": "",
+        "company_name": "Pramaana Labs",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-35c5de2fa4b68376",
+            "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+            "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+            "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+            "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
+            "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -189,6 +235,14 @@
         "source_content_hash": "23145edb5fdd8d69",
         "quote": "The Series A-1 round was led by Premji Invest",
         "quote_hash": "bc528b10ef7cf201e43a02dd127ae1d446150320a90391b10ae0ebc3b2330db3"
+      },
+      {
+        "source_id": "FISRC-35c5de2fa4b68376",
+        "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+        "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+        "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+        "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
+        "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
       }
     ],
     "public_profile": {
@@ -235,6 +289,10 @@
         {
           "description": "融资来源记录：Upscale AI · 多轮融资 · 2026-06-22 · 本轮领投 · $190 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7dcdc22c0b1702bf"
+        },
+        {
+          "description": "融资来源记录：Pramaana Labs · 种子轮 · 2026-06-17 · 本轮参投 · $27 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-35c5de2fa4b68376"
         }
       ],
       "contacts": [
@@ -296,6 +354,14 @@
           "source_content_hash": "23145edb5fdd8d69",
           "quote": "The Series A-1 round was led by Premji Invest",
           "quote_hash": "bc528b10ef7cf201e43a02dd127ae1d446150320a90391b10ae0ebc3b2330db3"
+        },
+        {
+          "source_id": "FISRC-35c5de2fa4b68376",
+          "source_url": "https://techcrunch.com/2026/06/17/pramaana-labs-raises-27-million-seed-round-from-khosla-ventures-to-bring-formal-verification-to-ai/",
+          "source_title": "Pramaana Labs从Khosla Ventures获得2700万美元种子轮融资，将形式验证引入AI",
+          "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+          "quote": "with participation from Accel, BoldCap, Nexus Venture Partners, Premji Invest, and Unbound",
+          "quote_hash": "5707995e0125446f72b54cb8538af044caf6d92968c671a474e9b91cf4b8b4b2"
         }
       ],
       "identity_status": "verified",

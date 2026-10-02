@@ -43,7 +43,26 @@ import {
   fundingHistory,
   recoveryCardsFromGit,
   fundingResearchNameMatches,
+  modelCorrectionProblem,
 } from "../generate-funding-insights-deepseek.mjs";
+
+test("research hierarchy retries distinguish industry IDs from market subcategories", () => {
+  for (const issue of ["market_subcategory_id_unknown", "market_subcategory_parent_mismatch"]) {
+    const guidance = modelCorrectionProblem(issue);
+    assert.ok(guidance.startsWith(issue));
+    assert.ok(guidance.includes('"legal":"industry_applications"'));
+    assert.ok(guidance.includes("Do not copy industry_ids"));
+  }
+  assert.equal(modelCorrectionProblem("investors_missing"), "investors_missing");
+});
+
+test("late financing rounds retain their letters without reading prose as a round", () => {
+  assert.equal(normalizeFundingRound("Series H").code, "series_h");
+  assert.equal(normalizeFundingRound("L轮").code, "series_l");
+  assert.equal(normalizeFundingRound("Series H extension").code, "series_h_extension");
+  assert.notEqual(normalizeFundingRound("series investments").code, "series_i");
+  assert.notEqual(normalizeFundingRound("series funding").code, "series_f");
+});
 
 test("targeted funding research does not restore unrelated event cards from stale checkpoints", () => {
   const selected = new Set(["EV-current-a", "EV-current-b"]);

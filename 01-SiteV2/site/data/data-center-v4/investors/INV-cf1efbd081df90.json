@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,22 +61,71 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 0,
+    "current_round_count": 1,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 0,
+    "portfolio_company_count": 1,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
-    "first_disclosed_at": "",
-    "latest_disclosed_at": "",
+    "first_disclosed_at": "2026-06-11",
+    "latest_disclosed_at": "2026-06-11",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 1,
+      "participant": 1
     },
-    "round_codes": [],
-    "portfolio_companies": [],
+    "round_codes": [
+      "series_b"
+    ],
+    "portfolio_companies": [
+      {
+        "entity_id": "EN-1809f7cd0c75acf3",
+        "canonical_entity_id": "",
+        "name": "Prometheus"
+      }
+    ],
     "activities": [
+      {
+        "activity_id": "IA-79fb5800f351b740",
+        "funding_insight_id": "FI-bb8e3f8e8f3f519c",
+        "event_ids": [
+          "EV-5eb9944487368ea0"
+        ],
+        "company_entity_id": "EN-1809f7cd0c75acf3",
+        "company_canonical_entity_id": "",
+        "company_name": "Prometheus",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "Series B",
+        "amount_original": "$12 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 12000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "120 亿美元"
+        },
+        "announced_at": "2026-06-11",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-0c708eb8dc3d758b",
+            "source_url": "https://multiples.vc/private-comps/prometheus",
+            "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
+            "source_content_hash": "646b9259f23a27ec",
+            "quote": "The $12B round included Jeff Bezos, Goldman Sachs, BlackRock, JPMorgan Chase, DST Global and 1 other investor.",
+            "quote_hash": "e6c850cf7ceea5003c148380cbbffa2eb2c4f3f62c18b1026a296578a0f41f71"
+          }
+        ]
+      },
       {
         "activity_id": "IA-47ff06fc8bd2b092",
         "funding_insight_id": "FI-c1e9b4928d8c8358",
@@ -112,6 +161,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-0c708eb8dc3d758b",
+        "source_url": "https://multiples.vc/private-comps/prometheus",
+        "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
+        "source_content_hash": "646b9259f23a27ec",
+        "quote": "The $12B round included Jeff Bezos, Goldman Sachs, BlackRock, JPMorgan Chase, DST Global and 1 other investor.",
+        "quote_hash": "e6c850cf7ceea5003c148380cbbffa2eb2c4f3f62c18b1026a296578a0f41f71"
+      },
+      {
         "source_id": "FISRC-081d8fda5173dab0",
         "source_url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale",
         "source_title": "英伟达加入AI债务热潮，发行200亿美元债券",
@@ -125,10 +182,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "JPMorgan Chase 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "JPMorgan Chase 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Prometheus · B轮 · 2026-06-11 · 本轮参投 · $12 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-0c708eb8dc3d758b"
+        },
         {
           "description": "融资来源记录：NVIDIA · 历史轮次未披露 · 承销行。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-081d8fda5173dab0"
@@ -136,6 +197,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-0c708eb8dc3d758b",
+          "source_url": "https://multiples.vc/private-comps/prometheus",
+          "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
+          "source_content_hash": "646b9259f23a27ec",
+          "quote": "The $12B round included Jeff Bezos, Goldman Sachs, BlackRock, JPMorgan Chase, DST Global and 1 other investor.",
+          "quote_hash": "e6c850cf7ceea5003c148380cbbffa2eb2c4f3f62c18b1026a296578a0f41f71"
+        },
         {
           "source_id": "FISRC-081d8fda5173dab0",
           "source_url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale",

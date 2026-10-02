@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -54,15 +54,17 @@
   },
   "institution": {
     "id": "INV-46014eb8a841f6",
-    "name": "Tom Preston Werner",
-    "aliases": [],
+    "name": "Tom Preston-Werner",
+    "aliases": [
+      "Tom Preston Werner"
+    ],
     "canonical_entity_id": null,
     "investor_kind": "individual",
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
     "current_round_count": 0,
-    "historical_or_ambiguous_count": 1,
+    "historical_or_ambiguous_count": 3,
     "portfolio_company_count": 0,
     "market_regions": [
       "GLOBAL"
@@ -72,7 +74,7 @@
     "first_disclosed_at": "",
     "latest_disclosed_at": "",
     "role_counts": {
-      "historical_or_ambiguous": 1
+      "historical_or_ambiguous": 3
     },
     "round_codes": [],
     "portfolio_companies": [],
@@ -108,6 +110,70 @@
             "quote_hash": "70fc4dc7aa2920be2589fc6942b0babc7b5718f06c8131de22c9ce7a23b0ebb9"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8956d4efb78a8d08",
+        "funding_insight_id": "FI-306e35da8ebe8088",
+        "event_ids": [
+          "EV-b58eb81bf5235a33"
+        ],
+        "company_entity_id": "EN-e34d1c9011e06204",
+        "company_canonical_entity_id": "",
+        "company_name": "Railway",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "本轮天使投资人",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-72c8859fe2a25c85",
+            "source_url": "https://multiples.vc/private-comps/railway",
+            "source_title": "Railway Funding, Investors & Competitors | Multiples",
+            "source_content_hash": "914fbe85560ee8b3",
+            "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
+            "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-71fa206ea37c7f1e",
+        "funding_insight_id": "FI-d3f8f22849d09dcc",
+        "event_ids": [
+          "EV-42ba61e8713cd2e6"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-06495943979d9573",
+            "source_url": "https://tracxn.com/d/companies/supabase/__Eu-Qv0PGLlKKydFQbekQazgnqS4w5jeSDfFyg6oGPjg/funding-and-investors",
+            "source_title": "Supabase",
+            "source_content_hash": "aacc6792e494d368",
+            "quote": "Coatue, Alex Solomon, Solomon Hykes, Tom Preston-Werner",
+            "quote_hash": "89a8b625c71e9fa8a5847cde592bf5d2ab150b083a437599da71e581763c5c7d"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -118,6 +184,22 @@
         "source_content_hash": "42d5867eaff12416",
         "quote": "angel investors like GitHub co-founder Tom Preston Werner",
         "quote_hash": "70fc4dc7aa2920be2589fc6942b0babc7b5718f06c8131de22c9ce7a23b0ebb9"
+      },
+      {
+        "source_id": "FISRC-72c8859fe2a25c85",
+        "source_url": "https://multiples.vc/private-comps/railway",
+        "source_title": "Railway Funding, Investors & Competitors | Multiples",
+        "source_content_hash": "914fbe85560ee8b3",
+        "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
+        "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
+      },
+      {
+        "source_id": "FISRC-06495943979d9573",
+        "source_url": "https://tracxn.com/d/companies/supabase/__Eu-Qv0PGLlKKydFQbekQazgnqS4w5jeSDfFyg6oGPjg/funding-and-investors",
+        "source_title": "Supabase",
+        "source_content_hash": "aacc6792e494d368",
+        "quote": "Coatue, Alex Solomon, Solomon Hykes, Tom Preston-Werner",
+        "quote_hash": "89a8b625c71e9fa8a5847cde592bf5d2ab150b083a437599da71e581763c5c7d"
       }
     ],
     "public_profile": {
@@ -167,6 +249,14 @@
         {
           "description": "TechCrunch 将 Tom Preston-Werner 列为 Liquid AI 种子轮天使投资人；本库将活动标为历史/模糊，3,750 万美元为整轮金额，未披露他的个人出资额。",
           "source_id": "FISRC-d1080395d67df2c7"
+        },
+        {
+          "description": "融资来源记录：Railway · 历史轮次未披露 · 本轮天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-72c8859fe2a25c85"
+        },
+        {
+          "description": "融资来源记录：Supabase · 历史轮次未披露 · Series A 参投。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-06495943979d9573"
         }
       ],
       "sources": [
@@ -201,6 +291,22 @@
           "source_content_hash": "42d5867eaff12416",
           "quote": "angel investors like GitHub co-founder Tom Preston Werner",
           "quote_hash": "70fc4dc7aa2920be2589fc6942b0babc7b5718f06c8131de22c9ce7a23b0ebb9"
+        },
+        {
+          "source_id": "FISRC-72c8859fe2a25c85",
+          "source_url": "https://multiples.vc/private-comps/railway",
+          "source_title": "Railway Funding, Investors & Competitors | Multiples",
+          "source_content_hash": "914fbe85560ee8b3",
+          "quote": "plus angels including GitHub co-founder Tom Preston-Werner, Vercel CEO Guillermo Rauch, Spencer Kimball, Olivier Pomel, and Jori Lallo",
+          "quote_hash": "457edd3696a1e864e33f740e3b8c838e58446d016979a808af94b99edabef957"
+        },
+        {
+          "source_id": "FISRC-06495943979d9573",
+          "source_url": "https://tracxn.com/d/companies/supabase/__Eu-Qv0PGLlKKydFQbekQazgnqS4w5jeSDfFyg6oGPjg/funding-and-investors",
+          "source_title": "Supabase",
+          "source_content_hash": "aacc6792e494d368",
+          "quote": "Coatue, Alex Solomon, Solomon Hykes, Tom Preston-Werner",
+          "quote_hash": "89a8b625c71e9fa8a5847cde592bf5d2ab150b083a437599da71e581763c5c7d"
         }
       ],
       "coverage_note": "基金规模是 2025 年本人宣布的募集目标，未将目标写成已完成募资；投资组合和投资数量均标注为本人披露。",
@@ -209,6 +315,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[2].role": {
+          "text": "Series A 参投",
+          "source_hash": "594415bdfe0982734009cfb0cabab985d97ffe82e705eda46fc59f72accb1091",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:18.725Z",
+          "status": "translated"
+        },
         "public_profile.track_record[0].description": {
           "text": "Tom Preston-Werner 在 2025 年本人文章中称，过去 13 年投资超过 175 家初创企业，并列举 Stripe、Cursor、Netlify、Snyk、Supabase、PlanetScale 和 Retool 等早期投资案例；为本人披露的精选业绩。",
           "source_hash": "6221204f8566df023e8b3b16802dfb5e10b536c8d3b00b0299f050bccc0a061e",

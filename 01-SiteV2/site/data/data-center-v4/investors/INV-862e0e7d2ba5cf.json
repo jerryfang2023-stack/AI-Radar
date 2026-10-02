@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 20,
-    "historical_or_ambiguous_count": 8,
-    "portfolio_company_count": 18,
+    "current_round_count": 25,
+    "historical_or_ambiguous_count": 10,
+    "portfolio_company_count": 20,
     "market_regions": [
       "GLOBAL"
     ],
@@ -75,10 +75,10 @@
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "co_lead": 2,
-      "historical_or_ambiguous": 8,
-      "lead": 9,
+      "historical_or_ambiguous": 10,
+      "lead": 11,
       "other_current_round": 1,
-      "participant": 8
+      "participant": 11
     },
     "round_codes": [
       "multi_round",
@@ -90,6 +90,7 @@
       "series_d",
       "series_f",
       "series_g",
+      "series_h",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -102,6 +103,11 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic"
+      },
+      {
+        "entity_id": "EN-ae3d8efc01c7627d",
+        "canonical_entity_id": "",
+        "name": "Astrocade"
       },
       {
         "entity_id": "EN-522656609ff15589",
@@ -147,6 +153,11 @@
         "entity_id": "FICO-instinct",
         "canonical_entity_id": "",
         "name": "Instinct"
+      },
+      {
+        "entity_id": "EN-720d7b20a013162b",
+        "canonical_entity_id": "",
+        "name": "Listen Labs"
       },
       {
         "entity_id": "EN-636396f02b6571e4",
@@ -684,6 +695,46 @@
         ]
       },
       {
+        "activity_id": "IA-020ed464cb738f7e",
+        "funding_insight_id": "FI-6fdfe3674217723b",
+        "event_ids": [
+          "EV-0a9d7be146eeb62a"
+        ],
+        "company_entity_id": "EN-450dcf23e621ff10",
+        "company_canonical_entity_id": "",
+        "company_name": "Engram",
+        "round": "轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "未披露",
+        "amount_original": "$98 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 98000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "9800 万美元"
+        },
+        "announced_at": "2026-06-23",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "partially_disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-8f5a35fa6bbc977d",
+            "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+            "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+            "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+            "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+            "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-d5b1a2119a702587",
         "funding_insight_id": "FI-bff055b65fdb260b",
         "event_ids": [
@@ -760,6 +811,126 @@
             "source_content_hash": "16af0d3e75b94e37",
             "quote": "a $6 million Seed round led by Sequoia Capital. Sequoia also participated in the Series A.",
             "quote_hash": "28e88bdbebbb89d6dc7b33486f23ba4cf95a2e4e836ccf1ce8b91c0b3fbdb336"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-43aa9fc8d712e786",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+            "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f10acf87dd9363ae",
+        "funding_insight_id": "FI-03e399f9044022c0",
+        "event_ids": [
+          "EV-4e4ae1578720e907"
+        ],
+        "company_entity_id": "EN-ae3d8efc01c7627d",
+        "company_canonical_entity_id": "",
+        "company_name": "Astrocade",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$56M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 56000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5600 万美元"
+        },
+        "announced_at": "2026-05-05",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-1811bc88b6a13090",
+            "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
+            "source_title": "Astrocade 融资 5600 万美元，用于打造互动娱乐新时代",
+            "source_content_hash": "693c6512091f05ffa16b907ec04a3e307326051b109c094cbc783d00543e7a71",
+            "quote": "The funding includes a Series B led by Sequoia Capital and a Series A led by Sea, with participation from Google's AI Futures Fund, NVIDIA, LG Technology Ventures, Dentsu Ventures, Conviction Embed, Chaac Ventures, Rogue VC, and many more",
+            "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-5d25db4495f9f4ed",
+        "funding_insight_id": "FI-2beaec77613f6a7f",
+        "event_ids": [
+          "EV-20e5d57a05b69a95"
+        ],
+        "company_entity_id": "EN-06c8aaa93d80a768",
+        "company_canonical_entity_id": "",
+        "company_name": "Factory",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-04-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-f4c8c4cc3e97ab74",
+            "source_url": "https://factory.com/news/series-c",
+            "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+            "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+            "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+            "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
           }
         ]
       },
@@ -920,6 +1091,46 @@
             "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
             "quote": "The round was led by Sequoia Capital, with Andrew Reed joining the board",
             "quote_hash": "7cb4326a3ca8b7952ffc6abaf89fae0c85c70155564fa413ebacd6fceb7ffba2"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-6e84abef51ce3db2",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "B轮",
+        "round_code": "series_b",
+        "round_original": "B轮",
+        "amount_original": "$69 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 69000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "6900 万美元"
+        },
+        "announced_at": "2026-01-14",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-dcf11a862138a06d",
+            "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+            "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+            "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+            "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+            "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
           }
         ]
       },
@@ -1132,6 +1343,38 @@
         ]
       },
       {
+        "activity_id": "IA-26bbc7097963f053",
+        "funding_insight_id": "FI-5826d8691460f196",
+        "event_ids": [
+          "EV-224077c33b02562c"
+        ],
+        "company_entity_id": "EN-720d7b20a013162b",
+        "company_canonical_entity_id": "",
+        "company_name": "Listen Labs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series A 领投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-5579fe42c2aff5ea",
+            "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
+            "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
+            "source_content_hash": "2cd25d2efd99688d",
+            "quote": "Listen Labs recently closed their $27M Series A round, led by Sequoia with participation from Conviction and Pear.",
+            "quote_hash": "b8981f82094227c36170dea81dfdee8f0e08156dca60071d3e83a0c4238466e9"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-9459223eff453321",
         "funding_insight_id": "FI-09809d62deea4164",
         "event_ids": [
@@ -1258,6 +1501,38 @@
             "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
           }
         ]
+      },
+      {
+        "activity_id": "IA-8ea6405f74d4b1cb",
+        "funding_insight_id": "FI-4909d937138bd129",
+        "event_ids": [
+          "EV-688ef84a4024e075"
+        ],
+        "company_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_name": "xAI",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史轮次投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-3b4badfc5c7972fa",
+            "source_url": "https://tracxn.com/d/companies/xai/__saKrxbHN3TRWW-I4lYH6zkx6N5P_kMTqlLcKTzWs2ug",
+            "source_title": "xAI",
+            "source_content_hash": "d1bd5f5bb5d9679b",
+            "quote": "xAI has raised $45B in funding from investors like Andreessen Horowitz, Sequoia Capital and Qatar Investment Authority",
+            "quote_hash": "3c51432ac77fbe9687fa76da3e989bf662f1236b291b742ecc06600be08c881c"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -1374,6 +1649,14 @@
         "quote_hash": "748365af413bdb57cb7af0f41091078e616e84eafee51da0d7e695b73b5beefe"
       },
       {
+        "source_id": "FISRC-8f5a35fa6bbc977d",
+        "source_url": "https://www.prnewswire.com/news-releases/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization-302807126.html",
+        "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
+        "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+        "quote": "emerged from stealth with $98M in funding from General Catalyst, Kleiner Perkins, Sequoia Capital, Factory, Modern, Amplify Partners, Neo and notable angels and advisors including Assaf Rappaport, co-founder and CEO of Wiz, Andrej Karpathy, co-founder of OpenAI, and Pieter Abbeel, AI and robotics pioneer and co-director of the Berkeley AI Research Lab.",
+        "quote_hash": "42b1511883b23468e7b7d7735d0907aa3cd55bf26be07ab642ceca70cd1a4958"
+      },
+      {
         "source_id": "FISRC-39d911c5038cb1c0",
         "source_url": "https://theaiinsider.tech/2026/07/01/engram-launches-with-98m-to-build-ai-that-actually-knows-your-organization/",
         "source_title": "Engram 获 9800 万美元启动资金，打造真正了解你组织的 AI",
@@ -1388,6 +1671,30 @@
         "source_content_hash": "16af0d3e75b94e37",
         "quote": "a $6 million Seed round led by Sequoia Capital. Sequoia also participated in the Series A.",
         "quote_hash": "28e88bdbebbb89d6dc7b33486f23ba4cf95a2e4e836ccf1ce8b91c0b3fbdb336"
+      },
+      {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital",
+        "quote_hash": "cd04bdd3a7f3b8bdc5c665fe98be28f4f33a81690ade9a2e41926d3627410f97"
+      },
+      {
+        "source_id": "FISRC-1811bc88b6a13090",
+        "source_url": "https://www.astrocade.com/blog/astrocade-raises-56m-funding",
+        "source_title": "Astrocade 融资 5600 万美元，用于打造互动娱乐新时代",
+        "source_content_hash": "693c6512091f05ffa16b907ec04a3e307326051b109c094cbc783d00543e7a71",
+        "quote": "The funding includes a Series B led by Sequoia Capital and a Series A led by Sea, with participation from Google's AI Futures Fund, NVIDIA, LG Technology Ventures, Dentsu Ventures, Conviction Embed, Chaac Ventures, Rogue VC, and many more",
+        "quote_hash": "15cdeb52626e3d0522d7cb1d21a7ed845e2cac856054fcdf352272c0d7fb4a8f"
+      },
+      {
+        "source_id": "FISRC-f4c8c4cc3e97ab74",
+        "source_url": "https://factory.com/news/series-c",
+        "source_title": "Factory 完成 1.5 亿美元 C 轮融资",
+        "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+        "quote": "our $150M Series C led by Khosla Ventures with participation from Sequoia Capital, Blackstone, Insight Partners, Evantic Capital, 20VC, NEA, and Mantis VC.",
+        "quote_hash": "86849e05fb7fc79bbac8dd660a66175143d52a7d8a96e9aaf9a07160d936cf17"
       },
       {
         "source_id": "FISRC-1e2b3bad243bd066",
@@ -1420,6 +1727,14 @@
         "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
         "quote": "The round was led by Sequoia Capital, with Andrew Reed joining the board",
         "quote_hash": "7cb4326a3ca8b7952ffc6abaf89fae0c85c70155564fa413ebacd6fceb7ffba2"
+      },
+      {
+        "source_id": "FISRC-dcf11a862138a06d",
+        "source_url": "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html",
+        "source_title": "Listen Labs 融资 6900 万美元 B 轮，将客户声音带入每一项决策",
+        "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+        "quote": "with participation from Evantic and existing investors Sequoia Capital, Conviction, and Pear VC",
+        "quote_hash": "464c957a685e8515d4b8d6a692d0a2cb65cf1a3e413c838428dc8826314d2e5d"
       },
       {
         "source_id": "FISRC-d9093a8f62959034",
@@ -1470,6 +1785,14 @@
         "quote_hash": "0db743559ffbdcee82409055d113f1214af7a14f117686b47504c37db0cc02d0"
       },
       {
+        "source_id": "FISRC-5579fe42c2aff5ea",
+        "source_url": "https://pear.vc/partnering-with-listen-labs-automating-customer-research-to-create-a-human-insights-layer/",
+        "source_title": "Partnering with Listen Labs: Automating customer research to create a human insights layer",
+        "source_content_hash": "2cd25d2efd99688d",
+        "quote": "Listen Labs recently closed their $27M Series A round, led by Sequoia with participation from Conviction and Pear.",
+        "quote_hash": "b8981f82094227c36170dea81dfdee8f0e08156dca60071d3e83a0c4238466e9"
+      },
+      {
         "source_id": "FISRC-d1b42068c59f51d1",
         "source_url": "https://www.techtimes.com/articles/317353/20260529/ai-gateway-openrouter-raises-113m-google-nvidia-route-between-their-models.htm",
         "source_title": "AI 网关 OpenRouter 获谷歌和英伟达 1.13 亿美元投资，用于在其模型间路由",
@@ -1500,6 +1823,14 @@
         "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
         "quote": "Returning investors include a16z, Sequoia, Index, GIC, Sapphire Ventures, and Amplify.",
         "quote_hash": "406f871b5d06e4b4aab82de8452e5e13f9eaf18cdfbf586ceed7170cae3e6dd2"
+      },
+      {
+        "source_id": "FISRC-3b4badfc5c7972fa",
+        "source_url": "https://tracxn.com/d/companies/xai/__saKrxbHN3TRWW-I4lYH6zkx6N5P_kMTqlLcKTzWs2ug",
+        "source_title": "xAI",
+        "source_content_hash": "d1bd5f5bb5d9679b",
+        "quote": "xAI has raised $45B in funding from investors like Andreessen Horowitz, Sequoia Capital and Qatar Investment Authority",
+        "quote_hash": "3c51432ac77fbe9687fa76da3e989bf662f1236b291b742ecc06600be08c881c"
       }
     ],
     "public_profile": {
@@ -1604,12 +1935,20 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[22].role": {
+        "activities[27].role": {
           "text": "Series C 参投",
           "source_hash": "40d04e04356cbd3cf6d4e583f8da1f4327d1e6750db0b1f0d3397000376f8f4d",
           "provider": "deepseek",
           "model": "deepseek-v4-flash",
           "translated_at": "2026-10-01T19:38:36.584Z",
+          "status": "translated"
+        },
+        "activities[29].role": {
+          "text": "Series A 领投",
+          "source_hash": "9dc315c2d030c9a91d0875c615446b332950b1124b561ac00b2f3978572ccf24",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-01T16:28:16.913Z",
           "status": "translated"
         },
         "public_profile.summary": {

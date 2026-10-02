@@ -35,6 +35,14 @@ test('history capture resumes privately and finalizes scoped sources separately 
   const final=await collectHistory({...options,capture,finalize:true,input:{...input,processed:1,total:1,complete:true}});assert.equal(captures,1);assert.equal(final.accepted,true);
   const intake=read(intakeFile),policy=read(path.join(root,'01-SiteV2/content/11-databases/data-center-v4/2026-10-02/targeted-funding-authorization.json'));
   assert.equal(policy.source_refs.length,1);assert.equal(policy.source_refs[0],intake.source_artifacts[0].source_artifact_id);assert.ok(!JSON.stringify(intake).includes(body));
+  const policyFile=path.join(root,'01-SiteV2/content/11-databases/data-center-v4/2026-10-02/targeted-funding-authorization.json');
+  policy.round_identity_source_refs=[policy.source_refs[0]];
+  policy.event_date_reviews={[policy.source_refs[0]]:{status:'accepted',reviewer:'fixture',date:'2026-02-04',source_ref:policy.source_refs[0],quote:body}};
+  fs.writeFileSync(policyFile,JSON.stringify(policy));
+  await collectHistory({...options,capture,finalize:true,input:{...input,processed:1,total:1,complete:true}});
+  assert.deepEqual(read(policyFile).round_identity_source_refs,policy.round_identity_source_refs);
+  assert.deepEqual(read(policyFile).event_date_reviews,policy.event_date_reviews);
+  assert.equal(captures,1);
   assert.equal(fs.existsSync(path.join(root,'agent-workflow/reports/financing/2026-10-02/collection.json')),false);
 });
 

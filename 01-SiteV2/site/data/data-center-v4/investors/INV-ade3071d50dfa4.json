@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 8,
+    "current_round_count": 9,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 8,
+    "portfolio_company_count": 9,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,14 +74,15 @@
     "role_counts": {
       "historical_or_ambiguous": 5,
       "lead": 3,
-      "participant": 5
+      "participant": 6
     },
     "round_codes": [
       "seed",
       "series_a",
       "series_c",
       "series_d",
-      "series_e"
+      "series_e",
+      "series_f"
     ],
     "portfolio_companies": [
       {
@@ -118,6 +119,11 @@
         "entity_id": "EN-c08f86842ff2c908",
         "canonical_entity_id": "",
         "name": "SRE.ai"
+      },
+      {
+        "entity_id": "EN-4d7594e57f7d03f3",
+        "canonical_entity_id": "",
+        "name": "Supabase"
       },
       {
         "entity_id": "EN-29a3723ce5ee3350",
@@ -286,6 +292,46 @@
             "source_content_hash": "3d3c1a68251829f0",
             "quote": "closed a $135 million round led by Salesforce Ventures",
             "quote_hash": "d8be535192c1fb579d86e7084893c47a2c84be4b6fedec8c4141d9ce2a7693c3"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-db2158526f17bc52",
+        "funding_insight_id": "FI-d3f8f22849d09dcc",
+        "event_ids": [
+          "EV-42ba61e8713cd2e6"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$500M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-329a0525efb0e1f9",
+            "source_url": "https://supabase.com/blog/supabase-series-f",
+            "source_title": "Supabase F 轮融资",
+            "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+            "quote": "Georgian and Salesforce Ventures joined as new investors.",
+            "quote_hash": "b6812af23e6e357c139271884956d9b68c050e5a2a4bfdad69c1aee912114291"
           }
         ]
       },
@@ -646,6 +692,14 @@
         "quote_hash": "d8be535192c1fb579d86e7084893c47a2c84be4b6fedec8c4141d9ce2a7693c3"
       },
       {
+        "source_id": "FISRC-329a0525efb0e1f9",
+        "source_url": "https://supabase.com/blog/supabase-series-f",
+        "source_title": "Supabase F 轮融资",
+        "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+        "quote": "Georgian and Salesforce Ventures joined as new investors.",
+        "quote_hash": "b6812af23e6e357c139271884956d9b68c050e5a2a4bfdad69c1aee912114291"
+      },
+      {
         "source_id": "FISRC-9b94f245fa27a161",
         "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
         "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
@@ -846,7 +900,7 @@
     },
     "translations": {
       "zh-CN": {
-        "activities[10].role": {
+        "activities[11].role": {
           "text": "Series E 参投方",
           "source_hash": "4c5721848f6406bd6f2e84ed29d011b6af208116ac9cea44324fd35d85384690",
           "provider": "deepseek",

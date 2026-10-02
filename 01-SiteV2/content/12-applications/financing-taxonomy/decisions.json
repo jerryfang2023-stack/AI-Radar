@@ -20878,7 +20878,1064 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "generated_at": "2026-10-01T19:45:40.506Z"
+    },
+    "EV-a3e9feaed5234078": {
+      "id": "EV-a3e9feaed5234078",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "operations",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "Delos 开发自主 AI 员工处理复杂业务任务，属于面向企业的业务流程与智能体应用。",
+      "input_hash": "8618ac5e62433af2453fc34942f93dfd91df9c60c7a9d3823a0c4eae3ad81069",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6d8407107e870ebc",
+          "quote": "La start-up Delos, qui développe des employés IA autonomes, annonce ce mercredi une levée de fonds de 10 millions d’euros en série A auprès de Bpifrance, C4 Ventures et Founders Future."
+        },
+        {
+          "source_id": "FISRC-09586343a360c8ae",
+          "quote": "The company builds autonomous \"AI employees\" that handle complex business tasks"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.123Z"
+    },
+    "EV-e124ba0fc4fef3c0": {
+      "id": "EV-e124ba0fc4fef3c0",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "legal",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Arceus Legal 是一家 AI 驱动的律师事务所，通过自研 CounselOS 系统交付法律服务，属于法律行业 AI。",
+      "input_hash": "1f4df16d2ec66160260d9daa9f05c9aa65cc660093f61655020910b9af9a19ef",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dcf45e1aac1af636",
+          "quote": "Artificial intelligence-driven law firm Arceus Legal today disclosed that it has raised $17 million in funding to expand beyond the commercial contract work it started with."
+        },
+        {
+          "source_id": "FISRC-54220f8d78441b23",
+          "quote": "In this case it’s a proprietary operating system, CounselOS. They said that this gives ‘Arceus attorneys context on a company’s business, preferences, agreements, prior decisions and negotiation history. It connects to the platforms where companies already work, including HubSpot, Salesforce, Gmail and Slack, to gather context, identify issues and route each matter to the right attorney’."
+        },
+        {
+          "source_id": "FISRC-dcf45e1aac1af636",
+          "quote": "Its attorneys work from an in-house operating system called CounselOS, which keeps a record of each client’s preferences, past agreements and negotiation history."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.123Z"
+    },
+    "EV-688ef84a4024e075": {
+      "id": "EV-688ef84a4024e075",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "consumer"
+      ],
+      "evidence_indices": [
+        2,
+        3
+      ],
+      "rationale": "xAI 提供 Grok AI 助手及开发者 API，核心交付物是通用基础模型及其接口。",
+      "input_hash": "dece7e0362657d71024ed7f88f9bfe89362702174011ae175b40fc428e8dd385",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3b4badfc5c7972fa",
+          "quote": "Grok is a powerful AI assistant designed to provide truthful, useful, and curious insights by leveraging real-time search, image generation, and trend analysis capabilities."
+        },
+        {
+          "source_id": "FISRC-3b4badfc5c7972fa",
+          "quote": "Through its developer API, xAI enables seamless integration of Grok's intelligence into various projects and applications."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.123Z"
+    },
+    "EV-c6d46d4dae65ba7e": {
+      "id": "EV-c6d46d4dae65ba7e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Reactor 为开发者提供实时视频模型的推理平台，抽象 GPU 与基础设施，属于模型部署与推理开发平台。",
+      "input_hash": "235c22ad4b3c495d4878dce5a665bafc73f31fd2a70dd7e8914a97b54f19510b",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d1657a784e92d59a",
+          "quote": "Today, Lightspeed is announcing we’re leading Reactor’s Series A after co-leading their Seed — $59M in combined funding — to further their goal of becoming the de facto inference platform for real-time video models."
+        },
+        {
+          "source_id": "FISRC-d1657a784e92d59a",
+          "quote": "The core insight of Reactor’s platform lies in how easily it enables developers to build real-time video experiences. They abstract away GPU provisioning, infrastructure setup, and streaming complexity, freeing developers to build with real-time video models in their programming language of choice."
+        },
+        {
+          "source_id": "FISRC-d1657a784e92d59a",
+          "quote": "Real-time video models require fundamentally different infrastructure than the one for any current modality: persistent state across interactions, bidirectional streaming with sub-50ms latency, real-time control input processing, and session orchestration that maintains consistency across thousands of generated frames."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.123Z"
+    },
+    "EV-20e5d57a05b69a95": {
+      "id": "EV-20e5d57a05b69a95",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "ai-coding",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Factory 的 Droids 是面向开发者的自主软件工程智能体，用于规划、构建、审查和交付代码，属于 AI 编程与软件研发。",
+      "input_hash": "e56e5a0787b0bc2128d2d2f8ec42460ba728b8933c83a4b1bab47a651fdebbe5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f4c8c4cc3e97ab74",
+          "quote": "We started Factory three years ago with a single mission: bring autonomy to software engineering."
+        },
+        {
+          "source_id": "FISRC-f11235a56b82888e",
+          "quote": "Factory is a developer of an AI-based platform for computer codes and software engineering."
+        },
+        {
+          "source_id": "FISRC-f4c8c4cc3e97ab74",
+          "quote": "Droids are used daily by hundreds of thousands of developers across enterprises including Nvidia, Adobe, EY, Palo Alto Networks, and Adyen."
+        },
+        {
+          "source_id": "FISRC-d541ce1d1f6fc8bb",
+          "quote": "Plan, build, review, and ship software with autonomous agents across desktop, terminal, web, and CLI."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.123Z"
+    },
+    "EV-03fc697a9838f39e": {
+      "id": "EV-03fc697a9838f39e",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer-devices",
+      "subsector_id": "audio-wearables",
+      "product_form_id": "consumer-device",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "SOND 的 Dreambuds 是面向消费者的入耳式睡眠干预耳机，属于消费 AI 音频穿戴设备。",
+      "input_hash": "81c64b7c9fced9ace63a4e47367da4b983607584155e33c5aed57ffff2df9760",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d8f2f6d7fc0871dd",
+          "quote": "a Boston-based startup called SOND is introducing a new type of earbuds designed to actively intervene to encourage better sleep"
+        },
+        {
+          "source_id": "FISRC-d8f2f6d7fc0871dd",
+          "quote": "Dreambuds, a closed-loop, in-ear system that captures 12 physiological signals from the wearer, then acts on them in real time to help consumers get better sleep."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.123Z"
+    },
+    "EV-42ba61e8713cd2e6": {
+      "id": "EV-42ba61e8713cd2e6",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Supabase 是构建在 Postgres 上的开源开发平台，为 AI 应用提供数据库、认证和存储等后端能力，属于面向开发者的数据平台。",
+      "input_hash": "babacc166e7bd3efbb2ab497a403f181ab5a4fa5de7a9001ce5852405e3b14b8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "quote": "Supabase is an open-source development platform built on Postgres"
+        },
+        {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "quote": "Supabase is an open-source development platform built on Postgres – a free, open-source system for storing and querying structured data"
+        },
+        {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "quote": "AI-generated applications need a database, authentication, file storage, and a way to handle real-time data."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.295Z"
+    },
+    "EV-ba7fd8ed5a019717": {
+      "id": "EV-ba7fd8ed5a019717",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "Ploy 是运行企业整个营销系统的 AI 增长平台，智能体端到端处理页面设计、文案、广告投放和 CRM 数据同步，属于企业销售与营销赛道。",
+      "input_hash": "280292985d5e64c800b31570b0510df46c8af2893496452f1536c8d6062df637",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-06b0e5fa3929381b",
+          "quote": "Ploy is an AI growth platform that runs a company's entire marketing system in the background"
+        },
+        {
+          "source_id": "FISRC-06b0e5fa3929381b",
+          "quote": "Its agents handle the operational and technical work end to end: designing pages, writing copy, running campaigns, optimizing performance, and syncing data back to the CRM."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.295Z"
+    },
+    "EV-796f551775a566ba": {
+      "id": "EV-796f551775a566ba",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "customer-service",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Bland 提供企业级语音 AI 平台，客户用它构建和运行 AI 电话智能体进行规模化对话，属于企业客服与客户体验赛道。",
+      "input_hash": "38ad984d36d2cc30898092552a01094d966043a0b7800ebfe35ac12f5979f604",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a6233a9ab76850de",
+          "quote": "Bland AI is a San Francisco-headquartered platform enabling AI-powered voice agents for business phone automation in 20 languages."
+        },
+        {
+          "source_id": "FISRC-d7835543ee84e409",
+          "quote": "Bland is an enterprise voice AI platform. Customers use it to build, run, and monitor AI phone agents that hold real conversations at scale."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.295Z"
+    },
+    "EV-4f56483024dd4e84": {
+      "id": "EV-4f56483024dd4e84",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "developer",
+        "research"
+      ],
+      "evidence_indices": [
+        2,
+        3,
+        4
+      ],
+      "rationale": "Synthefy 开源了用于表格预测的专用基础模型 Nori，并提供合成时序数据生成平台，属于专用模型赛道。",
+      "input_hash": "ad50de6b5f2079f9e2b4d91addd84f08ad79460299c636185fafb035df421e5c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7cafec2373293af1",
+          "quote": "Nori is an open-source (weights and training code) SDFM for tabular prediction, launched earlier this summer. It ranks first across 130+ public regression benchmarks."
+        },
+        {
+          "source_id": "FISRC-7cafec2373293af1",
+          "quote": "At just 30 million parameters, Nori-30M rivals Google's 1.6-billion-parameter TabFM. With thinking enabled, Nori-30M-thinking surpasses it, at roughly 2% of the size."
+        },
+        {
+          "source_id": "FISRC-45e0c8d386b55bbe",
+          "quote": "With Synthefy, anyone can generate synthetic time series data in minutes. For the first time, you can harness the power of Synthefy's diffusion models through our self-serve platform."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.295Z"
+    },
+    "EV-e11382111a5b99f6": {
+      "id": "EV-e11382111a5b99f6",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "compute",
+      "subsector_id": "ai-chips",
+      "product_form_id": "",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        3
+      ],
+      "rationale": "原文明确星辰技术为DF1000三维近存AI芯片完成量产验证，并提供AI算力芯片先进封装；纳入AI芯片产业链，不是机器人部件。",
+      "input_hash": "17e7eab8f118c334156653c796ee7a3aa579c2de43180cc16948016db69e29ae",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-662073c15d82f553",
+          "quote": "一个多月前，总部位于上海的东方算芯发布全球首颗采用三维近存计算技术的AI芯片DF1000，正是由星辰技术完成量产验证，一举破解了算力系统长期面临的“存储墙”“带宽墙”“功耗墙”等瓶颈。"
+        }
+      ],
+      "provider": "manual_review",
+      "model": "Codex",
+      "generated_at": "2026-10-02T01:02:28.867Z"
+    },
+    "EV-d321124f4f5e0edc": {
+      "id": "EV-d321124f4f5e0edc",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "sales-marketing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "Lightfield 将 CRM 重构为业务世界模型，智能体通过 SDK 执行工作并自动结构化客户交互数据，属于企业销售与营销赛道。",
+      "input_hash": "94cf4ae78c93e1bad551f4a56e4861cf2818f6d4da1724b8c478886f88a9337e",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c224adac23aa7c1e",
+          "quote": "Lightfield is reimagining CRM as a business world model, designed for agents to understand your company and perform work you can trust."
+        },
+        {
+          "source_id": "FISRC-c224adac23aa7c1e",
+          "quote": "Lightfield ingests every customer interaction - email, calendar, calls, Slack, LinkedIn - and structures it into the record on its own."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:07.295Z"
+    },
+    "EV-4e4ae1578720e907": {
+      "id": "EV-4e4ae1578720e907",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "entertainment",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Astrocade 是一个让用户通过自然语言生成并发布游戏的平台，直接面向个人消费者提供游戏创作与娱乐服务。",
+      "input_hash": "82309058f15bb7b93b1ad947dc04d9bf6edc557b55ff3a9bf57db1158c8f05dc",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1811bc88b6a13090",
+          "quote": "Astrocade is already the fastest way to go from an idea to a game that millions can play."
+        },
+        {
+          "source_id": "FISRC-1811bc88b6a13090",
+          "quote": "a platform where anyone with an idea can use generative AI to make it playable in minutes"
+        },
+        {
+          "source_id": "FISRC-ecce3315666a7744",
+          "quote": "Without requiring programming languages, the platform allows users to create and publish games through natural language prompts. Key elements of game development, including art, animation, background music, and game mechanics, are automatically generated and integrated by AI."
+        },
+        {
+          "source_id": "FISRC-b6d163eb5c4d9c7a",
+          "quote": "Astrocade's built-in distribution system puts your game in front of millions of players the day you publish."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:11.870Z"
+    },
+    "EV-b58eb81bf5235a33": {
+      "id": "EV-b58eb81bf5235a33",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Railway 是一个面向开发者的云平台，用于部署应用和数据库，属于 AI 开发与数据中的训练、微调与部署平台。",
+      "input_hash": "91f6837d8197ed6bc95deeb969057b77b21b015bab79953a05493a8e4b7bf5d5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-978c6dfd9f2ff831",
+          "quote": "Railway, a cloud platform that allows developers to ship faster and more efficiently"
+        },
+        {
+          "source_id": "FISRC-72c8859fe2a25c85",
+          "quote": "Railway is a San Francisco-based cloud platform for deploying applications and databases."
+        },
+        {
+          "source_id": "FISRC-978c6dfd9f2ff831",
+          "quote": "Railway set out to build an all new way to simplify developers' infrastructure stack from servers to observability with a single, scalable, easy-to-use platform."
+        },
+        {
+          "source_id": "FISRC-978c6dfd9f2ff831",
+          "quote": "By operating its own data centers with custom networking and orchestration, Railway charges only for actual usage"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:11.870Z"
+    },
+    "EV-54f4bd47b09c4dc3": {
+      "id": "EV-54f4bd47b09c4dc3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "model-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Trajectory 提供持续学习平台，帮助企业利用生产信号持续训练大规模智能体模型，属于模型训练与部署平台。",
+      "input_hash": "c3502bb6adadd44f7e98815f7eef50df1a7847084114e3c17422b261b55c4665",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-13a2dacfcddc2542",
+          "quote": "Trajectory, a research lab and product company focused on continual learning"
+        },
+        {
+          "source_id": "FISRC-dafb6cc9a597b6d8",
+          "quote": "Trajectory is a continual learning platform that turns production signals into AI models for ongoing product improvement."
+        },
+        {
+          "source_id": "FISRC-13a2dacfcddc2542",
+          "quote": "develop a platform that enables companies to continuously train large-scale agentic models using signals generated from product usage"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:11.870Z"
+    },
+    "EV-1891e6540ad2c1e0": {
+      "id": "EV-1891e6540ad2c1e0",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Exa 提供专为 AI 产品优化的网络搜索 API，属于面向开发者的数据平台与检索服务。",
+      "input_hash": "c93dbaf9a05ddf39b1f061a2826532a3a394f98311a0b10e4b7db0cbb773cdca",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0a9db64fb98f69ae",
+          "quote": "Artificial intelligence search infrastructure startup Exa is now a $2.2 billion company."
+        },
+        {
+          "source_id": "FISRC-6e4164653718cbf6",
+          "quote": "Exa just raised $250M at a $2.2B valuation led by a16z to power all agents with the highest quality web search."
+        },
+        {
+          "source_id": "FISRC-0a9db64fb98f69ae",
+          "quote": "Exa provides a web search API specifically optimized for AI products."
+        },
+        {
+          "source_id": "FISRC-5b2df5ac939036e6",
+          "quote": "Exa is an AI-powered search engine built specifically for machines. Unlike traditional search engines, Exa uses embeddings-based semantic searc to understand meaning rather than just matching keywords, making it ideal for feeding results directly into LLMs, AI agents, and RAG systems."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:11.870Z"
+    },
+    "EV-e0e966c028ca9a74": {
+      "id": "EV-e0e966c028ca9a74",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Coralogix 提供面向工程团队的可观测性平台，用于监控和理解系统数据，属于评测、监控与治理细分赛道。",
+      "input_hash": "a4c358c7a1664568e004c5e9b66cf68bae69cf37f35f9d54d9106c6502ffb079",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-98f1098c86cb2286",
+          "quote": "Coralogix, the data and AI platform for observability, today announced it has raised $200 million in Series F funding."
+        },
+        {
+          "source_id": "FISRC-b29e71e18614a471",
+          "quote": "Coralogix is a leading provider of observability solutions that help engineering teams monitor, understand, and act on their system data in real time."
+        },
+        {
+          "source_id": "FISRC-98f1098c86cb2286",
+          "quote": "Coralogix was built for that shift, with an observability architecture designed for full-fidelity ingestion, real-time streaming analytics, open formats and customer-owned storage at massive scale."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:11.870Z"
+    },
+    "EV-f713858c67327c28": {
+      "id": "EV-f713858c67327c28",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Sazabi 是一个 AI 原生的可观测性平台，利用 AI 智能体主动检测和解决生产问题，属于评测、监控与治理细分赛道。",
+      "input_hash": "c0c3abecd2f0802120eceb96cca31f11d033b8320a9ef3e6c862962056e5d538",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fbca80af0ef21f0d",
+          "quote": "Sazabi, the AI-native observability platform for fast-moving engineering teams, today announced an $8 million seed financing"
+        },
+        {
+          "source_id": "FISRC-fbca80af0ef21f0d",
+          "quote": "Sazabi uses AI agents to understand a team's logs, infrastructure, and codebase before proactively detecting, investigating, and resolving production issues."
+        },
+        {
+          "source_id": "FISRC-1b57614c4ace3168",
+          "quote": "Provider of autonomous observability software for conversational debugging and remediation. This platform integrates with coding agents to identify root causes, generate visualizations, and execute automated fixes for production issues."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:11.870Z"
+    },
+    "EV-823ca893b550b2f4": {
+      "id": "EV-823ca893b550b2f4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "general-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "consumer",
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Anthropic 主营 Claude 基础模型及配套工具，证据显示其模型被全球企业和个人广泛使用，属于通用基础模型。",
+      "input_hash": "e424a712742da8c2364b2eb91867c9a18bedafb803ebd78fc8bd92420236de5d",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "quote": "Anthropic has raised $65 billion in Series H funding led by Altimeter Capital, Dragoneer, Greenoaks, and Sequoia Capital, valuing the company at $965 billion post-money."
+        },
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "quote": "Global enterprises across industries are deploying Claude in their core operations, and a growing number of people around the world use it for their everyday work."
+        },
+        {
+          "source_id": "FISRC-b5e22ae086a6b353",
+          "quote": "we work tirelessly to make tools like Claude Code and Cowork more helpful, more powerful, and more adaptable to their needs"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:12.042Z"
+    },
+    "EV-5eb9944487368ea0": {
+      "id": "EV-5eb9944487368ea0",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "models",
+      "subsector_id": "specialist-models",
+      "product_form_id": "model-api",
+      "customer_ids": [
+        "business",
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Prometheus 专注于为工程、制造和药物设计等物理任务构建 AI 模型，属于专用模型赛道。",
+      "input_hash": "79e9056cdfdcdc91b9638b6a5193a953c28ee826cd631ba1981b68e76a3f6542",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b17263945320e175",
+          "quote": "Bezos revealed that Prometheus is developing a set of AI tools to help engineers design and manufacture physical products easier and faster."
+        },
+        {
+          "source_id": "FISRC-b17263945320e175",
+          "quote": "Prometheus is focused on building AI models for physical tasks, including engineering, manufacturing and drug design."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:12.042Z"
+    },
+    "EV-0a9d7be146eeb62a": {
+      "id": "EV-0a9d7be146eeb62a",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Engram 的首个产品是面向智能体的 API，用于在大型共享知识工作区上学习，明确面向开发者提供数据平台能力。",
+      "input_hash": "0a555f0c0f26d8fa1f70f1e7745adb7fd375b56c6522cf3a623dbe9eb2aff5ed",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "quote": "Engram trains models to study an organization's world and anticipate its questions in advance, forming a compact, continuously improving memory (also known as an \"engram\", a neuroscience term meaning the trace of memory in the brain) that's unique to each customer."
+        },
+        {
+          "source_id": "FISRC-5f3c6f77d1f548bd",
+          "quote": "Our first product is an API for agents that learn on very large shared knowledge workspaces."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:12.042Z"
+    },
+    "EV-78f25fe89d25eeb6": {
+      "id": "EV-78f25fe89d25eeb6",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "productivity",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "Town 提供跨工具的个人化 AI 工作助手，面向个人工作场景，属于企业通用 AI 中的办公与生产力赛道。",
+      "input_hash": "ef206e83d6eb02142bf99a9524ec4d76257ec8f9f714dbd5108f01f6344557a9",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-55e5e881c734a50f",
+          "quote": "Town is the truly personalized AI assistant that works for you. One assistant for all your work, across every tool and surface you already use."
+        },
+        {
+          "source_id": "FISRC-fb6e58a5cfb36ae5",
+          "quote": "Townies keep a wiki on how you work."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:12.042Z"
+    },
+    "EV-ce76d1c1572db8e4": {
+      "id": "EV-ce76d1c1572db8e4",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "consumer",
+      "subsector_id": "content-creation",
+      "product_form_id": "consumer-software",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        1
+      ],
+      "rationale": "Flam 构建 AI 基础设施平台使创作者能够生成交互式视频和 3D 体验，核心产品 Flicks 是面向创作者的 AI 生成内容工具。",
+      "input_hash": "0137814185f3e28c2cdf2a85f9386d4b1a7015de286f1a6ccad32c8acfe1ffe0",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-83ab416cf84d3f07",
+          "quote": "Flam, which is based in San Francisco, has built a proprietary artificial intelligence infrastructure platform that enables creators to generate interactive videos, real-time three-dimensional experiences and hyper-real visual agents."
+        },
+        {
+          "source_id": "FISRC-83ab416cf84d3f07",
+          "quote": "The first is Flicks, which are interactive videos generated by AI models, with AI compression algorithms that optimize playback, ensuring that interactions remain instantaneous and smooth."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:12.042Z"
+    },
+    "EV-224077c33b02562c": {
+      "id": "EV-224077c33b02562c",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "enterprise",
+      "subsector_id": "analytics",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2
+      ],
+      "rationale": "Listen 是 AI 优先的客户研究平台，通过 AI 访谈收集并分析用户反馈，属于企业通用 AI 中的数据分析与商业智能赛道。",
+      "input_hash": "953a3cfd060bb878a93bb339d8425b9689065415b29ad3068dd545ce49376f66",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dcf11a862138a06d",
+          "quote": "Listen is an AI-first customer research platform. Its AI interviewer talks to people the way a great interviewer would. With access to 30 million pre-qualified participants across demographics and geographies, teams can quickly learn what people think about anything, from ads and messaging to new product concepts and usability tests."
+        },
+        {
+          "source_id": "FISRC-dcf11a862138a06d",
+          "quote": "Listen turns these conversations into actionable outputs, including reports, themes, highlight reels, and presentation-ready decks. Over time, this creates a searchable repository of customer interviews that teams can query like a knowledge base."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:12.042Z"
+    },
+    "EV-07cef8183aa6c17b": {
+      "id": "EV-07cef8183aa6c17b",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "evaluation",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Pramaana Labs 专注于为人工智能提供形式验证，通过确定性层确保 LLM 输出正确性，属于模型评测与治理平台。",
+      "input_hash": "4f8eeace238fa7369a7b8f20d63d8412a9402c30178e895cf41ab7f2b077cfa8",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-65f37c7ff6d138e1",
+          "quote": "Pramaana Labs, a startup focused on bringing formal verification to artificial intelligence"
+        },
+        {
+          "source_id": "FISRC-35c5de2fa4b68376",
+          "quote": "Pramaana’s system still runs on a conventional LLM, giving it the flexibility to answer natural language questions and tackle complex problems that conventional computers can’t handle. But there’s a deterministic layer on top of that LLM ensuring the LLM’s work checks out."
+        },
+        {
+          "source_id": "FISRC-35c5de2fa4b68376",
+          "quote": "Pramaana’s unique approach is to use the tools of formal verification — drawing on the open source LEAN programming language used to verify mathematical proofs."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:16.697Z"
+    },
+    "EV-673637ebe2ac2f2d": {
+      "id": "EV-673637ebe2ac2f2d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer"
+      ],
+      "evidence_indices": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Sapiom 是面向构建者的 AI 智能体平台，提供本地构建、测试、部署及托管生产基础设施，明确服务于工程团队。",
+      "input_hash": "5f12738285733e1984970716deff488f7aca1c5945a9dd93858434cc4e3500e5",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "quote": "Sapiom, the platform builders use to ship, run, and scale AI agents"
+        },
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "quote": "Agent Studio gives engineering teams a local environment to build, test, inspect, and deploy agents with the context of their existing codebase."
+        },
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "quote": "Runtime provides the managed production infrastructure where those agents execute with the access, routing, recovery, step-level visibility, and controls required to operate at scale."
+        },
+        {
+          "source_id": "FISRC-840aa0ed4d90484c",
+          "quote": "Sapiom Runtime lets you operate agents reliably from the first deployment to massive scale without building or managing the infrastructure yourself. It provides sandboxes, memory, secrets, tool access, scheduled triggers, and automatic recovery when steps fail."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:16.697Z"
+    },
+    "EV-50b5c4f93ead145d": {
+      "id": "EV-50b5c4f93ead145d",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "data-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "Databricks 帮助公司使用专有数据构建 AI 智能体和应用，并提供面向 AI 智能体的数据库与治理网关，属于数据与开发平台。",
+      "input_hash": "679018a75bc5f0b560cfe0ac7d956cf8f1d20995cd035b6da93c55b790417296",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7d0845aba0b3d1f6",
+          "quote": "Founded in 2013, Databricks helps companies build AI agents and apps using proprietary data."
+        },
+        {
+          "source_id": "FISRC-23f811fd2df5ab63",
+          "quote": "Lakebase, its serverless Postgres database built for AI agents"
+        },
+        {
+          "source_id": "FISRC-23f811fd2df5ab63",
+          "quote": "Unity AI Gateway, for multi-AI governance and cost controls"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:16.697Z"
+    },
+    "EV-95385e7d45e69784": {
+      "id": "EV-95385e7d45e69784",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "developer-data",
+      "subsector_id": "agent-platforms",
+      "product_form_id": "developer-platform",
+      "customer_ids": [
+        "developer",
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "Xpander 提供厂商中立的企业级 AI 智能体构建、部署与治理平台，核心是通用智能体运行时，属于智能体开发与编排平台。",
+      "input_hash": "9f5ad189db1309c248ce0ff6d66947fe280a9a8bf253e8fd38591dd4512cf839",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "Founded in 2024 by former AWS Principal Engineers David Twizer (CEO), Moriel Pahima (CTO), and Ran Sheinberg (CPO), xpander.ai provides a vendor-neutral platform that enables enterprises to build, deploy, and govern AI agents across any model, cloud, or framework."
+        },
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "At the core of Xpander's platform is its universal agent harness, a model, framework, and cloud-agnostic runtime that executes AI agents as portable workloads within a customer's own environment while securely rendering agent interfaces on demand."
+        },
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "xpander.ai provides a vendor-neutral platform that enables enterprises to build, deploy, and govern AI agents across any model, cloud, or framework."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:16.697Z"
+    },
+    "EV-3f420ab30e43a3a3": {
+      "id": "EV-3f420ab30e43a3a3",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "manufacturing",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "CloudNC 提供用于精密加工的 AI 软件，核心产品 CAM Assist 加速 CNC 加工策略与刀具路径生成，属于工业软件与制造。",
+      "input_hash": "56f20894b33bf4b83c262fbc483107908538f2fe78342cf86de753dafcacecbb",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-583456b85ec1179e",
+          "quote": "CloudNC, the technology company that created the leading AI software for precision machining"
+        },
+        {
+          "source_id": "FISRC-aa7f7e8a58b1ffc9",
+          "quote": "CloudNC is transforming global manufacturing with AI that accelerates CAM programming, maximizes factory output, and empowers machinists to deliver more."
+        },
+        {
+          "source_id": "FISRC-583456b85ec1179e",
+          "quote": "CloudNC’s lead product, CAM Assist, uses AI to greatly reduce the time required to create CNC machining strategies and toolpaths, allowing teams to move from design to production faster and enabling skilled operators to increase their output."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:16.697Z"
+    },
+    "EV-c34ebd1db6227471": {
+      "id": "EV-c34ebd1db6227471",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "enterprise-software",
+      "customer_ids": [
+        "business"
+      ],
+      "evidence_indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Almanac Health 提供面向临床决策支持的统一临床 AI 平台，产品限制给执业医疗专业人员使用，属于医疗服务与临床。",
+      "input_hash": "b6506adcab6942600e3c9bf2235ce601fdc8e3b8eeb28c5b9df406b73e2db637",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6946be83f05bd7fd",
+          "quote": "Almanac Health, a Boston, MA–based unified clinical AI platform for clinical decision support, has raised $10 million in Seed funding."
+        },
+        {
+          "source_id": "FISRC-4c3c04db6cb8f119",
+          "quote": "Almanac Health is a health technology company that provides a research-validated clinical AI platform for evidence-based clinical decision support."
+        },
+        {
+          "source_id": "FISRC-912b46617f23feee",
+          "quote": "The product, Almanac Chat, introduces itself in its own onboarding as “The AI workspace for clinical work”, a place to ask clinical questions, work through patient cases, draft documents and run repeatable research tasks."
+        },
+        {
+          "source_id": "FISRC-912b46617f23feee",
+          "quote": "Almanac Health restricts the product to licensed healthcare professionals in active practice and to medical students, residents and fellows in accredited programmes."
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T00:57:16.697Z"
+    },
+    "EV-68cb62eca02df206": {
+      "id": "EV-68cb62eca02df206",
+      "scope": "included",
+      "exclusion_reason": "",
+      "sector_id": "industry",
+      "subsector_id": "healthcare",
+      "product_form_id": "ai-service",
+      "customer_ids": [
+        "consumer"
+      ],
+      "evidence_indices": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Neko Health 主营预防性健康检查服务，结合影像、血液分析与 AI 辅助诊断，属于医疗服务与临床行业 AI。",
+      "input_hash": "f350e0976182086af899fc82b3ec8066e5b1fdca9b9ca771d66e6db73f29cb0c",
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6442b5e548ad70ee",
+          "quote": "Swedish preventative healthcare company Neko Health has raised US$700 million in a Series C funding round"
+        },
+        {
+          "source_id": "FISRC-6442b5e548ad70ee",
+          "quote": "offering a 60-minute health assessment that combines advanced imaging, blood analysis, and AI-supported diagnostics to identify early signs of disease and assess risk factors for conditions including cardiovascular disease, diabetes, and skin cancer."
+        },
+        {
+          "source_id": "FISRC-3581a245f48a1be6",
+          "quote": "Neko Health has developed proprietary body-scanning technology, which it couples with bloodwork, to assess a person’s health. For gym lovers, the scan also now includes body composition information. It can couple the assessment with Apple Health data"
+        }
+      ],
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "generated_at": "2026-10-02T01:11:55.145Z"
     }
   },
-  "generated_at": "2026-10-01T19:54:15.211Z"
+  "generated_at": "2026-10-02T01:11:55.148Z"
 }

@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 19,
+    "current_round_count": 24,
     "historical_or_ambiguous_count": 5,
-    "portfolio_company_count": 15,
+    "portfolio_company_count": 19,
     "market_regions": [
       "GLOBAL"
     ],
@@ -76,10 +76,11 @@
     "role_counts": {
       "co_lead": 1,
       "historical_or_ambiguous": 5,
-      "lead": 7,
-      "participant": 11
+      "lead": 9,
+      "participant": 14
     },
     "round_codes": [
+      "multi_round",
       "seed",
       "series_a",
       "series_c",
@@ -87,9 +88,15 @@
       "series_e",
       "series_f",
       "series_g",
+      "series_h",
       "undisclosed"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-e3797aea6accf7d7",
+        "canonical_entity_id": "",
+        "name": "Almanac Health, Inc."
+      },
       {
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
@@ -126,9 +133,19 @@
         "name": "Harmony"
       },
       {
+        "entity_id": "EN-e2e2d8b189801fe6",
+        "canonical_entity_id": "",
+        "name": "Lightfield"
+      },
+      {
         "entity_id": "EN-c04bd5ebd10ab696",
         "canonical_entity_id": "EN-c04bd5ebd10ab696",
         "name": "Mistral AI"
+      },
+      {
+        "entity_id": "EN-46a10435f014ccc9",
+        "canonical_entity_id": "",
+        "name": "Neko Health"
       },
       {
         "entity_id": "EN-a972bc1b3220493e",
@@ -144,6 +161,11 @@
         "entity_id": "FICO-d750f652e8f2dd92",
         "canonical_entity_id": "",
         "name": "Profound"
+      },
+      {
+        "entity_id": "EN-0fdf674dcd7e8566",
+        "canonical_entity_id": "",
+        "name": "Reactor"
       },
       {
         "entity_id": "EN-7331374f7091259f",
@@ -324,6 +346,46 @@
             "source_content_hash": "32afd0796e8cd3299302ffc62a7482a19cb493497319b76e7c7338d7404a578e",
             "quote": "co-led by Lightspeed, with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global, with strong participation from T. Rowe Price and SV Angel",
             "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-f8e82f7c1148053e",
+        "funding_insight_id": "FI-4065d03db9160118",
+        "event_ids": [
+          "EV-d321124f4f5e0edc"
+        ],
+        "company_entity_id": "EN-e2e2d8b189801fe6",
+        "company_canonical_entity_id": "",
+        "company_name": "Lightfield",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$47 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 47000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4700 万美元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c224adac23aa7c1e",
+            "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+            "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+            "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+            "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+            "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
           }
         ]
       },
@@ -538,6 +600,46 @@
         ]
       },
       {
+        "activity_id": "IA-297c47de632f0c41",
+        "funding_insight_id": "FI-df55ec22162132fb",
+        "event_ids": [
+          "EV-68cb62eca02df206"
+        ],
+        "company_entity_id": "EN-46a10435f014ccc9",
+        "company_canonical_entity_id": "",
+        "company_name": "Neko Health",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$700m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-07-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-6442b5e548ad70ee",
+            "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+            "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+            "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+            "quote": "the funding round was led by Lightspeed Venture Partners and co-led by OG Venture Partners",
+            "quote_hash": "c8c2a1a95dd7dc0c6598d1f3d8da1fd15725127ef1c3300c8d9d32b1931001a1"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-bbff0b2dfce3ed87",
         "funding_insight_id": "FI-7ba66ce9eb0ab250",
         "event_ids": [
@@ -619,6 +721,86 @@
         ]
       },
       {
+        "activity_id": "IA-e79f211d88398405",
+        "funding_insight_id": "FI-ef9bfb1255d96618",
+        "event_ids": [
+          "EV-823ca893b550b2f4"
+        ],
+        "company_entity_id": "EN-c70eca6b0f88f44d",
+        "company_canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "company_name": "Anthropic",
+        "round": "H轮",
+        "round_code": "series_h",
+        "round_original": "H轮",
+        "amount_original": "$65 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 65000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "650 亿美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-b5e22ae086a6b353",
+            "source_url": "https://www.anthropic.com/news/series-h",
+            "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+            "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+            "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+            "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-0869fa57a996ab05",
+        "funding_insight_id": "FI-a2d7898df4759b46",
+        "event_ids": [
+          "EV-c6d46d4dae65ba7e"
+        ],
+        "company_entity_id": "EN-0fdf674dcd7e8566",
+        "company_canonical_entity_id": "",
+        "company_name": "Reactor",
+        "round": "多轮融资",
+        "round_code": "multi_round",
+        "round_original": "多轮融资",
+        "amount_original": "$59M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 59000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5900 万美元"
+        },
+        "announced_at": "2026-05-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-d1657a784e92d59a",
+            "source_url": "https://lsvp.com/stories/the-developer-platform-for-world-models-our-series-a-in-reactor/",
+            "source_title": "世界模型的开发者平台：我们在Reactor的A轮融资",
+            "source_content_hash": "dead7f858bd6d786e0c4f9a96d22565fc8676f17a9e9669b211681b2d447058d",
+            "quote": "Today, Lightspeed is announcing we’re leading Reactor’s Series A after co-leading their Seed — $59M in combined funding",
+            "quote_hash": "02c5aa1341bc5b2ce7f81395d54209128651b87bdffe4e35110ca661d3d537ad"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-8dee90ff3484942c",
         "funding_insight_id": "FI-0e4f80762088cfd0",
         "event_ids": [
@@ -655,6 +837,46 @@
             "source_content_hash": "c2fb0635b7d5e4c5549c2e2679b33c49a4bc1394fbb801ccb6b502b5019f26fc",
             "quote": "The round was led by Lightspeed Venture Partners, with participation from Picture Capital and Cerca Partners.",
             "quote_hash": "babcc47f7a265fac0a2cb70741b577202390ed5449ec4f97cfbd014e30dbc61d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4cb506bd7aebc7af",
+        "funding_insight_id": "FI-96276ea81e78cfe5",
+        "event_ids": [
+          "EV-c34ebd1db6227471"
+        ],
+        "company_entity_id": "EN-e3797aea6accf7d7",
+        "company_canonical_entity_id": "",
+        "company_name": "Almanac Health, Inc.",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$10 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1000 万美元"
+        },
+        "announced_at": "2026-04-24",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6946be83f05bd7fd",
+            "source_url": "https://www.thesaasnews.com/news/almanac-health-raises-10m-in-seed-round/",
+            "source_title": "Almanac Health 完成 1000 万美元种子轮融资",
+            "source_content_hash": "907c7a9b4e5df9a833c71d340559caf6f86896cb55d395824156214072e94e6d",
+            "quote": "The round was led by F-Prime, with participation from General Catalyst and Lightspeed Venture Partners.",
+            "quote_hash": "f9f2b40f7a82566a7f4ebcb63c723a73b06e284f7e6e19bec41c28e44c3943a9"
           }
         ]
       },
@@ -1137,6 +1359,14 @@
         "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
       },
       {
+        "source_id": "FISRC-c224adac23aa7c1e",
+        "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+        "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+        "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+        "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+        "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
+      },
+      {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
         "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -1185,6 +1415,14 @@
         "quote_hash": "955909c0ef6c69c5516e1ed2f2a0ebcb8a6969e618b05f98846956e20c3433ff"
       },
       {
+        "source_id": "FISRC-6442b5e548ad70ee",
+        "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+        "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+        "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+        "quote": "the funding round was led by Lightspeed Venture Partners and co-led by OG Venture Partners",
+        "quote_hash": "c8c2a1a95dd7dc0c6598d1f3d8da1fd15725127ef1c3300c8d9d32b1931001a1"
+      },
+      {
         "source_id": "FISRC-08afa07ec89dda4d",
         "source_url": "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey",
         "source_title": "Assort Health 完成 1.2 亿美元 C 轮融资，扩大患者旅程中最大规模 AI 智能体部署",
@@ -1201,12 +1439,36 @@
         "quote_hash": "7393616818b22237933a8270448577e9af66e2e0c318f8a25e3c8a8c145ce7bf"
       },
       {
+        "source_id": "FISRC-b5e22ae086a6b353",
+        "source_url": "https://www.anthropic.com/news/series-h",
+        "source_title": "Anthropic 在 H 轮融资中筹集 $65B，投后估值 $965B",
+        "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
+        "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
+        "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
+      },
+      {
+        "source_id": "FISRC-d1657a784e92d59a",
+        "source_url": "https://lsvp.com/stories/the-developer-platform-for-world-models-our-series-a-in-reactor/",
+        "source_title": "世界模型的开发者平台：我们在Reactor的A轮融资",
+        "source_content_hash": "dead7f858bd6d786e0c4f9a96d22565fc8676f17a9e9669b211681b2d447058d",
+        "quote": "Today, Lightspeed is announcing we’re leading Reactor’s Series A after co-leading their Seed — $59M in combined funding",
+        "quote_hash": "02c5aa1341bc5b2ce7f81395d54209128651b87bdffe4e35110ca661d3d537ad"
+      },
+      {
         "source_id": "FISRC-0191618f7b8a168d",
         "source_url": "https://techcrunch.com/2026/05/19/from-teen-hacker-to-iron-dome-researcher-this-founder-raised-28m-to-fight-ai-phishing",
         "source_title": "从青少年黑客到铁穹研究员，这位创始人融资2800万美元以对抗AI钓鱼",
         "source_content_hash": "c2fb0635b7d5e4c5549c2e2679b33c49a4bc1394fbb801ccb6b502b5019f26fc",
         "quote": "The round was led by Lightspeed Venture Partners, with participation from Picture Capital and Cerca Partners.",
         "quote_hash": "babcc47f7a265fac0a2cb70741b577202390ed5449ec4f97cfbd014e30dbc61d"
+      },
+      {
+        "source_id": "FISRC-6946be83f05bd7fd",
+        "source_url": "https://www.thesaasnews.com/news/almanac-health-raises-10m-in-seed-round/",
+        "source_title": "Almanac Health 完成 1000 万美元种子轮融资",
+        "source_content_hash": "907c7a9b4e5df9a833c71d340559caf6f86896cb55d395824156214072e94e6d",
+        "quote": "The round was led by F-Prime, with participation from General Catalyst and Lightspeed Venture Partners.",
+        "quote_hash": "f9f2b40f7a82566a7f4ebcb63c723a73b06e284f7e6e19bec41c28e44c3943a9"
       },
       {
         "source_id": "FISRC-d354011359557f2f",

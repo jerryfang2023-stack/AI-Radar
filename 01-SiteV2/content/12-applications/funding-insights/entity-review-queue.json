@@ -2,12 +2,12 @@
   "meta": {
     "schema_version": "FUNDING-INSIGHT-ENTITY-REVIEW-V1.0",
     "funding_insight_version": "FUNDING-INSIGHT-V1.3",
-    "candidate_count": 1545,
-    "product_candidates": 907,
-    "person_candidates": 638,
-    "china_market_candidates": 497,
-    "china_market_product_candidates": 430,
-    "china_market_person_candidates": 67,
+    "candidate_count": 1627,
+    "product_candidates": 943,
+    "person_candidates": 684,
+    "china_market_candidates": 500,
+    "china_market_product_candidates": 431,
+    "china_market_person_candidates": 69,
     "rule": "Application evidence never mutates canonical V4 entities automatically."
   },
   "candidates": [
@@ -550,6 +550,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-025b8cbe6e0d599b",
+      "candidate_kind": "person",
+      "research_name": "Alberto Taiuti",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0fdf674dcd7e8566"
+      ],
+      "funding_insight_ids": [
+        "FI-106a6c8d3230e0bd"
+      ],
+      "source_event_ids": [
+        "EV-c6d46d4dae65ba7e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d1657a784e92d59a",
+          "quote": "Founded by long-time friends, Alberto Taiuti and Bryce Schmidtchen met while working together on the early Vision Pro team at Apple on video models and infrastructure.",
+          "source_content_hash": "dead7f858bd6d786e0c4f9a96d22565fc8676f17a9e9669b211681b2d447058d",
+          "quote_hash": "ee1fec0ee03bcf25cfa61dc11c1097ea0823a543d31a13e469ce415b96150665"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-70433e4a12e69c52",
       "candidate_kind": "person",
       "research_name": "Alejandro Domingo",
@@ -938,6 +966,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-ca0516720e253469",
+      "candidate_kind": "person",
+      "research_name": "Alfred Wahlforss",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-720d7b20a013162b"
+      ],
+      "funding_insight_ids": [
+        "FI-ef91c9aa46769353"
+      ],
+      "source_event_ids": [
+        "EV-224077c33b02562c"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dcf11a862138a06d",
+          "quote": "\"When you obsess over customers, everything else follows,\" said Alfred Wahlforss, co-founder and CEO of Listen Labs.",
+          "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+          "quote_hash": "89a1c6ba22872a3deb4e12e67a17f6e6a721a7dd2b4b19b0e1f7b8c904baca1a"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-b559c2fc4d3002dd",
       "candidate_kind": "person",
       "research_name": "Ali Ghodsi",
@@ -947,10 +1003,12 @@
         "EN-2dc010636b9dce91"
       ],
       "funding_insight_ids": [
+        "FI-0104e002abf6eb2f",
         "FI-d6560f76dae43e6b"
       ],
       "source_event_ids": [
-        "EV-0d4e656aa51f9a46"
+        "EV-0d4e656aa51f9a46",
+        "EV-50b5c4f93ead145d"
       ],
       "evidence_refs": [
         {
@@ -958,6 +1016,46 @@
           "quote": "Databricks was co-founded by chief executive Ali Ghodsi",
           "source_content_hash": "2bc06e3f143e739c",
           "quote_hash": "5a7d4265b973a553a3617439c2ec192cb51b26f0d9c468522133e99cb494851a"
+        },
+        {
+          "source_id": "FISRC-23f811fd2df5ab63",
+          "quote": "said Ali Ghodsi, Co-founder and CEO of Databricks",
+          "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+          "quote_hash": "216558b3a97e270e8331da4c46c2ea265e8dd93f59c1362857d0a13be7cfd43c"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-31eb282f41353397",
+      "candidate_kind": "person",
+      "research_name": "Ali Sadeghian",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-ae3d8efc01c7627d"
+      ],
+      "funding_insight_ids": [
+        "FI-ab2d017f9a2b730d"
+      ],
+      "source_event_ids": [
+        "EV-4e4ae1578720e907"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1811bc88b6a13090",
+          "quote": "Founders Amir and Ali Sadeghian are brothers, Iranian-American, raised across four continents.",
+          "source_content_hash": "693c6512091f05ffa16b907ec04a3e307326051b109c094cbc783d00543e7a71",
+          "quote_hash": "c7f5db50843a5cbaa20c617ef8cfc9060d42ebcddb0f578e2b0ee53cda3004bf"
+        },
+        {
+          "source_id": "FISRC-ecce3315666a7744",
+          "quote": "The company is led by co-founders Amir Sadeghian and Ali Sadeghian, both leading AI researchers",
+          "source_content_hash": "2cfcc84d11bb089c",
+          "quote_hash": "27713451bdd6d73caf959ed74903faf6698ac66b84e370e749bb78f494bcc043"
         }
       ],
       "market_regions": [
@@ -1172,6 +1270,90 @@
           "quote": "Arvatz founded PointFive back in 2023 along with cybersecurity veterans Gal Ben David (left) and Amir Hozez (right).",
           "source_content_hash": "11683bab4c01ccd3",
           "quote_hash": "171def64b2706fb06280a38b219a7d4325d484903ee8173d3a50b4a5761148ac"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-b893cc9a1ce1c7a1",
+      "candidate_kind": "person",
+      "research_name": "Amir Lazarovich",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-8775a329d57598d2"
+      ],
+      "funding_insight_ids": [
+        "FI-8cf9c6eca9e8b293"
+      ],
+      "source_event_ids": [
+        "EV-03fc697a9838f39e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d8f2f6d7fc0871dd",
+          "quote": "co-founder and CTO Amir Lazarovich, formerly a senior software engineering manager at Google",
+          "source_content_hash": "29820751dcab4ec5b5ce0cf030397688f6dfa3a330040840b8e553a189d4af39",
+          "quote_hash": "4fbc25270bc0f3904871ea8231f52ee708357fb63129b6a6269c16a5d8af491d"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-d95f21b5d150f357",
+      "candidate_kind": "person",
+      "research_name": "Amir Sadeghian",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-ae3d8efc01c7627d"
+      ],
+      "funding_insight_ids": [
+        "FI-ab2d017f9a2b730d"
+      ],
+      "source_event_ids": [
+        "EV-4e4ae1578720e907"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1811bc88b6a13090",
+          "quote": "Founders Amir and Ali Sadeghian are brothers, Iranian-American, raised across four continents.",
+          "source_content_hash": "693c6512091f05ffa16b907ec04a3e307326051b109c094cbc783d00543e7a71",
+          "quote_hash": "c7f5db50843a5cbaa20c617ef8cfc9060d42ebcddb0f578e2b0ee53cda3004bf"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-4c9cbf32e9b93deb",
+      "candidate_kind": "person",
+      "research_name": "Amit Gaiki",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1ae1dd29593288ec"
+      ],
+      "funding_insight_ids": [
+        "FI-fab6303ee3f6017e"
+      ],
+      "source_event_ids": [
+        "EV-ce76d1c1572db8e4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-831b02f8570a1c2b",
+          "quote": "Shourya Agarwal, Malhar Patil, and Amit Gaiki founded it in 2021.",
+          "source_content_hash": "4ea42bd111193622",
+          "quote_hash": "be0b6257cae58914a40c7649fb95a494c5e5d2d3cdf3988558f1ad66bd33b90a"
         }
       ],
       "market_regions": [
@@ -1538,6 +1720,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-7e96dd56082e14a8",
+      "candidate_kind": "person",
+      "research_name": "Ant Wilson",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4d7594e57f7d03f3"
+      ],
+      "funding_insight_ids": [
+        "FI-74f3a658b5ce6913"
+      ],
+      "source_event_ids": [
+        "EV-42ba61e8713cd2e6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "quote": "Paul Copplestone (CEO) and Ant Wilson (CTO) co-founded Supabase in 2020",
+          "source_content_hash": "2ff196d4fa7dc98a",
+          "quote_hash": "5d258e8e36c16360905edfeb5e837735ddd918bf1793a575c364b931a9b03e25"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-a752806843628492",
       "candidate_kind": "person",
       "research_name": "Anthony Jules",
@@ -1816,6 +2026,62 @@
           "quote": "Stanford engineer Ares Geovanos",
           "source_content_hash": "bf887bd5437c51a7",
           "quote_hash": "f67cfa4b28059f646f560ff6c1c9cd3b781b6a26f119e98238f3a82263c4b53b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-b4963708a3131a61",
+      "candidate_kind": "person",
+      "research_name": "Ariel Assaraf",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d4a51069cba266d5"
+      ],
+      "funding_insight_ids": [
+        "FI-d8cb5aed61c65826"
+      ],
+      "source_event_ids": [
+        "EV-e0e966c028ca9a74"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-98f1098c86cb2286",
+          "quote": "said Ariel Assaraf, CEO and co-founder of Coralogix",
+          "source_content_hash": "d20ed695940e0cb15ecd2d8bc0ac9cd1ad59744672f140cde649e21c0f78d2de",
+          "quote_hash": "1faa7f109cb29a6fdd07a1bd41e78bc6c7e58344511f3124a3088666d2eaf953"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-1a8f009a39d056b2",
+      "candidate_kind": "person",
+      "research_name": "Arjun Karanam",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c32662785b597e46"
+      ],
+      "funding_insight_ids": [
+        "FI-a3d30a9eba7bdb65"
+      ],
+      "source_event_ids": [
+        "EV-54f4bd47b09c4dc3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-13a2dacfcddc2542",
+          "quote": "Founded by Ronak Malde, Michael Elabd, and Arjun Karanam",
+          "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+          "quote_hash": "c818f264b7234c2b67726ca53c548672328407864baf53beb55d165f50211da3"
         }
       ],
       "market_regions": [
@@ -2609,6 +2875,62 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-015f09112941446e",
+      "candidate_kind": "person",
+      "research_name": "Bryant Chou",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5bf8433fda374b42"
+      ],
+      "funding_insight_ids": [
+        "FI-cb3fa4f39250ff32"
+      ],
+      "source_event_ids": [
+        "EV-ba7fd8ed5a019717"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-06b0e5fa3929381b",
+          "quote": "Founded by Bryant Chou, co-founder and former CTO of Webflow",
+          "source_content_hash": "9ad34c373c3c1927a5a5e75bac017b837c14a0fd801cb1af9373dd2000d77cbb",
+          "quote_hash": "fc2b4181fdc8b2fc7967d19fea5aae9f0782909cfaf8b35a74577b5948ff255f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-409df5b3ba1f8aeb",
+      "candidate_kind": "person",
+      "research_name": "Bryce Schmidtchen",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0fdf674dcd7e8566"
+      ],
+      "funding_insight_ids": [
+        "FI-106a6c8d3230e0bd"
+      ],
+      "source_event_ids": [
+        "EV-c6d46d4dae65ba7e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d1657a784e92d59a",
+          "quote": "Founded by long-time friends, Alberto Taiuti and Bryce Schmidtchen met while working together on the early Vision Pro team at Apple on video models and infrastructure.",
+          "source_content_hash": "dead7f858bd6d786e0c4f9a96d22565fc8676f17a9e9669b211681b2d447058d",
+          "quote_hash": "ee1fec0ee03bcf25cfa61dc11c1097ea0823a543d31a13e469ce415b96150665"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-9db8f5cc9615f223",
       "candidate_kind": "person",
       "research_name": "Byung-Gon Chun",
@@ -3008,9 +3330,11 @@
         "EN-450dcf23e621ff10"
       ],
       "funding_insight_ids": [
-        "FI-a04737ee8d57173c"
+        "FI-a04737ee8d57173c",
+        "FI-c04825b3aebe788f"
       ],
       "source_event_ids": [
+        "EV-0a9d7be146eeb62a",
         "EV-20d762872664fddb"
       ],
       "evidence_refs": [
@@ -3019,6 +3343,12 @@
           "quote": "Chris Ré — one of the most influential figures in modern machine learning and a co-founder of Engram",
           "source_content_hash": "f7105d727554bb38",
           "quote_hash": "e729cbcb6f30f23677dee36c218bf9ee9f60e90cfb80698b7e93627f4104a4fc"
+        },
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "quote": "one of the most influential figures in modern machine learning and a co-founder of Engram",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+          "quote_hash": "d796ea96deec860943c97c902ed4201d4c48fe33a2b8794bf609410ba177cec8"
         }
       ],
       "market_regions": [
@@ -3417,6 +3747,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-cac61930d3862cbe",
+      "candidate_kind": "person",
+      "research_name": "Cyril Zakka",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-e3797aea6accf7d7"
+      ],
+      "funding_insight_ids": [
+        "FI-4abccdec5c0601e7"
+      ],
+      "source_event_ids": [
+        "EV-c34ebd1db6227471"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6946be83f05bd7fd",
+          "quote": "Founded by Cyril Zakka, Almanac Health is a clinical AI platform that delivers specialist-grade knowledge to clinicians at the point of care.",
+          "source_content_hash": "907c7a9b4e5df9a833c71d340559caf6f86896cb55d395824156214072e94e6d",
+          "quote_hash": "96521cbe010218a6789d599c0ea4ee22d2a515f8684625a467ffe63158c44978"
+        },
+        {
+          "source_id": "FISRC-7b44b1af3d3f9dce",
+          "quote": "Cyril Zakka, Founder And CEO, Almanac Health",
+          "source_content_hash": "1417cb34729fda44",
+          "quote_hash": "9cb48a8d90c122d4ad0d144825f268a28ecce19a87a65a96e2d62fc9e209e9cb"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-2a9df32a6b7bba7e",
       "candidate_kind": "person",
       "research_name": "Cyrus Hodes",
@@ -3544,9 +3908,11 @@
         "EN-450dcf23e621ff10"
       ],
       "funding_insight_ids": [
-        "FI-a04737ee8d57173c"
+        "FI-a04737ee8d57173c",
+        "FI-c04825b3aebe788f"
       ],
       "source_event_ids": [
+        "EV-0a9d7be146eeb62a",
         "EV-20d762872664fddb"
       ],
       "evidence_refs": [
@@ -3555,6 +3921,12 @@
           "quote": "Founded by a team of researchers from Stanford, Berkeley, and Cornell, including CEO Dan Biderman and CTO Sabri Eyuboglu",
           "source_content_hash": "f7105d727554bb38",
           "quote_hash": "b0bc0a7c31376b6be9ebe0e73dce90abb0f1e2485601ebeb6459ebef752c231e"
+        },
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "quote": "said Dan Biderman, CEO and co-founder of Engram",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+          "quote_hash": "ee89921a316bad3e27feffdecdedf4286e99e20e1b71ce7e5b986e61adc47a9e"
         }
       ],
       "market_regions": [
@@ -3619,6 +3991,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-3f84f37d251531fa",
+      "candidate_kind": "person",
+      "research_name": "Dan McArdle",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4968d0cf3b24d26d"
+      ],
+      "funding_insight_ids": [
+        "FI-62cdbd4b88f14773"
+      ],
+      "source_event_ids": [
+        "EV-1891e6540ad2c1e0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f639021ad89bed02",
+          "quote": "Dan McArdle: Co-Founder & CTO of Exa and founder of 2 other companies, Digital Currency Council and Sabr.",
+          "source_content_hash": "019366109900f2b9",
+          "quote_hash": "8fe57d7aaf153b1aef74f4c8c6232666ae12c5a373ab5b9177ce1df5ecaf1835"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-d1cc0183bf9a4bf5",
       "candidate_kind": "person",
       "research_name": "Dan Roth",
@@ -3673,6 +4073,34 @@
           "quote": "Reka CEO and co-founder Dani Yogatama said.",
           "source_content_hash": "4463564250160826",
           "quote_hash": "74b55d19fa363d70ba5d0420f7efc99964ef54e800925524a2c5f0ac94a44672"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-28a78142e5f897c7",
+      "candidate_kind": "person",
+      "research_name": "Daniel Ek",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-46a10435f014ccc9"
+      ],
+      "funding_insight_ids": [
+        "FI-3516433df02352d1"
+      ],
+      "source_event_ids": [
+        "EV-68cb62eca02df206"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6442b5e548ad70ee",
+          "quote": "Founded in 2018 by Hjalmar Nilsonne and Spotify Co-Founder Daniel Ek",
+          "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+          "quote_hash": "bd7b245be927efe2b80c7084622a51760b439fccae293b58ca192796003c8e6e"
         }
       ],
       "market_regions": [
@@ -3803,11 +4231,13 @@
       ],
       "funding_insight_ids": [
         "FI-34ad46762c245ae0",
+        "FI-58ddf5e7e24d981b",
         "FI-9636fec345e018a2"
       ],
       "source_event_ids": [
         "EV-31df816db86db282",
-        "EV-78a11d309c3d4e97"
+        "EV-78a11d309c3d4e97",
+        "EV-823ca893b550b2f4"
       ],
       "evidence_refs": [
         {
@@ -3821,6 +4251,12 @@
           "quote": "Anthropic was founded in 2021 by former OpenAI executives Dario Amodei (CEO), Daniela Amodei, Jack Clark, Sam McCandlish, and Tom Brown.",
           "source_content_hash": "574df0fdc225fe9e",
           "quote_hash": "29a30ad49b2935d7e248ae343220413e005eeb9037fd252bbfb9e699b5d6d251"
+        },
+        {
+          "source_id": "FISRC-819743037063ec41",
+          "quote": "Anthropic was founded in 2021 by Dario Amodei (CEO), his sister Daniela Amodei (President), and five colleagues who left OpenAI.",
+          "source_content_hash": "86757172fccc9505",
+          "quote_hash": "a0cedcc9a3acade44945ba1d2ef56342962d2783ff07e7809d5282aa7424c978"
         }
       ],
       "market_regions": [
@@ -3973,6 +4409,40 @@
           "quote": "David Korn Founder AI Projects @ Google, exited previous company to beglaubigt.de (YC F24)",
           "source_content_hash": "af898505e4623023",
           "quote_hash": "a6c74c16b7ac95bda0e90a4b496e80a9dc6cf48a8609b93ce9aa951b713136f1"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-2945dbc1cfb40076",
+      "candidate_kind": "person",
+      "research_name": "David Twizer",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-a1b7a0cc37ed257d"
+      ],
+      "funding_insight_ids": [
+        "FI-2aee1934d480a82d"
+      ],
+      "source_event_ids": [
+        "EV-95385e7d45e69784"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "Xpander was founded by David Twizer, Ran Sheinberg, and Moriel Pahima",
+          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
+          "quote_hash": "80345d2daf9ebce5a1948121a7c3428d9338abdbeb8b6091446b653dea82179e"
+        },
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "David Twizer (CEO)",
+          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
+          "quote_hash": "f788941f87e73b9b948ec40796b5725d55ab0028bbf9a14f16c05e691d9e190c"
         }
       ],
       "market_regions": [
@@ -4714,14 +5184,17 @@
       "status": "pending_canonical_review",
       "reason": "canonical_exact_match_missing",
       "company_entity_ids": [
+        "EN-6fcba5d96a4fadfd",
         "EN-7d3194f79e645c42",
         "EN-e78bdebae031095b"
       ],
       "funding_insight_ids": [
         "FI-06d78a3e69ce2cb4",
-        "FI-98468ca82a2ccdd4"
+        "FI-98468ca82a2ccdd4",
+        "FI-a0bd35076a28ce83"
       ],
       "source_event_ids": [
+        "EV-688ef84a4024e075",
         "EV-d4e44892226be468",
         "EV-ef7346378fcf9746"
       ],
@@ -4737,6 +5210,12 @@
           "quote": "Elon Musk - an OpenAI co-founder who left the board in 2018",
           "source_content_hash": "494969b64dc816f3",
           "quote_hash": "f2c56f50b40380aa52aa23e44a3b93ba248dad42d34a95e2d2bfd184fe78bd05"
+        },
+        {
+          "source_id": "FISRC-3b4badfc5c7972fa",
+          "quote": "The founders of xAI are Kyle Kosic, Greg Yang, Elon Musk and Yuhuai Wu. Elon Musk is the CEO of xAI.",
+          "source_content_hash": "d1bd5f5bb5d9679b",
+          "quote_hash": "0c17139b51cc468a4007d0741a465efaf63b11508a1ea1611beaf0bafbe523d9"
         }
       ],
       "market_regions": [
@@ -5330,6 +5809,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-b8e589d703f8c7a6",
+      "candidate_kind": "person",
+      "research_name": "Fei-Fei Li",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-ae3d8efc01c7627d"
+      ],
+      "funding_insight_ids": [
+        "FI-ab2d017f9a2b730d"
+      ],
+      "source_event_ids": [
+        "EV-4e4ae1578720e907"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-236be7e662176457",
+          "quote": "The startup was founded in 2022 by Amir Sadeghian, Ali Sadeghian, Fei-Fei Li, and Johannes Otterbach.",
+          "source_content_hash": "85199978301e944b",
+          "quote_hash": "52512d76a14baf8e61609bb0b00006be0e7fd9f4042677a76bff4cd07ab7cdb0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-32765e07ecf9dea2",
       "candidate_kind": "person",
       "research_name": "Filip Lindvall",
@@ -5462,6 +5969,34 @@
           "quote": "Atira cofounder and CEO Florian Diegruber said.",
           "source_content_hash": "2c19612efff8843e",
           "quote_hash": "7f68c85c1cdc0f4163dd4f8f2833f101367bd8a1d8833608c0d51ef5fea211f8"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-e5884269f5a76213",
+      "candidate_kind": "person",
+      "research_name": "Florian Juengermann",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-720d7b20a013162b"
+      ],
+      "funding_insight_ids": [
+        "FI-ef91c9aa46769353"
+      ],
+      "source_event_ids": [
+        "EV-224077c33b02562c"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-29afd9140ba918c9",
+          "quote": "Listen Labs is a series B company based in San Francisco (United States), founded in 2023 by Alfred Wahlforss and Florian Juengermann.",
+          "source_content_hash": "c32d632e12597961",
+          "quote_hash": "29d0e66b44899ad37ebecdebbd8cf4f4a9205f8bd85464be7fbc5b02a1827f8c"
         }
       ],
       "market_regions": [
@@ -6073,6 +6608,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-61bf713c13ccfab5",
+      "candidate_kind": "person",
+      "research_name": "Greg Yang",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "funding_insight_ids": [
+        "FI-a0bd35076a28ce83"
+      ],
+      "source_event_ids": [
+        "EV-688ef84a4024e075"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3b4badfc5c7972fa",
+          "quote": "The founders of xAI are Kyle Kosic, Greg Yang, Elon Musk and Yuhuai Wu.",
+          "source_content_hash": "d1bd5f5bb5d9679b",
+          "quote_hash": "ff914cd3c8fdf996bebb71a3692563d18cfc0ff42355d6ec072a8641021af3bc"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-0df93254d3e4e889",
       "candidate_kind": "person",
       "research_name": "Guanlan Dai",
@@ -6285,6 +6848,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-efeb7f52d1c5c977",
+      "candidate_kind": "person",
+      "research_name": "Henri Liriani",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-e2e2d8b189801fe6"
+      ],
+      "funding_insight_ids": [
+        "FI-e037d153d435bd8b"
+      ],
+      "source_event_ids": [
+        "EV-d321124f4f5e0edc"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-9ec1cf9a095c8889",
+          "quote": "CEO Keith Peiris and CPO Henri Liriani (both ex-Meta, where they built products for billions of users)",
+          "source_content_hash": "ce21121fa2e470d4",
+          "quote_hash": "645bc8f955aa7bf5670d8de394144efd520943bc3ed21bc5927283395980d7fc"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-059b2aa1da480f0b",
       "candidate_kind": "person",
       "research_name": "Henrik Christensen",
@@ -6367,6 +6958,34 @@
           "quote": "Hitoshi Murakami, the founder and CEO",
           "source_content_hash": "ea6fe3d2a3da193e",
           "quote_hash": "b10a879684363a0df13faf5996f2afaa980c07cdac5da9de44e7614bbaeef1fb"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-a4756a4f29e9696b",
+      "candidate_kind": "person",
+      "research_name": "Hjalmar Nilsonne",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-46a10435f014ccc9"
+      ],
+      "funding_insight_ids": [
+        "FI-3516433df02352d1"
+      ],
+      "source_event_ids": [
+        "EV-68cb62eca02df206"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6442b5e548ad70ee",
+          "quote": "Founded in 2018 by Hjalmar Nilsonne and Spotify Co-Founder Daniel Ek",
+          "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+          "quote_hash": "bd7b245be927efe2b80c7084622a51760b439fccae293b58ca192796003c8e6e"
         }
       ],
       "market_regions": [
@@ -6577,6 +7196,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-95b04d031a862503",
+      "candidate_kind": "person",
+      "research_name": "Ilan Zerbib",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-18131bed4bcc2f1a"
+      ],
+      "funding_insight_ids": [
+        "FI-fdbf9ae49c5d152e"
+      ],
+      "source_event_ids": [
+        "EV-673637ebe2ac2f2d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "quote": "Ilan Zerbib, Founder and CEO, Sapiom",
+          "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+          "quote_hash": "a481af57c1621a8ffbc21fa90b56ad8baf71bd16267fc1fa7ecd699a5f7e31c0"
+        },
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "quote": "Founded in San Francisco in 2025 by Ilan Zerbib",
+          "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+          "quote_hash": "20eb9de78f4c4a8750ff531d2082ce230d2ad9d8357c92f80b6a6bcf622a5cdf"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-ccff4c4a3b9fe4d3",
       "candidate_kind": "person",
       "research_name": "Ion Stoica",
@@ -6597,6 +7250,34 @@
           "quote": "executive chair Ion Stoica",
           "source_content_hash": "2bc06e3f143e739c",
           "quote_hash": "756330722220c010a1b870a1648c7535b5647af01ceed1f955039912de6b5383"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-cb47fa1862bda5d8",
+      "candidate_kind": "person",
+      "research_name": "Isaiah Granet",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9db7cd4f9d5b9566"
+      ],
+      "funding_insight_ids": [
+        "FI-2f7461dc34335bcb"
+      ],
+      "source_event_ids": [
+        "EV-796f551775a566ba"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d8a55a4adc528890",
+          "quote": "Isaiah Granet, our CEO and co-founder",
+          "source_content_hash": "4aa9d3fe427d26ad689ac3019bd4f168d06b6a5f417070f32c4687651a78fc16",
+          "quote_hash": "5ab8ec9a7f45517080db294e0598428dddf37ca0a3a26872d0ce5bbf982cb7b9"
         }
       ],
       "market_regions": [
@@ -6726,9 +7407,11 @@
         "EN-450dcf23e621ff10"
       ],
       "funding_insight_ids": [
-        "FI-a04737ee8d57173c"
+        "FI-a04737ee8d57173c",
+        "FI-c04825b3aebe788f"
       ],
       "source_event_ids": [
+        "EV-0a9d7be146eeb62a",
         "EV-20d762872664fddb"
       ],
       "evidence_refs": [
@@ -6737,6 +7420,12 @@
           "quote": "Jack Morris, a Cornell PhD also from FAIR, is known for his work on retrieval and memorization of LLM.",
           "source_content_hash": "f7105d727554bb38",
           "quote_hash": "626219a9e91dce7b2652060326aa0a67f4dc8ff0d8466c129d9149ac9fd00ed0"
+        },
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "quote": "Jack Morris, a Cornell PhD also from FAIR, is known for his work on retrieval and memorization of LLM",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+          "quote_hash": "0273b9dffeeea9c1b8cf48fcfebf095623d55943afbf4ea56d98153bf636cb5e"
         }
       ],
       "market_regions": [
@@ -6799,6 +7488,34 @@
           "quote": "said Jaden Xie, Co-Founder of PixVerse",
           "source_content_hash": "b98bf780bb54dac4",
           "quote_hash": "fa09d9fbf8c851b931273022421d4a86a1c5a5c72d1fbf8065e467ced528c0ab"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-c9642779043b50c8",
+      "candidate_kind": "person",
+      "research_name": "Jake Cooper",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-e34d1c9011e06204"
+      ],
+      "funding_insight_ids": [
+        "FI-8af842cd5fb47f8b"
+      ],
+      "source_event_ids": [
+        "EV-b58eb81bf5235a33"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-978c6dfd9f2ff831",
+          "quote": "said Jake Cooper, founder and CEO of Railway",
+          "source_content_hash": "b6a948ff822aa4537ecc53f24924d65cbeac70d053fac9073e4c549875efb011",
+          "quote_hash": "086ae61afe6eede161d65fd1909c06abee34f3a7da63371c87308737c72feeb6"
         }
       ],
       "market_regions": [
@@ -6939,6 +7656,62 @@
           "quote": "Founded by CEO Finn Puklowski and CTO Jason Goodison",
           "source_content_hash": "8156e6d44a881bfe",
           "quote_hash": "48578a7b173eb46fcf2cc6a9202d817f7d3679be1484d804c23ef2a0f316f592"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-b80f0d62980ec288",
+      "candidate_kind": "person",
+      "research_name": "Jean-Denis Greze",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-50ac81f970325a3e"
+      ],
+      "funding_insight_ids": [
+        "FI-6fbf75e62efb44be"
+      ],
+      "source_event_ids": [
+        "EV-78f25fe89d25eeb6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-56950f3d596a6b31",
+          "quote": "Jean-Denis GrezeCo-founder & CEOFormer CTO of Plaid",
+          "source_content_hash": "8eb7c4838d2c7a93",
+          "quote_hash": "f3a83345c828aef2da9aa86c2497c50f1009978dfee3c43d5866cf516adf8186"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-f7ca93f3249d84f3",
+      "candidate_kind": "person",
+      "research_name": "Jeff Bezos",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1809f7cd0c75acf3"
+      ],
+      "funding_insight_ids": [
+        "FI-f466032132766da8"
+      ],
+      "source_event_ids": [
+        "EV-5eb9944487368ea0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b17263945320e175",
+          "quote": "Bezos, who stepped down as Amazon CEO in 2021, serves as co-CEO alongside Vik Bajaj",
+          "source_content_hash": "35a586159ce189ad7416ee53b77859761dc40f5b9f2abfe9c01cfba4a3cd3b3a",
+          "quote_hash": "1239f6e996d4e3edf43ee7c4837566e20d5b827ae8e3ca2b00868511059f63b7"
         }
       ],
       "market_regions": [
@@ -7149,6 +7922,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-0572379f8b54fd2c",
+      "candidate_kind": "person",
+      "research_name": "Jeffrey Wang",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4968d0cf3b24d26d"
+      ],
+      "funding_insight_ids": [
+        "FI-62cdbd4b88f14773"
+      ],
+      "source_event_ids": [
+        "EV-1891e6540ad2c1e0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-f639021ad89bed02",
+          "quote": "Jeffrey Wang: Co-Founder of Exa.",
+          "source_content_hash": "019366109900f2b9",
+          "quote_hash": "94d1317284e3013e8d2cbb268cfbb537e5b5ee373c209fd1fd3e0d2705d425c4"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-1493cd218ff59d05",
       "candidate_kind": "person",
       "research_name": "Jensen Huang",
@@ -7326,9 +8127,11 @@
         "EN-450dcf23e621ff10"
       ],
       "funding_insight_ids": [
-        "FI-a04737ee8d57173c"
+        "FI-a04737ee8d57173c",
+        "FI-c04825b3aebe788f"
       ],
       "source_event_ids": [
+        "EV-0a9d7be146eeb62a",
         "EV-20d762872664fddb"
       ],
       "evidence_refs": [
@@ -7336,6 +8139,12 @@
           "source_id": "FISRC-39d911c5038cb1c0",
           "quote": "Jessy Lin, a Berkeley PhD who researched at Meta's FAIR lab, developed Active Reading",
           "source_content_hash": "f7105d727554bb38",
+          "quote_hash": "b618a5faf89a9edd2e7f0e12b8b4e194a733c6cac585b4b3151548436027d5cc"
+        },
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "quote": "Jessy Lin, a Berkeley PhD who researched at Meta's FAIR lab, developed Active Reading",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
           "quote_hash": "b618a5faf89a9edd2e7f0e12b8b4e194a733c6cac585b4b3151548436027d5cc"
         }
       ],
@@ -7427,6 +8236,34 @@
           "quote": "Co-founder and CTO Johannes Hagemann built large-scale LLM training frameworks at Aleph Alpha.",
           "source_content_hash": "13090ff8894a6511",
           "quote_hash": "3b51e1932093399f1b224d7f0c47c8e236925db70e1f29cc427e411bc50fd1c9"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-e6069f04c6e7d100",
+      "candidate_kind": "person",
+      "research_name": "Johannes Otterbach",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-ae3d8efc01c7627d"
+      ],
+      "funding_insight_ids": [
+        "FI-ab2d017f9a2b730d"
+      ],
+      "source_event_ids": [
+        "EV-4e4ae1578720e907"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-236be7e662176457",
+          "quote": "The startup was founded in 2022 by Amir Sadeghian, Ali Sadeghian, Fei-Fei Li, and Johannes Otterbach.",
+          "source_content_hash": "85199978301e944b",
+          "quote_hash": "52512d76a14baf8e61609bb0b00006be0e7fd9f4042677a76bff4cd07ab7cdb0"
         }
       ],
       "market_regions": [
@@ -8168,6 +9005,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-0d65620fa2d5b54c",
+      "candidate_kind": "person",
+      "research_name": "Keith Peiris",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-e2e2d8b189801fe6"
+      ],
+      "funding_insight_ids": [
+        "FI-e037d153d435bd8b"
+      ],
+      "source_event_ids": [
+        "EV-d321124f4f5e0edc"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c224adac23aa7c1e",
+          "quote": "said Keith Peiris, cofounder and CEO of Lightfield",
+          "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+          "quote_hash": "de4c8f73a52580d999c761b4c317b64ea6652acf3fa9f21b107d6b91e3bf054a"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-f8eaf019e218b2b3",
       "candidate_kind": "person",
       "research_name": "Kelly Bayer Rosmarin",
@@ -8768,6 +9633,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-22e7f93e047e28fb",
+      "candidate_kind": "person",
+      "research_name": "Mac Liu",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-8bacc14fb816a980"
+      ],
+      "funding_insight_ids": [
+        "FI-a5ba7a506e9d522a"
+      ],
+      "source_event_ids": [
+        "EV-e124ba0fc4fef3c0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-54220f8d78441b23",
+          "quote": "Arceus’s San Francisco-based Founder and CEO, Mac Liu, commented",
+          "source_content_hash": "cc8bef3d921d543f005662af473c08bdb28d09414a2a1db6a1a8e20b22e5a281",
+          "quote_hash": "089350df1a50fca91aebcc0d724dde814a297620918911fb67ad6adb8a562bcb"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-f5be426b8044b2e8",
       "candidate_kind": "person",
       "research_name": "Madhav Jha",
@@ -8816,6 +9709,34 @@
           "quote": "Maik Taro Wehmeyer , co-founder and CEO at Taktile",
           "source_content_hash": "6d835905b577107c",
           "quote_hash": "e0401527e24372856edb6d5074ab118474464e9f45c4a7f1d97838d67418b407"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-21ac22884c1c5caf",
+      "candidate_kind": "person",
+      "research_name": "Malhar Patil",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1ae1dd29593288ec"
+      ],
+      "funding_insight_ids": [
+        "FI-fab6303ee3f6017e"
+      ],
+      "source_event_ids": [
+        "EV-ce76d1c1572db8e4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-831b02f8570a1c2b",
+          "quote": "Shourya Agarwal, Malhar Patil, and Amit Gaiki founded it in 2021.",
+          "source_content_hash": "4ea42bd111193622",
+          "quote_hash": "be0b6257cae58914a40c7649fb95a494c5e5d2d3cdf3988558f1ad66bd33b90a"
         }
       ],
       "market_regions": [
@@ -10111,6 +11032,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-309634f1aa6ec9e3",
+      "candidate_kind": "person",
+      "research_name": "Moriel Pahima",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-a1b7a0cc37ed257d"
+      ],
+      "funding_insight_ids": [
+        "FI-2aee1934d480a82d"
+      ],
+      "source_event_ids": [
+        "EV-95385e7d45e69784"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "Moriel Pahima (CTO)",
+          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
+          "quote_hash": "a42cd1133ced176abee20c3218e06647c93c6f5ea3cf57239e71a5e5ff865b43"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-02558d2b69e1e834",
       "candidate_kind": "person",
       "research_name": "Mukund Jha",
@@ -11066,6 +12015,34 @@
           "quote": "Factorial, founded in 2016 in Barcelona by Jordi Romero (CEO), Bernat Farrero (CRO), and Pau Ramon Revilla (CTO)",
           "source_content_hash": "c578f3ea8e386517",
           "quote_hash": "d257892de0906cd34f226dd5ac93b802f47afa57cc24cc1e97c9bf1083711cd0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-4712a8e7081ff5c6",
+      "candidate_kind": "person",
+      "research_name": "Paul Copplestone",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4d7594e57f7d03f3"
+      ],
+      "funding_insight_ids": [
+        "FI-74f3a658b5ce6913"
+      ],
+      "source_event_ids": [
+        "EV-42ba61e8713cd2e6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-329a0525efb0e1f9",
+          "quote": "Paul CopplestoneCEO and Co-Founder",
+          "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+          "quote_hash": "b03db84088368bd4d152606875e8b521c03c603aca7095e622762c6d5b081b0d"
         }
       ],
       "market_regions": [
@@ -12061,6 +13038,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-c95c022744121446",
+      "candidate_kind": "person",
+      "research_name": "Ran Sheinberg",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-a1b7a0cc37ed257d"
+      ],
+      "funding_insight_ids": [
+        "FI-2aee1934d480a82d"
+      ],
+      "source_event_ids": [
+        "EV-95385e7d45e69784"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "Ran Sheinberg (CPO)",
+          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
+          "quote_hash": "a761c73c262f7b616eda0fce2bd73f0c73eebb514773359820cfa6cb8d6451d4"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-96db943f332cc45e",
       "candidate_kind": "person",
       "research_name": "Randall Hom",
@@ -12081,6 +13086,34 @@
           "quote": "Randall Hom, co-founder and CEO of Hostie and co-owner of Back to Back in San Francisco",
           "source_content_hash": "d7c2bb0b4010c680",
           "quote_hash": "255e81938b4cf9fa1d28f1955659970c7a00b90d51500a7d7e0fe1d70a2e5a01"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-86fa7f8453577071",
+      "candidate_kind": "person",
+      "research_name": "Ranjan Rajagopalan",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5862e00bd2052e99"
+      ],
+      "funding_insight_ids": [
+        "FI-21864533b90354fa"
+      ],
+      "source_event_ids": [
+        "EV-07cef8183aa6c17b"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-35c5de2fa4b68376",
+          "quote": "Pramaana co-founder and CEO Ranjan Rajagopalan",
+          "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+          "quote_hash": "e740ea1b8ddbd3ef203ca9ea293ab176afdf54650bd7294c0506a5eea7e0b7a8"
         }
       ],
       "market_regions": [
@@ -12707,6 +13740,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-a6c77c4ebd3ef638",
+      "candidate_kind": "person",
+      "research_name": "Ronak Malde",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c32662785b597e46"
+      ],
+      "funding_insight_ids": [
+        "FI-a3d30a9eba7bdb65"
+      ],
+      "source_event_ids": [
+        "EV-54f4bd47b09c4dc3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-13a2dacfcddc2542",
+          "quote": "Ronak Malde, CEO and Co-Founder, Trajectory",
+          "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+          "quote_hash": "4c84290f8e5f1badd061358ef2b45ef9827c5b664fd6e203e707b0fa626a70ae"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-8074af0a1538632d",
       "candidate_kind": "person",
       "research_name": "Roni El-Bahar",
@@ -12924,9 +13985,11 @@
         "EN-450dcf23e621ff10"
       ],
       "funding_insight_ids": [
-        "FI-a04737ee8d57173c"
+        "FI-a04737ee8d57173c",
+        "FI-c04825b3aebe788f"
       ],
       "source_event_ids": [
+        "EV-0a9d7be146eeb62a",
         "EV-20d762872664fddb"
       ],
       "evidence_refs": [
@@ -12935,6 +13998,12 @@
           "quote": "Founded by a team of researchers from Stanford, Berkeley, and Cornell, including CEO Dan Biderman and CTO Sabri Eyuboglu",
           "source_content_hash": "f7105d727554bb38",
           "quote_hash": "b0bc0a7c31376b6be9ebe0e73dce90abb0f1e2485601ebeb6459ebef752c231e"
+        },
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "quote": "Engram's CTO, Sabri Eyuboglu, a Stanford PhD under Chris Ré",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+          "quote_hash": "b2f280a458cd3401e686c5d8935512b62e39d702dedc6c0205d15cd7ce10e7d7"
         }
       ],
       "market_regions": [
@@ -13217,6 +14286,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-b4c6c56133930c39",
+      "candidate_kind": "person",
+      "research_name": "Sandeep Chinchali",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-586466805b277098"
+      ],
+      "funding_insight_ids": [
+        "FI-a8a9d64fc040814d"
+      ],
+      "source_event_ids": [
+        "EV-4f56483024dd4e84"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2ea8a20cdcadc9af",
+          "quote": "Founded in 2023 by co-founders Somi Agarwal and Assistant Professor Sandeep Chinchali",
+          "source_content_hash": "7d0dc941e744b969",
+          "quote_hash": "e592664a9b921fcc64ed929dc1874bff0802e1113ba17c2a0143a5f7bcc308d4"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-68ce3ac46c1e45b9",
       "candidate_kind": "person",
       "research_name": "Sanj Ahilan",
@@ -13372,9 +14469,11 @@
         "EN-450dcf23e621ff10"
       ],
       "funding_insight_ids": [
-        "FI-a04737ee8d57173c"
+        "FI-a04737ee8d57173c",
+        "FI-c04825b3aebe788f"
       ],
       "source_event_ids": [
+        "EV-0a9d7be146eeb62a",
         "EV-20d762872664fddb"
       ],
       "evidence_refs": [
@@ -13382,6 +14481,12 @@
           "source_id": "FISRC-39d911c5038cb1c0",
           "quote": "Scott Linderman, a tenured Stanford professor of statistics and neuroscience, is a leading researcher on state space models",
           "source_content_hash": "f7105d727554bb38",
+          "quote_hash": "1d046ad0b7bd0ad98b39f5bc4ef01841dba335dfd9cbae6fb02d5b3ffac97dd9"
+        },
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "quote": "Scott Linderman, a tenured Stanford professor of statistics and neuroscience, is a leading researcher on state space models",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
           "quote_hash": "1d046ad0b7bd0ad98b39f5bc4ef01841dba335dfd9cbae6fb02d5b3ffac97dd9"
         }
       ],
@@ -13719,6 +14824,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-e6a17a63e6800533",
+      "candidate_kind": "person",
+      "research_name": "Sherwood Callaway",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-6d996a5b3ebd3606"
+      ],
+      "funding_insight_ids": [
+        "FI-99460daba598e488"
+      ],
+      "source_event_ids": [
+        "EV-f713858c67327c28"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fbca80af0ef21f0d",
+          "quote": "said Sherwood Callaway, founder and CEO of Sazabi",
+          "source_content_hash": "ba2d7efd8fe4675920c21c93d4f1f1d1be23bebb8b4de1db51ede6b4be910bd8",
+          "quote_hash": "fe67fb301027518d9b88ad6424ea81e2618254b77feaa167617acbbe16b274b5"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-2da8e87f6147bece",
       "candidate_kind": "person",
       "research_name": "Shijia Liao",
@@ -13838,6 +14971,34 @@
           "quote": "The founders are CEO Nicholas Warner, CPO Shlomi Salem and CTO Eran Shirazi.",
           "source_content_hash": "7db9e3b1dae054c9",
           "quote_hash": "6ee967724241ad7643e95bcdc2efd3db9416389aaa36020e2512850c31aadf13"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-bec723e30dabf93e",
+      "candidate_kind": "person",
+      "research_name": "Shourya Agarwal",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1ae1dd29593288ec"
+      ],
+      "funding_insight_ids": [
+        "FI-fab6303ee3f6017e"
+      ],
+      "source_event_ids": [
+        "EV-ce76d1c1572db8e4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-83ab416cf84d3f07",
+          "quote": "Flam founder and Chief Executive Shourya Agarwal said he built the company",
+          "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
+          "quote_hash": "e83861dbabcb9d0c969e9b5a72e5db505de8dfccd94b52dd791b3624da8b15f0"
         }
       ],
       "market_regions": [
@@ -14040,6 +15201,34 @@
           "quote": "Founded by Som Mohapatra, Thomas Stewart and Allen Calderwood",
           "source_content_hash": "5c826ef0200c35f6",
           "quote_hash": "99153ccfbc171b58a24024a3b94e04836b6d4221d4b8934a0ba6f40aaacc503c"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-89d4a7511124ec09",
+      "candidate_kind": "person",
+      "research_name": "Somi Agarwal",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-586466805b277098"
+      ],
+      "funding_insight_ids": [
+        "FI-a8a9d64fc040814d"
+      ],
+      "source_event_ids": [
+        "EV-4f56483024dd4e84"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-2ea8a20cdcadc9af",
+          "quote": "Founded in 2023 by co-founders Somi Agarwal and Assistant Professor Sandeep Chinchali",
+          "source_content_hash": "7d0dc941e744b969",
+          "quote_hash": "e592664a9b921fcc64ed929dc1874bff0802e1113ba17c2a0143a5f7bcc308d4"
         }
       ],
       "market_regions": [
@@ -15410,6 +16599,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-d28c63ab4167d6ae",
+      "candidate_kind": "person",
+      "research_name": "Tony Vincent",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-50ac81f970325a3e"
+      ],
+      "funding_insight_ids": [
+        "FI-6fbf75e62efb44be"
+      ],
+      "source_event_ids": [
+        "EV-78f25fe89d25eeb6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-56950f3d596a6b31",
+          "quote": "Tony VincentCo-founder & CPOFormer Director of Applied AI Product at Google",
+          "source_content_hash": "8eb7c4838d2c7a93",
+          "quote_hash": "40060df66dae3a4a1c3c2bca2a6ee6033eaac043bedfe02021f7e7896be45a46"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-d10333a1696e9c2d",
       "candidate_kind": "person",
       "research_name": "Torrey Leonard",
@@ -15688,6 +16905,34 @@
           "quote": "Founded in 2022 by Vendrell (CEO), Victor Garcia (CTO), and Alejandro Domingo (COO)",
           "source_content_hash": "7a4bd12b025049d2",
           "quote_hash": "775a38ac7f41771e3c4e71815d589f32a6c703306c1f12f844543e5e49ad5075"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-f685e6e9fc5af04a",
+      "candidate_kind": "person",
+      "research_name": "Vik Bajaj",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1809f7cd0c75acf3"
+      ],
+      "funding_insight_ids": [
+        "FI-f466032132766da8"
+      ],
+      "source_event_ids": [
+        "EV-5eb9944487368ea0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b17263945320e175",
+          "quote": "Bezos, who stepped down as Amazon CEO in 2021, serves as co-CEO alongside Vik Bajaj, a professor at Stanford University's School of Medicine who previously co-founded Alphabet's Verily",
+          "source_content_hash": "35a586159ce189ad7416ee53b77859761dc40f5b9f2abfe9c01cfba4a3cd3b3a",
+          "quote_hash": "6a1c82ebb2ae08a7f1ca51f91a29e5d064d30b7b438b4a335be725136c7b8b40"
         }
       ],
       "market_regions": [
@@ -16183,6 +17428,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-b241dbe1c6f1589e",
+      "candidate_kind": "person",
+      "research_name": "Will Bryk",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4968d0cf3b24d26d"
+      ],
+      "funding_insight_ids": [
+        "FI-62cdbd4b88f14773"
+      ],
+      "source_event_ids": [
+        "EV-1891e6540ad2c1e0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0a9db64fb98f69ae",
+          "quote": "Exa Co-Founder and CEO Will Bryk said in the company’s announcement.",
+          "source_content_hash": "66fa6a23c0fd9140473dc686a152ec5d123877405f98c7fa6261f065fc081445",
+          "quote_hash": "cd55eade96f523762f9af0c9f2cb48da0d80c0bfb1d66bf989ba4d9c4ef7127c"
+        },
+        {
+          "source_id": "FISRC-f639021ad89bed02",
+          "quote": "Will Bryk: Co-Founder & CEO of Exa.",
+          "source_content_hash": "019366109900f2b9",
+          "quote_hash": "6b8c0a2769db937a9d7d747ae779dc7348f196659da492d91acec4e766341bef"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-f9b1a00e539df2d5",
       "candidate_kind": "person",
       "research_name": "William Wang",
@@ -16231,6 +17510,34 @@
           "quote": "Xingyao Wang (chief AI officer)",
           "source_content_hash": "98fe8fb23998f253",
           "quote_hash": "ae88529c87c08b5b0943bf6b8af8dc50188cf41e32645786d14b97b3a153b7e1"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-377540bf61430c9f",
+      "candidate_kind": "person",
+      "research_name": "Yadid Ayzenberg",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-8775a329d57598d2"
+      ],
+      "funding_insight_ids": [
+        "FI-8cf9c6eca9e8b293"
+      ],
+      "source_event_ids": [
+        "EV-03fc697a9838f39e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d8f2f6d7fc0871dd",
+          "quote": "the startup was co-founded and is led by CEO Yadid Ayzenberg, who previously worked at Bose as its Head of Sleep Products",
+          "source_content_hash": "29820751dcab4ec5b5ce0cf030397688f6dfa3a330040840b8e553a189d4af39",
+          "quote_hash": "902e2c66a90d7b3edc5afdbeff597a24948c5e6b0c6a876d50c70e3226bddf6c"
         }
       ],
       "market_regions": [
@@ -16671,6 +17978,34 @@
           "quote": "said Yuhong Sun, Co-Founder of Onyx",
           "source_content_hash": "9266f35a39d4c471",
           "quote_hash": "8facdd022c0bb81423e017dcdf07c1e02ae1c3504930ef4f411f113c76e2ae21"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-7b412714c7a55158",
+      "candidate_kind": "person",
+      "research_name": "Yuhuai Wu",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "funding_insight_ids": [
+        "FI-a0bd35076a28ce83"
+      ],
+      "source_event_ids": [
+        "EV-688ef84a4024e075"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3b4badfc5c7972fa",
+          "quote": "The founders of xAI are Kyle Kosic, Greg Yang, Elon Musk and Yuhuai Wu.",
+          "source_content_hash": "d1bd5f5bb5d9679b",
+          "quote_hash": "ff914cd3c8fdf996bebb71a3692563d18cfc0ff42355d6ec072a8641021af3bc"
         }
       ],
       "market_regions": [
@@ -18365,6 +19700,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-504b95f6e23f9b27",
+      "candidate_kind": "person",
+      "research_name": "杨道虹",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-997a5e6e513f2a90"
+      ],
+      "funding_insight_ids": [
+        "FI-08ce9e535e6d0a13"
+      ],
+      "source_event_ids": [
+        "EV-e11382111a5b99f6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-662073c15d82f553",
+          "quote": "董事长杨道虹现任湖北江城实验室主任，曾任多家大型半导体企业核心高管，擅长战略操盘。",
+          "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+          "quote_hash": "9e8a9420f4521eff553484ee4d875ad0014fa5285befcc92852f402f9d4dfdfc"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
       "candidate_id": "FIER-55d652dd41ec0d48",
       "candidate_kind": "person",
       "research_name": "杨龙昇",
@@ -18555,6 +19918,34 @@
           "quote": "董事长刘德兵、总裁王绍兰同为清华校友",
           "source_content_hash": "6039a35df79b1076",
           "quote_hash": "a5fa979ffd532e4f58fc49d53c5b4c7b98886396bbc73305972d361c0b924472"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-75ae5b33a8916c02",
+      "candidate_kind": "person",
+      "research_name": "王逸群",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-997a5e6e513f2a90"
+      ],
+      "funding_insight_ids": [
+        "FI-08ce9e535e6d0a13"
+      ],
+      "source_event_ids": [
+        "EV-e11382111a5b99f6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-662073c15d82f553",
+          "quote": "总经理王逸群是清华大学集成电路专业博士，亲历国家存储器基地从无到有的突破，主抓经营与技术落地。",
+          "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+          "quote_hash": "9cee265c1c635b926264faf962a62c91c7b6fd12dee2a64db0d2d379d078efba"
         }
       ],
       "market_regions": [
@@ -19569,6 +20960,34 @@
           "quote": "When an agent interacts with your product through MCP, reading your docs, calling your API, running your CLI, the Agent Intent Gateway captures it: what the agent asked, when, and which account it traces back to.",
           "source_content_hash": "ff5549c1a6dc8b11",
           "quote_hash": "99438edeb74634031421c8aee72225f6b77b629ab067dae56a4095a78c6f6706"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-0cddf5a4effe12f7",
+      "candidate_kind": "product",
+      "research_name": "Agent Studio",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-18131bed4bcc2f1a"
+      ],
+      "funding_insight_ids": [
+        "FI-fdbf9ae49c5d152e"
+      ],
+      "source_event_ids": [
+        "EV-673637ebe2ac2f2d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "quote": "Agent Studio gives engineering teams a local environment to build, test, inspect, and deploy agents with the context of their existing codebase.",
+          "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+          "quote_hash": "018158fbe8fb2f978dcb798719b9e37b80c46f960455bb896a79d598896ad740"
         }
       ],
       "market_regions": [
@@ -21267,6 +22686,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-0903b9812d8143ef",
+      "candidate_kind": "product",
+      "research_name": "AI工程工具",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1809f7cd0c75acf3"
+      ],
+      "funding_insight_ids": [
+        "FI-f466032132766da8"
+      ],
+      "source_event_ids": [
+        "EV-5eb9944487368ea0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b17263945320e175",
+          "quote": "Bezos revealed that Prometheus is developing a set of AI tools to help engineers design and manufacture physical products easier and faster.",
+          "source_content_hash": "35a586159ce189ad7416ee53b77859761dc40f5b9f2abfe9c01cfba4a3cd3b3a",
+          "quote_hash": "179244756cc509a209fbaef36c2416e120b1be38a872caeb1d5b0d503d2ff34b"
+        },
+        {
+          "source_id": "FISRC-b17263945320e175",
+          "quote": "Prometheus is focused on building AI models for physical tasks, including engineering, manufacturing and drug design.",
+          "source_content_hash": "35a586159ce189ad7416ee53b77859761dc40f5b9f2abfe9c01cfba4a3cd3b3a",
+          "quote_hash": "6140eca11071228426b99e36aecea6c0a1bb6fa97afc76f70ae8375c36aea3ee"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-d60af6114c0f5798",
       "candidate_kind": "product",
       "research_name": "AI工艺大脑",
@@ -21840,6 +23293,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-05e067e42830d253",
+      "candidate_kind": "product",
+      "research_name": "Almanac Chat",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-e3797aea6accf7d7"
+      ],
+      "funding_insight_ids": [
+        "FI-4abccdec5c0601e7"
+      ],
+      "source_event_ids": [
+        "EV-c34ebd1db6227471"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-912b46617f23feee",
+          "quote": "The product, Almanac Chat, introduces itself in its own onboarding as “The AI workspace for clinical work”, a place to ask clinical questions, work through patient cases, draft documents and run repeatable research tasks.",
+          "source_content_hash": "bdd0f9f6dadd4a47",
+          "quote_hash": "4cf8e53698d3cab928c210ea72f1664351b9c6eb186bf2d95306005118707194"
+        },
+        {
+          "source_id": "FISRC-912b46617f23feee",
+          "quote": "Almanac Health restricts the product to licensed healthcare professionals in active practice and to medical students, residents and fellows in accredited programmes.",
+          "source_content_hash": "bdd0f9f6dadd4a47",
+          "quote_hash": "61cde5b05a104a72ec931c58aaf108b92272efc4155cf288e642cbf8db3d48bb"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-77cab7912265a7e1",
@@ -22855,6 +24342,46 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-7981130a39b71a23",
+      "candidate_kind": "product",
+      "research_name": "Astrocade",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-ae3d8efc01c7627d"
+      ],
+      "funding_insight_ids": [
+        "FI-ab2d017f9a2b730d"
+      ],
+      "source_event_ids": [
+        "EV-4e4ae1578720e907"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-1811bc88b6a13090",
+          "quote": "a platform where anyone with an idea can use generative AI to make it playable in minutes",
+          "source_content_hash": "693c6512091f05ffa16b907ec04a3e307326051b109c094cbc783d00543e7a71",
+          "quote_hash": "a66e999354ad0434f458eacdb938e709cefdba10f0b8e7b81b74b774b424575f"
+        },
+        {
+          "source_id": "FISRC-ecce3315666a7744",
+          "quote": "Without requiring programming languages, the platform allows users to create and publish games through natural language prompts. Key elements of game development, including art, animation, background music, and game mechanics, are automatically generated and integrated by AI.",
+          "source_content_hash": "2cfcc84d11bb089c",
+          "quote_hash": "cc31c903311051f16cb1db85457877143ab0d53b9299df397cf5d35de5ce2eca"
+        },
+        {
+          "source_id": "FISRC-b6d163eb5c4d9c7a",
+          "quote": "Astrocade's built-in distribution system puts your game in front of millions of players the day you publish.",
+          "source_content_hash": "17bdcc5a5ce6da0e",
+          "quote_hash": "44d095f563ffacec9ab80b903c4fbbf41eab55a1a19bb9f39e916ba0fae20750"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-5460547e16e8a865",
       "candidate_kind": "product",
       "research_name": "ATaaS（Approaching AI Token as a Service）",
@@ -23596,6 +25123,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-9f72da46d952539c",
+      "candidate_kind": "product",
+      "research_name": "Bland Enterprise Voice AI Platform",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-9db7cd4f9d5b9566"
+      ],
+      "funding_insight_ids": [
+        "FI-2f7461dc34335bcb"
+      ],
+      "source_event_ids": [
+        "EV-796f551775a566ba"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d7835543ee84e409",
+          "quote": "Bland is an enterprise voice AI platform. Customers use it to build, run, and monitor AI phone agents that hold real conversations at scale.",
+          "source_content_hash": "86ae5c2d98012e27",
+          "quote_hash": "aa7399cdc9344c3d5f78e0f0a947129deef8a2ad18b2ab0283096d1f7fce3bce"
+        },
+        {
+          "source_id": "FISRC-d8a55a4adc528890",
+          "quote": "we build our own models, in-house, purpose-built for voice.",
+          "source_content_hash": "4aa9d3fe427d26ad689ac3019bd4f168d06b6a5f417070f32c4687651a78fc16",
+          "quote_hash": "ec60553c9f9ea286cf811a981291bf06ffc427e26ece2494ec2411bd1a2b05d5"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-eb9e7421ffdbbdfa",
       "candidate_kind": "product",
       "research_name": "Blitzy Platform",
@@ -23818,6 +25379,34 @@
           "quote": "a C-Series video model for professional film and commercial workflows",
           "source_content_hash": "8613eee6f7b9e1c8f7dc544c000940dea87d210a3d3a7afd1d82a09eeb569abe",
           "quote_hash": "6c2df410b2034ddcee9058670428a9b479fcee13b3d0b83c2b1cce820176f904"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-ad41ef3c41f3a07a",
+      "candidate_kind": "product",
+      "research_name": "CAM Assist",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-682f0a582a09c3be"
+      ],
+      "funding_insight_ids": [
+        "FI-bc56cac4cb991643"
+      ],
+      "source_event_ids": [
+        "EV-3f420ab30e43a3a3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-583456b85ec1179e",
+          "quote": "CloudNC’s lead product, CAM Assist, uses AI to greatly reduce the time required to create CNC machining strategies and toolpaths, allowing teams to move from design to production faster and enabling skilled operators to increase their output.",
+          "source_content_hash": "927df588386a3e9e9eff5593d338e5deac39d65fca4a65dd563e313beb8b80ad",
+          "quote_hash": "fd1ddda233dc1f39bf215d9fe9ca629b5db4e34ddced065efe408980587b4aef"
         }
       ],
       "market_regions": [
@@ -24901,6 +26490,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-1bd56a177e50f52a",
+      "candidate_kind": "product",
+      "research_name": "Coralogix 可观测性平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-d4a51069cba266d5"
+      ],
+      "funding_insight_ids": [
+        "FI-d8cb5aed61c65826"
+      ],
+      "source_event_ids": [
+        "EV-e0e966c028ca9a74"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-98f1098c86cb2286",
+          "quote": "Coralogix was built for that shift, with an observability architecture designed for full-fidelity ingestion, real-time streaming analytics, open formats and customer-owned storage at massive scale.",
+          "source_content_hash": "d20ed695940e0cb15ecd2d8bc0ac9cd1ad59744672f140cde649e21c0f78d2de",
+          "quote_hash": "bc9bca78685ab0a3fa94501293c4e89cd2cf0b47e43e53e6cd47a61816af0d59"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-6cf17c8987c92e32",
       "candidate_kind": "product",
       "research_name": "COSMOS",
@@ -24927,6 +26544,40 @@
           "quote": "COSMOS connects fragmented systems, structures proprietary knowledge, and makes operating data usable by AI-driven processes and autonomous agents.",
           "source_content_hash": "5a05307018411f00",
           "quote_hash": "3de2166c7c833624738b378d5b00cb8a236869d380c6241afd1aac1c736f8c9a"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-6f8ec533addb1b99",
+      "candidate_kind": "product",
+      "research_name": "CounselOS",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-8bacc14fb816a980"
+      ],
+      "funding_insight_ids": [
+        "FI-a5ba7a506e9d522a"
+      ],
+      "source_event_ids": [
+        "EV-e124ba0fc4fef3c0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-54220f8d78441b23",
+          "quote": "In this case it’s a proprietary operating system, CounselOS. They said that this gives ‘Arceus attorneys context on a company’s business, preferences, agreements, prior decisions and negotiation history. It connects to the platforms where companies already work, including HubSpot, Salesforce, Gmail and Slack, to gather context, identify issues and route each matter to the right attorney’.",
+          "source_content_hash": "cc8bef3d921d543f005662af473c08bdb28d09414a2a1db6a1a8e20b22e5a281",
+          "quote_hash": "48640e7e1f34c97d6b759f9289d94a6f921cc8d9af8b92c252d30b0b01b05a3d"
+        },
+        {
+          "source_id": "FISRC-dcf45e1aac1af636",
+          "quote": "Its attorneys work from an in-house operating system called CounselOS, which keeps a record of each client’s preferences, past agreements and negotiation history.",
+          "source_content_hash": "f430492d981a90c520ea713271818099a7fc71620f0a2bccc8a967aed486c7c1",
+          "quote_hash": "7cbdc0c29d4108dca322f8a403691a9e8451b02a49aea79602ee489874785396"
         }
       ],
       "market_regions": [
@@ -25814,6 +27465,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-f9424c5dab35aca2",
+      "candidate_kind": "product",
+      "research_name": "Delos AI 员工",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-cfb378a90039f2d3"
+      ],
+      "funding_insight_ids": [
+        "FI-333b68c789e1fc8c"
+      ],
+      "source_event_ids": [
+        "EV-a3e9feaed5234078"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-09586343a360c8ae",
+          "quote": "The company builds autonomous \"AI employees\" that handle complex business tasks",
+          "source_content_hash": "887400262e7fe66b79e135ab6e84d4999e429d4995fce029b957bc0e23b6cc01",
+          "quote_hash": "aba2779c0f51776de85c8dcec2e5c1a7f8c6bf49dd58cbf0d72e9589dd62236b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-d2a47ce7a7afcc34",
       "candidate_kind": "product",
       "research_name": "DesignArena",
@@ -26049,6 +27728,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-735b402b830daa92",
+      "candidate_kind": "product",
+      "research_name": "Dreambuds",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-8775a329d57598d2"
+      ],
+      "funding_insight_ids": [
+        "FI-8cf9c6eca9e8b293"
+      ],
+      "source_event_ids": [
+        "EV-03fc697a9838f39e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d8f2f6d7fc0871dd",
+          "quote": "Dreambuds, a closed-loop, in-ear system that captures 12 physiological signals from the wearer, then acts on them in real time to help consumers get better sleep.",
+          "source_content_hash": "29820751dcab4ec5b5ce0cf030397688f6dfa3a330040840b8e553a189d4af39",
+          "quote_hash": "77ce8e24a280c5cc08acb09f8607d622126752acff59f71b7c9ebed7be17151b"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-93f7eb016953ff20",
       "candidate_kind": "product",
       "research_name": "Droids",
@@ -26058,12 +27765,26 @@
         "EN-06c8aaa93d80a768"
       ],
       "funding_insight_ids": [
+        "FI-3e18717ca7f7f465",
         "FI-7137f2336e2c6063"
       ],
       "source_event_ids": [
+        "EV-20e5d57a05b69a95",
         "EV-fb14f97f5b644c1f"
       ],
       "evidence_refs": [
+        {
+          "source_id": "FISRC-f4c8c4cc3e97ab74",
+          "quote": "Droids are used daily by hundreds of thousands of developers across enterprises including Nvidia, Adobe, EY, Palo Alto Networks, and Adyen.",
+          "source_content_hash": "64798c57510b20e213d44301821d2b267f2c28fab4f3c6b0dd7a36bdc8ff097a",
+          "quote_hash": "addfc7cc5cba6cd85f43e74368d6a53ecd28a1c00992bb31e3122e916688f8bd"
+        },
+        {
+          "source_id": "FISRC-d541ce1d1f6fc8bb",
+          "quote": "Plan, build, review, and ship software with autonomous agents across desktop, terminal, web, and CLI.",
+          "source_content_hash": "de5d15f8bd2b0dc0",
+          "quote_hash": "de6016afcf1bde55ae8a0b3db6a488419ed1d4d1af798ea3427d20c6d1b2d7b0"
+        },
         {
           "source_id": "FISRC-f4c8c4cc3e97ab74",
           "quote": "Droids have evolved from best-in-class software development agents into full-spectrum autonomous systems that operate as the critical unit across multiple functions across a software business.",
@@ -26615,6 +28336,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-f51204a4f055328b",
+      "candidate_kind": "product",
+      "research_name": "Engram 学习记忆层 API",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-450dcf23e621ff10"
+      ],
+      "funding_insight_ids": [
+        "FI-c04825b3aebe788f"
+      ],
+      "source_event_ids": [
+        "EV-0a9d7be146eeb62a"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-8f5a35fa6bbc977d",
+          "quote": "Engram trains models to study an organization's world and anticipate its questions in advance, forming a compact, continuously improving memory (also known as an \"engram\", a neuroscience term meaning the trace of memory in the brain) that's unique to each customer.",
+          "source_content_hash": "84233e0bd6125a00d400175b3458cfa4e54e40e4f3628b44afb41cf22a026195",
+          "quote_hash": "8446a0e6336def30ed25a53cb807af9fc43f43d43fb7f15ef7b9d5a5fb47be64"
+        },
+        {
+          "source_id": "FISRC-5f3c6f77d1f548bd",
+          "quote": "Our first product is an API for agents that learn on very large shared knowledge workspaces.",
+          "source_content_hash": "e7d754614b330c64",
+          "quote_hash": "600b44df8ef605863e97f065520c097a74ee20ee861850596e6440660969a4a8"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-ad9b99851e1090bc",
       "candidate_kind": "product",
       "research_name": "Enterprise AI",
@@ -26973,6 +28728,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-2227a89a24a11722",
+      "candidate_kind": "product",
+      "research_name": "Exa Search API",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4968d0cf3b24d26d"
+      ],
+      "funding_insight_ids": [
+        "FI-62cdbd4b88f14773"
+      ],
+      "source_event_ids": [
+        "EV-1891e6540ad2c1e0"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-0a9db64fb98f69ae",
+          "quote": "Exa provides a web search API specifically optimized for AI products.",
+          "source_content_hash": "66fa6a23c0fd9140473dc686a152ec5d123877405f98c7fa6261f065fc081445",
+          "quote_hash": "0afed96691afa01466bcfc25307364e2ae1329f9f3b1d40fc938cc6184ebd4eb"
+        },
+        {
+          "source_id": "FISRC-5b2df5ac939036e6",
+          "quote": "Exa is an AI-powered search engine built specifically for machines. Unlike traditional search engines, Exa uses embeddings-based semantic searc to understand meaning rather than just matching keywords, making it ideal for feeding results directly into LLMs, AI agents, and RAG systems.",
+          "source_content_hash": "0cece2e35b22260b",
+          "quote_hash": "3f4d6bc4dde64a60612c16deb38ca8087b1df01847baaf812c4c05c748c82505"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-ba2706d0ed3e3aa3",
@@ -27431,6 +29220,34 @@
           "quote": "The resulting open-source project, Fish Speech, quickly became one of the most popular voice projects on GitHub with more than 31,000 stars",
           "source_content_hash": "5b84a2ae5dc0c0e4",
           "quote_hash": "cd08cfef0aa728804b131983e2801954912651b0bee99475a22468d365f20a10"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-14dc4cfff669d03e",
+      "candidate_kind": "product",
+      "research_name": "Flicks",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-1ae1dd29593288ec"
+      ],
+      "funding_insight_ids": [
+        "FI-fab6303ee3f6017e"
+      ],
+      "source_event_ids": [
+        "EV-ce76d1c1572db8e4"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-83ab416cf84d3f07",
+          "quote": "The first is Flicks, which are interactive videos generated by AI models, with AI compression algorithms that optimize playback, ensuring that interactions remain instantaneous and smooth.",
+          "source_content_hash": "ea0a07ec6b5bcc758a53526933b06ed9cdc0625470f1876cb084309d46f1a06b",
+          "quote_hash": "9f90edf1cfdd8375cd095bdd0924a8a16c722150447f11d5e995ef14a9a575de"
         }
       ],
       "market_regions": [
@@ -28772,6 +30589,34 @@
           "quote": "By deploying its machines across large-scale construction sites, Gritt can capture and process real-time data on completed work, material movement, and site conditions, using its intelligence to help supervisors make better decisions.",
           "source_content_hash": "6af714d5b7bb5158",
           "quote_hash": "ef6c6522c42644158f6c56a385b28222fa1bb731b0e50c2b81d65fc6f36c8dcf"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-1a254d17cfa54b16",
+      "candidate_kind": "product",
+      "research_name": "Grok",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "funding_insight_ids": [
+        "FI-a0bd35076a28ce83"
+      ],
+      "source_event_ids": [
+        "EV-688ef84a4024e075"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3b4badfc5c7972fa",
+          "quote": "Grok is a powerful AI assistant designed to provide truthful, useful, and curious insights by leveraging real-time search, image generation, and trend analysis capabilities.",
+          "source_content_hash": "d1bd5f5bb5d9679b",
+          "quote_hash": "dc189dc5973bf879950c257656f9174125e988e15bac71a6d51530f311d2e3f6"
         }
       ],
       "market_regions": [
@@ -30593,10 +32438,12 @@
         "EN-2dc010636b9dce91"
       ],
       "funding_insight_ids": [
+        "FI-0104e002abf6eb2f",
         "FI-d6560f76dae43e6b"
       ],
       "source_event_ids": [
-        "EV-0d4e656aa51f9a46"
+        "EV-0d4e656aa51f9a46",
+        "EV-50b5c4f93ead145d"
       ],
       "evidence_refs": [
         {
@@ -30610,6 +32457,12 @@
           "quote": "Lakebase, is a serverless Postgres database built specifically for AI agents, meaning it can serve live, structured data to autonomous AI workflows without human intervention.",
           "source_content_hash": "2bc06e3f143e739c",
           "quote_hash": "c08610cd4a1ba9998440287652b4bb1115ece4092c5e767dd3e3e3c1ed9e489e"
+        },
+        {
+          "source_id": "FISRC-23f811fd2df5ab63",
+          "quote": "Lakebase, its serverless Postgres database built for AI agents",
+          "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+          "quote_hash": "7cdce424bcc37184af7e74baab479878d3945f9f41d0923055389e40e3b99864"
         }
       ],
       "market_regions": [
@@ -30952,6 +32805,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-9c0c4928afedbe11",
+      "candidate_kind": "product",
+      "research_name": "Lightfield",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-e2e2d8b189801fe6"
+      ],
+      "funding_insight_ids": [
+        "FI-e037d153d435bd8b"
+      ],
+      "source_event_ids": [
+        "EV-d321124f4f5e0edc"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c224adac23aa7c1e",
+          "quote": "Lightfield ingests every customer interaction - email, calendar, calls, Slack, LinkedIn - and structures it into the record on its own.",
+          "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+          "quote_hash": "f4edf2cdfec4efcc67780c10fd79b661401d2de9ac6345fc50e8899e8a1d6bdf"
+        },
+        {
+          "source_id": "FISRC-c224adac23aa7c1e",
+          "quote": "Agents operate through a standardized SDK, run analysis in a code sandbox, and are monitored by evals that hold output quality consistent.",
+          "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+          "quote_hash": "25fc1d50ff3ac1192250e556f5681d65fddac1aa24872120496af11a38d4a61f"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-18fead8c8981a467",
       "candidate_kind": "product",
       "research_name": "Lightning V3.1",
@@ -31080,6 +32967,40 @@
           "quote": "Lio addresses this challenge by introducing Agent Operating Procedures (AOPs) to procurement",
           "source_content_hash": "86de37b74484f02a",
           "quote_hash": "dd11f4e56d07ff07ec8eed0438ddc691a68092c0c655ecc5fc4de5c2a5787e26"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-2eda39e67ce4bea9",
+      "candidate_kind": "product",
+      "research_name": "Listen",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-720d7b20a013162b"
+      ],
+      "funding_insight_ids": [
+        "FI-ef91c9aa46769353"
+      ],
+      "source_event_ids": [
+        "EV-224077c33b02562c"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-dcf11a862138a06d",
+          "quote": "Listen is an AI-first customer research platform. Its AI interviewer talks to people the way a great interviewer would. With access to 30 million pre-qualified participants across demographics and geographies, teams can quickly learn what people think about anything, from ads and messaging to new product concepts and usability tests.",
+          "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+          "quote_hash": "85375d7218a55fb300cb50c9ff57913405a9e509c4cfb345ed122d4d2c320e78"
+        },
+        {
+          "source_id": "FISRC-dcf11a862138a06d",
+          "quote": "Listen turns these conversations into actionable outputs, including reports, themes, highlight reels, and presentation-ready decks. Over time, this creates a searchable repository of customer interviews that teams can query like a knowledge base.",
+          "source_content_hash": "88da97fd4a12510bf638a0d4e00333218d1e722f09d517886226547b1b5f4204",
+          "quote_hash": "17bc373955c99f69781a174f9bf104d6811220498b090a06de7d0ef3b83f17be"
         }
       ],
       "market_regions": [
@@ -32674,6 +34595,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-9af2c1d73a9a9080",
+      "candidate_kind": "product",
+      "research_name": "Multigres",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4d7594e57f7d03f3"
+      ],
+      "funding_insight_ids": [
+        "FI-74f3a658b5ce6913"
+      ],
+      "source_event_ids": [
+        "EV-42ba61e8713cd2e6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-329a0525efb0e1f9",
+          "quote": "Multigres is a scalable operating system for Postgres that provides high availability and operational simplicity.",
+          "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+          "quote_hash": "c33ed87d15685c96cf8dd4cee3474fc7beabfed7e3075684efc9897ce572557e"
+        },
+        {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "quote": "Multigres is designed to provide sharding, connection pooling, query routing, and high availability for Postgres databases",
+          "source_content_hash": "2ff196d4fa7dc98a",
+          "quote_hash": "ffc730c5d08038d72689ebeb267b8f03e958b81b178b7c6532c41e15f597a714"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-62fc4b6889b11f15",
       "candidate_kind": "product",
       "research_name": "MWA™通用具身大脑",
@@ -33030,6 +34985,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-103a41933226db36",
+      "candidate_kind": "product",
+      "research_name": "Neko Health Scan",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-46a10435f014ccc9"
+      ],
+      "funding_insight_ids": [
+        "FI-3516433df02352d1"
+      ],
+      "source_event_ids": [
+        "EV-68cb62eca02df206"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-6442b5e548ad70ee",
+          "quote": "offering a 60-minute health assessment that combines advanced imaging, blood analysis, and AI-supported diagnostics to identify early signs of disease and assess risk factors for conditions including cardiovascular disease, diabetes, and skin cancer.",
+          "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+          "quote_hash": "1aac7a153822bce1608aebf6019239af263398b90f8be1973ea83990983c7f95"
+        },
+        {
+          "source_id": "FISRC-3581a245f48a1be6",
+          "quote": "Neko Health has developed proprietary body-scanning technology, which it couples with bloodwork, to assess a person’s health. For gym lovers, the scan also now includes body composition information. It can couple the assessment with Apple Health data",
+          "source_content_hash": "84b4354178a09925",
+          "quote_hash": "749f2aed943a429416aef87c8ad09adddebb9e2eb00c538da33025f753e8ed72"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-217b7aa275421ecc",
@@ -33923,6 +35912,40 @@
           "quote": "The company’s voice-first AI platform, honed over more than 200 enterprise deployments, is built entirely on its own proprietary agentic Voice AI technology, and supports the most stringent enterprise security and compliance standards, including FedRAMP, PCI-DSS, SOC 2, HIPAA and GDPR.",
           "source_content_hash": "ea6bab0d355fd297",
           "quote_hash": "8e31054cc42ce1d7b12788c7d0d587618017fbd3d8f4aef28eed9f7d7f3fcae9"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-92a4e8ba44b3e8e1",
+      "candidate_kind": "product",
+      "research_name": "Omni",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-a1b7a0cc37ed257d"
+      ],
+      "funding_insight_ids": [
+        "FI-2aee1934d480a82d"
+      ],
+      "source_event_ids": [
+        "EV-95385e7d45e69784"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "The company also introduced Omni, its enterprise AI agent, which achieved a 90.9% score on the GAIA benchmark.",
+          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
+          "quote_hash": "2c748583a42014828a0194fe28af7fde320b8c044032fe2add66a315e21bbcc2"
+        },
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "Omni simplifies the most complex user tasks into simple and autonomous, while also supporting collaborative multi-agent workflows to meet business objectives.",
+          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
+          "quote_hash": "b71cbcd60a6c1f941b4e4d57758321bb229296bd25e864c850b87d4d829cfdec"
         }
       ],
       "market_regions": [
@@ -35198,6 +37221,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-fed9a89e116f25d3",
+      "candidate_kind": "product",
+      "research_name": "Ploy",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5bf8433fda374b42"
+      ],
+      "funding_insight_ids": [
+        "FI-cb3fa4f39250ff32"
+      ],
+      "source_event_ids": [
+        "EV-ba7fd8ed5a019717"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-06b0e5fa3929381b",
+          "quote": "Its agents handle the operational and technical work end to end: designing pages, writing copy, running campaigns, optimizing performance, and syncing data back to the CRM.",
+          "source_content_hash": "9ad34c373c3c1927a5a5e75bac017b837c14a0fd801cb1af9373dd2000d77cbb",
+          "quote_hash": "822f22d29ecac47d7c11fdafb7d4a8187e4a7ea2fd5c4dfb5c140c89ab14fe31"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-481d6f0126526097",
       "candidate_kind": "product",
       "research_name": "Poetic Platform",
@@ -35258,6 +37309,40 @@
           "quote": "Poetic’s purpose-built programming language lets operators define complex workflows in natural language, then encodes that expertise into deterministic, near-tokenless execution.",
           "source_content_hash": "0abde996e8c7afef",
           "quote_hash": "2d3d36cd4db55cb19203ec6b0346a6b6983c08c6a12704e820aa0d688397c8df"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-0d0761a236e45194",
+      "candidate_kind": "product",
+      "research_name": "Pramaana形式验证系统",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-5862e00bd2052e99"
+      ],
+      "funding_insight_ids": [
+        "FI-21864533b90354fa"
+      ],
+      "source_event_ids": [
+        "EV-07cef8183aa6c17b"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-35c5de2fa4b68376",
+          "quote": "Pramaana’s system still runs on a conventional LLM, giving it the flexibility to answer natural language questions and tackle complex problems that conventional computers can’t handle. But there’s a deterministic layer on top of that LLM ensuring the LLM’s work checks out.",
+          "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+          "quote_hash": "b390a2b97c584a6dab58744f4ff02cc4f203b56d16bfd0d5aa13d8c43b7e2f7c"
+        },
+        {
+          "source_id": "FISRC-35c5de2fa4b68376",
+          "quote": "Pramaana’s unique approach is to use the tools of formal verification — drawing on the open source LEAN programming language used to verify mathematical proofs.",
+          "source_content_hash": "c0c15226892f12649e4d36988dda6a63137f6407507f262b5c404683056b9624",
+          "quote_hash": "8f84c4d4065c6c26152a3b33e1f3a84158611b58be7b478d069d9354475c7ac6"
         }
       ],
       "market_regions": [
@@ -35639,6 +37724,34 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-2484522903398cfd",
+      "candidate_kind": "product",
+      "research_name": "Quote Agent",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-682f0a582a09c3be"
+      ],
+      "funding_insight_ids": [
+        "FI-bc56cac4cb991643"
+      ],
+      "source_event_ids": [
+        "EV-3f420ab30e43a3a3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-583456b85ec1179e",
+          "quote": "The funding will also support the development and launch of new products, including Quote Agent, an AI solution for quoting and estimating that will be available this year.",
+          "source_content_hash": "927df588386a3e9e9eff5593d338e5deac39d65fca4a65dd563e313beb8b80ad",
+          "quote_hash": "d522c0b73a6f77ca2d7297f89346c6da7b1a5fadcd7ac74b1614a9920192e080"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-60a71eb584db65bc",
       "candidate_kind": "product",
       "research_name": "R-Series",
@@ -35859,6 +37972,40 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-a7259bf5bfd11ef9",
+      "candidate_kind": "product",
+      "research_name": "Railway 云平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-e34d1c9011e06204"
+      ],
+      "funding_insight_ids": [
+        "FI-8af842cd5fb47f8b"
+      ],
+      "source_event_ids": [
+        "EV-b58eb81bf5235a33"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-978c6dfd9f2ff831",
+          "quote": "Railway set out to build an all new way to simplify developers' infrastructure stack from servers to observability with a single, scalable, easy-to-use platform.",
+          "source_content_hash": "b6a948ff822aa4537ecc53f24924d65cbeac70d053fac9073e4c549875efb011",
+          "quote_hash": "414731c7f38973a966c347af2a16bf2705ea10a1245be5050f0505ba1c89420f"
+        },
+        {
+          "source_id": "FISRC-978c6dfd9f2ff831",
+          "quote": "By operating its own data centers with custom networking and orchestration, Railway charges only for actual usage",
+          "source_content_hash": "b6a948ff822aa4537ecc53f24924d65cbeac70d053fac9073e4c549875efb011",
+          "quote_hash": "c6bf56366171e744a67057b6b29204eb5ce6297350d2170c94843246a3143f03"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-aa7384bbd00f11fa",
       "candidate_kind": "product",
       "research_name": "RBMD",
@@ -35913,6 +38060,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-f9f3acfb933e290d",
+      "candidate_kind": "product",
+      "research_name": "Reactor 实时视频模型推理平台",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-0fdf674dcd7e8566"
+      ],
+      "funding_insight_ids": [
+        "FI-106a6c8d3230e0bd"
+      ],
+      "source_event_ids": [
+        "EV-c6d46d4dae65ba7e"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-d1657a784e92d59a",
+          "quote": "The core insight of Reactor’s platform lies in how easily it enables developers to build real-time video experiences. They abstract away GPU provisioning, infrastructure setup, and streaming complexity, freeing developers to build with real-time video models in their programming language of choice.",
+          "source_content_hash": "dead7f858bd6d786e0c4f9a96d22565fc8676f17a9e9669b211681b2d447058d",
+          "quote_hash": "b0f80cec15ce5a8b5948fa0f8e63a08933c0172f6524e14903a2940b053ee540"
+        },
+        {
+          "source_id": "FISRC-d1657a784e92d59a",
+          "quote": "Real-time video models require fundamentally different infrastructure than the one for any current modality: persistent state across interactions, bidirectional streaming with sub-50ms latency, real-time control input processing, and session orchestration that maintains consistency across thousands of generated frames.",
+          "source_content_hash": "dead7f858bd6d786e0c4f9a96d22565fc8676f17a9e9669b211681b2d447058d",
+          "quote_hash": "9f5a2b8f0d1fd11f1a2f6bb77c7c85d0139dcb258ba1448556bcd4aad32ca83c"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-0c4433bbc8bcded7",
@@ -36955,6 +39136,68 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-4956e15b6573b1e8",
+      "candidate_kind": "product",
+      "research_name": "Sapiom Router",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-18131bed4bcc2f1a"
+      ],
+      "funding_insight_ids": [
+        "FI-fdbf9ae49c5d152e"
+      ],
+      "source_event_ids": [
+        "EV-673637ebe2ac2f2d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "quote": "Router matches each model call to the right model instead of defaulting to the most expensive one.",
+          "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+          "quote_hash": "1a035a5cc086b10adfc37781a5cb0f0aa42e358696022ec67c3b81f145f6c928"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-69d571822d976ba8",
+      "candidate_kind": "product",
+      "research_name": "Sapiom Runtime",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-18131bed4bcc2f1a"
+      ],
+      "funding_insight_ids": [
+        "FI-fdbf9ae49c5d152e"
+      ],
+      "source_event_ids": [
+        "EV-673637ebe2ac2f2d"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-df6a9c9a32146320",
+          "quote": "Runtime provides the managed production infrastructure where those agents execute with the access, routing, recovery, step-level visibility, and controls required to operate at scale.",
+          "source_content_hash": "7a9278378788d40acd22292010ec636c6143ef1a3024e2d4d63ddfb9c832ba1e",
+          "quote_hash": "c6e5dece8ca65b7e4e9669f8e14d1d8c7455d58280c36a56940e01239eae3b7a"
+        },
+        {
+          "source_id": "FISRC-840aa0ed4d90484c",
+          "quote": "Sapiom Runtime lets you operate agents reliably from the first deployment to massive scale without building or managing the infrastructure yourself. It provides sandboxes, memory, secrets, tool access, scheduled triggers, and automatic recovery when steps fail.",
+          "source_content_hash": "03a1064ecadae46f",
+          "quote_hash": "5edc6b3b6f52df3a4e56aecab5e0a2531a31724a17a61caa27fd00d02790534c"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-ee10699cbadc8135",
       "candidate_kind": "product",
       "research_name": "Sarvam Vision",
@@ -37111,6 +39354,40 @@
           "quote": "Key functions include text message protection that automatically routes spam and scam texts to junk, voicemail screening that takes messages from unknown numbers and flags suspected scams, and an “On Call” feature that allows users to add Savi to any live call so the app can listen silently, use behavioral AI to detect scam patterns and alert users as the conversation unfolds.",
           "source_content_hash": "62b38951d68feca9",
           "quote_hash": "ace21cb33c23eecf07f469ae23a3cade531832bda39dca31280d1ed448dde2fa"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-811388a20cad6974",
+      "candidate_kind": "product",
+      "research_name": "Sazabi",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-6d996a5b3ebd3606"
+      ],
+      "funding_insight_ids": [
+        "FI-99460daba598e488"
+      ],
+      "source_event_ids": [
+        "EV-f713858c67327c28"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-fbca80af0ef21f0d",
+          "quote": "Sazabi uses AI agents to understand a team's logs, infrastructure, and codebase before proactively detecting, investigating, and resolving production issues.",
+          "source_content_hash": "ba2d7efd8fe4675920c21c93d4f1f1d1be23bebb8b4de1db51ede6b4be910bd8",
+          "quote_hash": "d754c23018213cff6a5f69519fb9539dfb1ae2c1887926690d1df26c48255cf4"
+        },
+        {
+          "source_id": "FISRC-1b57614c4ace3168",
+          "quote": "Provider of autonomous observability software for conversational debugging and remediation. This platform integrates with coding agents to identify root causes, generate visualizations, and execute automated fixes for production issues.",
+          "source_content_hash": "79d64ba7af852abc",
+          "quote_hash": "63f17dde4ca2f90bb4f7b2acd3f2b9cdcfdb6a1f295a194251c4dc81e8657d33"
         }
       ],
       "market_regions": [
@@ -38780,6 +41057,68 @@
       "china_market_match": false
     },
     {
+      "candidate_id": "FIER-595ea3092b4c39c4",
+      "candidate_kind": "product",
+      "research_name": "Supabase",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4d7594e57f7d03f3"
+      ],
+      "funding_insight_ids": [
+        "FI-74f3a658b5ce6913"
+      ],
+      "source_event_ids": [
+        "EV-42ba61e8713cd2e6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "quote": "Supabase is an open-source development platform built on Postgres – a free, open-source system for storing and querying structured data",
+          "source_content_hash": "2ff196d4fa7dc98a",
+          "quote_hash": "fc41704f7b229068c2206c9cf02558138f7a7d3daae5c5b39cac752416bf0ea0"
+        },
+        {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "quote": "AI-generated applications need a database, authentication, file storage, and a way to handle real-time data.",
+          "source_content_hash": "2ff196d4fa7dc98a",
+          "quote_hash": "15cd6cf8cb664e9738f192395a14499933f68939642e1f0519b66c7cad3c94ec"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-994bf9f4a421b32e",
+      "candidate_kind": "product",
+      "research_name": "Supabase for Platforms",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-4d7594e57f7d03f3"
+      ],
+      "funding_insight_ids": [
+        "FI-74f3a658b5ce6913"
+      ],
+      "source_event_ids": [
+        "EV-42ba61e8713cd2e6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-329a0525efb0e1f9",
+          "quote": "Supabase for Platforms has been the fastest growing product over the last year.",
+          "source_content_hash": "f3319ceed36321e9026dd5f3453e90e2253fd2da7b9bc8ff0d6a6dbf703f7f14",
+          "quote_hash": "ce09e644d099f9b360aab838bd5b0cca7c70dcb10e4c129fd007464c8cf09de0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-0c346f3b20bf8e06",
       "candidate_kind": "product",
       "research_name": "Supercomputer",
@@ -38917,6 +41256,74 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-c8c03056884448ce",
+      "candidate_kind": "product",
+      "research_name": "Synthefy Nori",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-586466805b277098"
+      ],
+      "funding_insight_ids": [
+        "FI-a8a9d64fc040814d"
+      ],
+      "source_event_ids": [
+        "EV-4f56483024dd4e84"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-7cafec2373293af1",
+          "quote": "Nori is an open-source (weights and training code) SDFM for tabular prediction, launched earlier this summer. It ranks first across 130+ public regression benchmarks.",
+          "source_content_hash": "613cce3b5c1e64d961a77840f2d688926de0f954fcc27059e3d24a65f8b0ee52",
+          "quote_hash": "457575034cc69d4f0fbf051e020df91a6f4f603c6efa6d3fd62d83e71006ea31"
+        },
+        {
+          "source_id": "FISRC-7cafec2373293af1",
+          "quote": "At just 30 million parameters, Nori-30M rivals Google's 1.6-billion-parameter TabFM. With thinking enabled, Nori-30M-thinking surpasses it, at roughly 2% of the size.",
+          "source_content_hash": "613cce3b5c1e64d961a77840f2d688926de0f954fcc27059e3d24a65f8b0ee52",
+          "quote_hash": "2d14478f7068995356fa5343ccb8f69963305e0a1c88d0603bbe619733b42d00"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-9a42a52c71a68105",
+      "candidate_kind": "product",
+      "research_name": "Synthefy Synthetic Data",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-586466805b277098"
+      ],
+      "funding_insight_ids": [
+        "FI-a8a9d64fc040814d"
+      ],
+      "source_event_ids": [
+        "EV-4f56483024dd4e84"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-45e0c8d386b55bbe",
+          "quote": "With Synthefy, anyone can generate synthetic time series data in minutes. For the first time, you can harness the power of Synthefy's diffusion models through our self-serve platform.",
+          "source_content_hash": "1faf7972e49ee87c",
+          "quote_hash": "a24f6589b081f2a1190761f4552c686a1644b569ec3be6a6881915ecb1e56205"
+        },
+        {
+          "source_id": "FISRC-45e0c8d386b55bbe",
+          "quote": "Generate entire multivariate time series samples, fully conditional on any metadata you choose.",
+          "source_content_hash": "1faf7972e49ee87c",
+          "quote_hash": "4423f86249cb74ef902356f157bf293c57446c92196692527b39e59721482bf0"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-c23c1ee06dbfba8f",
@@ -39716,6 +42123,40 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-51348896153f44fb",
+      "candidate_kind": "product",
+      "research_name": "Townie",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-50ac81f970325a3e"
+      ],
+      "funding_insight_ids": [
+        "FI-6fbf75e62efb44be"
+      ],
+      "source_event_ids": [
+        "EV-78f25fe89d25eeb6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-55e5e881c734a50f",
+          "quote": "Town is the truly personalized AI assistant that works for you. One assistant for all your work, across every tool and surface you already use.",
+          "source_content_hash": "a02636054ad1f27e705e1620296e7a68b28b8d8342a24019309d1796a1d910cb",
+          "quote_hash": "f01be5ffd2187f3503a73bcadbbd8afe464a6b089ebab996588a9ac115d55fb1"
+        },
+        {
+          "source_id": "FISRC-fb6e58a5cfb36ae5",
+          "quote": "Townies keep a wiki on how you work.",
+          "source_content_hash": "7a844ec2c0b8d002",
+          "quote_hash": "36bbb72d0faf1bc8359480aa7e786725b9eadd2a69a16980d86bac2ca6c74c0e"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-35f72ba9af9216b9",
       "candidate_kind": "product",
       "research_name": "ToxMod",
@@ -39736,6 +42177,40 @@
           "quote": "ToxMod, the world’s first moderation platform specifically designed for voice and all it entails",
           "source_content_hash": "8aa2134175dce30d",
           "quote_hash": "310b8bae5640be8d3bae52ee94e44c44d1e3c90c1b12553fc0a6df50014d6391"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
+      "candidate_id": "FIER-cb8950682271872f",
+      "candidate_kind": "product",
+      "research_name": "Trajectory Continual Learning Platform",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-c32662785b597e46"
+      ],
+      "funding_insight_ids": [
+        "FI-a3d30a9eba7bdb65"
+      ],
+      "source_event_ids": [
+        "EV-54f4bd47b09c4dc3"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-13a2dacfcddc2542",
+          "quote": "develop a platform that enables companies to continuously train large-scale agentic models using signals generated from product usage",
+          "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+          "quote_hash": "cf5e335b53b00ead4e49d4d0f91716cf5aaa46ce879cefdcbd2055c048b35b35"
+        },
+        {
+          "source_id": "FISRC-dafb6cc9a597b6d8",
+          "quote": "Trajectory is a continual learning platform that turns production signals into AI models for ongoing product improvement.",
+          "source_content_hash": "da1af350d7430b1f",
+          "quote_hash": "19d1743d0ec447213b9c0e80ded36a1880636d1d13a2affef93ec7b9dad3db77"
         }
       ],
       "market_regions": [
@@ -40075,10 +42550,12 @@
         "EN-2dc010636b9dce91"
       ],
       "funding_insight_ids": [
+        "FI-0104e002abf6eb2f",
         "FI-d6560f76dae43e6b"
       ],
       "source_event_ids": [
-        "EV-0d4e656aa51f9a46"
+        "EV-0d4e656aa51f9a46",
+        "EV-50b5c4f93ead145d"
       ],
       "evidence_refs": [
         {
@@ -40092,6 +42569,12 @@
           "quote": "Unity AI Gateway is Databricks’ answer to a problem most companies haven’t fully admitted yet: they are running multiple AI models across dozens of workflows and have no coherent way to govern them, control costs, or audit what happened.",
           "source_content_hash": "4d4d42304e7ccffc",
           "quote_hash": "41290fd25b6e3cea09f98fb6628cd895a7904d3fb86aacb3738393e685583302"
+        },
+        {
+          "source_id": "FISRC-23f811fd2df5ab63",
+          "quote": "Unity AI Gateway, for multi-AI governance and cost controls",
+          "source_content_hash": "36992897c004c4c410d9853204d69beb086203e364dc5c92deb4fa9a5aa02283",
+          "quote_hash": "fb19ae8d5e4520e994e81d90d4c9ec3397fb2d5a38c34c829a2665928c8365db"
         }
       ],
       "market_regions": [
@@ -41392,6 +43875,34 @@
       "china_market_match": true
     },
     {
+      "candidate_id": "FIER-14d0ae5ecd3d93c8",
+      "candidate_kind": "product",
+      "research_name": "xAI API",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-6fcba5d96a4fadfd"
+      ],
+      "funding_insight_ids": [
+        "FI-a0bd35076a28ce83"
+      ],
+      "source_event_ids": [
+        "EV-688ef84a4024e075"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-3b4badfc5c7972fa",
+          "quote": "Through its developer API, xAI enables seamless integration of Grok's intelligence into various projects and applications.",
+          "source_content_hash": "d1bd5f5bb5d9679b",
+          "quote_hash": "30082e012ee5bb6c5c3033f43328366b6dadc3d940d09482b117e4896a31b1e6"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
+    },
+    {
       "candidate_id": "FIER-79a9b13fb9ec2e11",
       "candidate_kind": "product",
       "research_name": "Xiaoyu Brain",
@@ -41418,6 +43929,40 @@
         "CN"
       ],
       "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-3fc39c7d8f4f1256",
+      "candidate_kind": "product",
+      "research_name": "Xpander Platform",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-a1b7a0cc37ed257d"
+      ],
+      "funding_insight_ids": [
+        "FI-2aee1934d480a82d"
+      ],
+      "source_event_ids": [
+        "EV-95385e7d45e69784"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "At the core of Xpander's platform is its universal agent harness, a model, framework, and cloud-agnostic runtime that executes AI agents as portable workloads within a customer's own environment while securely rendering agent interfaces on demand.",
+          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
+          "quote_hash": "9973ec07477a0a6fd7660115e8bbca133c1a4498fe4966516ed42c9cf07ddad8"
+        },
+        {
+          "source_id": "FISRC-b58915641f762a44",
+          "quote": "xpander.ai provides a vendor-neutral platform that enables enterprises to build, deploy, and govern AI agents across any model, cloud, or framework.",
+          "source_content_hash": "50cfddf83c4d2ddc2d52d1ee484eee826ecffd6d396dc17103ca4bed20d177e8",
+          "quote_hash": "fd2178c5f5974eef7f5b2db399a34f934b55d246a078ab7a2fd9ac19fd0a16d4"
+        }
+      ],
+      "market_regions": [
+        "GLOBAL"
+      ],
+      "china_market_match": false
     },
     {
       "candidate_id": "FIER-584c5e4c9605623b",
@@ -42216,6 +44761,46 @@
           "quote": "家庭协作 机器人 N1，以异构机械臂方案、轻量化设计，探索率先进入家庭场景的协作 机器人 产品",
           "source_content_hash": "62e2ce5bba0f19793e17ce12827afbfeab3186011072eff8b77ade4c444b2037",
           "quote_hash": "dae0113c9f8e41f11c36a2a3447c1478c8319e67c51a21ea2739787b89e105fb"
+        }
+      ],
+      "market_regions": [
+        "CN"
+      ],
+      "china_market_match": true
+    },
+    {
+      "candidate_id": "FIER-52fd79a4a6dbada9",
+      "candidate_kind": "product",
+      "research_name": "先进封装服务",
+      "status": "pending_canonical_review",
+      "reason": "canonical_exact_match_missing",
+      "company_entity_ids": [
+        "EN-997a5e6e513f2a90"
+      ],
+      "funding_insight_ids": [
+        "FI-08ce9e535e6d0a13"
+      ],
+      "source_event_ids": [
+        "EV-e11382111a5b99f6"
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-662073c15d82f553",
+          "quote": "星辰技术主攻的3D先进封装，正是这条赛道里技术壁垒最高、想象空间最大的细分领域。",
+          "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+          "quote_hash": "4b849e21e1bfd3106b5e324f7daa035058974d2401f5db29e6a37c46f2e37b30"
+        },
+        {
+          "source_id": "FISRC-662073c15d82f553",
+          "quote": "星辰技术将专注打通封装全流程，为客户提供一站式解决方案。",
+          "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+          "quote_hash": "01de31dbdf5f63561dc04aa37f29b9eaca097a0f8d20af258ba424d6efe87b06"
+        },
+        {
+          "source_id": "FISRC-662073c15d82f553",
+          "quote": "一个多月前，总部位于上海的东方算芯发布全球首颗采用三维近存计算技术的AI芯片DF1000，正是由星辰技术完成量产验证，一举破解了算力系统长期面临的“存储墙”“带宽墙”“功耗墙”等瓶颈。",
+          "source_content_hash": "6e0c9cbd450f19d44406bebe7d341257c09c3b7109018732814ccdd1a3f44786",
+          "quote_hash": "dfede3c810980ce1dd1f3be4ad40e89ef13551f53c91726bf5f679b93f9a72ca"
         }
       ],
       "market_regions": [

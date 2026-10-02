@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,19 +61,19 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 2,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-03-03",
-    "latest_disclosed_at": "2025-03-03",
+    "latest_disclosed_at": "2026-01-06",
     "role_counts": {
       "historical_or_ambiguous": 2,
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
       "series_e"
@@ -83,9 +83,54 @@
         "entity_id": "EN-c70eca6b0f88f44d",
         "canonical_entity_id": "EN-c70eca6b0f88f44d",
         "name": "Anthropic PBC"
+      },
+      {
+        "entity_id": "EN-6fcba5d96a4fadfd",
+        "canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "name": "xAI"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d2c37d4f0d8397c8",
+        "funding_insight_id": "FI-4909d937138bd129",
+        "event_ids": [
+          "EV-688ef84a4024e075"
+        ],
+        "company_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_canonical_entity_id": "EN-6fcba5d96a4fadfd",
+        "company_name": "xAI",
+        "round": "E轮",
+        "round_code": "series_e",
+        "round_original": "Series E",
+        "amount_original": "$20 billion",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 20000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "200 亿美元"
+        },
+        "announced_at": "2026-01-06",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-23bba75e0baa6d39",
+            "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+            "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
+            "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
+            "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
+            "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
+          }
+        ]
+      },
       {
         "activity_id": "IA-a3f0edabfcd69176",
         "funding_insight_id": "FI-6601d010adc14dd0",
@@ -194,6 +239,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-23bba75e0baa6d39",
+        "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+        "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
+        "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
+        "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
+        "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
+      },
+      {
         "source_id": "FISRC-ef9fd29dc050f7ca",
         "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
         "source_title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
@@ -252,16 +305,16 @@
       ],
       "track_record": [
         {
+          "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23bba75e0baa6d39"
+        },
+        {
           "description": "融资来源记录：Anthropic PBC · E轮 · 2025-03-03 · 本轮参投 · $3.5B。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ef9fd29dc050f7ca"
         },
         {
           "description": "融资来源记录：Groq · D轮 · D轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-6ef693ebacbad168"
-        },
-        {
-          "description": "融资来源记录：Starcloud · 历史轮次未披露 · 后续轮次参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3b8fce2e43a41d5b"
         }
       ],
       "contacts": [
@@ -291,6 +344,14 @@
           "quote_hash": "357d5b29db19fb8c8c313c43dc226a7834d394a796fec4c83bc76a51bc3efbf6"
         },
         {
+          "source_id": "FISRC-23bba75e0baa6d39",
+          "source_url": "https://www.cnbc.com/2026/01/06/elon-musk-xai-raises-20-billion-from-nvidia-cisco-investors.html",
+          "source_title": "埃隆·马斯克的xAI从包括英伟达、思科、富达在内的投资者处融资200亿美元",
+          "source_content_hash": "92e50c4e309211558f61eb5d4281180bde2c60bbdf06709bd630e3cdf9297bbf",
+          "quote": "Investors included Nvidia and Cisco Investments as well as long-time Musk company backers Valor Equity Partners, Stepstone Group, Fidelity, Qatar Investment Authority, Abu Dhabi's MGX and Baron Capital Group.",
+          "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
+        },
+        {
           "source_id": "FISRC-ef9fd29dc050f7ca",
           "source_url": "https://siliconangle.com/2025/03/03/anthropic-raises-3-5b-61-5b-valuation-advance-ai-research/",
           "source_title": "Anthropic raises $3.5B at $61.5B valuation to advance its AI research - SiliconANGLE",
@@ -305,14 +366,6 @@
           "source_content_hash": "49d31e2d6afab8b0",
           "quote": "In August last year, Groq raised $640 million in a Series D funding round led by Cisco Investments, Samsung Catalyst Fund and BlackRock Private Equity Partners, among others, which brought its valuation to $2.8 billion.",
           "quote_hash": "4176996439738f8e3f1f9bb2ded34c557750df899e0a00fcca208a70bcb8785f"
-        },
-        {
-          "source_id": "FISRC-3b8fce2e43a41d5b",
-          "source_url": "https://multiples.vc/private-comps/starcloud",
-          "source_title": "Starcloud Valuation, Funding & Investors | Multiples",
-          "source_content_hash": "fd3765e774ce97c7",
-          "quote": "The $250M round was led by Manhattan West, with participation from NVIDIA, EQT, Seven Seven Six, Goanna Capital, Cisco Investments and 5 other investors.",
-          "quote_hash": "761137b367e8ae0a0906aa6778a8d1c54f60d8ff77c65a7782e8d83304dc8f01"
         }
       ],
       "last_verified_at": "2026-09-26",

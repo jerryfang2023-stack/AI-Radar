@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
@@ -74,10 +74,11 @@
     "role_counts": {
       "historical_or_ambiguous": 1,
       "lead": 1,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "seed",
+      "series_a",
       "series_e"
     ],
     "portfolio_companies": [
@@ -85,6 +86,11 @@
         "entity_id": "EN-4b6cef91ffb05303",
         "canonical_entity_id": "",
         "name": "Cognition AI"
+      },
+      {
+        "entity_id": "EN-e2e2d8b189801fe6",
+        "canonical_entity_id": "",
+        "name": "Lightfield"
       },
       {
         "entity_id": "EN-a7dd4a797cf9990b",
@@ -135,6 +141,46 @@
             "source_content_hash": "ad04baf1994708d0",
             "quote": "Existing investors, including Addition, Lightspeed, Greylock, GV, and Wells Fargo, also participated in the round.",
             "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-94f88dff5cc559f1",
+        "funding_insight_id": "FI-4065d03db9160118",
+        "event_ids": [
+          "EV-d321124f4f5e0edc"
+        ],
+        "company_entity_id": "EN-e2e2d8b189801fe6",
+        "company_canonical_entity_id": "",
+        "company_name": "Lightfield",
+        "round": "A轮",
+        "round_code": "series_a",
+        "round_original": "A轮",
+        "amount_original": "$47 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 47000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "4700 万美元"
+        },
+        "announced_at": "2026-09-09",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-c224adac23aa7c1e",
+            "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+            "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+            "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+            "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+            "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
           }
         ]
       },
@@ -261,6 +307,14 @@
         "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
       },
       {
+        "source_id": "FISRC-c224adac23aa7c1e",
+        "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+        "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+        "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+        "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+        "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
+      },
+      {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
         "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -334,12 +388,12 @@
           "source_id": "FISRC-16afc5791c45315a"
         },
         {
-          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-61aa8db010b34dfa"
+          "description": "融资来源记录：Lightfield · A轮 · 2026-09-09 · 本轮参投 · $47 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-c224adac23aa7c1e"
         },
         {
-          "description": "融资来源记录：Niteshift · 种子轮 · 2026-06-10 · 本轮领投 · $7 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-01df70e43799a400"
+          "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-61aa8db010b34dfa"
         }
       ],
       "contacts": [
@@ -394,20 +448,20 @@
           "quote_hash": "92843a27e9a17a95541b55d525127fe759bd8cd3c7ac12e6ae5e7f1891818260"
         },
         {
+          "source_id": "FISRC-c224adac23aa7c1e",
+          "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
+          "source_title": "Lightfield 融资 4700 万美元 A 轮，为运行 AI 智能体的公司打造 CRM",
+          "source_content_hash": "81d75b049cb405908d9b44b898723f084f4c0b349acb89fc8dfa966063eea4f7",
+          "quote": "Lightfield today announced a $47 million Series A led by Andreessen Horowitz, including participation from Maverick Capital, Coatue, Audacious, Alumni Ventures, Greylock, and Lightspeed Venture Partners.",
+          "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
+        },
+        {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
           "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
           "source_content_hash": "274ba4a54870c633",
           "quote": "Participants disclosed by Cognition include firms such as: Benchmark, Bessemer Venture Partners, Kleiner Perkins, Greylock, Lightspeed, Altimeter, Bond Capital, Meritech, T. Rowe Price, Lux Capital, 8VC, D1, DST, Bain Capital Ventures, Alpha Wave, Alkeon, and NVIDIA.",
           "quote_hash": "f2a0d197e0396b9963280cb96ad06c1d65b66c1c6800d03882dcd58ec19c454a"
-        },
-        {
-          "source_id": "FISRC-01df70e43799a400",
-          "source_url": "https://techcrunch.com/2026/06/10/datadog-veterans-launch-ai-coding-startup-niteshift-on-a-bet-against-big-ai-lock-in",
-          "source_title": "Datadog 资深人士创立 AI 编码初创公司 Niteshift，押注企业对抗大模型锁定",
-          "source_content_hash": "21b15182c071a779",
-          "quote": "Niteshift has raised a $7 million seed round led by Greylock’s Jerry Chen.",
-          "quote_hash": "5d755020d7aeebf996ab29872032d7726456cf085ad52a99c899bc2d4a3e257c"
         }
       ],
       "last_verified_at": "2026-09-25",

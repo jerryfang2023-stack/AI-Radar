@@ -80,7 +80,7 @@ export async function collectHistory({root,directory,backupRoot,date,from,to,inp
     intake.raw_documents.forEach(row=>{row.body_ref=`evidence://${row.content_hash}`;});
     write(sourceIntakePath(root,date),mergeSourceIntakes(readSourceIntake(root,date)?.payload,intake));
     state.raw_ids=intake.raw_documents.map(r=>r.raw_id);
-    write(policyFile,{schema_version:'TARGETED-FUNDING-AUTHORIZATION-V1',from,to,reviewed_by:'Codex: explicit user request for 2026 AIHOT financing backfill',source_refs:[...new Set([...(policy?.source_refs||[]),...intake.source_artifacts.map(r=>r.source_artifact_id)])]});
+    write(policyFile,{schema_version:'TARGETED-FUNDING-AUTHORIZATION-V1',from,to,reviewed_by:'Codex: explicit user request for 2026 AIHOT financing backfill',source_refs:[...new Set([...(policy?.source_refs||[]),...intake.source_artifacts.map(r=>r.source_artifact_id)])],...(policy?.round_identity_source_refs ? {round_identity_source_refs:policy.round_identity_source_refs} : {}),...(policy?.event_date_reviews ? {event_date_reviews:policy.event_date_reviews} : {})});
     indexFinancingEvidence({root,backupRoot,date,collection:state});
     state.accepted=true;state.counts.accepted_originals=entries.length;
     state.status=state.discovery_complete?'accepted':'accepted_with_discovery_gaps';

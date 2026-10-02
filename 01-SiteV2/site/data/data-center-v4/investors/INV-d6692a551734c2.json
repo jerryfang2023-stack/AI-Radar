@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,23 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
-    "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 1,
+    "current_round_count": 2,
+    "historical_or_ambiguous_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-06-03",
-    "latest_disclosed_at": "2026-06-03",
+    "latest_disclosed_at": "2026-07-15",
     "role_counts": {
-      "lead": 1
+      "historical_or_ambiguous": 1,
+      "lead": 1,
+      "participant": 1
     },
     "round_codes": [
+      "series_c",
       "series_d"
     ],
     "portfolio_companies": [
@@ -82,9 +85,54 @@
         "entity_id": "EN-049b3253f4a8e2eb",
         "canonical_entity_id": "",
         "name": "Factorial"
+      },
+      {
+        "entity_id": "EN-46a10435f014ccc9",
+        "canonical_entity_id": "",
+        "name": "Neko Health"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-5231b3f610080975",
+        "funding_insight_id": "FI-df55ec22162132fb",
+        "event_ids": [
+          "EV-68cb62eca02df206"
+        ],
+        "company_entity_id": "EN-46a10435f014ccc9",
+        "company_canonical_entity_id": "",
+        "company_name": "Neko Health",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$700m",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 700000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7 亿美元"
+        },
+        "announced_at": "2026-07-15",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-6442b5e548ad70ee",
+            "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+            "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+            "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+            "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
+            "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-f2860a51adb5c8b3",
         "funding_insight_id": "FI-274044e5d2a8eb25",
@@ -132,9 +180,49 @@
             "quote_hash": "50eabb913bd644ed706967e8b68450deefd41ffbf2e2fb521b06e585a4d1a6d6"
           }
         ]
+      },
+      {
+        "activity_id": "IA-43c1eb0f3e248116",
+        "funding_insight_id": "FI-1dc406316e215064",
+        "event_ids": [
+          "EV-3f420ab30e43a3a3"
+        ],
+        "company_entity_id": "EN-682f0a582a09c3be",
+        "company_canonical_entity_id": "",
+        "company_name": "CloudNC",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "历史投资方",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-583456b85ec1179e",
+            "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
+            "source_title": "CloudNC 融资 2000 万美元，扩展精密加工 AI 工具",
+            "source_content_hash": "927df588386a3e9e9eff5593d338e5deac39d65fca4a65dd563e313beb8b80ad",
+            "quote": "The technology company is backed by leading venture capital firms Atomico and Episode 1 Ventures, alongside Autodesk and Lockheed Martin as strategic partners.",
+            "quote_hash": "2903308aa2ec185dc490baa2f68db98bb0ebd35cac0545ca15394b44a5bd26ee"
+          }
+        ]
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-6442b5e548ad70ee",
+        "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+        "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+        "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+        "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
+        "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
+      },
       {
         "source_id": "FISRC-e9a8d571db654fd4",
         "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",
@@ -150,6 +238,14 @@
         "source_content_hash": "c578f3ea8e386517",
         "quote": "reached unicorn status in October 2022 on a $120M Series C led by Atomico",
         "quote_hash": "50eabb913bd644ed706967e8b68450deefd41ffbf2e2fb521b06e585a4d1a6d6"
+      },
+      {
+        "source_id": "FISRC-583456b85ec1179e",
+        "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
+        "source_title": "CloudNC 融资 2000 万美元，扩展精密加工 AI 工具",
+        "source_content_hash": "927df588386a3e9e9eff5593d338e5deac39d65fca4a65dd563e313beb8b80ad",
+        "quote": "The technology company is backed by leading venture capital firms Atomico and Episode 1 Ventures, alongside Autodesk and Lockheed Martin as strategic partners.",
+        "quote_hash": "2903308aa2ec185dc490baa2f68db98bb0ebd35cac0545ca15394b44a5bd26ee"
       }
     ],
     "public_profile": {
@@ -157,10 +253,14 @@
       "identity_status": "pending_verification",
       "coverage_status": "identity_unverified",
       "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Atomico 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Atomico 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：Neko Health · C轮 · 2026-07-15 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-6442b5e548ad70ee"
+        },
         {
           "description": "融资来源记录：Factorial · D轮 · 2026-06-03 · 本轮参投；C 轮领投 · 1.5 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e9a8d571db654fd4"
@@ -172,6 +272,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-6442b5e548ad70ee",
+          "source_url": "https://www.hospitalsandhealthcare.com/latest/news/neko-health-raises-700m-expand-preventative-care-model-us",
+          "source_title": "Neko Health 融资 7 亿美元，将预防性护理模式拓展至美国",
+          "source_content_hash": "33498f3887c245da39fd001b1541a65c377880c885ac7e39e1b7319633c9bda9",
+          "quote": "with participation from existing investors including Atomico, General Catalyst, and Lakestar, alongside several new backers",
+          "quote_hash": "defa0871f199f4cf29f81e0cbcbc359d5a165310a650dad2d3fedc0f764e960f"
+        },
         {
           "source_id": "FISRC-e9a8d571db654fd4",
           "source_url": "https://www.prnewswire.com/news-releases/factorial-raises-150m-series-d-reaches-2-5-billion-valuation-to-become-one-of-the-most-valuable-ai-scale-ups-in-europe-302789078.html",

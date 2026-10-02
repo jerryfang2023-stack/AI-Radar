@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "个人投资者",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-07-16",
     "role_counts": {
       "other_current_round": 2,
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
       "multi_round",
@@ -95,6 +95,11 @@
         "entity_id": "FICO-7e1d6c73932aa9b0",
         "canonical_entity_id": "",
         "name": "Odyssey ML"
+      },
+      {
+        "entity_id": "EN-c32662785b597e46",
+        "canonical_entity_id": "",
+        "name": "Trajectory"
       }
     ],
     "activities": [
@@ -219,6 +224,46 @@
         ]
       },
       {
+        "activity_id": "IA-ad0ce85a3d7fb5e6",
+        "funding_insight_id": "FI-dd04330326d86da8",
+        "event_ids": [
+          "EV-54f4bd47b09c4dc3"
+        ],
+        "company_entity_id": "EN-c32662785b597e46",
+        "company_canonical_entity_id": "",
+        "company_name": "Trajectory",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "Seed",
+        "amount_original": "$15 Million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 15000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1500 万美元"
+        },
+        "announced_at": "2026-05-31",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-13a2dacfcddc2542",
+            "source_url": "https://pulse2.com/trajectory-raises-15-million-to-build-a-platform-for-continual-learning/",
+            "source_title": "Trajectory 融资 1500 万美元，打造持续学习平台",
+            "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+            "quote": "The funding round included participation from Conviction, Bessemer Venture Partners, Radical Ventures, as well as notable AI leaders including Jeff Dean and Fei-Fei Li.",
+            "quote_hash": "4d86e29cd2c6e8d8d65796ccaa48f1abe3c1dd687f6a6b365b6376524de1726c"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-c0ae8e72885f9067",
         "funding_insight_id": "FI-24441bfba8aff1ad",
         "event_ids": [
@@ -283,6 +328,14 @@
         "source_content_hash": "75587989c4b9271c",
         "quote": "These include Jeff Dean, Elad Gil, Garry Tan, Guillermo Rauch, and Cruise founder Kyle Vogt.",
         "quote_hash": "1dc60799a251a7ee9baca1d4db39e00312e6b360748a03aeaf7039b1ef047a15"
+      },
+      {
+        "source_id": "FISRC-13a2dacfcddc2542",
+        "source_url": "https://pulse2.com/trajectory-raises-15-million-to-build-a-platform-for-continual-learning/",
+        "source_title": "Trajectory 融资 1500 万美元，打造持续学习平台",
+        "source_content_hash": "1e657fbd6401ac3a382c6cd21d869875c54ad145c49da0d029f6d95deecb43cc",
+        "quote": "The funding round included participation from Conviction, Bessemer Venture Partners, Radical Ventures, as well as notable AI leaders including Jeff Dean and Fei-Fei Li.",
+        "quote_hash": "4d86e29cd2c6e8d8d65796ccaa48f1abe3c1dd687f6a6b365b6376524de1726c"
       },
       {
         "source_id": "FISRC-0a52165fbfc8575b",

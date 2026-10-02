@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3736,
+    "eventCount": 3768,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,9 +63,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 26,
+    "current_round_count": 30,
     "historical_or_ambiguous_count": 6,
-    "portfolio_company_count": 25,
+    "portfolio_company_count": 29,
     "market_regions": [
       "GLOBAL"
     ],
@@ -75,8 +75,8 @@
     "latest_disclosed_at": "2026-08-13",
     "role_counts": {
       "historical_or_ambiguous": 6,
-      "lead": 2,
-      "participant": 24
+      "lead": 4,
+      "participant": 26
     },
     "round_codes": [
       "multi_round",
@@ -84,7 +84,9 @@
       "seed",
       "series_a",
       "series_b_extension",
-      "series_d"
+      "series_c",
+      "series_d",
+      "series_f"
     ],
     "portfolio_companies": [
       {
@@ -101,6 +103,11 @@
         "entity_id": "EN-2f88f41306209dd7",
         "canonical_entity_id": "",
         "name": "Avoca AI"
+      },
+      {
+        "entity_id": "EN-9db7cd4f9d5b9566",
+        "canonical_entity_id": "",
+        "name": "Bland"
       },
       {
         "entity_id": "EN-fe301d1f025971a1",
@@ -163,6 +170,11 @@
         "name": "Onyx"
       },
       {
+        "entity_id": "EN-5bf8433fda374b42",
+        "canonical_entity_id": "",
+        "name": "Ploy"
+      },
+      {
         "entity_id": "EN-53b69ef92c836777",
         "canonical_entity_id": "",
         "name": "Replit"
@@ -171,6 +183,11 @@
         "entity_id": "EN-8ab71d56a963f706",
         "canonical_entity_id": "",
         "name": "River AI"
+      },
+      {
+        "entity_id": "EN-6d996a5b3ebd3606",
+        "canonical_entity_id": "",
+        "name": "Sazabi"
       },
       {
         "entity_id": "EN-d387c8c96239d383",
@@ -196,6 +213,11 @@
         "entity_id": "EN-8bb4f88fd3cf9b29",
         "canonical_entity_id": "",
         "name": "Structured AI"
+      },
+      {
+        "entity_id": "EN-4d7594e57f7d03f3",
+        "canonical_entity_id": "",
+        "name": "Supabase"
       },
       {
         "entity_id": "EN-a56c2fbccb257dba",
@@ -543,6 +565,46 @@
         ]
       },
       {
+        "activity_id": "IA-aa331befadab29ca",
+        "funding_insight_id": "FI-a386f8736afd6355",
+        "event_ids": [
+          "EV-f713858c67327c28"
+        ],
+        "company_entity_id": "EN-6d996a5b3ebd3606",
+        "company_canonical_entity_id": "",
+        "company_name": "Sazabi",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$8 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 8000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "800 万美元"
+        },
+        "announced_at": "2026-06-25",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-fbca80af0ef21f0d",
+            "source_url": "https://www.prnewswire.com/news-releases/sazabi-raises-8-million-seed-round-to-build-the-ai-native-observability-platform-for-fast-moving-engineering-teams-302810085.html",
+            "source_title": "Sazabi 完成 800 万美元种子轮融资，为快速发展的工程团队构建 AI 原生可观测性平台",
+            "source_content_hash": "ba2d7efd8fe4675920c21c93d4f1f1d1be23bebb8b4de1db51ede6b4be910bd8",
+            "quote": "an $8 million seed financing led by J2 Ventures, Village Global, and Y Combinator",
+            "quote_hash": "66231f250add3445a0eb787838465ec152c54b0d4c4bb1fc7a300b1e33e37a2e"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-c51bfe3e39917546",
         "funding_insight_id": "FI-617705549a679908",
         "event_ids": [
@@ -583,6 +645,86 @@
         ]
       },
       {
+        "activity_id": "IA-69d8f1563174c65b",
+        "funding_insight_id": "FI-de95c94135ad5e68",
+        "event_ids": [
+          "EV-ba7fd8ed5a019717"
+        ],
+        "company_entity_id": "EN-5bf8433fda374b42",
+        "company_canonical_entity_id": "",
+        "company_name": "Ploy",
+        "round": "种子轮",
+        "round_code": "seed",
+        "round_original": "种子轮",
+        "amount_original": "$27 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 27000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "2700 万美元"
+        },
+        "announced_at": "2026-06-17",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-06b0e5fa3929381b",
+            "source_url": "https://www.prnewswire.com/news-releases/ploy-raises-27m-to-turn-your-companys-website-into-your-hardest-working-employee-302803231.html",
+            "source_title": "Ploy 融资 2700 万美元，将你的公司网站变成你最勤奋的员工",
+            "source_content_hash": "9ad34c373c3c1927a5a5e75bac017b837c14a0fd801cb1af9373dd2000d77cbb",
+            "quote": "$27 million seed led by First Round Capital and Y Combinator",
+            "quote_hash": "7cb0f31df29d4b600ff82a7354709a5e6707f3920b96b2a6d33b726186d4f70d"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-4ae1c7429634c660",
+        "funding_insight_id": "FI-8c15d4f82acbe6d8",
+        "event_ids": [
+          "EV-796f551775a566ba"
+        ],
+        "company_entity_id": "EN-9db7cd4f9d5b9566",
+        "company_canonical_entity_id": "",
+        "company_name": "Bland",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$50 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 50000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5000 万美元"
+        },
+        "announced_at": "2026-06-16",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a6233a9ab76850de",
+            "source_url": "https://multiples.vc/private-comps/bland-ai",
+            "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
+            "source_content_hash": "61e54f8481bb7570",
+            "quote": "All existing investors, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator, Max Levchin, Piotr Dąbkowski, and Jeff Lawson, also participated.",
+            "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
+          }
+        ]
+      },
+      {
         "activity_id": "IA-3472da2e41364568",
         "funding_insight_id": "FI-82d1e99998c69025",
         "event_ids": [
@@ -619,6 +761,46 @@
             "source_content_hash": "77fbdb6058a98d5e",
             "quote": "with participation from Y Combinator",
             "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-bca56fc77f827cc9",
+        "funding_insight_id": "FI-d3f8f22849d09dcc",
+        "event_ids": [
+          "EV-42ba61e8713cd2e6"
+        ],
+        "company_entity_id": "EN-4d7594e57f7d03f3",
+        "company_canonical_entity_id": "",
+        "company_name": "Supabase",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "F轮",
+        "amount_original": "$500M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 500000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "5 亿美元"
+        },
+        "announced_at": "2026-06-04",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-a9654b37adce00dc",
+            "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+            "source_title": "Why Georgian Invested in Supabase",
+            "source_content_hash": "2ff196d4fa7dc98a",
+            "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+            "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
           }
         ]
       },
@@ -1545,6 +1727,14 @@
         "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
       },
       {
+        "source_id": "FISRC-fbca80af0ef21f0d",
+        "source_url": "https://www.prnewswire.com/news-releases/sazabi-raises-8-million-seed-round-to-build-the-ai-native-observability-platform-for-fast-moving-engineering-teams-302810085.html",
+        "source_title": "Sazabi 完成 800 万美元种子轮融资，为快速发展的工程团队构建 AI 原生可观测性平台",
+        "source_content_hash": "ba2d7efd8fe4675920c21c93d4f1f1d1be23bebb8b4de1db51ede6b4be910bd8",
+        "quote": "an $8 million seed financing led by J2 Ventures, Village Global, and Y Combinator",
+        "quote_hash": "66231f250add3445a0eb787838465ec152c54b0d4c4bb1fc7a300b1e33e37a2e"
+      },
+      {
         "source_id": "FISRC-058518ce11dc5f00",
         "source_url": "https://sg.finance.yahoo.com/news/justai-raises-17m-series-build-170000502.html",
         "source_title": "JustAI Raises $17M Series A to Build an Agentic Marketing Platform",
@@ -1553,12 +1743,36 @@
         "quote_hash": "b268d7beb97b26faab0cea8b331fc0e2723c65c46e38dcc01d4429083ab013db"
       },
       {
+        "source_id": "FISRC-06b0e5fa3929381b",
+        "source_url": "https://www.prnewswire.com/news-releases/ploy-raises-27m-to-turn-your-companys-website-into-your-hardest-working-employee-302803231.html",
+        "source_title": "Ploy 融资 2700 万美元，将你的公司网站变成你最勤奋的员工",
+        "source_content_hash": "9ad34c373c3c1927a5a5e75bac017b837c14a0fd801cb1af9373dd2000d77cbb",
+        "quote": "$27 million seed led by First Round Capital and Y Combinator",
+        "quote_hash": "7cb0f31df29d4b600ff82a7354709a5e6707f3920b96b2a6d33b726186d4f70d"
+      },
+      {
+        "source_id": "FISRC-a6233a9ab76850de",
+        "source_url": "https://multiples.vc/private-comps/bland-ai",
+        "source_title": "Bland AI Funding, Investors & Competitors | Multiples",
+        "source_content_hash": "61e54f8481bb7570",
+        "quote": "All existing investors, including Emergence Capital, Upfront Ventures, Scale Venture Partners, Y Combinator, Max Levchin, Piotr Dąbkowski, and Jeff Lawson, also participated.",
+        "quote_hash": "f95896f249945e60f276144d3c7e8fd95ced5417c65e48f78848e9689de9e4d9"
+      },
+      {
         "source_id": "FISRC-7568031d64eac5fa",
         "source_url": "https://getstructured.ai/blog/structured-ai-4-2m-seed-round/",
         "source_title": "Structured AI 获420万美元种子轮融资，为建筑世界构建质量层",
         "source_content_hash": "77fbdb6058a98d5e",
         "quote": "with participation from Y Combinator",
         "quote_hash": "a2cd665bcd61bbcc9e412400f1d8e3a4eec73107f3d5251698eaf4e96b3912da"
+      },
+      {
+        "source_id": "FISRC-a9654b37adce00dc",
+        "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+        "source_title": "Why Georgian Invested in Supabase",
+        "source_content_hash": "2ff196d4fa7dc98a",
+        "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
+        "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
       },
       {
         "source_id": "FISRC-2513b5897a02dd3c",

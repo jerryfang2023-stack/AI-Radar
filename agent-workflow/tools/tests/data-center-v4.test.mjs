@@ -20,6 +20,18 @@ const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
 
+test('a reviewed financing date requires a captured earlier disclosure of the same company and amount', async () => {
+  const {reviewedFundingDate} = await import('../build-data-center-v4.mjs');
+  const quote='Acme Health raised $700 million in Series C funding.';
+  const context={subject:'Acme Health',amount:'$700 million',publishedAt:'2026-07-20',sources:new Map([['SA-original',{raw:{published_at:'2026-07-15',clean_text:quote}}]])};
+  const review={status:'accepted',reviewer:'fixture',date:'2026-07-15',source_ref:'SA-original',quote};
+  assert.equal(reviewedFundingDate(review,context),'2026-07-15');
+  assert.equal(reviewedFundingDate(null,context),'2026-07-20');
+  for(const bad of [{...review,date:'2026-07-14'},{...review,quote:'Changed text'},{...review,reviewer:''}])assert.throws(()=>reviewedFundingDate(bad,context),/invalid_reviewed_funding_date/);
+  assert.throws(()=>reviewedFundingDate(review,{...context,subject:'Another company'}),/invalid_reviewed_funding_date/);
+  assert.throws(()=>reviewedFundingDate(review,{...context,amount:'$70 million'}),/invalid_reviewed_funding_date/);
+});
+
 test('rebuilding raw intake preserves accepted reviews only for retained events', () => {
   const directory = fs.mkdtempSync(path.join(os.tmpdir(), 'reviewed-facts-'));
   try {
@@ -511,6 +523,24 @@ function acceptedModelCandidate(sourceEntry, claims, evidence) {
     evidence,
   };
 }
+
+test('reviewed financing rounds do not merge through a shared investor and amount', () => {
+  const inputs = [
+    entry('funded-xai', 'xAI raises $20 billion in Series E', 'xAI has raised $20 billion in Series E funding. Nvidia participated. The company builds large language models.'),
+    entry('funded-openai', 'OpenAI raises $20 billion in Series G', 'OpenAI has raised $20 billion in Series G funding. Nvidia participated. The company builds large language models.'),
+  ];
+  const sourceRefs = inputs.map(item => sourceArtifact(item.raw, item.file).source_artifact_id);
+  const result = buildBundle(inputs, taxonomy, date, `${date}T00:00:00Z`, {
+    targetedFundingPolicy: { round_identity_source_refs: sourceRefs },
+  });
+  assert.equal(result.canonical_events.length, 2);
+  assert.ok(result.canonical_events.every(event => event.source_refs.length === 1));
+});
+
+test('software development agents provide explicit AI product evidence', () => {
+  assert.equal(eventAiRelevanceEvidence({claims:[{source_quote:'Droids are software development agents that operate autonomously.'}],eventType:'funding'}).accepted,true);
+  assert.equal(eventAiRelevanceEvidence({claims:[{source_quote:'The company hires agents for software development sales.'}],eventType:'funding'}).accepted,false);
+});
 
 test("a cross-linked AI snippet cannot publish an unrelated entity-free headline", () => {
   const bundle = buildBundle([
