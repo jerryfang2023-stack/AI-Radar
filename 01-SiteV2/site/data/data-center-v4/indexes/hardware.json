@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3768,
+    "eventCount": 3783,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -3897,6 +3897,90 @@
       "sourceUrl": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead/",
       "entityIds": [
         "EN-ee314fcf465563d0"
+      ]
+    },
+    {
+      "id": "HWC-44203d15d2d13a56",
+      "snapshotKey": "44203d15d2d13a56",
+      "snapshotId": "HWS-cf3c2b32bdaebeee",
+      "eventId": "EV-1ef8979f39a2ccc5",
+      "eventIds": [
+        "EV-1ef8979f39a2ccc5"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Physical AI company SiMa.ai",
+      "subject": "Physical AI company SiMa.ai",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "1000",
+          "unit": "TOPS",
+          "fact_ref": "HWF-61b148ce4ae4e66e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-61b148ce4ae4e66e",
+          "fact_type": "specification",
+          "observed_at": "2026-09-28",
+          "subject_entity_id": "EN-f76a8103e49bcc36",
+          "subject_name": "Physical AI company SiMa.ai",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "1000",
+          "unit": "TOPS",
+          "source_quote": "&quot;Physical AI company SiMa.ai has raised $150 million in a Series C financing round, bringing its total capital raised to $500 million and valuing the company at $1.45 billion. The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group. AllianceBernstein, Baron Capital and J.P. Morgan also joined the round as new investors. The proceeds will be used to scale Palette Neat, an agentic software environment for Physical AI, and develop next-generation hardware capable of delivering 1,000 TOPS of compute through purpose-built Physical AI silicon, SiMa.ai said in a press release. Founded in 2018 by Krishna Rangasayee, SiMa.ai provides a software-centric platform for Physical AI applications. The company focuses on robotics, automotive, drones, industrial automation, aerospace and defence, smart vision and healthcare. SiMa.ai said it serves more than 150 customers across automotive, drones and robotics, including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&amp;amp;T Technology Services, Mistral, STIGA, Synopsys and Virya Autonomous Tech, among others. According to market research cited by the company, the global Physical AI devices market, including robotics, automotive and drones, is projected to reach 145 million cumulative shipments by 2035. SiMa.ai said Physical AI applications have traditionally relied on NVIDIA GPUs, which can be expensive and power intensive. The company offers a full-stack Physical AI platform that combines purpose-built silicon and software to simplify deployments. Slated for H1 2028, the next-generation hardware will include machine learning IP, chiplets and SoCs. The company plans to target medium to high-end drones, humanoid robotics, automotive advanced driver assistance systems (ADAS) and AI-powered cockpits. &quot;",
+          "event_refs": [
+            "EV-1ef8979f39a2ccc5"
+          ],
+          "claim_ref": "CL-4b12f3229b74f6a7",
+          "source_refs": [
+            "SA-3acbf41a1b58d786"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+      "entityIds": [
+        "EN-f76a8103e49bcc36",
+        "EN-8d4321d936320802"
       ]
     },
     {
@@ -19581,24 +19665,24 @@
       "lens": "hardware",
       "date": "2026-10-02",
       "monitoring_paths": [],
-      "raw_documents": 39,
-      "original_sources": 39,
-      "valid_claims": 10,
-      "observations": 4,
-      "canonical_events": 8,
+      "raw_documents": 42,
+      "original_sources": 42,
+      "valid_claims": 12,
+      "observations": 5,
+      "canonical_events": 9,
       "blocker_counts": {
         "no_source_bounded_event": 5,
-        "event_not_ai_relevant": 4,
+        "event_not_ai_relevant": 5,
         "model_assist_source_outside_daily_window": 9,
-        "rumor_requires_primary_confirmation": 10,
+        "rumor_requires_primary_confirmation": 11,
         "proposed_financing_not_completed": 1,
         "multi_event_roundup_not_single_event_source": 1
       },
       "rates": {
         "original_source_rate": 1,
-        "valid_claim_rate": 0.2564102564102564,
-        "observation_rate": 0.4,
-        "event_conversion_rate": 0.8
+        "valid_claim_rate": 0.2857142857142857,
+        "observation_rate": 0.4166666666666667,
+        "event_conversion_rate": 0.75
       },
       "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/monitoring-funnel.json"
     }

@@ -128,6 +128,7 @@ const FUNDING_CURRENCY_LABELS = {
   EUR: "欧元",
   GBP: "英镑",
   JPY: "日元",
+  INR: "印度卢比",
 };
 
 function amountMultiplier(unit = "") {
@@ -183,6 +184,14 @@ export function normalizeFundingAmount(value = "") {
   if (!original || /未披露|未公布|undisclosed|not disclosed/iu.test(original)) return empty;
 
   const compact = original.replace(/,/gu, "").replace(/级别/gu, "级");
+  const rupees = compact.match(/(?:₹|\bINR\s*|\bRs\.?\s+)(\d+(?:\.\d+)?)\s*(crores?|cr\b|lakhs?|lacs?|million|billion|thousand|[MBK]\b)?/iu);
+  if (rupees) {
+    const unit = (rupees[2] || '').toLowerCase();
+    const multiplier = /^(?:crore|cr)/u.test(unit) ? 1e7 : /^(?:lakh|lac)/u.test(unit) ? 1e5 : amountMultiplier(unit);
+    const value = roundAmountNumber(Number(rupees[1]) * multiplier);
+    const status = /(?:about|approximately|nearly)|约|近/iu.test(compact) ? 'approximate' : /(?:over|more than|at least)|超过|至少|\+/iu.test(compact) ? 'lower_bound' : 'exact';
+    return {currency:'INR',value,min_value:status==='lower_bound'?value:null,max_value:null,unit:'base',status,display_zh:fundingAmountDisplay('INR',value,status)};
+  }
   const qualifiedForeign = compact.match(/^(超过|超|逾|至少|接近|将近|近|约)(千万|亿)(美元|美金|欧元|英镑|日元)$/u);
   if (qualifiedForeign) {
     const currency = { 美元: "USD", 美金: "USD", 欧元: "EUR", 英镑: "GBP", 日元: "JPY" }[qualifiedForeign[3]];
@@ -261,7 +270,8 @@ export function normalizeFundingAmount(value = "") {
 function fundingAmountMentions(value = "") {
   const text = clean(value).normalize("NFKC");
   const pattern = /(?:(?<![\d.一二三四五六七八九十百千万数])(?:数)?(?:千万|亿)美元|(?<![\d.一二三四五六七八九十百千万数])(?:数)?(?:千万元|亿元|千万|亿)(?:级别|级)?(?:人民币)?|(?:超过|超|逾|至少|接近|将近|近|约)(?:千万元|亿元|千万|亿)(?:美元|美金|欧元|英镑|日元|人民币|元)?|[$€£¥￥]\s*\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?|\d[\d,]*(?:\.\d+)?\s*(?:万亿|千万|亿|万|trillion|billion|million|thousand|[TBMK])?\s*(?:美元|美金|人民币|元人民币|欧元|英镑|日元|元|USD|CNY|RMB|EUR|GBP|JPY))/giu;
-  return [...text.matchAll(pattern)].map((match) => {
+  const rupees = /(?:₹|\bINR\s*|\bRs\.?\s+)\d[\d,]*(?:\.\d+)?\s*(?:crores?|cr\b|lakhs?|lacs?|million|billion|thousand|[MBK]\b)?/giu;
+  return [...text.matchAll(pattern), ...text.matchAll(rupees)].sort((a,b)=>a.index-b.index).map((match) => {
     const before = text.slice(Math.max(0, match.index - 56), match.index);
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 56);
     const valuation = /(?:pre[-\s]?money|post[-\s]?money|valuation(?:\s+(?:of|at))?(?:\s+(?:above|over|more\s+than|at\s+least|approximately|about))?|valu(?:ed|ing)\s+(?:(?:it|the\s+company|the\s+startup)\s+)?at|估值(?:达到|达|为|约|超过|高达|逾|超|推高至|提升至|升至|增至)?)\s*$/iu.test(before)

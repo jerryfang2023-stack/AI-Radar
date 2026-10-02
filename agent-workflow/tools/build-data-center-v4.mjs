@@ -1079,9 +1079,11 @@ function organizationMentions(title, parsed, eventType, claimEvidence = "", even
   return selected.slice(0, 6);
 }
 
-function sentenceSpans(body) {
+export function sentenceSpans(body) {
   const spans = [];
-  const regex = /[^\n。！？!?]+[。！？!?]?/gu;
+  // HTML soft wrapping can put a currency magnitude on the next line.
+  // Keep it with the amount rather than turning €7.7 million into €7.7.
+  const regex = /[^\n。！？!?]+(?:\n(?=\s*(?:million|billion|trillion|thousand|crores?|lakhs?)\b)[^\n。！？!?]+)*[。！？!?]?/giu;
   for (const match of body.matchAll(regex)) {
     const quote = normalizeSpace(match[0]);
     if (quote.length < 20 || BOILERPLATE_TEXT.test(quote)) continue;
@@ -1095,7 +1097,7 @@ function sentenceSpans(body) {
 }
 
 function metricValues(text) {
-  return [...text.matchAll(/(?:(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
+  return [...text.matchAll(/(?:(?:₹|\bINR\s*|\bRs\.?\s+)\d[\d,]*(?:\.\d+)?\s*(?:crores?|cr\b|lakhs?|lacs?|million|billion|thousand|[MBK]\b)?|(?:超过|超|逾|至少)(?:千万元|亿元|千万|亿)(?:人民币|元)?|[$€£¥]\s?\d[\d,.]*\s?(?:million|billion|trillion|thousand|m|b|t|k|bn)?|\d[\d,.]*\s?(?:%|million|billion|trillion|thousand|gpus?|chips?|servers?|accelerators?|mw|gw|gb|tb|pb|tops?|tflops?|peta?flops?|万|亿|万元|亿元|台|枚|颗)|数(?:十|百|千)?万(?:元|美元|人民币)?)/giu)]
     .map((match) => match[0]).slice(0, 12);
 }
 

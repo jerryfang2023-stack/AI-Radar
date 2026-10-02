@@ -27,6 +27,8 @@
 
 报告：`agent-workflow/reports/financing/YYYY-MM-DD/`。`collection.json` 保存查询覆盖、原文定位、纳入/排除/待核验；`stages.json` 保存阶段恢复；`publication.json` 记录已通过门禁的产物。已接受原文不可因下游失败重采，失败只恢复本阶段及其依赖。零融资允许有效结束，无须补入其他内容凑数。云端 `resume_run_id` 恢复带哈希的检查点，拒绝脚本、日期不符与路径穿越。
 
+检查点基线落后于 main 时，同日原文、模型复核和融资卡按身份合并，冲突保留 main 已接受版本；已并入新卡的来源事件不得恢复成重复旧卡。同日事实与全局投影由合并后的输入重建，不能直接覆盖。人工修订原文 Claim 后须失效 facts 及其依赖检查点，再复用原文与未变更研究继续执行。外币金额保留原始币种和数量单位，包括印度卢比 crore/lakh；网页换行不得截掉 million 等数量单位。
+
 PR/CI 合并到 main 并完成 Pages 后，运行：
 
 `node agent-workflow/financing/publish.mjs --date=YYYY-MM-DD --runtime-dir="D:/Fang/项目/观澜AI/runtime/financing/YYYY-MM-DD"`

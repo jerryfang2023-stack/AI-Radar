@@ -20,6 +20,15 @@ const root = path.resolve(__dirname, "../../..");
 const taxonomy = JSON.parse(fs.readFileSync(path.join(root, "agent-workflow/product/tag-taxonomy-v4.json"), "utf8"));
 const date = "2026-07-16";
 
+test('soft-wrapped funding amounts retain their scale and rupee metrics retain their currency', async () => {
+  const {sentenceSpans}=await import('../build-data-center-v4.mjs');
+  const body='Berlin-based voice AI company Deepslate has raised €7.7\nmillion in a seed round led by 42CAP.\nThe company develops voice models.';
+  const spans=sentenceSpans(body);
+  assert.match(spans[0].quote,/€7\.7\s+million/u);
+  assert.equal(metricValues(spans[0].quote)[0],'€7.7 million');
+  assert.equal(metricValues('Vytalyou raised Rs 9 crore. Biopeak raised $2.7 million.')[0],'Rs 9 crore');
+});
+
 test('a reviewed financing date requires a captured earlier disclosure of the same company and amount', async () => {
   const {reviewedFundingDate} = await import('../build-data-center-v4.mjs');
   const quote='Acme Health raised $700 million in Series C funding.';

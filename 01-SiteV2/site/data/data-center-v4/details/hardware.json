@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-02",
     "currentDate": "2026-10-02",
-    "eventCount": 3768,
+    "eventCount": 3783,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -3897,6 +3897,90 @@
       "sourceUrl": "https://techcrunch.com/2026/05/20/nanoclaw-creator-turns-down-20m-buyout-offer-raises-12m-seed-instead/",
       "entityIds": [
         "EN-ee314fcf465563d0"
+      ]
+    },
+    {
+      "id": "HWC-44203d15d2d13a56",
+      "snapshotKey": "44203d15d2d13a56",
+      "snapshotId": "HWS-cf3c2b32bdaebeee",
+      "eventId": "EV-1ef8979f39a2ccc5",
+      "eventIds": [
+        "EV-1ef8979f39a2ccc5"
+      ],
+      "dataDate": "2026-10-02",
+      "date": "2026-10-02",
+      "title": "Physical AI company SiMa.ai",
+      "subject": "Physical AI company SiMa.ai",
+      "productNames": [],
+      "hardwareType": "gpu",
+      "factTypes": [
+        "specification"
+      ],
+      "latestValues": {
+        "specification": {
+          "metric_value": "1000",
+          "unit": "TOPS",
+          "fact_ref": "HWF-61b148ce4ae4e66e"
+        }
+      },
+      "factCount": 1,
+      "snapshotCount": 1,
+      "changes": [],
+      "capacityFacts": [],
+      "supplyFacts": [],
+      "specificationFacts": [
+        {
+          "data_date": "2026-10-02",
+          "hardware_fact_id": "HWF-61b148ce4ae4e66e",
+          "fact_type": "specification",
+          "observed_at": "2026-09-28",
+          "subject_entity_id": "EN-f76a8103e49bcc36",
+          "subject_name": "Physical AI company SiMa.ai",
+          "product_entity_ids": [],
+          "product_names": [],
+          "component_type": "gpu",
+          "metric_value": "1000",
+          "unit": "TOPS",
+          "source_quote": "&quot;Physical AI company SiMa.ai has raised $150 million in a Series C financing round, bringing its total capital raised to $500 million and valuing the company at $1.45 billion. The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group. AllianceBernstein, Baron Capital and J.P. Morgan also joined the round as new investors. The proceeds will be used to scale Palette Neat, an agentic software environment for Physical AI, and develop next-generation hardware capable of delivering 1,000 TOPS of compute through purpose-built Physical AI silicon, SiMa.ai said in a press release. Founded in 2018 by Krishna Rangasayee, SiMa.ai provides a software-centric platform for Physical AI applications. The company focuses on robotics, automotive, drones, industrial automation, aerospace and defence, smart vision and healthcare. SiMa.ai said it serves more than 150 customers across automotive, drones and robotics, including ARK Electronics, AVerMedia, Bosch, Emerson, Intrinsic, Kontron, L&amp;amp;T Technology Services, Mistral, STIGA, Synopsys and Virya Autonomous Tech, among others. According to market research cited by the company, the global Physical AI devices market, including robotics, automotive and drones, is projected to reach 145 million cumulative shipments by 2035. SiMa.ai said Physical AI applications have traditionally relied on NVIDIA GPUs, which can be expensive and power intensive. The company offers a full-stack Physical AI platform that combines purpose-built silicon and software to simplify deployments. Slated for H1 2028, the next-generation hardware will include machine learning IP, chiplets and SoCs. The company plans to target medium to high-end drones, humanoid robotics, automotive advanced driver assistance systems (ADAS) and AI-powered cockpits. &quot;",
+          "event_refs": [
+            "EV-1ef8979f39a2ccc5"
+          ],
+          "claim_ref": "CL-4b12f3229b74f6a7",
+          "source_refs": [
+            "SA-3acbf41a1b58d786"
+          ],
+          "bundle_path": "01-SiteV2/content/11-databases/data-center-v4/2026-10-02/hardware-facts.json"
+        }
+      ],
+      "capexFacts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "sourceUrl": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+      "entityIds": [
+        "EN-f76a8103e49bcc36",
+        "EN-8d4321d936320802"
       ]
     },
     {
@@ -19576,8 +19660,127 @@
   ],
   "events": [
     {
+      "id": "EV-5172f90d555f2781",
+      "dataDate": "2026-10-02",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "敌对威胁预警初创公司Osavul融资850万欧元",
+      "originalTitle": "Hostile threat warning startup Osavul raises €8.5M",
+      "subject": "Osavul",
+      "action": "funding",
+      "object": "€8.5m Series A",
+      "metrics": [
+        "€8.5m",
+        "€12\nmillion"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-61848d026f2be26a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "security_operations",
+            "name": "安全运营",
+            "entityIds": [
+              "EN-61848d026f2be26a"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-61848d026f2be26a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-61848d026f2be26a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-61848d026f2be26a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "security_operations",
+          "name": "安全运营",
+          "entityIds": [
+            "EN-61848d026f2be26a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-61848d026f2be26a"
+      ],
+      "entityNames": [
+        "Osavul"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/01/hostile-threat-warning-startup-osavul-raises-8-5m/",
+      "publisher": "tech.eu"
+    },
+    {
       "id": "EV-5b5237105fc868cd",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-10-01",
       "updatedDate": "2026-10-01",
       "eventType": "funding",
@@ -19626,6 +19829,471 @@
       "products": [],
       "sourceUrl": "https://techcrunch.com/2026/10/01/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/",
       "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-6324ffde67e257fa",
+      "dataDate": "2026-10-02",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "FRANK 融资 290 万欧元，为保险经纪人减少文书工作",
+      "originalTitle": "FRANK raises €2.9M to cut paperwork for insurance brokers",
+      "subject": "FRANK",
+      "action": "raises",
+      "object": "€2.9M to cut paperwork for insurance brokers",
+      "metrics": [
+        "€2.9 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-77646f5a4f316663"
+      ],
+      "entityNames": [
+        "FRANK"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/01/frank-raises-eur29m-to-cut-paperwork-for-insurance-brokers/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-67e44201c4919b2d",
+      "dataDate": "2026-10-02",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Good Tape 获得新融资并推出 Explore，以挖掘旧采访中埋藏的故事",
+      "originalTitle": "Good Tape raises fresh funding and launches Explore to uncover stories buried in old interviews",
+      "subject": "Nordic Makers",
+      "action": "raises",
+      "object": "fresh funding and launches Explore to uncover stories buried in old interviews",
+      "metrics": [
+        "3 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-60d05bd27ed7fa02",
+        "EN-0afb79034697e797"
+      ],
+      "entityNames": [
+        "Nordic Makers",
+        "Good Tape"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/01/good-tape-raises-fresh-funding-and-launches-explore-to-uncover-stories-buried-in-old-interviews/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-6a63fabeceadc42b",
+      "dataDate": "2026-10-02",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Mistral 和 Black Forest Labs 投资方 Headline 完成 4 亿美元欧洲基金募集",
+      "originalTitle": "Mistral and Black Forest Labs backer Headline closes $400M European fund",
+      "subject": "Mistral and Black Forest Labs backer Headline",
+      "action": "closes",
+      "object": "$400M European fund",
+      "metrics": [
+        "$400 million",
+        "$5 billion"
+      ],
+      "locations": [
+        "Europe"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-920510199770f4d6",
+        "EN-62de5e18e21a2d53"
+      ],
+      "entityNames": [
+        "Mistral",
+        "Black Forest Labs backer Headline"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/01/mistral-and-black-forest-labs-backer-headline-closes-400m-european-fund/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-80aeba0846bbd197",
+      "dataDate": "2026-10-02",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "PaleBlueDot AI 完成 2 亿美元 C 轮融资，以扩展超级智能基础设施平台",
+      "originalTitle": "PaleBlueDot AI Raises $200M Series C Round to Scale Super Intelligence Infrastructure Platform",
+      "subject": "PaleBlueDot AI",
+      "action": "Raises",
+      "object": "$200M Series C Round to Scale Super Intelligence Infrastructure Platform",
+      "metrics": [
+        "$200 million",
+        "$3.2 billion",
+        "$255 Million",
+        "$150 million"
+      ],
+      "locations": [
+        "US"
+      ],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6dcc023b5791108c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6dcc023b5791108c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-6dcc023b5791108c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-41a1b0e1074ae22f",
+        "EN-6dcc023b5791108c"
+      ],
+      "entityNames": [
+        "PALO ALTO",
+        "PaleBlueDot AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/palebluedot-ai-raises-200m-series-c-round-to-scale-super-intelligence-infrastructure-platform-302896601.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-98ea446e097a9a95",
+      "dataDate": "2026-10-02",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "RapidAPI 联合创始人为 AI 营销初创公司 enso 融资 1500 万美元",
+      "originalTitle": "RapidAPI co-founder raises $15 million for AI marketing startup enso",
+      "subject": "RapidAPI co-founder",
+      "action": "raises",
+      "object": "$15 million for AI marketing startup enso",
+      "metrics": [
+        "$15 million",
+        "$23 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "sales",
+            "name": "销售",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "media_entertainment",
+            "name": "媒体与娱乐",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": [
+          {
+            "dimensionId": "target_user",
+            "dimensionName": "目标用户",
+            "id": "consumer",
+            "name": "个人用户",
+            "entityIds": [
+              "EN-bbdefa2950f49882"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ]
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "sales",
+          "name": "销售",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "sales",
+          "name": "销售",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "media_entertainment",
+          "name": "媒体与娱乐",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "target_user",
+          "dimensionName": "目标用户",
+          "id": "consumer",
+          "name": "个人用户",
+          "entityIds": [
+            "EN-bbdefa2950f49882"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-bbdefa2950f49882"
+      ],
+      "entityNames": [
+        "Google"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.calcalistech.com/ctechnews/article/sy2ks2o9ml",
+      "publisher": "www.calcalistech.com"
+    },
+    {
+      "id": "EV-c8a803c1bdfde04c",
+      "dataDate": "2026-10-02",
+      "date": "2026-10-01",
+      "updatedDate": "2026-10-01",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Deepslate 为其欧洲语音 AI 平台获得 770 万欧元融资",
+      "originalTitle": "Deepslate secures €7.7M for its European voice AI platform",
+      "subject": "Deepslate",
+      "action": "funding",
+      "object": "€7.7 million seed round",
+      "metrics": [
+        "€7.7\nmillion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-bb84dd8999b353a3"
+      ],
+      "entityNames": [
+        "Deepslate"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/10/01/deepslate-secures-eur77m-for-its-european-voice-ai-platform/",
+      "publisher": "tech.eu"
     },
     {
       "id": "EV-e124ba0fc4fef3c0",
@@ -19837,21 +20505,566 @@
       "publisher": "techcrunch.com"
     },
     {
-      "id": "EV-f2950d2104e97163",
-      "dataDate": "2026-10-01",
+      "id": "EV-201690debbddab65",
+      "dataDate": "2026-10-02",
       "date": "2026-09-30",
-      "updatedDate": "2026-10-01",
+      "updatedDate": "2026-09-30",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "completed",
       "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "Flow Engineering 获 5000 万美元 B 轮融资，估值 7.5 亿美元，Valar、Atreides、红杉参投",
+      "title": "Zenithon 融资 1000 万美元，为极端物理构建世界模型",
+      "originalTitle": "Zenithon raises $10M to build world models for extreme physics",
+      "subject": "Zenithon",
+      "action": "raises",
+      "object": "$10M to build world models for extreme physics",
+      "metrics": [
+        "$10 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-4332124bdf7da478"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-4332124bdf7da478"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-4332124bdf7da478"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-4332124bdf7da478"
+      ],
+      "entityNames": [
+        "Zenithon"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/09/30/zenithon-raises-10m-to-build-world-models-for-extreme-physics/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-4c9c7ab2dded69b3",
+      "dataDate": "2026-10-01",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "Reco融资5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
       "originalTitle": "",
-      "subject": "Flow Engineering 获 5000 万美元 B 轮",
+      "subject": "Reco",
       "action": "融资",
-      "object": "，估值 7.5 亿美元，Valar、Atreides、红杉参投",
+      "object": "5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
+      "metrics": [
+        "5500万",
+        "3000万",
+        "1.4亿"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "security_software",
+            "name": "安全软件",
+            "entityIds": [
+              "EN-324a65940c9148ba"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "security_software",
+          "name": "安全软件",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-324a65940c9148ba"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-324a65940c9148ba",
+        "EN-9c8ae69b84f21a2e",
+        "EN-d1378a68e620b1cc"
+      ],
+      "entityNames": [
+        "Reco",
+        "Tencent",
+        "周二"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.qq.com/rain/a/20260930A000JE00",
+      "publisher": "news.qq.com"
+    },
+    {
+      "id": "EV-55581be112058bd5",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
+      "originalTitle": "Miter, the AI Platform for Construction, Raises $40 Million for the Built World",
+      "subject": "Miter, the AI Platform for Construction,",
+      "action": "Raises",
+      "object": "$40 Million for the Built World",
+      "metrics": [
+        "$40 million",
+        "$78 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "hr_workforce",
+            "name": "人力与员工体验",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "construction_real_estate",
+            "name": "建筑与房地产",
+            "entityIds": [],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "construction_real_estate",
+          "name": "建筑与房地产",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "hr_workforce",
+          "name": "人力与员工体验",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "construction_real_estate",
+          "name": "建筑与房地产",
+          "entityIds": [],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-1a2290470e0aa754",
+        "EN-e3baa3a2daee23ae"
+      ],
+      "entityNames": [
+        "SAN FRANCISCO",
+        "Miter"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
+      "publisher": "www.prnewswire.com"
+    },
+    {
+      "id": "EV-bc9557a9936f727c",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "长寿初创公司Vytalyou在pre-Series A轮融资中筹集了9 Cr卢比",
+      "originalTitle": "Longevity startup Vytalyou raises Rs 9 Cr in pre-Series A round",
+      "subject": "Vytalyou",
+      "action": "funding",
+      "object": "Rs 9 crore pre-Series A",
+      "metrics": [
+        "Rs 9 crore",
+        "Rs 33 crore"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-0ad82a994c723e71"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-0ad82a994c723e71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-0ad82a994c723e71"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-0ad82a994c723e71"
+      ],
+      "entityNames": [
+        "Vytalyou"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/snippets/longevity-startup-vytalyou-raises-rs-9-cr-in-pre-series-a-round-12593640",
+      "publisher": "entrackr.com"
+    },
+    {
+      "id": "EV-c2f262e118de5629",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
+      "originalTitle": "Restate lands $20M as the need for durable infrastructure increases with AI agents",
+      "subject": "Restate",
+      "action": "funding",
+      "object": "$20 million Series A",
+      "metrics": [
+        "$20 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-5d3875c319452ecc"
+      ],
+      "entityNames": [
+        "Restate"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
+      "publisher": "techcrunch.com"
+    },
+    {
+      "id": "EV-ef480d3fa3165905",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "从六名工程专业学生到1000万用户：Tryp.com 融资190万欧元",
+      "originalTitle": "From six engineering students to 10M users: Tryp.com raises €1.9M",
+      "subject": "From six engineering students to 10M users: Tryp.com",
+      "action": "raises",
+      "object": "€1.9M",
+      "metrics": [
+        "€1.9 million",
+        "€5.9 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-35c294e2bd449f0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-35c294e2bd449f0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "multimodal",
+          "name": "多模态",
+          "entityIds": [
+            "EN-35c294e2bd449f0a"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-35c294e2bd449f0a"
+      ],
+      "entityNames": [
+        "Traveltech Tryp.com"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://tech.eu/2026/09/30/from-six-engineering-students-to-10m-users-trypcom-raises-eur19m/",
+      "publisher": "tech.eu"
+    },
+    {
+      "id": "EV-f2950d2104e97163",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-30",
+      "updatedDate": "2026-09-30",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Valor、Atreides 和 Sequoia 以 7.5 亿美元估值投资 AI 初创公司 Flow Engineering",
+      "originalTitle": "Valor, Atreides, and Sequoia back AI startup Flow Engineering at $750M valuation",
+      "subject": "Flow Engineering",
+      "action": "funding",
+      "object": "$50 million Series B round at a $750 million valuation",
       "metrics": [
         "$50 million",
         "$750 million"
@@ -20241,287 +21454,37 @@
         }
       ],
       "entityIds": [
-        "EN-50d7f4250bdd8888",
-        "EN-e78bdebae031095b"
+        "EN-50d7f4250bdd8888"
       ],
       "entityNames": [
-        "Flow Engineering",
-        "SpaceX"
+        "Flow Engineering"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation",
-      "publisher": "TechCrunch：AI（RSS）"
+      "sourceUrl": "https://techcrunch.com/2026/09/30/valor-atreides-and-sequoia-back-ai-startup-flow-engineering-at-750m-valuation/",
+      "publisher": "techcrunch.com"
     },
     {
-      "id": "EV-4c9c7ab2dded69b3",
-      "dataDate": "2026-10-01",
-      "date": "2026-09-30",
-      "updatedDate": "2026-09-30",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "Reco融资5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
-      "originalTitle": "",
-      "subject": "Reco",
-      "action": "融资",
-      "object": "5500万美元，AI智能体安全赛道竞争加剧_腾讯新闻",
-      "metrics": [
-        "5500万",
-        "3000万",
-        "1.4亿"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-324a65940c9148ba"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-324a65940c9148ba"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-324a65940c9148ba"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [
-          {
-            "dimensionId": "product_form",
-            "dimensionName": "产品形态",
-            "id": "security_software",
-            "name": "安全软件",
-            "entityIds": [
-              "EN-324a65940c9148ba"
-            ],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "use_case": [],
-        "industry": [],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-324a65940c9148ba"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "security_software",
-          "name": "安全软件",
-          "entityIds": [
-            "EN-324a65940c9148ba"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "product_form",
-          "dimensionName": "产品形态",
-          "id": "security_software",
-          "name": "安全软件",
-          "entityIds": [
-            "EN-324a65940c9148ba"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "technology",
-          "dimensionName": "技术",
-          "id": "agentic_execution",
-          "name": "智能体",
-          "entityIds": [
-            "EN-324a65940c9148ba"
-          ],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-324a65940c9148ba",
-        "EN-9c8ae69b84f21a2e",
-        "EN-d1378a68e620b1cc"
-      ],
-      "entityNames": [
-        "Reco",
-        "Tencent",
-        "周二"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://news.qq.com/rain/a/20260930A000JE00",
-      "publisher": "news.qq.com"
-    },
-    {
-      "id": "EV-55581be112058bd5",
-      "dataDate": "2026-10-01",
-      "date": "2026-09-30",
-      "updatedDate": "2026-09-30",
-      "eventType": "funding",
-      "eventTypeLabel": "融资",
-      "eventGroup": "融资与并购",
-      "status": "completed",
-      "statusLabel": "已完成",
-      "publicationStatus": "verified",
-      "title": "建筑行业 AI 平台 Miter 为建筑世界融资 4000 万美元",
-      "originalTitle": "Miter, the AI Platform for Construction, Raises $40 Million for the Built World",
-      "subject": "Miter, the AI Platform for Construction,",
-      "action": "Raises",
-      "object": "$40 Million for the Built World",
-      "metrics": [
-        "$40 million",
-        "$78 million"
-      ],
-      "locations": [],
-      "missingFields": [],
-      "conflicts": [],
-      "tags": [],
-      "facets": {
-        "ai_market_category": [],
-        "ai_market_subcategory": [],
-        "ai_market_application": [],
-        "product_form": [],
-        "use_case": [
-          {
-            "dimensionId": "use_case",
-            "dimensionName": "应用场景",
-            "id": "hr_workforce",
-            "name": "人力与员工体验",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "industry": [
-          {
-            "dimensionId": "industry",
-            "dimensionName": "行业",
-            "id": "construction_real_estate",
-            "name": "建筑与房地产",
-            "entityIds": [],
-            "provenance": "claim_assertion",
-            "assertionId": ""
-          }
-        ],
-        "deployment_model": [],
-        "target_user": []
-      },
-      "classifications": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "hr_workforce",
-          "name": "人力与员工体验",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "construction_real_estate",
-          "name": "建筑与房地产",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "displayTags": [
-        {
-          "dimensionId": "use_case",
-          "dimensionName": "应用场景",
-          "id": "hr_workforce",
-          "name": "人力与员工体验",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        },
-        {
-          "dimensionId": "industry",
-          "dimensionName": "行业",
-          "id": "construction_real_estate",
-          "name": "建筑与房地产",
-          "entityIds": [],
-          "provenance": "claim_assertion",
-          "assertionId": ""
-        }
-      ],
-      "entityIds": [
-        "EN-1a2290470e0aa754",
-        "EN-e3baa3a2daee23ae"
-      ],
-      "entityNames": [
-        "SAN FRANCISCO",
-        "Miter"
-      ],
-      "productName": "",
-      "products": [],
-      "sourceUrl": "https://www.prnewswire.com/news-releases/miter-the-ai-platform-for-construction-raises-40-million-for-the-built-world-302893778.html",
-      "publisher": "www.prnewswire.com"
-    },
-    {
-      "id": "EV-c2f262e118de5629",
-      "dataDate": "2026-10-01",
-      "date": "2026-09-30",
-      "updatedDate": "2026-09-30",
+      "id": "EV-34f58445170831ae",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-29",
+      "updatedDate": "2026-09-29",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
       "status": "announced",
       "statusLabel": "已公布",
       "publicationStatus": "verified",
-      "title": "Restate 获 2000 万美元融资，随着 AI 智能体发展，对持久基础设施的需求日益增长",
-      "originalTitle": "Restate lands $20M as the need for durable infrastructure increases with AI agents",
-      "subject": "Restate",
+      "title": "收入暴涨16倍，一家AI数据公司爆了",
+      "originalTitle": "",
+      "subject": "Snorkel AI",
       "action": "funding",
-      "object": "$20 million Series A",
+      "object": "3.5亿美元E轮融资",
       "metrics": [
-        "$20 million"
+        "3.5亿",
+        "23.5亿",
+        "35亿",
+        "235亿"
       ],
       "locations": [],
       "missingFields": [],
@@ -20540,19 +21503,19 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-5d3875c319452ecc"
+        "EN-7331374f7091259f"
       ],
       "entityNames": [
-        "Restate"
+        "Snorkel AI"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://techcrunch.com/2026/09/30/restate-lands-20m-as-the-need-for-durable-infrastructure-increases-with-ai-agents/",
-      "publisher": "techcrunch.com"
+      "sourceUrl": "https://m.pedaily.cn/news/569716",
+      "publisher": "m.pedaily.cn"
     },
     {
       "id": "EV-3b424be9d0d68b87",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-29",
       "updatedDate": "2026-09-29",
       "eventType": "funding",
@@ -20634,7 +21597,7 @@
     },
     {
       "id": "EV-471bf7c00cc06c85",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-29",
       "updatedDate": "2026-09-29",
       "eventType": "acquisition",
@@ -20819,7 +21782,7 @@
     },
     {
       "id": "EV-82c07208217f2af7",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-29",
       "updatedDate": "2026-09-29",
       "eventType": "funding",
@@ -21209,28 +22172,328 @@
       "publisher": "techcrunch.com"
     },
     {
-      "id": "EV-34f58445170831ae",
-      "dataDate": "2026-10-01",
+      "id": "EV-1ef8979f39a2ccc5",
+      "dataDate": "2026-10-02",
       "date": "2026-09-28",
       "updatedDate": "2026-09-28",
       "eventType": "funding",
       "eventTypeLabel": "融资",
       "eventGroup": "融资与并购",
-      "status": "announced",
-      "statusLabel": "已公布",
+      "status": "completed",
+      "statusLabel": "已完成",
       "publicationStatus": "verified",
-      "title": "收入暴涨16倍，一家AI数据公司爆了",
-      "originalTitle": "",
-      "subject": "Snorkel AI",
-      "action": "funding",
-      "object": "3.5亿美元E轮融资",
+      "title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
+      "originalTitle": "Physical AI company SiMa.ai raises $150 Mn in Series C round",
+      "subject": "Physical AI company SiMa.ai",
+      "action": "raises",
+      "object": "$150 Mn in Series C round",
       "metrics": [
-        "3.5亿",
-        "23.5亿",
-        "35亿",
-        "235亿"
+        "$150 million",
+        "$500 million",
+        "$1.45 billion",
+        "1,000 TOPS",
+        "145 million"
       ],
       "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-f76a8103e49bcc36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [
+          {
+            "dimensionId": "use_case",
+            "dimensionName": "应用场景",
+            "id": "physical_automation",
+            "name": "物理自动化",
+            "entityIds": [
+              "EN-f76a8103e49bcc36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "industry": [
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "healthcare_life_sciences",
+            "name": "医疗与生命科学",
+            "entityIds": [
+              "EN-f76a8103e49bcc36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "automotive_transportation",
+            "name": "汽车与交通",
+            "entityIds": [
+              "EN-f76a8103e49bcc36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "industry",
+            "dimensionName": "行业",
+            "id": "aerospace_defense",
+            "name": "航空航天与国防",
+            "entityIds": [
+              "EN-f76a8103e49bcc36"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "use_case",
+          "dimensionName": "应用场景",
+          "id": "physical_automation",
+          "name": "物理自动化",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "embodied_ai",
+          "name": "具身智能",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "healthcare_life_sciences",
+          "name": "医疗与生命科学",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "automotive_transportation",
+          "name": "汽车与交通",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "industry",
+          "dimensionName": "行业",
+          "id": "aerospace_defense",
+          "name": "航空航天与国防",
+          "entityIds": [
+            "EN-f76a8103e49bcc36"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-f76a8103e49bcc36",
+        "EN-8d4321d936320802"
+      ],
+      "entityNames": [
+        "Physical AI company SiMa.ai",
+        "NVIDIA"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
+      "publisher": "entrackr.com"
+    },
+    {
+      "id": "EV-3a7e1e2c46daaa76",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-28",
+      "updatedDate": "2026-09-28",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "completed",
+      "statusLabel": "已完成",
+      "publicationStatus": "verified",
+      "title": "DeepSeek又融资500亿；中国最大饺子IPO来了；顺丰做LP，投了经纬",
+      "originalTitle": "投资界24h | DeepSeek又融资500亿；中国最大饺子IPO来了；顺丰做LP，投了经纬",
+      "subject": "投资界24h | DeepSeek又",
+      "action": "融资",
+      "object": "500亿；中国最大饺子IPO来了；顺丰做LP，投了经纬",
+      "metrics": [
+        "500亿",
+        "75亿",
+        "10亿"
+      ],
+      "locations": [],
+      "marketScope": {
+        "market_region": "CN",
+        "china_market_match": true,
+        "china_market_basis": [
+          "actor_origin"
+        ],
+        "source_registry_ids": [],
+        "claim_refs": [
+          "CL-209c94ec78509406",
+          "CL-6f5abb6417e5bbd9"
+        ]
+      },
       "missingFields": [],
       "conflicts": [],
       "tags": [],
@@ -21247,15 +22510,17 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-7331374f7091259f"
+        "EN-6f7ac1823da81d2e",
+        "EN-fdd8047513c99c65"
       ],
       "entityNames": [
-        "Snorkel AI"
+        "DeepSeek",
+        "据腾讯科技从接近Deepseek人士处"
       ],
       "productName": "",
       "products": [],
-      "sourceUrl": "https://news.pedaily.cn/202609/569716.shtml",
-      "publisher": "news.pedaily.cn"
+      "sourceUrl": "https://m.pedaily.cn/news/569663",
+      "publisher": "m.pedaily.cn"
     },
     {
       "id": "EV-486e6dedee43c0d3",
@@ -21307,7 +22572,7 @@
     },
     {
       "id": "EV-861d4440dcbb9b09",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-28",
       "updatedDate": "2026-09-28",
       "eventType": "funding",
@@ -21393,7 +22658,7 @@
     },
     {
       "id": "EV-9ea3912efd857ad8",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-28",
       "updatedDate": "2026-09-28",
       "eventType": "funding",
@@ -21410,7 +22675,9 @@
       "metrics": [
         "$25 million",
         "$41 million",
-        "$170 million"
+        "$170 million",
+        "$25M",
+        "$60 million"
       ],
       "locations": [],
       "missingFields": [],
@@ -21432,7 +22699,30 @@
         "ai_market_category": [],
         "ai_market_subcategory": [],
         "ai_market_application": [],
-        "product_form": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-40a9543b0f7b0cf9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          },
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "model",
+            "name": "模型",
+            "entityIds": [
+              "EN-40a9543b0f7b0cf9"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
         "use_case": [],
         "industry": [],
         "deployment_model": [],
@@ -21449,9 +22739,53 @@
           ],
           "provenance": "claim_assertion",
           "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-40a9543b0f7b0cf9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-40a9543b0f7b0cf9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
         }
       ],
       "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-40a9543b0f7b0cf9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "model",
+          "name": "模型",
+          "entityIds": [
+            "EN-40a9543b0f7b0cf9"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
         {
           "dimensionId": "technology",
           "dimensionName": "技术",
@@ -21477,7 +22811,7 @@
     },
     {
       "id": "EV-bbea3352983c2033",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-28",
       "updatedDate": "2026-09-28",
       "eventType": "funding",
@@ -21823,6 +23157,122 @@
       "publisher": "www.ithome.com"
     },
     {
+      "id": "EV-3d0b9dcdf8daec4c",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "announced",
+      "statusLabel": "已公布",
+      "publicationStatus": "verified",
+      "title": "Elevation Capital 领投 Dextr AI 670 万美元种子轮",
+      "originalTitle": "Elevation Capital leads $6.7 Mn seed round in Dextr AI",
+      "subject": "Dextr AI",
+      "action": "funding",
+      "object": "$6.7 million seed funding round led by Elevation Capital",
+      "metrics": [
+        "$6.7 million"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-190832408e35096c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [
+          {
+            "dimensionId": "product_form",
+            "dimensionName": "产品形态",
+            "id": "enterprise_software_platform",
+            "name": "企业软件平台",
+            "entityIds": [
+              "EN-190832408e35096c"
+            ],
+            "provenance": "claim_assertion",
+            "assertionId": ""
+          }
+        ],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-190832408e35096c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-190832408e35096c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "displayTags": [
+        {
+          "dimensionId": "product_form",
+          "dimensionName": "产品形态",
+          "id": "enterprise_software_platform",
+          "name": "企业软件平台",
+          "entityIds": [
+            "EN-190832408e35096c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        },
+        {
+          "dimensionId": "technology",
+          "dimensionName": "技术",
+          "id": "agentic_execution",
+          "name": "智能体",
+          "entityIds": [
+            "EN-190832408e35096c"
+          ],
+          "provenance": "claim_assertion",
+          "assertionId": ""
+        }
+      ],
+      "entityIds": [
+        "EN-190832408e35096c"
+      ],
+      "entityNames": [
+        "Dextr AI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://entrackr.com/snippets/elevation-capital-leads-67-million-seed-round-in-dextr-ai-12574387",
+      "publisher": "entrackr.com"
+    },
+    {
       "id": "EV-922d794c12211e5f",
       "dataDate": "2026-10-01",
       "date": "2026-09-25",
@@ -21960,8 +23410,56 @@
       "publisher": "techcrunch.com"
     },
     {
+      "id": "EV-e5af6123d2e26087",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-25",
+      "updatedDate": "2026-09-25",
+      "eventType": "funding",
+      "eventTypeLabel": "融资",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "IMF：2026年全球AI投资规模或突破2万亿美元 债务融资依赖同步扩大",
+      "originalTitle": "",
+      "subject": "IMF：2026年全球AI投资规模或突破2万亿美元 债务",
+      "action": "融资",
+      "object": "依赖同步扩大",
+      "metrics": [
+        "2万"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-8588b8c524e36861",
+        "EN-caa830156f3f2f44"
+      ],
+      "entityNames": [
+        "IMF",
+        "IMF：2026年全球AI投资规模或突破2万亿美元 债务"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://finance.sina.com.cn/roll/2026-09-25/doc-iniszrua9526160.shtml",
+      "publisher": "finance.sina.com.cn"
+    },
+    {
       "id": "EV-f53bfa2bb0275904",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-25",
       "updatedDate": "2026-09-25",
       "eventType": "funding",
@@ -435027,7 +436525,7 @@
     },
     {
       "id": "EV-1696657c7a78340b",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-30",
       "updatedDate": "2026-09-30",
       "eventType": "capital_investment",
@@ -435042,7 +436540,9 @@
       "action": "capital_investment",
       "object": "$300 million tender offer",
       "metrics": [
-        "$300 million"
+        "$300 million",
+        "$100 million",
+        "$6.6 billion"
       ],
       "locations": [],
       "missingFields": [],
@@ -435061,12 +436561,10 @@
       "classifications": [],
       "displayTags": [],
       "entityIds": [
-        "EN-e853b4e183ed0870",
-        "EN-16c719fdaa7332af"
+        "EN-e853b4e183ed0870"
       ],
       "entityNames": [
-        "ElevenLabs",
-        "Wellington and T. Rowe Price"
+        "ElevenLabs"
       ],
       "productName": "",
       "products": [],
@@ -435075,7 +436573,7 @@
     },
     {
       "id": "EV-641d61c6b8506c06",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-30",
       "updatedDate": "2026-09-30",
       "eventType": "ipo_listing",
@@ -435336,6 +436834,60 @@
       "publisher": "The Verge AI"
     },
     {
+      "id": "EV-30f48175b61772d4",
+      "dataDate": "2026-10-02",
+      "date": "2026-09-29",
+      "updatedDate": "2026-09-29",
+      "eventType": "ipo_listing",
+      "eventTypeLabel": "IPO 与上市",
+      "eventGroup": "融资与并购",
+      "status": "rumored",
+      "statusLabel": "rumored",
+      "publicationStatus": "disputed",
+      "title": "Oura 暂停 IPO，而 Anthropic 的招股说明书揭示其 AI 雄心背后的成本",
+      "originalTitle": "Oura Hits Pause On IPO While Anthropic’s Prospectus Reveals The Cost Of Its AI Ambitions",
+      "subject": "Oura Hits Pause On",
+      "action": "IPO",
+      "object": "While Anthropic’s Prospectus Reveals The Cost Of Its AI Ambitions",
+      "metrics": [
+        "$4.6 billion",
+        "$8.06 billion",
+        "$42 billion",
+        "$34 billion",
+        "$100 billion"
+      ],
+      "locations": [],
+      "missingFields": [],
+      "conflicts": [],
+      "tags": [],
+      "facets": {
+        "ai_market_category": [],
+        "ai_market_subcategory": [],
+        "ai_market_application": [],
+        "product_form": [],
+        "use_case": [],
+        "industry": [],
+        "deployment_model": [],
+        "target_user": []
+      },
+      "classifications": [],
+      "displayTags": [],
+      "entityIds": [
+        "EN-2a65f6ae0a747891",
+        "EN-c70eca6b0f88f44d",
+        "EN-7d3194f79e645c42"
+      ],
+      "entityNames": [
+        "Oura Hits Pause On",
+        "Anthropic",
+        "OpenAI"
+      ],
+      "productName": "",
+      "products": [],
+      "sourceUrl": "https://news.crunchbase.com/public/oura-pauses-ipo-anthropics-ai-openai/",
+      "publisher": "news.crunchbase.com"
+    },
+    {
       "id": "EV-2a5803953f698f4c",
       "dataDate": "2026-09-28",
       "date": "2026-09-28",
@@ -435389,7 +436941,7 @@
     },
     {
       "id": "EV-4fa3f21867404b39",
-      "dataDate": "2026-10-01",
+      "dataDate": "2026-10-02",
       "date": "2026-09-28",
       "updatedDate": "2026-09-28",
       "eventType": "financial_performance",

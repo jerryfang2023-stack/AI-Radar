@@ -1,0 +1,799 @@
+{
+  "event_id": "EV-3a7e1e2c46daaa76",
+  "company_name": "DeepSeek",
+  "status": "auto_published",
+  "card": {
+    "schema_version": "FUNDING-INSIGHT-V1.3",
+    "funding_insight_id": "FI-e93f57282fa3212b",
+    "triggered_by_event_id": "EV-3a7e1e2c46daaa76",
+    "as_of_date": "2026-10-02",
+    "company": {
+      "entity_id": "EN-6f7ac1823da81d2e",
+      "name": "DeepSeek",
+      "full_name": "DeepSeek",
+      "website": "https://api.deepseek.com",
+      "summary": "DeepSeek是一家中国人工智能公司，由幻方量化孵化，创始人梁文锋同时执掌幻方量化。公司以开源大模型和低成本推理著称，2026年4月发布DeepSeek-V4预览版，支持百万级上下文，并全面适配华为昇腾等国产算力。",
+      "headquarters": "",
+      "founders": [
+        {
+          "name": "梁文锋",
+          "role": "创始人兼CEO",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-043cc17f896238cf",
+              "quote": "DeepSeek 由量化私募巨头幻方量化孵化，创始人梁文锋同时执掌这两家横跨金融与 AI 赛道的企业。",
+              "source_content_hash": "ca64de58a4cb2e6d",
+              "quote_hash": "72c3c901766b4a038f21fcb8ed0ae6be28cd07bc0f2e767296c4c73cd346f6c1"
+            }
+          ],
+          "entity_id": "EN-dfe2d38b46c80bc1"
+        }
+      ],
+      "team_size": {
+        "value": "",
+        "observed_at": "",
+        "evidence_refs": []
+      },
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c6b67b3d7908097e",
+          "quote": "DeepSeek目前已迎来首任CFO，即高瓴创投90后合伙人严文韬，这也是公司成立以来首次设立CFO岗位。",
+          "source_content_hash": "0ddec95e5221b2426afa9e79e96a035c7b190894998f530fc68ebdafb2c09eae",
+          "quote_hash": "16ce9576b636d960bd4285fd30f1ee8e8e36726dfe8b5f272de5fc9523fb6856"
+        },
+        {
+          "source_id": "FISRC-043cc17f896238cf",
+          "quote": "DeepSeek 由量化私募巨头幻方量化孵化，创始人梁文锋同时执掌这两家横跨金融与 AI 赛道的企业。",
+          "source_content_hash": "ca64de58a4cb2e6d",
+          "quote_hash": "72c3c901766b4a038f21fcb8ed0ae6be28cd07bc0f2e767296c4c73cd346f6c1"
+        }
+      ],
+      "application_entity_id": "EN-6f7ac1823da81d2e",
+      "canonical_entity_consistent": true
+    },
+    "financing": {
+      "round": "IPO",
+      "amount": "75亿美元",
+      "total_raised": "",
+      "announced_at": "2026-09-28",
+      "investor_disclosure_status": "not_disclosed",
+      "investors": [],
+      "other_round_investors": [
+        {
+          "name": "腾讯",
+          "role": "首轮融资参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4a43446c1fdd8a31",
+              "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
+              "source_content_hash": "b0eb1d1fb5eb1976",
+              "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
+            }
+          ],
+          "entity_id": "EN-9c8ae69b84f21a2e"
+        },
+        {
+          "name": "宁德时代",
+          "role": "首轮融资参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4a43446c1fdd8a31",
+              "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
+              "source_content_hash": "b0eb1d1fb5eb1976",
+              "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "国家人工智能产业投资基金",
+          "role": "首轮融资参投",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-4a43446c1fdd8a31",
+              "quote": "梁文锋承诺投入约200亿元个人资金，腾讯和宁德时代分别计划出资约100亿元和50亿元，国家人工智能产业投资基金等机构也参与其中。",
+              "source_content_hash": "b0eb1d1fb5eb1976",
+              "quote_hash": "cdf760608154741457b02d4308d46e226296b202baadad456524d45df20cdc1b"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "Monolith",
+          "role": "上一轮融资老股东",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-483eb7ff4aaec1c4",
+              "quote": "投资者包括 DeepSeek 上一轮融资中的部分老股东，例如 Monolith、拾象资本，以及宁德时代（CATL），而正在洽谈加入的新投资者包括 CPE 源峰、君联资本等。",
+              "source_content_hash": "ba93060af57afb73",
+              "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "拾象资本",
+          "role": "上一轮融资老股东",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-483eb7ff4aaec1c4",
+              "quote": "投资者包括 DeepSeek 上一轮融资中的部分老股东，例如 Monolith、拾象资本，以及宁德时代（CATL），而正在洽谈加入的新投资者包括 CPE 源峰、君联资本等。",
+              "source_content_hash": "ba93060af57afb73",
+              "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "CPE 源峰",
+          "role": "正在洽谈加入的新投资者",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-483eb7ff4aaec1c4",
+              "quote": "投资者包括 DeepSeek 上一轮融资中的部分老股东，例如 Monolith、拾象资本，以及宁德时代（CATL），而正在洽谈加入的新投资者包括 CPE 源峰、君联资本等。",
+              "source_content_hash": "ba93060af57afb73",
+              "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "君联资本",
+          "role": "正在洽谈加入的新投资者",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-483eb7ff4aaec1c4",
+              "quote": "投资者包括 DeepSeek 上一轮融资中的部分老股东，例如 Monolith、拾象资本，以及宁德时代（CATL），而正在洽谈加入的新投资者包括 CPE 源峰、君联资本等。",
+              "source_content_hash": "ba93060af57afb73",
+              "quote_hash": "d43a3574567780867c144269ea3ca1ce457051c8338c83a54195afd7f8f9ea41"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "兆易创新支持的基金",
+          "role": "本轮参与方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-483eb7ff4aaec1c4",
+              "quote": "由兆易创新支持的基金，以及合肥国资背景的投资机构也参与其中。",
+              "source_content_hash": "ba93060af57afb73",
+              "quote_hash": "7e503be5186bd257fdb0f01451d4c4c317a6543f5f975464c42d56a833ec3685"
+            }
+          ],
+          "entity_id": null
+        },
+        {
+          "name": "合肥国资背景的投资机构",
+          "role": "本轮参与方",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-483eb7ff4aaec1c4",
+              "quote": "由兆易创新支持的基金，以及合肥国资背景的投资机构也参与其中。",
+              "source_content_hash": "ba93060af57afb73",
+              "quote_hash": "7e503be5186bd257fdb0f01451d4c4c317a6543f5f975464c42d56a833ec3685"
+            }
+          ],
+          "entity_id": null
+        }
+      ],
+      "evidence_refs": [
+        {
+          "source_id": "FISRC-c6b67b3d7908097e",
+          "quote": "500亿元，DeepSeek接近完成第二轮融资据外媒报道，DeepSeek完成75亿美元融资，年化营收突破10亿美元。",
+          "source_content_hash": "0ddec95e5221b2426afa9e79e96a035c7b190894998f530fc68ebdafb2c09eae",
+          "quote_hash": "5af83ccaebc394522c858e3f06892c966961b1221f38cfc76797b11f657d7ba7"
+        },
+        {
+          "source_id": "FISRC-c6b67b3d7908097e",
+          "quote": "据腾讯科技从接近Deepseek人士处获悉，本轮融资500亿人民币，已接近结束，但部分审核仍在进行。",
+          "source_content_hash": "0ddec95e5221b2426afa9e79e96a035c7b190894998f530fc68ebdafb2c09eae",
+          "quote_hash": "83abde8cf68d8fb4954b48f2ca2b67beae0ec50797ef1b66f42136989bc84964"
+        },
+        {
+          "source_id": "FISRC-483eb7ff4aaec1c4",
+          "quote": "DeepSeek 正接近完成新一轮融资，本轮计划融资约 500 亿元人民币，预计将在 8 月底前完成。",
+          "source_content_hash": "ba93060af57afb73",
+          "quote_hash": "b6fe14174853d0b09b5e4f104ad37145ca4f11e26195870971fa436e8a9eb063"
+        }
+      ],
+      "round_code": "ipo",
+      "round_original": "IPO",
+      "amount_original": "75亿美元",
+      "amount_normalized": {
+        "currency": "USD",
+        "value": 7500000000,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "exact",
+        "display_zh": "75 亿美元"
+      },
+      "total_raised_original": "",
+      "total_raised_normalized": {
+        "currency": "",
+        "value": null,
+        "min_value": null,
+        "max_value": null,
+        "unit": "base",
+        "status": "undisclosed",
+        "display_zh": ""
+      },
+      "risk_markers": [
+        "investors_missing"
+      ],
+      "disclosures": [
+        {
+          "event_id": "EV-3a7e1e2c46daaa76",
+          "round_original": "IPO",
+          "amount": "75亿美元",
+          "announced_at": "2026-09-28",
+          "evidence_refs": [
+            {
+              "source_id": "FISRC-c6b67b3d7908097e",
+              "quote": "500亿元，DeepSeek接近完成第二轮融资据外媒报道，DeepSeek完成75亿美元融资，年化营收突破10亿美元。",
+              "source_content_hash": "0ddec95e5221b2426afa9e79e96a035c7b190894998f530fc68ebdafb2c09eae",
+              "quote_hash": "5af83ccaebc394522c858e3f06892c966961b1221f38cfc76797b11f657d7ba7"
+            },
+            {
+              "source_id": "FISRC-c6b67b3d7908097e",
+              "quote": "据腾讯科技从接近Deepseek人士处获悉，本轮融资500亿人民币，已接近结束，但部分审核仍在进行。",
+              "source_content_hash": "0ddec95e5221b2426afa9e79e96a035c7b190894998f530fc68ebdafb2c09eae",
+              "quote_hash": "83abde8cf68d8fb4954b48f2ca2b67beae0ec50797ef1b66f42136989bc84964"
+            },
+            {
+              "source_id": "FISRC-483eb7ff4aaec1c4",
+              "quote": "DeepSeek 正接近完成新一轮融资，本轮计划融资约 500 亿元人民币，预计将在 8 月底前完成。",
+              "source_content_hash": "ba93060af57afb73",
+              "quote_hash": "b6fe14174853d0b09b5e4f104ad37145ca4f11e26195870971fa436e8a9eb063"
+            }
+          ]
+        }
+      ],
+      "disclosure_status": "partially_disclosed"
+    },
+    "products": [
+      {
+        "name": "DeepSeek-V4",
+        "description": "DeepSeek于2026年4月24日推出的开源大模型预览版，以100万token超长上下文为标配，采用自研DSA稀疏注意力机制和升级MoE架构，支持Agent能力、世界知识、数学推理、代码生成，并适配华为昇腾等国产算力。",
+        "target_customers": "个人用户、开发者、企业用户",
+        "features": [
+          "100万token超长上下文",
+          "自研DSA稀疏注意力机制",
+          "384专家融合内核MoE架构",
+          "全链路本土算力适配",
+          "Apache 2.0开源协议"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-802229cb01fa557e",
+            "quote": "2026年4月24日，中国大模型厂商DeepSeek正式推出DeepSeek-V4预览版，同步开源并上线官网、官方App及API服务，标志着百万级超长上下文能力进入普惠阶段。",
+            "source_content_hash": "978f793fc3ba61d5",
+            "quote_hash": "213ac2b6b31f5cab14cb285c346e248ee33a4cda5ef9a97d6b5bdb02c74be447"
+          },
+          {
+            "source_id": "FISRC-043cc17f896238cf",
+            "quote": "该版本模型参数规模达到万亿级别，支持百万级上下文长度，并首次实现对华为昇腾等国产 AI 芯片的深度适配与优化。",
+            "source_content_hash": "ca64de58a4cb2e6d",
+            "quote_hash": "d8e7df13f41b8a5a3e45e4a48ab161f8c3ebb55caf203812e3b3fe40a86f44fc"
+          }
+        ],
+        "entity_id": null
+      },
+      {
+        "name": "DeepSeek API",
+        "description": "DeepSeek提供的模型调用API服务，支持OpenAI格式和Anthropic格式，提供deepseek-flash和deepseek-v4-pro两个模型版本，按百万tokens计费，区分缓存命中、未命中及空闲/高峰时段价格。",
+        "target_customers": "开发者、企业客户",
+        "features": [
+          "支持OpenAI格式与Anthropic格式",
+          "1M上下文长度",
+          "最大输出384K",
+          "支持Json Output、Tool Calls、Responses API",
+          "区分空闲与高峰时段定价"
+        ],
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-fa1f87c1d59d2670",
+            "quote": "模型deepseek-flash(1)deepseek-v4-proBASE URL (OpenAI 格式)https://api.deepseek.comBASE URL (Anthropic 格式)https://api.deepseek.com/anthropic",
+            "source_content_hash": "ad90ee1070b58e6b",
+            "quote_hash": "0e73b692a3a90274c28ebe4c1f962d9d5ec4849c3668bbd251f18c3e9f9afa22"
+          },
+          {
+            "source_id": "FISRC-483eb7ff4aaec1c4",
+            "quote": "通过 API 向外部客户提供模型调用服务的毛利率高达 82.9%，显示模型推理业务已经具备较高的直接毛利水平。",
+            "source_content_hash": "ba93060af57afb73",
+            "quote_hash": "693d0454218ed10fa0d8919b94cf59c5c414be63fada65693315d9038dfff18a"
+          }
+        ],
+        "entity_id": null
+      }
+    ],
+    "customers": [],
+    "comparisons": [
+      {
+        "name": "OpenAI",
+        "product": "GPT系列模型及API服务",
+        "scenario": "大模型推理与API调用",
+        "target_customer": "全球企业及开发者",
+        "funding_summary": "",
+        "core_difference": "DeepSeek 2026年前7个月API毛利率为82.9%，OpenAI今年第一季度毛利率约39%；DeepSeek-V4推理成本仅为GPT-5.5的1/8至1/50。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-483eb7ff4aaec1c4",
+            "quote": "作为对比，OpenAI 今年第一季度营收为 57 亿美元，毛利率约 39%；Anthropic 第二季度营收为 115 亿美元，预计 2026 年毛利率将由 2025 年的约 40% 提升至 63%。",
+            "source_content_hash": "ba93060af57afb73",
+            "quote_hash": "926c1f13781a8f57b969ac8829ba60aabbcc4c21dcd5a9e8f87c5358e5e63c10"
+          },
+          {
+            "source_id": "FISRC-802229cb01fa557e",
+            "quote": "推理成本仅为 GPT-5.5 的 1/8 至 1/50，让全球中小企业与个人用户都能用上顶级 AI 能力。",
+            "source_content_hash": "978f793fc3ba61d5",
+            "quote_hash": "b0699e3f0a076f675a64019028012b5948f93686da37f650cbdb61939e8a460b"
+          }
+        ],
+        "entity_id": "EN-7d3194f79e645c42"
+      },
+      {
+        "name": "Anthropic",
+        "product": "Claude系列模型",
+        "scenario": "大模型推理与API调用",
+        "target_customer": "全球企业及开发者",
+        "funding_summary": "",
+        "core_difference": "DeepSeek 2026年前7个月API毛利率为82.9%，Anthropic预计2026年毛利率将由2025年的约40%提升至63%。",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-483eb7ff4aaec1c4",
+            "quote": "Anthropic 第二季度营收为 115 亿美元，预计 2026 年毛利率将由 2025 年的约 40% 提升至 63%。",
+            "source_content_hash": "ba93060af57afb73",
+            "quote_hash": "d4fe948c115888d7a8ffe7667589a8a7296b2ecfdf0aa36fd43a170dbba6521e"
+          }
+        ],
+        "entity_id": "EN-c70eca6b0f88f44d"
+      }
+    ],
+    "metrics": [
+      {
+        "label": "本轮融资金额",
+        "value": "500亿人民币",
+        "observed_at": "2026-09-28",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-c6b67b3d7908097e",
+            "quote": "据腾讯科技从接近Deepseek人士处获悉，本轮融资500亿人民币，已接近结束，但部分审核仍在进行。",
+            "source_content_hash": "0ddec95e5221b2426afa9e79e96a035c7b190894998f530fc68ebdafb2c09eae",
+            "quote_hash": "83abde8cf68d8fb4954b48f2ca2b67beae0ec50797ef1b66f42136989bc84964"
+          }
+        ]
+      },
+      {
+        "label": "本轮融资前估值",
+        "value": "约5000亿元人民币（约740亿美元）",
+        "observed_at": "2026-08-26",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-483eb7ff4aaec1c4",
+            "quote": "本轮融资前估值约为 5000 亿元人民币（约 740 亿美元）。",
+            "source_content_hash": "ba93060af57afb73",
+            "quote_hash": "1286e85715b09e7110979362c1418c4c75d5c66225e7fed2c4bca0907aaf6be7"
+          }
+        ]
+      },
+      {
+        "label": "2026年前7个月净亏损",
+        "value": "约7.15亿元人民币",
+        "observed_at": "2026-08-26",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-483eb7ff4aaec1c4",
+            "quote": "同期净亏损约 7.15 亿元人民币，低于 2025 年全年 9.35 亿元人民币的净亏损。",
+            "source_content_hash": "ba93060af57afb73",
+            "quote_hash": "4abb0194c54f0c5977f6fc0659b3208a7790fbd99e45c92a81c3df89d6649a6d"
+          }
+        ]
+      },
+      {
+        "label": "2026年前7个月整体毛利率",
+        "value": "44.6%",
+        "observed_at": "2026-08-26",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-483eb7ff4aaec1c4",
+            "quote": "今年前 7 个月，DeepSeek 整体毛利率达到 44.6%。",
+            "source_content_hash": "ba93060af57afb73",
+            "quote_hash": "83c45bca46d57eb066ed73a93d43b4079e742b0e92c48b8417770c94a1a66b78"
+          }
+        ]
+      },
+      {
+        "label": "API业务毛利率",
+        "value": "82.9%",
+        "observed_at": "2026-08-26",
+        "evidence_refs": [
+          {
+            "source_id": "FISRC-483eb7ff4aaec1c4",
+            "quote": "通过 API 向外部客户提供模型调用服务的毛利率高达 82.9%，显示模型推理业务已经具备较高的直接毛利水平。",
+            "source_content_hash": "ba93060af57afb73",
+            "quote_hash": "693d0454218ed10fa0d8919b94cf59c5c414be63fada65693315d9038dfff18a"
+          }
+        ]
+      }
+    ],
+    "quotes": [],
+    "analysis": {
+      "investment_rationale": [],
+      "capital_judgment": "资本押注的核心变量是DeepSeek能否在推理时代将极低API价格带来的用户规模转化为可持续的算力基础设施优势。本轮融资前估值约5000亿元人民币，所依赖的已验证信号包括：2026年前7个月营收约4.75亿元（为2025年全年10倍）、API业务毛利率82.9%、整体毛利率44.6%，以及V4模型百万上下文和国产算力适配带来的成本结构优势。但证据边界明显：净亏损仍达7.15亿元，推理成本随调用量指数级上升，且本轮具体投资方名单未在规范事件来源中披露，资本判断只能基于财务指标和产业趋势，无法确认具体机构出资逻辑。",
+      "validated_signals": [
+        "2026年前7个月营收约4.75亿元，为2025年全年10倍",
+        "API业务毛利率82.9%，整体毛利率44.6%",
+        "DeepSeek-V4以100万token上下文为标配并适配华为昇腾等国产算力",
+        "本轮融资前估值约5000亿元人民币"
+      ],
+      "risks": [
+        "推理成本随用户规模指数级上升，用户越多资本开支越高，净亏损仍达7.15亿元",
+        "百万上下文在极限场景下易出现信息遗漏、逻辑断裂，MoE架构规模化部署易负载不均引发服务中断",
+        "从CUDA向本土算力生态迁移存在成本与性能波动风险",
+        "本轮具体投资方未披露，投资人结构与背书强度无法核验。"
+      ],
+      "related_direction_id": "",
+      "taxonomy_version": "TAG-V4.1",
+      "product_form_id": "model_api_service",
+      "market_category_id": "infrastructure_compute",
+      "market_subcategory_id": "development_deployment",
+      "market_application_id": "models",
+      "use_case_ids": [
+        "software_development",
+        "knowledge_search",
+        "data_analysis"
+      ],
+      "industry_ids": [],
+      "target_user_ids": [
+        "developer",
+        "business_user",
+        "consumer"
+      ],
+      "sector": "人工智能基础模型与推理基础设施",
+      "investment_thesis": {
+        "statement": "资本押注的核心变量是DeepSeek能否在推理时代将极低API价格带来的用户规模转化为可持续的算力基础设施优势。本轮融资前估值约5000亿元人民币，所依赖的已验证信号包括：2026年前7个月营收约4.75亿元（为2025年全年10倍）、API业务毛利率82.9%、整体毛利率44.6%，以及V4模型百万上下文和国产算力适配带来的成本结构优势。但证据边界明显：净亏损仍达7.15亿元，推理成本随调用量指数级上升，且本轮具体投资方名单未在规范事件来源中披露，资本判断只能基于财务指标和产业趋势，无法确认具体机构出资逻辑。",
+        "evidence_signals": [
+          "2026年前7个月营收约4.75亿元，为2025年全年10倍",
+          "API业务毛利率82.9%，整体毛利率44.6%",
+          "DeepSeek-V4以100万token上下文为标配并适配华为昇腾等国产算力",
+          "本轮融资前估值约5000亿元人民币"
+        ],
+        "risks": [
+          "推理成本随用户规模指数级上升，用户越多资本开支越高，净亏损仍达7.15亿元",
+          "百万上下文在极限场景下易出现信息遗漏、逻辑断裂，MoE架构规模化部署易负载不均引发服务中断",
+          "从CUDA向本土算力生态迁移存在成本与性能波动风险"
+        ],
+        "institutional_rationale_status": "not_disclosed"
+      }
+    },
+    "entity_links": [
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "DeepSeek-V4",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "product_of",
+        "target_kind": "product",
+        "research_name": "DeepSeek API",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "founded_by",
+        "target_kind": "person",
+        "research_name": "梁文锋",
+        "canonical_entity_id": "EN-dfe2d38b46c80bc1",
+        "canonical_name": "梁文锋"
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "腾讯",
+        "canonical_entity_id": "EN-9c8ae69b84f21a2e",
+        "canonical_name": "腾讯"
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "宁德时代",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "国家人工智能产业投资基金",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "Monolith",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "拾象资本",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "CPE 源峰",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "君联资本",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "兆易创新支持的基金",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "invested_in_other_round",
+        "target_kind": "organization",
+        "research_name": "合肥国资背景的投资机构",
+        "canonical_entity_id": null,
+        "canonical_name": ""
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "OpenAI",
+        "canonical_entity_id": "EN-7d3194f79e645c42",
+        "canonical_name": "OpenAI"
+      },
+      {
+        "relation_type": "compared_with",
+        "target_kind": "organization",
+        "research_name": "Anthropic",
+        "canonical_entity_id": "EN-c70eca6b0f88f44d",
+        "canonical_name": "Anthropic"
+      }
+    ],
+    "funding_history": [
+      {
+        "event_id": "EV-ed65f3187aa6aa40",
+        "date": "2026-07-14",
+        "title": "DeepSeek 在完成首轮 70 亿美元融资仅数周后就需要更多现金",
+        "amount": "$7 billion",
+        "source_refs": [
+          "SA-2fa4b62a68708662"
+        ]
+      },
+      {
+        "event_id": "EV-f8c3a83d883c9b22",
+        "date": "2026-06-16",
+        "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+        "amount": "about $7.4 billion",
+        "source_refs": [
+          "SA-8a94a189bf763b0b"
+        ]
+      }
+    ],
+    "research_sources": [
+      {
+        "source_id": "FISRC-c6b67b3d7908097e",
+        "source_url": "https://m.pedaily.cn/news/569663",
+        "title": "投资界24h | DeepSeek又融资500亿；中国最大饺子IPO来了；顺丰做LP，投了经纬",
+        "publisher": "m.pedaily.cn",
+        "source_class": "canonical_event_source",
+        "capture_method": "data_center_v4_source_artifact",
+        "captured_at": "2026-10-02T00:32:18.158Z",
+        "content_hash": "0ddec95e5221b2426afa9e79e96a035c7b190894998f530fc68ebdafb2c09eae",
+        "source_artifact_id": "SA-17387796c64cdeef",
+        "raw_id": "RAW-bf6333dfb57fce88"
+      },
+      {
+        "source_id": "FISRC-4a43446c1fdd8a31",
+        "source_url": "https://www.qbitai.com/2026/07/461220.html",
+        "title": "DeepSeek被曝主动叫停了第二轮融资签约",
+        "publisher": "qbitai.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-02T00:35:15.211Z",
+        "content_hash": "b0eb1d1fb5eb1976",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-483eb7ff4aaec1c4",
+        "source_url": "https://finance.sina.com.cn/tech/roll/2026-08-26/doc-inipsezp9146369.shtml",
+        "title": "DeepSeek正接近完成新一轮融资：已开始为潜在的科创板IPO做准备",
+        "publisher": "finance.sina.com.cn",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-02T00:35:17.223Z",
+        "content_hash": "ba93060af57afb73",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-fa1f87c1d59d2670",
+        "source_url": "https://api-docs.deepseek.com/zh-cn/quick_start/pricing/",
+        "title": "模型 & 价格 | DeepSeek API Docs",
+        "publisher": "api-docs.deepseek.com",
+        "source_class": "official_candidate",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-02T00:35:19.031Z",
+        "content_hash": "ad90ee1070b58e6b",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-802229cb01fa557e",
+        "source_url": "https://www.idc.com/resource-center/blog/deepseek-v4%E7%99%BB%E5%9C%BA%EF%BC%9A%E7%99%BE%E4%B8%87%E4%B8%8A%E4%B8%8B%E6%96%87%E6%88%90%E6%A0%87%E9%85%8D%EF%BC%8C%E5%85%A8%E7%90%83%E7%94%A8%E6%88%B7%E5%87%86%E5%A4%87%E5%A5%BD%E4%BA%86%E5%90%97/",
+        "title": "DeepSeek-V4登场：百万上下文成标配，全球用户准备好了吗？——IDC初探分析",
+        "publisher": "idc.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-02T00:35:20.652Z",
+        "content_hash": "978f793fc3ba61d5",
+        "source_artifact_id": null,
+        "raw_id": null
+      },
+      {
+        "source_id": "FISRC-043cc17f896238cf",
+        "source_url": "https://www.tmtpost.com/7958219.html",
+        "title": "V4 发布前夜，DeepSeek 被曝寻求至少 3 亿美元融资-钛媒体官方网站",
+        "publisher": "tmtpost.com",
+        "source_class": "independent",
+        "capture_method": "direct_fetch",
+        "captured_at": "2026-10-02T00:35:57.121Z",
+        "content_hash": "ca64de58a4cb2e6d",
+        "source_artifact_id": null,
+        "raw_id": null
+      }
+    ],
+    "model_provenance": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "attempts": 1,
+      "prompt_version": "FUNDING-INSIGHT-DEEPSEEK-V1.8",
+      "generated_at": "2026-10-02T00:36:21.746Z"
+    },
+    "auto_publish_gate": {
+      "passed": true,
+      "problems": [],
+      "gate_version": "FUNDING-INSIGHT-AUTO-PUBLISH-GATE-V1.1"
+    },
+    "publication_status": "auto_published",
+    "published_at": "2026-10-02T00:36:21.746Z",
+    "customer_research": {
+      "status": "no_verified_customer_found",
+      "verified_customer_count": 0,
+      "searched_source_count": 6
+    },
+    "entity_link_coverage": {
+      "products": {
+        "linked": 0,
+        "total": 2,
+        "unresolved_names": [
+          "DeepSeek API",
+          "DeepSeek-V4"
+        ]
+      },
+      "founders": {
+        "linked": 1,
+        "total": 1,
+        "unresolved_names": []
+      }
+    },
+    "source_event_ids": [
+      "EV-3a7e1e2c46daaa76"
+    ],
+    "aggregation": {
+      "key": "EN-6f7ac1823da81d2e|ipo",
+      "event_count": 1,
+      "strategy": "company_and_normalized_round"
+    }
+  },
+  "queries": [
+    "\"DeepSeek\" 2026 融资 投资方",
+    "\"DeepSeek\" 官网 产品 服务",
+    "\"DeepSeek\" 投资机构 融资用途"
+  ],
+  "attempts": [
+    {
+      "provider": "anysearch",
+      "query": "\"DeepSeek\" 2026 融资 投资方",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://es.tradingview.com/news/reuters.com,2026:newsml_L4S42Q006:0/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Deepseek\" 75亿美元 融资 领投 跟投",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"DeepSeek\" 官网 产品 服务",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://www.deepseek.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://platform.deepseek.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://chat.deepseek.com/",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://apps.microsoft.com/detail/xpffxg0g03wn69?hl=zh-CN&gl=CN",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "anysearch",
+      "query": "\"DeepSeek\" 投资机构 融资用途",
+      "status": "completed",
+      "count": 8
+    },
+    {
+      "provider": "original",
+      "url": "https://m.ofweek.com/ai/2026-06/ART-201717-12003-30691026.html",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://www.zhihu.com/question/2029232145541980805",
+      "status": "failed",
+      "reason": "original_capture_failed"
+    },
+    {
+      "provider": "original",
+      "url": "https://wap.eastmoney.com/a/202604183709730684.html",
+      "status": "excluded",
+      "reason": "company_not_in_original"
+    },
+    {
+      "provider": "planner",
+      "query": "\"Deepseek\" 2026 本轮融资 公告",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    },
+    {
+      "provider": "planner",
+      "query": "\"DeepSeek\" 客户 创始人 总部",
+      "status": "skipped",
+      "reason": "accepted_originals_cover_gap"
+    }
+  ]
+}
