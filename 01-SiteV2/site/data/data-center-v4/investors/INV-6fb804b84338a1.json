@@ -121,12 +121,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "CTBC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "CTBC官网披露其100%持有中国信托创业投资股份有限公司；该子公司投资具有发展潜力的未上市柜公司。此条记录集团投资活动，不将控股公司与创投子公司混为同一主体。",
+      "facts": [
+        {
+          "field": "subsidiary_relationship",
+          "label": "官网披露的子公司关系",
+          "value": "中国信托创业投资股份有限公司由中信金控100%持股。",
+          "source_id": "PROFILE-INV-6fb804b84338a1-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露的集团投资活动",
+          "value": "创投子公司投资具发展潜力的未上市柜公司。",
+          "source_id": "PROFILE-INV-6fb804b84338a1-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示的投资领域",
+          "value": "资讯通讯、绿色科技、生技医疗、民生消费、文化创意、资讯软件服务及具成长潜力的传统产业。",
+          "source_id": "PROFILE-INV-6fb804b84338a1-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +149,32 @@
           "source_id": "FISRC-f5de203e610041a3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "依据CTBC集团子公司页面，投资领域为该页面披露的现况。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团子公司介绍",
+          "value": "CTBC Holding",
+          "url": "https://www.ctbcholding.com/content/twhoo/zh_tw/ctbc-bank/ctbc-investment.html?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6fb804b84338a1-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6fb804b84338a1-1",
+          "source_url": "https://www.ctbcholding.com/content/twhoo/zh_tw/ctbc-bank/ctbc-investment.html?source_capture=2026-10-03&cycle=10",
+          "source_title": "中國信託創投 - 中國信託",
+          "source_content_hash": "afe3ed30e63a01d46fe1fcc6a3e0a44990d1df40701a287eb232d5c59bc7f23f",
+          "quote": "中國信託創業投資股份有限公司成立於92年，為中信金控100%持股之子公司，主要業務為投資具有發展潛力之未上市櫃公司，對象包括資訊通訊產業、綠色科技產業、生技醫療產業、民生消費、文化創意產業、資訊軟體服務業與經營績效良好且具成長潛力之傳統產業等。",
+          "quote_hash": "ca41b7efa0b14eaa2e81b8d42bf0790d28d7ef39d5a2e49ce1050986bb40c598"
+        },
         {
           "source_id": "FISRC-f5de203e610041a3",
           "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
@@ -145,7 +184,7 @@
           "quote_hash": "5e6246e774be82c997cd8ee1722f1519fe41adcbe5a04c0bb89246ac2c2930e4"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

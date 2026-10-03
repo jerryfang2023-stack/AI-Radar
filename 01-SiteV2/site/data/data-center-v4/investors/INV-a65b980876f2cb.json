@@ -247,12 +247,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "云晖资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "云晖资本（V Fund）官网称其为2015年创立的硬科技私募股权投资管理公司，并列出已投项目及科技投资方向。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "机构官网",
+          "value": "2015年创立。",
+          "source_id": "PROFILE-INV-a65b980876f2cb-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构官网",
+          "value": "私募股权投资管理公司。",
+          "source_id": "PROFILE-INV-a65b980876f2cb-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构官网",
+          "value": "硬科技领域。",
+          "source_id": "PROFILE-INV-a65b980876f2cb-1"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "机构官网",
+          "value": "官网列举宁德时代、思格新能源、孚能科技、容百科技、地平线、极智嘉等投资项目。",
+          "source_id": "PROFILE-INV-a65b980876f2cb-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -268,8 +289,40 @@
           "source_id": "FISRC-0dd42e7d7de8bcd9"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案采用官网品牌“云晖资本（V Fund）”；网页披露的规模、组合和业绩未外推到未列项目。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "云晖资本（V Fund）",
+          "url": "https://www.cvfund.com/aboutus/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a65b980876f2cb-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a65b980876f2cb-1",
+          "source_url": "https://www.cvfund.com/aboutus/?source_capture=2026-10-03&cycle=16",
+          "source_title": "关于我们 - 云晖资本",
+          "source_content_hash": "a1ed02c95da6a4754012a6ab574936cf3867c9137f93deac02ac19d30a37f28c",
+          "quote": "云晖资本（V Fund）是一家于2015年创立的私募股权投资管理公司",
+          "quote_hash": "e8abb6701bd5bdca3a699ed974586588315c1168e3a57fc54ecd505439f59dbc"
+        },
+        {
+          "source_id": "PROFILE-INV-a65b980876f2cb-2",
+          "source_url": "https://www.cvfund.com/aboutus/?source_capture=2026-10-03&cycle=16",
+          "source_title": "关于我们 - 云晖资本",
+          "source_content_hash": "a1ed02c95da6a4754012a6ab574936cf3867c9137f93deac02ac19d30a37f28c",
+          "quote": "已投出众多龙头企业，包括但不限于宁德时代、思格新能源、孚能科技",
+          "quote_hash": "e6c80a71a6ba952de28a6dea778c1e82b71c9c5485e706b44279883e5111d4c1"
+        },
         {
           "source_id": "FISRC-0b86e961d03687b6",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260930-393487.html",
@@ -295,7 +348,7 @@
           "quote_hash": "98a6662e22eac1ac9ffe1e90c2212fcf653fe06107f37ecec8fef367454a6950"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

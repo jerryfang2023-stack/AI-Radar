@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "弘晖资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "弘晖基金官网将其定位为长期投资医疗健康与科技制造等领域的基金品牌，专注科技及实体经济价值投资。",
+      "facts": [
+        {
+          "field": "official_brand",
+          "label": "官网使用的品牌名",
+          "value": "弘晖基金。",
+          "source_id": "PROFILE-INV-7a390261caf1f8-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "医疗健康、科技制造及科技创新。",
+          "source_id": "PROFILE-INV-7a390261caf1f8-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-0a40102abd985684"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "候选名“弘晖资本”对应官网品牌“弘晖基金”；依官网名称规范，不另行推断法律实体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "弘晖基金",
+          "url": "https://www.hlc.com.cn/?source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-7a390261caf1f8-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7a390261caf1f8-1",
+          "source_url": "https://www.hlc.com.cn/?source_capture=2026-10-03&cycle=11",
+          "source_title": "弘晖基金",
+          "source_content_hash": "3206b6c00abaf8c4d83ddc72dfe672968410b6554aa9dab3433e27be74f10192",
+          "quote": "弘晖基金专注发掘和实现科学技术的恒久价值，矢志通过对实体经济和科技创新的长期价值投资，为生产效率的变革和人民健康生活的提升创造持续积极影响。",
+          "quote_hash": "978de0cc8a07433f9b107ae8c905f1483dd8488923d46d542b2c93e3bb21b0fe"
+        },
+        {
+          "source_id": "PROFILE-INV-7a390261caf1f8-2",
+          "source_url": "https://www.hlc.com.cn/?source_capture=2026-10-03&cycle=11",
+          "source_title": "弘晖基金",
+          "source_content_hash": "3206b6c00abaf8c4d83ddc72dfe672968410b6554aa9dab3433e27be74f10192",
+          "quote": "投资领域 医疗健康 科技制造",
+          "quote_hash": "40ac640dbc88b5bf4977c92b9834b45af5889cf284f74db2bc8a15d7103281a2"
+        },
         {
           "source_id": "FISRC-0a40102abd985684",
           "source_url": "https://news.pedaily.cn/202605/564126.shtml",
@@ -161,7 +202,7 @@
           "quote_hash": "7f3312a250a9bb0429e31afd20808ce3652b5d3b5cd8c9724ddf67ed16fad278"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

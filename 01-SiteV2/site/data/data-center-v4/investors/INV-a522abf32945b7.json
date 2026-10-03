@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "信产投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "信产投资官网确认其全称为陕西电子信息产业投资管理有限公司，是陕西电子信息集团全资子公司，业务包括股权直投、基金投资、债权投资管理及产业金融服务。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "机构官网",
+          "value": "陕西电子信息产业投资管理有限公司，简称“信产投资”。",
+          "source_id": "PROFILE-INV-a522abf32945b7-1"
+        },
+        {
+          "field": "ownership",
+          "label": "机构官网",
+          "value": "陕西电子信息集团全资子公司。",
+          "source_id": "PROFILE-INV-a522abf32945b7-1"
+        },
+        {
+          "field": "founded",
+          "label": "机构官网",
+          "value": "2016年4月25日经陕西省国资委批复成立。",
+          "source_id": "PROFILE-INV-a522abf32945b7-1"
+        },
+        {
+          "field": "business_scope",
+          "label": "机构官网",
+          "value": "股权投资管理、债权投资管理、产业金融服务、投资顾问服务；包括股权直投和基金投资。",
+          "source_id": "PROFILE-INV-a522abf32945b7-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,40 @@
           "source_id": "FISRC-d45f7a4d8fd76b88"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "名称、股东关系和业务范围均据公司官网；未据此推断其当前基金规模或投资组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "陕西电子信息产业投资管理有限公司",
+          "url": "https://www.seci.vip/about/introduction/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a522abf32945b7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a522abf32945b7-1",
+          "source_url": "https://www.seci.vip/about/introduction/?source_capture=2026-10-03&cycle=16",
+          "source_title": "公司简介 - 陕西电子信息产业投资管理有限公司（官网）",
+          "source_content_hash": "b83adef6627dfeae953e351c80a4d8452418c523720d029c729b958c66b74fb5",
+          "quote": "陕西电子信息产业投资管理有限公司(简称：信产投资)于2016年4月25日由陕西省国资委批复成立，是陕西电子信息集团为深化企业改革、推进产融结合、加快转型升级出资组建的全资子公司。",
+          "quote_hash": "e7d53af0d35c67b11ac7d1832ae25ecf832a571b15224c9febd5117ec89bf8c2"
+        },
+        {
+          "source_id": "PROFILE-INV-a522abf32945b7-2",
+          "source_url": "https://www.seci.vip/about/introduction/?source_capture=2026-10-03&cycle=16",
+          "source_title": "公司简介 - 陕西电子信息产业投资管理有限公司（官网）",
+          "source_content_hash": "b83adef6627dfeae953e351c80a4d8452418c523720d029c729b958c66b74fb5",
+          "quote": "公司业务涵盖股权投资管理、债权投资管理、产业金融服务、投资顾问服务四大板块",
+          "quote_hash": "6960d3db20f06e1ac6b53b75b95bed94ade798e60c3029fba11d7c763b02c1c3"
+        },
         {
           "source_id": "FISRC-d45f7a4d8fd76b88",
           "source_url": "https://www.sohu.com/a/1044130792_120109837",

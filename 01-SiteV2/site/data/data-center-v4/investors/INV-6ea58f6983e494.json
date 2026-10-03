@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Alteria 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Alteria官网将其定位为印度的风险债务基金，主要为获得一线VC支持的创新创业公司提供融资方案。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "风险债务基金。",
+          "source_id": "PROFILE-INV-6ea58f6983e494-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的服务对象",
+          "value": "由一线VC支持的创新创业公司。",
+          "source_id": "PROFILE-INV-6ea58f6983e494-1"
+        },
+        {
+          "field": "financing_strategy",
+          "label": "官网说明的融资方式",
+          "value": "风险债务可作为股权融资的补充。",
+          "source_id": "PROFILE-INV-6ea58f6983e494-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-723dbfd85761e08d"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网定位；未写入页面上的动态AUM和投资组合数量。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "Alteria Capital",
+          "url": "https://alteriacapital.com/?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6ea58f6983e494-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6ea58f6983e494-1",
+          "source_url": "https://alteriacapital.com/?source_capture=2026-10-03&cycle=10",
+          "source_title": "Alteria Capital &#8211; India&#039;s Leading Venture Debt Fund &#8211; Home",
+          "source_content_hash": "cf17962e1ea1bc91afd40af528e3a6346d09837e53edbb21a12198dffff37f5e",
+          "quote": "Alteria Capital is India’s leading venture debt fund, dedicated to supporting innovative startups backed by top-tier VC sponsors.",
+          "quote_hash": "39bc94048ca10e2b07e493a271bacd8c5aa207e72a9faaaaecec8fccd959946f"
+        },
+        {
+          "source_id": "PROFILE-INV-6ea58f6983e494-2",
+          "source_url": "https://alteriacapital.com/?source_capture=2026-10-03&cycle=10",
+          "source_title": "Alteria Capital &#8211; India&#039;s Leading Venture Debt Fund &#8211; Home",
+          "source_content_hash": "cf17962e1ea1bc91afd40af528e3a6346d09837e53edbb21a12198dffff37f5e",
+          "quote": "Venture debt is an alternative financing solution that supplements equity, enabling founders to reduce dilution and maintain ownership.",
+          "quote_hash": "8312ef4f5518ddf523266d47113da36a949da770ff04cd219c05a74132eb9e70"
+        },
         {
           "source_id": "FISRC-723dbfd85761e08d",
           "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",

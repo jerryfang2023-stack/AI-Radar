@@ -192,12 +192,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "F-Prime 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "F-Prime官网介绍其投资生命科学、技术、健康科技与服务及加密领域，偏好早期投资但也支持其他阶段的优秀团队。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露领域",
+          "value": "生命科学、技术、健康科技与服务、加密领域。",
+          "source_id": "PROFILE-INV-7b1b29795504ea-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露策略",
+          "value": "偏好早期投资，也会支持其他阶段的优秀团队。",
+          "source_id": "PROFILE-INV-7b1b29795504ea-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +218,40 @@
           "source_id": "FISRC-6946be83f05bd7fd"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "使用官网稳定披露的投资领域与阶段策略，未采纳页面动态管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "About",
+          "value": "F-Prime Capital",
+          "url": "https://fprimecapital.com/about/?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7b1b29795504ea-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7b1b29795504ea-1",
+          "source_url": "https://fprimecapital.com/about/?source_capture=2026-10-03&cycle=12",
+          "source_title": "About - F-Prime Capital",
+          "source_content_hash": "15c0f419d8efac01a75619d3efa37268422c6c72b6bc3bec2a34c6507573958d",
+          "quote": "F-Prime enables companies to turn their boldest ambitions into world-changing breakthroughs in life sciences , technology , healthtech + services , and crypto .",
+          "quote_hash": "73459ee4c756cf5889fd6fae95aed6f0e742e1e3d0adbcadf24b6adc769c6109"
+        },
+        {
+          "source_id": "PROFILE-INV-7b1b29795504ea-2",
+          "source_url": "https://fprimecapital.com/about/?source_capture=2026-10-03&cycle=12",
+          "source_title": "About - F-Prime Capital",
+          "source_content_hash": "15c0f419d8efac01a75619d3efa37268422c6c72b6bc3bec2a34c6507573958d",
+          "quote": "While we’re early-stage investors by choice, we’ll back exceptional teams at any stage.",
+          "quote_hash": "724fa7fed573ecb3a09494e4c28c9ec7ca15fec007533130389ca18857414f6a"
+        },
         {
           "source_id": "FISRC-831c2961f3373587",
           "source_url": "https://www.theblock.co/post/406934/venice-ai-funding-equity-valuation-dragonfly",
@@ -228,7 +269,7 @@
           "quote_hash": "f9f2b40f7a82566a7f4ebcb63c723a73b06e284f7e6e19bec41c28e44c3943a9"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

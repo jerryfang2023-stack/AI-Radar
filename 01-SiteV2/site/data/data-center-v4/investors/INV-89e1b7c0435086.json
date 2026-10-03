@@ -178,12 +178,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "RTP Global 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "RTP Global 官网称其为风险投资机构，团队聚焦早期投资并支持创始人长期发展。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "风险投资机构。",
+          "source_id": "PROFILE-INV-89e1b7c0435086-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露阶段",
+          "value": "早期投资。",
+          "source_id": "PROFILE-INV-89e1b7c0435086-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +204,32 @@
           "source_id": "FISRC-831b02f8570a1c2b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网对创立背景及早期投资工作的自述建档。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "RTP Global",
+          "url": "https://rtp.vc/about-us/?source_capture=2026-10-03&cycle=13",
+          "source_id": "PROFILE-INV-89e1b7c0435086-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-89e1b7c0435086-1",
+          "source_url": "https://rtp.vc/about-us/?source_capture=2026-10-03&cycle=13",
+          "source_title": "About Us - RTP Global",
+          "source_content_hash": "50d823735f9032356a5fa2692378b7937162d405390cfccafcfe7bfb4298ea17",
+          "quote": "Two decades ago, our founder Leonid sold his tech company and invested the proceeds, along with most of his personal wealth, to found our venture capital firm.",
+          "quote_hash": "c4089cf74645c9b65e7f359953147b04d6ed5e3091fff6e4abfc030cd3431448"
+        },
         {
           "source_id": "FISRC-83ab416cf84d3f07",
           "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
@@ -214,7 +247,7 @@
           "quote_hash": "e497ecf03529590b67c1200cf3a21732a19ea672772c04d7d488e71805827a1c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

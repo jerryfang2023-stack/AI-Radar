@@ -121,21 +121,46 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "神骐资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "创合汇资本官网在微埃智能融资公告中将神骐资本列为联合领投方。本条只确认该笔公开投资活动。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "被投企业融资公告（创合汇资本官网）",
+          "value": "神骐资本参与微埃智能 A+ 轮融资并联合领投。",
+          "source_id": "PROFILE-INV-a99cb2d47fb07f-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2025-03-11",
+          "description": "神骐资本联合领投微埃智能 A+ 轮融资。",
+          "source_id": "PROFILE-INV-a99cb2d47fb07f-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：墨奇智能 · 历史轮次未披露 · 天使+轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3415c96e4540c22c"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本批一手来源确认了投资方称谓和单笔融资，未找到足以核实“神骐资本”法律管理人及其与58产业基金关系的官方资料，因此不外推主体关系或完整策略。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "仅确认一笔由被投企业官网披露的联合领投记录。",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a99cb2d47fb07f-1",
+          "source_url": "https://www.chhcapital.cn/index/news/index.html?source_capture=2026-10-03&cycle=17",
+          "source_title": "新闻中心 创合汇资本",
+          "source_content_hash": "530220f861281b606361511fe9473cff3487b4a2a4ddceaa9cddce35bc26a83d",
+          "quote": "本轮由创合汇与东方富海、神骐资本、高秉强教授等联合领投",
+          "quote_hash": "5f616d83aac92ae34f92a073e1e9aade8d22c2b9fea94e008bb6bc58cd69e2d7"
+        },
         {
           "source_id": "FISRC-3415c96e4540c22c",
           "source_url": "https://www.163.com/dy/article/L167UGQE051984TV.html",

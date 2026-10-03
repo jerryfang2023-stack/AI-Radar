@@ -178,12 +178,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "银河源汇 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "银河源汇投资有限公司是中国银河证券全资另类投资子公司；其官网披露成立于2015年，使用自有资金开展股权投资和金融产品投资。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "机构官网",
+          "value": "银河源汇投资有限公司。",
+          "source_id": "PROFILE-INV-a2dc0ff0e597dd-1"
+        },
+        {
+          "field": "ownership",
+          "label": "机构官网",
+          "value": "中国银河证券股份有限公司全资另类投资子公司。",
+          "source_id": "PROFILE-INV-a2dc0ff0e597dd-1"
+        },
+        {
+          "field": "founded",
+          "label": "机构官网",
+          "value": "2015年12月10日成立。",
+          "source_id": "PROFILE-INV-a2dc0ff0e597dd-1"
+        },
+        {
+          "field": "investment_scope",
+          "label": "机构官网",
+          "value": "使用自有资金专注于股权投资和金融产品投资。",
+          "source_id": "PROFILE-INV-a2dc0ff0e597dd-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -195,8 +216,40 @@
           "source_id": "FISRC-b8b7d456eceee943"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "只记录官网披露的自有资金投资定位和法定主体，不将其与母公司或其他银河系基金混同。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "银河源汇投资有限公司",
+          "url": "https://www.chinastock.com.cn/yhwz/yhyhtz/index.html?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a2dc0ff0e597dd-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a2dc0ff0e597dd-1",
+          "source_url": "https://www.chinastock.com.cn/yhwz/yhyhtz/index.html?source_capture=2026-10-03&cycle=16",
+          "source_title": "银河源汇投资有限公司",
+          "source_content_hash": "0723f3d0b837a742f6cd124f941d845cdec39f4978973b68d31417b37b7a0ba2",
+          "quote": "银河源汇投资有限公司（以下简称“银河源汇投资”）成立于2015年12月10日，是中国银河证券股份有限公司（以下简称“中国银河证券”）的全资另类投资子公司，注册资本50亿元人民币，使用自有资金专注于股权投资和金融产品投资。",
+          "quote_hash": "4f3dfffe5bd39e0a726f82e1feaea425c355859039648f194f816fd49c922a53"
+        },
+        {
+          "source_id": "PROFILE-INV-a2dc0ff0e597dd-2",
+          "source_url": "https://www.chinastock.com.cn/yhwz/yhyhtz/index.html?source_capture=2026-10-03&cycle=16",
+          "source_title": "银河源汇投资有限公司",
+          "source_content_hash": "0723f3d0b837a742f6cd124f941d845cdec39f4978973b68d31417b37b7a0ba2",
+          "quote": "券商另类子公司以自有资金从事投资活动",
+          "quote_hash": "268d417eac1144dca03d2179ed0f9cc9c82d42360fa511bb5e3d4f028f0ed9a8"
+        },
         {
           "source_id": "FISRC-fc5617428a7935ed",
           "source_url": "https://www.nbd.com.cn/articles/2026-04-07/4328144.html",

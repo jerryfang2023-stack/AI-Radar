@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "K2 Global 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "K2 Global官网称其投资通过创新软件解决当下挑战的公司，并与创业者合作创造长期经济价值。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "通过创新软件解决现实挑战的科技企业。",
+          "source_id": "PROFILE-INV-7d1461a9c8e17d-1"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网披露的策略",
+          "value": "与创业者合作创造长期经济价值。",
+          "source_id": "PROFILE-INV-7d1461a9c8e17d-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,40 @@
           "source_id": "FISRC-b57e758a492553d2"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网投资策略页面建档，不扩展未经来源核实的管理实体信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "How We Invest",
+          "value": "K2 Global",
+          "url": "https://k2global.co/how-we-invest/?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7d1461a9c8e17d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7d1461a9c8e17d-1",
+          "source_url": "https://k2global.co/how-we-invest/?source_capture=2026-10-03&cycle=12",
+          "source_title": "How We Invest | Venture Capital Firm | Investment Company - K2 Global",
+          "source_content_hash": "c4bb42491318bf6ae20ae7dad052abef265b5e5fb9b0597888b6d06fc0ec6f9c",
+          "quote": "We invest in companies that develop innovative solutions for today’s challenges.",
+          "quote_hash": "9e38e69b140c035ad16dfa9580ba4ca8382f7725f1022071fe136e39c75e65d4"
+        },
+        {
+          "source_id": "PROFILE-INV-7d1461a9c8e17d-2",
+          "source_url": "https://k2global.co/how-we-invest/?source_capture=2026-10-03&cycle=12",
+          "source_title": "How We Invest | Venture Capital Firm | Investment Company - K2 Global",
+          "source_content_hash": "c4bb42491318bf6ae20ae7dad052abef265b5e5fb9b0597888b6d06fc0ec6f9c",
+          "quote": "At K2, we believe that technology enables transformation and seek to partner with founders to build long term economic value through creative software.",
+          "quote_hash": "74ae023fe8dbb217eb856a7de55c193fadfa7278a5922b2f8202d58597cf535a"
+        },
         {
           "source_id": "FISRC-b57e758a492553d2",
           "source_url": "https://startupintros.com/orgs/aheadcomputing",
@@ -145,7 +186,7 @@
           "quote_hash": "967e0de6b28e54397e1a3bdc506ad1e22ac2aaa1238d56f6e2c3aaafaa7b7353"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

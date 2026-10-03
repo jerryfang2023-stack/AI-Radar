@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Wallonie Entreprendre 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Wallonie Entreprendre 官网称其在瓦隆大区投资数字、深科技和生命科学创新项目，覆盖从早期到产品上市阶段。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "瓦隆大区风险投资机构。",
+          "source_id": "PROFILE-INV-875a5f81d87b9a-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露阶段",
+          "value": "从最早期阶段覆盖至产品上市。",
+          "source_id": "PROFILE-INV-875a5f81d87b9a-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露领域",
+          "value": "数字、深科技及生命科学。",
+          "source_id": "PROFILE-INV-875a5f81d87b9a-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,32 @@
           "source_id": "FISRC-676054bb104d0746"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网介绍其为区域风险投资服务机构；不补入未核实的基金规模或组合数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Wallonie Entreprendre",
+          "url": "https://www.wallonie-entreprendre.be/en/expertises/venture-capital/?source_capture=2026-10-03&cycle=13-browser",
+          "source_id": "PROFILE-INV-875a5f81d87b9a-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-875a5f81d87b9a-1",
+          "source_url": "https://www.wallonie-entreprendre.be/en/expertises/venture-capital/?source_capture=2026-10-03&cycle=13-browser",
+          "source_title": "Venture Capital: partner for ambitious businesses | Wallonie Entreprendre",
+          "source_content_hash": "36698b98f9c0018b0fa93d3c7365064f6f0e11f20e7a660a7b66fda056b89f56",
+          "quote": "We invest from the earliest phases through to market launch, with a capital allocation tailored to the project’s maturity, to focus our resources where they create the most value",
+          "quote_hash": "5b6dcc38dae837908da541662529f3e6e976e32b0be0262097f3c80c46248f35"
+        },
         {
           "source_id": "FISRC-676054bb104d0746",
           "source_url": "https://verticalcompute.com/media/vertical-compute-raises-57m-to-solve-the-ai-memory-bottleneck-with-new-high-density-memory/",
@@ -161,7 +200,7 @@
           "quote_hash": "a46a718a8e39c04b8200634f52ca5ea254f4a24f386762ffcb4f8d8381da59ae"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -121,12 +121,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "典实资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "港交所披露材料确认上海典实资产管理有限公司曾担任深圳鑫昱私募基金管理人，并于2015年取得私募基金管理人登记编号 P1018856。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "港交所发行核查文件",
+          "value": "上海典实资产管理有限公司。",
+          "source_id": "PROFILE-INV-9d9b473083dd78-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "港交所发行核查文件",
+          "value": "私募投资基金管理人。",
+          "source_id": "PROFILE-INV-9d9b473083dd78-1"
+        },
+        {
+          "field": "registration",
+          "label": "港交所发行核查文件",
+          "value": "私募基金管理人登记编号 P1018856；披露登记时间为2015年。",
+          "source_id": "PROFILE-INV-9d9b473083dd78-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +149,24 @@
           "source_id": "FISRC-1ae72db61aa80327"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按公开发行核查文件记录管理人身份；该来源为2016年披露，不据此断言其当前基金数量或管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9d9b473083dd78-1",
+          "source_url": "https://www.hkexnews.hk/listedco/listconews/sehk/2016/0121/LTN20160121415_C.pdf?source_capture=2026-10-03&cycle=15",
+          "source_title": "港交所上市发行文件",
+          "source_content_hash": "cd23714d14710b596ab9c11c1fcbeb50eb4164a247b529fafcc1e8831372d4b5",
+          "quote": "深圳鑫昱的基金管理人上海典实资产管理有限公司",
+          "quote_hash": "33bfb1aee9e3e4c53418e21dc11febb8d50249208abf99aa20ff30ac84a895c1"
+        },
         {
           "source_id": "FISRC-1ae72db61aa80327",
           "source_url": "https://m.sohu.com/a/1070029599_120285954?scm=10001.325_13-325_13.0.0-0-0-0-0.5_1334",

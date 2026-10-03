@@ -179,12 +179,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "道彤投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "道彤投资官网称其专注大健康领域中早期投资及产业并购，重点关注医疗服务与医疗创新技术。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "机构官网",
+          "value": "大健康领域中早期投资及产业并购。",
+          "source_id": "PROFILE-INV-a92207fe996535-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构官网",
+          "value": "医疗服务及医疗创新技术。",
+          "source_id": "PROFILE-INV-a92207fe996535-1"
+        },
+        {
+          "field": "team_background",
+          "label": "机构官网",
+          "value": "官网称核心团队均出自医疗健康产业。",
+          "source_id": "PROFILE-INV-a92207fe996535-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -196,8 +211,40 @@
           "source_id": "FISRC-a6c76bf98227d92c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网还披露其核心团队来自医疗健康产业；档案不补写未核实的基金规模和组合数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "道彤投资",
+          "url": "https://daltonventure.cn/?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-INV-a92207fe996535-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a92207fe996535-1",
+          "source_url": "https://daltonventure.cn/?source_capture=2026-10-03&cycle=17",
+          "source_title": "道彤投资 - Dalton Venture",
+          "source_content_hash": "fa98197c11218b11b2bbe366e786fc7e95cc0854f74558d1d70cdb0ec94bde2f",
+          "quote": "道彤投资专注于大健康领域中早期投资及产业并购，重点关注医疗服务及医疗创新技术。",
+          "quote_hash": "0e772f3923ca5dac5e95ff58223e7265ecffef7ab3ad63a175a2f34d5517fb81"
+        },
+        {
+          "source_id": "PROFILE-INV-a92207fe996535-2",
+          "source_url": "https://daltonventure.cn/?source_capture=2026-10-03&cycle=17",
+          "source_title": "道彤投资 - Dalton Venture",
+          "source_content_hash": "fa98197c11218b11b2bbe366e786fc7e95cc0854f74558d1d70cdb0ec94bde2f",
+          "quote": "核心团队均出自医疗健康产业",
+          "quote_hash": "fdafb27ac3d4c063530b63c52ff855ad8e073592df896e95c03349971d6d239d"
+        },
         {
           "source_id": "FISRC-f9c8fdd671d3e193",
           "source_url": "https://elsewhere.news/zh/daltonventure/bai-for-sciencenews",

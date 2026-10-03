@@ -137,21 +137,80 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Saudi First Data 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Saudi First Data Center Fund 是受沙特资本市场管理局监管的私募基金。MIS 官网称该基金持有 Sahayeb 数据园区及数据中心，并称 MIS 已设立该基金。",
+      "facts": [
+        {
+          "field": "fund_type",
+          "label": "MIS 官网",
+          "value": "受沙特资本市场管理局监管的私募投资基金。",
+          "source_id": "PROFILE-INV-a869ba0a71ca03-1"
+        },
+        {
+          "field": "portfolio_asset",
+          "label": "MIS 官网",
+          "value": "Sahayeb Data Park 与 Sahayeb Data Centers 由该基金持有。",
+          "source_id": "PROFILE-INV-a869ba0a71ca03-1"
+        },
+        {
+          "field": "fund_sponsor",
+          "label": "MIS 官网",
+          "value": "MIS 官网称其已设立 Saudi First Data Center Fund。",
+          "source_id": "PROFILE-INV-a869ba0a71ca03-2"
+        },
+        {
+          "field": "project_scope",
+          "label": "MIS 官网",
+          "value": "数据中心项目首期合计容量24MW，可扩展至120MW。",
+          "source_id": "PROFILE-INV-a869ba0a71ca03-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-03-21",
+          "description": "MIS 官网披露 Sahayeb 数据中心由该基金持有；MIS 是该项目的战略技术伙伴。",
+          "source_id": "PROFILE-INV-a869ba0a71ca03-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：SambaNova · E轮 · 2026-02-24 · 本轮参投 · more than $350M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d47a3aba63bc33dc"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "档案只覆盖基金身份及数据中心项目；MIS 在项目中还承担技术伙伴角色，来源没有披露基金管理人或完整投资者结构。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "MIS 官网",
+          "value": "Saudi First Data Center Fund",
+          "url": "https://www.mis.com.sa/about-us/subsidiaries/sahayeb/?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-INV-a869ba0a71ca03-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a869ba0a71ca03-1",
+          "source_url": "https://www.mis.com.sa/about-us/subsidiaries/sahayeb/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Sahayeb - MIS",
+          "source_content_hash": "7ac3db8039056d1163e36013813a6b9fd4ef8ba16b1ef8bda84eaa72c8139c07",
+          "quote": "private investment fund regulated by the Capital Market Authority (CMA) in the Kingdom of Saudi Arabia",
+          "quote_hash": "0dbc643c9651050b55619e226e67ee01039ac5875d489605b0402e09a8dcc0ac"
+        },
+        {
+          "source_id": "PROFILE-INV-a869ba0a71ca03-2",
+          "source_url": "https://www.mis.com.sa/investor-relations/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Investor Relations - MIS",
+          "source_content_hash": "e6be2d72f7f026874a493e11875702515e4e71262df6d19199648f4df0ef77be",
+          "quote": "established the ‘Saudi First Data Center Fund.’",
+          "quote_hash": "fee8a0e6a296e57b57ca30c92fb28cb55758070aefb48955250401b14478ba8d"
+        },
         {
           "source_id": "FISRC-d47a3aba63bc33dc",
           "source_url": "https://sambanova.ai/press/sambanova-unveils-fastest-chip-for-agentic-ai-collaborates-with-intel-and-raises-350m",
@@ -161,7 +220,7 @@
           "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

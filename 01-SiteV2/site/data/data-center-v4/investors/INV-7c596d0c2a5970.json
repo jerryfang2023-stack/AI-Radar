@@ -234,12 +234,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "国寿股权 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "国寿股权官网称，国寿股权投资有限公司成立于2016年，是中国人寿旗下专业化私募股权投资平台及医疗健康产业投资核心平台。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网披露名称",
+          "value": "国寿股权投资有限公司。",
+          "source_id": "PROFILE-INV-7c596d0c2a5970-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网披露成立时间",
+          "value": "2016年6月。",
+          "source_id": "PROFILE-INV-7c596d0c2a5970-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "官网披露的母公司",
+          "value": "中国人寿。",
+          "source_id": "PROFILE-INV-7c596d0c2a5970-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露方向",
+          "value": "以医疗健康产业投资为核心，组合覆盖生命科学、医疗科技、医疗服务及数字医疗。",
+          "source_id": "PROFILE-INV-7c596d0c2a5970-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -255,8 +276,40 @@
           "source_id": "FISRC-137a48f19e1119b4"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网完整名称及母子公司关系建档；投资方向概括医疗健康与官网列出的投资组合板块。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "关于我们",
+          "value": "国寿股权投资有限公司",
+          "url": "https://www.chinalifepe.com/?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7c596d0c2a5970-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7c596d0c2a5970-1",
+          "source_url": "https://www.chinalifepe.com/?source_capture=2026-10-03&cycle=12",
+          "source_title": "国寿股权",
+          "source_content_hash": "67230fd27bd288f452b30c788a05f1a1d5d879feb18ec3063c77aef8f4460b4f",
+          "quote": "国寿股权投资有限公司成立于2016年6月，注册在上海自贸区，是中国人寿旗下的专业化私募股权投资平台。",
+          "quote_hash": "11c90c0efe15f72ef7a256fa94eaf79ad2ca5a7eeeb267e77d03446c2445613b"
+        },
+        {
+          "source_id": "PROFILE-INV-7c596d0c2a5970-2",
+          "source_url": "https://www.chinalifepe.com/?source_capture=2026-10-03&cycle=12",
+          "source_title": "国寿股权",
+          "source_content_hash": "67230fd27bd288f452b30c788a05f1a1d5d879feb18ec3063c77aef8f4460b4f",
+          "quote": "国寿股权投资有限公司是中国人寿旗下的专业化私募股权投资机构， 是中国人寿医疗健康产业投资的核心平台。",
+          "quote_hash": "4f83b00234034e31f6691fed97d01507312ef33950f155e0a73a4529d26dddc9"
+        },
         {
           "source_id": "FISRC-5dbca4d3b6550c7f",
           "source_url": "https://www.xtalpi.com/%E6%99%B6%E6%B3%B0%E7%A7%91%E6%8A%80%E5%8F%82%E4%B8%8E%E8%80%80%E9%80%9F%E7%A7%91%E6%8A%80%E8%B6%852%E4%BA%BF%E5%85%83a%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8Cai%E5%99%A8%E5%AE%98%E8%8A%AF%E7%89%87/",
@@ -282,7 +335,7 @@
           "quote_hash": "dfb02baffe73759e76aa1351faf57ba4806f2f75ff5d6849ec6b8bdaaf6789b1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

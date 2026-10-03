@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华强资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "华强资本官网称其于2015年设立，是专注早期风险投资的创投机构，关注高科技产业链及多个前沿产业。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网披露设立时间",
+          "value": "2015年。",
+          "source_id": "PROFILE-INV-81104e6dbdd462-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "早期风险投资机构。",
+          "source_id": "PROFILE-INV-81104e6dbdd462-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露方向",
+          "value": "算力算法、机器人、低空经济、商业航空航天、新材料、先进制造、半导体及新能源汽车。",
+          "source_id": "PROFILE-INV-81104e6dbdd462-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +166,40 @@
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网稳定的机构定位及投资方向建档，不采纳可能变化的管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "关于华强资本",
+          "value": "华强资本",
+          "url": "https://www.huaqiangcapital.com/?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-81104e6dbdd462-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-81104e6dbdd462-1",
+          "source_url": "https://www.huaqiangcapital.com/?source_capture=2026-10-03&cycle=12",
+          "source_title": "华强资本",
+          "source_content_hash": "415b17eb85e49bc92b91e694b98ae4d986dc9596df3b9db943ccb62692a47f00",
+          "quote": "华强资本于2015年设立，是一家专注于早期风险投资的创投机构",
+          "quote_hash": "d04b57b4cb1ffbc4fb63a45ae1a11082571f8c753bfe07669d4894c1c16cdeec"
+        },
+        {
+          "source_id": "PROFILE-INV-81104e6dbdd462-2",
+          "source_url": "https://www.huaqiangcapital.com/?source_capture=2026-10-03&cycle=12",
+          "source_title": "华强资本",
+          "source_content_hash": "415b17eb85e49bc92b91e694b98ae4d986dc9596df3b9db943ccb62692a47f00",
+          "quote": "重点聚焦算力算法、机器人、低空经济、商业航空航天、新材料、先进制造、半导体、新能源汽车等前沿赛道。",
+          "quote_hash": "eb8edf22af1cbc3e94a96d939f99fbbec78ebab42d645778d1165a3fc6c4ce63"
+        },
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",

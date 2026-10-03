@@ -245,12 +245,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "EQT 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "EQT 是全球私募市场投资机构，业务覆盖私募资本、基础设施、房地产和二级市场。其欧洲及北美私募资本业务涵盖早期科技投资至大型并购。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "EQT 官网",
+          "value": "全球私募市场投资机构。",
+          "source_id": "PROFILE-INV-aab58816df1f6a-1"
+        },
+        {
+          "field": "business_segments",
+          "label": "EQT 官网",
+          "value": "私募资本、基础设施、房地产与二级市场。",
+          "source_id": "PROFILE-INV-aab58816df1f6a-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "EQT 官网",
+          "value": "欧洲及北美私募资本关注医疗、科技、工业科技和服务，并覆盖早期投资至大型并购。",
+          "source_id": "PROFILE-INV-aab58816df1f6a-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -266,8 +281,48 @@
           "source_id": "FISRC-7e709202ce99cc8e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "业务范围分别按集团介绍和 Private Capital 业务页面整理；不把集团旗下单一基金策略概括为全集团策略。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "EQT",
+          "url": "https://eqtgroup.com/about?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-INV-aab58816df1f6a-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-aab58816df1f6a-1",
+          "source_url": "https://eqtgroup.com/about?source_capture=2026-10-03&cycle=17",
+          "source_title": "About us | EQT",
+          "source_content_hash": "6d86276db19149b9f557bbd95125c8a11ea314b13852d41ccd8d02bb619ccbe8",
+          "quote": "A global private markets firm that builds and invests across Private Capital, Infrastructure, Real Estate and Secondaries.",
+          "quote_hash": "9e68c5780e30d7c92dab87f0f7a44bc5e91bafca53ae739569abfb851836c317"
+        },
+        {
+          "source_id": "PROFILE-INV-aab58816df1f6a-2",
+          "source_url": "https://eqtgroup.com/private-capital?source_capture=2026-10-03&cycle=17",
+          "source_title": "From Startups to Market Leaders | EQT",
+          "source_content_hash": "48342a72d6754c84cbd762878d8060f3bb5bcc01114b05846c435afd7593f395",
+          "quote": "invests in high-quality companies in healthcare, technology, industrial technology, and services.",
+          "quote_hash": "8e10a04c3042af66376a58b72261d748a70f54a590a550070b5eb6b229c16c5c"
+        },
+        {
+          "source_id": "PROFILE-INV-aab58816df1f6a-3",
+          "source_url": "https://eqtgroup.com/private-capital?source_capture=2026-10-03&cycle=17",
+          "source_title": "From Startups to Market Leaders | EQT",
+          "source_content_hash": "48342a72d6754c84cbd762878d8060f3bb5bcc01114b05846c435afd7593f395",
+          "quote": "investing from early-stage ventures to large-cap buyouts.",
+          "quote_hash": "754903a415d7c2faa33f7b8866636a6da7604aa4626078aac5c0f6579cda0376"
+        },
         {
           "source_id": "FISRC-3511f7baf76701e3",
           "source_url": "https://www.flowengineering.com/blog/series-b-press-release",
@@ -293,7 +348,7 @@
           "quote_hash": "0e18ef143df443410be7bd64c5f3d44d18d83e7347e96dfa423d4f8a621c811a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

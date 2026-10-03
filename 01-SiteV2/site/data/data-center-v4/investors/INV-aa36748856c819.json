@@ -138,21 +138,66 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "吴中融玥 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "吴中融玥对应苏州吴中融玥投资管理有限公司。上市公司重组披露确认其为基金管理人，苏州市公共资源交易平台记录了其管理的吴中经开区创业投资引导基金对外转让被投企业股权。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "巨潮资讯网",
+          "value": "苏州吴中融玥投资管理有限公司，统一社会信用代码 91320506321311096F。",
+          "source_id": "PROFILE-INV-aa36748856c819-1"
+        },
+        {
+          "field": "manager_role",
+          "label": "巨潮资讯网",
+          "value": "为天凯汇达的基金管理人；披露成立于2014年10月24日。",
+          "source_id": "PROFILE-INV-aa36748856c819-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "苏州市公共资源交易中心",
+          "value": "其担任管理人的苏州吴中经济技术开发区创业投资引导基金决策转让苏州拍拍淘1.39%股权。",
+          "source_id": "PROFILE-INV-aa36748856c819-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2019-01-23",
+          "description": "受托管理的创业投资引导基金决策公开转让苏州拍拍淘1.39%股权。",
+          "source_id": "PROFILE-INV-aa36748856c819-2"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 本轮参投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fecad8ccb9a84a39"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "区分基金管理人与其管理的引导基金：本档案仅确认管理人身份和一笔由基金持有股权的退出决策，不把基金资产或组合全部归为管理公司自有投资。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-aa36748856c819-1",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2020-03-23/1207390390.PDF?source_capture=2026-10-03&cycle=17",
+          "source_title": "上市公司重大资产重组报告书（草案） - 巨潮资讯网",
+          "source_content_hash": "4379a2eee16899148003eee6e4f01c77be75769bf17a4a12533279627d2670bf",
+          "quote": "苏州吴中融玥投资管理有限公司（以下简称“融玥投资”）为天凯汇达的基金管理人",
+          "quote_hash": "3c685e0fbe8d01f96623426febca1c4a807112b76cf2722bb84dcea1a9fca52d"
+        },
+        {
+          "source_id": "PROFILE-INV-aa36748856c819-2",
+          "source_url": "https://www.szzyjy.com.cn/jyxx/003006/003006001/20190827/008f27e3-a048-474b-8bc9-f9cbbeec4b61.html?source_capture=2026-10-03&cycle=17",
+          "source_title": "苏州市公共资源交易平台",
+          "source_content_hash": "8b14f4c06644c632f20f6442990a278b8d7e7af55eb039a1f46a0d9bcfd6350d",
+          "quote": "通过其管理人苏州吴中融玥投资管理有限公司董事会决议同意公开转让苏州拍拍淘信息技术有限公司1.39%股权。",
+          "quote_hash": "f2d36be3992856cc55d2b8fd28c631b0cab2ad41912a854633cfbcd0f6d886db"
+        },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
           "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",

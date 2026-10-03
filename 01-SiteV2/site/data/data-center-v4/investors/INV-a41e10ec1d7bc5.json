@@ -179,12 +179,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "基石资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "基石资本官网将品牌主体列为基石资产管理股份有限公司，披露其资产管理覆盖天使、VC、PE、并购和定向增发等类型，投资阶段覆盖企业全生命周期。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "机构官网",
+          "value": "基石资产管理股份有限公司，品牌名“基石资本”。",
+          "source_id": "PROFILE-INV-a41e10ec1d7bc5-1"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "机构官网",
+          "value": "管理资产涵盖天使、VC、PE、并购、定向增发等类型，覆盖企业全生命周期。",
+          "source_id": "PROFILE-INV-a41e10ec1d7bc5-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构官网",
+          "value": "官网介绍其投资硬科技、新兴产业、生命科学与健康等领域。",
+          "source_id": "PROFILE-INV-a41e10ec1d7bc5-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -196,8 +211,40 @@
           "source_id": "FISRC-b78c44b13620e61a"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "名称按官网自述归一为基石资产管理股份有限公司；规模及策略以本次核验的官网页面为准。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "基石资本",
+          "url": "https://stonevc.com/aboutus/?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a41e10ec1d7bc5-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a41e10ec1d7bc5-1",
+          "source_url": "https://stonevc.com/aboutus/?source_capture=2026-10-03&cycle=16",
+          "source_title": "基石资产管理股份有限公司",
+          "source_content_hash": "45d14bce59be4423976a9474001c191c5d414ace27c77914826f816fbc474920",
+          "quote": "基石资本累计资产管理规模逾900亿元，管理资产涵盖天使、VC、PE、并购、定向增发等类型，投资阶段覆盖企业全生命周期。",
+          "quote_hash": "409d370ab62beb880639032ccd1ab2465ff9af1dc62c3a93b42f4326a19aaf4e"
+        },
+        {
+          "source_id": "PROFILE-INV-a41e10ec1d7bc5-2",
+          "source_url": "https://stonevc.com/TheScopeOfTheBusiness/index.aspx?source_capture=2026-10-03&cycle=16",
+          "source_title": "基石资产管理股份有限公司",
+          "source_content_hash": "1f9c8f4a96f5b4cc3c47c7a1556e9c7eed4074efe4db788f42897fced146aa06",
+          "quote": "基石资本通过向创业期企业进行风险投资",
+          "quote_hash": "d25b19931b9860c8c3c35d704450d85daa8c916edbd2d32cea316a8693a66f7d"
+        },
         {
           "source_id": "FISRC-a4dbd49c64cb5834",
           "source_url": "https://news.pedaily.cn/202607/565779.shtml",
@@ -215,7 +262,7 @@
           "quote_hash": "12f82e9a1f119cece3a23b5436524e3e6167f8f266fbd56817a968d005dde16f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

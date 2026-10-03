@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "India Quotient 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "India Quotient 是印度早期风险投资机构，官网称其自纸面阶段开始投资，并覆盖印度及全球 SaaS、B2B 市场、金融科技、消费等方向。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "机构官网",
+          "value": "可在项目处于纸面构想阶段开始投资。",
+          "source_id": "PROFILE-INV-a89b4de125cc49-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构官网",
+          "value": "印度及全球 SaaS、B2B市场、社交媒体、金融科技、品牌与消费。",
+          "source_id": "PROFILE-INV-a89b4de125cc49-3"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "机构官网",
+          "value": "官网举例称曾投资 ShareChat、Sugar、Lendingkart、Vyapar、Dhiwise 与 Frnd。",
+          "source_id": "PROFILE-INV-a89b4de125cc49-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,48 @@
           "source_id": "FISRC-811e30c84ed4cc4b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资阶段、赛道和案例范围采用机构官网自述；未推断基金规模或单笔投资金额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "India Quotient",
+          "url": "https://www.indiaquotient.in/?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-INV-a89b4de125cc49-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a89b4de125cc49-1",
+          "source_url": "https://www.indiaquotient.in/?source_capture=2026-10-03&cycle=17",
+          "source_title": "IndiaQuotient - Investment Firm | Funding Indian Startups",
+          "source_content_hash": "73adf2088d4b746a15b8f7b7f0f08e9282f60d03855462724a7828e2e4d8594d",
+          "quote": "We invested in Sharechat when it was just a thought on paper",
+          "quote_hash": "06266b16c6a20c2bf2194b1a75f1bb25619419a192f055f44b96bed11d83c5ee"
+        },
+        {
+          "source_id": "PROFILE-INV-a89b4de125cc49-2",
+          "source_url": "https://www.indiaquotient.in/?source_capture=2026-10-03&cycle=17",
+          "source_title": "IndiaQuotient - Investment Firm | Funding Indian Startups",
+          "source_content_hash": "73adf2088d4b746a15b8f7b7f0f08e9282f60d03855462724a7828e2e4d8594d",
+          "quote": "We invest at paper stage with as much conviction as we have when you have a handful of customers.",
+          "quote_hash": "9b3fee161574d0b3710e040877f15c4c29141436c8a77959bb5112564e91b1b5"
+        },
+        {
+          "source_id": "PROFILE-INV-a89b4de125cc49-3",
+          "source_url": "https://www.indiaquotient.in/?source_capture=2026-10-03&cycle=17",
+          "source_title": "IndiaQuotient - Investment Firm | Funding Indian Startups",
+          "source_content_hash": "73adf2088d4b746a15b8f7b7f0f08e9282f60d03855462724a7828e2e4d8594d",
+          "quote": "India and Global SaaS B2B Marketplaces Social / Media Fintech Brands Consumer",
+          "quote_hash": "f817541d55fb7da6c5660e00004e7aabf86d63e47c448a50577de0b7776a2ea2"
+        },
         {
           "source_id": "FISRC-811e30c84ed4cc4b",
           "source_url": "https://completeaitraining.com/news/reodev-raises-113-million-in-funding-led-by-elevation/",
@@ -161,7 +216,7 @@
           "quote_hash": "9b7ec9d14471f6734b03410506181b369c81f81d522b609e4e956325f99349e1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

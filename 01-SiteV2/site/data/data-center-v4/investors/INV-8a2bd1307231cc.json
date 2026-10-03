@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "东坡国投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中建铝官网新闻将眉山东坡国有资本投资运营集团有限公司称为政府平台公司，并记录双方业务洽谈。",
+      "facts": [
+        {
+          "field": "documented_identity",
+          "label": "合作方公告",
+          "value": "眉山市东坡国有资本投资运营集团有限公司被对方官网称为政府平台公司。",
+          "source_id": "PROFILE-INV-8a2bd1307231cc-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-6acf14b7549af590"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅核验该国有资本运营集团的机构身份和对外业务交流；来源未披露基金管理、投资策略或项目组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "合作方公告",
+          "value": "眉山东坡国有资本投资运营集团有限公司",
+          "url": "https://ccanm.cscec.com/xwzx/gskx/202504/3864705.html?source_capture=2026-10-03&cycle=13-alt1",
+          "source_id": "PROFILE-INV-8a2bd1307231cc-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-8a2bd1307231cc-1",
+          "source_url": "https://ccanm.cscec.com/xwzx/gskx/202504/3864705.html?source_capture=2026-10-03&cycle=13-alt1",
+          "source_title": "罗爱华会见武侯国投、东坡国投客人",
+          "source_content_hash": "2c462e7c139b0e66dbec8f2d0cfe02d73f8b5a918644ae59f5e4ee4131ebbcd1",
+          "quote": "成都市武侯国有资本投资运营集团有限公司和眉山市东坡国有资本投资运营集团有限公司负责人，与两家政府平台公司交流业务洽商合作。",
+          "quote_hash": "473b3694639b1efe85d141b38985159a159a2a8b05fe5a4c6440a6a06f07996b"
+        },
         {
           "source_id": "FISRC-6acf14b7549af590",
           "source_url": "https://www.36kr.com/p/3974730056757511",
@@ -161,7 +188,7 @@
           "quote_hash": "d5864d9bcf14e6d4004c00aac6bc2d740768edf07a86434606e38b28ecc38d37"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

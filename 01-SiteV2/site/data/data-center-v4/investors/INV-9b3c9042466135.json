@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Gigascale 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Gigascale Capital 官网公告其首支2.5亿美元基金将支持重建实体经济、产生气候影响的创业公司；文章还披露此前已投资25家以上企业。",
+      "facts": [
+        {
+          "field": "fundraising",
+          "label": "基金公告",
+          "value": "Fund I 规模为 2.5 亿美元。",
+          "source_id": "PROFILE-INV-9b3c9042466135-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "基金公告",
+          "value": "支持重建实体经济并产生气候影响的创业公司。",
+          "source_id": "PROFILE-INV-9b3c9042466135-1"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "基金公告",
+          "value": "公告称过去三年已投资25家以上企业。",
+          "source_id": "PROFILE-INV-9b3c9042466135-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-62071134d28f47b9"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按基金公告记录 Fund I 的目标和公告时的投资组合规模，不将历史规模当作当前余额。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金公告",
+          "value": "Gigascale Capital",
+          "url": "https://gigascale.com/insights/gigascale-fund-i-physical-economy/?source_capture=2026-10-03&cycle=14",
+          "source_id": "PROFILE-INV-9b3c9042466135-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9b3c9042466135-1",
+          "source_url": "https://gigascale.com/insights/gigascale-fund-i-physical-economy/?source_capture=2026-10-03&cycle=14",
+          "source_title": "Backing Founders Rebuilding the Physical Economy - Gigascale Capital",
+          "source_content_hash": "2874298ed948b47e119582f04e20fd756f30907f4a3bb11f1cd2b28fd86889da",
+          "quote": "Today, we’re announcing Gigascale Capital Fund I, a $250 million fund to back founders rebuilding the physical economy for climate impact.",
+          "quote_hash": "4f4805c2f64e2f4d7d0abc823d7f13b1b77237b8aa3b51e14bd075bd28908cef"
+        },
+        {
+          "source_id": "PROFILE-INV-9b3c9042466135-2",
+          "source_url": "https://gigascale.com/insights/gigascale-fund-i-physical-economy/?source_capture=2026-10-03&cycle=14",
+          "source_title": "Backing Founders Rebuilding the Physical Economy - Gigascale Capital",
+          "source_content_hash": "2874298ed948b47e119582f04e20fd756f30907f4a3bb11f1cd2b28fd86889da",
+          "quote": "Over the last three years, we’ve invested in more than 25 companies",
+          "quote_hash": "5c2a82feb5da45db71775b8160451ba30901f8c0078e1af87cc47ddaea5d9848"
+        },
         {
           "source_id": "FISRC-62071134d28f47b9",
           "source_url": "https://www.fractile.ai/news/fractile-raises-220m-to-build-the-next-generation-of-inference-hardware",
@@ -161,7 +208,7 @@
           "quote_hash": "43b18a1ac783a5b2aecda37d5dfe5f4e674fa56f7f1ab21b2b165fded9ad59bb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

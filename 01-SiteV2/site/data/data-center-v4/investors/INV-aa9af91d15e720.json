@@ -299,12 +299,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Gradient 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Gradient 是专注人工智能的早期风险投资机构。官网公布其第五支基金规模为2.2亿美元，并说明机构最初与 Google 合作创立，2026年以独立机构身份推出第五支基金。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "Gradient 官网",
+          "value": "专注人工智能的早期风险投资。",
+          "source_id": "PROFILE-INV-aa9af91d15e720-1"
+        },
+        {
+          "field": "fund_activity",
+          "label": "Gradient 官网",
+          "value": "2026年推出2.2亿美元第五支基金，并称该基金超额认购。",
+          "source_id": "PROFILE-INV-aa9af91d15e720-2"
+        },
+        {
+          "field": "founding_context",
+          "label": "Gradient 官网",
+          "value": "最初与 Google 合作创立；官网当前称其已作为独立机构运营。",
+          "source_id": "PROFILE-INV-aa9af91d15e720-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -320,8 +335,48 @@
           "source_id": "FISRC-df6a9c9a32146320"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "投资方向、成立背景和基金规模据 Gradient 官网披露；成立合作关系不等于当前由 Google 控股。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Gradient",
+          "url": "https://gradient.com/blog/posts/fund-5/?source_capture=2026-10-03&cycle=17",
+          "source_id": "PROFILE-INV-aa9af91d15e720-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-aa9af91d15e720-1",
+          "source_url": "https://gradient.com/blog/posts/fund-5/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Ten years of AI investing, and just getting started: Introducing Gradient’s $220 million Fund 5 | Gradient Ventures",
+          "source_content_hash": "c34a169a0127908580bbf89fc6df9359f669e840eda49c91052baa1bff6df0f7",
+          "quote": "Gradient was built to be an early-stage venture firm focused exclusively on AI",
+          "quote_hash": "77c2e66a7773acb4c2a523427728524f879c0854cd020441382d669267e14050"
+        },
+        {
+          "source_id": "PROFILE-INV-aa9af91d15e720-2",
+          "source_url": "https://gradient.com/blog/posts/fund-5/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Ten years of AI investing, and just getting started: Introducing Gradient’s $220 million Fund 5 | Gradient Ventures",
+          "source_content_hash": "c34a169a0127908580bbf89fc6df9359f669e840eda49c91052baa1bff6df0f7",
+          "quote": "officially announcing the launch of our oversubscribed $220 million Fund 5, and as a fully independent firm.",
+          "quote_hash": "cf206ce9d42d04cb7d6b362d12566a1b050e6da8a25349a0cc3047298a767ad3"
+        },
+        {
+          "source_id": "PROFILE-INV-aa9af91d15e720-3",
+          "source_url": "https://gradient.com/blog/posts/fund-5/?source_capture=2026-10-03&cycle=17",
+          "source_title": "Ten years of AI investing, and just getting started: Introducing Gradient’s $220 million Fund 5 | Gradient Ventures",
+          "source_content_hash": "c34a169a0127908580bbf89fc6df9359f669e840eda49c91052baa1bff6df0f7",
+          "quote": "Gradient was founded in close partnership with Google",
+          "quote_hash": "2d6997f5047bc4fde4c0c85c643ca5ee737ccc296036aecef2f8c64be3635516"
+        },
         {
           "source_id": "FISRC-b6920185a5e7fa72",
           "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
@@ -347,7 +402,7 @@
           "quote_hash": "644554c16d4a0c3b35826e809f99d6cf04e8c4eaabff4be2a762bdabb02ecfe7"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

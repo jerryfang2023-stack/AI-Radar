@@ -170,12 +170,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BOND 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-04；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "BOND 官网合伙人页面称 Mary Meeker 是普通合伙人，专注高增长科技公司投资，并列出其支持的组合公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网合伙人页",
+          "value": "科技风险投资机构。",
+          "source_id": "PROFILE-INV-9f94066b800723-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网合伙人页",
+          "value": "高增长科技公司。",
+          "source_id": "PROFILE-INV-9f94066b800723-1"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "官网合伙人页",
+          "value": "页面列出 Applied Intuition、Canva、Checkr 等由 Mary Meeker 支持的 BOND 投资。",
+          "source_id": "PROFILE-INV-9f94066b800723-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -183,8 +198,40 @@
           "source_id": "FISRC-7bbfa0b0946953ff"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "来源为 BOND 官方合伙人页；组合示例严格限于该页面列出的项目。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "BOND",
+          "url": "https://www.bondcap.com/partners/mary-meeker/?source_capture=2026-10-03&cycle=15",
+          "source_id": "PROFILE-INV-9f94066b800723-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-9f94066b800723-1",
+          "source_url": "https://www.bondcap.com/partners/mary-meeker/?source_capture=2026-10-03&cycle=15",
+          "source_title": "Mary Meeker | BOND",
+          "source_content_hash": "9cd74c2f5bec58fc12e56ed86dc3ed617999856b4a765846772b655b5972e11c",
+          "quote": "Mary Meeker is a general partner at BOND and focuses on investments in high-growth technology companies.",
+          "quote_hash": "3c04687c0f8ed1a9b0cd39e5df25f865874ee9ee4a62d0d37dbb76339d8c703d"
+        },
+        {
+          "source_id": "PROFILE-INV-9f94066b800723-2",
+          "source_url": "https://www.bondcap.com/partners/mary-meeker/?source_capture=2026-10-03&cycle=15",
+          "source_title": "Mary Meeker | BOND",
+          "source_content_hash": "9cd74c2f5bec58fc12e56ed86dc3ed617999856b4a765846772b655b5972e11c",
+          "quote": "She has supported BOND’s investments in Applied Intuition, Canva, Checkr, CLEAR, Hipcamp, Ironclad, Material Bank, Multiverse, On Running, Outschool and Seso.",
+          "quote_hash": "0f12869b6512fe57c638a4e21e3032f9be0248d9757e2a071b716fbf8b57b154"
+        },
         {
           "source_id": "FISRC-7bbfa0b0946953ff",
           "source_url": "https://elevenlabs.io/blog/series-d",
@@ -194,7 +241,7 @@
           "quote_hash": "13ff7eb47a2d19dad92780954659859c4881c8d955857e73b2d922a07d90ed99"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

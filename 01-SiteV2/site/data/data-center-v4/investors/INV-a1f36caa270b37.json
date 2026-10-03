@@ -137,12 +137,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "大米资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "大米创投官网将主体名称写为深圳市大米成长私募创业投资基金有限公司，称其于2014年底成立，投资早中期成长企业，聚焦智能制造、人工智能和工业4.0等硬科技。",
+      "facts": [
+        {
+          "field": "legal_entity",
+          "label": "机构官网",
+          "value": "深圳市大米成长私募创业投资基金有限公司，官网自称“大米创投”。",
+          "source_id": "PROFILE-INV-a1f36caa270b37-1"
+        },
+        {
+          "field": "founded",
+          "label": "机构官网",
+          "value": "2014年底成立。",
+          "source_id": "PROFILE-INV-a1f36caa270b37-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "机构官网",
+          "value": "早中期成长型企业；智能制造、人工智能、工业4.0等硬科技。",
+          "source_id": "PROFILE-INV-a1f36caa270b37-2"
+        },
+        {
+          "field": "portfolio_activity",
+          "label": "机构官网",
+          "value": "官网称已培育禾赛科技、云鲸智能等项目。",
+          "source_id": "PROFILE-INV-a1f36caa270b37-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +171,40 @@
           "source_id": "FISRC-10c7fcf01fad4e2f"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以官网披露为准；队列简称“大米资本”对应官网自称“大米创投”，档案不推断其当前管理规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "大米创投",
+          "url": "https://www.damivc.com/gydm.html?source_capture=2026-10-03&cycle=16",
+          "source_id": "PROFILE-INV-a1f36caa270b37-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-a1f36caa270b37-1",
+          "source_url": "https://www.damivc.com/gydm.html?source_capture=2026-10-03&cycle=16",
+          "source_title": "大米创投",
+          "source_content_hash": "a0dd821f422617bbd0a6d66c306872a396effae9120d8b6bd4315606a18b497e",
+          "quote": "深圳市大米成长私募创业投资基金有限公司（以下简称为“大米创投”或“公司”）成立于2014年底，是一家专注于早中期成长型企业投资的私募股权投资机构",
+          "quote_hash": "57c1db78366d2b00198778b8f0607f4d160369f4e42789a82dea9aa8583abb06"
+        },
+        {
+          "source_id": "PROFILE-INV-a1f36caa270b37-2",
+          "source_url": "https://www.damivc.com/gydm.html?source_capture=2026-10-03&cycle=16",
+          "source_title": "大米创投",
+          "source_content_hash": "a0dd821f422617bbd0a6d66c306872a396effae9120d8b6bd4315606a18b497e",
+          "quote": "大米创投专注于智能制造、人工智能、工业4.0等硬科技领域",
+          "quote_hash": "08b35f1d4c5e429d8edb826cc1ab53f2e8fabc95663eeecc0238accca7b65fa9"
+        },
         {
           "source_id": "FISRC-10c7fcf01fad4e2f",
           "source_url": "https://finance.sina.com.cn/cj/2026-03-10/doc-inhqnmhx6407658.shtml",

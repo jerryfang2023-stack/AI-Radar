@@ -138,12 +138,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "江西国控 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-06；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "江西国控官网将集团定位为省级国有资本投资运营平台，承担产业投资和现代产业引导基金运行职能。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示名称",
+          "value": "江西省国有资本运营控股集团有限公司。",
+          "source_id": "PROFILE-INV-76784633e90535-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "省级国有资本投资运营平台。",
+          "source_id": "PROFILE-INV-76784633e90535-2"
+        },
+        {
+          "field": "investment_business",
+          "label": "官网披露的职能",
+          "value": "承担全省产业投资及现代产业引导基金运行职能。",
+          "source_id": "PROFILE-INV-76784633e90535-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +166,40 @@
           "source_id": "FISRC-8c073d38e1f34758"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按官网完整名称“江西省国有资本运营控股集团有限公司”建档。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "集团简介",
+          "value": "江西省国有资本运营控股集团有限公司",
+          "url": "https://www.jxgkjt.com/channel/aboutUs?channelId=85297733831493634&source_capture=2026-10-03&cycle=11",
+          "source_id": "PROFILE-INV-76784633e90535-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-76784633e90535-1",
+          "source_url": "https://www.jxgkjt.com/channel/aboutUs?channelId=85297733831493634&source_capture=2026-10-03&cycle=11",
+          "source_title": "关于我们 - 江西省国有资本运营控股集团有限公司",
+          "source_content_hash": "a0f6a64bb00ecd90193d5e519f799111a553726c57d64c1210e7d167192c910d",
+          "quote": "江西省国有资本运营控股集团（下称“集团”）有限公司成立于2004年5月，前身为江西省外贸资产经营控股有限公司，2022年3月更为现名。",
+          "quote_hash": "02aaafc4a1ca9849c4bb15f51cd107795f5d3899ba204a81c32259e923881f86"
+        },
+        {
+          "source_id": "PROFILE-INV-76784633e90535-2",
+          "source_url": "https://www.jxgkjt.com/channel/aboutUs?channelId=85297733831493634&source_capture=2026-10-03&cycle=11",
+          "source_title": "关于我们 - 江西省国有资本运营控股集团有限公司",
+          "source_content_hash": "a0f6a64bb00ecd90193d5e519f799111a553726c57d64c1210e7d167192c910d",
+          "quote": "是经江西省人民政府批准设立、省国资委履行出资人职责并授权经营的国有资本投资运营平台，定位为全省产业投资大平台和现代产业引导基金的运行主体，主营业务为投资与资产管理、资本市场服务、控股公司服务。",
+          "quote_hash": "e4f758274ee833b9529de8d367b2c31bd58ea457bc998509765dfb42abf9e929"
+        },
         {
           "source_id": "FISRC-8c073d38e1f34758",
           "source_url": "https://news.pedaily.cn/202607/565883.shtml",

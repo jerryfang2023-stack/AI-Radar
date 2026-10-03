@@ -153,25 +153,48 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Alphabet 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "GV官网称Alphabet是GV的唯一有限合伙人。此条记录Alphabet与风投平台的有限合伙人关系，不将Alphabet等同于GV的直接投资管理人。",
+      "facts": [
+        {
+          "field": "investment_relationship",
+          "label": "GV官网披露的关联关系",
+          "value": "Alphabet是GV的唯一有限合伙人；该来源未将Alphabet描述为GV的直接投资管理人。",
+          "source_id": "PROFILE-INV-7cba4d104aba24-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
           "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-05-12 · 本轮参投 · $2.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-618d95b339c7b308"
-        },
-        {
-          "description": "融资来源记录：Isomorphic Labs · B轮 · 2026-05-12 · 本轮参投 · $2.1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-82c9573ed9c6ba66"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "依据GV官网披露的唯一LP关系限定关联活动范围。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "GV关于我们",
+          "value": "Alphabet / GV",
+          "url": "https://www.gv.com/about?source_capture=2026-10-03&cycle=12",
+          "source_id": "PROFILE-INV-7cba4d104aba24-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-7cba4d104aba24-1",
+          "source_url": "https://www.gv.com/about?source_capture=2026-10-03&cycle=12",
+          "source_title": "GV - About GV",
+          "source_content_hash": "c02f78e618c41bfff5af019447f825766bde31fa59ee42fad6295dbcf737d1de",
+          "quote": "With Alphabet as our sole limited partner, we focus all our energy on meeting and supporting founders at every stage of company-building.",
+          "quote_hash": "3511bdf0fd8c3bd0df5a8305ce7ac0bb4f5e4b0ef7d3b6bb4f9e03abb263b87f"
+        },
         {
           "source_id": "FISRC-618d95b339c7b308",
           "source_url": "https://the-decoder.com/alphabets-isomorphic-labs-raises-2-1-billion-to-scale-ai-drug-discovery-toward-clinical-trials",
@@ -189,7 +212,7 @@
           "quote_hash": "1b640a409f06ea504baad640c89c1e625d0140d691925c8a5bbd87010adac0f6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
