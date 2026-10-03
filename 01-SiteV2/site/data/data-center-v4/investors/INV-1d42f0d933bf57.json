@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Social Leverage 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Social Leverage官网称其自2009年以来已与150余家创业公司合作。",
+      "facts": [
+        {
+          "field": "portfolio_activity",
+          "label": "官网披露的投资活动",
+          "value": "自2009年以来与150余家创业公司合作",
+          "source_id": "PROFILE-1d42f0d933bf57-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-f199e5c78b7a74fc"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构身份与组合活动均依据官网自述。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Social Leverage",
+          "url": "https://socialleverage.com/",
+          "source_id": "PROFILE-1d42f0d933bf57-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-1d42f0d933bf57-1",
+          "source_url": "https://socialleverage.com/",
+          "source_title": "Social Leverage | Seed Stage Venture Capital",
+          "source_content_hash": "7508ef209aa378ef2895c24e8b2c6d4a3f671d21486e136b5ce5ad267a2e3a9c",
+          "quote": "Since 2009, we've partnered with 150+ startups including Robinhood, beehiiv, Kustomer and Manscaped.",
+          "quote_hash": "0d2f6a3857de64f6384b4805892c20b9ed200579c5908f1bf964dc0b429eff19"
+        },
         {
           "source_id": "FISRC-f199e5c78b7a74fc",
           "source_url": "https://www.businesswire.com/news/home/20260929718646/en/Elio-Mortgage-Launches-with-%245.1-Million-in-Pre-Seed-Funding-to-Build-the-Mortgage-Company-for-the-AI-Era",
@@ -161,7 +188,7 @@
           "quote_hash": "23c340440a273e5ce0d38de436fe712e8ce8b7758802105842b40bfc06848e06"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

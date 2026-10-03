@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "HF0 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "HF0 官网将其描述为每期支持有限团队数量的创业项目。该页面没有披露具体投资法律主体或投资条件，本档案仅确认 HF0 品牌及项目支持活动。",
+      "facts": [
+        {
+          "field": "program_scope",
+          "value": "官网称同一时期仅支持 10 个团队。",
+          "label": "官网披露的项目范围",
+          "source_id": "PROFILE-10b35c18e21bf0-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-e06e94375ec64ac4"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "官网材料确认创业项目支持活动，但不足以核实其作为具体融资轮次直接投资人的法律身份。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "value": "HF0",
+          "source_id": "PROFILE-10b35c18e21bf0-1",
+          "kind": "website",
+          "label": "机构官网",
+          "url": "https://www.hf0.com/facts"
+        }
+      ],
       "sources": [
+        {
+          "source_title": "HF0 Facts",
+          "source_content_hash": "96de21aeef1dc9e0870e1ef8c2eb04aed3e4d7f5d27246c30b18bdf5ec5e51c1",
+          "source_id": "PROFILE-10b35c18e21bf0-1",
+          "source_url": "https://www.hf0.com/facts",
+          "quote": "We only back 10 teams at a time.",
+          "quote_hash": "fcd333274799be22747770746820da5b57b858a3bb010aeac0a3ee0d91e1586f"
+        },
         {
           "source_id": "FISRC-e06e94375ec64ac4",
           "source_url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises",
@@ -161,7 +188,7 @@
           "quote_hash": "45a149fa9ad18302f9a6fd3d22448739ab889df46bc959113d67970c7e1d5b51"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

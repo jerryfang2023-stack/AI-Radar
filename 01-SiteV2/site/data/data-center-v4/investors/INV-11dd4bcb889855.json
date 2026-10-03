@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Stata 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Stata Capital 官网称其使用自有资本进行投资，并介绍长期投资模式；档案将队列简称 Stata 对应到官网品牌 Stata Capital Partners，不扩展未披露的法律实体信息。",
+      "facts": [
+        {
+          "field": "investment_model",
+          "label": "来源核验",
+          "value": "Stata Capital 官网称其投资自有资本，不依赖典型 VC 基金周期。",
+          "source_id": "PROFILE-11dd4bcb889855-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,24 @@
           "source_id": "FISRC-71f6a0b77ac7d607"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Stata Capital 官网称其使用自有资本进行投资，并介绍长期投资模式；档案将队列简称 Stata 对应到官网品牌 Stata Capital Partners，不扩展未披露的法律实体信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-11dd4bcb889855-1",
+          "source_url": "https://www.statacapital.com/investments/",
+          "source_title": "Investments - Stata Capital",
+          "source_content_hash": "aa573d4b7d84ab54ce0126b07309c20c62262fb0d3ca18f8348736dc1e7260d0",
+          "quote": "Stata Capital invests its own capital and hence is not subject to the typical venture capital fund cycles, which enables us to think in and invest for the longer term.",
+          "quote_hash": "f1194006abe9d66b265895657ea28b2acb04b49f5863780e26f63845721d2916"
+        },
         {
           "source_id": "FISRC-71f6a0b77ac7d607",
           "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
@@ -161,7 +180,7 @@
           "quote_hash": "f069689efe7f2c1fd0553c3cadf3625892b2a08052c4a60f640d5452e377a76a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Audacious 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-09；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Audacious Ventures官网将其定位为创业公司的投资者，并介绍其面向被投团队提供支持。",
+      "facts": [
+        {
+          "field": "self_described_role",
+          "label": "官网自述定位",
+          "value": "面向创业公司的投资者",
+          "source_id": "PROFILE-14ebdcd5b0d718-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-c224adac23aa7c1e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅录入官网公开的机构定位，不推断基金规模或投资成绩。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Audacious Ventures",
+          "url": "https://www.audacious.co/",
+          "source_id": "PROFILE-14ebdcd5b0d718-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-14ebdcd5b0d718-1",
+          "source_url": "https://www.audacious.co/whyAudacious",
+          "source_title": "Audacious Ventures",
+          "source_content_hash": "c11f94e6fc76428d9763a7d6fec29e84e86f6a6d72a889412668ca97ce669204",
+          "quote": "We exist to be the most impactful investor on your cap table.",
+          "quote_hash": "d4aa0f1797ff9d38fb807d948b356f346eb61030201684e9dea83bd2d7448403"
+        },
         {
           "source_id": "FISRC-c224adac23aa7c1e",
           "source_url": "https://www.prnewswire.com/news-releases/lightfield-raises-47-million-series-a-to-build-the-crm-for-companies-that-run-on-agents-302874024.html",
@@ -161,7 +188,7 @@
           "quote_hash": "4984ad8ca3ed395614164d9fa67a7c87a60e728f5ea974ca383ac3d00efab0e8"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

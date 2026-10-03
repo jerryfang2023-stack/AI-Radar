@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "和基投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中国证监会 2025 年备案通知附件列出苏州和基投资有限公司及其申请全流通股份数；该记录核实队列简称对应的法律名称和历史股东身份，不扩展当前投资策略。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法律名称",
+          "value": "苏州和基投资有限公司。",
+          "source_id": "PROFILE-0643734ee462ef-1"
+        },
+        {
+          "field": "shareholder_evidence",
+          "label": "历史股东记录",
+          "value": "中国证监会备案附件列有 2,769,230 股申请全流通股份。",
+          "source_id": "PROFILE-0643734ee462ef-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +143,24 @@
           "source_id": "FISRC-ca5c9f62e4d3f2f3"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅核实法律名称与历史股东身份。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-0643734ee462ef-1",
+          "source_url": "https://www.csrc.gov.cn/csrc/c105984/c7591744/content.shtml",
+          "source_title": "关于南京普爱医疗设备股份有限公司境外发行上市及境内未上市股份“全流通”备案通知书_中国证券监督管理委员会",
+          "source_content_hash": "5058c0b8ae8622b477527c57b902bf8d0c652ad27a5db35c925c3c0d57d1a284",
+          "quote": "苏州和基投资有限公司 2,769,230",
+          "quote_hash": "b501b491203be7ed78a429363a146ca844278369be35508aaeee2a3545448fc5"
+        },
         {
           "source_id": "FISRC-ca5c9f62e4d3f2f3",
           "source_url": "https://news.pedaily.cn/202607/566303.shtml",
@@ -145,7 +170,7 @@
           "quote_hash": "d01745afa9c6e20c4cc12bc8727a4cae97c636ab9c0ea8ab0a087f06c6706b42"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

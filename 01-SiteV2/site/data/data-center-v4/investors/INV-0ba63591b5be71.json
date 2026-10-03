@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "The European Bank for Reconstruction and Development (EBRD) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "欧洲复兴开发银行官网称其提供定制金融产品、咨询与政策改革服务，为多个行业和经济体的项目提供支持。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "value": "定制金融产品、咨询及政策改革服务；面向多个行业和经济体的项目。",
+          "label": "官网披露的业务范围",
+          "source_id": "PROFILE-0ba63591b5be71-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-7e564fafd9f90842"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按 EBRD 官网的产品与服务介绍概括。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "value": "The European Bank for Reconstruction and Development (EBRD)",
+          "source_id": "PROFILE-0ba63591b5be71-1",
+          "kind": "website",
+          "label": "机构官网",
+          "url": "https://www.ebrd.com/home/what-we-do/products-and-services.html"
+        }
+      ],
       "sources": [
+        {
+          "source_title": "Products and services",
+          "source_content_hash": "5f5d601f0f11987ad53e98ec3646d46a1c11e6a0731cc8a76b93a5f703d9dd5a",
+          "source_id": "PROFILE-0ba63591b5be71-1",
+          "source_url": "https://www.ebrd.com/home/what-we-do/products-and-services.html",
+          "quote": "The European Bank for Reconstruction and Development (EBRD) offers a range of products and services. We provide tailored financial products, as well as advisory and policy reform services. In providing support for projects across dozens of business sectors and more than 40 economies , we draw on over three decades of expertise in our regions and align all of our operations with a strict and clear set of",
+          "quote_hash": "cf10cad4a89ea5d4cdd91c831ca31112040fbef6ba593c02073af241373a825e"
+        },
         {
           "source_id": "FISRC-7e564fafd9f90842",
           "source_url": "https://www.prnewswire.com/news-releases/preply-raises-150-million-to-shape-the-future-of-education-through-human-led-ai-enhanced-learning-302665890.html",
@@ -161,7 +188,7 @@
           "quote_hash": "26afa3762b4fde0fb22402c25b5e88dd8ed9a50d7365113a5c0b121168f15e20"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

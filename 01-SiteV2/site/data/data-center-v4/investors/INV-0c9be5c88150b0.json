@@ -121,12 +121,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Terrain 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Terrain 官网自述为早期投资机构，并列出其投资项目；本档案仅记录官网可核实的定位。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "来源核验",
+          "value": "Terrain 官网将其描述为早期投资机构。",
+          "source_id": "PROFILE-0c9be5c88150b0-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +137,24 @@
           "source_id": "FISRC-926b8b12b411de6f"
         }
       ],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Terrain 官网自述为早期投资机构，并列出其投资项目；本档案仅记录官网可核实的定位。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-0c9be5c88150b0-1",
+          "source_url": "https://www.terrain.com/investments",
+          "source_title": "Investments | Terrain",
+          "source_content_hash": "2b6c2ea1e184046926971c472246450690addcfc9a3a07c78e5b3f7a89345732",
+          "quote": "Terrain is an early-stage investment firm.",
+          "quote_hash": "bf411a1349f0a73cc476f38cda1a20d88224437c050ab2189666dafaa5d8c005"
+        },
         {
           "source_id": "FISRC-926b8b12b411de6f",
           "source_url": "https://techcrunch.com/2026/09/15/early-anthropic-hire-former-metr-coo-have-found-a-way-to-rein-in-rogue-ai-agents",
@@ -145,7 +164,7 @@
           "quote_hash": "3262f82d839a7f8e4ee50319c96349e6a39a17a3c4cf4613c945d8c4a66317da"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

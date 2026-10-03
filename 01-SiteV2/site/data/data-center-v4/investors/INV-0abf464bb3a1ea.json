@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Karman 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Karman Ventures 官网以该品牌公开展示其名称；美国 SEC Form D/A 备案列示 Karman Ventures Fund 1, LP 为申报人。本档案确认品牌及申报基金的存在，不推断基金策略、管理规模或网站所列企业与该基金的投资关系。",
+      "facts": [
+        {
+          "field": "disclosed_fund_vehicle",
+          "value": "Karman Ventures Fund 1, LP；Form D/A 备案的申报人之一。",
+          "label": "SEC 披露的基金主体",
+          "source_id": "PROFILE-0abf464bb3a1ea-sec"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,40 @@
           "source_id": "FISRC-199e9ff185705c78"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "SEC Form D/A 仅核实 Karman Ventures Fund 1, LP 的申报身份，不代表其完整基金或投资组合信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "label": "机构官网",
+          "url": "https://karman.vc/",
+          "value": "Karman Ventures",
+          "kind": "website",
+          "source_id": "PROFILE-0abf464bb3a1ea-website"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-0abf464bb3a1ea-website",
+          "quote_hash": "fbc1ba394e6f4e84aec79469904a5ed5d0f48a3e5b0687a8b7ed91b9cd31a8ce",
+          "source_content_hash": "6c8550d6e8ff7ccaa03e07ef987698d80fb252276ac181feec8a2f1455ca2721",
+          "source_title": "Karman Ventures",
+          "quote": "Karman Ventures",
+          "source_url": "https://karman.vc/"
+        },
+        {
+          "source_id": "PROFILE-0abf464bb3a1ea-sec",
+          "quote_hash": "18bc831c104657393933493ccbe494305b0f36e88e5a114fe5aa04f79a101723",
+          "source_content_hash": "82327c0aff95555ec4cb39237ab6b3cc0fc9a92d41210edb17c2b628eb1edf4f",
+          "source_title": "EDGAR Filing Documents for 0001991619-25-000002",
+          "quote": "Karman Ventures Fund 1, LP (Filer) CIK : 0001991619 (see all company filings) EIN. : 923951468 | State of Incorp.: DE | Fiscal Year End: 1231 Type: D/A | Act: 33 | File No.: 021-491862 | Film No.: 251035732 Mailing Address 119 SOUTH MAIN STREET SUITE 220 SEATTLE WA 98104 Business Address 119 SOUTH MAIN STREET SUITE 220 SEATTLE WA 98104 2068016359",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1991619/000199161925000002/0001991619-25-000002-index.htm"
+        },
         {
           "source_id": "FISRC-199e9ff185705c78",
           "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
@@ -161,7 +196,7 @@
           "quote_hash": "ac15258cb66619a32697a75618de792e84a4ec14c9481f0569cbe019e775c33a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
