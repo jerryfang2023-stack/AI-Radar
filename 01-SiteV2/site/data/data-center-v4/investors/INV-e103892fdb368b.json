@@ -139,11 +139,24 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "湖南财鑫集团 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-20；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "集团身份、性质与业务范围来自官网；融资报道仅支持该投资方标签，未将其与某个子公司、基金或法律主体对应。",
+      "summary": "湖南财鑫集团官网使用全称“湖南财鑫投资控股集团有限公司”，介绍其为常德市属国有全资企业，业务涵盖金融服务、产业投资和资产运营；融资报道将“湖南财鑫集团”列为智象未来 B+ 轮投资方，但没有说明具体出资主体。",
+      "facts": [
+        {
+          "field": "business_scope",
+          "label": "官网披露的业务板块",
+          "value": "金融服务、产业投资、资产运营。",
+          "source_id": "caixin_official_group_profile"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2020",
+          "description": "官网称集团于 2020 年整合组建，性质为国有全资企业。",
+          "source_id": "caixin_official_group_profile"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：智象未来 · B+轮 · 2026-05-20 · 本轮参投 · 亿级人民币。这是本库收录的披露案例，不代表完整投资组合。",
@@ -155,13 +168,21 @@
         {
           "source_id": "FISRC-58b7882b379da6fd",
           "source_url": "https://www.sohu.com/a/1025264778_114984",
-          "source_title": "智象未来（合肥）信息技术有限公司获“B+轮”融资，金额亿级人民币",
-          "source_content_hash": "f596ec77bde2bb76b72aacf182209ce01d5af452db9f408835a879079f48c964",
+          "source_title": "智象未来（合肥）信息技术有限公司获“B+轮”融资，金额亿级人民币_企业_合伙_投资",
+          "source_content_hash": "8107f184a644c8342ccd28da9bf8c9f7afb06aec659bcfa9c795a746e292c8cc",
           "quote": "5月20日，天眼查融资历程显示，智象未来（合肥）信息技术有限公司近日获得“B+轮”融资，涉及融资金额亿级人民币，投资机构为深创投，金浦投资，湖南财鑫集团，复聚投资。",
           "quote_hash": "71d391145b1e7abf801c31ce95f731a2a62161f8495e9c4a0223ad89493cf09a"
+        },
+        {
+          "source_id": "caixin_official_group_profile",
+          "source_url": "https://www.cdcxjt.com/gycx/jtjs",
+          "source_title": "集团介绍_关于财鑫_湖南财鑫投资控股集团有限公司",
+          "source_content_hash": "8396dd86001b49e0ca03190f5f3f8c4e8e9e8d3a8fb69678793b36ed24107f4e",
+          "quote": "湖南财鑫投资控股集团有限公司（以下简称“集团”），是经常德市委、市政府批准在原常德财鑫投融资担保集团有限公司的基础上，于2020年整合原常德市现代工业投资集团有限公司、常德市现代农业投资集团有限公司、常德市财经投资开发公司后组建而成的国有全资企业，注册资本70亿元，资产规模突破170亿元，资信等级AA+，银行金融机构授信总额突破480亿元。旗下财鑫担保公司被评为AAA资信等级，是全国地州市首家评为AAA信用等级的担保公司。 集团旗下拥有20多家全资或控股子公司，主营业务分为金融服务、产业投资、资产运营三大板块，拥有",
+          "quote_hash": "44fbad4dc8932a32382c8b49d23fc3f86636297265cb48bcee2847c84f5df101"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

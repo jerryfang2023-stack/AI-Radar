@@ -139,10 +139,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Source Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "本档案基于机构官网自述；未找到可纳入的投资案例，故不补写投资组合或回报。",
+      "summary": "Source Ventures 官网将自身描述为面向科技初创公司的早期 Investment Club，并称每笔交易投资 10 万欧元或以上、通过产品、技术、销售和市场建议支持创业者。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网自述的投资阶段",
+          "value": "面向科技初创公司的早期投资。",
+          "source_id": "source_ventures_official_profile"
+        },
+        {
+          "field": "ticket_size",
+          "label": "官网自述的单笔金额",
+          "value": "每笔交易投资 10 万欧元或以上。",
+          "source_id": "source_ventures_official_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -153,6 +166,14 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "source_ventures_official_profile",
+          "source_url": "https://sourceventures.vc/",
+          "source_title": "Source Ventures - Micro VC fund for tech startups",
+          "source_content_hash": "d04155f7ad578782e3f578bf812906031f6492d99ad3119e6d6a2e330b8dd825",
+          "quote": "Source Ventures is an early-stage Investment Club dedicated to tech startups. ➞ hello@sourceventures.vc Doers backing doers. Thesis ➞ Read our investment thesis We invest 100 000€ or more per deal and add value by advising entrepreneurs on their Product, Te",
+          "quote_hash": "ce349353b149691b0b5211a8032b29ee0fa72f42547a61746d12fd50312ba1e6"
+        },
+        {
           "source_id": "FISRC-5497463d6c7b6acf",
           "source_url": "https://www.linkedin.com/posts/poolday_introducing-pool-weve-raised-2m-in-activity-7470874080842285056-GzNS",
           "source_title": "Introducing Pool 🏊 We've raised $2M in funding led by General Catalyst with participation from Kima Ventures Source Ventures Dr. Julian Blessin Winston Du Thomas Ricouard Pool is \"just an app for… | Pool",
@@ -161,7 +182,7 @@
           "quote_hash": "f1e7ec5228f3eb91be682ce6d6229008b01e75fc596d42a30083fee56f24f08f"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
