@@ -122,12 +122,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "鸿石联合 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中国证券投资基金业协会公示确认厦门鸿石联合投资管理合伙企业（有限合伙）为私募股权、创业投资基金管理人，登记编号P1028457。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "协会公示的管理人全称",
+          "value": "厦门鸿石联合投资管理合伙企业（有限合伙）。",
+          "source_id": "PROFILE-INV-6333b63e82d593-1"
+        },
+        {
+          "field": "manager_registration",
+          "label": "协会登记编号",
+          "value": "P1028457。",
+          "source_id": "PROFILE-INV-6333b63e82d593-2"
+        },
+        {
+          "field": "organization_type",
+          "label": "协会公示的机构类型",
+          "value": "私募股权、创业投资基金管理人。",
+          "source_id": "PROFILE-INV-6333b63e82d593-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,8 +150,48 @@
           "source_id": "FISRC-d7c3cbdfafeaf4fc"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按基金业协会管理人公示建立档案；未将公示的管理规模等动态字段写入摘要。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金业协会管理人公示",
+          "value": "中国证券投资基金业协会",
+          "url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000026696.html?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-6333b63e82d593-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6333b63e82d593-1",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000026696.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "230562827322f799d688cb9376485429b654b358c771a23855056aed653b3e70",
+          "quote": "基金管理人全称(中文) 厦门鸿石联合投资管理合伙企业（有限合伙）",
+          "quote_hash": "a451e818e8477261a17f533c7f8423a60cc0c2b98bf05a3c8893dd44b9395e06"
+        },
+        {
+          "source_id": "PROFILE-INV-6333b63e82d593-2",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000026696.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "230562827322f799d688cb9376485429b654b358c771a23855056aed653b3e70",
+          "quote": "登记编号 P1028457 组织机构代码 05839916-5",
+          "quote_hash": "0d745c9c2d93b54b9978900fc5672008e508c6ab2984a1e709ffeeb86bc9b752"
+        },
+        {
+          "source_id": "PROFILE-INV-6333b63e82d593-3",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000026696.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "230562827322f799d688cb9376485429b654b358c771a23855056aed653b3e70",
+          "quote": "机构类型 私募股权、创业投资基金管理人",
+          "quote_hash": "cc3fffa181afbab9a35403aae0116e7fda015b2665e223697474e90cbcb14fb4"
+        },
         {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
           "source_url": "https://m.jobui.com/company/16905688/financing/",

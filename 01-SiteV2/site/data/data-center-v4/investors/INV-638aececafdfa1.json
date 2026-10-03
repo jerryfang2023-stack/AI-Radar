@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "MESH 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "MESH官网将其定位为电子产业主题的风险投资机构，提供按项目投资、主题基金及合作伙伴直接投资等方式。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "聚焦电子产业的风险投资机构。",
+          "source_id": "PROFILE-INV-638aececafdfa1-1"
+        },
+        {
+          "field": "investment_vehicles",
+          "label": "官网列示投资方式",
+          "value": "按项目投资平台、主题基金和合作伙伴直接投资。",
+          "source_id": "PROFILE-INV-638aececafdfa1-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网重点领域",
+          "value": "电子产业及相关技术。",
+          "source_id": "PROFILE-INV-638aececafdfa1-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,48 @@
           "source_id": "FISRC-71f6a0b77ac7d607"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "根据官网对机构类型与投资工具的介绍。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "MESH",
+          "url": "https://mesh.vc/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-638aececafdfa1-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-638aececafdfa1-1",
+          "source_url": "https://mesh.vc/?source_capture=2026-10-03&cycle=9",
+          "source_title": "MESH",
+          "source_content_hash": "b65203aaf4b63fc7532b60731b99874ffadef2b94586ed21a78a544d5bebb44f",
+          "quote": "We are an electronics-focused venture capital firm.",
+          "quote_hash": "85eed033fc94b581e827ca57fdca7ac25108b431d2019ecdedd10f37b188969f"
+        },
+        {
+          "source_id": "PROFILE-INV-638aececafdfa1-2",
+          "source_url": "https://mesh.vc/?source_capture=2026-10-03&cycle=9",
+          "source_title": "MESH",
+          "source_content_hash": "b65203aaf4b63fc7532b60731b99874ffadef2b94586ed21a78a544d5bebb44f",
+          "quote": "MESH Syndicates Deal-by-deal investing platform",
+          "quote_hash": "d17d95ebd17d8dad98df4281e47d49b2da74d0e9a3a8a5fbc213a6154034937f"
+        },
+        {
+          "source_id": "PROFILE-INV-638aececafdfa1-3",
+          "source_url": "https://mesh.vc/?source_capture=2026-10-03&cycle=9",
+          "source_title": "MESH",
+          "source_content_hash": "b65203aaf4b63fc7532b60731b99874ffadef2b94586ed21a78a544d5bebb44f",
+          "quote": "Thematic Funds Highly targeted investing through funds anchored by industry-leading corporate partners",
+          "quote_hash": "07a98dfcdfc57d4fed4a68c1dc45fc6a253577f4ce8e7a025d9f334415eaecf3"
+        },
         {
           "source_id": "FISRC-71f6a0b77ac7d607",
           "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
@@ -161,7 +216,7 @@
           "quote_hash": "f069689efe7f2c1fd0553c3cadf3625892b2a08052c4a60f640d5452e377a76a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

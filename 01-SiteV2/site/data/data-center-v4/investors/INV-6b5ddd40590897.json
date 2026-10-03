@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "长江证券创新投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "长江证券官网披露，长江证券创新投资（湖北）有限公司是长江证券股份有限公司的全资另类子公司，经营范围包括股权投资和项目投资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示公司名称",
+          "value": "长江证券创新投资（湖北）有限公司。",
+          "source_id": "PROFILE-INV-6b5ddd40590897-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "官网披露的母公司",
+          "value": "长江证券股份有限公司。",
+          "source_id": "PROFILE-INV-6b5ddd40590897-1"
+        },
+        {
+          "field": "investment_scope",
+          "label": "官网列示经营范围",
+          "value": "股权投资、项目投资。",
+          "source_id": "PROFILE-INV-6b5ddd40590897-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-c5ff4d32946d43f2"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按券商公告所列正式名称建档，并保留其与母公司的全资子公司关系。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "长江证券公告",
+          "value": "长江证券创新投资（湖北）有限公司",
+          "url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6b5ddd40590897-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6b5ddd40590897-1",
+          "source_url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml?source_capture=2026-10-03&cycle=10",
+          "source_title": "长江证券",
+          "source_content_hash": "f9d0ec0f4403c748b60b32084ee9700cd1d475b8c3de3e174611bd0f739397ed",
+          "quote": "长江证券创新投资（湖北）有限公司为长江证券股份有限公司的全资另类子公司。",
+          "quote_hash": "1d48b4dd9f993fc8af151eec9b8dc221b74d75708cbb8f04e7d6a4d919d234f8"
+        },
+        {
+          "source_id": "PROFILE-INV-6b5ddd40590897-2",
+          "source_url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml?source_capture=2026-10-03&cycle=10",
+          "source_title": "长江证券",
+          "source_content_hash": "f9d0ec0f4403c748b60b32084ee9700cd1d475b8c3de3e174611bd0f739397ed",
+          "quote": "经营范围：股权投资、项目投资",
+          "quote_hash": "a7bd222045bd9e231a94c7b1110fc7b20f94c9e6ef1688c0106188b476cc6224"
+        },
         {
           "source_id": "FISRC-c5ff4d32946d43f2",
           "source_url": "https://finance.sina.com.cn/wm/2026-03-24/doc-inhsavws1704662.shtml?froms=ggmp",
@@ -161,7 +208,7 @@
           "quote_hash": "39c243b0fd5293cebc77928547cbad7306a457072466bfb765d75b2c458adf11"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

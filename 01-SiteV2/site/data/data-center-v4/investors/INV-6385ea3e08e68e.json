@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Kyobo Life 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "教保生命官网（2026年4月关系企业表）列出其资产管理子公司及美国、日本当地资产管理法人；相关投资管理职能由这些子公司承担。",
+      "facts": [
+        {
+          "field": "subsidiary_activity",
+          "label": "官网列示的金融子公司",
+          "value": "教保AIM资产管理从事信托及集合投资业务，股权比例100%。",
+          "source_id": "PROFILE-INV-6385ea3e08e68e-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网列示的海外关联公司业务",
+          "value": "美国当地法人开展投资一任业务，日本当地法人开展投资咨询业务。",
+          "source_id": "PROFILE-INV-6385ea3e08e68e-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,48 @@
           "source_id": "FISRC-f5de203e610041a3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "此档案描述保险集团及其投资管理子公司关系，不把母公司与各资产管理法人视为同一主体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "关系企业现况",
+          "value": "Kyobo Life Insurance",
+          "url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/child-company-present-condition?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-6385ea3e08e68e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6385ea3e08e68e-1",
+          "source_url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/child-company-present-condition?source_capture=2026-10-03&cycle=9",
+          "source_title": "관계사현황-교보생명",
+          "source_content_hash": "ddfca5ea520d00206d72daf08049131c66540ddef6d966274e4d152d0be68059",
+          "quote": "교보AIM자산운용 www.kyobo-aim.com 신탁업 및 집합투자업 2009. 02. 16 101억원 100%",
+          "quote_hash": "460747b6f9ae5052736073a0403fc66f018cef096f4bc2e9cfd4d9c6c66c2665"
+        },
+        {
+          "source_id": "PROFILE-INV-6385ea3e08e68e-2",
+          "source_url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/child-company-present-condition?source_capture=2026-10-03&cycle=9",
+          "source_title": "관계사현황-교보생명",
+          "source_content_hash": "ddfca5ea520d00206d72daf08049131c66540ddef6d966274e4d152d0be68059",
+          "quote": "교보생명자산운용 (미국현지법인) 투자일임업",
+          "quote_hash": "9fa826c497c184098cb6a71d6371824cc02c8ec4eac5b155f5da07ac8ed6c4b0"
+        },
+        {
+          "source_id": "PROFILE-INV-6385ea3e08e68e-3",
+          "source_url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/child-company-present-condition?source_capture=2026-10-03&cycle=9",
+          "source_title": "관계사현황-교보생명",
+          "source_content_hash": "ddfca5ea520d00206d72daf08049131c66540ddef6d966274e4d152d0be68059",
+          "quote": "교보생명자산운용 (일본현지법인) 투자자문업",
+          "quote_hash": "ffd764eab7e0c522eebbb57d10d50c9f2c49e5ae7d97a5ad7f674c6ba72eb542"
+        },
         {
           "source_id": "FISRC-f5de203e610041a3",
           "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
@@ -161,7 +210,7 @@
           "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -154,25 +154,62 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "宁德时代 (CATL) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "宁德时代在深交所发布公告称，作为有限合伙人参与设立海南时代绿色产业投资基金，认缴出资24.75亿元、占基金49.5%。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "深交所公告披露的参投事项",
+          "value": "宁德时代作为有限合伙人参与海南时代绿色产业投资基金，认缴24.75亿元、占49.5%。",
+          "source_id": "PROFILE-INV-63b6306f9901ae-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-08-12",
+          "description": "签署海南时代绿色产业投资基金合伙协议并参与基金投资。",
+          "source_id": "PROFILE-INV-63b6306f9901ae-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4595161c40aec2c1"
-        },
-        {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6f84e84fa4821cb0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "此条记录制造业公司的一项战略基金投资活动；宁德时代主营身份仍为电池企业，不将其描述为专业基金管理人。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "深交所公告",
+          "value": "Contemporary Amperex Technology Co., Limited",
+          "url": "https://szse.io/releases/300750-contemporary-amperex-technology-co-limited/1225470687-announcement-on-participating-in-the-investment-of-hainan?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-63b6306f9901ae-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-63b6306f9901ae-1",
+          "source_url": "https://szse.io/releases/300750-contemporary-amperex-technology-co-limited/1225470687-announcement-on-participating-in-the-investment-of-hainan?source_capture=2026-10-03&cycle=9",
+          "source_title": "Announcement on Participating in the Investment of Hainan Times Green Industry Investment Fund Partnership (Limited Partnership) — Contemporary Amperex Technology Co., Limited | SZSE Releases",
+          "source_content_hash": "46a53eb4f156c5719c45dad91817c09d65fec62709730584b7541b048ec48cdc",
+          "quote": "The Company, as one of the limited partners, will participate in the investment in \"Hainan Times Green Industry Investment Fund Partnership (Limited Partnership)\" (proposed establishment, hereinafter referred to as the \"Fund\" or \"Partnership\").",
+          "quote_hash": "dac7686c3de04efeae3f6996efcde6f93f08e0ba31be82ffb6610709a0560336"
+        },
+        {
+          "source_id": "PROFILE-INV-63b6306f9901ae-2",
+          "source_url": "https://szse.io/releases/300750-contemporary-amperex-technology-co-limited/1225470687-announcement-on-participating-in-the-investment-of-hainan?source_capture=2026-10-03&cycle=9",
+          "source_title": "Announcement on Participating in the Investment of Hainan Times Green Industry Investment Fund Partnership (Limited Partnership) — Contemporary Amperex Technology Co., Limited | SZSE Releases",
+          "source_content_hash": "46a53eb4f156c5719c45dad91817c09d65fec62709730584b7541b048ec48cdc",
+          "quote": "subscribed capital contribution is RMB 2.475 billion, representing a 49.50% share of the Fund",
+          "quote_hash": "8c4c8ff0dc62d4a757eb648fc06528e2aee313b2366d59737c12bb89c1ae3056"
+        },
         {
           "source_id": "FISRC-4595161c40aec2c1",
           "source_url": "https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation",
@@ -190,7 +227,7 @@
           "quote_hash": "54d9f83d4b316fb8e93876d2d2a6e78d33248875cd806edb542a09af8bd60950"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Qube Research & Technologies (QRT) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Qube Research & Technologies官网披露其为量化及系统化投资管理人，采用技术驱动、科学方法开展金融投资，并受英国金融行为监管局授权监管。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "量化及系统化投资管理人。",
+          "source_id": "PROFILE-INV-60941ef3645594-1"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "官网披露的监管信息",
+          "value": "英国金融行为监管局授权并监管。",
+          "source_id": "PROFILE-INV-60941ef3645594-2"
+        },
+        {
+          "field": "geographic_scope",
+          "label": "官网披露的办公区域",
+          "value": "EMEA、亚太及美国。",
+          "source_id": "PROFILE-INV-60941ef3645594-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,40 @@
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据公司官网合规披露页面；不推断其未公开的资产管理规模或客户组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网合规披露",
+          "value": "Qube Research & Technologies",
+          "url": "https://www.qube-rt.com/disclosure?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-60941ef3645594-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-60941ef3645594-1",
+          "source_url": "https://www.qube-rt.com/disclosure?source_capture=2026-10-03&cycle=9",
+          "source_title": "Disclosure",
+          "source_content_hash": "115899806b0a99a01e83794c5d2c3f475a85a8f4034c1f2d53b6f60e9cac49da",
+          "quote": "Qube Research & Technologies Limited is a quantitative and systematic investment manager with multiple offices across EMEA, APAC and the US.",
+          "quote_hash": "db659097691c78b320633b65e41489b8e753a3e850d3a0b250c3844eb36acd17"
+        },
+        {
+          "source_id": "PROFILE-INV-60941ef3645594-2",
+          "source_url": "https://www.qube-rt.com/disclosure?source_capture=2026-10-03&cycle=9",
+          "source_title": "Disclosure",
+          "source_content_hash": "115899806b0a99a01e83794c5d2c3f475a85a8f4034c1f2d53b6f60e9cac49da",
+          "quote": "Qube Research & Technologies Limited is a UK limited company that is authorised and regulated by the UK Financial Conduct Authority.",
+          "quote_hash": "081c988f21b8388e2e9fe87e6cd38e7a4a316e8a2a7fa2c563ebd2c3cd535ae0"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -161,7 +208,7 @@
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

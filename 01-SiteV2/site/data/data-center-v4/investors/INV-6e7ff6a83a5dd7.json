@@ -191,12 +191,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BHeroes 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "B Heroes官网称其为自2016年起运营、专注支持早期创业公司的风险投资公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "风险投资公司。",
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网列示运营年份",
+          "value": "2016年开始运营。",
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "早期创业公司。",
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -208,8 +223,32 @@
           "source_id": "FISRC-048a7851eadb0513"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网意大利语简介；未采用页面展示的动态组合统计。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "B Heroes",
+          "url": "https://bheroes.it/it?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1",
+          "source_url": "https://bheroes.it/it?source_capture=2026-10-03&cycle=10",
+          "source_title": "B Heroes | Fondo di Venture Capital per investimenti nelle prime fasi (pre-seed e seed)",
+          "source_content_hash": "ad0f0eea6456c06ced111f42d7a23ab55199a89467e90d80271550de9a9e1e43",
+          "quote": "Siamo una società di Venture Capital attiva dal 2016 focalizzata nel supportare startup early-stage.",
+          "quote_hash": "f85cdc297fe346545cfa0ae9b7ad2fc5f1901884613c916752abed8b4c97ff3a"
+        },
         {
           "source_id": "FISRC-495f39954954d0bc",
           "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
@@ -227,7 +266,7 @@
           "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -29642,12 +29642,15 @@
       "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     },
     "INV-6d7f9086f76487": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Redalpine 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Redalpine官网about页列出了其当前投资重点，覆盖前沿科技、医疗健康、数字化应用及金融科技基础设施。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网列示的投资重点",
+          "value": "前沿科技、医疗健康、数字化应用及金融科技基础设施。",
+          "source_id": "PROFILE-INV-6d7f9086f76487-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -29659,8 +29662,40 @@
           "source_id": "FISRC-a25b58a6297cb344"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网投资重点页面，不写入未经核验的规模数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网投资重点",
+          "value": "Redalpine",
+          "url": "https://www.redalpine.com/about?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6d7f9086f76487-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6d7f9086f76487-1",
+          "source_url": "https://www.redalpine.com/about?source_capture=2026-10-03&cycle=10",
+          "source_title": "redalpine | about | our vision &amp; focus areas",
+          "source_content_hash": "1d5937f9d2ad8275f405a7353f9cc2a780905add45bdbcaf83ea5e5c05e3a2ea",
+          "quote": "our current investment focus areas are:",
+          "quote_hash": "accf65af4ad76306d4d5ec4682c04e23d26b650999d441b82d76dc083b5ee006"
+        },
+        {
+          "source_id": "PROFILE-INV-6d7f9086f76487-2",
+          "source_url": "https://www.redalpine.com/about?source_capture=2026-10-03&cycle=10",
+          "source_title": "redalpine | about | our vision &amp; focus areas",
+          "source_content_hash": "1d5937f9d2ad8275f405a7353f9cc2a780905add45bdbcaf83ea5e5c05e3a2ea",
+          "quote": "developing frontier tech",
+          "quote_hash": "832a5e0046f772140d210308b871c6a4e76d57e88dcbfc538b39d497088a538f"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
@@ -29678,7 +29713,7 @@
           "quote_hash": "fd5eb90c390e50bf085039c95bbecaf9b7a3029a6cc20063ec863f391c5f8b99"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-9f75b44276f08e": {
       "profile_type": "unverified",
@@ -31937,12 +31972,27 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-6c33bfacdc7f7a": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "华睿投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-15；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中国证券投资基金业协会公示的关联管理人信息列出浙江华睿控股有限公司，登记编号P1001662，机构类型为私募股权、创业投资基金管理人。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "协会公示的管理人名称",
+          "value": "浙江华睿控股有限公司。",
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
+        },
+        {
+          "field": "manager_registration",
+          "label": "协会公示的登记编号",
+          "value": "P1001662。",
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "协会公示的机构类型",
+          "value": "私募股权、创业投资基金管理人。",
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -31954,8 +32004,32 @@
           "source_id": "FISRC-de96c365c469f319"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "候选简称“华睿投资”按协会公示的登记主体浙江华睿控股有限公司识别；本来源是关联管理人公示，档案仅记录可核实的登记身份。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金业协会管理人公示",
+          "value": "浙江华睿控股有限公司",
+          "url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000052031.html?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6c33bfacdc7f7a-1",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000052031.html?source_capture=2026-10-03&cycle=10",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "0fc2d3b8b93fc8c40195a061817eb3c36d2e63d0b0658d9115d355767019712c",
+          "quote": "1 私募股权、创业投资基金管理人 浙江华睿控股有限公司 P1001662 74201664-2",
+          "quote_hash": "2e34e5be5cc3f3489e009ae9768b562e8462617e472c8d0f6bce02b872d38648"
+        },
         {
           "source_id": "FISRC-d0c3dca85d845330",
           "source_url": "https://news.pedaily.cn/202609/569015.shtml",
@@ -31973,7 +32047,7 @@
           "quote_hash": "20be3caeb65867c0751ee2791686399a069bc57eb1dc23b1a8d559e4d64a44df"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-a4e897160e234e": {
       "profile_type": "unverified",
@@ -33472,12 +33546,27 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-6e7ff6a83a5dd7": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BHeroes 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-07；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "B Heroes官网称其为自2016年起运营、专注支持早期创业公司的风险投资公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "风险投资公司。",
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1"
+        },
+        {
+          "field": "founded",
+          "label": "官网列示运营年份",
+          "value": "2016年开始运营。",
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "早期创业公司。",
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -33489,8 +33578,32 @@
           "source_id": "FISRC-048a7851eadb0513"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网意大利语简介；未采用页面展示的动态组合统计。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "B Heroes",
+          "url": "https://bheroes.it/it?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6e7ff6a83a5dd7-1",
+          "source_url": "https://bheroes.it/it?source_capture=2026-10-03&cycle=10",
+          "source_title": "B Heroes | Fondo di Venture Capital per investimenti nelle prime fasi (pre-seed e seed)",
+          "source_content_hash": "ad0f0eea6456c06ced111f42d7a23ab55199a89467e90d80271550de9a9e1e43",
+          "quote": "Siamo una società di Venture Capital attiva dal 2016 focalizzata nel supportare startup early-stage.",
+          "quote_hash": "f85cdc297fe346545cfa0ae9b7ad2fc5f1901884613c916752abed8b4c97ff3a"
+        },
         {
           "source_id": "FISRC-495f39954954d0bc",
           "source_url": "https://www.eu-startups.com/2026/09/milan-based-cato-raises-e6-million-to-help-companies-find-and-win-public-tenders-with-ai/",
@@ -33508,7 +33621,7 @@
           "quote_hash": "f5c18c6277f0aed3c91b9a6db5a0f53faadb5ba8cc13ac5dd581d682e3a75503"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-ed312a65c1a43a": {
       "profile_type": "unverified",
@@ -35351,12 +35464,27 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-644a81836e364a": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "CRV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "CRV官网介绍其自1970年起投资早期创业公司，并称其主要领投种子轮和A轮。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网列示创立年份",
+          "value": "1970年。",
+          "source_id": "PROFILE-INV-644a81836e364a-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "早期风险投资机构。",
+          "source_id": "PROFILE-INV-644a81836e364a-2"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "种子轮及A轮。",
+          "source_id": "PROFILE-INV-644a81836e364a-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -35368,8 +35496,40 @@
           "source_id": "FISRC-70c3e89375309295"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据CRV官网机构介绍；未采用第三方文章中的基金规模或比较数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "CRV",
+          "url": "https://www.crv.com/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-644a81836e364a-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-644a81836e364a-1",
+          "source_url": "https://www.crv.com/?source_capture=2026-10-03&cycle=9",
+          "source_title": "CRV | Early-Stage Venture Capital",
+          "source_content_hash": "1802a6a3f5e85f3938e2c919f157ab89a3c9f91b4af8a96b9a65651939294fe5",
+          "quote": "CRV was founded in 1970 and the firm has been in the Bay Area for decades.",
+          "quote_hash": "3ddea587b12891d9937e898d5590c3fb9c1d97bd9fcef295271fa4a0c08820c0"
+        },
+        {
+          "source_id": "PROFILE-INV-644a81836e364a-2",
+          "source_url": "https://www.crv.com/?source_capture=2026-10-03&cycle=9",
+          "source_title": "CRV | Early-Stage Venture Capital",
+          "source_content_hash": "1802a6a3f5e85f3938e2c919f157ab89a3c9f91b4af8a96b9a65651939294fe5",
+          "quote": "Leading Seed and Series A Rounds Since 1970",
+          "quote_hash": "89a03bc3377607a6370c77fb4755f682967607d472b785634e69159273f8bdf2"
+        },
         {
           "source_id": "FISRC-5b1ac109014789f1",
           "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
@@ -35387,7 +35547,7 @@
           "quote_hash": "a5a1708cd1d6ae7b5d07884e132d09dc33415caed2c2eb989ba224b97199a2bf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-253bdae43bd3a8": {
       "identity_status": "verified",
@@ -51000,12 +51160,21 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-6385ea3e08e68e": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Kyobo Life 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "教保生命官网（2026年4月关系企业表）列出其资产管理子公司及美国、日本当地资产管理法人；相关投资管理职能由这些子公司承担。",
+      "facts": [
+        {
+          "field": "subsidiary_activity",
+          "label": "官网列示的金融子公司",
+          "value": "教保AIM资产管理从事信托及集合投资业务，股权比例100%。",
+          "source_id": "PROFILE-INV-6385ea3e08e68e-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网列示的海外关联公司业务",
+          "value": "美国当地法人开展投资一任业务，日本当地法人开展投资咨询业务。",
+          "source_id": "PROFILE-INV-6385ea3e08e68e-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -51013,8 +51182,48 @@
           "source_id": "FISRC-f5de203e610041a3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "此档案描述保险集团及其投资管理子公司关系，不把母公司与各资产管理法人视为同一主体。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "关系企业现况",
+          "value": "Kyobo Life Insurance",
+          "url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/child-company-present-condition?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-6385ea3e08e68e-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6385ea3e08e68e-1",
+          "source_url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/child-company-present-condition?source_capture=2026-10-03&cycle=9",
+          "source_title": "관계사현황-교보생명",
+          "source_content_hash": "ddfca5ea520d00206d72daf08049131c66540ddef6d966274e4d152d0be68059",
+          "quote": "교보AIM자산운용 www.kyobo-aim.com 신탁업 및 집합투자업 2009. 02. 16 101억원 100%",
+          "quote_hash": "460747b6f9ae5052736073a0403fc66f018cef096f4bc2e9cfd4d9c6c66c2665"
+        },
+        {
+          "source_id": "PROFILE-INV-6385ea3e08e68e-2",
+          "source_url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/child-company-present-condition?source_capture=2026-10-03&cycle=9",
+          "source_title": "관계사현황-교보생명",
+          "source_content_hash": "ddfca5ea520d00206d72daf08049131c66540ddef6d966274e4d152d0be68059",
+          "quote": "교보생명자산운용 (미국현지법인) 투자일임업",
+          "quote_hash": "9fa826c497c184098cb6a71d6371824cc02c8ec4eac5b155f5da07ac8ed6c4b0"
+        },
+        {
+          "source_id": "PROFILE-INV-6385ea3e08e68e-3",
+          "source_url": "https://www.kyobo.com/dgt/web/company-introduction/ir/corporate-governance/child-company-present-condition?source_capture=2026-10-03&cycle=9",
+          "source_title": "관계사현황-교보생명",
+          "source_content_hash": "ddfca5ea520d00206d72daf08049131c66540ddef6d966274e4d152d0be68059",
+          "quote": "교보생명자산운용 (일본현지법인) 투자자문업",
+          "quote_hash": "ffd764eab7e0c522eebbb57d10d50c9f2c49e5ae7d97a5ad7f674c6ba72eb542"
+        },
         {
           "source_id": "FISRC-f5de203e610041a3",
           "source_url": "https://www.dealstreetasia.com/stories/asia-digest-zeya-health-acquires-connectlah-asian-investors-back-gmi-clouds-668m-funding-496808",
@@ -51024,7 +51233,7 @@
           "quote_hash": "57d129887176732facc5235cc0ab30eac4060c64a8586df4d5578d6ee22ec3c5"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "INV-34d133230e3744": {
       "profile_type": "person",
@@ -56184,12 +56393,27 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-60941ef3645594": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Qube Research & Technologies (QRT) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Qube Research & Technologies官网披露其为量化及系统化投资管理人，采用技术驱动、科学方法开展金融投资，并受英国金融行为监管局授权监管。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "量化及系统化投资管理人。",
+          "source_id": "PROFILE-INV-60941ef3645594-1"
+        },
+        {
+          "field": "regulatory_status",
+          "label": "官网披露的监管信息",
+          "value": "英国金融行为监管局授权并监管。",
+          "source_id": "PROFILE-INV-60941ef3645594-2"
+        },
+        {
+          "field": "geographic_scope",
+          "label": "官网披露的办公区域",
+          "value": "EMEA、亚太及美国。",
+          "source_id": "PROFILE-INV-60941ef3645594-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -56197,8 +56421,40 @@
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据公司官网合规披露页面；不推断其未公开的资产管理规模或客户组合。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网合规披露",
+          "value": "Qube Research & Technologies",
+          "url": "https://www.qube-rt.com/disclosure?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-60941ef3645594-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-60941ef3645594-1",
+          "source_url": "https://www.qube-rt.com/disclosure?source_capture=2026-10-03&cycle=9",
+          "source_title": "Disclosure",
+          "source_content_hash": "115899806b0a99a01e83794c5d2c3f475a85a8f4034c1f2d53b6f60e9cac49da",
+          "quote": "Qube Research & Technologies Limited is a quantitative and systematic investment manager with multiple offices across EMEA, APAC and the US.",
+          "quote_hash": "db659097691c78b320633b65e41489b8e753a3e850d3a0b250c3844eb36acd17"
+        },
+        {
+          "source_id": "PROFILE-INV-60941ef3645594-2",
+          "source_url": "https://www.qube-rt.com/disclosure?source_capture=2026-10-03&cycle=9",
+          "source_title": "Disclosure",
+          "source_content_hash": "115899806b0a99a01e83794c5d2c3f475a85a8f4034c1f2d53b6f60e9cac49da",
+          "quote": "Qube Research & Technologies Limited is a UK limited company that is authorised and regulated by the UK Financial Conduct Authority.",
+          "quote_hash": "081c988f21b8388e2e9fe87e6cd38e7a4a316e8a2a7fa2c563ebd2c3cd535ae0"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -56208,7 +56464,7 @@
           "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-387d9f8fba8498": {
       "profile_type": "organization",
@@ -59847,12 +60103,21 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-621b8a5b2b2e88": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "IFC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "国际金融公司（IFC）官网称其为聚焦发展中国家私营部门的全球发展机构，通过投资项目、动员其他投资者及分享专业知识推动私营部门发展。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "世界银行集团内聚焦发展中国家私营部门的全球发展机构。",
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露的工作方式",
+          "value": "投资项目、动员其他投资者并分享专业知识。",
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -59860,8 +60125,40 @@
           "source_id": "FISRC-ebb4cfeb462f5780"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据IFC官网关于机构定位及工作方式的介绍。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于页面",
+          "value": "International Finance Corporation (IFC)",
+          "url": "https://www.ifc.org/en/about?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-1",
+          "source_url": "https://www.ifc.org/en/about?source_capture=2026-10-03&cycle=9",
+          "source_title": "Who We Are | International Finance Corporation (IFC)",
+          "source_content_hash": "bbac32cc32e58373352e7d8bfe4c4cdc578b8631aa54e0a07c4cba3e93ec66c3",
+          "quote": "IFC is the largest global development institution focused on the private sector in developing countries.",
+          "quote_hash": "72a0d9393cfaab8b95ba6759690b0d7f7255be892985ffc888a85efb3b8ce9fc"
+        },
+        {
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-2",
+          "source_url": "https://www.ifc.org/en/about?source_capture=2026-10-03&cycle=9",
+          "source_title": "Who We Are | International Finance Corporation (IFC)",
+          "source_content_hash": "bbac32cc32e58373352e7d8bfe4c4cdc578b8631aa54e0a07c4cba3e93ec66c3",
+          "quote": "We achieve this by investing in impactful projects, mobilizing other investors, and sharing expertise.",
+          "quote_hash": "c0cccdb2c95753fa657b7f1f831075c9b271312a581d5464739977515cf69f17"
+        },
         {
           "source_id": "FISRC-ebb4cfeb462f5780",
           "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
@@ -59871,7 +60168,7 @@
           "quote_hash": "dbe4affcdde93e87d3b166291082fcb242b3fe2b5d8d0e8c75bd211cb68787e6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-8059ff8a0d97cc": {
       "profile_type": "organization",
@@ -61887,12 +62184,27 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-6210c77a9cf4f9": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "未来资产 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "未来资产金融集团官网称其于1997年成立并运营全球多元化投资平台，业务涵盖资产管理、风险投资及私募股权等另类投资。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网列示成立年份",
+          "value": "1997年。",
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "全球金融集团及多元化投资平台。",
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-2"
+        },
+        {
+          "field": "business_segments",
+          "label": "官网列示投资业务",
+          "value": "创新投资、风险投资及另类投资（包括PEF、基础设施和房地产）。",
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -61900,8 +62212,48 @@
           "source_id": "FISRC-517ef1b31eac6dd3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按集团官网业务分类记录集团层面信息，不将具体投资管理业务归到某个单独子公司。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "未来资产金融集团介绍",
+          "value": "未来资产资本（中国）",
+          "url": "https://capital.miraeasset.com.cn/sc/mirae-asset-group/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-1",
+          "source_url": "https://capital.miraeasset.com.cn/sc/mirae-asset-group/?source_capture=2026-10-03&cycle=9",
+          "source_title": "未来资产金融集团 - 未来资产资本(中国)",
+          "source_content_hash": "8b9614cb741a597413f7313364776488d6f33faea01e93bcff951bd227961f78",
+          "quote": "未来资产于1997年成立，是亚洲最大的独立金融集团之一",
+          "quote_hash": "e70761b936ab2f8db81a6f23a9cd5e80c83bcf78ec81db07167321e573ad24a7"
+        },
+        {
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-2",
+          "source_url": "https://capital.miraeasset.com.cn/sc/mirae-asset-group/?source_capture=2026-10-03&cycle=9",
+          "source_title": "未来资产金融集团 - 未来资产资本(中国)",
+          "source_content_hash": "8b9614cb741a597413f7313364776488d6f33faea01e93bcff951bd227961f78",
+          "quote": "未来资产运营着全球多元化的投资平台",
+          "quote_hash": "4b82125c931511e7df0141d3215e3b97293e75b81e256ea5514e434349cb83e6"
+        },
+        {
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-3",
+          "source_url": "https://capital.miraeasset.com.cn/sc/mirae-asset-group/?source_capture=2026-10-03&cycle=9",
+          "source_title": "未来资产金融集团 - 未来资产资本(中国)",
+          "source_content_hash": "8b9614cb741a597413f7313364776488d6f33faea01e93bcff951bd227961f78",
+          "quote": "创新投资 技术平台、生物技术、ICT、 风险投资 另类投资 PEF、基础设施、 房地产",
+          "quote_hash": "a316a856b62e173af1206478c9e90267f4147e265cf113d700cf370587442205"
+        },
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",
@@ -64098,12 +64450,21 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-621868b0dce7b8": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "QED Investors 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "QED Investors官网将其定位为金融科技领域的风险投资机构，称其投资于推动金融业变革的企业。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "金融科技风险投资机构。",
+          "source_id": "PROFILE-INV-621868b0dce7b8-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资方向",
+          "value": "金融服务与金融科技创新企业。",
+          "source_id": "PROFILE-INV-621868b0dce7b8-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -64111,8 +64472,40 @@
           "source_id": "FISRC-83ab416cf84d3f07"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据官网自我介绍记录投资方向和机构类型。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "QED Investors",
+          "url": "https://www.qedinvestors.com/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-621868b0dce7b8-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-621868b0dce7b8-1",
+          "source_url": "https://www.qedinvestors.com/?source_capture=2026-10-03&cycle=9",
+          "source_title": "Home | QED Investors",
+          "source_content_hash": "f6873c04be86248566a3191b0724c1dab47b1397b5002795728becf18321f3ee",
+          "quote": "QED is the premier VC in the fintech space.",
+          "quote_hash": "25e5727717a0019eb24d97bfc1add3666c0fe8598d360fa9c7bab96f9e7cf20e"
+        },
+        {
+          "source_id": "PROFILE-INV-621868b0dce7b8-2",
+          "source_url": "https://www.qedinvestors.com/?source_capture=2026-10-03&cycle=9",
+          "source_title": "Home | QED Investors",
+          "source_content_hash": "f6873c04be86248566a3191b0724c1dab47b1397b5002795728becf18321f3ee",
+          "quote": "We invest in pragmatic disruptors who are the future of finance.",
+          "quote_hash": "6e2767b1ce567b042bbd845e5630957344ab6c809629cacabc3168415e70848a"
+        },
         {
           "source_id": "FISRC-83ab416cf84d3f07",
           "source_url": "https://siliconangle.com/2026/09/14/flam-raises-40m-in-funding-to-make-ai-enabled-interactive-content-a-reality/",
@@ -64122,7 +64515,7 @@
           "quote_hash": "b9a9ad6ecbba1cae102dfa4a21e254ad8324e00cfd0e512c4798ec22bfa4b7c4"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "INV-89e1b7c0435086": {
       "profile_type": "unverified",
@@ -70560,16 +70953,16 @@
       "coverage_note": "战略、规模、组合数量、退出数量和团队履历均按 Array Ventures 官网自述呈现，且保留原页面不同口径；官网统计没有统一日期。融资案例只证明披露的参投关系，不代表机构完整组合或基金回报。"
     },
     "INV-68268a09aa2ad0": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Emergence 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据融资报道；机构背景只按 Emergence 官网自述概括，未推断完整投资组合。",
+      "summary": "TechCrunch 关于 Arga Labs 种子轮融资的报道将 Emergence 列为投资方；Emergence 官网展示其面向科技公司的长期资本合作。本档只记录该项公开案例。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Arga Labs · 种子轮 · 2026-08-26 · 本轮参投 · $10 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Arga Labs 种子轮融资报道将 Emergence 列为投资方。",
           "source_id": "FISRC-b6920185a5e7fa72"
         },
         {
@@ -70582,10 +70975,18 @@
         {
           "source_id": "FISRC-b6920185a5e7fa72",
           "source_url": "https://techcrunch.com/2026/08/26/arga-is-building-a-better-way-to-train-enterprise-ai-agents",
-          "source_title": "Arga Labs 正在打造更好的企业 AI 智能体训练方式",
-          "source_content_hash": "0b6c4f8b01bcf961dab5a961f2b80902a44e84acec676a4f06296b0b57682a34",
-          "quote": "The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel.",
-          "quote_hash": "319f3fae75d18486c07a59738b616cd351abb85f2d4feaf8f38ab11d402bac6b"
+          "source_title": "Arga Labs is building a better way to train enterprise AI agents | TechCrunch",
+          "source_content_hash": "460ae57c4ec46200d231febac41f3bbc1ca4d03fe4e291f300166efb0eddd2ac",
+          "quote": "$10 million seed round on Wednesday. The round was led by General Catalyst with participation from Box Group, Emergence, Gradient, and SV Angel. Arga Labs builds training environments for enterprise software like Salesforce, Workday, and email clients. Where most testing environments settle for a stateless API end point, Arga builds a ful",
+          "quote_hash": "26027c2ad92c1e6d8b90553e90be1eea4a5afbcd32cc8d66dbb74c643d6932a7"
+        },
+        {
+          "source_id": "PROFILE-85b128d378807e3b45fa",
+          "source_url": "https://www.emcap.com/",
+          "source_title": "Emergence | Bend the Odds from Emerging to Iconic",
+          "source_content_hash": "5b78a70bcf336526a38fe11fd73f024a954c8159337cb3ea61627a6b36df8b3a",
+          "quote": "Emergence | Bend the Odds from Emerging to Iconic The Definitive Guide to Building AI-Native Services Read the Beyond Benchmarks 2026 Report Portfolio Team Talent Thoughts Playbooks AI-Native Services Beyond Benchmarks 2026 415-80",
+          "quote_hash": "1ebd394ae866b018a830e0159c075b8632a11f169197e4806e5fa909b40cc7ff"
         },
         {
           "source_id": "FISRC-926b8b12b411de6f",
@@ -70596,7 +70997,11 @@
           "quote_hash": "3262f82d839a7f8e4ee50319c96349e6a39a17a3c4cf4613c945d8c4a66317da"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-5e0d3f292f5b85": {
       "profile_type": "organization",
@@ -72348,12 +72753,21 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-62115b8ba3ec02": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "建信北京投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "基金业协会公示记录将建信（北京）投资基金管理有限责任公司列为一只股权投资基金的受托管理人。",
+      "facts": [
+        {
+          "field": "fund_management_activity",
+          "label": "协会公示的管理关系",
+          "value": "担任“星云计划-长青一号私募投资基金”受托管理人；公示基金类型为股权投资基金。",
+          "source_id": "PROFILE-INV-62115b8ba3ec02-2"
+        },
+        {
+          "field": "source_recency",
+          "label": "产品记录更新时间",
+          "value": "2022年10月28日。",
+          "source_id": "PROFILE-INV-62115b8ba3ec02-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -72361,8 +72775,48 @@
           "source_id": "FISRC-5ffa5747cf097be6"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "公开产品记录显示更新时间为2022年10月28日，仅用于确认历史管理关系；不据此推断机构当前运营状态。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中国证券投资基金业协会基金公示",
+          "value": "基金公示信息",
+          "url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/1910291710123579.html?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-62115b8ba3ec02-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-62115b8ba3ec02-1",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/1910291710123579.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金公示 - 中国证券投资基金业协会",
+          "source_content_hash": "30788762a193c383b989a41ef9f47d4358f55cab2148c41f7affd1518c400035",
+          "quote": "基金名称: 星云计划-长青一号私募投资基金",
+          "quote_hash": "acfeb3d0b5711593f58fc2a4b6feedc7b8d520bf329484107ea9bfc1a474fb4c"
+        },
+        {
+          "source_id": "PROFILE-INV-62115b8ba3ec02-2",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/1910291710123579.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金公示 - 中国证券投资基金业协会",
+          "source_content_hash": "30788762a193c383b989a41ef9f47d4358f55cab2148c41f7affd1518c400035",
+          "quote": "基金类型: 股权投资基金 币种: 人民币现钞 基金管理人名称: 建信（北京）投资基金管理有限责任公司 管理类型: 受托管理",
+          "quote_hash": "d0aeb80219b00017a1e97b59b9f2559a71aa27d20e5c1ac9670c997bfca3c59c"
+        },
+        {
+          "source_id": "PROFILE-INV-62115b8ba3ec02-3",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/1910291710123579.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金公示 - 中国证券投资基金业协会",
+          "source_content_hash": "30788762a193c383b989a41ef9f47d4358f55cab2148c41f7affd1518c400035",
+          "quote": "基金信息最后更新时间: 2022-10-28",
+          "quote_hash": "5a99a377736f22a6d6f72eeca545111ff9f3cb6c9e28f87fa2d88a7d524b7b7e"
+        },
         {
           "source_id": "FISRC-5ffa5747cf097be6",
           "source_url": "https://stock.stockstar.com/RB2026081900036871.shtml",
@@ -72372,7 +72826,7 @@
           "quote_hash": "d68722d11d0246901b0bb4d3f70c9a8a2e075f7a122acde77028b978dab5b8f5"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-52dcad42119e8e": {
       "profile_type": "organization",
@@ -99872,16 +100326,16 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-689858a36453d0": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "新国都 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据 IT之家报道；不推断其投资业务主体或完整投资组合。",
+      "summary": "IT之家关于凌川科技 A+ 轮扩展融资的报道将新国都列为产业投资方。本档只记录该项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：凌川科技 · A+轮扩展 · 2026-06-25 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "凌川科技 A+ 轮扩展融资报道将新国都列为产业投资方。",
           "source_id": "FISRC-a39c77bc80e12506"
         }
       ],
@@ -99890,13 +100344,17 @@
         {
           "source_id": "FISRC-a39c77bc80e12506",
           "source_url": "https://www.ithome.com/0/968/289.htm",
-          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片",
-          "source_content_hash": "64c7e9971e9c1d726c1e0e14a0ee58c2ea57b1fa8e63c5be81fda2d2d4c356ec",
-          "quote": "产业投资方新国都、投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资",
-          "quote_hash": "ea455306d2aed2b205cf4534dc30824c36271c38fe4693004b6c1d75012b89a2"
+          "source_title": "快手系芯片公司“凌川科技”完成数亿元融资，全国产 3D 堆叠芯片完成流片 - IT之家",
+          "source_content_hash": "0c8aa3abd9f50695779734372412758ca59ea2ce3798b73b2ce6987d17d7a21f",
+          "quote": "编： 汪淼 评论： 感谢IT之家网友 不一样的体验 的线索投递！ IT之家 6 月 25 日消息，据硬氪 6 月 23 日报道， 人工智能芯片公司“凌川科技”近日完成数亿元 A+ 轮融资 ，本轮由啟赋资本领投，产业投资方新国都、投资机构金浦投资、朝晖资本、BV 百度风投、水木投资集团、亦庄科创二期基金（北京科创亦庄直投基金），以及全球知名家办等参与投资，老股东顺禧基金、九智资本持续追加投资。 项目落地北京亦庄，获亦庄国投重点支持，本轮融资将主要用于下一代芯片研发、现有产品 SL200 的量产扩产及海外市场拓展。 ▲ SL200 视频智能处理器 IT之家注：“凌川科技”成立于 2024 年 3 月，由北京市人工智能基金与快手集团共同发起设立，前身为快手集团的异构计算与芯片事",
+          "quote_hash": "97b11c4246fe1912c72f1733d149760685d0248f351ef163706e999a66f5e7b3"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-1fe41353bb8481": {
       "profile_type": "organization",
@@ -106978,25 +107436,62 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-63b6306f9901ae": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "宁德时代 (CATL) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "宁德时代在深交所发布公告称，作为有限合伙人参与设立海南时代绿色产业投资基金，认缴出资24.75亿元、占基金49.5%。",
+      "facts": [
+        {
+          "field": "investment_activity",
+          "label": "深交所公告披露的参投事项",
+          "value": "宁德时代作为有限合伙人参与海南时代绿色产业投资基金，认缴24.75亿元、占49.5%。",
+          "source_id": "PROFILE-INV-63b6306f9901ae-2"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-08-12",
+          "description": "签署海南时代绿色产业投资基金合伙协议并参与基金投资。",
+          "source_id": "PROFILE-INV-63b6306f9901ae-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4595161c40aec2c1"
-        },
-        {
-          "description": "融资来源记录：DeepSeek · 首次外部融资 · 2026-06-03 · 本轮参投 · 约74亿美元（约500亿元人民币）。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6f84e84fa4821cb0"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "此条记录制造业公司的一项战略基金投资活动；宁德时代主营身份仍为电池企业，不将其描述为专业基金管理人。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "深交所公告",
+          "value": "Contemporary Amperex Technology Co., Limited",
+          "url": "https://szse.io/releases/300750-contemporary-amperex-technology-co-limited/1225470687-announcement-on-participating-in-the-investment-of-hainan?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-63b6306f9901ae-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-63b6306f9901ae-1",
+          "source_url": "https://szse.io/releases/300750-contemporary-amperex-technology-co-limited/1225470687-announcement-on-participating-in-the-investment-of-hainan?source_capture=2026-10-03&cycle=9",
+          "source_title": "Announcement on Participating in the Investment of Hainan Times Green Industry Investment Fund Partnership (Limited Partnership) — Contemporary Amperex Technology Co., Limited | SZSE Releases",
+          "source_content_hash": "46a53eb4f156c5719c45dad91817c09d65fec62709730584b7541b048ec48cdc",
+          "quote": "The Company, as one of the limited partners, will participate in the investment in \"Hainan Times Green Industry Investment Fund Partnership (Limited Partnership)\" (proposed establishment, hereinafter referred to as the \"Fund\" or \"Partnership\").",
+          "quote_hash": "dac7686c3de04efeae3f6996efcde6f93f08e0ba31be82ffb6610709a0560336"
+        },
+        {
+          "source_id": "PROFILE-INV-63b6306f9901ae-2",
+          "source_url": "https://szse.io/releases/300750-contemporary-amperex-technology-co-limited/1225470687-announcement-on-participating-in-the-investment-of-hainan?source_capture=2026-10-03&cycle=9",
+          "source_title": "Announcement on Participating in the Investment of Hainan Times Green Industry Investment Fund Partnership (Limited Partnership) — Contemporary Amperex Technology Co., Limited | SZSE Releases",
+          "source_content_hash": "46a53eb4f156c5719c45dad91817c09d65fec62709730584b7541b048ec48cdc",
+          "quote": "subscribed capital contribution is RMB 2.475 billion, representing a 49.50% share of the Fund",
+          "quote_hash": "8c4c8ff0dc62d4a757eb648fc06528e2aee313b2366d59737c12bb89c1ae3056"
+        },
         {
           "source_id": "FISRC-4595161c40aec2c1",
           "source_url": "https://the-decoder.com/deepseek-takes-outside-money-for-the-first-time-at-a-50-billion-valuation",
@@ -107014,7 +107509,7 @@
           "quote_hash": "54d9f83d4b316fb8e93876d2d2a6e78d33248875cd806edb542a09af8bd60950"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-0606f761592e8c": {
       "summary": "Schroders Capital 官网将其业务描述为覆盖全球私募市场的投资与组合管理平台，并强调专业化中端市场能力。",
@@ -108040,12 +108535,21 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-6c257b7bfa725b": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Quiet 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Quiet Capital官网称其由建设者组成，并从创业最早期开始投资创始人。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "早期风险投资机构。",
+          "source_id": "PROFILE-INV-6c257b7bfa725b-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "从项目起步阶段开始投资创始人。",
+          "source_id": "PROFILE-INV-6c257b7bfa725b-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -108053,8 +108557,32 @@
           "source_id": "FISRC-8380bb7b0195ed3e"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "将条目限定为官网名为Quiet Capital的机构；不与同名澳大利亚机构合并。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "Quiet Capital",
+          "url": "https://quiet.com/?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6c257b7bfa725b-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6c257b7bfa725b-1",
+          "source_url": "https://quiet.com/?source_capture=2026-10-03&cycle=10",
+          "source_title": "Quiet Capital",
+          "source_content_hash": "0f191b8d401041fb47d249895ddb9f46bf89a4621ec3cafd1e2fed3fe3ab6403",
+          "quote": "We are builders who invest in remarkable Founders from day zero.",
+          "quote_hash": "a50b268c06bdbd161f1eef53af95e1b6b8ba20853c188c42fdcc09799e97f62b"
+        },
         {
           "source_id": "FISRC-8380bb7b0195ed3e",
           "source_url": "https://www.ithome.com/0/959/592.htm",
@@ -108064,7 +108592,7 @@
           "quote_hash": "529ed6f9abbc46d0495d1135ede1b896800602db1a5b603354f1d807b3414a99"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "INV-a7676ba458df02": {
       "profile_type": "unverified",
@@ -120515,16 +121043,16 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-6a1c2d9fcda052": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "元禾重元 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据投资界报道；不据此推断完整投资组合。",
+      "summary": "投资界关于中数睿智 B 轮融资的报道将元禾重元列为联合领投方。本档只记录该项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：中数睿智 · 历史轮次未披露 · B轮联合领投。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "中数睿智 B 轮融资报道将元禾重元列为联合领投方。",
           "source_id": "FISRC-9d2d4022c60030f2"
         }
       ],
@@ -120533,13 +121061,17 @@
         {
           "source_id": "FISRC-9d2d4022c60030f2",
           "source_url": "https://news.pedaily.cn/202608/568010.shtml",
-          "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了",
-          "source_content_hash": "fd43c36630768ac3",
-          "quote": "中数睿智又完成亿元级别的B轮融资，由清控金信资本、元禾重元和尚贤湖基金联合领投、粤高速跟投，老股东鼎晖VGC持续加注。",
-          "quote_hash": "cf4e632f52907690a10840ae2cdf52eee7b966325bf9e4564a2881a9fda0887f"
+          "source_title": "首发| 中数睿智三个月融资两轮，中国版Palantir火了_投资界",
+          "source_content_hash": "19743249f998c3ab6e9806c7078c3c1faa772bb10860dbc4b43cfd6113b5ae09",
+          "quote": "中数睿智完成2亿元A+轮融资，由鼎晖VGC、北京市AI基金联合领投，泰亚投资、相城金控、四川文投等跟投，成为当时国内企业级智能体赛道最 大规模融资之一。 不到一年时间后，中数睿智又完成亿元级别的B轮融资，由清控金信资本、元禾重元和尚贤湖基金联合领投、粤高速跟投，老股东鼎晖VGC持续加注。 如今，中数睿智获得多元国家级股东的加持，将进一步打通公司“底层技术原创‑生产场景落地‑全球市场扩张”的闭环，为长期成长打开充足空间。 中网投为何下注？ 商业化落地是技术壁垒最 好的试金石。 依托核心技术与产品体系，中数睿智在成为国内企业级智能体操作系统厂商中率先实现规模化商业落地的企业之一：截至目前，已经服务电力、石油、航天等50余家央国企及产业集团客户，落地800余个高复杂度生产场景，",
+          "quote_hash": "6265cd1493c6746a5f267348723a17975fef769f6cebe53d638c01a21340cc02"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-cf28dd74a00d81": {
       "profile_type": "organization",
@@ -123023,16 +123555,16 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-68bcb3acb5b947": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "倚锋资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-04-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资关系依据超维探索融资公告的转载报道；不据此补写完整投资组合。",
+      "summary": "深圳超维探索官方公告的转载报道将倚锋资本列为其种子轮联合领投方。本档仅记录这一公开案例。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：超维探索 · 种子轮 · 2026-04-13 · 本轮联合领投 · 数千万元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "超维探索 N++ 种子轮融资报道将倚锋资本列为联合领投方。",
           "source_id": "FISRC-276ec5e8421f5ecd"
         }
       ],
@@ -123042,12 +123574,16 @@
           "source_id": "FISRC-276ec5e8421f5ecd",
           "source_url": "https://www.donews.com/news/detail/4/6514734.html",
           "source_title": "超维探索N++完成数千万元种子轮融资，推进通用AI操作系统开发- DoNews",
-          "source_content_hash": "520e88ca3841b4b9",
-          "quote": "深圳超维探索科技有限公司（NppStudio，简称N++）宣布完成由倚锋资本和深圳世钦投资联合领投的数千万元种子轮融资。",
-          "quote_hash": "5f098a62368aed7148081716b624e20866af612bf2c278fbc3ad575f03bda726"
+          "source_content_hash": "5f1df1b616546293cbdef69602b68c4e7c7e1af8fd6b832ea500d21f2e54456e",
+          "quote": "，推进通用AI操作系统开发 超维探索N++完成数千万元种子轮融资，推进通用AI操作系统开发 推荐 2026-04-16 19:23:03 分享到 近日，深圳超维探索科技有限公司（NppStudio，简称N++）宣布完成由倚锋资本和深圳世钦投资联合领投的数千万元种子轮融资。资金将主要用于加速全球首个底层创新的通用Agentic操作系统（AI OS）的研发与推广。 N++平台系统于2026年4月15日正式上线，官网为www.npphub.com。其节点仓库已积累500余个经过验证、高度抽象且语义去冗余的AI原生能力节点，覆盖数据科学、算法模型开发、Office办公套件、图表制作等软件的AI原生等效功能。用户通过自然语言交互，即可驱动智能体（Agent）自主完成复杂任务的“语义",
+          "quote_hash": "d0111af92f26ff519f1228eee2d3bf12408c222466c2fcb33d915fa6cd304198"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-45690a1ec9aac4": {
       "summary": "亦庄科创二期基金的官方名称表述为北京科创亦庄直投基金，是北京科创基金的直接投资工具之一。北京科创基金公开项目页将新石器列为该基金首批投资项目之一。北京科创基金官网定位为服务北京国际科技创新中心、聚焦硬科技投资；融资库记录的华毅瀛飞融资属于另一项参投披露，具体出资额没有公开。",
@@ -126726,12 +127262,27 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-6b5ddd40590897": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "长江证券创新投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "长江证券官网披露，长江证券创新投资（湖北）有限公司是长江证券股份有限公司的全资另类子公司，经营范围包括股权投资和项目投资。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "官网列示公司名称",
+          "value": "长江证券创新投资（湖北）有限公司。",
+          "source_id": "PROFILE-INV-6b5ddd40590897-1"
+        },
+        {
+          "field": "parent_company",
+          "label": "官网披露的母公司",
+          "value": "长江证券股份有限公司。",
+          "source_id": "PROFILE-INV-6b5ddd40590897-1"
+        },
+        {
+          "field": "investment_scope",
+          "label": "官网列示经营范围",
+          "value": "股权投资、项目投资。",
+          "source_id": "PROFILE-INV-6b5ddd40590897-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -126739,8 +127290,40 @@
           "source_id": "FISRC-c5ff4d32946d43f2"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按券商公告所列正式名称建档，并保留其与母公司的全资子公司关系。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "长江证券公告",
+          "value": "长江证券创新投资（湖北）有限公司",
+          "url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6b5ddd40590897-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6b5ddd40590897-1",
+          "source_url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml?source_capture=2026-10-03&cycle=10",
+          "source_title": "长江证券",
+          "source_content_hash": "f9d0ec0f4403c748b60b32084ee9700cd1d475b8c3de3e174611bd0f739397ed",
+          "quote": "长江证券创新投资（湖北）有限公司为长江证券股份有限公司的全资另类子公司。",
+          "quote_hash": "1d48b4dd9f993fc8af151eec9b8dc221b74d75708cbb8f04e7d6a4d919d234f8"
+        },
+        {
+          "source_id": "PROFILE-INV-6b5ddd40590897-2",
+          "source_url": "https://www.cjsc.com.cn/main/a/20240722/33014.shtml?source_capture=2026-10-03&cycle=10",
+          "source_title": "长江证券",
+          "source_content_hash": "f9d0ec0f4403c748b60b32084ee9700cd1d475b8c3de3e174611bd0f739397ed",
+          "quote": "经营范围：股权投资、项目投资",
+          "quote_hash": "a7bd222045bd9e231a94c7b1110fc7b20f94c9e6ef1688c0106188b476cc6224"
+        },
         {
           "source_id": "FISRC-c5ff4d32946d43f2",
           "source_url": "https://finance.sina.com.cn/wm/2026-03-24/doc-inhsavws1704662.shtml?froms=ggmp",
@@ -126750,7 +127333,7 @@
           "quote_hash": "39c243b0fd5293cebc77928547cbad7306a457072466bfb765d75b2c458adf11"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "INV-4c7ad5a4025d39": {
       "profile_type": "unverified",
@@ -131662,16 +132245,16 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-693b9a157b50d2": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "光谷产投 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-05；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据投资界报道；不据此推断完整投资组合。",
+      "summary": "投资界关于极佳视界 Pre-B 轮融资的报道将光谷产投列为投资方。本档只记录该项公开披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：极佳视界 · Pre-B轮 · 2026-03-05 · 本轮参投 · 10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "极佳视界 Pre-B 轮融资报道将光谷产投列为投资方。",
           "source_id": "FISRC-fdfe58e2e68c7e9e"
         }
       ],
@@ -131680,13 +132263,17 @@
         {
           "source_id": "FISRC-fdfe58e2e68c7e9e",
           "source_url": "https://news.pedaily.cn/202603/561389.shtml",
-          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿",
-          "source_content_hash": "7d9409a9ba1e94fc",
-          "quote": "投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。",
-          "quote_hash": "196c406b831d5518f67d8356458e255cad46250d147bf207e51f26e2eb2037f6"
+          "source_title": "首发|华为押注的机器人，极佳视界刚刚又融10亿_投资界",
+          "source_content_hash": "999496916ab4da4f9513a18f2b966e8bfdc1d9daad283c092347a4b30748208f",
+          "quote": "正在亲历具身智能火爆一幕。 投资界获悉，极佳视界宣布完成近10亿元Pre-B轮融资，投资方阵容颇为豪华：包括中芯聚源、浦科投资、临芯资本、星源资本、万林国际等顶尖芯片和汽车产业资本，中金资本、苏创投、华强资本、长江资本、光谷产投、锡山国投、金雨茂物、新鼎资本、领阳投资、财鑫资本、张科垚坤、诚筑投资等重磅国资平台和知名财务机构。其中，中金资本、华强资本、财鑫资本、张科垚坤等作为老股东持续超额重磅加持。 至此，又一笔具身智能融资诞生。乍看稍显陌生，极佳视界身后却是一位业界大牛——黄冠，清华博士，曾先后任职于地平线、鉴智机器人，并拥有微软亚洲研究院、三星中国研究院等机构工作经历。短短三年时间，他带领着极佳视界迅速崛起为一家具身基模和通用机器人领军企业。 此时此刻，中国具身智能赛",
+          "quote_hash": "38e91f04153525bda35067027305cc2865ce7168872e0f4daac65a89f941be63"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-02",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-81104e6dbdd462": {
       "profile_type": "unverified",
@@ -132864,12 +133451,21 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-6ad1b8af7397be": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中国银行 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中国银行官网将Bank of China Group Investment列为中国银行全资子公司，并称其为中国银行境外直接投资平台；本条记录集团投资平台活动，不将银行本部等同为私募基金管理人。",
+      "facts": [
+        {
+          "field": "subsidiary_relationship",
+          "label": "官网披露的子公司关系",
+          "value": "Bank of China Group Investment Limited（BOCGI）为中国银行全资子公司。",
+          "source_id": "PROFILE-INV-6ad1b8af7397be-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露的集团投资平台",
+          "value": "BOCGI是中国银行的境外直接投资平台，重点开展协同及股权投资。",
+          "source_id": "PROFILE-INV-6ad1b8af7397be-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -132877,8 +133473,40 @@
           "source_id": "FISRC-adaac360139469bd"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "据中国银行集团官网对全资关系和境外直接投资平台的介绍。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中国银行集团公司简介",
+          "value": "Bank of China",
+          "url": "https://www.boc.cn/english/thisisboc/gls/ibc/202601/t20260105_25639058.html?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6ad1b8af7397be-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6ad1b8af7397be-1",
+          "source_url": "https://www.boc.cn/english/thisisboc/gls/ibc/202601/t20260105_25639058.html?source_capture=2026-10-03&cycle=10",
+          "source_title": "Bank of China Group Investment",
+          "source_content_hash": "4be128b547d51cf9e28ae0ccf99e5e730dbff876ea9c209d61dd88e180b3312a",
+          "quote": "Established in Hong Kong in December 1984, Bank of China Group Investment Limited (BOCGI) is a wholly owned subsidiary of Bank of China.",
+          "quote_hash": "5e67276ddcb898e9b7e3cd41bed5e4c1388acc9d4cda5957041f2feb13caed78"
+        },
+        {
+          "source_id": "PROFILE-INV-6ad1b8af7397be-2",
+          "source_url": "https://www.boc.cn/english/thisisboc/gls/ibc/202601/t20260105_25639058.html?source_capture=2026-10-03&cycle=10",
+          "source_title": "Bank of China Group Investment",
+          "source_content_hash": "4be128b547d51cf9e28ae0ccf99e5e730dbff876ea9c209d61dd88e180b3312a",
+          "quote": "As a specialized investment management company, BOCGI serves as BOC’s overseas direct investment platform, with a strategic focus on synergy and equity investments.",
+          "quote_hash": "d1ec609b3aa7fc516697c2e0a787862f3f0939f8dcbe7c634480efba820d7e17"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",
@@ -133446,16 +134074,16 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-6944e7edf6d95e": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Vlad Tenev 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-02-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "投资关系依据 Pensive 融资报道；职务依据 Robinhood 投资者关系页面；不延伸为完整个人投资组合。",
+      "summary": "Pensive 融资报道将 Vlad Tenev 列为种子轮个人投资者，并称其为 Robinhood 联合创始人兼 CEO；Robinhood 投资者关系页面确认其现任董事长、CEO 与总裁。本档只记录该人物身份和此项投资披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Pensive · 种子轮 · 2026-02-27 · 本轮参投 · $6.8M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Pensive 种子轮融资报道将 Vlad Tenev 列为个人投资者。",
           "source_id": "FISRC-4c101bd2bd412982"
         }
       ],
@@ -133464,13 +134092,33 @@
         {
           "source_id": "FISRC-4c101bd2bd412982",
           "source_url": "https://en.wowtale.net/2026/02/27/233611/",
-          "source_title": "Pensive 完成 680 万美元种子轮融资，以扩展 AI 辅助评分与个性化学习",
-          "source_content_hash": "62914606188121c3bf7ac553a380a252a151f715f085247c9ee332c76555e8ab",
-          "quote": "The round was led by Mayfield, with participation from Reach Capital, Anti Fund, a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures, Vela Partners, Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others.",
-          "quote_hash": "68cae16c208ad078245932de8e4db9ec442b5e1bfff85b3c544606bbfccdb8ed"
+          "source_title": "Pensive Raises $6.8M Seed Round to Scale AI-Assisted Grading and Personalized Learning - WOWTALE",
+          "source_content_hash": "16316c1346cd82f2527d5292937a3aa6f47d3eafc34d336b7ae5a61ec89e2ef9",
+          "quote": "Reach Capital , Anti Fund , a Sequoia Capital scout fund, an a16z scout fund, Bass Ventures , Vela Partners , Vlad Tenev (co-founder and CEO of Robinhood), Karim Atiyeh (co-founder and CTO of Ramp), the founders of Gradescope, and others. The company is also opening its platform to all instructors, following a closed beta period during wh",
+          "quote_hash": "3fea864a3a94cd1326cd3d333d4a6df7cbe04c20ded62c0bb6c1328fdf91742f"
+        },
+        {
+          "source_id": "PROFILE-d4a3e66e793ab8a8c8f0",
+          "source_url": "https://investors.robinhood.com/management/vlad-tenev",
+          "source_title": "Vlad Tenev | Management | Robinhood Markets, Inc.",
+          "source_content_hash": "0d103870f1005428841e0b1617879d7083dbda491af068e62143fc15f971e846",
+          "quote": "Vlad Tenev | Management | Robinhood Markets, Inc. Skip to main navigation Overview Press Releases Events Financials Back Quarterly Results SEC Filings Annual Reports Monthly Metrics Stock Info Back Stock Quote & Chart Historical P",
+          "quote_hash": "6543c4c76e53a84156fb152def586b6f3a6f9de3a161c7aa03e24285949b6730"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Robinhood Markets",
+          "title": "董事长、CEO、总裁",
+          "period": "现任（官网页面）",
+          "description": "Robinhood 投资者关系页面列明的现任职务。",
+          "source_id": "PROFILE-d4a3e66e793ab8a8c8f0"
+        }
+      ],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-08647380c419b4": {
       "profile_type": "organization",
@@ -139554,12 +140202,27 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-638aececafdfa1": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "MESH 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "MESH官网将其定位为电子产业主题的风险投资机构，提供按项目投资、主题基金及合作伙伴直接投资等方式。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "聚焦电子产业的风险投资机构。",
+          "source_id": "PROFILE-INV-638aececafdfa1-1"
+        },
+        {
+          "field": "investment_vehicles",
+          "label": "官网列示投资方式",
+          "value": "按项目投资平台、主题基金和合作伙伴直接投资。",
+          "source_id": "PROFILE-INV-638aececafdfa1-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网重点领域",
+          "value": "电子产业及相关技术。",
+          "source_id": "PROFILE-INV-638aececafdfa1-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -139567,8 +140230,48 @@
           "source_id": "FISRC-71f6a0b77ac7d607"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "根据官网对机构类型与投资工具的介绍。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "MESH",
+          "url": "https://mesh.vc/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-638aececafdfa1-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-638aececafdfa1-1",
+          "source_url": "https://mesh.vc/?source_capture=2026-10-03&cycle=9",
+          "source_title": "MESH",
+          "source_content_hash": "b65203aaf4b63fc7532b60731b99874ffadef2b94586ed21a78a544d5bebb44f",
+          "quote": "We are an electronics-focused venture capital firm.",
+          "quote_hash": "85eed033fc94b581e827ca57fdca7ac25108b431d2019ecdedd10f37b188969f"
+        },
+        {
+          "source_id": "PROFILE-INV-638aececafdfa1-2",
+          "source_url": "https://mesh.vc/?source_capture=2026-10-03&cycle=9",
+          "source_title": "MESH",
+          "source_content_hash": "b65203aaf4b63fc7532b60731b99874ffadef2b94586ed21a78a544d5bebb44f",
+          "quote": "MESH Syndicates Deal-by-deal investing platform",
+          "quote_hash": "d17d95ebd17d8dad98df4281e47d49b2da74d0e9a3a8a5fbc213a6154034937f"
+        },
+        {
+          "source_id": "PROFILE-INV-638aececafdfa1-3",
+          "source_url": "https://mesh.vc/?source_capture=2026-10-03&cycle=9",
+          "source_title": "MESH",
+          "source_content_hash": "b65203aaf4b63fc7532b60731b99874ffadef2b94586ed21a78a544d5bebb44f",
+          "quote": "Thematic Funds Highly targeted investing through funds anchored by industry-leading corporate partners",
+          "quote_hash": "07a98dfcdfc57d4fed4a68c1dc45fc6a253577f4ce8e7a025d9f334415eaecf3"
+        },
         {
           "source_id": "FISRC-71f6a0b77ac7d607",
           "source_url": "https://www.prnewswire.com/news-releases/aheadcomputing-inc-raises-additional-30m-seed2-round-to-reimagine-cpu-architecture-302666455.html",
@@ -139578,7 +140281,7 @@
           "quote_hash": "f069689efe7f2c1fd0553c3cadf3625892b2a08052c4a60f640d5452e377a76a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "INV-11dd4bcb889855": {
       "summary": "Stata Capital 官网称其使用自有资本进行投资，并介绍长期投资模式；档案将队列简称 Stata 对应到官网品牌 Stata Capital Partners，不扩展未披露的法律实体信息。",
@@ -144404,12 +145107,21 @@
       "last_verified_at": "2026-09-26"
     },
     "INV-6c48a5fb678b0d": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Harpoon 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Harpoon官网称其创立于2018年，投资人工智能、深科技、软件基础设施和网络安全领域的创业者。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网列示创立年份",
+          "value": "2018年。",
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "人工智能、深科技、软件基础设施和网络安全。",
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -144417,8 +145129,40 @@
           "source_id": "FISRC-3b060063f33a012b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网介绍；未采用动态投资组合规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "Harpoon Ventures",
+          "url": "https://www.harpoon.vc/?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-1",
+          "source_url": "https://www.harpoon.vc/?source_capture=2026-10-03&cycle=10",
+          "source_title": "Harpoon Ventures",
+          "source_content_hash": "3cde8f4c357e936e9216c04ecd699bc551bdd560142c5d75afe3e6d863750962",
+          "quote": "Founded in 2018 by a two-time Olympic medalist and former Navy SEAL, Harpoon was built on a simple belief: technology will define geopolitics.",
+          "quote_hash": "bc4e0ff15dba79c466d6bdde683c565056e49c4c63fdb441ec176251b9759fdc"
+        },
+        {
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-2",
+          "source_url": "https://www.harpoon.vc/?source_capture=2026-10-03&cycle=10",
+          "source_title": "Harpoon Ventures",
+          "source_content_hash": "3cde8f4c357e936e9216c04ecd699bc551bdd560142c5d75afe3e6d863750962",
+          "quote": "We invest in audacious founders building across AI, deep tech, software infrastructure, and cybersecurity.",
+          "quote_hash": "94b49689c63a0b366bd2592033684d13c4329ce662fc9e2aed4890f40c5272b9"
+        },
         {
           "source_id": "FISRC-3b060063f33a012b",
           "source_url": "https://www.startupecosystem.ca/news/n8n-secures-60m-to-advance-ai-powered-workflow-automation",
@@ -144428,7 +145172,7 @@
           "quote_hash": "a789bad22f9cd865b7693b62dac377a32df943daeb49e31344b27d827db6633c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-36524b62ee3eee": {
       "profile_type": "person",
@@ -146300,16 +147044,16 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-6ac4740f61a6ed": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Good Friends 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2023-06-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据 TechCrunch 历史报道；机构法律主体和完整组合未作推断。",
+      "summary": "TechCrunch 报道将 Good Friends 列为 Parabola 2023 年 Series B 的参与投资方。本档保留该项历史融资披露，不延伸为完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Parabola · B轮 · 2023-06-28 · 本轮参投 · $24 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Parabola 2023 年 Series B 融资报道将 Good Friends 列为参与方。",
           "source_id": "FISRC-20776ee2d93a4e99"
         }
       ],
@@ -146318,13 +147062,17 @@
         {
           "source_id": "FISRC-20776ee2d93a4e99",
           "source_url": "https://techcrunch.com/2023/06/28/parabola-workflow-automation-startup/",
-          "source_title": "工作流自动化初创公司 Parabola 获 2400 万美元融资",
-          "source_content_hash": "3674f7931a74432f",
-          "quote": "Good Friends",
-          "quote_hash": "b59d199b1863f9edf34e0c764ab609794e671ef9e0c62a20393d8c84192ef502"
+          "source_title": "Workflow automation startup Parabola raises $24M | TechCrunch",
+          "source_content_hash": "8270f8698ed54c93e111fe9c4ae50292df70eadd2faf17cfb4c1bc27ca6078cd",
+          "quote": "funding round led by OpenView, with participation from strategic investor Flexport alongside Matrix, Thrive, Good Friends, Webflow, Otherwise Fund, Abstract Ventures and Merus Capital. Alex Yaseen, Parabola’s founder and CEO, says the new capital will be put toward hiring and product R&D. To date, the company’s raised $34.2 million — inc",
+          "quote_hash": "ae39d8a9e6c477c390c7e61a9b2dbec127bc2c8e3bce7cdd87bab373459ff66b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-5a08a21a1ee5fb": {
       "profile_type": "organization",
@@ -155581,12 +156329,27 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-6333b63e82d593": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "鸿石联合 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中国证券投资基金业协会公示确认厦门鸿石联合投资管理合伙企业（有限合伙）为私募股权、创业投资基金管理人，登记编号P1028457。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "协会公示的管理人全称",
+          "value": "厦门鸿石联合投资管理合伙企业（有限合伙）。",
+          "source_id": "PROFILE-INV-6333b63e82d593-1"
+        },
+        {
+          "field": "manager_registration",
+          "label": "协会登记编号",
+          "value": "P1028457。",
+          "source_id": "PROFILE-INV-6333b63e82d593-2"
+        },
+        {
+          "field": "organization_type",
+          "label": "协会公示的机构类型",
+          "value": "私募股权、创业投资基金管理人。",
+          "source_id": "PROFILE-INV-6333b63e82d593-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -155594,8 +156357,48 @@
           "source_id": "FISRC-d7c3cbdfafeaf4fc"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按基金业协会管理人公示建立档案；未将公示的管理规模等动态字段写入摘要。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "基金业协会管理人公示",
+          "value": "中国证券投资基金业协会",
+          "url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000026696.html?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-6333b63e82d593-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6333b63e82d593-1",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000026696.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "230562827322f799d688cb9376485429b654b358c771a23855056aed653b3e70",
+          "quote": "基金管理人全称(中文) 厦门鸿石联合投资管理合伙企业（有限合伙）",
+          "quote_hash": "a451e818e8477261a17f533c7f8423a60cc0c2b98bf05a3c8893dd44b9395e06"
+        },
+        {
+          "source_id": "PROFILE-INV-6333b63e82d593-2",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000026696.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "230562827322f799d688cb9376485429b654b358c771a23855056aed653b3e70",
+          "quote": "登记编号 P1028457 组织机构代码 05839916-5",
+          "quote_hash": "0d745c9c2d93b54b9978900fc5672008e508c6ab2984a1e709ffeeb86bc9b752"
+        },
+        {
+          "source_id": "PROFILE-INV-6333b63e82d593-3",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/manager/101000026696.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金管理人公示 - 中国基金业协会",
+          "source_content_hash": "230562827322f799d688cb9376485429b654b358c771a23855056aed653b3e70",
+          "quote": "机构类型 私募股权、创业投资基金管理人",
+          "quote_hash": "cc3fffa181afbab9a35403aae0116e7fda015b2665e223697474e90cbcb14fb4"
+        },
         {
           "source_id": "FISRC-d7c3cbdfafeaf4fc",
           "source_url": "https://m.jobui.com/company/16905688/financing/",
@@ -159658,12 +160461,33 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-60cff533488ed9": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "泥藕资本NEEO 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "泥藕资本官网称其成立于2020年末，是关注早期投资的创投机构，主要投资天使及VC阶段项目。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网列示成立时间",
+          "value": "2020年末。",
+          "source_id": "PROFILE-INV-60cff533488ed9-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "早期创投机构。",
+          "source_id": "PROFILE-INV-60cff533488ed9-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网列示投资阶段",
+          "value": "天使及VC阶段。",
+          "source_id": "PROFILE-INV-60cff533488ed9-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示重点方向",
+          "value": "智能制造、高端装备、新能源、新型材料、产业数字化等。",
+          "source_id": "PROFILE-INV-60cff533488ed9-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -159671,8 +160495,48 @@
           "source_id": "FISRC-106f72a415fbb41c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网介绍，不纳入页面展示的管理规模和项目数量等动态数字。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "泥藕资本 / NEEO Fund",
+          "url": "https://www.neeo.fund/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-60cff533488ed9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-60cff533488ed9-1",
+          "source_url": "https://www.neeo.fund/?source_capture=2026-10-03&cycle=9",
+          "source_title": "泥藕资本",
+          "source_content_hash": "c6cd2b5fe91c4ec2806b0b413a0e2cccfa567a25fac53606f5d9aaa7122ad6cc",
+          "quote": "泥藕资本成立于2020年末，是一家独具风格的新锐创投机构。",
+          "quote_hash": "314835cf8fcc905e3d14e78f14099216f723c20da61895ee9d328721c14124d7"
+        },
+        {
+          "source_id": "PROFILE-INV-60cff533488ed9-2",
+          "source_url": "https://www.neeo.fund/?source_capture=2026-10-03&cycle=9",
+          "source_title": "泥藕资本",
+          "source_content_hash": "c6cd2b5fe91c4ec2806b0b413a0e2cccfa567a25fac53606f5d9aaa7122ad6cc",
+          "quote": "主要投资于天使和VC阶段早期优质项目。",
+          "quote_hash": "d544dddf40131bc0a27db908b58bd6d76fc96e2a55a4b521cd9b4d53a47b678a"
+        },
+        {
+          "source_id": "PROFILE-INV-60cff533488ed9-3",
+          "source_url": "https://www.neeo.fund/?source_capture=2026-10-03&cycle=9",
+          "source_title": "泥藕资本",
+          "source_content_hash": "c6cd2b5fe91c4ec2806b0b413a0e2cccfa567a25fac53606f5d9aaa7122ad6cc",
+          "quote": "重点关注智能制造、高端装备、新能源、新型材料、产业数字化",
+          "quote_hash": "8afe677e887dbe30b4e22fe3b6b8933084481793aae4f7d05f178d9f97b916d1"
+        },
         {
           "source_id": "FISRC-106f72a415fbb41c",
           "source_url": "https://www.tmtpost.com/7892206.html",
@@ -159682,7 +160546,7 @@
           "quote_hash": "eda8a96d050bd51da0403263b46a562720e0070f058b7ac0032f927d74f3f62f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "INV-2c457c1ff38b79": {
       "profile_type": "organization",
@@ -160513,16 +161377,16 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-691ace10d8893b": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "厦门建发 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "参投关系依据晶能微电子官网；具体法律主体及其其他投资活动未确认。",
+      "summary": "晶能微电子官网披露其 2023 年 A 轮融资由高榕资本领投，厦门建发等机构跟投。本档只记录该项公司官网披露，不推断具体集团下属出资主体。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：浙江晶能微电子股份有限公司 · 历史轮次未披露 · A轮跟投方。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "晶能微电子官网披露厦门建发参与其 2023 年 A 轮跟投。",
           "source_id": "FISRC-8ffab0ff3ac3652d"
         }
       ],
@@ -160532,12 +161396,16 @@
           "source_id": "FISRC-8ffab0ff3ac3652d",
           "source_url": "https://www.geener.cn/energy/company",
           "source_title": "公司概况-晶能微电子",
-          "source_content_hash": "3b22df3d79c4eff4",
-          "quote": "2023年6月，完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投",
-          "quote_hash": "50f37d9ed489af968f91b8a9e3d7b149627b36e40c82a88406379c31c5210615"
+          "source_content_hash": "5aa1305f5b4326afd842cbeac5a1953c5c4368555d3c33ca378c310fd5c0b72e",
+          "quote": "研车规级SiC产品流片成功 2023 2023年12月，完成A+轮融资，由温岭九龙汇领投，余杭国投、钱江摩托跟投 2023年7月，两款自研车规级FRD产品流片成功 2023年6月，完成A轮融资，由高榕资本领投，吉利资本、厦门建发等数十家机构跟投 2023年5月，温岭基地产线扩建、秀洲基地建设签约 2023年3月，首款自研车规级IGBT产品流片成功 2022 2022年11月，完成Pre-A轮融资由华登国际领投，高榕资本、矽芯投资等跟投 2022年6月，晶能与余杭区政府协议签署，以模块厂建设为起步业务，逐步拓展到芯片设计、系统集成等 公司荣誉 2024年4月24日～25日 由民建中央、中国科协指导，民建浙江省委会、中国投资发展促进会联合办的第八届万物生长大会在杭州举办。晶能",
+          "quote_hash": "b0fda855c7540686341d81182fda50bf5b4dc76c920b0ceb908451dc9c5836eb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-84ab6c092c9bcc": {
       "summary": "厦门思明科创基金是由思明区财政专项拨付、按市场化方式运作并实行专业化管理的政策性基金。思明区的2023年管理办法征求意见稿列明战略性新兴产业、高新技术、科技服务和数字科技等方向；2025年正式政策将基金规模扩充至1亿元，并新增数字营销领域。对单家数字营销企业不超过2000万元的规定，仅适用于该政策方向，不代表一般项目额度。",
@@ -164460,16 +165328,16 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-69ec232798115f": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "兴泰资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "融资参与关系依据钛媒体报道；未扩展为完整投资组合。",
+      "summary": "钛媒体关于原力无限 Pre-A 轮融资的报道将兴泰资本列为投资方。本档只记录该项公开融资披露。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：原力无限 · 历史轮次未披露 · Pre-A轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "原力无限 Pre-A 轮融资报道将兴泰资本列为投资方。",
           "source_id": "FISRC-b860ba28c7fca8f1"
         }
       ],
@@ -164479,12 +165347,16 @@
           "source_id": "FISRC-b860ba28c7fca8f1",
           "source_url": "https://www.tmtpost.com/7507888.html",
           "source_title": "ELU.AI（原力无限）完成数亿元Pre-A轮融资，全栈布局具身智能产业｜融资首发-钛媒体官方网站",
-          "source_content_hash": "43a13e6e312eadc7",
-          "quote": "ELU.AI（原力无限机器人）宣布完成数亿元人民币Pre-A轮融资，投资方为力鼎资本、杭实产投、兴泰资本等，以及天使轮投资方创世伙伴创投持续追投。",
-          "quote_hash": "92e1caac32f3c550ac42d89a191db76c4e6fd2671e71f64183a8c98d5bb80f8a"
+          "source_content_hash": "7aef8676221ea099cde91f98fdf1a2491b7d5bbade5de2cc78e87dd5a5af2602",
+          "quote": "rdquo;、&ldquo;通用大脑&rdquo;等前沿概念不断涌现，整个机器人产业正迎来一场深刻的细分演化。 钛媒体消息，ELU.AI（原力无限机器人）宣布完成数亿元人民币Pre-A轮融资，投资方为力鼎资本、杭实产投、兴泰资本等，以及天使轮投资方创世伙伴创投持续追投。 本轮融资资金将重点用于三大方向： 强化AI决策系统 。 优化机器人智能决策链路，提升AI Agent在复杂环境下的场景泛化能力与多模态数据融合的处理效率，让具身智能迈向更强自主性； 推进下一代智能机器人研发 ：在现有技术积累的基础上，通过面向不同场景深化产品力，推进下一代智能机器人产品的研发； 加速全球市场布局 ：推动具身智能在智慧出行、智能制造、医疗健康、智慧能源等关键行业规模化落地，实现技术价值的全球",
+          "quote_hash": "c118a368e0f9510e2743f96b8dd61850ad288c0958becad1c194889fa9caac48"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-9f54ba6fc004c9": {
       "profile_type": "unverified",
@@ -172585,14 +173457,18 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-69664c7a079be9": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Draper Esprit 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "FintechOS 融资关系依据该公司公告；历史名称沿革依据 Molten Ventures 官方更名说明。本记录不代表当前品牌下的完整组合。",
+      "summary": "FintechOS 官方融资公告将当时名为 Draper Esprit 的机构列为 Series B 领投方；Molten Ventures 官方文章确认其于 2021 年更名。本档保留历史名称与历史融资关系。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "FintechOS 官方 2021 年公告将 Draper Esprit 列为 Series B 领投方。",
+          "source_id": "PROFILE-ba20a5bb8e07ccef4c87"
+        },
         {
           "description": "融资来源记录：FintechOS · 历史轮次未披露 · 历史轮次领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39755042b7f329d6"
@@ -172600,6 +173476,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-ba20a5bb8e07ccef4c87",
+          "source_url": "https://www.prnewswire.co.uk/news-releases/fintechos-raises-usd60-million-in-draper-esprit-led-series-b-funding-round-to-fuel-global-expansion-887402437.html",
+          "source_title": "FintechOS raises USD60 million in Draper Esprit-led Series B funding round to fuel global expansion",
+          "source_content_hash": "4f60ba1bc58e205cfadb16795896d63a7b0de4490667913d6eb1578957807076",
+          "quote": "FintechOS raises USD60 million in Draper Esprit-led Series B funding round to fuel global expansion Accessibility Statement Skip Navigation Resources Investor Relations Journalists +44 (0)20 7454 5110 Client Login Send a Release News Products Contact Search Search",
+          "quote_hash": "1e974c1edd4540c1655191c19655a429a7fba27b7521d17d52e0a4cf6f0e5c5b"
+        },
+        {
+          "source_id": "PROFILE-e1106bc623fd75373711",
+          "source_url": "https://www.moltenventures.com/news/farewell-draper-esprit-hello-molten-ventures",
+          "source_title": "Farewell Draper Esprit. Hello Molten Ventures.",
+          "source_content_hash": "e1b48f871f8389dda1f6a5b07913872fdb21cef2bdfd9e0a66d61aa3e12bd6e0",
+          "quote": "Farewell Draper Esprit. Hello Molten Ventures. Portfolio People Newsroom Investors Sustainability Make more possible News People Portfolio Seed Funds Opportunities Investor Portal Contact Us Submit a proposal Stay connected Latest insight",
+          "quote_hash": "20730cb5641540d0141cc42cd6f332b24252f6b4a5910f98ba0616499b702979"
+        },
         {
           "source_id": "FISRC-39755042b7f329d6",
           "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -172609,7 +173501,11 @@
           "quote_hash": "b5e748d9842cdbd2f80d08952f70ba2e6fded3f27596c73f4b4c05e58a77c92b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "INV-0f9f6fa7436a63": {
       "profile_type": "organization",
@@ -175938,12 +176834,15 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-5ff895e921cd69": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Henry R. Kravis 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "KKR官网人物页记载Henry R. Kravis是KKR联合创始人及联席执行董事长，并于1976年共同创立KKR。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "投资者身份",
+          "value": "私募投资机构联合创始人及管理者。",
+          "source_id": "PROFILE-INV-5ff895e921cd69-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -175955,8 +176854,46 @@
           "source_id": "FISRC-afaa91a6569d1f7a"
         }
       ],
-      "contacts": [],
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按KKR官网现职和履历字段记录。",
+      "current_roles": [
+        {
+          "title": "Co-Founder and Co-Executive Chairman",
+          "organization": "KKR",
+          "source_id": "PROFILE-INV-5ff895e921cd69-1"
+        }
+      ],
+      "career": [
+        {
+          "period": "1976–present",
+          "organization": "KKR",
+          "title": "Co-Founder",
+          "description": "Co-founded KKR in 1976 and serves as its Co-Executive Chairman.",
+          "source_id": "PROFILE-INV-5ff895e921cd69-1"
+        }
+      ],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "KKR人物页",
+          "value": "Henry R. Kravis",
+          "url": "https://www.kkr.com/about/our-people/henry-kravis?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-5ff895e921cd69-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-5ff895e921cd69-1",
+          "source_url": "https://www.kkr.com/about/our-people/henry-kravis?source_capture=2026-10-03&cycle=9",
+          "source_title": "Henry Kravis | KKR",
+          "source_content_hash": "6f8750fd2604f3c23245cb286d581583d1a37f0940a01a574aec022b54de785e",
+          "quote": "Henry R. Kravis (New York) co-founded KKR in 1976 and serves as its Co-Executive Chairman.",
+          "quote_hash": "419d1683849ce0a41661be4c769f65f21da41463a75da90d56f261f7ef5d2a07"
+        },
         {
           "source_id": "FISRC-921d200ac951683e",
           "source_url": "https://enveda.com/news/enveda-closes-130m-series-c-funding-to-deliver-multiple-clinical-readouts-from-a-pipeline-of-10-development-candidates/",
@@ -175974,7 +176911,7 @@
           "quote_hash": "5880fd38c5f5318633c031526f69b0af93ee9b29f6216ea6dbed382b40af3e11"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-d7d3d11e0e6eec": {
       "summary": "Hong Kong Investment Corporation Limited（HKIC，香港投资管理有限公司）是香港特区政府全资持有的耐心资本投资机构，采用“投资+”方式，兼顾中长期合理财务回报与香港经济和产业竞争力。官网披露初始部署资本为620亿港元，管理四个投资组合，并聚焦硬科技、生物科技、健康科技、新能源与绿色科技。",
@@ -180927,12 +181864,27 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-6b75c5e4f01788": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Paradigm 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Paradigm官网将其定位为前沿科技投资机构，称其从早期开始建设并投资加密技术、人工智能、机器人等领域。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "前沿科技投资机构。",
+          "source_id": "PROFILE-INV-6b75c5e4f01788-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "加密技术、人工智能、机器人及其他前沿领域。",
+          "source_id": "PROFILE-INV-6b75c5e4f01788-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "从最早期开始。",
+          "source_id": "PROFILE-INV-6b75c5e4f01788-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -180940,8 +181892,32 @@
           "source_id": "FISRC-74000160f5a289fa"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网首页定位，不补入未经来源支持的基金规模或组合统计。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "Paradigm",
+          "url": "https://www.paradigm.xyz/?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6b75c5e4f01788-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6b75c5e4f01788-1",
+          "source_url": "https://www.paradigm.xyz/?source_capture=2026-10-03&cycle=10",
+          "source_title": "Paradigm",
+          "source_content_hash": "13fae661fc8efc2bb15bf4b9105e0828f1e9fb78a070f1d454f4e34f28d22eca",
+          "quote": "Paradigm is a frontier technology investment firm that builds and invests in crypto, AI, robotics, and across new frontiers from the earliest stages.",
+          "quote_hash": "71e197f38cba6d47a0a758d237cfd0a7eed129eda1b88235fc378e72f7f70c66"
+        },
         {
           "source_id": "FISRC-74000160f5a289fa",
           "source_url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation",
@@ -180951,7 +181927,7 @@
           "quote_hash": "56b0916e4da4d0b647a139ea8ac6f43533e567d139e6a82b0c97bf019f2d317a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "INV-9b4d300a8acf27": {
       "profile_type": "person",
