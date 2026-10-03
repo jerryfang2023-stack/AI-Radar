@@ -139,10 +139,17 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Janchor Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自官网自述，单笔参投记录来自融资报道；未据此扩写为完整投资组合或机构业绩。",
+      "summary": "Janchor Partners 官网称其自 2009 年成立以来秉持“实业投资”理念，追求与投资伙伴及被投资公司的长期、可持续价值；曦望融资报道另将 Janchor Partners 列为投资方。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的投资理念",
+          "value": "以“实业投资”方式，追求与投资伙伴及被投资公司的长期、可持续价值。",
+          "source_id": "janchor_official_profile"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -156,12 +163,20 @@
           "source_id": "FISRC-c87caae716bd4910",
           "source_url": "https://eu.36kr.com/zh/p/3957213787995526",
           "source_title": "曦望再融20亿元 四个月估值翻倍至200亿「独家」",
-          "source_content_hash": "09239a3cd7ca2ab09d1238c0c5781d7702b49ba8f60e89a2593f9f24d9140c79",
+          "source_content_hash": "0c3bc8459b07fa6dda9fd12ea6c2601b4ec9a9fc1f1f8c3e895e88b6a963bd8d",
           "quote": "Janchor Partners、中科创星、同创伟业等财务机构也参与投资",
           "quote_hash": "33f6e210a2bf7f24f4789c160f2b822e45bbad3b29dcb509d3e35a7c10ee2f08"
+        },
+        {
+          "source_id": "janchor_official_profile",
+          "source_url": "https://janchorpartners.com/zh-hans/about-us/",
+          "source_title": "关于我们 - Janchor Partners",
+          "source_content_hash": "480bfe538f3f2bd119cb49061d590c966fdfeb051d98b56cdcdb6cf3740ed7ce",
+          "quote": "自2009年成立以来，建峖一直为我们的投资合作伙伴和被投资公司提供长期、可持续的价值。通过对这个历程的回顾和反思，我们逐步认识到我们作为实业投资者的使命。 我们的使命从未被定义为“利润最大化”。长久以来， 我们努力通过创造深刻的见解和信任来产生持久的影响。在与公司合作时，我们努力像公司创始人一样思考，在跨周期的时间尺度内创造长期、可持续的价值，并在共同愿景和信任的基础上建立持久的合作关系。 通过这种方式工作，我们可以更充分地了解实际情况，从而做出更好的投资决策，回报和反馈我们的合作伙伴。 我们追求的是建峖与我们所投",
+          "quote_hash": "81425ca145a965c8e7f7302cddf6f5f1a316932045c73f57c42b7c1b194ec917"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

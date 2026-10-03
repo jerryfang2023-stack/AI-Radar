@@ -123,10 +123,23 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Alteria Capital 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "机构业务与阶段为官网自述，融资记录来自被投企业官方公告；仅记载一笔交易，不代表完整投资组合或基金业绩。",
+      "summary": "Alteria Capital 官网将其描述为面向获风险投资支持的初创企业提供风险债务及结构化融资的机构；Ultrahuman 官方公告称，2025 年 11 月获得 Alteria 提供的 100 crore 风险债务。",
+      "facts": [
+        {
+          "field": "investment_approach",
+          "label": "官网自述的核心融资产品",
+          "value": "提供风险债务及结构化融资，以帮助初创企业减少股权稀释。",
+          "source_id": "alteria_official_profile"
+        },
+        {
+          "field": "investment_stages",
+          "label": "官网自述的投资阶段",
+          "value": "从 Series A 阶段开始，延伸至 Series D 之后。",
+          "source_id": "alteria_investment_stages"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -136,6 +149,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "alteria_official_profile",
+          "source_url": "https://alteriacapital.com/",
+          "source_title": "Alteria Capital &#8211; India&#039;s Leading Venture Debt Fund &#8211; Home",
+          "source_content_hash": "cf17962e1ea1bc91afd40af528e3a6346d09837e53edbb21a12198dffff37f5e",
+          "quote": "Alteria Capital is India’s leading venture debt fund, dedicated to supporting innovative startups backed by top-tier VC sponsors. We provide customized financial solutions that fuel growth, empower entrepreneurs to scale, and help preserve founder ownership –",
+          "quote_hash": "9937352f8a6966472e7566e31cc18189801708740160fcb96a03a309395c1c38"
+        },
+        {
+          "source_id": "alteria_investment_stages",
+          "source_url": "https://alteriacapital.com/capital/",
+          "source_title": "Capital &#8211; Alteria Capital",
+          "source_content_hash": "4a505ad21a7beae0bca3c5291069a78222ee91edc814b4b469abeebfa3160190",
+          "quote": "We invest as early as Series A and stay relevant as a meaningful debt provider even past Series D. We are a sector-agnostic fund and have a portfolio across the spectrum of markets and business models. Key Features Scalable, Flexible Venture Debt for Startups",
+          "quote_hash": "31dcf61fbebd80122bb81487842cc122ea43805ae66b5488165842bc77404924"
+        },
+        {
+          "source_id": "ultrahuman_alteria_venture_debt",
+          "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-100-crore-venture-debt",
+          "source_title": "Ultrahuman raises ₹100 crore venture debt from Alteria Capital to fuel Market Expansion and Growth Season",
+          "source_content_hash": "74ad0727565bf6671f4c444bd9080c6efcdbbaa73fd111b4f078e0e3c6a13e47",
+          "quote": "Ultrahuman raises ₹100 crore venture debt from Alteria Capital to fuel Market Expansion and Growth Season Ultrahuman raises ₹100 crore venture debt from Alteria Capital to fuel Market Expansion and Growth Season November 20, 2025 Ultrahuman, the Bengaluru-base",
+          "quote_hash": "c6675fad5af6637a186f246f2678bdcd75b1e1fbac2184deff5e44960f7fa25c"
+        },
         {
           "source_id": "FISRC-228c251a3236e4ab",
           "source_url": "https://tracxn.com/d/companies/ultrahuman/__RSGzV5aJJQdyE6IBruBLiGXE7STOO3AfA1qtqw5Z4zo/funding-and-investors",
