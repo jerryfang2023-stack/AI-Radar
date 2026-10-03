@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "helloworld 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
+      "summary": "UnternehmerTUM 官方消息将 helloworld 列为 Kuro 融资参与方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "UnternehmerTUM 官方消息披露 helloworld 参与 Kuro 融资。",
+          "source_id": "PROFILE-621d50167b67a1dd7284"
+        },
         {
           "description": "融资来源记录：Kuro Technology · 早期融资 · 2026-10-02 · 本轮参投 · €10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8bd4513374ef496a"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-621d50167b67a1dd7284",
+          "source_url": "https://www.unternehmertum.de/presse/10-mio-eur-fuer-kuro-deutschlands-groesste-generalunternehmer-setzen-auf-das-berliner-ki-unternehmen",
+          "source_title": "10 Mio. EUR für Kuro: Deutschlands größte… | UnternehmerTUM",
+          "source_content_hash": "2f71cb78232e37114609c4bc2c6bccd13df1b7597e20ab17e3f69f42984c4f41",
+          "quote": "ament für Generalunternehmer weiter aus. An der Runde beteiligen sich auch Foundamental, Realyze Ventures und helloworld. Von den zwölf bestehenden Kunden zählen bereits sechs zu den 20 größten Generalunternehmern im deutschsprachigen Raum. Europa baut wieder: Straßen, Wohnungen, Rechenzentren, Energie, Verteidigung. Allein 2025 investier",
+          "quote_hash": "f1a14c66311be9021f9a475d050d7699df50378df86437ed3fdff11d198b9d1b"
+        },
         {
           "source_id": "FISRC-8bd4513374ef496a",
           "source_url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors/",
@@ -161,7 +173,11 @@
           "quote_hash": "a6a5778a2aae0bc417fd88423220413aab5919ec269c19b9bbccd92eb4369f66"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

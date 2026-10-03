@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Founderful 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
+      "summary": "TechCrunch 报道将 Founderful 列为 Sparkli 融资参与方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "TechCrunch 融资报道将 Founderful 列为 Sparkli 投资方。",
+          "source_id": "PROFILE-6bb9cbe3d24b4959da40"
+        },
         {
           "description": "融资来源记录：Sparkli · 预种子轮 · 2026-01-22 · 本轮领投 · 5 million USD。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-20a83c87c0b64e7f"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-6bb9cbe3d24b4959da40",
+          "source_url": "https://techcrunch.com/2026/01/24/former-googlers-seek-to-captivate-kids-with-an-ai-powered-learning-app/",
+          "source_title": "Former Googlers seek to captivate kids with an AI-powered learning app | TechCrunch",
+          "source_content_hash": "27be2b47544383a5ac773dcc550052d2617571d338c6a1f3c04f0b29c3f8c417",
+          "quote": "download the app by mid-2026. The company has raised $5 million in pre-seed funding led by Swiss venture firm Founderful. Sparkli is Founderful’s first pure-play edtech investment. The firm’s founding partner, Lukas Weder, said that the team’s technical skill and market opportunity nudged him to invest in the startup. “As a father of two",
+          "quote_hash": "2c7f40098f9d64352aa8012c9e24b8ca18035f3f20dfc86cbe4920898cc89c82"
+        },
         {
           "source_id": "FISRC-20a83c87c0b64e7f",
           "source_url": "https://www.trendingtopics.eu/sparkli-former-google-trio-raises-5-million-for-child-friendly-ai-learning-platform/",
@@ -161,7 +173,11 @@
           "quote_hash": "64d5a3036f53bc29fdfd92c24b63b24e0524672511020668c1724c7fec3f631c"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
