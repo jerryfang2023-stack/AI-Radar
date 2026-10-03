@@ -139,19 +139,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Andra Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "milestones": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Andra Capital",
+          "url": "https://www.andracapital.com/home/",
+          "source_id": "INV-fcabf37e543feb_home"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "coverage_status": "researched",
+      "summary": "Andra Capital官网称其通过Growth与Late-Stage两种策略投资成长阶段及临近IPO的科技企业；Positron AI在2026年9月披露的8.75亿美元C轮中将Andra列为联合领投方之一。",
+      "facts": [
+        {
+          "field": "investment_strategy",
+          "label": "官网披露的基金策略",
+          "value": "Growth与Late-Stage两类科技投资策略。",
+          "source_id": "INV-fcabf37e543feb_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Positron AI于2026年9月10日公布8.75亿美元Series C融资，新闻稿列Andra Capital为联合领投方之一。",
+          "source_id": "INV-fcabf37e543feb_positron"
+        },
         {
           "description": "融资来源记录：Positron AI · C轮 · 2026-09-10 · C轮联合领投 · $375 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3947ce709f26c22a"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-fcabf37e543feb_home",
+          "source_url": "https://www.andracapital.com/home/",
+          "source_title": "Home - Andra",
+          "source_content_hash": "088eaefa286d788ca9032b47660b2e52a0d4711df3a534841c126dbb818c4e9b",
+          "quote": "Andra seeks to maximize and capture value across a private company’s growth cycle via two distinct funds, targeting either Growth or Late-Stage investments.",
+          "quote_hash": "8078a0d6afb6d083c105226e181b185893572e6889301744167457c2105bded8"
+        },
+        {
+          "source_id": "INV-fcabf37e543feb_positron",
+          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+          "source_title": "Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
+          "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
+          "quote": "The round was co-led by NEA, Atreides Management, Valor Equity Partners, Andra Capital, Dylan Patel's SemiAnalysis Capital and Jim Clark, the founder of Silicon Graphics and Netscape.",
+          "quote_hash": "e345c9a310fff08f089ec7cd6ea89b57c76c97962dbe7f829c67c9c7e26a3530"
+        },
         {
           "source_id": "FISRC-3947ce709f26c22a",
           "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
@@ -161,7 +200,7 @@
           "quote_hash": "4a268ef2dc6771c1b3575196421137a2e838d9a10dd583cd9ff1e57e059abe05"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

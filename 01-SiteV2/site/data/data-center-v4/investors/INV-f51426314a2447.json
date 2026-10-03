@@ -123,19 +123,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Essence VC 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Essence VC 的官方组合招聘页面将其组合描述为数据与基础设施领域的早期公司；Restate 官方融资公告称其参与了该公司的种子轮。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露的组合领域",
+          "value": "官方页面描述其组合覆盖早期数据与基础设施公司。",
+          "source_id": "INV-f51426314a2447_careers"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Restate 官方宣布其 700 万美元种子融资由 Redpoint Ventures 领投，Essence VC 等参与。",
+          "source_id": "INV-f51426314a2447_restate"
+        },
         {
           "description": "融资来源记录：Restate · 历史轮次未披露 · 种子轮参投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-897ee0f062e50b23"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构组合与招聘信息",
+          "value": "Essence VC",
+          "url": "https://careers.essencevc.fund/companies",
+          "source_id": "INV-f51426314a2447_careers"
+        }
+      ],
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
       "sources": [
+        {
+          "source_id": "INV-f51426314a2447_careers",
+          "source_url": "https://careers.essencevc.fund/companies",
+          "source_title": "Companies | Essence VC Job Board",
+          "source_content_hash": "212778cb0b00ce7f43117be4ac02da6fcdfed244c35a093e70cf78de305b4b9f",
+          "quote": "Explore early-stage opportunities at our innovative data and infrastructure portfolio companies.",
+          "quote_hash": "ae9bb40865da8a648931288b36f970b9b5545926987b3468c292c9bd378632c1"
+        },
+        {
+          "source_id": "INV-f51426314a2447_restate",
+          "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
+          "source_title": "Announcing Restate 1.0, Restate Cloud, and our Seed Funding Round | Restate",
+          "source_content_hash": "8054be19ca576a84461337a5c444051f0eb9892a7bd4593d28efaa59e65e87e2",
+          "quote": "we have raised $7 million in seed funding from Redpoint Ventures , with participation from Essence VC and firstminute.capital",
+          "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
+        },
         {
           "source_id": "FISRC-897ee0f062e50b23",
           "source_url": "https://restate.dev/blog/announcing-restate-1.0-restate-cloud-and-our-seed-funding-round",
@@ -145,7 +184,7 @@
           "quote_hash": "205728ef0b28a82bd1ce20fb6e70ad2cfb3d6f7ed443c42c9442b40b6588900a"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

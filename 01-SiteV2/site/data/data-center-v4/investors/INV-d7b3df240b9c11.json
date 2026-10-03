@@ -139,19 +139,67 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Discovery Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Discovery Ventures 是一家专注医疗健康、生物技术的风险投资团队。官网自述其关注人工智能、基因治疗、纳米技术和仿生学等领域。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露投资方向",
+          "value": "医疗健康与生物技术，官网列出人工智能、基因治疗、纳米技术和仿生学等方向。",
+          "source_id": "discovery_sectors"
+        },
+        {
+          "field": "organization_history",
+          "label": "官网自述发展历程",
+          "value": "官网称团队在医疗健康投资领域有超过 15 年的历史；这是机构自述，不代表法定成立日期。",
+          "source_id": "discovery_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "BigHat Biosciences 2026 年 9 月 24 日的 Series C 公告将 Discovery Ventures 列为该公司的既有投资方。",
+          "source_id": "bighat_series_c"
+        },
         {
           "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮参投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3372eff279ee29db"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Discovery Ventures",
+          "url": "https://discovery.vc/",
+          "source_id": "discovery_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "bighat_series_c",
+          "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
+          "source_title": "BigHat Biosciences Announces $75 Million Series C Financing to Advance AI-Designed Therapeutics and Leading Agentic Data Platform for Rapid Protein Design",
+          "source_content_hash": "84685446ee4b2690d9ca7016de80b3f2451ffb0ed9b2e6f0344a42cda55f7330",
+          "quote": "SAN MATEO, CALIFORNIA - September 24, 2026: BigHat Biosciences, a clinical-stage, AI-driven protein therapeutics platform company, today announced the completion of a $75 million Series C financing, bringing its total funding raised to date to $223 million. The round was co-led by DFJ Growth & Premji Invest with participation from Catalio Capital Management, LG Technology Ventures, Sigmas Group, and existing investors including 8VC, Alexandria Venture Investments, Amgen Ventures, Andreessen Horowitz (a16z), Discovery Ventures, GRIDS Capital, Intermountain Ventures, Eli Lilly and Company, Merck Global Health Innovation Fund, Quadrille Capital, and Section 32. About BigHat Biosciences: BigHat Biosciences is an AI-native biotechnology company designing and developing next-generation protein",
+          "quote_hash": "383199a2a4fc9b732587c26c4e123689b83cd1a5ebbd1a56140831993e48553d"
+        },
+        {
+          "source_id": "discovery_official",
+          "source_url": "https://discovery.vc/",
+          "source_title": "Discovery Ventures",
+          "source_content_hash": "0611ec9d498234d642b438f12e4cf7e7b2a8aba73f724f5c373b24e5609cca5b",
+          "quote": "We are a leading healthcare VC firm, building on a 15+ year history with a proven track record of success Submit Pitch Partnering with the Next Generation of Biotech & Healthcare Leaders Global Scale. Founder-focused. Discovery Ventures™ combines deep technical expertise, smart capital and a global network to accelerate biomedical innovation. Discovery Ventures unleashes the potential of groundbreaking biotech with",
+          "quote_hash": "079d7a9ab6ee1590299ed642c3f2dc495cc1398b5784606cb7d429c55055db11"
+        },
+        {
+          "source_id": "discovery_sectors",
+          "source_url": "https://discovery.vc/",
+          "source_title": "Discovery Ventures",
+          "source_content_hash": "0611ec9d498234d642b438f12e4cf7e7b2a8aba73f724f5c373b24e5609cca5b",
+          "quote": "From Artificial Intelligence and Gene Therapy to Nanotechnology and Bionics, we provide the capital and strategic guidance needed to scale next-generation technology. Our Track Record is Your Advantage. For over 15 years, our team has served as a trusted partner to the biotech ecosystem. Our team combines deep technical expertise with a proven track record, having played key roles in some of the industry’s most",
+          "quote_hash": "64d2151c76df7b5f904ca88f67a43512484118067c587dc3fe70cf16d42ebd55"
+        },
         {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
@@ -161,7 +209,8 @@
           "quote_hash": "29ee1bd4d9964129aa83fce2687ebd9df8a70a15e737e2ac5242f64fffcc5e46"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

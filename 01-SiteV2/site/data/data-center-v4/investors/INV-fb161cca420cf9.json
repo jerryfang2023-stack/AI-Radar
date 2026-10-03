@@ -139,19 +139,66 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Mythos Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "milestones": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Mythos Ventures",
+          "url": "https://www.mythos.vc/",
+          "source_id": "INV-fb161cca420cf9_home"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "coverage_status": "researched",
+      "summary": "Mythos Ventures官网自述为投资transformative AI时代、促进社会福祉技术的早期风险投资机构，面向pre-seed与seed阶段。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "促进社会福祉的技术（官网用语：prosocial technologies）。",
+          "source_id": "INV-fb161cca420cf9_home"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的阶段",
+          "value": "Pre-seed和seed阶段。",
+          "source_id": "INV-fb161cca420cf9_home"
+        },
+        {
+          "field": "check_size",
+          "label": "官网披露支票范围",
+          "value": "10万至200万美元。",
+          "source_id": "INV-fb161cca420cf9_homecheck"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Inherent · 种子轮 · 2026-08-23 · 本轮参投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ed8df2c3d21fb938"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-fb161cca420cf9_home",
+          "source_url": "https://www.mythos.vc/",
+          "source_title": "Mythos",
+          "source_content_hash": "6f4a935acf70a1ce7dfa22f98e01ecdf751dff3697c3c0cc8f5f542dc0ceace8",
+          "quote": "an early-stage venture capital firm investing in prosocial technologies for the transformative AI era.",
+          "quote_hash": "08232e145054323ffba8ec49a7ec3001e152d77c9e7d39a4aaeaf41954a71966"
+        },
+        {
+          "source_id": "INV-fb161cca420cf9_homecheck",
+          "source_url": "https://www.mythos.vc/",
+          "source_title": "Mythos",
+          "source_content_hash": "6f4a935acf70a1ce7dfa22f98e01ecdf751dff3697c3c0cc8f5f542dc0ceace8",
+          "quote": "writing $100k - $2M checks into pre-seed and seed-stage companies.",
+          "quote_hash": "16613c979eadc93e5ab560b9e25db891f6c088a559e400857248191fab4fbe9a"
+        },
         {
           "source_id": "FISRC-ed8df2c3d21fb938",
           "source_url": "https://www.wsgr.com/en/insights/wilson-sonsini-advises-inherent-on-dollar50-million-seed-round-as-company-emerges-from-stealth.html?ref=thesaasnews.com",
@@ -161,7 +208,7 @@
           "quote_hash": "3eaf37137bbf2e93fe23706845f4924135ac9dbedaa8912cdb760d52c8be7c19"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

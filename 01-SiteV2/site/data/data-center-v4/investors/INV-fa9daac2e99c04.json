@@ -139,19 +139,64 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "TTV Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "milestones": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "TTV Capital",
+          "url": "https://ttvcapital.com/",
+          "source_id": "INV-fa9daac2e99c04_home"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "coverage_status": "researched",
+      "summary": "TTV Capital官网将其定位为长期投资早期金融科技公司的风险投资机构，并称其在该领域已投资逾二十年。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资重点",
+          "value": "早期金融科技企业。",
+          "source_id": "INV-fa9daac2e99c04_home"
+        },
+        {
+          "field": "investment_history",
+          "label": "金融科技投资年限",
+          "value": "官网称已在金融科技领域投资逾20年。",
+          "source_id": "INV-fa9daac2e99c04_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "TTV Capital称其于2023年首次投资Outmarket，并在后续发展中持续支持。",
+          "source_id": "INV-fa9daac2e99c04_outmarket"
+        },
         {
           "description": "融资来源记录：Outmarket AI · B轮 · 2026-09-25 · 本轮参投 · $34.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1a2ad9b1108e3f59"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-fa9daac2e99c04_home",
+          "source_url": "https://ttvcapital.com/",
+          "source_title": "Home - TTV Capital",
+          "source_content_hash": "c2418f39e03934e758a897f1463a60d15e009f856d172405cadbc374a4e75ce8",
+          "quote": "TTV Capital is one of the longest-running venture capital firms investing in early-stage fintech companies.",
+          "quote_hash": "5f388b697fff27ecc3d6190bec63312b028d050f6e262367fc566e6a679c08de"
+        },
+        {
+          "source_id": "INV-fa9daac2e99c04_outmarket",
+          "source_url": "https://ttvcapital.com/insights-article/why-we-invested-in-outmarket/",
+          "source_title": "Why We Invested in Outmarket - TTV Capital",
+          "source_content_hash": "288919ef243a963fb4f63f20118b55a37d908ece0e069b3f9f28b672ce5b1cdf",
+          "quote": "We made our initial investment in 2023 and have continued to support the business through its rapid growth.",
+          "quote_hash": "12ca51957b8a5cf891767434777c710cc1cc69b247323c01cb8e64481bd92d81"
+        },
         {
           "source_id": "FISRC-1a2ad9b1108e3f59",
           "source_url": "https://www.prnewswire.com/news-releases/outmarket-ai-raises-34-5m-series-b-to-solidify-position-as-the-1-ai-platform-for-insurance-302891583.html",
@@ -161,7 +206,7 @@
           "quote_hash": "9c4dfa4bd1f917cdee90a6d7b63e7f79e690df1508c925d76e125149ae2fbe18"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

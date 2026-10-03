@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Superhero Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-28；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Superhero Capital 是一家在赫尔辛基创立的种子阶段风险投资机构，重点支持芬兰和波罗的海地区以软件为主的创业公司。官网披露其首笔投资最高为 100 万欧元，并称目前投资其 2024 基金。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网以 Seed funding 描述其投资阶段。",
+          "source_id": "superhero_official"
+        },
+        {
+          "field": "investment_geography",
+          "label": "官网披露投资地域",
+          "value": "主要关注芬兰与波罗的海国家（New Nordics），也会偶尔参与区域外项目。",
+          "source_id": "superhero_official"
+        },
+        {
+          "field": "initial_check_size",
+          "label": "官网披露首笔投资额",
+          "value": "官网披露首笔投资额最高为 100 万欧元；网页亦列出其 2024 基金。",
+          "source_id": "superhero_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,32 @@
           "source_id": "FISRC-73a8427c95c14731"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Superhero Capital",
+          "url": "https://superherocapital.com/",
+          "source_id": "superhero_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "superhero_official",
+          "source_url": "https://superherocapital.com/",
+          "source_title": "Searching for the next Superheroes",
+          "source_content_hash": "427cbd7747219a69063af9e12627ec52d90155863398f677efeb7d4aefd893c4",
+          "quote": "Seed funding for the superheroes. In case you haven´t noticed yet, we are a VC fund. Nothing more, nothing less. So tell us who you are, why do you do this and what you look for. We initially invest up to 1M€ to help you get to the next level, and our primary focus is on software-driven startups in the New Nordics (Finland and the Baltics). We currently invest from our 2024 fund. Occasionally we might join a round outside the New Nordics too. We want you to answer 2 simple questions: \"Why us?\" \"Why now? Everything else is nice to have. Ultimately, you matter. As simple as that. And in return",
+          "quote_hash": "8bcada62466780784f112c79b3338f15870d1ef067835e4f89324ea2e15f2e03"
+        },
+        {
+          "source_id": "superhero_anniversary",
+          "source_url": "https://superherocapital.com/superhero-capital-celebrates-10-year-anniversary/",
+          "source_title": "Superhero Capital Celebrates 10-Year Anniversary &#8211; Searching for the next Superheroes",
+          "source_content_hash": "ff10aa346ccd7502b8bf2baaea84a5f4f9e9cee5bc47456abb6af4fe207e9ab9",
+          "quote": "November 17th marks 10 years since Superhero Capital first came to life in Helsinki, we’re taking a moment to look back at how far this journey has carried us. What started with a small team of three investing in Finland has grown into a nine-strong crew backing founders across",
+          "quote_hash": "fe4051d9eae6da90ad6c7f9448c94f5e88d2bae898bccfde4065d70c79ae0dea"
+        },
         {
           "source_id": "FISRC-73a8427c95c14731",
           "source_url": "https://www.eu-startups.com/2026/09/estonias-bilt-me-raises-e615k-with-backing-from-bolt-and-lightyear-founders-to-scale-its-ai-native-mobile-app-builder",
@@ -161,7 +203,8 @@
           "quote_hash": "37b91aa5b1cab6deec0cd34871df78cefe53a11833a19760936f842e0a349923"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

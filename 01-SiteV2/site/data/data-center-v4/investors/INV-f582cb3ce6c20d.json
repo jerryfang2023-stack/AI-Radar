@@ -139,19 +139,94 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Zero2IPO Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "清科创投官网英文关于页面使用 Zero2IPO Venture Capital 名称，称该机构成立于 2006 年，是以研究为基础的风险投资机构，关注金融科技、文化娱乐、新消费和生活服务等领域的早期高成长企业。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "group_relationship",
+          "label": "集团官网列示关系",
+          "value": "清科集团官网将清科创投列于旗下业务及网站列表。",
+          "source_id": "INV-f582cb3ce6c20d_group"
+        },
+        {
+          "field": "investment_approach",
+          "label": "官网自述投资方法",
+          "value": "官网将 Zero2IPO Venture Capital 描述为以研究为基础的风险投资机构。",
+          "source_id": "INV-f582cb3ce6c20d_about_profile"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "主要关注金融科技、文化娱乐、新消费、生活服务等领域。",
+          "source_id": "INV-f582cb3ce6c20d_about_focus"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网自述投资阶段",
+          "value": "致力于发掘和投资具有潜力的快速成长早期企业。",
+          "source_id": "INV-f582cb3ce6c20d_about_focus"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2006",
+          "description": "官网英文关于页面称该机构成立于 2006 年。",
+          "source_id": "INV-f582cb3ce6c20d_about_profile"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Violoop · 多轮融资 · 2026-09-02 · 本轮参投 · 亿级。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4ce1b109c402e02b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "清科创投官网",
+          "value": "清科创投",
+          "url": "https://vc.zero2ipo.com.cn/",
+          "source_id": "INV-f582cb3ce6c20d_vc"
+        }
+      ],
+      "coverage_note": "官网英文关于页面使用“Zero2IPO Venture Capital”名称，中文版官网品牌为“清科创投”；公开页面未确认更具体的法律管理主体。",
       "sources": [
+        {
+          "source_id": "INV-f582cb3ce6c20d_group",
+          "source_url": "https://zero2ipo.com.cn/",
+          "source_title": "清科集团 | Zero2IPO Group",
+          "source_content_hash": "dc5562ed61becb6cac0d8ee444f629de4e3f4377933484a855294a701c5092ec",
+          "quote": "清科研究中心 清科咨询 清科传媒 沙丘投研院 清科科创 清科国际 清科资本 清科创投 清科产投 清科母基金 旗下网站",
+          "quote_hash": "c9db22e619c50589cf7bbba67b13a5c682539177d360b859f19f7ed7787264b6"
+        },
+        {
+          "source_id": "INV-f582cb3ce6c20d_vc",
+          "source_url": "https://vc.zero2ipo.com.cn/",
+          "source_title": "清科创投",
+          "source_content_hash": "330a1a16377a12d5101e27356bfd03a7372ea3fd0eee8ad8ec9f46346606a4b2",
+          "quote": "清科创投 EN 首 页 home 关于我们 ABOUT US 投资团队 TEAM 投资案例 PORTFOLIO 联系我们 CONTACT US",
+          "quote_hash": "7cc8cf0fe0a45f17af1616b87db07d96ac95315baad4fde7c3daf61dae76073a"
+        },
+        {
+          "source_id": "INV-f582cb3ce6c20d_about_profile",
+          "source_url": "https://vc.zero2ipo.com.cn/about_en.aspx?page=about_en",
+          "source_title": "About Us - Zero2IPO Ventures",
+          "source_content_hash": "c5cd7d79e35fb1c218b9e6b00c8f66dfa00f81d79c3364c846b18e34aa0a74b4",
+          "quote": "Zero2IPO Venture Capital, a research-driven venture capital firm established in 2006",
+          "quote_hash": "9ab209892bdd88bee1eab767deca35da3c850a2059ca18817e1c5f1c5ac4404b"
+        },
+        {
+          "source_id": "INV-f582cb3ce6c20d_about_focus",
+          "source_url": "https://vc.zero2ipo.com.cn/about_en.aspx?page=about_en",
+          "source_title": "About Us - Zero2IPO Ventures",
+          "source_content_hash": "c5cd7d79e35fb1c218b9e6b00c8f66dfa00f81d79c3364c846b18e34aa0a74b4",
+          "quote": "Focusing mainly on fintech, culture & entertainment, new consumption, life services and other sectors, Zero2IPO Venture Capital is committed to discovering and investing in potential fast-growingearly-stage enterprises.",
+          "quote_hash": "f2fc28b66d5ec878c5da422923e713509910172a65d67fa6f0b4c50d073ed4ae"
+        },
         {
           "source_id": "FISRC-4ce1b109c402e02b",
           "source_url": "https://i.ifeng.com/c/8w5nAa2tSBS",
@@ -161,7 +236,7 @@
           "quote_hash": "ae33d8aaa0d81919796e4f82ef2f77d2f6b325deab1cc71ff9122e5fdec30426"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

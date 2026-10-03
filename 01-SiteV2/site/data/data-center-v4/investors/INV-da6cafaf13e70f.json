@@ -139,19 +139,92 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "NH Investment & Securities 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "coverage_note": "该档案按韩国监管登记主体 NH Investment & Securities Co., Ltd. 核验。韩国金融监管披露将其行业归为证券经纪；融资记录中的参投身份应按具体交易证据理解，不据此将本主体误称为独立风险投资基金或与 NH Venture Investment 合并。",
+      "summary": "NH Investment & Securities Co., Ltd. 是韩国金融投资公司。韩国金融集团官网记载其于 1969 年 1 月 16 日成立、2014 年成为 NongHyup Financial Group 子公司并于同年更名；韩国 DART 将其列为 KOSPI 上市公司，行业分类为证券经纪。",
+      "facts": [
+        {
+          "field": "establishment_date",
+          "label": "成立日期",
+          "value": "1969-01-16；来源为 NongHyup Financial Group 官网和 DART 登记。",
+          "source_id": "nh_dart"
+        },
+        {
+          "field": "business_industry",
+          "label": "监管披露行业",
+          "value": "Securities brokerage（证券经纪）。",
+          "source_id": "nh_dart"
+        },
+        {
+          "field": "listing_status",
+          "label": "上市情况",
+          "value": "韩国 KOSPI 市场上市。",
+          "source_id": "nh_dart"
+        },
+        {
+          "field": "parent_group",
+          "label": "集团归属",
+          "value": "NongHyup Financial Group 官网记载，NH Investment & Securities 于 2014 年成为其子公司。",
+          "source_id": "nh_group_history"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "1969-01-16",
+          "description": "成立，初始名称为 Han-Bo Securities。",
+          "source_id": "nh_group"
+        },
+        {
+          "date": "2014-06",
+          "description": "成为 NongHyup Financial Group 子公司。",
+          "source_id": "nh_group_history"
+        },
+        {
+          "date": "2014-12",
+          "description": "更名为 NH Investment & Securities，并与 NongHyup Investment & Securities 合并。",
+          "source_id": "nh_group_history"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：LinqAlpha · A轮 · 2026-07-02 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2967c8cb86b79dd2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NH Investment & Securities 官网",
+          "value": "www.nhqv.com",
+          "url": "https://www.nhqv.com/",
+          "source_id": "nh_dart"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "nh_dart",
+          "source_url": "https://englishdart.fss.or.kr/dsbc001/selectPopup.ax?selectKey=00120182",
+          "source_title": "Company infomation Popup",
+          "source_content_hash": "4be82ee5651bad489e0f24a9c3b5c3ea794d27aaa17089be5dccc51725e470b2",
+          "quote": "Company Name (English) NH INVESTMENT & SECURITIES CO.,LTD. Company Code 005940 Representative Market Listing KOSPI Market Corporation Registration Number 110111-0098130 Taxpayer Identification Number 116-81-03693 Address Website www.nhqv.com IR Website Telephone 02-768-7000 Fax 768-7229 Industry Securities brokerage Establishment Date 1969-01-16 Fiscal Month",
+          "quote_hash": "027528a1a7019f661db018fe20239906c22e28261420a3715138669d39fdc090"
+        },
+        {
+          "source_id": "nh_group",
+          "source_url": "https://eng.nhfngroup.com/user/indexSub.do?codyMenuSeq=887882104&siteId=eng",
+          "source_title": "NH농협금융지주(ENG)",
+          "source_content_hash": "5dd7711676f1ab09cb8984d23c411eb96f076e0fd747d5708ec68207e14b1531",
+          "quote": "Establishment January 16, 1969(name: Han-Bo Securities) CEO Shin Jae Wook, Bae Kwang Soo Largest shareholder NongHyup Financial Group(63.27%) Address Parc.1 NH Finance Tower(Tower2) 108 Yeoui-daero Yeongdeungpo-gu Seoul 07335 Website http://www.nhqv.com",
+          "quote_hash": "5435bcf39de16a561ca056d266519807f0c2ce26301943f6e1d6638c7d97b6de"
+        },
+        {
+          "source_id": "nh_group_history",
+          "source_url": "https://eng.nhfngroup.com/user/indexSub.do?codyMenuSeq=887882104&siteId=eng",
+          "source_title": "NH농협금융지주(ENG)",
+          "source_content_hash": "5dd7711676f1ab09cb8984d23c411eb96f076e0fd747d5708ec68207e14b1531",
+          "quote": "2014. 06 Company becomes subsidiary of NongHyup Financial Group 2014. 12 Changed name to NH Investment & Securities Merged with NongHyup Investment & Securities 2016. 01 Launched Wealth Management Brand 'QV' 2016. 08 Launched the first hedge fund \"NH Absolute Return No. 1\" in the industry 2017. 08 Acquired a license for real estate investment advisory business 2017. 11 Designated as an extra-large investment bank",
+          "quote_hash": "e2819d725d0ec570e780eb42a8bd87624538d435d2159045b7dec6b79be07884"
+        },
         {
           "source_id": "FISRC-2967c8cb86b79dd2",
           "source_url": "https://www.prnewswire.com/news-releases/linqalpha-raises-22-million-to-build-the-alpha-intelligence-layer-for-global-public-markets-302816647.html",
@@ -161,7 +234,7 @@
           "quote_hash": "635226e5bbc13dc2401a8d1b21681f6e106ffa66c6dbd898c4b733e9f4fc2dd6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -139,19 +139,68 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "ArcTern Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "milestones": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "ArcTern Ventures",
+          "url": "https://www.arcternventures.com/",
+          "source_id": "INV-fc8737873900d4_home"
+        }
+      ],
+      "last_verified_at": "2026-10-03",
+      "coverage_status": "researched",
+      "summary": "ArcTern Ventures自述聚焦“可持续智能”：支持降低AI自身排放、并运用AI推动工业减排的创业公司。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "去碳化AI及利用AI加速工业去碳化。",
+          "source_id": "INV-fc8737873900d4_home"
+        },
+        {
+          "field": "investment_pillars",
+          "label": "官网披露的投资支柱",
+          "value": [
+            "清洁能源",
+            "清洁算力",
+            "清洁工业"
+          ],
+          "source_id": "INV-fc8737873900d4_home"
+        }
+      ],
       "track_record": [
+        {
+          "description": "Normal Computing官网投资方列表将ArcTern Ventures列为投资者，作为其公开组合活动记录。",
+          "source_id": "INV-fc8737873900d4_normal"
+        },
         {
           "description": "融资来源记录：Normal Computing · 其他融资 · 2026-03-25 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c1b4f6326a3ee76"
         }
       ],
-      "contacts": [],
       "sources": [
+        {
+          "source_id": "INV-fc8737873900d4_home",
+          "source_url": "https://www.arcternventures.com/",
+          "source_title": "Home - ArcTern Ventures",
+          "source_content_hash": "9467186e1dd3413b3068902233910c214ba35d15a9052005ac7669464a959833",
+          "quote": "ArcTern backs mission-driven founders decarbonizing AI and utilizing that intelligence to accelerate industrial decarbonization for a better planet – we call it sustainable intelligence.",
+          "quote_hash": "a911f31399628b042974c19242ef5adef1a1f79fbbd56137d74b94ebe33cdb11"
+        },
+        {
+          "source_id": "INV-fc8737873900d4_normal",
+          "source_url": "https://www.normalcomputing.com/about",
+          "source_title": "About - Normal Computing",
+          "source_content_hash": "8755ef9364c001278d3287c7f59c673501e87469481d08e2120a0ea5aa3a0615",
+          "quote": "INVESTOR ArcTern Ventures",
+          "quote_hash": "59ecc582125174fa101458430a1695259fb649e59fb9ec2b0c3af9a2b540e577"
+        },
         {
           "source_id": "FISRC-3c1b4f6326a3ee76",
           "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
@@ -161,7 +210,7 @@
           "quote_hash": "ace2c505954342f14be106f335c319907b33342a8a62e9f212abf4fd2c1a2721"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

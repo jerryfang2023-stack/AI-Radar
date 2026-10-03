@@ -124,18 +124,42 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Hawk Hill Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "summary": "Hawk Hill Ventures 官网投资组合页列出 Sazabi 为 2025 年种子项目，并说明其为 AI 原生可观测性平台；本档案仅覆盖官网公开的投资组合信息。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "官网投资组合页将 Sazabi 列为 2025 年种子项目，并将其描述为 AI 原生可观测性平台。",
+          "source_id": "INV-f6a8e7d4dcc371_hawk"
+        },
         {
           "description": "融资来源记录：Sazabi · 历史轮次未披露 · Seed轮投资方。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-1d31cc70866958e8"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "投资组合页面",
+          "value": "Hawk Hill Ventures",
+          "url": "https://hawkhill.vc/investments",
+          "source_id": "INV-f6a8e7d4dcc371_hawk"
+        }
+      ],
+      "coverage_note": "当前可核实的一手资料仅为官网投资组合页及项目披露；尚未取得足以描述机构策略、团队或基金结构的一手信息。",
       "sources": [
+        {
+          "source_id": "INV-f6a8e7d4dcc371_hawk",
+          "source_url": "https://hawkhill.vc/investments",
+          "source_title": "Hawk Hill Ventures",
+          "source_content_hash": "1f05d7896ac1a6c1fb77adb6c5b6eefe9f91ae43d878e6ce27c111261465d317",
+          "quote": "Sazabi ( Seed , 2025 ) An AI-native observability platform built to address the unique challenges facing software developers in the AI era.",
+          "quote_hash": "8eca8932097a20a82e31432d4d0ece06ec299a390cc929a5f0426998e4e62c85"
+        },
         {
           "source_id": "FISRC-1d31cc70866958e8",
           "source_url": "https://www.caplight.com/company/sazabi",
@@ -145,7 +169,7 @@
           "quote_hash": "3ea2f3658c2af83ef939a11d9bd115f2a3b2fa4c5d2d281566a2d2bbfc81b4f0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

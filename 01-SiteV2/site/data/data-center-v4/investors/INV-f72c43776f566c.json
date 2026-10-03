@@ -140,10 +140,26 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Schroders Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-06-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Schroders Capital 官网介绍其全球私募市场投资平台，强调主动管理和中端市场专长；其私募股权策略覆盖收购、成长型企业及全球风险投资。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述私募市场方法",
+          "value": "在全球私募市场寻找结构性低效与机会，采用主动运营、组合管理及中端市场专长。",
+          "source_id": "INV-f72c43776f566c_about"
+        },
+        {
+          "field": "private_equity_strategy",
+          "label": "私募股权策略",
+          "value": "小型与中型并购、成长型企业和全球风险投资。",
+          "source_id": "INV-f72c43776f566c_private_equity"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,8 +167,33 @@
           "source_id": "FISRC-92bdc04603fa5ff2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Schroders Capital",
+          "url": "https://www.schroderscapital.com/en/global/professional/about-us/",
+          "source_id": "INV-f72c43776f566c_about"
+        }
+      ],
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
       "sources": [
+        {
+          "source_id": "INV-f72c43776f566c_about",
+          "source_url": "https://www.schroderscapital.com/en/global/professional/about-us/",
+          "source_title": "About Schroders Capital | Expert edge in private markets",
+          "source_content_hash": "6732ac7c284b7891f5bbb6a364152be11240cfea30060f52a13db0d153985647",
+          "quote": "Our entrepreneurial teams leverage our active operational and portfolio management approach, global platform and reach, and specialised mid-market focus to uncover opportunities others do not see, delivering at scale and building a market-leading position across some of the most attractive and high-growth segments of this rapidly evolving investment universe.",
+          "quote_hash": "c8b17d113aaab9d7007a27b366bef9db06106f2ff61da3c355e2dcdd8c0ab320"
+        },
+        {
+          "source_id": "INV-f72c43776f566c_private_equity",
+          "source_url": "https://www.schroderscapital.com/en/global/professional/capabilities/private-equity/",
+          "source_title": "Private equity investing | Schroders Capital",
+          "source_content_hash": "28af5b91cc17372213404d122a8d17152d8d89a408e134959710f0c2549de796",
+          "quote": "our private equity strategies focus on small and mid-market buyouts, growth companies and global venture capital",
+          "quote_hash": "8393c0d745aaf32c62cdb382c055c7523b3a08e492b5c415d8cb735a4f62206d"
+        },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
           "source_url": "https://multiples.vc/private-comps/suno",
@@ -162,7 +203,7 @@
           "quote_hash": "a7a352f54d1103d662e3fd57611cc758f02f89ed829f5fc5a399cb020ec64fa6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

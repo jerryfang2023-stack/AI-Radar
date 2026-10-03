@@ -139,10 +139,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Conviction Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Conviction Partners 是一家面向 AI 原生软件公司的风险投资机构。官网自述其投资重点是将 AI 模型转化为产品与行业应用，偏早期投资，并披露单笔投资额为 100 万至 2500 万美元。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "面向 AI 原生（Software 3.0）公司，关注 AI 模型到产品的转化。",
+          "source_id": "conviction_official"
+        },
+        {
+          "field": "investment_check_size",
+          "label": "官网披露单笔投资额",
+          "value": "100 万至 2500 万美元；官网页面核验日期为 2026-10-03。",
+          "source_id": "conviction_official"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "官网称其偏早期投资，且常作为首位投资人。",
+          "source_id": "conviction_official"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +168,24 @@
           "source_id": "FISRC-706dcdf4cbb7e612"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Conviction Partners",
+          "url": "https://www.conviction.com/",
+          "source_id": "conviction_official"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "conviction_official",
+          "source_url": "https://www.conviction.com/",
+          "source_title": "Conviction Partners",
+          "source_content_hash": "92fe26f69484624e7c77387df47e50cb9f7ca232205aaee77b1e6e61fc575716",
+          "quote": "purpose-built to serve AI-Native, \"Software 3.0\" companies. We believe we are extremely early in the translation of powerful AI models to powerful products that transform industries. We partner with the most important companies of tomorrow with $1 to $25M checks. We like to invest early, and are often the first investor. We have the courage of our own convictions. We have a wide and deep network that we put to work",
+          "quote_hash": "7e46c722d1315b6efc2a1cf09a26bf5d5aa59d9145a8602da13a234ee7ee2249"
+        },
         {
           "source_id": "FISRC-706dcdf4cbb7e612",
           "source_url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents",
@@ -161,7 +195,8 @@
           "quote_hash": "2e371433b956568ba1a3b9c1aa0d621bf73ffcd51ff61505abc124961c4c9709"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

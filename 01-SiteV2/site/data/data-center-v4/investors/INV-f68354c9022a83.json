@@ -139,10 +139,32 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Vertex Ventures US 当前按“投资组织”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "coverage_status": "researched",
+      "summary": "Vertex Ventures US 官网自述其投资基础设施与 SaaS 领域的早期创始人，可领投或联合领投种子轮和 A 轮。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网自述投资方向",
+          "value": "基础设施与 SaaS 领域的早期创业公司。",
+          "source_id": "INV-f68354c9022a83_vertex"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露投资阶段",
+          "value": "领投或联合领投种子轮和 A 轮。",
+          "source_id": "INV-f68354c9022a83_vertex"
+        },
+        {
+          "field": "investment_check_size",
+          "label": "官网披露投资额度",
+          "value": "单笔 50 万至 1000 万美元。",
+          "source_id": "INV-f68354c9022a83_vertex"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +172,25 @@
           "source_id": "FISRC-62e06e29d2d7be04"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "Vertex Ventures US",
+          "url": "https://vvus.com/",
+          "source_id": "INV-f68354c9022a83_vertex"
+        }
+      ],
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
       "sources": [
+        {
+          "source_id": "INV-f68354c9022a83_vertex",
+          "source_url": "https://vvus.com/",
+          "source_title": "Vertex Ventures US | Vertex Ventures",
+          "source_content_hash": "2bc0ebdc5b74d56678016d215bec6ee298fa0fa6d98b321eb0d11f0400dd9565",
+          "quote": "We partner with and invest in early-stage founders building infrastructure and SaaS companies. Lead or Co-lead Seed & Series A Check sizes $500k - $10M",
+          "quote_hash": "fbc99ed8ad46464ab42dcd3a59ee7841a873eb80b23f8e412d01a8cc44324b9c"
+        },
         {
           "source_id": "FISRC-62e06e29d2d7be04",
           "source_url": "https://www.thesaasnews.com/news/metaview-raises-60m-series-c/",
@@ -161,7 +200,7 @@
           "quote_hash": "16a7517656068d3f1048a9df70246545a5ef06f573e9a31d29dc4be2254818aa"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

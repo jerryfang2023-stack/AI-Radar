@@ -139,19 +139,73 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "MetaVC Partners 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "coverage_status": "researched",
+      "summary": "MetaVC Partners 是一家投资于先进材料和超材料硬科技初创公司的早期风险投资机构，关注成像与传感、能源与可持续发展、通信及计算处理等方向。机构官网 2023 年公告称其完成 6200 万美元基金募集。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网披露投资方向",
+          "value": "以超材料等先进材料构建成像与传感、能源与可持续发展、下一代通信和计算处理相关公司。",
+          "source_id": "metavc_home"
+        },
+        {
+          "field": "fund_size_2023",
+          "label": "官网 2023 年披露基金规模",
+          "value": "MetaVC Partners 官网公告称，MetaVC Partners, LLC 完成 6200 万美元基金募集，用于投资早期硬科技超材料初创公司。",
+          "source_id": "metavc_fund_2023"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2023-04-12",
+          "description": "MetaVC Partners 公告称其完成 6200 万美元基金募集。",
+          "source_id": "metavc_fund_2023"
+        }
+      ],
       "track_record": [
+        {
+          "description": "MetaVC Partners 2023 年官网公告将 Neurophos 列为其当时投资组合公司之一。",
+          "source_id": "metavc_portfolio"
+        },
         {
           "description": "融资来源记录：Neurophos Inc. · A轮 · 2026-01-22 · 本轮参投 · $110 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-d542f1ad9da7e0ac"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "MetaVC Partners",
+          "url": "https://www.metaventurepartners.com/",
+          "source_id": "metavc_home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "metavc_home",
+          "source_url": "https://www.metaventurepartners.com/",
+          "source_title": "Home | MetaVC Partners",
+          "source_content_hash": "13ef9d151cd834d1ea0a4a0df6dda14334c34453b69a773bc9db37365f6148b7",
+          "quote": "We invest in entrepreneurs who solve big problems. We are building disruptive businesses using new advanced materials, such as Metamaterials in new markets in Imaging and Sensors, Energy and Sustainability, Next Generation Communications and Faster Computer Processing Power. We are experienced investors and operators",
+          "quote_hash": "fa128b3f04156b3d098a204caa05eb1f6f7903fc1aa949fee48ef11d1d27dc91"
+        },
+        {
+          "source_id": "metavc_fund_2023",
+          "source_url": "https://www.metaventurepartners.com/news/metavc-partners-raises-%2462-million-fund-to-invest-in-hard-tech-metamaterials-startups",
+          "source_title": "MetaVC Partners Raises $62 Million Fund to Invest in Hard-Tech Metamaterials Startups",
+          "source_content_hash": "df73b7d79981defb87cea1ed7bcf4b25aeb61e0a08952a73f7aad786262495dd",
+          "quote": "April 12, 2023 SAN FRANCISCO, April 12, 2023 /PRNewswire/ -- MetaVC Partners today announced the close of MetaVC Partners, LLC., a $62 million fund that will invest in early-stage, hard-tech metamaterials startup companies. Investors in the fund include Corning Inc., Gates Frontier, JSR Corporation along with other family wealth offices and institutional pension funds. SAN FRANCISCO, April 12, 2023 /PRNewswire/ --",
+          "quote_hash": "a3ca101da7bf0d0d3d1a93095c60afc6187aca7e24e63f4bdccdd04186008090"
+        },
+        {
+          "source_id": "metavc_portfolio",
+          "source_url": "https://www.metaventurepartners.com/news/metavc-partners-raises-%2462-million-fund-to-invest-in-hard-tech-metamaterials-startups",
+          "source_title": "MetaVC Partners Raises $62 Million Fund to Invest in Hard-Tech Metamaterials Startups",
+          "source_content_hash": "df73b7d79981defb87cea1ed7bcf4b25aeb61e0a08952a73f7aad786262495dd",
+          "quote": "Among MetaVC Partners' current investments: Lumotive uses the physics of metamaterials to produce tiny semiconductor scanning sensors for anti-collision systems and consumer electronics applications. Mangata Networks is building a proprietary network of satellites and terrestrial systems to bring low-cost, ubiquitous connectivity to networks, data, and devices. Imagia uses metamaterials to produce flat-optical lens technologies used in AR/VR headsets and other consumer electronics products. Neurophos is building high-performance optical AI processors that will be over one hundred times faster and more energy-efficient than today's state-of-the-art AI computer processors. \"We are excited to continue to partner with founders building highly disruptive hard-tech product startups that are changing the pace of computing power, how we embed smart sensors in anti-collision systems, and how we",
+          "quote_hash": "ae41c08c739ce62a59cf77ca843be9a54fc12ea1536b18a2b0fef3a65940f05b"
+        },
         {
           "source_id": "FISRC-d542f1ad9da7e0ac",
           "source_url": "https://dukecapitalpartners.duke.edu/news/neurophos-secures-110-million-series-a-to-launch-exaflop-scale-photonic-ai-chips/",
@@ -161,7 +215,8 @@
           "quote_hash": "50c11b90182d71d1c76feba7fea4ab7c8d121a9ce5b518cdb89537ef990c68d6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }
