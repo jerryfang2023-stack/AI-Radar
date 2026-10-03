@@ -137,31 +137,50 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Kearny Jackson 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "投资阶段和机构定位依据官网，Ellis AI 参投关系依据融资报道。",
+      "summary": "Kearny Jackson 官网将自身定位为科技创业公司的早期投资者；TechCrunch 报道将其列为 Ellis AI 种子轮投资方。本档不代表完整组合。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "官网定位",
+          "value": "早期科技创业公司投资者",
+          "source_id": "PROFILE-95e87d17df1703480da3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Ellis AI · 种子轮 · 2026-07-31 · 本轮参投 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "Ellis AI 种子轮融资报道将 Kearny Jackson 列为投资方。",
           "source_id": "FISRC-a8e6dd6c34cd416a"
         }
       ],
       "contacts": [],
       "sources": [
         {
+          "source_id": "PROFILE-95e87d17df1703480da3",
+          "source_url": "https://www.kearnyjackson.com/",
+          "source_title": "Kearny Jackson",
+          "source_content_hash": "12bee0c574b62f6f45652f53ddd60d655b3a1f7d1b2745dfc1659380760f46d2",
+          "quote": "We’re early-stage specialists Learn More At Kearny Jackson, we partner with extraordinary founders, providing them hands-on support from day zero to navigate the challenges of building their companies.",
+          "quote_hash": "3f400e1eaa5ad669fda6f170ba8b1c67acdec931e2df24ad5e6a89c7f4ce4b5c"
+        },
+        {
           "source_id": "FISRC-a8e6dd6c34cd416a",
           "source_url": "https://techcrunch.com/2026/07/31/repeat-founder-ryan-williams-raises-10m-seed-for-an-ai-startup-for-private-credit-managers/",
-          "source_title": "连续创业者Ryan Williams为面向私募信贷经理的AI初创公司筹集1000万美元种子资金",
-          "source_content_hash": "dd828ac38a132ac1",
+          "source_title": "Repeat founder Ryan Williams raises $10M seed for an AI startup for private credit managers | TechCrunch",
+          "source_content_hash": "fbdab2f60af1dd9734196ef46889d15f8e7a094df757f149a264df8f4011cf70",
           "quote": "Ellis AI announced Thursday its emergence from stealth with $10 million in seed funding from investors including First Round Capital, 645 Ventures, Harlem Capital, Khosla Ventures, Thrive Capital, Slow Capital, Kearny Jackson, and Ariel Alternatives CEO Mellody Hobson.",
           "quote_hash": "eab59ac0f81b233b7afca4c7418c7f27f758e3941c5b036a0a3aaacc91fd0d58"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

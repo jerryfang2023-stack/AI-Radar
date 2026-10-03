@@ -218,14 +218,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "In-Q-Tel 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "机构定位依据 In-Q-Tel 官网；融资参与关系依据 Armadin 官方公告。",
+      "summary": "In-Q-Tel 官网将其描述为独立战略投资机构；Armadin 官方 Series B 公告将 In-Q-Tel 列为继续参与的既有投资方。本档只记录该项公开案例和官网定位。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网机构定位",
+          "value": "独立战略投资机构",
+          "source_id": "PROFILE-7f32f7fe23b5237ecaa2"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Armadin 官方 Series B 公告将 In-Q-Tel 列为既有投资方。",
+          "source_id": "PROFILE-273e103cd0ba2beda9f6"
+        },
         {
           "description": "融资来源记录：Armadin · B轮 · 2026-10-01 · 本轮参投 · $255.5 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-58d9b75c832876e1"
@@ -241,6 +252,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-7f32f7fe23b5237ecaa2",
+          "source_url": "https://www.iqt.org/about",
+          "source_title": "IQT | About | Our History",
+          "source_content_hash": "1934cf4965faba5c3ab02f612e5d995421fd904231f21ef3a668d804dfae2982",
+          "quote": "rtunities at the intersection of innovation and national security. join our talent network Copyright © 2025 · In-Q-Tel, Inc. All Rights Reserved IQT Branding Kit Terms of Use • Privacy Policy • Cookie Policy • IQT Vulnerability Disclosure Policy",
+          "quote_hash": "85155c795ba49857596384374d3df34a487dea14551d83ecad809d0d67f509ef"
+        },
+        {
+          "source_id": "PROFILE-273e103cd0ba2beda9f6",
+          "source_url": "https://www.prnewswire.com/news-releases/armadin-raises-255-5-million-series-b-to-scale-effective-autonomous-security-302895278.html",
+          "source_title": "Armadin Raises $255.5 Million Series B to Scale Effective Autonomous Security",
+          "source_content_hash": "ec2a8ede86a3c1cf68c098a283fe4d8de7ebb7c5bfc8195618330d10a1bc3126",
+          "quote": "estors Bain Capital Ventures (BCV) and Redpoint. Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned, reflecting their continued confidence, bringing Armadin's total funding to $445 million. Seven months after emerging from stealth, Armadin is running agentic attack camp",
+          "quote_hash": "417f9ccb1308ab6504db63cd7885a615923570863f1f4e3ca946414494d91b19"
+        },
         {
           "source_id": "FISRC-58d9b75c832876e1",
           "source_url": "https://www.morningstar.com/news/pr-newswire/20261001la61478/armadin-raises-2555-million-series-b-to-scale-effective-autonomous-security",
@@ -266,7 +293,11 @@
           "quote_hash": "7c9bcdef6b247085bc0cd454ad197ee957709df01475471bd40ee796367db5bb"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
