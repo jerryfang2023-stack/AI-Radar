@@ -192,25 +192,41 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "John Doerr 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "人物身份和公开职务依据 Kleiner Perkins 官方人物页；Eridu 投资活动按融资公告披露，不推断其个人投资载体或完整投资组合。",
+      "summary": "Kleiner Perkins 官方人物页将 John Doerr 介绍为工程师、风险投资人及该公司的董事长；Eridu 融资公告将 John Doerr 列入 Series A 领投名单。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮参投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-23ff312a843cd717"
+          "description": "公开融资来源将其列为 Eridu A轮 本轮领投。",
+          "source_id": "FISRC-6d4642fdc4a2457c"
         },
         {
-          "description": "融资来源记录：Eridu · A轮 · 2026-03-10 · 本轮领投 · 未披露。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-6d4642fdc4a2457c"
+          "description": "融资来源记录：Volantis · A轮 · 2026-10-01 · 本轮参投 · $88 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-23ff312a843cd717"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-6d4642fdc4a2457c",
+          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
+          "source_title": "Eridu Emerges from Stealth with Over $200M in Funding To Break Through the Network Wall and Unlock Faster AI – Eridu – Faster AI",
+          "source_content_hash": "202be508dc6ef6408937696d2a107814ef1ee486ab6bb150fcf28a5bcc3210ea",
+          "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners",
+          "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
+        },
+        {
+          "source_id": "PROFILE-5e8ac1b2c9dfdeb7c70d",
+          "source_url": "https://www.kleinerperkins.com/people/john-doerr/",
+          "source_title": "John Doerr | Kleiner Perkins",
+          "source_content_hash": "6f4cb11ce46d6d2f4adf6a24de35ca94d8ae36e553827d85db5ac176d8496d35",
+          "quote": "John is an engineer, venture capitalist, and the chair of Kleiner Perkins.",
+          "quote_hash": "6b30478f96a066ff737e9b34be0126a525317a5baa6381b180a39150e4a44a46"
+        },
         {
           "source_id": "FISRC-23ff312a843cd717",
           "source_url": "https://manufacturing.economictimes.indiatimes.com/amp/news/hi-tech/volantis-raises-88-million-for-tech-to-connect-ai-memory-chips/134637121",
@@ -218,17 +234,19 @@
           "source_content_hash": "d345eafcaa15d78eb3177366fb76f87f7c735d5a9012d2da287cc1cf7474412d",
           "quote": "John Doerr, who backed Google and Amazon.com in their early days, also participated, as did VXI Capital, Triatomic and Susa Ventures.",
           "quote_hash": "a1ef202bcb6d18d1a770246380dd9194312dc19a8dc29021582ba70d18cf47c1"
-        },
-        {
-          "source_id": "FISRC-6d4642fdc4a2457c",
-          "source_url": "https://eridu.ai/pr/eridu-emerges-from-stealth-with-over-200m-in-funding/",
-          "source_title": "Eridu - 更快的 AI",
-          "source_content_hash": "704adab899460789420d106a45f3b928853400b119f7d979619def92684c5328",
-          "quote": "Eridu’s funding includes a new oversubscribed Series A round led by Socratic Partners, John Doerr, Hudson River Trading, Capricorn Investment Group and Matter Venture Partners",
-          "quote_hash": "810c4f6e9b19faf2a3da39aa86063339eafbb50c384b80245e33932489493c50"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [
+        {
+          "title": "Chairman",
+          "organization": "Kleiner Perkins",
+          "source_id": "PROFILE-5e8ac1b2c9dfdeb7c70d"
+        }
+      ],
+      "career": [],
+      "education": [],
+      "experience_summary": "Kleiner Perkins 官方人物页将 John Doerr 介绍为工程师、风险投资人及该公司的董事长；Eridu 融资公告将 John Doerr 列入 Series A 领投名单。"
     }
   }
 }
