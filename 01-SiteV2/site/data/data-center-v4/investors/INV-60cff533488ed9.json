@@ -121,12 +121,33 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "泥藕资本NEEO 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "泥藕资本官网称其成立于2020年末，是关注早期投资的创投机构，主要投资天使及VC阶段项目。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网列示成立时间",
+          "value": "2020年末。",
+          "source_id": "PROFILE-INV-60cff533488ed9-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "早期创投机构。",
+          "source_id": "PROFILE-INV-60cff533488ed9-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网列示投资阶段",
+          "value": "天使及VC阶段。",
+          "source_id": "PROFILE-INV-60cff533488ed9-2"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网列示重点方向",
+          "value": "智能制造、高端装备、新能源、新型材料、产业数字化等。",
+          "source_id": "PROFILE-INV-60cff533488ed9-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +155,48 @@
           "source_id": "FISRC-106f72a415fbb41c"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网介绍，不纳入页面展示的管理规模和项目数量等动态数字。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "泥藕资本 / NEEO Fund",
+          "url": "https://www.neeo.fund/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-60cff533488ed9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-60cff533488ed9-1",
+          "source_url": "https://www.neeo.fund/?source_capture=2026-10-03&cycle=9",
+          "source_title": "泥藕资本",
+          "source_content_hash": "c6cd2b5fe91c4ec2806b0b413a0e2cccfa567a25fac53606f5d9aaa7122ad6cc",
+          "quote": "泥藕资本成立于2020年末，是一家独具风格的新锐创投机构。",
+          "quote_hash": "314835cf8fcc905e3d14e78f14099216f723c20da61895ee9d328721c14124d7"
+        },
+        {
+          "source_id": "PROFILE-INV-60cff533488ed9-2",
+          "source_url": "https://www.neeo.fund/?source_capture=2026-10-03&cycle=9",
+          "source_title": "泥藕资本",
+          "source_content_hash": "c6cd2b5fe91c4ec2806b0b413a0e2cccfa567a25fac53606f5d9aaa7122ad6cc",
+          "quote": "主要投资于天使和VC阶段早期优质项目。",
+          "quote_hash": "d544dddf40131bc0a27db908b58bd6d76fc96e2a55a4b521cd9b4d53a47b678a"
+        },
+        {
+          "source_id": "PROFILE-INV-60cff533488ed9-3",
+          "source_url": "https://www.neeo.fund/?source_capture=2026-10-03&cycle=9",
+          "source_title": "泥藕资本",
+          "source_content_hash": "c6cd2b5fe91c4ec2806b0b413a0e2cccfa567a25fac53606f5d9aaa7122ad6cc",
+          "quote": "重点关注智能制造、高端装备、新能源、新型材料、产业数字化",
+          "quote_hash": "8afe677e887dbe30b4e22fe3b6b8933084481793aae4f7d05f178d9f97b916d1"
+        },
         {
           "source_id": "FISRC-106f72a415fbb41c",
           "source_url": "https://www.tmtpost.com/7892206.html",
@@ -145,7 +206,7 @@
           "quote_hash": "eda8a96d050bd51da0403263b46a562720e0070f058b7ac0032f927d74f3f62f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

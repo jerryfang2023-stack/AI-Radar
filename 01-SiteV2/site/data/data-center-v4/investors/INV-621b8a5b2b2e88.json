@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "IFC 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "国际金融公司（IFC）官网称其为聚焦发展中国家私营部门的全球发展机构，通过投资项目、动员其他投资者及分享专业知识推动私营部门发展。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "世界银行集团内聚焦发展中国家私营部门的全球发展机构。",
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露的工作方式",
+          "value": "投资项目、动员其他投资者并分享专业知识。",
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-ebb4cfeb462f5780"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据IFC官网关于机构定位及工作方式的介绍。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网关于页面",
+          "value": "International Finance Corporation (IFC)",
+          "url": "https://www.ifc.org/en/about?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-1",
+          "source_url": "https://www.ifc.org/en/about?source_capture=2026-10-03&cycle=9",
+          "source_title": "Who We Are | International Finance Corporation (IFC)",
+          "source_content_hash": "bbac32cc32e58373352e7d8bfe4c4cdc578b8631aa54e0a07c4cba3e93ec66c3",
+          "quote": "IFC is the largest global development institution focused on the private sector in developing countries.",
+          "quote_hash": "72a0d9393cfaab8b95ba6759690b0d7f7255be892985ffc888a85efb3b8ce9fc"
+        },
+        {
+          "source_id": "PROFILE-INV-621b8a5b2b2e88-2",
+          "source_url": "https://www.ifc.org/en/about?source_capture=2026-10-03&cycle=9",
+          "source_title": "Who We Are | International Finance Corporation (IFC)",
+          "source_content_hash": "bbac32cc32e58373352e7d8bfe4c4cdc578b8631aa54e0a07c4cba3e93ec66c3",
+          "quote": "We achieve this by investing in impactful projects, mobilizing other investors, and sharing expertise.",
+          "quote_hash": "c0cccdb2c95753fa657b7f1f831075c9b271312a581d5464739977515cf69f17"
+        },
         {
           "source_id": "FISRC-ebb4cfeb462f5780",
           "source_url": "https://fintechos.com/in-the-news/fintechos-secures-28m-in-combined-equity-and-debt-financing/",
@@ -161,7 +202,7 @@
           "quote_hash": "dbe4affcdde93e87d3b166291082fcb242b3fe2b5d8d0e8c75bd211cb68787e6"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

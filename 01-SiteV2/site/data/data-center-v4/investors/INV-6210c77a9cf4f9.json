@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "未来资产 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "未来资产金融集团官网称其于1997年成立并运营全球多元化投资平台，业务涵盖资产管理、风险投资及私募股权等另类投资。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网列示成立年份",
+          "value": "1997年。",
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "全球金融集团及多元化投资平台。",
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-2"
+        },
+        {
+          "field": "business_segments",
+          "label": "官网列示投资业务",
+          "value": "创新投资、风险投资及另类投资（包括PEF、基础设施和房地产）。",
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +165,48 @@
           "source_id": "FISRC-517ef1b31eac6dd3"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "按集团官网业务分类记录集团层面信息，不将具体投资管理业务归到某个单独子公司。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "未来资产金融集团介绍",
+          "value": "未来资产资本（中国）",
+          "url": "https://capital.miraeasset.com.cn/sc/mirae-asset-group/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-1",
+          "source_url": "https://capital.miraeasset.com.cn/sc/mirae-asset-group/?source_capture=2026-10-03&cycle=9",
+          "source_title": "未来资产金融集团 - 未来资产资本(中国)",
+          "source_content_hash": "8b9614cb741a597413f7313364776488d6f33faea01e93bcff951bd227961f78",
+          "quote": "未来资产于1997年成立，是亚洲最大的独立金融集团之一",
+          "quote_hash": "e70761b936ab2f8db81a6f23a9cd5e80c83bcf78ec81db07167321e573ad24a7"
+        },
+        {
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-2",
+          "source_url": "https://capital.miraeasset.com.cn/sc/mirae-asset-group/?source_capture=2026-10-03&cycle=9",
+          "source_title": "未来资产金融集团 - 未来资产资本(中国)",
+          "source_content_hash": "8b9614cb741a597413f7313364776488d6f33faea01e93bcff951bd227961f78",
+          "quote": "未来资产运营着全球多元化的投资平台",
+          "quote_hash": "4b82125c931511e7df0141d3215e3b97293e75b81e256ea5514e434349cb83e6"
+        },
+        {
+          "source_id": "PROFILE-INV-6210c77a9cf4f9-3",
+          "source_url": "https://capital.miraeasset.com.cn/sc/mirae-asset-group/?source_capture=2026-10-03&cycle=9",
+          "source_title": "未来资产金融集团 - 未来资产资本(中国)",
+          "source_content_hash": "8b9614cb741a597413f7313364776488d6f33faea01e93bcff951bd227961f78",
+          "quote": "创新投资 技术平台、生物技术、ICT、 风险投资 另类投资 PEF、基础设施、 房地产",
+          "quote_hash": "a316a856b62e173af1206478c9e90267f4147e265cf113d700cf370587442205"
+        },
         {
           "source_id": "FISRC-517ef1b31eac6dd3",
           "source_url": "https://finance.sina.com.cn/roll/2026-09-17/doc-iniscekc4127167.shtml",

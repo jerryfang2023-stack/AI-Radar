@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Harpoon 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-03-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Harpoon官网称其创立于2018年，投资人工智能、深科技、软件基础设施和网络安全领域的创业者。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网列示创立年份",
+          "value": "2018年。",
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-1"
+        },
+        {
+          "field": "investment_focus",
+          "label": "官网披露的投资领域",
+          "value": "人工智能、深科技、软件基础设施和网络安全。",
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-3b060063f33a012b"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网介绍；未采用动态投资组合规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网首页",
+          "value": "Harpoon Ventures",
+          "url": "https://www.harpoon.vc/?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-1",
+          "source_url": "https://www.harpoon.vc/?source_capture=2026-10-03&cycle=10",
+          "source_title": "Harpoon Ventures",
+          "source_content_hash": "3cde8f4c357e936e9216c04ecd699bc551bdd560142c5d75afe3e6d863750962",
+          "quote": "Founded in 2018 by a two-time Olympic medalist and former Navy SEAL, Harpoon was built on a simple belief: technology will define geopolitics.",
+          "quote_hash": "bc4e0ff15dba79c466d6bdde683c565056e49c4c63fdb441ec176251b9759fdc"
+        },
+        {
+          "source_id": "PROFILE-INV-6c48a5fb678b0d-2",
+          "source_url": "https://www.harpoon.vc/?source_capture=2026-10-03&cycle=10",
+          "source_title": "Harpoon Ventures",
+          "source_content_hash": "3cde8f4c357e936e9216c04ecd699bc551bdd560142c5d75afe3e6d863750962",
+          "quote": "We invest in audacious founders building across AI, deep tech, software infrastructure, and cybersecurity.",
+          "quote_hash": "94b49689c63a0b366bd2592033684d13c4329ce662fc9e2aed4890f40c5272b9"
+        },
         {
           "source_id": "FISRC-3b060063f33a012b",
           "source_url": "https://www.startupecosystem.ca/news/n8n-secures-60m-to-advance-ai-powered-workflow-automation",
@@ -161,7 +202,7 @@
           "quote_hash": "a789bad22f9cd865b7693b62dac377a32df943daeb49e31344b27d827db6633c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

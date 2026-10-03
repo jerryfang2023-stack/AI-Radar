@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "建信北京投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "基金业协会公示记录将建信（北京）投资基金管理有限责任公司列为一只股权投资基金的受托管理人。",
+      "facts": [
+        {
+          "field": "fund_management_activity",
+          "label": "协会公示的管理关系",
+          "value": "担任“星云计划-长青一号私募投资基金”受托管理人；公示基金类型为股权投资基金。",
+          "source_id": "PROFILE-INV-62115b8ba3ec02-2"
+        },
+        {
+          "field": "source_recency",
+          "label": "产品记录更新时间",
+          "value": "2022年10月28日。",
+          "source_id": "PROFILE-INV-62115b8ba3ec02-3"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,48 @@
           "source_id": "FISRC-5ffa5747cf097be6"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "公开产品记录显示更新时间为2022年10月28日，仅用于确认历史管理关系；不据此推断机构当前运营状态。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中国证券投资基金业协会基金公示",
+          "value": "基金公示信息",
+          "url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/1910291710123579.html?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-62115b8ba3ec02-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-62115b8ba3ec02-1",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/1910291710123579.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金公示 - 中国证券投资基金业协会",
+          "source_content_hash": "30788762a193c383b989a41ef9f47d4358f55cab2148c41f7affd1518c400035",
+          "quote": "基金名称: 星云计划-长青一号私募投资基金",
+          "quote_hash": "acfeb3d0b5711593f58fc2a4b6feedc7b8d520bf329484107ea9bfc1a474fb4c"
+        },
+        {
+          "source_id": "PROFILE-INV-62115b8ba3ec02-2",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/1910291710123579.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金公示 - 中国证券投资基金业协会",
+          "source_content_hash": "30788762a193c383b989a41ef9f47d4358f55cab2148c41f7affd1518c400035",
+          "quote": "基金类型: 股权投资基金 币种: 人民币现钞 基金管理人名称: 建信（北京）投资基金管理有限责任公司 管理类型: 受托管理",
+          "quote_hash": "d0aeb80219b00017a1e97b59b9f2559a71aa27d20e5c1ac9670c997bfca3c59c"
+        },
+        {
+          "source_id": "PROFILE-INV-62115b8ba3ec02-3",
+          "source_url": "https://gs.amac.org.cn/amac-infodisc/res/pof/fund/1910291710123579.html?source_capture=2026-10-03&cycle=9",
+          "source_title": "私募基金公示 - 中国证券投资基金业协会",
+          "source_content_hash": "30788762a193c383b989a41ef9f47d4358f55cab2148c41f7affd1518c400035",
+          "quote": "基金信息最后更新时间: 2022-10-28",
+          "quote_hash": "5a99a377736f22a6d6f72eeca545111ff9f3cb6c9e28f87fa2d88a7d524b7b7e"
+        },
         {
           "source_id": "FISRC-5ffa5747cf097be6",
           "source_url": "https://stock.stockstar.com/RB2026081900036871.shtml",
@@ -161,7 +210,7 @@
           "quote_hash": "d68722d11d0246901b0bb4d3f70c9a8a2e075f7a122acde77028b978dab5b8f5"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

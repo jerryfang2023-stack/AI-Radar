@@ -194,12 +194,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Redalpine 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Redalpine官网about页列出了其当前投资重点，覆盖前沿科技、医疗健康、数字化应用及金融科技基础设施。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "官网列示的投资重点",
+          "value": "前沿科技、医疗健康、数字化应用及金融科技基础设施。",
+          "source_id": "PROFILE-INV-6d7f9086f76487-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -211,8 +214,40 @@
           "source_id": "FISRC-a25b58a6297cb344"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网投资重点页面，不写入未经核验的规模数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网投资重点",
+          "value": "Redalpine",
+          "url": "https://www.redalpine.com/about?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6d7f9086f76487-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6d7f9086f76487-1",
+          "source_url": "https://www.redalpine.com/about?source_capture=2026-10-03&cycle=10",
+          "source_title": "redalpine | about | our vision &amp; focus areas",
+          "source_content_hash": "1d5937f9d2ad8275f405a7353f9cc2a780905add45bdbcaf83ea5e5c05e3a2ea",
+          "quote": "our current investment focus areas are:",
+          "quote_hash": "accf65af4ad76306d4d5ec4682c04e23d26b650999d441b82d76dc083b5ee006"
+        },
+        {
+          "source_id": "PROFILE-INV-6d7f9086f76487-2",
+          "source_url": "https://www.redalpine.com/about?source_capture=2026-10-03&cycle=10",
+          "source_title": "redalpine | about | our vision &amp; focus areas",
+          "source_content_hash": "1d5937f9d2ad8275f405a7353f9cc2a780905add45bdbcaf83ea5e5c05e3a2ea",
+          "quote": "developing frontier tech",
+          "quote_hash": "832a5e0046f772140d210308b871c6a4e76d57e88dcbfc538b39d497088a538f"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
@@ -230,7 +265,7 @@
           "quote_hash": "fd5eb90c390e50bf085039c95bbecaf9b7a3029a6cc20063ec863f391c5f8b99"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

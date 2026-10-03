@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "中国银行 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "中国银行官网将Bank of China Group Investment列为中国银行全资子公司，并称其为中国银行境外直接投资平台；本条记录集团投资平台活动，不将银行本部等同为私募基金管理人。",
+      "facts": [
+        {
+          "field": "subsidiary_relationship",
+          "label": "官网披露的子公司关系",
+          "value": "Bank of China Group Investment Limited（BOCGI）为中国银行全资子公司。",
+          "source_id": "PROFILE-INV-6ad1b8af7397be-1"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露的集团投资平台",
+          "value": "BOCGI是中国银行的境外直接投资平台，重点开展协同及股权投资。",
+          "source_id": "PROFILE-INV-6ad1b8af7397be-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +159,40 @@
           "source_id": "FISRC-adaac360139469bd"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "据中国银行集团官网对全资关系和境外直接投资平台的介绍。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "中国银行集团公司简介",
+          "value": "Bank of China",
+          "url": "https://www.boc.cn/english/thisisboc/gls/ibc/202601/t20260105_25639058.html?source_capture=2026-10-03&cycle=10",
+          "source_id": "PROFILE-INV-6ad1b8af7397be-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-6ad1b8af7397be-1",
+          "source_url": "https://www.boc.cn/english/thisisboc/gls/ibc/202601/t20260105_25639058.html?source_capture=2026-10-03&cycle=10",
+          "source_title": "Bank of China Group Investment",
+          "source_content_hash": "4be128b547d51cf9e28ae0ccf99e5e730dbff876ea9c209d61dd88e180b3312a",
+          "quote": "Established in Hong Kong in December 1984, Bank of China Group Investment Limited (BOCGI) is a wholly owned subsidiary of Bank of China.",
+          "quote_hash": "5e67276ddcb898e9b7e3cd41bed5e4c1388acc9d4cda5957041f2feb13caed78"
+        },
+        {
+          "source_id": "PROFILE-INV-6ad1b8af7397be-2",
+          "source_url": "https://www.boc.cn/english/thisisboc/gls/ibc/202601/t20260105_25639058.html?source_capture=2026-10-03&cycle=10",
+          "source_title": "Bank of China Group Investment",
+          "source_content_hash": "4be128b547d51cf9e28ae0ccf99e5e730dbff876ea9c209d61dd88e180b3312a",
+          "quote": "As a specialized investment management company, BOCGI serves as BOC’s overseas direct investment platform, with a strategic focus on synergy and equity investments.",
+          "quote_hash": "d1ec609b3aa7fc516697c2e0a787862f3f0939f8dcbe7c634480efba820d7e17"
+        },
         {
           "source_id": "FISRC-adaac360139469bd",
           "source_url": "https://www.cls.cn/detail/2300238",

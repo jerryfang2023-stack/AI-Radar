@@ -121,14 +121,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Draper Esprit 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "FintechOS 融资关系依据该公司公告；历史名称沿革依据 Molten Ventures 官方更名说明。本记录不代表当前品牌下的完整组合。",
+      "summary": "FintechOS 官方融资公告将当时名为 Draper Esprit 的机构列为 Series B 领投方；Molten Ventures 官方文章确认其于 2021 年更名。本档保留历史名称与历史融资关系。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "FintechOS 官方 2021 年公告将 Draper Esprit 列为 Series B 领投方。",
+          "source_id": "PROFILE-ba20a5bb8e07ccef4c87"
+        },
         {
           "description": "融资来源记录：FintechOS · 历史轮次未披露 · 历史轮次领投。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-39755042b7f329d6"
@@ -136,6 +140,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-ba20a5bb8e07ccef4c87",
+          "source_url": "https://www.prnewswire.co.uk/news-releases/fintechos-raises-usd60-million-in-draper-esprit-led-series-b-funding-round-to-fuel-global-expansion-887402437.html",
+          "source_title": "FintechOS raises USD60 million in Draper Esprit-led Series B funding round to fuel global expansion",
+          "source_content_hash": "4f60ba1bc58e205cfadb16795896d63a7b0de4490667913d6eb1578957807076",
+          "quote": "FintechOS raises USD60 million in Draper Esprit-led Series B funding round to fuel global expansion Accessibility Statement Skip Navigation Resources Investor Relations Journalists +44 (0)20 7454 5110 Client Login Send a Release News Products Contact Search Search",
+          "quote_hash": "1e974c1edd4540c1655191c19655a429a7fba27b7521d17d52e0a4cf6f0e5c5b"
+        },
+        {
+          "source_id": "PROFILE-e1106bc623fd75373711",
+          "source_url": "https://www.moltenventures.com/news/farewell-draper-esprit-hello-molten-ventures",
+          "source_title": "Farewell Draper Esprit. Hello Molten Ventures.",
+          "source_content_hash": "e1b48f871f8389dda1f6a5b07913872fdb21cef2bdfd9e0a66d61aa3e12bd6e0",
+          "quote": "Farewell Draper Esprit. Hello Molten Ventures. Portfolio People Newsroom Investors Sustainability Make more possible News People Portfolio Seed Funds Opportunities Investor Portal Contact Us Submit a proposal Stay connected Latest insight",
+          "quote_hash": "20730cb5641540d0141cc42cd6f332b24252f6b4a5910f98ba0616499b702979"
+        },
         {
           "source_id": "FISRC-39755042b7f329d6",
           "source_url": "https://fintech.global/2021/04/26/the-34-fintech-rounds-from-the-last-week-you-cant-afford-to-miss/",
@@ -145,7 +165,11 @@
           "quote_hash": "b5e748d9842cdbd2f80d08952f70ba2e6fded3f27596c73f4b4c05e58a77c92b"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

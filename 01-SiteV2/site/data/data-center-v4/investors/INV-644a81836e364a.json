@@ -192,12 +192,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "CRV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "CRV官网介绍其自1970年起投资早期创业公司，并称其主要领投种子轮和A轮。",
+      "facts": [
+        {
+          "field": "founded",
+          "label": "官网列示创立年份",
+          "value": "1970年。",
+          "source_id": "PROFILE-INV-644a81836e364a-1"
+        },
+        {
+          "field": "organization_type",
+          "label": "官网定位",
+          "value": "早期风险投资机构。",
+          "source_id": "PROFILE-INV-644a81836e364a-2"
+        },
+        {
+          "field": "investment_stage",
+          "label": "官网披露的投资阶段",
+          "value": "种子轮及A轮。",
+          "source_id": "PROFILE-INV-644a81836e364a-2"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -209,8 +224,40 @@
           "source_id": "FISRC-70c3e89375309295"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据CRV官网机构介绍；未采用第三方文章中的基金规模或比较数据。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "CRV",
+          "url": "https://www.crv.com/?source_capture=2026-10-03&cycle=9",
+          "source_id": "PROFILE-INV-644a81836e364a-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-INV-644a81836e364a-1",
+          "source_url": "https://www.crv.com/?source_capture=2026-10-03&cycle=9",
+          "source_title": "CRV | Early-Stage Venture Capital",
+          "source_content_hash": "1802a6a3f5e85f3938e2c919f157ab89a3c9f91b4af8a96b9a65651939294fe5",
+          "quote": "CRV was founded in 1970 and the firm has been in the Bay Area for decades.",
+          "quote_hash": "3ddea587b12891d9937e898d5590c3fb9c1d97bd9fcef295271fa4a0c08820c0"
+        },
+        {
+          "source_id": "PROFILE-INV-644a81836e364a-2",
+          "source_url": "https://www.crv.com/?source_capture=2026-10-03&cycle=9",
+          "source_title": "CRV | Early-Stage Venture Capital",
+          "source_content_hash": "1802a6a3f5e85f3938e2c919f157ab89a3c9f91b4af8a96b9a65651939294fe5",
+          "quote": "Leading Seed and Series A Rounds Since 1970",
+          "quote_hash": "89a03bc3377607a6370c77fb4755f682967607d472b785634e69159273f8bdf2"
+        },
         {
           "source_id": "FISRC-5b1ac109014789f1",
           "source_url": "https://www.calcalistech.com/ctechnews/article/a8lj22cfo",
@@ -228,7 +275,7 @@
           "quote_hash": "a5a1708cd1d6ae7b5d07884e132d09dc33415caed2c2eb989ba224b97199a2bf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
