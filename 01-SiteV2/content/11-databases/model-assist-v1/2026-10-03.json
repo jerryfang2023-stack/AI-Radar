@@ -1,9 +1,9 @@
 {
   "schema_version": "MODEL-ASSIST-V1.0",
-  "generated_at": "2026-10-03T00:28:11.707Z",
+  "generated_at": "2026-10-03T04:18:39.241Z",
   "data_date": "2026-10-03",
   "prompt_version": "model-assist-2026-07-18.2",
-  "source_count": 87,
+  "source_count": 91,
   "candidates": [
     {
       "candidate_id": "MAC-023f835438fed4a1",
@@ -1167,6 +1167,54 @@
       "generated_at": "2026-10-03T00:23:21.684Z"
     },
     {
+      "candidate_id": "MAC-2a38df8c435f7972",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-5988a727e0b28b3d",
+      "raw_id": "RAW-840e7ca3d3d45008",
+      "source_ref": "SA-16a85a42d9f0881a",
+      "source_hash": "f67c63aade6748fa",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "doxx.net",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source consistently refers to the entity as doxx.net, but without a verified alternative to match, the decision is unknown.",
+        "candidate_name": "doxx.net"
+      },
+      "evidence": [
+        {
+          "start": 463,
+          "end": 718,
+          "quote": "doxx.net, founded by Barrett Lyon, best known for pioneering the DDoS defense industry with Prolexic (acquired by Akamai) and other successful security and networking companies, today launched the open beta of its Agentic Defined Networking (ADN) platform"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T04:12:29.543Z"
+    },
+    {
       "candidate_id": "MAC-2a611fb56ad2f32e",
       "task_type": "entity_resolution",
       "asset_id": "EN-e3baa3a2daee23ae",
@@ -1261,6 +1309,54 @@
         }
       ],
       "generated_at": "2026-10-03T00:23:38.649Z"
+    },
+    {
+      "candidate_id": "MAC-32f0e59053bf1cce",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-63c8d803cccb2222",
+      "raw_id": "RAW-b90628752666aedf",
+      "source_ref": "SA-e981d2b740d5337b",
+      "source_hash": "627c77cf2a6c8e85",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Kanurra",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so no exact match to a verified alternative can be established. The source text does identify Kanurra as a New York-based pharmacy benefit manager founded in 2026 by Semih Gultekin, but this is a candidate organization with no verified alternative to compare against.",
+        "candidate_name": "Kanurra"
+      },
+      "evidence": [
+        {
+          "start": 3597,
+          "end": 3780,
+          "quote": "Kanurra is a New York-based pharmacy benefit manager offering flat-fee, pass-through pricing to self-funded and level-funded employers, with a focus on small and mid-sized businesses."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:2026b"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T04:18:39.231Z"
     },
     {
       "candidate_id": "MAC-35d2f6eafb9eca81",
@@ -1937,6 +2033,66 @@
       "generated_at": "2026-10-03T00:23:39.614Z"
     },
     {
+      "candidate_id": "MAC-42ce05e84745e624",
+      "task_type": "qa_repair",
+      "asset_id": "QA-935820c536a3bf82",
+      "raw_id": "RAW-d69bef8358c5f91e",
+      "source_ref": "SA-88aa0a19c94307bb",
+      "source_hash": "c5a680f8a4213d59",
+      "provider": "manual_review",
+      "model": "source_review",
+      "prompt_version": "manual-evidence-review-2026-10-03",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "Human review of exact company funding statement and AI scope in original release.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Good Tape",
+            "object": "raised €600k from Nordic Makers",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 155,
+          "end": 403,
+          "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k."
+        }
+      ],
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-source-review",
+        "reviewed_at": "2026-10-03T04:18:28.631Z",
+        "note": "2026-10-03 targeted financing follow-up; exact funding and AI source review"
+      },
+      "generated_at": "2026-10-03T04:18:28.632Z",
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
       "candidate_id": "MAC-438d38af27204f22",
       "task_type": "entity_resolution",
       "asset_id": "EN-2984a39ed259fcf1",
@@ -2411,6 +2567,54 @@
       "generated_at": "2026-10-03T00:23:20.667Z"
     },
     {
+      "candidate_id": "MAC-539d6d5ab701eb08",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-244595c58aaec73d",
+      "raw_id": "RAW-01780e867b9c822a",
+      "source_ref": "SA-3e3a1e675b742b6a",
+      "source_hash": "aa678ee8f3e6df82",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "SiMa.ai",
+        "rationale": "The candidate mention SiMa.ai is a distinct organization from the only verified alternative NVIDIA; the source contrasts SiMa.ai with NVIDIA GPUs and does not identify them as the same entity.",
+        "candidate_name": "SiMa.ai"
+      },
+      "evidence": [
+        {
+          "start": 1398,
+          "end": 1665,
+          "quote": "While Physical AI has historically relied on expensive, complex, and power-hungry NVIDIA GPUs, SiMa.ai delivers the industry’s leading full-stack Physical AI platform combining purpose-built silicon and software to streamline deployments from months to days or hours."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T04:18:39.235Z"
+    },
+    {
       "candidate_id": "MAC-54bf7a2b2aaccd6c",
       "task_type": "qa_repair",
       "asset_id": "QA-434737b4b2681d85",
@@ -2776,6 +2980,66 @@
         }
       ],
       "generated_at": "2026-10-03T00:28:11.597Z"
+    },
+    {
+      "candidate_id": "MAC-621ae35da431a247",
+      "task_type": "qa_repair",
+      "asset_id": "QA-9adfe49cd84e8848",
+      "raw_id": "RAW-b90628752666aedf",
+      "source_ref": "SA-e981d2b740d5337b",
+      "source_hash": "627c77cf2a6c8e85",
+      "provider": "manual_review",
+      "model": "source_review",
+      "prompt_version": "manual-evidence-review-2026-10-03",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "Human review of exact company funding statement and AI scope in original release.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Kanurra",
+            "object": "raised $6.5 million from six venture capital firms",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 277,
+          "end": 2682,
+          "quote": "After its $6.5 million raise from six prominent venture capital firms, Kanurra's ambitions are broader than ever: it seeks to rewrite the rules of the PBM industry.\nPBMs & The Health Cost Crisis\nPharmacy benefit managers (PBMs) are infamous for making healthcare more expensive for Americans. PBMs are middlemen that manage prescription drug benefits for insurance companies, and traditionally, these PBMs have made money from hiking drug costs.\nPBMs generate revenue from the spread. When a patient picks up a drug from a pharmacy, a PBM might only reimburse that pharmacy $20, then bill the patient's employer or insurance plan $100, and pocket the difference. A report from the Federal Trade Commission found that some specialty generic drugs dispensed by PBM-affiliated pharmacies were marked up by over 1,000%. Over time, this translates to higher premiums, lower coverage, and less accessible healthcare for Americans.\nKanurra's goal is to fix this problem.\nA Flat Fee Alternative\nInstead of siphoning revenue from American patients via the spread, Kanurra charges employers a flat administrative fee. Unlike traditional PBMs, Kanurra does not charge hidden, spread, or rebate-based fees, and passes drug costs through without adding a markup. The savings from this business model land in the pockets of American patients, as well as the employers that fund their employees' health plans. For an employer paying for its employees' GLP-1 costs, Kanurra could cut the cost of an Ozempic fill from $969 to $485, a difference that would scale to $58,080 a year for a 250-person group on Semaglutide alone.\nA few PBMs also follow a pass-through model. But these PBMs are heavily focused on the higher end of the market, prioritizing enterprise partners over small and medium-sized businesses. Other than Kanurra, transparent PBMs will not partner with small level-funded groups at all, a member segment that comprises millions of Americans.\nKanurra's founder, Semih Gultekin, says he seeks to “eliminate confusion and increase the accessibility of prescription medications.” Kanurra will partner with self and level-funded employers, with a specialty in small and medium-sized businesses. As opposed to legacy PBMs, Kanurra prides itself on its auditability. Kanurra's AI-powered model will enable instant employer-side auditing of drug expenditures, which typically takes days or weeks with legacy PBMs."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T04:18:28.638Z",
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-source-review",
+        "reviewed_at": "2026-10-03T04:18:28.638Z",
+        "note": "2026-10-03 targeted financing follow-up; exact funding and AI source review"
+      }
     },
     {
       "candidate_id": "MAC-648687084c569c10",
@@ -3866,6 +4130,80 @@
       "generated_at": "2026-10-03T00:23:10.195Z"
     },
     {
+      "candidate_id": "MAC-a8ffcabd0746ca8b",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-c3e0920b6b3a1a8f",
+      "raw_id": "RAW-01780e867b9c822a",
+      "source_ref": "SA-3e3a1e675b742b6a",
+      "source_hash": "aa678ee8f3e6df82",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "SiMa.ai",
+            "object": "$150 million Series C financing",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "SiMa.ai",
+            "object": "quadrupled year-over-year revenue growth between 2024 and 2025",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "hardware_product",
+            "subject": "SiMa.ai",
+            "object": "next-generation hardware offerings slated for H1 2028",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 468,
+          "end": 645,
+          "quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion."
+        },
+        {
+          "start": 2997,
+          "end": 3140,
+          "quote": "Between 2024 and 2025, the company quadrupled year-over-year revenue growth, and it continues tracking strong upward revenue momentum for 2026."
+        },
+        {
+          "start": 2434,
+          "end": 2720,
+          "quote": "Slated for H1 2028, the next-generation hardware offerings will include machine learning IP, chiplets, and SoCs, as SiMa.ai aggressively extends its footprint in medium to high-end drones, humanoid robotics, automotive advanced driver assistance systems (ADAS), and AI-powered cockpits."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T04:12:29.736Z"
+    },
+    {
       "candidate_id": "MAC-ac843848382765af",
       "task_type": "entity_resolution",
       "asset_id": "EN-4dff8dc9858e2d27",
@@ -4535,6 +4873,66 @@
       "generated_at": "2026-10-03T00:23:29.411Z"
     },
     {
+      "candidate_id": "MAC-d4de81feff2f1fc9",
+      "task_type": "qa_repair",
+      "asset_id": "QA-9c75300177d9fd79",
+      "raw_id": "RAW-840e7ca3d3d45008",
+      "source_ref": "SA-16a85a42d9f0881a",
+      "source_hash": "f67c63aade6748fa",
+      "provider": "manual_review",
+      "model": "source_review",
+      "prompt_version": "manual-evidence-review-2026-10-03",
+      "status": "accepted",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "Human review of exact company funding statement and AI scope in original release.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "doxx.net",
+            "object": "raised $38 Million in Series A funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1129,
+          "end": 1345,
+          "quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc. Joel De La Garza, partner at Andreessen Horowitz, joins the doxx.net board."
+        }
+      ],
+      "review": {
+        "decision": "accept",
+        "reviewer": "codex-source-review",
+        "reviewed_at": "2026-10-03T04:18:28.636Z",
+        "note": "2026-10-03 targeted financing follow-up; exact funding and AI source review"
+      },
+      "generated_at": "2026-10-03T04:18:28.636Z",
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ]
+    },
+    {
       "candidate_id": "MAC-d50535b810a7e693",
       "task_type": "entity_resolution",
       "asset_id": "EN-1a2290470e0aa754",
@@ -4916,6 +5314,54 @@
         }
       ],
       "generated_at": "2026-10-03T00:28:08.409Z"
+    },
+    {
+      "candidate_id": "MAC-f6ae6b0d2d8972b4",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-62b9a4997ecb9252",
+      "raw_id": "RAW-d69bef8358c5f91e",
+      "source_ref": "SA-88aa0a19c94307bb",
+      "source_hash": "c5a680f8a4213d59",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Copenhagen's Good Tape",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source refers to the company as 'Good Tape' and describes it as 'the Copenhagen-based AI transcription company,' but no verified alternative exists to match against.",
+        "candidate_name": "Copenhagen's Good Tape"
+      },
+      "evidence": [
+        {
+          "start": 155,
+          "end": 248,
+          "quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T04:12:30.582Z"
     },
     {
       "candidate_id": "MAC-f7b1a1f73b5f256f",

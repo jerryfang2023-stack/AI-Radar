@@ -1739,5 +1739,93 @@
     "extraction_method": "deterministic_source_span",
     "extraction_confidence": 0.9,
     "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-dfe14054491f34f3",
+    "raw_id": "RAW-01780e867b9c822a",
+    "claim_type": "funding",
+    "subject": "SiMa.ai",
+    "predicate": "funding",
+    "object": "$150 million Series C financing",
+    "qualifiers": {
+      "event_status": "announced",
+      "sequence": 1,
+      "model_candidate_id": "MAC-a8ffcabd0746ca8b"
+    },
+    "source_span": {
+      "raw_id": "RAW-01780e867b9c822a",
+      "start": 468,
+      "end": 645
+    },
+    "source_quote": "SiMa.ai, a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the company at $1.45 billion.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-2e64623b56a78b73",
+    "raw_id": "RAW-d69bef8358c5f91e",
+    "claim_type": "funding",
+    "subject": "Good Tape",
+    "predicate": "funding",
+    "object": "raised €600k from Nordic Makers",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-42ce05e84745e624"
+    },
+    "source_span": {
+      "raw_id": "RAW-d69bef8358c5f91e",
+      "start": 155,
+      "end": 403
+    },
+    "source_quote": "Good Tape, the Copenhagen-based AI transcription company, has raised €600k from Nordic Makers, an investment group founded by former unicorn founders that invests its own capital in early-stage Nordic startups, with an average ticket size of €500k.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-50f5811a057adb8a",
+    "raw_id": "RAW-840e7ca3d3d45008",
+    "claim_type": "funding",
+    "subject": "doxx.net",
+    "predicate": "funding",
+    "object": "raised $38 Million in Series A funding",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-d4de81feff2f1fc9"
+    },
+    "source_span": {
+      "raw_id": "RAW-840e7ca3d3d45008",
+      "start": 1129,
+      "end": 1345
+    },
+    "source_quote": "The company also announced $38 Million in Series A funding, led by Andreessen Horowitz, with participation from Animo Ventures and Focal.vc. Joel De La Garza, partner at Andreessen Horowitz, joins the doxx.net board.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
+  },
+  {
+    "claim_id": "CL-b8fb1efa4391389f",
+    "raw_id": "RAW-b90628752666aedf",
+    "claim_type": "funding",
+    "subject": "Kanurra",
+    "predicate": "funding",
+    "object": "raised $6.5 million from six venture capital firms",
+    "qualifiers": {
+      "event_status": "completed",
+      "sequence": 1,
+      "model_candidate_id": "MAC-621ae35da431a247"
+    },
+    "source_span": {
+      "raw_id": "RAW-b90628752666aedf",
+      "start": 277,
+      "end": 2682
+    },
+    "source_quote": "After its $6.5 million raise from six prominent venture capital firms, Kanurra's ambitions are broader than ever: it seeks to rewrite the rules of the PBM industry.\nPBMs & The Health Cost Crisis\nPharmacy benefit managers (PBMs) are infamous for making healthcare more expensive for Americans. PBMs are middlemen that manage prescription drug benefits for insurance companies, and traditionally, these PBMs have made money from hiking drug costs.\nPBMs generate revenue from the spread. When a patient picks up a drug from a pharmacy, a PBM might only reimburse that pharmacy $20, then bill the patient's employer or insurance plan $100, and pocket the difference. A report from the Federal Trade Commission found that some specialty generic drugs dispensed by PBM-affiliated pharmacies were marked up by over 1,000%. Over time, this translates to higher premiums, lower coverage, and less accessible healthcare for Americans.\nKanurra's goal is to fix this problem.\nA Flat Fee Alternative\nInstead of siphoning revenue from American patients via the spread, Kanurra charges employers a flat administrative fee. Unlike traditional PBMs, Kanurra does not charge hidden, spread, or rebate-based fees, and passes drug costs through without adding a markup. The savings from this business model land in the pockets of American patients, as well as the employers that fund their employees' health plans. For an employer paying for its employees' GLP-1 costs, Kanurra could cut the cost of an Ozempic fill from $969 to $485, a difference that would scale to $58,080 a year for a 250-person group on Semaglutide alone.\nA few PBMs also follow a pass-through model. But these PBMs are heavily focused on the higher end of the market, prioritizing enterprise partners over small and medium-sized businesses. Other than Kanurra, transparent PBMs will not partner with small level-funded groups at all, a member segment that comprises millions of Americans.\nKanurra's founder, Semih Gultekin, says he seeks to “eliminate confusion and increase the accessibility of prescription medications.” Kanurra will partner with self and level-funded employers, with a specialty in small and medium-sized businesses. As opposed to legacy PBMs, Kanurra prides itself on its auditability. Kanurra's AI-powered model will enable instant employer-side auditing of drug expenditures, which typically takes days or weeks with legacy PBMs.",
+    "extraction_method": "model_source_span",
+    "extraction_confidence": 0.72,
+    "verification_status": "accepted"
   }
 ]

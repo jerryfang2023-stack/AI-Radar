@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-03",
     "currentDate": "2026-10-03",
-    "eventCount": 3905,
+    "eventCount": 3909,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 5,
+    "current_round_count": 6,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 5,
+    "portfolio_company_count": 6,
     "market_regions": [
       "GLOBAL"
     ],
@@ -73,7 +73,7 @@
     "latest_disclosed_at": "2026-09-30",
     "role_counts": {
       "lead": 2,
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
       "seed",
@@ -95,6 +95,11 @@
         "entity_id": "EN-fa373257792c6b9b",
         "canonical_entity_id": "EN-fa373257792c6b9b",
         "name": "Prime Intellect"
+      },
+      {
+        "entity_id": "EN-244595c58aaec73d",
+        "canonical_entity_id": "",
+        "name": "SiMa.ai"
       },
       {
         "entity_id": "EN-f76a8103e49bcc36",
@@ -145,6 +150,46 @@
             "source_content_hash": "521590bc01ad839c146800f3914ce17726a6317d32a595d321959aefa581ffca",
             "quote": "an $18 million Series A led by Dell Technologies Capital, with participation from Hitachi Ventures, BGV, Wipro Ventures, and earlier investors FUSE, Tola Capital, and Gaia Ventures",
             "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
+          }
+        ]
+      },
+      {
+        "activity_id": "IA-46df56e328f6dcd9",
+        "funding_insight_id": "FI-e3b95c73ade1ad0a",
+        "event_ids": [
+          "EV-85f63371a81b394b"
+        ],
+        "company_entity_id": "EN-244595c58aaec73d",
+        "company_canonical_entity_id": "",
+        "company_name": "SiMa.ai",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-2209738fa8f6b1da",
+            "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+            "source_title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+            "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+            "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+            "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
           }
         ]
       },
@@ -329,6 +374,14 @@
         "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
       },
       {
+        "source_id": "FISRC-2209738fa8f6b1da",
+        "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+        "source_title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+        "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+        "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+        "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
+      },
+      {
         "source_id": "FISRC-926f8f2e0ad24f56",
         "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
         "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
@@ -422,11 +475,7 @@
         },
         {
           "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮参投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-926f8f2e0ad24f56"
-        },
-        {
-          "description": "融资来源记录：Prime Intellect · A轮 · 2026-07-08 · 本轮参投 · $130 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-afe2544836558c64"
+          "source_id": "FISRC-2209738fa8f6b1da"
         }
       ],
       "contacts": [
@@ -462,20 +511,20 @@
           "quote_hash": "ceb29848cb747001e0474b6167c95766e3e72cb12197c1776f7cc10b4a655ddb"
         },
         {
+          "source_id": "FISRC-2209738fa8f6b1da",
+          "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+          "source_title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+          "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+          "quote": "with participation from Alter Venture Partners, Dell Technologies Capital, Maverick Capital, +ND Capital, Point72 and StepStone Group",
+          "quote_hash": "97310b374104c2cc70f0607da416747d721a557cc41a50b1233785f183be520f"
+        },
+        {
           "source_id": "FISRC-926f8f2e0ad24f56",
           "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
           "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
           "source_content_hash": "f276c5580c0b14bea6e22f71dbd65c2b8ee76d2b2cddc812f16aa9dad898fa53",
           "quote": "The round was co-led by Fidelity Management &amp;amp; Research Company and Amplify, with participation from Alter Venture Partners, Dell Technologies Capital and StepStone Group.",
           "quote_hash": "08a052637fcf39ab44c4bfd2e3c693edd75f4fe17cd32261b6a6770d6162d60a"
-        },
-        {
-          "source_id": "FISRC-afe2544836558c64",
-          "source_url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/",
-          "source_title": "Prime Intellect raises $130M Series A to help enterprises build their own AI agents | TechCrunch",
-          "source_content_hash": "596e7c850e10c828",
-          "quote": "with participation from Nvidia Ventures, Intel Capital, Dell Technologies Capital, Iconiq",
-          "quote_hash": "6a7477041cd494d83150796fbd2093c39aaccedac373420823ec20e430b193a7"
         }
       ],
       "last_verified_at": "2026-09-26",

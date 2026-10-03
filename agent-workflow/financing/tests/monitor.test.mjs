@@ -7,11 +7,19 @@ import { config, discover, queryPlan, uniqueLeads } from '../discovery.mjs';
 import { captureOriginal, parseOriginal } from '../capture.mjs';
 import { collect } from '../collect.mjs';
 import { runStages, read, acquireLock, write, digest } from '../state.mjs';
-import { productionPlan } from '../run.mjs';
+import { financingExtractionScope, productionPlan } from '../run.mjs';
 import { allowedCheckpointPath, restore } from '../checkpoint.mjs';
 import { financingScope } from '../scope.mjs';
 
 const date='2026-10-01';
+test('accepted same-day supplement adds source refs without changing the collection',()=>{
+  const intake={raw_documents:[{raw_id:'RAW-A',source_artifact_id:'SA-A'},{raw_id:'RAW-B',source_artifact_id:'SA-B'}]};
+  const collection={raw_ids:['RAW-A']};
+  const supplement={raw_ids:['RAW-B']};
+  assert.deepEqual(financingExtractionScope(intake,collection,supplement).source_refs,['SA-A','SA-B']);
+  assert.deepEqual(collection.raw_ids,['RAW-A']);
+  assert.throws(()=>financingExtractionScope(intake,collection,{raw_ids:['RAW-MISSING']}),/financing_extraction_source_missing/u);
+});
 test('all AI sectors allowed, robotics core business excluded, consumer companions preserved',()=>{
   for(const title of ['AI chip company raises Series A','AI drug discovery raises funding','AI enterprise software raises funding','AI toy startup raises $5M','AI companion robot startup raises $5M']) assert.equal(financingScope({title}).included,true,title);
   for(const title of ['Embodied AI startup raises $10M','Humanoid robot maker raises $1B','Robotics company raises $50M','具身智能企业完成融资','机器人核心部件企业获投']) assert.equal(financingScope({title}).included,false,title);

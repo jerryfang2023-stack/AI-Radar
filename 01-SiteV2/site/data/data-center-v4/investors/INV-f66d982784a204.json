@@ -8,7 +8,7 @@
     "generatedAt": "2026-10-01T09:28:08.667Z",
     "latestDataDate": "2026-10-03",
     "currentDate": "2026-10-03",
-    "eventCount": 3905,
+    "eventCount": 3909,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,9 +61,9 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 4,
+    "current_round_count": 5,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 4,
+    "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
     ],
@@ -72,7 +72,7 @@
     "first_disclosed_at": "2026-02-03",
     "latest_disclosed_at": "2026-09-28",
     "role_counts": {
-      "co_lead": 1,
+      "co_lead": 2,
       "historical_or_ambiguous": 1,
       "participant": 3
     },
@@ -93,6 +93,11 @@
         "name": "Cerebras Systems"
       },
       {
+        "entity_id": "EN-244595c58aaec73d",
+        "canonical_entity_id": "",
+        "name": "SiMa.ai"
+      },
+      {
         "entity_id": "EN-f76a8103e49bcc36",
         "canonical_entity_id": "",
         "name": "SiMa.ai"
@@ -104,6 +109,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-1c085c20713776a0",
+        "funding_insight_id": "FI-e3b95c73ade1ad0a",
+        "event_ids": [
+          "EV-85f63371a81b394b"
+        ],
+        "company_entity_id": "EN-244595c58aaec73d",
+        "company_canonical_entity_id": "",
+        "company_name": "SiMa.ai",
+        "round": "C轮",
+        "round_code": "series_c",
+        "round_original": "C轮",
+        "amount_original": "$150 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 150000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1.5 亿美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮联合领投",
+        "role_code": "co_lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-2209738fa8f6b1da",
+            "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+            "source_title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+            "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+            "quote": "Fidelity Management & Research Company and Amplify co-led the oversubscribed $150 million round",
+            "quote_hash": "668554e7439a1a19347bdec7090e668293b75f49d074790cd48f99015a60e108"
+          }
+        ]
+      },
       {
         "activity_id": "IA-9c9df46822a1399f",
         "funding_insight_id": "FI-100e345b5bd4b3c6",
@@ -299,6 +344,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-2209738fa8f6b1da",
+        "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+        "source_title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+        "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+        "quote": "Fidelity Management & Research Company and Amplify co-led the oversubscribed $150 million round",
+        "quote_hash": "668554e7439a1a19347bdec7090e668293b75f49d074790cd48f99015a60e108"
+      },
+      {
         "source_id": "FISRC-926f8f2e0ad24f56",
         "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
         "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
@@ -373,15 +426,11 @@
         },
         {
           "description": "融资来源记录：SiMa.ai · C轮 · 2026-09-28 · 本轮联合领投 · $150 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-926f8f2e0ad24f56"
+          "source_id": "FISRC-2209738fa8f6b1da"
         },
         {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b5e22ae086a6b353"
-        },
-        {
-          "description": "融资来源记录：World Labs · 其他融资 · 2026-02-18 · 本轮参投 · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f911788bc29402eb"
         }
       ],
       "contacts": [
@@ -403,6 +452,14 @@
           "quote_hash": "343ba7660ab0fae22de6a4b64cd42c62c164c9d32469470eb53e4c2d84eb817b"
         },
         {
+          "source_id": "FISRC-2209738fa8f6b1da",
+          "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+          "source_title": "SiMa.ai 估值达 14.5 亿美元，总融资 5 亿美元，以规模化人形机器人、汽车和无人机领域的物理 AI",
+          "source_content_hash": "c6e26e690136fc5a1dbcbcae144f3f6e166f56adda0dcc85823269ceb3bacbf8",
+          "quote": "Fidelity Management & Research Company and Amplify co-led the oversubscribed $150 million round",
+          "quote_hash": "668554e7439a1a19347bdec7090e668293b75f49d074790cd48f99015a60e108"
+        },
+        {
           "source_id": "FISRC-926f8f2e0ad24f56",
           "source_url": "https://entrackr.com/news/physical-ai-company-simaai-raises-150-mn-in-series-c-round-12587904",
           "source_title": "物理AI公司SiMa.ai在C轮融资中筹集1.5亿美元",
@@ -417,21 +474,13 @@
           "source_content_hash": "34fdef480dcd03d80fa88f8f2ccaf4fdb9ec78c9e96df4e65cdd08da9b903b24",
           "quote": "Significant investors in this round include AMP PBC, Baillie Gifford, Blackstone, Brookfield, D.E. Shaw Ventures, DST Global, Fidelity Management & Research Company, General Catalyst, Insight Partners, Jane Street, Lightspeed Venture Partners, MGX, NTTVC, NX1 Capital, Situational Awareness LP, T. Rowe Price Associates, Inc., T. Rowe Price Investment Management, Inc., and Temasek.",
           "quote_hash": "6b52fb94ec2ef641345000b7f4b2405867f1ba9fb4ff908945e4e21942db8318"
-        },
-        {
-          "source_id": "FISRC-f911788bc29402eb",
-          "source_url": "https://www.worldlabs.ai/blog/funding-2026",
-          "source_title": "世界实验室宣布新融资",
-          "source_content_hash": "1ee86a2c3487dbd8856c6a51fc41914c676d1a9a1badd564a6b252f3110f796d",
-          "quote": "We are grateful and excited to partner with our investors, including AMD, Autodesk, Emerson Collective, Fidelity Management & Research Company, NVIDIA, and Sea, among others.",
-          "quote_hash": "e923874ac547845bd58d7cdd8aa87d69b493660b0d7129ac01c996f03fc49eb0"
         }
       ],
       "last_verified_at": "2026-10-02"
     },
     "translations": {
       "zh-CN": {
-        "activities[4].role": {
+        "activities[5].role": {
           "text": "Series G 领投",
           "source_hash": "f3f6de8acaa7ef2a6e0d57253fb12e64a3ac65374b7b99822bcbd922a39d98b0",
           "provider": "deepseek",
