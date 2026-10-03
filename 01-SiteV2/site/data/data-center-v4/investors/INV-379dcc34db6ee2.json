@@ -121,12 +121,30 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "兴证资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "兴业证券官网披露，兴证创新资本管理有限公司简称兴证资本，是兴业证券全资设立、从事私募投资基金业务的子公司。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "法定主体名称",
+          "value": "兴证创新资本管理有限公司",
+          "source_id": "xing-identity"
+        },
+        {
+          "field": "parent_company",
+          "label": "设立方",
+          "value": "兴业证券股份有限公司（全资设立）",
+          "source_id": "xing-identity"
+        },
+        {
+          "field": "business_scope",
+          "label": "官网披露业务范围",
+          "value": "私募投资基金业务",
+          "source_id": "xing-business"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +152,32 @@
           "source_id": "FISRC-c00e3514a8fe23f2"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.xyzq.com.cn/",
+          "url": "https://www.xyzq.com.cn/",
+          "source_id": "xing-identity"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "xing-identity",
+          "source_url": "https://www.xyzq.com.cn/xysec/capital/aboutus/11234",
+          "source_title": "兴业证券官方网站",
+          "source_content_hash": "624d0f4bdc0f864a204ba850a7f38dce4050c68457dee89abfbbb30203634d22",
+          "quote": "兴证创新资本管理有限公司（以下简称“兴证资本”） 是兴业证券股份有限公司（SH601377）全资设立的子公司。",
+          "quote_hash": "68897f5e77a871ffda36570558f5068695fb39abb76aa463411484aaf6852d6b"
+        },
+        {
+          "source_id": "xing-business",
+          "source_url": "https://www.xyzq.com.cn/xysec/capital/aboutus/11234",
+          "source_title": "兴业证券官方网站",
+          "source_content_hash": "624d0f4bdc0f864a204ba850a7f38dce4050c68457dee89abfbbb30203634d22",
+          "quote": "业务范围为私募投资基金业务",
+          "quote_hash": "8a7b16b0d579b4424e450e241adb360bc4928c84401305425af0f6a34cb51716"
+        },
         {
           "source_id": "FISRC-c00e3514a8fe23f2",
           "source_url": "https://pitchhub.36kr.com/project/1679663815807751",
@@ -145,7 +187,8 @@
           "quote_hash": "09cb9e2523380f0b2eb0586ac2a30d1d2528d377f5867ffeb37702d0e2be27a2"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

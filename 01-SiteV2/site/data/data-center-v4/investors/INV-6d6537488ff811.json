@@ -123,15 +123,15 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "此条仅记录媒体披露的融资关系；机构官网正文未能留存。",
-      "summary": "36氪报道援引 BV Baidu Ventures 称，Tiiny AI 完成天使轮系列融资并列出 BV Baidu Ventures 为共同投资方之一。当前仅记录该公开参投披露；机构官网页面目前无法在共享缓存中留存。",
+      "coverage_status": "researched",
+      "coverage_note": "机构定位来自 Baidu Ventures 官网；单笔融资参与记录来自 36氪快讯，不推断完整投资组合或投资业绩。",
+      "summary": "Baidu Ventures 官网称，该机构由百度集团于 2017 年发起，聚焦 AI 领域早期投资；36氪的融资快讯另将 BV 列入 Tiiny AI 的天使轮投资者名单。",
       "facts": [
         {
-          "field": "public_investment",
-          "label": "公开投资披露",
-          "value": "36氪报道将 BV Baidu Ventures 列为 Tiiny AI 天使轮系列融资投资方。",
-          "source_id": "FISRC-dea11fc16cbc6f8b"
+          "field": "investment_focus",
+          "label": "官网自述的投资方向",
+          "value": "官网称 Baidu Ventures 由百度集团于 2017 年发起，聚焦 AI 领域早期投资。",
+          "source_id": "bv_official_profile"
         }
       ],
       "milestones": [],
@@ -150,6 +150,14 @@
           "source_content_hash": "f85b7466e83ae949af81e96a19bce13ff6a80008287bb7f0c6886de26c702f47",
           "quote": "g worth tens of millions of US dollars. 2026-07-30 16:41 36Kr learned from BV Baidu Ventures that Personal Agent OS company \"Tiiny AI\" has announced the completion of a multi-million US dollar angel series of financing. This round of financing was jointly participated by Shunwei Capital, Matrix Partne",
           "quote_hash": "4a35879e3510b9ac0e076557538ab803c470bad8f080c6acf31842fb8dd00ef5"
+        },
+        {
+          "source_id": "bv_official_profile",
+          "source_url": "https://www.baidu-ventures.com/about/",
+          "source_title": "Baidu Ventures",
+          "source_content_hash": "0b2ce31e78d51c16df3ca49a255b3dd7b51231cf9980ec1bfc6e47894b61e2bd",
+          "quote": "Initiated by Baidu Group in 2017, Baidu Ventures (BV) is a pioneering venture capital firm at the forefront of AI industry. As one of the earliest funds focusing on the artificial intelligence industry, our portfolios spans GenAI, em",
+          "quote_hash": "c0b6ed9984c3c875161bdb9b239e4625144d241646b723fc297ed12f62dbf10a"
         }
       ],
       "last_verified_at": "2026-10-03"

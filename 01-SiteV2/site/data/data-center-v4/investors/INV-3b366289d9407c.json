@@ -121,12 +121,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "联创永浚 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "依据联创投资集团股份有限公司2017年披露文件；仅记录当时披露的法定主体和基金普通合伙人身份，不推断其当前基金管理状态。",
+      "summary": "联创投资集团股份有限公司2017年公告列明，宁波联创永浚投资管理有限公司担任相关专项基金普通合伙人，并披露其经营范围为投资管理、资产管理。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "公告披露主体名称",
+          "value": "宁波联创永浚投资管理有限公司",
+          "source_id": "lian-gp"
+        },
+        {
+          "field": "fund_role",
+          "label": "公告披露基金角色",
+          "value": "中科金财-联创金融科技专项投资基金普通合伙人（2017年公告）",
+          "source_id": "lian-gp"
+        },
+        {
+          "field": "business_scope",
+          "label": "公告披露经营范围",
+          "value": "投资管理；资产管理（2017年披露）",
+          "source_id": "lian-scope"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -137,6 +156,22 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "lian-gp",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-12-05/1204192009.PDF",
+          "source_title": "联创投资集团股份有限公司公告（CNINFO，2017-12-05）",
+          "source_content_hash": "efe0e5e65e5c57d0a0e1b63bf7d475c6aeb181651c8ce0da93fe12da4d96ec56",
+          "quote": "普通合伙人：宁波联创永浚投资管理有限公司",
+          "quote_hash": "9e1ec244453ff71b4fa18a1c6a8938ae5b8796ed6296401498099dde51f70e24"
+        },
+        {
+          "source_id": "lian-scope",
+          "source_url": "https://static.cninfo.com.cn/finalpage/2017-12-05/1204192009.PDF",
+          "source_title": "联创投资集团股份有限公司公告（CNINFO，2017-12-05）",
+          "source_content_hash": "efe0e5e65e5c57d0a0e1b63bf7d475c6aeb181651c8ce0da93fe12da4d96ec56",
+          "quote": "经营范围： 投资管理；资产管理。",
+          "quote_hash": "a19d3822de7c72b798ca57a3e444ac98dfd15fd0fb18e2ad23ea1bdf3ca0ebd7"
+        },
+        {
           "source_id": "FISRC-7dfa7efaace4f3c8",
           "source_url": "https://news.pedaily.cn/202202/487236.shtml",
           "source_title": "工业智能CAD厂商「设序科技」完成A轮投资，字节跳动领投_投资界",
@@ -145,7 +180,7 @@
           "quote_hash": "82bd2e8f79dd09aba76bca4dc3f7e476dfd00a1828225b05faffae2fb53b35a1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

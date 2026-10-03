@@ -137,12 +137,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Zerodha 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "Zerodha 官网将 Rainmatter 描述为其金融科技基金和孵化器；本档案保留两者名称关系，不将品牌等同于独立法定主体，也不扩展投资组合。",
+      "summary": "Zerodha 官网称 Rainmatter 是其金融科技基金和孵化器，并已投资多家金融科技初创公司。",
+      "facts": [
+        {
+          "field": "investment_vehicle",
+          "label": "官网披露基金及孵化器",
+          "value": "Rainmatter（Zerodha 官网称）",
+          "source_id": "zerodha-about"
+        },
+        {
+          "field": "investment_activity",
+          "label": "官网披露投资活动",
+          "value": "已投资多家金融科技初创公司",
+          "source_id": "zerodha-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +163,24 @@
           "source_id": "FISRC-08365977cd80206b"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://zerodha.com/",
+          "url": "https://zerodha.com/",
+          "source_id": "zerodha-about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zerodha-about",
+          "source_url": "https://zerodha.com/about/",
+          "source_title": "Our company, history, and the people behind it",
+          "source_content_hash": "870dfe9c22ac48f5e368c9ebca6db6e720c187e9a4461573d34ed37ff0057bab",
+          "quote": "Rainmatter , our fintech fund and incubator, has invested in several fintech startups",
+          "quote_hash": "40fea66cc938c12ac01def5a72b57e2566f9471b3dc276d35ca6e6998ea842be"
+        },
         {
           "source_id": "FISRC-08365977cd80206b",
           "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
