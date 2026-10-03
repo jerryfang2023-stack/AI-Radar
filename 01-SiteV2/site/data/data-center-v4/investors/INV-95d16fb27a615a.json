@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,7 +61,7 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
@@ -72,9 +72,10 @@
     "first_disclosed_at": "2026-09-29",
     "latest_disclosed_at": "2026-09-29",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
+      "series_f",
       "undisclosed"
     ],
     "portfolio_companies": [
@@ -85,6 +86,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-f59faf00256eee41",
+        "funding_insight_id": "FI-8e89642c05a4fbe4",
+        "event_ids": [
+          "EV-b88f1a2dd721d62d"
+        ],
+        "company_entity_id": "EN-7f4fdb8eb6e82b27",
+        "company_canonical_entity_id": "",
+        "company_name": "EliseAI",
+        "round": "F轮",
+        "round_code": "series_f",
+        "round_original": "Series F",
+        "amount_original": "$350M",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 350000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "3.5 亿美元"
+        },
+        "announced_at": "2026-09-29",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-aae3c02b03fe09c9",
+            "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
+            "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
+            "source_content_hash": "33c87e55e143bc09",
+            "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
+            "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b1601e0a2e76d936",
         "funding_insight_id": "FI-6d5a9688ad42d1a0",
@@ -128,6 +169,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-aae3c02b03fe09c9",
+        "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
+        "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
+        "source_content_hash": "33c87e55e143bc09",
+        "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
+        "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
+      },
+      {
         "source_id": "FISRC-4f44cd6d16442bdc",
         "source_url": "https://www.otpp.com/en-ca/about-us/news-and-insights/2026/eliseai-raises-350-million-at-4-billion-valuation/",
         "source_title": "EliseAI 以 40 亿美元估值融资 3.5 亿美元，将 AI 更深入引入住房与医疗运营",
@@ -160,6 +209,10 @@
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "融资来源记录：EliseAI · F轮 · 2026-09-29 · 本轮参投 · $350M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-aae3c02b03fe09c9"
+        },
         {
           "description": "融资来源记录：EliseAI · 轮次未披露 · 2026-09-29 · 本轮参投 · $350 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-4f44cd6d16442bdc"
@@ -198,6 +251,14 @@
           "source_content_hash": "91f5e4a30a94c89d214e9593d30df24ab69d544afa75a345588fd05ce46332cb",
           "quote": "We deploy capital selectively when we are at conviction - we don&#x27;t invest to \"put capital to work\" or to \"get exposure\" to buzzwords. We will and have waited years before investing behind the right team with the right technology that meets our theses.",
           "quote_hash": "ca49f0dc726f3606b5b6f2595e6f1713b963d3525fb387d383b2536e846cc90e"
+        },
+        {
+          "source_id": "FISRC-aae3c02b03fe09c9",
+          "source_url": "https://fortune.com/2026/09/29/elise-ai-4-billion-valuation-funding-round-housing-unicorn-andreessen-bessemer/",
+          "source_title": "Exclusive: AI housing unicorn EliseAI hits $4 billion valuation in new funding round led by a16z and Bessemer",
+          "source_content_hash": "33c87e55e143bc09",
+          "quote": "The funding round was co-led by existing investors Andreessen Horowitz (a16z) and Bessemer Venture Partners, as well as new investor Ontario Teachers’ Pension Plan, with participation from existing investors Sapphire Ventures and Navitas Capital.",
+          "quote_hash": "7655e7fc298b7cfdca3c345e6fbbdc6c71541fedb1b9a8cecacf65a1609fe13b"
         },
         {
           "source_id": "FISRC-4f44cd6d16442bdc",

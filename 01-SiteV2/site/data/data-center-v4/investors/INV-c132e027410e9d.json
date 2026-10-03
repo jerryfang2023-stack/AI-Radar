@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资机构",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 3,
+    "current_round_count": 4,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 3,
+    "portfolio_company_count": 4,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2025-09-16",
-    "latest_disclosed_at": "2026-05-21",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "participant": 3
+      "participant": 4
     },
     "round_codes": [
+      "other",
       "series_a",
       "series_c"
     ],
@@ -90,12 +91,57 @@
         "name": "Nothing"
       },
       {
+        "entity_id": "EN-4412826522e82e22",
+        "canonical_entity_id": "",
+        "name": "Ultrahuman"
+      },
+      {
         "entity_id": "EN-d2c4f1b5a5369864",
         "canonical_entity_id": "",
         "name": "Upscale, Inc."
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-a3fe7e8d5836776c",
+        "funding_insight_id": "FI-a87cf73c1a613905",
+        "event_ids": [
+          "EV-e902cbe8df8a0b41"
+        ],
+        "company_entity_id": "EN-4412826522e82e22",
+        "company_canonical_entity_id": "",
+        "company_name": "Ultrahuman",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "$70 million financing round",
+        "amount_original": "$70 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 70000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7000 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-723dbfd85761e08d",
+            "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",
+            "source_title": "‍Ultrahuman raises $70 million to build the next generation of human-computer interface for health",
+            "source_content_hash": "50914b888da31886",
+            "quote": "today announced a $70 million financing round with participation from Qualcomm Ventures, Labcorp, Alpha Wave, Blume, Nexus, Alteria and other investors.",
+            "quote_hash": "50fbdd4442793bb67554c5f699ad4ee3554ffdfd8f4433dbf7ce76f2dd23309f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-b67c79ac6bead832",
         "funding_insight_id": "FI-35b63d84f1f7c2b0",
@@ -220,6 +266,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-723dbfd85761e08d",
+        "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",
+        "source_title": "‍Ultrahuman raises $70 million to build the next generation of human-computer interface for health",
+        "source_content_hash": "50914b888da31886",
+        "quote": "today announced a $70 million financing round with participation from Qualcomm Ventures, Labcorp, Alpha Wave, Blume, Nexus, Alteria and other investors.",
+        "quote_hash": "50fbdd4442793bb67554c5f699ad4ee3554ffdfd8f4433dbf7ce76f2dd23309f"
+      },
+      {
         "source_id": "FISRC-9b94f245fa27a161",
         "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
         "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
@@ -309,16 +363,16 @@
           "source_id": "qv_2025_review"
         },
         {
+          "description": "融资来源记录：Ultrahuman · 其他融资 · 2026-09-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-723dbfd85761e08d"
+        },
+        {
           "description": "融资来源记录：Hark · A轮 · 2026-05-21 · 本轮参投 · $700M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9b94f245fa27a161"
         },
         {
           "description": "融资来源记录：Upscale, Inc. · A轮 · 2026-01-21 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c60f2ab7fcb8b84"
-        },
-        {
-          "description": "融资来源记录：Nothing · C轮 · 2025-09-16 · 本轮参投 · $200 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7e709202ce99cc8e"
         }
       ],
       "contacts": [
@@ -356,6 +410,14 @@
           "quote_hash": "966664064c2645c134da5027a77a2f9ebaa98ea11a87cbee3a6c790e8e242042"
         },
         {
+          "source_id": "FISRC-723dbfd85761e08d",
+          "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",
+          "source_title": "‍Ultrahuman raises $70 million to build the next generation of human-computer interface for health",
+          "source_content_hash": "50914b888da31886",
+          "quote": "today announced a $70 million financing round with participation from Qualcomm Ventures, Labcorp, Alpha Wave, Blume, Nexus, Alteria and other investors.",
+          "quote_hash": "50fbdd4442793bb67554c5f699ad4ee3554ffdfd8f4433dbf7ce76f2dd23309f"
+        },
+        {
           "source_id": "FISRC-9b94f245fa27a161",
           "source_url": "https://www.intelcapital.com/hark-raises-700m-series-a-at-a-6b-valuation/",
           "source_title": "Hark Raises $700M Series A at a $6B Valuation – Intel Capital",
@@ -370,14 +432,6 @@
           "source_content_hash": "e606687b5914870a839422c28990c4d79af2971e3f148f92f15d142c4ab2cc0e",
           "quote": "with participation from Maverick Silicon, StepStone Group, Mayfield, Prosperity7 Ventures, Intel Capital, and Qualcomm Ventures",
           "quote_hash": "1b3a793f6651ede6d318a32fa8c2097ef50fb059db5e8d2bc1c0d7861eb26ee5"
-        },
-        {
-          "source_id": "FISRC-7e709202ce99cc8e",
-          "source_url": "https://tech.eu/2025/09/16/nothing-raises-200m-to-power-the-next-phase-of-consumer-ai/",
-          "source_title": "Nothing 融资 2 亿美元，推动消费级 AI 进入下一阶段",
-          "source_content_hash": "d716e99aea49a2f134ddf766ae332cbdb6bd4883970bee6325631bd0839ad6d1",
-          "quote": "alongside new strategic backing from Nikhil Kamath and Qualcomm Ventures",
-          "quote_hash": "c255cf67574e4c0a61a71a835a9950747856dd3b6b1ee07474870bbba856720c"
         }
       ],
       "last_verified_at": "2026-09-26",

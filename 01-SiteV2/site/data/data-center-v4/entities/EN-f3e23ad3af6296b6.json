@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,19 +63,22 @@
       "canonical"
     ],
     "eventIds": [
-      "EV-fe7445d005172a39"
+      "EV-fe7445d005172a39",
+      "EV-8fd2621317a8a577"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-24",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-10-03",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
         "EV-fe7445d005172a39"
       ],
-      "deployments": [],
+      "deployments": [
+        "EV-8fd2621317a8a577"
+      ],
       "partnerships": [],
       "productsServices": [],
       "hardware": [],
@@ -83,6 +86,23 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-8fd2621317a8a577",
+        "dataDate": "2026-10-03",
+        "date": "2026-10-01",
+        "eventType": "capital_investment",
+        "eventTypeLabel": "资本性投资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "软银完成对 OpenAI 最后一笔投资，300 亿美元承诺全部到位",
+        "displayTags": [],
+        "entityIds": [
+          "EN-f3e23ad3af6296b6",
+          "EN-80d387ccb3289295",
+          "EN-7d3194f79e645c42"
+        ]
+      },
       {
         "id": "EV-fe7445d005172a39",
         "dataDate": "2026-10-02",

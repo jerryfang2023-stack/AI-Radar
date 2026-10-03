@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,7 +61,7 @@
     "investor_kind_label": "企业投资方",
     "classification_confidence": "evidence_bounded",
     "collection_status": "evidence_backed",
-    "current_round_count": 1,
+    "current_round_count": 2,
     "historical_or_ambiguous_count": 0,
     "portfolio_company_count": 1,
     "market_regions": [
@@ -70,12 +70,13 @@
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-02-28",
-    "latest_disclosed_at": "2026-02-28",
+    "latest_disclosed_at": "2026-10-02",
     "role_counts": {
-      "participant": 1
+      "participant": 2
     },
     "round_codes": [
-      "infrastructure"
+      "infrastructure",
+      "other"
     ],
     "portfolio_companies": [
       {
@@ -85,6 +86,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d98fedb46d5438fd",
+        "funding_insight_id": "FI-58f73c7c17717172",
+        "event_ids": [
+          "EV-3a4ba26375b45669"
+        ],
+        "company_entity_id": "EN-7d3194f79e645c42",
+        "company_canonical_entity_id": "EN-7d3194f79e645c42",
+        "company_name": "OpenAI",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "本轮融资",
+        "amount_original": "1,220 亿美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 122000000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "1220 亿美元"
+        },
+        "announced_at": "2026-10-02",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-eddae300ed827c09",
+            "source_url": "https://www.ithome.com/1/009/270.htm",
+            "source_title": "填充 AI 资金弹药：曝 OpenAI 融资再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
+            "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+            "quote": "英伟达与软银已分别向 OpenAI 支付最后一笔 100 亿美元",
+            "quote_hash": "e528789713b7fbcc746a87e7d3fc6d805f1ce8b5cfb3ab675b50b4bb294d2731"
+          }
+        ]
+      },
       {
         "activity_id": "IA-5f78298b5a61ab58",
         "funding_insight_id": "FI-72755fd9439ecca6",
@@ -127,6 +168,14 @@
       }
     ],
     "evidence": [
+      {
+        "source_id": "FISRC-eddae300ed827c09",
+        "source_url": "https://www.ithome.com/1/009/270.htm",
+        "source_title": "填充 AI 资金弹药：曝 OpenAI 融资再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
+        "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+        "quote": "英伟达与软银已分别向 OpenAI 支付最后一笔 100 亿美元",
+        "quote_hash": "e528789713b7fbcc746a87e7d3fc6d805f1ce8b5cfb3ab675b50b4bb294d2731"
+      },
       {
         "source_id": "FISRC-b4ba4f68908fa080",
         "source_url": "https://news.pedaily.cn/202602/561239.shtml",
@@ -188,6 +237,10 @@
         {
           "description": "NVentures官方文章列举Genesis Therapeutics、Inceptive、Terray、Charm、Evozyne、Generate、Superluminal、Machina Labs和Seurat Technologies等投资案例。",
           "source_id": "nvidia_ventures_cases"
+        },
+        {
+          "description": "融资来源记录：OpenAI · 其他融资 · 2026-10-02 · 本轮参投 · 1,220 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-eddae300ed827c09"
         },
         {
           "description": "融资来源记录：OpenAI · 基础设施融资 · 2026-02-28 · 本轮参投 · 1100亿美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -275,6 +328,14 @@
           "source_content_hash": "744e73fea5574634e87349e97ed22e8908cb3c66d9b3a1376aa3a37b137599df",
           "quote": "如有问题，详询 inception_cn@nvidia.com",
           "quote_hash": "bc3bfe881abfd8efd08e1c9ebc90d8c05578037f305ffe4a0dc22595477e179d"
+        },
+        {
+          "source_id": "FISRC-eddae300ed827c09",
+          "source_url": "https://www.ithome.com/1/009/270.htm",
+          "source_title": "填充 AI 资金弹药：曝 OpenAI 融资再落袋 200 亿美元，英伟达、软银和亚马逊已出资约 90%",
+          "source_content_hash": "1397db8421082ce17c5bcb8f1a947447992b36c8d26ada7cb04ffbdd8c69573b",
+          "quote": "英伟达与软银已分别向 OpenAI 支付最后一笔 100 亿美元",
+          "quote_hash": "e528789713b7fbcc746a87e7d3fc6d805f1ce8b5cfb3ab675b50b4bb294d2731"
         },
         {
           "source_id": "FISRC-b4ba4f68908fa080",

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,20 +61,21 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 0,
-    "portfolio_company_count": 2,
+    "portfolio_company_count": 3,
     "market_regions": [
       "GLOBAL"
     ],
     "china_market_activity_count": 0,
     "china_market_company_count": 0,
     "first_disclosed_at": "2026-05-27",
-    "latest_disclosed_at": "2026-09-08",
+    "latest_disclosed_at": "2026-09-30",
     "role_counts": {
-      "participant": 2
+      "participant": 3
     },
     "round_codes": [
+      "other",
       "series_d",
       "series_e"
     ],
@@ -88,9 +89,54 @@
         "entity_id": "EN-4b6cef91ffb05303",
         "canonical_entity_id": "",
         "name": "Cognition AI"
+      },
+      {
+        "entity_id": "EN-4412826522e82e22",
+        "canonical_entity_id": "",
+        "name": "Ultrahuman"
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-d077a1b7236691de",
+        "funding_insight_id": "FI-a87cf73c1a613905",
+        "event_ids": [
+          "EV-e902cbe8df8a0b41"
+        ],
+        "company_entity_id": "EN-4412826522e82e22",
+        "company_canonical_entity_id": "",
+        "company_name": "Ultrahuman",
+        "round": "其他融资",
+        "round_code": "other",
+        "round_original": "$70 million financing round",
+        "amount_original": "$70 million",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 70000000,
+          "min_value": null,
+          "max_value": null,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "7000 万美元"
+        },
+        "announced_at": "2026-09-30",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮参投",
+        "role_code": "participant",
+        "evidence": [
+          {
+            "source_id": "FISRC-723dbfd85761e08d",
+            "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",
+            "source_title": "‍Ultrahuman raises $70 million to build the next generation of human-computer interface for health",
+            "source_content_hash": "50914b888da31886",
+            "quote": "today announced a $70 million financing round with participation from Qualcomm Ventures, Labcorp, Alpha Wave, Blume, Nexus, Alteria and other investors.",
+            "quote_hash": "50fbdd4442793bb67554c5f699ad4ee3554ffdfd8f4433dbf7ce76f2dd23309f"
+          }
+        ]
+      },
       {
         "activity_id": "IA-2c3bf6b6e38e28c3",
         "funding_insight_id": "FI-d9fc0a409d33d577",
@@ -174,6 +220,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-723dbfd85761e08d",
+        "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",
+        "source_title": "‍Ultrahuman raises $70 million to build the next generation of human-computer interface for health",
+        "source_content_hash": "50914b888da31886",
+        "quote": "today announced a $70 million financing round with participation from Qualcomm Ventures, Labcorp, Alpha Wave, Blume, Nexus, Alteria and other investors.",
+        "quote_hash": "50fbdd4442793bb67554c5f699ad4ee3554ffdfd8f4433dbf7ce76f2dd23309f"
+      },
+      {
         "source_id": "FISRC-61aa8db010b34dfa",
         "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
         "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -209,6 +263,10 @@
           "source_id": "alpha_wave_cognition_series_d"
         },
         {
+          "description": "融资来源记录：Ultrahuman · 其他融资 · 2026-09-30 · 本轮参投 · $70 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-723dbfd85761e08d"
+        },
+        {
           "description": "融资来源记录：Cognition AI · E轮 · 2026-09-08 · 本轮参投 · $2 Billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-61aa8db010b34dfa"
         },
@@ -235,6 +293,14 @@
           "quote_hash": "d140dbb908f7fd9592646b04f37536b4cdc447834c2da53e3ff5aa8035bfe86d"
         },
         {
+          "source_id": "FISRC-723dbfd85761e08d",
+          "source_url": "https://cyborg.ultrahuman.com/press-releases/ultrahuman-raises-70-million-to-build-the-next-generation-of-human-computer-interface-for-health",
+          "source_title": "‍Ultrahuman raises $70 million to build the next generation of human-computer interface for health",
+          "source_content_hash": "50914b888da31886",
+          "quote": "today announced a $70 million financing round with participation from Qualcomm Ventures, Labcorp, Alpha Wave, Blume, Nexus, Alteria and other investors.",
+          "quote_hash": "50fbdd4442793bb67554c5f699ad4ee3554ffdfd8f4433dbf7ce76f2dd23309f"
+        },
+        {
           "source_id": "FISRC-61aa8db010b34dfa",
           "source_url": "https://nexnews.org/tech/cognition-ai-raises-2-billion-at-48-billion-valuation-in-andreessen-horowitz-and-accel-backed",
           "source_title": "Cognition AI 在 Andreessen Horowitz 和 Accel 支持的融资轮中筹集 20 亿美元，估值达 480 亿美元",
@@ -252,6 +318,18 @@
         }
       ],
       "last_verified_at": "2026-10-02"
+    },
+    "translations": {
+      "zh-CN": {
+        "public_profile.track_record[0].description": {
+          "text": "Cognition 官方 Series D 公告将 Alpha Wave 列入其既有投资方。",
+          "source_hash": "96cff84a1a21bf26b7d0a81d1f698aea3e5bdaa5457ce809c4f5e948c30ba415",
+          "provider": "deepseek",
+          "model": "deepseek-flash",
+          "translated_at": "2026-10-03T00:37:44.351Z",
+          "status": "translated"
+        }
+      }
     }
   }
 }

@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -64,7 +64,7 @@
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
     "current_round_count": 8,
-    "historical_or_ambiguous_count": 0,
+    "historical_or_ambiguous_count": 1,
     "portfolio_company_count": 5,
     "market_regions": [
       "GLOBAL"
@@ -75,6 +75,7 @@
     "latest_disclosed_at": "2026-09-23",
     "role_counts": {
       "co_lead": 3,
+      "historical_or_ambiguous": 1,
       "lead": 2,
       "participant": 3
     },
@@ -442,6 +443,38 @@
             "quote_hash": "dce639bc69cadea033e718af0a0afa1978ea9dbfacc2ce9e42b084fc7970c741"
           }
         ]
+      },
+      {
+        "activity_id": "IA-97d8d0f28e21fc9b",
+        "funding_insight_id": "FI-890ae16f28de5d25",
+        "event_ids": [
+          "EV-936ef5bf2539b55a"
+        ],
+        "company_entity_id": "EN-e853b4e183ed0870",
+        "company_canonical_entity_id": "",
+        "company_name": "ElevenLabs",
+        "round": "历史轮次未披露",
+        "round_code": "undisclosed",
+        "round_original": "",
+        "amount_original": "",
+        "amount_normalized": null,
+        "announced_at": "",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "unknown",
+        "scope": "historical_or_ambiguous",
+        "role": "Series D 参投",
+        "role_code": "historical_or_ambiguous",
+        "evidence": [
+          {
+            "source_id": "FISRC-7bbfa0b0946953ff",
+            "source_url": "https://elevenlabs.io/blog/series-d",
+            "source_title": "ElevenLabs raises $500M Series D at $11B valuation",
+            "source_content_hash": "0ce881ccd5783eb1",
+            "quote": "Andreessen Horowitz quadrupled down while ICONIQ tripled down, both with significant super pro-rata participation.",
+            "quote_hash": "dc002daf050b42ba6422d445f29a7b6528bdf5b58ce8d0f930a837049404ec6b"
+          }
+        ]
       }
     ],
     "evidence": [
@@ -504,8 +537,8 @@
       {
         "source_id": "FISRC-7bbfa0b0946953ff",
         "source_url": "https://elevenlabs.io/blog/series-d",
-        "source_title": "ElevenLabs 以 110 亿美元估值完成 5 亿美元 D 轮融资",
-        "source_content_hash": "330fa2acc1187a1393cfa14b2e0eb30cc3671243c102dace13b7deab7993bfda",
+        "source_title": "ElevenLabs raises $500M Series D at $11B valuation",
+        "source_content_hash": "0ce881ccd5783eb1",
         "quote": "Andreessen Horowitz quadrupled down while ICONIQ tripled down, both with significant super pro-rata participation.",
         "quote_hash": "dc002daf050b42ba6422d445f29a7b6528bdf5b58ce8d0f930a837049404ec6b"
       },
@@ -642,6 +675,14 @@
     },
     "translations": {
       "zh-CN": {
+        "activities[8].role": {
+          "text": "Series D 参投",
+          "source_hash": "b636fc29b68473bb47cbe6b906d501c0f7179b98e1550da39b2b1200a5ed7904",
+          "provider": "deepseek",
+          "model": "deepseek-v4-flash",
+          "translated_at": "2026-10-02T06:25:20.177Z",
+          "status": "translated"
+        },
         "public_profile.facts[2].label": {
           "text": "Venture & Growth页面",
           "source_hash": "4e0b7bb9cdbc715387de6c0c0884dc8b4ef6bf10bb02c65b4e76d8100fed4b6e",

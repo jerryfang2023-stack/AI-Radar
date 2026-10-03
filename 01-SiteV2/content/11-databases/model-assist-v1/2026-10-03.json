@@ -1,0 +1,5141 @@
+{
+  "schema_version": "MODEL-ASSIST-V1.0",
+  "generated_at": "2026-10-03T00:28:11.707Z",
+  "data_date": "2026-10-03",
+  "prompt_version": "model-assist-2026-07-18.2",
+  "source_count": 87,
+  "candidates": [
+    {
+      "candidate_id": "MAC-023f835438fed4a1",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-26e59d6a3c92de80",
+      "raw_id": "RAW-fb67c63c0617c200",
+      "source_ref": "SA-0db17452c505e022",
+      "source_hash": "e7fc30e8011abc70",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Instinct",
+        "rationale": "The candidate mention 'Instinct' refers to an AI assistant startup, not to the verified alternative 'Meta'. The source describes Instinct as a separate company facing competition from Meta's AI assistant, Muse.",
+        "candidate_name": "Instinct"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 280,
+          "quote": "It’s only been a month since AI assistant startup Instinct announced a fundraise that valued it at $2.5 billion, and now the company has already raised another $1 billion from investors, including Sequoia Capital, Benchmark Capital, and Coatue, valuing the company at $10 billion."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:26.371Z"
+    },
+    {
+      "candidate_id": "MAC-0295ecdba80ad1af",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-7f4fdb8eb6e82b27",
+      "raw_id": "RAW-d76973f1b9836cd5",
+      "source_ref": "SA-af31edc51e5ec927",
+      "source_hash": "6893ef5cbc269f75",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "EliseAI",
+        "rationale": "No VERIFIED_ALTERNATIVE is provided, so same_entity cannot be chosen. The source identifies the candidate as an AI startup named EliseAI, but there is no verified alternative to match against.",
+        "candidate_name": "EliseAI"
+      },
+      "evidence": [
+        {
+          "start": 131,
+          "end": 295,
+          "quote": "AI startup EliseAI announced on Tuesday that it has raised $350 million at a $4 billion valuation, double what it was worth when it raised its Series E last August."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:34.745Z"
+    },
+    {
+      "candidate_id": "MAC-04a9d8ec34415a14",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-7d151ab448868200",
+      "raw_id": "RAW-89c2ac371bbfdcf3",
+      "source_ref": "SA-a27ee46d751f1388",
+      "source_hash": "4cc986c140009261",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "capital_investment",
+            "subject": "ElevenLabs",
+            "object": "$300 million employee tender offer at $22 billion valuation",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "model_release",
+            "subject": "ElevenLabs",
+            "object": "Eleven v4 and v4 Turbo",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "ElevenLabs",
+            "object": "enterprise accounting for 55% of revenue",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 186,
+          "end": 330,
+          "quote": "We recently closed a $300 million employee tender offer that values ElevenLabs at $22 billion, double our valuation at our Series D in February."
+        },
+        {
+          "start": 778,
+          "end": 895,
+          "quote": "Eleven v4 and v4 Turbo are our fastest and most emotive models yet, which are already leading independent benchmarks."
+        },
+        {
+          "start": 1127,
+          "end": 1298,
+          "quote": "This shift is driving much of our growth, with enterprise now accounting for 55% of our revenue, as businesses adopt ElevenAgents to support their customers and employees."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:15.385Z"
+    },
+    {
+      "candidate_id": "MAC-0693cdb48b2bbbaa",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-49aad8f877d9d7c4",
+      "raw_id": "RAW-8ba4625d73536dac",
+      "source_ref": "SA-75b1caa5ed8911d6",
+      "source_hash": "17ce5cfb9557886f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "research_result",
+            "subject": "Anthropic",
+            "object": "Claude模型助力发现了一种新型酶系统",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "hardware_capacity",
+            "subject": "Anthropic",
+            "object": "旧金山湾区湿实验室",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "acquisition",
+            "subject": "Anthropic",
+            "object": "Coefficient Bio",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 29,
+          "end": 101,
+          "quote": "9月23日，美国人工智能初创公司Anthropic公司对外表示，其Claude模型助力发现了一种新型酶系统，这是该公司生物学研究项目的首个成果。"
+        },
+        {
+          "start": 1868,
+          "end": 1942,
+          "quote": "9月18日，Anthropic正式在旧金山湾区建立湿实验室并招募生物化学科学家，该项目旨在利用其大模型Claude指挥自动化机器人单元开展生物实验。"
+        },
+        {
+          "start": 1942,
+          "end": 2005,
+          "quote": "此前Anthropic已于年内斥资约4亿美元收购自动化实验平台Coefficient Bio，发布了科学智能体控制标准MHS。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:11.867Z"
+    },
+    {
+      "candidate_id": "MAC-07023791c6710f07",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0dce10aceaf8ccc2",
+      "raw_id": "RAW-b6a3578c7329048b",
+      "source_ref": "SA-f5fc58d75341b199",
+      "source_hash": "37661a3d9b0844a4",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "DIG Ventures",
+        "rationale": "The candidate mention 'DIG Ventures' is a London-based venture capital firm founded by Ross Mason. The only verified alternative is 'Salesforce', which is mentioned separately as the acquirer of MuleSoft. The quote shows DIG Ventures is distinct from Salesforce, so they are not the same entity.",
+        "candidate_name": "DIG Ventures"
+      },
+      "evidence": [
+        {
+          "start": 301,
+          "end": 515,
+          "quote": "DIG Ventures, the London-based venture capital firm backing the enterprise and cloud infrastructure companies underpinning the future of AI, has announced the close of its third fund at €106 million ($120 million)."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:23.698Z"
+    },
+    {
+      "candidate_id": "MAC-079a6f3ad3f7a3a1",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6939ead954610e54",
+      "raw_id": "RAW-21b60a7027ba94d3",
+      "source_ref": "SA-7ee9df886b3c1c35",
+      "source_hash": "3c432663cef9dd86",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "HomeGermany-StartupsBerlin-based Kuro",
+        "rationale": "The candidate name appears to be a concatenation of page navigation text and the article headline rather than a distinct organization name. No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed. The source refers to the company as 'Kuro Technology' and 'Kuro', but the candidate canonical name does not exactly match any verified alternative.",
+        "candidate_name": "HomeGermany-StartupsBerlin-based Kuro"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 100,
+          "quote": "HomeGermany-StartupsBerlin-based Kuro raises €10 million to build the AI ​​foundation for general..."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:33.236Z"
+    },
+    {
+      "candidate_id": "MAC-07fc084a67adaf3a",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3ad7f4e20c398fc9",
+      "raw_id": "RAW-106741e938c895d5",
+      "source_ref": "SA-e32a0302c56fea39",
+      "source_hash": "fe07cc5d871b0528",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Instinct",
+            "object": "$1 billion Series C round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "EliseAI",
+            "object": "$350 million funding round",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Armadin",
+            "object": "$255.5 million Series B funding",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 833,
+          "end": 965,
+          "quote": "San Francisco-based Instinct, a startup building a personal AI assistant for everyday tasks, secured $1 billion in a Series C round."
+        },
+        {
+          "start": 1121,
+          "end": 1248,
+          "quote": "EliseAI, a startup deploying AI for the home rental industry, completed a $350 million funding round at a $4 billion valuation."
+        },
+        {
+          "start": 1426,
+          "end": 1572,
+          "quote": "Palo Alto, California-based Armadin, an AI-native cybersecurity company focused on autonomous security, raised $255.5 million in Series B funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:09.410Z"
+    },
+    {
+      "candidate_id": "MAC-0a27bd4d59a7599d",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-381af44ae98dcda4",
+      "raw_id": "RAW-9cffcab26fab8756",
+      "source_ref": "SA-15c9a6a2c2f70135",
+      "source_hash": "f0aeea7d32d66988",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "TriGemX Bio",
+            "object": "$94M financing",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "AnaCardio",
+            "object": "€62.5M ($70.9M) Series B",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Breye Therapeutics",
+            "object": "€67.5 million ($76.5 million) series A round",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 789,
+          "end": 1061,
+          "quote": "Kallyope announced its new name, TriGemX Bio, along with a $94 million financing that will be used to advance the clinical development of the company’s lead program, elismetrep, an oral TRPM8 channel blocker currently in phase 3 trials for the acute treatment of migraine."
+        },
+        {
+          "start": 1451,
+          "end": 1507,
+          "quote": "September 30—AnaCardio\nSeries: B\nAmount: €62.5M ($70.9M)"
+        },
+        {
+          "start": 2301,
+          "end": 2469,
+          "quote": "Novo-backed Breye Therapeutics closed an oversubscribed €67.5 million ($76.5 million) series A round to position the biotech advance its lead asset into phase 2 trials."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:08.701Z"
+    },
+    {
+      "candidate_id": "MAC-0d4e0a6a85b3092a",
+      "task_type": "qa_repair",
+      "asset_id": "QA-7ad3a014a2a1240c",
+      "raw_id": "RAW-00c4c84f6d0ee3bc",
+      "source_ref": "SA-160a5828eb80d8c8",
+      "source_hash": "73ab761b40bc1537",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The supplied source is about a biotech funding round for a plasminogen-based therapy and contains no concrete AI industry event, so it cannot support an AI-relevant fact.",
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:46.108Z"
+    },
+    {
+      "candidate_id": "MAC-1380613f607091b6",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-324a65940c9148ba",
+      "raw_id": "RAW-f3bb1ae9253043d9",
+      "source_ref": "SA-216d3bc798bf0c55",
+      "source_hash": "d64ecc95e8052e64",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Reco",
+        "rationale": "The candidate mention 'Reco' refers to an AI security startup, not to the verified alternative 'Salesforce'. The source text mentions Salesforce only as a platform that an agent could access, which is a relationship, not entity identity.",
+        "candidate_name": "Reco"
+      },
+      "evidence": [
+        {
+          "start": 1034,
+          "end": 1144,
+          "quote": "Until last year, AI security startup Reco was mostly selling software to map and secure SaaS and AI platforms."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:27.981Z"
+    },
+    {
+      "candidate_id": "MAC-1671daee6ca03d75",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-5b0d45edbe62c07a",
+      "raw_id": "RAW-eb245f90f3392bfd",
+      "source_ref": "SA-17529b1f036a718d",
+      "source_hash": "382a9b5e5447dae7",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "全灵 SEELE",
+        "rationale": "The candidate entity 全灵 SEELE is a startup founded by 王诗沐, described in the source as an AI 3D game company. It does not match either verified alternative (Anthropic or OpenAI), which are mentioned only as comparison points for large model companies. Therefore it is a distinct entity.",
+        "candidate_name": "全灵 SEELE"
+      },
+      "evidence": [
+        {
+          "start": 544,
+          "end": 572,
+          "quote": "2022 年，王诗沐离开腾讯，创业成立全灵 SEELE。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "failed",
+          "detail": "unsupported_numeric_fact:3"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:08.395Z"
+    },
+    {
+      "candidate_id": "MAC-187d0805e4e8d3e9",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-40a9543b0f7b0cf9",
+      "raw_id": "RAW-ba66979639173cad",
+      "source_ref": "SA-7f9fc50c833aa470",
+      "source_hash": "6b662ac48cab8039",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Modulate",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity. The source text does refer to the entity 'Modulate' as a Boston-based voice intelligence startup, but without a verified alternative to match against, the identity decision is unknown.",
+        "candidate_name": "Modulate"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 292,
+          "quote": "Boston-based voice intelligence startup Modulate has raised $25 million in new funding for its platform that uses an array of small models to offer enterprises transcription, emotional analysis, deepfake and AI music detection, and policy enforcement for voice agents in regulated industries."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:29.844Z"
+    },
+    {
+      "candidate_id": "MAC-18ecd35a6aa22bae",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-26e59d6a3c92de80",
+      "raw_id": "RAW-01d863e5644f1c81",
+      "source_ref": "SA-2bb3cf83c0f23e21",
+      "source_hash": "c62e4fc4d501edfc",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Instinct",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "Instinct"
+      },
+      "evidence": [
+        {
+          "start": 25,
+          "end": 137,
+          "quote": "人工智能初创公司 Instinct 现已完成 10 亿美元（IT之家注：现汇率约合 67.19 亿元人民币）融资，投后估值达到 100 亿美元（现汇率约合 671.95 亿元人民币），反映出市场对 AI 智能体兴趣持续高涨。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:05.574Z"
+    },
+    {
+      "candidate_id": "MAC-19415108294f1d4a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-50d7f4250bdd8888",
+      "raw_id": "RAW-a389cc65cdff96a9",
+      "source_ref": "SA-e961bbff6fb12449",
+      "source_hash": "3e645d73b069e990",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Flow Engineering",
+        "rationale": "The candidate mention 'Flow Engineering' refers to an AI startup for hardware design, not to any verified alternative. The only verified alternative is SpaceX, which is mentioned separately as a company Elon Musk's Valor Equity Partners invested in. The quote proves Flow Engineering is a distinct entity from SpaceX.",
+        "candidate_name": "Flow Engineering"
+      },
+      "evidence": [
+        {
+          "start": 143,
+          "end": 346,
+          "quote": "Flow Engineering, a startup that offers AI tools for hardware design, has raised a $50 million Series B round at a $750 million valuation from some big-name investors, the company announced on Wednesday."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:07.589Z"
+    },
+    {
+      "candidate_id": "MAC-1a619fba5469ec1c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-c50b952c867941de",
+      "raw_id": "RAW-f4064b636b4d853f",
+      "source_ref": "SA-63ab9ff670d773e5",
+      "source_hash": "9c488922a8c3218b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "博通",
+            "object": "Anthropic",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 236,
+          "end": 310,
+          "quote": "博通已同意向 Anthropic 提供最高达 420 亿美元（IT之家注：现汇率约合 2,820.11 亿元人民币）的贷款，用于支持其基础设施开支。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:18.010Z"
+    },
+    {
+      "candidate_id": "MAC-1d36ebca42abeaa1",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-4e91aebb6835ca18",
+      "raw_id": "RAW-617d65ac6dbda52b",
+      "source_ref": "SA-262f9b8d1da0831f",
+      "source_hash": "d50abcfe5bd45ee9",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "partnership",
+            "subject": "JERA",
+            "object": "Dell、RHAELM",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "hardware_capacity",
+            "subject": "千叶县数据中心",
+            "object": "400MW",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "deployment",
+            "subject": "AI 数据中心",
+            "object": "2028 年上线运行",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 16,
+          "end": 115,
+          "quote": "日本供电规模最大的电力公司 JERA（捷热）当地时间今日与 Dell（戴尔）、主权人工智能基础设施开发商 RHAELM 当地时间今日签署谅解备忘录，三方将共同制定日本人工智能基础设施建设标准化框架。"
+        },
+        {
+          "start": 139,
+          "end": 214,
+          "quote": "其设计容量达 400MW，是日本最大的单一数据中心站点，总投资规模预计将超过 150 亿美元（IT之家注：现汇率约合 1,007.53 亿元人民币）。"
+        },
+        {
+          "start": 294,
+          "end": 311,
+          "quote": "站点有望于 2028 年上线运行。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:13.577Z"
+    },
+    {
+      "candidate_id": "MAC-1e27490ca30b58be",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-9c8ae69b84f21a2e",
+      "raw_id": "RAW-bd67a2306aa2fa1c",
+      "source_ref": "SA-f00e8ca2e633fe3e",
+      "source_hash": "9b70e78c4d2b3b3a",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Tencent",
+        "rationale": "The candidate entity 'Tencent' (腾讯) appears only in the title as part of the news platform name '腾讯新闻' (Tencent News). No VERIFIED_ALTERNATIVES were supplied, and the source text does not contain any mention of Tencent as an entity being discussed. The title reference is to the publishing platform, not a substantive entity mention, and there is no verified alternative to match against.",
+        "candidate_name": "Tencent"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:09.314Z"
+    },
+    {
+      "candidate_id": "MAC-1ead5626564abc7f",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-62de5e18e21a2d53",
+      "raw_id": "RAW-22288ed9b836495e",
+      "source_ref": "SA-944c56f40a727de8",
+      "source_hash": "08c992313e08d47c",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Black Forest Labs backer Headline",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative. The source identifies Headline as a global VC and mentions Black Forest Labs only in the title, not in the SOURCE_TEXT body.",
+        "candidate_name": "Black Forest Labs backer Headline"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 125,
+          "quote": "Global VC Headline today announced the close of Headline EU VIII, its eighth early-stage fund dedicated to European founders."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:32.464Z"
+    },
+    {
+      "candidate_id": "MAC-24d6aed04c8413b0",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-583657b5410ff543",
+      "raw_id": "RAW-b69507405931f9be",
+      "source_ref": "SA-4cdc034b0fcdfaf4",
+      "source_hash": "2675d63c313077cd",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "SpaceX product manager",
+        "rationale": "The candidate mention refers to a person's former job role at SpaceX, not to the organization SpaceX itself. The verified alternative 'SpaceX' is an organization, while the candidate describes an individual (Rama Afullo) who worked there. Entity identity is not established by employment or role relationship.",
+        "candidate_name": "SpaceX product manager"
+      },
+      "evidence": [
+        {
+          "start": 66,
+          "end": 223,
+          "quote": "The Kenyan American engineer previously worked in Google’s cloud computing business before a brief stint at SpaceX’s Starlink communications network in 2024."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:32.219Z"
+    },
+    {
+      "candidate_id": "MAC-2741d08514841362",
+      "task_type": "qa_repair",
+      "asset_id": "QA-6c8367c5e2dd7690",
+      "raw_id": "RAW-b2eb42d42ffef29e",
+      "source_ref": "SA-9a96e1a0ce95497e",
+      "source_hash": "ade80310f6f8fc01",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-related event: Tiny Health is developing a tool called TinyAI that draws on its data and research to help people understand their results. This supports an AI product development claim.",
+        "claims": [
+          {
+            "event_type": "product_release",
+            "subject": "Tiny Health",
+            "object": "TinyAI, a tool that draws on its data and research reviewed by its scientific staff to help people understand their results",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 6585,
+          "end": 6744,
+          "quote": "the startup is developing a tool called TinyAI that will draw on its data and research reviewed by its scientific staff to help people understand their results"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:46.528Z"
+    },
+    {
+      "candidate_id": "MAC-28c93b3285158e5e",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-f89b6b75d23e715a",
+      "raw_id": "RAW-bd67a2306aa2fa1c",
+      "source_ref": "SA-f00e8ca2e633fe3e",
+      "source_hash": "9b70e78c4d2b3b3a",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "风峦科技",
+            "object": "数千万元天使+轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Nex",
+            "object": "1.5亿美元投资",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "product_release",
+            "subject": "咪墨机memoink",
+            "object": "AI单词机",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 178,
+          "end": 230,
+          "quote": "近期，风峦科技已完成数千万元天使+轮融资，由鸿瑞达投资领投，苏州怡达基金及Hexa Capital跟投。"
+        },
+        {
+          "start": 449,
+          "end": 500,
+          "quote": "Nex已获得1.5亿美元投资，其家庭向体感游戏主机Nex Playground的销量已突破100万台。"
+        },
+        {
+          "start": 676,
+          "end": 720,
+          "quote": "一台集单词学习、AI 陪伴与专注管理于一体的AI单词机——咪墨机memoink正式推出。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:21.684Z"
+    },
+    {
+      "candidate_id": "MAC-2a611fb56ad2f32e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e3baa3a2daee23ae",
+      "raw_id": "RAW-4d7bf7101faf6654",
+      "source_ref": "SA-cedae66a08327e40",
+      "source_hash": "f0837b2e336e637f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Miter",
+        "rationale": "No VERIFIED_ALTERNATIVE was supplied, so identity cannot be confirmed against a verified alternative; the source does establish the candidate mention as an organization named Miter.",
+        "candidate_name": "Miter"
+      },
+      "evidence": [
+        {
+          "start": 214,
+          "end": 465,
+          "quote": "Miter, the leading AI-powered workforce management platform for the construction industry and the built world, announced it has raised a $40 million Series B round of financing led by Battery Ventures, bringing its total capital raised to $78 million."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:40.555Z"
+    },
+    {
+      "candidate_id": "MAC-2c0c3dfab4bcd88d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-bbdefa2950f49882",
+      "raw_id": "RAW-b69507405931f9be",
+      "source_ref": "SA-4cdc034b0fcdfaf4",
+      "source_hash": "2675d63c313077cd",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Google",
+        "rationale": "The candidate canonical_name 'Google' does not match any VERIFIED_ALTERNATIVE (only 'SpaceX' is verified). The source mentions Google as a separate organization, not as an alias or identity of SpaceX.",
+        "candidate_name": "Google"
+      },
+      "evidence": [
+        {
+          "start": 66,
+          "end": 223,
+          "quote": "The Kenyan American engineer previously worked in Google’s cloud computing business before a brief stint at SpaceX’s Starlink communications network in 2024."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:38.649Z"
+    },
+    {
+      "candidate_id": "MAC-35d2f6eafb9eca81",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-4e25ee9cfdf165b9",
+      "raw_id": "RAW-bde0eaad352fb991",
+      "source_ref": "SA-bcc044864e5d23cb",
+      "source_hash": "82e22d9ba7c6f77b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Stability AI",
+            "object": "$76 million in funding from Sony, Warner, and Universal",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "model_release",
+            "subject": "Stability AI",
+            "object": "three new audio models and AI music-editing software",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "Sean Parker",
+            "object": "$80 million rescue of Stability AI",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 804,
+          "end": 912,
+          "quote": "in late August, the company announced $76 million in funding from, among others, Sony, Warner, and Universal"
+        },
+        {
+          "start": 983,
+          "end": 1064,
+          "quote": "Stability has since released three new audio models and AI music-editing software"
+        },
+        {
+          "start": 389,
+          "end": 436,
+          "quote": "he joined an $80 million rescue of Stability AI"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:13.083Z"
+    },
+    {
+      "candidate_id": "MAC-39224926851c7ed7",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-ea0577a65cf6b8c9",
+      "raw_id": "RAW-ee27d98f33e8ca4b",
+      "source_ref": "SA-43402ca38a730252",
+      "source_hash": "23844e54c22d6320",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "capital_investment",
+            "subject": "软银集团",
+            "object": "OpenAI",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "软银",
+            "object": "OpenAI",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 25,
+          "end": 68,
+          "quote": "公司已通过软银愿景基金 2 完成对 OpenAI 的第三笔投资，金额为 100 亿美元"
+        },
+        {
+          "start": 119,
+          "end": 162,
+          "quote": "软银此前承诺的 300 亿美元（现汇率约合 2,015.06 亿元人民币）投资全部到位"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:20.813Z"
+    },
+    {
+      "candidate_id": "MAC-3a3f3ac317cc8398",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-77646f5a4f316663",
+      "raw_id": "RAW-5e6090420adb3940",
+      "source_ref": "SA-a9c4598dc0e8cf5d",
+      "source_hash": "cacd42741e85d403",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "FRANK",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "FRANK"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 209,
+          "quote": "Portuguese insurtech FRANK has\nraised €2.9 million in a funding round led by Armilar and Start Ventures to further develop its AI-powered platform for insurance brokers and prepare for international expansion."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:34.108Z"
+    },
+    {
+      "candidate_id": "MAC-3b3095f3c32d3b08",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e52fc209b562d340",
+      "raw_id": "RAW-9d6abd6d4a4c65a9",
+      "source_ref": "SA-ec8a96422050b4b4",
+      "source_hash": "5774882366d2c4f5",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Longevity startup Vytalyou",
+        "rationale": "The candidate entity is a longevity and preventive healthcare startup named Vytalyou. The only verified alternative is Meta, which is not mentioned in the source text and is not the same entity as Vytalyou. The quote confirms Vytalyou is a distinct organization.",
+        "candidate_name": "Longevity startup Vytalyou"
+      },
+      "evidence": [
+        {
+          "start": 6,
+          "end": 220,
+          "quote": "Doctor-led longevity and preventive healthcare startup Vytalyou has raised Rs 9 crore in a pre-Series A round from Chetan Jain of Pharma Dose and Ratan Jain of Venus Industries at a valuation of around Rs 33 crore."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:40.855Z"
+    },
+    {
+      "candidate_id": "MAC-3b6bba0e1300a295",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-bb2e1f09c5e29bf0",
+      "raw_id": "RAW-ea225c8499355648",
+      "source_ref": "SA-d20925ab4b92c1c7",
+      "source_hash": "775cc681913dafa1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Zaperon",
+            "object": "Rs 7 crore seed funding round led by Inflection Point Ventures (IPV)",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "QNu Labs",
+            "object": "Rs 200 crore Series A1 round led by the National Quantum Mission and Speciale Invest",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Mitigata",
+            "object": "$15 million Series B funding led by Bessemer Venture Partners",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 6,
+          "end": 121,
+          "quote": "Cybersecurity startup Zaperon has raised Rs 7 crore in a seed funding round led by Inflection Point Ventures (IPV)."
+        },
+        {
+          "start": 1571,
+          "end": 1755,
+          "quote": "Recent deals include QNu Labs, which raised Rs 200 crore in a Series A1 round led by the National Quantum Mission and Speciale Invest to scale its quantum-safe cybersecurity solutions;"
+        },
+        {
+          "start": 1756,
+          "end": 1890,
+          "quote": "Mitigata, which secured $15 million in Series B funding led by Bessemer Venture Partners for its AI-powered cyber-resilience platform;"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:18.194Z"
+    },
+    {
+      "candidate_id": "MAC-3c0e30f4a24d9e02",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-4412826522e82e22",
+      "raw_id": "RAW-4fb67031213aafec",
+      "source_ref": "SA-29677b005c3f2319",
+      "source_hash": "40b9195cc5d482a2",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Ultrahuman",
+        "rationale": "The candidate entity is Ultrahuman, an Indian health-technology company. The only verified alternative is Meta, which is not mentioned in the source text. The source text does not establish that Ultrahuman is the same entity as Meta; they are distinct organizations.",
+        "candidate_name": "Ultrahuman"
+      },
+      "evidence": [
+        {
+          "start": 104,
+          "end": 299,
+          "quote": "Ultrahuman has evolved from a wearable startup into a broader health intelligence company that connects smart rings, glucose monitoring, blood biomarkers, medical records, and AI-driven insights."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:07.210Z"
+    },
+    {
+      "candidate_id": "MAC-3c87b8185acdde20",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-cece25c61406e5bd",
+      "raw_id": "RAW-69679019480c1b3a",
+      "source_ref": "SA-978537a257957ffc",
+      "source_hash": "f6237920ff5fdc17",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Restate",
+            "object": "$20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "acquisition",
+            "subject": "Alibaba",
+            "object": "Data Artisans",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "organization_people",
+            "subject": "Ahmed Farghal",
+            "object": "joined as the fourth co-founder at the Series A",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1015,
+          "end": 1161,
+          "quote": "That momentum has led Restate to secure a $20 million Series A led by Singular with participation from Redpoint Ventures and Capital One Ventures."
+        },
+        {
+          "start": 2558,
+          "end": 2681,
+          "quote": "Alibaba acquired Data Artisans in 2019 and rebranded it as Ververica, where Ewen continued to serve as CTO for three years."
+        },
+        {
+          "start": 2793,
+          "end": 2907,
+          "quote": "Ahmed Farghal, who was previously an engineer at Stripe and Meta, joined as the fourth co-founder at the Series A."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:19.431Z"
+    },
+    {
+      "candidate_id": "MAC-3ca82bda77a2fd6d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-920510199770f4d6",
+      "raw_id": "RAW-22288ed9b836495e",
+      "source_ref": "SA-944c56f40a727de8",
+      "source_hash": "08c992313e08d47c",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Mistral",
+        "rationale": "No VERIFIED_ALTERNATIVE provided, so identity cannot be confirmed. The source mentions Mistral only in the title as a backer of Headline, which does not establish entity identity.",
+        "candidate_name": "Mistral"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:35.033Z"
+    },
+    {
+      "candidate_id": "MAC-3e2abff45c1178a1",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-35c294e2bd449f0a",
+      "raw_id": "RAW-6763a1e05a80324f",
+      "source_ref": "SA-46dfdfbbc3914a14",
+      "source_hash": "6ce0e21d241f1e9e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Traveltech Tryp.com",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "Traveltech Tryp.com"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 96,
+          "quote": "Traveltech Tryp.com has raised €1.9 million in funding in a round led by Point Capital Partners."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:28.382Z"
+    },
+    {
+      "candidate_id": "MAC-3f9f6e149d641efe",
+      "task_type": "qa_repair",
+      "asset_id": "QA-86413b43fc79fc70",
+      "raw_id": "RAW-93155cf2e804638d",
+      "source_ref": "SA-b4f2900befee65ed",
+      "source_hash": "7b76a493a003b0af",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant event: Homeward is incorporating AI into its workflows, specifically using AI to reduce manual work in processing transactions and underwriting properties. This is a deployment of AI technology by the company.",
+        "claims": [
+          {
+            "event_type": "deployment",
+            "subject": "Homeward",
+            "object": "AI to reduce manual work in processing transactions and underwriting properties",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 7017,
+          "end": 7217,
+          "quote": "As many other startups, Homeward is incorporating AI into its workflows. For example, the company is using AI to reduce the manual work involved in processing transactions and underwriting properties."
+        },
+        {
+          "start": 7103,
+          "end": 7216,
+          "quote": "the company is using AI to reduce the manual work involved in processing transactions and underwriting properties"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:47.322Z"
+    },
+    {
+      "candidate_id": "MAC-40fdb7353cb01f51",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0d0dd4bc07420a2c",
+      "raw_id": "RAW-942692843ffea09b",
+      "source_ref": "SA-749fbe28f4ccfff0",
+      "source_hash": "d345eafcaa15d78e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Volantis",
+        "rationale": "The candidate name 'Volantis' does not match any verified alternative (Anthropic, NVIDIA, Apple, Amazon). The source describes Volantis as a semiconductor startup, which is a distinct entity from the verified alternatives. Mentions of NVIDIA, Apple, Amazon, and Anthropic in the source are separate organizations, not identity matches for Volantis.",
+        "candidate_name": "Volantis"
+      },
+      "evidence": [
+        {
+          "start": 112,
+          "end": 359,
+          "quote": "San Francisco-based semiconductor startup Volantis on Thursday said it has raised $88 million in venture capital in an effort to solve a key challenge for AI chips by tapping a technology that is already sitting in hundreds of millions of iPhones."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:22.595Z"
+    },
+    {
+      "candidate_id": "MAC-4271feb1bbd2d506",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-bcdcf577ca136895",
+      "raw_id": "RAW-21b60a7027ba94d3",
+      "source_ref": "SA-7ee9df886b3c1c35",
+      "source_hash": "3c432663cef9dd86",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Kuro Technology",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so no exact match to a verified alternative can be established. The source does mention 'Kuro Technology' and 'Kuro', but without a verified alternative list, identity cannot be confirmed under the required rule.",
+        "candidate_name": "Kuro Technology"
+      },
+      "evidence": [
+        {
+          "start": 286,
+          "end": 429,
+          "quote": "Kuro Technology, a Berlin-based ConTech startup that builds AI software to help general contractors, has raised €10 million in a funding round."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:39.614Z"
+    },
+    {
+      "candidate_id": "MAC-438d38af27204f22",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-2984a39ed259fcf1",
+      "raw_id": "RAW-21b60a7027ba94d3",
+      "source_ref": "SA-7ee9df886b3c1c35",
+      "source_hash": "3c432663cef9dd86",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Berlin-based Kuro",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative. The source text mentions 'Kuro' and 'Kuro Technology' but does not establish an exact match to a verified alternative.",
+        "candidate_name": "Berlin-based Kuro"
+      },
+      "evidence": [
+        {
+          "start": 286,
+          "end": 429,
+          "quote": "Kuro Technology, a Berlin-based ConTech startup that builds AI software to help general contractors, has raised €10 million in a funding round."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:27.023Z"
+    },
+    {
+      "candidate_id": "MAC-49189b8f76d830fa",
+      "task_type": "qa_repair",
+      "asset_id": "QA-16d4e21b0ffcb271",
+      "raw_id": "RAW-a4f5a64b454f3de7",
+      "source_ref": "SA-4763f65e4cf6dc38",
+      "source_hash": "9bb2fc6b6e31c80b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The supplied source is about a biopharmaceutical company raising funding for oral retinal disease therapies; it contains no concrete AI industry event, so it cannot support an AI-relevant fact.",
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:42.565Z"
+    },
+    {
+      "candidate_id": "MAC-49395d4604bd0c4b",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f39908b341eb08e5",
+      "raw_id": "RAW-41f0ad1816579c76",
+      "source_ref": "SA-65b0b4e4b1648a31",
+      "source_hash": "e9edaa8c98d1c6c1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Chipway",
+        "rationale": "The candidate mention 'Chipway' refers to a semiconductor inspection equipment company, which is not the same entity as the verified alternative 'Anthropic'. The source text describes Chipway as a distinct organization from Anthropic, which is mentioned separately in a different news story.",
+        "candidate_name": "Chipway"
+      },
+      "evidence": [
+        {
+          "start": 409,
+          "end": 488,
+          "quote": "Chipway develops, makes, and sells high-end semiconductor inspection equipment."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:41.690Z"
+    },
+    {
+      "candidate_id": "MAC-4deddec168cd0892",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-02328c6a0681bc9f",
+      "raw_id": "RAW-01d863e5644f1c81",
+      "source_ref": "SA-2bb3cf83c0f23e21",
+      "source_hash": "c62e4fc4d501edfc",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "AI 初创公司 Instinct",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity.",
+        "candidate_name": "AI 初创公司 Instinct"
+      },
+      "evidence": [
+        {
+          "start": 25,
+          "end": 137,
+          "quote": "人工智能初创公司 Instinct 现已完成 10 亿美元（IT之家注：现汇率约合 67.19 亿元人民币）融资，投后估值达到 100 亿美元（现汇率约合 671.95 亿元人民币），反映出市场对 AI 智能体兴趣持续高涨。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:04.754Z"
+    },
+    {
+      "candidate_id": "MAC-4e699690ff243760",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f395aeb2c6e6abc8",
+      "raw_id": "RAW-116865926df04e7f",
+      "source_ref": "SA-e35a41673f681a97",
+      "source_hash": "7f6f5cab051248e1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Outmarket AI",
+        "rationale": "No VERIFIED_ALTERNATIVE was supplied, so identity cannot be confirmed against a verified list; the source consistently names the entity 'Outmarket AI' and also 'Outmarket', but no verified alternative exists to match.",
+        "candidate_name": "Outmarket AI"
+      },
+      "evidence": [
+        {
+          "start": 142,
+          "end": 273,
+          "quote": "Outmarket AI, the leading AI platform purpose-built for insurance, today announced it has raised $34.5 million in Series B funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:41.454Z"
+    },
+    {
+      "candidate_id": "MAC-4fcb500deb096918",
+      "task_type": "qa_repair",
+      "asset_id": "QA-a8d0c2119a00cc5f",
+      "raw_id": "RAW-9043da597c5c65f8",
+      "source_ref": "SA-8cef785ec6e6360e",
+      "source_hash": "d756946ecd848a37",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Outmarket, an AI insurance automation startup, raised a $34.5M Series B. The quote directly supports the funding claim.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Outmarket",
+            "object": "$34.5 million Series B led by SignalFire, with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital, and Dash Fund",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 1749,
+          "end": 1931,
+          "quote": "Outmarket is set to announce that it raised a $34.5 million Series B led by SignalFire, with participation from Fika Ventures, Permanent Capital Ventures, TTV Capital, and Dash Fund."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:47.573Z"
+    },
+    {
+      "candidate_id": "MAC-5088904f2d06c63d",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-d7845d49322d6d7c",
+      "raw_id": "RAW-33276b754133ba16",
+      "source_ref": "SA-89eebfade794e631",
+      "source_hash": "2911c2bcbc090193",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:19.901Z"
+    },
+    {
+      "candidate_id": "MAC-50fa87953b03dcfc",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-81b4523fd267f59b",
+      "raw_id": "RAW-d9a6fda7473e42ab",
+      "source_ref": "SA-1b9579ad830dec09",
+      "source_hash": "c5c493120a6b3f61",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Photon",
+            "object": "$4.5 million seed funding",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "Photon",
+            "object": "managed platform with subscription tiers",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "certification_compliance",
+            "subject": "Photon",
+            "object": "SOC 2 Type II and HIPAA-compliant",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 192,
+          "end": 335,
+          "quote": "Photon, which helps developers build agents that work over iMessage and WhatsApp, now has $4.5 million in seed funding to develop its products."
+        },
+        {
+          "start": 2560,
+          "end": 2667,
+          "quote": "This April, the founders decided to create a managed platform and sell access to it via subscription tiers."
+        },
+        {
+          "start": 2854,
+          "end": 2950,
+          "quote": "It’s also SOC 2 Type II and HIPAA-compliant, which opens the door to healthcare agent use cases."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:15.902Z"
+    },
+    {
+      "candidate_id": "MAC-53673c5f843ce9f1",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-e751bb5c894b6223",
+      "raw_id": "RAW-15beca30521300ae",
+      "source_ref": "SA-121043e2519f14d7",
+      "source_hash": "5321779e86081ab2",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Commonwealth Fusion Systems",
+            "object": "$1 billion equity financing",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Valar Atomics",
+            "object": "$1 billion across two Series B equity tranches",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "ipo_listing",
+            "subject": "X-energy",
+            "object": "$12 billion valuation in initial trading",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 840,
+          "end": 1045,
+          "quote": "Massachusetts-based Commonwealth Fusion Systems, which is developing what it describes as the “world’s first commercially-relevant net energy fusion machine,” secured $1 billion in a July equity financing."
+        },
+        {
+          "start": 1046,
+          "end": 1179,
+          "quote": "Meanwhile, Valar Atomics, a developer of grid-independent nuclear reactors, picked up $1 billion across two Series B equity tranches."
+        },
+        {
+          "start": 1567,
+          "end": 1772,
+          "quote": "The largest debut came in April from Rockville, Maryland-based X-energy, a developer of small modular nuclear reactors and fuel engineering technology, which hit a $12 billion valuation in initial trading."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:20.667Z"
+    },
+    {
+      "candidate_id": "MAC-54bf7a2b2aaccd6c",
+      "task_type": "qa_repair",
+      "asset_id": "QA-434737b4b2681d85",
+      "raw_id": "RAW-f39b0d81a6c616e1",
+      "source_ref": "SA-7049b23d13de5218",
+      "source_hash": "08f2cbea37345ae4",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source is a list of Series A startups with company names, industries, websites, headquarters, and funding type. It does not contain a concrete AI event (e.g., acquisition, funding round amount, model release, deployment) with verifiable details. The QA reason 'event_not_ai_relevant' is appropriate because no specific AI industry event is described in the source text.",
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:43.768Z"
+    },
+    {
+      "candidate_id": "MAC-54ed71000cc7e945",
+      "task_type": "qa_repair",
+      "asset_id": "QA-ad97ae8583da2dab",
+      "raw_id": "RAW-d9a6fda7473e42ab",
+      "source_ref": "SA-1b9579ad830dec09",
+      "source_hash": "c5c493120a6b3f61",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Photon, an AI startup, raised $4.5 million in seed funding. The quote directly supports the funding claim.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Photon",
+            "object": "$4.5 million in seed funding",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 192,
+          "end": 335,
+          "quote": "Photon, which helps developers build agents that work over iMessage and WhatsApp, now has $4.5 million in seed funding to develop its products."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:11.702Z"
+    },
+    {
+      "candidate_id": "MAC-59f6110c45338291",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-4332124bdf7da478",
+      "raw_id": "RAW-fcb7c48d1b9a14fc",
+      "source_ref": "SA-5e1e1aab61900073",
+      "source_hash": "e67696fd16493e7e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Zenithon",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "Zenithon"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 118,
+          "quote": "UK AI startup Zenithon has raised $10 million to build what it describes as the first world models for extreme physics"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:30.558Z"
+    },
+    {
+      "candidate_id": "MAC-5cfb52a6d5ba522a",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-bb84dd8999b353a3",
+      "raw_id": "RAW-f9fe5fd679b0fb0c",
+      "source_ref": "SA-659239bde50663ff",
+      "source_hash": "180703c997b2068a",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Deepslate",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source identifies Deepslate as a Berlin-based voice AI company, but there is no verified alternative to match.",
+        "candidate_name": "Deepslate"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 224,
+          "quote": "Berlin-based voice AI company Deepslate has raised €7.7\nmillion in a seed round led by Munich-based technology investor 42CAP, with\nparticipation from Alstin Capital, existing investor SIVentures and several\nbusiness angels."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:38.478Z"
+    },
+    {
+      "candidate_id": "MAC-5ebf6ee068f9b175",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-a65ed07112d91a23",
+      "raw_id": "RAW-dbfac38eccbbc679",
+      "source_ref": "SA-2cb023744c0bb735",
+      "source_hash": "7f8946c33950b7b1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Dazzle",
+            "object": "$8 million seed round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "Dazzle",
+            "object": "unveiling of Dazzle",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 108,
+          "end": 184,
+          "quote": "the personal AI assistant that raised an $8 million seed round last December"
+        },
+        {
+          "start": 68,
+          "end": 106,
+          "quote": "she was finally ready to unveil Dazzle"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:17.062Z"
+    },
+    {
+      "candidate_id": "MAC-61096ea2952535fe",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-336ab1deb42d6284",
+      "raw_id": "RAW-bde0eaad352fb991",
+      "source_ref": "SA-bcc044864e5d23cb",
+      "source_hash": "82e22d9ba7c6f77b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Stability AI",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative. The source does mention 'Stability AI' and 'Stability,' but there is no verified alternative to compare against.",
+        "candidate_name": "Stability AI"
+      },
+      "evidence": [
+        {
+          "start": 374,
+          "end": 566,
+          "quote": "Two years ago, he joined an $80 million rescue of Stability AI, the image-generator startup that nearly collapsed after overspending and internal turmoil led to founder Emad Mostaque’s ouster."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:06.380Z"
+    },
+    {
+      "candidate_id": "MAC-6114825202710b18",
+      "task_type": "qa_repair",
+      "asset_id": "QA-8a34893142bc4837",
+      "raw_id": "RAW-89c2ac371bbfdcf3",
+      "source_ref": "SA-a27ee46d751f1388",
+      "source_hash": "4cc986c140009261",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains concrete AI-relevant events: a funding/tender offer valuing ElevenLabs at $22 billion, and the release of Eleven v4 and v4 Turbo text-to-speech models.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "ElevenLabs",
+            "object": "$300 million employee tender offer at a $22 billion valuation",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "model_release",
+            "subject": "ElevenLabs",
+            "object": "Eleven v4 and v4 Turbo text-to-speech models",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 186,
+          "end": 330,
+          "quote": "We recently closed a $300 million employee tender offer that values ElevenLabs at $22 billion, double our valuation at our Series D in February."
+        },
+        {
+          "start": 778,
+          "end": 895,
+          "quote": "Eleven v4 and v4 Turbo are our fastest and most emotive models yet, which are already leading independent benchmarks."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:11.597Z"
+    },
+    {
+      "candidate_id": "MAC-648687084c569c10",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b1b88412f586130e",
+      "raw_id": "RAW-4fb67031213aafec",
+      "source_ref": "SA-29677b005c3f2319",
+      "source_hash": "40b9195cc5d482a2",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "In September 2026",
+        "rationale": "The candidate name is a time expression, not an organization, and does not match the verified alternative 'Meta'. The quote shows it refers to a date, not an entity identity.",
+        "candidate_name": "In September 2026"
+      },
+      "evidence": [
+        {
+          "start": 6618,
+          "end": 6790,
+          "quote": "In September 2026, Ultrahuman announced a $70 million financing roundinvolving investors including Qualcomm Ventures, Labcorp, Alpha Wave, Blume, Nexus and Alteria Capital."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:09.434Z"
+    },
+    {
+      "candidate_id": "MAC-66bfc9e5f3baf6a6",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-335a9d61eedb22c0",
+      "raw_id": "RAW-a389cc65cdff96a9",
+      "source_ref": "SA-e961bbff6fb12449",
+      "source_hash": "3e645d73b069e990",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Flow Engineering",
+            "object": "$50 million Series B round at a $750 million valuation",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "organization_people",
+            "subject": "Roelof Botha",
+            "object": "Flow's board",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 143,
+          "end": 346,
+          "quote": "Flow Engineering, a startup that offers AI tools for hardware design, has raised a $50 million Series B round at a $750 million valuation from some big-name investors, the company announced on Wednesday."
+        },
+        {
+          "start": 788,
+          "end": 823,
+          "quote": "Botha has joined Flow’s board, too."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:07.992Z"
+    },
+    {
+      "candidate_id": "MAC-6fb4871356fb24ba",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b4c73396844f7d05",
+      "raw_id": "RAW-fb67c63c0617c200",
+      "source_ref": "SA-0db17452c505e022",
+      "source_hash": "e7fc30e8011abc70",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Viral AI agent Instinct",
+        "rationale": "The candidate entity is Instinct, an AI assistant startup, while the only verified alternative is Meta. The source mentions Meta only as a competitor offering its own AI assistant, Muse, and does not identify Instinct as Meta. Therefore the candidate does not match the verified alternative.",
+        "candidate_name": "Viral AI agent Instinct"
+      },
+      "evidence": [
+        {
+          "start": 1628,
+          "end": 1852,
+          "quote": "Despite its AI assistant’s viral adoption, Instinct is now facing fresh competition from Meta’s own AI assistant, Muse, which offers many similar features, plus a system that can deeply integrate with Meta’s social products."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:37.593Z"
+    },
+    {
+      "candidate_id": "MAC-7544fb49e54ee380",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-4ba4da2edac704bc",
+      "raw_id": "RAW-4dcf4e5301722304",
+      "source_ref": "SA-829189413ab15c2c",
+      "source_hash": "486276596711baec",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Saronic",
+            "object": "$1.75 billion Series D funding",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "Saronic",
+            "object": "more than $3 billion shipyard in Brownsville, Texas",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Seahi Robotics",
+            "object": "$150 million Series A round",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 886,
+          "end": 936,
+          "quote": "secured $1.75 billion in Series D funding in March"
+        },
+        {
+          "start": 1102,
+          "end": 1196,
+          "quote": "plans to invest more than $3 billion to build a next-generation shipyard in Brownsville, Texas"
+        },
+        {
+          "start": 1411,
+          "end": 1458,
+          "quote": "closed on a $150 million Series A round in July"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:12.449Z"
+    },
+    {
+      "candidate_id": "MAC-7c0826b414a1f959",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-6dcc023b5791108c",
+      "raw_id": "RAW-aa2ffa07093c478d",
+      "source_ref": "SA-b936853edc41c72f",
+      "source_hash": "5175b7f80165715e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "PaleBlueDot AI",
+        "rationale": "The candidate entity PaleBlueDot AI does not match the verified alternative NVIDIA. The source mentions NVIDIA only in the context of NVIDIA Exemplar Cloud status and NVIDIA's reference benchmarks, which is a relationship (validation/benchmarking) rather than entity identity. PaleBlueDot AI is a separate organization.",
+        "candidate_name": "PaleBlueDot AI"
+      },
+      "evidence": [
+        {
+          "start": 903,
+          "end": 1040,
+          "quote": "Its B300 cluster in Japan recently earned NVIDIA Exemplar Cloud status, validating its performance against NVIDIA's reference benchmarks."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:33.453Z"
+    },
+    {
+      "candidate_id": "MAC-7e4a8cfa802667e3",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-240389f4b730bad4",
+      "raw_id": "RAW-89d3018a1f2f94c6",
+      "source_ref": "SA-74c6b19ca56ae53f",
+      "source_hash": "dfc97b9b83a62fb9",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "AMD",
+        "rationale": "The candidate mention 'AMD' refers to the chipmaker acquiring World Labs, which is described as Nvidia's direct competitor, not Nvidia itself. The verified alternatives are NVIDIA and SpaceX, so AMD is a distinct entity.",
+        "candidate_name": "AMD"
+      },
+      "evidence": [
+        {
+          "start": 156,
+          "end": 305,
+          "quote": "Chipmaker AMD and world models company World Labs announced that AMD will acquire the AI company by the end of the year, pending regulatory approval."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:25.933Z"
+    },
+    {
+      "candidate_id": "MAC-814d73a83ad95ff2",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-3aeaa4e0ef0349f6",
+      "raw_id": "RAW-1b6b4b3a92b79d49",
+      "source_ref": "SA-a605129c4328755c",
+      "source_hash": "b7163cdbc0cf15fc",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Vocci",
+            "object": "crowdfunding campaign",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Vocci",
+            "object": "US$38.5K",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Halliday Glasses",
+            "object": "more than $3.3 million",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 138,
+          "end": 368,
+          "quote": "launched a crowdfunding campaign for Vocci — a ring-shaped AI recording device — on GREEN FUNDINGDealroom has a profile for this one. Try Dealroom → at 11:00 JST on September 30, 2026, and hit its funding target within 20 minutes."
+        },
+        {
+          "start": 369,
+          "end": 414,
+          "quote": "As of October 1, pledges had topped US$38.5K."
+        },
+        {
+          "start": 1284,
+          "end": 1335,
+          "quote": "which raised more than $3.3 million on Kickstarter."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:09.910Z"
+    },
+    {
+      "candidate_id": "MAC-8226eb9a28e43cce",
+      "task_type": "qa_repair",
+      "asset_id": "QA-d561ca0e3327840c",
+      "raw_id": "RAW-9f75403882814421",
+      "source_ref": "SA-f6c8cdc804d6a00e",
+      "source_hash": "823c4b8bda7a47f1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The source is a paywalled weekly funding round-up index page; it contains no concrete AI event details, only tags and a note that content is members-only, so it cannot support an AI-relevant factual claim.",
+        "claims": []
+      },
+      "evidence": [
+        {
+          "start": 344,
+          "end": 480,
+          "quote": "This article is visible for CLUB members only. If you are already a member but don’t see the content of this article, please login here."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:48.292Z"
+    },
+    {
+      "candidate_id": "MAC-8521486d3953a87c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-48b1cf3a117e0009",
+      "raw_id": "RAW-82f3cde31ce7e515",
+      "source_ref": "SA-8e9a908786a4a729",
+      "source_hash": "741ddc38cb4fb041",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "OpenAI",
+            "object": "1220亿美元融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "ipo_listing",
+            "subject": "SpaceX",
+            "object": "约750亿美元IPO",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "ipo_listing",
+            "subject": "Anthropic",
+            "object": "秘密递交上市文件",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 397,
+          "end": 501,
+          "quote": "一季度 OpenAI 的 1220 亿美元、Anthropic 的 300 亿美元、xAI 的 200 亿美元和 Waymo 的 160 亿美元四笔交易，合计 1880 亿美元，占当季全球风投总额的六成以上。"
+        },
+        {
+          "start": 1110,
+          "end": 1185,
+          "quote": "6 月，SpaceX 募资约 750 亿美元上市，成为史上* IPO；而过去十年，美国所有风投支持上市公司创造的退出价值总和约为 1.44 万亿美元。"
+        },
+        {
+          "start": 2580,
+          "end": 2623,
+          "quote": "Anthropic 已秘密递交上市文件，最快 10 月以约 2 万亿美元估值 IPO。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:11.479Z"
+    },
+    {
+      "candidate_id": "MAC-8823ee6f7bc913cc",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-a0c2ad2ead13f74d",
+      "raw_id": "RAW-b69507405931f9be",
+      "source_ref": "SA-4cdc034b0fcdfaf4",
+      "source_hash": "2675d63c313077cd",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Satlyt",
+        "rationale": "The candidate Satlyt is a separate company co-founded by Rama Afullo after leaving SpaceX; the source describes SpaceX as a former employer and a different organization, not the same entity as Satlyt.",
+        "candidate_name": "Satlyt"
+      },
+      "evidence": [
+        {
+          "start": 475,
+          "end": 619,
+          "quote": "So he left SpaceX and co-founded Satlyt, a new company with headquarters in Sunnyvale, California, and Nairobi, to build software for satellites"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:35.615Z"
+    },
+    {
+      "candidate_id": "MAC-8d5af7b0e18fe503",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0b2996b899aafa65",
+      "raw_id": "RAW-e65b02d062b942a0",
+      "source_ref": "SA-34f16df36d58bb90",
+      "source_hash": "6e3680d4598508ba",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Modal Labs",
+        "rationale": "The candidate is Modal Labs, an AI inference infrastructure provider. The only verified alternative is OpenAI, a different organization. The source mentions OpenAI only in connection with a hacking campaign, not as the same entity as Modal Labs. No verified alternative matches Modal Labs, so the candidate cannot be resolved to a verified entity.",
+        "candidate_name": "Modal Labs"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 213,
+          "quote": "AI inference infrastructure provider Modal Labs is nearing a $750 million funding round led by Accel at a $15.75 billion valuation that includes the investment, according to a source with knowledge of the funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:05.540Z"
+    },
+    {
+      "candidate_id": "MAC-8e717a993c47c57d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-bd9624583e315c04",
+      "raw_id": "RAW-d76973f1b9836cd5",
+      "source_ref": "SA-af31edc51e5ec927",
+      "source_hash": "6893ef5cbc269f75",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "a16z-backed EliseAI",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so no exact match to a verified alternative can be established. The source mentions 'EliseAI' and 'a16z-backed EliseAI' but provides no verified alternative entity to confirm identity against.",
+        "candidate_name": "a16z-backed EliseAI"
+      },
+      "evidence": [
+        {
+          "start": 72,
+          "end": 130,
+          "quote": "a16z-backed EliseAI raises $350M, doubles valuation to $4B"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:39.843Z"
+    },
+    {
+      "candidate_id": "MAC-93f6de6bc69c3093",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-78baab388650af3e",
+      "raw_id": "RAW-e65b02d062b942a0",
+      "source_ref": "SA-34f16df36d58bb90",
+      "source_hash": "6e3680d4598508ba",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Modal Labs",
+            "object": "$750 million funding round led by Accel at a $15.75 billion valuation",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "security_incident",
+            "subject": "Modal customer",
+            "object": "customer's data compromised in hacking campaign by rogue OpenAI agent against Hugging Face",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "Modal",
+            "object": "surpassed $300 million in annualized revenue as of May",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 213,
+          "quote": "AI inference infrastructure provider Modal Labs is nearing a $750 million funding round led by Accel at a $15.75 billion valuation that includes the investment, according to a source with knowledge of the funding."
+        },
+        {
+          "start": 2648,
+          "end": 2816,
+          "quote": "In late July, Modal disclosed that a customer’s data had been compromised as part of the same hacking campaign carried out by a rogue OpenAI agent against Hugging Face."
+        },
+        {
+          "start": 2420,
+          "end": 2515,
+          "quote": "As of May, Modal had surpassed $300 million in annualized revenue, it told Reuters at the time."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:14.716Z"
+    },
+    {
+      "candidate_id": "MAC-988afdb6ab2a2fa1",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-33dbfdc3b4b67b9d",
+      "raw_id": "RAW-f4064b636b4d853f",
+      "source_ref": "SA-63ab9ff670d773e5",
+      "source_hash": "9c488922a8c3218b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "博通",
+        "rationale": "候选实体“博通”未出现在 VERIFIED_ALTERNATIVES 中；VERIFIED_ALTERNATIVES 仅包含 Anthropic 与 NVIDIA（别名英伟达、Nvidia）。SOURCE_TEXT 中“博通”与“英伟达”并列为不同公司，且“博通”被描述为效仿其竞争对手英伟达，因此不能归为同一实体。",
+        "candidate_name": "博通"
+      },
+      "evidence": [
+        {
+          "start": 659,
+          "end": 691,
+          "quote": "对博通而言，该融资模式实际上是在效仿其竞争对手英伟达近年来的策略"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:06.370Z"
+    },
+    {
+      "candidate_id": "MAC-9aed5d9f1db9efd1",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-02e36404e09f6691",
+      "raw_id": "RAW-35ea4b9b956bb2fd",
+      "source_ref": "SA-32c4843d4c582cb5",
+      "source_hash": "56a3b1bd727683b6",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "ElevenLabs",
+            "object": "$300 million tender offer",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "ElevenLabs",
+            "object": "$100 million tender at a $6.6 billion valuation",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "ElevenLabs",
+            "object": "$500 million raise at $11 billion valuation",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 358,
+          "end": 459,
+          "quote": "The recent $300 million tender offer gave employees an opportunity to sell their shares to investors."
+        },
+        {
+          "start": 925,
+          "end": 1021,
+          "quote": "The company previously held a $100 million tender at a $6.6 billion valuation in September 2025."
+        },
+        {
+          "start": 266,
+          "end": 356,
+          "quote": "doubling the $11 billion valuation the company hit when it raised $500 million in February"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:07.086Z"
+    },
+    {
+      "candidate_id": "MAC-9b3cc17930cfffd2",
+      "task_type": "qa_repair",
+      "asset_id": "QA-ff2d779eb8a608ce",
+      "raw_id": "RAW-8b0281f548443679",
+      "source_ref": "SA-2a22cdde74bfe329",
+      "source_hash": "c0f8a2a71923d9da",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source contains a concrete AI-relevant funding event: Restate, described as doing plumbing work behind AI agents, raised a $20M Series A.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Restate",
+            "object": "$20M Series A funding round led by Singular with participation from Redpoint Ventures and Capital One Ventures",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 186,
+          "quote": "The team behind a technology that underpins real-time data use in\nbanking has raised $20m in a Series A funding round for a startup, which carries out\nthe plumbing work behind AI agents."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:48.630Z"
+    },
+    {
+      "candidate_id": "MAC-9f6e79ba8e0ddfac",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-a97a61c3fb8e5ec9",
+      "raw_id": "RAW-3afd88a20c70c01f",
+      "source_ref": "SA-79b4be880978dfbe",
+      "source_hash": "d5cbc9116de49726",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "OpenAI delays",
+        "rationale": "The candidate name 'OpenAI delays' is not an exact match to any verified alternative; it describes an event/action rather than the organization OpenAI, and the quote does not establish identity with any verified alternative.",
+        "candidate_name": "OpenAI delays"
+      },
+      "evidence": [
+        {
+          "start": 156,
+          "end": 343,
+          "quote": "OpenAI will not go public until it can “make confident safety decisions,” according to chief executive Sam Altman, as the company faces a new lawsuit over its tools hacking a third party."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:36.323Z"
+    },
+    {
+      "candidate_id": "MAC-a2fa86b885760b54",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0ad82a994c723e71",
+      "raw_id": "RAW-9d6abd6d4a4c65a9",
+      "source_ref": "SA-ec8a96422050b4b4",
+      "source_hash": "5774882366d2c4f5",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Vytalyou",
+        "rationale": "The candidate name Vytalyou does not match any verified alternative (only Meta is listed). The source describes Vytalyou as a distinct longevity and preventive healthcare startup, not Meta.",
+        "candidate_name": "Vytalyou"
+      },
+      "evidence": [
+        {
+          "start": 6,
+          "end": 220,
+          "quote": "Doctor-led longevity and preventive healthcare startup Vytalyou has raised Rs 9 crore in a pre-Series A round from Chetan Jain of Pharma Dose and Ratan Jain of Venus Industries at a valuation of around Rs 33 crore."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:22.651Z"
+    },
+    {
+      "candidate_id": "MAC-a53fbc37aa3ac0e6",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-4068dcb651f649a5",
+      "raw_id": "RAW-a618184ba71fd8b5",
+      "source_ref": "SA-8bace8c9a5d03acd",
+      "source_hash": "51472a16f57c532a",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Dextr AI",
+            "object": "$6.7M",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "funding",
+            "subject": "Ema",
+            "object": "$77M",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "50skills",
+            "object": "$6M",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 21,
+          "end": 80,
+          "quote": "Dextr AI Raises $6.7M to Build AI Workforce for Hospitality"
+        },
+        {
+          "start": 173,
+          "end": 220,
+          "quote": "Ema Raises $77M to Automate Corporate Processes"
+        },
+        {
+          "start": 340,
+          "end": 382,
+          "quote": "50skills Raises $6M to Scale HR Automation"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:10.195Z"
+    },
+    {
+      "candidate_id": "MAC-ac843848382765af",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-4dff8dc9858e2d27",
+      "raw_id": "RAW-41f0ad1816579c76",
+      "source_ref": "SA-65b0b4e4b1648a31",
+      "source_hash": "e9edaa8c98d1c6c1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Chipway Semiconductor EquipmentDealroom",
+        "rationale": "The candidate entity is Chipway Semiconductor EquipmentDealroom, which is not the same as the verified alternative Anthropic. The source text mentions Anthropic only in a separate story about Epic halting development after Anthropic's AI found bugs, and does not identify Chipway as Anthropic.",
+        "candidate_name": "Chipway Semiconductor EquipmentDealroom"
+      },
+      "evidence": [
+        {
+          "start": 1216,
+          "end": 1300,
+          "quote": "Epic halts development after Anthropic's AI found bugs exposing 320M patient records"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:31.493Z"
+    },
+    {
+      "candidate_id": "MAC-afbe77d1f5adf47e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-197053535b036546",
+      "raw_id": "RAW-34def8d80ba689f7",
+      "source_ref": "SA-e337edf4ed969f5a",
+      "source_hash": "be87f5d79571156b",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "执宇航天",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source does mention 执宇航天科技（湖南）有限公司（简称：执宇航天）, but without a verified alternative to match, the decision is unknown.",
+        "candidate_name": "执宇航天"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 67,
+          "quote": "执宇航天科技（湖南）有限公司（简称：执宇航天）是一家专注于液体火箭发动机及中小型可回收运载火箭研发、制造与商业发射服务的商业航天企业。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:23.800Z"
+    },
+    {
+      "candidate_id": "MAC-b35e01fb0e06fcd1",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-a5fae03968f4013e",
+      "raw_id": "RAW-4fb67031213aafec",
+      "source_ref": "SA-29677b005c3f2319",
+      "source_hash": "40b9195cc5d482a2",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Ultrahuman",
+            "object": "$70 million financing round",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "financial_performance",
+            "subject": "Ultrahuman",
+            "object": "$64 million in operating revenue and $8.2 million in net profit in FY2025",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "product_release",
+            "subject": "Ultrahuman",
+            "object": "HealthEx PowerPlug",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 6618,
+          "end": 6790,
+          "quote": "In September 2026, Ultrahuman announced a $70 million financing roundinvolving investors including Qualcomm Ventures, Labcorp, Alpha Wave, Blume, Nexus and Alteria Capital."
+        },
+        {
+          "start": 3356,
+          "end": 3517,
+          "quote": "The company’s FY2025 financial disclosures reported $64 million in operating revenue, compared with $12 million in FY2024, along with $8.2 million in net profit."
+        },
+        {
+          "start": 6030,
+          "end": 6168,
+          "quote": "In September 2026, Ultrahuman launched the HealthEx PowerPlug, which connects consented medical records with continuous Ring measurements."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:16.823Z"
+    },
+    {
+      "candidate_id": "MAC-b41aeb90f538699d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-20b6eaef64d552b8",
+      "raw_id": "RAW-b6a3578c7329048b",
+      "source_ref": "SA-f5fc58d75341b199",
+      "source_hash": "37661a3d9b0844a4",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "MuleSoft founder’s DIG Ventures",
+        "rationale": "The candidate is DIG Ventures, a London-based venture capital firm founded by Ross Mason. The only verified alternative is Salesforce, which the source describes as having acquired MuleSoft. DIG Ventures and Salesforce are separate organizations; the source does not state that the candidate mention refers to Salesforce.",
+        "candidate_name": "MuleSoft founder’s DIG Ventures"
+      },
+      "evidence": [
+        {
+          "start": 1130,
+          "end": 1460,
+          "quote": "Founded in 2018 by Ross Mason, founder of the enterprise integration company MuleSoft, which Salesforce acquired for €5.3 billion ($6.5 billion), the firm has transitioned from serving as Mason’s family office to backing technical founders at the earliest stages of company formation across enterprise AI and cloud infrastructure."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:25.113Z"
+    },
+    {
+      "candidate_id": "MAC-b682f6cf4cd4959e",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-4282317930231035",
+      "raw_id": "RAW-b75bf1ec0dae38e0",
+      "source_ref": "SA-3f88d7742b5882b2",
+      "source_hash": "acc661cb18b79cb6",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "failed",
+          "detail": "missing_claim_proposal"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:10.644Z"
+    },
+    {
+      "candidate_id": "MAC-b7341f7ea4d2f430",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-0bd150c60d5a9f39",
+      "raw_id": "RAW-82ab929b2672b6f2",
+      "source_ref": "SA-f2f1b61447026584",
+      "source_hash": "726caff6589cbeb1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "research_result",
+            "subject": "Anthropic",
+            "object": "Claude模型助力发现了一种新型酶系统",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "hardware_capacity",
+            "subject": "Anthropic",
+            "object": "旧金山湾区湿实验室",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "acquisition",
+            "subject": "Anthropic",
+            "object": "Coefficient Bio",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 8,
+          "end": 80,
+          "quote": "9月23日，美国人工智能初创公司Anthropic公司对外表示，其Claude模型助力发现了一种新型酶系统，这是该公司生物学研究项目的首个成果。"
+        },
+        {
+          "start": 1847,
+          "end": 1921,
+          "quote": "9月18日，Anthropic正式在旧金山湾区建立湿实验室并招募生物化学科学家，该项目旨在利用其大模型Claude指挥自动化机器人单元开展生物实验。"
+        },
+        {
+          "start": 1921,
+          "end": 1984,
+          "quote": "此前Anthropic已于年内斥资约4亿美元收购自动化实验平台Coefficient Bio，发布了科学智能体控制标准MHS。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:07.288Z"
+    },
+    {
+      "candidate_id": "MAC-b7b15750412c641f",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-faff4a302fa6d4f9",
+      "raw_id": "RAW-01d863e5644f1c81",
+      "source_ref": "SA-2bb3cf83c0f23e21",
+      "source_hash": "c62e4fc4d501edfc",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Instinct",
+            "object": "10亿美元融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "红杉资本、基准资本和 Coatue",
+            "object": "参与 Instinct 本轮融资",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 25,
+          "end": 116,
+          "quote": "人工智能初创公司 Instinct 现已完成 10 亿美元（IT之家注：现汇率约合 67.19 亿元人民币）融资，投后估值达到 100 亿美元（现汇率约合 671.95 亿元人民币）"
+        },
+        {
+          "start": 142,
+          "end": 167,
+          "quote": "本轮融资由红杉资本、基准资本和 Coatue 参与"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:21.685Z"
+    },
+    {
+      "candidate_id": "MAC-b96a5c5141585908",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b2188c7441860a7e",
+      "raw_id": "RAW-3f51b44b03849bef",
+      "source_ref": "SA-f492f5c2bb55b491",
+      "source_hash": "e92078a4e61efac5",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Hostile threat warning startup Osavul",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative.",
+        "candidate_name": "Hostile threat warning startup Osavul"
+      },
+      "evidence": [
+        {
+          "start": 202,
+          "end": 377,
+          "quote": "The funding round in Osavul was led by\n33N Ventures, the Europe-based global cybersecurity investor, with participation\nfrom Balnord, G+D Ventures and existing investor 42CAP."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:37.506Z"
+    },
+    {
+      "candidate_id": "MAC-c5163f5883744d42",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-41a1b0e1074ae22f",
+      "raw_id": "RAW-aa2ffa07093c478d",
+      "source_ref": "SA-b936853edc41c72f",
+      "source_hash": "5175b7f80165715e",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "PALO ALTO",
+        "rationale": "The candidate mention 'PALO ALTO' appears only as a dateline location in the press release, not as a reference to NVIDIA or any verified alternative. No quote proves identity with NVIDIA.",
+        "candidate_name": "PALO ALTO"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 266,
+          "quote": "PALO ALTO, Calif., Oct. 1, 2026 /PRNewswire/ -- PaleBlueDot AI (\"the Company\"), a Silicon Valley-based Super Intelligence platform founded in 2024, today announced the completion of a $200 million Series C financing led by ComputeCore at a valuation of $3.2 billion."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:30.629Z"
+    },
+    {
+      "candidate_id": "MAC-caf3c6e1b9d9ad4e",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e853b4e183ed0870",
+      "raw_id": "RAW-35ea4b9b956bb2fd",
+      "source_ref": "SA-32c4843d4c582cb5",
+      "source_hash": "56a3b1bd727683b6",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "ElevenLabs",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source does mention ElevenLabs, but the required condition for same_entity is not met.",
+        "candidate_name": "ElevenLabs"
+      },
+      "evidence": [
+        {
+          "start": 66,
+          "end": 119,
+          "quote": "AI voice startup ElevenLabs doubles valuation to $22B"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:10.120Z"
+    },
+    {
+      "candidate_id": "MAC-cb5447025feb75e2",
+      "task_type": "qa_repair",
+      "asset_id": "QA-51900fdd43ba2a2b",
+      "raw_id": "RAW-b541eaed74edbea4",
+      "source_ref": "SA-53de81eb0add217f",
+      "source_hash": "82483c95bfd7a13f",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "action": "recollect_original",
+        "reason": "The supplied source describes a synthetic biology company's Pre-IPO funding, but does not establish that the event is AI-relevant; no exact contiguous quote supports an AI industry fact.",
+        "claims": []
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:44.856Z"
+    },
+    {
+      "candidate_id": "MAC-cef8cb8f27630eca",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f3e23ad3af6296b6",
+      "raw_id": "RAW-ee27d98f33e8ca4b",
+      "source_ref": "SA-43402ca38a730252",
+      "source_hash": "23844e54c22d6320",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "SoftBank",
+        "rationale": "The candidate name 软银集团 is the full Chinese name of SoftBank, and the source text explicitly refers to 软银集团 as the entity making investments, matching the verified alternative SoftBank (alias 软银).",
+        "candidate_name": "软银集团"
+      },
+      "evidence": [
+        {
+          "start": 16,
+          "end": 56,
+          "quote": "软银集团今日表示，公司已通过软银愿景基金 2 完成对 OpenAI 的第三笔投资"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:10.985Z"
+    },
+    {
+      "candidate_id": "MAC-d0a77baeaf05fe87",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-3d369f340d025e15",
+      "raw_id": "RAW-8919ae659661b2c4",
+      "source_ref": "SA-bda59a6534dad878",
+      "source_hash": "1397db8421082ce1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "rejected",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "填充 AI 资金弹药",
+        "rationale": "候选名称“填充 AI 资金弹药”是标题中的动作性短语，并非已验证替代实体中的任何组织名称；引文仅显示其为标题的一部分，未证明其与 OpenAI、NVIDIA 或 SoftBank 为同一实体。",
+        "candidate_name": "填充 AI 资金弹药"
+      },
+      "evidence": [],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "failed",
+          "detail": "missing_source_evidence"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:29.411Z"
+    },
+    {
+      "candidate_id": "MAC-d50535b810a7e693",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-1a2290470e0aa754",
+      "raw_id": "RAW-116865926df04e7f",
+      "source_ref": "SA-e35a41673f681a97",
+      "source_hash": "7f6f5cab051248e1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "SAN FRANCISCO",
+        "rationale": "The candidate mention 'SAN FRANCISCO' appears only as a dateline location in the press release, not as an entity identity matching any verified alternative. No VERIFIED_ALTERNATIVES were supplied, so same_entity cannot be chosen.",
+        "candidate_name": "SAN FRANCISCO"
+      },
+      "evidence": [
+        {
+          "start": 96,
+          "end": 273,
+          "quote": "SAN FRANCISCO, Sept. 25, 2026 /PRNewswire/ -- Outmarket AI, the leading AI platform purpose-built for insurance, today announced it has raised $34.5 million in Series B funding."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:24.637Z"
+    },
+    {
+      "candidate_id": "MAC-da9524ed52b3a938",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-2a65f6ae0a747891",
+      "raw_id": "RAW-9dd4934e74538e0e",
+      "source_ref": "SA-d9e618dab8cd4bd2",
+      "source_hash": "ce8a10794d38ca23",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Oura Hits Pause On",
+        "rationale": "The candidate name 'Oura Hits Pause On' is a headline fragment, not an entity. The source mentions 'Oura' as a smart ring maker postponing its IPO, but 'Oura Hits Pause On' does not exactly match any verified alternative (Anthropic, OpenAI, NVIDIA, SpaceX). The quote shows Oura is a distinct company from those alternatives.",
+        "candidate_name": "Oura Hits Pause On"
+      },
+      "evidence": [
+        {
+          "start": 65,
+          "end": 148,
+          "quote": "Smart ring maker Oura was supposed to price its initial public offering on Tuesday."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:27.473Z"
+    },
+    {
+      "candidate_id": "MAC-e567875d865057af",
+      "task_type": "qa_repair",
+      "asset_id": "QA-2e36aba87c8f17c6",
+      "raw_id": "RAW-16443d39a4cd8ab9",
+      "source_ref": "SA-a529977c168e893b",
+      "source_hash": "34587c7b83ef0573",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source reports a concrete AI-relevant funding event: Benchmark leading a new funding round for chip startup Tendrils Compute, which is developing chips relevant to AI inference workloads.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Benchmark",
+            "object": "Tendrils Compute",
+            "evidence_index": 0
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 205,
+          "end": 377,
+          "quote": "Benchmark has won out in a hot competition to lead a new funding round for early-stage chip startup Tendrils Compute, according to multiple people familiar with the matter."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:43.502Z"
+    },
+    {
+      "candidate_id": "MAC-e652431839617b1c",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-60eb1efa2648f5cb",
+      "raw_id": "RAW-eb245f90f3392bfd",
+      "source_ref": "SA-17529b1f036a718d",
+      "source_hash": "382a9b5e5447dae7",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "全灵 SEELE",
+            "object": "千万美元 Pre-A 轮融资",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "product_release",
+            "subject": "SEELE",
+            "object": "第一款海外产品",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "organization_people",
+            "subject": "王诗沐",
+            "object": "离开腾讯，创业成立全灵 SEELE",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 164,
+          "end": 210,
+          "quote": "网易云音乐创始人王诗沐的创业公司，全灵 SEELE，宣布完成了千万美元 Pre-A 轮融资。"
+        },
+        {
+          "start": 308,
+          "end": 336,
+          "quote": "2024 年正式推出第一款海外产品，半年积累近百万用户。"
+        },
+        {
+          "start": 544,
+          "end": 572,
+          "quote": "2022 年，王诗沐离开腾讯，创业成立全灵 SEELE。"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:14.304Z"
+    },
+    {
+      "candidate_id": "MAC-e84bd4f5b50e2b94",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-0afb79034697e797",
+      "raw_id": "RAW-5026c6cf8af1e645",
+      "source_ref": "SA-705f5b34bdfbe1a4",
+      "source_hash": "0593d20338986f35",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Good Tape",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so the candidate cannot be confirmed as matching a verified alternative entity.",
+        "candidate_name": "Good Tape"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 139,
+          "quote": "Nordic Makers has invested in Good Tape, the Copenhagen-based AI transcription company used by 3 million people in more than 150 countries."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:04.423Z"
+    },
+    {
+      "candidate_id": "MAC-e9e4f168d4377956",
+      "task_type": "claim_extraction",
+      "asset_id": "QA-d3be7c5fabffc28e",
+      "raw_id": "RAW-5026c6cf8af1e645",
+      "source_ref": "SA-705f5b34bdfbe1a4",
+      "source_hash": "0593d20338986f35",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "accepted",
+      "proposal": {
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Nordic Makers",
+            "object": "Good Tape",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "organization_people",
+            "subject": "Alexander Aghassipour",
+            "object": "Good Tape's board",
+            "evidence_index": 1
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 139,
+          "quote": "Nordic Makers has invested in Good Tape, the Copenhagen-based AI transcription company used by 3 million people in more than 150 countries."
+        },
+        {
+          "start": 140,
+          "end": 285,
+          "quote": "Alexander Aghassipour, co-founder and former Chief Product Officer of Zendesk, led the investment for Nordic Makers and joined Good Tape's board."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:18.998Z"
+    },
+    {
+      "candidate_id": "MAC-ebd46922e8547088",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-60d05bd27ed7fa02",
+      "raw_id": "RAW-5026c6cf8af1e645",
+      "source_ref": "SA-705f5b34bdfbe1a4",
+      "source_hash": "0593d20338986f35",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "unknown",
+        "canonical_name": "Nordic Makers",
+        "rationale": "No VERIFIED_ALTERNATIVES were supplied, so identity cannot be confirmed against a verified alternative. The source mentions Nordic Makers as an investor in Good Tape, but no verified alternative exists to match against.",
+        "candidate_name": "Nordic Makers"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 139,
+          "quote": "Nordic Makers has invested in Good Tape, the Copenhagen-based AI transcription company used by 3 million people in more than 150 countries."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:08.409Z"
+    },
+    {
+      "candidate_id": "MAC-f7b1a1f73b5f256f",
+      "task_type": "qa_repair",
+      "asset_id": "QA-4742c343f39702bd",
+      "raw_id": "RAW-3c9ad07824f49f54",
+      "source_ref": "SA-416a9106e993f7c3",
+      "source_hash": "b86021d022945cc6",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "action": "extract_claim",
+        "reason": "The source describes a concrete funding event: the launch of Eureka! Fund II – Deep Tech Lazio, a €20 million early-stage fund. This is AI-relevant because the fund's investment policy explicitly includes AI & Physical AI as a focus area. The claims are directly supported by exact quotes from the source.",
+        "claims": [
+          {
+            "event_type": "funding",
+            "subject": "Eureka! Venture",
+            "object": "Eureka! Fund II – Deep Tech Lazio, a €20 million early-stage fund",
+            "evidence_index": 0
+          },
+          {
+            "event_type": "capital_investment",
+            "subject": "Lazio Innova",
+            "object": "Eureka! Fund II – Deep Tech Lazio, with a commitment of €16 million as anchor investor",
+            "evidence_index": 1
+          },
+          {
+            "event_type": "funding",
+            "subject": "Eureka! Fund II – Deep Tech Lazio",
+            "object": "AI & Physical AI, quantum technologies and materials science",
+            "evidence_index": 2
+          }
+        ]
+      },
+      "evidence": [
+        {
+          "start": 271,
+          "end": 464,
+          "quote": "Milan’s Eureka! Venture today announces the launch of Eureka! Fund II – Deep Tech Lazio, a €20 million early-stage fund investing from PoC and pre-Seed through seed and other early-stage rounds"
+        },
+        {
+          "start": 465,
+          "end": 585,
+          "quote": "The fund will be managed by Lazio Innova, which is participating as an anchor investor with a commitment of €16 million."
+        },
+        {
+          "start": 5291,
+          "end": 5628,
+          "quote": "The investment policy also encompasses STEP Technologies, in line with the European objective of strengthening competitiveness, resilience and strategic autonomy in technologies deemed critical, with a particular focus, amongst others, on advanced manufacturing and robotics, AI & Physical AI, quantum technologies and materials science."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:45.392Z"
+    },
+    {
+      "candidate_id": "MAC-fc0a524f0e0d98bd",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-e88ecf834fa37e5a",
+      "raw_id": "RAW-dbfac38eccbbc679",
+      "source_ref": "SA-2cb023744c0bb735",
+      "source_hash": "7f8946c33950b7b1",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Dazzle",
+        "rationale": "The candidate mention 'Dazzle' refers to a personal AI assistant created by Marissa Mayer, not to the verified alternative 'Meta'. The source distinguishes Dazzle from Meta's products (Muse, Instinct), and no quote establishes identity with Meta.",
+        "candidate_name": "Dazzle"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 343,
+          "quote": "When former Yahoo CEO Marissa Mayer told me earlier this month that she was finally ready to unveil Dazzle, the personal AI assistant that raised an $8 million seed round last December, I couldn’t help but wonder if she’s playing copycat to Meta’s Muse, Instinct, and the wave of similar tools that have flooded the market over the past month."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:28:10.636Z"
+    },
+    {
+      "candidate_id": "MAC-fc4193e05582e787",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-f76a8103e49bcc36",
+      "raw_id": "RAW-bb621502336d51ae",
+      "source_ref": "SA-3acbf41a1b58d786",
+      "source_hash": "f276c5580c0b14be",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "distinct_entity",
+        "canonical_name": "Physical AI company SiMa.ai",
+        "rationale": "The candidate entity is SiMa.ai, a Physical AI company, which is not the same as the verified alternative NVIDIA. The source mentions NVIDIA only as a comparison for traditional reliance on GPUs, not as the identity of SiMa.ai.",
+        "candidate_name": "Physical AI company SiMa.ai"
+      },
+      "evidence": [
+        {
+          "start": 6,
+          "end": 180,
+          "quote": "Physical AI company SiMa.ai has raised $150 million in a Series C financing round, bringing its total capital raised to $500 million and valuing the company at $1.45 billion."
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:42.341Z"
+    },
+    {
+      "candidate_id": "MAC-fd7dfbebd86fe31d",
+      "task_type": "entity_resolution",
+      "asset_id": "EN-b1b63d6006a27ced",
+      "raw_id": "RAW-bad0f82c1a4e1ba4",
+      "source_ref": "SA-abf42a784035a462",
+      "source_hash": "89884192ad9edcc7",
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "prompt_version": "model-assist-2026-07-18.2",
+      "status": "requires_review",
+      "proposal": {
+        "decision": "same_entity",
+        "canonical_name": "Anthropic",
+        "rationale": "The candidate mention \"Anthropic's\" is the possessive form of the verified alternative \"Anthropic\"; the quote shows the same organization being referenced.",
+        "candidate_name": "Anthropic's"
+      },
+      "evidence": [
+        {
+          "start": 0,
+          "end": 34,
+          "quote": "Anthropic's IPO Can't Wait Forever"
+        }
+      ],
+      "gate_results": [
+        {
+          "gate": "source_hash",
+          "status": "passed",
+          "detail": "source hash matches"
+        },
+        {
+          "gate": "exact_source_span",
+          "status": "passed",
+          "detail": "all quotes match exact spans"
+        },
+        {
+          "gate": "protected_facts",
+          "status": "passed",
+          "detail": "all proposal numbers occur in evidence"
+        },
+        {
+          "gate": "task_contract",
+          "status": "passed",
+          "detail": "task contract passed"
+        }
+      ],
+      "generated_at": "2026-10-03T00:23:36.526Z"
+    }
+  ]
+}

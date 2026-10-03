@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,16 +63,19 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-4495851ddb7439c8",
       "EV-1a846b94337dd961"
     ],
     "viewpointIds": [],
     "classificationRefs": [],
     "relatedEntityIds": [],
     "firstSeen": "2026-08-31",
-    "lastSeen": "2026-09-01",
+    "lastSeen": "2026-10-03",
     "relationIds": [],
     "groupedEventIds": {
-      "fundingAcquisition": [],
+      "fundingAcquisition": [
+        "EV-4495851ddb7439c8"
+      ],
       "deployments": [
         "EV-1a846b94337dd961"
       ],
@@ -83,6 +86,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-4495851ddb7439c8",
+        "dataDate": "2026-10-03",
+        "date": "2026-10-02",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "announced",
+        "statusLabel": "已公布",
+        "title": "循环交易：博通同意向 Anthropic 提供最高 420 亿美元贷款，用于租赁自家芯片等基础设施开支",
+        "displayTags": [],
+        "entityIds": [
+          "EN-33dbfdc3b4b67b9d",
+          "EN-c70eca6b0f88f44d"
+        ]
+      },
       {
         "id": "EV-1a846b94337dd961",
         "dataDate": "2026-09-01",

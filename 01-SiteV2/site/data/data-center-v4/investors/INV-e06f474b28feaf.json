@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -61,24 +61,32 @@
     "investor_kind_label": "投资方（类型待核验）",
     "classification_confidence": "unverified",
     "collection_status": "evidence_backed",
-    "current_round_count": 2,
+    "current_round_count": 3,
     "historical_or_ambiguous_count": 1,
-    "portfolio_company_count": 1,
+    "portfolio_company_count": 2,
     "market_regions": [
-      "CN"
+      "CN",
+      "GLOBAL"
     ],
     "china_market_activity_count": 2,
     "china_market_company_count": 1,
     "first_disclosed_at": "2026-02-23",
-    "latest_disclosed_at": "2026-04-11",
+    "latest_disclosed_at": "2026-09-28",
     "role_counts": {
       "historical_or_ambiguous": 1,
+      "lead": 1,
       "participant": 2
     },
     "round_codes": [
+      "pre_series_a",
       "series_b"
     ],
     "portfolio_companies": [
+      {
+        "entity_id": "EN-5b0d45edbe62c07a",
+        "canonical_entity_id": "",
+        "name": "全灵（深圳）网络有限公司"
+      },
       {
         "entity_id": "EN-ce22f929f4a17467",
         "canonical_entity_id": "EN-ce22f929f4a17467",
@@ -86,6 +94,46 @@
       }
     ],
     "activities": [
+      {
+        "activity_id": "IA-2f3194c5f25a3f69",
+        "funding_insight_id": "FI-d8f59e09ac9a5434",
+        "event_ids": [
+          "EV-1766b4df1b7011d7"
+        ],
+        "company_entity_id": "EN-5b0d45edbe62c07a",
+        "company_canonical_entity_id": "",
+        "company_name": "全灵（深圳）网络有限公司",
+        "round": "Pre-A轮",
+        "round_code": "pre_series_a",
+        "round_original": "Pre-A轮",
+        "amount_original": "千万美元",
+        "amount_normalized": {
+          "currency": "USD",
+          "value": 10000000,
+          "min_value": 10000000,
+          "max_value": 10000000,
+          "unit": "base",
+          "status": "exact",
+          "display_zh": "千万美元"
+        },
+        "announced_at": "2026-09-28",
+        "market_region": "GLOBAL",
+        "china_market_match": false,
+        "disclosure_status": "disclosed",
+        "scope": "current_round",
+        "role": "本轮领投",
+        "role_code": "lead",
+        "evidence": [
+          {
+            "source_id": "FISRC-43cf2d3783cf0994",
+            "source_url": "https://www.163.com/dy/article/L7UNLELB05119FMA.html",
+            "source_title": "对话王诗沐：走出大厂创业，做 3D AI 游戏，瞄准新的内容平台机会",
+            "source_content_hash": "382a9b5e5447dae7da76fd155b1a647d305323c0a6f7cc10dde3681fbf36a0b1",
+            "quote": "本轮融资由百度战投领投，投资方包括美图投资、富坤创投等机构，老股东 Webtime Information S&T 持续加持。",
+            "quote_hash": "c6df0dc4feed09080b996ab2c5820103657d51e833c479a5061b041332bc9f32"
+          }
+        ]
+      },
       {
         "activity_id": "IA-3712d691078839d5",
         "funding_insight_id": "FI-0421ad5a685ba3b0",
@@ -202,6 +250,14 @@
     ],
     "evidence": [
       {
+        "source_id": "FISRC-43cf2d3783cf0994",
+        "source_url": "https://www.163.com/dy/article/L7UNLELB05119FMA.html",
+        "source_title": "对话王诗沐：走出大厂创业，做 3D AI 游戏，瞄准新的内容平台机会",
+        "source_content_hash": "382a9b5e5447dae7da76fd155b1a647d305323c0a6f7cc10dde3681fbf36a0b1",
+        "quote": "本轮融资由百度战投领投，投资方包括美图投资、富坤创投等机构，老股东 Webtime Information S&T 持续加持。",
+        "quote_hash": "c6df0dc4feed09080b996ab2c5820103657d51e833c479a5061b041332bc9f32"
+      },
+      {
         "source_id": "FISRC-16a5b9f7da3616f3",
         "source_url": "https://www.robothub.app/zh/companies/zhipingfang",
         "source_title": "智平方 - 人形机器人公司资料、融资、产品与估值 | RobotHub",
@@ -289,6 +345,10 @@
         {
           "description": "RobotHub 的公司档案将百度战投列入智平方 B 轮，并列示该轮总额为人民币 10 亿元；此为轮次总额，不是百度战投的单笔金额。",
           "source_id": "FISRC-16a5b9f7da3616f3"
+        },
+        {
+          "description": "融资来源记录：全灵（深圳）网络有限公司 · Pre-A轮 · 2026-09-28 · 本轮领投 · 千万美元。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-43cf2d3783cf0994"
         }
       ],
       "current_roles": [],
@@ -368,6 +428,14 @@
           "source_content_hash": "9ab28767f8dcfff05951e088c0cfd42109b72de8ab092ffee43222dd017f57d7",
           "quote": "百度投资部门的投资则更看重战略投资，力求百度的发展。",
           "quote_hash": "430cb0978af8ec03ce67eb11ff5a0ff6a33885c3b6a17d006de6d0c9a040ca5b"
+        },
+        {
+          "source_id": "FISRC-43cf2d3783cf0994",
+          "source_url": "https://www.163.com/dy/article/L7UNLELB05119FMA.html",
+          "source_title": "对话王诗沐：走出大厂创业，做 3D AI 游戏，瞄准新的内容平台机会",
+          "source_content_hash": "382a9b5e5447dae7da76fd155b1a647d305323c0a6f7cc10dde3681fbf36a0b1",
+          "quote": "本轮融资由百度战投领投，投资方包括美图投资、富坤创投等机构，老股东 Webtime Information S&T 持续加持。",
+          "quote_hash": "c6df0dc4feed09080b996ab2c5820103657d51e833c479a5061b041332bc9f32"
         }
       ],
       "last_verified_at": "2026-09-27"

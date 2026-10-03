@@ -6,9 +6,9 @@
     "relationshipVersion": "RELATION-V2.1",
     "taxonomyVersion": "TAG-V4.1",
     "generatedAt": "2026-10-01T09:28:08.667Z",
-    "latestDataDate": "2026-10-02",
-    "currentDate": "2026-10-02",
-    "eventCount": 3887,
+    "latestDataDate": "2026-10-03",
+    "currentDate": "2026-10-03",
+    "eventCount": 3905,
     "quarantinedEventCount": 39,
     "quarantinedEventIds": [
       "EV-45f54bd33d01611b",
@@ -63,6 +63,7 @@
       "canonical"
     ],
     "eventIds": [
+      "EV-b88f1a2dd721d62d",
       "EV-fc1d79dc823bfdd9"
     ],
     "viewpointIds": [],
@@ -71,10 +72,11 @@
     ],
     "relatedEntityIds": [],
     "firstSeen": "2026-09-29",
-    "lastSeen": "2026-10-02",
+    "lastSeen": "2026-10-03",
     "relationIds": [],
     "groupedEventIds": {
       "fundingAcquisition": [
+        "EV-b88f1a2dd721d62d",
         "EV-fc1d79dc823bfdd9"
       ],
       "deployments": [],
@@ -85,6 +87,22 @@
       "other": []
     },
     "timeline": [
+      {
+        "id": "EV-b88f1a2dd721d62d",
+        "dataDate": "2026-10-03",
+        "date": "2026-09-29",
+        "eventType": "funding",
+        "eventTypeLabel": "融资",
+        "eventGroup": "融资与并购",
+        "status": "completed",
+        "statusLabel": "已完成",
+        "title": "a16z 投资的 EliseAI 融资 3.5 亿美元，估值翻倍至 40 亿美元",
+        "displayTags": [],
+        "entityIds": [
+          "EN-bd9624583e315c04",
+          "EN-7f4fdb8eb6e82b27"
+        ]
+      },
       {
         "id": "EV-fc1d79dc823bfdd9",
         "dataDate": "2026-10-02",
@@ -126,6 +144,7 @@
       "typeLabel": "行业",
       "valueId": "healthcare_life_sciences",
       "eventIds": [
+        "EV-36a1333e9d930b31",
         "EV-846e5333ad31f647",
         "EV-bc9557a9936f727c",
         "EV-f7c48f02fd8618a2",
@@ -252,6 +271,7 @@
         "EV-edb1ddb3a091ada4"
       ],
       "entityIds": [
+        "EN-e52fc209b562d340",
         "EN-0ba89a138d533c1c",
         "EN-0ad82a994c723e71",
         "EN-c5ac1a63ca842842",
@@ -376,7 +396,7 @@
         "HW-ceb55d9bc637c1d3"
       ],
       "firstSeen": "2026-01-20",
-      "lastSeen": "2026-10-02"
+      "lastSeen": "2026-10-03"
     }
   ],
   "fde": [],
