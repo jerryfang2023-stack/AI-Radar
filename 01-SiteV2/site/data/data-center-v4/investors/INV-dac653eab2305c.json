@@ -342,25 +342,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "DFJ Growth 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：BigHat Biosciences · C轮 · 2026-09-24 · 本轮联合领投 · $75 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为 BigHat Biosciences C轮 本轮联合领投。",
           "source_id": "FISRC-3372eff279ee29db"
         },
         {
-          "description": "融资来源记录：Goodfire AI · B轮 · 2026-02-05 · 本轮参投 · $150M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为 Goodfire AI B轮 本轮参投。",
           "source_id": "FISRC-f0d4056113fd3650"
         },
         {
-          "description": "融资来源记录：Positron AI · B轮 · 2026-02-04 · 既有投资方（本轮参投） · $230 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为 Positron AI B轮 既有投资方（本轮参投）。",
           "source_id": "FISRC-272c28400131d6f2"
+        },
+        {
+          "description": "公开融资来源将其列为 Positron AI 参与整体融资安排，所属分期未披露。",
+          "source_id": "PROFILE-024ee5c1889645828e2e"
         }
       ],
       "contacts": [],
@@ -368,8 +372,8 @@
         {
           "source_id": "FISRC-3372eff279ee29db",
           "source_url": "https://www.bighatbio.com/news/bighat-biosciences-announces-75-million-series-c-financing",
-          "source_title": "BigHat Biosciences 宣布完成 7500 万美元 C 轮融资，以推进 AI 设计的治疗药物和领先的智能体数据平台，用于快速蛋白质设计",
-          "source_content_hash": "aa663a5d9834573153d7948c4fff9426917abef71e5f243a90c492bc83aa3a43",
+          "source_title": "BigHat Biosciences Announces $75 Million Series C Financing to Advance AI-Designed Therapeutics and Leading Agentic Data Platform for Rapid Protein Design",
+          "source_content_hash": "84685446ee4b2690d9ca7016de80b3f2451ffb0ed9b2e6f0344a42cda55f7330",
           "quote": "The round was co-led by DFJ Growth & Premji Invest",
           "quote_hash": "c549e5192a7c3eae0d959c7c805ef06ad83c9c58dd6cf40db4b07347f69526e7"
         },
@@ -377,20 +381,32 @@
           "source_id": "FISRC-f0d4056113fd3650",
           "source_url": "https://theaiinsider.tech/2026/02/11/ai-lab-goodfire-raises-150m-at-1-25b-valuation-to-design-models-with-interpretability/",
           "source_title": "AI Lab Goodfire Raises $150M at $1.25B Valuation to Design Models with Interpretability",
-          "source_content_hash": "065e9d351d56505a",
+          "source_content_hash": "c3be0b5b504e65a3cf5bc16937f1e308c8098f896e845fc8703cfa35238505d2",
           "quote": "new investors DFJ Growth",
           "quote_hash": "4ef1efc93ad753b4dcd813903afa30f4673f561c7cb06a4d5966ab6b88405b15"
         },
         {
           "source_id": "FISRC-272c28400131d6f2",
           "source_url": "https://techcrunch.com/2026/02/04/exclusive-positron-raises-230m-series-b-to-take-on-nvidias-ai-chips/",
-          "source_title": "独家：Positron 获 2.3 亿美元 B 轮融资，挑战英伟达 AI 芯片",
-          "source_content_hash": "a68fc4da018f5dc8",
+          "source_title": "Exclusive: Positron raises $230M Series B to take on Nvidia's AI chips | TechCrunch",
+          "source_content_hash": "240d388a8ab5a402b2d4652db932d80de6ff7a207af2bab8fc5647a661dcb458",
           "quote": "The startup previously raised $75 million last year from investors including Valor Equity Partners, Atreides Management, DFJ Growth, Flume Ventures, and Resilience Reserve.",
           "quote_hash": "88139976a85c408de28c463f18b5be4559ecf594f57f7433680d940d1d52b20e"
+        },
+        {
+          "source_id": "PROFILE-024ee5c1889645828e2e",
+          "source_url": "https://www.prnewswire.com/news-releases/positron-ai-raises-875-million-at-a-5-billion-valuation-to-bring-its-next-generation-inference-silicon-to-market-302874601.html",
+          "source_title": "Positron AI Raises $875 Million at a $5 Billion Valuation to Bring Its Next-Generation Inference Silicon to Market",
+          "source_content_hash": "4779658a236855fa12a78be80bee8f07e77ab5c5f2b4de68313520570d04d491",
+          "quote": "Additional investors include DFJ Growth, Qatar Investment Authority (QIA), Resilience Reserve, Arena Private Wealth, Natural Capital, Helena, 1517 Fund, Flume Ventures, Unless, Boardman Bay Capital Management, Fincadia Advisors, Banyan Ventures and U First Capital alongside strategic investors VentureTech Alliance, Hudson River Trading, Cisco Investments and Naver Ventures.",
+          "quote_hash": "8a980d493a359f0235a0c339dc6ae076e291832ea1691a36308d7b472a144ba1"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
     }
   }
 }
