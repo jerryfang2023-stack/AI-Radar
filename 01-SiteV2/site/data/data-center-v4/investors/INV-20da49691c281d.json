@@ -121,12 +121,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "汕韩光层 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "金时科技公告将汕韩光层私募基金管理（海南）有限公司列为基金管理人及普通合伙人。",
+      "facts": [
+        {
+          "field": "manager_identity",
+          "label": "公告披露的基金管理身份",
+          "value": "海南汕韩智芯一号股权投资基金的管理人及普通合伙人",
+          "source_id": "PROFILE-20da49691c281d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -134,8 +137,32 @@
           "source_id": "FISRC-d5068f248b055320"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "按发行人公告核验法律主体及基金管理角色；当前资料仅覆盖该项历史基金活动。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "金时科技公告将汕韩光层私募基金管理（海南）有限公司列为基金管理人及普通合伙人。",
+          "url": "https://www.cninfo.com.cn/",
+          "source_id": "PROFILE-20da49691c281d-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-20da49691c281d-1",
+          "source_url": "https://pdf.dfcfw.com/pdf/H2_AN202208011576765700_1.pdf?1659383225000.pdf=",
+          "source_title": "jinshi sahan fund 2022 announcement",
+          "source_content_hash": "c655a051f6632dca98f78ac133a9f62b061678f5b0b0bff5cd88c37f5913562f",
+          "quote": "基金管理人及普通合伙人的基本情况 企业名称：汕韩光层私募基金管理（海南）有限公司",
+          "quote_hash": "d645200783d6a31618f58e9fc927c42ae453c982559105602fe3e12f54e6e6bf"
+        },
         {
           "source_id": "FISRC-d5068f248b055320",
           "source_url": "https://news.pedaily.cn/202411/542803.shtml",
@@ -145,7 +172,7 @@
           "quote_hash": "a8f7ae303c0149216d3dd8438e6d7c796cfb9264c008e2b86a4fec91089ec06e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

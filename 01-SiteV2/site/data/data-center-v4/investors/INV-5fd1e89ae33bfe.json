@@ -137,44 +137,83 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "Cognition 官方融资公告使用“Definition”这一品牌名，Definition 官网使用 definitioncap.com 并列出对应联系方式；目前仅记录品牌对应与一笔参投披露，未核验其完整投资策略或组合。",
-      "summary": "Definition 官网展示 definitioncap.com 联系方式；Cognition 官方 Series E 公告将 Definition 列入投资方名单。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "facts": [],
+      "summary": "Definition Capital 的2026年Form ADV将其法定名称列为 DEFINITION CAPITAL MANAGEMENT LLC、主要业务名称列为 DEFINITION CAPITAL，CRD编号为321942；该档案仅记录登记文件、官网公开联系方式和名称映射。",
+      "facts": [
+        {
+          "field": "legal_and_business_names",
+          "label": "法定名称及主要业务名称",
+          "value": "法定名称：DEFINITION CAPITAL MANAGEMENT LLC；Form ADV 所列主要业务名称：DEFINITION CAPITAL。",
+          "source_id": "PROFILE-INV-5fd1e89ae33bfe-2"
+        },
+        {
+          "field": "crd_number",
+          "label": "CRD编号",
+          "value": "321942。",
+          "source_id": "PROFILE-INV-5fd1e89ae33bfe-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "Cognition 官方 Series E 公告将 Definition 列为该轮投资方之一。",
-          "source_id": "PFSRC-INV-5fd1e89ae33bfe-2"
-        },
         {
           "description": "融资来源记录：Cognition · D轮 · 2026-05-27 · 既有投资方，本轮参投 · 超过 10 亿美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a7bbb48af7503bf0"
         }
       ],
-      "contacts": [],
-      "sources": [
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "以SEC投资顾问公开披露系统中的Form ADV核验法定名称和编号；不引入第三方对投资策略或资产规模的估算。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
         {
-          "source_id": "PFSRC-INV-5fd1e89ae33bfe-1",
-          "source_url": "https://definitioncap.com/",
-          "source_title": "Definition",
-          "source_content_hash": "67a88e99b45e4a8ca83346654b6e1464765258be7ca2e7544a41e3ce20e508cf",
-          "quote": "Definition Contact New York Contact: info@definitioncap.com 134 West 4th St, New York, NY, 10012",
-          "quote_hash": "67a88e99b45e4a8ca83346654b6e1464765258be7ca2e7544a41e3ce20e508cf"
+          "kind": "website",
+          "label": "官网",
+          "value": "Definition Capital",
+          "url": "https://www.definitioncap.com/",
+          "source_id": "PROFILE-INV-5fd1e89ae33bfe-3"
         },
         {
-          "source_id": "PFSRC-INV-5fd1e89ae33bfe-2",
-          "source_url": "https://cognition.com/blog/series-e",
-          "source_title": "Do it all with Devin: Announcing our Series E | Cognition",
-          "source_content_hash": "f2d5c7d50230b8017e9320f0a8344cbb1155c1483ca6977b8925a820177ab95e",
-          "quote": "Definition, Hanabi, Journey, Bain Capital Ventures, Layer Global, A* Capital, Alpha Wave, Alkeon, and Diffusion",
-          "quote_hash": "baacdeff4130bbb315c6d19f504ba21cc4b766f4c867b954379a7169e953850f"
+          "kind": "email",
+          "label": "公开联系邮箱",
+          "value": "info@definitioncap.com",
+          "source_id": "PROFILE-INV-5fd1e89ae33bfe-3"
+        }
+      ],
+      "sources": [
+        {
+          "source_id": "PROFILE-INV-5fd1e89ae33bfe-1",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/321942/PDF/321942.pdf",
+          "source_title": "Form ADV — DEFINITION CAPITAL MANAGEMENT LLC, CRD 321942",
+          "source_content_hash": "cbc61e717116971c22515c1aca67ba149aeb8a5a055cd1a8207faa0952d7b62d",
+          "quote": "Primary Business Name:DEFINITION CAPITAL CRD Number: 321942",
+          "quote_hash": "40422f8abfd2af37e44080f18e7dd341dfdb79faa976772274d89cfe79e7e401"
+        },
+        {
+          "source_id": "PROFILE-INV-5fd1e89ae33bfe-2",
+          "source_url": "https://reports.adviserinfo.sec.gov/reports/ADV/321942/PDF/321942.pdf",
+          "source_title": "Form ADV — DEFINITION CAPITAL MANAGEMENT LLC, CRD 321942",
+          "source_content_hash": "cbc61e717116971c22515c1aca67ba149aeb8a5a055cd1a8207faa0952d7b62d",
+          "quote": "A. Your full legal name (if you are a sole proprietor, your last, first, and middle names): DEFINITION CAPITAL MANAGEMENT LLC B. (1) Name under which you primarily conduct your advisory business, if different from Item 1.A. DEFINITION CAPITAL",
+          "quote_hash": "ea5c4cbf84d173eb67552ed3cbc14fd0940e5deb8b7492ad388eb6a4ea79a1c4"
+        },
+        {
+          "source_id": "PROFILE-INV-5fd1e89ae33bfe-3",
+          "source_url": "https://www.definitioncap.com/",
+          "source_title": "Definition",
+          "source_content_hash": "67a88e99b45e4a8ca83346654b6e1464765258be7ca2e7544a41e3ce20e508cf",
+          "quote": "Contact: info@definitioncap.com",
+          "quote_hash": "f0999a605aeb4f5cd5ce3bbbabf77804856e768d65e1f8eae25a2f9ee9df761c"
+        },
+        {
+          "source_id": "PROFILE-INV-5fd1e89ae33bfe-4",
+          "source_url": "https://jobs.definitioncap.com/cookie-policy",
+          "source_title": "Cookies policy | Definition Job Board",
+          "source_content_hash": "420a93461e7a19e3eacabd6c85e0cfab0330b2e36fbfe34717cd9f52ed770d8b",
+          "quote": "This job board is owned by Definition Capital Management LLC",
+          "quote_hash": "a9e8c9a4aaa6f7b57f6bdd772b17416732247fd951dad9eb53ecee448bbaf006"
         },
         {
           "source_id": "FISRC-a7bbb48af7503bf0",
@@ -185,7 +224,7 @@
           "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

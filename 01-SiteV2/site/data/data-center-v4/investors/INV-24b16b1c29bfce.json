@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "赛智伯乐 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "上交所披露的发行文件将浙江赛智伯乐股权投资管理有限公司列为多只基金的管理人。",
+      "facts": [
+        {
+          "field": "fund_management",
+          "label": "监管披露的基金管理身份",
+          "value": "多只股权投资基金的管理人，登记编号P1001886",
+          "source_id": "PROFILE-24b16b1c29bfce-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-0fc87012f374b083"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "基于发行人披露核验管理人名称和登记编号；未扩写其现行基金规模或策略。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "上交所披露的发行文件将浙江赛智伯乐股权投资管理有限公司列为多只基金的管理人。",
+          "url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202605/002190_20260518_6FXS.pdf",
+          "source_id": "PROFILE-24b16b1c29bfce-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-24b16b1c29bfce-1",
+          "source_url": "https://static.sse.com.cn/stock/disclosure/announcement/c/202605/002190_20260518_6FXS.pdf",
+          "source_title": "sse saizhibole 2026 disclosure",
+          "source_content_hash": "1909f3bd84feccabebab0d570c2b6f28a0e0fda680edbc484b565a41900a6ea0",
+          "quote": "浙江赛智伯乐股权投资管理有限公司 P1001886",
+          "quote_hash": "b905a38b70d34e486b962f7a9cfbc878dd1b12589bc265f1413185b03e56ba3a"
+        },
         {
           "source_id": "FISRC-0fc87012f374b083",
           "source_url": "https://www.qimingvc.com/cn/news/%E5%90%AF%E6%98%8E%E6%98%9F-%E4%BD%B3%E9%87%8F%E8%84%91%E7%A7%91%E5%AD%A6%E8%BF%9E%E7%BB%AD%E5%AE%8C%E6%88%90c%E8%BD%AE%E5%8F%8Ad%E8%BD%AE%E4%B8%A4%E8%BD%AE%E8%9E%8D%E8%B5%84%EF%BC%8C%E5%90%AF%E6%98%8E%E5%88%9B%E6%8A%95%E9%A2%86%E6%8A%95c%E8%BD%AE",
@@ -161,7 +188,7 @@
           "quote_hash": "c3b26edc54f5313f31b30a3ad82e1b18a69f93fb5fff78bdc0c0244e4ab13f91"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

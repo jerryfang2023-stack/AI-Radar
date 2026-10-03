@@ -137,12 +137,15 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "BlueFive 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "BlueFive Capital官网组合页披露其参与Bugatti Rimac相关交易。",
+      "facts": [
+        {
+          "field": "portfolio_activity",
+          "label": "官网披露的投资活动",
+          "value": "参与收购Bugatti Rimac与Rimac Group权益的投资者联合体",
+          "source_id": "PROFILE-2467c2e59ca956-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -150,8 +153,32 @@
           "source_id": "FISRC-b382348e8f96c9b9"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据机构官网组合页记录已披露交易；交易完成状态以原页披露为准。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "机构官网",
+          "value": "BlueFive Capital",
+          "url": "https://bluefivecapital.com/",
+          "source_id": "PROFILE-2467c2e59ca956-1"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "PROFILE-2467c2e59ca956-1",
+          "source_url": "https://www.bluefivecapital.com/en/portfolio",
+          "source_title": "Investment Portfolio | BlueFive Capital",
+          "source_content_hash": "4ed7c062a6b033b8ee9d430856aaa57156f846fc3e14042f711c4cd05d724328",
+          "quote": "BlueFive Capital is the largest investor in the consortium",
+          "quote_hash": "5fdc3e1885974a60ecd62592523c67c07bcc6d63b712c662d5665413a071aeec"
+        },
         {
           "source_id": "FISRC-b382348e8f96c9b9",
           "source_url": "https://the-decoder.com/chinese-ai-video-maker-kling-raises-2-billion-as-it-gears-up-for-hong-kong-ipo",
@@ -161,7 +188,7 @@
           "quote_hash": "5888e5985b14641653ee65e4d3420c693c8d354d4bf2fc626e1bc2d956da8148"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

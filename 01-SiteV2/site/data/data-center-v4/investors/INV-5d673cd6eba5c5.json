@@ -138,44 +138,53 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 Sands Talk Capital 官方网站动态和组合接口直接披露的弋途科技项目及 Pre-B 轮联合领投关系；未据此推断基金规模、管理团队或完整业绩。",
-      "summary": "Sands Talk Capital 官网动态称其联席领投弋途科技（Exturing）Pre-B 轮融资，官网组合页也将弋途科技列为其投资项目。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "facts": [],
-      "milestones": [],
-      "track_record": [
+      "summary": "Sands Talk Capital 官网自述其成立于2022年底，是面向全球化的美元私募股权基金。",
+      "facts": [
         {
-          "description": "Sands Talk Capital 官网动态称其联席领投弋途科技 Pre-B 轮融资。",
-          "source_id": "PFSRC-INV-5d673cd6eba5c5-1"
-        },
+          "field": "fund_type_and_focus",
+          "label": "基金类型与方向",
+          "value": "官网自述为聚焦全球化的美元私募股权基金。",
+          "source_id": "PROFILE-INV-5d673cd6eba5c5-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2022-12",
+          "description": "官网自述成立于2022年底。",
+          "source_id": "PROFILE-INV-5d673cd6eba5c5-1"
+        }
+      ],
+      "track_record": [
         {
           "description": "融资来源记录：弋途科技 · Pre-B轮 · 2026-09-21 · 本轮联合领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ec1ffe5861471f6a"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "简介与基金方向均归因于官网自述；创始关系等未经独立核验的信息未录入。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Sands Talk Capital",
+          "url": "https://sandstalkcapital.com/",
+          "source_id": "PROFILE-INV-5d673cd6eba5c5-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PFSRC-INV-5d673cd6eba5c5-1",
-          "source_url": "https://sandstalkcapital.com/api/trpc/news.list?input=%7B%22json%22%3Anull%7D",
-          "source_title": "Sands Talk Capital 官网动态",
-          "source_content_hash": "49a96de75e4beff04318bab14c34ae7c69755f9a7582af7042f7745cabc19e14",
-          "quote": "STC Co-Leads EXTURING's Pre-B Funding Round to Fuel Leapfrog Growth in AI Cars | Sands Talk Partners",
-          "quote_hash": "73ff2dbdb03a19e4ef521dab58e0c928d394d10b49a3f1d4dd9418a744a7e0ee"
-        },
-        {
-          "source_id": "PFSRC-INV-5d673cd6eba5c5-2",
-          "source_url": "https://sandstalkcapital.com/api/trpc/portfolio.list?input=%7B%22json%22%3Anull%7D",
-          "source_title": "Sands Talk Capital 官网投资组合",
-          "source_content_hash": "0016ec1e45eb645daf4b4f35b83d99caea4eb77053331280c24201a7ef52f622",
-          "quote": "弋途科技 Exturing",
-          "quote_hash": "6ddd1e7c526b15128214e951a7692b4154810be4664b4b02b043542317e58771"
+          "source_id": "PROFILE-INV-5d673cd6eba5c5-1",
+          "source_url": "https://sandstalkcapital.com/",
+          "source_title": "Sands Talk Capital 沙滩说资本 | 投资下一代全球化公司",
+          "source_content_hash": "cfd2318e1991c088d565dfbb4fb60768df03ffa8d848d3a492670d3ab5cc117d",
+          "quote": "Sands Talk Capital was established in late 2022. It was initiated by Jet Lee, founder of J&T Express, and founded by its partner, Lulu Yang. It is a USD private equity fund focused on globalization.",
+          "quote_hash": "d868f2376024a9fd5bd778443d0f57b73e3949f889fc05f67757a0387aa32717"
         },
         {
           "source_id": "FISRC-ec1ffe5861471f6a",
@@ -186,7 +195,7 @@
           "quote_hash": "bafda0d30f65da43aa0231d42fc2c6ac648ff251e649dd62868ddd721f58027b"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

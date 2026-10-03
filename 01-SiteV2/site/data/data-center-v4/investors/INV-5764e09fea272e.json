@@ -137,32 +137,47 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Nscale 官方融资公告将 Longaeva Partners L.P. 列为其可转债融资参与方。本条仅归档该项公司披露。",
-      "coverage_note": "仅记录 Nscale 官方公告所列投资方名称；未获得该基金的独立官网或公开策略资料，也不把 Balyasny 其他品牌信息合并到此记录。",
-      "facts": [],
+      "summary": "Longaeva Partners LP 官网将其描述为总部位于纽约、专注全球股票市场的投资管理公司。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "投资管理公司，官网称其专注全球股票市场。",
+          "source_id": "PROFILE-INV-5764e09fea272e-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "Nscale 官方公告将 Longaeva Partners L.P. 列为融资参与方。",
-          "source_id": "nscale_release"
-        },
         {
           "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮参投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
         }
       ],
-      "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "官网未将其称为风险投资机构，因此只记录投资管理业务性质，不标注 VC 类型。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官网",
+          "value": "Longaeva Partners",
+          "url": "https://www.longaeva.com/",
+          "source_id": "PROFILE-INV-5764e09fea272e-1"
+        }
+      ],
       "sources": [
         {
-          "source_id": "nscale_release",
-          "source_url": "https://www.nscale.com/press-releases/pre-ipo-convertible-financing",
-          "source_title": "Nscale Raises $3.36 Billion in Pre-IPO Convertible Financing | Nscale",
-          "source_content_hash": "9194dea938db859cf719910c546c5b015923c76e8d81c3d2d8b5bd8731c3a490",
-          "quote": "Other investors that participated in the financing include Davidson Kempner Capital Management, Qube Research & Technologies (QRT), Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors.",
-          "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
+          "source_id": "PROFILE-INV-5764e09fea272e-1",
+          "source_url": "https://www.longaeva.com/",
+          "source_title": "Longaeva | Homepage",
+          "source_content_hash": "a438eb433e66f0085fa324c3db7d30284b29f78ee70be1772447199d76f9597c",
+          "quote": "Longaeva Partners LP is a New York-based investment management firm dedicated to excellence in the global equity markets.",
+          "quote_hash": "cefbbaf76794e03210a58de87ef02ab31c549be1df4152f295b3320e91a08fef"
         },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
