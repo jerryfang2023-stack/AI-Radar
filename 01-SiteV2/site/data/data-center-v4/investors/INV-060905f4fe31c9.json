@@ -155,36 +155,58 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Titan Capital 官网的一篇融资文章称，Titan Capital Winners Fund 继续支持 Mitigata，并在该公司种子轮时已投资。",
-      "coverage_note": "档案仅记录 Titan Capital 官方披露的 Winners Fund 投资活动。管理团队、基金规模及独立投资策略未由该来源说明。",
+      "coverage_status": "researched",
+      "coverage_note": "机构官网使用 Titan Capital 品牌并自述创办人优先的投资方式；法律页披露网站运营主体，投资活动则严格按官网对 Titan Capital Winners Fund 的表述记录。",
+      "summary": "Titan Capital Winners Fund 的相关公开信息以 Titan Capital 品牌呈现。官网自述其与创业者从早期合作；2026 年 Titan Capital 发布的 Mitigata 融资回顾称 Winners Fund 继续支持该公司，并称该基金最初在种子轮投资。官网法律页把 TITAN WINNERS FUND MANAGEMENT LLP 列为网站运营主体。",
       "facts": [
         {
-          "field": "investment_activity",
-          "label": "已披露投资活动",
-          "value": "Titan Capital 官方文章称 Winners Fund 继续支持 Mitigata，且早期已在其种子轮投资。",
-          "source_id": "titan_mitigata"
+          "field": "investment_approach",
+          "label": "官网自述的投资方式",
+          "value": "Titan Capital 官网称其与创业者从早期阶段合作。该表述是品牌官网的自我介绍。",
+          "source_id": "titan-capital-home-2026-10-03"
+        },
+        {
+          "field": "website_operator",
+          "label": "官网披露的网站运营主体",
+          "value": "Titan Capital 隐私页将 TITAN WINNERS FUND MANAGEMENT LLP 列为官网运营主体；该法律披露不单独说明各具体基金之间的管理安排。",
+          "source_id": "titan-capital-legal-2026-10-03"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Titan Capital 于 2026-06-23 发布的文章称 Titan Capital Winners Fund 继续支持 Mitigata，并称其早在种子轮即已投资。这是官网披露的单一组合案例。",
+          "source_id": "titan-capital-mitigata-2026-10-03"
+        },
         {
           "description": "融资来源记录：ContraVault AI · Pre-A轮 · 2026-06-17 · 本轮参投、种子轮领投 · $3.1 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-78278ca61a2d245e"
         }
       ],
       "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "当前仅核实到一项官方披露的被投企业后续融资活动。",
       "sources": [
         {
-          "source_id": "titan_mitigata",
-          "source_url": "https://www.titancapital.vc/blogs/mitigata",
-          "quote": "with Titan Capital Winners Fund continuing to back the company it first backed at seed.",
+          "source_id": "titan-capital-home-2026-10-03",
+          "source_url": "https://titancapital.vc/",
+          "source_title": "Titan Capital | Founder-First Venture Capital Firm in India",
+          "source_content_hash": "10d10d44ee3c17156272c5c0bba33b7576efd2156a14302873f1dcd2597aea31",
+          "quote": "We partner with entrepreneurs from day one.",
+          "quote_hash": "88d1f5ee3d36ce315d8a790d958f8aa06e38dfadd63b29f121ab2bfcefe67e39"
+        },
+        {
+          "source_id": "titan-capital-legal-2026-10-03",
+          "source_url": "https://titancapital.vc/privacy-policy",
+          "source_title": "Privacy Policy - Titan Capital",
+          "source_content_hash": "80245d62292d525ca75e356f12ed0f5c2896430fbf8fbe68e11805a99451b3f7",
+          "quote": "TITAN WINNERS FUND MANAGEMENT LLP is a limited liability partnership incorporated under the Limited Liability Partnership Act, 2008",
+          "quote_hash": "7c87831f9e599c4db8b9c1a1e5ff4fca9ccf05f33adc8725bfcd3b96a1b1a292"
+        },
+        {
+          "source_id": "titan-capital-mitigata-2026-10-03",
+          "source_url": "https://titancapital.vc/blogs/mitigata",
           "source_title": "Mitigata Raises $15M to Scale Cyber Resilience - Titan Capital",
           "source_content_hash": "de27c923fd0dc196a1e0877c988d7d1bda55451c639588fff0bb27de190a4513",
+          "quote": "with Titan Capital Winners Fund continuing to back the company it first backed at seed.",
           "quote_hash": "d5934cac9b01602bb085cc1a28df52835f23bc66e90f8ffacd02fc62cebf9215"
         },
         {
@@ -196,7 +218,7 @@
           "quote_hash": "d0fa13091e690219da3bfa96a5adbf73d65b2f105f7df58a18d94ce915e2e5ee"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

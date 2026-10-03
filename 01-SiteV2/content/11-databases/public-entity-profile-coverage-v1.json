@@ -16038,18 +16038,27 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "该条仅对应 GitHub 开源安全计划的 Funding Partner 名单；不代表对 GitHub 或初创公司的股权投资，也不推断 Vercel 的投资组合。",
-      "summary": "GitHub 官方文章将 Vercel 列为 Secure Open Source Fund 项目的 Funding Partner。本档案只记录开源项目支持关系，不称其为股权投资。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "Vercel 官网确认其软件基础设施业务；Photon 的融资报道列出其参与一轮融资。该报道不足以证明 Vercel 运营独立投资部门或构成完整投资组合。",
+      "summary": "Vercel 官网将其描述为面向应用和智能体的基础设施平台。TechCrunch 于 2026-10 报道 Photon 种子轮时列出 Vercel 为参投方；本条只验证这项公开活动，不据此推断其存在独立 VC 部门。",
+      "facts": [
+        {
+          "field": "business_description",
+          "label": "官网自述业务",
+          "value": "Vercel 官网称其提供面向应用和智能体的基础设施平台。",
+          "source_id": "vercel-about-2026-10-03"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-10-01",
+          "description": "TechCrunch 报道 Photon 的 450 万美元种子轮有 Vercel 参与。",
+          "source_id": "photon-seed-investment-2026-10-03"
+        }
+      ],
       "track_record": [
         {
-          "description": "GitHub 官方文章在 Secure Open Source Fund 的 Funding Partners 名单中列出 Vercel；该项目伙伴身份不构成股权投资记录。",
-          "source_id": "PFSRC-INV-3d2e9e76c2020e-1"
+          "description": "TechCrunch 于 2026-10-01 报道 Photon 获得 450 万美元种子融资，并将 Vercel 列为参投方；该记录来自媒体报道。",
+          "source_id": "photon-seed-investment-2026-10-03"
         },
         {
           "description": "融资来源记录：Photon · 种子轮 · 2026-10-01 · 本轮参投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -16067,12 +16076,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PFSRC-INV-3d2e9e76c2020e-1",
-          "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
-          "source_title": "What 50 open source projects taught us about security in the AI era - The GitHub Blog",
-          "source_content_hash": "3c0bf05f730f866ecc287e72f6661d9835c25aa9e955ca784d331bf5c0c6259b",
-          "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
-          "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+          "source_id": "vercel-about-2026-10-03",
+          "source_url": "https://vercel.com/about",
+          "source_title": "About Us",
+          "source_content_hash": "819767e37f04e7d78ebe984bd8fc36bebff9dd97443f5ebe06f7b9dc6a18ca14",
+          "quote": "Vercel is agentic infrastructure for every app and agent.",
+          "quote_hash": "af541b0ad0556095e7d108921790f45a40da896afd8ac566cf2e11c23befc453"
+        },
+        {
+          "source_id": "photon-seed-investment-2026-10-03",
+          "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+          "source_title": "Photon held a funeral for mobile apps. Now it has $4.5M to help replace them with agents. | TechCrunch",
+          "source_content_hash": "cf9279f41fa85a9948d0e9afa26458c4119e068d3b48d36805a5b054a85ec8d2",
+          "quote": "with participation from Vercel, HSG (HongShan in Chinese), Z Fellows, Llama Ventures, Karman, and other angel investors.",
+          "quote_hash": "ebafb0191de59d7e514d8636cc771e52e8d02b1d0177e9cc8d7dca6fafaab974"
         },
         {
           "source_id": "FISRC-199e9ff185705c78",
@@ -16099,7 +16116,7 @@
           "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-d94dcc7f7d25f4": {
       "profile_type": "unverified",
@@ -16432,22 +16449,36 @@
       "last_verified_at": "2026-09-25"
     },
     "INV-e717478951e8de": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "organization",
-      "summary": "Foundational Industries 官方融资说明将 Offline Ventures 列为其 2500 万美元种子轮投资方之一。",
-      "coverage_note": "仅以被投公司官方融资说明确认 Offline Ventures 的参投活动；未补充机构策略、团队或其他投资组合信息。",
-      "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "机构新闻稿发布于 2021 年，以下使命、创始团队及融资信息均保留为发布当时的披露，不推断为当前团队或当前基金规模。",
+      "summary": "Offline Ventures 在 2021 年公开发布时，将自身描述为同时投资与孵化公司的机构，关注基础技术与文化交汇处的技术，创办人包括 Dave Morin、Brit Morin、Nate Bosshard 和 James Higa。其当时的发布稿还宣布了最新一轮 1 亿美元募资；这不是当前管理规模。",
+      "facts": [
+        {
+          "field": "investment_and_incubation",
+          "label": "投资与孵化方式（2021 年发布稿）",
+          "value": "Offline Ventures 2021 年发布稿称，机构同时投资并孵化多个领域的公司，关注基础技术与文化交汇处的技术。",
+          "source_id": "offline-ventures-launch-release-2026-10-03"
+        },
+        {
+          "field": "founders",
+          "label": "创始团队（机构发布稿）",
+          "value": "该发布稿列出 Dave Morin、Brit Morin、Nate Bosshard 和 James Higa 为创始人。",
+          "source_id": "offline-ventures-launch-release-2026-10-03"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-11-16",
+          "description": "Offline Ventures 公开发布机构使命、团队、投资组合及当时的 1 亿美元募资信息。",
+          "source_id": "offline-ventures-launch-release-2026-10-03"
+        }
+      ],
       "track_record": [
         {
-          "description": "Foundational Industries 官方融资说明将 Offline Ventures 列入其 2500 万美元种子轮投资方名单。",
-          "source_id": "offline_foundational_round"
+          "description": "2021 年公开发布稿宣布其最新募资为 1 亿美元；此为当时披露的募资额，不代表当前基金规模或管理资产。",
+          "source_id": "offline-ventures-launch-release-2026-10-03"
         },
         {
           "description": "融资来源记录：Dazzle · 种子轮 · 2026-09-29 · 本轮参投 · $8 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -16462,14 +16493,15 @@
           "source_id": "FISRC-b3973965c733b20b"
         }
       ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "offline_foundational_round",
-          "source_url": "https://foundational.industries/mission",
-          "source_title": "Mission | Foundational Industries",
-          "source_content_hash": "969f38952c99bedb2f9a68a26710e6184065f49da7c080f885c0120dea47585b",
-          "quote": "with Abstract Ventures, Adverb Ventures, Buckley Ventures, and Offline Ventures.",
-          "quote_hash": "5fce50f506de3c416f386fa5ac5c4a53d86aeb0cd70ba4829703af2d972e2037"
+          "source_id": "offline-ventures-launch-release-2026-10-03",
+          "source_url": "https://www.prnewswire.com/news-releases/offline-ventures-launches-to-invent-and-invest-in-humanist-technology-that-will-change-the-world-301425700.html",
+          "source_title": "Offline Ventures Launches To Invent And Invest In Humanist Technology That Will Change The World",
+          "source_content_hash": "ee4a719b646f840d1636a23d31f0d37d7c0b9032876ca842edc3ed8ab7e28c46",
+          "quote": "Offline Ventures is focused on inventing and investing in the technologies that dwell at the intersection of online and offline experiences",
+          "quote_hash": "cf7b8287e43787ed7cf38ad71dccd696d8f9c96bb6d013f3e95f30b8b5aecb2a"
         },
         {
           "source_id": "FISRC-39cbb5f315cdae11",
@@ -16496,7 +16528,7 @@
           "quote_hash": "252f152b9613e71ef595c5a646754ae9a163f1fcbce06ba06cffd2d8f0246285"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-2b9e2548935653": {
       "identity_status": "verified",
@@ -21145,19 +21177,28 @@
     "INV-30e118440f3917": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 OpenRouter Series B 参投信息及 NVIDIA 官网对 NVentures 的身份说明；不扩展未核实的团队、规模或策略。",
-      "summary": "OpenRouter 官方公告将 NVentures 列为 Series B 参投者，并称其为 NVIDIA 的风险投资部门；NVIDIA 官网设有 NVentures 官方页面。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "NVIDIA官网确认其为企业风险投资部门。官网披露的组合与方向为精选展示，不代表完整业绩或投资组合清单。",
+      "summary": "NVentures 是 NVIDIA 的风险投资部门，投资解决复杂问题的科技团队，并结合 NVIDIA 的技术资源与生态提供长期合作支持。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网列示 AI 基础设施、机器人、数字生物学、应用人工智能与前沿计算等领域。",
+          "source_id": "nventures-official-2026-10-03"
+        },
+        {
+          "field": "investment_approach",
+          "label": "合作方式",
+          "value": "官网称其结合 NVIDIA 专业能力与资源，与团队建立长期合作关系。",
+          "source_id": "nventures-official-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "OpenRouter 的 Series B 公告列出 NVentures 为参投者。",
-          "source_id": "PFSRC-INV-30e118440f3917-1"
+          "description": "官网精选展示 Skild AI、Emerald AI、Edison Scientific 等组合案例；该展示不能视作完整投资组合或投资回报统计。",
+          "source_id": "nventures-official-2026-10-03"
         },
         {
           "description": "融资来源记录：Inherent · 种子轮 · 2026-08-23 · 本轮参投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -21172,23 +21213,23 @@
           "source_id": "FISRC-7faa441242e94444"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NVentures 官方网站",
+          "value": "https://www.nvidia.com/en-us/startups/nventures/",
+          "url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_id": "nventures-official-2026-10-03"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PFSRC-INV-30e118440f3917-1",
-          "source_url": "https://openrouter.ai/blog/announcements/series-b/",
-          "source_title": "OpenRouter Raises $113M Series B",
-          "source_content_hash": "dff2f02fe6db8142e67851a24303d2b0294a688f9e44de7d811c011089db954f",
-          "quote": "with participation from NVentures (NVIDIA’s venture capital arm)",
-          "quote_hash": "42db7a6f6c8287582d6a8bd41de7f18ef32e1a901eb6ac58f412583078e5f70c"
-        },
-        {
-          "source_id": "PFSRC-INV-30e118440f3917-2",
+          "source_id": "nventures-official-2026-10-03",
           "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
           "source_title": "NVentures — NVIDIA’s Venture Capital Arm | NVIDIA",
           "source_content_hash": "9c771e9fbccc5260abed43fe702ef6ebf1f5a2cfbdcb9d5771a0d6c2af00a108",
-          "quote": "NVentures — NVIDIA’s Venture Capital Arm",
-          "quote_hash": "4a711eec508bb832b92f9228955386f9090bb96653abe1b71162de93a774aea1"
+          "quote": "NVentures is NVIDIA’s venture capital arm, dedicated to investing in technology visionaries who are solving complex problems.",
+          "quote_hash": "535eb1d3dd9a0ede7a4958f84a905ce5903d2d3de6018f2bd8a838faf2bba38b"
         },
         {
           "source_id": "FISRC-ed8df2c3d21fb938",
@@ -21215,7 +21256,7 @@
           "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-21d94b38d4ea7f": {
       "profile_type": "unverified",
@@ -32987,40 +33028,18 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "金卡智能的公告将龙芯（深圳）私募创业投资基金管理有限公司列为共青城龙芯汇航创业投资合伙企业（有限合伙）的发起管理方，并披露其私募基金管理人登记编号P1068738。",
-      "coverage_note": "队列名称“龙芯创投”为简称；本条以公告中的法定名称和管理人登记号识别主体。公告同时说明的空天产业FOF是特定基金的投资方向，不代表管理人全部策略。",
+      "coverage_note": "龙芯中科 2025 年公司报道披露龙芯创投担任郑州航空港区信创产业基金管理人；本条只记录这一项管理活动，未扩写其机构沿革、团队或完整投资组合。",
+      "summary": "龙芯中科 2025 年发布的大会报道披露，郑州航空港区信创产业基金由多方发起、总规模 5 亿元，并由龙芯创投担任管理人。本档案仅覆盖该项已公开的基金管理活动。",
       "facts": [
         {
-          "field": "legal_name",
-          "label": "法定名称",
-          "value": "龙芯（深圳）私募创业投资基金管理有限公司",
-          "source_id": "filing-identity"
-        },
-        {
-          "field": "registered_capital",
-          "label": "注册资本",
-          "value": "1,000万元",
-          "source_id": "filing-identity"
-        },
-        {
-          "field": "business_scope",
-          "label": "公告所列经营范围",
-          "value": "私募股权投资基金管理、创业投资基金管理服务",
-          "source_id": "filing-identity"
-        },
-        {
-          "field": "manager_registration",
-          "label": "私募基金管理人登记编号",
-          "value": "P1068738",
-          "source_id": "filing-registration"
+          "field": "fund_management_activity",
+          "label": "已披露基金管理活动",
+          "value": "龙芯中科 2025 年 5 月的报道称，龙芯创投担任郑州航空港区信创产业基金管理人。该信息只确认报道所述的一项管理安排。",
+          "source_id": "loongson-airport-fund-manager-2026-10-03"
         }
       ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "金卡智能公告披露其发起设立共青城龙芯汇航创业投资合伙企业（有限合伙）；该基金为创业投资FOF，公告所列方向为空天产业。",
-          "source_id": "filing-fund"
-        },
         {
           "description": "融资来源记录：鼎犀智创（Rhinovate™） · Pre-A轮 · 2026-09-02 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-57de475f4ec2ac5a"
@@ -33033,28 +33052,12 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "filing-identity",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
-          "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
-          "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
-          "quote": "名称：龙芯（深圳）私募创业投资基金管理有限公司\n注册资本：1,000万元\n类型：有限责任公司",
-          "quote_hash": "9f7c9b2660bb27dd140a2bd7adb6f6bba4c6e9e60d9526efb769e51432ad8aa1"
-        },
-        {
-          "source_id": "filing-registration",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
-          "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
-          "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
-          "quote": "登记备案情况：龙芯深圳已在中国证券投资基金业协会登记备案私募基\n金管理人，登记编号：P1068738。",
-          "quote_hash": "8c7b5b55a9f6a354210c6a4c63bfa4bd59edd693816d52017b2833411ff62ae7"
-        },
-        {
-          "source_id": "filing-fund",
-          "source_url": "https://static.cninfo.com.cn/finalpage/2026-01-31/1224957804.PDF",
-          "source_title": "金卡智能关于认购基金暨关联交易的公告（CNINFO PDF text capture）",
-          "source_content_hash": "1797d99b735bddde751843b361cfe2aa8b781eede29cb9377d76a6786b61fba1",
-          "quote": "本基金为创业投资FOF基金，将通过投资主基金方\n式，对空天产业领域内的优质企业开展创业投资或从事与投资相关的活动。",
-          "quote_hash": "8e9ed84c095da3b4910fd4dd7c77280d110d3e8afa8fe47a9bcf397419f3c1e8"
+          "source_id": "loongson-airport-fund-manager-2026-10-03",
+          "source_url": "https://www.loongson.cn/index.php/news/show?id=751",
+          "source_title": "信创智算协同突破，龙架构生态豫地生根结果",
+          "source_content_hash": "fedb36c46f17d63cbf81edf61e5a4ecca334084a80cfae98d17df80301aabdc2",
+          "quote": "该基金由港区投资平台、河南省属国资平台携手社会资本发起，总规模5亿元，由龙芯创投担任管理人，将为港区信创企业壮大、生态链集聚发展提供资本助力。",
+          "quote_hash": "a1b51a6728a1b33866b92f09d71613b30043c9b6def7cc15696a420e6fb3949c"
         },
         {
           "source_id": "FISRC-57de475f4ec2ac5a",
@@ -33081,7 +33084,7 @@
           "quote_hash": "ef1a3c84f19febf3822077b0defbdb7d3dd1bf7e0074244e431160ed8c99c6aa"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-df3eebf20561a1": {
       "profile_type": "unverified",
@@ -39223,23 +39226,20 @@
       "last_verified_at": "2026-10-03"
     },
     "INV-f6891f950b978d": {
+      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "profile_type": "organization",
-      "summary": "SambaNova 官方融资公告将 Assam Ventures 列入其 2026 年 7 月 8 日完成首轮交割的 10 亿美元 Series F 新老投资方名单。",
-      "coverage_note": "档案仅记录被投公司公告列出的融资参与；未推断 Assam Ventures 与其他相近名称基金的法律主体关系，也未披露单独投资金额。",
+      "coverage_note": "SambaNova 官方首期融资公告将 Assam Ventures 列入 new and existing investors，未区分该方是新投资者还是既有投资者。本档案只确认这一条公司公告。",
+      "summary": "SambaNova 2026 年 7 月的 Series F 首期融资公告将 Assam Ventures 列入 new and existing investors 名单。本档案仅记录公告中的投资方名称，不补写机构背景。",
       "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "track_record": [
+      "milestones": [
         {
-          "description": "SambaNova 2026 年 7 月 8 日公告将 Assam Ventures 列入其 10 亿美元 Series F 融资的新老投资方名单。",
-          "source_id": "assam_sambanova_series_f"
-        },
+          "date": "2026-07-08",
+          "description": "SambaNova Series F 首期融资公告将 Assam Ventures 列入 new and existing investors 名单。",
+          "source_id": "sambanova-series-f-assam-kabila-2026-10-03"
+        }
+      ],
+      "track_record": [
         {
           "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投（新进或既有） · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dbf8259066547c8e"
@@ -39249,14 +39249,15 @@
           "source_id": "FISRC-d47a3aba63bc33dc"
         }
       ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "assam_sambanova_series_f",
+          "source_id": "sambanova-series-f-assam-kabila-2026-10-03",
           "source_url": "https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation?hs_amp=true",
           "source_title": "SambaNova Completes First Close of $1B Financing at $11B Valuation",
           "source_content_hash": "e93ac17861194a9f5240bfc967d965cf4d01312f901c4a4ac7817c7583db3134",
-          "quote": "SambaNova today announced it has completed the first close of $1 billion in strategic financing as part of a Series F round, valuing the company at $11 billion post money. This latest financing round was led by General Atlantic, a leading global investor, with significant investment from Seligman Ventures and T. Rowe Price Associates, Inc. New and existing investors include A&E Investment, Assam Ventures, Battery Ventures",
-          "quote_hash": "66a5d94c39ffa63a539b492f7aff3f2ad64c003168cac7429da00967ba65dbd4"
+          "quote": "New and existing investors include A&E Investment, Assam Ventures, Battery Ventures, funds and accounts managed by BlackRock, Cambium Capital, Intel Capital, Kabila Capital, QFO Capital, Qatar Investment Authority (QIA), Vista Equity Partners and Volantis.",
+          "quote_hash": "4d4bac3bb07fd20201c1754a02aba2612d20a25dc8fa108cb117e59d4b5790aa"
         },
         {
           "source_id": "FISRC-dbf8259066547c8e",
@@ -39275,7 +39276,7 @@
           "quote_hash": "f90e829fe93e832b560ff3f7bba134c64c69b4c77b33d2e3e364525da3629553"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-816a9b91ab68ef": {
       "summary": "Cambium Capital Management LP 是专注先进计算技术的风险投资机构。官网定位覆盖新计算范式，团队由量子计算、AI 医疗、半导体和资产管理领域的创业者、研究者及投资人组成。团队简介披露，联合创始人 David Moehring 曾任 IonQ 创始 CEO；Landon Downs 曾共同创立 1QBit、Synthesis Health 和后被 SandboxAQ 收购的 Good Chemistry。",
@@ -43798,14 +43799,21 @@
     "INV-e95661d9b20610": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Quiet Capital官网称其团队由创业建设者组成，从公司创立之初投资有潜力的创始人。",
+      "coverage_status": "researched",
+      "coverage_note": "简介采用 Quiet Capital 官网的品牌自述；法律页面将网站运营方表述为 Quiet Capital Management LLC，官网页脚则使用 LP 字样，本档案不将不同法律名称合并为同一基金载体。",
+      "summary": "Quiet Capital 官网自述其团队以创业者身份投资创办人，并称从创业早期开始支持公司。网站法律条款将 Quiet Capital Management LLC 列为网站运营方；官网页脚另使用 Quiet Capital Management LP 名称，因此本档案只按 Quiet Capital 品牌及其官网自述记录。",
       "facts": [
         {
-          "field": "investment_stage",
-          "label": "投资阶段",
-          "value": "Day Zero / 创业起始阶段",
-          "source_id": "homepage"
+          "field": "investment_approach",
+          "label": "官网自述的投资方式",
+          "value": "官网称团队是创业者，并从创办人早期阶段开始投资支持。",
+          "source_id": "quiet-capital-home-2026-10-03"
+        },
+        {
+          "field": "website_operator",
+          "label": "网站法律运营方",
+          "value": "法律页面称 Quiet Capital Management LLC 运营 quiet.com；官网页脚另显示 Quiet Capital Management LP，本档案不据此判断不同实体的法律关系。",
+          "source_id": "quiet-capital-legal-2026-10-03"
         }
       ],
       "milestones": [],
@@ -43819,23 +43827,23 @@
           "source_id": "FISRC-7a85c433c7dbed44"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网",
-          "value": "https://quiet.com/",
-          "source_id": "homepage",
-          "url": "https://quiet.com/"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "homepage",
+          "source_id": "quiet-capital-home-2026-10-03",
           "source_url": "https://quiet.com/",
           "source_title": "Quiet Capital",
           "source_content_hash": "0f191b8d401041fb47d249895ddb9f46bf89a4621ec3cafd1e2fed3fe3ab6403",
           "quote": "We are builders who invest in remarkable Founders from day zero.",
           "quote_hash": "a50b268c06bdbd161f1eef53af95e1b6b8ba20853c188c42fdcc09799e97f62b"
+        },
+        {
+          "source_id": "quiet-capital-legal-2026-10-03",
+          "source_url": "https://quiet.com/legal/",
+          "source_title": "Legal | Quiet Capital",
+          "source_content_hash": "b2784c78a48dd18695f8737c6c379d00e9edf743818436a1fe81c8848b86cce6",
+          "quote": "This Website is maintained and operated by Quiet Capital Management LLC.",
+          "quote_hash": "ac00ada87d14155ac4cb8d020a1ae4da9cd0e716d598adb9d9f4933e89273ff4"
         },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
@@ -43854,8 +43862,7 @@
           "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-10-02"
     },
     "INV-8ab49f4611119d": {
       "summary": "137 Ventures 是一家美国多阶段投资机构，官网称其与具有长期增长潜力的科技公司及创始人合作，并提供投资组合、团队与 LP 投资者关系入口。官网说明 137 Ventures Management, LLC 为 SEC 注册投资顾问；官网同时提醒，注册不代表特定技能水平或业绩保证。",
@@ -58413,17 +58420,16 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "新石器官网将阿联酋磊石资本（Stone Venture）列为其2025年D轮融资领投方。现有来源只确认这一活动关联。",
-      "coverage_note": "未找到该机构的官方自述页面；此档案仅依据被投公司融资公告确认名称、地区和一项领投活动，不扩展为完整机构介绍。",
-      "facts": [
+      "coverage_note": "投中网 2026 年 9 月融资报道将阿联酋 Stone Venture（磊石资本）列为智身科技 B 轮领投方。本档案限于该条报道，不将相似名称的其他机构合并，也不补写未经核实的投资策略和法律背景。",
+      "summary": "投中网 2026 年 9 月 20 日报道智身科技 B 轮融资，并称阿联酋 Stone Venture（磊石资本）领投。本档案仅记录该条公开融资活动。",
+      "facts": [],
+      "milestones": [
         {
-          "field": "investment_activity",
-          "label": "已披露投资活动",
-          "value": "新石器官网称2025年D轮融资由阿联酋磊石资本（Stone Venture）领投。",
-          "source_id": "neolix_d_round"
+          "date": "2026-09-20",
+          "description": "投中网报道智身科技完成 B 轮融资，并称阿联酋 Stone Venture（磊石资本）领投。",
+          "source_id": "chinaventure-genisom-stone-2026-10-03"
         }
       ],
-      "milestones": [],
       "track_record": [
         {
           "description": "融资来源记录：智身科技（GENISOM AI） · B轮 · 2026-09-20 · 本轮领投 · 数亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
@@ -58431,18 +58437,14 @@
         }
       ],
       "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "只核实到新石器官方公告所披露的一项领投活动，机构团队与策略暂无一手资料。",
       "sources": [
         {
-          "source_id": "neolix_d_round",
-          "source_url": "https://www.neolix.ai/zh/news/d-round-funding/",
-          "quote": "本轮融资由阿联酋磊石资本（Stone Venture）领投",
-          "source_title": "新石器D轮融资超6亿美元，创中国自动驾驶领域融资纪录 | Neolix",
-          "source_content_hash": "1f7aeda0ae0a268ba5036cf900f03551820cc11b4c29a919d4fec6351554bc4f",
-          "quote_hash": "67b7257d0d698c266b4ff79c7a79f39cfa69c17854cd012cd71647efa2bc2b14"
+          "source_id": "chinaventure-genisom-stone-2026-10-03",
+          "source_url": "https://www.chinaventure.com.cn/news/114-20260920-393359.html",
+          "source_title": "智身科技完成数亿元B轮融资 | 投中网",
+          "source_content_hash": "cb57a89ceda0683dc9af58cdb259edeac4d8fe02e5e568d87a42b8b875791b28",
+          "quote": "本轮融资由阿联酋Stone Venture（磊石资本）领投，洪山资本、粤科金融、吴中融玥、吴中金控等投资机构，以及东软集团、豪鹏科技、远见资本、日盈电子等产业投资方共同参与。",
+          "quote_hash": "4252e2c9e4dc154dc45cb228c9960ebacaf654d7b89c5d7472cf9f31b37bbf38"
         },
         {
           "source_id": "FISRC-fecad8ccb9a84a39",
@@ -58453,7 +58455,7 @@
           "quote_hash": "3b4482b2426f6535e214554cc11cecd5659013822d0f1106390ffa7c1e7642d1"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-5c04a7febcd420": {
       "profile_type": "unverified",
@@ -63111,64 +63113,35 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "本档案以可读取的机构官网、被投方公告或投资组合页为依据；公开案例仅代表可追溯的披露，不代表完整投资组合、机构业绩或回报。",
-      "summary": "Nimble Ventures 官网提供机构名称与联系邮箱；CloudNC 官方融资公告将其称为美国风险投资人，并披露其领投 2026 年 9 月宣布的 2000 万美元融资。官网公开资料有限，本档案不推断更广泛的投资策略。",
-      "facts": [
-        {
-          "field": "identity",
-          "label": "机构身份",
-          "value": "官网使用 Nimble Ventures 名称并公布联系邮箱。",
-          "source_id": "nimble"
-        },
-        {
-          "field": "track_record_scope",
-          "label": "披露案例",
-          "value": "CloudNC 官方公告称 Nimble Ventures 领投其 2000 万美元融资。",
-          "source_id": "cloudnc"
-        }
-      ],
+      "coverage_note": "目前只有融资被投企业 CloudNC 的 2026 年公告提供了可核验的机构描述和领投活动；这条记录不代表完整机构简介或完整投资组合。",
+      "summary": "CloudNC 于 2026-09-09 公告称，Nimble Ventures 是一家总部在美国的风险投资机构，并领投其 2,000 万美元融资。本条仅记录该笔融资活动及公告所提供的有限身份描述。",
+      "facts": [],
       "milestones": [
         {
           "date": "2026-09-09",
-          "description": "CloudNC 宣布完成 2000 万美元融资，由 Nimble Ventures 领投。",
-          "source_id": "cloudnc"
+          "description": "CloudNC 公告 Nimble Ventures 领投其 2,000 万美元新一轮融资。",
+          "source_id": "cloudnc-nimble-round-2026-10-03"
         }
       ],
       "track_record": [
         {
-          "description": "领投 CloudNC 的 2000 万美元融资；CloudNC 将 Nimble Ventures 描述为美国风险投资人。",
-          "source_id": "cloudnc"
+          "description": "CloudNC 称 Nimble Ventures 领投其 2,000 万美元融资；公告还将其描述为总部在美国的风险投资机构。",
+          "source_id": "cloudnc-nimble-round-2026-10-03"
         },
         {
           "description": "融资来源记录：CloudNC · B轮 · 2026-09-09 · 本轮领投 · $20 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-583456b85ec1179e"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官方网站",
-          "value": "https://www.nimble.vc/",
-          "source_id": "nimble",
-          "url": "https://www.nimble.vc/"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "nimble",
-          "source_url": "https://www.nimble.vc/",
-          "source_title": "Nimble Ventures",
-          "source_content_hash": "e3d4c9a6fa721c8aa194ca821f8fd71d2b6e20524b0f2dc2d39e188fc7081f0b",
-          "quote": "Nimble Ventures top of page Nimble Ventures Home About Team Portfolio Contact More... Use tab to navigate through the menu items. Nimble Ventures info@nimble.vc &copy; Nimble Ventures 2019 | All Rights Reserved Designed by Ha",
-          "quote_hash": "79e5432fd642783bf212f28a72ddf2eb97abdea90b1df272b76038caaabfaad1"
-        },
-        {
-          "source_id": "cloudnc",
+          "source_id": "cloudnc-nimble-round-2026-10-03",
           "source_url": "https://www.cloudnc.com/news-room/cloudnc-raises-20m-to-expand-ai-tools-for-precision-machining",
           "source_title": "CloudNC raises $20m to expand AI tools for precision machining",
           "source_content_hash": "e50d348dd4894165d8008e57268e20fad7ae1fdcc8a77273b2552831c176085d",
-          "quote": "s that it has raised $20 million in new investment capital. The funding is led by Nimble Ventures, a US-based venture investor, with participation from other investors including Calculus Venture Capital, Entrepreneur First and LM Ventures, Lockheed Martin’s venture capital fund. CloudNC will use the investment to further catalyze the ",
-          "quote_hash": "c95ff22fcdd436dd52d3c7fd39dd2c748e6ac52292f5188ca941ff155b256882"
+          "quote": "The funding is led by Nimble Ventures, a US-based venture investor",
+          "quote_hash": "ead80db5e5afc7242cf7c7175f7407e387b75ffbd4b3c6677d3d31799cc43244"
         },
         {
           "source_id": "FISRC-583456b85ec1179e",
@@ -65982,52 +65955,44 @@
       "coverage_status": "researched"
     },
     "INV-15e40a3e2f6592": {
+      "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "profile_type": "organization",
-      "summary": "First Round Capital Holdings, L.P. 是 First Round 官方网站的运营主体；First Round 官网将 Aranya 列入公司组合，融资报道列其为 Aranya 种子轮领投方。",
-      "coverage_note": "法律名称与 First Round 品牌的对应来自 First Round 官网条款；Aranya 组合关系来自官方公司目录，具体种子轮信息来自 SiliconANGLE 报道。",
+      "coverage_note": "Aranya 发行人新闻稿将 900 万美元 seed 的领投方称为 First Round Capital；SiliconANGLE 对同轮次报道使用了 First Round Capital Holdings L.P. 这一更具体名称。本条保留两种来源表述，不推定其完整法律关系。",
+      "summary": "Aranya 的 1100 万美元融资包含 900 万美元 seed。发行人公告将领投方称为 First Round Capital；SiliconANGLE 对同一轮次报道使用了 First Round Capital Holdings L.P. 的名称。本档案限于这条投资活动，不扩写机构完整背景。",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
       "track_record": [
         {
-          "description": "First Round Capital Holdings, L.P. 领投 Aranya 的 900 万美元种子轮。",
-          "source_id": "first_round_aranya_seed"
+          "description": "Aranya 发行人新闻稿称，其 900 万美元 seed 由 First Round Capital 领投。",
+          "source_id": "prnewswire-aranya-first-round-brand-2026-10-03"
+        },
+        {
+          "description": "SiliconANGLE 对 Aranya 融资的报道将同一 900 万美元 seed 的领投方称为 First Round Capital Holdings L.P.；发行人公告没有使用该 LP 后缀。",
+          "source_id": "siliconangle-aranya-first-round-holdings-2026-10-03"
         },
         {
           "description": "融资来源记录：Aranya Inc. · 种子轮 · 2026-09-01 · 本轮领投 · $11M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-89934e15127d3d0d"
         }
       ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "first_round_legal_identity",
-          "source_url": "https://www.firstround.com/terms",
-          "source_title": "Terms of Use | First Round",
-          "source_content_hash": "b8ff1c466e585dca508c8d1ce6247f77445b025661900b99f5e2f8ec01108dbb",
-          "quote": "owned and operated by FR Capital Holdings, L.P.",
-          "quote_hash": "4f41aa1d44fbaf189377f50da09426032f8df8d5d2e8285e8d56233f11a3bf3b"
-        },
-        {
-          "source_id": "first_round_aranya_portfolio",
-          "source_url": "https://www.firstround.com/companies?category=all",
-          "source_title": "Companies | First Round",
-          "source_content_hash": "077cdfc64b37c5ac1796c16720883bb67a0d086111764e9d4cf9aa5af4c223c3",
-          "quote": "Aranya",
-          "quote_hash": "6e2e5e39dffe0f7457d3d99c2b470b4a8f114e153602c83bc6aca2e809dcd9df"
-        },
-        {
-          "source_id": "first_round_aranya_seed",
+          "source_id": "siliconangle-aranya-first-round-holdings-2026-10-03",
           "source_url": "https://siliconangle.com/2026/09/01/aranya-raises-11m-to-turn-bare-metal-servers-into-ai-clusters-in-less-than-48-hours/",
           "source_title": "Aranya raises $11M to turn bare-metal servers into AI clusters in less than 48 hours - SiliconANGLE",
           "source_content_hash": "068bc7dce570ff7f01e5b6bf1375d115b4cda262e5546f1b4b175ee65e153672",
-          "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P.",
-          "quote_hash": "bfa8b6d501d985c8871335c44947238e28ec68b5a846f4780c587cae11d3dc89"
+          "quote": "The round includes a $9 million seed led by First Round Capital Holdings L.P. with participation from BoxGroup Ventures LLC, Vermilion Cliffs Ventures LLC and Asylum Ventures and a $2 million pre-seed round led by Asylum Ventures.",
+          "quote_hash": "311e56ff80aa1bddaf01f365e7a7fe50bfe7b2fc6c80c0cd3cd079537584f4cd"
+        },
+        {
+          "source_id": "prnewswire-aranya-first-round-brand-2026-10-03",
+          "source_url": "https://www.prnewswire.com/news-releases/aranya-secures-11m-to-convert-bare-metal-into-custom-production-ready-clusters-in-48-hours-with-full-visibility-into-inference-and-training-management-302865915.html",
+          "source_title": "Aranya Secures $11M to Convert Bare Metal into Custom, Production-Ready Clusters in 48 Hours with Full Visibility into Inference and Training Management",
+          "source_content_hash": "a70a8c09c13c1416f666f04558a724896c391955506921188badc1aab2fcabd2",
+          "quote": "including a $9M seed round led by First Round Capital",
+          "quote_hash": "69b538a4ef7756cf37f3a7e850df83b51d8e35ce0dc8f08806f215c7bb6f3500"
         },
         {
           "source_id": "FISRC-89934e15127d3d0d",
@@ -69760,36 +69725,35 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Relativity Networks 的融资公告将 Bell Ventures Inc. 列为该轮新投资者之一；现有一手来源仅支持这项投资活动，未形成机构完整背景。",
-      "coverage_note": "仅有被投公司融资通稿可核实该机构名称与一次活动。Bell Canada 的 Bell Ventures 页面拒绝访问，团队、投资策略与组合信息待补。",
-      "facts": [
+      "coverage_note": "Relativity Networks 在 2026-08 的融资新闻稿列出 Bell Ventures Inc. 为新投资者之一。本条只确认这一命名活动，不建立机构完整档案或投资组合。",
+      "summary": "Relativity Networks 于 2026-08-19 发布的融资新闻稿称，Bell Ventures Inc. 参与其 2,200 万美元 SAFE 融资。本条仅覆盖该笔活动，尚无足够一手材料补充机构背景。",
+      "facts": [],
+      "milestones": [
         {
-          "field": "investment_activity",
-          "label": "已披露投资活动",
-          "value": "Relativity Networks 的融资公告将 Bell Ventures Inc. 列入该轮新投资者。",
-          "source_id": "relativity_round"
+          "date": "2026-08-19",
+          "description": "Relativity Networks 公告 Bell Ventures Inc. 参与其 2,200 万美元 SAFE 融资。",
+          "source_id": "relativity-bell-raise-announcement-2026-10-03"
         }
       ],
-      "milestones": [],
       "track_record": [
+        {
+          "description": "Relativity Networks 的融资新闻稿将 Bell Ventures Inc. 列为 2026 年该轮融资的新投资者之一。",
+          "source_id": "relativity-bell-raise-announcement-2026-10-03"
+        },
         {
           "description": "融资来源记录：Relativity Networks · 后续发行 · 2026-08-19 · 本轮参投 · $22 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e32f49cf414731d3"
         }
       ],
       "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "目前只确认一项融资活动，尚无足够来源整理机构团队或策略。",
       "sources": [
         {
-          "source_id": "relativity_round",
+          "source_id": "relativity-bell-raise-announcement-2026-10-03",
           "source_url": "https://www.prnewswire.com/news-releases/relativity-networks-raises-22m-and-lands-40m-hyperscaler-contract-to-power-the-ai-geography-era-302854769.html",
-          "quote": "including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC.",
           "source_title": "Relativity Networks Raises $22M and Lands $40M Hyperscaler Contract to Power the AI Geography Era",
           "source_content_hash": "7b42a9ed074f0ac1a25a3a1f676ca8b7f6d3029b8a4a39f7ad1377b9d958b911",
-          "quote_hash": "985c62b930ff3b44ee89d8b5c5962826958a05c97df400d1b662c0270a9bec22"
+          "quote": "round drawn by new investors including Rhapsody Venture Partners, Bell Ventures Inc., and Faster Than Glass LLC",
+          "quote_hash": "ba62dbbfa63c2485f16947874374f77ccd19f212e6e990ff523c9114c21b2fba"
         },
         {
           "source_id": "FISRC-e32f49cf414731d3",
@@ -69800,7 +69764,7 @@
           "quote_hash": "bdfe1429f66dc6ad35673f77ca8328b584d20f41dbd406adbf0ca36199f7c75f"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-a4f9461e8b0e54": {
       "profile_type": "unverified",
@@ -73172,53 +73136,30 @@
     "INV-1c2bcdeff23ceb": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
-      "coverage_note": "官网页面使用“776”品牌；未据此推断“776 Ventures”为单独法律主体或基金名称。",
-      "summary": "776 的官方 Cerebro 页面称其产品由两名 776 成员打造，并将 Alexis Ohanian 列为创始人兼 General Partner；该页使用品牌名“776”。",
-      "facts": [
-        {
-          "field": "public_brand",
-          "label": "公开品牌",
-          "value": "776（队列标签为 776 Ventures；官网页面使用 776）",
-          "source_id": "776_cerebro"
-        },
-        {
-          "field": "founder",
-          "label": "创始人",
-          "value": "Alexis Ohanian",
-          "source_id": "776_cerebro"
-        },
-        {
-          "field": "role",
-          "label": "官网所列职务",
-          "value": "Founder and General Partner, 776",
-          "source_id": "776_cerebro"
-        }
-      ],
+      "coverage_status": "activity_only",
+      "coverage_note": "本条依据 Starcloud 发布、经 Business Wire 分发的融资稿存档；其参与方名单列出 776 Ventures。本档案只确认这一轮活动，不扩写机构完整背景。",
+      "summary": "Starcloud 发布的一则 Series A 融资新闻稿列出 776 Ventures 为参与方之一。本档案仅记录该条公开融资活动，不补写机构团队、策略或管理规模。",
+      "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Starcloud 发布的 Series A 新闻稿将 776 Ventures 列为 1.7 亿美元融资的参与方之一。",
+          "source_id": "starcloud-series-a-776-2026-10-03"
+        },
         {
           "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f80a0b6f2f7f63f8"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网",
-          "value": "Cerebro官方About页面",
-          "url": "https://tldr.cerebro.ai/about/",
-          "source_id": "776_cerebro"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "776_cerebro",
-          "source_url": "https://tldr.cerebro.ai/about/",
-          "source_title": "About · Cerebro",
-          "source_content_hash": "1db2087a0d8adb121073b8876e0bee42813c7c0e36da572ae767d53da68c1111",
-          "quote": "Alexis Ohanian co-founded Reddit and founded 776, where he is a General Partner.",
-          "quote_hash": "d6aeb10a7802ce56b2fa080c1285eb843ed627a04592e94fe1b7012134030e06"
+          "source_id": "starcloud-series-a-776-2026-10-03",
+          "source_url": "https://markets.financialcontent.com/lightport.lightport8/article/bizwire-2026-3-30-starcloud-raises-170m-series-a-at-11bn-valuation-led-by-benchmark-and-eqt-ventures",
+          "source_title": "CORRECTING and REPLACING Starcloud Raises $170M Series A at $1.1bn Valuation Led by Benchmark and EQT Ventures",
+          "source_content_hash": "cfc50432be3a626dea6bd0c9b47f31157f85daa28dc6bc79f4572b666a5aa658",
+          "quote": "The heavily oversubscribed round also saw participation from major global funds and strategic partners, including NFX, Nebular, Y Combinator, Adjacent, 776 Ventures, FUSE, Manhattan West, and Monolith Power Systems.",
+          "quote_hash": "0e9476ec67d9da0d4b4384c7fe13371e175b75b01357bd4b3cf0ba4823c4ce04"
         },
         {
           "source_id": "FISRC-f80a0b6f2f7f63f8",
@@ -73506,19 +73447,15 @@
     "INV-3770942243161b": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 Starcloud 2026 年融资活动以及历史 Boeing 职务核验；不陈述当前职务或完整履历。",
-      "summary": "Via Satellite 将 Dennis Muilenburg 列为 Starcloud 2026 年融资轮的天使投资人，并称其为前 Boeing CEO；Boeing 2019 年公告记录其当时继续担任 CEO、总裁及董事。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "Boeing 官方 2019 年公告记载他当时继续担任公司 CEO、总裁和董事；Via Satellite 2026 年报道称其为前 Boeing CEO。",
+      "coverage_status": "researched",
+      "coverage_note": "本人职业档案由 Cultivation Capital 团队官网核验；所列任职年份和业务成果按该页面表述。",
+      "summary": "Dennis Muilenburg 是 Cultivation Capital 的 Venture Advisor，支持其地理空间投资；该机构官网同时称他现任 New Vista 的 CEO 和董事长。他曾任波音总裁、CEO 与董事长。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "Via Satellite 报道将 Dennis Muilenburg 列为 Starcloud 2026 年 Series A 融资轮的天使投资人。",
-          "source_id": "PFSRC-INV-3770942243161b-1"
+          "description": "Cultivation Capital 的人物页称，在其波音任期内，波音启动了面向外部初创企业投资的 HorizonX，并公开披露 19 项投资。",
+          "source_id": "cultivation-capital-dennis-2026-10-03"
         },
         {
           "description": "融资来源记录：Starcloud · A轮 · 2026-08-13 · 本轮参投 · $170 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -73530,22 +73467,44 @@
         }
       ],
       "contacts": [],
-      "sources": [
+      "current_roles": [
         {
-          "source_id": "PFSRC-INV-3770942243161b-1",
-          "source_url": "https://www.satellitetoday.com/finance/2026/03/30/starcloud-raises-170m-to-fund-orbital-data-center-plans/",
-          "source_title": "Starcloud Raises $170M to Fund Orbital Data Center Plans - Via Satellite",
-          "source_content_hash": "d894773bda8569ecd835d5315001299927f210252dd00496995cd6f059e21432",
-          "quote": "angel investors like former Boeing CEO Dennis Muilenburg",
-          "quote_hash": "2eef9e0ca908800212ba7f8cd117085d317ad71462bb423d6117f4067fa3cae3"
+          "title": "Venture Advisor",
+          "organization": "Cultivation Capital",
+          "source_id": "cultivation-capital-dennis-2026-10-03"
         },
         {
-          "source_id": "PFSRC-INV-3770942243161b-2",
-          "source_url": "https://investors.boeing.com/investors/news/press-release-details/2019/Boeing-Board-of-Directors-Separates-CEO-and-Chairman-Roles/default.aspx",
-          "source_title": "Boeing Company - Boeing Board of Directors Separates CEO and Chairman Roles",
-          "source_content_hash": "2ddfdc9ec892fd15717c44d8699d7f3f4808fe667ed718d1a1f52004a06573b3",
-          "quote": "Dennis A. Muilenburg continues as CEO, president and a director.",
-          "quote_hash": "b6fa4566ddb39ec24a1e0d8601c455ac4490a6f1eed07e5e000fe2b46a8b2c51"
+          "title": "CEO and Chairman",
+          "organization": "New Vista",
+          "source_id": "cultivation-capital-dennis-2026-10-03"
+        }
+      ],
+      "career": [
+        {
+          "organization": "The Boeing Company",
+          "title": "President and Chief Executive Officer",
+          "period": "2015–2019",
+          "description": "Cultivation Capital 官网记载其曾任波音总裁和首席执行官。",
+          "source_id": "cultivation-capital-dennis-2026-10-03"
+        },
+        {
+          "organization": "The Boeing Company",
+          "title": "Chairman of the board of directors",
+          "period": "2016–2019",
+          "description": "Cultivation Capital 官网记载其曾任波音董事会主席。",
+          "source_id": "cultivation-capital-dennis-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "拥有航空航天与国防领域 35 年以上经验；官网提及其在波音任期内的 HorizonX 初创投资项目。",
+      "sources": [
+        {
+          "source_id": "cultivation-capital-dennis-2026-10-03",
+          "source_url": "https://cultivationcapital.com/team/dennis-muilenburg/",
+          "source_title": "Dennis Muilenburg | Cultivation Capital",
+          "source_content_hash": "399221ffe12336469fbf67da76935d2dd820de144ade9c0126dba5a15e227e61",
+          "quote": "Dennis Muilenburg is a Venture Advisor supporting Cultivation’s geospatial investments.",
+          "quote_hash": "25d9291a7b51493997e368022449c526bedd52e7d17297f201cde42700b6aa87"
         },
         {
           "source_id": "FISRC-f80a0b6f2f7f63f8",
@@ -73564,7 +73523,7 @@
           "quote_hash": "0002df1f0ce504a676981ee2c44db107a7be1633f99c52a23dfb40557e754c3c"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-529204aacfacf6": {
       "profile_type": "organization",
@@ -77983,20 +77942,19 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "公开投资案例仅代表当前可追溯披露，不代表完整投资组合、投资业绩或机构回报。",
-      "summary": "Zenity 官方融资公告将 Vertex Ventures 列为现有投资者。Vertex Ventures 由多个区域独立基金组成；该公告未说明参与的具体区域基金，本档案不作分支归属推定。",
-      "facts": [
+      "coverage_note": "Zenity 官网将 Vertex Ventures 列为其 Series C 公告中的既有投资方；来源没有标明地区分支或具体法律实体，本档案仅记录这一机构名称在该笔活动中的出现。",
+      "summary": "Zenity 的 1.25 亿美元 Series C 公告将 Vertex Ventures 列为既有投资方之一。公开材料没有说明所指的地区分支，因此本档案不扩展为某一特定 Vertex Ventures 关联实体的背景介绍。",
+      "facts": [],
+      "milestones": [
         {
-          "field": "public_investment",
-          "label": "公开投资披露",
-          "value": "Zenity 官方公告将 Vertex Ventures 列为现有投资者，具体区域基金未披露。",
-          "source_id": "FISRC-7bf361b38b905ca3"
+          "date": "2026-08-03",
+          "description": "Zenity 的 Series C 公告将 Vertex Ventures 列为既有投资方之一；公告未明确对应的地区分支。",
+          "source_id": "zenity-series-c-vertex-2026-10-03"
         }
       ],
-      "milestones": [],
       "track_record": [
         {
-          "description": "Zenity 官方融资公告列出 Vertex Ventures 为现有投资者之一；公告未披露具体区域基金。",
+          "description": "融资来源记录：Zenity · C轮 · 2026-08-03 · 本轮参投 · $125 Million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-7bf361b38b905ca3"
         },
         {
@@ -78007,12 +77965,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "FISRC-7bf361b38b905ca3",
+          "source_id": "zenity-series-c-vertex-2026-10-03",
           "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
           "source_title": "Zenity Raises $125 Million to Secure the Era of 1 Billion AI Agents",
           "source_content_hash": "16db186cd8183b2a5071cc3d2563a05701f227c558b1884a28ffbc2803c86d25",
-          "quote": "2, Hitachi Ventures and LG Technology Ventures joined the round, alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital. \"We have followed Zenity&#x27;s journey for years and have been impressed by the team&#x27;s vision and execution. As enterprises rapidly adopt AI agents across c",
-          "quote_hash": "2eff8926799db0a54e4e9610aa7c9d21e1a66f027a2df00530ba888de5bd7986"
+          "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital.",
+          "quote_hash": "bab294ba6119e5c82da13f0fdd35c43dfed8b9bd3f74b158b8cec68229210a51"
+        },
+        {
+          "source_id": "FISRC-7bf361b38b905ca3",
+          "source_url": "https://zenity.io/company-overview/newsroom/company-news/zenity-raises-125-million-to-secure-the-era-of-1-billion-ai-agents",
+          "source_title": "Zenity 融资1.25亿美元，为十亿AI智能体时代提供安全保障",
+          "source_content_hash": "1335412447baff3bb277c848e9b44b65104b5c73a088edea02c4483b70164744",
+          "quote": "alongside existing investors Vertex Ventures, Third Point Ventures, DTCP and Intel Capital",
+          "quote_hash": "3f04ae6390a8470ee7784d445965e2efd5568199fcb106ebc6ca971196da7664"
         },
         {
           "source_id": "FISRC-b8ac45c45da22b49",
@@ -81707,31 +81673,14 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "目前只核实到 Arrakis 2026 年融资公告中的投资者身份和 OpenAI 职务，未补充完整履历或教育经历。",
-      "summary": "Arrakis 的 2026 年融资公告将 Olivier Godement 列为支持该公司的科技行业人士，并称其为 OpenAI 商业产品负责人。本档案只记录这项公开活动及公告所载职务。",
-      "current_roles": [
-        {
-          "title": "Head of business products",
-          "organization": "OpenAI",
-          "source_id": "olivier_arrakis"
-        }
-      ],
-      "career": [],
-      "education": [],
-      "experience_summary": "Arrakis 公告将 Olivier Godement 介绍为 OpenAI 商业产品负责人。",
-      "facts": [
-        {
-          "field": "investment_activity",
-          "label": "公开投资活动",
-          "value": "Arrakis 2026 年公告将 Olivier Godement 列入该公司支持者；未披露个人投资金额。",
-          "source_id": "olivier_arrakis"
-        }
-      ],
+      "coverage_note": "Arrakis 2026-07-22 的融资公告为公司发布的新闻稿，经 Business Wire 发布；它只证实该时点的职务描述和一项投资支持活动，不构成完整人物履历。",
+      "summary": "Arrakis 的 2026 年融资新闻稿将 Olivier Godement 描述为 OpenAI Business Products 负责人，并将其列为支持 Arrakis 融资的技术行业人士之一。本条只记录新闻稿发布时的信息。",
+      "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "Arrakis 2026 年融资公告将 Olivier Godement 列为公司支持者；公告未披露其个人投资金额。",
-          "source_id": "olivier_arrakis"
+          "description": "Arrakis 于 2026-07-22 发布的融资新闻稿将 Olivier Godement 列为公司融资的支持者之一；该公告没有披露其个人出资额。",
+          "source_id": "arrakis-olivier-backer-2026-10-03"
         },
         {
           "description": "融资来源记录：Arrakis · A轮 · 2026-07-22 · 本轮天使投资人 · $30 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -81739,13 +81688,25 @@
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "OpenAI",
+          "title": "Head of Business Products（新闻稿发布时的描述）",
+          "period": "截至 2026-07-22 新闻稿发布时；起任时间未披露",
+          "description": "Arrakis 的融资公告以此职务介绍 Olivier Godement。",
+          "source_id": "arrakis-olivier-backer-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "本条只依据 Arrakis 融资公告记录一项投资支持活动及其发布时列出的 OpenAI 职务。",
       "sources": [
         {
-          "source_id": "olivier_arrakis",
-          "source_url": "https://via.ritzau.dk/pressemeddelelse/15058492/arrakis-comes-out-of-stealth-with-dollar38m-to-help-industrial-enterprises-compete-in-the-ai-era?publisherId=90456",
-          "quote": "Olivier Godement, OpenAI’s Head of business products",
+          "source_id": "arrakis-olivier-backer-2026-10-03",
+          "source_url": "https://via.tt.se/pressmeddelande/4480593/arrakis-comes-out-of-stealth-with-dollar38m-to-help-industrial-enterprises-compete-in-the-ai-era?publisherId=259167",
           "source_title": "Arrakis Comes out of Stealth With $38M to Help Industrial Enterprises Compete in the AI Era | Business Wire",
-          "source_content_hash": "f6c5007d0b9e6329b9ceee78aa5ccbacf70f5a81d122cccd2ef149815d655743",
+          "source_content_hash": "367205d62aa60cdf3630bd3a36bdd1d3a01dc4eaba277731409537348eeec378",
+          "quote": "Olivier Godement, OpenAI’s Head of business products",
           "quote_hash": "da6ace4b35a3101932342706f84fe6eba8fb31bc0e29b93e50e40c45059bd529"
         },
         {
@@ -81757,7 +81718,7 @@
           "quote_hash": "31b35d92a4b8a42a9b1fba4d971e7ac3d8bbcc7ef89ffc4a0fe61c7e641b9764"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-732cd48534407b": {
       "profile_type": "unverified",
@@ -88592,22 +88553,17 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "SambaNova 的官方融资公告将 Kabila Capital 列为该轮新旧投资者之一。目前可核实的是这笔公开参投；机构团队、策略及完整组合尚无足够一手资料支持。",
-      "coverage_note": "仅展示一笔由被投公司官方公告确认的投资活动，整轮融资金额不代表 Kabila Capital 单独出资额。",
-      "facts": [
+      "coverage_note": "SambaNova 官方首期融资公告将 Kabila Capital 列入 new and existing investors，未区分该方是新投资者还是既有投资者。本档案只确认这一条公司公告。",
+      "summary": "SambaNova 2026 年 7 月的 Series F 首期融资公告将 Kabila Capital 列入 new and existing investors 名单。本档案仅记录公告中的投资方名称，不补写机构背景。",
+      "facts": [],
+      "milestones": [
         {
-          "field": "investment_activity",
-          "label": "公开参投",
-          "value": "SambaNova 将 Kabila Capital 列为 2026 年 Series F 首次交割的新旧投资者之一。",
-          "source_id": "sambanova_round"
+          "date": "2026-07-08",
+          "description": "SambaNova Series F 首期融资公告将 Kabila Capital 列入 new and existing investors 名单。",
+          "source_id": "sambanova-series-f-assam-kabila-2026-10-03"
         }
       ],
-      "milestones": [],
       "track_record": [
-        {
-          "description": "SambaNova 官方公告披露 2026 年 7 月 8 日完成 10 亿美元 Series F 首次交割，并列 Kabila Capital 为新旧投资者之一；该金额是整轮金额。",
-          "source_id": "sambanova_round"
-        },
         {
           "description": "融资来源记录：SambaNova Systems · F轮 · 2026-07-08 · 本轮参投（新进或既有） · $1 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-dbf8259066547c8e"
@@ -88616,12 +88572,12 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "sambanova_round",
+          "source_id": "sambanova-series-f-assam-kabila-2026-10-03",
           "source_url": "https://sambanova.ai/press/sambanova-completes-first-close-of-1b-financing-at-11b-valuation?hs_amp=true",
-          "quote": "Kabila Capital, QFO Capital",
           "source_title": "SambaNova Completes First Close of $1B Financing at $11B Valuation",
           "source_content_hash": "e93ac17861194a9f5240bfc967d965cf4d01312f901c4a4ac7817c7583db3134",
-          "quote_hash": "84c7c8f5fad0ada13a8316228b3ec442a3090adf863df920d7d59b3cedeeea2f"
+          "quote": "New and existing investors include A&E Investment, Assam Ventures, Battery Ventures, funds and accounts managed by BlackRock, Cambium Capital, Intel Capital, Kabila Capital, QFO Capital, Qatar Investment Authority (QIA), Vista Equity Partners and Volantis.",
+          "quote_hash": "4d4bac3bb07fd20201c1754a02aba2612d20a25dc8fa108cb117e59d4b5790aa"
         },
         {
           "source_id": "FISRC-dbf8259066547c8e",
@@ -88632,7 +88588,7 @@
           "quote_hash": "77d97258882b21840f610d49cebe8074695a1291732afc1da147c2d95a2859cc"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-32bd1804e2d3c1": {
       "profile_type": "unverified",
@@ -100022,36 +99978,58 @@
     "INV-060905f4fe31c9": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Titan Capital 官网的一篇融资文章称，Titan Capital Winners Fund 继续支持 Mitigata，并在该公司种子轮时已投资。",
-      "coverage_note": "档案仅记录 Titan Capital 官方披露的 Winners Fund 投资活动。管理团队、基金规模及独立投资策略未由该来源说明。",
+      "coverage_status": "researched",
+      "coverage_note": "机构官网使用 Titan Capital 品牌并自述创办人优先的投资方式；法律页披露网站运营主体，投资活动则严格按官网对 Titan Capital Winners Fund 的表述记录。",
+      "summary": "Titan Capital Winners Fund 的相关公开信息以 Titan Capital 品牌呈现。官网自述其与创业者从早期合作；2026 年 Titan Capital 发布的 Mitigata 融资回顾称 Winners Fund 继续支持该公司，并称该基金最初在种子轮投资。官网法律页把 TITAN WINNERS FUND MANAGEMENT LLP 列为网站运营主体。",
       "facts": [
         {
-          "field": "investment_activity",
-          "label": "已披露投资活动",
-          "value": "Titan Capital 官方文章称 Winners Fund 继续支持 Mitigata，且早期已在其种子轮投资。",
-          "source_id": "titan_mitigata"
+          "field": "investment_approach",
+          "label": "官网自述的投资方式",
+          "value": "Titan Capital 官网称其与创业者从早期阶段合作。该表述是品牌官网的自我介绍。",
+          "source_id": "titan-capital-home-2026-10-03"
+        },
+        {
+          "field": "website_operator",
+          "label": "官网披露的网站运营主体",
+          "value": "Titan Capital 隐私页将 TITAN WINNERS FUND MANAGEMENT LLP 列为官网运营主体；该法律披露不单独说明各具体基金之间的管理安排。",
+          "source_id": "titan-capital-legal-2026-10-03"
         }
       ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Titan Capital 于 2026-06-23 发布的文章称 Titan Capital Winners Fund 继续支持 Mitigata，并称其早在种子轮即已投资。这是官网披露的单一组合案例。",
+          "source_id": "titan-capital-mitigata-2026-10-03"
+        },
         {
           "description": "融资来源记录：ContraVault AI · Pre-A轮 · 2026-06-17 · 本轮参投、种子轮领投 · $3.1 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-78278ca61a2d245e"
         }
       ],
       "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "当前仅核实到一项官方披露的被投企业后续融资活动。",
       "sources": [
         {
-          "source_id": "titan_mitigata",
-          "source_url": "https://www.titancapital.vc/blogs/mitigata",
-          "quote": "with Titan Capital Winners Fund continuing to back the company it first backed at seed.",
+          "source_id": "titan-capital-home-2026-10-03",
+          "source_url": "https://titancapital.vc/",
+          "source_title": "Titan Capital | Founder-First Venture Capital Firm in India",
+          "source_content_hash": "10d10d44ee3c17156272c5c0bba33b7576efd2156a14302873f1dcd2597aea31",
+          "quote": "We partner with entrepreneurs from day one.",
+          "quote_hash": "88d1f5ee3d36ce315d8a790d958f8aa06e38dfadd63b29f121ab2bfcefe67e39"
+        },
+        {
+          "source_id": "titan-capital-legal-2026-10-03",
+          "source_url": "https://titancapital.vc/privacy-policy",
+          "source_title": "Privacy Policy - Titan Capital",
+          "source_content_hash": "80245d62292d525ca75e356f12ed0f5c2896430fbf8fbe68e11805a99451b3f7",
+          "quote": "TITAN WINNERS FUND MANAGEMENT LLP is a limited liability partnership incorporated under the Limited Liability Partnership Act, 2008",
+          "quote_hash": "7c87831f9e599c4db8b9c1a1e5ff4fca9ccf05f33adc8725bfcd3b96a1b1a292"
+        },
+        {
+          "source_id": "titan-capital-mitigata-2026-10-03",
+          "source_url": "https://titancapital.vc/blogs/mitigata",
           "source_title": "Mitigata Raises $15M to Scale Cyber Resilience - Titan Capital",
           "source_content_hash": "de27c923fd0dc196a1e0877c988d7d1bda55451c639588fff0bb27de190a4513",
+          "quote": "with Titan Capital Winners Fund continuing to back the company it first backed at seed.",
           "quote_hash": "d5934cac9b01602bb085cc1a28df52835f23bc66e90f8ffacd02fc62cebf9215"
         },
         {
@@ -100063,7 +100041,7 @@
           "quote_hash": "d0fa13091e690219da3bfa96a5adbf73d65b2f105f7df58a18d94ce915e2e5ee"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-162eff554c44c1": {
       "profile_type": "unverified",
@@ -100510,23 +100488,31 @@
     "INV-0cad913ea0a2b6": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "本档案仅确认被投公司融资公告列示的参投关系；机构官网提及的管理规模、团队和投资策略未作独立核实，未纳入。",
-      "summary": "Bland 的 Series C 公司公告将 Archerman Capital 列为参投机构之一；公告称该轮由 Dell Technologies Capital 领投，Archerman Capital 并非领投方。",
+      "coverage_status": "researched",
+      "coverage_note": "使用 Archerman Capital 官网自述资料；网站显示的资产管理规模未列入档案，因为页面未给出其统计日期。",
+      "summary": "Archerman Capital 官网将其描述为全球成长股权投资机构，重点关注 AI、数据基础设施和网络安全等成长阶段公司；官网记载机构成立于 2018 年，总部位于波士顿，并在纽约市和旧金山设有投资团队。",
       "facts": [
         {
-          "field": "public_investment",
-          "label": "公开投资案例",
-          "value": "Bland 公司公告列出 Archerman Capital 为 5000 万美元 Series C 参投方；该轮由 Dell Technologies Capital 领投。",
-          "source_id": "bland_series_c"
+          "field": "investment_strategy",
+          "label": "投资方向与阶段",
+          "value": "官网称其关注 AI、数据基础设施、网络安全等领域的成长阶段公司，并采用其所称的研究驱动方式。",
+          "source_id": "archerman-home-2026-10-03"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立年份（官网自述）",
+          "value": "2018 年。",
+          "source_id": "archerman-home-2026-10-03"
+        },
+        {
+          "field": "headquarters",
+          "label": "总部（官网自述）",
+          "value": "美国波士顿；官网同时称投资团队分布在纽约市和旧金山。",
+          "source_id": "archerman-home-2026-10-03"
         }
       ],
       "milestones": [],
       "track_record": [
-        {
-          "description": "参投 Bland 的 5000 万美元 Series C；Bland 公告列明该轮由 Dell Technologies Capital 领投。",
-          "source_id": "bland_series_c"
-        },
         {
           "description": "融资来源记录：Bland · C轮 · 2026-06-16 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-a6233a9ab76850de"
@@ -100535,12 +100521,12 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "bland_series_c",
-          "source_url": "https://www.prnewswire.com/news-releases/bland-surpasses-100m-funding-with-new-series-c-to-advance-voice-ai-for-complex-high-stakes-conversations-302801583.html",
-          "source_title": "Bland Surpasses $100M Funding With New Series C to Advance Voice AI for Complex, High-Stakes Conversations",
-          "source_content_hash": "9dc77faf6936f9d751d45e084f61ffcc6a5df31f892b826d7ad11a977bbff51b",
-          "quote": "raised a $50 million Series C, underscoring its leadership position in voice AI for complex, real-world conversations. The round was led by Dell Technologies Capital, with participation from HubSpot Ventures, Archerman Capital, and Tribeca Venture Partners.",
-          "quote_hash": "244c90dada3286ff0a3f5e6df587562d6bb11ba50628fb7a255a5d444ac8a5b7"
+          "source_id": "archerman-home-2026-10-03",
+          "source_url": "https://www.archermancap.com/",
+          "source_title": "Archerman Capital - Research Driven",
+          "source_content_hash": "9f5465d7c21cefa2bc4c258c74f1d555a343156d8686e059392d96ed1cc55d22",
+          "quote": "Archerman Capital™ is a global growth equity investor",
+          "quote_hash": "1d261219e03d26b3769026c89925e54123f78c82e5ff119af34624a15b52e735"
         },
         {
           "source_id": "FISRC-a6233a9ab76850de",
@@ -104399,41 +104385,35 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Partech 的 NP Company 融资公告将 Cédric O 列为天使投资人，并称其为 Mistral AI 联合创始人。本档案仅记录这笔公开活动，不扩写其完整职业履历。",
-      "coverage_note": "投资关系与联合创始人身份均来自 Partech 官方融资公告；只确认 NP Company 这一笔公开参投。",
+      "coverage_note": "Partech 官方融资新闻稿将 Cédric O 列为 NP Company 本轮天使投资人之一；本档案只记该项投资活动，不扩写其完整履历。",
+      "summary": "Partech 2026 年 6 月关于 NP Company 600 万欧元 pre-seed 的官方新闻稿，将 Cédric O 列为天使投资人之一。本档案只记录这项公开活动，不把新闻稿中的其他人物简介扩展为完整个人履历。",
       "facts": [],
-      "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [
+      "milestones": [
         {
-          "organization": "Mistral AI",
-          "title": "联合创始人",
-          "period": "公告未披露任职时间",
-          "description": "Partech 官方融资公告将其标为 Mistral AI 联合创始人。",
-          "source_id": "npco_round"
+          "date": "2026-06-02",
+          "description": "Partech 关于 NP Company 600 万欧元 pre-seed 的官方公告将 Cédric O 列为天使投资人之一。",
+          "source_id": "partech-npco-cedric-o-2026-10-03"
         }
       ],
-      "education": [],
-      "experience_summary": "Partech 官方公告将其列为 NP Company 天使投资人，并称其为 Mistral AI 联合创始人。",
       "track_record": [
-        {
-          "description": "Partech 于 2026 年 6 月 2 日公告 NP Company 完成 600 万欧元 pre-seed 融资，并列 Cédric O 为天使投资人。",
-          "source_id": "npco_round"
-        },
         {
           "description": "融资来源记录：NP Company · 预种子轮 · 2026-06-02 · 本轮天使投资人 · €6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-5c311f61df097447"
         }
       ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "已核实资料限于 Partech 公告所列的一项天使投资活动。",
       "sources": [
         {
-          "source_id": "npco_round",
+          "source_id": "partech-npco-cedric-o-2026-10-03",
           "source_url": "https://partechpartners.com/news/np-co-raises-6m-pre-seed-to-bring-frontier-ai-to-industrial-engineering-backed-by-mistral-ai-founders",
-          "quote": "angel investors including Guillaume Lample and Cédric O (co-founders of Mistral AI)",
           "source_title": "NP CO RAISES €6M PRE-SEED TO BRING FRONTIER AI TO INDUSTRIAL ENGINEERING, BACKED BY MISTRAL AI FOUNDERS",
           "source_content_hash": "dd82ed805afc7603227df9dd50648a12d6f530458856d956cf641c0349004ccf",
-          "quote_hash": "5485ba71b9bb7333acbd59d8a7f90933d84911ec969a72698f964d66abc48f54"
+          "quote": "angel investors including Guillaume Lample and Cédric O",
+          "quote_hash": "f7762684163fcb89ccab87b1c2353d711dd18c68cf987f667bdf262b6c8057e1"
         },
         {
           "source_id": "FISRC-5c311f61df097447",
@@ -104444,7 +104424,7 @@
           "quote_hash": "4ff2124b6150046d1dcdd900fe8bc829931f0c4d8c8a2ba3892a8c7de6e12b05"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-477bda363991a5": {
       "profile_type": "organization",
@@ -104746,37 +104726,40 @@
       "profile_type": "person",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Archestra.AI 的官方种子轮公告将 Gerhard Eschelbeck 列为个人投资者，并注明其曾任 Google 首席信息安全官。本档案仅记录该次公开投资及公告披露的职业身份。",
-      "coverage_note": "职业称谓按 Archestra.AI 公告原文；不据此扩写其完整任职经历。",
-      "current_roles": [],
-      "career": [
-        {
-          "organization": "Google",
-          "title": "曾任首席信息安全官",
-          "period": "历史任职，起止时间未披露",
-          "description": "Archestra.AI 公告称 Gerhard Eschelbeck 曾任 Google CISO。",
-          "source_id": "archestra_round"
-        }
-      ],
-      "education": [],
-      "experience_summary": "企业 AI 初创公司公告确认其为种子轮个人投资者，并披露其曾任 Google CISO。",
+      "coverage_note": "Archestra 于 2026-06 的第一方融资公告仅确认一笔支持活动及一项既往职务；未找到足以整理其完整现任履历的第一方人物页面。",
+      "summary": "Archestra 官方 2026 年种子轮公告将 Gerhard Eschelbeck 列为该轮支持者，并称其曾任 Google 首席信息安全官（CISO）。本条只记录该笔支持活动和公告提到的既往职务。",
+      "facts": [],
+      "milestones": [],
       "track_record": [
         {
-          "description": "Archestra.AI 于 2026 年 6 月 2 日公告 1,000 万美元种子轮，列 Gerhard Eschelbeck 为投资者。",
-          "source_id": "archestra_round"
+          "description": "Archestra 2026-06-02 的官方公告将 Gerhard Eschelbeck 列入其 1,000 万美元种子轮支持者名单。",
+          "source_id": "archestra-seed-release-2026-10-03"
         },
         {
           "description": "融资来源记录：Archestra · 种子轮 · 2026-06-02 · 本轮天使投资人 · $10M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-50130a45d72291a2"
         }
       ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "Google",
+          "title": "首席信息安全官（CISO；Archestra 公告称其为前任）",
+          "period": "起止年份未披露；2026-06-02 公告时为既往职务",
+          "description": "Archestra 的官方融资公告如此介绍其 Google 经历。",
+          "source_id": "archestra-seed-release-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "经核验的资料限于 Archestra 官方融资公告列出的投资支持身份及其曾任 Google CISO。",
       "sources": [
         {
-          "source_id": "archestra_round",
+          "source_id": "archestra-seed-release-2026-10-03",
           "source_url": "https://archestra.ai/blog/archestra-announces-10m-seed",
-          "quote": "Gerhard Eschelbeck (former CISO at Google)",
           "source_title": "Archestra.AI announces $10M seed 🎉 | Blog | Archestra",
           "source_content_hash": "4a8ba80038ae127d4691cdd0ef476a2f3d32b5758f23ae11c1c4370be965bc72",
+          "quote": "Gerhard Eschelbeck (former CISO at Google)",
           "quote_hash": "72708fe1f64ecfe373bc41e1ff51f012f24e341815d942960eb5dd9e6b20906a"
         },
         {
@@ -104788,10 +104771,7 @@
           "quote_hash": "72708fe1f64ecfe373bc41e1ff51f012f24e341815d942960eb5dd9e6b20906a"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "facts": [],
-      "milestones": [],
-      "contacts": []
+      "last_verified_at": "2026-10-03"
     },
     "INV-545c8e937f39e5": {
       "profile_type": "person",
@@ -109200,23 +109180,14 @@
       "last_verified_at": "2026-09-28"
     },
     "INV-ee0ccf577258b0": {
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
       "profile_type": "person",
-      "summary": "Framer CEO 兼联合创始人 Jorn van Dijk 被 Modem 官方融资公告列入其 440 万美元融资的个人天使支持者名单。",
-      "coverage_note": "人物身份来自 Framer 官方人物专访；天使投资关系来自被投公司 Modem 的官方融资公告。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "Framer 官网 2026 年 2 月人物访谈确认其现任职务；其他履历只按访谈明确叙述整理。",
+      "summary": "Jorn van Dijk 是 Framer 的 CEO 和联合创始人。Framer 官网访谈介绍了他从传统平面设计、Sofa 与 Facebook 经历到创办并推动 Framer 转型为网站平台的路径。",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
       "track_record": [
-        {
-          "description": "Modem 官方公告将 Jorn van Dijk 列入该公司 440 万美元融资的天使支持者名单。",
-          "source_id": "jorn_modem_round"
-        },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
@@ -109226,22 +109197,40 @@
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "CEO and co-founder",
+          "organization": "Framer",
+          "source_id": "framer-jorn-interview-2026-10-03"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Facebook",
+          "title": "具体职务未披露",
+          "period": "任职超过两年；起止年份未披露",
+          "description": "Framer 官方访谈称他与联合创始人在 Facebook 工作两年多后离开并创业。",
+          "source_id": "framer-jorn-interview-2026-10-03"
+        },
+        {
+          "organization": "Sofa",
+          "title": "任职身份未进一步披露",
+          "period": "Facebook 之前；年份未披露",
+          "description": "Framer 官方访谈称他在阿姆斯特丹工作室 Sofa 任职，并作为首位员工参与多个软件产品。",
+          "source_id": "framer-jorn-interview-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "其公开职业经历主要在设计与软件产品创业；Framer 官方访谈描述了 Framer 从原型设计产品转向网站构建平台的过程。",
       "sources": [
         {
-          "source_id": "jorn_framer_identity",
+          "source_id": "framer-jorn-interview-2026-10-03",
           "source_url": "https://www.framer.com/blog/why-designers-should-become-founders/",
           "source_title": "From Mac Apps to a $2B Design Platform: Jorn van Dijk on Building Framer, Pivoting Under Pressure, and Designing in an AI World",
           "source_content_hash": "0fa0013a8366882e639cbf40ebfeafd0a2a757b49ff629ecfebe33622cdd12d6",
           "quote": "Framer CEO and co-founder Jorn van Dijk",
           "quote_hash": "01d0a1aec23730f41711562b10b460804da228b4371db7f9b21bb01f6332370d"
-        },
-        {
-          "source_id": "jorn_modem_round",
-          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
-          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
-          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
-          "quote": "Koen Bok and Jorn van Dijk (Framer)",
-          "quote_hash": "6924052e4067eb4a2eeeb8542068125fecde1b62dfdd7427afd77f9367652548"
         },
         {
           "source_id": "FISRC-ce83b857608dabeb",
@@ -109327,34 +109316,14 @@
       "last_verified_at": "2026-10-02"
     },
     "INV-d32bb4b3836ddb": {
-      "identity_status": "verified",
-      "coverage_status": "self_declared_affiliation",
       "profile_type": "person",
-      "coverage_note": "Koen Bok 的个人官网自述其目前参与 Framer，并与 Jorn 运营早期投资基金 Festina；Modem 官方融资公告将 Koen Bok 与 Jorn van Dijk 列入天使投资人名单。",
-      "summary": "Koen Bok 的个人官网自述其在 Framer 工作，并与 Jorn 运营早期基金 Festina。Modem 官方融资公告将 Koen Bok 与 Jorn van Dijk 列入天使投资人名单；本档案按本人公开简介记录其当前关联。",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "根据 Koen Bok 本人官网整理；页面未给出职务起止年份，故不推定任期。",
+      "summary": "Koen Bok 是 Framer 的创建者之一，也是早期基金 Festina 的共同管理者之一；其个人网站称他曾在 Facebook 从事产品设计，并共同创办 Sofa。",
       "facts": [],
       "milestones": [],
-      "contacts": [],
-      "current_roles": [
-        {
-          "organization": "Framer",
-          "title": "个人官网自述目前在 Framer 工作",
-          "source_id": "koen_self_bio"
-        },
-        {
-          "organization": "Festina",
-          "title": "个人官网自述与 Jorn 运营早期基金",
-          "source_id": "koen_self_bio"
-        }
-      ],
-      "career": [],
-      "education": [],
-      "experience_summary": "已核实资料包括本人对 Framer 与 Festina 的自述，以及 Modem 官方公告披露的天使投资活动；未补写未经来源支持的任职日期或基金规模。",
       "track_record": [
-        {
-          "description": "Modem 官方融资公告将 Koen Bok 与 Jorn van Dijk 列入天使投资人名单。",
-          "source_id": "modem_angel"
-        },
         {
           "description": "融资来源记录：Viktor · A轮 · 2026-05-20 · 本轮天使投资人 · €64.7 million ($75 million)。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ce83b857608dabeb"
@@ -109364,30 +109333,45 @@
           "source_id": "FISRC-9fd6ba5210b37fed"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "在 Framer 工作（个人简介未列正式职衔）",
+          "organization": "Framer",
+          "source_id": "koen-bok-personal-site-2026-10-03"
+        },
+        {
+          "title": "共同管理早期基金（个人简介表述）",
+          "organization": "Festina",
+          "source_id": "koen-bok-personal-site-2026-10-03"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Facebook",
+          "title": "Product Designer",
+          "period": "任职起止年份未披露",
+          "description": "本人简介称曾负责 Messages、Ads 与 Video 产品设计。",
+          "source_id": "koen-bok-personal-site-2026-10-03"
+        },
+        {
+          "organization": "Sofa",
+          "title": "Co-founder",
+          "period": "任职起止年份未披露",
+          "description": "本人简介称曾共同创办 Sofa。",
+          "source_id": "koen-bok-personal-site-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "个人简介描述其经历涵盖网页产品、产品设计、创业及早期投资；页面没有列出学历。",
       "sources": [
         {
-          "source_id": "koen_self_bio",
+          "source_id": "koen-bok-personal-site-2026-10-03",
           "source_url": "https://koenbok.com/",
           "source_title": "Koen Bok",
           "source_content_hash": "5add6cd29a080202e171885da275ddb2d2be0e18fa8c088d723db4a31da94fac",
-          "quote": "I also run an early stage fund Festina with Jorn",
-          "quote_hash": "f2fa5b6fb71807fa20a2adfaca947a8ce6f6eb4b419f1d7ae6091d2fd8b20af9"
-        },
-        {
-          "source_id": "framer_feature",
-          "source_url": "https://www.framer.com/blog/koen-jorn-framer-reloaded-first-of-kind/",
-          "source_title": "Koen &amp; Jorn: Framer Reloaded — First of Kind",
-          "source_content_hash": "6232048e902ec2407d27575d6e90b59fe555678de187a6c9a297254002155bce",
-          "quote": "In this First of Kind conversation, Koen Bok and Jorn van Dijk reflect on how Framer evolved from a prototyping tool into a full website platform",
-          "quote_hash": "6655e299456be43a4ff54159e63f438c3d9e352de8a757f9821b925934d084e6"
-        },
-        {
-          "source_id": "modem_angel",
-          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
-          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
-          "source_content_hash": "1fcd6e8a5bd85e1de48de50d890272ea31481d5ec39d8296080c54e61386027b",
-          "quote": "Koen Bok and Jorn van Dijk (Framer)",
-          "quote_hash": "6924052e4067eb4a2eeeb8542068125fecde1b62dfdd7427afd77f9367652548"
+          "quote": "I also run an early stage fund Festina with Jorn .",
+          "quote_hash": "d72e6c17c0134451f80a67ae67bad0d83ea40cf4a7cac6d5099ad571557fa809"
         },
         {
           "source_id": "FISRC-ce83b857608dabeb",
@@ -121370,15 +121354,17 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Normal Computing 的公司融资公告将 Brevan Howard Macro Venture Fund 列为参投方。本条仅记录该笔披露，不构成基金策略或完整投资组合介绍。",
-      "coverage_note": "仅归档 Normal Computing 官方融资披露列出的投资者名称；未取得该基金的官网或策略资料，不将 Brevan Howard 其他业务描述映射到此基金。",
+      "coverage_note": "Normal Computing 的公司融资公告将 Brevan Howard Macro Venture Fund 列为该轮新投资者。本档案仅记录此处公开活动，未补写该基金的完整组织背景或与其他 Brevan Howard 实体的关系。",
+      "summary": "Normal Computing 2026 年 3 月 25 日的融资公告将 Brevan Howard Macro Venture Fund 列为新投资者之一。本档案仅覆盖该条公开融资活动。",
       "facts": [],
-      "milestones": [],
-      "track_record": [
+      "milestones": [
         {
-          "description": "Normal Computing 公司融资公告将该基金列为新投资者。",
-          "source_id": "activity"
-        },
+          "date": "2026-03-25",
+          "description": "Normal Computing 的公司公告将 Brevan Howard Macro Venture Fund 列入新投资者名单。",
+          "source_id": "normal-computing-series-f-brevan-howard-macro-2026-10-03"
+        }
+      ],
+      "track_record": [
         {
           "description": "融资来源记录：Normal Computing · 其他融资 · 2026-03-25 · 本轮参投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-3c1b4f6326a3ee76"
@@ -121387,12 +121373,12 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "activity",
+          "source_id": "normal-computing-series-f-brevan-howard-macro-2026-10-03",
           "source_url": "https://www.prnewswire.com/news-releases/normal-computing-raises-50m-led-by-samsung-catalyst-to-accelerate-silicon-design-and-solve-ai-hardware-energy-crisis-302724819.html",
           "source_title": "NORMAL COMPUTING RAISES $50M LED BY SAMSUNG CATALYST TO ACCELERATE SILICON DESIGN AND SOLVE AI HARDWARE ENERGY CRISIS",
           "source_content_hash": "82274a635159b39ca0014f5c67a145d9bf7712c31d02a2519821f44be540a3e7",
-          "quote": "New investors also include Galvanize, Brevan Howard Macro Venture Fund, and ArcTern Ventures, alongside existing investors Celesta Capital, Drive Capital, Eric Schmidt's First Spark Ventures, and Micron Ventures.",
-          "quote_hash": "ace2c505954342f14be106f335c319907b33342a8a62e9f212abf4fd2c1a2721"
+          "quote": "New investors also include Galvanize, Brevan Howard Macro Venture Fund, and ArcTern Ventures",
+          "quote_hash": "7d30848d4032bd6588bf5eec9e1f9d436c2dab2b7a64fff2b7059850819ce0e8"
         },
         {
           "source_id": "FISRC-3c1b4f6326a3ee76",
@@ -122595,50 +122581,38 @@
     "INV-1e1047282e97de": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录Tech.eu报道的一笔融资参投活动及YunoJuno官网所载联合创始人身份，不推断当前职务或完整投资履历。",
-      "summary": "Tech.eu将Hugo Rodger Brown（YunoJuno联合创始人）列为First Concepts 2026年融资的参投者；YunoJuno官网也记载他为联合创始人。档案仅覆盖该笔公开活动。",
-      "current_roles": [],
-      "career": [
-        {
-          "organization": "YunoJuno",
-          "title": "联合创始人",
-          "period": "公司官网报道所述",
-          "description": "YunoJuno官网将Hugo Rodger-Brown列为联合创始人。",
-          "source_id": "PFSRC-2cdb0bd0482c9f-2"
-        }
-      ],
-      "education": [],
-      "experience_summary": "公开资料支持其曾任YunoJuno联合创始人，并记录其参与First Concepts 2026年融资。",
+      "coverage_status": "researched",
+      "coverage_note": "履历信息来自 YunoJuno 公司公告；该材料把其称为联合创始人，但没有披露任职起止时间或其当前职务。",
+      "summary": "YunoJuno 公司公告称 Hugo Rodger-Brown 为联合创始人；本档案仅记录这一有公司公告支持的履历信息，不据此推断其当前职务。",
       "facts": [],
       "milestones": [],
       "track_record": [
-        {
-          "description": "Tech.eu将Hugo Rodger Brown列入First Concepts的2026年融资参投者名单。",
-          "source_id": "PFSRC-2cdb0bd0482c9f-1"
-        },
         {
           "description": "融资来源记录：First Concepts · 预种子轮 · 2026-03-17 · 本轮参投（天使投资人） · $1,000,000。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-e713775ebfd9779c"
         }
       ],
       "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "YunoJuno",
+          "title": "联合创始人",
+          "period": "公司公告所述时期；起止时间未披露",
+          "description": "YunoJuno 公司公告在介绍创始人 Shib Mathew 后称 Hugo Rodger-Brown 为联合创始人。",
+          "source_id": "yunojuno-founder-announcement-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "已核验的公司公告确认其为 YunoJuno 联合创始人；未扩写其他任职或教育经历。",
       "sources": [
         {
-          "source_id": "PFSRC-2cdb0bd0482c9f-1",
-          "source_url": "https://tech.eu/2026/03/17/first-concepts-raises-1m-to-develop-ai-native-os-for-creative-work/",
-          "source_title": "First Concepts raises $1M to develop AI-native OS for creative work - Tech.eu",
-          "source_content_hash": "3397bb4f6c1f0f74e447b2202448967962971794e8f735775e52f7068746f20d",
-          "quote": "Additional participants included industry leaders such as Jez Jowett (former Managing Partner at Havas), Nathan McDonald (founder of We Are Social), Sean Williams and Sam Winward (partners at UNKNOWN), and Hugo Rodger Brown (founder of YunoJuno).",
-          "quote_hash": "c64604f98b7e82ec755b8b69af2b3ffad0f9f989ed22021119c000af7f5783c5"
-        },
-        {
-          "source_id": "PFSRC-2cdb0bd0482c9f-2",
+          "source_id": "yunojuno-founder-announcement-2026-10-03",
           "source_url": "https://www.yunojuno.com/blogs/press-release-yunojuno-nabs-depop-ceo-runar-reistrup",
           "source_title": "Press Release: YunoJuno nabs Depop CEO, Runar Reistrup | YunoJuno",
           "source_content_hash": "4cd5f79d0d2002a5f08c5368b569e96e2fcafaa19a58c5ffe0533190a6a13010",
-          "quote": "Shib Mathew, YunoJuno’s founder and former CEO has been appointed Executive Chairman and will continue to drive the company’s strategy alongside co-founder Hugo Rodger-Brown.",
-          "quote_hash": "e48576d1e032a9ce1b4af05633e3d8380814c1c63f3d7d44b8a0259757966575"
+          "quote": "co-founder Hugo Rodger-Brown",
+          "quote_hash": "b03ec5c82bc8ceff0b036b2396aed6a49dfd55b9dd650adf1bd5368d1505f31b"
         },
         {
           "source_id": "FISRC-e713775ebfd9779c",
@@ -122657,7 +122631,7 @@
           "quote_hash": "853c8dfd5e7614712460f71738ddc0d8f331570f34f00976f16c1ce5e64e9d09"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-39b71c4de33e49": {
       "profile_type": "person",
@@ -126378,37 +126352,44 @@
     "INV-21cd7e1263db5c": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "AgentMail 的官方种子轮公告将 Paul Copplestone 列为天使投资者，并称其为 Supabase CEO。本档案仅收录该次投资活动及公告披露的职业称谓。",
-      "coverage_note": "职位与投资活动均引自 AgentMail 官方公告；未补写未核实的履历或教育信息。",
-      "current_roles": [
-        {
-          "title": "CEO",
-          "organization": "Supabase",
-          "source_id": "agentmail_round"
-        }
-      ],
-      "career": [],
-      "education": [],
-      "experience_summary": "AgentMail 官方公告将其称为 Supabase CEO 和该轮天使投资者。",
+      "coverage_status": "researched",
+      "coverage_note": "Supabase 官方博客作者档案确认其现任职务；个人学历及此前工作经历未在该来源披露，保持为空。",
+      "summary": "Paul Copplestone 是 Supabase 的 CEO 和联合创始人。Supabase 官方博客作者档案以该职务标注其署名，并收录其发布的公司公告。",
+      "facts": [],
+      "milestones": [],
       "track_record": [
-        {
-          "description": "AgentMail 于 2026 年 3 月 10 日宣布 600 万美元种子轮，并将 Paul Copplestone 列为天使投资者。",
-          "source_id": "agentmail_round"
-        },
         {
           "description": "融资来源记录：AgentMail · 种子轮 · 2026-03-10 · 本轮天使投资人 · $6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f961f60a13274764"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "CEO and Co-Founder",
+          "organization": "Supabase",
+          "source_id": "supabase-paul-author-2026-10-03"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Supabase",
+          "title": "CEO and Co-Founder",
+          "period": "官方作者档案本次核验为现任；起任年份未披露",
+          "description": "该官方页面列出 Paul Copplestone 的职务和署名文章。",
+          "source_id": "supabase-paul-author-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "已核验的公开履历仅覆盖他在 Supabase 的联合创始人和 CEO 身份。",
       "sources": [
         {
-          "source_id": "agentmail_round",
-          "source_url": "https://www.agentmail.to/blog/agentmail-seed-launch",
-          "quote": "Paul Copplestone (CEO of Supabase)",
-          "source_title": "We&#x27;ve raised $6M to build the first email inboxes for AI agents. | AgentMail",
-          "source_content_hash": "5dc46511f099c91e752c698f7ed5a42cbf1d913d74cf9fe092908698d6d047f6",
-          "quote_hash": "590e01cb58f02b9ac0140085e5c7f2b647fd4f3649f6ef28e78d1134277be4c0"
+          "source_id": "supabase-paul-author-2026-10-03",
+          "source_url": "https://supabase.com/blog/authors/paul_copplestone",
+          "source_title": "Blog | Paul Copplestone",
+          "source_content_hash": "ebe891dcbc8a898dceb09a3b6eb8b1273982837c45be65f69a4e374566550843",
+          "quote": "Paul Copplestone CEO and Co-Founder",
+          "quote_hash": "692c269489f7659668f3e3a1fc2c806e21684f0fc1bb27d4703b1b0752263414"
         },
         {
           "source_id": "FISRC-f961f60a13274764",
@@ -126419,10 +126400,7 @@
           "quote_hash": "590e01cb58f02b9ac0140085e5c7f2b647fd4f3649f6ef28e78d1134277be4c0"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "facts": [],
-      "milestones": [],
-      "contacts": []
+      "last_verified_at": "2026-10-03"
     },
     "INV-0d4b6de91cfdd5": {
       "profile_type": "unverified",
@@ -129138,48 +129116,29 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "仅按 MatX 融资公告原文记录这一未具正式名称的基金标签；未推断其法律主体、基金条款或完整投资组合。",
-      "summary": "MatX 官方 Series B 公告将参投方之一描述为“Daniel Gross and Nat Friedman’s fund”。Daniel Gross 个人网站称其为早期投资人，常与 Nat Friedman 合作；所涉基金的正式名称、法律主体和完整组合未在这些页面披露。",
-      "facts": [
-        {
-          "field": "public_identity",
-          "label": "公开名称",
-          "value": "融资公告以 Daniel Gross and Nat Friedman’s fund 描述；正式基金名称未披露",
-          "source_id": "matx_series_b"
-        }
-      ],
+      "coverage_note": "MatX 官方文章使用 Daniel Gross and Nat Friedman’s fund 这一描述，但没有给出独立基金的正式名称、法律实体或管理关系。本条按来源原话记录该轮活动，不表示已确认其为独立法律载体。",
+      "summary": "MatX 官方 Series B 文章将 Daniel Gross and Nat Friedman’s fund 列入参与方。本档案采用文章中的描述记录该项活动，不据此认定存在具有独立正式名称的基金实体。",
+      "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "MatX 官方 Series B 文章以 Daniel Gross and Nat Friedman’s fund 的表述列出该轮参与方；文章没有给出该基金的正式名称或法律主体。",
+          "source_id": "matx-series-b-daniel-nat-fund-2026-10-03"
+        },
         {
           "description": "融资来源记录：MatX · B轮 · 2026-02-24 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-c6e81d3e611e6fe3"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网",
-          "value": "MatX Series B公告",
-          "url": "https://matx.com/research/series_b",
-          "source_id": "matx_series_b"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "matx_series_b",
+          "source_id": "matx-series-b-daniel-nat-fund-2026-10-03",
           "source_url": "https://matx.com/research/series_b",
           "source_title": "MatX One and our Series B | MatX",
           "source_content_hash": "5e3b77e276dc8bbe9929f6045e00b94923e684e271149ca3403f4641ecbf53d4",
-          "quote": "Daniel Gross and Nat Friedman ’s fund, Patrick and John Collison , Triatomic Capital , Harpoon Ventures , Andrej Karpathy , Dwarkesh Patel , and others.",
-          "quote_hash": "e97c2557f9fe2912efae5b050ea0a7713645bd26a5aadd26ca347e6f09ef603e"
-        },
-        {
-          "source_id": "daniel_home",
-          "source_url": "https://danielgross.com/",
-          "source_title": "Daniel Gross",
-          "source_content_hash": "dd7cdc1904f8b855733c97de769e93846f937550173f7c40c873258fbc2b01ca",
-          "quote": "Early stage venture investor, often with Nat Friedman .",
-          "quote_hash": "aa8f01c307ed2b0ec2524ff443dd7b4e182d6b5a06a848c49dda9fe2bcfa42dc"
+          "quote": "Daniel Gross and Nat Friedman ’s fund",
+          "quote_hash": "909bc4d72a701b02da1c948e6ec232eb66e9630c9579a95c65dc47b39f5f4bf7"
         },
         {
           "source_id": "FISRC-c6e81d3e611e6fe3",
@@ -139368,15 +139327,15 @@
     "INV-2cdb0bd0482c9f": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "TechCrunch在2024年All Hands AI融资报道中称Thom Wolf为Hugging Face联合创始人，并将其列为All Hands AI的天使投资人。",
-      "coverage_note": "仅记录2024年报道中的身份与一笔天使投资，不据此推断当前职务或完整投资履历。",
+      "coverage_status": "researched",
+      "coverage_note": "人物背景来自 Thomas Wolf 本人官网；网站列出的工作和项目按自述归属，不据此推断雇佣关系日期。",
+      "summary": "Thomas (Thom) Wolf 是 Hugging Face 联合创始人及 Chief Science Officer，参与开源、开放科学和机器人方向工作，并自述创建或参与了 Transformers、Datasets、Diffusers 等项目。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "2024年All Hands AI融资报道将Thom Wolf列为天使投资人。",
-          "source_id": "PFSRC-2cdb0bd0482c9f-1"
+          "description": "本人官网列举其创建或参与的 Hugging Face 开源项目，包括 Transformers、Datasets、Diffusers、Accelerate、DataTrove、smolagents 与 LeRobot。",
+          "source_id": "thom-wolf-personal-site-2026-10-03"
         },
         {
           "description": "融资来源记录：All Hands AI · 种子轮 · 2024-09-05 · 本轮天使投资人 · 500万美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -139384,26 +139343,38 @@
         }
       ],
       "contacts": [],
-      "current_roles": [],
+      "current_roles": [
+        {
+          "title": "Co-founder and Chief Science Officer",
+          "organization": "Hugging Face",
+          "source_id": "thom-wolf-personal-site-2026-10-03"
+        }
+      ],
       "career": [
         {
           "organization": "Hugging Face",
-          "title": "联合创始人",
-          "period": "2024年报道所述",
-          "description": "TechCrunch将Thom Wolf识别为Hugging Face联合创始人；未据此推断当前职务。",
-          "source_id": "PFSRC-2cdb0bd0482c9f-1"
+          "title": "Co-founder and Chief Science Officer",
+          "period": "起止年份未披露",
+          "description": "本人官网称他参与公司的开源、开放科学与机器人工作。",
+          "source_id": "thom-wolf-personal-site-2026-10-03"
         }
       ],
-      "education": [],
-      "experience_summary": "本档案仅依据2024年融资报道记录其联合创始人身份及天使投资活动。",
+      "education": [
+        {
+          "institution": "École Polytechnique",
+          "qualification": "毕业；专业/学位未在该段简介明确",
+          "source_id": "thom-wolf-personal-site-2026-10-03"
+        }
+      ],
+      "experience_summary": "其公开介绍涵盖物理研究背景、开源 AI 软件、开放科学、机器人和 AI for Science。",
       "sources": [
         {
-          "source_id": "PFSRC-2cdb0bd0482c9f-1",
-          "source_url": "https://techcrunch.com/2024/09/05/all-hands-ai-raises-5m-to-build-open-source-agents-for-developers/",
-          "source_title": "All Hands AI raises $5M to build open source agents for developers | TechCrunch",
-          "source_content_hash": "ea7102fdfd42c8c2ceba64e80a13fe27c0be77ad725ad1008a1f751f4eb6c904",
-          "quote": "The company also brought on a number of angels, including Hugging Face co-founder Thom Wolf, Cloudera co-founder Jeff Hammerbacher and PyTorch creator and Meta VP Soumith Chintala.",
-          "quote_hash": "8e0d8f82259f8bd9e9a3b686e7743d014af93c2e117e8550f90727467a820d52"
+          "source_id": "thom-wolf-personal-site-2026-10-03",
+          "source_url": "https://thomwolf.io/index.html",
+          "source_title": "Thomas Wolf",
+          "source_content_hash": "8c8d7e0c8aff8c4d49b4decbf0860cdfa3e151c7c08489f9f911e2748a4ca229",
+          "quote": "Thomas Wolf is co-founder and Chief Science Officer (CSO) of Hugging Face",
+          "quote_hash": "cb1676a28448bf4e02fd973bab1dbc9d7f9eddab25eb3fc4f20a17cb2024cb81"
         },
         {
           "source_id": "FISRC-9dd8630200082b4c",
@@ -139414,7 +139385,7 @@
           "quote_hash": "29169775ff06f1fab5a81a968ccc113cd5c8dfe5f41e7310a2cf0df3a336f540"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-3232226ecdd551": {
       "profile_type": "organization",
@@ -168044,39 +168015,42 @@
     "INV-272f30b28bbadb": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Entire 的官方融资公告将 Gergely Orosz 列为其投资人之一，并以 The Pragmatic Engineer 标识其公开身份。该档案仅收录一笔可追溯投资活动和出版身份。",
-      "coverage_note": "投资关系来自被投公司公告；The Pragmatic Engineer 作者页用于核对身份和其页面自述经历。该页面于 2021 年发布，未据此认定当前任职，也不推断其完整天使投资清单。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "The Pragmatic Engineer 的作者页将该刊物标注为 Gergely Orosz 撰写，并记载其此前在 Uber、Skype/Microsoft 和高增长初创公司担任工程经理及高级工程师。",
+      "coverage_status": "researched",
+      "coverage_note": "引用内容为作者本人于 2025-04-22 发布的文章；订阅数为文章当时的里程碑，不当作当前订阅数。",
+      "summary": "Gergely Orosz 是 The Pragmatic Engineer 的作者；他在 2025 年 4 月的一篇文章记录该通讯当时达到 100 万订阅者。",
+      "facts": [],
+      "milestones": [],
       "track_record": [
         {
-          "description": "Entire 官方公告列出 Gergely Orosz（The Pragmatic Engineer）为国际投资人之一。",
-          "source_id": "entire_round"
+          "description": "作者在 2025-04-22 的文章中记录 The Pragmatic Engineer 当时超过 100 万订阅者；该数字是文章发布时点的数据。",
+          "source_id": "pragmatic-engineer-gergely-2025-10-03"
         },
         {
           "description": "融资来源记录：Entire Inc. · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-62dc6d17f09030c0"
         }
       ],
+      "contacts": [],
+      "current_roles": [],
+      "career": [
+        {
+          "organization": "The Pragmatic Engineer",
+          "title": "作者/出版人（文章署名）",
+          "period": "文章发表于 2025-04-22",
+          "description": "本人文章回顾了该通讯自创办以来的发展，并记录其在 2025 年达到的订阅里程碑。",
+          "source_id": "pragmatic-engineer-gergely-2025-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "本次核验的个人自述材料为其技术行业通讯文章；其专业背景与其他任职经历不在该来源中扩写。",
       "sources": [
         {
-          "source_id": "entire_round",
-          "source_url": "https://entire.io/news/former-github-ceo-thomas-dohmke-raises-60-million-seed-round",
-          "quote": "Gergely Orosz (The Pragmatic Engineer)",
-          "source_title": "Former GitHub CEO Thomas Dohmke launches Entire with a landmark $60 million seed round to build the world&#x27;s next developer platform for the era of AI.",
-          "source_content_hash": "ae8d4241144e298ff494b110ee680f3535bbbf4ac5642cb12fe17ee91b6d6d7c",
-          "quote_hash": "eb8f91bf26370bbc841a98e19faaa237af8add9cf4840ed1c94f3fe710e11179"
-        },
-        {
-          "source_id": "pragmatic_profile",
-          "source_url": "https://newsletter.pragmaticengineer.com/p/coming-soon",
-          "quote": "Written by engineering manager and senior engineer Gergely Orosz",
-          "source_title": "Advice, observations and inspiration for engineering leaders",
-          "source_content_hash": "4937598912164be370d4714647916865e5e3d370f332879362a3c9466ad96437",
-          "quote_hash": "dc4c4c87dc5be2f238c3a0f9254c854633e7fbef21eea743265da6af1a8a3d55"
+          "source_id": "pragmatic-engineer-gergely-2025-10-03",
+          "source_url": "https://newsletter.pragmaticengineer.com/p/one-million",
+          "source_title": "More than one million readers - by Gergely Orosz",
+          "source_content_hash": "34a5a354401bb663956bb8e4cd69bc3b816e60b82abdbdd584dbff539296e6df",
+          "quote": "Late last week, The Pragmatic Engineer passed 1 million subscribers.",
+          "quote_hash": "d98c1698339190d049722416922249cb1aa0cad0dc7b4f28279320fff7722f20"
         },
         {
           "source_id": "FISRC-62dc6d17f09030c0",
@@ -168087,10 +168061,7 @@
           "quote_hash": "e1bb6bf6a1fb99395cbed7f3c6d9716506e83e6d47e4b6a3934e2998ce202c4c"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "facts": [],
-      "milestones": [],
-      "contacts": []
+      "last_verified_at": "2026-10-03"
     },
     "INV-9502a52ecbeda7": {
       "summary": "Goodyear Ventures 是 The Goodyear Tire & Rubber Company 旗下的企业风险投资基金，2020 年宣布启动，最初公布十年内向新出行解决方案投入 1 亿美元的目标。母公司资料称其投资种子至成长期的新出行科技；Goodyear Ventures 当前官网继续支持现有组合，并将关注点进一步转向可持续材料科学。官方公开案例包括参与 Gatik 融资及与其合作、参与 Nova Labs Series D，并列出 AmpUp、Helm.ai、Starship Technologies 等组合公司。1 亿美元为 2020 年公布的十年投资目标，不是当前 AUM 或单笔出资；公开资料未披露基金级回报。",
@@ -170136,31 +170107,44 @@
     "INV-2964b4d01ffc09": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "P-1 AI 的官方融资新闻稿将 Google 的 Jeff Dean 列为该公司的既有 AI 天使投资者。本档案只收录这笔公开投资活动，不扩写其履历或投资组合。",
-      "coverage_note": "活动由被投公司发布的融资新闻稿确认；未据此推断投资金额或其他个人投资。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "仅确认 P-1 AI 公告列出 Jeff Dean 为既有天使投资者。",
+      "coverage_status": "researched",
+      "coverage_note": "现任职务与职业经历来自 Google 官方作者档案，按本次页面核验日期记录。",
+      "summary": "Jeff Dean 是 Google Research 与 Google DeepMind 的 Chief Scientist；Google 官方简介称他于 1999 年加入 Google，此后担任多个领导职务并推动基础设施与人工智能领域创新。",
+      "facts": [],
+      "milestones": [],
       "track_record": [
-        {
-          "description": "P-1 AI 于 2026 年 7 月 29 日宣布 A 轮融资，并在新闻稿中将 Google 的 Jeff Dean 列为既有 AI 天使投资者。",
-          "source_id": "p1_round"
-        },
         {
           "description": "融资来源记录：P-1 AI, Inc. · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-272ed2cd5b9ebcfa"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Chief Scientist",
+          "organization": "Google Research and Google DeepMind",
+          "source_id": "google-jeff-dean-2026-10-03"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Google",
+          "title": "多个领导职务；当前为 Chief Scientist",
+          "period": "1999年至今（加入年份及现职由官网确认）",
+          "description": "Google 官方简介称其加入 Google 后担任多个领导职务，推动基础设施和 AI 创新。",
+          "source_id": "google-jeff-dean-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Google 官方作者档案将其职业经历定位于 Google 基础设施和人工智能技术发展。",
       "sources": [
         {
-          "source_id": "p1_round",
-          "source_url": "https://www.globenewswire.com/news-release/2026/07/29/3335235/0/en/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-company-s-board.html",
-          "quote": "Google’s Jeff Dean",
-          "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A",
-          "source_content_hash": "6120f182588f9251af6dad4d4abb18d6104e705f1916b6a8373e6ae8c1873152",
-          "quote_hash": "17c629f684d440b561dece0e8a12946b1a59fa3eba8a1f85805c31ba14d08b99"
+          "source_id": "google-jeff-dean-2026-10-03",
+          "source_url": "https://blog.google/authors/jeff-dean/",
+          "source_title": "Jeff Dean",
+          "source_content_hash": "38997527da7fd22b620a0b7a062939dbf294f0fcd6da97020d93064a8a6ff0fd",
+          "quote": "Chief Scientist, Google DeepMind and Google Research",
+          "quote_hash": "d7899feefb7fbb41afac59800d2e7d8673543f2bbeab73a7a86bad3b9465902c"
         },
         {
           "source_id": "FISRC-272ed2cd5b9ebcfa",
@@ -170171,10 +170155,7 @@
           "quote_hash": "07473e0f7e56e8a2b03c91dd4ccd56819af832a598f4158bd1ddbec80abc373c"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "facts": [],
-      "milestones": [],
-      "contacts": []
+      "last_verified_at": "2026-10-03"
     },
     "INV-12215fe701083d": {
       "profile_type": "unverified",
@@ -170419,12 +170400,16 @@
     "INV-0264b7753020e1": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "OpsLevel官方资料可确认John Laban的身份与公司职务，但该页面不证明其个人投资记录；此档案仅收录可核验职业信息，不扩写投资履历。",
-      "summary": "OpsLevel官方团队页列John Laban为公司CEO及联合创始人。当前核实内容限于该职业身份，个人投资经历未由该来源确认。",
+      "coverage_status": "researched",
+      "coverage_note": "OpsLevel 官网人物页将其列为 CEO 与联合创始人；Modem 第一方融资文章将 John Laban 与 Kenneth Rose（OpsLevel）列入支持者。档案不推断其投资金额或具体投资工具。",
+      "summary": "OpsLevel 官网将 John Laban 列为 CEO 和联合创始人。Modem 的融资文章将 John Laban 与 Kenneth Rose（OpsLevel）列入支持该公司的天使群体；公开来源未说明其个人出资金额。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Modem 的融资文章将 John Laban 和 Kenneth Rose（OpsLevel）列入其支持者名单；文章未披露 John Laban 的个人投资金额。",
+          "source_id": "modem-angel-round-2026-10-03"
+        },
         {
           "description": "融资来源记录：Modem · 历史轮次未披露 · 天使投资人（OpsLevel）。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9fd6ba5210b37fed"
@@ -170435,28 +170420,28 @@
         {
           "title": "CEO & Co-Founder",
           "organization": "OpsLevel",
-          "source_id": "role"
+          "source_id": "opslevel-about-2026-10-03"
         }
       ],
-      "career": [
-        {
-          "organization": "OpsLevel",
-          "title": "CEO & Co-Founder",
-          "period": "2026-10-02官网页面",
-          "description": "OpsLevel官方团队页将John Laban列为CEO及联合创始人。",
-          "source_id": "role"
-        }
-      ],
+      "career": [],
       "education": [],
-      "experience_summary": "已核实的公开职业信息仅包括OpsLevel现职；该来源没有个人投资履历或教育信息。",
+      "experience_summary": "已核验资料覆盖其 OpsLevel 联合创始人与 CEO 身份，以及 Modem 官方融资文章对其天使支持的提及。",
       "sources": [
         {
-          "source_id": "role",
+          "source_id": "opslevel-about-2026-10-03",
           "source_url": "https://www.opslevel.com/about",
           "source_title": "About Us | OpsLevel",
           "source_content_hash": "fc26d89eae2de2f1f7c4316ee1caa3441ca844d5a4db06f76f2dbe1c9ea37d52",
           "quote": "John Laban CEO & Co-Founder",
           "quote_hash": "82356af8b2562864e8e1286b317d7affa96ec8b1e5fbced657be5731cf454734"
+        },
+        {
+          "source_id": "modem-angel-round-2026-10-03",
+          "source_url": "https://modem.dev/blog/modem-raises-4-4m",
+          "source_title": "Modem raises $4.4M to build the auto-triage PM for the agentic coding era | Modem Blog",
+          "source_content_hash": "795309165c89beae2c0f10566341e38989cb94def4aec88cf6b0920808609e9a",
+          "quote": "John Laban and Kenneth Rose (OpsLevel)",
+          "quote_hash": "7b9e4823e10bdb7c661a9b549d007a6632ae645732d94a94b5bb5ab3e5dd8065"
         },
         {
           "source_id": "FISRC-9fd6ba5210b37fed",
@@ -178982,35 +178967,29 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "summary": "Axelera AI 的官方融资公告将 SiteGround Capital 列为其 2026 年融资的新投资方，并引用 SiteGround 创始人 Ivo Tzenov 对该投资的说明。目前只确认这笔参投活动，未找到足以建立独立机构背景的公开一手资料。",
-      "coverage_note": "仅展示被投公司公告中可确认的活动；公告所述整轮融资金额不代表 SiteGround Capital 的单独出资额。",
-      "facts": [
+      "coverage_note": "Axelera AI 的官方融资公告将 SiteGround Capital 列为新投资方，并刊载 SiteGround 创办人 Ivo Tzenov 的支持引言。来源没有完整说明 SiteGround 与 SiteGround Capital 的法律关系或该机构的投资体系，本档案只记录融资活动。",
+      "summary": "Axelera AI 2026 年 2 月的官方融资公告将 SiteGround Capital 列为新投资方，并刊载 SiteGround 创办人 Ivo Tzenov 的支持引言。本档案仅确认这一条公开活动，不延伸推断机构关系或完整投资组合。",
+      "facts": [],
+      "milestones": [
         {
-          "field": "investment_activity",
-          "label": "已披露参投",
-          "value": "Axelera AI 官方公告将 SiteGround Capital 列为新投资方；SiteGround 创始人 Ivo Tzenov 对投资发表评论。",
-          "source_id": "axelera_round"
+          "date": "2026-02-24",
+          "description": "Axelera AI 的官方融资公告将 SiteGround Capital 列为最新一轮融资的新投资方。",
+          "source_id": "axelera-new-investor-siteground-2026-10-03"
         }
       ],
-      "milestones": [],
-      "track_record": [
-        {
-          "description": "Axelera AI 于 2026 年 2 月 24 日公告融资超过 2.5 亿美元，并列 SiteGround Capital 为新投资方；该金额为整轮融资。",
-          "source_id": "axelera_round"
-        }
-      ],
+      "track_record": [],
       "contacts": [],
       "sources": [
         {
-          "source_id": "axelera_round",
+          "source_id": "axelera-new-investor-siteground-2026-10-03",
           "source_url": "https://axelera.ai/news/axelera-ai-secures-more-than-250-million-funding-on-global-commercial-growth",
-          "quote": "SiteGround Capital",
           "source_title": "Axelera AI Secures More Than $250 Million Funding on Global Commercial Growth",
           "source_content_hash": "1f61bd0824c52ca39352864dec2ee5bc84ea61fc5e75d3baf4205f39a92c684e",
-          "quote_hash": "89779008b372af5f2aa5abc05b8333ff74878c16f4aed4cb9aeb91b5c0a2d41a"
+          "quote": "with participation from prominent funds and accounts including BlackRock and SiteGround Capital as new investors",
+          "quote_hash": "845c57e1475c0209e52b9d739ebc47e1b9c908e53ef9964f291ae985be5418e9"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "INV-9e3dc13f2063b4": {
       "summary": "Impulse Space官方融资公告将Spring Tide列为其Series C既有投资方。公开来源没有充分说明此处Spring Tide对应的法律主体、管理团队或投资策略，因此本档案只确认这项具名参投记录。",

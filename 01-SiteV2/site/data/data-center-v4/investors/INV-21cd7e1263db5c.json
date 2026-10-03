@@ -139,37 +139,44 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "AgentMail 的官方种子轮公告将 Paul Copplestone 列为天使投资者，并称其为 Supabase CEO。本档案仅收录该次投资活动及公告披露的职业称谓。",
-      "coverage_note": "职位与投资活动均引自 AgentMail 官方公告；未补写未核实的履历或教育信息。",
-      "current_roles": [
-        {
-          "title": "CEO",
-          "organization": "Supabase",
-          "source_id": "agentmail_round"
-        }
-      ],
-      "career": [],
-      "education": [],
-      "experience_summary": "AgentMail 官方公告将其称为 Supabase CEO 和该轮天使投资者。",
+      "coverage_status": "researched",
+      "coverage_note": "Supabase 官方博客作者档案确认其现任职务；个人学历及此前工作经历未在该来源披露，保持为空。",
+      "summary": "Paul Copplestone 是 Supabase 的 CEO 和联合创始人。Supabase 官方博客作者档案以该职务标注其署名，并收录其发布的公司公告。",
+      "facts": [],
+      "milestones": [],
       "track_record": [
-        {
-          "description": "AgentMail 于 2026 年 3 月 10 日宣布 600 万美元种子轮，并将 Paul Copplestone 列为天使投资者。",
-          "source_id": "agentmail_round"
-        },
         {
           "description": "融资来源记录：AgentMail · 种子轮 · 2026-03-10 · 本轮天使投资人 · $6M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f961f60a13274764"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "CEO and Co-Founder",
+          "organization": "Supabase",
+          "source_id": "supabase-paul-author-2026-10-03"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Supabase",
+          "title": "CEO and Co-Founder",
+          "period": "官方作者档案本次核验为现任；起任年份未披露",
+          "description": "该官方页面列出 Paul Copplestone 的职务和署名文章。",
+          "source_id": "supabase-paul-author-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "已核验的公开履历仅覆盖他在 Supabase 的联合创始人和 CEO 身份。",
       "sources": [
         {
-          "source_id": "agentmail_round",
-          "source_url": "https://www.agentmail.to/blog/agentmail-seed-launch",
-          "quote": "Paul Copplestone (CEO of Supabase)",
-          "source_title": "We&#x27;ve raised $6M to build the first email inboxes for AI agents. | AgentMail",
-          "source_content_hash": "5dc46511f099c91e752c698f7ed5a42cbf1d913d74cf9fe092908698d6d047f6",
-          "quote_hash": "590e01cb58f02b9ac0140085e5c7f2b647fd4f3649f6ef28e78d1134277be4c0"
+          "source_id": "supabase-paul-author-2026-10-03",
+          "source_url": "https://supabase.com/blog/authors/paul_copplestone",
+          "source_title": "Blog | Paul Copplestone",
+          "source_content_hash": "ebe891dcbc8a898dceb09a3b6eb8b1273982837c45be65f69a4e374566550843",
+          "quote": "Paul Copplestone CEO and Co-Founder",
+          "quote_hash": "692c269489f7659668f3e3a1fc2c806e21684f0fc1bb27d4703b1b0752263414"
         },
         {
           "source_id": "FISRC-f961f60a13274764",
@@ -180,10 +187,7 @@
           "quote_hash": "590e01cb58f02b9ac0140085e5c7f2b647fd4f3649f6ef28e78d1134277be4c0"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "facts": [],
-      "milestones": [],
-      "contacts": []
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

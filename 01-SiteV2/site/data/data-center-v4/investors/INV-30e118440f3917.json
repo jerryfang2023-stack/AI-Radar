@@ -247,19 +247,28 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "仅记录 OpenRouter Series B 参投信息及 NVIDIA 官网对 NVentures 的身份说明；不扩展未核实的团队、规模或策略。",
-      "summary": "OpenRouter 官方公告将 NVentures 列为 Series B 参投者，并称其为 NVIDIA 的风险投资部门；NVIDIA 官网设有 NVentures 官方页面。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "NVIDIA官网确认其为企业风险投资部门。官网披露的组合与方向为精选展示，不代表完整业绩或投资组合清单。",
+      "summary": "NVentures 是 NVIDIA 的风险投资部门，投资解决复杂问题的科技团队，并结合 NVIDIA 的技术资源与生态提供长期合作支持。",
+      "facts": [
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "官网列示 AI 基础设施、机器人、数字生物学、应用人工智能与前沿计算等领域。",
+          "source_id": "nventures-official-2026-10-03"
+        },
+        {
+          "field": "investment_approach",
+          "label": "合作方式",
+          "value": "官网称其结合 NVIDIA 专业能力与资源，与团队建立长期合作关系。",
+          "source_id": "nventures-official-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "OpenRouter 的 Series B 公告列出 NVentures 为参投者。",
-          "source_id": "PFSRC-INV-30e118440f3917-1"
+          "description": "官网精选展示 Skild AI、Emerald AI、Edison Scientific 等组合案例；该展示不能视作完整投资组合或投资回报统计。",
+          "source_id": "nventures-official-2026-10-03"
         },
         {
           "description": "融资来源记录：Inherent · 种子轮 · 2026-08-23 · 本轮参投 · 5000万美元。这是本库收录的披露案例，不代表完整投资组合。",
@@ -274,23 +283,23 @@
           "source_id": "FISRC-7faa441242e94444"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "NVentures 官方网站",
+          "value": "https://www.nvidia.com/en-us/startups/nventures/",
+          "url": "https://www.nvidia.com/en-us/startups/nventures/",
+          "source_id": "nventures-official-2026-10-03"
+        }
+      ],
       "sources": [
         {
-          "source_id": "PFSRC-INV-30e118440f3917-1",
-          "source_url": "https://openrouter.ai/blog/announcements/series-b/",
-          "source_title": "OpenRouter Raises $113M Series B",
-          "source_content_hash": "dff2f02fe6db8142e67851a24303d2b0294a688f9e44de7d811c011089db954f",
-          "quote": "with participation from NVentures (NVIDIA’s venture capital arm)",
-          "quote_hash": "42db7a6f6c8287582d6a8bd41de7f18ef32e1a901eb6ac58f412583078e5f70c"
-        },
-        {
-          "source_id": "PFSRC-INV-30e118440f3917-2",
+          "source_id": "nventures-official-2026-10-03",
           "source_url": "https://www.nvidia.com/en-us/startups/nventures/",
           "source_title": "NVentures — NVIDIA’s Venture Capital Arm | NVIDIA",
           "source_content_hash": "9c771e9fbccc5260abed43fe702ef6ebf1f5a2cfbdcb9d5771a0d6c2af00a108",
-          "quote": "NVentures — NVIDIA’s Venture Capital Arm",
-          "quote_hash": "4a711eec508bb832b92f9228955386f9090bb96653abe1b71162de93a774aea1"
+          "quote": "NVentures is NVIDIA’s venture capital arm, dedicated to investing in technology visionaries who are solving complex problems.",
+          "quote_hash": "535eb1d3dd9a0ede7a4958f84a905ce5903d2d3de6018f2bd8a838faf2bba38b"
         },
         {
           "source_id": "FISRC-ed8df2c3d21fb938",
@@ -317,7 +326,7 @@
           "quote_hash": "3d0c810d42125265237196c8c5621a2f2429f63f0855aa37ffd80eedf9c62369"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

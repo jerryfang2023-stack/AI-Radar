@@ -123,31 +123,44 @@
     "public_profile": {
       "profile_type": "person",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "P-1 AI 的官方融资新闻稿将 Google 的 Jeff Dean 列为该公司的既有 AI 天使投资者。本档案只收录这笔公开投资活动，不扩写其履历或投资组合。",
-      "coverage_note": "活动由被投公司发布的融资新闻稿确认；未据此推断投资金额或其他个人投资。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "仅确认 P-1 AI 公告列出 Jeff Dean 为既有天使投资者。",
+      "coverage_status": "researched",
+      "coverage_note": "现任职务与职业经历来自 Google 官方作者档案，按本次页面核验日期记录。",
+      "summary": "Jeff Dean 是 Google Research 与 Google DeepMind 的 Chief Scientist；Google 官方简介称他于 1999 年加入 Google，此后担任多个领导职务并推动基础设施与人工智能领域创新。",
+      "facts": [],
+      "milestones": [],
       "track_record": [
-        {
-          "description": "P-1 AI 于 2026 年 7 月 29 日宣布 A 轮融资，并在新闻稿中将 Google 的 Jeff Dean 列为既有 AI 天使投资者。",
-          "source_id": "p1_round"
-        },
         {
           "description": "融资来源记录：P-1 AI, Inc. · 天使轮 · 天使投资人。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-272ed2cd5b9ebcfa"
         }
       ],
+      "contacts": [],
+      "current_roles": [
+        {
+          "title": "Chief Scientist",
+          "organization": "Google Research and Google DeepMind",
+          "source_id": "google-jeff-dean-2026-10-03"
+        }
+      ],
+      "career": [
+        {
+          "organization": "Google",
+          "title": "多个领导职务；当前为 Chief Scientist",
+          "period": "1999年至今（加入年份及现职由官网确认）",
+          "description": "Google 官方简介称其加入 Google 后担任多个领导职务，推动基础设施和 AI 创新。",
+          "source_id": "google-jeff-dean-2026-10-03"
+        }
+      ],
+      "education": [],
+      "experience_summary": "Google 官方作者档案将其职业经历定位于 Google 基础设施和人工智能技术发展。",
       "sources": [
         {
-          "source_id": "p1_round",
-          "source_url": "https://www.globenewswire.com/news-release/2026/07/29/3335235/0/en/engineering-ai-startup-p-1-ai-announces-its-series-a-financing-led-by-nea-adding-jeff-immelt-to-the-company-s-board.html",
-          "quote": "Google’s Jeff Dean",
-          "source_title": "Engineering AI startup, P-1 AI, Announces Its Series A",
-          "source_content_hash": "6120f182588f9251af6dad4d4abb18d6104e705f1916b6a8373e6ae8c1873152",
-          "quote_hash": "17c629f684d440b561dece0e8a12946b1a59fa3eba8a1f85805c31ba14d08b99"
+          "source_id": "google-jeff-dean-2026-10-03",
+          "source_url": "https://blog.google/authors/jeff-dean/",
+          "source_title": "Jeff Dean",
+          "source_content_hash": "38997527da7fd22b620a0b7a062939dbf294f0fcd6da97020d93064a8a6ff0fd",
+          "quote": "Chief Scientist, Google DeepMind and Google Research",
+          "quote_hash": "d7899feefb7fbb41afac59800d2e7d8673543f2bbeab73a7a86bad3b9465902c"
         },
         {
           "source_id": "FISRC-272ed2cd5b9ebcfa",
@@ -158,10 +171,7 @@
           "quote_hash": "07473e0f7e56e8a2b03c91dd4ccd56819af832a598f4158bd1ddbec80abc373c"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "facts": [],
-      "milestones": [],
-      "contacts": []
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -194,14 +194,21 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Quiet Capital官网称其团队由创业建设者组成，从公司创立之初投资有潜力的创始人。",
+      "coverage_status": "researched",
+      "coverage_note": "简介采用 Quiet Capital 官网的品牌自述；法律页面将网站运营方表述为 Quiet Capital Management LLC，官网页脚则使用 LP 字样，本档案不将不同法律名称合并为同一基金载体。",
+      "summary": "Quiet Capital 官网自述其团队以创业者身份投资创办人，并称从创业早期开始支持公司。网站法律条款将 Quiet Capital Management LLC 列为网站运营方；官网页脚另使用 Quiet Capital Management LP 名称，因此本档案只按 Quiet Capital 品牌及其官网自述记录。",
       "facts": [
         {
-          "field": "investment_stage",
-          "label": "投资阶段",
-          "value": "Day Zero / 创业起始阶段",
-          "source_id": "homepage"
+          "field": "investment_approach",
+          "label": "官网自述的投资方式",
+          "value": "官网称团队是创业者，并从创办人早期阶段开始投资支持。",
+          "source_id": "quiet-capital-home-2026-10-03"
+        },
+        {
+          "field": "website_operator",
+          "label": "网站法律运营方",
+          "value": "法律页面称 Quiet Capital Management LLC 运营 quiet.com；官网页脚另显示 Quiet Capital Management LP，本档案不据此判断不同实体的法律关系。",
+          "source_id": "quiet-capital-legal-2026-10-03"
         }
       ],
       "milestones": [],
@@ -215,23 +222,23 @@
           "source_id": "FISRC-7a85c433c7dbed44"
         }
       ],
-      "contacts": [
-        {
-          "kind": "website",
-          "label": "官网",
-          "value": "https://quiet.com/",
-          "source_id": "homepage",
-          "url": "https://quiet.com/"
-        }
-      ],
+      "contacts": [],
       "sources": [
         {
-          "source_id": "homepage",
+          "source_id": "quiet-capital-home-2026-10-03",
           "source_url": "https://quiet.com/",
           "source_title": "Quiet Capital",
           "source_content_hash": "0f191b8d401041fb47d249895ddb9f46bf89a4621ec3cafd1e2fed3fe3ab6403",
           "quote": "We are builders who invest in remarkable Founders from day zero.",
           "quote_hash": "a50b268c06bdbd161f1eef53af95e1b6b8ba20853c188c42fdcc09799e97f62b"
+        },
+        {
+          "source_id": "quiet-capital-legal-2026-10-03",
+          "source_url": "https://quiet.com/legal/",
+          "source_title": "Legal | Quiet Capital",
+          "source_content_hash": "b2784c78a48dd18695f8737c6c379d00e9edf743818436a1fe81c8848b86cce6",
+          "quote": "This Website is maintained and operated by Quiet Capital Management LLC.",
+          "quote_hash": "ac00ada87d14155ac4cb8d020a1ae4da9cd0e716d598adb9d9f4933e89273ff4"
         },
         {
           "source_id": "FISRC-92bdc04603fa5ff2",
@@ -250,8 +257,7 @@
           "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
         }
       ],
-      "last_verified_at": "2026-10-02",
-      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
+      "last_verified_at": "2026-10-02"
     }
   }
 }

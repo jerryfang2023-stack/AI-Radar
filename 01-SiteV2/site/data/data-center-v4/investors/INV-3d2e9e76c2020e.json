@@ -247,18 +247,27 @@
       "profile_type": "organization",
       "identity_status": "verified",
       "coverage_status": "activity_only",
-      "coverage_note": "该条仅对应 GitHub 开源安全计划的 Funding Partner 名单；不代表对 GitHub 或初创公司的股权投资，也不推断 Vercel 的投资组合。",
-      "summary": "GitHub 官方文章将 Vercel 列为 Secure Open Source Fund 项目的 Funding Partner。本档案只记录开源项目支持关系，不称其为股权投资。",
-      "current_roles": [],
-      "career": [],
-      "education": [],
-      "experience_summary": "",
-      "facts": [],
-      "milestones": [],
+      "coverage_note": "Vercel 官网确认其软件基础设施业务；Photon 的融资报道列出其参与一轮融资。该报道不足以证明 Vercel 运营独立投资部门或构成完整投资组合。",
+      "summary": "Vercel 官网将其描述为面向应用和智能体的基础设施平台。TechCrunch 于 2026-10 报道 Photon 种子轮时列出 Vercel 为参投方；本条只验证这项公开活动，不据此推断其存在独立 VC 部门。",
+      "facts": [
+        {
+          "field": "business_description",
+          "label": "官网自述业务",
+          "value": "Vercel 官网称其提供面向应用和智能体的基础设施平台。",
+          "source_id": "vercel-about-2026-10-03"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2026-10-01",
+          "description": "TechCrunch 报道 Photon 的 450 万美元种子轮有 Vercel 参与。",
+          "source_id": "photon-seed-investment-2026-10-03"
+        }
+      ],
       "track_record": [
         {
-          "description": "GitHub 官方文章在 Secure Open Source Fund 的 Funding Partners 名单中列出 Vercel；该项目伙伴身份不构成股权投资记录。",
-          "source_id": "PFSRC-INV-3d2e9e76c2020e-1"
+          "description": "TechCrunch 于 2026-10-01 报道 Photon 获得 450 万美元种子融资，并将 Vercel 列为参投方；该记录来自媒体报道。",
+          "source_id": "photon-seed-investment-2026-10-03"
         },
         {
           "description": "融资来源记录：Photon · 种子轮 · 2026-10-01 · 本轮参投 · $4.5 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -276,12 +285,20 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "PFSRC-INV-3d2e9e76c2020e-1",
-          "source_url": "https://github.blog/open-source/maintainers/what-50-open-source-projects-taught-us-about-security-in-the-ai-era/",
-          "source_title": "What 50 open source projects taught us about security in the AI era - The GitHub Blog",
-          "source_content_hash": "3c0bf05f730f866ecc287e72f6661d9835c25aa9e955ca784d331bf5c0c6259b",
-          "quote": "Funding Partners: Alfred P. Sloan Foundation, American Express, Chainguard, Datadog, Herodevs, Kraken, Mayfield, Microsoft, Shopify, Stripe, Superbloom, Vercel, Zerodha, 1Password",
-          "quote_hash": "57a3b10ecc8879baca9d411eb7712d020a1e7be6e0eca203be9e70272fc56400"
+          "source_id": "vercel-about-2026-10-03",
+          "source_url": "https://vercel.com/about",
+          "source_title": "About Us",
+          "source_content_hash": "819767e37f04e7d78ebe984bd8fc36bebff9dd97443f5ebe06f7b9dc6a18ca14",
+          "quote": "Vercel is agentic infrastructure for every app and agent.",
+          "quote_hash": "af541b0ad0556095e7d108921790f45a40da896afd8ac566cf2e11c23befc453"
+        },
+        {
+          "source_id": "photon-seed-investment-2026-10-03",
+          "source_url": "https://techcrunch.com/2026/10/01/photon-held-a-funeral-for-mobile-apps-now-it-has-4-5m-to-help-replace-them-with-agents/",
+          "source_title": "Photon held a funeral for mobile apps. Now it has $4.5M to help replace them with agents. | TechCrunch",
+          "source_content_hash": "cf9279f41fa85a9948d0e9afa26458c4119e068d3b48d36805a5b054a85ec8d2",
+          "quote": "with participation from Vercel, HSG (HongShan in Chinese), Z Fellows, Llama Ventures, Karman, and other angel investors.",
+          "quote_hash": "ebafb0191de59d7e514d8636cc771e52e8d02b1d0177e9cc8d7dca6fafaab974"
         },
         {
           "source_id": "FISRC-199e9ff185705c78",
@@ -308,7 +325,7 @@
           "quote_hash": "f19e506b82b1b918bdb7a06e640aa11deb246464c8b9f67fd17f635e8affe2d6"
         }
       ],
-      "last_verified_at": "2026-10-02"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {
