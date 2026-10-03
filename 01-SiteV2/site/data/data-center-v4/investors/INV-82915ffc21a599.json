@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Citic Securities 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-03；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "本档仅记录来源已公开披露的融资参与关系，不据此推断完整投资组合。",
+      "summary": "BlueFive Capital 官方公告称 CITIC Securities 共同领投 Kling AI 融资。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "BlueFive Capital 官方公告将 CITIC Securities 列为 Kling AI 融资轮共同领投方。",
+          "source_id": "PROFILE-f70c3548ffebcaef9a09"
+        },
         {
           "description": "融资来源记录：Kling · IPO · 2026-07-03 · 本轮领投 · $2 billion。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-b382348e8f96c9b9"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-f70c3548ffebcaef9a09",
+          "source_url": "https://bluefivecapital.com/en/newsroom/bluefive-capital-co-leads-3-billion-kling-ai-funding-round",
+          "source_title": "BlueFive Capital Co-leads $3 Billion… | BlueFive Capital",
+          "source_content_hash": "1d3522ff7337c2db9dc145eeeb49c4ea08c52b0ecfd75c3b120ebc41fc2f62d7",
+          "quote": "18 billion. The financing was jointly led by BlueFive Capital alongside CPE, Guofang Investment, Tencent, and CITIC Securities. More than ten additional institutional investors participated, including Chinese internet companies Baidu and Alibaba Cloud. The investment demonstrates BlueFive Capital's focus on foundational technology platfor",
+          "quote_hash": "4700dd4327d0ce97128b9377e049ee6f243a7b68cb2bf97b2297b05384817c5b"
+        },
         {
           "source_id": "FISRC-b382348e8f96c9b9",
           "source_url": "https://the-decoder.com/chinese-ai-video-maker-kling-raises-2-billion-as-it-gears-up-for-hong-kong-ipo",
@@ -161,7 +173,11 @@
           "quote_hash": "5888e5985b14641653ee65e4d3420c693c8d354d4bf2fc626e1bc2d956da8148"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }
