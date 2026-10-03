@@ -121,12 +121,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Array Ventures 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Array Ventures 官网强调支持 AI 创业者，除首笔投资外也帮助被投企业拓展业务与获取后续客户。",
+      "facts": [
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "AI",
+          "source_id": "PROFILE-5da9ec-1"
+        },
+        {
+          "field": "value_add",
+          "label": "投后支持",
+          "value": "除首笔投资外，提供业务拓展与后续客户支持",
+          "source_id": "PROFILE-5da9ec-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -135,7 +144,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-5da9ec-1",
+          "source_url": "https://www.array.vc/",
+          "source_title": "Array Ventures | Preseed &amp; Early Stage VC for Enterprise Software",
+          "source_content_hash": "906517f06a459f9d22cbb1676ff39608f518df9a9e65d327d7648353eec96fb1",
+          "quote": "We invest in founders building the future with AI. Beyond The First Check. Your First BD Hire And Partner For 2nd Wave Of Customers.",
+          "quote_hash": "e422b9ef844dcdc70a46315af2947aed37572d3d9fc2bb9abd9c0171c31bae1a"
+        },
         {
           "source_id": "FISRC-df6a9c9a32146320",
           "source_url": "https://www.sapiom.ai/resources/blog/series-a/",
@@ -145,7 +170,7 @@
           "quote_hash": "02c9a649b7ce91186d46cb72d8fc8879a34042794f4042cce69b95c457139a84"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

@@ -121,13 +121,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Abu Dhabi Growth Fund 当前按“投资组织”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "Abu Dhabi Growth Fund 的官方公司页自述其为 2021 年 7 月成立、由阿布扎比政府持有的增长型主权投资基金，投资私募股权、风险投资、对冲基金与公开市场股票。",
+      "facts": [
+        {
+          "field": "founded_date",
+          "label": "成立时间",
+          "value": "2021 年 7 月",
+          "source_id": "PROFILE-437c6b-1"
+        },
+        {
+          "field": "shareholder",
+          "label": "股东",
+          "value": "阿布扎比政府",
+          "source_id": "PROFILE-437c6b-1"
+        },
+        {
+          "field": "investment_strategy",
+          "label": "投资策略",
+          "value": "流动性及非流动性股权策略，覆盖私募股权、风险投资、对冲基金与公开市场股票",
+          "source_id": "PROFILE-437c6b-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2021-07",
+          "description": "官方公司页列示基金于 2021 年 7 月成立",
+          "source_id": "PROFILE-437c6b-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：Cerebras Systems · 历史轮次未披露 · Series F 领投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -135,7 +156,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "使用基金官方 LinkedIn 公司页自述；不补写当前团队或基金规模。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-437c6b-1",
+          "source_url": "https://www.linkedin.com/company/abu-dhabi-growth-fund",
+          "source_title": "Abu Dhabi Growth Fund (ADG) | LinkedIn",
+          "source_content_hash": "51e3d993390090a756d2daae49b282d81e897a24665a215f0cf637952da57280",
+          "quote": "Abu Dhabi Growth Fund (ADG) is a growth focused sovereign investment fund established in July 2021. ADG’s mandate is to pursue a differentiated strategy with the aim to generate high financial returns for its shareholder, the Abu Dhabi Government. With an agile approach to investing, ADG deploys capital primarily into illiquid and liquid equity strategies while being sector and geography agnostic. In line with its growth mandate, ADG invests mainly in private equity, venture capital, hedge funds and public equities.",
+          "quote_hash": "6b18fb27fd7e65c4d6fd93041efde524a41181c83999015703f18bede390c958"
+        },
         {
           "source_id": "FISRC-2c01dfb7ebd1357c",
           "source_url": "https://startupintros.com/orgs/cerebras-systems",
@@ -145,7 +182,7 @@
           "quote_hash": "965ca7480798e9b83737385b0b2a1d6a1f173bdf35e23549c426d1e924b82712"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     },
     "translations": {
       "zh-CN": {

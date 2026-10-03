@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Balderton Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-08-12；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Balderton Capital 官网将其定位为专注支持欧洲创立科技公司的风险投资机构。",
+      "facts": [
+        {
+          "field": "geography",
+          "label": "投资地域",
+          "value": "欧洲创立的科技公司",
+          "source_id": "PROFILE-56d91f-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "科技公司",
+          "source_id": "PROFILE-56d91f-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-56d91f-1",
+          "source_url": "https://www.balderton.com/",
+          "source_title": "Europe’s leading venture firm focused exclusively on backing European-founded tech companies",
+          "source_content_hash": "eb793ebb7d350c17a1a0a0471b6403ab7e50d7c1c098d2d82f8e1571c03a837c",
+          "quote": "Europe’s leading venture firm focused exclusively on backing European-founded tech companies",
+          "quote_hash": "a4a7151bc4d17bb3d0b34295d6f0dafbd4e5ef88d75e848e1227b14e06d39e16"
+        },
         {
           "source_id": "FISRC-94676d99b2defaa4",
           "source_url": "https://lovable.dev/blog/series-c",
@@ -161,7 +186,7 @@
           "quote_hash": "65256cbe24e687fbe64f7aa04cbc338e3a8d1fa61cb2828e035537449817738e"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

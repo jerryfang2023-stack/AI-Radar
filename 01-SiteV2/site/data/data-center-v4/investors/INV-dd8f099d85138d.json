@@ -137,12 +137,27 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Menlo Ventures' Anthology Fund 当前按“投资组织”收录。最新融资披露记录日期为 2026-09-24；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Menlo 官方页面将 Anthology Fund 描述为 Menlo Ventures 与 Anthropic 合作设立、规模 1 亿美元的 AI 创业投资计划。",
+      "facts": [
+        {
+          "field": "fund_relationship",
+          "label": "基金关系",
+          "value": "Menlo Ventures 与 Anthropic 合作设立",
+          "source_id": "PROFILE-85138d-1"
+        },
+        {
+          "field": "fund_size_at_launch",
+          "label": "发布时规模",
+          "value": "1 亿美元",
+          "source_id": "PROFILE-85138d-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "AI 初创企业",
+          "source_id": "PROFILE-85138d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +166,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-85138d-1",
+          "source_url": "https://menlovc.com/menlo-anthology-fund/",
+          "source_title": "Menlo Ventures | Menlo Anthology Fund",
+          "source_content_hash": "fb99a398e439ef390212c6806f53c0d86b244c6f49fa322b83ad7833894869c4",
+          "quote": "We’re thrilled to launch the Menlo Anthology Fund , a groundbreaking $100 million initiative created through a partnership between Menlo Ventures and Anthropic . We created this fund to fuel the next generation of AI startups",
+          "quote_hash": "4b12ed35c79f16fd3e04cbd14df71de7f67ba3fa8614a5386070676f9cf94318"
+        },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
@@ -161,7 +192,7 @@
           "quote_hash": "e8d789ab249fa928e0d66a63bbb6147e2d0006d2594656c7bfc6ce20b6d4d3ee"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

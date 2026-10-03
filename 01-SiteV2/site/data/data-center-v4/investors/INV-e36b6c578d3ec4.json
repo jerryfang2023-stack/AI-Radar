@@ -137,13 +137,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Eastern Bell Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-07-13；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
-      "milestones": [],
+      "summary": "钟鼎资本官方公司页自述其成立于 2010 年，专注早期及成长期投资，并以供应链为长期投资主题。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2010",
+          "source_id": "PROFILE-8d3ec4-1"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期及成长期",
+          "source_id": "PROFILE-8d3ec4-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资主题",
+          "value": "供应链效率、供应链安全与优势供应链",
+          "source_id": "PROFILE-8d3ec4-1"
+        }
+      ],
+      "milestones": [
+        {
+          "date": "2010",
+          "description": "钟鼎资本官方公司页自述成立于 2010 年",
+          "source_id": "PROFILE-8d3ec4-1"
+        }
+      ],
       "track_record": [
         {
           "description": "融资来源记录：PixVerse · C轮扩展 · 2026-07-13 · 本轮参投 · $439 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -151,7 +172,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "self_declared_affiliation",
+      "coverage_note": "投资策略和成立年份为官方 LinkedIn 公司页自述；未纳入该页面的资产管理规模等时效性指标。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-8d3ec4-1",
+          "source_url": "https://cn.linkedin.com/company/eastern-bell-capital",
+          "source_title": "Eastern Bell Capital 钟鼎资本 | 领英",
+          "source_content_hash": "f3ec8044bc220c141e40bc37113f556ed9f1ff9fa4d4e64d0566c2775c62c0f5",
+          "quote": "钟鼎资本成立于2010年，一家专注早期及成长期投资的风险投资机构。钟鼎资本坚信科技的驱动力，并以此为抓手，长期聚焦“供应链”的投资主题，坚持“供应链效率、供应链安全、优势供应链”三大投资主线",
+          "quote_hash": "6c5dcd9533b964b78731504d6c478ee38e453dd24c430b318d1cfc059092f6fb"
+        },
         {
           "source_id": "FISRC-002776ecfe7ba6a0",
           "source_url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b",
@@ -161,7 +198,7 @@
           "quote_hash": "e5a8e278829adf97feebafc8274fdaa9ac9b4ff38b56fb6bc45d2b16fb673068"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

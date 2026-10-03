@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Meach Cove Capital 当前按“投资组织”收录。最新融资披露记录日期为 2026-05-27；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Meach Cove Capital 官网称其为早期风险投资机构，投资食品与农业领域具有变革性想法的创始人。",
+      "facts": [
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": "早期",
+          "source_id": "PROFILE-fa653d-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "食品与农业",
+          "source_id": "PROFILE-fa653d-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-fa653d-1",
+          "source_url": "https://www.meachcovecapital.com/about",
+          "source_title": "Meach Cove Capital | Homepage",
+          "source_content_hash": "1fdd259ce19e95cdc7a33b8d63e8e5e9fa7106c9b6e43ecab5fa8fef2c49057b",
+          "quote": "Meach Cove Capital is an early-stage venture firm. We deploy capital with founders who have disruptive ideas in food and agriculture.",
+          "quote_hash": "77bafa11ca20c12ffdd4524bbd4814a543b8d9d53127bfa5774c26dded54e3a5"
+        },
         {
           "source_id": "FISRC-d8f2f6d7fc0871dd",
           "source_url": "https://techcrunch.com/2026/05/27/sond-a-sleep-tech-startup-from-boses-former-head-of-sleep-exits-stealth-with-7m/",
@@ -161,7 +186,7 @@
           "quote_hash": "356707d0ca4066d08b4a0c5aca9f7f97ed784cdc0c538e7483478f1dc4eab20f"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

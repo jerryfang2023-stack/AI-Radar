@@ -137,12 +137,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "organization",
-      "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "coverage_note": "当前档案由融资披露证据建立，仅展示可追溯的参投案例；机构背景、现任团队、公开业绩口径与联系方式仍需独立的一手资料核验。",
-      "summary": "Wonderstone Ventures 当前按“投资组织”收录。最新融资披露记录日期为 2026-01-22；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "summary": "Wonderstone Ventures 官网将其定位为 Murata Manufacturing 的企业风险投资部门，投资前沿电子技术。",
+      "facts": [
+        {
+          "field": "parent_company",
+          "label": "所属公司",
+          "value": "Murata Manufacturing",
+          "source_id": "PROFILE-9bbdb9-1"
+        },
+        {
+          "field": "focus_sectors",
+          "label": "投资方向",
+          "value": "前沿电子技术",
+          "source_id": "PROFILE-9bbdb9-1"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -151,7 +160,23 @@
         }
       ],
       "contacts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "",
       "sources": [
+        {
+          "source_id": "PROFILE-9bbdb9-1",
+          "source_url": "https://wonderstone-ventures.murata.com/en-us/",
+          "source_title": "Home | WONDERSTONE Ventures",
+          "source_content_hash": "b274028cd7109932338c3df539ccf619df363f1f18a0c58bbbf693dc0de68aca",
+          "quote": "WONDERSTONE Ventures, Murata Manufacturing's CVC (Corporate Venture Capital) office, aims to pave the way for the future through investments in cutting-edge electronics technologies.",
+          "quote_hash": "9d8562cf5e9d1128419dc4c11568e6505434570fd4635b7ae0324612710c13fa"
+        },
         {
           "source_id": "FISRC-d542f1ad9da7e0ac",
           "source_url": "https://dukecapitalpartners.duke.edu/news/neurophos-secures-110-million-series-a-to-launch-exaflop-scale-photonic-ai-chips/",
@@ -161,7 +186,7 @@
           "quote_hash": "50c11b90182d71d1c76feba7fea4ab7c8d121a9ce5b518cdb89537ef990c68d6"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }
