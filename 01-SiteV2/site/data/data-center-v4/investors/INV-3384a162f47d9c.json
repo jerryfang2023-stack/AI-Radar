@@ -137,14 +137,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "山东发展 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "山东发展官网披露集团法定名称和简称；融资报道将“山东发展”列为好心情本轮投资方。本档案不据此扩展其投资基金体系。",
+      "summary": "山东发展官网披露山东发展投资控股集团有限公司的简称为山东发展投资集团；好心情融资报道将“山东发展”列为投资方。",
+      "facts": [
+        {
+          "field": "legal_name",
+          "label": "主体名称",
+          "value": "山东发展投资控股集团有限公司",
+          "source_id": "shandong-development-official-disclosure-2026-10-03"
+        },
+        {
+          "field": "official_short_name",
+          "label": "官网简称",
+          "value": "山东发展投资集团",
+          "source_id": "shandong-development-official-disclosure-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "好心情融资报道将山东发展列为本轮投资方之一。",
+          "source_id": "good-mood-shandong-investor-2026-10-03"
+        },
         {
           "description": "融资来源记录：好心情（Good Mood） · 轮次未披露 · 2026-09-30 · 本轮参投 · 近3亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-fd10d8d231daf83d"
@@ -152,6 +169,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "shandong-development-official-disclosure-2026-10-03",
+          "source_url": "https://www.sdfzjt.com.cn/xxgkxq/2431.html",
+          "source_title": "山东国惠投资控股集团有限公司、山东发展投资控股集团有限公司2024年度财务等重大信息公告-山东发展投资控股集团有限公司",
+          "source_content_hash": "0f661fa290e5d977ec8ddc7630e72980d00b1fe3d86dc42a76301d748a49126c",
+          "quote": "中文名称：山东发展投资控股集团有限公司；简称：山东发展投资集团。",
+          "quote_hash": "7c47e4f82ea695a1b64156a1d69568a9cb6d4a1e7936a6f4845d4a5b4d974851"
+        },
+        {
+          "source_id": "good-mood-shandong-investor-2026-10-03",
+          "source_url": "https://caifuhao.eastmoney.com/news/20260930080532421516720",
+          "source_title": "【首发】好心情完成近3亿元新一轮融资，加速 AI 创新与国际化布局_财富号_东方财富网",
+          "source_content_hash": "0ec9e709866534f6e6bd48602fa2859c5167523d29d76e62f9e611a41477180c",
+          "quote": "本轮投资方包括爱美客集团、中信建投资本、无锡滨湖产业集团、山东发展、Unifuture Capital等。",
+          "quote_hash": "4c78d8de1b18274ce3ee3373bea795e0815c1dce5530d772881b1b4f98d5d9b0"
+        },
         {
           "source_id": "FISRC-fd10d8d231daf83d",
           "source_url": "https://caifuhao.eastmoney.com/news/20260930080532421516720",
@@ -161,7 +194,7 @@
           "quote_hash": "4c78d8de1b18274ce3ee3373bea795e0815c1dce5530d772881b1b4f98d5d9b0"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

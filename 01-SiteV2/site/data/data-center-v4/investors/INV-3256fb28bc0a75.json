@@ -192,14 +192,34 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Wellington Management 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-25；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Wellington Management官网介绍其为独立资产管理人并称公司创立于1928年。Nscale与Temporal的融资公告分别披露其参与Pre-IPO融资和Series E；档案只记录已披露案例，不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "1928",
+          "source_id": "wellington-about"
+        },
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "独立资产管理人",
+          "source_id": "wellington-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Nscale Pre-IPO可转换融资公告将Wellington Management列为参与方。",
+          "source_id": "nscale-preipo"
+        },
+        {
+          "description": "Temporal的Series E公告将Wellington Management列入联合领投方。",
+          "source_id": "temporal-series-e"
+        },
         {
           "description": "融资来源记录：Nscale Limited · Pre-IPO · 2026-09-25 · 本轮参投 · $3.36b。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-060d60f0bcc42b9d"
@@ -209,8 +229,40 @@
           "source_id": "FISRC-cf83d78a216a5edf"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.wellington.com/en",
+          "url": "https://www.wellington.com/en",
+          "source_id": "wellington-about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "wellington-about",
+          "source_url": "https://www.wellington.com/en",
+          "source_title": "Wellington Homepage | Wellington Management",
+          "source_content_hash": "8b3948d1c963164ae828de296554c18103d99dcd38462de1d3c1f7be48f1f054",
+          "quote": "Wellington Management is one of the world’s leading independent asset managers. Since our foundation in 1928",
+          "quote_hash": "f733351761c5f92fb063e02c1d23c734d54a5a4b5e94958834336123462f3778"
+        },
+        {
+          "source_id": "nscale-preipo",
+          "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
+          "source_title": "NSCALE RAISES $3.36B IN PRE-IPO CONVERTIBLE FINANCING",
+          "source_content_hash": "f4fe3307e8779335eb18e2af7ef056a29f7aa3a3faf9af431d5ef3e57ebaed94",
+          "quote": "Other investors that participated in the financing include Davidson Kempner Capital Management, Qube Research & Technologies (QRT), Context Capital Management, Longaeva Partners L.P., Wellington Management, Castleknight, Ghisallo Capital Management, LionTree Investment Fund, L.P., Javelin Venture Partners, and Irving Investors.",
+          "quote_hash": "ace3b22764e4f08f3fc5c81d26e7a6fd8ec20ea105eb51bef2bd5f9a84402626"
+        },
+        {
+          "source_id": "temporal-series-e",
+          "source_url": "https://temporal.io/blog/temporal-raises-usd550m-series-e-at-usd12-55b-valuation-ai",
+          "source_title": "Temporal raises $550M at a $12.55B valuation as demand grows for reliable AI infrastructure | Temporal",
+          "source_content_hash": "1e77bc133d0f3329ef5c4924908efa871b43bbf440d7e63983f9e4c748f04b27",
+          "quote": "with Wellington Management, Growth Equity at Goldman Sachs Alternatives, and Tiger Global",
+          "quote_hash": "4cf3706fc964361dc3534072bb63604edbf89a415a9529ff89990ba759378087"
+        },
         {
           "source_id": "FISRC-060d60f0bcc42b9d",
           "source_url": "https://www.prnewswire.com/news-releases/nscale-raises-3-36b-in-pre-ipo-convertible-financing-302890199.html",
@@ -228,7 +280,8 @@
           "quote_hash": "980328993f2a7bbb1914dc31bd9e8d1fcafa28f0cb9b2e3d257995aac7ca4c80"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

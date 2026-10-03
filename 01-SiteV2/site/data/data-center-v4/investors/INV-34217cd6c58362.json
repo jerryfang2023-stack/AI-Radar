@@ -137,21 +137,66 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Krungsri Finnovate 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-16；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Krungsri Finnovate官网将其定位为帮助初创企业发展的战略投资者，披露其通过企业风险投资、战略合作、加速器和生态支持开展工作。Whale融资公告称其参与该公司Series C3融资，并将其描述为Krungsri的CVC。",
+      "facts": [
+        {
+          "field": "investor_type",
+          "label": "投资者类型",
+          "value": "战略投资者及企业风险投资（CVC）",
+          "source_id": "krungsri-about"
+        },
+        {
+          "field": "startup_support",
+          "label": "初创企业支持方式",
+          "value": [
+            "企业风险投资",
+            "战略合作",
+            "加速器",
+            "生态支持"
+          ],
+          "source_id": "krungsri-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Whale的Series C3融资公告列Krungsri Finnovate为参与方。",
+          "source_id": "whale-series-c3"
+        },
         {
           "description": "融资来源记录：Whale · C3轮扩展 · 2026-07-16 · 本轮参投 · 4000万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f9990b5df3232b99"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.krungsrifinnovate.com/en/who-we-are",
+          "url": "https://www.krungsrifinnovate.com/en/who-we-are",
+          "source_id": "krungsri-about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "krungsri-about",
+          "source_url": "https://www.krungsrifinnovate.com/en/who-we-are",
+          "source_title": "Who We Are | Krungsri Finnovate &#x2014; Krungsri Group&#x2019;s Strategic CVC",
+          "source_content_hash": "f9c6c078c619e2d9108cc212ca2c4c87e817adf30676199129534f932dafc03a",
+          "quote": "Krungsri Finnovate is a strategic investor dedicated to helping startups grow and thrive. Our mission is to provide comprehensive strategic investments to help startups achieve their goals through corporate venture capital, strategic partnerships, accelerator, and ecosystem support.",
+          "quote_hash": "c660d305dc769f1598007ef413d67b766112b76e1021a5da64d2c6822c09a057"
+        },
+        {
+          "source_id": "whale-series-c3",
+          "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
+          "source_title": "Whale Raises $40M Series C3 Extension, Bringing Total Series C to $100M, to Scale Global Enterprise AI Operations",
+          "source_content_hash": "fd29af42c5533941d73e5d06dd5652d7804a4ce0686ac2e0b3affadb2aa5650b",
+          "quote": "with participation from Krungsri Finnovate (CVC arm of Krungsri / Bank of Ayudhya, part of MUFG), Singtel Innov8, Hyundai Motor Group, and Charisma Partners.",
+          "quote_hash": "dde1c4dd2a6245e6f4d63fc769c89a5e176ed79c08a384562bb12c5924a49e69"
+        },
         {
           "source_id": "FISRC-f9990b5df3232b99",
           "source_url": "https://www.prnewswire.com/news-releases/whale-raises-40m-series-c3-extension-bringing-total-series-c-to-100m-to-scale-global-enterprise-ai-operations-302827069.html",
@@ -161,7 +206,8 @@
           "quote_hash": "727e8861c3bf2fd6b5e5c95de43f0a0be73c4b5e6dde28a6b33ce045fa78147d"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

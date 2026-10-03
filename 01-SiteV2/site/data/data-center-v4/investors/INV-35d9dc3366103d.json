@@ -138,14 +138,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "标朴投资 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "协会公开名单可将标朴投资对应至上海标朴投资管理有限公司；名单发布于2019年，仅证明当时名称记录，不用于推断当前管理人登记状态。活动来源为2026年融资报道。",
+      "summary": "上海标朴投资管理有限公司出现在中基协2019年投资者保护倡议名单中；2026年融资报道将标朴投资列为息壤开物种子及天使轮跟投机构。",
+      "facts": [
+        {
+          "field": "listed_entity_name",
+          "label": "名单所列机构名称",
+          "value": "上海标朴投资管理有限公司（2019年协会名单）",
+          "source_id": "amac-biaopu-listing-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "投资界报道将标朴投资列为息壤开物种子及天使轮跟投机构。",
+          "source_id": "xirang-biaopu-round-2026-10-03"
+        },
         {
           "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41f074703465b30a"
@@ -153,6 +164,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "amac-biaopu-listing-2026-10-03",
+          "source_url": "https://www.amac.org.cn/xwfb/xhyw/201912/t20191231_15949.html",
+          "source_title": "私募基金管理人投资者保护倡议书第一阶段结束 自愿签署私募机构5210家",
+          "source_content_hash": "a21cb519d68dd0238e49b0cf223a0c93462feab406e8d7e6ea569ed120aed7f3",
+          "quote": "上海标朴投资管理有限公司",
+          "quote_hash": "a5d84485549f56257af6d40913f5a14bab4fb80fe4ee38d36f93be4f81bed3e9"
+        },
+        {
+          "source_id": "xirang-biaopu-round-2026-10-03",
+          "source_url": "https://news.pedaily.cn/202609/569562.shtml",
+          "source_title": "Physical AI创业公司息壤开物连获数亿元融资_投资界",
+          "source_content_hash": "3509ddaa62e1a32307152c9af7da0a282afa253b138776499d5bd3c215b70404",
+          "quote": "敦鸿资产领投，华控基金、三花控股、银杏谷资本、泽然资本、本坚基金、上海天使会、标朴投资等知名机构跟投",
+          "quote_hash": "5a4aa3f662d71f56069044a704a102f9b607946b17d4eb25215b86b75463420c"
+        },
         {
           "source_id": "FISRC-41f074703465b30a",
           "source_url": "https://m.pedaily.cn/news/569562",
@@ -162,7 +189,7 @@
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

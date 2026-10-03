@@ -164,12 +164,24 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "SOFINA 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "Sofina官网称其为上市投资公司，并披露通过私募基金投资与直接少数股权投资两种方式配置资本。档案不引用尚未由融资方公告核实的具体队列事件。",
+      "facts": [
+        {
+          "field": "private_fund_investing",
+          "label": "私募基金策略",
+          "value": "投资创投及成长型基金",
+          "source_id": "sofina-private-funds"
+        },
+        {
+          "field": "direct_investment",
+          "label": "直接投资策略",
+          "value": "直接投资私募资产的少数股权",
+          "source_id": "sofina-direct"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -181,8 +193,40 @@
           "source_id": "FISRC-ff92324bbd437a73"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.sofinagroup.com/en",
+          "url": "https://www.sofinagroup.com/en",
+          "source_id": "sofina-home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "sofina-home",
+          "source_url": "https://www.sofinagroup.com/en",
+          "source_title": "Sofina Group - Investment Holding Company",
+          "source_content_hash": "a7783488eecf7424c09e98f8bed1db30b91fad8f197dd178d80dcce32f887e27",
+          "quote": "Founded over a century ago, we have grown from our industrial beginnings into an investment company with family DNA and global reach.",
+          "quote_hash": "ed5b73a1eb49bbac08b27ba71fb3240a14677e01d859d0876613ce66a260d95c"
+        },
+        {
+          "source_id": "sofina-private-funds",
+          "source_url": "https://www.sofinagroup.com/en/about-sofina/strategy",
+          "source_title": "Sofina Group Strategy Overview",
+          "source_content_hash": "2f6f710a9c5eb0be350225d72062bd51000d357c3dae961b310a0c6c4c63266a",
+          "quote": "PRIVATE FUNDS Investments in top-tier venture and growth capital funds",
+          "quote_hash": "e45117a9d09f5b561245687f61b2dbc60a9d00ec199e961a764525b107ce26e4"
+        },
+        {
+          "source_id": "sofina-direct",
+          "source_url": "https://www.sofinagroup.com/en/about-sofina/strategy",
+          "source_title": "Sofina Group Strategy Overview",
+          "source_content_hash": "2f6f710a9c5eb0be350225d72062bd51000d357c3dae961b310a0c6c4c63266a",
+          "quote": "DIRECT Minority direct investments in private assets",
+          "quote_hash": "50ad8874149ec95a31049169899777e0349e17e8893bac57709f14a3d2b7e69c"
+        },
         {
           "source_id": "FISRC-56eb1a5ed11f0a41",
           "source_url": "https://news.pedaily.cn/202609/568677.shtml",
@@ -200,7 +244,8 @@
           "quote_hash": "c686a99961e6bfc4f86675aecc40f39a32f0a4740172fa4bf68e086089dc8382"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

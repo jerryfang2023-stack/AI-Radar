@@ -138,21 +138,55 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "泽然资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "泽然资本官网将其介绍为专注长期价值创造的创业投资基金管理机构。官网投资动态称被投企业息壤开物于2026年9月连获数亿元融资；档案仅记录页面可核实的信息。",
+      "facts": [
+        {
+          "field": "organization_type",
+          "label": "机构类型",
+          "value": "创业投资基金管理机构",
+          "source_id": "zeran-home"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "泽然资本官网称其已投企业息壤开物于2026年9月连获数亿元融资。",
+          "source_id": "zeran-home-investment-news"
+        },
         {
           "description": "融资来源记录：息壤开物 · 多轮融资 · 2026-09-23 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-41f074703465b30a"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.glosscapital.cn/",
+          "url": "https://www.glosscapital.cn/",
+          "source_id": "zeran-home"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "zeran-home",
+          "source_url": "https://www.glosscapital.cn/",
+          "source_title": "泽然资本-首页",
+          "source_content_hash": "f83d3d7ae2bf1c6d77167ba5ea3e8942e883e82015aba8f53b2b0175ab2c52df",
+          "quote": "泽然资本是一家专注于长期价值创造的创业投资基金管理机构，",
+          "quote_hash": "dee60a548d5c7874291b0a4543042fccc6380df338e0d263148862446a196d4c"
+        },
+        {
+          "source_id": "zeran-home-investment-news",
+          "source_url": "https://www.glosscapital.cn/",
+          "source_title": "泽然资本-首页",
+          "source_content_hash": "f83d3d7ae2bf1c6d77167ba5ea3e8942e883e82015aba8f53b2b0175ab2c52df",
+          "quote": "投资动态 |「华为大模型双子星」联手，泽然已投企业息壤开物连获数亿元融资",
+          "quote_hash": "a572d88234b67e1d4a13e4b1f345de0ca56065880c7952b74ae03fe7dedec239"
+        },
         {
           "source_id": "FISRC-41f074703465b30a",
           "source_url": "https://m.pedaily.cn/news/569562",
@@ -162,7 +196,8 @@
           "quote_hash": "dd477a61ea1ba275edd33cd5c862253fc7e7e35e1a91cdb31079479ed163154e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

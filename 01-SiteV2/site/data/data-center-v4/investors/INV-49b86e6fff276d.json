@@ -139,15 +139,34 @@
     "public_profile": {
       "profile_type": "organization",
       "identity_status": "verified",
-      "coverage_status": "activity_only",
-      "summary": "Basecamp Research 的公司融资更正稿将 Firebrand River Capital 列为 C 轮投资方。本条只记录该公司披露的参投关联。",
-      "coverage_note": "只保留 Basecamp Research 公司更正后的融资披露；未确认该名称对应的官网或基金策略。",
-      "facts": [],
+      "coverage_status": "researched",
+      "coverage_note": "监管文件和被投企业资料支持机构背景、管理人身份，发行人融资稿支持一项投资活动；未据此扩展完整基金规模或组合。",
+      "summary": "SEC 文件将 Firebrand River Capital, LLC 描述为一家 2021 年成立、专注生物技术的投资顾问公司；92Bio 官网称 Michael Bigham 为其创始人和 Managing General Partner。Basecamp Research 2026 年融资公告将其列为 Series C 融资支持方之一。",
+      "facts": [
+        {
+          "field": "firm_description",
+          "label": "机构背景",
+          "value": "以生物技术为重点的投资顾问公司",
+          "source_id": "firebrand-river-capital-sec-def14a-2024-2026-10-03"
+        },
+        {
+          "field": "founded_year",
+          "label": "成立年份",
+          "value": "2021",
+          "source_id": "firebrand-river-capital-sec-def14a-2024-2026-10-03"
+        },
+        {
+          "field": "leadership",
+          "label": "管理团队",
+          "value": "92Bio 官网称 Michael Bigham 是创始人和 Managing General Partner",
+          "source_id": "firebrand-river-capital-92bio-leadership-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
-          "description": "Basecamp Research 公司更正稿将 Firebrand River Capital 列为 C 轮投资方。",
-          "source_id": "activity"
+          "description": "Basecamp Research 的 Series C 融资公告将 Firebrand River Capital 列入支持方名单。",
+          "source_id": "basecamp-series-c-firebrand-river-2026-10-03"
         },
         {
           "description": "融资来源记录：Basecamp Research · C轮 · 2026-09-24 · 本轮参投 · $140M。这是本库收录的披露案例，不代表完整投资组合。",
@@ -157,12 +176,28 @@
       "contacts": [],
       "sources": [
         {
-          "source_id": "activity",
+          "source_id": "firebrand-river-capital-sec-def14a-2024-2026-10-03",
+          "source_url": "https://www.sec.gov/Archives/edgar/data/1509745/000110465924054088/tm242729-1_def14a.htm",
+          "source_title": "tm242729-1_def14a - none - 9.687533s",
+          "source_content_hash": "b2dca12aca9e3fb6638670c0a57b230376e4f431e00d4b909fbb875b2f21c2b1",
+          "quote": "Managing General Partner for Firebrand River Capital, LLC, a biotechnology-focused investment advisory firm founded in 2021.",
+          "quote_hash": "145840e129cf7af70cfd93380de8b1774b8ad2f0edb987c5fc8632e350eb8f37"
+        },
+        {
+          "source_id": "firebrand-river-capital-92bio-leadership-2026-10-03",
+          "source_url": "https://92biotech.com/leadership-team/",
+          "source_title": "Leadership Team - 92Bio",
+          "source_content_hash": "204bfc34508c43e2fd357ff205a26197d5d07cf033ac50eb18e06c49032d03a6",
+          "quote": "Mr. Bigham is a Founder and Managing General Partner of Firebrand River Capital LLC.",
+          "quote_hash": "f9f89ee9d11f89bff4c73c8336c523afb1e84d49fcdff667dd45a2201ef108df"
+        },
+        {
+          "source_id": "basecamp-series-c-firebrand-river-2026-10-03",
           "source_url": "https://www.prnewswire.com/news-releases/basecamp-research-raises-140m-to-advance-ai-designed-therapeutics-302887617.html",
           "source_title": "/C O R R E C T I O N -- Basecamp Research/",
           "source_content_hash": "4e9c66123d0f871688da11a6f6403edff9d86e25c822636aeda63c774ce1b4d4",
-          "quote": "th backing from NVIDIA, Menlo Ventures' Anthology Fund, Catalio Capital Management, European Tech Collective, Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, PostScriptum, Redalpine, The Rockefeller Foundation, Singular, Sovereign AI, and True Ventures. Funding will advance a pipeline of EDEN-designed therapeutics, starting with in vivo cell therapy, and",
-          "quote_hash": "c0de50e24e83249f287fbece8178556f05655688b1ae475d1e89c00e82b48374"
+          "quote": "Firebrand River Capital, Inception Fund, King Philanthropies, NATO Innovation Fund, PostScriptum, Redalpine, The Rockefeller Foundation",
+          "quote_hash": "52f9384cb20f43e5a7a547177b665c6528c0b32cb83347b84f3165dc130fef1e"
         },
         {
           "source_id": "FISRC-ecd2ea74974f4ff3",

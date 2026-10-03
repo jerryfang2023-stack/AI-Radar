@@ -248,12 +248,31 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "复旦科创 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-26；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "依据复旦大学校方新闻披露的基金设立、计划规模与重点领域整理；计划规模不代表已实缴金额或当前资产规模。",
+      "summary": "复旦大学校方新闻披露复旦科创母基金完成首关并正式成立，首期总规模目标为10亿元；另披露复旦科创投资基金计划规模为10亿元，关注科技成果转化领域。",
+      "facts": [
+        {
+          "field": "fund_first_close",
+          "label": "母基金首关",
+          "value": "超额完成5亿元首关目标（校方报道）",
+          "source_id": "fudan-official-fund-launch-2026-10-03"
+        },
+        {
+          "field": "planned_fund_size",
+          "label": "基金计划规模",
+          "value": "复旦科创投资基金计划规模10亿元",
+          "source_id": "fudan-official-fund-focus-2026-10-03"
+        },
+        {
+          "field": "investment_focus",
+          "label": "重点领域",
+          "value": "生命健康、集成电路、人工智能、新材料/新能源及未来产业",
+          "source_id": "fudan-official-fund-focus-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -271,6 +290,30 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "fudan-official-fund-launch-2026-10-03",
+          "source_url": "https://news.fudan.edu.cn/2024/1220/c3164a143694/page.htm",
+          "source_title": "复旦科创基金启航10亿助力科技成果转化",
+          "source_content_hash": "0f627088d328d235ef2defd8a2351abfa7257b032edf2fd9fddc7d09f1c28acc",
+          "quote": "复旦科创母基金超额完成 5 亿元首关目标，宣告正式成立；明年将完成二关目标，实现首期总规模 10 亿元。",
+          "quote_hash": "5bc136fe6430cd003147e6d139fd7576bc17670b73f13f176f32c4996092ae74"
+        },
+        {
+          "source_id": "fudan-official-fund-focus-2026-10-03",
+          "source_url": "https://news.fudan.edu.cn/2024/1220/c3164a143694/page.htm",
+          "source_title": "复旦科创基金启航10亿助力科技成果转化",
+          "source_content_hash": "0f627088d328d235ef2defd8a2351abfa7257b032edf2fd9fddc7d09f1c28acc",
+          "quote": "复旦科创投资基金在大会上启动，基金计划规模 10 亿元，聚焦生命健康、集成电路、人工智能、新材料 / 新能源及未来产业",
+          "quote_hash": "cc1de73b35d45f5e293ba64a462bdf56f73f8d42382ebbfd91046454e880b2c9"
+        },
+        {
+          "source_id": "fudan-official-overseas-fund-2026-10-03",
+          "source_url": "https://newsroom.fudan.edu.cn/_s3/2025/1203/c234a147599/page.psp",
+          "source_title": "祖泉研究院揭牌，复旦科创海外投资基金启动！2025年复旦科创大会举行",
+          "source_content_hash": "0037d9bcc52bbeba921d5b7d298f01853c9cbd6427f60bbc89c8399e5c41675a",
+          "quote": "复旦科创海外投资基金启动",
+          "quote_hash": "2e851b77e5a7fe0e058a5dd9e945098218bd3e79365d2da63a20e50d8b033896"
+        },
         {
           "source_id": "FISRC-642c04894404ccd5",
           "source_url": "https://news.pedaily.cn/202608/568123.shtml",
@@ -296,7 +339,7 @@
           "quote_hash": "6391f55307ce40a2a9defdb030519ca228b22b042481b06648b566dbcc9f9d2e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03"
     }
   }
 }

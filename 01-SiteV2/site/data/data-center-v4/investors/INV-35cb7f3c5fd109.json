@@ -137,21 +137,64 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "君联 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-21；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "summary": "君联资本官网称其成立于2001年4月，专注早期创业投资和成长期私募股权投资。其母公司官网曾披露君联资本联合领投数巅科技天使轮；该案例不代表完整投资组合。",
+      "facts": [
+        {
+          "field": "founded_month",
+          "label": "成立时间",
+          "value": "2001年4月",
+          "source_id": "legend-capital-about"
+        },
+        {
+          "field": "investment_stage",
+          "label": "投资阶段",
+          "value": [
+            "早期创业投资",
+            "成长期私募股权投资"
+          ],
+          "source_id": "legend-capital-about"
+        }
+      ],
       "milestones": [],
       "track_record": [
+        {
+          "description": "联想控股官网2023年7月披露，君联资本联合领投数巅科技天使轮。",
+          "source_id": "shudian-seed"
+        },
         {
           "description": "融资来源记录：数巅智能 · 多轮融资 · 2026-09-21 · 本轮参投 · 数亿元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-f5fa738edf400dda"
         }
       ],
-      "contacts": [],
+      "contacts": [
+        {
+          "kind": "website",
+          "label": "官方网站",
+          "value": "https://www.legendcapital.com.cn/",
+          "url": "https://www.legendcapital.com.cn/",
+          "source_id": "legend-capital-about"
+        }
+      ],
       "sources": [
+        {
+          "source_id": "legend-capital-about",
+          "source_url": "https://www.legendcapital.com.cn/",
+          "source_title": "君联资本",
+          "source_content_hash": "555eabeb0f3d14f391598742aa267a4851d93f443f0491c0f00a35874efc4dd8",
+          "quote": "君联资本成立于2001年4月，是中国领先的、专注于早期创业投资以及成长期私募股权投资的专业投资机构。",
+          "quote_hash": "0a2b9ba8862f7257b2c78adf26dd9e8da0720449898c65d66ed9aeac3c97a72e"
+        },
+        {
+          "source_id": "shudian-seed",
+          "source_url": "https://www.legendholdings.com.cn/News/detail.aspx?contentid=2201&nodeid=1124&page=ContentPage",
+          "source_title": "【产业孵化与投资】数巅科技完成数亿元天使轮融资，君联资本联合领投 - 中文网站",
+          "source_content_hash": "5c08fcfb1f5906a7c7729e2f8705d520f0bd87f37250532172e0ad40ca4280c9",
+          "quote": "数巅科技完成数亿元天使轮融资，君联资本联合领投",
+          "quote_hash": "e2c4fcd7b8651a99815b47b40b3bca40581b60828132debf5baca1120458ed69"
+        },
         {
           "source_id": "FISRC-f5fa738edf400dda",
           "source_url": "https://news.pedaily.cn/202609/569430.shtml",
@@ -161,7 +204,8 @@
           "quote_hash": "b98c030161f5126c41d6af31e8c235113c3824f7c1ef7dac35c4ad75b1e1f96f"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "coverage_note": "本档案包含官网、本人公开资料或一手披露核验内容；详细来源和原文摘录见下方。"
     }
   }
 }

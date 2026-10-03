@@ -162,12 +162,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Funplus 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
-      "facts": [],
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "researched",
+      "coverage_note": "仅记录 FunPlus 官网对其投资活动和 Kingsglory 定位的自述，不推断投资组合规模或第三方基金结构。",
+      "summary": "FunPlus 官网称其自2014年起投资全球创新团队，并介绍 Kingsglory 为其面向跨平台游戏工作室的投资出版品牌。",
+      "facts": [
+        {
+          "field": "investment_activity_start_year",
+          "label": "投资活动起始年份",
+          "value": "2014（官网自述）",
+          "source_id": "funplus-ventures-portfolio-2026-10-03"
+        },
+        {
+          "field": "investment_focus",
+          "label": "投资方向",
+          "value": "全球创新团队；Kingsglory 聚焦跨平台游戏工作室",
+          "source_id": "funplus-kingsglory-investment-label-2026-10-03"
+        }
+      ],
       "milestones": [],
       "track_record": [
         {
@@ -181,6 +194,22 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "funplus-ventures-portfolio-2026-10-03",
+          "source_url": "https://funplus.com/ventures-portfolio/",
+          "source_title": "Ventures portfolio - FunPlus",
+          "source_content_hash": "bc08ea220429bb9e808dee34ed7f0e0b3e62c398df5982bbccd32f720828437c",
+          "quote": "Since 2014, we have been investing in innovative teams around the world.",
+          "quote_hash": "960f19ee0386a194259c0d66ac30d45b83e662dfbb091204b8efc66875525957"
+        },
+        {
+          "source_id": "funplus-kingsglory-investment-label-2026-10-03",
+          "source_url": "https://funplus.com/aniimo-revealed-at-xbox-games-showcase/",
+          "source_title": "ANIIMO REVEALED AT XBOX GAMES SHOWCASE - FunPlus",
+          "source_content_hash": "c330312e3b10694643f6a287d3df8524787144f9a4edeea27473544d7de570ea",
+          "quote": "Kingsglory is a new publishing label established by FunPlus, focused on investing in innovative studios building IP for cross-platform games that push the boundaries of graphics and technology.",
+          "quote_hash": "5e390e2f9fb826e5b16e179801d2f85f15999b6f6648b9f37872d355fcc9195b"
+        },
         {
           "source_id": "FISRC-7a614400d44a7041",
           "source_url": "https://news.pedaily.cn/202604/562366.shtml",
