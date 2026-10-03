@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import { isMainModule } from "./lib/module-entry.mjs";
 
+import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
 import { fileURLToPath } from "node:url";
@@ -20,12 +21,14 @@ function git(cwd, args, { allowFailure = false } = {}) {
 }
 
 function normalized(value) {
-  return path.resolve(value).toLocaleLowerCase();
+  const resolved = path.resolve(value);
+  const canonical = fs.existsSync(resolved) ? fs.realpathSync.native(resolved) : resolved;
+  return process.platform === "win32" ? canonical.toLocaleLowerCase() : canonical;
 }
 
 function isInside(root, candidate) {
-  const relative = path.relative(path.resolve(root), path.resolve(candidate));
-  return Boolean(relative) && !relative.startsWith("..") && !path.isAbsolute(relative);
+  const relative = path.relative(normalized(root), normalized(candidate));
+  return Boolean(relative) && relative !== ".." && !relative.startsWith(`..${path.sep}`) && !path.isAbsolute(relative);
 }
 
 function parseWorktrees(output) {
