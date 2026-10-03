@@ -33,6 +33,32 @@ jobs:
           node-version: "22"
           cache: npm
       - run: npm ci
+      - name: Install verified DuckDB CLI for real query regressions
+        shell: python
+        run: |
+          import hashlib, io, os, pathlib, platform, urllib.request, zipfile
+          assets = {
+            "Linux": ("linux", "1f2fa724fb054b3dbe1a9cbd13de5b76997d850e7087ec762ba88db04e0180cf"),
+            "Windows": ("windows", "09e27c773eaab396754cbaa8fdbc5055c0006db4a579439839c7bb671894610f"),
+          }
+          system, expected = assets[platform.system()]
+          url = f"https://github.com/duckdb/duckdb/releases/download/v1.5.4/duckdb_cli-{system}-amd64.zip"
+          with urllib.request.urlopen(url, timeout=120) as response:
+            archive = response.read()
+          assert hashlib.sha256(archive).hexdigest() == expected, "DuckDB download checksum mismatch"
+          directory = pathlib.Path(os.environ["RUNNER_TEMP"]) / "guanlan-duckdb-1.5.4"
+          directory.mkdir(exist_ok=True)
+          executable = "duckdb.exe" if system == "windows" else "duckdb"
+          with zipfile.ZipFile(io.BytesIO(archive)) as bundle:
+            matches = [name for name in bundle.namelist() if pathlib.PurePosixPath(name).name == executable]
+            assert len(matches) == 1, "DuckDB executable missing or ambiguous"
+            target = directory / executable
+            target.write_bytes(bundle.read(matches[0]))
+          target.chmod(0o755)
+          with open(os.environ["GITHUB_PATH"], "a", encoding="utf-8") as output:
+            output.write(str(directory) + "\n")
+          with open(os.environ["GITHUB_ENV"], "a", encoding="utf-8") as output:
+            output.write("DUCKDB_BIN=" + str(target) + "\n")
       - name: Assert actual Skill release snapshot
         env:
           GUANLAN_SKILL_STORE: ${{ github.workspace }}/agent-workflow/skills
@@ -55,7 +81,7 @@ jobs:
       - run: npm run test:skill-ops
       - run: node --test agent-workflow/tools/tests/data-lake-v4-convergence.test.mjs
       - run: npm run test:ops-v2
-      - run: node --test agent-workflow/tools/tests/guanlan-evidence-projection.test.mjs
+      - run: node --test agent-workflow/tools/tests/guanlan-evidence-projection.test.mjs agent-workflow/financing/tests/vault-incremental-pipeline.test.mjs agent-workflow/financing/tests/foundation-dashboard.test.mjs
       # Validate the committed OPS projection before merge, not only at Pages deployment.
       - run: npm run test:ops-unified
       - run: npm run test:funding-insights

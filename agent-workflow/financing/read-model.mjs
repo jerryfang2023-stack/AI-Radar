@@ -26,6 +26,30 @@ export const SCHEMAS = {
   id_aliases: { kind:'VARCHAR', old_id:'VARCHAR', target_id:'VARCHAR' },
 };
 
+// Views are application projections over accepted financing events. Amount
+// status and currency remain separate; bounds/ranges are never treated as exact.
+export const QUERY_VIEWS = {
+  company_round_history: `SELECT e.*, c.name AS company_name,
+    row_number() OVER (PARTITION BY e.company_id ORDER BY e.announced_at,e.card_id) AS round_ordinal
+    FROM funding_events e JOIN companies c USING(company_id)`,
+  investment_relationships: `SELECT p.*, e.company_id, c.name AS company_name,
+    e.announced_at,e.round,e.market,e.sector_id,e.currency,e.amount_status
+    FROM investment_participations p JOIN funding_events e USING(card_id) JOIN companies c USING(company_id)`,
+  market_sector_statistics: `SELECT market,sector_id,subsector_id,currency,amount_status,
+    count(*) AS event_count,count(DISTINCT company_id) AS company_count,
+    count(amount_value) AS numeric_amount_count,
+    sum(CASE WHEN amount_status='exact' AND currency<>'' THEN amount_value END) AS exact_amount_total
+    FROM funding_events GROUP BY market,sector_id,subsector_id,currency,amount_status`,
+  monthly_financing_statistics: `SELECT substr(announced_at,1,7) AS month,market,currency,amount_status,
+    count(*) AS event_count,count(DISTINCT company_id) AS company_count,
+    sum(CASE WHEN amount_status='exact' AND currency<>'' THEN amount_value END) AS exact_amount_total
+    FROM funding_events GROUP BY substr(announced_at,1,7),market,currency,amount_status`,
+  financing_query_quality: `SELECT count(*) AS event_count,
+    count(*) FILTER (WHERE amount_value IS NULL) AS unknown_numeric_amount_count,
+    count(*) FILTER (WHERE currency='') AS unknown_currency_count,
+    count(*) FILTER (WHERE announced_at='') AS unknown_date_count FROM funding_events`,
+};
+
 export function projectReadModel(catalog) {
   if (!Array.isArray(catalog.cards) || !Array.isArray(catalog.event_cards)) throw new Error('explicit_financing_subjects_and_events_required');
   const tables = Object.fromEntries(Object.keys(SCHEMAS).map(name => [name, []]));
@@ -80,6 +104,7 @@ const sqlString = value => `'${String(value).replaceAll('\\','/').replaceAll("'"
 export function verifyReadModel(release) {
   const manifest=JSON.parse(fs.readFileSync(path.join(release,'manifest.json'),'utf8'));
   if(manifest.version!==VERSION || json(manifest.files.map(f=>f.table).sort())!==json(Object.keys(SCHEMAS).sort())) throw new Error('financing_read_model_contract_mismatch');
+  if(json(manifest.views)!==json(Object.keys(QUERY_VIEWS)))throw new Error('financing_read_model_view_contract_mismatch');
   for(const file of manifest.files) {
     const bytes=fs.readFileSync(path.join(release,`${file.table}.jsonl`));
     const rows=bytes.toString('utf8').trim().split('\n').filter(Boolean).map(line=>JSON.parse(line));
@@ -103,7 +128,7 @@ export function buildReadModel({root,output,input=path.join(root,'01-SiteV2/site
   const lock=path.join(output,'build.lock'); let fd;
   try { fd=fs.openSync(lock,'wx'); } catch (error) { if(error.code==='EEXIST')throw new Error('financing_read_model_build_busy');throw error; }
   const release=path.join(output,'releases',releaseId), temp=`${release}.${process.pid}.tmp`;
-  const updatePointer=()=>{const pointer=path.join(output,`current.${process.pid}.tmp`);fs.writeFileSync(pointer,json({version:VERSION,releaseId,inputHash})+'\n');fs.renameSync(pointer,path.join(output,'current.json'));};
+  const updatePointer=()=>{const body=json({version:VERSION,releaseId,inputHash})+'\n',current=path.join(output,'current.json');if(fs.existsSync(current)&&fs.readFileSync(current,'utf8')===body)return;const pointer=path.join(output,`current.${process.pid}.tmp`);fs.writeFileSync(pointer,body);fs.renameSync(pointer,current);};
   try {
     if(fs.existsSync(release)) {const accepted=verifyReadModel(release);if(accepted.inputHash!==inputHash || accepted.releaseId!==releaseId)throw new Error('financing_read_model_release_mismatch');updatePointer();return {...accepted,reused:true};}
     fs.mkdirSync(temp,{recursive:true});
@@ -119,6 +144,7 @@ export function buildReadModel({root,output,input=path.join(root,'01-SiteV2/site
         statements.push(`CREATE TABLE ${name} (${Object.entries(columns).map(([k,t])=>`${k} ${t}`).join(',')});`);
         if(tables[name].length) statements.push(`INSERT INTO ${name} SELECT ${Object.entries(columns).map(([k,t])=>`CAST(${k} AS ${t})`).join(',')} FROM read_json_auto(${sqlString(path.join(temp,`${name}.jsonl`))},format='newline_delimited');`);
       }
+      for(const [name,query] of Object.entries(QUERY_VIEWS))statements.push(`CREATE VIEW ${name} AS ${query};`);
       const result=spawnSync(duckdb,[path.join(temp,'finance.duckdb'),'-c',statements.join('\n')],{encoding:'utf8',windowsHide:true,maxBuffer:4*1024*1024});
       if(result.error || result.status!==0) throw new Error(`financing_duckdb_build_failed:${result.error?.message || result.stderr}`);
       const counts=spawnSync(duckdb,[path.join(temp,'finance.duckdb'),'-readonly','-json','-c',Object.keys(SCHEMAS).map(name=>`SELECT '${name}' AS name,count(*) AS rows FROM ${name}`).join(' UNION ALL ')],{encoding:'utf8',windowsHide:true});
@@ -126,7 +152,7 @@ export function buildReadModel({root,output,input=path.join(root,'01-SiteV2/site
     }
     const commit=spawnSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8',windowsHide:true});
     if(commit.status!==0) throw new Error('financing_read_model_source_commit_missing');
-    const manifest={version:VERSION,releaseId,inputHash,sourceCommit:commit.stdout.trim(),taxonomyVersion:catalog.meta.taxonomy_version,latestDate:catalog.meta.latest_date,subjectCount:catalog.cards.length,eventCount:catalog.event_cards.length,database:database?'finance.duckdb':null,databaseHash:database?hash(fs.readFileSync(path.join(temp,'finance.duckdb'))):null,files};
+    const manifest={version:VERSION,releaseId,inputHash,sourceCommit:commit.stdout.trim(),taxonomyVersion:catalog.meta.taxonomy_version,latestDate:catalog.meta.latest_date,subjectCount:catalog.cards.length,eventCount:catalog.event_cards.length,database:database?'finance.duckdb':null,databaseHash:database?hash(fs.readFileSync(path.join(temp,'finance.duckdb'))):null,files,views:Object.keys(QUERY_VIEWS)};
     fs.writeFileSync(path.join(temp,'manifest.json'),json(manifest)+'\n');
     // The pointer only advances after the complete immutable release is validated.
     verifyReadModel(temp);

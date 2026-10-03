@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 import fs from "node:fs";
+import {writeVaultIfChanged,semanticVaultContent} from './lib/incremental-vault-write.mjs';
+import {authoredEvidenceContent,isEvidenceManagedPath} from './lib/guanlan-evidence-projection.mjs';
 import {rewriteVaultLinks} from "./lib/guanlan-vault-layout.mjs";
 import path from "node:path";
 import {
@@ -60,7 +62,12 @@ function write(relativePath, content) {
     throw new Error(`Refusing to write outside Guanlan Vault: ${relativePath}`);
   }
   fs.mkdirSync(path.dirname(output), { recursive: true });
-  fs.writeFileSync(output, `${rewriteVaultLinks(content).trimEnd()}\n`, "utf8");
+  const next=rewriteVaultLinks(content);
+  // Evidence sync owns its overlay. Keep it when the underlying generated
+  // content is unchanged; the evidence stage independently updates its refs.
+  const baseUnchanged=relativePath.endsWith('.md') && fs.existsSync(output)
+    && semanticVaultContent(authoredEvidenceContent(fs.readFileSync(output,'utf8'))).trimEnd()===semanticVaultContent(next).trimEnd();
+  if(!baseUnchanged)writeVaultIfChanged(output,next);
   generatedFiles.push(relativePath.replaceAll("\\", "/"));
 }
 
@@ -657,6 +664,7 @@ write(GUANLAN_VAULT_PATHS.workspace, `${yaml("工作区", "human-maintained")}# 
 }
 
 const currentGeneratedFiles = new Set([...generatedFiles, ".guanlan-generated.json"]);
+for(const relativePath of previousGeneratedFiles)if(isEvidenceManagedPath(relativePath) || relativePath==='.guanlan-domains.json')currentGeneratedFiles.add(relativePath);
 for (const relativePath of previousGeneratedFiles) {
   if (currentGeneratedFiles.has(relativePath) || relativePath.startsWith("90-工作区/")) continue;
   const stalePath = path.resolve(vaultRoot, relativePath);

@@ -1,12 +1,13 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import {writeVaultIfChanged,semanticVaultContent} from './lib/incremental-vault-write.mjs';
 import {resolveGuanlanVaultRoot,GUANLAN_VAULT_LAYOUT_VERSION} from './guanlan-vault-paths.mjs';
 import {isMainModule} from './lib/module-entry.mjs';
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
 const VERSION_ALGORITHM='content-without-generated-update-1';
 function contentHash(bytes) {
-  const text=bytes.toString('utf8').replace(/^---\r?\n([\s\S]*?)\r?\n---/u,(_,yaml)=>`---\n${yaml.replace(/\r\n/gu,'\n').split('\n').filter(line=>!/^updated:\s*\d{4}-\d{2}-\d{2}\s*$/u.test(line)).join('\n')}\n---`);
+  const text=semanticVaultContent(bytes.toString('utf8'));
   return hash(text);
 }
 const domainVersion=(files,semantic)=>hash(JSON.stringify(semantic?files.map(file=>({path:file.path,contentHash:file.contentHash})):files));
@@ -33,7 +34,7 @@ export function buildVaultDomains(vaultRoot) {
     groups[domain].push({path:entry,sha256:hash(bytes),contentHash:contentHash(bytes)});
   }
   const domains=Object.fromEntries(Object.entries(groups).map(([name,files])=>[name,{fileCount:files.length,contentHash:domainVersion(files,true),files}]));
-  fs.writeFileSync(path.join(vaultRoot,'.guanlan-domains.json'),JSON.stringify({schemaVersion:'GUANLAN-VAULT-DOMAINS-1',versionAlgorithm:VERSION_ALGORITHM,layoutVersion:GUANLAN_VAULT_LAYOUT_VERSION,domains},null,2)+'\n');
-  manifest.generatedFiles=[...new Set([...manifest.generatedFiles,'.guanlan-domains.json'])].sort();fs.writeFileSync(file,JSON.stringify(manifest,null,2)+'\n');return domains;
+  writeVaultIfChanged(path.join(vaultRoot,'.guanlan-domains.json'),JSON.stringify({schemaVersion:'GUANLAN-VAULT-DOMAINS-1',versionAlgorithm:VERSION_ALGORITHM,layoutVersion:GUANLAN_VAULT_LAYOUT_VERSION,domains},null,2));
+  manifest.generatedFiles=[...new Set([...manifest.generatedFiles,'.guanlan-domains.json'])].sort();writeVaultIfChanged(file,JSON.stringify(manifest,null,2));return domains;
 }
 if(isMainModule(import.meta.url))console.log(JSON.stringify(buildVaultDomains(resolveGuanlanVaultRoot(process.cwd()))));

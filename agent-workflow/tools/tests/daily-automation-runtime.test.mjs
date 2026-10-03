@@ -417,7 +417,8 @@ test("Vault refresh uses an isolated origin/main worktree and leaves supervision
   const sync = read("sync-guanlan-vault-from-main.mjs");
   const supervision = read("write-daily-supervision-report.mjs");
   const vaultGate = read("assert-guanlan-vault.mjs");
-  assert.match(sync, /git[^]*worktree[^]*add[^]*--detach[^]*origin\/main/u);
+  assert.match(sync, /payload\.source_commit[^]*rev-parse[^]*origin\/main/u);
+  assert.match(sync, /git[^]*worktree[^]*add[^]*--detach[^]*payload\.source_commit/u);
   assert.match(sync, /build-guanlan-vault\.mjs/u);
   assert.match(sync, /sync-guanlan-evidence\.mjs/u);
   assert.match(sync, /assert-guanlan-vault\.mjs/u);

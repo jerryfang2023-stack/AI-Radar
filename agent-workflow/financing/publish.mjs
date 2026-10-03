@@ -48,8 +48,9 @@ if (args.get('dry-run') === 'true') {
     const plans = [
       {id:'data_lake', commands:[['agent-workflow/tools/sync-light-data-lake.mjs','--v4-only=true',lake],['agent-workflow/tools/assert-data-lake-v4.mjs',lake]]},
       {id:'financing_read_model', commands:[['agent-workflow/financing/read-model.mjs',`--output=${readModelOutput}`]]},
-      {id:'vault', commands:[['agent-workflow/tools/sync-guanlan-vault-from-main.mjs',`--date=${date}`,`--runtime-dir=${directory}`]]},
-      {id:'portal', commands:[['agent-workflow/tools/assert-funding-insights-v1.mjs',`--date=${date}`],[path.join(portal,'scripts/publish-from-wavesight.mjs'),`--wavesight-repo=${checkout}`]]},
+      {id:'vault', commands:[['agent-workflow/tools/sync-guanlan-vault-from-main.mjs',`--date=${date}`,`--runtime-dir=${directory}`,`--source-commit=${sha}`]]},
+      {id:'editorial_review', commands:[[path.join(portal,'scripts/publish-from-wavesight.mjs'),`--wavesight-repo=${checkout}`,'--review-only=true']]},
+      {id:'portal', commands:[['agent-workflow/tools/assert-funding-insights-v1.mjs',`--date=${date}`],[path.join(portal,'scripts/publish-from-wavesight.mjs'),`--wavesight-repo=${checkout}`,'--skip-review=true']]},
       {id:'ops', commands:[['agent-workflow/tools/publish-ops-console.mjs']]},
     ].map(stage => ({...stage,
       // The accepted SHA already binds the checkout contents. A fresh temporary
