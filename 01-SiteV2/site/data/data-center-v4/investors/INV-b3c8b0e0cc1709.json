@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Foundamental 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-02；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
+      "summary": "Kuro 融资报道列出 Foundamental 为 €10M 融资参与方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "参与 Kuro €10M 融资。",
+          "source_id": "PROFILE-adfb1ae1c15d7f35034f"
+        },
         {
           "description": "融资来源记录：Kuro Technology · 早期融资 · 2026-10-02 · 本轮参投 · €10 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-8bd4513374ef496a"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-adfb1ae1c15d7f35034f",
+          "source_url": "https://www.konii.de/news/10-millionen-euro-fuer-kuro/",
+          "source_title": "10 Millionen Euro für Kuro - Konii",
+          "source_content_hash": "a87604f12dc3115ea6c80abe7a0870fe2d7800671a9c730f4540987ddc89a330",
+          "quote": "ology sichert sich 10 Millionen Euro in einer von UVC Partners geführten Finanzierungsrunde, an der sich auch Foundamental, Realyze Ventures und helloworld beteiligen. Die KI-Plattform richtet sich an Generalunternehmer und unterstützt sie bei Kalkulation, Ausschreibungsanalyse und Wissensmanagement. Zu den zwölf Kunden zählen bereits sechs der 20 größten Ge",
+          "quote_hash": "615b6747f396cd17ba5933e47814550e5c90d1182190220489e2847e433f7d60"
+        },
         {
           "source_id": "FISRC-8bd4513374ef496a",
           "source_url": "https://www.eu-startups.com/2026/10/berlin-based-kuro-raises-e10-million-to-build-the-ai-foundation-for-general-contractors/",
@@ -161,7 +173,11 @@
           "quote_hash": "a6a5778a2aae0bc417fd88423220413aab5919ec269c19b9bbccd92eb4369f66"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

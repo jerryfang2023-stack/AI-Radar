@@ -178,20 +178,20 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "JPMorgan Chase 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-06-11；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Prometheus · B轮 · 2026-06-11 · 本轮参投 · $12 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为 Prometheus B轮 本轮参投。",
           "source_id": "FISRC-0c708eb8dc3d758b"
         },
         {
-          "description": "融资来源记录：NVIDIA · 历史轮次未披露 · 承销行。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为 NVIDIA 承销行。",
           "source_id": "FISRC-081d8fda5173dab0"
         }
       ],
@@ -200,21 +200,25 @@
         {
           "source_id": "FISRC-0c708eb8dc3d758b",
           "source_url": "https://multiples.vc/private-comps/prometheus",
-          "source_title": "Prometheus Valuation, Funding & Investors | Multiples",
-          "source_content_hash": "646b9259f23a27ec",
+          "source_title": "Prometheus Valuation, Funding &amp; Investors | Multiples",
+          "source_content_hash": "fc9ca355402d7b07aa0d4f932186121eb0d3782ae07d3b50709cf5354f649a5b",
           "quote": "The $12B round included Jeff Bezos, Goldman Sachs, BlackRock, JPMorgan Chase, DST Global and 1 other investor.",
           "quote_hash": "e6c850cf7ceea5003c148380cbbffa2eb2c4f3f62c18b1026a296578a0f41f71"
         },
         {
           "source_id": "FISRC-081d8fda5173dab0",
           "source_url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale",
-          "source_title": "英伟达加入AI债务热潮，发行200亿美元债券",
-          "source_content_hash": "7ac0dc93c7c2cb692b0da2f0526ef98ce3230492dc0ce32a65833af3005ddee6",
+          "source_title": "Nvidia joins AI debt boom with $20 billion bond sale",
+          "source_content_hash": "d1d8d65938b3e557bfbfdf110ffa3a2d36820a1140e4b733438737bc6cf2c319",
           "quote": "JPMorgan Chase, Morgan Stanley, and Goldman Sachs are among the banks managing the sale.",
           "quote_hash": "bedca6a5faa504970ac18d04c5590f3931153bc7e8cf49cb3dcaf62052477c13"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
     }
   }
 }

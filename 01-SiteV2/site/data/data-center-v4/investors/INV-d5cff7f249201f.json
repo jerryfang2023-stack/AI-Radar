@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Ridgeline 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2025-07-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "LGND AI 的融资公告将 Ridgeline 列为 900 万美元融资参投方。",
+          "source_id": "PROFILE-3abf3ce4446b3cfb2c67"
+        },
         {
           "description": "融资来源记录：LGND AI, Inc. · 种子轮 · 2025-07-10 · 本轮参投 · $9M。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-295efcf234fa6b4b"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-3abf3ce4446b3cfb2c67",
+          "source_url": "https://www.prnewswire.com/news-releases/lgnd-raises-9m-to-make-earth-data-intuitive-and-actionable-302502527.html",
+          "source_title": "LGND Raises $9M to Make Earth Data Intuitive and Actionable",
+          "source_content_hash": "b40565487c9c54fc46cf5af6f5afd9d0f899d0e74081b216fd34fc3f679629b2",
+          "quote": "The round was led by Javelin Venture Partners, with participation from AENU, Space Capital, Overture, Ridgeline, MCJ, Coalition Operators, Clocktower Ventures, and more.",
+          "quote_hash": "373ac9dc3c83fecd531c4ac61379c096bda00274c462fa64f092a118371fdb08"
+        },
         {
           "source_id": "FISRC-295efcf234fa6b4b",
           "source_url": "https://www.linkedin.com/posts/climatecap_exclusive-lgnd-wants-to-make-chatgpt-for-activity-7349146378834501632-ku4h",
@@ -161,7 +173,11 @@
           "quote_hash": "6257e14391e6665ff8acd43d3c69a92164739a995b423d1476f4ffa4f75c628c"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
     }
   }
 }

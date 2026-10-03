@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "NPIF II – PXN Equity Finance 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-10-01；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "公开融资来源将其列为Revnu融资本轮领投。",
+          "source_id": "PROFILE-4aca8305ac4d2f05e8e1"
+        },
         {
           "description": "融资来源记录：Revnu · 种子轮 · 2026-10-01 · 本轮领投 · $3m。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-ee1ac79a0f3dddbb"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-4aca8305ac4d2f05e8e1",
+          "source_url": "https://www.pxnventures.co.uk/y-combinator-backed-revnu-raise-3m-to-build-ai-marketing-startup/",
+          "source_title": "Y Combinator-backed Revnu raise $3m to build AI marketing startup | PXN Ventures",
+          "source_content_hash": "f94c5a45fb8a321266563c4b63e5a827cf462b5910e87301a1931ff9168d9e9d",
+          "quote": "rarily to Silicon Valley to take part in the renowned accelerator. Revnu has now raised $3m in a round led by NPIF II – PXN Equity Finance, which is managed by PXN Ventures as part of the Northern Powerhouse Investment Fund II. The company also received backing from Y Combinator. Despite considering building Revnu in San Francisco following the programme – a",
+          "quote_hash": "255ea38eb697aac2fc648d98a518692eb20e23efdb946312c6c64cb79ac70db9"
+        },
         {
           "source_id": "FISRC-ee1ac79a0f3dddbb",
           "source_url": "https://www.prolificnorth.co.uk/news/21-year-old-founders-choose-manchester-over-silicon-valley-after-raising-3m/",
@@ -161,7 +173,11 @@
           "quote_hash": "4e10d9bf3a9ef5e75273f895d8082d06ae8fd658d8808f228f34c4a8924820b7"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

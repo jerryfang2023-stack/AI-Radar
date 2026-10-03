@@ -327,16 +327,16 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Eurazeo 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-08；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "Eurazeo 官网介绍其为全球投资集团；Mistral 官方公告将其列为 Series D 既有投资者并确认参投。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Mistral AI · D轮 · 2026-09-08 · 本轮参投 · €3 billion。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为MistralSeries D既有投资者参投。",
           "source_id": "FISRC-4d11ed62a144a3f4"
         },
         {
@@ -352,11 +352,19 @@
       "sources": [
         {
           "source_id": "FISRC-4d11ed62a144a3f4",
-          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier",
-          "source_title": "Mistral 完成 30 亿欧元 D 轮融资，估值超 210 亿欧元",
-          "source_content_hash": "714c413ab36c1848",
-          "quote": "Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.",
-          "quote_hash": "1aea8271fecd0d55fa862c63b4b216ab8bda36b37c1200c16dd0db73697dfc25"
+          "source_url": "https://mistral.ai/news/mistral-makes-sovereign-open-weight-ai-to-frontier/",
+          "source_title": "Making sovereign, open-weight AI the technology frontier | Mistral",
+          "source_content_hash": "d4506507a5056a5585bc790a752d43945de9bf05a4dd63b3dab590c30704d58e",
+          "quote": " as new investors. Existing investors a16z, ASML, Belfius, BNP Paribas CIB, Bpifrance, Carmignac, DST Global, Eurazeo, General Catalyst, Headline, Hillspire, Index Ventures, Korelya Capital, Lightspeed, NVIDIA, Phoenix Court's Solar fund (home to LocalGlobe, Latitude and Solar) and Salesforce Ventures participated in the round.\r\n",
+          "quote_hash": "21b2b095936664ee8755145f1fcabd89202b2425dd7bb779d9ea4851034bf88b"
+        },
+        {
+          "source_id": "PROFILE-87a8a452f7953de5a0be",
+          "source_url": "https://www.eurazeo.com/en/group/eurazeo-investment",
+          "source_title": "Eurazeo, business growth and development, leading European player in private equity",
+          "source_content_hash": "d583d91e0493081ab0f6044668d61b589aa7fd528376d1f9ff846d7b2570c6c4",
+          "quote": "Profile\nAbout Eurazeo\nEurazeo is a leading global investment group with €40bn in diversified assets under management, including €31bn on behalf of institutional and private clients through its private equity, private debt, real estate and infrastructure strategies",
+          "quote_hash": "63cfe48367701702bf75c3bebbdde5713eadf5ea927ff3f6e2b2be6a3b9b3e83"
         },
         {
           "source_id": "FISRC-f7589987753ab2c6",
@@ -375,7 +383,11 @@
           "quote_hash": "edc1c07b67698212e9356e3f0ab0d3bb30e8cfee2577b34487cad7679f660b48"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "translations": {
       "zh-CN": {

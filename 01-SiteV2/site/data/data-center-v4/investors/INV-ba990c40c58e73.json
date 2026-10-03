@@ -240,14 +240,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Micron 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-29；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录经公开来源核实的投资活动示例，不代表完整投资组合；合作、承销、集团关联与股权投资分开标注。",
+      "summary": "ChipAgents Series A 扩展融资报道将 Micron 列为既有投资方；Anthropic 官方所述战略基础设施合作不作为融资记录。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "参与 ChipAgents Series A 扩展融资。",
+          "source_id": "PROFILE-a7dbcb27228e60131fab"
+        },
         {
           "description": "融资来源记录：ChipAgents · A2轮 · 2026-07-29 · 本轮参投 · $60 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-cd04c9b2d1340164"
@@ -263,6 +267,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-a7dbcb27228e60131fab",
+          "source_url": "https://www.unite.ai/chipagents-expands-series-a-to-134-million-as-ai-agents-move-deeper-into-semiconductor-design/",
+          "source_title": "ChipAgents Expands Series A to $134 Million as AI Agents Move Deeper Into Semiconductor Design &#8211; Unite.AI",
+          "source_content_hash": "ba93b81890a8996f96f46d844434b6f3ed331431c0cdd92eef9771ced90b2e5d",
+          "quote": "les. B Capital joined the financing as a new investor, alongside existing backers Bessemer Venture Partners , Micron , MediaTek , Ericsson ( ERIC ) , ScOp Venture Capital , and others. The new capital arrives six months after the initial close of the company’s Series A and follows a sixfold increase in annual recurring revenue during the first half of 2026.",
+          "quote_hash": "552b7805c7001e7cbb33b61e8471a95d550484483f0da0634ef703c42560144c"
+        },
         {
           "source_id": "FISRC-cd04c9b2d1340164",
           "source_url": "https://www.businesswire.com/news/home/20260729819576/en/ChipAgents-Expands-Series-A-Funding-to-%24134-Million-as-Demand-Grows-for-Agentic-AI-in-Semiconductor-Design",
@@ -288,7 +300,11 @@
           "quote_hash": "a8278de53198826272dc5c7045989ecb50ff2bdac47a68de9ac09adb8810b1c1"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

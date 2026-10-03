@@ -298,29 +298,45 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Peak XV 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-17；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
+      "summary": "公开融资材料核实其参与 Supabase Series F 和 Vapi Series B。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-2e7a3713da8f3e54"
-        },
-        {
-          "description": "融资来源记录：Supabase · F轮 · 2026-06-04 · 本轮参投 · $500M。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "参与 Supabase Series F。",
           "source_id": "FISRC-a9654b37adce00dc"
         },
         {
-          "description": "融资来源记录：Vapi Inc. · B轮 · 2026-05-12 · 本轮领投 · $50 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "领投 Vapi Series B。",
           "source_id": "FISRC-46ca8e6bf27dfb82"
+        },
+        {
+          "description": "融资来源记录：Wispr · B轮 · 2026-08-17 · 本轮参投 · $280M。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-2e7a3713da8f3e54"
         }
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "FISRC-a9654b37adce00dc",
+          "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
+          "source_title": "Georgian | Why we invested in Supabase Vibe coding infrastructure",
+          "source_content_hash": "ae53991edf6e864ab93ba25b4564b70cfff48473e0670b652d5c0411c8f22c75",
+          "quote": "luation, joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures. Simply put: “vibe coding needs infrastructure. Supabase is trying to provide it.” This opening line in the CNBC exclusive about the funding is a crisp summary of the Supabase mission and a key reason why we invested.",
+          "quote_hash": "9ae24a3923b97a2478af3f333925e6780c8e038c7689ea1ec3f1a25e589a93d6"
+        },
+        {
+          "source_id": "FISRC-46ca8e6bf27dfb82",
+          "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
+          "source_title": "Vapi nabs $50M to make voice AI more human - SiliconANGLE",
+          "source_content_hash": "6a671e5d06b68b5e730a21c36c736e4b74e5c18d9ab91477577a7988621fd5fe",
+          "quote": "ext-to-voice engines. It allows low-delay responses with interruptability, making conversations feel natural. Peak XV led the Series B funding round, with participation from Y Combinator, Microsoft Corp.’s venture fund M12, Kleiner Perkins and the company’s earliest investors. This round brings the company’s total funding to $72 million. Voice agents, such a",
+          "quote_hash": "b4c5747368c57645de81a918eea548e34d2b3a8031232777c70b1daac8c941e9"
+        },
         {
           "source_id": "FISRC-2e7a3713da8f3e54",
           "source_url": "https://www.gate.com/news/detail/wispr-raises-280m-in-series-b-funding-led-by-menlo-ventures-valuation-hits-23514139",
@@ -328,25 +344,13 @@
           "source_content_hash": "affdfd9a0ccfb188",
           "quote": "alongside new backers such as Acrew, Forerunner, Goodwater, Peak XV, Together Fund, and PLUS Capital",
           "quote_hash": "f1995f23145981836125a9b8df4e53f839291e05ffb8820c3b8d82b423ccdfc3"
-        },
-        {
-          "source_id": "FISRC-a9654b37adce00dc",
-          "source_url": "https://georgian.io/posts/why-georgian-invested-in-supabase",
-          "source_title": "Why Georgian Invested in Supabase",
-          "source_content_hash": "2ff196d4fa7dc98a",
-          "quote": "joining a syndicate that includes GIC, Stripe, Accel, Coatue, Felicis, Craft Ventures, Y Combinator, Peak XV and Salesforce Ventures.",
-          "quote_hash": "0e4a743440b167a98075db911e049b40ccf851aa818410949e0238db29d8b5a2"
-        },
-        {
-          "source_id": "FISRC-46ca8e6bf27dfb82",
-          "source_url": "https://siliconangle.com/2026/05/12/vapi-nabs-50m-make-voice-ai-human/",
-          "source_title": "Vapi 获 5000 万美元融资，让语音 AI 更人性化 - SiliconANGLE",
-          "source_content_hash": "5fee028b6dad3dc4",
-          "quote": "Peak XV led the Series B funding round",
-          "quote_hash": "5cf2609379d34cf45ef5f1f8f92ffd6419417258e8d6163efa74713f7b619e7e"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

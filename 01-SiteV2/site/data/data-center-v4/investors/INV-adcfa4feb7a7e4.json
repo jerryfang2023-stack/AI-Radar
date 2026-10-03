@@ -138,14 +138,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Michael Grinich (WorkOS) 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "person",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅依据公开披露记录已核验的机构或个人投资活动示例；不代表完整投资组合。",
+      "summary": "Paper 官方 Series A 公告将 WorkOS CEO Michael Grinich 列为新投资者。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Paper 官方公告将 WorkOS CEO Michael Grinich 列为 Series A 新投资者。",
+          "source_id": "PROFILE-168e5dab26f9a71fb26c"
+        },
         {
           "description": "融资来源记录：Paper · A轮 · 2026-07-23 · 本轮参投 · $34 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-545ac2658d68b038"
@@ -153,6 +157,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-168e5dab26f9a71fb26c",
+          "source_url": "https://paper.design/blog/series-a",
+          "source_title": "Paper raises $34M to build the next great design platform",
+          "source_content_hash": "b803663eb5a2557c8d9cb9dbb5e85c1b8cedcbab7d7086b2de4a3841eff309c5",
+          "quote": "er has raised $34M in our Series A financing from Accel and ICONIQ . We welcome new investors Designer Fund , Michael Grinich (CEO WorkOS ), Anton Osika (CEO Lovable ), engineers and designers from Anthropic and OpenAI, and more, alongside renewed support from Basecase , David Hoang , and Guillermo Rauch . This brings Paper ’s total fundi",
+          "quote_hash": "0139d553065e0105b8ef66134989f836e95ccbabc9daa44469cc851a673834d4"
+        },
         {
           "source_id": "FISRC-545ac2658d68b038",
           "source_url": "https://www.citybiz.co/article/878792/accel-iconiq-join-34m-series-a-for-paper-design-platform-for-ai-era/",
@@ -162,7 +174,11 @@
           "quote_hash": "06d37cff58cae8dfba7d4a86134b8a599d7d5558bcef8463419b907a16fb18bf"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

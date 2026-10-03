@@ -121,14 +121,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "State of Michigan 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 来源未披露日期；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅依据公开披露记录已核验的投资活动示例，不代表完整投资组合。",
+      "summary": "SiMa.ai 官方公告将 State of Michigan 列为 Series C 新投资方。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "SiMa.ai 官方 Series C 公告列出 State of Michigan 为新投资方。",
+          "source_id": "PROFILE-8d29b6f2496d769872a6"
+        },
         {
           "description": "融资来源记录：SiMa.ai · 历史轮次未披露 · 本轮新投资者。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-284ec16980778f24"
@@ -136,6 +140,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-8d29b6f2496d769872a6",
+          "source_url": "https://sima.ai/press-release/sima-ai-reaches-1-45b-valuation-with-500-million-in-total-funding-to-scale-physical-ai-in-humanoids-automotive-and-drones/",
+          "source_title": "SiMa.ai Reaches $1.45B Valuation with $500 Million in Total Funding to Scale Physical AI in Humanoids, Automotive, and Drones - SiMa AI",
+          "source_content_hash": "e4a445b8ad5e5db7fe9dd87384cc0fef61131e6be5f0b5f6b45e8c90d37e1889",
+          "quote": "lify co-led the oversubscribed $150 million round with AllianceBernstein, Baron Capital, J.P. Morgan, and the State of Michigan as new investors SAN JOSE, Calif. – Sept. 28, 2026 – SiMa.ai , a leader in Physical AI, today announced $150 million in Series C financing, bringing the total capital raised to $500 million and valuing the compan",
+          "quote_hash": "6c22cec38d1e40f3bafe76b142043d2f5e3133c051d459614b610e81c7783bdd"
+        },
         {
           "source_id": "FISRC-284ec16980778f24",
           "source_url": "https://www.cxodigitalpulse.com/physical-ai-company-sima-ai-raises-150-mn-in-series-c-round/",
@@ -145,7 +157,11 @@
           "quote_hash": "236218295551c714eb5158ff43108a86b2de31bb994725290acad6c739538bbc"
         }
       ],
-      "last_verified_at": "2026-10-03"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

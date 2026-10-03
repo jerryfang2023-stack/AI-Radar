@@ -369,21 +369,29 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "松禾资本 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-09-30；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：芯光界 · 多轮融资 · 2026-09-30 · 本轮参投 · 近10亿元。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为 芯光界 多轮融资 本轮参投。",
           "source_id": "FISRC-09a0a8d8826c2cfe"
         },
         {
-          "description": "融资来源记录：科辉智药（Artivila Biopharma） · A轮 · 2026-06-25 · 本轮领投 · 近亿元人民币。这是本库收录的披露案例，不代表完整投资组合。",
+          "description": "公开融资来源将其列为 科辉智药（Artivila Biopharma） A轮 本轮领投。",
           "source_id": "FISRC-dd4073b84f3b363b"
+        },
+        {
+          "description": "公开融资来源将其列为 智子芯元 天使轮跟投。",
+          "source_id": "PROFILE-5d409ef849975735dcb9"
+        },
+        {
+          "description": "新浪新闻融资报道将松禾资本列为智子芯元新一轮融资的参与方。",
+          "source_id": "PROFILE-ce790663abce50b262f4"
         },
         {
           "description": "融资来源记录：壁仞科技 · 历史轮次未披露 · A轮参投。这是本库收录的披露案例，不代表完整投资组合。",
@@ -395,8 +403,8 @@
         {
           "source_id": "FISRC-09a0a8d8826c2cfe",
           "source_url": "https://www.chinaventure.com.cn/news/80-20260930-393495.html",
-          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿",
-          "source_content_hash": "9af85909a159d26c9e02763875868db5537b4d192b71e2d3767836737eedca72",
+          "source_title": "首发｜20家机构联手，这家光互连公司又融了10亿 | 投中网",
+          "source_content_hash": "07769d7354864bacbc3aca99d89b0c60720a78c93e72560ce8ed28387a4b4245",
           "quote": "两轮融资集结了华映资本、Lumicore、九天创投、Glory Ventures III、Redpoint、前海启航、松禾资本、Acer Investment、CAPITAL GLOBAL、北京成玲、普罗创投、Thriving Era、揽泓创投、沸点智芯、海南南佰、华虹虹芯、广州知识城、天津皓阳、珠海芯域等近20家机构。",
           "quote_hash": "746512630847cbac3040926261e6788c231cd9869ca6d64a9bfeb5d7838ce7b9"
         },
@@ -404,9 +412,25 @@
           "source_id": "FISRC-dd4073b84f3b363b",
           "source_url": "https://artivila.com/cn_news/details-17.html",
           "source_title": "科辉智药完成近亿元人民币A轮融资",
-          "source_content_hash": "794648fe162cd7c4",
+          "source_content_hash": "283d6522819ad3d4553c1a33bee4dbabbefbaed03cc002a1cb69a909373ae049",
           "quote": "本轮融资由松禾资本领投，君熠投资等跟投。",
           "quote_hash": "72c74f17250529d36a2ee10a0c9e994ac8b919420e86d07d9a22ee79d3e1151b"
+        },
+        {
+          "source_id": "PROFILE-5d409ef849975735dcb9",
+          "source_url": "https://finance.sina.com.cn/wm/2026-04-27/doc-inhvxtre9075192.shtml",
+          "source_title": "成立半年连续获数千万融资，智子芯元凭什么卡位国产算力生态？｜甲子光年_新浪财经_新浪网",
+          "source_content_hash": "937d4a4020eb4a5a7f986359973e74aaa08058078037467023f902909afabb92",
+          "quote": "老股东英诺天使与松禾资本超额跟投",
+          "quote_hash": "716e29ccdb171ae092066acfb5d46243c59cdcd03da5f444264416cde69e2c6c"
+        },
+        {
+          "source_id": "PROFILE-ce790663abce50b262f4",
+          "source_url": "https://city.sina.com.cn/news/2026-04-29/detail-inhwczph6704322.shtml",
+          "source_title": "从“有算力”到“用好算力”，智子芯元完成新一轮数千万元融资_新浪新闻",
+          "source_content_hash": "764458712542e44d8e26779e2c875c832845778acfd3633274c85c2738c7148c",
+          "quote": "本轮融资由同创伟业、钧山资本、英诺天使、松禾资本共同参与。",
+          "quote_hash": "64e4bc61fd7f4a5db29a0372e26114b1c6efe9476ea1bfd24435644655fce9f4"
         },
         {
           "source_id": "FISRC-081c8476182d3ff7",
@@ -417,7 +441,11 @@
           "quote_hash": "a0a875bf892469b0fe2386d4aeed2bb9ddc313654b1886f1e17f4b29ce6cc5e8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。"
     }
   }
 }

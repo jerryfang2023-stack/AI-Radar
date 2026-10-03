@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "GS Futures 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-05-14；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Graphon AI 的融资公告列出 GS Futures 为 830 万美元种子轮参投方。",
+          "source_id": "PROFILE-514267ee67da3cb596dd"
+        },
         {
           "description": "融资来源记录：Graphon AI · 种子轮 · 2026-05-14 · 本轮参投 · $8.3 million。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-9c4c0f115d1f38be"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-514267ee67da3cb596dd",
+          "source_url": "https://www.streetinsider.com/Business%2BWire/Former%2BAmazon,%2BMeta%2BScientists%2BUnveil%2BGraphon%2BAI,%2Bthe%2BFirst%2BPre-Model%2BIntelligence%2BLayer,%2Bwith%2B%248.3M%2Bin%2BSeed%2BFunding/26492061.html",
+          "source_title": "Former Amazon, Meta Scientists Unveil Graphon AI, the First Pre-Model Intelligence Layer, with $8.3M in Seed Funding",
+          "source_content_hash": "3a1c938bb03986b67fb05c11bbae0a2a5116c3100867af322f6e62122d7f57fe",
+          "quote": "n seed funding led by Arvind Gupta of Novera Ventures, with participation from Perplexity Fund, Samsung Next, GS Futures, Hitachi Ventures, Gaia Ventures, B37 Ventures, and Aurum Partners.\nSAN FRANCISCO--(BUSINESS WIRE)-- Graphon AI emerged from stealth today with $8.3 million in seed funding to build a new class of AI infrastructure: a pre-model intelligenc",
+          "quote_hash": "73fc24093e0edc38cc40029c5e9db4651769e9b5c7b09986c1b5eb54f25a4f29"
+        },
         {
           "source_id": "FISRC-9c4c0f115d1f38be",
           "source_url": "https://thenextweb.com/news/graphon-ai-pre-model-intelligence-layer-seed-funding",
@@ -161,7 +173,11 @@
           "quote_hash": "7c176b4b41b7098a91cc6bee2d0e11583636621116a7d1b03812d837f992c5a8"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

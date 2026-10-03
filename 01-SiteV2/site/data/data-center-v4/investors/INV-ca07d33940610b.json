@@ -137,14 +137,18 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Symphony 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-10；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
+        {
+          "description": "Throne Science 官方公告将 Symphony 列为 1000 万美元 Series A 参投方。",
+          "source_id": "PROFILE-e191b5486e96de1a7076"
+        },
         {
           "description": "融资来源记录：Throne Science · A轮 · 2026-08-10 · 本轮参投 · 1000 万美元。这是本库收录的披露案例，不代表完整投资组合。",
           "source_id": "FISRC-2a587e714925b882"
@@ -152,6 +156,14 @@
       ],
       "contacts": [],
       "sources": [
+        {
+          "source_id": "PROFILE-e191b5486e96de1a7076",
+          "source_url": "https://thronescience.com/blogs/signals/throne-raised-10-million-heres-what-its-for",
+          "source_title": "Throne Raised $10 Million. Here&#39;s What It&#39;s For &ndash; Throne Science",
+          "source_content_hash": "4fb68fdd53b571e0dd3981b821b3e879f7d3052e280d07837bf012800813ef29",
+          "quote": "by Will Ventures, with Workshop, Emerson Collective, Accomplice, Moxxie, Salt VC, LEAD VC, Ventures Together, Symphony, Felix Capital, Cosmic Venture Partners, Offscript, V1.VC, and Morrison Seger participating. Funding rounds are both a company and a customer milestone. We’re putting this investment to work for you in some really exciting ways. Let’s dive i",
+          "quote_hash": "49d50f306be5b53da7990ee2db0142d5b297d18243b232f6c02ed3d1bd9286d4"
+        },
         {
           "source_id": "FISRC-2a587e714925b882",
           "source_url": "https://www.morningstar.com/news/business-wire/20260728282605/throne-science-maker-of-smart-toilet-sensor-announces-10-million-series-a-fundraise",
@@ -161,7 +173,11 @@
           "quote_hash": "af3ef0efa3bf97b8c269266344a317f0ec75502da3984e41935845f8d595fe8a"
         }
       ],
-      "last_verified_at": "2026-09-28"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

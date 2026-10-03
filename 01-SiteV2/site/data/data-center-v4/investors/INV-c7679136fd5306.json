@@ -344,21 +344,25 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Positive Sum 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-08-19；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开融资资料将其列为所列融资活动的投资方；本档案只记录经原文核实的示例，不代表完整投资组合。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-134a8e8124653c90"
+          "description": "公开融资来源将其列为 Neko Health C轮 本轮参投。",
+          "source_id": "FISRC-3581a245f48a1be6"
         },
         {
-          "description": "融资来源记录：Neko Health · C轮 · 2026-07-15 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-3581a245f48a1be6"
+          "description": "公开融资来源将其列为 Cognition D轮 既有投资方，本轮参投。",
+          "source_id": "PROFILE-46608250c97e2eccdaf7"
+        },
+        {
+          "description": "融资来源记录：Etched · D轮 · 2026-08-19 · 本轮参投 · $700m。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-134a8e8124653c90"
         },
         {
           "description": "融资来源记录：Etched · 多轮融资 · 2026-06-30 · 本轮参投（2025年12月5亿美元轮次） · $800 million。这是本库收录的披露案例，不代表完整投资组合。",
@@ -368,20 +372,28 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "FISRC-3581a245f48a1be6",
+          "source_url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
+          "source_title": "Daniel Ek&#039;s body-scanning startup Neko Health raises another $700M | TechCrunch",
+          "source_content_hash": "40ca924a819846d5287010aec297d731a005acb0641e045fed43f90723c67807",
+          "quote": "Other investors in Neko Health’s latest round include Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, and BDT & MSD.",
+          "quote_hash": "45b0acb47dea211ecb169731a68de716cb882c326671dfb0fee956f83a5ff028"
+        },
+        {
+          "source_id": "PROFILE-46608250c97e2eccdaf7",
+          "source_url": "https://cognition.com/blog/series-d",
+          "source_title": "More Devins in More Places | Cognition",
+          "source_content_hash": "fdf1da0bf21b758bc27c4024126ffd8a07474ee9a8e1d8b7653542d1f0d6cd7e",
+          "quote": "with support from existing investors including Founders Fund, Elad Gil, Alpha Wave, Definition Capital, Positive Sum, Avenir, Vitruvian, Bain Capital Ventures, Conversion Capital, 137 Ventures, Soma Capital, and Omri Casspi.",
+          "quote_hash": "e9c743427fb33e7babf1a1a5320728a23990e3e296f42978145c06f2b151a224"
+        },
+        {
           "source_id": "FISRC-134a8e8124653c90",
           "source_url": "https://www.verdict.co.uk/etched-bags-700m/",
           "source_title": "Etched 以210亿美元估值融资7亿美元，向Jane Street交付首台机架",
           "source_content_hash": "e0e9398bf1a24e32",
           "quote": "The round was led by Jane Street, with participation from Sequoia Capital, Kleiner Perkins, Andreessen Horowitz, Bain Capital Ventures, Stripes, Positive Sum, Tiger Global, Neo, Primary, and Blackstone.",
           "quote_hash": "0c948f9a83fe6bf02d914e718b9524770cd022630e09f51c42213bd98f467b90"
-        },
-        {
-          "source_id": "FISRC-3581a245f48a1be6",
-          "source_url": "https://techcrunch.com/2026/07/15/daniel-eks-body-scanning-startup-neko-health-raises-another-700m/",
-          "source_title": "Daniel Ek&#8217;s body-scanning startup Neko Health raises another $700M",
-          "source_content_hash": "84b4354178a09925",
-          "quote": "Other investors in Neko Health’s latest round include Atomico, General Catalyst, Lakestar, Liberty City Ventures, Positive Sum, and BDT & MSD.",
-          "quote_hash": "45b0acb47dea211ecb169731a68de716cb882c326671dfb0fee956f83a5ff028"
         },
         {
           "source_id": "FISRC-ec090e2bf0f8f6e9",
@@ -392,7 +404,11 @@
           "quote_hash": "1dfff416174e07a43db5f6f5b53190faadafe8a50e93dc41fbc1bf09edb62f85"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

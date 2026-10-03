@@ -341,21 +341,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "Fidelity 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-03-31；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录有来源支持的公开投资活动示例，不代表完整投资组合；主体名称和关系范围按来源披露，不扩展未核实的法人或基金归属。",
+      "summary": "公开来源以 Fidelity 名义披露其参与部分融资；本档案保留来源披露名称，不推断为特定法人或基金。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-1e2b3bad243bd066"
+          "description": "公开融资来源将其列为 Taalas Inc. 轮次未披露 本轮参投。",
+          "source_id": "FISRC-7a85c433c7dbed44"
         },
         {
-          "description": "融资来源记录：Taalas Inc. · 轮次未披露 · 2026-02-19 · 本轮参投 · $169M。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-7a85c433c7dbed44"
+          "description": "融资来源记录：OpenAI · F轮 · 2026-03-31 · 本轮参投 · $1220亿。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-1e2b3bad243bd066"
         },
         {
           "description": "融资来源记录：xAI · E轮 · 2026-01-06 · 本轮参投 · $20 billion。这是本库收录的披露案例，不代表完整投资组合。",
@@ -365,20 +365,20 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "FISRC-7a85c433c7dbed44",
+          "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
+          "source_title": "Taalas raises $169M in funding to develop model-specific AI chips - SiliconANGLE",
+          "source_content_hash": "085715b1d2b1e483fe6f12d2f2a4a50f15cfa8e454eab2d1fbbcf5ba0bcad53b",
+          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
+          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
+        },
+        {
           "source_id": "FISRC-1e2b3bad243bd066",
           "source_url": "https://yespress.io/openais-122-b-megaround",
           "source_title": "OpenAI's $122B Megaround — AI Funding Has Gone Nuclear | YesPress",
           "source_content_hash": "494969b64dc816f3",
           "quote": "The roster of participants reads like a class reunion of global capital - BlackRock, Blackstone, Sequoia, Fidelity, ARK Invest, Temasek, Coatue, Thrive Capital, UC Investments, and many more.",
           "quote_hash": "eeb00cc19cf27958ddf8572a8a87233a5c31a56d44893025bfd1ae03926fbfa1"
-        },
-        {
-          "source_id": "FISRC-7a85c433c7dbed44",
-          "source_url": "https://siliconangle.com/2026/02/19/taalas-raises-169m-funding-develop-model-specific-ai-chips/",
-          "source_title": "Taalas 融资 1.69 亿美元，开发模型专用 AI 芯片",
-          "source_content_hash": "8df5a185c3d0c1bc47267eb9148dc417f9b5117d0d38a10f0d0ffeef2274858f",
-          "quote": "Reuters reported today that the company’s backers include Quiet Capital, Fidelity and prominent semiconductor investor Pierre Lamond.",
-          "quote_hash": "dc849d6c8abb5c30a56c8a60121f25ce4a801de4b609d2d85b45ae6b483db806"
         },
         {
           "source_id": "FISRC-23bba75e0baa6d39",
@@ -389,7 +389,11 @@
           "quote_hash": "72661c3067fbbab2518de0a298d8674fd30e60a44150246eb69aee0dd557f011"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     }
   }
 }

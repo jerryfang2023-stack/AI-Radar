@@ -315,21 +315,21 @@
       }
     ],
     "public_profile": {
-      "profile_type": "unverified",
-      "identity_status": "pending_verification",
-      "coverage_status": "identity_unverified",
-      "coverage_note": "目前只有融资披露中的参投记录；投资方的组织类型、法律主体及完整背景尚未独立核验。该档案仅展示可追溯活动，不代表已确认的机构档案。",
-      "summary": "SK hynix 当前按“主体类型待核验的投资者名称”收录。最新融资披露记录日期为 2026-07-23；以下为本库可追溯的参投案例，不代表完整履历、机构业绩或完整投资组合。",
+      "profile_type": "organization",
+      "identity_status": "verified",
+      "coverage_status": "activity_only",
+      "coverage_note": "仅记录已由公开来源核实的投资活动示例，不代表完整投资组合。",
+      "summary": "公开报道将 SK hynix 列为 Etched 2026 年 7 月 Series C 投资方；Anthropic 的战略基础设施合作关系不作为融资记录。",
       "facts": [],
       "milestones": [],
       "track_record": [
         {
-          "description": "融资来源记录：Etched · C轮 · 2026-07-23 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f34324e392a333c0"
+          "description": "参与 Etched Series C。",
+          "source_id": "FISRC-f0a76ad07ec945fd"
         },
         {
-          "description": "融资来源记录：Etched · 历史轮次未披露 · 2026-07 · 2026年7月Series C参投。这是本库收录的披露案例，不代表完整投资组合。",
-          "source_id": "FISRC-f0a76ad07ec945fd"
+          "description": "融资来源记录：Etched · C轮 · 2026-07-23 · 本轮参投 · $300 million。这是本库收录的披露案例，不代表完整投资组合。",
+          "source_id": "FISRC-f34324e392a333c0"
         },
         {
           "description": "融资来源记录：Anthropic · H轮 · 2026-05-28 · 本轮参投 · $65 billion。这是本库收录的披露案例，不代表完整投资组合。",
@@ -339,20 +339,20 @@
       "contacts": [],
       "sources": [
         {
+          "source_id": "FISRC-f0a76ad07ec945fd",
+          "source_url": "https://www.unite.ai/etched-raises-700m-series-d-at-21b-valuation-to-ramp-inference-hardware-production/",
+          "source_title": "Etched Raises $700M Series D at $21B Valuation to Ramp Inference Hardware Production &#8211; Unite.AI",
+          "source_content_hash": "8c6e3fe7e70d0215fcb038b56b239e3566674375672df5c8d7a9d2c276dfeae0",
+          "quote": "announced it had successfully manufactured its homegrown chips with TSMC and had booked $1 billion in orders. The July Series C brought in SK Hynix alongside the venture backers. Now Jane Street, a buyer with one of the most latency-sensitive computing problems in finance, has moved from testing the hardware to owning a rack to leading the round. That sequen",
+          "quote_hash": "b17b0d12146fe16869a3330470c9ce043f0f0ee8c389d64e5b291497a319f232"
+        },
+        {
           "source_id": "FISRC-f34324e392a333c0",
           "source_url": "https://www.datacenterdynamics.com/en/news/ai-chip-startup-etched-closes-300m-funding-round-doubles-its-valuation-to-103bn/",
           "source_title": "AI chip startup Etched closes $300m funding round, doubles its valuation to $10.3bn - DCD",
           "source_content_hash": "fbd60dfb1abe4670",
           "quote": "with participation from SK Hynix",
           "quote_hash": "0a0d3caf60c2b0229abdd07e7702391c8a86f14889ac1ea40c1e92a8235102ba"
-        },
-        {
-          "source_id": "FISRC-f0a76ad07ec945fd",
-          "source_url": "https://www.unite.ai/etched-raises-700m-series-d-at-21b-valuation-to-ramp-inference-hardware-production/",
-          "source_title": "Etched Raises $700M Series D at $21B Valuation to Ramp Inference Hardware Production – Unite.AI",
-          "source_content_hash": "481f49faf99a191d",
-          "quote": "The July Series C brought in SK Hynix alongside the venture backers.",
-          "quote_hash": "3f511384b5ab71f6164dda88e3c32ef74afdfd52d0b3b4c8056844395e6ff243"
         },
         {
           "source_id": "FISRC-b5e22ae086a6b353",
@@ -363,7 +363,11 @@
           "quote_hash": "d234fc755255a6c0cf9808e2602c1842e9441b13f179294561bed037bdb0bc15"
         }
       ],
-      "last_verified_at": "2026-09-25"
+      "last_verified_at": "2026-10-03",
+      "current_roles": [],
+      "career": [],
+      "education": [],
+      "experience_summary": ""
     },
     "translations": {
       "zh-CN": {
