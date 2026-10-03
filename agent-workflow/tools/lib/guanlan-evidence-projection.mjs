@@ -73,9 +73,13 @@ function urlsFromMarkdown(content) {
   return unique(urls);
 }
 
-function authoredEvidenceContent(content) {
+export function authoredEvidenceContent(content) {
   return content.replace(new RegExp(`${EVIDENCE_START}[\\s\\S]*?${EVIDENCE_END}`, "gu"), "")
     .replace(/^---\r?\n([\s\S]*?)\r?\n---/u, (_, yaml) => `---\n${yaml.split(/\r?\n/u).filter((line) => !EVIDENCE_FIELDS.has(line.match(/^([A-Za-z0-9_-]+):/u)?.[1] || "")).join("\n")}\n---`);
+}
+
+export function isEvidenceManagedPath(relativePath) {
+  return relativePath.startsWith(`${CITATION_ROOT}/`) || relativePath===RELATION_INDEX || relativePath===EVIDENCE_MANIFEST;
 }
 
 function explicitEventSources(content, graph) {
@@ -483,11 +487,7 @@ ${relationLines.join("\n")}
 
   const manifestPath = path.join(vaultRoot, ".guanlan-generated.json");
   const manifest = readJson(manifestPath, { generatedFiles: [] });
-  const oldEvidenceFiles = (manifest.generatedFiles || []).filter((relativePath) => (
-    relativePath.startsWith(`${CITATION_ROOT}/`)
-    || relativePath === RELATION_INDEX
-    || relativePath === EVIDENCE_MANIFEST
-  ));
+  const oldEvidenceFiles = (manifest.generatedFiles || []).filter(isEvidenceManagedPath);
   const generatedFiles = unique([
     ...(manifest.generatedFiles || []).filter((relativePath) => !oldEvidenceFiles.includes(relativePath)),
     ...generatedCitationFiles,
